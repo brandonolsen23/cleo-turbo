@@ -28,7 +28,7 @@ export default function TransactionDetailPage() {
         <Heading size="5" weight="medium" className="mt-2">{txn.display_address}</Heading>
         <div className="flex items-center gap-3 mt-1">
           <Text size="2" style={{ color: "var(--gray-9)" }}>{txn.city}, {txn.region}</Text>
-          <Text size="2" style={{ color: "var(--gray-9)" }}>RT {txn.source_id}</Text>
+          <Text size="2" style={{ color: "var(--gray-9)" }}>{txn.source_id}</Text>
         </div>
       </div>
 

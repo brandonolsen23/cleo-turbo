@@ -149,7 +149,7 @@ export default function PropertyDetailPage() {
                       <Text size="1" className="mt-2 block" style={{ color: "var(--gray-9)" }}>{t.transaction_note}</Text>
                     )}
                     <div className="mt-2">
-                      <Badge size="1" variant="outline" color="gray">RT {t.source_id}</Badge>
+                      <Badge size="1" variant="outline" color="gray">{t.source_id}</Badge>
                     </div>
                   </div>
                 ))}
