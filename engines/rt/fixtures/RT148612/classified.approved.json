@@ -1,0 +1,177 @@
+{
+  "rt_id": "RT148612",
+  "source_folder": "Halton_Region/office/p005",
+  "position": 10,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2020-01-06",
+    "sale_price": 6000000,
+    "city": "Burlington",
+    "region": "Halton Region",
+    "transaction_note": "Related Parties",
+    "address_entries": [
+      {
+        "lines": [
+          "3600 BILLINGS CT"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Billings Court Rentals"
+      },
+      {
+        "name": "Robin Wydryk"
+      },
+      {
+        "name": "Glenn Taylor"
+      },
+      {
+        "name": "Joseph Schlett"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": {
+      "type": "law_firm",
+      "text": "Feltmate Delibato Heagle LLP"
+    },
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "3600 Billings Ct, Ste 200"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Burlington",
+      "province": "Ontario",
+      "postal": "L7N 3N6",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "Billings Court Rentals"
+      },
+      {
+        "name": "Braemills Consulting Inc"
+      },
+      {
+        "name": "Mineral Springs Management Inc"
+      },
+      {
+        "name": "1099787 Ontario Inc"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Robin Wydryk",
+        "title": "attn"
+      }
+    ],
+    "care_of": {
+      "type": "law_firm",
+      "text": "Feltmate Delibato Heagle LLP"
+    },
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "3600 Billings Ct, Ste 200"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Burlington",
+      "province": "Ontario",
+      "postal": "L7N 3N6",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "07058-0001",
+    "pin_multiple": false,
+    "acreage": 2.01,
+    "legal_description": "Conc 3 - SDS, Part Lot 11\nPlan 20R-4395, Part 1\nTogether with:\nInst No 837727",
+    "location": "S side Billings Crt, E of South Service Rd",
+    "surface_rights_only": false
+  },
+  "arn": "24 02 090 905 01200",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 0,
+    "debt": 0,
+    "chattels": null,
+    "other": 6000000,
+    "charges": [
+      {
+        "chargee": "Canadian Imperial Bank of Commerce",
+        "principal": 4655000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "01/06/2020",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 10,
+    "address": "3600 BILLINGS CT",
+    "postcode": "L7N 3N6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "01/06/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.01",
+    "consid": "6000000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "07058-0001",
+    "rollno": "24 02 090 905 01200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "3600 BILLINGS CT"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "06 Jan 2020",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Billings Court Rentals",
+      "Robin Wydryk",
+      "Glenn Taylor",
+      "Joseph Schlett"
+    ],
+    "buyer_lines": [
+      "Billings Court Rentals",
+      "Braemills Consulting Inc",
+      "Mineral Springs Management Inc",
+      "1099787 Ontario Inc"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

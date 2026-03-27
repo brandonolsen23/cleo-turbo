@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Design Tokens
+   ============================================================ */
+
+:root {
+  --elevation-1: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  --elevation-2: 0px 4px 8px -2px rgba(0, 0, 0, 0.05),
+    0px 2px 8px -2px rgba(0, 0, 0, 0.09);
+  --elevation-3: 0px 8px 16px -4px rgba(0, 0, 0, 0.03),
+    0px 8px 16px -4px rgba(0, 0, 0, 0.09);
+  --elevation-4: 0px 16px 24px -6px rgba(0, 0, 0, 0.03),
+    0px 16px 24px -6px rgba(0, 0, 0, 0.09);
+
+  --sidebar-width: 220px;
+  --header-height: 56px;
+  --card-radius: 12px;
+  --card-padding: 24px;
+  --map-list-width: 380px;
+  --map-filter-height: 40px;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.radix-themes {
+  --default-font-family: "Untitled Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif;
+  --heading-font-family: "Untitled Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif;
+  --slate-12: #2b333b;
+  --slate-a12: rgba(0, 10, 19, 0.832);
+  min-height: 100vh;
+}
+
+.rt-Heading {
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+/* ============================================================
+   App Layout (CSS Grid)
+   ============================================================ */
+
+.app-layout {
+  display: grid;
+  grid-template:
+    "navbar header" var(--header-height)
+    "navbar main" calc(100dvh - var(--header-height))
+    / var(--sidebar-width) 1fr;
+  height: 100dvh;
+}
+
+.app-sidebar {
+  grid-area: navbar;
+}
+.app-header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.app-main {
+  grid-area: main;
+  overflow-y: auto;
+}
+.app-main-content {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 24px 64px;
+}
+
+/* Full-bleed pages (map) remove padding/max-width */
+.page-full-bleed {
+  max-width: none;
+  padding: 0;
+  height: 100%;
+}
+
+/* ============================================================
+   CRM Drawer
+   ============================================================ */
+
+.crm-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+  pointer-events: none;
+}
+.crm-drawer-backdrop--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.crm-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 420px;
+  z-index: 50;
+  transform: translateX(100%);
+  transition: transform 200ms ease-out;
+  background: white;
+  border-left: 1px solid var(--gray-6);
+  box-shadow: var(--elevation-4);
+  display: flex;
+  flex-direction: column;
+}
+.crm-drawer--open {
+  transform: translateX(0);
+}
+
+/* ============================================================
+   Mapbox Popup Overrides
+   ============================================================ */
+
+.mapboxgl-popup-content {
+  border-radius: var(--card-radius) !important;
+  border: 1px solid var(--gray-6) !important;
+  box-shadow: var(--elevation-3) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.mapboxgl-popup-close-button {
+  font-size: 18px;
+  padding: 4px 8px;
+  color: var(--gray-9);
+  z-index: 1;
+}
+.mapboxgl-popup-close-button:hover {
+  color: var(--gray-12);
+  background: transparent;
+}

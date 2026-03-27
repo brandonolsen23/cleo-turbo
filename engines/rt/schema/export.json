@@ -1,0 +1,19 @@
+{
+  "_description": "Export extraction schema. Maps directly to the export.json fields from the scraper. Nearly trivial — the data is already JSON. We just capture it per position.",
+
+  "position": "integer — array index in export.json (0-based)",
+  "address": "string — full address string",
+  "postcode": "string — postal code",
+  "municipality": "string — municipality name",
+  "region": "string — region name",
+  "date": "string — date as MM/DD/YYYY",
+  "desc": "string — description text",
+  "bldg": "string — building info",
+  "acreage": "string — acreage value",
+  "consid": "string — total consideration in dollars",
+  "cash": "string — cash component in dollars",
+  "debt": "string — debt component in dollars",
+  "note": "string — transaction note",
+  "pin": "string — PIN",
+  "rollno": "string — assessment roll number"
+}

@@ -1,0 +1,126 @@
+"""
+Transactions API — browse, search, detail.
+"""
+
+import json
+from fastapi import APIRouter, Depends, Query
+from ...web.deps import get_db, get_current_user
+
+router = APIRouter()
+
+
+@router.get("")
+def browse_transactions(
+    page: int = Query(1, ge=1),
+    per_page: int = Query(25, ge=1, le=100),
+    city: str = None,
+    region: str = None,
+    min_price: int = None,
+    max_price: int = None,
+    sort: str = "sale_date",
+    order: str = "desc",
+    db=Depends(get_db),
+    user=Depends(get_current_user),
+):
+    """Paginated transaction browse with filters."""
+    allowed_sorts = {"sale_date", "sale_price", "display_address", "city"}
+    if sort not in allowed_sorts:
+        sort = "sale_date"
+    if order not in ("asc", "desc"):
+        order = "desc"
+
+    conditions = []
+    params = []
+
+    if city:
+        conditions.append("city = ?")
+        params.append(city)
+    if region:
+        conditions.append("region = ?")
+        params.append(region)
+    if min_price is not None:
+        conditions.append("sale_price >= ?")
+        params.append(min_price)
+    if max_price is not None:
+        conditions.append("sale_price <= ?")
+        params.append(max_price)
+
+    where = " AND ".join(conditions) if conditions else "1=1"
+    offset = (page - 1) * per_page
+
+    count_row = db.execute(f"SELECT COUNT(*) FROM transactions WHERE {where}", params).fetchone()
+    total = count_row[0]
+
+    rows = db.execute(
+        f"SELECT source_id, property_id, sale_date, sale_price, display_address, city, region, "
+        f"seller_parties, buyer_parties, transaction_note "
+        f"FROM transactions WHERE {where} ORDER BY {sort} {order} LIMIT ? OFFSET ?",
+        params + [per_page, offset]
+    ).fetchall()
+
+    results = []
+    for r in rows:
+        d = dict(r)
+        d["seller_parties"] = json.loads(d.get("seller_parties") or "[]")
+        d["buyer_parties"] = json.loads(d.get("buyer_parties") or "[]")
+        results.append(d)
+
+    return {
+        "results": results,
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "pages": (total + per_page - 1) // per_page,
+    }
+
+
+@router.get("/search")
+def search_transactions(
+    q: str = Query(..., min_length=1),
+    limit: int = Query(25, ge=1, le=100),
+    db=Depends(get_db),
+    user=Depends(get_current_user),
+):
+    """Search transactions by address."""
+    rows = db.execute(
+        "SELECT source_id, property_id, sale_date, sale_price, display_address, city, "
+        "seller_parties, buyer_parties "
+        "FROM transactions WHERE display_address LIKE ? LIMIT ?",
+        (f"%{q}%", limit)
+    ).fetchall()
+    results = []
+    for r in rows:
+        d = dict(r)
+        d["seller_parties"] = json.loads(d.get("seller_parties") or "[]")
+        d["buyer_parties"] = json.loads(d.get("buyer_parties") or "[]")
+        results.append(d)
+    return {"results": results, "total": len(results)}
+
+
+@router.get("/{source_id}")
+def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """Full transaction detail."""
+    row = db.execute("SELECT * FROM transactions WHERE source_id = ?", (source_id,)).fetchone()
+    if not row:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Transaction not found")
+
+    result = dict(row)
+    for field in ["seller_parties", "buyer_parties", "consideration_json", "broker_json", "photos_json"]:
+        if result.get(field):
+            result[field] = json.loads(result[field])
+
+    # Get associated contacts/groups
+    parties = db.execute(
+        "SELECT tp.side, tp.party_name, tp.contact_title, tp.phone, "
+        "c.id as contact_id, c.display_name as contact_name, "
+        "g.id as group_id, g.display_name as group_name "
+        "FROM transaction_parties tp "
+        "LEFT JOIN contacts c ON tp.contact_id = c.id "
+        "LEFT JOIN groups g ON tp.group_id = g.id "
+        "WHERE tp.source_id = ?",
+        (source_id,)
+    ).fetchall()
+    result["parties"] = [dict(p) for p in parties]
+
+    return result

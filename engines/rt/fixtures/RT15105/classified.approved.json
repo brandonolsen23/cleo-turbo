@@ -1,0 +1,200 @@
+{
+  "rt_id": "RT15105",
+  "source_folder": "Halton_Region/comm-ind-land/p025",
+  "position": 39,
+  "join_verified": true,
+  "header": {
+    "sale_date": "1999-09-01",
+    "sale_price": 680000,
+    "city": "Halton Hills",
+    "region": "Halton Region",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "HIGHWAY 7"
+        ],
+        "type": "highway",
+        "geocodable": false
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Woodcris Properties Ltd"
+      },
+      {
+        "name": "Sabrina Estates Ltd"
+      },
+      {
+        "name": "1251146 Ontario Ltd"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Yvonne Christie",
+        "title": "attn"
+      },
+      {
+        "name": "john Dipoce",
+        "title": "pres"
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "Box 265",
+        "189 Main St"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Milton",
+      "province": "Ontario",
+      "postal": "L9T 4N9",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "Haltwell Developments Inc"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Fred Dawkins",
+        "title": "pres"
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "RR 1"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Puslinch",
+      "province": "Ontario",
+      "postal": "N0B 2J0",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "",
+    "pin_multiple": false,
+    "acreage": null,
+    "legal_description": "Plan 20R-10865, Part 1",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "",
+  "description": {
+    "description": "Land",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 680000,
+    "debt": 0,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Business Development Bank of Canada",
+        "principal": 1075000,
+        "rate": "Floating base rate plus 10.0% per annum.",
+        "registered": "04/17/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Named Individual(s)",
+        "principal": 750000,
+        "rate": "8.0% per annum interest only. Mortgagee has the option to renew at a rate no higher than 15.0% per annum, a renewal fee of 3.0% of the principal amount will apply. If not renewed, interest on any principal remaining will be 18.0% per annum, an administration fee of $300 will apply.",
+        "registered": "04/16/2020",
+        "due": "04/15/2021"
+      },
+      {
+        "chargee": "Canadian Imperial Bank of Commerce",
+        "principal": 1100000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "04/16/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Named Individual(s)",
+        "principal": 300000,
+        "rate": "5.0% per annum.",
+        "registered": "04/17/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Bank of Montreal",
+        "principal": 900000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "04/17/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Caisse Desjardins Ontario Credit Union Inc",
+        "principal": 750000,
+        "rate": "Prime plus 10.0% per annum.",
+        "registered": "04/16/2020",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 39,
+    "address": "HIGHWAY 7",
+    "postcode": "",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "09/01/1999",
+    "desc": "Land",
+    "bldg": "",
+    "acreage": "",
+    "consid": "680000",
+    "cash": "680000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "HIGHWAY 7"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "01 Sep 1999",
+    "note": "",
+    "description": "Land",
+    "seller_lines": [
+      "Woodcris Properties Ltd",
+      "Sabrina Estates Ltd",
+      "1251146 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Haltwell Developments Inc"
+    ],
+    "price_text": "$680,000"
+  }
+}

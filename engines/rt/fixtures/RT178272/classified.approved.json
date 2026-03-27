@@ -1,0 +1,167 @@
+{
+  "rt_id": "RT178272",
+  "source_folder": "Oxford_County/farm/p004",
+  "position": 33,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2023-06-05",
+    "sale_price": 1750000,
+    "city": "Zorra",
+    "region": "Oxford County",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "155785 FIFTEENTH LINE"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      },
+      {
+        "lines": [
+          "155785 15TH LINE"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Halfway Farms Inc"
+      },
+      {
+        "name": "Kenneth Henderson"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "155807 15th Line, RR 4"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Thamesford",
+      "province": "Ontario",
+      "postal": "N0M 2M0",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "1326502 Ontario Ltd"
+      },
+      {
+        "name": "Jason Rennie"
+      }
+    ],
+    "phone": "519-285-3510",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Constance Henderson",
+        "title": "attn"
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "683122 Rd 68"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Thamesford",
+      "province": "Ontario",
+      "postal": "N0M 2M0",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "00188-0020",
+    "pin_multiple": false,
+    "acreage": 52.16,
+    "legal_description": "Conc 9 - East Nissori,\nPart Lot 13",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "32 27 011 020 05800",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 1750000,
+    "debt": 0,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Farm Credit Canada",
+        "principal": 5000000,
+        "rate": "18.0% per annum.",
+        "registered": "06/05/2023",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [
+      "/assets/files/RT17/RT1782/RT178272/air1.jpg",
+      "/assets/files/RT17/RT1782/RT178272/air2.jpg",
+      "/assets/files/RT17/RT1782/RT178272/air3.jpg"
+    ],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 33,
+    "address": "155785 FIFTEENTH LINE, 155785 15TH LINE",
+    "postcode": "N0M 2M0",
+    "municipality": "Zorra",
+    "region": "Oxford County",
+    "date": "06/05/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "52.16",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "00188-0020",
+    "rollno": "32 27 011 020 05800"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "155785 FIFTEENTH LINE",
+      "155785 15TH LINE"
+    ],
+    "city_region": "Zorra : Oxford County",
+    "date_text": "05 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Halfway Farms Inc",
+      "Kenneth Henderson"
+    ],
+    "buyer_lines": [
+      "1326502 Ontario Ltd",
+      "Jason Rennie"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

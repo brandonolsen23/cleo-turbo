@@ -1,0 +1,61 @@
+{
+  "_description": "Structural extraction schema for detail HTML pages. Each field maps directly to an HTML pattern. No interpretation, no classification. Just the text between structural markers, with HTML entities decoded and whitespace trimmed.",
+
+  "_normalization_rules": [
+    "Decode HTML entities: &nbsp; → space, &amp; → &, &#39; → ', &#233; → é, etc.",
+    "Trim leading/trailing whitespace from each line",
+    "Strip \\r characters (normalize to Unix line endings)",
+    "Preserve internal multi-space runs (they carry signal for classification)",
+    "Drop empty lines that are purely HTML formatting artifacts"
+  ],
+
+  "meta": {
+    "rt_id": "string — from detail footer grey font tag (e.g., 'RT101601')",
+    "source_folder": "string — region/type/page path (e.g., 'Peel_Region/industrial/p032')",
+    "position": "integer — 0-based position within the folder (from detail filename)",
+    "detail_path": "string — absolute path to source HTML file"
+  },
+
+  "header": {
+    "address_lines": "array of strings — each line from <strong id='address'>, split by <br/>. Can be 1 to 16 lines. Portfolio properties list many addresses.",
+    "city_region": "string — text after </strong> tag (e.g., 'Brampton : Peel Region')",
+    "date_text": "string — raw date as displayed (e.g., '17 Jul 2014')",
+    "price_text": "string — raw price as displayed (e.g., '$2,550,000')",
+    "note": "string — text from <font color='#CC0000'> tag. 256 known values including 'Portfolio', 'Power of Sale', 'Related Parties', 'Land Assembly', compound notes like 'Land Assembly; Sale Leaseback', percentage interests like '50% Interest'. Empty string if blank."
+  },
+
+  "transferor": {
+    "party_lines": "array of strings — each <br/>-separated line between 'Transferor(s)</font><br/>' and '<em>' tag. 1 to 11 lines. Phone number stays attached if on same line (e.g., '1707416 Ontario Inc   905-789-9500'). 'Named Individual(s)' is a special placeholder (31,752 files).",
+    "trade_name": "string — contents of <em> tag (e.g., 'ESAM Group', 'KingSett Capital'). Empty string if <em></em>. Not present if no <em> tag at all (Named Individual(s) cases).",
+    "contact_lines": "array of strings — each <br/>-separated line between first <p/> after <em> and the next <p/>. 0 to 8 lines. Contains all raw text: prefixed contact names (Attn:, Pres:, VP:, ASO:, Dir:, c/o), street addresses, building names, law firm names, city/province, postal code, country — all as raw text lines in order. Empty array if no contact block (Named Individual(s) cases)."
+  },
+
+  "transferee": {
+    "party_lines": "array of strings — same structure as transferor. 1 to 8 lines.",
+    "trade_name": "string — same as transferor.",
+    "contact_lines": "array of strings — same as transferor. 0 to 9 lines."
+  },
+
+  "description_lines": "array of strings — all lines from Description section, split by <br/> and <p/>. 0 to 104 lines. Empty array if Description section not present (40,460 files have no Description). Portfolio transactions can have extensive per-building breakdowns.",
+
+  "more_info_url": "string — URL path from 'more info:' PDF link (e.g., '/assets/files/RT17/RT1749/RT174990/mi.pdf'). Empty string if not present. Appears in 11,834 files. Usually in Description section (86%), sometimes after Transferee contact block (14%).",
+
+  "site_lines": "array of strings — all lines from Site section, split by <br/> and <p/>. 0 to 19 lines. Contains legal descriptions (Plan/Lot/Conc references), PIN lines, acreage, location descriptions, 'Except:' exclusion blocks, 'Surface rights only' notes — all as raw text in order. Empty array if Site section not present (3 files). The <p/> breaks within this section separate logical segments but we capture everything as a flat line array.",
+
+  "arn_text": "string — raw assessment roll number text from Assessment Roll Number section (e.g., '21 10 100 025 27110'). Empty string if section not present (43,371 files have no ARN).",
+
+  "consideration_lines": "array of strings — all lines from Consideration section, split by <br/> and <p/>. Always present. Contains cash/debt line, optional chattels/other lines, and 0 to 17 chargee blocks (each with chargee name, principal, rate, registered date, due date). All as raw text lines in order.",
+
+  "broker_lines": "array of strings — all lines from Broker/Agent section. 0 to 4 entries. Empty array if section not present (95,847 files have no Broker). Format is typically 'Brokerage: Agent1 & Agent2, phone'.",
+
+  "photos": {
+    "street_photo_urls": "array of strings — URLs from carousel gallery images (realtrack.cachefly.net/photos/...). Empty array if no street photos (75,641 files).",
+    "aerial_photo_urls": "array of strings — URLs from shadowbox aerial links (/assets/files/.../airN.jpg). Empty array if no aerial photos (94,347 files).",
+    "standalone_photo_url": "string — URL from older single-image format (/assets/files/.../photo.jpg). Empty string if not present. 16,020 files use this older format."
+  },
+
+  "footer": {
+    "page_position": "string — the 'N / M' text from footer (e.g., '1583 / 3793')",
+    "rt_id": "string — RT ID from footer, cross-checked against meta.rt_id"
+  }
+}

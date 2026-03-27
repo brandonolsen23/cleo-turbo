@@ -1,0 +1,198 @@
+{
+  "rt_id": "RT16585",
+  "source_folder": "Halton_Region/res-land/p032",
+  "position": 8,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2000-02-25",
+    "sale_price": 938175,
+    "city": "Burlington",
+    "region": "Halton Region",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "BRITANIA RD S/S"
+        ],
+        "type": "street_name",
+        "geocodable": false
+      },
+      {
+        "lines": [
+          "WALKERS LINE"
+        ],
+        "type": "street_name",
+        "geocodable": false
+      },
+      {
+        "lines": [
+          "GUELPH LINE"
+        ],
+        "type": "street_name",
+        "geocodable": false
+      },
+      {
+        "lines": [
+          "CONC 4, PT LOT 5"
+        ],
+        "type": "legal_description",
+        "geocodable": false
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "William & Stuart King"
+      },
+      {
+        "name": "Ronald & Cecil King"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "RR 2"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Milton",
+      "province": "Ontario",
+      "postal": "L9T 2X6",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "Karen S. O. Wheeler"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "RR 2"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Milton",
+      "province": "Ontario",
+      "postal": "L9T 2X6",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "",
+    "pin_multiple": false,
+    "acreage": 185.25,
+    "legal_description": "Plan 20R-13496, Parts 1-9",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "24 02 030 306 15100",
+  "description": {
+    "description": "Farm - Approx 185.25 Ac @ $5,064",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 713175,
+    "debt": 225000,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Royal Bank of Canada",
+        "principal": 1000000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "12/16/2021",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Canadian Imperial Bank of Commerce",
+        "principal": 1105000,
+        "rate": "Prime minus 1.26% per annum.",
+        "registered": "12/16/2021",
+        "due": "12/17/2024"
+      },
+      {
+        "chargee": "Dez Capital Corp",
+        "principal": 1459500,
+        "rate": "6.49% per annum. To automatically renew for 1 month at TD prime plus 12.0% per annum.",
+        "registered": "12/13/2021",
+        "due": "12/31/2022"
+      },
+      {
+        "chargee": "Named Individual(s)",
+        "principal": 1700000,
+        "rate": "5.0% per annum.",
+        "registered": "12/17/2021",
+        "due": "12/16/2026"
+      },
+      {
+        "chargee": "The Bank of Nova Scotia",
+        "principal": 1100000,
+        "rate": "Prime plus 6.0% per annum.",
+        "registered": "12/15/2021",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 8,
+    "address": "BRITANIA RD S/S, WALKERS LINE, GUELPH LINE, CONC 4, PT LOT 5",
+    "postcode": "L9T 2X6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "02/25/2000",
+    "desc": "Farm - Approx 185.25 Ac @ $5,064",
+    "bldg": "",
+    "acreage": "185.25",
+    "consid": "938175",
+    "cash": "713175",
+    "debt": "225000",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 030 306 15100"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "BRITANIA RD S/S",
+      "WALKERS LINE",
+      "GUELPH LINE",
+      "CONC 4, PT LOT 5"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "25 Feb 2000",
+    "note": "",
+    "description": "Farm - Approx 185.25 Ac @ $5,064",
+    "seller_lines": [
+      "William & Stuart King",
+      "Ronald & Cecil King"
+    ],
+    "buyer_lines": [
+      "Karen S. O. Wheeler"
+    ],
+    "price_text": "$938,175"
+  }
+}

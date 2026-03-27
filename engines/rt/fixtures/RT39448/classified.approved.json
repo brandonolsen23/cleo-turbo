@@ -1,0 +1,158 @@
+{
+  "rt_id": "RT39448",
+  "source_folder": "Wellington/comm-ind-land/p010",
+  "position": 9,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2004-12-30",
+    "sale_price": 1105000,
+    "city": "Erin",
+    "region": "Wellington",
+    "transaction_note": "Power of Sale",
+    "address_entries": [
+      {
+        "lines": [
+          "HWY 24"
+        ],
+        "type": "highway",
+        "geocodable": false
+      },
+      {
+        "lines": [
+          "CONC 10",
+          "PART LOT 17"
+        ],
+        "type": "legal_description",
+        "geocodable": false
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "1364809 Ontario Inc"
+      }
+    ],
+    "phone": "905-279-7930",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Alan Scott",
+        "title": "attn"
+      },
+      {
+        "name": "Weir Nakon",
+        "title": ""
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "1290 Central Pkwy W, Ste 710"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Mississauga",
+      "province": "Ontario",
+      "postal": "L5C 4R3",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "2060696 Ontario Inc"
+      }
+    ],
+    "phone": "905-951-8705",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Angelo Carlucci",
+        "title": "pres"
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "58 Foxchase Dr"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Bolton",
+      "province": "Ontario",
+      "postal": "L7E 1H9",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "",
+    "pin_multiple": false,
+    "acreage": 98.55,
+    "legal_description": "Conc 10, Part Lot 17\nPlan 61R-3671, Part 1\nExcept:\nPlan 61R-4992, Parts 1 & 2",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 1105000,
+    "debt": 0,
+    "chattels": null,
+    "other": null,
+    "charges": []
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 9,
+    "address": "HWY 24, CONC 10, PART LOT 17",
+    "postcode": "",
+    "municipality": "Erin",
+    "region": "Wellington",
+    "date": "12/30/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "98.55",
+    "consid": "1105000",
+    "cash": "1105000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "HWY 24",
+      "CONC 10",
+      "PART LOT 17"
+    ],
+    "city_region": "Erin : Wellington",
+    "date_text": "30 Dec 2004",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "1364809 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2060696 Ontario Inc"
+    ],
+    "price_text": "$1,105,000"
+  }
+}

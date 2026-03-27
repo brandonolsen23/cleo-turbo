@@ -1,0 +1,14 @@
+# Pipeline output — regenerated from source, not tracked in git
+pipeline/extracted/
+pipeline/assembled/
+pipeline/classified/
+
+# Reports — generated, not tracked
+reports/*.html
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,13 @@
+{
+  "_description": "Results page extraction schema. Each row in the results table has seller names, buyer names, address, price, date. Extracted per position (row order).",
+
+  "position": "integer — row index in results table (0-based)",
+  "address_lines": "array of strings — address from first cell, split by <br/>",
+  "city_region": "string — city : region text",
+  "date_text": "string — date as displayed (e.g., '20 Sep 2007')",
+  "note": "string — transaction note from red font (e.g., 'Land Assembly', or empty)",
+  "description": "string — property description from propDesc class",
+  "seller_lines": "array of strings — seller entity names, one per line before 'to' divider",
+  "buyer_lines": "array of strings — buyer entity names, one per line after 'to' divider",
+  "price_text": "string — price as displayed (e.g., '$1,200,000')"
+}

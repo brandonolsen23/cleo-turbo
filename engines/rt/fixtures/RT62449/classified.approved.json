@@ -1,0 +1,149 @@
+{
+  "rt_id": "RT62449",
+  "source_folder": "Wellington/res-land/p005",
+  "position": 27,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2008-06-09",
+    "sale_price": 1600000,
+    "city": "Puslinch",
+    "region": "Wellington",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "1 FOX RUN DR"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Named Individual(s)"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [],
+      "modifiers": [],
+      "building_names": [],
+      "city": "",
+      "province": "",
+      "postal": "",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "Sloot Construction Ltd"
+      }
+    ],
+    "phone": "519-836-6142",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "John Sloot",
+        "title": "pres"
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "599 Arkell Rd"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Guelph",
+      "province": "Ontario",
+      "postal": "N0B 1C0",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "71197-0285",
+    "pin_multiple": false,
+    "acreage": 54.89,
+    "legal_description": "Conc 8, Part Lots 18 & 19\nPlan 61R-9927, Parts 1-3",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "23 01 000 006 05460",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 750000,
+    "debt": 850000,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Stanley Slater",
+        "principal": 850000,
+        "rate": "First 6 months at 0% then 8.0% per annum",
+        "registered": "06/09/2008",
+        "due": "06/06/2013"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [
+      "/assets/files/RT6/RT624/RT62449/air1.jpg",
+      "/assets/files/RT6/RT624/RT62449/air2.jpg",
+      "/assets/files/RT6/RT624/RT62449/air3.jpg"
+    ],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 27,
+    "address": "1 FOX RUN DR",
+    "postcode": "N1H 6H9",
+    "municipality": "Puslinch",
+    "region": "Wellington",
+    "date": "06/09/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "54.89",
+    "consid": "1600000",
+    "cash": "750000",
+    "debt": "850000",
+    "note": "",
+    "pin": "71197-0285",
+    "rollno": "23 01 000 006 05460"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "1 FOX RUN DR"
+    ],
+    "city_region": "Puslinch : Wellington",
+    "date_text": "09 Jun 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Sloot Construction Ltd"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

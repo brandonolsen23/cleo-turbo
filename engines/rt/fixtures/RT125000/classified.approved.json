@@ -1,0 +1,154 @@
+{
+  "rt_id": "RT125000",
+  "source_folder": "Peel_Region/industrial/p027",
+  "position": 35,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2017-05-01",
+    "sale_price": 2450000,
+    "city": "Mississauga",
+    "region": "Peel Region",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "1061 BREVIK PL"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Named Individual(s)"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [],
+      "modifiers": [],
+      "building_names": [],
+      "city": "",
+      "province": "",
+      "postal": "",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "1540700 Ontario Ltd"
+      }
+    ],
+    "phone": "905-319-2234",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Douglas Fast",
+        "title": "pres"
+      }
+    ],
+    "care_of": {
+      "type": "company",
+      "text": "Control Chem Canada Ltd"
+    },
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "4460 Harvester Rd"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Burlington",
+      "province": "Ontario",
+      "postal": "L7L 4X2",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "13294-0074",
+    "pin_multiple": false,
+    "acreage": 0.69,
+    "legal_description": "Plan M-326, Lot 5",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "21 05 050 116 46200",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 2450000,
+    "debt": 0,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Royal Bank of Canada",
+        "principal": 2000000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "05/01/2017",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [
+      "http://realtrack.cachefly.net/photos/RT12/RT1250/RT125000/0513_135943.jpg",
+      "http://realtrack.cachefly.net/photos/RT12/RT1250/RT125000/0513_135945.jpg",
+      "http://realtrack.cachefly.net/photos/RT12/RT1250/RT125000/0513_140014.jpg",
+      "http://realtrack.cachefly.net/photos/RT12/RT1250/RT125000/0513_140015.jpg",
+      "http://realtrack.cachefly.net/photos/RT12/RT1250/RT125000/0513_140030.jpg"
+    ],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 35,
+    "address": "1061 BREVIK PL",
+    "postcode": "L4W 3R7",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "05/01/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".69",
+    "consid": "2450000",
+    "cash": "2450000",
+    "debt": "",
+    "note": "",
+    "pin": "13294-0074",
+    "rollno": "21 05 050 116 46200"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "1061 BREVIK PL"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 May 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1540700 Ontario Ltd"
+    ],
+    "price_text": "$2,450,000"
+  }
+}

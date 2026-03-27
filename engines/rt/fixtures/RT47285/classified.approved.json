@@ -1,0 +1,138 @@
+{
+  "rt_id": "RT47285",
+  "source_folder": "Wellington/comm-ind-land/p008",
+  "position": 29,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2005-10-24",
+    "sale_price": 500000,
+    "city": "Minto",
+    "region": "Wellington",
+    "transaction_note": "Related Parties",
+    "address_entries": [
+      {
+        "lines": [
+          "9464 ROAD 3 N"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Named Individual(s)"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [],
+      "modifiers": [],
+      "building_names": [],
+      "city": "",
+      "province": "",
+      "postal": "",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "Named Individual(s)"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [],
+      "modifiers": [],
+      "building_names": [],
+      "city": "",
+      "province": "",
+      "postal": "",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "",
+    "pin_multiple": false,
+    "acreage": 102.71,
+    "legal_description": "Conc 12, Lot 16",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "23 41 000 003 08300",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 0,
+    "debt": 500000,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Harold Copland",
+        "principal": 500000,
+        "rate": "",
+        "registered": "10/24/2005",
+        "due": "10/31/2015"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 29,
+    "address": "9464 ROAD 3 N",
+    "postcode": "N0G 2L0",
+    "municipality": "Minto",
+    "region": "Wellington",
+    "date": "10/24/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "102.71",
+    "consid": "500000",
+    "cash": "",
+    "debt": "500000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "23 41 000 003 08300"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "9464 ROAD 3 N"
+    ],
+    "city_region": "Minto : Wellington",
+    "date_text": "24 Oct 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$500,000"
+  }
+}

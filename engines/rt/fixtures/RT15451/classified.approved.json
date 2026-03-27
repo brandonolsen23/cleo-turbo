@@ -1,0 +1,202 @@
+{
+  "rt_id": "RT15451",
+  "source_folder": "Peel_Region/office/p021",
+  "position": 38,
+  "join_verified": true,
+  "header": {
+    "sale_date": "1999-10-01",
+    "sale_price": 1400000,
+    "city": "Mississauga",
+    "region": "Peel Region",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "77 THE QUEENSWAY W"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Pluto Darkwoods Corporation"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "George T. Wisniewski",
+        "title": "attn"
+      }
+    ],
+    "care_of": {
+      "type": "law_firm",
+      "text": "Dale & Lessman, Barristers & Solicitors"
+    },
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "PO Box 73, Ste 200"
+      ],
+      "modifiers": [],
+      "building_names": [
+        "Commercial Union Tower, TD Centre"
+      ],
+      "city": "Toronto",
+      "province": "Ontario",
+      "postal": "M5K 1E7",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "1375378 Ontario Ltd"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "Imthihaz Datu",
+        "title": "pres"
+      }
+    ],
+    "care_of": {
+      "type": "law_firm",
+      "text": "Richard E. Rusek, Barrister & Solicitor"
+    },
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "1623 Bloor St W"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Toronto",
+      "province": "Ontario",
+      "postal": "M6P 1A6",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "",
+    "pin_multiple": false,
+    "acreage": null,
+    "legal_description": "Conc 1, Part Lot 16, SDS",
+    "location": "N side Queensway W, E of Confederation Pkwy",
+    "surface_rights_only": false
+  },
+  "arn": "21 05 060 127 07500",
+  "description": {
+    "description": "Medical Office Bldg - 2.5 storey; 21,338 sf @ $66",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 1400000,
+    "debt": 0,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Bank of Montreal",
+        "principal": 1050000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "09/01/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Bank of Montreal",
+        "principal": 1050000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "05/31/2012",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Fortunedom Inc\nJinchen International Canada Inc",
+        "principal": 1300000,
+        "rate": "8.0% per annum.",
+        "registered": "09/03/2020",
+        "due": "09/02/2021"
+      },
+      {
+        "chargee": "Royal Bank of Canada",
+        "principal": 1720000,
+        "rate": "Prime plus 7.0% per annum.",
+        "registered": "09/01/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "Bank of Montreal",
+        "principal": 1797000,
+        "rate": "Prime plus 5.0% per annum.",
+        "registered": "09/01/2020",
+        "due": "on demand"
+      },
+      {
+        "chargee": "GTA Mortgage Investment Corp\nDjab Holding Corp\n2617674 Ontario Inc",
+        "principal": 875000,
+        "rate": "6.0% per annum. 18.0% per annum on any principal remaining upon maturity. An administration fee of $250 per month will apply.",
+        "registered": "09/04/2020",
+        "due": "10/01/2021"
+      },
+      {
+        "chargee": "Business Development Bank of Canada",
+        "principal": 1788200,
+        "rate": "Floating base rate plus 10.0% per annum.",
+        "registered": "09/01/2020",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": "/assets/files/RT1/RT154/RT15451/photo.jpg"
+  },
+  "export": {
+    "position": 38,
+    "address": "77 THE QUEENSWAY W",
+    "postcode": "L5B 1B7",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "10/01/1999",
+    "desc": "Medical Office Bldg - 2.5 storey; 21,338 sf @ $66",
+    "bldg": "21,338 sf",
+    "acreage": "",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 060 127 07500"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "77 THE QUEENSWAY W"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 Oct 1999",
+    "note": "",
+    "description": "Medical Office Bldg - 2.5 storey; 21,338 sf @ $66",
+    "seller_lines": [
+      "Pluto Darkwoods Corporation"
+    ],
+    "buyer_lines": [
+      "1375378 Ontario Ltd"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

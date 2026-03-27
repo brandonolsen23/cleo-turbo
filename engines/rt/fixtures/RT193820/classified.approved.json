@@ -1,0 +1,153 @@
+{
+  "rt_id": "RT193820",
+  "source_folder": "Frontenac_County/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "header": {
+    "sale_date": "2025-08-13",
+    "sale_price": 1700000,
+    "city": "Kingston",
+    "region": "Frontenac County",
+    "transaction_note": "",
+    "address_entries": [
+      {
+        "lines": [
+          "125 BROCK ST"
+        ],
+        "type": "street_address",
+        "geocodable": true
+      }
+    ]
+  },
+  "seller": {
+    "parties": [
+      {
+        "name": "Blondie & Company Real Estate Group Inc"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "222 Kingscourt Ave"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Kingston",
+      "province": "Ontario",
+      "postal": "K7K 4P8",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "buyer": {
+    "parties": [
+      {
+        "name": "1001285228 Ontario Inc"
+      }
+    ],
+    "phone": "",
+    "trade_name": "",
+    "contacts": [
+      {
+        "name": "David Kay",
+        "title": "attn"
+      }
+    ],
+    "care_of": null,
+    "law_firms": [],
+    "companies": [],
+    "address": {
+      "lines": [
+        "125 Brock St"
+      ],
+      "modifiers": [],
+      "building_names": [],
+      "city": "Kingston",
+      "province": "Ontario",
+      "postal": "K7L 1S1",
+      "country": ""
+    },
+    "other_lines": []
+  },
+  "site": {
+    "pin": "36042-0123",
+    "pin_multiple": false,
+    "acreage": 0.13,
+    "legal_description": "Original Survey Kingston City,\nPart Lots 231 & 251\nAs in Inst No FR-195614",
+    "location": "",
+    "surface_rights_only": false
+  },
+  "arn": "10 11 010 130 11200",
+  "description": {
+    "description": "",
+    "more_info_url": ""
+  },
+  "consideration": {
+    "cash": 1700000,
+    "debt": 0,
+    "chattels": null,
+    "other": null,
+    "charges": [
+      {
+        "chargee": "Northern Birch Credit Union Ltd",
+        "principal": 1700000,
+        "rate": "",
+        "registered": "08/13/2025",
+        "due": "on demand"
+      }
+    ]
+  },
+  "broker": {
+    "brokers": []
+  },
+  "photos": {
+    "street_photo_urls": [
+      "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193820/0822_083130.jpg",
+      "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193820/0822_083136.jpg",
+      "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193820/0822_083202.jpg",
+      "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193820/0822_083203.jpg",
+      "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193820/0822_083210.jpg"
+    ],
+    "aerial_photo_urls": [],
+    "standalone_photo_url": ""
+  },
+  "export": {
+    "position": 11,
+    "address": "125 BROCK ST",
+    "postcode": "K7L 1S1",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "08/13/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "36042-0123",
+    "rollno": "10 11 010 130 11200"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "125 BROCK ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "13 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Blondie & Company Real Estate Group Inc"
+    ],
+    "buyer_lines": [
+      "1001285228 Ontario Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

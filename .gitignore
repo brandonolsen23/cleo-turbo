@@ -1,0 +1,24 @@
+# Data — too large for git, lives on disk
+raw-data/
+engines/rt/pipeline/extracted/
+engines/rt/pipeline/assembled/
+engines/rt/pipeline/classified/
+engines/rt/pipeline/addresses/
+engines/rt/pipeline/parcel_links/
+clean-data/
+data/cleo.db
+data/review-issues.json
+
+# Build artifacts
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# OS
+.DS_Store
+
+# Environment
+frontend/.env
