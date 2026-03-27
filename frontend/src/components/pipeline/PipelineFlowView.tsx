@@ -89,10 +89,7 @@ const CONNECTIONS: Connection[] = [
   { from: "assembled:detail.photos.aerial_photo_urls",   to: "classified:photos.aerial_photo_urls",   type: "pass" },
 
   // ── Classified → Addresses (enrichment — address expansion) ──
-  { from: "classified:header.address_entries",  to: "addresses:property.addresses[0].display",       type: "enrich" },
-  { from: "classified:header.address_entries",  to: "addresses:property.addresses[0].components",    type: "enrich" },
-  { from: "classified:header.address_entries",  to: "addresses:property.addresses[0].geocode_string", type: "enrich" },
-  { from: "classified:header.address_entries",  to: "addresses:property.addresses[0].geocodable",    type: "enrich" },
+  // NOTE: address array connections are built dynamically in buildDynamicConnections()
   { from: "classified:seller.address.lines",    to: "addresses:seller.address.display",              type: "enrich" },
   { from: "classified:seller.address.city",     to: "addresses:seller.address.city",                 type: "pass" },
   { from: "classified:seller.address.province", to: "addresses:seller.address.province",             type: "pass" },
@@ -113,10 +110,7 @@ const CONNECTIONS: Connection[] = [
   { from: "classified:arn",                     to: "addresses:arn.api_format",                      type: "enrich" },
 
   // ── Addresses → Clean ──
-  { from: "addresses:property.addresses[0].display",       to: "clean:property.addresses[0].display",        type: "pass" },
-  { from: "addresses:property.addresses[0].components",    to: "clean:property.addresses[0].components",     type: "pass" },
-  { from: "addresses:property.addresses[0].geocode_string", to: "clean:property.addresses[0].geocode_string", type: "pass" },
-  { from: "addresses:property.addresses[0].geocodable",    to: "clean:property.addresses[0].geocodable",     type: "pass" },
+  // NOTE: address array connections are built dynamically in buildDynamicConnections()
   { from: "addresses:seller.address.display",        to: "clean:seller.address.display",        type: "pass" },
   { from: "addresses:seller.address.city",           to: "clean:seller.address.city",           type: "pass" },
   { from: "addresses:seller.address.province",       to: "clean:seller.address.province",       type: "pass" },
@@ -167,6 +161,39 @@ const CONNECTIONS: Connection[] = [
   { from: "parcel_links:parcel_file",   to: "clean:parcel.parcel_file",   type: "pass" },
 ];
 
+/**
+ * Build dynamic connections for array fields (addresses, etc.)
+ * based on the actual data in the trace. This replaces hardcoded
+ * [0], [1] indices — it generates connections for however many
+ * items actually exist in the record.
+ */
+function buildDynamicConnections(trace: TraceData): Connection[] {
+  const dynamic: Connection[] = [];
+  const addrSubFields = ["display", "components", "geocode_string", "geocodable"];
+
+  // Get addresses stage data to count actual addresses
+  const addrData = getStageRecord(trace, "addresses");
+  const addrCount = addrData?.property?.addresses?.length ?? 0;
+
+  for (let i = 0; i < addrCount; i++) {
+    // Classified address_entries → Addresses property.addresses[i]
+    for (const sub of addrSubFields) {
+      dynamic.push({ from: "classified:header.address_entries", to: `addresses:property.addresses[${i}].${sub}`, type: "enrich" });
+    }
+    // Addresses property.addresses[i] → Clean property.addresses[i]
+    for (const sub of addrSubFields) {
+      dynamic.push({ from: `addresses:property.addresses[${i}].${sub}`, to: `clean:property.addresses[${i}].${sub}`, type: "pass" });
+    }
+  }
+
+  // If no addresses exist, still connect the entry point
+  if (addrCount === 0) {
+    dynamic.push({ from: "classified:header.address_entries", to: "addresses:property.addresses", type: "enrich" });
+  }
+
+  return dynamic;
+}
+
 // ============================================================
 // Stage node field definitions
 // ============================================================
@@ -178,12 +205,37 @@ interface FieldDef {
   section?: string;
 }
 
-function stageFields(stage: string): FieldDef[] {
+/**
+ * Build field definitions dynamically from the actual record data.
+ * Arrays (addresses, parties, contacts, charges) are expanded into
+ * individual rows so every item is visible and traceable.
+ */
+function stageFields(stage: string, data: any): FieldDef[] {
   const s = (path: string, label?: string): FieldDef => ({
     id: `${stage}:${path}`,
     label: label || path.split(".").pop()!,
     path,
   });
+
+  // Helper: expand an array field into per-item rows with sub-fields
+  function expandArray(basePath: string, subFields: string[], sectionLabel: string, itemLabel: string): FieldDef[] {
+    const arr = getNestedValue(data, basePath);
+    if (!Array.isArray(arr) || arr.length === 0) {
+      return [{ ...s(basePath, `${itemLabel} (empty)`), section: sectionLabel }];
+    }
+    const fields: FieldDef[] = [];
+    for (let i = 0; i < arr.length; i++) {
+      const prefix = arr.length > 1 ? `${itemLabel} ${i + 1}` : itemLabel;
+      for (let j = 0; j < subFields.length; j++) {
+        const sub = subFields[j];
+        const field = s(`${basePath}[${i}].${sub}`, `${prefix} ${sub}`);
+        if (j === 0 && i === 0) field.section = sectionLabel;
+        else if (j === 0 && i > 0) field.section = `${sectionLabel} (${i + 1})`;
+        fields.push(field);
+      }
+    }
+    return fields;
+  }
 
   switch (stage) {
     case "assembled": return [
@@ -242,10 +294,7 @@ function stageFields(stage: string): FieldDef[] {
       s("photos.aerial_photo_urls"),
     ];
     case "addresses": return [
-      { ...s("property.addresses[0].display", "display"), section: "Property Address" },
-      s("property.addresses[0].components", "components"),
-      s("property.addresses[0].geocode_string", "geocode_string"),
-      s("property.addresses[0].geocodable", "geocodable"),
+      ...expandArray("property.addresses", ["display", "components", "geocode_string", "geocodable"], "Property Address", "addr"),
       { ...s("seller.address.display", "display"), section: "Seller Address" },
       s("seller.address.components", "components"),
       s("seller.address.city", "city"),
@@ -277,10 +326,7 @@ function stageFields(stage: string): FieldDef[] {
       s("transaction.city"),
       s("transaction.region"),
       s("transaction.transaction_note"),
-      { ...s("property.addresses[0].display", "addr display"), section: "Property" },
-      s("property.addresses[0].components", "addr components"),
-      s("property.addresses[0].geocode_string", "geocode_string"),
-      s("property.addresses[0].geocodable", "geocodable"),
+      ...expandArray("property.addresses", ["display", "components", "geocode_string", "geocodable"], "Property", "addr"),
       s("property.city"),
       s("property.region"),
       s("property.postal"),
@@ -363,19 +409,6 @@ function valueStatus(val: any): "present" | "missing" | "empty" | "null" {
   return "present";
 }
 
-// Build the full transitive chain of connected field IDs from a starting field
-function getConnectedChain(startId: string): Set<string> {
-  const chain = new Set<string>([startId]);
-  let changed = true;
-  while (changed) {
-    changed = false;
-    for (const c of CONNECTIONS) {
-      if (chain.has(c.from) && !chain.has(c.to)) { chain.add(c.to); changed = true; }
-      if (chain.has(c.to) && !chain.has(c.from)) { chain.add(c.from); changed = true; }
-    }
-  }
-  return chain;
-}
 
 // Format value showing actual content, not just counts
 function formatValueFull(val: any): string {
@@ -541,8 +574,27 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
   const [selectedValue, setSelectedValue] = useState<{ id: string; value: any } | null>(null);
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
+  // Merge static + dynamic connections based on actual data
+  const allConnections = useMemo(() => [
+    ...CONNECTIONS,
+    ...buildDynamicConnections(trace),
+  ], [trace]);
+
   const activeField = lockedField || hoveredField;
-  const connectedSet = useMemo(() => activeField ? getConnectedChain(activeField) : null, [activeField]);
+  const connectedSet = useMemo(() => {
+    if (!activeField) return null;
+    // Build chain using all connections (static + dynamic)
+    const chain = new Set<string>([activeField]);
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const c of allConnections) {
+        if (chain.has(c.from) && !chain.has(c.to)) { chain.add(c.to); changed = true; }
+        if (chain.has(c.to) && !chain.has(c.from)) { chain.add(c.from); changed = true; }
+      }
+    }
+    return chain;
+  }, [activeField, allConnections]);
 
   const handleFieldClick = useCallback((id: string, value: any) => {
     if (lockedField === id) {
@@ -568,7 +620,7 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
 
     setCanvasSize({ width: inner.scrollWidth, height: inner.scrollHeight });
 
-    for (const conn of CONNECTIONS) {
+    for (const conn of allConnections) {
       const fromEl = inner.querySelector(`[data-field-id="${conn.from}"] .connector-out`);
       const toEl = inner.querySelector(`[data-field-id="${conn.to}"] .connector-in`);
       if (!fromEl || !toEl) continue;
@@ -587,7 +639,7 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
       paths.push({ d, color: TYPE_COLORS[conn.type] || TYPE_COLORS.pass, from: conn.from, to: conn.to, type: conn.type });
     }
     setSvgPaths(paths);
-  }, []);
+  }, [allConnections]);
 
   // Measure after render + re-measure on resize
   useLayoutEffect(() => {
@@ -673,7 +725,7 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
             <StageNode
               key={s.key}
               label={s.label}
-              fields={stageFields(s.key)}
+              fields={stageFields(s.key, getStageRecord(trace, s.key))}
               data={getStageRecord(trace, s.key)}
               connectedSet={connectedSet}
               lockedField={lockedField}
