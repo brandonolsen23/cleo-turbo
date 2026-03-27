@@ -215,6 +215,9 @@ def run_compiler(conn):
         # Get display address
         addrs = prop.get('addresses', [])
         display_address = addrs[0].get('display', '') if addrs else ''
+        # Ensure commas have a space after them (multi-address: "1677,1679" → "1677, 1679")
+        import re as _re
+        display_address = _re.sub(r',(?!\s)', ', ', display_address)
 
         # Property (one per ARN)
         property_id = None
