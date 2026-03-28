@@ -18,7 +18,7 @@ def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
     rows = db.execute(
         "SELECT id, display_address, city, current_owner_name, "
         "most_recent_sale_price, most_recent_sale_date, transaction_count, "
-        "lat, lng "
+        "primary_property_type, lat, lng "
         "FROM properties "
         "WHERE lat IS NOT NULL AND lng IS NOT NULL"
     ).fetchall()
@@ -39,6 +39,7 @@ def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
                 "latest_price": r["most_recent_sale_price"],
                 "latest_date": r["most_recent_sale_date"],
                 "transaction_count": r["transaction_count"],
+                "primary_property_type": r["primary_property_type"] or "",
             },
         })
 

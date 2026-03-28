@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS properties (
     most_recent_sale_date TEXT,
     most_recent_sale_price INTEGER,
     transaction_count INTEGER DEFAULT 0,
+    primary_property_type TEXT,
     lat             REAL,
     lng             REAL,
     parcel_geojson  TEXT,

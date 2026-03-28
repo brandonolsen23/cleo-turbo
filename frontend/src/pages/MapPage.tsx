@@ -9,7 +9,7 @@ import { Text, Badge, Button } from "@radix-ui/themes";
 import { FunnelSimple } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate, formatStreet } from "../lib/utils";
-import { getRadixHex, propertyTypeColor, propertyTypeLabel } from "../lib/theme";
+import { getRadixHex, propertyTypeColor, propertyTypeLabel, propertyTypeMatchExpression } from "../lib/theme";
 
 // ============================================================
 // Constants
@@ -243,8 +243,7 @@ export default function MapPage() {
       features = features.filter((f: any) => f.properties.city === cityFilter);
     }
     if (typeFilters.size > 0) {
-      // For now, we don't have property type on the geo endpoint — skip type filter on list
-      // This will be enhanced when we add property_type to the geo response
+      features = features.filter((f: any) => typeFilters.has(f.properties.primary_property_type));
     }
     if (minPrice) {
       const min = parseInt(minPrice);
@@ -482,13 +481,13 @@ export default function MapPage() {
               }}
               paint={{ "text-color": "#ffffff" }}
             />
-            {/* Individual points */}
+            {/* Individual points — colored by property type */}
             <Layer
               id="unclustered-point"
               type="circle"
               filter={["!", ["has", "point_count"]]}
               paint={{
-                "circle-color": getRadixHex("jade", 9),
+                "circle-color": propertyTypeMatchExpression(9) as any,
                 "circle-radius": 7,
                 "circle-stroke-width": 2,
                 "circle-stroke-color": "#ffffff",

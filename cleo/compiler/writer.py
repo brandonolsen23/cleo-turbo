@@ -207,6 +207,11 @@ def run_compiler(conn):
         prop = rec.get('property', {})
         parcel_info = rec.get('parcel')
 
+        # Extract property type from source_folder (e.g., "Peel_Region/industrial/p033" → "industrial")
+        source_folder = rec.get('source_folder', '')
+        folder_parts = source_folder.split('/') if source_folder else []
+        property_type = folder_parts[1] if len(folder_parts) >= 2 else ''
+
         arn = site.get('arn', {}).get('api_format', '')
         if arn and all(c == '0' for c in arn):
             arn = ''
@@ -239,10 +244,14 @@ def run_compiler(conn):
                     'owner_name': '',
                     'owner_group_id': None,
                     'source_id': source_id,
+                    'property_type': property_type,
                 }
 
             pd = property_data[arn]
             pd['tx_count'] += 1
+            # Always fill property_type if we have one and it's not set yet
+            if property_type and not pd['property_type']:
+                pd['property_type'] = property_type
 
             # Update with most recent transaction
             if tx.get('sale_date', '') and (not pd['sale_date'] or tx['sale_date'] > pd['sale_date']):
@@ -252,6 +261,7 @@ def run_compiler(conn):
                 pd['city'] = tx.get('city', '') or pd['city']
                 pd['region'] = tx.get('region', '') or pd['region']
                 pd['source_id'] = source_id
+                pd['property_type'] = property_type or pd['property_type']
                 # Current owner = buyer of most recent transaction
                 buyer_parties = rec.get('buyer', {}).get('parties', [])
                 if buyer_parties:
@@ -345,12 +355,13 @@ def run_compiler(conn):
         conn.execute(
             "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
             "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
-            "most_recent_sale_date, most_recent_sale_price, transaction_count, lat, lng, parcel_geojson) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "most_recent_sale_date, most_recent_sale_price, transaction_count, "
+            "primary_property_type, lat, lng, parcel_geojson) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
              pd['acreage'], pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
              pd['source_id'], pd['sale_date'], pd['sale_price'], pd['tx_count'],
-             lat, lng, parcel_geojson)
+             pd['property_type'], lat, lng, parcel_geojson)
         )
         prop_count += 1
     conn.commit()
