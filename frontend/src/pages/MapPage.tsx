@@ -231,28 +231,45 @@ export default function MapPage() {
   }, []);
 
   // ============================================================
-  // Filtered + viewport properties for list panel
+  // Filtered map data — applies to BOTH map layers AND list panel
   // ============================================================
 
-  const visibleProperties = useMemo(() => {
-    if (!geoData || geoData.type !== "FeatureCollection") return [];
-    let features = (geoData as any).features || [];
-
-    // Apply filters
+  const filterFeatures = useCallback((features: any[]) => {
+    let filtered = features;
     if (cityFilter) {
-      features = features.filter((f: any) => f.properties.city === cityFilter);
+      filtered = filtered.filter((f: any) => f.properties.city === cityFilter);
     }
     if (typeFilters.size > 0) {
-      features = features.filter((f: any) => typeFilters.has(f.properties.primary_property_type));
+      filtered = filtered.filter((f: any) => typeFilters.has(f.properties.primary_property_type));
     }
     if (minPrice) {
       const min = parseInt(minPrice);
-      if (!isNaN(min)) features = features.filter((f: any) => (f.properties.latest_price ?? 0) >= min);
+      if (!isNaN(min)) filtered = filtered.filter((f: any) => (f.properties.latest_price ?? 0) >= min);
     }
     if (maxPrice) {
       const max = parseInt(maxPrice);
-      if (!isNaN(max)) features = features.filter((f: any) => (f.properties.latest_price ?? 0) <= max);
+      if (!isNaN(max)) filtered = filtered.filter((f: any) => (f.properties.latest_price ?? 0) <= max);
     }
+    return filtered;
+  }, [cityFilter, typeFilters, minPrice, maxPrice]);
+
+  // Filtered GeoJSON for the map points source
+  const filteredGeoData = useMemo(() => {
+    if (!geoData || geoData.type !== "FeatureCollection") return EMPTY_FC;
+    const features = filterFeatures(geoData.features || []);
+    return { type: "FeatureCollection" as const, features };
+  }, [geoData, filterFeatures]);
+
+  // Filtered parcel polygons for the parcels source
+  const filteredParcelData = useMemo(() => {
+    if (!parcelData || parcelData.type !== "FeatureCollection") return EMPTY_FC;
+    const features = filterFeatures(parcelData.features || []);
+    return { type: "FeatureCollection" as const, features };
+  }, [parcelData, filterFeatures]);
+
+  // Visible properties for the list panel (filtered + viewport-bounded + sorted)
+  const visibleProperties = useMemo(() => {
+    let features = (filteredGeoData as any).features || [];
 
     // Filter to viewport
     if (viewportBounds) {
@@ -281,7 +298,7 @@ export default function MapPage() {
     }
 
     return sorted.slice(0, 200); // Cap at 200 for perf
-  }, [geoData, viewportBounds, cityFilter, typeFilters, minPrice, maxPrice, sortBy]);
+  }, [filteredGeoData, viewportBounds, sortBy]);
 
   // ============================================================
   // Filter bar helpers
@@ -397,7 +414,7 @@ export default function MapPage() {
           )}
 
           <div className="ml-auto text-[12px]" style={{ color: "var(--gray-9)" }}>
-            {loading ? "Loading..." : `${(geoData as any).total?.toLocaleString()} properties`}
+            {loading ? "Loading..." : `${((filteredGeoData as any).features?.length ?? 0).toLocaleString()} properties`}
           </div>
         </div>
 
@@ -448,7 +465,7 @@ export default function MapPage() {
           <Source
             id="properties"
             type="geojson"
-            data={geoData}
+            data={filteredGeoData}
             cluster={true}
             clusterRadius={50}
             clusterMaxZoom={PARCEL_ZOOM_THRESHOLD}
@@ -496,13 +513,13 @@ export default function MapPage() {
             />
           </Source>
 
-          {/* Parcel polygons — loaded at zoom >= 14 */}
-          <Source id="parcels" type="geojson" data={parcelData}>
+          {/* Parcel polygons — loaded at zoom >= 14, colored by property type */}
+          <Source id="parcels" type="geojson" data={filteredParcelData}>
             <Layer
               id="parcel-fill"
               type="fill"
               paint={{
-                "fill-color": getRadixHex("jade", 9),
+                "fill-color": propertyTypeMatchExpression(9) as any,
                 "fill-opacity": 0.22,
               }}
             />
@@ -510,7 +527,7 @@ export default function MapPage() {
               id="parcel-outline"
               type="line"
               paint={{
-                "line-color": getRadixHex("jade", 11),
+                "line-color": propertyTypeMatchExpression(11) as any,
                 "line-width": 2,
                 "line-opacity": 1,
               }}

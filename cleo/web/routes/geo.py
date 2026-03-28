@@ -67,7 +67,7 @@ def geo_parcels(
     rows = db.execute(
         "SELECT id, display_address, city, current_owner_name, "
         "most_recent_sale_price, most_recent_sale_date, transaction_count, "
-        "lat, lng, parcel_geojson "
+        "primary_property_type, lat, lng, parcel_geojson "
         "FROM properties "
         "WHERE lat BETWEEN ? AND ? "
         "AND lng BETWEEN ? AND ? "
@@ -93,6 +93,7 @@ def geo_parcels(
                 "latest_price": r["most_recent_sale_price"],
                 "latest_date": r["most_recent_sale_date"],
                 "transaction_count": r["transaction_count"],
+                "primary_property_type": r["primary_property_type"] or "",
                 "lat": r["lat"],
                 "lng": r["lng"],
             },
