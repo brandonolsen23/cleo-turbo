@@ -31,6 +31,28 @@ class TokenExpiredError(Exception):
     pass
 
 
+def _point_in_polygon(x, y, polygon):
+    """Ray-casting point-in-polygon test.
+
+    Args:
+        x, y: point coordinates (lng, lat)
+        polygon: list of [x, y] coordinate pairs forming a closed ring
+
+    Returns:
+        True if point is inside the polygon.
+    """
+    n = len(polygon)
+    inside = False
+    j = n - 1
+    for i in range(n):
+        xi, yi = polygon[i]
+        xj, yj = polygon[j]
+        if ((yi > y) != (yj > y)) and (x < (xj - xi) * (y - yi) / (yj - yi) + xi):
+            inside = not inside
+        j = i
+    return inside
+
+
 class AgMapsClient:
     """Client for the Ontario AgMaps Assessment Parcel Map service."""
 
@@ -127,8 +149,9 @@ class AgMapsClient:
     def query_by_point(self, lat, lng, buffer_deg=0.0002):
         """Query parcel by spatial point. Returns parcel dict or None.
 
-        Creates a small bounding box (~15m) around the point and returns
-        the first intersecting parcel.
+        Creates a small bounding box (~15m) around the point, gets all
+        intersecting parcels, then uses point-in-polygon to find the
+        parcel that actually contains the point.
         """
         bbox = f"{lng - buffer_deg},{lat - buffer_deg},{lng + buffer_deg},{lat + buffer_deg}"
 
@@ -146,6 +169,26 @@ class AgMapsClient:
         if not features:
             return None
 
-        # If multiple parcels returned, pick the first one
-        # (could be improved with point-in-polygon check later)
-        return self._feature_to_parcel(features[0])
+        if len(features) == 1:
+            return self._feature_to_parcel(features[0])
+
+        # Multiple parcels — find which one actually contains the point
+        for feature in features:
+            rings = feature.get("geometry", {}).get("rings", [])
+            if rings and _point_in_polygon(lng, lat, rings[0]):
+                return self._feature_to_parcel(feature)
+
+        # Point not inside any polygon (edge case) — pick closest centroid
+        best = None
+        best_dist = float('inf')
+        for feature in features:
+            rings = feature.get("geometry", {}).get("rings", [])
+            if rings and rings[0]:
+                cx = sum(p[0] for p in rings[0]) / len(rings[0])
+                cy = sum(p[1] for p in rings[0]) / len(rings[0])
+                dist = (cx - lng) ** 2 + (cy - lat) ** 2
+                if dist < best_dist:
+                    best_dist = dist
+                    best = feature
+
+        return self._feature_to_parcel(best) if best else self._feature_to_parcel(features[0])
