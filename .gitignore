@@ -44,7 +44,8 @@ __pycache__/
 frontend/.env
 
 # Claude Code
-.claude/
+.claude/*
+!.claude/skills/
 
 # Misc
 *.old.tsx
