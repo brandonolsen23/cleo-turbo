@@ -24,29 +24,37 @@ from .chain import resolve_record
 from .agmaps import AgMapsClient, TokenExpiredError
 from .token import load_token, refresh_token
 
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+sys.path.insert(0, PROJECT_ROOT)
+from engines.shared.io import safe_write_json
+
 
 ADDRESSES_DIR = os.path.join(os.path.dirname(__file__), '..', 'pipeline', 'addresses')
 PARCEL_LINKS_DIR = os.path.join(os.path.dirname(__file__), '..', 'pipeline', 'parcel_links')
+GEOCODED_DIR = os.path.join(os.path.dirname(__file__), '..', 'pipeline', 'geocoded')
 ADDRESSES_DIR = os.path.abspath(ADDRESSES_DIR)
 PARCEL_LINKS_DIR = os.path.abspath(PARCEL_LINKS_DIR)
+GEOCODED_DIR = os.path.abspath(GEOCODED_DIR)
 
 
-def extract_identifiers(addr_record):
-    """Extract ARN and geocode_string from an addresses file."""
+def extract_identifiers(addr_record, geocoded_file=None):
+    """Extract ARN and geocoded coordinates from an addresses file."""
     arn = addr_record.get('arn', {}).get('api_format', '').strip()
 
     # Filter out all-zeros
     if arn and all(c == '0' for c in arn):
         arn = ''
 
-    # Get first geocodable address string for spatial fallback
-    geocode_string = None
-    for addr in addr_record.get('property', {}).get('addresses', []):
-        if addr.get('geocodable') and addr.get('geocode_string'):
-            geocode_string = addr['geocode_string']
-            break
+    # Load pre-geocoded coordinates if available
+    geocode_coords = None
+    if geocoded_file and os.path.isfile(geocoded_file):
+        with open(geocoded_file) as f:
+            geocoded = json.load(f)
+        result = geocoded.get('result')
+        if result and result.get('lat') and result.get('lng'):
+            geocode_coords = {'lat': result['lat'], 'lng': result['lng']}
 
-    return arn, geocode_string
+    return arn, geocode_coords
 
 
 def run(limit=None, dry_run=False):
@@ -104,7 +112,10 @@ def run(limit=None, dry_run=False):
     stats = {
         'arn_cache': 0,
         'arn_api': 0,
-        'spatial_api': 0,
+        'arn_verified': 0,
+        'arn_unverified': 0,
+        'spatial_geocode': 0,
+        'spatial_override': 0,
         'unresolved': 0,
         'errors': 0,
     }
@@ -116,19 +127,20 @@ def run(limit=None, dry_run=False):
             with open(os.path.join(ADDRESSES_DIR, fname)) as f:
                 rec = json.load(f)
 
-            arn, geocode_string = extract_identifiers(rec)
+            geocoded_file = os.path.join(GEOCODED_DIR, fname)
+            arn, geocode_coords = extract_identifiers(rec, geocoded_file)
             rt_id = rec.get('rt_id', fname.split('__')[0])
 
             # Resolve
             try:
-                result = resolve_record(arn, geocode_string, client)
+                result = resolve_record(arn, geocode_coords, client)
             except TokenExpiredError:
                 print(f'\n  Token expired at record {i+1}. Refreshing...')
                 client.close()
                 token = refresh_token()
                 client = AgMapsClient(token)
                 print('  Token refreshed. Retrying...')
-                result = resolve_record(arn, geocode_string, client)
+                result = resolve_record(arn, geocode_coords, client)
 
             # Build parcel_links output
             link = {
@@ -139,9 +151,8 @@ def run(limit=None, dry_run=False):
                 'reason': result.get('reason'),
             }
 
-            # Write parcel_links file
-            with open(os.path.join(PARCEL_LINKS_DIR, fname), 'w') as f:
-                json.dump(link, f, indent=2)
+            # Write parcel_links file (atomic)
+            safe_write_json(os.path.join(PARCEL_LINKS_DIR, fname), link)
 
             stats[result['method']] += 1
 
@@ -155,13 +166,13 @@ def run(limit=None, dry_run=False):
                 'parcel_file': None,
                 'reason': str(e),
             }
-            with open(os.path.join(PARCEL_LINKS_DIR, fname), 'w') as f:
-                json.dump(error_link, f, indent=2)
+            safe_write_json(os.path.join(PARCEL_LINKS_DIR, fname), error_link)
 
         # Progress
         if (i + 1) % 500 == 0 or (i + 1) == len(pending):
             elapsed = time.time() - start_time
-            resolved = stats['arn_cache'] + stats['arn_api'] + stats['spatial_api']
+            resolved = (stats['arn_cache'] + stats['arn_api'] + stats['arn_verified']
+                        + stats['arn_unverified'] + stats['spatial_geocode'] + stats['spatial_override'])
             rate = (i + 1) / elapsed if elapsed > 0 else 0
             print(
                 f'  [{i+1:,}/{len(pending):,}] '
@@ -177,13 +188,17 @@ def run(limit=None, dry_run=False):
     elapsed = time.time() - start_time
     print()
     print(f'Done in {elapsed:.1f}s')
-    print(f'  arn_cache:   {stats["arn_cache"]:,}')
-    print(f'  arn_api:     {stats["arn_api"]:,}')
-    print(f'  spatial_api: {stats["spatial_api"]:,}')
-    print(f'  unresolved:  {stats["unresolved"]:,}')
-    print(f'  errors:      {stats["errors"]:,}')
+    print(f'  arn_cache:        {stats["arn_cache"]:,}')
+    print(f'  arn_api:          {stats["arn_api"]:,}')
+    print(f'  arn_verified:     {stats["arn_verified"]:,}')
+    print(f'  arn_unverified:   {stats["arn_unverified"]:,}')
+    print(f'  spatial_geocode:  {stats["spatial_geocode"]:,}')
+    print(f'  spatial_override: {stats["spatial_override"]:,}')
+    print(f'  unresolved:       {stats["unresolved"]:,}')
+    print(f'  errors:           {stats["errors"]:,}')
 
-    total_resolved = stats['arn_cache'] + stats['arn_api'] + stats['spatial_api']
+    total_resolved = (stats['arn_cache'] + stats['arn_api'] + stats['arn_verified']
+                      + stats['arn_unverified'] + stats['spatial_geocode'] + stats['spatial_override'])
     total = total_resolved + stats['unresolved'] + stats['errors']
     if total > 0:
         print(f'  resolution rate: {total_resolved*100/total:.1f}%')

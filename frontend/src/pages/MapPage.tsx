@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Map, { Source, Layer, Popup, NavigationControl } from "react-map-gl/mapbox";
 import type { MapRef, MapMouseEvent } from "react-map-gl/mapbox";
 import type { GeoJSON as GeoJSONType } from "geojson";
@@ -9,7 +9,8 @@ import { Text, Badge, Button } from "@radix-ui/themes";
 import { FunnelSimple } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate, formatStreet } from "../lib/utils";
-import { getRadixHex, propertyTypeColor, propertyTypeLabel, propertyTypeMatchExpression } from "../lib/theme";
+import { getRadixHex, propertyTypeColor, propertyTypeLabel, propertyTypeMatchExpression, categoryColor } from "../lib/theme";
+// categoryColor used for filter badge styling
 
 // ============================================================
 // Constants
@@ -19,7 +20,7 @@ const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 const MAP_STYLE = "mapbox://styles/mapbox/satellite-streets-v12";
 const DEFAULT_CENTER = { longitude: -79.5, latitude: 44.3 };
 const DEFAULT_ZOOM = 6;
-const PARCEL_ZOOM_THRESHOLD = 14;
+const PARCEL_ZOOM_THRESHOLD = 12;
 
 const EMPTY_FC: GeoJSONType = { type: "FeatureCollection", features: [] };
 
@@ -28,6 +29,20 @@ const PROPERTY_TYPES = [
   "res-land", "comm-ind-land", "hotel-motel", "restaurant-bar",
   "other-bldg", "other-land",
 ];
+
+const POI_CATEGORIES = [
+  "QSR", "Grocery", "Specialty Retail", "Discount Retail", "Big-Box Retail",
+  "Full-Service", "Take-out", "Fuel", "Financial Services", "Automotive",
+];
+
+function poiCategoryMatchExpression(step: number = 9): unknown[] {
+  const expr: unknown[] = ["match", ["get", "category"]];
+  for (const cat of POI_CATEGORIES) {
+    expr.push(cat, getRadixHex(categoryColor(cat), step));
+  }
+  expr.push(getRadixHex("gray", step));
+  return expr;
+}
 
 // ============================================================
 // Mapbox layer paint/layout definitions
@@ -47,17 +62,61 @@ interface PropertyFeature {
   transaction_count: number;
 }
 
+interface PopupData {
+  id: string;
+  display_address: string;
+  city: string;
+  current_owner_name: string | null;
+  most_recent_sale_price: number | null;
+  most_recent_sale_date: string | null;
+  transaction_count: number;
+  primary_property_type: string | null;
+  acreage: number | null;
+  photo_url: string | null;
+  photo_count: number;
+  tenants: { brand: string; category: string }[];
+  assessed_value?: number | null;
+  zoning?: string | null;
+  property_description?: string | null;
+}
+
 interface PopupInfo {
   longitude: number;
   latitude: number;
   properties: PropertyFeature;
+  detail?: PopupData | null;
+  loading?: boolean;
+}
+
+// Mapbox queryRenderedFeatures stringifies nulls to "null" and arrays to strings
+function cleanProp(val: any): string {
+  if (val === null || val === undefined || val === "null" || val === "undefined") return "";
+  return String(val);
+}
+function cleanNum(val: any): number | null {
+  if (val === null || val === undefined || val === "null") return null;
+  const n = Number(val);
+  return isNaN(n) ? null : n;
 }
 
 type SortOption = "latest_date" | "price_high" | "price_low" | "most_txns";
 
 export default function MapPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const mapRef = useRef<MapRef>(null);
+
+  // Restore viewport from URL search params (for browser back button)
+  const initialViewState = useMemo(() => {
+    const lat = parseFloat(searchParams.get("lat") || "");
+    const lng = parseFloat(searchParams.get("lng") || "");
+    const z = parseFloat(searchParams.get("z") || "");
+    if (!isNaN(lat) && !isNaN(lng) && !isNaN(z)) {
+      return { latitude: lat, longitude: lng, zoom: z };
+    }
+    return { ...DEFAULT_CENTER, zoom: DEFAULT_ZOOM };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only read on mount
 
   // Data
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -65,6 +124,7 @@ export default function MapPage() {
   const [parcelData, setParcelData] = useState<any>(EMPTY_FC);
   const [selectedParcel, setSelectedParcel] = useState<any>(EMPTY_FC);
   const [loading, setLoading] = useState(true);
+  const [categoryFilters, setCategoryFilters] = useState<Set<string>>(new Set());
 
   // UI state
   const [popupInfo, setPopupInfo] = useState<PopupInfo | null>(null);
@@ -121,7 +181,15 @@ export default function MapPage() {
     const bounds = map.getBounds();
     if (!bounds) return;
     const zoom = map.getZoom();
+    const center = map.getCenter();
     setCurrentZoom(zoom);
+
+    // Persist viewport to URL so browser back button restores position
+    const params = new URLSearchParams(window.location.search);
+    params.set("lat", center.lat.toFixed(5));
+    params.set("lng", center.lng.toFixed(5));
+    params.set("z", zoom.toFixed(1));
+    window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
 
     const b = {
       south: bounds.getSouth(),
@@ -135,6 +203,28 @@ export default function MapPage() {
       fetchParcels(b);
     } else {
       setParcelData(EMPTY_FC);
+    }
+  }, [fetchParcels]);
+
+  // When map loads (including restored viewport), fetch parcels if zoomed in
+  const onMapLoad = useCallback(() => {
+    const map = mapRef.current?.getMap();
+    if (!map) return;
+    const bounds = map.getBounds();
+    if (!bounds) return;
+    const zoom = map.getZoom();
+    setCurrentZoom(zoom);
+
+    const b = {
+      south: bounds.getSouth(),
+      north: bounds.getNorth(),
+      west: bounds.getWest(),
+      east: bounds.getEast(),
+    };
+    setViewportBounds(b);
+
+    if (zoom >= PARCEL_ZOOM_THRESHOLD) {
+      fetchParcels(b);
     }
   }, [fetchParcels]);
 
@@ -174,14 +264,16 @@ export default function MapPage() {
         latitude: coords[1],
         properties: {
           id: props.id,
-          address: props.address,
-          city: props.city,
-          owner: props.owner,
-          latest_price: props.latest_price,
-          latest_date: props.latest_date,
-          transaction_count: props.transaction_count,
+          address: cleanProp(props.address),
+          city: cleanProp(props.city),
+          owner: cleanProp(props.owner) || null,
+          latest_price: cleanNum(props.latest_price),
+          latest_date: cleanProp(props.latest_date) || null,
+          transaction_count: cleanNum(props.transaction_count) ?? 0,
         },
+        loading: true,
       });
+      fetchPopupDetail(props.id);
       return;
     }
 
@@ -191,7 +283,6 @@ export default function MapPage() {
       const feature = parcelFeatures[0];
       const props = feature.properties as any;
 
-      // Set selected parcel highlight
       setSelectedParcel({
         type: "FeatureCollection",
         features: [feature as any],
@@ -203,14 +294,16 @@ export default function MapPage() {
         latitude: props.lat || e.lngLat.lat,
         properties: {
           id: props.id,
-          address: props.address,
-          city: props.city,
-          owner: props.owner,
-          latest_price: props.latest_price,
-          latest_date: props.latest_date,
-          transaction_count: props.transaction_count,
+          address: cleanProp(props.address),
+          city: cleanProp(props.city),
+          owner: cleanProp(props.owner) || null,
+          latest_price: cleanNum(props.latest_price),
+          latest_date: cleanProp(props.latest_date) || null,
+          transaction_count: cleanNum(props.transaction_count) ?? 0,
         },
+        loading: true,
       });
+      fetchPopupDetail(props.id);
       return;
     }
 
@@ -250,8 +343,14 @@ export default function MapPage() {
       const max = parseInt(maxPrice);
       if (!isNaN(max)) filtered = filtered.filter((f: any) => (f.properties.latest_price ?? 0) <= max);
     }
+    if (categoryFilters.size > 0) {
+      filtered = filtered.filter((f: any) => {
+        const cats: string[] = f.properties.tenant_categories ? (typeof f.properties.tenant_categories === "string" ? JSON.parse(f.properties.tenant_categories) : f.properties.tenant_categories) : [];
+        return cats.some((c: string) => categoryFilters.has(c));
+      });
+    }
     return filtered;
-  }, [cityFilter, typeFilters, minPrice, maxPrice]);
+  }, [cityFilter, typeFilters, minPrice, maxPrice, categoryFilters]);
 
   // Filtered GeoJSON for the map points source
   const filteredGeoData = useMemo(() => {
@@ -301,6 +400,19 @@ export default function MapPage() {
   }, [filteredGeoData, viewportBounds, sortBy]);
 
   // ============================================================
+  // Popup detail fetching
+  // ============================================================
+
+  const fetchPopupDetail = useCallback((propertyId: string) => {
+    setPopupInfo((prev) => prev ? { ...prev, loading: true, detail: null } : prev);
+    fetchApi<PopupData>(`/properties/${propertyId}/popup`).then((data) => {
+      setPopupInfo((prev) => prev ? { ...prev, detail: data, loading: false } : prev);
+    }).catch(() => {
+      setPopupInfo((prev) => prev ? { ...prev, loading: false } : prev);
+    });
+  }, []);
+
+  // ============================================================
   // Filter bar helpers
   // ============================================================
 
@@ -327,6 +439,15 @@ export default function MapPage() {
     });
   };
 
+  const toggleCategory = (c: string) => {
+    setCategoryFilters((prev) => {
+      const next = new Set(prev);
+      if (next.has(c)) next.delete(c);
+      else next.add(c);
+      return next;
+    });
+  };
+
   // ============================================================
   // Property list card click
   // ============================================================
@@ -342,7 +463,9 @@ export default function MapPage() {
       longitude: lng,
       latitude: lat,
       properties: feature.properties,
+      loading: true,
     });
+    fetchPopupDetail(feature.properties.id);
   };
 
   // ============================================================
@@ -444,17 +567,34 @@ export default function MapPage() {
                 {propertyTypeLabel(t)}
               </button>
             ))}
+            <span className="text-[11px] mx-1" style={{ color: "var(--gray-8)" }}>|</span>
+            {POI_CATEGORIES.map((c) => (
+              <button
+                key={c}
+                onClick={() => toggleCategory(c)}
+                className="px-2 py-0.5 rounded text-[12px] border transition-colors"
+                style={{
+                  background: categoryFilters.has(c) ? getRadixHex(categoryColor(c), 4) : "transparent",
+                  borderColor: categoryFilters.has(c) ? getRadixHex(categoryColor(c), 7) : "var(--gray-6)",
+                  color: categoryFilters.has(c) ? getRadixHex(categoryColor(c), 11) : "var(--gray-11)",
+                  fontWeight: categoryFilters.has(c) ? 500 : 400,
+                }}
+              >
+                {c}
+              </button>
+            ))}
           </div>
         )}
 
         <Map
           ref={mapRef}
           mapboxAccessToken={MAPBOX_TOKEN}
-          initialViewState={{ ...DEFAULT_CENTER, zoom: DEFAULT_ZOOM }}
+          initialViewState={initialViewState}
           style={{ width: "100%", height: "100%" }}
           mapStyle={MAP_STYLE}
           onClick={onMapClick}
           onMoveEnd={onMoveEnd}
+          onLoad={onMapLoad}
           interactiveLayerIds={["clusters", "unclustered-point", "parcel-fill"]}
           onMouseEnter={onMapMouseEnter}
           onMouseLeave={onMapMouseLeave}
@@ -562,40 +702,119 @@ export default function MapPage() {
               latitude={popupInfo.latitude}
               closeOnClick={false}
               onClose={() => { setPopupInfo(null); setSelectedId(null); setSelectedParcel(EMPTY_FC); }}
-              maxWidth="320px"
+              maxWidth="340px"
               anchor="bottom"
               offset={12}
             >
-              <div className="p-4">
-                <Text size="3" weight="medium" className="block">{formatStreet(popupInfo.properties.address)}</Text>
-                <Text size="2" className="block mt-0.5" style={{ color: "var(--gray-9)" }}>{popupInfo.properties.city}</Text>
-
-                {popupInfo.properties.owner && (
-                  <Text size="1" className="block mt-2" style={{ color: "var(--gray-11)" }}>
-                    {popupInfo.properties.owner}
-                  </Text>
+              <div style={{ minWidth: 280 }}>
+                {/* Photo */}
+                {popupInfo.detail?.photo_url && (
+                  <div className="relative" style={{ height: 140, overflow: "hidden" }}>
+                    <img
+                      src={popupInfo.detail.photo_url}
+                      alt=""
+                      className="w-full h-full object-cover"
+                      style={{ display: "block" }}
+                    />
+                    {(popupInfo.detail.photo_count ?? 0) > 1 && (
+                      <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded text-[11px] font-medium"
+                           style={{ background: "rgba(0,0,0,0.6)", color: "#fff" }}>
+                        1 of {popupInfo.detail.photo_count}
+                      </div>
+                    )}
+                  </div>
                 )}
 
-                <div className="flex items-center justify-between mt-3">
-                  <div>
-                    <Text size="2" weight="medium">{formatCurrency(popupInfo.properties.latest_price)}</Text>
-                    <Text size="1" className="ml-1.5" style={{ color: "var(--gray-9)" }}>
-                      {formatDate(popupInfo.properties.latest_date)}
-                    </Text>
-                  </div>
-                  <Text size="1" style={{ color: "var(--gray-9)" }}>
-                    {popupInfo.properties.transaction_count} txns
-                  </Text>
-                </div>
+                <div className="p-4">
+                  {/* Price + Type badge */}
+                  {popupInfo.detail ? (
+                    <>
+                      <div className="flex items-center gap-2">
+                        {popupInfo.detail.most_recent_sale_price && (
+                          <Text size="4" weight="bold">{formatCurrency(popupInfo.detail.most_recent_sale_price)}</Text>
+                        )}
+                        {popupInfo.detail.primary_property_type && (
+                          <Badge size="1" variant="soft" color={propertyTypeColor(popupInfo.detail.primary_property_type) as any}>
+                            {propertyTypeLabel(popupInfo.detail.primary_property_type)}
+                          </Badge>
+                        )}
+                      </div>
 
-                <Button
-                  size="1"
-                  variant="soft"
-                  className="mt-3 w-full"
-                  onClick={() => navigate(`/properties/${popupInfo.properties.id}`)}
-                >
-                  View Property
-                </Button>
+                      {/* Address */}
+                      <Text size="2" weight="medium" className="block mt-1">
+                        {formatStreet(popupInfo.detail.display_address) || "No address"}
+                      </Text>
+                      <Text size="1" style={{ color: "var(--gray-9)" }}>
+                        {[popupInfo.detail.city, popupInfo.detail.zoning].filter(Boolean).join(" | ")}
+                      </Text>
+
+                      {/* Owner */}
+                      {popupInfo.detail.current_owner_name && (
+                        <Text size="1" className="block mt-2" style={{ color: "var(--gray-11)" }}>
+                          {popupInfo.detail.current_owner_name}
+                        </Text>
+                      )}
+
+                      {/* Stats row */}
+                      <div className="flex items-center gap-4 mt-2 text-[12px]" style={{ color: "var(--gray-9)" }}>
+                        {popupInfo.detail.most_recent_sale_date && (
+                          <span>{formatDate(popupInfo.detail.most_recent_sale_date)}</span>
+                        )}
+                        {popupInfo.detail.acreage && (
+                          <span>{popupInfo.detail.acreage} acres</span>
+                        )}
+                        {popupInfo.detail.assessed_value && (
+                          <span>Assessed: {formatCurrency(popupInfo.detail.assessed_value)}</span>
+                        )}
+                      </div>
+
+                      {/* Tenant badges */}
+                      {popupInfo.detail.tenants.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mt-2">
+                          {popupInfo.detail.tenants.slice(0, 4).map((t) => (
+                            <Badge key={t.brand} size="1" variant="outline" color={categoryColor(t.category) as any}>
+                              {t.brand}
+                            </Badge>
+                          ))}
+                          {popupInfo.detail.tenants.length > 4 && (
+                            <Badge size="1" variant="outline" color="gray">+{popupInfo.detail.tenants.length - 4}</Badge>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Action buttons */}
+                      <div className="flex gap-2 mt-3">
+                        <Button
+                          size="1"
+                          variant="solid"
+                          className="flex-1"
+                          onClick={() => navigate(`/properties/${popupInfo.detail!.id}`, { state: { from: "map" } })}
+                        >
+                          View Property
+                        </Button>
+                      </div>
+                    </>
+                  ) : popupInfo.loading ? (
+                    <Text size="2" style={{ color: "var(--gray-9)" }}>Loading...</Text>
+                  ) : (
+                    <>
+                      <Text size="3" weight="medium" className="block">
+                        {formatStreet(popupInfo.properties.address) || "No address"}
+                      </Text>
+                      {popupInfo.properties.city && (
+                        <Text size="2" className="block mt-0.5" style={{ color: "var(--gray-9)" }}>{popupInfo.properties.city}</Text>
+                      )}
+                      <Button
+                        size="1"
+                        variant="soft"
+                        className="mt-3 w-full"
+                        onClick={() => navigate(`/properties/${popupInfo.properties.id}`, { state: { from: "map" } })}
+                      >
+                        View Property
+                      </Button>
+                    </>
+                  )}
+                </div>
               </div>
             </Popup>
           )}

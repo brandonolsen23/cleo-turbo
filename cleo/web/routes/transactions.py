@@ -3,7 +3,7 @@ Transactions API — browse, search, detail.
 """
 
 import json
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 from ...web.deps import get_db, get_current_user
 
 router = APIRouter()
@@ -81,12 +81,14 @@ def search_transactions(
     db=Depends(get_db),
     user=Depends(get_current_user),
 ):
-    """Search transactions by address."""
+    """FTS5 full-text search on transactions."""
     rows = db.execute(
-        "SELECT source_id, property_id, sale_date, sale_price, display_address, city, "
-        "seller_parties, buyer_parties "
-        "FROM transactions WHERE display_address LIKE ? LIMIT ?",
-        (f"%{q}%", limit)
+        "SELECT t.source_id, t.property_id, t.sale_date, t.sale_price, t.display_address, t.city, "
+        "t.seller_parties, t.buyer_parties "
+        "FROM transactions t "
+        "WHERE t.rowid IN (SELECT rowid FROM transactions_fts WHERE transactions_fts MATCH ?) "
+        "LIMIT ?",
+        (q, limit)
     ).fetchall()
     results = []
     for r in rows:
@@ -102,7 +104,6 @@ def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_curr
     """Full transaction detail."""
     row = db.execute("SELECT * FROM transactions WHERE source_id = ?", (source_id,)).fetchone()
     if not row:
-        from fastapi import HTTPException
         raise HTTPException(status_code=404, detail="Transaction not found")
 
     result = dict(row)
@@ -122,5 +123,58 @@ def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_curr
         (source_id,)
     ).fetchall()
     result["parties"] = [dict(p) for p in parties]
+
+    # Structured consideration (denormalized)
+    cons_row = db.execute(
+        "SELECT * FROM transaction_consideration WHERE source_id = ?", (source_id,)
+    ).fetchone()
+    if cons_row:
+        cons = dict(cons_row)
+        cons["charges"] = json.loads(cons.pop("charges_json", "[]"))
+        for k in ["id", "source_id", "created_at"]:
+            cons.pop(k, None)
+        result["consideration"] = cons
+    else:
+        result["consideration"] = None
+
+    # Structured brokers (denormalized)
+    broker_rows = db.execute(
+        "SELECT * FROM transaction_brokers WHERE source_id = ? ORDER BY id", (source_id,)
+    ).fetchall()
+    brokers_list = []
+    for br in broker_rows:
+        bd = dict(br)
+        agents = db.execute(
+            "SELECT agent_name FROM transaction_broker_agents WHERE broker_id = ? ORDER BY id",
+            (bd["id"],)
+        ).fetchall()
+        brokers_list.append({
+            "broker_name": bd["broker_name"],
+            "phone": bd["phone"],
+            "agents": [a["agent_name"] for a in agents],
+        })
+    result["brokers"] = brokers_list
+
+    # Mailing addresses
+    for side in ["seller", "buyer"]:
+        addr = db.execute(
+            "SELECT * FROM transaction_mailing_addresses WHERE source_id = ? AND side = ?",
+            (source_id, side)
+        ).fetchone()
+        result[f"{side}_mailing_address"] = dict(addr) if addr else None
+
+    # Party metadata
+    for side in ["seller", "buyer"]:
+        meta = db.execute(
+            "SELECT * FROM transaction_party_metadata WHERE source_id = ? AND side = ?",
+            (source_id, side)
+        ).fetchone()
+        if meta:
+            meta_dict = dict(meta)
+            meta_dict["law_firms"] = json.loads(meta_dict.pop("law_firms_json", "[]"))
+            meta_dict["companies"] = json.loads(meta_dict.pop("companies_json", "[]"))
+            result[f"{side}_party_metadata"] = meta_dict
+        else:
+            result[f"{side}_party_metadata"] = None
 
     return result

@@ -1,0 +1,608 @@
+================================================================================
+                 RT CLEAN-DATA FIELD INVENTORY (Complete)
+================================================================================
+
+This document lists every single field in RT clean-data JSON files, its status,
+and where it appears (or doesn't) in the database.
+
+================================================================================
+TRANSACTION OBJECT - 5 fields, all normalized
+================================================================================
+
+transaction.sale_date
+  Type: ISO date string (YYYY-MM-DD)
+  Example: "2014-05-09"
+  Status: ✅ WRITTEN
+  Destination: transactions.sale_date
+  Writer.py line: 303
+  
+transaction.sale_price
+  Type: integer (cents, CAD)
+  Example: 3265048 (= $32,650.48)
+  Status: ✅ WRITTEN
+  Destination: transactions.sale_price
+  Writer.py line: 303
+  
+transaction.transaction_note
+  Type: string
+  Example: "Purchased by Tenant"
+  Status: ✅ WRITTEN
+  Destination: transactions.transaction_note
+  Writer.py line: 303
+  
+transaction.city
+  Type: string
+  Example: "Norwich"
+  Status: ✅ WRITTEN
+  Destinations: transactions.city (line 303), properties.city (line 252)
+  
+transaction.region
+  Type: string
+  Example: "Oxford County"
+  Status: ✅ WRITTEN
+  Destinations: transactions.region (line 303), properties.region (line 253)
+
+TOTAL WRITTEN: 5/5 (100%)
+
+================================================================================
+PROPERTY OBJECT - 14 fields (1 address array + 3 metadata)
+================================================================================
+
+property.addresses - array of address objects (typically 1 per property)
+
+  property.addresses[0].original
+    Type: string
+    Example: "325149 NORWICH RD"
+    Status: ❌ IGNORED
+    Note: Raw address as scraped from Realtrack
+    
+  property.addresses[0].display
+    Type: string (human-readable, title case)
+    Example: "325149 Norwich Road"
+    Status: ✅ WRITTEN
+    Destinations: transactions.display_address (line 304),
+                  properties.display_address (line 251)
+    
+  property.addresses[0].components
+    Type: object with 6 fields:
+    
+    property.addresses[0].components.street_number
+      Type: string
+      Example: "325149"
+      Status: ❌ IGNORED
+      Note: Parsed by RT address engine, never extracted to DB
+      
+    property.addresses[0].components.street_name
+      Type: string
+      Example: "Norwich"
+      Status: ❌ IGNORED
+      Note: Would enable "find all properties on this street"
+      
+    property.addresses[0].components.street_suffix
+      Type: string
+      Example: "Road", "Street", "Avenue"
+      Status: ❌ IGNORED
+      Note: Would enable "find all Corner Lot properties"
+      
+    property.addresses[0].components.street_direction
+      Type: string
+      Example: "North", "East", or "" (empty)
+      Status: ❌ IGNORED
+      
+    property.addresses[0].components.suite_type
+      Type: string
+      Example: "Suite", "Unit", "Apt"
+      Status: ❌ IGNORED
+      Note: Critical for multi-tenant property matching
+      
+    property.addresses[0].components.suite_number
+      Type: string
+      Example: "101", "4400", or "" (empty)
+      Status: ❌ IGNORED
+      Note: Critical for multi-tenant property matching
+      
+  property.addresses[0].search_keys
+    Type: array of strings
+    Example: ["325149 norwich road", "325149 norwich"]
+    Status: ❌ IGNORED
+    Note: Generated for FTS indexing by RT engine, never written to DB
+    
+  property.addresses[0].variations
+    Type: array of strings
+    Example: []
+    Status: ❌ IGNORED
+    Note: Alternative address formats, never written
+    
+  property.addresses[0].geocode_string
+    Type: string (full address with postal)
+    Example: "325149 Norwich Road, Norwich, Ontario N0J 1P0, Canada"
+    Status: ❌ IGNORED
+    Note: Full geocoded address string, never written
+    
+  property.addresses[0].geocodable
+    Type: boolean
+    Example: true
+    Status: ❌ IGNORED
+    Note: Whether Google Maps/Mapbox can geocode this address
+    
+  property.addresses[0].type
+    Type: string
+    Example: "street_address"
+    Status: ❌ IGNORED
+    Note: Always "street_address", never written
+
+property.city
+  Type: string
+  Example: "Mississauga"
+  Status: (from transaction.city, not directly written)
+  
+property.region
+  Type: string
+  Example: "Peel Region"
+  Status: (from transaction.region, not directly written)
+  
+property.postal
+  Type: string (Canadian postal code)
+  Example: "L4T 1G5"
+  Status: ✅ WRITTEN
+  Destinations: transactions.postal (line 304), properties.postal (line 254)
+
+TOTAL WRITTEN: 2/14 (14%)
+TOTAL IGNORED: 12/14 (86%)
+
+================================================================================
+SELLER OBJECT - 23 fields (7 direct + 16 nested in address)
+================================================================================
+
+seller.parties
+  Type: array of objects, each with:
+  
+  seller.parties[].name
+    Type: string
+    Example: "Named Individual(s)", "Springerhill Farms Inc"
+    Status: ✅ WRITTEN
+    Destinations: transaction_parties.party_name (line 341),
+                  groups.display_name (line 86),
+                  group_names.name (line 97)
+    
+seller.phone
+  Type: string (phone number)
+  Example: "519-866-3217"
+  Status: ✅ WRITTEN
+  Destinations: transactions.seller_phone (line 306),
+                transaction_parties.phone (line 341),
+                contacts.phone (lines 149, 165)
+    
+seller.trade_name
+  Type: string (operating name/DBA)
+  Example: "KingSett Capital"
+  Status: ❌ IGNORED
+  Note: Alternative company name, useful for identification
+  
+seller.contacts
+  Type: array of objects, each with:
+  
+  seller.contacts[].name
+    Type: string (full name of contact person)
+    Example: "Harm Schipper"
+    Status: ✅ WRITTEN
+    Destinations: contacts.display_name (line 148),
+                  transaction_parties via fingerprint (line 341)
+    
+  seller.contacts[].title
+    Type: string (job title abbreviation)
+    Example: "pres", "vp", "attn", "mgr"
+    Status: ✅ WRITTEN
+    Destinations: contacts.job_title (lines 150, 167),
+                  transaction_parties.contact_title (line 341)
+    
+seller.care_of
+  Type: string or null
+  Example: null
+  Status: ❌ IGNORED
+  Note: C/O address component, never written
+  
+seller.law_firms
+  Type: array of strings
+  Example: []
+  Status: ❌ IGNORED
+  Note: Law firms involved in transaction, never written
+  
+seller.companies
+  Type: array of strings
+  Example: []
+  Status: ❌ IGNORED
+  Note: Related companies, never written
+  
+seller.address
+  Type: object with 16 nested fields (see below)
+  
+  seller.address.original_lines
+    Type: array of strings
+    Example: ["54148 Heritage Line"]
+    Status: ❌ IGNORED
+    
+  seller.address.display
+    Type: string (formatted address)
+    Example: "54148 Heritage Line"
+    Status: ❌ IGNORED
+    Note: Seller mailing address, could enrich CRM
+    
+  seller.address.components
+    Type: object with 6 fields (street_number, street_name, street_suffix,
+                               street_direction, suite_type, suite_number)
+    Status: ❌ IGNORED (all 6 sub-fields)
+    
+  seller.address.search_keys
+    Type: array of strings
+    Status: ❌ IGNORED
+    
+  seller.address.geocode_string
+    Type: string
+    Example: "54148 Heritage Line, Straffordville, Ontario N0J 1Y0, Canada"
+    Status: ❌ IGNORED
+    Note: Full geocoded address, valuable for mapping
+    
+  seller.address.modifiers
+    Type: array of strings
+    Status: ❌ IGNORED
+    
+  seller.address.building_names
+    Type: array of strings
+    Status: ❌ IGNORED
+    
+  seller.address.city
+    Type: string
+    Example: "Straffordville"
+    Status: ❌ IGNORED
+    Note: CRITICAL - seller location, needed for geo-prospecting
+    
+  seller.address.province
+    Type: string
+    Example: "Ontario"
+    Status: ❌ IGNORED
+    
+  seller.address.postal
+    Type: string
+    Example: "N0J 1Y0"
+    Status: ❌ IGNORED
+    Note: CRITICAL - needed for geo-prospecting
+    
+  seller.address.country
+    Type: string
+    Example: ""
+    Status: ❌ IGNORED
+
+TOTAL WRITTEN: 5/23 (22%)
+TOTAL IGNORED: 18/23 (78%)
+
+================================================================================
+BUYER OBJECT - 23 fields (identical structure to seller)
+================================================================================
+
+All fields identical to seller object. Status:
+
+buyer.parties[].name
+  Status: ✅ WRITTEN
+  
+buyer.phone
+  Status: ✅ WRITTEN
+  
+buyer.trade_name
+  Status: ❌ IGNORED
+  
+buyer.contacts[].name
+  Status: ✅ WRITTEN
+  
+buyer.contacts[].title
+  Status: ✅ WRITTEN
+  
+buyer.care_of
+  Status: ❌ IGNORED
+  
+buyer.law_firms
+  Status: ❌ IGNORED
+  
+buyer.companies
+  Status: ❌ IGNORED
+  
+buyer.address.original_lines through country (10 fields)
+  Status: ❌ IGNORED
+  Note: CRITICAL - buyer location, needed for geo-prospecting
+
+TOTAL WRITTEN: 5/23 (22%)
+TOTAL IGNORED: 18/23 (78%)
+
+================================================================================
+SITE OBJECT - 14 fields (4 PIN + 3 ARN + 7 other)
+================================================================================
+
+site.pin
+  Type: object with 4 fields:
+  
+  site.pin.original
+    Type: string (formatted PIN)
+    Example: "00063-0124"
+    Status: ❌ IGNORED
+    Note: Human-readable format, UI shows api_format instead
+    
+  site.pin.display
+    Type: string (display format, may differ from original)
+    Example: "00063-0124"
+    Status: ❌ IGNORED
+    
+  site.pin.api_format
+    Type: string (unformatted PIN for database lookups)
+    Example: "000630124"
+    Status: ✅ WRITTEN
+    Destination: transactions.pin (line 308)
+    
+  site.pin.multiple
+    Type: boolean
+    Example: false
+    Status: ❌ IGNORED
+    Note: Indicates multi-parcel transaction, useful for filtering
+    
+site.arn
+  Type: object with 3 fields:
+  
+  site.arn.original
+    Type: string (formatted ARN with spaces)
+    Example: "21 05 050 115 14040"
+    Status: ❌ IGNORED
+    Note: Human-readable format
+    
+  site.arn.display
+    Type: string (display format)
+    Example: "21 05 050 115 14040"
+    Status: ❌ IGNORED
+    
+  site.arn.api_format
+    Type: string (20-digit ARN without spaces)
+    Example: "21050501151404000000"
+    Status: ✅ WRITTEN
+    Destinations: transactions.arn (line 302), properties.arn (line 227-232)
+    
+site.acreage
+  Type: float
+  Example: 119.5
+  Status: ✅ WRITTEN
+  Destinations: transactions.acreage (line 308), properties.acreage (line 255)
+  
+site.legal_description
+  Type: string (legal property description)
+  Example: "Conc 4, Part Lots 18 & 19\nAs in Inst Nos: 220135 (1stly) & 382164..."
+  Status: ✅ WRITTEN
+  Destinations: transactions.legal_description (line 308),
+                properties.legal_description (line 256)
+  
+site.location
+  Type: string (description of location)
+  Example: "NW corner Thamesgate Dr and Airport Rd"
+  Status: ❌ IGNORED
+  Note: Locational context, never written
+  
+site.surface_rights_only
+  Type: boolean
+  Example: false
+  Status: ❌ IGNORED
+  Note: Indicates if only surface rights (not mineral rights) are included
+
+TOTAL WRITTEN: 5/14 (36%)
+TOTAL IGNORED: 9/14 (64%)
+
+================================================================================
+PARCEL OBJECT - 3 fields (nullable, only present if ARN resolved)
+================================================================================
+
+parcel.resolved_arn
+  Type: string (20-digit ARN)
+  Example: "32020300400930000000"
+  Status: ✅ WRITTEN
+  Destinations: transactions.arn (line 302, chosen over site.arn),
+                properties.arn (line 230)
+  Note: Preferred over site.arn because it's been validated against parcel data
+  
+parcel.method
+  Type: string (resolution method)
+  Example: "spatial_geocode", "arn_cache"
+  Status: ❌ IGNORED
+  Note: CRITICAL - indicates how confident the ARN match is
+  
+parcel.parcel_file
+  Type: string (filename of parcel geometry)
+  Example: "32020300400930000000.json"
+  Status: ❌ IGNORED
+  Note: Reference to parcel geometry file, never written
+
+TOTAL WRITTEN: 1/3 (33%)
+TOTAL IGNORED: 2/3 (67%)
+
+================================================================================
+CONSIDERATION OBJECT - 9+ fields (stored as JSON blob, not normalized)
+================================================================================
+
+consideration.cash
+  Type: integer
+  Example: 3265048
+  Status: ⚠️ JSON ONLY
+  Storage: transactions.consideration_json (line 309)
+  Note: Not queryable as SQL column
+  
+consideration.debt
+  Type: integer
+  Example: 0
+  Status: ⚠️ JSON ONLY
+  Storage: transactions.consideration_json (line 309)
+  Note: Not queryable as SQL column
+  
+consideration.chattels
+  Type: string or null
+  Example: null
+  Status: ⚠️ JSON ONLY
+  Storage: transactions.consideration_json (line 309)
+  
+consideration.other
+  Type: string or null
+  Example: null
+  Status: ⚠️ JSON ONLY
+  Storage: transactions.consideration_json (line 309)
+  
+consideration.charges
+  Type: array of objects
+  
+  consideration.charges[].chargee
+    Type: string
+    Example: "Royal Bank of Canada"
+    Status: ⚠️ JSON ONLY
+    
+  consideration.charges[].principal
+    Type: integer
+    Example: 1800000
+    Status: ⚠️ JSON ONLY
+    
+  consideration.charges[].rate
+    Type: string
+    Example: "Prime plus 5.0% per annum."
+    Status: ⚠️ JSON ONLY
+    
+  consideration.charges[].registered
+    Type: date string
+    Example: "05/07/2014"
+    Status: ⚠️ JSON ONLY
+    
+  consideration.charges[].due
+    Type: string
+    Example: "on demand"
+    Status: ⚠️ JSON ONLY
+
+TOTAL IN JSON BLOB: 9+/9+ (100% stored as JSON, 0% normalized)
+
+================================================================================
+BROKER OBJECT - 3+ fields (stored as JSON blob, not normalized)
+================================================================================
+
+broker.brokers
+  Type: array of objects
+
+  broker.brokers[].brokerage
+    Type: string
+    Example: "Avison Young"
+    Status: ⚠️ JSON ONLY
+    Storage: transactions.broker_json (line 310)
+    
+  broker.brokers[].agents
+    Type: array of strings
+    Example: ["Brett Elofson", "Adam Sherriff-Scott", "Matt Kornmuller"]
+    Status: ⚠️ JSON ONLY
+    
+  broker.brokers[].phone
+    Type: string
+    Example: "905-712-2100"
+    Status: ⚠️ JSON ONLY
+
+TOTAL IN JSON BLOB: 3+/3+ (100% stored as JSON, 0% normalized)
+
+================================================================================
+DESCRIPTION OBJECT - 2 fields
+================================================================================
+
+description.description
+  Type: string (multi-line property description)
+  Example: "Warehouse - 15 ft clr; 26,341 sf on about 1.9 Ac..."
+  Status: ✅ WRITTEN
+  Destination: transactions.description (line 307)
+  
+description.more_info_url
+  Type: string (URL to supplementary materials)
+  Example: "/assets/files/RT10/RT1000/RT100002/mi.pdf"
+  Status: ❌ IGNORED
+  Note: Link to PDF documents, never written
+
+TOTAL WRITTEN: 1/2 (50%)
+TOTAL IGNORED: 1/2 (50%)
+
+================================================================================
+PHOTOS OBJECT - 3 fields (stored as JSON blob, not normalized)
+================================================================================
+
+photos.street_photo_urls
+  Type: array of URLs
+  Example: ["http://realtrack.cachefly.net/photos/RT10/RT1000/RT100002/0518_132440.jpg", ...]
+  Status: ⚠️ JSON ONLY
+  Storage: transactions.photos_json (line 311)
+  
+photos.aerial_photo_urls
+  Type: array of URLs
+  Example: []
+  Status: ⚠️ JSON ONLY
+  
+photos.standalone_photo_url
+  Type: string or empty
+  Example: ""
+  Status: ⚠️ JSON ONLY
+
+TOTAL IN JSON BLOB: 3/3 (100% stored as JSON, 0% normalized)
+
+================================================================================
+TOP-LEVEL METADATA - 4 fields
+================================================================================
+
+source_id
+  Type: string (unique transaction ID)
+  Example: "RT100000"
+  Status: ✅ WRITTEN
+  Destinations: transactions.source_id (line 302),
+                properties.most_recent_source_id (line 279)
+  
+source
+  Type: string
+  Example: "rt" (always)
+  Status: ❌ IGNORED
+  Note: Always "rt", not useful to store
+  
+source_folder
+  Type: string (pipeline location)
+  Example: "Oxford_County/farm/p010"
+  Status: ✅ WRITTEN
+  Destination: transactions.source_folder (line 312)
+  Note: Used to extract property_type (line 214)
+  
+compiled_at
+  Type: ISO timestamp
+  Example: "2026-04-02T11:08:11.424255+00:00"
+  Status: ❌ IGNORED
+  Note: When RT engine compiled this record, never written
+
+TOTAL WRITTEN: 2/4 (50%)
+TOTAL IGNORED: 2/4 (50%)
+
+================================================================================
+GRAND TOTALS
+================================================================================
+
+OBJECT              TOTAL   WRITTEN  JSON-ONLY  IGNORED  %WRITTEN
+─────────────────────────────────────────────────────────────────
+Transaction           5        5         0         0      100%
+Property             14        2         0        12       14%
+Seller               23        5         0        18       22%
+Buyer                23        5         0        18       22%
+Site                 14        5         0         9       36%
+Parcel                3        1         0         2       33%
+Consideration         9        0         9         0        0%
+Broker                3        0         3         0        0%
+Description           2        1         0         1       50%
+Photos                3        0         3         0        0%
+Metadata              4        2         0         2       50%
+─────────────────────────────────────────────────────────────────
+TOTAL              ~113       26        15        72       23%
+
+SUMMARY:
+- 26 fields fully normalized to SQL columns
+- 15 fields stored as JSON (not SQL-queryable)
+- 72 fields completely ignored
+- 113+ total distinct fields in RT clean-data
+
+DATA LOSS: 72 completely lost + 15 in JSON = 87 fields (77%) not easily queryable
+
+================================================================================

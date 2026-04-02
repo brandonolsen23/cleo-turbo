@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Heading, Text } from "@radix-ui/themes";
+import { Heading, Text, Badge } from "@radix-ui/themes";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate } from "../lib/utils";
@@ -95,27 +95,31 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Recent Transactions + Top Cities */}
+      {/* Recent Records + Top Cities */}
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-2 rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-          <Text size="3" weight="medium" className="mb-3 block">Recent Transactions</Text>
+          <Text size="3" weight="medium" className="mb-3 block">Recent Records</Text>
           <table className="w-full text-[14px]">
             <thead>
               <tr className="border-b border-[var(--gray-4)]">
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Date</th>
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Address</th>
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>City</th>
-                <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
+                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Source</th>
+                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Added</th>
+                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Property</th>
+                <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Value</th>
               </tr>
             </thead>
             <tbody>
-              {stats.recent_transactions?.map((t) => (
-                <tr key={t.source_id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
-                    onClick={() => navigate(`/transactions/${t.source_id}`)}>
-                  <td className="py-2">{formatDate(t.sale_date)}</td>
-                  <td className="py-2">{t.display_address}</td>
-                  <td className="py-2">{t.city}</td>
-                  <td className="py-2 text-right">{formatCurrency(t.sale_price)}</td>
+              {stats.recent_records?.map((r) => (
+                <tr key={`${r.source}-${r.source_id}`} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
+                    onClick={() => r.property_id ? navigate(`/properties/${r.property_id}`) : null}>
+                  <td className="py-2">
+                    <Badge size="1" variant="soft" color={r.source === "rt" ? "blue" : "cyan"}>
+                      {r.source === "rt" ? "RT" : "GW"}
+                    </Badge>
+                  </td>
+                  <td className="py-2">{formatDate(r.added_at)}</td>
+                  <td className="py-2">{r.display_address}{r.city ? `, ${r.city}` : ""}</td>
+                  <td className="py-2 text-right">{formatCurrency(r.value)}</td>
                 </tr>
               ))}
             </tbody>

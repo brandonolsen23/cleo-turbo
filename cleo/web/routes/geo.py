@@ -13,6 +13,7 @@ router = APIRouter()
 def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
     """
     All properties with coordinates as a GeoJSON FeatureCollection.
+    Includes tenant brand/category arrays from POIs for map filtering.
     Client-side clustering is handled by Mapbox GL.
     """
     rows = db.execute(
@@ -23,8 +24,22 @@ def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
         "WHERE lat IS NOT NULL AND lng IS NOT NULL"
     ).fetchall()
 
+    # Build tenant brand/category lookup: property_id -> {brands, categories}
+    poi_rows = db.execute(
+        "SELECT property_id, brand, category FROM pois WHERE property_id IS NOT NULL"
+    ).fetchall()
+    tenant_map = {}
+    for pr in poi_rows:
+        pid = pr["property_id"]
+        if pid not in tenant_map:
+            tenant_map[pid] = {"brands": set(), "categories": set()}
+        tenant_map[pid]["brands"].add(pr["brand"])
+        if pr["category"]:
+            tenant_map[pid]["categories"].add(pr["category"])
+
     features = []
     for r in rows:
+        tenants = tenant_map.get(r["id"])
         features.append({
             "type": "Feature",
             "geometry": {
@@ -40,6 +55,63 @@ def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
                 "latest_date": r["most_recent_sale_date"],
                 "transaction_count": r["transaction_count"],
                 "primary_property_type": r["primary_property_type"] or "",
+                "tenant_brands": sorted(tenants["brands"]) if tenants else [],
+                "tenant_categories": sorted(tenants["categories"]) if tenants else [],
+            },
+        })
+
+    return {
+        "type": "FeatureCollection",
+        "features": features,
+        "total": len(features),
+    }
+
+
+@router.get("/pois")
+def geo_pois(
+    category: str = None,
+    brand: str = None,
+    db=Depends(get_db),
+    user=Depends(get_current_user),
+):
+    """
+    All POIs as a GeoJSON FeatureCollection of Points.
+    Separate map layer from properties, with optional category/brand filter.
+    """
+    conditions = ["lat IS NOT NULL AND lng IS NOT NULL"]
+    params = []
+
+    if category:
+        conditions.append("category = ?")
+        params.append(category)
+    if brand:
+        conditions.append("brand = ?")
+        params.append(brand)
+
+    where = " AND ".join(conditions)
+
+    rows = db.execute(
+        f"SELECT id, brand, category, name, lat, lng, address, city, property_id "
+        f"FROM pois WHERE {where}",
+        params,
+    ).fetchall()
+
+    features = []
+    for r in rows:
+        features.append({
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [r["lng"], r["lat"]],
+            },
+            "properties": {
+                "id": r["id"],
+                "brand": r["brand"],
+                "category": r["category"] or "",
+                "name": r["name"],
+                "address": r["address"],
+                "city": r["city"],
+                "property_id": r["property_id"],
             },
         })
 

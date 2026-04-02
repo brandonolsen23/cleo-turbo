@@ -1,0 +1,85 @@
+Category	Field Path	Type	Status	DB Column(s)	Source Code Line	Impact
+Transaction	transaction.sale_date	date	✅ WRITTEN	transactions.sale_date	303	—
+Transaction	transaction.sale_price	integer	✅ WRITTEN	transactions.sale_price	303	—
+Transaction	transaction.transaction_note	string	✅ WRITTEN	transactions.transaction_note	303	—
+Transaction	transaction.city	string	✅ WRITTEN	transactions.city, properties.city	303, 252	—
+Transaction	transaction.region	string	✅ WRITTEN	transactions.region, properties.region	303, 253	—
+Property Address	property.addresses[0].display	string	✅ WRITTEN	transactions.display_address, properties.display_address	239, 304	—
+Property Address	property.addresses[0].original	string	❌ IGNORED	—	—	Not stored
+Property Address	property.addresses[0].components.street_number	string	❌ IGNORED	—	—	Parsed but lost
+Property Address	property.addresses[0].components.street_name	string	❌ IGNORED	—	—	Parsed but lost
+Property Address	property.addresses[0].components.street_suffix	string	❌ IGNORED	—	—	Parsed but lost
+Property Address	property.addresses[0].components.street_direction	string	❌ IGNORED	—	—	Parsed but lost
+Property Address	property.addresses[0].components.suite_type	string	❌ IGNORED	—	—	Parsed but lost
+Property Address	property.addresses[0].components.suite_number	string	❌ IGNORED	—	—	Parsed but lost
+Property Address	property.addresses[0].search_keys	array	❌ IGNORED	—	—	Generated for FTS, never written
+Property Address	property.addresses[0].variations	array	❌ IGNORED	—	—	Address variants, never written
+Property Address	property.addresses[0].geocode_string	string	❌ IGNORED	—	—	Full geocoded address, never written
+Property Address	property.addresses[0].geocodable	boolean	❌ IGNORED	—	—	Flag never written
+Property Address	property.addresses[0].type	string	❌ IGNORED	—	—	Always "street_address", never written
+Property Location	property.city	string	(from transaction)	—	—	Duplicate, not direct
+Property Location	property.region	string	(from transaction)	—	—	Duplicate, not direct
+Property Location	property.postal	string	✅ WRITTEN	transactions.postal, properties.postal	304, 254	—
+Seller Party	seller.parties[].name	string	✅ WRITTEN	transaction_parties.party_name, groups.display_name, group_names.name	341, 86, 97	—
+Seller Contact	seller.phone	string	✅ WRITTEN	transactions.seller_phone, transaction_parties.phone, contacts.phone	306, 341, 149, 165	—
+Seller Contact	seller.contacts[].name	string	✅ WRITTEN	contacts.display_name	148	—
+Seller Contact	seller.contacts[].title	string	✅ WRITTEN	contacts.job_title, transaction_parties.contact_title	150, 167, 341	—
+Seller Metadata	seller.trade_name	string	❌ IGNORED	—	—	Never written
+Seller Metadata	seller.care_of	string	❌ IGNORED	—	—	Never written
+Seller Metadata	seller.law_firms	array	❌ IGNORED	—	—	Never written
+Seller Metadata	seller.companies	array	❌ IGNORED	—	—	Never written
+Seller Address	seller.address.original_lines	array	❌ IGNORED	—	—	Parsed but lost (16 nested fields total)
+Seller Address	seller.address.display	string	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.components.*	object	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.search_keys	array	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.geocode_string	string	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.modifiers	array	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.building_names	array	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.city	string	❌ IGNORED	—	—	Parsed but lost (critical for geo-prospecting)
+Seller Address	seller.address.province	string	❌ IGNORED	—	—	Parsed but lost
+Seller Address	seller.address.postal	string	❌ IGNORED	—	—	Parsed but lost (critical for geo-prospecting)
+Seller Address	seller.address.country	string	❌ IGNORED	—	—	Parsed but lost
+Buyer Party	buyer.parties[].name	string	✅ WRITTEN	transaction_parties.party_name, groups.display_name, group_names.name	341, 86, 97	—
+Buyer Contact	buyer.phone	string	✅ WRITTEN	transactions.buyer_phone, transaction_parties.phone	306, 341	—
+Buyer Contact	buyer.contacts[].name	string	✅ WRITTEN	contacts.display_name	148	—
+Buyer Contact	buyer.contacts[].title	string	✅ WRITTEN	contacts.job_title, transaction_parties.contact_title	150, 167, 341	—
+Buyer Metadata	buyer.trade_name	string	❌ IGNORED	—	—	Never written
+Buyer Metadata	buyer.care_of	string	❌ IGNORED	—	—	Never written
+Buyer Metadata	buyer.law_firms	array	❌ IGNORED	—	—	Never written
+Buyer Metadata	buyer.companies	array	❌ IGNORED	—	—	Never written
+Buyer Address	buyer.address.*	object	❌ IGNORED	—	—	Same as seller (16 nested fields lost)
+PIN Identifier	site.pin.original	string	❌ IGNORED	—	—	Human-readable format lost
+PIN Identifier	site.pin.display	string	❌ IGNORED	—	—	Display format lost
+PIN Identifier	site.pin.api_format	string	✅ WRITTEN	transactions.pin	308	—
+PIN Metadata	site.pin.multiple	boolean	❌ IGNORED	—	—	Never written (indicates multi-parcel deals)
+ARN Identifier	site.arn.original	string	❌ IGNORED	—	—	Human-readable format lost
+ARN Identifier	site.arn.display	string	❌ IGNORED	—	—	Display format lost
+ARN Identifier	site.arn.api_format	string	✅ WRITTEN	transactions.arn, properties.arn	302, 227-232	—
+Site Metrics	site.acreage	number	✅ WRITTEN	transactions.acreage, properties.acreage	308, 255	—
+Site Metrics	site.legal_description	string	✅ WRITTEN	transactions.legal_description, properties.legal_description	308, 256	—
+Site Metadata	site.location	string	❌ IGNORED	—	—	Location description lost (e.g., "NW corner Thamesgate Dr and Airport Rd")
+Site Flags	site.surface_rights_only	boolean	❌ IGNORED	—	—	Never written
+Parcel Resolution	parcel.resolved_arn	string	✅ WRITTEN	transactions.arn, properties.arn	302, 230	—
+Parcel Metadata	parcel.method	string	❌ IGNORED	—	—	Resolution method lost (spatial_geocode vs arn_cache)
+Parcel Metadata	parcel.parcel_file	string	❌ IGNORED	—	—	Geometry file reference lost
+Consideration	consideration.cash	integer	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.debt	integer	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.chattels	string	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.other	string	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.charges[].chargee	string	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.charges[].principal	integer	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.charges[].rate	string	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.charges[].registered	date	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Consideration	consideration.charges[].due	string	⚠️ JSON ONLY	transactions.consideration_json	309	Not SQL-queryable
+Broker	broker.brokers[].brokerage	string	⚠️ JSON ONLY	transactions.broker_json	310	Not SQL-queryable
+Broker	broker.brokers[].agents[]	array	⚠️ JSON ONLY	transactions.broker_json	310	Not SQL-queryable
+Broker	broker.brokers[].phone	string	⚠️ JSON ONLY	transactions.broker_json	310	Not SQL-queryable
+Description	description.description	string	✅ WRITTEN	transactions.description	307	—
+Description	description.more_info_url	string	❌ IGNORED	—	—	Never written (supplementary PDF links lost)
+Photos	photos.street_photo_urls	array	⚠️ JSON ONLY	transactions.photos_json	311	Not SQL-queryable
+Photos	photos.aerial_photo_urls	array	⚠️ JSON ONLY	transactions.photos_json	311	Not SQL-queryable
+Photos	photos.standalone_photo_url	string	⚠️ JSON ONLY	transactions.photos_json	311	Not SQL-queryable
+Metadata	source_id	string	✅ WRITTEN	transactions.source_id, properties.most_recent_source_id	302, 279	—
+Metadata	source	string	❌ IGNORED	—	—	Always "rt", not needed
+Metadata	source_folder	string	✅ WRITTEN	transactions.source_folder (property_type extracted)	312, 214	—
+Metadata	compiled_at	timestamp	❌ IGNORED	—	—	Engine processing timestamp lost

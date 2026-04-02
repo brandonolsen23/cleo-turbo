@@ -185,13 +185,24 @@ def _check_special_type(text):
             'suite_number': '', 'special_type': 'general_delivery',
         }
 
-    # Legal description: CONC, LOT, PART LOT, PT LOT
-    if re.match(r'^(CONC|LOT|PART\s+LOT|PT\s+LOT|PLAN)\b', upper):
+    # Legal description: CONC, LOT, LOTS, PART LOT, PT LOT, PLAN
+    if re.match(r'^(CONC|LOTS?|PART\s+LOTS?|PT\s+LOTS?|PLAN)\b', upper):
         return {
             'street_number': '', 'street_name': to_title_case(text.strip()),
             'street_suffix': '', 'street_direction': '',
             'suite_type': '', 'suite_number': '',
             'special_type': 'legal_description',
+        }
+
+    # Lot continuation: bare number lists like "21, 43 & 44" or "14, 15, 22, 23, 27"
+    # These are continuation lines from multi-line lot descriptions that got split
+    # by the address parser. They contain ONLY digits separated by commas/ampersands/dashes.
+    if re.match(r'^\d+(?:\s*[-,&]\s*\d+)+\s*$', text.strip()):
+        return {
+            'street_number': '', 'street_name': to_title_case(text.strip()),
+            'street_suffix': '', 'street_direction': '',
+            'suite_type': '', 'suite_number': '',
+            'special_type': 'lot_continuation',
         }
 
     return None

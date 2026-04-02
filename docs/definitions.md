@@ -52,14 +52,19 @@ SQLite database that the app queries. Contains both derived tables (rebuilt by C
 **Derived tables** (rebuilt by Compiler, IDs persist via Reconciliation):
 | Table | Keyed by | Description |
 |---|---|---|
-| `properties` | PRO_ ID (anchored to ARN) | One per parcel — transaction history, assessment data, tenants |
-| `transactions` | RT source_id | One per sale — price, date, parties, addresses |
+| `properties` | PRO_ ID (anchored to ARN) | One per parcel — transaction history, assessment data, tenants. Includes `gw_municipality` from GW data. |
+| `transactions` | RT source_id | One per sale — price, date, parties, addresses, site metadata (pin_display, arn_display, parcel_method, location, surface_rights_only, more_info_url) |
 | `contacts` | CON_ ID (anchored to name fingerprint) | Every person seen across all transactions. Status: **pool** or **engaged** |
 | `groups` | GRP_ ID (anchored to normalized name) | Every company seen across all transactions. Status: **pool** or **engaged** |
 | `transaction_parties` | CON_ ID + RT source_id | Who appeared on what transaction, on which side, under which group |
+| `transaction_mailing_addresses` | source_id + side | Seller/buyer mailing addresses from RT (display, components, city, province, postal) |
+| `transaction_party_metadata` | source_id + side | Seller/buyer trade_name, care_of, law_firms, companies from RT |
+| `transaction_consideration` | source_id | Denormalized consideration breakdown (cash, debt, chattels, other, charges) |
+| `transaction_brokers` | source_id | Brokerages involved in the transaction |
+| `transaction_broker_agents` | broker_id | Individual agents within a brokerage |
 | `pois` | OSM/BR source_id | Brand locations from OSM and store locators |
-| `property_pois` | PRO_ ID + source_id | POI ↔ property links (spatial match) |
-| `gw_assessments` | GW source_id | GeoWarehouse property assessment data |
+| `gw_assessments` | GW source_id | GeoWarehouse property assessment data — includes registry metadata (land_registry_status, registration_type, lro), municipality, and quality flags (has_mpac_data, is_active, address_parsed, parcel_resolved) |
+| `gw_sales_history` | gw_id | Historical sale records from GeoWarehouse (date, amount, type, party_to) |
 
 **CRM tables** (persistent, never rebuilt by Compiler):
 | Table | Keyed by | Description |

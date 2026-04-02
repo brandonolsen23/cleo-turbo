@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Heading, Text, Button } from "@radix-ui/themes";
+import { Heading, Text, Button, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import { formatPhone } from "../lib/utils";
 import type { ContactBrowseItem, BrowseResponse } from "../types";
@@ -41,9 +41,9 @@ export default function ContactsPage() {
                 <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>{c.company_name || "—"}</td>
                 <td className="px-4 py-2">{formatPhone(c.phone)}</td>
                 <td className="px-4 py-2">
-                  <span className={`inline-block px-2 py-0.5 rounded text-[12px] ${c.status === 'engaged' ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                  <Badge size="1" variant="soft" color={c.status === 'engaged' ? 'jade' : 'gray'}>
                     {c.status}
-                  </span>
+                  </Badge>
                 </td>
                 <td className="px-4 py-2 text-right">{c.transaction_count}</td>
               </tr>

@@ -27,6 +27,10 @@ import time
 import argparse
 from datetime import datetime, timezone
 
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.insert(0, PROJECT_ROOT)
+from engines.shared.io import safe_write_json
+
 
 # Paths relative to this script (engines/rt/)
 CLASSIFIED_DIR = os.path.join(os.path.dirname(__file__), 'pipeline', 'classified')
@@ -254,8 +258,7 @@ def run(limit=None, dry_run=False):
 
             # Write to clean-data/rt/
             out_path = os.path.join(OUTPUT_DIR, f'{rt_id}.json')
-            with open(out_path, 'w') as f:
-                json.dump(clean_record, f, indent=2, ensure_ascii=False)
+            safe_write_json(out_path, clean_record)
 
             stats['compiled'] += 1
             if clean_record.get('parcel'):

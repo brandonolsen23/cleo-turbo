@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS properties (
     most_recent_sale_price INTEGER,
     transaction_count INTEGER DEFAULT 0,
     primary_property_type TEXT,
+    gw_municipality  TEXT,
     lat             REAL,
     lng             REAL,
     parcel_geojson  TEXT,
@@ -60,6 +61,13 @@ CREATE TABLE IF NOT EXISTS transactions (
     acreage         REAL,
     pin             TEXT,
     legal_description TEXT,
+    pin_display      TEXT,
+    arn_display      TEXT,
+    pin_multiple     INTEGER DEFAULT 0,
+    parcel_method    TEXT,
+    location         TEXT,
+    surface_rights_only INTEGER DEFAULT 0,
+    more_info_url    TEXT,
     consideration_json TEXT,
     broker_json     TEXT,
     photos_json     TEXT,
@@ -122,6 +130,118 @@ CREATE TABLE IF NOT EXISTS transaction_parties (
     contact_title   TEXT,
     phone           TEXT
 );
+
+CREATE TABLE IF NOT EXISTS transaction_mailing_addresses (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_id       TEXT NOT NULL REFERENCES transactions(source_id),
+    side            TEXT NOT NULL,
+    display         TEXT,
+    street_number   TEXT,
+    street_name     TEXT,
+    street_suffix   TEXT,
+    street_direction TEXT,
+    suite_type      TEXT,
+    suite_number    TEXT,
+    city            TEXT,
+    province        TEXT,
+    postal          TEXT,
+    country         TEXT,
+    geocode_string  TEXT,
+    UNIQUE(source_id, side)
+);
+
+CREATE TABLE IF NOT EXISTS transaction_party_metadata (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_id       TEXT NOT NULL REFERENCES transactions(source_id),
+    side            TEXT NOT NULL,
+    trade_name      TEXT,
+    care_of         TEXT,
+    law_firms_json  TEXT,
+    companies_json  TEXT,
+    UNIQUE(source_id, side)
+);
+
+CREATE TABLE IF NOT EXISTS transaction_consideration (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_id       TEXT NOT NULL UNIQUE REFERENCES transactions(source_id),
+    cash            INTEGER,
+    debt            INTEGER,
+    chattels        INTEGER,
+    other           INTEGER,
+    charges_json    TEXT,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS transaction_brokers (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_id       TEXT NOT NULL REFERENCES transactions(source_id),
+    broker_name     TEXT,
+    phone           TEXT,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS transaction_broker_agents (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    broker_id       INTEGER NOT NULL REFERENCES transaction_brokers(id),
+    agent_name      TEXT,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS pois (
+    id              TEXT PRIMARY KEY,
+    source          TEXT NOT NULL,
+    brand           TEXT NOT NULL,
+    category        TEXT,
+    name            TEXT,
+    lat             REAL NOT NULL,
+    lng             REAL NOT NULL,
+    address         TEXT,
+    city            TEXT,
+    phone           TEXT,
+    website         TEXT,
+    property_id     TEXT REFERENCES properties(id),
+    arn             TEXT,
+    cuisine         TEXT,
+    operator        TEXT,
+    facebook        TEXT,
+    instagram       TEXT,
+    drive_through   TEXT,
+    osm_id          TEXT,
+    building_geojson TEXT,
+    approx_sqft     INTEGER,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS gw_assessments (
+    id              TEXT PRIMARY KEY,
+    gw_id           TEXT NOT NULL,
+    property_id     TEXT REFERENCES properties(id),
+    arn             TEXT,
+    pin             TEXT,
+    assessed_value  INTEGER,
+    valuation_date  TEXT,
+    zoning          TEXT,
+    property_code   TEXT,
+    property_description TEXT,
+    ownership_type  TEXT,
+    frontage_ft     REAL,
+    depth_ft        REAL,
+    site_area_sqft  REAL,
+    acreage         REAL,
+    owner_name      TEXT,
+    owner_mailing   TEXT,
+    legal_description TEXT,
+    source_file     TEXT,
+    land_registry_status TEXT,
+    registration_type TEXT,
+    lro              TEXT,
+    municipality     TEXT,
+    has_mpac_data    INTEGER DEFAULT 0,
+    is_active        INTEGER DEFAULT 0,
+    address_parsed   INTEGER DEFAULT 0,
+    parcel_resolved  INTEGER DEFAULT 0,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
 """
 
 DERIVED_INDEXES = """
@@ -143,6 +263,37 @@ CREATE INDEX IF NOT EXISTS idx_group_names_normalized ON group_names(normalized)
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_source ON transaction_parties(source_id);
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_contact ON transaction_parties(contact_id);
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_group ON transaction_parties(group_id);
+CREATE INDEX IF NOT EXISTS idx_tx_addr_source ON transaction_mailing_addresses(source_id);
+CREATE INDEX IF NOT EXISTS idx_tx_addr_city ON transaction_mailing_addresses(city);
+CREATE INDEX IF NOT EXISTS idx_tx_meta_source ON transaction_party_metadata(source_id);
+CREATE INDEX IF NOT EXISTS idx_tx_cons_source ON transaction_consideration(source_id);
+CREATE INDEX IF NOT EXISTS idx_tx_cons_cash ON transaction_consideration(cash);
+CREATE INDEX IF NOT EXISTS idx_tx_broker_source ON transaction_brokers(source_id);
+CREATE INDEX IF NOT EXISTS idx_tx_agent_broker ON transaction_broker_agents(broker_id);
+CREATE INDEX IF NOT EXISTS idx_pois_property ON pois(property_id);
+CREATE INDEX IF NOT EXISTS idx_pois_brand ON pois(brand);
+CREATE INDEX IF NOT EXISTS idx_pois_category ON pois(category);
+CREATE INDEX IF NOT EXISTS idx_pois_arn ON pois(arn);
+CREATE TABLE IF NOT EXISTS gw_sales_history (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    gw_id           TEXT NOT NULL,
+    property_id     TEXT,
+    arn             TEXT,
+    sale_date       TEXT,
+    amount          INTEGER,
+    sale_type       TEXT,
+    party_to        TEXT,
+    notes           TEXT,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_gw_sales_gw_id ON gw_sales_history(gw_id);
+CREATE INDEX IF NOT EXISTS idx_gw_sales_date ON gw_sales_history(sale_date);
+CREATE INDEX IF NOT EXISTS idx_gw_sales_amount ON gw_sales_history(amount);
+CREATE INDEX IF NOT EXISTS idx_gw_sales_property ON gw_sales_history(property_id);
+CREATE INDEX IF NOT EXISTS idx_gw_property ON gw_assessments(property_id);
+CREATE INDEX IF NOT EXISTS idx_gw_arn ON gw_assessments(arn);
+CREATE INDEX IF NOT EXISTS idx_gw_gw_id ON gw_assessments(gw_id);
 """
 
 FTS_TABLES = """
@@ -161,6 +312,12 @@ CREATE VIRTUAL TABLE IF NOT EXISTS contacts_fts USING fts5(
 CREATE VIRTUAL TABLE IF NOT EXISTS groups_fts USING fts5(
     id, display_name,
     content='groups', content_rowid='rowid',
+    tokenize='porter unicode61'
+);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS transactions_fts USING fts5(
+    source_id, display_address, city, region, seller_parties, buyer_parties,
+    content='transactions', content_rowid='rowid',
     tokenize='porter unicode61'
 );
 """
@@ -303,6 +460,14 @@ def create_all_tables(conn):
 def drop_derived_tables(conn):
     """Drop derived tables only. CRM and system tables are preserved."""
     conn.executescript("""
+        DROP TABLE IF EXISTS gw_sales_history;
+        DROP TABLE IF EXISTS gw_assessments;
+        DROP TABLE IF EXISTS pois;
+        DROP TABLE IF EXISTS transaction_broker_agents;
+        DROP TABLE IF EXISTS transaction_brokers;
+        DROP TABLE IF EXISTS transaction_consideration;
+        DROP TABLE IF EXISTS transaction_mailing_addresses;
+        DROP TABLE IF EXISTS transaction_party_metadata;
         DROP TABLE IF EXISTS transaction_parties;
         DROP TABLE IF EXISTS group_names;
         DROP TABLE IF EXISTS transactions;
@@ -312,5 +477,6 @@ def drop_derived_tables(conn):
         DROP TABLE IF EXISTS properties_fts;
         DROP TABLE IF EXISTS contacts_fts;
         DROP TABLE IF EXISTS groups_fts;
+        DROP TABLE IF EXISTS transactions_fts;
     """)
     conn.commit()

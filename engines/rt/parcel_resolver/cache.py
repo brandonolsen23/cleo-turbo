@@ -29,9 +29,23 @@ def cache_read(arn):
         return json.load(f)
 
 
+def cache_read_safe(arn):
+    """Read a parcel from cache with error handling for corrupted files."""
+    path = os.path.join(CACHE_DIR, f'{arn}.json')
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
 def cache_write(arn, parcel):
-    """Write a parcel to the cache. Overwrites if exists."""
+    """Write a parcel to the cache atomically. Overwrites if exists."""
     os.makedirs(CACHE_DIR, exist_ok=True)
     path = os.path.join(CACHE_DIR, f'{arn}.json')
-    with open(path, 'w') as f:
+    tmp = path + '.tmp'
+    with open(tmp, 'w') as f:
         json.dump(parcel, f, separators=(',', ':'))
+    os.replace(tmp, path)

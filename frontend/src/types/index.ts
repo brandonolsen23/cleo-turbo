@@ -28,6 +28,7 @@ export interface PropertyBrowseItem {
   most_recent_sale_date: string | null;
   most_recent_sale_price: number | null;
   current_owner_name: string | null;
+  current_owner_group_id: string | null;
   transaction_count: number;
   lat: number | null;
   lng: number | null;
@@ -48,12 +49,29 @@ export interface PropertyDetail {
   most_recent_sale_date: string | null;
   most_recent_sale_price: number | null;
   transaction_count: number;
+  primary_property_type: string | null;
+  gw_municipality: string | null;
   lat: number | null;
   lng: number | null;
   parcel_geojson: Record<string, unknown> | null;
   created_at: string;
   updated_at: string;
   transactions: PropertyTransaction[];
+  pois: PoiOnProperty[];
+  gw_assessments: GwAssessment[];
+  gw_sales_history: GwSaleHistory[];
+}
+
+export interface PropertyTransactionParty {
+  side: "buyer" | "seller";
+  party_name: string | null;
+  contact_title: string | null;
+  phone: string | null;
+  contact_id: string | null;
+  group_id: string | null;
+  contact_name: string | null;
+  contact_phone: string | null;
+  contact_email: string | null;
 }
 
 export interface PropertyTransaction {
@@ -66,6 +84,10 @@ export interface PropertyTransaction {
   buyer_parties: string[] | null;
   seller_phone: string | null;
   buyer_phone: string | null;
+  consideration_json: ConsiderationData | null;
+  broker_json: BrokerData | null;
+  photos_json: { street_photo_urls?: string[]; aerial_photo_urls?: string[]; standalone_photo_url?: string } | null;
+  parties: PropertyTransactionParty[];
 }
 
 // ============================================================
@@ -115,25 +137,74 @@ export interface TransactionDetail {
   acreage: number | null;
   pin: string | null;
   legal_description: string | null;
+  pin_display: string | null;
+  arn_display: string | null;
+  pin_multiple: boolean;
+  parcel_method: string | null;
+  location: string | null;
+  surface_rights_only: boolean;
+  more_info_url: string | null;
   consideration_json: ConsiderationData | null;
   broker_json: BrokerData | null;
   photos_json: string[] | null;
   source_folder: string | null;
   created_at: string;
   parties: TransactionParty[];
+  consideration: {
+    cash: number | null;
+    debt: number | null;
+    chattels: number | null;
+    other: number | null;
+    charges: string[];
+  } | null;
+  brokers: {
+    broker_name: string | null;
+    phone: string | null;
+    agents: string[];
+  }[];
+  seller_mailing_address: MailingAddress | null;
+  buyer_mailing_address: MailingAddress | null;
+  seller_party_metadata: PartyMetadata | null;
+  buyer_party_metadata: PartyMetadata | null;
+}
+
+export interface MailingAddress {
+  display: string | null;
+  street_number: string | null;
+  street_name: string | null;
+  street_suffix: string | null;
+  street_direction: string | null;
+  suite_type: string | null;
+  suite_number: string | null;
+  city: string | null;
+  province: string | null;
+  postal: string | null;
+  country: string | null;
+  geocode_string: string | null;
+}
+
+export interface PartyMetadata {
+  trade_name: string | null;
+  care_of: string | null;
+  law_firms: string[];
+  companies: string[];
 }
 
 export interface ConsiderationData {
   cash?: number;
+  debt?: number;
   assumed_debt?: number;
   chattels?: number;
+  other?: number;
   verbatim?: string;
+  charges?: string[];
   chargees?: string[];
 }
 
 export interface BrokerData {
   name?: string;
   phone?: string;
+  brokers?: { name?: string; brokerage?: string; phone?: string; agents?: string[] }[];
 }
 
 // ============================================================
@@ -144,6 +215,8 @@ export interface ContactBrowseItem {
   id: string;
   display_name: string;
   phone: string | null;
+  email: string | null;
+  mobile: string | null;
   company_name: string | null;
   status: string;
   transaction_count: number;
@@ -265,12 +338,14 @@ export interface DashboardStats {
   engaged_contacts: number;
   engaged_groups: number;
   top_cities: { city: string; count: number }[];
-  recent_transactions: {
+  recent_records: {
     source_id: string;
+    source: "rt" | "gw";
+    property_id: string | null;
     display_address: string;
     city: string;
-    sale_date: string | null;
-    sale_price: number | null;
+    added_at: string | null;
+    value: number | null;
   }[];
 }
 
@@ -341,12 +416,86 @@ export interface OmnisearchResult {
 }
 
 // ============================================================
+// POIs
+// ============================================================
+
+export interface PoiBrowseItem {
+  id: string;
+  source: string;
+  brand: string;
+  category: string;
+  name: string;
+  lat: number | null;
+  lng: number | null;
+  address: string;
+  city: string;
+  phone: string | null;
+  website: string | null;
+  property_id: string | null;
+  arn: string | null;
+}
+
+export interface GwSaleHistory {
+  sale_date: string | null;
+  amount: number | null;
+  sale_type: string | null;
+  party_to: string | null;
+  notes: string | null;
+}
+
+export interface GwAssessment {
+  id: string;
+  gw_id: string;
+  property_id: string | null;
+  arn: string;
+  pin: string;
+  assessed_value: number | null;
+  valuation_date: string | null;
+  zoning: string | null;
+  property_code: string | null;
+  property_description: string | null;
+  ownership_type: string | null;
+  frontage_ft: number | null;
+  depth_ft: number | null;
+  site_area_sqft: number | null;
+  acreage: number | null;
+  owner_name: string | null;
+  owner_mailing: string | null;
+  legal_description: string | null;
+  land_registry_status: string | null;
+  registration_type: string | null;
+  lro: string | null;
+  municipality: string | null;
+  has_mpac_data: boolean;
+  is_active: boolean;
+  address_parsed: boolean;
+  parcel_resolved: boolean;
+  sales_history?: GwSaleHistory[];
+}
+
+export interface PoiOnProperty {
+  id: string;
+  source: string;
+  brand: string;
+  category: string;
+  name: string;
+  lat: number;
+  lng: number;
+  address: string;
+  city: string;
+  phone: string | null;
+  website: string | null;
+}
+
+// ============================================================
 // Filters
 // ============================================================
 
 export interface FilterOptions {
   cities: string[];
   regions: string[];
+  brands: string[];
+  categories: string[];
 }
 
 // ============================================================
@@ -365,6 +514,8 @@ export interface GeoPropertyFeature {
     latest_date: string | null;
     transaction_count: number;
     primary_property_type?: string;
+    tenant_brands: string[];
+    tenant_categories: string[];
   };
 }
 

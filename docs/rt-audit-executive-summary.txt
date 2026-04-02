@@ -1,0 +1,282 @@
+================================================================================
+                   RT PIPELINE AUDIT - EXECUTIVE SUMMARY
+================================================================================
+Date: 2026-04-02
+Scope: Clean-Data JSON → SQLite Database Write-Through
+Status: COMPLETE ANALYSIS OF ALL FIELDS
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+FIELDS IN CLEAN-DATA RT JSON:       ~110+ total fields
+FIELDS WRITTEN TO DATABASE:         ~40 normalized columns
+FIELDS STORED AS JSON (BLOB):       ~11 fields (not SQL-queryable)
+FIELDS COMPLETELY LOST:             ~59 fields
+
+DATA LOSS RATE: 54%
+
+================================================================================
+CRITICAL GAPS (Most Important)
+================================================================================
+
+1. PARTY LOCATION DATA - 32 fields lost
+   ├─ Seller address object: 16 fields (original_lines, display, components, 
+   │  geocode_string, city, postal, province, country, etc.)
+   ├─ Buyer address object: 16 fields (same structure)
+   └─ IMPACT: Cannot perform geographic prospecting ("buyers in postal codes X,Y,Z")
+             Cannot map buyer/seller distribution
+             Cannot enrich CRM with mailing addresses
+
+2. ADDRESS COMPONENT PARSING - 12 fields lost
+   ├─ Property address components: street_number, street_name, street_suffix,
+   │  street_direction, suite_type, suite_number (×2 address objects)
+   └─ IMPACT: Cannot support suite-level property identification
+             Cannot parse multi-tenant buildings
+             Lose structured address for better property matching
+
+3. PARTY METADATA - 8 fields lost
+   ├─ Seller: trade_name, care_of, law_firms, companies
+   ├─ Buyer: trade_name, care_of, law_firms, companies
+   └─ IMPACT: Cannot identify company relationships
+             Cannot track law firms involved in transactions
+
+4. PARCEL RESOLUTION CONFIDENCE - 2 fields lost
+   ├─ parcel.method (e.g., "spatial_geocode" vs "arn_cache")
+   ├─ parcel.parcel_file (geometry reference)
+   └─ IMPACT: Cannot distinguish validated vs inferred parcel matches
+             Users cannot assess data confidence levels
+
+5. DOCUMENTATION LINKS - 1 field lost
+   ├─ description.more_info_url (links to PDF supplements)
+   └─ IMPACT: Users cannot access source documents
+             Lose enrichment materials
+
+================================================================================
+MEDIUM-IMPACT ISSUES
+================================================================================
+
+6. FINANCIAL DATA NOT NORMALIZED
+   ├─ consideration.cash, debt, chattels, charges[] (9 fields)
+   └─ STATUS: Stored as JSON blob, requires JSON parsing to query
+   └─ IMPACT: Cannot run SQL queries on financing structure
+             "SELECT * FROM transactions WHERE consideration_json->'$.debt' > 500000"
+
+7. BROKER DATA NOT NORMALIZED
+   ├─ broker.brokers[].brokerage, agents[], phone (3+ fields)
+   └─ STATUS: Stored as JSON blob
+   └─ IMPACT: Broker attribution requires workarounds
+             Cannot query "transactions by brokerage"
+
+8. PHOTO URLS NOT INDEXED
+   ├─ photos.street_photo_urls, aerial_photo_urls, standalone_photo_url
+   └─ STATUS: Stored as JSON blob
+   └─ IMPACT: UI cannot easily build galleries
+             Cannot count/filter by availability of photos
+
+9. PIN/ARN DISPLAY FORMATS LOST
+   ├─ site.pin.original, pin.display (human-readable)
+   ├─ site.arn.original, arn.display (human-readable)
+   └─ IMPACT: UI must show "000630124" instead of "00063-0124"
+             Lose user-friendly identifiers
+
+10. PIN MULTI-PARCEL FLAG LOST
+    ├─ site.pin.multiple (boolean, indicates multi-parcel transactions)
+    └─ IMPACT: Cannot filter for complex/multi-parcel deals
+
+================================================================================
+LOW-IMPACT ISSUES
+================================================================================
+
+11. METADATA NOT PRESERVED
+    ├─ compiled_at (RT engine processing timestamp)
+    ├─ source (always "rt")
+    └─ IMPACT: Cannot audit data freshness by source processing time
+
+================================================================================
+FIELDS WRITTEN SUCCESSFULLY (40+ normalized columns)
+================================================================================
+
+Transaction Details:
+  ✅ sale_date, sale_price, transaction_note, city, region, postal
+
+Property Details:
+  ✅ display_address, city, region, postal, acreage, legal_description
+
+Party Information:
+  ✅ party_name (seller/buyer), phone (seller/buyer)
+
+Contact Information:
+  ✅ contact name, contact title
+
+Site Identifiers:
+  ✅ arn (api_format), pin (api_format)
+
+Description:
+  ✅ description text
+
+Source Tracking:
+  ✅ source_id, source_folder
+
+Parcel Data:
+  ✅ resolved_arn, parcel geometry (lat/lng)
+
+================================================================================
+BY THE NUMBERS
+================================================================================
+
+                        PROPERTY OBJECT
+                        ===============
+Total fields:           13 (1 address array with 10 fields each + 3 metadata)
+Written:                2 (display_address, postal)
+Lost:                   11 (components, search_keys, variations, geocode_string,
+                           geocodable, type, original, plus metadata)
+JSON-stored:            0
+Success rate:           15%
+
+
+                    SELLER/BUYER OBJECTS (combined)
+                    ==============================
+Total fields:           40 (7 direct fields each + 16-field address each)
+Written:                12 (parties, phone, contacts, titles)
+Lost:                   28 (trade_name, care_of, law_firms, companies,
+                           entire 16-field address objects ×2)
+JSON-stored:            0
+Success rate:           30%
+
+
+                        SITE OBJECT
+                        ===========
+Total fields:           7 (4 PIN, 3 ARN, acreage, legal_description, location,
+                           surface_rights_only)
+Written:                5 (pin.api_format, arn.api_format, acreage, 
+                           legal_description)
+Lost:                   2 (location, surface_rights_only, pin.original,
+                           pin.display, pin.multiple, arn.original, arn.display)
+JSON-stored:            0
+Success rate:           71%
+
+
+                       PARCEL OBJECT
+                       =============
+Total fields:           3
+Written:                1 (resolved_arn)
+Lost:                   2 (method, parcel_file)
+JSON-stored:            0
+Success rate:           33%
+
+
+                      BLOBS (JSON-stored)
+                      ===================
+Consideration:          9+ fields (cash, debt, chattels, charges with
+                        chargee, principal, rate, registered, due)
+Broker:                 3+ fields (brokerage, agents, phone)
+Photos:                 3 fields (street_photo_urls, aerial_photo_urls,
+                        standalone_photo_url)
+Description:           1 field (more_info_url)
+Total JSON-stored:      16+ fields
+
+
+                    OVERALL STATISTICS
+                    ==================
+Total distinct fields:  ~110+
+Fully normalized:       ~40 (36%)
+JSON-stored (partial):  ~16 (15%)
+Completely lost:        ~54 (49%)
+
+================================================================================
+ROOT CAUSE
+================================================================================
+
+The RT engine (engines/rt/compile.py) is sophisticated—it parses addresses,
+geocodes them, extracts company metadata, and identifies law firms. However,
+the Compiler (cleo/compiler/writer.py Pass 3) applies a "schema-first" approach:
+
+  "Write only what fits the schema. Everything else → JSON."
+
+This worked in the early stages but creates data loss as the pipeline matured.
+The data is RIGHT THERE in clean-data/rt/*.json files, fully normalized and
+geocoded, but never reaches the database.
+
+================================================================================
+RECOMMENDATIONS (By Impact)
+================================================================================
+
+PRIORITY 1: Fix Geographic Prospecting
+  [ ] Add to transactions or create transaction_parties extension:
+      - seller_address_city
+      - seller_address_postal
+      - buyer_address_city
+      - buyer_address_postal
+  [ ] Update writer.py lines 317-353 to extract from seller/buyer.address
+
+PRIORITY 2: Enable Confidence Assessment
+  [ ] Add to properties:
+      - parcel_resolution_method (e.g., "spatial_geocode", "arn_cache")
+  [ ] Allows UI to show confidence badges
+
+PRIORITY 3: Preserve Documentation Links
+  [ ] Add to transactions:
+      - documentation_url (more_info_url)
+  [ ] Link users to supplementary PDFs
+
+PRIORITY 4: Financial Analysis
+  [ ] Add to transactions:
+      - consideration_cash
+      - consideration_debt
+      - total_consideration
+  [ ] Enable SQL queries on deal financing
+
+PRIORITY 5: Broker Attribution
+  [ ] Add to transactions:
+      - primary_brokerage_name
+      - primary_broker_agents (JSON array or string)
+      - broker_phone
+  [ ] Enable broker tracking workflows
+
+PRIORITY 6: Company Metadata
+  [ ] Add to groups:
+      - trade_name (alternative company name)
+  [ ] Extract from seller/buyer.trade_name
+
+PRIORITY 7: UI/UX Polish
+  [ ] Add to properties (if suite-level matching needed):
+      - street_number, street_name, street_suffix, suite_type, suite_number
+  [ ] Add PIN/ARN display formats:
+      - pin_display, arn_display (human-readable)
+
+================================================================================
+FILES AFFECTED
+================================================================================
+
+READ:
+  - /sessions/trusting-charming-dijkstra/mnt/cleo-turbo/clean-data/rt/*.json
+    (source data, fully rich with all 110+ fields)
+  
+  - /sessions/trusting-charming-dijkstra/mnt/cleo-turbo/engines/rt/compile.py
+    (creates clean-data JSON with all fields)
+  
+  - /sessions/trusting-charming-dijkstra/mnt/cleo-turbo/cleo/compiler/writer.py
+    (Pass 3, lines 199-354, where the data loss occurs)
+  
+  - /sessions/trusting-charming-dijkstra/mnt/cleo-turbo/cleo/database/schema.py
+    (schema - missing columns for lost fields)
+
+WRITE (to fix):
+  - schema.py (add columns to transactions, properties, groups)
+  - writer.py Pass 3 (extract lost fields)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Review this audit with project stakeholders
+2. Prioritize which lost fields are most valuable for your workflows
+3. Implement schema changes (add columns)
+4. Update writer.py to extract and write those fields
+5. Run compiler on full clean-data/ to populate new columns
+6. Test geographic prospecting, financial analysis, etc.
+
+This is a fixable issue—the data exists, just needs to be routed to the DB.
+
+================================================================================

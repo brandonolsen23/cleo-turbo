@@ -37,7 +37,7 @@ def browse_contacts(
         order = "desc"
 
     rows = db.execute(
-        f"SELECT id, display_name, phone, company_name, status, transaction_count, "
+        f"SELECT id, display_name, phone, email, mobile, company_name, status, transaction_count, "
         f"first_seen_date, last_seen_date, job_title "
         f"FROM contacts WHERE {where} ORDER BY {sort} {order} LIMIT ? OFFSET ?",
         params + [per_page, offset]

@@ -12,7 +12,8 @@ CRM tables are never touched. Derived tables are truncated and rebuilt.
 import json
 import time
 
-from .reader import iter_clean_records, read_parcel, count_clean_records
+from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
+                     read_parcel, count_clean_records, count_osm_records, count_gw_records)
 from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name
 from ..database.schema import drop_derived_tables, create_all_tables
 
@@ -212,19 +213,34 @@ def run_compiler(conn):
         folder_parts = source_folder.split('/') if source_folder else []
         property_type = folder_parts[1] if len(folder_parts) >= 2 else ''
 
-        arn = site.get('arn', {}).get('api_format', '')
-        if arn and all(c == '0' for c in arn):
-            arn = ''
+        # Determine ARN: prefer parcel-resolved ARN (validated), fall back to site ARN
+        parcel_info = rec.get('parcel') or {}
+        resolved_arn = parcel_info.get('resolved_arn', '')
+        if resolved_arn and all(c == '0' for c in resolved_arn):
+            resolved_arn = ''
+
+        site_arn = site.get('arn', {}).get('api_format', '')
+        if site_arn and all(c == '0' for c in site_arn):
+            site_arn = ''
+
+        # Use resolved ARN if available (it's been validated against AgMaps)
+        # Only fall back to site ARN if it has a parcel in cache (verified geometry)
+        arn = ''
+        if resolved_arn:
+            arn = resolved_arn
+        elif site_arn and read_parcel(site_arn):
+            arn = site_arn
+        # If site_arn exists but has no cached parcel, DON'T create a ghost property
+
         pin = site.get('pin', {}).get('api_format', '')
 
         # Get display address
         addrs = prop.get('addresses', [])
         display_address = addrs[0].get('display', '') if addrs else ''
-        # Ensure commas have a space after them (multi-address: "1677,1679" → "1677, 1679")
         import re as _re
         display_address = _re.sub(r',(?!\s)', ', ', display_address)
 
-        # Property (one per ARN)
+        # Property (one per ARN — only when we have validated geometry)
         property_id = None
         if arn:
             if arn not in property_data:
@@ -254,7 +270,7 @@ def run_compiler(conn):
                 pd['property_type'] = property_type
 
             # Update with most recent transaction
-            if tx.get('sale_date', '') and (not pd['sale_date'] or tx['sale_date'] > pd['sale_date']):
+            if tx.get('sale_date', '') and (not pd['sale_date'] or tx['sale_date'] >= pd['sale_date']):
                 pd['sale_date'] = tx['sale_date']
                 pd['sale_price'] = tx.get('sale_price')
                 pd['display_address'] = display_address or pd['display_address']
@@ -281,8 +297,11 @@ def run_compiler(conn):
             "INSERT OR IGNORE INTO transactions (source_id, property_id, arn, sale_date, sale_price, "
             "transaction_note, display_address, city, region, postal, seller_parties, buyer_parties, "
             "seller_phone, buyer_phone, description, acreage, pin, legal_description, "
+            "pin_display, arn_display, pin_multiple, parcel_method, location, surface_rights_only, "
+            "more_info_url, "
             "consideration_json, broker_json, photos_json, source_folder) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (source_id, property_id, arn,
              tx.get('sale_date'), tx.get('sale_price'), tx.get('transaction_note', ''),
              display_address, tx.get('city', ''), tx.get('region', ''), prop.get('postal', ''),
@@ -290,12 +309,97 @@ def run_compiler(conn):
              rec.get('seller', {}).get('phone', ''), rec.get('buyer', {}).get('phone', ''),
              rec.get('description', {}).get('description', ''),
              site.get('acreage'), pin, site.get('legal_description', ''),
+             site.get('pin', {}).get('display', ''),
+             site.get('arn', {}).get('display', ''),
+             1 if site.get('pin', {}).get('multiple') else 0,
+             parcel_info.get('method', ''),
+             site.get('location', ''),
+             1 if site.get('surface_rights_only') else 0,
+             rec.get('description', {}).get('more_info_url', ''),
              json.dumps(rec.get('consideration', {})),
              json.dumps(rec.get('broker', {})),
              json.dumps(rec.get('photos', {})),
              rec.get('source_folder', ''))
         )
         tx_count += 1
+
+        # Mailing addresses (Phase 1)
+        for side in ['seller', 'buyer']:
+            addr = rec.get(side, {}).get('address', {})
+            if addr.get('display') or addr.get('geocode_string'):
+                comps = addr.get('components', {})
+                conn.execute(
+                    "INSERT OR IGNORE INTO transaction_mailing_addresses "
+                    "(source_id, side, display, street_number, street_name, street_suffix, "
+                    "street_direction, suite_type, suite_number, city, province, postal, "
+                    "country, geocode_string) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (source_id, side,
+                     addr.get('display', ''),
+                     comps.get('street_number', ''),
+                     comps.get('street_name', ''),
+                     comps.get('street_suffix', ''),
+                     comps.get('street_direction', ''),
+                     comps.get('suite_type', ''),
+                     comps.get('suite_number', ''),
+                     addr.get('city', ''),
+                     addr.get('province', ''),
+                     addr.get('postal', ''),
+                     addr.get('country', ''),
+                     addr.get('geocode_string', ''))
+                )
+
+        # Consideration denormalization (Phase 5)
+        consideration = rec.get('consideration', {})
+        if consideration and any(consideration.get(k) for k in ['cash', 'debt', 'chattels', 'other', 'charges']):
+            conn.execute(
+                "INSERT OR IGNORE INTO transaction_consideration "
+                "(source_id, cash, debt, chattels, other, charges_json) "
+                "VALUES (?, ?, ?, ?, ?, ?)",
+                (source_id,
+                 consideration.get('cash'),
+                 consideration.get('debt'),
+                 consideration.get('chattels'),
+                 consideration.get('other'),
+                 json.dumps(consideration.get('charges', [])))
+            )
+
+        # Broker denormalization (Phase 5)
+        broker_data = rec.get('broker', {})
+        brokers = broker_data.get('brokers', [])
+        for broker in brokers:
+            broker_name = broker.get('brokerage') or broker.get('name', '')
+            broker_phone = broker.get('phone', '')
+            agents = broker.get('agents', [])
+            if broker_name or broker_phone or agents:
+                cursor = conn.execute(
+                    "INSERT INTO transaction_brokers (source_id, broker_name, phone) "
+                    "VALUES (?, ?, ?)",
+                    (source_id, broker_name, broker_phone)
+                )
+                broker_id = cursor.lastrowid
+                for agent_name in agents:
+                    if agent_name:
+                        conn.execute(
+                            "INSERT INTO transaction_broker_agents (broker_id, agent_name) "
+                            "VALUES (?, ?)",
+                            (broker_id, agent_name)
+                        )
+
+        # Party metadata (Phase 2)
+        for side in ['seller', 'buyer']:
+            side_data = rec.get(side, {})
+            trade_name = side_data.get('trade_name', '')
+            care_of = side_data.get('care_of') or ''
+            law_firms = side_data.get('law_firms', [])
+            companies = side_data.get('companies', [])
+            if trade_name or care_of or law_firms or companies:
+                conn.execute(
+                    "INSERT OR IGNORE INTO transaction_party_metadata "
+                    "(source_id, side, trade_name, care_of, law_firms_json, companies_json) "
+                    "VALUES (?, ?, ?, ?, ?, ?)",
+                    (source_id, side, trade_name, care_of,
+                     json.dumps(law_firms), json.dumps(companies))
+                )
 
         # Transaction parties
         for side in ['seller', 'buyer']:
@@ -345,35 +449,315 @@ def run_compiler(conn):
 
     # Insert properties
     prop_count = 0
+    prop_errors = 0
     for arn, pd in property_data.items():
-        # Load parcel geometry if available
-        parcel = read_parcel(arn)
-        parcel_geojson = json.dumps(parcel['geometry']) if parcel and parcel.get('geometry') else None
-        lat = parcel['centroid'][0] if parcel and parcel.get('centroid') else None
-        lng = parcel['centroid'][1] if parcel and parcel.get('centroid') else None
+        try:
+            # Load parcel geometry if available
+            parcel = read_parcel(arn)
+            parcel_geojson = json.dumps(parcel['geometry']) if parcel and parcel.get('geometry') else None
+            lat = parcel['centroid'][0] if parcel and parcel.get('centroid') else None
+            lng = parcel['centroid'][1] if parcel and parcel.get('centroid') else None
 
-        conn.execute(
-            "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
-            "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
-            "most_recent_sale_date, most_recent_sale_price, transaction_count, "
-            "primary_property_type, lat, lng, parcel_geojson) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
-             pd['acreage'], pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
-             pd['source_id'], pd['sale_date'], pd['sale_price'], pd['tx_count'],
-             pd['property_type'], lat, lng, parcel_geojson)
-        )
-        prop_count += 1
+            conn.execute(
+                "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
+                "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
+                "most_recent_sale_date, most_recent_sale_price, transaction_count, "
+                "primary_property_type, lat, lng, parcel_geojson) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
+                 pd['acreage'], pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
+                 pd['source_id'], pd['sale_date'], pd['sale_price'], pd['tx_count'],
+                 pd['property_type'], lat, lng, parcel_geojson)
+            )
+            prop_count += 1
+        except Exception as e:
+            prop_errors += 1
+            if prop_errors <= 5:
+                print(f'  WARNING: property {pd["id"]} (ARN {arn}): {e}')
+
+        if prop_count % 5000 == 0:
+            conn.commit()
+
     conn.commit()
     print(f'  Properties: {prop_count:,}')
+    if prop_errors:
+        print(f'  Property errors: {prop_errors:,}')
+
+    # ================================================================
+    # Pass 4: POIs — link to existing properties or create new ones
+    # ================================================================
+    osm_count = count_osm_records()
+    poi_count = 0
+    poi_new_props = 0
+
+    if osm_count > 0:
+        print(f'Pass 4: POIs ({osm_count:,} OSM records)...')
+
+        for poi_id, poi in iter_osm_records():
+            coords = poi.get('coords', {})
+            lat = coords.get('lat')
+            lng = coords.get('lng')
+            if not lat or not lng:
+                continue
+
+            arn = poi.get('arn')
+            property_id = None
+
+            if arn and not all(c == '0' for c in arn):
+                if arn in property_data:
+                    # Property exists from RT transactions — link POI to it
+                    property_id = property_data[arn]['id']
+                else:
+                    # New property from POI data (no transactions for this parcel)
+                    pid = registry.get_or_create_property_id(arn)
+                    parcel = read_parcel(arn)
+                    parcel_geojson = json.dumps(parcel['geometry']) if parcel and parcel.get('geometry') else None
+                    p_lat = parcel['centroid'][0] if parcel and parcel.get('centroid') else lat
+                    p_lng = parcel['centroid'][1] if parcel and parcel.get('centroid') else lng
+
+                    # Build display address from POI address fields
+                    addr = poi.get('address', {})
+                    parts = []
+                    if addr.get('housenumber'):
+                        parts.append(addr['housenumber'])
+                    if addr.get('street'):
+                        parts.append(addr['street'])
+                    display_address = ' '.join(parts)
+
+                    conn.execute(
+                        "INSERT OR IGNORE INTO properties (id, arn, display_address, city, region, postal, "
+                        "transaction_count, primary_property_type, lat, lng, parcel_geojson) "
+                        "VALUES (?, ?, ?, ?, '', '', 0, 'retail', ?, ?, ?)",
+                        (pid, arn, display_address, addr.get('city', ''),
+                         p_lat, p_lng, parcel_geojson)
+                    )
+
+                    property_data[arn] = {'id': pid, 'arn': arn}
+                    property_id = pid
+                    poi_new_props += 1
+
+            # Build display address for POI record
+            addr = poi.get('address', {})
+            poi_parts = []
+            if addr.get('housenumber'):
+                poi_parts.append(addr['housenumber'])
+            if addr.get('street'):
+                poi_parts.append(addr['street'])
+            poi_address = ' '.join(poi_parts)
+
+            building = poi.get('building') or {}
+            building_geojson = json.dumps(building['polygon']) if building.get('polygon') else None
+
+            conn.execute(
+                "INSERT OR IGNORE INTO pois (id, source, brand, category, name, lat, lng, "
+                "address, city, phone, website, property_id, arn, "
+                "cuisine, operator, facebook, instagram, drive_through, "
+                "osm_id, building_geojson, approx_sqft) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (poi_id, poi.get('source', 'osm'),
+                 poi.get('tracked_brand') or poi.get('brand', ''),
+                 poi.get('category', ''), poi.get('name', ''),
+                 lat, lng, poi_address, addr.get('city', ''),
+                 poi.get('phone', ''), poi.get('website', ''),
+                 property_id, arn,
+                 poi.get('cuisine', ''), poi.get('operator', ''),
+                 poi.get('facebook', ''), poi.get('instagram', ''),
+                 poi.get('drive_through', ''),
+                 poi.get('osm_id', ''), building_geojson,
+                 building.get('approx_sqft'))
+            )
+            poi_count += 1
+
+            if poi_count % 5000 == 0:
+                conn.commit()
+
+        conn.commit()
+        print(f'  POIs: {poi_count:,}')
+        print(f'  New POI-sourced properties: {poi_new_props:,}')
+    else:
+        print('Pass 4: POIs (no OSM data, skipping)')
+
+    # ================================================================
+    # Pass 5: GW Assessments — enrich properties with GW data
+    # ================================================================
+    gw_count = count_gw_records()
+    gw_assessment_count = 0
+    gw_new_props = 0
+    gw_enriched = 0
+
+    if gw_count > 0:
+        print(f'Pass 5: GW Assessments ({gw_count:,} records)...')
+
+        for gw_id, gw in iter_gw_records():
+            parcel_info = gw.get('parcel', {})
+            resolved_arn = parcel_info.get('resolved_arn')
+            gw_prop = gw.get('property', {})
+            gw_owner = gw.get('owner', {})
+
+            property_id = None
+
+            if resolved_arn and not all(c == '0' for c in resolved_arn):
+                if resolved_arn in property_data:
+                    # Existing property — enrich display fields (GW is authoritative)
+                    property_id = property_data[resolved_arn]['id']
+
+                    updates = []
+                    params = []
+
+                    owner_name = gw_owner.get('name', '')
+                    if owner_name:
+                        updates.append("current_owner_name = ?")
+                        params.append(owner_name)
+
+                    display_addr = gw_prop.get('display_address', '')
+                    if display_addr:
+                        updates.append("display_address = ?")
+                        params.append(display_addr)
+
+                    city = gw_prop.get('city', '')
+                    if city:
+                        updates.append("city = ?")
+                        params.append(city)
+
+                    postal = gw_prop.get('postal', '')
+                    if postal:
+                        updates.append("postal = ?")
+                        params.append(postal)
+
+                    # Municipality from first assessment
+                    assessments = gw.get('assessments', [])
+                    if assessments:
+                        municipality = assessments[0].get('municipality', '')
+                        if municipality:
+                            updates.append("gw_municipality = ?")
+                            params.append(municipality)
+
+                    if updates:
+                        params.append(property_id)
+                        conn.execute(
+                            f"UPDATE properties SET {', '.join(updates)} WHERE id = ?",
+                            params
+                        )
+                        gw_enriched += 1
+
+                else:
+                    # New property from GW data
+                    pid = registry.get_or_create_property_id(resolved_arn)
+                    parcel = read_parcel(resolved_arn)
+                    parcel_geojson = json.dumps(parcel['geometry']) if parcel and parcel.get('geometry') else None
+                    p_lat = parcel['centroid'][0] if parcel and parcel.get('centroid') else None
+                    p_lng = parcel['centroid'][1] if parcel and parcel.get('centroid') else None
+
+                    gw_municipality = ''
+                    gw_assessments_list = gw.get('assessments', [])
+                    if gw_assessments_list:
+                        gw_municipality = gw_assessments_list[0].get('municipality', '')
+
+                    conn.execute(
+                        "INSERT OR IGNORE INTO properties (id, arn, display_address, city, postal, "
+                        "current_owner_name, transaction_count, primary_property_type, "
+                        "gw_municipality, lat, lng, parcel_geojson) "
+                        "VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?, ?)",
+                        (pid, resolved_arn,
+                         gw_prop.get('display_address', ''),
+                         gw_prop.get('city', ''),
+                         gw_prop.get('postal', ''),
+                         gw_owner.get('name', ''),
+                         gw.get('registry', {}).get('property_type', '').lower() or 'commercial',
+                         gw_municipality,
+                         p_lat, p_lng, parcel_geojson)
+                    )
+
+                    property_data[resolved_arn] = {'id': pid, 'arn': resolved_arn}
+                    property_id = pid
+                    gw_new_props += 1
+
+            # Insert assessment records
+            for idx, assessment in enumerate(gw.get('assessments', [])):
+                a_id = gw_id if idx == 0 else f'{gw_id}_{idx + 1}'
+                arn_api = assessment.get('arn_api', '')
+
+                # Link to property via this assessment's ARN if primary didn't resolve
+                a_property_id = property_id
+                if not a_property_id and arn_api and arn_api in property_data:
+                    a_property_id = property_data[arn_api]['id']
+
+                quality = gw.get('quality', {})
+                registry = gw.get('registry', {})
+                conn.execute(
+                    "INSERT OR IGNORE INTO gw_assessments (id, gw_id, property_id, arn, pin, "
+                    "assessed_value, valuation_date, zoning, property_code, property_description, "
+                    "ownership_type, frontage_ft, depth_ft, site_area_sqft, acreage, "
+                    "owner_name, owner_mailing, legal_description, source_file, "
+                    "land_registry_status, registration_type, lro, municipality, "
+                    "has_mpac_data, is_active, address_parsed, parcel_resolved) "
+                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+                    "?, ?, ?, ?, ?, ?, ?, ?)",
+                    (a_id, gw_id, a_property_id, arn_api, gw.get('pin', ''),
+                     assessment.get('assessed_value'),
+                     assessment.get('valuation_date', ''),
+                     assessment.get('zoning', ''),
+                     assessment.get('property_code', ''),
+                     assessment.get('property_description', ''),
+                     registry.get('ownership_type', ''),
+                     assessment.get('frontage_ft'),
+                     assessment.get('depth_ft'),
+                     assessment.get('site_area_sqft'),
+                     assessment.get('acreage'),
+                     assessment.get('owner_names_mpac', ''),
+                     assessment.get('owner_mailing_address', ''),
+                     assessment.get('legal_description', ''),
+                     gw.get('source_file', ''),
+                     registry.get('land_registry_status', ''),
+                     registry.get('registration_type', ''),
+                     registry.get('lro', ''),
+                     assessment.get('municipality', ''),
+                     1 if quality.get('has_mpac_data') else 0,
+                     1 if quality.get('is_active') else 0,
+                     1 if quality.get('address_parsed') else 0,
+                     1 if quality.get('parcel_resolved') else 0)
+                )
+                gw_assessment_count += 1
+
+            # Insert sales history
+            sales_history = gw.get('sales_history', [])
+            for sale in sales_history:
+                conn.execute(
+                    "INSERT INTO gw_sales_history "
+                    "(gw_id, property_id, arn, sale_date, amount, sale_type, party_to, notes) "
+                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                    (gw_id, property_id,
+                     resolved_arn or '',
+                     sale.get('date', ''),
+                     sale.get('amount'),
+                     sale.get('type', ''),
+                     sale.get('party_to', ''),
+                     sale.get('notes', ''))
+                )
+
+            if gw_assessment_count % 200 == 0:
+                conn.commit()
+
+        conn.commit()
+        gw_sales_count = conn.execute("SELECT COUNT(*) FROM gw_sales_history").fetchone()[0]
+        print(f'  GW assessments: {gw_assessment_count:,}')
+        print(f'  GW sales history: {gw_sales_count:,}')
+        print(f'  Enriched existing properties: {gw_enriched:,}')
+        print(f'  New GW-sourced properties: {gw_new_props:,}')
+    else:
+        print('Pass 5: GW Assessments (no GW data, skipping)')
 
     # ================================================================
     # Rebuild FTS indexes
     # ================================================================
     print('Rebuilding FTS indexes...')
-    conn.execute("INSERT INTO properties_fts(properties_fts) VALUES('rebuild')")
-    conn.execute("INSERT INTO contacts_fts(contacts_fts) VALUES('rebuild')")
-    conn.execute("INSERT INTO groups_fts(groups_fts) VALUES('rebuild')")
+    fts_tables = ['properties_fts', 'contacts_fts', 'groups_fts', 'transactions_fts']
+    for fts in fts_tables:
+        try:
+            conn.execute(f"INSERT INTO {fts}({fts}) VALUES('rebuild')")
+            print(f'  {fts}: OK')
+        except Exception as e:
+            print(f'  {fts}: FAILED — {e}')
     conn.commit()
 
     # Re-enable FK checks
@@ -385,8 +769,11 @@ def run_compiler(conn):
     elapsed = time.time() - start
     print()
     print(f'Compiler done in {elapsed:.1f}s')
-    print(f'  Properties:    {prop_count:,}')
+    total_new_props = poi_new_props + gw_new_props
+    print(f'  Properties:    {prop_count + total_new_props:,} ({poi_new_props:,} POI, {gw_new_props:,} GW)')
     print(f'  Transactions:  {tx_count:,}')
     print(f'  Groups:        {len(group_data):,}')
     print(f'  Contacts:      {len(contact_data):,}')
     print(f'  Parties:       {party_count:,}')
+    print(f'  POIs:          {poi_count:,}')
+    print(f'  GW Assessments: {gw_assessment_count:,} ({gw_enriched:,} enriched)')

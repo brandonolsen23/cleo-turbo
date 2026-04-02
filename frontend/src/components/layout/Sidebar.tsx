@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Heading } from "@radix-ui/themes";
-import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck } from "@phosphor-icons/react";
+import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix } from "@phosphor-icons/react";
 
 const NAV_GROUPS = [
   {
@@ -25,6 +25,12 @@ const NAV_GROUPS = [
     items: [
       { path: "/pipeline", label: "Inspector", icon: FlowArrow },
       { path: "/data-quality", label: "Data Quality", icon: ShieldCheck },
+    ],
+  },
+  {
+    label: "System",
+    items: [
+      { path: "/admin", label: "Settings", icon: GearSix },
     ],
   },
 ];

@@ -26,6 +26,7 @@ import GroupDetailPage from "./pages/GroupDetailPage";
 import DealsPage from "./pages/DealsPage";
 import ListsPage from "./pages/ListsPage";
 import ListDetailPage from "./pages/ListDetailPage";
+import AdminPage from "./pages/AdminPage";
 
 // Lazy-loaded pages
 const MapPage = lazy(() => import("./pages/MapPage"));
@@ -100,6 +101,7 @@ export default function App() {
                 <Route path="/pipeline/:stage" element={<PipelineStagePage />} />
                 <Route path="/pipeline/:stage/*" element={<PipelineRecordPage />} />
                 <Route path="/data-quality" element={<DataQualityPage />} />
+                  <Route path="/admin" element={<AdminPage />} />
                 </Route>
               </Routes>
             </Suspense>

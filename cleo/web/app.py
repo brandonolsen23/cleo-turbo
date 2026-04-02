@@ -18,7 +18,10 @@ from .routes.deals import router as deals_router
 from .routes.lists import router as lists_router
 from .routes.search import router as search_router
 from .routes.pipeline import router as pipeline_router
+from .routes.pois import router as pois_router
+from .routes.gw import router as gw_router
 from .routes.data_quality import router as data_quality_router
+from .routes.admin import router as admin_router
 
 
 def create_app():
@@ -43,8 +46,11 @@ def create_app():
     app.include_router(deals_router, prefix="/api/deals", tags=["deals"])
     app.include_router(lists_router, prefix="/api/lists", tags=["lists"])
     app.include_router(search_router, prefix="/api/omnisearch", tags=["search"])
+    app.include_router(pois_router, prefix="/api/pois", tags=["pois"])
+    app.include_router(gw_router, prefix="/api/gw", tags=["gw"])
     app.include_router(pipeline_router, prefix="/api/pipeline", tags=["pipeline"])
     app.include_router(data_quality_router, prefix="/api/data-quality", tags=["data-quality"])
+    app.include_router(admin_router, prefix="/api/admin", tags=["admin"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')

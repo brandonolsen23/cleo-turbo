@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Heading, Text, Button } from "@radix-ui/themes";
+import { Heading, Text, Button, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { GroupBrowseItem, BrowseResponse } from "../types";
 
@@ -38,9 +38,9 @@ export default function GroupsPage() {
                   onClick={() => navigate(`/groups/${g.id}`)}>
                 <td className="px-4 py-2 font-medium">{g.display_name}</td>
                 <td className="px-4 py-2">
-                  <span className={`inline-block px-2 py-0.5 rounded text-[12px] ${g.status === 'engaged' ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
+                  <Badge size="1" variant="soft" color={g.status === 'engaged' ? 'jade' : 'gray'}>
                     {g.status}
-                  </span>
+                  </Badge>
                 </td>
                 <td className="px-4 py-2 text-right">{g.property_count}</td>
                 <td className="px-4 py-2 text-right">{g.contact_count}</td>
