@@ -1,13 +1,33 @@
 # Data — too large for git, lives on disk
 raw-data/
+clean-data/
+data/
+
+# RT pipeline data
 engines/rt/pipeline/extracted/
 engines/rt/pipeline/assembled/
 engines/rt/pipeline/classified/
 engines/rt/pipeline/addresses/
 engines/rt/pipeline/parcel_links/
-clean-data/
-data/cleo.db
-data/review-issues.json
+engines/rt/pipeline/geocoded/
+engines/rt/pipeline/geocode_queue.json
+engines/rt/pipeline/_validation_report.json
+engines/rt/pipeline/_stage_status.json
+
+# GW pipeline data
+engines/gw/pipeline/html/
+engines/gw/pipeline/parsed/
+engines/gw/pipeline/normalized/
+engines/gw/pipeline/parcel_links/
+engines/gw/watcher.stdout.log
+engines/gw/watcher.stderr.log
+
+# OSM data
+engines/osm/brands.csv
+
+# Credentials and tokens
+engines/rt/.agmaps_token
+*.token
 
 # Build artifacts
 frontend/node_modules/
@@ -22,3 +42,10 @@ __pycache__/
 
 # Environment
 frontend/.env
+
+# Claude Code
+.claude/
+
+# Misc
+*.old.tsx
+data-integrity-audit.docx
