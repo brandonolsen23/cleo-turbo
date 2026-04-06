@@ -136,47 +136,64 @@ export default function TransactionDetailPage() {
       </div>
 
       {/* Consideration */}
-      {txn.consideration_json && (
+      {txn.consideration && (txn.consideration.cash != null || txn.consideration.debt != null || txn.consideration.chattels != null || txn.consideration.other != null) && (
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
           <Text size="3" weight="medium" className="mb-3 block">Consideration</Text>
-          <div className="grid grid-cols-3 gap-4 text-[14px]">
-            {txn.consideration_json.cash != null && (
+          <div className="grid grid-cols-4 gap-4 text-[14px]">
+            {txn.consideration.cash != null && (
               <div>
                 <Text size="1" style={{ color: "var(--gray-9)" }}>Cash</Text>
-                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration_json.cash)}</Text>
+                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration.cash)}</Text>
               </div>
             )}
-            {txn.consideration_json.assumed_debt != null && (
+            {txn.consideration.debt != null && (
               <div>
                 <Text size="1" style={{ color: "var(--gray-9)" }}>Assumed Debt</Text>
-                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration_json.assumed_debt)}</Text>
+                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration.debt)}</Text>
               </div>
             )}
-            {txn.consideration_json.chattels != null && (
+            {txn.consideration.chattels != null && (
               <div>
                 <Text size="1" style={{ color: "var(--gray-9)" }}>Chattels</Text>
-                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration_json.chattels)}</Text>
+                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration.chattels)}</Text>
+              </div>
+            )}
+            {txn.consideration.other != null && (
+              <div>
+                <Text size="1" style={{ color: "var(--gray-9)" }}>Other</Text>
+                <Text size="2" weight="medium" className="block">{formatCurrency(txn.consideration.other)}</Text>
               </div>
             )}
           </div>
-          {txn.consideration_json.verbatim && (
-            <Text size="2" className="mt-3 block" style={{ color: "var(--gray-11)", whiteSpace: "pre-line" }}>
-              {txn.consideration_json.verbatim}
+          {txn.consideration.charges.length > 0 && (
+            <Text size="2" className="mt-3 block" style={{ color: "var(--gray-9)" }}>
+              Charges: {txn.consideration.charges.join(", ")}
             </Text>
           )}
         </div>
       )}
 
-      {/* Broker */}
-      {txn.broker_json && (txn.broker_json.name || txn.broker_json.phone) && (
+      {/* Brokers */}
+      {txn.brokers && txn.brokers.length > 0 && (
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-          <Text size="3" weight="medium" className="mb-2 block">Broker</Text>
-          {txn.broker_json.name && <Text size="2" className="block">{txn.broker_json.name}</Text>}
-          {txn.broker_json.phone && (
-            <a href={`tel:${txn.broker_json.phone}`} className="text-[13px] no-underline" style={{ color: "var(--accent-11)" }}>
-              {formatPhone(txn.broker_json.phone)}
-            </a>
-          )}
+          <Text size="3" weight="medium" className="mb-2 block">Brokers</Text>
+          <div className="flex flex-col gap-2">
+            {txn.brokers.map((b, i) => (
+              <div key={i}>
+                {b.broker_name && <Text size="2" weight="medium" className="block">{b.broker_name}</Text>}
+                {b.phone && (
+                  <a href={`tel:${b.phone}`} className="text-[13px] no-underline" style={{ color: "var(--accent-11)" }}>
+                    {formatPhone(b.phone)}
+                  </a>
+                )}
+                {b.agents.length > 0 && (
+                  <Text size="1" className="block mt-0.5" style={{ color: "var(--gray-9)" }}>
+                    Agents: {b.agents.join(", ")}
+                  </Text>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
@@ -199,16 +216,20 @@ export default function TransactionDetailPage() {
       )}
 
       {/* Photos */}
-      {txn.photos_json && txn.photos_json.length > 0 && (
-        <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-          <Text size="3" weight="medium" className="mb-3 block">Photos</Text>
-          <div className="grid grid-cols-3 gap-3">
-            {txn.photos_json.map((url, i) => (
-              <img key={i} src={url} alt={`Photo ${i + 1}`} className="rounded-lg w-full object-cover aspect-[4/3]" />
-            ))}
+      {txn.photos_json && (() => {
+        const photos = txn.photos_json as { street_photo_urls?: string[]; aerial_photo_urls?: string[] };
+        const allPhotos = [...(photos.street_photo_urls || []), ...(photos.aerial_photo_urls || [])];
+        return allPhotos.length > 0 ? (
+          <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+            <Text size="3" weight="medium" className="mb-3 block">Photos</Text>
+            <div className="grid grid-cols-3 gap-3">
+              {allPhotos.map((url, i) => (
+                <img key={i} src={url} alt={`Photo ${i + 1}`} className="rounded-lg w-full object-cover aspect-[4/3]" />
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        ) : null;
+      })()}
     </div>
   );
 }

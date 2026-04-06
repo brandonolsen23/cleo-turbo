@@ -70,7 +70,6 @@ def main():
     derived_tables = [
         "properties", "transactions", "contacts", "groups", "group_names",
         "transaction_parties", "transaction_mailing_addresses",
-        "transaction_party_metadata", "transaction_consideration",
         "transaction_brokers", "transaction_broker_agents",
         "pois", "gw_assessments", "gw_sales_history",
     ]
@@ -98,8 +97,6 @@ def main():
     # Satellite tables that reference transactions via source_id
     satellite_checks = [
         ("transaction_mailing_addresses", "source_id", "transactions", "source_id"),
-        ("transaction_party_metadata", "source_id", "transactions", "source_id"),
-        ("transaction_consideration", "source_id", "transactions", "source_id"),
         ("transaction_brokers", "source_id", "transactions", "source_id"),
     ]
 

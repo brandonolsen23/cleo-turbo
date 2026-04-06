@@ -82,7 +82,7 @@ Check each FTS table:
 
 This is the check that catches data being silently dropped. For each data source:
 
-**RT (Realtrack):** Read a sample file from `clean-data/rt/` and verify that every non-empty field in the JSON has a corresponding column in the database (either directly on `transactions` or in one of the satellite tables like `transaction_mailing_addresses`, `transaction_party_metadata`, `transaction_consideration`, `transaction_brokers`).
+**RT (Realtrack):** Read a sample file from `clean-data/rt/` and verify that every non-empty field in the JSON has a corresponding column in the database (either directly on `transactions` or in one of the satellite tables like `transaction_mailing_addresses`, `transaction_brokers`). Note: consideration and party metadata fields (trade_name, care_of, law_firms, companies) are stored as inline columns on the `transactions` table.
 
 **GW (GeoWarehouse):** Read a sample file from `clean-data/gw/` and verify that every field is captured — especially `sales_history` (→ `gw_sales_history`), `registry` fields (→ `gw_assessments`), and `quality` flags (→ `gw_assessments`).
 

@@ -84,8 +84,11 @@ export interface PropertyTransaction {
   buyer_parties: string[] | null;
   seller_phone: string | null;
   buyer_phone: string | null;
-  consideration_json: ConsiderationData | null;
-  broker_json: BrokerData | null;
+  cash: number | null;
+  debt: number | null;
+  chattels: number | null;
+  other_consideration: number | null;
+  charges_json: string[] | null;
   photos_json: { street_photo_urls?: string[]; aerial_photo_urls?: string[]; standalone_photo_url?: string } | null;
   parties: PropertyTransactionParty[];
 }
@@ -144,9 +147,20 @@ export interface TransactionDetail {
   location: string | null;
   surface_rights_only: boolean;
   more_info_url: string | null;
-  consideration_json: ConsiderationData | null;
-  broker_json: BrokerData | null;
-  photos_json: string[] | null;
+  cash: number | null;
+  debt: number | null;
+  chattels: number | null;
+  other_consideration: number | null;
+  charges_json: string[] | null;
+  seller_trade_name: string | null;
+  seller_care_of: string | null;
+  seller_law_firms_json: string[] | null;
+  seller_companies_json: string[] | null;
+  buyer_trade_name: string | null;
+  buyer_care_of: string | null;
+  buyer_law_firms_json: string[] | null;
+  buyer_companies_json: string[] | null;
+  photos_json: Record<string, unknown> | null;
   source_folder: string | null;
   created_at: string;
   parties: TransactionParty[];
@@ -190,22 +204,6 @@ export interface PartyMetadata {
   companies: string[];
 }
 
-export interface ConsiderationData {
-  cash?: number;
-  debt?: number;
-  assumed_debt?: number;
-  chattels?: number;
-  other?: number;
-  verbatim?: string;
-  charges?: string[];
-  chargees?: string[];
-}
-
-export interface BrokerData {
-  name?: string;
-  phone?: string;
-  brokers?: { name?: string; brokerage?: string; phone?: string; agents?: string[] }[];
-}
 
 // ============================================================
 // Contacts

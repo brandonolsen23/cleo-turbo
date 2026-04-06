@@ -270,7 +270,7 @@ If adding a new table, add the CREATE TABLE statement to `cleo/database/schema.p
 
 **Critical: know which category your table belongs to.**
 
-- **Derived tables** (rebuilt by the compiler from clean-data/): properties, transactions, contacts, groups, group_names, transaction_parties, transaction_mailing_addresses, transaction_party_metadata, transaction_consideration, transaction_brokers, transaction_broker_agents, pois, gw_assessments, gw_sales_history. These get dropped and recreated on every compiler run. Add your DROP to `drop_derived_tables()`.
+- **Derived tables** (rebuilt by the compiler from clean-data/): properties, transactions, contacts, groups, group_names, transaction_parties, transaction_mailing_addresses, transaction_brokers, transaction_broker_agents, pois, gw_assessments, gw_sales_history. These get dropped and recreated on every compiler run. Add your DROP to `drop_derived_tables()`.
 
 - **CRM tables** (persistent, never rebuilt): deals, lists, list_members, group_contacts, contact_notes, group_notes. These survive compiler runs. Never add a CRM table to `drop_derived_tables()`.
 
@@ -315,9 +315,9 @@ except (json.JSONDecodeError, TypeError):
     result["geojson"] = None
 ```
 
-Known JSON columns: `seller_parties` (list), `buyer_parties` (list), `consideration_json` (dict), `broker_json` (dict), `photos_json` (dict), `parcel_geojson` (GeoJSON geometry).
+Known JSON columns: `seller_parties` (list), `buyer_parties` (list), `photos_json` (dict), `charges_json` (list), `seller_law_firms_json` (list), `seller_companies_json` (list), `buyer_law_firms_json` (list), `buyer_companies_json` (list), `parcel_geojson` (GeoJSON geometry).
 
-Note: `consideration_json` and `broker_json` are legacy JSON blobs. Prefer the denormalized tables `transaction_consideration`, `transaction_brokers`, and `transaction_broker_agents` for structured access to consideration and broker data.
+Note: Consideration data (cash, debt, chattels, other_consideration) and party metadata (trade_name, care_of, law_firms, companies) are stored as inline columns on `transactions`. Broker data uses separate tables: `transaction_brokers` and `transaction_broker_agents`.
 
 ## Error Handling
 

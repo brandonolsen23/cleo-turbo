@@ -107,9 +107,31 @@ def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_curr
         raise HTTPException(status_code=404, detail="Transaction not found")
 
     result = dict(row)
-    for field in ["seller_parties", "buyer_parties", "consideration_json", "broker_json", "photos_json"]:
+
+    # Parse JSON fields
+    for field in ["seller_parties", "buyer_parties", "photos_json",
+                   "charges_json", "seller_law_firms_json", "seller_companies_json",
+                   "buyer_law_firms_json", "buyer_companies_json"]:
         if result.get(field):
             result[field] = json.loads(result[field])
+
+    # Build consideration object from inline columns
+    result["consideration"] = {
+        "cash": result.get("cash"),
+        "debt": result.get("debt"),
+        "chattels": result.get("chattels"),
+        "other": result.get("other_consideration"),
+        "charges": result.get("charges_json") or [],
+    }
+
+    # Build party metadata from inline columns
+    for side in ["seller", "buyer"]:
+        result[f"{side}_party_metadata"] = {
+            "trade_name": result.get(f"{side}_trade_name") or "",
+            "care_of": result.get(f"{side}_care_of") or "",
+            "law_firms": result.get(f"{side}_law_firms_json") or [],
+            "companies": result.get(f"{side}_companies_json") or [],
+        }
 
     # Get associated contacts/groups
     parties = db.execute(
@@ -124,20 +146,7 @@ def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_curr
     ).fetchall()
     result["parties"] = [dict(p) for p in parties]
 
-    # Structured consideration (denormalized)
-    cons_row = db.execute(
-        "SELECT * FROM transaction_consideration WHERE source_id = ?", (source_id,)
-    ).fetchone()
-    if cons_row:
-        cons = dict(cons_row)
-        cons["charges"] = json.loads(cons.pop("charges_json", "[]"))
-        for k in ["id", "source_id", "created_at"]:
-            cons.pop(k, None)
-        result["consideration"] = cons
-    else:
-        result["consideration"] = None
-
-    # Structured brokers (denormalized)
+    # Brokers (one-to-many: transaction → brokerages → agents)
     broker_rows = db.execute(
         "SELECT * FROM transaction_brokers WHERE source_id = ? ORDER BY id", (source_id,)
     ).fetchall()
@@ -155,26 +164,12 @@ def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_curr
         })
     result["brokers"] = brokers_list
 
-    # Mailing addresses
+    # Mailing addresses (one-per-side, separate table for 14 parsed address fields)
     for side in ["seller", "buyer"]:
         addr = db.execute(
             "SELECT * FROM transaction_mailing_addresses WHERE source_id = ? AND side = ?",
             (source_id, side)
         ).fetchone()
         result[f"{side}_mailing_address"] = dict(addr) if addr else None
-
-    # Party metadata
-    for side in ["seller", "buyer"]:
-        meta = db.execute(
-            "SELECT * FROM transaction_party_metadata WHERE source_id = ? AND side = ?",
-            (source_id, side)
-        ).fetchone()
-        if meta:
-            meta_dict = dict(meta)
-            meta_dict["law_firms"] = json.loads(meta_dict.pop("law_firms_json", "[]"))
-            meta_dict["companies"] = json.loads(meta_dict.pop("companies_json", "[]"))
-            result[f"{side}_party_metadata"] = meta_dict
-        else:
-            result[f"{side}_party_metadata"] = None
 
     return result

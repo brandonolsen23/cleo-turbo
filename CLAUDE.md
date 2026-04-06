@@ -47,8 +47,7 @@ The database has two categories of tables. Getting this wrong will destroy user 
 
 **Derived tables** (rebuilt by the compiler from clean-data/):
 properties, transactions, contacts, groups, group_names, transaction_parties,
-transaction_mailing_addresses, transaction_party_metadata,
-transaction_consideration, transaction_brokers, transaction_broker_agents,
+transaction_mailing_addresses, transaction_brokers, transaction_broker_agents,
 pois, gw_assessments, gw_sales_history
 
 **CRM tables** (persistent, NEVER rebuilt or truncated):

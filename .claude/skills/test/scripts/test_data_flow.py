@@ -127,17 +127,17 @@ def trace_rt_record(conn, source_file):
         else:
             fail(f"more_info_url: present in source but NULL in DB")
 
-    # Consideration (satellite table)
+    # Consideration (inline columns on transactions)
     source_consideration = record.get("consideration", {})
     if source_consideration:
-        cons_rows = conn.execute(
-            "SELECT COUNT(*) FROM transaction_consideration WHERE source_id = ?",
+        cons_row = conn.execute(
+            "SELECT cash, debt, chattels, other_consideration FROM transactions WHERE source_id = ?",
             (source_id,)
-        ).fetchone()[0]
-        if cons_rows > 0:
-            ok(f"consideration: {cons_rows} rows in satellite table")
+        ).fetchone()
+        if cons_row and any(v is not None for v in cons_row):
+            ok(f"consideration: inline columns populated (cash={cons_row[0]}, debt={cons_row[1]})")
         else:
-            warn(f"consideration: data in source but 0 rows in transaction_consideration")
+            warn(f"consideration: data in source but no inline values in transactions")
 
     # Brokers (satellite table)
     source_brokers = record.get("broker", {}).get("brokers", [])

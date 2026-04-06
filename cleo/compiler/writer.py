@@ -293,15 +293,33 @@ def run_compiler(conn):
         seller_parties = [p.get('name', '') for p in rec.get('seller', {}).get('parties', [])]
         buyer_parties = [p.get('name', '') for p in rec.get('buyer', {}).get('parties', [])]
 
+        # Consideration (inline on transaction)
+        consideration = rec.get('consideration', {})
+
+        # Party metadata (inline on transaction, per side)
+        seller_data = rec.get('seller', {})
+        buyer_data = rec.get('buyer', {})
+        seller_care_of_raw = seller_data.get('care_of') or ''
+        buyer_care_of_raw = buyer_data.get('care_of') or ''
+        seller_care_of = seller_care_of_raw.get('text', '') if isinstance(seller_care_of_raw, dict) else (seller_care_of_raw or '')
+        buyer_care_of = buyer_care_of_raw.get('text', '') if isinstance(buyer_care_of_raw, dict) else (buyer_care_of_raw or '')
+
         conn.execute(
             "INSERT OR IGNORE INTO transactions (source_id, property_id, arn, sale_date, sale_price, "
             "transaction_note, display_address, city, region, postal, seller_parties, buyer_parties, "
             "seller_phone, buyer_phone, description, acreage, pin, legal_description, "
             "pin_display, arn_display, pin_multiple, parcel_method, location, surface_rights_only, "
             "more_info_url, "
-            "consideration_json, broker_json, photos_json, source_folder) "
+            "cash, debt, chattels, other_consideration, charges_json, "
+            "seller_trade_name, seller_care_of, seller_law_firms_json, seller_companies_json, "
+            "buyer_trade_name, buyer_care_of, buyer_law_firms_json, buyer_companies_json, "
+            "photos_json, source_folder) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
-            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "?, ?, ?, ?, ?, ?, ?, "
+            "?, ?, ?, ?, ?, "
+            "?, ?, ?, ?, "
+            "?, ?, ?, ?, "
+            "?, ?)",
             (source_id, property_id, arn,
              tx.get('sale_date'), tx.get('sale_price'), tx.get('transaction_note', ''),
              display_address, tx.get('city', ''), tx.get('region', ''), prop.get('postal', ''),
@@ -316,8 +334,19 @@ def run_compiler(conn):
              site.get('location', ''),
              1 if site.get('surface_rights_only') else 0,
              rec.get('description', {}).get('more_info_url', ''),
-             json.dumps(rec.get('consideration', {})),
-             json.dumps(rec.get('broker', {})),
+             consideration.get('cash'),
+             consideration.get('debt'),
+             consideration.get('chattels'),
+             consideration.get('other'),
+             json.dumps(consideration.get('charges', [])),
+             seller_data.get('trade_name', ''),
+             seller_care_of,
+             json.dumps(seller_data.get('law_firms', [])),
+             json.dumps(seller_data.get('companies', [])),
+             buyer_data.get('trade_name', ''),
+             buyer_care_of,
+             json.dumps(buyer_data.get('law_firms', [])),
+             json.dumps(buyer_data.get('companies', [])),
              json.dumps(rec.get('photos', {})),
              rec.get('source_folder', ''))
         )
@@ -348,22 +377,7 @@ def run_compiler(conn):
                      addr.get('geocode_string', ''))
                 )
 
-        # Consideration denormalization (Phase 5)
-        consideration = rec.get('consideration', {})
-        if consideration and any(consideration.get(k) for k in ['cash', 'debt', 'chattels', 'other', 'charges']):
-            conn.execute(
-                "INSERT OR IGNORE INTO transaction_consideration "
-                "(source_id, cash, debt, chattels, other, charges_json) "
-                "VALUES (?, ?, ?, ?, ?, ?)",
-                (source_id,
-                 consideration.get('cash'),
-                 consideration.get('debt'),
-                 consideration.get('chattels'),
-                 consideration.get('other'),
-                 json.dumps(consideration.get('charges', [])))
-            )
-
-        # Broker denormalization (Phase 5)
+        # Brokers (one-to-many: transaction → brokerages → agents)
         broker_data = rec.get('broker', {})
         brokers = broker_data.get('brokers', [])
         for broker in brokers:
@@ -384,23 +398,6 @@ def run_compiler(conn):
                             "VALUES (?, ?)",
                             (broker_id, agent_name)
                         )
-
-        # Party metadata (Phase 2)
-        for side in ['seller', 'buyer']:
-            side_data = rec.get(side, {})
-            trade_name = side_data.get('trade_name', '')
-            care_of_raw = side_data.get('care_of') or ''
-            care_of = care_of_raw.get('text', '') if isinstance(care_of_raw, dict) else (care_of_raw or '')
-            law_firms = side_data.get('law_firms', [])
-            companies = side_data.get('companies', [])
-            if trade_name or care_of or law_firms or companies:
-                conn.execute(
-                    "INSERT OR IGNORE INTO transaction_party_metadata "
-                    "(source_id, side, trade_name, care_of, law_firms_json, companies_json) "
-                    "VALUES (?, ?, ?, ?, ?, ?)",
-                    (source_id, side, trade_name, care_of,
-                     json.dumps(law_firms), json.dumps(companies))
-                )
 
         # Transaction parties
         for side in ['seller', 'buyer']:

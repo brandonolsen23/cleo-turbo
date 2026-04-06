@@ -227,11 +227,12 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
     if result.get("parcel_geojson"):
         result["parcel_geojson"] = json.loads(result["parcel_geojson"])
 
-    # Transaction history (include consideration, broker, photos for detail view)
+    # Transaction history
     txns = db.execute(
         "SELECT source_id, sale_date, sale_price, display_address, transaction_note, "
         "seller_parties, buyer_parties, seller_phone, buyer_phone, "
-        "consideration_json, broker_json, photos_json "
+        "cash, debt, chattels, other_consideration, charges_json, "
+        "photos_json "
         "FROM transactions WHERE property_id = ? ORDER BY sale_date DESC",
         (property_id,)
     ).fetchall()
@@ -240,9 +241,8 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
         td = dict(t)
         td["seller_parties"] = json.loads(td.get("seller_parties") or "[]")
         td["buyer_parties"] = json.loads(td.get("buyer_parties") or "[]")
-        td["consideration_json"] = json.loads(td.get("consideration_json") or "{}")
-        td["broker_json"] = json.loads(td.get("broker_json") or "{}")
         td["photos_json"] = json.loads(td.get("photos_json") or "{}")
+        td["charges_json"] = json.loads(td.get("charges_json") or "[]")
 
         # Contacts linked to this transaction via transaction_parties
         parties = db.execute(

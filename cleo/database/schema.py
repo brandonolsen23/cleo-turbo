@@ -68,8 +68,19 @@ CREATE TABLE IF NOT EXISTS transactions (
     location         TEXT,
     surface_rights_only INTEGER DEFAULT 0,
     more_info_url    TEXT,
-    consideration_json TEXT,
-    broker_json     TEXT,
+    cash             INTEGER,
+    debt             INTEGER,
+    chattels         INTEGER,
+    other_consideration INTEGER,
+    charges_json     TEXT,
+    seller_trade_name TEXT,
+    seller_care_of   TEXT,
+    seller_law_firms_json TEXT,
+    seller_companies_json TEXT,
+    buyer_trade_name TEXT,
+    buyer_care_of    TEXT,
+    buyer_law_firms_json TEXT,
+    buyer_companies_json TEXT,
     photos_json     TEXT,
     source_folder   TEXT,
     created_at      TEXT DEFAULT (datetime('now'))
@@ -150,27 +161,6 @@ CREATE TABLE IF NOT EXISTS transaction_mailing_addresses (
     UNIQUE(source_id, side)
 );
 
-CREATE TABLE IF NOT EXISTS transaction_party_metadata (
-    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    source_id       TEXT NOT NULL REFERENCES transactions(source_id),
-    side            TEXT NOT NULL,
-    trade_name      TEXT,
-    care_of         TEXT,
-    law_firms_json  TEXT,
-    companies_json  TEXT,
-    UNIQUE(source_id, side)
-);
-
-CREATE TABLE IF NOT EXISTS transaction_consideration (
-    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    source_id       TEXT NOT NULL UNIQUE REFERENCES transactions(source_id),
-    cash            INTEGER,
-    debt            INTEGER,
-    chattels        INTEGER,
-    other           INTEGER,
-    charges_json    TEXT,
-    created_at      TEXT DEFAULT (datetime('now'))
-);
 
 CREATE TABLE IF NOT EXISTS transaction_brokers (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -265,9 +255,7 @@ CREATE INDEX IF NOT EXISTS idx_transaction_parties_contact ON transaction_partie
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_group ON transaction_parties(group_id);
 CREATE INDEX IF NOT EXISTS idx_tx_addr_source ON transaction_mailing_addresses(source_id);
 CREATE INDEX IF NOT EXISTS idx_tx_addr_city ON transaction_mailing_addresses(city);
-CREATE INDEX IF NOT EXISTS idx_tx_meta_source ON transaction_party_metadata(source_id);
-CREATE INDEX IF NOT EXISTS idx_tx_cons_source ON transaction_consideration(source_id);
-CREATE INDEX IF NOT EXISTS idx_tx_cons_cash ON transaction_consideration(cash);
+CREATE INDEX IF NOT EXISTS idx_tx_cash ON transactions(cash);
 CREATE INDEX IF NOT EXISTS idx_tx_broker_source ON transaction_brokers(source_id);
 CREATE INDEX IF NOT EXISTS idx_tx_agent_broker ON transaction_broker_agents(broker_id);
 CREATE INDEX IF NOT EXISTS idx_pois_property ON pois(property_id);
@@ -465,9 +453,7 @@ def drop_derived_tables(conn):
         DROP TABLE IF EXISTS pois;
         DROP TABLE IF EXISTS transaction_broker_agents;
         DROP TABLE IF EXISTS transaction_brokers;
-        DROP TABLE IF EXISTS transaction_consideration;
         DROP TABLE IF EXISTS transaction_mailing_addresses;
-        DROP TABLE IF EXISTS transaction_party_metadata;
         DROP TABLE IF EXISTS transaction_parties;
         DROP TABLE IF EXISTS group_names;
         DROP TABLE IF EXISTS transactions;

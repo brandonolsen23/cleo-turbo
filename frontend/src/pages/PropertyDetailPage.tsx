@@ -136,9 +136,9 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
   // Photos (already parsed by API)
   const photos = t.photos_json?.street_photo_urls || [];
 
-  // Consideration and broker (already parsed by API)
-  const consideration = t.consideration_json;
-  const broker = t.broker_json;
+  // Consideration (inline columns) and charges
+  const hasConsideration = t.cash != null || t.debt != null || t.chattels != null || t.other_consideration != null;
+  const charges = t.charges_json || [];
 
   // Contacts from transaction_parties
   const buyerContacts = (t.parties || []).filter(p => p.side === "buyer" && p.contact_name);
@@ -250,39 +250,26 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
           </div>
 
           {/* Consideration breakdown */}
-          {consideration && (consideration.cash || consideration.debt || consideration.chattels) && (
+          {hasConsideration && (
             <div className="mt-4">
               <Text size="1" weight="medium" style={{ color: "var(--gray-9)" }} className="uppercase tracking-wider block mb-2">
                 Consideration
               </Text>
               <div className="flex gap-4 text-[13px]">
-                {consideration.cash ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Cash</Text><Text size="2" className="block">{formatCurrency(consideration.cash)}</Text></div> : null}
-                {consideration.debt ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Assumed Debt</Text><Text size="2" className="block">{formatCurrency(consideration.debt)}</Text></div> : null}
-                {consideration.assumed_debt ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Assumed Debt</Text><Text size="2" className="block">{formatCurrency(consideration.assumed_debt)}</Text></div> : null}
-                {consideration.chattels ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Chattels</Text><Text size="2" className="block">{formatCurrency(consideration.chattels)}</Text></div> : null}
+                {t.cash != null ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Cash</Text><Text size="2" className="block">{formatCurrency(t.cash)}</Text></div> : null}
+                {t.debt != null ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Assumed Debt</Text><Text size="2" className="block">{formatCurrency(t.debt)}</Text></div> : null}
+                {t.chattels != null ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Chattels</Text><Text size="2" className="block">{formatCurrency(t.chattels)}</Text></div> : null}
+                {t.other_consideration != null ? <div><Text size="1" style={{ color: "var(--gray-9)" }}>Other</Text><Text size="2" className="block">{formatCurrency(t.other_consideration)}</Text></div> : null}
               </div>
-              {(consideration.chargees?.length ?? 0) > 0 && (
+              {charges.length > 0 && (
                 <Text size="1" className="mt-1 block" style={{ color: "var(--gray-9)" }}>
-                  Chargees: {consideration.chargees!.join(", ")}
+                  Charges: {charges.join(", ")}
                 </Text>
               )}
             </div>
           )}
 
-          {/* Broker */}
-          {(broker?.brokers?.length ?? 0) > 0 && (
-            <div className="mt-4">
-              <Text size="1" weight="medium" style={{ color: "var(--gray-9)" }} className="uppercase tracking-wider block mb-1">
-                Broker
-              </Text>
-              {broker!.brokers!.map((b: any, i: number) => (
-                <div key={i} className="text-[13px]">
-                  <Text size="2">{b.name || b.brokerage || "Unknown"}</Text>
-                  {b.phone && <Text size="1" className="ml-2" style={{ color: "var(--gray-9)" }}>{formatPhone(b.phone)}</Text>}
-                </div>
-              ))}
-            </div>
-          )}
+          {/* Broker info is on the full transaction detail page */}
 
           {/* Transaction note */}
           {t.transaction_note && (

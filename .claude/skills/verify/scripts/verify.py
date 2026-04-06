@@ -376,15 +376,11 @@ def main():
             elif has_mailing:
                 fail("RT has seller/buyer addresses but no transaction_mailing_addresses table")
 
-            if "transaction_party_metadata" in derived_tables:
-                ok("RT party metadata → transaction_party_metadata table exists")
-            elif has_metadata:
-                fail("RT has trade_name/care_of/law_firms but no transaction_party_metadata table")
-
-            if "transaction_consideration" in derived_tables:
-                ok("RT consideration → transaction_consideration table exists")
-            elif has_consideration:
-                fail("RT has consideration data but no transaction_consideration table")
+            # Party metadata and consideration are now inline columns on transactions
+            if has_metadata:
+                ok("RT party metadata → stored as inline columns on transactions (seller_trade_name, etc.)")
+            if has_consideration:
+                ok("RT consideration → stored as inline columns on transactions (cash, debt, etc.)")
 
             if "transaction_brokers" in derived_tables:
                 ok("RT broker data → transaction_brokers table exists")

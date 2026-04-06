@@ -134,7 +134,7 @@ For RT records:
 - `seller.parties[0].name` → `transactions.seller_parties` (JSON) → API `seller_parties[0].name`
 - `site.pin` → `transactions.pin` → API `pin`
 - `description.description` → `transactions.description` → API `description`
-- `consideration` → `transaction_consideration` rows → API `consideration` array
+- `consideration` → `transactions` inline columns (cash, debt, chattels, other_consideration, charges_json) → API `consideration` object
 - `broker.brokers` → `transaction_brokers` rows → API `brokers` array
 
 For GW records:

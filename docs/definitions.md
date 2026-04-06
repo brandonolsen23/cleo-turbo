@@ -58,8 +58,6 @@ SQLite database that the app queries. Contains both derived tables (rebuilt by C
 | `groups` | GRP_ ID (anchored to normalized name) | Every company seen across all transactions. Status: **pool** or **engaged** |
 | `transaction_parties` | CON_ ID + RT source_id | Who appeared on what transaction, on which side, under which group |
 | `transaction_mailing_addresses` | source_id + side | Seller/buyer mailing addresses from RT (display, components, city, province, postal) |
-| `transaction_party_metadata` | source_id + side | Seller/buyer trade_name, care_of, law_firms, companies from RT |
-| `transaction_consideration` | source_id | Denormalized consideration breakdown (cash, debt, chattels, other, charges) |
 | `transaction_brokers` | source_id | Brokerages involved in the transaction |
 | `transaction_broker_agents` | broker_id | Individual agents within a brokerage |
 | `pois` | OSM/BR source_id | Brand locations from OSM and store locators |
