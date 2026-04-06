@@ -27,6 +27,7 @@ export interface PropertyBrowseItem {
   region: string;
   most_recent_sale_date: string | null;
   most_recent_sale_price: number | null;
+  most_recent_sale_source: string | null;
   current_owner_name: string | null;
   current_owner_group_id: string | null;
   transaction_count: number;
@@ -48,6 +49,7 @@ export interface PropertyDetail {
   most_recent_source_id: string | null;
   most_recent_sale_date: string | null;
   most_recent_sale_price: number | null;
+  most_recent_sale_source: string | null;
   transaction_count: number;
   primary_property_type: string | null;
   gw_municipality: string | null;
@@ -297,6 +299,7 @@ export interface GroupProperty {
   city: string;
   most_recent_sale_date: string | null;
   most_recent_sale_price: number | null;
+  most_recent_sale_source: string | null;
 }
 
 export interface GroupKnownName {

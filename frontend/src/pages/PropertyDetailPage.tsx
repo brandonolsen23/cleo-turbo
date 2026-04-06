@@ -459,7 +459,14 @@ function PropertyDetailPageInner() {
       {/* ============================================================ */}
       <div className="grid grid-cols-4 gap-4">
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
-          <Text size="1" style={{ color: "var(--gray-9)" }}>Last Sale Price</Text>
+          <div className="flex items-center gap-2">
+            <Text size="1" style={{ color: "var(--gray-9)" }}>Last Sale Price</Text>
+            {prop.most_recent_sale_source && (
+              <Badge size="1" variant="soft" color={prop.most_recent_sale_source === "RT" ? "blue" : "amber"}>
+                {prop.most_recent_sale_source}
+              </Badge>
+            )}
+          </div>
           <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
             {formatCurrency(prop.most_recent_sale_price)}
           </Text>

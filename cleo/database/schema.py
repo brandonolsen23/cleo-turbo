@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS properties (
     most_recent_source_id TEXT,
     most_recent_sale_date TEXT,
     most_recent_sale_price INTEGER,
+    most_recent_sale_source TEXT,
     transaction_count INTEGER DEFAULT 0,
     primary_property_type TEXT,
     gw_municipality  TEXT,

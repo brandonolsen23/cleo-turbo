@@ -459,12 +459,12 @@ def run_compiler(conn):
             conn.execute(
                 "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
                 "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
-                "most_recent_sale_date, most_recent_sale_price, transaction_count, "
+                "most_recent_sale_date, most_recent_sale_price, most_recent_sale_source, transaction_count, "
                 "primary_property_type, lat, lng, parcel_geojson) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
                  pd['acreage'], pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
-                 pd['source_id'], pd['sale_date'], pd['sale_price'], pd['tx_count'],
+                 pd['source_id'], pd['sale_date'], pd['sale_price'], 'RT', pd['tx_count'],
                  pd['property_type'], lat, lng, parcel_geojson)
             )
             prop_count += 1
@@ -742,7 +742,8 @@ def run_compiler(conn):
                     gw_date = most_recent['date']
                     gw_amount = most_recent['amount']
                     conn.execute(
-                        "UPDATE properties SET most_recent_sale_price = ?, most_recent_sale_date = ? "
+                        "UPDATE properties SET most_recent_sale_price = ?, most_recent_sale_date = ?, "
+                        "most_recent_sale_source = 'GW' "
                         "WHERE id = ? AND (most_recent_sale_date IS NULL OR most_recent_sale_date < ?)",
                         (gw_amount, gw_date, property_id, gw_date)
                     )
