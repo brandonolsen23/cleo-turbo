@@ -125,13 +125,12 @@ def main():
     if table_counts.get("transaction_broker_agents", 0) > 0 and table_counts.get("transaction_brokers", 0) > 0:
         orphans = conn.execute(
             "SELECT COUNT(*) FROM transaction_broker_agents "
-            "WHERE source_id NOT IN (SELECT source_id FROM transaction_brokers)"
+            "WHERE broker_id NOT IN (SELECT id FROM transaction_brokers)"
         ).fetchone()[0]
         if orphans == 0:
-            ok("transaction_broker_agents → transaction_brokers: no orphans")
+            ok("transaction_broker_agents.broker_id → transaction_brokers.id: no orphans")
         else:
-            # Agents might legitimately reference source_ids not broker source_ids
-            warn(f"transaction_broker_agents: {orphans} rows with source_id not in transaction_brokers")
+            warn(f"transaction_broker_agents: {orphans} rows with broker_id not in transaction_brokers")
 
     # GW sales history references gw_assessments
     if table_counts.get("gw_sales_history", 0) > 0 and table_counts.get("gw_assessments", 0) > 0:

@@ -82,14 +82,19 @@ def trace_rt_record(conn, source_file):
         else:
             fail(f"sale_price mismatch: source={source_price}, DB={db_price}")
 
-    # PIN
+    # PIN (source may be a dict with original/display/api_format or a plain string)
     source_pin = record.get("site", {}).get("pin")
     if source_pin:
         db_pin = tx.get("pin")
-        if source_pin == db_pin:
-            ok(f"pin: {source_pin} → DB matches")
+        # Handle dict-style pin from newer clean-data format
+        if isinstance(source_pin, dict):
+            source_pin_val = source_pin.get("api_format") or source_pin.get("original", "")
         else:
-            fail(f"pin mismatch: source={source_pin}, DB={db_pin}")
+            source_pin_val = source_pin
+        if source_pin_val == db_pin:
+            ok(f"pin: {source_pin_val} → DB matches")
+        else:
+            fail(f"pin mismatch: source={source_pin_val}, DB={db_pin}")
 
     # Description
     source_desc = record.get("description", {}).get("description")
@@ -166,18 +171,31 @@ def trace_gw_record(conn, source_file):
     with open(source_file) as f:
         record = json.load(f)
 
-    arn = record.get("arn", "") or source_file.stem
+    gw_id = record.get("source_id", "") or source_file.stem
+    # ARN lives in parcel.resolved_arn or assessments[0].arn_api
+    arn = record.get("parcel", {}).get("resolved_arn", "")
+    if not arn:
+        assessments = record.get("assessments", [])
+        if assessments:
+            arn = assessments[0].get("arn_api", "")
 
     print(f"\n  Tracing GW record: {source_file.name}")
-    print(f"    arn={arn}")
+    print(f"    gw_id={gw_id}, arn={arn}")
 
-    # Find in gw_assessments
+    # Find in gw_assessments by gw_id
     row = conn.execute(
-        "SELECT * FROM gw_assessments WHERE arn = ?", (arn,)
+        "SELECT * FROM gw_assessments WHERE gw_id = ?", (gw_id,)
     ).fetchone()
 
     if not row:
-        warn(f"GW record {arn} not found in gw_assessments table")
+        # Try by ARN
+        if arn:
+            row = conn.execute(
+                "SELECT * FROM gw_assessments WHERE arn = ?", (arn,)
+            ).fetchone()
+
+    if not row:
+        warn(f"GW record {gw_id} (arn={arn}) not found in gw_assessments table")
         return
 
     gw = dict(row)

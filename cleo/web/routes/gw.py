@@ -34,7 +34,7 @@ def browse_assessments(
     rows = db.execute(
         f"SELECT id, gw_id, property_id, arn, pin, assessed_value, valuation_date, "
         f"zoning, property_code, property_description, ownership_type, "
-        f"frontage_ft, depth_ft, site_area_sqft, acreage, owner_name, "
+        f"frontage_ft, depth_ft, site_area_sqft, acreage, owner_name, owner_mailing, "
         f"land_registry_status, registration_type, lro, municipality, "
         f"has_mpac_data, is_active, address_parsed, parcel_resolved, "
         f"legal_description "

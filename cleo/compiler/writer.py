@@ -389,7 +389,8 @@ def run_compiler(conn):
         for side in ['seller', 'buyer']:
             side_data = rec.get(side, {})
             trade_name = side_data.get('trade_name', '')
-            care_of = side_data.get('care_of') or ''
+            care_of_raw = side_data.get('care_of') or ''
+            care_of = care_of_raw.get('text', '') if isinstance(care_of_raw, dict) else (care_of_raw or '')
             law_firms = side_data.get('law_firms', [])
             companies = side_data.get('companies', [])
             if trade_name or care_of or law_firms or companies:
@@ -683,7 +684,7 @@ def run_compiler(conn):
                     a_property_id = property_data[arn_api]['id']
 
                 quality = gw.get('quality', {})
-                registry = gw.get('registry', {})
+                gw_registry = gw.get('registry', {})
                 conn.execute(
                     "INSERT OR IGNORE INTO gw_assessments (id, gw_id, property_id, arn, pin, "
                     "assessed_value, valuation_date, zoning, property_code, property_description, "
@@ -699,7 +700,7 @@ def run_compiler(conn):
                      assessment.get('zoning', ''),
                      assessment.get('property_code', ''),
                      assessment.get('property_description', ''),
-                     registry.get('ownership_type', ''),
+                     gw_registry.get('ownership_type', ''),
                      assessment.get('frontage_ft'),
                      assessment.get('depth_ft'),
                      assessment.get('site_area_sqft'),
@@ -708,9 +709,9 @@ def run_compiler(conn):
                      assessment.get('owner_mailing_address', ''),
                      assessment.get('legal_description', ''),
                      gw.get('source_file', ''),
-                     registry.get('land_registry_status', ''),
-                     registry.get('registration_type', ''),
-                     registry.get('lro', ''),
+                     gw_registry.get('land_registry_status', ''),
+                     gw_registry.get('registration_type', ''),
+                     gw_registry.get('lro', ''),
                      assessment.get('municipality', ''),
                      1 if quality.get('has_mpac_data') else 0,
                      1 if quality.get('is_active') else 0,
