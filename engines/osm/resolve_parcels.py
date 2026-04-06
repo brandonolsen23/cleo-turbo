@@ -51,6 +51,8 @@ def is_pending(poi, retry):
     """Check if a POI still needs resolution."""
     if 'parcel_status' not in poi:
         return True
+    if poi['parcel_status'] == 'mismatched':
+        return True  # Always re-resolve mismatched POIs (point outside assigned parcel)
     if retry and poi['parcel_status'] in ('unresolved', 'no_parcel'):
         return True
     if retry and isinstance(poi.get('parcel_status'), str) and poi['parcel_status'].startswith('error'):

@@ -169,16 +169,20 @@ class AgMapsClient:
         if not features:
             return None
 
-        if len(features) == 1:
-            return self._feature_to_parcel(features[0])
-
-        # Multiple parcels — find which one actually contains the point
+        # Always validate with point-in-polygon, even for single results.
+        # A bounding-box query can return a parcel that merely overlaps the
+        # search envelope without actually containing the point.
         for feature in features:
             rings = feature.get("geometry", {}).get("rings", [])
             if rings and _point_in_polygon(lng, lat, rings[0]):
                 return self._feature_to_parcel(feature)
 
-        # Point not inside any polygon (edge case) — pick closest centroid
+        # Point not inside any returned polygon — retry with a larger buffer
+        # to catch the correct parcel that the small bbox may have missed.
+        if buffer_deg < 0.001:
+            return self.query_by_point(lat, lng, buffer_deg=buffer_deg * 3)
+
+        # After expanding, still no PIP match — pick closest centroid as fallback
         best = None
         best_dist = float('inf')
         for feature in features:
