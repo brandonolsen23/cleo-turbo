@@ -733,6 +733,20 @@ def run_compiler(conn):
                      sale.get('notes', ''))
                 )
 
+            # Update property's most_recent_sale_price/date from GW sales history
+            # if the GW sale is newer than what's already there (or nothing is there)
+            if property_id and sales_history:
+                dated_sales = [s for s in sales_history if s.get('date') and s.get('amount')]
+                if dated_sales:
+                    most_recent = max(dated_sales, key=lambda s: s['date'])
+                    gw_date = most_recent['date']
+                    gw_amount = most_recent['amount']
+                    conn.execute(
+                        "UPDATE properties SET most_recent_sale_price = ?, most_recent_sale_date = ? "
+                        "WHERE id = ? AND (most_recent_sale_date IS NULL OR most_recent_sale_date < ?)",
+                        (gw_amount, gw_date, property_id, gw_date)
+                    )
+
             if gw_assessment_count % 200 == 0:
                 conn.commit()
 
