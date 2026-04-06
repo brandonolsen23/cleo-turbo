@@ -510,8 +510,10 @@ def run_compiler(conn):
                     pid = registry.get_or_create_property_id(arn)
                     parcel = read_parcel(arn)
                     parcel_geojson = json.dumps(parcel['geometry']) if parcel and parcel.get('geometry') else None
-                    p_lat = parcel['centroid'][0] if parcel and parcel.get('centroid') else lat
-                    p_lng = parcel['centroid'][1] if parcel and parcel.get('centroid') else lng
+                    # Use the POI's actual coordinates — they sit right on the building.
+                    # Parcel centroid is just the middle of the lot shape (often a parking lot).
+                    p_lat = lat
+                    p_lng = lng
 
                     # Build display address from POI address fields
                     addr = poi.get('address', {})
