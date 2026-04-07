@@ -147,6 +147,22 @@ def geo_parcels(
         (south, north, west, east)
     ).fetchall()
 
+    # Build tenant brand lookup for parcels in this bbox
+    property_ids = [r["id"] for r in rows]
+    tenant_map = {}
+    if property_ids:
+        placeholders = ",".join("?" for _ in property_ids)
+        poi_rows = db.execute(
+            f"SELECT property_id, brand FROM pois "
+            f"WHERE property_id IN ({placeholders})",
+            property_ids,
+        ).fetchall()
+        for pr in poi_rows:
+            pid = pr["property_id"]
+            if pid not in tenant_map:
+                tenant_map[pid] = set()
+            tenant_map[pid].add(pr["brand"])
+
     features = []
     for r in rows:
         try:
@@ -154,6 +170,7 @@ def geo_parcels(
         except (json.JSONDecodeError, TypeError):
             continue
 
+        tenants = tenant_map.get(r["id"])
         features.append({
             "type": "Feature",
             "geometry": geom,
@@ -168,6 +185,7 @@ def geo_parcels(
                 "primary_property_type": r["primary_property_type"] or "",
                 "lat": r["lat"],
                 "lng": r["lng"],
+                "tenant_brands": sorted(tenants) if tenants else [],
             },
         })
 

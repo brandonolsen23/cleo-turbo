@@ -16,6 +16,7 @@ from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
                      read_parcel, count_clean_records, count_osm_records, count_gw_records)
 from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name
 from ..database.schema import drop_derived_tables, create_all_tables
+from ..analytics.groups import refresh_group_analytics
 
 
 def run_compiler(conn):
@@ -763,6 +764,94 @@ def run_compiler(conn):
         print('Pass 5: GW Assessments (no GW data, skipping)')
 
     # ================================================================
+    # Pass 6: Link orphan transactions via PIN bridge
+    # ================================================================
+    #
+    # Some RT transactions have incorrect ARNs (typos in source data) but
+    # valid PINs. Now that gw_assessments is populated, we can look up the
+    # correct ARN via PIN and link these orphaned transactions to properties.
+    print('Pass 6: Linking orphan transactions via PIN...')
+
+    orphans = conn.execute(
+        "SELECT t.source_id, t.pin, t.sale_date, t.sale_price, t.display_address, "
+        "t.city, t.region, t.postal "
+        "FROM transactions t "
+        "WHERE t.property_id IS NULL "
+        "AND t.pin IS NOT NULL AND t.pin != ''"
+    ).fetchall()
+
+    pin_linked = 0
+    pin_cache = {}  # pin -> (property_id, arn) to avoid repeated queries
+
+    for orphan in orphans:
+        o_source_id, o_pin, o_date, o_price, o_addr, o_city, o_region, o_postal = orphan
+
+        if o_pin in pin_cache:
+            result = pin_cache[o_pin]
+        else:
+            # Look up this PIN in gw_assessments to find the correct ARN
+            gw_row = conn.execute(
+                "SELECT arn, property_id FROM gw_assessments "
+                "WHERE pin = ? AND arn != '' AND property_id IS NOT NULL "
+                "LIMIT 1",
+                (o_pin,)
+            ).fetchone()
+            if gw_row:
+                result = (gw_row[1], gw_row[0])  # (property_id, arn)
+            else:
+                result = None
+            pin_cache[o_pin] = result
+
+        if not result:
+            continue
+
+        prop_id, correct_arn = result
+
+        # Link the transaction
+        conn.execute(
+            "UPDATE transactions SET property_id = ?, arn = ? WHERE source_id = ?",
+            (prop_id, correct_arn, o_source_id)
+        )
+        pin_linked += 1
+
+    # Recalculate transaction_count and most_recent_sale for affected properties
+    if pin_linked > 0:
+        affected_props = set(v[0] for v in pin_cache.values() if v)
+        for prop_id in affected_props:
+            # Recount transactions
+            tx_count = conn.execute(
+                "SELECT COUNT(*) FROM transactions WHERE property_id = ?",
+                (prop_id,)
+            ).fetchone()[0]
+            conn.execute(
+                "UPDATE properties SET transaction_count = ? WHERE id = ?",
+                (tx_count, prop_id)
+            )
+
+            # Find most recent RT sale for this property
+            latest = conn.execute(
+                "SELECT sale_date, sale_price FROM transactions "
+                "WHERE property_id = ? AND sale_date IS NOT NULL AND sale_date != '' "
+                "AND sale_price IS NOT NULL "
+                "ORDER BY sale_date DESC LIMIT 1",
+                (prop_id,)
+            ).fetchone()
+            if latest:
+                rt_date, rt_price = latest
+                # Update only if RT sale is newer than what's there (including GW sales)
+                conn.execute(
+                    "UPDATE properties SET most_recent_sale_price = ?, "
+                    "most_recent_sale_date = ?, most_recent_sale_source = 'RT' "
+                    "WHERE id = ? AND (most_recent_sale_date IS NULL OR most_recent_sale_date < ?)",
+                    (rt_price, rt_date, prop_id, rt_date)
+                )
+
+        conn.commit()
+
+    print(f'  Orphan transactions with PIN: {len(orphans):,}')
+    print(f'  Linked via PIN bridge: {pin_linked:,}')
+
+    # ================================================================
     # Rebuild FTS indexes
     # ================================================================
     print('Rebuilding FTS indexes...')
@@ -781,6 +870,12 @@ def run_compiler(conn):
     # Save ID counters
     registry.save_counters()
 
+    # ================================================================
+    # Refresh Group Analytics (materialized metrics)
+    # ================================================================
+    print('Refreshing group analytics...')
+    analytics_count = refresh_group_analytics(conn)
+
     elapsed = time.time() - start
     print()
     print(f'Compiler done in {elapsed:.1f}s')
@@ -792,3 +887,4 @@ def run_compiler(conn):
     print(f'  Parties:       {party_count:,}')
     print(f'  POIs:          {poi_count:,}')
     print(f'  GW Assessments: {gw_assessment_count:,} ({gw_enriched:,} enriched)')
+    print(f'  Group Analytics: {analytics_count:,}')

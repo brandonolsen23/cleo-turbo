@@ -10,7 +10,8 @@ import { FunnelSimple } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate, formatStreet } from "../lib/utils";
 import { getRadixHex, propertyTypeColor, propertyTypeLabel, propertyTypeMatchExpression, categoryColor } from "../lib/theme";
-// categoryColor used for filter badge styling
+import MultiSelectDropdown from "../components/ui/MultiSelectDropdown";
+import { RETAIL_CATEGORIES, ALL_BRANDS, BRAND_TO_CATEGORY, expandBrandFilter } from "../lib/brandCategories";
 
 // ============================================================
 // Constants
@@ -30,19 +31,19 @@ const PROPERTY_TYPES = [
   "other-bldg", "other-land",
 ];
 
-const POI_CATEGORIES = [
-  "QSR", "Grocery", "Specialty Retail", "Discount Retail", "Big-Box Retail",
-  "Full-Service", "Take-out", "Fuel", "Financial Services", "Automotive",
-];
+// Dropdown options for category and brand multi-selects
+const CATEGORY_OPTIONS = RETAIL_CATEGORIES.map((cat) => ({
+  value: cat,
+  label: cat,
+  color: categoryColor(cat),
+}));
 
-function poiCategoryMatchExpression(step: number = 9): unknown[] {
-  const expr: unknown[] = ["match", ["get", "category"]];
-  for (const cat of POI_CATEGORIES) {
-    expr.push(cat, getRadixHex(categoryColor(cat), step));
-  }
-  expr.push(getRadixHex("gray", step));
-  return expr;
-}
+const BRAND_OPTIONS = ALL_BRANDS.map((brand) => ({
+  value: brand,
+  label: brand,
+  group: BRAND_TO_CATEGORY[brand],
+  color: categoryColor(BRAND_TO_CATEGORY[brand]),
+}));
 
 // ============================================================
 // Mapbox layer paint/layout definitions
@@ -125,6 +126,7 @@ export default function MapPage() {
   const [selectedParcel, setSelectedParcel] = useState<any>(EMPTY_FC);
   const [loading, setLoading] = useState(true);
   const [categoryFilters, setCategoryFilters] = useState<Set<string>>(new Set());
+  const [brandFilters, setBrandFilters] = useState<Set<string>>(new Set());
 
   // UI state
   const [popupInfo, setPopupInfo] = useState<PopupInfo | null>(null);
@@ -327,8 +329,31 @@ export default function MapPage() {
   // Filtered map data — applies to BOTH map layers AND list panel
   // ============================================================
 
+  // Expand category selections into a combined brand set for filtering
+  const activeBrands = useMemo(
+    () => expandBrandFilter(categoryFilters, brandFilters),
+    [categoryFilters, brandFilters],
+  );
+
+  const hasBrandFilter = activeBrands.size > 0;
+
+  /** Check if a feature matches the active brand/category filter */
+  const featureMatchesBrands = useCallback((f: any): boolean => {
+    if (!hasBrandFilter) return true;
+    const brands: string[] = f.properties.tenant_brands
+      ? (typeof f.properties.tenant_brands === "string" ? JSON.parse(f.properties.tenant_brands) : f.properties.tenant_brands)
+      : [];
+    return brands.some((b: string) => activeBrands.has(b));
+  }, [hasBrandFilter, activeBrands]);
+
+  /**
+   * Hard filters (city, type, price) remove features entirely.
+   * Brand/category is a soft filter — it stamps `_matched` on each
+   * feature so the map can dim non-matching ones instead of hiding them.
+   */
   const filterFeatures = useCallback((features: any[]) => {
     let filtered = features;
+    // Hard filters — these remove features
     if (cityFilter) {
       filtered = filtered.filter((f: any) => f.properties.city === cityFilter);
     }
@@ -343,14 +368,24 @@ export default function MapPage() {
       const max = parseInt(maxPrice);
       if (!isNaN(max)) filtered = filtered.filter((f: any) => (f.properties.latest_price ?? 0) <= max);
     }
-    if (categoryFilters.size > 0) {
-      filtered = filtered.filter((f: any) => {
-        const cats: string[] = f.properties.tenant_categories ? (typeof f.properties.tenant_categories === "string" ? JSON.parse(f.properties.tenant_categories) : f.properties.tenant_categories) : [];
-        return cats.some((c: string) => categoryFilters.has(c));
-      });
+    // Soft filter — stamp _matched flag for brand/category dimming
+    if (hasBrandFilter) {
+      filtered = filtered.map((f: any) => ({
+        ...f,
+        properties: {
+          ...f.properties,
+          _matched: featureMatchesBrands(f) ? 1 : 0,
+        },
+      }));
+    } else {
+      // No brand filter — all matched
+      filtered = filtered.map((f: any) => ({
+        ...f,
+        properties: { ...f.properties, _matched: 1 },
+      }));
     }
     return filtered;
-  }, [cityFilter, typeFilters, minPrice, maxPrice, categoryFilters]);
+  }, [cityFilter, typeFilters, minPrice, maxPrice, hasBrandFilter, featureMatchesBrands]);
 
   // Filtered GeoJSON for the map points source
   const filteredGeoData = useMemo(() => {
@@ -379,25 +414,31 @@ export default function MapPage() {
       });
     }
 
-    // Sort
+    // Sort: matched items first when brand filter is active, then by sort option
     const sorted = [...features];
-    switch (sortBy) {
-      case "latest_date":
-        sorted.sort((a: any, b: any) => (b.properties.latest_date || "").localeCompare(a.properties.latest_date || ""));
-        break;
-      case "price_high":
-        sorted.sort((a: any, b: any) => (b.properties.latest_price ?? 0) - (a.properties.latest_price ?? 0));
-        break;
-      case "price_low":
-        sorted.sort((a: any, b: any) => (a.properties.latest_price ?? 0) - (b.properties.latest_price ?? 0));
-        break;
-      case "most_txns":
-        sorted.sort((a: any, b: any) => (b.properties.transaction_count ?? 0) - (a.properties.transaction_count ?? 0));
-        break;
-    }
+    sorted.sort((a: any, b: any) => {
+      // Matched items float to top when brand filter active
+      if (hasBrandFilter) {
+        const aMatch = a.properties._matched ?? 1;
+        const bMatch = b.properties._matched ?? 1;
+        if (aMatch !== bMatch) return bMatch - aMatch;
+      }
+      switch (sortBy) {
+        case "latest_date":
+          return (b.properties.latest_date || "").localeCompare(a.properties.latest_date || "");
+        case "price_high":
+          return (b.properties.latest_price ?? 0) - (a.properties.latest_price ?? 0);
+        case "price_low":
+          return (a.properties.latest_price ?? 0) - (b.properties.latest_price ?? 0);
+        case "most_txns":
+          return (b.properties.transaction_count ?? 0) - (a.properties.transaction_count ?? 0);
+        default:
+          return 0;
+      }
+    });
 
     return sorted.slice(0, 200); // Cap at 200 for perf
-  }, [filteredGeoData, viewportBounds, sortBy]);
+  }, [filteredGeoData, viewportBounds, sortBy, hasBrandFilter]);
 
   // ============================================================
   // Popup detail fetching
@@ -421,6 +462,8 @@ export default function MapPage() {
     typeFilters.size > 0 ? 1 : 0,
     minPrice ? 1 : 0,
     maxPrice ? 1 : 0,
+    categoryFilters.size > 0 ? 1 : 0,
+    brandFilters.size > 0 ? 1 : 0,
   ].reduce((a, b) => a + b, 0);
 
   const clearFilters = () => {
@@ -428,6 +471,8 @@ export default function MapPage() {
     setTypeFilters(new Set());
     setMinPrice("");
     setMaxPrice("");
+    setCategoryFilters(new Set());
+    setBrandFilters(new Set());
   };
 
   const toggleType = (t: string) => {
@@ -435,15 +480,6 @@ export default function MapPage() {
       const next = new Set(prev);
       if (next.has(t)) next.delete(t);
       else next.add(t);
-      return next;
-    });
-  };
-
-  const toggleCategory = (c: string) => {
-    setCategoryFilters((prev) => {
-      const next = new Set(prev);
-      if (next.has(c)) next.delete(c);
-      else next.add(c);
       return next;
     });
   };
@@ -568,21 +604,21 @@ export default function MapPage() {
               </button>
             ))}
             <span className="text-[11px] mx-1" style={{ color: "var(--gray-8)" }}>|</span>
-            {POI_CATEGORIES.map((c) => (
-              <button
-                key={c}
-                onClick={() => toggleCategory(c)}
-                className="px-2 py-0.5 rounded text-[12px] border transition-colors"
-                style={{
-                  background: categoryFilters.has(c) ? getRadixHex(categoryColor(c), 4) : "transparent",
-                  borderColor: categoryFilters.has(c) ? getRadixHex(categoryColor(c), 7) : "var(--gray-6)",
-                  color: categoryFilters.has(c) ? getRadixHex(categoryColor(c), 11) : "var(--gray-11)",
-                  fontWeight: categoryFilters.has(c) ? 500 : 400,
-                }}
-              >
-                {c}
-              </button>
-            ))}
+            <MultiSelectDropdown
+              placeholder="Categories"
+              options={CATEGORY_OPTIONS}
+              selected={categoryFilters}
+              onChange={setCategoryFilters}
+            />
+            <MultiSelectDropdown
+              placeholder="Brands"
+              options={BRAND_OPTIONS}
+              selected={brandFilters}
+              onChange={setBrandFilters}
+              searchable
+              grouped
+              maxHeight={360}
+            />
           </div>
         )}
 
@@ -638,38 +674,73 @@ export default function MapPage() {
               }}
               paint={{ "text-color": "#ffffff" }}
             />
-            {/* Individual points — colored by property type */}
+            {/* Individual points — colored by property type, dimmed when unmatched */}
             <Layer
               id="unclustered-point"
               type="circle"
               filter={["!", ["has", "point_count"]]}
               paint={{
-                "circle-color": propertyTypeMatchExpression(9) as any,
+                "circle-color": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  getRadixHex("gray", 7),
+                  propertyTypeMatchExpression(9),
+                ] as any,
                 "circle-radius": 7,
                 "circle-stroke-width": 2,
                 "circle-stroke-color": "#ffffff",
-                "circle-opacity": 0.9,
+                "circle-opacity": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  0.4,
+                  0.9,
+                ] as any,
               }}
             />
           </Source>
 
-          {/* Parcel polygons — loaded at zoom >= 14, colored by property type */}
+          {/* Parcel polygons — loaded at zoom >= 14, dimmed when unmatched */}
           <Source id="parcels" type="geojson" data={filteredParcelData}>
             <Layer
               id="parcel-fill"
               type="fill"
               paint={{
-                "fill-color": propertyTypeMatchExpression(9) as any,
-                "fill-opacity": 0.22,
+                "fill-color": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  getRadixHex("gray", 5),
+                  propertyTypeMatchExpression(9),
+                ] as any,
+                "fill-opacity": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  0.12,
+                  0.22,
+                ] as any,
               }}
             />
             <Layer
               id="parcel-outline"
               type="line"
               paint={{
-                "line-color": propertyTypeMatchExpression(11) as any,
-                "line-width": 2,
-                "line-opacity": 1,
+                "line-color": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  getRadixHex("gray", 7),
+                  propertyTypeMatchExpression(11),
+                ] as any,
+                "line-width": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  1,
+                  2,
+                ] as any,
+                "line-opacity": [
+                  "case",
+                  ["==", ["get", "_matched"], 0],
+                  0.5,
+                  1,
+                ] as any,
               }}
             />
           </Source>
@@ -859,6 +930,7 @@ export default function MapPage() {
               {visibleProperties.map((f: any) => {
                 const p = f.properties;
                 const isSelected = p.id === selectedId;
+                const isDimmed = hasBrandFilter && !p._matched;
                 return (
                   <div
                     key={p.id}
@@ -866,10 +938,17 @@ export default function MapPage() {
                     style={{
                       borderColor: "var(--gray-4)",
                       background: isSelected ? "var(--amber-2)" : "transparent",
+                      opacity: isDimmed ? 0.45 : 1,
                     }}
                     onClick={() => flyToProperty(f)}
-                    onMouseEnter={(e) => (e.currentTarget.style.background = isSelected ? "var(--amber-2)" : "var(--gray-2)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.background = isSelected ? "var(--amber-2)" : "transparent")}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = isSelected ? "var(--amber-2)" : "var(--gray-2)";
+                      if (isDimmed) e.currentTarget.style.opacity = "0.7";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = isSelected ? "var(--amber-2)" : "transparent";
+                      if (isDimmed) e.currentTarget.style.opacity = "0.45";
+                    }}
                   >
                     <Text size="2" weight="medium" className="block">
                       {formatStreet(p.address)}

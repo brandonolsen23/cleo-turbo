@@ -264,6 +264,76 @@ def process_batch(files):
                          gw.get('source_file', ''))
                     )
 
+                # Insert sales history
+                sales_history = gw.get('sales_history', [])
+                for sale in sales_history:
+                    conn.execute(
+                        "INSERT INTO gw_sales_history "
+                        "(gw_id, property_id, arn, sale_date, amount, sale_type, party_to, notes) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                        (gw_id, property_id,
+                         resolved_arn or '',
+                         sale.get('date', ''),
+                         sale.get('amount'),
+                         sale.get('type', ''),
+                         sale.get('party_to', ''),
+                         sale.get('notes', ''))
+                    )
+
+                # Update property's most_recent_sale_price/date from GW sales history
+                # Only if the GW sale is newer than what's already on the property
+                if property_id and sales_history:
+                    dated_sales = [s for s in sales_history if s.get('date') and s.get('amount')]
+                    if dated_sales:
+                        most_recent = max(dated_sales, key=lambda s: s['date'])
+                        gw_date = most_recent['date']
+                        gw_amount = most_recent['amount']
+                        conn.execute(
+                            "UPDATE properties SET most_recent_sale_price = ?, most_recent_sale_date = ?, "
+                            "most_recent_sale_source = 'GW' "
+                            "WHERE id = ? AND (most_recent_sale_date IS NULL OR most_recent_sale_date < ?)",
+                            (gw_amount, gw_date, property_id, gw_date)
+                        )
+
+                # Link orphan RT transactions via PIN bridge
+                # If this GW record has a PIN, check for unlinked transactions with the same PIN
+                gw_pin = gw.get('pin', '')
+                if property_id and gw_pin and resolved_arn:
+                    orphans = conn.execute(
+                        "SELECT source_id, sale_date, sale_price FROM transactions "
+                        "WHERE property_id IS NULL AND pin = ?",
+                        (gw_pin,)
+                    ).fetchall()
+                    for orphan in orphans:
+                        conn.execute(
+                            "UPDATE transactions SET property_id = ?, arn = ? "
+                            "WHERE source_id = ?",
+                            (property_id, resolved_arn, orphan[0])
+                        )
+                        log.info(f'  Linked orphan transaction {orphan[0]} to {property_id} via PIN {gw_pin}')
+
+                    if orphans:
+                        # Recalculate transaction_count
+                        tx_count = conn.execute(
+                            "SELECT COUNT(*) FROM transactions WHERE property_id = ?",
+                            (property_id,)
+                        ).fetchone()[0]
+                        conn.execute(
+                            "UPDATE properties SET transaction_count = ? WHERE id = ?",
+                            (tx_count, property_id)
+                        )
+                        # Check if any orphan has a newer sale than what's on the property
+                        for orphan in orphans:
+                            o_date = orphan[1] or ''
+                            o_price = orphan[2]
+                            if o_date and o_price:
+                                conn.execute(
+                                    "UPDATE properties SET most_recent_sale_price = ?, "
+                                    "most_recent_sale_date = ?, most_recent_sale_source = 'RT' "
+                                    "WHERE id = ? AND (most_recent_sale_date IS NULL OR most_recent_sale_date < ?)",
+                                    (o_price, o_date, property_id, o_date)
+                                )
+
         conn.commit()
         registry.save_counters()
         conn.close()

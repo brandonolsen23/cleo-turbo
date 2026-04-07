@@ -22,7 +22,7 @@ import {
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate, formatPhone } from "../lib/utils";
 import { categoryColor, propertyTypeColor, propertyTypeLabel, getRadixHex } from "../lib/theme";
-import type { PropertyDetail, PropertyTransaction } from "../types";
+import type { PropertyDetail, PropertyTransaction, GwSaleHistory } from "../types";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 const SATELLITE_STYLE = "mapbox://styles/mapbox/satellite-streets-v12";
@@ -159,6 +159,7 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
           <Text size="3" weight="bold" style={{ color: "var(--jade-11)" }}>
             {formatCurrency(t.sale_price)}
           </Text>
+          <Badge size="1" variant="outline" color="blue">RT</Badge>
           {isLatest && <Badge size="1" color="jade">Latest</Badge>}
         </div>
         <div className="flex items-center gap-6 text-[13px]">
@@ -317,6 +318,64 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
 }
 
 // ============================================================
+// GW Sale Row — lighter-weight row for GeoWarehouse sales history
+// ============================================================
+
+function GwSaleRow({ sale, isLatest }: { sale: GwSaleHistory; isLatest: boolean }) {
+  return (
+    <div className="border border-[var(--gray-5)] rounded-lg overflow-hidden">
+      <div className="flex items-center justify-between px-4 py-3">
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-1.5">
+            <div style={{ width: 14 }} /> {/* Spacer to align with RT caret */}
+            <Text size="2" weight="medium">{formatDate(sale.sale_date)}</Text>
+          </div>
+          <Text size="3" weight="bold" style={{ color: "var(--jade-11)" }}>
+            {formatCurrency(sale.amount)}
+          </Text>
+          <Badge size="1" variant="outline" color="amber">GW</Badge>
+          {sale.sale_type && (
+            <Badge size="1" variant="soft" color="gray">{sale.sale_type}</Badge>
+          )}
+          {isLatest && <Badge size="1" color="jade">Latest</Badge>}
+        </div>
+        <div className="text-right">
+          {sale.party_to && (
+            <div>
+              <Text size="1" style={{ color: "var(--gray-9)" }}>Transferred to</Text>
+              <Text size="2" weight="medium" className="block">{sale.party_to}</Text>
+            </div>
+          )}
+        </div>
+      </div>
+      {sale.notes && (
+        <div className="border-t border-[var(--gray-4)] px-4 py-2 bg-[var(--gray-a1)]">
+          <Text size="1" style={{ color: "var(--gray-11)" }}>{sale.notes}</Text>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ============================================================
+// Merged timeline entry — discriminated union for RT and GW
+// ============================================================
+
+interface TimelineEntryRT {
+  _source: "RT";
+  date: string;
+  transaction: PropertyTransaction;
+}
+
+interface TimelineEntryGW {
+  _source: "GW";
+  date: string;
+  sale: GwSaleHistory;
+}
+
+type TimelineEntry = TimelineEntryRT | TimelineEntryGW;
+
+// ============================================================
 // Error Boundary
 // ============================================================
 
@@ -470,16 +529,17 @@ function PropertyDetailPageInner() {
           <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
             {formatCurrency(prop.most_recent_sale_price)}
           </Text>
-          <Text size="1" style={{ color: "var(--gray-9)" }}>{formatDate(prop.most_recent_sale_date)}</Text>
         </div>
 
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
-          <Text size="1" style={{ color: "var(--gray-9)" }}>Assessed Value</Text>
+          <Text size="1" style={{ color: "var(--gray-9)" }}>Last Sale Date</Text>
           <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
-            {latestGw ? formatCurrency(latestGw.assessed_value) : "—"}
+            {prop.most_recent_sale_date ? formatDate(prop.most_recent_sale_date) : "—"}
           </Text>
-          {latestGw?.valuation_date && (
-            <Text size="1" style={{ color: "var(--gray-9)" }}>MPAC {latestGw.valuation_date}</Text>
+          {prop.most_recent_sale_source && (
+            <Text size="1" style={{ color: "var(--gray-9)" }}>
+              Source: {prop.most_recent_sale_source === "RT" ? "Realtrack" : "GeoWarehouse"}
+            </Text>
           )}
         </div>
 
@@ -672,27 +732,60 @@ function PropertyDetailPageInner() {
       )}
 
       {/* ============================================================ */}
-      {/* TRANSACTION HISTORY — Collapsible */}
+      {/* TRANSACTION HISTORY — Merged RT + GW timeline */}
       {/* ============================================================ */}
-      <div>
-        <div className="flex items-center gap-2 mb-3">
-          <ChartBar size={16} style={{ color: "var(--gray-9)" }} />
-          <Text size="3" weight="medium">Transaction History</Text>
-          <Badge size="1" variant="outline" color="gray">{prop.transactions?.length ?? 0}</Badge>
-        </div>
+      {(() => {
+        // Build merged timeline from RT transactions + GW sales history
+        const timeline: TimelineEntry[] = [];
+        for (const t of (prop.transactions || [])) {
+          timeline.push({ _source: "RT", date: t.sale_date || "", transaction: t });
+        }
+        for (const s of (prop.gw_sales_history || [])) {
+          timeline.push({ _source: "GW", date: s.sale_date || "", sale: s });
+        }
+        // Sort by date descending (newest first)
+        timeline.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
-        {(!prop.transactions || prop.transactions.length === 0) ? (
-          <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-8 text-center">
-            <Text size="2" style={{ color: "var(--gray-9)" }}>No transaction history available</Text>
+        const totalCount = timeline.length;
+
+        return (
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <ChartBar size={16} style={{ color: "var(--gray-9)" }} />
+              <Text size="3" weight="medium">Transaction History</Text>
+              <Badge size="1" variant="outline" color="gray">{totalCount}</Badge>
+            </div>
+
+            {totalCount === 0 ? (
+              <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-8 text-center">
+                <Text size="2" style={{ color: "var(--gray-9)" }}>No transaction history available</Text>
+              </div>
+            ) : (
+              <div className="flex flex-col gap-2">
+                {timeline.map((entry, i) => {
+                  if (entry._source === "RT") {
+                    return (
+                      <TransactionRow
+                        key={entry.transaction.source_id}
+                        t={entry.transaction as any}
+                        isLatest={i === 0}
+                      />
+                    );
+                  } else {
+                    return (
+                      <GwSaleRow
+                        key={`gw-${entry.date}-${entry.sale.amount}`}
+                        sale={entry.sale}
+                        isLatest={i === 0}
+                      />
+                    );
+                  }
+                })}
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="flex flex-col gap-2">
-            {prop.transactions.map((t, i) => (
-              <TransactionRow key={t.source_id} t={t as any} isLatest={i === 0} />
-            ))}
-          </div>
-        )}
-      </div>
+        );
+      })()}
 
       {/* ============================================================ */}
       {/* TABBED SECTION: Site Details | Assessment | Tenants */}
