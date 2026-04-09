@@ -1,4 +1,60 @@
 // ============================================================
+// Pipeline Orchestrator
+// ============================================================
+
+export interface OrchestratorStatus {
+  stages: {
+    assembled: number;
+    classified: number;
+    normalized: number;
+    resolved: number;
+    clean_data: number;
+  };
+  pending: {
+    classify: number;
+    normalize: number;
+    resolve: number;
+  };
+  resolve_locked: boolean;
+  resolve_pid: number | null;
+  reprocess: {
+    from_stage: string;
+    created: string;
+    skip_stages: string[];
+    progress: Record<string, { completed_at: string; files_processed: number }>;
+  } | null;
+  running: boolean;
+  run_status: {
+    running: boolean;
+    mode: string;
+    pid: number;
+    started_at: number;
+    command: string;
+  } | null;
+  log: {
+    timestamp: string;
+    stage: string;
+    mode: string;
+    files_processed: number;
+    files_skipped: number;
+    elapsed_seconds: number;
+    errors: number;
+  }[];
+}
+
+export interface OrchestratorRunResponse {
+  success: boolean;
+  mode: string;
+  pid: number;
+  message: string;
+}
+
+export interface OrchestratorLogResponse {
+  lines: string[];
+  message?: string;
+}
+
+// ============================================================
 // API Response Types
 // ============================================================
 
@@ -31,8 +87,11 @@ export interface PropertyBrowseItem {
   current_owner_name: string | null;
   current_owner_group_id: string | null;
   transaction_count: number;
+  ownership_years: number | null;
   lat: number | null;
   lng: number | null;
+  asset_class: string | null;
+  asset_subclass: string | null;
 }
 
 export interface PropertyDetail {
@@ -52,6 +111,8 @@ export interface PropertyDetail {
   most_recent_sale_source: string | null;
   transaction_count: number;
   primary_property_type: string | null;
+  asset_class: string | null;
+  asset_subclass: string | null;
   gw_municipality: string | null;
   lat: number | null;
   lng: number | null;
@@ -62,6 +123,9 @@ export interface PropertyDetail {
   pois: PoiOnProperty[];
   gw_assessments: GwAssessment[];
   gw_sales_history: GwSaleHistory[];
+  owner_hq_address: string | null;
+  owner_hq_lat: number | null;
+  owner_hq_lng: number | null;
 }
 
 export interface PropertyTransactionParty {
@@ -74,6 +138,8 @@ export interface PropertyTransactionParty {
   contact_name: string | null;
   contact_phone: string | null;
   contact_email: string | null;
+  status: string | null;
+  last_engaged_date: string | null;
 }
 
 export interface PropertyTransaction {
@@ -219,6 +285,7 @@ export interface ContactBrowseItem {
   mobile: string | null;
   company_name: string | null;
   status: string;
+  contact_type: string | null;
   transaction_count: number;
   first_seen_date: string | null;
   last_seen_date: string | null;
@@ -249,16 +316,18 @@ export interface ContactDetail {
   job_title: string | null;
   company_name: string | null;
   current_group_id: string | null;
+  contact_type: string | null;
   status: string;
   source: string | null;
   transaction_count: number;
   first_seen_date: string | null;
   last_seen_date: string | null;
   hubspot_id: string | null;
+  last_engaged_date: string | null;
   created_at: string;
   updated_at: string;
   transactions: ContactTransaction[];
-  current_group: { id: string; display_name: string; status: string } | null;
+  current_group: { id: string; display_name: string; status: string; hq_address: string | null } | null;
 }
 
 // ============================================================
@@ -272,6 +341,29 @@ export interface GroupBrowseItem {
   property_count: number;
   transaction_count: number;
   contact_count: number;
+  // Analytics (from join)
+  total_assessed_value: number | null;
+  total_buys: number | null;
+  total_sells: number | null;
+  avg_buy_price: number | null;
+  net_acquisitions: number | null;
+  txns_per_year: number | null;
+  buys_last_12m: number | null;
+  sells_last_12m: number | null;
+  geographic_radius_km: number | null;
+  region_count: number | null;
+  max_distance_from_hq_km: number | null;
+}
+
+export interface GroupFilterOptions {
+  asset_classes: string[];
+  regions: string[];
+  brands: string[];
+}
+
+export interface ContactFilterOptions {
+  contact_types: string[];
+  regions: string[];
 }
 
 export interface GroupContact {
@@ -300,12 +392,68 @@ export interface GroupProperty {
   most_recent_sale_date: string | null;
   most_recent_sale_price: number | null;
   most_recent_sale_source: string | null;
+  lat: number | null;
+  lng: number | null;
+  asset_class: string | null;
+}
+
+// ── Mini-map types ──
+
+export interface MiniMapProperty {
+  id: string;
+  display_address: string;
+  city: string;
+  lat: number;
+  lng: number;
+  asset_class: string | null;
+  most_recent_sale_price?: number | null;
+  current_owner_name?: string | null;
+}
+
+export interface ContactPropertyHistoryResponse {
+  properties: MiniMapProperty[];
 }
 
 export interface GroupKnownName {
   name: string;
   normalized: string;
   source_id: string;
+}
+
+export interface GroupAnalytics {
+  group_id: string;
+  // Portfolio
+  property_count: number;
+  total_assessed_value: number | null;
+  property_type_mix: Record<string, number> | null;
+  regions: string[] | null;
+  region_count: number;
+  // Transactions
+  total_buys: number;
+  total_sells: number;
+  avg_buy_price: number | null;
+  median_buy_price: number | null;
+  avg_sell_price: number | null;
+  median_sell_price: number | null;
+  first_transaction_date: string | null;
+  last_transaction_date: string | null;
+  net_acquisitions: number;
+  avg_hold_period_days: number | null;
+  // Velocity
+  txns_per_year: number | null;
+  buys_last_12m: number;
+  sells_last_12m: number;
+  buys_last_36m: number;
+  sells_last_36m: number;
+  // Geographic
+  hq_lat: number | null;
+  hq_lng: number | null;
+  avg_distance_from_hq_km: number | null;
+  max_distance_from_hq_km: number | null;
+  geographic_radius_km: number | null;
+  centroid_lat: number | null;
+  centroid_lng: number | null;
+  refreshed_at: string;
 }
 
 export interface GroupDetail {
@@ -321,6 +469,7 @@ export interface GroupDetail {
   hubspot_id: string | null;
   created_at: string;
   updated_at: string;
+  analytics: GroupAnalytics | null;
   known_names: GroupKnownName[];
   contacts: GroupContact[];
   transactions: GroupTransaction[];
@@ -497,6 +646,140 @@ export interface FilterOptions {
   regions: string[];
   brands: string[];
   categories: string[];
+  asset_classes: string[];
+}
+
+// ============================================================
+// Asset Classes
+// ============================================================
+
+export interface AssetSubclass {
+  id: string;
+  label: string;
+}
+
+export interface AssetClass {
+  id: string;
+  label: string;
+  subcategories: AssetSubclass[];
+}
+
+export interface AssetClassResponse {
+  classes: AssetClass[];
+}
+
+// ============================================================
+// Contact Types
+// ============================================================
+
+export const CONTACT_TYPES = [
+  { id: "seller", label: "Seller" },
+  { id: "buyer_investor", label: "Buyer - Investor" },
+  { id: "buyer_developer", label: "Buyer - Developer" },
+  { id: "buyer_owner_occupier", label: "Buyer - Owner Occupier" },
+  { id: "national_tenant", label: "National Tenant" },
+  { id: "local_tenant", label: "Local Tenant" },
+  { id: "landlord", label: "Landlord" },
+  { id: "professional", label: "Professional Contact" },
+  { id: "personal", label: "Personal Contact" },
+  { id: "commercial_realtor", label: "Commercial Realtor" },
+  { id: "residential_realtor", label: "Residential Realtor" },
+] as const;
+
+export type ContactTypeId = (typeof CONTACT_TYPES)[number]["id"];
+
+export function getContactTypeLabel(id: string | null): string {
+  if (!id) return "";
+  const ct = CONTACT_TYPES.find((t) => t.id === id);
+  return ct ? ct.label : id;
+}
+
+// ============================================================
+// Group Merges
+// ============================================================
+
+export interface MergeCandidate {
+  id: string;
+  display_name: string;
+  normalized_name: string;
+  status: string;
+  property_count: number;
+  transaction_count: number;
+  contact_count: number;
+  total_assessed_value: number | null;
+  geographic_radius_km: number | null;
+}
+
+export interface MergeCandidatesResponse {
+  group: { id: string; normalized_name: string; display_name: string };
+  candidates: MergeCandidate[];
+}
+
+export interface MergeHistoryItem {
+  id: number;
+  source_group_id?: string;
+  source_name?: string;
+  target_group_id?: string;
+  target_name?: string;
+  merged_by: string | null;
+  merged_at: string;
+  unmerged_at: string | null;
+  unmerged_by: string | null;
+}
+
+export interface MergeHistoryResponse {
+  absorbed: MergeHistoryItem[];
+  merged_into: MergeHistoryItem[];
+}
+
+// ============================================================
+// CRM: Deal Detail (enriched)
+// ============================================================
+
+export interface CrmDealDetail extends CrmDeal {
+  property_address?: string;
+  property_city?: string;
+  group_name?: string;
+}
+
+// ============================================================
+// CRM: Group Contact Links
+// ============================================================
+
+export interface GroupContactLink {
+  id: string;
+  display_name: string;
+  phone: string | null;
+  email: string | null;
+  job_title: string | null;
+  status: string;
+  transaction_count: number;
+  contact_type: string | null;
+  link_type: "derived" | "manual" | "both";
+  is_current: boolean;
+  role: string | null;
+  link_notes: string | null;
+}
+
+export interface GroupContactsResponse {
+  contacts: GroupContactLink[];
+  total: number;
+}
+
+// ============================================================
+// Audit Log
+// ============================================================
+
+export interface AuditLogEntry {
+  id: number;
+  user_id: number | null;
+  action: string;
+  entity_type: string;
+  entity_id: string;
+  details: Record<string, unknown> | null;
+  created_at: string;
+  username: string | null;
+  display_name: string | null;
 }
 
 // ============================================================
