@@ -1,8 +1,17 @@
 """
 Orchestrator — reads classified JSON, normalizes all addresses, writes to pipeline/addresses/.
 
+Modes:
+    Default:      Only normalize classified files that don't have an addresses
+                  counterpart yet (incremental — safe for daily use).
+    --all:        Normalize ALL classified files, overwriting existing output.
+                  Use after fixing the normalizer to reprocess everything.
+    --files:      Normalize only the specified files (comma-separated or glob).
+
 Usage:
-    python -m address_normalizer.run
+    python -m address_normalizer.run                    # incremental (new only)
+    python -m address_normalizer.run --all              # reprocess everything
+    python -m address_normalizer.run --files "RT198*.json"  # specific files
 
 Reads:  pipeline/classified/*.json
 Writes: pipeline/addresses/*.json   (one per RT, same filename)
@@ -11,8 +20,10 @@ Reference: schema/address_normalization_plan.md
 """
 
 import json
+import fnmatch
 import os
 import sys
+import argparse
 
 from .decompose import decompose
 from .expand import (
@@ -255,8 +266,22 @@ def process_file(filepath):
     return output
 
 
-def run(input_dir=None, output_dir=None):
-    """Process all classified files and write normalized addresses."""
+def find_pending_files(input_dir, output_dir):
+    """Find classified files that don't have a normalized counterpart yet."""
+    classified_files = set(f for f in os.listdir(input_dir) if f.endswith('.json'))
+    address_files = set(f for f in os.listdir(output_dir) if f.endswith('.json'))
+    return sorted(classified_files - address_files)
+
+
+def run(input_dir=None, output_dir=None, file_list=None, process_all=False):
+    """Process classified files and write normalized addresses.
+
+    Args:
+        input_dir: Directory containing classified JSON files.
+        output_dir: Directory to write normalized address files.
+        file_list: If set, only process these specific filenames.
+        process_all: If True, reprocess all files (overwrite existing).
+    """
     input_dir = input_dir or CLASSIFIED_DIR
     output_dir = output_dir or OUTPUT_DIR
 
@@ -265,8 +290,33 @@ def run(input_dir=None, output_dir=None):
 
     os.makedirs(output_dir, exist_ok=True)
 
-    files = sorted(f for f in os.listdir(input_dir) if f.endswith('.json'))
+    # Determine which files to process
+    if file_list is not None:
+        files = file_list
+        mode = 'files'
+    elif process_all:
+        files = sorted(f for f in os.listdir(input_dir) if f.endswith('.json'))
+        mode = 'all'
+    else:
+        files = find_pending_files(input_dir, output_dir)
+        mode = 'new'
+
     total = len(files)
+    skipped = 0
+    if mode == 'new':
+        total_classified = len([f for f in os.listdir(input_dir) if f.endswith('.json')])
+        skipped = total_classified - total
+
+    if total == 0:
+        print(f'Cleo Engine — Address Normalizer')
+        print(f'Nothing to normalize (0 pending records)')
+        return 0, []
+
+    print(f'Cleo Engine — Address Normalizer')
+    print(f'Mode: {mode}')
+    print(f'Records to process: {total}' + (f'  (skipped {skipped} already normalized)' if skipped else ''))
+    print()
+
     success = 0
     errors = []
 
@@ -284,7 +334,7 @@ def run(input_dir=None, output_dir=None):
         except Exception as e:
             errors.append((filename, str(e)))
 
-        if (i + 1) % 100 == 0 or i + 1 == total:
+        if (i + 1) % 500 == 0 or i + 1 == total:
             print(f'  [{i + 1}/{total}] processed')
 
     print(f'\nDone: {success}/{total} files normalized')
@@ -299,4 +349,19 @@ def run(input_dir=None, output_dir=None):
 
 
 if __name__ == '__main__':
-    run()
+    parser = argparse.ArgumentParser(description='Normalize addresses from classified records')
+    parser.add_argument('--all', action='store_true', help='Reprocess ALL records (overwrite existing)')
+    parser.add_argument('--files', type=str, help='Process only these files (comma-separated names or glob pattern)')
+    args = parser.parse_args()
+
+    file_list = None
+    if args.files:
+        all_classified = sorted(f for f in os.listdir(CLASSIFIED_DIR) if f.endswith('.json'))
+        parts = [p.strip() for p in args.files.split(',')]
+        file_list = []
+        for pattern in parts:
+            matched = fnmatch.filter(all_classified, pattern)
+            file_list.extend(matched)
+        file_list = sorted(set(file_list))
+
+    run(file_list=file_list, process_all=args.all)

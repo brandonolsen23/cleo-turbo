@@ -147,21 +147,129 @@ python -m cleo.compiler
 
 # GW watcher (auto-process new GeoWarehouse files)
 python -m engines.gw.watcher
+
+# RT pipeline orchestrator (preferred way to run the RT pipeline)
+cd engines/rt && python process.py --new                          # process new records only
+cd engines/rt && python process.py --from classify --skip resolve # reprocess after parser fix
+cd engines/rt && python process.py --from classify                # reprocess everything from classify
+cd engines/rt && python process.py --resolve-unresolved           # retry failed parcel resolutions
+cd engines/rt && python process.py --status                       # show pipeline state + history
+
+# RT watcher (auto-detects new files, delegates to process.py --new)
+python engines/rt/watcher.py
+
+# RT resolve only (reprocess all parcel links)
+cd engines/rt && python -m parcel_resolver.resolve_v2 --reprocess
+
+# OSM POI parcel resolution
+python engines/osm/resolve_pois_v2.py --retry
 ```
 
 ## Data Pipeline Overview
 
 ```
-raw-data/rt/     → engines/rt/  (extract → classify → normalize → resolve → compile) → clean-data/rt/
-raw-data/gw/     → engines/gw/  (ingest → parse → normalize → resolve → compile)     → clean-data/gw/
-(imported from V3) → engines/osm/ (import)                                             → clean-data/osm/
+raw-data/rt/     → engines/rt/  (extract → classify → normalize → resolve_v2 → compile) → clean-data/rt/
+raw-data/gw/     → engines/gw/  (ingest → parse → normalize → resolve → compile)         → clean-data/gw/
+(imported from V3) → engines/osm/ (import → resolve_pois_v2)                               → clean-data/osm/
 
 clean-data/{rt,gw,osm}/ → cleo/compiler/ (reader → reconciler → writer) → data/cleo.db
 ```
 
 Each engine stage reads from the previous stage's output folder and writes to its own folder. Stages are independent — you can re-run any stage without affecting others.
 
-The GW watcher is special: it processes new files AND does incremental DB updates (bypasses full compiler). This is intentional — don't refactor it to go through the compiler.
+### RT Parcel Resolution (v2)
+
+The RT pipeline uses `engines/rt/parcel_resolver/resolve_v2.py` — a unified single-pass resolver that replaces the old multi-stage pipeline (pin_bridge → geocode_preflight → geocode → resolve). It does everything in one pass:
+
+1. **PIN→ARN bridge** — local GW data lookup, zero API calls
+2. **ARN resolution** — parcel cache → AgMaps API
+3. **Ontario geocoding** — geocodes all address variants via the provincial GeocodeServer
+4. **Multi-address consensus** — if multiple addresses resolve to the same parcel, high confidence
+5. **Cross-validation** — if ARN and geocode disagree, trust geocode (PointAddress) or consensus
+
+Key files:
+- `parcel_resolver/ontario_geocoder.py` — Ontario Address Locator client (Playwright + AgMaps proxy)
+- `parcel_resolver/resolve_v2.py` — Unified orchestrator with checkpoint/resume
+- `parcel_resolver/agmaps.py` — AgMaps parcel query client (ARN and spatial point queries)
+- `parcel_resolver/cache.py` — Shared parcel cache (clean-data/parcels/)
+- `parcel_resolver/token.py` — AgMaps token management
+
+Run modes:
+```bash
+python -m parcel_resolver.resolve_v2                          # resume (skip done)
+python -m parcel_resolver.resolve_v2 --reprocess              # redo all records
+python -m parcel_resolver.resolve_v2 --reprocess-unresolved   # redo only failed
+python -m parcel_resolver.resolve_v2 --limit 100              # test with N records
+```
+
+**CRITICAL: Throttle = hard stop.** If the Ontario geocoder detects rate limiting (3 consecutive errors or 10% error rate), the pipeline stops immediately and prints a warning. Do NOT auto-retry. Wait 5+ minutes before restarting.
+
+### Watchers
+
+The GW watcher processes new files AND does incremental DB updates (bypasses full compiler). This is intentional — don't refactor it to go through the compiler.
+
+The RT watcher (`engines/rt/watcher.py`) monitors for new Realtrack HTML files and runs the full pipeline automatically. It also catches unresolved addresses files and pushes them through resolve_v2. **Lockfile-aware:** if resolve_v2 is already running, the watcher only runs the safe early stages (assemble → classify → normalize) and queues resolve for the next cycle.
+
+### Daily Auto-Scraper
+
+The daily scraper (`engines/rt/scraper/daily_scraper.py`) is a lightweight, cron-friendly scraper that catches new Realtrack transactions automatically.
+
+**Key finding (verified Apr 2026):** Searching with sf3="" ("All Property Types") and sf1="" (blank region) returns ALL transactions — both categorized and uncategorized — from all 50 Ontario regions in a single search. Every RT ID from individual category searches also appears in the "All" results. This means one search is sufficient.
+
+Run modes:
+```bash
+# Daily sweep — last 14 days, all regions, all types (~2-5 min)
+python -m engines.rt.scraper.daily_scraper --daily
+
+# Weekly audit — last 90 days, catches backdated entries (~30-60 min)
+python -m engines.rt.scraper.daily_scraper --audit
+
+# Monthly gap analysis — find sequential RT ID gaps
+python -m engines.rt.scraper.daily_scraper --gaps
+
+# Dry run — count only, no downloads
+python -m engines.rt.scraper.daily_scraper --daily --dry-run
+
+# Custom lookback period
+python -m engines.rt.scraper.daily_scraper --daily --days 7
+```
+
+**How it works:**
+1. Logs in to Realtrack via httpx
+2. Discovers current property types from the search form (alerts on new/removed types)
+3. Runs ONE search: all regions, all types, last N days, sorted by date descending
+4. Pages through results, downloads only new detail pages (deduped against known RT IDs)
+5. Runs a verification pass: sums individual category counts and compares against "All" total
+6. Deposits files into `raw-data/rt/pages/_daily/` where the RT watcher picks them up
+
+**Concurrency safe:** The scraper only writes to raw-data/. If resolve_v2 is running, the watcher processes new files through normalize only and queues resolve for later.
+
+**Scheduling (cron):**
+```bash
+0 6 * * *   cd ~/cleo-turbo && python -m engines.rt.scraper.daily_scraper --daily >> /tmp/rt_daily.log 2>&1
+0 0 * * 0   cd ~/cleo-turbo && python -m engines.rt.scraper.daily_scraper --audit >> /tmp/rt_audit.log 2>&1
+0 3 1 * *   cd ~/cleo-turbo && python -m engines.rt.scraper.daily_scraper --gaps >> /tmp/rt_gaps.log 2>&1
+```
+
+Key files:
+- `engines/rt/scraper/daily_scraper.py` — Main daily scraper (daily/audit/gaps modes)
+- `engines/rt/scraper/shared.py` — Shared utilities (session, HTML parsing, credentials, property type discovery)
+- `engines/rt/scraper/search_scraper.py` — Bulk historical scraper (used for initial data load, not daily use)
+- `engines/rt/scraper/inventory.py` — RT ID inventory manager
+
+### RT Pipeline Orchestrator
+
+`engines/rt/process.py` is the single entry point for running the RT pipeline. It replaces manually calling individual stage scripts. Two modes:
+
+**Mode 1 — New records** (`--new`): Processes only records that are missing from downstream stages. This is what the daily scraper + watcher use. The orchestrator finds assembled files without a classified counterpart, classifies them, finds classified files without a normalized counterpart, normalizes them, etc. Nothing gets deleted or overwritten — it only creates missing output.
+
+**Mode 2 — Reprocess** (`--from <stage>`): Reprocesses ALL records from a given stage onward, overwriting existing output in place. Uses a marker file (`pipeline/_reprocess.json`) to track progress so crashed runs can resume. Use `--skip resolve` to keep existing parcel links when fixing a parser bug.
+
+All runs are logged to `pipeline/_processing_log.jsonl` (append-only) with timestamps, file counts, and elapsed times. Use `--status` to see pipeline state and processing history.
+
+Key files:
+- `engines/rt/process.py` — Pipeline orchestrator (--new, --from, --status, --dry-run)
+- `engines/rt/pipeline/_processing_log.jsonl` — Append-only processing history
 
 ## Reference Docs
 

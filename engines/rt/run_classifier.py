@@ -1,15 +1,25 @@
 """
-Run classifier — processes all assembled records through the classifier.
+Run classifier — processes assembled records through the classifier.
 Uses parallel processing for speed.
 
+Modes:
+    Default:      Only classify assembled files that don't have a classified
+                  counterpart yet (incremental — safe for daily use).
+    --all:        Classify ALL assembled files, overwriting existing output.
+                  Use after fixing the classifier to reprocess everything.
+    --files:      Classify only the specified files (comma-separated or glob).
+
 Usage:
-    python3 run_classifier.py                    # full run, parallel
+    python3 run_classifier.py                    # incremental (new records only)
+    python3 run_classifier.py --all              # reprocess everything
+    python3 run_classifier.py --files "RT198*.json"  # specific files
     python3 run_classifier.py --workers 4        # limit to 4 cores
     python3 run_classifier.py --limit 100        # first 100 records
     python3 run_classifier.py --single           # single-threaded (for debugging)
 """
 
 import json
+import fnmatch
 import os
 import sys
 import time
@@ -33,8 +43,17 @@ def classify_file(args):
         return (False, f'{os.path.basename(assembled_path)}: {e}')
 
 
+def find_pending_files(assembled_dir, classified_dir):
+    """Find assembled files that don't have a classified counterpart yet."""
+    assembled_files = set(f for f in os.listdir(assembled_dir) if f.endswith('.json'))
+    classified_files = set(f for f in os.listdir(classified_dir) if f.endswith('.json'))
+    return sorted(assembled_files - classified_files)
+
+
 def main():
-    parser = argparse.ArgumentParser(description='Run classifier on all assembled records')
+    parser = argparse.ArgumentParser(description='Run classifier on assembled records')
+    parser.add_argument('--all', action='store_true', help='Reprocess ALL records (overwrite existing)')
+    parser.add_argument('--files', type=str, help='Process only these files (comma-separated names or glob pattern)')
     parser.add_argument('--workers', type=int, default=None, help='Number of parallel workers (default: all cores)')
     parser.add_argument('--limit', type=int, help='Limit to first N records')
     parser.add_argument('--single', action='store_true', help='Single-threaded (for debugging)')
@@ -48,10 +67,33 @@ def main():
     classified_dir = os.path.join(config['pipeline_output'], 'classified')
     os.makedirs(classified_dir, exist_ok=True)
 
-    # Build task list
-    files = sorted([f for f in os.listdir(assembled_dir) if f.endswith('.json')])
+    # Determine which files to process
+    if args.files:
+        # Explicit file list or glob pattern
+        all_assembled = sorted(f for f in os.listdir(assembled_dir) if f.endswith('.json'))
+        parts = [p.strip() for p in args.files.split(',')]
+        files = []
+        for pattern in parts:
+            matched = fnmatch.filter(all_assembled, pattern)
+            files.extend(matched)
+        files = sorted(set(files))
+        mode = 'files'
+    elif args.all:
+        # Reprocess everything
+        files = sorted(f for f in os.listdir(assembled_dir) if f.endswith('.json'))
+        mode = 'all'
+    else:
+        # Incremental: only new files
+        files = find_pending_files(assembled_dir, classified_dir)
+        mode = 'new'
+
     if args.limit:
         files = files[:args.limit]
+
+    skipped = 0
+    if mode == 'new':
+        total_assembled = len([f for f in os.listdir(assembled_dir) if f.endswith('.json')])
+        skipped = total_assembled - len(files)
 
     tasks = [
         (os.path.join(assembled_dir, f), os.path.join(classified_dir, f))
@@ -60,8 +102,14 @@ def main():
 
     workers = 1 if args.single else (args.workers or cpu_count())
 
+    if not tasks:
+        print(f'Cleo Engine — Classifier')
+        print(f'Nothing to classify (0 pending records)')
+        return
+
     print(f'Cleo Engine — Classifier')
-    print(f'Records: {len(tasks)}')
+    print(f'Mode: {mode}')
+    print(f'Records to process: {len(tasks)}' + (f'  (skipped {skipped} already classified)' if skipped else ''))
     print(f'Workers: {workers}')
     print()
 
