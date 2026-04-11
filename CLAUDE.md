@@ -1,5 +1,14 @@
 # Cleo Turbo
 
+## Working Rules
+
+- Before diagnosing something as a bug, check Domain Facts first. Missing ARNs, PINs, empty party names, and unresolved parcels are usually normal — not broken.
+- When something looks "missing" in the data, ask whether it's expected before trying to fix it.
+- For any change that touches the pipeline, database schema, or compiler, explain what you plan to do and wait for approval before writing code.
+- Don't assume intent — if a request is ambiguous, ask.
+- Don't speculate about external systems (Realtrack behavior, GeoWarehouse quirks) as though it's established fact. If you don't know, say so.
+- When investigating an issue, state what you see factually before jumping to a diagnosis. Don't get tunnel vision on the first theory.
+
 Cleo Turbo is a commercial real estate data platform for Ontario. It ingests property transaction data from Realtrack, parcel/ownership data from GeoWarehouse, and branded POI locations from OpenStreetMap, then compiles everything into a single SQLite database that powers a React frontend and FastAPI backend. The app is a prospecting tool for commercial realtors — the goal is to centralize property research, owner lookup, and deal tracking that currently requires bouncing between 8+ disconnected tools.
 
 ## Project Structure
@@ -7,6 +16,13 @@ Cleo Turbo is a commercial real estate data platform for Ontario. It ingests pro
 ```
 cleo-turbo/
 ├── cleo/                    # Python backend
+│   ├── resolver/            # Unified Parcel Resolution Service (all sources use this)
+│   │   ├── __init__.py      # Public API: resolve(), ResolverContext, types
+│   │   ├── types.py         # ResolutionInput, ResolutionResult, GeocodeResult, Signal, Method
+│   │   ├── chain.py         # 6-step resolution chain with cross-validation
+│   │   ├── cache.py         # Canonical parcel cache (clean-data/parcels/)
+│   │   ├── pip.py           # Point-in-polygon verification + spatial grid index
+│   │   └── pin_bridge.py    # PIN→ARN bridge via GW lookup data
 │   ├── compiler/            # Reads clean-data/, assigns stable IDs, writes SQLite
 │   │   ├── reader.py        # Iterates clean-data/{rt,gw,osm}/ directories
 │   │   ├── reconciler.py    # Stable ID assignment (PRO_, CON_, GRP_)
@@ -20,7 +36,7 @@ cleo-turbo/
 │       ├── deps.py          # Dependency injection (get_db, get_current_user)
 │       └── routes/          # One file per resource (properties.py, contacts.py, etc.)
 ├── engines/                 # Data processing pipelines
-│   ├── rt/                  # Realtrack engine (extract → classify → normalize → resolve → compile)
+│   ├── rt/                  # Realtrack engine (extract → dedup → classify → normalize → resolve → compile)
 │   ├── gw/                  # GeoWarehouse engine (ingest → parse → normalize → resolve → compile)
 │   └── osm/                 # OpenStreetMap POI import
 ├── frontend/                # Vite + React 19 + TypeScript
@@ -168,7 +184,7 @@ python engines/osm/resolve_pois_v2.py --retry
 ## Data Pipeline Overview
 
 ```
-raw-data/rt/     → engines/rt/  (extract → classify → normalize → resolve_v2 → compile) → clean-data/rt/
+raw-data/rt/     → engines/rt/  (extract → dedup → classify → normalize → resolve_v2 → compile) → clean-data/rt/
 raw-data/gw/     → engines/gw/  (ingest → parse → normalize → resolve → compile)         → clean-data/gw/
 (imported from V3) → engines/osm/ (import → resolve_pois_v2)                               → clean-data/osm/
 
@@ -176,6 +192,39 @@ clean-data/{rt,gw,osm}/ → cleo/compiler/ (reader → reconciler → writer) �
 ```
 
 Each engine stage reads from the previous stage's output folder and writes to its own folder. Stages are independent — you can re-run any stage without affecting others.
+
+### Unified Parcel Resolution Service
+
+**ALL parcel resolution goes through `cleo/resolver/`.** No targeted fixes in individual pipelines. Each engine has a thin adapter that converts its file format → `ResolutionInput`, calls `resolve()`, and converts `ResolutionResult` back to the pipeline's output format.
+
+**Architecture:**
+- `cleo/resolver/` — core resolution logic (types, chain, cache, PIP, PIN bridge)
+- `engines/rt/parcel_resolver/adapter.py` — RT adapter (addresses → parcel_links)
+- `engines/gw/adapter.py` — GW adapter (normalized → parcel_links)
+- `engines/osm/adapter.py` — OSM adapter (POI → in-place update)
+
+**Resolution chain (6 steps):**
+1. PIN→ARN bridge (local GW lookup, zero API calls)
+2. ARN lookup (cache → AgMaps API)
+3. Address geocoding (Ontario geocoder, all variants, captures 44 attributes incl. Comp_score)
+4. Coordinate PIP (OSM rooftop coords → spatial query)
+5. Cross-validation (decision hierarchy: OSM coords > PointAddress > consensus > StreetAddress > ARN > PIN)
+6. PIP verification (local grid-based check, zero API calls)
+
+**Method names** (standardized across all sources): `verified`, `spatial_consensus`, `spatial_geocode`, `spatial_override`, `spatial_coords`, `arn_only`, `pin_bridge`, `unresolved`, `error`
+
+**Confidence scoring:** 0.0–1.0. verified=0.95, spatial_consensus=0.90, spatial_coords=0.90, spatial_geocode=0.85, spatial_override=0.80, arn_only=0.50, pin_bridge=0.40.
+
+**Usage:**
+```python
+from cleo.resolver import resolve, ResolverContext, ResolutionInput, GeocodableAddress
+
+ctx = ResolverContext(agmaps_client=client, geocoder_client=geocoder, pin_to_arn=pin_table)
+result = resolve(ResolutionInput(source="rt", source_id="RT156261", arn="34090010005020000000", addresses=[...]), ctx)
+print(result.resolved_arn, result.method, result.confidence)
+```
+
+**Policy: NO TARGETED FIXES.** If a record resolves to the wrong parcel, the fix goes in `cleo/resolver/chain.py`, not in the individual engine. The old `engines/rt/parcel_resolver/cache.py` and `pin_bridge.py` now redirect to `cleo/resolver/`.
 
 ### RT Parcel Resolution (v2)
 
@@ -278,6 +327,29 @@ Key files:
 - `docs/build-plan.md` — Historical. Everything listed as "needs to be built" is now built. Useful for understanding original intent, but don't treat TODOs in it as current.
 - `docs/styling-reference.md` — Design system reference (WorkOS Dashboard style). Still the target aesthetic.
 - `docs/frontend-plan.md` — Original frontend implementation plan. The app has evolved since — use the actual code as the reference for current patterns.
+
+## Domain Facts
+
+Things that are true about the data sources and domain. Read these before diagnosing any "missing data" issue. Do NOT treat any of these as bugs or things that need fixing.
+
+### Realtrack (RT)
+
+- **Not every RT transaction has an ARN.** Many records legitimately have no Assessment Roll Number. This is normal — do not flag it as a data issue or try to "fix" it.
+- **Not every RT transaction has a PIN.** Same as ARN — PINs are often absent. Normal.
+- **RT records can be incomplete at scrape time.** Newly posted transactions sometimes have partial data ($0 price, empty parties) that gets filled in hours or days later. The audit scraper (90-day lookback) is designed to catch these.
+- **RT export data and detail page data overlap but aren't identical.** The export has fields the detail page doesn't (like postal code), and the detail page has fields the export doesn't (like mortgage/charge details). The assembler merges both.
+- **"Named Individual(s)" is a real seller/buyer name.** RT uses this when the actual person's name is suppressed. It's not a parsing error.
+
+### GeoWarehouse (GW)
+
+- **GW data is parcel-level, not transaction-level.** It tells you who owns a parcel now, not the transaction history.
+- **GW assessment values are often outdated.** Ontario reassesses on a multi-year cycle. Don't compare GW assessed values to RT sale prices and call it a discrepancy.
+
+### General
+
+- **Not every property resolves to a parcel.** The parcel resolver has an ~89% success rate. The remaining ~11% are genuinely unresolvable (rural land, new subdivisions, ambiguous addresses). This is expected.
+- **The ARN is 20 digits but displayed with spaces.** e.g., "53 07 060 001 02600". These spaces are part of the display format. The raw ARN is the same string with spaces.
+- **Currency is always CAD.** All prices, assessed values, and mortgage amounts are Canadian dollars.
 
 ## Frontend API Layer
 

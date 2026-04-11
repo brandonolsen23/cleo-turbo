@@ -18,38 +18,12 @@ import argparse
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 
-GW_DIR = os.path.join(PROJECT_ROOT, 'clean-data', 'gw')
 ADDRESSES_DIR = os.path.join(PROJECT_ROOT, 'engines', 'rt', 'pipeline', 'addresses')
 PARCEL_LINKS_DIR = os.path.join(PROJECT_ROOT, 'engines', 'rt', 'pipeline', 'parcel_links')
 
-sys.path.insert(0, os.path.join(PROJECT_ROOT, 'engines', 'rt'))
-from parcel_resolver.cache import cache_has, cache_read, cache_write
-
-
-def build_gw_pin_to_arn():
-    """Load GW clean records and build PIN → ARN lookup table."""
-    pin_to_arn = {}
-
-    if not os.path.isdir(GW_DIR):
-        return pin_to_arn
-
-    for fname in os.listdir(GW_DIR):
-        if not fname.endswith('.json') or fname.startswith('_'):
-            continue
-        with open(os.path.join(GW_DIR, fname)) as f:
-            gw = json.load(f)
-
-        pin = gw.get('pin', '').strip()
-        if not pin:
-            continue
-
-        for assessment in gw.get('assessments', []):
-            arn = assessment.get('arn_api', '').strip()
-            if arn and not all(c == '0' for c in arn):
-                pin_to_arn[pin] = arn
-                break  # Use first valid ARN
-
-    return pin_to_arn
+sys.path.insert(0, PROJECT_ROOT)
+from cleo.resolver.cache import cache_has
+from cleo.resolver.pin_bridge import build_gw_pin_to_arn  # noqa: F401 — canonical location
 
 
 def run(dry_run=False):

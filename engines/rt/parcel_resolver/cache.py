@@ -1,51 +1,24 @@
 """
-Parcel cache interface — read/write/check parcel files in clean-data/parcels/.
+Parcel cache interface — REDIRECTS to the canonical location.
 
-Each parcel is one JSON file keyed by 20-digit ARN.
-The cache grows permanently and is shared across all data sources.
+The canonical cache implementation lives at cleo/resolver/cache.py.
+This file re-exports everything so existing imports continue to work.
 """
 
-import json
+import sys
 import os
 
-# clean-data/parcels/ relative to project root
-CACHE_DIR = os.path.join(
-    os.path.dirname(__file__), '..', '..', '..', 'clean-data', 'parcels'
+# Ensure project root is on path so cleo.resolver is importable
+PROJECT_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', '..', '..')
 )
-CACHE_DIR = os.path.abspath(CACHE_DIR)
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
-
-def cache_has(arn):
-    """Check if a parcel exists in the cache for this ARN."""
-    return os.path.isfile(os.path.join(CACHE_DIR, f'{arn}.json'))
-
-
-def cache_read(arn):
-    """Read a parcel from the cache. Returns dict or None if not found."""
-    path = os.path.join(CACHE_DIR, f'{arn}.json')
-    if not os.path.isfile(path):
-        return None
-    with open(path) as f:
-        return json.load(f)
-
-
-def cache_read_safe(arn):
-    """Read a parcel from cache with error handling for corrupted files."""
-    path = os.path.join(CACHE_DIR, f'{arn}.json')
-    if not os.path.isfile(path):
-        return None
-    try:
-        with open(path) as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return None
-
-
-def cache_write(arn, parcel):
-    """Write a parcel to the cache atomically. Overwrites if exists."""
-    os.makedirs(CACHE_DIR, exist_ok=True)
-    path = os.path.join(CACHE_DIR, f'{arn}.json')
-    tmp = path + '.tmp'
-    with open(tmp, 'w') as f:
-        json.dump(parcel, f, separators=(',', ':'))
-    os.replace(tmp, path)
+from cleo.resolver.cache import (  # noqa: F401
+    CACHE_DIR,
+    cache_has,
+    cache_read,
+    cache_read_safe,
+    cache_write,
+)
