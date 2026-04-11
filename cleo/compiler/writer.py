@@ -16,7 +16,145 @@ from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
                      read_parcel, count_clean_records, count_osm_records, count_gw_records)
 from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name
 from ..database.schema import drop_derived_tables, create_all_tables
+from ..database.asset_classes import seed_asset_classes, map_property_type_to_asset_class
 from ..analytics.groups import refresh_group_analytics
+
+
+def _snapshot_pre_compile(conn):
+    """Capture current state for post-compile reconciliation report."""
+    snapshot = {'groups': {}, 'contacts': {}, 'merge_targets': {}}
+    try:
+        for r in conn.execute("SELECT id, display_name, status, property_count FROM groups"):
+            snapshot['groups'][r[0]] = {
+                'display_name': r[1], 'status': r[2], 'property_count': r[3]
+            }
+        for r in conn.execute("SELECT id, display_name FROM contacts"):
+            snapshot['contacts'][r[0]] = {'display_name': r[1]}
+        for r in conn.execute(
+            "SELECT source_group_id, target_group_id FROM group_merges WHERE unmerged_at IS NULL"
+        ):
+            snapshot['merge_targets'][r[0]] = r[1]
+    except Exception:
+        pass  # Tables might not exist on first run
+    return snapshot
+
+
+def _generate_reconciliation_report(conn, pre):
+    """Compare post-compile state against pre-compile snapshot."""
+    report = {
+        'disappeared_groups': [],
+        'new_groups': [],
+        'orphaned_merges': [],
+        'property_count_swings': [],
+        'orphaned_crm_refs': [],
+    }
+
+    post_groups = {}
+    for r in conn.execute("SELECT id, display_name, status, property_count FROM groups"):
+        post_groups[r[0]] = {
+            'display_name': r[1], 'status': r[2], 'property_count': r[3]
+        }
+
+    # Disappeared groups (were active, no longer exist)
+    for gid, info in pre['groups'].items():
+        if gid not in post_groups and info['status'] != 'merged':
+            report['disappeared_groups'].append({
+                'id': gid, 'name': info['display_name'],
+                'was_property_count': info['property_count']
+            })
+
+    # New groups
+    for gid, info in post_groups.items():
+        if gid not in pre['groups']:
+            report['new_groups'].append({
+                'id': gid, 'name': info['display_name'],
+                'property_count': info['property_count']
+            })
+
+    # Property count swings (>50% change on groups with 3+ properties)
+    for gid in set(pre['groups']) & set(post_groups):
+        old_count = pre['groups'][gid]['property_count'] or 0
+        new_count = post_groups[gid]['property_count'] or 0
+        if old_count >= 3 and abs(new_count - old_count) / max(old_count, 1) > 0.5:
+            report['property_count_swings'].append({
+                'id': gid, 'name': post_groups[gid]['display_name'],
+                'old_count': old_count, 'new_count': new_count
+            })
+
+    # Orphaned merges (target doesn't exist)
+    for src, tgt in pre['merge_targets'].items():
+        if tgt not in post_groups:
+            report['orphaned_merges'].append({
+                'source_id': src, 'target_id': tgt,
+                'source_name': post_groups.get(src, {}).get('display_name', '(gone)')
+            })
+
+    # Check CRM integrity
+    checks = [
+        ("deals", "group_id", "groups"),
+        ("deals", "property_id", "properties"),
+        ("group_contacts", "group_id", "groups"),
+        ("group_contacts", "contact_id", "contacts"),
+        ("group_notes", "group_id", "groups"),
+        ("contact_notes", "contact_id", "contacts"),
+    ]
+    for table, col, ref_table in checks:
+        try:
+            count = conn.execute(
+                f"SELECT COUNT(*) FROM {table} t LEFT JOIN {ref_table} r ON t.{col} = r.id "
+                f"WHERE t.{col} IS NOT NULL AND r.id IS NULL"
+            ).fetchone()[0]
+            if count > 0:
+                report['orphaned_crm_refs'].append({
+                    'table': table, 'column': col,
+                    'ref_table': ref_table, 'count': count
+                })
+        except Exception:
+            pass
+
+    return report
+
+
+def _print_reconciliation_report(report):
+    """Print the reconciliation report to stdout."""
+    print()
+    print('=' * 60)
+    print('Reconciliation Report')
+    print('=' * 60)
+
+    if report['disappeared_groups']:
+        print(f"  DISAPPEARED GROUPS: {len(report['disappeared_groups'])}")
+        for g in report['disappeared_groups'][:10]:
+            print(f"    {g['id']} \"{g['name']}\" (had {g['was_property_count']} properties)")
+    else:
+        print('  Disappeared groups: 0')
+
+    if report['new_groups']:
+        new_with_props = [g for g in report['new_groups'] if (g['property_count'] or 0) > 0]
+        print(f"  New groups: {len(report['new_groups'])} ({len(new_with_props)} with properties)")
+    else:
+        print('  New groups: 0')
+
+    if report['orphaned_merges']:
+        print(f"  WARNING — ORPHANED MERGES: {len(report['orphaned_merges'])}")
+        for m in report['orphaned_merges']:
+            print(f"    {m['source_id']} → {m['target_id']} (target missing)")
+    else:
+        print('  Orphaned merges: 0')
+
+    if report['property_count_swings']:
+        print(f"  Property count swings (>50%): {len(report['property_count_swings'])}")
+        for s in report['property_count_swings'][:10]:
+            print(f"    {s['id']} \"{s['name']}\": {s['old_count']} → {s['new_count']}")
+
+    if report['orphaned_crm_refs']:
+        print(f"  WARNING — ORPHANED CRM REFERENCES:")
+        for o in report['orphaned_crm_refs']:
+            print(f"    {o['table']}.{o['column']} → {o['ref_table']}: {o['count']} orphaned rows")
+    else:
+        print('  CRM integrity: OK')
+
+    print('=' * 60)
 
 
 def run_compiler(conn):
@@ -30,6 +168,17 @@ def run_compiler(conn):
     print(f'Clean Records to process: {total:,}')
     print()
 
+    # Ensure system tables exist (id_mappings, etc.) before loading registry
+    create_all_tables(conn)
+
+    # Initialize ID registry BEFORE dropping tables — reads from id_mappings (system table)
+    print('Loading ID registry...')
+    registry = IDRegistry(conn)
+    registry.load()
+
+    # Snapshot current state for reconciliation report
+    pre_compile = _snapshot_pre_compile(conn)
+
     # Disable FK checks during bulk load (properties inserted after transactions)
     conn.execute("PRAGMA foreign_keys=OFF")
 
@@ -39,9 +188,8 @@ def run_compiler(conn):
     print('Recreating tables...')
     create_all_tables(conn)
 
-    # Initialize ID registry
-    registry = IDRegistry(conn)
-    registry.load()
+    # Seed asset class taxonomy
+    seed_asset_classes(conn)
 
     start = time.time()
 
@@ -100,6 +248,122 @@ def run_compiler(conn):
                 )
     conn.commit()
     print(f'  Groups: {len(group_data):,}')
+
+    # ================================================================
+    # Pass 1b: Inject user-created groups from group_overrides
+    # ================================================================
+    overrides = conn.execute(
+        "SELECT group_id, display_name, normalized_name FROM group_overrides"
+    ).fetchall()
+    if overrides:
+        print(f'  Injecting {len(overrides)} user-created group(s)...')
+        for ov in overrides:
+            gid, display, normalized = ov[0], ov[1], ov[2]
+            if normalized not in group_data:
+                group_data[normalized] = {
+                    'id': gid,
+                    'display_name': display,
+                    'normalized_name': normalized,
+                    'names': set(),
+                    'tx_count': 0,
+                    'property_arns': set(),
+                }
+                conn.execute(
+                    "INSERT OR IGNORE INTO groups (id, display_name, normalized_name, status, "
+                    "property_count, transaction_count) VALUES (?, ?, ?, 'pool', 0, 0)",
+                    (gid, display, normalized)
+                )
+            else:
+                if group_data[normalized]['id'] != gid:
+                    print(f'    WARNING: override {gid} vs data {group_data[normalized]["id"]} for {normalized}')
+        conn.commit()
+
+    # ================================================================
+    # Pass 1c: Apply group and contact field overrides from CRM
+    # ================================================================
+    # Group field overrides (status, hq_address, website, hubspot_id)
+    gfo_rows = conn.execute(
+        "SELECT group_id, status, hq_address, website, hubspot_id FROM group_field_overrides"
+    ).fetchall()
+    if gfo_rows:
+        gfo_applied = 0
+        for r in gfo_rows:
+            gid = r[0]
+            updates = []
+            params = []
+            if r[1] is not None:
+                updates.append("status = ?")
+                params.append(r[1])
+            if r[2] is not None:
+                updates.append("hq_address = ?")
+                params.append(r[2])
+            if r[3] is not None:
+                updates.append("website = ?")
+                params.append(r[3])
+            if r[4] is not None:
+                updates.append("hubspot_id = ?")
+                params.append(r[4])
+            if updates:
+                params.append(gid)
+                conn.execute(
+                    f"UPDATE groups SET {', '.join(updates)} WHERE id = ?",
+                    params
+                )
+                gfo_applied += 1
+        conn.commit()
+        if gfo_applied:
+            print(f'  Applied {gfo_applied} group field override(s)')
+
+    # ================================================================
+    # Apply active group merges (from CRM layer)
+    # ================================================================
+    active_merges = conn.execute(
+        "SELECT source_group_id, target_group_id FROM group_merges WHERE unmerged_at IS NULL"
+    ).fetchall()
+    if active_merges:
+        print(f'  Applying {len(active_merges)} active group merge(s)...')
+        # Build a redirect map (follow chains to ultimate target)
+        redirect = {}
+        for m in active_merges:
+            redirect[m[0]] = m[1]
+        # Resolve chains: if A→B and B→C, make A→C
+        for src in list(redirect.keys()):
+            target = redirect[src]
+            visited = {src}
+            while target in redirect and target not in visited:
+                visited.add(target)
+                target = redirect[target]
+            redirect[src] = target
+
+        orphaned_merges = []
+        for src, tgt in redirect.items():
+            # Verify target exists in groups table
+            target_exists = conn.execute("SELECT id FROM groups WHERE id = ?", (tgt,)).fetchone()
+            if not target_exists:
+                orphaned_merges.append((src, tgt))
+                continue
+
+            # Copy known names from source to target
+            conn.execute(
+                "INSERT OR IGNORE INTO group_names (group_id, name, normalized, source_id) "
+                "SELECT ?, name, normalized, source_id FROM group_names WHERE group_id = ?",
+                (tgt, src)
+            )
+            # Mark source as merged
+            conn.execute("UPDATE groups SET status = 'merged' WHERE id = ?", (src,))
+
+        # Also update the group_data dict so Pass 2/3 use the right group IDs
+        for norm, g in group_data.items():
+            if g['id'] in redirect and g['id'] not in dict(orphaned_merges):
+                g['id'] = redirect[g['id']]
+
+        if orphaned_merges:
+            print(f'  WARNING: {len(orphaned_merges)} orphaned merge(s) — target group does not exist:')
+            for src, tgt in orphaned_merges:
+                print(f'    {src} → {tgt} (target missing)')
+
+        conn.commit()
+        print(f'  Applied merges: {len(redirect) - len(orphaned_merges)} source groups redirected')
 
     # ================================================================
     # Pass 2: Contacts — collect all contact names, assign CON_ IDs
@@ -187,6 +451,34 @@ def run_compiler(conn):
     conn.commit()
     print(f'  Contacts: {len(contact_data):,}')
 
+    # Apply contact field overrides (email, mobile, phone, job_title, etc.)
+    cfo_rows = conn.execute(
+        "SELECT contact_id, email, mobile, phone, job_title, contact_type, status "
+        "FROM contact_field_overrides"
+    ).fetchall()
+    if cfo_rows:
+        cfo_applied = 0
+        for r in cfo_rows:
+            cid = r[0]
+            updates = []
+            params = []
+            fields = [('email', r[1]), ('mobile', r[2]), ('phone', r[3]),
+                      ('job_title', r[4]), ('contact_type', r[5]), ('status', r[6])]
+            for col, val in fields:
+                if val is not None:
+                    updates.append(f"{col} = ?")
+                    params.append(val)
+            if updates:
+                params.append(cid)
+                conn.execute(
+                    f"UPDATE contacts SET {', '.join(updates)} WHERE id = ?",
+                    params
+                )
+                cfo_applied += 1
+        conn.commit()
+        if cfo_applied:
+            print(f'  Applied {cfo_applied} contact field override(s)')
+
     # Update group contact counts
     for norm, g in group_data.items():
         count = conn.execute(
@@ -208,11 +500,18 @@ def run_compiler(conn):
         site = rec.get('site', {})
         prop = rec.get('property', {})
         parcel_info = rec.get('parcel')
+        geocoded_coords = rec.get('geocoded_coords')  # Mapbox fallback coords
 
         # Extract property type from source_folder (e.g., "Peel_Region/industrial/p033" → "industrial")
+        # Skip non-informative sources:
+        #   - _daily scraper folders use timestamps (e.g., "_daily/2026-04-09_113935/p001")
+        #   - "all" folders from bulk scraper with sf3="" don't encode a real type
         source_folder = rec.get('source_folder', '')
         folder_parts = source_folder.split('/') if source_folder else []
-        property_type = folder_parts[1] if len(folder_parts) >= 2 else ''
+        if len(folder_parts) >= 2 and not folder_parts[0].startswith('_') and folder_parts[1] != 'all':
+            property_type = folder_parts[1]
+        else:
+            property_type = ''
 
         # Determine ARN: prefer parcel-resolved ARN (validated), fall back to site ARN
         parcel_info = rec.get('parcel') or {}
@@ -262,6 +561,7 @@ def run_compiler(conn):
                     'owner_group_id': None,
                     'source_id': source_id,
                     'property_type': property_type,
+                    'geocoded_coords': geocoded_coords,
                 }
 
             pd = property_data[arn]
@@ -457,16 +757,23 @@ def run_compiler(conn):
             lat = parcel['centroid'][0] if parcel and parcel.get('centroid') else None
             lng = parcel['centroid'][1] if parcel and parcel.get('centroid') else None
 
+            # Fallback: use Mapbox geocoded coordinates when no parcel centroid
+            if lat is None and lng is None and pd.get('geocoded_coords'):
+                geo = pd['geocoded_coords']
+                lat = geo.get('lat')
+                lng = geo.get('lng')
+
+            asset_class = map_property_type_to_asset_class(pd['property_type'])
             conn.execute(
                 "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
                 "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
                 "most_recent_sale_date, most_recent_sale_price, most_recent_sale_source, transaction_count, "
-                "primary_property_type, lat, lng, parcel_geojson) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "primary_property_type, asset_class, lat, lng, parcel_geojson) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
                  pd['acreage'], pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
                  pd['source_id'], pd['sale_date'], pd['sale_price'], 'RT', pd['tx_count'],
-                 pd['property_type'], lat, lng, parcel_geojson)
+                 pd['property_type'], asset_class, lat, lng, parcel_geojson)
             )
             prop_count += 1
         except Exception as e:
@@ -527,8 +834,8 @@ def run_compiler(conn):
 
                     conn.execute(
                         "INSERT OR IGNORE INTO properties (id, arn, display_address, city, region, postal, "
-                        "transaction_count, primary_property_type, lat, lng, parcel_geojson) "
-                        "VALUES (?, ?, ?, ?, '', '', 0, 'retail', ?, ?, ?)",
+                        "transaction_count, primary_property_type, asset_class, lat, lng, parcel_geojson) "
+                        "VALUES (?, ?, ?, ?, '', '', 0, 'retail', 'retail', ?, ?, ?)",
                         (pid, arn, display_address, addr.get('city', ''),
                          p_lat, p_lng, parcel_geojson)
                     )
@@ -633,6 +940,21 @@ def run_compiler(conn):
                             updates.append("gw_municipality = ?")
                             params.append(municipality)
 
+                    # Backfill lat/lng from parcel if missing
+                    parcel = read_parcel(resolved_arn)
+                    if parcel and parcel.get('centroid'):
+                        p_lat = parcel['centroid'][0]
+                        p_lng = parcel['centroid'][1]
+                        if p_lat and p_lng:
+                            updates.append("lat = COALESCE(lat, ?)")
+                            params.append(p_lat)
+                            updates.append("lng = COALESCE(lng, ?)")
+                            params.append(p_lng)
+                            parcel_geojson = json.dumps(parcel['geometry']) if parcel.get('geometry') else None
+                            if parcel_geojson:
+                                updates.append("parcel_geojson = COALESCE(parcel_geojson, ?)")
+                                params.append(parcel_geojson)
+
                     if updates:
                         params.append(property_id)
                         conn.execute(
@@ -654,17 +976,20 @@ def run_compiler(conn):
                     if gw_assessments_list:
                         gw_municipality = gw_assessments_list[0].get('municipality', '')
 
+                    gw_property_type = gw.get('registry', {}).get('property_type', '').lower() or 'commercial'
+                    gw_asset_class = map_property_type_to_asset_class(gw_property_type)
                     conn.execute(
                         "INSERT OR IGNORE INTO properties (id, arn, display_address, city, postal, "
-                        "current_owner_name, transaction_count, primary_property_type, "
+                        "current_owner_name, transaction_count, primary_property_type, asset_class, "
                         "gw_municipality, lat, lng, parcel_geojson) "
-                        "VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?, ?)",
+                        "VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?, ?, ?)",
                         (pid, resolved_arn,
                          gw_prop.get('display_address', ''),
                          gw_prop.get('city', ''),
                          gw_prop.get('postal', ''),
                          gw_owner.get('name', ''),
-                         gw.get('registry', {}).get('property_type', '').lower() or 'commercial',
+                         gw_property_type,
+                         gw_asset_class,
                          gw_municipality,
                          p_lat, p_lng, parcel_geojson)
                     )
@@ -864,6 +1189,44 @@ def run_compiler(conn):
             print(f'  {fts}: FAILED — {e}')
     conn.commit()
 
+    # ================================================================
+    # Brand Registry — aggregate POI brands for the brand management UI
+    # ================================================================
+    print('Building brand registry...')
+    brand_rows = conn.execute("""
+        SELECT brand, category, COUNT(*) as cnt
+        FROM pois
+        WHERE brand != ''
+        GROUP BY brand
+    """).fetchall()
+
+    # Load curated brands set from CSV for is_curated flag
+    import csv as _csv
+    import os as _os_brands
+    brands_csv_path = _os_brands.path.join(
+        _os_brands.path.dirname(__file__), '..', '..', 'engines', 'osm', 'brands.csv'
+    )
+    curated_brands = set()
+    if _os_brands.path.isfile(brands_csv_path):
+        with open(brands_csv_path, newline='', encoding='utf-8') as _f:
+            for _row in _csv.DictReader(_f):
+                _name = _row.get('Brand Name', '').strip()
+                if _name:
+                    curated_brands.add(_name)
+
+    brand_reg_count = 0
+    for brand, category, count in brand_rows:
+        is_curated = 1 if brand in curated_brands else 0
+        conn.execute(
+            "INSERT OR REPLACE INTO brand_registry (brand, category, poi_count, is_curated) "
+            "VALUES (?, ?, ?, ?)",
+            (brand, category or '', count, is_curated)
+        )
+        brand_reg_count += 1
+
+    conn.commit()
+    print(f'  Brand registry: {brand_reg_count:,} brands ({sum(1 for b in brand_rows if b[0] in curated_brands):,} curated)')
+
     # Re-enable FK checks
     conn.execute("PRAGMA foreign_keys=ON")
 
@@ -888,3 +1251,20 @@ def run_compiler(conn):
     print(f'  POIs:          {poi_count:,}')
     print(f'  GW Assessments: {gw_assessment_count:,} ({gw_enriched:,} enriched)')
     print(f'  Group Analytics: {analytics_count:,}')
+
+    # ================================================================
+    # Reconciliation Report
+    # ================================================================
+    report = _generate_reconciliation_report(conn, pre_compile)
+    _print_reconciliation_report(report)
+
+    # Save report to JSON for tooling
+    import os as _os
+    report_path = _os.path.join(_os.path.dirname(__file__), '..', '..', 'data', 'reconciliation_report.json')
+    try:
+        _os.makedirs(_os.path.dirname(report_path), exist_ok=True)
+        with open(report_path, 'w') as f:
+            json.dump(report, f, indent=2)
+        print(f'\n  Report saved to {report_path}')
+    except Exception as e:
+        print(f'\n  Could not save report: {e}')

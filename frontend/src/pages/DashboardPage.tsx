@@ -99,7 +99,7 @@ export default function DashboardPage() {
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-2 rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
           <Text size="3" weight="medium" className="mb-3 block">Recent Records</Text>
-          <table className="w-full text-[14px]">
+          <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
             <thead>
               <tr className="border-b border-[var(--gray-4)]">
                 <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Source</th>

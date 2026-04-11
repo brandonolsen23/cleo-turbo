@@ -16,9 +16,28 @@ export function formatCurrency(amount: number | null | undefined): string {
 
 export function formatCompact(n: number | null | undefined): string {
   if (n == null) return "—";
-  if (Math.abs(n) >= 1_000_000) return `$${(n / 1_000_000).toFixed(1)}M`;
+  if (Math.abs(n) >= 1_000_000_000) return `$${(n / 1_000_000_000).toFixed(2)}B`;
+  if (Math.abs(n) >= 1_000_000) return `$${(n / 1_000_000).toFixed(2)}M`;
   if (Math.abs(n) >= 1_000) return `$${(n / 1_000).toFixed(0)}k`;
   return `$${n.toLocaleString()}`;
+}
+
+// ============================================================
+// Ownership
+// ============================================================
+
+export function formatOwnership(years: number | null | undefined): string {
+  if (years == null || years < 0) return "—";
+  return `${years.toFixed(1)} yrs`;
+}
+
+export function computeOwnershipYears(saleDate: string | null | undefined): number | null {
+  if (!saleDate) return null;
+  const d = new Date(saleDate + "T00:00:00");
+  if (isNaN(d.getTime())) return null;
+  const now = new Date();
+  const diffMs = now.getTime() - d.getTime();
+  return Math.round((diffMs / (365.25 * 24 * 60 * 60 * 1000)) * 10) / 10;
 }
 
 // ============================================================
@@ -92,4 +111,24 @@ export function formatStreet(address: string | null | undefined): string {
 export function formatNumber(n: number | null | undefined): string {
   if (n == null) return "—";
   return n.toLocaleString();
+}
+
+// ============================================================
+// Asset Classes
+// ============================================================
+
+const ASSET_CLASS_LABELS: Record<string, string> = {
+  retail: "Retail",
+  industrial: "Industrial",
+  multifamily: "Multifamily",
+  office: "Office",
+  land: "Land",
+  agricultural: "Agricultural",
+  mixed_use: "Mixed Use",
+  hospitality: "Hospitality",
+};
+
+export function assetClassLabel(id: string | null | undefined): string {
+  if (!id) return "—";
+  return ASSET_CLASS_LABELS[id] || titleCase(id.replace(/_/g, " "));
 }

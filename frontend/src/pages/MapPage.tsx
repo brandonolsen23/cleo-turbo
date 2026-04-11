@@ -11,7 +11,7 @@ import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate, formatStreet } from "../lib/utils";
 import { getRadixHex, propertyTypeColor, propertyTypeLabel, propertyTypeMatchExpression, categoryColor } from "../lib/theme";
 import MultiSelectDropdown from "../components/ui/MultiSelectDropdown";
-import { RETAIL_CATEGORIES, ALL_BRANDS, BRAND_TO_CATEGORY, expandBrandFilter } from "../lib/brandCategories";
+import { useBrandData } from "../hooks/useBrandData";
 
 // ============================================================
 // Constants
@@ -31,18 +31,11 @@ const PROPERTY_TYPES = [
   "other-bldg", "other-land",
 ];
 
-// Dropdown options for category and brand multi-selects
-const CATEGORY_OPTIONS = RETAIL_CATEGORIES.map((cat) => ({
-  value: cat,
-  label: cat,
-  color: categoryColor(cat),
-}));
-
-const BRAND_OPTIONS = ALL_BRANDS.map((brand) => ({
-  value: brand,
-  label: brand,
-  group: BRAND_TO_CATEGORY[brand],
-  color: categoryColor(BRAND_TO_CATEGORY[brand]),
+// Dropdown options for property type multi-select
+const PROPERTY_TYPE_OPTIONS = PROPERTY_TYPES.map((t) => ({
+  value: t,
+  label: propertyTypeLabel(t),
+  color: propertyTypeColor(t),
 }));
 
 // ============================================================
@@ -107,7 +100,9 @@ export default function MapPage() {
   const [searchParams] = useSearchParams();
   const mapRef = useRef<MapRef>(null);
 
-  // Restore viewport from URL search params (for browser back button)
+  // ============================================================
+  // Restore ALL state from URL search params (survives navigation)
+  // ============================================================
   const initialViewState = useMemo(() => {
     const lat = parseFloat(searchParams.get("lat") || "");
     const lng = parseFloat(searchParams.get("lng") || "");
@@ -119,26 +114,95 @@ export default function MapPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Only read on mount
 
+  // Parse saved filter state from URL (read once on mount)
+  const savedFilters = useMemo(() => {
+    const p = searchParams;
+    return {
+      brands: p.get("brands") ? new Set(p.get("brands")!.split(",")) : new Set<string>(),
+      categories: p.get("categories") ? new Set(p.get("categories")!.split(",")) : new Set<string>(),
+      city: p.get("city") || "",
+      types: p.get("types") ? new Set(p.get("types")!.split(",")) : new Set<string>(),
+      minPrice: p.get("minPrice") || "",
+      maxPrice: p.get("maxPrice") || "",
+      minOwnership: p.get("minOwnership") || "",
+      maxOwnership: p.get("maxOwnership") || "",
+      sort: (p.get("sort") as SortOption) || "latest_date",
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only read on mount
+
+  // Brand data from API (replaces hardcoded brandCategories.ts)
+  const brandData = useBrandData();
+
+  // Build dynamic dropdown options from API-backed brand data
+  const CATEGORY_OPTIONS = useMemo(
+    () =>
+      brandData.categories.map((cat) => ({
+        value: cat.id,
+        label: cat.id,
+        color: categoryColor(cat.id),
+      })),
+    [brandData.categories]
+  );
+
+  const BRAND_OPTIONS = useMemo(
+    () =>
+      brandData.allBrands.map((brand) => ({
+        value: brand,
+        label: brand,
+        group: brandData.brandToCategory[brand] || "",
+        color: categoryColor(brandData.brandToCategory[brand] || ""),
+      })),
+    [brandData.allBrands, brandData.brandToCategory]
+  );
+
   // Data
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [geoData, setGeoData] = useState<any>(EMPTY_FC);
   const [parcelData, setParcelData] = useState<any>(EMPTY_FC);
   const [selectedParcel, setSelectedParcel] = useState<any>(EMPTY_FC);
   const [loading, setLoading] = useState(true);
-  const [categoryFilters, setCategoryFilters] = useState<Set<string>>(new Set());
-  const [brandFilters, setBrandFilters] = useState<Set<string>>(new Set());
+  const [categoryFilters, setCategoryFilters] = useState<Set<string>>(savedFilters.categories);
+  const [brandFilters, setBrandFilters] = useState<Set<string>>(savedFilters.brands);
 
   // UI state
   const [popupInfo, setPopupInfo] = useState<PopupInfo | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [sortBy, setSortBy] = useState<SortOption>("latest_date");
-  const [showFilters, setShowFilters] = useState(false);
+  const [sortBy, setSortBy] = useState<SortOption>(savedFilters.sort);
+  const [showFilters, setShowFilters] = useState(
+    savedFilters.brands.size > 0 || savedFilters.categories.size > 0 ||
+    savedFilters.city !== "" || savedFilters.types.size > 0 ||
+    savedFilters.minPrice !== "" || savedFilters.maxPrice !== "" ||
+    savedFilters.minOwnership !== "" || savedFilters.maxOwnership !== "",
+  );
 
   // Filters
-  const [cityFilter, setCityFilter] = useState<string>("");
-  const [typeFilters, setTypeFilters] = useState<Set<string>>(new Set());
-  const [minPrice, setMinPrice] = useState<string>("");
-  const [maxPrice, setMaxPrice] = useState<string>("");
+  const [cityFilter, setCityFilter] = useState<string>(savedFilters.city);
+  const [typeFilters, setTypeFilters] = useState<Set<string>>(savedFilters.types);
+  const [minPrice, setMinPrice] = useState<string>(savedFilters.minPrice);
+  const [maxPrice, setMaxPrice] = useState<string>(savedFilters.maxPrice);
+  const [minOwnership, setMinOwnership] = useState<string>(savedFilters.minOwnership);
+  const [maxOwnership, setMaxOwnership] = useState<string>(savedFilters.maxOwnership);
+
+  // Sync filter state to URL params so it survives navigation
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    // Write filters — set or delete to keep URL clean
+    const setOrDelete = (key: string, val: string) => {
+      if (val) params.set(key, val);
+      else params.delete(key);
+    };
+    setOrDelete("brands", [...brandFilters].join(","));
+    setOrDelete("categories", [...categoryFilters].join(","));
+    setOrDelete("city", cityFilter);
+    setOrDelete("types", [...typeFilters].join(","));
+    setOrDelete("minPrice", minPrice);
+    setOrDelete("maxPrice", maxPrice);
+    setOrDelete("minOwnership", minOwnership);
+    setOrDelete("maxOwnership", maxOwnership);
+    setOrDelete("sort", sortBy === "latest_date" ? "" : sortBy);
+    window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
+  }, [brandFilters, categoryFilters, cityFilter, typeFilters, minPrice, maxPrice, minOwnership, maxOwnership, sortBy]);
   const [cities, setCities] = useState<string[]>([]);
 
   // Viewport tracking for property list
@@ -251,8 +315,8 @@ export default function MapPage() {
       return;
     }
 
-    // Check unclustered points
-    const pointFeatures = map.queryRenderedFeatures(e.point, { layers: ["unclustered-point"] });
+    // Check unclustered points (matched + dimmed neighbours)
+    const pointFeatures = map.queryRenderedFeatures(e.point, { layers: ["unclustered-point", "dimmed-point"] });
     if (pointFeatures.length > 0) {
       const feature = pointFeatures[0];
       const coords = (feature.geometry as any).coordinates;
@@ -331,8 +395,8 @@ export default function MapPage() {
 
   // Expand category selections into a combined brand set for filtering
   const activeBrands = useMemo(
-    () => expandBrandFilter(categoryFilters, brandFilters),
-    [categoryFilters, brandFilters],
+    () => brandData.expandBrandFilter(categoryFilters, brandFilters),
+    [categoryFilters, brandFilters, brandData.expandBrandFilter],
   );
 
   const hasBrandFilter = activeBrands.size > 0;
@@ -347,13 +411,11 @@ export default function MapPage() {
   }, [hasBrandFilter, activeBrands]);
 
   /**
-   * Hard filters (city, type, price) remove features entirely.
-   * Brand/category is a soft filter — it stamps `_matched` on each
-   * feature so the map can dim non-matching ones instead of hiding them.
+   * Apply hard filters (city, type, price) that remove features entirely.
+   * Returns features surviving the non-brand filters.
    */
-  const filterFeatures = useCallback((features: any[]) => {
+  const applyHardFilters = useCallback((features: any[]) => {
     let filtered = features;
-    // Hard filters — these remove features
     if (cityFilter) {
       filtered = filtered.filter((f: any) => f.properties.city === cityFilter);
     }
@@ -368,9 +430,55 @@ export default function MapPage() {
       const max = parseInt(maxPrice);
       if (!isNaN(max)) filtered = filtered.filter((f: any) => (f.properties.latest_price ?? 0) <= max);
     }
-    // Soft filter — stamp _matched flag for brand/category dimming
+    if (minOwnership) {
+      const min = parseFloat(minOwnership);
+      if (!isNaN(min)) filtered = filtered.filter((f: any) => f.properties.ownership_years != null && f.properties.ownership_years >= min);
+    }
+    if (maxOwnership) {
+      const max = parseFloat(maxOwnership);
+      if (!isNaN(max)) filtered = filtered.filter((f: any) => f.properties.ownership_years != null && f.properties.ownership_years <= max);
+    }
+    return filtered;
+  }, [cityFilter, typeFilters, minPrice, maxPrice, minOwnership, maxOwnership]);
+
+  /**
+   * Brand filter splits features into two sets:
+   * - matched: brand-matching features go into the clustered source (visible at all zooms)
+   * - dimmed:  non-matching features go into a separate unclustered source (visible only when zoomed in)
+   * This way clusters reflect the brand filter, but you can still click neighbours up close.
+   */
+  const filteredGeoData = useMemo(() => {
+    if (!geoData || geoData.type !== "FeatureCollection") return EMPTY_FC;
+    let features = applyHardFilters(geoData.features || []);
     if (hasBrandFilter) {
-      filtered = filtered.map((f: any) => ({
+      features = features.filter((f: any) => featureMatchesBrands(f));
+    }
+    features = features.map((f: any) => ({
+      ...f,
+      properties: { ...f.properties, _matched: 1 },
+    }));
+    return { type: "FeatureCollection" as const, features };
+  }, [geoData, applyHardFilters, hasBrandFilter, featureMatchesBrands]);
+
+  // Non-matching neighbours — only used when a brand filter is active
+  const dimmedGeoData = useMemo(() => {
+    if (!hasBrandFilter || !geoData || geoData.type !== "FeatureCollection") return EMPTY_FC;
+    let features = applyHardFilters(geoData.features || []);
+    features = features
+      .filter((f: any) => !featureMatchesBrands(f))
+      .map((f: any) => ({
+        ...f,
+        properties: { ...f.properties, _matched: 0 },
+      }));
+    return { type: "FeatureCollection" as const, features };
+  }, [geoData, applyHardFilters, hasBrandFilter, featureMatchesBrands]);
+
+  // Filtered parcel polygons for the parcels source
+  const filteredParcelData = useMemo(() => {
+    if (!parcelData || parcelData.type !== "FeatureCollection") return EMPTY_FC;
+    let features = applyHardFilters(parcelData.features || []);
+    if (hasBrandFilter) {
+      features = features.map((f: any) => ({
         ...f,
         properties: {
           ...f.properties,
@@ -378,28 +486,13 @@ export default function MapPage() {
         },
       }));
     } else {
-      // No brand filter — all matched
-      filtered = filtered.map((f: any) => ({
+      features = features.map((f: any) => ({
         ...f,
         properties: { ...f.properties, _matched: 1 },
       }));
     }
-    return filtered;
-  }, [cityFilter, typeFilters, minPrice, maxPrice, hasBrandFilter, featureMatchesBrands]);
-
-  // Filtered GeoJSON for the map points source
-  const filteredGeoData = useMemo(() => {
-    if (!geoData || geoData.type !== "FeatureCollection") return EMPTY_FC;
-    const features = filterFeatures(geoData.features || []);
     return { type: "FeatureCollection" as const, features };
-  }, [geoData, filterFeatures]);
-
-  // Filtered parcel polygons for the parcels source
-  const filteredParcelData = useMemo(() => {
-    if (!parcelData || parcelData.type !== "FeatureCollection") return EMPTY_FC;
-    const features = filterFeatures(parcelData.features || []);
-    return { type: "FeatureCollection" as const, features };
-  }, [parcelData, filterFeatures]);
+  }, [parcelData, applyHardFilters, hasBrandFilter, featureMatchesBrands]);
 
   // Visible properties for the list panel (filtered + viewport-bounded + sorted)
   const visibleProperties = useMemo(() => {
@@ -417,12 +510,6 @@ export default function MapPage() {
     // Sort: matched items first when brand filter is active, then by sort option
     const sorted = [...features];
     sorted.sort((a: any, b: any) => {
-      // Matched items float to top when brand filter active
-      if (hasBrandFilter) {
-        const aMatch = a.properties._matched ?? 1;
-        const bMatch = b.properties._matched ?? 1;
-        if (aMatch !== bMatch) return bMatch - aMatch;
-      }
       switch (sortBy) {
         case "latest_date":
           return (b.properties.latest_date || "").localeCompare(a.properties.latest_date || "");
@@ -464,6 +551,8 @@ export default function MapPage() {
     maxPrice ? 1 : 0,
     categoryFilters.size > 0 ? 1 : 0,
     brandFilters.size > 0 ? 1 : 0,
+    minOwnership ? 1 : 0,
+    maxOwnership ? 1 : 0,
   ].reduce((a, b) => a + b, 0);
 
   const clearFilters = () => {
@@ -471,18 +560,13 @@ export default function MapPage() {
     setTypeFilters(new Set());
     setMinPrice("");
     setMaxPrice("");
+    setMinOwnership("");
+    setMaxOwnership("");
     setCategoryFilters(new Set());
     setBrandFilters(new Set());
   };
 
-  const toggleType = (t: string) => {
-    setTypeFilters((prev) => {
-      const next = new Set(prev);
-      if (next.has(t)) next.delete(t);
-      else next.add(t);
-      return next;
-    });
-  };
+
 
   // ============================================================
   // Property list card click
@@ -566,6 +650,29 @@ export default function MapPage() {
                 style={{ width: 90 }}
               />
 
+              <span className="text-[11px] mx-0.5" style={{ color: "var(--gray-8)" }}>|</span>
+
+              {/* Ownership range */}
+              <input
+                type="number"
+                step="0.5"
+                placeholder="Min yrs"
+                value={minOwnership}
+                onChange={(e) => setMinOwnership(e.target.value)}
+                className="h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white"
+                style={{ width: 80 }}
+              />
+              <span className="text-[12px]" style={{ color: "var(--gray-9)" }}>to</span>
+              <input
+                type="number"
+                step="0.5"
+                placeholder="Max yrs"
+                value={maxOwnership}
+                onChange={(e) => setMaxOwnership(e.target.value)}
+                className="h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white"
+                style={{ width: 80 }}
+              />
+
               {activeFilterCount > 0 && (
                 <Button size="1" variant="ghost" onClick={clearFilters}>Clear</Button>
               )}
@@ -577,10 +684,10 @@ export default function MapPage() {
           </div>
         </div>
 
-        {/* Property type badges (when filter expanded) */}
+        {/* Property type / category / brand dropdowns (when filter expanded) */}
         {showFilters && (
           <div
-            className="absolute left-0 right-0 z-10 flex flex-wrap gap-1.5 px-3 py-2 border-b"
+            className="absolute left-0 right-0 z-10 flex flex-wrap items-center gap-2 px-3 py-2 border-b"
             style={{
               top: "var(--map-filter-height)",
               background: "rgba(255,255,255,0.95)",
@@ -588,22 +695,12 @@ export default function MapPage() {
               borderColor: "var(--gray-4)",
             }}
           >
-            {PROPERTY_TYPES.map((t) => (
-              <button
-                key={t}
-                onClick={() => toggleType(t)}
-                className="px-2 py-0.5 rounded text-[12px] border transition-colors"
-                style={{
-                  background: typeFilters.has(t) ? getRadixHex(propertyTypeColor(t), 4) : "transparent",
-                  borderColor: typeFilters.has(t) ? getRadixHex(propertyTypeColor(t), 7) : "var(--gray-6)",
-                  color: typeFilters.has(t) ? getRadixHex(propertyTypeColor(t), 11) : "var(--gray-11)",
-                  fontWeight: typeFilters.has(t) ? 500 : 400,
-                }}
-              >
-                {propertyTypeLabel(t)}
-              </button>
-            ))}
-            <span className="text-[11px] mx-1" style={{ color: "var(--gray-8)" }}>|</span>
+            <MultiSelectDropdown
+              placeholder="Property Types"
+              options={PROPERTY_TYPE_OPTIONS}
+              selected={typeFilters}
+              onChange={setTypeFilters}
+            />
             <MultiSelectDropdown
               placeholder="Categories"
               options={CATEGORY_OPTIONS}
@@ -631,7 +728,7 @@ export default function MapPage() {
           onClick={onMapClick}
           onMoveEnd={onMoveEnd}
           onLoad={onMapLoad}
-          interactiveLayerIds={["clusters", "unclustered-point", "parcel-fill"]}
+          interactiveLayerIds={["clusters", "unclustered-point", "dimmed-point", "parcel-fill"]}
           onMouseEnter={onMapMouseEnter}
           onMouseLeave={onMapMouseLeave}
         >
@@ -698,6 +795,24 @@ export default function MapPage() {
               }}
             />
           </Source>
+
+          {/* Dimmed neighbours — non-matching properties visible only when zoomed in */}
+          {hasBrandFilter && (
+            <Source id="dimmed-properties" type="geojson" data={dimmedGeoData}>
+              <Layer
+                id="dimmed-point"
+                type="circle"
+                minzoom={PARCEL_ZOOM_THRESHOLD}
+                paint={{
+                  "circle-color": getRadixHex("gray", 7),
+                  "circle-radius": 6,
+                  "circle-stroke-width": 1.5,
+                  "circle-stroke-color": "#ffffff",
+                  "circle-opacity": 0.4,
+                }}
+              />
+            </Source>
+          )}
 
           {/* Parcel polygons — loaded at zoom >= 14, dimmed when unmatched */}
           <Source id="parcels" type="geojson" data={filteredParcelData}>

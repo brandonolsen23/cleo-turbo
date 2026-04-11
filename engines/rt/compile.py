@@ -10,9 +10,11 @@ Writes:
     clean-data/rt/{RT_ID}.json     (one Clean Record per unique RT ID)
 
 Deduplication:
-    The same RT ID can appear multiple times (same transaction scraped under
-    different property-type folders). This stage picks the best record per RT ID
-    using a scoring function, and writes one Clean Record.
+    Early dedup now happens in dedup.py (before classify). By the time files
+    reach compile, each RT ID should have only one file in classified/.
+    The grouping/scoring logic below is kept as a SAFETY NET — if duplicates
+    slip through, compile still picks the best one. In normal operation,
+    every group will be size 1.
 
 Usage:
     python3 compile.py
@@ -36,14 +38,16 @@ from engines.shared.io import safe_write_json
 CLASSIFIED_DIR = os.path.join(os.path.dirname(__file__), 'pipeline', 'classified')
 ADDRESSES_DIR = os.path.join(os.path.dirname(__file__), 'pipeline', 'addresses')
 PARCEL_LINKS_DIR = os.path.join(os.path.dirname(__file__), 'pipeline', 'parcel_links')
+GEOCODED_DIR = os.path.join(os.path.dirname(__file__), 'pipeline', 'geocoded')
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '..', '..', 'clean-data', 'rt')
 
-for d in [CLASSIFIED_DIR, ADDRESSES_DIR, PARCEL_LINKS_DIR, OUTPUT_DIR]:
+for d in [CLASSIFIED_DIR, ADDRESSES_DIR, PARCEL_LINKS_DIR, GEOCODED_DIR, OUTPUT_DIR]:
     globals()[list(globals().keys())[-1]]  # no-op, just to keep linter happy
 
 CLASSIFIED_DIR = os.path.abspath(CLASSIFIED_DIR)
 ADDRESSES_DIR = os.path.abspath(ADDRESSES_DIR)
 PARCEL_LINKS_DIR = os.path.abspath(PARCEL_LINKS_DIR)
+GEOCODED_DIR = os.path.abspath(GEOCODED_DIR)
 OUTPUT_DIR = os.path.abspath(OUTPUT_DIR)
 
 
@@ -88,7 +92,7 @@ def score_record(classified, addresses, parcel_link):
     return score
 
 
-def build_clean_record(classified, addresses, parcel_link):
+def build_clean_record(classified, addresses, parcel_link, geocoded=None):
     """Merge classified + addresses + parcel_link into a Clean Record."""
     header = classified.get('header', {})
     seller = classified.get('seller', {})
@@ -98,11 +102,16 @@ def build_clean_record(classified, addresses, parcel_link):
     # Parcel data
     parcel = None
     if parcel_link and parcel_link.get('resolved_arn'):
-        parcel = {
-            'resolved_arn': parcel_link['resolved_arn'],
-            'method': parcel_link['method'],
-            'parcel_file': parcel_link['parcel_file'],
-        }
+        arn = parcel_link['resolved_arn']
+        # Handle both string ARNs and dict-format ARNs from PIN bridge
+        if isinstance(arn, dict):
+            arn = arn.get('api_format') or arn.get('original') or ''
+        if arn:
+            parcel = {
+                'resolved_arn': arn,
+                'method': parcel_link.get('method', 'unknown'),
+                'parcel_file': parcel_link.get('parcel_file'),
+            }
 
     return {
         'source_id': classified['rt_id'],
@@ -157,6 +166,9 @@ def build_clean_record(classified, addresses, parcel_link):
         },
 
         'parcel': parcel,
+
+        # Geocoded coordinates (Mapbox fallback when no parcel centroid)
+        'geocoded_coords': geocoded.get('result') if geocoded else None,
 
         'consideration': classified.get('consideration', {}),
 
@@ -254,7 +266,29 @@ def run(limit=None, dry_run=False):
 
             # Build the Clean Record from the best candidate
             classified, addresses, parcel_link = best_data
-            clean_record = build_clean_record(classified, addresses, parcel_link)
+
+            # Load geocoded coordinates if available
+            # v2 parcel_links embed geocode data directly; fall back to legacy geocoded/ files
+            geocoded = None
+            if parcel_link and parcel_link.get('geocode'):
+                # v2 format: geocode data embedded in parcel_link
+                geo = parcel_link['geocode']
+                geocoded = {
+                    'result': {
+                        'lat': geo.get('lat'),
+                        'lng': geo.get('lng'),
+                        'relevance': (geo.get('score', 0) / 100.0),
+                        'place_name': geo.get('match_addr', ''),
+                    }
+                }
+            else:
+                # Legacy format: separate geocoded/ file (Mapbox)
+                geocoded_path = os.path.join(GEOCODED_DIR, best_fname)
+                if os.path.isfile(geocoded_path):
+                    with open(geocoded_path) as f:
+                        geocoded = json.load(f)
+
+            clean_record = build_clean_record(classified, addresses, parcel_link, geocoded)
 
             # Write to clean-data/rt/
             out_path = os.path.join(OUTPUT_DIR, f'{rt_id}.json')

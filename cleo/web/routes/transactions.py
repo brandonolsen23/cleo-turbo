@@ -4,7 +4,7 @@ Transactions API — browse, search, detail.
 
 import json
 from fastapi import APIRouter, Depends, HTTPException, Query
-from ...web.deps import get_db, get_current_user
+from ...web.deps import get_db, get_current_user, fts_query
 
 router = APIRouter()
 
@@ -81,14 +81,15 @@ def search_transactions(
     db=Depends(get_db),
     user=Depends(get_current_user),
 ):
-    """FTS5 full-text search on transactions."""
+    """Full-text search on transactions."""
+    like_val = f"%{q.strip()}%"
     rows = db.execute(
         "SELECT t.source_id, t.property_id, t.sale_date, t.sale_price, t.display_address, t.city, "
         "t.seller_parties, t.buyer_parties "
         "FROM transactions t "
-        "WHERE t.rowid IN (SELECT rowid FROM transactions_fts WHERE transactions_fts MATCH ?) "
+        "WHERE t.display_address LIKE ? OR t.city LIKE ? OR t.seller_parties LIKE ? OR t.buyer_parties LIKE ? "
         "LIMIT ?",
-        (q, limit)
+        (like_val, like_val, like_val, like_val, limit)
     ).fetchall()
     results = []
     for r in rows:

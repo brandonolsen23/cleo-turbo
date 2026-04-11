@@ -2,8 +2,24 @@
 Dependency injection for FastAPI routes.
 """
 
+import re
 from fastapi import Request, HTTPException, Depends
 from ..database.connection import get_connection
+
+
+def fts_query(q: str) -> str:
+    """Sanitize a user search string for FTS5 MATCH with prefix support.
+
+    Strips FTS5 operators and appends * to the last token so partial
+    typing works (e.g. "248 M" matches "248 Manitoba Street").
+    """
+    # Remove FTS5 special operators and punctuation (keep alphanumeric, spaces, hyphens)
+    cleaned = re.sub(r'[^\w\s\-]', ' ', q)
+    tokens = cleaned.split()
+    if not tokens:
+        return '""'
+    # Last token gets a prefix wildcard; others stay as-is
+    return " ".join(tokens[:-1] + [tokens[-1] + "*"])
 
 
 def get_db():

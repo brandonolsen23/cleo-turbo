@@ -1,11 +1,14 @@
 """
-Run classifier — processes assembled records through the classifier.
+Run classifier — processes deduped records through the classifier.
 Uses parallel processing for speed.
 
+Reads from pipeline/deduped/ (output of dedup stage). If deduped/ doesn't
+exist or is empty, falls back to pipeline/assembled/ for backward compat.
+
 Modes:
-    Default:      Only classify assembled files that don't have a classified
+    Default:      Only classify files that don't have a classified
                   counterpart yet (incremental — safe for daily use).
-    --all:        Classify ALL assembled files, overwriting existing output.
+    --all:        Classify ALL files, overwriting existing output.
                   Use after fixing the classifier to reprocess everything.
     --files:      Classify only the specified files (comma-separated or glob).
 
@@ -30,24 +33,38 @@ from classifier.classify import classify_record
 
 
 def classify_file(args):
-    """Classify a single assembled file. Designed for multiprocessing.Pool."""
-    assembled_path, classified_path = args
+    """Classify a single file. Designed for multiprocessing.Pool."""
+    input_path, classified_path = args
     try:
-        with open(assembled_path) as f:
+        with open(input_path) as f:
             assembled = json.load(f)
         classified = classify_record(assembled)
         with open(classified_path, 'w') as f:
             json.dump(classified, f, indent=2)
         return (True, None)
     except Exception as e:
-        return (False, f'{os.path.basename(assembled_path)}: {e}')
+        return (False, f'{os.path.basename(input_path)}: {e}')
 
 
-def find_pending_files(assembled_dir, classified_dir):
-    """Find assembled files that don't have a classified counterpart yet."""
-    assembled_files = set(f for f in os.listdir(assembled_dir) if f.endswith('.json'))
+def find_pending_files(input_dir, classified_dir):
+    """Find input files that don't have a classified counterpart yet."""
+    input_files = set(f for f in os.listdir(input_dir) if f.endswith('.json'))
     classified_files = set(f for f in os.listdir(classified_dir) if f.endswith('.json'))
-    return sorted(assembled_files - classified_files)
+    return sorted(input_files - classified_files)
+
+
+def resolve_input_dir(config):
+    """Determine the input directory: deduped/ if populated, else assembled/.
+
+    After the dedup stage is integrated, deduped/ is the canonical input.
+    Falls back to assembled/ for backward compatibility.
+    """
+    deduped_dir = os.path.join(config['pipeline_output'], 'deduped')
+    assembled_dir = os.path.join(config['pipeline_output'], 'assembled')
+
+    if os.path.isdir(deduped_dir) and any(f.endswith('.json') for f in os.listdir(deduped_dir)):
+        return deduped_dir
+    return assembled_dir
 
 
 def main():
@@ -63,28 +80,30 @@ def main():
     with open(config_path) as f:
         config = json.load(f)
 
-    assembled_dir = os.path.join(config['pipeline_output'], 'assembled')
+    input_dir = resolve_input_dir(config)
     classified_dir = os.path.join(config['pipeline_output'], 'classified')
     os.makedirs(classified_dir, exist_ok=True)
+
+    input_label = 'deduped' if 'deduped' in input_dir else 'assembled'
 
     # Determine which files to process
     if args.files:
         # Explicit file list or glob pattern
-        all_assembled = sorted(f for f in os.listdir(assembled_dir) if f.endswith('.json'))
+        all_input = sorted(f for f in os.listdir(input_dir) if f.endswith('.json'))
         parts = [p.strip() for p in args.files.split(',')]
         files = []
         for pattern in parts:
-            matched = fnmatch.filter(all_assembled, pattern)
+            matched = fnmatch.filter(all_input, pattern)
             files.extend(matched)
         files = sorted(set(files))
         mode = 'files'
     elif args.all:
         # Reprocess everything
-        files = sorted(f for f in os.listdir(assembled_dir) if f.endswith('.json'))
+        files = sorted(f for f in os.listdir(input_dir) if f.endswith('.json'))
         mode = 'all'
     else:
         # Incremental: only new files
-        files = find_pending_files(assembled_dir, classified_dir)
+        files = find_pending_files(input_dir, classified_dir)
         mode = 'new'
 
     if args.limit:
@@ -92,11 +111,11 @@ def main():
 
     skipped = 0
     if mode == 'new':
-        total_assembled = len([f for f in os.listdir(assembled_dir) if f.endswith('.json')])
-        skipped = total_assembled - len(files)
+        total_input = len([f for f in os.listdir(input_dir) if f.endswith('.json')])
+        skipped = total_input - len(files)
 
     tasks = [
-        (os.path.join(assembled_dir, f), os.path.join(classified_dir, f))
+        (os.path.join(input_dir, f), os.path.join(classified_dir, f))
         for f in files
     ]
 
@@ -108,7 +127,7 @@ def main():
         return
 
     print(f'Cleo Engine — Classifier')
-    print(f'Mode: {mode}')
+    print(f'Mode: {mode}  (reading from {input_label}/)')
     print(f'Records to process: {len(tasks)}' + (f'  (skipped {skipped} already classified)' if skipped else ''))
     print(f'Workers: {workers}')
     print()

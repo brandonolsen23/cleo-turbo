@@ -5,12 +5,14 @@
 export interface OrchestratorStatus {
   stages: {
     assembled: number;
+    deduped: number;
     classified: number;
     normalized: number;
     resolved: number;
     clean_data: number;
   };
   pending: {
+    dedup: number;
     classify: number;
     normalize: number;
     resolve: number;
@@ -52,6 +54,70 @@ export interface OrchestratorRunResponse {
 export interface OrchestratorLogResponse {
   lines: string[];
   message?: string;
+}
+
+// ============================================================
+// Daily Scraper
+// ============================================================
+
+export interface ScraperRunMeta {
+  run_dir: string;
+  mode: string;
+  start_date: string;
+  end_date: string;
+  lookback_days: number;
+  total_found: number;
+  new_downloaded: number;
+  already_known: number;
+  new_rt_ids: string[];
+  verification_ok: boolean;
+  dry_run: boolean;
+  completed_at: string;
+}
+
+export interface ScraperStatus {
+  running: boolean;
+  run_status: {
+    running: boolean;
+    mode: string;
+    dry_run: boolean;
+    days: number;
+    started_at: number;
+    pid: number;
+    command: string;
+  } | null;
+  recent_runs: ScraperRunMeta[];
+}
+
+export interface ScraperRunResponse {
+  success: boolean;
+  mode: string;
+  dry_run: boolean;
+  pid: number;
+  message: string;
+}
+
+export interface ReprocessResponse {
+  success: boolean;
+  rt_ids: string[];
+  from_stage: string;
+  dry_run: boolean;
+  pid: number;
+  message: string;
+}
+
+export interface ReprocessStatus {
+  running: boolean;
+  run_status: {
+    running: boolean;
+    rt_ids: string[];
+    from_stage: string;
+    dry_run: boolean;
+    skip_resolve: boolean;
+    started_at: number;
+    pid: number;
+    command: string;
+  } | null;
 }
 
 // ============================================================
@@ -287,6 +353,7 @@ export interface ContactBrowseItem {
   status: string;
   contact_type: string | null;
   transaction_count: number;
+  total_buy_value: number | null;
   first_seen_date: string | null;
   last_seen_date: string | null;
   job_title: string | null;
@@ -807,4 +874,231 @@ export interface GeoResponse {
   type: "FeatureCollection";
   features: GeoPropertyFeature[];
   total: number;
+}
+
+// ============================================================
+// Group Consolidation (contact-centric merge workflow)
+// ============================================================
+
+export interface AffiliatedGroup {
+  id: string;
+  display_name: string;
+  normalized_name: string;
+  status: string;
+  property_count: number;
+  transaction_count: number;
+  contact_count: number;
+  is_current_group: number;
+  shared_transactions: number;
+}
+
+export interface AffiliatedGroupsResponse {
+  contact: { id: string; display_name: string };
+  affiliated_groups: AffiliatedGroup[];
+}
+
+export interface CreateGroupResponse {
+  id: string;
+  display_name: string;
+  normalized_name: string;
+}
+
+export interface MergePreviewResponse {
+  source_count: number;
+  target_id: string;
+  affected_contacts: { id: string; name: string }[];
+  affected_properties: number;
+  affected_transactions: number;
+}
+
+// ============================================================
+// Brand Registry
+// ============================================================
+
+export interface BrandItem {
+  brand: string;
+  category: string | null;
+  poi_count: number;
+  is_curated: boolean;
+  is_favorite: boolean;
+}
+
+export interface BrandBrowseResponse {
+  brands: BrandItem[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface BrandFavorite {
+  brand: string;
+  category: string | null;
+  poi_count: number;
+  is_curated: boolean;
+}
+
+export interface BrandFavoritesResponse {
+  favorites: BrandFavorite[];
+}
+
+export interface BrandCategory {
+  id: string;
+  color: string;
+}
+
+export interface BrandCategoriesResponse {
+  categories: BrandCategory[];
+}
+
+// ── Sell Opportunities ──
+
+export type SellOppStatus = "active" | "on_hold" | "stale" | "matched" | "closed_won" | "closed_lost";
+
+export interface SellOpportunity {
+  id: string;
+  property_id: string;
+  seller_contact_id: string | null;
+  seller_group_id: string | null;
+  deal_value: number | null;
+  status: SellOppStatus;
+  owner: string | null;
+  notes: string | null;
+  last_activity_at: string;
+  decay_days: number;
+  created_at: string;
+  updated_at: string;
+  // Joined fields
+  display_address: string;
+  city: string | null;
+  region: string | null;
+  asset_class: string | null;
+  lat: number | null;
+  lng: number | null;
+  most_recent_sale_price: number | null;
+  most_recent_sale_date: string | null;
+  seller_contact_name: string | null;
+  seller_group_name: string | null;
+  is_stale: number;
+  days_since_activity: number;
+}
+
+export interface SellOpportunityDetail extends SellOpportunity {
+  acreage: number | null;
+  current_owner_name: string | null;
+  current_owner_group_id: string | null;
+  seller_contact_phone: string | null;
+  seller_contact_email: string | null;
+  activities: Activity[];
+  matching_mandates: MatchingMandate[];
+}
+
+export interface MatchingMandate {
+  id: string;
+  contact_id: string | null;
+  group_id: string | null;
+  criteria_json: string | null;
+  status: string;
+  owner: string | null;
+  contact_name: string | null;
+  group_name: string | null;
+  match_score: number;
+}
+
+// ── Buy Mandates ──
+
+export type BuyMandateStatus = "active" | "on_hold" | "stale" | "fulfilled";
+
+export interface BuyMandateCriteria {
+  asset_classes?: string[];
+  asset_subclasses?: string[];
+  regions?: string[];
+  cities?: string[];
+  price_min?: number;
+  price_max?: number;
+  sqft_min?: number;
+  sqft_max?: number;
+  market_type?: string;
+  max_distance_from_city_km?: number;
+}
+
+export interface BuyMandate {
+  id: string;
+  contact_id: string | null;
+  group_id: string | null;
+  criteria_json: string | null;
+  criteria: BuyMandateCriteria;
+  status: BuyMandateStatus;
+  owner: string | null;
+  notes: string | null;
+  last_activity_at: string;
+  decay_days: number;
+  created_at: string;
+  updated_at: string;
+  // Joined fields
+  contact_name: string | null;
+  group_name: string | null;
+  is_stale: number;
+  days_since_activity: number;
+}
+
+export interface BuyMandateDetail extends BuyMandate {
+  contact_phone: string | null;
+  contact_email: string | null;
+  activities: Activity[];
+  matching_properties: MatchingProperty[];
+}
+
+export interface MatchingProperty {
+  id: string;
+  display_address: string;
+  city: string | null;
+  region: string | null;
+  asset_class: string | null;
+  most_recent_sale_price: number | null;
+  most_recent_sale_date: string | null;
+  lat: number | null;
+  lng: number | null;
+  current_owner_name: string | null;
+  current_owner_group_id: string | null;
+  sell_opportunity_id: string | null;
+  sell_opportunity_status: string | null;
+  deal_value: number | null;
+}
+
+// ── Activities ──
+
+export type ActivityType = "call" | "email" | "meeting" | "note";
+export type ActivityEntityType = "sell_opportunity" | "buy_mandate" | "deal" | "contact" | "group";
+
+export interface Activity {
+  id: number;
+  entity_type: ActivityEntityType;
+  entity_id: string;
+  activity_type: ActivityType;
+  outcome: string | null;
+  summary: string | null;
+  next_step: string | null;
+  created_by: string | null;
+  created_at: string;
+}
+
+// ── Stale Entities ──
+
+export interface StaleEntitiesResponse {
+  sell_opportunities: SellOpportunity[];
+  buy_mandates: BuyMandate[];
+  total_stale: number;
+}
+
+// ── Filter Responses ──
+
+export interface SellOppFilters {
+  regions: string[];
+  asset_classes: string[];
+  owners: string[];
+}
+
+export interface BuyMandateFilters {
+  owners: string[];
 }

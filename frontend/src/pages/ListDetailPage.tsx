@@ -75,7 +75,7 @@ export default function ListDetailPage() {
         {list.members.length === 0 ? (
           <Text size="2" style={{ color: "var(--gray-9)" }}>No members yet. Add items from property, contact, or group pages.</Text>
         ) : (
-          <table className="w-full text-[14px]">
+          <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
             <thead>
               <tr className="border-b border-[var(--gray-4)]">
                 <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Type</th>

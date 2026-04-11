@@ -24,9 +24,15 @@ import ContactDetailPage from "./pages/ContactDetailPage";
 import GroupsPage from "./pages/GroupsPage";
 import GroupDetailPage from "./pages/GroupDetailPage";
 import DealsPage from "./pages/DealsPage";
+import DealDetailPage from "./pages/DealDetailPage";
 import ListsPage from "./pages/ListsPage";
 import ListDetailPage from "./pages/ListDetailPage";
+import AuditLogPage from "./pages/AuditLogPage";
 import AdminPage from "./pages/AdminPage";
+import SettingsPage from "./pages/SettingsPage";
+import OpportunitiesPage from "./pages/OpportunitiesPage";
+import SellOpportunityDetailPage from "./pages/SellOpportunityDetailPage";
+import BuyMandateDetailPage from "./pages/BuyMandateDetailPage";
 
 // Lazy-loaded pages
 const MapPage = lazy(() => import("./pages/MapPage"));
@@ -92,15 +98,21 @@ export default function App() {
                   <Route path="/contacts/:id" element={<ContactDetailPage />} />
                   <Route path="/groups" element={<GroupsPage />} />
                   <Route path="/groups/:id" element={<GroupDetailPage />} />
+                  <Route path="/opportunities" element={<OpportunitiesPage />} />
+                  <Route path="/opportunities/sell/:id" element={<SellOpportunityDetailPage />} />
+                  <Route path="/opportunities/buy/:id" element={<BuyMandateDetailPage />} />
                   <Route path="/deals" element={<DealsPage />} />
+                  <Route path="/deals/:id" element={<DealDetailPage />} />
                   <Route path="/lists" element={<ListsPage />} />
                   <Route path="/lists/:id" element={<ListDetailPage />} />
+                  <Route path="/audit" element={<AuditLogPage />} />
                   <Route path="/map" element={<MapPage />} />
                 <Route path="/pipeline" element={<PipelineOverviewPage />} />
                 <Route path="/pipeline/trace/:rtId" element={<PipelineTracePage />} />
                 <Route path="/pipeline/:stage" element={<PipelineStagePage />} />
                 <Route path="/pipeline/:stage/*" element={<PipelineRecordPage />} />
                 <Route path="/data-quality" element={<DataQualityPage />} />
+                  <Route path="/settings" element={<SettingsPage />} />
                   <Route path="/admin" element={<AdminPage />} />
                 </Route>
               </Routes>

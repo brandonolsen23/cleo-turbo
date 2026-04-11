@@ -35,6 +35,8 @@ CREATE TABLE IF NOT EXISTS properties (
     most_recent_sale_source TEXT,
     transaction_count INTEGER DEFAULT 0,
     primary_property_type TEXT,
+    asset_class      TEXT,
+    asset_subclass   TEXT,
     gw_municipality  TEXT,
     lat             REAL,
     lng             REAL,
@@ -99,12 +101,14 @@ CREATE TABLE IF NOT EXISTS contacts (
     job_title       TEXT,
     company_name    TEXT,
     current_group_id TEXT,
+    contact_type    TEXT,
     status          TEXT NOT NULL DEFAULT 'pool',
     source          TEXT DEFAULT 'transaction',
     transaction_count INTEGER DEFAULT 0,
     first_seen_date TEXT,
     last_seen_date  TEXT,
     hubspot_id      TEXT,
+    last_engaged_date TEXT,
     created_at      TEXT DEFAULT (datetime('now')),
     updated_at      TEXT DEFAULT (datetime('now'))
 );
@@ -203,6 +207,15 @@ CREATE TABLE IF NOT EXISTS pois (
     created_at      TEXT DEFAULT (datetime('now'))
 );
 
+CREATE TABLE IF NOT EXISTS brand_registry (
+    brand           TEXT PRIMARY KEY,
+    category        TEXT,
+    poi_count       INTEGER DEFAULT 0,
+    is_curated      INTEGER DEFAULT 0,
+    sample_osm_tags TEXT,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
 CREATE TABLE IF NOT EXISTS gw_assessments (
     id              TEXT PRIMARY KEY,
     gw_id           TEXT NOT NULL,
@@ -241,10 +254,13 @@ CREATE INDEX IF NOT EXISTS idx_properties_region ON properties(region);
 CREATE INDEX IF NOT EXISTS idx_properties_owner ON properties(current_owner_group_id);
 CREATE INDEX IF NOT EXISTS idx_properties_sale_date ON properties(most_recent_sale_date);
 CREATE INDEX IF NOT EXISTS idx_properties_sale_price ON properties(most_recent_sale_price);
+CREATE INDEX IF NOT EXISTS idx_properties_asset_class ON properties(asset_class);
+CREATE INDEX IF NOT EXISTS idx_properties_asset_subclass ON properties(asset_subclass);
 CREATE INDEX IF NOT EXISTS idx_transactions_property ON transactions(property_id);
 CREATE INDEX IF NOT EXISTS idx_transactions_arn ON transactions(arn);
 CREATE INDEX IF NOT EXISTS idx_transactions_sale_date ON transactions(sale_date);
 CREATE INDEX IF NOT EXISTS idx_transactions_city ON transactions(city);
+CREATE INDEX IF NOT EXISTS idx_contacts_contact_type ON contacts(contact_type);
 CREATE INDEX IF NOT EXISTS idx_contacts_status ON contacts(status);
 CREATE INDEX IF NOT EXISTS idx_contacts_fingerprint ON contacts(name_fingerprint);
 CREATE INDEX IF NOT EXISTS idx_contacts_group ON contacts(current_group_id);
@@ -263,6 +279,8 @@ CREATE INDEX IF NOT EXISTS idx_pois_property ON pois(property_id);
 CREATE INDEX IF NOT EXISTS idx_pois_brand ON pois(brand);
 CREATE INDEX IF NOT EXISTS idx_pois_category ON pois(category);
 CREATE INDEX IF NOT EXISTS idx_pois_arn ON pois(arn);
+CREATE INDEX IF NOT EXISTS idx_brand_registry_category ON brand_registry(category);
+CREATE INDEX IF NOT EXISTS idx_brand_registry_curated ON brand_registry(is_curated);
 CREATE TABLE IF NOT EXISTS gw_sales_history (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     gw_id           TEXT NOT NULL,
@@ -289,25 +307,25 @@ FTS_TABLES = """
 CREATE VIRTUAL TABLE IF NOT EXISTS properties_fts USING fts5(
     id, display_address, city, region, current_owner_name,
     content='properties', content_rowid='rowid',
-    tokenize='porter unicode61'
+    tokenize='unicode61'
 );
 
 CREATE VIRTUAL TABLE IF NOT EXISTS contacts_fts USING fts5(
     id, display_name, first_name, last_name, phone, company_name,
     content='contacts', content_rowid='rowid',
-    tokenize='porter unicode61'
+    tokenize='unicode61'
 );
 
 CREATE VIRTUAL TABLE IF NOT EXISTS groups_fts USING fts5(
     id, display_name,
     content='groups', content_rowid='rowid',
-    tokenize='porter unicode61'
+    tokenize='unicode61'
 );
 
 CREATE VIRTUAL TABLE IF NOT EXISTS transactions_fts USING fts5(
     source_id, display_address, city, region, seller_parties, buyer_parties,
     content='transactions', content_rowid='rowid',
-    tokenize='porter unicode61'
+    tokenize='unicode61'
 );
 """
 
@@ -375,12 +393,139 @@ CREATE TABLE IF NOT EXISTS group_notes (
     created_by      TEXT,
     created_at      TEXT DEFAULT (datetime('now'))
 );
+
+CREATE TABLE IF NOT EXISTS group_merges (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_group_id TEXT NOT NULL,
+    target_group_id TEXT NOT NULL,
+    merged_by       TEXT,
+    merged_at       TEXT DEFAULT (datetime('now')),
+    unmerged_at     TEXT,
+    unmerged_by     TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_group_merges_source ON group_merges(source_group_id);
+CREATE INDEX IF NOT EXISTS idx_group_merges_target ON group_merges(target_group_id);
+CREATE INDEX IF NOT EXISTS idx_group_merges_active ON group_merges(source_group_id) WHERE unmerged_at IS NULL;
+
+CREATE TABLE IF NOT EXISTS brand_overrides (
+    brand           TEXT PRIMARY KEY,
+    category        TEXT NOT NULL,
+    updated_by      TEXT,
+    updated_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS user_brand_favorites (
+    user_id         INTEGER NOT NULL REFERENCES users(id),
+    brand           TEXT NOT NULL,
+    created_at      TEXT DEFAULT (datetime('now')),
+    PRIMARY KEY (user_id, brand)
+);
+
+CREATE INDEX IF NOT EXISTS idx_user_brand_favorites_user ON user_brand_favorites(user_id);
+
+CREATE TABLE IF NOT EXISTS group_overrides (
+    group_id         TEXT PRIMARY KEY,
+    display_name     TEXT NOT NULL,
+    normalized_name  TEXT NOT NULL UNIQUE,
+    created_by       TEXT,
+    created_at       TEXT DEFAULT (datetime('now')),
+    notes            TEXT
+);
+
+CREATE TABLE IF NOT EXISTS group_field_overrides (
+    group_id    TEXT PRIMARY KEY,
+    status      TEXT,
+    hq_address  TEXT,
+    website     TEXT,
+    hubspot_id  TEXT,
+    updated_by  TEXT,
+    updated_at  TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS contact_field_overrides (
+    contact_id  TEXT PRIMARY KEY,
+    email       TEXT,
+    mobile      TEXT,
+    phone       TEXT,
+    job_title   TEXT,
+    contact_type TEXT,
+    status      TEXT,
+    updated_by  TEXT,
+    updated_at  TEXT DEFAULT (datetime('now'))
+);
+
+-- ── Sell Opportunities ──────────────────────────────────────
+CREATE TABLE IF NOT EXISTS sell_opportunities (
+    id                  TEXT PRIMARY KEY,
+    property_id         TEXT NOT NULL REFERENCES properties(id),
+    seller_contact_id   TEXT REFERENCES contacts(id),
+    seller_group_id     TEXT REFERENCES groups(id),
+    deal_value          INTEGER,
+    status              TEXT NOT NULL DEFAULT 'active',
+    owner               TEXT,
+    notes               TEXT,
+    last_activity_at    TEXT DEFAULT (datetime('now')),
+    decay_days          INTEGER DEFAULT 14,
+    created_at          TEXT DEFAULT (datetime('now')),
+    updated_at          TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_sell_opps_property ON sell_opportunities(property_id);
+CREATE INDEX IF NOT EXISTS idx_sell_opps_status ON sell_opportunities(status);
+CREATE INDEX IF NOT EXISTS idx_sell_opps_seller_contact ON sell_opportunities(seller_contact_id);
+CREATE INDEX IF NOT EXISTS idx_sell_opps_seller_group ON sell_opportunities(seller_group_id);
+
+-- ── Buy Mandates ────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS buy_mandates (
+    id                  TEXT PRIMARY KEY,
+    contact_id          TEXT REFERENCES contacts(id),
+    group_id            TEXT REFERENCES groups(id),
+    criteria_json       TEXT,
+    status              TEXT NOT NULL DEFAULT 'active',
+    owner               TEXT,
+    notes               TEXT,
+    last_activity_at    TEXT DEFAULT (datetime('now')),
+    decay_days          INTEGER DEFAULT 14,
+    created_at          TEXT DEFAULT (datetime('now')),
+    updated_at          TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_buy_mandates_contact ON buy_mandates(contact_id);
+CREATE INDEX IF NOT EXISTS idx_buy_mandates_group ON buy_mandates(group_id);
+CREATE INDEX IF NOT EXISTS idx_buy_mandates_status ON buy_mandates(status);
+
+-- ── Activities ──────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS activities (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    entity_type         TEXT NOT NULL,
+    entity_id           TEXT NOT NULL,
+    activity_type       TEXT NOT NULL,
+    outcome             TEXT,
+    summary             TEXT,
+    next_step           TEXT,
+    created_by          TEXT,
+    created_at          TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_activities_entity ON activities(entity_type, entity_id);
+CREATE INDEX IF NOT EXISTS idx_activities_created ON activities(created_at);
+CREATE INDEX IF NOT EXISTS idx_activities_type ON activities(activity_type);
 """
 
 SYSTEM_TABLES = """
 -- ============================================================
 -- SYSTEM TABLES
 -- ============================================================
+
+CREATE TABLE IF NOT EXISTS id_mappings (
+    entity_type TEXT NOT NULL,
+    anchor_key  TEXT NOT NULL,
+    entity_id   TEXT NOT NULL,
+    created_at  TEXT DEFAULT (datetime('now')),
+    PRIMARY KEY (entity_type, anchor_key)
+);
+CREATE INDEX IF NOT EXISTS idx_id_mappings_entity ON id_mappings(entity_id);
 
 CREATE TABLE IF NOT EXISTS users (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -405,6 +550,51 @@ CREATE TABLE IF NOT EXISTS app_meta (
     key             TEXT PRIMARY KEY,
     value           TEXT,
     updated_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS asset_classes (
+    id              TEXT PRIMARY KEY,
+    label           TEXT NOT NULL,
+    parent_id       TEXT,
+    sort_order      INTEGER DEFAULT 0,
+    FOREIGN KEY (parent_id) REFERENCES asset_classes(id)
+);
+
+CREATE TABLE IF NOT EXISTS group_analytics (
+    group_id            TEXT PRIMARY KEY REFERENCES groups(id),
+    -- Portfolio
+    property_count      INTEGER DEFAULT 0,
+    total_assessed_value INTEGER,
+    property_type_mix   TEXT,
+    regions             TEXT,
+    region_count        INTEGER DEFAULT 0,
+    -- Transactions
+    total_buys          INTEGER DEFAULT 0,
+    total_sells         INTEGER DEFAULT 0,
+    avg_buy_price       INTEGER,
+    median_buy_price    INTEGER,
+    avg_sell_price      INTEGER,
+    median_sell_price   INTEGER,
+    first_transaction_date TEXT,
+    last_transaction_date  TEXT,
+    net_acquisitions    INTEGER DEFAULT 0,
+    avg_hold_period_days INTEGER,
+    -- Velocity
+    txns_per_year       REAL,
+    buys_last_12m       INTEGER DEFAULT 0,
+    sells_last_12m      INTEGER DEFAULT 0,
+    buys_last_36m       INTEGER DEFAULT 0,
+    sells_last_36m      INTEGER DEFAULT 0,
+    -- Geographic
+    hq_lat              REAL,
+    hq_lng              REAL,
+    avg_distance_from_hq_km REAL,
+    max_distance_from_hq_km REAL,
+    geographic_radius_km REAL,
+    centroid_lat        REAL,
+    centroid_lng        REAL,
+    -- Meta
+    refreshed_at        TEXT DEFAULT (datetime('now'))
 );
 
 CREATE TABLE IF NOT EXISTS data_issues (
@@ -449,6 +639,7 @@ def create_all_tables(conn):
 def drop_derived_tables(conn):
     """Drop derived tables only. CRM and system tables are preserved."""
     conn.executescript("""
+        DROP TABLE IF EXISTS brand_registry;
         DROP TABLE IF EXISTS gw_sales_history;
         DROP TABLE IF EXISTS gw_assessments;
         DROP TABLE IF EXISTS pois;

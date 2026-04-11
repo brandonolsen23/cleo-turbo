@@ -37,7 +37,7 @@ QUEUE_FILE = os.path.join(PROJECT_ROOT, 'engines', 'rt', 'pipeline', 'geocode_qu
 MAPBOX_TOKEN = os.environ.get('MAPBOX_TOKEN', '')
 MAPBOX_ENDPOINT = 'https://api.mapbox.com/geocoding/v5/mapbox.places'
 RATE_LIMIT = 0.2  # 200ms between requests = 5/sec
-MIN_RELEVANCE = 0.8
+MIN_RELEVANCE = 0.6
 
 # Ontario bounding box for Mapbox
 ONTARIO_BBOX = '-96,41,-74,57'

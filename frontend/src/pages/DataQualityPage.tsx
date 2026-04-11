@@ -233,7 +233,7 @@ export default function DataQualityPage() {
       {issues && (
         <>
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden">
-            <table className="w-full text-[14px]">
+            <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
               <thead>
                 <tr style={{ background: "var(--gray-2)" }}>
                   <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>RT ID</th>

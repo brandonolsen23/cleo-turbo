@@ -22,6 +22,13 @@ from .routes.pois import router as pois_router
 from .routes.gw import router as gw_router
 from .routes.data_quality import router as data_quality_router
 from .routes.admin import router as admin_router
+from .routes.asset_classes import router as asset_classes_router
+from .routes.group_merges import router as group_merges_router
+from .routes.audit import router as audit_router_api
+from .routes.brands import router as brands_router
+from .routes.sell_opportunities import router as sell_opportunities_router
+from .routes.buy_mandates import router as buy_mandates_router
+from .routes.activities import router as activities_router
 
 
 def create_app():
@@ -51,6 +58,13 @@ def create_app():
     app.include_router(pipeline_router, prefix="/api/pipeline", tags=["pipeline"])
     app.include_router(data_quality_router, prefix="/api/data-quality", tags=["data-quality"])
     app.include_router(admin_router, prefix="/api/admin", tags=["admin"])
+    app.include_router(asset_classes_router, prefix="/api/asset-classes", tags=["asset-classes"])
+    app.include_router(group_merges_router, prefix="/api/group-merges", tags=["group-merges"])
+    app.include_router(audit_router_api, prefix="/api/audit", tags=["audit"])
+    app.include_router(brands_router, prefix="/api/brands", tags=["brands"])
+    app.include_router(sell_opportunities_router, prefix="/api/sell-opportunities", tags=["sell-opportunities"])
+    app.include_router(buy_mandates_router, prefix="/api/buy-mandates", tags=["buy-mandates"])
+    app.include_router(activities_router, prefix="/api/activities", tags=["activities"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')

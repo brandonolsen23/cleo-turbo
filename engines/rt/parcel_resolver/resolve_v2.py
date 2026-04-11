@@ -123,8 +123,21 @@ def run(limit=None, dry_run=False, reprocess=False, reprocess_unresolved=False,
                 existing_links[f] = True
 
     if reprocess:
-        # Reprocess everything
-        pending = all_files
+        # Reprocess everything — but skip files already processed by unified resolver
+        # (identified by having a 'pip_verified' field, which ONLY the unified resolver writes.
+        #  Note: 'confidence' is NOT safe — the old resolver also wrote that field.)
+        pending = []
+        for f in all_files:
+            if f in existing_links:
+                link_path = os.path.join(PARCEL_LINKS_DIR, f)
+                try:
+                    with open(link_path) as fh:
+                        link = json.load(fh)
+                    if 'pip_verified' in link:
+                        continue  # Already done by unified resolver
+                except (json.JSONDecodeError, OSError):
+                    pass
+            pending.append(f)
     elif reprocess_unresolved:
         # Only re-resolve previously unresolved records
         pending = []
@@ -159,6 +172,28 @@ def run(limit=None, dry_run=False, reprocess=False, reprocess_unresolved=False,
     else:
         # Default: only process files without existing parcel_links
         pending = [f for f in all_files if f not in existing_links]
+
+    # Sort pending: ARN-having records first (resolve from cache, no geocoder needed),
+    # then PIN-only, then no-identifiers (need geocoding). This avoids hitting the
+    # geocoder early when it might still be rate-limited from a previous run.
+    def _sort_key(fname):
+        try:
+            with open(os.path.join(ADDRESSES_DIR, fname)) as f:
+                rec = json.load(f)
+            arn = rec.get('arn', {}).get('api_format', '').strip()
+            pin = rec.get('pin', {}).get('api_format', '').strip()
+            if arn and not all(c == '0' for c in arn):
+                return (0, fname)  # ARN first
+            elif pin:
+                return (1, fname)  # PIN second
+            else:
+                return (2, fname)  # No identifiers last (needs geocoder)
+        except Exception:
+            return (2, fname)
+
+    if reprocess:
+        print('Sorting pending records (ARN-first, geocoder-needing last)...')
+        pending.sort(key=_sort_key)
 
     if limit:
         pending = pending[:limit]

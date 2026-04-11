@@ -70,6 +70,25 @@ export function categoryColor(category: string): RadixColor {
 }
 
 // ============================================================
+// Asset Class Colors (for mini-maps and charts)
+// ============================================================
+
+const ASSET_CLASS_COLORS: Record<string, RadixColor> = {
+  retail: "jade",
+  industrial: "blue",
+  multifamily: "amber",
+  office: "violet",
+  land: "gray",
+  agricultural: "brown",
+  mixed_use: "teal",
+  hospitality: "tomato",
+};
+
+export function assetClassColor(assetClass: string): RadixColor {
+  return ASSET_CLASS_COLORS[assetClass] ?? "gray";
+}
+
+// ============================================================
 // Chart Colors
 // ============================================================
 
@@ -239,6 +258,85 @@ const RADIX_HEX: Record<string, string> = {
 
 export function getRadixHex(color: RadixColor | string, step: number): string {
   return RADIX_HEX[`${color}-${step}`] ?? "#8b8d98";
+}
+
+// ============================================================
+// Sell Opportunity Status Colors
+// ============================================================
+
+export const SELL_OPP_STATUS_COLORS: Record<string, RadixColor> = {
+  active: "jade",
+  on_hold: "amber",
+  stale: "tomato",
+  matched: "blue",
+  closed_won: "green",
+  closed_lost: "red",
+};
+
+export function sellOppStatusColor(status: string): RadixColor {
+  return SELL_OPP_STATUS_COLORS[status] ?? "gray";
+}
+
+export function sellOppStatusLabel(status: string): string {
+  const labels: Record<string, string> = {
+    active: "Active",
+    on_hold: "On Hold",
+    stale: "Stale",
+    matched: "Matched",
+    closed_won: "Closed Won",
+    closed_lost: "Closed Lost",
+  };
+  return labels[status] ?? status;
+}
+
+// ============================================================
+// Buy Mandate Status Colors
+// ============================================================
+
+export const BUY_MANDATE_STATUS_COLORS: Record<string, RadixColor> = {
+  active: "jade",
+  on_hold: "amber",
+  stale: "tomato",
+  fulfilled: "blue",
+};
+
+export function buyMandateStatusColor(status: string): RadixColor {
+  return BUY_MANDATE_STATUS_COLORS[status] ?? "gray";
+}
+
+export function buyMandateStatusLabel(status: string): string {
+  const labels: Record<string, string> = {
+    active: "Active",
+    on_hold: "On Hold",
+    stale: "Stale",
+    fulfilled: "Fulfilled",
+  };
+  return labels[status] ?? status;
+}
+
+// ============================================================
+// Activity Type Helpers
+// ============================================================
+
+export const ACTIVITY_TYPE_COLORS: Record<string, RadixColor> = {
+  call: "blue",
+  email: "violet",
+  meeting: "jade",
+  note: "gray",
+};
+
+export function activityTypeColor(type: string): RadixColor {
+  return ACTIVITY_TYPE_COLORS[type] ?? "gray";
+}
+
+export function activityTypeLabel(type: string): string {
+  const labels: Record<string, string> = {
+    call: "Call",
+    email: "Email",
+    meeting: "Meeting",
+    note: "Note",
+  };
+  return labels[type] ?? type;
 }
 
 // Build a Mapbox GL match expression for property type → color

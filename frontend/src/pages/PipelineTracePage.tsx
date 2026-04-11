@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Heading, Text, TextField, Button, Badge } from "@radix-ui/themes";
-import { MagnifyingGlass } from "@phosphor-icons/react";
-import { fetchApi } from "../api/client";
+import { MagnifyingGlass, ArrowsClockwise } from "@phosphor-icons/react";
+import { fetchApi, postApi } from "../api/client";
 import JsonTree from "../components/pipeline/JsonTree";
 import PipelineFlowView from "../components/pipeline/PipelineFlowView";
+import type { ReprocessResponse, ReprocessStatus } from "../types";
 
 interface TraceClassification {
   source_folder: string;
@@ -85,24 +86,154 @@ export default function PipelineTracePage() {
   const [showDiff, setShowDiff] = useState(false);
   const [diffData, setDiffData] = useState<DiffResponse | null>(null);
   const [loading, setLoading] = useState(true);
+  const [traceError, setTraceError] = useState<string | null>(null);
   const [rawHtml, setRawHtml] = useState<string | null>(null);
+
+  // Reprocess state
+  const [reprocessOpen, setReprocessOpen] = useState(false);
+  const [reprocessing, setReprocessing] = useState(false);
+  const [reprocessResult, setReprocessResult] = useState<string | null>(null);
+  const [confirmStage, setConfirmStage] = useState<string | null>(null);
+  const reprocessPollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const REPROCESS_OPTIONS = [
+    { stage: "scrape", label: "Re-scrape & Reprocess", desc: "Re-download HTML from Realtrack, then full reprocess" },
+    { stage: "classify", label: "From Classify", desc: "Reclassify, renormalize, re-resolve, recompile" },
+    { stage: "normalize", label: "From Normalize", desc: "Renormalize addresses, re-resolve, recompile" },
+    { stage: "resolve", label: "From Resolve", desc: "Re-resolve parcel links, recompile" },
+  ];
+
+  const handleReprocess = async (fromStage: string) => {
+    if (!rtId) return;
+    setConfirmStage(null);
+    setReprocessOpen(false);
+    setReprocessing(true);
+    setReprocessResult(null);
+    try {
+      const params = new URLSearchParams({ rt_ids: rtId, from_stage: fromStage });
+      const resp = await postApi<ReprocessResponse>(`/admin/reprocess?${params}`, {});
+      if (resp.success) {
+        setReprocessResult(`Started: ${resp.message}`);
+        // Poll for completion — clear any existing poll first
+        if (reprocessPollRef.current) clearInterval(reprocessPollRef.current);
+        reprocessPollRef.current = setInterval(async () => {
+          try {
+            const status = await fetchApi<ReprocessStatus>("/admin/reprocess/status");
+            if (!status.running) {
+              if (reprocessPollRef.current) clearInterval(reprocessPollRef.current);
+              reprocessPollRef.current = null;
+              setReprocessing(false);
+              setReprocessResult("Reprocess complete — refreshing...");
+              // Refresh trace data
+              setTimeout(() => {
+                setReprocessResult(null);
+                if (rtId) {
+                  setLoading(true);
+                  fetchApi<TraceData>(`/pipeline/trace/${rtId}`).then((d) => {
+                    setTrace(d);
+                    setLoading(false);
+                    if (d.classifications.length > 0) {
+                      const cls = d.classifications[0];
+                      fetchApi<{ content: string }>(`/pipeline/raw-preview/${cls.source_folder}/${cls.position}`)
+                        .then((r) => setRawHtml(r.content))
+                        .catch(() => setRawHtml(null));
+                    }
+                  });
+                }
+              }, 1500);
+            }
+          } catch {
+            // ignore poll errors
+          }
+        }, 3000);
+      }
+    } catch (err: any) {
+      setReprocessing(false);
+      setReprocessResult(`Error: ${err?.message || "Failed to start reprocess"}`);
+    }
+  };
+
+  // Clean up poll on unmount + close dropdown on outside click
+  useEffect(() => {
+    const handleClick = () => setReprocessOpen(false);
+    if (reprocessOpen) {
+      setTimeout(() => document.addEventListener("click", handleClick), 0);
+      return () => document.removeEventListener("click", handleClick);
+    }
+  }, [reprocessOpen]);
+
+  useEffect(() => {
+    return () => {
+      if (reprocessPollRef.current) clearInterval(reprocessPollRef.current);
+    };
+  }, []);
+
+  // Check reprocess status on mount (in case page was refreshed mid-reprocess)
+  useEffect(() => {
+    if (rtId) {
+      fetchApi<ReprocessStatus>("/admin/reprocess/status")
+        .then((status) => {
+          if (status.running && status.run_status?.rt_ids?.includes(rtId)) {
+            setReprocessing(true);
+            setReprocessResult(`Started: Reprocessing ${rtId} from ${status.run_status.from_stage}`);
+            // Start polling — clear any existing poll first
+            if (reprocessPollRef.current) clearInterval(reprocessPollRef.current);
+            reprocessPollRef.current = setInterval(async () => {
+              try {
+                const s = await fetchApi<ReprocessStatus>("/admin/reprocess/status");
+                if (!s.running) {
+                  if (reprocessPollRef.current) clearInterval(reprocessPollRef.current);
+                  reprocessPollRef.current = null;
+                  setReprocessing(false);
+                  setReprocessResult("Reprocess complete — refreshing...");
+                  setTimeout(() => {
+                    setReprocessResult(null);
+                    if (rtId) {
+                      setLoading(true);
+                      fetchApi<TraceData>(`/pipeline/trace/${rtId}`).then((d) => {
+                        setTrace(d);
+                        setLoading(false);
+                        if (d.classifications.length > 0) {
+                          const cls = d.classifications[0];
+                          fetchApi<{ content: string }>(`/pipeline/raw-preview/${cls.source_folder}/${cls.position}`)
+                            .then((r) => setRawHtml(r.content))
+                            .catch(() => setRawHtml(null));
+                        }
+                      }).catch(() => setLoading(false));
+                    }
+                  }, 1500);
+                }
+              } catch { /* ignore */ }
+            }, 3000);
+          }
+        })
+        .catch(() => { /* ignore */ });
+    }
+  }, [rtId]);
 
   useEffect(() => {
     if (rtId) {
       setLoading(true);
+      setTraceError(null);
       setShowDiff(false);
       setDiffData(null);
-      fetchApi<TraceData>(`/pipeline/trace/${rtId}`).then((d) => {
-        setTrace(d);
-        setLoading(false);
-        // Fetch raw HTML for flow view
-        if (d.classifications.length > 0) {
-          const cls = d.classifications[0];
-          fetchApi<{ content: string }>(`/pipeline/raw-preview/${cls.source_folder}/${cls.position}`)
-            .then((r) => setRawHtml(r.content))
-            .catch(() => setRawHtml(null));
-        }
-      });
+      fetchApi<TraceData>(`/pipeline/trace/${rtId}`)
+        .then((d) => {
+          setTrace(d);
+          setLoading(false);
+          // Fetch raw HTML for flow view
+          if (d.classifications.length > 0) {
+            const cls = d.classifications[0];
+            fetchApi<{ content: string }>(`/pipeline/raw-preview/${cls.source_folder}/${cls.position}`)
+              .then((r) => setRawHtml(r.content))
+              .catch(() => setRawHtml(null));
+          }
+        })
+        .catch((err) => {
+          setTrace(null);
+          setTraceError(err?.message || "Failed to load trace data. Is the backend running?");
+          setLoading(false);
+        });
     }
   }, [rtId]);
 
@@ -130,6 +261,7 @@ export default function PipelineTracePage() {
   };
 
   if (loading) return <Text>Loading trace for {rtId}...</Text>;
+  if (traceError) return <Text style={{ color: "var(--red-11)" }}>Error: {traceError}</Text>;
   if (!trace) return <Text>No data found for {rtId}</Text>;
 
   const getStageData = () => {
@@ -164,7 +296,69 @@ export default function PipelineTracePage() {
               ))}
             </div>
           )}
+
+          {/* Reprocess dropdown */}
+          <div className="relative ml-2">
+            <Button
+              size="1"
+              variant={reprocessing ? "solid" : "soft"}
+              color={reprocessing ? "amber" : undefined}
+              disabled={reprocessing}
+              onClick={() => setReprocessOpen(!reprocessOpen)}
+            >
+              <ArrowsClockwise size={14} className={reprocessing ? "animate-spin" : ""} />
+              {reprocessing ? "Reprocessing..." : "Reprocess"}
+            </Button>
+
+            {reprocessOpen && !reprocessing && (
+              <div
+                className="absolute top-full left-0 mt-1 z-50 rounded-lg border shadow-lg overflow-hidden"
+                style={{ background: "white", borderColor: "var(--gray-6)", minWidth: 280 }}
+              >
+                {REPROCESS_OPTIONS.map((opt) => (
+                  <button
+                    key={opt.stage}
+                    className="w-full text-left px-4 py-2.5 hover:bg-[var(--gray-2)] transition-colors border-b last:border-b-0"
+                    style={{ borderColor: "var(--gray-4)" }}
+                    onClick={() => { setReprocessOpen(false); setConfirmStage(opt.stage); }}
+                  >
+                    <div className="text-[13px] font-medium" style={{ color: "var(--gray-12)" }}>{opt.label}</div>
+                    <div className="text-[11px] mt-0.5" style={{ color: "var(--gray-9)" }}>{opt.desc}</div>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Status badge */}
+          {reprocessResult && (
+            <Badge size="1" variant="soft" color={reprocessResult.startsWith("Error") ? "red" : reprocessing ? "amber" : "green"}>
+              {reprocessResult}
+            </Badge>
+          )}
         </div>
+
+        {/* Confirmation dialog */}
+        {confirmStage && (
+          <div className="mt-3 p-4 rounded-lg border" style={{ borderColor: "var(--amber-6)", background: "var(--amber-2)" }}>
+            <Text size="2" weight="medium" style={{ color: "var(--amber-11)" }}>
+              Reprocess {trace.rt_id} from {confirmStage}?
+            </Text>
+            <Text size="2" className="block mt-1" style={{ color: "var(--gray-11)" }}>
+              {confirmStage === "scrape"
+                ? "This will re-download the HTML from Realtrack, delete all pipeline artifacts, and reprocess from scratch."
+                : `This will delete artifacts from ${confirmStage} onward and reprocess this record through the rest of the pipeline.`}
+            </Text>
+            <div className="flex gap-2 mt-3">
+              <Button size="1" variant="solid" color="amber" onClick={() => handleReprocess(confirmStage)}>
+                Reprocess
+              </Button>
+              <Button size="1" variant="soft" onClick={() => setConfirmStage(null)}>
+                Cancel
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Search + view toggle */}

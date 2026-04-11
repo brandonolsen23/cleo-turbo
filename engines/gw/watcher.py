@@ -234,8 +234,9 @@ def process_batch(files):
 
                     conn.execute(
                         "INSERT OR IGNORE INTO properties (id, arn, display_address, city, postal, "
-                        "current_owner_name, transaction_count, primary_property_type, lat, lng, parcel_geojson) "
-                        "VALUES (?, ?, ?, ?, ?, ?, 0, 'commercial', ?, ?, ?)",
+                        "current_owner_name, transaction_count, primary_property_type, asset_class, "
+                        "lat, lng, parcel_geojson) "
+                        "VALUES (?, ?, ?, ?, ?, ?, 0, 'commercial', 'retail', ?, ?, ?)",
                         (pid, resolved_arn, gw_prop.get('display_address', ''),
                          gw_prop.get('city', ''), gw_prop.get('postal', ''),
                          gw_owner.get('name', ''), p_lat, p_lng, parcel_geojson)

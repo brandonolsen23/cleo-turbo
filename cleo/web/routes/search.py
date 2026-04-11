@@ -17,14 +17,15 @@ def omnisearch(
 ):
     """Search across properties, contacts, and groups."""
     results = []
+    like_val = f"%{q.strip()}%"
 
     # Properties
     props = db.execute(
         "SELECT p.id, p.display_address, p.city "
         "FROM properties p "
-        "WHERE p.rowid IN (SELECT rowid FROM properties_fts WHERE properties_fts MATCH ?) "
+        "WHERE p.display_address LIKE ? OR p.city LIKE ? OR p.current_owner_name LIKE ? "
         "LIMIT ?",
-        (q, limit)
+        (like_val, like_val, like_val, limit)
     ).fetchall()
     for r in props:
         results.append({
@@ -38,9 +39,9 @@ def omnisearch(
     contacts = db.execute(
         "SELECT c.id, c.display_name, c.company_name "
         "FROM contacts c "
-        "WHERE c.rowid IN (SELECT rowid FROM contacts_fts WHERE contacts_fts MATCH ?) "
+        "WHERE c.display_name LIKE ? OR c.company_name LIKE ? "
         "LIMIT ?",
-        (q, limit)
+        (like_val, like_val, limit)
     ).fetchall()
     for r in contacts:
         results.append({
@@ -54,9 +55,9 @@ def omnisearch(
     groups = db.execute(
         "SELECT g.id, g.display_name, g.property_count "
         "FROM groups g "
-        "WHERE g.rowid IN (SELECT rowid FROM groups_fts WHERE groups_fts MATCH ?) "
+        "WHERE g.display_name LIKE ? "
         "LIMIT ?",
-        (q, limit)
+        (like_val, limit)
     ).fetchall()
     for r in groups:
         results.append({

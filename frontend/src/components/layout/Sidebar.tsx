@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import { Heading } from "@radix-ui/themes";
-import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix } from "@phosphor-icons/react";
+import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix, ClockCounterClockwise, Sliders, Handshake } from "@phosphor-icons/react";
+import cleoLogo from "../../assets/cleo-logo.png";
 
 const NAV_GROUPS = [
   {
@@ -16,6 +16,7 @@ const NAV_GROUPS = [
   {
     label: "CRM",
     items: [
+      { path: "/opportunities", label: "Opportunities", icon: Handshake },
       { path: "/deals", label: "Deals", icon: Kanban },
       { path: "/lists", label: "Lists", icon: ListBullets },
     ],
@@ -30,7 +31,9 @@ const NAV_GROUPS = [
   {
     label: "System",
     items: [
-      { path: "/admin", label: "Settings", icon: GearSix },
+      { path: "/settings", label: "Settings", icon: Sliders },
+      { path: "/audit", label: "Audit Log", icon: ClockCounterClockwise },
+      { path: "/admin", label: "Admin", icon: GearSix },
     ],
   },
 ];
@@ -41,7 +44,7 @@ export default function Sidebar() {
   return (
     <div className="app-sidebar flex flex-col border-r border-[var(--gray-4)]" style={{ background: "var(--gray-2)" }}>
       <div className="h-[var(--header-height)] flex items-center px-5 border-b border-[var(--gray-4)]">
-        <Heading size="4" weight="medium">Cleo</Heading>
+        <img src={cleoLogo} alt="Cleo" className="h-6" />
       </div>
       <nav className="flex flex-col gap-4 p-3">
         {NAV_GROUPS.map((group, gi) => (

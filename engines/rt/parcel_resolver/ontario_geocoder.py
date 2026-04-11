@@ -44,7 +44,7 @@ PROXY_BASE = (
 HEARTBEAT_ADDRESS = "300 Water St, Peterborough, ON"
 
 # Rate limiting
-DEFAULT_DELAY = 0.5      # 2 req/sec
+DEFAULT_DELAY = 1.0      # 1 req/sec (conservative to avoid throttling)
 HEARTBEAT_INTERVAL = 100  # Check session every N calls
 
 # Throttle detection
@@ -357,25 +357,29 @@ class OntarioGeocoderClient:
 
         return results
 
-    def _geocode_with_retry(self, address, max_retries=2):
-        """Geocode with session refresh on failure."""
+    def _geocode_with_retry(self, address, max_retries=3):
+        """Geocode with pause + session refresh on failure."""
         for attempt in range(max_retries + 1):
             try:
                 result = self._raw_geocode(address)
                 self._record_success()
                 return result
             except Exception as e:
-                self._record_error()
-
                 if attempt < max_retries:
+                    # Wait before retrying — empty responses are often transient
+                    wait = 10 * (attempt + 1)  # 10s, 20s, 30s
                     if self.verbose:
                         print(f'  Geocode error (attempt {attempt + 1}): {e}')
+                        print(f'  Waiting {wait}s before retry...')
+                    time.sleep(wait)
                     try:
                         self._refresh_session()
                     except SessionError:
                         if attempt == max_retries - 1:
+                            self._record_error()
                             raise
                 else:
+                    self._record_error()
                     self.stats['errors'] += 1
                     return None
 

@@ -4,7 +4,7 @@ Properties API — browse, search, detail, stats.
 
 import json
 from fastapi import APIRouter, Depends, HTTPException, Query
-from ...web.deps import get_db, get_current_user
+from ...web.deps import get_db, get_current_user, fts_query
 
 router = APIRouter()
 
@@ -19,6 +19,10 @@ def browse_properties(
     max_price: int = None,
     brand: str = None,
     category: str = None,
+    asset_class: str = None,
+    min_ownership_years: float = None,
+    max_ownership_years: float = None,
+    q: str = None,
     sort: str = "most_recent_sale_date",
     order: str = "desc",
     db=Depends(get_db),
@@ -27,7 +31,7 @@ def browse_properties(
     """Paginated property browse with filters."""
     allowed_sorts = {
         "most_recent_sale_date", "most_recent_sale_price",
-        "display_address", "city", "transaction_count",
+        "display_address", "city", "transaction_count", "ownership_years",
     }
     if sort not in allowed_sorts:
         sort = "most_recent_sale_date"
@@ -55,6 +59,21 @@ def browse_properties(
     if category:
         conditions.append("p.id IN (SELECT property_id FROM pois WHERE category = ?)")
         params.append(category)
+    if asset_class:
+        conditions.append("p.asset_class = ?")
+        params.append(asset_class)
+    if min_ownership_years is not None:
+        conditions.append("p.most_recent_sale_date IS NOT NULL AND (julianday('now') - julianday(p.most_recent_sale_date)) / 365.25 >= ?")
+        params.append(min_ownership_years)
+    if max_ownership_years is not None:
+        conditions.append("p.most_recent_sale_date IS NOT NULL AND (julianday('now') - julianday(p.most_recent_sale_date)) / 365.25 <= ?")
+        params.append(max_ownership_years)
+    if q and q.strip():
+        conditions.append(
+            "(p.display_address LIKE ? OR p.city LIKE ? OR p.current_owner_name LIKE ?)"
+        )
+        like_val = f"%{q.strip()}%"
+        params.extend([like_val, like_val, like_val])
 
     where = " AND ".join(conditions) if conditions else "1=1"
     offset = (page - 1) * per_page
@@ -64,11 +83,14 @@ def browse_properties(
     total = count_row[0]
 
     # Results
+    ownership_expr = "ROUND((julianday('now') - julianday(p.most_recent_sale_date)) / 365.25, 1)"
+    sort_col = ownership_expr if sort == "ownership_years" else f"p.{sort}"
     rows = db.execute(
         f"SELECT p.id, p.arn, p.display_address, p.city, p.region, p.most_recent_sale_date, "
         f"p.most_recent_sale_price, p.current_owner_name, p.current_owner_group_id, "
-        f"p.transaction_count, p.lat, p.lng "
-        f"FROM properties p WHERE {where} ORDER BY p.{sort} {order} LIMIT ? OFFSET ?",
+        f"p.transaction_count, p.lat, p.lng, p.asset_class, p.asset_subclass, "
+        f"{ownership_expr} AS ownership_years "
+        f"FROM properties p WHERE {where} ORDER BY {sort_col} {order} LIMIT ? OFFSET ?",
         params + [per_page, offset]
     ).fetchall()
 
@@ -88,14 +110,15 @@ def search_properties(
     db=Depends(get_db),
     user=Depends(get_current_user),
 ):
-    """FTS5 full-text search on properties."""
+    """Full-text search on properties."""
+    like_val = f"%{q.strip()}%"
     rows = db.execute(
         "SELECT p.id, p.arn, p.display_address, p.city, p.region, "
         "p.most_recent_sale_date, p.most_recent_sale_price, p.current_owner_name, p.transaction_count "
         "FROM properties p "
-        "WHERE p.rowid IN (SELECT rowid FROM properties_fts WHERE properties_fts MATCH ?) "
+        "WHERE p.display_address LIKE ? OR p.city LIKE ? OR p.current_owner_name LIKE ? "
         "LIMIT ?",
-        (q, limit)
+        (like_val, like_val, like_val, limit)
     ).fetchall()
     return {"results": [dict(r) for r in rows], "total": len(rows)}
 
@@ -156,11 +179,15 @@ def property_filters(db=Depends(get_db), user=Depends(get_current_user)):
     categories = db.execute(
         "SELECT DISTINCT category FROM pois WHERE category != '' ORDER BY category"
     ).fetchall()
+    asset_classes = db.execute(
+        "SELECT DISTINCT asset_class FROM properties WHERE asset_class IS NOT NULL ORDER BY asset_class"
+    ).fetchall()
     return {
         "cities": [r[0] for r in cities],
         "regions": [r[0] for r in regions],
         "brands": [r[0] for r in brands],
         "categories": [r[0] for r in categories],
+        "asset_classes": [r[0] for r in asset_classes],
     }
 
 
@@ -248,7 +275,8 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
         parties = db.execute(
             "SELECT tp.side, tp.party_name, tp.contact_title, tp.phone, "
             "tp.contact_id, tp.group_id, "
-            "c.display_name as contact_name, c.phone as contact_phone, c.email as contact_email "
+            "c.display_name as contact_name, c.phone as contact_phone, c.email as contact_email, "
+            "c.status, c.last_engaged_date "
             "FROM transaction_parties tp "
             "LEFT JOIN contacts c ON tp.contact_id = c.id "
             "WHERE tp.source_id = ?",
@@ -290,5 +318,31 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
         (property_id,)
     ).fetchall()
     result["gw_sales_history"] = [dict(s) for s in all_sales]
+
+    # Owner group HQ info (address + geocoded coords for map)
+    if result.get("current_owner_group_id"):
+        grp = db.execute(
+            "SELECT g.hq_address, ga.hq_lat, ga.hq_lng "
+            "FROM groups g "
+            "LEFT JOIN group_analytics ga ON ga.group_id = g.id "
+            "WHERE g.id = ?",
+            (result["current_owner_group_id"],)
+        ).fetchone()
+        if grp:
+            result["owner_hq_address"] = grp["hq_address"]
+            result["owner_hq_lat"] = grp["hq_lat"]
+            result["owner_hq_lng"] = grp["hq_lng"]
+
+    # Fallback: buyer mailing address from most recent transaction
+    if not result.get("owner_hq_address") and result.get("transactions"):
+        latest_src = result["transactions"][0]["source_id"]
+        ma = db.execute(
+            "SELECT display, city, province, postal, geocode_string "
+            "FROM transaction_mailing_addresses "
+            "WHERE source_id = ? AND side = 'buyer'",
+            (latest_src,)
+        ).fetchone()
+        if ma:
+            result["owner_hq_address"] = ma["geocode_string"] or ma["display"]
 
     return result

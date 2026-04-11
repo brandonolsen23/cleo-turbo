@@ -7,6 +7,7 @@ from fastapi import APIRouter, Depends, Query, HTTPException
 from pydantic import BaseModel
 from typing import Optional
 from ...web.deps import get_db, get_current_user
+from ...web.audit import log_action
 
 router = APIRouter()
 
@@ -142,6 +143,7 @@ def create_deal(body: DealCreate, db=Depends(get_db), user=Depends(get_current_u
          body.property_id, body.group_id, body.deal_owner,
          body.description, body.next_step, body.priority)
     )
+    log_action(db, user, "deal.create", "deal", deal_id, {"name": body.name, "stage": body.stage, "amount": body.amount})
     db.commit()
     return {"id": deal_id, "status": "created"}
 
@@ -168,6 +170,7 @@ def update_deal(deal_id: str, body: DealUpdate, db=Depends(get_db), user=Depends
             f"UPDATE deals SET {set_clause}, updated_at = datetime('now') WHERE id = ?",
             values + [deal_id]
         )
+        log_action(db, user, "deal.update", "deal", deal_id, updates)
         db.commit()
 
     return {"id": deal_id, "updated": list(updates.keys())}
@@ -175,8 +178,10 @@ def update_deal(deal_id: str, body: DealUpdate, db=Depends(get_db), user=Depends
 
 @router.delete("/{deal_id}")
 def delete_deal(deal_id: str, db=Depends(get_db), user=Depends(get_current_user)):
-    if not db.execute("SELECT 1 FROM deals WHERE id = ?", (deal_id,)).fetchone():
+    deal = db.execute("SELECT name, stage FROM deals WHERE id = ?", (deal_id,)).fetchone()
+    if not deal:
         raise HTTPException(status_code=404, detail="Deal not found")
     db.execute("DELETE FROM deals WHERE id = ?", (deal_id,))
+    log_action(db, user, "deal.delete", "deal", deal_id, {"name": deal["name"], "stage": deal["stage"]})
     db.commit()
     return {"id": deal_id, "status": "deleted"}

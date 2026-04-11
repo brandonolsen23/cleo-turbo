@@ -28,38 +28,16 @@ STAGES = [
     {
         'name': 'normalize',
         'description': 'Address normalization',
-        'command': ['python3', 'engines/rt/address_normalizer/run.py'],
-        'cwd': PROJECT_ROOT,
+        'command': ['python3', '-m', 'address_normalizer.run'],
+        'cwd': os.path.join(PROJECT_ROOT, 'engines', 'rt'),
         'timeout': 3600,  # 1 hour
     },
     {
-        'name': 'pin_bridge',
-        'description': 'PIN→ARN bridge via GW lookup',
-        'command': ['python3', '-m', 'parcel_resolver.pin_bridge'],
-        'cwd': os.path.join(PROJECT_ROOT, 'engines', 'rt'),
-        'timeout': 600,  # 10 min
-    },
-    {
-        'name': 'geocode_preflight',
-        'description': 'Build geocode queue (zero API calls)',
-        'command': ['python3', '-m', 'parcel_resolver.geocode', '--preflight'],
-        'cwd': os.path.join(PROJECT_ROOT, 'engines', 'rt'),
-        'timeout': 600,  # 10 min
-    },
-    {
-        'name': 'geocode',
-        'description': 'Geocode addresses via Mapbox',
-        'command': ['python3', '-m', 'parcel_resolver.geocode', '--run'],
-        'cwd': os.path.join(PROJECT_ROOT, 'engines', 'rt'),
-        'timeout': None,  # no timeout — can take hours
-        'optional': True,
-    },
-    {
         'name': 'resolve',
-        'description': 'Parcel resolution with cross-validation',
-        'command': ['python3', '-m', 'parcel_resolver.resolve'],
+        'description': 'Unified parcel resolution (v2: PIN bridge + Ontario geocoder + AgMaps)',
+        'command': ['python3', '-m', 'parcel_resolver.resolve_v2'],
         'cwd': os.path.join(PROJECT_ROOT, 'engines', 'rt'),
-        'timeout': None,  # no timeout — can take hours
+        'timeout': None,  # no timeout — can take hours (155K records @ ~1/sec)
     },
     {
         'name': 'compile',

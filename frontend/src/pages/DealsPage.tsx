@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { Heading, Text, Button, Badge, TextField, TextArea } from "@radix-ui/themes";
-import { Plus, X } from "@phosphor-icons/react";
-import { fetchApi, postApi } from "../api/client";
+import { Plus, X, DotsSixVertical } from "@phosphor-icons/react";
+import { fetchApi, postApi, mutateApi } from "../api/client";
 import { formatCurrency, formatDate } from "../lib/utils";
 import { DEAL_STAGES, dealStageLabel, DEAL_STAGE_COLORS } from "../lib/theme";
 
@@ -23,9 +24,14 @@ interface PipelineData {
 }
 
 export default function DealsPage() {
+  const navigate = useNavigate();
   const [pipeline, setPipeline] = useState<PipelineData | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({ name: "", stage: "long_shot", amount: "", close_date: "", description: "" });
+
+  // Drag state
+  const [dragDealId, setDragDealId] = useState<string | null>(null);
+  const [dragOverStage, setDragOverStage] = useState<string | null>(null);
 
   const load = () => {
     fetchApi<PipelineData>("/deals/pipeline").then(setPipeline);
@@ -45,6 +51,59 @@ export default function DealsPage() {
     setForm({ name: "", stage: "long_shot", amount: "", close_date: "", description: "" });
     setShowForm(false);
     load();
+  };
+
+  // Drag handlers
+  const handleDragStart = (e: React.DragEvent, dealId: string) => {
+    setDragDealId(dealId);
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", dealId);
+    // Add a slight delay for visual feedback
+    const target = e.target as HTMLElement;
+    setTimeout(() => target.style.opacity = "0.4", 0);
+  };
+
+  const handleDragEnd = (e: React.DragEvent) => {
+    (e.target as HTMLElement).style.opacity = "1";
+    setDragDealId(null);
+    setDragOverStage(null);
+  };
+
+  const handleDragOver = (e: React.DragEvent, stage: string) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    setDragOverStage(stage);
+  };
+
+  const handleDragLeave = () => {
+    setDragOverStage(null);
+  };
+
+  const handleDrop = async (e: React.DragEvent, targetStage: string) => {
+    e.preventDefault();
+    setDragOverStage(null);
+    const dealId = e.dataTransfer.getData("text/plain");
+    if (!dealId) return;
+
+    // Find the deal's current stage
+    const currentDeal = pipeline?.stages.flatMap((s) => s.deals).find((d) => d.id === dealId);
+    if (!currentDeal || currentDeal.stage === targetStage) return;
+
+    // Optimistic update
+    if (pipeline) {
+      const updated = { ...pipeline };
+      updated.stages = updated.stages.map((s) => ({
+        ...s,
+        deals: s.stage === targetStage
+          ? [...s.deals, { ...currentDeal, stage: targetStage }]
+          : s.deals.filter((d) => d.id !== dealId),
+      }));
+      setPipeline(updated);
+    }
+
+    // Persist to backend
+    await mutateApi(`/deals/${dealId}`, "PATCH", { stage: targetStage });
+    load(); // reload for accurate stats
   };
 
   if (!pipeline) return <Text>Loading...</Text>;
@@ -80,11 +139,19 @@ export default function DealsPage() {
       <div className="flex gap-3 overflow-x-auto pb-4" style={{ minHeight: 300 }}>
         {pipeline.stages.map((s) => {
           const color = (DEAL_STAGE_COLORS[s.stage] || "gray") as any;
+          const isDragOver = dragOverStage === s.stage;
           return (
             <div
               key={s.stage}
-              className="flex flex-col rounded-lg border"
-              style={{ minWidth: 200, width: 200, borderColor: "var(--gray-4)", background: "var(--gray-2)" }}
+              className="flex flex-col rounded-lg border transition-colors"
+              style={{
+                minWidth: 200, width: 200,
+                borderColor: isDragOver ? "var(--accent-9)" : "var(--gray-4)",
+                background: isDragOver ? "var(--accent-2)" : "var(--gray-2)",
+              }}
+              onDragOver={(e) => handleDragOver(e, s.stage)}
+              onDragLeave={handleDragLeave}
+              onDrop={(e) => handleDrop(e, s.stage)}
             >
               {/* Stage header */}
               <div className="flex items-center justify-between px-3 py-2 border-b" style={{ borderColor: "var(--gray-4)" }}>
@@ -96,31 +163,45 @@ export default function DealsPage() {
               <div className="flex flex-col gap-2 p-2 flex-1 overflow-y-auto">
                 {s.deals.length === 0 ? (
                   <div className="flex items-center justify-center h-16">
-                    <Text size="1" style={{ color: "var(--gray-8)" }}>No deals</Text>
+                    <Text size="1" style={{ color: "var(--gray-8)" }}>
+                      {isDragOver ? "Drop here" : "No deals"}
+                    </Text>
                   </div>
                 ) : (
                   s.deals.map((d) => (
                     <div
                       key={d.id}
-                      className="rounded-lg border bg-white p-3 cursor-pointer hover:border-[var(--gray-6)] transition-colors"
-                      style={{ borderColor: "var(--gray-4)" }}
+                      draggable
+                      onDragStart={(e) => handleDragStart(e, d.id)}
+                      onDragEnd={handleDragEnd}
+                      onClick={() => navigate(`/deals/${d.id}`)}
+                      className="rounded-lg border bg-white p-3 cursor-grab hover:border-[var(--gray-6)] transition-colors active:cursor-grabbing"
+                      style={{
+                        borderColor: "var(--gray-4)",
+                        opacity: dragDealId === d.id ? 0.4 : 1,
+                      }}
                     >
-                      <Text size="2" weight="medium" className="block">{d.name}</Text>
-                      {d.amount && (
-                        <Text size="2" className="block mt-1" style={{ color: "var(--gray-11)" }}>
-                          {formatCurrency(d.amount)}
-                        </Text>
-                      )}
-                      {d.close_date && (
-                        <Text size="1" className="block mt-1" style={{ color: "var(--gray-9)" }}>
-                          Close: {formatDate(d.close_date)}
-                        </Text>
-                      )}
-                      {d.deal_owner && (
-                        <Text size="1" className="block mt-1" style={{ color: "var(--gray-9)" }}>
-                          {d.deal_owner}
-                        </Text>
-                      )}
+                      <div className="flex items-start gap-1">
+                        <DotsSixVertical size={12} className="mt-1 flex-shrink-0" style={{ color: "var(--gray-7)" }} />
+                        <div className="flex-1 min-w-0">
+                          <Text size="2" weight="medium" className="block truncate">{d.name}</Text>
+                          {d.amount != null && d.amount > 0 && (
+                            <Text size="2" className="block mt-1" style={{ color: "var(--gray-11)" }}>
+                              {formatCurrency(d.amount)}
+                            </Text>
+                          )}
+                          {d.close_date && (
+                            <Text size="1" className="block mt-1" style={{ color: "var(--gray-9)" }}>
+                              Close: {formatDate(d.close_date)}
+                            </Text>
+                          )}
+                          {d.deal_owner && (
+                            <Text size="1" className="block mt-1" style={{ color: "var(--gray-9)" }}>
+                              {d.deal_owner}
+                            </Text>
+                          )}
+                        </div>
+                      </div>
                     </div>
                   ))
                 )}

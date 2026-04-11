@@ -15,12 +15,13 @@ import {
   Heading, Text, Badge, Button, Separator, Tabs,
   DataList, Callout,
 } from "@radix-ui/themes";
+import CreateSellOppDialog from "../components/crm/CreateSellOppDialog";
 import {
   Copy, Phone, EnvelopeSimple, Buildings, CaretDown, CaretUp,
-  MapPin, ArrowSquareOut, User, Tag, ChartBar, Image as ImageIcon,
+  MapPin, ArrowSquareOut, User, Tag, ChartBar, Image as ImageIcon, LinkedinLogo,
 } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
-import { formatCurrency, formatDate, formatPhone } from "../lib/utils";
+import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
 import { categoryColor, propertyTypeColor, propertyTypeLabel, getRadixHex } from "../lib/theme";
 import type { PropertyDetail, PropertyTransaction, GwSaleHistory } from "../types";
 
@@ -190,9 +191,19 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
                 )) || <Text size="2">—</Text>}
                 {sellerContacts.map((c) => (
                   <div key={c.contact_id} className="mt-1.5 pl-3 border-l-2 border-[var(--gray-5)]">
-                    <Link to={`/contacts/${c.contact_id}`} className="no-underline text-[13px] font-medium" style={{ color: "var(--accent-11)" }}>
-                      {c.contact_name}
-                    </Link>
+                    <span className="inline-flex items-center gap-1">
+                      <Link to={`/contacts/${c.contact_id}`} className="no-underline text-[13px] font-medium" style={{ color: "var(--accent-11)" }}>
+                        {c.contact_name}
+                      </Link>
+                      <Link to={`/contacts/${c.contact_id}`} className="inline-flex items-center" style={{ color: "var(--gray-9)" }} title="View contact">
+                        <ArrowSquareOut size={11} />
+                      </Link>
+                      {c.contact_name && (
+                        <a href={`https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(c.contact_name)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center" style={{ color: "var(--gray-9)" }} title="Search LinkedIn">
+                          <LinkedinLogo size={12} weight="bold" />
+                        </a>
+                      )}
+                    </span>
                     {c.contact_title && <Text size="1" className="ml-1" style={{ color: "var(--gray-9)" }}>({c.contact_title})</Text>}
                     {(c.phone || c.contact_phone) && (
                       <a href={`tel:${c.phone || c.contact_phone}`} className="no-underline text-[12px] flex items-center gap-1 mt-0.5"
@@ -222,9 +233,19 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
                 )) || <Text size="2">—</Text>}
                 {buyerContacts.map((c) => (
                   <div key={c.contact_id} className="mt-1.5 pl-3 border-l-2 border-[var(--jade-6)]">
-                    <Link to={`/contacts/${c.contact_id}`} className="no-underline text-[13px] font-medium" style={{ color: "var(--accent-11)" }}>
-                      {c.contact_name}
-                    </Link>
+                    <span className="inline-flex items-center gap-1">
+                      <Link to={`/contacts/${c.contact_id}`} className="no-underline text-[13px] font-medium" style={{ color: "var(--accent-11)" }}>
+                        {c.contact_name}
+                      </Link>
+                      <Link to={`/contacts/${c.contact_id}`} className="inline-flex items-center" style={{ color: "var(--gray-9)" }} title="View contact">
+                        <ArrowSquareOut size={11} />
+                      </Link>
+                      {c.contact_name && (
+                        <a href={`https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(c.contact_name)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center" style={{ color: "var(--gray-9)" }} title="Search LinkedIn">
+                          <LinkedinLogo size={12} weight="bold" />
+                        </a>
+                      )}
+                    </span>
                     {c.contact_title && <Text size="1" className="ml-1" style={{ color: "var(--gray-9)" }}>({c.contact_title})</Text>}
                     {(c.phone || c.contact_phone) && (
                       <a href={`tel:${c.phone || c.contact_phone}`} className="no-underline text-[12px] flex items-center gap-1 mt-0.5"
@@ -412,6 +433,7 @@ function PropertyDetailPageInner() {
   const navigate = useNavigate();
   const [prop, setProp] = useState<PropertyDetail | null>(null);
   const [copied, setCopied] = useState(false);
+  const [showSellOppDialog, setShowSellOppDialog] = useState(false);
 
   // Determine where the user came from for the back link
   const cameFrom = (location.state as { from?: string } | null)?.from;
@@ -508,6 +530,7 @@ function PropertyDetailPageInner() {
           {/* Quick actions */}
           <div className="flex gap-2">
             <Button size="2" variant="soft">Add to List</Button>
+            <Button size="2" variant="soft" onClick={() => setShowSellOppDialog(true)}>Sell Opportunity</Button>
             <Button size="2" variant="soft">Create Deal</Button>
           </div>
         </div>
@@ -544,12 +567,12 @@ function PropertyDetailPageInner() {
         </div>
 
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
-          <Text size="1" style={{ color: "var(--gray-9)" }}>Transactions</Text>
+          <Text size="1" style={{ color: "var(--gray-9)" }}>Ownership</Text>
           <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
-            {prop.transaction_count}
+            {formatOwnership(computeOwnershipYears(prop.most_recent_sale_date))}
           </Text>
           <Text size="1" style={{ color: "var(--gray-9)" }}>
-            {prop.transaction_count === 1 ? "recorded sale" : "recorded sales"}
+            since last sale
           </Text>
         </div>
 
@@ -603,6 +626,19 @@ function PropertyDetailPageInner() {
             </Link>
           )}
 
+          {prop.owner_hq_address && (
+            <a
+              href={`https://www.google.com/search?q=${encodeURIComponent(prop.owner_hq_address)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-1.5 mt-2 no-underline group"
+            >
+              <MapPin size={14} weight="fill" className="mt-0.5 shrink-0" style={{ color: "var(--gray-9)" }} />
+              <Text size="2" className="group-hover:underline" style={{ color: "var(--gray-11)" }}>{prop.owner_hq_address}</Text>
+              <ArrowSquareOut size={11} className="mt-1 shrink-0" style={{ color: "var(--gray-9)" }} />
+            </a>
+          )}
+
           {/* Primary contact person — the person you actually call */}
           {primaryContact ? (
             <>
@@ -610,7 +646,26 @@ function PropertyDetailPageInner() {
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <User size={16} style={{ color: "var(--gray-9)" }} />
-                  <Text size="3" weight="medium">{primaryContact.contact_name}</Text>
+                  <div className="flex items-center gap-1.5">
+                    <Text size="3" weight="medium">{primaryContact.contact_name}</Text>
+                    {primaryContact.contact_id && (
+                      <Link to={`/contacts/${primaryContact.contact_id}`} className="inline-flex items-center" style={{ color: "var(--gray-9)" }} title="View contact">
+                        <ArrowSquareOut size={13} />
+                      </Link>
+                    )}
+                    {primaryContact.contact_name && (
+                      <a
+                        href={`https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(primaryContact.contact_name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center"
+                        style={{ color: "var(--gray-9)" }}
+                        title="Search LinkedIn"
+                      >
+                        <LinkedinLogo size={14} weight="bold" />
+                      </a>
+                    )}
+                  </div>
                   {primaryContact.contact_title && (
                     <Text size="1" style={{ color: "var(--gray-9)" }}>({primaryContact.contact_title})</Text>
                   )}
@@ -636,6 +691,12 @@ function PropertyDetailPageInner() {
                     <EnvelopeSimple size={16} />
                     {primaryContact.contact_email}
                   </a>
+                )}
+
+                {primaryContact.last_engaged_date && (
+                  <Text size="1" style={{ color: "var(--gray-9)" }}>
+                    Last Engaged: {formatDate(primaryContact.last_engaged_date)}
+                  </Text>
                 )}
 
                 <Text size="1" style={{ color: "var(--gray-9)" }}>
@@ -679,13 +740,6 @@ function PropertyDetailPageInner() {
             <Button size="2" variant="outline" className="justify-start">
               <EnvelopeSimple size={14} /> Send Email
             </Button>
-            {primaryContact?.contact_id && (
-              <Link to={`/contacts/${primaryContact.contact_id}`} className="no-underline">
-                <Button size="2" variant="outline" className="justify-start w-full">
-                  <User size={14} /> View Contact
-                </Button>
-              </Link>
-            )}
           </div>
         </div>
 
@@ -705,6 +759,9 @@ function PropertyDetailPageInner() {
                 parcelOutlineColor={getRadixHex(propertyTypeColor(prop.primary_property_type || ""), 11)}
                 token={MAPBOX_TOKEN}
                 mapStyle={SATELLITE_STYLE}
+                hqLat={prop.owner_hq_lat ?? undefined}
+                hqLng={prop.owner_hq_lng ?? undefined}
+                hqLabel={prop.owner_hq_address ?? undefined}
               />
             </Suspense>
           ) : prop.lat && prop.lng ? (
@@ -991,6 +1048,14 @@ function PropertyDetailPageInner() {
           </Tabs.Content>
         )}
       </Tabs.Root>
+
+      {showSellOppDialog && (
+        <CreateSellOppDialog
+          propertyId={prop.id}
+          propertyAddress={prop.display_address}
+          onClose={() => setShowSellOppDialog(false)}
+        />
+      )}
     </div>
   );
 }

@@ -360,16 +360,20 @@ def trace_rt_id(rt_id: str, user=Depends(get_current_user)):
 
             # Build classifications from assembled stage
             if stage == "assembled":
-                parsed = _parse_filename(fname)
-                if parsed.get("region"):
-                    # Extract position number from the assembled data or filename
-                    pos_match = re.search(r'pos(\d+)', fname)
+                # Read source_folder and position from the assembled data itself
+                # (more reliable than parsing filenames, especially for _daily/ paths)
+                sf = data.get("source_folder")
+                pos = data.get("position")
+                if sf is not None and pos is not None:
+                    # Parse region/type/page from source_folder for display
+                    sf_parts = sf.strip("/").split("/")
+                    parsed = _parse_filename(fname)
                     result["classifications"].append({
-                        "source_folder": f"{parsed['region']}/{parsed['property_type']}/{parsed['page']}",
-                        "position": int(pos_match.group(1)) if pos_match else 0,
-                        "region": parsed["region"],
-                        "property_type": parsed["property_type"],
-                        "page": parsed["page"],
+                        "source_folder": sf,
+                        "position": int(pos),
+                        "region": parsed.get("region") or sf_parts[0] if sf_parts else None,
+                        "property_type": parsed.get("property_type") or (sf_parts[1] if len(sf_parts) > 1 else None),
+                        "page": parsed.get("page") or (sf_parts[-1] if len(sf_parts) > 1 else None),
                     })
 
         result["stages"][stage] = entries

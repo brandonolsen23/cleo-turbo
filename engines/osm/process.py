@@ -1,9 +1,12 @@
 """
 OSM POI Processor -- transforms raw Overpass data into enriched POI records.
 
-Reads raw-data/osm/branded_pois.json + building_lookups.json, filters to
-129 master brands, enriches with building geometry + approx SF, and writes
-individual records to clean-data/osm/.
+Reads raw-data/osm/branded_pois.json + building_lookups.json, processes ALL
+branded POIs (not just curated ones), enriches with building geometry + approx
+SF, and writes individual records to clean-data/osm/.
+
+Brands from brands.csv are marked is_curated=true and get their category
+assigned. All other brands pass through with category=null.
 
 Usage:
     python engines/osm/process.py
@@ -23,50 +26,39 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 RAW_DIR = os.path.join(PROJECT_ROOT, 'raw-data', 'osm')
 OSM_DIR = os.path.join(PROJECT_ROOT, 'clean-data', 'osm')
 BRANDS_CSV = os.path.join(PROJECT_ROOT, 'engines', 'osm', 'brands.csv')
+ALIASES_JSON = os.path.join(PROJECT_ROOT, 'engines', 'osm', 'brand_aliases.json')
 
 
 # ================================================================
-# Brand normalization (from V3)
+# Brand normalization
 # ================================================================
 
 def _normalize(name):
     return re.sub(r'[^A-Z0-9]', '', name.upper())
 
 
-BRAND_ALIASES = {
-    "Beer Store": ["The Beer Store"],
-    "Independant": ["Your Independent Grocer"],
-    "Home Depot": ["The Home Depot"],
-    "Dominos Pizza": ["Domino's"],
-    "Halubut House": ["Halibut House"],
-    "Ultrimar": ["Ultramar"],
-    "Petro Can": ["Petro-Canada"],
-    "Scotia Bank": ["Scotiabank"],
-    "Baskin Robbins": ["Baskin-Robbins"],
-    "Indigo / Chapters": ["Indigo", "Chapters"],
-    "Pet Smart": ["PetSmart"],
-    "Kelseys Original Roadhouse": ["Kelsey's"],
-    "Montana's BBQ & Bar": ["Montana's"],
-    "Milestones Grill & Bar": ["Milestones"],
-    "Chipotle Mexican Grill": ["Chipotle"],
-    "Mary Brown's Chicken": ["Mary Brown's"],
-    "Popeyes Louisiana Kitchen": ["Popeyes"],
-    "Guac": ["Guac Mexi Grill"],
-    "Wimpy's Diner": ["Wimpy's"],
-    "The Works": ["The Works Gourmet Burger Bistro", "The Works Craft Burgers & Beer"],
-    "Applebees": ["Applebee's"],
-    "Barburrito": ["BarBurrito"],
-    "Real Canadian Superstore": ["Real Canadian Superstore"],
-    "Valu-Mart": ["Valu-mart"],
-    "Longos": ["Longo's"],
-}
+def load_aliases():
+    """Load brand alias mappings from JSON file.
+
+    Returns dict: raw_name -> canonical_name (exact string, not normalized).
+    """
+    if not os.path.isfile(ALIASES_JSON):
+        return {}
+    with open(ALIASES_JSON, encoding='utf-8') as f:
+        return json.load(f)
 
 
 def load_master_brands():
-    """Load master brands CSV. Returns dict: normalized_name -> {csv_name, category}."""
+    """Load master brands CSV.
+
+    Returns dict: normalized_name -> {csv_name, category}.
+    Also loads aliases so they point to the same curated brand info.
+    """
     if not os.path.isfile(BRANDS_CSV):
         print(f'ERROR: brands.csv not found: {BRANDS_CSV}')
         sys.exit(1)
+
+    aliases = load_aliases()
 
     lookup = {}
     with open(BRANDS_CSV, newline='', encoding='utf-8') as f:
@@ -78,10 +70,15 @@ def load_master_brands():
                 continue
             info = {'csv_name': csv_name, 'category': category}
             lookup[_normalize(csv_name)] = info
-            for alias in BRAND_ALIASES.get(csv_name, []):
-                lookup[_normalize(alias)] = info
 
-    return lookup
+    # Build reverse alias lookup: for each alias that maps to a curated brand,
+    # register the alias's normalized form pointing to the curated brand info
+    for raw_name, canonical_name in aliases.items():
+        norm_canonical = _normalize(canonical_name)
+        if norm_canonical in lookup:
+            lookup[_normalize(raw_name)] = lookup[norm_canonical]
+
+    return lookup, aliases
 
 
 # ================================================================
@@ -186,6 +183,12 @@ def parse_element(el, building_lookups):
     city = tags.get('addr:city', '') or building_tags.get('addr:city', '')
     postal = tags.get('addr:postcode', '') or building_tags.get('addr:postcode', '')
 
+    # Capture extra OSM tags for category inference (stored as sample_osm_tags)
+    osm_tags = {}
+    for tag_key in ('shop', 'amenity', 'leisure', 'tourism', 'healthcare', 'office'):
+        if tags.get(tag_key):
+            osm_tags[tag_key] = tags[tag_key]
+
     return {
         'source': 'osm',
         'osm_type': osm_type,
@@ -210,7 +213,27 @@ def parse_element(el, building_lookups):
             'polygon': polygon,
             'approx_sqft': approx_sqft,
         } if polygon else None,
+        'osm_tags': osm_tags if osm_tags else None,
     }
+
+
+def _apply_alias(brand_raw, aliases):
+    """Apply alias mapping to get canonical brand name.
+
+    Tries exact match first, then case-insensitive.
+    Returns the canonical name or the original if no alias found.
+    """
+    # Exact match
+    if brand_raw in aliases:
+        return aliases[brand_raw]
+
+    # Case-insensitive match
+    brand_lower = brand_raw.lower()
+    for raw, canonical in aliases.items():
+        if raw.lower() == brand_lower:
+            return canonical
+
+    return brand_raw
 
 
 # ================================================================
@@ -225,7 +248,7 @@ def run(dry_run=False):
         print(f'ERROR: {pois_path} not found. Run fetch.py first.')
         sys.exit(1)
 
-    print('Cleo Engine -- Process OSM POIs')
+    print('Cleo Engine -- Process OSM POIs (all brands)')
 
     # Load raw data
     print('Loading raw data...')
@@ -240,13 +263,16 @@ def run(dry_run=False):
             building_lookups = json.load(f)
         print(f'  Building lookups: {len(building_lookups):,}')
 
-    # Load master brands
-    master = load_master_brands()
-    print(f'  Master brands: {len(master):,} entries')
+    # Load master brands + aliases
+    master, aliases = load_master_brands()
+    print(f'  Master brands (curated): {len(set(v["csv_name"] for v in master.values())):,}')
+    print(f'  Aliases loaded: {len(aliases):,}')
 
-    # Parse and filter
+    # Parse ALL branded POIs
     parsed = []
     brand_counts = {}
+    curated_counts = {}
+    uncurated_counts = {}
     seen_ids = set()
 
     for el in elements:
@@ -259,15 +285,27 @@ def run(dry_run=False):
             continue
         seen_ids.add(record['osm_id'])
 
-        # Filter to master brands
-        norm = _normalize(record['brand'])
-        info = master.get(norm)
-        if not info:
-            continue
+        # Apply alias mapping to get canonical name
+        canonical = _apply_alias(record['brand'], aliases)
 
-        record['tracked_brand'] = info['csv_name']
-        record['category'] = info['category']
-        brand_counts[info['csv_name']] = brand_counts.get(info['csv_name'], 0) + 1
+        # Check if this brand is curated (in CSV)
+        norm = _normalize(canonical)
+        info = master.get(norm)
+
+        if info:
+            # Curated brand — use CSV name and category
+            record['tracked_brand'] = info['csv_name']
+            record['category'] = info['category']
+            record['is_curated'] = True
+            curated_counts[info['csv_name']] = curated_counts.get(info['csv_name'], 0) + 1
+        else:
+            # Non-curated brand — pass through with null category
+            record['tracked_brand'] = canonical
+            record['category'] = None
+            record['is_curated'] = False
+            uncurated_counts[canonical] = uncurated_counts.get(canonical, 0) + 1
+
+        brand_counts[record['tracked_brand']] = brand_counts.get(record['tracked_brand'], 0) + 1
         parsed.append(record)
 
     # Sort by OSM ID for stable ordering
@@ -277,20 +315,30 @@ def run(dry_run=False):
     with_polygon = sum(1 for r in parsed if r.get('building'))
     with_sqft = sum(1 for r in parsed if r.get('building') and r['building'].get('approx_sqft'))
     with_address = sum(1 for r in parsed if r['address'].get('street'))
-    with_cuisine = sum(1 for r in parsed if r.get('cuisine'))
-    with_operator = sum(1 for r in parsed if r.get('operator'))
+    curated_total = sum(1 for r in parsed if r.get('is_curated'))
+    uncurated_total = sum(1 for r in parsed if not r.get('is_curated'))
 
-    print(f'\nFiltered to {len(parsed):,} POIs across {len(brand_counts):,} brands')
+    print(f'\nProcessed {len(parsed):,} POIs across {len(brand_counts):,} brands')
+    print(f'  Curated brands: {len(curated_counts):,} brands, {curated_total:,} POIs')
+    print(f'  Uncurated brands: {len(uncurated_counts):,} brands, {uncurated_total:,} POIs')
     print(f'  With building polygon: {with_polygon:,}')
     print(f'  With approx SF:        {with_sqft:,}')
     print(f'  With address:          {with_address:,}')
-    print(f'  With cuisine:          {with_cuisine:,}')
-    print(f'  With operator:         {with_operator:,}')
 
     if dry_run:
-        print('\nTop 10 brands:')
-        for brand, count in sorted(brand_counts.items(), key=lambda x: -x[1])[:10]:
+        print('\nTop 20 curated brands:')
+        for brand, count in sorted(curated_counts.items(), key=lambda x: -x[1])[:20]:
             print(f'  {brand}: {count:,}')
+        print('\nTop 20 uncurated brands:')
+        for brand, count in sorted(uncurated_counts.items(), key=lambda x: -x[1])[:20]:
+            print(f'  {brand}: {count:,}')
+        # Check for curated brands with zero matches
+        all_csv_names = set(v['csv_name'] for v in master.values())
+        zero_match = all_csv_names - set(curated_counts.keys())
+        if zero_match:
+            print(f'\nWARNING: {len(zero_match)} curated brands with ZERO matches:')
+            for name in sorted(zero_match):
+                print(f'  {name}')
         return
 
     # Clear existing and write new records
@@ -311,7 +359,9 @@ def run(dry_run=False):
     # Write meta
     meta = {
         'total': len(parsed),
-        'brands': len(brand_counts),
+        'brands_total': len(brand_counts),
+        'brands_curated': len(curated_counts),
+        'brands_uncurated': len(uncurated_counts),
         'with_polygon': with_polygon,
         'with_address': with_address,
     }

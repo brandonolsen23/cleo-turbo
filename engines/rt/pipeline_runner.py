@@ -31,8 +31,8 @@ from engines.shared.io import safe_write_json, safe_read_json
 
 STAGES = {
     'resolve': {
-        'description': 'Parcel resolution with cross-validation',
-        'command': ['python3', '-m', 'parcel_resolver.resolve'],
+        'description': 'Unified parcel resolution (v2: Ontario geocoder + AgMaps)',
+        'command': ['python3', '-m', 'parcel_resolver.resolve_v2'],
         'cwd': os.path.join(PROJECT_ROOT, 'engines', 'rt'),
         'progress_dir': os.path.join(PROJECT_ROOT, 'engines', 'rt', 'pipeline', 'parcel_links'),
         'total_dir': os.path.join(PROJECT_ROOT, 'engines', 'rt', 'pipeline', 'addresses'),

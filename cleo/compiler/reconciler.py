@@ -2,8 +2,8 @@
 Reconciler — generates and persists stable IDs for properties, contacts, and groups.
 
 IDs are sequential (PRO_00001, CON_00001, GRP_00001) and persist across
-Compiler re-runs via the app_meta table. Once an ARN gets a PRO_ ID, it
-keeps that ID forever.
+Compiler re-runs via the id_mappings table (a system table that is never
+dropped). Once an ARN gets a PRO_ ID, it keeps that ID forever.
 
 Stable anchors:
   - Properties: 20-digit ARN
@@ -46,7 +46,13 @@ def normalize_group_name(name):
 
 
 class IDRegistry:
-    """Manages stable ID assignment backed by SQLite app_meta."""
+    """Manages stable ID assignment backed by SQLite id_mappings table.
+
+    The id_mappings table is a SYSTEM table (never dropped by the compiler),
+    which means anchor→ID mappings persist across full recompiles. This ensures
+    that CRM data (deals, group_contacts, notes, etc.) always references valid,
+    stable entity IDs.
+    """
 
     def __init__(self, conn):
         self.conn = conn
@@ -58,7 +64,7 @@ class IDRegistry:
         }
 
     def load(self):
-        """Load existing ID mappings from the database."""
+        """Load existing ID mappings from the id_mappings system table."""
         # Load counters from app_meta
         for prefix in ['PRO', 'CON', 'GRP']:
             row = self.conn.execute(
@@ -67,13 +73,23 @@ class IDRegistry:
             ).fetchone()
             self._counters[prefix] = int(row[0]) if row else 1
 
-        # Load existing mappings from tables
-        for row in self.conn.execute("SELECT arn, id FROM properties"):
+        # Load mappings from id_mappings (SYSTEM table — survives drops)
+        for row in self.conn.execute(
+            "SELECT anchor_key, entity_id FROM id_mappings WHERE entity_type = 'property'"
+        ):
             self._maps['property'][row[0]] = row[1]
-        for row in self.conn.execute("SELECT name_fingerprint, id FROM contacts"):
+        for row in self.conn.execute(
+            "SELECT anchor_key, entity_id FROM id_mappings WHERE entity_type = 'contact'"
+        ):
             self._maps['contact'][row[0]] = row[1]
-        for row in self.conn.execute("SELECT normalized_name, id FROM groups"):
+        for row in self.conn.execute(
+            "SELECT anchor_key, entity_id FROM id_mappings WHERE entity_type = 'group'"
+        ):
             self._maps['group'][row[0]] = row[1]
+
+        print(f'  ID Registry: {len(self._maps["property"]):,} properties, '
+              f'{len(self._maps["contact"]):,} contacts, '
+              f'{len(self._maps["group"]):,} groups')
 
     def save_counters(self):
         """Persist current counters to app_meta."""
@@ -96,6 +112,10 @@ class IDRegistry:
             return self._maps['property'][arn]
         new_id = self._next_id('PRO')
         self._maps['property'][arn] = new_id
+        self.conn.execute(
+            "INSERT OR IGNORE INTO id_mappings (entity_type, anchor_key, entity_id) VALUES (?, ?, ?)",
+            ('property', arn, new_id)
+        )
         return new_id
 
     def get_or_create_contact_id(self, fingerprint):
@@ -104,6 +124,10 @@ class IDRegistry:
             return self._maps['contact'][fingerprint]
         new_id = self._next_id('CON')
         self._maps['contact'][fingerprint] = new_id
+        self.conn.execute(
+            "INSERT OR IGNORE INTO id_mappings (entity_type, anchor_key, entity_id) VALUES (?, ?, ?)",
+            ('contact', fingerprint, new_id)
+        )
         return new_id
 
     def get_or_create_group_id(self, normalized_name):
@@ -112,4 +136,8 @@ class IDRegistry:
             return self._maps['group'][normalized_name]
         new_id = self._next_id('GRP')
         self._maps['group'][normalized_name] = new_id
+        self.conn.execute(
+            "INSERT OR IGNORE INTO id_mappings (entity_type, anchor_key, entity_id) VALUES (?, ?, ?)",
+            ('group', normalized_name, new_id)
+        )
         return new_id
