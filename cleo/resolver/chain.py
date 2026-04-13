@@ -187,8 +187,11 @@ def resolve(
                         geo_arn = parcel.get("arn")
                         if geo_arn and not cache_has(geo_arn):
                             cache_write(geo_arn, parcel)
-                except Exception:
-                    pass  # Geocode succeeded but spatial query failed
+                except Exception as e:
+                    # Re-raise token/session errors so the caller can refresh
+                    if type(e).__name__ in ('TokenExpiredError', 'SessionError'):
+                        raise
+                    pass  # Other errors: geocode succeeded but spatial query failed
 
             is_primary = addr.is_primary or i == 0
             signal_source = "geocode_primary" if is_primary else "geocode_variant"
@@ -226,7 +229,9 @@ def resolve(
                     confidence=conf,
                     details=f"Coords ({lat:.6f}, {lng:.6f}) → ARN {coords_arn}",
                 ))
-        except Exception:
+        except Exception as e:
+            if type(e).__name__ in ('TokenExpiredError', 'SessionError'):
+                raise
             pass
 
     # ── Step 5: Cross-validation and decision ────────────────────
