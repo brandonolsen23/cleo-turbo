@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 import pytest
 
-from cleo.discovery.signals import extract_signals, _load_exclusions
+from cleo.discovery.signals import extract_signals, _load_exclusions, _unify_fuzzy_contacts
 from cleo.discovery.types import Signal
 
 
@@ -490,6 +490,89 @@ class TestEntityCooccurrenceSignals:
             f"GRP_00001 should have no entity signals, got: "
             f"{[(s.signal_value, s.source_id) for s in grp1_entity]}"
         )
+
+
+class TestFuzzyContactUnification:
+    def test_fuzzy_contact_unification(self, db):
+        """NINA WINE and NINA HAGLER WINE should unify to same contact signal."""
+        # Add a second contact with a longer name variant
+        db.execute(
+            "INSERT INTO contacts (id, name_fingerprint, display_name, current_group_id) "
+            "VALUES ('CON_00002', 'NINA HAGLER WINE', 'Nina Hagler Wine', 'GRP_00003')"
+        )
+        # Add a contact with the shorter form
+        db.execute(
+            "INSERT INTO contacts (id, name_fingerprint, display_name, current_group_id) "
+            "VALUES ('CON_00003', 'NINA WINE', 'Nina Wine', 'GRP_00002')"
+        )
+        # Add transaction parties so both appear in signals
+        db.execute(
+            "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, party_name) "
+            "VALUES ('RT_TX_001', 'CON_00002', 'GRP_00003', 'buyer', 'Nina Hagler Wine')"
+        )
+        db.execute(
+            "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, party_name) "
+            "VALUES ('RT_TX_002', 'CON_00003', 'GRP_00002', 'buyer', 'Nina Wine')"
+        )
+        db.commit()
+
+        signals = extract_signals(db)
+        contact_signals = [s for s in signals if s.signal_type == "contact"]
+        contact_values = {s.signal_value for s in contact_signals}
+
+        # The longer form should have been unified away
+        assert "NINA HAGLER WINE" not in contact_values, (
+            "NINA HAGLER WINE should have been unified into NINA WINE"
+        )
+        # The shorter form should be present
+        assert "NINA WINE" in contact_values, (
+            "NINA WINE should remain as the canonical form"
+        )
+
+    def test_unify_returns_merge_map(self):
+        """_unify_fuzzy_contacts returns a mapping of long → short fingerprints."""
+        signals = [
+            Signal("contact", "NINA HAGLER WINE", "GRP_00001", "TX1", "seller"),
+            Signal("contact", "NINA WINE", "GRP_00002", "TX2", "buyer"),
+            Signal("address", "180 SHORTING RD|TORONTO|M1S3S2", "GRP_00001", "TX1", "seller"),
+        ]
+        updated, merge_map = _unify_fuzzy_contacts(signals)
+
+        assert merge_map == {"NINA HAGLER WINE": "NINA WINE"}
+        # The longer form should be replaced in the updated list
+        contact_values = [s.signal_value for s in updated if s.signal_type == "contact"]
+        assert "NINA HAGLER WINE" not in contact_values
+        assert contact_values.count("NINA WINE") == 2  # both rows now canonical
+
+    def test_no_match_when_disjoint_tokens(self):
+        """NINA WINE and NINA SMITH should NOT unify (different last name)."""
+        signals = [
+            Signal("contact", "NINA SMITH", "GRP_00001", "TX1", "seller"),
+            Signal("contact", "NINA WINE", "GRP_00002", "TX2", "buyer"),
+        ]
+        _, merge_map = _unify_fuzzy_contacts(signals)
+        assert merge_map == {}, "Disjoint names should not be merged"
+
+    def test_single_token_names_skipped(self):
+        """Single-token fingerprints are too ambiguous and should never unify."""
+        signals = [
+            Signal("contact", "NINA", "GRP_00001", "TX1", "seller"),
+            Signal("contact", "NINA WINE", "GRP_00002", "TX2", "buyer"),
+        ]
+        _, merge_map = _unify_fuzzy_contacts(signals)
+        assert merge_map == {}, "Single-token names should not trigger unification"
+
+    def test_non_contact_signals_unchanged(self):
+        """Address/phone signals must pass through _unify_fuzzy_contacts untouched."""
+        signals = [
+            Signal("address", "180 SHORTING RD|TORONTO|M1S3S2", "GRP_00001", "TX1", "seller"),
+            Signal("contact", "NINA HAGLER WINE", "GRP_00001", "TX1", "seller"),
+            Signal("contact", "NINA WINE", "GRP_00002", "TX2", "buyer"),
+        ]
+        updated, _ = _unify_fuzzy_contacts(signals)
+        addr_signals = [s for s in updated if s.signal_type == "address"]
+        assert len(addr_signals) == 1
+        assert addr_signals[0].signal_value == "180 SHORTING RD|TORONTO|M1S3S2"
 
 
 class TestSignalStructure:

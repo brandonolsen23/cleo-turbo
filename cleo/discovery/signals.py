@@ -71,6 +71,68 @@ def _load_exclusions(db):
         return set()
 
 
+def _unify_fuzzy_contacts(signals):
+    """Unify contact signals where one name is a token-subset of another.
+
+    'NINA WINE' and 'NINA HAGLER WINE' become the same contact signal because
+    {NINA, WINE} ⊂ {NINA, HAGLER, WINE}.  The shorter name is the canonical form.
+
+    Only applies to contact signals.  Requires minimum 2 tokens in the shorter
+    name to avoid matching single first or last names against longer names.
+
+    Returns (updated_signals, merge_map) where merge_map is
+    {longer_fingerprint: shorter_fingerprint}.
+    """
+    # Collect unique contact fingerprints
+    contact_fps = set()
+    for s in signals:
+        if s.signal_type == "contact":
+            contact_fps.add(s.signal_value)
+
+    if len(contact_fps) < 2:
+        return signals, {}
+
+    # Build token sets
+    fp_tokens = {fp: set(fp.split()) for fp in contact_fps}
+
+    # Sort shortest-first so we always map longer → shorter
+    fps_sorted = sorted(contact_fps, key=lambda x: len(x.split()))
+
+    merge_map = {}  # longer_name -> shorter_name (canonical)
+    for i, fp_short in enumerate(fps_sorted):
+        tokens_short = fp_tokens[fp_short]
+        if len(tokens_short) < 2:
+            continue  # single-token names are too ambiguous
+        for fp_long in fps_sorted[i + 1:]:
+            if fp_long in merge_map:
+                continue  # already mapped to a canonical form
+            tokens_long = fp_tokens[fp_long]
+            if len(tokens_long) <= len(tokens_short):
+                continue  # not actually longer
+            if tokens_short.issubset(tokens_long):
+                merge_map[fp_long] = fp_short
+
+    if not merge_map:
+        return signals, {}
+
+    # Apply mappings
+    updated = []
+    for s in signals:
+        if s.signal_type == "contact" and s.signal_value in merge_map:
+            updated.append(Signal(
+                signal_type=s.signal_type,
+                signal_value=merge_map[s.signal_value],
+                group_id=s.group_id,
+                source_id=s.source_id,
+                side=s.side,
+                raw_value=s.raw_value,
+            ))
+        else:
+            updated.append(s)
+
+    return updated, merge_map
+
+
 def extract_signals(db) -> list:
     """Extract all raw signals from the database.
 
@@ -297,5 +359,8 @@ def extract_signals(db) -> list:
                     side=side,
                     raw_value="",
                 ))
+
+    # Unify fuzzy contact names (token-subset matching)
+    signals, _ = _unify_fuzzy_contacts(signals)
 
     return signals
