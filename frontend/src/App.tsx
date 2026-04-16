@@ -38,6 +38,8 @@ import OpportunitiesPage from "./pages/OpportunitiesPage";
 import SellOpportunityDetailPage from "./pages/SellOpportunityDetailPage";
 import BuyMandateDetailPage from "./pages/BuyMandateDetailPage";
 import GroupComparePage from "./pages/GroupComparePage";
+import DiscoveryPage from "./pages/DiscoveryPage";
+import DiscoveryClusterPage from "./pages/DiscoveryClusterPage";
 
 // Lazy-loaded pages
 const MapPage = lazy(() => import("./pages/MapPage"));
@@ -119,6 +121,8 @@ export default function App() {
                 <Route path="/pipeline/:stage" element={<PipelineStagePage />} />
                 <Route path="/pipeline/:stage/*" element={<PipelineRecordPage />} />
                 <Route path="/data-quality" element={<DataQualityPage />} />
+                <Route path="/discovery" element={<DiscoveryPage />} />
+                <Route path="/discovery/:clusterId" element={<DiscoveryClusterPage />} />
                   <Route path="/settings" element={<SettingsPage />} />
                   <Route path="/admin" element={<AdminPage />} />
                 </Route>

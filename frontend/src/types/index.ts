@@ -1352,3 +1352,71 @@ export interface AddressSuggestionsResponse {
   suggestions: AddressSuggestion[];
   total: number;
 }
+
+// ── Discovery ──────────────────────────────────────────────
+
+export interface DiscoveryClusterSummary {
+  anchor_group_id: string;
+  anchor_name: string;
+  member_count: number;
+  portfolio_value: number;
+  confidence: number;
+  signal_count: number;
+  status: string;
+}
+
+export interface DiscoveryRun {
+  run_id: string;
+  mode: string;
+  started_at: string;
+  completed_at: string | null;
+  stats: {
+    clusters_found: number;
+    groups_processed: number;
+    evidence_written: number;
+    signal_counts: Record<string, number>;
+    ground_truth?: Record<string, { precision: number; recall: number; missing: string[]; unexpected: string[] }>;
+  } | null;
+}
+
+export interface DiscoveryBrowseResponse {
+  results: DiscoveryClusterSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+  run: DiscoveryRun | null;
+}
+
+export interface DiscoveryEvidence {
+  source_group_id: string;
+  target_group_id: string;
+  signal_type: string;
+  signal_value: string;
+  source_id: string;
+  rule_id: string;
+  confidence: number;
+  iteration: number;
+}
+
+export interface DiscoveryClusterDetail {
+  anchor: {
+    id: string;
+    display_name: string;
+    normalized_name: string;
+    status: string;
+    transaction_count: number;
+    property_count: number;
+  } | null;
+  members: {
+    id: string;
+    display_name: string;
+    normalized_name: string;
+    status: string;
+    transaction_count: number;
+    property_count: number;
+  }[];
+  member_count: number;
+  evidence: DiscoveryEvidence[];
+  signal_summary: Record<string, string[]>;
+}
