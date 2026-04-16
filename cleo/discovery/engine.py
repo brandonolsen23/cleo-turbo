@@ -1,8 +1,9 @@
 """
 Engine orchestrator for the Group Discovery Algorithm.
 
-Wires together signal extraction, clustering, and validation into a
-single callable function used by the CLI and future API routes.
+Wires together signal extraction, clustering, iterative expansion,
+cluster splitting, and validation into a single callable function
+used by the CLI and future API routes.
 """
 
 import json
@@ -12,8 +13,8 @@ from datetime import datetime, timezone
 
 from .types import RunConfig, RunResult
 from .signals import extract_signals
-from .clustering import build_exact_match_clusters
-from .rules import build_rule_based_clusters
+from .rules import build_rule_based_clusters, expand_clusters, split_disconnected_clusters
+from .contacts import build_contact_tenures, check_distinctiveness
 from .validation import load_ground_truth, validate_clusters
 
 
@@ -200,6 +201,19 @@ def _log_run(db, run_id: str, started_at: str, result: RunResult, config: RunCon
 def run_discovery(db, config: RunConfig = None) -> RunResult:
     """Run the full discovery pipeline.
 
+    Steps:
+      0. Extract signals from the database
+      1. Build contact tenures (for rule 4e)
+      2. Initial rule-based clustering (pair-wise 2-signal evaluation)
+      3. Check contact distinctiveness
+      4. Iterative expansion (loop until convergence or max_iterations)
+      5. Cluster splitting (remove disconnected components)
+      6. Re-check distinctiveness after expansion
+      7. Assign cluster IDs and resolve anchors
+      8. Validate against ground truth (validate/dry_run modes)
+      9. Write evidence to database
+     10. Log the run
+
     Parameters
     ----------
     db : sqlite3.Connection
@@ -236,10 +250,23 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
         print(f"[discovery]     {sig_type}: {counts_by_type[sig_type]}")
     print()
 
-    # ── Step 1: Build clusters (rule-based pair evaluation) ─────────────────
-    print("[discovery] Step 1: Building rule-based clusters (2+ signal types per pair)...")
-    clusters, suggestions, evidence_list = build_rule_based_clusters(signals)
-    print(f"[discovery]   Confirmed clusters: {len(clusters)}")
+    # ── Step 1: Build contact tenures ─────────────────────────────────────────
+    print("[discovery] Step 1: Building contact tenures...")
+    tenures = build_contact_tenures(db)
+    print(f"[discovery]   Contact fingerprints with tenures: {len(tenures)}")
+    print()
+
+    # ── Step 2: Initial rule-based clustering ─────────────────────────────────
+    print("[discovery] Step 2: Building rule-based clusters (2+ signal types per pair)...")
+    clusters, suggestions, evidence_list = build_rule_based_clusters(
+        signals, contact_tenures=tenures
+    )
+
+    initial_cluster_count = len(clusters)
+    initial_member_count = sum(len(c.member_group_ids) for c in clusters)
+
+    print(f"[discovery]   Initial clusters: {initial_cluster_count}")
+    print(f"[discovery]   Initial groups in clusters: {initial_member_count}")
     print(f"[discovery]   Suggestions (below threshold): {len(suggestions)}")
     if suggestions:
         from collections import Counter
@@ -248,20 +275,83 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
             print(f"[discovery]     suggestion rule {rule_id}: {count}")
     print()
 
-    # ── Assign IDs and anchors ────────────────────────────────────────────────
+    # ── Step 3: Check contact distinctiveness ─────────────────────────────────
+    print("[discovery] Step 3: Checking contact distinctiveness...")
+    tenures = check_distinctiveness(tenures, clusters)
+    distinctive_count = sum(
+        1 for fp, tlist in tenures.items()
+        if any(t.is_distinctive for t in tlist)
+    )
+    print(f"[discovery]   Distinctive contacts: {distinctive_count} / {len(tenures)}")
+    print()
+
+    # ── Step 4: Iterative expansion ───────────────────────────────────────────
+    print("[discovery] Step 4: Iterative expansion...")
+    total_expansion_added = 0
+    final_iteration = 0
+
+    for iteration in range(1, config.max_iterations + 1):
+        new_members = expand_clusters(clusters, signals, tenures=tenures, iteration=iteration)
+        final_iteration = iteration
+        total_expansion_added += new_members
+        print(f"[discovery]   Iteration {iteration}: +{new_members} groups added")
+        if new_members == 0:
+            break
+
+    expansion_member_count = sum(len(c.member_group_ids) for c in clusters)
+    print(f"[discovery]   Expansion converged after {final_iteration} iteration(s)")
+    print(f"[discovery]   Groups in clusters after expansion: {expansion_member_count} (+{total_expansion_added})")
+    print()
+
+    # ── Step 5: Cluster splitting ─────────────────────────────────────────────
+    print("[discovery] Step 5: Splitting disconnected clusters...")
+    pre_split_count = len(clusters)
+    clusters = split_disconnected_clusters(clusters, signals)
+    post_split_count = len(clusters)
+    split_diff = post_split_count - pre_split_count
+    print(f"[discovery]   Clusters before split: {pre_split_count}")
+    print(f"[discovery]   Clusters after split: {post_split_count} ({'+' if split_diff >= 0 else ''}{split_diff})")
+    print()
+
+    # ── Step 6: Re-check distinctiveness after expansion ──────────────────────
+    print("[discovery] Step 6: Re-checking contact distinctiveness post-expansion...")
+    tenures = check_distinctiveness(tenures, clusters)
+    distinctive_count_post = sum(
+        1 for fp, tlist in tenures.items()
+        if any(t.is_distinctive for t in tlist)
+    )
+    print(f"[discovery]   Distinctive contacts: {distinctive_count_post} / {len(tenures)}")
+    print()
+
+    # ── Step 7: Assign IDs and anchors ────────────────────────────────────────
     if clusters:
         clusters = _assign_cluster_ids(clusters)
         _resolve_anchors(clusters, db)
 
         total_members = sum(len(c.member_group_ids) for c in clusters)
-        print(f"[discovery] Cluster IDs assigned ({clusters[0].cluster_id} – {clusters[-1].cluster_id})")
-        print(f"[discovery] Groups in clusters: {total_members}")
+        print(f"[discovery] Step 7: Cluster IDs assigned ({clusters[0].cluster_id} - {clusters[-1].cluster_id})")
+        print(f"[discovery]   Total clusters: {len(clusters)}")
+        print(f"[discovery]   Total groups in clusters: {total_members}")
+
+        # Size distribution
+        sizes = [len(c.member_group_ids) for c in clusters]
+        size_dist = defaultdict(int)
+        for s in sizes:
+            if s <= 5:
+                size_dist[f"{s}"] += 1
+            elif s <= 10:
+                size_dist["6-10"] += 1
+            elif s <= 20:
+                size_dist["11-20"] += 1
+            else:
+                size_dist["21+"] += 1
+        print(f"[discovery]   Size distribution: {dict(sorted(size_dist.items()))}")
         print()
 
-    # ── Validate mode ─────────────────────────────────────────────────────────
+    # ── Step 8: Validate against ground truth ─────────────────────────────────
     gt_results = None
     if config.mode in ("validate", "dry_run"):
-        print("[discovery] Loading ground truth...")
+        print("[discovery] Step 8: Loading ground truth...")
         ground_truth = load_ground_truth(db)
         if ground_truth:
             print(f"[discovery]   Ground truth portfolios: {len(ground_truth)}")
@@ -279,18 +369,24 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
                     f"size={res['matched_cluster_size']}  "
                     f"missing={missing_count}  unexpected={unexpected_count}"
                 )
+                if missing_count > 0 and missing_count <= 10:
+                    for m in res["missing"]:
+                        print(f"[discovery]     missing: {m}")
+                if unexpected_count > 0 and unexpected_count <= 10:
+                    for u in res["unexpected"]:
+                        print(f"[discovery]     unexpected: {u}")
         else:
-            print("[discovery]   No ground truth entries found — skipping validation.")
+            print("[discovery]   No ground truth entries found -- skipping validation.")
         print()
 
-    # ── Write evidence ────────────────────────────────────────────────────────
+    # ── Step 9: Write evidence ────────────────────────────────────────────────
     if config.mode != "dry_run" and evidence_list:
-        print("[discovery] Writing evidence to database...")
+        print("[discovery] Step 9: Writing evidence to database...")
         evidence_count = _write_evidence_from_list(db, run_id, evidence_list)
         print(f"[discovery]   Evidence rows written: {evidence_count}")
         print()
 
-    # ── Build result ──────────────────────────────────────────────────────────
+    # ── Step 10: Build result and log run ─────────────────────────────────────
     all_group_ids = {s.group_id for s in signals}
     result = RunResult(
         run_id=run_id,
@@ -299,13 +395,12 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
         merges_executed=0,          # execute mode not yet implemented
         suggestions_created=len(suggestions),
         groups_processed=len(all_group_ids),
-        iterations=1,
+        iterations=final_iteration,
         ground_truth_results=gt_results,
     )
 
-    # ── Log run ───────────────────────────────────────────────────────────────
     _log_run(db, run_id, started_at, result, config, gt_results)
     print(f"[discovery] Run logged to discovery_runs.")
-    print(f"[discovery] Done. clusters_found={result.clusters_found}  groups_processed={result.groups_processed}")
+    print(f"[discovery] Done. clusters_found={result.clusters_found}  groups_processed={result.groups_processed}  iterations={result.iterations}")
 
     return result

@@ -349,3 +349,333 @@ def build_rule_based_clusters(signals, min_confidence=0.80, contact_tenures=None
         clusters.append(cluster)
 
     return clusters, suggestions, evidence_list
+
+
+# ---------------------------------------------------------------------------
+# Iterative expansion
+# ---------------------------------------------------------------------------
+
+def expand_clusters(clusters, signals, tenures=None, iteration=1):
+    """Expand clusters by checking unclustered groups against cluster signal sets.
+
+    For each unclustered group, checks how many signal CATEGORIES it shares with
+    each cluster's expanded signal set (all signals from all members). If the
+    group matches a cluster with confidence >= 0.80 (rules 4a-4g), it is added
+    to the cluster.
+
+    Parameters
+    ----------
+    clusters : list[Cluster]
+        Current confirmed clusters (modified in-place).
+    signals : list[Signal]
+        Full flat signal list.
+    tenures : dict, optional
+        Contact tenures for rule 4e.
+    iteration : int
+        Current iteration number (for evidence tracking).
+
+    Returns
+    -------
+    int
+        Number of new members added across all clusters.
+    """
+    if not clusters or not signals:
+        return 0
+
+    # Build set of all clustered group IDs
+    clustered = set()
+    for c in clusters:
+        clustered.update(c.member_group_ids)
+
+    # Build per-group signal index: group_id -> {type -> set(values)}
+    signal_index = _build_signal_index(signals)
+    entity_neighbors = _build_entity_neighbors(signals)
+    group_sigs = _build_group_signals(signal_index)
+
+    # Build group -> cluster index for fast entity neighbor lookups
+    group_to_ci = {}
+    for ci, cluster in enumerate(clusters):
+        for gid in cluster.member_group_ids:
+            group_to_ci[gid] = ci
+
+    # Build reverse index: (signal_type, signal_value) -> set of cluster indices
+    # This lets us quickly find which clusters an unclustered group COULD match.
+    sig_to_clusters = defaultdict(set)
+    for ci, cluster in enumerate(clusters):
+        for gid in cluster.member_group_ids:
+            for sig_type, values in group_sigs.get(gid, {}).items():
+                for val in values:
+                    sig_to_clusters[(sig_type, val)].add(ci)
+
+    # Build cluster signal index: for each cluster, collect all member signals
+    cluster_sigs = {}
+    for ci, cluster in enumerate(clusters):
+        csigs = defaultdict(set)
+        for gid in cluster.member_group_ids:
+            for sig_type, values in group_sigs.get(gid, {}).items():
+                csigs[sig_type].update(values)
+        # Track entity relationships: which groups are members, and who are their neighbors
+        csigs['_entity_members'] = cluster.member_group_ids.copy()
+        all_entity_neighbors = set()
+        for gid in cluster.member_group_ids:
+            all_entity_neighbors.update(entity_neighbors.get(gid, set()))
+        csigs['_entity_neighbors'] = all_entity_neighbors
+        cluster_sigs[ci] = csigs
+
+    # Identify unclustered groups that have at least one signal
+    unclustered = [gid for gid in group_sigs if gid not in clustered]
+
+    # Pre-filter: only check groups that have at least one signal in common
+    # with at least one cluster (using the reverse index)
+    def _candidate_clusters(gid):
+        """Return set of cluster indices that share at least one signal with gid."""
+        candidates = set()
+        for sig_type, values in group_sigs.get(gid, {}).items():
+            for val in values:
+                candidates.update(sig_to_clusters.get((sig_type, val), set()))
+        # Also check entity neighbor relationships using the group_to_ci map (O(1) per neighbor)
+        gid_neighbors = entity_neighbors.get(gid, set())
+        for neighbor in gid_neighbors:
+            ci = group_to_ci.get(neighbor)
+            if ci is not None:
+                candidates.add(ci)
+        return candidates
+
+    new_total = 0
+
+    for gid in unclustered:
+        gsigs = group_sigs.get(gid, {})
+        gid_neighbors = entity_neighbors.get(gid, set())
+
+        if not gsigs and not gid_neighbors:
+            continue
+
+        candidate_cis = _candidate_clusters(gid)
+        if not candidate_cis:
+            continue
+
+        best_ci = None
+        best_rule = None
+        best_conf = 0.0
+        best_categories = {}
+
+        for ci in candidate_cis:
+            csigs = cluster_sigs[ci]
+
+            # Check shared signal categories
+            categories = {}
+
+            # Contact match
+            shared_contacts = gsigs.get('contact', set()) & csigs.get('contact', set())
+            if shared_contacts:
+                categories['contact'] = shared_contacts
+
+            # Address match
+            shared_addrs = gsigs.get('address', set()) & csigs.get('address', set())
+            if shared_addrs:
+                categories['address'] = shared_addrs
+
+            # Phone match
+            shared_phones = gsigs.get('phone', set()) & csigs.get('phone', set())
+            if shared_phones:
+                categories['phone'] = shared_phones
+
+            # Name fragment match
+            shared_nf = gsigs.get('name_fragment', set()) & csigs.get('name_fragment', set())
+            if shared_nf:
+                categories['name_fragment'] = shared_nf
+
+            # Management company: shared trade_name, care_of, or entity bridge
+            mgmt = set()
+            for stype in ('trade_name', 'care_of'):
+                shared = gsigs.get(stype, set()) & csigs.get(stype, set())
+                for v in shared:
+                    mgmt.add(f"{stype}:{v}")
+
+            # Entity bridge: does this group directly co-occur with any cluster member?
+            entity_bridge = gid_neighbors & csigs.get('_entity_members', set())
+            # OR: does this group co-occur with any entity that cluster members also co-occur with?
+            entity_bridge_indirect = gid_neighbors & csigs.get('_entity_neighbors', set())
+            for eid in entity_bridge | entity_bridge_indirect:
+                mgmt.add(f"entity_bridge:{eid}")
+
+            if mgmt:
+                categories['management_company'] = mgmt
+
+            if not categories:
+                continue
+
+            rule_id, confidence = evaluate_pair(categories, contact_tenures=tenures)
+
+            if confidence > best_conf:
+                best_conf = confidence
+                best_ci = ci
+                best_rule = rule_id
+                best_categories = categories
+
+        if best_ci is not None and best_conf >= 0.80:
+            cluster = clusters[best_ci]
+            cluster.member_group_ids.add(gid)
+
+            # Update group -> cluster index
+            group_to_ci[gid] = best_ci
+
+            # Update cluster signal index with new member's signals
+            csigs = cluster_sigs[best_ci]
+            for sig_type, values in gsigs.items():
+                csigs[sig_type].update(values)
+            csigs['_entity_members'].add(gid)
+            csigs['_entity_neighbors'].update(entity_neighbors.get(gid, set()))
+
+            # Update reverse index for the new member's signals
+            for sig_type, values in gsigs.items():
+                for val in values:
+                    sig_to_clusters[(sig_type, val)].add(best_ci)
+
+            # Update cluster confirmed signals
+            for cat, vals in best_categories.items():
+                if cat == 'address':
+                    cluster.confirmed_addresses.update(vals)
+                elif cat == 'contact':
+                    cluster.confirmed_contacts.update(vals)
+                elif cat == 'phone':
+                    cluster.confirmed_phones.update(vals)
+                elif cat == 'management_company':
+                    cluster.confirmed_entities.update(vals)
+                elif cat == 'name_fragment':
+                    cluster.confirmed_name_fragments.update(vals)
+
+            clustered.add(gid)
+            new_total += 1
+
+    return new_total
+
+
+# ---------------------------------------------------------------------------
+# Cluster splitting
+# ---------------------------------------------------------------------------
+
+def split_disconnected_clusters(clusters, signals):
+    """Split clusters with internally disconnected components.
+
+    Within each cluster, builds a graph where edges connect pairs of members
+    that share ANY signal (1+ signal categories). We use a lower bar than
+    initial clustering because every member was already validated at 2+
+    categories — either by pair-wise evaluation or by expansion against the
+    cluster's aggregate signal set. Splitting only checks reachability, not
+    re-validates membership.
+
+    If the graph has multiple connected components, splits the cluster.
+    Clusters with only 1 member in a component are dropped (singletons).
+
+    Parameters
+    ----------
+    clusters : list[Cluster]
+        Clusters to check (not modified; new list returned).
+    signals : list[Signal]
+        Full flat signal list.
+
+    Returns
+    -------
+    list[Cluster]
+        Potentially more clusters than input (split ones replaced).
+    """
+    if not clusters:
+        return []
+
+    signal_index = _build_signal_index(signals)
+    entity_neighbors = _build_entity_neighbors(signals)
+    group_signals = _build_group_signals(signal_index)
+
+    result = []
+
+    for cluster in clusters:
+        members = cluster.member_group_ids
+        if len(members) <= 2:
+            # 2-member clusters can't be disconnected (they were confirmed as a pair)
+            result.append(cluster)
+            continue
+
+        # Build adjacency list: which pairs within this cluster share ANY signal?
+        # We use 1+ shared signal categories (not 2+) because every member was
+        # already validated at 2+ categories — either by initial pair-wise evaluation
+        # or by expansion against the cluster's aggregate signal set. The splitting
+        # step only needs to verify internal reachability, not re-validate.
+        adjacency = defaultdict(set)
+        member_list = sorted(members)
+
+        for i in range(len(member_list)):
+            for j in range(i + 1, len(member_list)):
+                gid_a, gid_b = member_list[i], member_list[j]
+                categories = _get_pair_categories(gid_a, gid_b, group_signals, entity_neighbors)
+                if categories:
+                    adjacency[gid_a].add(gid_b)
+                    adjacency[gid_b].add(gid_a)
+
+        # Find connected components via BFS
+        visited = set()
+        components = []
+
+        for gid in member_list:
+            if gid in visited:
+                continue
+            # BFS from gid
+            component = set()
+            queue = [gid]
+            while queue:
+                current = queue.pop(0)
+                if current in visited:
+                    continue
+                visited.add(current)
+                component.add(current)
+                for neighbor in adjacency.get(current, set()):
+                    if neighbor not in visited and neighbor in members:
+                        queue.append(neighbor)
+            components.append(component)
+
+        if len(components) == 1:
+            # Fully connected — keep as-is
+            result.append(cluster)
+        else:
+            # Split into sub-clusters
+            for component in components:
+                if len(component) < 2:
+                    continue  # drop singletons
+
+                # Build confirmed_* fields for the sub-cluster from its members' signals
+                sub_cluster = Cluster(
+                    cluster_id='',
+                    anchor_group_id='',
+                    anchor_name='',
+                    member_group_ids=component,
+                )
+
+                # Rebuild confirmed signals for this sub-cluster
+                for (sig_type, sig_value), group_ids in signal_index.items():
+                    if sig_type == 'entity':
+                        continue
+                    shared = group_ids & component
+                    if len(shared) >= 2:
+                        if sig_type == 'address':
+                            sub_cluster.confirmed_addresses.add(sig_value)
+                        elif sig_type == 'contact':
+                            sub_cluster.confirmed_contacts.add(sig_value)
+                        elif sig_type == 'phone':
+                            sub_cluster.confirmed_phones.add(sig_value)
+                        elif sig_type in ('trade_name', 'care_of'):
+                            sub_cluster.confirmed_entities.add(sig_value)
+                        elif sig_type == 'name_fragment':
+                            sub_cluster.confirmed_name_fragments.add(sig_value)
+
+                # Also check entity co-occurrence within the sub-cluster
+                for gid_a in component:
+                    for gid_b in component:
+                        if gid_a >= gid_b:
+                            continue
+                        if gid_b in entity_neighbors.get(gid_a, set()):
+                            sub_cluster.confirmed_entities.add(f"entity_bridge:{gid_a}")
+                            sub_cluster.confirmed_entities.add(f"entity_bridge:{gid_b}")
+
+                result.append(sub_cluster)
+
+    return result
