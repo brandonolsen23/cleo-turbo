@@ -16,6 +16,8 @@ from .signals import extract_signals
 from .rules import build_rule_based_clusters, expand_clusters, split_disconnected_clusters
 from .contacts import build_contact_tenures, check_distinctiveness
 from .validation import load_ground_truth, validate_clusters
+from cleo.database.group_merge_ops import execute_merge, resolve_target
+from cleo.analytics.groups import refresh_group_analytics
 
 
 def _make_run_id() -> str:
@@ -198,6 +200,109 @@ def _log_run(db, run_id: str, started_at: str, result: RunResult, config: RunCon
     db.commit()
 
 
+def _score_clusters(clusters: list) -> None:
+    """Assign confidence scores to clusters based on internal evidence strength (in-place)."""
+    for cluster in clusters:
+        # Count how many signal types are confirmed
+        signal_types = 0
+        if cluster.confirmed_addresses:
+            signal_types += 1
+        if cluster.confirmed_contacts:
+            signal_types += 1
+        if cluster.confirmed_phones:
+            signal_types += 1
+        if cluster.confirmed_entities:
+            signal_types += 1
+
+        # Member factor: larger clusters get a slight boost (diminishing returns above 5)
+        member_factor = min(1.0, len(cluster.member_group_ids) / 5.0)
+
+        # Base confidence from signal type diversity
+        if signal_types >= 3:
+            cluster.confidence = 0.95
+        elif signal_types >= 2:
+            cluster.confidence = 0.90
+        else:
+            cluster.confidence = 0.80
+
+        # Small boost for well-connected clusters
+        cluster.confidence = min(1.0, cluster.confidence + member_factor * 0.05)
+
+        # Set status based on threshold
+        if cluster.confidence >= 0.90:
+            cluster.status = 'auto_confirmed'
+        else:
+            cluster.status = 'needs_review'
+
+
+def _execute_merges(db, clusters: list, config: RunConfig, user: str = 'discovery'):
+    """Execute merges for confirmed clusters (confidence >= config.min_confidence_auto).
+
+    Returns (merge_count, skipped_count).
+    """
+    merge_count = 0
+    skipped = 0
+    affected_anchors = set()
+
+    for cluster in clusters:
+        if cluster.confidence < config.min_confidence_auto:
+            continue
+
+        anchor = cluster.anchor_group_id
+
+        # Verify anchor exists and isn't merged
+        anchor_row = db.execute(
+            "SELECT id, status FROM groups WHERE id = ?", (anchor,)
+        ).fetchone()
+        if not anchor_row or anchor_row['status'] == 'merged':
+            skipped += len(cluster.member_group_ids) - 1
+            continue
+
+        # Resolve anchor through any existing merge chains
+        ultimate_anchor = resolve_target(db, anchor)
+        if ultimate_anchor != anchor:
+            anchor = ultimate_anchor
+
+        for member_id in cluster.member_group_ids:
+            if member_id == anchor:
+                continue
+
+            # Check if member is already merged
+            member_row = db.execute(
+                "SELECT id, status FROM groups WHERE id = ?", (member_id,)
+            ).fetchone()
+            if not member_row or member_row['status'] == 'merged':
+                skipped += 1
+                continue
+
+            # Check if already merged into this target
+            existing = db.execute(
+                "SELECT id FROM group_merges WHERE source_group_id = ? AND target_group_id = ? AND unmerged_at IS NULL",
+                (member_id, anchor)
+            ).fetchone()
+            if existing:
+                skipped += 1
+                continue
+
+            # Record the merge then execute it
+            db.execute(
+                "INSERT INTO group_merges (source_group_id, target_group_id, merged_by) VALUES (?, ?, ?)",
+                (member_id, anchor, user)
+            )
+            execute_merge(db, member_id, anchor)
+            merge_count += 1
+
+        affected_anchors.add(anchor)
+
+    db.commit()
+
+    # Refresh analytics for all affected anchor groups
+    if affected_anchors:
+        refresh_group_analytics(db, group_ids=list(affected_anchors))
+
+    return merge_count, skipped
+
+
 def run_discovery(db, config: RunConfig = None) -> RunResult:
     """Run the full discovery pipeline.
 
@@ -209,8 +314,10 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
       4. Iterative expansion (loop until convergence or max_iterations)
       5. Cluster splitting (remove disconnected components)
       6. Re-check distinctiveness after expansion
+      6b. Score clusters (confidence + status assignment)
       7. Assign cluster IDs and resolve anchors
       8. Validate against ground truth (validate/dry_run modes)
+      8b. Execute merges (execute/incremental modes only)
       9. Write evidence to database
      10. Log the run
 
@@ -323,6 +430,16 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
     print(f"[discovery]   Distinctive contacts: {distinctive_count_post} / {len(tenures)}")
     print()
 
+    # ── Step 6b: Score clusters ───────────────────────────────────────────────
+    if clusters:
+        _score_clusters(clusters)
+        auto_confirmed = sum(1 for c in clusters if c.status == 'auto_confirmed')
+        needs_review = sum(1 for c in clusters if c.status == 'needs_review')
+        print(f"[discovery] Step 6b: Cluster confidence scoring complete.")
+        print(f"[discovery]   auto_confirmed (>= {config.min_confidence_auto}): {auto_confirmed}")
+        print(f"[discovery]   needs_review: {needs_review}")
+        print()
+
     # ── Step 7: Assign IDs and anchors ────────────────────────────────────────
     if clusters:
         clusters = _assign_cluster_ids(clusters)
@@ -379,6 +496,18 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
             print("[discovery]   No ground truth entries found -- skipping validation.")
         print()
 
+    # ── Step 8b: Execute merges (execute and incremental modes) ──────────────
+    merges_executed = 0
+    if config.mode in ('execute', 'incremental'):
+        if config.mode == 'incremental':
+            print("[discovery] Step 8b: Incremental mode — running full pipeline, executing only new merges...")
+        else:
+            print("[discovery] Step 8b: Executing merges for confirmed clusters...")
+        merge_count, skipped_count = _execute_merges(db, clusters, config)
+        merges_executed = merge_count
+        print(f"[discovery]   Merges executed: {merge_count}, skipped: {skipped_count}")
+        print()
+
     # ── Step 9: Write evidence ────────────────────────────────────────────────
     if config.mode != "dry_run" and evidence_list:
         print("[discovery] Step 9: Writing evidence to database...")
@@ -392,7 +521,7 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
         run_id=run_id,
         mode=config.mode,
         clusters_found=len(clusters),
-        merges_executed=0,          # execute mode not yet implemented
+        merges_executed=merges_executed,
         suggestions_created=len(suggestions),
         groups_processed=len(all_group_ids),
         iterations=final_iteration,
