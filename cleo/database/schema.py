@@ -86,6 +86,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     buyer_companies_json TEXT,
     photos_json     TEXT,
     source_folder   TEXT,
+    source_position INTEGER,
     created_at      TEXT DEFAULT (datetime('now'))
 );
 
@@ -451,8 +452,26 @@ CREATE TABLE IF NOT EXISTS contact_field_overrides (
     job_title   TEXT,
     contact_type TEXT,
     status      TEXT,
+    linkedin_url TEXT,
+    linkedin_headline TEXT,
+    linkedin_enriched_at TEXT,
+    linkedin_photo_url TEXT,
+    datanyze_raw TEXT,
     updated_by  TEXT,
     updated_at  TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS contact_work_history (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    contact_id  TEXT NOT NULL,
+    company     TEXT NOT NULL,
+    title       TEXT,
+    start_date  TEXT,
+    end_date    TEXT,
+    is_current  INTEGER DEFAULT 0,
+    location    TEXT,
+    company_logo_url TEXT,
+    created_at  TEXT DEFAULT (datetime('now'))
 );
 
 -- ── Sell Opportunities ──────────────────────────────────────
@@ -461,6 +480,10 @@ CREATE TABLE IF NOT EXISTS sell_opportunities (
     property_id         TEXT NOT NULL REFERENCES properties(id),
     seller_contact_id   TEXT REFERENCES contacts(id),
     seller_group_id     TEXT REFERENCES groups(id),
+    noi                 INTEGER,
+    expected_cap_rate   REAL,
+    expected_price      INTEGER,
+    commission_pct      REAL,
     deal_value          INTEGER,
     status              TEXT NOT NULL DEFAULT 'active',
     owner               TEXT,
@@ -494,6 +517,16 @@ CREATE TABLE IF NOT EXISTS buy_mandates (
 CREATE INDEX IF NOT EXISTS idx_buy_mandates_contact ON buy_mandates(contact_id);
 CREATE INDEX IF NOT EXISTS idx_buy_mandates_group ON buy_mandates(group_id);
 CREATE INDEX IF NOT EXISTS idx_buy_mandates_status ON buy_mandates(status);
+
+CREATE TABLE IF NOT EXISTS property_enrichment (
+    property_id     TEXT PRIMARY KEY REFERENCES properties(id),
+    noi             REAL,
+    noi_source      TEXT,
+    noi_as_of       TEXT,
+    unit_count      INTEGER,
+    vacancy_pct     REAL,
+    updated_at      TEXT DEFAULT (datetime('now'))
+);
 
 -- ── Activities ──────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS activities (
@@ -560,6 +593,14 @@ CREATE TABLE IF NOT EXISTS asset_classes (
     FOREIGN KEY (parent_id) REFERENCES asset_classes(id)
 );
 
+CREATE TABLE IF NOT EXISTS tenant_categories (
+    id              TEXT PRIMARY KEY,
+    label           TEXT NOT NULL,
+    parent_id       TEXT,
+    sort_order      INTEGER DEFAULT 0,
+    FOREIGN KEY (parent_id) REFERENCES tenant_categories(id)
+);
+
 CREATE TABLE IF NOT EXISTS group_analytics (
     group_id            TEXT PRIMARY KEY REFERENCES groups(id),
     -- Portfolio
@@ -623,6 +664,58 @@ CREATE INDEX IF NOT EXISTS idx_data_issues_rule ON data_issues(rule);
 CREATE INDEX IF NOT EXISTS idx_data_issues_status ON data_issues(status);
 CREATE INDEX IF NOT EXISTS idx_data_issues_severity ON data_issues(severity);
 CREATE INDEX IF NOT EXISTS idx_data_issues_introduced ON data_issues(introduced_at);
+
+-- ── Discovery tables ──
+
+CREATE TABLE IF NOT EXISTS discovery_evidence (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    run_id          TEXT NOT NULL,
+    signal_type     TEXT NOT NULL,
+    signal_value    TEXT NOT NULL,
+    source_group_id TEXT NOT NULL,
+    target_group_id TEXT NOT NULL,
+    source_id       TEXT,
+    rule_id         TEXT,
+    confidence      REAL,
+    iteration       INTEGER DEFAULT 0,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_disc_evidence_run ON discovery_evidence(run_id);
+CREATE INDEX IF NOT EXISTS idx_disc_evidence_source ON discovery_evidence(source_group_id);
+CREATE INDEX IF NOT EXISTS idx_disc_evidence_target ON discovery_evidence(target_group_id);
+CREATE INDEX IF NOT EXISTS idx_disc_evidence_type ON discovery_evidence(signal_type);
+
+CREATE TABLE IF NOT EXISTS discovery_runs (
+    run_id          TEXT PRIMARY KEY,
+    mode            TEXT NOT NULL,
+    started_at      TEXT NOT NULL,
+    completed_at    TEXT,
+    stats_json      TEXT,
+    diff_json       TEXT,
+    config_json     TEXT
+);
+
+CREATE TABLE IF NOT EXISTS discovery_exclusions (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    exclusion_type  TEXT NOT NULL,
+    exclusion_value TEXT NOT NULL,
+    reason          TEXT,
+    created_by      TEXT,
+    created_at      TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_disc_exclusions_type ON discovery_exclusions(exclusion_type);
+
+CREATE TABLE IF NOT EXISTS discovery_ground_truth (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    portfolio_name  TEXT NOT NULL,
+    anchor_group_id TEXT NOT NULL,
+    member_group_ids_json TEXT NOT NULL,
+    notes           TEXT,
+    created_at      TEXT DEFAULT (datetime('now')),
+    updated_at      TEXT DEFAULT (datetime('now'))
+);
 """
 
 
