@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT172020",
+  "source_folder": "Grey_County/retail/p001",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172020",
+      "source_folder": "Grey_County/retail/p001",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/retail/p001/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "206518 HIGHWAY 26",
+        "206518 HWY 26"
+      ],
+      "city_region": "Meaford : Grey County",
+      "date_text": "21 Sep 2022",
+      "price_text": "$4,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mac-Lads (Meaford) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "PO Box 3390",
+        "Meaford, Ontario",
+        "N4L 1A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jacqueline Murray Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jacqueline Murray",
+        "206518 Highway 26",
+        "Meaford, Ontario",
+        "N4L 1A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - St Vincent, Part Lot 13",
+      "Plan 16R-10857, Parts 16, 21-26",
+      "",
+      "PIN: 37118-0510 +",
+      "",
+      "3.18 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $3,440,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/21/2022   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $1,000,000",
+      "registered: 09/21/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "31 / 69",
+      "rt_id": "RT172020"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "206518 HIGHWAY 26, 206518 HWY 26",
+    "postcode": "N4L 1W7",
+    "municipality": "Meaford",
+    "region": "Grey County",
+    "date": "09/21/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.18",
+    "consid": "4300000",
+    "cash": "4300000",
+    "debt": "",
+    "note": "",
+    "pin": "37118-0510+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "206518 HIGHWAY 26",
+      "206518 HWY 26"
+    ],
+    "city_region": "Meaford : Grey County",
+    "date_text": "21 Sep 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mac-Lads (Meaford) Inc"
+    ],
+    "buyer_lines": [
+      "Jacqueline Murray Holdings Ltd"
+    ],
+    "price_text": "$4,300,000"
+  }
+}

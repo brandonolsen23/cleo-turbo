@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT150478",
+  "source_folder": "Metro_Toronto/retail/p023",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150478",
+      "source_folder": "Metro_Toronto/retail/p023",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p023/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "326 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Mar 2020",
+      "price_text": "$10,000,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "318-356 Queen West Holdings Ltd     416-977-7151"
+      ],
+      "trade_name": "Northam Realty Advisors",
+      "contact_lines": [
+        "Pres: Todd Copland",
+        "2 Carlton St, Ste 909",
+        "Toronto, Ontario",
+        "M5B 1J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CEM Toronto, Inc     647-351-2611"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Wright",
+        "326 Queen St W",
+        "Toronto, Ontario",
+        "M5V 2A4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 2 storey; 5,340 sf @ $1,873",
+      "",
+      "The ground floor is 5,340 sf",
+      "",
+      "The property was purchased by its tenant.",
+      "",
+      "No parking"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-10,",
+      "Part Lot 5, N/S Queen St",
+      "As in Inst No EP-68076",
+      "",
+      "PIN: 21205-0084",
+      "",
+      "N side Queen St W, W of Soho St",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 065 160 01600",
+    "consideration_lines": [
+      "cash: $10,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Jones Lang Lasalle: Brandon Gorman, Graham Smith, Elliot Medoff, Ewan Darling, 416-855-0907"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1504/RT150478/0405_072311.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1504/RT150478/0405_072315.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1504/RT150478/0405_072334.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1504/RT150478/0405_072339.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1504/RT150478/0405_072355.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1109 / 4952",
+      "rt_id": "RT150478"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "326 QUEEN ST W",
+    "postcode": "M5V 2A4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/23/2020",
+    "desc": "Retail Bldg: 2 storey; 5,340 sf @ $1,873",
+    "bldg": "5,340 sf",
+    "acreage": ".13",
+    "consid": "10000000",
+    "cash": "10000000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "21205-0084",
+    "rollno": "19 04 065 160 01600"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "326 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Mar 2020",
+    "note": "Purchased by Tenant",
+    "description": "Retail Bldg: 2 storey; 5,340 sf @ $1,873",
+    "seller_lines": [
+      "318-356 Queen West Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "CEM Toronto, Inc"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

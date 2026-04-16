@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT64171",
+  "source_folder": "York_Region/retail/p013",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64171",
+      "source_folder": "York_Region/retail/p013",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "9140 LESLIE ST",
+        "UNIT 110"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "19 Sep 2008",
+      "price_text": "$710,182",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1590102 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hassan Tehranchi",
+        "9140 Leslie St, Ste 408",
+        "Richmond Hill, Ontario",
+        "L4B 0A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2182866 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Olga Moskovchuk",
+        "9140 Leslie St, Unit 110",
+        "Richmond Hill, Ontario",
+        "L4B 0A9"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 3,046 sf @ $233",
+      "",
+      "Vacant - to be occupied by the purchaser",
+      "",
+      "Part of the ground floor of a 4 storey 76,000 sf retail/office bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1126",
+      "Level 1, Unit 10",
+      "",
+      "PIN: 29657-0010"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $710,182     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $459,891   rate: 7.5% per annum",
+      "registered: 09/19/2008   due: 10/05/2013"
+    ],
+    "broker_lines": [
+      "Coldwell Banker Case Realty: William Alexiou, 416-347-3668"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "603 / 984",
+      "rt_id": "RT64171"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "9140 LESLIE ST, UNIT 110",
+    "postcode": "L4B 0A9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "09/19/2008",
+    "desc": "Retail Condo - 3,046 sf @ $233",
+    "bldg": "3,046 sf",
+    "acreage": "",
+    "consid": "710182",
+    "cash": "710182",
+    "debt": "",
+    "note": "",
+    "pin": "29657-0010",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "9140 LESLIE ST",
+      "UNIT 110"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "19 Sep 2008",
+    "note": "",
+    "description": "Retail Condo - 3,046 sf @ $233",
+    "seller_lines": [
+      "1590102 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2182866 Ontario Inc"
+    ],
+    "price_text": "$710,182"
+  }
+}

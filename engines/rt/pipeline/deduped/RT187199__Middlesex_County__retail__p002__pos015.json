@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT187199",
+  "source_folder": "Middlesex_County/retail/p002",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187199",
+      "source_folder": "Middlesex_County/retail/p002",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p002/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "26 KILWORTH PARK DR"
+      ],
+      "city_region": "Lobo : Middlesex County",
+      "date_text": "13 Sep 2024",
+      "price_text": "$1,435,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Fyteies Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dimitrios Tsaprailis",
+        "1947 Lakeshore Rd",
+        "Sarnia, Ontario",
+        "N7X 1E1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-7192, Part 1",
+      "",
+      "PIN: 08502-0273",
+      "",
+      "1.41 acre"
+    ],
+    "arn_text": "39 39 000 010 22878",
+    "consideration_lines": [
+      "cash: $1,435,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "66 / 686",
+      "rt_id": "RT187199"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "26 KILWORTH PARK DR",
+    "postcode": "N0L 1R0",
+    "municipality": "Lobo",
+    "region": "Middlesex County",
+    "date": "09/13/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.41",
+    "consid": "1435000",
+    "cash": "1435000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "08502-0273",
+    "rollno": "39 39 000 010 22878"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "26 KILWORTH PARK DR"
+    ],
+    "city_region": "Lobo : Middlesex County",
+    "date_text": "13 Sep 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Fyteies Inc"
+    ],
+    "price_text": "$1,435,000"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT45012",
+  "source_folder": "Frontenac_County/retail/p004",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45012",
+      "source_folder": "Frontenac_County/retail/p004",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p004/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "672 GOLDEN MILE RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "07 Oct 2005",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1557195 Ontario Ltd     613-382-2168"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dwight Hall",
+        "Gananoque Cadillac Chev Olds",
+        "439 King St E",
+        "Gananoque, Ontario",
+        "K7G 1G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 665, Lot 29",
+      "",
+      "0.91 acre"
+    ],
+    "arn_text": "10 11 080 110 17500",
+    "consideration_lines": [
+      "cash: $250,000     assumed/vtb debt: $300,000",
+      "",
+      "chargee: Joseph Anderson",
+      "principal: $300,000   rate: 8.0% per annum",
+      "registered: 10/07/2005   due: 10/05/2007"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "190 / 236",
+      "rt_id": "RT45012"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "672 GOLDEN MILE RD",
+    "postcode": "K7M 6K6",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "10/07/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".91",
+    "consid": "550000",
+    "cash": "250000",
+    "debt": "300000",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 080 110 17500"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "672 GOLDEN MILE RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "07 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1557195 Ontario Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

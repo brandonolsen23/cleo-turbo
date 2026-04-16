@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT24432",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24432",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "801 - 809 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "28 Feb 2002",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "GREP Properties Ltd     416-943-9898"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Craig Coleman",
+        "Acanthus Real Estate Corp",
+        "161 Bay St, Ste 2800",
+        "Toronto, Ontario",
+        "M5J 2S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "K & H Creek investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Heck",
+        "484 Plains Rd E",
+        "Burlington, Ontario",
+        "L7T 2E1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza: 1 storey; 24,225 sf and free-standing Burger King"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-4845, Parts 1-3",
+      "As in Deed No 921317",
+      "",
+      "SE corner Victoria St N and Bruce St",
+      "",
+      "2.27 acre"
+    ],
+    "arn_text": "30 12 020 004 14500",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT244/RT24432/photo.jpg"
+    },
+    "footer": {
+      "page_position": "668 / 752",
+      "rt_id": "RT24432"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "801 - 809 VICTORIA ST N",
+    "postcode": "N2B 3C3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "02/28/2002",
+    "desc": "Retail Plaza: 1 storey; 24,225 sf and free-standing Burger King",
+    "bldg": "",
+    "acreage": "2.27",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 020 004 14500"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "801 - 809 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "28 Feb 2002",
+    "note": "",
+    "description": "Retail Plaza: 1 storey; 24,225 sf and free-standing Burger King",
+    "seller_lines": [
+      "GREP Properties Ltd"
+    ],
+    "buyer_lines": [
+      "K & H Creek investments Ltd"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

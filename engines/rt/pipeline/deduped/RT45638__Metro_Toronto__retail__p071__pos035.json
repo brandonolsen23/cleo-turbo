@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT45638",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45638",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "2231 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Nov 2005",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Real Estate Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ken Silver",
+        "2180 Yonge St, 15th Flr S",
+        "Toronto, Ontario",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "C&H Properties Inc     780-990-0505"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gerald Williams",
+        "Katz Group Inc",
+        "10104 - 103rd Ave",
+        "Suite 1702",
+        "Edmonton, Alberta",
+        "T5J 0H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-21670, Parts 1 & 4",
+      "Plan 66R-20098, Part 4"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,350,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $2,500,000   rate: Prime plus 0.9% per annum",
+      "registered: 11/28/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3536 / 4952",
+      "rt_id": "RT45638"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "2231 ST CLAIR AVE W",
+    "postcode": "",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/28/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1350000",
+    "cash": "1350000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "2231 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canadian Tire Real Estate Ltd"
+    ],
+    "buyer_lines": [
+      "C&H Properties Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

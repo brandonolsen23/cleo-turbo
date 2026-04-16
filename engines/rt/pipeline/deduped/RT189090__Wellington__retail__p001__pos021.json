@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT189090",
+  "source_folder": "Wellington/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189090",
+      "source_folder": "Wellington/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "442 YORK RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "12 Dec 2024",
+      "price_text": "$1,525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000978281 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mushtaq Ahmad",
+        "44 Sullivan Cres",
+        "Guelph, Ontario",
+        "N1K 1X8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 343,",
+      "Lots 140, 141 & Part Lot 142",
+      "As in Inst No ROS-568477",
+      "",
+      "PIN: 71343-0143",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "23 08 010 008 31400",
+    "consideration_lines": [
+      "cash: $1,525,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,025,000   rate: 4.0% per annum.",
+      "registered: 12/12/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189090/0405_133758.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189090/0405_133829.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189090/0405_133919.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189090/0405_133934.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189090/0405_133952.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189090/0405_134006.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 269",
+      "rt_id": "RT189090"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "442 YORK RD",
+    "postcode": "N1E 3H8",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "12/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".37",
+    "consid": "1525000",
+    "cash": "1525000",
+    "debt": "",
+    "note": "",
+    "pin": "71343-0143",
+    "rollno": "23 08 010 008 31400"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "442 YORK RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "12 Dec 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000978281 Ontario Ltd"
+    ],
+    "price_text": "$1,525,000"
+  }
+}

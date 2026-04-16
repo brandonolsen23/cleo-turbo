@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT53996",
+  "source_folder": "Cochrane/all/p162",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT53996",
+      "source_folder": "Cochrane/all/p162",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p162/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "TENTH LINE RD",
+        "CONC 11",
+        "PART LOT 2"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "22 Feb 2007",
+      "price_text": "$715,850",
+      "note": "25% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "C Fleming Developments (Mer Bleu) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chris Fleming",
+        "2081 Merivale Rd, Ste 700",
+        "Ottawa, Ontario",
+        "K2G 1G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Taggart (Mer Blue) Corp     613-234-7000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Taggart",
+        "225 Metcalfe St, Ste 708",
+        "Ottawa, Ontario",
+        "K2P 1P9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 2",
+      "Plan 4R-21663, Part 1",
+      "Plan 4R-21662, Part 3",
+      "",
+      "14.28 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $715,850     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8055 / 10920",
+      "rt_id": "RT53996"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "TENTH LINE RD, CONC 11, PART LOT 2",
+    "postcode": "",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "02/22/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": "14.28",
+    "consid": "715850",
+    "cash": "715850",
+    "debt": "",
+    "note": "25% Interest",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "TENTH LINE RD",
+      "CONC 11",
+      "PART LOT 2"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "22 Feb 2007",
+    "note": "25% Interest",
+    "description": "",
+    "seller_lines": [
+      "C Fleming Developments (Mer Bleu) Inc"
+    ],
+    "buyer_lines": [
+      "Taggart (Mer Blue) Corp"
+    ],
+    "price_text": "$715,850"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT38431",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38431",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "445 KING ST W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "29 Oct 2004",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Victoria-Kitchener Buildings Ltd     519-576-4602"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Merla Lougheed",
+        "700 Glasgow St, Ste 15",
+        "Kitchener, Ontario",
+        "N2M 2N8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "445 King Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gregory Dalton",
+        "30 Duke St W, Ste 903",
+        "Kitchener, Ontario",
+        "N2H 3W5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-10211, Parts 1 & 4",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "30 12 050 001 05400",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT384/RT38431/photo.jpg"
+    },
+    "footer": {
+      "page_position": "615 / 752",
+      "rt_id": "RT38431"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "445 KING ST W",
+    "postcode": "N2G 1C2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "10/29/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".6",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 050 001 05400"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "445 KING ST W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "29 Oct 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Victoria-Kitchener Buildings Ltd"
+    ],
+    "buyer_lines": [
+      "445 King Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

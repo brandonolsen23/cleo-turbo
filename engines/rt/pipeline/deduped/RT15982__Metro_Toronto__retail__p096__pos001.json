@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT15982",
+  "source_folder": "Metro_Toronto/retail/p096",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15982",
+      "source_folder": "Metro_Toronto/retail/p096",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p096/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "110 WEST TORONTO ST"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "10 Dec 1999",
+      "price_text": "$7,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Provigo Distribution Inc     416-922-8500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: S. Jane Marshall",
+        "c/o Loblaw Properties Ltd",
+        "22 St Clair Ave W, 2nd Flr",
+        "Toronto, Ontario",
+        "M4T 2S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Revy Home Centres Inc     604-882-6200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carl Grittner",
+        "19550-92 Ave",
+        "Surrey, B. C.",
+        "V4N 4G7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 80,000 sf @ $88",
+      "",
+      "Property is adjacent to a Home Depot and Canadian Tire,",
+      "both compete with Revy Home Centres"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-15579, Parts 1 & 6",
+      "As in Inst No CA-559652",
+      "",
+      "S side opposite Old Stockyards Rd",
+      "",
+      "7.61 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Libro Credit Union Ltd",
+      "principal: $2,300,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/15/2021   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,425,000   rate: 18.0% per annum.",
+      "registered: 04/15/2021   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,400,000   rate: Prime plus 10.0% per annum.",
+      "registered: 04/12/2021   due: on demand",
+      "",
+      "chargee: TNC 529-533 Exmouth Ltd",
+      "principal: $1,550,000   rate: 5.50% per annum",
+      "registered: 04/12/2021   due: 05/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT159/RT15982/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4752 / 4952",
+      "rt_id": "RT15982"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "110 WEST TORONTO ST",
+    "postcode": "M6N 5B7",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "12/10/1999",
+    "desc": "Retail Bldg - 80,000 sf @ $88",
+    "bldg": "80,000 sf",
+    "acreage": "7.61",
+    "consid": "7000000",
+    "cash": "7000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "110 WEST TORONTO ST"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "10 Dec 1999",
+    "note": "",
+    "description": "Retail Bldg - 80,000 sf @ $88",
+    "seller_lines": [
+      "Provigo Distribution Inc"
+    ],
+    "buyer_lines": [
+      "Revy Home Centres Inc"
+    ],
+    "price_text": "$7,000,000"
+  }
+}

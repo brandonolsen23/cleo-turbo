@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT48363",
+  "source_folder": "Metro_Toronto/multifamily/p081",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48363",
+      "source_folder": "Metro_Toronto/multifamily/p081",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p081/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "359 CLINTON ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 Apr 2006",
+      "price_text": "$560,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1002, Part Lot 1",
+      "As in Inst No CA-570148",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 044 460 06700",
+    "consideration_lines": [
+      "cash: $560,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Co of Canada",
+      "principal: $420,000   rate: Merix prime per annum",
+      "registered: 04/21/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4041 / 6031",
+      "rt_id": "RT48363"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "359 CLINTON ST",
+    "postcode": "M6G 2Y7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/21/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "560000",
+    "cash": "560000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 044 460 06700"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "359 CLINTON ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 Apr 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$560,000"
+  }
+}

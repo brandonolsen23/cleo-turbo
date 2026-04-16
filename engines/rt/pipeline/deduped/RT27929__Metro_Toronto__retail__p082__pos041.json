@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT27929",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27929",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "1169 ST CLAIR AVE W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "28 Nov 2002",
+      "price_text": "$859,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Penlim Investments Ltd     416-982-2440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Don Patterson",
+        "161 Bay St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5J 2T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1235789 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bao Tu Nguyen",
+        "136 Caribou Rd",
+        "Toronto, Ontario",
+        "M5N 2B3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg/Bank - 2 storey; 6,500 sf @ $132"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1296, Part Lot 1",
+      "As in Inst No CA-534280"
+    ],
+    "arn_text": "19 04 033 510 00600",
+    "consideration_lines": [
+      "cash: $859,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT279/RT27929/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4092 / 4952",
+      "rt_id": "RT27929"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "1169 ST CLAIR AVE W",
+    "postcode": "M6E 1B2",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "11/28/2002",
+    "desc": "Retail Bldg/Bank - 2 storey; 6,500 sf @ $132",
+    "bldg": "6,500 sf",
+    "acreage": "",
+    "consid": "859000",
+    "cash": "859000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 033 510 00600"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "1169 ST CLAIR AVE W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "28 Nov 2002",
+    "note": "",
+    "description": "Retail Bldg/Bank - 2 storey; 6,500 sf @ $132",
+    "seller_lines": [
+      "Penlim Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1235789 Ontario Ltd"
+    ],
+    "price_text": "$859,000"
+  }
+}

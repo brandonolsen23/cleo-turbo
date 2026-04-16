@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT43511",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43511",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "114 & 114A DUNLOP ST E"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "05 Aug 2005",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "689272 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Craig Schlichter",
+        "225 Manly St",
+        "Midland, Ontario",
+        "L4R 3C4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2075554 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Cale",
+        "11 Caldy Ct",
+        "Toronto, Ontario",
+        "M2L 2J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-18568, Part 2",
+      "Together with Inst No RO-933268",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "43 42 022 008 09800",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT435/RT43511/photo.jpg"
+    },
+    "footer": {
+      "page_position": "567 / 712",
+      "rt_id": "RT43511"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "114 & 114A DUNLOP ST E",
+    "postcode": "L4M 1A4",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "08/05/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 022 008 09800"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "114 & 114A DUNLOP ST E"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "05 Aug 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "689272 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2075554 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

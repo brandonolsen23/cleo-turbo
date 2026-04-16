@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT23173",
+  "source_folder": "Metro_Toronto/retail/p088",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23173",
+      "source_folder": "Metro_Toronto/retail/p088",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p088/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "583 COLLEGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "25 Oct 2001",
+      "price_text": "$815,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Beverly Spagat"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2 Trippett Rd, Ste 203",
+        "Toronto, Ontario",
+        "M3H 2V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ontario Auto Supply (York) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Beverly Spagat",
+        "583 College St",
+        "Toronto, Ontario",
+        "M6G 1B2"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43",
+      "Part Lots 3-5, E/S Clinton, S/S College",
+      "As in Inst No CA-345916",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 043 110 01800",
+    "consideration_lines": [
+      "cash: $320,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4359 / 4952",
+      "rt_id": "RT23173"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "583 COLLEGE ST",
+    "postcode": "M6G 1B2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/25/2001",
+    "desc": "Retail/Res Bldg",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "815000",
+    "cash": "320000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 043 110 01800"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "583 COLLEGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "25 Oct 2001",
+    "note": "Related Parties",
+    "description": "Retail/Res Bldg",
+    "seller_lines": [
+      "Beverly Spagat"
+    ],
+    "buyer_lines": [
+      "Ontario Auto Supply (York) Inc"
+    ],
+    "price_text": "$815,000"
+  }
+}

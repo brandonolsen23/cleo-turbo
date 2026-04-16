@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT191015",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191015",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 GARMENT ST",
+        "UNIT 101"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "21 Mar 2025",
+      "price_text": "$970,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2734056 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Michael Awad",
+        "1438 Haig Blvd",
+        "Mississauga, Ontario",
+        "L5E 2N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001064114 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Everardo Ramirez",
+        "100 Garment St, Ste 101",
+        "Kitchener, Ontario",
+        "N2G 2B3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 670",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 23670-0001"
+    ],
+    "arn_text": "30 12 050 008 14013",
+    "consideration_lines": [
+      "cash: $970,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/21/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_150925.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_151001.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_151045.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_151058.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_151118.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_151129.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191015/0620_151218.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "42 / 752",
+      "rt_id": "RT191015"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "100 GARMENT ST, UNIT 101",
+    "postcode": "N2G 0C3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "970000",
+    "cash": "970000",
+    "debt": "",
+    "note": "",
+    "pin": "23670-0001",
+    "rollno": "30 12 050 008 14013"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "100 GARMENT ST",
+      "UNIT 101"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "21 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2734056 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001064114 Ontario Inc"
+    ],
+    "price_text": "$970,000"
+  }
+}

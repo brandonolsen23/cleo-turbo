@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT29008",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29008",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "930 UPPER PARADISE RD",
+        "CONC 8, PT LOT 21"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "13 Feb 2003",
+      "price_text": "$4,625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "831873 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jay Basian",
+        "534 Lawrence Ave W, Ste 205",
+        "Toronto, Ontario",
+        "M6A 1A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1160487 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roy Yates",
+        "78 Queenston Rd E",
+        "Hamilton, Ontario",
+        "L8K 6R6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 16 units 49,309 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 21",
+      "As in Inst No VM-196606",
+      "Plan 62R-7352, Parts 2 & 3",
+      "",
+      "3.36 acre"
+    ],
+    "arn_text": "25 18 081 041 02130",
+    "consideration_lines": [
+      "cash: $4,625,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT290/RT29008/photo.jpg"
+    },
+    "footer": {
+      "page_position": "518 / 616",
+      "rt_id": "RT29008"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "930 UPPER PARADISE RD, CONC 8, PT LOT 21",
+    "postcode": "",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "02/13/2003",
+    "desc": "Retail Plaza - 1 storey; 16 units 49,309 sf",
+    "bldg": "",
+    "acreage": "3.36",
+    "consid": "4625000",
+    "cash": "4625000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 081 041 02130"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "930 UPPER PARADISE RD",
+      "CONC 8, PT LOT 21"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "13 Feb 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 16 units 49,309 sf",
+    "seller_lines": [
+      "831873 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1160487 Ontario Inc"
+    ],
+    "price_text": "$4,625,000"
+  }
+}

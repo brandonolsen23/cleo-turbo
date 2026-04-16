@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT195213",
+  "source_folder": "Algoma/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195213",
+      "source_folder": "Algoma/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1674 WELLINGTON ST E"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "31 Oct 2025",
+      "price_text": "$600,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "45 Main St E",
+        "Hamilton, Ontario",
+        "L8N 2B7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1906820 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Myles Basic",
+        "1674 Wellington St E",
+        "Sault Ste Marie, Ontario",
+        "P6A 2R9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-477 - St Marys, Lot 3",
+      "",
+      "PIN: 31517-0264",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 78",
+      "rt_id": "RT195213"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1674 WELLINGTON ST E",
+    "postcode": "P6A 2R9",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "10/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "31517-0264",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1674 WELLINGTON ST E"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "31 Oct 2025",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1906820 Ontario Ltd"
+    ],
+    "price_text": "$600,000"
+  }
+}

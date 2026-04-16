@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT71580",
+  "source_folder": "Cochrane/all/p140",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71580",
+      "source_folder": "Cochrane/all/p140",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p140/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "CUMBERLAND ST",
+        "DALY AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Mar 2010",
+      "price_text": "$1,290,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "M Anvari Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Majid Anvari",
+        "500 Laurier Ave W, Ste 1407",
+        "Ottawa, Ontario",
+        "K1R 5A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RAMD Holdings Inc     613-225-3624"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Domenico Gaetano",
+        "1560 Minaki Ave",
+        "Ottawa, Ontario",
+        "K2C 0N9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-11564, Part 2",
+      "N of Daly Ave",
+      "",
+      "PIN: 04210-0097",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "06 14 021 101 38400",
+    "consideration_lines": [
+      "cash: $1,290,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $975,000   rate: Prime plus 5.0% per annum",
+      "registered: 03/31/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT715/RT71580/air1.jpg",
+        "/assets/files/RT7/RT715/RT71580/air2.jpg",
+        "/assets/files/RT7/RT715/RT71580/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6955 / 10920",
+      "rt_id": "RT71580"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "CUMBERLAND ST, DALY AVE",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/31/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "1290000",
+    "cash": "1290000",
+    "debt": "",
+    "note": "",
+    "pin": "04210-0097",
+    "rollno": "06 14 021 101 38400"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "CUMBERLAND ST",
+      "DALY AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Mar 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "M Anvari Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "RAMD Holdings Inc"
+    ],
+    "price_text": "$1,290,000"
+  }
+}

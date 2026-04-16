@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT105751",
+  "source_folder": "York_Region/retail/p008",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105751",
+      "source_folder": "York_Region/retail/p008",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "145 WOODBRIDGE AVE"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "15 Jan 2015",
+      "price_text": "$2,099,084",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,860 sf @ $358",
+      "",
+      "Leased back to the vendor (BMO)",
+      "",
+      "20 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 7",
+      "As in Inst No WB-4177",
+      "",
+      "PIN: 03299-0117",
+      "",
+      "S side Woodbridge Ave, E of Wallace St",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 28 000 430 04400",
+    "consideration_lines": [
+      "cash: $2,099,084     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105751/0124_154444.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105751/0124_154513.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105751/0124_154613.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105751/0124_154630.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105751/0124_154642.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "358 / 984",
+      "rt_id": "RT105751"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "145 WOODBRIDGE AVE",
+    "postcode": "L4L 2S6",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 5,860 sf @ $358",
+    "bldg": "5,860 sf",
+    "acreage": ".2",
+    "consid": "2099084",
+    "cash": "2099084",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "03299-0117",
+    "rollno": "19 28 000 430 04400"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "145 WOODBRIDGE AVE"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 5,860 sf @ $358",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$2,099,084"
+  }
+}

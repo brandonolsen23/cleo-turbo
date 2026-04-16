@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT180667",
+  "source_folder": "Metro_Toronto/retail/p015",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180667",
+      "source_folder": "Metro_Toronto/retail/p015",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p015/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "129 QUEEN ST E",
+        "UNIT 102"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Sep 2023",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2281404 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "139 Birch Ave",
+        "Richmond Hill, Ontario",
+        "L4C 6C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "AMG Satin Homes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohsen Madani",
+        "1234 Reid St, Unit 5",
+        "Richmond Hill, Ontario",
+        "L4B 1C1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2076",
+      "Level 1, Unit 2",
+      "",
+      "PIN: 13076-0002"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/29/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1806/RT180667/1009_075948.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1806/RT180667/1009_080040.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1806/RT180667/1009_080045.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1806/RT180667/1009_080056.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1806/RT180667/1009_080123.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1806/RT180667/1009_080127.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "732 / 4952",
+      "rt_id": "RT180667"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "129 QUEEN ST E, UNIT 102",
+    "postcode": "M5C 1S1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/29/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "13076-0002",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "129 QUEEN ST E",
+      "UNIT 102"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2281404 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "AMG Satin Homes Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

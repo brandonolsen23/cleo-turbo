@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT196896",
+  "source_folder": "York_Region/retail/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196896",
+      "source_folder": "York_Region/retail/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "15117 YONGE ST"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "30 Jan 2026",
+      "price_text": "$5,495,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "K1 Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "15415 Jane St",
+        "King St, Ontario",
+        "L7B 1A3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rock Crystal Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hamdreza Damavandy",
+        "9 Shady Oaks Cres",
+        "North York, Ontario",
+        "M3C 2L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 68 - Aurora,",
+      "Part Lots 13-15, E/S Yonge St",
+      "As in Inst No R-560337",
+      "",
+      "PIN: 03648-0003",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "19 46 000 042 66600",
+    "consideration_lines": [
+      "cash: $5,495,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196896/0207_113843.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196896/0207_113844.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196896/0207_113934.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196896/0207_113937.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196896/0207_113943.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 984",
+      "rt_id": "RT196896"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "15117 YONGE ST",
+    "postcode": "L4G 1M3",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "01/30/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "5495000",
+    "cash": "5495000",
+    "debt": "",
+    "note": "",
+    "pin": "03648-0003",
+    "rollno": "19 46 000 042 66600"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "15117 YONGE ST"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "30 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "K1 Corp"
+    ],
+    "buyer_lines": [
+      "Rock Crystal Inc"
+    ],
+    "price_text": "$5,495,000"
+  }
+}

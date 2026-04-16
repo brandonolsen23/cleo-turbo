@@ -284,6 +284,16 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
         ).fetchall()
         td["parties"] = [dict(p) for p in parties]
 
+        # Mailing addresses per side
+        addrs = db.execute(
+            "SELECT side, display, city, province, postal "
+            "FROM transaction_mailing_addresses WHERE source_id = ?",
+            (td["source_id"],)
+        ).fetchall()
+        for a in addrs:
+            ad = dict(a)
+            td[f"{ad['side']}_mailing_address"] = ad
+
         result["transactions"].append(td)
 
     # POI tenants on this property

@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT74434",
+  "source_folder": "Hamilton-Wentworth/retail/p008",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT74434",
+      "source_folder": "Hamilton-Wentworth/retail/p008",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p008/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1314 UPPER WENTWORTH ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "20 Sep 2010",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CJ Dental Hygiene Inc     905-574-2222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vito Bommarito",
+        "1314 Upper Wentworth St",
+        "Hamilton, Ontario",
+        "L9A 4W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Nardone Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jerry Nardone",
+        "50 Prestige Court",
+        "Stoney Creek, Ontario",
+        "L8G 5C2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 tenants 5,200 sf @ $346",
+      "",
+      "Fully leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 11",
+      "Plan 62R-11605, Part 1",
+      "",
+      "PIN: 16942-0319",
+      "",
+      "W side Upper Wentworth St, N of Stone Church Rd E",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "25 18 070 841 05570",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,250,000   rate: Prime plus 6.0% per annum",
+      "registered: 09/20/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT744/RT74434/1001_091612.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT744/RT74434/1001_091655.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT744/RT74434/1001_091726.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT744/RT74434/air1.jpg",
+        "/assets/files/RT7/RT744/RT74434/air2.jpg",
+        "/assets/files/RT7/RT744/RT74434/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "352 / 616",
+      "rt_id": "RT74434"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1314 UPPER WENTWORTH ST",
+    "postcode": "L9A 4W2",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "09/20/2010",
+    "desc": "Retail Plaza - 1 storey; 3 tenants 5,200 sf @ $346",
+    "bldg": "5,200 sf",
+    "acreage": ".43",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "16942-0319",
+    "rollno": "25 18 070 841 05570"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1314 UPPER WENTWORTH ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "20 Sep 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 tenants 5,200 sf @ $346",
+    "seller_lines": [
+      "CJ Dental Hygiene Inc"
+    ],
+    "buyer_lines": [
+      "Nardone Holdings Ltd"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

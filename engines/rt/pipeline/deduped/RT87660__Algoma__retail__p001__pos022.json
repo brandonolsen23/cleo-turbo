@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT87660",
+  "source_folder": "Algoma/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT87660",
+      "source_folder": "Algoma/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "60 BROADWAY"
+      ],
+      "city_region": "Wawa : Algoma",
+      "date_text": "12 Sep 2012",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Davandy Properties Inc     604-307-2079"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Wood",
+        "PO Box 392",
+        "Whistler, BC",
+        "V0N 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lag Broadway Ltd     416-299-5522"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Isaac Meisels",
+        "880 Ellesmere Rd, 3rd Flr",
+        "Scarborough, Ontario",
+        "M1P 2W6"
+      ]
+    },
+    "description_lines": [
+      "New Retail Bldg - 1 storey; 10,000 sf @ $90",
+      "",
+      "Newly built",
+      "Fully leased to The Bargain Shop"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-27, Lots 267 & 268",
+      "",
+      "PIN: 31169-0465 +",
+      "",
+      "NW corner Broadway and Gold St",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $535,000   rate: 18.0% per annum",
+      "registered: 09/12/2012   due: 10/01/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 29",
+      "rt_id": "RT87660"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "60 BROADWAY",
+    "postcode": "P0S 1K0",
+    "municipality": "Wawa",
+    "region": "Algoma",
+    "date": "09/12/2012",
+    "desc": "New Retail Bldg - 1 storey; 10,000 sf @ $90",
+    "bldg": "10,000 sf",
+    "acreage": ".23",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "31169-0465+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "60 BROADWAY"
+    ],
+    "city_region": "Wawa : Algoma",
+    "date_text": "12 Sep 2012",
+    "note": "",
+    "description": "New Retail Bldg - 1 storey; 10,000 sf @ $90",
+    "seller_lines": [
+      "Davandy Properties Inc"
+    ],
+    "buyer_lines": [
+      "Lag Broadway Ltd"
+    ],
+    "price_text": "$900,000"
+  }
+}

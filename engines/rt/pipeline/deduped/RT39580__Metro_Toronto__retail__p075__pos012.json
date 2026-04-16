@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT39580",
+  "source_folder": "Metro_Toronto/retail/p075",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39580",
+      "source_folder": "Metro_Toronto/retail/p075",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p075/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1575 LAWRENCE AVE W"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "14 Jan 2005",
+      "price_text": "$1,245,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1329093 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Naresh Bahri",
+        "145 Beckenridge Dr",
+        "Markham, Ontario",
+        "L3S 2T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1636462 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zoran Petkovski",
+        "1575 Lawrence Ave W",
+        "North York, Ontario",
+        "M6L 1C3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey; 8,000 sf @ $156",
+      "",
+      "4 ground floor retail units (4,100 sf).",
+      "",
+      "2nd floor office (3,900 sf) is vacant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 804, Part Lot 2",
+      "As in Inst No CA-581519",
+      "",
+      "0.53 acre"
+    ],
+    "arn_text": "19 08 021 210 01300",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $845,000"
+    ],
+    "broker_lines": [
+      "Century 21 Parkland: Sibte Shah, 416-690-2121"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT395/RT39580/air1.jpg",
+        "/assets/files/RT3/RT395/RT39580/air2.jpg",
+        "/assets/files/RT3/RT395/RT39580/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT395/RT39580/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3713 / 4952",
+      "rt_id": "RT39580"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1575 LAWRENCE AVE W",
+    "postcode": "M6l 1C3",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "01/14/2005",
+    "desc": "Retail Plaza - 2 storey; 8,000 sf @ $156",
+    "bldg": "8,000 sf",
+    "acreage": ".53",
+    "consid": "1245000",
+    "cash": "400000",
+    "debt": "845000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 021 210 01300"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1575 LAWRENCE AVE W"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "14 Jan 2005",
+    "note": "",
+    "description": "Retail Plaza - 2 storey; 8,000 sf @ $156",
+    "seller_lines": [
+      "1329093 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1636462 Ontario Inc"
+    ],
+    "price_text": "$1,245,000"
+  }
+}

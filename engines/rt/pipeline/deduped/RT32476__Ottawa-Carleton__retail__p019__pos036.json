@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT32476",
+  "source_folder": "Ottawa-Carleton/retail/p019",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32476",
+      "source_folder": "Ottawa-Carleton/retail/p019",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p019/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "293 QUEEN MARY ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Oct 2003",
+      "price_text": "$655,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1578071 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Akrim Syed",
+        "1410 Cheverney Cres",
+        "Ottawa, Ontario",
+        "K2E 3C2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 342",
+      "Lots 526-532",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "06 14 031 301 15200",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $505,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT324/RT32476/photo.jpg"
+    },
+    "footer": {
+      "page_position": "937 / 1141",
+      "rt_id": "RT32476"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "293 QUEEN MARY ST",
+    "postcode": "K1K 1X1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/31/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "655000",
+    "cash": "150000",
+    "debt": "505000",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 031 301 15200"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "293 QUEEN MARY ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Oct 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1578071 Ontario Inc"
+    ],
+    "price_text": "$655,000"
+  }
+}

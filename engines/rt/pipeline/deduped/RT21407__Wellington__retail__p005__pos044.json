@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT21407",
+  "source_folder": "Wellington/retail/p005",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21407",
+      "source_folder": "Wellington/retail/p005",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "247 ERAMOSA RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "30 Apr 2001",
+      "price_text": "$1,035,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Griffin Corp     905-624-4646"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Irwin Pasternak",
+        "5025 Orbitor Dr, Bldg 6, Ste 102",
+        "Mississauga, Ontario",
+        "L4W 4Y5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1202074 Ontario Inc     416-461-6081"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Savvas Krotiris",
+        "707A Danforth Ave",
+        "Toronto, Ontario",
+        "M4J 1L2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 232, Lot 123",
+      "Plan 232, Part Lots 70, 71, 124 & 125",
+      "As in Inst No RO-739694",
+      "Excpet Plan 61R-6955, Part 1",
+      "",
+      "S side at Metcalfe St"
+    ],
+    "arn_text": "23 08 020 004 04000",
+    "consideration_lines": [
+      "cash: $327,552     assumed/vtb debt: $707,448"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT214/RT21407/photo.jpg"
+    },
+    "footer": {
+      "page_position": "245 / 269",
+      "rt_id": "RT21407"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "247 ERAMOSA RD",
+    "postcode": "N1E 2M5",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "04/30/2001",
+    "desc": "Retail Plaza - 1 storey; 3 units",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1035000",
+    "cash": "327552",
+    "debt": "707448",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 020 004 04000"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "247 ERAMOSA RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "30 Apr 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units",
+    "seller_lines": [
+      "The Griffin Corp"
+    ],
+    "buyer_lines": [
+      "1202074 Ontario Inc"
+    ],
+    "price_text": "$1,035,000"
+  }
+}

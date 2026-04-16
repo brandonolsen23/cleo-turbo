@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT23750",
+  "source_folder": "Metro_Toronto/office/p055",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23750",
+      "source_folder": "Metro_Toronto/office/p055",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/office/p055/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "55 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "04 Dec 2001",
+      "price_text": "$15,920,518",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bramalea Inc",
+        "By former Trustee, Ernst & Young Inc     416-979-2211"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Benjamin Babcock",
+        "Goodman Phillips Vineberg",
+        "250 Yonge St",
+        "Box 24, Ste 2400",
+        "Toronto, Ontario",
+        "M5B 2M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Clarica Life Insurance Co     519-888-2290"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gordon Sato",
+        "227 King St S",
+        "Waterloo, Ontario",
+        "N2J 4C5"
+      ]
+    },
+    "description_lines": [
+      "Office Bldg - 9 storey; about 240,000 sf",
+      "",
+      "Clarica already owned an undivided 50% interest in this property. This is a purchase of the remaining 50%."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-11577, Parts 1-13",
+      "",
+      "1.32 acre"
+    ],
+    "arn_text": "19 04 054 090 02080",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $15,920,518"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT237/RT23750/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2717 / 3370",
+      "rt_id": "RT23750"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "55 ST CLAIR AVE W",
+    "postcode": "M4V 2Y7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/04/2001",
+    "desc": "Office Bldg - 9 storey; about 240,000 sf",
+    "bldg": "240,000 sf",
+    "acreage": "1.32",
+    "consid": "15920518",
+    "cash": "",
+    "debt": "15920518",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 04 054 090 02080"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "55 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "04 Dec 2001",
+    "note": "Partial Interest",
+    "description": "Office Bldg - 9 storey; about 240,000 sf",
+    "seller_lines": [
+      "Bramalea Inc",
+      "By former Trustee, Ernst & Young Inc"
+    ],
+    "buyer_lines": [
+      "Clarica Life Insurance Co"
+    ],
+    "price_text": "$15,920,518"
+  }
+}

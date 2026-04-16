@@ -7,6 +7,11 @@ from fastapi import APIRouter, Depends, Query, HTTPException
 from pydantic import BaseModel
 from typing import Optional
 from ...web.deps import get_db, get_current_user, fts_query
+
+# Type aliases for optional query params
+OptInt = Optional[int]
+OptFloat = Optional[float]
+OptStr = Optional[str]
 from ...analytics.groups import refresh_group_analytics
 from ...web.audit import log_action
 from ...compiler.reconciler import normalize_group_name
@@ -46,30 +51,30 @@ def group_filters(db=Depends(get_db), user=Depends(get_current_user)):
 def browse_groups(
     page: int = Query(1, ge=1),
     per_page: int = Query(25, ge=1, le=100),
-    status: str = None,
-    min_properties: int = None,
-    max_properties: int = None,
+    status: OptStr = Query(None),
+    min_properties: OptInt = Query(None),
+    max_properties: OptInt = Query(None),
     # Analytics range filters
-    min_portfolio_value: int = None,
-    max_portfolio_value: int = None,
-    min_radius_km: float = None,
-    max_radius_km: float = None,
-    min_max_distance_km: float = None,
-    min_velocity: float = None,
-    max_velocity: float = None,
-    min_net_acquisitions: int = None,
-    max_net_acquisitions: int = None,
+    min_portfolio_value: OptInt = Query(None),
+    max_portfolio_value: OptInt = Query(None),
+    min_radius_km: OptFloat = Query(None),
+    max_radius_km: OptFloat = Query(None),
+    min_max_distance_km: OptFloat = Query(None),
+    min_velocity: OptFloat = Query(None),
+    max_velocity: OptFloat = Query(None),
+    min_net_acquisitions: OptInt = Query(None),
+    max_net_acquisitions: OptInt = Query(None),
     # Asset class filter — groups that own N..M properties of this class
-    asset_class: str = None,
-    min_asset_class_count: int = Query(None, ge=1),
-    max_asset_class_count: int = Query(None, ge=1),
+    asset_class: OptStr = Query(None),
+    min_asset_class_count: OptInt = Query(None, ge=1),
+    max_asset_class_count: OptInt = Query(None, ge=1),
     # Brand filter — groups that own at least N properties with this brand
-    brand: str = None,
-    min_brand_count: int = Query(None, ge=1),
+    brand: OptStr = Query(None),
+    min_brand_count: OptInt = Query(None, ge=1),
     # Region filter
-    region: str = None,
+    region: OptStr = Query(None),
     # Search
-    q: str = None,
+    q: OptStr = Query(None),
     # Sort
     sort: str = "transaction_count",
     order: str = "desc",
@@ -193,14 +198,40 @@ def browse_groups(
         f"g.contact_count, "
         f"ga.total_assessed_value, ga.total_buys, ga.total_sells, ga.avg_buy_price, "
         f"ga.net_acquisitions, ga.txns_per_year, ga.buys_last_12m, ga.sells_last_12m, "
-        f"ga.geographic_radius_km, ga.region_count, ga.max_distance_from_hq_km "
+        f"ga.geographic_radius_km, ga.region_count, ga.max_distance_from_hq_km, "
+        f"ga.property_type_mix "
         f"FROM groups g LEFT JOIN group_analytics ga ON g.id = ga.group_id "
         f"WHERE {where} ORDER BY {sort_col} {order} NULLS LAST LIMIT ? OFFSET ?",
         params + [per_page, offset]
     ).fetchall()
 
+    # Derive dominant/secondary property types from the JSON mix
+    results = []
+    for r in rows:
+        d = dict(r)
+        dominant = None
+        secondary = None
+        mix_raw = d.pop("property_type_mix", None)
+        if mix_raw:
+            try:
+                mix = json.loads(mix_raw) if isinstance(mix_raw, str) else mix_raw
+                # Filter out "unknown" — not a meaningful property type
+                sorted_types = [
+                    (k, v) for k, v in sorted(mix.items(), key=lambda x: x[1], reverse=True)
+                    if k != "unknown"
+                ]
+                if len(sorted_types) >= 1:
+                    dominant = sorted_types[0][0]
+                if len(sorted_types) >= 2:
+                    secondary = sorted_types[1][0]
+            except (json.JSONDecodeError, TypeError):
+                pass
+        d["dominant_type"] = dominant
+        d["secondary_type"] = secondary
+        results.append(d)
+
     return {
-        "results": [dict(r) for r in rows],
+        "results": results,
         "total": total,
         "page": page,
         "per_page": per_page,
@@ -318,25 +349,98 @@ def group_detail(group_id: str, db=Depends(get_db), user=Depends(get_current_use
     ).fetchall()
     result["contacts"] = [dict(c) for c in contacts]
 
-    # Transactions where this group appears
+    # Transactions where this group appears (with tenant brands via property)
     txns = db.execute(
         "SELECT DISTINCT t.source_id, t.sale_date, t.sale_price, t.display_address, t.city, "
-        "tp.side, tp.party_name "
+        "tp.side, tp.party_name, "
+        "(SELECT GROUP_CONCAT(p2.brand || '|' || p2.category, ';;') "
+        " FROM pois p2 WHERE p2.property_id = t.property_id AND p2.brand != '') as brands_raw "
         "FROM transaction_parties tp "
         "JOIN transactions t ON tp.source_id = t.source_id "
         "WHERE tp.group_id = ? ORDER BY t.sale_date DESC LIMIT 100",
         (group_id,)
     ).fetchall()
-    result["transactions"] = [dict(t) for t in txns]
+    txn_list = []
+    for t in txns:
+        td = dict(t)
+        raw = td.pop("brands_raw", None)
+        if raw:
+            td["brands"] = [{"brand": b.split("|")[0], "category": b.split("|")[1] if "|" in b else ""}
+                            for b in raw.split(";;") if b]
+        else:
+            td["brands"] = []
+        txn_list.append(td)
+    result["transactions"] = txn_list
 
-    # Properties owned (where group is buyer on most recent transaction)
+    # Properties owned (where group is buyer on most recent transaction), with tenant brands
     props = db.execute(
         "SELECT id, display_address, city, most_recent_sale_date, most_recent_sale_price, "
-        "most_recent_sale_source, lat, lng, asset_class "
+        "most_recent_sale_source, lat, lng, asset_class, "
+        "(SELECT GROUP_CONCAT(p2.brand || '|' || p2.category, ';;') "
+        " FROM pois p2 WHERE p2.property_id = properties.id AND p2.brand != '') as brands_raw "
         "FROM properties WHERE current_owner_group_id = ? ORDER BY most_recent_sale_date DESC",
         (group_id,)
     ).fetchall()
-    result["properties"] = [dict(p) for p in props]
+    prop_list = []
+    for p in props:
+        pd = dict(p)
+        raw = pd.pop("brands_raw", None)
+        if raw:
+            pd["brands"] = [{"brand": b.split("|")[0], "category": b.split("|")[1] if "|" in b else ""}
+                            for b in raw.split(";;") if b]
+        else:
+            pd["brands"] = []
+        prop_list.append(pd)
+    result["properties"] = prop_list
+
+    # Corporate address — most frequent mailing address from this group's
+    # own transactions, excluding party names that came from absorbed groups.
+    absorbed_names_rows = db.execute(
+        "SELECT gn.name FROM group_names gn "
+        "WHERE gn.group_id IN ("
+        "  SELECT source_group_id FROM group_merges "
+        "  WHERE target_group_id = ? AND unmerged_at IS NULL"
+        ")",
+        (group_id,)
+    ).fetchall()
+    absorbed_names = {r["name"] for r in absorbed_names_rows}
+
+    if absorbed_names:
+        placeholders = ",".join("?" * len(absorbed_names))
+        addr_row = db.execute(
+            f"SELECT tma.display, tma.city, tma.province, tma.postal, COUNT(*) as freq "
+            f"FROM transaction_parties tp "
+            f"JOIN transaction_mailing_addresses tma ON tp.source_id = tma.source_id AND tp.side = tma.side "
+            f"WHERE tp.group_id = ? "
+            f"AND tp.party_name NOT IN ({placeholders}) "
+            f"AND tma.display IS NOT NULL AND tma.display != '' "
+            f"GROUP BY tma.display, tma.city, tma.province, tma.postal "
+            f"ORDER BY freq DESC LIMIT 1",
+            (group_id, *absorbed_names)
+        ).fetchone()
+    else:
+        addr_row = db.execute(
+            "SELECT tma.display, tma.city, tma.province, tma.postal, COUNT(*) as freq "
+            "FROM transaction_parties tp "
+            "JOIN transaction_mailing_addresses tma ON tp.source_id = tma.source_id AND tp.side = tma.side "
+            "WHERE tp.group_id = ? "
+            "AND tma.display IS NOT NULL AND tma.display != '' "
+            "GROUP BY tma.display, tma.city, tma.province, tma.postal "
+            "ORDER BY freq DESC LIMIT 1",
+            (group_id,)
+        ).fetchone()
+
+    if addr_row:
+        parts = [addr_row["display"]]
+        if addr_row["city"]:
+            parts.append(addr_row["city"])
+        if addr_row["province"]:
+            parts.append(addr_row["province"])
+        if addr_row["postal"]:
+            parts.append(addr_row["postal"])
+        result["corporate_address"] = ", ".join(parts)
+    else:
+        result["corporate_address"] = None
 
     return result
 

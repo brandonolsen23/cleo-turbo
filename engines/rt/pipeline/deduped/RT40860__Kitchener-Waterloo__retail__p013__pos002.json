@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT40860",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40860",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "680 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "17 Mar 2005",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TSC Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roy Carter",
+        "1950 Oxford St E",
+        "London, Ontario",
+        "N5V 2Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1639824 Ontario Inc     519-743-2021"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Sloan",
+        "Factory Shoe",
+        "686 Victoria St N",
+        "Kitchener, Ontario",
+        "N2H 5G1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 14,000 sf @ $71"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 763, Lot 46",
+      "",
+      "1.15 acre"
+    ],
+    "arn_text": "30 12 020 004 22000",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum",
+      "registered: 03/17/2005   due: on demand"
+    ],
+    "broker_lines": [
+      "CB Richard Ellis: Jeremy Kaupp, 519-673-6444"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT408/RT40860/photo.jpg"
+    },
+    "footer": {
+      "page_position": "603 / 752",
+      "rt_id": "RT40860"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "680 VICTORIA ST N",
+    "postcode": "N2H 5G1",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/17/2005",
+    "desc": "Retail Bldg - 1 storey; 14,000 sf @ $71",
+    "bldg": "14,000 sf",
+    "acreage": "1.15",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 020 004 22000"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "680 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "17 Mar 2005",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 14,000 sf @ $71",
+    "seller_lines": [
+      "TSC Realty Inc"
+    ],
+    "buyer_lines": [
+      "1639824 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

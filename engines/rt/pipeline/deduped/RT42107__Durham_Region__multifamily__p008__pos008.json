@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT42107",
+  "source_folder": "Durham_Region/multifamily/p008",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42107",
+      "source_folder": "Durham_Region/multifamily/p008",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/multifamily/p008/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "291 ADELAIDE AVE W"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "27 May 2005",
+      "price_text": "$712,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "SPS Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rico Sirizzotti",
+        "2680 Concession Rd 7",
+        "Tyrone, Ontario",
+        "L1C 3K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1018, Lot 3",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "18 13 010 012 02100",
+    "consideration_lines": [
+      "cash: $712,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $534,000   rate: 5.39% per annum",
+      "registered: 05/27/2005   due: 06/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT421/RT42107/air1.jpg",
+        "/assets/files/RT4/RT421/RT42107/air2.jpg",
+        "/assets/files/RT4/RT421/RT42107/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT421/RT42107/photo.jpg"
+    },
+    "footer": {
+      "page_position": "359 / 481",
+      "rt_id": "RT42107"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "291 ADELAIDE AVE W",
+    "postcode": "L1J 2R4",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "05/27/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "712000",
+    "cash": "712000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 010 012 02100"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "291 ADELAIDE AVE W"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "27 May 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "SPS Properties Ltd"
+    ],
+    "price_text": "$712,000"
+  }
+}

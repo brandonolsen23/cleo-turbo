@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT184641",
+  "source_folder": "Brant/retail/p001",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184641",
+      "source_folder": "Brant/retail/p001",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "26 BRANTWOOD PARK RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "30 Apr 2024",
+      "price_text": "$1,285,281",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "11277910 Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1329 Merton Rd",
+        "Oakville, Ontario",
+        "L6M 5L7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000617561 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ajay Sharma",
+        "26 Brantwood Park Rd",
+        "Brantford, Ontario",
+        "N3P 1G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-6831, Part 1",
+      "",
+      "PIN: 32193-0373",
+      "",
+      "0.83 acre"
+    ],
+    "arn_text": "29 06 030 019 00110",
+    "consideration_lines": [
+      "cash: $1,285,281     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $635,240   rate: Prime plus 5.0% per annum.",
+      "registered: 04/30/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184641/0824_091321.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184641/0824_091344.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184641/0824_091415.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184641/0824_091450.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184641/0824_091510.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "34 / 195",
+      "rt_id": "RT184641"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "26 BRANTWOOD PARK RD",
+    "postcode": "N3P 1G2",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "04/30/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".83",
+    "consid": "1285281",
+    "cash": "1285281",
+    "debt": "",
+    "note": "",
+    "pin": "32193-0373",
+    "rollno": "29 06 030 019 00110"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "26 BRANTWOOD PARK RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "30 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "11277910 Canada Corp"
+    ],
+    "buyer_lines": [
+      "1000617561 Ontario Inc"
+    ],
+    "price_text": "$1,285,281"
+  }
+}

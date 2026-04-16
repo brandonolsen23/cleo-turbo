@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT28411",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28411",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "4186 - 4190 FINCH AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "08 Jan 2003",
+      "price_text": "$4,091,650",
+      "note": "50% Interest."
+    },
+    "transferor": {
+      "party_lines": [
+        "1150964 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Wong",
+        "7100 Woodbine Ave",
+        "Markham, Ontario",
+        "L3R 5J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Torgan Construction Ltd     416-221-9348"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eliahu Swirsky",
+        "4950 Yonge St, Ste 601",
+        "Toronto, Ontario",
+        "M2N 6K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-12091, Parts 1-7",
+      "",
+      "5.04 acre"
+    ],
+    "arn_text": "19 01 114 010 00900",
+    "consideration_lines": [
+      "cash: $225,000     assumed/vtb debt: $3,866,650"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT284/RT28411/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4066 / 4952",
+      "rt_id": "RT28411"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "4186 - 4190 FINCH AVE E",
+    "postcode": "M1S 4T5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/08/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.04",
+    "consid": "4091650",
+    "cash": "225000",
+    "debt": "3866650",
+    "note": "50% Interest.",
+    "pin": "",
+    "rollno": "19 01 114 010 00900"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "4186 - 4190 FINCH AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "08 Jan 2003",
+    "note": "50% Interest.",
+    "description": "",
+    "seller_lines": [
+      "1150964 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Torgan Construction Ltd"
+    ],
+    "price_text": "$4,091,650"
+  }
+}

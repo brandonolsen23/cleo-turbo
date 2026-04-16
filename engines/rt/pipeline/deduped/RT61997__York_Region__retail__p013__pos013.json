@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT61997",
+  "source_folder": "York_Region/retail/p013",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT61997",
+      "source_folder": "York_Region/retail/p013",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "10309 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "06 May 2008",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2146377 Ontario Inc     416-486-8751"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Lo",
+        "William Ash",
+        "55 Eglinton Ave E, Ste 801",
+        "Toronto, Ontario",
+        "M4P 1G8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tavazo Corp     905-763-1855"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Khosrow Tavazofar",
+        "120 West Beaver Creek Rd, Unit 4",
+        "Richmond Hill, Ontario",
+        "L4B 1L2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 4,000 sf @ $575",
+      "",
+      "Single tenant - vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10030",
+      "Lot 25 & Block C",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "19 38 020 010 81500",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,400,000   rate: 5.75% per annum",
+      "registered: 05/06/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT619/RT61997/0515_121810.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT619/RT61997/0515_121815.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT619/RT61997/0515_121819.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT619/RT61997/air1.jpg",
+        "/assets/files/RT6/RT619/RT61997/air2.jpg",
+        "/assets/files/RT6/RT619/RT61997/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "614 / 984",
+      "rt_id": "RT61997"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "10309 YONGE ST",
+    "postcode": "L4C 3B9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "05/06/2008",
+    "desc": "Retail Bldg - 1 storey; 4,000 sf @ $575",
+    "bldg": "4,000 sf",
+    "acreage": ".23",
+    "consid": "2300000",
+    "cash": "2300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 020 010 81500"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "10309 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "06 May 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 4,000 sf @ $575",
+    "seller_lines": [
+      "2146377 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Tavazo Corp"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

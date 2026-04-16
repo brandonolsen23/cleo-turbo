@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT24083",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24083",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "140 - 150 UNIVERSITY AVE W"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "24 Jan 2002",
+      "price_text": "$5,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal & Sun Alliance Insurance Co of Canada     416-366-7511"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Larry Simmons",
+        "10 Wellington St E",
+        "Toronto, Ontario",
+        "M5E 1L5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Campus Court Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nao Seko",
+        "234 Matheson Blvd E",
+        "Mississauga, Ontario",
+        "L4Z 1X1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 44,722 sf @ $123",
+      "",
+      "176 parking spots."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-6276, Part 1",
+      "Except Plan 58R-6605, Part 1",
+      "",
+      "3.42 acre"
+    ],
+    "arn_text": "30 16 044 700 02500",
+    "consideration_lines": [
+      "cash: $1,375,000     assumed/vtb debt: $4,125,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24083/photo.jpg"
+    },
+    "footer": {
+      "page_position": "673 / 752",
+      "rt_id": "RT24083"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "140 - 150 UNIVERSITY AVE W",
+    "postcode": "N2L 6J3",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "01/24/2002",
+    "desc": "Retail Plaza - 1 storey; 44,722 sf @ $123",
+    "bldg": "44,722 sf",
+    "acreage": "3.42",
+    "consid": "5500000",
+    "cash": "1375000",
+    "debt": "4125000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 044 700 02500"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "140 - 150 UNIVERSITY AVE W"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "24 Jan 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 44,722 sf @ $123",
+    "seller_lines": [
+      "Royal & Sun Alliance Insurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "Campus Court Developments Ltd"
+    ],
+    "price_text": "$5,500,000"
+  }
+}

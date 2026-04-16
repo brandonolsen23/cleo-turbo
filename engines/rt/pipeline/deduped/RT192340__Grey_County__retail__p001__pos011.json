@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT192340",
+  "source_folder": "Grey_County/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192340",
+      "source_folder": "Grey_County/retail/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/retail/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "963 SECOND AVE E",
+        "963 2ND AVE E"
+      ],
+      "city_region": "Owen Sound : Grey County",
+      "date_text": "02 May 2025",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sandsprings Planning and",
+        "Development Corporation Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1867 Yonge St, Ste 601",
+        "Toronto, Ontario",
+        "M4S 1Y5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2478840 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gil Shcolyar",
+        "18 Erica Rd",
+        "Thornhill, Ontario",
+        "L4J 2G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 850 Owen Sound, Lot 35",
+      "",
+      "PIN: 37073-0013",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "42 59 040 030 11900",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $637,500   rate: Prime plus 5.0% per annum.",
+      "registered: 05/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 69",
+      "rt_id": "RT192340"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "963 SECOND AVE E, 963 2ND AVE E",
+    "postcode": "N4K 2H5",
+    "municipality": "Owen Sound",
+    "region": "Grey County",
+    "date": "05/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "37073-0013",
+    "rollno": "42 59 040 030 11900"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "963 SECOND AVE E",
+      "963 2ND AVE E"
+    ],
+    "city_region": "Owen Sound : Grey County",
+    "date_text": "02 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sandsprings Planning and",
+      "Development Corporation Ltd"
+    ],
+    "buyer_lines": [
+      "2478840 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

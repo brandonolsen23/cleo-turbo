@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT181844",
+  "source_folder": "Metro_Toronto/retail/p015",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181844",
+      "source_folder": "Metro_Toronto/retail/p015",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p015/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "3260 MIDLAND AVE",
+        "UNITS F101 & F102"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 Dec 2023",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Terra Nova Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "49 York Mills Rd, Unit 514",
+        "Toronto, Ontario",
+        "M2P 1B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2292688 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexander Tsiu",
+        "9 Chalmers Rd, Unit 110",
+        "Richmond Hill, Ontario",
+        "L4B 3N3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2124",
+      "Level 1, Units 85 & 86",
+      "",
+      "PIN: 76124-0085 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Visar Realty Inc",
+      "principal: $550,000   rate: 10.0% per annum. Chargor May extend for a further 2 year term at 12.0% per annum.",
+      "registered: 12/01/2023   due: 12/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144235.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144240.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144252.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144309.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144326.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144613.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144614.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144615.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1818/RT181844/1217_144637.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "706 / 4952",
+      "rt_id": "RT181844"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "3260 MIDLAND AVE, UNITS F101 & F102",
+    "postcode": "M1V 0C5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "76124-0085+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "3260 MIDLAND AVE",
+      "UNITS F101 & F102"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Terra Nova Development Inc"
+    ],
+    "buyer_lines": [
+      "2292688 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

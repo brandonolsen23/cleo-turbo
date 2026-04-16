@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT180347",
+  "source_folder": "York_Region/retail/p004",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180347",
+      "source_folder": "York_Region/retail/p004",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "9610 YONGE ST",
+        "UNIT 20"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "11 Sep 2023",
+      "price_text": "$1,560,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2793354 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2378609 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Imitiaz Ahmed",
+        "7222 Torbram Rd, Unit 14",
+        "Brampton, Ontario",
+        "L4T 3B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1343",
+      "Level 1, Unit 20",
+      "",
+      "PIN: 29874-0020"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,560,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105223.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105249.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105250.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105413.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105420.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105421.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180347/0924_105426.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "199 / 984",
+      "rt_id": "RT180347"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "9610 YONGE ST, UNIT 20",
+    "postcode": "L4C 1V6",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "09/11/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1560000",
+    "cash": "1560000",
+    "debt": "",
+    "note": "",
+    "pin": "29874-0020",
+    "rollno": ""
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "9610 YONGE ST",
+      "UNIT 20"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "11 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2793354 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2378609 Ontario Inc"
+    ],
+    "price_text": "$1,560,000"
+  }
+}

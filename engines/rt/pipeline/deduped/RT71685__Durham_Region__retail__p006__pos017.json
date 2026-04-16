@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT71685",
+  "source_folder": "Durham_Region/retail/p006",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71685",
+      "source_folder": "Durham_Region/retail/p006",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p006/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "65 BROCK ST W"
+      ],
+      "city_region": "Uxbridge : Durham Region",
+      "date_text": "09 Apr 2010",
+      "price_text": "$1,050,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Philthy McNasty's (Enterprises) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Tsianos",
+        "44 Upjohn Rd",
+        "Toronto, Ontario",
+        "M3B 2W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 83, Block G",
+      "Part Lot 3",
+      "As in Inst No D-408440",
+      "",
+      "PIN: 26845-0021",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "18 29 050 001 03000",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT716/RT71685/air1.jpg",
+        "/assets/files/RT7/RT716/RT71685/air2.jpg",
+        "/assets/files/RT7/RT716/RT71685/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "268 / 506",
+      "rt_id": "RT71685"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "65 BROCK ST W",
+    "postcode": "L9P 1P5",
+    "municipality": "Uxbridge",
+    "region": "Durham Region",
+    "date": "04/09/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "26845-0021",
+    "rollno": "18 29 050 001 03000"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "65 BROCK ST W"
+    ],
+    "city_region": "Uxbridge : Durham Region",
+    "date_text": "09 Apr 2010",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Philthy McNasty's (Enterprises) Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

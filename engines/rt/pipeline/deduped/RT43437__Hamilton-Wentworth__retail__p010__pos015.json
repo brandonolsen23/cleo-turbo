@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT43437",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43437",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "59 KIRBY AVE"
+      ],
+      "city_region": "Flamborough : Hamilton-Wentworth",
+      "date_text": "29 Jul 2005",
+      "price_text": "$1,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Vanderlaan CS Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ken Vanderlaan",
+        "59 Kirby Ave",
+        "Dundas, Ontario",
+        "L9H 6P3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 11 units 18,500 sf @ $64",
+      "",
+      "Last transferred in Dec 2002 for $1,150,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-173, Block A",
+      "",
+      "1.98 acre"
+    ],
+    "arn_text": "25 30 200 210 62410",
+    "consideration_lines": [
+      "cash: $372,602     assumed/vtb debt: $802,398"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT434/RT43437/photo.jpg"
+    },
+    "footer": {
+      "page_position": "466 / 616",
+      "rt_id": "RT43437"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "59 KIRBY AVE",
+    "postcode": "L9H 6P3",
+    "municipality": "Flamborough",
+    "region": "Hamilton-Wentworth",
+    "date": "07/29/2005",
+    "desc": "Retail Plaza - 1 storey; 11 units 18,500 sf @ $64",
+    "bldg": "18,500 sf",
+    "acreage": "1.98",
+    "consid": "1175000",
+    "cash": "372602",
+    "debt": "802398",
+    "note": "",
+    "pin": "",
+    "rollno": "25 30 200 210 62410"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "59 KIRBY AVE"
+    ],
+    "city_region": "Flamborough : Hamilton-Wentworth",
+    "date_text": "29 Jul 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 11 units 18,500 sf @ $64",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Vanderlaan CS Ltd"
+    ],
+    "price_text": "$1,175,000"
+  }
+}

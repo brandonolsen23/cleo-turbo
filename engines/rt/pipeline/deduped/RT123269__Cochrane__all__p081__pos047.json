@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT123269",
+  "source_folder": "Cochrane/all/p081",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123269",
+      "source_folder": "Cochrane/all/p081",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p081/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "311 LEGGET DR"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "09 Dec 2016",
+      "price_text": "$700,000",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Johri Family Holdings Ltd     613-746-1536"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hari Johri",
+        "46 Amberly Place",
+        "Ottawa, Ontario",
+        "K1J 8A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dooclan Ltd     613-224-5464"
+      ],
+      "trade_name": "Merkburn Holdings Ltd",
+      "contact_lines": [
+        "Attn: Peter Dooher",
+        "1827 Woodward Dr, Ste 302",
+        "Ottawa, Ontario",
+        "K2C 0P9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-280, Blocks 37 & 38",
+      "",
+      "PIN: 04517-0579 +",
+      "",
+      "2.14 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4048 / 10920",
+      "rt_id": "RT123269"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "311 LEGGET DR",
+    "postcode": "K2K 1Z8",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "12/09/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.14",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "% Interest",
+    "pin": "04517-0579+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "311 LEGGET DR"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "09 Dec 2016",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "Johri Family Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Dooclan Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

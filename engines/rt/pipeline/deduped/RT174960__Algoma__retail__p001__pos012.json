@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT174960",
+  "source_folder": "Algoma/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174960",
+      "source_folder": "Algoma/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1192 - 1198 RICHARDS ST"
+      ],
+      "city_region": ": Algoma",
+      "date_text": "01 Nov 2022",
+      "price_text": "$940,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2334657 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Box 200",
+        "Richards Landing, Ontario",
+        "P0R 1J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2296357 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Wilding",
+        "1981 Queen St E",
+        "Sault Ste Marie, Ontario",
+        "P6A 2G8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT17/RT1749/RT174960/mi.pdf",
+    "site_lines": [
+      "Plan 1R-8543, Parts 1, 2 & 10",
+      "Plan 101, Water Lot in rear of Lot 10,",
+      "E/S Richards St",
+      "As in Inst No T-424442",
+      "",
+      "PIN: 31458-0375 +",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $940,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 29",
+      "rt_id": "RT174960"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1192 - 1198 RICHARDS ST",
+    "postcode": "P0R 1J0",
+    "municipality": "",
+    "region": "Algoma",
+    "date": "11/01/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".6",
+    "consid": "940000",
+    "cash": "940000",
+    "debt": "",
+    "note": "",
+    "pin": "31458-0375+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1192 - 1198 RICHARDS ST"
+    ],
+    "city_region": ": Algoma",
+    "date_text": "01 Nov 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2334657 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2296357 Ontario Inc"
+    ],
+    "price_text": "$940,000"
+  }
+}

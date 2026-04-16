@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT196151",
+  "source_folder": "Victoria/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196151",
+      "source_folder": "Victoria/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 GREENFIELD RD"
+      ],
+      "city_region": "Lindsay : Victoria",
+      "date_text": "19 Dec 2025",
+      "price_text": "$5,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tenga Capital Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Dale & Lessmann LLP",
+        "181 University Ave, Ste 2100",
+        "Toronto, Ontario",
+        "M5H 3M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PBS Capital Corp     905-670-8828"
+      ],
+      "trade_name": "PBS Building Supplies Ltd",
+      "contact_lines": [
+        "Attn: Innocenzio Prospero",
+        "6010 Tomken Rd",
+        "Mississauga, Ontario",
+        "L5T 1X9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - OPS, Part Lot 20",
+      "Plan 57R-9470, Part 1",
+      "",
+      "PIN: 63237-1151",
+      "",
+      "3.02 acre"
+    ],
+    "arn_text": "16 51 020 001 04902",
+    "consideration_lines": [
+      "cash: $5,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $5,250,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 12/19/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1961/RT196151/0102_115110.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1961/RT196151/0102_115123.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1961/RT196151/0102_115203.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1961/RT196151/0102_115207.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1961/RT196151/0102_115215.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 49",
+      "rt_id": "RT196151"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "44 GREENFIELD RD",
+    "postcode": "K9V 4R2",
+    "municipality": "Lindsay",
+    "region": "Victoria",
+    "date": "12/19/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.02",
+    "consid": "5250000",
+    "cash": "5250000",
+    "debt": "",
+    "note": "",
+    "pin": "63237-1151",
+    "rollno": "16 51 020 001 04902"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "44 GREENFIELD RD"
+    ],
+    "city_region": "Lindsay : Victoria",
+    "date_text": "19 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Tenga Capital Corp"
+    ],
+    "buyer_lines": [
+      "PBS Capital Corp"
+    ],
+    "price_text": "$5,250,000"
+  }
+}

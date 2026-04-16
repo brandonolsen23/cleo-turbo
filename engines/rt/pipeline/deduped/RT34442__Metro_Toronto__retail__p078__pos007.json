@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT34442",
+  "source_folder": "Metro_Toronto/retail/p078",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34442",
+      "source_folder": "Metro_Toronto/retail/p078",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p078/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "2800 - 2810 EGLINTON AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 Mar 2004",
+      "price_text": "$4,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "783420 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Francis Kwong",
+        "330 Highway 7 E, Ste 306",
+        "Richmond Hill, Ontario",
+        "L4B 3P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ceduna Investments Ltd     416-250-5800"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gary Goldman",
+        "Harris Sheaffer LLP",
+        "4100 Yonge St, Ste 610",
+        "Toronto, Ontario",
+        "M2P 2B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-13885",
+      "Parts 1-5, 12-15, 18 & 19",
+      "Plan 64R-10071",
+      "Parts 6-11, 16 & 17",
+      "",
+      "5.65 acre"
+    ],
+    "arn_text": "19 01 063 010 01800",
+    "consideration_lines": [
+      "cash: $4,450,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT344/RT34442/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3858 / 4952",
+      "rt_id": "RT34442"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "2800 - 2810 EGLINTON AVE E",
+    "postcode": "M1J 2C9",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "03/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.65",
+    "consid": "4450000",
+    "cash": "4450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 063 010 01800"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "2800 - 2810 EGLINTON AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 Mar 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "783420 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Ceduna Investments Ltd"
+    ],
+    "price_text": "$4,450,000"
+  }
+}

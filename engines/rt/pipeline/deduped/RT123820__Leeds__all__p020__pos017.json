@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT123820",
+  "source_folder": "Leeds/all/p020",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123820",
+      "source_folder": "Leeds/all/p020",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "51 UBE DR"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "28 Feb 2017",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canuck Properties Ltd     416-961-5556"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Laurence Goldstein",
+        "95 St Clair Ave W, Ste 1403",
+        "Toronto, Ontario",
+        "M4V 1N6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "BVD Holdings Sarnia Inc     905-792-8828"
+      ],
+      "trade_name": "BVD Petroleum",
+      "contact_lines": [
+        "Attn: Bikram Dhillon",
+        "130 Delta Park Blvd",
+        "Brampton, Ontario",
+        "L6T 5E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-8068, Part 4",
+      "",
+      "PIN: 43130-0086",
+      "",
+      "9.39 acre"
+    ],
+    "arn_text": "38 29 100 002 13200",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1238/RT123820/air1.jpg",
+        "/assets/files/RT12/RT1238/RT123820/air2.jpg",
+        "/assets/files/RT12/RT1238/RT123820/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "968 / 1916",
+      "rt_id": "RT123820"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "51 UBE DR",
+    "postcode": "N7W 1B6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "02/28/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.39",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "43130-0086",
+    "rollno": "38 29 100 002 13200"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "51 UBE DR"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "28 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canuck Properties Ltd"
+    ],
+    "buyer_lines": [
+      "BVD Holdings Sarnia Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

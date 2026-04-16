@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT20724",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20724",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "92 MADISON AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 Feb 2001",
+      "price_text": "$602,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Claude D. Mehra"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "44 Walmer Rd, Apt 905",
+        "Toronto, Ontario",
+        "M5R 2X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Isla Carmichael & Timothy Little"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "92 Madison Ave",
+        "Toronto, Ontario",
+        "M5R 2S4"
+      ]
+    },
+    "description_lines": [
+      "TriPlex - 3 storey; 3 units @ $200,667"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-2, Part Lots 97 & 98",
+      "",
+      "W side 300m N of Lowther Ave"
+    ],
+    "arn_text": "19 04 052 150 04400",
+    "consideration_lines": [
+      "cash: $602,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT207/RT20724/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5556 / 6031",
+      "rt_id": "RT20724"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "92 MADISON AVE",
+    "postcode": "M5R 2S4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/21/2001",
+    "desc": "TriPlex - 3 storey; 3 units @ $200,667",
+    "bldg": "3 units",
+    "acreage": "",
+    "consid": "602000",
+    "cash": "602000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 150 04400"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "92 MADISON AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 Feb 2001",
+    "note": "",
+    "description": "TriPlex - 3 storey; 3 units @ $200,667",
+    "seller_lines": [
+      "Claude D. Mehra"
+    ],
+    "buyer_lines": [
+      "Isla Carmichael & Timothy Little"
+    ],
+    "price_text": "$602,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT188220",
+  "source_folder": "Metro_Toronto/retail/p009",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188220",
+      "source_folder": "Metro_Toronto/retail/p009",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p009/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1391 WESTON RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "01 Nov 2024",
+      "price_text": "$1,700,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Mijar Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 121 George St N",
+        "PO Box 1387",
+        "Peterborough, Ontario",
+        "K9J 7H6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001035495 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Idan Levy",
+        "c/o 500 Queens Quay W, Unit 802E",
+        "Toronto, Ontario",
+        "M5V 3K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-32521, Parts 3",
+      "",
+      "PIN: 10507-0163",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "19 14 061 240 00500",
+    "consideration_lines": [
+      "cash: $100,000     assumed/vtb debt: $0",
+      "chattels: $2,200,000",
+      "other: $1,600,000",
+      "",
+      "chargee: Mijar Ltd",
+      "principal: $3,800,000   rate: 5.0% per annum.",
+      "registered: 11/01/2024   due: 10/28/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1882/RT188220/1110_083845.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1882/RT188220/1110_083857.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1882/RT188220/1110_083923.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1882/RT188220/1110_083924.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "405 / 4952",
+      "rt_id": "RT188220"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1391 WESTON RD",
+    "postcode": "M6M 4S3",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "11/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "1700000",
+    "cash": "100000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "10507-0163",
+    "rollno": "19 14 061 240 00500"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1391 WESTON RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "01 Nov 2024",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Mijar Ltd"
+    ],
+    "buyer_lines": [
+      "1001035495 Ontario Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

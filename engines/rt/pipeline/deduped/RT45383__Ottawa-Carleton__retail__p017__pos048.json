@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT45383",
+  "source_folder": "Ottawa-Carleton/retail/p017",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45383",
+      "source_folder": "Ottawa-Carleton/retail/p017",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p017/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "338 PRESTON ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Nov 2005",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2989859 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pasquale Trunzo",
+        "2050 Prince of Wales Dr",
+        "Ottawa, Ontario",
+        "K2E 7M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2082680 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Antonio Calarco",
+        "860 Denison Cres",
+        "Ottawa, Ontario",
+        "K2A 2N5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 46",
+      "Lot 4, W Preston St",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "06 14 063 501 11800",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "849 / 1141",
+      "rt_id": "RT45383"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "338 PRESTON ST",
+    "postcode": "K1S 4M6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 063 501 11800"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "338 PRESTON ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2989859 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "2082680 Ontario Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

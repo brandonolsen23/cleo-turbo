@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT19609",
+  "source_folder": "Metro_Toronto/retail/p092",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19609",
+      "source_folder": "Metro_Toronto/retail/p092",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p092/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "3630 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "15 Nov 2000",
+      "price_text": "$650,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Gatwick Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Charles Chan",
+        "c/o 6 Edgecomb Ct",
+        "Markham, Ontario",
+        "L3S 2W6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1444938 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lisa Fung Zid",
+        "3630 Lawrence Ave E",
+        "Scarborough, Ontario",
+        "M1G 1P6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-9655, Part 1",
+      "",
+      "0.57 acre"
+    ],
+    "arn_text": "19 01 082 020 00100",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,042,500   rate: Prime plus 5.0% per annum.",
+      "registered: 11/04/2025   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $380,000   rate: 4.5% per annum.",
+      "registered: 11/05/2025   due: 11/05/2030",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,372,500   rate: Plan 5.0% per annum.",
+      "registered: 11/05/2025   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,435,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/06/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4586 / 4952",
+      "rt_id": "RT19609"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "3630 LAWRENCE AVE E",
+    "postcode": "M1G 1P6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "11/15/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".57",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 082 020 00100"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "3630 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "15 Nov 2000",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Gatwick Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "1444938 Ontario Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

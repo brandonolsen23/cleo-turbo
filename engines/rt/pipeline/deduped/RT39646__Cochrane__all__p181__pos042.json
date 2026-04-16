@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT39646",
+  "source_folder": "Cochrane/all/p181",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39646",
+      "source_folder": "Cochrane/all/p181",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p181/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "436 MACLAREN ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "07 Jan 2005",
+      "price_text": "$545,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1010547 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Monika Fleischer",
+        "28 Maplehurst Ave",
+        "Nepean, Ontario",
+        "K2H 9G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 27292",
+      "Lot 33, S/S Maclaren St",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $545,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT396/RT39646/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9043 / 10920",
+      "rt_id": "RT39646"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "436 MACLAREN ST",
+    "postcode": "K2P 0M8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/07/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "545000",
+    "cash": "545000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "436 MACLAREN ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "07 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1010547 Ontario Inc"
+    ],
+    "price_text": "$545,000"
+  }
+}

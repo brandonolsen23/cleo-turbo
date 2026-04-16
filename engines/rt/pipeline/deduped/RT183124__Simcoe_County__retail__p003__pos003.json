@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT183124",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183124",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "148 RICHARD ST E"
+      ],
+      "city_region": "Tay : Simcoe County",
+      "date_text": "07 Feb 2024",
+      "price_text": "$545,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "8017450 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3 Jonathan Ct",
+        "Stayner, Ontario",
+        "L0M 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000729153 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Evan Lahaie",
+        "140 Arlynn Cres",
+        "Penetanguishene, Ontario",
+        "L0M 2G0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 201, Part Lots 1 & 2,",
+      "N/S Richard St E",
+      "Plan 51R-35218, Part 2",
+      "",
+      "PIN: 5491-0013 +",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $545,000     assumed/vtb debt: $0",
+      "chattels: $340,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183124/0427_133452a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183124/0427_133452b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183124/0427_133532.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183124/0427_133535.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "104 / 712",
+      "rt_id": "RT183124"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "148 RICHARD ST E",
+    "postcode": "L0K 2A0",
+    "municipality": "Tay",
+    "region": "Simcoe County",
+    "date": "02/07/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "545000",
+    "cash": "545000",
+    "debt": "",
+    "note": "",
+    "pin": "5491-0013+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "148 RICHARD ST E"
+    ],
+    "city_region": "Tay : Simcoe County",
+    "date_text": "07 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "8017450 Canada Inc"
+    ],
+    "buyer_lines": [
+      "1000729153 Ontario Inc"
+    ],
+    "price_text": "$545,000"
+  }
+}

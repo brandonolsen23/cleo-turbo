@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT192121",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192121",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "336 GUELPH ST"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "16 May 2025",
+      "price_text": "$9,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ed Lewis Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "16 Jamestown Ct",
+        "Caledon, Ontario",
+        "L7C 3W7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Garofoli Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anthony Garofoli",
+        "465 Maplehurst Ave",
+        "Oakville, Ontario",
+        "L6L 4Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 617, Lot 83",
+      "",
+      "PIN: 25054-0008",
+      "",
+      "2.73 acre"
+    ],
+    "arn_text": "24 15 030 002 03800",
+    "consideration_lines": [
+      "cash: $9,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $11,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/16/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192121/0531_143648.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192121/0531_143649.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192121/0531_143737.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192121/0531_143738.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192121/0531_143756.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "32 / 613",
+      "rt_id": "RT192121"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "336 GUELPH ST",
+    "postcode": "L7G 4B5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "05/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.73",
+    "consid": "9600000",
+    "cash": "9600000",
+    "debt": "",
+    "note": "",
+    "pin": "25054-0008",
+    "rollno": "24 15 030 002 03800"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "336 GUELPH ST"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "16 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ed Lewis Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Garofoli Investments Inc"
+    ],
+    "price_text": "$9,600,000"
+  }
+}

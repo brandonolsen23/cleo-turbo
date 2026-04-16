@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT196309",
+  "source_folder": "Durham_Region/retail/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196309",
+      "source_folder": "Durham_Region/retail/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "831 - 837 FINLEY AVE"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "30 Dec 2025",
+      "price_text": "$1,425,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Elle Mortgage Corporation     416-961-0001"
+      ],
+      "trade_name": "Terry Wallman & Associates",
+      "contact_lines": [
+        "1240 Bay St, Ste 202",
+        "Toronto, Ontario",
+        "M5R 2A7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "837 Finlay Ave Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ali Tanara",
+        "11 Vecchia St",
+        "Markham, Ontario",
+        "L6E 1R1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1114, Block P",
+      "",
+      "PIN: 26468-0065",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "18 05 040 007 11081",
+    "consideration_lines": [
+      "cash: $1,425,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,425,000   rate: Prime plus 6.0% per annum.",
+      "registered: 12/30/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104630.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104639.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104642.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104729.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104730.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104742.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1963/RT196309/0111_104751.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 506",
+      "rt_id": "RT196309"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "831 - 837 FINLEY AVE",
+    "postcode": "L1S 3S2",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "12/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "1425000",
+    "cash": "1425000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "26468-0065",
+    "rollno": "18 05 040 007 11081"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "831 - 837 FINLEY AVE"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "30 Dec 2025",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Elle Mortgage Corporation"
+    ],
+    "buyer_lines": [
+      "837 Finlay Ave Inc"
+    ],
+    "price_text": "$1,425,000"
+  }
+}

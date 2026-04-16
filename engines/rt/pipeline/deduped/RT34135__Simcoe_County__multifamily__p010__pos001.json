@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT34135",
+  "source_folder": "Simcoe_County/multifamily/p010",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34135",
+      "source_folder": "Simcoe_County/multifamily/p010",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/multifamily/p010/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "27 CENTRE ST"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "05 Feb 2004",
+      "price_text": "$744,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1225076 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roseanna Greig",
+        "54 Tecumseh Dr",
+        "Aurora, Ontario",
+        "L4G 2X4"
+      ]
+    },
+    "description_lines": [
+      "NinePlex - 9 units @ $82,722"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 122-A",
+      "Part Lot 128, N/S Centre St",
+      "As in Inst No RO-900380",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "43 12 010 005 08100",
+    "consideration_lines": [
+      "cash: $744,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT341/RT34135/photo.jpg"
+    },
+    "footer": {
+      "page_position": "452 / 530",
+      "rt_id": "RT34135"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "27 CENTRE ST",
+    "postcode": "",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "02/05/2004",
+    "desc": "NinePlex - 9 units @ $82,722",
+    "bldg": "9 units",
+    "acreage": ".19",
+    "consid": "744500",
+    "cash": "744500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 12 010 005 08100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "27 CENTRE ST"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "05 Feb 2004",
+    "note": "",
+    "description": "NinePlex - 9 units @ $82,722",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1225076 Ontario Inc"
+    ],
+    "price_text": "$744,500"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT195900",
+  "source_folder": "Huron_County/industrial/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195900",
+      "source_folder": "Huron_County/industrial/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Huron_County/industrial/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "206 VICTORIA ST W"
+      ],
+      "city_region": "S. Huron : Huron County",
+      "date_text": "05 Dec 2025",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1204960 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "185 Hazelton Lane",
+        "Exeter, Ontario",
+        "N0M 1S2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "T&T Realty Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Randolph Tobin",
+        "15 Matthias Cres",
+        "Maryhill, Ontario",
+        "N0B 2B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22R-4044, Part 2",
+      "",
+      "PIN: 41237-0024",
+      "",
+      "1.86 acre"
+    ],
+    "arn_text": "40 08 000 150 01000",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,770,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/05/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 32",
+      "rt_id": "RT195900"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "206 VICTORIA ST W",
+    "postcode": "N0M 1S2",
+    "municipality": "S. Huron",
+    "region": "Huron County",
+    "date": "12/05/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.86",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "41237-0024",
+    "rollno": "40 08 000 150 01000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "206 VICTORIA ST W"
+    ],
+    "city_region": "S. Huron : Huron County",
+    "date_text": "05 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1204960 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "T&T Realty Holdings Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

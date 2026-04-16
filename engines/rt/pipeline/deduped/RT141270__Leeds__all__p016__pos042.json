@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT141270",
+  "source_folder": "Leeds/all/p016",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT141270",
+      "source_folder": "Leeds/all/p016",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p016/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "3374 CHURCHILL LINE"
+      ],
+      "city_region": "Petrolia : Lambton",
+      "date_text": "06 Mar 2019",
+      "price_text": "$2,900,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "N Noorloos Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tryntje Noorloos",
+        "2736 London Line",
+        "Sarnia, Ontario",
+        "N7T 7H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 4",
+      "Conc 2, Part Lot 4",
+      "As in Inst No L-782493",
+      "",
+      "PIN: 43115-0030",
+      "",
+      "149.27 acre"
+    ],
+    "arn_text": "38 35 340 010 00900",
+    "consideration_lines": [
+      "cash: $2,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $3,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/06/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "793 / 1916",
+      "rt_id": "RT141270"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "3374 CHURCHILL LINE",
+    "postcode": "N0N 1R0",
+    "municipality": "Petrolia",
+    "region": "Lambton",
+    "date": "03/06/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "149.27",
+    "consid": "2900000",
+    "cash": "2900000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43115-0030",
+    "rollno": "38 35 340 010 00900"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "3374 CHURCHILL LINE"
+    ],
+    "city_region": "Petrolia : Lambton",
+    "date_text": "06 Mar 2019",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "N Noorloos Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$2,900,000"
+  }
+}

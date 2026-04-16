@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT70236",
+  "source_folder": "Kitchener-Waterloo/retail/p010",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70236",
+      "source_folder": "Kitchener-Waterloo/retail/p010",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p010/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "1401 KING ST N"
+      ],
+      "city_region": "Woolwich : Kitchener-Waterloo",
+      "date_text": "08 Jan 2010",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1005555 Ontario Ltd     519-669-8047"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marion Martin",
+        "35 Nightingale Cres",
+        "Elmira, Ontario",
+        "N3B 1B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "St Jacobs Countryside Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marcus Shantz",
+        "1386 King St N",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1549, Lot 51",
+      "Except:",
+      "Plan 58R-8726, Parts 1-3",
+      "",
+      "PIN: 22235-0091",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "30 29 020 003 15600",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1005555 Ontario Ltd",
+      "principal: $550,000   rate: 6.25% per annum",
+      "registered: 01/08/2010   due: 01/08/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT702/RT70236/0123_132929.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT702/RT70236/0123_132954.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT702/RT70236/0123_133007.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT702/RT70236/air1.jpg",
+        "/assets/files/RT7/RT702/RT70236/air2.jpg",
+        "/assets/files/RT7/RT702/RT70236/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "478 / 752",
+      "rt_id": "RT70236"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "1401 KING ST N",
+    "postcode": "",
+    "municipality": "Woolwich",
+    "region": "Kitchener-Waterloo",
+    "date": "01/08/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "22235-0091",
+    "rollno": "30 29 020 003 15600"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "1401 KING ST N"
+    ],
+    "city_region": "Woolwich : Kitchener-Waterloo",
+    "date_text": "08 Jan 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1005555 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "St Jacobs Countryside Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT63278",
+  "source_folder": "Elgin_County/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63278",
+      "source_folder": "Elgin_County/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Elgin_County/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "101 EDWARD ST"
+      ],
+      "city_region": "St. Thomas : Elgin County",
+      "date_text": "28 Jul 2008",
+      "price_text": "$3,108,580",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Elgin Co-Operative Services"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Duncan McCallum",
+        "PO Box 39",
+        "St Thomas, Ontario",
+        "N5P 3T5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4246551 Canada Inc     514-599-5100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Lacroix",
+        "Rona Inc",
+        "220 Chemin du Tremblay",
+        "Boucherville, Quebec",
+        "J4B 8H7"
+      ]
+    },
+    "description_lines": [
+      "Rona Store - 50,000 sf @ $62"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 6",
+      "Plan 11R-4714, Parts 1-11, 15-19",
+      "Except:",
+      "Plan 11R-5920",
+      "",
+      "PIN: 35187-0052 +",
+      "",
+      "6.00 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,108,580     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $3,108,580   rate: 6.0% per annum",
+      "registered: 07/28/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT632/RT63278/0817_101121.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT632/RT63278/0817_101153.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 46",
+      "rt_id": "RT63278"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "101 EDWARD ST",
+    "postcode": "N5P 1Y8",
+    "municipality": "St. Thomas",
+    "region": "Elgin County",
+    "date": "07/28/2008",
+    "desc": "Rona Store - 50,000 sf @ $62",
+    "bldg": "50,000 sf",
+    "acreage": "6",
+    "consid": "3108580",
+    "cash": "3108580",
+    "debt": "",
+    "note": "",
+    "pin": "35187-0052+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "101 EDWARD ST"
+    ],
+    "city_region": "St. Thomas : Elgin County",
+    "date_text": "28 Jul 2008",
+    "note": "",
+    "description": "Rona Store - 50,000 sf @ $62",
+    "seller_lines": [
+      "Elgin Co-Operative Services"
+    ],
+    "buyer_lines": [
+      "4246551 Canada Inc"
+    ],
+    "price_text": "$3,108,580"
+  }
+}

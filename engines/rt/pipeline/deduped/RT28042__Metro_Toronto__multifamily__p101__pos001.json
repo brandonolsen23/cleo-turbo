@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT28042",
+  "source_folder": "Metro_Toronto/multifamily/p101",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28042",
+      "source_folder": "Metro_Toronto/multifamily/p101",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p101/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "118 BEDFORD RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Dec 2002",
+      "price_text": "$760,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Paul Mitsou",
+        "Helen Jordanou"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "20 Bickerton Cres",
+        "Toronto, Ontario",
+        "M2J 3T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mary Bush"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "241 Borden St",
+        "Toronto, Ontario",
+        "M5S 2N5"
+      ]
+    },
+    "description_lines": [
+      "MultiPlex"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-6, Part Lot 128"
+    ],
+    "arn_text": "19 04 052 190 03900",
+    "consideration_lines": [
+      "cash: $760,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT280/RT28042/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5002 / 6031",
+      "rt_id": "RT28042"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "118 BEDFORD RD",
+    "postcode": "M5R 2K2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/03/2002",
+    "desc": "MultiPlex",
+    "bldg": "",
+    "acreage": "",
+    "consid": "760000",
+    "cash": "760000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 190 03900"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "118 BEDFORD RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Dec 2002",
+    "note": "",
+    "description": "MultiPlex",
+    "seller_lines": [
+      "Paul Mitsou",
+      "Helen Jordanou"
+    ],
+    "buyer_lines": [
+      "Mary Bush"
+    ],
+    "price_text": "$760,000"
+  }
+}

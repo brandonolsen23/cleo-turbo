@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT194469",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194469",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "40 LANCASTER ST W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "16 Sep 2025",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Zukaquatics Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Sampson",
+        "40 Lancaster St W",
+        "Kitchener, Ontario",
+        "N2H 4B9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 82,",
+      "Lot 7 & Part Lots 8 & 9",
+      "Part Park Lot A",
+      "As in Inst No 621807",
+      "",
+      "PIN: 22307-0066",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "30 12 010 013 11500",
+    "consideration_lines": [
+      "cash: $40,000     assumed/vtb debt: $1,660,000",
+      "",
+      "Named Individual(s)",
+      "principal: $1,660,000   rate: 5.0% per annum.",
+      "registered: 09/12/2025   due: 09/16/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1944/RT194469/0117_144528.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1944/RT194469/0117_144535.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1944/RT194469/0117_144623.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1944/RT194469/0117_144624.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 752",
+      "rt_id": "RT194469"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "40 LANCASTER ST W",
+    "postcode": "N2H 4S9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "09/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "1700000",
+    "cash": "40000",
+    "debt": "1660000",
+    "note": "",
+    "pin": "22307-0066",
+    "rollno": "30 12 010 013 11500"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "40 LANCASTER ST W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "16 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Zukaquatics Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

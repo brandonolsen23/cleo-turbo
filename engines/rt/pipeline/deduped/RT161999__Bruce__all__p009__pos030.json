@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT161999",
+  "source_folder": "Bruce/all/p009",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT161999",
+      "source_folder": "Bruce/all/p009",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/all/p009/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "274 BRUCE RD 2"
+      ],
+      "city_region": "Brockton : Bruce",
+      "date_text": "12 Jul 2021",
+      "price_text": "$1,800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Whyland Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bradley Whytock",
+        "274 Bruce Rd 2, RR 4",
+        "Walkerton, Ontario",
+        "N0G 2V0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - NDR,",
+      "Part Lots 12 & 13",
+      "As in Inst No R-208410",
+      "",
+      "PIN: 33197-0051",
+      "",
+      "100.30 acre"
+    ],
+    "arn_text": "41 04 340 001 12500",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $3,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/12/2021   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "431 / 1185",
+      "rt_id": "RT161999"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "274 BRUCE RD 2",
+    "postcode": "N0G 2V0",
+    "municipality": "Brockton",
+    "region": "Bruce",
+    "date": "07/12/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.3",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "33197-0051",
+    "rollno": "41 04 340 001 12500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "274 BRUCE RD 2"
+    ],
+    "city_region": "Brockton : Bruce",
+    "date_text": "12 Jul 2021",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Whyland Farms Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

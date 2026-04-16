@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT45941",
+  "source_folder": "Ottawa-Carleton/retail/p017",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45941",
+      "source_folder": "Ottawa-Carleton/retail/p017",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p017/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "2335 ST LAURENT BLVD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "13 Dec 2005",
+      "price_text": "$1,999,990",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dahavland Capital Corp     613-829-5576"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Appotive",
+        "1493 Richmond Rd, 2nd Flr",
+        "Ottawa, Ontario",
+        "K2B 6R9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Ottawa Islamic Centre and Assalam Mosque"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ahmed Hassan",
+        "2335 St Laurent Blvd",
+        "Ottawa, Ontario",
+        "K1G 5G6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5  RF, Part Lot 1",
+      "Plan 5R-8932, Part 4",
+      "",
+      "2.15 acre"
+    ],
+    "arn_text": "06 14 116 506 01032",
+    "consideration_lines": [
+      "cash: $1,999,990     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT459/RT45941/photo.jpg"
+    },
+    "footer": {
+      "page_position": "841 / 1141",
+      "rt_id": "RT45941"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "2335 ST LAURENT BLVD",
+    "postcode": "K1G 5G6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/13/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.15",
+    "consid": "1999990",
+    "cash": "1999990",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 116 506 01032"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "2335 ST LAURENT BLVD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "13 Dec 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Dahavland Capital Corp"
+    ],
+    "buyer_lines": [
+      "The Ottawa Islamic Centre and Assalam Mosque"
+    ],
+    "price_text": "$1,999,990"
+  }
+}

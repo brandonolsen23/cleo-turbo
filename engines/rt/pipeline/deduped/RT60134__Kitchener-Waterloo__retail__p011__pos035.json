@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT60134",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60134",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "12 UNIVERSITY AVE E"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "21 Jan 2008",
+      "price_text": "$975,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Nelson Kraus Holdings Ltd     519-885-3864"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nelson Kraus",
+        "263 Anita Ct",
+        "Waterloo, Ontario",
+        "N2K 2R4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,200 sf @ $305"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Subdivision Lot 13",
+      "Part Lot 70",
+      "Plan 58R-11634, Part 2",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "30 16 013 800 00400",
+    "consideration_lines": [
+      "cash: $975,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "JJ Barnicke Whitney Ltd: John Markou, Christopher Coupal & Daniel Erb, 519-746-6300"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT601/RT60134/0321_124412.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT601/RT60134/0321_124509.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT601/RT60134/0321_124623.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT601/RT60134/0321_124624.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT601/RT60134/air1.jpg",
+        "/assets/files/RT6/RT601/RT60134/air2.jpg",
+        "/assets/files/RT6/RT601/RT60134/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "536 / 752",
+      "rt_id": "RT60134"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "12 UNIVERSITY AVE E",
+    "postcode": "N2J 2V7",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "01/21/2008",
+    "desc": "Retail Bldg - 1 storey; 3,200 sf @ $305",
+    "bldg": "3,200 sf",
+    "acreage": ".12",
+    "consid": "975000",
+    "cash": "975000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 013 800 00400"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "12 UNIVERSITY AVE E"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "21 Jan 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3,200 sf @ $305",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Nelson Kraus Holdings Ltd"
+    ],
+    "price_text": "$975,000"
+  }
+}

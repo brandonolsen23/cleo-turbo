@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT25192",
+  "source_folder": "Kitchener-Waterloo/multifamily/p027",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25192",
+      "source_folder": "Kitchener-Waterloo/multifamily/p027",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p027/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "35 MOWAT BLVD"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Mar 2002",
+      "price_text": "$926,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Francisco & Maria Marchado"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "512 Buckingham Blvd",
+        "Waterloo, Ontario",
+        "N2T 2T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Badenhurst-Mowat Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Daniel Drimmer",
+        "302 The East Mall, Ste 101",
+        "Toronto, Ontario",
+        "M9B 6C7"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 17 units @ $54,471"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1242, Block J",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "30 12 040 036 20700",
+    "consideration_lines": [
+      "cash: $926,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1302 / 1449",
+      "rt_id": "RT25192"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "35 MOWAT BLVD",
+    "postcode": "N2E 1J1",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/01/2002",
+    "desc": "Apartment Bldg - 3 storey; 17 units @ $54,471",
+    "bldg": "17 units",
+    "acreage": ".6",
+    "consid": "926000",
+    "cash": "926000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 036 20700"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "35 MOWAT BLVD"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Mar 2002",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 17 units @ $54,471",
+    "seller_lines": [
+      "Francisco & Maria Marchado"
+    ],
+    "buyer_lines": [
+      "Badenhurst-Mowat Ltd"
+    ],
+    "price_text": "$926,000"
+  }
+}

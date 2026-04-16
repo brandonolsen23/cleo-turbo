@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT188782",
+  "source_folder": "Halton_Region/retail/p002",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188782",
+      "source_folder": "Halton_Region/retail/p002",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p002/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "2450 OLD BRONTE RD",
+        "UNIT E"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "27 Nov 2024",
+      "price_text": "$1,950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Zancor Oakville Ltd     905-738-7010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "221 North Rivermede Rd",
+        "Vaughan, Ontario",
+        "L4K 3N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000832042 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yi He",
+        "2450 Old Bronte Rd, Unit E",
+        "Oakville, Ontario",
+        "L6M 5P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 786",
+      "Level 1, Units 5-7",
+      "",
+      "PIN: 26088-0005 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,950,000   rate: Prime plus 6.0% per annum.",
+      "registered: 11/27/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121227.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121231.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121232.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121405.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121410.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121426.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121501.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188782/1207_121506.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "61 / 613",
+      "rt_id": "RT188782"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "2450 OLD BRONTE RD, UNIT E",
+    "postcode": "L6M 5P6",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "11/27/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1950000",
+    "cash": "1950000",
+    "debt": "",
+    "note": "",
+    "pin": "26088-0005+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "2450 OLD BRONTE RD",
+      "UNIT E"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "27 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Zancor Oakville Ltd"
+    ],
+    "buyer_lines": [
+      "1000832042 Ontario Ltd"
+    ],
+    "price_text": "$1,950,000"
+  }
+}

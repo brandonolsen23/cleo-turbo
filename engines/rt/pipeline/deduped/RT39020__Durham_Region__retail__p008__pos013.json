@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT39020",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39020",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "2200 BROCK RD"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "01 Dec 2004",
+      "price_text": "$5,167,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tritav Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nick Tavernese",
+        "16655 Yonge St, Unit 28",
+        "Newmarket, Ontario",
+        "L3X 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1460602 Ontario Ltd     416-438-4730"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mike Eminovski",
+        "48 Torrance Rd",
+        "Toronto, Ontario",
+        "M1J 2J4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 15 units 50,870 sf @ $102"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40M-1380, Block 128",
+      "",
+      "5.12 acre"
+    ],
+    "arn_text": "18 01 020 016 12967",
+    "consideration_lines": [
+      "cash: $5,167,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Century 21 Leading Edge: Tasis Gianoukakis, 416-571-9191"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT390/RT39020/photo.jpg"
+    },
+    "footer": {
+      "page_position": "364 / 506",
+      "rt_id": "RT39020"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "2200 BROCK RD",
+    "postcode": "L1X 2R2",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "12/01/2004",
+    "desc": "Retail Plaza - 1 storey; 15 units 50,870 sf @ $102",
+    "bldg": "50,870 sf",
+    "acreage": "5.12",
+    "consid": "5167500",
+    "cash": "5167500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 01 020 016 12967"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "2200 BROCK RD"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "01 Dec 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 15 units 50,870 sf @ $102",
+    "seller_lines": [
+      "Tritav Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1460602 Ontario Ltd"
+    ],
+    "price_text": "$5,167,500"
+  }
+}

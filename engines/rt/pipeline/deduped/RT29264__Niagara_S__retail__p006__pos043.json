@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT29264",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29264",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "1376 HAIST ST"
+      ],
+      "city_region": "Pelham : Niagara S",
+      "date_text": "28 Feb 2003",
+      "price_text": "$580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Bikky Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jatinder Hundal",
+        "6889 2nd Line W",
+        "Mississauga, Ontario",
+        "L5W 1M8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-2095, Part 1",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "27 32 020 010 03900",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT292/RT29264/photo.jpg"
+    },
+    "footer": {
+      "page_position": "294 / 324",
+      "rt_id": "RT29264"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "1376 HAIST ST",
+    "postcode": "",
+    "municipality": "Pelham",
+    "region": "Niagara S",
+    "date": "02/28/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 32 020 010 03900"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "1376 HAIST ST"
+    ],
+    "city_region": "Pelham : Niagara S",
+    "date_text": "28 Feb 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Bikky Enterprises Ltd"
+    ],
+    "price_text": "$580,000"
+  }
+}

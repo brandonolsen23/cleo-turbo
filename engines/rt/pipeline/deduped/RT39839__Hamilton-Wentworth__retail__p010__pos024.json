@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT39839",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39839",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "198 BARTON ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "20 Jan 2005",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sandhu Gas + Go Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hassan Sbeiti",
+        "1104 Fennel Ave E",
+        "Hamilton, Ontario",
+        "L8T 1R9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "DK's Gas Bar Inc     905-777-9990"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "198 Barton St W",
+        "Hamilton, Ontario",
+        "L8R 2H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 119, Block F",
+      "Lot 22, N/S Barton St",
+      "Lot 1 & Part Lot 2, E/S Hess St",
+      "As in Inst No VM-221252",
+      "Except:",
+      "Plan 62R-12241, Part 1",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "25 18 020 125 56360",
+    "consideration_lines": [
+      "cash: $274,599     assumed/vtb debt: $520,341"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT398/RT39839/photo.jpg"
+    },
+    "footer": {
+      "page_position": "475 / 616",
+      "rt_id": "RT39839"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "198 BARTON ST W",
+    "postcode": "L8R 2H4",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "01/20/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "825000",
+    "cash": "274599",
+    "debt": "520341",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 020 125 56360"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "198 BARTON ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "20 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sandhu Gas + Go Inc"
+    ],
+    "buyer_lines": [
+      "DK's Gas Bar Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

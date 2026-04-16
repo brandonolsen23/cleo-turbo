@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT25282",
+  "source_folder": "Metro_Toronto/multifamily/p104",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25282",
+      "source_folder": "Metro_Toronto/multifamily/p104",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p104/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "24 CLIFTON RD",
+        "141 INGLEWOOD DR"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 May 2002",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dillon Kenney",
+        "Garry Campbell     416-487-7714"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "141 Inglewood Dr",
+        "Toronto, Ontario",
+        "M4T 1H6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Marguerite Florsham"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "24 Clifton Rd",
+        "Toronto, Ontario",
+        "M4T 2E6"
+      ]
+    },
+    "description_lines": [
+      "Duplex - 3 storey; 2 units @ $375,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 895, Part Lot 276",
+      "As in Inst No CT-646247"
+    ],
+    "arn_text": "19 04 102 270 00100",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5182 / 6031",
+      "rt_id": "RT25282"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "24 CLIFTON RD, 141 INGLEWOOD DR",
+    "postcode": "M4T 2E6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/29/2002",
+    "desc": "Duplex - 3 storey; 2 units @ $375,000",
+    "bldg": "2 units",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 102 270 00100"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "24 CLIFTON RD",
+      "141 INGLEWOOD DR"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 May 2002",
+    "note": "",
+    "description": "Duplex - 3 storey; 2 units @ $375,000",
+    "seller_lines": [
+      "Dillon Kenney",
+      "Garry Campbell"
+    ],
+    "buyer_lines": [
+      "Marguerite Florsham"
+    ],
+    "price_text": "$750,000"
+  }
+}

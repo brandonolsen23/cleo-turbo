@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24521",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24521",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "136 HOLLAND ST E"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "22 Feb 2002",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "G. Sekhon Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gurdin Singh Sekhon",
+        "6-295 Queen St E, Ste 222",
+        "Brampton, Ontario",
+        "L6W 4S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bradford Plaza Holdings Inc     416-967-0402"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Leslie Black",
+        "Dalewood Economy Ltd",
+        "360 Bloor St W, Ste 510",
+        "Toronto, Ontario",
+        "M5S 1X1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 8 units 13,479 sf @ $115"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-7814, Part 1",
+      "",
+      "0.87 acre"
+    ],
+    "arn_text": "43 12 010 005 07400",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT245/RT24521/photo.jpg"
+    },
+    "footer": {
+      "page_position": "645 / 712",
+      "rt_id": "RT24521"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "136 HOLLAND ST E",
+    "postcode": "L3Z 2A7",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "02/22/2002",
+    "desc": "Retail Plaza - 1 storey; 8 units 13,479 sf @ $115",
+    "bldg": "13,479 sf",
+    "acreage": ".87",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 12 010 005 07400"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "136 HOLLAND ST E"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "22 Feb 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 8 units 13,479 sf @ $115",
+    "seller_lines": [
+      "G. Sekhon Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Bradford Plaza Holdings Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT26308",
+  "source_folder": "Metro_Toronto/retail/p084",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26308",
+      "source_folder": "Metro_Toronto/retail/p084",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p084/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "1500 WOODBINE AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "01 Aug 2002",
+      "price_text": "$4,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Assurance Company of Canada     416-408-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Dir: Luke Zych",
+        "225 King Street West, 11th Floor",
+        "Toronto, Ontario",
+        "M5V 3C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "M. Ison Ltd     416-423-2300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Toronto Honda",
+        "2300 Danforth Ave",
+        "Toronto, Ontario",
+        "M4C 1K6"
+      ]
+    },
+    "description_lines": [
+      "Dominion Supermarket - 20,137 sf on 2.57 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 310, Part Lot 10",
+      "As in EY-86359",
+      "",
+      "2.57 acre"
+    ],
+    "arn_text": "19 06 022 210 01900",
+    "consideration_lines": [
+      "cash: $4,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4165 / 4952",
+      "rt_id": "RT26308"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "1500 WOODBINE AVE",
+    "postcode": "M4C 4G9",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "08/01/2002",
+    "desc": "Dominion Supermarket - 20,137 sf on 2.57 Ac",
+    "bldg": "20,137 sf",
+    "acreage": "2.57",
+    "consid": "4200000",
+    "cash": "4200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 022 210 01900"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "1500 WOODBINE AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "01 Aug 2002",
+    "note": "",
+    "description": "Dominion Supermarket - 20,137 sf on 2.57 Ac",
+    "seller_lines": [
+      "Sun Life Assurance Company of Canada"
+    ],
+    "buyer_lines": [
+      "M. Ison Ltd"
+    ],
+    "price_text": "$4,200,000"
+  }
+}

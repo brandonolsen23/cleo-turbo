@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT185038",
+  "source_folder": "Middlesex_County/retail/p002",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185038",
+      "source_folder": "Middlesex_County/retail/p002",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p002/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "2090 DUNDAS ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "31 May 2024",
+      "price_text": "$4,600,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Copp Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "45 York St",
+        "London, Ontario",
+        "N6A 1A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Copp Realty Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steven Copp",
+        "45 York St",
+        "London, Ontario",
+        "N6A 1A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 765, Part Lot 1",
+      "As in Inst No 715090",
+      "",
+      "PIN: 08127-0094",
+      "",
+      "2.29 acre"
+    ],
+    "arn_text": "39 36 030 320 07501",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $4,000,000",
+      "",
+      "chargee: Copp Ltd",
+      "principal: $4,000,000   rate: Due in annual payments of $1,000,000, with interest on any over due payments at CIBC prime plus 0.5% per annum.",
+      "registered: 05/31/2024   due: 06/01/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "82 / 686",
+      "rt_id": "RT185038"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "2090 DUNDAS ST",
+    "postcode": "N5V 1R2",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "05/31/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.29",
+    "consid": "4600000",
+    "cash": "600000",
+    "debt": "4000000",
+    "note": "Related Parties",
+    "pin": "08127-0094",
+    "rollno": "39 36 030 320 07501"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "2090 DUNDAS ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "31 May 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Copp Ltd"
+    ],
+    "buyer_lines": [
+      "Copp Realty Corp"
+    ],
+    "price_text": "$4,600,000"
+  }
+}

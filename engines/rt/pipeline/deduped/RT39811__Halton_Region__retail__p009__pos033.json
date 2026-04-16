@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT39811",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39811",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "459 MAIN ST E"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "20 Jan 2005",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Main Centre Ltd",
+        "Main Street Centre LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wolf von Teichman",
+        "PO Box 1033",
+        "Milton, Ontario",
+        "L9T 4B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2056603 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gloria Riddall",
+        "459 Main St E",
+        "Milton, Ontario",
+        "L9T 1R1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NS, Part Lot 14",
+      "As in Inst Nos 663012 & 756674",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "24 09 010 003 00300",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $200,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT398/RT39811/air1.jpg",
+        "/assets/files/RT3/RT398/RT39811/air2.jpg",
+        "/assets/files/RT3/RT398/RT39811/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT398/RT39811/photo.jpg"
+    },
+    "footer": {
+      "page_position": "434 / 613",
+      "rt_id": "RT39811"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "459 MAIN ST E",
+    "postcode": "L9T 1R1",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "01/20/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".85",
+    "consid": "2000000",
+    "cash": "1800000",
+    "debt": "200000",
+    "note": "",
+    "pin": "",
+    "rollno": "24 09 010 003 00300"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "459 MAIN ST E"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "20 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Main Centre Ltd",
+      "Main Street Centre LP"
+    ],
+    "buyer_lines": [
+      "2056603 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

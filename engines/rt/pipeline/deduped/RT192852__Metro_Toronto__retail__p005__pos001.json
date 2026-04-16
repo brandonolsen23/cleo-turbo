@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT192852",
+  "source_folder": "Metro_Toronto/retail/p005",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192852",
+      "source_folder": "Metro_Toronto/retail/p005",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p005/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "309 AUGUSTA AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Jun 2025",
+      "price_text": "$2,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Norman Trachter & Company Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Rubenstein, Siegel",
+        "1210 Sheppard Ave E, Ste 701",
+        "North York, Ontario",
+        "M2K 1E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001216787 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert D'Leone",
+        "24 Four Oaks Gate",
+        "Toronto, Ontario",
+        "M4J 2X2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-71,",
+      "Lot 7 & Part Lot 8, E/S Grosvenor St",
+      "As in Inst No WA-80606",
+      "",
+      "PIN: 21235-0067",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 065 740 01000",
+    "consideration_lines": [
+      "cash: $2,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192852/0701_081243.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192852/0701_081251.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192852/0701_081302.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192852/0701_081306.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "202 / 4952",
+      "rt_id": "RT192852"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "309 AUGUSTA AVE",
+    "postcode": "M5T 2M2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "2600000",
+    "cash": "2600000",
+    "debt": "",
+    "note": "",
+    "pin": "21235-0067",
+    "rollno": "19 04 065 740 01000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "309 AUGUSTA AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Norman Trachter & Company Ltd"
+    ],
+    "buyer_lines": [
+      "1001216787 Ontario Inc"
+    ],
+    "price_text": "$2,600,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT176720",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176720",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "165 FISHER MILLS RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "30 Mar 2023",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000477850 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ahmad Amiri",
+        "165 Fisher Mills Rd",
+        "Cambridge, Ontario",
+        "N3C 1E1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1398, Block B",
+      "",
+      "PIN: 22631-0249",
+      "",
+      "0.62 acre"
+    ],
+    "arn_text": "30 06 140 001 26206",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176720/0415_153257.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176720/0415_153330.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176720/0415_153348.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176720/0415_153425.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176720/0415_153454.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176720/0415_153505.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "135 / 752",
+      "rt_id": "RT176720"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "165 FISHER MILLS RD",
+    "postcode": "N3C 1E1",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "03/30/2023",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".62",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "22631-0249",
+    "rollno": "30 06 140 001 26206"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "165 FISHER MILLS RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "30 Mar 2023",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000477850 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

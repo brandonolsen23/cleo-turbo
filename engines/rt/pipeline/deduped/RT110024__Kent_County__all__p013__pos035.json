@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT110024",
+  "source_folder": "Kent_County/all/p013",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT110024",
+      "source_folder": "Kent_County/all/p013",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/all/p013/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "988A  LIPPERT LANE"
+      ],
+      "city_region": "Bancroft : Hastings County",
+      "date_text": "24 Jun 2015",
+      "price_text": "$635,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Coe Island Resources Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Beauregard Opperman",
+        "51 Wolfrey Ave",
+        "Toronto, Ontario",
+        "M4K 1K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 19",
+      "Plan 21R-21328, Part 1",
+      "Plan 21R-20784, Parts 7 & 8",
+      "",
+      "PIN: 40059-0156",
+      "",
+      "5.67 acre"
+    ],
+    "arn_text": "12 58 000 015 04250",
+    "consideration_lines": [
+      "cash: $635,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $508,000   rate: VRM base rate minus 0.6% per annum.",
+      "registered: 06/24/2015   due: 06/01/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "636 / 932",
+      "rt_id": "RT110024"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "988A  LIPPERT LANE",
+    "postcode": "K0L 1C0",
+    "municipality": "Bancroft",
+    "region": "Hastings County",
+    "date": "06/24/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.67",
+    "consid": "635000",
+    "cash": "635000",
+    "debt": "",
+    "note": "",
+    "pin": "40059-0156",
+    "rollno": "12 58 000 015 04250"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "988A  LIPPERT LANE"
+    ],
+    "city_region": "Bancroft : Hastings County",
+    "date_text": "24 Jun 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Coe Island Resources Corp"
+    ],
+    "price_text": "$635,000"
+  }
+}

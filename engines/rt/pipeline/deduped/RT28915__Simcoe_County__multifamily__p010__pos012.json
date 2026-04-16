@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT28915",
+  "source_folder": "Simcoe_County/multifamily/p010",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28915",
+      "source_folder": "Simcoe_County/multifamily/p010",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/multifamily/p010/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "252 MISSISSAGA ST W"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "30 Jan 2003",
+      "price_text": "$695,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Havenbrook Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Anobile",
+        "65 Glacier Ct",
+        "Maple, Ontario",
+        "L6A 2V3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 16 units @ $43,438"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 392",
+      "Part Lots 1 & 2, N/S Mississauga St W",
+      "As in Inst No RO-767612",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "43 52 030 303 00100",
+    "consideration_lines": [
+      "cash: $695,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "463 / 530",
+      "rt_id": "RT28915"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "252 MISSISSAGA ST W",
+    "postcode": "",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "01/30/2003",
+    "desc": "Apartment Bldg - 16 units @ $43,438",
+    "bldg": "16 units",
+    "acreage": ".27",
+    "consid": "695000",
+    "cash": "695000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 52 030 303 00100"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "252 MISSISSAGA ST W"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "30 Jan 2003",
+    "note": "",
+    "description": "Apartment Bldg - 16 units @ $43,438",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Havenbrook Holdings Inc"
+    ],
+    "price_text": "$695,000"
+  }
+}

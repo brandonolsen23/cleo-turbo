@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT45404",
+  "source_folder": "Middlesex_County/retail/p011",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45404",
+      "source_folder": "Middlesex_County/retail/p011",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p011/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 BASELINE RD E",
+        "7 -11 BASELINE RD E"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "14 Nov 2005",
+      "price_text": "$11,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "4173015 Canada Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "RioCan REIT",
+        "The Exchange Tower",
+        "130 King St W, Ste 700]",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Wharncliffe Centre London Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vish Brijbassi",
+        "5001 Yonge St, Ste 301",
+        "Toronto, Ontario",
+        "M2N 6P6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-9095, Part 1",
+      "",
+      "6.88 acre"
+    ],
+    "arn_text": "39 36 060 520 07000",
+    "consideration_lines": [
+      "cash: $11,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT454/RT45404/photo.jpg"
+    },
+    "footer": {
+      "page_position": "507 / 686",
+      "rt_id": "RT45404"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "1 BASELINE RD E, 7 -11 BASELINE RD E",
+    "postcode": "",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "11/14/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "6.88",
+    "consid": "11400000",
+    "cash": "11400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 520 07000"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "1 BASELINE RD E",
+      "7 -11 BASELINE RD E"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "14 Nov 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "4173015 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Wharncliffe Centre London Inc"
+    ],
+    "price_text": "$11,400,000"
+  }
+}

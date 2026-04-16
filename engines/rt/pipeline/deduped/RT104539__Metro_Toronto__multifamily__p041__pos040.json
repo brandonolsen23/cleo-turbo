@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT104539",
+  "source_folder": "Metro_Toronto/multifamily/p041",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104539",
+      "source_folder": "Metro_Toronto/multifamily/p041",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p041/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "77 DAVISVILLE AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Nov 2014",
+      "price_text": "$80,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Abraham J Green Ltd     416-481-7002"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Green",
+        "64 Merton St",
+        "Toronto, Ontario",
+        "M4S 1A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Greenrock Investments",
+        "(77 Davisville Avenue) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Green",
+        "c/o Greenrock Property Management Ltd",
+        "64 Merton St",
+        "Toronto, Ontario",
+        "M4S 1A1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 799",
+      "Lots 6-9, 49-53",
+      "Part Lots 3-5, 10 & 48",
+      "Plan 66R-5551, Part 1",
+      "Except:",
+      "Plan 66R-27599, Part 1",
+      "",
+      "PIN: 21124-0086",
+      "",
+      "1.94 acre"
+    ],
+    "arn_text": "19 04 103 070 01400",
+    "consideration_lines": [
+      "cash: $80,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Sun Life Assurance Company of Canada",
+      "principal: $50,049,950   rate: 3.76% per annum.",
+      "registered: 11/28/2014   due: 12/01/2034"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2041 / 6031",
+      "rt_id": "RT104539"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "77 DAVISVILLE AVE",
+    "postcode": "M4S 1G4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/28/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.94",
+    "consid": "80000000",
+    "cash": "80000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "21124-0086",
+    "rollno": "19 04 103 070 01400"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "77 DAVISVILLE AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Nov 2014",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Abraham J Green Ltd"
+    ],
+    "buyer_lines": [
+      "Greenrock Investments",
+      "(77 Davisville Avenue) Ltd"
+    ],
+    "price_text": "$80,000,000"
+  }
+}

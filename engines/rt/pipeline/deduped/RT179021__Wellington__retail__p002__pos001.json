@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT179021",
+  "source_folder": "Wellington/retail/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179021",
+      "source_folder": "Wellington/retail/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "648 YORK RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "30 Jun 2023",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2317289 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "17 Central St",
+        "Guelph, Ontario",
+        "N1H 4K4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Culinary Concepts Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sukhdev Jassal",
+        "648 York Rd",
+        "Guelph, Ontario",
+        "N1E 6A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Div C, Part Lot 2",
+      "As in Inst No RO-655085",
+      "",
+      "PIN: 71344-0085",
+      "",
+      "0.51 acre"
+    ],
+    "arn_text": "23 08 010 008 33100",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $940,950   rate: Prime plus 5.0% per annum.",
+      "registered: 06/30/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1790/RT179021/0930_150818.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1790/RT179021/0930_150905.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1790/RT179021/0930_150955.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1790/RT179021/0930_151016.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1790/RT179021/0930_151100.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1790/RT179021/0930_151131.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1790/RT179021/air1.jpg",
+        "/assets/files/RT17/RT1790/RT179021/air2.jpg",
+        "/assets/files/RT17/RT1790/RT179021/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 269",
+      "rt_id": "RT179021"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "648 YORK RD",
+    "postcode": "N1E 6A4",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "06/30/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".51",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "71344-0085",
+    "rollno": "23 08 010 008 33100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "648 YORK RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "30 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2317289 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Culinary Concepts Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

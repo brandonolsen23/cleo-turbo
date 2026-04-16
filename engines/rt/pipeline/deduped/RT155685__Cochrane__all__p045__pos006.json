@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT155685",
+  "source_folder": "Cochrane/all/p045",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT155685",
+      "source_folder": "Cochrane/all/p045",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p045/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "76 BRUYERE ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Oct 2020",
+      "price_text": "$1,070,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Jasmine Residence Inc     613-830-8062"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Belaid Aouni",
+        "2195 Sunmeadow St",
+        "Ottawa, Ontario",
+        "K4A 4W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 42482,",
+      "Part Lot 10, S/S Bruyere St",
+      "As in Inst No N-739034",
+      "",
+      "PIN: 04216-0043",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "06 14 020 801 41500",
+    "consideration_lines": [
+      "cash: $1,070,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $1,070,000   rate: Prime plus 10.0% per annum.",
+      "registered: 10/01/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2207 / 10920",
+      "rt_id": "RT155685"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "76 BRUYERE ST",
+    "postcode": "K1N 5C6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/01/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1070000",
+    "cash": "1070000",
+    "debt": "",
+    "note": "",
+    "pin": "04216-0043",
+    "rollno": "06 14 020 801 41500"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "76 BRUYERE ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Oct 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Jasmine Residence Inc"
+    ],
+    "price_text": "$1,070,000"
+  }
+}

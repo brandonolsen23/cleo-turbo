@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT26314",
+  "source_folder": "Metro_Toronto/retail/p084",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26314",
+      "source_folder": "Metro_Toronto/retail/p084",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p084/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "3466 DUNDAS ST W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "01 Aug 2002",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "983938 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Franky Ho",
+        "211 St Patrick St, Suite 701C",
+        "Toronto, Ontario",
+        "M5T 2Y9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1344930 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mohammed Rahaman",
+        "3466 Dundas St W",
+        "Toronto, Ontario"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 13,823 sf @ $76"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-12520, Parts 3 & 4",
+      "",
+      "1.18 acre"
+    ],
+    "arn_text": "19 14 083 010 00600",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $50,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4167 / 4952",
+      "rt_id": "RT26314"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "3466 DUNDAS ST W",
+    "postcode": "",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "08/01/2002",
+    "desc": "Retail Plaza - 1 storey; 13,823 sf @ $76",
+    "bldg": "13,823 sf",
+    "acreage": "1.18",
+    "consid": "1050000",
+    "cash": "1000000",
+    "debt": "50000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 083 010 00600"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "3466 DUNDAS ST W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "01 Aug 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 13,823 sf @ $76",
+    "seller_lines": [
+      "983938 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1344930 Ontario Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

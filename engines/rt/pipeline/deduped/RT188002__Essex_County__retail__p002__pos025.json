@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT188002",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188002",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "495 SANDWICH ST S"
+      ],
+      "city_region": "Amherstburg : Essex County",
+      "date_text": "25 Jul 2024",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Seven Star Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4 Colombo Ct",
+        "St George, Ontario",
+        "N0E 1N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kings Capital Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: P. Karthikeyan",
+        "910 Pavan St",
+        "Windsor, Ontario",
+        "N9G 2X5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Malden, Part Lot 4",
+      "Plan 12R-3805, Part 1",
+      "",
+      "PIN: 70568-0236",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "37 29 020 000 01600",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $800,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 07/25/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "76 / 460",
+      "rt_id": "RT188002"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "495 SANDWICH ST S",
+    "postcode": "N9V 3G5",
+    "municipality": "Amherstburg",
+    "region": "Essex County",
+    "date": "07/25/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "70568-0236",
+    "rollno": "37 29 020 000 01600"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "495 SANDWICH ST S"
+    ],
+    "city_region": "Amherstburg : Essex County",
+    "date_text": "25 Jul 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Seven Star Investments Inc"
+    ],
+    "buyer_lines": [
+      "Kings Capital Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

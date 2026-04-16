@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT43925",
+  "source_folder": "Metro_Toronto/all/p012",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43925",
+      "source_folder": "Metro_Toronto/all/p012",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/all/p012/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 3",
+        "PART LOT 2"
+      ],
+      "city_region": "Perth : Lanark County",
+      "date_text": "19 Aug 2005",
+      "price_text": "$647,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "A & B Browlee Investments Ltd     613-267-4921"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Avis Brownlee",
+        "Loeb's Perth",
+        "50 Wilson St W",
+        "Perth, Ontario",
+        "K7H 2N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Paul Straus",
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 2",
+      "Plan 27R-8672, Part 2"
+    ],
+    "arn_text": "09 19 919 010 11200",
+    "consideration_lines": [
+      "cash: $647,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "554 / 555",
+      "rt_id": "RT43925"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "CONC 3, PART LOT 2",
+    "postcode": "",
+    "municipality": "Perth",
+    "region": "Lanark County",
+    "date": "08/19/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "647000",
+    "cash": "647000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "09 19 919 010 11200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "CONC 3",
+      "PART LOT 2"
+    ],
+    "city_region": "Perth : Lanark County",
+    "date_text": "19 Aug 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "A & B Browlee Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "price_text": "$647,000"
+  }
+}

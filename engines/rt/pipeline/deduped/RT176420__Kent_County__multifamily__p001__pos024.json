@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT176420",
+  "source_folder": "Kent_County/multifamily/p001",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176420",
+      "source_folder": "Kent_County/multifamily/p001",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/multifamily/p001/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "5771 MIDDLE RD"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "21 Mar 2023",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "12332299 Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mayvia Morrison",
+        "4812 Holborn Rd",
+        "East Gwillimbury, Ontario",
+        "L0G 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 24R-3615, Part 1",
+      "",
+      "PIN: 00867-0176",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "36 11 000 006 07700",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $450,000   rate: 9.5% per annum.",
+      "registered: 03/21/0023   due: 03/20/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "25 / 114",
+      "rt_id": "RT176420"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "5771 MIDDLE RD",
+    "postcode": "N0P 1W0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "03/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "00867-0176",
+    "rollno": "36 11 000 006 07700"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "5771 MIDDLE RD"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "21 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "12332299 Canada Corp"
+    ],
+    "price_text": "$900,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT30601",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30601",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "THE ALBION CENTRE",
+        "1530 ALBION RD"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "03 Jun 2003",
+      "price_text": "$21,600,000",
+      "note": "Leasehold Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Shoppers World Co Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Trzanowski",
+        "1 University Ave, Ste 1500",
+        "Toronto, Ontario",
+        "M5J 2V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RIOKIM Holdings (Ontario) Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: RM Gelgoot",
+        "The Exchange Tower",
+        "Ste 700, PO Box 378",
+        "130 King St W",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Shopping Centre - 2 storey; 120 units 340,941 sf",
+      "",
+      "Lease expires in 2029."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-12687",
+      "18-10, 12-15, 17, 18, 20, 21,",
+      "24, 25, 28, 29, 32-34, 36",
+      "Plan 66R-11638",
+      "Parts 1-4"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT306/RT30601/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4002 / 4952",
+      "rt_id": "RT30601"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "THE ALBION CENTRE, 1530 ALBION RD",
+    "postcode": "M9V 1B4",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "06/03/2003",
+    "desc": "Shopping Centre - 2 storey; 120 units 340,941 sf",
+    "bldg": "340,911 sf",
+    "acreage": "",
+    "consid": "21600000",
+    "cash": "",
+    "debt": "",
+    "note": "Leasehold Interest",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "THE ALBION CENTRE",
+      "1530 ALBION RD"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "03 Jun 2003",
+    "note": "Leasehold Interest",
+    "description": "Shopping Centre - 2 storey; 120 units 340,941 sf",
+    "seller_lines": [
+      "Shoppers World Co Inc"
+    ],
+    "buyer_lines": [
+      "RIOKIM Holdings (Ontario) Inc"
+    ],
+    "price_text": "$21,600,000"
+  }
+}

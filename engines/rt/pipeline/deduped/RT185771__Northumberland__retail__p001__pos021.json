@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT185771",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185771",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "46 PRINCE EDWARD ST"
+      ],
+      "city_region": "Brighton : Northumberland",
+      "date_text": "21 Jun 2024",
+      "price_text": "$3,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1133253 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "21 Castle Ridge",
+        "Brighton, Ontario",
+        "K0K 1H0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000926089 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rupinder Dhaliwal",
+        "21 Donwoods Cres",
+        "Whitby, Ontario",
+        "L1R 0N1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 39R-11472, Part 1",
+      "Except:",
+      "Plan 39M-842",
+      "",
+      "PIN: 51160-0002",
+      "",
+      "0.71 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $322,894     assumed/vtb debt: $3,227,106",
+      "",
+      "chargee: 1133253 Ontario Ltd",
+      "principal: $3,227,106   rate: 6.50% per annum.",
+      "registered: 06/21/2024   due: 12/21/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093653.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093659.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093710.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093713.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093737.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093826.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093936a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093936b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1857/RT185771/1012_093952.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 93",
+      "rt_id": "RT185771"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "46 PRINCE EDWARD ST",
+    "postcode": "K0K 1H0",
+    "municipality": "Brighton",
+    "region": "Northumberland",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".71",
+    "consid": "3550000",
+    "cash": "322894",
+    "debt": "3227106",
+    "note": "",
+    "pin": "51160-0002",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "46 PRINCE EDWARD ST"
+    ],
+    "city_region": "Brighton : Northumberland",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1133253 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000926089 Ontario Inc"
+    ],
+    "price_text": "$3,550,000"
+  }
+}

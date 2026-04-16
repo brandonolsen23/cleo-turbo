@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT48485",
+  "source_folder": "Kitchener-Waterloo/multifamily/p022",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48485",
+      "source_folder": "Kitchener-Waterloo/multifamily/p022",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p022/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "399 QUEEN ST S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "19 Apr 2006",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1090448 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Morris Borenstein",
+        "RR 2",
+        "Breslau, Ontario",
+        "N0B 1M0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1678823 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sean O'Neill",
+        "399 Queen St S",
+        "Kitchener, Ontario",
+        "N2G 1W6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 397, Part Lot 5",
+      "As in Inst No 1230009",
+      "",
+      "0.61 acre"
+    ],
+    "arn_text": "30 12 040 003 07000",
+    "consideration_lines": [
+      "cash: $75,000     assumed/vtb debt: $700,000",
+      "",
+      "chargee: 1090448 Ontario Ltd",
+      "principal: $700,000   rate: 4.5% per annum",
+      "registered: 04/19/2006   due: 04/19/2007"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT484/RT48485/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1078 / 1449",
+      "rt_id": "RT48485"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "399 QUEEN ST S",
+    "postcode": "N2G 1W6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/19/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".61",
+    "consid": "775000",
+    "cash": "75000",
+    "debt": "700000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 003 07000"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "399 QUEEN ST S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "19 Apr 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1090448 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1678823 Ontario Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

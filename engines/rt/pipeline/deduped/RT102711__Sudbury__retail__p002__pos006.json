@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT102711",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT102711",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "135 DURHAM ST"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "03 Sep 2014",
+      "price_text": "$1,025,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Rapoy Realty (Sudbury) Ltd     705-674-5241"
+      ],
+      "trade_name": "Roy's Furniture",
+      "contact_lines": [
+        "Pres: Michel Roy"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1916415 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gurcharan Syan",
+        "376 Maki Ave",
+        "Sudbury, Ontario",
+        "P3E 2P2"
+      ]
+    },
+    "description_lines": [
+      "Roy's Furniture - 3 storey; 21,000 sf @ $49",
+      "",
+      "Built in 1923",
+      "",
+      "The property has been leased back to the vendor."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3-SA, Block A",
+      "Lot 35, Part Lots 34 & 35",
+      "As in Inst No S-73379 (2ndly)",
+      "",
+      "PIN: 73584-0087",
+      "",
+      "W side Durham St, S of Medina Lane",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "53 07 070 003 02000",
+    "consideration_lines": [
+      "cash: $1,025,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal LePage North Heritage: Robby Suthi, 705-688-0007",
+      "RE/MAX Crowne Realty: Drew Nesbitt, 705-691-5656"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "57 / 90",
+      "rt_id": "RT102711"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "135 DURHAM ST",
+    "postcode": "P3E 3M9",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "09/03/2014",
+    "desc": "Roy's Furniture - 3 storey; 21,000 sf @ $49",
+    "bldg": "21,000 sf",
+    "acreage": ".2",
+    "consid": "1025000",
+    "cash": "1025000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "73584-0087",
+    "rollno": "53 07 070 003 02000"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "135 DURHAM ST"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "03 Sep 2014",
+    "note": "Sale Leaseback",
+    "description": "Roy's Furniture - 3 storey; 21,000 sf @ $49",
+    "seller_lines": [
+      "Rapoy Realty (Sudbury) Ltd"
+    ],
+    "buyer_lines": [
+      "1916415 Ontario Ltd"
+    ],
+    "price_text": "$1,025,000"
+  }
+}

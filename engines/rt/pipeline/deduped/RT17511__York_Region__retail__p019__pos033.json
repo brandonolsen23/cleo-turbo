@@ -1,0 +1,141 @@
+{
+  "rt_id": "RT17511",
+  "source_folder": "York_Region/retail/p019",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17511",
+      "source_folder": "York_Region/retail/p019",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "10309 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 May 2000",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Estate of Peter Culotta",
+        "Marguerite & Victor Culotta, Trustees",
+        "Anthony F. Pirri"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Trustee: Marguerite Culotta",
+        "c/o 718 Wilson Ave, Ste 500",
+        "North York, Ontario",
+        "M3K 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 4,000 sf @ $138"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10030, Lot 25",
+      "Plan 10030, Block C",
+      "",
+      "E side 50m N of Dunlop St",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "19 38 020 010 81500",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,000,000   rate: 10.0% per annum.",
+      "registered: 01/25/2023   due: 02/25/2024",
+      "",
+      "chargee: 2153274 Ontario Inc",
+      "principal: $1,034,880   rate: 9.94% per annum.",
+      "registered: 01/25/2023   due: 01/24/2024",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $440,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/24/2023   due: on demand",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $1,000,000   rate: 6.79% per annum.",
+      "registered: 01/24/2023   due: 02/01/2026",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $1,344,000   rate: 25.0% per annum.",
+      "registered: 01/24/2023   due: on demand",
+      "",
+      "chargee: Kindred Credit Union Ltd",
+      "principal: $1,500,000   rate: 24.0% per annum.",
+      "registered: 01/26/2023   due: on demand",
+      "",
+      "chargee: The Bank of Montreal",
+      "principal: $1,400,000   rate: Prime plus 10.0% per annum.",
+      "registered: 06/30/2021   due: on demand"
+    ],
+    "broker_lines": [
+      "Philmax Realty: Don Conte, 905-940-8787"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT175/RT17511/photo.jpg"
+    },
+    "footer": {
+      "page_position": "934 / 984",
+      "rt_id": "RT17511"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "10309 YONGE ST",
+    "postcode": "L4C 3B9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "05/30/2000",
+    "desc": "Retail Bldg - 1 storey; 4,000 sf @ $138",
+    "bldg": "4,000 sf",
+    "acreage": ".23",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 020 010 81500"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "10309 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 May 2000",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 4,000 sf @ $138",
+    "seller_lines": [
+      "Estate of Peter Culotta",
+      "Marguerite & Victor Culotta, Trustees",
+      "Anthony F. Pirri"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$550,000"
+  }
+}

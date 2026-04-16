@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT197550",
+  "source_folder": "Kitchener-Waterloo/industrial/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197550",
+      "source_folder": "Kitchener-Waterloo/industrial/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/industrial/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "305 ARNOLD ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "06 Mar 2026",
+      "price_text": "$8,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "305 Arnold Street Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "305 Arnold St",
+        "Kitchener, Ontario",
+        "N2H 6G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Arnold Collective Ltd     519-208-9675"
+      ],
+      "trade_name": "Vive Development",
+      "contact_lines": [
+        "Attn: Stephen Litt",
+        "1 Queen St N, Ste 201",
+        "Kitchener, Ontario",
+        "N2H 2G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT - Subdivision of Lot  58",
+      "Part Lot 7",
+      "Plan 58R-3843, Part 8",
+      "",
+      "PIN: 22303-0076",
+      "",
+      "4.60 acre"
+    ],
+    "arn_text": "30 12 010 011 16800",
+    "consideration_lines": [
+      "cash: $8,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Aggregated Investments Inc",
+      "principal: $10,000,000   rate: 18.0% per annum.",
+      "registered: 03/06/2026   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $8,150,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/06/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 1343",
+      "rt_id": "RT197550"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "305 ARNOLD ST",
+    "postcode": "N2H 6G1",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/06/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.6",
+    "consid": "8000000",
+    "cash": "8000000",
+    "debt": "",
+    "note": "",
+    "pin": "22303-0076",
+    "rollno": "30 12 010 011 16800"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "305 ARNOLD ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "06 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "305 Arnold Street Inc"
+    ],
+    "buyer_lines": [
+      "The Arnold Collective Ltd"
+    ],
+    "price_text": "$8,000,000"
+  }
+}

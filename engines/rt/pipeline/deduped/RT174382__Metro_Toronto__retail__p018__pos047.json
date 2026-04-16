@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT174382",
+  "source_folder": "Metro_Toronto/retail/p018",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174382",
+      "source_folder": "Metro_Toronto/retail/p018",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p018/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "2801 KINGSTON RD",
+        "UNIT 7"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Dec 2022",
+      "price_text": "$1,077,030",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Skale - The Bluffs Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1000 Yonge St,",
+        "4th Floor, Suite 400",
+        "Toronto, Ontario",
+        "M4M 2K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Lalit Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Preeti Lalit",
+        "2801 Kingston Rd, Unit 7",
+        "Toronto, Ontario",
+        "M1M 1N1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2880",
+      "Level 1, Unit 7",
+      "",
+      "PIN: 76880-0007"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,077,030     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,076,880   rate: Prime minus 0.25% per annum.",
+      "registered: 12/23/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "898 / 4952",
+      "rt_id": "RT174382"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "2801 KINGSTON RD, UNIT 7",
+    "postcode": "M1M 1N1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/23/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1077030",
+    "cash": "1077030",
+    "debt": "",
+    "note": "",
+    "pin": "76880-0007",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "2801 KINGSTON RD",
+      "UNIT 7"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Dec 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Skale - The Bluffs Inc"
+    ],
+    "buyer_lines": [
+      "The Lalit Holdings Corp"
+    ],
+    "price_text": "$1,077,030"
+  }
+}

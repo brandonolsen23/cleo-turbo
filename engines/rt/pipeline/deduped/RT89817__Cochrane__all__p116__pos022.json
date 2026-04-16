@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT89817",
+  "source_folder": "Cochrane/all/p116",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89817",
+      "source_folder": "Cochrane/all/p116",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p116/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "PLAN 4M-1085",
+        "BLOCK 66"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "24 Dec 2012",
+      "price_text": "$900,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1384341 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Purchase",
+        "9094 Cavanagh Rd",
+        "Ashton, Ontario",
+        "K0A 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1332741 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Purchase",
+        "9094 Cavanagh Rd",
+        "Ashton, Ontario",
+        "K0A 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-1085, Block 66",
+      "",
+      "PIN: 04450-1172",
+      "",
+      "1.20 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $230,000     assumed/vtb debt: $670,000",
+      "",
+      "chargee: 1384341 Ontario Ltd",
+      "principal: $670,000   rate: BMO prime per annum",
+      "registered: 12/24/2012   due: 12/31/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5773 / 10920",
+      "rt_id": "RT89817"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "PLAN 4M-1085, BLOCK 66",
+    "postcode": "",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "12/24/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.2",
+    "consid": "900000",
+    "cash": "230000",
+    "debt": "670000",
+    "note": "Related Parties",
+    "pin": "04450-1172",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "PLAN 4M-1085",
+      "BLOCK 66"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "24 Dec 2012",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1384341 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1332741 Ontario Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

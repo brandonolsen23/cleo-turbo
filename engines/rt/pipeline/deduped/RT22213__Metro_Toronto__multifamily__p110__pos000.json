@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT22213",
+  "source_folder": "Metro_Toronto/multifamily/p110",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22213",
+      "source_folder": "Metro_Toronto/multifamily/p110",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p110/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "17 MAPLE AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Jul 2001",
+      "price_text": "$930,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ann A. Boden     905-584-1611"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "52 McKee Dr",
+        "Caledon, Ontario",
+        "L0N 1E0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mark N. Sills"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "17 Maple Ave",
+        "Toronto, Ontario",
+        "M4W 2T5"
+      ]
+    },
+    "description_lines": [
+      "Duplex - 2.5 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 329, Part Lots 23 & 24",
+      "As in Deed No CT-278376",
+      "",
+      "S side 30m W of Glen Rd",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 101 700 00800",
+    "consideration_lines": [
+      "cash: $930,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT222/RT22213/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5451 / 6031",
+      "rt_id": "RT22213"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "17 MAPLE AVE",
+    "postcode": "M4W 2T5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/31/2001",
+    "desc": "Duplex - 2.5 storey",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "930000",
+    "cash": "930000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 101 700 00800"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "17 MAPLE AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Jul 2001",
+    "note": "",
+    "description": "Duplex - 2.5 storey",
+    "seller_lines": [
+      "Ann A. Boden"
+    ],
+    "buyer_lines": [
+      "Mark N. Sills"
+    ],
+    "price_text": "$930,000"
+  }
+}

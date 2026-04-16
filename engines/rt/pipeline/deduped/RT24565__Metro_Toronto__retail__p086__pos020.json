@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT24565",
+  "source_folder": "Metro_Toronto/retail/p086",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24565",
+      "source_folder": "Metro_Toronto/retail/p086",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p086/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "367 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "06 Mar 2002",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Futris Investments Ltd     416-425-4908"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jim Futris",
+        "147 O'Connor Dr",
+        "Toronto, Ontario",
+        "M4J 2S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1077778 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rachhpal Dass",
+        "50 Queen's Post Rd",
+        "Woodbridge, Ontario",
+        "L4L 3G4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 3 storey; 2,600 sf ground floor"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22A",
+      "Part Lots 31 & 32, E/S Yonge St",
+      "As in Inst No CT-104134",
+      "",
+      "E side 20m S of Walton St",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 066 610 01400",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $1,500,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT245/RT24565/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4271 / 4952",
+      "rt_id": "RT24565"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "367 YONGE ST",
+    "postcode": "M5B 1S1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/06/2002",
+    "desc": "Retail Bldg - 3 storey; 2,600 sf ground floor",
+    "bldg": "4,625 sf",
+    "acreage": ".06",
+    "consid": "2000000",
+    "cash": "500000",
+    "debt": "1500000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 066 610 01400"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "367 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "06 Mar 2002",
+    "note": "",
+    "description": "Retail Bldg - 3 storey; 2,600 sf ground floor",
+    "seller_lines": [
+      "Futris Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1077778 Ontario Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

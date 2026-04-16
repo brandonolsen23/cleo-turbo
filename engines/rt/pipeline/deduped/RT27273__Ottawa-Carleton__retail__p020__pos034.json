@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT27273",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27273",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "1490 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "20 Sep 2002",
+      "price_text": "$1,056,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Columbia Canada LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerald Kostelny",
+        "1603 West Sixteenth St",
+        "Oak Brook, Illinois",
+        "USA - 60523-1303"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "7th Level Inc     613-728-8000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alphonce Ghossein",
+        "43 Rosemount Ave, Ste 2",
+        "Ottawa, Ontario",
+        "K1Y 1P3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; about 10,000 sf @ $106"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG, Part Lot 20",
+      "As in Inst No N-726528",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "06 14 105 903 03200",
+    "consideration_lines": [
+      "cash: $401,663     assumed/vtb debt: $654,337"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT272/RT27273/photo.jpg"
+    },
+    "footer": {
+      "page_position": "985 / 1141",
+      "rt_id": "RT27273"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "1490 BANK ST",
+    "postcode": "K1H 7Z2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/20/2002",
+    "desc": "Retail Bldg - 1 storey; about 10,000 sf @ $106",
+    "bldg": "10,000 sf",
+    "acreage": ".5",
+    "consid": "1056000",
+    "cash": "401663",
+    "debt": "654337",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 105 903 03200"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "1490 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "20 Sep 2002",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; about 10,000 sf @ $106",
+    "seller_lines": [
+      "Columbia Canada LP"
+    ],
+    "buyer_lines": [
+      "7th Level Inc"
+    ],
+    "price_text": "$1,056,000"
+  }
+}

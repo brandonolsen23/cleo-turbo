@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT141156",
+  "source_folder": "Cochrane/all/p061",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT141156",
+      "source_folder": "Cochrane/all/p061",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p061/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "213 GLADU ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Feb 2019",
+      "price_text": "$1,688,500",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Computershare Trust Company of Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daniel Lee",
+        "14216 Road 38, Box 208",
+        "Sharbot Lake, Ontario",
+        "K0H 2P0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-26282, Part 1",
+      "",
+      "PIN: 04238-0153",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,688,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,200,000   rate: 3.66% per annum.",
+      "registered: 02/28/2019   due: 03/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1411/RT141156/0413_093939.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1411/RT141156/0413_093942.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1411/RT141156/0413_094001.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1411/RT141156/0413_094004.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1411/RT141156/0413_094012.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3011 / 10920",
+      "rt_id": "RT141156"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "213 GLADU ST",
+    "postcode": "K1L 6N3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/28/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1688500",
+    "cash": "1688500",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "04238-0153",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "213 GLADU ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Feb 2019",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Computershare Trust Company of Canada"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,688,500"
+  }
+}

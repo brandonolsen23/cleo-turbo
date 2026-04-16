@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT135211",
+  "source_folder": "Cochrane/all/p069",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT135211",
+      "source_folder": "Cochrane/all/p069",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p069/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "5375 BANK ST"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "18 Jun 2018",
+      "price_text": "$560,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2621613 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jihad Abbadi",
+        "2117 Johnston Rd",
+        "Ottawa, Ontario",
+        "K1G 5J7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - RF, Part Lot 29",
+      "As in Inst No N-753487",
+      "",
+      "PIN: 04326-0151",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $560,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $4,250,000   rate: 4.0% per annum.",
+      "registered: 06/18/2018   due: 06/18/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3406 / 10920",
+      "rt_id": "RT135211"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "5375 BANK ST",
+    "postcode": "K1X 1H1",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "06/18/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".44",
+    "consid": "560000",
+    "cash": "560000",
+    "debt": "",
+    "note": "",
+    "pin": "04326-0151",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "5375 BANK ST"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "18 Jun 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2621613 Ontario Inc"
+    ],
+    "price_text": "$560,000"
+  }
+}

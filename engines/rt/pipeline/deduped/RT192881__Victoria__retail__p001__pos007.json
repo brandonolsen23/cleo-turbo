@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT192881",
+  "source_folder": "Victoria/retail/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192881",
+      "source_folder": "Victoria/retail/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/retail/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "90 WILLIAM ST N"
+      ],
+      "city_region": "Lindsay : Victoria",
+      "date_text": "19 Jun 2025",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Williamson Realty (Lindsay) Ltd     905-852-3331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "259 Toronto St S",
+        "Uxbridge, Ontario",
+        "L9P 1S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001253484 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexis Arancibia",
+        "90 William St N",
+        "Lindsay, Ontario",
+        "K9V 3N1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Town Plot Plan,",
+      "Part Lots 4 & 5, N/S Wellington St",
+      "Part Lot 5, S of Bond St",
+      "As in Inst Nos:",
+      "R-407987, R-131053 & A-20147",
+      "",
+      "PIN: 63216-0216 +",
+      "",
+      "0.81 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192881/0629_142500.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192881/0629_142501.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192881/0629_142546.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192881/0629_142547.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1928/RT192881/0629_142609.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 49",
+      "rt_id": "RT192881"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "90 WILLIAM ST N",
+    "postcode": "K9V 3N1",
+    "municipality": "Lindsay",
+    "region": "Victoria",
+    "date": "06/19/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".81",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "63216-0216+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "90 WILLIAM ST N"
+    ],
+    "city_region": "Lindsay : Victoria",
+    "date_text": "19 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Williamson Realty (Lindsay) Ltd"
+    ],
+    "buyer_lines": [
+      "1001253484 Ontario Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

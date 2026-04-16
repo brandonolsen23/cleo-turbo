@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT32586",
+  "source_folder": "Metro_Toronto/retail/p079",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32586",
+      "source_folder": "Metro_Toronto/retail/p079",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p079/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1092 - 1100 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "30 Oct 2003",
+      "price_text": "$828,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1141620 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Francis Chan",
+        "7 Whitelock Cres",
+        "North York, Ontario",
+        "M2K 1V9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "AA Hundel Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yasmin Nakhuda",
+        "Khalid Usman CA",
+        "2750 14th Ave, Ste 207",
+        "Markham, Ontario",
+        "L3R 0B6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5,200 sf @ $159"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-5564, Part 1",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "19 01 012 010 03000",
+    "consideration_lines": [
+      "cash: $828,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT325/RT32586/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3933 / 4952",
+      "rt_id": "RT32586"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1092 - 1100 KINGSTON RD",
+    "postcode": "M1N 1N4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "10/30/2003",
+    "desc": "Retail Plaza - 1 storey; 5,200 sf @ $159",
+    "bldg": "5,200 sf",
+    "acreage": ".3",
+    "consid": "828000",
+    "cash": "828000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 012 010 03000"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1092 - 1100 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "30 Oct 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5,200 sf @ $159",
+    "seller_lines": [
+      "1141620 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "AA Hundel Inc"
+    ],
+    "price_text": "$828,000"
+  }
+}

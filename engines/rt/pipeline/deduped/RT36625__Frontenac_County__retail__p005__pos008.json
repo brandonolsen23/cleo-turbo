@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT36625",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36625",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "940 FUTURES GATE"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "31 May 2004",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1139114 Ontario Ltd     416-961-4100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Melvyn Finkelstein",
+        "Howard Steinberg",
+        "33 Bloor St E, Ste 1000",
+        "Toronto, Ontario",
+        "M4W 3H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1311347 Ontario Inc     613-968-8243"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paz Provizor",
+        "59 O'Neill Dr, RR 4",
+        "Belleville, Ontario",
+        "K8N 4Z4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 20,000 sf @ $103"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 13R-13076, Parts 1-13",
+      "",
+      "2.15 acre"
+    ],
+    "arn_text": "10 11 080 180 07005",
+    "consideration_lines": [
+      "cash: $1,201,032     assumed/vtb debt: $848,968"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT366/RT36625/photo.jpg"
+    },
+    "footer": {
+      "page_position": "209 / 236",
+      "rt_id": "RT36625"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "940 FUTURES GATE",
+    "postcode": "K7M 8T5",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "05/31/2004",
+    "desc": "Retail Bldg - 1 storey; 20,000 sf @ $103",
+    "bldg": "20,000 sf",
+    "acreage": "2.15",
+    "consid": "2050000",
+    "cash": "1201032",
+    "debt": "848968",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 080 180 07005"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "940 FUTURES GATE"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "31 May 2004",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 20,000 sf @ $103",
+    "seller_lines": [
+      "1139114 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1311347 Ontario Inc"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

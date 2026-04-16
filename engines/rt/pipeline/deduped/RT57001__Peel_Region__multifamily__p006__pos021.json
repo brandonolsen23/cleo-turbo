@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT57001",
+  "source_folder": "Peel_Region/multifamily/p006",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT57001",
+      "source_folder": "Peel_Region/multifamily/p006",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/multifamily/p006/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1125 HAIG BLVD",
+        "1135 HAIG BLVD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "02 Aug 2007",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1357149 Ontario Ltd",
+        "1573254 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Trevor Maddern",
+        "645 Grays Rd",
+        "Hamilton, Ontario",
+        "L8E 2Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Weldan Properties (Haig) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dan Welton",
+        "2212 Oneida Cres",
+        "Mississauga, Ontario",
+        "L5C 1V6"
+      ]
+    },
+    "description_lines": [
+      "Two Houses"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - SDS, Part Lot 7",
+      "Plan 43R-13134, Part 1",
+      "As in Inst No TT-69912",
+      "",
+      "3.79 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: MCAP Financial Corp",
+      "principal: $3,290,000   rate: RBC prime plus 2.0% per annum",
+      "registered: 08/02/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "272 / 447",
+      "rt_id": "RT57001"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1125 HAIG BLVD, 1135 HAIG BLVD",
+    "postcode": "L5E 2M6",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "08/02/2007",
+    "desc": "Two Houses",
+    "bldg": "",
+    "acreage": "3.79",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1125 HAIG BLVD",
+      "1135 HAIG BLVD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "02 Aug 2007",
+    "note": "",
+    "description": "Two Houses",
+    "seller_lines": [
+      "1357149 Ontario Ltd",
+      "1573254 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Weldan Properties (Haig) Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT44021",
+  "source_folder": "Metro_Toronto/multifamily/p087",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44021",
+      "source_folder": "Metro_Toronto/multifamily/p087",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p087/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "36 ROXBOROUGH ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Sep 2005",
+      "price_text": "$1,206,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Kristian Morrison",
+        "2080233 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "36 Roxborough St W",
+        "Toronto, Ontario",
+        "M5R 1T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "125-E, Lot B",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 052 540 07100",
+    "consideration_lines": [
+      "cash: $1,206,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $550,000   rate: 5.1% per annum",
+      "registered: 09/01/2005   due: 09/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4305 / 6031",
+      "rt_id": "RT44021"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "36 ROXBOROUGH ST W",
+    "postcode": "M5R 1T8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1206000",
+    "cash": "1206000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 540 07100"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "36 ROXBOROUGH ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Sep 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Kristian Morrison",
+      "2080233 Ontario Ltd"
+    ],
+    "price_text": "$1,206,000"
+  }
+}

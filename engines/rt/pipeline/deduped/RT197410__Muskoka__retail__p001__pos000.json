@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT197410",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197410",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "511 MUSKOKA RD S"
+      ],
+      "city_region": "Gravenhurst : Muskoka",
+      "date_text": "25 Feb 2026",
+      "price_text": "$7,310,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Schillco Inc",
+        "Schillco Limited Partnership"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 38 Timber Lane",
+        "Oakville, Ontario",
+        "L6L 2Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001066237 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "Goldmanco",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "1989 Leslie St",
+        "Toronto, Ontario",
+        "M3B 2M3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3 - Gravenhurst WMR,",
+      "Lots 9-11, 18, 19, 22, 23, 28",
+      "Part Lots 12-15, 17, 21",
+      "Plan 35R-21728, Parts 1, 2, 4 & 6",
+      "Plan 6, Part Lots 38 & 39",
+      "Except:",
+      "Plan 35R-21728 Part 3",
+      "",
+      "PIN: 48190-0204 +",
+      "",
+      "3.07 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,310,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 64",
+      "rt_id": "RT197410"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "511 MUSKOKA RD S",
+    "postcode": "P1P 1J8",
+    "municipality": "Gravenhurst",
+    "region": "Muskoka",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.07",
+    "consid": "7310000",
+    "cash": "7310000",
+    "debt": "",
+    "note": "",
+    "pin": "48190-0204+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "511 MUSKOKA RD S"
+    ],
+    "city_region": "Gravenhurst : Muskoka",
+    "date_text": "25 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Schillco Inc",
+      "Schillco Limited Partnership"
+    ],
+    "buyer_lines": [
+      "1001066237 Ontario Inc"
+    ],
+    "price_text": "$7,310,000"
+  }
+}

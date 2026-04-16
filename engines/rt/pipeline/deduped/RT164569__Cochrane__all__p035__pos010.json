@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT164569",
+  "source_folder": "Cochrane/all/p035",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT164569",
+      "source_folder": "Cochrane/all/p035",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p035/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "4505 BANK ST"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "01 Nov 2021",
+      "price_text": "$2,500,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Larny Holdings Ltd     613-741-5805"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arnold Kimmel",
+        "61 Pond St",
+        "Ottawa, Ontario",
+        "K1L 8J1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Grant Castle Corp     800-267-7175"
+      ],
+      "trade_name": "MacEwen Petroleum Inc",
+      "contact_lines": [
+        "Attn: Peter MacEwen",
+        "18 Adelaide St",
+        "PO Box 100",
+        "Maxville, Ontario",
+        "K0C 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - RF, Part Lot 15",
+      "As in Inst No N-685900",
+      "Except:",
+      "Inst No GL-81437",
+      "",
+      "PIN: 04161-0011",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "06 06 000 075 16400",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1645/RT164569/0114_164116.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1645/RT164569/0114_164119.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1645/RT164569/0114_164143.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1645/RT164569/0114_164144.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1645/RT164569/0114_164152.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1711 / 10920",
+      "rt_id": "RT164569"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "4505 BANK ST",
+    "postcode": "K1T 3W5",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "11/01/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04161-0011",
+    "rollno": "06 06 000 075 16400"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "4505 BANK ST"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "01 Nov 2021",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "Larny Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Grant Castle Corp"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

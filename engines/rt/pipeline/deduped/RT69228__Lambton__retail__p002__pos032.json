@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT69228",
+  "source_folder": "Lambton/retail/p002",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69228",
+      "source_folder": "Lambton/retail/p002",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1152 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "03 Nov 2009",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wyoming Transportation Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Sipkens",
+        "5206 Confederation Line",
+        "Wyoming, Ontario",
+        "N0N 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tsapco Inc     519-337-8881"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dimtrios Tsaprailis",
+        "1152 London Rd, Ste 2",
+        "Sarnia, Ontario",
+        "N7S 1P2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza -1 storey; 3 tenants 8,000 sf @ $150",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 18",
+      "Plan 25R-1967, Part 2",
+      "",
+      "PIN: 43208-0090",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "38 29 300 029 08900",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $950,000   rate: Base plus 10.0% per annum",
+      "registered: 11/03/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT692/RT69228/1128_105817.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT692/RT69228/1128_105913.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT692/RT69228/1128_110032.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT692/RT69228/air1.jpg",
+        "/assets/files/RT6/RT692/RT69228/air2.jpg",
+        "/assets/files/RT6/RT692/RT69228/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "83 / 106",
+      "rt_id": "RT69228"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1152 LONDON RD",
+    "postcode": "N7S 1P4",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "11/03/2009",
+    "desc": "Retail Plaza -1 storey; 3 tenants 8,000 sf @ $150",
+    "bldg": "8,000 sf",
+    "acreage": ".75",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "43208-0090",
+    "rollno": "38 29 300 029 08900"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1152 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "03 Nov 2009",
+    "note": "",
+    "description": "Retail Plaza -1 storey; 3 tenants 8,000 sf @ $150",
+    "seller_lines": [
+      "Wyoming Transportation Ltd"
+    ],
+    "buyer_lines": [
+      "Tsapco Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

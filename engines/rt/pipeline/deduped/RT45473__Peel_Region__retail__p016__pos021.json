@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT45473",
+  "source_folder": "Peel_Region/retail/p016",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45473",
+      "source_folder": "Peel_Region/retail/p016",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p016/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "86 KENNEDY RD S"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "15 Nov 2005",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kasum Enterprises Inc     905-457-1660"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kash Mahil",
+        "Simmons, da Silva & Sinton",
+        "201 Country Court Blvd, Ste 200",
+        "Brampton, Ontario",
+        "L6W 4L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Durcaa Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: P. Nagarajah",
+        "86 Kennedy Rd S",
+        "Brampton, Ontario",
+        "L6W 3E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - EHS, Part Lot 4",
+      "As in Inst No RO-1139694",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "21 10 020 005 08500",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Dast Properties Ltd",
+      "principal: $480,000   rate: 8.0% per annum",
+      "registered: 11/15/2005   due: 11/14/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT454/RT45473/air1.jpg",
+        "/assets/files/RT4/RT454/RT45473/air2.jpg",
+        "/assets/files/RT4/RT454/RT45473/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "772 / 1087",
+      "rt_id": "RT45473"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "86 KENNEDY RD S",
+    "postcode": "L6W 3E7",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "11/15/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".26",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 020 005 08500"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "86 KENNEDY RD S"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "15 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kasum Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "Durcaa Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

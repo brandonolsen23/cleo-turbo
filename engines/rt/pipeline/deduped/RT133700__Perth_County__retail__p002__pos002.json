@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT133700",
+  "source_folder": "Perth_County/retail/p002",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT133700",
+      "source_folder": "Perth_County/retail/p002",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p002/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "73 DOWNIE ST"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "27 Apr 2018",
+      "price_text": "$1,735,614",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jennifer Sonnbichler",
+        "55 Bloor St W, 9th Flr",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Alre Properties Inc     514-508-5800"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roberto Di Giorgio",
+        "1652 Sherbrooke St W",
+        "Montreal, Quebec",
+        "H3H 1C9"
+      ]
+    },
+    "description_lines": [
+      "BMO Bank Branch: 2 storey; 7,596 sf @ $228"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44R-3363, Part 1",
+      "Together with Inst Nos:",
+      "R-233642(2ndly) & R-233341(2ndly)",
+      "",
+      "PIN: 53122-0108",
+      "",
+      "SE corner Downie St and Brunswick St",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "31 11 040 010 04500",
+    "consideration_lines": [
+      "cash: $1,735,614     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal Holding Inc",
+      "principal: $13,958,083   rate: 3.0% per annum.",
+      "registered: 04/27/2018   due: 06/28/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1337/RT133700/0813_113218.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1337/RT133700/0813_113237.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1337/RT133700/0813_113250.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1337/RT133700/0813_113307.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "53 / 113",
+      "rt_id": "RT133700"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "73 DOWNIE ST",
+    "postcode": "N5A 1W8",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "04/27/2018",
+    "desc": "BMO Bank Branch: 2 storey; 7,596 sf @ $228",
+    "bldg": "7,596 s",
+    "acreage": ".22",
+    "consid": "1735614",
+    "cash": "1735614",
+    "debt": "",
+    "note": "",
+    "pin": "53122-0108",
+    "rollno": "31 11 040 010 04500"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "73 DOWNIE ST"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "27 Apr 2018",
+    "note": "",
+    "description": "BMO Bank Branch: 2 storey; 7,596 sf @ $228",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "Alre Properties Inc"
+    ],
+    "price_text": "$1,735,614"
+  }
+}

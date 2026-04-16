@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT130001",
+  "source_folder": "Cochrane/all/p074",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT130001",
+      "source_folder": "Cochrane/all/p074",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p074/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "6 CAMPFIELD CT"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "22 Nov 2017",
+      "price_text": "$610,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "8784892 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marc Pilon",
+        "38 Promenade Ave",
+        "Ottawa, Ontario",
+        "K2E 5X8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-568, Lot 14",
+      "",
+      "PIN: 04621-0127",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 12 000 516 23128",
+    "consideration_lines": [
+      "cash: $610,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $610,000   rate: Prime plus 10.0% per annum.",
+      "registered: 11/22/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3699 / 10920",
+      "rt_id": "RT130001"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "6 CAMPFIELD CT",
+    "postcode": "K2E 7X8",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "11/22/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "610000",
+    "cash": "610000",
+    "debt": "",
+    "note": "",
+    "pin": "04621-0127",
+    "rollno": "06 12 000 516 23128"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "6 CAMPFIELD CT"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "22 Nov 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "8784892 Canada Inc"
+    ],
+    "price_text": "$610,000"
+  }
+}

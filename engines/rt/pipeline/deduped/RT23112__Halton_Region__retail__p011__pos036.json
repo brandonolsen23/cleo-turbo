@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT23112",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23112",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "2025 WILLIAM OCONNELL BLVD"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "24 Oct 2001",
+      "price_text": "$2,576,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Monarch Construction Ltd     416-491-7440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: D. A. George",
+        "2025 Sheppard Ave E",
+        "Toronto, Ontario",
+        "M2J 1V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "544117 Ontario Ltd     705-456-1315"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jit Sharma",
+        "PO Box 90",
+        "Burk's Falls, Ontario",
+        "P0A 1C0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; about 15,569 sf @ $165",
+      "",
+      "Plaza is known as Milrose Mews"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-14104, Part 1",
+      "Plan 20R-9911, Part 2",
+      "",
+      "NE corner at Upper Middle Road",
+      "",
+      "1.72 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,176,000     assumed/vtb debt: $400,000"
+    ],
+    "broker_lines": [
+      "Martel Commercial: Bob Turnbull, 905-332-6601"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT231/RT23112/photo.jpg"
+    },
+    "footer": {
+      "page_position": "537 / 613",
+      "rt_id": "RT23112"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "2025 WILLIAM OCONNELL BLVD",
+    "postcode": "",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "10/24/2001",
+    "desc": "Retail Plaza - 1 storey; about 15,569 sf @ $165",
+    "bldg": "15569 sf",
+    "acreage": "1.72",
+    "consid": "2576000",
+    "cash": "2176000",
+    "debt": "400000",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "2025 WILLIAM OCONNELL BLVD"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "24 Oct 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; about 15,569 sf @ $165",
+    "seller_lines": [
+      "Monarch Construction Ltd"
+    ],
+    "buyer_lines": [
+      "544117 Ontario Ltd"
+    ],
+    "price_text": "$2,576,000"
+  }
+}

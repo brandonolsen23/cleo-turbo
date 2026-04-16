@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT70180",
+  "source_folder": "Durham_Region/retail/p006",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70180",
+      "source_folder": "Durham_Region/retail/p006",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p006/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "555 SIMCOE ST S"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "05 Jan 2010",
+      "price_text": "$6,330,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "572223 Ontario Ltd     905-544-3761"
+      ],
+      "trade_name": "ArcelorMittal Dofasco Inc",
+      "contact_lines": [
+        "Attn: Katharine Short",
+        "1339 Burlington St E",
+        "Box 2460",
+        "Hamilton, Ontario",
+        "L8N 3J5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Zellers Inc     416-861-6112"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Cooper",
+        "Hudson's Bay Co",
+        "Real Estate",
+        "401 Bay St, Ste 600",
+        "Toronto, Ontario",
+        "M5H 2Y4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 13 units 111,000 sf @ $57",
+      "",
+      "About 50% vacant",
+      "Anchored by Zellers"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 335, Sheet 20",
+      "Lot C67",
+      "Except:",
+      "Plan 40R-16429, Part 1",
+      "Plan 40R-6580, Parts 1-3",
+      "Plan 40R-7574, Parts 1 & 2",
+      "",
+      "PIN: 16369-0003",
+      "",
+      "7.16 acre"
+    ],
+    "arn_text": "18 13 040 005 01300",
+    "consideration_lines": [
+      "cash: $6,330,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT701/RT70180/0116_140315.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT701/RT70180/0116_140431.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT701/RT70180/0116_140450.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT701/RT70180/0116_140520.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT701/RT70180/air1.jpg",
+        "/assets/files/RT7/RT701/RT70180/air2.jpg",
+        "/assets/files/RT7/RT701/RT70180/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "275 / 506",
+      "rt_id": "RT70180"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "555 SIMCOE ST S",
+    "postcode": "L1H 8K8",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "01/05/2010",
+    "desc": "Retail Plaza - 1 storey; 13 units 111,000 sf @ $57",
+    "bldg": "111,000 sf",
+    "acreage": "7.16",
+    "consid": "6330000",
+    "cash": "6330000",
+    "debt": "",
+    "note": "",
+    "pin": "16369-0003",
+    "rollno": "18 13 040 005 01300"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "555 SIMCOE ST S"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "05 Jan 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 13 units 111,000 sf @ $57",
+    "seller_lines": [
+      "572223 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Zellers Inc"
+    ],
+    "price_text": "$6,330,000"
+  }
+}

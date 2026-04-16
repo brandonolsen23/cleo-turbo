@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT197334",
+  "source_folder": "Leeds/industrial/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197334",
+      "source_folder": "Leeds/industrial/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/industrial/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2612 MYERS RD"
+      ],
+      "city_region": "Elgin-Rideau Lakes : Leeds",
+      "date_text": "20 Feb 2026",
+      "price_text": "$1,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "C & M Superior Systems Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "57 Aragon Rd",
+        "Glenburnie, Ontario",
+        "K0H 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Miclan Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michel Lanteigne",
+        "57 Aragon Rd",
+        "Glenburnie, Ontario",
+        "K0H 1S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Bastard, Part Lot 24",
+      "Plan 28R-12077, Part 1",
+      "",
+      "PIN: 44124-0350",
+      "",
+      "9.29 acre"
+    ],
+    "arn_text": "08 31 831 051 19103",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $383,600",
+      "other: $816,400",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,320,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 02/20/2026   due: on demand",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $420,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 02/01/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 35",
+      "rt_id": "RT197334"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2612 MYERS RD",
+    "postcode": "K0G 1V0",
+    "municipality": "Elgin-Rideau Lakes",
+    "region": "Leeds",
+    "date": "02/20/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.29",
+    "consid": "1200000",
+    "cash": "",
+    "debt": "383600",
+    "note": "Related Parties",
+    "pin": "44124-0350",
+    "rollno": "08 31 831 051 19103"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2612 MYERS RD"
+    ],
+    "city_region": "Elgin-Rideau Lakes : Leeds",
+    "date_text": "20 Feb 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "C & M Superior Systems Inc"
+    ],
+    "buyer_lines": [
+      "Miclan Holdings Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

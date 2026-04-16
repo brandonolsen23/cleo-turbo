@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT192913",
+  "source_folder": "Russell_Township/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192913",
+      "source_folder": "Russell_Township/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Russell_Township/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "574 EDWARDS ST"
+      ],
+      "city_region": "Clarence-Rockland : Russell Township",
+      "date_text": "20 Jun 2025",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2747268 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shann Altaf Khan",
+        "8689 County Rd 17",
+        "Rockland, Ontario",
+        "K4K 0A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan A Bell 1908 Rockland,",
+      "Lot 2 & Part Lot 1, W/S Mill St",
+      "As in Inst No RR-172146",
+      "",
+      "PIN: 69063-0191",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "03 16 021 002 18700",
+    "consideration_lines": [
+      "cash: $50,000     assumed/vtb debt: $900,000",
+      "",
+      "Named Individual(s)",
+      "principal: $900,000   rate: 6.0% per annum.",
+      "registered: 06/20/2025   due: 12/20/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 33",
+      "rt_id": "RT192913"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "574 EDWARDS ST",
+    "postcode": "K4K 1C9",
+    "municipality": "Clarence-Rockland",
+    "region": "Russell Township",
+    "date": "06/20/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "950000",
+    "cash": "50000",
+    "debt": "900000",
+    "note": "",
+    "pin": "69063-0191",
+    "rollno": "03 16 021 002 18700"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "574 EDWARDS ST"
+    ],
+    "city_region": "Clarence-Rockland : Russell Township",
+    "date_text": "20 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2747268 Ontario Ltd"
+    ],
+    "price_text": "$950,000"
+  }
+}

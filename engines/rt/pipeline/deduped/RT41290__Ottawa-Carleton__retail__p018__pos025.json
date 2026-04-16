@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT41290",
+  "source_folder": "Ottawa-Carleton/retail/p018",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41290",
+      "source_folder": "Ottawa-Carleton/retail/p018",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p018/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "1980 ROBERTSON RD",
+        "3754 OLD RICHMOND RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "01 Apr 2005",
+      "price_text": "$665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sutec Investments Ltd     613-225-9438"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pao-Wen Hsueh",
+        "52 Pinetail Cres",
+        "Nepean, Ontario",
+        "K2G 5A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "6186513 Ontario Inc     613-828-3586"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ali Sbeiti",
+        "55 Paula Cres",
+        "Ottawa, Ontario",
+        "K2H 8Y8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - RF, Part Lot 35",
+      "Plan 5R-11781, Part 1",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "06 12 000 785 01001",
+    "consideration_lines": [
+      "cash: $665,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $380,000   rate: 18.0% per annum",
+      "registered: 04/01/2005   due: 04/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT412/RT41290/photo.jpg"
+    },
+    "footer": {
+      "page_position": "876 / 1141",
+      "rt_id": "RT41290"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "1980 ROBERTSON RD, 3754 OLD RICHMOND RD",
+    "postcode": "K2H 5B9",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "04/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "665000",
+    "cash": "665000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 12 000 785 01001"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "1980 ROBERTSON RD",
+      "3754 OLD RICHMOND RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "01 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sutec Investments Ltd"
+    ],
+    "buyer_lines": [
+      "6186513 Ontario Inc"
+    ],
+    "price_text": "$665,000"
+  }
+}

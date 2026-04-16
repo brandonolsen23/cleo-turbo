@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT197512",
+  "source_folder": "Halton_Region/multifamily/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197512",
+      "source_folder": "Halton_Region/multifamily/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "75 STEWART ST"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "25 Feb 2026",
+      "price_text": "$1,080,000",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "TC Core GP Inc",
+        "TC Core LP     888-949-8439"
+      ],
+      "trade_name": "Hazelview Investments",
+      "contact_lines": [
+        "1133 Yonge St, 4th Flr",
+        "Toronto, Ontario",
+        "M4T 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000914087 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Croll",
+        "333 Bay St, Ste 2400",
+        "Toronto, Ontario",
+        "M5H 2T6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Traf SDS, Part Lot 16",
+      "Plan 200, Lots 28-30 & Lot Park",
+      "As in Inst No 767515",
+      "",
+      "PIN: 24817-0033",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "24 01 030 110 01700",
+    "consideration_lines": [
+      "cash: $668,250     assumed/vtb debt: $411,750",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $9,496,300   rate: Prime plus 10.0% per annum.",
+      "registered: 11/05/2009   due: on demand",
+      "",
+      "chargee: Rescore Equities Inc",
+      "principal: $293,700   rate: Prime plus 10.0% per annum.",
+      "registered: 11/05/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 380",
+      "rt_id": "RT197512"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "75 STEWART ST",
+    "postcode": "L6K 1X7",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "1080000",
+    "cash": "668250",
+    "debt": "411750",
+    "note": "% Interest",
+    "pin": "24817-0033",
+    "rollno": "24 01 030 110 01700"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "75 STEWART ST"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "25 Feb 2026",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "TC Core GP Inc",
+      "TC Core LP"
+    ],
+    "buyer_lines": [
+      "1000914087 Ontario Inc"
+    ],
+    "price_text": "$1,080,000"
+  }
+}

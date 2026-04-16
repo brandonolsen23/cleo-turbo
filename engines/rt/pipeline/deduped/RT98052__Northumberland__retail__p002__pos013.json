@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT98052",
+  "source_folder": "Northumberland/retail/p002",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT98052",
+      "source_folder": "Northumberland/retail/p002",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p002/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 PETER ST"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "03 Feb 2014",
+      "price_text": "$2,500,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "2283724 Ontario Ltd     647-345-5619"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rattan Gupta",
+        "92 Dalmatian Cres",
+        "Toronto, Ontario",
+        "M1C 4W6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2391074 Ontario Inc     905-885-0770"
+      ],
+      "trade_name": "Port Hope Pioneer",
+      "contact_lines": [
+        "Attn: Pritesh Patel",
+        "161 Peter St",
+        "Port Hope, Ontario",
+        "L1A 1C7"
+      ]
+    },
+    "description_lines": [
+      "Convenience Store/Service Station & Gas Bar",
+      "",
+      "4,500 sf",
+      "3 drive-in doors",
+      "4 gas pumps",
+      "",
+      "The purchaser will operate the business"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc Broken Front",
+      "Part Lot 3",
+      "Plan 9R-2121, Part 1",
+      "Plan 39R-8098, Part 1",
+      "",
+      "PIN: 51080-0014",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "14 23 125 080 15100",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $400,000",
+      "chattels: $800,000",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,395,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/03/2014   due: on demand",
+      "",
+      "chargee: 2283724 Ontario Ltd",
+      "principal: $400,000   rate: 6.43% per annum.",
+      "registered: 02/03/2014   due: 02/03/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT980/RT98052/0216_162329.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT980/RT98052/0216_162348.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "64 / 93",
+      "rt_id": "RT98052"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "161 PETER ST",
+    "postcode": "L1A 1C7",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "02/03/2014",
+    "desc": "Convenience Store/Service Station & Gas Bar",
+    "bldg": "4,500 sf",
+    "acreage": ".79",
+    "consid": "2500000",
+    "cash": "2100000",
+    "debt": "400000",
+    "note": "Purchased Business",
+    "pin": "51080-0014",
+    "rollno": "14 23 125 080 15100"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "161 PETER ST"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "03 Feb 2014",
+    "note": "Purchased Business",
+    "description": "Convenience Store/Service Station & Gas Bar",
+    "seller_lines": [
+      "2283724 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2391074 Ontario Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

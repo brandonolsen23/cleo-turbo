@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT188825",
+  "source_folder": "Halton_Region/retail/p002",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188825",
+      "source_folder": "Halton_Region/retail/p002",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p002/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "2450 OLD BRONTE RD",
+        "UNIT C"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "27 Nov 2024",
+      "price_text": "$1,280,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Zancor Oakville Ltd     905-738-7010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "221 North Rivermede Rd",
+        "Vaughan, Ontario",
+        "L4K 3N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Oak Branch Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Amgad Hakim",
+        "2450 Old Bronte Rd, Unit C",
+        "Oakville, Ontario",
+        "L6M 5P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 786",
+      "Level 1, Unit 3",
+      "Level A, Units 2 & 3",
+      "",
+      "PIN: 26088-0003 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,280,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,280,000   rate: Prime plus 6.0% per annum.",
+      "registered: 11/27/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "62 / 613",
+      "rt_id": "RT188825"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "2450 OLD BRONTE RD, UNIT C",
+    "postcode": "L6M 5P6",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "11/27/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1280000",
+    "cash": "1280000",
+    "debt": "",
+    "note": "",
+    "pin": "26088-0003+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "2450 OLD BRONTE RD",
+      "UNIT C"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "27 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Zancor Oakville Ltd"
+    ],
+    "buyer_lines": [
+      "Oak Branch Inc"
+    ],
+    "price_text": "$1,280,000"
+  }
+}

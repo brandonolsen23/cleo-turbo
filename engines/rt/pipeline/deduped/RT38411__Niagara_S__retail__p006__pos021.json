@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT38411",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38411",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "7555 MONTROSE RD",
+        "NIAGARA SQUARE"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "15 Oct 2004",
+      "price_text": "$26,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ivanhoe Cambridge I Inc     416-369-1200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: George Fiddler",
+        "95 Wellington St W, Ste 300",
+        "Toronto, Ontario",
+        "M5J 2R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RRVP Niagara Square Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "RIOCAN",
+        "The Exchange Tower",
+        "Ste 700, PO Box 378",
+        "130 King St W",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Mall - 1 storey; 70 units 418,533 sf @ $62"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-40, Block A",
+      "Plan 59R2365, Parts 1-3",
+      "",
+      "55.31 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $26,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT384/RT38411/photo.jpg"
+    },
+    "footer": {
+      "page_position": "272 / 324",
+      "rt_id": "RT38411"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "7555 MONTROSE RD, NIAGARA SQUARE",
+    "postcode": "L2H 2E9",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "10/15/2004",
+    "desc": "Retail Mall - 1 storey; 70 units 418,533 sf @ $62",
+    "bldg": "418,533 sf",
+    "acreage": "55.31",
+    "consid": "26000000",
+    "cash": "26000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "7555 MONTROSE RD",
+      "NIAGARA SQUARE"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "15 Oct 2004",
+    "note": "",
+    "description": "Retail Mall - 1 storey; 70 units 418,533 sf @ $62",
+    "seller_lines": [
+      "Ivanhoe Cambridge I Inc"
+    ],
+    "buyer_lines": [
+      "RRVP Niagara Square Inc"
+    ],
+    "price_text": "$26,000,000"
+  }
+}

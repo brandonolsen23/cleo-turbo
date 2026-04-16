@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT47157",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47157",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "245 - 247 WEST ST N"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "17 Feb 2006",
+      "price_text": "$735,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Moorson Development Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roderick Moorsom",
+        "597 Lydia St",
+        "Newmarket, Ontario",
+        "L3Y 1M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1437766 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christos Androutsos",
+        "61 Verdi Rd",
+        "Richmond Hill, Ontario",
+        "L4E 4P7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1026, Lots 94 & 95",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "43 52 030 307 02200",
+    "consideration_lines": [
+      "cash: $735,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT471/RT47157/photo.jpg"
+    },
+    "footer": {
+      "page_position": "553 / 712",
+      "rt_id": "RT47157"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "245 - 247 WEST ST N",
+    "postcode": "L3V 5C9",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "02/17/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "735000",
+    "cash": "735000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 52 030 307 02200"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "245 - 247 WEST ST N"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "17 Feb 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Moorson Development Ltd"
+    ],
+    "buyer_lines": [
+      "1437766 Ontario Ltd"
+    ],
+    "price_text": "$735,000"
+  }
+}

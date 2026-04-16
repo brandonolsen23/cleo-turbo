@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT96303",
+  "source_folder": "Cochrane/multifamily/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT96303",
+      "source_folder": "Cochrane/multifamily/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/multifamily/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "15 HOLLINGER LANE"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "15 Nov 2013",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Extendicare Inc     905-470-4000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Elaine Everson",
+        "3000 Steeles Ave E, Ste 700",
+        "Markham, Ontario",
+        "L3R 9W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Goldcorp Canada Ltd",
+        "Goldcorp Inc     705-235-3221"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marc Lauzier",
+        "4315 Goldmine Rd",
+        "South Porcupine, Ontario",
+        "P0N 1H0"
+      ]
+    },
+    "description_lines": [
+      "Former Nursing Home/Future Office: 2 storey; 34,000 sf @ $32",
+      "",
+      "1 elevator",
+      "",
+      "Built 1973",
+      "",
+      "35 surface parking spaces",
+      "",
+      "The purchaser will use the property as office space."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Broken Lot 10",
+      "Plan CR-1625, Parts 1-4",
+      "Plan 6R-4070, Part 1",
+      "Except:",
+      "Plan 6R-4070, Part 2",
+      "",
+      "PIN: 65406-0026",
+      "",
+      "W side Hollinger Lane, S of Father Costello Dr",
+      "",
+      "1.40 acre"
+    ],
+    "arn_text": "56 27 030 081 00400",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 23",
+      "rt_id": "RT96303"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "15 HOLLINGER LANE",
+    "postcode": "",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "11/15/2013",
+    "desc": "Former Nursing Home/Future Office: 2 storey; 34,000 sf @ $32",
+    "bldg": "34,000 sf",
+    "acreage": "1.4",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "65406-0026",
+    "rollno": "56 27 030 081 00400"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "15 HOLLINGER LANE"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "15 Nov 2013",
+    "note": "",
+    "description": "Former Nursing Home/Future Office: 2 storey; 34,000 sf @ $32",
+    "seller_lines": [
+      "Extendicare Inc"
+    ],
+    "buyer_lines": [
+      "Goldcorp Canada Ltd",
+      "Goldcorp Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

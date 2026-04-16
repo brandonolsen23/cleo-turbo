@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT57123",
+  "source_folder": "Peterborough_County/retail/p003",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT57123",
+      "source_folder": "Peterborough_County/retail/p003",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p003/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "874 WARD ST"
+      ],
+      "city_region": "Smith : Peterborough County",
+      "date_text": "01 Aug 2007",
+      "price_text": "$875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sea Oats Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nicholas Shirchenko",
+        "672 Deerfield Cres, RR 1",
+        "Ennismore, Ontario",
+        "K0L 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1738053 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nadia Peerzada",
+        "874 Ward St",
+        "Bridgenorth, Ontario",
+        "K0L 1H0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 8,000 sf @ $109",
+      "",
+      "Fully occupied."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64, Lot 36",
+      "",
+      "1.40 acre"
+    ],
+    "arn_text": "15 18 000 201 36400",
+    "consideration_lines": [
+      "cash: $875,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $375,000   rate: Prime plus 1.0% per annum",
+      "registered: 08/01/2007   due: on demand"
+    ],
+    "broker_lines": [
+      "DNS Real Estate Limited: Dave Smith, 705-749-1602"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT571/RT57123/1214_125029.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT571/RT57123/1214_125032.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT571/RT57123/air1.jpg",
+        "/assets/files/RT5/RT571/RT57123/air2.jpg",
+        "/assets/files/RT5/RT571/RT57123/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "136 / 157",
+      "rt_id": "RT57123"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "874 WARD ST",
+    "postcode": "K0L 1H0",
+    "municipality": "Smith",
+    "region": "Peterborough County",
+    "date": "08/01/2007",
+    "desc": "Retail Plaza - 1 storey; 4 units 8,000 sf @ $109",
+    "bldg": "8,000 sf",
+    "acreage": "1.4",
+    "consid": "875000",
+    "cash": "875000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "15 18 000 201 36400"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "874 WARD ST"
+    ],
+    "city_region": "Smith : Peterborough County",
+    "date_text": "01 Aug 2007",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 8,000 sf @ $109",
+    "seller_lines": [
+      "Sea Oats Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1738053 Ontario Ltd"
+    ],
+    "price_text": "$875,000"
+  }
+}

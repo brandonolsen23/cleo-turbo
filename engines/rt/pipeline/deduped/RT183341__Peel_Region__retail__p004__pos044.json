@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT183341",
+  "source_folder": "Peel_Region/retail/p004",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183341",
+      "source_folder": "Peel_Region/retail/p004",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p004/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "2420 MOTORWAY BLVD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "01 Mar 2024",
+      "price_text": "$10,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2148707 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "61 Leggett Ave",
+        "Toronto, Ontario",
+        "M9P 1X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "716051 Ontario Ltd     888-359-1496"
+      ],
+      "trade_name": "Number 7 Honda",
+      "contact_lines": [
+        "Attn: Giuseppe Zanchin",
+        "5555 Highway 7",
+        "Woodbridge, Ontario",
+        "L4L 1T5"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 915, Lots 358 & 359",
+      "",
+      "PIN: 13421-0290",
+      "",
+      "1.50 acre"
+    ],
+    "arn_text": "21 05 060 155 10200",
+    "consideration_lines": [
+      "cash: $10,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183341/0316_080208.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183341/0316_080212.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183341/0316_080249.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183341/0316_080250.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183341/0316_080305.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "195 / 1087",
+      "rt_id": "RT183341"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "2420 MOTORWAY BLVD",
+    "postcode": "L5L 1X3",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "03/01/2024",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.5",
+    "consid": "10300000",
+    "cash": "10300000",
+    "debt": "",
+    "note": "",
+    "pin": "13421-0290",
+    "rollno": "21 05 060 155 10200"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "2420 MOTORWAY BLVD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 Mar 2024",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "2148707 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "716051 Ontario Ltd"
+    ],
+    "price_text": "$10,300,000"
+  }
+}

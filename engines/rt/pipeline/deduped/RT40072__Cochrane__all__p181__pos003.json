@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT40072",
+  "source_folder": "Cochrane/all/p181",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40072",
+      "source_folder": "Cochrane/all/p181",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p181/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "136 BILLINGS AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "04 Feb 2005",
+      "price_text": "$672,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "M & M Desormeaux General Contracting Ltd     613-733-7507"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marc Desormeaux",
+        "136 Billings Ave",
+        "Ottawa, Ontario",
+        "K1H 5K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Riverside Building Products Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Sutherland",
+        "136 Billings Ave",
+        "Ottawa, Ontario",
+        "K1H 5K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 129, Part Lots 163-166",
+      "As in Inst Nos:",
+      "OT-22880, OT-22881, OT-22882 & OT-49570",
+      "Together with Inst No CT-208249",
+      "Except Plan 5R-1562, Part 4",
+      "",
+      "0.63 acre"
+    ],
+    "arn_text": "06 14 105 701 18800",
+    "consideration_lines": [
+      "cash: $672,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT400/RT40072/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9004 / 10920",
+      "rt_id": "RT40072"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "136 BILLINGS AVE",
+    "postcode": "K1H 5K9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/04/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".63",
+    "consid": "672000",
+    "cash": "672000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 105 701 18800"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "136 BILLINGS AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "04 Feb 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "M & M Desormeaux General Contracting Ltd"
+    ],
+    "buyer_lines": [
+      "Riverside Building Products Ltd"
+    ],
+    "price_text": "$672,000"
+  }
+}

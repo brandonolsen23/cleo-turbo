@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24834",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24834",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "200 - 214 LAUZON RD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "22 Mar 2002",
+      "price_text": "$580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "PHP Management Ltd     519-948-8171"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cameron Paine",
+        "4573 Tecumseh Rd E",
+        "Windsor, Ontario",
+        "N8W 1K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Naal & Faten Hanna     519-735-7585"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "185 Shannon",
+        "Tecumseh, Ontario",
+        "N8N 4J2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 units about 5,700 sf @ $102"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1034, Lot 2",
+      "Conc 1, Part Lot 128",
+      "As in Inst No R-1262280",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "37 39 060 260 02900",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT248/RT24834/photo.jpg"
+    },
+    "footer": {
+      "page_position": "411 / 460",
+      "rt_id": "RT24834"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "200 - 214 LAUZON RD",
+    "postcode": "N8S 3L6",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "03/22/2002",
+    "desc": "Retail Plaza - 1 storey; 5 units about 5,700 sf @ $102",
+    "bldg": "5,700 sf",
+    "acreage": ".5",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 060 260 02900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "200 - 214 LAUZON RD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "22 Mar 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 units about 5,700 sf @ $102",
+    "seller_lines": [
+      "PHP Management Ltd"
+    ],
+    "buyer_lines": [
+      "Naal & Faten Hanna"
+    ],
+    "price_text": "$580,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT101050",
+  "source_folder": "Hamilton-Wentworth/multifamily/p008",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT101050",
+      "source_folder": "Hamilton-Wentworth/multifamily/p008",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/multifamily/p008/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "2000 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "19 Jun 2014",
+      "price_text": "$3,399,024",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Timbercreek Opportunity Fund GP#3 Inc",
+        "Timbercreek Opportunity Fund LP#3"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ugo Bizzarri",
+        "1000 Yonge St, Ste 500",
+        "Toronto, Ontario",
+        "M4W 2K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "TCR 2011 Equities Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ugo Bizzarri",
+        "1000 Yonge St, Ste 500",
+        "Toronto, Ontario",
+        "M4W 2K2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 10 storey; 81 units @ $41,963"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 53",
+      "As in Inst No VM-132975",
+      "",
+      "PIN: 17454-0196",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "25 18 010 015 00200",
+    "consideration_lines": [
+      "cash: $2,149,628     assumed/vtb debt: $1,249,396",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $8,192,800   rate: Prime plus 10.0% per annum.",
+      "registered: 06/19/2014   due: on demand",
+      "",
+      "chargee: TCR 2011 Equities Inc",
+      "principal: $167,200   rate: Prime plus 10.0% per annum.",
+      "registered: 06/19/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "391 / 875",
+      "rt_id": "RT101050"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "2000 MAIN ST W",
+    "postcode": "L8S 4M8",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "06/19/2014",
+    "desc": "Apartment Bldg - 10 storey; 81 units @ $41,963",
+    "bldg": "81 units",
+    "acreage": "1.1",
+    "consid": "3399024",
+    "cash": "2149628",
+    "debt": "1249396",
+    "note": "Related Parties",
+    "pin": "17454-0196",
+    "rollno": "25 18 010 015 00200"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "2000 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "19 Jun 2014",
+    "note": "Related Parties",
+    "description": "Apartment Bldg - 10 storey; 81 units @ $41,963",
+    "seller_lines": [
+      "Timbercreek Opportunity Fund GP#3 Inc",
+      "Timbercreek Opportunity Fund LP#3"
+    ],
+    "buyer_lines": [
+      "TCR 2011 Equities Inc"
+    ],
+    "price_text": "$3,399,024"
+  }
+}

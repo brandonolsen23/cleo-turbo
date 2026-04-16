@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT182995",
+  "source_folder": "Peel_Region/retail/p005",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182995",
+      "source_folder": "Peel_Region/retail/p005",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p005/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2655 LIRUMA RD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "05 Feb 2024",
+      "price_text": "$6,015,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2655 LR Inc     416-256-1600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Berljawsky",
+        "c/o Diamond & Diamond LLP",
+        "255 Consumers Rd, 5th Flr",
+        "Toronto, Ontario",
+        "M2J 1R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Grand River Future Investment Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ali Abdulhussein",
+        "c/o Paris Medical Centre",
+        "1070 Rest Acres Rd, Unit D3",
+        "Paris, Ontario",
+        "N3L 0B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 467, Part Block A",
+      "As in Inst No RO-1021200",
+      "",
+      "PIN: 13425-0001",
+      "",
+      "1.12 acre"
+    ],
+    "arn_text": "21 05 060 137 01200",
+    "consideration_lines": [
+      "cash: $6,015,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $7,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/05/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132118.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132121.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132123.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132132.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132230.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132234.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182995/0218_132323.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "202 / 1087",
+      "rt_id": "RT182995"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2655 LIRUMA RD",
+    "postcode": "L5K 1Y8",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "02/05/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.12",
+    "consid": "6015000",
+    "cash": "6015000",
+    "debt": "",
+    "note": "",
+    "pin": "13425-0001",
+    "rollno": "21 05 060 137 01200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2655 LIRUMA RD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "05 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2655 LR Inc"
+    ],
+    "buyer_lines": [
+      "Grand River Future Investment Inc"
+    ],
+    "price_text": "$6,015,000"
+  }
+}

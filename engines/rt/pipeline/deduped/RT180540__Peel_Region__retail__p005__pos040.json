@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT180540",
+  "source_folder": "Peel_Region/retail/p005",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180540",
+      "source_folder": "Peel_Region/retail/p005",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p005/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "3460 PLATINUM DR",
+        "UNIT B11"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "01 Sep 2023",
+      "price_text": "$910,114",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2106945 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3312 Chief Mbulu Way",
+        "Mississauga, Ontario",
+        "L5M 0H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000593340 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Akbar Chang",
+        "643 Garden Walk",
+        "Mississauga, Ontario",
+        "L5W 1V9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1140,",
+      "Level 1, Unit 29",
+      "",
+      "PIN: 20140-0029"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $910,114     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $605,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075520.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075524.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075548.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075550.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075656.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075657.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075659.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075700.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075822.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1805/RT180540/1007_075902.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "241 / 1087",
+      "rt_id": "RT180540"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "3460 PLATINUM DR, UNIT B11",
+    "postcode": "L5M 2S4",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "09/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "910114",
+    "cash": "910114",
+    "debt": "",
+    "note": "",
+    "pin": "20140-0029",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "3460 PLATINUM DR",
+      "UNIT B11"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2106945 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000593340 Ontario Ltd"
+    ],
+    "price_text": "$910,114"
+  }
+}

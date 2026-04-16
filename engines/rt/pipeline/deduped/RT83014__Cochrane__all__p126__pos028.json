@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT83014",
+  "source_folder": "Cochrane/all/p126",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT83014",
+      "source_folder": "Cochrane/all/p126",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p126/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "1312 GAULTOIS AVE"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "02 Dec 2011",
+      "price_text": "$541,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Canada Mortgage and Housing Corp     613-748-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Louise Michel",
+        "700 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1A 0P7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-575, Lot 1",
+      "",
+      "PIN: 04418-0012",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 06 000 095 05606",
+    "consideration_lines": [
+      "cash: $541,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6279 / 10920",
+      "rt_id": "RT83014"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "1312 GAULTOIS AVE",
+    "postcode": "K1C 3G6",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "12/02/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "541500",
+    "cash": "541500",
+    "debt": "",
+    "note": "",
+    "pin": "04418-0012",
+    "rollno": "06 06 000 095 05606"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "1312 GAULTOIS AVE"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "02 Dec 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Canada Mortgage and Housing Corp"
+    ],
+    "price_text": "$541,500"
+  }
+}

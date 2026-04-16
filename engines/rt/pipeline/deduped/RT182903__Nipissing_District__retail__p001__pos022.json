@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT182903",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182903",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "24 FRONT ST"
+      ],
+      "city_region": "W. Nipissing : Nipissing District",
+      "date_text": "01 Feb 2024",
+      "price_text": "$3,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Les Placements Daniel Tremblay Ltee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "15 Front St",
+        "Sturgeon Falls, Ontario",
+        "P2B 3L3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "D. Lester Auto Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darrin Lester",
+        "46A Sixth Concession Rd",
+        "Brantford, Ontario",
+        "N3R 0B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 36R-13818, Parts 2-5 & 7",
+      "",
+      "PIN: 49078-0612 +",
+      "",
+      "1.80 acre"
+    ],
+    "arn_text": "48 52 030 015 16900",
+    "consideration_lines": [
+      "cash: $3,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,800,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 46",
+      "rt_id": "RT182903"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "24 FRONT ST",
+    "postcode": "P2B 3L4",
+    "municipality": "W. Nipissing",
+    "region": "Nipissing District",
+    "date": "02/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.8",
+    "consid": "3200000",
+    "cash": "3200000",
+    "debt": "",
+    "note": "",
+    "pin": "49078-0612+",
+    "rollno": "48 52 030 015 16900"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "24 FRONT ST"
+    ],
+    "city_region": "W. Nipissing : Nipissing District",
+    "date_text": "01 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Les Placements Daniel Tremblay Ltee"
+    ],
+    "buyer_lines": [
+      "D. Lester Auto Group Inc"
+    ],
+    "price_text": "$3,200,000"
+  }
+}

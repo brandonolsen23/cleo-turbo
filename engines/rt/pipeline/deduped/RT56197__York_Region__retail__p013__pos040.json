@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT56197",
+  "source_folder": "York_Region/retail/p013",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56197",
+      "source_folder": "York_Region/retail/p013",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "9100 JANE ST",
+        "UNITS 68-70"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "18 Jun 2007",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sonterra Property Development Corp     416-736-4096"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Angelo Baldassarra",
+        "Greenpark Homes",
+        "8700 Dufferin St",
+        "Concord, Ontario",
+        "L4K 4S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1231628 Ontario Ltd     905-856-3306"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Adriano Lisi",
+        "Marlisi Construction",
+        "90 Winges Rd, Unit 5",
+        "Woodbridge, Ontario",
+        "L4L 6A9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza Condo - 1 storey; 3 tenants 8,832 sf @ $306",
+      "",
+      "Fully leased."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1086",
+      "Level 1, Units 68-70"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Sonterra Property Development Corp",
+      "principal: $1,000,000   rate: 6.3% per annum",
+      "registered: 06/18/2007   due: 06/18/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "641 / 984",
+      "rt_id": "RT56197"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "9100 JANE ST, UNITS 68-70",
+    "postcode": "L4K 0A4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/18/2007",
+    "desc": "Retail Plaza Condo - 1 storey; 3 tenants 8,832 sf @ $306",
+    "bldg": "8,832 sf",
+    "acreage": "",
+    "consid": "2700000",
+    "cash": "2700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "9100 JANE ST",
+      "UNITS 68-70"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "18 Jun 2007",
+    "note": "",
+    "description": "Retail Plaza Condo - 1 storey; 3 tenants 8,832 sf @ $306",
+    "seller_lines": [
+      "Sonterra Property Development Corp"
+    ],
+    "buyer_lines": [
+      "1231628 Ontario Ltd"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

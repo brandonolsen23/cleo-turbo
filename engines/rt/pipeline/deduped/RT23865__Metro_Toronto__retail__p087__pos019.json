@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23865",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23865",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "MARKHAM CORNERS",
+        "5085 - 5121 SHEPPARD AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "14 Dec 2001",
+      "price_text": "$12,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Katy Ritcey",
+        "130 King St W, Ste 700",
+        "PO Box 378",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1501662 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Johann Ulrich",
+        "70 Dunmurray Blvd",
+        "Toronto, Ontario",
+        "M1T 2K5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 83,819 sf @ $150"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-2047, Block 1",
+      "",
+      "7.49 acre"
+    ],
+    "arn_text": "19 01 121 387 04000",
+    "consideration_lines": [
+      "cash: $3,550,000     assumed/vtb debt: $9,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT238/RT23865/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4320 / 4952",
+      "rt_id": "RT23865"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "MARKHAM CORNERS, 5085 - 5121 SHEPPARD AVE E",
+    "postcode": "M1S 4N8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/14/2001",
+    "desc": "Retail Plaza - 83,819 sf @ $150",
+    "bldg": "83,819 sf",
+    "acreage": "7.49",
+    "consid": "12550000",
+    "cash": "3550000",
+    "debt": "9000000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 121 387 04000"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "MARKHAM CORNERS",
+      "5085 - 5121 SHEPPARD AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "14 Dec 2001",
+    "note": "",
+    "description": "Retail Plaza - 83,819 sf @ $150",
+    "seller_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1501662 Ontario Ltd"
+    ],
+    "price_text": "$12,550,000"
+  }
+}

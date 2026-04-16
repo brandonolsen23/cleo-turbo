@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT142218",
+  "source_folder": "Brant/retail/p002",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT142218",
+      "source_folder": "Brant/retail/p002",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "26 BRANTWOOD PARK RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "08 Apr 2019",
+      "price_text": "$998,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "11277910 Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hongmei Huang",
+        "103 Tranquility St",
+        "Brantford, Ontario",
+        "N3R 3H9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in August 2008 for $550,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-6831, Part 1",
+      "",
+      "PIN: 32193-0373",
+      "",
+      "0.84 acre"
+    ],
+    "arn_text": "26 06 030 019 00110",
+    "consideration_lines": [
+      "cash: $998,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Company",
+      "principal: $748,500   rate: 6.25% per annnum.",
+      "registered: 04/08/2019   due: 05/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072413.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072433.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072445.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072446.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072525.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072529.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142218/0714_072540.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "72 / 195",
+      "rt_id": "RT142218"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "26 BRANTWOOD PARK RD",
+    "postcode": "N3P 1G2",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "04/08/2019",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".84",
+    "consid": "998000",
+    "cash": "998000",
+    "debt": "",
+    "note": "",
+    "pin": "32193-0373",
+    "rollno": "26 06 030 019 00110"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "26 BRANTWOOD PARK RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "08 Apr 2019",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "11277910 Canada Corp"
+    ],
+    "price_text": "$998,000"
+  }
+}

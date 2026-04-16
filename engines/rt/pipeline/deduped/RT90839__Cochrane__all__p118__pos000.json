@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT90839",
+  "source_folder": "Cochrane/all/p118",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT90839",
+      "source_folder": "Cochrane/all/p118",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p118/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "474 GLADSTONE AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "08 Nov 2012",
+      "price_text": "$540,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1686955 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Couturier",
+        "474 Gladstone Ave",
+        "Ottawa, Ontario",
+        "K1B 4S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1871840 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Couturier",
+        "2140 Gardenway Dr",
+        "Ottawa, Ontario",
+        "K4A 3M2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30",
+      "Part Lot 25, S/S Gladstone Ave",
+      "As in Inst No CR-572967",
+      "",
+      "PIN: 04120-0357",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "06 14 042 201 04000",
+    "consideration_lines": [
+      "cash: $296,625     assumed/vtb debt: $243,375",
+      "",
+      "chargee: 1686955 Ontario Ltd",
+      "principal: $243,375   rate: 0% per annum.",
+      "registered: 11/08/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5851 / 10920",
+      "rt_id": "RT90839"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "474 GLADSTONE AVE",
+    "postcode": "K1R 5N8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/08/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "540000",
+    "cash": "296625",
+    "debt": "243375",
+    "note": "Related Parties",
+    "pin": "04120-0357",
+    "rollno": "06 14 042 201 04000"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "474 GLADSTONE AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "08 Nov 2012",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1686955 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1871840 Ontario Inc"
+    ],
+    "price_text": "$540,000"
+  }
+}

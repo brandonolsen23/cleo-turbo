@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT197160",
+  "source_folder": "Ottawa-Carleton/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197160",
+      "source_folder": "Ottawa-Carleton/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1073 BANK ST",
+        "1075 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "12 Feb 2026",
+      "price_text": "$5,234,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "17457057 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Elham Saikaley",
+        "2089 Thistle Cres",
+        "Ottawa, Ontario",
+        "K1H 5P4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc C - RF, Part Lot K",
+      "Plan 116,",
+      "Part Lots 1 & 2, E/S Bank St",
+      "Part Lot 3, N/S Sunnyside Ave",
+      "As in Inst Nos:",
+      "CR-717920 & N-684490",
+      "",
+      "PIN: 04131-0039 +",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "06 14 052 801 89900 +",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $5,234,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 1141",
+      "rt_id": "RT197160"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1073 BANK ST, 1075 BANK ST",
+    "postcode": "K1S 3W9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/12/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "5234000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04131-0039+",
+    "rollno": "06 14 052 801 89900+"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1073 BANK ST",
+      "1075 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "12 Feb 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "17457057 Canada Inc"
+    ],
+    "price_text": "$5,234,000"
+  }
+}

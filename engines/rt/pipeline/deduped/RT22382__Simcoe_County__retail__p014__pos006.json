@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT22382",
+  "source_folder": "Simcoe_County/retail/p014",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22382",
+      "source_folder": "Simcoe_County/retail/p014",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p014/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 - 32 BRIDGE ST"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "20 Jul 2001",
+      "price_text": "$1,230,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sunpark Developments Inc     905-475-6616"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Domenic DiBernardo",
+        "139 Main St, Ste 206",
+        "Unionville, Ontario",
+        "L3R 2G6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1400084 Ontario Ltd     416-597-9922"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pat Tortorici",
+        "Goldman Sloan Nash Haber",
+        "250 Dundas St W, Ste 700",
+        "Toronto, Ontario",
+        "M5T 2Z5"
+      ]
+    },
+    "description_lines": [
+      "Retail  - 3 bldgs; Wendys, Country Time & Gas Bar (land lease)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-29899, Parts 1-3",
+      "",
+      "SE corner at Dissette St"
+    ],
+    "arn_text": "43 12 010 005 17500",
+    "consideration_lines": [
+      "cash: $1,230,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT223/RT22382/photo.jpg"
+    },
+    "footer": {
+      "page_position": "657 / 712",
+      "rt_id": "RT22382"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "22 - 32 BRIDGE ST",
+    "postcode": "",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "07/20/2001",
+    "desc": "Retail  - 3 bldgs; Wendys, Country Time & Gas Bar (land lease)",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1230000",
+    "cash": "1230000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 12 010 005 17500"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "22 - 32 BRIDGE ST"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "20 Jul 2001",
+    "note": "",
+    "description": "Retail  - 3 bldgs; Wendys, Country Time & Gas Bar (land lease)",
+    "seller_lines": [
+      "Sunpark Developments Inc"
+    ],
+    "buyer_lines": [
+      "1400084 Ontario Ltd"
+    ],
+    "price_text": "$1,230,000"
+  }
+}

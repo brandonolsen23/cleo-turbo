@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20886",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20886",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "200 ADVANCE BLVD"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "26 Mar 2001",
+      "price_text": "$4,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1194151 Ontario Inc     905-669-5744"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Elio Granzotto",
+        "CML Machinery Inc",
+        "300 Bradwick Dr",
+        "Concord, Ontario",
+        "L4K 1K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RKS Investments Ltd     905-812-8624"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rajesh Kaura",
+        "5054 Terry Fox Way",
+        "Mississauga, Ontario",
+        "L5V 1R7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - about 62,000 sf on 6.697 Ac",
+      "Anchored by Bovry Palace Restaurant/Banquet Hall",
+      "",
+      "Last transferred in Aug 96 for $2,500,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-216, Block A",
+      "",
+      "6.70 acre"
+    ],
+    "arn_text": "21 10 150 118 04400",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $3,700,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT208/RT20886/photo.jpg"
+    },
+    "footer": {
+      "page_position": "993 / 1087",
+      "rt_id": "RT20886"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "200 ADVANCE BLVD",
+    "postcode": "L6T 4V4",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "03/26/2001",
+    "desc": "Retail Plaza - about 62,000 sf on 6.697 Ac Anchored by Bovry Palace Restaurant/Banquet Hall",
+    "bldg": "",
+    "acreage": "6.7",
+    "consid": "4650000",
+    "cash": "950000",
+    "debt": "3700000",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 150 118 04400"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "200 ADVANCE BLVD"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "26 Mar 2001",
+    "note": "",
+    "description": "Retail Plaza - about 62,000 sf on 6.697 AcAnchored by Bovry Palace Restaurant/Banquet Hall",
+    "seller_lines": [
+      "1194151 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RKS Investments Ltd"
+    ],
+    "price_text": "$4,650,000"
+  }
+}

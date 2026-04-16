@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT173122",
+  "source_folder": "Peel_Region/retail/p007",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173122",
+      "source_folder": "Peel_Region/retail/p007",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p007/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "361 PARKHURST SQUARE",
+        "UNITS 1 & 2"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "01 Nov 2022",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1411500 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7920 Hurontario St, Unit 43",
+        "Brampton, Ontario",
+        "L6Y 0P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000310474 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pawan Poplee",
+        "123 Calderstone Rd",
+        "Brampton, Ontario",
+        "L6P 2M1"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 797",
+      "Level 1, Units 34 & 35",
+      "",
+      "PIN: 19797-0034 +"
+    ],
+    "arn_text": "21 10 120 002 15144 +",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,350,000   rate: Prime plus 10.0% per annum.",
+      "registered: 11/01/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145716.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145720.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145755.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145757.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145808.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145821.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173122/1119_145824.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "317 / 1087",
+      "rt_id": "RT173122"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "361 PARKHURST SQUARE, UNITS 1 & 2",
+    "postcode": "L6T 0C2",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "11/01/2022",
+    "desc": "Retail Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "19797-0034+",
+    "rollno": "21 10 120 002 15144+"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "361 PARKHURST SQUARE",
+      "UNITS 1 & 2"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "01 Nov 2022",
+    "note": "",
+    "description": "Retail Condo",
+    "seller_lines": [
+      "1411500 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000310474 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

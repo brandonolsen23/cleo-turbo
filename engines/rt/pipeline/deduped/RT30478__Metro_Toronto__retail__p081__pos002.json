@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT30478",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30478",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "94A SCOLLARD ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Jun 2003",
+      "price_text": "$590,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Prime Media Group Inc     416-932-4969"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Terrence O'Sullivan",
+        "Randall R. Friedland",
+        "2200 Yonge St, Ste 1301",
+        "M4S 2C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 2 storey; converted row house"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 179, Part Lot 55",
+      "As in Inst No CA-628702",
+      "",
+      "0.02 acre"
+    ],
+    "arn_text": "19 04 052 280 06400",
+    "consideration_lines": [
+      "cash: $590,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT304/RT30478/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4003 / 4952",
+      "rt_id": "RT30478"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "94A SCOLLARD ST",
+    "postcode": "M5R 1G2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/03/2003",
+    "desc": "Retail/Res Bldg - 2 storey; converted row house",
+    "bldg": "",
+    "acreage": ".02",
+    "consid": "590000",
+    "cash": "590000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 280 06400"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "94A SCOLLARD ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Jun 2003",
+    "note": "",
+    "description": "Retail/Res Bldg - 2 storey; converted row house",
+    "seller_lines": [
+      "The Prime Media Group Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$590,000"
+  }
+}

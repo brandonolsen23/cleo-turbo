@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT34030",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34030",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "90 MAIN ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "09 Jan 2004",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Staple Investments Ltd     416-733-0491"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Norman Stein",
+        "5444 Yonge St, Ste 308",
+        "Toronto, Ontario",
+        "M2N 6J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Corporation of the City of Cambridge     519-623-1340"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Calder",
+        "73 Water St N",
+        "PO Box 669",
+        "Cambridge, Ontario",
+        "N1R 5W8"
+      ]
+    },
+    "description_lines": [
+      "Vacant Woolco Bldg - 3 storey; 64,000 sf @ $9",
+      "",
+      "Bldg has been vacant for about 10 years."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 615",
+      "Lot 6 & Part Lot 5, N/S Main St E",
+      "As in Inst No 1483118",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "30 06 040 016 05600",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT340/RT34030/photo.jpg"
+    },
+    "footer": {
+      "page_position": "630 / 752",
+      "rt_id": "RT34030"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "90 MAIN ST",
+    "postcode": "N1R 1V7",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "01/09/2004",
+    "desc": "Vacant Woolco Bldg - 3 storey; 64,000 sf @ $9",
+    "bldg": "64,000 sf",
+    "acreage": ".6",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 040 016 05600"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "90 MAIN ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "09 Jan 2004",
+    "note": "",
+    "description": "Vacant Woolco Bldg - 3 storey; 64,000 sf @ $9",
+    "seller_lines": [
+      "Staple Investments Ltd"
+    ],
+    "buyer_lines": [
+      "The Corporation of the City of Cambridge"
+    ],
+    "price_text": "$550,000"
+  }
+}

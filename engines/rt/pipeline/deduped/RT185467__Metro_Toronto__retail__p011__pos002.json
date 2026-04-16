@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT185467",
+  "source_folder": "Metro_Toronto/retail/p011",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185467",
+      "source_folder": "Metro_Toronto/retail/p011",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p011/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "755 MOUNT PLEASANT RD",
+        "755 MT PLEASANT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "20 Jun 2024",
+      "price_text": "$11,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Amala Enterprise Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "22 Parkwood Ave",
+        "Toronto, Ontario",
+        "M4V 2X1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CP REIT Ontario Properties Ltd     416-628-7771"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rael Diamond",
+        "22 St Clair Ave E, Ste 700",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "description_lines": [
+      "Last transferred in December 2006 for $10,000,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 978, Part Lots 5 & 6",
+      "As in Inst Nos:",
+      "CA-585556 & CA-594122",
+      "",
+      "PIN: 21135-0045 +",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "19 04 103 690 02200 +",
+    "consideration_lines": [
+      "cash: $11,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185467/0707_080123.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185467/0707_080124.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185467/0707_080154.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185467/0707_080201.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "503 / 4952",
+      "rt_id": "RT185467"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "755 MOUNT PLEASANT RD, 755 MT PLEASANT RD",
+    "postcode": "M4S 2N4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/20/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "11500000",
+    "cash": "11500000",
+    "debt": "",
+    "note": "",
+    "pin": "21135-0045+",
+    "rollno": "19 04 103 690 02200+"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "755 MOUNT PLEASANT RD",
+      "755 MT PLEASANT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "20 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Amala Enterprise Inc"
+    ],
+    "buyer_lines": [
+      "CP REIT Ontario Properties Ltd"
+    ],
+    "price_text": "$11,500,000"
+  }
+}

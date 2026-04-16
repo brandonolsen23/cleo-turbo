@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT123824",
+  "source_folder": "Leeds/all/p020",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123824",
+      "source_folder": "Leeds/all/p020",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 5 - NER, PT LOT 30",
+        "CONC 6 - NER, PT LOT 30"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "07 Mar 2017",
+      "price_text": "$754,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bas-tim Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Bastiaansen",
+        "c/o 7942 Townsend Line, RR 3",
+        "Thedford, Ontario",
+        "N0M 2N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "McCann Redi-Mix Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William McCann",
+        "69478 Bronson Line, RR 3",
+        "Dashwood, Ontario",
+        "N0M 1N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - NER, Part Lot 30",
+      "Conc 6 - NER, Part Lot 30",
+      "As in Inst No L-778832",
+      "",
+      "PIN: 43048-0104",
+      "",
+      "54.69 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $754,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1238/RT123824/air1.jpg",
+        "/assets/files/RT12/RT1238/RT123824/air2.jpg",
+        "/assets/files/RT12/RT1238/RT123824/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "965 / 1916",
+      "rt_id": "RT123824"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "CONC 5 - NER, PT LOT 30, CONC 6 - NER, PT LOT 30",
+    "postcode": "",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "03/07/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "54.69",
+    "consid": "754000",
+    "cash": "754000",
+    "debt": "",
+    "note": "",
+    "pin": "43048-0104",
+    "rollno": ""
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "CONC 5 - NER, PT LOT 30",
+      "CONC 6 - NER, PT LOT 30"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "07 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bas-tim Inc"
+    ],
+    "buyer_lines": [
+      "McCann Redi-Mix Inc"
+    ],
+    "price_text": "$754,000"
+  }
+}

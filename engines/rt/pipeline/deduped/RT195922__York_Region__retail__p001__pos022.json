@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT195922",
+  "source_folder": "York_Region/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195922",
+      "source_folder": "York_Region/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "10480 ISLINGTON AVE",
+        "UNIT 7"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "01 Dec 2025",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2037125 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7 Valley Hill Dr",
+        "Bolton, Ontario",
+        "L7E 0B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "AJR Property Holdings Inc     416-743-2501"
+      ],
+      "trade_name": "Carstar Etobicoke North",
+      "contact_lines": [
+        "Attn: Joseph Chiummiento",
+        "14 Taber Rd",
+        "Etobicoke, Ontario",
+        "M9W 3A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 960",
+      "Level 1, Unit 13",
+      "Level A, Unit 11",
+      "",
+      "PIN: 29491-0013 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195922/1213_151625.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195922/1213_151633.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195922/1213_151724.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195922/1213_151725.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195922/1213_151727.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195922/1213_151731.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 984",
+      "rt_id": "RT195922"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "10480 ISLINGTON AVE, UNIT 7",
+    "postcode": "L0J 1C0",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "12/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "29491-0013+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "10480 ISLINGTON AVE",
+      "UNIT 7"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "01 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2037125 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "AJR Property Holdings Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

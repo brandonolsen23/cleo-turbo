@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT56081",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56081",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "83 MAIN ST S",
+        "(GEORGETOWN)"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "15 Jun 2007",
+      "price_text": "$990,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "764079 Ontario Ltd     416-789-1518"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Albert Stern",
+        "120 Bannockburn Ave",
+        "Toronto, Ontario",
+        "M6M 2N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2130077 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Genia Elkind",
+        "83 Main St",
+        "Halton Hills, Ontario",
+        "L7G 3E5"
+      ]
+    },
+    "description_lines": [
+      "RBC Bank Branch - 1 storey; 3,000 sf @ $330",
+      "",
+      "Last transferred in Aug 2006 for $925,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 37, Part Lots 4 & 5",
+      "E of Main St or S of Mill St",
+      "As in Inst No 352339",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "24 15 010 003 05100",
+    "consideration_lines": [
+      "cash: $990,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $495,000   rate: 6.7% per annum",
+      "registered: 06/15/2007   due: 06/30/2012"
+    ],
+    "broker_lines": [
+      "Forest Hill Real Estate Inc: Stephen Green, 416-226-1987",
+      "RE/MAX Unique Inc: Matt Elkind, 416-928-6833"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT560/RT56081/0630_160921.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT560/RT56081/0630_160923.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT560/RT56081/air1.jpg",
+        "/assets/files/RT5/RT560/RT56081/air2.jpg",
+        "/assets/files/RT5/RT560/RT56081/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "370 / 613",
+      "rt_id": "RT56081"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "83 MAIN ST S, (GEORGETOWN)",
+    "postcode": "L7G 3E5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "06/15/2007",
+    "desc": "RBC Bank Branch - 1 storey; 3,000 sf @ $330",
+    "bldg": "3,000 sf",
+    "acreage": ".1",
+    "consid": "990000",
+    "cash": "990000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 010 003 05100"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "83 MAIN ST S",
+      "(GEORGETOWN)"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "15 Jun 2007",
+    "note": "",
+    "description": "RBC Bank Branch - 1 storey; 3,000 sf @ $330",
+    "seller_lines": [
+      "764079 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2130077 Ontario Inc"
+    ],
+    "price_text": "$990,000"
+  }
+}

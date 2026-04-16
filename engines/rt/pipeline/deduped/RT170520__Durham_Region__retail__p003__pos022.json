@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT170520",
+  "source_folder": "Durham_Region/retail/p003",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170520",
+      "source_folder": "Durham_Region/retail/p003",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p003/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "1520 DUNDAS ST E"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "21 Jul 2022",
+      "price_text": "$7,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "ILO Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "701 Rossland Rd E, Unit 356",
+        "Whitby, Ontario",
+        "L1N 9K3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "14118391 Canada Inc     866-598-8507"
+      ],
+      "trade_name": "Motorcity Mitsubishi",
+      "contact_lines": [
+        "Attn: Richard MacDonald",
+        "1520 Dundas St E",
+        "Whitby, Ontario",
+        "L1N 2K7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 21",
+      "Plan 40R-9264, Part 1",
+      "Plan 40R-7826, Parts 4-8",
+      "",
+      "PIN: 26521-0752",
+      "",
+      "2.77 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $5,782,500   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 07/21/2022   due: on demand",
+      "",
+      "chargee: ILO Investments Inc",
+      "principal: $1,170,000   rate: 8.0% per annum.",
+      "registered: 07/21/2022   due: 07/18/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132235.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132252.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132253.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132254.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132335.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132339.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170520/0731_132342.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "123 / 506",
+      "rt_id": "RT170520"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "1520 DUNDAS ST E",
+    "postcode": "L1N 2K7",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "07/21/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.77",
+    "consid": "7800000",
+    "cash": "7800000",
+    "debt": "",
+    "note": "",
+    "pin": "26521-0752",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "1520 DUNDAS ST E"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "21 Jul 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "ILO Investments Inc"
+    ],
+    "buyer_lines": [
+      "14118391 Canada Inc"
+    ],
+    "price_text": "$7,800,000"
+  }
+}

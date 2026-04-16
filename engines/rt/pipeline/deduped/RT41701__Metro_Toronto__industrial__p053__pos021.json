@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT41701",
+  "source_folder": "Metro_Toronto/industrial/p053",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41701",
+      "source_folder": "Metro_Toronto/industrial/p053",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p053/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1315 QUEEN ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Apr 2005",
+      "price_text": "$650,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1657483 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carlos Canejo",
+        "3057 Grenville Dr",
+        "Mississauga, Ontario",
+        "L5A 2P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 658, Part Lot 1",
+      "A in Inst No ES-58588",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 081 290 02900",
+    "consideration_lines": [
+      "cash: $75,000     assumed/vtb debt: $575,000",
+      "",
+      "chargee: Annette Rapoport",
+      "Esther Wine",
+      "principal: $575,000   rate: 0% per annum",
+      "registered: 04/29/2005   due: 10/25/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT417/RT41701/air1.jpg",
+        "/assets/files/RT4/RT417/RT41701/air2.jpg",
+        "/assets/files/RT4/RT417/RT41701/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT417/RT41701/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2622 / 4000",
+      "rt_id": "RT41701"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1315 QUEEN ST E",
+    "postcode": "",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/29/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "650000",
+    "cash": "75000",
+    "debt": "575000",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 04 081 290 02900"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1315 QUEEN ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Apr 2005",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1657483 Ontario Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

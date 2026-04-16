@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT61820",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT61820",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "428 KING ST W"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "01 May 2008",
+      "price_text": "$7,639,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2085564 Ontario Inc",
+        "1259868 Ontario Inc     416-785-0350"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michel Grunbaum",
+        "57 Viewmount Ave",
+        "Toronto, Ontario",
+        "M6B 1T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Capital City Shopping Centre Ltd     416-603-0849"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Murphy",
+        "20 Richmond St E, Ste 202",
+        "Toronto, Ontario",
+        "M5C 2R9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Part Lot 7",
+      "Plan 58R-10962, Part 1",
+      "",
+      "2.29 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,930,820     assumed/vtb debt: $4,708,680"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61820/0531_132348.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61820/0531_132349.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61820/0531_132409.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61820/0531_132410.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61820/0531_132830.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61820/0531_132831.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT618/RT61820/air1.jpg",
+        "/assets/files/RT6/RT618/RT61820/air2.jpg",
+        "/assets/files/RT6/RT618/RT61820/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "524 / 752",
+      "rt_id": "RT61820"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "428 KING ST W",
+    "postcode": "N2J 2Z6",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "05/01/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.29",
+    "consid": "7639500",
+    "cash": "2930820",
+    "debt": "4708680",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "428 KING ST W"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "01 May 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2085564 Ontario Inc",
+      "1259868 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Capital City Shopping Centre Ltd"
+    ],
+    "price_text": "$7,639,500"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT32897",
+  "source_folder": "Metro_Toronto/retail/p079",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32897",
+      "source_folder": "Metro_Toronto/retail/p079",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p079/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "448 - 452 WILSON AVE"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "01 Dec 2003",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1417037 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Wojdat",
+        "21 Roycrest Ave",
+        "Toronto, Ontario",
+        "M2N 1R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bel-Ar Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Pearl",
+        "19 Bessemer Ct, Unit 1",
+        "Concord, Ontario",
+        "L4K 3E1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in June 2002 for $655,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - WYS, Part Lot 11",
+      "As in Inst No TR-18228",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "19 08 051 270 08200",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT328/RT32897/air1.jpg",
+        "/assets/files/RT3/RT328/RT32897/air2.jpg",
+        "/assets/files/RT3/RT328/RT32897/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32897/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3902 / 4952",
+      "rt_id": "RT32897"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "448 - 452 WILSON AVE",
+    "postcode": "M3H 1T6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/01/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 051 270 08200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "448 - 452 WILSON AVE"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "01 Dec 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1417037 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Bel-Ar Investments Ltd"
+    ],
+    "price_text": "$775,000"
+  }
+}

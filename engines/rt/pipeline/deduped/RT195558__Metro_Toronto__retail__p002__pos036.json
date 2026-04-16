@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT195558",
+  "source_folder": "Metro_Toronto/retail/p002",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195558",
+      "source_folder": "Metro_Toronto/retail/p002",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p002/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "1921 DAVENPORT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Nov 2025",
+      "price_text": "$2,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Silva Groceries Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Grechi Carter Professioal Corp",
+        "1 Eglinton Ave E, Ste 803",
+        "Toronto, Ontario",
+        "M4P 3A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001401726 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hou Wei Chen",
+        "90 Allstate Pkwy, Ste 701",
+        "Markham, Ontario",
+        "L3R 6H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-92,",
+      "Part Lot 1, S/S Davenport Rd",
+      "",
+      "PIN: 21326-0100",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 032 060 03700",
+    "consideration_lines": [
+      "cash: $2,675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Forty Eight Corp",
+      "principal: $2,675,000   rate: 5.0% per annum.",
+      "registered: 11/17/2025   due: 12/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1955/RT195558/1207_102638.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1955/RT195558/1207_102642.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1955/RT195558/1207_102643.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1955/RT195558/1207_102702.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1955/RT195558/1207_102704.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1955/RT195558/1207_102732.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "87 / 4952",
+      "rt_id": "RT195558"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "1921 DAVENPORT RD",
+    "postcode": "M6N 1C1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "2675000",
+    "cash": "2675000",
+    "debt": "",
+    "note": "",
+    "pin": "21326-0100",
+    "rollno": "19 04 032 060 03700"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "1921 DAVENPORT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Silva Groceries Ltd"
+    ],
+    "buyer_lines": [
+      "1001401726 Ontario Inc"
+    ],
+    "price_text": "$2,675,000"
+  }
+}

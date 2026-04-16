@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT185563",
+  "source_folder": "Kitchener-Waterloo/retail/p002",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185563",
+      "source_folder": "Kitchener-Waterloo/retail/p002",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p002/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "65 GATEWAY PARK DR"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "20 Jun 2024",
+      "price_text": "$4,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2169460 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "61 Northern Pine Blvd",
+        "Kleinburg, Ontario",
+        "L4H 4E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Costco Wholesale Canada Ltd     613-221-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gail Tsuboi",
+        "415 West Hunt Club Rd",
+        "Ottawa, Ontario",
+        "K2E 1C5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-11703, Part 1",
+      "",
+      "PIN: 22627-0109",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185563/0906_160149.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185563/0906_160218.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185563/0906_160257.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185563/0906_160309.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "90 / 752",
+      "rt_id": "RT185563"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "65 GATEWAY PARK DR",
+    "postcode": "N2P 2J9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "06/20/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".67",
+    "consid": "4800000",
+    "cash": "4800000",
+    "debt": "",
+    "note": "",
+    "pin": "22627-0109",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "65 GATEWAY PARK DR"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "20 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2169460 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Costco Wholesale Canada Ltd"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

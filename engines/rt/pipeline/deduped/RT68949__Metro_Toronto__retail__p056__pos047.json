@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT68949",
+  "source_folder": "Metro_Toronto/retail/p056",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68949",
+      "source_folder": "Metro_Toronto/retail/p056",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p056/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "826 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Oct 2009",
+      "price_text": "$595,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1797296 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sylvia Shawn",
+        "44 Charles St W, Ste 4008",
+        "Toronto, Ontario",
+        "M4Y 1R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - FTB, Part Lot 21",
+      "Plan 63R-686, Part 1",
+      "",
+      "PIN: 21197-0155",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 04 052 020 01900",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $595,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT689/RT68949/air1.jpg",
+        "/assets/files/RT6/RT689/RT68949/air2.jpg",
+        "/assets/files/RT6/RT689/RT68949/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2798 / 4952",
+      "rt_id": "RT68949"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "826 YONGE ST",
+    "postcode": "M4W 2H1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/15/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "595000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "21197-0155",
+    "rollno": "19 04 052 020 01900"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "826 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Oct 2009",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1797296 Ontario Ltd"
+    ],
+    "price_text": "$595,000"
+  }
+}

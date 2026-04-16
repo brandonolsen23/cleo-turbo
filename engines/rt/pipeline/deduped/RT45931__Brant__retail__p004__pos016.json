@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT45931",
+  "source_folder": "Brant/retail/p004",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45931",
+      "source_folder": "Brant/retail/p004",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "34 PARIS RD"
+      ],
+      "city_region": "Paris : Brant",
+      "date_text": "16 Dec 2005",
+      "price_text": "$2,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jerry Bekendam Greenhouses Ltd",
+        "Bekendam Garden & Gift Centre Ltd     519-752-6176"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jerry Bekendam",
+        "181 Jerseyville Rd, RR 8",
+        "Brantford, Ontario",
+        "N3T 5M1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1473587 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jim Morrow",
+        "380 Pelissier St, Ste 1603",
+        "Windsor, Ontario",
+        "N9A 6W8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Wm Curtis Grant",
+      "Augustus Jones Tract",
+      "Plan 2R-6122, Part 1",
+      "Plan 2R-5140, Parts 2-6",
+      "Plan 2R-4684, Part 2",
+      "",
+      "12.17 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "167 / 195",
+      "rt_id": "RT45931"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "34 PARIS RD",
+    "postcode": "N3R 1H8",
+    "municipality": "Paris",
+    "region": "Brant",
+    "date": "12/16/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "12.17",
+    "consid": "2850000",
+    "cash": "2850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "34 PARIS RD"
+    ],
+    "city_region": "Paris : Brant",
+    "date_text": "16 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Jerry Bekendam Greenhouses Ltd",
+      "Bekendam Garden & Gift Centre Ltd"
+    ],
+    "buyer_lines": [
+      "1473587 Ontario Ltd"
+    ],
+    "price_text": "$2,850,000"
+  }
+}

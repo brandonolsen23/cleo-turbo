@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT176690",
+  "source_folder": "Niagara_N/retail/p002",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176690",
+      "source_folder": "Niagara_N/retail/p002",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p002/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "364 SCOTT ST"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "03 Apr 2023",
+      "price_text": "$1,575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2137731 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "PO Box 28114",
+        "St Catharines, Ontario",
+        "L2N 7P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "364 Scott Inc     416-739-7758"
+      ],
+      "trade_name": "Street Properties",
+      "contact_lines": [
+        "Attn: Denis Gubert",
+        "1858 Avenue Rd, Ste 200",
+        "Toronto, Ontario",
+        "M5M 3Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30R-5735, Part 2",
+      "",
+      "PIN: 46287-0002",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "26 29 050 005 00900",
+    "consideration_lines": [
+      "cash: $1,575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $940,000   rate: 7.49% per annum.",
+      "registered: 04/03/2023   due: 04/05/2025",
+      "",
+      "chargee: Whitby Lanes Inc",
+      "principal: $398,000   rate: 17.36% per annum.",
+      "registered: 04/03/2023   due: 04/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095246.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095255.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095256.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095333.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095342.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095352.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176690/0506_095410.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1766/RT176690/air1.jpg",
+        "/assets/files/RT17/RT1766/RT176690/air2.jpg",
+        "/assets/files/RT17/RT1766/RT176690/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "74 / 307",
+      "rt_id": "RT176690"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "364 SCOTT ST",
+    "postcode": "L2M 3W4",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "04/03/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".44",
+    "consid": "1575000",
+    "cash": "1575000",
+    "debt": "",
+    "note": "",
+    "pin": "46287-0002",
+    "rollno": "26 29 050 005 00900"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "364 SCOTT ST"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "03 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2137731 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "364 Scott Inc"
+    ],
+    "price_text": "$1,575,000"
+  }
+}

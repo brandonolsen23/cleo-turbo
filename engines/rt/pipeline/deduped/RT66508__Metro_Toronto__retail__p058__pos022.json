@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT66508",
+  "source_folder": "Metro_Toronto/retail/p058",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66508",
+      "source_folder": "Metro_Toronto/retail/p058",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p058/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "2256 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Mar 2009",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Send Inc     416-641-2800"
+      ],
+      "trade_name": "Baka Communications",
+      "contact_lines": [
+        "Attn: John Marion",
+        "630 The East Mall",
+        "Toronto, Ontario",
+        "M9B 4B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 714, Part Lot 6",
+      "As in Inst No WT-99718",
+      "",
+      "PIN: 21376-0265",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 012 070 10100",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $3,203,800   rate: Base plus 10.00% per annum",
+      "registered: 03/31/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT665/RT66508/0412_090346.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT665/RT66508/0412_090406.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT665/RT66508/0412_090429.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2873 / 4952",
+      "rt_id": "RT66508"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "2256 BLOOR ST W",
+    "postcode": "M6S 1N6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/31/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "21376-0265",
+    "rollno": "19 04 012 070 10100"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "2256 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Mar 2009",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Send Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

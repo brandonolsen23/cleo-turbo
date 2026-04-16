@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT178702",
+  "source_folder": "Leeds/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178702",
+      "source_folder": "Leeds/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "614 STEWART BLVD"
+      ],
+      "city_region": "Brockville : Leeds",
+      "date_text": "30 May 2023",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "534499 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "555 Stewart Blvd",
+        "Brockville, Ontario",
+        "K6V 7H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sean MacCormack",
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Elizabethtown",
+      "Part Lot 15",
+      "Plan 28R-14391, Part 1",
+      "",
+      "PIN: 44184-0263",
+      "",
+      "6.33 acre"
+    ],
+    "arn_text": "08 02 030 075 15700",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1787/RT178702/air1.jpg",
+        "/assets/files/RT17/RT1787/RT178702/air2.jpg",
+        "/assets/files/RT17/RT1787/RT178702/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 40",
+      "rt_id": "RT178702"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "614 STEWART BLVD",
+    "postcode": "K6V 7H2",
+    "municipality": "Brockville",
+    "region": "Leeds",
+    "date": "05/30/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.33",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "44184-0263",
+    "rollno": "08 02 030 075 15700"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "614 STEWART BLVD"
+    ],
+    "city_region": "Brockville : Leeds",
+    "date_text": "30 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "534499 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT171740",
+  "source_folder": "Cochrane/all/p028",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT171740",
+      "source_folder": "Cochrane/all/p028",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p028/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2104 DUNNING RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "02 Sep 2022",
+      "price_text": "$1,585,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000209486 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Denis Desjardins",
+        "2105 Dunning Rd",
+        "Ottawa, Ontario",
+        "K4C 1M1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - NS, Part Lot 1",
+      "As in Inst No N-694227",
+      "Except:",
+      "Plan 4R-10565, Parts 1 & 2",
+      "Plan 4R-14628, Parts 1 & 2",
+      "",
+      "PIN: 14539-0158",
+      "",
+      "92.70 acre"
+    ],
+    "arn_text": "03 11 010 201 01800",
+    "consideration_lines": [
+      "cash: $1,585,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1356 / 10920",
+      "rt_id": "RT171740"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2104 DUNNING RD",
+    "postcode": "K4C 1M1",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "09/02/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "92.7",
+    "consid": "1585000",
+    "cash": "1585000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "14539-0158",
+    "rollno": "03 11 010 201 01800"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2104 DUNNING RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "02 Sep 2022",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000209486 Ontario Inc"
+    ],
+    "price_text": "$1,585,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT197165",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197165",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "31 HURON ST"
+      ],
+      "city_region": "Collingwood : Simcoe County",
+      "date_text": "12 Feb 2026",
+      "price_text": "$4,635,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "31 Huron Street Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1230 Dundas St E",
+        "Toronto, Ontario",
+        "M4M 1S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Charis Developments Ltd     705-445-5904"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Assaff",
+        "186 Hurontario St, Ste 204",
+        "Collingwood, Ontario",
+        "L9Y 4T4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-45028,",
+      "Parts 6, 11-22 & 28",
+      "",
+      "PIN: 58287-0179 +",
+      "",
+      "2.32 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,635,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $5,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/12/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 712",
+      "rt_id": "RT197165"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "31 HURON ST",
+    "postcode": "L9Y 5T7",
+    "municipality": "Collingwood",
+    "region": "Simcoe County",
+    "date": "02/12/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.32",
+    "consid": "4635000",
+    "cash": "4635000",
+    "debt": "",
+    "note": "",
+    "pin": "58287-0179+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "31 HURON ST"
+    ],
+    "city_region": "Collingwood : Simcoe County",
+    "date_text": "12 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "31 Huron Street Inc"
+    ],
+    "buyer_lines": [
+      "Charis Developments Ltd"
+    ],
+    "price_text": "$4,635,000"
+  }
+}

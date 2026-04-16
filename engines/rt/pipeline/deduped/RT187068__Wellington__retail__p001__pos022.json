@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT187068",
+  "source_folder": "Wellington/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187068",
+      "source_folder": "Wellington/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "8911 WELLINGTON RD 124"
+      ],
+      "city_region": "Erin : Wellington",
+      "date_text": "03 Sep 2024",
+      "price_text": "$3,350,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "AT Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "275 Church St",
+        "Elmira, Ontario",
+        "N3B 2Z6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Huron Farm Management Canada ULC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Rosztoczy",
+        "543 Granville St, Ste 1000",
+        "Vancouver, British Columbia",
+        "V6C 1X8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Erin, Part Lot 13",
+      "As in Inst No RO-787804",
+      "",
+      "PIN: 71165-0054",
+      "",
+      "9.93 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,350,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $5,000,000   rate: 18.0% per annum.",
+      "registered: 09/03/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187068/1130_100808.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187068/1130_100824a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187068/1130_100824b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187068/1130_100827.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187068/1130_100830.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1870/RT187068/air1.jpg",
+        "/assets/files/RT18/RT1870/RT187068/air2.jpg",
+        "/assets/files/RT18/RT1870/RT187068/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 269",
+      "rt_id": "RT187068"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "8911 WELLINGTON RD 124",
+    "postcode": "L7J 2L9",
+    "municipality": "Erin",
+    "region": "Wellington",
+    "date": "09/03/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.93",
+    "consid": "3350000",
+    "cash": "3350000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "71165-0054",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "8911 WELLINGTON RD 124"
+    ],
+    "city_region": "Erin : Wellington",
+    "date_text": "03 Sep 2024",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "AT Realty Inc"
+    ],
+    "buyer_lines": [
+      "Huron Farm Management Canada ULC"
+    ],
+    "price_text": "$3,350,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT24029",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24029",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "28 FRASERWOOD AVE"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "14 Jan 2002",
+      "price_text": "$819,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1417037 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Wojdat",
+        "29 Fraserwood Ave",
+        "Toronto, Ontario",
+        "M6B 2N6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JWF Properties Inc, in Trust"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeffrey Feldberg",
+        "1051 McNichol Ave",
+        "Toronto, Ontario",
+        "M1W 3W6"
+      ]
+    },
+    "description_lines": [
+      "SixPlex - 2 storey; 6 units @ $136,500",
+      "",
+      "1-1bdrm 3-2bdrm 2-3bdrm",
+      "",
+      "Last transferred in Jan 2001 for $650,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4810",
+      "Lot 47 & Part Lot 48"
+    ],
+    "arn_text": "19 08 041 490 01000",
+    "consideration_lines": [
+      "cash: $819,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24029/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5302 / 6031",
+      "rt_id": "RT24029"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "28 FRASERWOOD AVE",
+    "postcode": "M6B 2N5",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "01/14/2002",
+    "desc": "SixPlex - 2 storey; 6 units @ $136,500",
+    "bldg": "6 units",
+    "acreage": "",
+    "consid": "819000",
+    "cash": "819000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 041 490 01000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "28 FRASERWOOD AVE"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "14 Jan 2002",
+    "note": "",
+    "description": "SixPlex - 2 storey; 6 units @ $136,500",
+    "seller_lines": [
+      "1417037 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "JWF Properties Inc, in Trust"
+    ],
+    "price_text": "$819,000"
+  }
+}

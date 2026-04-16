@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT31434",
+  "source_folder": "Halton_Region/multifamily/p007",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31434",
+      "source_folder": "Halton_Region/multifamily/p007",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p007/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "384 ST PAUL ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "30 Jul 2003",
+      "price_text": "$1,736,829",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Mijomac Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1199 Haig Rd",
+        "Mississauga, Ontario",
+        "L5E 2M6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 6 storey; 30 units @ $57,894",
+      "",
+      "The vendor sold to his son's company."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - SDS, Part Lot 16",
+      "As in Inst No 837187",
+      "",
+      "0.81 acre"
+    ],
+    "arn_text": "24 02 060 622 03600",
+    "consideration_lines": [
+      "cash: $1,736,829     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "301 / 380",
+      "rt_id": "RT31434"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "384 ST PAUL ST",
+    "postcode": "L7R 3K4",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "07/30/2003",
+    "desc": "Apartment Bldg - 6 storey; 30 units @ $57,894",
+    "bldg": "30 units",
+    "acreage": ".81",
+    "consid": "1736829",
+    "cash": "1736829",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "24 02 060 622 03600"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "384 ST PAUL ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "30 Jul 2003",
+    "note": "Related Parties",
+    "description": "Apartment Bldg - 6 storey; 30 units @ $57,894",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Mijomac Ltd"
+    ],
+    "price_text": "$1,736,829"
+  }
+}

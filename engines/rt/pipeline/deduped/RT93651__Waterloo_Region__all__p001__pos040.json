@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT93651",
+  "source_folder": "Waterloo_Region/all/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93651",
+      "source_folder": "Waterloo_Region/all/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Waterloo_Region/all/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1, PART LOT 1",
+        "CONC 2, PART LOT 1"
+      ],
+      "city_region": "Chapple : Rainy River",
+      "date_text": "25 Jun 2013",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Resolute FP Canada Inc     514-875-2160"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yves Laflamme",
+        "111 Duke St, Ste 5000",
+        "Montreal, Quebec",
+        "H3C 2M1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rainey River Resources Ltd     416-645-7280"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerald Shields",
+        "1 Richmond St W, Ste 701",
+        "Toronto, Ontario",
+        "M5H 3W4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 1",
+      "Conc 2, Part Lot 1",
+      "",
+      "PIN: 56042-0027 +",
+      "",
+      "316.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 59",
+      "rt_id": "RT93651"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "CONC 1, PART LOT 1, CONC 2, PART LOT 1",
+    "postcode": "",
+    "municipality": "Chapple",
+    "region": "Rainy River",
+    "date": "06/25/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "316.23",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "56042-0027+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "CONC 1, PART LOT 1",
+      "CONC 2, PART LOT 1"
+    ],
+    "city_region": "Chapple : Rainy River",
+    "date_text": "25 Jun 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Resolute FP Canada Inc"
+    ],
+    "buyer_lines": [
+      "Rainey River Resources Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

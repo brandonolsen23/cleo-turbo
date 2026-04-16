@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT19792",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19792",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3230 FAIRVIEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "19 Dec 2000",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-544-7625"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ken Silver",
+        "2180 Yonge St, 15th Flr",
+        "PO Box 770, Station K",
+        "Toronto, Ontario",
+        "M4S 2B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PenRetail I Ltd     416-681-3410"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gary Whitelaw",
+        "c/o Ms Katherine Christie, Torys",
+        "Ste 3000, Maritime Life Tower",
+        "Box 270, TD Centre",
+        "Toronto, Ontario",
+        "M5K 1N2"
+      ]
+    },
+    "description_lines": [
+      "Retail Store - Occupied by Canadian Tire"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 299, Part Lot 22",
+      "As in Inst No 364758",
+      "Except Plan 20R-389, as in Inst No 380051",
+      "Except Plan 20R-13637, Part 1",
+      "",
+      "S side 300m W of Cumberland",
+      "",
+      "5.29 acre"
+    ],
+    "arn_text": "24 02 050 521 00200",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT197/RT19792/photo.jpg"
+    },
+    "footer": {
+      "page_position": "559 / 613",
+      "rt_id": "RT19792"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3230 FAIRVIEW ST",
+    "postcode": "L7N 3H5",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "12/19/2000",
+    "desc": "Retail Store - Occupied by Canadian Tire",
+    "bldg": "",
+    "acreage": "5.29",
+    "consid": "4000000",
+    "cash": "4000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 521 00200"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3230 FAIRVIEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "19 Dec 2000",
+    "note": "",
+    "description": "Retail Store - Occupied by Canadian Tire",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "PenRetail I Ltd"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

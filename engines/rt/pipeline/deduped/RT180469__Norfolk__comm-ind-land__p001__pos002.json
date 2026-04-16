@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT180469",
+  "source_folder": "Norfolk/comm-ind-land/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180469",
+      "source_folder": "Norfolk/comm-ind-land/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/comm-ind-land/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "67 NORFOLK COUNTY RD 13"
+      ],
+      "city_region": "Middleton : Norfolk",
+      "date_text": "20 Sep 2023",
+      "price_text": "$1,750,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "Decland Holdings Inc     519-842-6050"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "67 Norfolk County Rd 13",
+        "Courtland, Ontario",
+        "N0J 1E0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Apeiron Industrial Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mayur Patel",
+        "2 Norfolk County Rd 13",
+        "Courtland, Ontario",
+        "N0J 1E0"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg: 25 ft clr; 10,000 sf on about 4.5 Ac",
+      "",
+      "1,000 sf office",
+      "",
+      "2 truck level, 3 drive-in doors",
+      "",
+      "The purchaser also bought the business."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc NTR, Part Lot 161",
+      "Plan 37R-8010, Part 4",
+      "",
+      "PIN: 50147-0247",
+      "",
+      "W side of Norfolk County Rd 13, S of Plowman's Line",
+      "",
+      "4.48 acre"
+    ],
+    "arn_text": "33 10 541 020 11710",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/20/2023   due: on demand"
+    ],
+    "broker_lines": [
+      "Equitas Business Brokers Ltd: Ron Hunter, 416-601-3670"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 31",
+      "rt_id": "RT180469"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "67 NORFOLK COUNTY RD 13",
+    "postcode": "N0J 1E0",
+    "municipality": "Middleton",
+    "region": "Norfolk",
+    "date": "09/20/2023",
+    "desc": "Industrial Bldg: 25 ft clr; 10,000 sf on about 4.5 Ac",
+    "bldg": "10,000 sf",
+    "acreage": "4.48",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "50147-0247",
+    "rollno": "33 10 541 020 11710"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "67 NORFOLK COUNTY RD 13"
+    ],
+    "city_region": "Middleton : Norfolk",
+    "date_text": "20 Sep 2023",
+    "note": "Purchased Business",
+    "description": "Industrial Bldg: 25 ft clr; 10,000 sf on about 4.5 Ac",
+    "seller_lines": [
+      "Decland Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Apeiron Industrial Holdings Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

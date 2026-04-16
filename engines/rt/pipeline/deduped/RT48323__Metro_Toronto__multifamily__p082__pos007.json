@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT48323",
+  "source_folder": "Metro_Toronto/multifamily/p082",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48323",
+      "source_folder": "Metro_Toronto/multifamily/p082",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p082/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 INDIAN RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Apr 2006",
+      "price_text": "$825,000",
+      "note": "Quit Claim"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "FivePlex",
+      "",
+      "2-1bdrm 3-2bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1242, Part Lotds 16 & 17",
+      "As in Inst No CT-896069",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 022 190 01900",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $325,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4058 / 6031",
+      "rt_id": "RT48323"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "150 INDIAN RD",
+    "postcode": "M6R 2V8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/03/2006",
+    "desc": "FivePlex",
+    "bldg": "5 units",
+    "acreage": ".09",
+    "consid": "825000",
+    "cash": "",
+    "debt": "325000",
+    "note": "Quit Claim",
+    "pin": "",
+    "rollno": "19 04 022 190 01900"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "150 INDIAN RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Apr 2006",
+    "note": "Quit Claim",
+    "description": "FivePlex",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$825,000"
+  }
+}

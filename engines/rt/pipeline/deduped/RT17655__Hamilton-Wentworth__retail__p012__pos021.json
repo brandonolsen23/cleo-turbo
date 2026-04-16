@@ -1,0 +1,143 @@
+{
+  "rt_id": "RT17655",
+  "source_folder": "Hamilton-Wentworth/retail/p012",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17655",
+      "source_folder": "Hamilton-Wentworth/retail/p012",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p012/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "77 JAMES ST N"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "08 Jun 2000",
+      "price_text": "$3,570,000",
+      "note": "Bankruptcy"
+    },
+    "transferor": {
+      "party_lines": [
+        "Richter & Partners Inc",
+        "As Liquidator of Distributionco Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Robert Harlang",
+        "60 Eglinton Ave E, Ste 700",
+        "Toronto, Ontario",
+        "M4P 2Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Fercan Developments Inc     416-867-9899 x 225"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vince DeRosa",
+        "193 King St E, Ste 200",
+        "Toronto, Ontario",
+        "M5A 1J5"
+      ]
+    },
+    "description_lines": [
+      "Hamilton Eaton Centre - 3 storey; 386,000 sf @ $9"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-8518, Parts 1-9",
+      "Plan 62R-253, Parts 1-3",
+      "Plan 62R-2801, Parts 1-7",
+      "",
+      "W side opposite Rebecca St"
+    ],
+    "arn_text": "25 18 020 124 02480",
+    "consideration_lines": [
+      "cash: $3,570,000     assumed/vtb debt: $0",
+      "",
+      "chargee: MTTV Tech Ltd",
+      "principal: $1,200,000   rate: 5.0% per annum.",
+      "registered: 06/09/2022   due: 06/08/2023",
+      "",
+      "chargee: Portage Capital Nominee Inc",
+      "General Bank of Canada",
+      "principal: $22,500,000   rate: First 24 months, TD prime plus 3.30% subject to a floor rate of 10.0% per annum. Increasing thereafter to the greater of TD prime plus 5.30% or 12.0% per annum.",
+      "registered: 03/30/2023   due: 05/01/2025",
+      "",
+      "chargee: Portage Capital Nominee Corp",
+      "General Bank of Canada",
+      "principal: $22,500,000   rate: First 24 months, TD prime plus 3.30% subject to a floor of 10.0% per annum. Increasing thereafter to the greater of TD prime plus 5.30% or 12.0% per annum.",
+      "registered: 03/30/3023   due: 05/01/2025",
+      "",
+      "chargee: Atrium Mortgage Investment Corp",
+      "principal: $50,000,000   rate: TD prime plus 4.25% subject to a minimum of 7.50% per annum.",
+      "registered: 03/30/2023   due: 12/31/2025",
+      "",
+      "chargee: TSX Trust Company",
+      "principal: $2,900,000   rate: Greater of 9.50% or RBC prime plus 2.8% per annum. 15.0% per annum on balance remaining upon maturity, and increasing by 10.0% per annum if in default.",
+      "registered: 03/31/2023   due: 04/01/2024",
+      "",
+      "chargee: Queensville Properties Development Corp",
+      "principal: $18,911,200   rate: 0% until 9/27/2024, then 6.0% per annum.",
+      "registered: 03/27/2023   due: 03/27/2025",
+      "",
+      "chargee: Queensville Properties Development Corp",
+      "principal: $6,132,800   rate: 0% until 9/27/2024, then 6.0% per annum.",
+      "registered: 03/27/2023   due: 03/27/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT176/RT17655/photo.jpg"
+    },
+    "footer": {
+      "page_position": "572 / 616",
+      "rt_id": "RT17655"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "77 JAMES ST N",
+    "postcode": "L8R 2K3",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "06/08/2000",
+    "desc": "Hamilton Eaton Centre - 3 storey; 386,000 sf @ $9",
+    "bldg": "386,000 sf",
+    "acreage": "",
+    "consid": "3570000",
+    "cash": "3570000",
+    "debt": "",
+    "note": "Bankruptcy",
+    "pin": "",
+    "rollno": "25 18 020 124 02480"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "77 JAMES ST N"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "08 Jun 2000",
+    "note": "Bankruptcy",
+    "description": "Hamilton Eaton Centre - 3 storey; 386,000 sf @ $9",
+    "seller_lines": [
+      "Richter & Partners Inc",
+      "As Liquidator of Distributionco Inc"
+    ],
+    "buyer_lines": [
+      "Fercan Developments Inc"
+    ],
+    "price_text": "$3,570,000"
+  }
+}

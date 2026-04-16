@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT36140",
+  "source_folder": "Renfrew/retail/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36140",
+      "source_folder": "Renfrew/retail/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1100 PEMBROKE ST E"
+      ],
+      "city_region": "Pembroke : Renfrew",
+      "date_text": "16 Jun 2004",
+      "price_text": "$23,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Juno Developments (Pembroke) Ltd     416-447-0808"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Rosenthal",
+        "1090 Don Mills Rd, Ste 508",
+        "Toronto, Ontario",
+        "M3C 3R6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1529452 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shlomo Sheinbach",
+        "Eglinton Square Management Office",
+        "1 Eglinton Sg",
+        "Toronto, Ontario",
+        "M1L 2K1"
+      ]
+    },
+    "description_lines": [
+      "Pembroke Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 24",
+      "Plan 49R-11920, Parts 1-7",
+      "",
+      "25.84 acre"
+    ],
+    "arn_text": "47 64 000 015 10055",
+    "consideration_lines": [
+      "cash: $23,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 52",
+      "rt_id": "RT36140"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1100 PEMBROKE ST E",
+    "postcode": "K8A 6Y7",
+    "municipality": "Pembroke",
+    "region": "Renfrew",
+    "date": "06/16/2004",
+    "desc": "Pembroke Mall",
+    "bldg": "",
+    "acreage": "25.84",
+    "consid": "23500000",
+    "cash": "23500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "47 64 000 015 10055"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1100 PEMBROKE ST E"
+    ],
+    "city_region": "Pembroke : Renfrew",
+    "date_text": "16 Jun 2004",
+    "note": "",
+    "description": "Pembroke Mall",
+    "seller_lines": [
+      "Juno Developments (Pembroke) Ltd"
+    ],
+    "buyer_lines": [
+      "1529452 Ontario Ltd"
+    ],
+    "price_text": "$23,500,000"
+  }
+}

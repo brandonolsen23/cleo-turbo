@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT24979",
+  "source_folder": "Cochrane/all/p201",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24979",
+      "source_folder": "Cochrane/all/p201",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p201/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "442 GILMOUR ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "05 Mar 2002",
+      "price_text": "$590,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Don Paterson",
+        "Ian Hendry",
+        "433442 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "442 Gilmour St",
+        "Ottawa, Ontario",
+        "K2P 0R8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Harley Ltd",
+        "Port Lucaya Corp",
+        "1323996 Ontario Inc",
+        "1323998 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Don Paterson",
+        "442 Gilmour St",
+        "Ottawa, Ontario",
+        "K2P 0R8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 315",
+      "Level 1, Unit 1"
+    ],
+    "arn_text": "06 14 042 101 03600",
+    "consideration_lines": [
+      "cash: $100,618     assumed/vtb debt: $422,303"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10041 / 10920",
+      "rt_id": "RT24979"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "442 GILMOUR ST",
+    "postcode": "K2P 0R8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/05/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "590000",
+    "cash": "100618",
+    "debt": "422303",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 14 042 101 03600"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "442 GILMOUR ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "05 Mar 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Don Paterson",
+      "Ian Hendry",
+      "433442 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Harley Ltd",
+      "Port Lucaya Corp",
+      "1323996 Ontario Inc",
+      "1323998 Ontario Inc"
+    ],
+    "price_text": "$590,000"
+  }
+}

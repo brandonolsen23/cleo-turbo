@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT33011",
+  "source_folder": "Perth_County/other-bldg/p001",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33011",
+      "source_folder": "Perth_County/other-bldg/p001",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/other-bldg/p001/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "47 WELLINGTON ST S"
+      ],
+      "city_region": "St. Marys : Perth County",
+      "date_text": "01 Dec 2003",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Andrew L. Hodges Funeral Home Ltd     519-284-2820"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Hodges",
+        "47 Wellington St S",
+        "St Marys, Ontario",
+        "N4X 1B2"
+      ]
+    },
+    "description_lines": [
+      "Funeral Home"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 225",
+      "Lots 4, 5 & Part Lot 6, E/S Wellington St",
+      "As in Inst No R-248093",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "31 16 000 070 06100",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT330/RT33011/photo.jpg"
+    },
+    "footer": {
+      "page_position": "31 / 31",
+      "rt_id": "RT33011"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "47 WELLINGTON ST S",
+    "postcode": "N4X 1B2",
+    "municipality": "St. Marys",
+    "region": "Perth County",
+    "date": "12/01/2003",
+    "desc": "Funeral Home",
+    "bldg": "",
+    "acreage": ".39",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "31 16 000 070 06100"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "47 WELLINGTON ST S"
+    ],
+    "city_region": "St. Marys : Perth County",
+    "date_text": "01 Dec 2003",
+    "note": "",
+    "description": "Funeral Home",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Andrew L. Hodges Funeral Home Ltd"
+    ],
+    "price_text": "$525,000"
+  }
+}

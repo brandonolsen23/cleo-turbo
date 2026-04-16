@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT55010",
+  "source_folder": "Kent_County/comm-ind-land/p001",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55010",
+      "source_folder": "Kent_County/comm-ind-land/p001",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/comm-ind-land/p001/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "24933 BEAR LINE",
+        "24947 BEAR LINE"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "05 Apr 2007",
+      "price_text": "$535,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1644553 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Garnet Jack",
+        "8297 Andrews Line, RR 8",
+        "Chatham, Ontario",
+        "N7M 5J8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 20",
+      "",
+      "100.00 acre"
+    ],
+    "arn_text": "36 50 480 006 01500",
+    "consideration_lines": [
+      "cash: $535,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,800,000   rate: Prime plus 0.50% per annum",
+      "registered: 04/05/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "31 / 99",
+      "rt_id": "RT55010"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "24933 BEAR LINE, 24947 BEAR LINE",
+    "postcode": "N0P 1L0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "04/05/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100",
+    "consid": "535000",
+    "cash": "535000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 480 006 01500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "24933 BEAR LINE",
+      "24947 BEAR LINE"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "05 Apr 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1644553 Ontario Ltd"
+    ],
+    "price_text": "$535,000"
+  }
+}

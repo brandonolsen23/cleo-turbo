@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT48334",
+  "source_folder": "Metro_Toronto/retail/p070",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48334",
+      "source_folder": "Metro_Toronto/retail/p070",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p070/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1038 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Apr 2006",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "ECG Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Geoffrey Genovese",
+        "172 John St",
+        "Toronto, Ontario",
+        "M5T 1X5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 400",
+      "Lot 2, N/S Queen St",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 042 230 06600",
+    "consideration_lines": [
+      "cash: $595,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT483/RT48334/air1.jpg",
+        "/assets/files/RT4/RT483/RT48334/air2.jpg",
+        "/assets/files/RT4/RT483/RT48334/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3454 / 4952",
+      "rt_id": "RT48334"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1038 QUEEN ST W",
+    "postcode": "M6J 1H7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/28/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "525000",
+    "cash": "595000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 042 230 06600"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1038 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Apr 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "ECG Properties Inc"
+    ],
+    "price_text": "$525,000"
+  }
+}

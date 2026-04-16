@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT70481",
+  "source_folder": "York_Region/retail/p012",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70481",
+      "source_folder": "York_Region/retail/p012",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 EDGELEY BLVD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "07 Jan 2010",
+      "price_text": "$11,355,750",
+      "note": "Leasehold Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Wal-Mart Canada Corp     905-821-2111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ken Farrell",
+        "1940 Argentia Rd",
+        "Mississauga, Ontario",
+        "L5N 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lowe's Companies Canada ULC     416-730-7300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gary Wyatt",
+        "5160 Yonge St",
+        "Suite 200, PO Box 25",
+        "North York, Ontario",
+        "M2N 6L9"
+      ]
+    },
+    "description_lines": [
+      "Former Sam's Club - 1 storey; 142,943 sf @ $79",
+      "",
+      "Vacant - to be used as a Lowe's store",
+      "",
+      "Lowe's assumed a lease of this property and owns neither the land nor building."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lots 6 & 7",
+      "Plan 65R-24506, Part 1",
+      "",
+      "PIN: 03278-0311",
+      "",
+      "11.27 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $11,355,750"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT704/RT70481/0130_095013.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT704/RT70481/0130_095133.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT704/RT70481/0219_142652.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT704/RT70481/0219_142750.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT704/RT70481/air1.jpg",
+        "/assets/files/RT7/RT704/RT70481/air2.jpg",
+        "/assets/files/RT7/RT704/RT70481/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "561 / 984",
+      "rt_id": "RT70481"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "100 EDGELEY BLVD",
+    "postcode": "L4K 5W7",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/07/2010",
+    "desc": "Former Sam's Club - 1 storey; 142,943 sf @ $79",
+    "bldg": "142,943 sf",
+    "acreage": "11.27",
+    "consid": "11355750",
+    "cash": "",
+    "debt": "",
+    "note": "Leasehold Interest",
+    "pin": "03278-0311",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "100 EDGELEY BLVD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "07 Jan 2010",
+    "note": "Leasehold Interest",
+    "description": "Former Sam's Club - 1 storey; 142,943 sf @ $79",
+    "seller_lines": [
+      "Wal-Mart Canada Corp"
+    ],
+    "buyer_lines": [
+      "Lowe's Companies Canada ULC"
+    ],
+    "price_text": "$11,355,750"
+  }
+}

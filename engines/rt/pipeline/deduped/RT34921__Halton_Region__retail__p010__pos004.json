@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT34921",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34921",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1500 - 1550 UPPER MIDDLE RD"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "07 Apr 2004",
+      "price_text": "$2,522,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1374264 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Henry Fitzsimmons",
+        "1128 Guelph Line",
+        "Burlington, Ontario",
+        "L7P 2S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Haro Investments Inc     416-674-6526"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nandalall Shivratan",
+        "Electro Cash Register",
+        "22 Topbank Dr",
+        "Toronto, Ontario",
+        "M9W 7C2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 11 units 22,416 sf @ $113",
+      "",
+      "Last transferred in Dec 99 for $1,400,000 under Power of Sale."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-103, Block F",
+      "",
+      "1.89 acre"
+    ],
+    "arn_text": "24 02 020 202 45000",
+    "consideration_lines": [
+      "cash: $2,522,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Re/Max Aboutowne: Suzanne Farkas, 905-842-7000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT349/RT34921/air1.jpg",
+        "/assets/files/RT3/RT349/RT34921/air2.jpg",
+        "/assets/files/RT3/RT349/RT34921/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT349/RT34921/photo.jpg"
+    },
+    "footer": {
+      "page_position": "455 / 613",
+      "rt_id": "RT34921"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1500 - 1550 UPPER MIDDLE RD",
+    "postcode": "L7P 3P5",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/07/2004",
+    "desc": "Retail Plaza - 1 storey; 11 units 22,416 sf @ $113",
+    "bldg": "22,416 sf",
+    "acreage": "1.89",
+    "consid": "2522000",
+    "cash": "2522000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 020 202 45000"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1500 - 1550 UPPER MIDDLE RD"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "07 Apr 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 11 units 22,416 sf @ $113",
+    "seller_lines": [
+      "1374264 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Haro Investments Inc"
+    ],
+    "price_text": "$2,522,000"
+  }
+}

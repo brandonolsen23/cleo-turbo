@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT15261",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15261",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "336 GUELPH ST"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "16 Sep 1999",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "810630 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jay Lockwood",
+        "175 Wyecroft Rd",
+        "Oakville, Ontario",
+        "L6J 5A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1372066 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul D. Auty",
+        "58 Webster Way",
+        "Georgetown, Ontario",
+        "L7G 5J6"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 617, Lot 83"
+    ],
+    "arn_text": "24 15 030 002 03800",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Macedil Holdings Inc",
+      "principal: $900,000   rate: 0% per annum.",
+      "registered: 06/17/2020   due: 10/16/2020",
+      "",
+      "Named Individual(s)",
+      "principal: $1,725,000   rate: 8.0% per annum.",
+      "registered: 06/16/2020   due: 06/15/2022",
+      "",
+      "Named Individual(s)",
+      "principal: $500,000   rate: 8.0% per annum.",
+      "registered: 06/16/2020   due: 06/15/2022",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $721,500   rate: 4.49% per annum.",
+      "registered: 06/18/2020   due: 07/01/2021",
+      "",
+      "chargee: Olympia Trust Co",
+      "Nellco Inc",
+      "principal: $715,000   rate: 9.0% per annum until 1/15/2021, with monthly payments of $5,362.50. 12.0% per annum until 7/15/2021, with monthly payments of $7,150.",
+      "registered: 06/19/2020   due: 07/15/2021",
+      "",
+      "chargee: 1278590 Ontario Inc",
+      "principal: $185,000   rate: 5.0% per annum.",
+      "registered: 06/19/2020   due: 12/19/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "580 / 613",
+      "rt_id": "RT15261"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "336 GUELPH ST",
+    "postcode": "L7G 4B5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "09/16/1999",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 030 002 03800"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "336 GUELPH ST"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "16 Sep 1999",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "810630 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1372066 Ontario Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

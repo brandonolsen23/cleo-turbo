@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT31266",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31266",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 GLAZEBROOK AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Aug 2003",
+      "price_text": "$982,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1576613 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Enzo Mizzi",
+        "145 Royal Crest Ct, Unit 6",
+        "Markham, Ontario",
+        "L3R 9Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-586, Part Lots 54-56",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 104 090 01000",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $182,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT312/RT31266/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4861 / 6031",
+      "rt_id": "RT31266"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "7 GLAZEBROOK AVE",
+    "postcode": "M4P 1T3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/07/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "982000",
+    "cash": "800000",
+    "debt": "182000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 104 090 01000"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "7 GLAZEBROOK AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Aug 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1576613 Ontario Ltd"
+    ],
+    "price_text": "$982,000"
+  }
+}

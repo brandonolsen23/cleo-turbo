@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT167420",
+  "source_folder": "Ottawa-Carleton/retail/p005",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT167420",
+      "source_folder": "Ottawa-Carleton/retail/p005",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p005/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "2878 CARP RD"
+      ],
+      "city_region": "Carp : Ottawa-Carleton",
+      "date_text": "11 Mar 2022",
+      "price_text": "$3,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Helley Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "28 Marchvale Dr",
+        "Kanata, Ontario",
+        "K2W 1C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2802887 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Castonguay",
+        "c/o 637 rue St-Isidore",
+        "PO Box 781",
+        "Casselman, Ontario",
+        "K0A 1M0"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Huntley, Part Lot 9",
+      "Plan 4R-28884, Part 3",
+      "",
+      "PIN: 04537-0855",
+      "",
+      "2.25 acre"
+    ],
+    "arn_text": "06 14 423 810 08313",
+    "consideration_lines": [
+      "cash: $3,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $2,800,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/11/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1674/RT167420/0617_140445.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1674/RT167420/0617_140450.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1674/RT167420/0617_140500.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1674/RT167420/0617_140501.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1674/RT167420/0617_140505.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1674/RT167420/0617_140506.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "211 / 1141",
+      "rt_id": "RT167420"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "2878 CARP RD",
+    "postcode": "K0A 1L0",
+    "municipality": "Carp",
+    "region": "Ottawa-Carleton",
+    "date": "03/11/2022",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "2.25",
+    "consid": "3200000",
+    "cash": "3200000",
+    "debt": "",
+    "note": "",
+    "pin": "04537-0855",
+    "rollno": "06 14 423 810 08313"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "2878 CARP RD"
+    ],
+    "city_region": "Carp : Ottawa-Carleton",
+    "date_text": "11 Mar 2022",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Helley Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2802887 Ontario Inc"
+    ],
+    "price_text": "$3,200,000"
+  }
+}

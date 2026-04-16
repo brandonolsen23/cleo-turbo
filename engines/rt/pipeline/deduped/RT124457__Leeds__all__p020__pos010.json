@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT124457",
+  "source_folder": "Leeds/all/p020",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT124457",
+      "source_folder": "Leeds/all/p020",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "BIRNAM LINE",
+        "CONC 4 - NER",
+        "PART LOT 10"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "13 Apr 2017",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2123076 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Connie Van Aert",
+        "c/o 6574 Arkona Rd, RR 8",
+        "Watford, Ontario",
+        "N0M 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - NER, Part Lot 10",
+      "Except:",
+      "Plan 25R-6264, Part 1",
+      "Plan 25R-9852, Part 1",
+      "",
+      "PIN: 43060-0111",
+      "",
+      "100.32 acre"
+    ],
+    "arn_text": "38 41 041 004 06300",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1244/RT124457/air1.jpg",
+        "/assets/files/RT12/RT1244/RT124457/air2.jpg",
+        "/assets/files/RT12/RT1244/RT124457/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "961 / 1916",
+      "rt_id": "RT124457"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "BIRNAM LINE, CONC 4 - NER, PART LOT 10",
+    "postcode": "",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "04/13/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.32",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "43060-0111",
+    "rollno": "38 41 041 004 06300"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "BIRNAM LINE",
+      "CONC 4 - NER",
+      "PART LOT 10"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "13 Apr 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2123076 Ontario Ltd"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT189515",
+  "source_folder": "Bruce/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189515",
+      "source_folder": "Bruce/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "6 DURHAM RD"
+      ],
+      "city_region": "Brockton : Bruce",
+      "date_text": "10 Jan 2025",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bruce Tractor & Lawn Care Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "6 Durham Rd",
+        "Walkerton, Ontario",
+        "N0G 2V0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "WVRH Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bradley Sheeler",
+        "39995 Harvest Rd",
+        "Exeter, Ontario",
+        "N0M 1S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - NDR, Part Lot 5",
+      "Plan 3R-9513, Part 1",
+      "Plan 3R-4797, Part 2",
+      "Plan 3R-9101, Part 1",
+      "",
+      "PIN: 33197-0128",
+      "",
+      "N side of Durham Rd, W side of Bruce Rd 3",
+      "",
+      "15.72 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1895/RT189515/air1.jpg",
+        "/assets/files/RT18/RT1895/RT189515/air2.jpg",
+        "/assets/files/RT18/RT1895/RT189515/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 44",
+      "rt_id": "RT189515"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "6 DURHAM RD",
+    "postcode": "",
+    "municipality": "Brockton",
+    "region": "Bruce",
+    "date": "01/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "15.72",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "33197-0128",
+    "rollno": ""
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "6 DURHAM RD"
+    ],
+    "city_region": "Brockton : Bruce",
+    "date_text": "10 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bruce Tractor & Lawn Care Ltd"
+    ],
+    "buyer_lines": [
+      "WVRH Holdings Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

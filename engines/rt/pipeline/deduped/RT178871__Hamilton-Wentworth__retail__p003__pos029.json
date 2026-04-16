@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT178871",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178871",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "730 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "07 Jul 2023",
+      "price_text": "$4,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "730 Upper James Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "150 Wilson St W, Unit 4",
+        "Ancaster, Ontario",
+        "L9G 4E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1875528 Ontario Inc     905-337-8633"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kwong Lo",
+        "1357 Creekwood Trail",
+        "Oakville, Ontario",
+        "L6H 6C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 957,",
+      "Lot 1 & PCL A",
+      "",
+      "PIN: 17026-0232",
+      "",
+      "0.54 acre"
+    ],
+    "arn_text": "25 18 080 922 08490",
+    "consideration_lines": [
+      "cash: $4,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,075,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/07/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178871/0715_091556.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178871/0715_091557.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178871/0715_091644.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178871/0715_091648.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178871/0715_091702.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178871/0715_091721.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "130 / 616",
+      "rt_id": "RT178871"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "730 UPPER JAMES ST",
+    "postcode": "L9C 2Z9",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "07/07/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".54",
+    "consid": "4100000",
+    "cash": "4100000",
+    "debt": "",
+    "note": "",
+    "pin": "17026-0232",
+    "rollno": "25 18 080 922 08490"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "730 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "07 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "730 Upper James Inc"
+    ],
+    "buyer_lines": [
+      "1875528 Ontario Inc"
+    ],
+    "price_text": "$4,100,000"
+  }
+}

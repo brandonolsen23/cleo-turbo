@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT191507",
+  "source_folder": "Metro_Toronto/retail/p006",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191507",
+      "source_folder": "Metro_Toronto/retail/p006",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p006/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "647 DUNDAS ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Apr 2025",
+      "price_text": "$7,088,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Daniels CCW Corporation     416-598-2129"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "130 Queens Quay E",
+        "8th Floor, West Tower",
+        "Toronto, Ontario",
+        "M5A 0P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "OL Consult Inc     365-220-1574"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chekinah Olivier",
+        "1828 Grosvenor Place",
+        "Mississauga, Ontario",
+        "L5L 3V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-30915, Parts 2 & 3",
+      "",
+      "PIN: 21082-0550",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,088,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191507/0427_071139.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191507/0427_071140.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191507/0427_071141.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "252 / 4952",
+      "rt_id": "RT191507"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "647 DUNDAS ST E",
+    "postcode": "M5A 0P4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "7088000",
+    "cash": "7088000",
+    "debt": "",
+    "note": "",
+    "pin": "21082-0550",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "647 DUNDAS ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Daniels CCW Corporation"
+    ],
+    "buyer_lines": [
+      "OL Consult Inc"
+    ],
+    "price_text": "$7,088,000"
+  }
+}

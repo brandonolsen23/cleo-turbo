@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT183663",
+  "source_folder": "Grey_County/multifamily/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183663",
+      "source_folder": "Grey_County/multifamily/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/multifamily/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "304 THOMPSON ST"
+      ],
+      "city_region": "Meaford : Grey County",
+      "date_text": "15 Mar 2024",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Grey Bruce Property Rentals Inc     519-934-3374"
+      ],
+      "trade_name": "Barry's Construction Ltd",
+      "contact_lines": [
+        "Attn: Barry Kruisselbrink",
+        "7839 Hwy 21, PO Box 30",
+        "Allenford, Ontario",
+        "N0H 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 309 - Meaford,",
+      "Part Lot 1361",
+      "As in Inst No R-435282",
+      "",
+      "PIN: 37107-0217",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "42 10 493 001 12000",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $950,000",
+      "",
+      "Named Individual(s)",
+      "principal: $950,000   rate: 5.0% per annum.",
+      "registered: 03/15/2024   due: 03/15/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 61",
+      "rt_id": "RT183663"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "304 THOMPSON ST",
+    "postcode": "N4L 1W2",
+    "municipality": "Meaford",
+    "region": "Grey County",
+    "date": "03/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1350000",
+    "cash": "400000",
+    "debt": "950000",
+    "note": "",
+    "pin": "37107-0217",
+    "rollno": "42 10 493 001 12000"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "304 THOMPSON ST"
+    ],
+    "city_region": "Meaford : Grey County",
+    "date_text": "15 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Grey Bruce Property Rentals Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

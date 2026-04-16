@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT77743",
+  "source_folder": "Leeds/all/p032",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77743",
+      "source_folder": "Leeds/all/p032",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p032/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "9525 KLONDYKE RD"
+      ],
+      "city_region": "Grand Bend : Lambton",
+      "date_text": "31 Mar 2011",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Bridgeview Produce Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: John Vanderberk",
+        "9495 Klondyke Rd, RR 2",
+        "Grand Bend, Ontario",
+        "N0M 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 7",
+      "Conc B, Part Lot 7",
+      "Conc C, Part Lot 7",
+      "As in Inst No L-596550",
+      "",
+      "PIN: 43450-0260",
+      "",
+      "62.16 acre"
+    ],
+    "arn_text": "38 45 460 090 01900",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $563,000   rate: Prime plus 5.0% per annum",
+      "registered: 03/31/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT777/RT77743/air1.jpg",
+        "/assets/files/RT7/RT777/RT77743/air2.jpg",
+        "/assets/files/RT7/RT777/RT77743/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1554 / 1916",
+      "rt_id": "RT77743"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "9525 KLONDYKE RD",
+    "postcode": "N0M 1T0",
+    "municipality": "Grand Bend",
+    "region": "Lambton",
+    "date": "03/31/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": "62.16",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "43450-0260",
+    "rollno": "38 45 460 090 01900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "9525 KLONDYKE RD"
+    ],
+    "city_region": "Grand Bend : Lambton",
+    "date_text": "31 Mar 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Bridgeview Produce Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

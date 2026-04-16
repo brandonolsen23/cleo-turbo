@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT181585",
+  "source_folder": "Perth_County/all/p002",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181585",
+      "source_folder": "Perth_County/all/p002",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/all/p002/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "322 AIRPORT RD"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "21 Nov 2023",
+      "price_text": "$1,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Autohaus Stackelberg Inc     705-474-3211"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "332 Airport Rd",
+        "North Bay, Ontario",
+        "P1B 8W9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000582518 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: H. Von Stackelberg",
+        "c/o 250 Riverbend Rd",
+        "North Bay, Ontario",
+        "P1B 8Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc B, Part Lot 20",
+      "Plan NR-1676, Parts 1-4",
+      "As in Inst Nos:",
+      "LT-45610, LT-45438",
+      "",
+      "PIN: 49131-0009 +",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "74 / 470",
+      "rt_id": "RT181585"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "322 AIRPORT RD",
+    "postcode": "P1B 8W9",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "11/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "49131-0009+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "322 AIRPORT RD"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "21 Nov 2023",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Autohaus Stackelberg Inc"
+    ],
+    "buyer_lines": [
+      "1000582518 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

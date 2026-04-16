@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT28389",
+  "source_folder": "Ottawa-Carleton/multifamily/p031",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28389",
+      "source_folder": "Ottawa-Carleton/multifamily/p031",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/multifamily/p031/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "255 DALY AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "20 Dec 2002",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pierrette Patenaude"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "18623 Lancashire Way",
+        "San Diego, California",
+        "USA - 92128"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1534512 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Donoghue",
+        "351 Springfield Rd",
+        "Ottawa, Ontario",
+        "K1M 0K6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 11 units @ $84,091"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-10702, Parts 1 & 2",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 021 001 30100",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $100,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT283/RT28389/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1516 / 1757",
+      "rt_id": "RT28389"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "255 DALY AVE",
+    "postcode": "K1N 6G3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/20/2002",
+    "desc": "Apartment Bldg - 11 units @ $84,091",
+    "bldg": "11 units",
+    "acreage": ".11",
+    "consid": "925000",
+    "cash": "825000",
+    "debt": "100000",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 021 001 30100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "255 DALY AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "20 Dec 2002",
+    "note": "",
+    "description": "Apartment Bldg - 11 units @ $84,091",
+    "seller_lines": [
+      "Pierrette Patenaude"
+    ],
+    "buyer_lines": [
+      "1534512 Ontario Ltd"
+    ],
+    "price_text": "$925,000"
+  }
+}

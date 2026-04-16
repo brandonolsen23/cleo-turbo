@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT195265",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195265",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 CHURCH ST N"
+      ],
+      "city_region": "New Tecumseth : Simcoe County",
+      "date_text": "05 Nov 2025",
+      "price_text": "$2,680,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "11083899 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "72 Manitou Dr",
+        "King City, Ontario",
+        "L7B 1E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16992293 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shailendra Gangwar",
+        "215 Fort York Blvd, Unit 311",
+        "Toronto, Ontario",
+        "M5V 4A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Essa, Part Lot 1",
+      "Plan 51R-43697, Part 3",
+      "",
+      "PIN: 58126-0093",
+      "",
+      "0.76 acre"
+    ],
+    "arn_text": "43 24 020 003 27200",
+    "consideration_lines": [
+      "cash: $2,680,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,780,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/05/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195265/1221_083652.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195265/1221_083654.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195265/1221_083709.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195265/1221_083710.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "14 / 712",
+      "rt_id": "RT195265"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "20 CHURCH ST N",
+    "postcode": "L9R 1M1",
+    "municipality": "New Tecumseth",
+    "region": "Simcoe County",
+    "date": "11/05/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".76",
+    "consid": "2680000",
+    "cash": "2680000",
+    "debt": "",
+    "note": "",
+    "pin": "58126-0093",
+    "rollno": "43 24 020 003 27200"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "20 CHURCH ST N"
+    ],
+    "city_region": "New Tecumseth : Simcoe County",
+    "date_text": "05 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "11083899 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "16992293 Canada Inc"
+    ],
+    "price_text": "$2,680,000"
+  }
+}

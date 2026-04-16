@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT50109",
+  "source_folder": "Simcoe_County/retail/p011",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50109",
+      "source_folder": "Simcoe_County/retail/p011",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p011/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "487 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "28 Jul 2006",
+      "price_text": "$2,980,248",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2087966 Ontario Ltd     416-306-2287"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Lehberg",
+        "Knightstone Capital Management Inc",
+        "45 St Clair Ave W, Ste 1001",
+        "Toronto, Ontario",
+        "M4V 1K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Breeders Investments Ltd     416-398-0987"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Tencer",
+        "Cherry Creek Properties",
+        "345 Wilson Ave, Ste 200",
+        "Toronto, Ontario",
+        "M3H 5W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 19",
+      "As in Inst Nos:",
+      "RO-1078251 & RO-1078253",
+      "Except:",
+      "Plan 51R-28458, Part 2",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,980,248     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT501/RT50109/0819_101519.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT501/RT50109/0819_101521.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT501/RT50109/0819_101525.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "541 / 712",
+      "rt_id": "RT50109"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "487 BAYFIELD ST",
+    "postcode": "L4M 4Z9",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "07/28/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "2980248",
+    "cash": "2980248",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "487 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "28 Jul 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2087966 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Breeders Investments Ltd"
+    ],
+    "price_text": "$2,980,248"
+  }
+}

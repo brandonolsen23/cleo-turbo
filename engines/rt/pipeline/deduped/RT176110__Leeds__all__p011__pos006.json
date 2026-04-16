@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT176110",
+  "source_folder": "Leeds/all/p011",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176110",
+      "source_folder": "Leeds/all/p011",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p011/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "5366 FISHER LINE"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "19 Aug 2021",
+      "price_text": "$1,575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2762673 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Melissa Harris",
+        "5366 Fisher Line",
+        "Camlachie, Ontario",
+        "N0N 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 24",
+      "Plan 25R-5578, Part 1",
+      "",
+      "PIN: 43091-0019",
+      "",
+      "4.66 acre"
+    ],
+    "arn_text": "38 35 340 030 12805",
+    "consideration_lines": [
+      "cash: $1,575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $750,000   rate: 2.340% per annum. Due in bi-weekly payments of $1,517.20.",
+      "registered: 08/19/2021   due: 09/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "507 / 1916",
+      "rt_id": "RT176110"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "5366 FISHER LINE",
+    "postcode": "N0N 1E0",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "08/19/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.66",
+    "consid": "1575000",
+    "cash": "1575000",
+    "debt": "",
+    "note": "",
+    "pin": "43091-0019",
+    "rollno": "38 35 340 030 12805"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "5366 FISHER LINE"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "19 Aug 2021",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2762673 Ontario Inc"
+    ],
+    "price_text": "$1,575,000"
+  }
+}

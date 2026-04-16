@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT81164",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81164",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "135 KING ST"
+      ],
+      "city_region": "Delhi : Norfolk",
+      "date_text": "03 Oct 2011",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Columbia Gardens Apartments Ltd     905-639-7723"
+      ],
+      "trade_name": "House of Limerick Carpet Warehouse",
+      "contact_lines": [
+        "Pres: William Heck",
+        "484 Plains Rd E, Unit 11",
+        "Burlington, Ontario",
+        "L7T 2E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2137430 Ontario Ltd     519-582-1611"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Darren DeDobbelaer",
+        "254 Jerseyville Rd",
+        "Brantford, Ontario",
+        "N3T 5M1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $125",
+      "",
+      "Fully leased",
+      "Anchored by TD Bank"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 37R-3569, Parts 1 & 2",
+      "",
+      "PIN: 50156-0278",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "33 10 492 001 08000",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,500,000   rate: Prime plus 6.0% per annum",
+      "registered: 10/03/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT811/RT81164/1120_115535.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT811/RT81164/1120_115608.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT811/RT81164/1120_115631.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT811/RT81164/1120_115637.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT811/RT81164/1120_115714.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT811/RT81164/air1.jpg",
+        "/assets/files/RT8/RT811/RT81164/air2.jpg",
+        "/assets/files/RT8/RT811/RT81164/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "37 / 45",
+      "rt_id": "RT81164"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "135 KING ST",
+    "postcode": "N4B 1X9",
+    "municipality": "Delhi",
+    "region": "Norfolk",
+    "date": "10/03/2011",
+    "desc": "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $125",
+    "bldg": "12,000 sf",
+    "acreage": "1.1",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "50156-0278",
+    "rollno": "33 10 492 001 08000"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "135 KING ST"
+    ],
+    "city_region": "Delhi : Norfolk",
+    "date_text": "03 Oct 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $125",
+    "seller_lines": [
+      "Columbia Gardens Apartments Ltd"
+    ],
+    "buyer_lines": [
+      "2137430 Ontario Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

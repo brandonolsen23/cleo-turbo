@@ -13,6 +13,10 @@ import { CrmProvider } from "./components/crm/CrmContext";
 import CrmDrawer from "./components/crm/CrmDrawer";
 import CommandPalette from "./components/ui/CommandPalette";
 
+// Source Viewer
+import { SourceViewerProvider } from "./components/source/SourceViewerContext";
+import SourceViewerDrawer from "./components/source/SourceViewerDrawer";
+
 // Pages
 import DashboardPage from "./pages/DashboardPage";
 import PropertiesPage from "./pages/PropertiesPage";
@@ -33,6 +37,7 @@ import SettingsPage from "./pages/SettingsPage";
 import OpportunitiesPage from "./pages/OpportunitiesPage";
 import SellOpportunityDetailPage from "./pages/SellOpportunityDetailPage";
 import BuyMandateDetailPage from "./pages/BuyMandateDetailPage";
+import GroupComparePage from "./pages/GroupComparePage";
 
 // Lazy-loaded pages
 const MapPage = lazy(() => import("./pages/MapPage"));
@@ -84,6 +89,7 @@ export default function App() {
     <Theme accentColor="jade" grayColor="slate" radius="medium" scaling="100%" appearance="light">
       <AuthProvider>
         <CrmProvider>
+        <SourceViewerProvider>
           <BrowserRouter>
             <Suspense fallback={<div className="flex items-center justify-center h-screen"><Text>Loading...</Text></div>}>
               <Routes>
@@ -97,6 +103,7 @@ export default function App() {
                   <Route path="/contacts" element={<ContactsPage />} />
                   <Route path="/contacts/:id" element={<ContactDetailPage />} />
                   <Route path="/groups" element={<GroupsPage />} />
+                  <Route path="/groups/compare" element={<GroupComparePage />} />
                   <Route path="/groups/:id" element={<GroupDetailPage />} />
                   <Route path="/opportunities" element={<OpportunitiesPage />} />
                   <Route path="/opportunities/sell/:id" element={<SellOpportunityDetailPage />} />
@@ -118,8 +125,10 @@ export default function App() {
               </Routes>
             </Suspense>
             <CrmDrawer />
+            <SourceViewerDrawer />
             <CommandPalette />
           </BrowserRouter>
+        </SourceViewerProvider>
         </CrmProvider>
       </AuthProvider>
     </Theme>

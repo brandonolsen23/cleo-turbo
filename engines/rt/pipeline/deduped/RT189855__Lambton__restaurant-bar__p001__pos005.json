@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT189855",
+  "source_folder": "Lambton/restaurant-bar/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189855",
+      "source_folder": "Lambton/restaurant-bar/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/restaurant-bar/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "42 ONTARIO ST S"
+      ],
+      "city_region": "Grand Bend : Lambton",
+      "date_text": "24 Jan 2025",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Rymaky Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joanne Oliver",
+        "29 Main St N,",
+        "PO Box 74",
+        "Bayfield, Ontario",
+        "N0M 1G0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 540, Lot 24",
+      "",
+      "PIN: 43444-0257",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "38 45 520 010 10000",
+    "consideration_lines": [
+      "cash: $1,176,710     assumed/vtb debt: $373,290",
+      "",
+      "chargee: CVE Mortgage Group Inc, In Trust",
+      "principal: $1,430,000   rate: 9.50% per annum.",
+      "registered: 01/24/2025   due: 01/22/2026",
+      "",
+      "Named Individual(s)",
+      "principal: $373,290   rate: 10.0% per annum.",
+      "registered: 01/24/2025   due: 01/23/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 16",
+      "rt_id": "RT189855"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "42 ONTARIO ST S",
+    "postcode": "N0M 1T0",
+    "municipality": "Grand Bend",
+    "region": "Lambton",
+    "date": "01/24/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "1550000",
+    "cash": "1176710",
+    "debt": "373290",
+    "note": "",
+    "pin": "43444-0257",
+    "rollno": "38 45 520 010 10000"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "42 ONTARIO ST S"
+    ],
+    "city_region": "Grand Bend : Lambton",
+    "date_text": "24 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Rymaky Holdings Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

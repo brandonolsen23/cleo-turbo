@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT31625",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31625",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "831 - 837 FINLEY AVE"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "05 Sep 2003",
+      "price_text": "$532,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Saag Entrepreneurship Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn:Saber Siddiqui",
+        "5145 Durie Rd",
+        "Mississauga, Ontario",
+        "L5M 2C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bathurst Floor Cleaners (1973) Ltd     416-248-0400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Guido Gembrini",
+        "48 Donofree Rd",
+        "Toronto, Ontario",
+        "M6L 2P5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 3,600 sf @ $148"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1114, Block P",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "18 05 040 007 11081",
+    "consideration_lines": [
+      "cash: $532,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT316/RT31625/photo.jpg"
+    },
+    "footer": {
+      "page_position": "395 / 506",
+      "rt_id": "RT31625"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "831 - 837 FINLEY AVE",
+    "postcode": "L1S 3S2",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "09/05/2003",
+    "desc": "Retail Plaza - 1 storey; 3 units 3,600 sf @ $148",
+    "bldg": "3,600 sf",
+    "acreage": ".41",
+    "consid": "532000",
+    "cash": "532000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 05 040 007 11081"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "831 - 837 FINLEY AVE"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "05 Sep 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 3,600 sf @ $148",
+    "seller_lines": [
+      "Saag Entrepreneurship Inc"
+    ],
+    "buyer_lines": [
+      "Bathurst Floor Cleaners (1973) Ltd"
+    ],
+    "price_text": "$532,000"
+  }
+}

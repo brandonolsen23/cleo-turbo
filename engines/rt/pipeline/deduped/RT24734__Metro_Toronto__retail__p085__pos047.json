@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT24734",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24734",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 BOROUGH DR"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "16 Apr 2002",
+      "price_text": "$35,393,500",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "OMERS Realty Corp     416-864-3200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1 University Ave, Ste 1200",
+        "Toronto, Ontario",
+        "M5J 2P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1331430 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kenneth Lusk",
+        "4 Robert Speck Pkwy, Ste 300",
+        "Mississauga, Ontario",
+        "L4Z 1S1"
+      ]
+    },
+    "description_lines": [
+      "Scarborough Town Centre - 9% interest in regional mall"
+    ],
+    "more_info_url": "/assets/files/RT2/RT247/RT24734/mi.pdf",
+    "site_lines": [],
+    "arn_text": "19 01 051 730 00200",
+    "consideration_lines": [
+      "cash: $35,393,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4248 / 4952",
+      "rt_id": "RT24734"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "300 BOROUGH DR",
+    "postcode": "M1P 4P5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/16/2002",
+    "desc": "Scarborough Town Centre - 9% interest in regional mall",
+    "bldg": "",
+    "acreage": "",
+    "consid": "35393500",
+    "cash": "35393500",
+    "debt": "",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 01 051 730 00200"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "300 BOROUGH DR"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "16 Apr 2002",
+    "note": "Partial Interest",
+    "description": "Scarborough Town Centre - 9% interest in regional mall",
+    "seller_lines": [
+      "OMERS Realty Corp"
+    ],
+    "buyer_lines": [
+      "1331430 Ontario Inc"
+    ],
+    "price_text": "$35,393,500"
+  }
+}

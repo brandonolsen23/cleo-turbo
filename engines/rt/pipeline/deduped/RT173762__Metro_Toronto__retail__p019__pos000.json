@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT173762",
+  "source_folder": "Metro_Toronto/retail/p019",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173762",
+      "source_folder": "Metro_Toronto/retail/p019",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p019/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1226 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Dec 2022",
+      "price_text": "$2,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2598110 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Sheardown Dr",
+        "Nobleton, Ontario",
+        "L0G 1N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Naguk Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kugendran Perampalam",
+        "72 Northdale Rd",
+        "Toronto, Ontario",
+        "M2L 2M1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-1307, Part Lot 88",
+      "As in Inst No WH-31149",
+      "",
+      "PIN: 21317-0457",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 033 620 03900",
+    "consideration_lines": [
+      "cash: $802,500     assumed/vtb debt: $1,872,500",
+      "",
+      "chargee: 2598110 Ontario Ltd",
+      "principal: $1,872,500   rate: 4.8% per annum.",
+      "registered: 12/02/2022   due: 12/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1737/RT173762/1211_100203.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1737/RT173762/1211_100209.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1737/RT173762/1211_100234.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1737/RT173762/1211_100235.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1737/RT173762/1211_100248.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1737/RT173762/1211_100255.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "901 / 4952",
+      "rt_id": "RT173762"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1226 ST CLAIR AVE W",
+    "postcode": "M6E 1B4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/02/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "2675000",
+    "cash": "802500",
+    "debt": "1872500",
+    "note": "",
+    "pin": "21317-0457",
+    "rollno": "19 04 033 620 03900"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1226 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Dec 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2598110 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Naguk Holdings Inc"
+    ],
+    "price_text": "$2,675,000"
+  }
+}

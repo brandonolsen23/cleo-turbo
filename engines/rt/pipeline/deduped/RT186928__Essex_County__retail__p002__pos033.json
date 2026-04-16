@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT186928",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186928",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "3540 - 3542 WALKER RD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "21 Jun 2024",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2407562 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1568 Ouellette Ave",
+        "Windsor, Ontario",
+        "N8X 1K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lemniscate Dynamics Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bushra Hanna",
+        "1948 Ottawa St",
+        "Windsor, Ontario",
+        "N8Y 1R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1126 - Sandwich East,",
+      "Lots 509-515",
+      "",
+      "PIN: 01408-1155",
+      "",
+      "0.57 acre"
+    ],
+    "arn_text": "37 39 070 280 01600",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "84 / 460",
+      "rt_id": "RT186928"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "3540 - 3542 WALKER RD",
+    "postcode": "N8W 3S4",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".57",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "01408-1155",
+    "rollno": "37 39 070 280 01600"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "3540 - 3542 WALKER RD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2407562 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Lemniscate Dynamics Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT183317",
+  "source_folder": "Oxford_County/retail/p001",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183317",
+      "source_folder": "Oxford_County/retail/p001",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p001/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "202 MAIN ST",
+        "(OTTERVILLE)"
+      ],
+      "city_region": "Norwich : Oxford County",
+      "date_text": "12 Jan 2024",
+      "price_text": "$742,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000681346 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Visscher",
+        "412517 Cranberry Line",
+        "Tillsonburg, Ontario",
+        "N4G 4G8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 41R-2910, Parts 1 & 2",
+      "",
+      "PIN: 00056-0326",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $742,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $742,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/12/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183317/0330_114449.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183317/0330_114453.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183317/0330_114614.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183317/0330_114631.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "29 / 96",
+      "rt_id": "RT183317"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "202 MAIN ST, (OTTERVILLE)",
+    "postcode": "N0J 1R0",
+    "municipality": "Norwich",
+    "region": "Oxford County",
+    "date": "01/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".43",
+    "consid": "742000",
+    "cash": "742000",
+    "debt": "",
+    "note": "",
+    "pin": "00056-0326",
+    "rollno": ""
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "202 MAIN ST",
+      "(OTTERVILLE)"
+    ],
+    "city_region": "Norwich : Oxford County",
+    "date_text": "12 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000681346 Ontario Inc"
+    ],
+    "price_text": "$742,000"
+  }
+}

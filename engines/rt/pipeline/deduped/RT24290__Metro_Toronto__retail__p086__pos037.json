@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT24290",
+  "source_folder": "Metro_Toronto/retail/p086",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24290",
+      "source_folder": "Metro_Toronto/retail/p086",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p086/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "2321 KEELE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "13 Feb 2002",
+      "price_text": "$640,187",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mohammed S. Vakil     905-306-0901"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4159 Sandover Ct",
+        "Mississauga, Ontario",
+        "L5C 3K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2006804 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Norman Epstein",
+        "2321 Keele St",
+        "Toronto, Ontario",
+        "M6M 4A1"
+      ]
+    },
+    "description_lines": [
+      "Hummer Dealership - 7,200 sf on about 0.43 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4133, Part Lot 4",
+      "As in Inst No CA-512365",
+      "",
+      "E side 30m N of Milford Ave",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "19 08 021 240 00200",
+    "consideration_lines": [
+      "cash: $269,152     assumed/vtb debt: $371,035"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT242/RT24290/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4288 / 4952",
+      "rt_id": "RT24290"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "2321 KEELE ST",
+    "postcode": "M6M 4A1",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "02/13/2002",
+    "desc": "Hummer Dealership - 7,200 sf on about 0.43 Ac",
+    "bldg": "",
+    "acreage": ".43",
+    "consid": "640187",
+    "cash": "269152",
+    "debt": "371035",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 021 240 00200"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "2321 KEELE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "13 Feb 2002",
+    "note": "",
+    "description": "Hummer Dealership - 7,200 sf on about 0.43 Ac",
+    "seller_lines": [
+      "Mohammed S. Vakil"
+    ],
+    "buyer_lines": [
+      "2006804 Ontario Inc"
+    ],
+    "price_text": "$640,187"
+  }
+}

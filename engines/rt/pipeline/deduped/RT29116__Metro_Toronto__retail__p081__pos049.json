@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT29116",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29116",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1961 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "21 Feb 2003",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wexford Centre Ltd     416-362-7788"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sheldon Godfrey",
+        "258 Adelaide St E, Ste 200",
+        "Toronto, Ontario",
+        "M5A 1N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "625749 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cathy DiBiase",
+        "10 Janus Ct",
+        "Toronto, Ontario",
+        "M2H 1S4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3544, Part Lots 13 & 14",
+      "As in Inst No TB-814467"
+    ],
+    "arn_text": "19 01 031 620 00400",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT291/RT29116/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4050 / 4952",
+      "rt_id": "RT29116"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1961 LAWRENCE AVE E",
+    "postcode": "M1R 2Y8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "02/21/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 031 620 00400"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1961 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "21 Feb 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Wexford Centre Ltd"
+    ],
+    "buyer_lines": [
+      "625749 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

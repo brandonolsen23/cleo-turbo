@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT149419",
+  "source_folder": "Cochrane/all/p051",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT149419",
+      "source_folder": "Cochrane/all/p051",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p051/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "7168 BANK ST"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "05 Feb 2020",
+      "price_text": "$610,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "1686905 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thaminda Perera",
+        "Nancie-Anne Heaphy",
+        "Barrister and Solicitor",
+        "2323 Riverside Dr, Unit B001",
+        "Ottawa, Ontario",
+        "K1H 8L5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "5010759 Ontario Inc     613-259-3372"
+      ],
+      "trade_name": "Lanark Ultramar",
+      "contact_lines": [
+        "Attn: Safwan Hanif",
+        "c/o 2848 Highway 511",
+        "Lanark, Ontario",
+        "K0G 1K0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 20",
+      "Plan 5R-1888, Part 1",
+      "",
+      "PIN: 04315-0771",
+      "",
+      "0.90 acre"
+    ],
+    "arn_text": "06 14 700 055 08801",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "chattels: $140,000",
+      "other: $610,000",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $442,500   rate: Prime plus 5.0% per annum.",
+      "registered: 02/05/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2515 / 10920",
+      "rt_id": "RT149419"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "7168 BANK ST",
+    "postcode": "K0A 2P0",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "02/05/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".9",
+    "consid": "610000",
+    "cash": "",
+    "debt": "",
+    "note": "Zero Cash",
+    "pin": "04315-0771",
+    "rollno": "06 14 700 055 08801"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "7168 BANK ST"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "05 Feb 2020",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "1686905 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "5010759 Ontario Inc"
+    ],
+    "price_text": "$610,000"
+  }
+}

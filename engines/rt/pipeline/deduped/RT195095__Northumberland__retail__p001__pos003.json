@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT195095",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195095",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "174 HIGHWAY 33",
+        "174 HWY 33"
+      ],
+      "city_region": "Quinte W : Northumberland",
+      "date_text": "31 Oct 2025",
+      "price_text": "$9,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jaramac Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2578 County Rd 3",
+        "Carrying Place, Ontario",
+        "K0K 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Nelson Spencer Property Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Spencer",
+        "220 Tracey Rd",
+        "Cobourg, Ontario",
+        "K9A 5S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Murray, Part Lot 3",
+      "Plan 39R-9278, Parts 5-8",
+      "",
+      "PIN: 51175-0316",
+      "",
+      "7.12 acre"
+    ],
+    "arn_text": "30 10 600 023 60000",
+    "consideration_lines": [
+      "cash: $9,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: General Motors Financial of Canada, Ltd",
+      "principal: $7,200,000   rate: As in the Master Loan Agreement.",
+      "registered: 10/31/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195095/0101_100332.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195095/0101_100336.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195095/0101_100407.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195095/0101_100408.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1950/RT195095/air1.jpg",
+        "/assets/files/RT19/RT1950/RT195095/air2.jpg",
+        "/assets/files/RT19/RT1950/RT195095/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 93",
+      "rt_id": "RT195095"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "174 HIGHWAY 33, 174 HWY 33",
+    "postcode": "K8V 5P6",
+    "municipality": "Quinte W",
+    "region": "Northumberland",
+    "date": "10/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "7.12",
+    "consid": "9000000",
+    "cash": "9000000",
+    "debt": "",
+    "note": "",
+    "pin": "51175-0316",
+    "rollno": "30 10 600 023 60000"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "174 HIGHWAY 33",
+      "174 HWY 33"
+    ],
+    "city_region": "Quinte W : Northumberland",
+    "date_text": "31 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Jaramac Realty Ltd"
+    ],
+    "buyer_lines": [
+      "Nelson Spencer Property Corp"
+    ],
+    "price_text": "$9,000,000"
+  }
+}

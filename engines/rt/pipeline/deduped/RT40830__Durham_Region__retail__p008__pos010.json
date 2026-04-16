@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT40830",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40830",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "HWY 12",
+        "CONC 4",
+        "PART LOT 27"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "15 Mar 2005",
+      "price_text": "$25,618,789",
+      "note": "60% Interest, Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "First Brockton Investments Ltd     905-760-6230"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Brian Rudderham",
+        "First Pro Shopping Centres",
+        "700 Applewood Cres, Ste 100",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Calloway REIT (Whitby) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: David Calnan",
+        "855 8th Ave SW, Ste 310",
+        "Calgary, Alberta",
+        "T2P 3P1"
+      ]
+    },
+    "description_lines": [
+      "First Pro Shopping Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 27",
+      "Plan 40R-20405, Parts 2-4 & 8",
+      "Except:",
+      "Plan 40R-22413, Parts 1-8",
+      "",
+      "24.92 acre"
+    ],
+    "arn_text": "19 09 010 036 21400",
+    "consideration_lines": [
+      "cash: $25,618,789     assumed/vtb debt: $0",
+      "",
+      "chargee: The Great-West Life Assurance Co",
+      "The Canada Life Assurance Co",
+      "principal: $31,900,000   rate: 5.74% per annum",
+      "registered: 03/15/2005   due: 10/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "361 / 506",
+      "rt_id": "RT40830"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "HWY 12, CONC 4, PART LOT 27",
+    "postcode": "",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "03/15/2005",
+    "desc": "First Pro Shopping Centre",
+    "bldg": "",
+    "acreage": "24.92",
+    "consid": "25618789",
+    "cash": "25618789",
+    "debt": "",
+    "note": "60% Interest, Portfolio",
+    "pin": "",
+    "rollno": "19 09 010 036 21400"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "HWY 12",
+      "CONC 4",
+      "PART LOT 27"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "15 Mar 2005",
+    "note": "60% Interest, Portfolio",
+    "description": "First Pro Shopping Centre",
+    "seller_lines": [
+      "First Brockton Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Calloway REIT (Whitby) Inc"
+    ],
+    "price_text": "$25,618,789"
+  }
+}

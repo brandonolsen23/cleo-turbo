@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT133945",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT133945",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "210 FRONT ST"
+      ],
+      "city_region": "W. Nipissing : Nipissing District",
+      "date_text": "01 May 2018",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1689487 Ontario Inc     705-472-0618"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sylvain Rivet",
+        "433 Pearce St",
+        "North Bay, Ontario",
+        "P1C 1M8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2617935 Ontario Inc     416-754-1991"
+      ],
+      "trade_name": "Cantek Distribution Inc",
+      "contact_lines": [
+        "Attn: Cong Van Nguyen",
+        "80 Melford Dr",
+        "Scarborough, Ontario",
+        "M1B 5X9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Surface rights only",
+      "Conc 1, Part Lot 3",
+      "Plan 36R-6809, Part 1",
+      "",
+      "PIN: 49080-0751",
+      "",
+      "1.46 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "32 / 46",
+      "rt_id": "RT133945"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "210 FRONT ST",
+    "postcode": "P2B 2J3",
+    "municipality": "W. Nipissing",
+    "region": "Nipissing District",
+    "date": "05/01/2018",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.46",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "49080-0751",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "210 FRONT ST"
+    ],
+    "city_region": "W. Nipissing : Nipissing District",
+    "date_text": "01 May 2018",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1689487 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2617935 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

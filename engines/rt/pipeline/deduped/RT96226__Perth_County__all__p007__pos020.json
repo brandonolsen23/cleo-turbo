@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT96226",
+  "source_folder": "Perth_County/all/p007",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT96226",
+      "source_folder": "Perth_County/all/p007",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/all/p007/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "TYNE LAKE RD"
+      ],
+      "city_region": ": Nipissing District",
+      "date_text": "30 Oct 2013",
+      "price_text": "$670,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "474603 Ontario Ltd",
+        "George & Sheila Beiko     705-472-7701"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Livia Hachkowski",
+        "441 William St, Apt 802",
+        "North Bay, Ontario",
+        "P1A 1X6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1901895 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael French",
+        "450 McCarthy St",
+        "Trout Creek, Ontario",
+        "P0H 2L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 36R-10413, Part 1",
+      "",
+      "PIN: 49192-0016",
+      "",
+      "6.71 acre"
+    ],
+    "arn_text": "48 03 270 001 15650",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $670,000",
+      "",
+      "Named Individual(s)",
+      "principal: $670,000   rate: 10.0% per annum.",
+      "registered: 10/30/2013   due: 11/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "321 / 470",
+      "rt_id": "RT96226"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "TYNE LAKE RD",
+    "postcode": "",
+    "municipality": "",
+    "region": "Nipissing District",
+    "date": "10/30/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.71",
+    "consid": "670000",
+    "cash": "",
+    "debt": "670000",
+    "note": "Power of Sale",
+    "pin": "49192-0016",
+    "rollno": "48 03 270 001 15650"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "TYNE LAKE RD"
+    ],
+    "city_region": ": Nipissing District",
+    "date_text": "30 Oct 2013",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "474603 Ontario Ltd",
+      "George & Sheila Beiko"
+    ],
+    "buyer_lines": [
+      "1901895 Ontario Inc"
+    ],
+    "price_text": "$670,000"
+  }
+}

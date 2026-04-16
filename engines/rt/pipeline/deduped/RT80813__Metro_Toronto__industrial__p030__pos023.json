@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT80813",
+  "source_folder": "Metro_Toronto/industrial/p030",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80813",
+      "source_folder": "Metro_Toronto/industrial/p030",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p030/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "97 PELHAM AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "14 Sep 2011",
+      "price_text": "$1,600,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "2162095 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leo Couprie",
+        "8500 Leslie St, Ste 450",
+        "Thornhill, Ontario",
+        "L3T 7M8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Allsecure Storage Inc     416-630-1234"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Goldrich",
+        "51 Toro Rd, Ste 200",
+        "Toronto, Ontario",
+        "M3J 2A4"
+      ]
+    },
+    "description_lines": [
+      "Self-Storage Bldg: 4 storey; 248 units 26,700 sf @ $60",
+      "",
+      "Last transferred in July 2008 for $1,650,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 571, Part Lots 6 & 7",
+      "As in Inst No CA-755362",
+      "",
+      "PIN: 21326-0651",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "19 04 032 070 00100",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Yerusha Investments Ltd",
+      "Barry Rosenblatt",
+      "Jack & Miriam Somer",
+      "Pearl Goldrich",
+      "Stephan Handelman",
+      "David Herbert",
+      "principal: $1,000,000   rate: 7.0% per annum",
+      "registered: 09/14/2011   due: 09/14/2013"
+    ],
+    "broker_lines": [
+      "Royal LePage Signature Realty: Joanne Kang, 416-443-0300"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT808/RT80813/1002_120729.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT808/RT80813/1002_120838.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT808/RT80813/air1.jpg",
+        "/assets/files/RT8/RT808/RT80813/air2.jpg",
+        "/assets/files/RT8/RT808/RT80813/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1474 / 4000",
+      "rt_id": "RT80813"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "97 PELHAM AVE",
+    "postcode": "M6N 1A5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/14/2011",
+    "desc": "Self-Storage Bldg: 4 storey; 248 units 26,700 sf @ $60",
+    "bldg": "26,700",
+    "acreage": ".28",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "21326-0651",
+    "rollno": "19 04 032 070 00100"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "97 PELHAM AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "14 Sep 2011",
+    "note": "Purchased Business",
+    "description": "Self-Storage Bldg: 4 storey; 248 units 26,700 sf @ $60",
+    "seller_lines": [
+      "2162095 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Allsecure Storage Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

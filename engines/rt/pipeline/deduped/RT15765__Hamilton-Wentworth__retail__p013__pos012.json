@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT15765",
+  "source_folder": "Hamilton-Wentworth/retail/p013",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15765",
+      "source_folder": "Hamilton-Wentworth/retail/p013",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p013/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "875 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "09 Apr 1998",
+      "price_text": "$4,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "778286 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Murray Cross",
+        "c/o Harbridge & Cross",
+        "7725 Jane St, Ste 102",
+        "Concord, Ontario",
+        "L4K 1X4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Canadian Real Estate Capital Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexander C. Sennecke",
+        "120 Adelaide St W, Ste 2401",
+        "Toronto, Ontario",
+        "M5H 1T1"
+      ]
+    },
+    "description_lines": [
+      "Retail Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-6625, Part 1",
+      "Except Plan 62R-11411, Part 18"
+    ],
+    "arn_text": "25 18 010 056 00280",
+    "consideration_lines": [
+      "cash: $1,778,287     assumed/vtb debt: $3,021,713",
+      "",
+      "chargee: 2094940 Ontario Inc",
+      "principal: $700,000   rate: 0% per annum.",
+      "registered: 12/23/2020   due: 12/23/2023",
+      "",
+      "chargee: 2230059 Ontario Inc",
+      "principal: $1,500,000   rate: 5.0% per annum.",
+      "registered: 01/12/2021   due: 01/12/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "613 / 616",
+      "rt_id": "RT15765"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "875 MAIN ST W",
+    "postcode": "L8S 4R1",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "04/09/1998",
+    "desc": "Retail Mall",
+    "bldg": "",
+    "acreage": "",
+    "consid": "4800000",
+    "cash": "1778287",
+    "debt": "3021713",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 010 056 00280"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "875 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "09 Apr 1998",
+    "note": "",
+    "description": "Retail Mall",
+    "seller_lines": [
+      "778286 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Canadian Real Estate Capital Inc"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

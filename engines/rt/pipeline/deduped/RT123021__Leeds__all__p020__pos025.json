@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT123021",
+  "source_folder": "Leeds/all/p020",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123021",
+      "source_folder": "Leeds/all/p020",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "824 PHILLIP ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "31 Jan 2017",
+      "price_text": "$519,825",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "700 N Christina St, Ste 201",
+        "Sarnia, Ontario",
+        "N7V 3C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Velan Inc     514-748-7743"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: J. Ball",
+        "7007 Cote de Liesse",
+        "Montreal, Quebec",
+        "H4T 1G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-9798, Part 1",
+      "",
+      "PIN: 43226-0148",
+      "",
+      "0.53 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $519,825     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "976 / 1916",
+      "rt_id": "RT123021"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "824 PHILLIP ST",
+    "postcode": "N7T 1Z6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "01/31/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".53",
+    "consid": "519825",
+    "cash": "519825",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "43226-0148",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "824 PHILLIP ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "31 Jan 2017",
+    "note": "Foreclosure",
+    "description": "",
+    "seller_lines": [
+      "Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "Velan Inc"
+    ],
+    "price_text": "$519,825"
+  }
+}

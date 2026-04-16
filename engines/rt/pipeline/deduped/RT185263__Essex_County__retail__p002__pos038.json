@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT185263",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185263",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "6011 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "04 Jun 2024",
+      "price_text": "$1,094,760",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2108436 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "150 Pat Hayes Ave",
+        "Belle River, Ontario",
+        "N0R 1A0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000278790 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chiyu Wang",
+        "550 Sandison St, Unit 33",
+        "Windsor, Ontario",
+        "M9E 0A3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-19410, Parts 1 & 2",
+      "",
+      "PIN: 01368-0400 +",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "37 39 070 590 15300 +",
+    "consideration_lines": [
+      "cash: $1,094,760     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "89 / 460",
+      "rt_id": "RT185263"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "6011 TECUMSEH RD E",
+    "postcode": "N8T 1E5",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "06/04/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1094760",
+    "cash": "1094760",
+    "debt": "",
+    "note": "",
+    "pin": "01368-0400+",
+    "rollno": "37 39 070 590 15300+"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "6011 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "04 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2108436 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000278790 Ontario Ltd"
+    ],
+    "price_text": "$1,094,760"
+  }
+}

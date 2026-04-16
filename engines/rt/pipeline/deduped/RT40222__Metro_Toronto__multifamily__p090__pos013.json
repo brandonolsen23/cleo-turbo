@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT40222",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40222",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "91 BROADWAY AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Feb 2005",
+      "price_text": "$615,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "449896 Ontario Ltd     416-445-0549"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stanley Lazar",
+        "39 The Bridle Path",
+        "Toronto, Ontario",
+        "M2L 1C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 806, Part Lots 38 & 39",
+      "As in Inst No CT-988321",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 104 180 02500",
+    "consideration_lines": [
+      "cash: $55,000     assumed/vtb debt: $560,000",
+      "",
+      "chargee: 449896 Ontario Ltd",
+      "principal: $560,000   rate: 4.0% per annum until 2/28/2006.\n5.0% per annum unitl 2/28/2007.\n5.50% per annum until 2/28/2008.",
+      "registered: 02/11/2005   due: 03/01/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40222/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4464 / 6031",
+      "rt_id": "RT40222"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "91 BROADWAY AVE",
+    "postcode": "M4P 1T7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/11/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "615000",
+    "cash": "55000",
+    "debt": "560000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 104 180 02500"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "91 BROADWAY AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Feb 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "449896 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$615,000"
+  }
+}

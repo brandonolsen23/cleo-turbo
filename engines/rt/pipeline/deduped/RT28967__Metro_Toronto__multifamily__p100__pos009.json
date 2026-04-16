@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT28967",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28967",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "1061 WESTON RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "31 Jan 2003",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Aswad Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ricardo Keane",
+        "176 Atlas Dr",
+        "Toronto, Ontario",
+        "M6C 3P5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1547, Part Lots 22 & 23",
+      "As in Inst No CA-418718"
+    ],
+    "arn_text": "19 14 072 030 03200",
+    "consideration_lines": [
+      "cash: $730,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT289/RT28967/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4960 / 6031",
+      "rt_id": "RT28967"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "1061 WESTON RD",
+    "postcode": "M6N 3R9",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "01/31/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "730000",
+    "cash": "730000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 072 030 03200"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "1061 WESTON RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "31 Jan 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Aswad Investments Ltd"
+    ],
+    "price_text": "$730,000"
+  }
+}

@@ -17,7 +17,10 @@ from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
 from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name
 from ..database.schema import drop_derived_tables, create_all_tables
 from ..database.asset_classes import seed_asset_classes, map_property_type_to_asset_class
+from ..database.tenant_categories import seed_tenant_categories
 from ..analytics.groups import refresh_group_analytics
+from ..address.decompose import decompose_simple as _decompose_simple
+from ..address.formatter import format_display as _format_display
 
 
 def _snapshot_pre_compile(conn):
@@ -190,6 +193,7 @@ def run_compiler(conn):
 
     # Seed asset class taxonomy
     seed_asset_classes(conn)
+    seed_tenant_categories(conn)
 
     start = time.time()
 
@@ -614,13 +618,13 @@ def run_compiler(conn):
             "cash, debt, chattels, other_consideration, charges_json, "
             "seller_trade_name, seller_care_of, seller_law_firms_json, seller_companies_json, "
             "buyer_trade_name, buyer_care_of, buyer_law_firms_json, buyer_companies_json, "
-            "photos_json, source_folder) "
+            "photos_json, source_folder, source_position) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
             "?, ?, ?, ?, ?, ?, ?, "
             "?, ?, ?, ?, ?, "
             "?, ?, ?, ?, "
             "?, ?, ?, ?, "
-            "?, ?)",
+            "?, ?, ?)",
             (source_id, property_id, arn,
              tx.get('sale_date'), tx.get('sale_price'), tx.get('transaction_note', ''),
              display_address, tx.get('city', ''), tx.get('region', ''), prop.get('postal', ''),
@@ -649,7 +653,8 @@ def run_compiler(conn):
              json.dumps(buyer_data.get('law_firms', [])),
              json.dumps(buyer_data.get('companies', [])),
              json.dumps(rec.get('photos', {})),
-             rec.get('source_folder', ''))
+             rec.get('source_folder', ''),
+             rec.get('source_position'))
         )
         tx_count += 1
 
@@ -706,7 +711,7 @@ def run_compiler(conn):
             contacts = rec.get(side, {}).get('contacts', [])
             phone = rec.get(side, {}).get('phone', '')
 
-            # Link group
+            # Insert one row per party (group)
             for party in parties:
                 pname = party.get('name', '').strip()
                 if not pname or pname == 'Named Individual(s)':
@@ -714,30 +719,27 @@ def run_compiler(conn):
                 norm = normalize_group_name(pname)
                 gid = group_data[norm]['id'] if norm in group_data else None
 
-                # Link contacts for this side
-                for contact in contacts:
-                    cname = contact.get('name', '').strip()
-                    if not cname:
-                        continue
-                    fp = make_name_fingerprint(cname)
-                    cid = contact_data[fp]['id'] if fp in contact_data else None
+                conn.execute(
+                    "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, "
+                    "party_name, contact_title, phone) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                    (source_id, None, gid, side, pname, '', phone)
+                )
+                party_count += 1
 
-                    conn.execute(
-                        "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, "
-                        "party_name, contact_title, phone) VALUES (?, ?, ?, ?, ?, ?, ?)",
-                        (source_id, cid, gid, side, pname, contact.get('title', ''), phone)
-                    )
-                    party_count += 1
+            # Insert one row per contact (separate from parties)
+            for contact in contacts:
+                cname = contact.get('name', '').strip()
+                if not cname:
+                    continue
+                fp = make_name_fingerprint(cname)
+                cid = contact_data[fp]['id'] if fp in contact_data else None
 
-                # If no contacts, still link the group to the transaction
-                if not contacts:
-                    conn.execute(
-                        "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, "
-                        "party_name, contact_title, phone) VALUES (?, ?, ?, ?, ?, ?, ?)",
-                        (source_id, None, group_data[norm]['id'] if norm in group_data else None,
-                         side, pname, '', phone)
-                    )
-                    party_count += 1
+                conn.execute(
+                    "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, "
+                    "party_name, contact_title, phone) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                    (source_id, cid, None, side, '', contact.get('title', ''), phone)
+                )
+                party_count += 1
 
         if tx_count % 5000 == 0:
             conn.commit()
@@ -823,14 +825,20 @@ def run_compiler(conn):
                     p_lat = lat
                     p_lng = lng
 
-                    # Build display address from POI address fields
+                    # Build display address from POI address fields via shared formatter
                     addr = poi.get('address', {})
+                    raw_street = ''
                     parts = []
                     if addr.get('housenumber'):
                         parts.append(addr['housenumber'])
                     if addr.get('street'):
                         parts.append(addr['street'])
-                    display_address = ' '.join(parts)
+                    raw_street = ' '.join(parts)
+                    if raw_street:
+                        osm_components = _decompose_simple(raw_street)
+                        display_address = _format_display(osm_components)
+                    else:
+                        display_address = ''
 
                     conn.execute(
                         "INSERT OR IGNORE INTO properties (id, arn, display_address, city, region, postal, "
@@ -844,14 +852,19 @@ def run_compiler(conn):
                     property_id = pid
                     poi_new_props += 1
 
-            # Build display address for POI record
+            # Build display address for POI record via shared formatter
             addr = poi.get('address', {})
             poi_parts = []
             if addr.get('housenumber'):
                 poi_parts.append(addr['housenumber'])
             if addr.get('street'):
                 poi_parts.append(addr['street'])
-            poi_address = ' '.join(poi_parts)
+            raw_poi_street = ' '.join(poi_parts)
+            if raw_poi_street:
+                poi_components = _decompose_simple(raw_poi_street)
+                poi_address = _format_display(poi_components)
+            else:
+                poi_address = ''
 
             building = poi.get('building') or {}
             building_geojson = json.dumps(building['polygon']) if building.get('polygon') else None
@@ -917,19 +930,21 @@ def run_compiler(conn):
                         updates.append("current_owner_name = ?")
                         params.append(owner_name)
 
+                    # Gap-fill only: don't overwrite RT display_address with GW
                     display_addr = gw_prop.get('display_address', '')
                     if display_addr:
-                        updates.append("display_address = ?")
+                        updates.append("display_address = COALESCE(NULLIF(display_address, ''), ?)")
                         params.append(display_addr)
 
+                    # Gap-fill city and postal too — don't overwrite RT values
                     city = gw_prop.get('city', '')
                     if city:
-                        updates.append("city = ?")
+                        updates.append("city = COALESCE(NULLIF(city, ''), ?)")
                         params.append(city)
 
                     postal = gw_prop.get('postal', '')
                     if postal:
-                        updates.append("postal = ?")
+                        updates.append("postal = COALESCE(NULLIF(postal, ''), ?)")
                         params.append(postal)
 
                     # Municipality from first assessment

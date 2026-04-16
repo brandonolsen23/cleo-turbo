@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT62673",
+  "source_folder": "Simcoe_County/retail/p010",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT62673",
+      "source_folder": "Simcoe_County/retail/p010",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p010/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "53 ARDAGH RD"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "27 Jun 2008",
+      "price_text": "$2,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1374776 Ontario Inc",
+        "Colausaid Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rodney Scribner",
+        "300 March Rd, Ste 201",
+        "Kanata, Ontario",
+        "K2K 2E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bonam Properties Ltd     416-362-4901"
+      ],
+      "trade_name": "Rye and Partners",
+      "contact_lines": [
+        "Attn: Robert Rye",
+        "65 Queen St W, Ste 1201",
+        "Toronto, Ontario",
+        "M5H 2M5"
+      ]
+    },
+    "description_lines": [
+      "TD Bank Branch - 1 storey; 5,000 sf @ $440"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-34442, Part 2",
+      "",
+      "PIN: 58732-0145",
+      "",
+      "1.22 acre"
+    ],
+    "arn_text": "43 42 040 017 12330",
+    "consideration_lines": [
+      "cash: $882,265     assumed/vtb debt: $1,317,735"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT626/RT62673/0829_095649.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT626/RT62673/0829_095721.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT626/RT62673/0829_095923.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT626/RT62673/air1.jpg",
+        "/assets/files/RT6/RT626/RT62673/air2.jpg",
+        "/assets/files/RT6/RT626/RT62673/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "499 / 712",
+      "rt_id": "RT62673"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "53 ARDAGH RD",
+    "postcode": "L4N 9B5",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "06/27/2008",
+    "desc": "TD Bank Branch - 1 storey; 5,000 sf @ $440",
+    "bldg": "5,000 sf",
+    "acreage": "1.22",
+    "consid": "2200000",
+    "cash": "882265",
+    "debt": "1317735",
+    "note": "",
+    "pin": "58732-0145",
+    "rollno": "43 42 040 017 12330"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "53 ARDAGH RD"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "27 Jun 2008",
+    "note": "",
+    "description": "TD Bank Branch - 1 storey; 5,000 sf @ $440",
+    "seller_lines": [
+      "1374776 Ontario Inc",
+      "Colausaid Corp"
+    ],
+    "buyer_lines": [
+      "Bonam Properties Ltd"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

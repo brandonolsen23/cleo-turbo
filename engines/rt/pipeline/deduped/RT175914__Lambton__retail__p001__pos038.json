@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT175914",
+  "source_folder": "Lambton/retail/p001",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175914",
+      "source_folder": "Lambton/retail/p001",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "350 WELLINGTON ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "27 Feb 2023",
+      "price_text": "$2,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Prudent Excellence Mortgage",
+        "Investment Corporation",
+        "Prime Envision Inc",
+        "Yangyu Chen"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 350 Hwy 7 E, Ste 310",
+        "Richmond Hill, Ontario",
+        "L4B 3N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000440580 Ontario Inc     905-216-6552"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gaganpreet Mann",
+        "9 Fairmont Close",
+        "Brampton, Ontario",
+        "L6Y 2Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5 - Range 1",
+      "Part Park  Lots 7 & 8",
+      "As in Inst No L-608551",
+      "",
+      "PIN: 43247-0065",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "38 29 400 026 12800",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $1,150,000",
+      "",
+      "chargee: Prudent Excellence Mortgage Investment Corp",
+      "Prime Envision Inc",
+      "Yangyu Chen",
+      "principal: $1,150,000   rate: 7.95% per annum.",
+      "registered: 02/27/2023   due: 02/24/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "39 / 106",
+      "rt_id": "RT175914"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "350 WELLINGTON ST",
+    "postcode": "N7T 1H6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "02/27/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".39",
+    "consid": "2550000",
+    "cash": "1400000",
+    "debt": "1150000",
+    "note": "",
+    "pin": "43247-0065",
+    "rollno": "38 29 400 026 12800"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "350 WELLINGTON ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "27 Feb 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Prudent Excellence Mortgage",
+      "Investment Corporation",
+      "Prime Envision Inc",
+      "Yangyu Chen"
+    ],
+    "buyer_lines": [
+      "1000440580 Ontario Inc"
+    ],
+    "price_text": "$2,550,000"
+  }
+}

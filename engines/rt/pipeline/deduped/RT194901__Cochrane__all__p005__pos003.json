@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT194901",
+  "source_folder": "Cochrane/all/p005",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194901",
+      "source_folder": "Cochrane/all/p005",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p005/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "BOUNDARY RD",
+        "INDCUM RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "17 Oct 2025",
+      "price_text": "$1,315,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1737973 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Grant Hooker",
+        "79 St Andrew St",
+        "Ottawa, Ontario",
+        "K1N 5G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 50R-6420, Part 1",
+      "",
+      "PIN: 14558-0041",
+      "",
+      "NE corner of Bounday Rd & Indcum Rd",
+      "",
+      "2.15 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,315,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1949/RT194901/air1.jpg",
+        "/assets/files/RT19/RT1949/RT194901/air2.jpg",
+        "/assets/files/RT19/RT1949/RT194901/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "204 / 10920",
+      "rt_id": "RT194901"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "BOUNDARY RD, INDCUM RD",
+    "postcode": "",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "10/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.15",
+    "consid": "1315000",
+    "cash": "1315000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "14558-0041",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "BOUNDARY RD",
+      "INDCUM RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "17 Oct 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1737973 Ontario Inc"
+    ],
+    "price_text": "$1,315,000"
+  }
+}

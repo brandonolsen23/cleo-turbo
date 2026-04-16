@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT24660",
+  "source_folder": "Metro_Toronto/multifamily/p106",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24660",
+      "source_folder": "Metro_Toronto/multifamily/p106",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p106/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "849 BROADVIEW AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Mar 2002",
+      "price_text": "$1,760,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ralph & Janice Marriott     416-920-2175"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "120 Lyndhurst Ave",
+        "Toronto, Ontario",
+        "M5R 2Z9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Upper Broadview Suites Ltd     416-322-8886"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jeffrey Cardona",
+        "1346 Avenue Rd",
+        "Toronto, Ontario",
+        "M5N 2H2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 32 units @ $55,000"
+    ],
+    "more_info_url": "/assets/files/RT2/RT246/RT24660/mi.pdf",
+    "site_lines": [
+      "Plan 257, Part Lot 60",
+      "As in Inst No CA-568218",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "19 04 075 480 01400",
+    "consideration_lines": [
+      "cash: $1,760,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT246/RT24660/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5257 / 6031",
+      "rt_id": "RT24660"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "849 BROADVIEW AVE",
+    "postcode": "M4K 2P9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/15/2002",
+    "desc": "Apartment Bldg - 3.5 storey; 32 units @ $55,000",
+    "bldg": "32 units",
+    "acreage": ".16",
+    "consid": "1760000",
+    "cash": "1760000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 075 480 01400"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "849 BROADVIEW AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Mar 2002",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 32 units @ $55,000",
+    "seller_lines": [
+      "Ralph & Janice Marriott"
+    ],
+    "buyer_lines": [
+      "Upper Broadview Suites Ltd"
+    ],
+    "price_text": "$1,760,000"
+  }
+}

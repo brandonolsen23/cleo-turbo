@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT27908",
+  "source_folder": "Essex_County/retail/p008",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27908",
+      "source_folder": "Essex_County/retail/p008",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p008/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "421 SANDWICH ST S"
+      ],
+      "city_region": "Amherstburg : Essex County",
+      "date_text": "06 Nov 2002",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "759154 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alice Abraham",
+        "23 O'Brien St, Unit 2",
+        "Orillia, Ontaio",
+        "L3V 5S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2017549 Ontario Ltd     519-326-4789"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Abraham",
+        "43 Sandy Lake Dr",
+        "Leamington, Ontario",
+        "N8H 5K4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 8 units 26,582 sf @ $68",
+      "",
+      "Includes gas bar."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-83, Block B"
+    ],
+    "arn_text": "37 29 060 000 00400",
+    "consideration_lines": [
+      "cash: $558,822     assumed/vtb debt: $1,241,178"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT279/RT27908/photo.jpg"
+    },
+    "footer": {
+      "page_position": "399 / 460",
+      "rt_id": "RT27908"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "421 SANDWICH ST S",
+    "postcode": "N9V 3K8",
+    "municipality": "Amherstburg",
+    "region": "Essex County",
+    "date": "11/06/2002",
+    "desc": "Retail Plaza - 1 storey; 8 units 26,582 sf @ $68",
+    "bldg": "26,582 sf",
+    "acreage": "",
+    "consid": "1800000",
+    "cash": "558822",
+    "debt": "1241178",
+    "note": "",
+    "pin": "",
+    "rollno": "37 29 060 000 00400"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "421 SANDWICH ST S"
+    ],
+    "city_region": "Amherstburg : Essex County",
+    "date_text": "06 Nov 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 8 units 26,582 sf @ $68",
+    "seller_lines": [
+      "759154 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2017549 Ontario Ltd"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

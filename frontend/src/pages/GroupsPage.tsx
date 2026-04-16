@@ -4,6 +4,7 @@ import { Heading, Text, Button, Badge } from "@radix-ui/themes";
 import { MagnifyingGlass, CaretUp, CaretDown } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
 import { formatCompact, assetClassLabel } from "../lib/utils";
+import { propertyTypeLabel, propertyTypeColor } from "../lib/theme";
 import FilterPanel, {
   RangeFilter,
   SelectFilter,
@@ -20,11 +21,6 @@ import type {
 function compactKm(n: number | null | undefined): string {
   if (n == null) return "—";
   return `${Math.round(n)} km`;
-}
-
-function compactVelocity(n: number | null | undefined): string {
-  if (n == null) return "—";
-  return n.toFixed(1);
 }
 
 // ── Sortable column header ─────────────────────────────────────
@@ -101,15 +97,17 @@ export default function GroupsPage() {
   const [loading, setLoading] = useState(false);
   const [searchInput, setSearchInput] = useState(q);
   const debounceRef = useRef<ReturnType<typeof setTimeout>>();
+  const fetchIdRef = useRef(0);
 
   // Load filter options once
   useEffect(() => {
     fetchApi<GroupFilterOptions>("/groups/filters").then(setFilterOptions);
   }, []);
 
-  // Fetch data whenever URL params change (debounced)
+  // Fetch data whenever URL params change (stale-response safe)
   const fetchData = useCallback(() => {
     setLoading(true);
+    const currentFetchId = ++fetchIdRef.current;
     const params: Record<string, string> = {
       page: String(page),
       per_page: "100",
@@ -136,8 +134,12 @@ export default function GroupsPage() {
     if (region) params.region = region;
 
     fetchApi<BrowseResponse<GroupBrowseItem>>("/groups", params)
-      .then(setData)
-      .finally(() => setLoading(false));
+      .then((res) => {
+        if (currentFetchId === fetchIdRef.current) setData(res);
+      })
+      .finally(() => {
+        if (currentFetchId === fetchIdRef.current) setLoading(false);
+      });
   }, [
     page, sort, order, q, status, minProperties, maxProperties,
     minPortfolioValue, maxPortfolioValue, minVelocity, maxVelocity,
@@ -357,8 +359,12 @@ export default function GroupsPage() {
               <SortHeader label="Props" field="property_count" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <SortHeader label="Txns" field="transaction_count" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <SortHeader label="Portfolio" field="total_assessed_value" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
-              <SortHeader label="Net Acq" field="net_acquisitions" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
-              <SortHeader label="Txns/Yr" field="txns_per_year" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
+              <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
+                Primary Type
+              </th>
+              <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
+                Secondary Type
+              </th>
               <SortHeader label="Radius" field="geographic_radius_km" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
                 Status
@@ -378,11 +384,19 @@ export default function GroupsPage() {
                 <td className="px-4 py-2 text-right" style={{ color: "var(--gray-11)" }}>
                   {formatCompact(g.total_assessed_value)}
                 </td>
-                <td className="px-4 py-2 text-right" style={{ color: (g.net_acquisitions ?? 0) > 0 ? "var(--jade-11)" : (g.net_acquisitions ?? 0) < 0 ? "var(--red-11)" : "var(--gray-9)" }}>
-                  {g.net_acquisitions != null ? (g.net_acquisitions > 0 ? `+${g.net_acquisitions}` : g.net_acquisitions) : "—"}
+                <td className="px-4 py-2">
+                  {g.dominant_type ? (
+                    <Badge size="1" color={propertyTypeColor(g.dominant_type)} variant="soft">
+                      {propertyTypeLabel(g.dominant_type)}
+                    </Badge>
+                  ) : "—"}
                 </td>
-                <td className="px-4 py-2 text-right" style={{ color: "var(--gray-11)" }}>
-                  {compactVelocity(g.txns_per_year)}
+                <td className="px-4 py-2">
+                  {g.secondary_type ? (
+                    <Badge size="1" color={propertyTypeColor(g.secondary_type)} variant="soft">
+                      {propertyTypeLabel(g.secondary_type)}
+                    </Badge>
+                  ) : "—"}
                 </td>
                 <td className="px-4 py-2 text-right" style={{ color: "var(--gray-11)" }}>
                   {compactKm(g.geographic_radius_km)}
@@ -400,8 +414,17 @@ export default function GroupsPage() {
             ))}
             {data?.results.length === 0 && (
               <tr>
-                <td colSpan={8} className="px-4 py-8 text-center" style={{ color: "var(--gray-9)" }}>
-                  No groups match your filters.
+                <td colSpan={8} className="px-4 py-12 text-center" style={{ color: "var(--gray-9)" }}>
+                  {status === "engaged" ? (
+                    <div className="flex flex-col items-center gap-1.5">
+                      <Text size="2" weight="medium" style={{ color: "var(--gray-11)" }}>No engaged groups yet</Text>
+                      <Text size="2" style={{ color: "var(--gray-9)" }}>
+                        Open a group and click "Promote to Engaged" to track them here.
+                      </Text>
+                    </div>
+                  ) : (
+                    "No groups match your filters."
+                  )}
                 </td>
               </tr>
             )}

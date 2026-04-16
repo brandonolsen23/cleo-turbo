@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20203",
+  "source_folder": "Middlesex_County/multifamily/p013",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20203",
+      "source_folder": "Middlesex_County/multifamily/p013",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/multifamily/p013/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1201 RICHMOND ST N"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "29 Dec 2000",
+      "price_text": "$8,340,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "University Towers Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dawn Turrin",
+        "30 St Clair Ave W, Ste 1100",
+        "Toronto, Ontario",
+        "M4V 3A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Homestead Land Holdings Ltd     613-546-3146"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard McNevin",
+        "80 Johnson St",
+        "Kingston, Ontario",
+        "K7L 1X7"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 8 storey; 155 units @ $53,806"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1027, Lot 15",
+      "",
+      "2.56 acre"
+    ],
+    "arn_text": "39 36 010 570 00100",
+    "consideration_lines": [
+      "cash: $3,807,710     assumed/vtb debt: $4,532,290"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20203/photo.jpg"
+    },
+    "footer": {
+      "page_position": "602 / 663",
+      "rt_id": "RT20203"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1201 RICHMOND ST N",
+    "postcode": "N6A 3L6",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "12/29/2000",
+    "desc": "Apartment Bldg - 8 storey; 155 units @ $53,806",
+    "bldg": "155 units",
+    "acreage": "2.56",
+    "consid": "8340000",
+    "cash": "3807710",
+    "debt": "4532290",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 010 570 00100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1201 RICHMOND ST N"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "29 Dec 2000",
+    "note": "",
+    "description": "Apartment Bldg - 8 storey; 155 units @ $53,806",
+    "seller_lines": [
+      "University Towers Inc"
+    ],
+    "buyer_lines": [
+      "Homestead Land Holdings Ltd"
+    ],
+    "price_text": "$8,340,000"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT78441",
+  "source_folder": "Metro_Toronto/retail/p049",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT78441",
+      "source_folder": "Metro_Toronto/retail/p049",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p049/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "763 BAY ST",
+        "LEVEL 1, UNITS 1-4"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 May 2011",
+      "price_text": "$2,490,800",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CPI Retail Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Hawrysh"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2259644 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jae-Ho Lee",
+        "332 Sheppard Ave E",
+        "Toronto, Ontario",
+        "M2N 3B4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1866",
+      "Level 1, Units 1-4",
+      "",
+      "PIN: 12866-0001 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,490,800     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,100,000   rate: 18.0% per annum",
+      "registered: 05/11/2011   due: 06/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT784/RT78441/0522_070928.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT784/RT78441/0522_071013.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT784/RT78441/0522_071204.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT784/RT78441/0522_071345.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2402 / 4952",
+      "rt_id": "RT78441"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "763 BAY ST, LEVEL 1, UNITS 1-4",
+    "postcode": "M5G 2R3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/11/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2490800",
+    "cash": "2490800",
+    "debt": "",
+    "note": "",
+    "pin": "12866-0001+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "763 BAY ST",
+      "LEVEL 1, UNITS 1-4"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 May 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "CPI Retail Inc"
+    ],
+    "buyer_lines": [
+      "2259644 Ontario Inc"
+    ],
+    "price_text": "$2,490,800"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT100246",
+  "source_folder": "Huron_County/farm/p012",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT100246",
+      "source_folder": "Huron_County/farm/p012",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Huron_County/farm/p012/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "43243 CANADA COMPANY RD"
+      ],
+      "city_region": "Huron E. : Huron County",
+      "date_text": "16 May 2014",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "GM Dalton Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Geoffrey Dalton",
+        "43080 Canada Company Rd, RR 1",
+        "Walton, Ontario",
+        "N0K 1Z0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 13, Lot 20",
+      "Except:",
+      "Inst No R-316700",
+      "",
+      "PIN: 41304-0031",
+      "",
+      "104.27 acre"
+    ],
+    "arn_text": "40 40 380 013 04900",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,200,000   rate: 5.50% per annum.",
+      "registered: 05/16/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "552 / 870",
+      "rt_id": "RT100246"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "43243 CANADA COMPANY RD",
+    "postcode": "N0K 1Z0",
+    "municipality": "Huron E.",
+    "region": "Huron County",
+    "date": "05/16/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "104.27",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "41304-0031",
+    "rollno": "40 40 380 013 04900"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "43243 CANADA COMPANY RD"
+    ],
+    "city_region": "Huron E. : Huron County",
+    "date_text": "16 May 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "GM Dalton Farms Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

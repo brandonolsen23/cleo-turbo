@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT93710",
+  "source_folder": "Lambton/retail/p002",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93710",
+      "source_folder": "Lambton/retail/p002",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1450 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "04 Jul 2013",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Famous Players Co     416-323-6600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Santram",
+        "c/o Cineplex Entertainment LP",
+        "1303 Yonge St",
+        "Toronto, Ontario",
+        "M4T 2Y9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2325311 Ontario Inc     416-687-6700"
+      ],
+      "trade_name": "KingSett Capital",
+      "contact_lines": [
+        "Attn: Robbie Kumer",
+        "66 Wellington St W, Ste 4400",
+        "Toronto-Dominion Centre",
+        "TD Bank Tower",
+        "Toronto, Ontario",
+        "M5K 1H6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 16",
+      "Plan 25R-5605, Parts 1-4",
+      "Together with:",
+      "Inst No L-709011",
+      "",
+      "PIN: 43488-0009",
+      "",
+      "5.96 acre"
+    ],
+    "arn_text": "38 29 300 036 16400",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93710/0503_152602.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93710/0503_152633.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93710/0503_152640.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93710/0503_152711.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93710/0503_152713.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "54 / 106",
+      "rt_id": "RT93710"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1450 LONDON RD",
+    "postcode": "N7S 1P7",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "07/04/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.96",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "43488-0009",
+    "rollno": "38 29 300 036 16400"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1450 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "04 Jul 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Famous Players Co"
+    ],
+    "buyer_lines": [
+      "2325311 Ontario Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

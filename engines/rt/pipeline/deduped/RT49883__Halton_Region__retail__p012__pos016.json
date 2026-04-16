@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT49883",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49883",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "650 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "14 Jul 2000",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Harbard Square Plaza Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kun Soo Che"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2103747 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kulwant Singh",
+        "650 Plains Rd E",
+        "Burlington, Ontario",
+        "L7T 2E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-1920, Parts 2-5, 7 & 8",
+      "Plan 20R-12687, Part 1",
+      "",
+      "1.62 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT498/RT49883/0729_173734.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT498/RT49883/0729_173736.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT498/RT49883/0729_173753.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "567 / 613",
+      "rt_id": "RT49883"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "650 PLAINS RD E",
+    "postcode": "L7T 2E9",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "07/14/2000",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.62",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "650 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "14 Jul 2000",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Harbard Square Plaza Corp"
+    ],
+    "buyer_lines": [
+      "2103747 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT44301",
+  "source_folder": "Frontenac_County/retail/p004",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44301",
+      "source_folder": "Frontenac_County/retail/p004",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p004/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "105 SUTHERLAND DR"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "16 Sep 2005",
+      "price_text": "$1,067,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1311347 Ontario Inc     613-968-8243"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paz Provizor",
+        "59 O'Neill Dr, RR 4",
+        "Belleville, Ontario",
+        "K8N 4Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Aqua Equities Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alfan Jetha",
+        "105 Sutherland Dr",
+        "Kingston, Ontario",
+        "K7K 5V6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 20 units 20,000 sf @ $53"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1632, Block A",
+      "",
+      "1.46 acre"
+    ],
+    "arn_text": "10 11 040 150 14502",
+    "consideration_lines": [
+      "cash: $1,067,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "194 / 236",
+      "rt_id": "RT44301"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "105 SUTHERLAND DR",
+    "postcode": "K7K 5V6",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "09/16/2005",
+    "desc": "Retail Plaza - 1 storey; 20 units 20,000 sf @ $53",
+    "bldg": "20,000 sf",
+    "acreage": "1.46",
+    "consid": "1067000",
+    "cash": "1067000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 040 150 14502"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "105 SUTHERLAND DR"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "16 Sep 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 20 units 20,000 sf @ $53",
+    "seller_lines": [
+      "1311347 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Aqua Equities Ltd"
+    ],
+    "price_text": "$1,067,000"
+  }
+}

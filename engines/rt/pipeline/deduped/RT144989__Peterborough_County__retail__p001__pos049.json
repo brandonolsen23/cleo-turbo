@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT144989",
+  "source_folder": "Peterborough_County/retail/p001",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT144989",
+      "source_folder": "Peterborough_County/retail/p001",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p001/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "2657 LAKEFIELD RD"
+      ],
+      "city_region": "Smith : Peterborough County",
+      "date_text": "28 Jun 2019",
+      "price_text": "$2,308,674",
+      "note": "Portfolio; Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Giant Tiger Stores Ltd     613-521-8222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Haig",
+        "2480 Walkley Rd",
+        "Ottawa, Ontario",
+        "K1G 6A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "QAB Ontario Investments Ltd     514-593-8888"
+      ],
+      "trade_name": "Divco Ltd",
+      "contact_lines": [
+        "Attn: Jordan Aberman",
+        "8300 Pie-IX Blvd",
+        "Montreal, Quebec",
+        "H1Z 4E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 22",
+      "Plan 45R-6377, Part 1",
+      "As in Inst No R-666085",
+      "Except:",
+      "Plan DEP-2795",
+      "",
+      "PIN: 28410-0059",
+      "",
+      "12.40 acre"
+    ],
+    "arn_text": "15 16 020 007 42500",
+    "consideration_lines": [
+      "cash: $2,308,674     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $25,000,000   rate: 25.0% per annum.",
+      "registered: 06/28/2019   due: on demand",
+      "",
+      "chargee: Rainbow Finance Corp",
+      "principal: $15,000,000   rate: 25.0% per annum.",
+      "registered: 06/28/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144989/1227_113805.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144989/1227_113814.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144989/1227_113836.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144989/1227_113910.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144989/1227_113921.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT14/RT1449/RT144989/air1.jpg",
+        "/assets/files/RT14/RT1449/RT144989/air2.jpg",
+        "/assets/files/RT14/RT1449/RT144989/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "50 / 157",
+      "rt_id": "RT144989"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "2657 LAKEFIELD RD",
+    "postcode": "K9J 6X5",
+    "municipality": "Smith",
+    "region": "Peterborough County",
+    "date": "06/28/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "12.4",
+    "consid": "2308674",
+    "cash": "2308674",
+    "debt": "",
+    "note": "Portfolio; Sale Leaseback",
+    "pin": "28410-0059",
+    "rollno": "15 16 020 007 42500"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "2657 LAKEFIELD RD"
+    ],
+    "city_region": "Smith : Peterborough County",
+    "date_text": "28 Jun 2019",
+    "note": "Portfolio; Sale Leaseback",
+    "description": "",
+    "seller_lines": [
+      "Giant Tiger Stores Ltd"
+    ],
+    "buyer_lines": [
+      "QAB Ontario Investments Ltd"
+    ],
+    "price_text": "$2,308,674"
+  }
+}

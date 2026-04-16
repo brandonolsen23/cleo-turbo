@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT63404",
+  "source_folder": "Metro_Toronto/retail/p060",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63404",
+      "source_folder": "Metro_Toronto/retail/p060",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p060/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "795 WARDEN AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "07 Aug 2008",
+      "price_text": "$819,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "991595 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Amin Manji",
+        "61 Telson Rd",
+        "Markham, Ontario",
+        "L3R 1E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Omni 19 Corp",
+        "Hyecan General Contracting"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Garen Kassabian",
+        "79 Laureleaf Rd",
+        "Thornhill, Ontario",
+        "L3T 2Y3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 4,000 sf @ $205"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3925, Lot 1",
+      "",
+      "PIN: 06501-0006",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 01 024 540 00200",
+    "consideration_lines": [
+      "cash: $819,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Re/Max Vision Realty Inc: Rahim Ajani, 416-321-2228"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT634/RT63404/0824_121235.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT634/RT63404/0824_121304.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT634/RT63404/0824_121308.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT634/RT63404/air1.jpg",
+        "/assets/files/RT6/RT634/RT63404/air2.jpg",
+        "/assets/files/RT6/RT634/RT63404/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2986 / 4952",
+      "rt_id": "RT63404"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "795 WARDEN AVE",
+    "postcode": "M1L 4C4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "08/07/2008",
+    "desc": "Retail Bldg - 1 storey; 4,000 sf @ $205",
+    "bldg": "4,000 sf",
+    "acreage": ".2",
+    "consid": "819000",
+    "cash": "819000",
+    "debt": "",
+    "note": "",
+    "pin": "06501-0006",
+    "rollno": "19 01 024 540 00200"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "795 WARDEN AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "07 Aug 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 4,000 sf @ $205",
+    "seller_lines": [
+      "991595 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Omni 19 Corp",
+      "Hyecan General Contracting"
+    ],
+    "price_text": "$819,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT176741",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176741",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "356 RED RIVER RD"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "30 Mar 2023",
+      "price_text": "$1,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jswag Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2367 King George's Park Dr",
+        "Rosslyn, Ontario",
+        "P7K 0S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Indian Youth Friendship Society"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Charlene Baglien",
+        "401 Cumberland St N",
+        "Thunder Bay, Ontario",
+        "P7A 4P7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-138, Lot 2",
+      "",
+      "PIN: 62149-0017",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "58 04 010 001 15400",
+    "consideration_lines": [
+      "cash: $1,650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "32 / 65",
+      "rt_id": "RT176741"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "356 RED RIVER RD",
+    "postcode": "P7B 1B1",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "03/30/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".26",
+    "consid": "1650000",
+    "cash": "1650000",
+    "debt": "",
+    "note": "",
+    "pin": "62149-0017",
+    "rollno": "58 04 010 001 15400"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "356 RED RIVER RD"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "30 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Jswag Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Indian Youth Friendship Society"
+    ],
+    "price_text": "$1,650,000"
+  }
+}

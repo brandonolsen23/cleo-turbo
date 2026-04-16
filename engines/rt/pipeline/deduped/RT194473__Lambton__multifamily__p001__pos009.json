@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT194473",
+  "source_folder": "Lambton/multifamily/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194473",
+      "source_folder": "Lambton/multifamily/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/multifamily/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "416 NELSON ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "18 Sep 2025",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Provest Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "20 Lakevista Ave",
+        "Markham, Ontario",
+        "L3P 1H5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "416 Nelson Holding Corp     905-338-3777"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Timothy Diamond",
+        "220 Wyecroft Rd, Ste 203",
+        "Oakville, Ontario",
+        "L6K 3V1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 79 - Sarnia City,",
+      "Lots 58-61",
+      "",
+      "PIN: 43239-0137",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "38 29 300 012 02300",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $800,000",
+      "",
+      "chargee: Provest Investments Inc",
+      "principal: $800,000   rate: 6.0% per annum. Increasing to 12.0% if extended past the original 3 month term, and due in full on 3/18/2026.",
+      "registered: 09/18/2025   due: 12/18/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 124",
+      "rt_id": "RT194473"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "416 NELSON ST",
+    "postcode": "N7T 5K5",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "09/18/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "1600000",
+    "cash": "800000",
+    "debt": "800000",
+    "note": "",
+    "pin": "43239-0137",
+    "rollno": "38 29 300 012 02300"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "416 NELSON ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "18 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Provest Investments Inc"
+    ],
+    "buyer_lines": [
+      "416 Nelson Holding Corp"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

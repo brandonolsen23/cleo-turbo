@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT19798",
+  "source_folder": "Peel_Region/retail/p021",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19798",
+      "source_folder": "Peel_Region/retail/p021",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p021/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "257 DUNDAS ST E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "15 Dec 2000",
+      "price_text": "$2,093,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "High Park Plaza Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kanwal Sethi",
+        "4433 Sheppard Ave E, Ste 207",
+        "Scarborough, Ontario",
+        "M1S 1V3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1105494 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Milan Shah",
+        "23 Automatic Dr",
+        "Brampton, Ontario",
+        "L6S 4K6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 19,400 sf @ $108"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-9358, Parts 3 & 4",
+      "",
+      "NW corner at Given Rd",
+      "",
+      "1.66 acre"
+    ],
+    "arn_text": "21 05 040 068 23000",
+    "consideration_lines": [
+      "cash: $871,163     assumed/vtb debt: $1,221,837"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT197/RT19798/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1003 / 1087",
+      "rt_id": "RT19798"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "257 DUNDAS ST E",
+    "postcode": "L5A 1W8",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "12/15/2000",
+    "desc": "Retail Plaza - 19,400 sf @ $108",
+    "bldg": "19,400 sf",
+    "acreage": "1.66",
+    "consid": "2093000",
+    "cash": "871163",
+    "debt": "1221837",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 040 068 23000"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "257 DUNDAS ST E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "15 Dec 2000",
+    "note": "",
+    "description": "Retail Plaza - 19,400 sf @ $108",
+    "seller_lines": [
+      "High Park Plaza Ltd"
+    ],
+    "buyer_lines": [
+      "1105494 Ontario Ltd"
+    ],
+    "price_text": "$2,093,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT123430",
+  "source_folder": "Kent_County/all/p012",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123430",
+      "source_folder": "Kent_County/all/p012",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/all/p012/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "260 WEST ST"
+      ],
+      "city_region": "Quinte W : Hastings County",
+      "date_text": "10 Feb 2017",
+      "price_text": "$795,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1493122 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Patrick Johnson",
+        "c/o 950 Dupont St",
+        "Toronto, Ontario",
+        "M6H 1Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2557541 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Haleh Ghelichkhani",
+        "110 North Front St",
+        "Suite A3, Unit 353",
+        "Belleville, Ontario",
+        "K8P 0A6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 2",
+      "Plan 21R-4816, Part 1",
+      "Except:",
+      "Plan 21R-15586, Part 1",
+      "",
+      "PIN: 40374-0196",
+      "",
+      "7.48 acre"
+    ],
+    "arn_text": "12 04 010 025 56402",
+    "consideration_lines": [
+      "cash: $100,000     assumed/vtb debt: $695,000",
+      "",
+      "chargee: 1493122 Ontario Ltd",
+      "principal: $695,000   rate: 6.0% per annum.",
+      "registered: 02/10/2017   due: 02/10/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123430/0630_134456.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123430/0630_134501.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123430/0630_134503.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123430/0630_134558.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123430/0630_134559.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "577 / 932",
+      "rt_id": "RT123430"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "260 WEST ST",
+    "postcode": "K8V 2M9",
+    "municipality": "Quinte W",
+    "region": "Hastings County",
+    "date": "02/10/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "7.48",
+    "consid": "795000",
+    "cash": "100000",
+    "debt": "695000",
+    "note": "",
+    "pin": "40374-0196",
+    "rollno": "12 04 010 025 56402"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "260 WEST ST"
+    ],
+    "city_region": "Quinte W : Hastings County",
+    "date_text": "10 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1493122 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2557541 Ontario Inc"
+    ],
+    "price_text": "$795,000"
+  }
+}

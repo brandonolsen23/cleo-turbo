@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT192545",
+  "source_folder": "Bruce/multifamily/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192545",
+      "source_folder": "Bruce/multifamily/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/multifamily/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 PHILIP PLACE"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "02 Jun 2025",
+      "price_text": "$4,237,877",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "1254537 Ontario Ltd     289-719-3101"
+      ],
+      "trade_name": "Revera Inc",
+      "contact_lines": [
+        "22 Adelaide St W, Ste 2010",
+        "Toronto, Ontario",
+        "M5H 4E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Extendicare (Canada) Inc     905-470-4000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Bacon",
+        "3000 Steeles Ave E, Ste 103",
+        "Markham, Ontario",
+        "L3R 4T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-4235, Part 1",
+      "Plan M1, Blocks C, B & G",
+      "Plan 3R-3793, Parts 1 & 4",
+      "",
+      "PIN: 33303-0620 +",
+      "",
+      "6.26 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,237,877     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $450,000,000   rate: 25.0% per annum.",
+      "registered: 06/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 37",
+      "rt_id": "RT192545"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "550 PHILIP PLACE",
+    "postcode": "N2Z 3A6",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "06/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.26",
+    "consid": "4237877",
+    "cash": "4237877",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "33303-0620+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "550 PHILIP PLACE"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "02 Jun 2025",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "1254537 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Extendicare (Canada) Inc"
+    ],
+    "price_text": "$4,237,877"
+  }
+}

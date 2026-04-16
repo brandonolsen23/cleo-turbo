@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT192188",
+  "source_folder": "York_Region/retail/p002",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192188",
+      "source_folder": "York_Region/retail/p002",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "200 MARYCROFT AVE",
+        "UNIT 4"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "15 May 2025",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1297820 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11 Manda Dr",
+        "Maple, Ontario",
+        "L6A 3K5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vincal Holdings Inc     905-264-8001"
+      ],
+      "trade_name": "Canvas Developments",
+      "contact_lines": [
+        "Attn: Veronica Vitullo",
+        "100 Strada Dr, Unit 1",
+        "Woodbridge, Ontario",
+        "L4L 5V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 579",
+      "Level 1, Unit 4",
+      "",
+      "PIN: 29112-0004"
+    ],
+    "arn_text": "19 28 000 280 86604",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175251.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175253.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175330.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175331.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175436.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175437.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192188/0531_175617.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "77 / 984",
+      "rt_id": "RT192188"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "200 MARYCROFT AVE, UNIT 4",
+    "postcode": "L4L 5X4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "05/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "29112-0004",
+    "rollno": "19 28 000 280 86604"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "200 MARYCROFT AVE",
+      "UNIT 4"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "15 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1297820 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Vincal Holdings Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

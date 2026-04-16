@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT54003",
+  "source_folder": "Middlesex_County/retail/p010",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT54003",
+      "source_folder": "Middlesex_County/retail/p010",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p010/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "551 YORK ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "19 Feb 2007",
+      "price_text": "$645,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Covey Investments Inc",
+        "Wallington Management Ltd     519-659-2340"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Clarence Covey",
+        "Hatherell Carey",
+        "1151 Florence St, Ste 400",
+        "London, Ontario",
+        "N5W 2M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bud Gowan Clothes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Brunnenmeir",
+        "551 York St",
+        "London, Ontario",
+        "N6B 1R6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 9,340 sf @ $69",
+      "",
+      "1 truck level door",
+      "",
+      "Price noted excludes chattels of $5,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 178(E)",
+      "Part Lot 25, S/E York St",
+      "As in Inst No 818941",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "36 36 050 030 13200",
+    "consideration_lines": [
+      "cash: $157,500     assumed/vtb debt: $487,500",
+      "",
+      "chargee: Covey Investmants Inc",
+      "Wallington Management Ltd",
+      "principal: $487,500   rate: 7.0% per annum",
+      "registered: 02/19/2007   due: 02/19/2017"
+    ],
+    "broker_lines": [
+      "Royal LePage Triland Realty: Randall Hanke & Cheryl Miller, 519-672-9880"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT540/RT54003/0318_095055.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT540/RT54003/0318_095152.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT540/RT54003/0318_095153.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT540/RT54003/0318_095155.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT540/RT54003/0318_095217.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "467 / 686",
+      "rt_id": "RT54003"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "551 YORK ST",
+    "postcode": "N6B 1R6",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "02/19/2007",
+    "desc": "Retail Bldg - 2 storey; 9,340 sf @ $69",
+    "bldg": "9,340 sf",
+    "acreage": ".33",
+    "consid": "645000",
+    "cash": "157500",
+    "debt": "487500",
+    "note": "",
+    "pin": "",
+    "rollno": "36 36 050 030 13200"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "551 YORK ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "19 Feb 2007",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 9,340 sf @ $69",
+    "seller_lines": [
+      "Covey Investments Inc",
+      "Wallington Management Ltd"
+    ],
+    "buyer_lines": [
+      "Bud Gowan Clothes Ltd"
+    ],
+    "price_text": "$645,000"
+  }
+}

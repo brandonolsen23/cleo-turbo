@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT24011",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24011",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "3336 - 3372 KEELE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "21 Dec 2001",
+      "price_text": "$7,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Keele Sheppard Centre Inc     905-477-9200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert Green",
+        "Centrefund Development Group",
+        "2851 John St, Ste 1",
+        "Markham, Ontario",
+        "L3R 5R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rhyl Realty Inc     416-256-0246"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jack Ganz",
+        "3200 Dufferin St, Ste 306",
+        "Toronto, Ontario",
+        "M6A 2T3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 20 units 37,539 sf @ $189",
+      "",
+      "Known as Keele Sheppard Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 16",
+      "As in Inst No TB-408478",
+      "",
+      "NW corner at Sheppard Ave",
+      "",
+      "2.91 acre"
+    ],
+    "arn_text": "19 09 033 010 18401",
+    "consideration_lines": [
+      "cash: $3,446,853     assumed/vtb debt: $3,653,147"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24011/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4315 / 4952",
+      "rt_id": "RT24011"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "3336 - 3372 KEELE ST",
+    "postcode": "M3J 1L5",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/21/2001",
+    "desc": "Retail Plaza - 1 storey; 20 units 37,539 sf @ $189",
+    "bldg": "37,539 sf",
+    "acreage": "2.91",
+    "consid": "7100000",
+    "cash": "3446853",
+    "debt": "3653147",
+    "note": "",
+    "pin": "",
+    "rollno": "19 09 033 010 18401"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "3336 - 3372 KEELE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "21 Dec 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 20 units 37,539 sf @ $189",
+    "seller_lines": [
+      "Keele Sheppard Centre Inc"
+    ],
+    "buyer_lines": [
+      "Rhyl Realty Inc"
+    ],
+    "price_text": "$7,100,000"
+  }
+}

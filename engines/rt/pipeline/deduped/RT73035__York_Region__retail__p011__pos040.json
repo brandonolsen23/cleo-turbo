@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT73035",
+  "source_folder": "York_Region/retail/p011",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73035",
+      "source_folder": "York_Region/retail/p011",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p011/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "4681 HWY 7"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "30 Jun 2010",
+      "price_text": "$5,210,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2230583 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Fang Lin",
+        "127 Shepton Way",
+        "Toronto, Ontario",
+        "M1V 5N4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 tenants 14,000 sf @ $372",
+      "",
+      "Fully leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 10",
+      "As in Inst Nos:",
+      "R-332881 & R-332882",
+      "",
+      "PIN: 02964-0003",
+      "",
+      "1.14 acre"
+    ],
+    "arn_text": "19 36 030 221 26700",
+    "consideration_lines": [
+      "cash: $5,210,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of China (Canada)",
+      "principal: $3,409,000   rate: Prime plus 5.0% per annum",
+      "registered: 06/30/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT730/RT73035/0716_134434.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT730/RT73035/0716_134609.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT730/RT73035/0716_134709.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT730/RT73035/air1.jpg",
+        "/assets/files/RT7/RT730/RT73035/air2.jpg",
+        "/assets/files/RT7/RT730/RT73035/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "541 / 984",
+      "rt_id": "RT73035"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "4681 HWY 7",
+    "postcode": "L3R 1M6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/30/2010",
+    "desc": "Retail Plaza - 1 storey; 6 tenants 14,000 sf @ $372",
+    "bldg": "14,000 sf",
+    "acreage": "1.14",
+    "consid": "5210000",
+    "cash": "5210000",
+    "debt": "",
+    "note": "",
+    "pin": "02964-0003",
+    "rollno": "19 36 030 221 26700"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "4681 HWY 7"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "30 Jun 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 tenants 14,000 sf @ $372",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2230583 Ontario Inc"
+    ],
+    "price_text": "$5,210,000"
+  }
+}

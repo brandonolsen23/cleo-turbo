@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT190564",
+  "source_folder": "Kitchener-Waterloo/multifamily/p002",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190564",
+      "source_folder": "Kitchener-Waterloo/multifamily/p002",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p002/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "27 ROY ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "24 Feb 2025",
+      "price_text": "$2,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Brohman Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Brohman",
+        "156 Benton St",
+        "Kitchener, Ontario",
+        "N2G 3H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 360, Part Lot 5,",
+      "W/S Queen St & N/S Weber St",
+      "As in Inst No 537088",
+      "",
+      "PIN: 22316-0051",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "30 12 020 005 06400",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,699,998",
+      "other: $600,002",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,800,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/24/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "93 / 1449",
+      "rt_id": "RT190564"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "27 ROY ST",
+    "postcode": "N2H 4B4",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "02/24/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "2300000",
+    "cash": "",
+    "debt": "1699998",
+    "note": "Related Parties",
+    "pin": "22316-0051",
+    "rollno": "30 12 020 005 06400"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "27 ROY ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "24 Feb 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Brohman Holdings Inc"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

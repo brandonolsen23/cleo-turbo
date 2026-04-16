@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT26463",
+  "source_folder": "Wellington/retail/p005",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26463",
+      "source_folder": "Wellington/retail/p005",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "470 - 486 WOODLAWN RD E",
+        "460 - 464 VICTORIA RD N"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "29 Jul 2002",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Victoria & Woodlawn Plaza Inc     519-885-4400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Till Segler",
+        "Black Bear Management Ltd",
+        "15A King St N",
+        "Waterloo, Ontario",
+        "N2J 2W6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1121228 Ontario Inc     905-570-7880"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hussein Ghaddar",
+        "966 Old Mohawk Rd W",
+        "Hamilton, Ontario"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 11 units 26,000 sf @ $62"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 598",
+      "Block C & Part Lots 58-61",
+      "As in Inst Nos ROS-573641 & ROS-565823"
+    ],
+    "arn_text": "23 08 030 022 19600",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $1,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "235 / 269",
+      "rt_id": "RT26463"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "470 - 486 WOODLAWN RD E, 460 - 464 VICTORIA RD N",
+    "postcode": "N1E 1B9",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "07/29/2002",
+    "desc": "Retail Plaza - 1 storey; 11 units 26,000 sf @ $62",
+    "bldg": "26,000 sf",
+    "acreage": "",
+    "consid": "1600000",
+    "cash": "600000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 030 022 19600"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "470 - 486 WOODLAWN RD E",
+      "460 - 464 VICTORIA RD N"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "29 Jul 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 11 units 26,000 sf @ $62",
+    "seller_lines": [
+      "Victoria & Woodlawn Plaza Inc"
+    ],
+    "buyer_lines": [
+      "1121228 Ontario Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

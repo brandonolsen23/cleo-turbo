@@ -1,16 +1,18 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { Heading, Text, Button, Badge } from "@radix-ui/themes";
-import { GitMerge, UserPlus, X as XIcon, CaretDown, CaretRight } from "@phosphor-icons/react";
+import { Heading, Text, Button, Badge, Callout } from "@radix-ui/themes";
+import { GitMerge, UserPlus, X as XIcon, CaretDown, CaretRight, MapPin, CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, ReferenceLine, ResponsiveContainer, Tooltip as RechartsTooltip } from "recharts";
 import { fetchApi, mutateApi } from "../api/client";
 import { useCrm } from "../components/crm/CrmContext";
 import { formatCurrency, formatCompact, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
-import { propertyTypeColor, propertyTypeLabel, getRadixHex } from "../lib/theme";
+import { propertyTypeColor, propertyTypeLabel, categoryColor, getRadixHex } from "../lib/theme";
 import PropertyMiniMap from "../components/ui/PropertyMiniMap";
+import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import MergeGroupsModal from "../components/ui/MergeGroupsModal";
 import LinkContactModal from "../components/ui/LinkContactModal";
-import CreateBuyMandateDialog from "../components/crm/CreateBuyMandateDialog";
+import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
+import SuggestedLinksCard from "../components/ui/SuggestedLinksCard";
 import type { GroupDetail, MiniMapProperty, MergeHistoryResponse, GroupContactLink, GroupContactsResponse } from "../types";
 
 function StatCard({ label, value, sub }: { label: string; value: string | number; sub?: string }) {
@@ -164,6 +166,7 @@ export default function GroupDetailPage() {
   const [propsExpanded, setPropsExpanded] = useState(false);
   const [txnsExpanded, setTxnsExpanded] = useState(false);
   const [showBuyMandateDialog, setShowBuyMandateDialog] = useState(false);
+  const [promoteStatus, setPromoteStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
 
   const load = () => {
     if (id) {
@@ -196,8 +199,14 @@ export default function GroupDetailPage() {
   const a = group.analytics;
 
   const handlePromote = async () => {
-    await mutateApi(`/groups/${id}/promote`, "POST");
-    load();
+    setPromoteStatus(null);
+    try {
+      await mutateApi(`/groups/${id}/promote`, "POST");
+      setPromoteStatus({ type: "success", message: "Group promoted to Engaged." });
+      load();
+    } catch {
+      setPromoteStatus({ type: "error", message: "Failed to promote group. Please try again." });
+    }
   };
 
   // Property type mix chart data — use the canonical color palette from theme.ts
@@ -240,12 +249,28 @@ export default function GroupDetailPage() {
             Buy Mandate
           </Button>
         </div>
-        {group.hq_address && (
-          <Text size="2" className="mt-1 block" style={{ color: "var(--gray-9)" }}>
-            HQ: {group.hq_address}
-          </Text>
+        {(group.corporate_address || group.hq_address) && (
+          <div className="flex items-center gap-1.5 mt-1.5">
+            <MapPin size={14} style={{ color: "var(--gray-9)", flexShrink: 0 }} />
+            <Text size="2" style={{ color: "var(--gray-9)" }}>
+              {group.corporate_address || group.hq_address}
+            </Text>
+          </div>
         )}
       </div>
+
+      {promoteStatus && (
+        <Callout.Root
+          color={promoteStatus.type === "success" ? "jade" : "red"}
+          size="1"
+          variant="soft"
+        >
+          <Callout.Icon>
+            {promoteStatus.type === "success" ? <CheckCircle size={16} /> : <WarningCircle size={16} />}
+          </Callout.Icon>
+          <Callout.Text>{promoteStatus.message}</Callout.Text>
+        </Callout.Root>
+      )}
 
       {/* Top row: Chart (left) + Stat cards stacked (right) */}
       {a ? (
@@ -358,6 +383,9 @@ export default function GroupDetailPage() {
         </div>
       )}
 
+      {/* Suggested Links (address/contact/phone based) */}
+      {id && <SuggestedLinksCard groupId={id} onMerged={load} />}
+
       {/* Contacts */}
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
         <div className="flex items-center justify-between mb-3">
@@ -437,7 +465,7 @@ export default function GroupDetailPage() {
       </div>
 
       {/* Properties */}
-      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5 overflow-x-auto">
         <Text size="3" weight="medium" className="mb-3 block">Properties ({group.properties.length})</Text>
         {group.properties.length === 0 ? (
           <Text size="2" style={{ color: "var(--gray-9)" }}>No properties</Text>
@@ -457,7 +485,18 @@ export default function GroupDetailPage() {
                 {(propsExpanded ? group.properties : group.properties.slice(0, 5)).map((p) => (
                   <tr key={p.id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                       onClick={() => navigate(`/properties/${p.id}`)}>
-                    <td className="py-2">{p.display_address}</td>
+                    <td className="py-2 !whitespace-normal">
+                      <div className="whitespace-nowrap">{p.display_address}</div>
+                      {p.brands && p.brands.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {p.brands.map((b, j) => (
+                            <Badge key={j} size="1" variant="soft" color={categoryColor(b.category)}>
+                              {b.brand}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
+                    </td>
                     <td className="py-2">{p.city}</td>
                     <td className="py-2 text-right">{formatDate(p.most_recent_sale_date)}</td>
                     <td className="py-2 text-right">{formatCurrency(p.most_recent_sale_price)}</td>
@@ -495,6 +534,7 @@ export default function GroupDetailPage() {
                   <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>City</th>
                   <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Side</th>
                   <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
+                  <th className="w-8 py-2" />
                 </tr>
               </thead>
               <tbody>
@@ -502,7 +542,18 @@ export default function GroupDetailPage() {
                   <tr key={`${t.source_id}-${i}`} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                       onClick={() => navigate(`/transactions/${t.source_id}`)}>
                     <td className="py-2">{formatDate(t.sale_date)}</td>
-                    <td className="py-2">{t.display_address}</td>
+                    <td className="py-2 !whitespace-normal">
+                      <div className="whitespace-nowrap">{t.display_address}</div>
+                      {t.brands && t.brands.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {t.brands.map((b, j) => (
+                            <Badge key={j} size="1" variant="soft" color={categoryColor(b.category)}>
+                              {b.brand}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
+                    </td>
                     <td className="py-2">{t.city}</td>
                     <td className="py-2">
                       <Badge size="1" variant="soft" color={t.side === "buyer" ? "blue" : "orange"}>
@@ -510,6 +561,9 @@ export default function GroupDetailPage() {
                       </Badge>
                     </td>
                     <td className="py-2 text-right">{formatCurrency(t.sale_price)}</td>
+                    <td className="py-2 text-center">
+                      {t.source_id?.startsWith("RT") && <SourceHtmlButton sourceId={t.source_id} />}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -591,9 +645,9 @@ export default function GroupDetailPage() {
         />
       )}
 
-      {/* Buy Mandate Dialog */}
+      {/* Buy Mandate Drawer */}
       {showBuyMandateDialog && group && (
-        <CreateBuyMandateDialog
+        <CreateBuyMandateDrawer
           groupId={group.id}
           entityName={group.display_name}
           onClose={() => setShowBuyMandateDialog(false)}

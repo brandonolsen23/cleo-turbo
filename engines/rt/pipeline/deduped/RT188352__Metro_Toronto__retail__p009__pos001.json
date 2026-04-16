@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT188352",
+  "source_folder": "Metro_Toronto/retail/p009",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188352",
+      "source_folder": "Metro_Toronto/retail/p009",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p009/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1700 AVENUE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Nov 2024",
+      "price_text": "$5,249,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1704 Avenue Road GP Inc",
+        "1704 Avenue Road, LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Villarboit Cres",
+        "Vaughan, Ontario",
+        "L4K 4K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maven PA Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Aghar",
+        "1700 Avenue Rd,",
+        "Unit 200, Rental Compnent",
+        "Toronto, Ontario",
+        "M5M 0B3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-32037,",
+      "Parts 9, 10, 16, 17 & 21",
+      "",
+      "PIN: 10189-0878"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,249,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Vancity Community Investment Bank",
+      "principal: $3,125,000   rate: 5.31% per annum.",
+      "registered: 11/05/2024   due: 10/31/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105531.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105534.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105535.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105536.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105615.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105620.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105630.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105635.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1883/RT188352/1117_105636.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "402 / 4952",
+      "rt_id": "RT188352"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1700 AVENUE RD",
+    "postcode": "M5M 0B3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/05/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "5249000",
+    "cash": "5249000",
+    "debt": "",
+    "note": "",
+    "pin": "10189-0878",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1700 AVENUE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1704 Avenue Road GP Inc",
+      "1704 Avenue Road, LP"
+    ],
+    "buyer_lines": [
+      "Maven PA Corp"
+    ],
+    "price_text": "$5,249,000"
+  }
+}

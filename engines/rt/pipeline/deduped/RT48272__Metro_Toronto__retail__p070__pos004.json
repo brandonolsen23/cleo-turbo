@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT48272",
+  "source_folder": "Metro_Toronto/retail/p070",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48272",
+      "source_folder": "Metro_Toronto/retail/p070",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p070/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1515 BIRCHMOUNT RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "25 Apr 2006",
+      "price_text": "$2,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1478034 Ontario Inc     416-492-5229"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Malik Mehmood",
+        "Irving Wolkowicz",
+        "2201 Warden Ave, Unit 202",
+        "Scarborough, Ontario",
+        "M1T 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jiwa Famous Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mohamed Jiwa",
+        "19 Randall Ave",
+        "Markham, Ontario",
+        "L3S 1K6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 20,000 sf @ $108"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6678, Block B",
+      "Plan 3473, Part Lot 10",
+      "As in Inst No TB-378910",
+      "",
+      "0.94 acre"
+    ],
+    "arn_text": "19 01 043 250 00300",
+    "consideration_lines": [
+      "cash: $2,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $1,375,000   rate: 5.78% per annum",
+      "registered: 04/25/2006   due: 05/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT482/RT48272/air1.jpg",
+        "/assets/files/RT4/RT482/RT48272/air2.jpg",
+        "/assets/files/RT4/RT482/RT48272/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3455 / 4952",
+      "rt_id": "RT48272"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1515 BIRCHMOUNT RD",
+    "postcode": "M1P 2G7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/25/2006",
+    "desc": "Retail Plaza - 1 storey; 20,000 sf @ $108",
+    "bldg": "20,000 sf",
+    "acreage": ".94",
+    "consid": "2150000",
+    "cash": "2150000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 043 250 00300"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1515 BIRCHMOUNT RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "25 Apr 2006",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 20,000 sf @ $108",
+    "seller_lines": [
+      "1478034 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Jiwa Famous Investments Ltd"
+    ],
+    "price_text": "$2,150,000"
+  }
+}

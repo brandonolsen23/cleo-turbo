@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT26685",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26685",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "BASELINE RD W",
+        "DUKE ST"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "28 Aug 2002",
+      "price_text": "$2,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TSC Realty Inc     519-453-5270"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roy Carter",
+        "570 Industrial Rd",
+        "London, Ontario",
+        "N5V 1V1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Murray G. Cummings     519-686-7082"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "930 Country Club Cres",
+        "London, Ontario",
+        "N6C 5R5"
+      ]
+    },
+    "description_lines": [
+      "New Retail Bldg - 1 storey; 2 units 27,000 sf @ $80"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-20224",
+      "Parts 2-4, 6-8, 10-12",
+      "Plan 40R-20772, Part 2",
+      "",
+      "5.61 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,150,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "424 / 506",
+      "rt_id": "RT26685"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "BASELINE RD W, DUKE ST",
+    "postcode": "",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "08/28/2002",
+    "desc": "New Retail Bldg - 1 storey; 2 units 27,000 sf @ $80",
+    "bldg": "27,000 sf",
+    "acreage": "5.61",
+    "consid": "2150000",
+    "cash": "2150000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "BASELINE RD W",
+      "DUKE ST"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "28 Aug 2002",
+    "note": "",
+    "description": "New Retail Bldg - 1 storey; 2 units 27,000 sf @ $80",
+    "seller_lines": [
+      "TSC Realty Inc"
+    ],
+    "buyer_lines": [
+      "Murray G. Cummings"
+    ],
+    "price_text": "$2,150,000"
+  }
+}

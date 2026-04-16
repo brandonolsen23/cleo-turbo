@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT123121",
+  "source_folder": "Halton_Region/all/p026",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123121",
+      "source_folder": "Halton_Region/all/p026",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/all/p026/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "245132 SOUTHGATE RD 24"
+      ],
+      "city_region": "Southgate : Grey County",
+      "date_text": "06 Dec 2016",
+      "price_text": "$750,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Stelrod Manufacturing Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Samuel Bowman",
+        "245139 Southgate Rd 24, RR 1",
+        "Proton Station, Ontario",
+        "N0C 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 16, Lot 4",
+      "Except:",
+      "Inst No GS-62709",
+      "",
+      "PIN: 37277-0073",
+      "",
+      "100.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $600,000",
+      "other: $150,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1231/RT123121/air1.jpg",
+        "/assets/files/RT12/RT1231/RT123121/air2.jpg",
+        "/assets/files/RT12/RT1231/RT123121/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1286 / 1819",
+      "rt_id": "RT123121"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "245132 SOUTHGATE RD 24",
+    "postcode": "N0C 1L0",
+    "municipality": "Southgate",
+    "region": "Grey County",
+    "date": "12/06/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.23",
+    "consid": "750000",
+    "cash": "",
+    "debt": "600000",
+    "note": "Related Parties",
+    "pin": "37277-0073",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "245132 SOUTHGATE RD 24"
+    ],
+    "city_region": "Southgate : Grey County",
+    "date_text": "06 Dec 2016",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Stelrod Manufacturing Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

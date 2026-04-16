@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT48123",
+  "source_folder": "Cochrane/all/p170",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48123",
+      "source_folder": "Cochrane/all/p170",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p170/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1 - RF",
+        "PART LOT 22"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "12 Apr 2006",
+      "price_text": "$1,045,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "City of Ottawa     613-580-2400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ernest McArthur",
+        "110 Laurier Ave W",
+        "Ottawa, Ontario",
+        "K1P 1J1"
+      ]
+    },
+    "description_lines": [
+      "N of Mitch Owens Rd, S of Rideau Rd",
+      "E of County River Rd, W of Limebank Rd"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - RF, Part Lot 22",
+      "Plan 4R-21058, Parts 1-4"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,045,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8471 / 10920",
+      "rt_id": "RT48123"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "CONC 1 - RF, PART LOT 22",
+    "postcode": "",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "04/12/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1045500",
+    "cash": "1045500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "CONC 1 - RF",
+      "PART LOT 22"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "12 Apr 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "City of Ottawa"
+    ],
+    "price_text": "$1,045,500"
+  }
+}

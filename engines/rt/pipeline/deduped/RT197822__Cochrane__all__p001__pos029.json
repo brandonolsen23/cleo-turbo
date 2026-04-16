@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT197822",
+  "source_folder": "Cochrane/all/p001",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197822",
+      "source_folder": "Cochrane/all/p001",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "319 SHAKESPEARE ST"
+      ],
+      "city_region": "Vanier : Ottawa-Carleton",
+      "date_text": "04 Mar 2026",
+      "price_text": "$680,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001228204 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Liam Widdowfield",
+        "323 Coventry Rd, Unit 105",
+        "Ottawa, Ontario",
+        "K1K 3X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 246,",
+      "Lot 370 & Part Lot 369",
+      "As in Inst No N-547874",
+      "",
+      "PIN: 04231-0225",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "06 09 210 301 43100",
+    "consideration_lines": [
+      "cash: $680,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $550,000   rate: 1.0% per month.",
+      "registered: 03/04/2026   due: 06/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "30 / 10920",
+      "rt_id": "RT197822"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "319 SHAKESPEARE ST",
+    "postcode": "K1L 5M1",
+    "municipality": "Vanier",
+    "region": "Ottawa-Carleton",
+    "date": "03/04/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "680000",
+    "cash": "680000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04231-0225",
+    "rollno": "06 09 210 301 43100"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "319 SHAKESPEARE ST"
+    ],
+    "city_region": "Vanier : Ottawa-Carleton",
+    "date_text": "04 Mar 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001228204 Ontario Inc"
+    ],
+    "price_text": "$680,000"
+  }
+}

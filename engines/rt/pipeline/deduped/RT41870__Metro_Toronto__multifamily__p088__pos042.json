@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT41870",
+  "source_folder": "Metro_Toronto/multifamily/p088",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41870",
+      "source_folder": "Metro_Toronto/multifamily/p088",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p088/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "115 DUNN AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "13 May 2005",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1505561 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ilona Milian-Todd",
+        "62 Indian Grove",
+        "Toronto, Ontario",
+        "M6R 2Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 427, Part Lots 32 & 34",
+      "As in Inst No WF-54923",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 04 021 120 01900",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $487,500   rate: 4.95% per annum",
+      "registered: 05/13/2005   due: 06/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT418/RT41870/air1.jpg",
+        "/assets/files/RT4/RT418/RT41870/air2.jpg",
+        "/assets/files/RT4/RT418/RT41870/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT418/RT41870/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4393 / 6031",
+      "rt_id": "RT41870"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "115 DUNN AVE",
+    "postcode": "M6K 2R8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/13/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 021 120 01900"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "115 DUNN AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "13 May 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1505561 Ontario Corp"
+    ],
+    "price_text": "$750,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT190210",
+  "source_folder": "Kitchener-Waterloo/retail/p002",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190210",
+      "source_folder": "Kitchener-Waterloo/retail/p002",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p002/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "87 MAIN ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "29 Jan 2025",
+      "price_text": "$895,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2684528 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "618 King St W",
+        "Kitchener, Ontario",
+        "N2G 1C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000395381 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dan Ionescu",
+        "215 William St",
+        "Oakville, Ontario",
+        "L6J 1E1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 615, Part Lots 10 & 11",
+      "S/S Main St & E/S Water St",
+      "As in Inst No WS-699683",
+      "",
+      "PIN: 03816-0040",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "30 06 040 028 07500",
+    "consideration_lines": [
+      "cash: $895,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $895,000   rate: Prime plus 6.0% per annum.",
+      "registered: 01/29/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190210/0222_150652.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190210/0222_150717.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190210/0222_150727.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190210/0222_150743.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190210/0222_150756.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "54 / 752",
+      "rt_id": "RT190210"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "87 MAIN ST",
+    "postcode": "N1R 1W1",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "01/29/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "895000",
+    "cash": "895000",
+    "debt": "",
+    "note": "",
+    "pin": "03816-0040",
+    "rollno": "30 06 040 028 07500"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "87 MAIN ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "29 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2684528 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000395381 Ontario Inc"
+    ],
+    "price_text": "$895,000"
+  }
+}

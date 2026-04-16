@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT190667",
+  "source_folder": "Middlesex_County/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190667",
+      "source_folder": "Middlesex_County/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "743 RICHMOND ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "07 Mar 2025",
+      "price_text": "$4,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1474499 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 348 Maple Ave",
+        "Georgetown, Ontario",
+        "L7G 4S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "743 Richmond Inc     416-699-0063"
+      ],
+      "trade_name": "Fitzrovia Real Estate",
+      "contact_lines": [
+        "Attn: Adrian Rocca",
+        "2 St Clair Ave W, Ste 2100",
+        "Toronto, Ontario",
+        "M4V 1L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22(W),",
+      "Lots 22-24, W/S Richmond St",
+      "Except:",
+      "Plan 33R-2295, Part 1",
+      "",
+      "PIN: 08262-0030",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "39 36 010 090 03300",
+    "consideration_lines": [
+      "cash: $4,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $5,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/07/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190667/0607_095140.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190667/0607_095142.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190667/0607_095143.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190667/0607_095241.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190667/0607_095242.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190667/0607_095256.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 686",
+      "rt_id": "RT190667"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "743 RICHMOND ST",
+    "postcode": "N6A 3H2",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/07/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "4700000",
+    "cash": "4700000",
+    "debt": "",
+    "note": "",
+    "pin": "08262-0030",
+    "rollno": "39 36 010 090 03300"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "743 RICHMOND ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "07 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1474499 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "743 Richmond Inc"
+    ],
+    "price_text": "$4,700,000"
+  }
+}

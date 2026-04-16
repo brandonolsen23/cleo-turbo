@@ -1,113 +1,35 @@
 """
-Single source of truth for all address normalization dictionaries.
+Address normalization dictionaries for the RT pipeline.
 
-Every suffix map, direction map, province map, saint name, and compound road
-prefix lives here. All address_normalizer modules import from this file.
+Shared dictionaries (SUFFIX_MAP, DIRECTION_MAP, ordinals, saint names, etc.)
+are re-exported from cleo.address.dictionaries. RT-specific dictionaries
+(PROVINCE_MAP, COUNTRY_MAP, UNIT_KEYWORDS, etc.) remain here.
 
 Reference: schema/address_normalization_plan.md
 """
 
 # ---------------------------------------------------------------------------
-# STREET SUFFIX — abbreviation → long form (case-insensitive lookup)
+# Re-export shared dictionaries (canonical source: cleo/address/dictionaries.py)
 # ---------------------------------------------------------------------------
 
-SUFFIX_MAP = {
-    # English
-    'st': 'Street',
-    'ave': 'Avenue',
-    'rd': 'Road',
-    'dr': 'Drive',
-    'blvd': 'Boulevard',
-    'cres': 'Crescent',
-    'way': 'Way',
-    'ct': 'Court',
-    'pl': 'Place',
-    'lane': 'Lane',
-    'line': 'Line',
-    'pkwy': 'Parkway',
-    'hwy': 'Highway',
-    'circle': 'Circle',
-    'cir': 'Circle',
-    'gate': 'Gate',
-    'trail': 'Trail',
-    'walk': 'Walk',
-    'grove': 'Grove',
-    'terr': 'Terrace',
-    'terrace': 'Terrace',
-    'crt': 'Court',
-    'court': 'Court',
-    'close': 'Close',
-    'path': 'Path',
-    'run': 'Run',
-    'rise': 'Rise',
-    'glen': 'Glen',
-    'park': 'Park',
-    'square': 'Square',
-    'green': 'Green',
-    'quay': 'Quay',
-    'landing': 'Landing',
-    'manor': 'Manor',
-    'route': 'Route',
-    'road': 'Road',
-    'highway': 'Highway',
-    'concession': 'Concession',
-    'conc': 'Concession',
-    'sideroad': 'Sideroad',
-    'queensway': 'Queensway',
-    'donway': 'Donway',
-    'esplanade': 'Esplanade',
-    'street': 'Street',
-    'avenue': 'Avenue',
-    'drive': 'Drive',
-    'boulevard': 'Boulevard',
-    'crescent': 'Crescent',
-    'place': 'Place',
-
-    # French
-    'rue': 'Rue',
-    'bld': 'Boulevard',
-    'chemin': 'Chemin',
-    'ch': 'Chemin',
-    'promenade': 'Promenade',
-    'autoroute': 'Autoroute',
-    'montée': 'Montée',
-    'montee': 'Montée',
-    'côte': 'Côte',
-    'cote': 'Côte',
-}
-
-# Set of all long-form suffixes (for matching already-expanded suffixes)
-SUFFIX_LONG_FORMS = set(SUFFIX_MAP.values())
+from cleo.address.dictionaries import (  # noqa: F401
+    SUFFIX_MAP,
+    SUFFIX_LONG_FORMS,
+    DIRECTION_MAP,
+    SAINT_NAMES,
+    UPPERCASE_TOKENS,
+    COMPOUND_ROAD_PREFIXES,
+    FRENCH_PREFIX_SUFFIXES,
+    ORDINAL_WORD_TO_DIGIT,
+    ORDINAL_DIGIT_TO_WORD,
+)
 
 # ---------------------------------------------------------------------------
-# DIRECTION — abbreviation → long form
-# ---------------------------------------------------------------------------
-
-DIRECTION_MAP = {
-    'n': 'North',
-    's': 'South',
-    'e': 'East',
-    'w': 'West',
-    'ne': 'Northeast',
-    'nw': 'Northwest',
-    'se': 'Southeast',
-    'sw': 'Southwest',
-    'north': 'North',
-    'south': 'South',
-    'east': 'East',
-    'west': 'West',
-    'northeast': 'Northeast',
-    'northwest': 'Northwest',
-    'southeast': 'Southeast',
-    'southwest': 'Southwest',
-}
-
-# ---------------------------------------------------------------------------
-# PROVINCE — abbreviation/typo → long form
+# PROVINCE -- abbreviation/typo -> long form (RT-specific, used for contacts)
 # ---------------------------------------------------------------------------
 
 PROVINCE_MAP = {
-    # Canadian — abbreviations
+    # Canadian -- abbreviations
     'on': 'Ontario',
     'ont': 'Ontario',
     'ontario': 'Ontario',
@@ -140,14 +62,13 @@ PROVINCE_MAP = {
     'nunavut': 'Nunavut',
 
     # Canadian typo variants found in data
-    'ontario': 'Ontario',
     'ontArio': 'Ontario',
     'ontarioi': 'Ontario',
     'ontrio': 'Ontario',
     'onario': 'Ontario',
     'ontarig': 'Ontario',
 
-    # US — abbreviations
+    # US -- abbreviations
     'al': 'Alabama', 'ak': 'Alaska', 'az': 'Arizona', 'ar': 'Arkansas',
     'ca': 'California', 'co': 'Colorado', 'ct': 'Connecticut',
     'de': 'Delaware', 'fl': 'Florida', 'ga': 'Georgia',
@@ -192,14 +113,14 @@ PROVINCE_MAP = {
     'virgina': 'Virginia',
 }
 
-# Canadian provinces (long form) — used to determine country
+# Canadian provinces (long form) -- used to determine country
 CANADIAN_PROVINCES_LONG = {
     'Ontario', 'Quebec', 'Alberta', 'British Columbia', 'Manitoba',
     'Saskatchewan', 'Nova Scotia', 'New Brunswick', 'Newfoundland',
     'Prince Edward Island', 'Yukon', 'Northwest Territories', 'Nunavut',
 }
 
-# US states (long form) — used to determine country
+# US states (long form) -- used to determine country
 US_STATES_LONG = {
     'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado',
     'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho',
@@ -214,7 +135,7 @@ US_STATES_LONG = {
 }
 
 # ---------------------------------------------------------------------------
-# COUNTRY — abbreviation → long form
+# COUNTRY -- abbreviation -> long form
 # ---------------------------------------------------------------------------
 
 COUNTRY_MAP = {
@@ -225,28 +146,7 @@ COUNTRY_MAP = {
 }
 
 # ---------------------------------------------------------------------------
-# SAINT NAMES — protect "St" from becoming "Street"
-# ---------------------------------------------------------------------------
-
-SAINT_NAMES = {
-    'thomas', 'catharines', 'johns', "john's", 'laurent', 'jacobs',
-    'marys', 'george', 'clair', 'albert', 'boniface', 'paul',
-    'andrews', 'peter', 'patrick', 'bernard', 'helens', 'davids',
-    'charles', 'jerome', 'hubert', 'hyacinthe', 'jean', 'eustache',
-    'lazare', 'bruno', 'constant', 'leonard', 'augustin',
-}
-
-# ---------------------------------------------------------------------------
-# COMPOUND ROAD PREFIXES — suffix word is part of the name, not a suffix
-# ---------------------------------------------------------------------------
-
-COMPOUND_ROAD_PREFIXES = {
-    'county', 'country', 'regional', 'old', 'fire', 'concession',
-    'twp',    # Township Road
-}
-
-# ---------------------------------------------------------------------------
-# UNIT/SUITE KEYWORDS
+# UNIT/SUITE KEYWORDS (RT-specific, used in decompose.py)
 # ---------------------------------------------------------------------------
 
 UNIT_KEYWORDS = {
@@ -263,7 +163,7 @@ ORDINAL_FLOOR_WORDS = {
 }
 
 # ---------------------------------------------------------------------------
-# WORD-NUMBERS — "One" → "1", for street numbers written as words
+# WORD-NUMBERS -- "One" -> "1", for street numbers written as words
 # ---------------------------------------------------------------------------
 
 WORD_NUMBER_MAP = {
@@ -272,26 +172,7 @@ WORD_NUMBER_MAP = {
 }
 
 # ---------------------------------------------------------------------------
-# ORDINAL PAIRS — word ↔ digit, for generating alternate search keys
-# Both directions so we can swap either way.
-# ---------------------------------------------------------------------------
-
-ORDINAL_WORD_TO_DIGIT = {
-    'first': '1st', 'second': '2nd', 'third': '3rd', 'fourth': '4th',
-    'fifth': '5th', 'sixth': '6th', 'seventh': '7th', 'eighth': '8th',
-    'ninth': '9th', 'tenth': '10th',
-}
-
-ORDINAL_DIGIT_TO_WORD = {v: k for k, v in ORDINAL_WORD_TO_DIGIT.items()}
-
-# ---------------------------------------------------------------------------
-# TOKENS THAT STAY UPPERCASE in Title Case
-# ---------------------------------------------------------------------------
-
-UPPERCASE_TOKENS = {'PO', 'RR', 'NE', 'NW', 'SE', 'SW'}
-
-# ---------------------------------------------------------------------------
-# JUNK MARKERS — words after an embedded suffix that signal garbage to strip
+# JUNK MARKERS -- words after an embedded suffix that signal garbage to strip
 # ---------------------------------------------------------------------------
 
 JUNK_MARKERS = {
@@ -299,11 +180,3 @@ JUNK_MARKERS = {
     'industrial', 'business', 'commercial', 'office', 'park',
     'no', 'sq',
 }
-
-# ---------------------------------------------------------------------------
-# FRENCH PREFIX SUFFIXES — suffixes that appear BEFORE the street name
-# ---------------------------------------------------------------------------
-
-FRENCH_PREFIX_SUFFIXES = {'rue', 'chemin', 'ch', 'boulevard', 'bld',
-                          'promenade', 'autoroute', 'montée', 'montee',
-                          'côte', 'cote'}

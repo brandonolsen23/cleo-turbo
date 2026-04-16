@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT70582",
+  "source_folder": "Hamilton-Wentworth/retail/p008",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70582",
+      "source_folder": "Hamilton-Wentworth/retail/p008",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p008/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "103 LOCKE ST S"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "29 Jan 2010",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1426415 Ontario Inc     905-527-6850"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frances Costa",
+        "75 Melbourne St",
+        "Hamilton, Ontario",
+        "L8P 2A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lougian Properties Inc     905-385-1938"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Al Giannattasio",
+        "15 Elmhurst Dr",
+        "Hamilton, Ontario",
+        "L8T 1C5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 6,000 sf @ $167",
+      "",
+      "Vacant - to be leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Range 3, Block 2",
+      "Lots 11-14",
+      "",
+      "PIN: 17140-0023",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $475,000     assumed/vtb debt: $525,000",
+      "",
+      "chargee: 1426415 Ontario Inc",
+      "principal: $525,000   rate: 6.0% per annum",
+      "registered: 01/29/2010   due: 01/29/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT705/RT70582/0212_114239.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT705/RT70582/0212_114337.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT705/RT70582/air1.jpg",
+        "/assets/files/RT7/RT705/RT70582/air2.jpg",
+        "/assets/files/RT7/RT705/RT70582/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "375 / 616",
+      "rt_id": "RT70582"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "103 LOCKE ST S",
+    "postcode": "L8P 4A6",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "01/29/2010",
+    "desc": "Retail Bldg - 1 storey; 6,000 sf @ $167",
+    "bldg": "6,000 sf",
+    "acreage": ".5",
+    "consid": "1000000",
+    "cash": "475000",
+    "debt": "525000",
+    "note": "",
+    "pin": "17140-0023",
+    "rollno": ""
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "103 LOCKE ST S"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "29 Jan 2010",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 6,000 sf @ $167",
+    "seller_lines": [
+      "1426415 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Lougian Properties Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

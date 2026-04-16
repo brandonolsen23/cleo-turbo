@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Heading, Text, Button, TextField } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate } from "../lib/utils";
+import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import type { TransactionBrowseItem, BrowseResponse, SearchResponse } from "../types";
 
 export default function TransactionsPage() {
@@ -95,6 +96,7 @@ export default function TransactionsPage() {
                   style={{ color: "var(--gray-9)" }} onClick={() => handleSort("sale_price")}>
                 Price{sortIcon("sale_price")}
               </th>
+              <th className="w-8 px-2 py-2 border-b border-[var(--gray-6)]" />
             </tr>
           </thead>
           <tbody>
@@ -108,6 +110,9 @@ export default function TransactionsPage() {
                 <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>{firstParty(t.buyer_parties)}</td>
                 <td className="px-4 py-2 text-right">{formatDate(t.sale_date)}</td>
                 <td className="px-4 py-2 text-right">{formatCurrency(t.sale_price)}</td>
+                <td className="px-2 py-2 text-center">
+                  {t.has_source_html && <SourceHtmlButton sourceId={t.source_id} />}
+                </td>
               </tr>
             ))}
           </tbody>

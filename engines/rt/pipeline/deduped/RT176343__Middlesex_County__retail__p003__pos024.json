@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT176343",
+  "source_folder": "Middlesex_County/retail/p003",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176343",
+      "source_folder": "Middlesex_County/retail/p003",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p003/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "275 MAIN ST",
+        "279 MAIN ST"
+      ],
+      "city_region": "SW Middlesex : Middlesex County",
+      "date_text": "22 Mar 2023",
+      "price_text": "$1,893,543",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Loblaw Properties Ltd     905-459-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1 Presidents Choice Circle",
+        "Brampton, Ontario",
+        "L6Y 5S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loca Fund V ULC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Reiter",
+        "c/o Oak Street Real Estate Capital, LLC",
+        "30 N LaSalle St, Ste 4140",
+        "Chicago, IL",
+        "USA - 60602"
+      ]
+    },
+    "description_lines": [
+      "Supermarket"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 34PL-314,",
+      "Lots 23-27 & Part Lot 22",
+      "",
+      "PIN: 08541-0011 +",
+      "",
+      "1.23 acre"
+    ],
+    "arn_text": "39 08 000 010 45300 +",
+    "consideration_lines": [
+      "cash: $1,893,543     assumed/vtb debt: $0",
+      "",
+      "chargee: Federation des Caisses Desjardins de Quebec",
+      "principal: $73,854,412   rate: As specified in the Credit Agreement.",
+      "registered: 03/22/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176343/0415_173530.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176343/0415_173531.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176343/0415_173606.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176343/0415_173607.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "125 / 686",
+      "rt_id": "RT176343"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "275 MAIN ST, 279 MAIN ST",
+    "postcode": "N0L 1M0",
+    "municipality": "SW Middlesex",
+    "region": "Middlesex County",
+    "date": "03/22/2023",
+    "desc": "Supermarket",
+    "bldg": "",
+    "acreage": "1.23",
+    "consid": "1893543",
+    "cash": "1893543",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "08541-0011+",
+    "rollno": "39 08 000 010 45300+"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "275 MAIN ST",
+      "279 MAIN ST"
+    ],
+    "city_region": "SW Middlesex : Middlesex County",
+    "date_text": "22 Mar 2023",
+    "note": "Portfolio",
+    "description": "Supermarket",
+    "seller_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Loca Fund V ULC"
+    ],
+    "price_text": "$1,893,543"
+  }
+}

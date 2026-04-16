@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT40126",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40126",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "230 OAK ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Feb 2005",
+      "price_text": "$17,150,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "230 Oak Apartment Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Max Tenenbaum",
+        "65 Dufflaw Rd",
+        "Toronto, Ontario",
+        "M6A 2W4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Oak Heights Apartments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dan Perlitz",
+        "260 King St E",
+        "Ste A-206",
+        "Toronto, Ontario",
+        "M5A 4L5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 22 storey; 326 units @ $52,607"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-5099",
+      "Parts 1, 3, 5 & 8",
+      "",
+      "2.03 acre"
+    ],
+    "arn_text": "19 04 072 240 05460",
+    "consideration_lines": [
+      "cash: $14,200,000     assumed/vtb debt: $2,950,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT401/RT40126/air1.jpg",
+        "/assets/files/RT4/RT401/RT40126/air2.jpg",
+        "/assets/files/RT4/RT401/RT40126/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT401/RT40126/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4472 / 6031",
+      "rt_id": "RT40126"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "230 OAK ST",
+    "postcode": "M5A 2E2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/01/2005",
+    "desc": "Apartment Bldg - 22 storey; 326 units @ $52,607",
+    "bldg": "326 units",
+    "acreage": "2.03",
+    "consid": "17150000",
+    "cash": "14200000",
+    "debt": "2950000",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "19 04 072 240 05460"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "230 OAK ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Feb 2005",
+    "note": "Purchase & Sale",
+    "description": "Apartment Bldg - 22 storey; 326 units @ $52,607",
+    "seller_lines": [
+      "230 Oak Apartment Inc"
+    ],
+    "buyer_lines": [
+      "Oak Heights Apartments Inc"
+    ],
+    "price_text": "$17,150,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT186874",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186874",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "601 KINGSTON RD W"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "19 Jun 2024",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1097416 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "114 Ridgewood Rd",
+        "Toronto, Ontario",
+        "M1C 2X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000559191 Ontario Ltd     905-277-4992"
+      ],
+      "trade_name": "Pizzaiolo Gourmet Pizza Inc",
+      "contact_lines": [
+        "Attn: Luigi Petrella",
+        "2375 Tedlo St, Unit 5",
+        "Mississauga, Ontario",
+        "L5A 3W7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Lot 15",
+      "Plan 11 - Village of Pickering,",
+      "Part Lot 1",
+      "As in Inst No D-240989",
+      "",
+      "PIN: 26440-0058",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "18 05 010 002 16000",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1097416 Ontario Inc",
+      "principal: $600,000   rate: 5.0% per annum.",
+      "registered: 06/19/2024   due: 06/19/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186874/0907_164040.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186874/0907_164041.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186874/0907_164042.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186874/0907_164101.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186874/0907_164112.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "64 / 506",
+      "rt_id": "RT186874"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "601 KINGSTON RD W",
+    "postcode": "L1S 6L9",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "06/19/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "26440-0058",
+    "rollno": "18 05 010 002 16000"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "601 KINGSTON RD W"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "19 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1097416 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000559191 Ontario Ltd"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

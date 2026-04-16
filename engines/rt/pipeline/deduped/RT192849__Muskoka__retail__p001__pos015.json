@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT192849",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192849",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 BICKLEY COUNTRY DR"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "20 Jun 2025",
+      "price_text": "$2,921,929",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "350634 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "121 Anne St S",
+        "Barrie, Ontario",
+        "L4N 7B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001237662 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Stockfish",
+        "8 Canterbury Cres",
+        "North Bay, Ontario",
+        "P1C 1K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Chaffey, Part Lots 6 & 7",
+      "Plan 35R-10199, Part 1",
+      "Plan 35R-8812, Parts 1 & 2",
+      "Except:",
+      "Plan 35R-13008, Part 1",
+      "",
+      "PIN: 48097-0304",
+      "",
+      "4.04 acre"
+    ],
+    "arn_text": "44 42 020 001 06105",
+    "consideration_lines": [
+      "cash: $2,921,929     assumed/vtb debt: $0",
+      "",
+      "chargee: 350634 Ontario Ltd",
+      "principal: $2,921,929   rate: 5.0% per annum.",
+      "registered: 06/20/2025   due: 06/19/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1928/RT192849/air1.jpg",
+        "/assets/files/RT19/RT1928/RT192849/air2.jpg",
+        "/assets/files/RT19/RT1928/RT192849/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 64",
+      "rt_id": "RT192849"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "1 BICKLEY COUNTRY DR",
+    "postcode": "P1H 1Y4",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "06/20/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.04",
+    "consid": "2921929",
+    "cash": "2921929",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "48097-0304",
+    "rollno": "44 42 020 001 06105"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "1 BICKLEY COUNTRY DR"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "20 Jun 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "350634 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001237662 Ontario Inc"
+    ],
+    "price_text": "$2,921,929"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT181263",
+  "source_folder": "York_Region/retail/p004",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181263",
+      "source_folder": "York_Region/retail/p004",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "5396 HIGHWAY 7",
+        "5396 HWY 7"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "10 Nov 2023",
+      "price_text": "$22,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kovac Motor Sales Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "139 Laird Dr",
+        "Toronto, Ontario",
+        "M5G 3C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000647145 Ontario Ltd     416-603-9988"
+      ],
+      "trade_name": "DFC Auto Group - Porsche Centre Downtown",
+      "contact_lines": [
+        "Attn: Helen Ching-Kircher",
+        "259 Lake Shore Blvd E",
+        "Toronto, Ontario",
+        "M5A 0W5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 11",
+      "As in Inst No R-269753",
+      "",
+      "PIN: 02915-0037",
+      "",
+      "1.39 acre"
+    ],
+    "arn_text": "19 36 040 290 46300",
+    "consideration_lines": [
+      "cash: $22,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $16,240,000   rate: 25.0% per annum.",
+      "registered: 11/10/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181263/1118_140246.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181263/1118_140250.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181263/1118_140345.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181263/1118_140349.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181263/1118_140434.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "194 / 984",
+      "rt_id": "RT181263"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "5396 HIGHWAY 7, 5396 HWY 7",
+    "postcode": "L3P 1B9",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/10/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.39",
+    "consid": "22000000",
+    "cash": "22000000",
+    "debt": "",
+    "note": "",
+    "pin": "02915-0037",
+    "rollno": "19 36 040 290 46300"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "5396 HIGHWAY 7",
+      "5396 HWY 7"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "10 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kovac Motor Sales Ltd"
+    ],
+    "buyer_lines": [
+      "1000647145 Ontario Ltd"
+    ],
+    "price_text": "$22,000,000"
+  }
+}

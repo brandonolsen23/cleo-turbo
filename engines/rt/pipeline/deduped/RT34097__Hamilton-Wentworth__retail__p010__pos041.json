@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT34097",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34097",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "399 GREENHILL AVE"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "09 Feb 2004",
+      "price_text": "$3,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mount Albion Plaza Inc     905-524-2985"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Louis Serafini",
+        "Fengate Property Management",
+        "499 King St E",
+        "Hamilton, Ontario",
+        "L8N 1E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Greenhill Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Sabato",
+        "10 Queen Elizabeth Blvd, Unit 2",
+        "Etobicoke, Ontario",
+        "M8Z 1L8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 & 2 storey; 42,174 sf @ $77"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-157, Block B",
+      "",
+      "3.67 acre"
+    ],
+    "arn_text": "25 18 050 541 50140",
+    "consideration_lines": [
+      "cash: $3,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT340/RT34097/air1.jpg",
+        "/assets/files/RT3/RT340/RT34097/air2.jpg",
+        "/assets/files/RT3/RT340/RT34097/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT340/RT34097/photo.jpg"
+    },
+    "footer": {
+      "page_position": "492 / 616",
+      "rt_id": "RT34097"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "399 GREENHILL AVE",
+    "postcode": "L8K 6N5",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "02/09/2004",
+    "desc": "Retail Plaza - 1 & 2 storey; 42,174 sf @ $77",
+    "bldg": "42,174 sf",
+    "acreage": "3.67",
+    "consid": "3250000",
+    "cash": "3250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 050 541 50140"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "399 GREENHILL AVE"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "09 Feb 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 & 2 storey; 42,174 sf @ $77",
+    "seller_lines": [
+      "Mount Albion Plaza Inc"
+    ],
+    "buyer_lines": [
+      "Greenhill Holdings Corp"
+    ],
+    "price_text": "$3,250,000"
+  }
+}

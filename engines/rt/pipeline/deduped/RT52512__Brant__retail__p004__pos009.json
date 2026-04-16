@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT52512",
+  "source_folder": "Brant/retail/p004",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT52512",
+      "source_folder": "Brant/retail/p004",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "214 LYNDEN RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "08 Dec 2006",
+      "price_text": "$1,725,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1709136 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Munro",
+        "102 Dundas St E",
+        "Paris, Ontario",
+        "N3L 3H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Thermart Investments Inc     519-759-4000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Martin Van Sloun",
+        "Butcher & Restaurant Supplies",
+        "60 Prince Charles Rd, RR 8",
+        "Brantford, Ontario",
+        "N3T 5M1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 15,200 sf @ $113"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-4555, Part 4",
+      "",
+      "2.19 acre"
+    ],
+    "arn_text": "29 06 030 019 17100",
+    "consideration_lines": [
+      "cash: $1,725,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Koningbosch Investments Ltd",
+      "principal: $2,000,000",
+      "registered: 12/08/2006   due: on demand"
+    ],
+    "broker_lines": [
+      "Executive Realty: Edward Ward-Griffin, 519-756-8111",
+      "Royal LePage Action Realty: Danny Dedominics & Gerry Kempers, 519-753-7311"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT525/RT52512/1224_080548.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT525/RT52512/1224_080557.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "160 / 195",
+      "rt_id": "RT52512"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "214 LYNDEN RD",
+    "postcode": "N3R 8A3",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "12/08/2006",
+    "desc": "Retail Bldg - 1 storey; 15,200 sf @ $113",
+    "bldg": "15,200 sf",
+    "acreage": "2.19",
+    "consid": "1725000",
+    "cash": "1725000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 019 17100"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "214 LYNDEN RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "08 Dec 2006",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 15,200 sf @ $113",
+    "seller_lines": [
+      "1709136 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Thermart Investments Inc"
+    ],
+    "price_text": "$1,725,000"
+  }
+}

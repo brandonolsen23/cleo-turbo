@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT32103",
+  "source_folder": "Metro_Toronto/retail/p079",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32103",
+      "source_folder": "Metro_Toronto/retail/p079",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p079/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 IVY AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "07 Oct 2003",
+      "price_text": "$770,507",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "R3S Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ram Kaushal",
+        "18 Chadbury Place",
+        "Scarborugh, Ontario",
+        "M1W 2V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1959",
+      "Blocks 132 & 133",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "19 01 113 210 00100",
+    "consideration_lines": [
+      "cash: $590,507     assumed/vtb debt: $180,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3947 / 4952",
+      "rt_id": "RT32103"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "11 IVY AVE",
+    "postcode": "M1V 2W7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "10/07/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".68",
+    "consid": "770507",
+    "cash": "590507",
+    "debt": "180000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 113 210 00100"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "11 IVY AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "07 Oct 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "R3S Investments Inc"
+    ],
+    "price_text": "$770,507"
+  }
+}

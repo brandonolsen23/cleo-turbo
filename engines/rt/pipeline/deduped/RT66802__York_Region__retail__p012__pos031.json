@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT66802",
+  "source_folder": "York_Region/retail/p012",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66802",
+      "source_folder": "York_Region/retail/p012",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 GREENSBOROUGH VILLAGE CIRCLE",
+        "UNITS 13-15"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "21 Apr 2009",
+      "price_text": "$547,890",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Team GTC Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harry Chan",
+        "2601 McCowan Rd, Ste 206",
+        "Scarborough, Ontario",
+        "M1S 3Y6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Better Body Fitness, Rehabilitation & Wellness Centre Inc     905-209-8300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Monica Chadha",
+        "22 Stonehouse Ct",
+        "Markham, Ontario",
+        "L6E 2E7"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - Grnd Floor; 3 units 2,370 sf @ $231",
+      "",
+      "To be occupied by the purchaser",
+      "",
+      "Part of the ground floor of a 3 storey retail (18 units)residential (34 townhomes) condo bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1150",
+      "Level 1, Units 32-34, 95-97",
+      "",
+      "PIN: 29681-0032 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $546,000     assumed/vtb debt: $0",
+      "other: $1,890"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "582 / 984",
+      "rt_id": "RT66802"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "50 GREENSBOROUGH VILLAGE CIRCLE, UNITS 13-15",
+    "postcode": "L6E 1M1",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "04/21/2009",
+    "desc": "Retail Condo - Grnd Floor; 3 units 2,370 sf @ $231",
+    "bldg": "2,370 sf",
+    "acreage": "",
+    "consid": "547890",
+    "cash": "546000",
+    "debt": "",
+    "note": "",
+    "pin": "29681-0032+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "50 GREENSBOROUGH VILLAGE CIRCLE",
+      "UNITS 13-15"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "21 Apr 2009",
+    "note": "",
+    "description": "Retail Condo - Grnd Floor; 3 units 2,370 sf @ $231",
+    "seller_lines": [
+      "Team GTC Inc"
+    ],
+    "buyer_lines": [
+      "Better Body Fitness, Rehabilitation & Wellness Centre Inc"
+    ],
+    "price_text": "$547,890"
+  }
+}

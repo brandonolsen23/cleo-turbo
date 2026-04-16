@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT195479",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195479",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "3160 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "13 Nov 2025",
+      "price_text": "$995,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cymag Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Woburn Way",
+        "Thornhill, Ontario",
+        "L3T 4Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16529828 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kirpaljeet Kanwal",
+        "170 Woolwich St",
+        "Kitchener, Ontario",
+        "N2K 1S6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 986, Lot 6",
+      "Except:",
+      "Inst No 447699",
+      "",
+      "PIN: 22558-0061",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "30 12 030 001 21902",
+    "consideration_lines": [
+      "cash: $995,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1954/RT195479/0117_130438.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1954/RT195479/0117_130458.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1954/RT195479/0117_130534.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1954/RT195479/0117_130535.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1954/RT195479/0117_130557.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 752",
+      "rt_id": "RT195479"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "3160 KING ST E",
+    "postcode": "N2A 1B3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/13/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "995000",
+    "cash": "995000",
+    "debt": "",
+    "note": "",
+    "pin": "22558-0061",
+    "rollno": "30 12 030 001 21902"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "3160 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "13 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Cymag Investments Ltd"
+    ],
+    "buyer_lines": [
+      "16529828 Canada Inc"
+    ],
+    "price_text": "$995,000"
+  }
+}

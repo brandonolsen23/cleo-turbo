@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT197354",
+  "source_folder": "York_Region/industrial/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197354",
+      "source_folder": "York_Region/industrial/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "86 RINGWOOD DR",
+        "UNIT 44"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "18 Feb 2026",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Purple Phoenix Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "200 Cachet Woods, Unit 201",
+        "Markham, Ontario",
+        "L6C 0Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001476466 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: G. Packiyanathan",
+        "255 Danny Wheeler Blvd",
+        "Keswick, Ontario",
+        "L4P 0J9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 835",
+      "Level 1, Unit 44",
+      "",
+      "PIN: 29365-0044"
+    ],
+    "arn_text": "19 44 000 146 30144",
+    "consideration_lines": [
+      "cash: $142,500     assumed/vtb debt: $807,500",
+      "",
+      "chargee: Purple Phoenix Investments Inc",
+      "principal: $807,500   rate: 6.0% per annum.",
+      "registered: 02/18/2026   due: 02/18/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 2269",
+      "rt_id": "RT197354"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "86 RINGWOOD DR, UNIT 44",
+    "postcode": "L4A 1C3",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "02/18/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "950000",
+    "cash": "142500",
+    "debt": "807500",
+    "note": "",
+    "pin": "29365-0044",
+    "rollno": "19 44 000 146 30144"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "86 RINGWOOD DR",
+      "UNIT 44"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "18 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Purple Phoenix Investments Inc"
+    ],
+    "buyer_lines": [
+      "1001476466 Ontario Corp"
+    ],
+    "price_text": "$950,000"
+  }
+}

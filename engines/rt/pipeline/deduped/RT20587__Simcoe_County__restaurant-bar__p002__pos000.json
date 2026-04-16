@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20587",
+  "source_folder": "Simcoe_County/restaurant-bar/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20587",
+      "source_folder": "Simcoe_County/restaurant-bar/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/restaurant-bar/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "9340 COUNTY RD 93"
+      ],
+      "city_region": "Tiny : Simcoe County",
+      "date_text": "14 Feb 2001",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Georgian Bay Foods Inc",
+        "Gilwood Bay Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry McLaughlin",
+        "15 Prince Arthur Ave",
+        "Toronto, Ontario",
+        "M5R 1B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Noco Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Robert Wilson",
+        "6138 King Rd",
+        "Nobelton, OIntario",
+        "L0G 1N0"
+      ]
+    },
+    "description_lines": [
+      "Restaurant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - WPR, Part Lot 107",
+      "Except Plan 51R-3985, Part 28",
+      "As in Inst No 895185",
+      "",
+      "1.63 acre"
+    ],
+    "arn_text": "43 74 030 001 28600",
+    "consideration_lines": [
+      "cash: $745,000     assumed/vtb debt: $455,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 55",
+      "rt_id": "RT20587"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "9340 COUNTY RD 93",
+    "postcode": "",
+    "municipality": "Tiny",
+    "region": "Simcoe County",
+    "date": "02/14/2001",
+    "desc": "Restaurant",
+    "bldg": "",
+    "acreage": "1.63",
+    "consid": "1200000",
+    "cash": "745000",
+    "debt": "455000",
+    "note": "",
+    "pin": "",
+    "rollno": "43 74 030 001 28600"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "9340 COUNTY RD 93"
+    ],
+    "city_region": "Tiny : Simcoe County",
+    "date_text": "14 Feb 2001",
+    "note": "",
+    "description": "Restaurant",
+    "seller_lines": [
+      "Georgian Bay Foods Inc",
+      "Gilwood Bay Developments Ltd"
+    ],
+    "buyer_lines": [
+      "Noco Canada Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

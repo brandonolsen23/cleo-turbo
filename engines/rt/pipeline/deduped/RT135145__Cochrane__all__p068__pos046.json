@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT135145",
+  "source_folder": "Cochrane/all/p068",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT135145",
+      "source_folder": "Cochrane/all/p068",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p068/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "2637 POLLOCK RD"
+      ],
+      "city_region": "Rideau : Ottawa-Carleton",
+      "date_text": "22 Jun 2018",
+      "price_text": "$885,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2640696 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Scott Cummings",
+        "c/o 3825 McBean Rd",
+        "Ottawa, Ontario",
+        "K0A 2Z0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 1",
+      "Plan 52R-12297, Part 1",
+      "Plan 5R-2135, Part 2",
+      "",
+      "PIN: 03930-0058",
+      "",
+      "2.42 acre"
+    ],
+    "arn_text": "06 18 010 830 08502",
+    "consideration_lines": [
+      "cash: $885,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $885,000   rate: 25.0% per annum.",
+      "registered: 06/22/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3397 / 10920",
+      "rt_id": "RT135145"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "2637 POLLOCK RD",
+    "postcode": "K0A 2Z0",
+    "municipality": "Rideau",
+    "region": "Ottawa-Carleton",
+    "date": "06/22/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.42",
+    "consid": "885000",
+    "cash": "885000",
+    "debt": "",
+    "note": "",
+    "pin": "03930-0058",
+    "rollno": "06 18 010 830 08502"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "2637 POLLOCK RD"
+    ],
+    "city_region": "Rideau : Ottawa-Carleton",
+    "date_text": "22 Jun 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2640696 Ontario Inc"
+    ],
+    "price_text": "$885,000"
+  }
+}

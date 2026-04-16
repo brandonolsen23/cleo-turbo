@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT70675",
+  "source_folder": "Algoma/office/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70675",
+      "source_folder": "Algoma/office/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/office/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "390 MCNABB ST"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "02 Feb 2010",
+      "price_text": "$1,300,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Community First Credit Union Ltd     705-942-1000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eugene Orlando",
+        "289 Bay St",
+        "Sault Ste Marie, Ontario",
+        "P6A 1W7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1704608 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank Naccarato",
+        "68 Dennis St, Ste 206",
+        "Sault Ste Marie, Ontario",
+        "P6A 2W9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 4",
+      "Plan 1R-6376, Part 5",
+      "Except:",
+      "Plan 1R-7264, Parts 2 & 3",
+      "",
+      "PIN: 31532-0023",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "57 61 030 034 00201",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Community First Credit Union Ltd",
+      "principal: $1,200,000   rate: 5.5% per annum",
+      "registered: 02/01/2010   due: 02/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 13",
+      "rt_id": "RT70675"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "390 MCNABB ST",
+    "postcode": "P6B 1Z1",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "02/02/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".78",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "31532-0023",
+    "rollno": "57 61 030 034 00201"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "390 MCNABB ST"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "02 Feb 2010",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Community First Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "1704608 Ontario Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

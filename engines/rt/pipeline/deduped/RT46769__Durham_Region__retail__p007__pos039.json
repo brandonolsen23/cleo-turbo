@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT46769",
+  "source_folder": "Durham_Region/retail/p007",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46769",
+      "source_folder": "Durham_Region/retail/p007",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p007/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "151 BLOOR ST E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "31 Jan 2006",
+      "price_text": "$4,193,045",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1281296 Ontario Ltd     416-975-4444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jerry Wallace",
+        "33 Delisle Ave, Ste 508",
+        "Toronto, Ontario",
+        "M4V 3C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loblaw Properties Ltd     905-459-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jane Marshall",
+        "1 President's Choice Circle",
+        "4th Flr, South Tower",
+        "Brampton, Ontario",
+        "L9Y 5S5"
+      ]
+    },
+    "description_lines": [
+      "Supermarket & 2 Houses - 1 storey; 26,000 sf @ $161",
+      "",
+      "Loblaw had previously leased the property."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-24031, Parts 5-27",
+      "",
+      "3.35 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,193,045     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT467/RT46769/photo.jpg"
+    },
+    "footer": {
+      "page_position": "340 / 506",
+      "rt_id": "RT46769"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "151 BLOOR ST E",
+    "postcode": "L1H 3M3",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "01/31/2006",
+    "desc": "Supermarket & 2 Houses - 1 storey; 26,000 sf @ $161",
+    "bldg": "26,000 sf",
+    "acreage": "3.35",
+    "consid": "4193045",
+    "cash": "4193045",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "151 BLOOR ST E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "31 Jan 2006",
+    "note": "",
+    "description": "Supermarket & 2 Houses - 1 storey; 26,000 sf @ $161",
+    "seller_lines": [
+      "1281296 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "price_text": "$4,193,045"
+  }
+}

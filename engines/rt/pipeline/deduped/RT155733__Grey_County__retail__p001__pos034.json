@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT155733",
+  "source_folder": "Grey_County/retail/p001",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT155733",
+      "source_folder": "Grey_County/retail/p001",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/retail/p001/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "217 - 219 TORONTO ST S"
+      ],
+      "city_region": "Grey Highlands : Grey County",
+      "date_text": "30 Oct 2020",
+      "price_text": "$5,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "219 Toronto Street South Developments Inc     416-335-0090"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Nick Prangikos",
+        "1500 Woodbine Ave, Ste 3055",
+        "Toronto, Ontario",
+        "M4C 5J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "965710 Ontario Ltd     905-856-2035"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank Sturino",
+        "94 Clarence St",
+        "Woodbridge, Ontario",
+        "L4L 1L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - NETSR, Part Lot 104",
+      "Plan 16R-6604, Parts 3 & 4",
+      "Plan 16R-10425, Part 1",
+      "",
+      "PIN: 37249-0477",
+      "",
+      "1.85 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $3,300,000   rate: 25.0% per annum.",
+      "registered: 10/30/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "35 / 69",
+      "rt_id": "RT155733"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "217 - 219 TORONTO ST S",
+    "postcode": "N0C 1H0",
+    "municipality": "Grey Highlands",
+    "region": "Grey County",
+    "date": "10/30/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.85",
+    "consid": "5100000",
+    "cash": "5100000",
+    "debt": "",
+    "note": "",
+    "pin": "37249-0477",
+    "rollno": ""
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "217 - 219 TORONTO ST S"
+    ],
+    "city_region": "Grey Highlands : Grey County",
+    "date_text": "30 Oct 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "219 Toronto Street South Developments Inc"
+    ],
+    "buyer_lines": [
+      "965710 Ontario Ltd"
+    ],
+    "price_text": "$5,100,000"
+  }
+}

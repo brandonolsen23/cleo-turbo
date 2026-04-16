@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT33005",
+  "source_folder": "Essex_County/multifamily/p008",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33005",
+      "source_folder": "Essex_County/multifamily/p008",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/multifamily/p008/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "3015 SANDWICH ST"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "30 Oct 2003",
+      "price_text": "$2,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Baker Investments Ltd     519-253-7219"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steven Baker",
+        "615 Pelissier St",
+        "Windsor, Ontario",
+        "N9A 4L4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tri-Sands Apts Ltd     416-229-1323"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gus Philippov",
+        "5 Montford Dr",
+        "Toronto, Ontario",
+        "M2M 3H2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 5 storey; 57 units @ $45,614"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Indian Reserve, Plan 40",
+      "As in Inst No R-251721",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "37 39 050 140 12100",
+    "consideration_lines": [
+      "cash: $2,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT330/RT33005/photo.jpg"
+    },
+    "footer": {
+      "page_position": "366 / 421",
+      "rt_id": "RT33005"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "3015 SANDWICH ST",
+    "postcode": "N9C 1A5",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "10/30/2003",
+    "desc": "Apartment Bldg - 5 storey; 57 units @ $45,614",
+    "bldg": "57 units",
+    "acreage": ".78",
+    "consid": "2600000",
+    "cash": "2600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 050 140 12100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "3015 SANDWICH ST"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "30 Oct 2003",
+    "note": "",
+    "description": "Apartment Bldg - 5 storey; 57 units @ $45,614",
+    "seller_lines": [
+      "Baker Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Tri-Sands Apts Ltd"
+    ],
+    "price_text": "$2,600,000"
+  }
+}

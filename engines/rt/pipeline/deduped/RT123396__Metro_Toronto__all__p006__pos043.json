@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT123396",
+  "source_folder": "Metro_Toronto/all/p006",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123396",
+      "source_folder": "Metro_Toronto/all/p006",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/all/p006/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 10",
+        "PART LOTS 14 & 15"
+      ],
+      "city_region": "Carleton Place : Lanark County",
+      "date_text": "06 Feb 2017",
+      "price_text": "$725,216",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "The Corporation of the",
+        "Town of Carleton Place     613-257-6200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Mayor: Louis Antonakos",
+        "175 Bridge St",
+        "Carleton Place, ON",
+        "K7C 2V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lots 14 & 15",
+      "Plan 27R-10849, Parts 6-10",
+      "",
+      "PIN: 05134-0152",
+      "",
+      "32.33 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $509,980",
+      "other: $215,236",
+      "",
+      "Named Individual(s)",
+      "principal: $509,980   rate: 0% per annum.",
+      "registered: 02/06/2017   due: 02/06/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "294 / 555",
+      "rt_id": "RT123396"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "CONC 10, PART LOTS 14 & 15",
+    "postcode": "",
+    "municipality": "Carleton Place",
+    "region": "Lanark County",
+    "date": "02/06/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "32.33",
+    "consid": "725216",
+    "cash": "",
+    "debt": "509980",
+    "note": "Zero Cash",
+    "pin": "05134-0152",
+    "rollno": ""
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "CONC 10",
+      "PART LOTS 14 & 15"
+    ],
+    "city_region": "Carleton Place : Lanark County",
+    "date_text": "06 Feb 2017",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "The Corporation of the",
+      "Town of Carleton Place"
+    ],
+    "price_text": "$725,216"
+  }
+}

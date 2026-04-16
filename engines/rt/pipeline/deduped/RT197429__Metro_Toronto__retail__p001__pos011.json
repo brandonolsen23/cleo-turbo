@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT197429",
+  "source_folder": "Metro_Toronto/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197429",
+      "source_folder": "Metro_Toronto/retail/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "118 AVENUE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "26 Feb 2026",
+      "price_text": "$5,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "In-Store Products Ltd     888-473-3629"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5181 Everest Dr",
+        "Mississauga, Ontario",
+        "L4W 2R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Clovervit Holdings Inc     905-264-8001"
+      ],
+      "trade_name": "Cloverhill Developments",
+      "contact_lines": [
+        "Attn: Dora Vitullo",
+        "100 Strada Dr, Unit 1",
+        "Woodbridge, Ontario",
+        "L4L 5V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 639 - City East, Lot 2",
+      "",
+      "PIN: 21214-0222",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 052 230 03100",
+    "consideration_lines": [
+      "cash: $5,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197429/0308_080419.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197429/0308_080423.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197429/0308_080436.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197429/0308_080439.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197429/0308_080455.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 4952",
+      "rt_id": "RT197429"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "118 AVENUE RD",
+    "postcode": "M5R 2H4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/26/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "5400000",
+    "cash": "5400000",
+    "debt": "",
+    "note": "",
+    "pin": "21214-0222",
+    "rollno": "19 04 052 230 03100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "118 AVENUE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "26 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "In-Store Products Ltd"
+    ],
+    "buyer_lines": [
+      "Clovervit Holdings Inc"
+    ],
+    "price_text": "$5,400,000"
+  }
+}

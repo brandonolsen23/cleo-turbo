@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { Text, Button, Badge, Heading } from "@radix-ui/themes";
-import { MagnifyingGlass, X, ArrowRight, Warning } from "@phosphor-icons/react";
+import { MagnifyingGlass, X, ArrowRight, Warning, ArrowSquareOut } from "@phosphor-icons/react";
 import { fetchApi, postApi } from "../../api/client";
 import { formatCompact } from "../../lib/utils";
 import type { MergeCandidate, MergeCandidatesResponse } from "../../types";
@@ -16,6 +17,8 @@ interface MergeGroupsModalProps {
     transaction_count: number;
     contact_count: number;
   };
+  /** Optional pre-selected source group IDs (from comparison page) */
+  initialSourceIds?: string[];
   onClose: () => void;
   /** Called after a successful merge. Receives the surviving group's ID so the caller can navigate. */
   onMerged: (survivorId: string) => void;
@@ -27,16 +30,18 @@ type MergeDirection = "absorb" | "into";
 
 export default function MergeGroupsModal({
   targetGroup,
+  initialSourceIds,
   onClose,
   onMerged,
 }: MergeGroupsModalProps) {
+  const navigate = useNavigate();
   const [candidates, setCandidates] = useState<MergeCandidate[]>([]);
   const [searchResults, setSearchResults] = useState<MergeCandidate[] | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selected, setSelected] = useState<MergeCandidate[]>([]);
   const [loading, setLoading] = useState(false);
   const [merging, setMerging] = useState(false);
-  const [step, setStep] = useState<"select" | "confirm">("select");
+  const [step, setStep] = useState<"select" | "confirm">(initialSourceIds?.length ? "confirm" : "select");
   // "absorb" = current group is the target (absorbs others)
   // "into"   = current group merges INTO the selected group
   const [direction, setDirection] = useState<MergeDirection>("absorb");
@@ -45,7 +50,30 @@ export default function MergeGroupsModal({
   useEffect(() => {
     setLoading(true);
     fetchApi<MergeCandidatesResponse>(`/group-merges/candidates/${targetGroup.id}`)
-      .then((r) => setCandidates(r.candidates))
+      .then((r) => {
+        setCandidates(r.candidates);
+        // If initialSourceIds provided, pre-select those groups
+        if (initialSourceIds?.length) {
+          const initSet = new Set(initialSourceIds);
+          const preSelected = r.candidates.filter((c) => initSet.has(c.id));
+          // For any IDs not in candidates, fetch them
+          const missing = initialSourceIds.filter((id) => !preSelected.find((c) => c.id === id));
+          if (missing.length > 0) {
+            Promise.all(
+              missing.map((id) =>
+                fetchApi<{ id: string; display_name: string; property_count: number; transaction_count: number; contact_count: number }>(`/groups/${id}`)
+                  .then((g) => ({ ...g, status: "pool", normalized_name: "", total_assessed_value: null, geographic_radius_km: null } as MergeCandidate))
+                  .catch(() => null)
+              )
+            ).then((results) => {
+              const extra = results.filter(Boolean) as MergeCandidate[];
+              setSelected([...preSelected, ...extra]);
+            });
+          } else {
+            setSelected(preSelected);
+          }
+        }
+      })
       .finally(() => setLoading(false));
   }, [targetGroup.id]);
 
@@ -277,9 +305,22 @@ export default function MergeGroupsModal({
                           {c.total_assessed_value ? `, ${formatCompact(c.total_assessed_value)}` : ""}
                         </Text>
                       </div>
-                      {isSelected(c.id) && (
-                        <Badge size="1" color="jade">Selected</Badge>
-                      )}
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          className="p-1 rounded hover:bg-[var(--gray-4)] transition-colors"
+                          title="Compare side-by-side"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onClose();
+                            navigate(`/groups/compare?ids=${targetGroup.id},${c.id}`);
+                          }}
+                        >
+                          <ArrowSquareOut size={14} style={{ color: "var(--gray-9)" }} />
+                        </button>
+                        {isSelected(c.id) && (
+                          <Badge size="1" color="jade">Selected</Badge>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>

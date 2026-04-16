@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT193411",
+  "source_folder": "York_Region/retail/p002",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193411",
+      "source_folder": "York_Region/retail/p002",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "9080 YONGE ST",
+        "UNIT 8"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "17 Jul 2025",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Eshtiaghi Holdings Ltd",
+        "Fpirouzmand Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Quarry Ridge Rd",
+        "Barrie, Ontario",
+        "L4M 7G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "17111436 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shabnam Farid",
+        "63 Canyon Hill Ave",
+        "Richmond Hill, Ontario",
+        "L4C 0E1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1283",
+      "Level 1, Unit 8",
+      "",
+      "PIN: 298014-0008"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,150,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/17/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193411/0726_150440.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193411/0726_150552a.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193411/0726_150552b.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193411/0726_150719.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193411/0726_150721.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193411/0726_150736.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "65 / 984",
+      "rt_id": "RT193411"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "9080 YONGE ST, UNIT 8",
+    "postcode": "L4C 0Y7",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "07/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "298014-0008",
+    "rollno": ""
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "9080 YONGE ST",
+      "UNIT 8"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "17 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Eshtiaghi Holdings Ltd",
+      "Fpirouzmand Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "17111436 Canada Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT193291",
+  "source_folder": "Brant/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193291",
+      "source_folder": "Brant/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "78 TOLL GATE RD",
+        "80 TOLL GATE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "03 Jul 2025",
+      "price_text": "$1,890,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2819960 Ontario Ltd",
+        "78 Tollgate Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11 Amity Rd",
+        "Mississauga, Ontario",
+        "L5M 1P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "80 Tollgate Holding Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mustafa Al-Haboobi",
+        "224 Black Maple Ct",
+        "Kitchener, Ontario",
+        "N2P 2W8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-2230, Parts 1 & 2",
+      "Except:",
+      "Plan 2R-3801, Part 5",
+      "",
+      "PIN: 32218-0286 +",
+      "",
+      "1.48 acre"
+    ],
+    "arn_text": "29 06 020 013 27300 +",
+    "consideration_lines": [
+      "cash: $1,890,000     assumed/vtb debt: $0",
+      "",
+      "chargee: PD Capital Solutions Inc",
+      "principal: $690,000   rate: 8.99% per annum.",
+      "registered: 07/03/2025   due: 07/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193291/0201_105057.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193291/0201_105101.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193291/0201_105144.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193291/0201_105145.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 195",
+      "rt_id": "RT193291"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "78 TOLL GATE RD, 80 TOLL GATE RD",
+    "postcode": "N3R 4Z6",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "07/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.48",
+    "consid": "1890000",
+    "cash": "1890000",
+    "debt": "",
+    "note": "",
+    "pin": "32218-0286+",
+    "rollno": "29 06 020 013 27300+"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "78 TOLL GATE RD",
+      "80 TOLL GATE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "03 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2819960 Ontario Ltd",
+      "78 Tollgate Inc"
+    ],
+    "buyer_lines": [
+      "80 Tollgate Holding Inc"
+    ],
+    "price_text": "$1,890,000"
+  }
+}

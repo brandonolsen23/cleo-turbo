@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT32570",
+  "source_folder": "Metro_Toronto/retail/p079",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32570",
+      "source_folder": "Metro_Toronto/retail/p079",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p079/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "134 HUCKNALL RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "04 Nov 2003",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Poza Rica Investment Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Herman Chong",
+        "PO Box 65186",
+        "Toronto, Ontario",
+        "M4K 3Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1530787 Ontario Inc     905-738-7850"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Melvin Pearl",
+        "Lifetime Homes",
+        "270 Drumlin Circle, Unit 5",
+        "Concord, Ontario",
+        "L4K 3E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1033, Block B",
+      "",
+      "2.70 acre"
+    ],
+    "arn_text": "19 08 033 100 01100",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT325/RT32570/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3922 / 4952",
+      "rt_id": "RT32570"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "134 HUCKNALL RD",
+    "postcode": "M3J 1V8",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "11/04/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.7",
+    "consid": "2100000",
+    "cash": "2100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 033 100 01100"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "134 HUCKNALL RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "04 Nov 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Poza Rica Investment Co Ltd"
+    ],
+    "buyer_lines": [
+      "1530787 Ontario Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

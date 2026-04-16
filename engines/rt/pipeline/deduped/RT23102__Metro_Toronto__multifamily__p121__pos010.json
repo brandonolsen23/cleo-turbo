@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23102",
+  "source_folder": "Metro_Toronto/multifamily/p121",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23102",
+      "source_folder": "Metro_Toronto/multifamily/p121",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p121/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1030 CASTLEFIELD AVE"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "15 Sep 1997",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Rosalyn Holdings Ltd     416-781-2150"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Zelda Korenblum",
+        "59 Hillmount Ave",
+        "North York, Ontario",
+        "M6B 1X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "435258 British Columbia"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Biplab Bhattacharyya",
+        "2165 West Broadway",
+        "Vancouver BC",
+        "V6B 5H6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 5 storey; 54 units @ $38,889"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2-WYS, Pt Lot 2",
+      "",
+      "0.93 acre"
+    ],
+    "arn_text": "19 14 032 220 00100",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6011 / 6031",
+      "rt_id": "RT23102"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1030 CASTLEFIELD AVE",
+    "postcode": "M6B 1E6",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "09/15/1997",
+    "desc": "Apartment Bldg - 5 storey; 54 units @ $38,889",
+    "bldg": "54 units",
+    "acreage": ".93",
+    "consid": "2100000",
+    "cash": "",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 032 220 00100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1030 CASTLEFIELD AVE"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "15 Sep 1997",
+    "note": "",
+    "description": "Apartment Bldg - 5 storey; 54 units @ $38,889",
+    "seller_lines": [
+      "Rosalyn Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "435258 British Columbia"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

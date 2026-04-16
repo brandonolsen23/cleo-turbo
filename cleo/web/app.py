@@ -2,6 +2,7 @@
 FastAPI application factory.
 """
 
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -23,6 +24,7 @@ from .routes.gw import router as gw_router
 from .routes.data_quality import router as data_quality_router
 from .routes.admin import router as admin_router
 from .routes.asset_classes import router as asset_classes_router
+from .routes.tenant_categories import router as tenant_categories_router
 from .routes.group_merges import router as group_merges_router
 from .routes.audit import router as audit_router_api
 from .routes.brands import router as brands_router
@@ -32,7 +34,21 @@ from .routes.activities import router as activities_router
 
 
 def create_app():
-    app = FastAPI(title="Cleo Turbo", version="1.0")
+    @asynccontextmanager
+    async def lifespan(app):
+        # Seed taxonomy tables on startup (idempotent)
+        from ..database.connection import get_connection
+        from ..database.tenant_categories import seed_tenant_categories
+        from ..database.asset_classes import seed_asset_classes
+        conn = get_connection()
+        try:
+            seed_asset_classes(conn)
+            seed_tenant_categories(conn)
+        finally:
+            conn.close()
+        yield
+
+    app = FastAPI(title="Cleo Turbo", version="1.0", lifespan=lifespan)
 
     app.add_middleware(
         CORSMiddleware,
@@ -59,6 +75,7 @@ def create_app():
     app.include_router(data_quality_router, prefix="/api/data-quality", tags=["data-quality"])
     app.include_router(admin_router, prefix="/api/admin", tags=["admin"])
     app.include_router(asset_classes_router, prefix="/api/asset-classes", tags=["asset-classes"])
+    app.include_router(tenant_categories_router, prefix="/api/tenant-categories", tags=["tenant-categories"])
     app.include_router(group_merges_router, prefix="/api/group-merges", tags=["group-merges"])
     app.include_router(audit_router_api, prefix="/api/audit", tags=["audit"])
     app.include_router(brands_router, prefix="/api/brands", tags=["brands"])

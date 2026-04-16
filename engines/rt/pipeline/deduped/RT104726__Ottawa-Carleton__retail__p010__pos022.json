@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT104726",
+  "source_folder": "Ottawa-Carleton/retail/p010",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104726",
+      "source_folder": "Ottawa-Carleton/retail/p010",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p010/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "636 SOMERSET ST W"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "04 Sep 2014",
+      "price_text": "$582,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2431969 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexis McGuire",
+        "636 Somerset St W",
+        "Ottawa, Ontario",
+        "K1R 5K4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-23212, Parts 8 & 9",
+      "",
+      "PIN: 04121-0443",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $582,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $560,000",
+      "registered: 09/04/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1047/RT104726/0117_082053.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1047/RT104726/0117_082121.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1047/RT104726/0117_082148.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1047/RT104726/0117_082219.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "473 / 1141",
+      "rt_id": "RT104726"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "636 SOMERSET ST W",
+    "postcode": "K1R 5K4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/04/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "582000",
+    "cash": "582000",
+    "debt": "",
+    "note": "",
+    "pin": "04121-0443",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "636 SOMERSET ST W"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "04 Sep 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2431969 Ontario Inc"
+    ],
+    "price_text": "$582,000"
+  }
+}

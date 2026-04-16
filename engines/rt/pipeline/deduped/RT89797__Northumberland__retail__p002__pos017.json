@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT89797",
+  "source_folder": "Northumberland/retail/p002",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89797",
+      "source_folder": "Northumberland/retail/p002",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p002/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "545 GRAND RD"
+      ],
+      "city_region": "Campbellford : Northumberland",
+      "date_text": "21 Dec 2012",
+      "price_text": "$1,285,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Campbellford Homes Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Kyle Elieff",
+        "2050 McCowan Rd",
+        "Scarborough, Ontario",
+        "M1S 4P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Straus",
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "description_lines": [
+      "Home Hardware Store - 1 storey; 9,000 sf @ $143",
+      "",
+      "The property was purchased by its tenant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 7",
+      "Plan 39R-12767, Parts 1-8",
+      "",
+      "PIN: 51190-0164",
+      "",
+      "E side Grand Rd, N of 5 Line W",
+      "",
+      "2.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,285,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT897/RT89797/0217_164921.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT897/RT89797/0217_165027.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT897/RT89797/0217_165104.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "68 / 93",
+      "rt_id": "RT89797"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "545 GRAND RD",
+    "postcode": "",
+    "municipality": "Campbellford",
+    "region": "Northumberland",
+    "date": "12/21/2012",
+    "desc": "Home Hardware Store - 1 storey; 9,000 sf @ $143",
+    "bldg": "9,000 sf",
+    "acreage": "2.22",
+    "consid": "1285000",
+    "cash": "1285000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "51190-0164",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "545 GRAND RD"
+    ],
+    "city_region": "Campbellford : Northumberland",
+    "date_text": "21 Dec 2012",
+    "note": "Purchased by Tenant",
+    "description": "Home Hardware Store - 1 storey; 9,000 sf @ $143",
+    "seller_lines": [
+      "Campbellford Homes Corp"
+    ],
+    "buyer_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "price_text": "$1,285,000"
+  }
+}

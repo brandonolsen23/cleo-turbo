@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24377",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24377",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "521 HWY 8"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "01 Feb 2002",
+      "price_text": "$1,360,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shedden Investments Inc     416-489-9001"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Nightingale",
+        "Nightingale Group",
+        "25 Imperial St",
+        "Toronto, Ontario",
+        "M5P 1B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ticor Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: K. Craig Bushert",
+        "2798 Thamesgate Dr, Unit 1",
+        "Mississauga, Ontario",
+        "L4T 4E8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey 7 units about 10,000 sf @ $136"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-9649, Parts 1 & 2",
+      "",
+      "2.32 acre"
+    ],
+    "arn_text": "25 03 100 250 40800",
+    "consideration_lines": [
+      "cash: $360,000     assumed/vtb debt: $1,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT243/RT24377/photo.jpg"
+    },
+    "footer": {
+      "page_position": "541 / 616",
+      "rt_id": "RT24377"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "521 HWY 8",
+    "postcode": "L8G 1G4",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "02/01/2002",
+    "desc": "Retail Plaza - 1 storey 7 units about 10,000 sf @ $136",
+    "bldg": "10,000 sf",
+    "acreage": "2.32",
+    "consid": "1360000",
+    "cash": "360000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "",
+    "rollno": "25 03 100 250 40800"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "521 HWY 8"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "01 Feb 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey 7 units about 10,000 sf @ $136",
+    "seller_lines": [
+      "Shedden Investments Inc"
+    ],
+    "buyer_lines": [
+      "Ticor Developments Inc"
+    ],
+    "price_text": "$1,360,000"
+  }
+}

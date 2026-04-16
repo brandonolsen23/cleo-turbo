@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT192238",
+  "source_folder": "Metro_Toronto/retail/p005",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192238",
+      "source_folder": "Metro_Toronto/retail/p005",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p005/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "663 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "20 May 2025",
+      "price_text": "$6,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000194810 Ontario Inc     416-687-6700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o KingSett Capital Inc",
+        "40 King St W",
+        "Suite 3700, Scotia Plaza",
+        "Toronto, Ontario",
+        "M5H 3Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2596434 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rajesh Aneja",
+        "2520 Eglinton Ave W, Ste 203",
+        "Mississauga, Ontario",
+        "L5M 0Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1922/RT192238/mi.pdf",
+    "site_lines": [
+      "Plan 64R-14909, Part 1",
+      "",
+      "PIN: 21108-0083",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,500,000   rate: 18.0% per annum.",
+      "registered: 05/20/2025   due: 06/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1922/RT192238/0601_065031.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1922/RT192238/0601_065045.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1922/RT192238/0601_065102.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1922/RT192238/0601_065117.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1922/RT192238/0601_065120.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "222 / 4952",
+      "rt_id": "RT192238"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "663 YONGE ST",
+    "postcode": "M4Y 1Z9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/20/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "6100000",
+    "cash": "6100000",
+    "debt": "",
+    "note": "",
+    "pin": "21108-0083",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "663 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "20 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000194810 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2596434 Ontario Inc"
+    ],
+    "price_text": "$6,100,000"
+  }
+}

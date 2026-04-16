@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT141686",
+  "source_folder": "Halton_Region/retail/p004",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT141686",
+      "source_folder": "Halton_Region/retail/p004",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p004/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "1268 MAIN ST E"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "20 Mar 2019",
+      "price_text": "$880,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2026344 Ontario Ltd     905-315-7610"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Yamka",
+        "2257 Coaldale Dr",
+        "Burlington, Ontario",
+        "L7L 6T6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Firasco Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Firas Al-Dabbagh",
+        "840 Wilks Landing",
+        "Milton, Ontario",
+        "L9T 0K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-19394, Part 22",
+      "",
+      "PIN: 24940-5916",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $880,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Company",
+      "principal: $660,000   rate: 5.75% per annum.",
+      "registered: 03/20/2019   due: 05/01/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1416/RT141686/0330_102156.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1416/RT141686/0330_102206.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1416/RT141686/0330_102218.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1416/RT141686/0330_102219.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1416/RT141686/0330_102235.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1416/RT141686/0330_102238.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "177 / 613",
+      "rt_id": "RT141686"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "1268 MAIN ST E",
+    "postcode": "L9T 8M7",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "03/20/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "880000",
+    "cash": "880000",
+    "debt": "",
+    "note": "",
+    "pin": "24940-5916",
+    "rollno": ""
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "1268 MAIN ST E"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "20 Mar 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2026344 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Firasco Holdings Ltd"
+    ],
+    "price_text": "$880,000"
+  }
+}

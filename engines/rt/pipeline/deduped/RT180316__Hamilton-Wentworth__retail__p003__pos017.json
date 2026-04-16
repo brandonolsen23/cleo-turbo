@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT180316",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180316",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "913 QUEENSTON RD"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "15 Sep 2023",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2189977 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "56 Goldcrest Dr",
+        "Stoney Creek, Ontario",
+        "L8G 4T6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "LVIV Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roman Dmytriv",
+        "8 Maypole St",
+        "Toronto, Ontario",
+        "M9B 1E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 25",
+      "As in Inst No VM-50420",
+      "",
+      "PIN: 17307-0058",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 768124 Ontario Inc",
+      "Racko Capital Inc",
+      "PSAS Inc",
+      "principal: $625,000   rate: 11.0% per annum.",
+      "registered: 09/15/2023   due: 09/15/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180316/0923_091151.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180316/0923_091152.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180316/0923_091209.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180316/0923_091211.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1803/RT180316/0923_091214.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "118 / 616",
+      "rt_id": "RT180316"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "913 QUEENSTON RD",
+    "postcode": "L8G 1B6",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "09/15/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "",
+    "pin": "17307-0058",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "913 QUEENSTON RD"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "15 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2189977 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "LVIV Holdings Inc"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

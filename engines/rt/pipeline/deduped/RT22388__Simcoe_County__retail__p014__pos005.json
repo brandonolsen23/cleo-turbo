@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT22388",
+  "source_folder": "Simcoe_County/retail/p014",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22388",
+      "source_folder": "Simcoe_County/retail/p014",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p014/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "571 BAYFIELD ST N"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "31 Jul 2001",
+      "price_text": "$2,708,491",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Hollinger Canadian Newspapers GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Peter Atkinson",
+        "1450 Don Mills Rd",
+        "Toronto, Ontario",
+        "M3B 2X7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "3057250 Nova Scotia Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Peter Atkinson",
+        "10 Toronto St",
+        "Toronto, Ontario",
+        "M5C 2B7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-16809, Parts 4 & 7"
+    ],
+    "arn_text": "43 42 021 030 01400",
+    "consideration_lines": [
+      "cash: $2,708,491     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT223/RT22388/photo.jpg"
+    },
+    "footer": {
+      "page_position": "656 / 712",
+      "rt_id": "RT22388"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "571 BAYFIELD ST N",
+    "postcode": "L4M 4T6",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "07/31/2001",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2708491",
+    "cash": "2708491",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "43 42 021 030 01400"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "571 BAYFIELD ST N"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "31 Jul 2001",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Hollinger Canadian Newspapers GP Inc"
+    ],
+    "buyer_lines": [
+      "3057250 Nova Scotia Co"
+    ],
+    "price_text": "$2,708,491"
+  }
+}

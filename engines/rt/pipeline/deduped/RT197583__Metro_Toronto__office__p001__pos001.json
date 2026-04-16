@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197583",
+  "source_folder": "Metro_Toronto/office/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197583",
+      "source_folder": "Metro_Toronto/office/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/office/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "474 RICHMOND ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Mar 2026",
+      "price_text": "$2,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "474 Richmond Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "27 Roytec Rd, Ste 11",
+        "Vaughan, Ontario",
+        "L4L 8E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Clay With Me Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gabriela Angulo",
+        "788 Manning Ave",
+        "Toronto, Ontario",
+        "M6G 2W6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 944 - City West, Part Block A",
+      "As in Inst No CT-215750",
+      "",
+      "PIN: 21239-0252",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 062 580 01400",
+    "consideration_lines": [
+      "cash: $2,650,000     assumed/vtb debt: $200,000",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $2,014,394   rate: 6.29% per annum.",
+      "registered: 03/05/2026   due: 03/05/2031",
+      "",
+      "chargee: 474 Richmond Inc",
+      "principal: $200,000   rate: 10.0% per annum.",
+      "registered: 03/05/2026   due: 03/04/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 3370",
+      "rt_id": "RT197583"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "474 RICHMOND ST W",
+    "postcode": "M5V 1Y2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/05/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "2850000",
+    "cash": "2650000",
+    "debt": "200000",
+    "note": "",
+    "pin": "21239-0252",
+    "rollno": "19 04 062 580 01400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "474 RICHMOND ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "474 Richmond Inc"
+    ],
+    "buyer_lines": [
+      "Clay With Me Inc"
+    ],
+    "price_text": "$2,850,000"
+  }
+}

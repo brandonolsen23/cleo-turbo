@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT45435",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45435",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "4551 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "15 Nov 2005",
+      "price_text": "$2,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Edelstein Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rena Attar",
+        "Alexander Serota & Co",
+        "5300 Yonge St, Lower Level",
+        "Toronto, Ontario",
+        "M2N 5R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kingston Road Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rena Attar",
+        "5300 Yonge St",
+        "Lower Concourse",
+        "Toronto, Ontario",
+        "M2N 5R2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 10",
+      "As in Inst No SC-444341",
+      "",
+      "0.96 acre"
+    ],
+    "arn_text": "19 01 092 260 01700",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Canada Trust Co",
+      "principal: $1,500,000   rate: 5.79% per annum",
+      "registered: 11/17/2005   due: 12/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT454/RT45435/air1.jpg",
+        "/assets/files/RT4/RT454/RT45435/air2.jpg",
+        "/assets/files/RT4/RT454/RT45435/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3543 / 4952",
+      "rt_id": "RT45435"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "4551 KINGSTON RD",
+    "postcode": "M1E 2P1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "11/15/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".96",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 092 260 01700"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "4551 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "15 Nov 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Edelstein Properties Inc"
+    ],
+    "buyer_lines": [
+      "Kingston Road Realty Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

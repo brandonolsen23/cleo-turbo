@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT183443",
+  "source_folder": "Lambton/retail/p001",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183443",
+      "source_folder": "Lambton/retail/p001",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "336 LYNDOCH ST"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "26 Feb 2024",
+      "price_text": "$1,480,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1701369 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "200 St Clair Blvd, Unit 26",
+        "Corunna, Ontario",
+        "N0N 1G0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000628934 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kuei Liang",
+        "5426 Davis Dr",
+        "Mount Albert, Ontario",
+        "L0G 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 413,",
+      "Lot 320 & Part Lot 321",
+      "As in Inst No L-927692",
+      "",
+      "PIN: 43429-0053",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "38 05 220 091 08700",
+    "consideration_lines": [
+      "cash: $1,480,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "31 / 106",
+      "rt_id": "RT183443"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "336 LYNDOCH ST",
+    "postcode": "N0N 1G0",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "02/26/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "1480000",
+    "cash": "1480000",
+    "debt": "",
+    "note": "",
+    "pin": "43429-0053",
+    "rollno": "38 05 220 091 08700"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "336 LYNDOCH ST"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "26 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1701369 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000628934 Ontario Inc"
+    ],
+    "price_text": "$1,480,000"
+  }
+}

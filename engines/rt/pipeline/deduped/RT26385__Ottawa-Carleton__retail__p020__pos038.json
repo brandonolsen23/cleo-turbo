@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT26385",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26385",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "500 HAZELDEAN RD"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "01 Aug 2002",
+      "price_text": "$6,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "500 Hazeldean Road Ltd     416-366-6666"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Frank Camenzuli",
+        "Caber Capital Inc",
+        "141 Adelaide St W, Ste 340",
+        "Toronto, Ontario",
+        "M5H 3L5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Foxdean Properties Ltd     613-237-2425"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jules Sigler",
+        "The Properties Group",
+        "100 Sparks St, Ste 500",
+        "Ottawa, Ontario",
+        "K1P 5B7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 19 units 37,254 sf @ $172"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-12187, Parts 1-4",
+      "",
+      "3.42 acre"
+    ],
+    "arn_text": "06 30 010 830 07100",
+    "consideration_lines": [
+      "cash: $6,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT263/RT26385/photo.jpg"
+    },
+    "footer": {
+      "page_position": "989 / 1141",
+      "rt_id": "RT26385"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "500 HAZELDEAN RD",
+    "postcode": "K2L 2B5",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "08/01/2002",
+    "desc": "Retail Plaza - 1 storey; 19 units 37,254 sf @ $172",
+    "bldg": "37,254 sf",
+    "acreage": "3.42",
+    "consid": "6400000",
+    "cash": "6400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 30 010 830 07100"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "500 HAZELDEAN RD"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "01 Aug 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 19 units 37,254 sf @ $172",
+    "seller_lines": [
+      "500 Hazeldean Road Ltd"
+    ],
+    "buyer_lines": [
+      "Foxdean Properties Ltd"
+    ],
+    "price_text": "$6,400,000"
+  }
+}

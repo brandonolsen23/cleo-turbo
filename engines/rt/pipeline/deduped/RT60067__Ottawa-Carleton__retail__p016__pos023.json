@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT60067",
+  "source_folder": "Ottawa-Carleton/retail/p016",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60067",
+      "source_folder": "Ottawa-Carleton/retail/p016",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p016/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "1818 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "17 Jan 2008",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Tookey Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ahmad Al-Barazanchi",
+        "1818 Bank St",
+        "Ottawa, Ontario",
+        "K1V 7Y6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2,900 sf @ $198",
+      "",
+      "Vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG, Part Lot 23",
+      "Plan 5R-11694, Parts 1 & 2",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "06 14 116 301 60100",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $431,250   rate: Prime plus 5.0% per annum",
+      "registered: 01/17/2008   due: on demand"
+    ],
+    "broker_lines": [
+      "DTZ Barnicke: Roger Casagrande, 613-232-1215"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT600/RT60067/0229_113533.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT600/RT60067/0229_113656.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT600/RT60067/0229_113657.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "774 / 1141",
+      "rt_id": "RT60067"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "1818 BANK ST",
+    "postcode": "K1V 7Y6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/17/2008",
+    "desc": "Retail Bldg - 1 storey; 2,900 sf @ $198",
+    "bldg": "2,900 sf",
+    "acreage": ".25",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 116 301 60100"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "1818 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "17 Jan 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2,900 sf @ $198",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Tookey Management Ltd"
+    ],
+    "price_text": "$575,000"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT66016",
+  "source_folder": "Muskoka/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66016",
+      "source_folder": "Muskoka/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 SHARPE ST"
+      ],
+      "city_region": "Gravenhurst : Muskoka",
+      "date_text": "06 Feb 2009",
+      "price_text": "$1,000,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "SREIT (Gravenhurst) Ltd     416-922-3284"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert Pike",
+        "ING Real Estate Canada",
+        "220 Bay St, Ste 1200",
+        "Toronto, Ontario",
+        "M5J 2W4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1789174 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald McCowan",
+        "1257 Westney Rd N",
+        "Ajax, Ontario",
+        "L1T 4T8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2 tenants 17,562 sf  @ $57",
+      "",
+      "100% occupied",
+      "",
+      "Part of a $17,840,000 portfolio sale comprised of 5 retail buildings containing a total of 209,100 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3,",
+      "Lot 40 EMR & Part Lot 39 EMR",
+      "Plan 2",
+      "Lots 5, 7 & 8",
+      "Part Lots 9 & 10",
+      "As in Inst No DM-301883",
+      "",
+      "PIN: 48185-0041 +",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $650,000   rate: Prime plus 10% per annum",
+      "registered: 02/06/2009   due: 03/01/2011"
+    ],
+    "broker_lines": [
+      "Brookfield Financial Real Estate Group Limited: Leonard Abramsky, Brian Bastable & Nurit Sadowski, 416-956-5200"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66016/0307_092837.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66016/0307_093002.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 64",
+      "rt_id": "RT66016"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "80 SHARPE ST",
+    "postcode": "K7R 3K6",
+    "municipality": "Gravenhurst",
+    "region": "Muskoka",
+    "date": "02/06/2009",
+    "desc": "Retail Bldg - 1 storey; 2 tenants 17,562 sf  @ $57",
+    "bldg": "17,562 sf",
+    "acreage": "1.1",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "48185-0041+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "80 SHARPE ST"
+    ],
+    "city_region": "Gravenhurst : Muskoka",
+    "date_text": "06 Feb 2009",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 2 tenants 17,562 sf  @ $57",
+    "seller_lines": [
+      "SREIT (Gravenhurst) Ltd"
+    ],
+    "buyer_lines": [
+      "1789174 Ontario Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

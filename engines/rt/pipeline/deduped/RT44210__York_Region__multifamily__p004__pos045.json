@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT44210",
+  "source_folder": "York_Region/multifamily/p004",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44210",
+      "source_folder": "York_Region/multifamily/p004",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p004/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "15233 YONGE ST"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "01 Sep 2005",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2039636 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ahmed Ebrahime",
+        "20 Wertheim Ct, Unit 15",
+        "Richmond Hill, Ontario",
+        "L4B 3A8"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 3 storey; 3 apts over 1,500 sf retail"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 246, Lot 141",
+      "Together with Inst No R-530937",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 46 000 042 61300",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $385,000   rate: 18.0% per annum",
+      "registered: 09/01/2005   due: 09/01/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT442/RT44210/air1.jpg",
+        "/assets/files/RT4/RT442/RT44210/air2.jpg",
+        "/assets/files/RT4/RT442/RT44210/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "196 / 263",
+      "rt_id": "RT44210"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "15233 YONGE ST",
+    "postcode": "L4G 1L8",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "09/01/2005",
+    "desc": "Retail/Res Bldg - 3 storey; 3 apts over 1,500 sf retail",
+    "bldg": "4,500 sf",
+    "acreage": ".05",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 46 000 042 61300"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "15233 YONGE ST"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "01 Sep 2005",
+    "note": "",
+    "description": "Retail/Res Bldg - 3 storey; 3 apts over 1,500 sf retail",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2039636 Ontario Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

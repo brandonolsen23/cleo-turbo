@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT96427",
+  "source_folder": "Metro_Toronto/retail/p038",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT96427",
+      "source_folder": "Metro_Toronto/retail/p038",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p038/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "2588 - 2590 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "20 Nov 2013",
+      "price_text": "$1,700,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Chung Hang Investments Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Tam",
+        "4190 Finch Ave E",
+        "PO Box 27044",
+        "Toronto, Ontario",
+        "M1S 4T7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-8531, Parts 1-6",
+      "",
+      "PIN: 21159-0295 +",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1867 / 4952",
+      "rt_id": "RT96427"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "2588 - 2590 YONGE ST",
+    "postcode": "M4P 2J3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/20/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "21159-0295+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "2588 - 2590 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "20 Nov 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Chung Hang Investments Co Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

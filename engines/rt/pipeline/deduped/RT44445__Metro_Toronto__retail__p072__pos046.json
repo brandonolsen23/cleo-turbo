@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT44445",
+  "source_folder": "Metro_Toronto/retail/p072",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44445",
+      "source_folder": "Metro_Toronto/retail/p072",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p072/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "668 SILVER STAR BLVD",
+        "SUITE 201"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "21 Sep 2005",
+      "price_text": "$537,231",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Delta-Silver Corp     416-929-2001"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jay Borkowsky",
+        "Esbin Property Management",
+        "162 Cumberland St, Ste 300",
+        "Toronto, Ontario",
+        "M5R 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1662091 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Que Truong",
+        "71 Village Gate Dr",
+        "Markham, Ontario",
+        "L6C 1V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1700",
+      "Level 1, Unit 1"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $537,231     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3597 / 4952",
+      "rt_id": "RT44445"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "668 SILVER STAR BLVD, SUITE 201",
+    "postcode": "M1V 5N1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "09/21/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "537231",
+    "cash": "537231",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "668 SILVER STAR BLVD",
+      "SUITE 201"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "21 Sep 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Delta-Silver Corp"
+    ],
+    "buyer_lines": [
+      "1662091 Ontario Ltd"
+    ],
+    "price_text": "$537,231"
+  }
+}

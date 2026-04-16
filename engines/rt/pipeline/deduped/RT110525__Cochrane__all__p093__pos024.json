@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT110525",
+  "source_folder": "Cochrane/all/p093",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT110525",
+      "source_folder": "Cochrane/all/p093",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p093/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "28 CONCOURSE GATE",
+        "UNITS 201 & 202"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "31 Jul 2015",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "E-Djuster Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Hunter",
+        "28 Concourse Gate, Ste 203",
+        "Ottawa, Ontario",
+        "K2E 7T7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 489",
+      "Level 2, Units 1 & 2",
+      "",
+      "PIN: 15489-0016 +"
+    ],
+    "arn_text": "06 12 000 495 01886 +",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $420,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/31/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4625 / 10920",
+      "rt_id": "RT110525"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "28 CONCOURSE GATE, UNITS 201 & 202",
+    "postcode": "K2E 7T7",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "07/31/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "15489-0016+",
+    "rollno": "06 12 000 495 01886+"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "28 CONCOURSE GATE",
+      "UNITS 201 & 202"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "31 Jul 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "E-Djuster Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

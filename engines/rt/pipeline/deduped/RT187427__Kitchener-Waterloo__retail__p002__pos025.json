@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT187427",
+  "source_folder": "Kitchener-Waterloo/retail/p002",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187427",
+      "source_folder": "Kitchener-Waterloo/retail/p002",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p002/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "60 FREDERICK ST",
+        "UNIT 102"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "17 Sep 2024",
+      "price_text": "$510,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "13479935 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2815 Thamesgate Dr",
+        "Mississauga, Ontario",
+        "L4T 1G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 743",
+      "Level 1, Units 2 & 10",
+      "",
+      "PIN: 23743-0002 +"
+    ],
+    "arn_text": "30 12 020 002 02002 +",
+    "consideration_lines": [
+      "cash: $510,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "76 / 752",
+      "rt_id": "RT187427"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "60 FREDERICK ST, UNIT 102",
+    "postcode": "N2H 0C7",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "09/17/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "510000",
+    "cash": "510000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "23743-0002+",
+    "rollno": "30 12 020 002 02002+"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "60 FREDERICK ST",
+      "UNIT 102"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "17 Sep 2024",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "13479935 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$510,000"
+  }
+}

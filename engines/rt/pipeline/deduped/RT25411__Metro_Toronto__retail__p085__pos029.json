@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT25411",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25411",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "1840 EGLINTON AVE W"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "09 May 2002",
+      "price_text": "$535,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Penlim Investments Ltd     416-361-5400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Don Patterson",
+        "Canada Trust Co",
+        "161 Bay St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5J 2T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Li III Ltd     905-850-2468"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Luigi Rovazzi",
+        "Rovazzi & Pollotta",
+        "3700 Steeles Ave W, Ste 901",
+        "Woodbridge, Ontario",
+        "L4L 2T2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; former TD Bank branch",
+      "",
+      "The purchaser also acquired the adjacent property at",
+      "1842 Eglinton Ave W (and 2380 Dufferin St) for $1,680,000 on April 17, 2002."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1855, Part Lots 1 & 2",
+      "As in Inst No TR-22367",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 043 010 01800",
+    "consideration_lines": [
+      "cash: $535,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4230 / 4952",
+      "rt_id": "RT25411"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "1840 EGLINTON AVE W",
+    "postcode": "M6E 2J4",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "05/09/2002",
+    "desc": "Retail Bldg - 1 storey; former TD Bank branch",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "535000",
+    "cash": "535000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 043 010 01800"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "1840 EGLINTON AVE W"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "09 May 2002",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; former TD Bank branch",
+    "seller_lines": [
+      "Penlim Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Li III Ltd"
+    ],
+    "price_text": "$535,000"
+  }
+}

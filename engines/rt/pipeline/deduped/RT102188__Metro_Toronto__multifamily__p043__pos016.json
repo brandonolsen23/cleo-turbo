@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT102188",
+  "source_folder": "Metro_Toronto/multifamily/p043",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT102188",
+      "source_folder": "Metro_Toronto/multifamily/p043",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p043/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "429 WINONA DR"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "31 Jul 2014",
+      "price_text": "$729,900",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2412261 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ricardo Dri",
+        "429 Winona Dr",
+        "Toronto, Ontario",
+        "M6C 3T4"
+      ]
+    },
+    "description_lines": [
+      "Triplex: 2 storey; 3 units @ $243,300"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1554, Lot 48",
+      "",
+      "PIN: 10457-0105",
+      "",
+      "E side of Winona Dr, S of Vaughan Rd",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 14 021 070 03200",
+    "consideration_lines": [
+      "cash: $729,900     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $430,000   rate: 2.99% per annum.",
+      "registered: 07/31/2014   due: 07/31/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2117 / 6031",
+      "rt_id": "RT102188"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "429 WINONA DR",
+    "postcode": "M6C 3T4",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "07/31/2014",
+    "desc": "Triplex: 2 storey; 3 units @ $243,300",
+    "bldg": "3 units",
+    "acreage": ".08",
+    "consid": "729900",
+    "cash": "729900",
+    "debt": "",
+    "note": "",
+    "pin": "10457-0105",
+    "rollno": "19 14 021 070 03200"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "429 WINONA DR"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "31 Jul 2014",
+    "note": "",
+    "description": "Triplex: 2 storey; 3 units @ $243,300",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2412261 Ontario Inc"
+    ],
+    "price_text": "$729,900"
+  }
+}

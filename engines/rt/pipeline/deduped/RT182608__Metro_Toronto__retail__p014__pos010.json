@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT182608",
+  "source_folder": "Metro_Toronto/retail/p014",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182608",
+      "source_folder": "Metro_Toronto/retail/p014",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p014/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1241 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "18 Jan 2024",
+      "price_text": "$3,318,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1241 Scaw Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "150 King St W, Ste 201",
+        "Toronto, Ontario",
+        "M5H 1J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1241 Scawto Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ho Ying Leung",
+        "9 Milky Way Dr",
+        "Richmond Hill, Ontario",
+        "L4C 4V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1360, Part Lot 6",
+      "As in Inst No CT-593725",
+      "",
+      "PIN: 21316-0058",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 033 540 03200",
+    "consideration_lines": [
+      "cash: $3,318,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182608/0128_083905.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182608/0128_083908.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182608/0128_083909.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182608/0128_083926.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182608/0128_083933.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "661 / 4952",
+      "rt_id": "RT182608"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1241 ST CLAIR AVE W",
+    "postcode": "M6E 1B8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/18/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "3318000",
+    "cash": "3318000",
+    "debt": "",
+    "note": "",
+    "pin": "21316-0058",
+    "rollno": "19 04 033 540 03200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1241 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "18 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1241 Scaw Inc"
+    ],
+    "buyer_lines": [
+      "1241 Scawto Inc"
+    ],
+    "price_text": "$3,318,000"
+  }
+}

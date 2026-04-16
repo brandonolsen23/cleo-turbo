@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT28999",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28999",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "600 KING ST E",
+        "BOND ST E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "03 Feb 2003",
+      "price_text": "$4,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Internvest Holdings Ltd",
+        "Internvest Investments Ltd     416-603-9900"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dr Harry Aronowicz",
+        "6 Adelaide St E, Ste 330",
+        "Toronto, Ontario",
+        "M5C 1H6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 63,105 sf @ $73",
+      "",
+      "Anchored by an A&P Supermarket."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40WR-130, Part 1",
+      "Plan 752, Part Block D",
+      "As in Inst No D-460350",
+      "",
+      "5.11 acre"
+    ],
+    "arn_text": "18 13 030 028 03500",
+    "consideration_lines": [
+      "cash: $2,577,700     assumed/vtb debt: $2,022,300"
+    ],
+    "broker_lines": [
+      "Advisory Service Investment Group: Jon Valencourt, 416-725-4567"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT289/RT28999/photo.jpg"
+    },
+    "footer": {
+      "page_position": "408 / 506",
+      "rt_id": "RT28999"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "600 KING ST E, BOND ST E",
+    "postcode": "L1H 1G6",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "02/03/2003",
+    "desc": "Retail Plaza - 1 storey; 63,105 sf @ $73",
+    "bldg": "63,105 sf",
+    "acreage": "5.11",
+    "consid": "4600000",
+    "cash": "2577700",
+    "debt": "2022300",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 030 028 03500"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "600 KING ST E",
+      "BOND ST E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "03 Feb 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 63,105 sf @ $73",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Internvest Holdings Ltd",
+      "Internvest Investments Ltd"
+    ],
+    "price_text": "$4,600,000"
+  }
+}

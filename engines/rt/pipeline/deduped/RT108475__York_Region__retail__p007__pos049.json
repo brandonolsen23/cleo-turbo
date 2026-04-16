@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT108475",
+  "source_folder": "York_Region/retail/p007",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT108475",
+      "source_folder": "York_Region/retail/p007",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p007/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "108 WOODBRIDGE AVE"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "15 May 2015",
+      "price_text": "$824,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "108 Woodbridge Ave Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Domenic Congiusti",
+        "108 Woodbridge Ave",
+        "Vaughan, Ontario",
+        "L4L 2S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 7",
+      "As in Inst No VA-69263",
+      "",
+      "PIN: 03300-0179",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 28 000 420 16300",
+    "consideration_lines": [
+      "cash: $824,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1084/RT108475/0529_120525.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1084/RT108475/0529_120611.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1084/RT108475/0529_120626.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1084/RT108475/0529_120632.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1084/RT108475/0529_120712.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1084/RT108475/0529_120728.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "350 / 984",
+      "rt_id": "RT108475"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "108 WOODBRIDGE AVE",
+    "postcode": "L4L 2S7",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "05/15/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "824000",
+    "cash": "824000",
+    "debt": "",
+    "note": "",
+    "pin": "03300-0179",
+    "rollno": "19 28 000 420 16300"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "108 WOODBRIDGE AVE"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "15 May 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "108 Woodbridge Ave Inc"
+    ],
+    "price_text": "$824,000"
+  }
+}

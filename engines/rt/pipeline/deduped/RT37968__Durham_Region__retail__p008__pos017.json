@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT37968",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37968",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "170 LIBERTY ST S"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "29 Sep 2004",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2040379 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Dennis Kafes",
+        "54 Triangle Villas Dr",
+        "Toronto, Ontario",
+        "M1W 3L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Quantus Holdings Inc     416-391-2771"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yenn Chung",
+        "8 Salonica Rd",
+        "Toronto, Ontario",
+        "M3C 2L7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 units 8,200 sf @ $250",
+      "",
+      "Last transferred in Feb 2004 for $1,600,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "BFC, Part Lot 11",
+      "Plan 40R-15961, Parts 3 & 4",
+      "",
+      "1.09 acre"
+    ],
+    "arn_text": "18 17 020 120 05510",
+    "consideration_lines": [
+      "cash: $2,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT379/RT37968/air1.jpg",
+        "/assets/files/RT3/RT379/RT37968/air2.jpg",
+        "/assets/files/RT3/RT379/RT37968/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT379/RT37968/photo.jpg"
+    },
+    "footer": {
+      "page_position": "368 / 506",
+      "rt_id": "RT37968"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "170 LIBERTY ST S",
+    "postcode": "L1C 4W4",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "09/29/2004",
+    "desc": "Retail Plaza - 1 storey; 5 units 8,200 sf @ $250",
+    "bldg": "8,200 sf",
+    "acreage": "1.09",
+    "consid": "2050000",
+    "cash": "2050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 17 020 120 05510"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "170 LIBERTY ST S"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "29 Sep 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 units 8,200 sf @ $250",
+    "seller_lines": [
+      "2040379 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Quantus Holdings Inc"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

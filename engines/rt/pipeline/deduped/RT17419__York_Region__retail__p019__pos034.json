@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT17419",
+  "source_folder": "York_Region/retail/p019",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17419",
+      "source_folder": "York_Region/retail/p019",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "65 UNIONVILLE GATE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "24 May 2000",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CFPF Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shu-Hwei Chen Pai",
+        "153 Munro Blvd",
+        "North York, Ontario",
+        "M2P 1C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Trak's Communications Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kapil Dilawri",
+        "c/o 7068 Yonge St",
+        "Thornhill, Ontario",
+        "L3J 2A6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-7974, Parts 17& 21",
+      "",
+      "SW corner at Kennedy",
+      "",
+      "1.08 acre"
+    ],
+    "arn_text": "19 36 030 220 82500",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: WBTC Roselawn Inc",
+      "principal: $600,000,000",
+      "registered: 12/22/2022   due: on demand",
+      "",
+      "chargee: Roselawn and Main Urban Properties Inc",
+      "principal: $200,000,000",
+      "registered: 12/22/2022   due: on demand",
+      "",
+      "chargee: Cambrian Credit Union Ltd",
+      "principal: $23,400,000",
+      "registered: 12/20/2022   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $15,876,480   rate: Prime plus 5.0% per annum.",
+      "registered: 12/20/2022   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $9,000,000   rate: 18.0% per annum.",
+      "registered: 12/11/2022   due: 01/01/2028",
+      "",
+      "chargee: Terma Holdings Inc",
+      "principal: $9,500,000   rate: 12.0% per annum.",
+      "registered: 12/21/2022   due: 02/28/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT174/RT17419/photo.jpg"
+    },
+    "footer": {
+      "page_position": "935 / 984",
+      "rt_id": "RT17419"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "65 UNIONVILLE GATE",
+    "postcode": "L3R 9S6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "05/24/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.08",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 030 220 82500"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "65 UNIONVILLE GATE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "24 May 2000",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "CFPF Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Trak's Communications Ltd"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

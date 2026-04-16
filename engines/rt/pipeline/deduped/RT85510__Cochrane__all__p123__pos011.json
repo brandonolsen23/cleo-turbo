@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT85510",
+  "source_folder": "Cochrane/all/p123",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT85510",
+      "source_folder": "Cochrane/all/p123",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p123/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 LAKEWAY DR"
+      ],
+      "city_region": "Rockcliffe Park : Ottawa-Carleton",
+      "date_text": "03 May 2012",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1351124 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "436 Lisgar St",
+        "Ottawa, Ontario",
+        "K1R 5H1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-92, Part Lots 64 & 65",
+      "",
+      "PIN: 04228-0053",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "06 11 000 230 07000",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT855/RT85510/air1.jpg",
+        "/assets/files/RT8/RT855/RT85510/air2.jpg",
+        "/assets/files/RT8/RT855/RT85510/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6112 / 10920",
+      "rt_id": "RT85510"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "125 LAKEWAY DR",
+    "postcode": "K1L 5A9",
+    "municipality": "Rockcliffe Park",
+    "region": "Ottawa-Carleton",
+    "date": "05/03/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".4",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "04228-0053",
+    "rollno": "06 11 000 230 07000"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "125 LAKEWAY DR"
+    ],
+    "city_region": "Rockcliffe Park : Ottawa-Carleton",
+    "date_text": "03 May 2012",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1351124 Ontario Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

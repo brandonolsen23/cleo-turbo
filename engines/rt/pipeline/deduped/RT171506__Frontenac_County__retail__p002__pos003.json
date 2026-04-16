@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT171506",
+  "source_folder": "Frontenac_County/retail/p002",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT171506",
+      "source_folder": "Frontenac_County/retail/p002",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p002/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "2328 PRINCESS ST",
+        "2342 PRINCESS ST"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "01 Sep 2022",
+      "price_text": "$14,200,560",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kingston (RI) Portfolio Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rokion001 Holdings ULC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Reiter",
+        "c/o Oak Street Real Estate Capital, LLC",
+        "30 N LaSalle St, Ste 4140",
+        "Chicago, Illinois",
+        "USA - 60602"
+      ]
+    },
+    "description_lines": [
+      "RONA Garden Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 14",
+      "Plan 13R-13969, Parts 1-10",
+      "Plan 13R-14723, Parts 11-18",
+      "",
+      "PIN: 36086-0241 +",
+      "",
+      "10.76 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $14,200,560     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $100,000,000   rate: As specified in the Credit Agreement",
+      "registered: 09/01/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171506/1111_073746.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171506/1111_073755.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171506/1111_073905.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171506/1111_073906.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171506/1111_074159.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "54 / 236",
+      "rt_id": "RT171506"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "2328 PRINCESS ST, 2342 PRINCESS ST",
+    "postcode": "K7M 3G4",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "09/01/2022",
+    "desc": "RONA Garden Centre",
+    "bldg": "",
+    "acreage": "10.76",
+    "consid": "14200560",
+    "cash": "14200560",
+    "debt": "",
+    "note": "",
+    "pin": "36086-0241+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "2328 PRINCESS ST",
+      "2342 PRINCESS ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "01 Sep 2022",
+    "note": "",
+    "description": "RONA Garden Centre",
+    "seller_lines": [
+      "Kingston (RI) Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "Rokion001 Holdings ULC"
+    ],
+    "price_text": "$14,200,560"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT22360",
+  "source_folder": "Metro_Toronto/multifamily/p109",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22360",
+      "source_folder": "Metro_Toronto/multifamily/p109",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p109/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 TINDER CRES"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "01 Aug 2001",
+      "price_text": "$3,812,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "711023 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Judy Chen",
+        "3207 Shoreline Dr",
+        "Oakville, Ontario",
+        "L6L 5Y9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1303241 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hak Jong Kim",
+        "44 Groomsport Cres",
+        "Toronto, Ontario",
+        "M1T 2K9"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 4 storey; 59 units @ $64,619",
+      "",
+      "26-2bdrm 24-1bdrm 9-jr1bdrm parking-30 indoor & 35 outdoor"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan R-3, Part 2",
+      "",
+      "1.54 acre"
+    ],
+    "arn_text": "19 08 121 180 01500",
+    "consideration_lines": [
+      "cash: $3,812,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT223/RT22360/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5441 / 6031",
+      "rt_id": "RT22360"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "20 TINDER CRES",
+    "postcode": "M4A 1L5",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "08/01/2001",
+    "desc": "Apartment Bldg - 4 storey; 59 units @ $64,619",
+    "bldg": "59 units",
+    "acreage": "1.54",
+    "consid": "3812500",
+    "cash": "3812500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 121 180 01500"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "20 TINDER CRES"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "01 Aug 2001",
+    "note": "",
+    "description": "Apartment Bldg - 4 storey; 59 units @ $64,619",
+    "seller_lines": [
+      "711023 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1303241 Ontario Inc"
+    ],
+    "price_text": "$3,812,500"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT176667",
+  "source_folder": "York_Region/retail/p005",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176667",
+      "source_folder": "York_Region/retail/p005",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "106 HIGH ST"
+      ],
+      "city_region": "Georgina : York Region",
+      "date_text": "05 Apr 2023",
+      "price_text": "$2,070,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2782746 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Kentris",
+        "9140 Leslie St, Ste 401",
+        "Richmond Hill, Ontario",
+        "L4B 0A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1322655 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jordan Levy",
+        "482 The Queensway S, Unit 5",
+        "Keswick, Ontario",
+        "L4P 2E3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in March 2021 for $1,750,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 69 - Sutton, Block 10",
+      "Lot 4, Part Lots 5-7",
+      "As in Inst No R-391848",
+      "",
+      "PIN: 03504-0160",
+      "",
+      "W side High St, N of Middle St",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "19 70 000 070 77900",
+    "consideration_lines": [
+      "cash: $2,070,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 2455340 Ontario Inc",
+      "principal: $1,900,000   rate: 6.0% per annum.",
+      "registered: 04/05/2023   due: 10/15/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176667/0521_141249.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176667/0521_141254.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176667/0521_141310.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176667/0521_141313.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176667/0521_141320.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1766/RT176667/air1.jpg",
+        "/assets/files/RT17/RT1766/RT176667/air2.jpg",
+        "/assets/files/RT17/RT1766/RT176667/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "229 / 984",
+      "rt_id": "RT176667"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "106 HIGH ST",
+    "postcode": "L0E 1R0",
+    "municipality": "Georgina",
+    "region": "York Region",
+    "date": "04/05/2023",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "2070000",
+    "cash": "2070000",
+    "debt": "",
+    "note": "",
+    "pin": "03504-0160",
+    "rollno": "19 70 000 070 77900"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "106 HIGH ST"
+    ],
+    "city_region": "Georgina : York Region",
+    "date_text": "05 Apr 2023",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "2782746 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1322655 Ontario Ltd"
+    ],
+    "price_text": "$2,070,000"
+  }
+}

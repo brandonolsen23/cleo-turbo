@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT131846",
+  "source_folder": "Kitchener-Waterloo/retail/p006",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT131846",
+      "source_folder": "Kitchener-Waterloo/retail/p006",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p006/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "42 ONTARIO ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Feb 2018",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Churchill Estates Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aldo DiBattista",
+        "195 King St W, Ste 301",
+        "Kitchener, Ontario",
+        "N2G 1B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 401, Part Lot 3E",
+      "As in Inst No 376400",
+      "",
+      "PIN: 22316-0025",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "60 12 020 003 01700",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1318/RT131846/0515_110938.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1318/RT131846/0515_110949.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1318/RT131846/0515_111003.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1318/RT131846/0515_111034.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1318/RT131846/0515_111045.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "254 / 752",
+      "rt_id": "RT131846"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "42 ONTARIO ST N",
+    "postcode": "N2H 4Y4",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "02/01/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "22316-0025",
+    "rollno": "60 12 020 003 01700"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "42 ONTARIO ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Feb 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Churchill Estates Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

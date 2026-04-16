@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT178667",
+  "source_folder": "Cochrane/all/p023",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178667",
+      "source_folder": "Cochrane/all/p023",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p023/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "332 SOMERSET ST E"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "12 May 2023",
+      "price_text": "$912,799",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "332 Somerset Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frederick Brogan",
+        "332 Somerset St E",
+        "Ottawa, Ontario",
+        "K1N 6W5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 98628, Part Lots 31 & 32",
+      "As in Inst No N-470805",
+      "",
+      "PIN: 04206-0081",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "06 14 031 501 11200",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $912,799",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $620,000   rate: 11.99% per annum.",
+      "registered: 05/12/2023   due: 05/15/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1111 / 10920",
+      "rt_id": "RT178667"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "332 SOMERSET ST E",
+    "postcode": "K1N 6W5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/12/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "912799",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04206-0081",
+    "rollno": "06 14 031 501 11200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "332 SOMERSET ST E"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "12 May 2023",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "332 Somerset Inc"
+    ],
+    "price_text": "$912,799"
+  }
+}

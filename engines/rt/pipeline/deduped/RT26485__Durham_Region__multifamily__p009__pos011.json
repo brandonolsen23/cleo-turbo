@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT26485",
+  "source_folder": "Durham_Region/multifamily/p009",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26485",
+      "source_folder": "Durham_Region/multifamily/p009",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/multifamily/p009/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "333 GIBB ST"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "01 Aug 2002",
+      "price_text": "$725,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jean & Ronald Nelson",
+        "Edmund  & Mary Reigle"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "253 Pioneer Dr, Apt 501",
+        "Thunder Bay, Ontario",
+        "P7G 1C1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1064145 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Karim Kanji",
+        "408 King St W",
+        "Oshawa, Ontario",
+        "L1J 2K8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2.5 storey; 20 units @ $36,250"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 761, Lot 1",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "18 13 020 015 03700",
+    "consideration_lines": [
+      "cash: $725,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT264/RT26485/photo.jpg"
+    },
+    "footer": {
+      "page_position": "412 / 481",
+      "rt_id": "RT26485"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "333 GIBB ST",
+    "postcode": "L1J 1Z1",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "08/01/2002",
+    "desc": "Apartment Bldg - 2.5 storey; 20 units @ $36,250",
+    "bldg": "20 units",
+    "acreage": ".44",
+    "consid": "725000",
+    "cash": "725000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 020 015 03700"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "333 GIBB ST"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "01 Aug 2002",
+    "note": "",
+    "description": "Apartment Bldg - 2.5 storey; 20 units @ $36,250",
+    "seller_lines": [
+      "Jean & Ronald Nelson",
+      "Edmund  & Mary Reigle"
+    ],
+    "buyer_lines": [
+      "1064145 Ontario Ltd"
+    ],
+    "price_text": "$725,000"
+  }
+}

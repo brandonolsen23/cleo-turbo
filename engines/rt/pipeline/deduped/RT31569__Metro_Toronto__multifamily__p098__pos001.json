@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT31569",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31569",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "62 FIFTH ST"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "28 Aug 2003",
+      "price_text": "$520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "6127100 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Anastasiou",
+        "62 Fifth St",
+        "Toronto, Ontario",
+        "M8V 2Z2"
+      ]
+    },
+    "description_lines": [
+      "EightPlex - 2.5 storey; 8 units @ $65,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1592, Lot 409",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 19 052 130 03200",
+    "consideration_lines": [
+      "cash: $520,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT315/RT31569/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4852 / 6031",
+      "rt_id": "RT31569"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "62 FIFTH ST",
+    "postcode": "M8V 2Z2",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "08/28/2003",
+    "desc": "EightPlex - 2.5 storey; 8 units @ $65,000",
+    "bldg": "8 units",
+    "acreage": ".14",
+    "consid": "520000",
+    "cash": "520000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 052 130 03200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "62 FIFTH ST"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "28 Aug 2003",
+    "note": "",
+    "description": "EightPlex - 2.5 storey; 8 units @ $65,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "6127100 Canada Ltd"
+    ],
+    "price_text": "$520,000"
+  }
+}

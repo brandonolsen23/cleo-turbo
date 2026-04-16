@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT40340",
+  "source_folder": "York_Region/retail/p016",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40340",
+      "source_folder": "York_Region/retail/p016",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 CHRISLEA RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "15 Feb 2005",
+      "price_text": "$5,664,812",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "648900 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Brock Napier",
+        "PO Box 77",
+        "Minet, Ontario",
+        "P0B 1G0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Royal Door Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Floriano Cescolini",
+        "87 Planchet Rd",
+        "Concord, Ontario",
+        "L4K 2C6"
+      ]
+    },
+    "description_lines": [
+      "Department Store - 26.5 ft clr;  48,849 sf @ $116",
+      "",
+      "Sear's furniture store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 6",
+      "Plan 65M-2589, Lot 1",
+      "Plan 65R-13365, Part 2",
+      "",
+      "3.26 acre"
+    ],
+    "arn_text": "19 28 000 233 52900",
+    "consideration_lines": [
+      "cash: $5,664,812     assumed/vtb debt: $0",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $5,000,000   rate: 25.0% per annum.",
+      "registered: 02/15/2005   due: on demand"
+    ],
+    "broker_lines": [
+      "B & M Losier Realty: Bernard & Michael Losier, 416-742-4740"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT403/RT40340/photo.jpg"
+    },
+    "footer": {
+      "page_position": "754 / 984",
+      "rt_id": "RT40340"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "2 CHRISLEA RD",
+    "postcode": "L4L 8V1",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "02/15/2005",
+    "desc": "Department Store - 26.5 ft clr;  48,849 sf @ $116",
+    "bldg": "48,849 sf",
+    "acreage": "3.26",
+    "consid": "5664812",
+    "cash": "5664812",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 233 52900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "2 CHRISLEA RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "15 Feb 2005",
+    "note": "",
+    "description": "Department Store - 26.5 ft clr;  48,849 sf @ $116",
+    "seller_lines": [
+      "648900 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Royal Door Ltd"
+    ],
+    "price_text": "$5,664,812"
+  }
+}

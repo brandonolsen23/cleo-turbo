@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT196480",
+  "source_folder": "Wellington/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196480",
+      "source_folder": "Wellington/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "7293 WELLINGTON RD 86 WALLENSTEIN"
+      ],
+      "city_region": "Mapleton : Wellington",
+      "date_text": "08 Jan 2026",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000922588 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Ross Ruppert",
+        "1039 Geddes St",
+        "Hawkesville, Ontario",
+        "N0B 1X0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1066779 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marlin Stoltz",
+        "8499 Highway 23 N, RR 1",
+        "Listowel, Ontario",
+        "N4W 3H2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Peel, Part Lot 18",
+      "Plan 61R-6138, Part 1",
+      "As in Inst No DN-25408",
+      "",
+      "PIN: 71451-0062",
+      "",
+      "4.15 acre"
+    ],
+    "arn_text": "23 32 000 001 01920",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196480/0131_151727.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196480/0131_151728.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196480/0131_151731.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196480/0131_151733.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196480/0131_151737.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 269",
+      "rt_id": "RT196480"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "7293 WELLINGTON RD 86 WALLENSTEIN",
+    "postcode": "N0B 2S0",
+    "municipality": "Mapleton",
+    "region": "Wellington",
+    "date": "01/08/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.15",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "71451-0062",
+    "rollno": "23 32 000 001 01920"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "7293 WELLINGTON RD 86 WALLENSTEIN"
+    ],
+    "city_region": "Mapleton : Wellington",
+    "date_text": "08 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000922588 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1066779 Ontario Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

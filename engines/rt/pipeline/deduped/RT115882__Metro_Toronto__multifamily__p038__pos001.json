@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT115882",
+  "source_folder": "Metro_Toronto/multifamily/p038",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT115882",
+      "source_folder": "Metro_Toronto/multifamily/p038",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p038/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 SORAUREN AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Apr 2016",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2501266 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Low",
+        "125 Sorauren Ave",
+        "Toronto, Ontario",
+        "M6R 2E3"
+      ]
+    },
+    "description_lines": [
+      "Duplex: 2 storey; 2-2bdrm @ $475,000",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1262, Parts 2 & 3",
+      "As in Inst No CT-778092",
+      "",
+      "PIN: 21336-0291",
+      "",
+      "E side Sorauren Ave, S of Galley Ave",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 023 180 01100",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $760,000   rate: Prime minus 0.05% per annum.",
+      "registered: 04/15/2016   due: 04/15/2021"
+    ],
+    "broker_lines": [
+      "Bosley Real Estate: Susan MacLeod, 416-465-7527"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1852 / 6031",
+      "rt_id": "RT115882"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "125 SORAUREN AVE",
+    "postcode": "M6R 2E3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/15/2016",
+    "desc": "Duplex: 2 storey; 2-2bdrm @ $475,000",
+    "bldg": "2 units",
+    "acreage": ".05",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "21336-0291",
+    "rollno": "19 04 023 180 01100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "125 SORAUREN AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Apr 2016",
+    "note": "",
+    "description": "Duplex: 2 storey; 2-2bdrm @ $475,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2501266 Ontario Inc"
+    ],
+    "price_text": "$950,000"
+  }
+}

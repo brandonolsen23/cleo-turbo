@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT190359",
+  "source_folder": "York_Region/industrial/p005",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190359",
+      "source_folder": "York_Region/industrial/p005",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p005/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "23 MCCLEARY CT",
+        "UNIT 5"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "13 Feb 2025",
+      "price_text": "$893,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Rifo Realty Capital Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7030 Woodbine Ave, Ste 901",
+        "Markham, Ontario",
+        "L3R 6G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001084574 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peng Hui Cao",
+        "23 McCleary Ct, Unit 5",
+        "Concord, Ontario",
+        "L4K 3R6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 728",
+      "Level 1, Unit 5",
+      "",
+      "PIN: 29259-0005"
+    ],
+    "arn_text": "19 28 000 230 24705",
+    "consideration_lines": [
+      "cash: $893,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $635,100   rate: Prime plus 5.0% per annum.",
+      "registered: 02/13/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101340.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101347.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101400.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101401.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101411.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101412.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190359/0229_101451.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "202 / 2269",
+      "rt_id": "RT190359"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "23 MCCLEARY CT, UNIT 5",
+    "postcode": "L4K 3R6",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "02/13/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "893000",
+    "cash": "893000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "29259-0005",
+    "rollno": "19 28 000 230 24705"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "23 MCCLEARY CT",
+      "UNIT 5"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "13 Feb 2025",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Rifo Realty Capital Inc"
+    ],
+    "buyer_lines": [
+      "1001084574 Ontario Inc"
+    ],
+    "price_text": "$893,000"
+  }
+}

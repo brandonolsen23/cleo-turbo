@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT183814",
+  "source_folder": "York_Region/retail/p004",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183814",
+      "source_folder": "York_Region/retail/p004",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 HIGHWAY 7 E",
+        "550 HWY 7 E",
+        "UNIT 57"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "21 Mar 2024",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000810841 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ming Nui Li",
+        "550 Highway 7 E, Ste E57",
+        "Richmond Hill, Ontario",
+        "L4B 3Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 863",
+      "Level 1, Unit 46",
+      "Level A, Unit 18",
+      "",
+      "PIN: 29393-0046 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $730,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Wei Yee Tong",
+      "principal: $472,000   rate: 2.0% per annum.",
+      "registered: 03/21/2024   due: 03/21/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133234.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133248.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133331.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133345.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133501.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133517.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133518.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183814/0407_133714.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "171 / 984",
+      "rt_id": "RT183814"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "550 HIGHWAY 7 E, 550 HWY 7 E, UNIT 57",
+    "postcode": "L4B 3Z4",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "03/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "730000",
+    "cash": "730000",
+    "debt": "",
+    "note": "",
+    "pin": "29393-0046+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "550 HIGHWAY 7 E",
+      "550 HWY 7 E",
+      "UNIT 57"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "21 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000810841 Ontario Inc"
+    ],
+    "price_text": "$730,000"
+  }
+}

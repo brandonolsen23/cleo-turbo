@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT50480",
+  "source_folder": "York_Region/retail/p014",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50480",
+      "source_folder": "York_Region/retail/p014",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p014/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 3",
+        "PART LOT 9"
+      ],
+      "city_region": "Georgina : York Region",
+      "date_text": "16 Aug 2006",
+      "price_text": "$2,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Riverqueen Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Rombis",
+        "99 Reginald Cr",
+        "Markham, Ontario",
+        "L3P 3T8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Picolo's Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christos Roidis",
+        "16 Trojan Gate",
+        "Scarborough, Ontario",
+        "M1V 3B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 9",
+      "Except:",
+      "Plan 65R-21117, Part 4",
+      "Plan 65R-25998, Parts 1-3",
+      "",
+      "1.96 acre"
+    ],
+    "arn_text": "19 70 000 146 48000",
+    "consideration_lines": [
+      "cash: $2,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Canada Trust Co",
+      "principal: $1,600,000   rate: 5.845% per annum",
+      "registered: 08/16/2006   due: 09/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT504/RT50480/air1.jpg",
+        "/assets/files/RT5/RT504/RT50480/air2.jpg",
+        "/assets/files/RT5/RT504/RT50480/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "688 / 984",
+      "rt_id": "RT50480"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "CONC 3, PART LOT 9",
+    "postcode": "",
+    "municipality": "Georgina",
+    "region": "York Region",
+    "date": "08/16/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.96",
+    "consid": "2650000",
+    "cash": "2650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 70 000 146 48000"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "CONC 3",
+      "PART LOT 9"
+    ],
+    "city_region": "Georgina : York Region",
+    "date_text": "16 Aug 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Riverqueen Developments Ltd"
+    ],
+    "buyer_lines": [
+      "Picolo's Investments Inc"
+    ],
+    "price_text": "$2,650,000"
+  }
+}

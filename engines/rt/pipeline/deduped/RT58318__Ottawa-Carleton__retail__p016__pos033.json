@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT58318",
+  "source_folder": "Ottawa-Carleton/retail/p016",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT58318",
+      "source_folder": "Ottawa-Carleton/retail/p016",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p016/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "2583 CARLING AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "16 Oct 2007",
+      "price_text": "$1,460,250",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2063633 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chi Tang",
+        "139 Rochester St",
+        "Ottawa, Ontario",
+        "K1R 7M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2583 Carling Avenue Ltd     613-728-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mike McGahan",
+        "CLV Group",
+        "485 Bank St, Ste 200",
+        "Ottawa, Ontario",
+        "K2P 1Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 348",
+      "Lots 39, 41 & 42",
+      "Part Lots 35, 36, 38, 43 & 44",
+      "As in Inst No CR-659927",
+      "Except:",
+      "Plan 5R-5462, Part 2",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "06 14 095 101 41700",
+    "consideration_lines": [
+      "cash: $1,460,250     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $975,000   rate: 25.0% per annum",
+      "registered: 10/16/2007   due: 10/15/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT583/RT58318/1207_132930.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT583/RT58318/1207_133012.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT583/RT58318/1207_133013.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT583/RT58318/air1.jpg",
+        "/assets/files/RT5/RT583/RT58318/air2.jpg",
+        "/assets/files/RT5/RT583/RT58318/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "784 / 1141",
+      "rt_id": "RT58318"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "2583 CARLING AVE",
+    "postcode": "K2B 7H7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/16/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".73",
+    "consid": "1460250",
+    "cash": "1460250",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 095 101 41700"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "2583 CARLING AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "16 Oct 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2063633 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2583 Carling Avenue Ltd"
+    ],
+    "price_text": "$1,460,250"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT40211",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40211",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "324 LAUDER AVE"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "21 Jan 2005",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 494, Part Lot 17",
+      "As in Inst No CY-632081",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 14 022 100 02800",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $455,000   rate: 4.75% per annum.",
+      "registered: 01/21/2005   due: 08/01/2005"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40211/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4489 / 6031",
+      "rt_id": "RT40211"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "324 LAUDER AVE",
+    "postcode": "M6E 3H6",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "01/21/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 022 100 02800"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "324 LAUDER AVE"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "21 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$700,000"
+  }
+}

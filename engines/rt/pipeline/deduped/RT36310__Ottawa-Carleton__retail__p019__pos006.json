@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT36310",
+  "source_folder": "Ottawa-Carleton/retail/p019",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36310",
+      "source_folder": "Ottawa-Carleton/retail/p019",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p019/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "333 - 335 CUMBERLAND ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "21 Jun 2004",
+      "price_text": "$820,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Domeron Inc     613-224-5327"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ron Domitrovits",
+        "23 Goodwin Ave",
+        "Nepean, Ontario",
+        "K2E 5C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Livingeasy Homes Inc     613-744-0444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bruce Yateman",
+        "Aubut & Nadeau",
+        "16 Beechwood Ave, Ste 204",
+        "Ottawa, Ontario",
+        "K1L 8L9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 8,267 sf @ $99",
+      "",
+      "Last transferred in March 2000 for $613,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 42482",
+      "Part Lot 1, S Clarence St",
+      "Lot 27, N York St",
+      "As in Inst No N-685883",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "06 14 020 601 40000",
+    "consideration_lines": [
+      "cash: $820,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT363/RT36310/photo.jpg"
+    },
+    "footer": {
+      "page_position": "907 / 1141",
+      "rt_id": "RT36310"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "333 - 335 CUMBERLAND ST",
+    "postcode": "K1N 7J3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/21/2004",
+    "desc": "Retail Bldg - 2 storey; 8,267 sf @ $99",
+    "bldg": "8,267 sf",
+    "acreage": ".2",
+    "consid": "820000",
+    "cash": "820000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 020 601 40000"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "333 - 335 CUMBERLAND ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "21 Jun 2004",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 8,267 sf @ $99",
+    "seller_lines": [
+      "Domeron Inc"
+    ],
+    "buyer_lines": [
+      "Livingeasy Homes Inc"
+    ],
+    "price_text": "$820,000"
+  }
+}

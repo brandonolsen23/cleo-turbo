@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT192440",
+  "source_folder": "York_Region/retail/p002",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192440",
+      "source_folder": "York_Region/retail/p002",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 HAWKRIDGE AVE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "26 May 2025",
+      "price_text": "$2,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1200051 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "181 Cheboutequion Dr",
+        "North Kawartha, Ontario",
+        "K0L 2H0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16408389 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alina Cucos",
+        "31 Tupling St",
+        "Bradford West Gwilimbury, ON",
+        "L3Z 0W8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4065, Part Lot 45",
+      "As in Inst No R-685798",
+      "",
+      "PIN: 02911-0108",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "19 36 040 300 13300",
+    "consideration_lines": [
+      "cash: $2,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Lions Gate Enterprise Inc",
+      "principal: $2,015,820   rate: 9.99% per annum.",
+      "registered: 05/26/2025   due: 05/23/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1924/RT192440/0615_151310.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1924/RT192440/0615_151314.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1924/RT192440/0615_151328.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1924/RT192440/0615_151329.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "73 / 984",
+      "rt_id": "RT192440"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "2 HAWKRIDGE AVE",
+    "postcode": "L3P 1V6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "05/26/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "2800000",
+    "cash": "2800000",
+    "debt": "",
+    "note": "",
+    "pin": "02911-0108",
+    "rollno": "19 36 040 300 13300"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "2 HAWKRIDGE AVE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "26 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1200051 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "16408389 Canada Inc"
+    ],
+    "price_text": "$2,800,000"
+  }
+}

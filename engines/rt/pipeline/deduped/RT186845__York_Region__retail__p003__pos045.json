@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT186845",
+  "source_folder": "York_Region/retail/p003",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186845",
+      "source_folder": "York_Region/retail/p003",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 EAST BEAVER CREEK RD",
+        "UNIT 37"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "22 Aug 2024",
+      "price_text": "$1,490,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2748753 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "33 Helendale Ave, Ste 1104",
+        "Toronto, Ontario",
+        "M4R 0A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2076129 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lincoln Lin",
+        "6 Riverbend Rd",
+        "Markham, Ontario",
+        "L3R 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 673",
+      "Level 1, Unit 37",
+      "",
+      "PIN: 29206-0037"
+    ],
+    "arn_text": "19 38 050 040 39837",
+    "consideration_lines": [
+      "cash: $1,490,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186845/0901_103045.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186845/0901_103048.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186845/0901_103109.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186845/0901_103132.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186845/0901_103440.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "146 / 984",
+      "rt_id": "RT186845"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "155 EAST BEAVER CREEK RD, UNIT 37",
+    "postcode": "L4B 2N1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "08/22/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1490000",
+    "cash": "1490000",
+    "debt": "",
+    "note": "",
+    "pin": "29206-0037",
+    "rollno": "19 38 050 040 39837"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "155 EAST BEAVER CREEK RD",
+      "UNIT 37"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "22 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2748753 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2076129 Ontario Inc"
+    ],
+    "price_text": "$1,490,000"
+  }
+}

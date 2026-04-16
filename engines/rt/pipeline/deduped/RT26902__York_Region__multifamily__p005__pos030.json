@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT26902",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26902",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "534 LAKE DR S"
+      ],
+      "city_region": "Georgina : York Region",
+      "date_text": "12 Sep 2002",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Glenwoods Bay Marina Ltd     905-660-7504"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carlo Rotundo",
+        "Maple Hill Contractors",
+        "106 Corstate Ave, Ste 1",
+        "Concord, Ontario",
+        "L4K 4X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Pasadena Marina & Restaurant Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Charles Harding",
+        "393 The Queensway S",
+        "Keswick, Ontario",
+        "L4P 2C6"
+      ]
+    },
+    "description_lines": [
+      "Marina & Restaurant",
+      "",
+      "180 slips, 80 useable.",
+      "2-3bdrm over restaurant.",
+      "Boathouse."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-9014, Part 1",
+      "Except Plan 65R-17099, Parts 1-3",
+      "",
+      "2.96 acre"
+    ],
+    "arn_text": "19 70 000 141 95500",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $400,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "231 / 263",
+      "rt_id": "RT26902"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "534 LAKE DR S",
+    "postcode": "L4P 1S2",
+    "municipality": "Georgina",
+    "region": "York Region",
+    "date": "09/12/2002",
+    "desc": "Marina & Restaurant",
+    "bldg": "",
+    "acreage": "2.96",
+    "consid": "550000",
+    "cash": "150000",
+    "debt": "400000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 70 000 141 95500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "534 LAKE DR S"
+    ],
+    "city_region": "Georgina : York Region",
+    "date_text": "12 Sep 2002",
+    "note": "",
+    "description": "Marina & Restaurant",
+    "seller_lines": [
+      "Glenwoods Bay Marina Ltd"
+    ],
+    "buyer_lines": [
+      "Pasadena Marina & Restaurant Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

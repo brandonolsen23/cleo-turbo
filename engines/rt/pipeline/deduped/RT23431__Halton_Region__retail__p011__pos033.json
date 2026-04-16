@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT23431",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23431",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "316 GUELPH ST E"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "28 Nov 2001",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Paul Straus",
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1492952 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Herrmann",
+        "316 Guelph St E",
+        "Georgetown, Ontario",
+        "L7G 4B5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey 22,000 sf on about 2.726 Ac",
+      "",
+      "There is also a 4,000 sf cold storage bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 617, Lot 78",
+      "",
+      "2.73 acre"
+    ],
+    "arn_text": "24 15 030 002 03200",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT234/RT23431/photo.jpg"
+    },
+    "footer": {
+      "page_position": "534 / 613",
+      "rt_id": "RT23431"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "316 GUELPH ST E",
+    "postcode": "L7G 4B5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "11/28/2001",
+    "desc": "Retail Bldg - 1 storey 22,000 sf on about 2.726 Ac",
+    "bldg": "22,000 sf",
+    "acreage": "2.73",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 030 002 03200"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "316 GUELPH ST E"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "28 Nov 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey 22,000 sf on about 2.726 Ac",
+    "seller_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "buyer_lines": [
+      "1492952 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

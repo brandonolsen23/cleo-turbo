@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT121720",
+  "source_folder": "Kitchener-Waterloo/retail/p006",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT121720",
+      "source_folder": "Kitchener-Waterloo/retail/p006",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p006/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "907 FREDERICK ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "15 Dec 2016",
+      "price_text": "$5,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Frederick Victoria Business Centre Inc     519-743-4179"
+      ],
+      "trade_name": "Twin City Tile Co Ltd",
+      "contact_lines": [
+        "Pres: Dennis Edissi",
+        "596 Frederick St",
+        "Kitchener, Ontario",
+        "N2B 2A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2541915 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mohammad Arbab",
+        "1069 Victoria St N",
+        "Kitchener, Ontario",
+        "N2B 3C7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 928, Block B",
+      "Plan 712, Lot 6",
+      "",
+      "PIN: 22530-0017",
+      "",
+      "E side Frederick St, S of Victoria St N",
+      "",
+      "3.65 acre"
+    ],
+    "arn_text": "30 12 030 002 14700",
+    "consideration_lines": [
+      "cash: $5,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,550,000   rate: 18.0% per annum.",
+      "registered: 12/15/2016   due: 01/01/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1217/RT121720/0331_151111.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1217/RT121720/0331_151119.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1217/RT121720/0331_151130.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1217/RT121720/0331_151226.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1217/RT121720/0331_151239.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1217/RT121720/0331_151248.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "276 / 752",
+      "rt_id": "RT121720"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "907 FREDERICK ST",
+    "postcode": "N2B 2B9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/15/2016",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "3.65",
+    "consid": "5300000",
+    "cash": "5300000",
+    "debt": "",
+    "note": "",
+    "pin": "22530-0017",
+    "rollno": "30 12 030 002 14700"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "907 FREDERICK ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "15 Dec 2016",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Frederick Victoria Business Centre Inc"
+    ],
+    "buyer_lines": [
+      "2541915 Ontario Inc"
+    ],
+    "price_text": "$5,300,000"
+  }
+}

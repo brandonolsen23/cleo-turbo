@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT144988",
+  "source_folder": "Hamilton-Wentworth/retail/p005",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT144988",
+      "source_folder": "Hamilton-Wentworth/retail/p005",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p005/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "31 - 35 CANON ST E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "19 Jul 2019",
+      "price_text": "$2,038,658",
+      "note": "Portfolio; Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Giant Tiger Stores Ltd     613-521-8222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Haig",
+        "2480 Walkley Rd",
+        "Ottawa, Ontario",
+        "K1G 6A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "QAB Ontario Investments Ltd     514-593-8888"
+      ],
+      "trade_name": "Divco Ltd",
+      "contact_lines": [
+        "Attn: Jordan Aberman",
+        "8300 Pie-IX Blvd",
+        "Montreal, Quebec",
+        "H1Z 4E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-1803, Part 1",
+      "",
+      "PIN: 17161-0114",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "25 18 020 155 02800",
+    "consideration_lines": [
+      "cash: $2,038,658     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $25,000,000   rate: 25.0% per annum.",
+      "registered: 07/19/2019   due: on demand",
+      "",
+      "chargee: Rainbow Finance Corp",
+      "principal: $15,000,000   rate: 25.0% per annum.",
+      "registered: 07/19/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144988/0817_094303.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144988/0817_094311.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144988/0817_094321.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144988/0817_094351.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144988/0817_094356.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1449/RT144988/0817_094422.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "203 / 616",
+      "rt_id": "RT144988"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "31 - 35 CANON ST E",
+    "postcode": "L8L 1Z7",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "07/19/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".68",
+    "consid": "2038658",
+    "cash": "2038658",
+    "debt": "",
+    "note": "Portfolio; Sale Leaseback",
+    "pin": "17161-0114",
+    "rollno": "25 18 020 155 02800"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "31 - 35 CANON ST E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "19 Jul 2019",
+    "note": "Portfolio; Sale Leaseback",
+    "description": "",
+    "seller_lines": [
+      "Giant Tiger Stores Ltd"
+    ],
+    "buyer_lines": [
+      "QAB Ontario Investments Ltd"
+    ],
+    "price_text": "$2,038,658"
+  }
+}

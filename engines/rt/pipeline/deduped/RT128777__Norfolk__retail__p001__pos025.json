@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT128777",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT128777",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "400 SIMCOE ST"
+      ],
+      "city_region": "Middleton : Norfolk",
+      "date_text": "04 Oct 2017",
+      "price_text": "$3,100,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "RMM Norfolk Property Inc     416-741-7999"
+      ],
+      "trade_name": "OneREIT",
+      "contact_lines": [
+        "ASO: Richard Michaeloff",
+        "c/o 700 Applewood Cres, Ste 300",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "SBLP Norfolk Mall Inc     416-922-5553"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Spence",
+        "c/o Strathallen Acquisitions Inc",
+        "2 Bloor St W, Ste 1001",
+        "Toronto, Ontario",
+        "M4W 3E2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NTR, Part Lot 14",
+      "Plan 37R-8939,",
+      "Parts 1, 4, 5, 7, 8 & 10",
+      "",
+      "PIN: 50146-0165",
+      "",
+      "31.07 acre"
+    ],
+    "arn_text": "33 10 541 010 52700",
+    "consideration_lines": [
+      "cash: $3,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128777/0430_153906.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128777/0430_154025.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128777/0430_154029.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128777/0430_154122.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128777/0430_154431.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128777/0430_154434.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1287/RT128777/air1.jpg",
+        "/assets/files/RT12/RT1287/RT128777/air2.jpg",
+        "/assets/files/RT12/RT1287/RT128777/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "26 / 45",
+      "rt_id": "RT128777"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "400 SIMCOE ST",
+    "postcode": "N4G 4X1",
+    "municipality": "Middleton",
+    "region": "Norfolk",
+    "date": "10/04/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "31.07",
+    "consid": "3100000",
+    "cash": "3100000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "50146-0165",
+    "rollno": "33 10 541 010 52700"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "400 SIMCOE ST"
+    ],
+    "city_region": "Middleton : Norfolk",
+    "date_text": "04 Oct 2017",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "RMM Norfolk Property Inc"
+    ],
+    "buyer_lines": [
+      "SBLP Norfolk Mall Inc"
+    ],
+    "price_text": "$3,100,000"
+  }
+}

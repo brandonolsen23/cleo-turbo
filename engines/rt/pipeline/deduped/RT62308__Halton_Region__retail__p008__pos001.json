@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT62308",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT62308",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2211 BRANT ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "04 Jun 2008",
+      "price_text": "$5,844,767",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2211 Brant Street Inc     416-979-9996"
+      ],
+      "trade_name": "Croft Development Corp",
+      "contact_lines": [
+        "ASO: Michael Markoff",
+        "10 Queen Elizabeth Blvd, Unit 2",
+        "Toronto, Ontario",
+        "M8Z 1L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CU Real Property (4) Ltd",
+        "CU (4) GP Inc     416-367-1300"
+      ],
+      "trade_name": "Canadian Urban Equities",
+      "contact_lines": [
+        "VP: Alex Klip",
+        "20 Adelaide St E, Ste 301",
+        "Toronto, Ontario",
+        "M5C 2T6"
+      ]
+    },
+    "description_lines": [
+      "Shoppers Drug Mart - 1 storey; 13,911 sf @ $420",
+      "",
+      "30 underground parking stalls, 18 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1462, Block A",
+      "",
+      "PIN: 07158-0382",
+      "",
+      "0.95 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,844,767     assumed/vtb debt: $0",
+      "",
+      "chargee: Alterna Savings and Credit Union Ltd",
+      "principal: $2,922,383   rate: 5.0% per annum",
+      "registered: 06/04/2008   due: 06/30/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT623/RT62308/0613_104426.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT623/RT62308/0613_104429.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT623/RT62308/0613_104509.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT623/RT62308/air1.jpg",
+        "/assets/files/RT6/RT623/RT62308/air2.jpg",
+        "/assets/files/RT6/RT623/RT62308/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "352 / 613",
+      "rt_id": "RT62308"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2211 BRANT ST",
+    "postcode": "L7P 0A1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "06/04/2008",
+    "desc": "Shoppers Drug Mart - 1 storey; 13,911 sf @ $420",
+    "bldg": "13,911 sf",
+    "acreage": ".95",
+    "consid": "5844767",
+    "cash": "5844767",
+    "debt": "",
+    "note": "",
+    "pin": "07158-0382",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2211 BRANT ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "04 Jun 2008",
+    "note": "",
+    "description": "Shoppers Drug Mart - 1 storey; 13,911 sf @ $420",
+    "seller_lines": [
+      "2211 Brant Street Inc"
+    ],
+    "buyer_lines": [
+      "CU Real Property (4) Ltd",
+      "CU (4) GP Inc"
+    ],
+    "price_text": "$5,844,767"
+  }
+}

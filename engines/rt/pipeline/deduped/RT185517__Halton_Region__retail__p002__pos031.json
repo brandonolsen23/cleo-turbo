@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT185517",
+  "source_folder": "Halton_Region/retail/p002",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185517",
+      "source_folder": "Halton_Region/retail/p002",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p002/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "2357 ROYAL WINDSOR DR"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "21 Jun 2024",
+      "price_text": "$6,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1487314 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2839 Huntingdon Trail",
+        "Oakville, Ontario",
+        "L6J 6Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000908239 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adwait Desai",
+        "2357 Royal Windsor Dr",
+        "Oakville, Ontario",
+        "L6J 7X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Traf SDS, Part Lot 2",
+      "Plan 20R-2076, Part 1",
+      "",
+      "PIN: 24891-0012",
+      "",
+      "1.32 acre"
+    ],
+    "arn_text": "24 01 040 210 05810",
+    "consideration_lines": [
+      "cash: $6,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $6,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/21/2024   due: on demand",
+      "",
+      "chargee: 1487314 Ontario Inc",
+      "principal: $2,500,000",
+      "registered: 06/21/2024   due: 07/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185517/0706_085257.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185517/0706_085305.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185517/0706_085337.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185517/0706_085343.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185517/0706_085349.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "82 / 613",
+      "rt_id": "RT185517"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "2357 ROYAL WINDSOR DR",
+    "postcode": "L6J 7X6",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.32",
+    "consid": "6650000",
+    "cash": "6650000",
+    "debt": "",
+    "note": "",
+    "pin": "24891-0012",
+    "rollno": "24 01 040 210 05810"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "2357 ROYAL WINDSOR DR"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1487314 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000908239 Ontario Inc"
+    ],
+    "price_text": "$6,650,000"
+  }
+}

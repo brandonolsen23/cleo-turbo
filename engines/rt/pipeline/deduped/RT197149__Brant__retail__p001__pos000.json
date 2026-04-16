@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT197149",
+  "source_folder": "Brant/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197149",
+      "source_folder": "Brant/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "230 SHELLARD LANE"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "12 Feb 2026",
+      "price_text": "$9,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Assumption District Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3410 South Service Rd, Ste 201",
+        "Burlington, Ontario",
+        "L7N 3T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sahris Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Krishan Judge",
+        "1255 Balmoral Rd",
+        "Cambridge, Ontario",
+        "N1T 1C4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1971/RT197149/mi.pdf",
+    "site_lines": [
+      "Plan 2M-1869, Block 114",
+      "",
+      "PIN: 32074-0684",
+      "",
+      "2.71 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $9,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1911716 Ontario Inc",
+      "principal: $7,876,000   rate: 18.0% per annum.",
+      "registered: 02/12/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 195",
+      "rt_id": "RT197149"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "230 SHELLARD LANE",
+    "postcode": "N3T 0B9",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "02/12/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.71",
+    "consid": "9000000",
+    "cash": "9000000",
+    "debt": "",
+    "note": "",
+    "pin": "32074-0684",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "230 SHELLARD LANE"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "12 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Assumption District Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Sahris Inc"
+    ],
+    "price_text": "$9,000,000"
+  }
+}

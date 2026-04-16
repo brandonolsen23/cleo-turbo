@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT39292",
+  "source_folder": "Metro_Toronto/restaurant-bar/p007",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39292",
+      "source_folder": "Metro_Toronto/restaurant-bar/p007",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/restaurant-bar/p007/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "584 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Dec 2004",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "McDonald's Restaurants of Canada Ltd     416-443-1000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bill Johnson",
+        "McDonald's Place",
+        "Toronto, Ontario",
+        "M3C 3L4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1599184 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Harry Kim",
+        "109 York Mills Rd",
+        "Toronto, Ontario",
+        "M2L 1K3"
+      ]
+    },
+    "description_lines": [
+      "Restaurant - 1 storey; 4,300 sf @ $326"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 219, Part Lot 21",
+      "As in Inst No CT-301178",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 051 090 03000",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT392/RT39292/photo.jpg"
+    },
+    "footer": {
+      "page_position": "302 / 411",
+      "rt_id": "RT39292"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "584 BLOOR ST W",
+    "postcode": "M6G 1K4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/16/2004",
+    "desc": "Restaurant - 1 storey; 4,300 sf @ $326",
+    "bldg": "4,300 sf",
+    "acreage": ".1",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 051 090 03000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "584 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Dec 2004",
+    "note": "",
+    "description": "Restaurant - 1 storey; 4,300 sf @ $326",
+    "seller_lines": [
+      "McDonald's Restaurants of Canada Ltd"
+    ],
+    "buyer_lines": [
+      "1599184 Ontario Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

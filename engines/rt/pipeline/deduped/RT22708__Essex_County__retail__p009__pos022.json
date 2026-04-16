@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT22708",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22708",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "477 PELISSIER ST"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "12 Sep 2001",
+      "price_text": "$524,423",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1362350 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Robinson",
+        "472 Pelissier St",
+        "Windsor, Ontario",
+        "N9A 4K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "538133 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Fabos",
+        "275 Beals Ave",
+        "Windsor, Ontario",
+        "N9E 3Z9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1.5 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 254, Lots 14 & 15",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "37 39 040 060 03800",
+    "consideration_lines": [
+      "cash: $32,409     assumed/vtb debt: $346,038"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT227/RT22708/photo.jpg"
+    },
+    "footer": {
+      "page_position": "423 / 460",
+      "rt_id": "RT22708"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "477 PELISSIER ST",
+    "postcode": "N9A  4L2",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "09/12/2001",
+    "desc": "Retail Plaza - 1.5 storey",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "524423",
+    "cash": "32409",
+    "debt": "346038",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 040 060 03800"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "477 PELISSIER ST"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "12 Sep 2001",
+    "note": "",
+    "description": "Retail Plaza - 1.5 storey",
+    "seller_lines": [
+      "1362350 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "538133 Ontario Inc"
+    ],
+    "price_text": "$524,423"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "rt_id": "RT18859",
+  "source_folder": "Hamilton-Wentworth/retail/p012",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18859",
+      "source_folder": "Hamilton-Wentworth/retail/p012",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p012/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "103 LOCKE ST S"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "15 Sep 2000",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1280584 Ontario Inc     905-823-6305"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Liptay",
+        "1806 Willscarlett Dr",
+        "Mississauga, Ontario",
+        "L5K 2K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1426415 Ontario Inc     905-972-0566"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frances Costa",
+        "75 Melbourne St",
+        "Hamilton, Ontario",
+        "L8P 2A5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - Supermarket"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Block 2, Range 3, Lots 11-14,",
+      "James Mills Survey",
+      "As in Inst Nos CD-180253, CD-299419,",
+      "CD-317782 & CD-444756",
+      "",
+      "SE corner at Jackson St W",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "25 18 010 095 51930",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $499,500",
+      "",
+      "chargee: 2541806 Ontario Ltd",
+      "principal: $783,200   rate: 7.5% per annum.",
+      "registered: 11/14/2024   due: 11/14/2028",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $990,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/15/2024   due: on demand",
+      "",
+      "chargee: Canadian Inperial Bank of Commerce",
+      "principal: $255,695   rate: Prime plus 5.0% per annum.",
+      "registered: 11/17/2017   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $680,000   rate: Prime plus 10.0% per annum.",
+      "registered: 11/15/2024   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $680,000   rate: 4.84% per annum.",
+      "registered: 11/15/2024   due: 11/15/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT188/RT18859/photo.jpg"
+    },
+    "footer": {
+      "page_position": "570 / 616",
+      "rt_id": "RT18859"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "103 LOCKE ST S",
+    "postcode": "L8P 4A6",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "09/15/2000",
+    "desc": "Retail Bldg - Supermarket",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "499500",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 010 095 51930"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "103 LOCKE ST S"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "15 Sep 2000",
+    "note": "",
+    "description": "Retail Bldg - Supermarket",
+    "seller_lines": [
+      "1280584 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1426415 Ontario Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

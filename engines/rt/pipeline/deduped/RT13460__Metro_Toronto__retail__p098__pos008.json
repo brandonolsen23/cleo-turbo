@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT13460",
+  "source_folder": "Metro_Toronto/retail/p098",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13460",
+      "source_folder": "Metro_Toronto/retail/p098",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p098/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3085 BLOOR ST W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "30 Nov 1998",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "W.A. McDowell (Toronto) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Craig Bennett",
+        "c/o Gardiner, Roberts",
+        "40 King St W, Suite 3100",
+        "Toronto, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1308684 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Mantella",
+        "1 Greensboro Dr",
+        "Rexdale, Ontario",
+        "M9W 1C8"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership",
+      "",
+      "This property sold in Oct 98 for $1,075,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2100, Block 2",
+      "",
+      "0.76 acre"
+    ],
+    "arn_text": "19 19 016 530 00900",
+    "consideration_lines": [
+      "cash: $1,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,000,000   rate: 18.0% per annum.",
+      "registered: 05/22/2018   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $1,950,000   rate: 4.0% per annum.",
+      "registered: 05/31/2018   due: 06/30/2023",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,300,000   rate: Prime plus 6.0% per annum.",
+      "registered: 05/31/2018   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,000,000   rate: 18.0% per annum.",
+      "registered: 05/31/2018   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $5,000,000   rate: 0% for the first year, then 3.5% per annum thereafter.",
+      "registered: 04/19/2018   due: 04/18/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4859 / 4952",
+      "rt_id": "RT13460"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3085 BLOOR ST W",
+    "postcode": "M8X 1C9",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "11/30/1998",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": ".76",
+    "consid": "1900000",
+    "cash": "1900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 016 530 00900"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3085 BLOOR ST W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "30 Nov 1998",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "W.A. McDowell (Toronto) Ltd"
+    ],
+    "buyer_lines": [
+      "1308684 Ontario Ltd"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

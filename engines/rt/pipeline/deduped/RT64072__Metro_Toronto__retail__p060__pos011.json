@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT64072",
+  "source_folder": "Metro_Toronto/retail/p060",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64072",
+      "source_folder": "Metro_Toronto/retail/p060",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p060/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "5246 YONGE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "15 Sep 2008",
+      "price_text": "$4,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "21st Century Developments Ltd",
+        "Edelstein Properties Inc     416-744-0123"
+      ],
+      "trade_name": "Discount and Car Truck Rentals",
+      "contact_lines": [
+        "Attn: Bernard Ceifets",
+        "720 Arrow Rd",
+        "Toronto, Ontario",
+        "M9M 2M1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1764204 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yo Sup Lee",
+        "21 Abitibi Ave",
+        "Toronto, Ontario",
+        "M2M 2V2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 4,600 sf @ $1,022",
+      "",
+      "Leased by Colour Your World"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3603, Lot 1",
+      "",
+      "PIN: 10143-0147",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "19 08 072 245 02300",
+    "consideration_lines": [
+      "cash: $4,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Agricultural Cooperative Federation",
+      "principal: $5,203,000   rate: 9.0% per annum",
+      "registered: 09/18/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT640/RT64072/0928_102725.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT640/RT64072/0928_102744.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT640/RT64072/0928_102759.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT640/RT64072/air1.jpg",
+        "/assets/files/RT6/RT640/RT64072/air2.jpg",
+        "/assets/files/RT6/RT640/RT64072/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2962 / 4952",
+      "rt_id": "RT64072"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "5246 YONGE ST",
+    "postcode": "M2N 5P6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "09/15/2008",
+    "desc": "Retail Bldg - 1 storey; 4,600 sf @ $1,022",
+    "bldg": "4,600 sf",
+    "acreage": ".33",
+    "consid": "4700000",
+    "cash": "4700000",
+    "debt": "",
+    "note": "",
+    "pin": "10143-0147",
+    "rollno": "19 08 072 245 02300"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "5246 YONGE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "15 Sep 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 4,600 sf @ $1,022",
+    "seller_lines": [
+      "21st Century Developments Ltd",
+      "Edelstein Properties Inc"
+    ],
+    "buyer_lines": [
+      "1764204 Ontario Inc"
+    ],
+    "price_text": "$4,700,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT103711",
+  "source_folder": "Cochrane/all/p102",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103711",
+      "source_folder": "Cochrane/all/p102",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p102/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 CLEARVIEW AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Jul 2014",
+      "price_text": "$580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Artesia Peaks Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lubomyr Chabursky",
+        "32 Clearview Ave",
+        "Ottawa, Ontario",
+        "K1Y 2K5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 219",
+      "Part Lot 12, E/S Cowley Ave",
+      "As in Inst No CR-514007",
+      "",
+      "PIN: 04031-0028",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 073 601 80200",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $432,000   rate: 2.99% per annum.",
+      "registered: 07/15/2014   due: 07/15/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5062 / 10920",
+      "rt_id": "RT103711"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "44 CLEARVIEW AVE",
+    "postcode": "K1Y 2K5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/15/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "",
+    "pin": "04031-0028",
+    "rollno": "06 14 073 601 80200"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "44 CLEARVIEW AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Jul 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Artesia Peaks Corp"
+    ],
+    "price_text": "$580,000"
+  }
+}

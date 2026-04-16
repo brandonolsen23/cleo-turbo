@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT39577",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39577",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "366 WALMER RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "14 Jan 2005",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "FivePlex - 3 storey; 5 units @ $260,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 930, Lot 31",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 04 053 340 04300",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT395/RT39577/air1.jpg",
+        "/assets/files/RT3/RT395/RT39577/air2.jpg",
+        "/assets/files/RT3/RT395/RT39577/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT395/RT39577/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4494 / 6031",
+      "rt_id": "RT39577"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "366 WALMER RD",
+    "postcode": "M5R 2Y4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/14/2005",
+    "desc": "FivePlex - 3 storey; 5 units @ $260,000",
+    "bldg": "5 units",
+    "acreage": ".2",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 053 340 04300"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "366 WALMER RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "14 Jan 2005",
+    "note": "",
+    "description": "FivePlex - 3 storey; 5 units @ $260,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

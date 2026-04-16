@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT22147",
+  "source_folder": "Durham_Region/retail/p010",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22147",
+      "source_folder": "Durham_Region/retail/p010",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p010/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "875 - 893 BAYLY ST"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "20 Jul 2001",
+      "price_text": "$1,040,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "839258 Ontario Inc     905-856-4011"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sergio DiBiasio",
+        "Uni-Tech Windows Manufacturers Inc",
+        "260 Jevlan Dr",
+        "Woodbridge, Ontario",
+        "L4L 8B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1473714 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Azim Popatia",
+        "875-893 Bayly St",
+        "Pickering, Ontario",
+        "L1W 3P6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 8 units 9,541 sf @ $109",
+      "",
+      "NOI: $111,202"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-5876, Part 1",
+      "",
+      "SW corner at West Shore Blvd",
+      "",
+      "0.95 acre"
+    ],
+    "arn_text": "18 01 010 027 00300",
+    "consideration_lines": [
+      "cash: $1,040,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Zoran RE Ltd: Louis Loreti, 905-669-4400"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT221/RT22147/photo.jpg"
+    },
+    "footer": {
+      "page_position": "451 / 506",
+      "rt_id": "RT22147"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "875 - 893 BAYLY ST",
+    "postcode": "L1W 3P6",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "07/20/2001",
+    "desc": "Retail Plaza - 1 storey; 8 units 9,541 sf @ $109",
+    "bldg": "9,541 sf",
+    "acreage": ".95",
+    "consid": "1040000",
+    "cash": "1040000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 01 010 027 00300"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "875 - 893 BAYLY ST"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "20 Jul 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 8 units 9,541 sf @ $109",
+    "seller_lines": [
+      "839258 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1473714 Ontario Ltd"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT188025",
+  "source_folder": "Metro_Toronto/retail/p011",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188025",
+      "source_folder": "Metro_Toronto/retail/p011",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p011/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "595 SHEPPARD AVE E",
+        "UNIT 105"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "13 Jun 2024",
+      "price_text": "$955,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2728710 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "170 Steelwell Rd, Unit 200",
+        "Brampton, Ontario",
+        "L6T 5T3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MJ&XH Holding Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jian Ma",
+        "595 Sheppard Ave E, Ste 105",
+        "Toronto, Ontario",
+        "M2K 0G3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2762",
+      "Level 1, Units 5, 11 & 27",
+      "",
+      "PIN: 76762-0005 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $955,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $955,000   rate: Prime plus 6.0% per annum.",
+      "registered: 06/13/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188025/1027_093339.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188025/1027_093350.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188025/1027_093352.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188025/1027_093517.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188025/1027_093519.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188025/1027_093549.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "521 / 4952",
+      "rt_id": "RT188025"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "595 SHEPPARD AVE E, UNIT 105",
+    "postcode": "M2K 0G3",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "06/13/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "955000",
+    "cash": "955000",
+    "debt": "",
+    "note": "",
+    "pin": "76762-0005+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "595 SHEPPARD AVE E",
+      "UNIT 105"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "13 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2728710 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "MJ&XH Holding Inc"
+    ],
+    "price_text": "$955,000"
+  }
+}

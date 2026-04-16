@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT175912",
+  "source_folder": "Durham_Region/retail/p003",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175912",
+      "source_folder": "Durham_Region/retail/p003",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p003/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "1411 KING ST E"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "28 Feb 2023",
+      "price_text": "$2,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "EE Sunrise Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "756 Ledbury Cres",
+        "Mississauga, Ontario",
+        "L5V 2R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "G & M Happy Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Guirguis Awadalla",
+        "1620 Sandhurst Cres",
+        "Pickering, Ontario",
+        "L1V 6R5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 713, Lot 47",
+      "",
+      "PIN: 26587-0010",
+      "",
+      "0.64 acre"
+    ],
+    "arn_text": "18 17 010 070 12600",
+    "consideration_lines": [
+      "cash: $2,675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: EE Sunrise Ltd",
+      "principal: $1,775,000   rate: 4.75% per annum.",
+      "registered: 02/28/2023   due: 02/28/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175912/0310_095215.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175912/0310_095216.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175912/0310_095253.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175912/0310_095448.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "108 / 506",
+      "rt_id": "RT175912"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "1411 KING ST E",
+    "postcode": "L1E 2J5",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "02/28/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".64",
+    "consid": "2675000",
+    "cash": "2675000",
+    "debt": "",
+    "note": "",
+    "pin": "26587-0010",
+    "rollno": "18 17 010 070 12600"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "1411 KING ST E"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "28 Feb 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "EE Sunrise Ltd"
+    ],
+    "buyer_lines": [
+      "G & M Happy Holdings Inc"
+    ],
+    "price_text": "$2,675,000"
+  }
+}

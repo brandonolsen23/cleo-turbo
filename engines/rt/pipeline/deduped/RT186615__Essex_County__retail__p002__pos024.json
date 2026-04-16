@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT186615",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186615",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "119 ERIE ST N"
+      ],
+      "city_region": "Leamington : Essex County",
+      "date_text": "26 Jul 2024",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "939457 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "128 Erie St S",
+        "Leamington, Ontario",
+        "N8H 3H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Casabella Clothing Boutique Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nancy Friesen",
+        "909 Mersea Rd 8",
+        "Leamington, Ontario",
+        "N8H 3V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Mersea, Part Lot 6",
+      "Plan 356, Part Lots 1-5",
+      "As in Inst No R-1162020",
+      "",
+      "PIN: 75129-0166",
+      "",
+      "1.19 acre"
+    ],
+    "arn_text": "37 06 040 000 07400",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "75 / 460",
+      "rt_id": "RT186615"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "119 ERIE ST N",
+    "postcode": "N8H 3A3",
+    "municipality": "Leamington",
+    "region": "Essex County",
+    "date": "07/26/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.19",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "75129-0166",
+    "rollno": "37 06 040 000 07400"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "119 ERIE ST N"
+    ],
+    "city_region": "Leamington : Essex County",
+    "date_text": "26 Jul 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "939457 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Casabella Clothing Boutique Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

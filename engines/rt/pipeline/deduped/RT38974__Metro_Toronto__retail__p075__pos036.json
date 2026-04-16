@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT38974",
+  "source_folder": "Metro_Toronto/retail/p075",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38974",
+      "source_folder": "Metro_Toronto/retail/p075",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p075/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "1176 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Dec 2004",
+      "price_text": "$1,275,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Loblaw Properties Ltd     416-922-8500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jane Marshall",
+        "22 St Clair Ave W, 2nd Flr",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PCL Holdings Ltd     416-480-0945"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mary Chiesa",
+        "111 Davisville Ave, Ste EX-01",
+        "Toronto, Ontario",
+        "M4S 1G5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-1307, Part Lots 101-103",
+      "As in Inst No WH-66626",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 033 620 02400",
+    "consideration_lines": [
+      "cash: $1,275,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT389/RT38974/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3737 / 4952",
+      "rt_id": "RT38974"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "1176 ST CLAIR AVE W",
+    "postcode": "M6E 1B4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/03/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "1275000",
+    "cash": "1275000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 033 620 02400"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "1176 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Dec 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "buyer_lines": [
+      "PCL Holdings Ltd"
+    ],
+    "price_text": "$1,275,000"
+  }
+}

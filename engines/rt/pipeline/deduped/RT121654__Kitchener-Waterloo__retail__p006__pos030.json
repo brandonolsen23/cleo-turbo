@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT121654",
+  "source_folder": "Kitchener-Waterloo/retail/p006",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT121654",
+      "source_folder": "Kitchener-Waterloo/retail/p006",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p006/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "8 MAIN ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "30 Nov 2016",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Lanna Investment Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Svetlana Fursa",
+        "29 Charles St",
+        "Georgetown, Ontario",
+        "L7G 2Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-11176, Part 1",
+      "",
+      "PIN: 03815-0125",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "30 06 040 016 04100",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $825,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 11/30/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1216/RT121654/0331_093456a.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1216/RT121654/0331_093456b.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1216/RT121654/0331_093457.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1216/RT121654/0331_093516.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "281 / 752",
+      "rt_id": "RT121654"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "8 MAIN ST",
+    "postcode": "N1R 1V4",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "11/30/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "03815-0125",
+    "rollno": "30 06 040 016 04100"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "8 MAIN ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "30 Nov 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Lanna Investment Group Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

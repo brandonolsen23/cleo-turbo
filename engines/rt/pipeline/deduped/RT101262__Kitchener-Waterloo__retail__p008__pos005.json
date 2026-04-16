@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT101262",
+  "source_folder": "Kitchener-Waterloo/retail/p008",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT101262",
+      "source_folder": "Kitchener-Waterloo/retail/p008",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p008/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "405 WEBER ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "25 Jun 2014",
+      "price_text": "$1,197,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "CIRP Management Ltd     416-214-3350"
+      ],
+      "trade_name": "Abacus Real Estate Investment Ltd",
+      "contact_lines": [
+        "Pres: John Weiler",
+        "Suite 2430, PO Box 519",
+        "TD Canada-Trust Tower",
+        "161 Bay St",
+        "Toronto, Ontario",
+        "M5J 2S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "FC One Retail Portfolio GP Inc     416-635-0221"
+      ],
+      "trade_name": "Firm Capital Corp",
+      "contact_lines": [
+        "Attn: Robert McKee",
+        "163 Cartwright Ave",
+        "Toronto, Ontario",
+        "M6A 1V5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Part Lot 7",
+      "Plan 58R-10451, Parts 1-3",
+      "Plan 58R-6871, Parts 1 & 5",
+      "Except:",
+      "Plan 58R-7277, Part 1",
+      "",
+      "PIN: 22278-0055",
+      "",
+      "S side Weber St N, E of King St N",
+      "",
+      "0.56 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,197,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1012/RT101262/0920_150639.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1012/RT101262/0920_150704.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1012/RT101262/0920_150705.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1012/RT101262/0920_150741.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1012/RT101262/0920_150742.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "356 / 752",
+      "rt_id": "RT101262"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "405 WEBER ST N",
+    "postcode": "N2J 4M6",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "06/25/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".56",
+    "consid": "1197000",
+    "cash": "1197000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "22278-0055",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "405 WEBER ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "25 Jun 2014",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "CIRP Management Ltd"
+    ],
+    "buyer_lines": [
+      "FC One Retail Portfolio GP Inc"
+    ],
+    "price_text": "$1,197,000"
+  }
+}

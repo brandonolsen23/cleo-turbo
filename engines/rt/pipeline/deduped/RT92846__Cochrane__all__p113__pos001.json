@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT92846",
+  "source_folder": "Cochrane/all/p113",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT92846",
+      "source_folder": "Cochrane/all/p113",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p113/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "79 MONTREAL RD"
+      ],
+      "city_region": "Vanier : Ottawa-Carleton",
+      "date_text": "24 May 2013",
+      "price_text": "$735,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "8520623 Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Georges Nassif",
+        "81 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1L 6E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44, Part Lot 7",
+      "As in Inst No N-469264",
+      "",
+      "PIN: 04236-0167",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 09 210 101 23500",
+    "consideration_lines": [
+      "cash: $735,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $700,000   rate: Prime plus 6.0% per annum.",
+      "registered: 05/24/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT928/RT92846/0727_082535.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT928/RT92846/0727_082547.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT928/RT92846/0727_082614.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5602 / 10920",
+      "rt_id": "RT92846"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "79 MONTREAL RD",
+    "postcode": "K1L 6E8",
+    "municipality": "Vanier",
+    "region": "Ottawa-Carleton",
+    "date": "05/24/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "735000",
+    "cash": "735000",
+    "debt": "",
+    "note": "",
+    "pin": "04236-0167",
+    "rollno": "06 09 210 101 23500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "79 MONTREAL RD"
+    ],
+    "city_region": "Vanier : Ottawa-Carleton",
+    "date_text": "24 May 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "8520623 Canada Corp"
+    ],
+    "price_text": "$735,000"
+  }
+}

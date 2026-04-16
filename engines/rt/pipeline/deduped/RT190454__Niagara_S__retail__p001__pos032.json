@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT190454",
+  "source_folder": "Niagara_S/retail/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190454",
+      "source_folder": "Niagara_S/retail/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "4554 QUEEN ST"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "21 Feb 2025",
+      "price_text": "$980,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000423274 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "29 Elmsley Dr",
+        "Richmond Hill, Ontario",
+        "L4C 8N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Top Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Abed Daraeifar",
+        "8171 Yonge St, Unit 102",
+        "Thornhill, Ontario",
+        "L3T 2C6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 999-1000, Town of Niagara Falls",
+      "Block P, Part Lot 1",
+      "As in Inst No RO-524493",
+      "",
+      "PIN: 64328-0063",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "27 25 010 004 08000",
+    "consideration_lines": [
+      "cash: $980,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Maysa Trading Inc",
+      "principal: $1,005,000   rate: 7.00% per annum.",
+      "registered: 02/21/2025   due: 02/21/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 324",
+      "rt_id": "RT190454"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "4554 QUEEN ST",
+    "postcode": "L2E 2L5",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "02/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "980000",
+    "cash": "980000",
+    "debt": "",
+    "note": "",
+    "pin": "64328-0063",
+    "rollno": "27 25 010 004 08000"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "4554 QUEEN ST"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "21 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000423274 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Top Holdings Corp"
+    ],
+    "price_text": "$980,000"
+  }
+}

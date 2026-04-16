@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT103192",
+  "source_folder": "Brant/retail/p003",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103192",
+      "source_folder": "Brant/retail/p003",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p003/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "84 - 88 1/2 COLBORNE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "31 Jul 2014",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "AMCK Capital Investments Inc     519-756-5385"
+      ],
+      "trade_name": "York Property Management",
+      "contact_lines": [
+        "VP: Gabriel Kirchberger",
+        "c/o 325 West St",
+        "Brantford, Ontario",
+        "N3R 3V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "7983719 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Qi Hang Chen",
+        "84 1/2 Colborne St",
+        "Brantford, Ontario",
+        "N3T 2G5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Brantford City Plan, Sept 7, 1892",
+      "Part Lots 9 & 10,",
+      "N/S Colborne St",
+      "",
+      "PIN: 32143-0028",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "29 06 020 001 01900",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: AMCK Capital Investments Inc",
+      "principal: $450,000   rate: 5.5% per annum.",
+      "registered: 07/31/2014   due: 07/31/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1031/RT103192/0216_082432.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1031/RT103192/0216_082443.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1031/RT103192/0216_082510.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1031/RT103192/0216_082526.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "105 / 195",
+      "rt_id": "RT103192"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "84 - 88 1/2 COLBORNE ST",
+    "postcode": "N3T 2G5",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "07/31/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "32143-0028",
+    "rollno": "29 06 020 001 01900"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "84 - 88 1/2 COLBORNE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "31 Jul 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "AMCK Capital Investments Inc"
+    ],
+    "buyer_lines": [
+      "7983719 Canada Ltd"
+    ],
+    "price_text": "$650,000"
+  }
+}

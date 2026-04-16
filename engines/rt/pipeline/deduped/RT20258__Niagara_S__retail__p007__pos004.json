@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20258",
+  "source_folder": "Niagara_S/retail/p007",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20258",
+      "source_folder": "Niagara_S/retail/p007",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p007/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "871 NIAGARA ST"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "01 Dec 2000",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1049548 Ontario Inc     905-734-3526"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Venita Robbins",
+        "2 Martha Ct",
+        "Welland, Ontario",
+        "L3C 4N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "North Welland Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walter Gromak",
+        "12 Allan Pk Rd",
+        "Etobicoke, Ontario",
+        "M8Z 3T1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 37,500 sf @ $64"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Twp Lot 231",
+      "As in Inst Nos RO-514717, RO-482931,",
+      "RO-231019 & RO-162923",
+      "",
+      "W side 150m S of Quaker Rd",
+      "",
+      "3.25 acre"
+    ],
+    "arn_text": "27 19 010 001 01700",
+    "consideration_lines": [
+      "cash: $1,161,197     assumed/vtb debt: $1,238,804"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20258/photo.jpg"
+    },
+    "footer": {
+      "page_position": "305 / 324",
+      "rt_id": "RT20258"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "871 NIAGARA ST",
+    "postcode": "L3C 1M4",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "12/01/2000",
+    "desc": "Retail Plaza - 37,500 sf @ $64",
+    "bldg": "37,500 sf",
+    "acreage": "3.25",
+    "consid": "2400000",
+    "cash": "1161197",
+    "debt": "1238804",
+    "note": "",
+    "pin": "",
+    "rollno": "27 19 010 001 01700"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "871 NIAGARA ST"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "01 Dec 2000",
+    "note": "",
+    "description": "Retail Plaza - 37,500 sf @ $64",
+    "seller_lines": [
+      "1049548 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "North Welland Developments Ltd"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

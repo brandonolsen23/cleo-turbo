@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT28854",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28854",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "88 ONTARIO ST"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "29 Jan 2003",
+      "price_text": "$1,025,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1267326 Ontario Ltd     416-244-7061"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Lloyd Infuso",
+        "50 Braywin Dr",
+        "Toronto, Ontario",
+        "M9P 2P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2016789 Ontario Inc     905-837-2289"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nasroddin Ahmar",
+        "1706 Woodside Lane",
+        "Pickering, Ontario",
+        "L1V 4W3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 11,282 sf @ $91"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-842, Parts 1 & 2",
+      "",
+      "0.84 acre"
+    ],
+    "arn_text": "24 09 010 003 67800",
+    "consideration_lines": [
+      "cash: $1,025,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "RE/MAX Realty Specialists: Naji Nader-Nejad, 905-272-3434"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT288/RT28854/photo.jpg"
+    },
+    "footer": {
+      "page_position": "499 / 613",
+      "rt_id": "RT28854"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "88 ONTARIO ST",
+    "postcode": "L9T 2T1",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "01/29/2003",
+    "desc": "Retail Plaza - 1 storey; 4 units 11,282 sf @ $91",
+    "bldg": "11,282 sf",
+    "acreage": ".84",
+    "consid": "1025000",
+    "cash": "1025000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 09 010 003 67800"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "88 ONTARIO ST"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "29 Jan 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 11,282 sf @ $91",
+    "seller_lines": [
+      "1267326 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2016789 Ontario Inc"
+    ],
+    "price_text": "$1,025,000"
+  }
+}

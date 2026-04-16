@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT67330",
+  "source_folder": "York_Region/industrial/p029",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67330",
+      "source_folder": "York_Region/industrial/p029",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p029/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "10475 KEELE ST"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "16 Jun 2009",
+      "price_text": "$4,677,380",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Lafarge Properties Inc     905-738-7070"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Russell Hopper",
+        "Lafarge Canada Inc",
+        "Aggregates and Concrete Group",
+        "Eastern Division",
+        "7880 Keele St",
+        "Concord, Ontario",
+        "L4K 4G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Coco Paving Inc     519-948-7133"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Virginia Coco",
+        "6725 South Service Rd",
+        "Windsor, Ontario",
+        "N8N 2M1"
+      ]
+    },
+    "description_lines": [
+      "Asphalt Plant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lots 23 & 24",
+      "Plan 65R-4353, Parts 2 & 3",
+      "",
+      "PIN: 03343-0317",
+      "",
+      "10.49 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,677,380     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $200,000,000   rate: 25% per annum",
+      "registered: 06/16/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT673/RT67330/air1.jpg",
+        "/assets/files/RT6/RT673/RT67330/air2.jpg",
+        "/assets/files/RT6/RT673/RT67330/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1402 / 2269",
+      "rt_id": "RT67330"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "10475 KEELE ST",
+    "postcode": "L6A 3Y9",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/16/2009",
+    "desc": "Asphalt Plant",
+    "bldg": "",
+    "acreage": "10.49",
+    "consid": "4677380",
+    "cash": "4677380",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "03343-0317",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "10475 KEELE ST"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "16 Jun 2009",
+    "note": "Portfolio",
+    "description": "Asphalt Plant",
+    "seller_lines": [
+      "Lafarge Properties Inc"
+    ],
+    "buyer_lines": [
+      "Coco Paving Inc"
+    ],
+    "price_text": "$4,677,380"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT81014",
+  "source_folder": "Metro_Toronto/retail/p046",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81014",
+      "source_folder": "Metro_Toronto/retail/p046",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p046/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "642 MOUNT PLEASANT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Sep 2011",
+      "price_text": "$1,311,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1665637 Ontario Ltd     416-733-0145"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marian Berinzon",
+        "312 Spring Garden Ave",
+        "Toronto, Ontario",
+        "M2N 3H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2298331 Ontario Ltd     905-940-4670"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ngan Kam Chan",
+        "37 Landmark Ct",
+        "Markham, Ontario",
+        "L3R 9N7"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 1,780 sf @ $737",
+      "",
+      "Leased to Second Cup",
+      "",
+      "Part of the 15,000 sf (11 unit) retail ground floor of a 10 storey residential condo bldg.",
+      "",
+      "Last transferred in Sep 2009 for $931,989"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2024",
+      "Level 1, Unit 4",
+      "Level C, Unit 17",
+      "Level B, Unit 35",
+      "",
+      "PIN: 13024-0004 +"
+    ],
+    "arn_text": "19 04 103 540 02504 +",
+    "consideration_lines": [
+      "cash: $1,311,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $800,000   rate: Prime plus 6.25% per annum",
+      "registered: 09/27/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81014/1016_120306.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81014/1016_120317.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2293 / 4952",
+      "rt_id": "RT81014"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "642 MOUNT PLEASANT RD",
+    "postcode": "M4S 2N1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/27/2011",
+    "desc": "Retail Condo - 1,780 sf @ $737",
+    "bldg": "1,780 sf",
+    "acreage": "",
+    "consid": "1311000",
+    "cash": "1311000",
+    "debt": "",
+    "note": "",
+    "pin": "13024-0004+",
+    "rollno": "19 04 103 540 02504+"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "642 MOUNT PLEASANT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Sep 2011",
+    "note": "",
+    "description": "Retail Condo - 1,780 sf @ $737",
+    "seller_lines": [
+      "1665637 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2298331 Ontario Ltd"
+    ],
+    "price_text": "$1,311,000"
+  }
+}

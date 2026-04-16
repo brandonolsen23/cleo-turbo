@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT173504",
+  "source_folder": "Leeds/all/p008",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173504",
+      "source_folder": "Leeds/all/p008",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p008/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "7323 BRUSH RD"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "21 Nov 2022",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2669468 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jodi Roelands",
+        "5894 Douglas Line",
+        "Lambton Shores, Ontario",
+        "N0N 1J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 12, Part Lot 27",
+      "",
+      "PIN: 43089-0011",
+      "",
+      "155.21 acre"
+    ],
+    "arn_text": "38 35 340 030 25200",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,600,000   rate: Prime plus 0% per annum.",
+      "registered: 11/21/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "371 / 1916",
+      "rt_id": "RT173504"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "7323 BRUSH RD",
+    "postcode": "N0N 1J5",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "11/21/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "155.21",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "",
+    "pin": "43089-0011",
+    "rollno": "38 35 340 030 25200"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "7323 BRUSH RD"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "21 Nov 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2669468 Ontario Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

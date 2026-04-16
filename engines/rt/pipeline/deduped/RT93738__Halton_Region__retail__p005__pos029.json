@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT93738",
+  "source_folder": "Halton_Region/retail/p005",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93738",
+      "source_folder": "Halton_Region/retail/p005",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p005/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "115 GEORGE ST"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "05 Jul 2013",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Cathmark Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edward Barr",
+        "117 George St",
+        "Oakville, Ontario",
+        "L6J 3B8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 1,400 sf @ $857",
+      "",
+      "700 sf ground - leased to UPS Store",
+      "700 sf 2nd floor - leased to Heather Hogan Photography"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1, Block 7",
+      "Part Lot A",
+      "As in Inst No 607765",
+      "",
+      "PIN: 24813-0065",
+      "",
+      "E side George St, S of Church St",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "24 01 030 020 04400",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "230 / 613",
+      "rt_id": "RT93738"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "115 GEORGE ST",
+    "postcode": "L6J 0A2",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "07/05/2013",
+    "desc": "Retail Bldg - 2 storey; 1,400 sf @ $857",
+    "bldg": "1,400 sf",
+    "acreage": ".06",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "24813-0065",
+    "rollno": "24 01 030 020 04400"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "115 GEORGE ST"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "05 Jul 2013",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 1,400 sf @ $857",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Cathmark Investments Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -119,6 +119,7 @@ function SellOpportunitiesTab() {
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Property</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Region</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Seller</th>
+              <th className="text-right px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Expected Price</th>
               <th className="text-right px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Deal Value</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Status</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Owner</th>
@@ -147,7 +148,10 @@ function SellOpportunitiesTab() {
                   </Text>
                 </td>
                 <td className="px-4 py-3 text-right">
-                  <Text size="2" weight="medium">{formatCurrency(opp.deal_value)}</Text>
+                  <Text size="2">{formatCurrency(opp.expected_price)}</Text>
+                </td>
+                <td className="px-4 py-3 text-right">
+                  <Text size="2" weight="medium" style={{ color: "var(--jade-11)" }}>{formatCurrency(opp.deal_value)}</Text>
                 </td>
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-1.5">
@@ -171,7 +175,7 @@ function SellOpportunitiesTab() {
             ))}
             {data && data.results.length === 0 && (
               <tr>
-                <td colSpan={7} className="px-4 py-8 text-center">
+                <td colSpan={8} className="px-4 py-8 text-center">
                   <Text size="2" style={{ color: "var(--gray-9)" }}>No sell opportunities found.</Text>
                 </td>
               </tr>
@@ -237,15 +241,30 @@ function BuyMandatesTab() {
     fetchApi<BrowseResponse<BuyMandate>>("/buy-mandates", params).then(setData);
   }, [page, status, owner, staleOnly]);
 
+  const PRIORITY_COLORS: Record<string, "jade" | "blue" | "gray"> = {
+    primary: "jade", secondary: "blue", exploratory: "gray",
+  };
+  const PRIORITY_LABELS: Record<string, string> = {
+    primary: "Primary", secondary: "Secondary", exploratory: "Exploratory",
+  };
+  const TIMELINE_LABELS: Record<string, string> = {
+    immediate: "Now", near_term: "3–6mo", medium: "6–12mo", long_term: "12mo+",
+  };
+
   function formatCriteriaSummary(criteria: BuyMandate["criteria"]): string {
     const parts: string[] = [];
     if (criteria?.asset_classes?.length) parts.push(criteria.asset_classes.join(", "));
     if (criteria?.regions?.length) parts.push(criteria.regions.join(", "));
-    if (criteria?.cities?.length) parts.push(criteria.cities.join(", "));
-    if (criteria?.price_min || criteria?.price_max) {
-      const min = criteria.price_min ? formatCurrency(criteria.price_min) : "any";
-      const max = criteria.price_max ? formatCurrency(criteria.price_max) : "any";
-      parts.push(`${min}–${max}`);
+    else if (criteria?.cities?.length) parts.push(criteria.cities.join(", "));
+    if (criteria?.cap_rate_min || criteria?.cap_rate_max) {
+      const min = criteria.cap_rate_min ?? "?";
+      const max = criteria.cap_rate_max ?? "?";
+      parts.push(`${min}–${max}% cap`);
+    }
+    if (criteria?.price_max) {
+      parts.push(`≤ ${formatCurrency(criteria.price_max)}`);
+    } else if (criteria?.price_min) {
+      parts.push(`≥ ${formatCurrency(criteria.price_min)}`);
     }
     return parts.length > 0 ? parts.join(" · ") : "No criteria set";
   }
@@ -299,6 +318,7 @@ function BuyMandatesTab() {
           <thead>
             <tr className="bg-[var(--gray-2)]">
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Buyer</th>
+              <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Priority</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Criteria</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Status</th>
               <th className="text-left px-4 py-2.5 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Owner</th>
@@ -319,6 +339,20 @@ function BuyMandatesTab() {
                   <Text size="1" className="block" style={{ color: "var(--gray-9)" }}>
                     {mandate.id}
                   </Text>
+                </td>
+                <td className="px-4 py-3">
+                  <div className="flex items-center gap-1.5">
+                    {mandate.criteria?.priority && (
+                      <Badge size="1" color={PRIORITY_COLORS[mandate.criteria.priority] || "gray"} variant="outline">
+                        {PRIORITY_LABELS[mandate.criteria.priority] || mandate.criteria.priority}
+                      </Badge>
+                    )}
+                    {mandate.criteria?.timeline && mandate.criteria.timeline !== "immediate" && (
+                      <Text size="1" style={{ color: "var(--gray-9)" }}>
+                        {TIMELINE_LABELS[mandate.criteria.timeline] || mandate.criteria.timeline}
+                      </Text>
+                    )}
+                  </div>
                 </td>
                 <td className="px-4 py-3">
                   <Text size="2" style={{ color: "var(--gray-11)" }}>
@@ -347,7 +381,7 @@ function BuyMandatesTab() {
             ))}
             {data && data.results.length === 0 && (
               <tr>
-                <td colSpan={5} className="px-4 py-8 text-center">
+                <td colSpan={6} className="px-4 py-8 text-center">
                   <Text size="2" style={{ color: "var(--gray-9)" }}>No buy mandates found.</Text>
                 </td>
               </tr>

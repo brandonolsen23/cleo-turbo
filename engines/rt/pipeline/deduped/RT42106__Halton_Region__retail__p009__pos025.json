@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT42106",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42106",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "235 GUELPH ST"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "27 May 2005",
+      "price_text": "$8,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RioCan Holdings (Halton Hills) Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sunstone Halton Hills Holding Corp     604-681-5959"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darren Latoski",
+        "925 West Georgia St, Ste 910",
+        "Vancouver, BC",
+        "V6C 3L2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 units 70,228 sf @ $123",
+      "",
+      "Anchored by a Food Basics and a TD/Canada Trust."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-3717, Parts 1 & 2",
+      "",
+      "5.84 acre"
+    ],
+    "arn_text": "24 15 020 003 08100",
+    "consideration_lines": [
+      "cash: $8,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: RioCan Holdings (Halton Hills) Inc",
+      "principal: $2,937,305   rate: 1.25% per annum",
+      "registered: 05/27/2005   due: 05/01/2012"
+    ],
+    "broker_lines": [
+      "Brascan Financial:",
+      "Matt Picken & Geoff Conway, 416-359-2758"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT421/RT42106/air1.jpg",
+        "/assets/files/RT4/RT421/RT42106/air2.jpg",
+        "/assets/files/RT4/RT421/RT42106/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT421/RT42106/photo.jpg"
+    },
+    "footer": {
+      "page_position": "426 / 613",
+      "rt_id": "RT42106"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "235 GUELPH ST",
+    "postcode": "L7G 4A8",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "05/27/2005",
+    "desc": "Retail Plaza - 1 storey; 9 units 70,228 sf @ $123",
+    "bldg": "70,228 sf",
+    "acreage": "5.84",
+    "consid": "8650000",
+    "cash": "8650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 020 003 08100"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "235 GUELPH ST"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "27 May 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 9 units 70,228 sf @ $123",
+    "seller_lines": [
+      "RioCan Holdings (Halton Hills) Inc"
+    ],
+    "buyer_lines": [
+      "Sunstone Halton Hills Holding Corp"
+    ],
+    "price_text": "$8,650,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT41367",
+  "source_folder": "Perth_County/retail/p003",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41367",
+      "source_folder": "Perth_County/retail/p003",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p003/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 ERIE ST"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "15 Apr 2005",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "806401 Ontario Ltd     906-946-1300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harvey Kestenberg",
+        "Kestenberg Rabinowicz",
+        "2797 John St",
+        "Markham, Ontario",
+        "L3R 2Y8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MKJ Investments Ltd     416-488-0422"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christopher Barrett",
+        "67 Fleming Cres",
+        "Toronto, Ontario",
+        "M4G 2B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20",
+      "Lots 116-118, 296 & 297",
+      "Part Lot 298",
+      "As in Inst No R-294337",
+      "",
+      "1.22 acre"
+    ],
+    "arn_text": "31 11 050 010 08500",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 392269 Ontario Ltd",
+      "principal: $550,000   rate: 7.0% per annum",
+      "registered: 04/15/2005   due: 03/31/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "108 / 113",
+      "rt_id": "RT41367"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "155 ERIE ST",
+    "postcode": "N5A 2M6",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "04/15/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.22",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "31 11 050 010 08500"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "155 ERIE ST"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "15 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "806401 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "MKJ Investments Ltd"
+    ],
+    "price_text": "$950,000"
+  }
+}

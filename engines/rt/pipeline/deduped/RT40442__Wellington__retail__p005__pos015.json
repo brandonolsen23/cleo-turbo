@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT40442",
+  "source_folder": "Wellington/retail/p005",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40442",
+      "source_folder": "Wellington/retail/p005",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "295 ALMA ST"
+      ],
+      "city_region": "Eramosa : Wellington",
+      "date_text": "16 Feb 2005",
+      "price_text": "$719,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mackrani International Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Muhammad Iqbal",
+        "128 Alma St, Apt 4",
+        "Rockwood, Ontario",
+        "N0B 2K0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Q & K Traders Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Qurban Khan",
+        "3926 Zenith Ct",
+        "Mississauga, Ontario",
+        "L5N 7H7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar- 1 storey; 4 units 6,500 sf @ $111",
+      "",
+      "Gas Bar - 4 pumps (8 nozzles)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 150, Block A",
+      "Lots 166 & 167",
+      "",
+      "0.58 acre"
+    ],
+    "arn_text": "23 11 000 002 09100",
+    "consideration_lines": [
+      "cash: $719,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 755165 Ontario Inc",
+      "principal: $650,000   rate: 12.0% per annum.",
+      "registered: 02/16/2005   due: 02/16/2007"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT404/RT40442/photo.jpg"
+    },
+    "footer": {
+      "page_position": "216 / 269",
+      "rt_id": "RT40442"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "295 ALMA ST",
+    "postcode": "N0B 2K0",
+    "municipality": "Eramosa",
+    "region": "Wellington",
+    "date": "02/16/2005",
+    "desc": "Retail Plaza & Gas Bar- 1 storey; 4 units 6,500 sf @ $111",
+    "bldg": "6,500 sf",
+    "acreage": ".58",
+    "consid": "719000",
+    "cash": "719000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 11 000 002 09100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "295 ALMA ST"
+    ],
+    "city_region": "Eramosa : Wellington",
+    "date_text": "16 Feb 2005",
+    "note": "",
+    "description": "Retail Plaza & Gas Bar- 1 storey; 4 units 6,500 sf @ $111",
+    "seller_lines": [
+      "Mackrani International Ltd"
+    ],
+    "buyer_lines": [
+      "Q & K Traders Inc"
+    ],
+    "price_text": "$719,000"
+  }
+}

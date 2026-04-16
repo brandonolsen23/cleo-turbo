@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT55101",
+  "source_folder": "Metro_Toronto/retail/p065",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55101",
+      "source_folder": "Metro_Toronto/retail/p065",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p065/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "694 MOUNT PLEASANT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "24 Apr 2007",
+      "price_text": "$1,028,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "998375 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kwong Chan",
+        "154 Village Gate Dr",
+        "Markham, Ontario",
+        "L6C 1W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "694 MPR Inc     416-304-0046"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Simon Winston",
+        "Dorset Property Corp",
+        "100 Adelaide St W, Ste 708",
+        "Toronto, Ontario",
+        "M5H 1S3"
+      ]
+    },
+    "description_lines": [
+      "Restaurant/Bakery - 2 storey; 2,275 sf @ $452"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 694, Block S",
+      "Part Lot 2",
+      "As in Inst No CA-255416",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 103 610 02600",
+    "consideration_lines": [
+      "cash: $1,028,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HMT Holdings Inc",
+      "principal: $700,000   rate: 8.5% per annum",
+      "registered: 04/24/2007   due: 05/01/2009"
+    ],
+    "broker_lines": [
+      "Colliers International: Bob Mullin & Vanessa Oliver, 416-777-2200"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT551/RT55101/0513_103744.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT551/RT55101/0513_103746.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT551/RT55101/0513_103802.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT551/RT55101/air1.jpg",
+        "/assets/files/RT5/RT551/RT55101/air2.jpg",
+        "/assets/files/RT5/RT551/RT55101/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3236 / 4952",
+      "rt_id": "RT55101"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "694 MOUNT PLEASANT RD",
+    "postcode": "M4S 2N3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/24/2007",
+    "desc": "Restaurant/Bakery - 2 storey; 2,275 sf @ $452",
+    "bldg": "2,275 sf",
+    "acreage": ".05",
+    "consid": "1028000",
+    "cash": "1028000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 103 610 02600"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "694 MOUNT PLEASANT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "24 Apr 2007",
+    "note": "",
+    "description": "Restaurant/Bakery - 2 storey; 2,275 sf @ $452",
+    "seller_lines": [
+      "998375 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "694 MPR Inc"
+    ],
+    "price_text": "$1,028,000"
+  }
+}

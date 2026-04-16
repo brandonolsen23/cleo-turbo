@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT181760",
+  "source_folder": "Perth_County/retail/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181760",
+      "source_folder": "Perth_County/retail/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "618 HURON ST"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "05 Dec 2023",
+      "price_text": "$8,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Rock Developments Stratford Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000718845 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ryszard Witulski",
+        "288 Blue Heron Ridge",
+        "Cambridge, Ontario",
+        "N3H 3G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 446, Lot 7",
+      "Plan 44R-5086, Parts 1 & 4",
+      "Except:",
+      "Plan 44R-5086, Parts 2 & 3",
+      "",
+      "PIN: 53160-0124",
+      "",
+      "2.90 acre"
+    ],
+    "arn_text": "31 11 010 080 19920",
+    "consideration_lines": [
+      "cash: $4,526,263     assumed/vtb debt: $4,373,737",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $5,600,000   rate: 3.491% per annum.",
+      "registered: 06/03/2013   due: 07/01/2018",
+      "",
+      "chargee: Rock Developments Stratford Inc",
+      "principal: $800,000   rate: 0% per annum.",
+      "registered: 12/05/2023   due: 12/05/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181760/1231_120445.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181760/1231_120453.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181760/1231_120517a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181760/1231_120517b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181760/1231_120550.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181760/1231_120606.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 113",
+      "rt_id": "RT181760"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "618 HURON ST",
+    "postcode": "N5A 6S6",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "12/05/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.9",
+    "consid": "8900000",
+    "cash": "4526263",
+    "debt": "4373737",
+    "note": "",
+    "pin": "53160-0124",
+    "rollno": "31 11 010 080 19920"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "618 HURON ST"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "05 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Rock Developments Stratford Inc"
+    ],
+    "buyer_lines": [
+      "1000718845 Ontario Inc"
+    ],
+    "price_text": "$8,900,000"
+  }
+}

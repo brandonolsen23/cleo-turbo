@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT12973",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12973",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "790 GUELPH LINE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "05 Aug 1998",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "786471 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Fred Darvish",
+        "505 Highway 7 East, Ste 303",
+        "Thornhill, Ontario",
+        "L3T 7T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Chris & Panagiota Tatsis"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "41 Dolly Varden Blvd",
+        "Toronto, Ontario",
+        "M1H 2K2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 8,119 sf @ $191"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-9860, Part 3",
+      "",
+      "SW corner of Fairview & Guelph Line",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "24 02 050 507 07000",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,015,000   rate: 3.65% per annum.",
+      "registered: 11/15/2017   due: 12/05/2022",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $3,465,000   rate: 25.0% per annum.",
+      "registered: 11/15/2017   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $970,000   rate: Prime plus 10.0% per annum.",
+      "registered: 11/10/2017   due: on demand",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $2,900,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 11/17/2017   due: on demand"
+    ],
+    "broker_lines": [
+      "Parsa Realty: Behrouz Parsa, 905-475-0475"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT129/RT12973/photo.jpg"
+    },
+    "footer": {
+      "page_position": "599 / 613",
+      "rt_id": "RT12973"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "790 GUELPH LINE",
+    "postcode": "L7R 3N5",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "08/05/1998",
+    "desc": "Retail Plaza - 8,119 sf @ $191",
+    "bldg": "8,119 sf",
+    "acreage": ".69",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 507 07000"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "790 GUELPH LINE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "05 Aug 1998",
+    "note": "",
+    "description": "Retail Plaza - 8,119 sf @ $191",
+    "seller_lines": [
+      "786471 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Chris & Panagiota Tatsis"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

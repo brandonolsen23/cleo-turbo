@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT30098",
+  "source_folder": "Hamilton-Wentworth/multifamily/p015",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30098",
+      "source_folder": "Hamilton-Wentworth/multifamily/p015",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/multifamily/p015/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 YORK RD"
+      ],
+      "city_region": "Dundas : Hamilton-Wentworth",
+      "date_text": "05 May 2003",
+      "price_text": "$717,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1567832 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "123 York Rd",
+        "Dundas, Ontario",
+        "L9H 1L9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1458",
+      "Lots 36, 38 & Part Lot 34",
+      "As in Inst No VM-53765",
+      "",
+      "0.64 acre"
+    ],
+    "arn_text": "25 26 100 210 00200",
+    "consideration_lines": [
+      "cash: $717,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT300/RT30098/photo.jpg"
+    },
+    "footer": {
+      "page_position": "726 / 875",
+      "rt_id": "RT30098"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "123 YORK RD",
+    "postcode": "L9H 1L9",
+    "municipality": "Dundas",
+    "region": "Hamilton-Wentworth",
+    "date": "05/05/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".64",
+    "consid": "717500",
+    "cash": "717500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 26 100 210 00200"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "123 YORK RD"
+    ],
+    "city_region": "Dundas : Hamilton-Wentworth",
+    "date_text": "05 May 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1567832 Ontario Ltd"
+    ],
+    "price_text": "$717,500"
+  }
+}

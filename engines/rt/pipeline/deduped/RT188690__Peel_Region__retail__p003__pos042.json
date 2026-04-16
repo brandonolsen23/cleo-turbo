@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT188690",
+  "source_folder": "Peel_Region/retail/p003",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188690",
+      "source_folder": "Peel_Region/retail/p003",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p003/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "11675 MCVEAN DR",
+        "UNIT 6"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "19 Nov 2024",
+      "price_text": "$1,181,616",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "McVean Commercial Centre Ltd     905-738-3675"
+      ],
+      "trade_name": "GTA Development Corp",
+      "contact_lines": [
+        "99 Sante Dr, Unit C",
+        "Concord, Ontario",
+        "L4K 3C4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000784888 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harpreet Saini",
+        "11675 McVean Dr, Unit 6",
+        "Brampton, Ontario",
+        "L6P 4N5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1174",
+      "Level 1, Unit 6",
+      "",
+      "PIN: 20174-0006"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,181,616     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $851,625   rate: Prime plus 5.0% per annum.",
+      "registered: 11/19/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142626.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142627.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142642.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142840.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142842.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142843.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142847.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142848.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188690/1215_142906.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "143 / 1087",
+      "rt_id": "RT188690"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "11675 MCVEAN DR, UNIT 6",
+    "postcode": "L6P 4N5",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "11/19/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1181616",
+    "cash": "1181616",
+    "debt": "",
+    "note": "",
+    "pin": "20174-0006",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "11675 MCVEAN DR",
+      "UNIT 6"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "19 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "McVean Commercial Centre Ltd"
+    ],
+    "buyer_lines": [
+      "1000784888 Ontario Inc"
+    ],
+    "price_text": "$1,181,616"
+  }
+}

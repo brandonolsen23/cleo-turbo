@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT49185",
+  "source_folder": "Perth_County/hotel-motel/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49185",
+      "source_folder": "Perth_County/hotel-motel/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/hotel-motel/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "3765 PERTH RD 112"
+      ],
+      "city_region": "South Easthope : Perth County",
+      "date_text": "01 Jun 2006",
+      "price_text": "$640,295",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Swan Motel Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hans Pola",
+        "RR 2",
+        "Stratford, Ontario",
+        "N5A 6S3"
+      ]
+    },
+    "description_lines": [
+      "Motel"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 46",
+      "As in Inst No R-254037",
+      "",
+      "2.39 acre"
+    ],
+    "arn_text": "31 100 010 004 1650 +",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 17",
+      "rt_id": "RT49185"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "3765 PERTH RD 112",
+    "postcode": "N5A 6S3",
+    "municipality": "South Easthope",
+    "region": "Perth County",
+    "date": "06/01/2006",
+    "desc": "Motel",
+    "bldg": "",
+    "acreage": "2.39",
+    "consid": "640295",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "31 100 010 004 1650+"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "3765 PERTH RD 112"
+    ],
+    "city_region": "South Easthope : Perth County",
+    "date_text": "01 Jun 2006",
+    "note": "Related Parties",
+    "description": "Motel",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Swan Motel Inc"
+    ],
+    "price_text": "$640,295"
+  }
+}

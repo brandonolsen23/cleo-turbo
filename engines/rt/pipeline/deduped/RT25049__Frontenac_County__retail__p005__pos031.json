@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT25049",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25049",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "724 & 730 BATH RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "26 Apr 2002",
+      "price_text": "$1,035,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "National Trust Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Jameel Sethi",
+        "44 King St W",
+        "Toronto, Ontario",
+        "M5H 1H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1483699 Ontario Inc     905-727-7740"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Laurence Nowacin",
+        "10 Alm Ct",
+        "Aurora, Ontario",
+        "L4G 6W7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 13R-10441, Parts 6-10",
+      "Conc 2, Part Lot 9",
+      "As in Inst No FR-57125"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,035,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT250/RT25049/photo.jpg"
+    },
+    "footer": {
+      "page_position": "232 / 236",
+      "rt_id": "RT25049"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "724 & 730 BATH RD",
+    "postcode": "K7M 4Y2",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "04/26/2002",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1035000",
+    "cash": "1035000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "724 & 730 BATH RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "26 Apr 2002",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "National Trust Co"
+    ],
+    "buyer_lines": [
+      "1483699 Ontario Inc"
+    ],
+    "price_text": "$1,035,000"
+  }
+}

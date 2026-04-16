@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT196577",
+  "source_folder": "Peel_Region/retail/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196577",
+      "source_folder": "Peel_Region/retail/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "6385 MISSISSAUGA RD N"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "15 Jan 2026",
+      "price_text": "$5,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "BRL Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1128 Yonge St, 2nd Flr",
+        "Toronto, Ontario",
+        "M4W 2L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001178459 Ontario Inc     905-812-5401"
+      ],
+      "trade_name": "Nav Bhatia's Hyundai",
+      "contact_lines": [
+        "Attn: Navdeep Bhatia",
+        "6225 Mississauga Rd",
+        "Mississauga, Ontario",
+        "L5N 1A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - WHS Toronto, Part Lot 7",
+      "As in Inst No RO-755829",
+      "Except:",
+      "Plan 43R-15174, Parts 1 & 2",
+      "",
+      "PIN: 13206-0151",
+      "",
+      "1.32 acre"
+    ],
+    "arn_text": "21 05 110 002 07200",
+    "consideration_lines": [
+      "cash: $5,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $7,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 01/15/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1965/RT196577/air1.jpg",
+        "/assets/files/RT19/RT1965/RT196577/air2.jpg",
+        "/assets/files/RT19/RT1965/RT196577/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 1087",
+      "rt_id": "RT196577"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "6385 MISSISSAUGA RD N",
+    "postcode": "L5N 1A5",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "01/15/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.32",
+    "consid": "5500000",
+    "cash": "5500000",
+    "debt": "",
+    "note": "",
+    "pin": "13206-0151",
+    "rollno": "21 05 110 002 07200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "6385 MISSISSAUGA RD N"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "15 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "BRL Realty Ltd"
+    ],
+    "buyer_lines": [
+      "1001178459 Ontario Inc"
+    ],
+    "price_text": "$5,500,000"
+  }
+}

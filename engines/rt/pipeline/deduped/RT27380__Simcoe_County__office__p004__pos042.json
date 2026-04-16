@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT27380",
+  "source_folder": "Simcoe_County/office/p004",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27380",
+      "source_folder": "Simcoe_County/office/p004",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/office/p004/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "16 DUNLOP ST E"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "02 Oct 2002",
+      "price_text": "$645,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Laurentian Bank of Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Daniel Brasseur",
+        "130 Adelaide St W",
+        "Toronto, Ontario",
+        "M5H 3Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mid Ontario Capital Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Charles Rosart",
+        "4180 Morris Dr, Unit 8",
+        "Burlington, Ontario",
+        "L7L 5L6"
+      ]
+    },
+    "description_lines": [
+      "Bank Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2, Part Lot 2, N/S Dunlop St",
+      "As in Inst No RO-510634",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "43 42 022 008 05100",
+    "consideration_lines": [
+      "cash: $161,250     assumed/vtb debt: $483,750"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT273/RT27380/photo.jpg"
+    },
+    "footer": {
+      "page_position": "193 / 213",
+      "rt_id": "RT27380"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "16 DUNLOP ST E",
+    "postcode": "L4M 1A3",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "10/02/2002",
+    "desc": "Bank Bldg",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "645000",
+    "cash": "161250",
+    "debt": "483750",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 022 008 05100"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "16 DUNLOP ST E"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "02 Oct 2002",
+    "note": "",
+    "description": "Bank Bldg",
+    "seller_lines": [
+      "Laurentian Bank of Canada"
+    ],
+    "buyer_lines": [
+      "Mid Ontario Capital Properties Inc"
+    ],
+    "price_text": "$645,000"
+  }
+}

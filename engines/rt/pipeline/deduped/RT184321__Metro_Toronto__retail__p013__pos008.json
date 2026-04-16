@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT184321",
+  "source_folder": "Metro_Toronto/retail/p013",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184321",
+      "source_folder": "Metro_Toronto/retail/p013",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p013/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3834 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Mar 2024",
+      "price_text": "$1,005,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000837834 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Valente Gjokaj",
+        "307 Bering Ave",
+        "Etobicoke, Ontario",
+        "M8Z 3A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1893,",
+      "Part Lots 159 & 160",
+      "As in Inst No EB-256347",
+      "",
+      "PIN: 07540-0065",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 19 032 110 02500",
+    "consideration_lines": [
+      "cash: $1,005,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184321/0504_063045.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184321/0504_063048.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184321/0504_063050.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184321/0504_063100.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184321/0504_063114.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184321/0504_063117.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "609 / 4952",
+      "rt_id": "RT184321"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3834 BLOOR ST W",
+    "postcode": "M9B 1L1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/28/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1005000",
+    "cash": "1005000",
+    "debt": "",
+    "note": "",
+    "pin": "07540-0065",
+    "rollno": "19 19 032 110 02500"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3834 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000837834 Ontario Inc"
+    ],
+    "price_text": "$1,005,000"
+  }
+}

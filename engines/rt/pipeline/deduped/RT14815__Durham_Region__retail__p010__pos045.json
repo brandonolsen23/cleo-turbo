@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT14815",
+  "source_folder": "Durham_Region/retail/p010",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14815",
+      "source_folder": "Durham_Region/retail/p010",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p010/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "1810 DUNDAS ST E"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "16 Jun 1999",
+      "price_text": "$927,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kopel Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jerome Cooper",
+        "60 Bloor St West, Ste 302",
+        "Toronto, Ontario",
+        "M4W 3B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Linli Management Ltd",
+        "Danwood Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Banyasz",
+        "c/o 1270 Finch Ave West, Unit 11",
+        "Downsview, Ontario",
+        "M3J 2E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Concession 2, Part Lot 19",
+      "As in Inst D-361235"
+    ],
+    "arn_text": "18 09 040 031 11900",
+    "consideration_lines": [
+      "cash: $927,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $1,008,000   rate: 4.99% per annum.",
+      "registered: 12/09/2019   due: 01/01/2021",
+      "",
+      "Named Individual(s)",
+      "principal: $750,000   rate: 4.75% per annum.",
+      "registered: 12/09/2019   due: 01/09/2023",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $924,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/10/2019   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $120,000   rate: 6.0% per annum.",
+      "registered: 12/10/2019   due: 12/09/2020",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,200,000   rate: 18.0% per annum.",
+      "registered: 12/13/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "496 / 506",
+      "rt_id": "RT14815"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "1810 DUNDAS ST E",
+    "postcode": "L1N 2L4",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "06/16/1999",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "927000",
+    "cash": "927000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 09 040 031 11900"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "1810 DUNDAS ST E"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "16 Jun 1999",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Kopel Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Linli Management Ltd",
+      "Danwood Investments Ltd"
+    ],
+    "price_text": "$927,000"
+  }
+}

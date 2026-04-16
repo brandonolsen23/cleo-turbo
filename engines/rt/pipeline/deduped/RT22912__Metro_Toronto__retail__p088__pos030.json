@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT22912",
+  "source_folder": "Metro_Toronto/retail/p088",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22912",
+      "source_folder": "Metro_Toronto/retail/p088",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p088/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "526 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Sep 2001",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "A & R Chew Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Antonio Ortiz",
+        "3160 Steeles Ave E, Ste 210",
+        "Makham, Ontario",
+        "L3R 4G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1488658 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mei Li Yu",
+        "227 Spadina Ave, 2nd Flr",
+        "Toronto, Ontario",
+        "M5T 2E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 5,400 sf @ $157"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-10, Part Lots 24 & 25",
+      "As in Inst No CA-137125",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 065 510 06100",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT229/RT22912/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4381 / 4952",
+      "rt_id": "RT22912"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "526 DUNDAS ST W",
+    "postcode": "M5T 1H3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/28/2001",
+    "desc": "Retail Bldg - 2 storey; 5,400 sf @ $157",
+    "bldg": "5,400 sf",
+    "acreage": ".1",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 065 510 06100"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "526 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Sep 2001",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 5,400 sf @ $157",
+    "seller_lines": [
+      "A & R Chew Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1488658 Ontario Ltd"
+    ],
+    "price_text": "$850,000"
+  }
+}

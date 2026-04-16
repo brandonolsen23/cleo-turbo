@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT191161",
+  "source_folder": "Peterborough_County/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191161",
+      "source_folder": "Peterborough_County/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "6220 HIGHWAY 28",
+        "6220 HWY 28"
+      ],
+      "city_region": "N. Kawartha : Peterborough County",
+      "date_text": "26 Mar 2025",
+      "price_text": "$1,038,557",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001037973 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: S. Kanthikumar",
+        "6220 Highway 28",
+        "North Kawartha, Ontario",
+        "K0L 3E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Burleigh (Southern Division)",
+      "Part Lot 7",
+      "As in Inst No R-672251",
+      "",
+      "PIN: 28303-0127"
+    ],
+    "arn_text": "15 36 020 001 50900",
+    "consideration_lines": [
+      "cash: $538,557     assumed/vtb debt: $500,000",
+      "",
+      "Named Individual(s)",
+      "principal: $500,000   rate: 7.0% per annum.",
+      "registered: 03/26/2025   due: 04/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191161/0629_121601.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191161/0629_121605.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191161/0629_121621a.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191161/0629_121621b.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191161/0629_121631.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1911/RT191161/air1.jpg",
+        "/assets/files/RT19/RT1911/RT191161/air2.jpg",
+        "/assets/files/RT19/RT1911/RT191161/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 157",
+      "rt_id": "RT191161"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "6220 HIGHWAY 28, 6220 HWY 28",
+    "postcode": "K0L 3E0",
+    "municipality": "N. Kawartha",
+    "region": "Peterborough County",
+    "date": "03/26/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1038557",
+    "cash": "538557",
+    "debt": "500000",
+    "note": "",
+    "pin": "28303-0127",
+    "rollno": "15 36 020 001 50900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "6220 HIGHWAY 28",
+      "6220 HWY 28"
+    ],
+    "city_region": "N. Kawartha : Peterborough County",
+    "date_text": "26 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001037973 Ontario Inc"
+    ],
+    "price_text": "$1,038,557"
+  }
+}

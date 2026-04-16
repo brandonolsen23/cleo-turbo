@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT182717",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182717",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "110 MARTINDALE CRES"
+      ],
+      "city_region": "Ancaster : Hamilton-Wentworth",
+      "date_text": "25 Jan 2024",
+      "price_text": "$5,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Commercial (Ancaster) Inc     519-672-7490"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "484 Waterloo St",
+        "London, Ontario",
+        "N6B 2P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Strategy Property Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bill Tai",
+        "1294 Atkinson St",
+        "Kingston, Ontario",
+        "K7P 0J7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT18/RT1827/RT182717/mi.pdf",
+    "site_lines": [
+      "Plan 62R-21908, Parts 2-5",
+      "",
+      "PIN: 17079-0121",
+      "",
+      "0.64 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182717/0218_151232.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182717/0218_151311.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182717/0218_151315.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182717/0218_151318.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182717/0218_151321.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "102 / 616",
+      "rt_id": "RT182717"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "110 MARTINDALE CRES",
+    "postcode": "",
+    "municipality": "Ancaster",
+    "region": "Hamilton-Wentworth",
+    "date": "01/25/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".64",
+    "consid": "5250000",
+    "cash": "5250000",
+    "debt": "",
+    "note": "",
+    "pin": "17079-0121",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "110 MARTINDALE CRES"
+    ],
+    "city_region": "Ancaster : Hamilton-Wentworth",
+    "date_text": "25 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canadian Commercial (Ancaster) Inc"
+    ],
+    "buyer_lines": [
+      "Strategy Property Management Ltd"
+    ],
+    "price_text": "$5,250,000"
+  }
+}

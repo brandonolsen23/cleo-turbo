@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT66043",
+  "source_folder": "Wellington/retail/p004",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66043",
+      "source_folder": "Wellington/retail/p004",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p004/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 WOOLWICH ST",
+        "169 WOOLWICH ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "04 Feb 2009",
+      "price_text": "$502,053",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "169 Woolwich Street Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Train",
+        "17A - 218 Silvercreek Pkwy N",
+        "Suite 234",
+        "Guelph, Ontario",
+        "N1H 8E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sieben Holdings Ltd     519-821-3600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Herb Neumann",
+        "Coldwell Banker Neumann Real Estate",
+        "824 Gordon St, Unit 201",
+        "Guelph, Ontario",
+        "N1G 1Y7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,800 sf @ $132"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 175-176",
+      "Part Lots 1 & 2",
+      "As in Inst Nos:",
+      "ROS-394467 & MS-98207",
+      "",
+      "PIN: 71321-0011 +",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "23 08 030 001 17600 +",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $502,053"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66043/0321_140135.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66043/0321_140213.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66043/0321_140236.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "178 / 269",
+      "rt_id": "RT66043"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "161 WOOLWICH ST, 169 WOOLWICH ST",
+    "postcode": "N1H 3V4",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "02/04/2009",
+    "desc": "Retail Bldg - 1 storey; 3,800 sf @ $132",
+    "bldg": "3,800 sf",
+    "acreage": ".36",
+    "consid": "502053",
+    "cash": "",
+    "debt": "502053",
+    "note": "Zero Cash",
+    "pin": "71321-0011+",
+    "rollno": "23 08 030 001 17600+"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "161 WOOLWICH ST",
+      "169 WOOLWICH ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "04 Feb 2009",
+    "note": "Zero Cash",
+    "description": "Retail Bldg - 1 storey; 3,800 sf @ $132",
+    "seller_lines": [
+      "169 Woolwich Street Inc"
+    ],
+    "buyer_lines": [
+      "Sieben Holdings Ltd"
+    ],
+    "price_text": "$502,053"
+  }
+}

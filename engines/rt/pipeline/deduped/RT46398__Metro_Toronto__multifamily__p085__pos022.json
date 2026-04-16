@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT46398",
+  "source_folder": "Metro_Toronto/multifamily/p085",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46398",
+      "source_folder": "Metro_Toronto/multifamily/p085",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p085/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "565 MOUNT PLEASANT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Nov 2005",
+      "price_text": "$615,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1403024 Ontario Ltd     416-665-8411"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Davinder Saini",
+        "Neinstein Singer",
+        "1183 Finch Ave W, Ste 402",
+        "Toronto, Ontario",
+        "M3J 2G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2085452 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Foo Ng",
+        "873 Bathurst St",
+        "Toronto, Ontario",
+        "M5R 3G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-15951, Part 1",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 103 400 01000",
+    "consideration_lines": [
+      "cash: $615,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT463/RT46398/air1.jpg",
+        "/assets/files/RT4/RT463/RT46398/air2.jpg",
+        "/assets/files/RT4/RT463/RT46398/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4223 / 6031",
+      "rt_id": "RT46398"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "565 MOUNT PLEASANT RD",
+    "postcode": "M4S 2M5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/23/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "615000",
+    "cash": "615000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 103 400 01000"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "565 MOUNT PLEASANT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1403024 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2085452 Ontario Ltd"
+    ],
+    "price_text": "$615,000"
+  }
+}

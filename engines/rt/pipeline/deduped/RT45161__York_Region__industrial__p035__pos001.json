@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT45161",
+  "source_folder": "York_Region/industrial/p035",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45161",
+      "source_folder": "York_Region/industrial/p035",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p035/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "113 VICEROY RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "31 Oct 2005",
+      "price_text": "$4,397,850",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "385465 Ontario Ltd",
+        "Harvanite Holdings Inc",
+        "Lisamond Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Seymour Schwartz",
+        "1 Eglinton Ave E",
+        "Toronto, Ontario",
+        "M4P 3A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RPIG Realty Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Byung Min",
+        "113 Viceroy Rd",
+        "Vaughan, Ontario",
+        "L4K 2L5"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1890, Lot 6",
+      "",
+      "2.58 acre"
+    ],
+    "arn_text": "19 28 000 200 00806",
+    "consideration_lines": [
+      "cash: $4,397,850     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $2,850,000   rate: Prime plus 3.0% per annum",
+      "registered: 11/01/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT451/RT45161/air1.jpg",
+        "/assets/files/RT4/RT451/RT45161/air2.jpg",
+        "/assets/files/RT4/RT451/RT45161/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1702 / 2269",
+      "rt_id": "RT45161"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "113 VICEROY RD",
+    "postcode": "L4K 2L5",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "10/31/2005",
+    "desc": "Industrial Bldg",
+    "bldg": "",
+    "acreage": "2.58",
+    "consid": "4397850",
+    "cash": "4397850",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 200 00806"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "113 VICEROY RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "31 Oct 2005",
+    "note": "",
+    "description": "Industrial Bldg",
+    "seller_lines": [
+      "385465 Ontario Ltd",
+      "Harvanite Holdings Inc",
+      "Lisamond Investments Ltd"
+    ],
+    "buyer_lines": [
+      "RPIG Realty Holdings Ltd"
+    ],
+    "price_text": "$4,397,850"
+  }
+}

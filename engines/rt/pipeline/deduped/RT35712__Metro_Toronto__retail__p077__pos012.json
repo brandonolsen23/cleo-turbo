@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT35712",
+  "source_folder": "Metro_Toronto/retail/p077",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35712",
+      "source_folder": "Metro_Toronto/retail/p077",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p077/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1375 DANFORTH RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "25 May 2004",
+      "price_text": "$1,020,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "576104 Ontario Inc     416-491-1012"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chris Chan",
+        "1200 Sheppard Ave E, Ste 103",
+        "Willowdale, Ontario",
+        "M2K 2R8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1572488 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sue Kin Wan",
+        "101 Prudential Dr, Apt 1504",
+        "Toronto, Ontario",
+        "M1P 4S5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 10,500 sf @ $97"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-757, Block B",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "19 01 063 080 00400",
+    "consideration_lines": [
+      "cash: $1,020,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Trustwell Realty: James Wong, 416-498-9995"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT357/RT35712/air1.jpg",
+        "/assets/files/RT3/RT357/RT35712/air2.jpg",
+        "/assets/files/RT3/RT357/RT35712/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT357/RT35712/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3813 / 4952",
+      "rt_id": "RT35712"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1375 DANFORTH RD",
+    "postcode": "M1J 1G7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/25/2004",
+    "desc": "Retail Plaza - 1 storey; 10,500 sf @ $97",
+    "bldg": "10,500 sf",
+    "acreage": ".67",
+    "consid": "1020000",
+    "cash": "1020000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 063 080 00400"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1375 DANFORTH RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "25 May 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 10,500 sf @ $97",
+    "seller_lines": [
+      "576104 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1572488 Ontario Inc"
+    ],
+    "price_text": "$1,020,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT193740",
+  "source_folder": "York_Region/retail/p002",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193740",
+      "source_folder": "York_Region/retail/p002",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 EAST BEAVER CREEK RD",
+        "UNIT 22"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "07 Aug 2025",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "13517241 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "27 Touraine Dr",
+        "Markham, Ontario",
+        "L6C 1T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "5000788 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kwan Lee Yeung",
+        "155 East Beaver Creek Rd, Unit 22",
+        "Richmond Hill, Ontario",
+        "L4B 2N1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 673",
+      "Level 1, Unit 22",
+      "",
+      "PIN: 29206-0022"
+    ],
+    "arn_text": "19 38 050 040 39822",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,050,000   rate: Prime plus 0.5% per annum.",
+      "registered: 08/07/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1937/RT193740/0816_140913.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1937/RT193740/0816_140952.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1937/RT193740/0816_140953.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1937/RT193740/0816_141055.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1937/RT193740/0816_141100.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1937/RT193740/0816_141133.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "61 / 984",
+      "rt_id": "RT193740"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "155 EAST BEAVER CREEK RD, UNIT 22",
+    "postcode": "L4B 2N1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "08/07/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "29206-0022",
+    "rollno": "19 38 050 040 39822"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "155 EAST BEAVER CREEK RD",
+      "UNIT 22"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "07 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "13517241 Canada Inc"
+    ],
+    "buyer_lines": [
+      "5000788 Ontario Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

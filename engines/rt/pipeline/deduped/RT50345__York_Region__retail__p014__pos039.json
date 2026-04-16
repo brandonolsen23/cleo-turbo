@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT50345",
+  "source_folder": "York_Region/retail/p014",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50345",
+      "source_folder": "York_Region/retail/p014",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p014/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "7220 KENNEDY RD"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "09 Aug 2006",
+      "price_text": "$9,830,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kennedy Fields Inc",
+        "Kennedy Fields LP     416-499-0070"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chris Balkos",
+        "16 Argonaut Place",
+        "Toronto, Ontario",
+        "M1W 1A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kennedy Fields Property Corp     416-966-1100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Wright",
+        "Strathallen Capital Corp",
+        "2 Bloor St W, Ste 2000",
+        "Toronto, Ontario",
+        "M4W 3E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 3",
+      "Plan 65R-10887, Part 1",
+      "Except:",
+      "Plan 65R-18063, Part 1",
+      "Plan 65R-4290, Part 43",
+      "Plan 65R-13555, Part 1",
+      "Plan 65R-18063, Part 2",
+      "",
+      "4.12 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,423,132     assumed/vtb debt: $6,406,868",
+      "",
+      "chargee: Kennedy Fields Inc",
+      "principal: $3,300,000   rate: 5.75% per annum",
+      "registered: 08/09/2006   due: 04/10/2007"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085043.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085158.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085201.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085244.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085249.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085427.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085437.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT503/RT50345/0827_085439.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "690 / 984",
+      "rt_id": "RT50345"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "7220 KENNEDY RD",
+    "postcode": "L3R 7P2",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "08/09/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "4.12",
+    "consid": "9830000",
+    "cash": "3423132",
+    "debt": "6406868",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "7220 KENNEDY RD"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "09 Aug 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Kennedy Fields Inc",
+      "Kennedy Fields LP"
+    ],
+    "buyer_lines": [
+      "Kennedy Fields Property Corp"
+    ],
+    "price_text": "$9,830,000"
+  }
+}

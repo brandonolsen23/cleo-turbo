@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT196608",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196608",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "114 ERIE ST N"
+      ],
+      "city_region": "Leamington : Essex County",
+      "date_text": "13 Jan 2026",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Glenn Young Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1223 Mersea Road 6",
+        "Leamington, Ontario",
+        "N8H 3V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "5021964 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leslie Wolfe",
+        "23592 Westgate Walk",
+        "Chatham, Ontario",
+        "N7M 5J7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc NTR - Mersea, Part Lot 244",
+      "Plan 172 - Leamington",
+      "Lot 13, Part Lots 14 & 15",
+      "Plan 13R-8709, Part 1",
+      "",
+      "PIN: 75097-0198",
+      "",
+      "1.09 acre"
+    ],
+    "arn_text": "37 06 080 000 00100",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $2,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/13/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 460",
+      "rt_id": "RT196608"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "114 ERIE ST N",
+    "postcode": "N8H 3A2",
+    "municipality": "Leamington",
+    "region": "Essex County",
+    "date": "01/13/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.09",
+    "consid": "2300000",
+    "cash": "2300000",
+    "debt": "",
+    "note": "",
+    "pin": "75097-0198",
+    "rollno": "37 06 080 000 00100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "114 ERIE ST N"
+    ],
+    "city_region": "Leamington : Essex County",
+    "date_text": "13 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Glenn Young Ltd"
+    ],
+    "buyer_lines": [
+      "5021964 Ontario Ltd"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT73154",
+  "source_folder": "Lambton/retail/p002",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73154",
+      "source_folder": "Lambton/retail/p002",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "419 - 427 LYNDOCK ST"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "30 Jun 2010",
+      "price_text": "$970,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Danthy Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daniel Brousseau",
+        "PO Box 638",
+        "Corunna, Ontario",
+        "N0N 1G0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1140941 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Delwar Husain",
+        "419 Lyndock St",
+        "Corunna, Ontario",
+        "N0N 1G0"
+      ]
+    },
+    "description_lines": [
+      "Retail Store - 1 storey; 9,600 sf @ $101",
+      "",
+      "Leased to The Bargain! Shop"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 413, Lots 82-84",
+      "As in Inst No 960624",
+      "",
+      "PIN: 43435-0087",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "38 05 220 090 11400",
+    "consideration_lines": [
+      "cash: $970,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $610,000   rate: 18.0% per annum",
+      "registered: 06/30/2010   due: 07/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT731/RT73154/1204_125010.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT731/RT73154/1204_125049.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT731/RT73154/air1.jpg",
+        "/assets/files/RT7/RT731/RT73154/air2.jpg",
+        "/assets/files/RT7/RT731/RT73154/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "77 / 106",
+      "rt_id": "RT73154"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "419 - 427 LYNDOCK ST",
+    "postcode": "",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "06/30/2010",
+    "desc": "Retail Store - 1 storey; 9,600 sf @ $101",
+    "bldg": "9,600 sf",
+    "acreage": ".69",
+    "consid": "970000",
+    "cash": "970000",
+    "debt": "",
+    "note": "",
+    "pin": "43435-0087",
+    "rollno": "38 05 220 090 11400"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "419 - 427 LYNDOCK ST"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "30 Jun 2010",
+    "note": "",
+    "description": "Retail Store - 1 storey; 9,600 sf @ $101",
+    "seller_lines": [
+      "Danthy Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1140941 Ontario Inc"
+    ],
+    "price_text": "$970,000"
+  }
+}

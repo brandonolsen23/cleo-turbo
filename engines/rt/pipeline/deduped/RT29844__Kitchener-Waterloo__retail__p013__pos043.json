@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT29844",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29844",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "46 - 48 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "11 Apr 2003",
+      "price_text": "$672,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Alan Rigby's House of Furniture Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Debra Rigby",
+        "31 Arthur Rd",
+        "Heidelberg, Ontario",
+        "N0B 1Y0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1335021 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "46 King St N",
+        "Waterloo, Ontario",
+        "N2J 2W8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 491",
+      "Lot 7, E/S King St",
+      "Part Lots 6 & 7, W/S Regina St",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "30 16 011 850 01200",
+    "consideration_lines": [
+      "cash: $672,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT298/RT29844/photo.jpg"
+    },
+    "footer": {
+      "page_position": "644 / 752",
+      "rt_id": "RT29844"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "46 - 48 KING ST N",
+    "postcode": "N2J 2W8",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "04/11/2003",
+    "desc": "Retail Bldg - 1 storey",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "672500",
+    "cash": "672500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 011 850 01200"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "46 - 48 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "11 Apr 2003",
+    "note": "",
+    "description": "Retail Bldg - 1 storey",
+    "seller_lines": [
+      "Alan Rigby's House of Furniture Ltd"
+    ],
+    "buyer_lines": [
+      "1335021 Ontario Ltd"
+    ],
+    "price_text": "$672,500"
+  }
+}

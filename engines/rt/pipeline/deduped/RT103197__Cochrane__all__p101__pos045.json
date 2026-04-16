@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT103197",
+  "source_folder": "Cochrane/all/p101",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103197",
+      "source_folder": "Cochrane/all/p101",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p101/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 QUEEN ELIZABETH",
+        "NUMBER 14 B"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Jul 2014",
+      "price_text": "$635,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Toth Holdings Ltd     613-241-6380"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Toth",
+        "381 Kent St, Ste 4000",
+        "Ottawa, Ontario",
+        "K2P 2A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lahey & Associates Real Estate Ltd     613-237-2425"
+      ],
+      "trade_name": "The Properties Group",
+      "contact_lines": [
+        "Attn: Brian Lahey",
+        "236 Metcalfe St",
+        "Ottawa, Ontario",
+        "K2P 1R3"
+      ]
+    },
+    "description_lines": [
+      "Residential Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 53",
+      "Level 13, Unit 2",
+      "",
+      "PIN: 15053-0056"
+    ],
+    "arn_text": "06 14 052 401 68855",
+    "consideration_lines": [
+      "cash: $635,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $508,000   rate: 2.97% per annum.",
+      "registered: 07/31/2014   due: 07/31/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5046 / 10920",
+      "rt_id": "RT103197"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "300 QUEEN ELIZABETH, NUMBER 14 B",
+    "postcode": "K1S 3M6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/31/2014",
+    "desc": "Residential Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "635000",
+    "cash": "635000",
+    "debt": "",
+    "note": "",
+    "pin": "15053-0056",
+    "rollno": "06 14 052 401 68855"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "300 QUEEN ELIZABETH",
+      "NUMBER 14 B"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Jul 2014",
+    "note": "",
+    "description": "Residential Condo",
+    "seller_lines": [
+      "Toth Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Lahey & Associates Real Estate Ltd"
+    ],
+    "price_text": "$635,000"
+  }
+}

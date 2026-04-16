@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT196858",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196858",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "730 OTTAWA ST S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "27 Jan 2026",
+      "price_text": "$20,600,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Kitchener (RI) Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "H&R REIT",
+      "contact_lines": [
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Crestpoint Real Estate (730 Ottawa) Inc     416-862-6018"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Leon",
+        "130 King St, Ste 1400",
+        "Toronto, Ontario",
+        "M5X 1C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1968/RT196858/mi.pdf",
+    "site_lines": [
+      "Plan 58R-12520, Parts 6, 8, 15-17",
+      "Except:",
+      "Plan WR-868232, Parts 1 & 2",
+      "",
+      "PIN: 22491-0836",
+      "",
+      "9.54 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $20,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $225,000,000   rate: 25.0% per annum.",
+      "registered: 01/27/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1968/RT196858/air1.jpg",
+        "/assets/files/RT19/RT1968/RT196858/air2.jpg",
+        "/assets/files/RT19/RT1968/RT196858/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 752",
+      "rt_id": "RT196858"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "730 OTTAWA ST S",
+    "postcode": "N2E 1B6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "01/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.54",
+    "consid": "20600000",
+    "cash": "20600000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "22491-0836",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "730 OTTAWA ST S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "27 Jan 2026",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "Kitchener (RI) Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "Crestpoint Real Estate (730 Ottawa) Inc"
+    ],
+    "price_text": "$20,600,000"
+  }
+}

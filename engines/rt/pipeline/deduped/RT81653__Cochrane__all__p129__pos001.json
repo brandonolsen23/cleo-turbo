@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT81653",
+  "source_folder": "Cochrane/all/p129",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81653",
+      "source_folder": "Cochrane/all/p129",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p129/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "434 DAWSON AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Sep 2011",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "4461916 Canada Corp",
+        "1562064 Ontario Ltd     613-726-0606"
+      ],
+      "trade_name": "Legacy Homes",
+      "contact_lines": [
+        "Attn: Jose Tratch",
+        "217 Ancaster Ave",
+        "Ottawa, Ontario",
+        "K2B 5B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 443, Lot 46",
+      "",
+      "PIN: 04023-0182",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 14 084 401 48600",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT816/RT81653/air1.jpg",
+        "/assets/files/RT8/RT816/RT81653/air2.jpg",
+        "/assets/files/RT8/RT816/RT81653/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6402 / 10920",
+      "rt_id": "RT81653"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "434 DAWSON AVE",
+    "postcode": "K1Z 5V4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/01/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "04023-0182",
+    "rollno": "06 14 084 401 48600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "434 DAWSON AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Sep 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "4461916 Canada Corp",
+      "1562064 Ontario Ltd"
+    ],
+    "price_text": "$575,000"
+  }
+}

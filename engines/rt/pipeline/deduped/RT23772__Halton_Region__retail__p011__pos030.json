@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23772",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23772",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "283 LAKESHORE RD E"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "21 Dec 2001",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Penlim Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Heather Cole",
+        "161 Bay St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5J 2S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Three Coins Construction Inc     416-482-2918"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Weinberg",
+        "Michael Weinberg Properties",
+        "90 Eglinton Ave W, Ste 121",
+        "Toronto, Ontario",
+        "M4R 2E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; former TD Bank bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1, Block 26, Part Lot D",
+      "As in Inst No 212620"
+    ],
+    "arn_text": "24 01 040 030 05100",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT237/RT23772/photo.jpg"
+    },
+    "footer": {
+      "page_position": "531 / 613",
+      "rt_id": "RT23772"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "283 LAKESHORE RD E",
+    "postcode": "L6J 1J3",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "12/21/2001",
+    "desc": "Retail Bldg - 1 storey; former TD Bank bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 040 030 05100"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "283 LAKESHORE RD E"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "21 Dec 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; former TD Bank bldg",
+    "seller_lines": [
+      "Penlim Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Three Coins Construction Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

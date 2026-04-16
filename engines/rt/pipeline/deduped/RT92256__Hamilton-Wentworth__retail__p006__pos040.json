@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT92256",
+  "source_folder": "Hamilton-Wentworth/retail/p006",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT92256",
+      "source_folder": "Hamilton-Wentworth/retail/p006",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p006/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "55 RYMAL RD E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "24 Apr 2013",
+      "price_text": "$4,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Littlethree Ontario Ltd     905-333-3700"
+      ],
+      "trade_name": "Leggat Chevrolet Cadillac Buick GMC",
+      "contact_lines": [
+        "Pres: Brian Leggat",
+        "2207 Fairview St",
+        "Burlington, Ontario",
+        "L7R 2E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dalore Holdings Inc     905-547-3211"
+      ],
+      "trade_name": "Eastgate Ford",
+      "contact_lines": [
+        "Pres: Lance Richter",
+        "350 Parkdale Ave N",
+        "Hamilton, Ontario",
+        "L8H 5Y3"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 14",
+      "As in Inst Nos:",
+      "CD-462573, CD-413405 & CD-471152",
+      "Except Inst Nos:",
+      "CM-820 & CM-149",
+      "",
+      "PIN: 16913-0045",
+      "",
+      "N side Rymal Rd E, E of Upper James St",
+      "",
+      "4.11 acre"
+    ],
+    "arn_text": "25 18 070 861 00100",
+    "consideration_lines": [
+      "cash: $4,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $5,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 04/24/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT922/RT92256/0510_100843.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT922/RT92256/0510_100938.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT922/RT92256/0510_100946.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT922/RT92256/0510_101000.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "291 / 616",
+      "rt_id": "RT92256"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "55 RYMAL RD E",
+    "postcode": "L9B 1B9",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "04/24/2013",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "4.11",
+    "consid": "4300000",
+    "cash": "4300000",
+    "debt": "",
+    "note": "",
+    "pin": "16913-0045",
+    "rollno": "25 18 070 861 00100"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "55 RYMAL RD E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "24 Apr 2013",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Littlethree Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Dalore Holdings Inc"
+    ],
+    "price_text": "$4,300,000"
+  }
+}

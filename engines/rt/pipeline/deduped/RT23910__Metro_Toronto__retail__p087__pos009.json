@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23910",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23910",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "2408 DANFORTH AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Jan 2002",
+      "price_text": "$1,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Despina Giannopoulos"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "69 Westlake Ave, Ste 4",
+        "Toronto, Ontario",
+        "M4C 4P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Don Valley Pharmacy Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Despina Giannopoulos",
+        "2408 Danforth Ave",
+        "Toronto, Ontario",
+        "M4C 1K9"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 456-E, Part Lot 14",
+      "As in Inst No CA-86311",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 095 510 03900",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4310 / 4952",
+      "rt_id": "RT23910"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "2408 DANFORTH AVE",
+    "postcode": "M4C 1K9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/03/2002",
+    "desc": "Retail/Res Bldg",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 095 510 03900"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "2408 DANFORTH AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Jan 2002",
+    "note": "Related Parties",
+    "description": "Retail/Res Bldg",
+    "seller_lines": [
+      "Despina Giannopoulos"
+    ],
+    "buyer_lines": [
+      "Don Valley Pharmacy Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

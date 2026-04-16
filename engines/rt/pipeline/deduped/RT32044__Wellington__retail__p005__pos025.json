@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT32044",
+  "source_folder": "Wellington/retail/p005",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32044",
+      "source_folder": "Wellington/retail/p005",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 DOVERCLIFFE RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "01 Oct 2003",
+      "price_text": "$740,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "724941 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Heung Joon Lee",
+        "280 Sheppard Ave E, Ste 205",
+        "Toronto, Ontario",
+        "M2N 3B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hellenic Canadian Community of Guelph Inc     519-824-7400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: D. Karayannopoulas",
+        "Vorvis Anderson Gray Armstrong LLP",
+        "5 Douglas St",
+        "Guelph, Ontario",
+        "N1H 6J9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - storey; 13 units 13,000 sf @ $57"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 653, Block E",
+      "",
+      "1.72 acre"
+    ],
+    "arn_text": "23 08 060 008 08015",
+    "consideration_lines": [
+      "cash: $370,000     assumed/vtb debt: $370,000"
+    ],
+    "broker_lines": [
+      "Re/Max Realty Specialists: Ron MacDonald, 519-837-1300"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT320/RT32044/photo.jpg"
+    },
+    "footer": {
+      "page_position": "226 / 269",
+      "rt_id": "RT32044"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "50 DOVERCLIFFE RD",
+    "postcode": "N1G 3A6",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "10/01/2003",
+    "desc": "Retail Plaza - storey; 13 units 13,000 sf @ $57",
+    "bldg": "13,000 sf",
+    "acreage": "1.72",
+    "consid": "740000",
+    "cash": "370000",
+    "debt": "370000",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 060 008 08015"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "50 DOVERCLIFFE RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "01 Oct 2003",
+    "note": "",
+    "description": "Retail Plaza - storey; 13 units 13,000 sf @ $57",
+    "seller_lines": [
+      "724941 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Hellenic Canadian Community of Guelph Inc"
+    ],
+    "price_text": "$740,000"
+  }
+}

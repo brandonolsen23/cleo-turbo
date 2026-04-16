@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT20412",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20412",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "560 - 572 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "19 Jan 2001",
+      "price_text": "$3,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Truscan Property Corp     416-308-1912"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: John Harris",
+        "222 Bay St, 20th Flr",
+        "Toronto, Ontario",
+        "M5K 1A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Northgate-Glengrove Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Clark",
+        "130 Adelaide St W, Ste 3302",
+        "Toronto, Ontario",
+        "M5H 3P5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1702, Blocks 3 & 4",
+      "",
+      "NE corner at King and Conestogo Rd",
+      "",
+      "2.46 acre"
+    ],
+    "arn_text": "30 16 011 875 01000",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $2,775,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT204/RT20412/photo.jpg"
+    },
+    "footer": {
+      "page_position": "703 / 752",
+      "rt_id": "RT20412"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "560 - 572 KING ST N",
+    "postcode": "N2L 6L3",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "01/19/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.46",
+    "consid": "3700000",
+    "cash": "925000",
+    "debt": "2775000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 011 875 01000"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "560 - 572 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "19 Jan 2001",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Truscan Property Corp"
+    ],
+    "buyer_lines": [
+      "Northgate-Glengrove Corp"
+    ],
+    "price_text": "$3,700,000"
+  }
+}

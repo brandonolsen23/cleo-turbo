@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT106127",
+  "source_folder": "Leeds/all/p024",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT106127",
+      "source_folder": "Leeds/all/p024",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p024/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "7385 QUAKER RD"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "29 Jan 2015",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Bas-Tim Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Bastiaansen",
+        "7942 Townsend Line, RR 3",
+        "Thedford, Ontario",
+        "N0M 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - NER, Part Lot 21",
+      "Except:",
+      "Inst No PP-877",
+      "",
+      "PIN: 43058-0061",
+      "",
+      "101.77 acre"
+    ],
+    "arn_text": "38 41 041 006 08600",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $3,500,000   rate: 18.0% per annum.",
+      "registered: 01/29/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1186 / 1916",
+      "rt_id": "RT106127"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "7385 QUAKER RD",
+    "postcode": "N0M 2N0",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "01/29/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.77",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "43058-0061",
+    "rollno": "38 41 041 006 08600"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "7385 QUAKER RD"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "29 Jan 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Bas-Tim Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT122026",
+  "source_folder": "Cochrane/all/p081",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT122026",
+      "source_folder": "Cochrane/all/p081",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p081/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "6829 & 6835 HIRAM DR",
+        "6841, 6847 & 6855 HIRAM DR"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "30 Dec 2016",
+      "price_text": "$1,700,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Marathon Drilling Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David McPhedran",
+        "6847 Hiram Dr",
+        "Ottawa, Ontario",
+        "K4P 1A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4202198 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David McPhedran",
+        "6393 Emerald Links Dr",
+        "Ottawa, Ontario",
+        "K4M 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-5427, Parts 1-10",
+      "Plan 4R-28109, Parts 10, 11, 15-22",
+      "",
+      "PIN: 04319-0721 +",
+      "",
+      "6.64 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $103,624     assumed/vtb debt: $1,558,521",
+      "other: $37,855",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/30/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4024 / 10920",
+      "rt_id": "RT122026"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "6829 & 6835 HIRAM DR, 6841, 6847 & 6855 HIRAM DR",
+    "postcode": "K4P 1A2",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "12/30/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.64",
+    "consid": "1700000",
+    "cash": "103624",
+    "debt": "1558521",
+    "note": "Related Parties",
+    "pin": "04319-0721+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "6829 & 6835 HIRAM DR",
+      "6841, 6847 & 6855 HIRAM DR"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "30 Dec 2016",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Marathon Drilling Co Ltd"
+    ],
+    "buyer_lines": [
+      "4202198 Canada Ltd"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

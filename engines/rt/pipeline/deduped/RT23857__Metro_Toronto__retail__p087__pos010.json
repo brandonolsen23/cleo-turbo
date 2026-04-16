@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT23857",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23857",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "463 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Jan 2002",
+      "price_text": "$1,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Chung & Hui Kiang"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8 Ardwold Gate",
+        "Richmond Hill, Ontario",
+        "L4B 2J8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sun Shing Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Kiang",
+        "8 Ardwold Gate",
+        "Richmond Hill, Ontario",
+        "L4B 2J8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-171, Part Lots 21-23",
+      "As in Deed No 33649-EP"
+    ],
+    "arn_text": "19 04 065 240 01100",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4311 / 4952",
+      "rt_id": "RT23857"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "463 DUNDAS ST W",
+    "postcode": "M5T 1G8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/02/2002",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1000000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 065 240 01100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "463 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Jan 2002",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Chung & Hui Kiang"
+    ],
+    "buyer_lines": [
+      "Sun Shing Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

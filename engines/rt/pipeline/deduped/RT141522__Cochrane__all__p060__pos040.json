@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT141522",
+  "source_folder": "Cochrane/all/p060",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT141522",
+      "source_folder": "Cochrane/all/p060",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p060/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "582 SOMERSET ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "13 Mar 2019",
+      "price_text": "$890,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2343978 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vasily Kanellos",
+        "582 Somerset St W",
+        "Ottawa, Ontario",
+        "K1R 5K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30671,",
+      "Part Lots 9 & 10,",
+      "S/S Somerset St",
+      "As in Inst No N-730759",
+      "",
+      "PIN: 04121-0069",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "06 14 063 001 25400",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $414,640",
+      "other: $475,360",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $667,500   rate: 5.59% per annum.",
+      "registered: 03/13/2019   due: 04/05/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2991 / 10920",
+      "rt_id": "RT141522"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "582 SOMERSET ST",
+    "postcode": "K1R 5K2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/13/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "890000",
+    "cash": "",
+    "debt": "414640",
+    "note": "Related Parties",
+    "pin": "04121-0069",
+    "rollno": "06 14 063 001 25400"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "582 SOMERSET ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "13 Mar 2019",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2343978 Ontario Inc"
+    ],
+    "price_text": "$890,000"
+  }
+}

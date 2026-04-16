@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT178708",
+  "source_folder": "Leeds/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178708",
+      "source_folder": "Leeds/retail/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1882 COUNTY RD 2",
+        "1882 HIGHWAY 2",
+        "1882 HWY 2"
+      ],
+      "city_region": "Elizabethtown-Kitley : Leeds",
+      "date_text": "01 Jun 2023",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ogilivie Realty Subco Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1110 St Laurent Blvd",
+        "Ottawa, Ontario",
+        "K1K 3B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Greenidge Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Matthew Greenidge",
+        "775 Pembroke St E",
+        "Pembroke, Ontario",
+        "K8A 3L8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 3",
+      "As in Inst Nos:",
+      "LR-153460 & LR-197419",
+      "",
+      "PIN: 44160-0189",
+      "",
+      "2.73 acre"
+    ],
+    "arn_text": "08 01 000 010 04700",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: James W Lapointe Motor Holdings Inc",
+      "principal: $1,000,000   rate: 5.5% per annum.",
+      "registered: 06/01/2023   due: 05/30/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178708/0728_102205.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178708/0728_102206.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178708/0728_102302.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178708/0728_102303.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178708/0728_102421.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1787/RT178708/air1.jpg",
+        "/assets/files/RT17/RT1787/RT178708/air2.jpg",
+        "/assets/files/RT17/RT1787/RT178708/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 40",
+      "rt_id": "RT178708"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1882 COUNTY RD 2, 1882 HIGHWAY 2, 1882 HWY 2",
+    "postcode": "",
+    "municipality": "Elizabethtown-Kitley",
+    "region": "Leeds",
+    "date": "06/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.73",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "44160-0189",
+    "rollno": "08 01 000 010 04700"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1882 COUNTY RD 2",
+      "1882 HIGHWAY 2",
+      "1882 HWY 2"
+    ],
+    "city_region": "Elizabethtown-Kitley : Leeds",
+    "date_text": "01 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ogilivie Realty Subco Ltd"
+    ],
+    "buyer_lines": [
+      "Greenidge Realty Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

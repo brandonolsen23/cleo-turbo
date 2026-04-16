@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT102626",
+  "source_folder": "Cochrane/all/p103",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT102626",
+      "source_folder": "Cochrane/all/p103",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p103/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "126 SECOND AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 May 2014",
+      "price_text": "$575,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Dunadd's Boar Ltd",
+        "Malcolm MacTavish"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Malcom MacTavish",
+        "122 Second Ave",
+        "Ottawa, Ontario",
+        "K1S 2H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-9189",
+      "Part 2, S/S Second Ave",
+      "",
+      "PIN: 04138-0052",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "06 14 052 401 52100",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $575,000",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $540,000   rate: Prime plus 7.0% per annum.",
+      "registered: 05/28/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5132 / 10920",
+      "rt_id": "RT102626"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "126 SECOND AVE",
+    "postcode": "K1S 2H5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/28/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "575000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04138-0052",
+    "rollno": "06 14 052 401 52100"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "126 SECOND AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 May 2014",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Dunadd's Boar Ltd",
+      "Malcolm MacTavish"
+    ],
+    "price_text": "$575,000"
+  }
+}

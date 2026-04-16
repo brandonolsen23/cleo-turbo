@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT25893",
+  "source_folder": "Metro_Toronto/retail/p084",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25893",
+      "source_folder": "Metro_Toronto/retail/p084",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p084/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "572 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Jun 2002",
+      "price_text": "$1,280,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hensas Properties Corp     416-925-7074"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Karl Hens",
+        "94 Crescent Rd, Ste 8",
+        "Toronto, Ontario",
+        "M4W 1T5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1525478 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yong-Nam Hur",
+        "572 Bloor St W",
+        "Toronto, Ontario",
+        "M6G 1K1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 8,160 sf @ $157",
+      "",
+      "Bldg size does not include finished basement of 4080 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 219, Part Lot 18",
+      "As in Inst No CT-454708",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 051 080 02300",
+    "consideration_lines": [
+      "cash: $1,280,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4192 / 4952",
+      "rt_id": "RT25893"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "572 BLOOR ST W",
+    "postcode": "M6G 1K1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/27/2002",
+    "desc": "Retail Bldg - 2 storey; 8,160 sf @ $157",
+    "bldg": "8,160 sf",
+    "acreage": ".09",
+    "consid": "1280000",
+    "cash": "1280000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 051 080 02300"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "572 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Jun 2002",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 8,160 sf @ $157",
+    "seller_lines": [
+      "Hensas Properties Corp"
+    ],
+    "buyer_lines": [
+      "1525478 Ontario Inc"
+    ],
+    "price_text": "$1,280,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT197744",
+  "source_folder": "Cochrane/all/p001",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197744",
+      "source_folder": "Cochrane/all/p001",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "506 - 510 RICHARDSON AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "09 Mar 2026",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2160255 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Stapledon Cres",
+        "Ottawa, Ontario",
+        "K2H 9L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bluesky Empire Ltd     613-728-1511"
+      ],
+      "trade_name": "Bluesky Dental",
+      "contact_lines": [
+        "Attn: Mark McCullough",
+        "1620 Scott St, Unit 20",
+        "Ottawa, Ontario",
+        "K1Y 4S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 324, Lot 15",
+      "",
+      "PIN: 03966-0064",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 095 002 45700",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,400,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/09/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "24 / 10920",
+      "rt_id": "RT197744"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "506 - 510 RICHARDSON AVE",
+    "postcode": "K2B 5H1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/09/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "03966-0064",
+    "rollno": "06 14 095 002 45700"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "506 - 510 RICHARDSON AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "09 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2160255 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Bluesky Empire Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT27227",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27227",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "3505 UPPER MIDDLE RD"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "09 Oct 2002",
+      "price_text": "$11,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2730979 Canada Inc     905-275-6600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Robertson",
+        "GWL Realty Advisors Inc",
+        "90 Burnhamthorpe Rd W, Ste 206",
+        "Mississauga, Ontario",
+        "L5B 3C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioKim Holdings (Ontario) Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 24 units 69,857 sf @ $165"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-10440, Parts 1-6",
+      "Plan 20R-10723, Parts 1-4",
+      "Plan 20M-466, Block 31",
+      "",
+      "6.68 acre"
+    ],
+    "arn_text": "24 02 090 901 03100",
+    "consideration_lines": [
+      "cash: $11,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "507 / 613",
+      "rt_id": "RT27227"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "3505 UPPER MIDDLE RD",
+    "postcode": "L7M 4C6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "10/09/2002",
+    "desc": "Retail Plaza - 1 storey; 24 units 69,857 sf @ $165",
+    "bldg": "69,857 sf",
+    "acreage": "6.68",
+    "consid": "11500000",
+    "cash": "11500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 090 901 03100"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "3505 UPPER MIDDLE RD"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "09 Oct 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 24 units 69,857 sf @ $165",
+    "seller_lines": [
+      "2730979 Canada Inc"
+    ],
+    "buyer_lines": [
+      "RioKim Holdings (Ontario) Inc"
+    ],
+    "price_text": "$11,500,000"
+  }
+}

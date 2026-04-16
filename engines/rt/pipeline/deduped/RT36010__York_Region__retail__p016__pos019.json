@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT36010",
+  "source_folder": "York_Region/retail/p016",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36010",
+      "source_folder": "York_Region/retail/p016",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "24 WOODSTREAM BLVD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "08 Jun 2004",
+      "price_text": "$2,422,794",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1096888 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Tam",
+        "350 Highway 7 E, Ste 301",
+        "Richmond Hill, Ontario",
+        "L4B 3N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2017664 Ontario Inc     416-743-1211"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Giuseppe Zanchin",
+        "Woodbridge Toyota",
+        "7685 Martingrove Rd",
+        "Toronto, Ontario",
+        "L4L 1B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-11015, Parts 8-10",
+      "",
+      "2.66 acre"
+    ],
+    "arn_text": "19 28 000 320 79400",
+    "consideration_lines": [
+      "cash: $2,422,794     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT360/RT36010/air1.jpg",
+        "/assets/files/RT3/RT360/RT36010/air2.jpg",
+        "/assets/files/RT3/RT360/RT36010/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT360/RT36010/photo.jpg"
+    },
+    "footer": {
+      "page_position": "770 / 984",
+      "rt_id": "RT36010"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "24 WOODSTREAM BLVD",
+    "postcode": "L4L 8C4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/08/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.66",
+    "consid": "2422794",
+    "cash": "2422794",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 320 79400"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "24 WOODSTREAM BLVD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "08 Jun 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1096888 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2017664 Ontario Inc"
+    ],
+    "price_text": "$2,422,794"
+  }
+}

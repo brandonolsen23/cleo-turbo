@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT192465",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192465",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "201 WEST GRAND BLVD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "30 May 2025",
+      "price_text": "$1,950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2405993 Ontario Ltd",
+        "Hang & Yun Liu",
+        "Zi Wei Xia"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Mariana Samaan",
+        "Mariana Samaan Law Firm",
+        "Barrister & Solicitor",
+        "635 Erie St E, Unit A",
+        "Windsor, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001163862 Ontario Inc     519-735-6011"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chadi Aboukassm",
+        "133 McMurren Cres",
+        "Tecumseh, Ontario",
+        "N8N 4R5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-13239, Parts 2 & 3",
+      "",
+      "PIN: 01306-0956",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "37 39 080 040 01600",
+    "consideration_lines": [
+      "cash: $1,950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,250,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/30/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 460",
+      "rt_id": "RT192465"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "201 WEST GRAND BLVD",
+    "postcode": "N9E 3W7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "05/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".68",
+    "consid": "1950000",
+    "cash": "1950000",
+    "debt": "",
+    "note": "",
+    "pin": "01306-0956",
+    "rollno": "37 39 080 040 01600"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "201 WEST GRAND BLVD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "30 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2405993 Ontario Ltd",
+      "Hang & Yun Liu",
+      "Zi Wei Xia"
+    ],
+    "buyer_lines": [
+      "1001163862 Ontario Inc"
+    ],
+    "price_text": "$1,950,000"
+  }
+}

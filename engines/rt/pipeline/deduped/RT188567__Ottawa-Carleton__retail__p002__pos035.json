@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT188567",
+  "source_folder": "Ottawa-Carleton/retail/p002",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188567",
+      "source_folder": "Ottawa-Carleton/retail/p002",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p002/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "1724 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "14 Nov 2024",
+      "price_text": "$1,100,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Subhkin Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sandeep Aggerwal",
+        "5330 Canotek Rd, Unit 21",
+        "Ottawa, Ontario",
+        "K1J 9C3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG - OF, Part Lot 22",
+      "Plan 31, Part Lots 18 & 19",
+      "As in Inst No N-327915",
+      "",
+      "PIN: 04069-0363",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "06 14 116 301 59000",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,100,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "86 / 1141",
+      "rt_id": "RT188567"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "1724 BANK ST",
+    "postcode": "K1V 7Y6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/14/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "1100000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04069-0363",
+    "rollno": "06 14 116 301 59000"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "1724 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "14 Nov 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Subhkin Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

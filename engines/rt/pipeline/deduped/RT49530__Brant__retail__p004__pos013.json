@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT49530",
+  "source_folder": "Brant/retail/p004",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49530",
+      "source_folder": "Brant/retail/p004",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "160 BRANTWOOD PARK RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "22 Jun 2006",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "HC Pang Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Pang",
+        "7 Kings Cross",
+        "Richmond Hill, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2097823 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paulo Vieira",
+        "2-3215 Dixie Rd, Ste 405",
+        "Mississauga, Ontario",
+        "L4Y 2B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lots 38 & 39",
+      "Plan 2R-2052, Part 1",
+      "",
+      "1.38 acre"
+    ],
+    "arn_text": "29 06 030 019 14250",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $455,000   rate: Prime plus 1.0% per annum",
+      "registered: 06/22/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49530/0805_163800.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49530/0805_163826.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49530/0805_163902.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49530/0805_163903.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49530/0805_164030.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "164 / 195",
+      "rt_id": "RT49530"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "160 BRANTWOOD PARK RD",
+    "postcode": "N3P 1N7",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "06/22/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.38",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 019 14250"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "160 BRANTWOOD PARK RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "22 Jun 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "HC Pang Investments Inc"
+    ],
+    "buyer_lines": [
+      "2097823 Ontario Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

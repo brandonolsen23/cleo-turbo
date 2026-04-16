@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT88806",
+  "source_folder": "Kitchener-Waterloo/retail/p009",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT88806",
+      "source_folder": "Kitchener-Waterloo/retail/p009",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p009/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1575 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "29 Oct 2012",
+      "price_text": "$1,200,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Finest Sausage & Meat Ltd     519-748-9003"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Boza Gedja",
+        "268 Trillium Dr",
+        "Kitchener, Ontario",
+        "N2E 1X2"
+      ]
+    },
+    "description_lines": [
+      "Butcher Shop - 1 storey; 5,600 sf @ $214",
+      "",
+      "5,600 sf plus 2,800 sf lower level",
+      "The purchaser will operate the butcher shop"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "German Co Tract, Part Lot 123",
+      "As in Inst No 814361",
+      "",
+      "PIN: 22543-0003",
+      "",
+      "SE corner Victoria St N and Forwell Rd",
+      "",
+      "0.95 acre"
+    ],
+    "arn_text": "30 12 060 016 63100",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT888/RT88806/1230_111351.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT888/RT88806/1230_111435.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT888/RT88806/1230_111509.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT888/RT88806/air1.jpg",
+        "/assets/files/RT8/RT888/RT88806/air2.jpg",
+        "/assets/files/RT8/RT888/RT88806/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "403 / 752",
+      "rt_id": "RT88806"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1575 VICTORIA ST N",
+    "postcode": "N2B 3E6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "10/29/2012",
+    "desc": "Butcher Shop - 1 storey; 5,600 sf @ $214",
+    "bldg": "5,600 sf",
+    "acreage": ".95",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "22543-0003",
+    "rollno": "30 12 060 016 63100"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1575 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "29 Oct 2012",
+    "note": "Purchased Business",
+    "description": "Butcher Shop - 1 storey; 5,600 sf @ $214",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Finest Sausage & Meat Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

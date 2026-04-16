@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT27728",
+  "source_folder": "York_Region/retail/p017",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27728",
+      "source_folder": "York_Region/retail/p017",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "8 SHADLOCK ST"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "04 Nov 2002",
+      "price_text": "$1,620,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Haon Holding Corp (Toronto)"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Teresa Wong",
+        "230 Sheppard Ave W, Ste 300",
+        "Toronto, Ontario",
+        "M2N 1N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1043863 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Govind Sharma",
+        "40 Ravenhill Cres",
+        "Markham, Ontario",
+        "L3S 2T9"
+      ]
+    },
+    "description_lines": [
+      "Office/Retail Plaza - 1 storey; 14,338 sf @ $113"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2637, Block 156",
+      "Together with:",
+      "Plan 65R-5032, Part 2",
+      "As in Inst No MA-71723",
+      "",
+      "NW corner Shadlock St and Steeles Ave E",
+      "",
+      "1.49 acre"
+    ],
+    "arn_text": "19 36 030 210 30100",
+    "consideration_lines": [
+      "cash: $1,620,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT277/RT27728/photo.jpg"
+    },
+    "footer": {
+      "page_position": "834 / 984",
+      "rt_id": "RT27728"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "8 SHADLOCK ST",
+    "postcode": "L3S 3K9",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/04/2002",
+    "desc": "Office/Retail Plaza - 1 storey; 14,338 sf @ $113",
+    "bldg": "14,338 sf",
+    "acreage": "1.49",
+    "consid": "1620000",
+    "cash": "1620000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 030 210 30100"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "8 SHADLOCK ST"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "04 Nov 2002",
+    "note": "",
+    "description": "Office/Retail Plaza - 1 storey; 14,338 sf @ $113",
+    "seller_lines": [
+      "Haon Holding Corp (Toronto)"
+    ],
+    "buyer_lines": [
+      "1043863 Ontario Inc"
+    ],
+    "price_text": "$1,620,000"
+  }
+}

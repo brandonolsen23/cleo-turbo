@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT177082",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177082",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "410 QUEEN ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "19 Apr 2023",
+      "price_text": "$800,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "425 Grand Ave W, Ste 149",
+        "Chatham, Ontario",
+        "N7L 0B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000414136 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexandr Shcolyar",
+        "44 Bond Cres",
+        "Richmond Hill, Ontario",
+        "L4E 3K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 27, Lots 78 & 79",
+      "Except:",
+      "Plan 24R-1317, Part 15",
+      "",
+      "PIN: 00507-0309",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "36 42 020 017 15800",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "chattels: $400,000",
+      "",
+      "chargee: Rathcliffe Properties Ltd",
+      "principal: $600,000   rate: Months 1-18, 10.0% per annum with monthly payments of $5,000. Months 19 & 20, 14.0% per annum with monthly payments of $7,000.",
+      "registered: 04/19/2023   due: 01/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "24 / 77",
+      "rt_id": "RT177082"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "410 QUEEN ST",
+    "postcode": "N7M 2H9",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "04/19/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "00507-0309",
+    "rollno": "36 42 020 017 15800"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "410 QUEEN ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "19 Apr 2023",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1000414136 Ontario Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

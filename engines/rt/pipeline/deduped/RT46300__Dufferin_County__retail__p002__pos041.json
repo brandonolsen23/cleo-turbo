@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT46300",
+  "source_folder": "Dufferin_County/retail/p002",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46300",
+      "source_folder": "Dufferin_County/retail/p002",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Dufferin_County/retail/p002/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "633240 HWY 10/24",
+        "CONC 3 - WHS",
+        "PART LOT 5"
+      ],
+      "city_region": "Mono : Dufferin County",
+      "date_text": "10 Jan 2006",
+      "price_text": "$1,950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "J. Holland Motors Ltd     905-238-2886"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Holland",
+        "Royal Pontiac Buick",
+        "1220 Eglinton Ave E",
+        "Mississauga, Ontario",
+        "L4W 2M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Barry McKay Automotive Services Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Barry McKay"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - WHS, Part Lot 5",
+      "Plan 7R-5452, Part 1"
+    ],
+    "arn_text": "22 12 000 005 03250",
+    "consideration_lines": [
+      "cash: $1,950,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "92 / 104",
+      "rt_id": "RT46300"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "633240 HWY 10/24, CONC 3 - WHS, PART LOT 5",
+    "postcode": "",
+    "municipality": "Mono",
+    "region": "Dufferin County",
+    "date": "01/10/2006",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1950000",
+    "cash": "1950000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "22 12 000 005 03250"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "633240 HWY 10/24",
+      "CONC 3 - WHS",
+      "PART LOT 5"
+    ],
+    "city_region": "Mono : Dufferin County",
+    "date_text": "10 Jan 2006",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "J. Holland Motors Ltd"
+    ],
+    "buyer_lines": [
+      "Barry McKay Automotive Services Inc"
+    ],
+    "price_text": "$1,950,000"
+  }
+}

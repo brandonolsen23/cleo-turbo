@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT56987",
+  "source_folder": "Cochrane/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56987",
+      "source_folder": "Cochrane/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "77 WATERLOO RD"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "02 Aug 2007",
+      "price_text": "$2,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ken Silver",
+        "2180 Yonge St, 15th Flr",
+        "PO Box 770, Stn K",
+        "Toronto, Ontario",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2138202 Ontario Inc     905-854-9991"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Bullock",
+        "Glengate Farms",
+        "PO Box 220",
+        "Campbellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "description_lines": [
+      "Former Canadian Tire Store - 45,000 sf @ $64",
+      "",
+      "Vacant",
+      "",
+      "30,000 sf mezzanine storage space not included, considered unleasable.",
+      "",
+      "Purchaser to subdivide into 2-3 units and lease. Also looking to build restaurant pad up to 4,000 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 1",
+      "Plan 6R-5067, Parts 1-10, 13 & 15",
+      "Except:",
+      "Plan 6R-8081, Parts 1 & 2",
+      "",
+      "5.04 acre"
+    ],
+    "arn_text": "56 27 050 030 03500",
+    "consideration_lines": [
+      "cash: $2,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $3,300,000   rate: Prime plus 1.25% per annum",
+      "registered: 08/02/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 21",
+      "rt_id": "RT56987"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "77 WATERLOO RD",
+    "postcode": "P4N 8M4",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "08/02/2007",
+    "desc": "Former Canadian Tire Store - 45,000 sf @ $64",
+    "bldg": "45,000 sf",
+    "acreage": "5.04",
+    "consid": "2900000",
+    "cash": "2900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "56 27 050 030 03500"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "77 WATERLOO RD"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "02 Aug 2007",
+    "note": "",
+    "description": "Former Canadian Tire Store - 45,000 sf @ $64",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "2138202 Ontario Inc"
+    ],
+    "price_text": "$2,900,000"
+  }
+}

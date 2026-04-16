@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT187149",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187149",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 MAIN ST E"
+      ],
+      "city_region": "Kingsville : Essex County",
+      "date_text": "09 Sep 2024",
+      "price_text": "$13,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "LOCA Properties (AB-ON) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Oak Street Real Estate Capital, LLC",
+        "30 N LaSalle St, Ste 4140",
+        "Chicago, IL",
+        "USA - 60602"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000112999 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darwish Alami",
+        "1 Hanna St W",
+        "Windsor, Ontario",
+        "N8X 1C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-126, Block A",
+      "",
+      "PIN: 75175-0020",
+      "",
+      "5.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $13,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $12,387,185   rate: Prime plus 10.0% per annum.",
+      "registered: 09/09/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 460",
+      "rt_id": "RT187149"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "300 MAIN ST E",
+    "postcode": "N9Y 3S9",
+    "municipality": "Kingsville",
+    "region": "Essex County",
+    "date": "09/09/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.23",
+    "consid": "13600000",
+    "cash": "13600000",
+    "debt": "",
+    "note": "",
+    "pin": "75175-0020",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "300 MAIN ST E"
+    ],
+    "city_region": "Kingsville : Essex County",
+    "date_text": "09 Sep 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "LOCA Properties (AB-ON) Inc"
+    ],
+    "buyer_lines": [
+      "1000112999 Ontario Inc"
+    ],
+    "price_text": "$13,600,000"
+  }
+}

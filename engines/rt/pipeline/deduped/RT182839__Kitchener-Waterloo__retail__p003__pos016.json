@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT182839",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182839",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "454 HESPELER RD",
+        "UNIT P103"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "04 Dec 2023",
+      "price_text": "$872,664",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2813026 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "250 Dundas St, Ste 402",
+        "Mississauga, Ontario",
+        "L5B 1J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cloud Business Solutions Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Manan Agrawal",
+        "7 Edmonton St",
+        "Brampton, Ontario",
+        "L6Y 5K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 779",
+      "Level 1, Unit 16",
+      "",
+      "PIN: 23779-0016"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $872,664     assumed/vtb debt: $0",
+      "",
+      "chargee: 2813026 Ontario Inc",
+      "principal: $604,072   rate: 9.0% per annum.",
+      "registered: 12/04/2023   due: 06/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182839/0413_151840.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182839/0413_151913.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182839/0413_152018.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182839/0413_152023.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182839/0413_152202.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182839/0413_152210.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "117 / 752",
+      "rt_id": "RT182839"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "454 HESPELER RD, UNIT P103",
+    "postcode": "N1R 0E3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "12/04/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "872664",
+    "cash": "872664",
+    "debt": "",
+    "note": "",
+    "pin": "23779-0016",
+    "rollno": ""
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "454 HESPELER RD",
+      "UNIT P103"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "04 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2813026 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Cloud Business Solutions Ltd"
+    ],
+    "price_text": "$872,664"
+  }
+}

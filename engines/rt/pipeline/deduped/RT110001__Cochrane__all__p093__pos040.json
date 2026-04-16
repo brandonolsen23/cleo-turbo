@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT110001",
+  "source_folder": "Cochrane/all/p093",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT110001",
+      "source_folder": "Cochrane/all/p093",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p093/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 4 - OF",
+        "PART LOT 5"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "17 Jul 2015",
+      "price_text": "$790,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Creme Homes Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: David Chick",
+        "c/o 371A Richmond Rd, Unit 1",
+        "Ottawa, Ontario",
+        "K2A 0E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Navan Commercial Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Chick",
+        "c/o 371A Richmond Rd, Unit 1",
+        "Ottawa, Ontario",
+        "K2A 0E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - OF, Part Lot 5",
+      "Plan 4R-28831, Part 2",
+      "",
+      "PIN: 04352-2297"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $790,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4641 / 10920",
+      "rt_id": "RT110001"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "CONC 4 - OF, PART LOT 5",
+    "postcode": "",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "07/17/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "790000",
+    "cash": "790000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04352-2297",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "CONC 4 - OF",
+      "PART LOT 5"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "17 Jul 2015",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Creme Homes Inc"
+    ],
+    "buyer_lines": [
+      "Navan Commercial Inc"
+    ],
+    "price_text": "$790,000"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT153212",
+  "source_folder": "Leeds/all/p013",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT153212",
+      "source_folder": "Leeds/all/p013",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p013/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1",
+        "PART LOT 22"
+      ],
+      "city_region": "Brooke : Lambton",
+      "date_text": "03 Jul 2020",
+      "price_text": "$720,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2426622 Ontario Ltd     519-847-5152"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jason McRobert",
+        "3399 Buttonwood Dr",
+        "Alvinston, Ontario",
+        "N0N 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 22",
+      "",
+      "PIN: 43364-0096",
+      "",
+      "100.79 acre"
+    ],
+    "arn_text": "38 15 120 010 05700",
+    "consideration_lines": [
+      "cash: $720,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,000,000   rate: 18.0% per annum.",
+      "registered: 07/03/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT15/RT1532/RT153212/air1.jpg",
+        "/assets/files/RT15/RT1532/RT153212/air2.jpg",
+        "/assets/files/RT15/RT1532/RT153212/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "616 / 1916",
+      "rt_id": "RT153212"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "CONC 1, PART LOT 22",
+    "postcode": "",
+    "municipality": "Brooke",
+    "region": "Lambton",
+    "date": "07/03/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.79",
+    "consid": "720000",
+    "cash": "720000",
+    "debt": "",
+    "note": "",
+    "pin": "43364-0096",
+    "rollno": "38 15 120 010 05700"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "CONC 1",
+      "PART LOT 22"
+    ],
+    "city_region": "Brooke : Lambton",
+    "date_text": "03 Jul 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2426622 Ontario Ltd"
+    ],
+    "price_text": "$720,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT75833",
+  "source_folder": "Cochrane/all/p135",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT75833",
+      "source_folder": "Cochrane/all/p135",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p135/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "203 MACLAREN ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "30 Nov 2010",
+      "price_text": "$685,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "203 MacLaren Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Seth Cwinn",
+        "190 Somerset St W, Ste 205",
+        "Ottawa, Ontario",
+        "K2P 0J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2258358 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gilles Hebert",
+        "203 Maclaren St",
+        "Ottawa, Ontario",
+        "K2P 0L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-24328, Parts 5 & 6",
+      "",
+      "PIN: 04118-0296",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "06 14 042 001 07700",
+    "consideration_lines": [
+      "cash: $685,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $740,000   rate: Prime plus 5.75% per annum",
+      "registered: 11/30/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT758/RT75833/0108_080747.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT758/RT75833/0108_080801.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT758/RT75833/0108_080817.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT758/RT75833/air1.jpg",
+        "/assets/files/RT7/RT758/RT75833/air2.jpg",
+        "/assets/files/RT7/RT758/RT75833/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6702 / 10920",
+      "rt_id": "RT75833"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "203 MACLAREN ST",
+    "postcode": "K2P 0L4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/30/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "685000",
+    "cash": "685000",
+    "debt": "",
+    "note": "",
+    "pin": "04118-0296",
+    "rollno": "06 14 042 001 07700"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "203 MACLAREN ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "30 Nov 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "203 MacLaren Ltd"
+    ],
+    "buyer_lines": [
+      "2258358 Ontario Inc"
+    ],
+    "price_text": "$685,000"
+  }
+}

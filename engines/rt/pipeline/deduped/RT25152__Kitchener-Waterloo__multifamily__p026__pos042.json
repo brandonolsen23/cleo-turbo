@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT25152",
+  "source_folder": "Kitchener-Waterloo/multifamily/p026",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25152",
+      "source_folder": "Kitchener-Waterloo/multifamily/p026",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p026/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "25 THALER AVE",
+        "43 THALER AVE",
+        "61 THALER AVE"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "17 Apr 2002",
+      "price_text": "$1,567,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "518263 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter MacGregor",
+        "514 Oakridge Place",
+        "Waterloo, Ontario",
+        "N2L 4P2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4038274 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter MacGregor",
+        "514 Oakridge Place",
+        "Waterloo, Ontario",
+        "N2L 4P2"
+      ]
+    },
+    "description_lines": [
+      "Townhomes"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-2145, Parts 1-3",
+      "",
+      "3.22 acre"
+    ],
+    "arn_text": "30 12 030 018 31200 +",
+    "consideration_lines": [
+      "cash: $1,567,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1293 / 1449",
+      "rt_id": "RT25152"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "25 THALER AVE, 43 THALER AVE, 61 THALER AVE",
+    "postcode": "N2A 1R3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/17/2002",
+    "desc": "Townhomes",
+    "bldg": "",
+    "acreage": "3.22",
+    "consid": "1567000",
+    "cash": "1567000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "30 12 030 018 31200+"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "25 THALER AVE",
+      "43 THALER AVE",
+      "61 THALER AVE"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "17 Apr 2002",
+    "note": "Related Parties",
+    "description": "Townhomes",
+    "seller_lines": [
+      "518263 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "4038274 Canada Inc"
+    ],
+    "price_text": "$1,567,000"
+  }
+}

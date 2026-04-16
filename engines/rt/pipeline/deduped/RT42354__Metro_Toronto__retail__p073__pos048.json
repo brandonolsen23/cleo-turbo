@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT42354",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42354",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "901 - 911 JANE ST"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "10 Jun 2005",
+      "price_text": "$2,750,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "CIT Financial Ltd     905-633-2400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Guy Giroux",
+        "5035 South Service Rd",
+        "Burlington, Ontario",
+        "L7L 6M9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2072467 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gregory Chang",
+        "107 Citation Dr",
+        "North York, Ontario",
+        "M2K 1S9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - FTB, Part Lot 38",
+      "As in Inst No TB-702773",
+      "",
+      "0.57 acre"
+    ],
+    "arn_text": "19 14 072 370 03800",
+    "consideration_lines": [
+      "cash: $2,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $1,788,000   rate: Prime plus 3.0% per annum",
+      "registered: 06/10/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT423/RT42354/air1.jpg",
+        "/assets/files/RT4/RT423/RT42354/air2.jpg",
+        "/assets/files/RT4/RT423/RT42354/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT423/RT42354/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3649 / 4952",
+      "rt_id": "RT42354"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "901 - 911 JANE ST",
+    "postcode": "M6N 4C8",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "06/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".57",
+    "consid": "2750000",
+    "cash": "2750000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 14 072 370 03800"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "901 - 911 JANE ST"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "10 Jun 2005",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "CIT Financial Ltd"
+    ],
+    "buyer_lines": [
+      "2072467 Ontario Inc"
+    ],
+    "price_text": "$2,750,000"
+  }
+}

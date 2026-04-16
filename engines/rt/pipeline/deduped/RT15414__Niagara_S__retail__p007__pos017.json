@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT15414",
+  "source_folder": "Niagara_S/retail/p007",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15414",
+      "source_folder": "Niagara_S/retail/p007",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p007/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "5233 STANLEY AVE"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "31 Aug 1999",
+      "price_text": "$1,990,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "River Realty Development (1976) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stewart Branscombe",
+        "6746 Morrison St",
+        "PO Box 576",
+        "Niagara Falls, Ontario",
+        "L2E 6V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "603755 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David K. Scott",
+        "PO Box 38",
+        "Queenston, Ontario",
+        "L0S 1L0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza with Gas Bar"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-6471, Part 1",
+      "Plan 59R-4802, Parts 16-36, 39-51",
+      "As in RO-331199"
+    ],
+    "arn_text": "27 25 060 002 07400",
+    "consideration_lines": [
+      "cash: $1,990,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,190,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/21/2020   due: on demand",
+      "",
+      "chargee: Brassroots Capital Loan Corp",
+      "NHE Capital Corp",
+      "principal: $840,000   rate: 7.99% per annum.",
+      "registered: 08/21/2020   due: 02/01/2021",
+      "",
+      "chargee: Suture Sound Inc",
+      "principal: $486,500   rate: 3.0% per annum.",
+      "registered: 08/21/2020   due: 08/20/2030",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $700,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/17/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT154/RT15414/photo.jpg"
+    },
+    "footer": {
+      "page_position": "318 / 324",
+      "rt_id": "RT15414"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "5233 STANLEY AVE",
+    "postcode": "",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "08/31/1999",
+    "desc": "Retail Plaza with Gas Bar",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1990000",
+    "cash": "1990000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 25 060 002 07400"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "5233 STANLEY AVE"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "31 Aug 1999",
+    "note": "",
+    "description": "Retail Plaza with Gas Bar",
+    "seller_lines": [
+      "River Realty Development (1976) Inc"
+    ],
+    "buyer_lines": [
+      "603755 Ontario Inc"
+    ],
+    "price_text": "$1,990,000"
+  }
+}

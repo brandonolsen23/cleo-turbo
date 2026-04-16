@@ -1,0 +1,137 @@
+{
+  "rt_id": "RT16192",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT16192",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "585 WEBER ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "06 Dec 1999",
+      "price_text": "$3,550,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Community Centres Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert S. Green",
+        "2851 John St, Ste 1",
+        "Markham, Ontario",
+        "L3R 5R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Centrefund (Northfield) Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert S. Green",
+        "30 St Clair Ave W, Ste 1400",
+        "Toronto, Ontario",
+        "M4V 3A1"
+      ]
+    },
+    "description_lines": [
+      "Neighbourhood Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1428, Blocks A, B, C",
+      "",
+      "NW corner at Northfield Dr"
+    ],
+    "arn_text": "30 16 044 750 05000",
+    "consideration_lines": [
+      "cash: $1,410,611     assumed/vtb debt: $2,139,389",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $15,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/12/2021   due: on demand",
+      "",
+      "chargee: 2166973 Ontario Inc and 11 others",
+      "principal: $2,700,000   rate: 7.49% per annum.",
+      "registered: 07/16/2021   due: 07/13/2022",
+      "",
+      "chargee: Italian Canadian Savings & Credit Union Ltd",
+      "principal: $3,300,000   rate: 4.19% per annum.",
+      "registered: 07/16/2021   due: 08/01/2026",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/15/2021   due: on demand",
+      "",
+      "chargee: Conal Holdings Inc",
+      "principal: $5,000,000   rate: 5.0% per annum.",
+      "registered: 07/12/2021   due: 07/09/2022",
+      "",
+      "chargee: 2853719 Ontario Inc and 21 others",
+      "principal: $3,800,000   rate: 10.0% per annum.",
+      "registered: 07/16/2021   due: 07/16/2022",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $4,175,000   rate: RBC prime plus 3.0%, with a floor of 5.45% per annum.",
+      "registered: 07/15/2021   due: 08/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT161/RT16192/photo.jpg"
+    },
+    "footer": {
+      "page_position": "736 / 752",
+      "rt_id": "RT16192"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "585 WEBER ST N",
+    "postcode": "",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "12/06/1999",
+    "desc": "Neighbourhood Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3550000",
+    "cash": "1410611",
+    "debt": "2139389",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "30 16 044 750 05000"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "585 WEBER ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "06 Dec 1999",
+    "note": "Related Parties",
+    "description": "Neighbourhood Retail Plaza",
+    "seller_lines": [
+      "Community Centres Ltd"
+    ],
+    "buyer_lines": [
+      "Centrefund (Northfield) Corp"
+    ],
+    "price_text": "$3,550,000"
+  }
+}

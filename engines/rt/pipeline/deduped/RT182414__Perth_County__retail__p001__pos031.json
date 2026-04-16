@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT182414",
+  "source_folder": "Perth_County/retail/p001",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182414",
+      "source_folder": "Perth_County/retail/p001",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p001/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "480 QUEEN ST W"
+      ],
+      "city_region": "St. Marys : Perth County",
+      "date_text": "22 Dec 2023",
+      "price_text": "$1,362,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2594074 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "196614 Road 119",
+        "Lakeside, Ontario",
+        "N0M 2G0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000714183 Ontario Inc     519-284-2360"
+      ],
+      "trade_name": "The Hitching Post",
+      "contact_lines": [
+        "Attn: Mark Ross",
+        "480 Queen St W",
+        "St Marys, Ontario",
+        "N4X 1B4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44R-742, Part 3",
+      "Plan 217, Part Raglan St",
+      "As in Inst No R-205380",
+      "",
+      "PIN: 53278-0090",
+      "",
+      "1.14 acre"
+    ],
+    "arn_text": "31 16 000 080 24260",
+    "consideration_lines": [
+      "cash: $1,362,500     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/22/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182414/0804_124012.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182414/0804_124016.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182414/0804_124039.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182414/0804_124045.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182414/0804_124050.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "32 / 113",
+      "rt_id": "RT182414"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "480 QUEEN ST W",
+    "postcode": "N4X 1C4",
+    "municipality": "St. Marys",
+    "region": "Perth County",
+    "date": "12/22/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.14",
+    "consid": "1362500",
+    "cash": "1362500",
+    "debt": "",
+    "note": "",
+    "pin": "53278-0090",
+    "rollno": "31 16 000 080 24260"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "480 QUEEN ST W"
+    ],
+    "city_region": "St. Marys : Perth County",
+    "date_text": "22 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2594074 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000714183 Ontario Inc"
+    ],
+    "price_text": "$1,362,500"
+  }
+}

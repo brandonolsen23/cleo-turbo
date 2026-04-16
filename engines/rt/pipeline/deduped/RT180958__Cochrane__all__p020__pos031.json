@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT180958",
+  "source_folder": "Cochrane/all/p020",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180958",
+      "source_folder": "Cochrane/all/p020",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p020/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "308 HOLMWOOD AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "20 Oct 2023",
+      "price_text": "$1,765,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2750953 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Saeed Enjavi",
+        "c/o 508 Leimerk Ct",
+        "Manotick, Ontario",
+        "K4M 0B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 108654, Lot 82",
+      "",
+      "PIN: 04142-0080",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "06 14 052 601 05200",
+    "consideration_lines": [
+      "cash: $942,830     assumed/vtb debt: $822,170",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,147,250   rate: Prime plus 6.0% per annum.",
+      "registered: 10/20/2023   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,000,000   rate: Prime plus 10.0% per annum.",
+      "registered: 04/26/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "982 / 10920",
+      "rt_id": "RT180958"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "308 HOLMWOOD AVE",
+    "postcode": "K1S 2R3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/20/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1765000",
+    "cash": "942830",
+    "debt": "822170",
+    "note": "Related Parties",
+    "pin": "04142-0080",
+    "rollno": "06 14 052 601 05200"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "308 HOLMWOOD AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "20 Oct 2023",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2750953 Ontario Inc"
+    ],
+    "price_text": "$1,765,000"
+  }
+}

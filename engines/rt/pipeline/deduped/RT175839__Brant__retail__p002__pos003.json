@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT175839",
+  "source_folder": "Brant/retail/p002",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175839",
+      "source_folder": "Brant/retail/p002",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 MECHANIC ST",
+        "UNIT 1"
+      ],
+      "city_region": "Paris : Brant",
+      "date_text": "07 Feb 2023",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1290937 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3 Elm St, Unit 6",
+        "Paris, Ontario",
+        "N3L 2L6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 127",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 32827-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $675,000",
+      "",
+      "chargee: 1290937 Ontario Inc",
+      "principal: $641,539   rate: TD prime plus 2.0% per annum.",
+      "registered: 02/07/2023   due: 02/15/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121201.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121219.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121221.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121307.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121320.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121321.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1758/RT175839/0709_121343.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "54 / 195",
+      "rt_id": "RT175839"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "11 MECHANIC ST, UNIT 1",
+    "postcode": "N3L 1K1",
+    "municipality": "Paris",
+    "region": "Brant",
+    "date": "02/07/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "825000",
+    "cash": "150000",
+    "debt": "675000",
+    "note": "",
+    "pin": "32827-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "11 MECHANIC ST",
+      "UNIT 1"
+    ],
+    "city_region": "Paris : Brant",
+    "date_text": "07 Feb 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1290937 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$825,000"
+  }
+}

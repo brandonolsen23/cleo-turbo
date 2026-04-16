@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT36017",
+  "source_folder": "York_Region/restaurant-bar/p001",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36017",
+      "source_folder": "York_Region/restaurant-bar/p001",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/restaurant-bar/p001/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "12916 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "11 Jun 2004",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "532411 Ontario Inc     905-883-6672"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Kastanis",
+        "154 Spadina Rd",
+        "Richmond Hill, Ontario",
+        "L4B 2Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Elvira Investments Ltd     905-856-7208"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Franco Bisceglia",
+        "129 Valeria Blvd",
+        "Woodbridge, Ontario",
+        "L4L 6Z8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 65",
+      "Plan 65R-120, Part 1",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT360/RT36017/air1.jpg",
+        "/assets/files/RT3/RT360/RT36017/air2.jpg",
+        "/assets/files/RT3/RT360/RT36017/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT360/RT36017/photo.jpg"
+    },
+    "footer": {
+      "page_position": "43 / 57",
+      "rt_id": "RT36017"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "12916 YONGE ST",
+    "postcode": "L4E 1A8",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "06/11/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "12916 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "11 Jun 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "532411 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Elvira Investments Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT45650",
+  "source_folder": "York_Region/retail/p015",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45650",
+      "source_folder": "York_Region/retail/p015",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "58 - 72 MAIN ST MARKHAM N"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "30 Nov 2005",
+      "price_text": "$2,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Village Shoppes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeffrey Lipson",
+        "10 Bellair St, Ste 507",
+        "Toronto, Ontario",
+        "M5R 3T8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Markham Village Shoppes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Moris Kansun",
+        "8965 Woodbine Ave",
+        "Markham, Ontario",
+        "L3R 0J9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 18/436, Block P",
+      "Part Lots 9-12",
+      "Plan 64R-4895, Part 1",
+      "Together with Inst Nos:",
+      "MA-97943, VM-19063,",
+      "MA-97944 & MA-97945",
+      "",
+      "1.40 acre"
+    ],
+    "arn_text": "19 36 040 300 03600",
+    "consideration_lines": [
+      "cash: $2,375,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $1,425,000   rate: 6.25% per annum",
+      "registered: 11/30/2005   due: 12/05/2008",
+      "",
+      "chargee: Village Shoppes Ltd",
+      "principal: $500,000   rate: 4.0% per annum",
+      "registered: 11/30/2005   due: 11/30/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT456/RT45650/air1.jpg",
+        "/assets/files/RT4/RT456/RT45650/air2.jpg",
+        "/assets/files/RT4/RT456/RT45650/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "722 / 984",
+      "rt_id": "RT45650"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "58 - 72 MAIN ST MARKHAM N",
+    "postcode": "L3P 1X5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/30/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.4",
+    "consid": "2375000",
+    "cash": "2375000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 040 300 03600"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "58 - 72 MAIN ST MARKHAM N"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "30 Nov 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Village Shoppes Ltd"
+    ],
+    "buyer_lines": [
+      "Markham Village Shoppes Ltd"
+    ],
+    "price_text": "$2,375,000"
+  }
+}

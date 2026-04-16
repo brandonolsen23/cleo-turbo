@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT161601",
+  "source_folder": "Kitchener-Waterloo/retail/p004",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT161601",
+      "source_folder": "Kitchener-Waterloo/retail/p004",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p004/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "94 QUEEN ST S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "16 Mar 2021",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1511967 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rolf Glemser",
+        "166 Union St E",
+        "Waterloo, Ontario",
+        "N2J 1C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "11624814 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Louai Alrifai",
+        "94 Queen St S",
+        "Kitchener, Ontario",
+        "N2G 1V9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 391, Part Lot 1",
+      "Plan 393, Part Lot 27, W/S Queen St",
+      "As in Inst No 1187034",
+      "",
+      "PIN: 22427-0064",
+      "",
+      "0.02 acre"
+    ],
+    "arn_text": "30 12 050 002 00800",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Globe Jet SAL",
+      "principal: $5,500,000   rate: 4.5% per annum.",
+      "registered: 03/16/2021   due: 03/15/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1616/RT161601/0918_081805.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1616/RT161601/0918_081816.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1616/RT161601/0918_081819.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1616/RT161601/0918_081834.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1616/RT161601/0918_081849.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1616/RT161601/0918_081851.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "200 / 752",
+      "rt_id": "RT161601"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "94 QUEEN ST S",
+    "postcode": "N2G 1V9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/16/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".02",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "22427-0064",
+    "rollno": "30 12 050 002 00800"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "94 QUEEN ST S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "16 Mar 2021",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1511967 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "11624814 Canada Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

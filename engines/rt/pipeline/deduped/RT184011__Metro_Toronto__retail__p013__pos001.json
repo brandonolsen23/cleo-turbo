@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT184011",
+  "source_folder": "Metro_Toronto/retail/p013",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184011",
+      "source_folder": "Metro_Toronto/retail/p013",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p013/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "160 ISLINGTON AVE"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "02 Apr 2024",
+      "price_text": "$3,235,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Rehearsal Factory Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "895 Dovercourt Rd",
+        "Toronto, Ontario",
+        "M6H 2X6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Old Valley Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Benjamin Valliquette",
+        "777 Saint Clarens Ave",
+        "Toronto, Ontario",
+        "M6H 3X3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1804,",
+      "Lots 3-6 & Part Lot 2",
+      "As in Inst No TB-911626",
+      "",
+      "PIN: 07599-0245",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 19 052 520 00600",
+    "consideration_lines": [
+      "cash: $3,235,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Rehearsal Factory Inc",
+      "principal: $175,000   rate: 5.0% per annum.",
+      "registered: 04/02/2024   due: 06/02/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184011/0413_071607.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184011/0413_071611.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184011/0413_071634.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184011/0413_071635.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "602 / 4952",
+      "rt_id": "RT184011"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "160 ISLINGTON AVE",
+    "postcode": "M8V 3B6",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "04/02/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "3235000",
+    "cash": "3235000",
+    "debt": "",
+    "note": "",
+    "pin": "07599-0245",
+    "rollno": "19 19 052 520 00600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "160 ISLINGTON AVE"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "02 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Rehearsal Factory Inc"
+    ],
+    "buyer_lines": [
+      "Old Valley Group Ltd"
+    ],
+    "price_text": "$3,235,000"
+  }
+}

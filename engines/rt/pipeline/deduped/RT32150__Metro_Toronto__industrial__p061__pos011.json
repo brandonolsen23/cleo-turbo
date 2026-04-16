@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT32150",
+  "source_folder": "Metro_Toronto/industrial/p061",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32150",
+      "source_folder": "Metro_Toronto/industrial/p061",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p061/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "736 DUNDAS ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "14 Oct 2003",
+      "price_text": "$1,040,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "946828 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "736 Dundas St E",
+        "Toronto, Ontario",
+        "M5A 2C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1586612 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christopher Walsh",
+        "550 Front St W, Ph 13",
+        "Toronto, Ontario",
+        "M5V 3N5"
+      ]
+    },
+    "description_lines": [
+      "Industrial/Loft Bldg - 3.5 storey; 15,000 sf @ $69"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 108",
+      "Lot 14 & Part Lot 13, E/S River St",
+      "As in Inst No CA-145356",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "19 04 072 230 00700",
+    "consideration_lines": [
+      "cash: $1,040,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT321/RT32150/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3012 / 4000",
+      "rt_id": "RT32150"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "736 DUNDAS ST E",
+    "postcode": "M5A 2C3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/14/2003",
+    "desc": "Industrial/Loft Bldg - 3.5 storey; 15,000 sf @ $69",
+    "bldg": "15,000 sf",
+    "acreage": ".21",
+    "consid": "1040000",
+    "cash": "1040000",
+    "debt": "",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "19 04 072 230 00700"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "736 DUNDAS ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "14 Oct 2003",
+    "note": "Purchase & Sale",
+    "description": "Industrial/Loft Bldg - 3.5 storey; 15,000 sf @ $69",
+    "seller_lines": [
+      "946828 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1586612 Ontario Corp"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

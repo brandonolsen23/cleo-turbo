@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT41051",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41051",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "46 WINNIFRED AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Mar 2005",
+      "price_text": "$565,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Samdor Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jerry Kartuz",
+        "874 Eglinton Ave E",
+        "Toronto, Ontario",
+        "M4G 2L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 56-E, Part Lot 44",
+      "As in Inst No CA-172396",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 081 370 07100",
+    "consideration_lines": [
+      "cash: $565,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $423,750   rate: Variable mortgage rate minus 0.75% per annum",
+      "registered: 03/02/2005   due: 03/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT410/RT41051/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4451 / 6031",
+      "rt_id": "RT41051"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "46 WINNIFRED AVE",
+    "postcode": "M4M 2X3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "565000",
+    "cash": "565000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 081 370 07100"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "46 WINNIFRED AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Mar 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Samdor Investments Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$565,000"
+  }
+}

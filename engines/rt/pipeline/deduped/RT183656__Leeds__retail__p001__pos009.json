@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT183656",
+  "source_folder": "Leeds/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183656",
+      "source_folder": "Leeds/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "525 KING ST E"
+      ],
+      "city_region": "Gananoque : Leeds",
+      "date_text": "11 Mar 2024",
+      "price_text": "$1,450,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Homenest Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walid Al-Saadi",
+        "64 Spithead Rd",
+        "Gananoque, Ontario",
+        "K7G 2V6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 223,",
+      "Lot 1122 & Part Lots 1121 & 1123",
+      "As in Inst No LT-272710",
+      "",
+      "PIN: 44244-0023",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "08 14 000 020 28800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,450,000",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,450,000   rate: Prime plus 6.0% per annum.",
+      "registered: 03/11/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 40",
+      "rt_id": "RT183656"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "525 KING ST E",
+    "postcode": "K7G 1H1",
+    "municipality": "Gananoque",
+    "region": "Leeds",
+    "date": "03/11/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "1450000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "44244-0023",
+    "rollno": "08 14 000 020 28800"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "525 KING ST E"
+    ],
+    "city_region": "Gananoque : Leeds",
+    "date_text": "11 Mar 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Homenest Holdings Inc"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

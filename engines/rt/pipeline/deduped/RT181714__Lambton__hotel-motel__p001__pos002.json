@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT181714",
+  "source_folder": "Lambton/hotel-motel/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181714",
+      "source_folder": "Lambton/hotel-motel/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/hotel-motel/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1675 LONDON LINE"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "27 Nov 2023",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shree Ram Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "325 Willowdale Cres, Ste 305",
+        "Sarnia, Ontario",
+        "N7T 7R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Reena & Sons Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Reena Patel",
+        "1675 London Line",
+        "Sarnia, Ontario",
+        "N7W 1B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 14",
+      "As in Inst No L-905676",
+      "",
+      "PIN: 43137-0269",
+      "",
+      "1.71 acre"
+    ],
+    "arn_text": "38 29 300 036 25600",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Shree Ram Ltd",
+      "principal: $1,300,000   rate: 6.0% per annum.",
+      "registered: 11/27/2023   due: 11/27/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 12",
+      "rt_id": "RT181714"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1675 LONDON LINE",
+    "postcode": "N7W 1B1",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "11/27/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.71",
+    "consid": "2300000",
+    "cash": "2300000",
+    "debt": "",
+    "note": "",
+    "pin": "43137-0269",
+    "rollno": "38 29 300 036 25600"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1675 LONDON LINE"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "27 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Shree Ram Ltd"
+    ],
+    "buyer_lines": [
+      "Reena & Sons Inc"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

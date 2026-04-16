@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT34819",
+  "source_folder": "Metro_Toronto/multifamily/p094",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34819",
+      "source_folder": "Metro_Toronto/multifamily/p094",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p094/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "124 EIGHTH ST"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "31 Mar 2004",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1324071 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Edward Edmonds",
+        "2479 Burslem Rd",
+        "Mississauga, Ontario",
+        "L5A 2R5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1606073 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ayres Couto",
+        "124 Eighth St",
+        "Toronto, Ontario",
+        "M8V 3C4"
+      ]
+    },
+    "description_lines": [
+      "FivePlex - 2 storey; 5 units @ $100,000",
+      "",
+      "3-1bdrm 1-2bdrm 1-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1592, Lot 211",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 19 052 240 03200",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT348/RT34819/air1.jpg",
+        "/assets/files/RT3/RT348/RT34819/air2.jpg",
+        "/assets/files/RT3/RT348/RT34819/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT348/RT34819/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4660 / 6031",
+      "rt_id": "RT34819"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "124 EIGHTH ST",
+    "postcode": "M8V 3C4",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "03/31/2004",
+    "desc": "FivePlex - 2 storey; 5 units @ $100,000",
+    "bldg": "5 units",
+    "acreage": ".14",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 052 240 03200"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "124 EIGHTH ST"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "31 Mar 2004",
+    "note": "",
+    "description": "FivePlex - 2 storey; 5 units @ $100,000",
+    "seller_lines": [
+      "1324071 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1606073 Ontario Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

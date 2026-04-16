@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT187423",
+  "source_folder": "Niagara_S/retail/p001",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187423",
+      "source_folder": "Niagara_S/retail/p001",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p001/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "1625 DOMINION RD"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "15 Jul 2024",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2164664 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Darren Peters",
+        "3 Cross St, Ste 203",
+        "Welland, Ontario",
+        "L3B 5X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Lake Erie Bertie, Part Lot 7",
+      "Plan 447 - Bertie,",
+      "Lots 387-380, 422-424",
+      "Plan 59R-6077, Part 1",
+      "Except:",
+      "Plan 59R-8678, Part 1",
+      "",
+      "PIN: 64204-0117",
+      "",
+      "2.20 acre"
+    ],
+    "arn_text": "27 03 020 010 15000",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "49 / 324",
+      "rt_id": "RT187423"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "1625 DOMINION RD",
+    "postcode": "L2A 5M4",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "07/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.2",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "64204-0117",
+    "rollno": "27 03 020 010 15000"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "1625 DOMINION RD"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "15 Jul 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2164664 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

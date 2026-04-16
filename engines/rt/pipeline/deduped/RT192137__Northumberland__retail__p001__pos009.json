@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT192137",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192137",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "844 DIVISION ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "16 May 2025",
+      "price_text": "$5,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2533220 Ontario Inc     888-294-1377"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Walker, Head",
+        "1315 Pickering Pkwy, Ste 800",
+        "Pickering, Ontario",
+        "L1V 7G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1111785 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nicholas Palalas",
+        "850 Division St",
+        "Cobourg, Ontario",
+        "K9A 5V2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 39R-9588, Parts 3 & 4",
+      "",
+      "PIN: 51098-0038",
+      "",
+      "1.32 acre"
+    ],
+    "arn_text": "14 21 000 160 00212",
+    "consideration_lines": [
+      "cash: $5,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $5,375,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/16/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192137/0524_083821.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192137/0524_083822.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192137/0524_083926.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192137/0524_083927.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 93",
+      "rt_id": "RT192137"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "844 DIVISION ST",
+    "postcode": "K9A 5V2",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "05/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.32",
+    "consid": "5500000",
+    "cash": "5500000",
+    "debt": "",
+    "note": "",
+    "pin": "51098-0038",
+    "rollno": "14 21 000 160 00212"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "844 DIVISION ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "16 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2533220 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1111785 Ontario Inc"
+    ],
+    "price_text": "$5,500,000"
+  }
+}

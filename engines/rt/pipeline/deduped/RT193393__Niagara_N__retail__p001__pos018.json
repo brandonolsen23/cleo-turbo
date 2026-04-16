@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT193393",
+  "source_folder": "Niagara_N/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193393",
+      "source_folder": "Niagara_N/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "3365 CULP RD"
+      ],
+      "city_region": "Lincoln : Niagara N",
+      "date_text": "18 Jul 2025",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Solace General Contracting Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Fida Law Professional Corp",
+        "3500 Dufferin St, Ste 507",
+        "North York, Ontario",
+        "M3K 1N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Voice of The Martyrs Inc     905-670-9721"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Davina Boerefyn",
+        "1388 Cornwall Rd, Units A & B",
+        "Oakville, Ontario",
+        "L6J 7W5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Louth, Part Lot 23",
+      "Plan 30R-1374, Part 2",
+      "",
+      "PIN: 46127-0056",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "26 22 030 006 18000",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1933/RT193393/1018_093430.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1933/RT193393/1018_093434.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1933/RT193393/1018_093519.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1933/RT193393/1018_093520.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1933/RT193393/1018_093540.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 307",
+      "rt_id": "RT193393"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "3365 CULP RD",
+    "postcode": "L0R 2E0",
+    "municipality": "Lincoln",
+    "region": "Niagara N",
+    "date": "07/18/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".75",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "46127-0056",
+    "rollno": "26 22 030 006 18000"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "3365 CULP RD"
+    ],
+    "city_region": "Lincoln : Niagara N",
+    "date_text": "18 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Solace General Contracting Inc"
+    ],
+    "buyer_lines": [
+      "The Voice of The Martyrs Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

@@ -117,6 +117,7 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
         'source_id': classified['rt_id'],
         'source': 'rt',
         'source_folder': classified.get('source_folder', ''),
+        'source_position': classified.get('position'),
         'compiled_at': datetime.now(timezone.utc).isoformat(),
 
         'transaction': {

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT44290",
+  "source_folder": "Wellington/retail/p005",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44290",
+      "source_folder": "Wellington/retail/p005",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "159 FIFE RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "15 Sep 2005",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1525294 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steve Abouna",
+        "1528 Dundas St W",
+        "Mississauga, Ontario",
+        "L5C 1E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ravi Investment Corp     905-508-4843"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bashir Malik",
+        "69 Chadwick Cres",
+        "Richmond Hill, Ontario",
+        "L4B 2Y6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 units 5,600 sf @ $196",
+      "",
+      "Last transferred in Aug 2002 for $800,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 670, Block A",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "23 08 050 015 01717",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $680,000   rate: 5.65% per annum",
+      "registered: 09/15/2005   due: 10/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "209 / 269",
+      "rt_id": "RT44290"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "159 FIFE RD",
+    "postcode": "N1H 7N8",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "09/15/2005",
+    "desc": "Retail Plaza - 1 storey; 5 units 5,600 sf @ $196",
+    "bldg": "5,600 sf",
+    "acreage": ".85",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 050 015 01717"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "159 FIFE RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "15 Sep 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 units 5,600 sf @ $196",
+    "seller_lines": [
+      "1525294 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Ravi Investment Corp"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

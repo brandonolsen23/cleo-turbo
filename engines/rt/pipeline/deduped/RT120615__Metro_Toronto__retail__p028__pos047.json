@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT120615",
+  "source_folder": "Metro_Toronto/retail/p028",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT120615",
+      "source_folder": "Metro_Toronto/retail/p028",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p028/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "3601 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 Nov 2016",
+      "price_text": "$8,500,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "High Glen Plazas Ltd     416-599-1930"
+      ],
+      "trade_name": "Graywood Developments Ltd",
+      "contact_lines": [
+        "ASO: David Ulmer",
+        "200 King St W",
+        "Toronto, Ontario",
+        "M5H 3T5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2505747 Ontario Ltd     416-439-0652"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: T. Thiruchelvam",
+        "14 Bellhaven Cres",
+        "Toronto, Ontario",
+        "M1M 1H3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1363, Block B",
+      "",
+      "PIN: 06373-0138",
+      "",
+      "SW corner Lawrence Ave E and Greenholm Circuit",
+      "",
+      "2.02 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $6,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/01/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1206/RT120615/1113_155502.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1206/RT120615/1113_155507.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1206/RT120615/1113_155555.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1206/RT120615/1113_155558.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1206/RT120615/1113_155621.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1398 / 4952",
+      "rt_id": "RT120615"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "3601 LAWRENCE AVE E",
+    "postcode": "M1G 1P5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "11/01/2016",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.02",
+    "consid": "8500000",
+    "cash": "8500000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "06373-0138",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "3601 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 Nov 2016",
+    "note": "Purchased by Tenant",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "High Glen Plazas Ltd"
+    ],
+    "buyer_lines": [
+      "2505747 Ontario Ltd"
+    ],
+    "price_text": "$8,500,000"
+  }
+}

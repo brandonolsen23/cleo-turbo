@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT51569",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51569",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "564 BARTON ST E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "16 Oct 2006",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2076763 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rajneesh Dutta",
+        "4 Plateau Dr",
+        "Brampton, Ontario",
+        "L6R 3G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1709451 Ontario Inc     519-941-4339"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Resham Kang",
+        "United Gas Bar",
+        "PO Box 31",
+        "336 Broadway, PO Box 31",
+        "Orangeville, Ontario",
+        "L9W 2Y9"
+      ]
+    },
+    "description_lines": [
+      "Gas Station/Convenience Store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 560, Lot A",
+      "Plan 381, Part Lot 10",
+      "As in Inst No CD-243389",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "25 18 030 237 50790",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $100,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51569/1028_121756.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51569/1028_121757.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51569/1028_121808.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "452 / 616",
+      "rt_id": "RT51569"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "564 BARTON ST E",
+    "postcode": "L8L 2Z3",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "10/16/2006",
+    "desc": "Gas Station/Convenience Store",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "1250000",
+    "cash": "1150000",
+    "debt": "100000",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 030 237 50790"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "564 BARTON ST E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "16 Oct 2006",
+    "note": "",
+    "description": "Gas Station/Convenience Store",
+    "seller_lines": [
+      "2076763 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1709451 Ontario Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

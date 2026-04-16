@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT25059",
+  "source_folder": "Wellington/retail/p005",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25059",
+      "source_folder": "Wellington/retail/p005",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "943 - 945 WOODLAWN RD W"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "22 Feb 2002",
+      "price_text": "$835,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dominion Egg Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Philip Carnovale",
+        "17 Newbridge Rd",
+        "Toronto, Ontario",
+        "M8Z 2L6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Televig Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Evgueni Baranov",
+        "945 Woodlawn Rd W",
+        "Guelph, Ontario",
+        "N1K 1C9"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 61R-2023",
+      "Part 1",
+      "",
+      "1.18 acre"
+    ],
+    "arn_text": "23 08 040 017 18206",
+    "consideration_lines": [
+      "cash: $835,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "240 / 269",
+      "rt_id": "RT25059"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "943 - 945 WOODLAWN RD W",
+    "postcode": "N1K 1C9",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "02/22/2002",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.18",
+    "consid": "835000",
+    "cash": "835000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 040 017 18206"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "943 - 945 WOODLAWN RD W"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "22 Feb 2002",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Dominion Egg Ltd"
+    ],
+    "buyer_lines": [
+      "Televig Inc"
+    ],
+    "price_text": "$835,000"
+  }
+}

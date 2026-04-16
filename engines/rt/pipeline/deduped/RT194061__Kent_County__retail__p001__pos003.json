@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT194061",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194061",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "158 KEIL DR S"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "26 Aug 2025",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Fazili Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "78 Seacoasts Circle",
+        "Vaughan, Ontario",
+        "L6A 5B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tatro Development Corp Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Tetrault",
+        "7620 Seventh Line W",
+        "Chatham, Ontario",
+        "N7M 5J3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Raleigh, Part Lot 21",
+      "Plan 24R-3452, Parts 1 & 2",
+      "",
+      "PIN: 00528-0071",
+      "",
+      "2.24 acre"
+    ],
+    "arn_text": "36 42 020 022 04001",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 77",
+      "rt_id": "RT194061"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "158 KEIL DR S",
+    "postcode": "N7M 6B7",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "08/26/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.24",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "00528-0071",
+    "rollno": "36 42 020 022 04001"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "158 KEIL DR S"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "26 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Fazili Investments Inc"
+    ],
+    "buyer_lines": [
+      "Tatro Development Corp Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

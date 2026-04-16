@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20455",
+  "source_folder": "Hamilton-Wentworth/retail/p012",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20455",
+      "source_folder": "Hamilton-Wentworth/retail/p012",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p012/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1025/1031 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "19 Jan 2001",
+      "price_text": "$675,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal Bank of Canada     416-974-7574"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Ruebottom",
+        "20 King St W, 9th Flr",
+        "Toronto, Ontario",
+        "M5H 1C4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Parkway Toyota Ltd     905-387-9287"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marik Pinassi",
+        "999 Upper James St",
+        "Hamilton, Ontario",
+        "L9C 3A6"
+      ]
+    },
+    "description_lines": [
+      "Restaurant - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 292, Part Park Lots 7 & 8",
+      "As in Inst Nos CD-443707 & VM-93906",
+      "",
+      "E side opposite Aldridge St"
+    ],
+    "arn_text": "25 18 070 882 00310",
+    "consideration_lines": [
+      "cash: $675,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT204/RT20455/photo.jpg"
+    },
+    "footer": {
+      "page_position": "561 / 616",
+      "rt_id": "RT20455"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1025/1031 UPPER JAMES ST",
+    "postcode": "L9C 3A6",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "01/19/2001",
+    "desc": "Restaurant - 1 storey",
+    "bldg": "",
+    "acreage": "",
+    "consid": "675000",
+    "cash": "675000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "25 18 070 882 00310"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1025/1031 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "19 Jan 2001",
+    "note": "Power of Sale",
+    "description": "Restaurant - 1 storey",
+    "seller_lines": [
+      "Royal Bank of Canada"
+    ],
+    "buyer_lines": [
+      "Parkway Toyota Ltd"
+    ],
+    "price_text": "$675,000"
+  }
+}

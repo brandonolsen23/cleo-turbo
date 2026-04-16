@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT177363",
+  "source_folder": "York_Region/retail/p005",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177363",
+      "source_folder": "York_Region/retail/p005",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "5827 MAIN ST"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "01 May 2023",
+      "price_text": "$6,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Joy Square Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "28 South Unionville Ave, Ste 2080",
+        "Markham, Ontario",
+        "L3R 4P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ray-Chiang Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rong Fu",
+        "7 Royal County Down Cres",
+        "Markham, Ontario",
+        "L6C 0K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-4777, Block 1",
+      "",
+      "PIN: 03726-1535",
+      "",
+      "0.80 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1773/RT177363/0522_090123.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1773/RT177363/0522_090134.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1773/RT177363/0522_090222.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1773/RT177363/0522_090224.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1773/RT177363/0522_090253.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "223 / 984",
+      "rt_id": "RT177363"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "5827 MAIN ST",
+    "postcode": "L4A 1X7",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "05/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".8",
+    "consid": "6000000",
+    "cash": "6000000",
+    "debt": "",
+    "note": "",
+    "pin": "03726-1535",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "5827 MAIN ST"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "01 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Joy Square Corp"
+    ],
+    "buyer_lines": [
+      "Ray-Chiang Investments Inc"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

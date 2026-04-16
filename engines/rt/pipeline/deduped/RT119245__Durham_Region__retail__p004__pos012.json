@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT119245",
+  "source_folder": "Durham_Region/retail/p004",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT119245",
+      "source_folder": "Durham_Region/retail/p004",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p004/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 BALDWIN ST",
+        "46 BALDWIN ST"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "01 Sep 2016",
+      "price_text": "$1,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Menary Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Menary",
+        "82 Lake Driveway",
+        "Ajax, Ontario",
+        "L1S 3X3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-50052",
+      "Part Lots 60, 79 & 80",
+      "As in Inst No D-249372",
+      "",
+      "PIN: 26573-0165",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "18 09 010 040 05800",
+    "consideration_lines": [
+      "cash: $1,375,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,030,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/01/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131649.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131707.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131720.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131723.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131805.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131813.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1192/RT119245/0917_131831.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "163 / 506",
+      "rt_id": "RT119245"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "44 BALDWIN ST, 46 BALDWIN ST",
+    "postcode": "L1M 1A2",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "09/01/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".43",
+    "consid": "1375000",
+    "cash": "1375000",
+    "debt": "",
+    "note": "",
+    "pin": "26573-0165",
+    "rollno": "18 09 010 040 05800"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "44 BALDWIN ST",
+      "46 BALDWIN ST"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "01 Sep 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Menary Holdings Inc"
+    ],
+    "price_text": "$1,375,000"
+  }
+}

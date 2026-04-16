@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT33195",
+  "source_folder": "York_Region/retail/p016",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33195",
+      "source_folder": "York_Region/retail/p016",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "156 CHRISLEA RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "19 Dec 2003",
+      "price_text": "$715,406",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1177632 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ferruccio Corrente",
+        "115 Applewood Cres",
+        "Vaughan, Ontario",
+        "L4K 5C1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2589, Lot 19",
+      "Plan 65R-13365, Parts 6 & 7",
+      "",
+      "1.68 acre"
+    ],
+    "arn_text": "19 28 000 233 51500",
+    "consideration_lines": [
+      "cash: $715,406     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "788 / 984",
+      "rt_id": "RT33195"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "156 CHRISLEA RD",
+    "postcode": "L4L 8V1",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "12/19/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.68",
+    "consid": "715406",
+    "cash": "715406",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 28 000 233 51500"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "156 CHRISLEA RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "19 Dec 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1177632 Ontario Ltd"
+    ],
+    "price_text": "$715,406"
+  }
+}

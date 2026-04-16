@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT41574",
+  "source_folder": "Cochrane/all/p179",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41574",
+      "source_folder": "Cochrane/all/p179",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p179/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1111 OGILVIE RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "28 Apr 2005",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1564724 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marwan Thoba",
+        "6298 Sablewood Place",
+        "Ottawa, Ontario",
+        "K1C 7M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1633981 Ontario Inc     613-742-0528"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dalwinder Gill",
+        "1111 Ogilvie Rd",
+        "Ottawa, Ontario",
+        "K1J 7P7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 217, Part Lot 1",
+      "As in Inst No N-455982",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "06 14 600 160 03150",
+    "consideration_lines": [
+      "cash: $161,250     assumed/vtb debt: $568,750",
+      "",
+      "chargee: 1564724 Ontario Ltd",
+      "principal: $568,750   rate: 6.0% per annum",
+      "registered: 04/28/2005   due: 04/28/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8925 / 10920",
+      "rt_id": "RT41574"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1111 OGILVIE RD",
+    "postcode": "K1J 7P7",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "04/28/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".6",
+    "consid": "730000",
+    "cash": "161250",
+    "debt": "568750",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 600 160 03150"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1111 OGILVIE RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "28 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1564724 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1633981 Ontario Inc"
+    ],
+    "price_text": "$730,000"
+  }
+}

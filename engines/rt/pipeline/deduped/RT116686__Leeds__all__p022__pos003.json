@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT116686",
+  "source_folder": "Leeds/all/p022",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT116686",
+      "source_folder": "Leeds/all/p022",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p022/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "5709 LONDON LINE"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "17 May 2016",
+      "price_text": "$1,080,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Chrisholm Poultry Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christopher Pool",
+        "5709 London Line",
+        "Wyoming, Ontario",
+        "N0N 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 27",
+      "As in Inst No L-907367",
+      "",
+      "PIN: 43111-0009",
+      "",
+      "50.87 acre"
+    ],
+    "arn_text": "38 35 340 010 40700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,080,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1054 / 1916",
+      "rt_id": "RT116686"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "5709 LONDON LINE",
+    "postcode": "N0N 1T0",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "05/17/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "50.87",
+    "consid": "1080000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43111-0009",
+    "rollno": "38 35 340 010 40700"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "5709 LONDON LINE"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "17 May 2016",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Chrisholm Poultry Ltd"
+    ],
+    "price_text": "$1,080,000"
+  }
+}

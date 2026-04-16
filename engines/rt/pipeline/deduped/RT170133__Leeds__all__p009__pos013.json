@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT170133",
+  "source_folder": "Leeds/all/p009",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170133",
+      "source_folder": "Leeds/all/p009",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p009/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "180 FRONT ST N"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "01 Jun 2022",
+      "price_text": "$1,670,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "10755524 Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "707 Charles St",
+        "Point Edward, Ontario",
+        "N7V 1C1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1718761 Ontario Inc     519-845-3498"
+      ],
+      "trade_name": "Wyoming Foodland",
+      "contact_lines": [
+        "Attn: Charles Visscher",
+        "610 Broadway St",
+        "Wyoming, Ontario",
+        "N0N 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10, Part Lot H",
+      "As in Inst No L-714080",
+      "",
+      "PIN: 43268-0021",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "38 29 400 002 10000",
+    "consideration_lines": [
+      "cash: $1,670,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Mainstreet Credit Union Ltd",
+      "principal: $1,600,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/01/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "414 / 1916",
+      "rt_id": "RT170133"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "180 FRONT ST N",
+    "postcode": "N7T 5S3",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "06/01/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1670000",
+    "cash": "1670000",
+    "debt": "",
+    "note": "",
+    "pin": "43268-0021",
+    "rollno": "38 29 400 002 10000"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "180 FRONT ST N"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "01 Jun 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "10755524 Canada Corp"
+    ],
+    "buyer_lines": [
+      "1718761 Ontario Inc"
+    ],
+    "price_text": "$1,670,000"
+  }
+}

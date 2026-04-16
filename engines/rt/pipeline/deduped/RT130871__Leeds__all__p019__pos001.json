@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT130871",
+  "source_folder": "Leeds/all/p019",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT130871",
+      "source_folder": "Leeds/all/p019",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p019/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "7780 GORDON RD"
+      ],
+      "city_region": "Bosanquet : Lambton",
+      "date_text": "02 Jan 2018",
+      "price_text": "$1,460,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gordon's Roxburgh Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Gordon",
+        "7780 Gordon Rd, RR 2",
+        "Thedford Ontario",
+        "N0M 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Lot 2",
+      "",
+      "PIN: 43945-0059",
+      "",
+      "101.87 acre"
+    ],
+    "arn_text": "38 45 460 030 11500",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,460,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "902 / 1916",
+      "rt_id": "RT130871"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "7780 GORDON RD",
+    "postcode": "N0M 2N0",
+    "municipality": "Bosanquet",
+    "region": "Lambton",
+    "date": "01/02/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.87",
+    "consid": "1460000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43945-0059",
+    "rollno": "38 45 460 030 11500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "7780 GORDON RD"
+    ],
+    "city_region": "Bosanquet : Lambton",
+    "date_text": "02 Jan 2018",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gordon's Roxburgh Farms Inc"
+    ],
+    "price_text": "$1,460,000"
+  }
+}

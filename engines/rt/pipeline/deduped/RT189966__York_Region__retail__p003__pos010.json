@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT189966",
+  "source_folder": "York_Region/retail/p003",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189966",
+      "source_folder": "York_Region/retail/p003",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "15610 BAYVIEW AVE"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "31 Jan 2025",
+      "price_text": "$32,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Aurora Retail GP Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attention: Legal Deptartment",
+        "22 St Clair Ave E, Ste 11400",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Varallo Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Amy Lo",
+        "16205 Woodbine Ave",
+        "Stouffville, Ontario",
+        "L4A 2N6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 84 & 85",
+      "Plan 65M-2873, Lots 2 & 3",
+      "Together with:",
+      "Plan 65R-14766, Parts 2 & 3",
+      "As in Inst No B-41763B",
+      "",
+      "PIN: 03641-0413",
+      "",
+      "6.79 acre"
+    ],
+    "arn_text": "19 46 000 113 85200",
+    "consideration_lines": [
+      "cash: $32,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124503.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124508.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124646.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124704.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124711.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124838.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124841.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124849.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124850.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124903.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189966/0209_124917.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1899/RT189966/air1.jpg",
+        "/assets/files/RT18/RT1899/RT189966/air2.jpg",
+        "/assets/files/RT18/RT1899/RT189966/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "111 / 984",
+      "rt_id": "RT189966"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "15610 BAYVIEW AVE",
+    "postcode": "L4G 0Y7",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "01/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.79",
+    "consid": "32500000",
+    "cash": "32500000",
+    "debt": "",
+    "note": "",
+    "pin": "03641-0413",
+    "rollno": "19 46 000 113 85200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "15610 BAYVIEW AVE"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "31 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Aurora Retail GP Ltd"
+    ],
+    "buyer_lines": [
+      "Varallo Holdings Ltd"
+    ],
+    "price_text": "$32,500,000"
+  }
+}

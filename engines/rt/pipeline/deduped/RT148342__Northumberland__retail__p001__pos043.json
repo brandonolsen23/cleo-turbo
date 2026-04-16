@@ -1,0 +1,134 @@
+{
+  "rt_id": "RT148342",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT148342",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "1111 ELGIN ST W"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "19 Dec 2019",
+      "price_text": "$35,000,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "2292912 Ontario Inc     416-923-9967"
+      ],
+      "trade_name": "Timbercreek Asset Management",
+      "contact_lines": [
+        "VP: Ugo Bizzarri",
+        "25 Price St",
+        "Toronto, Ontario",
+        "M4W 1Z1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Trinity Northumberland Inc     416-255-8800"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Fred Waks",
+        "77 Bloor St W, Ste 601",
+        "Toronto, Ontario",
+        "M5S 1M2"
+      ]
+    },
+    "description_lines": [
+      "Northumberland Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - Hamilton, Part Lots 21 & 22",
+      "As in Inst No NC-344514",
+      "",
+      "PIN: 51089-0001",
+      "",
+      "25.71 acre"
+    ],
+    "arn_text": "14 21 000 210 20310",
+    "consideration_lines": [
+      "cash: $35,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $55,000,000   rate: Greater of TD prime plus 1.80% or 5.75% per annum.",
+      "registered: 12/19/2019   due: 12/19/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_142923.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143113.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143117.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143211.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143228.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143355.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143405.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143413.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143429.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143432.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143612.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143651.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1483/RT148342/0215_143835.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT14/RT1483/RT148342/air1.jpg",
+        "/assets/files/RT14/RT1483/RT148342/air2.jpg",
+        "/assets/files/RT14/RT1483/RT148342/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "44 / 93",
+      "rt_id": "RT148342"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "1111 ELGIN ST W",
+    "postcode": "K9A 5H7",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "12/19/2019",
+    "desc": "Northumberland Mall",
+    "bldg": "",
+    "acreage": "25.71",
+    "consid": "35000000",
+    "cash": "35000000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "51089-0001",
+    "rollno": "14 21 000 210 20310"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "1111 ELGIN ST W"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "19 Dec 2019",
+    "note": "Power of Sale",
+    "description": "Northumberland Mall",
+    "seller_lines": [
+      "2292912 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Trinity Northumberland Inc"
+    ],
+    "price_text": "$35,000,000"
+  }
+}

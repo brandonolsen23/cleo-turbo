@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT30511",
+  "source_folder": "York_Region/retail/p017",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30511",
+      "source_folder": "York_Region/retail/p017",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "2266 - 2286 MAJOR MACKENZIE DR"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "18 Jun 2003",
+      "price_text": "$3,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1283247 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bruce Feldman",
+        "1 St Clair Ave W, Ste 1101",
+        "Toronto, Ontario",
+        "M4V 1K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1576098 Ontario Inc     905-737-1665"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eddie Behesnilian",
+        "Besco Machinery Ltd",
+        "429 Weldrick Rd E",
+        "Richmond Hill, Ontario",
+        "L4B 2M5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 12,000 sf @ $250",
+      "",
+      "Occupied by Shoppers Drug Mart",
+      "",
+      "This site sold in July 99 for $1,000,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-21650, Part 1",
+      "",
+      "NW corner at Keele St",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Gold Pacific Reality: Garo Yegoyan, 416-490-1068"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT305/RT30511/photo.jpg"
+    },
+    "footer": {
+      "page_position": "812 / 984",
+      "rt_id": "RT30511"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "2266 - 2286 MAJOR MACKENZIE DR",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/18/2003",
+    "desc": "Retail Bldg - 1 storey; 12,000 sf @ $250",
+    "bldg": "12,000 sf",
+    "acreage": ".69",
+    "consid": "3000000",
+    "cash": "3000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "2266 - 2286 MAJOR MACKENZIE DR"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "18 Jun 2003",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 12,000 sf @ $250",
+    "seller_lines": [
+      "1283247 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1576098 Ontario Inc"
+    ],
+    "price_text": "$3,000,000"
+  }
+}

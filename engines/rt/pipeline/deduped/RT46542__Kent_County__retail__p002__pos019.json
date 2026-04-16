@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT46542",
+  "source_folder": "Kent_County/retail/p002",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46542",
+      "source_folder": "Kent_County/retail/p002",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p002/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "708 JAMES ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "29 Nov 2005",
+      "price_text": "$633,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hill Lake Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Heinz Brast",
+        "30 Coral Cres",
+        "Kitchener, Ontario",
+        "N2M 3H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "James Street Investments Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Pendergast",
+        "104 Bethridge Rd",
+        "Toronto, Ontario",
+        "M9W 1N3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 116",
+      "Lot 26 & Part Lot 47",
+      "As in Deed No 382579",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "36 50 442 001 08600",
+    "consideration_lines": [
+      "cash: $633,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT465/RT46542/0702_173431.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT465/RT46542/0702_173432.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "70 / 77",
+      "rt_id": "RT46542"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "708 JAMES ST",
+    "postcode": "N8A 2P5",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "11/29/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "633000",
+    "cash": "633000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 442 001 08600"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "708 JAMES ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "29 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Hill Lake Farms Ltd"
+    ],
+    "buyer_lines": [
+      "James Street Investments Corp"
+    ],
+    "price_text": "$633,000"
+  }
+}

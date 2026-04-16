@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23817",
+  "source_folder": "Cochrane/all/p203",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23817",
+      "source_folder": "Cochrane/all/p203",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p203/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "2340 ST LAURENT BLVD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "10 Dec 2001",
+      "price_text": "$5,080,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "398640 Ontario Ltd",
+        "Nicholds Press Holding Ltd",
+        "COB as Dollco Printing"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Barry Nicholds",
+        "2340 St Laurent Blvd",
+        "Ottawa, Ontario",
+        "K1G 6E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Dollco Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Silverson",
+        "2340 St Laurent Blvd",
+        "Ottawa, Ontario",
+        "K1G 6E3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-10665, Part 1"
+    ],
+    "arn_text": "06 14 116 503 01064",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $3,600,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10110 / 10920",
+      "rt_id": "RT23817"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "2340 ST LAURENT BLVD",
+    "postcode": "K1G 6E3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/10/2001",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "5080000",
+    "cash": "",
+    "debt": "3600000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 14 116 503 01064"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "2340 ST LAURENT BLVD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "10 Dec 2001",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "398640 Ontario Ltd",
+      "Nicholds Press Holding Ltd",
+      "COB as Dollco Printing"
+    ],
+    "buyer_lines": [
+      "The Dollco Corp"
+    ],
+    "price_text": "$5,080,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT50089",
+  "source_folder": "Essex_County/retail/p007",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50089",
+      "source_folder": "Essex_County/retail/p007",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p007/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "1555 TALBOT RD"
+      ],
+      "city_region": "LaSalle : Essex County",
+      "date_text": "27 Jul 2006",
+      "price_text": "$44,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Windsor Factory Outlet Mall Ltd     519-737-6299"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dominic Amicone",
+        "Amicone Design Build",
+        "2155 Fasan Dr, RR 1",
+        "Oldcastle, Ontario",
+        "N0R 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "OPTrust Retail Inc     416-681-3400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: John McFadden",
+        "Bentall Investment Managment",
+        "55 University Ave, Ste 300",
+        "Toronto, Ontario",
+        "M5J 2H7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lots 2 & 3",
+      "Plan 12R-18882, Parts 1-11",
+      "",
+      "22.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $39,000,000     assumed/vtb debt: $5,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "328 / 460",
+      "rt_id": "RT50089"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "1555 TALBOT RD",
+    "postcode": "N9H 2N2",
+    "municipality": "LaSalle",
+    "region": "Essex County",
+    "date": "07/27/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "22.22",
+    "consid": "44000000",
+    "cash": "39000000",
+    "debt": "5000000",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "1555 TALBOT RD"
+    ],
+    "city_region": "LaSalle : Essex County",
+    "date_text": "27 Jul 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Windsor Factory Outlet Mall Ltd"
+    ],
+    "buyer_lines": [
+      "OPTrust Retail Inc"
+    ],
+    "price_text": "$44,000,000"
+  }
+}

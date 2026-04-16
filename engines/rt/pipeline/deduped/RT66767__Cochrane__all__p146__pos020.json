@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT66767",
+  "source_folder": "Cochrane/all/p146",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66767",
+      "source_folder": "Cochrane/all/p146",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p146/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "111 ECHO DR",
+        "UNIT 404"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "24 Apr 2009",
+      "price_text": "$850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1663094 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dominique Skarzenski",
+        "302 Billings Ave",
+        "Ottawa, Ontario",
+        "K1H 5L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 256",
+      "Level 4, Unit 4",
+      "",
+      "PIN: 15256-0034"
+    ],
+    "arn_text": "06 14 031 601 11326",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7271 / 10920",
+      "rt_id": "RT66767"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "111 ECHO DR, UNIT 404",
+    "postcode": "K1S 5K8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "04/24/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "15256-0034",
+    "rollno": "06 14 031 601 11326"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "111 ECHO DR",
+      "UNIT 404"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "24 Apr 2009",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1663094 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

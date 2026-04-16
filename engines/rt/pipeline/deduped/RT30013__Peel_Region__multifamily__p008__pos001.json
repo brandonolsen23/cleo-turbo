@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT30013",
+  "source_folder": "Peel_Region/multifamily/p008",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30013",
+      "source_folder": "Peel_Region/multifamily/p008",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/multifamily/p008/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "122 LAKESHORE RD E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "01 May 2003",
+      "price_text": "$2,968,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Akadami Holdings Ltd     905-274-3029"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stefica Plastich",
+        "366 Pinetree Way",
+        "Mississauga, Ontario",
+        "L5G 4N5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 5 storey; 32 units @ $92,750"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan PC-2",
+      "Lot 3 & Part Lot 4 - ECR, N/S Toronto St",
+      "As in Inst No VS-196150",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "21 05 090 003 04300",
+    "consideration_lines": [
+      "cash: $2,968,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT300/RT30013/photo.jpg"
+    },
+    "footer": {
+      "page_position": "352 / 447",
+      "rt_id": "RT30013"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "122 LAKESHORE RD E",
+    "postcode": "L5G 1E4",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "05/01/2003",
+    "desc": "Apartment Bldg - 5 storey; 32 units @ $92,750",
+    "bldg": "32 units",
+    "acreage": ".43",
+    "consid": "2968000",
+    "cash": "2968000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 090 003 04300"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "122 LAKESHORE RD E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 May 2003",
+    "note": "",
+    "description": "Apartment Bldg - 5 storey; 32 units @ $92,750",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Akadami Holdings Ltd"
+    ],
+    "price_text": "$2,968,000"
+  }
+}

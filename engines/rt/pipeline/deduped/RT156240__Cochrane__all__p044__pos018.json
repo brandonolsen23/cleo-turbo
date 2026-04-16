@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT156240",
+  "source_folder": "Cochrane/all/p044",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT156240",
+      "source_folder": "Cochrane/all/p044",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p044/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "484 ROOSEVELT AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "30 Oct 2020",
+      "price_text": "$932,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2785319 Ontario Inc     613-226-9902"
+      ],
+      "trade_name": "Inside Edge Properties",
+      "contact_lines": [
+        "Attn: Taylor Hunter",
+        "464 Bank St, Ste 200",
+        "Ottawa, Ontario",
+        "K2P 1Z3"
+      ]
+    },
+    "description_lines": [
+      "House on 0.2 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 235",
+      "Lot 16, W/S Roosevelt Ave",
+      "",
+      "PIN: 04009-0100",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "06 14 084 601 03300",
+    "consideration_lines": [
+      "cash: $932,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $745,600   rate: Prime minus 0.60% per annum.",
+      "registered: 10/30/2020   due: 10/30/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2169 / 10920",
+      "rt_id": "RT156240"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "484 ROOSEVELT AVE",
+    "postcode": "K2A 1Z6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/30/2020",
+    "desc": "House on 0.2 Ac",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "932000",
+    "cash": "932000",
+    "debt": "",
+    "note": "",
+    "pin": "04009-0100",
+    "rollno": "06 14 084 601 03300"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "484 ROOSEVELT AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "30 Oct 2020",
+    "note": "",
+    "description": "House on 0.2 Ac",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2785319 Ontario Inc"
+    ],
+    "price_text": "$932,000"
+  }
+}

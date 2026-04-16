@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT55017",
+  "source_folder": "Cochrane/all/p160",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55017",
+      "source_folder": "Cochrane/all/p160",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p160/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "IBER RD",
+        "ABBOTT ST E"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "16 Apr 2007",
+      "price_text": "$790,463",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "IGRI Land Development Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Colin Soule",
+        "30 International Blvd",
+        "Toronto, Ontario",
+        "M9W 5P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "GML Industrial Fund GP Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Colin Soule",
+        "30 International Blvd",
+        "Toronto, Ontario",
+        "M9W 5P3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-20245, Parts 2 & 8",
+      "Plan 4R-21071, Part 1",
+      "",
+      "5.31 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $790,463     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7993 / 10920",
+      "rt_id": "RT55017"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "IBER RD, ABBOTT ST E",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "04/16/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.31",
+    "consid": "790463",
+    "cash": "790463",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "IBER RD",
+      "ABBOTT ST E"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "16 Apr 2007",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "IGRI Land Development Corp"
+    ],
+    "buyer_lines": [
+      "GML Industrial Fund GP Ltd"
+    ],
+    "price_text": "$790,463"
+  }
+}

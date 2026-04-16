@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20985",
+  "source_folder": "Metro_Toronto/retail/p090",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20985",
+      "source_folder": "Metro_Toronto/retail/p090",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p090/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "232 - 240 BERRY RD"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "19 Mar 2001",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Berry Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Bunston",
+        "55 St Clair Ave W, Ste 217",
+        "Toronto, Ontario",
+        "M4V 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1463291 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruno Zanini",
+        "55 Fieldway Rd",
+        "Toronto, Ontario",
+        "M8Z 3L4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4422, Blocks B-D",
+      "",
+      "NE corner at Prince Edward Dr"
+    ],
+    "arn_text": "19 19 018 300 02700",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT209/RT20985/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4489 / 4952",
+      "rt_id": "RT20985"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "232 - 240 BERRY RD",
+    "postcode": "M8Y 1X6",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "03/19/2001",
+    "desc": "Retail Plaza - 1 storey",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 018 300 02700"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "232 - 240 BERRY RD"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "19 Mar 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey",
+    "seller_lines": [
+      "Berry Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1463291 Ontario Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

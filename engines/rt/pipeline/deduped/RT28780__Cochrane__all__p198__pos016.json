@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT28780",
+  "source_folder": "Cochrane/all/p198",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28780",
+      "source_folder": "Cochrane/all/p198",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p198/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 3, PT LOTS 17-20",
+        "CONC 4, PT LOT 24"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "09 Sep 2002",
+      "price_text": "$585,700",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Jes & Mary Pedersen",
+        "Jes Petersen"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3429 Second Line Rd, RR 1",
+        "Osgoode, Ontario",
+        "K0A 2W0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1470161 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jes Petersen",
+        "2381 Manotick Station Rd, RR 1",
+        "Osgoode, Ontario",
+        "K0A 2W0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9867 / 10920",
+      "rt_id": "RT28780"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "CONC 3, PT LOTS 17-20, CONC 4, PT LOT 24",
+    "postcode": "",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "09/09/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "585700",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "CONC 3, PT LOTS 17-20",
+      "CONC 4, PT LOT 24"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "09 Sep 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Jes & Mary Pedersen",
+      "Jes Petersen"
+    ],
+    "buyer_lines": [
+      "1470161 Ontario Inc"
+    ],
+    "price_text": "$585,700"
+  }
+}

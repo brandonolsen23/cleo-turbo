@@ -1,0 +1,133 @@
+{
+  "rt_id": "RT77449",
+  "source_folder": "Kitchener-Waterloo/retail/p010",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77449",
+      "source_folder": "Kitchener-Waterloo/retail/p010",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p010/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "500 CAN-AMERA PKWY"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "25 Mar 2011",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Upper Country Club Plaza Inc     905-829-2424"
+      ],
+      "trade_name": "Mattamy Homes Ltd",
+      "contact_lines": [
+        "ASO: Catherine Griffin",
+        "2360 Bristol Circle",
+        "Oakville, Ontario",
+        "L6H 6M5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Club Plaza Inc     519-623-5365"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Faisal Susiwala",
+        "30 Grandy Lane",
+        "Cambridge, Ontario",
+        "N1R 8K2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 units 13,567 sf @ $184",
+      "",
+      "Upper Country Club Plaza",
+      "11,267 sf vacant (7 units)",
+      "2,300 sf leased to two tenants",
+      "Built 2008"
+    ],
+    "more_info_url": "/assets/files/RT7/RT774/RT77449/mi.pdf",
+    "site_lines": [
+      "Plan 58M-434, Block 1",
+      "",
+      "PIN: 03796-3632",
+      "",
+      "1.26 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $1,700,000",
+      "",
+      "chargee: Upper Country Club Plaza",
+      "principal: $1,700,000   rate: 0% until 9/1/2011, then 5.0% per annum",
+      "registered: 03/25/2011   due: 04/01/2013"
+    ],
+    "broker_lines": [
+      "DTZ Barnicke: Bryce Gibson, Dan Rogers, Andrew Barnicke & Michael Conrad, 519-746-6300",
+      "RE/MAX Twin City Realty: Faisal Susiwala, 519-624-5555"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77449/0402_075639.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77449/0402_075710.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77449/0402_075714.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77449/0402_075812.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77449/0402_075900.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT774/RT77449/air1.jpg",
+        "/assets/files/RT7/RT774/RT77449/air2.jpg",
+        "/assets/files/RT7/RT774/RT77449/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "452 / 752",
+      "rt_id": "RT77449"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "500 CAN-AMERA PKWY",
+    "postcode": "N1T 0A2",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "03/25/2011",
+    "desc": "Retail Plaza - 1 storey; 9 units 13,567 sf @ $184",
+    "bldg": "13,567 sf",
+    "acreage": "1.26",
+    "consid": "2500000",
+    "cash": "800000",
+    "debt": "1700000",
+    "note": "",
+    "pin": "03796-3632",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "500 CAN-AMERA PKWY"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "25 Mar 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 9 units 13,567 sf @ $184",
+    "seller_lines": [
+      "Upper Country Club Plaza Inc"
+    ],
+    "buyer_lines": [
+      "Club Plaza Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

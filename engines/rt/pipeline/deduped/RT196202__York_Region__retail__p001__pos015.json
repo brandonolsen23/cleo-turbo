@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT196202",
+  "source_folder": "York_Region/retail/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196202",
+      "source_folder": "York_Region/retail/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "5812 MAIN ST"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "22 Dec 2025",
+      "price_text": "$3,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "570102 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "338 Fern Ave",
+        "Richmond Hill, Ontario",
+        "L4C 8P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001391200 Ontario Inc     289-553-3280"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank Trelle",
+        "65 Barletta Dr",
+        "Maple, Ontario",
+        "L6A 4H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-6470, Parts 2-4",
+      "",
+      "PIN: 03717-0056",
+      "",
+      "0.56 acre"
+    ],
+    "arn_text": "19 44 000 200 12000",
+    "consideration_lines": [
+      "cash: $3,350,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,120,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/22/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1962/RT196202/0103_152551.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1962/RT196202/0103_152552.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1962/RT196202/0103_152627.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1962/RT196202/0103_152628.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1962/RT196202/0103_152637.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 984",
+      "rt_id": "RT196202"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "5812 MAIN ST",
+    "postcode": "L4A 2S9",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "12/22/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".56",
+    "consid": "3350000",
+    "cash": "3350000",
+    "debt": "",
+    "note": "",
+    "pin": "03717-0056",
+    "rollno": "19 44 000 200 12000"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "5812 MAIN ST"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "22 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "570102 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001391200 Ontario Inc"
+    ],
+    "price_text": "$3,350,000"
+  }
+}

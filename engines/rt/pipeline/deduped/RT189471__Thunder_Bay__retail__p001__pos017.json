@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT189471",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189471",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "1020 DAWSON RD"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "06 Jan 2025",
+      "price_text": "$5,000,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Dawson Road Thunder Bay Portfolio Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000904209 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "Goldmanco",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "1989 Leslie St",
+        "Toronto, Ontario",
+        "M3B 2M3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-263 - McIntyre,",
+      "Lot 4, Blocks C, D, F, G & H",
+      "Except:",
+      "Plan 55R-9302, Parts 4 & 7",
+      "Plan 55R-10786, Parts 2 & 4",
+      "",
+      "PIN: 62191-0508",
+      "",
+      "6.12 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 65",
+      "rt_id": "RT189471"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "1020 DAWSON RD",
+    "postcode": "P7B 1K6",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "01/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.12",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "62191-0508",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "1020 DAWSON RD"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "06 Jan 2025",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "Dawson Road Thunder Bay Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "1000904209 Ontario Inc"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

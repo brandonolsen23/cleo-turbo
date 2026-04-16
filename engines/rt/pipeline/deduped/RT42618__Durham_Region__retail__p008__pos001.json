@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT42618",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42618",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "325 WESTNEY RD S"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "21 Jun 2005",
+      "price_text": "$1,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "637653 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Bozanis",
+        "44 Woodcock Ave",
+        "Ajax, Ontariop",
+        "L1T 4J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "See Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John See",
+        "325 Westney Rd S",
+        "Ajax, Ontario",
+        "L1S 6M5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 10,000 sf @ $113"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "BFC, Range 3, Part Lot 12",
+      "Plan 40R-9314, Part 2",
+      "",
+      "0.98 acre"
+    ],
+    "arn_text": "18 05 040 006 25110",
+    "consideration_lines": [
+      "cash: $506,250     assumed/vtb debt: $618,750",
+      "",
+      "chargee: 637653 Ontario Inc",
+      "principal: $618,750   rate: 6.0% per annum",
+      "registered: 06/21/2005   due: 06/20/2010",
+      "",
+      "chargee: Community Trust Company Ltd",
+      "principal: $415,000   rate: 7.5% per annum",
+      "registered: 06/21/2002   due: 06/20/2005"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT426/RT42618/photo.jpg"
+    },
+    "footer": {
+      "page_position": "352 / 506",
+      "rt_id": "RT42618"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "325 WESTNEY RD S",
+    "postcode": "L1S 6M5",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "06/21/2005",
+    "desc": "Retail Plaza - 1 storey; 3 units 10,000 sf @ $113",
+    "bldg": "10,000 sf",
+    "acreage": ".98",
+    "consid": "1125000",
+    "cash": "506250",
+    "debt": "618750",
+    "note": "",
+    "pin": "",
+    "rollno": "18 05 040 006 25110"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "325 WESTNEY RD S"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "21 Jun 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 10,000 sf @ $113",
+    "seller_lines": [
+      "637653 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "See Enterprises Ltd"
+    ],
+    "price_text": "$1,125,000"
+  }
+}

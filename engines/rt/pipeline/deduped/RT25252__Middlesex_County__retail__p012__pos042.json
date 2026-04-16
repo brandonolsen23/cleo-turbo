@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT25252",
+  "source_folder": "Middlesex_County/retail/p012",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25252",
+      "source_folder": "Middlesex_County/retail/p012",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p012/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "561 SOUTHDALE RD E"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "27 Mar 2002",
+      "price_text": "$1,550,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Mohammad I. Marie"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "312 Commissioners Rd W, Ste 101",
+        "London, Ontario",
+        "N6J 1Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mohammad Marie",
+        "Rashed All Bloushi"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "312 Commissioners Rd W",
+        "London, Ontario",
+        "N6J 1Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-7265",
+      "Parts 1, 10 & 11"
+    ],
+    "arn_text": "39 36 060 600 16300",
+    "consideration_lines": [
+      "cash: $720,583     assumed/vtb debt: $829,417"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "593 / 686",
+      "rt_id": "RT25252"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "561 SOUTHDALE RD E",
+    "postcode": "N6E 3M7",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/27/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1550000",
+    "cash": "720583",
+    "debt": "829417",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "39 36 060 600 16300"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "561 SOUTHDALE RD E"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "27 Mar 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Mohammad I. Marie"
+    ],
+    "buyer_lines": [
+      "Mohammad Marie",
+      "Rashed All Bloushi"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

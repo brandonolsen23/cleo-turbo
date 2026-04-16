@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20167",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20167",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 DEAN PARK RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "09 Jan 2001",
+      "price_text": "$8,598,303",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Lebovic Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Lebovic",
+        "PO Box 1240",
+        "Stouffville, Ontario",
+        "L4A 8A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Wolf Lebovic Charitable Foundation"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Lebovic",
+        "PO Box 1240",
+        "Stouffville, Ontario",
+        "L4A 8A2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-1657, Block E",
+      "",
+      "4.05 acre"
+    ],
+    "arn_text": "19 01 122 360 00200",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $8,598,303"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5589 / 6031",
+      "rt_id": "RT20167"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "1 DEAN PARK RD",
+    "postcode": "M1B 2W5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/09/2001",
+    "desc": "Apartment Bldg",
+    "bldg": "266 units",
+    "acreage": "4.05",
+    "consid": "8598303",
+    "cash": "",
+    "debt": "8598303",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 122 360 00200"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "1 DEAN PARK RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "09 Jan 2001",
+    "note": "Related Parties",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "Lebovic Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "The Wolf Lebovic Charitable Foundation"
+    ],
+    "price_text": "$8,598,303"
+  }
+}

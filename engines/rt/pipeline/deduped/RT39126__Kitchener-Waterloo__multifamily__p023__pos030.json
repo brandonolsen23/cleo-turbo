@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT39126",
+  "source_folder": "Kitchener-Waterloo/multifamily/p023",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39126",
+      "source_folder": "Kitchener-Waterloo/multifamily/p023",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p023/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "245 CHANDLER DR"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "02 Dec 2004",
+      "price_text": "$810,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "245 Chandler Drive Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexa Sofia",
+        "27 Cleta Dr",
+        "Scarborough, Ontario",
+        "M1K 3G5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 14 units @ $57,857"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1242, Block F",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "30 12 040 036 18850",
+    "consideration_lines": [
+      "cash: $319,178     assumed/vtb debt: $490,822"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT391/RT39126/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1131 / 1449",
+      "rt_id": "RT39126"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "245 CHANDLER DR",
+    "postcode": "N2E 1H3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/02/2004",
+    "desc": "Apartment Bldg - 14 units @ $57,857",
+    "bldg": "14 units",
+    "acreage": ".48",
+    "consid": "810000",
+    "cash": "319178",
+    "debt": "490822",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 036 18850"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "245 CHANDLER DR"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "02 Dec 2004",
+    "note": "",
+    "description": "Apartment Bldg - 14 units @ $57,857",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "245 Chandler Drive Ltd"
+    ],
+    "price_text": "$810,000"
+  }
+}

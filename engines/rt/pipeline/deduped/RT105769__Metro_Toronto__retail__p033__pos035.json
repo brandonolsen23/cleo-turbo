@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT105769",
+  "source_folder": "Metro_Toronto/retail/p033",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105769",
+      "source_folder": "Metro_Toronto/retail/p033",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p033/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "1293 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Jan 2015",
+      "price_text": "$1,512,463",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,683 sf @ $266",
+      "",
+      "Leased back to the vendor (BMO)",
+      "",
+      "8 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-15536, Parts 1 & 2",
+      "",
+      "PIN: 21331-0304",
+      "",
+      "SW corner Bloor St W and Lansdowne Ave",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 024 420 08500",
+    "consideration_lines": [
+      "cash: $1,512,463     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105769/0125_101114.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105769/0125_101142.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105769/0125_101144.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105769/0125_101148.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105769/0125_101211.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1636 / 4952",
+      "rt_id": "RT105769"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "1293 BLOOR ST W",
+    "postcode": "M6H 1P1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 5,683 sf @ $266",
+    "bldg": "5,683 sf",
+    "acreage": ".14",
+    "consid": "1512463",
+    "cash": "1512463",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "21331-0304",
+    "rollno": "19 04 024 420 08500"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "1293 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 5,683 sf @ $266",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$1,512,463"
+  }
+}

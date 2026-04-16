@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT58802",
+  "source_folder": "York_Region/retail/p013",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT58802",
+      "source_folder": "York_Region/retail/p013",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 MASSEYFIELD GATE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "16 Nov 2007",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "WFWH Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wahidul Haque",
+        "1322 Greeniaus Rd",
+        "Oakville, Ontario",
+        "L6J 6Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2143043 Ontario Ltd     905-475-1000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Silverberg",
+        "7181 Woodbine Ave, Ste 226",
+        "Markham, Ontario",
+        "L3R 1A3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 tenants 9,540 sf @ $241",
+      "",
+      "5 tenants, 1 vacant unit (1,000 sf)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1797, Block A",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 36 020 125 00001",
+    "consideration_lines": [
+      "cash: $996,398     assumed/vtb debt: $1,303,605"
+    ],
+    "broker_lines": [
+      "Sutton Group New Standard Realty: Hardy Lee, 905-709-8000",
+      "RE/MAX Hallmark Realty: A.J. Hincer, 416-462-1888"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT588/RT58802/1125_153759.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT588/RT58802/1125_153801.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT588/RT58802/air1.jpg",
+        "/assets/files/RT5/RT588/RT58802/air2.jpg",
+        "/assets/files/RT5/RT588/RT58802/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "629 / 984",
+      "rt_id": "RT58802"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "1 MASSEYFIELD GATE",
+    "postcode": "L3R 3M8",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/16/2007",
+    "desc": "Retail Plaza - 1 storey; 5 tenants 9,540 sf @ $241",
+    "bldg": "9,540 sf",
+    "acreage": "1",
+    "consid": "2300000",
+    "cash": "996398",
+    "debt": "1303605",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 125 00001"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "1 MASSEYFIELD GATE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "16 Nov 2007",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 tenants 9,540 sf @ $241",
+    "seller_lines": [
+      "WFWH Investments Inc"
+    ],
+    "buyer_lines": [
+      "2143043 Ontario Ltd"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

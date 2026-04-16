@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT182265",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182265",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "894 KINGSWAY"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "21 Dec 2023",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1777216 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "469 Kingsway",
+        "Sudbury, Ontario",
+        "P3B 2E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Canadian Commercial (Kingsway) Inc     519-672-7490"
+      ],
+      "trade_name": "Canadian Commercial Development",
+      "contact_lines": [
+        "Attn: Charles Miller",
+        "484 Waterloo St",
+        "London, Ontario",
+        "N6B 2P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - Mckim, Part Lot 3",
+      "Plan 53R-5842, Parts 2-4",
+      "",
+      "PIN: 02132-0448",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "53 07 010 029 09300",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $150,000",
+      "",
+      "chargee: Sudbury Credit Union Ltd",
+      "principal: $1,630,000   rate: 6.34% per annum.",
+      "registered: 12/21/2023   due: 12/01/2028",
+      "",
+      "chargee: 1777216 Ontario Inc",
+      "principal: $150,000   rate: 9.0% per annum.",
+      "registered: 12/21/2023   due: 06/21/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1822/RT182265/air1.jpg",
+        "/assets/files/RT18/RT1822/RT182265/air2.jpg",
+        "/assets/files/RT18/RT1822/RT182265/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 90",
+      "rt_id": "RT182265"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "894 KINGSWAY",
+    "postcode": "P3B 2E5",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "12/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".6",
+    "consid": "1450000",
+    "cash": "1300000",
+    "debt": "150000",
+    "note": "",
+    "pin": "02132-0448",
+    "rollno": "53 07 010 029 09300"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "894 KINGSWAY"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "21 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1777216 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Canadian Commercial (Kingsway) Inc"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT60838",
+  "source_folder": "Oxford_County/retail/p002",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60838",
+      "source_folder": "Oxford_County/retail/p002",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p002/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "876 DUNDAS ST"
+      ],
+      "city_region": "Woodstock : Oxford County",
+      "date_text": "29 Feb 2008",
+      "price_text": "$662,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1279094 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Meinhard Cigler",
+        "109 Lyndale Cres",
+        "Woodstock, Ontario",
+        "N4S 1G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Picard Peanuts Ltd     519-426-6700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Picard",
+        "RR 1",
+        "Windham Centre, Ontario",
+        "N0E 2A0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,000 sf @ $221",
+      "",
+      "Vacant",
+      "",
+      "Purchaser will renovate and occupy bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1597, Lot 2",
+      "",
+      "0.90 acre"
+    ],
+    "arn_text": "32 42 050 040 01200",
+    "consideration_lines": [
+      "cash: $662,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Albert T Hargreaves Real Estate Ltd: Albert Hargreaves, 519-537-4820"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT608/RT60838/0404_090246.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT608/RT60838/0404_090330.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT608/RT60838/0404_090333.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT608/RT60838/air1.jpg",
+        "/assets/files/RT6/RT608/RT60838/air2.jpg",
+        "/assets/files/RT6/RT608/RT60838/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "80 / 96",
+      "rt_id": "RT60838"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "876 DUNDAS ST",
+    "postcode": "N4S 1G7",
+    "municipality": "Woodstock",
+    "region": "Oxford County",
+    "date": "02/29/2008",
+    "desc": "Retail Bldg - 1 storey; 3,000 sf @ $221",
+    "bldg": "3,000 sf",
+    "acreage": ".9",
+    "consid": "662500",
+    "cash": "662500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "32 42 050 040 01200"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "876 DUNDAS ST"
+    ],
+    "city_region": "Woodstock : Oxford County",
+    "date_text": "29 Feb 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3,000 sf @ $221",
+    "seller_lines": [
+      "1279094 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Picard Peanuts Ltd"
+    ],
+    "price_text": "$662,500"
+  }
+}

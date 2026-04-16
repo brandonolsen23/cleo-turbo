@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20273",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20273",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1617 VICTORIA PK AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "15 Jan 2001",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "902296 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gulu Thadani",
+        "157 York Mills Rd",
+        "North York, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1457375 Ontario Inc     416-497-1541"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Levy",
+        "29 Bluffwood Dr",
+        "Toronto, Ontario",
+        "M2H 3L4"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 4 storey; 58 units @ $65,517"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4268, Block C",
+      "",
+      "E side 10m N of Elvaston Dr",
+      "",
+      "1.02 acre"
+    ],
+    "arn_text": "19 01 031 150 00300",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20273/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5583 / 6031",
+      "rt_id": "RT20273"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1617 VICTORIA PK AVE",
+    "postcode": "M1R 1P5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/15/2001",
+    "desc": "Apartment Bldg - 4 storey; 58 units @ $65,517",
+    "bldg": "58 units",
+    "acreage": "1.02",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 031 150 00300"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1617 VICTORIA PK AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "15 Jan 2001",
+    "note": "",
+    "description": "Apartment Bldg - 4 storey; 58 units @ $65,517",
+    "seller_lines": [
+      "902296 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1457375 Ontario Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

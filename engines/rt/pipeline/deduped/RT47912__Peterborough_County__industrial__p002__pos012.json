@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT47912",
+  "source_folder": "Peterborough_County/industrial/p002",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47912",
+      "source_folder": "Peterborough_County/industrial/p002",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/industrial/p002/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "2060 FISHER DR"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "31 Mar 2006",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2060 Fisher Drive Inc     416-789-3466"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Zoran",
+        "363 Cortleigh Blvd",
+        "Toronto, Ontario",
+        "M5N 1R4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 9",
+      "Plan 45R-7047, Part 1",
+      "",
+      "5.50 acre"
+    ],
+    "arn_text": "15 14 010 130 05225",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $4,000,000   rate: Base plus 10.0% per annum",
+      "registered: 03/31/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "63 / 76",
+      "rt_id": "RT47912"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "2060 FISHER DR",
+    "postcode": "K9J 6X6",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "03/31/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.5",
+    "consid": "4000000",
+    "cash": "4000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "15 14 010 130 05225"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "2060 FISHER DR"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "31 Mar 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2060 Fisher Drive Inc"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

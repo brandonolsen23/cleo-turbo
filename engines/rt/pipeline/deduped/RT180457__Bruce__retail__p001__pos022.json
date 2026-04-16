@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT180457",
+  "source_folder": "Bruce/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180457",
+      "source_folder": "Bruce/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "9 BAY ST"
+      ],
+      "city_region": "Northern Bruce Peninsula : Bruce",
+      "date_text": "21 Sep 2023",
+      "price_text": "$2,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Peacock's Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "37 Simpson Ave",
+        "Tobermory, Ontario",
+        "N0H 2R0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000039776 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Griffin Salen",
+        "17 Grant Watson Dr",
+        "Tobermory, Ontario",
+        "N0H 2R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-9507, Part 1",
+      "",
+      "PIN: 33101-0469",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 44",
+      "rt_id": "RT180457"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "9 BAY ST",
+    "postcode": "N0H 2R0",
+    "municipality": "Northern Bruce Peninsula",
+    "region": "Bruce",
+    "date": "09/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "2250000",
+    "cash": "2250000",
+    "debt": "",
+    "note": "",
+    "pin": "33101-0469",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "9 BAY ST"
+    ],
+    "city_region": "Northern Bruce Peninsula : Bruce",
+    "date_text": "21 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Peacock's Investments Inc"
+    ],
+    "buyer_lines": [
+      "1000039776 Ontario Inc"
+    ],
+    "price_text": "$2,250,000"
+  }
+}

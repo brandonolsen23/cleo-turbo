@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT191293",
+  "source_folder": "Leeds/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191293",
+      "source_folder": "Leeds/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "25 ELEANOR ST"
+      ],
+      "city_region": "Brockville : Leeds",
+      "date_text": "01 Apr 2025",
+      "price_text": "$2,725,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Riverside Ford Sales Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Heighton Developments Inc     877-251-9249"
+      ],
+      "trade_name": "Jim Thompson Chrysler",
+      "contact_lines": [
+        "Attn: Thomas Heighton",
+        "805 Gardiners Rd",
+        "Kingston, Ontario",
+        "K7M 7E6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67, Block 37",
+      "Lots 3-5",
+      "As in Inst No LR-102324",
+      "",
+      "PIN: 44170-0278",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "08 02 020 045 21500",
+    "consideration_lines": [
+      "cash: $2,725,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,830,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/01/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191293/0509_114547.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191293/0509_114552.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191293/0509_114608.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191293/0509_114609.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 40",
+      "rt_id": "RT191293"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "25 ELEANOR ST",
+    "postcode": "K6V 4H9",
+    "municipality": "Brockville",
+    "region": "Leeds",
+    "date": "04/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "2725000",
+    "cash": "2725000",
+    "debt": "",
+    "note": "",
+    "pin": "44170-0278",
+    "rollno": "08 02 020 045 21500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "25 ELEANOR ST"
+    ],
+    "city_region": "Brockville : Leeds",
+    "date_text": "01 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Riverside Ford Sales Ltd"
+    ],
+    "buyer_lines": [
+      "Heighton Developments Inc"
+    ],
+    "price_text": "$2,725,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT24007",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24007",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 QUEENS QUAY W",
+        "RETAIL STES 11 - 13"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "13 Dec 2001",
+      "price_text": "$600,230",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cenpac Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gabriel Leung",
+        "498 Queen's Quay W",
+        "Toronto, Ontario",
+        "M5V 3K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KDA Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harvey Swartz",
+        "550 Queen's Quay W",
+        "Retail Stes 11-13",
+        "Toronto, Ontario",
+        "M5V 3K7"
+      ]
+    },
+    "description_lines": [
+      "Com/Retail Condos - 3 units; 3,195 sf @ $188",
+      "",
+      "Unit 11: 1,155 sf",
+      "Unit 12: 909 sf",
+      "Unit 13: 1,131 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1396",
+      "Level 1, Units 11-13"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $600,230     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24007/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4328 / 4952",
+      "rt_id": "RT24007"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "550 QUEENS QUAY W, RETAIL STES 11 - 13",
+    "postcode": "M5V 3K7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/13/2001",
+    "desc": "Com/Retail Condos - 3 units; 3,195 sf @ $188",
+    "bldg": "3,195 sf",
+    "acreage": "",
+    "consid": "600230",
+    "cash": "600230",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "550 QUEENS QUAY W",
+      "RETAIL STES 11 - 13"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "13 Dec 2001",
+    "note": "",
+    "description": "Com/Retail Condos - 3 units; 3,195 sf @ $188",
+    "seller_lines": [
+      "Cenpac Developments Inc"
+    ],
+    "buyer_lines": [
+      "KDA Canada Corp"
+    ],
+    "price_text": "$600,230"
+  }
+}

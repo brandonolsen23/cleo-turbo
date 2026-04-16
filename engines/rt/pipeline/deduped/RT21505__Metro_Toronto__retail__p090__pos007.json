@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT21505",
+  "source_folder": "Metro_Toronto/retail/p090",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21505",
+      "source_folder": "Metro_Toronto/retail/p090",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p090/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "3351 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "07 May 2001",
+      "price_text": "$919,829",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Scott's Restaurants Inc",
+        "Tricon Canada Management Holding Inc",
+        "Priszm Brandz Inc",
+        "COB as Priszm Brandz LP     905-946-7100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Burns",
+        "500 Hood Rd",
+        "Markham, Ontario",
+        "L3R 0P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Scott's Restaurants Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruce McKenna",
+        "500 Hood Rd",
+        "Markham, Ontario",
+        "L3R 0P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan R-1209, Parts 2 & 3",
+      "As in Inst No E-22627"
+    ],
+    "arn_text": "19 01 063 550 00300",
+    "consideration_lines": [
+      "cash: $919,829     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4458 / 4952",
+      "rt_id": "RT21505"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "3351 LAWRENCE AVE E",
+    "postcode": "M1H 1A8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/07/2001",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "919829",
+    "cash": "919829",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 063 550 00300"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "3351 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "07 May 2001",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Scott's Restaurants Inc",
+      "Tricon Canada Management Holding Inc",
+      "Priszm Brandz Inc",
+      "COB as Priszm Brandz LP"
+    ],
+    "buyer_lines": [
+      "Scott's Restaurants Inc"
+    ],
+    "price_text": "$919,829"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT194368",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194368",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "310 - 328 KING ST E"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "10 Sep 2025",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "J-4 Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1710 Concession Rd",
+        "Cambridge, Ontario",
+        "N3H 4L9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2715149 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Catalin Ionescu",
+        "365 Ellerslie Ave",
+        "Toronto, Ontario",
+        "M2R 1B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67R-705, Part 1",
+      "Plan 91, Part Lot A",
+      "As in Inst No WS-611317",
+      "Except:",
+      "Inst No WS-611318",
+      "",
+      "PIN: 03776-0049",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "30 06 100 019 07800",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083030.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083034.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083036.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083110.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083119.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083120.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194368/0117_083123.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 752",
+      "rt_id": "RT194368"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "310 - 328 KING ST E",
+    "postcode": "N3H 3M8",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "09/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "03776-0049",
+    "rollno": "30 06 100 019 07800"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "310 - 328 KING ST E"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "10 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "J-4 Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "2715149 Ontario Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

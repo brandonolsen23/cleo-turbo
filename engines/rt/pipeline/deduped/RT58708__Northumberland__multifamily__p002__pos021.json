@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT58708",
+  "source_folder": "Northumberland/multifamily/p002",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT58708",
+      "source_folder": "Northumberland/multifamily/p002",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/multifamily/p002/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "202 GREEN ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "07 Nov 2007",
+      "price_text": "$830,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1544267 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Stutz",
+        "159 Puget St",
+        "Barrie, Ontario",
+        "L4M 4N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1111769 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bill Foster",
+        "17 Claridge Cres",
+        "Whitby, Ontario",
+        "L1R 3E2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 13 units @ $63,846"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc B, Part Lot 15",
+      "Plan 39R-7921, Part 1",
+      "",
+      "0.59 acre"
+    ],
+    "arn_text": "14 21 000 030 00800",
+    "consideration_lines": [
+      "cash: $830,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1544267 Ontario Inc",
+      "principal: $121,095   rate: 5.0% per annum",
+      "registered: 11/07/2007   due: 11/01/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT587/RT58708/0228_075909.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT587/RT58708/0228_075911.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT587/RT58708/0228_075915.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT587/RT58708/air1.jpg",
+        "/assets/files/RT5/RT587/RT58708/air2.jpg",
+        "/assets/files/RT5/RT587/RT58708/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "72 / 72",
+      "rt_id": "RT58708"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "202 GREEN ST",
+    "postcode": "K9A 3W7",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "11/07/2007",
+    "desc": "Apartment Bldg - 3 storey; 13 units @ $63,846",
+    "bldg": "13 units",
+    "acreage": ".59",
+    "consid": "830000",
+    "cash": "830000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "14 21 000 030 00800"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "202 GREEN ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "07 Nov 2007",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 13 units @ $63,846",
+    "seller_lines": [
+      "1544267 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1111769 Ontario Ltd"
+    ],
+    "price_text": "$830,000"
+  }
+}

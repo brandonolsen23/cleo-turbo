@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT162080",
+  "source_folder": "Cochrane/all/p037",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT162080",
+      "source_folder": "Cochrane/all/p037",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p037/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "311 - 315 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "19 Jul 2021",
+      "price_text": "$2,800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2840637 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Kwan",
+        "311 Bank St",
+        "Ottawa, Ontario",
+        "K2P 1X9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 15558,",
+      "Lot 10, E/S Bank St",
+      "",
+      "PIN: 04119-0048",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 14 042 001 29000",
+    "consideration_lines": [
+      "cash: $2,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1837 / 10920",
+      "rt_id": "RT162080"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "311 - 315 BANK ST",
+    "postcode": "K2P 1X9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/19/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "2800000",
+    "cash": "2800000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04119-0048",
+    "rollno": "06 14 042 001 29000"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "311 - 315 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "19 Jul 2021",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2840637 Ontario Inc"
+    ],
+    "price_text": "$2,800,000"
+  }
+}

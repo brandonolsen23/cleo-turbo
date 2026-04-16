@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT39009",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39009",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "201 RIVER OAKS BLVD W"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "01 Dec 2004",
+      "price_text": "$880,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1635062 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nashir Hirmiz",
+        "201 River Oaks Blvd W",
+        "Oakville, Ontario",
+        "L6H 3S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20M-311, Block 148",
+      "",
+      "0.56 acre"
+    ],
+    "arn_text": "24 01 010 030 55425",
+    "consideration_lines": [
+      "cash: $880,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT390/RT39009/photo.jpg"
+    },
+    "footer": {
+      "page_position": "442 / 613",
+      "rt_id": "RT39009"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "201 RIVER OAKS BLVD W",
+    "postcode": "L6H 3S7",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "12/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".56",
+    "consid": "880000",
+    "cash": "880000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 010 030 55425"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "201 RIVER OAKS BLVD W"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "01 Dec 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1635062 Ontario Ltd"
+    ],
+    "price_text": "$880,000"
+  }
+}

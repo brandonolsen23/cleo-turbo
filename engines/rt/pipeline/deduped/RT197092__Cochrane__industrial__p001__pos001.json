@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197092",
+  "source_folder": "Cochrane/industrial/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197092",
+      "source_folder": "Cochrane/industrial/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/industrial/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "71 GOVERNMENT RD N"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "03 Feb 2026",
+      "price_text": "$1,065,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "835835 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "24 Government Rd S",
+        "Timmins, Ontario",
+        "P4R 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bajan Ltd     888-924-6233"
+      ],
+      "trade_name": "Wainbee Ltd",
+      "contact_lines": [
+        "Attn: Campbell Tourgis",
+        "5789 Coopers Ave",
+        "Mississauga, Ontario",
+        "L4Z 3S6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "SRO:",
+      "Conc 2 - Mountjoy, Part Lot 7",
+      "Plan 6R-2687, Part 1",
+      "Plan CR-964, Part 2",
+      "Except:",
+      "Plan 6R-4591, Part 1",
+      "",
+      "PIN: 65416-0013 +",
+      "",
+      "1.99 acre"
+    ],
+    "arn_text": "56 27 010 092 13100",
+    "consideration_lines": [
+      "cash: $1,065,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $15,000,000   rate: 25.0% per annum",
+      "registered: 02/03/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 19",
+      "rt_id": "RT197092"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "71 GOVERNMENT RD N",
+    "postcode": "P4R 1M9",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "02/03/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.99",
+    "consid": "1065000",
+    "cash": "1065000",
+    "debt": "",
+    "note": "",
+    "pin": "65416-0013+",
+    "rollno": "56 27 010 092 13100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "71 GOVERNMENT RD N"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "03 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "835835 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Bajan Ltd"
+    ],
+    "price_text": "$1,065,000"
+  }
+}

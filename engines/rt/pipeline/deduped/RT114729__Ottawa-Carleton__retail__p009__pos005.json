@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT114729",
+  "source_folder": "Ottawa-Carleton/retail/p009",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT114729",
+      "source_folder": "Ottawa-Carleton/retail/p009",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p009/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "512 - 524 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "26 Feb 2016",
+      "price_text": "$5,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Toth Equity Ltd     613-241-6380"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Toth Jr",
+        "180 Metcalfe St, Ste 100",
+        "Ottawa, Ontario",
+        "K2P 1P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Grant Castle Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert French",
+        "524 Bank St",
+        "Ottawa, Ontario",
+        "K2P 1Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30, Lots 10-12",
+      "W/S Bank St",
+      "",
+      "PIN: 04122-0200",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "06 14 042 201 45300",
+    "consideration_lines": [
+      "cash: $5,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1147/RT114729/0521_064715.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1147/RT114729/0521_064722.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1147/RT114729/0521_064729.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1147/RT114729/0521_064811.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1147/RT114729/0521_064812.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1147/RT114729/0521_064816.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "406 / 1141",
+      "rt_id": "RT114729"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "512 - 524 BANK ST",
+    "postcode": "K2P 1Z5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/26/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "5300000",
+    "cash": "5300000",
+    "debt": "",
+    "note": "",
+    "pin": "04122-0200",
+    "rollno": "06 14 042 201 45300"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "512 - 524 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "26 Feb 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Toth Equity Ltd"
+    ],
+    "buyer_lines": [
+      "Grant Castle Corp"
+    ],
+    "price_text": "$5,300,000"
+  }
+}

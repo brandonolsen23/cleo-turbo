@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT181214",
+  "source_folder": "Wellington/retail/p001",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181214",
+      "source_folder": "Wellington/retail/p001",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "59 WOODLAWN RD W"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "31 Oct 2023",
+      "price_text": "$1,950,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "2745810 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "61 Beacon Hill Dr",
+        "Brampton, Ontario",
+        "L6X 1H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000669253 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kajal Marok",
+        "59 Woodlawn Rd W",
+        "Guelph, Ontario",
+        "N1H 1G8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 169, Part Lot 4",
+      "As in Inst No RO-803884",
+      "",
+      "PIN: 71359-0141",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "23 08 040 007 25600",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,950,000",
+      "chattels: $700,000",
+      "",
+      "chargee: 2745810 Ontario Ltd",
+      "principal: $1,950,000   rate: 7.5% per annum.",
+      "registered: 10/31/2023   due: 10/30/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181214/0127_152210.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181214/0127_152236.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181214/0127_152304.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181214/0127_152314.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1812/RT181214/0127_152325.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1812/RT181214/air1.jpg",
+        "/assets/files/RT18/RT1812/RT181214/air2.jpg",
+        "/assets/files/RT18/RT1812/RT181214/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "42 / 269",
+      "rt_id": "RT181214"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "59 WOODLAWN RD W",
+    "postcode": "N1H 1G8",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "10/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "1950000",
+    "cash": "",
+    "debt": "1950000",
+    "note": "Zero Cash",
+    "pin": "71359-0141",
+    "rollno": "23 08 040 007 25600"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "59 WOODLAWN RD W"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "31 Oct 2023",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "2745810 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000669253 Ontario Inc"
+    ],
+    "price_text": "$1,950,000"
+  }
+}

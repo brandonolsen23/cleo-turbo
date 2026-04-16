@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT179440",
+  "source_folder": "Perth_County/retail/p001",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179440",
+      "source_folder": "Perth_County/retail/p001",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p001/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "345 WALLACE AVE N"
+      ],
+      "city_region": "N. Perth : Perth County",
+      "date_text": "27 Jul 2023",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2325620 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1330 Duncan Rd",
+        "Oakville, Ontario",
+        "L6J 2P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Scott R Davidson Holding Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Scott Davidson",
+        "435 Keeso Lane",
+        "Listowel, Ontario",
+        "N4W 0J3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 151,",
+      "Lots 90 & 91, W/S Wallace Ave N",
+      "",
+      "PIN: 53024-0122",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "31 40 420 012 12300",
+    "consideration_lines": [
+      "cash: $1,350,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179440/0930_115938.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179440/0930_115944.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179440/0930_120009.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179440/0930_120018.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "36 / 113",
+      "rt_id": "RT179440"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "345 WALLACE AVE N",
+    "postcode": "N4W 1L2",
+    "municipality": "N. Perth",
+    "region": "Perth County",
+    "date": "07/27/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "1350000",
+    "cash": "1350000",
+    "debt": "",
+    "note": "",
+    "pin": "53024-0122",
+    "rollno": "31 40 420 012 12300"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "345 WALLACE AVE N"
+    ],
+    "city_region": "N. Perth : Perth County",
+    "date_text": "27 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2325620 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Scott R Davidson Holding Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

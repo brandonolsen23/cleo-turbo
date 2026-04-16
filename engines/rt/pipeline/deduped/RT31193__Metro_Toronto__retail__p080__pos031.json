@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT31193",
+  "source_folder": "Metro_Toronto/retail/p080",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31193",
+      "source_folder": "Metro_Toronto/retail/p080",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p080/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "1154 - 1156 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Jul 2003",
+      "price_text": "$2,285,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Brain St Clair Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gary Samuel",
+        "175 Bloor St E, Ste 716",
+        "Toronto, Ontario",
+        "M4W 3R8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Clairmount Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Weimin Liu",
+        "136 Caribou Rd",
+        "Toronto, Ontario",
+        "M5N 2B3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 22,954 sf @ $100",
+      "",
+      "Last transferred in Oct 2002 for $1,425,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1458, Part Lots 3-6",
+      "As in Inst No CT-942480",
+      "",
+      "NW corner at Westmount Ave",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "19 04 033 850 08600",
+    "consideration_lines": [
+      "cash: $2,285,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT311/RT31193/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3982 / 4952",
+      "rt_id": "RT31193"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "1154 - 1156 ST CLAIR AVE W",
+    "postcode": "M6E 1B3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/30/2003",
+    "desc": "Retail Bldg - 2 storey; 22,954 sf @ $100",
+    "bldg": "22,954 sf",
+    "acreage": ".27",
+    "consid": "2285000",
+    "cash": "2285000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 033 850 08600"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "1154 - 1156 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Jul 2003",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 22,954 sf @ $100",
+    "seller_lines": [
+      "Brain St Clair Inc"
+    ],
+    "buyer_lines": [
+      "Clairmount Investments Ltd"
+    ],
+    "price_text": "$2,285,000"
+  }
+}

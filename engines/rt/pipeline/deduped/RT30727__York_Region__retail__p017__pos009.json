@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT30727",
+  "source_folder": "York_Region/retail/p017",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30727",
+      "source_folder": "York_Region/retail/p017",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 MASSEYFIELD GATE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "30 Jun 2003",
+      "price_text": "$1,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "963165 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Chung",
+        "80 Acadia Ave, Ste 303",
+        "Markham, Ontario",
+        "L3R 9V1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MFWH Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wahidul Haque",
+        "1323 Greeniaus Rd",
+        "Oakville, Ontario",
+        "L6J 6Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1797, Block A",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 36 020 125 00001",
+    "consideration_lines": [
+      "cash: $498,547     assumed/vtb debt: $1,351,453"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT307/RT30727/photo.jpg"
+    },
+    "footer": {
+      "page_position": "810 / 984",
+      "rt_id": "RT30727"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "1 MASSEYFIELD GATE",
+    "postcode": "L3R 3M8",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/30/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "1850000",
+    "cash": "498547",
+    "debt": "1351453",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 125 00001"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "1 MASSEYFIELD GATE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "30 Jun 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "963165 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "MFWH Investments Inc"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

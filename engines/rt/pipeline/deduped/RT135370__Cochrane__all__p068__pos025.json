@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT135370",
+  "source_folder": "Cochrane/all/p068",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT135370",
+      "source_folder": "Cochrane/all/p068",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p068/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 2",
+        "PART LOT 5"
+      ],
+      "city_region": "W. Carleton : Ottawa-Carleton",
+      "date_text": "29 Jun 2018",
+      "price_text": "$1,534,560",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2642383 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Giovanni Mion",
+        "25 Bongard Ave",
+        "Ottawa, Ontario",
+        "K2E 6V2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 5",
+      "Plan 5R-11221, Parts 1-4",
+      "",
+      "PIN: 04508-0016",
+      "",
+      "11.09 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,534,560     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3376 / 10920",
+      "rt_id": "RT135370"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "CONC 2, PART LOT 5",
+    "postcode": "",
+    "municipality": "W. Carleton",
+    "region": "Ottawa-Carleton",
+    "date": "06/29/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "11.09",
+    "consid": "1534560",
+    "cash": "1534560",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04508-0016",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "CONC 2",
+      "PART LOT 5"
+    ],
+    "city_region": "W. Carleton : Ottawa-Carleton",
+    "date_text": "29 Jun 2018",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2642383 Ontario Inc"
+    ],
+    "price_text": "$1,534,560"
+  }
+}

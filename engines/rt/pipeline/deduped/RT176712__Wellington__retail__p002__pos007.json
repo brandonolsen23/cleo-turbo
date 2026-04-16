@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT176712",
+  "source_folder": "Wellington/retail/p002",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176712",
+      "source_folder": "Wellington/retail/p002",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p002/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "251 EDINBURGH RD N"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "28 Mar 2023",
+      "price_text": "$2,060,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "IT Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "265 Edinburgh Rd S",
+        "Guelph, Ontario",
+        "N1G 2J6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "QDST Slase Eritrean Orthodox",
+        "Tewahdo Church in Guelph"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: H. Gebrehiwet",
+        "96 Flaherty Dr",
+        "Guelph, Ontario",
+        "N1K 1Y7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Range 4 - Div A, Part Lots 2 & 3",
+      "As in Inst No ROS-516755",
+      "Except:",
+      "Plan 61R-7541, Part 1",
+      "",
+      "PIN: 71294-0064",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "23 08 040 009 00600",
+    "consideration_lines": [
+      "cash: $2,060,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,400,000   rate: 9.0% per annum.",
+      "registered: 03/28/2023   due: 03/28/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176712/0708_091844.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176712/0708_091849.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176712/0708_092005.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176712/0708_092007.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "58 / 269",
+      "rt_id": "RT176712"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "251 EDINBURGH RD N",
+    "postcode": "N1H 5S2",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "03/28/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".75",
+    "consid": "2060000",
+    "cash": "2060000",
+    "debt": "",
+    "note": "",
+    "pin": "71294-0064",
+    "rollno": "23 08 040 009 00600"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "251 EDINBURGH RD N"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "28 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "IT Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "QDST Slase Eritrean Orthodox",
+      "Tewahdo Church in Guelph"
+    ],
+    "price_text": "$2,060,000"
+  }
+}

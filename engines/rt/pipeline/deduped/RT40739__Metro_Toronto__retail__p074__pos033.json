@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT40739",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40739",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "1884 QUEEN ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Mar 2005",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Shell Canada Products Ltd     416-227-7111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerry Beelen",
+        "90 Sheppard Ave E, Ste 600",
+        "Toronto, Ontario",
+        "M2N 6Y2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 747",
+      "Lots 1, 2 & Part Lot 3",
+      "As in Inst No CA-235527",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "19 04 093 010 08100",
+    "consideration_lines": [
+      "cash: $2,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT407/RT40739/air1.jpg",
+        "/assets/files/RT4/RT407/RT40739/air2.jpg",
+        "/assets/files/RT4/RT407/RT40739/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT407/RT40739/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3684 / 4952",
+      "rt_id": "RT40739"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "1884 QUEEN ST E",
+    "postcode": "",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "2700000",
+    "cash": "2700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 093 010 08100"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "1884 QUEEN ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Mar 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Shell Canada Products Ltd"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

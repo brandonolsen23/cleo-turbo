@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT21279",
+  "source_folder": "York_Region/retail/p019",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21279",
+      "source_folder": "York_Region/retail/p019",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "119 KING RD"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 Apr 2001",
+      "price_text": "$535,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Enzo Mazzoli & Bruno Mariani",
+        "COB as Ontario Automotive Service Centre     416-630-6633"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sheldon Caplan",
+        "Union Felt Products Ltd",
+        "150 Toro Rd",
+        "North York, Ontario",
+        "M3J 2A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Clemente & Domenica Iudiciani     905-773-3263"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Ontario Automotive Service Centre",
+        "119 King Rd",
+        "Richmond Hill, Ontario",
+        "L4E 1A8"
+      ]
+    },
+    "description_lines": [
+      "Automotive Service Centre, Used Car Lot & House"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-2255, Part 2",
+      "",
+      "S side 300m W of Yonge St",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "19 38 080 012 42300",
+    "consideration_lines": [
+      "cash: $535,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "NRS Select: Patrick Jannetta, 905-773-8000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT212/RT21279/photo.jpg"
+    },
+    "footer": {
+      "page_position": "902 / 984",
+      "rt_id": "RT21279"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "119 KING RD",
+    "postcode": "L4E 1A8",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "04/30/2001",
+    "desc": "Automotive Service Centre, Used Car Lot & House",
+    "bldg": "",
+    "acreage": ".69",
+    "consid": "535000",
+    "cash": "535000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 080 012 42300"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "119 KING RD"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 Apr 2001",
+    "note": "",
+    "description": "Automotive Service Centre, Used Car Lot & House",
+    "seller_lines": [
+      "Enzo Mazzoli & Bruno Mariani",
+      "COB as Ontario Automotive Service Centre"
+    ],
+    "buyer_lines": [
+      "Clemente & Domenica Iudiciani"
+    ],
+    "price_text": "$535,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT44424",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44424",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "390 EGLINTON AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Sep 2005",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "777018 Ontario Ltd     905-470-9188"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stella Lo",
+        "Alan Sugarman",
+        "2750 Fourteenth Ave, Ste 309",
+        "Markham, Ontario",
+        "L3R 0B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "TNT Real Estate Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Avraham Assaraf",
+        "392 Eglinton Ave W, 2nd Flr",
+        "Toronto, Ontario",
+        "M5N 1A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-256, Block A",
+      "Part Lot 3",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 114 420 02900",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Lutheran Life Insurance Society of Canada",
+      "principal: $720,000   rate: 5.125% per annum",
+      "registered: 09/15/2005   due: 10/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT444/RT44424/air1.jpg",
+        "/assets/files/RT4/RT444/RT44424/air2.jpg",
+        "/assets/files/RT4/RT444/RT44424/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3603 / 4952",
+      "rt_id": "RT44424"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "390 EGLINTON AVE W",
+    "postcode": "M5N 1A2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/15/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 114 420 02900"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "390 EGLINTON AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Sep 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "777018 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "TNT Real Estate Ltd"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20713",
+  "source_folder": "Metro_Toronto/retail/p090",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20713",
+      "source_folder": "Metro_Toronto/retail/p090",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p090/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "530 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "08 Mar 2001",
+      "price_text": "$790,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lem Properties Ltd",
+        "YCW Managemnent Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tsai Lem",
+        "123 Wedgewood Dr",
+        "Toronto, Ontario",
+        "M9B 4J8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1462065 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Trinh Hue Tieu",
+        "1026-B Davenport Rd",
+        "Toronto, Ontario",
+        "M6G 2B9"
+      ]
+    },
+    "description_lines": [
+      "Retail/Office Bldg - 2 storey; 6,000 sf @ $132"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plans D-10 & D-33, Part Lots 24 & 25",
+      "",
+      "N side 50m W of Spadina",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 065 510 06200",
+    "consideration_lines": [
+      "cash: $790,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT207/RT20713/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4495 / 4952",
+      "rt_id": "RT20713"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "530 DUNDAS ST W",
+    "postcode": "M5T 1H3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/08/2001",
+    "desc": "Retail/Office Bldg - 2 storey; 6,000 sf @ $132",
+    "bldg": "6,000 sf",
+    "acreage": ".09",
+    "consid": "790000",
+    "cash": "790000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 065 510 06200"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "530 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "08 Mar 2001",
+    "note": "",
+    "description": "Retail/Office Bldg - 2 storey; 6,000 sf @ $132",
+    "seller_lines": [
+      "Lem Properties Ltd",
+      "YCW Managemnent Ltd"
+    ],
+    "buyer_lines": [
+      "1462065 Ontario Ltd"
+    ],
+    "price_text": "$790,000"
+  }
+}

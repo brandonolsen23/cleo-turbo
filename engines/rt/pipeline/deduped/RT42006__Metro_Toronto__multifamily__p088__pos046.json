@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT42006",
+  "source_folder": "Metro_Toronto/multifamily/p088",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42006",
+      "source_folder": "Metro_Toronto/multifamily/p088",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p088/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "122 TYRREL AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 May 2005",
+      "price_text": "$801,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1089776 Ontario Ltd     416-652-8580"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Claudia Van Duinen",
+        "580 Christie St",
+        "Toronto, Ontario",
+        "M6G 3E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-1305, Part Lot 4",
+      "As in Inst No CA-301146",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 053 580 03800",
+    "consideration_lines": [
+      "cash: $801,500     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $399,000   rate: 4.75% per annum",
+      "registered: 05/05/2005   due: 06/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT420/RT42006/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4397 / 6031",
+      "rt_id": "RT42006"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "122 TYRREL AVE",
+    "postcode": "M6G 2G5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/05/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "801500",
+    "cash": "801500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 053 580 03800"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "122 TYRREL AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 May 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1089776 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$801,500"
+  }
+}

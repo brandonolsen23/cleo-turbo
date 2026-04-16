@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT39442",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39442",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 SOUTH SERVICE RD W"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "30 Dec 2004",
+      "price_text": "$4,730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1233412 Ontario Ltd     905-827-5594"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Metcalfe",
+        "1455 The Links Dr",
+        "Oakville, Ontario",
+        "L6M 2N9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1636338 Ontario Ltd     905-886-6880"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sylvester Chuang",
+        "Volkswagen Villa",
+        "222 Steeles Ave W",
+        "Thornhill, Ontario",
+        "L4J 1A1"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership - 1 storey; 27,000 sf on about 1.7 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-3036, Part 1",
+      "Plan 20R-5247, Parts 2-4",
+      "",
+      "1.67 acre"
+    ],
+    "arn_text": "24 01 030 260 01800",
+    "consideration_lines": [
+      "cash: $4,730,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT394/RT39442/photo.jpg"
+    },
+    "footer": {
+      "page_position": "438 / 613",
+      "rt_id": "RT39442"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "300 SOUTH SERVICE RD W",
+    "postcode": "L6K 3X5",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "12/30/2004",
+    "desc": "Car Dealership - 1 storey; 27,000 sf on about 1.7 Ac",
+    "bldg": "",
+    "acreage": "1.67",
+    "consid": "4730000",
+    "cash": "4730000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 030 260 01800"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "300 SOUTH SERVICE RD W"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "30 Dec 2004",
+    "note": "",
+    "description": "Car Dealership - 1 storey; 27,000 sf on about 1.7 Ac",
+    "seller_lines": [
+      "1233412 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1636338 Ontario Ltd"
+    ],
+    "price_text": "$4,730,000"
+  }
+}

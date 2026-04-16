@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT38959",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38959",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "2342 PRINCESS ST"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "02 Nov 2004",
+      "price_text": "$11,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "3656993 Canada Inc     514-599-5100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Claude Guevin",
+        "Rona Inc",
+        "220 Chemin du Tremblay",
+        "Boucherville, Quebec",
+        "J4B 8H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kingston (RI) Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Cohen",
+        "H & R Developments",
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "description_lines": [
+      "Rona Home & Garden - 1 storey; 108,482 sf @ $103"
+    ],
+    "more_info_url": "/assets/files/RT3/RT389/RT38959/mi.pdf",
+    "site_lines": [
+      "Conc 3, Part Lot 14",
+      "Plan 13R-14723, Parts 11-18",
+      "Plan 13R-13969, Parts 1-10",
+      "",
+      "10.75 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $11,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT389/RT38959/photo.jpg"
+    },
+    "footer": {
+      "page_position": "205 / 236",
+      "rt_id": "RT38959"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "2342 PRINCESS ST",
+    "postcode": "K7M 3G4",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "11/02/2004",
+    "desc": "Rona Home & Garden - 1 storey; 108,482 sf @ $103",
+    "bldg": "108,482 sf",
+    "acreage": "10.75",
+    "consid": "11200000",
+    "cash": "11200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "2342 PRINCESS ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "02 Nov 2004",
+    "note": "",
+    "description": "Rona Home & Garden - 1 storey; 108,482 sf @ $103",
+    "seller_lines": [
+      "3656993 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Kingston (RI) Portfolio Inc"
+    ],
+    "price_text": "$11,200,000"
+  }
+}

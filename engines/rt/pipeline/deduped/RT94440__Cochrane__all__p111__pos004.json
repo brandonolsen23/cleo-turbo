@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT94440",
+  "source_folder": "Cochrane/all/p111",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT94440",
+      "source_folder": "Cochrane/all/p111",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p111/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "2876 CARP RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "08 Aug 2013",
+      "price_text": "$750,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2353315 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Philip Downey",
+        "383 Parkdale Ave, Ste 105",
+        "Ottawa, Ontario",
+        "K1Y 4R4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 9",
+      "Plan 5R-1849, Parts 2 & 6",
+      "Except:",
+      "Plan 4R-26087, Part 1",
+      "",
+      "PIN: 04537-0819",
+      "",
+      "38.69 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5505 / 10920",
+      "rt_id": "RT94440"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "2876 CARP RD",
+    "postcode": "K0A 1L0",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "08/08/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "38.69",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04537-0819",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "2876 CARP RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "08 Aug 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2353315 Ontario Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

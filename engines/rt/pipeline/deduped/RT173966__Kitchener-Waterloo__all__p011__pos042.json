@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT173966",
+  "source_folder": "Kitchener-Waterloo/all/p011",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173966",
+      "source_folder": "Kitchener-Waterloo/all/p011",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p011/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "70799 LONDON RD"
+      ],
+      "city_region": "S. Huron : Huron County",
+      "date_text": "01 Feb 2022",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2381423 Ontario Inc     905-850-1188"
+      ],
+      "trade_name": "Manorwood Homes Inc",
+      "contact_lines": [
+        "Attn: Carlos Lopez",
+        "8611 Weston Rd",
+        "Woodbridge, Ontario",
+        "L4L 9P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 123 - Stephen, Lot A",
+      "Except:",
+      "Plan 22R-5320, Part 1",
+      "",
+      "PIN: 41244-0443",
+      "",
+      "1.20 acre"
+    ],
+    "arn_text": "40 10 040 001 04800",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $1,100,000",
+      "",
+      "Named Individual(s)",
+      "principal: $1,100,000   rate: 4.0% per annum. Due in quarterly payments of $11,000.",
+      "registered: 02/01/2022   due: 06/30/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "543 / 2093",
+      "rt_id": "RT173966"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "70799 LONDON RD",
+    "postcode": "N0M 1S1",
+    "municipality": "S. Huron",
+    "region": "Huron County",
+    "date": "02/01/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.2",
+    "consid": "1900000",
+    "cash": "800000",
+    "debt": "1100000",
+    "note": "",
+    "pin": "41244-0443",
+    "rollno": "40 10 040 001 04800"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "70799 LONDON RD"
+    ],
+    "city_region": "S. Huron : Huron County",
+    "date_text": "01 Feb 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2381423 Ontario Inc"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

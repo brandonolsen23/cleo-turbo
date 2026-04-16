@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT89673",
+  "source_folder": "Ottawa-Carleton/retail/p012",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89673",
+      "source_folder": "Ottawa-Carleton/retail/p012",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p012/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "3091 - 3101 STRANDHERD DR"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "19 Dec 2012",
+      "price_text": "$1,360,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "South Nepean Development Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jaime McKenna",
+        "180 Kent St, Ste 200",
+        "Ottawa, Ontario",
+        "K1P 0B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Minto (Strandherd Central) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jaime McKenna",
+        "180 Kent St, Ste 200",
+        "Ottawa, Ontario",
+        "K1P 0B6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - RF, Part Lot 14",
+      "Plan 4R-26678, Parts 1 & 2",
+      "",
+      "PIN: 04733-6615",
+      "",
+      "SE corner Strandherd Dr and Woodroffe Ave"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,360,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "554 / 1141",
+      "rt_id": "RT89673"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "3091 - 3101 STRANDHERD DR",
+    "postcode": "",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "12/19/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1360000",
+    "cash": "1360000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04733-6615",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "3091 - 3101 STRANDHERD DR"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "19 Dec 2012",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "South Nepean Development Corp"
+    ],
+    "buyer_lines": [
+      "Minto (Strandherd Central) Inc"
+    ],
+    "price_text": "$1,360,000"
+  }
+}

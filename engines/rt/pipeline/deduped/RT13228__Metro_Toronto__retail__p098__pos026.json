@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT13228",
+  "source_folder": "Metro_Toronto/retail/p098",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13228",
+      "source_folder": "Metro_Toronto/retail/p098",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p098/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "3085 BLOOR ST W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "15 Oct 1998",
+      "price_text": "$1,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Chrysler Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: R. M. Latta",
+        "2450 Chrysler Ctr",
+        "Windsor, Ontario",
+        "N8W 3X7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "W. A. McDowell (Toronto) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Craig Bennett",
+        "3085 Bloor St W",
+        "Toronto, Ontario",
+        "M8X 1C9"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2100, Block 2"
+    ],
+    "arn_text": "19 19 016 530 00900",
+    "consideration_lines": [
+      "cash: $1,075,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $3,750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/01/2018   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,645,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/01/2018   due: on demand",
+      "",
+      "chargee: 403483 Ontario Ltd",
+      "principal: $2,500,000   rate: 0% per annum.",
+      "registered: 03/01/2018   due: 01/31/2021",
+      "",
+      "Named Individual(s)",
+      "principal: $2,880,000   rate: 4.50% per annum.",
+      "registered: 03/01/2018   due: 03/01/2021",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,150,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/26/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4877 / 4952",
+      "rt_id": "RT13228"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "3085 BLOOR ST W",
+    "postcode": "M8X 1C9",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "10/15/1998",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1075000",
+    "cash": "1075000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 016 530 00900"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "3085 BLOOR ST W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "15 Oct 1998",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Chrysler Canada Ltd"
+    ],
+    "buyer_lines": [
+      "W. A. McDowell (Toronto) Ltd"
+    ],
+    "price_text": "$1,075,000"
+  }
+}

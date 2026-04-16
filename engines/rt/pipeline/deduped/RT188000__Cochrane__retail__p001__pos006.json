@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT188000",
+  "source_folder": "Cochrane/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188000",
+      "source_folder": "Cochrane/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "1980 RIVERSIDE DR"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "07 Aug 2024",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "SP Stayner Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2 Tigerlily Pl",
+        "Brampton, Ontario",
+        "L6R 2C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000947409 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daxeshkumar Patel",
+        "23 Hewitt Pl",
+        "Barrie, Ontario",
+        "L4M 7B3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Surface rights only:",
+      "Conc 2 - Mount Joy, Part Lot 6",
+      "Plan 6R-8677, Part 1",
+      "",
+      "PIN: 65417-0178",
+      "",
+      "0.81 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 21",
+      "rt_id": "RT188000"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "1980 RIVERSIDE DR",
+    "postcode": "P4R 0A2",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "08/07/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".81",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "65417-0178",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "1980 RIVERSIDE DR"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "07 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "SP Stayner Inc"
+    ],
+    "buyer_lines": [
+      "1000947409 Ontario Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT179415",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179415",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "324 JAMES ST N"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "26 Jul 2023",
+      "price_text": "$1,925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Walter Demetrius Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Mokrycke",
+        "1 Nichol St",
+        "Hamilton, Ontario",
+        "L8L 1N7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Ebenezer Stinson Survey,",
+      "Part Lot 7, E/S Jaomes St",
+      "As in Inst No CD-458556",
+      "",
+      "PIN: 17159-0029",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "25 18 020 155 04550",
+    "consideration_lines": [
+      "cash: $1,925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,250,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/26/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179415/0805_110003.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179415/0805_110007.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179415/0805_110023.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179415/0805_110024.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1794/RT179415/0805_110032.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "127 / 616",
+      "rt_id": "RT179415"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "324 JAMES ST N",
+    "postcode": "L8L 1H2",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "07/26/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "1925000",
+    "cash": "1925000",
+    "debt": "",
+    "note": "",
+    "pin": "17159-0029",
+    "rollno": "25 18 020 155 04550"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "324 JAMES ST N"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "26 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Walter Demetrius Inc"
+    ],
+    "price_text": "$1,925,000"
+  }
+}

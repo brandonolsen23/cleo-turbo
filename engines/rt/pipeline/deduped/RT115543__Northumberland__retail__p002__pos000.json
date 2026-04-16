@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT115543",
+  "source_folder": "Northumberland/retail/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT115543",
+      "source_folder": "Northumberland/retail/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "21 QUEEN ST"
+      ],
+      "city_region": "Campbellford : Northumberland",
+      "date_text": "31 Mar 2016",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1918204 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nancy Foote",
+        "PO Box 675",
+        "Campbellford, Ontario",
+        "K0L 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1951610 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Sithole",
+        "21 Queen St",
+        "Campbellford, Ontario",
+        "K0L 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 112, River Block",
+      "Lot 8, Part Lots 6 & 7",
+      "As in Inst No NC-338948",
+      "Except:",
+      "Inst No CA-5262",
+      "",
+      "PIN: 51194-0064",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "14 35 100 050 00500",
+    "consideration_lines": [
+      "cash: $390,000     assumed/vtb debt: $1,010,000",
+      "",
+      "chargee: 1950821 Ontario Inc",
+      "principal: $760,000   rate: 4.0% per annum.",
+      "registered: 03/31/2016   due: 06/01/2023",
+      "",
+      "chargee: 1918204 Ontario Inc",
+      "principal: $250,000   rate: 4.0% per annum.",
+      "registered: 03/31/2016   due: 06/01/2021",
+      "",
+      "chargee: Premier Group Realty Inc",
+      "principal: $100,000   rate: Borrower has right to repay full amount before maturity with 12.0% per annum interest penalty.",
+      "registered: 03/31/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1155/RT115543/0522_123307.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1155/RT115543/0522_123308.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1155/RT115543/0522_123341a.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1155/RT115543/0522_123341b.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 93",
+      "rt_id": "RT115543"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "21 QUEEN ST",
+    "postcode": "K0L 1L0",
+    "municipality": "Campbellford",
+    "region": "Northumberland",
+    "date": "03/31/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "1400000",
+    "cash": "390000",
+    "debt": "1010000",
+    "note": "",
+    "pin": "51194-0064",
+    "rollno": "14 35 100 050 00500"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "21 QUEEN ST"
+    ],
+    "city_region": "Campbellford : Northumberland",
+    "date_text": "31 Mar 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1918204 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1951610 Ontario Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

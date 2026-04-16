@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT18393",
+  "source_folder": "Metro_Toronto/retail/p093",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18393",
+      "source_folder": "Metro_Toronto/retail/p093",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p093/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "2463 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Aug 2000",
+      "price_text": "$500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Martin Peters"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2463 Yonge St",
+        "Toronto, Ontario",
+        "M4P 2H6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jovic Developments Ltd     416-444-3834"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Victor Peters",
+        "27 Brandy Ct",
+        "Don Mills, Ontario",
+        "M3B 3L3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-146, Part Lot 5"
+    ],
+    "arn_text": "19 04 104 250 00400",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Libro Credit Union Ltd",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/27/2024   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,100,000   rate: 5.14% per annum.",
+      "registered: 03/27/2024   due: 04/01/2027",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,040,000   rate: Prime plus 10.0% per annum.",
+      "registered: 03/26/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4644 / 4952",
+      "rt_id": "RT18393"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "2463 YONGE ST",
+    "postcode": "M4P 2H6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/03/2000",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 104 250 00400"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "2463 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Aug 2000",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Martin Peters"
+    ],
+    "buyer_lines": [
+      "Jovic Developments Ltd"
+    ],
+    "price_text": "$500,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT21729",
+  "source_folder": "Metro_Toronto/multifamily/p110",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21729",
+      "source_folder": "Metro_Toronto/multifamily/p110",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p110/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 HILL HEIGHTS RD"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "06 Jun 2001",
+      "price_text": "$1,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Walter & Anna Geryluk     416-233-8187"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4 Carysfort Rd",
+        "Toronto, Ontario",
+        "M8Z 4Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1471147 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mary Hontar",
+        "1 Hill Heights Rd",
+        "Toronto, Ontario",
+        "M8Y 1Y9"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 29 units @ $63,793"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4269, Lots 40-43",
+      "As in Inst No TB-317060",
+      "",
+      "SE corner at Park Lawn Rd",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "19 19 018 260 00100",
+    "consideration_lines": [
+      "cash: $1,850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT217/RT21729/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5491 / 6031",
+      "rt_id": "RT21729"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "1 HILL HEIGHTS RD",
+    "postcode": "M8Y 1Y9",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "06/06/2001",
+    "desc": "Apartment Bldg - 3.5 storey; 29 units @ $63,793",
+    "bldg": "29 units",
+    "acreage": ".67",
+    "consid": "1850000",
+    "cash": "1850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 018 260 00100"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "1 HILL HEIGHTS RD"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "06 Jun 2001",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 29 units @ $63,793",
+    "seller_lines": [
+      "Walter & Anna Geryluk"
+    ],
+    "buyer_lines": [
+      "1471147 Ontario Ltd"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

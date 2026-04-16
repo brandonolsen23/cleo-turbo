@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT154907",
+  "source_folder": "Leeds/all/p012",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT154907",
+      "source_folder": "Leeds/all/p012",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p012/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "1383 COURTRIGHT LINE"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "24 Sep 2020",
+      "price_text": "$1,710,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Eyre Farms Ltd",
+        "Kimcor Farms Ltd",
+        "Riley Eyre"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ralph Eyre",
+        "2873 Kimball Rd",
+        "Courtright, Ontario",
+        "N0H 1H0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 17",
+      "As in Inst No L-447962",
+      "",
+      "PIN: 43311-0057",
+      "",
+      "102.70 acre"
+    ],
+    "arn_text": "38 05 220 020 08900",
+    "consideration_lines": [
+      "cash: $1,710,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,500,000   rate: 18.0% per annum.",
+      "registered: 09/24/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "596 / 1916",
+      "rt_id": "RT154907"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "1383 COURTRIGHT LINE",
+    "postcode": "N0N 1H0",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "09/24/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "102.7",
+    "consid": "1710000",
+    "cash": "1710000",
+    "debt": "",
+    "note": "",
+    "pin": "43311-0057",
+    "rollno": "38 05 220 020 08900"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "1383 COURTRIGHT LINE"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "24 Sep 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Eyre Farms Ltd",
+      "Kimcor Farms Ltd",
+      "Riley Eyre"
+    ],
+    "price_text": "$1,710,000"
+  }
+}

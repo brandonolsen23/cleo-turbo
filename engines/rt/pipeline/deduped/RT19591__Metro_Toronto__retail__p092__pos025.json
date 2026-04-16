@@ -1,0 +1,137 @@
+{
+  "rt_id": "RT19591",
+  "source_folder": "Metro_Toronto/retail/p092",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19591",
+      "source_folder": "Metro_Toronto/retail/p092",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p092/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "644 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Nov 2000",
+      "price_text": "$788,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Duyan Investments Ltd     416-225-5545"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jerald Shuman",
+        "Mr Submarine",
+        "4576 Yonge St, Ste 600",
+        "North York, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bernard Levinson Investments Ltd",
+        "Earl Linzon Investments Ltd     416-225-5545"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bernard Levinson",
+        "Mr Submarine",
+        "4576 Yonge St, Ste 600",
+        "North York, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-3392, Part 1",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 068 370 00800",
+    "consideration_lines": [
+      "cash: $788,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/01/2025   due: on demand",
+      "",
+      "chargee: Andita Service Station Ltd",
+      "principal: $1,400,000   rate: 5.50% per annum.",
+      "registered: 12/05/2025   due: 12/05/2030",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $870,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/02/2025   due: on demand",
+      "",
+      "chargee: Global Dental Service & Sales Inc",
+      "principal: $1,184,000   rate: 3.50% per annum.",
+      "registered: 12/03/2025   due: 12/02/2028",
+      "",
+      "chargee: 2808829 Ontario Inc",
+      "principal: $375,000   rate: 8.5% per annum. 18.0% per annum if unpaid at the end of term.",
+      "registered: 12/01/2025   due: 03/01/2026",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $550,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/01/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4576 / 4952",
+      "rt_id": "RT19591"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "644 YONGE ST",
+    "postcode": "M4Y 1Z8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/28/2000",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "788000",
+    "cash": "788000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 068 370 00800"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "644 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Nov 2000",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Duyan Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Bernard Levinson Investments Ltd",
+      "Earl Linzon Investments Ltd"
+    ],
+    "price_text": "$788,000"
+  }
+}

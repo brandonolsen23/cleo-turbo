@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT178099",
+  "source_folder": "Metro_Toronto/retail/p017",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178099",
+      "source_folder": "Metro_Toronto/retail/p017",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p017/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1928 LAKE SHORE BLVD W",
+        "SUITE 101"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Jun 2023",
+      "price_text": "$3,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "DF Lake Shore West Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2 St Clair W, Unit 1201",
+        "Toronto, Ontario",
+        "M4V 1L5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000352767 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Masoud Kasaei",
+        "1928 Lake Shore Blvd W, Ste 101",
+        "Toronto, Ontario",
+        "M6S 0B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2961,",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 76961-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $4,300,000   rate: Prime plus 6.0% per annum.",
+      "registered: 06/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178099/0611_075143.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178099/0611_075147.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178099/0611_075148.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178099/0611_075203.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178099/0611_075207.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178099/0611_075240.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "812 / 4952",
+      "rt_id": "RT178099"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1928 LAKE SHORE BLVD W, SUITE 101",
+    "postcode": "M6S 0B1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3050000",
+    "cash": "3050000",
+    "debt": "",
+    "note": "",
+    "pin": "76961-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1928 LAKE SHORE BLVD W",
+      "SUITE 101"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "DF Lake Shore West Ltd"
+    ],
+    "buyer_lines": [
+      "1000352767 Ontario Inc"
+    ],
+    "price_text": "$3,050,000"
+  }
+}

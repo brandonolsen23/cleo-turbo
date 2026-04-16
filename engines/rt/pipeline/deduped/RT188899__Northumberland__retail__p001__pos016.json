@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT188899",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188899",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "152 PETER ST",
+        "158 PETER ST"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "03 Dec 2024",
+      "price_text": "$5,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "STA Investments Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000999954 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leonel Santos",
+        "995 Crawford Dr",
+        "Peterborough, Ontario",
+        "K9J 3X1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc Broken Front, Part Lot 3",
+      "As in Inst Nos:",
+      "NC-322147 & NC-214396",
+      "",
+      "PIN: 51080-0007 +",
+      "",
+      "2.64 acre"
+    ],
+    "arn_text": "14 23 125 080 16400 +",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $5,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/03/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1888/RT188899/0125_074054.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1888/RT188899/0125_074056.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1888/RT188899/0125_074216.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1888/RT188899/0125_074218.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 93",
+      "rt_id": "RT188899"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "152 PETER ST, 158 PETER ST",
+    "postcode": "L1A 1C6",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "12/03/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.64",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "",
+    "pin": "51080-0007+",
+    "rollno": "14 23 125 080 16400+"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "152 PETER ST",
+      "158 PETER ST"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "03 Dec 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "STA Investments Co Ltd"
+    ],
+    "buyer_lines": [
+      "1000999954 Ontario Ltd"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

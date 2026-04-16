@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT23903",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23903",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 MADISON AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Dec 2001",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Carol & Frederick Hansen     416-967-6474"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "131 Madison Ave",
+        "Toronto, Ontario",
+        "M5R 2S2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Henry M. Lotin",
+        "Shaun J. Wedick"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Madison Ave",
+        "Toronto, Ontario",
+        "M5R 2S3"
+      ]
+    },
+    "description_lines": [
+      "NinePlex - 3 storey; 9 units @ $100,000",
+      "",
+      "2-jr1bdrm 7-bach"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-2, Part Lot 124",
+      "As in Inst No C-374480"
+    ],
+    "arn_text": "19 04 052 160 02900",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT239/RT23903/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5312 / 6031",
+      "rt_id": "RT23903"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "125 MADISON AVE",
+    "postcode": "M5R 2S3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/28/2001",
+    "desc": "NinePlex - 3 storey; 9 units @ $100,000",
+    "bldg": "9 units",
+    "acreage": "",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 160 02900"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "125 MADISON AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Dec 2001",
+    "note": "",
+    "description": "NinePlex - 3 storey; 9 units @ $100,000",
+    "seller_lines": [
+      "Carol & Frederick Hansen"
+    ],
+    "buyer_lines": [
+      "Henry M. Lotin",
+      "Shaun J. Wedick"
+    ],
+    "price_text": "$900,000"
+  }
+}

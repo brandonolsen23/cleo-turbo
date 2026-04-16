@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT198003",
+  "source_folder": "Cochrane/all/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198003",
+      "source_folder": "Cochrane/all/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "201 NIPISSING CT"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "26 Mar 2026",
+      "price_text": "$3,197,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "5010779 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "200 Nipissing Ct",
+        "Ottawa, Ontario",
+        "K2T 0N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bochasanwasi Shri Akshar Purushottam Swaminarayan Sanstha Inc     416-798-2277"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Naresh Petel",
+        "61 Claireville Dr",
+        "Toronto, Ontario",
+        "M9W 5Z7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-1642, Block 4",
+      "",
+      "PIN: 04508-0179"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,197,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1980/RT198003/air1.jpg",
+        "/assets/files/RT19/RT1980/RT198003/air2.jpg",
+        "/assets/files/RT19/RT1980/RT198003/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 10920",
+      "rt_id": "RT198003"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "201 NIPISSING CT",
+    "postcode": "K2T 0N7",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "03/26/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3197500",
+    "cash": "3197500",
+    "debt": "",
+    "note": "",
+    "pin": "04508-0179",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "201 NIPISSING CT"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "26 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "5010779 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Bochasanwasi Shri Akshar Purushottam Swaminarayan Sanstha Inc"
+    ],
+    "price_text": "$3,197,500"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT184617",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184617",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "491 RITSON RD S"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "29 Apr 2024",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2486798 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8 Ballyview Ct",
+        "Stouffville, Ontario",
+        "L4A 0B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000771072 Ontario Inc     905-436-7694"
+      ],
+      "trade_name": "Durham Tires",
+      "contact_lines": [
+        "Attn: Sheila Stephens",
+        "491 Ritson Rd S",
+        "Oshawa, Ontario",
+        "L1H 5K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 335, Sheet 16,",
+      "Part Lots C-10 & C-11",
+      "As in Inst No D-533505",
+      "",
+      "PIN: 16371-0052",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "18 13 040 019 01100",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $300,000",
+      "",
+      "Named Individual(s)",
+      "principal: $1,000,000   rate: Until 4/26/2025, 7.5% per annum with monthly payments of $6,250. 10.5% per annum thereafter, with monthly payments of $8,750. Chargees may renew for 1 month at the greater of 18.0% or TD prime plus 5.0% per annum.",
+      "registered: 04/29/2024   due: 05/26/2025",
+      "",
+      "chargee: 2486798 Ontario Ltd",
+      "principal: $300,000   rate: 9.50% per annum.",
+      "registered: 04/29/2024   due: 04/26/2025",
+      "",
+      "chargee: 2486798 Ontario Ltd",
+      "principal: $200,000   rate: Until 4/26/2025, 12.0% per annum, with monthly payments of $2,000. Thereafter, 15.0% per annum with monthly payments of $2,500. Chargee may renew for 1 month at the greater of 18.0% and TD prime plus 5.0% per annum.",
+      "registered: 04/29/2024   due: 05/26/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184617/0512_143517.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184617/0512_143518.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184617/0512_143519.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184617/0512_143547.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184617/0512_143548.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "68 / 506",
+      "rt_id": "RT184617"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "491 RITSON RD S",
+    "postcode": "L1H 5K1",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "04/29/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "1500000",
+    "cash": "1200000",
+    "debt": "300000",
+    "note": "",
+    "pin": "16371-0052",
+    "rollno": "18 13 040 019 01100"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "491 RITSON RD S"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "29 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2486798 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000771072 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

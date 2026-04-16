@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT196074",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196074",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "24 MANITOBA ST"
+      ],
+      "city_region": "Bracebridge : Muskoka",
+      "date_text": "08 Dec 2025",
+      "price_text": "$875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1720592 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "167 Santas Village Rd",
+        "Bracebridge, Ontario",
+        "P1L 0N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001421106 Ontario Inc",
+        "Sun of Muskoka Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Gasko",
+        "1039 Xavier St",
+        "Kilworthy, Ontario",
+        "P0E 1G0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 35R-17953, Part 3",
+      "Plan 6 - Bracebridge,",
+      "Part Lot 16, N of River WMR",
+      "Plan 8 - Bracebridge,",
+      "Part Lot 22, SW Muskoka Rd",
+      "As in Inst Nos:",
+      "BB-3761, BB-3779, DM-61038",
+      "",
+      "PIN: 48114-0526 +",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $875,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $737,000   rate: 9.99% per annum.",
+      "registered: 12/08/2025   due: 12/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 64",
+      "rt_id": "RT196074"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "24 MANITOBA ST",
+    "postcode": "P1L 1R9",
+    "municipality": "Bracebridge",
+    "region": "Muskoka",
+    "date": "12/08/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "875000",
+    "cash": "875000",
+    "debt": "",
+    "note": "",
+    "pin": "48114-0526+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "24 MANITOBA ST"
+    ],
+    "city_region": "Bracebridge : Muskoka",
+    "date_text": "08 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1720592 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001421106 Ontario Inc",
+      "Sun of Muskoka Inc"
+    ],
+    "price_text": "$875,000"
+  }
+}

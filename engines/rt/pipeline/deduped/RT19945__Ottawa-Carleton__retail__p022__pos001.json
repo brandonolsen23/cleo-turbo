@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT19945",
+  "source_folder": "Ottawa-Carleton/retail/p022",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19945",
+      "source_folder": "Ottawa-Carleton/retail/p022",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p022/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "5200 FLEWELLYN RD"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "19 Dec 2000",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Eagleson-Flewellyn Investment Partnership"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Box 745",
+        "Manotick, Ontario",
+        "K4M 1A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1437101 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Douglas King",
+        "5200 Flewellyn Rd",
+        "Stittsville, Ontario",
+        "K0A 3G0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg & Greenhouse - Garden Supply Centre on 5.98 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-12771, Part 1",
+      "",
+      "SW corner at Eagleson Rd",
+      "",
+      "5.98 acre"
+    ],
+    "arn_text": "06 27 010 825 12506",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $550,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT199/RT19945/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1052 / 1141",
+      "rt_id": "RT19945"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "5200 FLEWELLYN RD",
+    "postcode": "K0A 3G0",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "12/19/2000",
+    "desc": "Retail Bldg & Greenhouse - Garden Supply Centre on 5.98 Ac",
+    "bldg": "",
+    "acreage": "5.98",
+    "consid": "700000",
+    "cash": "150000",
+    "debt": "550000",
+    "note": "",
+    "pin": "",
+    "rollno": "06 27 010 825 12506"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "5200 FLEWELLYN RD"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "19 Dec 2000",
+    "note": "",
+    "description": "Retail Bldg & Greenhouse - Garden Supply Centre on 5.98 Ac",
+    "seller_lines": [
+      "Eagleson-Flewellyn Investment Partnership"
+    ],
+    "buyer_lines": [
+      "1437101 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

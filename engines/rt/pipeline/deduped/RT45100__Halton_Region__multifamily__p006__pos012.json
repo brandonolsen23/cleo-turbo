@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT45100",
+  "source_folder": "Halton_Region/multifamily/p006",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45100",
+      "source_folder": "Halton_Region/multifamily/p006",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p006/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "2052 PROSPECT ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "24 Oct 2005",
+      "price_text": "$542,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "469723 Ontario Inc     905-332-8499"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Calogero Campione",
+        "1901 Fieldgate Dr",
+        "Burlington, Ontario",
+        "L7P 3H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1669612 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Fasuyi",
+        "2052 Prospect St",
+        "Burlington, Ontario",
+        "L7R 1Y9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 125, Part Lots 1 & 3",
+      "As in Inst No 853406",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "24 02 050 509 05200",
+    "consideration_lines": [
+      "cash: $542,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $406,875   rate: 4.19% per annum",
+      "registered: 10/24/2005   due: 10/21/2010",
+      "",
+      "chargee: Yasar Dogan",
+      "principal: $100,000   rate: 8.0% per annum",
+      "registered: 10/24/2005   due: 10/20/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT451/RT45100/air1.jpg",
+        "/assets/files/RT4/RT451/RT45100/air2.jpg",
+        "/assets/files/RT4/RT451/RT45100/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "263 / 380",
+      "rt_id": "RT45100"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "2052 PROSPECT ST",
+    "postcode": "L7Y 1Y9",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "10/24/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "542500",
+    "cash": "542500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 509 05200"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "2052 PROSPECT ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "24 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "469723 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1669612 Ontario Inc"
+    ],
+    "price_text": "$542,500"
+  }
+}

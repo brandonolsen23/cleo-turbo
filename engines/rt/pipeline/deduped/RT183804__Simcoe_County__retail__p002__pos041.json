@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT183804",
+  "source_folder": "Simcoe_County/retail/p002",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183804",
+      "source_folder": "Simcoe_County/retail/p002",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p002/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "286 KING ST"
+      ],
+      "city_region": "Midland : Simcoe County",
+      "date_text": "21 Mar 2024",
+      "price_text": "$816,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Georgian Apothecaries Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "18 Gracedale Dr",
+        "Richmond Hill, Ontario",
+        "L4C 0Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Care 54 Ontario Ltd     289-236-5600"
+      ],
+      "trade_name": "Care Group of Pharmacies",
+      "contact_lines": [
+        "Attn: Ali Reyhany",
+        "346 Millway Ave, Units 9 & 10",
+        "Concord, Ontario",
+        "L4K 3W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 306 - Midland,",
+      "Part Lots 6 & 7, W/S King St",
+      "As in Inst No RO-955013",
+      "",
+      "PIN: 58464-0068",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "43 74 010 003 00700",
+    "consideration_lines": [
+      "cash: $816,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $800,000,000   rate: 25.0% per annum.",
+      "registered: 03/21/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183804/0427_135035.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183804/0427_135039.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183804/0427_135101.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183804/0427_135102.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183804/0427_135110.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "92 / 712",
+      "rt_id": "RT183804"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "286 KING ST",
+    "postcode": "L4R 3M6",
+    "municipality": "Midland",
+    "region": "Simcoe County",
+    "date": "03/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "816000",
+    "cash": "816000",
+    "debt": "",
+    "note": "",
+    "pin": "58464-0068",
+    "rollno": "43 74 010 003 00700"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "286 KING ST"
+    ],
+    "city_region": "Midland : Simcoe County",
+    "date_text": "21 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Georgian Apothecaries Ltd"
+    ],
+    "buyer_lines": [
+      "Care 54 Ontario Ltd"
+    ],
+    "price_text": "$816,000"
+  }
+}

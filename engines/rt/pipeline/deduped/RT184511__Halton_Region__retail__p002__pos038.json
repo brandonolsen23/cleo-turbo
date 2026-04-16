@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT184511",
+  "source_folder": "Halton_Region/retail/p002",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184511",
+      "source_folder": "Halton_Region/retail/p002",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p002/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "4002 TRAFALGAR RD"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "01 May 2024",
+      "price_text": "$5,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2016844 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11 Dover Lane",
+        "Fergus, Ontario",
+        "N1M 0E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Melgreen Trafalgar Ltd     905-849-1360"
+      ],
+      "trade_name": "Melrose Investments Inc",
+      "contact_lines": [
+        "Attn: Silvio Guglietti",
+        "145 Reynolds St, Ste 500",
+        "Oakville, Ontario",
+        "L6J 0A7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Traf NDS, Part Lot 13",
+      "As in Inst No 405883",
+      "Except:",
+      "Plan 20R-11326, Part 5",
+      "",
+      "PIN: 24929-0003",
+      "",
+      "1.42 acre"
+    ],
+    "arn_text": "24 01 010 030 18400",
+    "consideration_lines": [
+      "cash: $3,650,000     assumed/vtb debt: $1,750,000",
+      "",
+      "chargee: 2016844 Ontario Ltd",
+      "principal: $1,750,000   rate: 5.0% per annum.",
+      "registered: 05/01/2024   due: 05/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1845/RT184511/0511_075118.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1845/RT184511/0511_075123.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1845/RT184511/0511_075218.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1845/RT184511/0511_075222.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1845/RT184511/0511_075315.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "89 / 613",
+      "rt_id": "RT184511"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "4002 TRAFALGAR RD",
+    "postcode": "L6H 7B7",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "05/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.42",
+    "consid": "5400000",
+    "cash": "3650000",
+    "debt": "1750000",
+    "note": "",
+    "pin": "24929-0003",
+    "rollno": "24 01 010 030 18400"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "4002 TRAFALGAR RD"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "01 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2016844 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Melgreen Trafalgar Ltd"
+    ],
+    "price_text": "$5,400,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT145691",
+  "source_folder": "Kitchener-Waterloo/retail/p005",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT145691",
+      "source_folder": "Kitchener-Waterloo/retail/p005",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p005/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "215 BEVERLY ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "05 Sep 2019",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2324572 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Amit Airi",
+        "15 Jenner Ct",
+        "Cambridge, Ontario",
+        "N1T 2B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2711528 Ontario Inc     905-648-1770"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ahmed Dirani",
+        "143 Woodhouse St",
+        "Ancaster, Ontario",
+        "L9K 0H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 7",
+      "Plan 67R-869, Part 2",
+      "",
+      "PIN: 03821-0021",
+      "",
+      "1.04 acre"
+    ],
+    "arn_text": "30 06 070 024 00500",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $150,000",
+      "",
+      "chargee: 2396205 Ontario Inc",
+      "2353220 Ontario Inc",
+      "Kulvinder Kaur",
+      "principal: $1,000,000   rate: 9.0% per annum. Chargee may renew for a further 6 months, a renewal fee of 2.0% of the original balance will apply.",
+      "registered: 09/05/2019   due: 02/28/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1456/RT145691/1214_090315.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1456/RT145691/1214_090317.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1456/RT145691/1214_090323.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1456/RT145691/1214_090342.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1456/RT145691/1214_090346.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1456/RT145691/1214_090349.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "224 / 752",
+      "rt_id": "RT145691"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "215 BEVERLY ST",
+    "postcode": "N1R 1K0",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "09/05/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.04",
+    "consid": "1450000",
+    "cash": "1300000",
+    "debt": "150000",
+    "note": "",
+    "pin": "03821-0021",
+    "rollno": "30 06 070 024 00500"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "215 BEVERLY ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "05 Sep 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2324572 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2711528 Ontario Inc"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

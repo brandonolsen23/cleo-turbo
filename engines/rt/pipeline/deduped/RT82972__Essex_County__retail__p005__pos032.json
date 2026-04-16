@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT82972",
+  "source_folder": "Essex_County/retail/p005",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT82972",
+      "source_folder": "Essex_County/retail/p005",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p005/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "2785 HOWARD AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "01 Dec 2011",
+      "price_text": "$700,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2305279 Ontario Inc     519-250-8602"
+      ],
+      "trade_name": "Jakes Windsor Brew Factory Inc",
+      "contact_lines": [
+        "Pres: David Smith",
+        "2785 Howard Ave",
+        "Windsor, Ontario",
+        "N8X 3X8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 tenants 9,500 sf @ $74",
+      "",
+      "2,375 sf (1 unit) vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 85",
+      "Plan 12R-24880",
+      "Parts 4, 5 & 8",
+      "",
+      "PIN: 01340-1823 +",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "37 39 080 020 02500",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $500,000",
+      "",
+      "chargee: Harry & Janette Roitberg",
+      "principal: $500,000   rate: 5.0% per annum",
+      "registered: 12/01/2011   due: 12/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT829/RT82972/0608_132318.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT829/RT82972/0608_132402.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT829/RT82972/0608_132442.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT829/RT82972/0608_132522.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "233 / 460",
+      "rt_id": "RT82972"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "2785 HOWARD AVE",
+    "postcode": "N8X 3X8",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "12/01/2011",
+    "desc": "Retail Plaza - 1 storey; 3 tenants 9,500 sf @ $74",
+    "bldg": "9,500 sf",
+    "acreage": ".6",
+    "consid": "700000",
+    "cash": "200000",
+    "debt": "500000",
+    "note": "Purchased by Tenant",
+    "pin": "01340-1823+",
+    "rollno": "37 39 080 020 02500"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "2785 HOWARD AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "01 Dec 2011",
+    "note": "Purchased by Tenant",
+    "description": "Retail Plaza - 1 storey; 3 tenants 9,500 sf @ $74",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2305279 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

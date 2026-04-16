@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT63534",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63534",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "540 CONESTOGO RD"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "12 Aug 2008",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "South-Western Floral Inc     519-884-2442"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ashley Ivey",
+        "540 Conestogo Rd",
+        "Waterloo, Ontario",
+        "N2L 4E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Academy Construction (1996) Ltd     519-744-8505"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Drannen",
+        "1305 Victoria St N, Unit 3",
+        "Kitchener, Ontario",
+        "N2B 3E3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1230, Lots 22 & 23",
+      "",
+      "PIN: 22280-0087",
+      "",
+      "1.05 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $225,000     assumed/vtb debt: $675,000",
+      "",
+      "chargee: South-Western Floral Inc",
+      "principal: $675,000   rate: 6.0% per annum",
+      "registered: 08/12/2008   due: 03/05/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT635/RT63534/air1.jpg",
+        "/assets/files/RT6/RT635/RT63534/air2.jpg",
+        "/assets/files/RT6/RT635/RT63534/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "518 / 752",
+      "rt_id": "RT63534"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "540 CONESTOGO RD",
+    "postcode": "N2L 4E2",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "08/12/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.05",
+    "consid": "900000",
+    "cash": "225000",
+    "debt": "675000",
+    "note": "",
+    "pin": "22280-0087",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "540 CONESTOGO RD"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "12 Aug 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "South-Western Floral Inc"
+    ],
+    "buyer_lines": [
+      "Academy Construction (1996) Ltd"
+    ],
+    "price_text": "$900,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT182426",
+  "source_folder": "York_Region/retail/p004",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182426",
+      "source_folder": "York_Region/retail/p004",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "3255 KING VAUGHAN RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "10 Jan 2024",
+      "price_text": "$45,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Calapa Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "79 Fletcher Dr",
+        "Maple, Ontario",
+        "L6A 2G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "King-Vaughan 400 Ltd     905-264-5962"
+      ],
+      "trade_name": "Zzen Group",
+      "contact_lines": [
+        "Attn: Vic De Zen",
+        "100 Zenway Blvd",
+        "Vaughan, Ontario",
+        "L4H 2Y7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - VGN, Part Lot 35",
+      "Plan 65R-26688, Parts 1 & 2",
+      "Except:",
+      "Plan 65R-27369, Part 2",
+      "Exprop Plan YR-1555459",
+      "",
+      "PIN: 03345-0449",
+      "",
+      "40.76 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $25,000,000     assumed/vtb debt: $20,000,000",
+      "",
+      "chargee: Calapa Farms Ltd",
+      "principal: $20,000,000   rate: 0% per annum.",
+      "registered: 01/10/2024   due: 01/10/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1824/RT182426/air1.jpg",
+        "/assets/files/RT18/RT1824/RT182426/air2.jpg",
+        "/assets/files/RT18/RT1824/RT182426/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "187 / 984",
+      "rt_id": "RT182426"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "3255 KING VAUGHAN RD",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/10/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "40.76",
+    "consid": "45000000",
+    "cash": "25000000",
+    "debt": "20000000",
+    "note": "",
+    "pin": "03345-0449",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "3255 KING VAUGHAN RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "10 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Calapa Farms Ltd"
+    ],
+    "buyer_lines": [
+      "King-Vaughan 400 Ltd"
+    ],
+    "price_text": "$45,000,000"
+  }
+}

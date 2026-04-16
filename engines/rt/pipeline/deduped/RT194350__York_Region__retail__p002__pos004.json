@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT194350",
+  "source_folder": "York_Region/retail/p002",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194350",
+      "source_folder": "York_Region/retail/p002",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "360 HIGHWAY 7 E",
+        "UNIT 11"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "09 Sep 2025",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001062701 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lincoln Lin",
+        "6 River Bend Rd",
+        "Unionville, Ontario",
+        "L3R 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 850",
+      "Level 1, Unit 10",
+      "Level A, Unit 9",
+      "",
+      "PIN: 29380-0010 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $550,000   rate: 6.0% per annum.",
+      "registered: 09/09/2025   due: 09/09/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113320.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113332.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113417.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113422.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113458.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113502.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194350/0921_113548.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "55 / 984",
+      "rt_id": "RT194350"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "360 HIGHWAY 7 E, UNIT 11",
+    "postcode": "L4B 3Y7",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "09/09/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "29380-0010+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "360 HIGHWAY 7 E",
+      "UNIT 11"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "09 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001062701 Ontario Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

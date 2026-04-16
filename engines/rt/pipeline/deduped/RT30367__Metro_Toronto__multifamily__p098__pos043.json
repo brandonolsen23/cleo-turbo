@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT30367",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30367",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "512 RIVERSIDE DR"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "05 Jun 2003",
+      "price_text": "$840,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Lidcombe Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "513 Riverside Dr",
+        "Toronto, Ontario",
+        "M6S 4B7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1725, Part Lot 54",
+      "As in Inst No CY-667532",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 14 081 080 00800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $45,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4894 / 6031",
+      "rt_id": "RT30367"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "512 RIVERSIDE DR",
+    "postcode": "M6S 4B5",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "06/05/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "840000",
+    "cash": "",
+    "debt": "45000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 14 081 080 00800"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "512 RIVERSIDE DR"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "05 Jun 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Lidcombe Investments Ltd"
+    ],
+    "price_text": "$840,000"
+  }
+}

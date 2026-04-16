@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT138860",
+  "source_folder": "Cochrane/all/p064",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT138860",
+      "source_folder": "Cochrane/all/p064",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p064/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "1131 TERON RD"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "16 Nov 2018",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "11021028 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raphael Esposito",
+        "47 Clarence St, Ste 406",
+        "Ottawa, Ontario",
+        "K1N 9K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 5",
+      "As in Inst No N-405176",
+      "",
+      "PIN: 04514-0002",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "06 30 000 810 18200",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $331,579   rate: 6.0% per annum.",
+      "registered: 11/19/2018   due: 11/19/2020",
+      "",
+      "chargee: Tempbridge Commercial Mortgages Inc",
+      "principal: $3,150,000   rate: 10.0% per annum.",
+      "registered: 11/19/2018   due: 11/01/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3165 / 10920",
+      "rt_id": "RT138860"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "1131 TERON RD",
+    "postcode": "K2K 1R3",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "11/16/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "04514-0002",
+    "rollno": "06 30 000 810 18200"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "1131 TERON RD"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "16 Nov 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "11021028 Canada Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

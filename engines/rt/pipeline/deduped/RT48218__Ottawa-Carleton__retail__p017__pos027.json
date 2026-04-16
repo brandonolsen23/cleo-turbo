@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT48218",
+  "source_folder": "Ottawa-Carleton/retail/p017",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48218",
+      "source_folder": "Ottawa-Carleton/retail/p017",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p017/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "1437 - 1441 OGILVIE RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "11 Apr 2006",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1514631 Ontario Inc     613-837-6995"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Amjad Syed",
+        "1410 Cheverny Cres",
+        "Orleans, Ontario",
+        "K4A 3C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "6508707 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Najib El-Hendi",
+        "1437 Ogilvie Rd",
+        "Ottawa, Ontario",
+        "K1J 7P3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 854, Block A",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "06 06 000 159 00600",
+    "consideration_lines": [
+      "cash: $347,459     assumed/vtb debt: $202,541"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "828 / 1141",
+      "rt_id": "RT48218"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "1437 - 1441 OGILVIE RD",
+    "postcode": "K1J 7P3",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "04/11/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "550000",
+    "cash": "347459",
+    "debt": "202541",
+    "note": "",
+    "pin": "",
+    "rollno": "06 06 000 159 00600"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "1437 - 1441 OGILVIE RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "11 Apr 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1514631 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "6508707 Canada Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

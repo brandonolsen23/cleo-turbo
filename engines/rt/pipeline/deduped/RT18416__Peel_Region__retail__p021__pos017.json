@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT18416",
+  "source_folder": "Peel_Region/retail/p021",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18416",
+      "source_folder": "Peel_Region/retail/p021",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p021/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "1730 LAKESHORE RD W"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "08 Aug 2000",
+      "price_text": "$2,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1298610 Ontario ltd     905-815-8898"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David F. Baily",
+        "Longboat Development",
+        "2896 South Sheridan Way, Ste 100",
+        "Oakville, Ontario",
+        "L6J 7G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Southdown Builders (Clarkson) Ltd     416-483-1519"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Leslie Feldman",
+        "2041 Avenue Rd",
+        "Toronto, Ontario",
+        "M5M 4A5"
+      ]
+    },
+    "description_lines": [
+      "New Royal Bank Bldg - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - SDS, Part Lot 28",
+      "As in Inst No TT-116622",
+      "",
+      "S side 10m E of Clarkson",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "21 05 020 024 18100",
+    "consideration_lines": [
+      "cash: $1,045,862     assumed/vtb debt: $1,754,138",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $2,200,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 04/11/2024   due: on demand",
+      "",
+      "chargee: Maple Lane Holdings Ltd",
+      "principal: $2,000,000",
+      "registered: 04/12/2024   due: 04/12/2029",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $5,240,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/11/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT184/RT18416/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1018 / 1087",
+      "rt_id": "RT18416"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "1730 LAKESHORE RD W",
+    "postcode": "L5J 1J5",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "08/08/2000",
+    "desc": "New Royal Bank Bldg - 1 storey",
+    "bldg": "",
+    "acreage": ".69",
+    "consid": "2800000",
+    "cash": "1045862",
+    "debt": "1754138",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 020 024 18100"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "1730 LAKESHORE RD W"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "08 Aug 2000",
+    "note": "",
+    "description": "New Royal Bank Bldg - 1 storey",
+    "seller_lines": [
+      "1298610 Ontario ltd"
+    ],
+    "buyer_lines": [
+      "Southdown Builders (Clarkson) Ltd"
+    ],
+    "price_text": "$2,800,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT26363",
+  "source_folder": "Metro_Toronto/retail/p084",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26363",
+      "source_folder": "Metro_Toronto/retail/p084",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p084/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1852 QUEEN ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "26 Jul 2002",
+      "price_text": "$765,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dicklow Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chris Stavro",
+        "674 Kingston Rd, Ste 5",
+        "Toronto, Ontario",
+        "M4E 1R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1852 Queen Street East Inc     416-691-4814"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: William Hurst",
+        "101 Joseph Duggan Rd",
+        "Toronto, Ontario",
+        "M4L 3X5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 10,000 sf @ $77"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 816, Part Lots 20 & 21",
+      "As in Deed No CA-226017",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 092 060 04600",
+    "consideration_lines": [
+      "cash: $765,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Sutton Group Partners: Henry Strothard, 416-461-0907"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4169 / 4952",
+      "rt_id": "RT26363"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1852 QUEEN ST E",
+    "postcode": "M4L 1H1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/26/2002",
+    "desc": "Retail Bldg - 2 storey; 10,000 sf @ $77",
+    "bldg": "10,000 sf",
+    "acreage": ".13",
+    "consid": "765000",
+    "cash": "765000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 092 060 04600"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1852 QUEEN ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "26 Jul 2002",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 10,000 sf @ $77",
+    "seller_lines": [
+      "Dicklow Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "1852 Queen Street East Inc"
+    ],
+    "price_text": "$765,000"
+  }
+}

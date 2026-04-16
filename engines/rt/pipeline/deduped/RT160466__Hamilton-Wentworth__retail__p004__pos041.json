@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT160466",
+  "source_folder": "Hamilton-Wentworth/retail/p004",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT160466",
+      "source_folder": "Hamilton-Wentworth/retail/p004",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p004/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "1817 REGIONAL RD 97"
+      ],
+      "city_region": "Flamborough : Hamilton-Wentworth",
+      "date_text": "14 May 2021",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2328043 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Wallace Lewis",
+        "24 Benson Ave",
+        "Mono, Ontario",
+        "L9W 6T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "12880873 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sukhdev Dhaliwal",
+        "1817 Regional Rd 97",
+        "Hamilton, Ontario",
+        "L9H 5E3"
+      ]
+    },
+    "description_lines": [
+      "Last transferred in June 2012 for $960,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 19",
+      "As in Inst No VM-186740",
+      "",
+      "PIN: 17528-0034",
+      "",
+      "8.06 acre"
+    ],
+    "arn_text": "25 30 100 910 13600",
+    "consideration_lines": [
+      "cash: $2,351,000     assumed/vtb debt: $0",
+      "other: $349,000",
+      "",
+      "chargee: 923944 Ontario Ltd",
+      "principal: $2,080,000   rate: 9.0% per annum.",
+      "registered: 05/14/2021   due: 06/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT16/RT1604/RT160466/air1.jpg",
+        "/assets/files/RT16/RT1604/RT160466/air2.jpg",
+        "/assets/files/RT16/RT1604/RT160466/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "192 / 616",
+      "rt_id": "RT160466"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "1817 REGIONAL RD 97",
+    "postcode": "",
+    "municipality": "Flamborough",
+    "region": "Hamilton-Wentworth",
+    "date": "05/14/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": "8.06",
+    "consid": "2700000",
+    "cash": "2351000",
+    "debt": "",
+    "note": "",
+    "pin": "17528-0034",
+    "rollno": "25 30 100 910 13600"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "1817 REGIONAL RD 97"
+    ],
+    "city_region": "Flamborough : Hamilton-Wentworth",
+    "date_text": "14 May 2021",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2328043 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "12880873 Canada Inc"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

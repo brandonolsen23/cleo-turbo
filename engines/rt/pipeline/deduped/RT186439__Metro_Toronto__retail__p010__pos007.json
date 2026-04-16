@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT186439",
+  "source_folder": "Metro_Toronto/retail/p010",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186439",
+      "source_folder": "Metro_Toronto/retail/p010",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p010/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "546 COLLEGE ST",
+        "UNIT 7"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Aug 2024",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CVW Investment Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3151 McCarthy Ct",
+        "Mississauga, Ontario",
+        "L4Y 3Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "10997935 Canada Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Luisa Parreira",
+        "172 Delaware Ave",
+        "Toronto, Ontario",
+        "M6H 2T2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1225,",
+      "Level 1, Unit 7",
+      "",
+      "PIN: 12225-0007"
+    ],
+    "arn_text": "19 04 044 040 10410",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $200,000",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $1,500,000   rate: 8.495 per annum.",
+      "registered: 08/02/2024   due: 08/05/2025",
+      "",
+      "chargee: CVW Investment Group Ltd",
+      "principal: $200,000   rate: 6.0% per annum.",
+      "registered: 08/02/2024   due: 07/05/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073241.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073242.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073253.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073326.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073327.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073328.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1864/RT186439/0825_073353.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "458 / 4952",
+      "rt_id": "RT186439"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "546 COLLEGE ST, UNIT 7",
+    "postcode": "M6G 1B1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/02/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2000000",
+    "cash": "1800000",
+    "debt": "200000",
+    "note": "",
+    "pin": "12225-0007",
+    "rollno": "19 04 044 040 10410"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "546 COLLEGE ST",
+      "UNIT 7"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "CVW Investment Group Ltd"
+    ],
+    "buyer_lines": [
+      "10997935 Canada Corp"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

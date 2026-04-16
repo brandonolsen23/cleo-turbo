@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT36840",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36840",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "844 NIAGARA ST"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "30 Jul 2004",
+      "price_text": "$2,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Firstontario Credit Union Ltd     905-685-5555"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Lloyd Smith",
+        "148 Niagara St",
+        "St Catharines, Ontario",
+        "L2R 6Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lancaster Niagara Inc     905-227-3777"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christopher Young",
+        "Young McNamara",
+        "18 Albert St E",
+        "Thorold, Ontario",
+        "L2V 1P1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 units 9,969 sf @ $238"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-9340, Parts 4-11",
+      "Plan M-75, Block M"
+    ],
+    "arn_text": "27 19 010 001 03700",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $1,725,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT368/RT36840/photo.jpg"
+    },
+    "footer": {
+      "page_position": "274 / 324",
+      "rt_id": "RT36840"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "844 NIAGARA ST",
+    "postcode": "L3C 1M3",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "07/30/2004",
+    "desc": "Retail Plaza - 1 storey; 6 units 9,969 sf @ $238",
+    "bldg": "9,969 sf",
+    "acreage": "",
+    "consid": "2375000",
+    "cash": "650000",
+    "debt": "1725000",
+    "note": "",
+    "pin": "",
+    "rollno": "27 19 010 001 03700"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "844 NIAGARA ST"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "30 Jul 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 units 9,969 sf @ $238",
+    "seller_lines": [
+      "Firstontario Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "Lancaster Niagara Inc"
+    ],
+    "price_text": "$2,375,000"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT24261",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24261",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1717 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Jan 2002",
+      "price_text": "$625,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "878840 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jacline McArther",
+        "1510 Riverside Dr, Ste 1802",
+        "Ottawa, Ontario",
+        "K1G 4X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Geocam Securities Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jacline McArther",
+        "1510 Riverside Dr, Ste 1802",
+        "Ottawa, Ontario",
+        "K1G 4X5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "0.46 acre"
+    ],
+    "arn_text": "06 14 116 301 61800",
+    "consideration_lines": [
+      "cash: $275,000     assumed/vtb debt: $350,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1011 / 1141",
+      "rt_id": "RT24261"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1717 BANK ST",
+    "postcode": "K1V 7Z4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/15/2002",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "625000",
+    "cash": "275000",
+    "debt": "350000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 14 116 301 61800"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1717 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Jan 2002",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "878840 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Geocam Securities Ltd"
+    ],
+    "price_text": "$625,000"
+  }
+}

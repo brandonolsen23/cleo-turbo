@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT25401",
+  "source_folder": "Metro_Toronto/multifamily/p105",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25401",
+      "source_folder": "Metro_Toronto/multifamily/p105",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p105/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "18 RIVERDALE DR"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 May 2002",
+      "price_text": "$567,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ravine Lanes Inc     416-441-2200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Montilal Champsee",
+        "19-2555 Victoria Park Ave, Ste 321",
+        "Toronto, Ontario",
+        "M1T 1A3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sandcrest Developments Inc     416-744-0948"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aristides Indio",
+        "161 Milvan Dr, Ste 200",
+        "North York, Ontario",
+        "M9L 1Z8"
+      ]
+    },
+    "description_lines": [
+      "Res Land - 1.85 Ac",
+      "",
+      "3 of the 4 existing houses are to be demolished."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-12479",
+      "Part 1",
+      "",
+      "1.85 acre"
+    ],
+    "arn_text": "19 19 041 320 03200",
+    "consideration_lines": [
+      "cash: $567,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5213 / 6031",
+      "rt_id": "RT25401"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "18 RIVERDALE DR",
+    "postcode": "M9V 2T3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/02/2002",
+    "desc": "Res Land - 1.85 Ac",
+    "bldg": "4 units",
+    "acreage": "1.85",
+    "consid": "567000",
+    "cash": "567000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 041 320 03200"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "18 RIVERDALE DR"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 May 2002",
+    "note": "",
+    "description": "Res Land - 1.85 Ac",
+    "seller_lines": [
+      "Ravine Lanes Inc"
+    ],
+    "buyer_lines": [
+      "Sandcrest Developments Inc"
+    ],
+    "price_text": "$567,000"
+  }
+}

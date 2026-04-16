@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT195224",
+  "source_folder": "York_Region/retail/p001",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195224",
+      "source_folder": "York_Region/retail/p001",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "75 MULOCK DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "03 Nov 2025",
+      "price_text": "$15,170,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "NewRoads GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o NewRoads Automotive Group Ltd",
+        "18100 Yonge St",
+        "Newmarket, Ontario",
+        "L3Y 8V1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Multiland Pacific (Ontario) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christian Chia",
+        "5580 Parkwood Cres",
+        "Richmond, British Columbia",
+        "V6V 0B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 (WT), Part Lot 91",
+      "As in inst No WH-26434 (6th & 7thly)",
+      "Except:",
+      "Plan 65R-25154, Parts 4-6 & 9",
+      "Inst Nos: B-19819B, B-77853B,",
+      "R-194336 & R-476704",
+      "",
+      "PIN: 03590-0218",
+      "",
+      "3.32 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,519,472     assumed/vtb debt: $0",
+      "other: $7,650,528",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,000,000,000   rate: Prime plus 8.0% per annum.",
+      "registered: 11/03/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195224/1122_114040.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195224/1122_114046.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195224/1122_114144.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195224/1122_114145.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195224/1122_114155.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "34 / 984",
+      "rt_id": "RT195224"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "75 MULOCK DR",
+    "postcode": "L3Y 8V2",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "11/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.32",
+    "consid": "15170000",
+    "cash": "7519472",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "03590-0218",
+    "rollno": ""
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "75 MULOCK DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "03 Nov 2025",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "NewRoads GP Inc"
+    ],
+    "buyer_lines": [
+      "Multiland Pacific (Ontario) Ltd"
+    ],
+    "price_text": "$15,170,000"
+  }
+}

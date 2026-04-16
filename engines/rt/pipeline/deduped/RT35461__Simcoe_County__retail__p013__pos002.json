@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT35461",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35461",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "PART CONC 11"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "04 May 2004",
+      "price_text": "$26,393,757",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "3358771 Canada Ltd     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Katy Ritcey",
+        "RIOCAN",
+        "The Exchange Tower",
+        "Ste 700, PO Box 378",
+        "130 King St W",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "400-Barrie Power Centres I Inc     416-493-9112"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Amato",
+        "First Professional Management",
+        "259 Yorkland Rd, Ste 300",
+        "Toronto, Ontario",
+        "M2J 5B2"
+      ]
+    },
+    "description_lines": [
+      "N of Lockhart Rd, S of Mapleview Dr E",
+      "E of Veterans Dr, W of Huronia Rd"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-24462, Parts 1-30",
+      "Except:",
+      "Plan 51R-31718, Parts 1-3"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $15,812,449     assumed/vtb debt: $10,581,308"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "603 / 712",
+      "rt_id": "RT35461"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "PART CONC 11",
+    "postcode": "",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "05/04/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "26393757",
+    "cash": "15812449",
+    "debt": "10581308",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "PART CONC 11"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "04 May 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "3358771 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "400-Barrie Power Centres I Inc"
+    ],
+    "price_text": "$26,393,757"
+  }
+}

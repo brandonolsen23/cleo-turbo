@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT80440",
+  "source_folder": "Lambton/retail/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80440",
+      "source_folder": "Lambton/retail/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "446 LYNDOCK ST"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "26 Aug 2011",
+      "price_text": "$875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Map Developments Ltd     519-542-5151"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Dimurro",
+        "106 Bridlepath Trail",
+        "Sarnia, Ontario",
+        "N7S 6M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1777797 Ontario Ltd     519-862-3566"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dieter Decker",
+        "751 St Clair Pkwy",
+        "Corunna, Ontario",
+        "N0N 1G0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 units 5 tenants 14,000 sf @ $63",
+      "",
+      "2,800 sf (1 unit) vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 413",
+      "Lots 119 -121",
+      "",
+      "PIN: 43434-0080",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "38 05 220 090 13301",
+    "consideration_lines": [
+      "cash: $875,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT804/RT80440/1203_114925.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT804/RT80440/1203_115038.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT804/RT80440/1203_115145.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT804/RT80440/air1.jpg",
+        "/assets/files/RT8/RT804/RT80440/air2.jpg",
+        "/assets/files/RT8/RT804/RT80440/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 106",
+      "rt_id": "RT80440"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "446 LYNDOCK ST",
+    "postcode": "",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "08/26/2011",
+    "desc": "Retail Plaza - 1 storey; 6 units 5 tenants 14,000 sf @ $63",
+    "bldg": "14,000 sf",
+    "acreage": "1.1",
+    "consid": "875000",
+    "cash": "875000",
+    "debt": "",
+    "note": "",
+    "pin": "43434-0080",
+    "rollno": "38 05 220 090 13301"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "446 LYNDOCK ST"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "26 Aug 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 units 5 tenants 14,000 sf @ $63",
+    "seller_lines": [
+      "Map Developments Ltd"
+    ],
+    "buyer_lines": [
+      "1777797 Ontario Ltd"
+    ],
+    "price_text": "$875,000"
+  }
+}

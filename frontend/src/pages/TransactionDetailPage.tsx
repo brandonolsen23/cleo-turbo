@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Heading, Text, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
-import { formatCurrency, formatDate, formatPhone } from "../lib/utils";
+import { formatCurrency, formatDate, formatPhone, formatMailingAddress } from "../lib/utils";
+import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import type { TransactionDetail } from "../types";
 
 export default function TransactionDetailPage() {
@@ -29,6 +30,7 @@ export default function TransactionDetailPage() {
         <div className="flex items-center gap-3 mt-1">
           <Text size="2" style={{ color: "var(--gray-9)" }}>{txn.city}, {txn.region}</Text>
           <Text size="2" style={{ color: "var(--gray-9)" }}>{txn.source_id}</Text>
+          {txn.has_source_html && <SourceHtmlButton sourceId={txn.source_id} size={18} />}
         </div>
       </div>
 
@@ -93,6 +95,12 @@ export default function TransactionDetailPage() {
                   </div>
                 </div>
               ))}
+              {formatMailingAddress(txn.seller_mailing_address) && (
+                <div className="mt-1 pt-2 border-t border-[var(--gray-4)]">
+                  <Text size="1" style={{ color: "var(--gray-9)" }}>Mailing Address</Text>
+                  <Text size="2" className="block mt-0.5">{formatMailingAddress(txn.seller_mailing_address)}</Text>
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -130,6 +138,12 @@ export default function TransactionDetailPage() {
                   </div>
                 </div>
               ))}
+              {formatMailingAddress(txn.buyer_mailing_address) && (
+                <div className="mt-1 pt-2 border-t border-[var(--gray-4)]">
+                  <Text size="1" style={{ color: "var(--gray-9)" }}>Mailing Address</Text>
+                  <Text size="2" className="block mt-0.5">{formatMailingAddress(txn.buyer_mailing_address)}</Text>
+                </div>
+              )}
             </div>
           )}
         </div>

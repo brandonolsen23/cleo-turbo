@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT195797",
+  "source_folder": "Muskoka/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195797",
+      "source_folder": "Muskoka/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "40 - 42 MAIN ST E"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "30 Oct 2025",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lance Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Box 5302",
+        "Huntsville, Ontario",
+        "P1H 2K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001234070 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Victoria Darling-Wadel",
+        "143 Chalet Cres",
+        "Huntsville, Ontario",
+        "P1H 1A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6 - Huntsville, Part Lot 1",
+      "",
+      "PIN: 48088-0034",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "44 42 010 011 08200",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,225,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 10/30/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 47",
+      "rt_id": "RT195797"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "40 - 42 MAIN ST E",
+    "postcode": "P1H 2C7",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "10/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "48088-0034",
+    "rollno": "44 42 010 011 08200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "40 - 42 MAIN ST E"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "30 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Lance Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1001234070 Ontario Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT35091",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35091",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "312 VICTORIA ST E"
+      ],
+      "city_region": "New Tecumseth : Simcoe County",
+      "date_text": "15 Apr 2004",
+      "price_text": "$1,225,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "883379 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Terry McCloskey",
+        "RR 3",
+        "Schomberg, Ontario",
+        "L0G 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2042986 Ontario Inc     416-661-1895"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rick Kushnir",
+        "York Fish Co Ltd",
+        "795 Alness St",
+        "Downsview, Ontario",
+        "M3J 2H8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 10,300 sf @ $119"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1420, Part Lots 13, 13A & 14",
+      "Plan 51R-22018, Part 8",
+      "",
+      "0.96 acre"
+    ],
+    "arn_text": "43 24 030 005 39500",
+    "consideration_lines": [
+      "cash: $1,225,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT350/RT35091/photo.jpg"
+    },
+    "footer": {
+      "page_position": "604 / 712",
+      "rt_id": "RT35091"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "312 VICTORIA ST E",
+    "postcode": "L9R 1K4",
+    "municipality": "New Tecumseth",
+    "region": "Simcoe County",
+    "date": "04/15/2004",
+    "desc": "Retail Plaza - 1 storey; 4 units 10,300 sf @ $119",
+    "bldg": "10,300 sf",
+    "acreage": ".96",
+    "consid": "1225000",
+    "cash": "1225000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 24 030 005 39500"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "312 VICTORIA ST E"
+    ],
+    "city_region": "New Tecumseth : Simcoe County",
+    "date_text": "15 Apr 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 10,300 sf @ $119",
+    "seller_lines": [
+      "883379 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2042986 Ontario Inc"
+    ],
+    "price_text": "$1,225,000"
+  }
+}

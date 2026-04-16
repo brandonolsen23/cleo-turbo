@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT98342",
+  "source_folder": "York_Region/retail/p008",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT98342",
+      "source_folder": "York_Region/retail/p008",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "30 KARACHI DR"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "19 Feb 2014",
+      "price_text": "$1,161,133",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Markham-Kirkham Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Barry Godfrey",
+        "40 Eglinton Ave E, Ste 807",
+        "Toronto, Ontario",
+        "M4P 3A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2120702 Ontario Inc     905-760-0804"
+      ],
+      "trade_name": "Golddome Electrical Contractor",
+      "contact_lines": [
+        "Attn: George Mammoliti",
+        "241 Applewood Cres, Ste 5",
+        "Concord, Ontario",
+        "L4K 4E6"
+      ]
+    },
+    "description_lines": [
+      "Retail Condos - 1 storey; 2,500 sf @ $464",
+      "",
+      "Part of the 170,000 sf Newtown Square Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1190",
+      "Level 1, Units 66, 77-80",
+      "",
+      "PIN: 29721-0077 +",
+      "",
+      "N side Karachi Dr, E of Markham Rd"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,161,133     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,015,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 02/19/2014   due: on demand",
+      "",
+      "chargee: 2106192 Ontario Inc",
+      "principal: $110,000   rate: 6.0% per annum.",
+      "registered: 02/19/2014   due: 03/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "387 / 984",
+      "rt_id": "RT98342"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "30 KARACHI DR",
+    "postcode": "L3S 0B6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "02/19/2014",
+    "desc": "Retail Condos - 1 storey; 2,500 sf @ $464",
+    "bldg": "2,500 sf",
+    "acreage": "",
+    "consid": "1161133",
+    "cash": "1161133",
+    "debt": "",
+    "note": "",
+    "pin": "29721-0077+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "30 KARACHI DR"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "19 Feb 2014",
+    "note": "",
+    "description": "Retail Condos - 1 storey; 2,500 sf @ $464",
+    "seller_lines": [
+      "Markham-Kirkham Developments Inc"
+    ],
+    "buyer_lines": [
+      "2120702 Ontario Inc"
+    ],
+    "price_text": "$1,161,133"
+  }
+}

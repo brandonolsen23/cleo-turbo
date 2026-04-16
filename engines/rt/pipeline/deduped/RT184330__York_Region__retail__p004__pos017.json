@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT184330",
+  "source_folder": "York_Region/retail/p004",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184330",
+      "source_folder": "York_Region/retail/p004",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "3175 RUTHERFORD RD",
+        "UNIT 63"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "16 Apr 2024",
+      "price_text": "$946,338",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2765623 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000788947 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mahdi Ghadimkhani",
+        "3175 Rutherford Rd, Unit 63",
+        "Concord, Ontario",
+        "L4K 5Y6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1052",
+      "Level 1, Unit 63",
+      "",
+      "PIN: 29583-0063"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $946,338     assumed/vtb debt: $0",
+      "chattels: $148,662",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,095,000   rate: Prime plus 6.0% per annum.",
+      "registered: 04/16/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134734.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134736.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134737.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134755.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134757.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134811.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1843/RT184330/0505_134929.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "168 / 984",
+      "rt_id": "RT184330"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "3175 RUTHERFORD RD, UNIT 63",
+    "postcode": "L4K 5Y6",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "04/16/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "946338",
+    "cash": "946338",
+    "debt": "",
+    "note": "",
+    "pin": "29583-0063",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "3175 RUTHERFORD RD",
+      "UNIT 63"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "16 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2765623 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000788947 Ontario Inc"
+    ],
+    "price_text": "$946,338"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT131249",
+  "source_folder": "Grey_County/retail/p001",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT131249",
+      "source_folder": "Grey_County/retail/p001",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/retail/p001/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "857 SECOND AVE E",
+        "857 2ND AVE E"
+      ],
+      "city_region": "Owen Sound : Grey County",
+      "date_text": "16 Jan 2018",
+      "price_text": "$2,400,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "National Trust Company     416-866-6161"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Darren Da Silva",
+        "c/o The Bank of Nova Scotia",
+        "Real Estate Department",
+        "44 King St W, 21st Flr",
+        "Toronto, Ontario",
+        "M5H 1H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2610761 Ontario Inc     905-643-1363"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Major Grewal",
+        "c/o 27 Liuna Ct",
+        "Stoney Creek, Ontario",
+        "L8E 5Z1"
+      ]
+    },
+    "description_lines": [
+      "Scotiabank Branch: 1 storey; 7,000 sf @ $343",
+      "",
+      "The property was leased back by the vendor.",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Owen Sound Plan",
+      "Part Lot 8, E/S Poulett St",
+      "Part Lot 8, W/S Scrope St",
+      "Plan 16R-10892, Parts 1 & 2",
+      "As in Inst No R-164213(2ndly)",
+      "",
+      "PIN: 37073-0042 +",
+      "",
+      "E side Second Ave E, S of 9th St E",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,700,000   rate: 18.0% per annum.",
+      "registered: 01/16/2018   due: 01/15/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "39 / 69",
+      "rt_id": "RT131249"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "857 SECOND AVE E, 857 2ND AVE E",
+    "postcode": "N4K 2H2",
+    "municipality": "Owen Sound",
+    "region": "Grey County",
+    "date": "01/16/2018",
+    "desc": "Scotiabank Branch: 1 storey; 7,000 sf @ $343",
+    "bldg": "7,000 sf",
+    "acreage": ".6",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "37073-0042+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "857 SECOND AVE E",
+      "857 2ND AVE E"
+    ],
+    "city_region": "Owen Sound : Grey County",
+    "date_text": "16 Jan 2018",
+    "note": "Sale Leaseback",
+    "description": "Scotiabank Branch: 1 storey; 7,000 sf @ $343",
+    "seller_lines": [
+      "National Trust Company"
+    ],
+    "buyer_lines": [
+      "2610761 Ontario Inc"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

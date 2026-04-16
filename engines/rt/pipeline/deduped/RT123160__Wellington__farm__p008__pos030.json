@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT123160",
+  "source_folder": "Wellington/farm/p008",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123160",
+      "source_folder": "Wellington/farm/p008",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/farm/p008/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "5521 JONES BASELINE"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "17 Feb 2017",
+      "price_text": "$3,893,095",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gorweir Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christopher Weir",
+        "5521 Jones Baseline",
+        "Guelph, Ontario",
+        "N1H 6J1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 16 & 17",
+      "Except:",
+      "Inst No RO-704199",
+      "",
+      "PIN: 71178-0059",
+      "",
+      "124.38 acre"
+    ],
+    "arn_text": "23 11 000 005 00700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $3,893,095",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/17/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "381 / 857",
+      "rt_id": "RT123160"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "5521 JONES BASELINE",
+    "postcode": "N1H 6J1",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "02/17/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "124.38",
+    "consid": "3893095",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "71178-0059",
+    "rollno": "23 11 000 005 00700"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "5521 JONES BASELINE"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "17 Feb 2017",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gorweir Farms Inc"
+    ],
+    "price_text": "$3,893,095"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT55122",
+  "source_folder": "York_Region/industrial/p032",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55122",
+      "source_folder": "York_Region/industrial/p032",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p032/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "158 ANDERSON AVE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "24 Apr 2007",
+      "price_text": "$2,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "708260 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Crupi",
+        "3845 Bathurst St, Ste 303",
+        "Toronto, Ontario",
+        "M3H 3N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2134018 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Crupi",
+        "3845 Bathurst St, Ste 303",
+        "Toronto, Ontario",
+        "M3H 3N2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1793, Block D",
+      "",
+      "2.00 acre"
+    ],
+    "arn_text": "19 36 030 233 44500",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $599,868"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT551/RT55122/air1.jpg",
+        "/assets/files/RT5/RT551/RT55122/air2.jpg",
+        "/assets/files/RT5/RT551/RT55122/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1558 / 2269",
+      "rt_id": "RT55122"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "158 ANDERSON AVE",
+    "postcode": "L6E 1A9",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "04/24/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2",
+    "consid": "2300000",
+    "cash": "",
+    "debt": "599868",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 36 030 233 44500"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "158 ANDERSON AVE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "24 Apr 2007",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "708260 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2134018 Ontario Inc"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

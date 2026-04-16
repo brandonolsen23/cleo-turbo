@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT174882",
+  "source_folder": "York_Region/retail/p005",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174882",
+      "source_folder": "York_Region/retail/p005",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "14662 WOODBINE AVE"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "19 Jan 2023",
+      "price_text": "$1,499,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Sur Holding Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yusuf Kaya",
+        "14662 Woodbine Ave",
+        "Stouffville, Ontario",
+        "L4A 2K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lots 16 & 17",
+      "As in Inst No R-427198",
+      "",
+      "PIN: 03697-0246",
+      "",
+      "0.58 acre"
+    ],
+    "arn_text": "19 44 000 090 48000",
+    "consideration_lines": [
+      "cash: $1,499,000     assumed/vtb debt: $0",
+      "chattels: $200,000",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $1,600,000   rate: Prime plus 6.0% per annum.",
+      "registered: 01/19/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1748/RT174882/0204_152053.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1748/RT174882/0204_152054.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1748/RT174882/0204_152111.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1748/RT174882/0204_152112.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1748/RT174882/0204_152127.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1748/RT174882/air1.jpg",
+        "/assets/files/RT17/RT1748/RT174882/air2.jpg",
+        "/assets/files/RT17/RT1748/RT174882/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "241 / 984",
+      "rt_id": "RT174882"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "14662 WOODBINE AVE",
+    "postcode": "L4A 2K9",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "01/19/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".58",
+    "consid": "1499000",
+    "cash": "1499000",
+    "debt": "",
+    "note": "",
+    "pin": "03697-0246",
+    "rollno": "19 44 000 090 48000"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "14662 WOODBINE AVE"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "19 Jan 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Sur Holding Inc"
+    ],
+    "price_text": "$1,499,000"
+  }
+}

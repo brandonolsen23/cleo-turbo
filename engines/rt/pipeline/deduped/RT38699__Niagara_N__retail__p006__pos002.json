@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT38699",
+  "source_folder": "Niagara_N/retail/p006",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38699",
+      "source_folder": "Niagara_N/retail/p006",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p006/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "288 - 290 GLENDALE AVE"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "12 Nov 2004",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "DiPaolo Investments Inc     905-358-6233"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rossano DiPaolo",
+        "2129 Portage Rd",
+        "Niagara Falls, Ontario",
+        "L2E 6S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1290052 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Allen Waichenberg",
+        "45 Thornbridge Dr",
+        "Thornhill, Ontario",
+        "L4J 1C7"
+      ]
+    },
+    "description_lines": [
+      "Retail/Com Plaza - 1 storey; 10 units 15,000 sf @ $140"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 13",
+      "As in Inst No RO-526134",
+      "",
+      "1.42 acre"
+    ],
+    "arn_text": "26 29 010 007 08000",
+    "consideration_lines": [
+      "cash: $548,271     assumed/vtb debt: $1,551,729"
+    ],
+    "broker_lines": [
+      "Royal LePage Niagara Commercial: Jeff Davidson, 905-688-4561"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT386/RT38699/photo.jpg"
+    },
+    "footer": {
+      "page_position": "253 / 307",
+      "rt_id": "RT38699"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "288 - 290 GLENDALE AVE",
+    "postcode": "L2T 2L3",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "11/12/2004",
+    "desc": "Retail/Com Plaza - 1 storey; 10 units 15,000 sf @ $140",
+    "bldg": "15,000 sf",
+    "acreage": "1.42",
+    "consid": "2100000",
+    "cash": "548271",
+    "debt": "1551729",
+    "note": "",
+    "pin": "",
+    "rollno": "26 29 010 007 08000"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "288 - 290 GLENDALE AVE"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "12 Nov 2004",
+    "note": "",
+    "description": "Retail/Com Plaza - 1 storey; 10 units 15,000 sf @ $140",
+    "seller_lines": [
+      "DiPaolo Investments Inc"
+    ],
+    "buyer_lines": [
+      "1290052 Ontario Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

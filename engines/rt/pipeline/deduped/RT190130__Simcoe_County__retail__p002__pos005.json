@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT190130",
+  "source_folder": "Simcoe_County/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190130",
+      "source_folder": "Simcoe_County/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "15 STURGEON BAY RD"
+      ],
+      "city_region": "Severn : Simcoe County",
+      "date_text": "27 Jan 2025",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Severn Building Supply Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "575 Thornton Rd S",
+        "Oshawa, Ontario",
+        "L1J 6W6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2313971 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cory Jones",
+        "15 Sturgeon Bay Rd",
+        "Coldwater, Ontario",
+        "L0K 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 12 - Medonte, Part Lot 23",
+      "Plan 51R-41380, Part 1",
+      "",
+      "PIN: 58519-0534",
+      "",
+      "0.64 acre"
+    ],
+    "arn_text": "43 51 030 001 94000",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $1,025,000   rate: Prime plus 10.0% per annum.",
+      "registered: 01/27/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190130/0419_130415.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190130/0419_130418.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190130/0419_130448.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190130/0419_130509.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190130/0419_130510.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 712",
+      "rt_id": "RT190130"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "15 STURGEON BAY RD",
+    "postcode": "L0K 1E0",
+    "municipality": "Severn",
+    "region": "Simcoe County",
+    "date": "01/27/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".64",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "58519-0534",
+    "rollno": "43 51 030 001 94000"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "15 STURGEON BAY RD"
+    ],
+    "city_region": "Severn : Simcoe County",
+    "date_text": "27 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Severn Building Supply Inc"
+    ],
+    "buyer_lines": [
+      "2313971 Ontario Ltd"
+    ],
+    "price_text": "$950,000"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT160042",
+  "source_folder": "Oxford_County/all/p031",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT160042",
+      "source_folder": "Oxford_County/all/p031",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/all/p031/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "111 DUNDAS ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "15 Apr 2021",
+      "price_text": "$975,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "238793 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Trimmer",
+        "111 Dundas St",
+        "London, Ontario",
+        "N6A 1E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Lot 15, S/W Dundas St",
+      "As in Inst No 945877",
+      "",
+      "PIN: 08321-0002",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "39 36 060 030 00200",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $975,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1513 / 7032",
+      "rt_id": "RT160042"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "111 DUNDAS ST",
+    "postcode": "N6A 1E8",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "04/15/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "975000",
+    "cash": "",
+    "debt": "975000",
+    "note": "Related Parties",
+    "pin": "08321-0002",
+    "rollno": "39 36 060 030 00200"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "111 DUNDAS ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "15 Apr 2021",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "238793 Ontario Inc"
+    ],
+    "price_text": "$975,000"
+  }
+}

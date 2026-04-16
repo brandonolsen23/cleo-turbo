@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT186704",
+  "source_folder": "York_Region/hotel-motel/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186704",
+      "source_folder": "York_Region/hotel-motel/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/hotel-motel/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "20570 HIGHWAY 11",
+        "20570 HWY 11"
+      ],
+      "city_region": "King : York Region",
+      "date_text": "12 Aug 2024",
+      "price_text": "$1,404,000",
+      "note": "Purchase Agreement"
+    },
+    "transferor": {
+      "party_lines": [
+        "7884168 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "PARCEL Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bijan Pardis",
+        "78 Harrison Garden Blvd, Unit 1609",
+        "Toronto, Ontario",
+        "M2N 7E2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-261, Part 1",
+      "",
+      "PIN: 03415-0050",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "19 49 000 151 42500",
+    "consideration_lines": [
+      "cash: $1,404,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186704/0901_133456.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186704/0901_133457.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186704/0901_133753.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186704/0901_133754.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 38",
+      "rt_id": "RT186704"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "20570 HIGHWAY 11, 20570 HWY 11",
+    "postcode": "L9N 0J5",
+    "municipality": "King",
+    "region": "York Region",
+    "date": "08/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "1404000",
+    "cash": "1404000",
+    "debt": "",
+    "note": "Purchase Agreement",
+    "pin": "03415-0050",
+    "rollno": "19 49 000 151 42500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "20570 HIGHWAY 11",
+      "20570 HWY 11"
+    ],
+    "city_region": "King : York Region",
+    "date_text": "12 Aug 2024",
+    "note": "Purchase Agreement",
+    "description": "",
+    "seller_lines": [
+      "7884168 Canada Inc"
+    ],
+    "buyer_lines": [
+      "PARCEL Inc"
+    ],
+    "price_text": "$1,404,000"
+  }
+}

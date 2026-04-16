@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT40845",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40845",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "BAYFIELD MALL",
+        "320 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "17 Mar 2005",
+      "price_text": "$44,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canpro Investments Ltd     514-282-1155"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Henry Topas",
+        "376 Victoria Ave, Ste 400",
+        "Westmount, Quebec",
+        "H3Z 1C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2017410 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shlomo Scheinbach",
+        "1 Eglinton Sq",
+        "Toronto, Ontario",
+        "M1L 2K1"
+      ]
+    },
+    "description_lines": [
+      "Regional Shopping Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 21",
+      "Plan 51R-27617, Part 4",
+      "Plan 51R-14504, Parts 1 & 2",
+      "Except:",
+      "Plan 51R-27648, Part 1",
+      "",
+      "30.21 acre"
+    ],
+    "arn_text": "43 42 031 017 00900",
+    "consideration_lines": [
+      "cash: $44,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT408/RT40845/photo.jpg"
+    },
+    "footer": {
+      "page_position": "587 / 712",
+      "rt_id": "RT40845"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "BAYFIELD MALL, 320 BAYFIELD ST",
+    "postcode": "L4M 3C1",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "03/17/2005",
+    "desc": "Regional Shopping Centre",
+    "bldg": "",
+    "acreage": "30.21",
+    "consid": "44600000",
+    "cash": "44600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 031 017 00900"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "BAYFIELD MALL",
+      "320 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "17 Mar 2005",
+    "note": "",
+    "description": "Regional Shopping Centre",
+    "seller_lines": [
+      "Canpro Investments Ltd"
+    ],
+    "buyer_lines": [
+      "2017410 Ontario Ltd"
+    ],
+    "price_text": "$44,600,000"
+  }
+}

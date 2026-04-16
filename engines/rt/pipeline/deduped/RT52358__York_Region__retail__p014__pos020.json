@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT52358",
+  "source_folder": "York_Region/retail/p014",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT52358",
+      "source_folder": "York_Region/retail/p014",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p014/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "9185 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 Nov 2006",
+      "price_text": "$3,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wilfred Katz Ltd     905-475-9787"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Jeffrey Katz",
+        "Harris Management Ltd",
+        "300 Steelcase Rd W, Unit 9",
+        "Markham, Ontario",
+        "L3R 2W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Great Land (Yonge 16th) Inc     416-748-2600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sam Sadr",
+        "202A Oakdale Rd, Ste 6",
+        "Toronto, Ontario",
+        "M3N 2S5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3806",
+      "Part Lots 6 & 7",
+      "Except:",
+      "Plan 64R-3138, Part 7",
+      "Plan 65R-27509, Parts 1-3",
+      "",
+      "1.33 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT523/RT52358/1225_101530.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT523/RT52358/1225_101538.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "671 / 984",
+      "rt_id": "RT52358"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "9185 YONGE ST",
+    "postcode": "L4C 6Z2",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "11/30/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.33",
+    "consid": "3400000",
+    "cash": "3400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "9185 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 Nov 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Wilfred Katz Ltd"
+    ],
+    "buyer_lines": [
+      "Great Land (Yonge 16th) Inc"
+    ],
+    "price_text": "$3,400,000"
+  }
+}

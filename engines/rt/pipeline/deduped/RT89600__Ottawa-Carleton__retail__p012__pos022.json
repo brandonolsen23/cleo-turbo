@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT89600",
+  "source_folder": "Ottawa-Carleton/retail/p012",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89600",
+      "source_folder": "Ottawa-Carleton/retail/p012",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p012/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "2675 INNES RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "13 Sep 2012",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1633702 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ignatios Kitzemiam",
+        "1365 Cyrville Rd",
+        "Ottawa, Ontario",
+        "K1B 3L7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Pentecostal Assemblies of Canada     905-542-7400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Hazzard",
+        "2450 Milltower Ct",
+        "Mississauga, Ontario",
+        "L5N 5Z6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - OF, Part Lot 13",
+      "As in Inst No N-454922",
+      "Except:",
+      "As in Inst No GL-68087",
+      "",
+      "PIN: 04398-0043",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "06 06 000 175 03400",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Pentecostal Assemblies of Canada",
+      "principal: $720,000   rate: 12.0% per annum",
+      "registered: 09/13/2012   due: 03/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT896/RT89600/0216_162624.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT896/RT89600/0216_162643.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT896/RT89600/0216_162645.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT896/RT89600/0216_162725.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "573 / 1141",
+      "rt_id": "RT89600"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "2675 INNES RD",
+    "postcode": "K1B 5N5",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "09/13/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "04398-0043",
+    "rollno": "06 06 000 175 03400"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "2675 INNES RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "13 Sep 2012",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1633702 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "The Pentecostal Assemblies of Canada"
+    ],
+    "price_text": "$630,000"
+  }
+}

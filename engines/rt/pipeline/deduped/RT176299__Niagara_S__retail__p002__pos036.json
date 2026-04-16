@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT176299",
+  "source_folder": "Niagara_S/retail/p002",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176299",
+      "source_folder": "Niagara_S/retail/p002",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p002/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "915 NIAGARA ST N"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "24 Mar 2023",
+      "price_text": "$5,146,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1322841 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7 Pickwick Place",
+        "Fonthill, Ontario",
+        "L0S 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "915 Niagara Street Inc     905-732-3673"
+      ],
+      "trade_name": "Mike Knapp Ford",
+      "contact_lines": [
+        "Attn: Michael Knapp",
+        "607 Niagara St",
+        "Welland, Ontario",
+        "L3C 1L9"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 231",
+      "Plan 59R-4873, Parts 2, 4 & 5",
+      "",
+      "PIN: 64074-0286",
+      "",
+      "6.70 acre"
+    ],
+    "arn_text": "27 19 010 001 01800",
+    "consideration_lines": [
+      "cash: $5,146,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $4,125,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/24/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1762/RT176299/0507_073447.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1762/RT176299/0507_073449.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1762/RT176299/0507_073536.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1762/RT176299/0507_073541.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1762/RT176299/air1.jpg",
+        "/assets/files/RT17/RT1762/RT176299/air2.jpg",
+        "/assets/files/RT17/RT1762/RT176299/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "87 / 324",
+      "rt_id": "RT176299"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "915 NIAGARA ST N",
+    "postcode": "L3C 1M4",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "03/24/2023",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "6.7",
+    "consid": "5146000",
+    "cash": "5146000",
+    "debt": "",
+    "note": "",
+    "pin": "64074-0286",
+    "rollno": "27 19 010 001 01800"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "915 NIAGARA ST N"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "24 Mar 2023",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "1322841 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "915 Niagara Street Inc"
+    ],
+    "price_text": "$5,146,000"
+  }
+}

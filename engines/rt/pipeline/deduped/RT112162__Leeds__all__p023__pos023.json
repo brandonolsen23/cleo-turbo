@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT112162",
+  "source_folder": "Leeds/all/p023",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT112162",
+      "source_folder": "Leeds/all/p023",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p023/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "1705 MOORE LINE"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "29 Oct 2015",
+      "price_text": "$1,701,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Moorco Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leslie Sutherland",
+        "RR 1",
+        "Mooretown, Ontario",
+        "N0N 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lots 13 & 14",
+      "As in Inst No L-823119",
+      "",
+      "PIN: 43302-0062",
+      "",
+      "197.33 acre"
+    ],
+    "arn_text": "38 05 220 030 03300",
+    "consideration_lines": [
+      "cash: $1,701,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1124 / 1916",
+      "rt_id": "RT112162"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "1705 MOORE LINE",
+    "postcode": "N0N 1M0",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "10/29/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "197.33",
+    "consid": "1701000",
+    "cash": "1701000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43302-0062",
+    "rollno": "38 05 220 030 03300"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "1705 MOORE LINE"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "29 Oct 2015",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Moorco Inc"
+    ],
+    "price_text": "$1,701,000"
+  }
+}

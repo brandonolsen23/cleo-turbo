@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT192909",
+  "source_folder": "Algoma/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192909",
+      "source_folder": "Algoma/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "317 NORTHERN AVE E"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "20 Jun 2025",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2472311 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1323 Waubanoka Way",
+        "Oakville, Ontario",
+        "L6M 3V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Rosewood Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Erica Seyler",
+        "317 Northern Ave E",
+        "Sault Ste Marie, Ontario",
+        "P6X 4H9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-660, Part Lot 46",
+      "As in Inst No T-148528",
+      "",
+      "PIN: 31557-0058",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "57 61 030 041 00500",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/20/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 29",
+      "rt_id": "RT192909"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "317 NORTHERN AVE E",
+    "postcode": "P6B 4H9",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "06/20/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "31557-0058",
+    "rollno": "57 61 030 041 00500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "317 NORTHERN AVE E"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "20 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2472311 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "The Rosewood Group Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

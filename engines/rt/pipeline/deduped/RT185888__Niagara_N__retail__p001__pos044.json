@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT185888",
+  "source_folder": "Niagara_N/retail/p001",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185888",
+      "source_folder": "Niagara_N/retail/p001",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p001/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "239 ST PAUL ST W"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "21 Jun 2024",
+      "price_text": "$2,370,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1422241 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "239 St Paul St W",
+        "St Catharines, Ontario",
+        "L2S 2E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "239 West STP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Bufalino",
+        "1871 King St, R 1",
+        "St Catharines, Ontario",
+        "L2R 6P7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7 - Grantham, Part Lot 21",
+      "As in Inst No RO-658095",
+      "",
+      "PIN: 46162-0103",
+      "",
+      "0.84 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $570,000     assumed/vtb debt: $1,800,000",
+      "",
+      "chargee: 1422241 Ontario Inc",
+      "principal: $1,800,000   rate: 0% per annum.",
+      "registered: 06/21/2024   due: 06/21/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185888/0720_071311.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185888/0720_071315.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185888/0720_071349.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185888/0720_071351.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185888/0720_071401.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185888/0720_071459.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1858/RT185888/air1.jpg",
+        "/assets/files/RT18/RT1858/RT185888/air2.jpg",
+        "/assets/files/RT18/RT1858/RT185888/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "45 / 307",
+      "rt_id": "RT185888"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "239 ST PAUL ST W",
+    "postcode": "L2S 2E4",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".84",
+    "consid": "2370000",
+    "cash": "570000",
+    "debt": "1800000",
+    "note": "",
+    "pin": "46162-0103",
+    "rollno": ""
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "239 ST PAUL ST W"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1422241 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "239 West STP Inc"
+    ],
+    "price_text": "$2,370,000"
+  }
+}

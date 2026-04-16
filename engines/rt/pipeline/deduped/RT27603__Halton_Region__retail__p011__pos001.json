@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT27603",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27603",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "546 TRAFALGAR AVE"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "30 Oct 2002",
+      "price_text": "$2,525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shadow Valley Developments Inc     416-449-1340"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Harry Rosenbaum",
+        "Great Gulf Group",
+        "250 Lesmill Rd",
+        "Don Mills, Ontario",
+        "M3B 2T5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2017748 Ontario Ltd     416-247-5096"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Won Han",
+        "10 Parson Ct",
+        "Toronto, Ontario",
+        "M6M 2N7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey;  7 units 12,000 sf @ $210"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-5105, Parts 33-35, 38 & 39",
+      "Except Plan 20R-11413, Part 1",
+      "",
+      "1.75 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT276/RT27603/photo.jpg"
+    },
+    "footer": {
+      "page_position": "502 / 613",
+      "rt_id": "RT27603"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "546 TRAFALGAR AVE",
+    "postcode": "",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "10/30/2002",
+    "desc": "Retail Plaza - 1 storey;  7 units 12,000 sf @ $210",
+    "bldg": "12,000 sf",
+    "acreage": "1.75",
+    "consid": "2525000",
+    "cash": "2525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "546 TRAFALGAR AVE"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "30 Oct 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey;  7 units 12,000 sf @ $210",
+    "seller_lines": [
+      "Shadow Valley Developments Inc"
+    ],
+    "buyer_lines": [
+      "2017748 Ontario Ltd"
+    ],
+    "price_text": "$2,525,000"
+  }
+}

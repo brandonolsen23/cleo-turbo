@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT179711",
+  "source_folder": "Metro_Toronto/retail/p016",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179711",
+      "source_folder": "Metro_Toronto/retail/p016",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p016/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "1464 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 Aug 2023",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Figaro Gate Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Niloufar Shafiei",
+        "228 Carlton St",
+        "Toronto, Ontario",
+        "M5A 2L1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-588, Part Lot 4",
+      "",
+      "PIN: 06463-0021",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 01 012 180 03000",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179711/0820_111558.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179711/0820_111603.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179711/0820_111607.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179711/0820_111621.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "765 / 4952",
+      "rt_id": "RT179711"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "1464 KINGSTON RD",
+    "postcode": "M1N 1R6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "08/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "06463-0021",
+    "rollno": "19 01 012 180 03000"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "1464 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Figaro Gate Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

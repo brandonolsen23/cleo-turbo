@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT180500",
+  "source_folder": "Lambton/office/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180500",
+      "source_folder": "Lambton/office/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/office/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "302 CHRISTINA ST N"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "19 Sep 2023",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "JSquared Real Estate Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Julie Jenkins",
+        "302 Christina St N",
+        "Sarnia, Ontario",
+        "N7T 5V5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-3281, Part 1",
+      "",
+      "PIN: 43267-0022",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "38 29 400 001 12500",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/19/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 34",
+      "rt_id": "RT180500"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "302 CHRISTINA ST N",
+    "postcode": "N7T 5V5",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "09/19/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "43267-0022",
+    "rollno": "38 29 400 001 12500"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "302 CHRISTINA ST N"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "19 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "JSquared Real Estate Inc"
+    ],
+    "price_text": "$950,000"
+  }
+}

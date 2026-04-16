@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT21233",
+  "source_folder": "Metro_Toronto/multifamily/p111",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21233",
+      "source_folder": "Metro_Toronto/multifamily/p111",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p111/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "884 AVENUE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Apr 2001",
+      "price_text": "$613,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pak & Debbie Kam"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11 William Carson Cres, Ste 205",
+        "Toronto, Ontario",
+        "M2P 2G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "David & Grace Somers     905-770-3419"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Bridewell Cres",
+        "Richmond Hill, Ontario",
+        "L4C 9C3"
+      ]
+    },
+    "description_lines": [
+      "TriPlex - 3 storey; 3 units @ $204,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 645-E, Lot 19",
+      "",
+      "W side 20m N of Tranmer Ave"
+    ],
+    "arn_text": "19 04 114 250 04200",
+    "consideration_lines": [
+      "cash: $260,351     assumed/vtb debt: $352,649"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT212/RT21233/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5523 / 6031",
+      "rt_id": "RT21233"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "884 AVENUE RD",
+    "postcode": "M5P 2K6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/30/2001",
+    "desc": "TriPlex - 3 storey; 3 units @ $204,333",
+    "bldg": "3 units",
+    "acreage": "",
+    "consid": "613000",
+    "cash": "260351",
+    "debt": "352649",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 114 250 04200"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "884 AVENUE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Apr 2001",
+    "note": "",
+    "description": "TriPlex - 3 storey; 3 units @ $204,333",
+    "seller_lines": [
+      "Pak & Debbie Kam"
+    ],
+    "buyer_lines": [
+      "David & Grace Somers"
+    ],
+    "price_text": "$613,000"
+  }
+}

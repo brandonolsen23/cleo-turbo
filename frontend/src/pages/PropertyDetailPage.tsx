@@ -21,8 +21,9 @@ import {
   MapPin, ArrowSquareOut, User, Tag, ChartBar, Image as ImageIcon, LinkedinLogo,
 } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
-import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
+import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership, formatMailingAddress } from "../lib/utils";
 import { categoryColor, propertyTypeColor, propertyTypeLabel, getRadixHex } from "../lib/theme";
+import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import type { PropertyDetail, PropertyTransaction, GwSaleHistory } from "../types";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
@@ -219,6 +220,11 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
                     <Phone size={12} /> {formatPhone(t.seller_phone)}
                   </a>
                 )}
+                {formatMailingAddress(t.seller_mailing_address) && (
+                  <div className="text-[12px] mt-2 pt-1.5 border-t border-[var(--gray-4)]" style={{ color: "var(--gray-9)" }}>
+                    ✉ {formatMailingAddress(t.seller_mailing_address)}
+                  </div>
+                )}
               </div>
             </div>
 
@@ -266,6 +272,11 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
                      style={{ color: "var(--accent-11)" }}>
                     <Phone size={12} /> {formatPhone(t.buyer_phone)}
                   </a>
+                )}
+                {formatMailingAddress(t.buyer_mailing_address) && (
+                  <div className="text-[12px] mt-2 pt-1.5 border-t border-[var(--gray-4)]" style={{ color: "var(--gray-9)" }}>
+                    ✉ {formatMailingAddress(t.buyer_mailing_address)}
+                  </div>
                 )}
               </div>
             </div>
@@ -327,7 +338,10 @@ function TransactionRow({ t, isLatest }: { t: PropertyTransaction; isLatest: boo
           )}
 
           <div className="mt-3 flex items-center justify-between">
-            <Badge size="1" variant="outline" color="gray">{t.source_id}</Badge>
+            <div className="flex items-center gap-2">
+              <Badge size="1" variant="outline" color="gray">{t.source_id}</Badge>
+              {t.source_id?.startsWith("RT") && <SourceHtmlButton sourceId={t.source_id} />}
+            </div>
             <Button size="1" variant="ghost" onClick={() => navigate(`/transactions/${t.source_id}`)}>
               View Full Record <ArrowSquareOut size={12} className="ml-1" />
             </Button>

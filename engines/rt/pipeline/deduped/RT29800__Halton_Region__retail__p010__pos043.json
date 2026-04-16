@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT29800",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29800",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "2421 NEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "17 Apr 2003",
+      "price_text": "$930,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Loren Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ruth Putter",
+        "126 Shaftsbury St",
+        "Downsview, Ontario",
+        "M3H 5M1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2022798 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Seong-Woo Shin",
+        "561 Harmony Ave",
+        "Burlington, Ontario",
+        "L7N 3S7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-15030, Part 1"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $930,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT298/RT29800/photo.jpg"
+    },
+    "footer": {
+      "page_position": "494 / 613",
+      "rt_id": "RT29800"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "2421 NEW ST",
+    "postcode": "L7R 1K1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/17/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "930000",
+    "cash": "930000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "2421 NEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "17 Apr 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Loren Developments Ltd"
+    ],
+    "buyer_lines": [
+      "2022798 Ontario Inc"
+    ],
+    "price_text": "$930,000"
+  }
+}

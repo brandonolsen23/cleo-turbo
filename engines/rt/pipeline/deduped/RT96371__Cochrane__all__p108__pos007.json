@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT96371",
+  "source_folder": "Cochrane/all/p108",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT96371",
+      "source_folder": "Cochrane/all/p108",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p108/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "3818 RUSSELL RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "14 Nov 2013",
+      "price_text": "$567,494",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Aldus Capital Corp     613-723-4567"
+      ],
+      "trade_name": "Francis Fuels Ltd",
+      "contact_lines": [
+        "Attn: Daniel Francis",
+        "28 Concourse Gate, Ste 105",
+        "Ottawa, Ontario",
+        "K2E 7T7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Francis Canada Real Estate Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Francis",
+        "3818 Russell Rd",
+        "Ottawa, Ontario",
+        "K1G 3N2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - RF, Part Lot 2",
+      "Plan 5R-13652, Part 2",
+      "",
+      "PIN: 04351-0141",
+      "",
+      "3.01 acre"
+    ],
+    "arn_text": "06 06 000 080 02301",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $167,494",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $400,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 11/14/2013   due: on demand",
+      "",
+      "chargee: Aldus Capital Corp",
+      "principal: $167,494   rate: 3.5% per annum.",
+      "registered: 11/14/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5358 / 10920",
+      "rt_id": "RT96371"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "3818 RUSSELL RD",
+    "postcode": "K1G 3N2",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "11/14/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.01",
+    "consid": "567494",
+    "cash": "400000",
+    "debt": "167494",
+    "note": "Related Parties",
+    "pin": "04351-0141",
+    "rollno": "06 06 000 080 02301"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "3818 RUSSELL RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "14 Nov 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Aldus Capital Corp"
+    ],
+    "buyer_lines": [
+      "Francis Canada Real Estate Inc"
+    ],
+    "price_text": "$567,494"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT41999",
+  "source_folder": "Metro_Toronto/multifamily/p089",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41999",
+      "source_folder": "Metro_Toronto/multifamily/p089",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p089/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "591 HURON ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 May 2005",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Youthdale Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dan Hagler",
+        "160 Shorting Rd",
+        "Toronto, Ontario",
+        "M1S 3S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-6",
+      "Part Lot 207, E/S Huron St",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 052 470 00200",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT419/RT41999/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4405 / 6031",
+      "rt_id": "RT41999"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "591 HURON ST",
+    "postcode": "M5R 2R8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 470 00200"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "591 HURON ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 May 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Youthdale Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$650,000"
+  }
+}

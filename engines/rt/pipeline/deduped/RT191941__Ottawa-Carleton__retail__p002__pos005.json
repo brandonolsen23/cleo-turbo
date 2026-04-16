@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT191941",
+  "source_folder": "Ottawa-Carleton/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191941",
+      "source_folder": "Ottawa-Carleton/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "578 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "30 Apr 2025",
+      "price_text": "$1,360,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "578 Bank Street Holdings Inc     613-831-6223"
+      ],
+      "trade_name": "McDonald Brothers Construction Inc",
+      "contact_lines": [
+        "Attn: Allessandro Guarna",
+        "262 Westbrook Rd",
+        "Ottawa, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 71572,",
+      "Part Lots 18 & 19, W Bank St",
+      "As in Inst No CR-615463",
+      "",
+      "PIN: 04134-0123",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "06 14 052 301 71500",
+    "consideration_lines": [
+      "cash: $1,360,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191941/0510_082030.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191941/0510_082031.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191941/0510_082047.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191941/0510_082051.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191941/0510_082054.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 1141",
+      "rt_id": "RT191941"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "578 BANK ST",
+    "postcode": "K1S 3T3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "04/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1360000",
+    "cash": "1360000",
+    "debt": "",
+    "note": "",
+    "pin": "04134-0123",
+    "rollno": "06 14 052 301 71500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "578 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "30 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "578 Bank Street Holdings Inc"
+    ],
+    "price_text": "$1,360,000"
+  }
+}

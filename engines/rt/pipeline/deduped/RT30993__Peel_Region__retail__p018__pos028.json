@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT30993",
+  "source_folder": "Peel_Region/retail/p018",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30993",
+      "source_folder": "Peel_Region/retail/p018",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p018/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "589 NORTH SERVICE RD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "18 Jul 2003",
+      "price_text": "$937,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "562782 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Chan",
+        "32 Breen Cres",
+        "Toronto, Ontario",
+        "M2P 1Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2029296 Ontario Inc     905-315-9361"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mijin Kim",
+        "4123 Vermont Cres",
+        "Burlington, Ontario",
+        "L7M 4A8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza with Gas Bar"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-15814",
+      "Parts 1, 2 & 8",
+      "",
+      "NE corner at Asta Dr",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "21 05 010 054 22400",
+    "consideration_lines": [
+      "cash: $197,500     assumed/vtb debt: $740,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT309/RT30993/photo.jpg"
+    },
+    "footer": {
+      "page_position": "879 / 1087",
+      "rt_id": "RT30993"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "589 NORTH SERVICE RD",
+    "postcode": "L5A 1B2",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "07/18/2003",
+    "desc": "Retail Plaza with Gas Bar",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "937500",
+    "cash": "197500",
+    "debt": "740000",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 010 054 22400"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "589 NORTH SERVICE RD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "18 Jul 2003",
+    "note": "",
+    "description": "Retail Plaza with Gas Bar",
+    "seller_lines": [
+      "562782 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2029296 Ontario Inc"
+    ],
+    "price_text": "$937,500"
+  }
+}

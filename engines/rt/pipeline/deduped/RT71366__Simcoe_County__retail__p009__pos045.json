@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT71366",
+  "source_folder": "Simcoe_County/retail/p009",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71366",
+      "source_folder": "Simcoe_County/retail/p009",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p009/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "290 YONGE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "16 Mar 2010",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Anjay Ltd",
+        "Delta Equipment Ltd     905-893-1459"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jack Wright",
+        "9711 Huntington Rd",
+        "Kleinburg, Ontario",
+        "L0J 1C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "BDS Capital Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Douglas Selders",
+        "2 Mills Circle, RR 1",
+        "Midhurst, Ontario",
+        "L0L 1X0"
+      ]
+    },
+    "description_lines": [
+      "Last transferred in April 2006 for $1,200,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 14, Part Lot 10",
+      "Plan 51R-23470, Part 1",
+      "",
+      "PIN: 58749-0284",
+      "",
+      "1.66 acre"
+    ],
+    "arn_text": "43 42 050 002 18600",
+    "consideration_lines": [
+      "cash: $450,000     assumed/vtb debt: $1,150,000",
+      "",
+      "chargee: Anjay Ltd",
+      "Delta Equipment Ltd",
+      "principal: $1,150,000   rate: 5.0% per annum",
+      "registered: 03/16/2010   due: 03/16/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT713/RT71366/0401_091825.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT713/RT71366/0401_091917.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT713/RT71366/air1.jpg",
+        "/assets/files/RT7/RT713/RT71366/air2.jpg",
+        "/assets/files/RT7/RT713/RT71366/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "446 / 712",
+      "rt_id": "RT71366"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "290 YONGE ST",
+    "postcode": "L4N 4C7",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "03/16/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.66",
+    "consid": "1600000",
+    "cash": "450000",
+    "debt": "1150000",
+    "note": "",
+    "pin": "58749-0284",
+    "rollno": "43 42 050 002 18600"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "290 YONGE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "16 Mar 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Anjay Ltd",
+      "Delta Equipment Ltd"
+    ],
+    "buyer_lines": [
+      "BDS Capital Ltd"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197383",
+  "source_folder": "Durham_Region/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197383",
+      "source_folder": "Durham_Region/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "45 BALDWIN ST",
+        "47 BALDWIN ST"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "30 Jan 2026",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "9618015 Canada Inc",
+        "9784683 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "347 Derrydale Dr",
+        "Mississauga, Ontario",
+        "L5W 0C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000559191 Ontario Ltd",
+        "2379604 Ontario Ltd     905-277-4992"
+      ],
+      "trade_name": "Pizzaiolo Gourmet Pizza Inc",
+      "contact_lines": [
+        "Attn: Luigi Petrella",
+        "2375 Tedlo St, Unit 5",
+        "Mississauga, Ontario",
+        "L5A 3W7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-5265, Parts 1-3",
+      "Plan H-50052 - Whitby,",
+      "Part Lot 56",
+      "As in Inst No D-98106",
+      "",
+      "PIN: 26574-0037 +",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "18 09 010 038 03700 +",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 506",
+      "rt_id": "RT197383"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "45 BALDWIN ST, 47 BALDWIN ST",
+    "postcode": "L1M 1A2",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "01/30/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "26574-0037+",
+    "rollno": "18 09 010 038 03700+"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "45 BALDWIN ST",
+      "47 BALDWIN ST"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "30 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "9618015 Canada Inc",
+      "9784683 Canada Inc"
+    ],
+    "buyer_lines": [
+      "1000559191 Ontario Ltd",
+      "2379604 Ontario Ltd"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

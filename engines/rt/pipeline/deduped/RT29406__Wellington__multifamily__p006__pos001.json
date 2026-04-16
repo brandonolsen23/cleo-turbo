@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT29406",
+  "source_folder": "Wellington/multifamily/p006",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29406",
+      "source_folder": "Wellington/multifamily/p006",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p006/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "132 BAGOT ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "02 Dec 2002",
+      "price_text": "$599,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "IRF Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ian Farley",
+        "115 Suffolk St W",
+        "Guelph, Ontario",
+        "N1H 2J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lurline & Fitsbert Henriques"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "132 Bagot St",
+        "Guelph, Ontario",
+        "N1H 5T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 334, Lot 20",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "23 08 040 012 03500",
+    "consideration_lines": [
+      "cash: $599,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT294/RT29406/photo.jpg"
+    },
+    "footer": {
+      "page_position": "252 / 295",
+      "rt_id": "RT29406"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "132 BAGOT ST",
+    "postcode": "N1H 5T9",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "12/02/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "599500",
+    "cash": "599500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 040 012 03500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "132 BAGOT ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "02 Dec 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "IRF Properties Inc"
+    ],
+    "buyer_lines": [
+      "Lurline & Fitsbert Henriques"
+    ],
+    "price_text": "$599,500"
+  }
+}

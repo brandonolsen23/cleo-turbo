@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT33075",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33075",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "245 STRASBURG RD"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "17 Dec 2003",
+      "price_text": "$22,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1427852 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Markoff",
+        "10 Queen Elizabeth Blvd, Unit 2",
+        "Toronto, Ontario",
+        "M8Z 1L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lee-Mar Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Samuel Sable",
+        "439 Spadina Rd, Suite 310",
+        "Toronto, Ontario",
+        "M5P 3M6"
+      ]
+    },
+    "description_lines": [
+      "New Retail Plaza - 186,000 sf @ $121",
+      "",
+      "Tenants include Zellers, Home Outfitters (Hudson's Bay), Staples Business Depot & CIBC."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-12520, Parts 10-14",
+      "Except Plan 58R-13529, Parts 1-3",
+      "",
+      "14.30 acre"
+    ],
+    "arn_text": "30 12 040 027 19000",
+    "consideration_lines": [
+      "cash: $7,715,167     assumed/vtb debt: $14,834,833"
+    ],
+    "broker_lines": [
+      "Forest Hill RE: Roman Gofman, 416-488-8140 x404"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT330/RT33075/photo.jpg"
+    },
+    "footer": {
+      "page_position": "632 / 752",
+      "rt_id": "RT33075"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "245 STRASBURG RD",
+    "postcode": "N2E 3W7",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/17/2003",
+    "desc": "New Retail Plaza - 186,000 sf @ $121",
+    "bldg": "186,000 sf",
+    "acreage": "14.3",
+    "consid": "22550000",
+    "cash": "7715167",
+    "debt": "14834833",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 027 19000"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "245 STRASBURG RD"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "17 Dec 2003",
+    "note": "",
+    "description": "New Retail Plaza - 186,000 sf @ $121",
+    "seller_lines": [
+      "1427852 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Lee-Mar Developments Ltd"
+    ],
+    "price_text": "$22,550,000"
+  }
+}

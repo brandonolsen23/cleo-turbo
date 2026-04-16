@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT90009",
+  "source_folder": "Metro_Toronto/retail/p041",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT90009",
+      "source_folder": "Metro_Toronto/retail/p041",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p041/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "401 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "08 Jan 2013",
+      "price_text": "$6,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Open Hearth Grill Inc     905-881-6835"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Joel Ulster",
+        "61 Quail Valley Lane",
+        "Thornhill, Ontario",
+        "L3T 4R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2352434 Ontario Inc     416-687-6700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rob Kumer",
+        "c/o KingSett Real Estate Growth LP No 4",
+        "Toronto-Dominion Centre,",
+        "TD Bank Tower, PO Box 4400",
+        "66 Wellington St W",
+        "Toronto, Ontario",
+        "M5K 1H6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22A",
+      "Part Lot 38, E/S Yonge St",
+      "As in Inst No CT-88180",
+      "",
+      "PIN: 21102-0206",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 066 680 00200",
+    "consideration_lines": [
+      "cash: $6,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $40,000,000   rate: 25.0% per annum",
+      "registered: 01/08/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT900/RT90009/0127_090309.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT900/RT90009/0127_090329.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT900/RT90009/0127_090343.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT900/RT90009/0127_090451.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT900/RT90009/0127_090515.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2031 / 4952",
+      "rt_id": "RT90009"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "401 YONGE ST",
+    "postcode": "M5B 1S9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/08/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "6650000",
+    "cash": "6650000",
+    "debt": "",
+    "note": "",
+    "pin": "21102-0206",
+    "rollno": "19 04 066 680 00200"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "401 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "08 Jan 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Open Hearth Grill Inc"
+    ],
+    "buyer_lines": [
+      "2352434 Ontario Inc"
+    ],
+    "price_text": "$6,650,000"
+  }
+}

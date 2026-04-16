@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT150429",
+  "source_folder": "Cochrane/all/p050",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150429",
+      "source_folder": "Cochrane/all/p050",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p050/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "2025 THISTLE CRES"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "16 Mar 2020",
+      "price_text": "$721,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "The Onpoint Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Mohamed Berjawi",
+        "2025 Thistle Cres",
+        "Ottawa, Ontario",
+        "K1H 5P4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 811, Lot 367",
+      "",
+      "PIN: 04196-0183",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "06 14 105 801 32800",
+    "consideration_lines": [
+      "cash: $721,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Advanced Mortgage Investment Corp",
+      "principal: $620,781   rate: 6.99% per annum.",
+      "registered: 03/16/2020   due: 04/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2463 / 10920",
+      "rt_id": "RT150429"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "2025 THISTLE CRES",
+    "postcode": "K1H 5P4",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "03/16/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "721000",
+    "cash": "721000",
+    "debt": "",
+    "note": "",
+    "pin": "04196-0183",
+    "rollno": "06 14 105 801 32800"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "2025 THISTLE CRES"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "16 Mar 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "The Onpoint Group Ltd"
+    ],
+    "price_text": "$721,000"
+  }
+}

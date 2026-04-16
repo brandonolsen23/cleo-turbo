@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT40334",
+  "source_folder": "York_Region/retail/p016",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40334",
+      "source_folder": "York_Region/retail/p016",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "10815 YONGE ST",
+        "10825 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "18 Feb 2005",
+      "price_text": "$1,595,801",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Tony Totera",
+        "Totera Meats"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "245 Eddystone Ave",
+        "Toronto, Ontario",
+        "M3N 1H8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2012002 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Totera",
+        "E. Gino Totera",
+        "Barrister & Solicitor",
+        "10825 Yonge St, Ste 200",
+        "Richmond Hill, Ontario",
+        "L4C 3E3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 521",
+      "As in Inst No R-379835",
+      "",
+      "1.08 acre"
+    ],
+    "arn_text": "19 38 010 010 98301",
+    "consideration_lines": [
+      "cash: $1,595,801     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Trust Corporation of Canada",
+      "principal: $1,300,000   rate: 18.0% per annum.",
+      "registered: 02/18/2005   due: 03/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT403/RT40334/air1.jpg",
+        "/assets/files/RT4/RT403/RT40334/air2.jpg",
+        "/assets/files/RT4/RT403/RT40334/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "753 / 984",
+      "rt_id": "RT40334"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "10815 YONGE ST, 10825 YONGE ST",
+    "postcode": "L4C 3E3",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "02/18/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.08",
+    "consid": "1595801",
+    "cash": "1595801",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 38 010 010 98301"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "10815 YONGE ST",
+      "10825 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "18 Feb 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Tony Totera",
+      "Totera Meats"
+    ],
+    "buyer_lines": [
+      "2012002 Ontario Ltd"
+    ],
+    "price_text": "$1,595,801"
+  }
+}

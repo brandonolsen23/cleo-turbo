@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT46781",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46781",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "3483 - 3551 PORTAGE RD"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "31 Jan 2006",
+      "price_text": "$3,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Leslie Construction and Investment Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Edward Weisz",
+        "625 Cochrane Dr, Ste 801",
+        "Markham, Ontario",
+        "L3R 9R9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CNM Inc     905-357-6037"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mario Carusella",
+        "7111 Ridgewood Cres",
+        "Niagara Falls, Ontario",
+        "L2J 2C2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 61",
+      "Plan 204",
+      "Lots 3-5 & Part Lot 1",
+      "As in Inst Nos:",
+      "AA-71142, AA-10129 & RO-662659",
+      "",
+      "3.30 acre"
+    ],
+    "arn_text": "27 25 040 011 13400",
+    "consideration_lines": [
+      "cash: $3,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Effort Trust Co",
+      "principal: $2,750,000   rate: 6.0% per annum",
+      "registered: 01/31/2006   due: 02/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT467/RT46781/air1.jpg",
+        "/assets/files/RT4/RT467/RT46781/air2.jpg",
+        "/assets/files/RT4/RT467/RT46781/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT467/RT46781/photo.jpg"
+    },
+    "footer": {
+      "page_position": "253 / 324",
+      "rt_id": "RT46781"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "3483 - 3551 PORTAGE RD",
+    "postcode": "L2J 2K5",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "01/31/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "3.3",
+    "consid": "3900000",
+    "cash": "3900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 25 040 011 13400"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "3483 - 3551 PORTAGE RD"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "31 Jan 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Leslie Construction and Investment Ltd"
+    ],
+    "buyer_lines": [
+      "CNM Inc"
+    ],
+    "price_text": "$3,900,000"
+  }
+}

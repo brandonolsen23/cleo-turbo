@@ -1,0 +1,134 @@
+{
+  "rt_id": "RT18255",
+  "source_folder": "Lambton/retail/p003",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18255",
+      "source_folder": "Lambton/retail/p003",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p003/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "4141 - 4151 PETROLIA ST"
+      ],
+      "city_region": "Petrolia : Lambton",
+      "date_text": "30 Apr 1999",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Carfer Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Venancio Ferreira",
+        "514 Palmerston Blvd",
+        "Toronto, Ontario",
+        "M6G 2P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1140941 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Delwar Husain",
+        "7042 Banton Promenade",
+        "Mississauga, Ontario",
+        "L5N 5E8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-4903, Parts 1-7",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "38 19 000 040 10800",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Homestead Developments Corp",
+      "Randall Kemp",
+      "principal: $900,000   rate: 6.0% per annum.",
+      "registered: 01/10/2024   due: 01/10/2029",
+      "",
+      "chargee: 1621732 Ontario Inc",
+      "principal: $1,050,000   rate: 6.0% per annum.",
+      "registered: 12/20/2023   due: 12/20/2025",
+      "",
+      "Named Individual(s)",
+      "principal: $660,000   rate: 10.99% per annum.",
+      "registered: 12/21/2023   due: 01/01/2025",
+      "",
+      "chargee: James W Lapointe Motor Holdings Inc",
+      "principal: $1,035,000   rate: 3.0% per annum.",
+      "registered: 12/21/2023   due: 12/21/2027",
+      "",
+      "chargee: James W Lapointe Motor Holdings Inc",
+      "principal: $1,060,050   rate: 1.0% per annum.",
+      "registered: 12/21/2023   due: 12/21/2027",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,000,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 12/19/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "103 / 106",
+      "rt_id": "RT18255"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "4141 - 4151 PETROLIA ST",
+    "postcode": "N0N 1R0",
+    "municipality": "Petrolia",
+    "region": "Lambton",
+    "date": "04/30/1999",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".52",
+    "consid": "925000",
+    "cash": "925000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "38 19 000 040 10800"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "4141 - 4151 PETROLIA ST"
+    ],
+    "city_region": "Petrolia : Lambton",
+    "date_text": "30 Apr 1999",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Carfer Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1140941 Ontario Inc"
+    ],
+    "price_text": "$925,000"
+  }
+}

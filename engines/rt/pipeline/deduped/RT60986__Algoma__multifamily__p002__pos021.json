@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT60986",
+  "source_folder": "Algoma/multifamily/p002",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60986",
+      "source_folder": "Algoma/multifamily/p002",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/multifamily/p002/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "43 LEWIS RD"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "10 Oct 2007",
+      "price_text": "$960,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ocharp Enterprises Ltd     705-759-9302"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Clifford Sharp",
+        "118 Centennial Ave",
+        "Sault Ste Marie, Ontario",
+        "P6A 5B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Interrent Sault Ste Marie No 2 Inc     416-769-0769"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Newman",
+        "268 Royal York Rd, 2nd Flr",
+        "Toronto, Ontario",
+        "M8V 2V9"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 22 units @ $43,636",
+      "",
+      "10-1bdrm 6-2bdrm 6-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-428, Lots 70 & 71",
+      "As in Inst No T-369850",
+      "",
+      "0.80 acre"
+    ],
+    "arn_text": "57 61 010 015 05000",
+    "consideration_lines": [
+      "cash: $880,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "72 / 78",
+      "rt_id": "RT60986"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "43 LEWIS RD",
+    "postcode": "P6A 4G3",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "10/10/2007",
+    "desc": "Apartment Bldg - 3 storey; 22 units @ $43,636",
+    "bldg": "22 units",
+    "acreage": ".8",
+    "consid": "960000",
+    "cash": "880000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "57 61 010 015 05000"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "43 LEWIS RD"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "10 Oct 2007",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 22 units @ $43,636",
+    "seller_lines": [
+      "Ocharp Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "Interrent Sault Ste Marie No 2 Inc"
+    ],
+    "price_text": "$960,000"
+  }
+}

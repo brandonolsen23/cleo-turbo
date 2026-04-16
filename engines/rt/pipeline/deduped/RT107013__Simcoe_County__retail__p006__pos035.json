@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT107013",
+  "source_folder": "Simcoe_County/retail/p006",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT107013",
+      "source_folder": "Simcoe_County/retail/p006",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p006/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "4 HOLLAND ST W"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "13 Mar 2015",
+      "price_text": "$675,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Kawartha Credit Union Ltd     705-743-3643"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: RM (Bob) Brown",
+        "1054 Monaghan Rd",
+        "PO Box 116",
+        "Peterborough, Ontario",
+        "K9J 6Y5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2456076 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gerry Lemos",
+        "208 Barrie St",
+        "Bradford, Ontario",
+        "L3Z 1R6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-6861, Part 1",
+      "",
+      "PIN: 58018-0094",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "43 12 010 001 22200",
+    "consideration_lines": [
+      "cash: $675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Vision 3000 Corp.",
+      "principal: $540,000   rate: 10.0% per annum. To automatically renew for 6 months at the previous term rate plus 3.0% per annum.",
+      "registered: 03/13/2015   due: 04/13/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107013/0619_071438.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107013/0619_071502.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107013/0619_071507.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107013/0619_071555.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "286 / 712",
+      "rt_id": "RT107013"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "4 HOLLAND ST W",
+    "postcode": "",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "03/13/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "675000",
+    "cash": "675000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "58018-0094",
+    "rollno": "43 12 010 001 22200"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "4 HOLLAND ST W"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "13 Mar 2015",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Kawartha Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "2456076 Ontario Ltd"
+    ],
+    "price_text": "$675,000"
+  }
+}

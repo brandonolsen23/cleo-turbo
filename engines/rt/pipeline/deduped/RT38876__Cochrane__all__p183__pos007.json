@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT38876",
+  "source_folder": "Cochrane/all/p183",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38876",
+      "source_folder": "Cochrane/all/p183",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p183/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "500 ISLAND PARK DR"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Nov 2004",
+      "price_text": "$772,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1010547 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Monika Fleischer",
+        "28 Maplehurst Ave",
+        "Ottawa, Ontario",
+        "K2H 9G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 408, Part Block A",
+      "As in Inst No NS-234505",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "06 14 084 401 27200",
+    "consideration_lines": [
+      "cash: $772,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9108 / 10920",
+      "rt_id": "RT38876"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "500 ISLAND PARK DR",
+    "postcode": "K1Y 0B5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/15/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "772500",
+    "cash": "772500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 084 401 27200"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "500 ISLAND PARK DR"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Nov 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1010547 Ontario Inc"
+    ],
+    "price_text": "$772,500"
+  }
+}

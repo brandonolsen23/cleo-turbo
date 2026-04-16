@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT196602",
+  "source_folder": "Ottawa-Carleton/retail/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196602",
+      "source_folder": "Ottawa-Carleton/retail/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1168 MAPLE AVE"
+      ],
+      "city_region": "Manotick : Ottawa-Carleton",
+      "date_text": "15 Jan 2026",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001212918 Ontario Inc     613-822-1867"
+      ],
+      "trade_name": "Tomlinson Group",
+      "contact_lines": [
+        "Attn: Rob Pierce",
+        "100 Citigate Dr",
+        "Ottawa, Ontario",
+        "K2J 6K7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 771, Lots 3-6",
+      "",
+      "PIN: 04587-0028",
+      "",
+      "1.71 acre"
+    ],
+    "arn_text": "06 18 030 810 14000",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 1141",
+      "rt_id": "RT196602"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1168 MAPLE AVE",
+    "postcode": "K4M 0P7",
+    "municipality": "Manotick",
+    "region": "Ottawa-Carleton",
+    "date": "01/15/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.71",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "04587-0028",
+    "rollno": "06 18 030 810 14000"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1168 MAPLE AVE"
+    ],
+    "city_region": "Manotick : Ottawa-Carleton",
+    "date_text": "15 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001212918 Ontario Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT188301",
+  "source_folder": "Kitchener-Waterloo/retail/p002",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188301",
+      "source_folder": "Kitchener-Waterloo/retail/p002",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p002/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "1196 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "29 Oct 2024",
+      "price_text": "$1,420,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001013734 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jawed Qadami",
+        "316 Broadacre Dr",
+        "Kitchener, Ontario",
+        "N2R 0S6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 231, Lot 1",
+      "",
+      "PIN: 22577-0007",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "30 12 030 001 09300",
+    "consideration_lines": [
+      "cash: $1,420,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $800,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/29/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "70 / 752",
+      "rt_id": "RT188301"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "1196 KING ST E",
+    "postcode": "N2G 2N4",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "10/29/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "1420000",
+    "cash": "1420000",
+    "debt": "",
+    "note": "",
+    "pin": "22577-0007",
+    "rollno": "30 12 030 001 09300"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "1196 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "29 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001013734 Ontario Inc"
+    ],
+    "price_text": "$1,420,000"
+  }
+}

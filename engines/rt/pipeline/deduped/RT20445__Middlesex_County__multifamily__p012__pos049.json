@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20445",
+  "source_folder": "Middlesex_County/multifamily/p012",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20445",
+      "source_folder": "Middlesex_County/multifamily/p012",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/multifamily/p012/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "332 - 338 RICHMOND ST",
+        "343 - 349 RICHMOND ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "26 Jan 2001",
+      "price_text": "$1,500,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "CIBC Mortgage Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Adam",
+        "750 Lawrence Ave W, Ste W-2",
+        "Toronto, Ontario",
+        "M6A 1C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Farhi Holdings Corp     519-645-6666"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Shmuel Farhi",
+        "484 Richmond St, Ste 200",
+        "London, Ontario",
+        "N6A 3E6"
+      ]
+    },
+    "description_lines": [
+      "332-338: Retail/Res Bldg",
+      "343-349: Com/Multi-Res"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-7001, Part 1",
+      "Plan 33R-5764, Parts 2, 7-9",
+      "",
+      "0.61 acre"
+    ],
+    "arn_text": "39 36 060 050 16800 +",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT204/RT20445/photo.jpg"
+    },
+    "footer": {
+      "page_position": "600 / 663",
+      "rt_id": "RT20445"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "332 - 338 RICHMOND ST, 343 - 349 RICHMOND ST",
+    "postcode": "N6A 3C3",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "01/26/2001",
+    "desc": "332-338: Retail/Res Bldg 343-349: Com/Multi-Res",
+    "bldg": "",
+    "acreage": ".61",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "39 36 060 050 16800+"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "332 - 338 RICHMOND ST",
+      "343 - 349 RICHMOND ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "26 Jan 2001",
+    "note": "Power of Sale",
+    "description": "332-338: Retail/Res Bldg343-349: Com/Multi-Res",
+    "seller_lines": [
+      "CIBC Mortgage Corp"
+    ],
+    "buyer_lines": [
+      "Farhi Holdings Corp"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

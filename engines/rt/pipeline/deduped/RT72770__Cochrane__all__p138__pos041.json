@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT72770",
+  "source_folder": "Cochrane/all/p138",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72770",
+      "source_folder": "Cochrane/all/p138",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p138/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "102 SENTINEL PINE WAY"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "10 Jun 2010",
+      "price_text": "$561,014",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "1414782 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Douglas Gadient",
+        "114 Arbourbrook Blvd, RR 2",
+        "Ottawa, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-1142, Lot 2",
+      "Plan 4M-1142, Blocks 33 & 34",
+      "",
+      "PIN: 04538-0360 +",
+      "",
+      "20.64 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $561,014     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6892 / 10920",
+      "rt_id": "RT72770"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "102 SENTINEL PINE WAY",
+    "postcode": "K0A 1L0",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/10/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": "20.64",
+    "consid": "561014",
+    "cash": "561014",
+    "debt": "",
+    "note": "% Interest",
+    "pin": "04538-0360+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "102 SENTINEL PINE WAY"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "10 Jun 2010",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "1414782 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$561,014"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT43330",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43330",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "466 - 468 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Jul 2005",
+      "price_text": "$2,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cedvor Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Samuel Lam",
+        "One Palace Pier Ct",
+        "Suite 3801",
+        "Toronto, Ontario",
+        "M8V 3W9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1665545 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Timothy Ng",
+        "1210 Don Mills Rd, Ste 118",
+        "North York, Ontario",
+        "M3B 3N9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-83, Lot 33",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 065 520 03700",
+    "consideration_lines": [
+      "cash: $2,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3628 / 4952",
+      "rt_id": "RT43330"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "466 - 468 DUNDAS ST W",
+    "postcode": "M5T 1G9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/29/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "2250000",
+    "cash": "2250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 065 520 03700"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "466 - 468 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Jul 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Cedvor Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1665545 Ontario Inc"
+    ],
+    "price_text": "$2,250,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23309",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23309",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 KENNEDY RD S"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "26 Oct 2001",
+      "price_text": "$3,025,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ken Silver",
+        "2180 Yonge St",
+        "PO Box 770, Stn K",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1415063 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Michael Markoff",
+        "462 Wellington St W, Ste 401",
+        "Toronto, Ontario",
+        "M5V 1E3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: Former Canadian Tire; 31,216 sf @ $97"
+    ],
+    "more_info_url": "/assets/files/RT2/RT233/RT23309/mi.pdf",
+    "site_lines": [
+      "Conc 1 - EHS, Part Lot 5",
+      "Plan 369, Lots 10-12",
+      "As in Inst Nos BR-41529, BR-41530, BR-41531",
+      "Except as in Inst Nos VS-22930 & VS-22933",
+      "",
+      "2.77 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,025,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT233/RT23309/photo.jpg"
+    },
+    "footer": {
+      "page_position": "969 / 1087",
+      "rt_id": "RT23309"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1 KENNEDY RD S",
+    "postcode": "L6W 3C9",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "10/26/2001",
+    "desc": "Retail Bldg: Former Canadian Tire; 31,216 sf @ $97",
+    "bldg": "31,216 sf",
+    "acreage": "2.77",
+    "consid": "3025000",
+    "cash": "3025000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1 KENNEDY RD S"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "26 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg: Former Canadian Tire; 31,216 sf @ $97",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "1415063 Ontario Ltd"
+    ],
+    "price_text": "$3,025,000"
+  }
+}

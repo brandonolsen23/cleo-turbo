@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT40047",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40047",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "83 MAIN ST S",
+        "(GEORGETOWN)"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "02 Feb 2005",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal Gala Properties Ltd     905-473-6866"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gary Gladman",
+        "PO Box 550",
+        "Stouffville, Ontario",
+        "L4A 7Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Royco Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jim Hurrelbrink",
+        "106 Guelph St",
+        "Georgetown, Ontario",
+        "L7G 3Z5"
+      ]
+    },
+    "description_lines": [
+      "Bank Branch"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 37, Part Lots 4 & 5",
+      "E of Mill St, S of Mill St",
+      "As in Inst No 352339",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "24 15 010 003 05100",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $420,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/02/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT400/RT40047/air1.jpg",
+        "/assets/files/RT4/RT400/RT40047/air2.jpg",
+        "/assets/files/RT4/RT400/RT40047/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT400/RT40047/photo.jpg"
+    },
+    "footer": {
+      "page_position": "432 / 613",
+      "rt_id": "RT40047"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "83 MAIN ST S, (GEORGETOWN)",
+    "postcode": "L7G 3E5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "02/02/2005",
+    "desc": "Bank Branch",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 010 003 05100"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "83 MAIN ST S",
+      "(GEORGETOWN)"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "02 Feb 2005",
+    "note": "",
+    "description": "Bank Branch",
+    "seller_lines": [
+      "Royal Gala Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Royco Investments Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

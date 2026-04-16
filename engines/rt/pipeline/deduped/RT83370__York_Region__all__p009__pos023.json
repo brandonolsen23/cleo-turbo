@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT83370",
+  "source_folder": "York_Region/all/p009",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT83370",
+      "source_folder": "York_Region/all/p009",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/all/p009/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "ROUTE 500 E",
+        "CONC 5",
+        "PART LOTS 4 & 5"
+      ],
+      "city_region": "The Nation Municipality : Russell Township",
+      "date_text": "27 Oct 2011",
+      "price_text": "$563,185",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "T & P Meyerhans Farm Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Meyerhans",
+        "308 Route 500 E",
+        "Casselman, Ontario",
+        "K0A 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lots 4 & 5",
+      "Plan 50R-9976, Part 1",
+      "",
+      "PIN: 69029-0040"
+    ],
+    "arn_text": "02 12 001 005 00700",
+    "consideration_lines": [
+      "cash: $563,185     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $5,000,000   rate: 18.0% per annum",
+      "registered: 10/27/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "424 / 516",
+      "rt_id": "RT83370"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "ROUTE 500 E, CONC 5, PART LOTS 4 & 5",
+    "postcode": "",
+    "municipality": "The Nation Municipality",
+    "region": "Russell Township",
+    "date": "10/27/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "563185",
+    "cash": "563185",
+    "debt": "",
+    "note": "",
+    "pin": "69029-0040",
+    "rollno": "02 12 001 005 00700"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "ROUTE 500 E",
+      "CONC 5",
+      "PART LOTS 4 & 5"
+    ],
+    "city_region": "The Nation Municipality : Russell Township",
+    "date_text": "27 Oct 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "T & P Meyerhans Farm Inc"
+    ],
+    "price_text": "$563,185"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT32004",
+  "source_folder": "Metro_Toronto/office/p049",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32004",
+      "source_folder": "Metro_Toronto/office/p049",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/office/p049/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "34 MADISON AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Oct 2003",
+      "price_text": "$925,873",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1317759 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Evans",
+        "5 Stonebook Cres",
+        "Georgetown, Ontario",
+        "L7G 6E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1212219 Ontario Ltd     905-371-0866"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ralph Ortieb",
+        "5200 Dorchester Rd, Ste 22",
+        "Niagara Falls, Ontario",
+        "L2E 7M6"
+      ]
+    },
+    "description_lines": [
+      "Office Bldg - 3 storey; 4,539 sf @ $204"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-79, Lot 4",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 04 052 140 01900",
+    "consideration_lines": [
+      "cash: $525,873     assumed/vtb debt: $413,084"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT320/RT32004/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2443 / 3370",
+      "rt_id": "RT32004"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "34 MADISON AVE",
+    "postcode": "M5R 2S1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/03/2003",
+    "desc": "Office Bldg - 3 storey; 4,539 sf @ $204",
+    "bldg": "4,539 sf",
+    "acreage": ".15",
+    "consid": "925873",
+    "cash": "525873",
+    "debt": "413084",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 140 01900"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "34 MADISON AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Oct 2003",
+    "note": "",
+    "description": "Office Bldg - 3 storey; 4,539 sf @ $204",
+    "seller_lines": [
+      "1317759 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1212219 Ontario Ltd"
+    ],
+    "price_text": "$925,873"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT186713",
+  "source_folder": "Metro_Toronto/retail/p012",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186713",
+      "source_folder": "Metro_Toronto/retail/p012",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p012/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1571 EGLINTON AVE W"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "28 May 2024",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1728576 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "9 Woodglen Way",
+        "Unionville, Ontario",
+        "L3R 3A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ovadesso Hospitality Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dahlia Bateman",
+        "1571 Eglinton Ave W",
+        "Toronto, Ontario",
+        "M6E 2G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-8253, Parts 1 & 2",
+      "",
+      "PIN: 10451-0121",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 14 023 250 00300",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/28/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186713/0825_092105.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186713/0825_092110.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1867/RT186713/0825_092119.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "555 / 4952",
+      "rt_id": "RT186713"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1571 EGLINTON AVE W",
+    "postcode": "M6E 2G9",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "05/28/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "10451-0121",
+    "rollno": "19 14 023 250 00300"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1571 EGLINTON AVE W"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "28 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1728576 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Ovadesso Hospitality Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT64390",
+  "source_folder": "Ottawa-Carleton/retail/p015",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64390",
+      "source_folder": "Ottawa-Carleton/retail/p015",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p015/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "433 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Oct 2008",
+      "price_text": "$1,255,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Aculux Ventures Corp     613-567-0770"
+      ],
+      "trade_name": "Lab Works Ltd",
+      "contact_lines": [
+        "Attn: Ken Ginn",
+        "433 Bank St",
+        "Ottawa, Ontario",
+        "K2P 1Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "433 Bank Street Holdings GP Inc     613-738-9899"
+      ],
+      "trade_name": "Canderel Stoneridge Equity Group Inc",
+      "contact_lines": [
+        "ASO: Wayne Jennings",
+        "495 Richmond Rd, Ste 100",
+        "Ottawa, Ontario",
+        "K2A 4B2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc CRF, Part Lot E",
+      "Plan 3766, Part Lot 1",
+      "Plan 15558, Part Block 51",
+      "As in Inst Nos:",
+      "CR-422987 & CR-397551",
+      "Except:",
+      "Inst No CR-419069",
+      "",
+      "PIN: 04119-0221",
+      "",
+      "NE corner Bank St and Gladstone Ave",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 14 042 101 69100",
+    "consideration_lines": [
+      "cash: $1,255,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CS Alterna Bank",
+      "principal: $1,000,000   rate: 5.95% per annum",
+      "registered: 10/01/2008   due: 09/30/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT643/RT64390/air1.jpg",
+        "/assets/files/RT6/RT643/RT64390/air2.jpg",
+        "/assets/files/RT6/RT643/RT64390/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "736 / 1141",
+      "rt_id": "RT64390"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "433 BANK ST",
+    "postcode": "K2P 1Y7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/01/2008",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "1255000",
+    "cash": "1255000",
+    "debt": "",
+    "note": "",
+    "pin": "04119-0221",
+    "rollno": "06 14 042 101 69100"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "433 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Oct 2008",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Aculux Ventures Corp"
+    ],
+    "buyer_lines": [
+      "433 Bank Street Holdings GP Inc"
+    ],
+    "price_text": "$1,255,000"
+  }
+}

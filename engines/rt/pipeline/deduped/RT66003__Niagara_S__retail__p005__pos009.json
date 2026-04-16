@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT66003",
+  "source_folder": "Niagara_S/retail/p005",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66003",
+      "source_folder": "Niagara_S/retail/p005",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p005/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "8249 - 8251 DOCK ST"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "06 Feb 2009",
+      "price_text": "$1,500,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "SREIT (Chippawa) Ltd     416-922-3284"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert Pike",
+        "ING Real Estate Canada",
+        "220 Bay St, Ste 1200",
+        "Toronto, Ontario",
+        "M5J 2W4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1789315 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald McCowan",
+        "1257 Westney Rd N",
+        "Ajax, Ontario",
+        "L1T 4T8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 1 storey; 2 tenants 18,162 sf @ $83",
+      "",
+      "100% occupied",
+      "",
+      "Part of a $17,840,000 portfolio sale comprised of 5 retail buildings containing a total of 209,100 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 251",
+      "Lots 16 & 17, S/S Main St",
+      "Lots 23 & 25, N/S Welland St",
+      "",
+      "PIN: 64383-0024",
+      "",
+      "0.99 acre"
+    ],
+    "arn_text": "27 25 120 005 08100",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,050,000   rate: Prime plus 10% per annum",
+      "registered: 02/06/2009   due: 03/01/2011"
+    ],
+    "broker_lines": [
+      "Brookfield Financial Real Estate Group Ltd:",
+      "Leonard Abramsky, Brian Bastable & Nurit Sadowski, 416-956-5200"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66003/0320_101847.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66003/0320_101919.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT660/RT66003/air1.jpg",
+        "/assets/files/RT6/RT660/RT66003/air2.jpg",
+        "/assets/files/RT6/RT660/RT66003/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "210 / 324",
+      "rt_id": "RT66003"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "8249 - 8251 DOCK ST",
+    "postcode": "L2G 7G7",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "02/06/2009",
+    "desc": "Retail Bldg: 1 storey; 2 tenants 18,162 sf @ $83",
+    "bldg": "18,162 sf",
+    "acreage": ".99",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "64383-0024",
+    "rollno": "27 25 120 005 08100"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "8249 - 8251 DOCK ST"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "06 Feb 2009",
+    "note": "Portfolio",
+    "description": "Retail Bldg: 1 storey; 2 tenants 18,162 sf @ $83",
+    "seller_lines": [
+      "SREIT (Chippawa) Ltd"
+    ],
+    "buyer_lines": [
+      "1789315 Ontario Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT181843",
+  "source_folder": "Cochrane/all/p020",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181843",
+      "source_folder": "Cochrane/all/p020",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p020/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "63 PARENT AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Nov 2023",
+      "price_text": "$1,501,890",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "11258770 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "222 Argyle Ave, Unit 5",
+        "Ottawa, Ontario",
+        "K2P 1B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tremcor Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alec Milne",
+        "74 St Andrew St, Unit 4",
+        "Ottawa, Ontario",
+        "K1N 5G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-334631, Part 1",
+      "",
+      "PIN: 04216-0207",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,501,890     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "954 / 10920",
+      "rt_id": "RT181843"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "63 PARENT AVE",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/28/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "1501890",
+    "cash": "1501890",
+    "debt": "",
+    "note": "",
+    "pin": "04216-0207",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "63 PARENT AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "11258770 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Tremcor Holdings Inc"
+    ],
+    "price_text": "$1,501,890"
+  }
+}

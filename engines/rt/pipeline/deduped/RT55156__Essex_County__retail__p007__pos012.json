@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT55156",
+  "source_folder": "Essex_County/retail/p007",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55156",
+      "source_folder": "Essex_County/retail/p007",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p007/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "234 TALBOT ST W"
+      ],
+      "city_region": "Leamington : Essex County",
+      "date_text": "27 Apr 2007",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "944791 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Gee",
+        "234 Talbot St W",
+        "Leamington, Ontario",
+        "N8H 1P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kingsville Stamping Ltd     519-2326-6331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Gerhard Dyck",
+        "1927 Setterington Dr",
+        "Kingsville, Ontario",
+        "N9Y 2E5"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 4",
+      "Plan 12R-13822, Part 1",
+      "",
+      "0.61 acre"
+    ],
+    "arn_text": "37 04 120 000 13000",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Mennonite Savings and Credit Union (Ontario) Ltd",
+      "principal: $575,000   rate: Maximum of prime plus 6.0% per annum",
+      "registered: 04/27/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "313 / 460",
+      "rt_id": "RT55156"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "234 TALBOT ST W",
+    "postcode": "N8H 1P1",
+    "municipality": "Leamington",
+    "region": "Essex County",
+    "date": "04/27/2007",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": ".61",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 04 120 000 13000"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "234 TALBOT ST W"
+    ],
+    "city_region": "Leamington : Essex County",
+    "date_text": "27 Apr 2007",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "944791 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Kingsville Stamping Ltd"
+    ],
+    "price_text": "$575,000"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT181699",
+  "source_folder": "York_Region/retail/p004",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181699",
+      "source_folder": "York_Region/retail/p004",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "25987 WOODBINE AVE"
+      ],
+      "city_region": "Georgina : York Region",
+      "date_text": "09 Nov 2023",
+      "price_text": "$1,031,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "EP Keswick Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5914 Tilton Lake Rd",
+        "Sudbury, Ontario",
+        "P3G 1L3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MPKA Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Coates",
+        "25987 Woodbine Ave",
+        "Keswick, Ontario",
+        "L4P 3E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - N Gwillimbury, Part Lot 21",
+      "Plan 65R-3187, Part 1",
+      "",
+      "PIN: 03500-0016",
+      "",
+      "0.71 acre"
+    ],
+    "arn_text": "19 70 000 109 54500",
+    "consideration_lines": [
+      "cash: $1,031,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $773,250   rate: Prime plus 5.0% per annum.",
+      "registered: 11/09/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1816/RT181699/1223_122932.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1816/RT181699/1223_122951.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1816/RT181699/1223_122952.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1816/RT181699/1223_122954.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1816/RT181699/1223_123006.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "196 / 984",
+      "rt_id": "RT181699"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "25987 WOODBINE AVE",
+    "postcode": "L4P 3E9",
+    "municipality": "Georgina",
+    "region": "York Region",
+    "date": "11/09/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".71",
+    "consid": "1031000",
+    "cash": "1031000",
+    "debt": "",
+    "note": "",
+    "pin": "03500-0016",
+    "rollno": "19 70 000 109 54500"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "25987 WOODBINE AVE"
+    ],
+    "city_region": "Georgina : York Region",
+    "date_text": "09 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "EP Keswick Holdings Inc"
+    ],
+    "buyer_lines": [
+      "MPKA Holdings Inc"
+    ],
+    "price_text": "$1,031,000"
+  }
+}

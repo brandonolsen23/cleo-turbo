@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT191153",
+  "source_folder": "Bruce/office/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191153",
+      "source_folder": "Bruce/office/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/office/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1115 SUTTON ST"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "28 Mar 2025",
+      "price_text": "$1,188,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000324093 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1115 Sutton St",
+        "Kincardine, Ontario",
+        "N2Z 2C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Miller 5 Realty Inc     519-395-0107"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Todd Farrell",
+        "809 Victoria Rd",
+        "Ripley, Ontario",
+        "N0G 2R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-3564, Parts 1 & 2",
+      "",
+      "PIN: 33303-0757",
+      "",
+      "0.54 acre"
+    ],
+    "arn_text": "41 08 220 004 01602",
+    "consideration_lines": [
+      "cash: $1,188,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 5",
+      "rt_id": "RT191153"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1115 SUTTON ST",
+    "postcode": "N2Z 2C5",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "03/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".54",
+    "consid": "1188000",
+    "cash": "1188000",
+    "debt": "",
+    "note": "",
+    "pin": "33303-0757",
+    "rollno": "41 08 220 004 01602"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1115 SUTTON ST"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "28 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000324093 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Miller 5 Realty Inc"
+    ],
+    "price_text": "$1,188,000"
+  }
+}

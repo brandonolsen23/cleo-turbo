@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT34155",
+  "source_folder": "Perth_County/retail/p003",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34155",
+      "source_folder": "Perth_County/retail/p003",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p003/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "975 WALLACE AVE N"
+      ],
+      "city_region": "N. Perth : Perth County",
+      "date_text": "04 Feb 2004",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TSC Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roy Carter",
+        "1950 Oxford St E",
+        "London, Ontario",
+        "N5V 2Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rosalyn Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Drier",
+        "191 Main St",
+        "Mount Forest, Ontario",
+        "N0G 2L0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 10 units 41,000 sf @ $41"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 448, Lot 2",
+      "",
+      "3.77 acre"
+    ],
+    "arn_text": "31 40 420 011 11900",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "CB Richard Ellis: Peter Whatmore, 519-673-6444"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT341/RT34155/photo.jpg"
+    },
+    "footer": {
+      "page_position": "110 / 113",
+      "rt_id": "RT34155"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "975 WALLACE AVE N",
+    "postcode": "N4W 1M6",
+    "municipality": "N. Perth",
+    "region": "Perth County",
+    "date": "02/04/2004",
+    "desc": "Retail Plaza - 1 storey; 10 units 41,000 sf @ $41",
+    "bldg": "41,000 sf",
+    "acreage": "3.77",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "31 40 420 011 11900"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "975 WALLACE AVE N"
+    ],
+    "city_region": "N. Perth : Perth County",
+    "date_text": "04 Feb 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 10 units 41,000 sf @ $41",
+    "seller_lines": [
+      "TSC Realty Inc"
+    ],
+    "buyer_lines": [
+      "Rosalyn Properties Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

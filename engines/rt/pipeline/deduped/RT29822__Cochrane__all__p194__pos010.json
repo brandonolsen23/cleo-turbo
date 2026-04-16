@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT29822",
+  "source_folder": "Cochrane/all/p194",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29822",
+      "source_folder": "Cochrane/all/p194",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p194/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "207 COLONNADE RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "15 Apr 2003",
+      "price_text": "$1,128,720",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "841151 Ontario Inc     613-783-9634"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walter Lubiana",
+        "Fraser Milner Casgrain LLP",
+        "Phillip M. Rimer",
+        "99 Bank St, Ste 1420",
+        "Ottawa, Ontario",
+        "K1P 1H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "John Russo Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Russo",
+        "1701 Fisher Ave",
+        "Ottawa, Ontario",
+        "K2C 1X9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-6183, Parts 3 & 4",
+      "Plan 5R-9860, Parts 1 & 2",
+      "",
+      "1.13 acre"
+    ],
+    "arn_text": "06 12 000 495 01708",
+    "consideration_lines": [
+      "cash: $1,128,720     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT298/RT29822/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9661 / 10920",
+      "rt_id": "RT29822"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "207 COLONNADE RD",
+    "postcode": "K2E 7K3",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "04/15/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.13",
+    "consid": "1128720",
+    "cash": "1128720",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 12 000 495 01708"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "207 COLONNADE RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "15 Apr 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "841151 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "John Russo Holdings Inc"
+    ],
+    "price_text": "$1,128,720"
+  }
+}

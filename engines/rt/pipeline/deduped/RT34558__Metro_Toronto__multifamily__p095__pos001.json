@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT34558",
+  "source_folder": "Metro_Toronto/multifamily/p095",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34558",
+      "source_folder": "Metro_Toronto/multifamily/p095",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p095/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1911 BAYVIEW AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "10 Mar 2004",
+      "price_text": "$2,108,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1534032 Ontario Ltd     416-944-1643"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stanton Mulvihill",
+        "9 Cluny Dr",
+        "Toronto, Ontario",
+        "M4W 2P8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 22 units @ $95,818"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3110, Lots 610 & 611",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "19 06 045 360 01200",
+    "consideration_lines": [
+      "cash: $2,108,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "JJ Barnicke: James Roy & Helga Palm, 416-863-1215"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT345/RT34558/air1.jpg",
+        "/assets/files/RT3/RT345/RT34558/air2.jpg",
+        "/assets/files/RT3/RT345/RT34558/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT345/RT34558/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4702 / 6031",
+      "rt_id": "RT34558"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1911 BAYVIEW AVE",
+    "postcode": "M4G 3E4",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "03/10/2004",
+    "desc": "Apartment Bldg - 3 storey; 22 units @ $95,818",
+    "bldg": "22 units",
+    "acreage": ".24",
+    "consid": "2108000",
+    "cash": "2108000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 045 360 01200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1911 BAYVIEW AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "10 Mar 2004",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 22 units @ $95,818",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1534032 Ontario Ltd"
+    ],
+    "price_text": "$2,108,000"
+  }
+}

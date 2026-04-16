@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT135492",
+  "source_folder": "Cochrane/all/p068",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT135492",
+      "source_folder": "Cochrane/all/p068",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p068/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 6",
+        "PART LOT 3"
+      ],
+      "city_region": "Rideau : Ottawa-Carleton",
+      "date_text": "06 Jul 2018",
+      "price_text": "$1,150,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "387576 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edward Schouten",
+        "6105 Malakoff Rd",
+        "Richmond, Ontario",
+        "K0A 2Z0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Schouten Corner View Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edward Schouten",
+        "6150 Malakoff Rd",
+        "Richmond, Ontario",
+        "K0A 2Z0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 3",
+      "As in Inst No NS-145355",
+      "Except:",
+      "Plan 5R-6330",
+      "",
+      "PIN: 03930-0121",
+      "",
+      "130.87 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $35,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/06/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3354 / 10920",
+      "rt_id": "RT135492"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "CONC 6, PART LOT 3",
+    "postcode": "",
+    "municipality": "Rideau",
+    "region": "Ottawa-Carleton",
+    "date": "07/06/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "130.87",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "03930-0121",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "CONC 6",
+      "PART LOT 3"
+    ],
+    "city_region": "Rideau : Ottawa-Carleton",
+    "date_text": "06 Jul 2018",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "387576 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Schouten Corner View Farms Ltd"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

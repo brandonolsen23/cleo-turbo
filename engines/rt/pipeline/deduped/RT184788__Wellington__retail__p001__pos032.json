@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT184788",
+  "source_folder": "Wellington/retail/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184788",
+      "source_folder": "Wellington/retail/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 TRAFALGAR RD"
+      ],
+      "city_region": "Erin : Wellington",
+      "date_text": "15 May 2024",
+      "price_text": "$3,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kenneth L McKinnon Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5890 4th Line",
+        "Hillsburgh, Ontario",
+        "N0B 1Z0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000846675 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brett Manes",
+        "344 Lake St",
+        "St Catharines, Ontario",
+        "L2N 4H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 23",
+      "Plan 95, Part Lot 16 & 17",
+      "Plan 61R-2506, Part 2",
+      "",
+      "PIN: 71143-0324",
+      "",
+      "2.59 acre"
+    ],
+    "arn_text": "23 16 000 009 05215",
+    "consideration_lines": [
+      "cash: $3,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/15/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184788/0824_164526.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184788/0824_164550.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184788/0824_164601.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184788/0824_164607.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184788/0824_164629.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184788/0824_164708.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 269",
+      "rt_id": "RT184788"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1 TRAFALGAR RD",
+    "postcode": "N0B 1Z0",
+    "municipality": "Erin",
+    "region": "Wellington",
+    "date": "05/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.59",
+    "consid": "3750000",
+    "cash": "3750000",
+    "debt": "",
+    "note": "",
+    "pin": "71143-0324",
+    "rollno": "23 16 000 009 05215"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1 TRAFALGAR RD"
+    ],
+    "city_region": "Erin : Wellington",
+    "date_text": "15 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kenneth L McKinnon Ltd"
+    ],
+    "buyer_lines": [
+      "1000846675 Ontario Inc"
+    ],
+    "price_text": "$3,750,000"
+  }
+}

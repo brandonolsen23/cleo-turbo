@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT68030",
+  "source_folder": "Lennox_County/retail/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68030",
+      "source_folder": "Lennox_County/retail/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lennox_County/retail/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "431 CAMDEN RD"
+      ],
+      "city_region": "Greater Napanee : Lennox County",
+      "date_text": "20 Jul 2009",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1059864 Ontario Ltd     613-354-1999"
+      ],
+      "trade_name": "Camden Variety",
+      "contact_lines": [
+        "Pres: Bonnie Reid",
+        "425 Camden Rd, RR 6",
+        "Napanee, Ontario",
+        "K7R 3L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1590006 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ripal Patel",
+        "431 Camden Rd",
+        "Napanee, Ontario",
+        "K7R 1E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 29R-7846, Part 1",
+      "",
+      "PIN: 45088-0119",
+      "",
+      "1.14 acre"
+    ],
+    "arn_text": "11 21 050 020 12110",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $500,000   rate: Prime plus 5.0% per annum",
+      "registered: 07/20/2009   due: on demand",
+      "",
+      "chargee: 1059864 Ontario Ltd",
+      "principal: $82,800   rate: 6.0% per annum",
+      "registered: 07/20/2009   due: 07/20/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT680/RT68030/1017_131158.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT680/RT68030/1017_131233.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT680/RT68030/1017_131250.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 19",
+      "rt_id": "RT68030"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "431 CAMDEN RD",
+    "postcode": "K7R 1E9",
+    "municipality": "Greater Napanee",
+    "region": "Lennox County",
+    "date": "07/20/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.14",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "45088-0119",
+    "rollno": "11 21 050 020 12110"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "431 CAMDEN RD"
+    ],
+    "city_region": "Greater Napanee : Lennox County",
+    "date_text": "20 Jul 2009",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1059864 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1590006 Ontario Inc"
+    ],
+    "price_text": "$630,000"
+  }
+}

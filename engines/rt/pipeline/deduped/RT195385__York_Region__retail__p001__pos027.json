@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT195385",
+  "source_folder": "York_Region/retail/p001",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195385",
+      "source_folder": "York_Region/retail/p001",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "12 NASHVILLE RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "14 Nov 2025",
+      "price_text": "$4,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Globe Realty Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "200 Bay St, 12th Flr",
+        "South Tower",
+        "Toronto, Ontario",
+        "M5J 2J5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jova Investments 28 Inc     416-421-6244"
+      ],
+      "trade_name": "Atlas-Apex Roofing Inc",
+      "contact_lines": [
+        "Attn: John Petrachek",
+        "65 Disco Rd",
+        "Etobicoke, Ontario",
+        "M9W 1M2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-5897, Part 1",
+      "",
+      "PIN: 03347-0126",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "19 28 000 350 33500",
+    "consideration_lines": [
+      "cash: $4,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195385/1123_114049.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195385/1123_114056.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195385/1123_114129.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195385/1123_114130.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195385/1123_114159.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "28 / 984",
+      "rt_id": "RT195385"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "12 NASHVILLE RD",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "11/14/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "4750000",
+    "cash": "4750000",
+    "debt": "",
+    "note": "",
+    "pin": "03347-0126",
+    "rollno": "19 28 000 350 33500"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "12 NASHVILLE RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "14 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Globe Realty Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Jova Investments 28 Inc"
+    ],
+    "price_text": "$4,750,000"
+  }
+}

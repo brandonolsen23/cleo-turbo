@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT22132",
+  "source_folder": "Metro_Toronto/multifamily/p110",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22132",
+      "source_folder": "Metro_Toronto/multifamily/p110",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p110/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1766 - 1772 EGLINTON AVE W"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "03 Jul 2001",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1173862 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tu Nguyen",
+        "352 Spadina Ave",
+        "Toronto, Ontario",
+        "M5T 2G4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2003842 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Magdi Andrawes",
+        "1772 Eglinton Ave W",
+        "Toronto, Ontario",
+        "M6E 2H6"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 3 storey; apartments over retail"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1663, Lot 230",
+      "",
+      "N side 200m E of Dufferin St",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 14 032 030 03200",
+    "consideration_lines": [
+      "cash: $625,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT221/RT22132/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5472 / 6031",
+      "rt_id": "RT22132"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1766 - 1772 EGLINTON AVE W",
+    "postcode": "M6E 2H6",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "07/03/2001",
+    "desc": "Retail/Res Bldg - 3 storey; apartments over retail",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "625000",
+    "cash": "625000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 032 030 03200"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1766 - 1772 EGLINTON AVE W"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "03 Jul 2001",
+    "note": "",
+    "description": "Retail/Res Bldg - 3 storey; apartments over retail",
+    "seller_lines": [
+      "1173862 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2003842 Ontario Inc"
+    ],
+    "price_text": "$625,000"
+  }
+}

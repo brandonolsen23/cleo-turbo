@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT194750",
+  "source_folder": "Oxford_County/retail/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194750",
+      "source_folder": "Oxford_County/retail/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "17 THAMES ST S"
+      ],
+      "city_region": "Ingersoll : Oxford County",
+      "date_text": "25 Sep 2025",
+      "price_text": "$825,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "2673371 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "173 Advance Blvd, Unit 38",
+        "Brampton, Ontario",
+        "L6T 4Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001214308 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Basant Nanuan",
+        "173 Advance Blvd, Unit 38",
+        "Brampton, Ontario",
+        "L6T 4Z7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 279, Block 35",
+      "Lot 21, Part Lots 20, 23-26 & 293",
+      "Plan 477,",
+      "Part Original Channel Thames River,",
+      "N of Centre Line opposite Conc 4, Part Lot 11",
+      "S of Centre Line opposite BFC, Part Lot 20",
+      "",
+      "PIN: 00169-0051",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "32 18 020 030 25001",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $825,000",
+      "",
+      "Named Individual(s)",
+      "principal: $650,000   rate: 10.0% per annum.",
+      "registered: 09/25/2025   due: 03/24/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 96",
+      "rt_id": "RT194750"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "17 THAMES ST S",
+    "postcode": "N5C 2S8",
+    "municipality": "Ingersoll",
+    "region": "Oxford County",
+    "date": "09/25/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "825000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "00169-0051",
+    "rollno": "32 18 020 030 25001"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "17 THAMES ST S"
+    ],
+    "city_region": "Ingersoll : Oxford County",
+    "date_text": "25 Sep 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "2673371 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001214308 Ontario Corp"
+    ],
+    "price_text": "$825,000"
+  }
+}

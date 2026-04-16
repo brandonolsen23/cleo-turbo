@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT174931",
+  "source_folder": "Brant/retail/p002",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174931",
+      "source_folder": "Brant/retail/p002",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "1004 COLBORNE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "20 Jan 2023",
+      "price_text": "$975,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "13880621 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "49 Sahara Trail",
+        "Brampton, Ontario",
+        "L6R 1P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "United Car Sales Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shahid Muzammmal",
+        "1279 Clark Blvd",
+        "Milton, Ontario",
+        "L9T 6L1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Joseph Thomas Grant",
+      "As in Inst A-196975",
+      "Except:",
+      "Plan 1704, Part 1",
+      "",
+      "PIN: 32283-0003",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "29 06 040 015 38700",
+    "consideration_lines": [
+      "cash: $975,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174931/0226_100234.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174931/0226_100252.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174931/0226_100254.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174931/0226_100255.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174931/0226_100259.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1749/RT174931/air1.jpg",
+        "/assets/files/RT17/RT1749/RT174931/air2.jpg",
+        "/assets/files/RT17/RT1749/RT174931/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "57 / 195",
+      "rt_id": "RT174931"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "1004 COLBORNE ST",
+    "postcode": "N3S 3T6",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "01/20/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "975000",
+    "cash": "975000",
+    "debt": "",
+    "note": "",
+    "pin": "32283-0003",
+    "rollno": "29 06 040 015 38700"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "1004 COLBORNE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "20 Jan 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "13880621 Canada Inc"
+    ],
+    "buyer_lines": [
+      "United Car Sales Inc"
+    ],
+    "price_text": "$975,000"
+  }
+}

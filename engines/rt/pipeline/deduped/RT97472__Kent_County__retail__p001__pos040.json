@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT97472",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT97472",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 RICHMOND ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "06 Jan 2014",
+      "price_text": "$1,800,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "2121204 Ontario Inc     905-854-9991"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Bullock",
+        "8343 Canyon Rd",
+        "PO Box 220",
+        "Campbellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Skyline Retail Real Estate Holdings (II) Inc     519-826-0439"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Castellan",
+        "5 Douglas St, Ste 301",
+        "Guelph, Ontario",
+        "N1H 2S8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 235",
+      "Lot 8, Part Lots 4-7",
+      "As in Inst No 567782",
+      "",
+      "PIN: 00506-0325",
+      "",
+      "0.92 acre"
+    ],
+    "arn_text": "36 42 020 020 16200",
+    "consideration_lines": [
+      "cash: $1,340,342     assumed/vtb debt: $459,658",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $1,000,000   rate: 5.458% per annum.",
+      "registered: 01/05/2007   due: 02/01/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT974/RT97472/0502_082825.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT974/RT97472/0502_082826.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT974/RT97472/0502_082845.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT974/RT97472/0502_082847.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT974/RT97472/0502_082904.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 77",
+      "rt_id": "RT97472"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "150 RICHMOND ST",
+    "postcode": "N7M 1N9",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "01/06/2014",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".92",
+    "consid": "1800000",
+    "cash": "1340342",
+    "debt": "459658",
+    "note": "Portfolio",
+    "pin": "00506-0325",
+    "rollno": "36 42 020 020 16200"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "150 RICHMOND ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "06 Jan 2014",
+    "note": "Portfolio",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "2121204 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Skyline Retail Real Estate Holdings (II) Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

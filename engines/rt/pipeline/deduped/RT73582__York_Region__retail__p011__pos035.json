@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT73582",
+  "source_folder": "York_Region/retail/p011",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73582",
+      "source_folder": "York_Region/retail/p011",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p011/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "5758 MAIN ST"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "30 Jul 2010",
+      "price_text": "$3,295,615",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Stouffville Hardware Ltd     905-640-3622"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Graydon Card",
+        "5758 Main St",
+        "Stouffiville, Ontario",
+        "L4A 2T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bowood Properties (2006) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Christie",
+        "6A - 170 Donway W, Ste 141",
+        "Toronto, Ontario",
+        "M3C 2E8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 tenants 13,500 sf @ $244",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-3332, Part 1",
+      "",
+      "PIN: 03717-0053",
+      "",
+      "1.68 acre"
+    ],
+    "arn_text": "19 44 000 200 12800",
+    "consideration_lines": [
+      "cash: $3,295,615     assumed/vtb debt: $0",
+      "",
+      "chargee: Giuseppe & Teresa Luca",
+      "principal: $1,700,000   rate: 10.0% per annum",
+      "registered: 07/30/2010   due: 07/30/2011",
+      "",
+      "chargee: Stouffville Hardware Ltd",
+      "principal: $1,375,000   rate: 8.0% per annum",
+      "registered: 07/30/2010   due: 07/30/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73582/0814_112539.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73582/0814_112847.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73582/0814_113041.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT735/RT73582/air1.jpg",
+        "/assets/files/RT7/RT735/RT73582/air2.jpg",
+        "/assets/files/RT7/RT735/RT73582/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "536 / 984",
+      "rt_id": "RT73582"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "5758 MAIN ST",
+    "postcode": "L4A 2T1",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "07/30/2010",
+    "desc": "Retail Plaza - 1 storey; 6 tenants 13,500 sf @ $244",
+    "bldg": "13,500 sf",
+    "acreage": "1.68",
+    "consid": "3295615",
+    "cash": "3295615",
+    "debt": "",
+    "note": "",
+    "pin": "03717-0053",
+    "rollno": "19 44 000 200 12800"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "5758 MAIN ST"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "30 Jul 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 tenants 13,500 sf @ $244",
+    "seller_lines": [
+      "Stouffville Hardware Ltd"
+    ],
+    "buyer_lines": [
+      "Bowood Properties (2006) Inc"
+    ],
+    "price_text": "$3,295,615"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT187139",
+  "source_folder": "Metro_Toronto/retail/p009",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187139",
+      "source_folder": "Metro_Toronto/retail/p009",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p009/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "436 RONCESVALLES AVE",
+        "UNIT 9"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Aug 2024",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "5004751 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1516 Queen St W",
+        "Toronto, Ontario",
+        "M6R 1A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000901993 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lidiya Zavalishina",
+        "21 Father Redmond Way",
+        "Etobicoke, Ontario",
+        "M8W 0B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2918",
+      "Level 1, Unit 9",
+      "Level A, Units 36-39",
+      "",
+      "PIN: 76918-0009 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,200,000   rate: Prime plus 6.0% per annum.",
+      "registered: 08/27/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1871/RT187139/0922_090323.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1871/RT187139/0922_090336.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1871/RT187139/0922_090340.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1871/RT187139/0922_090439.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1871/RT187139/0922_090452.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1871/RT187139/0922_090508.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "446 / 4952",
+      "rt_id": "RT187139"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "436 RONCESVALLES AVE, UNIT 9",
+    "postcode": "M6R 2N2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/27/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "76918-0009+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "436 RONCESVALLES AVE",
+      "UNIT 9"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "5004751 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000901993 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

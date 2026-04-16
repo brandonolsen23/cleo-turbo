@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT31853",
+  "source_folder": "Metro_Toronto/retail/p080",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31853",
+      "source_folder": "Metro_Toronto/retail/p080",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p080/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3359 ELLESMERE RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "18 Sep 2003",
+      "price_text": "$1,180,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "PL Lee Investments Ltd     905-881-3116"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raymond Ku",
+        "Howard Waldman",
+        "7636 Yonge St",
+        "Thornhill, Ontario",
+        "L4J 1V9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1232752 Ontario Ltd     905-889-2752"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rocco Luciani-DiCiano",
+        "212 Duncan Rd",
+        "Richmond Hill, Ontario",
+        "L4C 6J9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3811, Part Lot 3",
+      "As in Inst No TB-63528",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "19 01 094 040 01100",
+    "consideration_lines": [
+      "cash: $1,180,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT318/RT31853/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3959 / 4952",
+      "rt_id": "RT31853"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3359 ELLESMERE RD",
+    "postcode": "M1C 1H1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "09/18/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "1180000",
+    "cash": "1180000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 094 040 01100"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3359 ELLESMERE RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "18 Sep 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "PL Lee Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1232752 Ontario Ltd"
+    ],
+    "price_text": "$1,180,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24073",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24073",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "480 CONESTOGO RD"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "03 Jan 2002",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "JB Forbes Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Forbes",
+        "165 Weber St S",
+        "Waterloo, Ontario",
+        "N2J 4A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1471234 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Kassik",
+        "533 King St N",
+        "Waterloo, Ontario",
+        "N2L 5Z6"
+      ]
+    },
+    "description_lines": [
+      "Volvo Truck Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT - Part Lot 8",
+      "As in Inst No 891199",
+      "",
+      "2.35 acre"
+    ],
+    "arn_text": "30 16 041 300 00303",
+    "consideration_lines": [
+      "cash: $75,000     assumed/vtb debt: $550,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24073/photo.jpg"
+    },
+    "footer": {
+      "page_position": "676 / 752",
+      "rt_id": "RT24073"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "480 CONESTOGO RD",
+    "postcode": "N2L 4E3",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "01/03/2002",
+    "desc": "Volvo Truck Dealership",
+    "bldg": "",
+    "acreage": "2.35",
+    "consid": "625000",
+    "cash": "75000",
+    "debt": "550000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 041 300 00303"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "480 CONESTOGO RD"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "03 Jan 2002",
+    "note": "",
+    "description": "Volvo Truck Dealership",
+    "seller_lines": [
+      "JB Forbes Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1471234 Ontario Inc"
+    ],
+    "price_text": "$625,000"
+  }
+}

@@ -19,6 +19,10 @@ class SellOpportunityCreate(BaseModel):
     property_id: str
     seller_contact_id: Optional[str] = None
     seller_group_id: Optional[str] = None
+    noi: Optional[int] = None
+    expected_cap_rate: Optional[float] = None
+    expected_price: Optional[int] = None
+    commission_pct: Optional[float] = None
     deal_value: Optional[int] = None
     owner: Optional[str] = None
     notes: Optional[str] = None
@@ -28,6 +32,10 @@ class SellOpportunityCreate(BaseModel):
 class SellOpportunityUpdate(BaseModel):
     seller_contact_id: Optional[str] = None
     seller_group_id: Optional[str] = None
+    noi: Optional[int] = None
+    expected_cap_rate: Optional[float] = None
+    expected_price: Optional[int] = None
+    commission_pct: Optional[float] = None
     deal_value: Optional[int] = None
     status: Optional[str] = None
     owner: Optional[str] = None
@@ -194,14 +202,31 @@ def create_sell_opportunity(body: SellOpportunityCreate, db=Depends(get_db), use
 
     opp_id = f"SO_{uuid.uuid4().hex[:8].upper()}"
 
+    # Compute derived values if inputs are present
+    noi = body.noi
+    cap_rate = body.expected_cap_rate
+    expected_price = body.expected_price
+    commission_pct = body.commission_pct
+    deal_value = body.deal_value
+
+    # NOI + cap rate → expected price (only if not manually set)
+    if noi and cap_rate and cap_rate > 0 and not expected_price:
+        expected_price = round(noi / cap_rate)
+
+    # Expected price + commission % → deal value (only if not manually set)
+    if expected_price and commission_pct and not deal_value:
+        deal_value = round(expected_price * commission_pct)
+
     db.execute(
         "INSERT INTO sell_opportunities (id, property_id, seller_contact_id, seller_group_id, "
-        "deal_value, owner, notes, decay_days) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        "noi, expected_cap_rate, expected_price, commission_pct, deal_value, "
+        "owner, notes, decay_days) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         (opp_id, body.property_id, body.seller_contact_id, body.seller_group_id,
-         body.deal_value, body.owner, body.notes, body.decay_days)
+         noi, cap_rate, expected_price, commission_pct, deal_value,
+         body.owner, body.notes, body.decay_days)
     )
     log_action(db, user, "sell_opportunity.create", "sell_opportunity", opp_id,
-               {"property_id": body.property_id, "deal_value": body.deal_value})
+               {"property_id": body.property_id, "deal_value": deal_value})
     db.commit()
     return {"id": opp_id, "status": "created"}
 
@@ -215,12 +240,37 @@ def update_sell_opportunity(opp_id: str, body: SellOpportunityUpdate, db=Depends
         raise HTTPException(status_code=400, detail=f"Invalid status. Must be one of: {', '.join(SELL_OPP_STATUSES)}")
 
     updates = {}
-    for field in ["seller_contact_id", "seller_group_id", "deal_value", "status", "owner", "notes", "decay_days"]:
+    for field in ["seller_contact_id", "seller_group_id", "noi", "expected_cap_rate",
+                   "expected_price", "commission_pct", "deal_value", "status", "owner", "notes", "decay_days"]:
         val = getattr(body, field)
         if val is not None:
             updates[field] = val
 
+    # Re-derive computed fields if inputs changed
     if updates:
+        # Fetch current values to merge with updates
+        current = dict(db.execute("SELECT noi, expected_cap_rate, expected_price, commission_pct, deal_value "
+                                   "FROM sell_opportunities WHERE id = ?", (opp_id,)).fetchone())
+        merged = {**current, **updates}
+
+        noi = merged.get("noi")
+        cap_rate = merged.get("expected_cap_rate")
+        expected_price = merged.get("expected_price")
+        commission_pct = merged.get("commission_pct")
+
+        # If NOI or cap_rate changed, recompute expected_price (unless user explicitly set it in this update)
+        if ("noi" in updates or "expected_cap_rate" in updates) and "expected_price" not in updates:
+            if noi and cap_rate and cap_rate > 0:
+                updates["expected_price"] = round(noi / cap_rate)
+                expected_price = updates["expected_price"]
+
+        # If expected_price or commission_pct changed, recompute deal_value (unless user explicitly set it)
+        if ("expected_price" in updates or "commission_pct" in updates) and "deal_value" not in updates:
+            ep = updates.get("expected_price", expected_price)
+            cp = updates.get("commission_pct", commission_pct)
+            if ep and cp:
+                updates["deal_value"] = round(ep * cp)
+
         set_clause = ", ".join(f"{k} = ?" for k in updates)
         values = list(updates.values())
         db.execute(

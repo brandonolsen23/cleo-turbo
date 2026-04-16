@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT182879",
+  "source_folder": "Metro_Toronto/retail/p013",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182879",
+      "source_folder": "Metro_Toronto/retail/p013",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p013/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "1680 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Feb 2024",
+      "price_text": "$4,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1680 Bloor Street West Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 2462 Yonge St, 2nd Flr",
+        "Toronto, Ontario",
+        "M4P 2H5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Funds To Go Inc     416-745-2300"
+      ],
+      "trade_name": "Re/Max West Realty Inc",
+      "contact_lines": [
+        "Attn: Frank Colatosti",
+        "96 Rexdale Blvd",
+        "Toronto, Ontario",
+        "M9W 1N7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-98, Part Lots 16 & 17,",
+      "N/S Bloor St",
+      "",
+      "PIN: 21352-0231",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "19 04 013 160 03000",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $3,150,000",
+      "",
+      "chargee: 1680 Bloor Street West Ltd",
+      "principal: $3,150,000   rate: 3.0% per annum.",
+      "registered: 02/01/2024   due: 01/31/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182879/0211_095908.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182879/0211_095912.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182879/0211_095935.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182879/0211_095936.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182879/0211_095943.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182879/0211_095944.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "649 / 4952",
+      "rt_id": "RT182879"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "1680 BLOOR ST W",
+    "postcode": "M6P 1A8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "4650000",
+    "cash": "1500000",
+    "debt": "3150000",
+    "note": "",
+    "pin": "21352-0231",
+    "rollno": "19 04 013 160 03000"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "1680 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1680 Bloor Street West Ltd"
+    ],
+    "buyer_lines": [
+      "Funds To Go Inc"
+    ],
+    "price_text": "$4,650,000"
+  }
+}

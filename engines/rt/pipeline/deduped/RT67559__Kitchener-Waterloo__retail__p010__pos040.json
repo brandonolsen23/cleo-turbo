@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT67559",
+  "source_folder": "Kitchener-Waterloo/retail/p010",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67559",
+      "source_folder": "Kitchener-Waterloo/retail/p010",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p010/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "376 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "29 May 2009",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Little Short Stop Stores Ltd     519-653-3171"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Arnold",
+        "201B Preston Pkwy",
+        "Cambridge, Ontario",
+        "N3H 5E8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CGNE Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chris Zaptces",
+        "466 Forestlawn Rd",
+        "Waterloo, Ontario",
+        "N2T 2H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 374",
+      "Part Park Lot 245",
+      "As in Inst No 997843",
+      "",
+      "PIN: 22307-0069",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "30 12 020 004 20600",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67559/0823_095953.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67559/0823_100045.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67559/0823_100114.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67559/0823_100124.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT675/RT67559/air1.jpg",
+        "/assets/files/RT6/RT675/RT67559/air2.jpg",
+        "/assets/files/RT6/RT675/RT67559/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "491 / 752",
+      "rt_id": "RT67559"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "376 VICTORIA ST N",
+    "postcode": "N2H 5E6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "05/29/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".67",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "22307-0069",
+    "rollno": "30 12 020 004 20600"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "376 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "29 May 2009",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Little Short Stop Stores Ltd"
+    ],
+    "buyer_lines": [
+      "CGNE Inc"
+    ],
+    "price_text": "$575,000"
+  }
+}

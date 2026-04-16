@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT89942",
+  "source_folder": "Cochrane/all/p119",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89942",
+      "source_folder": "Cochrane/all/p119",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p119/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "PLAN 14",
+        "LOT 190"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "24 Sep 2012",
+      "price_text": "$560,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "AMV Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Maria Biasone",
+        "11 Farm Gate Cres",
+        "Ottawa, Ontario",
+        "K2E 7N3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 14, Lot 190",
+      "",
+      "PIN: 04108-0217",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "06 14 063 401 59400",
+    "consideration_lines": [
+      "cash: $560,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5921 / 10920",
+      "rt_id": "RT89942"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "PLAN 14, LOT 190",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/24/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "560000",
+    "cash": "560000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04108-0217",
+    "rollno": "06 14 063 401 59400"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "PLAN 14",
+      "LOT 190"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "24 Sep 2012",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "AMV Holdings Inc"
+    ],
+    "price_text": "$560,000"
+  }
+}

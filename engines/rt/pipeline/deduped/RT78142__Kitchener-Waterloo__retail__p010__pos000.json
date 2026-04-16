@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT78142",
+  "source_folder": "Kitchener-Waterloo/retail/p010",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT78142",
+      "source_folder": "Kitchener-Waterloo/retail/p010",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p010/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 KING ST W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Apr 2011",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "536357 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Aldo DiBattista",
+        "195 King St W, Ste 201",
+        "Kitchener, Ontario",
+        "N2G 1B1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 380, Part Lot 12 & 13",
+      "As in Inst No 337752",
+      "",
+      "PIN: 22427-0040",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "30 12 050 001 02400",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Christine Teigen",
+      "principal: $325,000   rate: 5.0% per annum",
+      "registered: 04/01/2011   due: 04/01/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78142/0827_102840.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78142/0827_102852.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78142/0827_102908.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT781/RT78142/air1.jpg",
+        "/assets/files/RT7/RT781/RT78142/air2.jpg",
+        "/assets/files/RT7/RT781/RT78142/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "451 / 752",
+      "rt_id": "RT78142"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "161 KING ST W",
+    "postcode": "N2G 1A7",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/01/2011",
+    "desc": "Retail Bldg - 2 storey",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "22427-0040",
+    "rollno": "30 12 050 001 02400"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "161 KING ST W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Apr 2011",
+    "note": "",
+    "description": "Retail Bldg - 2 storey",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "536357 Ontario Ltd"
+    ],
+    "price_text": "$525,000"
+  }
+}

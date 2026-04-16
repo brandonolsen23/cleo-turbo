@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT188772",
+  "source_folder": "Victoria/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188772",
+      "source_folder": "Victoria/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "7561 HIGHWAY 35",
+        "7561 HWY 35"
+      ],
+      "city_region": "Kawartha Lakes : Victoria",
+      "date_text": "27 Nov 2024",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2782153 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "97 Rosedale Trail",
+        "Fenelon Falls, Ontario",
+        "K0M 1N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000889654 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bedriye Ginik",
+        "926 Willowdale Ave",
+        "North York, Ontario",
+        "M2M 3C1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11 - Laxton, Part Lots 6 & 7",
+      "As in Inst No R-413476",
+      "",
+      "PIN: 63113-0258",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "16 51 420 001 44100",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Parama Credit Union Ltd",
+      "principal: $1,250,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/27/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188772/0101_142313a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188772/0101_142313b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188772/0101_142339.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1887/RT188772/0101_142340.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 49",
+      "rt_id": "RT188772"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "7561 HIGHWAY 35, 7561 HWY 35",
+    "postcode": "K0M 2L0",
+    "municipality": "Kawartha Lakes",
+    "region": "Victoria",
+    "date": "11/27/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "2300000",
+    "cash": "2300000",
+    "debt": "",
+    "note": "",
+    "pin": "63113-0258",
+    "rollno": "16 51 420 001 44100"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "7561 HIGHWAY 35",
+      "7561 HWY 35"
+    ],
+    "city_region": "Kawartha Lakes : Victoria",
+    "date_text": "27 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2782153 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000889654 Ontario Inc"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

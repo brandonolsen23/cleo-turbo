@@ -1,0 +1,137 @@
+{
+  "rt_id": "RT15888",
+  "source_folder": "Wellington/retail/p006",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15888",
+      "source_folder": "Wellington/retail/p006",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p006/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "666 WOOLWICH ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "12 Nov 1999",
+      "price_text": "$3,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Truscan Property Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: John E. Harris",
+        "110 Yonge St, Ste 1210",
+        "Toronto, Ontario",
+        "M5C 1T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Avila Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Piero Bagnara",
+        "232A Guelph St, Ste 206",
+        "Georgetown, Ontario",
+        "L7G 4B1"
+      ]
+    },
+    "description_lines": [
+      "Neighbourhood Shopping Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Division A, Part Lot 19",
+      "",
+      "nw corner at speedvale rd e"
+    ],
+    "arn_text": "23 08 040 007 26100",
+    "consideration_lines": [
+      "cash: $3,175,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1924484 Ontario Inc",
+      "principal: $1,100,000   rate: 3.0% per annum.",
+      "registered: 03/01/2021   due: 12/30/2021",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union",
+      "principal: $946,085   rate: Prime plus 10.0% per annum.",
+      "registered: 02/24/2021   due: on demand",
+      "",
+      "chargee: FusionTrust Mortgage Investment Corp",
+      "principal: $933,000   rate: 7.99% per annum, interest only.",
+      "registered: 03/05/2021   due: 09/05/2021",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $963,750   rate: Prime plus 5.0% per annum.",
+      "registered: 03/02/2021   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $960,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/01/2021   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $35,090,050   rate: Prime plus 6.0% per annum.",
+      "registered: 03/12/2021   due: on demand",
+      "",
+      "chargee: Alterna Savings and Credit Union Ltd",
+      "principal: $11,300,000   rate: 18.0% per annum.",
+      "registered: 03/12/2021   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT158/RT15888/photo.jpg"
+    },
+    "footer": {
+      "page_position": "261 / 269",
+      "rt_id": "RT15888"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "666 WOOLWICH ST",
+    "postcode": "N1H 7G5",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "11/12/1999",
+    "desc": "Neighbourhood Shopping Centre",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3175000",
+    "cash": "3175000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 040 007 26100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "666 WOOLWICH ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "12 Nov 1999",
+    "note": "",
+    "description": "Neighbourhood Shopping Centre",
+    "seller_lines": [
+      "Truscan Property Corp"
+    ],
+    "buyer_lines": [
+      "Avila Investments Ltd"
+    ],
+    "price_text": "$3,175,000"
+  }
+}

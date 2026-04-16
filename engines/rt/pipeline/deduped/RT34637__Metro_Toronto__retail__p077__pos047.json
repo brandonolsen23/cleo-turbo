@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT34637",
+  "source_folder": "Metro_Toronto/retail/p077",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34637",
+      "source_folder": "Metro_Toronto/retail/p077",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p077/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "1009 & 1011 GERRARD ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "19 Mar 2004",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1011 Gerrard Street East Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roni Boshari",
+        "510 King St E, Ste 220",
+        "Toronto, Ontario",
+        "M5A 1M1"
+      ]
+    },
+    "description_lines": [
+      "Supermarket"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-105, Block C,",
+      "Part Lots 1 & 2",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT346/RT34637/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3848 / 4952",
+      "rt_id": "RT34637"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "1009 & 1011 GERRARD ST E",
+    "postcode": "M4M 1Z4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/19/2004",
+    "desc": "Supermarket",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "1009 & 1011 GERRARD ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "19 Mar 2004",
+    "note": "",
+    "description": "Supermarket",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1011 Gerrard Street East Investments Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

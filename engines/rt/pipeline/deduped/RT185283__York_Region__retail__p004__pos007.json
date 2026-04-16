@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT185283",
+  "source_folder": "York_Region/retail/p004",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185283",
+      "source_folder": "York_Region/retail/p004",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "14824 YONGE ST"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "11 Jun 2024",
+      "price_text": "$6,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Liquor Control Board of Ontario     800-668-5226"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "100 Queens Quay E, 9th Flr",
+        "Toronto, Ontario",
+        "M5E 0C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Regional Municipality of York     877-464-9675"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Laura Mijares",
+        "17250 Yonge St",
+        "Newmarket, Ontario",
+        "L3Y 6Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 246 - Aurora, Part Lot 82",
+      "As in Inst No A-52422A",
+      "Except:",
+      "Plan 65R-22753, Part 3",
+      "",
+      "PIN: 03660-0754",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "19 46 000 031 45500",
+    "consideration_lines": [
+      "cash: $6,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1852/RT185283/0622_142701.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1852/RT185283/0622_142712.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1852/RT185283/0622_142713.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1852/RT185283/0622_142714.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1852/RT185283/0622_142816.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1852/RT185283/0622_142817.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "158 / 984",
+      "rt_id": "RT185283"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "14824 YONGE ST",
+    "postcode": "L4G 1N3",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "06/11/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".78",
+    "consid": "6000000",
+    "cash": "6000000",
+    "debt": "",
+    "note": "",
+    "pin": "03660-0754",
+    "rollno": "19 46 000 031 45500"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "14824 YONGE ST"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "11 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Liquor Control Board of Ontario"
+    ],
+    "buyer_lines": [
+      "The Regional Municipality of York"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

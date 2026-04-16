@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT48409",
+  "source_folder": "Metro_Toronto/multifamily/p081",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48409",
+      "source_folder": "Metro_Toronto/multifamily/p081",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p081/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "180 CRESCENT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 May 2006",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Winterberry Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Berry",
+        "124 Park Rd",
+        "Toronto, Ontario",
+        "M4W 2N7"
+      ]
+    },
+    "description_lines": [
+      "FourPlex - 3 storey; 4 units @ $575,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-22253, Part 1",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "19 04 101 580 00300",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Sheila Waengler",
+      "principal: $1,600,000   rate: 5.0% per annum",
+      "registered: 05/02/2006   due: 05/01/2011"
+    ],
+    "broker_lines": [
+      "Chestnut Park Real Estate: Sheila Waengler, 416-925-9191"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT484/RT48409/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4022 / 6031",
+      "rt_id": "RT48409"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "180 CRESCENT RD",
+    "postcode": "M4W 1V3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/02/2006",
+    "desc": "FourPlex - 3 storey; 4 units @ $575,000",
+    "bldg": "4 units",
+    "acreage": ".22",
+    "consid": "2300000",
+    "cash": "2300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 101 580 00300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "180 CRESCENT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 May 2006",
+    "note": "",
+    "description": "FourPlex - 3 storey; 4 units @ $575,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Winterberry Investments Ltd"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

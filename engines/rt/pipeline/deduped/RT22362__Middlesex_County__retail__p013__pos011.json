@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT22362",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22362",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1021 WONDERLAND RD S"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "23 Jul 2001",
+      "price_text": "$1,170,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "The Royal Trust Corp of Canada     514-284-6711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Paul-Aime Cloutier",
+        "Standard Life Insurance",
+        "1245 Sherbrooke St W",
+        "Montreal, Quebec",
+        "H3G 1G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2004145 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chris Barrett",
+        "TJ Tadeson",
+        "145 Adelaide St W, Ste 500",
+        "Toronto, Ontario",
+        "M5H 4E5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33M-112, Block 4",
+      "",
+      "0.95 acre"
+    ],
+    "arn_text": "39 36 070 142 01000",
+    "consideration_lines": [
+      "cash: $310,000     assumed/vtb debt: $860,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT223/RT22362/photo.jpg"
+    },
+    "footer": {
+      "page_position": "612 / 686",
+      "rt_id": "RT22362"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1021 WONDERLAND RD S",
+    "postcode": "N6K 3V1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "07/23/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".95",
+    "consid": "1170000",
+    "cash": "310000",
+    "debt": "860000",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "39 36 070 142 01000"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1021 WONDERLAND RD S"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "23 Jul 2001",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "The Royal Trust Corp of Canada"
+    ],
+    "buyer_lines": [
+      "2004145 Ontario Ltd"
+    ],
+    "price_text": "$1,170,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT28423",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28423",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "2460 DUFFERIN ST"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "09 Jan 2003",
+      "price_text": "$1,073,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wood-Larkin Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Wood",
+        "6649 Concession 4, RR 1",
+        "Goodwood, Ontario",
+        "L0C 1A0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2015139 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Chan",
+        "2460 Dufferin St",
+        "Toronto, Ontario",
+        "M6E 3T3"
+      ]
+    },
+    "description_lines": [
+      "Hyundai Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - WYS, Part Lot 1",
+      "As in Inst No CY-407367",
+      "Except Plan as in Inst No CY-485870"
+    ],
+    "arn_text": "19 14 043 040 00200",
+    "consideration_lines": [
+      "cash: $1,073,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT284/RT28423/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4065 / 4952",
+      "rt_id": "RT28423"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "2460 DUFFERIN ST",
+    "postcode": "M6E 3T3",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "01/09/2003",
+    "desc": "Hyundai Car Dealership",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1073000",
+    "cash": "1073000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 043 040 00200"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "2460 DUFFERIN ST"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "09 Jan 2003",
+    "note": "",
+    "description": "Hyundai Car Dealership",
+    "seller_lines": [
+      "Wood-Larkin Ltd"
+    ],
+    "buyer_lines": [
+      "2015139 Ontario Inc"
+    ],
+    "price_text": "$1,073,000"
+  }
+}

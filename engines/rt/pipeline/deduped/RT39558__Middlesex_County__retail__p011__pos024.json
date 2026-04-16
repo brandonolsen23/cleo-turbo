@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT39558",
+  "source_folder": "Middlesex_County/retail/p011",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39558",
+      "source_folder": "Middlesex_County/retail/p011",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p011/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1438 ALDERSBROOK RD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "07 Jan 2005",
+      "price_text": "$845,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2056424 Ontario Inc     519-474-1828"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jong Choi",
+        "1438 Aldersbrook Rd",
+        "London, Ontario",
+        "N6G 3V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-26, Block J",
+      "",
+      "1.01 acre"
+    ],
+    "arn_text": "39 36 010 642 27300",
+    "consideration_lines": [
+      "cash: $845,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "525 / 686",
+      "rt_id": "RT39558"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1438 ALDERSBROOK RD",
+    "postcode": "N6G 3V7",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "01/07/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.01",
+    "consid": "845000",
+    "cash": "845000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 010 642 27300"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1438 ALDERSBROOK RD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "07 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2056424 Ontario Inc"
+    ],
+    "price_text": "$845,000"
+  }
+}

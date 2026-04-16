@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT123087",
+  "source_folder": "Cochrane/all/p082",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123087",
+      "source_folder": "Cochrane/all/p082",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p082/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "177 KING EDWARD AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "05 Dec 2016",
+      "price_text": "$895,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1304251 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Scott",
+        "287 Richmond Rd",
+        "Ottawa, Ontario",
+        "K1Z 6X4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sleepwell Management Corp     613-521-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Conrad Pool",
+        "423 Bronson Ave",
+        "Ottawa, Ontario",
+        "K1R 6J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-4132, Part 1",
+      "",
+      "PIN: 04218-0021",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "06 14 020 801 55400",
+    "consideration_lines": [
+      "cash: $895,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1230/RT123087/0624_080308.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1230/RT123087/0624_080317.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1230/RT123087/0624_080341.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4053 / 10920",
+      "rt_id": "RT123087"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "177 KING EDWARD AVE",
+    "postcode": "K1N 7L4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/05/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "895000",
+    "cash": "895000",
+    "debt": "",
+    "note": "",
+    "pin": "04218-0021",
+    "rollno": "06 14 020 801 55400"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "177 KING EDWARD AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "05 Dec 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1304251 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Sleepwell Management Corp"
+    ],
+    "price_text": "$895,000"
+  }
+}

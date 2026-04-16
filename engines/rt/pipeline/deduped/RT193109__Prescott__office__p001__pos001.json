@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT193109",
+  "source_folder": "Prescott/office/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193109",
+      "source_folder": "Prescott/office/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prescott/office/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "480 MCGILL ST W",
+        "514 MCGILL ST W"
+      ],
+      "city_region": "Hawkesbury : Prescott",
+      "date_text": "26 Jun 2025",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CK Hawkesbury Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1750 Springfield Rd",
+        "Kelowna, British Columbia",
+        "V1Y 5V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "7857691 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: S. Shanmugalingam",
+        "748 Stonepath Circle",
+        "Pickering, Ontario",
+        "L1V 3T1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 46R-2758, Part 1",
+      "Plan 46R-5000, Part 1",
+      "Plan M-12, Part Lot 15",
+      "",
+      "PIN: 54167-0590 +",
+      "",
+      "1.35 acre"
+    ],
+    "arn_text": "02 08 050 001 05805 +",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 4",
+      "rt_id": "RT193109"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "480 MCGILL ST W, 514 MCGILL ST W",
+    "postcode": "K6A 1R2",
+    "municipality": "Hawkesbury",
+    "region": "Prescott",
+    "date": "06/26/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.35",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "54167-0590+",
+    "rollno": "02 08 050 001 05805+"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "480 MCGILL ST W",
+      "514 MCGILL ST W"
+    ],
+    "city_region": "Hawkesbury : Prescott",
+    "date_text": "26 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "CK Hawkesbury Corp"
+    ],
+    "buyer_lines": [
+      "7857691 Canada Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

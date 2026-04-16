@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT30250",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30250",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2700 KIPLING AVE"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "30 May 2003",
+      "price_text": "$3,075,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Modumore Investments Co Ltd     905-771-0817"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chong Hun An",
+        "38 Piccadilly Ave",
+        "Richmond Hill, Ontario",
+        "L4S 1S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ladd Property Holdings Inc     905-893-2001"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dominic Renda",
+        "Brian Sheldrick, Atty",
+        "171 Nashville Rd",
+        "Kleinburg, Ontario",
+        "L0J 1C0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1635, Block D",
+      "",
+      "1.99 acre"
+    ],
+    "arn_text": "19 19 043 243 00300",
+    "consideration_lines": [
+      "cash: $3,075,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT302/RT30250/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4006 / 4952",
+      "rt_id": "RT30250"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2700 KIPLING AVE",
+    "postcode": "M9V 4P2",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "05/30/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.99",
+    "consid": "3075500",
+    "cash": "3075500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 043 243 00300"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2700 KIPLING AVE"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "30 May 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Modumore Investments Co Ltd"
+    ],
+    "buyer_lines": [
+      "Ladd Property Holdings Inc"
+    ],
+    "price_text": "$3,075,500"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT180433",
+  "source_folder": "Renfrew/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180433",
+      "source_folder": "Renfrew/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "910 OBRIEN RD"
+      ],
+      "city_region": "Renfrew : Renfrew",
+      "date_text": "21 Sep 2023",
+      "price_text": "$5,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "SBLP Renfrew Shopping Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "130 Bloor St W, Ste 300",
+        "Toronto, Ontario",
+        "M5S 1N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Long Holdings Inc     905-837-9785"
+      ],
+      "trade_name": "Long & McQuade",
+      "contact_lines": [
+        "Attn: Stephan Leenheer",
+        "590 Granite Ct",
+        "Pickering, Ontario",
+        "L1W 3X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Horton, Part Lot 10",
+      "Plan 49R-15187, Part 1",
+      "",
+      "PIN: 57611-0383",
+      "",
+      "1.90 acre"
+    ],
+    "arn_text": "47 48 000 020 17513",
+    "consideration_lines": [
+      "cash: $5,125,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 52",
+      "rt_id": "RT180433"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "910 OBRIEN RD",
+    "postcode": "K7V 0B4",
+    "municipality": "Renfrew",
+    "region": "Renfrew",
+    "date": "09/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.9",
+    "consid": "5125000",
+    "cash": "5125000",
+    "debt": "",
+    "note": "",
+    "pin": "57611-0383",
+    "rollno": "47 48 000 020 17513"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "910 OBRIEN RD"
+    ],
+    "city_region": "Renfrew : Renfrew",
+    "date_text": "21 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "SBLP Renfrew Shopping Centre Inc"
+    ],
+    "buyer_lines": [
+      "Long Holdings Inc"
+    ],
+    "price_text": "$5,125,000"
+  }
+}

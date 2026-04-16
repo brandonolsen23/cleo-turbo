@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT23145",
+  "source_folder": "Metro_Toronto/multifamily/p109",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23145",
+      "source_folder": "Metro_Toronto/multifamily/p109",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p109/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1545 BATHURST ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Sep 2001",
+      "price_text": "$4,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Le Heath Inc     416-787-6529"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Elizabeth Loong",
+        "John Spina",
+        "Barrister & Solictor",
+        "970 Lawrence Ave W, Ste 900",
+        "Toronto, Ontario",
+        "M6A 3B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Montclair Ventures Inc     416-962-5604"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Stanley Zipkin",
+        "Cromwell Management Inc",
+        "55 Isabella St, Ste 105",
+        "Toronto, Ontario",
+        "M4Y 1M8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 5 storey; 56 units @ $84,821",
+      "",
+      "44-1bdrm 12-bach",
+      "",
+      "Last transferred in Dec 96 for $2,200,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1688, Lots 36-38",
+      "",
+      "SE corner at Montclair Ave",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "19 04 111 150 00100",
+    "consideration_lines": [
+      "cash: $4,250,000     assumed/vtb debt: $500,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT231/RT23145/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5411 / 6031",
+      "rt_id": "RT23145"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1545 BATHURST ST",
+    "postcode": "M5P 3H6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/07/2001",
+    "desc": "Apartment Bldg - 5 storey; 56 units @ $84,821",
+    "bldg": "56 units",
+    "acreage": ".42",
+    "consid": "4750000",
+    "cash": "4250000",
+    "debt": "500000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 111 150 00100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1545 BATHURST ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Sep 2001",
+    "note": "",
+    "description": "Apartment Bldg - 5 storey; 56 units @ $84,821",
+    "seller_lines": [
+      "Le Heath Inc"
+    ],
+    "buyer_lines": [
+      "Montclair Ventures Inc"
+    ],
+    "price_text": "$4,750,000"
+  }
+}

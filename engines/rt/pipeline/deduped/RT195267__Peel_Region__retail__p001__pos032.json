@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT195267",
+  "source_folder": "Peel_Region/retail/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195267",
+      "source_folder": "Peel_Region/retail/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 PERTOSA DR",
+        "UNIT 2"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "06 Nov 2025",
+      "price_text": "$2,175,000",
+      "note": "Purchase Agreement"
+    },
+    "transferor": {
+      "party_lines": [
+        "2559191 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "80 Pertosa Dr, Unit 2",
+        "Brampton, Ontario",
+        "L6X 2E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2762756 Ontario Inc     905-676-1212"
+      ],
+      "trade_name": "Royal Dubai Jewellers",
+      "contact_lines": [
+        "Attn: Shiv Kumar",
+        "7146 Airport Rd",
+        "Mississauga, Ontario",
+        "L4t 2H1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 746",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 19746-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,175,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195267/1115_125852.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195267/1115_125907.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195267/1115_125912.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195267/1115_125916.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195267/1115_125922.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195267/1115_130056.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 1087",
+      "rt_id": "RT195267"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "80 PERTOSA DR, UNIT 2",
+    "postcode": "L6X 5E9",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "11/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2175000",
+    "cash": "2175000",
+    "debt": "",
+    "note": "Purchase Agreement",
+    "pin": "19746-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "80 PERTOSA DR",
+      "UNIT 2"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "06 Nov 2025",
+    "note": "Purchase Agreement",
+    "description": "",
+    "seller_lines": [
+      "2559191 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2762756 Ontario Inc"
+    ],
+    "price_text": "$2,175,000"
+  }
+}

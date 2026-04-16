@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT34167",
+  "source_folder": "Metro_Toronto/retail/p078",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34167",
+      "source_folder": "Metro_Toronto/retail/p078",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p078/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "2306 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Feb 2004",
+      "price_text": "$812,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Gilhaven Investments Ltd     416-239-4572"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Donald Wilkie",
+        "51 Firwood Cres",
+        "Islington, Ontario",
+        "M9B 2W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 2 storey; 1,604 sf @ $507",
+      "",
+      "Office or apartment over 780 sf store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 448, Part Lot 75",
+      "As in Inst No CT-630867",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 012 090 09500",
+    "consideration_lines": [
+      "cash: $812,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT341/RT34167/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3866 / 4952",
+      "rt_id": "RT34167"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "2306 BLOOR ST W",
+    "postcode": "M6S 1P2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/02/2004",
+    "desc": "Retail/Res Bldg - 2 storey; 1,604 sf @ $507",
+    "bldg": "1,604 sf",
+    "acreage": ".03",
+    "consid": "812500",
+    "cash": "812500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 012 090 09500"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "2306 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Feb 2004",
+    "note": "",
+    "description": "Retail/Res Bldg - 2 storey; 1,604 sf @ $507",
+    "seller_lines": [
+      "Gilhaven Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$812,500"
+  }
+}

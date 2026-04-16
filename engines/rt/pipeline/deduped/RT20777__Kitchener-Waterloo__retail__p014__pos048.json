@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20777",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20777",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "238 - 262 KING ST W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Mar 2001",
+      "price_text": "$2,400,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "The Imperial Life Assurance Co of Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Bernard Tourigny",
+        "95 St Clair Ave W",
+        "Toronto, Ontario",
+        "M4V 1N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1420111 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Laura Philp",
+        "c/o 82 Lowther Ave",
+        "Toronto, Ontario",
+        "M5R 1E1"
+      ]
+    },
+    "description_lines": [
+      "Com/Retail Bldg - 2 storey; includes a movie theatre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 374, Lots 151 & 152",
+      "As in Inst No 845373",
+      "",
+      "NW corner at College",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "30 12 020 001 03600",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT207/RT20777/photo.jpg"
+    },
+    "footer": {
+      "page_position": "699 / 752",
+      "rt_id": "RT20777"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "238 - 262 KING ST W",
+    "postcode": "N2G 1B6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/01/2001",
+    "desc": "Com/Retail Bldg - 2 storey; includes a movie theatre",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "30 12 020 001 03600"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "238 - 262 KING ST W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Mar 2001",
+    "note": "Power of Sale",
+    "description": "Com/Retail Bldg - 2 storey; includes a movie theatre",
+    "seller_lines": [
+      "The Imperial Life Assurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "1420111 Ontario Ltd"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

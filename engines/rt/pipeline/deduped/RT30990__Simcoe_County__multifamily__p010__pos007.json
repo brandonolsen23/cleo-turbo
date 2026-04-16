@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT30990",
+  "source_folder": "Simcoe_County/multifamily/p010",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30990",
+      "source_folder": "Simcoe_County/multifamily/p010",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/multifamily/p010/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "61 MISSISSAGA ST E"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "27 Jun 2003",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1566040 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Emmanuel Mendez",
+        "169 McClure Dr",
+        "King City, Ontario",
+        "L7B 1C1"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-21894",
+      "Parts 1-5, 8-10"
+    ],
+    "arn_text": "43 52 010 101 02300",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT309/RT30990/photo.jpg"
+    },
+    "footer": {
+      "page_position": "458 / 530",
+      "rt_id": "RT30990"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "61 MISSISSAGA ST E",
+    "postcode": "L3V 1V4",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "06/27/2003",
+    "desc": "Retail/Res Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 52 010 101 02300"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "61 MISSISSAGA ST E"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "27 Jun 2003",
+    "note": "",
+    "description": "Retail/Res Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1566040 Ontario Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT29417",
+  "source_folder": "Cochrane/all/p195",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29417",
+      "source_folder": "Cochrane/all/p195",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p195/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "5530 MANOTICK MAIN ST",
+        "5531 ANNE ST",
+        "ANNE ST"
+      ],
+      "city_region": "Manotick : Ottawa-Carleton",
+      "date_text": "28 Feb 2003",
+      "price_text": "$665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1222193 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nicholas Sagos",
+        "312 O'Connor St, Ste 2",
+        "Ottawa, Ontario",
+        "K2P 1V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1301965 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "278 Greenbank Rd",
+        "Ottawa, Ontario",
+        "K2C 3H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-18346, Parts 1-5",
+      "Plan 4R-12443, Part 2",
+      "Except Plan 5R-4224",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "06 14 183 810 06600 +",
+    "consideration_lines": [
+      "cash: $665,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9706 / 10920",
+      "rt_id": "RT29417"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "5530 MANOTICK MAIN ST, 5531 ANNE ST, ANNE ST",
+    "postcode": "",
+    "municipality": "Manotick",
+    "region": "Ottawa-Carleton",
+    "date": "02/28/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "665000",
+    "cash": "665000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 183 810 06600+"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "5530 MANOTICK MAIN ST",
+      "5531 ANNE ST",
+      "ANNE ST"
+    ],
+    "city_region": "Manotick : Ottawa-Carleton",
+    "date_text": "28 Feb 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1222193 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1301965 Ontario Inc"
+    ],
+    "price_text": "$665,000"
+  }
+}

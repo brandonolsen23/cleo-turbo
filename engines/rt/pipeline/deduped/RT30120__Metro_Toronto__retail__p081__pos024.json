@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT30120",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30120",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1361 - 1381 WILSON AVE"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "30 Apr 2003",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "R. Steger Co Ltd     416-787-6384"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Samuel Katzman",
+        "90 Playfair Ave",
+        "Toronto, Ontario",
+        "M6B 2R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1279388 Ontario Ltd     905-832-3970"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ivano Petricca",
+        "220 Findhorn Cres",
+        "Vaughan, Ontario",
+        "L6A 1M4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 & 2 storey; 14 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3649, Part Lots 68-71",
+      "As in Inst No NY-494319",
+      "Except:",
+      "Exprop Plan 8138, Part Lot 19",
+      "As in Inst No NY-513164",
+      "",
+      "1.07 acre"
+    ],
+    "arn_text": "19 08 032 120 01500",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $1,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT301/RT30120/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4025 / 4952",
+      "rt_id": "RT30120"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1361 - 1381 WILSON AVE",
+    "postcode": "M3M 1H7",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "04/30/2003",
+    "desc": "Retail Plaza - 1 & 2 storey; 14 units",
+    "bldg": "",
+    "acreage": "1.07",
+    "consid": "1200000",
+    "cash": "200000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 032 120 01500"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1361 - 1381 WILSON AVE"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "30 Apr 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 & 2 storey; 14 units",
+    "seller_lines": [
+      "R. Steger Co Ltd"
+    ],
+    "buyer_lines": [
+      "1279388 Ontario Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

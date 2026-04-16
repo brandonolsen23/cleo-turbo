@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT13219",
+  "source_folder": "Metro_Toronto/retail/p098",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13219",
+      "source_folder": "Metro_Toronto/retail/p098",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p098/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "4242 DUNDAS ST W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "20 Oct 1998",
+      "price_text": "$10,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sing Tao (Canada) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Herbert Moon",
+        "417 Dundas St W",
+        "Toronto, Ontario",
+        "M5T 1G4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1170700 & 1170702 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Philip Abramson",
+        "1210 Sheppard Ave E, Ste 214",
+        "Toronto, Ontario",
+        "M2K 1E3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-10968, Parts 1 - 4",
+      "Plan 64R-11038, Part 1",
+      "Plan RS-139, Part 1",
+      "Plan 122, Pt Lot 1"
+    ],
+    "arn_text": "19 19 011 120 03000",
+    "consideration_lines": [
+      "cash: $10,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Matdan Enterprises Inc",
+      "principal: $500,000   rate: 10.0% per annum.",
+      "registered: 01/31/2018   due: 02/01/2019",
+      "",
+      "chargee: Matdan Enterprises Inc",
+      "principal: $500,000   rate: 7.0% per annum.",
+      "registered: 01/31/2018   due: 02/01/2019",
+      "",
+      "chargee: 792873 Ontario Ltd",
+      "principal: $425,000   rate: 7.0% per annum.",
+      "registered: 01/31/2018   due: 02/01/2020",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $200,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 01/11/2017   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $460,000   rate: Prime plus 10.0% per annum.",
+      "registered: 02/22/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT132/RT13219/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4874 / 4952",
+      "rt_id": "RT13219"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "4242 DUNDAS ST W",
+    "postcode": "M8X 1Y6",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "10/20/1998",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "10250000",
+    "cash": "10250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 011 120 03000"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "4242 DUNDAS ST W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "20 Oct 1998",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Sing Tao (Canada) Ltd"
+    ],
+    "buyer_lines": [
+      "1170700 & 1170702 Ontario Inc"
+    ],
+    "price_text": "$10,250,000"
+  }
+}

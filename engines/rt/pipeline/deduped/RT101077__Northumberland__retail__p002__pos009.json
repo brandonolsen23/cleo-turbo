@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT101077",
+  "source_folder": "Northumberland/retail/p002",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT101077",
+      "source_folder": "Northumberland/retail/p002",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p002/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "369 ONTARIO ST"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "18 Jun 2014",
+      "price_text": "$1,600,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Shell Canada Ltd     416-227-7111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerry Beelen",
+        "90 Sheppard Ave E, Ste 900",
+        "Toronto, Ontario",
+        "M2N 6Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Black Gold Operating Group Inc     416-438-5805"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Adam Bholat",
+        "18 Fulham St",
+        "Scarborough, Ontario",
+        "M1S 2A4"
+      ]
+    },
+    "description_lines": [
+      "Convenience Store & Gas Bar",
+      "",
+      "1,500 sf convenience store",
+      "4 pumps"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 11, Part Lots 2 & 3",
+      "E/S Ontario St",
+      "As in Inst In PH-53811",
+      "",
+      "PIN: 51078-0300",
+      "",
+      "SE corner Ontario St and Phillips Rd",
+      "",
+      "0.51 acre"
+    ],
+    "arn_text": "14 23 125 010 01800",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Shell Canada Ltd",
+      "principal: $500,000",
+      "registered: 06/18/0214   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1010/RT101077/0831_072002.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1010/RT101077/0831_072005.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1010/RT101077/0831_072107.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1010/RT101077/0831_072112.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "60 / 93",
+      "rt_id": "RT101077"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "369 ONTARIO ST",
+    "postcode": "L1A 2W4",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "06/18/2014",
+    "desc": "Convenience Store & Gas Bar",
+    "bldg": "",
+    "acreage": ".51",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "51078-0300",
+    "rollno": "14 23 125 010 01800"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "369 ONTARIO ST"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "18 Jun 2014",
+    "note": "Portfolio",
+    "description": "Convenience Store & Gas Bar",
+    "seller_lines": [
+      "Shell Canada Ltd"
+    ],
+    "buyer_lines": [
+      "Black Gold Operating Group Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

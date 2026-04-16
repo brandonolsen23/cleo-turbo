@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT123849",
+  "source_folder": "Peel_Region/retail/p009",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123849",
+      "source_folder": "Peel_Region/retail/p009",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p009/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "406 LAKESHORE RD E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "15 Mar 2017",
+      "price_text": "$6,665,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "M and S Solomon Family Holdings Ltd     519-438-9578"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Solomon",
+        "33 Cherokee Rd",
+        "London, Ontario",
+        "N6G 2N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Metro Ontario Real Estate Ltd     416-239-7171"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Allaire",
+        "25 Vickers Rd",
+        "Building A, 1st Flr",
+        "Etobicoke, Ontario",
+        "M9B 1C1"
+      ]
+    },
+    "description_lines": [
+      "Metro Supermarket: 1 storey; 20,386 sf @ $327",
+      "",
+      "The property was purchased by its tenant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - SDS, Part Lot 12",
+      "As in Inst No VS-179612",
+      "",
+      "PIN: 13486-0250",
+      "",
+      "S side Lakeshore Rd E, W of Enola Ave",
+      "",
+      "1.52 acre"
+    ],
+    "arn_text": "21 05 010 002 19400",
+    "consideration_lines": [
+      "cash: $6,665,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1238/RT123849/0324_081221.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1238/RT123849/0324_081231.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1238/RT123849/0324_081343.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1238/RT123849/0324_081348.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1238/RT123849/0324_081401.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "412 / 1087",
+      "rt_id": "RT123849"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "406 LAKESHORE RD E",
+    "postcode": "L5G 1H5",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "03/15/2017",
+    "desc": "Metro Supermarket: 1 storey; 20,386 sf @ $327",
+    "bldg": "20,386 sf",
+    "acreage": "1.52",
+    "consid": "6665000",
+    "cash": "6665000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "13486-0250",
+    "rollno": "21 05 010 002 19400"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "406 LAKESHORE RD E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "15 Mar 2017",
+    "note": "Purchased by Tenant",
+    "description": "Metro Supermarket: 1 storey; 20,386 sf @ $327",
+    "seller_lines": [
+      "M and S Solomon Family Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Metro Ontario Real Estate Ltd"
+    ],
+    "price_text": "$6,665,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT184829",
+  "source_folder": "Kitchener-Waterloo/retail/p002",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184829",
+      "source_folder": "Kitchener-Waterloo/retail/p002",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p002/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "170 HIGHLAND RD W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "14 May 2024",
+      "price_text": "$1,700,001",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Bloor St W",
+        "PO Box 1417",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2795633 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sandeep Chaurhari",
+        "925 Deveonshire Ave, Unit 2",
+        "Woodstock, Ontario",
+        "N4S 5S1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 739,",
+      "Lots 30, 31 & Part Lot 29",
+      "As in Inst No 197640",
+      "",
+      "PIN: 22442-0131",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "30 12 050 005 09100",
+    "consideration_lines": [
+      "cash: $1,700,001     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184829/0608_121527.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184829/0608_121625.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184829/0608_121705.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184829/0608_121720.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184829/0608_121738.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "96 / 752",
+      "rt_id": "RT184829"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "170 HIGHLAND RD W",
+    "postcode": "N2M 3C2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "05/14/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".37",
+    "consid": "1700001",
+    "cash": "1700001",
+    "debt": "",
+    "note": "",
+    "pin": "22442-0131",
+    "rollno": "30 12 050 005 09100"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "170 HIGHLAND RD W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "14 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "2795633 Ontario Inc"
+    ],
+    "price_text": "$1,700,001"
+  }
+}

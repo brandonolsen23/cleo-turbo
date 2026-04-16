@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT48563",
+  "source_folder": "Metro_Toronto/multifamily/p081",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48563",
+      "source_folder": "Metro_Toronto/multifamily/p081",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p081/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "5 DONLANDS AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 May 2006",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1568601 Ontario Ltd     416-391-1447"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Abu Chowdhury",
+        "75 Graydon Hall Dr",
+        "Unit 1202",
+        "Toronto, Ontario",
+        "M3A 3M5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1653681 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Enzo Mizzi",
+        "145 Royal Crest Ct, Unit 6",
+        "Markham, Ontario",
+        "L3R 9Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 551-E",
+      "Lot 1, Part Lot 2",
+      "As in Inst No CA-506750",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 085 360 00100",
+    "consideration_lines": [
+      "cash: $403,417     assumed/vtb debt: $1,396,583",
+      "",
+      "chargee: 1568601 Ontario Inc",
+      "principal: $360,000   rate: 4.0% per annum",
+      "registered: 05/12/2006   due: 10/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT485/RT48563/air1.jpg",
+        "/assets/files/RT4/RT485/RT48563/air2.jpg",
+        "/assets/files/RT4/RT485/RT48563/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT485/RT48563/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4014 / 6031",
+      "rt_id": "RT48563"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "5 DONLANDS AVE",
+    "postcode": "M4J 3N5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/12/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "1800000",
+    "cash": "403417",
+    "debt": "1396583",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 085 360 00100"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "5 DONLANDS AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 May 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1568601 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1653681 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

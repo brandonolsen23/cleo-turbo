@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT106338",
+  "source_folder": "Oxford_County/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT106338",
+      "source_folder": "Oxford_County/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "1290 DUNDAS ST"
+      ],
+      "city_region": "Woodstock : Oxford County",
+      "date_text": "30 Jan 2015",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Turkstra Properties Inc     905-388-8220"
+      ],
+      "trade_name": "Turkstra Lumber",
+      "contact_lines": [
+        "VP: Peter Turkstra",
+        "1050 Upper Wellington St",
+        "Hamilton, Ontario",
+        "L9A 3S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hacienda Leasing Inc     519-458-8430"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Dubois",
+        "686681 Hwy 2, RR 1",
+        "Princeton, Ontario",
+        "N0J 1V0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 573",
+      "Lot 20 & Part Lot 23",
+      "As in Inst No 324144",
+      "",
+      "PIN: 00109-0010",
+      "",
+      "3.11 acre"
+    ],
+    "arn_text": "32 42 050 040 05100",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1063/RT106338/0228_071940.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1063/RT106338/0228_072057.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 96",
+      "rt_id": "RT106338"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "1290 DUNDAS ST",
+    "postcode": "N4S 7V9",
+    "municipality": "Woodstock",
+    "region": "Oxford County",
+    "date": "01/30/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.11",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "00109-0010",
+    "rollno": "32 42 050 040 05100"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "1290 DUNDAS ST"
+    ],
+    "city_region": "Woodstock : Oxford County",
+    "date_text": "30 Jan 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Turkstra Properties Inc"
+    ],
+    "buyer_lines": [
+      "Hacienda Leasing Inc"
+    ],
+    "price_text": "$630,000"
+  }
+}

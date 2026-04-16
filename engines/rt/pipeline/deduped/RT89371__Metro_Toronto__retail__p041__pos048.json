@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT89371",
+  "source_folder": "Metro_Toronto/retail/p041",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89371",
+      "source_folder": "Metro_Toronto/retail/p041",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p041/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "3279 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "07 Dec 2012",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2284592 Ontario Inc     905-883-9732"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gil Shcolyar",
+        "188 Brookside Rd",
+        "Richmond Hill, Ontario",
+        "L4C 9W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "C & C Tan Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yeping Tan",
+        "23 Bradenton Dr",
+        "North York, Ontario",
+        "M2H 1Y4"
+      ]
+    },
+    "description_lines": [
+      "Automotive Service Station & Gas Bar"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc C, Part Lot 21",
+      "Plan 66R-14610, Part 5",
+      "As in Inst No TB-513618",
+      "",
+      "PIN: 06518-0039 +",
+      "",
+      "0.62 acre"
+    ],
+    "arn_text": "19 01 072 010 00100",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,100,000   rate: Prime plus 5.0% per annum",
+      "registered: 12/07/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89371/1223_113235.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89371/1223_113329.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89371/1223_113357.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2049 / 4952",
+      "rt_id": "RT89371"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "3279 KINGSTON RD",
+    "postcode": "M1M 1P7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/07/2012",
+    "desc": "Automotive Service Station & Gas Bar",
+    "bldg": "",
+    "acreage": ".62",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "06518-0039+",
+    "rollno": "19 01 072 010 00100"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "3279 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "07 Dec 2012",
+    "note": "",
+    "description": "Automotive Service Station & Gas Bar",
+    "seller_lines": [
+      "2284592 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "C & C Tan Holdings Ltd"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

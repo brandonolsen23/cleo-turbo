@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT42952",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42952",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 - 17 HOLLAND ST W"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "30 Jun 2005",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Holland Plaza Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Domenico Crupi",
+        "205 Simcoe Rd",
+        "Bradford, Ontario",
+        "L3Z 1Z1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MJA Holland Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marie Da Silva",
+        "2902 Tenth Sideroad",
+        "Bradford, Ontario",
+        "L3Z 2A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-19876, Part 1",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "43 12 010 003 07800",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "575 / 712",
+      "rt_id": "RT42952"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "11 - 17 HOLLAND ST W",
+    "postcode": "L3Z 2B4",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "06/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 12 010 003 07800"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "11 - 17 HOLLAND ST W"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "30 Jun 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Holland Plaza Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "MJA Holland Holdings Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

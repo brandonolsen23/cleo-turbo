@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT24549",
+  "source_folder": "Metro_Toronto/retail/p086",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24549",
+      "source_folder": "Metro_Toronto/retail/p086",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p086/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 - 24 SLAN AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "28 Feb 2002",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Foodarama Ltd",
+        "656209 Ontario Ltd     416-439-3121"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "15 Creekwood Dr",
+        "Toronto, Ontario",
+        "M1E 4L6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RS & Sons Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rajkumar Rajaratnam",
+        "20 Slan Ave",
+        "Toronto, Ontario",
+        "M1G 3B2"
+      ]
+    },
+    "description_lines": [
+      "Foodarama Supermarket - 1 storey; 5,385 sf @ $102",
+      "",
+      "33 parking spots."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5021, Part Block B",
+      "Plan 64R-8759, Part 1",
+      "As in Inst Nos C-861713",
+      "TB-570288 & C-861715",
+      "",
+      "NE corner @ Scarborough Golf Club Rd",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "19 01 083 240 04300 +",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT245/RT24549/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4279 / 4952",
+      "rt_id": "RT24549"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "20 - 24 SLAN AVE",
+    "postcode": "M1G 3B2",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "02/28/2002",
+    "desc": "Foodarama Supermarket - 1 storey; 5,385 sf @ $102",
+    "bldg": "5,385 sf",
+    "acreage": ".29",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 083 240 04300+"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "20 - 24 SLAN AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "28 Feb 2002",
+    "note": "",
+    "description": "Foodarama Supermarket - 1 storey; 5,385 sf @ $102",
+    "seller_lines": [
+      "Foodarama Ltd",
+      "656209 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "RS & Sons Holdings Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

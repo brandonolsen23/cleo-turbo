@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT35381",
+  "source_folder": "Kitchener-Waterloo/multifamily/p024",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35381",
+      "source_folder": "Kitchener-Waterloo/multifamily/p024",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p024/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1242 HAMILTON ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "04 May 2004",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg - 2.5 storey; 12 units @ $50,000",
+      "",
+      "1-bach 11-2bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 716, Part Lot 230",
+      "As in Inst No WS-666842",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "30 06 090 013 09200",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1154 / 1449",
+      "rt_id": "RT35381"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1242 HAMILTON ST",
+    "postcode": "N3H 3G3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "05/04/2004",
+    "desc": "Apartment Bldg - 2.5 storey; 12 units @ $50,000",
+    "bldg": "12 units",
+    "acreage": ".34",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 090 013 09200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1242 HAMILTON ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "04 May 2004",
+    "note": "",
+    "description": "Apartment Bldg - 2.5 storey; 12 units @ $50,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$600,000"
+  }
+}

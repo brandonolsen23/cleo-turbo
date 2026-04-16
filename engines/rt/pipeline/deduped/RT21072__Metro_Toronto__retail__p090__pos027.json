@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT21072",
+  "source_folder": "Metro_Toronto/retail/p090",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21072",
+      "source_folder": "Metro_Toronto/retail/p090",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p090/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "85 DANFORTH AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Apr 2001",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Barbara D. Forrester",
+        "Estate of Joyce L. Price     416-968-0096"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Mary Shaw",
+        "1366 Yonge St, Ste 308",
+        "Toronto, Ontario",
+        "M4T 3A7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "85 Danforth Inc     416-487-9547"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Owen Lawson",
+        "273 Dawlish Ave",
+        "Toronto, Ontario",
+        "M4N 1J4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 15",
+      "As in Deed No CT-267446",
+      "",
+      "SW corner at Broadview Ave",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 075 310 00300",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT210/RT21072/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4478 / 4952",
+      "rt_id": "RT21072"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "85 DANFORTH AVE",
+    "postcode": "M4K 1M9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/17/2001",
+    "desc": "Retail Bldg - 1 storey; 3 units",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 075 310 00300"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "85 DANFORTH AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Apr 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3 units",
+    "seller_lines": [
+      "Barbara D. Forrester",
+      "Estate of Joyce L. Price"
+    ],
+    "buyer_lines": [
+      "85 Danforth Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

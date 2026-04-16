@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT182655",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182655",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "174 RITSON RD S"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "15 Jan 2024",
+      "price_text": "$1,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2663955 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1685 Frederick Mason Dr",
+        "Oshawa, Ontario",
+        "L1K 0X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000701742 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sritharan Subramaniam",
+        "174 Ritson Rd S",
+        "Oshawa, Ontario",
+        "L1H 5H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 145, Lots 38-41",
+      "",
+      "PIN: 16350-0265",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "18 13 040 012 13500",
+    "consideration_lines": [
+      "cash: $1,675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $688,500   rate: Prime plus 5.0% per annum.",
+      "registered: 01/15/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182655/0217_101031.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182655/0217_101033.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182655/0217_101058.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182655/0217_101059.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182655/0217_101102.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "81 / 506",
+      "rt_id": "RT182655"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "174 RITSON RD S",
+    "postcode": "L1H 5H5",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "01/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "1675000",
+    "cash": "1675000",
+    "debt": "",
+    "note": "",
+    "pin": "16350-0265",
+    "rollno": "18 13 040 012 13500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "174 RITSON RD S"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "15 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2663955 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000701742 Ontario Inc"
+    ],
+    "price_text": "$1,675,000"
+  }
+}

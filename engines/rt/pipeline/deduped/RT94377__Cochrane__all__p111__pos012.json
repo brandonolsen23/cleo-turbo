@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT94377",
+  "source_folder": "Cochrane/all/p111",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT94377",
+      "source_folder": "Cochrane/all/p111",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p111/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "5831 PERTH ST"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "01 Aug 2013",
+      "price_text": "$1,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Cars 4 Cost Plus 499 Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ryan O'Connor",
+        "6104 Perth St",
+        "Richmond, Ontario",
+        "K0A 1Z0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 26",
+      "Plan 5R-2183, Part 1",
+      "",
+      "PIN: 04448-0078",
+      "",
+      "5.99 acre"
+    ],
+    "arn_text": "06 27 010 810 11402",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Emerald Pond Designs Inc",
+      "principal: $1,275,000   rate: 8.75% per annum.",
+      "registered: 08/01/2013   due: 06/21/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5513 / 10920",
+      "rt_id": "RT94377"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "5831 PERTH ST",
+    "postcode": "K0A 2Z0",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "08/01/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.99",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04448-0078",
+    "rollno": "06 27 010 810 11402"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "5831 PERTH ST"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "01 Aug 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Cars 4 Cost Plus 499 Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

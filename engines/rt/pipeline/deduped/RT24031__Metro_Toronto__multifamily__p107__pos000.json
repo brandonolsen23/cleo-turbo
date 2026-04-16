@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT24031",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24031",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "419 SHERBOURNE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Jan 2002",
+      "price_text": "$555,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kerpa-Carmen Holdings Ltd     905-945-4321"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rosalie Peaker",
+        "Scott Peaker OD",
+        "14 Elm St",
+        "Grimsby, Ontario",
+        "L3M 1H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Joseph, Patricia & Carl Michener"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "419 Sherbourne St",
+        "Toronto, Ontario",
+        "M4X 1K5"
+      ]
+    },
+    "description_lines": [
+      "FivePlex - 2.5 storey; 5 units @ $111,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-58, Part Lot 6",
+      "As in Deed No CA-192606"
+    ],
+    "arn_text": "19 04 074 270 00800",
+    "consideration_lines": [
+      "cash: $555,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24031/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5301 / 6031",
+      "rt_id": "RT24031"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "419 SHERBOURNE ST",
+    "postcode": "M4X 1K5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/15/2002",
+    "desc": "FivePlex - 2.5 storey; 5 units @ $111,000",
+    "bldg": "5 units",
+    "acreage": "",
+    "consid": "555000",
+    "cash": "555000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 074 270 00800"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "419 SHERBOURNE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Jan 2002",
+    "note": "",
+    "description": "FivePlex - 2.5 storey; 5 units @ $111,000",
+    "seller_lines": [
+      "Kerpa-Carmen Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Joseph, Patricia & Carl Michener"
+    ],
+    "price_text": "$555,000"
+  }
+}

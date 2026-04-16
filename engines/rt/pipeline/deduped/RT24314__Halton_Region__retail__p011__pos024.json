@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT24314",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24314",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "2000 APPLEBY LINE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "18 Feb 2002",
+      "price_text": "$20,575,000",
+      "note": "50% Interest."
+    },
+    "transferor": {
+      "party_lines": [
+        "Monarch Construction Ltd     416-491-7440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: David George",
+        "2025 Sheppard Ave E, Ste 1201",
+        "Willowdale, Ontario",
+        "M2J 1V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Canada Mortgage and Housing Corp     613-748-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Louise Michael",
+        "CMHC Pension Fund",
+        "700 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1A 0P7"
+      ]
+    },
+    "description_lines": [
+      "Millcroft Shopping Centre - about 370,344 sf on 42 Ac",
+      "",
+      "Includes 2,408 surface parking spots",
+      "",
+      "Other 50% was purchased by Millcroft Real Estate Inc for $20,575,00"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-12110",
+      "Parts 1 & 5"
+    ],
+    "arn_text": "24 02 090 902 00200",
+    "consideration_lines": [
+      "cash: $20,575,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal LePage:",
+      "Keith Jameson & Trevor Blakely, 416-862-0611"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT243/RT24314/photo.jpg"
+    },
+    "footer": {
+      "page_position": "525 / 613",
+      "rt_id": "RT24314"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "2000 APPLEBY LINE",
+    "postcode": "",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "02/18/2002",
+    "desc": "Millcroft Shopping Centre - about 370,344 sf on 42 Ac",
+    "bldg": "",
+    "acreage": "",
+    "consid": "20575000",
+    "cash": "20575000",
+    "debt": "",
+    "note": "50% Interest.",
+    "pin": "",
+    "rollno": "24 02 090 902 00200"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "2000 APPLEBY LINE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "18 Feb 2002",
+    "note": "50% Interest.",
+    "description": "Millcroft Shopping Centre - about 370,344 sf on 42 Ac",
+    "seller_lines": [
+      "Monarch Construction Ltd"
+    ],
+    "buyer_lines": [
+      "Canada Mortgage and Housing Corp"
+    ],
+    "price_text": "$20,575,000"
+  }
+}

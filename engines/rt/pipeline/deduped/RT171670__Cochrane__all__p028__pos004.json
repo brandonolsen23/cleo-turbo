@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT171670",
+  "source_folder": "Cochrane/all/p028",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT171670",
+      "source_folder": "Cochrane/all/p028",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p028/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "LIMEBANK RD",
+        "CONC 1 - RF",
+        "PART LOT 17"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "08 Sep 2022",
+      "price_text": "$3,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Les Servites de Marie d'Ottawa"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "427 Booth St",
+        "Ottawa, Ontario",
+        "K1R 7K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Urbandale Corp     613-731-6331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Nichols",
+        "2193 Arch St",
+        "Ottawa, Ontario",
+        "K1G 2H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - RF, Part Lot 17",
+      "Plan 5R-12930, Part 1",
+      "Except:",
+      "Plan 4R-23271, Part 6",
+      "",
+      "PIN: 04331-4008",
+      "",
+      "W side Limebank Rd, S of Hwy 14, N of Spratt Rd",
+      "",
+      "9.91 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1716/RT171670/air1.jpg",
+        "/assets/files/RT17/RT1716/RT171670/air2.jpg",
+        "/assets/files/RT17/RT1716/RT171670/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1355 / 10920",
+      "rt_id": "RT171670"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "LIMEBANK RD, CONC 1 - RF, PART LOT 17",
+    "postcode": "",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "09/08/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.91",
+    "consid": "3000000",
+    "cash": "3000000",
+    "debt": "",
+    "note": "",
+    "pin": "04331-4008",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "LIMEBANK RD",
+      "CONC 1 - RF",
+      "PART LOT 17"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "08 Sep 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Les Servites de Marie d'Ottawa"
+    ],
+    "buyer_lines": [
+      "Urbandale Corp"
+    ],
+    "price_text": "$3,000,000"
+  }
+}

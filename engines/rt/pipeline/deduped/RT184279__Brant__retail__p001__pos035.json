@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT184279",
+  "source_folder": "Brant/retail/p001",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184279",
+      "source_folder": "Brant/retail/p001",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "181 BRANT RD"
+      ],
+      "city_region": "S. Dumfries : Brant",
+      "date_text": "17 Apr 2024",
+      "price_text": "$1,510,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5G 1R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "15678072 Canada Inc     289-337-6689"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raman Arora",
+        "1317 Bonnie Ct",
+        "Burlington, Ontario",
+        "L7R 5A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - South Dumfries,",
+      "Part Lot 13",
+      "As in Inst No A-412953",
+      "",
+      "PIN: 32037-0039",
+      "",
+      "0.56 acre"
+    ],
+    "arn_text": "29 16 020 000 43900",
+    "consideration_lines": [
+      "cash: $1,510,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,076,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/17/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184279/0824_090143.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184279/0824_090213.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184279/0824_090226.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184279/0824_090256.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "36 / 195",
+      "rt_id": "RT184279"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "181 BRANT RD",
+    "postcode": "N0E 1N0",
+    "municipality": "S. Dumfries",
+    "region": "Brant",
+    "date": "04/17/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".56",
+    "consid": "1510000",
+    "cash": "1510000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "32037-0039",
+    "rollno": "29 16 020 000 43900"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "181 BRANT RD"
+    ],
+    "city_region": "S. Dumfries : Brant",
+    "date_text": "17 Apr 2024",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "15678072 Canada Inc"
+    ],
+    "price_text": "$1,510,000"
+  }
+}

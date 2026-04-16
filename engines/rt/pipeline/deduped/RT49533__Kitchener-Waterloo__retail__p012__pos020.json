@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT49533",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49533",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "157 KING ST W"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "22 Jun 2006",
+      "price_text": "$510,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1127668 Ontario Ltd     519-650-9209"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kameel Rahal",
+        "237 King St W, Ste 806",
+        "Cambridge, Ontario",
+        "N3H 5L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2102525 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Maikal Shammas",
+        "H & S Fleet Services Inc",
+        "3040 Universal Dr, Unit D",
+        "Mississauga, Ontario",
+        "L4X 2C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67R-1320, Parts 1-3",
+      "Plan 67R-3131, Part 13",
+      "Except:",
+      "Plan 67R-3131, Parts 12 & 14",
+      "",
+      "0.63 acre"
+    ],
+    "arn_text": "30 06 110 025 09300",
+    "consideration_lines": [
+      "cash: $510,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49533/0806_091204.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49533/0806_091206.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49533/0806_091224.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49533/0806_091244.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "571 / 752",
+      "rt_id": "RT49533"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "157 KING ST W",
+    "postcode": "N3H 1B5",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "06/22/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".63",
+    "consid": "510000",
+    "cash": "510000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 110 025 09300"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "157 KING ST W"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "22 Jun 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1127668 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2102525 Ontario Ltd"
+    ],
+    "price_text": "$510,000"
+  }
+}

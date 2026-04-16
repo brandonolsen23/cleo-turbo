@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT187977",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187977",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "48A KING ST E"
+      ],
+      "city_region": "Colborne : Northumberland",
+      "date_text": "06 Aug 2024",
+      "price_text": "$930,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "11918222 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "29 Blossom Ct",
+        "Trenton, Ontario",
+        "K8V 0E8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Quadapharma Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alex Chang",
+        "350 Main St",
+        "Brighton, Ontario",
+        "K0K 1H0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Reid Plan Cramahe,",
+      "Part Lots 232-233",
+      "As in Inst No NC-300028",
+      "",
+      "PIN: 51143-0062",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "14 11 012 020 10500",
+    "consideration_lines": [
+      "cash: $930,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Alex Chang Pharmacy Professional Corp",
+      "principal: $930,000   rate: 8.0% per annum.",
+      "registered: 08/06/2024   due: 08/05/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 93",
+      "rt_id": "RT187977"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "48A KING ST E",
+    "postcode": "K0K 1S0",
+    "municipality": "Colborne",
+    "region": "Northumberland",
+    "date": "08/06/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "930000",
+    "cash": "930000",
+    "debt": "",
+    "note": "",
+    "pin": "51143-0062",
+    "rollno": "14 11 012 020 10500"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "48A KING ST E"
+    ],
+    "city_region": "Colborne : Northumberland",
+    "date_text": "06 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "11918222 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Quadapharma Inc"
+    ],
+    "price_text": "$930,000"
+  }
+}

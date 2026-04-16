@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT26558",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26558",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "47 COOTES DR"
+      ],
+      "city_region": "Dundas : Hamilton-Wentworth",
+      "date_text": "30 Jul 2002",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Alpha Commercial Enterprises Ltd     905-627-4126"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: J. Douglas Hammond",
+        "1096 Sulphur Springs Rd, RR 3",
+        "Dundas, Ontario",
+        "L9H 5E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1527838 Ontario Inc     519-647-2633"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Whelan",
+        "1830 Highway 5",
+        "Troy, Ontario",
+        "L0R 2B0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 6,800 sf @ $77"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-7923, Parts 1 & 2",
+      "",
+      "0.51 acre"
+    ],
+    "arn_text": "25 26 100 240 05400",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "532 / 616",
+      "rt_id": "RT26558"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "47 COOTES DR",
+    "postcode": "L9H 1B5",
+    "municipality": "Dundas",
+    "region": "Hamilton-Wentworth",
+    "date": "07/30/2002",
+    "desc": "Retail Plaza - 1 storey; 3 units 6,800 sf @ $77",
+    "bldg": "6,800 sf",
+    "acreage": ".51",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 26 100 240 05400"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "47 COOTES DR"
+    ],
+    "city_region": "Dundas : Hamilton-Wentworth",
+    "date_text": "30 Jul 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 6,800 sf @ $77",
+    "seller_lines": [
+      "Alpha Commercial Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "1527838 Ontario Inc"
+    ],
+    "price_text": "$525,000"
+  }
+}

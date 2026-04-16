@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT27895",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27895",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "2549 WESTON RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "29 Nov 2002",
+      "price_text": "$16,500,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Knob Hill Farms Ltd     416-751-2300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1900 Eglinton Ave E",
+        "Toronto, Ontario",
+        "M1L 2L9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loblaw Properties Ltd     416-922-8500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: S. Jane Marshall",
+        "22 St Clair Ave E, 2nd Flr",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 238,000 sf @ $69",
+      "",
+      "Former Knob Hill Farms supermarket."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-13266",
+      "Parts 1, 2, 6, 9, 10 & 15",
+      "",
+      "10.94 acre"
+    ],
+    "arn_text": "19 08 023 700 00200",
+    "consideration_lines": [
+      "cash: $16,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT278/RT27895/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4088 / 4952",
+      "rt_id": "RT27895"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "2549 WESTON RD",
+    "postcode": "",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "11/29/2002",
+    "desc": "Retail Bldg - 2 storey; 238,000 sf @ $69",
+    "bldg": "238,000 sf",
+    "acreage": "10.94",
+    "consid": "16500000",
+    "cash": "16500000",
+    "debt": "",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "19 08 023 700 00200"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "2549 WESTON RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "29 Nov 2002",
+    "note": "Purchase & Sale",
+    "description": "Retail Bldg - 2 storey; 238,000 sf @ $69",
+    "seller_lines": [
+      "Knob Hill Farms Ltd"
+    ],
+    "buyer_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "price_text": "$16,500,000"
+  }
+}

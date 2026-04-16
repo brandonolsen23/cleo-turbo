@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT177683",
+  "source_folder": "Peel_Region/retail/p007",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177683",
+      "source_folder": "Peel_Region/retail/p007",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p007/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "3920 EGLINTON AVE W",
+        "UNIT 35"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "25 Apr 2023",
+      "price_text": "$878,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Homsi Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "123 Bridgeport Cres",
+        "Ancaster, Ontario",
+        "L9K 1M1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000311473 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jiwan Anand",
+        "3920 Eglinton Ave W, Unit 35",
+        "Mississauga, Ontario",
+        "L5M 2R9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1136",
+      "Level 1, Unit 35",
+      "",
+      "PIN: 20136-0035"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $878,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $930,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/25/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074026.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074028.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074031.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074042.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074117.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074121.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074122.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074124.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074125.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1776/RT177683/0521_074338.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "301 / 1087",
+      "rt_id": "RT177683"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "3920 EGLINTON AVE W, UNIT 35",
+    "postcode": "L5M 2R9",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "04/25/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "878000",
+    "cash": "878000",
+    "debt": "",
+    "note": "",
+    "pin": "20136-0035",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "3920 EGLINTON AVE W",
+      "UNIT 35"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "25 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Homsi Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "1000311473 Ontario Inc"
+    ],
+    "price_text": "$878,000"
+  }
+}

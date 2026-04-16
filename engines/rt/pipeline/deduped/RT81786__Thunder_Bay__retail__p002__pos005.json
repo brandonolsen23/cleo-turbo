@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT81786",
+  "source_folder": "Thunder_Bay/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81786",
+      "source_folder": "Thunder_Bay/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "103 HAMEL ST"
+      ],
+      "city_region": "Greenstone : Thunder Bay",
+      "date_text": "04 Aug 2011",
+      "price_text": "$550,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "1011069 Ontario Ltd     807-876-2321"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Elise Corbin",
+        "98 Skinner Ave",
+        "Longlac, Ontario",
+        "P0T 2A0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1833400 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Boucher",
+        "25 Highway 625",
+        "PO Box 46",
+        "Longlac, Ontario",
+        "P0T 2A0"
+      ]
+    },
+    "description_lines": [
+      "Valu-Mart Supermarket: 1.5 storey;  10,000 sf @ $55"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 55R-2459, Parts 3 & 4",
+      "",
+      "PIN: 62394-0660 +",
+      "",
+      "1.05 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $175,539     assumed/vtb debt: $374,461"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 65",
+      "rt_id": "RT81786"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "103 HAMEL ST",
+    "postcode": "",
+    "municipality": "Greenstone",
+    "region": "Thunder Bay",
+    "date": "08/04/2011",
+    "desc": "Valu-Mart Supermarket: 1.5 storey;  10,000 sf @ $55",
+    "bldg": "10,000 sf",
+    "acreage": "1.05",
+    "consid": "550000",
+    "cash": "175539",
+    "debt": "374461",
+    "note": "Purchased Business",
+    "pin": "62394-0660+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "103 HAMEL ST"
+    ],
+    "city_region": "Greenstone : Thunder Bay",
+    "date_text": "04 Aug 2011",
+    "note": "Purchased Business",
+    "description": "Valu-Mart Supermarket: 1.5 storey;  10,000 sf @ $55",
+    "seller_lines": [
+      "1011069 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1833400 Ontario Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

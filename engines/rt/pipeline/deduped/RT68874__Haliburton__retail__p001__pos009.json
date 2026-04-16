@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT68874",
+  "source_folder": "Haliburton/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68874",
+      "source_folder": "Haliburton/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Haliburton/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "224 HIGHLAND ST"
+      ],
+      "city_region": "Dysart : Haliburton",
+      "date_text": "16 Oct 2009",
+      "price_text": "$3,785,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Highland Street Developments Inc     416-979-9996"
+      ],
+      "trade_name": "Craft Development Corp",
+      "contact_lines": [
+        "ASO: Helen Pedro",
+        "10 Queen Elizabeth Blvd, Unit 2",
+        "Toronto, Ontario",
+        "M8Z 1L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1725893 Ontario Inc     416-499-5463"
+      ],
+      "trade_name": "Ellora Telecom",
+      "contact_lines": [
+        "Attn: Rajan Arora",
+        "1039 McNicoll Ave",
+        "Toronto, Ontario",
+        "M1W 3W6"
+      ]
+    },
+    "description_lines": [
+      "Drug Store - 1 storey; 10,500 sf @ $360",
+      "",
+      "Single tenant (leased)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1, Block H, Lot 6",
+      "Plan 19R-8276, Part 1",
+      "",
+      "PIN: 39179-0188",
+      "",
+      "0.63 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,448,468     assumed/vtb debt: $2,336,532",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $2,450,000   rate: 5.55% per annum",
+      "registered: 04/03/2007   due: 05/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 10",
+      "rt_id": "RT68874"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "224 HIGHLAND ST",
+    "postcode": "",
+    "municipality": "Dysart",
+    "region": "Haliburton",
+    "date": "10/16/2009",
+    "desc": "Drug Store - 1 storey; 10,500 sf @ $360",
+    "bldg": "10,500 sf",
+    "acreage": ".63",
+    "consid": "3785000",
+    "cash": "1448468",
+    "debt": "2336532",
+    "note": "",
+    "pin": "39179-0188",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "224 HIGHLAND ST"
+    ],
+    "city_region": "Dysart : Haliburton",
+    "date_text": "16 Oct 2009",
+    "note": "",
+    "description": "Drug Store - 1 storey; 10,500 sf @ $360",
+    "seller_lines": [
+      "Highland Street Developments Inc"
+    ],
+    "buyer_lines": [
+      "1725893 Ontario Inc"
+    ],
+    "price_text": "$3,785,000"
+  }
+}

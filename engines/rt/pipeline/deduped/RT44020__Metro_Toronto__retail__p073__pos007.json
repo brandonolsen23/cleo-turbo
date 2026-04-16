@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT44020",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44020",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "15B FINCH AVE W",
+        "19A FINCH AVE W"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "02 Sep 2005",
+      "price_text": "$1,280,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sonata Developments Inc     416-229-9966"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ghasem Ghods",
+        "Ghods Builders Inc",
+        "333 Sheppard Ave E, Ste 300",
+        "Toronto, Ontario",
+        "M2N 3B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1650297 Ontario Inc     905-713-6838"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jinkyou Ahn",
+        "38 Owl's Foot Cres",
+        "Aurora, Ontario",
+        "L4G 6A3"
+      ]
+    },
+    "description_lines": [
+      "Retail Condos"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1637",
+      "Level 1, Units 2 & 5"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,280,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3608 / 4952",
+      "rt_id": "RT44020"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "15B FINCH AVE W, 19A FINCH AVE W",
+    "postcode": "M2N 7K4",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "09/02/2005",
+    "desc": "Retail Condos",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1280000",
+    "cash": "1280000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "15B FINCH AVE W",
+      "19A FINCH AVE W"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "02 Sep 2005",
+    "note": "",
+    "description": "Retail Condos",
+    "seller_lines": [
+      "Sonata Developments Inc"
+    ],
+    "buyer_lines": [
+      "1650297 Ontario Inc"
+    ],
+    "price_text": "$1,280,000"
+  }
+}

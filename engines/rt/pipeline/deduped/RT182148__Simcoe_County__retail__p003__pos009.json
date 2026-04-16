@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT182148",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182148",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "77 COMMERCE RD"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "29 Dec 2023",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1204407 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "102 York St",
+        "Orillia, Ontario",
+        "L3V 7G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "77 Commerce Road Inc     705-325-3355"
+      ],
+      "trade_name": "Experience Nissan",
+      "contact_lines": [
+        "Attn: Christopher Olschewski",
+        "77 Commerce Rd",
+        "Orillia, Ontario",
+        "L3V 0Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 171, Part Park Lot 5",
+      "As in Inst Nos:",
+      "RO-1334843 & RO-996742",
+      "",
+      "PIN: 58626-0398",
+      "",
+      "2.10 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1204407 Ontario Inc",
+      "principal: $3,800,250   rate: 6.0% per annum.",
+      "registered: 12/29/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1821/RT182148/0203_152321.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1821/RT182148/0203_152325.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1821/RT182148/0203_152402.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1821/RT182148/0203_152404.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1821/RT182148/air1.jpg",
+        "/assets/files/RT18/RT1821/RT182148/air2.jpg",
+        "/assets/files/RT18/RT1821/RT182148/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "110 / 712",
+      "rt_id": "RT182148"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "77 COMMERCE RD",
+    "postcode": "L3V 0Z2",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "12/29/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.1",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "58626-0398",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "77 COMMERCE RD"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "29 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1204407 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "77 Commerce Road Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

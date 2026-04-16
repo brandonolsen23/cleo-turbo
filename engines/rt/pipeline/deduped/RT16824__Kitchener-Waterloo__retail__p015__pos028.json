@@ -1,0 +1,142 @@
+{
+  "rt_id": "RT16824",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT16824",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "460 FREDERICK ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "09 Mar 2000",
+      "price_text": "$700,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Norris Bakery Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vaughn Norris",
+        "460 Frrederick St",
+        "Kitchener, Ontario",
+        "N2H 2P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "A & V Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vaughn Norris",
+        "460 Frederick St",
+        "Kitchener, Ontario",
+        "N2H 2P5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-1442, Part 2",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "30 12 020 002 07300",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,465,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/14/2022   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,750,000   rate: Prime plus 6.0% per annum.",
+      "registered: 04/13/2022   due: on demand",
+      "",
+      "chargee: Lift Capital Inc",
+      "Danny Rother",
+      "principal: $2,100,000   rate: 10.0% per annum.",
+      "registered: 04/14/2022   due: 11/01/2022",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,998,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/11/2022   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $1,200,000   rate: 6.50% per annum, interest only.",
+      "registered: 04/14/2022   due: 04/14/2023",
+      "",
+      "chargee: 2511633 Ontario Ltd",
+      "principal: $1,500,000   rate: 4.5% per annum.",
+      "registered: 04/14/2022   due: 04/14/2024",
+      "",
+      "Named Individual(s)",
+      "principal: $2,100,000   rate: 4.0% per annum.",
+      "registered: 04/14/2022   due: 03/25/2024",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/14/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "729 / 752",
+      "rt_id": "RT16824"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "460 FREDERICK ST",
+    "postcode": "N2H 2P5",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/09/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "700000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "30 12 020 002 07300"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "460 FREDERICK ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "09 Mar 2000",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Norris Bakery Ltd"
+    ],
+    "buyer_lines": [
+      "A & V Investments Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23970",
+  "source_folder": "York_Region/retail/p018",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23970",
+      "source_folder": "York_Region/retail/p018",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "5555 HWY 7 W"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "17 Jan 2002",
+      "price_text": "$4,366,666",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: John Thomas",
+        "2180 Yonge St",
+        "Toronto, Ontario",
+        "M4S 2B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2005191 Ontario Ltd, in Trust     416-743-1211"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Giuseppe Zanchin",
+        "Woodbridge Toyota",
+        "7685 Martin Grove Rd",
+        "Woodbridge, Ontario",
+        "L4L 1B5"
+      ]
+    },
+    "description_lines": [
+      "Honda Dealership - Former Canadian Tire Store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-11015, Parts 2, 4-6",
+      "",
+      "S side 60m W of Woodsteam Blvd",
+      "",
+      "3.93 acre"
+    ],
+    "arn_text": "19 28 000 320 79450",
+    "consideration_lines": [
+      "cash: $4,366,666     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT239/RT23970/photo.jpg"
+    },
+    "footer": {
+      "page_position": "869 / 984",
+      "rt_id": "RT23970"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "5555 HWY 7 W",
+    "postcode": "L4L 1T5",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/17/2002",
+    "desc": "Honda Dealership - Former Canadian Tire Store",
+    "bldg": "",
+    "acreage": "3.93",
+    "consid": "4366666",
+    "cash": "4366666",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 320 79450"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "5555 HWY 7 W"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "17 Jan 2002",
+    "note": "",
+    "description": "Honda Dealership - Former Canadian Tire Store",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "2005191 Ontario Ltd, in Trust"
+    ],
+    "price_text": "$4,366,666"
+  }
+}

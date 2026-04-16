@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT194527",
+  "source_folder": "Wellington/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194527",
+      "source_folder": "Wellington/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "850 ST DAVID ST N"
+      ],
+      "city_region": "Centre Wellington : Wellington",
+      "date_text": "23 Sep 2025",
+      "price_text": "$5,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "875 Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "875 Woodlawn Rd W",
+        "Guelph, Ontario",
+        "N1K 1B7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001305560 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aaron Miller",
+        "850 St David St N",
+        "Fergus, Ontario",
+        "N1M 2L2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 132 - Nichol,",
+      "Part Park Lots 3, 4, 7 & 8",
+      "As in inst No ROS-269127",
+      "",
+      "PIN: 71382-0004",
+      "",
+      "4.18 acre"
+    ],
+    "arn_text": "23 26 000 005 06132",
+    "consideration_lines": [
+      "cash: $5,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $5,500,000   rate: 18.0% per annum.",
+      "registered: 09/23/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1945/RT194527/0131_132118.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1945/RT194527/0131_132126.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1945/RT194527/0131_132133.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1945/RT194527/0131_132140.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1945/RT194527/0131_132141.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 269",
+      "rt_id": "RT194527"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "850 ST DAVID ST N",
+    "postcode": "N1M 2L2",
+    "municipality": "Centre Wellington",
+    "region": "Wellington",
+    "date": "09/23/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.18",
+    "consid": "5500000",
+    "cash": "5500000",
+    "debt": "",
+    "note": "",
+    "pin": "71382-0004",
+    "rollno": "23 26 000 005 06132"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "850 ST DAVID ST N"
+    ],
+    "city_region": "Centre Wellington : Wellington",
+    "date_text": "23 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "875 Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1001305560 Ontario Inc"
+    ],
+    "price_text": "$5,500,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT80072",
+  "source_folder": "Ottawa-Carleton/multifamily/p019",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80072",
+      "source_folder": "Ottawa-Carleton/multifamily/p019",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/multifamily/p019/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "230 NELSON ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "29 Jul 2011",
+      "price_text": "$780,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1763030 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sue Jung",
+        "230 Nelson St, Unit 3",
+        "Ottawa, Ontario",
+        "K1N 7R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Triplex - 3 storey; 3-3bdrm @ $260,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-7690, Parts 2 & 4",
+      "S/S Besserer St",
+      "",
+      "PIN: 04211-0044",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "06 14 021 001 35500",
+    "consideration_lines": [
+      "cash: $780,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $624,000   rate: Prime plus 2.0% per annum",
+      "registered: 07/29/2011   due: on demand"
+    ],
+    "broker_lines": [
+      "Tracy Arnett Realty Ltd: Tracy Arnett, 613-233-4488"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT800/RT80072/0813_080120.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT800/RT80072/0813_080139.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT800/RT80072/0813_080202.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT800/RT80072/air1.jpg",
+        "/assets/files/RT8/RT800/RT80072/air2.jpg",
+        "/assets/files/RT8/RT800/RT80072/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "902 / 1757",
+      "rt_id": "RT80072"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "230 NELSON ST",
+    "postcode": "K1N 7R7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/29/2011",
+    "desc": "Triplex - 3 storey; 3-3bdrm @ $260,000",
+    "bldg": "3 units",
+    "acreage": ".06",
+    "consid": "780000",
+    "cash": "780000",
+    "debt": "",
+    "note": "",
+    "pin": "04211-0044",
+    "rollno": "06 14 021 001 35500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "230 NELSON ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "29 Jul 2011",
+    "note": "",
+    "description": "Triplex - 3 storey; 3-3bdrm @ $260,000",
+    "seller_lines": [
+      "1763030 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$780,000"
+  }
+}

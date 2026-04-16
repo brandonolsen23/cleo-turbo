@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT78186",
+  "source_folder": "York_Region/retail/p010",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT78186",
+      "source_folder": "York_Region/retail/p010",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 HWY 7 E",
+        "VARIOUS SUITES"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "29 Apr 2011",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2092126 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stanley Young",
+        "400 Finchdene Sq, Unit 14",
+        "Scarborough, Ontario",
+        "M1X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1834003 Ontario Inc     905-475-1621"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zafar Chaudhary",
+        "4 Abelson Ct",
+        "Markham, Ontario",
+        "L3S 3H5"
+      ]
+    },
+    "description_lines": [
+      "9 Retail Condos - 9 tenants 6,630 sf @ $271",
+      "",
+      "Fully leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 863",
+      "Level 2, Units 25-32",
+      "Level 1, Unit 41",
+      "Level A, Units 71-75, 79, 103, 155-157",
+      "",
+      "PIN: 29393-0119 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,160,000   rate: Prime plus 6.5% per annum",
+      "registered: 04/29/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78186/0506_130049.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78186/0506_130100.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78186/0506_130224.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78186/0506_130238.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78186/0506_130239.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT781/RT78186/0506_130415.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "491 / 984",
+      "rt_id": "RT78186"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "550 HWY 7 E, VARIOUS SUITES",
+    "postcode": "L4B 3Z4",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "04/29/2011",
+    "desc": "9 Retail Condos - 9 tenants 6,630 sf @ $271",
+    "bldg": "6,630 sf",
+    "acreage": "",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "29393-0119+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "550 HWY 7 E",
+      "VARIOUS SUITES"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "29 Apr 2011",
+    "note": "",
+    "description": "9 Retail Condos - 9 tenants 6,630 sf @ $271",
+    "seller_lines": [
+      "2092126 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1834003 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

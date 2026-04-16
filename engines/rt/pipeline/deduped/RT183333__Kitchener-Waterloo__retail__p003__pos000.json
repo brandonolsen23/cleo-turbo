@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT183333",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183333",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "455 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "01 Mar 2024",
+      "price_text": "$14,275,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "455 King St N Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Oak-Land Ford - Trafalgar Road",
+        "Oakville, Ontario",
+        "L6J 3J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PFWO Land Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Gordey",
+        "c/o Canada One Auto Group Ltd",
+        "14240 - 137th Ave",
+        "Edmonton, Alberta",
+        "T5L 5H7"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership",
+      "",
+      "Last transferred in November 2013 for $5,300,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "German Co Tract, Part Lot 7",
+      "Plan 58R-5089, Part 1",
+      "",
+      "PIN: 22280-0051",
+      "",
+      "W side King St N, S of Conestoga Pkwy",
+      "",
+      "5.10 acre"
+    ],
+    "arn_text": "30 16 042 600 09400",
+    "consideration_lines": [
+      "cash: $14,275,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,500,000,000   rate: Prime plus 8.0% per annum.",
+      "registered: 03/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183333/0413_122055.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183333/0413_122137.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183333/0413_122435.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183333/0413_122439.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183333/0413_122518.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1833/RT183333/air1.jpg",
+        "/assets/files/RT18/RT1833/RT183333/air2.jpg",
+        "/assets/files/RT18/RT1833/RT183333/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "101 / 752",
+      "rt_id": "RT183333"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "455 KING ST N",
+    "postcode": "N2J 2Z5",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "03/01/2024",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "5.1",
+    "consid": "14275000",
+    "cash": "14275000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "22280-0051",
+    "rollno": "30 16 042 600 09400"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "455 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "01 Mar 2024",
+    "note": "Portfolio",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "455 King St N Holdings Inc"
+    ],
+    "buyer_lines": [
+      "PFWO Land Holdings Ltd"
+    ],
+    "price_text": "$14,275,000"
+  }
+}

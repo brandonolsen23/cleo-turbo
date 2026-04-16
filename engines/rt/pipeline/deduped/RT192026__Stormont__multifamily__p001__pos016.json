@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT192026",
+  "source_folder": "Stormont/multifamily/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192026",
+      "source_folder": "Stormont/multifamily/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/multifamily/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "26 FIRST ST W",
+        "26 1ST ST W"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "30 Apr 2025",
+      "price_text": "$1,442,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001195373 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Olivier Vadnais",
+        "50 Lillico Dr",
+        "Ottawa, Ontario",
+        "K1V 9L6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 52R-8470, Part 1",
+      "",
+      "PIN: 60167-0144",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "04 02 040 001 03000",
+    "consideration_lines": [
+      "cash: $1,442,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,153,600   rate: 3.99% per annum.",
+      "registered: 04/30/2025   due: 04/30/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 63",
+      "rt_id": "RT192026"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "26 FIRST ST W, 26 1ST ST W",
+    "postcode": "K6J 1B9",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "04/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".55",
+    "consid": "1442000",
+    "cash": "1442000",
+    "debt": "",
+    "note": "",
+    "pin": "60167-0144",
+    "rollno": "04 02 040 001 03000"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "26 FIRST ST W",
+      "26 1ST ST W"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "30 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001195373 Ontario Inc"
+    ],
+    "price_text": "$1,442,000"
+  }
+}

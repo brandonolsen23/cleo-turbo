@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT179952",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179952",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "4723 COUNTY RD 45"
+      ],
+      "city_region": "Hamilton : Northumberland",
+      "date_text": "25 Aug 2023",
+      "price_text": "$1,537,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1354905 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1 Crestview Ct",
+        "Baltimore, Ontario",
+        "K0K 1C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2872199 Ontario Inc     289-660-1737"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: S. Sathyathevan",
+        "21 Carter Ave",
+        "Ajax, Ontario",
+        "L1Z 0G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 8",
+      "Plan 39R-2993, Part 1",
+      "",
+      "PIN: 51104-0170",
+      "",
+      "1.31 acre"
+    ],
+    "arn_text": "14 19 000 020 04500",
+    "consideration_lines": [
+      "cash: $1,237,000     assumed/vtb debt: $300,000",
+      "chattels: $62,000",
+      "other: $801,000",
+      "",
+      "chargee: H Owen Investments Inc",
+      "principal: $1,750,000   rate: 12.0% per annum.",
+      "registered: 08/25/2023   due: 09/01/2024",
+      "",
+      "chargee: 1354905 Ontario Ltd",
+      "principal: $300,000   rate: 7.0% per annum.",
+      "registered: 08/25/2023   due: 02/25/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1799/RT179952/1126_114632.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1799/RT179952/1126_114639.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1799/RT179952/1126_114709.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1799/RT179952/1126_114711.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1799/RT179952/1126_114712.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1799/RT179952/air1.jpg",
+        "/assets/files/RT17/RT1799/RT179952/air2.jpg",
+        "/assets/files/RT17/RT1799/RT179952/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "28 / 93",
+      "rt_id": "RT179952"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "4723 COUNTY RD 45",
+    "postcode": "K9A 4J9",
+    "municipality": "Hamilton",
+    "region": "Northumberland",
+    "date": "08/25/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.31",
+    "consid": "1537000",
+    "cash": "1237000",
+    "debt": "300000",
+    "note": "",
+    "pin": "51104-0170",
+    "rollno": "14 19 000 020 04500"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "4723 COUNTY RD 45"
+    ],
+    "city_region": "Hamilton : Northumberland",
+    "date_text": "25 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1354905 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2872199 Ontario Inc"
+    ],
+    "price_text": "$1,537,000"
+  }
+}

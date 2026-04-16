@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT154263",
+  "source_folder": "Ottawa-Carleton/retail/p005",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT154263",
+      "source_folder": "Ottawa-Carleton/retail/p005",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p005/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1339 - 1345 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "26 Aug 2020",
+      "price_text": "$5,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Recipe Unlimited Corp     905-760-2244"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: David Blumberger",
+        "199 Four Valley Dr",
+        "Vaughan, Ontario",
+        "L4K 0B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lofty Riverside GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Wayne Heuff",
+        "900 Boulevard de la Carriere, Ste 206",
+        "Gatineau, Quebec",
+        "J8Y 6T5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG, Part Lot 18",
+      "Plan 347, Part Lot 2",
+      "As in Inst Nos:",
+      "OT-61045 & CT-248129",
+      "Except:",
+      "Plan 5R-13457, Part 1",
+      "",
+      "PIN: 04193-0193",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "06 14 105 901 00300",
+    "consideration_lines": [
+      "cash: $5,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $8,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/26/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1542/RT154263/0918_171513.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1542/RT154263/0918_171514.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1542/RT154263/0918_171614.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1542/RT154263/0918_171619.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "250 / 1141",
+      "rt_id": "RT154263"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1339 - 1345 BANK ST",
+    "postcode": "K1P 5N8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "08/26/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "5500000",
+    "cash": "5500000",
+    "debt": "",
+    "note": "",
+    "pin": "04193-0193",
+    "rollno": "06 14 105 901 00300"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1339 - 1345 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "26 Aug 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Recipe Unlimited Corp"
+    ],
+    "buyer_lines": [
+      "Lofty Riverside GP Inc"
+    ],
+    "price_text": "$5,500,000"
+  }
+}

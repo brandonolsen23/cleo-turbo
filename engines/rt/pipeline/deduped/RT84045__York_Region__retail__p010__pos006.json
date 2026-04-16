@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT84045",
+  "source_folder": "York_Region/retail/p010",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT84045",
+      "source_folder": "York_Region/retail/p010",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "9100 JANE ST",
+        "UNITS 73 - 80"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "07 Mar 2012",
+      "price_text": "$7,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jane Rutherford Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: John Balazic",
+        "61 Steinway Blvd",
+        "Toronto, Ontario",
+        "M9W 6H6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vaughan Mills Office Solutions Inc     416-987-8000"
+      ],
+      "trade_name": "Re/Max Premier Inc",
+      "contact_lines": [
+        "Pres: Gabriel Bianchi",
+        "c/o 9100 Jane St",
+        "Suite 77, Building L",
+        "Vaughan, Ontario",
+        "L4K 0A4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza Condos - 1 storey; 9,025 sf @ $789",
+      "",
+      "9,025 sf plus mezzanine",
+      "",
+      "Vacant - will be divided into 8 units and leased out",
+      "",
+      "Last transferred in June 2007 for $3,641,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1086",
+      "Level 1, Units 73-80",
+      "",
+      "PIN: 29617-0073 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,275,000     assumed/vtb debt: $850,000",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $6,450,000   rate: Prime plus 3.0% per annum",
+      "registered: 03/07/2012   due: on demand",
+      "",
+      "chargee: Grascan Construction (2000) Ltd",
+      "principal: $850,000   rate: 1.0% per annum",
+      "registered: 03/07/2012   due: 02/28/2017"
+    ],
+    "broker_lines": [
+      "RE/MAX Premier Realty: Gabriel Bianchi, 416-987-8000"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84045/0324_093900.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84045/0324_093924.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84045/0324_094020.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84045/0324_094139.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84045/0324_094151.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "457 / 984",
+      "rt_id": "RT84045"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "9100 JANE ST, UNITS 73 - 80",
+    "postcode": "L4K 0A4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/07/2012",
+    "desc": "Retail Plaza Condos - 1 storey; 9,025 sf @ $789",
+    "bldg": "9,025 sf",
+    "acreage": "",
+    "consid": "7125000",
+    "cash": "6275000",
+    "debt": "850000",
+    "note": "",
+    "pin": "29617-0073+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "9100 JANE ST",
+      "UNITS 73 - 80"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "07 Mar 2012",
+    "note": "",
+    "description": "Retail Plaza Condos - 1 storey; 9,025 sf @ $789",
+    "seller_lines": [
+      "Jane Rutherford Centre Inc"
+    ],
+    "buyer_lines": [
+      "Vaughan Mills Office Solutions Inc"
+    ],
+    "price_text": "$7,125,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT76144",
+  "source_folder": "Lambton/retail/p002",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT76144",
+      "source_folder": "Lambton/retail/p002",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "430 EXMOUTH ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "07 Jan 2011",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "T Kenneth Guthrie Ltd     519-542-8351"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Guthrie",
+        "c/o 1770 Lakeshore Rd",
+        "Sarnia, Ontario",
+        "N7X 1C1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lambton Financial Credit Union Ltd     519-542-0483"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bob Ferris",
+        "1295 London Rd",
+        "Sarnia, Ontario",
+        "N7S 1P6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 tenants 10,000 sf @ $130",
+      "",
+      "Fully leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-3492, Part 1",
+      "",
+      "PIN: 43191-0026",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "38 29 300 002 16300",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT761/RT76144/0514_120226.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT761/RT76144/0514_120315.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT761/RT76144/0514_120715.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT761/RT76144/air1.jpg",
+        "/assets/files/RT7/RT761/RT76144/air2.jpg",
+        "/assets/files/RT7/RT761/RT76144/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "74 / 106",
+      "rt_id": "RT76144"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "430 EXMOUTH ST",
+    "postcode": "N7T 5N9",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "01/07/2011",
+    "desc": "Retail Plaza - 1 storey; 5 tenants 10,000 sf @ $130",
+    "bldg": "10,000 sf",
+    "acreage": "1.1",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "43191-0026",
+    "rollno": "38 29 300 002 16300"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "430 EXMOUTH ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "07 Jan 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 tenants 10,000 sf @ $130",
+    "seller_lines": [
+      "T Kenneth Guthrie Ltd"
+    ],
+    "buyer_lines": [
+      "Lambton Financial Credit Union Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT181341",
+  "source_folder": "Muskoka/restaurant-bar/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181341",
+      "source_folder": "Muskoka/restaurant-bar/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/restaurant-bar/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 HOWLAND DR"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "01 Nov 2023",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2014695 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1 Kensington Trail",
+        "Barrie, Ontario",
+        "L4N 0K5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jrad Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Ribson",
+        "200 Bay St",
+        "Box 106 3204",
+        "Toronto, Ontario",
+        "M5J 2J1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 35R-20337, Part 1",
+      "",
+      "PIN: 48079-0549",
+      "",
+      "0.94 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 8",
+      "rt_id": "RT181341"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "155 HOWLAND DR",
+    "postcode": "P1H 2P9",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "11/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".94",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "48079-0549",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "155 HOWLAND DR"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "01 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2014695 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Jrad Investments Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

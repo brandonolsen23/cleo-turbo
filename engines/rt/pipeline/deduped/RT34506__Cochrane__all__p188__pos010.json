@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT34506",
+  "source_folder": "Cochrane/all/p188",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34506",
+      "source_folder": "Cochrane/all/p188",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p188/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "262 COLTRIN RD"
+      ],
+      "city_region": "Rockcliffe Park : Ottawa-Carleton",
+      "date_text": "03 Mar 2004",
+      "price_text": "$1,034,954",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "161 Elgin St",
+        "Ottawa, Ontario",
+        "K2P 2K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1248767 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Phil Bourque",
+        "164 Richmond Rd",
+        "Ottawa, Ontario",
+        "K1Z 6W2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-22, Part Block A8",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "06 11 000 220 12900",
+    "consideration_lines": [
+      "cash: $1,034,954     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT345/RT34506/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9361 / 10920",
+      "rt_id": "RT34506"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "262 COLTRIN RD",
+    "postcode": "K1M 0A6",
+    "municipality": "Rockcliffe Park",
+    "region": "Ottawa-Carleton",
+    "date": "03/03/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "1034954",
+    "cash": "1034954",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "06 11 000 220 12900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "262 COLTRIN RD"
+    ],
+    "city_region": "Rockcliffe Park : Ottawa-Carleton",
+    "date_text": "03 Mar 2004",
+    "note": "Foreclosure",
+    "description": "",
+    "seller_lines": [
+      "Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1248767 Ontario Inc"
+    ],
+    "price_text": "$1,034,954"
+  }
+}

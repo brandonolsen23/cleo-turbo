@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT34811",
+  "source_folder": "Metro_Toronto/multifamily/p094",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34811",
+      "source_folder": "Metro_Toronto/multifamily/p094",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p094/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "2659 EGLINTON AVE W"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "30 Mar 2004",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "717824 Ontario Inc     416-240-9903"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tony Fillippelli",
+        "Intersite General Contracting",
+        "16 Northwestern Ave",
+        "Toronto, Ontario",
+        "M6M 5E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2042790 Ontario Ltd     905-841-2131"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Heather Clarke",
+        "18 Hollingshead Dr",
+        "Aurora, Ontario",
+        "L4G 5J8"
+      ]
+    },
+    "description_lines": [
+      "SixPlex - 1.5 storey; 6 units @ $125,000",
+      "",
+      "Converted com bldg."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2008, Part Lot 70",
+      "As in Inst No CA-704596",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 14 052 150 02600",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT348/RT34811/air1.jpg",
+        "/assets/files/RT3/RT348/RT34811/air2.jpg",
+        "/assets/files/RT3/RT348/RT34811/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT348/RT34811/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4661 / 6031",
+      "rt_id": "RT34811"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "2659 EGLINTON AVE W",
+    "postcode": "M6M 1T8",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "03/30/2004",
+    "desc": "SixPlex - 1.5 storey; 6 units @ $125,000",
+    "bldg": "6 units",
+    "acreage": ".1",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 052 150 02600"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "2659 EGLINTON AVE W"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "30 Mar 2004",
+    "note": "",
+    "description": "SixPlex - 1.5 storey; 6 units @ $125,000",
+    "seller_lines": [
+      "717824 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2042790 Ontario Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT35617",
+  "source_folder": "Metro_Toronto/retail/p077",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35617",
+      "source_folder": "Metro_Toronto/retail/p077",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p077/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "735 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 May 2004",
+      "price_text": "$4,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1488281 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michelle Moyal",
+        "27 Verwood Ave",
+        "Toronto, Ontario",
+        "M3H 2K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Wilmslow Properties Corp     905-842-9275"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Neary",
+        "260 Church St, Unit 7",
+        "Oakville, Ontario",
+        "L6J 1N6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 91, Lots 1-3",
+      "",
+      "SW corner at Palmerston",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 04 041 620 03850",
+    "consideration_lines": [
+      "cash: $4,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT356/RT35617/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3814 / 4952",
+      "rt_id": "RT35617"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "735 QUEEN ST W",
+    "postcode": "M6J 1G1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/21/2004",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "4050000",
+    "cash": "4050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 041 620 03850"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "735 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 May 2004",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "1488281 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Wilmslow Properties Corp"
+    ],
+    "price_text": "$4,050,000"
+  }
+}

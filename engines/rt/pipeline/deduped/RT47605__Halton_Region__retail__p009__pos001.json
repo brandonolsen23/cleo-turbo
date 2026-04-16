@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT47605",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47605",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1417 PLAINS RD E",
+        "1439 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "15 Mar 2006",
+      "price_text": "$3,495,369",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2026235 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Bailey",
+        "1400 Cornwall Rd, Ste 2",
+        "Oakville, Ontario",
+        "L6J 7W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan PS Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carina Emnace",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5 units 15,331 sf @ $228"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-16012, Parts 1 & 3",
+      "",
+      "1.29 acre"
+    ],
+    "arn_text": "24 02 020 207 10310",
+    "consideration_lines": [
+      "cash: $3,495,369     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "402 / 613",
+      "rt_id": "RT47605"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1417 PLAINS RD E, 1439 PLAINS RD E",
+    "postcode": "L7R 3P9",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "03/15/2006",
+    "desc": "Retail Bldg - 1 storey; 5 units 15,331 sf @ $228",
+    "bldg": "15,331 sf",
+    "acreage": "1.29",
+    "consid": "3495369",
+    "cash": "3495369",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 020 207 10310"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1417 PLAINS RD E",
+      "1439 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "15 Mar 2006",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 5 units 15,331 sf @ $228",
+    "seller_lines": [
+      "2026235 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RioCan PS Inc"
+    ],
+    "price_text": "$3,495,369"
+  }
+}

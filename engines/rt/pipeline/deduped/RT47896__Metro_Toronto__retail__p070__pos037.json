@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT47896",
+  "source_folder": "Metro_Toronto/retail/p070",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47896",
+      "source_folder": "Metro_Toronto/retail/p070",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p070/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "6 CROFT ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Feb 2006",
+      "price_text": "$644,860",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Paterson Photographic Works Inc     416-366-1700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Paterson",
+        "MacDonald Porter Drees",
+        "65 Queen St W, Ste 1700",
+        "Toronto, Ontario",
+        "M5H 2M5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 112, Part Lot 94",
+      "As in Inst No CT-462862",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 067 210 03000",
+    "consideration_lines": [
+      "cash: $644,860     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3488 / 4952",
+      "rt_id": "RT47896"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "6 CROFT ST",
+    "postcode": "M5S 2N8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/28/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "644860",
+    "cash": "644860",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 067 210 03000"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "6 CROFT ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Feb 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Paterson Photographic Works Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$644,860"
+  }
+}

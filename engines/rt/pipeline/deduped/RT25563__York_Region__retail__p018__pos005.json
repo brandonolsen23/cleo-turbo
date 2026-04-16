@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT25563",
+  "source_folder": "York_Region/retail/p018",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25563",
+      "source_folder": "York_Region/retail/p018",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2810 MAJOR MACKENZIE DR"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "13 Jun 2002",
+      "price_text": "$18,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mackenzie Glen Developments Ltd     416-599-1930"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Garner Watchorn",
+        "Graywood Developments",
+        "370 King St W, Ste 500",
+        "Toronto, Ontario",
+        "M5V 1J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Glen Square Ltd     905-856-5070"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohamed Kasmani",
+        "51 Romano Cres",
+        "Woodbridge, Ontario",
+        "L4L 7N2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 28 units 108,124 sf @ $166"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-22044",
+      "Parts 3, 6 & 7",
+      "",
+      "NW corner at Melville Ave",
+      "",
+      "11.04 acre"
+    ],
+    "arn_text": "19 28 000 270 03000",
+    "consideration_lines": [
+      "cash: $18,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT255/RT25563/photo.jpg"
+    },
+    "footer": {
+      "page_position": "856 / 984",
+      "rt_id": "RT25563"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2810 MAJOR MACKENZIE DR",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/13/2002",
+    "desc": "Retail Plaza - 1 storey; 28 units 108,124 sf @ $166",
+    "bldg": "108,124 sf",
+    "acreage": "11.04",
+    "consid": "18000000",
+    "cash": "18000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 270 03000"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2810 MAJOR MACKENZIE DR"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "13 Jun 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 28 units 108,124 sf @ $166",
+    "seller_lines": [
+      "Mackenzie Glen Developments Ltd"
+    ],
+    "buyer_lines": [
+      "Glen Square Ltd"
+    ],
+    "price_text": "$18,000,000"
+  }
+}

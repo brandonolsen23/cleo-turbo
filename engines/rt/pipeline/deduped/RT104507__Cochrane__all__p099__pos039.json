@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT104507",
+  "source_folder": "Cochrane/all/p099",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104507",
+      "source_folder": "Cochrane/all/p099",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p099/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "38 VAUGHAN ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Oct 2014",
+      "price_text": "$612,500",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Nesbitt Property Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Nesbitt",
+        "372 Rideau St, Ste 328",
+        "Ottawa, Ontario",
+        "K1N 1G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 98806, Lot 88",
+      "",
+      "PIN: 04221-0302",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "06 14 010 201 23300",
+    "consideration_lines": [
+      "cash: $163,248     assumed/vtb debt: $286,005",
+      "other: $163,247",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $325,000   rate: 2.89% per annum.",
+      "registered: 10/31/2014   due: 10/31/2018",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $360,000   rate: Prime minus 0.6% per annum.",
+      "registered: 10/01/2008   due: 10/01/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4940 / 10920",
+      "rt_id": "RT104507"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "38 VAUGHAN ST",
+    "postcode": "K1M 1X1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/31/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "612500",
+    "cash": "163248",
+    "debt": "286005",
+    "note": "Related Parties",
+    "pin": "04221-0302",
+    "rollno": "06 14 010 201 23300"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "38 VAUGHAN ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Oct 2014",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Nesbitt Property Management Inc"
+    ],
+    "price_text": "$612,500"
+  }
+}

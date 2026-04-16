@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT197797",
+  "source_folder": "Cochrane/all/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197797",
+      "source_folder": "Cochrane/all/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "267 LALEMANT ST"
+      ],
+      "city_region": "Vanier : Ottawa-Carleton",
+      "date_text": "03 Mar 2026",
+      "price_text": "$740,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Caisse Desjardins Ontario Credit Union Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2489 St Dominique St",
+        "Jonquiere, Quebec",
+        "G7X 6K4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 246, Lot 144",
+      "",
+      "PIN: 04232-0098",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "06 09 210 301 21700",
+    "consideration_lines": [
+      "cash: $740,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $600,000   rate: 4.03% per annum.",
+      "registered: 03/03/2026   due: 04/01/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 10920",
+      "rt_id": "RT197797"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "267 LALEMANT ST",
+    "postcode": "K1L 7G1",
+    "municipality": "Vanier",
+    "region": "Ottawa-Carleton",
+    "date": "03/03/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "740000",
+    "cash": "740000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "04232-0098",
+    "rollno": "06 09 210 301 21700"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "267 LALEMANT ST"
+    ],
+    "city_region": "Vanier : Ottawa-Carleton",
+    "date_text": "03 Mar 2026",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Caisse Desjardins Ontario Credit Union Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$740,000"
+  }
+}

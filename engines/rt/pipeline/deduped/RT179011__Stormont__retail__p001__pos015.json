@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT179011",
+  "source_folder": "Stormont/retail/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179011",
+      "source_folder": "Stormont/retail/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "17305 CORNWALL CENTRE RD"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "26 Jun 2023",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cornwall Centre Road Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1900 Pitt St, Unit 2",
+        "Cornwall, Ontario",
+        "K6J 5H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "AJR Singh's Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Amrik Bininng",
+        "1250 St Michel Ave",
+        "Cornwall, Ontario",
+        "K6H 0E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 10",
+      "Plan 252, Part Lots 304 & 310",
+      "Plan 52R-8336, Parts 1-4",
+      "As in Inst No S-356960",
+      "",
+      "PIN: 60205-0118",
+      "",
+      "1.30 acre"
+    ],
+    "arn_text": "04 06 001 001 53000",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $800,000",
+      "",
+      "chargee: Cornwall Centre Road Properties Inc",
+      "principal: $800,000   rate: 1.0% per annum on principal of $400,000, after payment of $400,000 due on 6/23/2024. TD prime plus 1.0% per annum if lump sum is not paid. Due in monthly payments of $666.67 a month for the first year, and $333.33 a month for the second year.",
+      "registered: 06/26/2023   due: 06/23/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1790/RT179011/air1.jpg",
+        "/assets/files/RT17/RT1790/RT179011/air2.jpg",
+        "/assets/files/RT17/RT1790/RT179011/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 29",
+      "rt_id": "RT179011"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "17305 CORNWALL CENTRE RD",
+    "postcode": "K6K 1K5",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "06/26/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.3",
+    "consid": "1200000",
+    "cash": "400000",
+    "debt": "800000",
+    "note": "",
+    "pin": "60205-0118",
+    "rollno": "04 06 001 001 53000"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "17305 CORNWALL CENTRE RD"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "26 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Cornwall Centre Road Properties Inc"
+    ],
+    "buyer_lines": [
+      "AJR Singh's Group Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

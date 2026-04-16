@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT91223",
+  "source_folder": "Cochrane/all/p115",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT91223",
+      "source_folder": "Cochrane/all/p115",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p115/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 3",
+        "PART LOT 26"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Feb 2013",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Laurent Leblanc Ltd     613-830-0066"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Laurent Leblanc",
+        "3000 Navan Rd",
+        "Ottawa, Ontario",
+        "K1C 7G4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JD Brule Investments Holding Ltd     613-745-9536"
+      ],
+      "trade_name": "Clean Water Works Inc",
+      "contact_lines": [
+        "Attn: Jocelyn Chouinard",
+        "1800 Bantree St",
+        "Ottawa, Ontario",
+        "K1B 5L6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 26",
+      "Plan 4R-26713, Parts 4-8",
+      "",
+      "PIN: 04262-0274 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $600,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/28/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5710 / 10920",
+      "rt_id": "RT91223"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "CONC 3, PART LOT 26",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/28/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "04262-0274+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "CONC 3",
+      "PART LOT 26"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Feb 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Laurent Leblanc Ltd"
+    ],
+    "buyer_lines": [
+      "JD Brule Investments Holding Ltd"
+    ],
+    "price_text": "$600,000"
+  }
+}

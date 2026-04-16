@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT40675",
+  "source_folder": "Ottawa-Carleton/retail/p018",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40675",
+      "source_folder": "Ottawa-Carleton/retail/p018",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p018/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "230 MAIN ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "10 Mar 2005",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Caisse Populaire Rideau D'Ontario Inc     613-241-1316"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andree Ruel",
+        "293 Dalhousie St",
+        "Ottawa, Ontario",
+        "K1N 7E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Routeburn Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Metz",
+        "446 Cloverdale Rd",
+        "Ottawa, Ontario",
+        "K1M 0Y6"
+      ]
+    },
+    "description_lines": [
+      "Bank - 1 storey; 2,594 sf @ $193"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 102, Block C",
+      "Lots 1 & 2",
+      "Except:",
+      "Plan 5R-3726, Part 1",
+      "Inst No N-714815",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "06 14 052 801 02400",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT406/RT40675/photo.jpg"
+    },
+    "footer": {
+      "page_position": "882 / 1141",
+      "rt_id": "RT40675"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "230 MAIN ST",
+    "postcode": "K1S 1C7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/10/2005",
+    "desc": "Bank - 1 storey; 2,594 sf @ $193",
+    "bldg": "2,594 sf",
+    "acreage": ".2",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 052 801 02400"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "230 MAIN ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "10 Mar 2005",
+    "note": "",
+    "description": "Bank - 1 storey; 2,594 sf @ $193",
+    "seller_lines": [
+      "Caisse Populaire Rideau D'Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Routeburn Realty Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

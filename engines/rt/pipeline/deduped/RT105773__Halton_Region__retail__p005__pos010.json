@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT105773",
+  "source_folder": "Halton_Region/retail/p005",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105773",
+      "source_folder": "Halton_Region/retail/p005",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p005/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "519 BRANT ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "15 Jan 2015",
+      "price_text": "$1,462,258",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,190 sf @ $282",
+      "",
+      "Leased back to the vendor (BMO)",
+      "",
+      "20 surface parking spaces."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-20044, Part 1",
+      "",
+      "PIN: 07071-0059",
+      "",
+      "E side Brant St, N of Caroline St",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "24 02 060 606 00200",
+    "consideration_lines": [
+      "cash: $1,462,258     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105773/0123_090410.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105773/0123_090422.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105773/0123_090453.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105773/0123_090502.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "211 / 613",
+      "rt_id": "RT105773"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "519 BRANT ST",
+    "postcode": "L7R 2G6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 5,190 sf @ $282",
+    "bldg": "5,190 sf",
+    "acreage": ".31",
+    "consid": "1462258",
+    "cash": "1462258",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "07071-0059",
+    "rollno": "24 02 060 606 00200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "519 BRANT ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 5,190 sf @ $282",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$1,462,258"
+  }
+}

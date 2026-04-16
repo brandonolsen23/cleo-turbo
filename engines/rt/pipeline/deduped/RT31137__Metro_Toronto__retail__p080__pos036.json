@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT31137",
+  "source_folder": "Metro_Toronto/retail/p080",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31137",
+      "source_folder": "Metro_Toronto/retail/p080",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p080/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "1306 KENNEDY RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "22 Jul 2003",
+      "price_text": "$1,571,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "My Simple Investment Inc     416-757-2595"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pratiti Upadhyay",
+        "Ups Auto Parts Ltd",
+        "1306 Kennedy Rd",
+        "Toronto, Ontario",
+        "M1P 2L5"
+      ]
+    },
+    "description_lines": [
+      "Automotive Shop - 16 ft clr; 9,300 sf on 1.076 Ac",
+      "",
+      "Last transferred in Sep 97 for $1,250,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5318, Block B",
+      "",
+      "1.08 acre"
+    ],
+    "arn_text": "19 01 043 340 02900",
+    "consideration_lines": [
+      "cash: $1,571,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT311/RT31137/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3987 / 4952",
+      "rt_id": "RT31137"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "1306 KENNEDY RD",
+    "postcode": "M1P 2L5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "07/22/2003",
+    "desc": "Automotive Shop - 16 ft clr; 9,300 sf on 1.076 Ac",
+    "bldg": "9,300 sf",
+    "acreage": "1.08",
+    "consid": "1571000",
+    "cash": "1571000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 01 043 340 02900"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "1306 KENNEDY RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "22 Jul 2003",
+    "note": "Power of Sale",
+    "description": "Automotive Shop - 16 ft clr; 9,300 sf on 1.076 Ac",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "My Simple Investment Inc"
+    ],
+    "price_text": "$1,571,000"
+  }
+}

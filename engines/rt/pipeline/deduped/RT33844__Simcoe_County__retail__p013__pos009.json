@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT33844",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33844",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "85 BARRIE VIEW DR"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "30 Jan 2004",
+      "price_text": "$3,300,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "393 University Ave",
+        "Toronto, Ontario",
+        "M5G 1E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Barrie View Plaza II Inc     416-221-9348"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eliahu Swirsky",
+        "Torgan Group",
+        "4950 Yonge St, Ste 601",
+        "Toronto, Ontario",
+        "M2N 6K1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar - 1 storey; 4 units 11,950 sf @ $276",
+      "",
+      "Harveys, Swiss Chalet, Sunoco Gas Bar & Toy Store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51M-401, Lot 51",
+      "",
+      "2.00 acre"
+    ],
+    "arn_text": "43 42 040 018 12500",
+    "consideration_lines": [
+      "cash: $3,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal Lepage Commercial: Chris Barrett, 416-862-0611"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT338/RT33844/photo.jpg"
+    },
+    "footer": {
+      "page_position": "610 / 712",
+      "rt_id": "RT33844"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "85 BARRIE VIEW DR",
+    "postcode": "L4N 8V4",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "01/30/2004",
+    "desc": "Retail Plaza & Gas Bar - 1 storey; 4 units 11,950 sf @ $276",
+    "bldg": "11,950 sf",
+    "acreage": "2",
+    "consid": "3300000",
+    "cash": "3300000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "",
+    "rollno": "43 42 040 018 12500"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "85 BARRIE VIEW DR"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "30 Jan 2004",
+    "note": "Vesting Order",
+    "description": "Retail Plaza & Gas Bar - 1 storey; 4 units 11,950 sf @ $276",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "Barrie View Plaza II Inc"
+    ],
+    "price_text": "$3,300,000"
+  }
+}

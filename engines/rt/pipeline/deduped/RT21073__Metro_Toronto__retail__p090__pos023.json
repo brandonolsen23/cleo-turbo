@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT21073",
+  "source_folder": "Metro_Toronto/retail/p090",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21073",
+      "source_folder": "Metro_Toronto/retail/p090",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p090/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Apr 2001",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal Trust Corp of Canada, Trustee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Yves Aublair",
+        "1245 Sherbrooke St W",
+        "Montreal, Quebec",
+        "H3C 1G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "McDonald's Restaurants of Canada Inc     416-443-1000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bill Johnson",
+        "McDonald's Place",
+        "Toronto, Ontario",
+        "M3C 3L4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; about 5,000 sf @ $230"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Town Lot 1, N/S Adelaide St",
+      "As in Inst CT-157878",
+      "",
+      "E side 40m N of Adelaide",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 064 440 00500",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Colliers: Gordon Byrne, 416-777-2200"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT210/RT21073/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4474 / 4952",
+      "rt_id": "RT21073"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "123 YONGE ST",
+    "postcode": "M5C 1W4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/17/2001",
+    "desc": "Retail Bldg - 2 storey; about 5,000 sf @ $230",
+    "bldg": "5000 sf",
+    "acreage": ".06",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 064 440 00500"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "123 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Apr 2001",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; about 5,000 sf @ $230",
+    "seller_lines": [
+      "Royal Trust Corp of Canada, Trustee"
+    ],
+    "buyer_lines": [
+      "McDonald's Restaurants of Canada Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

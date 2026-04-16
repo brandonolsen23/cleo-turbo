@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT176715",
+  "source_folder": "Durham_Region/retail/p003",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176715",
+      "source_folder": "Durham_Region/retail/p003",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p003/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "227 BLOOR ST E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "31 Mar 2023",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2484239 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "227 Bloor St E",
+        "Oshawa, Ontario",
+        "L1H 3M3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "555 Hastings Avenue Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kenan Tan",
+        "1659 Heathside Cres",
+        "Pickering, Ontario",
+        "L1V 5W7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-27443, Parts 2 & 4",
+      "",
+      "PIN: 16382-0708 +",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176715/0430_100423.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176715/0430_100441.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176715/0430_100442.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176715/0430_100504.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176715/0430_100505.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176715/0430_100529.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "105 / 506",
+      "rt_id": "RT176715"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "227 BLOOR ST E",
+    "postcode": "M4W 1C8",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "03/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "16382-0708+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "227 BLOOR ST E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "31 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2484239 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "555 Hastings Avenue Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

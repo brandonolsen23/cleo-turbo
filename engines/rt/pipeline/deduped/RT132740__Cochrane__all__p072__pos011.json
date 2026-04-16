@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT132740",
+  "source_folder": "Cochrane/all/p072",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT132740",
+      "source_folder": "Cochrane/all/p072",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p072/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "379 COOPER ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "12 Mar 2018",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2276663 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adib Saad",
+        "379 Cooper St",
+        "Ottawa, Ontario",
+        "K2P 0G8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-21588, Part 4",
+      "",
+      "PIN: 04115-0206",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "06 14 041 901 08100",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Westboro Management Ltd",
+      "principal: $1,270,000   rate: 9.99% per annum.",
+      "registered: 03/12/0018   due: 03/09/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3562 / 10920",
+      "rt_id": "RT132740"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "379 COOPER ST",
+    "postcode": "K2P 0G8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/12/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "04115-0206",
+    "rollno": "06 14 041 901 08100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "379 COOPER ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "12 Mar 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2276663 Ontario Ltd"
+    ],
+    "price_text": "$850,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT120906",
+  "source_folder": "Leeds/all/p021",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT120906",
+      "source_folder": "Leeds/all/p021",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p021/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "357 MURRAY ST"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "04 Nov 2016",
+      "price_text": "$1,325,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "First National Financial GP Corp     416-593-1100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chris Sebben",
+        "c/o First National Financial LP",
+        "100 University Ave, Ste 700",
+        "Toronto, Ontario",
+        "M5J 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Whitehall Commercial Corp     905-845-1724"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Timothy Diamond",
+        "237 Chartwell Rd",
+        "Oakville, Ontario",
+        "L6J 3Z7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 413",
+      "Lots 325 & 329",
+      "Part Lots 327 & 328",
+      "As in Inst No L-909823",
+      "",
+      "PIN: 43429-0065",
+      "",
+      "1.75 acre"
+    ],
+    "arn_text": "38 05 220 091 09600",
+    "consideration_lines": [
+      "cash: $1,325,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Kerri Clark & 5 others",
+      "principal: $1,000,000   rate: 6.5% per annum.",
+      "registered: 11/04/2016   due: 11/03/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1002 / 1916",
+      "rt_id": "RT120906"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "357 MURRAY ST",
+    "postcode": "N0N 1G0",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "11/04/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.75",
+    "consid": "1325000",
+    "cash": "1325000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "43429-0065",
+    "rollno": "38 05 220 091 09600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "357 MURRAY ST"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "04 Nov 2016",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "First National Financial GP Corp"
+    ],
+    "buyer_lines": [
+      "Whitehall Commercial Corp"
+    ],
+    "price_text": "$1,325,000"
+  }
+}

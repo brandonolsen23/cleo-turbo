@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT80955",
+  "source_folder": "Wellington/retail/p004",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80955",
+      "source_folder": "Wellington/retail/p004",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p004/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "45 WYNDHAM ST N"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "29 Sep 2011",
+      "price_text": "$3,845,000",
+      "note": "Purchase Agreement"
+    },
+    "transferor": {
+      "party_lines": [
+        "Wyndham Street Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4708 Townline, RR 1",
+        "Moffat, Ontario",
+        "L0P 1J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jessic Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gino Sardarao",
+        "234 Millwood Pkwy",
+        "Woodbridge, Ontario",
+        "L4L 1A6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 61R-7268, Parts 1-4",
+      "",
+      "PIN: 71286-0056",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "23 08 020 002 12900",
+    "consideration_lines": [
+      "cash: $3,845,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT809/RT80955/1120_091111.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT809/RT80955/1120_091213.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT809/RT80955/1120_091235.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT809/RT80955/1120_091253.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT809/RT80955/air1.jpg",
+        "/assets/files/RT8/RT809/RT80955/air2.jpg",
+        "/assets/files/RT8/RT809/RT80955/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "155 / 269",
+      "rt_id": "RT80955"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "45 WYNDHAM ST N",
+    "postcode": "N1H 4E4",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "09/29/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "3845000",
+    "cash": "3845000",
+    "debt": "",
+    "note": "Purchase Agreement",
+    "pin": "71286-0056",
+    "rollno": "23 08 020 002 12900"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "45 WYNDHAM ST N"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "29 Sep 2011",
+    "note": "Purchase Agreement",
+    "description": "",
+    "seller_lines": [
+      "Wyndham Street Investments Inc"
+    ],
+    "buyer_lines": [
+      "Jessic Holdings Inc"
+    ],
+    "price_text": "$3,845,000"
+  }
+}

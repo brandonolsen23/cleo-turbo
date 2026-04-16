@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT25459",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25459",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "4 BANFF RD"
+      ],
+      "city_region": "Uxbridge : Durham Region",
+      "date_text": "27 May 2002",
+      "price_text": "$1,066,744",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Landawn Shopping Centres Ltd     416-706-2400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jerome Sprackman",
+        "11 Polson St",
+        "Toronto, Ontario",
+        "M5A 1A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4027116 Canada Ltd     905-509-5302"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Louie Nuspl",
+        "140 Woodview Dr",
+        "Pickering, Ontario",
+        "M5A 1L2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 8 units 40,000 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1119, Lots 6-8",
+      "",
+      "3.80 acre"
+    ],
+    "arn_text": "18 29 040 009 02232",
+    "consideration_lines": [
+      "cash: $20,947     assumed/vtb debt: $1,045,797"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "433 / 506",
+      "rt_id": "RT25459"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "4 BANFF RD",
+    "postcode": "",
+    "municipality": "Uxbridge",
+    "region": "Durham Region",
+    "date": "05/27/2002",
+    "desc": "Retail Plaza - 1 storey; 8 units 40,000 sf",
+    "bldg": "40,000 sf",
+    "acreage": "3.8",
+    "consid": "1066744",
+    "cash": "20947",
+    "debt": "1045797",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "18 29 040 009 02232"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "4 BANFF RD"
+    ],
+    "city_region": "Uxbridge : Durham Region",
+    "date_text": "27 May 2002",
+    "note": "Partial Interest",
+    "description": "Retail Plaza - 1 storey; 8 units 40,000 sf",
+    "seller_lines": [
+      "Landawn Shopping Centres Ltd"
+    ],
+    "buyer_lines": [
+      "4027116 Canada Ltd"
+    ],
+    "price_text": "$1,066,744"
+  }
+}

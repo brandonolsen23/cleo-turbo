@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT180975",
+  "source_folder": "Bruce/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180975",
+      "source_folder": "Bruce/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1044 GODERICH ST"
+      ],
+      "city_region": "Port Elgin : Bruce",
+      "date_text": "17 Oct 2023",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2215040 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7038 Guelph Line",
+        "Campbellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000353388 Ontario Inc     519-371-1832"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Craig Beck",
+        "345 3rd Street A West",
+        "Owen Sound, Ontario",
+        "N4K 6Y8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-5391, Part 1",
+      "",
+      "PIN: 33268-0814",
+      "",
+      "0.88 acre"
+    ],
+    "arn_text": "41 10 460 003 00101",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $750,000",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/17/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 44",
+      "rt_id": "RT180975"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1044 GODERICH ST",
+    "postcode": "N0H 2C3",
+    "municipality": "Port Elgin",
+    "region": "Bruce",
+    "date": "10/17/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".88",
+    "consid": "1500000",
+    "cash": "750000",
+    "debt": "750000",
+    "note": "",
+    "pin": "33268-0814",
+    "rollno": "41 10 460 003 00101"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1044 GODERICH ST"
+    ],
+    "city_region": "Port Elgin : Bruce",
+    "date_text": "17 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2215040 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000353388 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT39813",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39813",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "3106 SOUTH SERVICE RD"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "20 Jan 2005",
+      "price_text": "$905,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Masada Investments Ltd     604-662-7717"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bruce Benda",
+        "Arbutus Leasing Ltd",
+        "355 Burrard St, Ste 1530",
+        "Vancouver, BC",
+        "V6C 2G8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Emshih Realty Inc     905-639-9006"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Atth: Michael Shih",
+        "895 Brant St, Unit 7",
+        "Burlington, Ontario",
+        "L7R 2J6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20M-3816, Parts 2, 5 & 6",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "24 02 050 521 02200",
+    "consideration_lines": [
+      "cash: $905,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT398/RT39813/air1.jpg",
+        "/assets/files/RT3/RT398/RT39813/air2.jpg",
+        "/assets/files/RT3/RT398/RT39813/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT398/RT39813/photo.jpg"
+    },
+    "footer": {
+      "page_position": "435 / 613",
+      "rt_id": "RT39813"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "3106 SOUTH SERVICE RD",
+    "postcode": "L7N 3J3",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "01/20/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "905000",
+    "cash": "905000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 521 02200"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "3106 SOUTH SERVICE RD"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "20 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Masada Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Emshih Realty Inc"
+    ],
+    "price_text": "$905,000"
+  }
+}

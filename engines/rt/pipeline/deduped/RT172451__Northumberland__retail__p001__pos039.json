@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT172451",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172451",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "277 DIVISION ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "03 Oct 2022",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2064346 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "60 Hamilton Ave",
+        "Cobourg, Ontario",
+        "K9A 1W1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000315172 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Julie Powell",
+        "603 Ewing St",
+        "Cobourg, Ontario",
+        "K9A 5G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - Hamilton, Part Lot 17",
+      "Plan 39R-435, Part 1",
+      "Except:",
+      "Plan 39R-1243, Part 2",
+      "",
+      "PIN: 51094-0377",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "14 21 000 110 00900",
+    "consideration_lines": [
+      "cash: $225,000     assumed/vtb debt: $1,275,000",
+      "",
+      "chargee: 2064346 Ontario Inc",
+      "principal: $1,275,000   rate: 6.0% per annum.",
+      "registered: 10/03/2022   due: 10/03/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1724/RT172451/1227_085138.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1724/RT172451/1227_085144.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1724/RT172451/1227_085207.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1724/RT172451/1227_085209.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1724/RT172451/1227_085210.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1724/RT172451/1227_085214.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "40 / 93",
+      "rt_id": "RT172451"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "277 DIVISION ST",
+    "postcode": "K9A 3R2",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "10/03/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "1500000",
+    "cash": "225000",
+    "debt": "1275000",
+    "note": "",
+    "pin": "51094-0377",
+    "rollno": "14 21 000 110 00900"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "277 DIVISION ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "03 Oct 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2064346 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000315172 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

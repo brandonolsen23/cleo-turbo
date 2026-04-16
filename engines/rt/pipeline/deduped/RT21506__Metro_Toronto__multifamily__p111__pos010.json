@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT21506",
+  "source_folder": "Metro_Toronto/multifamily/p111",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21506",
+      "source_folder": "Metro_Toronto/multifamily/p111",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p111/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1046 COLLEGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 May 2001",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Harvey Freedman & Ruth Magder     416-322-5332"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "72 Gilgorm Rd",
+        "Toronto, Ontario",
+        "M5N 2M5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Captiva Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Leslie Steiner",
+        "16 Birch Ave, 3rd flr",
+        "Toronto, Ontario",
+        "M4V 1C8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 41 units @ $37,805"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 324, Lots B & 49-51, N/S College St",
+      "",
+      "N side 50m W of Havelock St",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 04 044 240 03700",
+    "consideration_lines": [
+      "cash: $155,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Property Mgr: Doug Hamm, 416-536-2096"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT215/RT21506/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5511 / 6031",
+      "rt_id": "RT21506"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1046 COLLEGE ST",
+    "postcode": "M6H 1A9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/07/2001",
+    "desc": "Apartment Bldg - 3 storey; 41 units @ $37,805",
+    "bldg": "41 units",
+    "acreage": ".25",
+    "consid": "1550000",
+    "cash": "155000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 044 240 03700"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1046 COLLEGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 May 2001",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 41 units @ $37,805",
+    "seller_lines": [
+      "Harvey Freedman & Ruth Magder"
+    ],
+    "buyer_lines": [
+      "Captiva Investments Ltd"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

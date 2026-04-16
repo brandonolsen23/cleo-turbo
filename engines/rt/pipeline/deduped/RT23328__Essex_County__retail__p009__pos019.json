@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT23328",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23328",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "201 WEST GRAND BLVD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "25 Oct 2001",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1078323 Ontario Ltd     519-966-7882"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Antonio Malandruccolo",
+        "3786 Howard Ave",
+        "Windsor, Ontario",
+        "N9E 3N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cardinal Carafa Inc     519-966-3888"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vojtech Karafa",
+        "1425 Morton Dr",
+        "LaSalle, Ontario",
+        "N9J 3R8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 9,000 sf @ $83"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-13239, Parts 2 & 3",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "37 39 080 040 01600",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $550,000"
+    ],
+    "broker_lines": [
+      "Manor Realty: Jack Genarre & Steve Mustak, 519-250-8800"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT233/RT23328/photo.jpg"
+    },
+    "footer": {
+      "page_position": "420 / 460",
+      "rt_id": "RT23328"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "201 WEST GRAND BLVD",
+    "postcode": "N9E 3W7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "10/25/2001",
+    "desc": "Retail Bldg - 1 storey; 9,000 sf @ $83",
+    "bldg": "9,000 sf",
+    "acreage": ".68",
+    "consid": "750000",
+    "cash": "200000",
+    "debt": "550000",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 080 040 01600"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "201 WEST GRAND BLVD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "25 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 9,000 sf @ $83",
+    "seller_lines": [
+      "1078323 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Cardinal Carafa Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

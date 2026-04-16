@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT183827",
+  "source_folder": "Simcoe_County/retail/p002",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183827",
+      "source_folder": "Simcoe_County/retail/p002",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p002/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "465 BAYFIELD ST",
+        "509 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "25 Mar 2024",
+      "price_text": "$9,979,860",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ben Walker Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "150 Consumers Rd, Ste 207",
+        "Toronto, Ontario",
+        "M2J 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     800-465-2733"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Duncan",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - VES, Part Lot 19",
+      "Plan 51R-12305, Parts 10-12",
+      "Except:",
+      "Plan 51R-24721, Part 5",
+      "Plan 51R-43321, Parts 1 & 2",
+      "Inst No RO-1281334",
+      "",
+      "PIN: 58928-0253 +",
+      "",
+      "22.39 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $9,979,860     assumed/vtb debt: $0",
+      "",
+      "chargee: Desjardins Financial Security Life Assurance Co",
+      "principal: $115,000,000   rate: 5.24% per annum.",
+      "registered: 03/25/2024   due: 03/01/2029",
+      "",
+      "chargee: RioCan Financial Services Ltd",
+      "principal: $24,500,000   rate: CORRA plus 7.5% with a floor of 5.0% per annum.",
+      "registered: 03/25/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "91 / 712",
+      "rt_id": "RT183827"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "465 BAYFIELD ST, 509 BAYFIELD ST",
+    "postcode": "L4M 4Z9",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "03/25/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "22.39",
+    "consid": "9979860",
+    "cash": "9979860",
+    "debt": "",
+    "note": "",
+    "pin": "58928-0253+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "465 BAYFIELD ST",
+      "509 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "25 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ben Walker Ltd"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$9,979,860"
+  }
+}

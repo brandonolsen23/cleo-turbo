@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT56762",
+  "source_folder": "Algoma/multifamily/p002",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56762",
+      "source_folder": "Algoma/multifamily/p002",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/multifamily/p002/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "519 BOUNDARY RD"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "20 Jul 2007",
+      "price_text": "$727,200",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Eastbound Apartments Ltd     705-942-1019"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Elgie",
+        "Elstrong Management Ltd",
+        "123 March St",
+        "Ste 300, PO Box 62",
+        "Sault Ste Marie, Ontario",
+        "P5A 5L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Interrent Sault Ste Marie Inc     416-769-0769"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Michael Newman",
+        "268 Royal York Rd, 2nd Flr",
+        "Toronto, Ontario",
+        "M6R 1E6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2.5 storey; 18 units @ $40,400"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-311, Block M",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "57 61 010 022 01600",
+    "consideration_lines": [
+      "cash: $727,200     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $523,153   rate: 5.29% per annum",
+      "registered: 07/20/2007   due: 08/01/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "77 / 78",
+      "rt_id": "RT56762"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "519 BOUNDARY RD",
+    "postcode": "P6A 5Z2",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "07/20/2007",
+    "desc": "Apartment Bldg - 2.5 storey; 18 units @ $40,400",
+    "bldg": "18 units",
+    "acreage": ".67",
+    "consid": "727200",
+    "cash": "727200",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "57 61 010 022 01600"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "519 BOUNDARY RD"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "20 Jul 2007",
+    "note": "Portfolio Sale",
+    "description": "Apartment Bldg - 2.5 storey; 18 units @ $40,400",
+    "seller_lines": [
+      "Eastbound Apartments Ltd"
+    ],
+    "buyer_lines": [
+      "Interrent Sault Ste Marie Inc"
+    ],
+    "price_text": "$727,200"
+  }
+}

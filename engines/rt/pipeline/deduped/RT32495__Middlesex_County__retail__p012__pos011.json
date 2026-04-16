@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT32495",
+  "source_folder": "Middlesex_County/retail/p012",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32495",
+      "source_folder": "Middlesex_County/retail/p012",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p012/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1070 - 1090 ADELAIDE ST N",
+        "621 HURON ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "30 Oct 2003",
+      "price_text": "$11,800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "L Corley Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lorne Corley",
+        "2196A Bloor St W",
+        "Toronto, Ontario",
+        "M6S 1N4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-3075, Parts 1, 4-6 & 8",
+      "",
+      "7.44 acre"
+    ],
+    "arn_text": "39 36 030 600 12000",
+    "consideration_lines": [
+      "cash: $11,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "562 / 686",
+      "rt_id": "RT32495"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1070 - 1090 ADELAIDE ST N, 621 HURON ST",
+    "postcode": "N5Y 2N1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "10/30/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "7.44",
+    "consid": "11800000",
+    "cash": "11800000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "39 36 030 600 12000"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1070 - 1090 ADELAIDE ST N",
+      "621 HURON ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "30 Oct 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "L Corley Inc"
+    ],
+    "price_text": "$11,800,000"
+  }
+}

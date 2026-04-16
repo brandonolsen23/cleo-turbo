@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT123101",
+  "source_folder": "Simcoe_County/all/p006",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123101",
+      "source_folder": "Simcoe_County/all/p006",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/all/p006/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "261 HIGHWAY 520",
+        "261 HWY 520"
+      ],
+      "city_region": "Burk's Falls : Parry Sound",
+      "date_text": "31 Jan 2017",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "8181233 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ping Liu",
+        "275 Renfrew Dr, Ste 104",
+        "Markham, Ontario",
+        "L3R 0C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lots 1 & 2",
+      "As in Inst No RO-182334",
+      "",
+      "PIN: 52137-0551",
+      "",
+      "87.96 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "293 / 501",
+      "rt_id": "RT123101"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "261 HIGHWAY 520, 261 HWY 520",
+    "postcode": "P0A 1C0",
+    "municipality": "Burk&#39;s Falls",
+    "region": "Parry Sound",
+    "date": "01/31/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "87.96",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "",
+    "pin": "52137-0551",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "261 HIGHWAY 520",
+      "261 HWY 520"
+    ],
+    "city_region": "Burk's Falls : Parry Sound",
+    "date_text": "31 Jan 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "8181233 Canada Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

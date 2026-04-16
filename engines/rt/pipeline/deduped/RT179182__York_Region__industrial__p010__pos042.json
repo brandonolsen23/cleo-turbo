@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT179182",
+  "source_folder": "York_Region/industrial/p010",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179182",
+      "source_folder": "York_Region/industrial/p010",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p010/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 DON HILLOCK DR",
+        "UNIT 5"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "09 Jun 2023",
+      "price_text": "$1,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Comptrak Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Don Hillock Dr, Unit 5",
+        "Aurora, Ontario",
+        "L4G 0H8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1965011 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lasse Silegren",
+        "125 Don Hillock Dr, Unit 5",
+        "Aurora, Ontario",
+        "L4G 0H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1148",
+      "Level 1, Unit 5",
+      "",
+      "PIN: 26979-0005"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "493 / 2269",
+      "rt_id": "RT179182"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "125 DON HILLOCK DR, UNIT 5",
+    "postcode": "L4G 0H8",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "06/09/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1000000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "26979-0005",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "125 DON HILLOCK DR",
+      "UNIT 5"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "09 Jun 2023",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Comptrak Inc"
+    ],
+    "buyer_lines": [
+      "1965011 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

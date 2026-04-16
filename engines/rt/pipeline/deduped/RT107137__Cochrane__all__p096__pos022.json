@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT107137",
+  "source_folder": "Cochrane/all/p096",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT107137",
+      "source_folder": "Cochrane/all/p096",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p096/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "4107 BELGREEN DR"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "16 Mar 2015",
+      "price_text": "$1,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "4107 Belgreen Property Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Papoulis",
+        "4107 Belgreen Dr",
+        "Ottawa, Ontario",
+        "K1G 3N2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - RF, Part Lot 4",
+      "Plan 5R-9458, Part 37",
+      "",
+      "PIN: 04351-0111",
+      "",
+      "1.92 acre"
+    ],
+    "arn_text": "06 06 000 080 03605",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $136,379   rate: 2.0% per annum.",
+      "registered: 03/16/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4773 / 10920",
+      "rt_id": "RT107137"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "4107 BELGREEN DR",
+    "postcode": "K1G 3N2",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "03/16/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.92",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04351-0111",
+    "rollno": "06 06 000 080 03605"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "4107 BELGREEN DR"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "16 Mar 2015",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "4107 Belgreen Property Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

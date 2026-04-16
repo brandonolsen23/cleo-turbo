@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT172370",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172370",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 HEMLO DR"
+      ],
+      "city_region": "Marathon : Thunder Bay",
+      "date_text": "04 Oct 2022",
+      "price_text": "$3,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tonecraft Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 156 Lakeshore Rd E, Ste 200",
+        "Oakville, Ontario",
+        "L6J 1H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "North Routledge Park Inc     905-286-9551"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Magdy Takawy-Wahba",
+        "5343 Drenkelly Ct",
+        "Mississauga, Ontario",
+        "L5M 2H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT17/RT1723/RT172370/mi.pdf",
+    "site_lines": [
+      "Plan 55R-7547 Parts 1-6",
+      "",
+      "PIN: 62448-0862",
+      "",
+      "10.05 acre"
+    ],
+    "arn_text": "58 59 000 005 29010",
+    "consideration_lines": [
+      "cash: $3,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $3,050,000   rate: Prime plus 6.0% per annum.",
+      "registered: 10/04/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "34 / 65",
+      "rt_id": "RT172370"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "2 HEMLO DR",
+    "postcode": "P0T 2E0",
+    "municipality": "Marathon",
+    "region": "Thunder Bay",
+    "date": "10/04/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "10.05",
+    "consid": "3900000",
+    "cash": "3900000",
+    "debt": "",
+    "note": "",
+    "pin": "62448-0862",
+    "rollno": "58 59 000 005 29010"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "2 HEMLO DR"
+    ],
+    "city_region": "Marathon : Thunder Bay",
+    "date_text": "04 Oct 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Tonecraft Ltd"
+    ],
+    "buyer_lines": [
+      "North Routledge Park Inc"
+    ],
+    "price_text": "$3,900,000"
+  }
+}

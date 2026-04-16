@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT60633",
+  "source_folder": "Cochrane/all/p154",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60633",
+      "source_folder": "Cochrane/all/p154",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p154/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "4879 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "12 Feb 2008",
+      "price_text": "$680,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "516067 Ontario Inc",
+        "COB J & M Enterprises"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Josip Mamic",
+        "546 Kochar Dr",
+        "Ottawa, Ontario",
+        "K2C 4H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2161124 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raffaele Castrucci",
+        "4879 Bank St",
+        "Ottawa, Ontario",
+        "K1X 1G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - RF, Part Lot 23",
+      "Plan 5R-3051, Part 4",
+      "Except:",
+      "Plan 5R-7891, Part 1"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $100,000     assumed/vtb debt: $580,000",
+      "",
+      "chargee: 516067 Ontario Inc",
+      "principal: $580,000   rate: 7.0% per annum",
+      "registered: 02/12/2008   due: 03/01/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT606/RT60633/0229_110545.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT606/RT60633/0229_110547.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT606/RT60633/0229_110607.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7679 / 10920",
+      "rt_id": "RT60633"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "4879 BANK ST",
+    "postcode": "K1X 1G7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/12/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "680000",
+    "cash": "100000",
+    "debt": "580000",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "4879 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "12 Feb 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "516067 Ontario Inc",
+      "COB J & M Enterprises"
+    ],
+    "buyer_lines": [
+      "2161124 Ontario Inc"
+    ],
+    "price_text": "$680,000"
+  }
+}

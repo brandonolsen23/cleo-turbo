@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-CA" lang="en-CA">
+<head profile="https://a9.com/-/spec/opensearch/1.1/">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Reverse Address Lookup - Canadian People Search | Canada 411 People Finder</title>
+</head>
+<body class="c411--address c411SearchPage deviceDesktop jsDeviceDesktop lang-en nearMeOn c411-map-osm" lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<!-- ============================================================
+     SAMPLE: Canada411 Reverse Address Search Form
+     Source: https://www.canada411.ca/search/address.html
+     Captured: 2026-04-13
+
+     FORM ACTION: /search/
+     METHOD: GET
+     PARAMETERS:
+       stype = "ad"  (address search type)
+       st    = street or address (e.g., "4 Columbo" — omit street type)
+       ci    = city (e.g., "St George" — no periods)
+       pv    = province code (e.g., "ON")
+       pc    = postal code (alternative to st+ci+pv)
+
+     PROVINCE CODES:
+       AB, BC, MB, NB, NL, NS, NT, NU, ON, PE, QC, SK, YT
+
+     NOTE: "Minimum of Street, City, and Province; or Postal Code are required.
+            Do not include apartment/suite number."
+     ============================================================ -->
+
+<div id="c411Content" class="c411Content page__container page__container--left-sidebar">
+    <div class="c411MainContent page__content">
+        <div class="c411ReverseAdr">
+            <form id="AddressSearch" name="AddressSearch" action="/search/" method="get">
+                <input type="hidden" name="stype" value="ad"/>
+                <div class="c411Form">
+                    <div class="form-group">
+                        <label class="required control-label">Street or address</label>
+                        <input type="text" class="form-control input-sm" id="c411AddressCity" value="" name="st" placeholder="e.g. 2020, 1st avenue" />
+                    </div>
+                    <div class="form-group">
+                        <label class="required control-label">City</label>
+                        <input type="text" class="form-control input-sm" name="ci" value="" maxlength="250" placeholder="e.g. Toronto, Ontario" />
+                    </div>
+                    <div class="form-group">
+                        <label class="required control-label">Province</label>
+                        <select class="c411Select form-control input-sm" name="pv">
+                            <option value="" selected="selected">Select a Province</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="required control-label">Postal code</label>
+                        <input type="text" class="form-control input-sm" name="pc" value="" maxlength="7" placeholder="e.g. H2L 3K5" />
+                    </div>
+                    <div class="btns">
+                        <label class="required ex">Minimum of Street, City, and Province; or Postal Code are required. Do not include apartment/suite number.</label>
+                        <input type="submit" id="c411AddressFind" value="Search" class="btn btn-yp">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

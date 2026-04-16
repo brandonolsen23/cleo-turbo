@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT132810",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT132810",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 PETER ST"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "22 Mar 2018",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2391074 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pritesh Patel",
+        "141 Learmont Ave",
+        "Caledon, Ontario",
+        "L7C 3V3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2619136 Ontario Inc     905-237-4417"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sayed Bakhtari",
+        "27 Thistle Ave",
+        "Richmond Hill, Ontario",
+        "L4E 0B6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc Broken Front, Part Lot 3",
+      "Plan 9R-2121, Part 1",
+      "Plan 39R-8098, Part 1",
+      "",
+      "PIN: 51080-0014",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "14 23 125 080 15100",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "chattels: $400,000",
+      "other: $2,100,000",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,192,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/22/2018   due: on demand",
+      "",
+      "chargee: 2391074 Ontario Inc",
+      "principal: $150,000   rate: 7.0% per annum.",
+      "registered: 03/23/2018   due: 03/22/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1328/RT132810/0401_140107.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1328/RT132810/0401_140109.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1328/RT132810/0401_140152.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1328/RT132810/0401_140155.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "50 / 93",
+      "rt_id": "RT132810"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "161 PETER ST",
+    "postcode": "L1A 1C7",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "03/22/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".78",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "51080-0014",
+    "rollno": "14 23 125 080 15100"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "161 PETER ST"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "22 Mar 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2391074 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2619136 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

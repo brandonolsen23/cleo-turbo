@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT188026",
+  "source_folder": "Wellington/retail/p001",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188026",
+      "source_folder": "Wellington/retail/p001",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "116 MAIN ST"
+      ],
+      "city_region": "Erin : Wellington",
+      "date_text": "10 Jun 2024",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "969618 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "116 Main St",
+        "Erin, Ontario",
+        "N0B 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1921270 Ontario Inc     647-953-5057"
+      ],
+      "trade_name": "The Tripe Factory Corp",
+      "contact_lines": [
+        "Attn: Tsege Beyan",
+        "95 Milliken Blvd",
+        "Scarborough, Ontario",
+        "M1V 1V3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 61 & 282 Erin Village",
+      "Part Lot 12, SW/S Main St",
+      "As in Inst No RO-740217",
+      "",
+      "PIN: 71151-0078",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "23 18 000 001 07300",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188026/1130_102211.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188026/1130_102212.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188026/1130_102241.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188026/1130_102242.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1880/RT188026/1130_102245.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "30 / 269",
+      "rt_id": "RT188026"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "116 MAIN ST",
+    "postcode": "N0B 1T0",
+    "municipality": "Erin",
+    "region": "Wellington",
+    "date": "06/10/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "71151-0078",
+    "rollno": "23 18 000 001 07300"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "116 MAIN ST"
+    ],
+    "city_region": "Erin : Wellington",
+    "date_text": "10 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "969618 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1921270 Ontario Inc"
+    ],
+    "price_text": "$950,000"
+  }
+}

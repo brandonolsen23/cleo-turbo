@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT190103",
+  "source_folder": "Leeds/retail/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190103",
+      "source_folder": "Leeds/retail/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "260 - 264 HIGHWAY 15",
+        "260 - 264 HWY 15"
+      ],
+      "city_region": "Elgin-Rideau Lakes : Leeds",
+      "date_text": "30 Jan 2025",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "13134091 Canada Inc     613-284-1083"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Beverly Hewitt",
+        "3 McEwen Ave",
+        "Smith Falls, Ontario",
+        "K7A 2K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - South Elmsley, Part Lot 6",
+      "Plan 28R-8008, Part 2",
+      "Plan 28R-565, Part 2",
+      "",
+      "PIN: 44128-0152",
+      "",
+      "4.00 acre"
+    ],
+    "arn_text": "08 31 828 038 22402",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190103/0822_120327.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190103/0822_120338.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190103/0822_120506.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190103/0822_120536.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190103/0822_120537.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190103/0822_120541.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 40",
+      "rt_id": "RT190103"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "260 - 264 HIGHWAY 15, 260 - 264 HWY 15",
+    "postcode": "K7A 0B5",
+    "municipality": "Elgin-Rideau Lakes",
+    "region": "Leeds",
+    "date": "01/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "44128-0152",
+    "rollno": "08 31 828 038 22402"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "260 - 264 HIGHWAY 15",
+      "260 - 264 HWY 15"
+    ],
+    "city_region": "Elgin-Rideau Lakes : Leeds",
+    "date_text": "30 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "13134091 Canada Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT108311",
+  "source_folder": "Leeds/all/p024",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT108311",
+      "source_folder": "Leeds/all/p024",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p024/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 7",
+        "PART LOT 27"
+      ],
+      "city_region": "Sombra : Lambton",
+      "date_text": "01 May 2015",
+      "price_text": "$800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1565634 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bryon Kerr",
+        "c/o 498 Brigden Rd",
+        "Wallaceburg, Ontario",
+        "N8A 4L2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 27",
+      "",
+      "PIN: 43388-0090",
+      "",
+      "103.41 acre"
+    ],
+    "arn_text": "38 05 010 030 14400",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,500,000   rate: 18.0% per annum.",
+      "registered: 05/01/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1158 / 1916",
+      "rt_id": "RT108311"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "CONC 7, PART LOT 27",
+    "postcode": "",
+    "municipality": "Sombra",
+    "region": "Lambton",
+    "date": "05/01/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "103.41",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43388-0090",
+    "rollno": "38 05 010 030 14400"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "CONC 7",
+      "PART LOT 27"
+    ],
+    "city_region": "Sombra : Lambton",
+    "date_text": "01 May 2015",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1565634 Ontario Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

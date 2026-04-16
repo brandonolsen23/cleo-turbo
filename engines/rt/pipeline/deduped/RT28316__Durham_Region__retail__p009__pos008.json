@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28316",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28316",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "910, 922 KINGSTON RD",
+        "940 KINGSTON RD"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "19 Dec 2002",
+      "price_text": "$1,335,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Romspen Investment Corp     416-929-2001"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sheldon Esbin",
+        "Esbin Property Management Inc",
+        "130 Blood St W, Ste 1100",
+        "Toronto, Ontario",
+        "M5S 1N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Fampa Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Simon Yakubowicz",
+        "25 Stable St",
+        "Toronto, Ontario",
+        "M6M 3K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1051, Lot 127, 128",
+      "BFC, Part Lot 26, Range 3",
+      "As in Inst No D-314499"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,335,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT283/RT28316/photo.jpg"
+    },
+    "footer": {
+      "page_position": "409 / 506",
+      "rt_id": "RT28316"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "910, 922 KINGSTON RD, 940 KINGSTON RD",
+    "postcode": "L1V 1B1",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "12/19/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1335000",
+    "cash": "1335000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "910, 922 KINGSTON RD",
+      "940 KINGSTON RD"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "19 Dec 2002",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Romspen Investment Corp"
+    ],
+    "buyer_lines": [
+      "Fampa Holdings Ltd"
+    ],
+    "price_text": "$1,335,000"
+  }
+}

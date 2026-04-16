@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT77124",
+  "source_folder": "Metro_Toronto/retail/p050",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77124",
+      "source_folder": "Metro_Toronto/retail/p050",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p050/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "202 PARKHURST BLVD"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "03 Mar 2011",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Parkhurst Shopping Centres Ltd     905-760-6200"
+      ],
+      "trade_name": "SmartCentres",
+      "contact_lines": [
+        "Attn: Mitchell Goldhar",
+        "700 Applewood Cres, Ste 100",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $125",
+      "",
+      "Fully leased",
+      "Anchored by Beaux Arts Montessori"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2755",
+      "Part Block H",
+      "Part Parkhurst Blvd",
+      "As in Inst No TB-494273",
+      "",
+      "PIN: 10369-0107",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "19 06 043 060 00300",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT771/RT77124/0320_094316.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT771/RT77124/0320_094338.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT771/RT77124/0320_094453.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT771/RT77124/air1.jpg",
+        "/assets/files/RT7/RT771/RT77124/air2.jpg",
+        "/assets/files/RT7/RT771/RT77124/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2460 / 4952",
+      "rt_id": "RT77124"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "202 PARKHURST BLVD",
+    "postcode": "M4G 2G3",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "03/03/2011",
+    "desc": "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $125",
+    "bldg": "12,000 sf",
+    "acreage": ".33",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "10369-0107",
+    "rollno": "19 06 043 060 00300"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "202 PARKHURST BLVD"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "03 Mar 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $125",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Parkhurst Shopping Centres Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

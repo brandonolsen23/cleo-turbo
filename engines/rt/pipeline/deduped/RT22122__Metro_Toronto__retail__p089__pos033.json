@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT22122",
+  "source_folder": "Metro_Toronto/retail/p089",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22122",
+      "source_folder": "Metro_Toronto/retail/p089",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p089/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "2301 - 2361 BRIMLEY RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "28 Jun 2001",
+      "price_text": "$8,870,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Monarch Construction Ltd     416-491-7440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: David George",
+        "2025 Sheppard Ave E",
+        "Toronto, Ontario",
+        "M2J 1V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Davpart Chartwell Centre Inc     416-222-3010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Hofstedter",
+        "Davpart Inc",
+        "4576 Yonge St, Ste 700",
+        "Toronto, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-6747, Parts 1-6",
+      "Plan 66R-15219, Parts 1 & 2",
+      "",
+      "10.61 acre"
+    ],
+    "arn_text": "19 01 123 040 03050 +",
+    "consideration_lines": [
+      "cash: $8,870,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT221/RT22122/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4434 / 4952",
+      "rt_id": "RT22122"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "2301 - 2361 BRIMLEY RD",
+    "postcode": "M1S 5B8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "06/28/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "10.61",
+    "consid": "8870000",
+    "cash": "8870000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 123 040 03050+"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "2301 - 2361 BRIMLEY RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "28 Jun 2001",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Monarch Construction Ltd"
+    ],
+    "buyer_lines": [
+      "Davpart Chartwell Centre Inc"
+    ],
+    "price_text": "$8,870,000"
+  }
+}

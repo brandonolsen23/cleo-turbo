@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT42879",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42879",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2058 KIPLING AVE"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "05 Jul 2005",
+      "price_text": "$1,701,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Foremost Financial Corp and Others     416-635-6300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ivan Stone",
+        "Batcher, Wasserman & Associates",
+        "718 Wilson Ave, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Newediuk Funeral Homes Ltd     416-745-7555"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Newediuk",
+        "2104 Kipling Ave",
+        "Toronto, Ontario",
+        "M9W 4K5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 9,255 sf @ $184",
+      "",
+      "Former funeral home.",
+      "",
+      "Last transferred in July 2000 for $1,350,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4372, Lot 25",
+      "",
+      "1.60 acre"
+    ],
+    "arn_text": "19 19 042 060 01400",
+    "consideration_lines": [
+      "cash: $1,701,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Ukrainian Credit Union Ltd",
+      "principal: $3,150,000   rate: Prime plus 0.25% per annum",
+      "registered: 07/05/2005   due: on demand"
+    ],
+    "broker_lines": [
+      "Realinvest Canada: Giovanni Messina, 416-636-2228"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT428/RT42879/air1.jpg",
+        "/assets/files/RT4/RT428/RT42879/air2.jpg",
+        "/assets/files/RT4/RT428/RT42879/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT428/RT42879/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3643 / 4952",
+      "rt_id": "RT42879"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2058 KIPLING AVE",
+    "postcode": "M9W 4J9",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "07/05/2005",
+    "desc": "Retail Bldg - 9,255 sf @ $184",
+    "bldg": "9,255 sf",
+    "acreage": "1.6",
+    "consid": "1701000",
+    "cash": "1701000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 19 042 060 01400"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2058 KIPLING AVE"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "05 Jul 2005",
+    "note": "Power of Sale",
+    "description": "Retail Bldg - 9,255 sf @ $184",
+    "seller_lines": [
+      "Foremost Financial Corp and Others"
+    ],
+    "buyer_lines": [
+      "Newediuk Funeral Homes Ltd"
+    ],
+    "price_text": "$1,701,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT154827",
+  "source_folder": "Cochrane/all/p045",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT154827",
+      "source_folder": "Cochrane/all/p045",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p045/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "507 EDISON AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Sep 2020",
+      "price_text": "$1,135,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Azure Edison Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Thomas",
+        "463 Golden Ave",
+        "Ottawa, Ontario",
+        "K2A 2E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "12275023 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Basim Baassiri",
+        "507 Edison Ave",
+        "Ottawa, Ontario",
+        "K2A 1V3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 204, Lot 20, E Edison St",
+      "",
+      "PIN: 04016-0094",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 14 084 502 11100",
+    "consideration_lines": [
+      "cash: $1,135,000     assumed/vtb debt: $0",
+      "",
+      "chargee: MCC Mortgage Holdings Inc",
+      "principal: $737,750   rate: 5.74% per annum.",
+      "registered: 09/15/2020   due: 04/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2233 / 10920",
+      "rt_id": "RT154827"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "507 EDISON AVE",
+    "postcode": "K2A 1V3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/15/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1135000",
+    "cash": "1135000",
+    "debt": "",
+    "note": "",
+    "pin": "04016-0094",
+    "rollno": "06 14 084 502 11100"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "507 EDISON AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Sep 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Azure Edison Ltd"
+    ],
+    "buyer_lines": [
+      "12275023 Canada Inc"
+    ],
+    "price_text": "$1,135,000"
+  }
+}

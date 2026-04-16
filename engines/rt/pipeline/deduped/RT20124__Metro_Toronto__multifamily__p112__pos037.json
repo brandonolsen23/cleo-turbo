@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20124",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20124",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "18 ELM AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Jan 2001",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Edward S. Kamski     416-920-3241"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "600 Sherbourne St, Ste 705",
+        "Toronto, Ontario",
+        "M4X 1W4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Riverchase One Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dan Black",
+        "20 Elm Ave",
+        "Toronto, Ontario",
+        "M4W 1N3"
+      ]
+    },
+    "description_lines": [
+      "FourPlex - 3 storey; 4 units @ $387,500"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 155-E, Part Lots 2 & 3",
+      "",
+      "N side 100m E of Mt Pleasant Rd",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "19 04 101 560 01800",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT201/RT20124/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5588 / 6031",
+      "rt_id": "RT20124"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "18 ELM AVE",
+    "postcode": "M4W 1N3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/10/2001",
+    "desc": "FourPlex - 3 storey; 4 units @ $387,500",
+    "bldg": "4 units",
+    "acreage": ".32",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 101 560 01800"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "18 ELM AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Jan 2001",
+    "note": "",
+    "description": "FourPlex - 3 storey; 4 units @ $387,500",
+    "seller_lines": [
+      "Edward S. Kamski"
+    ],
+    "buyer_lines": [
+      "Riverchase One Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT51018",
+  "source_folder": "Cochrane/all/p166",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51018",
+      "source_folder": "Cochrane/all/p166",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p166/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "51 WILLIAM ST",
+        "53 WILLIAM ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "14 Sep 2006",
+      "price_text": "$926,849",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sylvia Saunders"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "65 Spring Garden Ave, Ste 601",
+        "Toronto, Ontario",
+        "M2N 6H9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1686761 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sylvia Saunders",
+        "65 Spring Garden Ave",
+        "Toronto, Ontario",
+        "M2N 6H9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 42482",
+      "Part Lot 11, N/S George St",
+      "As in Inst Nos:",
+      "CR-338748 & CR-272163",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "06 14 020 601 36600 +",
+    "consideration_lines": [
+      "cash: $926,849     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8281 / 10920",
+      "rt_id": "RT51018"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "51 WILLIAM ST, 53 WILLIAM ST",
+    "postcode": "K1N 6Z9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/14/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "926849",
+    "cash": "926849",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 14 020 601 36600+"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "51 WILLIAM ST",
+      "53 WILLIAM ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "14 Sep 2006",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Sylvia Saunders"
+    ],
+    "buyer_lines": [
+      "1686761 Ontario Ltd"
+    ],
+    "price_text": "$926,849"
+  }
+}

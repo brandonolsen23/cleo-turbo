@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT97331",
+  "source_folder": "Niagara_S/multifamily/p004",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT97331",
+      "source_folder": "Niagara_S/multifamily/p004",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/multifamily/p004/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "16 DUFFERIN ST"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "01 Oct 2013",
+      "price_text": "$621,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1527110 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anthony Lupia",
+        "2793 Beacon Blvd",
+        "Jordan, Ontario",
+        "L0R 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1891179 Ontario Inc     905-356-7068"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Edwardson",
+        "3253 Sinnicks Ave",
+        "Niagara Falls, Ontario",
+        "L2J 2E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 348",
+      "Lot 123, N/S Dufferin St",
+      "",
+      "PIN: 64232-0143",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "27 03 010 049 09900",
+    "consideration_lines": [
+      "cash: $621,000     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $451,450   rate: 3.79% per annum.",
+      "registered: 10/01/2013   due: 12/01/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "161 / 323",
+      "rt_id": "RT97331"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "16 DUFFERIN ST",
+    "postcode": "L2A 2T5",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "10/01/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "621000",
+    "cash": "621000",
+    "debt": "",
+    "note": "",
+    "pin": "64232-0143",
+    "rollno": "27 03 010 049 09900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "16 DUFFERIN ST"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "01 Oct 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1527110 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1891179 Ontario Inc"
+    ],
+    "price_text": "$621,000"
+  }
+}

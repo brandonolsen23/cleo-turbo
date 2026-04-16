@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT48430",
+  "source_folder": "Metro_Toronto/retail/p069",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48430",
+      "source_folder": "Metro_Toronto/retail/p069",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p069/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "1690 JANE ST"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "05 May 2006",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1697470 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Barry Tang",
+        "1692 Jane St",
+        "Toronto, Ontario",
+        "M9N 2S4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-424",
+      "Lot 2 & Part Lot 3",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 14 063 010 03200",
+    "consideration_lines": [
+      "cash: $1,350,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 6377912 Canada Ltd",
+      "principal: $935,000   rate: 12.25% per annum 18.25% per annum if accrued interest is not paid by 5/5/2008, payments increasing to $14,219.79, principal callable on demand.",
+      "registered: 05/05/2006   due: 05/05/2008",
+      "",
+      "chargee: 591192 Ontario Ltd",
+      "principal: $500,000   rate: 12.0% per annum, interest only.",
+      "registered: 05/05/2006   due: 05/05/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT484/RT48430/air1.jpg",
+        "/assets/files/RT4/RT484/RT48430/air2.jpg",
+        "/assets/files/RT4/RT484/RT48430/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT484/RT48430/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3442 / 4952",
+      "rt_id": "RT48430"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "1690 JANE ST",
+    "postcode": "M9N 2S4",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "05/05/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1350000",
+    "cash": "1350000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 063 010 03200"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "1690 JANE ST"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "05 May 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1697470 Ontario Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

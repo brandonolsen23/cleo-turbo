@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT48728",
+  "source_folder": "Middlesex_County/retail/p010",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48728",
+      "source_folder": "Middlesex_County/retail/p010",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p010/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "1165 OXFORD ST E",
+        "100 WHARNCLIFFE RD S"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "15 Mar 2006",
+      "price_text": "$3,530,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Peach-Sun Power Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Francis Chan",
+        "10 Bellair St, Ste 1707",
+        "Toronto, Ontario",
+        "M5R 3T8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 9",
+      "Plan 952, Block A",
+      "Plan 300 (4th), Part Lots 2-4",
+      "As in Inst Nos 776072 & 936043",
+      "",
+      "4.33 acre"
+    ],
+    "arn_text": "39 36 030 190 06300 +",
+    "consideration_lines": [
+      "cash: $3,530,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $3,500,000   rate: Prime plus 5.0% per annum",
+      "registered: 05/15/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "491 / 686",
+      "rt_id": "RT48728"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "1165 OXFORD ST E, 100 WHARNCLIFFE RD S",
+    "postcode": "N5Y 3L7",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/15/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "4.33",
+    "consid": "3530000",
+    "cash": "3530000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 030 190 06300+"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "1165 OXFORD ST E",
+      "100 WHARNCLIFFE RD S"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "15 Mar 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Peach-Sun Power Corp"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$3,530,000"
+  }
+}

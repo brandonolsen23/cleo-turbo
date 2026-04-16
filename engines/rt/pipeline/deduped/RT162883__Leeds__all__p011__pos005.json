@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT162883",
+  "source_folder": "Leeds/all/p011",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT162883",
+      "source_folder": "Leeds/all/p011",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p011/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "8604 BRICK YARD LINE"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "26 Aug 2021",
+      "price_text": "$3,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2811408 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Johnny Van Aert",
+        "8604 Brick Yard Line",
+        "Watford, Ontario",
+        "N0M 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NER, Part Lot 26",
+      "",
+      "PIN: 43048-0052",
+      "",
+      "101.45 acre"
+    ],
+    "arn_text": "38 41 041 007 10600",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "506 / 1916",
+      "rt_id": "RT162883"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "8604 BRICK YARD LINE",
+    "postcode": "N0M 2S0",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "08/26/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.45",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43048-0052",
+    "rollno": "38 41 041 007 10600"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "8604 BRICK YARD LINE"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "26 Aug 2021",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2811408 Ontario Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

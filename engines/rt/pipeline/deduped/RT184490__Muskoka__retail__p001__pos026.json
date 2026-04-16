@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT184490",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184490",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "138 HANES RD"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "01 May 2024",
+      "price_text": "$7,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Muskoka Bay Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "268 West Browns Rd",
+        "Huntsville, Ontario",
+        "P1H 0H9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000852506 Ontario Inc     519-941-1360"
+      ],
+      "trade_name": "MacMaster Buick GMC",
+      "contact_lines": [
+        "Attn: Danny Brackett",
+        "207171 Highway 9 E",
+        "PO Box 7",
+        "Orangeville, Ontario",
+        "L9W 2Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Chaffey, Part Lot 11",
+      "Plan 35R-18001, Parts 1-4",
+      "Plan 35R-16709, Part 2",
+      "",
+      "PIN: 48094-0065 +",
+      "",
+      "3.13 acre"
+    ],
+    "arn_text": "44 42 020 007 10203",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $2,500,000",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $5,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/01/2024   due: on demand",
+      "",
+      "chargee: Muskoka Bay Ltd",
+      "principal: $2,500,000   rate: 6.30% per annum. May be extended for a further 5 years.",
+      "registered: 05/01/2024   due: 05/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "27 / 64",
+      "rt_id": "RT184490"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "138 HANES RD",
+    "postcode": "P1H 1M4",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "05/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.13",
+    "consid": "7500000",
+    "cash": "5000000",
+    "debt": "2500000",
+    "note": "",
+    "pin": "48094-0065+",
+    "rollno": "44 42 020 007 10203"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "138 HANES RD"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "01 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Muskoka Bay Ltd"
+    ],
+    "buyer_lines": [
+      "1000852506 Ontario Inc"
+    ],
+    "price_text": "$7,500,000"
+  }
+}

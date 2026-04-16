@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT106247",
+  "source_folder": "York_Region/retail/p008",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT106247",
+      "source_folder": "York_Region/retail/p008",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "69 MCLEOD DR"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "03 Feb 2015",
+      "price_text": "$1,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "McLeod Parkview Property Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gino Amodio",
+        "c/o 7050 Weston Rd, Unit 303",
+        "Woodbridge, Ontario",
+        "L4L 8G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2446372 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mahbobeh Fattah",
+        "c/o 51 Birch Ave",
+        "Richmond Hill, Ontario",
+        "L4C 6C4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2396, Block 165",
+      "Plan 65R-8568, Part 3",
+      "",
+      "PIN: 03632-0118 +",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,175,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/03/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133605.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133606.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133714.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133715.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133717.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133758.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133805.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1062/RT106247/0221_133856.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "357 / 984",
+      "rt_id": "RT106247"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "69 MCLEOD DR",
+    "postcode": "L4G 5C1",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "02/03/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "1175000",
+    "cash": "1175000",
+    "debt": "",
+    "note": "",
+    "pin": "03632-0118+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "69 MCLEOD DR"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "03 Feb 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "McLeod Parkview Property Ltd"
+    ],
+    "buyer_lines": [
+      "2446372 Ontario Inc"
+    ],
+    "price_text": "$1,175,000"
+  }
+}

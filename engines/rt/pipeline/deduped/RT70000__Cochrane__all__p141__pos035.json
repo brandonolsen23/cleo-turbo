@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT70000",
+  "source_folder": "Cochrane/all/p141",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70000",
+      "source_folder": "Cochrane/all/p141",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p141/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 ROCKWOOD ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "22 Dec 2009",
+      "price_text": "$1,191,485",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Rockwood Residence Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dorothy Vlaming",
+        "2 Rockwood St",
+        "Ottawa, Ontario",
+        "K1N 8L7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 102148, Lot 25",
+      "Except:",
+      "Exprop Plan CR-664129",
+      "Part 2",
+      "",
+      "PIN: 04236-0014",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "06 14 020 701 45300",
+    "consideration_lines": [
+      "cash: $1,191,485     assumed/vtb debt: $0",
+      "chattels: $2,156"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT700/RT70000/air1.jpg",
+        "/assets/files/RT7/RT700/RT70000/air2.jpg",
+        "/assets/files/RT7/RT700/RT70000/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7036 / 10920",
+      "rt_id": "RT70000"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "2 ROCKWOOD ST",
+    "postcode": "K1N 8L7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/22/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1191485",
+    "cash": "1191485",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04236-0014",
+    "rollno": "06 14 020 701 45300"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "2 ROCKWOOD ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "22 Dec 2009",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Rockwood Residence Corp"
+    ],
+    "price_text": "$1,191,485"
+  }
+}

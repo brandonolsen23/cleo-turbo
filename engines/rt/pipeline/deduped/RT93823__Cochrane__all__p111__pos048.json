@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT93823",
+  "source_folder": "Cochrane/all/p111",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93823",
+      "source_folder": "Cochrane/all/p111",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p111/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 11",
+        "PART LOT 18"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "28 Jun 2013",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1384341 Ontario Ltd     613-257-2918"
+      ],
+      "trade_name": "Thomas Cavanagh Construction Ltd",
+      "contact_lines": [
+        "Pres: Jeff Cavanagh",
+        "9094 Cavanagh Rd",
+        "Ashton, Ontario",
+        "K0A 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 18",
+      "Plan 4R-17501, Part 1",
+      "As in Inst No CT-163986",
+      "Except:",
+      "Plan 4R-17501, Parts 1 & 2",
+      "Inst No GB-14096",
+      "",
+      "PIN: 04446-1669 +",
+      "",
+      "117.97 acre"
+    ],
+    "arn_text": "06 14 271 830 00750 +",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $450,000",
+      "",
+      "Named Individual(s)",
+      "principal: $450,000",
+      "registered: 06/28/2013   due: 06/28/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5549 / 10920",
+      "rt_id": "RT93823"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "CONC 11, PART LOT 18",
+    "postcode": "",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "06/28/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "117.97",
+    "consid": "850000",
+    "cash": "400000",
+    "debt": "450000",
+    "note": "",
+    "pin": "04446-1669+",
+    "rollno": "06 14 271 830 00750+"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "CONC 11",
+      "PART LOT 18"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "28 Jun 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1384341 Ontario Ltd"
+    ],
+    "price_text": "$850,000"
+  }
+}

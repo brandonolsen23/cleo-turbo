@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT41227",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41227",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "800 TAUNTON RD W"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "12 Apr 2005",
+      "price_text": "$3,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2048138 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jay Strasser",
+        "S & A Developments",
+        "207 Weston Rd",
+        "Toronto, Ontario",
+        "M6N 4Z3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 17",
+      "Plan 40R-12485, Parts 1 & 2",
+      "Together with Inst No D-538583",
+      "Except:",
+      "Plan 40R-12607, Parts 3-7",
+      "Plan 40R-16693, Part 1",
+      "Plan 40R-18835, Part 8",
+      "",
+      "9.51 acre"
+    ],
+    "arn_text": "18 13 060 001 03200",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $1,100,000",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $2,015,000   rate: Prim plus 1.50% per annum",
+      "registered: 04/12/2005   due: 10/12/2006",
+      "",
+      "chargee: Andrew & Stephen Nits",
+      "principal: $1,100,000   rate: First 2 years at 7.0% then 8.0% per annum",
+      "registered: 04/12/2005   due: 04/11/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT412/RT41227/air1.jpg",
+        "/assets/files/RT4/RT412/RT41227/air2.jpg",
+        "/assets/files/RT4/RT412/RT41227/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT412/RT41227/photo.jpg"
+    },
+    "footer": {
+      "page_position": "358 / 506",
+      "rt_id": "RT41227"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "800 TAUNTON RD W",
+    "postcode": "L1H 7K4",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "04/12/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.51",
+    "consid": "3400000",
+    "cash": "2300000",
+    "debt": "1100000",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 060 001 03200"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "800 TAUNTON RD W"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "12 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2048138 Ontario Ltd"
+    ],
+    "price_text": "$3,400,000"
+  }
+}

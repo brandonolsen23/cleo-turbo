@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT67780",
+  "source_folder": "Cochrane/all/p145",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67780",
+      "source_folder": "Cochrane/all/p145",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p145/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "169 STEWART ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "10 Jul 2009",
+      "price_text": "$815,750",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "4520874 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Helen Somerville",
+        "247 North River Rd",
+        "Ottawa, Ontario",
+        "K1L 8B7"
+      ]
+    },
+    "description_lines": [
+      "House"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6",
+      "Lot 20, N/S Stewart St",
+      "",
+      "PIN: 04211-0123",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "06 14 021 101 09200",
+    "consideration_lines": [
+      "cash: $815,750     assumed/vtb debt: $0",
+      "",
+      "chargee: Helen Somerville",
+      "principal: $850,000   rate: TD Canada Trust prime plus 0.5% per annum",
+      "registered: 07/10/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7203 / 10920",
+      "rt_id": "RT67780"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "169 STEWART ST",
+    "postcode": "K1N 6J8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/10/2009",
+    "desc": "House",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "815750",
+    "cash": "815750",
+    "debt": "",
+    "note": "",
+    "pin": "04211-0123",
+    "rollno": "06 14 021 101 09200"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "169 STEWART ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "10 Jul 2009",
+    "note": "",
+    "description": "House",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "4520874 Canada Inc"
+    ],
+    "price_text": "$815,750"
+  }
+}

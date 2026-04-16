@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT175054",
+  "source_folder": "Lambton/retail/p001",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175054",
+      "source_folder": "Lambton/retail/p001",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "9612 WEST IPPERWASH RD"
+      ],
+      "city_region": "Forest : Lambton",
+      "date_text": "06 Apr 2022",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2633704 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "33 Empress Ave, Ste 1801",
+        "Toronto, Ontario",
+        "M2N 6Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000107733 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pratixabahen Prajapati",
+        "9612 West Ipperwash Rd",
+        "Lambton Shores, Ontario",
+        "N0N 1J2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 423, Lots 26 & 27",
+      "",
+      "PIN: 43024-0118",
+      "",
+      "0.72 acre"
+    ],
+    "arn_text": "38 45 460 040 26300",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0",
+      "chattels: $220,000",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,350,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/06/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "43 / 106",
+      "rt_id": "RT175054"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "9612 WEST IPPERWASH RD",
+    "postcode": "N0N 1J2",
+    "municipality": "Forest",
+    "region": "Lambton",
+    "date": "04/06/2022",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".72",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "43024-0118",
+    "rollno": "38 45 460 040 26300"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "9612 WEST IPPERWASH RD"
+    ],
+    "city_region": "Forest : Lambton",
+    "date_text": "06 Apr 2022",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "2633704 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000107733 Ontario Ltd"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

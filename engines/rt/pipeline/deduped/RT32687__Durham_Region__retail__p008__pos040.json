@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT32687",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32687",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "1185 REGIONAL RD 21"
+      ],
+      "city_region": "Scugog : Durham Region",
+      "date_text": "12 Nov 2003",
+      "price_text": "$1,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "CAI Commercial Administrators Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Richard Gay",
+        "1697 Highway 2",
+        "Courtice, Ontario",
+        "L1E 2R5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1584099 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Richard Gay",
+        "1697 Highway 2",
+        "Courtice, Ontario",
+        "L1E 2R5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-12879, Part 1",
+      "",
+      "2.62 acre"
+    ],
+    "arn_text": "18 20 010 004 41050",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "391 / 506",
+      "rt_id": "RT32687"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "1185 REGIONAL RD 21",
+    "postcode": "",
+    "municipality": "Scugog",
+    "region": "Durham Region",
+    "date": "11/12/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.62",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "18 20 010 004 41050"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "1185 REGIONAL RD 21"
+    ],
+    "city_region": "Scugog : Durham Region",
+    "date_text": "12 Nov 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "CAI Commercial Administrators Inc"
+    ],
+    "buyer_lines": [
+      "1584099 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

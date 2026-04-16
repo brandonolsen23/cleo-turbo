@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT41135",
+  "source_folder": "Kent_County/multifamily/p003",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41135",
+      "source_folder": "Kent_County/multifamily/p003",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/multifamily/p003/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "800 WALLACE ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "12 Apr 2005",
+      "price_text": "$1,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "NYA"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Condo Apartment Bldg - 3 storey; 42 units @ $32,738",
+      "",
+      "1-bach 18-1bdrm 23-2bdrm"
+    ],
+    "more_info_url": "/assets/files/RT4/RT411/RT41135/mi.pdf",
+    "site_lines": [
+      "1.13 acre"
+    ],
+    "arn_text": "36 50 443 007 00600",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Green Realty Ltd: David Bloomstone, 416-482-7700 ext 2256"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT411/RT41135/photo.jpg"
+    },
+    "footer": {
+      "page_position": "104 / 114",
+      "rt_id": "RT41135"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "800 WALLACE ST",
+    "postcode": "",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "04/12/2005",
+    "desc": "Condo Apartment Bldg - 3 storey; 42 units @ $32,738",
+    "bldg": "42 units",
+    "acreage": "1.13",
+    "consid": "1375000",
+    "cash": "",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 443 007 00600"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "800 WALLACE ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "12 Apr 2005",
+    "note": "",
+    "description": "Condo Apartment Bldg - 3 storey; 42 units @ $32,738",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "NYA"
+    ],
+    "price_text": "$1,375,000"
+  }
+}

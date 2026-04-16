@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT63982",
+  "source_folder": "York_Region/retail/p013",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63982",
+      "source_folder": "York_Region/retail/p013",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "10200 KEELE ST"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "12 Sep 2008",
+      "price_text": "$1,996,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2052856 Ontario Inc     905-832-6665"
+      ],
+      "trade_name": "Maple Children's Montessori Centre",
+      "contact_lines": [
+        "Pres: Dan Dalimonte",
+        "10175 Keele St",
+        "Maple, Ontario",
+        "L6A 3Y9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dr Scott M Sebastien Dentistry Professional Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2389 Major Mackenzie Dr",
+        "Maple, Ontario",
+        "L6A 3Z2"
+      ]
+    },
+    "description_lines": [
+      "Mapleview Plaza - 1 storey; 4 tenants 8,000 sf @ $250",
+      "",
+      "Fully occupied",
+      "Last transferred in Sep 2004 for $1,600,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2086, Block 648",
+      "",
+      "PIN: 03332-0482",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "19 28 000 270 91600",
+    "consideration_lines": [
+      "cash: $1,996,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,800,000   rate: Prime plus 0% per annum",
+      "registered: 09/12/2008   due: on demand"
+    ],
+    "broker_lines": [
+      "Re/Max Excellence Realty: Dominic Jannetta, 416-748-9598",
+      "Coldwell Banker Terrequity Realty: Tony Cairo, 905-707-8001"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63982/0921_104718.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63982/0921_104829.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63982/0921_104926.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT639/RT63982/air1.jpg",
+        "/assets/files/RT6/RT639/RT63982/air2.jpg",
+        "/assets/files/RT6/RT639/RT63982/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "604 / 984",
+      "rt_id": "RT63982"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "10200 KEELE ST",
+    "postcode": "L6A 1R2",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "09/12/2008",
+    "desc": "Mapleview Plaza - 1 storey; 4 tenants 8,000 sf @ $250",
+    "bldg": "8,000 sf",
+    "acreage": ".75",
+    "consid": "1996000",
+    "cash": "1996000",
+    "debt": "",
+    "note": "",
+    "pin": "03332-0482",
+    "rollno": "19 28 000 270 91600"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "10200 KEELE ST"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "12 Sep 2008",
+    "note": "",
+    "description": "Mapleview Plaza - 1 storey; 4 tenants 8,000 sf @ $250",
+    "seller_lines": [
+      "2052856 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Dr Scott M Sebastien Dentistry Professional Corp"
+    ],
+    "price_text": "$1,996,000"
+  }
+}

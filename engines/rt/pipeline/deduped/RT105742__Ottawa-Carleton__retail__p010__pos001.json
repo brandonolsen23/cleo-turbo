@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT105742",
+  "source_folder": "Ottawa-Carleton/retail/p010",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105742",
+      "source_folder": "Ottawa-Carleton/retail/p010",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p010/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "945 SMYTH RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Jan 2015",
+      "price_text": "$2,579,285",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 8,532 sf @ $302",
+      "",
+      "Leased back to the vendor (BMO)",
+      "",
+      "31 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG, Part Lot 15",
+      "As in Inst No OT-39075",
+      "Except:",
+      "Plan 4R-21145, Part 1",
+      "",
+      "PIN: 04261-0208",
+      "",
+      "NW corner Smyth Rd and Russell Rd",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "06 14 105 604 07800",
+    "consideration_lines": [
+      "cash: $2,579,285     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105742/0411_110333.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105742/0411_110357.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105742/0411_110501.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105742/0411_110556.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105742/0411_110558.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105742/0411_110616.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "452 / 1141",
+      "rt_id": "RT105742"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "945 SMYTH RD",
+    "postcode": "K1G 1P5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 8,532 sf @ $302",
+    "bldg": "8,532 sf",
+    "acreage": ".75",
+    "consid": "2579285",
+    "cash": "2579285",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04261-0208",
+    "rollno": "06 14 105 604 07800"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "945 SMYTH RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 8,532 sf @ $302",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$2,579,285"
+  }
+}

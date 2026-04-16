@@ -1,0 +1,100 @@
+{
+  "rt_id": "RT45338",
+  "source_folder": "Peel_Region/multifamily/p007",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45338",
+      "source_folder": "Peel_Region/multifamily/p007",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/multifamily/p007/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "14 NORTH ALARTON ST"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "03 Nov 2005",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "TenPlex - 10 units @ $80,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan Tor-4",
+      "Plan 169 & 170",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "21 05 050 114 15000",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "304 / 447",
+      "rt_id": "RT45338"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "14 NORTH ALARTON ST",
+    "postcode": "L4T 1J8",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "11/03/2005",
+    "desc": "TenPlex - 10 units @ $80,000",
+    "bldg": "10 units",
+    "acreage": ".3",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 050 114 15000"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "14 NORTH ALARTON ST"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "03 Nov 2005",
+    "note": "",
+    "description": "TenPlex - 10 units @ $80,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$800,000"
+  }
+}

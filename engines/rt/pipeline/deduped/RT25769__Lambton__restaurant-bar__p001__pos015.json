@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT25769",
+  "source_folder": "Lambton/restaurant-bar/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25769",
+      "source_folder": "Lambton/restaurant-bar/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/restaurant-bar/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "581 MURPHY RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "08 May 2002",
+      "price_text": "$510,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "578543 Ontario Inc     519-542-1191"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ray Terpstra",
+        "1309 Indian Rd N",
+        "Sarnia, Ontario",
+        "N7V 4C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "William Truesdell, in Trust     519-542-6994"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2645 Michigan Ave",
+        "Sarnia, Ontario",
+        "N7T 7H4"
+      ]
+    },
+    "description_lines": [
+      "Restaurant - 1 storey; about 4,500 sf @ $113",
+      "",
+      "Formerly known as Captain Jacks, now Sarnia Wharf Fish & Chips."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-2429, Part 1",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "38 29 300 026 05300",
+    "consideration_lines": [
+      "cash: $160,000     assumed/vtb debt: $350,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 16",
+      "rt_id": "RT25769"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "581 MURPHY RD",
+    "postcode": "N7S 5B6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "05/08/2002",
+    "desc": "Restaurant - 1 storey; about 4,500 sf @ $113",
+    "bldg": "4,500 sf",
+    "acreage": ".52",
+    "consid": "510000",
+    "cash": "160000",
+    "debt": "350000",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "38 29 300 026 05300"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "581 MURPHY RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "08 May 2002",
+    "note": "Purchase & Sale",
+    "description": "Restaurant - 1 storey; about 4,500 sf @ $113",
+    "seller_lines": [
+      "578543 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "William Truesdell, in Trust"
+    ],
+    "price_text": "$510,000"
+  }
+}

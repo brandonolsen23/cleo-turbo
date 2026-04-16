@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20326",
+  "source_folder": "York_Region/other-bldg/p006",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20326",
+      "source_folder": "York_Region/other-bldg/p006",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/other-bldg/p006/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "12684 KEELE ST"
+      ],
+      "city_region": "King : York Region",
+      "date_text": "01 Feb 2001",
+      "price_text": "$760,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jerry Goliszek"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "12719 Keele St",
+        "King City, Ontario",
+        "L0G 1K0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1450638 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Noel Chantiam",
+        "12684 Keele St",
+        "King City, Ontario",
+        "L7B 1H5"
+      ]
+    },
+    "description_lines": [
+      "Gas Bar & Service Station"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 109, Lots 123 & 124",
+      "",
+      "SW corner at Station Rd",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "19 49 000 036 68000",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $610,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT203/RT20326/photo.jpg"
+    },
+    "footer": {
+      "page_position": "260 / 286",
+      "rt_id": "RT20326"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "12684 KEELE ST",
+    "postcode": "L7B 1H5",
+    "municipality": "King",
+    "region": "York Region",
+    "date": "02/01/2001",
+    "desc": "Gas Bar & Service Station",
+    "bldg": "",
+    "acreage": ".26",
+    "consid": "760000",
+    "cash": "150000",
+    "debt": "610000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 49 000 036 68000"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "12684 KEELE ST"
+    ],
+    "city_region": "King : York Region",
+    "date_text": "01 Feb 2001",
+    "note": "",
+    "description": "Gas Bar & Service Station",
+    "seller_lines": [
+      "Jerry Goliszek"
+    ],
+    "buyer_lines": [
+      "1450638 Ontario Inc"
+    ],
+    "price_text": "$760,000"
+  }
+}

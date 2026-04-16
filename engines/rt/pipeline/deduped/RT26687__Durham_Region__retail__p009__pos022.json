@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT26687",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26687",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "114 WINCHESTER RD E",
+        "7 DUKE ST"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "30 Aug 2002",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2015105 Ontario Inc     905-887-1097"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruce Schie",
+        "5 Bernadotte Dr",
+        "Markham, Ontario",
+        "L6C 1E3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg/Land"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-50054, Lots 75-77",
+      "",
+      "1.65 acre"
+    ],
+    "arn_text": "18 09 010 038 24900 +",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "423 / 506",
+      "rt_id": "RT26687"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "114 WINCHESTER RD E, 7 DUKE ST",
+    "postcode": "L0B 1C0",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "08/30/2002",
+    "desc": "Retail Bldg/Land",
+    "bldg": "",
+    "acreage": "1.65",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 09 010 038 24900+"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "114 WINCHESTER RD E",
+      "7 DUKE ST"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "30 Aug 2002",
+    "note": "",
+    "description": "Retail Bldg/Land",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2015105 Ontario Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

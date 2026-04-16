@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT193074",
+  "source_folder": "Victoria/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193074",
+      "source_folder": "Victoria/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "913 PEACE RD"
+      ],
+      "city_region": "Kawartha Lakes : Victoria",
+      "date_text": "02 Jul 2025",
+      "price_text": "$2,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2474172 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "75 Calverley Trail",
+        "Scarborough, Ontario",
+        "M1C 3S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16963668 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "935 Blair Rd",
+        "Ottawa, Ontario",
+        "K1J 7M8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Emily, Part Lots 11 & 12",
+      "Plan 57R-8980, Parts 1 & 2",
+      "",
+      "PIN: 63253-0251",
+      "",
+      "0.91 acre"
+    ],
+    "arn_text": "16 51 001 003 38300",
+    "consideration_lines": [
+      "cash: $2,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 2474172 Ontario Corp",
+      "principal: $1,000,000   rate: 7.2% per annum.",
+      "registered: 07/02/2025   due: 07/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193074/0102_104921.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193074/0102_104922.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193074/0102_105043.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193074/0102_105044.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193074/0102_105047.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1930/RT193074/air1.jpg",
+        "/assets/files/RT19/RT1930/RT193074/air2.jpg",
+        "/assets/files/RT19/RT1930/RT193074/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 49",
+      "rt_id": "RT193074"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "913 PEACE RD",
+    "postcode": "K0L 2W0",
+    "municipality": "Kawartha Lakes",
+    "region": "Victoria",
+    "date": "07/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".91",
+    "consid": "2150000",
+    "cash": "2150000",
+    "debt": "",
+    "note": "",
+    "pin": "63253-0251",
+    "rollno": "16 51 001 003 38300"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "913 PEACE RD"
+    ],
+    "city_region": "Kawartha Lakes : Victoria",
+    "date_text": "02 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2474172 Ontario Corp"
+    ],
+    "buyer_lines": [
+      "16963668 Canada Inc"
+    ],
+    "price_text": "$2,150,000"
+  }
+}

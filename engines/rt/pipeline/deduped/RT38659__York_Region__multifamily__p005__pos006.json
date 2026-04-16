@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT38659",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38659",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "261 - 273 BAY THORN DR"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "10 Nov 2004",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Grenadier Investments Ltd     416-789-2641"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Lebovics",
+        "3101 Bathurst St, Ste 601",
+        "Toronto, Ontario",
+        "M6A 2A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Highrise Realty Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Derek Pantling",
+        "122 Tiny Beaches Rd S, RR 1",
+        "Perkinsfield, Ontario",
+        "L0L 2J0"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 7695",
+      "Blocks D & E",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT386/RT38659/photo.jpg"
+    },
+    "footer": {
+      "page_position": "207 / 263",
+      "rt_id": "RT38659"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "261 - 273 BAY THORN DR",
+    "postcode": "L3T 3V8",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/10/2004",
+    "desc": "Retail/Res Plaza",
+    "bldg": "10,000 sf",
+    "acreage": ".73",
+    "consid": "1900000",
+    "cash": "1900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "261 - 273 BAY THORN DR"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "10 Nov 2004",
+    "note": "",
+    "description": "Retail/Res Plaza",
+    "seller_lines": [
+      "Grenadier Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Highrise Realty Group Inc"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

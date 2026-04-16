@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT195931",
+  "source_folder": "Lambton/industrial/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195931",
+      "source_folder": "Lambton/industrial/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/industrial/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "412 NELSON ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "01 Dec 2025",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "959694 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "412 Nelson St",
+        "Sarnia, Ontario",
+        "N7T 5L4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001400110 Ontario Inc     519-659-9301"
+      ],
+      "trade_name": "Carstar London Centre (Don Mor)",
+      "contact_lines": [
+        "Attn: Donald Morton",
+        "1056 Brydges St",
+        "London, Ontario",
+        "N5W 2B4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 79 - Sarnia City,",
+      "Lots 32-35",
+      "",
+      "PIN: 43239-0136",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "38 29 300 012 08500",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,200,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/01/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 68",
+      "rt_id": "RT195931"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "412 NELSON ST",
+    "postcode": "N7T 5K2",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "12/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "43239-0136",
+    "rollno": "38 29 300 012 08500"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "412 NELSON ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "01 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "959694 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001400110 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

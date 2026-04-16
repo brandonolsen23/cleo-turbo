@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT34133",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34133",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3745 HWY 89"
+      ],
+      "city_region": "Innisfil : Simcoe County",
+      "date_text": "04 Feb 2004",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1606148 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lou Gabriele",
+        "3745 Highway 89, RR 1",
+        "Innisfil, Ontario",
+        "L0L 1L0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-3667, Part 1",
+      "",
+      "5.00 acre"
+    ],
+    "arn_text": "43 16 030 072 15902",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT341/RT34133/photo.jpg"
+    },
+    "footer": {
+      "page_position": "609 / 712",
+      "rt_id": "RT34133"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3745 HWY 89",
+    "postcode": "L0L 1L0",
+    "municipality": "Innisfil",
+    "region": "Simcoe County",
+    "date": "02/04/2004",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "5",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 16 030 072 15902"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3745 HWY 89"
+    ],
+    "city_region": "Innisfil : Simcoe County",
+    "date_text": "04 Feb 2004",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1606148 Ontario Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT45193",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45193",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "813 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Nov 2005",
+      "price_text": "$1,285,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gopher Realty Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joshua Rapport",
+        "813 Bloor St W",
+        "Toronto, Ontario",
+        "M6G 1L8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 430",
+      "Block A, Part Lot 1",
+      "As in Inst No CA-603498",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 044 420 05900",
+    "consideration_lines": [
+      "cash: $1,285,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT451/RT45193/air1.jpg",
+        "/assets/files/RT4/RT451/RT45193/air2.jpg",
+        "/assets/files/RT4/RT451/RT45193/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT451/RT45193/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3549 / 4952",
+      "rt_id": "RT45193"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "813 BLOOR ST W",
+    "postcode": "M6G 1L8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/03/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1285000",
+    "cash": "1285000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 044 420 05900"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "813 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gopher Realty Management Inc"
+    ],
+    "price_text": "$1,285,000"
+  }
+}

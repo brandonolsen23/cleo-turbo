@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT45822",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45822",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "575 MARKHAM RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "09 Dec 2005",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Nivlog Investments Ltd     905-479-5052"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stuart Golvin",
+        "Golfour Property Services Inc",
+        "366 Denison St, Ste 1",
+        "Markham, Ontario",
+        "L3R 1B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1380358 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yasin Yusufi",
+        "575 Markham Rd",
+        "Toronto, Ontario",
+        "M1H 2A3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1363, Block A",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "19 01 081 050 00400",
+    "consideration_lines": [
+      "cash: $472,500     assumed/vtb debt: $877,500",
+      "",
+      "chargee: Nivlog Investments Ltd",
+      "principal: $877,500   rate: 6.28% per annum",
+      "registered: 12/09/2005   due: 12/09/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT458/RT45822/air1.jpg",
+        "/assets/files/RT4/RT458/RT45822/air2.jpg",
+        "/assets/files/RT4/RT458/RT45822/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT458/RT45822/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3521 / 4952",
+      "rt_id": "RT45822"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "575 MARKHAM RD",
+    "postcode": "M1H 2A3",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/09/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".37",
+    "consid": "1350000",
+    "cash": "472500",
+    "debt": "877500",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 081 050 00400"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "575 MARKHAM RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "09 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Nivlog Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1380358 Ontario Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

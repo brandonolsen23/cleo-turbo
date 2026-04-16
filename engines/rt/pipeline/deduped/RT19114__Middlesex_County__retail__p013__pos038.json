@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT19114",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19114",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "1051 WELLINGTON RD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "29 Sep 2000",
+      "price_text": "$1,670,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "584014 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Domenico Barletta",
+        "c/o 624 York St",
+        "London, Ontario",
+        "N5W 2S7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Future Shop Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8800 Glenlyon Pkwy",
+        "Burnaby, B. C.",
+        "V5J 5K3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 10,564 sf @ $158"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-5665, Parts 6-8",
+      "",
+      "1.61 acre"
+    ],
+    "arn_text": "39 36 060 580 37130",
+    "consideration_lines": [
+      "cash: $1,670,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,080,000   rate: 4.04% per annum.",
+      "registered: 03/27/2025   due: 03/27/2030",
+      "",
+      "chargee: Libro Credit Union Ltd",
+      "principal: $1,300,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/28/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT191/RT19114/photo.jpg"
+    },
+    "footer": {
+      "page_position": "639 / 686",
+      "rt_id": "RT19114"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "1051 WELLINGTON RD",
+    "postcode": "N6E 1W4",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "09/29/2000",
+    "desc": "Retail Bldg - 10,564 sf @ $158",
+    "bldg": "10,564 sf",
+    "acreage": "1.61",
+    "consid": "1670000",
+    "cash": "1670000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 580 37130"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "1051 WELLINGTON RD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "29 Sep 2000",
+    "note": "",
+    "description": "Retail Bldg - 10,564 sf @ $158",
+    "seller_lines": [
+      "584014 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Future Shop Ltd"
+    ],
+    "price_text": "$1,670,000"
+  }
+}

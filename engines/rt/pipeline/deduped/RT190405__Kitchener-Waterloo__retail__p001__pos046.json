@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT190405",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190405",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "406 KING ST E"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "21 Feb 2025",
+      "price_text": "$2,925,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5G 1R8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001059011 Ontario Inc     416-362-1700"
+      ],
+      "trade_name": "Aurora Group",
+      "contact_lines": [
+        "Pres: Satish Aurora",
+        "20 Caldari Rd, Unit 2",
+        "Concord, Ontario",
+        "L4K 4N8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 521,",
+      "Lot 36 & Part Lot 35,",
+      "S/S King St & W/S Potter St",
+      "As in Inst No WS-733492",
+      "",
+      "PIN: 03776-0074",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "30 06 100 019 07500",
+    "consideration_lines": [
+      "cash: $2,925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Vista Mortgage Capital Corp",
+      "principal: $2,000,000   rate: 13.0% per annum, increasing by 10% per annum if in default.",
+      "registered: 02/21/2025   due: 02/21/2026",
+      "",
+      "chargee: DBNC Group Inc",
+      "principal: $1,241,279   rate: 14.99% per annum.",
+      "registered: 02/21/2025   due: 08/11/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1904/RT190405/0621_161839.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1904/RT190405/0621_161908.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1904/RT190405/0621_161935.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1904/RT190405/0621_162009.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1904/RT190405/0621_162032.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "47 / 752",
+      "rt_id": "RT190405"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "406 KING ST E",
+    "postcode": "N3H 3M9",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "02/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".44",
+    "consid": "2925000",
+    "cash": "2925000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "03776-0074",
+    "rollno": "30 06 100 019 07500"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "406 KING ST E"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "21 Feb 2025",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1001059011 Ontario Inc"
+    ],
+    "price_text": "$2,925,000"
+  }
+}

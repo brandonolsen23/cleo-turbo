@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT43210",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43210",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "1980 EGLINTON AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "22 Jul 2005",
+      "price_text": "$7,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1980 Eglinton Avenue East Inc     416-304-0289"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Reeve",
+        "Urban Capital Property Group",
+        "10 King St E, Ste 310",
+        "Toronto, Ontario",
+        "M5C 1C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2075936 Ontario Ltd     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "RioCan REIT",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Big Box Retail - 3 bldgs; 45,674 sf @ $153",
+      "",
+      "Converted from industrial use."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-11788, Part 1",
+      "Together with Inst No TB-498686",
+      "",
+      "2.31 acre"
+    ],
+    "arn_text": "19 01 031 060 00400",
+    "consideration_lines": [
+      "cash: $5,356,438     assumed/vtb debt: $1,643,562"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT432/RT43210/air1.jpg",
+        "/assets/files/RT4/RT432/RT43210/air2.jpg",
+        "/assets/files/RT4/RT432/RT43210/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT432/RT43210/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3635 / 4952",
+      "rt_id": "RT43210"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "1980 EGLINTON AVE E",
+    "postcode": "M1L 2M6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "07/22/2005",
+    "desc": "Big Box Retail - 3 bldgs; 45,674 sf @ $153",
+    "bldg": "45,674 sf",
+    "acreage": "2.31",
+    "consid": "7000000",
+    "cash": "5356438",
+    "debt": "1643562",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 031 060 00400"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "1980 EGLINTON AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "22 Jul 2005",
+    "note": "",
+    "description": "Big Box Retail - 3 bldgs; 45,674 sf @ $153",
+    "seller_lines": [
+      "1980 Eglinton Avenue East Inc"
+    ],
+    "buyer_lines": [
+      "2075936 Ontario Ltd"
+    ],
+    "price_text": "$7,000,000"
+  }
+}

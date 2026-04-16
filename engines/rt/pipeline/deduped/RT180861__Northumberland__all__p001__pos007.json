@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT180861",
+  "source_folder": "Northumberland/all/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180861",
+      "source_folder": "Northumberland/all/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/all/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "32 BEECH TREE LANE"
+      ],
+      "city_region": "Central Manitoulin : Manitoulin",
+      "date_text": "13 Oct 2023",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2663501 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5348 Lakeshore Rd, Ste 407",
+        "Burlington, Ontario",
+        "L7L 4Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Sandfield, Part Lot 6",
+      "Plan 31R-2556, Part 8",
+      "Together with:",
+      "Inst No RM-56967",
+      "",
+      "PIN: 47128-0262"
+    ],
+    "arn_text": "51 04 030 001 06300",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $345,000   rate: Prime plus 10.0% per annum.",
+      "registered: 10/13/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1808/RT180861/air1.jpg",
+        "/assets/files/RT18/RT1808/RT180861/air2.jpg",
+        "/assets/files/RT18/RT1808/RT180861/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 67",
+      "rt_id": "RT180861"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "32 BEECH TREE LANE",
+    "postcode": "P0P 2C0",
+    "municipality": "Central Manitoulin",
+    "region": "Manitoulin",
+    "date": "10/13/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "47128-0262",
+    "rollno": "51 04 030 001 06300"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "32 BEECH TREE LANE"
+    ],
+    "city_region": "Central Manitoulin : Manitoulin",
+    "date_text": "13 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2663501 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

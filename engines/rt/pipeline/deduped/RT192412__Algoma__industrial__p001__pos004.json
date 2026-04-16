@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT192412",
+  "source_folder": "Algoma/industrial/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192412",
+      "source_folder": "Algoma/industrial/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/industrial/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 SECOND LINE E",
+        "550 2ND LINE E"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "30 May 2025",
+      "price_text": "$5,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Second Line Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "200 McNabb St",
+        "Sault Ste Marie, Ontario",
+        "P6B 1Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Stugots Inc     705-253-0001"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dave Ruscio",
+        "c/o Property One Management",
+        "405 Queen St E",
+        "Sault Ste Marie, Ontario",
+        "P6A 1Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1924/RT192412/mi.pdf",
+    "site_lines": [
+      "Plan 1R-11644, Parts 1 & 2",
+      "",
+      "PIN: 31561-0140",
+      "",
+      "3.34 acre"
+    ],
+    "arn_text": "57 61 030 062 00801",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,750,000   rate: 18.0% per annum.",
+      "registered: 05/30/2025   due: 06/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 14",
+      "rt_id": "RT192412"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "550 SECOND LINE E, 550 2ND LINE E",
+    "postcode": "P6B 4K1",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "05/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.34",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "",
+    "pin": "31561-0140",
+    "rollno": "57 61 030 062 00801"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "550 SECOND LINE E",
+      "550 2ND LINE E"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "30 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Second Line Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Stugots Inc"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT180424",
+  "source_folder": "Metro_Toronto/retail/p015",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180424",
+      "source_folder": "Metro_Toronto/retail/p015",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p015/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "415 REXDALE BLVD"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "19 Sep 2023",
+      "price_text": "$11,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1428272 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7685 Martin Grove Rd",
+        "Woodbridge, Ontario",
+        "L4L 1B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000523536 Ontario Inc     888-894-2984"
+      ],
+      "trade_name": "St Thomas Nissan",
+      "contact_lines": [
+        "Attn: Sonu Arora",
+        "110 Edward St",
+        "St Thomas, Ontario",
+        "N5P 3W8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - FTH, Part Lot 29",
+      "Plan 66R-16484,",
+      "Parts 3-5, 8, 10, 12, 15-17 & 19",
+      "",
+      "PIN: 07421-0052",
+      "",
+      "2.32 acre"
+    ],
+    "arn_text": "19 19 044 030 02000",
+    "consideration_lines": [
+      "cash: $11,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $25,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/19/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1804/RT180424/1008_091351.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1804/RT180424/1008_091356.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1804/RT180424/1008_091432.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1804/RT180424/1008_091434.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1804/RT180424/1008_091453.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "738 / 4952",
+      "rt_id": "RT180424"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "415 REXDALE BLVD",
+    "postcode": "M9W 6P8",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "09/19/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.32",
+    "consid": "11500000",
+    "cash": "11500000",
+    "debt": "",
+    "note": "",
+    "pin": "07421-0052",
+    "rollno": "19 19 044 030 02000"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "415 REXDALE BLVD"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "19 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1428272 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000523536 Ontario Inc"
+    ],
+    "price_text": "$11,500,000"
+  }
+}

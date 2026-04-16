@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT176451",
+  "source_folder": "York_Region/retail/p005",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176451",
+      "source_folder": "York_Region/retail/p005",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "280 WEST BEAVER CREEK RD",
+        "UNIT 29"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "31 Jan 2023",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tokyo Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "18 Lanceiot Lane",
+        "Markham, Ontario",
+        "L6C 2G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 844",
+      "Level 2, Unit 26",
+      "Level 1, Units 49 & 50",
+      "",
+      "PIN: 29374-0112 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123252.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123307.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123519.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123603.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123604.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123606.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1764/RT176451/0402_123609.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "240 / 984",
+      "rt_id": "RT176451"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "280 WEST BEAVER CREEK RD, UNIT 29",
+    "postcode": "L4B 3Z1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "01/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "29374-0112+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "280 WEST BEAVER CREEK RD",
+      "UNIT 29"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "31 Jan 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Tokyo Investments Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

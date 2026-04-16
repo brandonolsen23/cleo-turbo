@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT102932",
+  "source_folder": "York_Region/retail/p008",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT102932",
+      "source_folder": "York_Region/retail/p008",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "8740 JANE ST",
+        "UNITS 13 & 14"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "26 Jun 2014",
+      "price_text": "$762,621",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Crystal Corporate Centre Inc     905-856-7666"
+      ],
+      "trade_name": "Crystal Glen Homes",
+      "contact_lines": [
+        "Pres: Steve Saccoccia",
+        "418 Hanlan Rd, Unit 3",
+        "Woodbridge, Ontario",
+        "L4L 4Z1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Syessence Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: M. Nourbaran",
+        "8740 Jane St",
+        "Unit 14, Building B",
+        "Vaughan, Ontario",
+        "L4K 2M9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1235",
+      "Level 1, Units 13 & 14",
+      "",
+      "PIN: 29766-0014 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "other: $62,621"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1029/RT102932/0926_093106.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1029/RT102932/0926_093114.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1029/RT102932/0926_093141.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1029/RT102932/0926_093159.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1029/RT102932/0926_093235.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "376 / 984",
+      "rt_id": "RT102932"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "8740 JANE ST, UNITS 13 & 14",
+    "postcode": "L4K 0E7",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/26/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "762621",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "29766-0014+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "8740 JANE ST",
+      "UNITS 13 & 14"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "26 Jun 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Crystal Corporate Centre Inc"
+    ],
+    "buyer_lines": [
+      "Syessence Inc"
+    ],
+    "price_text": "$762,621"
+  }
+}

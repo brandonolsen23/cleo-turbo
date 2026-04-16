@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT60430",
+  "source_folder": "Metro_Toronto/multifamily/p070",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60430",
+      "source_folder": "Metro_Toronto/multifamily/p070",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p070/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "241 BEDFORD RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Feb 2008",
+      "price_text": "$1,525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Duke Holdings Inc     416-516-3889"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Noah Rotman",
+        "97 Hilton Ave",
+        "Toronto, Ontario",
+        "M5R 3E8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2010096 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Valerie Grundy",
+        "21 Elgin Ave",
+        "Toronto, Ontario",
+        "M5R 1G5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-323, Part Lot 20",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 052 430 00100",
+    "consideration_lines": [
+      "cash: $1,525,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $1,250,000   rate: Prime plus 1.0% per annum",
+      "registered: 02/07/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT604/RT60430/0217_073355.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT604/RT60430/0217_073358.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT604/RT60430/0217_073411.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT604/RT60430/air1.jpg",
+        "/assets/files/RT6/RT604/RT60430/air2.jpg",
+        "/assets/files/RT6/RT604/RT60430/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3492 / 6031",
+      "rt_id": "RT60430"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "241 BEDFORD RD",
+    "postcode": "M5R 2L3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/07/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1525000",
+    "cash": "1525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 430 00100"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "241 BEDFORD RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Feb 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Duke Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2010096 Ontario Inc"
+    ],
+    "price_text": "$1,525,000"
+  }
+}

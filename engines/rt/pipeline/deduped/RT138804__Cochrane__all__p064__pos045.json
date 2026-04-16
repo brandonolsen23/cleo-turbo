@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT138804",
+  "source_folder": "Cochrane/all/p064",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT138804",
+      "source_folder": "Cochrane/all/p064",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p064/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "81 MACFARLANE AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "30 Oct 2018",
+      "price_text": "$800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "3107957 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dr Richard Bergeron",
+        "81 MacFarlane Ave",
+        "Ottawa, Ontario",
+        "K1Y 1M6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 233925, Lot U",
+      "",
+      "PIN: 04090-0172",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "06 14 074 001 26000",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $800,000   rate: 25.0% per annum.",
+      "registered: 10/30/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3196 / 10920",
+      "rt_id": "RT138804"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "81 MACFARLANE AVE",
+    "postcode": "K1Y 1M6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/30/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04090-0172",
+    "rollno": "06 14 074 001 26000"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "81 MACFARLANE AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "30 Oct 2018",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "3107957 Canada Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

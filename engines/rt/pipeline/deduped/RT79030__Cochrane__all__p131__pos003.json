@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT79030",
+  "source_folder": "Cochrane/all/p131",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT79030",
+      "source_folder": "Cochrane/all/p131",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p131/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "96 WAVERLEY ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "09 Jun 2011",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Kercorp Inc     613-798-1032"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sylvia Kershman",
+        "c/o 712 Golden Ave",
+        "Ottawa, Ontario",
+        "K2A 2G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 15558",
+      "Part Lot 61, S/S Waverley St",
+      "As in Inst No N-502555",
+      "",
+      "PIN: 04117-0192",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "06 14 042 101 25800",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $525,000   rate: 6.0% per annum",
+      "registered: 06/09/2011   due: 06/09/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT790/RT79030/air1.jpg",
+        "/assets/files/RT7/RT790/RT79030/air2.jpg",
+        "/assets/files/RT7/RT790/RT79030/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6504 / 10920",
+      "rt_id": "RT79030"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "96 WAVERLEY ST",
+    "postcode": "K2P 0V2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/09/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "04117-0192",
+    "rollno": "06 14 042 101 25800"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "96 WAVERLEY ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "09 Jun 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Kercorp Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

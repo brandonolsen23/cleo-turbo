@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT37858",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37858",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "47 - 49 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "20 Sep 2004",
+      "price_text": "$580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1306784 Ontario Inc     519-699-5610"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Greg Mewhiney",
+        "48 Meadowview Cres",
+        "Heidleberg, Ontario",
+        "N0B 1Y0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1614164 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Josh Koehler",
+        "5 Princess St",
+        "Waterloo, Ontario",
+        "N2L 2X7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-3493, Parts 1, 2 & 4"
+    ],
+    "arn_text": "30 16 042 600 01700",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT378/RT37858/photo.jpg"
+    },
+    "footer": {
+      "page_position": "617 / 752",
+      "rt_id": "RT37858"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "47 - 49 KING ST N",
+    "postcode": "N2J 2W9",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "09/20/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 042 600 01700"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "47 - 49 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "20 Sep 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1306784 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1614164 Ontario Inc"
+    ],
+    "price_text": "$580,000"
+  }
+}

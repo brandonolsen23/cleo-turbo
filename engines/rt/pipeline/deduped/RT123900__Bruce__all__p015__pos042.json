@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT123900",
+  "source_folder": "Bruce/all/p015",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123900",
+      "source_folder": "Bruce/all/p015",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/all/p015/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1 - SDR",
+        "PART LOTS 59 - 61"
+      ],
+      "city_region": "Brockton : Bruce",
+      "date_text": "16 Mar 2017",
+      "price_text": "$1,148,372",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1681776 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Freiburger",
+        "RR 3",
+        "Walkerton, Ontario",
+        "N0G 2V0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2494723 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Freiburger",
+        "RR 3",
+        "Walkerton, Ontario",
+        "N0G 2V0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - SDR, Part Lot 59-61",
+      "As in Inst Nos:",
+      "R-329713, R-179146 & R-100777",
+      "Except:",
+      "Plan 3R-562, Part 1",
+      "Plan R-193, Parts 15 & 16",
+      "Inst No DEP-1529",
+      "",
+      "PIN: 33226-0011 +",
+      "",
+      "144.99 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,148,372"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "743 / 1185",
+      "rt_id": "RT123900"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "CONC 1 - SDR, PART LOTS 59 - 61",
+    "postcode": "",
+    "municipality": "Brockton",
+    "region": "Bruce",
+    "date": "03/16/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "144.99",
+    "consid": "1148372",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "33226-0011+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "CONC 1 - SDR",
+      "PART LOTS 59 - 61"
+    ],
+    "city_region": "Brockton : Bruce",
+    "date_text": "16 Mar 2017",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1681776 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2494723 Ontario Ltd"
+    ],
+    "price_text": "$1,148,372"
+  }
+}

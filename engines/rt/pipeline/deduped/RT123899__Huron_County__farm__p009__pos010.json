@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT123899",
+  "source_folder": "Huron_County/farm/p009",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123899",
+      "source_folder": "Huron_County/farm/p009",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Huron_County/farm/p009/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "78609 BLUEWATER HIGHWAY",
+        "78609 BLUEWATER HWY"
+      ],
+      "city_region": "Goderich : Huron County",
+      "date_text": "16 Mar 2017",
+      "price_text": "$1,290,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "AA Bos Farm Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aric Bos",
+        "78609 Bluewater Hwy",
+        "Goderich, Ontario",
+        "N7A 3X8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 25",
+      "As in Inst No R-166787",
+      "",
+      "PIN: 41191-0112",
+      "",
+      "67.39 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,290,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,500,000   rate: 18.0% per annum.",
+      "registered: 03/16/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1238/RT123899/air1.jpg",
+        "/assets/files/RT12/RT1238/RT123899/air2.jpg",
+        "/assets/files/RT12/RT1238/RT123899/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "411 / 870",
+      "rt_id": "RT123899"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "78609 BLUEWATER HIGHWAY, 78609 BLUEWATER HWY",
+    "postcode": "N7A 3X8",
+    "municipality": "Goderich",
+    "region": "Huron County",
+    "date": "03/16/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "67.39",
+    "consid": "1290000",
+    "cash": "1290000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "41191-0112",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "78609 BLUEWATER HIGHWAY",
+      "78609 BLUEWATER HWY"
+    ],
+    "city_region": "Goderich : Huron County",
+    "date_text": "16 Mar 2017",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "AA Bos Farm Ltd"
+    ],
+    "price_text": "$1,290,000"
+  }
+}

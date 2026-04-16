@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT190626",
+  "source_folder": "Perth_County/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190626",
+      "source_folder": "Perth_County/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "116 DOWNIE ST"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "28 Feb 2025",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2380959 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "417 Main St, Box 1054",
+        "Exeter, Ontario",
+        "N0M 1W0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RPL Holdings (London) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Kortney Miller",
+        "4230 Perth Line 20",
+        "St Pauls, Ontario",
+        "N0K 1V0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 7,",
+      "Lot B & Part Lot A",
+      "As in Inst No R-359061",
+      "",
+      "PIN: 53117-0068",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "31 11 050 010 06400",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190626/0329_110120.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190626/0329_110143.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190626/0329_110159.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190626/0329_110204.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1906/RT190626/0329_110210.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 113",
+      "rt_id": "RT190626"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "116 DOWNIE ST",
+    "postcode": "N5A 1X1",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "02/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "53117-0068",
+    "rollno": "31 11 050 010 06400"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "116 DOWNIE ST"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "28 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2380959 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RPL Holdings (London) Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

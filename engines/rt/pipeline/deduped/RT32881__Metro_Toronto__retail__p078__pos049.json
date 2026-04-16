@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT32881",
+  "source_folder": "Metro_Toronto/retail/p078",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32881",
+      "source_folder": "Metro_Toronto/retail/p078",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p078/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "808 - 812 OCONNOR DR"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "04 Dec 2003",
+      "price_text": "$1,825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2014617 Ontario Ltd",
+        "Loblaw Inc     416-967-7990"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rosabell Hun",
+        "Wittington Properties Ltd",
+        "22 St Clair Ave E, 5th Flr",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PCL Holdings Ltd     416-480-0945"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mary Chiesa",
+        "111 Davisville Ave, Apt EX01",
+        "Toronto, Ontario",
+        "M4S 1G5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg & Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-4348",
+      "Parts 1 & 2",
+      "",
+      "1.81 acre"
+    ],
+    "arn_text": "19 06 014 210 05000 +",
+    "consideration_lines": [
+      "cash: $1,825,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32881/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3900 / 4952",
+      "rt_id": "RT32881"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "808 - 812 OCONNOR DR",
+    "postcode": "M4B 2S9",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "12/04/2003",
+    "desc": "Retail Bldg & Plaza",
+    "bldg": "",
+    "acreage": "1.81",
+    "consid": "1825000",
+    "cash": "1825000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 014 210 05000+"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "808 - 812 OCONNOR DR"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "04 Dec 2003",
+    "note": "",
+    "description": "Retail Bldg & Plaza",
+    "seller_lines": [
+      "2014617 Ontario Ltd",
+      "Loblaw Inc"
+    ],
+    "buyer_lines": [
+      "PCL Holdings Ltd"
+    ],
+    "price_text": "$1,825,000"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT181749",
+  "source_folder": "Metro_Toronto/retail/p015",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181749",
+      "source_folder": "Metro_Toronto/retail/p015",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p015/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1704 A AVENUE RD",
+        "1704 B AVENUE RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "01 Dec 2023",
+      "price_text": "$1,950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1704 Avenue Road GP Inc",
+        "1704 Avenue Road LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Villarboit Cres",
+        "Vaughan, Ontario",
+        "L4K 4K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Naghavi & Farhangfar Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1698 Avenue Rd, Units 6 & 7",
+        "Toronto, Ontario",
+        "M5M 3Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2958",
+      "Level 1, Units 6 & 7",
+      "",
+      "PIN: 76958-0006 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank Canada",
+      "principal: $1,950,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181749/1217_121457.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181749/1217_121458.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181749/1217_121459.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181749/1217_121500.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "705 / 4952",
+      "rt_id": "RT181749"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1704 A AVENUE RD, 1704 B AVENUE RD",
+    "postcode": "M5M 3Y4",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1950000",
+    "cash": "1950000",
+    "debt": "",
+    "note": "",
+    "pin": "76958-0006+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1704 A AVENUE RD",
+      "1704 B AVENUE RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "01 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1704 Avenue Road GP Inc",
+      "1704 Avenue Road LP"
+    ],
+    "buyer_lines": [
+      "Naghavi & Farhangfar Holdings Inc"
+    ],
+    "price_text": "$1,950,000"
+  }
+}

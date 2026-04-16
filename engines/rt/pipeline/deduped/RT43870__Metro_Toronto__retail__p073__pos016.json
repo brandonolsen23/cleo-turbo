@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT43870",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43870",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "3126 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Aug 2005",
+      "price_text": "$1,519,672",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lawrence Park Residences Corp     416-481-2222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anthony Heller",
+        "Plazacorp Investments Inc",
+        "10 Wanless Ave, Ste 201",
+        "Toronto, Ontario",
+        "M4N 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1648597 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Philips",
+        "1810 Avenue Rd, Ste 200",
+        "Toronto, Ontario",
+        "M5M 3Z2"
+      ]
+    },
+    "description_lines": [
+      "2 Retail Condo Units - 7,000 sf @ $217",
+      "",
+      "Price was reported to be negotiated 9 years ago."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-19664, Part 2"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1     assumed/vtb debt: $1,519,671"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3617 / 4952",
+      "rt_id": "RT43870"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "3126 YONGE ST",
+    "postcode": "M4N 2K6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/23/2005",
+    "desc": "2 Retail Condo Units - 7,000 sf @ $217",
+    "bldg": "7,000 sf",
+    "acreage": "",
+    "consid": "1519672",
+    "cash": "1",
+    "debt": "1519671",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "3126 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Aug 2005",
+    "note": "",
+    "description": "2 Retail Condo Units - 7,000 sf @ $217",
+    "seller_lines": [
+      "Lawrence Park Residences Corp"
+    ],
+    "buyer_lines": [
+      "1648597 Ontario Inc"
+    ],
+    "price_text": "$1,519,672"
+  }
+}

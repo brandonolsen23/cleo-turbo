@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT39500",
+  "source_folder": "Huron_County/comm-ind-land/p003",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39500",
+      "source_folder": "Huron_County/comm-ind-land/p003",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Huron_County/comm-ind-land/p003/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "83351 ST AUGUSTINE LINE"
+      ],
+      "city_region": "Ashfield : Huron County",
+      "date_text": "15 Dec 2004",
+      "price_text": "$1,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Walterstate Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walter Stalenhoef",
+        "RR 3",
+        "Auburn, Ontario",
+        "N0M 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 24",
+      "As in Inst No R-310353",
+      "",
+      "152.14 acre"
+    ],
+    "arn_text": "40 70 610 002 02300",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "122 / 157",
+      "rt_id": "RT39500"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "83351 ST AUGUSTINE LINE",
+    "postcode": "N0M 1E0",
+    "municipality": "Ashfield",
+    "region": "Huron County",
+    "date": "12/15/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "152.14",
+    "consid": "1200000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "40 70 610 002 02300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "83351 ST AUGUSTINE LINE"
+    ],
+    "city_region": "Ashfield : Huron County",
+    "date_text": "15 Dec 2004",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Walterstate Farms Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

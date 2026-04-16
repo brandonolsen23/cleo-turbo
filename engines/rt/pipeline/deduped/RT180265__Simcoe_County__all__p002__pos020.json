@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT180265",
+  "source_folder": "Simcoe_County/all/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180265",
+      "source_folder": "Simcoe_County/all/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/all/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "99 ROCKVIEW RD"
+      ],
+      "city_region": "Callander : Parry Sound",
+      "date_text": "31 Aug 2023",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "7950748 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1944977 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jacqueline Albert",
+        "1140 Ringwell Dr",
+        "Newmarket, Ontario",
+        "L3Y 8T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 42R-13618, Parts 2 & 7",
+      "",
+      "PIN: 52221-0427",
+      "",
+      "1.48 acre"
+    ],
+    "arn_text": "49 71 000 004 15320",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 501",
+      "rt_id": "RT180265"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "99 ROCKVIEW RD",
+    "postcode": "P0H 1H0",
+    "municipality": "Callander",
+    "region": "Parry Sound",
+    "date": "08/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.48",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "52221-0427",
+    "rollno": "49 71 000 004 15320"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "99 ROCKVIEW RD"
+    ],
+    "city_region": "Callander : Parry Sound",
+    "date_text": "31 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "7950748 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "1944977 Ontario Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

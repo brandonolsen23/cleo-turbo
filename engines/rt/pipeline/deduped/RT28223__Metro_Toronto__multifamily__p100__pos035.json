@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28223",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28223",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 BAMBURGH CIRCLE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "17 Dec 2002",
+      "price_text": "$33,833,600",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Headway Property Investment 78-1 Inc     416-492-9981"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gerald Litowitz",
+        "2020 Bathurst St, Ste 5",
+        "Toronto, Ontario",
+        "M5P 3L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bamburgh Circle Holdings Inc     416-340-1600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Guy Alberga",
+        "Metro Capital Group",
+        "20 Queen St W, Ste 2100",
+        "Toronto, Ontario",
+        "M5H 3R3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 21 storey; 332 units @ $101,908"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-1717, Block D",
+      "",
+      "5.06 acre"
+    ],
+    "arn_text": "19 01 104 625 10000",
+    "consideration_lines": [
+      "cash: $33,833,600     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT282/RT28223/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4986 / 6031",
+      "rt_id": "RT28223"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "125 BAMBURGH CIRCLE",
+    "postcode": "M1W 3G4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/17/2002",
+    "desc": "Apartment Bldg - 21 storey; 332 units @ $101,908",
+    "bldg": "332 units",
+    "acreage": "5.06",
+    "consid": "33833600",
+    "cash": "33833600",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 104 625 10000"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "125 BAMBURGH CIRCLE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "17 Dec 2002",
+    "note": "",
+    "description": "Apartment Bldg - 21 storey; 332 units @ $101,908",
+    "seller_lines": [
+      "Headway Property Investment 78-1 Inc"
+    ],
+    "buyer_lines": [
+      "Bamburgh Circle Holdings Inc"
+    ],
+    "price_text": "$33,833,600"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT176959",
+  "source_folder": "Niagara_S/retail/p002",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176959",
+      "source_folder": "Niagara_S/retail/p002",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p002/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "HELENA ST"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "05 Apr 2023",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Garrison Road Self Storage Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3659 Stanley Ave, Unit 1",
+        "Niagara Falls, Ontario",
+        "L2E 0A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Unicell Ltd     416-421-6845"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hugh Martin",
+        "50 Industrial St",
+        "East York, Ontario",
+        "M4G 1Y9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT17/RT1769/RT176959/mi.pdf",
+    "site_lines": [
+      "Plan 59R-17524, Parts 3 & 4",
+      "",
+      "PIN: 64218-0466",
+      "",
+      "14.16 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "85 / 324",
+      "rt_id": "RT176959"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "HELENA ST",
+    "postcode": "",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "04/05/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "14.16",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "64218-0466",
+    "rollno": ""
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "HELENA ST"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "05 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Garrison Road Self Storage Ltd"
+    ],
+    "buyer_lines": [
+      "Unicell Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

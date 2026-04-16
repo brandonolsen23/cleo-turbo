@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT182541",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182541",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "48 PINESTEAD RD"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "20 Dec 2023",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000731435 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Derek Punchard",
+        "48 Pinestead Rd",
+        "Utterson, Ontario",
+        "P0B 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7 - Stephenson, Part Lot 19",
+      "Plan 35R-3667, Part 6",
+      "",
+      "PIN: 48124-0165",
+      "",
+      "6.88 acre"
+    ],
+    "arn_text": "44 42 040 015 02501",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1825/RT182541/air1.jpg",
+        "/assets/files/RT18/RT1825/RT182541/air2.jpg",
+        "/assets/files/RT18/RT1825/RT182541/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "29 / 64",
+      "rt_id": "RT182541"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "48 PINESTEAD RD",
+    "postcode": "P0B 1M0",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "12/20/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.88",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "48124-0165",
+    "rollno": "44 42 040 015 02501"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "48 PINESTEAD RD"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "20 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000731435 Ontario Ltd"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT43208",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43208",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "4479 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "19 Jul 2005",
+      "price_text": "$8,415,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hurstbridge Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Valerie Spohn",
+        "536 Head St",
+        "Victoria, BC",
+        "V9A 5S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Elkhallow Developments Inc     416-222-0815"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Allen",
+        "Allen Group",
+        "4211 Yonge St, Ste 230",
+        "Toronto, Ontario",
+        "M2P 2A9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 15 units 55,000 sf @ $153"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 11",
+      "As in Inst Nos SC-494430 & SC-588214",
+      "",
+      "5.19 acre"
+    ],
+    "arn_text": "19 01 092 250 00200",
+    "consideration_lines": [
+      "cash: $8,415,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT432/RT43208/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3636 / 4952",
+      "rt_id": "RT43208"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "4479 KINGSTON RD",
+    "postcode": "M1E 2N7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "07/19/2005",
+    "desc": "Retail Plaza - 1 storey; 15 units 55,000 sf @ $153",
+    "bldg": "55,000 sf",
+    "acreage": "5.19",
+    "consid": "8415000",
+    "cash": "8415000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 092 250 00200"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "4479 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "19 Jul 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 15 units 55,000 sf @ $153",
+    "seller_lines": [
+      "Hurstbridge Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Elkhallow Developments Inc"
+    ],
+    "price_text": "$8,415,000"
+  }
+}

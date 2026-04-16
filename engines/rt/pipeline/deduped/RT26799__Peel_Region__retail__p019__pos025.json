@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT26799",
+  "source_folder": "Peel_Region/retail/p019",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26799",
+      "source_folder": "Peel_Region/retail/p019",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p019/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "3200 ERIN MILLS PKWY"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "04 Sep 2002",
+      "price_text": "$4,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "566719 Ontario Ltd     905-828-0140"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rolf Schoene",
+        "Ro-Ro Property Management",
+        "2285 Dunwin Dr, Units 7 & 8",
+        "Mississauga, Ontario",
+        "L5L 3S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Millway Plaza Inc     416-222-3010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Hofstedter",
+        "Davpart Inc",
+        "4576 Yonge St, Ste 700",
+        "Toronto, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 8 units 46,000 sf @ $96"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-4553, Parts 1, 3 & 5",
+      "Except Plan 43R-20346, Parts 4 & 5",
+      "",
+      "4.53 acre"
+    ],
+    "arn_text": "21 05 060 155 51701",
+    "consideration_lines": [
+      "cash: $4,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "926 / 1087",
+      "rt_id": "RT26799"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "3200 ERIN MILLS PKWY",
+    "postcode": "L5L 1W8",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "09/04/2002",
+    "desc": "Retail Plaza - 1 storey; 8 units 46,000 sf @ $96",
+    "bldg": "",
+    "acreage": "4.53",
+    "consid": "4400000",
+    "cash": "4400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 060 155 51701"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "3200 ERIN MILLS PKWY"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "04 Sep 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 8 units 46,000 sf @ $96",
+    "seller_lines": [
+      "566719 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Millway Plaza Inc"
+    ],
+    "price_text": "$4,400,000"
+  }
+}

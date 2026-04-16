@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT25707",
+  "source_folder": "York_Region/retail/p018",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25707",
+      "source_folder": "York_Region/retail/p018",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "38 BUTTONFIELD RD"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "18 Jun 2002",
+      "price_text": "$1,040,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Edmond, Shing & Virginia Chan"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "146 Regent St",
+        "Richmond Hill, Ontario",
+        "L4C 9P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1530633 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mario Cialone",
+        "263 Harrygan Cres",
+        "Richmond Hill, Ontario",
+        "L4C 4J1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 units 9,800 sf @ $106"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2522, Block 167",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 36 020 132 89118",
+    "consideration_lines": [
+      "cash: $1,040,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal LePage Your Community: Ed Compagnone, 905-731-2000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT257/RT25707/photo.jpg"
+    },
+    "footer": {
+      "page_position": "855 / 984",
+      "rt_id": "RT25707"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "38 BUTTONFIELD RD",
+    "postcode": "L3R 9G8",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/18/2002",
+    "desc": "Retail Plaza - 1 storey; 9 units 9,800 sf @ $106",
+    "bldg": "9,800 sf",
+    "acreage": "1",
+    "consid": "1040000",
+    "cash": "1040000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 132 89118"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "38 BUTTONFIELD RD"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "18 Jun 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 9 units 9,800 sf @ $106",
+    "seller_lines": [
+      "Edmond, Shing & Virginia Chan"
+    ],
+    "buyer_lines": [
+      "1530633 Ontario Inc"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

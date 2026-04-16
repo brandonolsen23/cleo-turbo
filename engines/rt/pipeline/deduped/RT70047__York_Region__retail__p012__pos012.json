@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT70047",
+  "source_folder": "York_Region/retail/p012",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70047",
+      "source_folder": "York_Region/retail/p012",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "8425 WOODBINE AVE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "30 Dec 2009",
+      "price_text": "$2,080,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1042520 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Shui Yeung",
+        "25 Blencathra Hill",
+        "Markham, Ontario",
+        "L6C 1G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1812211 Ontario Inc     905-762-8878"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Li",
+        "51 Sprucewood Dr",
+        "Markham, Ontario",
+        "L3T 2P8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 2 tenants 9,000 sf @ $231",
+      "",
+      "Fully leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3560, Part Lots 5 & 6",
+      "As in Inst No R-629631",
+      "Except:",
+      "Exprop Plan 5431",
+      "",
+      "PIN: 03032-0018",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "19 36 020 126 78400",
+    "consideration_lines": [
+      "cash: $582,000     assumed/vtb debt: $1,498,000",
+      "",
+      "chargee: 1042520 Ontario Ltd",
+      "principal: $1,498,000   rate: 8.75% per annum",
+      "registered: 12/30/2009   due: 01/07/2012"
+    ],
+    "broker_lines": [
+      "Century 21 Winpax Realty: Mathhew Lee, 905-470-7890"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT700/RT70047/0116_111012.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT700/RT70047/0116_111108.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT700/RT70047/0116_111222.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT700/RT70047/air1.jpg",
+        "/assets/files/RT7/RT700/RT70047/air2.jpg",
+        "/assets/files/RT7/RT700/RT70047/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "563 / 984",
+      "rt_id": "RT70047"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "8425 WOODBINE AVE",
+    "postcode": "L3R 2P4",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "12/30/2009",
+    "desc": "Retail Plaza - 1 storey; 2 tenants 9,000 sf @ $231",
+    "bldg": "9,000 sf",
+    "acreage": ".85",
+    "consid": "2080000",
+    "cash": "582000",
+    "debt": "1498000",
+    "note": "",
+    "pin": "03032-0018",
+    "rollno": "19 36 020 126 78400"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "8425 WOODBINE AVE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "30 Dec 2009",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 2 tenants 9,000 sf @ $231",
+    "seller_lines": [
+      "1042520 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1812211 Ontario Inc"
+    ],
+    "price_text": "$2,080,000"
+  }
+}

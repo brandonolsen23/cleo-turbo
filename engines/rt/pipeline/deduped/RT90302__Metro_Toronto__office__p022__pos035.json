@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT90302",
+  "source_folder": "Metro_Toronto/office/p022",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT90302",
+      "source_folder": "Metro_Toronto/office/p022",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/office/p022/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "602 MOUNT PLEASANT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "14 Jan 2013",
+      "price_text": "$725,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Snowview Bancorp Inc     416-449-8423"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Myer Betel",
+        "7 Farrington Dr",
+        "Toronto, Ontario",
+        "M4L 2B4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1888079 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Judy Moore",
+        "602 Mount Pleasant Rd",
+        "Toronto, Ontario",
+        "M4S 2M8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1789, Part Lot 190",
+      "As in Inst No EN-113465",
+      "",
+      "PIN: 21132-0183",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 103 410 02000",
+    "consideration_lines": [
+      "cash: $725,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Co",
+      "principal: $543,750   rate: 4.99% per annum",
+      "registered: 01/14/2013   due: 02/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90302/0127_122110.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90302/0127_122144.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90302/0127_122209.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90302/0127_122220.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1086 / 3370",
+      "rt_id": "RT90302"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "602 MOUNT PLEASANT RD",
+    "postcode": "M4S 2M8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/14/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "725000",
+    "cash": "725000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "21132-0183",
+    "rollno": "19 04 103 410 02000"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "602 MOUNT PLEASANT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "14 Jan 2013",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Snowview Bancorp Inc"
+    ],
+    "buyer_lines": [
+      "1888079 Ontario Inc"
+    ],
+    "price_text": "$725,000"
+  }
+}

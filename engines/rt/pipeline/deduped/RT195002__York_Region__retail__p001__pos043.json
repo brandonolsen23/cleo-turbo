@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT195002",
+  "source_folder": "York_Region/retail/p001",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195002",
+      "source_folder": "York_Region/retail/p001",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "7595 MARKHAM RD",
+        "UNITS 18 - 21"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "23 Oct 2025",
+      "price_text": "$2,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal Property Holdings Inc",
+        "2464626 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5437 19th Ave",
+        "Markham, Ontario",
+        "L3P 3J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001297944 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nelantine Jesuthasa",
+        "180 Nature Haven Cres",
+        "Pickering, Ontario",
+        "L1X 0A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1190,",
+      "Level 1, Units 18-21",
+      "",
+      "PIN: 29721-0019 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,200,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/23/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110342.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110346.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110433.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110434.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110438.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110439.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1950/RT195002/1102_110443.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "44 / 984",
+      "rt_id": "RT195002"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "7595 MARKHAM RD, UNITS 18 - 21",
+    "postcode": "L3S 0B6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "10/23/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2200000",
+    "cash": "2200000",
+    "debt": "",
+    "note": "",
+    "pin": "29721-0019+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "7595 MARKHAM RD",
+      "UNITS 18 - 21"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "23 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Royal Property Holdings Inc",
+      "2464626 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001297944 Ontario Inc"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

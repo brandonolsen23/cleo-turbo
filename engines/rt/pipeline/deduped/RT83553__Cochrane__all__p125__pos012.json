@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT83553",
+  "source_folder": "Cochrane/all/p125",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT83553",
+      "source_folder": "Cochrane/all/p125",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p125/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "94 BEECHWOOD AVE"
+      ],
+      "city_region": "Vanier : Ottawa-Carleton",
+      "date_text": "30 Jan 2012",
+      "price_text": "$1,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2313328 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jose Alves",
+        "94 Beechwood Ave",
+        "Ottawa, Ontario",
+        "K1L 8B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 101, Lot 14",
+      "Except:",
+      "Inst No N-416275",
+      "",
+      "PIN: 04235-0535",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 09 210 401 46400",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT835/RT83553/air1.jpg",
+        "/assets/files/RT8/RT835/RT83553/air2.jpg",
+        "/assets/files/RT8/RT835/RT83553/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6213 / 10920",
+      "rt_id": "RT83553"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "94 BEECHWOOD AVE",
+    "postcode": "K1L 8B2",
+    "municipality": "Vanier",
+    "region": "Ottawa-Carleton",
+    "date": "01/30/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1000000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04235-0535",
+    "rollno": "06 09 210 401 46400"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "94 BEECHWOOD AVE"
+    ],
+    "city_region": "Vanier : Ottawa-Carleton",
+    "date_text": "30 Jan 2012",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2313328 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

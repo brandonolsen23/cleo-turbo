@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT177005",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177005",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1149 - 1183 LAUZON RD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "21 Apr 2023",
+      "price_text": "$3,360,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2565598 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "30 Bellini Ave",
+        "Brampton, Ontario",
+        "L6P 0E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Winter White Hawk Inc     519-258-5711"
+      ],
+      "trade_name": "Mr Lube & Tires",
+      "contact_lines": [
+        "Attn: Danial Fard",
+        "2095 Tecumseh Rd W",
+        "Windosr, Ontario",
+        "N8B 1V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Sandwich East,",
+      "Part Lot 127",
+      "As in Inst No R-898759",
+      "",
+      "PIN: 01075-0411",
+      "",
+      "1.08 acre"
+    ],
+    "arn_text": "37 39 060 300 00203",
+    "consideration_lines": [
+      "cash: $3,360,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,620,000   rate: 18.0% per annum.",
+      "registered: 04/21/2023   due: 04/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "122 / 460",
+      "rt_id": "RT177005"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1149 - 1183 LAUZON RD",
+    "postcode": "N8S 3M9",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "04/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.08",
+    "consid": "3360000",
+    "cash": "3360000",
+    "debt": "",
+    "note": "",
+    "pin": "01075-0411",
+    "rollno": "37 39 060 300 00203"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1149 - 1183 LAUZON RD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "21 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2565598 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Winter White Hawk Inc"
+    ],
+    "price_text": "$3,360,000"
+  }
+}

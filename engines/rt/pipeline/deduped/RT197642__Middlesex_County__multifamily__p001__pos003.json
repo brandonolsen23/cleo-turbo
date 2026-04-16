@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT197642",
+  "source_folder": "Middlesex_County/multifamily/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197642",
+      "source_folder": "Middlesex_County/multifamily/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/multifamily/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "760 WONDERLAND RD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "25 Feb 2026",
+      "price_text": "$865,200",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "TC Core GP Inc",
+        "TC Core LP     888-949-8439"
+      ],
+      "trade_name": "Hazelview Investments",
+      "contact_lines": [
+        "1133 Yonge St, 4th Flr",
+        "Toronto, Ontario",
+        "M4T 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000914080 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Croll",
+        "333 Bay St, Ste 2400",
+        "Toronto, Ontario",
+        "M5H 2T6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 487",
+      "Level 1, Units 1-9",
+      "Level 2-12, Units 1-10",
+      "",
+      "PIN: 09090-0001 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $557,857     assumed/vtb debt: $307,343"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 663",
+      "rt_id": "RT197642"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "760 WONDERLAND RD",
+    "postcode": "N6K 1M2",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "865200",
+    "cash": "557857",
+    "debt": "307343",
+    "note": "% Interest",
+    "pin": "09090-0001+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "760 WONDERLAND RD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "25 Feb 2026",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "TC Core GP Inc",
+      "TC Core LP"
+    ],
+    "buyer_lines": [
+      "1000914080 Ontario Inc"
+    ],
+    "price_text": "$865,200"
+  }
+}

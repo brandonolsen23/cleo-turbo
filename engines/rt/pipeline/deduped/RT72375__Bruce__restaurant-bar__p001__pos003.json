@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT72375",
+  "source_folder": "Bruce/restaurant-bar/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72375",
+      "source_folder": "Bruce/restaurant-bar/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/restaurant-bar/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "315 MAIN ST"
+      ],
+      "city_region": "South Bruce Peninsula : Bruce",
+      "date_text": "19 May 2010",
+      "price_text": "$600,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "Grid Grey-Bruce Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Timothy Arnold",
+        "RR 1",
+        "Hepworth, Ontario",
+        "N0H 1P0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Marketingworks Inc     905-830-9099"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Beverly Buckton",
+        "355 Park Ave",
+        "Newmarket, Ontario",
+        "L3Y 1V4"
+      ]
+    },
+    "description_lines": [
+      "Dairy Queen - 1 storey; 1,627 sf @ $369"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 429, Part Lot B",
+      "As in Inst No R-333574",
+      "",
+      "PIN: 33153-0138",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "41 02 540 011 00500",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $400,000   rate: Prime plus 6.5% per annum",
+      "registered: 05/19/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT723/RT72375/0101_144156.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT723/RT72375/0101_144231.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT723/RT72375/air1.jpg",
+        "/assets/files/RT7/RT723/RT72375/air2.jpg",
+        "/assets/files/RT7/RT723/RT72375/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 5",
+      "rt_id": "RT72375"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "315 MAIN ST",
+    "postcode": "N0H 2G0",
+    "municipality": "South Bruce Peninsula",
+    "region": "Bruce",
+    "date": "05/19/2010",
+    "desc": "Dairy Queen - 1 storey; 1,627 sf @ $369",
+    "bldg": "1,627 sf",
+    "acreage": ".25",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "33153-0138",
+    "rollno": "41 02 540 011 00500"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "315 MAIN ST"
+    ],
+    "city_region": "South Bruce Peninsula : Bruce",
+    "date_text": "19 May 2010",
+    "note": "Purchased Business",
+    "description": "Dairy Queen - 1 storey; 1,627 sf @ $369",
+    "seller_lines": [
+      "Grid Grey-Bruce Ltd"
+    ],
+    "buyer_lines": [
+      "Marketingworks Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

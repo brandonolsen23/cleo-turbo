@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT44829",
+  "source_folder": "Frontenac_County/retail/p004",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44829",
+      "source_folder": "Frontenac_County/retail/p004",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p004/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "2452 PRINCESS ST"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "06 Oct 2005",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Woolley Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Antonia Woolley",
+        "Gregory O. Best",
+        "9 Pine St, Box 631",
+        "Brockville, Ontario",
+        "K6V 5V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "5489986 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Cora Rodrigues",
+        "699 Gardiners Rd, Unit 1",
+        "Kingston, Ontario",
+        "K7M 3Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 12",
+      "Plan 13R-587, Part 1",
+      "",
+      "0.49 acre"
+    ],
+    "arn_text": "10 11 080 190 12301",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $490,000   rate: 5.35% per annum",
+      "registered: 10/06/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "191 / 236",
+      "rt_id": "RT44829"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "2452 PRINCESS ST",
+    "postcode": "K7M 3G4",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "10/06/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".49",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 080 190 12301"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "2452 PRINCESS ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "06 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Woolley Realty Inc"
+    ],
+    "buyer_lines": [
+      "5489986 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

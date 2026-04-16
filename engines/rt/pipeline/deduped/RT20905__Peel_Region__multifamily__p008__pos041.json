@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT20905",
+  "source_folder": "Peel_Region/multifamily/p008",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20905",
+      "source_folder": "Peel_Region/multifamily/p008",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/multifamily/p008/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "352 LAKESHORE RD W"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "15 Mar 2001",
+      "price_text": "$557,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tony Schweigel Investments Ltd     905-270-7034"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tony Schweigel",
+        "c/o John Chapman",
+        "2572 Stanfield Rd",
+        "Mississauga, Ontario",
+        "L4Y 1S2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1305355 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Julia Kim",
+        "104 Redwood Ave",
+        "Toronto, Ontario",
+        "M4L 2S6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2.5 storey; 11 units @ $50,682",
+      "",
+      "6-2bdrm 4-1bdrm 1-bach"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 419, Block A",
+      "",
+      "N side 15m W of Maple Ave",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "21 05 090 006 13900",
+    "consideration_lines": [
+      "cash: $557,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal Lepage: Peter Scholz, 905-568-9500"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT209/RT20905/photo.jpg"
+    },
+    "footer": {
+      "page_position": "392 / 447",
+      "rt_id": "RT20905"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "352 LAKESHORE RD W",
+    "postcode": "L5H 1H3",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "03/15/2001",
+    "desc": "Apartment Bldg - 2.5 storey; 11 units @ $50,682",
+    "bldg": "11 units",
+    "acreage": ".52",
+    "consid": "557500",
+    "cash": "557500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 090 006 13900"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "352 LAKESHORE RD W"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "15 Mar 2001",
+    "note": "",
+    "description": "Apartment Bldg - 2.5 storey; 11 units @ $50,682",
+    "seller_lines": [
+      "Tony Schweigel Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1305355 Ontario Ltd"
+    ],
+    "price_text": "$557,500"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT30562",
+  "source_folder": "Kitchener-Waterloo/all/p042",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30562",
+      "source_folder": "Kitchener-Waterloo/all/p042",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p042/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1, PART LOTS 7-10",
+        "CONC 2, PART LOT 10"
+      ],
+      "city_region": "Huron E. : Huron County",
+      "date_text": "11 Jun 2003",
+      "price_text": "$2,250,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal     519-660-3587"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Graham",
+        "McCarthy Tetrault",
+        "255 Queens Ave, Ste 2000",
+        "London, Ontario",
+        "N6A 5R8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Heyink's Poultry Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raymond Heyink",
+        "RR 2",
+        "Hensall, Ontario",
+        "N0M 1X0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 7-10",
+      "Conc 2, Part Lot 10",
+      "As in Inst Nos R-291531 & R-291532",
+      "",
+      "443.40 acre"
+    ],
+    "arn_text": "40 16 002 200 01300",
+    "consideration_lines": [
+      "cash: $2,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2076 / 2093",
+      "rt_id": "RT30562"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "CONC 1, PART LOTS 7-10, CONC 2, PART LOT 10",
+    "postcode": "",
+    "municipality": "Huron E.",
+    "region": "Huron County",
+    "date": "06/11/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "443.4",
+    "consid": "2250000",
+    "cash": "2250000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "40 16 002 200 01300"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "CONC 1, PART LOTS 7-10",
+      "CONC 2, PART LOT 10"
+    ],
+    "city_region": "Huron E. : Huron County",
+    "date_text": "11 Jun 2003",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "Heyink's Poultry Farms Ltd"
+    ],
+    "price_text": "$2,250,000"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT185544",
+  "source_folder": "Niagara_N/retail/p001",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185544",
+      "source_folder": "Niagara_N/retail/p001",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p001/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "17 LOCK ST"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "19 Jun 2024",
+      "price_text": "$5,233,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Visco Holdings Ltd",
+        "Brox Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "22 Mulberry Lane, RR 2",
+        "Niagara-on-the-Lake, ON",
+        "L0S 1J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Riddell Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Iain Watson",
+        "79 Simpson Rd",
+        "St Catharines, Ontario",
+        "L2N 3Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 697 - Grantham, Lot 11",
+      "Except:",
+      "Plan 30R-4262, Part 1",
+      "",
+      "PIN: 46188-1000",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "26 29 060 039 04200",
+    "consideration_lines": [
+      "cash: $5,233,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185544/0720_092004.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185544/0720_092011.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185544/0720_092041a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185544/0720_092041b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185544/0720_092112.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185544/0720_092151.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "46 / 307",
+      "rt_id": "RT185544"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "17 LOCK ST",
+    "postcode": "L2N 5B6",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "06/19/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "5233000",
+    "cash": "5233000",
+    "debt": "",
+    "note": "",
+    "pin": "46188-1000",
+    "rollno": "26 29 060 039 04200"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "17 LOCK ST"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "19 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Visco Holdings Ltd",
+      "Brox Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Riddell Investments Ltd"
+    ],
+    "price_text": "$5,233,000"
+  }
+}

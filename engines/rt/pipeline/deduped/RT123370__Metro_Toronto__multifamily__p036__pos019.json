@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT123370",
+  "source_folder": "Metro_Toronto/multifamily/p036",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123370",
+      "source_folder": "Metro_Toronto/multifamily/p036",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p036/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "783 ANNETTE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "22 Feb 2017",
+      "price_text": "$800,783",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Nithcroft Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Karen Dalton",
+        "783 Annette St",
+        "Toronto, Ontario",
+        "M6S 2E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 874, Block A",
+      "Part Lot 2",
+      "As in Inst No CT-399869",
+      "",
+      "PIN: 21379-0080",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 012 560 03500",
+    "consideration_lines": [
+      "cash: $800,783     assumed/vtb debt: $0",
+      "",
+      "chargee: Buduchnist Credit Union Ltd",
+      "principal: $520,510   rate: 4.10% per annum.",
+      "registered: 02/22/2017   due: 02/22/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1233/RT123370/0305_104821.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1233/RT123370/0305_104917.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1233/RT123370/0305_104927.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1233/RT123370/0305_104941.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1770 / 6031",
+      "rt_id": "RT123370"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "783 ANNETTE ST",
+    "postcode": "M6S 2E4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/22/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "800783",
+    "cash": "800783",
+    "debt": "",
+    "note": "",
+    "pin": "21379-0080",
+    "rollno": "19 04 012 560 03500"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "783 ANNETTE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "22 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Nithcroft Holdings Inc"
+    ],
+    "price_text": "$800,783"
+  }
+}

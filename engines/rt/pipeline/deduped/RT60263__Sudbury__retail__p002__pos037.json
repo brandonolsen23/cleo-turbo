@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT60263",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60263",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "43 ELM ST",
+        "51 ELM ST",
+        "54 DURHAM ST",
+        "58 DURHAM ST"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "31 Jan 2008",
+      "price_text": "$5,000,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "ASV Enterprises Corp",
+        "Maybelle Holdings Corp     705-525-2200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Emil Pidutti",
+        "Lorne Investments Ltd",
+        "430 Westmount Ave, Unit D",
+        "Sudbury, Ontario",
+        "P3A 5Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Churchill Sudbury One Portfolio Inc     604-689-8500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brad Wise",
+        "650 West Georgia St",
+        "Ste 2100, PO Box 11536",
+        "Vancouver, BC",
+        "V6B 4N7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3-SA, Block A",
+      "Lots 137-142",
+      "Part Lots 102 & 103",
+      "As in Inst Nos:",
+      "S-116127 & 111657",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $9,630,000   rate: Prime plus 2.0% per annum",
+      "registered: 01/31/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "88 / 90",
+      "rt_id": "RT60263"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "43 ELM ST, 51 ELM ST, 54 DURHAM ST, 58 DURHAM ST",
+    "postcode": "P3A 1S4",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "01/31/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "43 ELM ST",
+      "51 ELM ST",
+      "54 DURHAM ST",
+      "58 DURHAM ST"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "31 Jan 2008",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "ASV Enterprises Corp",
+      "Maybelle Holdings Corp"
+    ],
+    "buyer_lines": [
+      "Churchill Sudbury One Portfolio Inc"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

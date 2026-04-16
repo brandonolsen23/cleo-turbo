@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT43540",
+  "source_folder": "Perth_County/retail/p003",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43540",
+      "source_folder": "Perth_County/retail/p003",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p003/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "30 QUEENSLAND RD"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "10 Aug 2005",
+      "price_text": "$4,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "893980 Ontario Inc     905-660-6771"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: George Di Pede",
+        "Di Pede Group",
+        "1111 Creditstone Rd",
+        "Concord, Ontario",
+        "L4K 4N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "3095887 Nova Scotia Ltd     902-755-4440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Crombie Properties",
+        "115 King St",
+        "Stellarton, Nova Scotia",
+        "B0K 1S0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 tenants 48,900 sf @ $97"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 513, Block 27",
+      "",
+      "3.93 acre"
+    ],
+    "arn_text": "31 11 030 060 61498",
+    "consideration_lines": [
+      "cash: $4,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "RE/MAX Bayfield: Percy Schneider, 519-565-2020"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "107 / 113",
+      "rt_id": "RT43540"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "30 QUEENSLAND RD",
+    "postcode": "N4Z 1H4",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "08/10/2005",
+    "desc": "Retail Plaza - 1 storey; 9 tenants 48,900 sf @ $97",
+    "bldg": "48,900 sf",
+    "acreage": "3.93",
+    "consid": "4750000",
+    "cash": "4750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "31 11 030 060 61498"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "30 QUEENSLAND RD"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "10 Aug 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 9 tenants 48,900 sf @ $97",
+    "seller_lines": [
+      "893980 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "3095887 Nova Scotia Ltd"
+    ],
+    "price_text": "$4,750,000"
+  }
+}

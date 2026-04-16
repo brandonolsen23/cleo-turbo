@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT123236",
+  "source_folder": "Cochrane/all/p080",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123236",
+      "source_folder": "Cochrane/all/p080",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 OAKLAND AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Feb 2017",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "JB Holdings Inc     613-822-6767"
+      ],
+      "trade_name": "Bassi Construction",
+      "contact_lines": [
+        "Attn: John Bassi",
+        "2575 Del Zotto Ave, Unit A",
+        "Ottawa, Ontario",
+        "K1T 3V6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 78373,",
+      "Lot 22, S Oakland Ave",
+      "",
+      "PIN: 04140-0169",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "06 14 052 601 13800",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123236/0624_090058.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123236/0624_090101.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123236/0624_090102.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123236/0624_090117.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3985 / 10920",
+      "rt_id": "RT123236"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "2 OAKLAND AVE",
+    "postcode": "K1S 2T2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/15/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "04140-0169",
+    "rollno": "06 14 052 601 13800"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "2 OAKLAND AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "JB Holdings Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

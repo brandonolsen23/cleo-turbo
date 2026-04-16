@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT100337",
+  "source_folder": "Metro_Toronto/retail/p036",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT100337",
+      "source_folder": "Metro_Toronto/retail/p036",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p036/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 ADVANCE RD"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "21 May 2014",
+      "price_text": "$1,237,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1319382 Ontario Corp     416-234-6868"
+      ],
+      "trade_name": "Lang Motorcar",
+      "contact_lines": [
+        "Pres: Richard Lang",
+        "11 Advance Rd",
+        "Toronto, Ontario",
+        "M8Z 2S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maxemum Property Management Ltd     905-274-3050"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pierre Seunik",
+        "1593 Glenburnie Rd",
+        "Mississauga, Ontario",
+        "L5G 3C9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 9875, Lot 81",
+      "",
+      "PIN: 07529-0011",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "19 19 016 810 01300",
+    "consideration_lines": [
+      "cash: $1,237,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Buduchnist Credit Union Ltd",
+      "principal: $675,000   rate: 4.79% per annum.",
+      "registered: 05/21/2014   due: 05/21/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1003/RT100337/0607_065910.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1003/RT100337/0607_065926.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1003/RT100337/0607_065952.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1003/RT100337/0607_070004.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1003/RT100337/0607_070018.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1774 / 4952",
+      "rt_id": "RT100337"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "11 ADVANCE RD",
+    "postcode": "M8Z 2S6",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "05/21/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "1237500",
+    "cash": "1237500",
+    "debt": "",
+    "note": "",
+    "pin": "07529-0011",
+    "rollno": "19 19 016 810 01300"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "11 ADVANCE RD"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "21 May 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1319382 Ontario Corp"
+    ],
+    "buyer_lines": [
+      "Maxemum Property Management Ltd"
+    ],
+    "price_text": "$1,237,500"
+  }
+}

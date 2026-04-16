@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT181521",
+  "source_folder": "Bruce/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181521",
+      "source_folder": "Bruce/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "792 BROADWAY ST"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "23 Nov 2023",
+      "price_text": "$6,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Skyline Retail Real Estate Holdings Inc     519-826-0439"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Douglas St, Ste 301",
+        "Guelph, Ontario",
+        "N1H 2S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Atlantic Bridge Investments (Canada) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sunil Mehan",
+        "10 Arjay Cres",
+        "Toronto, Ontario",
+        "M2L 1C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-6515, Parts 1-12",
+      "Plan M-33, Blocks B & K",
+      "Plan 3R-3263, Parts 2-7",
+      "Except:",
+      "Plan 3R-2969, Parts 1-6",
+      "Plan 3R-3527, Parts 1-6",
+      "",
+      "PIN: 33303-0794 +",
+      "",
+      "5.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,774,036     assumed/vtb debt: $3,325,964"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 44",
+      "rt_id": "RT181521"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "792 BROADWAY ST",
+    "postcode": "N2Z 2G1",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "11/23/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.23",
+    "consid": "6100000",
+    "cash": "2774036",
+    "debt": "3325964",
+    "note": "",
+    "pin": "33303-0794+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "792 BROADWAY ST"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "23 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Skyline Retail Real Estate Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Atlantic Bridge Investments (Canada) Inc"
+    ],
+    "price_text": "$6,100,000"
+  }
+}

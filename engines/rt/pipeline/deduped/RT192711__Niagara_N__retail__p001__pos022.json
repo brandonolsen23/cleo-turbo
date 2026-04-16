@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT192711",
+  "source_folder": "Niagara_N/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192711",
+      "source_folder": "Niagara_N/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "112 - 114 HARTZEL RD",
+        "1 DUNVEGAN RD"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "12 Jun 2025",
+      "price_text": "$3,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2782615 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2939 Portland Dr, Ste 200",
+        "Oakville Ontario",
+        "L6H 5S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "114 HR Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adnan Aliti",
+        "2939 Portland Dr, Unit 100",
+        "Oakville, Ontario",
+        "L6H 5S4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 97 - Grantham, Lot 259",
+      "Plan 30R-4176, Part 1",
+      "",
+      "PIN: 46350-0175 +",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "26 29 010 028 03100 +",
+    "consideration_lines": [
+      "cash: $3,175,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,553,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/12/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1927/RT192711/0621_104139.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1927/RT192711/0621_104145a.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1927/RT192711/0621_104145b.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1927/RT192711/0621_104219.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1927/RT192711/0621_104227.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 307",
+      "rt_id": "RT192711"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "112 - 114 HARTZEL RD, 1 DUNVEGAN RD",
+    "postcode": "L2P 1N5",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "06/12/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "3175000",
+    "cash": "3175000",
+    "debt": "",
+    "note": "",
+    "pin": "46350-0175+",
+    "rollno": "26 29 010 028 03100+"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "112 - 114 HARTZEL RD",
+      "1 DUNVEGAN RD"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "12 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2782615 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "114 HR Inc"
+    ],
+    "price_text": "$3,175,000"
+  }
+}

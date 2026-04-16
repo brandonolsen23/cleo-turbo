@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT190473",
+  "source_folder": "York_Region/retail/p003",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190473",
+      "source_folder": "York_Region/retail/p003",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "8750 JANE ST",
+        "UNITS 3 & 4"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "14 Jan 2025",
+      "price_text": "$821,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Mico Tile Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8750 Jane St, Unit 3",
+        "Vaughan, Ontario",
+        "L4K 2M9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001091901 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Domenico Commisso",
+        "8750 Jane St, Unit 3",
+        "Vaughan, Ontario",
+        "L4K 2M9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1235",
+      "Level 1, Units 19 & 20",
+      "",
+      "PIN: 29766-0019 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $121,000     assumed/vtb debt: $700,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "118 / 984",
+      "rt_id": "RT190473"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "8750 JANE ST, UNITS 3 & 4",
+    "postcode": "L4K 0E7",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/14/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "821000",
+    "cash": "121000",
+    "debt": "700000",
+    "note": "Related Parties",
+    "pin": "29766-0019+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "8750 JANE ST",
+      "UNITS 3 & 4"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "14 Jan 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Mico Tile Ltd"
+    ],
+    "buyer_lines": [
+      "1001091901 Ontario Ltd"
+    ],
+    "price_text": "$821,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT25141",
+  "source_folder": "Lambton/retail/p002",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25141",
+      "source_folder": "Lambton/retail/p002",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1202 & 1362 LAMBTON MALL RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "22 Mar 2002",
+      "price_text": "$6,225,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Canada Trust Co     416-361-5400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Don Patterson",
+        "161 Bay St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5J 2T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mall Road Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Graham Porter",
+        "17673 Shaws Creek Rd",
+        "Alton, Ontario",
+        "L0N 1A0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 25 units 69,000 sf @ $90",
+      "",
+      "Known as the Mall Road Centre."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-2348, Parts 1-3",
+      "Plan 25R-3804, Parts 2 & 12",
+      "Except:",
+      "Plan 25R-3892, Part 5",
+      "Plan 25R-5614, Part 1"
+    ],
+    "arn_text": "38 29 300 036 05700 +",
+    "consideration_lines": [
+      "cash: $6,255,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "100 / 106",
+      "rt_id": "RT25141"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1202 & 1362 LAMBTON MALL RD",
+    "postcode": "N7S 5A1",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "03/22/2002",
+    "desc": "Retail Plaza - 1 storey; 25 units 69,000 sf @ $90",
+    "bldg": "69,000 sf",
+    "acreage": "",
+    "consid": "6225000",
+    "cash": "6255000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "38 29 300 036 05700+"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1202 & 1362 LAMBTON MALL RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "22 Mar 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 25 units 69,000 sf @ $90",
+    "seller_lines": [
+      "The Canada Trust Co"
+    ],
+    "buyer_lines": [
+      "Mall Road Centre Inc"
+    ],
+    "price_text": "$6,225,000"
+  }
+}

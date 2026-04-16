@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT189366",
+  "source_folder": "Bruce/retail/p001",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189366",
+      "source_folder": "Bruce/retail/p001",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "307 - 309 MAIN ST"
+      ],
+      "city_region": "South Bruce Peninsula : Bruce",
+      "date_text": "03 Jan 2025",
+      "price_text": "$1,200,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "Giggles Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "462081 Concession 24",
+        "Georgian Bluffs, Ontario",
+        "N0H 2T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Burnt Coast Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Robinson",
+        "462111 Concession 24",
+        "Georgian Bluffs, Ontario",
+        "N0H 2T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 355, Lot 38",
+      "Plan 3R-8152, Part 2",
+      "",
+      "PIN: 33153-0136",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "41 02 540 011 16100",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,200,000",
+      "",
+      "chargee: Giggles Inc",
+      "principal: $1,200,000   rate: 0% until 10/3/2026, then 8.0% per annum. With monthly payments of $5,000 until 12/3/2025, and $10,000 thereafter.",
+      "registered: 01/03/2025   due: 10/03/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "14 / 44",
+      "rt_id": "RT189366"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "307 - 309 MAIN ST",
+    "postcode": "N0H 2G0",
+    "municipality": "South Bruce Peninsula",
+    "region": "Bruce",
+    "date": "01/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "1200000",
+    "cash": "",
+    "debt": "1200000",
+    "note": "Zero Cash",
+    "pin": "33153-0136",
+    "rollno": "41 02 540 011 16100"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "307 - 309 MAIN ST"
+    ],
+    "city_region": "South Bruce Peninsula : Bruce",
+    "date_text": "03 Jan 2025",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "Giggles Inc"
+    ],
+    "buyer_lines": [
+      "Burnt Coast Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20249",
+  "source_folder": "Niagara_N/retail/p006",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20249",
+      "source_folder": "Niagara_N/retail/p006",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p006/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "2017 NIAGARA STONE RD"
+      ],
+      "city_region": "Niagara-on-the-Lake : Niagara N",
+      "date_text": "03 Jan 2001",
+      "price_text": "$520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Luis Belmira     905-468-4302"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nita Reynolds",
+        "11 Navy Hall Circle",
+        "Niagara-on-the-Lake, Ontario",
+        "L0S 1J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "LGP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Leon Perel",
+        "2 Loyalist Ct",
+        "Niagara-on-the-Lake, Ontario",
+        "L0S 1J0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - converted barn",
+      "",
+      "Occupied by Red Barn Antiques"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-11, Lot 38",
+      "",
+      "E side 200 ft N of Hunter Rd",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "26 27 020 009 01700",
+    "consideration_lines": [
+      "cash: $520,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20249/photo.jpg"
+    },
+    "footer": {
+      "page_position": "292 / 307",
+      "rt_id": "RT20249"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "2017 NIAGARA STONE RD",
+    "postcode": "L0S 1J0",
+    "municipality": "Niagara-on-the-Lake",
+    "region": "Niagara N",
+    "date": "01/03/2001",
+    "desc": "Retail Bldg - converted barn",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "520000",
+    "cash": "520000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 27 020 009 01700"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "2017 NIAGARA STONE RD"
+    ],
+    "city_region": "Niagara-on-the-Lake : Niagara N",
+    "date_text": "03 Jan 2001",
+    "note": "",
+    "description": "Retail Bldg - converted barn",
+    "seller_lines": [
+      "Luis Belmira"
+    ],
+    "buyer_lines": [
+      "LGP Inc"
+    ],
+    "price_text": "$520,000"
+  }
+}

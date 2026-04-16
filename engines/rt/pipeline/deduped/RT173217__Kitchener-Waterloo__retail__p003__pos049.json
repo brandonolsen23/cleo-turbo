@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT173217",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173217",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1241 STRASBURG RD",
+        "UNIT 4"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "08 Nov 2022",
+      "price_text": "$1,461,975",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2479664 Ontario Inc     416-818-4000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o S and S Lawyers LLP",
+        "1780 Albion Rd, Unit 8",
+        "Toronto, Ontario",
+        "M9V 1C1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2862683 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arsalan Afzal",
+        "748 Robert Ferrie Dr",
+        "Kitchener, Ontario",
+        "N2R 0B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 746",
+      "Level 1, Unit 4",
+      "",
+      "PIN: 23746-0004"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,461,975     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,640,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/08/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_110934.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111000.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111040.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111116.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111151.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111222.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111235.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1732/RT173217/0416_111259.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "150 / 752",
+      "rt_id": "RT173217"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1241 STRASBURG RD, UNIT 4",
+    "postcode": "N2R 0S1",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/08/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1461975",
+    "cash": "1461975",
+    "debt": "",
+    "note": "",
+    "pin": "23746-0004",
+    "rollno": ""
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1241 STRASBURG RD",
+      "UNIT 4"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "08 Nov 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2479664 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2862683 Ontario Ltd"
+    ],
+    "price_text": "$1,461,975"
+  }
+}

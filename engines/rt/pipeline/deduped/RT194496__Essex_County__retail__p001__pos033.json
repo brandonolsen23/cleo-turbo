@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT194496",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194496",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 MAIN ST E"
+      ],
+      "city_region": "Kingsville : Essex County",
+      "date_text": "17 Sep 2025",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Bloor St W",
+        "PO Box 1417",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2761024 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Mastronardi",
+        "122 Harbourview Dr",
+        "Kingsville, Ontario",
+        "N9Y 2J2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 184-185 - Kingsville",
+      "Part Lot 1, N/S Main St E",
+      "As in Inst No R-365963",
+      "",
+      "PIN: 75174-0172",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "37 11 150 000 02300",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "34 / 460",
+      "rt_id": "RT194496"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "2 MAIN ST E",
+    "postcode": "N9Y 1A2",
+    "municipality": "Kingsville",
+    "region": "Essex County",
+    "date": "09/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "75174-0172",
+    "rollno": "37 11 150 000 02300"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "2 MAIN ST E"
+    ],
+    "city_region": "Kingsville : Essex County",
+    "date_text": "17 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "2761024 Ontario Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

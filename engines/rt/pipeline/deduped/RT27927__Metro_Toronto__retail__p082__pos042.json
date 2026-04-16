@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT27927",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27927",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "948 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Nov 2002",
+      "price_text": "$642,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Toronto-Dominion Bank     416-361-5400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Donald Patterson",
+        "161 Bay St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5J 2T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "656731 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Overs",
+        "580 Jarvis St",
+        "Toronto, Ontario",
+        "M4Y 2H9"
+      ]
+    },
+    "description_lines": [
+      "Bank Bldg - 2 storey; 5,290 sf @ $121"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 29",
+      "As in Inst No CA-232955",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 033 920 00200",
+    "consideration_lines": [
+      "cash: $642,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4093 / 4952",
+      "rt_id": "RT27927"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "948 ST CLAIR AVE W",
+    "postcode": "M6C 1C8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/28/2002",
+    "desc": "Bank Bldg - 2 storey; 5,290 sf @ $121",
+    "bldg": "5,290 sf",
+    "acreage": ".08",
+    "consid": "642000",
+    "cash": "642000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 033 920 00200"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "948 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Nov 2002",
+    "note": "",
+    "description": "Bank Bldg - 2 storey; 5,290 sf @ $121",
+    "seller_lines": [
+      "The Toronto-Dominion Bank"
+    ],
+    "buyer_lines": [
+      "656731 Ontario Ltd"
+    ],
+    "price_text": "$642,000"
+  }
+}

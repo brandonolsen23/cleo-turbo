@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT35509",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35509",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "513 SPEERS RD"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "12 May 2004",
+      "price_text": "$1,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Roczamb Holdings Ltd     905-845-3577"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Irene Budd",
+        "Budd's BMW",
+        "2400 South Service Rd",
+        "Oakville, Ontario",
+        "L6L 5M9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Swanley Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Malcolm Hayes",
+        "513 Speers Rd",
+        "Oakville, Ontario",
+        "L6K 2G4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg/Former Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - SDS, Part Lot 19",
+      "Plan 20R-2683, Part 1",
+      "Plan 20R-5141, Part 1",
+      "Together with Inst No 541770",
+      "",
+      "1.02 acre"
+    ],
+    "arn_text": "24 01 030 190 17811",
+    "consideration_lines": [
+      "cash: $1,125,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT355/RT35509/air1.jpg",
+        "/assets/files/RT3/RT355/RT35509/air2.jpg",
+        "/assets/files/RT3/RT355/RT35509/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT355/RT35509/photo.jpg"
+    },
+    "footer": {
+      "page_position": "450 / 613",
+      "rt_id": "RT35509"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "513 SPEERS RD",
+    "postcode": "L6K 2G4",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "05/12/2004",
+    "desc": "Retail Bldg/Former Car Dealership",
+    "bldg": "",
+    "acreage": "1.02",
+    "consid": "1125000",
+    "cash": "1125000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 030 190 17811"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "513 SPEERS RD"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "12 May 2004",
+    "note": "",
+    "description": "Retail Bldg/Former Car Dealership",
+    "seller_lines": [
+      "Roczamb Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Swanley Holdings Inc"
+    ],
+    "price_text": "$1,125,000"
+  }
+}

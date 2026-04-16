@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT42942",
+  "source_folder": "Brant/retail/p004",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42942",
+      "source_folder": "Brant/retail/p004",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "67 BRANT AVE"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "30 Jun 2005",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Abdul Malik     519-758-0104"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "40 Brant Ave",
+        "Brantford, Ontario",
+        "N3T 3G6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Thanh Holdings Inc     519-880-1369"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Thanh Nguyen",
+        "518 Buckingham Blvd",
+        "Waterloo, Ontario",
+        "N2T 2T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-2288, Parts 1 & 6",
+      "City of Brantford Plan (Sept 7, 1892)",
+      "Part Lot 6, E/S Brant Ave",
+      "As in Inst No A-34703 (Secondly)",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "29 06 020 002 19200",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT429/RT42942/photo.jpg"
+    },
+    "footer": {
+      "page_position": "170 / 195",
+      "rt_id": "RT42942"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "67 BRANT AVE",
+    "postcode": "N3T 3H2",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "06/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 020 002 19200"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "67 BRANT AVE"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "30 Jun 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Abdul Malik"
+    ],
+    "buyer_lines": [
+      "Thanh Holdings Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

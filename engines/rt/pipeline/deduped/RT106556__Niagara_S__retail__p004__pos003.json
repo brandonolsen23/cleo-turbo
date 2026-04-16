@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT106556",
+  "source_folder": "Niagara_S/retail/p004",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT106556",
+      "source_folder": "Niagara_S/retail/p004",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p004/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "2541 HWY 20"
+      ],
+      "city_region": "Thorold : Niagara S",
+      "date_text": "19 Nov 2014",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1923209 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Young",
+        "2541 Highway 20",
+        "PO Box 569",
+        "Fonthill, Ontario",
+        "L0S 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 158",
+      "Plan 59R-4907, Part 1",
+      "Except:",
+      "Plan 59R-13463, Part 6",
+      "",
+      "PIN: 64061-0408",
+      "",
+      "3.16 acre"
+    ],
+    "arn_text": "27 31 000 031 00600",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $300,000   rate: Prime plus 6.0% per annum.",
+      "registered: 11/19/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1065/RT106556/0516_150141.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1065/RT106556/0516_150158.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1065/RT106556/0516_150244.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1065/RT106556/0516_150247.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1065/RT106556/0516_150310.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1065/RT106556/0516_150318.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "154 / 324",
+      "rt_id": "RT106556"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "2541 HWY 20",
+    "postcode": "L3B 5N5",
+    "municipality": "Thorold",
+    "region": "Niagara S",
+    "date": "11/19/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.16",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "64061-0408",
+    "rollno": "27 31 000 031 00600"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "2541 HWY 20"
+    ],
+    "city_region": "Thorold : Niagara S",
+    "date_text": "19 Nov 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1923209 Ontario Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

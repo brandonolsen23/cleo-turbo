@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT194980",
+  "source_folder": "Cochrane/all/p004",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194980",
+      "source_folder": "Cochrane/all/p004",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p004/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "BLISS CRES"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "23 Oct 2025",
+      "price_text": "$3,388,500",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Urbandale Corp     613-731-6331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2193 Arch St",
+        "Ottawa, Ontario",
+        "K1G 2H5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Urbandale Construction Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Sachs",
+        "2193 Arch St",
+        "Ottawa, Ontario",
+        "K1G 2H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-1723, Block 69",
+      "",
+      "PIN: 04450-6900",
+      "",
+      "1.29 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,388,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "200 / 10920",
+      "rt_id": "RT194980"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "BLISS CRES",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/23/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.29",
+    "consid": "3388500",
+    "cash": "3388500",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04450-6900",
+    "rollno": ""
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "BLISS CRES"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "23 Oct 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Urbandale Corp"
+    ],
+    "buyer_lines": [
+      "Urbandale Construction Ltd"
+    ],
+    "price_text": "$3,388,500"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT187386",
+  "source_folder": "Metro_Toronto/retail/p010",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187386",
+      "source_folder": "Metro_Toronto/retail/p010",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p010/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "2591 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Jul 2024",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000556529 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Setareh Nasseri",
+        "22 McIntosh Ave",
+        "Toronto, Ontario",
+        "M8Y 3E2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-1441, Part Block C",
+      "As in Inst No CT-13155",
+      "",
+      "PIN: 21355-0366",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 013 710 04700",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,200,000   rate: Prime plus 6.0% per annum.",
+      "registered: 07/15/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187386/0929_091148.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187386/0929_091152.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187386/0929_091154.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187386/0929_091213.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187386/0929_091219.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "475 / 4952",
+      "rt_id": "RT187386"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "2591 DUNDAS ST W",
+    "postcode": "M6P 1X8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "21355-0366",
+    "rollno": "19 04 013 710 04700"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "2591 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Jul 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000556529 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

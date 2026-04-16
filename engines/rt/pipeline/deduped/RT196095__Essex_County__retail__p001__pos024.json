@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT196095",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196095",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "3900 TECUMSEH DR E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "06 Nov 2025",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Toronto-Dominion Bank"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Enterprise Real Estate",
+        "66 Wellington St W, 30th Flr",
+        "TD Tower",
+        "Toronto, Ontario",
+        "M5K 1A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Katzco Ltd     519-256-7130"
+      ],
+      "trade_name": "Katzman Estate Law",
+      "contact_lines": [
+        "Attn: Eric Katzman",
+        "2510 Ouellette Ave, Ste 204",
+        "Windsor, Ontario",
+        "N8X 1L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1960/RT196095/mi.pdf",
+    "site_lines": [
+      "Plan 1121 - Ford City,",
+      "Lots 41-43",
+      "",
+      "PIN: 01119-0229",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "37 39 010 380 10700",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,435,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/06/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "25 / 460",
+      "rt_id": "RT196095"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "3900 TECUMSEH DR E",
+    "postcode": "N8W 1J3",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "11/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "01119-0229",
+    "rollno": "37 39 010 380 10700"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "3900 TECUMSEH DR E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "06 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "The Toronto-Dominion Bank"
+    ],
+    "buyer_lines": [
+      "Katzco Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

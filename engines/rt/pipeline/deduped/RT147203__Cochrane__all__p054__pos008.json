@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT147203",
+  "source_folder": "Cochrane/all/p054",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT147203",
+      "source_folder": "Cochrane/all/p054",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p054/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3491 BLAIS RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "04 Nov 2019",
+      "price_text": "$3,563,640",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "2103226 Ontario Inc     613-739-7111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Steve Grandmont",
+        "2280 St Laurent Blvd, Ste 201",
+        "Ottawa, Ontario",
+        "K1G 4K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Richcraft Homes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steve Grandmont",
+        "2280 St Laurent Blvd, Ste 201",
+        "Ottawa, Ontario",
+        "K1G 4K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - RF, Part Lot 20",
+      "Plan 5R-14179, Parts 2-3",
+      "Except:",
+      "Plan 4R-30466, Part 6",
+      "",
+      "PIN: 04345-0863",
+      "",
+      "98.77 acre"
+    ],
+    "arn_text": "06 14 600 075 22901",
+    "consideration_lines": [
+      "cash: $3,563,640     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT14/RT1472/RT147203/air1.jpg",
+        "/assets/files/RT14/RT1472/RT147203/air2.jpg",
+        "/assets/files/RT14/RT1472/RT147203/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2659 / 10920",
+      "rt_id": "RT147203"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3491 BLAIS RD",
+    "postcode": "K1G 3N4",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "11/04/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "98.77",
+    "consid": "3563640",
+    "cash": "3563640",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04345-0863",
+    "rollno": "06 14 600 075 22901"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3491 BLAIS RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "04 Nov 2019",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "2103226 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Richcraft Homes Ltd"
+    ],
+    "price_text": "$3,563,640"
+  }
+}

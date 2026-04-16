@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT26177",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26177",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "448 - 452 WILSON AVE"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "05 Jun 2002",
+      "price_text": "$655,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1271755 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anna-Marie Buttinelli",
+        "356 Pellatt Ave",
+        "Toronto, Ontario",
+        "M9N 3P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1417037 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Wojdat",
+        "21 Roycrest Ave",
+        "Toronto, Ontario",
+        "M2N 1R1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - WYS, Part Lot 11",
+      "As in Inst No TR-18228"
+    ],
+    "arn_text": "19 08 051 270 08200",
+    "consideration_lines": [
+      "cash: $197,561     assumed/vtb debt: $457,439"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4209 / 4952",
+      "rt_id": "RT26177"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "448 - 452 WILSON AVE",
+    "postcode": "M3H 1T6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "06/05/2002",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "655000",
+    "cash": "197561",
+    "debt": "457439",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 051 270 08200"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "448 - 452 WILSON AVE"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "05 Jun 2002",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1271755 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1417037 Ontario Ltd"
+    ],
+    "price_text": "$655,000"
+  }
+}

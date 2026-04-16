@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT142202",
+  "source_folder": "Brant/retail/p002",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT142202",
+      "source_folder": "Brant/retail/p002",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "794 - 800 COLBORNE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "01 Apr 2019",
+      "price_text": "$1,050,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "829133 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Philip Smith",
+        "44 Robinson Ave",
+        "Brantfrod, Ontario",
+        "N3S 6X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RBPH Ontario Inc     905-877-2711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Hanna",
+        "59 Mountain Ridge Rd",
+        "Brampton, Ontario",
+        "L6Y 0T2"
+      ]
+    },
+    "description_lines": [
+      "PharmaSave Store: 1 storey; 5,200 sf @ $202",
+      "",
+      "The purchaser also bought the business and will operate the store.",
+      "",
+      "35 surface parking spaces",
+      "",
+      "Excess land is available for expansion."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 39,",
+      "Part Lots 6 & 7, N/S Hamilton Rd",
+      "As in Inst Nos:",
+      "A-363930, A-372811 & A-363931",
+      "",
+      "PIN: 32113-0160 +",
+      "",
+      "N side Colborne St, E of James Ave",
+      "",
+      "1.26 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CWB Maxium Financial Inc",
+      "principal: $1,050,000   rate: 5.90% per annum.",
+      "registered: 04/01/2019   due: 04/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142202/0714_082603.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142202/0714_082611.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142202/0714_082613.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142202/0714_082642.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1422/RT142202/0714_082652.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "73 / 195",
+      "rt_id": "RT142202"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "794 - 800 COLBORNE ST",
+    "postcode": "N3S 3S4",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "04/01/2019",
+    "desc": "PharmaSave Store: 1 storey; 5,200 sf @ $202",
+    "bldg": "5,200 sf",
+    "acreage": "1.26",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "32113-0160+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "794 - 800 COLBORNE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "01 Apr 2019",
+    "note": "Purchased Business",
+    "description": "PharmaSave Store: 1 storey; 5,200 sf @ $202",
+    "seller_lines": [
+      "829133 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RBPH Ontario Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT195926",
+  "source_folder": "York_Region/industrial/p001",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195926",
+      "source_folder": "York_Region/industrial/p001",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p001/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "75 FERNSTAFF CT",
+        "UNIT 1"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "02 Dec 2025",
+      "price_text": "$1,229,600",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "75 Fernstaff Court Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "20 Eglinton Ave W, Ste 1400",
+        "Toronto, Ontario",
+        "M4R 1K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "DJS Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Danny Sarra",
+        "75 Fernstaff Ct, Ste 1",
+        "Vaughan, Ontario",
+        "L4K 3R3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1584",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 30116-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,229,600     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $729,600   rate: Prime plus 5.0% per annum.",
+      "registered: 12/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "46 / 2269",
+      "rt_id": "RT195926"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "75 FERNSTAFF CT, UNIT 1",
+    "postcode": "L4K 3R3",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "12/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1229600",
+    "cash": "1229600",
+    "debt": "",
+    "note": "",
+    "pin": "30116-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "75 FERNSTAFF CT",
+      "UNIT 1"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "02 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "75 Fernstaff Court Inc"
+    ],
+    "buyer_lines": [
+      "DJS Holdings Ltd"
+    ],
+    "price_text": "$1,229,600"
+  }
+}

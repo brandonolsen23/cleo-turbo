@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT196012",
+  "source_folder": "Russell_Township/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196012",
+      "source_folder": "Russell_Township/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Russell_Township/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "935 NOTRE DAME ST"
+      ],
+      "city_region": "Russell : Russell Township",
+      "date_text": "12 Dec 2025",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "935 Notre Dame Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "120 Craig",
+        "Russell, Ontario",
+        "K4R 1A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001335893 Ontario Imc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adam McCosham",
+        "344 Lake St",
+        "St Catharines, Ontario",
+        "L2N 4H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7 - Russell, Part Lot 8",
+      "Plan 50R-583, Parts 1 & 2",
+      "Plan 50R-6469, Part 1",
+      "Plan 50R-10616, Part 2",
+      "Except:",
+      "Plan 50R-9376, Part 1",
+      "Plan 50R-9272, Parts 1 & 6",
+      "",
+      "PIN: 69071-0076",
+      "",
+      "3.24 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 12/12/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 33",
+      "rt_id": "RT196012"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "935 NOTRE DAME ST",
+    "postcode": "K0A 1W1",
+    "municipality": "Russell",
+    "region": "Russell Township",
+    "date": "12/12/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.24",
+    "consid": "2050000",
+    "cash": "2050000",
+    "debt": "",
+    "note": "",
+    "pin": "69071-0076",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "935 NOTRE DAME ST"
+    ],
+    "city_region": "Russell : Russell Township",
+    "date_text": "12 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "935 Notre Dame Inc"
+    ],
+    "buyer_lines": [
+      "1001335893 Ontario Imc"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

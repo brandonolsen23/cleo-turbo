@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT196730",
+  "source_folder": "Stormont/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196730",
+      "source_folder": "Stormont/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1100 MARLEAU AVE"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "23 Jan 2026",
+      "price_text": "$2,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hickory Glen Real Estate Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Roy Perkins",
+        "18926 Glen Rd",
+        "Williamstown, Ontario",
+        "K0C 2J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "UNIAG Cooperative"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sylvain Boyer",
+        "4 Rang Saint-Andre",
+        "Napierville, Quebec",
+        "J0J 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 236, Part Block H",
+      "Plan 52R-1384, Part 1",
+      "Plan 52R-2152, Part 3",
+      "Plan 52R-2977, Part 1",
+      "As in Inst Nos:",
+      "S-48368 & S-106707",
+      "",
+      "PIN: 60145-0055",
+      "",
+      "3.42 acre"
+    ],
+    "arn_text": "04 02 010 009 20200",
+    "consideration_lines": [
+      "cash: $2,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1967/RT196730/air1.jpg",
+        "/assets/files/RT19/RT1967/RT196730/air2.jpg",
+        "/assets/files/RT19/RT1967/RT196730/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 29",
+      "rt_id": "RT196730"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1100 MARLEAU AVE",
+    "postcode": "K6H 2W8",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "01/23/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.42",
+    "consid": "2550000",
+    "cash": "2550000",
+    "debt": "",
+    "note": "",
+    "pin": "60145-0055",
+    "rollno": "04 02 010 009 20200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1100 MARLEAU AVE"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "23 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Hickory Glen Real Estate Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "UNIAG Cooperative"
+    ],
+    "price_text": "$2,550,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT48886",
+  "source_folder": "Niagara_S/retail/p005",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48886",
+      "source_folder": "Niagara_S/retail/p005",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p005/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "572 NIAGARA ST"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "24 May 2006",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1695875 Ontario Ltd     905-771-8884"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Arkadi Neiman",
+        "11 Moodie Dr",
+        "Richmond Hill, Ontario",
+        "L4C 8C9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-5820, Part 1"
+    ],
+    "arn_text": "27 19 010 004 06900",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Co of Canada",
+      "principal: $1,800,000   rate: 5.774% per annum",
+      "registered: 05/24/2006   due: 06/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT488/RT48886/0805_143128.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT488/RT48886/0805_143129.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT488/RT48886/0805_143156.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT488/RT48886/0805_143204.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "248 / 324",
+      "rt_id": "RT48886"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "572 NIAGARA ST",
+    "postcode": "L3C 6T8",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "05/24/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 19 010 004 06900"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "572 NIAGARA ST"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "24 May 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1695875 Ontario Ltd"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT166933",
+  "source_folder": "Lambton/retail/p001",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT166933",
+      "source_folder": "Lambton/retail/p001",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "1330 EXMOUTH ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "15 Feb 2022",
+      "price_text": "$7,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "9310924 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "925 Bloor St E, 15th Flr",
+        "Toronto, Ontario",
+        "M4W 1E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1330 Exmouth Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vitali Tarski",
+        "67 Alexdon Rd, Ste A",
+        "North York, Ontario",
+        "M3J 2B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 17",
+      "Plan 25R-8251, Parts 2, 7 & 8",
+      "",
+      "PIN: 43487-0026",
+      "",
+      "NW corner Exmouth St and Lambton Mall Rd",
+      "",
+      "5.91 acre"
+    ],
+    "arn_text": "38 29 300 036 01700",
+    "consideration_lines": [
+      "cash: $7,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Avison Young: Cam Lewis, 416-673-4021"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "44 / 106",
+      "rt_id": "RT166933"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "1330 EXMOUTH ST",
+    "postcode": "N7S 3X9",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "02/15/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.91",
+    "consid": "7700000",
+    "cash": "7700000",
+    "debt": "",
+    "note": "",
+    "pin": "43487-0026",
+    "rollno": "38 29 300 036 01700"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "1330 EXMOUTH ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "15 Feb 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "9310924 Canada Inc"
+    ],
+    "buyer_lines": [
+      "1330 Exmouth Inc"
+    ],
+    "price_text": "$7,700,000"
+  }
+}

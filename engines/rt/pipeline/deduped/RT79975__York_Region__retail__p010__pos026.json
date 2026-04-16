@@ -1,0 +1,133 @@
+{
+  "rt_id": "RT79975",
+  "source_folder": "York_Region/retail/p010",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT79975",
+      "source_folder": "York_Region/retail/p010",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "9140 LESLIE ST",
+        "UNIT 110"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "29 Jul 2011",
+      "price_text": "$912,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2182866 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Olga Moskovchuk",
+        "18 Spring Garden Ave, Ste 3802",
+        "Toronto, Ontario",
+        "M2N 7M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "983746 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ben Seto",
+        "9140 Leslie St, Ste 110",
+        "Richmond Hill, Ontario",
+        "L4B 0A9"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 3,046 sf @ $300",
+      "",
+      "Vacant - will be occupied by the purchaser",
+      "",
+      "Part of the ground floor of a 4 storey 76,000 sf retail/office bldg",
+      "",
+      "Last transferred in Sep 2008 for $710,182"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1126",
+      "Level 1, Unit 10",
+      "",
+      "PIN: 29657-0010"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $912,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $684,000   rate: Prime plus 7.25% per annum",
+      "registered: 07/29/2011   due: on demand"
+    ],
+    "broker_lines": [
+      "Century 21 Atria Realty: Vic Lam & Peter Lam, 905-883-1988"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT799/RT79975/0806_130137.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT799/RT79975/0806_130200.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT799/RT79975/0806_130326.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT799/RT79975/0806_130409.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT799/RT79975/air1.jpg",
+        "/assets/files/RT7/RT799/RT79975/air2.jpg",
+        "/assets/files/RT7/RT799/RT79975/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "477 / 984",
+      "rt_id": "RT79975"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "9140 LESLIE ST, UNIT 110",
+    "postcode": "L4B 0A9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "07/29/2011",
+    "desc": "Retail Condo - 3,046 sf @ $300",
+    "bldg": "3,046 sf",
+    "acreage": "",
+    "consid": "912000",
+    "cash": "912000",
+    "debt": "",
+    "note": "",
+    "pin": "29657-0010",
+    "rollno": ""
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "9140 LESLIE ST",
+      "UNIT 110"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "29 Jul 2011",
+    "note": "",
+    "description": "Retail Condo - 3,046 sf @ $300",
+    "seller_lines": [
+      "2182866 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "983746 Ontario Inc"
+    ],
+    "price_text": "$912,000"
+  }
+}

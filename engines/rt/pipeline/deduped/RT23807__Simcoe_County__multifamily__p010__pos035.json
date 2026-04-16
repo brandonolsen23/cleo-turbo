@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT23807",
+  "source_folder": "Simcoe_County/multifamily/p010",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23807",
+      "source_folder": "Simcoe_County/multifamily/p010",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/multifamily/p010/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "340 BLAKE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "28 Dec 2001",
+      "price_text": "$7,500,000",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Frank Laurie, in Trust     416-483-8018"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Vector Management Ltd",
+        "25 Imperial St, Ste 500",
+        "Toronto, Ontario",
+        "M5P 1B9"
+      ]
+    },
+    "description_lines": [
+      "Barrie Manor Retirement Home: 2 storey; 110 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-9762, Part 1",
+      "",
+      "NE corner at Johnson St",
+      "",
+      "1.35 acre"
+    ],
+    "arn_text": "43 42 011 002 00600",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT238/RT23807/photo.jpg"
+    },
+    "footer": {
+      "page_position": "486 / 530",
+      "rt_id": "RT23807"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "340 BLAKE ST",
+    "postcode": "L4M 1L3",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "12/28/2001",
+    "desc": "Barrie Manor Retirement Home: 2 storey; 110 units",
+    "bldg": "",
+    "acreage": "1.35",
+    "consid": "7500000",
+    "cash": "",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "43 42 011 002 00600"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "340 BLAKE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "28 Dec 2001",
+    "note": "Foreclosure",
+    "description": "Barrie Manor Retirement Home: 2 storey; 110 units",
+    "seller_lines": [
+      "Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "Frank Laurie, in Trust"
+    ],
+    "price_text": "$7,500,000"
+  }
+}

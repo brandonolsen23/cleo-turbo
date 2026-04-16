@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT190875",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190875",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "860 LAKESHORE DR"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "11 Mar 2025",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000836391 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Gore",
+        "167 Bain Dr",
+        "North Bay, Ontario",
+        "P1C 1M4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 14 - West Ferris, Part Lot 39",
+      "Plan 36R-4174, Part 3",
+      "As in Inst Nos:",
+      "LT-67068 & LT-77029",
+      "Except:",
+      "Plan 36R-7728, Part 1",
+      "",
+      "PIN: 49178-0199 +",
+      "",
+      "2.84 acre"
+    ],
+    "arn_text": "48 44 040 060 15800",
+    "consideration_lines": [
+      "cash: $770,000     assumed/vtb debt: $330,000",
+      "",
+      "chargee: Caisse Populaire Alliance Ltee",
+      "principal: $770,000   rate: Prime plus 20.0% per annum.",
+      "registered: 03/11/2025   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $3,300,000   rate: 5.0% per annum.",
+      "registered: 03/11/2025   due: 04/01/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 46",
+      "rt_id": "RT190875"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "860 LAKESHORE DR",
+    "postcode": "P1A 2G8",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "03/11/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.84",
+    "consid": "1100000",
+    "cash": "770000",
+    "debt": "330000",
+    "note": "",
+    "pin": "49178-0199+",
+    "rollno": "48 44 040 060 15800"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "860 LAKESHORE DR"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "11 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000836391 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT186850",
+  "source_folder": "Peel_Region/retail/p004",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186850",
+      "source_folder": "Peel_Region/retail/p004",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p004/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "2275 BRITANNIA RD W",
+        "UNIT 5"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "21 Aug 2024",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2517791 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1143 Bancroft Dr",
+        "Mississauga, Ontario",
+        "L5V 1B7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000798299 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Neeraj Mishra",
+        "2275 Britannia Rd W, Unit 5",
+        "Mississauga, Ontario",
+        "L5M 2G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1010",
+      "Level 1, Unit 5",
+      "",
+      "PIN: 20010-0005"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $872,500   rate: Prime plus 5.0% per annum.",
+      "registered: 08/21/2024   due: on demand",
+      "",
+      "chargee: 1000979115 Ontario Inc",
+      "principal: $235,000   rate: 14.0% per annum.",
+      "registered: 08/22/2024   due: 08/19/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114006.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114008.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114109.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114142.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114143.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114202.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114204.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114208.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186850/0831_114222.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "161 / 1087",
+      "rt_id": "RT186850"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "2275 BRITANNIA RD W, UNIT 5",
+    "postcode": "L5M 2G6",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "08/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "20010-0005",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "2275 BRITANNIA RD W",
+      "UNIT 5"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "21 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2517791 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000798299 Ontario Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

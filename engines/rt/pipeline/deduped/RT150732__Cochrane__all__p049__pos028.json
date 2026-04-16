@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT150732",
+  "source_folder": "Cochrane/all/p049",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150732",
+      "source_folder": "Cochrane/all/p049",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p049/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "877 HUNTMAR DR"
+      ],
+      "city_region": "W. Carleton : Ottawa-Carleton",
+      "date_text": "02 Apr 2020",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Charlamara Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kirk Hoppner",
+        "c/o 2962 Carp Rd",
+        "Carp, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 8",
+      "As in Inst No HU-11382",
+      "",
+      "PIN: 04537-0142",
+      "",
+      "99.35 acre"
+    ],
+    "arn_text": "06 42 030 810 02600",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT15/RT1507/RT150732/air1.jpg",
+        "/assets/files/RT15/RT1507/RT150732/air2.jpg",
+        "/assets/files/RT15/RT1507/RT150732/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2429 / 10920",
+      "rt_id": "RT150732"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "877 HUNTMAR DR",
+    "postcode": "K0A 1L0",
+    "municipality": "W. Carleton",
+    "region": "Ottawa-Carleton",
+    "date": "04/02/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "99.35",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "04537-0142",
+    "rollno": "06 42 030 810 02600"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "877 HUNTMAR DR"
+    ],
+    "city_region": "W. Carleton : Ottawa-Carleton",
+    "date_text": "02 Apr 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Charlamara Holdings Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

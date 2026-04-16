@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT51115",
+  "source_folder": "Frontenac_County/retail/p004",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51115",
+      "source_folder": "Frontenac_County/retail/p004",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p004/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "1530 BATH RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "30 Jun 2006",
+      "price_text": "$1,008,150",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bruce Mitchell     613-523-1114"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3432 Paul Anka Dr",
+        "Ottawa, Ontario",
+        "K1V 9K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "John Sotiriadis, in Trust"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1530 Bath Rd",
+        "Kingston, Ontario",
+        "K7L 4X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lots 11 & 12",
+      "Plan 13R-4063, Parts 1 & 2",
+      "",
+      "1.96 acre"
+    ],
+    "arn_text": "10 11 080 180 02050",
+    "consideration_lines": [
+      "cash: $1,008,150     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT511/RT51115/0930_170649.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT511/RT51115/0930_170736.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT511/RT51115/0930_170737.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "184 / 236",
+      "rt_id": "RT51115"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "1530 BATH RD",
+    "postcode": "K7M 4X6",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "06/30/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.96",
+    "consid": "1008150",
+    "cash": "1008150",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 080 180 02050"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "1530 BATH RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "30 Jun 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bruce Mitchell"
+    ],
+    "buyer_lines": [
+      "John Sotiriadis, in Trust"
+    ],
+    "price_text": "$1,008,150"
+  }
+}

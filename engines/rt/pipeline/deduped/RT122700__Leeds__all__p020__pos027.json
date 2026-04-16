@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT122700",
+  "source_folder": "Leeds/all/p020",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT122700",
+      "source_folder": "Leeds/all/p020",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "406 OIL HERITAGE RD",
+        "450 OIL HERITAGE RD",
+        "4509 PETROLIA LINE"
+      ],
+      "city_region": "Petrolia : Lambton",
+      "date_text": "23 Jan 2017",
+      "price_text": "$980,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2471758 Ontario Inc     905-461-1386"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mandeep Gill",
+        "3151 Mallbridge Cres",
+        "Mississauga, Ontario",
+        "L4T 2C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2553050 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wei Zhang",
+        "4509 Petrolia Line",
+        "Petrolia, Ontario",
+        "N0N 1R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 16",
+      "Plan 25R-2474, Part 1",
+      "Plan 25R-3898, Part 4",
+      "As in Inst No L-934769",
+      "Except:",
+      "Plan 25R-874, Part 1",
+      "Plan PP-1318, Part 1",
+      "",
+      "PIN: 43339-0053 +",
+      "",
+      "1.88 acre"
+    ],
+    "arn_text": "38 19 000 060 14600 +",
+    "consideration_lines": [
+      "cash: $980,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "978 / 1916",
+      "rt_id": "RT122700"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "406 OIL HERITAGE RD, 450 OIL HERITAGE RD, 4509 PETROLIA LINE",
+    "postcode": "N0N 1R0",
+    "municipality": "Petrolia",
+    "region": "Lambton",
+    "date": "01/23/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.88",
+    "consid": "980000",
+    "cash": "980000",
+    "debt": "",
+    "note": "",
+    "pin": "43339-0053+",
+    "rollno": "38 19 000 060 14600+"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "406 OIL HERITAGE RD",
+      "450 OIL HERITAGE RD",
+      "4509 PETROLIA LINE"
+    ],
+    "city_region": "Petrolia : Lambton",
+    "date_text": "23 Jan 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2471758 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2553050 Ontario Inc"
+    ],
+    "price_text": "$980,000"
+  }
+}

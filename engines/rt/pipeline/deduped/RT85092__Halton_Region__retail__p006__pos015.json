@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT85092",
+  "source_folder": "Halton_Region/retail/p006",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT85092",
+      "source_folder": "Halton_Region/retail/p006",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p006/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "527 BRANT ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "30 Apr 2012",
+      "price_text": "$1,284,184",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Wilmslow Properties Corp     905-842-9275"
+      ],
+      "trade_name": "Wilmslow Properties Corp",
+      "contact_lines": [
+        "Attn: Kartik Ganatra",
+        "125 Lakeshore Rd E, Ste 300",
+        "Oakville, Ontario",
+        "L6J 1H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lakeshore Streetfront Retail",
+        "Properties GP Inc     905-271-5093"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John McFadden",
+        "c/o Bentall Kennedy (Canada) LP",
+        "65 Port St E, Ste 110",
+        "Mississauga, Ontario",
+        "L5G 4V3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,168 sf @ $405",
+      "",
+      "Fully occupied by one tenant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 55, Part Lot 105",
+      "As in Inst No HR-174629",
+      "",
+      "PIN: 07071-0058",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "24 02 060 606 00300",
+    "consideration_lines": [
+      "cash: $1,284,184     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Cushman & Wakefield Ltd: Philip Traikos, Arlin Markowitz & Megan Sauro, 416-862-0611"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT850/RT85092/0512_082628.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT850/RT85092/0512_082656.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT850/RT85092/0512_082827.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT850/RT85092/0512_082843.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT850/RT85092/air1.jpg",
+        "/assets/files/RT8/RT850/RT85092/air2.jpg",
+        "/assets/files/RT8/RT850/RT85092/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "266 / 613",
+      "rt_id": "RT85092"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "527 BRANT ST",
+    "postcode": "L7R 2G6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/30/2012",
+    "desc": "Retail Bldg - 1 storey; 3,168 sf @ $405",
+    "bldg": "3,168 sf",
+    "acreage": ".2",
+    "consid": "1284184",
+    "cash": "1284184",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "07071-0058",
+    "rollno": "24 02 060 606 00300"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "527 BRANT ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "30 Apr 2012",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 3,168 sf @ $405",
+    "seller_lines": [
+      "Wilmslow Properties Corp"
+    ],
+    "buyer_lines": [
+      "Lakeshore Streetfront Retail",
+      "Properties GP Inc"
+    ],
+    "price_text": "$1,284,184"
+  }
+}

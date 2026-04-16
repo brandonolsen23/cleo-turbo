@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT123204",
+  "source_folder": "Cochrane/all/p080",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123204",
+      "source_folder": "Cochrane/all/p080",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "1889 CARLING AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "17 Feb 2017",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "10058840 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mesfin Bahta",
+        "192 Annapolis Circle",
+        "Ottawa, Ontario",
+        "K1V 1Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-7019, Parts 5-8",
+      "",
+      "PIN: 03979-0015",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "06 14 094 901 85400",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $825,000   rate: 3.385% per annum.",
+      "registered: 02/17/2017   due: 03/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123204/0624_115857.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123204/0624_115912.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123204/0624_115917.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123204/0624_115958.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123204/0624_120008.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123204/0624_120046.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3981 / 10920",
+      "rt_id": "RT123204"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "1889 CARLING AVE",
+    "postcode": "K2A 1E6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/17/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "03979-0015",
+    "rollno": "06 14 094 901 85400"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "1889 CARLING AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "17 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "10058840 Canada Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

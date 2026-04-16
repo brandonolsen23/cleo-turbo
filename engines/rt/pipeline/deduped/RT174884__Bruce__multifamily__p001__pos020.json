@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT174884",
+  "source_folder": "Bruce/multifamily/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174884",
+      "source_folder": "Bruce/multifamily/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/multifamily/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "9 MILL ST"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "20 Jan 2023",
+      "price_text": "$1,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "One Equity Corporation"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "282 Victoria St",
+        "Tiverton, Ontario",
+        "N0G 2T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "12909944 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alice Liu",
+        "9 Mill St",
+        "Tiverton, Ontario",
+        "N0G 2T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 60, Subdivision of Part Lot 60",
+      "Lot 4 & Part Lot 3",
+      "As in Inst No R-246889",
+      "",
+      "PIN: 33293-0446",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "41 08 260 006 06200",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $1,025,000",
+      "",
+      "chargee: One Equity Corporation",
+      "principal: $866,920   rate: 8.0% per annum. Increasing to 12.0% per annum if chargor fails to paydown $75,000 by 12/1/2023. Chargee will waive $150,000 if mortgage is paid by 12/1/2024. Chargee may increase rate to 14.0% per annum if in default.",
+      "registered: 01/20/2023   due: 01/20/2025",
+      "",
+      "chargee: 1000406698 Ontario Inc",
+      "principal: $825,000   rate: 12.0% per annum.",
+      "registered: 01/20/2023   due: 01/20/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1748/RT174884/air1.jpg",
+        "/assets/files/RT17/RT1748/RT174884/air2.jpg",
+        "/assets/files/RT17/RT1748/RT174884/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 37",
+      "rt_id": "RT174884"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "9 MILL ST",
+    "postcode": "N0G 2T0",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "01/20/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "1675000",
+    "cash": "650000",
+    "debt": "1025000",
+    "note": "",
+    "pin": "33293-0446",
+    "rollno": "41 08 260 006 06200"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "9 MILL ST"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "20 Jan 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "One Equity Corporation"
+    ],
+    "buyer_lines": [
+      "12909944 Canada Inc"
+    ],
+    "price_text": "$1,675,000"
+  }
+}

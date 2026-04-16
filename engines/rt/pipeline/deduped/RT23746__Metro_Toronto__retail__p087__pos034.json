@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT23746",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23746",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "372 DANFORTH AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Dec 2001",
+      "price_text": "$635,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Helen Wong"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1 Reidmount Ave, Ste 903",
+        "Scarborough, Ontario",
+        "M1S 4V3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2006821 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jennifer Hall",
+        "151 Eastbourne Ave",
+        "Toronto, Ontario",
+        "M5P 2G5"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 3 storey; apartments over store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-126, Lot 34",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "19 04 084 570 08940",
+    "consideration_lines": [
+      "cash: $635,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT237/RT23746/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4335 / 4952",
+      "rt_id": "RT23746"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "372 DANFORTH AVE",
+    "postcode": "M4K 1N8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/03/2001",
+    "desc": "Retail/Res Bldg - 3 storey; apartments over store",
+    "bldg": "",
+    "acreage": ".39",
+    "consid": "635000",
+    "cash": "635000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 084 570 08940"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "372 DANFORTH AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Dec 2001",
+    "note": "",
+    "description": "Retail/Res Bldg - 3 storey; apartments over store",
+    "seller_lines": [
+      "Helen Wong"
+    ],
+    "buyer_lines": [
+      "2006821 Ontario Ltd"
+    ],
+    "price_text": "$635,000"
+  }
+}

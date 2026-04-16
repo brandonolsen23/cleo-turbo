@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT111791",
+  "source_folder": "Cochrane/all/p092",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT111791",
+      "source_folder": "Cochrane/all/p092",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p092/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 CLEOPATRA DR"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "01 Oct 2015",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "E George Brown Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kenneth Brown",
+        "38 Cleopatra Dr",
+        "Ottawa, Ontario",
+        "K2G 0B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2481056 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Tierney",
+        "44 Cleopatra Dr",
+        "Ottawa, Ontario",
+        "K2G 0B3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 456868, Part Lot 30",
+      "",
+      "PIN: 04629-0927",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "06 12 000 615 08600",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $700,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/01/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111791/0109_151410.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111791/0109_151421.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111791/0109_151504.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111791/0109_151506.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4552 / 10920",
+      "rt_id": "RT111791"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "44 CLEOPATRA DR",
+    "postcode": "K2G 0B3",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "10/01/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "04629-0927",
+    "rollno": "06 12 000 615 08600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "44 CLEOPATRA DR"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "01 Oct 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "E George Brown Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "2481056 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

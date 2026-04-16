@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT144067",
+  "source_folder": "Kitchener-Waterloo/retail/p005",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT144067",
+      "source_folder": "Kitchener-Waterloo/retail/p005",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p005/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 & 22 DUKE ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "24 Jun 2019",
+      "price_text": "$2,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Duke Food Block Inc     416-445-1800"
+      ],
+      "trade_name": "Reisgeorge Management Ltd",
+      "contact_lines": [
+        "ASO: Larry Reisman",
+        "120 Eglinton Ave E, Ste 500",
+        "Toronto, Ontario",
+        "M4P 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "IN8 (18 Duke) Developments Inc     519-954-8868"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Darryl Firsten",
+        "44 Peter St",
+        "St Clements, Ontario",
+        "N0B 2M0"
+      ]
+    },
+    "description_lines": [
+      "Last transferred in December 2018 for $1,625,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 401, Lots 11 & 12",
+      "E/S Queen St & S/S Weber St",
+      "As in Inst No 1063349",
+      "",
+      "PIN: 22316-0090",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "30 12 020 004 24100",
+    "consideration_lines": [
+      "cash: $2,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,500,000",
+      "registered: 06/24/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144067/0809_141021.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144067/0809_141138.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144067/0809_141315.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144067/0809_141342.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144067/0809_141353.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "232 / 752",
+      "rt_id": "RT144067"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "2 & 22 DUKE ST",
+    "postcode": "N2H 1A3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "06/24/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "2200000",
+    "cash": "2200000",
+    "debt": "",
+    "note": "",
+    "pin": "22316-0090",
+    "rollno": "30 12 020 004 24100"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "2 & 22 DUKE ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "24 Jun 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Duke Food Block Inc"
+    ],
+    "buyer_lines": [
+      "IN8 (18 Duke) Developments Inc"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

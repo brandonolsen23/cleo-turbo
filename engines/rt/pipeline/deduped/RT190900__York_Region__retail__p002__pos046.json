@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT190900",
+  "source_folder": "York_Region/retail/p002",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190900",
+      "source_folder": "York_Region/retail/p002",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "9390 WOODBINE AVE",
+        "UNIT 2R8"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "12 Mar 2025",
+      "price_text": "$703,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5G 1R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "C-Yield Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tsz Ngai Yang",
+        "45 Greyhound Dr",
+        "Toronto, Ontario",
+        "M2H 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1415",
+      "Level 2, Unit 111",
+      "",
+      "PIN: 29946-0455"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $703,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_123239.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_123246.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_123251.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_123907.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_123909.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_123910.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1909/RT190900/0323_124005.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "97 / 984",
+      "rt_id": "RT190900"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "9390 WOODBINE AVE, UNIT 2R8",
+    "postcode": "L6C 0M5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "03/12/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "703000",
+    "cash": "703000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "29946-0455",
+    "rollno": ""
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "9390 WOODBINE AVE",
+      "UNIT 2R8"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "12 Mar 2025",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "C-Yield Holdings Inc"
+    ],
+    "price_text": "$703,000"
+  }
+}

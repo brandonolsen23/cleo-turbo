@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24176",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24176",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "2040 HWY 11"
+      ],
+      "city_region": "Oro : Simcoe County",
+      "date_text": "29 Jan 2002",
+      "price_text": "$2,540,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ivorylane Corp     905-669-6009"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eugene Iacobelli",
+        "Panoramic Shades",
+        "221 Rayette Rd",
+        "Concord, Ontario",
+        "L4K 2G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "St Cecilia Investments Ltd     905-737-8220"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Refat Samuel",
+        "6 Cortleigh Ct",
+        "Richmond Hill, Ontario",
+        "L4B 3G9"
+      ]
+    },
+    "description_lines": [
+      "Gas Bar, McDonalds, Donut Shop & Go-Cart Track"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-26210, Part 1",
+      "",
+      "10.35 acre"
+    ],
+    "arn_text": "43 46 010 001 15700",
+    "consideration_lines": [
+      "cash: $2,540,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "649 / 712",
+      "rt_id": "RT24176"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "2040 HWY 11",
+    "postcode": "L0L 2L0",
+    "municipality": "Oro",
+    "region": "Simcoe County",
+    "date": "01/29/2002",
+    "desc": "Gas Bar, McDonalds, Donut Shop & Go-Cart Track",
+    "bldg": "",
+    "acreage": "10.35",
+    "consid": "2540000",
+    "cash": "2540000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 46 010 001 15700"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "2040 HWY 11"
+    ],
+    "city_region": "Oro : Simcoe County",
+    "date_text": "29 Jan 2002",
+    "note": "",
+    "description": "Gas Bar, McDonalds, Donut Shop & Go-Cart Track",
+    "seller_lines": [
+      "Ivorylane Corp"
+    ],
+    "buyer_lines": [
+      "St Cecilia Investments Ltd"
+    ],
+    "price_text": "$2,540,000"
+  }
+}

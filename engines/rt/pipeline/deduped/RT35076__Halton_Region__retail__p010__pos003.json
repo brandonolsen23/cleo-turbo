@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT35076",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35076",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "710 CUMBERLAND AVE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "14 Apr 2004",
+      "price_text": "$1,975,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "ALIS Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alan Harmer"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "ETV Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Afolabi Odetunde",
+        "517 Marlatt Dr",
+        "Oakville, Ontario",
+        "L6H 5X4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 13,143 sf @ $150"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 299, Part Lot 22",
+      "As in Inst No 483751 & 483752",
+      "",
+      "1.15 acre"
+    ],
+    "arn_text": "24 02 050 521 00100",
+    "consideration_lines": [
+      "cash: $1,975,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Martel Commercial: Phil Nanavati, 905-332-6601 x101"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT350/RT35076/air1.jpg",
+        "/assets/files/RT3/RT350/RT35076/air2.jpg",
+        "/assets/files/RT3/RT350/RT35076/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT350/RT35076/photo.jpg"
+    },
+    "footer": {
+      "page_position": "454 / 613",
+      "rt_id": "RT35076"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "710 CUMBERLAND AVE",
+    "postcode": "L7N 3M9",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/14/2004",
+    "desc": "Retail Plaza - 1 storey; 13,143 sf @ $150",
+    "bldg": "13,143 sf",
+    "acreage": "1.15",
+    "consid": "1975000",
+    "cash": "1975000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 521 00100"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "710 CUMBERLAND AVE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "14 Apr 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 13,143 sf @ $150",
+    "seller_lines": [
+      "ALIS Investments Ltd"
+    ],
+    "buyer_lines": [
+      "ETV Holdings Inc"
+    ],
+    "price_text": "$1,975,000"
+  }
+}

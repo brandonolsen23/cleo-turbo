@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT20970",
+  "source_folder": "York_Region/retail/p019",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20970",
+      "source_folder": "York_Region/retail/p019",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 HENDERSON DR"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "30 Mar 2001",
+      "price_text": "$6,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RioCan (Aurora) Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Katy Ritcey",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Topostar (Aurora) Inc     416-778-1100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Topos",
+        "745 Danforth Ave, Ste 302",
+        "Toronto, Ontario",
+        "M4J 1L4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 55,580 sf @ $123",
+      "",
+      "Known as Aurora Village Shopping Centre.",
+      "",
+      "Anchored by a Dominion Store. Other tenants (11)",
+      "",
+      "Includes a Harveys & Swiss Chalet.",
+      "",
+      "Last transferred in Nov 96 for $4,700,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1500, Block A",
+      "",
+      "SW corner at Yonge St",
+      "",
+      "4.80 acre"
+    ],
+    "arn_text": "19 46 000 052 50600",
+    "consideration_lines": [
+      "cash: $3,499,450     assumed/vtb debt: $3,350,550"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT209/RT20970/photo.jpg"
+    },
+    "footer": {
+      "page_position": "905 / 984",
+      "rt_id": "RT20970"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1 HENDERSON DR",
+    "postcode": "L4G 4J7",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "03/30/2001",
+    "desc": "Retail Plaza - 1 storey; 55,580 sf @ $123",
+    "bldg": "55,580 sf",
+    "acreage": "4.8",
+    "consid": "6850000",
+    "cash": "3499450",
+    "debt": "3350550",
+    "note": "",
+    "pin": "",
+    "rollno": "19 46 000 052 50600"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1 HENDERSON DR"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "30 Mar 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 55,580 sf @ $123",
+    "seller_lines": [
+      "RioCan (Aurora) Inc"
+    ],
+    "buyer_lines": [
+      "Topostar (Aurora) Inc"
+    ],
+    "price_text": "$6,850,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT190864",
+  "source_folder": "Niagara_N/retail/p001",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190864",
+      "source_folder": "Niagara_N/retail/p001",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p001/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "420 WINSTON RD",
+        "424 WINSTON RD"
+      ],
+      "city_region": "Grimsby : Niagara N",
+      "date_text": "10 Mar 2025",
+      "price_text": "$1,330,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2668323 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "35 Teal Ave",
+        "Stoney Creek, Ontario",
+        "L8E 3B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2497301 Ontario Inc     905-643-1844"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steve Augustine",
+        "113 Lampman Dr",
+        "Grimsby, Ontario",
+        "L3M 0E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 289",
+      "Level 1, Units 7 & 8",
+      "",
+      "PIN: 46989-0007 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,330,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $381,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/10/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074019.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074020.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074022.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074028.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074052.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074054.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190864/0621_074059.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "30 / 307",
+      "rt_id": "RT190864"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "420 WINSTON RD, 424 WINSTON RD",
+    "postcode": "L3M 0H2",
+    "municipality": "Grimsby",
+    "region": "Niagara N",
+    "date": "03/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1330000",
+    "cash": "1330000",
+    "debt": "",
+    "note": "",
+    "pin": "46989-0007+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "420 WINSTON RD",
+      "424 WINSTON RD"
+    ],
+    "city_region": "Grimsby : Niagara N",
+    "date_text": "10 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2668323 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2497301 Ontario Inc"
+    ],
+    "price_text": "$1,330,000"
+  }
+}

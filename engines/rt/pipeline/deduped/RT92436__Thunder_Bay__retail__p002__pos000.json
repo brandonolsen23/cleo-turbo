@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT92436",
+  "source_folder": "Thunder_Bay/retail/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT92436",
+      "source_folder": "Thunder_Bay/retail/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1090 DAWSON RD"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "30 Apr 2013",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "5160529 Manitoba Ltd     204-477-0500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Serge Bibeau",
+        "1601 Buffalo Place",
+        "Winnipeg, MB",
+        "R3T 3K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1873280 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "Goldmanco Inc",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "1989 Leslie St",
+        "Toronto, Ontario",
+        "M3B 2M3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 tenants 7,296 sf @ $219",
+      "",
+      "Fully leased to 3 tenants",
+      "Anchored by TD Canada Trust"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 55R-6722, Part 2",
+      "Except:",
+      "Plan 55R-7111, Part 1",
+      "",
+      "PIN: 62191-0499",
+      "",
+      "NE corner Dawson Rd and East Ave",
+      "",
+      "1.05 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 65",
+      "rt_id": "RT92436"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1090 DAWSON RD",
+    "postcode": "P7B 5V1",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "04/30/2013",
+    "desc": "Retail Plaza - 1 storey; 3 tenants 7,296 sf @ $219",
+    "bldg": "7,296 sf",
+    "acreage": "1.05",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "62191-0499",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1090 DAWSON RD"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "30 Apr 2013",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 tenants 7,296 sf @ $219",
+    "seller_lines": [
+      "5160529 Manitoba Ltd"
+    ],
+    "buyer_lines": [
+      "1873280 Ontario Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

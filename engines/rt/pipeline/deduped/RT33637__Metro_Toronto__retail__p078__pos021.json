@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT33637",
+  "source_folder": "Metro_Toronto/retail/p078",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33637",
+      "source_folder": "Metro_Toronto/retail/p078",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p078/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 INVERGORDON AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "19 Jan 2004",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lebovic Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Lebovic",
+        "PO Box 1240",
+        "Stouffville, Ontario",
+        "L4A 8A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mitamar Financial Ltd     905-738-0754"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Neil Brown",
+        "2180 Steeles Ave W, Ste 305",
+        "Concord, Ontario",
+        "L4K 2Z5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 5,420 sf @ $111"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 8715, Lots 1 & 2",
+      "Except as In Inst No SC-468359",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "19 01 121 335 12700",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT336/RT33637/air1.jpg",
+        "/assets/files/RT3/RT336/RT33637/air2.jpg",
+        "/assets/files/RT3/RT336/RT33637/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT336/RT33637/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3872 / 4952",
+      "rt_id": "RT33637"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "2 INVERGORDON AVE",
+    "postcode": "M1S 2Y8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/19/2004",
+    "desc": "Retail Plaza - 1 storey; 4 units 5,420 sf @ $111",
+    "bldg": "5,420 sf",
+    "acreage": ".4",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 121 335 12700"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "2 INVERGORDON AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "19 Jan 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 5,420 sf @ $111",
+    "seller_lines": [
+      "Lebovic Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "Mitamar Financial Ltd"
+    ],
+    "price_text": "$600,000"
+  }
+}

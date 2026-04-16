@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT24494",
+  "source_folder": "Metro_Toronto/retail/p086",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24494",
+      "source_folder": "Metro_Toronto/retail/p086",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p086/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "1310 DON MILLS RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "20 Feb 2002",
+      "price_text": "$1,820,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Zennon Enterprises Ltd     416-234-9111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ivy Lo",
+        "Mitchell, Bardyn & Zalucky LLP",
+        "3029 Bloor St W",
+        "Toronto, Ontario",
+        "M8X 1C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1508350 Ontario Inc     905-822-0160"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Sun",
+        "2460 Hammond Rd",
+        "Mississauga, Ontario",
+        "L5K 1T2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; about 9,398 sf @ $194",
+      "",
+      "Tenants include Harveys and Great Canadian Bagel."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-525, Part Lot 10",
+      "",
+      "SW corner at Bond Ave",
+      "",
+      "0.59 acre"
+    ],
+    "arn_text": "19 08 102 200 00400",
+    "consideration_lines": [
+      "cash: $1,820,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT244/RT24494/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4281 / 4952",
+      "rt_id": "RT24494"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "1310 DON MILLS RD",
+    "postcode": "M3B 2W6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "02/20/2002",
+    "desc": "Retail Plaza - 1 storey; about 9,398 sf @ $194",
+    "bldg": "9398  sf",
+    "acreage": ".59",
+    "consid": "1820000",
+    "cash": "1820000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 102 200 00400"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "1310 DON MILLS RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "20 Feb 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; about 9,398 sf @ $194",
+    "seller_lines": [
+      "Zennon Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "1508350 Ontario Inc"
+    ],
+    "price_text": "$1,820,000"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT44770",
+  "source_folder": "York_Region/retail/p015",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44770",
+      "source_folder": "York_Region/retail/p015",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "10489 ISLINGTON AVE"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "07 Oct 2005",
+      "price_text": "$740,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2081447 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Valentina Perrelli",
+        "54 Richgrove Dr",
+        "Brampton, Ontario",
+        "L6P 1X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 11, Part Lot 6",
+      "As in Inst No R-292103",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 28 000 350 43000",
+    "consideration_lines": [
+      "cash: $740,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $520,000   rate: 5.99% per annum",
+      "registered: 10/07/2005   due: on demand",
+      "",
+      "chargee: 1164751 Ontario Ltd",
+      "principal: $40,000   rate: 12.0% per annum",
+      "registered: 10/07/2005   due: 11/01/2006",
+      "",
+      "chargee: Ross Perrelli",
+      "principal: $210,000   rate: US prime as set by the Wall Street Journal plus 2.5% per annum",
+      "registered: 10/07/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT447/RT44770/air1.jpg",
+        "/assets/files/RT4/RT447/RT44770/air2.jpg",
+        "/assets/files/RT4/RT447/RT44770/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "729 / 984",
+      "rt_id": "RT44770"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "10489 ISLINGTON AVE",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "10/07/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "740000",
+    "cash": "740000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 350 43000"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "10489 ISLINGTON AVE"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "07 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2081447 Ontario Inc"
+    ],
+    "price_text": "$740,000"
+  }
+}

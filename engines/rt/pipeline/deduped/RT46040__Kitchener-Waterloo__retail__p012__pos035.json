@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT46040",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46040",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "611 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "23 Dec 2005",
+      "price_text": "$1,960,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "BSH Developments Ltd     905-275-0065"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Michael Doner",
+        "2050 Dundas St E",
+        "Mississauga, Ontario",
+        "L4X 1L9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CIRP Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Weiler",
+        "181 Bay St",
+        "Ste 2330, Box 834",
+        "Bay-Wellington Tower, BCE Place",
+        "Toronto, Ontario",
+        "M5J 2T3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaz"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67R-2754, Parts 1 & 2"
+    ],
+    "arn_text": "30 06 150 015 03900",
+    "consideration_lines": [
+      "cash: $1,960,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT460/RT46040/photo.jpg"
+    },
+    "footer": {
+      "page_position": "586 / 752",
+      "rt_id": "RT46040"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "611 HESPELER RD",
+    "postcode": "N1R 6J3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "12/23/2005",
+    "desc": "Retail Plaz",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1960000",
+    "cash": "1960000",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "30 06 150 015 03900"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "611 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "23 Dec 2005",
+    "note": "Portfolio Sale",
+    "description": "Retail Plaz",
+    "seller_lines": [
+      "BSH Developments Ltd"
+    ],
+    "buyer_lines": [
+      "CIRP Management Ltd"
+    ],
+    "price_text": "$1,960,000"
+  }
+}

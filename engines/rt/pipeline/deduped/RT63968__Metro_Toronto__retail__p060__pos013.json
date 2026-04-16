@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT63968",
+  "source_folder": "Metro_Toronto/retail/p060",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63968",
+      "source_folder": "Metro_Toronto/retail/p060",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p060/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "1140 DUPONT ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 Sep 2008",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Unicer Properties Ltd     416-766-9535"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jose Cerqueira",
+        "370 Alliance Ave",
+        "Toronto, Ontario",
+        "M6N 2H8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1140 Dupont Street Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Claude Bitton",
+        "27 Verwood Ave",
+        "Toronto, Ontario",
+        "M3H 2K6"
+      ]
+    },
+    "description_lines": [
+      "Former Fish Market - 1 storey; 12,500 sf @ $216",
+      "",
+      "1,000 sf office",
+      "1 truck level, 1 drive-in door",
+      "Vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 622, Block Y",
+      "Lot 4, Part Lots 3 & 5",
+      "As in Inst No CA-652432",
+      "",
+      "PIN: 21288-0274",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "19 04 031 560 00800",
+    "consideration_lines": [
+      "cash: $2,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,000,000   rate: Prime plus 6.0% per annum",
+      "registered: 09/12/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63968/0921_081800.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT639/RT63968/air1.jpg",
+        "/assets/files/RT6/RT639/RT63968/air2.jpg",
+        "/assets/files/RT6/RT639/RT63968/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2964 / 4952",
+      "rt_id": "RT63968"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "1140 DUPONT ST",
+    "postcode": "M6H 2A2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/12/2008",
+    "desc": "Former Fish Market - 1 storey; 12,500 sf @ $216",
+    "bldg": "12,500 sf",
+    "acreage": ".35",
+    "consid": "2700000",
+    "cash": "2700000",
+    "debt": "",
+    "note": "",
+    "pin": "21288-0274",
+    "rollno": "19 04 031 560 00800"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "1140 DUPONT ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 Sep 2008",
+    "note": "",
+    "description": "Former Fish Market - 1 storey; 12,500 sf @ $216",
+    "seller_lines": [
+      "Unicer Properties Ltd"
+    ],
+    "buyer_lines": [
+      "1140 Dupont Street Ltd"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

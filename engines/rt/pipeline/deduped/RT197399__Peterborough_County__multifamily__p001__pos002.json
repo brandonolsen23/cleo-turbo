@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197399",
+  "source_folder": "Peterborough_County/multifamily/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197399",
+      "source_folder": "Peterborough_County/multifamily/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/multifamily/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "836 TALWOOD DR"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "26 Feb 2026",
+      "price_text": "$31,530,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "DD 836 Talwood Ltd     416-234-8444"
+      ],
+      "trade_name": "Starlight Investments Ltd",
+      "contact_lines": [
+        "c/o 3280 Bloor St W, Ste 1400",
+        "Centre Tower",
+        "Toronto, Ontario",
+        "M8X 2X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "K&S Holdings GP Inc     905-452-1305"
+      ],
+      "trade_name": "Larkin Investments",
+      "contact_lines": [
+        "Attn: Sylestro DeFrancesco",
+        "c/o 6220 Highway 7, Ste 500",
+        "Woodbridge, Ontario",
+        "L4H 4G3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 45R-1767, Parts 1 & 2",
+      "",
+      "PIN: 28463-0310",
+      "",
+      "2.39 acre"
+    ],
+    "arn_text": "15 14 020 060 19100",
+    "consideration_lines": [
+      "cash: $30,030,000     assumed/vtb debt: $1,500,000",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $36,993,815   rate: 10.0% per annum.",
+      "registered: 02/26/2026   due: 06/01/2031",
+      "",
+      "chargee: DD 836 Talwood Ltd",
+      "principal: $1,500,000   rate: First 59 months, 0% per annum. 60th month, RBC prime plus 5.0% per annum.",
+      "registered: 02/26/2026   due: 02/26/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 132",
+      "rt_id": "RT197399"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "836 TALWOOD DR",
+    "postcode": "K9J 7G8",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "02/26/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.39",
+    "consid": "31530000",
+    "cash": "30030000",
+    "debt": "1500000",
+    "note": "Portfolio",
+    "pin": "28463-0310",
+    "rollno": "15 14 020 060 19100"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "836 TALWOOD DR"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "26 Feb 2026",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "DD 836 Talwood Ltd"
+    ],
+    "buyer_lines": [
+      "K&S Holdings GP Inc"
+    ],
+    "price_text": "$31,530,000"
+  }
+}

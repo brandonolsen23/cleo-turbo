@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT22859",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22859",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "131 KENNEDY RD N"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "02 Oct 2001",
+      "price_text": "$1,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1401050 Ontario Inc     905-275-7131"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Morrison",
+        "Blue Sky Realty Corp",
+        "2085 Hurontario St, Ste 300",
+        "Mississauga, Ontario",
+        "L5A 4G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1487774 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aitzaz Ahmad",
+        "23 Citation Cres",
+        "Ancaster, Ontario",
+        "L9K 1H8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,350 sf @ $308"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-24347, Part 5",
+      "As in Inst No RO-940818",
+      "",
+      "NW corner at Vodden St",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT228/RT22859/photo.jpg"
+    },
+    "footer": {
+      "page_position": "974 / 1087",
+      "rt_id": "RT22859"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "131 KENNEDY RD N",
+    "postcode": "L6V 1X9",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "10/02/2001",
+    "desc": "Retail Bldg - 1 storey; 5,350 sf @ $308",
+    "bldg": "5,350 sf",
+    "acreage": ".55",
+    "consid": "1650000",
+    "cash": "1650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "131 KENNEDY RD N"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "02 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 5,350 sf @ $308",
+    "seller_lines": [
+      "1401050 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1487774 Ontario Ltd"
+    ],
+    "price_text": "$1,650,000"
+  }
+}

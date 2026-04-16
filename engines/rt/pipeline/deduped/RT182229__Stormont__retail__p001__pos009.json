@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT182229",
+  "source_folder": "Stormont/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182229",
+      "source_folder": "Stormont/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "1200 BROOKDALE AVE"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "21 Dec 2023",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "350634 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8 Canterbury Cres",
+        "North Bay, Ontario",
+        "P1C 1K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "15416973 Canada Ltd     613-933-8135"
+      ],
+      "trade_name": "Seaway Hyundai",
+      "contact_lines": [
+        "Pres: Beverly Lapointe",
+        "701 Rosemount Ave",
+        "Cornwall, Ontario",
+        "K6J 3E5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 13",
+      "Plan 52R-2575, Parts 1-3",
+      "",
+      "PIN: 60212-0357",
+      "",
+      "1.29 acre"
+    ],
+    "arn_text": "04 02 060 003 02301",
+    "consideration_lines": [
+      "cash: $1,900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1822/RT182229/air1.jpg",
+        "/assets/files/RT18/RT1822/RT182229/air2.jpg",
+        "/assets/files/RT18/RT1822/RT182229/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 29",
+      "rt_id": "RT182229"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "1200 BROOKDALE AVE",
+    "postcode": "K6J 4P4",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "12/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.29",
+    "consid": "1900000",
+    "cash": "1900000",
+    "debt": "",
+    "note": "",
+    "pin": "60212-0357",
+    "rollno": "04 02 060 003 02301"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "1200 BROOKDALE AVE"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "21 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "350634 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "15416973 Canada Ltd"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

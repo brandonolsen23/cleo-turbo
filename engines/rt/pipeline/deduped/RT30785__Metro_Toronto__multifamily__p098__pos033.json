@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT30785",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30785",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 TWENTY FOURTH ST"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "30 Jun 2003",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "JSP Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sharon Parris",
+        "2 Tippett Rd",
+        "Toronto, Ontario",
+        "M3H 2V2"
+      ]
+    },
+    "description_lines": [
+      "SixPlex - 2.5 storey; 6 units @ $141,667",
+      "",
+      "1-1bdrm 5-2bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-20116, Part 1",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 19 053 640 02300",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Harvey Kalles: Darren Leblanc, 416-441-2888"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT307/RT30785/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4884 / 6031",
+      "rt_id": "RT30785"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "123 TWENTY FOURTH ST",
+    "postcode": "",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "06/30/2003",
+    "desc": "SixPlex - 2.5 storey; 6 units @ $141,667",
+    "bldg": "6 units",
+    "acreage": ".15",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 053 640 02300"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "123 TWENTY FOURTH ST"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "30 Jun 2003",
+    "note": "",
+    "description": "SixPlex - 2.5 storey; 6 units @ $141,667",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "JSP Development Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

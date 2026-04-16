@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT15919",
+  "source_folder": "Hamilton-Wentworth/retail/p012",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15919",
+      "source_folder": "Hamilton-Wentworth/retail/p012",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p012/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "71 - 77 HIGHWAY 5 W"
+      ],
+      "city_region": "Flamborough : Hamilton-Wentworth",
+      "date_text": "26 Nov 1999",
+      "price_text": "$500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Richard A. Young"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "63-#5 Highway W",
+        "Flamborough, Ontario",
+        "L9H 7L6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Young's Farm Equipment Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Richard A. Young",
+        "63-#5 Highway W",
+        "Flamborough, Ontario",
+        "L9H 7L6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-15239, Parts 2, 3 & 6"
+    ],
+    "arn_text": "25 30 200 330 62800",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,000,000   rate: 3.5% per annum.",
+      "registered: 03/15/2021   due: 03/15/2022",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/18/2021   due: on demand",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $2,500,000   rate: 25.0% per annum.",
+      "registered: 03/15/2021   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/16/2021   due: on demand",
+      "",
+      "chargee: Ciarelli & Gareri Enterprises Inc",
+      "2331602 Ontario Inc",
+      "Antonio & Reonilde Cesta",
+      "principal: $975,000   rate: 7.0% per annum.",
+      "registered: 03/15/2021   due: 03/15/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "586 / 616",
+      "rt_id": "RT15919"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "71 - 77 HIGHWAY 5 W",
+    "postcode": "",
+    "municipality": "Flamborough",
+    "region": "Hamilton-Wentworth",
+    "date": "11/26/1999",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "25 30 200 330 62800"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "71 - 77 HIGHWAY 5 W"
+    ],
+    "city_region": "Flamborough : Hamilton-Wentworth",
+    "date_text": "26 Nov 1999",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Richard A. Young"
+    ],
+    "buyer_lines": [
+      "Young's Farm Equipment Ltd"
+    ],
+    "price_text": "$500,000"
+  }
+}

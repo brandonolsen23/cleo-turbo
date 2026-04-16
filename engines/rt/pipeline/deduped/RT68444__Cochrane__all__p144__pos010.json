@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT68444",
+  "source_folder": "Cochrane/all/p144",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68444",
+      "source_folder": "Cochrane/all/p144",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p144/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "700 SUSSEX DR",
+        "UNIT 505"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Sep 2009",
+      "price_text": "$598,040",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "3223701 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gilles Desjardins",
+        "98 Lois St",
+        "Gatineau, Quebec",
+        "J8Y 3R7"
+      ]
+    },
+    "description_lines": [
+      "Res Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 713",
+      "Level 4, Unit 5",
+      "Level A, Units 22 & 92",
+      "",
+      "PIN: 15713-0082 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $598,040     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7161 / 10920",
+      "rt_id": "RT68444"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "700 SUSSEX DR, UNIT 505",
+    "postcode": "K1N 1K4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/01/2009",
+    "desc": "Res Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "598040",
+    "cash": "598040",
+    "debt": "",
+    "note": "",
+    "pin": "15713-0082+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "700 SUSSEX DR",
+      "UNIT 505"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Sep 2009",
+    "note": "",
+    "description": "Res Condo",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "3223701 Canada Inc"
+    ],
+    "price_text": "$598,040"
+  }
+}

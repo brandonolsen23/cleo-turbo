@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT34080",
+  "source_folder": "Peel_Region/retail/p017",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34080",
+      "source_folder": "Peel_Region/retail/p017",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p017/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "227 VODDEN ST E"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "11 Feb 2004",
+      "price_text": "$12,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Behrens Holdings Ltd",
+        "Continental Saxon Holdings Ltd",
+        "Zichy-Thyssen Real Estate Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christopher Gardner",
+        "2 Eva Rd, Ste 221",
+        "Toronto, Ontario",
+        "M9C 2A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Centennial Mall Brampton Ltd     416-222-3010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: David Hofstedter",
+        "Davpart Inc",
+        "4576 Yonge St, Ste 700",
+        "Toronto, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "description_lines": [
+      "Centennial Mall - 1 storey; 32 units 177,678 sf @ $68",
+      "",
+      "Anchored by Zellers & Food Basics"
+    ],
+    "more_info_url": "/assets/files/RT3/RT340/RT34080/mi.pdf",
+    "site_lines": [
+      "Plan 889, Part Blocks H & XF",
+      "As in Inst No RO-1091644",
+      "",
+      "SE corner at Kennedy Rd",
+      "",
+      "14.50 acre"
+    ],
+    "arn_text": "21 10 010 001 01200",
+    "consideration_lines": [
+      "cash: $12,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal Lepage Commercial: Chris Barrett, 416-862-0611"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT340/RT34080/air1.jpg",
+        "/assets/files/RT3/RT340/RT34080/air2.jpg",
+        "/assets/files/RT3/RT340/RT34080/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT340/RT34080/photo.jpg"
+    },
+    "footer": {
+      "page_position": "843 / 1087",
+      "rt_id": "RT34080"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "227 VODDEN ST E",
+    "postcode": "L6V 1N2",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "02/11/2004",
+    "desc": "Centennial Mall - 1 storey; 32 units 177,678 sf @ $68",
+    "bldg": "177,678 sf",
+    "acreage": "14.5",
+    "consid": "12050000",
+    "cash": "12050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 010 001 01200"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "227 VODDEN ST E"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "11 Feb 2004",
+    "note": "",
+    "description": "Centennial Mall - 1 storey; 32 units 177,678 sf @ $68",
+    "seller_lines": [
+      "Behrens Holdings Ltd",
+      "Continental Saxon Holdings Ltd",
+      "Zichy-Thyssen Real Estate Ltd"
+    ],
+    "buyer_lines": [
+      "Centennial Mall Brampton Ltd"
+    ],
+    "price_text": "$12,050,000"
+  }
+}

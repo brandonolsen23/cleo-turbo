@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT25250",
+  "source_folder": "Middlesex_County/retail/p012",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25250",
+      "source_folder": "Middlesex_County/retail/p012",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p012/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "255 HORTON ST E"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "05 Mar 2002",
+      "price_text": "$1,045,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Rexel Canada Electrical Inc     905-712-4004"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Pat Foley",
+        "Westburne Electrical",
+        "5600 Keaton Cres",
+        "Mississauga, Ontario",
+        "L5R 3G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "London Goodwill Industries Association     519-455-9010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Stewart",
+        "255 Horton St",
+        "London, Ontario",
+        "N6B 1L1"
+      ]
+    },
+    "description_lines": [
+      "Goodwill Store - 2 storey; 29,000 sf @ $36"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-14869",
+      "Parts 1 & 2",
+      "",
+      "1.60 acre"
+    ],
+    "arn_text": "39 36 060 120 12300",
+    "consideration_lines": [
+      "cash: $1,045,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT252/RT25250/photo.jpg"
+    },
+    "footer": {
+      "page_position": "596 / 686",
+      "rt_id": "RT25250"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "255 HORTON ST E",
+    "postcode": "N6B 1L1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/05/2002",
+    "desc": "Goodwill Store - 2 storey; 29,000 sf @ $36",
+    "bldg": "29,000 sf",
+    "acreage": "1.6",
+    "consid": "1045000",
+    "cash": "1045000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 120 12300"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "255 HORTON ST E"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "05 Mar 2002",
+    "note": "",
+    "description": "Goodwill Store - 2 storey; 29,000 sf @ $36",
+    "seller_lines": [
+      "Rexel Canada Electrical Inc"
+    ],
+    "buyer_lines": [
+      "London Goodwill Industries Association"
+    ],
+    "price_text": "$1,045,000"
+  }
+}

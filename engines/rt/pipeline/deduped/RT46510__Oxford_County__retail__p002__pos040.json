@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT46510",
+  "source_folder": "Oxford_County/retail/p002",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46510",
+      "source_folder": "Oxford_County/retail/p002",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p002/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "695 CANTERBURY ST"
+      ],
+      "city_region": "Woodstock : Oxford County",
+      "date_text": "21 Dec 2005",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "848037 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Clifford Roach",
+        "452 Drew St",
+        "Woodstock, Ontario",
+        "N4S 4V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1336423 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Redford",
+        "208 Northwood Dr",
+        "Innerkip, Ontario",
+        "N0J 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 41R-5437, Parts 1-3",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "32 42 030 070 03000",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Desjardins Credit Union Inc",
+      "principal: $80,000   rate: 6.31% per annum",
+      "registered: 12/21/2005   due: 02/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT465/RT46510/0330_111455.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT465/RT46510/0330_111456.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT465/RT46510/0330_111529.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT465/RT46510/0330_111543.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "91 / 96",
+      "rt_id": "RT46510"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "695 CANTERBURY ST",
+    "postcode": "N4S 8W7",
+    "municipality": "Woodstock",
+    "region": "Oxford County",
+    "date": "12/21/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".73",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "32 42 030 070 03000"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "695 CANTERBURY ST"
+    ],
+    "city_region": "Woodstock : Oxford County",
+    "date_text": "21 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "848037 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1336423 Ontario Ltd"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

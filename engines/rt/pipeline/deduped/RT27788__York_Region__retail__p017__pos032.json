@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT27788",
+  "source_folder": "York_Region/retail/p017",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27788",
+      "source_folder": "York_Region/retail/p017",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "3400 STEELES AVE W"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "15 Nov 2002",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Steeles/400 Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Cohen",
+        "H & R Developments",
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2012409 Ontario Inc     416-449-3535"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Simon",
+        "Rose Corp",
+        "156 Duncan Mill Rd, Ste 12",
+        "Don Mills, Ontario",
+        "M3B 3N2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza/Land  - 1 storey; 11,500 sf on 3.545 Ac",
+      "",
+      "McDonalds, Tim Hortons & 1 storey 4 unit retail bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-22872, Parts 2-5",
+      "",
+      "NE corner at Highway 400",
+      "",
+      "3.55 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT277/RT27788/photo.jpg"
+    },
+    "footer": {
+      "page_position": "833 / 984",
+      "rt_id": "RT27788"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "3400 STEELES AVE W",
+    "postcode": "L4K 1A2",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "11/15/2002",
+    "desc": "Retail Plaza/Land  - 1 storey; 11,500 sf on 3.545 Ac",
+    "bldg": "11,500 sf",
+    "acreage": "3.55",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "3400 STEELES AVE W"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "15 Nov 2002",
+    "note": "",
+    "description": "Retail Plaza/Land  - 1 storey; 11,500 sf on 3.545 Ac",
+    "seller_lines": [
+      "Steeles/400 Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "2012409 Ontario Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

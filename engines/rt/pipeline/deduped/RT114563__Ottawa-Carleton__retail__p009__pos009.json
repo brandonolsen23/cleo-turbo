@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT114563",
+  "source_folder": "Ottawa-Carleton/retail/p009",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT114563",
+      "source_folder": "Ottawa-Carleton/retail/p009",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p009/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "5703 BANK ST"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "01 Feb 2016",
+      "price_text": "$530,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "9560777 Canada Inc     613-821-9981"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Thoms",
+        "5689 Bank St",
+        "Greely, Ontario",
+        "K4P 1C3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 2",
+      "As in Inst No NS-242965",
+      "",
+      "PIN: 04320-0042",
+      "",
+      "2.61 acre"
+    ],
+    "arn_text": "06 01 000 040 18602",
+    "consideration_lines": [
+      "cash: $530,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $232,000   rate: 2.840% per annum.",
+      "registered: 02/01/2016   due: 02/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1145/RT114563/0521_113148.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1145/RT114563/0521_113153.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1145/RT114563/0521_113208.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1145/RT114563/0521_113227.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1145/RT114563/0521_113230.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "410 / 1141",
+      "rt_id": "RT114563"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "5703 BANK ST",
+    "postcode": "K4P 1C3",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "02/01/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.61",
+    "consid": "530000",
+    "cash": "530000",
+    "debt": "",
+    "note": "",
+    "pin": "04320-0042",
+    "rollno": "06 01 000 040 18602"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "5703 BANK ST"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "01 Feb 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "9560777 Canada Inc"
+    ],
+    "price_text": "$530,000"
+  }
+}

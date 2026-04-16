@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT176998",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176998",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "2380 WALKER RD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "17 Apr 2023",
+      "price_text": "$5,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "McCowan and Associates Ltd     705-737-1057"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "158 Dunlop St E, Ste 201",
+        "Barrie, Ontario",
+        "L4M 1B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000410296 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Beant Dhaliwal",
+        "2380 Walker Rd",
+        "Windsor, Ontario",
+        "N8W 3P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Sandwich East",
+      "Part Lots 96 & 97",
+      "As in inst No R-115042",
+      "Except:",
+      "Plan 12R-13183, Part 1",
+      "Plan RD-227, Part 14",
+      "Plan 12R-11938, Part 1",
+      "",
+      "PIN: 01353-0033",
+      "",
+      "6.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/17/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "123 / 460",
+      "rt_id": "RT176998"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "2380 WALKER RD",
+    "postcode": "N8W 3P6",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "04/17/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.23",
+    "consid": "5850000",
+    "cash": "5850000",
+    "debt": "",
+    "note": "",
+    "pin": "01353-0033",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "2380 WALKER RD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "17 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "McCowan and Associates Ltd"
+    ],
+    "buyer_lines": [
+      "1000410296 Ontario Inc"
+    ],
+    "price_text": "$5,850,000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT197897",
+  "source_folder": "Cochrane/all/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197897",
+      "source_folder": "Cochrane/all/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "425 BLAKE BLVD",
+        "427 BLAKE BLVD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "18 Mar 2026",
+      "price_text": "$870,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001503736 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harshkumar Patel",
+        "96 Axel Cres",
+        "Stittsville, Ontario",
+        "K2V 0K4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-36274, Parts 1-6",
+      "",
+      "PIN: 04241-0137 +",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "06 14 010 501 26504 +",
+    "consideration_lines": [
+      "cash: $870,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 10920",
+      "rt_id": "RT197897"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "425 BLAKE BLVD, 427 BLAKE BLVD",
+    "postcode": "K1K 1A9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/18/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".27",
+    "consid": "870000",
+    "cash": "870000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "04241-0137+",
+    "rollno": "06 14 010 501 26504+"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "425 BLAKE BLVD",
+      "427 BLAKE BLVD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "18 Mar 2026",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001503736 Ontario Ltd"
+    ],
+    "price_text": "$870,000"
+  }
+}

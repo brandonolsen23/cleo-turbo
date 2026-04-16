@@ -1,0 +1,149 @@
+{
+  "rt_id": "RT13164",
+  "source_folder": "Kitchener-Waterloo/retail/p016",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13164",
+      "source_folder": "Kitchener-Waterloo/retail/p016",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p016/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "725 OTTAWA ST S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Oct 1998",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Freure Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Harold Freure",
+        "501 King Street",
+        "Kitchener, Ontario",
+        "N2G 4B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Alpine Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul S. Dixon",
+        "201-20 Hughson St S",
+        "Hamilton, Ontario",
+        "L8N 2A1"
+      ]
+    },
+    "description_lines": [
+      "Alpine Shopping Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1246, Block A",
+      "",
+      "6.76 acre"
+    ],
+    "arn_text": "30 12 040 031 24000",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $990,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/01/2018   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,730,000   rate: Prime plus 7.0% per annum.",
+      "registered: 02/01/2018   due: on demand",
+      "",
+      "chargee: Kay Family Investments Inc",
+      "principal: $2,750,000   rate: Prime plus 5.3% per annum.",
+      "registered: 01/31/2018   due: 07/29/2018",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $2,412,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 02/02/2018   due: on demand",
+      "",
+      "chargee: 7933 Huntington Road Investments Ltd",
+      "principal: $2,100,000   rate: 8.0% per annum.",
+      "registered: 01/31/2018   due: 03/01/2018",
+      "",
+      "Named Individual(s)",
+      "principal: $500,000   rate: 10.0% per annum.",
+      "registered: 01/31/2018   due: 01/29/2020",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,800,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/01/2018   due: on demand",
+      "",
+      "chargee: First Source Financial Management Inc",
+      "principal: $3,700,000   rate: 9.25% per annum until 8/1/2019. Thereafter, 18.0% per annum. Mortgagee may renew for 1 month at 18.0% per annum.",
+      "registered: 02/01/2018   due: 08/02/2019",
+      "",
+      "chargee: 1539339 Ontario Inc",
+      "principal: $650,000   rate: 13.75% per annum.",
+      "registered: 02/02/2018   due: 01/29/2019",
+      "",
+      "Named Individual(s)",
+      "principal: $1,200,000   rate: 4.5% per annum.",
+      "registered: 01/31/2018   due: 01/31/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT131/RT13164/photo.jpg"
+    },
+    "footer": {
+      "page_position": "752 / 752",
+      "rt_id": "RT13164"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "725 OTTAWA ST S",
+    "postcode": "",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "10/01/1998",
+    "desc": "Alpine Shopping Plaza",
+    "bldg": "",
+    "acreage": "6.76",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 031 24000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "725 OTTAWA ST S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Oct 1998",
+    "note": "",
+    "description": "Alpine Shopping Plaza",
+    "seller_lines": [
+      "Freure Management Ltd"
+    ],
+    "buyer_lines": [
+      "Alpine Holdings Corp"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

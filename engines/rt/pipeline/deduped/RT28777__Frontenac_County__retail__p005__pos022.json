@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT28777",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28777",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "400 ELLIOTT AVE"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "17 Jan 2003",
+      "price_text": "$1,320,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dacon Corp Ltd     613-389-6761"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Wilson",
+        "685 Gardiners Rd",
+        "Kingston, Ontario",
+        "K7M 3Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1552082 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Steven Richards",
+        "1 Chadburn Cres",
+        "Aurora, Ontario",
+        "L4G 4T4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 13R-7252, Part 2",
+      "",
+      "1.89 acre"
+    ],
+    "arn_text": "10 11 050 140 12300",
+    "consideration_lines": [
+      "cash: $1,320,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT287/RT28777/photo.jpg"
+    },
+    "footer": {
+      "page_position": "223 / 236",
+      "rt_id": "RT28777"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "400 ELLIOTT AVE",
+    "postcode": "K7K 6M9",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "01/17/2003",
+    "desc": "Retail Plaza - 1 storey",
+    "bldg": "",
+    "acreage": "1.89",
+    "consid": "1320000",
+    "cash": "1320000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 050 140 12300"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "400 ELLIOTT AVE"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "17 Jan 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey",
+    "seller_lines": [
+      "Dacon Corp Ltd"
+    ],
+    "buyer_lines": [
+      "1552082 Ontario Ltd"
+    ],
+    "price_text": "$1,320,000"
+  }
+}

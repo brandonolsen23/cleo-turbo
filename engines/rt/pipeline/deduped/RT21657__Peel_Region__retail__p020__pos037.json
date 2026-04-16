@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT21657",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21657",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "6690 - 6700 MONTEVIDEO RD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "01 Jun 2001",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Montderry Plaza Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Theodore Batcher",
+        "Batcher Wasserman & Associates",
+        "718 Wilson Ave, Ste 500",
+        "North York, Ontario",
+        "M3K 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1475035 Ontario Inc     905-814-5936"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dongsoo Kim",
+        "Maple Wood Variety",
+        "6700 Montevideo Rd",
+        "Mississauga, Ontario",
+        "L5N 1V1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; about 5,000 sf @ $140"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-21, Lot 209",
+      "",
+      "N side 40m W of Canberra Ct",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "21 05 040 098 28900",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT216/RT21657/photo.jpg"
+    },
+    "footer": {
+      "page_position": "988 / 1087",
+      "rt_id": "RT21657"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "6690 - 6700 MONTEVIDEO RD",
+    "postcode": "L5N 1V1",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "06/01/2001",
+    "desc": "Retail Plaza - 1 storey; about 5,000 sf @ $140",
+    "bldg": "5,000 sf",
+    "acreage": ".85",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 040 098 28900"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "6690 - 6700 MONTEVIDEO RD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 Jun 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; about 5,000 sf @ $140",
+    "seller_lines": [
+      "Montderry Plaza Inc"
+    ],
+    "buyer_lines": [
+      "1475035 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

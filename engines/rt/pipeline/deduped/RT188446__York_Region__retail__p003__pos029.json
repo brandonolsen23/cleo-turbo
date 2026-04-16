@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT188446",
+  "source_folder": "York_Region/retail/p003",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188446",
+      "source_folder": "York_Region/retail/p003",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "3550 RUTHERFORD RD",
+        "UNIT 80"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "28 Oct 2024",
+      "price_text": "$870,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000766200 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nicolino Oppedisano",
+        "3560 Rutherford Rd, Unit 43",
+        "Vaughan, Ontario",
+        "L4H 3T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1221,",
+      "Level 1, Unit 80",
+      "",
+      "PIN: 29752-0080"
+    ],
+    "arn_text": "19 28 000 230 67080",
+    "consideration_lines": [
+      "cash: $870,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,335,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/28/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164000.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164005.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164028.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164033.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164110.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164112.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164118.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164317.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164321.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164323.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188446/1116_164341.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "130 / 984",
+      "rt_id": "RT188446"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "3550 RUTHERFORD RD, UNIT 80",
+    "postcode": "L4H 3T8",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "10/28/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "870000",
+    "cash": "870000",
+    "debt": "",
+    "note": "",
+    "pin": "29752-0080",
+    "rollno": "19 28 000 230 67080"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "3550 RUTHERFORD RD",
+      "UNIT 80"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "28 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000766200 Ontario Inc"
+    ],
+    "price_text": "$870,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT143523",
+  "source_folder": "Oxford_County/retail/p001",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT143523",
+      "source_folder": "Oxford_County/retail/p001",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p001/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "1321 DUNDAS ST"
+      ],
+      "city_region": "Woodstock : Oxford County",
+      "date_text": "03 Jun 2019",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2091992 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Parminder Kochar",
+        "408 Kincardine Terrace",
+        "Milton, Ontario",
+        "L9T 8E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MW&CO Realty II Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ryan Grevers",
+        "35 Perry St",
+        "Woodstock, Ontario",
+        "N4S 3C4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 14",
+      "Plan 41R-2471, Parts 2-4",
+      "Plan 41R-7532, Parts 1 & 2",
+      "",
+      "PIN: 00110-1125",
+      "",
+      "N side Dundas St, W of Woodall Way",
+      "",
+      "2.92 acre"
+    ],
+    "arn_text": "32 42 020 120 12400",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,700,000   rate: Prime plus 6.0% per annum.",
+      "registered: 06/03/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "43 / 96",
+      "rt_id": "RT143523"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "1321 DUNDAS ST",
+    "postcode": "N4S 7V9",
+    "municipality": "Woodstock",
+    "region": "Oxford County",
+    "date": "06/03/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.92",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "00110-1125",
+    "rollno": "32 42 020 120 12400"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "1321 DUNDAS ST"
+    ],
+    "city_region": "Woodstock : Oxford County",
+    "date_text": "03 Jun 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2091992 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "MW&CO Realty II Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

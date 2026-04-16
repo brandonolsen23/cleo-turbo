@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT182445",
+  "source_folder": "Bruce/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182445",
+      "source_folder": "Bruce/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "612 MAIN ST"
+      ],
+      "city_region": "South Bruce Peninsula : Bruce",
+      "date_text": "12 Jan 2024",
+      "price_text": "$3,425,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Loca Properties (AB-ON) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Oak Street Real Estate Capital, LLC",
+        "30 N LaSalle St, Ste 4140",
+        "Chicago, IL",
+        "USA - 60602"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sauble District Inc     833-308-7348"
+      ],
+      "trade_name": "District REIT",
+      "contact_lines": [
+        "Attn: Carmen Campagnaro",
+        "3410 South Service Rd, Ste 201",
+        "Burlington, Ontario",
+        "L7N 3T2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 435,",
+      "Lots 19-21, 36-38 & Part Lot 18",
+      "Block A",
+      "",
+      "PIN: 33161-0540",
+      "",
+      "2.54 acre"
+    ],
+    "arn_text": "54 00 100 240 00000",
+    "consideration_lines": [
+      "cash: $3,425,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Duca Financial Services Credit Union Ltd",
+      "principal: $3,425,000   rate: 24.0% per annum.",
+      "registered: 01/12/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 44",
+      "rt_id": "RT182445"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "612 MAIN ST",
+    "postcode": "N0H 2G0",
+    "municipality": "South Bruce Peninsula",
+    "region": "Bruce",
+    "date": "01/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.54",
+    "consid": "3425000",
+    "cash": "3425000",
+    "debt": "",
+    "note": "",
+    "pin": "33161-0540",
+    "rollno": "54 00 100 240 00000"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "612 MAIN ST"
+    ],
+    "city_region": "South Bruce Peninsula : Bruce",
+    "date_text": "12 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Loca Properties (AB-ON) Inc"
+    ],
+    "buyer_lines": [
+      "Sauble District Inc"
+    ],
+    "price_text": "$3,425,000"
+  }
+}

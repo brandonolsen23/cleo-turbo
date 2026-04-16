@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT32819",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32819",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1473 PRINCESS ST"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "31 Oct 2003",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Muttart Builders' Suppliers Ltd     416-621-7325"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Brown",
+        "121 Beaver Bend Cres",
+        "Toronto, Ontario",
+        "M9B 5R9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-13640",
+      "Parts 1 & 2",
+      "Except:",
+      "Plan 13R-15252, Part 1",
+      "",
+      "7.60 acre"
+    ],
+    "arn_text": "10 11 060 040 01200",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32819/photo.jpg"
+    },
+    "footer": {
+      "page_position": "213 / 236",
+      "rt_id": "RT32819"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1473 PRINCESS ST",
+    "postcode": "K7M 3E9",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "10/31/2003",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "7.6",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 060 040 01200"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1473 PRINCESS ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "31 Oct 2003",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Muttart Builders' Suppliers Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$500,000"
+  }
+}

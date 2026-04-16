@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT13248",
+  "source_folder": "Peel_Region/retail/p022",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13248",
+      "source_folder": "Peel_Region/retail/p022",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p022/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "2101 DUNDAS ST E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "22 Oct 1998",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "GMRI Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Hemmerly"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "401704 Ontario Ltd",
+        "Eskander Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Dir: Marie Gharibo",
+        "1850 Victoria Park Ave, Ste 401",
+        "Scarborough, Ontario",
+        "M1R 1T1"
+      ]
+    },
+    "description_lines": [
+      "Retail"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Pt Lot A, Concession 1 - NDS"
+    ],
+    "arn_text": "21 05 030 068 14900",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Corwin Mortgage Capital Inc",
+      "principal: $570,000   rate: 8.75% per annum.",
+      "registered: 03/09/2018   due: 10/01/2018",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $525,000   rate: 24.0% per annum.",
+      "registered: 03/06/2018   due: on demand",
+      "",
+      "chargee: The Corporation of the County of Bruce",
+      "principal: $480,000   rate: 8.0% per annum.",
+      "registered: 03/06/2018   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $770,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/07/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1067 / 1087",
+      "rt_id": "RT13248"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "2101 DUNDAS ST E",
+    "postcode": "L4X 1M3",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "10/22/1998",
+    "desc": "Retail",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 030 068 14900"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "2101 DUNDAS ST E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "22 Oct 1998",
+    "note": "",
+    "description": "Retail",
+    "seller_lines": [
+      "GMRI Canada Inc"
+    ],
+    "buyer_lines": [
+      "401704 Ontario Ltd",
+      "Eskander Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

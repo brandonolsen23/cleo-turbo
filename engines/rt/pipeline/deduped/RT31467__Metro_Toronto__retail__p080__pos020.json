@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT31467",
+  "source_folder": "Metro_Toronto/retail/p080",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31467",
+      "source_folder": "Metro_Toronto/retail/p080",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p080/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "1042 - 1048 BROADVIEW AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "22 Aug 2003",
+      "price_text": "$1,050,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Nin Jiom Investments (Canada) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Joseph Au",
+        "130 Bloor St W, Ste 1100",
+        "Toronto, Ontario",
+        "M5S 1N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Nin Jiom Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Partin",
+        "20 Holly St, Ste 300",
+        "Toronto, Ontario",
+        "M4S 3B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-11071, Parts 1 & 2"
+    ],
+    "arn_text": "19 06 032 351 00200",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3971 / 4952",
+      "rt_id": "RT31467"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "1042 - 1048 BROADVIEW AVE",
+    "postcode": "M4K 2S2",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "08/22/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 06 032 351 00200"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "1042 - 1048 BROADVIEW AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "22 Aug 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Nin Jiom Investments (Canada) Inc"
+    ],
+    "buyer_lines": [
+      "Nin Jiom Holdings Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

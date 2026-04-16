@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT184628",
+  "source_folder": "York_Region/retail/p004",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184628",
+      "source_folder": "York_Region/retail/p004",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "10376 YONGE ST",
+        "UNIT 102"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "01 May 2024",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Oxin Trading Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "17 Sprucewood Dr",
+        "Thornhill, Ontario",
+        "L3T 2P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "International First Idea Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Seyed Mousavipour",
+        "10376 Yonge St, Ste 102",
+        "Richmond Hill, Ontario",
+        "L4C 3B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1211",
+      "Level 1, Unit 2",
+      "",
+      "PIN: 29742-0002"
+    ],
+    "arn_text": "19 38 040 020 83563",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184628/0512_103722.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184628/0512_103748.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184628/0512_103749.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184628/0512_103751.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184628/0512_103813.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184628/0512_103816.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "166 / 984",
+      "rt_id": "RT184628"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "10376 YONGE ST, UNIT 102",
+    "postcode": "L4C 3B8",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "05/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "29742-0002",
+    "rollno": "19 38 040 020 83563"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "10376 YONGE ST",
+      "UNIT 102"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "01 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Oxin Trading Group Inc"
+    ],
+    "buyer_lines": [
+      "International First Idea Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

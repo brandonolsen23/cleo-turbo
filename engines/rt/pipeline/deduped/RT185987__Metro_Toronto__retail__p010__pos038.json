@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT185987",
+  "source_folder": "Metro_Toronto/retail/p010",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185987",
+      "source_folder": "Metro_Toronto/retail/p010",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p010/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "1871 DAVENPORT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "24 Jun 2024",
+      "price_text": "$2,750,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1871 Davenport Rd Inc     905-632-2664"
+      ],
+      "trade_name": "McDonalds",
+      "contact_lines": [
+        "Attn: Ryan Sgro",
+        "623 Plains Rd",
+        "Burlington, Ontario",
+        "L7T 2E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-92, Part Lot 9",
+      "",
+      "PIN: 21326-0175",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 032 050 05100",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $2,350,000",
+      "",
+      "Named Individual(s)",
+      "principal: $2,350,211   rate: 8.0% per annum.",
+      "registered: 06/24/2024   due: 02/21/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "489 / 4952",
+      "rt_id": "RT185987"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "1871 DAVENPORT RD",
+    "postcode": "M6N 1B9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/24/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "2750000",
+    "cash": "400000",
+    "debt": "2350000",
+    "note": "Related Parties",
+    "pin": "21326-0175",
+    "rollno": "19 04 032 050 05100"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "1871 DAVENPORT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "24 Jun 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1871 Davenport Rd Inc"
+    ],
+    "price_text": "$2,750,000"
+  }
+}

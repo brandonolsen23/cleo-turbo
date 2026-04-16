@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT183539",
+  "source_folder": "York_Region/retail/p004",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183539",
+      "source_folder": "York_Region/retail/p004",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 DOCTOR KAY DR",
+        "50 DR KAY DR",
+        "UNIT C18"
+      ],
+      "city_region": "King : York Region",
+      "date_text": "05 Mar 2024",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000322670 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "65 Worthington Ave",
+        "Richmond Hill, Ontario",
+        "L4E 2S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2160538 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gurvinder Pabla",
+        "130 Village Green Dr",
+        "Woodbridge, Ontario",
+        "L4L 9G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1399",
+      "Level 1, Unit 18",
+      "",
+      "PIN: 29930-0018"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142115.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142130.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142131.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142151.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142746.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142747.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142748.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142753a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142753b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1835/RT183539/0317_142816.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "174 / 984",
+      "rt_id": "RT183539"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "50 DOCTOR KAY DR, 50 DR KAY DR, UNIT C18",
+    "postcode": "L0G 1T0",
+    "municipality": "King",
+    "region": "York Region",
+    "date": "03/05/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "29930-0018",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "50 DOCTOR KAY DR",
+      "50 DR KAY DR",
+      "UNIT C18"
+    ],
+    "city_region": "King : York Region",
+    "date_text": "05 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000322670 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2160538 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

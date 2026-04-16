@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT34434",
+  "source_folder": "Metro_Toronto/multifamily/p095",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34434",
+      "source_folder": "Metro_Toronto/multifamily/p095",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p095/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "1649 BATHURST ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Mar 2004",
+      "price_text": "$915,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "3871746 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Max Pencer",
+        "490 Adelaide St W, Ste 304",
+        "Toronto, Ontario",
+        "M5V 1T2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-347",
+      "Lots 13 & 14, E/S Bathurst St",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "19 04 112 540 00100",
+    "consideration_lines": [
+      "cash: $915,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT344/RT34434/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4706 / 6031",
+      "rt_id": "RT34434"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "1649 BATHURST ST",
+    "postcode": "M5P 3J6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/05/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "915000",
+    "cash": "915000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 112 540 00100"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "1649 BATHURST ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Mar 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "3871746 Canada Inc"
+    ],
+    "price_text": "$915,000"
+  }
+}

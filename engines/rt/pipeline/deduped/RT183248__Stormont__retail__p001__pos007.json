@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT183248",
+  "source_folder": "Stormont/retail/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183248",
+      "source_folder": "Stormont/retail/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "120 NINTH ST E",
+        "120 9TH ST E"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "22 Feb 2024",
+      "price_text": "$2,860,100",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RKK Investments Inc",
+        "Rajiv Maini"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2690 Brookdale Ave, Unit 2",
+        "Cornwall, Ontario",
+        "K6J 5Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JYSK Linen'n Furniture Inc     604-472-0722"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ludvik Kristjansson",
+        "25 King Edward St",
+        "Coquitlam, British Columbia",
+        "V3K 4S8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 52R-8704, Part 3",
+      "",
+      "PIN: 60178-0271",
+      "",
+      "1.31 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,860,100     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 29",
+      "rt_id": "RT183248"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "120 NINTH ST E, 120 9TH ST E",
+    "postcode": "K6H 2T9",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "02/22/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.31",
+    "consid": "2860100",
+    "cash": "2860100",
+    "debt": "",
+    "note": "",
+    "pin": "60178-0271",
+    "rollno": ""
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "120 NINTH ST E",
+      "120 9TH ST E"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "22 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "RKK Investments Inc",
+      "Rajiv Maini"
+    ],
+    "buyer_lines": [
+      "JYSK Linen'n Furniture Inc"
+    ],
+    "price_text": "$2,860,100"
+  }
+}

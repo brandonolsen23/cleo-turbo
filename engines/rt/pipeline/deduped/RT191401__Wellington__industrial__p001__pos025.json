@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT191401",
+  "source_folder": "Wellington/industrial/p001",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191401",
+      "source_folder": "Wellington/industrial/p001",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/industrial/p001/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "354 ELIZABETH ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "08 Apr 2025",
+      "price_text": "$1,775,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "464454 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "354 Elizabeth St",
+        "Guelph, Ontario",
+        "N1E 2X7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "563596 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Adams",
+        "354 Elizabeth St",
+        "Guelph, Ontario",
+        "N1E 2X7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Range 3 - Div F, Part Lot 4",
+      "As in Inst No ROS-643539",
+      "",
+      "PIN: 71332-0121",
+      "",
+      "1.47 acre"
+    ],
+    "arn_text": "23 08 010 009 06800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $155,000",
+      "other: $1,620,000",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $600,000   rate: 24.0% per annum",
+      "registered: 04/08/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "26 / 430",
+      "rt_id": "RT191401"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "354 ELIZABETH ST",
+    "postcode": "N1E 2X7",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "04/08/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.47",
+    "consid": "1775000",
+    "cash": "",
+    "debt": "155000",
+    "note": "Related Parties",
+    "pin": "71332-0121",
+    "rollno": "23 08 010 009 06800"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "354 ELIZABETH ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "08 Apr 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "464454 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "563596 Ontario Inc"
+    ],
+    "price_text": "$1,775,000"
+  }
+}

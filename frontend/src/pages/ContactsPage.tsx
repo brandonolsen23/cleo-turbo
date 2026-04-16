@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Heading, Text, Button, Badge } from "@radix-ui/themes";
-import { MagnifyingGlass, CaretUp, CaretDown } from "@phosphor-icons/react";
+import { MagnifyingGlass, CaretUp, CaretDown, Phone } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
 import { formatPhone, formatCompact, assetClassLabel } from "../lib/utils";
 import { getContactTypeLabel } from "../types";
+import { propertyTypeLabel, propertyTypeColor } from "../lib/theme";
 import FilterPanel, {
   RangeFilter,
   SelectFilter,
@@ -83,15 +84,17 @@ export default function ContactsPage() {
   const [loading, setLoading] = useState(false);
   const [searchInput, setSearchInput] = useState(q);
   const debounceRef = useRef<ReturnType<typeof setTimeout>>();
+  const fetchIdRef = useRef(0);
 
   // Load filter options once
   useEffect(() => {
     fetchApi<ContactFilterOptions>("/contacts/filters").then(setFilterOptions);
   }, []);
 
-  // Fetch data whenever URL params change
+  // Fetch data whenever URL params change (stale-response safe)
   const fetchData = useCallback(() => {
     setLoading(true);
+    const currentFetchId = ++fetchIdRef.current;
     const params: Record<string, string> = {
       page: String(page),
       per_page: "100",
@@ -111,8 +114,13 @@ export default function ContactsPage() {
     if (maxAssetClassCount) params.max_asset_class_count = maxAssetClassCount;
 
     fetchApi<BrowseResponse<ContactBrowseItem>>("/contacts", params)
-      .then(setData)
-      .finally(() => setLoading(false));
+      .then((res) => {
+        // Only apply if this is still the latest request
+        if (currentFetchId === fetchIdRef.current) setData(res);
+      })
+      .finally(() => {
+        if (currentFetchId === fetchIdRef.current) setLoading(false);
+      });
   }, [page, sort, order, q, status, contactType, minTransactions, maxTransactions, minBuyValue, maxBuyValue, region, assetClass, minAssetClassCount, maxAssetClassCount]);
 
   useEffect(() => {
@@ -302,10 +310,16 @@ export default function ContactsPage() {
                 Company
               </th>
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Type
+                City
+              </th>
+              <th className="text-center px-2 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)", width: 40 }}>
+                <Phone size={13} style={{ color: "var(--gray-9)", margin: "0 auto" }} />
               </th>
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Phone
+                Primary Type
+              </th>
+              <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
+                Secondary Type
               </th>
               <SortHeader label="Txns" field="transaction_count" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <SortHeader label="Buy Value" field="total_buy_value" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
@@ -326,9 +340,29 @@ export default function ContactsPage() {
                   {c.company_name || "—"}
                 </td>
                 <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>
-                  {getContactTypeLabel(c.contact_type) || "—"}
+                  {c.mailing_city || "—"}
                 </td>
-                <td className="px-4 py-2">{formatPhone(c.phone)}</td>
+                <td className="px-2 py-2 text-center" style={{ width: 40 }}>
+                  {c.phone ? (
+                    <span className="inline-flex items-center justify-center" title={formatPhone(c.phone)}>
+                      <Phone size={14} style={{ color: "var(--gray-9)" }} />
+                    </span>
+                  ) : null}
+                </td>
+                <td className="px-4 py-2">
+                  {c.dominant_type ? (
+                    <Badge size="1" color={propertyTypeColor(c.dominant_type)} variant="soft">
+                      {propertyTypeLabel(c.dominant_type)}
+                    </Badge>
+                  ) : "—"}
+                </td>
+                <td className="px-4 py-2">
+                  {c.secondary_type ? (
+                    <Badge size="1" color={propertyTypeColor(c.secondary_type)} variant="soft">
+                      {propertyTypeLabel(c.secondary_type)}
+                    </Badge>
+                  ) : "—"}
+                </td>
                 <td className="px-4 py-2 text-right">{c.transaction_count}</td>
                 <td className="px-4 py-2 text-right" style={{ color: c.total_buy_value ? "var(--gray-12)" : "var(--gray-8)" }}>
                   {c.total_buy_value ? formatCompact(c.total_buy_value) : "—"}
@@ -346,8 +380,17 @@ export default function ContactsPage() {
             ))}
             {data?.results.length === 0 && (
               <tr>
-                <td colSpan={7} className="px-4 py-8 text-center" style={{ color: "var(--gray-9)" }}>
-                  No contacts match your filters.
+                <td colSpan={9} className="px-4 py-12 text-center" style={{ color: "var(--gray-9)" }}>
+                  {status === "engaged" ? (
+                    <div className="flex flex-col items-center gap-1.5">
+                      <Text size="2" weight="medium" style={{ color: "var(--gray-11)" }}>No engaged contacts yet</Text>
+                      <Text size="2" style={{ color: "var(--gray-9)" }}>
+                        Open a contact and click "Promote to Engaged" to track them here.
+                      </Text>
+                    </div>
+                  ) : (
+                    "No contacts match your filters."
+                  )}
                 </td>
               </tr>
             )}

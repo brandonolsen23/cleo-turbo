@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT198070",
+  "source_folder": "Halton_Region/all/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198070",
+      "source_folder": "Halton_Region/all/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/all/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "246004 SOUTHGATE RD 24"
+      ],
+      "city_region": "Southgate : Grey County",
+      "date_text": "27 Mar 2026",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001475748 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Noah Martin",
+        "246001 Southgate Rd 24",
+        "Proton Station, Ontario",
+        "N0C 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 16 - Proton, Lot 23",
+      "",
+      "PIN: 37278-0068",
+      "",
+      "114.44 acre"
+    ],
+    "arn_text": "42 07 090 003 06301",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1980/RT198070/air1.jpg",
+        "/assets/files/RT19/RT1980/RT198070/air2.jpg",
+        "/assets/files/RT19/RT1980/RT198070/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 1819",
+      "rt_id": "RT198070"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "246004 SOUTHGATE RD 24",
+    "postcode": "N0C 1L0",
+    "municipality": "Southgate",
+    "region": "Grey County",
+    "date": "03/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "114.44",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "37278-0068",
+    "rollno": "42 07 090 003 06301"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "246004 SOUTHGATE RD 24"
+    ],
+    "city_region": "Southgate : Grey County",
+    "date_text": "27 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001475748 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

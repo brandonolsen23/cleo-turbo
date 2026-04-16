@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT186170",
+  "source_folder": "Wellington/retail/p001",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186170",
+      "source_folder": "Wellington/retail/p001",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "7293 WELLINGTON RD 86"
+      ],
+      "city_region": "Mapleton : Wellington",
+      "date_text": "21 Jun 2024",
+      "price_text": "$2,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "ESM Farm Equipment Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7293 Wellington Rd 86",
+        "Wallenstein, Ontario",
+        "N0B 2S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000922588 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Scott Ruppert",
+        "7293 Wellington 86",
+        "Wallenstein, Ontario",
+        "N0B 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Peel, Part Lot 18",
+      "Plan 61R-6138, Part 1",
+      "As in Inst No DN-25408",
+      "",
+      "PIN: 71451-0062",
+      "",
+      "4.15 acre"
+    ],
+    "arn_text": "23 32 000 001 01920",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $2,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "29 / 269",
+      "rt_id": "RT186170"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "7293 WELLINGTON RD 86",
+    "postcode": "N0B 2S0",
+    "municipality": "Mapleton",
+    "region": "Wellington",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.15",
+    "consid": "2000000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "71451-0062",
+    "rollno": "23 32 000 001 01920"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "7293 WELLINGTON RD 86"
+    ],
+    "city_region": "Mapleton : Wellington",
+    "date_text": "21 Jun 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "ESM Farm Equipment Ltd"
+    ],
+    "buyer_lines": [
+      "1000922588 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

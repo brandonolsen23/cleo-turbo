@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT109012",
+  "source_folder": "Simcoe_County/retail/p006",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT109012",
+      "source_folder": "Simcoe_County/retail/p006",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p006/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "62 MISSISSAGA ST E"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "01 Jun 2015",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "58 Mississaga Street Inc     647-351-7711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Charles Dyer",
+        "c/o Sovereign Asset Management Inc",
+        "42 Cawthra Ave",
+        "Toronto, Ontario",
+        "M6N 5B3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 8, Part Lots 4 & 5",
+      "N/S Mississaga St",
+      "As in Inst No ORI-15880",
+      "Except:",
+      "Inst No ORI-35620",
+      "",
+      "PIN: 58667-0024",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "43 52 040 401 02000",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $500,000   rate: 24.0% per annum.",
+      "registered: 06/01/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1090/RT109012/0619_123538.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1090/RT109012/0619_123556.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1090/RT109012/0619_123617.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1090/RT109012/0619_123641.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1090/RT109012/0619_123647.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "274 / 712",
+      "rt_id": "RT109012"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "62 MISSISSAGA ST E",
+    "postcode": "L3V 1V5",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "06/01/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "58667-0024",
+    "rollno": "43 52 040 401 02000"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "62 MISSISSAGA ST E"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "01 Jun 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "58 Mississaga Street Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

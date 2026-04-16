@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT50454",
+  "source_folder": "Durham_Region/retail/p007",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50454",
+      "source_folder": "Durham_Region/retail/p007",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p007/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 TAUNTON RD E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "16 Aug 2006",
+      "price_text": "$14,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Brookfield Properties (GCS) Ltd",
+        "Jerphil Investments Ltd     416-369-2300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Deborah Rogers",
+        "BCE Place",
+        "181 Bay St, Ste 330",
+        "Toronto, Ontario",
+        "M5J 2T3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Nurit Construction Ltd     416-923-8300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Michael Lax",
+        "40 Pleasant Blvd, Ste 800",
+        "Toronto, Ontario",
+        "M4T 1J9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 18 units 53,588 sf @ $263"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 8",
+      "Plan 40R-3656, Parts 1-6",
+      "",
+      "5.65 acre"
+    ],
+    "arn_text": "18 13 060 025 11000",
+    "consideration_lines": [
+      "cash: $14,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Great-West Life Assurance Co",
+      "principal: $9,165,000   rate: 5.43% per annum",
+      "registered: 08/16/2006   due: 09/01/2016"
+    ],
+    "broker_lines": [
+      "Brascan Financial: Leonard Abramsky, 416-956-5220"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102704.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102709.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102713.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102726.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102809.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102932.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT504/RT50454/0827_102933.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT504/RT50454/air1.jpg",
+        "/assets/files/RT5/RT504/RT50454/air2.jpg",
+        "/assets/files/RT5/RT504/RT50454/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "332 / 506",
+      "rt_id": "RT50454"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "300 TAUNTON RD E",
+    "postcode": "L1G 7T4",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "08/16/2006",
+    "desc": "Retail Plaza - 1 storey; 18 units 53,588 sf @ $263",
+    "bldg": "53,588 sf",
+    "acreage": "5.65",
+    "consid": "14100000",
+    "cash": "14100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 060 025 11000"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "300 TAUNTON RD E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "16 Aug 2006",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 18 units 53,588 sf @ $263",
+    "seller_lines": [
+      "Brookfield Properties (GCS) Ltd",
+      "Jerphil Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Nurit Construction Ltd"
+    ],
+    "price_text": "$14,100,000"
+  }
+}

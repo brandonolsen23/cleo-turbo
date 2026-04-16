@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT21602",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21602",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "19111 CENTRE RD"
+      ],
+      "city_region": "E. Gwillimbury : York Region",
+      "date_text": "04 Jun 2001",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mary J. Smith"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "623 Varney Rd, RR 2",
+        "Keswick, Ontario",
+        "L4P 3E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1461823 Ontario Ltd     905-473-9374"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Laura Philp",
+        "82 Lowther Ave",
+        "Toronto, Ontario",
+        "M5R  1E1"
+      ]
+    },
+    "description_lines": [
+      "Retirement Home - Braeside Lodge; 22 units @ $25,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 403, Lot 138"
+    ],
+    "arn_text": "19 54 000 554 54400",
+    "consideration_lines": [
+      "cash: $45,000     assumed/vtb debt: $505,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT216/RT21602/photo.jpg"
+    },
+    "footer": {
+      "page_position": "244 / 263",
+      "rt_id": "RT21602"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "19111 CENTRE RD",
+    "postcode": "L0G 1M0",
+    "municipality": "E. Gwillimbury",
+    "region": "York Region",
+    "date": "06/04/2001",
+    "desc": "Retirement Home - Braeside Lodge; 22 units @ $25,000",
+    "bldg": "22 units",
+    "acreage": "",
+    "consid": "550000",
+    "cash": "45000",
+    "debt": "505000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 54 000 554 54400"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "19111 CENTRE RD"
+    ],
+    "city_region": "E. Gwillimbury : York Region",
+    "date_text": "04 Jun 2001",
+    "note": "",
+    "description": "Retirement Home - Braeside Lodge; 22 units @ $25,000",
+    "seller_lines": [
+      "Mary J. Smith"
+    ],
+    "buyer_lines": [
+      "1461823 Ontario Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

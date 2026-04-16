@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT71080",
+  "source_folder": "Metro_Toronto/retail/p055",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71080",
+      "source_folder": "Metro_Toronto/retail/p055",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p055/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "2298 QUEEN ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "22 Feb 2010",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "393078 Ontario Ltd     905-898-1342"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lawrence Friel",
+        "Alexander Schneider",
+        "Solicitor",
+        "291 Davis Dr, Unit 8",
+        "Newmarket, Ontario",
+        "L3Y 2N6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1645300 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Luciano Sammut",
+        "2 Bessarion Rd",
+        "North York, Ontario",
+        "M2K 1H9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1408, Part Lot 1",
+      "As in Inst No CT-316372",
+      "",
+      "PIN: 21008-0031",
+      "",
+      "NE corner Queen St E and Scarborough Rd",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 093 190 07700",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: GR Huisman Enterprises Ltd",
+      "principal: $650,000   rate: 7.5% per annum",
+      "registered: 02/22/2010   due: 02/07/2015",
+      "",
+      "chargee: 393078 Ontario Ltd",
+      "principal: $100,000   rate: 0% per annum",
+      "registered: 02/22/2010   due: 02/22/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT710/RT71080/0314_103353.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT710/RT71080/0314_103406.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT710/RT71080/0314_103435.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT710/RT71080/air1.jpg",
+        "/assets/files/RT7/RT710/RT71080/air2.jpg",
+        "/assets/files/RT7/RT710/RT71080/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2715 / 4952",
+      "rt_id": "RT71080"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "2298 QUEEN ST E",
+    "postcode": "M4E 1G8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/22/2010",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "21008-0031",
+    "rollno": "19 04 093 190 07700"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "2298 QUEEN ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "22 Feb 2010",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "393078 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1645300 Ontario Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

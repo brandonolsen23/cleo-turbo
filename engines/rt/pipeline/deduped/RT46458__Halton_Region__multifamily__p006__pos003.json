@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT46458",
+  "source_folder": "Halton_Region/multifamily/p006",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46458",
+      "source_folder": "Halton_Region/multifamily/p006",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p006/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "286 - 290 LAKESHORE RD E"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "16 Jan 2006",
+      "price_text": "$1,745,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Community Trust Co Ltd     416-763-2291"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edward Shao",
+        "2271 Bloor St W",
+        "Toronto, Ontario",
+        "M6S 1P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Robinshore Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sabatino Carusi",
+        "290 Lakeshore Rd E",
+        "Oakville, Ontario",
+        "L6J 1J2"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1, Block 27",
+      "Part Lots A & D",
+      "As in Inst No 164370",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "24 01 040 010 04400",
+    "consideration_lines": [
+      "cash: $1,745,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT464/RT46458/air1.jpg",
+        "/assets/files/RT4/RT464/RT46458/air2.jpg",
+        "/assets/files/RT4/RT464/RT46458/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT464/RT46458/photo.jpg"
+    },
+    "footer": {
+      "page_position": "254 / 380",
+      "rt_id": "RT46458"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "286 - 290 LAKESHORE RD E",
+    "postcode": "L6J 1J2",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "01/16/2006",
+    "desc": "Retail/Res Bldg",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1745000",
+    "cash": "1745000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "24 01 040 010 04400"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "286 - 290 LAKESHORE RD E"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "16 Jan 2006",
+    "note": "Power of Sale",
+    "description": "Retail/Res Bldg",
+    "seller_lines": [
+      "Community Trust Co Ltd"
+    ],
+    "buyer_lines": [
+      "Robinshore Investments Ltd"
+    ],
+    "price_text": "$1,745,000"
+  }
+}

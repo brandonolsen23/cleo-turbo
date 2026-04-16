@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT70774",
+  "source_folder": "Durham_Region/retail/p006",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70774",
+      "source_folder": "Durham_Region/retail/p006",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p006/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "925 TAUNTON RD E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "09 Feb 2010",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Aidan Land Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Wilson",
+        "342 Mary St N",
+        "Oshawa, Ontario",
+        "L1G 5C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "NDA Investment Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Devon Biddle",
+        "393 Hillcroft St",
+        "Oshawa, Ontario",
+        "L1B 2M4"
+      ]
+    },
+    "description_lines": [
+      "Bank Branch - 1 storey; 5,000 sf @ $500",
+      "",
+      "Leased to the Bank of Montreal"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 4",
+      "Plan 40R-25934, Parts 3 & 4",
+      "",
+      "PIN: 16426-1622",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,400,000   rate: 5.74% per annum",
+      "registered: 02/09/2010   due: 03/01/2015",
+      "",
+      "chargee: Auto Workers Community Credit Union Ltd",
+      "principal: $700,000   rate: 6.1% per annum",
+      "registered: 02/09/2010   due: 02/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT707/RT70774/0220_140213.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT707/RT70774/0220_140256.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT707/RT70774/0220_140311.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT707/RT70774/0220_140407.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT707/RT70774/air1.jpg",
+        "/assets/files/RT7/RT707/RT70774/air2.jpg",
+        "/assets/files/RT7/RT707/RT70774/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "272 / 506",
+      "rt_id": "RT70774"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "925 TAUNTON RD E",
+    "postcode": "L1H 7K5",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "02/09/2010",
+    "desc": "Bank Branch - 1 storey; 5,000 sf @ $500",
+    "bldg": "5,000 sf",
+    "acreage": ".5",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "16426-1622",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "925 TAUNTON RD E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "09 Feb 2010",
+    "note": "",
+    "description": "Bank Branch - 1 storey; 5,000 sf @ $500",
+    "seller_lines": [
+      "Aidan Land Corp"
+    ],
+    "buyer_lines": [
+      "NDA Investment Ltd"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

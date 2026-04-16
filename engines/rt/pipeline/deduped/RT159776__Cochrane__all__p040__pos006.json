@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT159776",
+  "source_folder": "Cochrane/all/p040",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT159776",
+      "source_folder": "Cochrane/all/p040",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p040/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 9",
+        "PART LOT 25"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "15 Apr 2021",
+      "price_text": "$3,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2813961 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Davidson",
+        "3574 Timmins Rd",
+        "Pakenham, Ontario",
+        "K0A 2X0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 25",
+      "Plan 4R-28248, Parts 4-6 & 11",
+      "",
+      "PIN: 04449-1746",
+      "",
+      "6.82 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT15/RT1597/RT159776/air1.jpg",
+        "/assets/files/RT15/RT1597/RT159776/air2.jpg",
+        "/assets/files/RT15/RT1597/RT159776/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1957 / 10920",
+      "rt_id": "RT159776"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "CONC 9, PART LOT 25",
+    "postcode": "",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "04/15/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.82",
+    "consid": "3000000",
+    "cash": "3000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04449-1746",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "CONC 9",
+      "PART LOT 25"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "15 Apr 2021",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2813961 Ontario Corp"
+    ],
+    "price_text": "$3,000,000"
+  }
+}

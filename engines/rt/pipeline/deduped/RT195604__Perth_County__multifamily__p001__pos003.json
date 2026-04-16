@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT195604",
+  "source_folder": "Perth_County/multifamily/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195604",
+      "source_folder": "Perth_County/multifamily/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/multifamily/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "146 CHURCH ST"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "17 Nov 2025",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2280559 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "161 West 35th St",
+        "Hamilton, Ontario",
+        "L9C 5K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001389491 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Samuel Hall",
+        "c/o 296 Briarhill Dr",
+        "Stratford, Ontario",
+        "N5A 7S2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44R-655, Part 1",
+      "",
+      "PIN: 53142-0086",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "31 11 030 020 03000",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,200,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/17/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 97",
+      "rt_id": "RT195604"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "146 CHURCH ST",
+    "postcode": "N5A 2R5",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "11/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "53142-0086",
+    "rollno": "31 11 030 020 03000"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "146 CHURCH ST"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "17 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2280559 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001389491 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

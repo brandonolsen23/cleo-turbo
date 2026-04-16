@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT84064",
+  "source_folder": "York_Region/retail/p010",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT84064",
+      "source_folder": "York_Region/retail/p010",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "10323 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "06 Mar 2012",
+      "price_text": "$1,980,000",
+      "note": "Purchase Agreement"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sam Group Investments Inc     416-809-1998"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2136518 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Elham Moaveni",
+        "63 Frank Endean Rd",
+        "Richmond Hill, Ontario",
+        "L4S 1X4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,500 sf @ $566",
+      "",
+      "Vacant",
+      "",
+      "Last transferred in July 2011 for $1,600,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10030, Lot 32",
+      "",
+      "PIN: 03172-0081",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "19 38 020 010 81900",
+    "consideration_lines": [
+      "cash: $1,980,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84064/0324_110306.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84064/0324_110322.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84064/0324_110359.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84064/0324_110447.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT840/RT84064/0324_110453.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT840/RT84064/air1.jpg",
+        "/assets/files/RT8/RT840/RT84064/air2.jpg",
+        "/assets/files/RT8/RT840/RT84064/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "458 / 984",
+      "rt_id": "RT84064"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "10323 YONGE ST",
+    "postcode": "L4C 3C1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "03/06/2012",
+    "desc": "Retail Bldg - 1 storey; 3,500 sf @ $566",
+    "bldg": "3,500 sf",
+    "acreage": ".17",
+    "consid": "1980000",
+    "cash": "1980000",
+    "debt": "",
+    "note": "Purchase Agreement",
+    "pin": "03172-0081",
+    "rollno": "19 38 020 010 81900"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "10323 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "06 Mar 2012",
+    "note": "Purchase Agreement",
+    "description": "Retail Bldg - 1 storey; 3,500 sf @ $566",
+    "seller_lines": [
+      "Sam Group Investments Inc"
+    ],
+    "buyer_lines": [
+      "2136518 Ontario Corp"
+    ],
+    "price_text": "$1,980,000"
+  }
+}

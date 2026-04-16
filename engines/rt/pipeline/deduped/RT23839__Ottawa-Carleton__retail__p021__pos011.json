@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23839",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23839",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1481 - 1684 GREENBANK RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "21 Dec 2001",
+      "price_text": "$11,633,315",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Village Square Mall (Barrhaven) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Bradley",
+        "15 Fitzgerald Rd, Ste 200",
+        "Ottawa, Ontario",
+        "K2H 9G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Atlantic Shopping Centres Ltd     902-755-4440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bram Potechin",
+        "115 King St",
+        "Stellarton, Nova Scotia",
+        "B0K 1S0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-8100, Part 1",
+      "Except Plan 4R-10374",
+      "Parts 1, 2, 4 & 5"
+    ],
+    "arn_text": "06 14 120 695 01101",
+    "consideration_lines": [
+      "cash: $11,633,315     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT238/RT23839/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1012 / 1141",
+      "rt_id": "RT23839"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1481 - 1684 GREENBANK RD",
+    "postcode": "K2J 4Y6",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "12/21/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "11633315",
+    "cash": "11633315",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 120 695 01101"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1481 - 1684 GREENBANK RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "21 Dec 2001",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "The Village Square Mall (Barrhaven) Inc"
+    ],
+    "buyer_lines": [
+      "Atlantic Shopping Centres Ltd"
+    ],
+    "price_text": "$11,633,315"
+  }
+}

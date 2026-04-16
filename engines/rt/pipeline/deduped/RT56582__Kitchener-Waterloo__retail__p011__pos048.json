@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT56582",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56582",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "410 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "12 Jul 2007",
+      "price_text": "$1,695,100",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Vandermac Investments Inc     519-651-3288"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mary Vanderlaan",
+        "533 River Rd",
+        "Cambridge, Ontario",
+        "N3C 2B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kadris REIT Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kamal Elkadri",
+        "32 Atwood Dr",
+        "Cambridge, Ontario",
+        "N1T 1L4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1376, Lot 26",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "30 06 150 015 05600",
+    "consideration_lines": [
+      "cash: $1,695,100     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,000,000   rate: 18.0% per annum",
+      "registered: 07/12/2007   due: 08/01/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT565/RT56582/0805_080738.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT565/RT56582/0805_080816.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT565/RT56582/0805_080818.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT565/RT56582/air1.jpg",
+        "/assets/files/RT5/RT565/RT56582/air2.jpg",
+        "/assets/files/RT5/RT565/RT56582/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "549 / 752",
+      "rt_id": "RT56582"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "410 HESPELER RD",
+    "postcode": "N1R 6J6",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "07/12/2007",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".78",
+    "consid": "1695100",
+    "cash": "1695100",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 150 015 05600"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "410 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "12 Jul 2007",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Vandermac Investments Inc"
+    ],
+    "buyer_lines": [
+      "Kadris REIT Ltd"
+    ],
+    "price_text": "$1,695,100"
+  }
+}

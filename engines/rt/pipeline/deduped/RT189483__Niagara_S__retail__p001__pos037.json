@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT189483",
+  "source_folder": "Niagara_S/retail/p001",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189483",
+      "source_folder": "Niagara_S/retail/p001",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p001/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "918 SOUTHWORTH ST"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "06 Jan 2025",
+      "price_text": "$3,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1814174 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Dan Dolan",
+        "742 Broadway",
+        "Welland, Ontario",
+        "L3C 5M8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "6393250 Canada Inc     514-253-3110"
+      ],
+      "trade_name": "Groupe Deschenes",
+      "contact_lines": [
+        "Attn: Marc Lapierre",
+        "3901 rue Jarry E, Ste 250",
+        "Montreal, Quebec",
+        "H1Z 2G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Gore Conc 7 - Crowland, Part Lot 23",
+      "As in Inst No RO-724349",
+      "",
+      "PIN: 64408-0072",
+      "",
+      "2.34 acre"
+    ],
+    "arn_text": "27 19 060 008 17400",
+    "consideration_lines": [
+      "cash: $3,350,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1894/RT189483/0223_093240.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1894/RT189483/0223_093247.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1894/RT189483/0223_093326.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1894/RT189483/0223_093329.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1894/RT189483/0223_093330.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1894/RT189483/0223_093402.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "38 / 324",
+      "rt_id": "RT189483"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "918 SOUTHWORTH ST",
+    "postcode": "L3B 2A5",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "01/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.34",
+    "consid": "3350000",
+    "cash": "3350000",
+    "debt": "",
+    "note": "",
+    "pin": "64408-0072",
+    "rollno": "27 19 060 008 17400"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "918 SOUTHWORTH ST"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "06 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1814174 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "6393250 Canada Inc"
+    ],
+    "price_text": "$3,350,000"
+  }
+}

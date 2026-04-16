@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT197380",
+  "source_folder": "Lambton/office/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197380",
+      "source_folder": "Lambton/office/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/office/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "800 UPPER CANADA DR"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "29 Jan 2026",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mellon Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1550 Confederation Line",
+        "Sarnia, Ontario",
+        "N7W 1A3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "M3H Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Laura Hanlon",
+        "800 Upper Canada Dr",
+        "Sarnia, Ontario",
+        "N7W 1A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-2513, Part 1",
+      "",
+      "PIN: 43137-0196",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "38 29 400 051 45200",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 34",
+      "rt_id": "RT197380"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "800 UPPER CANADA DR",
+    "postcode": "N7W 1A4",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "01/29/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".69",
+    "consid": "925000",
+    "cash": "925000",
+    "debt": "",
+    "note": "",
+    "pin": "43137-0196",
+    "rollno": "38 29 400 051 45200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "800 UPPER CANADA DR"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "29 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mellon Inc"
+    ],
+    "buyer_lines": [
+      "M3H Holdings Inc"
+    ],
+    "price_text": "$925,000"
+  }
+}

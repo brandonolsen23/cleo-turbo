@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT39005",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39005",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "4515 DUNDAS ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "01 Dec 2004",
+      "price_text": "$10,140,802",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "1334218 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Rudderham",
+        "700 Applewood Cres, Ste 100",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Calloway REIT (Burlington) Inc     403-299-9600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Storey",
+        "Shea Nerland Calnan",
+        "715 Fifth Ave SW, Ste 1900",
+        "Calgary, Alberta",
+        "T2P 2X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, NDS, Part Lot 6",
+      "Plan 20R-13042, Part 2",
+      "Together with Inst 708521",
+      "Except:",
+      "Plan 20R-13793, Part 3",
+      "",
+      "18.06 acre"
+    ],
+    "arn_text": "24 02 030 309 08609",
+    "consideration_lines": [
+      "cash: $10,140,802     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT390/RT39005/photo.jpg"
+    },
+    "footer": {
+      "page_position": "441 / 613",
+      "rt_id": "RT39005"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "4515 DUNDAS ST",
+    "postcode": "L7M 5B4",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "12/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "18.06",
+    "consid": "10140802",
+    "cash": "10140802",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "24 02 030 309 08609"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "4515 DUNDAS ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "01 Dec 2004",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "1334218 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Calloway REIT (Burlington) Inc"
+    ],
+    "price_text": "$10,140,802"
+  }
+}

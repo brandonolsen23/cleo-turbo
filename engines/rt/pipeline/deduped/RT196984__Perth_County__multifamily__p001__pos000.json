@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT196984",
+  "source_folder": "Perth_County/multifamily/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196984",
+      "source_folder": "Perth_County/multifamily/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/multifamily/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "2236 LINE 34",
+        "34 HURON STREET"
+      ],
+      "city_region": "Perth E : Perth County",
+      "date_text": "28 Jan 2026",
+      "price_text": "$1,225,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Stasio Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "80 First St W",
+        "Elmira, Ontario",
+        "N3B 1G6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kamary Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gregory Kaufman",
+        "2182 Line 29",
+        "Tavistock, Ontario",
+        "N0B 2R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44R-4913, Part 1",
+      "",
+      "PIN: 53083-0091",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "31 10 060 002 06850",
+    "consideration_lines": [
+      "cash: $1,225,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 97",
+      "rt_id": "RT196984"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "2236 LINE 34  , 34 HURON STREET",
+    "postcode": "",
+    "municipality": "Perth E",
+    "region": "Perth County",
+    "date": "01/28/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "1225000",
+    "cash": "1225000",
+    "debt": "",
+    "note": "",
+    "pin": "53083-0091",
+    "rollno": "31 10 060 002 06850"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "2236 LINE 34",
+      "34 HURON STREET"
+    ],
+    "city_region": "Perth E : Perth County",
+    "date_text": "28 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Stasio Corp"
+    ],
+    "buyer_lines": [
+      "Kamary Properties Inc"
+    ],
+    "price_text": "$1,225,000"
+  }
+}

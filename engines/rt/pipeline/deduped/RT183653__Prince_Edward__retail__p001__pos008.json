@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT183653",
+  "source_folder": "Prince_Edward/retail/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183653",
+      "source_folder": "Prince_Edward/retail/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prince_Edward/retail/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "346 PICTON MAIN ST"
+      ],
+      "city_region": "Prince Edward : Prince Edward",
+      "date_text": "14 Mar 2024",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kids First Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "19 Fireroute 65B",
+        "Havelock, Ontario",
+        "K0L 1Z0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25, Lot 14",
+      "",
+      "PIN: 55069-0022",
+      "",
+      "0.84 acre"
+    ],
+    "arn_text": "13 50 030 035 02400",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1836/RT183653/0629_095131.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1836/RT183653/0629_095200.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1836/RT183653/0629_095208.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1836/RT183653/0629_095235.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1836/RT183653/0629_095236.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1836/RT183653/0629_095318.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 17",
+      "rt_id": "RT183653"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "346 PICTON MAIN ST",
+    "postcode": "K0K 2T0",
+    "municipality": "Prince Edward",
+    "region": "Prince Edward",
+    "date": "03/14/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".84",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "55069-0022",
+    "rollno": "13 50 030 035 02400"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "346 PICTON MAIN ST"
+    ],
+    "city_region": "Prince Edward : Prince Edward",
+    "date_text": "14 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kids First Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

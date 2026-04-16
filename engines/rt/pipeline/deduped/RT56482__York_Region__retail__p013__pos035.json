@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT56482",
+  "source_folder": "York_Region/retail/p013",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56482",
+      "source_folder": "York_Region/retail/p013",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "9100 JANE ST",
+        "UNITS 34 - 36"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "29 Jun 2007",
+      "price_text": "$842,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sonterra Property Development Corp     416-736-4096"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Angelo Baldassarra",
+        "Greenpark Homes",
+        "8700 Dufferin St",
+        "Concord, Ontario",
+        "L4K 4S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "HYT International Inc     647-287-1866"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Xunlin Huang",
+        "56 Hollylane Dr",
+        "Markham, Ontario",
+        "L6C 3J9"
+      ]
+    },
+    "description_lines": [
+      "Retail Condos - 1 storey; 3,433 sf @ $245",
+      "",
+      "Vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1086",
+      "Level 1, Units 34-36"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $842,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "636 / 984",
+      "rt_id": "RT56482"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "9100 JANE ST, UNITS 34 - 36",
+    "postcode": "L4K 0A4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/29/2007",
+    "desc": "Retail Condos - 1 storey; 3,433 sf @ $245",
+    "bldg": "3,433 sf",
+    "acreage": "",
+    "consid": "",
+    "cash": "",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "9100 JANE ST",
+      "UNITS 34 - 36"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "29 Jun 2007",
+    "note": "",
+    "description": "Retail Condos - 1 storey; 3,433 sf @ $245",
+    "seller_lines": [
+      "Sonterra Property Development Corp"
+    ],
+    "buyer_lines": [
+      "HYT International Inc"
+    ],
+    "price_text": "$842,000"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT48615",
+  "source_folder": "Metro_Toronto/multifamily/p121",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48615",
+      "source_folder": "Metro_Toronto/multifamily/p121",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p121/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "85 LAWTON BLVD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Jan 1996",
+      "price_text": "$4,255,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "587125 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruno Zanini",
+        "1365 Yonge St, Ste 308",
+        "Toronto, Ontario",
+        "M4T 2P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "809654 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Clemen Sels",
+        "411 Richmond St E, Ste 302",
+        "Toronto, Ontario",
+        "M5A 3S5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 402-E, Part Lots 10-12"
+    ],
+    "arn_text": "19 04 111 410 02200",
+    "consideration_lines": [
+      "cash: $843,361     assumed/vtb debt: $3,411,639"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6031 / 6031",
+      "rt_id": "RT48615"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "85 LAWTON BLVD",
+    "postcode": "M4V 1Z7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/10/1996",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "4255000",
+    "cash": "843361",
+    "debt": "3411639",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 111 410 02200"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "85 LAWTON BLVD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Jan 1996",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "587125 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "809654 Ontario Ltd"
+    ],
+    "price_text": "$4,255,000"
+  }
+}

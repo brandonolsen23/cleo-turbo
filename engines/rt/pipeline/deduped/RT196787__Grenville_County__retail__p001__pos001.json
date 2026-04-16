@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT196787",
+  "source_folder": "Grenville_County/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196787",
+      "source_folder": "Grenville_County/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grenville_County/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "506 RIDEAU ST"
+      ],
+      "city_region": "North Grenville : Grenville County",
+      "date_text": "21 Jan 2026",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kempten Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1035 Bank St, Ste 102",
+        "Ottawa, Ontario",
+        "K1S 5K3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "VA Rideau Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: N. VanAdrichem",
+        "2282 Bedell Rd",
+        "Kemptville, Ontario",
+        "K0G 1J0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12 - Kemptville, Lot 88",
+      "Except:",
+      "Plan 15R-957, Part 2",
+      "",
+      "PIN: 68124-0223",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $875,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/21/2026   due: 01/21/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 19",
+      "rt_id": "RT196787"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "506 RIDEAU ST",
+    "postcode": "",
+    "municipality": "North Grenville",
+    "region": "Grenville County",
+    "date": "01/21/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "68124-0223",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "506 RIDEAU ST"
+    ],
+    "city_region": "North Grenville : Grenville County",
+    "date_text": "21 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kempten Realty Ltd"
+    ],
+    "buyer_lines": [
+      "VA Rideau Holdings Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

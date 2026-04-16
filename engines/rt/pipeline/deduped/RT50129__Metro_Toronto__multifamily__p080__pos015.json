@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT50129",
+  "source_folder": "Metro_Toronto/multifamily/p080",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50129",
+      "source_folder": "Metro_Toronto/multifamily/p080",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p080/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 TRETHEWEY DR"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "14 Jul 2006",
+      "price_text": "$783,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg - 2.5 storey; 10 units @ $78,300",
+      "",
+      "4-1bdrm 6-2bdr"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4390",
+      "Lot 22 & 23",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "19 14 054 080 00700",
+    "consideration_lines": [
+      "cash: $783,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT501/RT50129/0813_094658.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT501/RT50129/0813_094700.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3966 / 6031",
+      "rt_id": "RT50129"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "100 TRETHEWEY DR",
+    "postcode": "M6M 4B4",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "07/14/2006",
+    "desc": "Apartment Bldg - 2.5 storey; 10 units @ $78,300",
+    "bldg": "10 units",
+    "acreage": ".24",
+    "consid": "783000",
+    "cash": "783000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 054 080 00700"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "100 TRETHEWEY DR"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "14 Jul 2006",
+    "note": "",
+    "description": "Apartment Bldg - 2.5 storey; 10 units @ $78,300",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$783,000"
+  }
+}

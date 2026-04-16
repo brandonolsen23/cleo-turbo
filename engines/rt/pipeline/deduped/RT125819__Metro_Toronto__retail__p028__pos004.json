@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT125819",
+  "source_folder": "Metro_Toronto/retail/p028",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT125819",
+      "source_folder": "Metro_Toronto/retail/p028",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p028/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "2021 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Jun 2017",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2021 Yonge Street Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rich Martyniuk",
+        "2975 Kingston Rd, Unit 88022",
+        "Toronto, Ontario",
+        "M1M 1P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1789, Part Lot 9",
+      "As in Inst No CA-679749",
+      "",
+      "PIN: 21133-0236",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 103 510 00200",
+    "consideration_lines": [
+      "cash: $507,944     assumed/vtb debt: $1,792,056",
+      "",
+      "Named Individual(s)",
+      "principal: $1,792,056   rate: 4.0% per annum.",
+      "registered: 06/05/2017   due: 06/05/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1258/RT125819/0618_080840.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1258/RT125819/0618_080847.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1258/RT125819/0618_080855.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1258/RT125819/0618_080914.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1258/RT125819/0618_080920.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1258/RT125819/air1.jpg",
+        "/assets/files/RT12/RT1258/RT125819/air2.jpg",
+        "/assets/files/RT12/RT1258/RT125819/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1355 / 4952",
+      "rt_id": "RT125819"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "2021 YONGE ST",
+    "postcode": "M4S 2A2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/05/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "2300000",
+    "cash": "507944",
+    "debt": "1792056",
+    "note": "",
+    "pin": "21133-0236",
+    "rollno": "19 04 103 510 00200"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "2021 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Jun 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2021 Yonge Street Ltd"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

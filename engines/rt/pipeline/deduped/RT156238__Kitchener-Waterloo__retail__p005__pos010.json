@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT156238",
+  "source_folder": "Kitchener-Waterloo/retail/p005",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT156238",
+      "source_folder": "Kitchener-Waterloo/retail/p005",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p005/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 - 54 AINSLIE ST N"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "29 Oct 2020",
+      "price_text": "$940,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "50 Ainslie Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nicole Hallman",
+        "254 Shakespeare Dr",
+        "Waterloo, Ontario",
+        "N2L 2T6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2287877 Alberta Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeff Shaughnessy",
+        "11216 142nd St NW",
+        "Edmonton, Alberta",
+        "T5M 1T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 615,",
+      "Part Lots 2 & 3, S/S North St",
+      "As in Inst No WS-607015",
+      "",
+      "PIN: 03815-0118",
+      "",
+      "W side Ainslie St N, S of Thorne St",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "30 06 040 016 01100",
+    "consideration_lines": [
+      "cash: $940,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal LePage Wolle Realty: Greg Hallman, 519-277-0990",
+      "Cushman & Wakefield Ltd: Jordan Palmer, Scott Anderson & David Anderson, 519-804-4384"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_141847.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_141906.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_141931.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_142001.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_142057.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_142104.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1562/RT156238/0109_142108.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "211 / 752",
+      "rt_id": "RT156238"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "50 - 54 AINSLIE ST N",
+    "postcode": "N1R 3J5",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "10/29/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "940000",
+    "cash": "940000",
+    "debt": "",
+    "note": "",
+    "pin": "03815-0118",
+    "rollno": "30 06 040 016 01100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "50 - 54 AINSLIE ST N"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "29 Oct 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "50 Ainslie Inc"
+    ],
+    "buyer_lines": [
+      "2287877 Alberta Ltd"
+    ],
+    "price_text": "$940,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT134976",
+  "source_folder": "Cochrane/all/p069",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT134976",
+      "source_folder": "Cochrane/all/p069",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p069/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "10 CHAPLEAU AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 May 2018",
+      "price_text": "$645,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "1238721 Ontario Inc",
+        "626688 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Edward Zeligman",
+        "223 Coldstream Ave",
+        "Toronto, Ontario",
+        "M5N 1Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "10 Chapleau Ave Ltd     613-237-6460"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Florestano Conti",
+        "129A Cartier St",
+        "Ottawa, Ontario",
+        "K2P 1K6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 74,",
+      "Lot 10, W/S Capleau Ave",
+      "",
+      "PIN: 04225-0160",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 010 201 39000",
+    "consideration_lines": [
+      "cash: $645,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1238721 Ontario Inc",
+      "626688 Ontario Ltd",
+      "principal: $1,200,000   rate: 15.0% per annum.",
+      "registered: 05/28/2018   due: 09/15/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3447 / 10920",
+      "rt_id": "RT134976"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "10 CHAPLEAU AVE",
+    "postcode": "K1M 1E3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/28/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "645000",
+    "cash": "645000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "04225-0160",
+    "rollno": "06 14 010 201 39000"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "10 CHAPLEAU AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 May 2018",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "1238721 Ontario Inc",
+      "626688 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "10 Chapleau Ave Ltd"
+    ],
+    "price_text": "$645,000"
+  }
+}

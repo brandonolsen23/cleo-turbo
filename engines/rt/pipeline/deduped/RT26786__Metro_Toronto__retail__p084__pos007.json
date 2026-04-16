@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT26786",
+  "source_folder": "Metro_Toronto/retail/p084",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26786",
+      "source_folder": "Metro_Toronto/retail/p084",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p084/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "3630 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "28 Aug 2002",
+      "price_text": "$880,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1444938 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lisa Zid",
+        "17 Raynes Cres",
+        "Toronto, Ontario",
+        "M1V 3V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2014401 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dave Ameer",
+        "3630 Lawrence Ave E",
+        "Toronto, Ontario",
+        "M1G 1P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-9655, Part 1"
+    ],
+    "arn_text": "19 01 082 020 00100",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4158 / 4952",
+      "rt_id": "RT26786"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "3630 LAWRENCE AVE E",
+    "postcode": "M1G 1P6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "08/28/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "880000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 082 020 00100"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "3630 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "28 Aug 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1444938 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2014401 Ontario Inc"
+    ],
+    "price_text": "$880,000"
+  }
+}

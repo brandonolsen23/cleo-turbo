@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT122530",
+  "source_folder": "Leeds/all/p020",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT122530",
+      "source_folder": "Leeds/all/p020",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 7",
+        "PART LOT 5",
+        "CONC 8",
+        "PART BROKEN LOT 4",
+        "PART LOT 5"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "16 Jan 2017",
+      "price_text": "$1,480,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "736105 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Douglas Park",
+        "2302 Confederation Line",
+        "Sarnia, Ontario",
+        "N7T 7H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 5",
+      "Conc 8,",
+      "Part Broken Lot 4 & Part Lot 5",
+      "As in Inst No L-756947",
+      "",
+      "PIN: 43098-0060",
+      "",
+      "148.02 acre"
+    ],
+    "arn_text": "38 35 340 020 05400",
+    "consideration_lines": [
+      "cash: $1,480,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1225/RT122530/air1.jpg",
+        "/assets/files/RT12/RT1225/RT122530/air2.jpg",
+        "/assets/files/RT12/RT1225/RT122530/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "981 / 1916",
+      "rt_id": "RT122530"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "CONC 7, PART LOT 5, CONC 8, PART BROKEN LOT 4, PART LOT 5",
+    "postcode": "",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "01/16/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "148.02",
+    "consid": "1480000",
+    "cash": "1480000",
+    "debt": "",
+    "note": "",
+    "pin": "43098-0060",
+    "rollno": "38 35 340 020 05400"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "CONC 7",
+      "PART LOT 5",
+      "CONC 8",
+      "PART BROKEN LOT 4",
+      "PART LOT 5"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "16 Jan 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "736105 Ontario Ltd"
+    ],
+    "price_text": "$1,480,000"
+  }
+}

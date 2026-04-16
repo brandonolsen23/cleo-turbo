@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT111954",
+  "source_folder": "Cochrane/all/p092",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT111954",
+      "source_folder": "Cochrane/all/p092",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p092/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "166 FIFTH AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Sep 2015",
+      "price_text": "$565,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2481867 Ontario Inc     613-253-8672"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Brad Morley",
+        "5 Carlisle Circle, RR 4",
+        "Ashton, Ontario",
+        "K0A 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33445,",
+      "Part Lot 9, S Fifth Ave",
+      "As in Inst No CR-593638",
+      "",
+      "PIN: 04140-0012",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "06 14 052 502 23800",
+    "consideration_lines": [
+      "cash: $565,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $452,000   rate: Prime minus 0.7% per annum.",
+      "registered: 09/15/2015   due: 09/14/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4570 / 10920",
+      "rt_id": "RT111954"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "166 FIFTH AVE",
+    "postcode": "K1S 2M9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/15/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "565000",
+    "cash": "565000",
+    "debt": "",
+    "note": "",
+    "pin": "04140-0012",
+    "rollno": "06 14 052 502 23800"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "166 FIFTH AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Sep 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2481867 Ontario Inc"
+    ],
+    "price_text": "$565,000"
+  }
+}

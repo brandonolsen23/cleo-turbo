@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT177269",
+  "source_folder": "Norfolk/all/p011",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177269",
+      "source_folder": "Norfolk/all/p011",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/all/p011/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 KELSON AVE S"
+      ],
+      "city_region": "Grimsby : Niagara N",
+      "date_text": "25 Mar 2022",
+      "price_text": "$1,400,930",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Main Street Group Holdings Inc     888-295-2786"
+      ],
+      "trade_name": "Re/Max Escarpment Golfi Realty Inc",
+      "contact_lines": [
+        "Attn: Robert Golfi",
+        "1 Markland St",
+        "Hamilton, Ontario",
+        "L8P 2J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - North Grimsby",
+      "Part Lot 23",
+      "As in Inst No RO-683084",
+      "",
+      "PIN: 46042-0100",
+      "",
+      "1.03 acre"
+    ],
+    "arn_text": "26 15 020 022 12200",
+    "consideration_lines": [
+      "cash: $1,400,930     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $892,000   rate: Prime minus 1.0% per annum.",
+      "registered: 03/25/2022   due: 04/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "543 / 3375",
+      "rt_id": "RT177269"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "22 KELSON AVE S",
+    "postcode": "L3M 4C3",
+    "municipality": "Grimsby",
+    "region": "Niagara N",
+    "date": "03/25/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.03",
+    "consid": "1400930",
+    "cash": "1400930",
+    "debt": "",
+    "note": "",
+    "pin": "46042-0100",
+    "rollno": "26 15 020 022 12200"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "22 KELSON AVE S"
+    ],
+    "city_region": "Grimsby : Niagara N",
+    "date_text": "25 Mar 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Main Street Group Holdings Inc"
+    ],
+    "price_text": "$1,400,930"
+  }
+}

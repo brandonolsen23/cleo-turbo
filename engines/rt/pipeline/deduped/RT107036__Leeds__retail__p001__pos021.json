@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT107036",
+  "source_folder": "Leeds/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT107036",
+      "source_folder": "Leeds/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "695 STONE ST N"
+      ],
+      "city_region": "Gananoque : Leeds",
+      "date_text": "09 Mar 2015",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Davis",
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "883409 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Danny Hicks",
+        "695 Stone Rd N",
+        "Gananoque, Ontario",
+        "K7G 1Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 12 & 13",
+      "Plan 86, Part Lot 18",
+      "E Gananoque River Block W",
+      "As in Inst No LR-291702",
+      "",
+      "PIN: 44245-0398",
+      "",
+      "2.22 acre"
+    ],
+    "arn_text": "08 14 000 015 48500",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1663013 Ontario Ltd",
+      "principal: $200,000   rate: 10.0% per annum.",
+      "registered: 03/09/2015   due: 03/09/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107036/0410_100220.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107036/0410_100228.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107036/0410_100324.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107036/0410_100336.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107036/0410_100403.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1070/RT107036/0410_100404.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 40",
+      "rt_id": "RT107036"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "695 STONE ST N",
+    "postcode": "K7G 1Z4",
+    "municipality": "Gananoque",
+    "region": "Leeds",
+    "date": "03/09/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.22",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "44245-0398",
+    "rollno": "08 14 000 015 48500"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "695 STONE ST N"
+    ],
+    "city_region": "Gananoque : Leeds",
+    "date_text": "09 Mar 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "buyer_lines": [
+      "883409 Ontario Ltd"
+    ],
+    "price_text": "$575,000"
+  }
+}

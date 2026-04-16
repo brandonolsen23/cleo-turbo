@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT40287",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40287",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "469 CENTRAL AVE"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "04 Feb 2005",
+      "price_text": "$1,100,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal Trust Corp of Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Greg Smith",
+        "180 Wellington St W",
+        "Toronto, Ontario",
+        "M5J 1J1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The National Committee for the",
+        "National Pilgrim Virgin of Canada     905-871-7607"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Coralie Graham",
+        "452 Kraft Rd",
+        "PO Box 602",
+        "Fort Erie, Ontario",
+        "L2A 4M7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 530",
+      "Lots 79-84, 86-91, 119-123",
+      "Part Lots 78, 92, 118, 124",
+      "As in Inst No RO-450207",
+      "",
+      "3.02 acre"
+    ],
+    "arn_text": "27 03 010 047 02805",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $770,000   rate: 6.3% per annum.",
+      "registered: 02/04/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT402/RT40287/air1.jpg",
+        "/assets/files/RT4/RT402/RT40287/air2.jpg",
+        "/assets/files/RT4/RT402/RT40287/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40287/photo.jpg"
+    },
+    "footer": {
+      "page_position": "267 / 324",
+      "rt_id": "RT40287"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "469 CENTRAL AVE",
+    "postcode": "L2A 3T8",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "02/04/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.02",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "27 03 010 047 02805"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "469 CENTRAL AVE"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "04 Feb 2005",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Royal Trust Corp of Canada"
+    ],
+    "buyer_lines": [
+      "The National Committee for the",
+      "National Pilgrim Virgin of Canada"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

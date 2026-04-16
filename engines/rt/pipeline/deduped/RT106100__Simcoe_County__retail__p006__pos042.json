@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT106100",
+  "source_folder": "Simcoe_County/retail/p006",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT106100",
+      "source_folder": "Simcoe_County/retail/p006",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p006/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "501 HUME ST"
+      ],
+      "city_region": "Collingwood : Simcoe County",
+      "date_text": "30 Jan 2015",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "807955 Ontario Inc     705-728-3026"
+      ],
+      "trade_name": "Lewis Motor Sales Inc",
+      "contact_lines": [
+        "Pres: Dale Lewis",
+        "76 Mapleview Dr W",
+        "Barrie, Ontario",
+        "L4N 9H6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2449125 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mary Trude",
+        "281 First St",
+        "Collingwood, Ontario",
+        "L9Y 1B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 43",
+      "Plan 51R-39761, Part 5",
+      "",
+      "PIN: 58294-0015"
+    ],
+    "arn_text": "43 31 020 002 11700",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,300,000   rate: Prime plus 5.75% per annum.",
+      "registered: 01/30/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151003.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151009.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151034.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151145.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151148.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151251.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1061/RT106100/0227_151301.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "293 / 712",
+      "rt_id": "RT106100"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "501 HUME ST",
+    "postcode": "L9Y 4H8",
+    "municipality": "Collingwood",
+    "region": "Simcoe County",
+    "date": "01/30/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "58294-0015",
+    "rollno": "43 31 020 002 11700"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "501 HUME ST"
+    ],
+    "city_region": "Collingwood : Simcoe County",
+    "date_text": "30 Jan 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "807955 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2449125 Ontario Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

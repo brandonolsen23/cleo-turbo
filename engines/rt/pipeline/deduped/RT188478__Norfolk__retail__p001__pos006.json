@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT188478",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188478",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "169 NEW LAKESHORE RD"
+      ],
+      "city_region": "Port Dover : Norfolk",
+      "date_text": "12 Nov 2024",
+      "price_text": "$10,000,000",
+      "note": "50% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "2079095 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "168 New Lakeshore Rd",
+        "Port Dover, Ontario",
+        "N0A 1N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ballantry (Erie) Inc     905-887-7100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Hill",
+        "20 Cachet Woods Ct, Ste 6",
+        "Markham, Ontario",
+        "L6C 3G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Woodhouse,",
+      "Part Lots 15 & 16",
+      "Plan 37R-9924, Parts 27 & 36",
+      "",
+      "PIN: 50256-1045",
+      "",
+      "21.14 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,813,500     assumed/vtb debt: $4,186,500",
+      "",
+      "chargee: Cameron Stephens Mortgage Capital Ltd",
+      "principal: $15,600,000   rate: Greater of 12.95% and RBC prime plus 5.75% per annum.",
+      "registered: 11/12/2024   due: on demand",
+      "",
+      "chargee: 2079095 Ontario Ltd",
+      "principal: $4,873,000",
+      "registered: 11/12/2024   due: 10/31/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1884/RT188478/air1.jpg",
+        "/assets/files/RT18/RT1884/RT188478/air2.jpg",
+        "/assets/files/RT18/RT1884/RT188478/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 45",
+      "rt_id": "RT188478"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "169 NEW LAKESHORE RD",
+    "postcode": "N0A 1N3",
+    "municipality": "Port Dover",
+    "region": "Norfolk",
+    "date": "11/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "21.14",
+    "consid": "10000000",
+    "cash": "5813500",
+    "debt": "4186500",
+    "note": "50% Interest",
+    "pin": "50256-1045",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "169 NEW LAKESHORE RD"
+    ],
+    "city_region": "Port Dover : Norfolk",
+    "date_text": "12 Nov 2024",
+    "note": "50% Interest",
+    "description": "",
+    "seller_lines": [
+      "2079095 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Ballantry (Erie) Inc"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

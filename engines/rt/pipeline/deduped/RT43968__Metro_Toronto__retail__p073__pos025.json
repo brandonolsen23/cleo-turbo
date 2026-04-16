@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT43968",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43968",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "2859 LAWRENCE AVE E",
+        "2861 LAWRENCE AVE E",
+        "2863 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "02 Aug 2005",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4712, Part Block E",
+      "As in Inst No SC-618400",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 01 062 550 00800",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3626 / 4952",
+      "rt_id": "RT43968"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "2859 LAWRENCE AVE E, 2861 LAWRENCE AVE E, 2863 LAWRENCE AVE E",
+    "postcode": "M1P 2S8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "08/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 062 550 00800"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "2859 LAWRENCE AVE E",
+      "2861 LAWRENCE AVE E",
+      "2863 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "02 Aug 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$775,000"
+  }
+}

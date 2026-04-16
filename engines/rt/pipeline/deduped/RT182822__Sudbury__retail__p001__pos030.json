@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT182822",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182822",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "111 HWY 6 / CENTRE ST",
+        "111 HIGHWAY 6 / CENTRE ST"
+      ],
+      "city_region": ": Sudbury",
+      "date_text": "10 Jan 2024",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "470909 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 219 Trunk Rd",
+        "Sault Ste Marie, Ontario",
+        "P6A 3S7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Espanola Dollar Tree Inc     416-222-5040"
+      ],
+      "trade_name": "Virtus Financial Group",
+      "contact_lines": [
+        "Attn: Aurelio Baglione",
+        "100 Arbors Lane, Unit D",
+        "Vaughan, Ontario",
+        "L4L 7G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-77, Lots 92-98",
+      "",
+      "PIN: 73409-0020",
+      "",
+      "0.96 acre"
+    ],
+    "arn_text": "52 26 000 002 09300",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Kyburg Holdings Inc",
+      "1756214 Ontario Inc",
+      "Carol Thomakos",
+      "principal: $840,000   rate: 9.0% per annum.",
+      "registered: 01/10/2024   due: 01/10/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "31 / 90",
+      "rt_id": "RT182822"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "111 HWY 6 / CENTRE ST, 111 HIGHWAY 6 / CENTRE ST",
+    "postcode": "",
+    "municipality": "",
+    "region": "Sudbury",
+    "date": "01/10/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".96",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "73409-0020",
+    "rollno": "52 26 000 002 09300"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "111 HWY 6 / CENTRE ST",
+      "111 HIGHWAY 6 / CENTRE ST"
+    ],
+    "city_region": ": Sudbury",
+    "date_text": "10 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "470909 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Espanola Dollar Tree Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

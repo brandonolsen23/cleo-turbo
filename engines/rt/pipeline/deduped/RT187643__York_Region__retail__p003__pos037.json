@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT187643",
+  "source_folder": "York_Region/retail/p003",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187643",
+      "source_folder": "York_Region/retail/p003",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "8210 KENNEDY RD",
+        "8220 KENNEDY RD",
+        "7 MAIN ST N",
+        "13 & 15 MAIN ST N"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "01 Oct 2024",
+      "price_text": "$54,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1938589 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "133 King St E, Ste 300",
+        "Toronto, Ontario",
+        "M5C 1G6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000958417 Ontario Ltd     905-884-4644"
+      ],
+      "trade_name": "Audi Thornhill",
+      "contact_lines": [
+        "Attn: Kapil Dilawri",
+        "7064 Yonge St",
+        "Thornhill, Ontario",
+        "L4J 1V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2196, Part Lot 1",
+      "Plan 64R-7974, Parts 10, 17 & 21",
+      "Exprop Plan R-266784, Part 8",
+      "Plan 65R-31233, Part 1",
+      "As in Inst Nos:",
+      "R-432611 & R-714240",
+      "Except:",
+      "Plan 65R-25652, Parts 1, 2, 27 & 28",
+      "Plan 65R-31310, Part 1",
+      "",
+      "PIN: 02988-0589 +",
+      "",
+      "5.87 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $54,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,500,000,000",
+      "registered: 10/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187643/1027_131236.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187643/1027_131241.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187643/1027_131300.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187643/1027_131323.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "138 / 984",
+      "rt_id": "RT187643"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "8210 KENNEDY RD, 8220 KENNEDY RD, 7 MAIN ST N, 13 & 15 MAIN ST N",
+    "postcode": "L3R 5X3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "10/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.87",
+    "consid": "54000000",
+    "cash": "54000000",
+    "debt": "",
+    "note": "",
+    "pin": "02988-0589+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "8210 KENNEDY RD",
+      "8220 KENNEDY RD",
+      "7 MAIN ST N",
+      "13 & 15 MAIN ST N"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "01 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1938589 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000958417 Ontario Ltd"
+    ],
+    "price_text": "$54,000,000"
+  }
+}

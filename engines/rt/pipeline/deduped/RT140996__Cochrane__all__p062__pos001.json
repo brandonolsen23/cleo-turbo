@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT140996",
+  "source_folder": "Cochrane/all/p062",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT140996",
+      "source_folder": "Cochrane/all/p062",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p062/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "24 FARNHAM CRES"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Jan 2019",
+      "price_text": "$645,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "139197 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alistar Thomson",
+        "50 Pond St",
+        "Rockcliffe Park, Ontario",
+        "K1L 8L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-84, Lot 241",
+      "",
+      "PIN: 04278-0214",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 14 010 301 16500",
+    "consideration_lines": [
+      "cash: $645,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3052 / 10920",
+      "rt_id": "RT140996"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "24 FARNHAM CRES",
+    "postcode": "K1K 0G2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/31/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "645000",
+    "cash": "645000",
+    "debt": "",
+    "note": "",
+    "pin": "04278-0214",
+    "rollno": "06 14 010 301 16500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "24 FARNHAM CRES"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Jan 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "139197 Canada Inc"
+    ],
+    "price_text": "$645,000"
+  }
+}

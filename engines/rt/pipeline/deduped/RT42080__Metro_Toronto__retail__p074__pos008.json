@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT42080",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42080",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "2434 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "26 May 2005",
+      "price_text": "$5,225,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Yonge North Development Corp     416-482-2666"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Diamond",
+        "111 Eglinton Ave E, Ste 200",
+        "Toronto, Ontario",
+        "M4P 1H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tencrest Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Tencer",
+        "345 Wilson Ave, Ste 200",
+        "Toronto, Ontario",
+        "M3H 5W1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 13,800 sf @ $379",
+      "",
+      "Leased by Restoration Hardware."
+    ],
+    "more_info_url": "/assets/files/RT4/RT420/RT42080/mi.pdf",
+    "site_lines": [
+      "Plan 734, Range 1, Part Lot 1",
+      "Plan 563, Part Lot 4",
+      "As in Inst No CT-980826",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "19 04 114 620 01500",
+    "consideration_lines": [
+      "cash: $5,225,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Insurance Corporation of British Columbia",
+      "principal: $3,700,000   rate: 5.59% per annum",
+      "registered: 05/26/2005   due: 06/01/2015"
+    ],
+    "broker_lines": [
+      "Forest Hill Real Estate: Roman Gofman, 416-488-2875"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT420/RT42080/air1.jpg",
+        "/assets/files/RT4/RT420/RT42080/air2.jpg",
+        "/assets/files/RT4/RT420/RT42080/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT420/RT42080/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3659 / 4952",
+      "rt_id": "RT42080"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "2434 YONGE ST",
+    "postcode": "M4P 2H4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/26/2005",
+    "desc": "Retail Bldg - 2 storey; 13,800 sf @ $379",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "5225000",
+    "cash": "5225000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 114 620 01500"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "2434 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "26 May 2005",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 13,800 sf @ $379",
+    "seller_lines": [
+      "Yonge North Development Corp"
+    ],
+    "buyer_lines": [
+      "Tencrest Realty Ltd"
+    ],
+    "price_text": "$5,225,000"
+  }
+}

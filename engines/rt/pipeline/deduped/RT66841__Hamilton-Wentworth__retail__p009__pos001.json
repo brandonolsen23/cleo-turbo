@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT66841",
+  "source_folder": "Hamilton-Wentworth/retail/p009",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66841",
+      "source_folder": "Hamilton-Wentworth/retail/p009",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p009/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "752 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "30 Apr 2009",
+      "price_text": "$2,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mohawk Plaza Ltd     416-961-1177"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Frances Houle",
+        "Horwitz Finder",
+        "45 St Clair Ave W, Ste 101",
+        "Toronto, Ontario",
+        "M4V 1K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mohawk Upper James Investments Ltd     416-638-9222"
+      ],
+      "trade_name": "David Mart Investments",
+      "contact_lines": [
+        "Pres: Elliott Sud",
+        "638A Sheppard Ave W, Ste 222",
+        "Toronto, Ontario",
+        "M3H 2S1"
+      ]
+    },
+    "description_lines": [
+      "Mohawk Plaza - 1 storey; 4 tenants 10,000 sf @ $225",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1088, Part Lot A",
+      "As in Inst No AB-43442",
+      "",
+      "PIN: 17026-0252",
+      "",
+      "1.29 acre"
+    ],
+    "arn_text": "25 18 080 922 08610",
+    "consideration_lines": [
+      "cash: $2,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $1,510,000   rate: 5.648% per annum",
+      "registered: 04/30/2009   due: 05/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT668/RT66841/0515_111132.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT668/RT66841/0515_111157.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT668/RT66841/0515_111341.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT668/RT66841/0515_111409.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT668/RT66841/air1.jpg",
+        "/assets/files/RT6/RT668/RT66841/air2.jpg",
+        "/assets/files/RT6/RT668/RT66841/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "402 / 616",
+      "rt_id": "RT66841"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "752 UPPER JAMES ST",
+    "postcode": "L9C 3A2",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "04/30/2009",
+    "desc": "Mohawk Plaza - 1 storey; 4 tenants 10,000 sf @ $225",
+    "bldg": "10,000 sf",
+    "acreage": "1.29",
+    "consid": "2250000",
+    "cash": "2250000",
+    "debt": "",
+    "note": "",
+    "pin": "17026-0252",
+    "rollno": "25 18 080 922 08610"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "752 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "30 Apr 2009",
+    "note": "",
+    "description": "Mohawk Plaza - 1 storey; 4 tenants 10,000 sf @ $225",
+    "seller_lines": [
+      "Mohawk Plaza Ltd"
+    ],
+    "buyer_lines": [
+      "Mohawk Upper James Investments Ltd"
+    ],
+    "price_text": "$2,250,000"
+  }
+}

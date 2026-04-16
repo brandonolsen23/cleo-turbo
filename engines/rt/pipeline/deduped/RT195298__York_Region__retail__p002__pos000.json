@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT195298",
+  "source_folder": "York_Region/retail/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195298",
+      "source_folder": "York_Region/retail/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "11685 YONGE ST",
+        "UNITS A101 & A102"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "29 Sep 2025",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Khoshbin Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4 Church St",
+        "Richmond Hill, Ontario",
+        "L4C 1W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dr Ali Shafiee Holding Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alimohammad Shafiee",
+        "51 Kersey Cres",
+        "Richmond Hill, Ontario",
+        "L4C 5H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1171",
+      "Level 1, Units 1 & 2",
+      "",
+      "PIN: 29702-0001 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/29/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140821.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140826.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140914.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140918.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140923.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140927.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195298/1122_140937.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 984",
+      "rt_id": "RT195298"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "11685 YONGE ST, UNITS A101 & A102",
+    "postcode": "L4E 0K7",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "09/29/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "29702-0001+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "11685 YONGE ST",
+      "UNITS A101 & A102"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "29 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Khoshbin Management Inc"
+    ],
+    "buyer_lines": [
+      "Dr Ali Shafiee Holding Ltd"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

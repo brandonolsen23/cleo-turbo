@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT185520",
+  "source_folder": "Metro_Toronto/retail/p010",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185520",
+      "source_folder": "Metro_Toronto/retail/p010",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p010/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "1542 JANE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "21 Jun 2024",
+      "price_text": "$6,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Monaco EST Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "48 Bowring Walk",
+        "Toronto, Ontario",
+        "M3H 5Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Fiallo Holdings Corp     416-477-2491"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nelson Fiallo",
+        "1275 Finch Ave W, Ste 514",
+        "North York, Ontario",
+        "M3J 0L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2262,",
+      "Lots 21-24 & Part Lot 13",
+      "As in Inst No CA-367129",
+      "",
+      "PIN: 10324-0521",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "19 08 022 020 02400",
+    "consideration_lines": [
+      "cash: $6,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Monaco EST Holdings Ltd",
+      "principal: $2,200,000   rate: 4.85% per annum.",
+      "registered: 06/21/2024   due: 06/20/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185520/0707_134314.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185520/0707_134323.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185520/0707_134330.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185520/0707_134408.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185520/0707_134409.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1855/RT185520/0707_134423.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "498 / 4952",
+      "rt_id": "RT185520"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "1542 JANE ST",
+    "postcode": "M9N 2R5",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "6200000",
+    "cash": "6200000",
+    "debt": "",
+    "note": "",
+    "pin": "10324-0521",
+    "rollno": "19 08 022 020 02400"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "1542 JANE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Monaco EST Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Fiallo Holdings Corp"
+    ],
+    "price_text": "$6,200,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT54325",
+  "source_folder": "Peel_Region/retail/p015",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT54325",
+      "source_folder": "Peel_Region/retail/p015",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p015/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "351 PARKHURST SQ",
+        "VARIOUS SUITES"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "07 Mar 2007",
+      "price_text": "$620,551",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Minuk Developments Inc     905-738-3675"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sanford Minuk",
+        "99 Sante Dr, Unit C",
+        "Concord, Ontario",
+        "L4K 3C4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Condo - 1 storey; 2,631 sf @ $236",
+      "",
+      "Vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 797",
+      "Level 1, Units 7 & 8"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $620,551     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Homelife/United Realty: Gordy Khumman, 905-672-1234"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "721 / 1087",
+      "rt_id": "RT54325"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "351 PARKHURST SQ, VARIOUS SUITES,",
+    "postcode": "L6T 0C2",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "03/07/2007",
+    "desc": "Retail Condo - 1 storey; 2,631 sf @ $236",
+    "bldg": "2,631 sf",
+    "acreage": "",
+    "consid": "620551",
+    "cash": "620551",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "351 PARKHURST SQ",
+      "VARIOUS SUITES"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "07 Mar 2007",
+    "note": "",
+    "description": "Retail Condo - 1 storey; 2,631 sf @ $236",
+    "seller_lines": [
+      "Minuk Developments Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$620,551"
+  }
+}

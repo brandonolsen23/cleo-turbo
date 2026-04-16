@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT48402",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48402",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "563 HIGHLAND RD W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "05 May 2006",
+      "price_text": "$3,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ken Silver",
+        "2180 Yonge St",
+        "15th Floor South",
+        "Toronto, Ontario",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "563 Highland Rd W Ltd     905-472-7732"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dean Feltham",
+        "DGF Group",
+        "1 Pingel Rd",
+        "Markham, Ontario",
+        "L6B 1B7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-5638, Parts 5 & 6",
+      "",
+      "4.08 acre"
+    ],
+    "arn_text": "30 12 040 010 18900",
+    "consideration_lines": [
+      "cash: $3,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $6,250,000   rate: Prime plus 1.0% per annum Maybe reduced to prime plus 0.5% per annum pursuant to the provisions in the Commitment.",
+      "registered: 05/05/2006   due: 06/01/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT484/RT48402/photo.jpg"
+    },
+    "footer": {
+      "page_position": "574 / 752",
+      "rt_id": "RT48402"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "563 HIGHLAND RD W",
+    "postcode": "N2M 5K2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "05/05/2006",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "4.08",
+    "consid": "3050000",
+    "cash": "3050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 010 18900"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "563 HIGHLAND RD W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "05 May 2006",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "563 Highland Rd W Ltd"
+    ],
+    "price_text": "$3,050,000"
+  }
+}

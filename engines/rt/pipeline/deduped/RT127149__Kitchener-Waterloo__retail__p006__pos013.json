@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT127149",
+  "source_folder": "Kitchener-Waterloo/retail/p006",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT127149",
+      "source_folder": "Kitchener-Waterloo/retail/p006",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p006/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "21 MCKAY ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "27 Jul 2017",
+      "price_text": "$1,040,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "ASCO Global Inc     905-813-8746"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohammad Ismail",
+        "3888 Bloomington Cres",
+        "Mississauga, Ontario",
+        "L5M 7H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 145, Lot 8",
+      "Plan 58R-11322, Part 2",
+      "",
+      "PIN: 03838-0125",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "30 06 010 032 08700",
+    "consideration_lines": [
+      "cash: $1,040,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $780,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/27/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1271/RT127149/0805_083416a.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1271/RT127149/0805_083416b.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1271/RT127149/0805_083443.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "264 / 752",
+      "rt_id": "RT127149"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "21 MCKAY ST",
+    "postcode": "N1R 4G2",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "07/27/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "1040000",
+    "cash": "1040000",
+    "debt": "",
+    "note": "",
+    "pin": "03838-0125",
+    "rollno": "30 06 010 032 08700"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "21 MCKAY ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "27 Jul 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "ASCO Global Inc"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

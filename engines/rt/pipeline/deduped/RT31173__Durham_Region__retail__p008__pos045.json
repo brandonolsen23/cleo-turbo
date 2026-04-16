@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT31173",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31173",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "99 BLOOR ST E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "25 Jul 2003",
+      "price_text": "$510,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "733924 Ontario Inc     905-723-3519"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Langstaff",
+        "650 Dean Ave",
+        "Oshawa, Ontario",
+        "L1H 3E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1522776 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeffrey Davey",
+        "23 Montrose Cres",
+        "Whitby, Ontario",
+        "L1R 1C8"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-16826, Part 2",
+      "Plan 40R-18706, Parts 1 & 2",
+      "Plan 40R-17888, Part 1",
+      "Plan 40R-20198, Parts 1 & 2",
+      "",
+      "2.74 acre"
+    ],
+    "arn_text": "18 13 050 017 02510",
+    "consideration_lines": [
+      "cash: $510,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT311/RT31173/photo.jpg"
+    },
+    "footer": {
+      "page_position": "396 / 506",
+      "rt_id": "RT31173"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "99 BLOOR ST E",
+    "postcode": "L1H 3M3",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "07/25/2003",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "2.74",
+    "consid": "510000",
+    "cash": "510000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 050 017 02510"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "99 BLOOR ST E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "25 Jul 2003",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "733924 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1522776 Ontario Inc"
+    ],
+    "price_text": "$510,000"
+  }
+}

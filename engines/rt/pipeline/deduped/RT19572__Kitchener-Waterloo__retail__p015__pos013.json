@@ -1,0 +1,137 @@
+{
+  "rt_id": "RT19572",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19572",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "1151 - 1157 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "03 Nov 2000",
+      "price_text": "$2,366,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kwok & Ngan Yam",
+        "808109 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "384 Spadina Ave",
+        "Toronto, Ontario",
+        "M5T 2G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Aaron Mendelson Enterprises Ltd     416-244-7798"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Mendelson",
+        "2610 Weston, Ste 205",
+        "North York, Ontario",
+        "M6N 2B1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-3030, Part 1",
+      "As in Inst No 996285",
+      "",
+      "E side 200m N of Frederick St",
+      "",
+      "3.44 acre"
+    ],
+    "arn_text": "30 12 060 016 00100",
+    "consideration_lines": [
+      "cash: $2,366,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,800,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/28/2025   due: on demand",
+      "",
+      "chargee: Mills Land Farms Inc",
+      "principal: $1,050,000   rate: 5.0% per annum.",
+      "registered: 11/27/2025   due: 11/27/2026",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,100,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/26/2025   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,100,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/28/2025   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,000,000   rate: Prime plus 10.0% per annum.",
+      "registered: 11/28/2025   due: on demand",
+      "",
+      "chargee: Canada ICI Capital Corp",
+      "principal: $1,540,000   rate: Greater of 6.95% and RBC prime plus 2.59% per annum.",
+      "registered: 11/28/2025   due: 12/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT195/RT19572/photo.jpg"
+    },
+    "footer": {
+      "page_position": "714 / 752",
+      "rt_id": "RT19572"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "1151 - 1157 VICTORIA ST N",
+    "postcode": "N2B 3C8",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/03/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "3.44",
+    "consid": "2366000",
+    "cash": "2366000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 060 016 00100"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "1151 - 1157 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "03 Nov 2000",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Kwok & Ngan Yam",
+      "808109 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Aaron Mendelson Enterprises Ltd"
+    ],
+    "price_text": "$2,366,000"
+  }
+}

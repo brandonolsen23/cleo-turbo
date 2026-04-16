@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT46026",
+  "source_folder": "Niagara_N/retail/p005",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46026",
+      "source_folder": "Niagara_N/retail/p005",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p005/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "350 ONTARIO ST",
+        "398 ONTARIO ST"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "23 Dec 2005",
+      "price_text": "$4,220,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "BSH Developments Ltd     905-275-0065"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Michael Doner",
+        "2050 Dundas St E",
+        "Mississauga, Ontario",
+        "L4X 1L9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CIRP Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Weiler",
+        "181 Bay St",
+        "Ste 2330, Box 834",
+        "Bay-Wellington Tower, BCE Place",
+        "Toronto, Ontario",
+        "M5J 2T3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 21",
+      "Plan 30R-3714, Part 1",
+      "Plan 427, Lot 3",
+      "As in Inst No RO-564069",
+      "Together with Inst No RO-523594",
+      "Except:",
+      "Plan 30R-5852, Parts 3 & 4",
+      "",
+      "3.37 acre"
+    ],
+    "arn_text": "26 29 040 038 04500 +",
+    "consideration_lines": [
+      "cash: $4,220,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT460/RT46026/photo.jpg"
+    },
+    "footer": {
+      "page_position": "241 / 307",
+      "rt_id": "RT46026"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "350 ONTARIO ST, 398 ONTARIO ST",
+    "postcode": "M5A 2V7",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "12/23/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "3.37",
+    "consid": "4220000",
+    "cash": "4220000",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "26 29 040 038 04500+"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "350 ONTARIO ST",
+      "398 ONTARIO ST"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "23 Dec 2005",
+    "note": "Portfolio Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "BSH Developments Ltd"
+    ],
+    "buyer_lines": [
+      "CIRP Management Ltd"
+    ],
+    "price_text": "$4,220,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT192360",
+  "source_folder": "Kent_County/industrial/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192360",
+      "source_folder": "Kent_County/industrial/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/industrial/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "5232 COUTTS LINE"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "30 Apr 2025",
+      "price_text": "$780,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RWL Welding Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1844 Talbot Trail",
+        "Wheatley, Ontario",
+        "N0P 2P0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "10540773 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kyle Goldsmith",
+        "3846 Peter St",
+        "Windsor, Ontario",
+        "N9C 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Tilbury East, Part Lot 3",
+      "Plan 24R-5427, Part 1",
+      "",
+      "PIN: 00810-0050",
+      "",
+      "1.02 acre"
+    ],
+    "arn_text": "36 50 060 001 29920",
+    "consideration_lines": [
+      "cash: $780,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $780,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/30/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 52",
+      "rt_id": "RT192360"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "5232 COUTTS LINE",
+    "postcode": "N0P 2L0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "04/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.02",
+    "consid": "780000",
+    "cash": "780000",
+    "debt": "",
+    "note": "",
+    "pin": "00810-0050",
+    "rollno": "36 50 060 001 29920"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "5232 COUTTS LINE"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "30 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "RWL Welding Ltd"
+    ],
+    "buyer_lines": [
+      "10540773 Canada Inc"
+    ],
+    "price_text": "$780,000"
+  }
+}

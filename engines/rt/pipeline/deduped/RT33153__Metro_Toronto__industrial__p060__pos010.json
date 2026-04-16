@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT33153",
+  "source_folder": "Metro_Toronto/industrial/p060",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33153",
+      "source_folder": "Metro_Toronto/industrial/p060",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p060/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "215 NIAGARA ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Dec 2003",
+      "price_text": "$830,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1551265 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Janjit Ghoman",
+        "215 Niagara St",
+        "Toronto, Ontario",
+        "M6J 2L2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-179",
+      "Lot 13, Part Lots 12 & 14",
+      "As in Inst No CT-394344",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 041 350 00800",
+    "consideration_lines": [
+      "cash: $830,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT331/RT33153/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2961 / 4000",
+      "rt_id": "RT33153"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "215 NIAGARA ST",
+    "postcode": "M6J 2L2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/16/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "830000",
+    "cash": "830000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 041 350 00800"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "215 NIAGARA ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Dec 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1551265 Ontario Inc"
+    ],
+    "price_text": "$830,000"
+  }
+}

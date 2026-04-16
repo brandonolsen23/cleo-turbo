@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT24417",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24417",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "583 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "04 Feb 2002",
+      "price_text": "$1,920,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "National Bank of Canada     416-367-5540"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Neil Carpenter",
+        "130 King St W, Ste 720",
+        "Toronto, Ontario",
+        "M5X 1B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1511314 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Malcolm Friedland",
+        "511 Edinburgh Rd S, Ste 202",
+        "Guelph, Ontario",
+        "N1G 4S5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 bldgs; 1 storey 14 units 26,123 sf @ $73",
+      "",
+      "Bldg 1: 4 units 11,768 sf",
+      "Bldg 2: 10 units 14,355 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-6068, Parts 6-9",
+      "",
+      "2.45 acre"
+    ],
+    "arn_text": "30 16 042 600 11000",
+    "consideration_lines": [
+      "cash: $1,920,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT244/RT24417/photo.jpg"
+    },
+    "footer": {
+      "page_position": "671 / 752",
+      "rt_id": "RT24417"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "583 KING ST N",
+    "postcode": "N2V 2E5",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "02/04/2002",
+    "desc": "Retail Plaza - 2 bldgs; 1 storey 14 units 26,123 sf @ $73",
+    "bldg": "26,123 sf",
+    "acreage": "2.45",
+    "consid": "1920000",
+    "cash": "1920000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "30 16 042 600 11000"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "583 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "04 Feb 2002",
+    "note": "Power of Sale",
+    "description": "Retail Plaza - 2 bldgs; 1 storey 14 units 26,123 sf @ $73",
+    "seller_lines": [
+      "National Bank of Canada"
+    ],
+    "buyer_lines": [
+      "1511314 Ontario Inc"
+    ],
+    "price_text": "$1,920,000"
+  }
+}

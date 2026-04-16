@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT103401",
+  "source_folder": "Ottawa-Carleton/retail/p010",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103401",
+      "source_folder": "Ottawa-Carleton/retail/p010",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p010/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1493 SIEVERIGHT AVE"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "30 Sep 2014",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Party George Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Georges Daou",
+        "3241 Carriage Hill Place",
+        "Ottawa, Ontario",
+        "K1T 3X5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 141, Part Lot 3",
+      "As in Inst No N-722906",
+      "",
+      "PIN: 04157-0492",
+      "",
+      "1.22 acre"
+    ],
+    "arn_text": "06 06 000 055 01000",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $500,000",
+      "",
+      "Named Individual(s)",
+      "principal: $500,000   rate: 5.0% per annum.",
+      "registered: 09/30/2014   due: 09/30/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103401/0117_150613.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103401/0117_150635.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103401/0117_150636.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103401/0117_150710.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "469 / 1141",
+      "rt_id": "RT103401"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1493 SIEVERIGHT AVE",
+    "postcode": "K1T 1M5",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "09/30/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.22",
+    "consid": "1100000",
+    "cash": "600000",
+    "debt": "500000",
+    "note": "",
+    "pin": "04157-0492",
+    "rollno": "06 06 000 055 01000"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1493 SIEVERIGHT AVE"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "30 Sep 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Party George Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

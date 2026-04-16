@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT105864",
+  "source_folder": "Brant/retail/p003",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105864",
+      "source_folder": "Brant/retail/p003",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p003/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "321 ST PAUL AVE"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "18 Sep 2014",
+      "price_text": "$500,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Shell Canada Ltd     416-227-7111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerry Beelen",
+        "90 Sheppard Ave E, Ste 600",
+        "Toronto, Ontario",
+        "M2N 6Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "321Brantford Inc     416-438-5805"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Adam Bholat",
+        "18 Fulham St",
+        "Scarborough, Ontario",
+        "M1S 2A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 42, Part Lot 11",
+      "As in Inst No A-73216",
+      "Except:",
+      "Inst No A-143164",
+      "",
+      "PIN: 32172-0119",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "29 06 020 007 18100",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1058/RT105864/0216_085344.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1058/RT105864/0216_085346.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1058/RT105864/0216_085358.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "101 / 195",
+      "rt_id": "RT105864"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "321 ST PAUL AVE",
+    "postcode": "N3R 4M9",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "09/18/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".26",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "32172-0119",
+    "rollno": "29 06 020 007 18100"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "321 ST PAUL AVE"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "18 Sep 2014",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "Shell Canada Ltd"
+    ],
+    "buyer_lines": [
+      "321Brantford Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

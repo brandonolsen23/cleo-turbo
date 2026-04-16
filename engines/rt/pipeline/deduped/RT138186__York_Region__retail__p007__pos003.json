@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT138186",
+  "source_folder": "York_Region/retail/p007",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT138186",
+      "source_folder": "York_Region/retail/p007",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p007/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "3235 HIGHWAY 7 E",
+        "3235 HWY 7 E",
+        "UNIT 22"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "02 Oct 2018",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Duck Shing Ho (Canada) Inc     416-282-4593"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Lau",
+        "72 Euclid Ave",
+        "Scarborough, Ontario",
+        "M1C 1J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mo & Ma Investment Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daisy Lau",
+        "2112 Danforth Ave, Ste 248",
+        "Toronto, Ontario",
+        "M4C 1J9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 894",
+      "Level 1, Units 27 & 168",
+      "",
+      "PIN: 29425-0027 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: KLN Holdings Inc",
+      "principal: $550,000   rate: 9.0% per annum.",
+      "registered: 10/02/2018   due: 10/01/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_155921.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_155947.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_160048.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_160123.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_160124.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_160125.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1381/RT138186/1103_160240.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "304 / 984",
+      "rt_id": "RT138186"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "3235 HIGHWAY 7 E, 3235 HWY 7 E, UNIT 22",
+    "postcode": "L3R 3P3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "10/02/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "29425-0027+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "3235 HIGHWAY 7 E",
+      "3235 HWY 7 E",
+      "UNIT 22"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "02 Oct 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Duck Shing Ho (Canada) Inc"
+    ],
+    "buyer_lines": [
+      "Mo & Ma Investment Corp"
+    ],
+    "price_text": "$700,000"
+  }
+}

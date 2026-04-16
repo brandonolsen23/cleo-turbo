@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT85706",
+  "source_folder": "Kitchener-Waterloo/retail/p009",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT85706",
+      "source_folder": "Kitchener-Waterloo/retail/p009",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p009/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "215 BEVERLY ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "06 Jun 2012",
+      "price_text": "$1,070,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shri Hari Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Piyushkumar Patel",
+        "76 Dellgrove Circle",
+        "Cambridge, Ontario",
+        "N1T 2J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2324572 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Amit Airi",
+        "c/o 215 Beverly St",
+        "Cambridge, Ontario",
+        "N1R 3Z9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in Jan 2008 for $790,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 7",
+      "Plan 67R-869, Part 2",
+      "",
+      "PIN: 03821-0021",
+      "",
+      "1.04 acre"
+    ],
+    "arn_text": "30 06 070 024 00500",
+    "consideration_lines": [
+      "cash: $1,070,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Co",
+      "principal: $627,250   rate: 6.5% per annum",
+      "registered: 06/06/2012   due: 07/01/2015",
+      "",
+      "chargee: Shri Hari Ltd",
+      "principal: $200,000   rate: Prime plus 3.0% per annum",
+      "registered: 06/06/2012   due: 06/04/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT857/RT85706/0721_080307.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT857/RT85706/0721_080325.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT857/RT85706/0721_080340.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT857/RT85706/0721_080416.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT857/RT85706/air1.jpg",
+        "/assets/files/RT8/RT857/RT85706/air2.jpg",
+        "/assets/files/RT8/RT857/RT85706/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "414 / 752",
+      "rt_id": "RT85706"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "215 BEVERLY ST",
+    "postcode": "N1R 3Z9",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "06/06/2012",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.04",
+    "consid": "1070000",
+    "cash": "1070000",
+    "debt": "",
+    "note": "",
+    "pin": "03821-0021",
+    "rollno": "30 06 070 024 00500"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "215 BEVERLY ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "06 Jun 2012",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Shri Hari Ltd"
+    ],
+    "buyer_lines": [
+      "2324572 Ontario Inc"
+    ],
+    "price_text": "$1,070,000"
+  }
+}

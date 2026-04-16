@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT41008",
+  "source_folder": "Wellington/multifamily/p005",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41008",
+      "source_folder": "Wellington/multifamily/p005",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p005/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 SPEEDVALE AVE W",
+        "316 KATHLEEN ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "31 Mar 2005",
+      "price_text": "$1,920,660",
+      "note": "20% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "2 Apartment Bldgs - 7 storey; 145 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 614, Block A",
+      "",
+      "3.72 acre"
+    ],
+    "arn_text": "23 08 040 006 23900",
+    "consideration_lines": [
+      "cash: $813,210     assumed/vtb debt: $1,107,450",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $850,000   rate: 5.328% per annum",
+      "registered: 03/31/2005   due: 04/01/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT410/RT41008/photo.jpg"
+    },
+    "footer": {
+      "page_position": "233 / 295",
+      "rt_id": "RT41008"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "80 SPEEDVALE AVE W, 316 KATHLEEN ST",
+    "postcode": "N1H 1K3",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "03/31/2005",
+    "desc": "2 Apartment Bldgs - 7 storey; 145 units",
+    "bldg": "145 units",
+    "acreage": "3.72",
+    "consid": "1920660",
+    "cash": "813210",
+    "debt": "1107450",
+    "note": "20% Interest",
+    "pin": "",
+    "rollno": "23 08 040 006 23900"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "80 SPEEDVALE AVE W",
+      "316 KATHLEEN ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "31 Mar 2005",
+    "note": "20% Interest",
+    "description": "2 Apartment Bldgs - 7 storey; 145 units",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,920,660"
+  }
+}

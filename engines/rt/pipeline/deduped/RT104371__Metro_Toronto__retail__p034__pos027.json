@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT104371",
+  "source_folder": "Metro_Toronto/retail/p034",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104371",
+      "source_folder": "Metro_Toronto/retail/p034",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p034/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "1213 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "22 Oct 2014",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1381069 Ontario Ltd     416-239-0429"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Felice Battista",
+        "9 Ashley Park Rd",
+        "Toronto, Ontario",
+        "M9A 4C9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1360, Part Lot 23",
+      "As in Inst No CA-620463",
+      "",
+      "PIN: 21316-0232",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 033 530 01000",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104371/1123_101251.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104371/1123_101303.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104371/1123_101322.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104371/1123_101341.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104371/1123_101353.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1678 / 4952",
+      "rt_id": "RT104371"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "1213 ST CLAIR AVE W",
+    "postcode": "M6E 1B5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/22/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "21316-0232",
+    "rollno": "19 04 033 530 01000"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "1213 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "22 Oct 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1381069 Ontario Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

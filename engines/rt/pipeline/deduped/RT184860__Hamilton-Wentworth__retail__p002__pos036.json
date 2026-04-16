@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT184860",
+  "source_folder": "Hamilton-Wentworth/retail/p002",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184860",
+      "source_folder": "Hamilton-Wentworth/retail/p002",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p002/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "1088 MAIN ST W",
+        "1096 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "15 May 2024",
+      "price_text": "$1,900,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Geese Developments Ltd",
+        "Elite Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Elite Holdings Corp",
+        "400 Dundas St, Suite One",
+        "London, Ontario",
+        "N6B 1V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Python Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michel Beaudoin",
+        "400 Dundas St, Unit 1",
+        "London, Ontario",
+        "N6B 1V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 646, Lot 103 & Part Lot 104",
+      "Plan 62R-3197, Part 1",
+      "As in Inst No VM-201794",
+      "",
+      "PIN: 17464-0271 +",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "25 18 010 057 00880 +",
+    "consideration_lines": [
+      "cash: $1,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Elite Holdings Corp",
+      "principal: $1,513,959   rate: 7.0% per annum.",
+      "registered: 05/15/2024   due: 06/01/2034"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "87 / 616",
+      "rt_id": "RT184860"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "1088 MAIN ST W, 1096 MAIN ST W",
+    "postcode": "L8S 1B3",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "05/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "1900000",
+    "cash": "1900000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "17464-0271+",
+    "rollno": "25 18 010 057 00880+"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "1088 MAIN ST W",
+      "1096 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "15 May 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Geese Developments Ltd",
+      "Elite Holdings Corp"
+    ],
+    "buyer_lines": [
+      "Python Holdings Inc"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

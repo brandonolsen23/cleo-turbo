@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT186839",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186839",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1768 PERCY ST"
+      ],
+      "city_region": "Cramahe : Northumberland",
+      "date_text": "21 Aug 2024",
+      "price_text": "$1,651,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2833710 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "74 Dannor Ave",
+        "Stouffville, Ontario",
+        "L4A 0V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000926667 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kirtikumar Patel",
+        "1768 Percy St",
+        "Castleton, Ontario",
+        "K0K 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT18/RT1868/RT186839/mi.pdf",
+    "site_lines": [
+      "Conc 7 - Cramahe, Part Lots 33 & 34",
+      "Plan 57 - Castleton, Part Lot 98",
+      "As in Inst No NC-363266",
+      "",
+      "PIN: 51132-0386",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "14 11 011 050 02800",
+    "consideration_lines": [
+      "cash: $1,651,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,155,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/21/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186839/1012_163433.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186839/1012_163436.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1868/RT186839/1012_163438.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 93",
+      "rt_id": "RT186839"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1768 PERCY ST",
+    "postcode": "K0K 1M0",
+    "municipality": "Cramahe",
+    "region": "Northumberland",
+    "date": "08/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "1651000",
+    "cash": "1651000",
+    "debt": "",
+    "note": "",
+    "pin": "51132-0386",
+    "rollno": "14 11 011 050 02800"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1768 PERCY ST"
+    ],
+    "city_region": "Cramahe : Northumberland",
+    "date_text": "21 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2833710 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000926667 Ontario Inc"
+    ],
+    "price_text": "$1,651,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT183205",
+  "source_folder": "Middlesex_County/retail/p002",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183205",
+      "source_folder": "Middlesex_County/retail/p002",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p002/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "22900 HAGERTY RD"
+      ],
+      "city_region": "SW Middlesex : Middlesex County",
+      "date_text": "12 Feb 2024",
+      "price_text": "$1,190,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000728372 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hem Raj Chouhan",
+        "22900 Hagerty Rd",
+        "Newbury, Ontario",
+        "N0L 1Z0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 34PL-46, Block E,",
+      "Lot 4, E of Hagerty Rd",
+      "",
+      "PIN: 08567-0080",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,190,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $663,750   rate: Prime plus 5.0% per annum.",
+      "registered: 02/12/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "90 / 686",
+      "rt_id": "RT183205"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "22900 HAGERTY RD",
+    "postcode": "N0L 1Z0",
+    "municipality": "SW Middlesex",
+    "region": "Middlesex County",
+    "date": "02/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1190000",
+    "cash": "1190000",
+    "debt": "",
+    "note": "",
+    "pin": "08567-0080",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "22900 HAGERTY RD"
+    ],
+    "city_region": "SW Middlesex : Middlesex County",
+    "date_text": "12 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000728372 Ontario Inc"
+    ],
+    "price_text": "$1,190,000"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT142705",
+  "source_folder": "Brant/retail/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT142705",
+      "source_folder": "Brant/retail/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 KING GEORGE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "30 Apr 2019",
+      "price_text": "$2,315,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "FC One Retail Portfolio GP Inc     416-635-0221"
+      ],
+      "trade_name": "Firm Capital Corp",
+      "contact_lines": [
+        "VP: Robert McKee",
+        "163 Cartwright Ave",
+        "Toronto, Ontario",
+        "M6A 1V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "9665064 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tricia Anand",
+        "37 Red Tree Dr",
+        "Kleinburg, Ontario",
+        "L4H 4H8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1000, SEC 32",
+      "Part Lot 1",
+      "As in Inst No A-438229",
+      "",
+      "PIN: 32176-0111",
+      "",
+      "0.90 acre"
+    ],
+    "arn_text": "29 06 030 013 13200",
+    "consideration_lines": [
+      "cash: $2,315,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $1,500,000   rate: 3.907% per annum.",
+      "registered: 04/30/2019   due: 05/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1427/RT142705/0714_105036.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1427/RT142705/0714_105040.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1427/RT142705/0714_105120a.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1427/RT142705/0714_105120b.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1427/RT142705/0714_105143.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1427/RT142705/0714_105214.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 195",
+      "rt_id": "RT142705"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "50 KING GEORGE RD",
+    "postcode": "N3R 5K3",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "04/30/2019",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".9",
+    "consid": "2315000",
+    "cash": "2315000",
+    "debt": "",
+    "note": "",
+    "pin": "32176-0111",
+    "rollno": "29 06 030 013 13200"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "50 KING GEORGE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "30 Apr 2019",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "FC One Retail Portfolio GP Inc"
+    ],
+    "buyer_lines": [
+      "9665064 Canada Inc"
+    ],
+    "price_text": "$2,315,000"
+  }
+}

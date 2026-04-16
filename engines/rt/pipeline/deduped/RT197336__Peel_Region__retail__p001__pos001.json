@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT197336",
+  "source_folder": "Peel_Region/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197336",
+      "source_folder": "Peel_Region/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2945 SANDALWOOD PKWY E",
+        "UNIT 9"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "18 Feb 2026",
+      "price_text": "$1,192,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "13439607 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "21 Parity Rd",
+        "Brampton, Ontario",
+        "L6X 0E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "17652399 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pardeep Kumar",
+        "2945 Sandalwood Pkwy E, Unit 9",
+        "Brampton, Ontario",
+        "L6R 3J6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 727",
+      "Level 1, Unit 9",
+      "",
+      "PIN: 19727-0009"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,192,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $685,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/18/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197336/0307_144417.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197336/0307_144447.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197336/0307_144515.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197336/0307_144632.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197336/0307_144752.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 1087",
+      "rt_id": "RT197336"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2945 SANDALWOOD PKWY E, UNIT 9",
+    "postcode": "L6R 3J6",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "02/18/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1192500",
+    "cash": "1192500",
+    "debt": "",
+    "note": "",
+    "pin": "19727-0009",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2945 SANDALWOOD PKWY E",
+      "UNIT 9"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "18 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "13439607 Canada Inc"
+    ],
+    "buyer_lines": [
+      "17652399 Canada Inc"
+    ],
+    "price_text": "$1,192,500"
+  }
+}

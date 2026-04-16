@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT189823",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189823",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "490 GORDON KRANTZ AVE",
+        "SUITE 112"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "21 Jan 2025",
+      "price_text": "$3,394,450",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mattamy (Milton West) Ltd     905-907-8888"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3300 Bloor St W, Ste 1800",
+        "Toronto, Ontario",
+        "M8X 2X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001061607 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rosalind Gulati",
+        "490 Gordon Krantz Ave, Ste 112",
+        "Milton, Ontario",
+        "L9E 1Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 788",
+      "Level 1, Units 33-38",
+      "Level A, Units 272-275",
+      "",
+      "PIN: 26090-0033 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,394,450     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $2,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/21/2025   due: 04/21/2045"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_140834.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_140837.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_140841.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_140849.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_141046.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_141047.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_141052.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189823/0201_141119.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "49 / 613",
+      "rt_id": "RT189823"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "490 GORDON KRANTZ AVE, SUITE 112",
+    "postcode": "L9E 1Z5",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "01/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3394450",
+    "cash": "3394450",
+    "debt": "",
+    "note": "",
+    "pin": "26090-0033+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "490 GORDON KRANTZ AVE",
+      "SUITE 112"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "21 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mattamy (Milton West) Ltd"
+    ],
+    "buyer_lines": [
+      "1001061607 Ontario Inc"
+    ],
+    "price_text": "$3,394,450"
+  }
+}

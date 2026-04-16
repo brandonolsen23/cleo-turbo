@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT71294",
+  "source_folder": "Lambton/retail/p002",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71294",
+      "source_folder": "Lambton/retail/p002",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 MITTON ST S"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "08 Mar 2010",
+      "price_text": "$970,857",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Shoppers Drug Mart (London) Ltd     416-493-1220"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Gomes",
+        "Shoppers Realty Inc",
+        "243 Consumers Rd, 12 Flr",
+        "Toronto, Ontario",
+        "M2J 4W8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Scott's Trustee Corp     416-361-9665"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Evelyn Sutherland",
+        "Scott's Real Estate Investment Trust",
+        "Suite 2300, PO Box 222",
+        "TD Canada Trust Tower",
+        "161 Bay St",
+        "Toronto, Ontario",
+        "M5J 2S1"
+      ]
+    },
+    "description_lines": [
+      "Shoppers Drug Mart - 1 storey; 6,600 sf @ $147"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20, Lot 20",
+      "Plan 25R-4427, Part 1",
+      "",
+      "PIN: 43257-0168",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "38 29 400 017 07500",
+    "consideration_lines": [
+      "cash: $970,857     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Centrale Desjardins",
+      "principal: $20,000,000   rate: 25.0% per annum",
+      "registered: 03/08/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71294/0501_091822.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71294/0501_091856.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71294/0501_091929.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT712/RT71294/air1.jpg",
+        "/assets/files/RT7/RT712/RT71294/air2.jpg",
+        "/assets/files/RT7/RT712/RT71294/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "80 / 106",
+      "rt_id": "RT71294"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "123 MITTON ST S",
+    "postcode": "N7T 3C5",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "03/08/2010",
+    "desc": "Shoppers Drug Mart - 1 storey; 6,600 sf @ $147",
+    "bldg": "6,600 sf",
+    "acreage": ".55",
+    "consid": "970857",
+    "cash": "970857",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "43257-0168",
+    "rollno": "38 29 400 017 07500"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "123 MITTON ST S"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "08 Mar 2010",
+    "note": "Sale Leaseback",
+    "description": "Shoppers Drug Mart - 1 storey; 6,600 sf @ $147",
+    "seller_lines": [
+      "Shoppers Drug Mart (London) Ltd"
+    ],
+    "buyer_lines": [
+      "Scott's Trustee Corp"
+    ],
+    "price_text": "$970,857"
+  }
+}

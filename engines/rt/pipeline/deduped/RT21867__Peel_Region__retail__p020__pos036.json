@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT21867",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21867",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "3675 TAMARACK GATE"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "29 Jun 2001",
+      "price_text": "$540,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tamarack Gate Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marlo Cinelli",
+        "1450 O'Connor Dr, Ste 301, Bldg 2",
+        "Toronto, Ontario",
+        "M4B 2V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "997033 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joon Hyun Kim",
+        "6801 Billingswood Dr E",
+        "Mississauga, Ontario",
+        "L5N 6Z9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 22,500 sf @ $24"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-3618, Part 1",
+      "",
+      "SE corner at Burnhamthorpe",
+      "",
+      "0.51 acre"
+    ],
+    "arn_text": "21 05 060 156 84500",
+    "consideration_lines": [
+      "cash: $540,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT218/RT21867/photo.jpg"
+    },
+    "footer": {
+      "page_position": "987 / 1087",
+      "rt_id": "RT21867"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "3675 TAMARACK GATE",
+    "postcode": "L5L 1Y6",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "06/29/2001",
+    "desc": "Retail Bldg - 1 storey; 22,500 sf @ $24",
+    "bldg": "22,500 sf",
+    "acreage": ".51",
+    "consid": "540000",
+    "cash": "540000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 060 156 84500"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "3675 TAMARACK GATE"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "29 Jun 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 22,500 sf @ $24",
+    "seller_lines": [
+      "Tamarack Gate Inc"
+    ],
+    "buyer_lines": [
+      "997033 Ontario Inc"
+    ],
+    "price_text": "$540,000"
+  }
+}

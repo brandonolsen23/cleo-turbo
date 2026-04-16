@@ -16,14 +16,47 @@ BUY_MANDATE_STATUSES = ["active", "on_hold", "stale", "fulfilled"]
 
 
 class BuyMandateCriteria(BaseModel):
+    # Property type
     asset_classes: Optional[list[str]] = None
     asset_subclasses: Optional[list[str]] = None
+    zoning_notes: Optional[str] = None
+
+    # Tenant preferences
+    tenant_quality: Optional[str] = None           # national_credit, regional_credit, local, any
+    tenant_categories: Optional[list[str]] = None   # IDs from tenant_categories table
+    occupancy_type: Optional[str] = None            # single, multi, either
+    anchored_preference: Optional[str] = None       # grocery, big_box, none
+
+    # Location
     regions: Optional[list[str]] = None
     cities: Optional[list[str]] = None
+    market_tiers: Optional[list[str]] = None        # primary, secondary, tertiary
+
+    # Financial
     price_min: Optional[int] = None
     price_max: Optional[int] = None
+    cap_rate_min: Optional[float] = None
+    cap_rate_max: Optional[float] = None
+    noi_min: Optional[int] = None
+    noi_max: Optional[int] = None
+
+    # Size & physical
     sqft_min: Optional[int] = None
     sqft_max: Optional[int] = None
+    acreage_min: Optional[float] = None
+    acreage_max: Optional[float] = None
+    unit_count_min: Optional[int] = None
+    unit_count_max: Optional[int] = None
+
+    # Investment profile
+    investment_strategy: Optional[str] = None       # core, core_plus, value_add, opportunistic
+    vacancy_tolerance: Optional[str] = None         # fully_leased, some_vacancy, high_vacancy
+
+    # Timing & priority
+    priority: Optional[str] = None                  # primary, secondary, exploratory
+    timeline: Optional[str] = None                  # immediate, near_term, medium, long_term
+
+    # Deprecated (kept for backward compat with old criteria JSON)
     market_type: Optional[str] = None
     max_distance_from_city_km: Optional[int] = None
 
@@ -234,18 +267,25 @@ def delete_buy_mandate(mandate_id: str, db=Depends(get_db), user=Depends(get_cur
     return {"id": mandate_id, "status": "deleted"}
 
 
-def _find_matching_properties(db, criteria: dict, limit: int = 30) -> list:
-    """Find properties that match buy mandate criteria."""
+def _find_matching_properties(db, criteria: dict, limit: int = 50) -> list:
+    """Find properties that match buy mandate criteria with match scoring."""
     if not criteria:
         return []
 
     conditions = []
     params = []
+    joins = []
 
+    # ── Hard filters (must match) ──
     if criteria.get("asset_classes"):
         placeholders = ",".join("?" * len(criteria["asset_classes"]))
         conditions.append(f"p.asset_class IN ({placeholders})")
         params.extend(criteria["asset_classes"])
+
+    if criteria.get("asset_subclasses"):
+        placeholders = ",".join("?" * len(criteria["asset_subclasses"]))
+        conditions.append(f"p.asset_subclass IN ({placeholders})")
+        params.extend(criteria["asset_subclasses"])
 
     if criteria.get("regions"):
         placeholders = ",".join("?" * len(criteria["regions"]))
@@ -254,8 +294,8 @@ def _find_matching_properties(db, criteria: dict, limit: int = 30) -> list:
 
     if criteria.get("cities"):
         placeholders = ",".join("?" * len(criteria["cities"]))
-        conditions.append(f"p.city IN ({placeholders})")
-        params.extend(criteria["cities"])
+        conditions.append(f"LOWER(p.city) IN ({placeholders})")
+        params.extend([c.lower() for c in criteria["cities"]])
 
     if criteria.get("price_min"):
         conditions.append("p.most_recent_sale_price >= ?")
@@ -265,22 +305,60 @@ def _find_matching_properties(db, criteria: dict, limit: int = 30) -> list:
         conditions.append("p.most_recent_sale_price <= ?")
         params.append(criteria["price_max"])
 
+    if criteria.get("sqft_min") or criteria.get("sqft_max"):
+        joins.append("LEFT JOIN gw_assessments gw ON gw.property_id = p.id")
+        if criteria.get("sqft_min"):
+            conditions.append("gw.site_area_sqft >= ?")
+            params.append(criteria["sqft_min"])
+        if criteria.get("sqft_max"):
+            conditions.append("gw.site_area_sqft <= ?")
+            params.append(criteria["sqft_max"])
+
+    if criteria.get("acreage_min"):
+        conditions.append("p.acreage >= ?")
+        params.append(criteria["acreage_min"])
+
+    if criteria.get("acreage_max"):
+        conditions.append("p.acreage <= ?")
+        params.append(criteria["acreage_max"])
+
+    # Need at least one filter to avoid returning everything
     if not conditions:
         return []
 
     where = " AND ".join(conditions)
+    join_clause = " ".join(joins)
 
     rows = db.execute(
         f"SELECT p.id, p.display_address, p.city, p.region, p.asset_class, "
+        f"p.asset_subclass, p.acreage, "
         f"p.most_recent_sale_price, p.most_recent_sale_date, p.lat, p.lng, "
         f"p.current_owner_name, p.current_owner_group_id, "
-        f"so.id AS sell_opportunity_id, so.status AS sell_opportunity_status, so.deal_value "
+        f"so.id AS sell_opportunity_id, so.status AS sell_opportunity_status, "
+        f"so.deal_value, so.noi AS sell_opp_noi, so.expected_cap_rate AS sell_opp_cap_rate, "
+        f"pe.noi AS enrichment_noi, pe.unit_count, pe.vacancy_pct "
         f"FROM properties p "
         f"LEFT JOIN sell_opportunities so ON so.property_id = p.id AND so.status = 'active' "
+        f"LEFT JOIN property_enrichment pe ON pe.property_id = p.id "
+        f"{join_clause} "
         f"WHERE {where} AND p.lat IS NOT NULL "
         f"ORDER BY p.most_recent_sale_date DESC NULLS LAST "
         f"LIMIT ?",
         params + [limit]
     ).fetchall()
 
-    return [dict(r) for r in rows]
+    results = []
+    for r in rows:
+        d = dict(r)
+        # Use enrichment NOI first, fall back to sell opportunity NOI
+        noi = d.get("enrichment_noi") or d.get("sell_opp_noi")
+        d["noi"] = noi
+        # Compute implied cap rate if we have NOI and a sale price
+        price = d.get("most_recent_sale_price")
+        if noi and price and price > 0:
+            d["implied_cap_rate"] = round(noi / price * 100, 2)
+        else:
+            d["implied_cap_rate"] = None
+        results.append(d)
+
+    return results

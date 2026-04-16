@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT62655",
+  "source_folder": "Prescott/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT62655",
+      "source_folder": "Prescott/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prescott/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "857 CECILE BLVD"
+      ],
+      "city_region": "Hawkesbury : Prescott",
+      "date_text": "26 Jun 2008",
+      "price_text": "$3,797,468",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Cecile Boulevard Hawkesbury Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "H&R REIT",
+      "contact_lines": [
+        "ASO: Larry Froom",
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioKim Holdings (Ontario II) Inc     416-866-3033"
+      ],
+      "trade_name": "RioCan REIT",
+      "contact_lines": [
+        "Attn: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey 3 tenants 54,950 sf @ $69",
+      "",
+      "98% occupied",
+      "",
+      "anchored by Price Chopper",
+      "",
+      "H&R Retail Portfolio",
+      "$157 Million",
+      "10 retail centres",
+      "1,077,036 sf",
+      "Ontario, Quebec and Nova Scotia"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 46R-4743, Parts 1 & 2",
+      "",
+      "PIN: 54178-0161",
+      "",
+      "5.85 acre"
+    ],
+    "arn_text": "02 08 010 002 34200",
+    "consideration_lines": [
+      "cash: $696,202     assumed/vtb debt: $3,101,266"
+    ],
+    "broker_lines": [
+      "CIBC World Markets: Kevin Leon & Chris Bell, 416-594-7360"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 19",
+      "rt_id": "RT62655"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "857 CECILE BLVD",
+    "postcode": "K6A 1P4",
+    "municipality": "Hawkesbury",
+    "region": "Prescott",
+    "date": "06/26/2008",
+    "desc": "Retail Plaza - 1 storey 3 tenants 54,950 sf @ $69",
+    "bldg": "54,950 sf",
+    "acreage": "5.85",
+    "consid": "3797468",
+    "cash": "696202",
+    "debt": "3101266",
+    "note": "Portfolio",
+    "pin": "54178-0161",
+    "rollno": "02 08 010 002 34200"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "857 CECILE BLVD"
+    ],
+    "city_region": "Hawkesbury : Prescott",
+    "date_text": "26 Jun 2008",
+    "note": "Portfolio",
+    "description": "Retail Plaza - 1 storey 3 tenants 54,950 sf @ $69",
+    "seller_lines": [
+      "Cecile Boulevard Hawkesbury Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "RioKim Holdings (Ontario II) Inc"
+    ],
+    "price_text": "$3,797,468"
+  }
+}

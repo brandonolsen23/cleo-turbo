@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT182784",
+  "source_folder": "Metro_Toronto/retail/p014",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182784",
+      "source_folder": "Metro_Toronto/retail/p014",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p014/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "2720 DUNDAS ST",
+        "SUITE S107"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "04 Jan 2024",
+      "price_text": "$1,170,511",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2720 Dundas Junction GP Inc",
+        "2720 Dundas Junction LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "121 King St W, Ste 200",
+        "Toronto, Ontario",
+        "M5H 3T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Conversant Holdings Inc     416-323-0849"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Parambir Keila",
+        "77 Cottingham St",
+        "Toronto, Ontario",
+        "M4V 1B9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 3007",
+      "Level 1, Unit 7",
+      "Level B, Units 31 & 102",
+      "",
+      "PIN: 77077-0007 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,170,511     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,258,800   rate: Prime plus 10.0% per annum.",
+      "registered: 01/04/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182784/0211_103122.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182784/0211_103201.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182784/0211_103204.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1827/RT182784/0211_103251.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "680 / 4952",
+      "rt_id": "RT182784"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "2720 DUNDAS ST, SUITE S107",
+    "postcode": "M6P 0C3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/04/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1170511",
+    "cash": "1170511",
+    "debt": "",
+    "note": "",
+    "pin": "77077-0007+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "2720 DUNDAS ST",
+      "SUITE S107"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "04 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2720 Dundas Junction GP Inc",
+      "2720 Dundas Junction LP"
+    ],
+    "buyer_lines": [
+      "Conversant Holdings Inc"
+    ],
+    "price_text": "$1,170,511"
+  }
+}

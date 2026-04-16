@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT93436",
+  "source_folder": "Metro_Toronto/retail/p039",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93436",
+      "source_folder": "Metro_Toronto/retail/p039",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p039/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "2581 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Jun 2013",
+      "price_text": "$1,892,500",
+      "note": "Assembly"
+    },
+    "transferor": {
+      "party_lines": [
+        "2239376 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Behrooz Sabzevari",
+        "7 Athabaska Ave",
+        "Toronto, Ontario",
+        "M2M 2T6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2376052 Ontario Inc     416-815-0201"
+      ],
+      "trade_name": "Edgecombe Realty Advisors Inc",
+      "contact_lines": [
+        "Pres: David Jubb",
+        "95 King St E, Ste 201",
+        "Toronto, Ontario",
+        "M5C 1G4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 3 storey; 2,600 sf @ $728",
+      "",
+      "1,000 sf ground floor leased to a clothing store",
+      "1,600 sf 2nd and 3rd floor leased to a shiatsu clinic"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 691, Part Block A",
+      "As in Inst No EO-113475",
+      "",
+      "PIN: 21137-0257",
+      "",
+      "E side Yonge St, N of Sherwood Ave",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 104 300 00700",
+    "consideration_lines": [
+      "cash: $1,892,500     assumed/vtb debt: $0",
+      "",
+      "chargee: 3699200 Canada Inc",
+      "principal: $2,411,334   rate: 6.0% per annum.",
+      "registered: 06/17/2013   due: on demand"
+    ],
+    "broker_lines": [
+      "Paracom Realty Corp: Jordan Karp & Ryan Morein, 416-922-2223"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93436/0707_125627.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93436/0707_125645.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93436/0707_125739.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93436/0707_125830.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1950 / 4952",
+      "rt_id": "RT93436"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "2581 YONGE ST",
+    "postcode": "M4P 2J1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/17/2013",
+    "desc": "Retail Bldg - 3 storey; 2,600 sf @ $728",
+    "bldg": "2,600 sf",
+    "acreage": ".07",
+    "consid": "1892500",
+    "cash": "1892500",
+    "debt": "",
+    "note": "Assembly",
+    "pin": "21137-0257",
+    "rollno": "19 04 104 300 00700"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "2581 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Jun 2013",
+    "note": "Assembly",
+    "description": "Retail Bldg - 3 storey; 2,600 sf @ $728",
+    "seller_lines": [
+      "2239376 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2376052 Ontario Inc"
+    ],
+    "price_text": "$1,892,500"
+  }
+}

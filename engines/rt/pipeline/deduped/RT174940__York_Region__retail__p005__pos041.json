@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT174940",
+  "source_folder": "York_Region/retail/p005",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174940",
+      "source_folder": "York_Region/retail/p005",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "11685 YONGE ST",
+        "UNIT B105"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "18 Jan 2023",
+      "price_text": "$904,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1510817 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1103 Sherman Brock Circle",
+        "Newmarket, Ontario",
+        "L3X 0B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000405311 Ontario Inc     905-773-6914"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ajinder Doad",
+        "83 Timber Valley Ave",
+        "Richmond Hill, Ontario",
+        "L4E 4Z8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1171",
+      "Level 1, Unit 12",
+      "",
+      "PIN: 29702-0012"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $904,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174940/0204_140656.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174940/0204_140704.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174940/0204_140757.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174940/0204_140810.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1749/RT174940/0204_140819.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "242 / 984",
+      "rt_id": "RT174940"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "11685 YONGE ST, UNIT B105",
+    "postcode": "L4E 0K7",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "01/18/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "904500",
+    "cash": "904500",
+    "debt": "",
+    "note": "",
+    "pin": "29702-0012",
+    "rollno": ""
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "11685 YONGE ST",
+      "UNIT B105"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "18 Jan 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1510817 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000405311 Ontario Inc"
+    ],
+    "price_text": "$904,500"
+  }
+}

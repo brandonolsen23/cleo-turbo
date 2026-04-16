@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT88123",
+  "source_folder": "Peterborough_County/retail/p002",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT88123",
+      "source_folder": "Peterborough_County/retail/p002",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p002/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "760 SHERBROOKE ST"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "01 Oct 2012",
+      "price_text": "$1,800,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sobeys Capital Inc     905-672-6633"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Heidi Jamieson",
+        "6355 Viscount Rd",
+        "Mississauga, Ontario",
+        "L4V 1W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1767694 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "Goldmanco Inc",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "1989 Leslie St",
+        "Toronto, Ontario",
+        "M3B 2M3"
+      ]
+    },
+    "description_lines": [
+      "Foodland Supermarket - 1 storey; 11,388 sf @ $158",
+      "",
+      "Leased back to the vendor.",
+      "",
+      "Last transferred in Oct 2008 for $1,600,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 23Q, Part Lots 1 & 2",
+      "Plan 45R-5729, Parts 1-5",
+      "Plan 45R-6002, Part 1",
+      "",
+      "PIN: 28061-0188",
+      "",
+      "N side Sherbrooke St, W of Clonsilla Ave",
+      "",
+      "1.65 acre"
+    ],
+    "arn_text": "15 14 020 080 08000",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT881/RT88123/0301_093531.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT881/RT88123/0301_093627.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT881/RT88123/0301_093757.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT881/RT88123/0301_093802.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT881/RT88123/air1.jpg",
+        "/assets/files/RT8/RT881/RT88123/air2.jpg",
+        "/assets/files/RT8/RT881/RT88123/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "70 / 157",
+      "rt_id": "RT88123"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "760 SHERBROOKE ST",
+    "postcode": "K9J 2R1",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "10/01/2012",
+    "desc": "Foodland Supermarket - 1 storey; 11,388 sf @ $158",
+    "bldg": "11,388 sf",
+    "acreage": "1.65",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "28061-0188",
+    "rollno": "15 14 020 080 08000"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "760 SHERBROOKE ST"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "01 Oct 2012",
+    "note": "Sale Leaseback",
+    "description": "Foodland Supermarket - 1 storey; 11,388 sf @ $158",
+    "seller_lines": [
+      "Sobeys Capital Inc"
+    ],
+    "buyer_lines": [
+      "1767694 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

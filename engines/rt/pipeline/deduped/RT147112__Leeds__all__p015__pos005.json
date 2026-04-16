@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT147112",
+  "source_folder": "Leeds/all/p015",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT147112",
+      "source_folder": "Leeds/all/p015",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p015/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 13",
+        "PART LOT 22"
+      ],
+      "city_region": "Brooke : Lambton",
+      "date_text": "01 Nov 2019",
+      "price_text": "$2,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "VDN Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: S. Van Den Nieuwenhuizen",
+        "8504 LaSalle Line, RR 7",
+        "Watford, Ontario",
+        "N0M 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 13, Part Lot 22",
+      "As in Inst No L-566594",
+      "",
+      "PIN: 43355-0080",
+      "",
+      "76.27 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "706 / 1916",
+      "rt_id": "RT147112"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "CONC 13, PART LOT 22",
+    "postcode": "",
+    "municipality": "Brooke",
+    "region": "Lambton",
+    "date": "11/01/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "76.27",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43355-0080",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "CONC 13",
+      "PART LOT 22"
+    ],
+    "city_region": "Brooke : Lambton",
+    "date_text": "01 Nov 2019",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "VDN Farms Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

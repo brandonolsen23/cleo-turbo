@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT183845",
+  "source_folder": "Metro_Toronto/retail/p013",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183845",
+      "source_folder": "Metro_Toronto/retail/p013",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p013/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "5495 EGLINTON AVE W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "28 Mar 2024",
+      "price_text": "$5,100,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice",
+        "(Commercial List)"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5G 1R8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000733305 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Vastis",
+        "1387 Hazelton Blvd",
+        "Burlington, Ontario",
+        "L7P 4V3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc River Etobicoke, Part Lot D",
+      "Plan 64R-10437, Part 1",
+      "",
+      "PIN: 07425-0011",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 19 034 870 00550",
+    "consideration_lines": [
+      "cash: $5,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183845/0406_130054.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183845/0406_130133.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183845/0406_130134.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183845/0406_130138.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183845/0406_130139.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183845/0406_130208.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "606 / 4952",
+      "rt_id": "RT183845"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "5495 EGLINTON AVE W",
+    "postcode": "M9C 5K5",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "03/28/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "5100000",
+    "cash": "5100000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "07425-0011",
+    "rollno": "19 19 034 870 00550"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "5495 EGLINTON AVE W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "28 Mar 2024",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice",
+      "(Commercial List)"
+    ],
+    "buyer_lines": [
+      "1000733305 Ontario Inc"
+    ],
+    "price_text": "$5,100,000"
+  }
+}

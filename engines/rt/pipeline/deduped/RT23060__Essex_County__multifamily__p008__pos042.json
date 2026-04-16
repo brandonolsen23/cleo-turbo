@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT23060",
+  "source_folder": "Essex_County/multifamily/p008",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23060",
+      "source_folder": "Essex_County/multifamily/p008",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/multifamily/p008/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "27 REMARK DR"
+      ],
+      "city_region": "Kingsville : Essex County",
+      "date_text": "11 Oct 2001",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Estate of Frank Remark"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harold Remark",
+        "370 Main St E",
+        "Kingsville, Ontario",
+        "N9Y 1A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1486176 Ontario Ltd     519-326-4789"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joesph Abraham",
+        "45 Shawnee Ct",
+        "Leamington, Ontario",
+        "N8H 5A8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 40 units @ $30,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-126, Lots 1-4",
+      "Except Plan 12R-12283, Parts 9 & 10",
+      "",
+      "1.58 acre"
+    ],
+    "arn_text": "37 11 221 000 12700",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "393 / 421",
+      "rt_id": "RT23060"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "27 REMARK DR",
+    "postcode": "N9Y 3N8",
+    "municipality": "Kingsville",
+    "region": "Essex County",
+    "date": "10/11/2001",
+    "desc": "Apartment Bldg - 3 storey; 40 units @ $30,000",
+    "bldg": "40 units",
+    "acreage": "1.58",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 11 221 000 12700"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "27 REMARK DR"
+    ],
+    "city_region": "Kingsville : Essex County",
+    "date_text": "11 Oct 2001",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 40 units @ $30,000",
+    "seller_lines": [
+      "Estate of Frank Remark"
+    ],
+    "buyer_lines": [
+      "1486176 Ontario Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

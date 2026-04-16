@@ -1,56 +1,29 @@
 """
 Text normalization for addresses.
 
-Converts abbreviations to long form, applies Title Case, normalizes
-provinces, directions, and street suffixes. Does NOT decompose —
-that's decompose.py's job.
+Shared functions (to_title_case, expand_suffix, expand_direction, saint name
+handling) are re-exported from cleo.address.normalize. RT-specific functions
+(province/country expansion, postal normalization, etc.) remain here.
 
 Reference: schema/address_normalization_plan.md
 """
 
 import re
-from .dictionaries import (
-    SUFFIX_MAP, DIRECTION_MAP, PROVINCE_MAP, COUNTRY_MAP,
-    SAINT_NAMES, UPPERCASE_TOKENS,
+
+# Re-export shared normalization functions
+from cleo.address.normalize import (  # noqa: F401
+    to_title_case,
+    expand_suffix,
+    expand_direction,
+    is_saint_name,
+    protect_saints,
+    restore_saints,
+    normalize_street_name,
 )
 
-
-def to_title_case(text):
-    """Convert text to Title Case, preserving UPPERCASE_TOKENS like PO, RR."""
-    words = text.split()
-    result = []
-    for word in words:
-        upper = word.upper()
-        if upper in UPPERCASE_TOKENS:
-            result.append(upper)
-        elif word.isupper() or word.islower():
-            result.append(word.capitalize())
-        else:
-            # Mixed case — respect it (e.g., "McGregor")
-            result.append(word)
-    return ' '.join(result)
-
-
-def expand_suffix(word):
-    """Expand a street suffix abbreviation to long form.
-
-    Returns the long form if it's a known suffix, otherwise returns None.
-    """
-    lookup = word.lower().rstrip('.')
-    if lookup in SUFFIX_MAP:
-        return SUFFIX_MAP[lookup]
-    return None
-
-
-def expand_direction(word):
-    """Expand a direction abbreviation to long form.
-
-    Returns the long form if it's a known direction, otherwise returns None.
-    """
-    lookup = word.lower().rstrip('.')
-    if lookup in DIRECTION_MAP:
-        return DIRECTION_MAP[lookup]
-    return None
+from .dictionaries import (
+    PROVINCE_MAP, COUNTRY_MAP, SAINT_NAMES, UPPERCASE_TOKENS,
+)
 
 
 def expand_province(text):
@@ -84,43 +57,8 @@ def normalize_postal(postal):
     return postal.strip().upper()
 
 
-def is_saint_name(word_after_st):
-    """Check if the word following 'St' is a known saint name."""
-    return word_after_st.lower().rstrip('.') in SAINT_NAMES
-
-
-def protect_saints(text):
-    """Replace 'St.' / 'St' before saint names with a placeholder.
-
-    Returns (modified_text, list_of_saint_positions) so we can restore later.
-    """
-    words = text.split()
-    protected = []
-    saints_found = []
-    i = 0
-    while i < len(words):
-        word = words[i]
-        bare = word.rstrip('.').rstrip(',')
-        if bare.lower() == 'st' and i + 1 < len(words):
-            next_word = words[i + 1].rstrip('.,')
-            if is_saint_name(next_word):
-                saints_found.append(i)
-                protected.append('__SAINT__')
-                protected.append(words[i + 1])
-                i += 2
-                continue
-        protected.append(word)
-        i += 1
-    return ' '.join(protected), saints_found
-
-
-def restore_saints(text):
-    """Replace __SAINT__ placeholder back with 'St.'"""
-    return text.replace('__SAINT__', 'St.')
-
-
 def collapse_possessives(text):
-    """Collapse possessives: Queen's → Queens, John's → Johns.
+    """Collapse possessives: Queen's -> Queens, John's -> Johns.
 
     Only removes 's and 's at end of words. Preserves O'Neill style apostrophes.
     """
@@ -131,14 +69,14 @@ def collapse_possessives(text):
 
 
 def normalize_highway_hash(text):
-    """Strip # from highway route numbers: Highway #7 → Highway 7."""
+    """Strip # from highway route numbers: Highway #7 -> Highway 7."""
     return re.sub(r'(Highway|Hwy|Hwy\.?)\s*,?\s*#(\d)', r'\1 \2', text, flags=re.IGNORECASE)
 
 
 def strip_preamble(text):
     """Strip descriptive preamble before actual address.
 
-    'LOCATED AT 6301 Silver Dart Dr' → '6301 Silver Dart Dr'
+    'LOCATED AT 6301 Silver Dart Dr' -> '6301 Silver Dart Dr'
     """
     match = re.search(r'LOCATED\s+AT\s+(\d)', text, re.IGNORECASE)
     if match:

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT196505",
+  "source_folder": "Hamilton-Wentworth/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196505",
+      "source_folder": "Hamilton-Wentworth/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "229 DUNDURN ST S"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "08 Jan 2026",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1210873 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "32 Douglas St",
+        "Guelph, Ontario",
+        "N1H 2S9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "229 Dundurn (Hamilton) Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Hendire",
+        "203 Macnab St S",
+        "Hamilton, Ontario",
+        "L8P 3C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 253, Block E,",
+      "Lots 118 & 119",
+      "",
+      "PIN: 17138-0106",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $435,000     assumed/vtb debt: $1,015,000",
+      "",
+      "chargee: 1210873 Ontario Ltd",
+      "principal: $1,015,000   rate: First year, 4.25% per annum with monthly payments of $3,94.79.\nSecond year, 4.75% per annum with monthly payments of $4,017.71.\nThird year, 5.25% per annum with monthly payments of $4.440.63.",
+      "registered: 01/08/2026   due: 01/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1965/RT196505/0124_105720.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1965/RT196505/0124_105721.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1965/RT196505/0124_105748.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1965/RT196505/0124_105804.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1965/RT196505/0124_105816.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1965/RT196505/0124_105823.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 616",
+      "rt_id": "RT196505"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "229 DUNDURN ST S",
+    "postcode": "L8P 4K8",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "01/08/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".27",
+    "consid": "1450000",
+    "cash": "435000",
+    "debt": "1015000",
+    "note": "",
+    "pin": "17138-0106",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "229 DUNDURN ST S"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "08 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1210873 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "229 Dundurn (Hamilton) Corp"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT194611",
+  "source_folder": "Niagara_N/retail/p001",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194611",
+      "source_folder": "Niagara_N/retail/p001",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p001/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "222 - 228 GLENDALE AVE"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "29 Sep 2025",
+      "price_text": "$3,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001243488 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Deborah Lo",
+        "1870 Grosvenor Place",
+        "Mississauga, Ontario",
+        "L3L 3V5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 478,",
+      "Lots 11-13 & Part Lots 25 & 86",
+      "As in Inst No RO-619177",
+      "",
+      "PIN: 46412-0233",
+      "",
+      "1.01 acre"
+    ],
+    "arn_text": "26 29 010 006 07000",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "13 / 307",
+      "rt_id": "RT194611"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "222 - 228 GLENDALE AVE",
+    "postcode": "L2T 2K5",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "09/29/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.01",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "46412-0233",
+    "rollno": "26 29 010 006 07000"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "222 - 228 GLENDALE AVE"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "29 Sep 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001243488 Ontario Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

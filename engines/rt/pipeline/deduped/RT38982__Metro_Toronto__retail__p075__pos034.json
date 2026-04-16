@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT38982",
+  "source_folder": "Metro_Toronto/retail/p075",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38982",
+      "source_folder": "Metro_Toronto/retail/p075",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p075/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "4551 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "03 Dec 2004",
+      "price_text": "$2,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Edelstein Construction Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexander Serota",
+        "5300 Yonge St",
+        "Lower Concourse",
+        "Toronto, Ontario",
+        "M2R 5R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Edelstein Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexander Serota",
+        "5300 Yonge St",
+        "Lower Concourse",
+        "Toronto, Ontario",
+        "M2R 5R2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 10",
+      "As in Inst No SC-444341",
+      "",
+      "1.12 acre"
+    ],
+    "arn_text": "19 01 092 260 01700",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3735 / 4952",
+      "rt_id": "RT38982"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "4551 KINGSTON RD",
+    "postcode": "M1E 2P1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/03/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.12",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 092 260 01700"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "4551 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "03 Dec 2004",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Edelstein Construction Ltd"
+    ],
+    "buyer_lines": [
+      "Edelstein Properties Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

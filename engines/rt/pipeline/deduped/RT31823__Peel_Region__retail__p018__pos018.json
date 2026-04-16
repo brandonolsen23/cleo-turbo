@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT31823",
+  "source_folder": "Peel_Region/retail/p018",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31823",
+      "source_folder": "Peel_Region/retail/p018",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p018/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1020 JOHNSONS LANE"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "17 Sep 2003",
+      "price_text": "$1,580,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Moor Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Gerry Farantatos",
+        "1020 Johnson's Lane, Unit A5",
+        "Mississauga, Ontario",
+        "L5J 2P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KRTT Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Cindy Dhillon",
+        "37 George St, Ste 204",
+        "Brampton, Ontario",
+        "L6X 1R5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 8 units 13,229 sf @ $119",
+      "",
+      "Known as Banaf Plaza."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-3829, Part 1",
+      "Except:",
+      "Plan 43R-17979, Parts 1 & 2",
+      "Plan 43R-20540, Part 1",
+      "",
+      "1.32 acre"
+    ],
+    "arn_text": "21 05 020 024 11600",
+    "consideration_lines": [
+      "cash: $1,580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Rental Office: 905-823-5937"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT318/RT31823/photo.jpg"
+    },
+    "footer": {
+      "page_position": "869 / 1087",
+      "rt_id": "RT31823"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1020 JOHNSONS LANE",
+    "postcode": "L5J 2P7",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "09/17/2003",
+    "desc": "Retail Plaza - 1 storey; 8 units 13,229 sf @ $119",
+    "bldg": "13,229 sf",
+    "acreage": "1.32",
+    "consid": "1580000",
+    "cash": "1580000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "21 05 020 024 11600"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1020 JOHNSONS LANE"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "17 Sep 2003",
+    "note": "Power of Sale",
+    "description": "Retail Plaza - 1 storey; 8 units 13,229 sf @ $119",
+    "seller_lines": [
+      "Moor Holdings Corp"
+    ],
+    "buyer_lines": [
+      "KRTT Group Ltd"
+    ],
+    "price_text": "$1,580,000"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT191797",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191797",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "396 WILLIAM ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "10 Apr 2025",
+      "price_text": "$760,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2035773 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "880 Grandview Way, Ste 1404",
+        "Toronto, Ontario",
+        "M2N 7B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001082487 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kyung Choi",
+        "16 Westbury Rd, Ste 206",
+        "Wasaga Beach, Ontario",
+        "L9Z 0B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Caddy Plan - Formerly Conc A, Lot 19",
+      "Block A, Part Lot 8",
+      "As in Inst No NC-329402",
+      "",
+      "PIN: 51090-0392",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "14 21 000 150 12900",
+    "consideration_lines": [
+      "cash: $760,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $532,000   rate: 10.0% per annum.",
+      "registered: 04/10/2025   due: 04/10/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191797/0524_080534.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191797/0524_080539.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191797/0524_080554.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191797/0524_080555.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "14 / 93",
+      "rt_id": "RT191797"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "396 WILLIAM ST",
+    "postcode": "K9A 3A2",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "04/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".26",
+    "consid": "760000",
+    "cash": "760000",
+    "debt": "",
+    "note": "",
+    "pin": "51090-0392",
+    "rollno": "14 21 000 150 12900"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "396 WILLIAM ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "10 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2035773 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001082487 Ontario Inc"
+    ],
+    "price_text": "$760,000"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT41396",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41396",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "180 FRONT ST S"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "01 Apr 2005",
+      "price_text": "$585,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bruce Marshall Home Furnishings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruce Marshall",
+        "PO Box 368",
+        "Orillia, Ontario",
+        "L3V 6J8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 9",
+      "Plan 51R-13474, Parts 1 & 2",
+      "",
+      "0.81 acre"
+    ],
+    "arn_text": "43 52 010 104 13605",
+    "consideration_lines": [
+      "cash: $585,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bruce Marshall Home Furnishings Ltd",
+      "principal: $430,000   rate: First year at 4.0%, then 8.25% per annum thereafter.",
+      "registered: 04/01/2005   due: 04/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "586 / 712",
+      "rt_id": "RT41396"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "180 FRONT ST S",
+    "postcode": "L3V 4S7",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "04/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".81",
+    "consid": "585000",
+    "cash": "585000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 52 010 104 13605"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "180 FRONT ST S"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "01 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bruce Marshall Home Furnishings Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$585,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT158292",
+  "source_folder": "Leeds/all/p012",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT158292",
+      "source_folder": "Leeds/all/p012",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p012/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "4077 HYSLOP LINE"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "09 Feb 2021",
+      "price_text": "$1,325,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "H & A Wouters Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Herwig Wouters",
+        "5435 Aberarder Line, RR 2",
+        "Camlachie, Ontario",
+        "N0N 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 11",
+      "",
+      "PIN: 43099-0012",
+      "",
+      "104.36 acre"
+    ],
+    "arn_text": "44 93 340 020 10100",
+    "consideration_lines": [
+      "cash: $1,325,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,500,000   rate: 18.0% per annum.",
+      "registered: 02/09/2021   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "554 / 1916",
+      "rt_id": "RT158292"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "4077 HYSLOP LINE",
+    "postcode": "N0N 1E0",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "02/09/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": "104.36",
+    "consid": "1325000",
+    "cash": "1325000",
+    "debt": "",
+    "note": "",
+    "pin": "43099-0012",
+    "rollno": "44 93 340 020 10100"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "4077 HYSLOP LINE"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "09 Feb 2021",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "H & A Wouters Farms Ltd"
+    ],
+    "price_text": "$1,325,000"
+  }
+}

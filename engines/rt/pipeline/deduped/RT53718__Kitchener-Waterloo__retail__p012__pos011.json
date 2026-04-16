@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT53718",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT53718",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 WISSLER RD"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "01 Feb 2007",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Yoon Stores Ltd     519-747-5558"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kang Yoon",
+        "19 Post Horn Place",
+        "Waterloo, Ontario",
+        "N2L 5E8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sri Balaji Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: H. Samanthapudi",
+        "266 Resurrection Dr",
+        "Kitchener, Ontario",
+        "N2N 3H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Part Lot 9",
+      "Plan 58R-7132, Part 1",
+      "Together with Inst No 1040304",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "30 16 014 275 00500",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $647,500   rate: 6.95% per annum",
+      "registered: 02/01/2007   due: 02/05/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT537/RT53718/0225_112630.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT537/RT53718/0225_112631.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT537/RT53718/0225_112646.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "562 / 752",
+      "rt_id": "RT53718"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "150 WISSLER RD",
+    "postcode": "N2K 3C6",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "02/01/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "925000",
+    "cash": "925000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 014 275 00500"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "150 WISSLER RD"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "01 Feb 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Yoon Stores Ltd"
+    ],
+    "buyer_lines": [
+      "Sri Balaji Holdings Inc"
+    ],
+    "price_text": "$925,000"
+  }
+}

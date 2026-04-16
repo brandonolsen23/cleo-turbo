@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT50540",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50540",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "83 MAIN ST S",
+        "(GEORGETOWN)"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "17 Aug 2006",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Royco Investments Inc     905-873-1199"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jim Hurrelbrink",
+        "Fargo Transportation Services Ltd",
+        "106 Guelph St",
+        "Halton Hills, Ontario",
+        "L7G 3Z5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "764079 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Albert Stern",
+        "565 Edgeley Blvd",
+        "Concord, Ontario",
+        "L4K 4G4"
+      ]
+    },
+    "description_lines": [
+      "Bank Branch",
+      "",
+      "Last transferred in Feb 2005 for $775,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 37, Part Lots 3 & 4",
+      "E of Main St, S of Mill St",
+      "As in Inst No352339",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "24 15 010 003 05100",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $485,000   rate: 18.0% per annum",
+      "registered: 08/17/2006   due: 09/01/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT505/RT50540/0826_134437.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT505/RT50540/0826_134438.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT505/RT50540/0826_134458.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT505/RT50540/0826_134500.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT505/RT50540/air1.jpg",
+        "/assets/files/RT5/RT505/RT50540/air2.jpg",
+        "/assets/files/RT5/RT505/RT50540/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "392 / 613",
+      "rt_id": "RT50540"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "83 MAIN ST S, (GEORGETOWN)",
+    "postcode": "L7G 3E5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "08/17/2006",
+    "desc": "Bank Branch",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "925000",
+    "cash": "925000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 010 003 05100"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "83 MAIN ST S",
+      "(GEORGETOWN)"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "17 Aug 2006",
+    "note": "",
+    "description": "Bank Branch",
+    "seller_lines": [
+      "Royco Investments Inc"
+    ],
+    "buyer_lines": [
+      "764079 Ontario Ltd"
+    ],
+    "price_text": "$925,000"
+  }
+}

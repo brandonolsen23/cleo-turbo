@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT26895",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26895",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 BAKER AVE"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "09 Sep 2002",
+      "price_text": "$590,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Joseph Granato",
+        "Matteo Piazza"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "105 Layburn Ave",
+        "Richmond Hill, Ontario",
+        "L4C 0J6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1538456 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Angelo Grossi",
+        "36 Pebblelane Ct",
+        "Richmond Hill, Ontario",
+        "L4C 6X2"
+      ]
+    },
+    "description_lines": [
+      "SixPlex - 6 units @ $98,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2383, Lot 107",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "19 38 030 011 19600",
+    "consideration_lines": [
+      "cash: $590,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT268/RT26895/photo.jpg"
+    },
+    "footer": {
+      "page_position": "232 / 263",
+      "rt_id": "RT26895"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "161 BAKER AVE",
+    "postcode": "L4C 1X7",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "09/09/2002",
+    "desc": "SixPlex - 6 units @ $98,333",
+    "bldg": "6 units",
+    "acreage": ".31",
+    "consid": "590000",
+    "cash": "590000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 030 011 19600"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "161 BAKER AVE"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "09 Sep 2002",
+    "note": "",
+    "description": "SixPlex - 6 units @ $98,333",
+    "seller_lines": [
+      "Joseph Granato",
+      "Matteo Piazza"
+    ],
+    "buyer_lines": [
+      "1538456 Ontario Ltd"
+    ],
+    "price_text": "$590,000"
+  }
+}

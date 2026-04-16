@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT61874",
+  "source_folder": "Brant/retail/p004",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT61874",
+      "source_folder": "Brant/retail/p004",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "192 KING GEORGE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "01 May 2008",
+      "price_text": "$2,496,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "629877 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zisi Konstantinou",
+        "5150 Elmridge Dr",
+        "Mississauga, Ontario",
+        "L5M 5A3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Constantine Karmiris     519-770-4744"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "28 Prestwick Place",
+        "Brantford, Ontario",
+        "N3T 6H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 564, Lots 17 & 18",
+      "Plan 2R-2478, Parts 1 & 2",
+      "Plan 557, Part Lot 1",
+      "As in Inst No A-377243",
+      "",
+      "1.36 acre"
+    ],
+    "arn_text": "29 06 030 023 67400",
+    "consideration_lines": [
+      "cash: $2,496,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 629877 Ontario Inc",
+      "principal: $1,872,000   rate: 7.0% per annum",
+      "registered: 05/01/2008   due: 04/19/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61874/0530_151338.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61874/0530_151342.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61874/0530_151638.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61874/0530_151644.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT618/RT61874/air1.jpg",
+        "/assets/files/RT6/RT618/RT61874/air2.jpg",
+        "/assets/files/RT6/RT618/RT61874/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "154 / 195",
+      "rt_id": "RT61874"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "192 KING GEORGE RD",
+    "postcode": "N3R 5L3",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "05/01/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.36",
+    "consid": "2496000",
+    "cash": "2496000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 023 67400"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "192 KING GEORGE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "01 May 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "629877 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Constantine Karmiris"
+    ],
+    "price_text": "$2,496,000"
+  }
+}

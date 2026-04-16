@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT12985",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12985",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "1395 ABBEYWOOD DR"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "10 Aug 1998",
+      "price_text": "$5,120,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "922220 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jack Kahn",
+        "7501 Keele St, Ste 301",
+        "Concord, Ontario",
+        "L4K 1Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Abbeywood Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lorenzo De Meneghi",
+        "30 Pennsylvania Ave, Unit 16",
+        "Concord, Ontario",
+        "L4K 4A5"
+      ]
+    },
+    "description_lines": [
+      "Pilgrims Way Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20M-436, Block 53",
+      "",
+      "2.73 acre"
+    ],
+    "arn_text": "24 01 020 290 63046",
+    "consideration_lines": [
+      "cash: $5,120,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $748,596   rate: 2.25% per annum.",
+      "registered: 11/14/2017   due: 11/14/2020",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $487,500   rate: 5.09% per annum.",
+      "registered: 11/16/2017   due: 12/01/2018",
+      "",
+      "chargee: BL Capital Corp",
+      "principal: $375,000   rate: 4.0% per annum.",
+      "registered: 11/15/2017   due: 11/19/2019",
+      "",
+      "Named Individual(s)",
+      "principal: $310,000   rate: 5.0% per annum.",
+      "registered: 11/16/2017   due: 12/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT129/RT12985/photo.jpg"
+    },
+    "footer": {
+      "page_position": "598 / 613",
+      "rt_id": "RT12985"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "1395 ABBEYWOOD DR",
+    "postcode": "",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "08/10/1998",
+    "desc": "Pilgrims Way Plaza",
+    "bldg": "",
+    "acreage": "2.73",
+    "consid": "5120000",
+    "cash": "5120000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 020 290 63046"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "1395 ABBEYWOOD DR"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "10 Aug 1998",
+    "note": "",
+    "description": "Pilgrims Way Plaza",
+    "seller_lines": [
+      "922220 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Abbeywood Properties Inc"
+    ],
+    "price_text": "$5,120,000"
+  }
+}

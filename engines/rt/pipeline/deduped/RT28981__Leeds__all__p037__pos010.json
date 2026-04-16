@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT28981",
+  "source_folder": "Leeds/all/p037",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28981",
+      "source_folder": "Leeds/all/p037",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p037/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1845 LONDON LINE"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "10 Jan 2003",
+      "price_text": "$675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sarvest Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Maurice Lamoureux",
+        "265 Donessle Dr",
+        "Oakville, Ontario",
+        "L6J 3Y8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1187763 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Andrew Martens",
+        "RR 1",
+        "Hensall, Ontario",
+        "N0M 1X0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 12",
+      "Plan 25R-1861, Part 1"
+    ],
+    "arn_text": "38 29 100 004 00500",
+    "consideration_lines": [
+      "cash: $675,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT289/RT28981/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1811 / 1916",
+      "rt_id": "RT28981"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1845 LONDON LINE",
+    "postcode": "N7T 7H2",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "01/10/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "675000",
+    "cash": "675000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "38 29 100 004 00500"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1845 LONDON LINE"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "10 Jan 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sarvest Ltd"
+    ],
+    "buyer_lines": [
+      "1187763 Ontario Ltd"
+    ],
+    "price_text": "$675,000"
+  }
+}

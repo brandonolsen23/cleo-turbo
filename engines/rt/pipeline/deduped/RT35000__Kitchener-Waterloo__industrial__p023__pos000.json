@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT35000",
+  "source_folder": "Kitchener-Waterloo/industrial/p023",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35000",
+      "source_folder": "Kitchener-Waterloo/industrial/p023",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/industrial/p023/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "178 LOUISA ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "02 Apr 2004",
+      "price_text": "$557,165",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "20 Weber St E",
+        "Kitchener, Ontario",
+        "N2H 1C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "2 Industrial Bldgs & House",
+      "",
+      "Automotive garages"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 376, Lots 393, 394, Part Lot F",
+      "Plan 400, Part Lot 6",
+      "Plan 58R-1863, Part 1",
+      "",
+      "1.59 acre"
+    ],
+    "arn_text": "30 12 010 002 04900",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1101 / 1343",
+      "rt_id": "RT35000"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "178 LOUISA ST",
+    "postcode": "N2H 5M5",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/02/2004",
+    "desc": "2 Industrial Bldgs & House",
+    "bldg": "",
+    "acreage": "1.59",
+    "consid": "557165",
+    "cash": "",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "30 12 010 002 04900"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "178 LOUISA ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "02 Apr 2004",
+    "note": "Foreclosure",
+    "description": "2 Industrial Bldgs & House",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$557,165"
+  }
+}

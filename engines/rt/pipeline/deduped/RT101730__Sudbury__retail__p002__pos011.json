@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT101730",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT101730",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "126 - 128 CEDAR ST"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "07 Jul 2014",
+      "price_text": "$610,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Reo's Surplus Store Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bruno Gauthier",
+        "685 Notre Dame Ave",
+        "Sudbury, Ontario",
+        "P3A 2T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sim Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Puma Vijan",
+        "9 Florentine Cres",
+        "Richmond Hill, Ontario",
+        "L4S 1H1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3-SA, Block A",
+      "Part Lot 114",
+      "As in Inst No S-79648",
+      "",
+      "PIN: 73584-0105",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "53 07 070 004 07400",
+    "consideration_lines": [
+      "cash: $610,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "62 / 90",
+      "rt_id": "RT101730"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "126 - 128 CEDAR ST",
+    "postcode": "P3E 1B4",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "07/07/2014",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "610000",
+    "cash": "610000",
+    "debt": "",
+    "note": "",
+    "pin": "73584-0105",
+    "rollno": "53 07 070 004 07400"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "126 - 128 CEDAR ST"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "07 Jul 2014",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Reo's Surplus Store Ltd"
+    ],
+    "buyer_lines": [
+      "Sim Corp"
+    ],
+    "price_text": "$610,000"
+  }
+}

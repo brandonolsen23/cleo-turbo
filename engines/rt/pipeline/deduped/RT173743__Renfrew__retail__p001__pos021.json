@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT173743",
+  "source_folder": "Renfrew/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173743",
+      "source_folder": "Renfrew/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1397 PEMBROKE ST W",
+        "1398 PEMBROKE ST W",
+        "1405 PEMBROKE ST W"
+      ],
+      "city_region": "Pembroke : Renfrew",
+      "date_text": "02 Dec 2022",
+      "price_text": "$8,135,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "James W Lapointe Motor Holdings Inc",
+        "Lapointe Bros. Pembroke Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "775 Pembroke St E",
+        "Pembroke, Ontario",
+        "K8A 3L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "401 Real Estate Trust",
+        "1000336874 Ontario Inc     226-535-9077"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Surjeet Bains",
+        "2225 Eagle St N",
+        "Cambridge, Ontario",
+        "N3H 4R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - Alice, Part Lot 36",
+      "Plan 49R-12954, Part 1",
+      "As in Inst Nos:",
+      "R-227654, R-335259 & R-310256",
+      "",
+      "PIN: 57138-0248 +",
+      "",
+      "9.69 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,135,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $16,760,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/02/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 52",
+      "rt_id": "RT173743"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1397 PEMBROKE ST W, 1398 PEMBROKE ST W, 1405 PEMBROKE ST W",
+    "postcode": "K8A 7A5",
+    "municipality": "Pembroke",
+    "region": "Renfrew",
+    "date": "12/02/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.69",
+    "consid": "8135000",
+    "cash": "8135000",
+    "debt": "",
+    "note": "",
+    "pin": "57138-0248+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1397 PEMBROKE ST W",
+      "1398 PEMBROKE ST W",
+      "1405 PEMBROKE ST W"
+    ],
+    "city_region": "Pembroke : Renfrew",
+    "date_text": "02 Dec 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "James W Lapointe Motor Holdings Inc",
+      "Lapointe Bros. Pembroke Ltd"
+    ],
+    "buyer_lines": [
+      "401 Real Estate Trust",
+      "1000336874 Ontario Inc"
+    ],
+    "price_text": "$8,135,000"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT98819",
+  "source_folder": "York_Region/retail/p008",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT98819",
+      "source_folder": "York_Region/retail/p008",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 DAVIS DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "12 Mar 2014",
+      "price_text": "$2,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2092811 Ontario Ltd     905-760-0124"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Davinder Saini",
+        "19 Donisi Ave",
+        "Thornhill, Ontario",
+        "L4J 6G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Regional Municipality of York     905-895-1231"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jim Davidson",
+        "17250 Yonge St, Box 147",
+        "Newmarket, Ontario",
+        "L3Y 6Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - EYS, Part Lot 96",
+      "Plan 65R-14304, Parts 1 & 4",
+      "Except:",
+      "Exprop Plan YR-1373070, Parts 3 & 4",
+      "",
+      "PIN: 03578-0931",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "19 48 040 170 07500",
+    "consideration_lines": [
+      "cash: $2,075,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT988/RT98819/0322_114516.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT988/RT98819/0322_114601.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT988/RT98819/0322_114623.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT988/RT98819/0322_114758.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT988/RT98819/0322_114856.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "385 / 984",
+      "rt_id": "RT98819"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "161 DAVIS DR",
+    "postcode": "L3Y 2N3",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "03/12/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "2075000",
+    "cash": "2075000",
+    "debt": "",
+    "note": "",
+    "pin": "03578-0931",
+    "rollno": "19 48 040 170 07500"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "161 DAVIS DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "12 Mar 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2092811 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "The Regional Municipality of York"
+    ],
+    "price_text": "$2,075,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT172605",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172605",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "6597 DALE RD"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "04 Oct 2022",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shaikh Motorsports Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1080 Warden Ave",
+        "Scarborough, Ontario",
+        "M1R 2P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000307794 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Bartlett",
+        "6597 Dale Rd",
+        "Port Hope, Ontario",
+        "L1A 3V6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Hope, Part Lot 2",
+      "Plan 9R-364, Part 1",
+      "",
+      "PIN: 51060-0153",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "14 23 223 010 08001",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,150,000   rate: Prime plus 8.0% per annum.",
+      "registered: 10/04/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1726/RT172605/1227_074458.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1726/RT172605/1227_074515.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1726/RT172605/1227_074517.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1726/RT172605/1227_074518.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1726/RT172605/1227_074544.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1726/RT172605/air1.jpg",
+        "/assets/files/RT17/RT1726/RT172605/air2.jpg",
+        "/assets/files/RT17/RT1726/RT172605/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "39 / 93",
+      "rt_id": "RT172605"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "6597 DALE RD",
+    "postcode": "L1A 3V6",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "10/04/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".39",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "51060-0153",
+    "rollno": "14 23 223 010 08001"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "6597 DALE RD"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "04 Oct 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Shaikh Motorsports Inc"
+    ],
+    "buyer_lines": [
+      "1000307794 Ontario Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

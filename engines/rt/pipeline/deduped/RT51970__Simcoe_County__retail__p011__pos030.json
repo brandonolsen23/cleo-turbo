@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT51970",
+  "source_folder": "Simcoe_County/retail/p011",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51970",
+      "source_folder": "Simcoe_County/retail/p011",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p011/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "223 MILL ST",
+        "1 COMMERCE ST",
+        "3 COMMERCE ST",
+        "5 COMMERCE ST"
+      ],
+      "city_region": "Essa : Simcoe County",
+      "date_text": "10 Nov 2006",
+      "price_text": "$9,889,251",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "1424573 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "Goldman Management",
+        "75 The Donway W, Ste 1002",
+        "Toronto, Ontario",
+        "M3C 2E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Angus Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Froom",
+        "H & R Developments",
+        "3625 Dufferin St, Ste 500",
+        "Downsview, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1416, Lots 20-22",
+      "Plan 51R-5336, Part 1",
+      "Plan 51R-30365, Parts 6 & 7",
+      "",
+      "6.82 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,263,547     assumed/vtb debt: $5,625,704",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $7,025,000   rate: 5.16% per annum",
+      "registered: 11/10/2006   due: 12/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51970/0106_120914.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51970/0106_120918.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51970/0106_120927.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51970/0106_121010.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51970/0106_121044.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "531 / 712",
+      "rt_id": "RT51970"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "223 MILL ST, 1 COMMERCE ST, 3 COMMERCE ST, 5 COMMERCE ST",
+    "postcode": "L0M 1B2",
+    "municipality": "Essa",
+    "region": "Simcoe County",
+    "date": "11/10/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.82",
+    "consid": "9889251",
+    "cash": "4263547",
+    "debt": "5625704",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "223 MILL ST",
+      "1 COMMERCE ST",
+      "3 COMMERCE ST",
+      "5 COMMERCE ST"
+    ],
+    "city_region": "Essa : Simcoe County",
+    "date_text": "10 Nov 2006",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "1424573 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Angus Portfolio Inc"
+    ],
+    "price_text": "$9,889,251"
+  }
+}

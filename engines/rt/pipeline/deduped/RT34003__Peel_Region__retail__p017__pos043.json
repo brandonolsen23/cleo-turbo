@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT34003",
+  "source_folder": "Peel_Region/retail/p017",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34003",
+      "source_folder": "Peel_Region/retail/p017",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p017/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 WEST DR"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "10 Feb 2004",
+      "price_text": "$15,866,559",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1235856 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Donald Armour",
+        "OPG Pension Fund",
+        "700 University Ave, 18th Floor",
+        "Toronto, Ontario",
+        "M5G 1X6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "410 & 7 Equities Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Bill Perkins",
+        "Morguard Investments Ltd",
+        "55 City Centre Dr, Ste 800",
+        "Mississauga, Ontario",
+        "L5B 1M3"
+      ]
+    },
+    "description_lines": [
+      "Retail Mall - 1 storey; 13 units 227,832 sf @ $70",
+      "",
+      "Last transferred in Jan 98 for $25,000,000"
+    ],
+    "more_info_url": "/assets/files/RT3/RT340/RT34003/mi.pdf",
+    "site_lines": [
+      "Plan 895, Block A",
+      "Plan 43R-11609, Part 1",
+      "",
+      "SE corner of Highways 410 & 7 (Queen St)",
+      "",
+      "18.31 acre"
+    ],
+    "arn_text": "21 10 090 023 08010",
+    "consideration_lines": [
+      "cash: $7,866,559     assumed/vtb debt: $8,000,000"
+    ],
+    "broker_lines": [
+      "TD Securities Inc: Leonard Abramsky & David Peltz, 416-983-1828"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT340/RT34003/air1.jpg",
+        "/assets/files/RT3/RT340/RT34003/air2.jpg",
+        "/assets/files/RT3/RT340/RT34003/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT340/RT34003/photo.jpg"
+    },
+    "footer": {
+      "page_position": "844 / 1087",
+      "rt_id": "RT34003"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "150 WEST DR",
+    "postcode": "",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "02/10/2004",
+    "desc": "Retail Mall - 1 storey; 13 units 227,832 sf @ $70",
+    "bldg": "227,832 sf",
+    "acreage": "18.31",
+    "consid": "15866559",
+    "cash": "7866559",
+    "debt": "8000000",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 090 023 08010"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "150 WEST DR"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "10 Feb 2004",
+    "note": "",
+    "description": "Retail Mall - 1 storey; 13 units 227,832 sf @ $70",
+    "seller_lines": [
+      "1235856 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "410 & 7 Equities Inc"
+    ],
+    "price_text": "$15,866,559"
+  }
+}

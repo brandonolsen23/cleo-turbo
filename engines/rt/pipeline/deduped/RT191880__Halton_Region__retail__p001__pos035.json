@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT191880",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191880",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "1415 DUNDAS ST E",
+        "UNITS 3 & 4"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "29 Apr 2025",
+      "price_text": "$2,551,570",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mattamy (Joshua Creek) Ltd     905-907-8888"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3300 Bloor St W, Ste 1800",
+        "Toronto, Ontario",
+        "M8X 2X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2732234 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ehab Da'as",
+        "140 Highway 8, Unit 5",
+        "Stoney Creek, Ontario",
+        "L8G 1C2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 796",
+      "Level 1, Units 3 & 4",
+      "",
+      "PIN: 29098-0003 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,551,570     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,120,000   rate: Prime plus 6.0% per annum.",
+      "registered: 04/29/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191880/0517_090558.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191880/0517_090652.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191880/0517_090653.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191880/0517_090654.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191880/0517_090747.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "36 / 613",
+      "rt_id": "RT191880"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "1415 DUNDAS ST E, UNITS 3 & 4",
+    "postcode": "L4H 8A3",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "04/29/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2551570",
+    "cash": "2551570",
+    "debt": "",
+    "note": "",
+    "pin": "29098-0003+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "1415 DUNDAS ST E",
+      "UNITS 3 & 4"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "29 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mattamy (Joshua Creek) Ltd"
+    ],
+    "buyer_lines": [
+      "2732234 Ontario Inc"
+    ],
+    "price_text": "$2,551,570"
+  }
+}

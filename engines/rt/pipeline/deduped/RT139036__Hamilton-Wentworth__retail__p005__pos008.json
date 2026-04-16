@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT139036",
+  "source_folder": "Hamilton-Wentworth/retail/p005",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT139036",
+      "source_folder": "Hamilton-Wentworth/retail/p005",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p005/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "49 KING ST W"
+      ],
+      "city_region": "Dundas : Hamilton-Wentworth",
+      "date_text": "30 Nov 2018",
+      "price_text": "$1,425,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2653529 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Irene Stepus",
+        "19 King St W",
+        "Dundas, Ontario",
+        "L9H 1T5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1300, Lot 10",
+      "Together with:",
+      "Inst No VM-30629",
+      "",
+      "PIN: 17585-0011",
+      "",
+      "N side King St W, E of Sydenham St",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "25 26 100 200 02000",
+    "consideration_lines": [
+      "cash: $1,425,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,068,700   rate: Prime plus 5.0% per annum.",
+      "registered: 11/30/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1390/RT139036/1215_121001.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1390/RT139036/1215_121002.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1390/RT139036/1215_121020.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1390/RT139036/1215_121044.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1390/RT139036/1215_121052.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "209 / 616",
+      "rt_id": "RT139036"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "49 KING ST W",
+    "postcode": "L9H 1T7",
+    "municipality": "Dundas",
+    "region": "Hamilton-Wentworth",
+    "date": "11/30/2018",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "1425000",
+    "cash": "1425000",
+    "debt": "",
+    "note": "",
+    "pin": "17585-0011",
+    "rollno": "25 26 100 200 02000"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "49 KING ST W"
+    ],
+    "city_region": "Dundas : Hamilton-Wentworth",
+    "date_text": "30 Nov 2018",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2653529 Ontario Inc"
+    ],
+    "price_text": "$1,425,000"
+  }
+}

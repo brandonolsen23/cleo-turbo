@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT18246",
+  "source_folder": "Lambton/retail/p003",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18246",
+      "source_folder": "Lambton/retail/p003",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p003/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 - 202 CHRISTINA ST N"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "31 Aug 1999",
+      "price_text": "$5,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Baybridge Capital Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ron Longo",
+        "1966 Lakeshore Rd",
+        "Sarnia, Ontario",
+        "N7X 1E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bayside Mall Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Khalid",
+        "200 Duncan Mill Rd, Ste 619",
+        "Toronto, Ontario",
+        "M3B 3J6"
+      ]
+    },
+    "description_lines": [
+      "Enclosed Neighbourhood Plaza - Bayside Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 24R-3518, Parts 2-8 & 12"
+    ],
+    "arn_text": "38 29 400 010 00100",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $1,000,000",
+      "",
+      "chargee: JFA Speedworks Inc",
+      "principal: $1,510,000   rate: 6.9% per annum.",
+      "registered: 01/09/2024   due: 01/09/2029",
+      "",
+      "chargee: 2399747 Ontario Inc",
+      "2399748 Ontario Inc",
+      "principal: $2,000,000   rate: Higher of 7.0% or TD prime per annum.",
+      "registered: 01/08/2024   due: on demand",
+      "",
+      "chargee: 2399747 Ontario Inc",
+      "2399748 Ontario Inc",
+      "principal: $2,000,000   rate: Higher of 7.0% or TD prime per annum.",
+      "registered: 01/12/2024   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,668,750   rate: Prime plus 5.0% per annum.",
+      "registered: 01/09/2024   due: on demand",
+      "",
+      "chargee: Hamilton Community Foundation",
+      "principal: $1,300,000   rate: 3.75% per annum until 7/25/2024, and 5.0% per annum thereafter.",
+      "registered: 01/10/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT182/RT18246/photo.jpg"
+    },
+    "footer": {
+      "page_position": "102 / 106",
+      "rt_id": "RT18246"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "150 - 202 CHRISTINA ST N",
+    "postcode": "N7T 7W5",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "08/31/1999",
+    "desc": "Enclosed Neighbourhood Plaza - Bayside Mall",
+    "bldg": "",
+    "acreage": "",
+    "consid": "5000000",
+    "cash": "4000000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "",
+    "rollno": "38 29 400 010 00100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "150 - 202 CHRISTINA ST N"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "31 Aug 1999",
+    "note": "",
+    "description": "Enclosed Neighbourhood Plaza - Bayside Mall",
+    "seller_lines": [
+      "Baybridge Capital Developments Ltd"
+    ],
+    "buyer_lines": [
+      "Bayside Mall Ltd"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

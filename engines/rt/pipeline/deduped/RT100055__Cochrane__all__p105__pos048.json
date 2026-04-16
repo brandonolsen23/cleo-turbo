@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT100055",
+  "source_folder": "Cochrane/all/p105",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT100055",
+      "source_folder": "Cochrane/all/p105",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p105/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "42 BYRON AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "03 Feb 2014",
+      "price_text": "$657,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2391473 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sudeshna Chakraborty",
+        "620 Queen Elizabeth Dr",
+        "Ottawa, Ontario",
+        "K1S 5J9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-48, Lot 2116",
+      "",
+      "PIN: 04027-0332",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 14 073 901 39600",
+    "consideration_lines": [
+      "cash: $657,500     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $652,500   rate: Prime plus 10.0% per annum.",
+      "registered: 02/03/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5249 / 10920",
+      "rt_id": "RT100055"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "42 BYRON AVE",
+    "postcode": "K1Y 3J1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/03/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "657500",
+    "cash": "657500",
+    "debt": "",
+    "note": "",
+    "pin": "04027-0332",
+    "rollno": "06 14 073 901 39600"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "42 BYRON AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "03 Feb 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2391473 Ontario Inc"
+    ],
+    "price_text": "$657,500"
+  }
+}

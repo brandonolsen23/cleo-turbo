@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT151688",
+  "source_folder": "Algoma/multifamily/p001",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT151688",
+      "source_folder": "Algoma/multifamily/p001",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/multifamily/p001/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "525 COOPER ST"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "06 Dec 2019",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "SSML Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Laura Purvis",
+        "c/o 1049 Sunnyside Beach Rd",
+        "Sault Ste Marie, Ontario",
+        "P6A 5K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "DP Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eduardo Pinelli",
+        "624 Wilson St",
+        "Sault Ste Marie, Ontario",
+        "P6B 2L6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1R-2248, Part 1",
+      "Plan 1R-2033, Part 2",
+      "",
+      "PIN: 31596-0121",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "57 61 060 014 01501",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $636,000   rate: Prime plus 1.75% per annum.",
+      "registered: 12/06/2019   due: 12/06/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "28 / 78",
+      "rt_id": "RT151688"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "525 COOPER ST",
+    "postcode": "P6C 4W3",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "12/06/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "",
+    "pin": "31596-0121",
+    "rollno": "57 61 060 014 01501"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "525 COOPER ST"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "06 Dec 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "SSML Properties Ltd"
+    ],
+    "buyer_lines": [
+      "DP Properties Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

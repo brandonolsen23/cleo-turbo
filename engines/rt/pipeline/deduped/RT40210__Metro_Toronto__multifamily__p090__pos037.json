@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT40210",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40210",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "107 GLEN RUSH BLVD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "21 Jan 2005",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1786, Part Lots 31 & 32",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 08 061 440 00100",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $503,750   rate: 21.0% per annum.",
+      "registered: 01/21/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40210/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4488 / 6031",
+      "rt_id": "RT40210"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "107 GLEN RUSH BLVD",
+    "postcode": "M5N 2V4",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "01/21/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 061 440 00100"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "107 GLEN RUSH BLVD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "21 Jan 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$775,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT103151",
+  "source_folder": "Cochrane/all/p100",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103151",
+      "source_folder": "Cochrane/all/p100",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p100/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "3580 RIVERGATE WAY",
+        "SUITE 1603"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "24 Sep 2014",
+      "price_text": "$782,200",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "6014895 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andre Creusot",
+        "362 Shadehill Cres",
+        "Ottawa, Ontario",
+        "K2J 0L7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 769",
+      "Level 16, Units 3 & 13",
+      "Level A, Units 9 & 10",
+      "",
+      "PIN: 15769-0227 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $782,200     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $782,000   rate: 25.0% per annum.",
+      "registered: 09/24/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4985 / 10920",
+      "rt_id": "RT103151"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "3580 RIVERGATE WAY, SUITE 1603",
+    "postcode": "K1V 1V5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/24/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "782200",
+    "cash": "782200",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "15769-0227+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "3580 RIVERGATE WAY",
+      "SUITE 1603"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "24 Sep 2014",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "6014895 Canada Inc"
+    ],
+    "price_text": "$782,200"
+  }
+}

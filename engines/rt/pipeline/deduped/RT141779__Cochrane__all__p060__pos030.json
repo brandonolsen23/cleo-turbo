@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT141779",
+  "source_folder": "Cochrane/all/p060",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT141779",
+      "source_folder": "Cochrane/all/p060",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p060/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "5384 BOUNDARY RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "22 Mar 2019",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "11190300 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Missac Dokmajian",
+        "1304 Collier Cres",
+        "Ottawa, Ontario",
+        "K4P 1C1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9 - OF, Part Lot 1",
+      "Plan 5R-4318, Part 1",
+      "As in Inst No CT-162537",
+      "Except:",
+      "Inst No NS-53632",
+      "",
+      "PIN: 04324-0158 +",
+      "",
+      "4.92 acre"
+    ],
+    "arn_text": "06 14 600 230 12700",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Audicorp Ltd",
+      "Centum Bank Street Mortgage",
+      "principal: $440,000   rate: 10.25% per annum.",
+      "registered: 03/22/2019   due: 04/01/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2981 / 10920",
+      "rt_id": "RT141779"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "5384 BOUNDARY RD",
+    "postcode": "K0A 1K0",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "03/22/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.92",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "04324-0158+",
+    "rollno": "06 14 600 230 12700"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "5384 BOUNDARY RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "22 Mar 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "11190300 Canada Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

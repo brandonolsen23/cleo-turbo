@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT41249",
+  "source_folder": "Wellington/retail/p005",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41249",
+      "source_folder": "Wellington/retail/p005",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "545 SILVERCREEK PKWY N"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "11 Apr 2005",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TSC Realty Inc     519-453-5270"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roy Carter",
+        "1950 Oxford St E",
+        "London, Ontario",
+        "N5V 2Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "HVM Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Henry Van Minnen",
+        "8954 Grande River Line, RR 1",
+        "Paincourt, Ontario",
+        "N0P 1Z0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 18,301 sf @ $109"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 61R-5561, Part 1",
+      "",
+      "E side Silvercreek Pkwy N, S of Fair Rd",
+      "",
+      "1.68 acre"
+    ],
+    "arn_text": "23 08 040 016 28720",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $1,725,000   rate: 5.85% per annum",
+      "registered: 04/11/2005   due: 05/01/2015"
+    ],
+    "broker_lines": [
+      "CB Richard Ellis: Peter Whatmore, 519-673-6444"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT412/RT41249/photo.jpg"
+    },
+    "footer": {
+      "page_position": "215 / 269",
+      "rt_id": "RT41249"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "545 SILVERCREEK PKWY N",
+    "postcode": "N1K 1S7",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "04/11/2005",
+    "desc": "Retail Bldg - 1 storey; 18,301 sf @ $109",
+    "bldg": "18,301 sf",
+    "acreage": "1.68",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 040 016 28720"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "545 SILVERCREEK PKWY N"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "11 Apr 2005",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 18,301 sf @ $109",
+    "seller_lines": [
+      "TSC Realty Inc"
+    ],
+    "buyer_lines": [
+      "HVM Holdings Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

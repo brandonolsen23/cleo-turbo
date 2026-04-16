@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT64900",
+  "source_folder": "Cochrane/all/p149",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64900",
+      "source_folder": "Cochrane/all/p149",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p149/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "700 SUSSEX DR",
+        "SUITE G106"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "07 Nov 2008",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "6082092 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gordon Carvell",
+        "35 Allison Ave",
+        "PO Box 812",
+        "Morrisburg, Ontario",
+        "K0C 1X0"
+      ]
+    },
+    "description_lines": [
+      "Res Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 713",
+      "Level 3, Unit 37",
+      "Level 7, Unit 6",
+      "Level A, Unit 24",
+      "",
+      "PIN: 15713-0122 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7402 / 10920",
+      "rt_id": "RT64900"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "700 SUSSEX DR, SUITE G106",
+    "postcode": "K1N 1K4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/07/2008",
+    "desc": "Res Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "15713-0122+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "700 SUSSEX DR",
+      "SUITE G106"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "07 Nov 2008",
+    "note": "",
+    "description": "Res Condo",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "6082092 Canada Inc"
+    ],
+    "price_text": "$950,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT197349",
+  "source_folder": "York_Region/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197349",
+      "source_folder": "York_Region/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "7777 WESTON RD",
+        "SUITE 106"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "19 Feb 2026",
+      "price_text": "$985,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2597057 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "29 Landwood Ave",
+        "Thornhill, Ontario",
+        "L4J 0B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Awerix Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sangeeta Kashyap",
+        "7777 Weston Rd, Unit 106",
+        "Vaughan, Ontario",
+        "L4L 0G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1394",
+      "Level 1, Unit 6",
+      "",
+      "PIN: 29925-0006"
+    ],
+    "arn_text": "19 28 000 230 37293",
+    "consideration_lines": [
+      "cash: $985,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $788,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/19/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_163858.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_163922.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_163924.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_163927.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_163929.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_163932.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197349/0307_164149.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 984",
+      "rt_id": "RT197349"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "7777 WESTON RD, SUITE 106",
+    "postcode": "L4L 0G9",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "02/19/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "985000",
+    "cash": "985000",
+    "debt": "",
+    "note": "",
+    "pin": "29925-0006",
+    "rollno": "19 28 000 230 37293"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "7777 WESTON RD",
+      "SUITE 106"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "19 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2597057 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Awerix Investments Ltd"
+    ],
+    "price_text": "$985,000"
+  }
+}

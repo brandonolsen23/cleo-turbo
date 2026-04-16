@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT179078",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179078",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "29 MAIN ST E"
+      ],
+      "city_region": "Kingsville : Essex County",
+      "date_text": "14 Jul 2023",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1544999 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "77 Prince Albert St N",
+        "Kingsville, Ontario",
+        "N9Y 1J8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2806537 Ontario Inc     519-326-4242"
+      ],
+      "trade_name": "Wilkinson Electric Ltd",
+      "contact_lines": [
+        "Attn: Jamie Koop",
+        "122 Oak St W",
+        "Leamington, Ontario",
+        "N8H 2B6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 184-185 Kingsville,",
+      "Lot 5 & Part Lot 6, N/S Pearl St S",
+      "Part Lots 4-6, S/S Main St E",
+      "",
+      "PIN: 75178-0118",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "37 11 150 000 05800",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1790/RT179078/air1.jpg",
+        "/assets/files/RT17/RT1790/RT179078/air2.jpg",
+        "/assets/files/RT17/RT1790/RT179078/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "117 / 460",
+      "rt_id": "RT179078"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "29 MAIN ST E",
+    "postcode": "N9Y 1A1",
+    "municipality": "Kingsville",
+    "region": "Essex County",
+    "date": "07/14/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".55",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "75178-0118",
+    "rollno": "37 11 150 000 05800"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "29 MAIN ST E"
+    ],
+    "city_region": "Kingsville : Essex County",
+    "date_text": "14 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1544999 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2806537 Ontario Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

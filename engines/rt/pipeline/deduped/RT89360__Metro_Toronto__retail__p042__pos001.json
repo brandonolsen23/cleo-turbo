@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT89360",
+  "source_folder": "Metro_Toronto/retail/p042",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT89360",
+      "source_folder": "Metro_Toronto/retail/p042",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p042/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2761 MARKHAM RD",
+        "UNITS 28-30"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "03 Dec 2012",
+      "price_text": "$1,670,775",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2153973 Ontario Ltd     905-653-5053"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ramesh Senthilnathan",
+        "1 Comoq Ave",
+        "Woodbridge, Ontario",
+        "L4H 2B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2241914 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: S. Thaninayagam",
+        "2761 Markham Rd, Unit 30",
+        "Toronto, Ontario",
+        "M1X 0A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2261",
+      "Level 1, Units 28-30",
+      "",
+      "PIN: 76261-0028 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,670,775     assumed/vtb debt: $0",
+      "",
+      "chargee: 697350 Ontario Ltd and 20 others",
+      "principal: $1,066,000   rate: 8.0% per annum",
+      "registered: 12/03/2012   due: 12/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89360/1223_115707.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89360/1223_115847.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89360/1223_115914.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89360/1223_115929.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89360/1223_120011.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT893/RT89360/1223_120024.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2052 / 4952",
+      "rt_id": "RT89360"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2761 MARKHAM RD, UNITS 28-30",
+    "postcode": "M1X 0A4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/03/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1670775",
+    "cash": "1670775",
+    "debt": "",
+    "note": "",
+    "pin": "76261-0028+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2761 MARKHAM RD",
+      "UNITS 28-30"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "03 Dec 2012",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2153973 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2241914 Ontario Ltd"
+    ],
+    "price_text": "$1,670,775"
+  }
+}

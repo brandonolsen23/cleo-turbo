@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT191514",
+  "source_folder": "Algoma/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191514",
+      "source_folder": "Algoma/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "695 GREAT NORTHERN RD"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "16 Apr 2025",
+      "price_text": "$5,049,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tiger Fera Investment Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "595 Burrard St, Ste 1000",
+        "Vanvcouver, BC",
+        "V7X 1S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lidanri Holdings Inc     800-461-6328"
+      ],
+      "trade_name": "OCP Construction Supplies",
+      "contact_lines": [
+        "Attn: Richard Cousineau",
+        "1072 Webbwood Dr",
+        "Greater Sudbury, Ontario",
+        "P3C 3B7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1915/RT191514/mi.pdf",
+    "site_lines": [
+      "Plan 1R-9453, Parts 8-11",
+      "",
+      "PIN: 31561-0052",
+      "",
+      "2.76 acre"
+    ],
+    "arn_text": "57 61 030 062 04102",
+    "consideration_lines": [
+      "cash: $5,049,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $5,049,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/16/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 29",
+      "rt_id": "RT191514"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "695 GREAT NORTHERN RD",
+    "postcode": "P6B 5A1",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "04/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.76",
+    "consid": "5049000",
+    "cash": "5049000",
+    "debt": "",
+    "note": "",
+    "pin": "31561-0052",
+    "rollno": "57 61 030 062 04102"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "695 GREAT NORTHERN RD"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "16 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Tiger Fera Investment Inc"
+    ],
+    "buyer_lines": [
+      "Lidanri Holdings Inc"
+    ],
+    "price_text": "$5,049,000"
+  }
+}

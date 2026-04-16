@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT81019",
+  "source_folder": "Lambton/retail/p002",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81019",
+      "source_folder": "Lambton/retail/p002",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "1308 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "30 Sep 2011",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Pitbul Inc     519-541-8898"
+      ],
+      "trade_name": "Park Lane Chevrolet Cadillac Buick GMC",
+      "contact_lines": [
+        "Pres: David Bailey",
+        "1290 London Rd",
+        "Sarnia, Ontario",
+        "N7S 1P5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 17",
+      "As in Inst Nos:",
+      "L-334919, L-359601 & L-311046",
+      "",
+      "PIN: 43207-0085",
+      "",
+      "2.29 acre"
+    ],
+    "arn_text": "38 29 300 036 07800",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $910,000   rate: Prime plus 5.0% per annum",
+      "registered: 09/30/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81019/1203_122332.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81019/1203_122435.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81019/1203_122448.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81019/1203_122457.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT810/RT81019/air1.jpg",
+        "/assets/files/RT8/RT810/RT81019/air2.jpg",
+        "/assets/files/RT8/RT810/RT81019/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "70 / 106",
+      "rt_id": "RT81019"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "1308 LONDON RD",
+    "postcode": "N7S 1P7",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "09/30/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.29",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "43207-0085",
+    "rollno": "38 29 300 036 07800"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "1308 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "30 Sep 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Pitbul Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT189563",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189563",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "3295 WALKER RD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "10 Jan 2025",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "National Trust Company"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Yonge St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5E 1J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001046651 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Khallil Mokdad",
+        "3295 Walker Rd",
+        "Windsor, Ontario",
+        "N8W 3R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1126 - Sandwich East",
+      "Lots 780-783",
+      "",
+      "PIN: 01346-0403",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "37 39 070 230 23300",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,899,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/10/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1895/RT189563/air1.jpg",
+        "/assets/files/RT18/RT1895/RT189563/air2.jpg",
+        "/assets/files/RT18/RT1895/RT189563/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "60 / 460",
+      "rt_id": "RT189563"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "3295 WALKER RD",
+    "postcode": "N8W 3R7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "01/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".37",
+    "consid": "925000",
+    "cash": "925000",
+    "debt": "",
+    "note": "",
+    "pin": "01346-0403",
+    "rollno": "37 39 070 230 23300"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "3295 WALKER RD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "10 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "National Trust Company"
+    ],
+    "buyer_lines": [
+      "1001046651 Ontario Inc"
+    ],
+    "price_text": "$925,000"
+  }
+}

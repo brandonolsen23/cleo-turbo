@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT53894",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT53894",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "165 FISHER MILLS RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "01 Nov 2006",
+      "price_text": "$937,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 6,000 sf @ $156",
+      "",
+      "Fully occupied."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1398, Block B",
+      "",
+      "0.62 acre"
+    ],
+    "arn_text": "30 06 140 001 26206",
+    "consideration_lines": [
+      "cash: $937,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $585,000   rate: 6.85% per annum",
+      "registered: 11/01/2006   due: 11/05/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT538/RT53894/0225_073627.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT538/RT53894/0225_073652.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT538/RT53894/0225_073653.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "565 / 752",
+      "rt_id": "RT53894"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "165 FISHER MILLS RD",
+    "postcode": "N3C 1E1",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "11/01/2006",
+    "desc": "Retail Plaza - 1 storey; 3 units 6,000 sf @ $156",
+    "bldg": "6,000 sf",
+    "acreage": ".62",
+    "consid": "937000",
+    "cash": "937000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 140 001 26206"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "165 FISHER MILLS RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "01 Nov 2006",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 6,000 sf @ $156",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$937,000"
+  }
+}

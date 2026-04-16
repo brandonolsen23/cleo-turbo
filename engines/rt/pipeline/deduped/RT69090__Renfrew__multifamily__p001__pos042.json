@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT69090",
+  "source_folder": "Renfrew/multifamily/p001",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69090",
+      "source_folder": "Renfrew/multifamily/p001",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/multifamily/p001/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "246 JOHN ST N",
+        "252 JOHN ST N"
+      ],
+      "city_region": "Arnprior : Renfrew",
+      "date_text": "28 Oct 2009",
+      "price_text": "$1,380,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1562068 Ontario Inc     613-623-9314"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Karen Bretzlaff",
+        "244 McLean Ave",
+        "Arnprior, Ontario",
+        "K7S 3T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "2 Apartment Bldgs: 2 & 2.5 storey; 25 units @ $55,200",
+      "",
+      "246 John St N",
+      "2.5 storey; 4-1bdrm 4-2bdrm",
+      "",
+      "252 John St N",
+      "2 storey; 5-1bdrm 12-2bdrm",
+      "",
+      "Last transferred in Aug 2003 for $885,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 7",
+      "Lots 30 & 32, John St",
+      "Part Lot 24, Bell St (AKA Hugh St)",
+      "As in Inst No R-394746",
+      "",
+      "PIN: 57313-0195",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "47 02 000 035 06500",
+    "consideration_lines": [
+      "cash: $1,380,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,065,900   rate: 3.88% per annum",
+      "registered: 10/28/2009   due: 11/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "43 / 63",
+      "rt_id": "RT69090"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "246 JOHN ST N, 252 JOHN ST N",
+    "postcode": "K7S 2P4",
+    "municipality": "Arnprior",
+    "region": "Renfrew",
+    "date": "10/28/2009",
+    "desc": "2 Apartment Bldgs: 2 & 2.5 storey; 25 units @ $55,200",
+    "bldg": "25 units",
+    "acreage": ".6",
+    "consid": "1380000",
+    "cash": "1380000",
+    "debt": "",
+    "note": "",
+    "pin": "57313-0195",
+    "rollno": "47 02 000 035 06500"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "246 JOHN ST N",
+      "252 JOHN ST N"
+    ],
+    "city_region": "Arnprior : Renfrew",
+    "date_text": "28 Oct 2009",
+    "note": "",
+    "description": "2 Apartment Bldgs: 2 & 2.5 storey; 25 units @ $55,200",
+    "seller_lines": [
+      "1562068 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,380,000"
+  }
+}

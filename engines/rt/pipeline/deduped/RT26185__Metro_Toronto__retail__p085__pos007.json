@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT26185",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26185",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "250 - 256 LAIRD DR"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "10 Jun 2002",
+      "price_text": "$1,850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "David L. C. Woo"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "43 Moss Creek Blvd",
+        "Markham, Ontario",
+        "L6C 2V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2000435 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Woo",
+        "80 Acadia Ave, Ste 108",
+        "Markham, Ontario",
+        "L3R 9V1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1925",
+      "Lots 389, 390 & Part Lot 391",
+      "As in Inst No TB-116054"
+    ],
+    "arn_text": "19 06 044 210 01800",
+    "consideration_lines": [
+      "cash: $1,850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4208 / 4952",
+      "rt_id": "RT26185"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "250 - 256 LAIRD DR",
+    "postcode": "M4G 4C7",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "06/10/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1850000",
+    "cash": "1850000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 06 044 210 01800"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "250 - 256 LAIRD DR"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "10 Jun 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "David L. C. Woo"
+    ],
+    "buyer_lines": [
+      "2000435 Ontario Inc"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

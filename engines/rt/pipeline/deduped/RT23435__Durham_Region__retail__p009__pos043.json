@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT23435",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23435",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "1800 DUNDAS ST E"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "15 Nov 2001",
+      "price_text": "$1,215,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "755471 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Chi Hing Ma",
+        "41 Clovercrest Rd",
+        "North York, Ontario",
+        "M2J 1Z5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sunny Ridge Management Corp     905-579-9575"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Douglas Dyck",
+        "1614 Dundas St E, Ste 216",
+        "Whitby, Ontario",
+        "L1N 8Y8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 11,160 sf @ $109"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-2321, Parts 1-3",
+      "Plan 467, Part Lot 6",
+      "As in Inst No D-189454",
+      "Except Plan 40R-8709, Parts 1-3",
+      "",
+      "N side 100m W of Kendalwood Rd",
+      "",
+      "0.81 acre"
+    ],
+    "arn_text": "18 09 040 031 11700",
+    "consideration_lines": [
+      "cash: $1,215,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT234/RT23435/photo.jpg"
+    },
+    "footer": {
+      "page_position": "444 / 506",
+      "rt_id": "RT23435"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "1800 DUNDAS ST E",
+    "postcode": "L1N 2L4",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "11/15/2001",
+    "desc": "Retail Plaza - 1 storey; 11,160 sf @ $109",
+    "bldg": "11,160 sf",
+    "acreage": ".81",
+    "consid": "1215000",
+    "cash": "1215000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 09 040 031 11700"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "1800 DUNDAS ST E"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "15 Nov 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 11,160 sf @ $109",
+    "seller_lines": [
+      "755471 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Sunny Ridge Management Corp"
+    ],
+    "price_text": "$1,215,000"
+  }
+}

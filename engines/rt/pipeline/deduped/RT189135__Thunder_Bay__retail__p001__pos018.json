@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT189135",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189135",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 ARTHUR ST W"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "04 Dec 2024",
+      "price_text": "$1,080,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Fuzzy Unicorn Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "370 Barrie Dr",
+        "Kakabeka Falls, Ontario",
+        "P7K 0J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Delpaggio Builders Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Delpaggio",
+        "c/o 2130 Whitegates Dr",
+        "Thunder Bay, Ontario",
+        "P7K 1G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan W-628 Neebing,",
+      "Part Lots 75-81",
+      "As in Inst No TBR-278121",
+      "",
+      "PIN: 62047-0108",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "58 04 040 195 08900",
+    "consideration_lines": [
+      "cash: $1,080,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,080,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/04/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 65",
+      "rt_id": "RT189135"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "100 ARTHUR ST W",
+    "postcode": "P7E 5P6",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "12/04/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "1080000",
+    "cash": "1080000",
+    "debt": "",
+    "note": "",
+    "pin": "62047-0108",
+    "rollno": "58 04 040 195 08900"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "100 ARTHUR ST W"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "04 Dec 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Fuzzy Unicorn Inc"
+    ],
+    "buyer_lines": [
+      "Delpaggio Builders Ltd"
+    ],
+    "price_text": "$1,080,000"
+  }
+}

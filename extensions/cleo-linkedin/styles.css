@@ -1,0 +1,244 @@
+/* Cleo Turbo LinkedIn Capture - Floating Button + Datanyze Panel Styles */
+
+#cleo-linkedin-capture {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.cleo-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.cleo-save-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: #2E7D5B; /* jade */
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.cleo-save-btn:hover {
+  background: #246b4d;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cleo-save-btn:active {
+  transform: scale(0.97);
+}
+
+.cleo-save-btn.cleo-loading {
+  opacity: 0.7;
+  pointer-events: none;
+  animation: cleo-pulse 1.2s ease-in-out infinite;
+}
+
+.cleo-save-btn.cleo-success {
+  background: #16a34a;
+}
+
+@keyframes cleo-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.cleo-label {
+  display: none;
+  background: #1e293b;
+  color: #f1f5f9;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cleo-status {
+  max-width: 280px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cleo-status-success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.cleo-status-error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* ── Datanyze Capture Panel ────────────────────────────────── */
+
+#cleo-datanyze-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  width: 260px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  margin-bottom: 8px;
+  animation: cleo-slide-up 0.2s ease-out;
+}
+
+@keyframes cleo-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cleo-dn-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.cleo-dn-icon {
+  font-size: 14px;
+}
+
+.cleo-dn-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.cleo-dn-close:hover {
+  color: #64748b;
+}
+
+.cleo-dn-hint {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.cleo-dn-section {
+  margin-bottom: 8px;
+}
+
+.cleo-dn-section:last-child {
+  margin-bottom: 0;
+}
+
+.cleo-dn-section-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.cleo-dn-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cleo-dn-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+.cleo-dn-item-value {
+  color: #1e293b;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cleo-dn-item-type {
+  color: #64748b;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.cleo-dn-item-remove {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.cleo-dn-item-remove:hover {
+  color: #ef4444;
+}
+
+.cleo-dn-paste-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cleo-dn-paste-btn:hover {
+  background: #f1f5f9;
+  border-color: #2E7D5B;
+  color: #2E7D5B;
+}
+
+.cleo-dn-paste-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.cleo-dn-paste-icon {
+  font-size: 12px;
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT170005",
+  "source_folder": "Lanark_County/all/p009",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170005",
+      "source_folder": "Lanark_County/all/p009",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lanark_County/all/p009/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "475 RICHMOND ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "30 Jun 2022",
+      "price_text": "$743,237",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "VK Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "9592 McNaughton Line E",
+        "Chatham, Ontario",
+        "N7M 5J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000176312 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Heuvelmans",
+        "275 Chatham St N",
+        "Blenheim, Ontario",
+        "N0P 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - EB, Part Lot 22",
+      "As in Inst No 441288",
+      "",
+      "PIN: 00524-0010",
+      "",
+      "3.24 acre"
+    ],
+    "arn_text": "36 42 020 022 19200",
+    "consideration_lines": [
+      "cash: $743,237     assumed/vtb debt: $0",
+      "other: $2,746,553"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "402 / 1755",
+      "rt_id": "RT170005"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "475 RICHMOND ST",
+    "postcode": "N7M 1R2",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "06/30/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.24",
+    "consid": "743237",
+    "cash": "743237",
+    "debt": "",
+    "note": "",
+    "pin": "00524-0010",
+    "rollno": "36 42 020 022 19200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "475 RICHMOND ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "30 Jun 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "VK Farms Ltd"
+    ],
+    "buyer_lines": [
+      "1000176312 Ontario Inc"
+    ],
+    "price_text": "$743,237"
+  }
+}

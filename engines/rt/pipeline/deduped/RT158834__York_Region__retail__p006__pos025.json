@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT158834",
+  "source_folder": "York_Region/retail/p006",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT158834",
+      "source_folder": "York_Region/retail/p006",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p006/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "106 HIGH ST"
+      ],
+      "city_region": "Georgina : York Region",
+      "date_text": "01 Mar 2021",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2455340 Ontario Inc     905-669-1121"
+      ],
+      "trade_name": "North Seven Auto Body Ltd",
+      "contact_lines": [
+        "Pres: Elio Riccelli",
+        "145 Rivermede Rd",
+        "Vaughan, Ontario",
+        "L4K 3M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2782746 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Kentris",
+        "9140 Leslie St, Ste 401",
+        "Richmond Hill, Ontario",
+        "L4B 0A9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza: 1 storey; 9,600 sf @ $182",
+      "",
+      "Last transferred in February 2016 for $1,325,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 69 - Sutton",
+      "Block 10, Lot 4, Parts Lots 5-7",
+      "As in Inst No R-391848",
+      "",
+      "PIN: 03504-0160",
+      "",
+      "W side High St, N of Middle St",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "19 70 000 070 77900",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $1,600,000",
+      "",
+      "chargee: 2455340 Ontario Inc",
+      "principal: $1,600,000",
+      "registered: 03/01/2021   due: 02/26/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161725.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161731.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161755.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161757.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161932.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161944.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_161949.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1588/RT158834/0327_162417.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "276 / 984",
+      "rt_id": "RT158834"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "106 HIGH ST",
+    "postcode": "L0E 1R0",
+    "municipality": "Georgina",
+    "region": "York Region",
+    "date": "03/01/2021",
+    "desc": "Retail Plaza: 1 storey; 9,600 sf @ $182",
+    "bldg": "9,600 sf",
+    "acreage": ".74",
+    "consid": "1750000",
+    "cash": "150000",
+    "debt": "1600000",
+    "note": "",
+    "pin": "03504-0160",
+    "rollno": "19 70 000 070 77900"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "106 HIGH ST"
+    ],
+    "city_region": "Georgina : York Region",
+    "date_text": "01 Mar 2021",
+    "note": "",
+    "description": "Retail Plaza: 1 storey; 9,600 sf @ $182",
+    "seller_lines": [
+      "2455340 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2782746 Ontario Ltd"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

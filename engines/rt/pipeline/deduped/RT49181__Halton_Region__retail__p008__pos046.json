@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT49181",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49181",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "119 JONES ST"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "01 Jun 2006",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Kelgar Development Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gary Reed",
+        "119 Jones St",
+        "Oakville, Ontario",
+        "L6L 3E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-7, Lot 160",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "24 01 020 230 04800",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $110,000   rate: Prime plus 0.25% per annum",
+      "registered: 06/01/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT491/RT49181/0618_134557.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT491/RT49181/0618_134559.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT491/RT49181/0618_134601.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT491/RT49181/air1.jpg",
+        "/assets/files/RT4/RT491/RT49181/air2.jpg",
+        "/assets/files/RT4/RT491/RT49181/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "397 / 613",
+      "rt_id": "RT49181"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "119 JONES ST",
+    "postcode": "L6L 3E7",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "06/01/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 020 230 04800"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "119 JONES ST"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "01 Jun 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Kelgar Development Corp"
+    ],
+    "price_text": "$500,000"
+  }
+}

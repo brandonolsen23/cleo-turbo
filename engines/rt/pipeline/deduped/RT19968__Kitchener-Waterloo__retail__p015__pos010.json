@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT19968",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19968",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "471 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "07 Dec 2000",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Anne Decunha"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2289 Glatts Lane",
+        "Mississauga, Ontario",
+        "L5H 3N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "471 King East Holdings Inc     519-579-6783"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tom Leung",
+        "471 King St E",
+        "Kitchener, Ontario",
+        "N2G 2L7"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-6259, Parts 1 & 2",
+      "As in Inst No 1140592",
+      "",
+      "SW corner at Madison Ave S",
+      "",
+      "1.39 acre"
+    ],
+    "arn_text": "30 12 040 001 04900",
+    "consideration_lines": [
+      "cash: $300,000     assumed/vtb debt: $200,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT199/RT19968/photo.jpg"
+    },
+    "footer": {
+      "page_position": "711 / 752",
+      "rt_id": "RT19968"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "471 KING ST E",
+    "postcode": "N2G 2L7",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/07/2000",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.39",
+    "consid": "500000",
+    "cash": "300000",
+    "debt": "200000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 001 04900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "471 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "07 Dec 2000",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Anne Decunha"
+    ],
+    "buyer_lines": [
+      "471 King East Holdings Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

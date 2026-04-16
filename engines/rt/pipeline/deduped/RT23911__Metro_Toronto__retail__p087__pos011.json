@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23911",
+  "source_folder": "Metro_Toronto/retail/p087",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23911",
+      "source_folder": "Metro_Toronto/retail/p087",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p087/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "743 - 743A BIRCHMOUNT RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "31 Dec 2001",
+      "price_text": "$750,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Yoc-San & Ping-Kee Sam"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "759 Birchmount Rd",
+        "Toronto, Ontario",
+        "M1K 1R5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1508146 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yoc-San Sam",
+        "759 Birchmount Rd",
+        "Toronto, Ontario",
+        "M1K 1R5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-668",
+      "Lots 62-64",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "19 01 041 140 00700",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $50,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4312 / 4952",
+      "rt_id": "RT23911"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "743 - 743A BIRCHMOUNT RD",
+    "postcode": "M1K 1R5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/31/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".43",
+    "consid": "750000",
+    "cash": "700000",
+    "debt": "50000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 01 041 140 00700"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "743 - 743A BIRCHMOUNT RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "31 Dec 2001",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Yoc-San & Ping-Kee Sam"
+    ],
+    "buyer_lines": [
+      "1508146 Ontario Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

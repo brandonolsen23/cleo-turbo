@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT120400",
+  "source_folder": "Simcoe_County/all/p007",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT120400",
+      "source_folder": "Simcoe_County/all/p007",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/all/p007/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 25",
+        "PART LOT 17"
+      ],
+      "city_region": "Callander : Parry Sound",
+      "date_text": "21 Oct 2016",
+      "price_text": "$900,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Tama Kwa Vacationland Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Heather Guido",
+        "427 Surrey Dr",
+        "North Bay, Ontario",
+        "P1C 1E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 25, Part Lot 17",
+      "Plan 42R-20568, Parts 1 & 2",
+      "",
+      "PIN: 52203-0604"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "304 / 501",
+      "rt_id": "RT120400"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "CONC 25, PART LOT 17",
+    "postcode": "",
+    "municipality": "Callander",
+    "region": "Parry Sound",
+    "date": "10/21/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "52203-0604",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "CONC 25",
+      "PART LOT 17"
+    ],
+    "city_region": "Callander : Parry Sound",
+    "date_text": "21 Oct 2016",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Tama Kwa Vacationland Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$900,000"
+  }
+}

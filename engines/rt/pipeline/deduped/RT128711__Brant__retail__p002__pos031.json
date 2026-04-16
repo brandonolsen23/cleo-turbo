@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT128711",
+  "source_folder": "Brant/retail/p002",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT128711",
+      "source_folder": "Brant/retail/p002",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "630 COLBORNE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "29 Sep 2017",
+      "price_text": "$1,800,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Elmwood Inc",
+        "Grand Manor Estate Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jack Robillard",
+        "21 Jaylin Cres",
+        "Brantford, Ontario",
+        "N0A 1N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2598789 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tahir Mehmood",
+        "465 Kincardine Terrace",
+        "Milton, Ontario",
+        "L9T 8E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 223,",
+      "Part Lots 1-4, N/S Hamilton Rd",
+      "As in Inst No A-483203",
+      "",
+      "PIN: 32123-0012",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "29 06 040 011 02500",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $1,170,000",
+      "",
+      "chargee: Elmwood Inc",
+      "Grand Manor Easte Ltd",
+      "principal: $1,170,000   rate: 0.5% per month. Due the earlier of 9/28/2018 or date of building permit issued by the City of Brantford.",
+      "registered: 09/29/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128711/0402_125901.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128711/0402_125927.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128711/0402_130130.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128711/0402_130207.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1287/RT128711/0402_130356.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "82 / 195",
+      "rt_id": "RT128711"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "630 COLBORNE ST",
+    "postcode": "N3S 3P8",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "09/29/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "1800000",
+    "cash": "630000",
+    "debt": "1170000",
+    "note": "Power of Sale",
+    "pin": "32123-0012",
+    "rollno": "29 06 040 011 02500"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "630 COLBORNE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "29 Sep 2017",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Elmwood Inc",
+      "Grand Manor Estate Ltd"
+    ],
+    "buyer_lines": [
+      "2598789 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

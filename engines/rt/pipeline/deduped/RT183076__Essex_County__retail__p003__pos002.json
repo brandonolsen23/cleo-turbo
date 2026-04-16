@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT183076",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183076",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "2594 HOWARD AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "08 Jan 2024",
+      "price_text": "$815,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "944746 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 2361 Randolph St",
+        "Windsor, Ontario",
+        "N9E 3X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Legacy Wheels Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohammed El-Rifai",
+        "2594 Howard Ave",
+        "Windsor, Ontario",
+        "N8X 3W5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1354,",
+      "Part Lot 1 & Part Williams St",
+      "Plan 1090,",
+      "Part Lot 175 & Part Williams St",
+      "As in Inst No:",
+      "R-842003 & R-1128401",
+      "Except:",
+      "Plan 12R-10580, Part 1",
+      "",
+      "PIN: 01337-0431 +",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "37 39 070 010 12600",
+    "consideration_lines": [
+      "cash: $815,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "103 / 460",
+      "rt_id": "RT183076"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "2594 HOWARD AVE",
+    "postcode": "N8X 3W5",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "01/08/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "815000",
+    "cash": "815000",
+    "debt": "",
+    "note": "",
+    "pin": "01337-0431+",
+    "rollno": "37 39 070 010 12600"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "2594 HOWARD AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "08 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "944746 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Legacy Wheels Inc"
+    ],
+    "price_text": "$815,000"
+  }
+}

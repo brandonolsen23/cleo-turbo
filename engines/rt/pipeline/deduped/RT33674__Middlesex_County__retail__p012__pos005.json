@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT33674",
+  "source_folder": "Middlesex_County/retail/p012",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33674",
+      "source_folder": "Middlesex_County/retail/p012",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p012/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "557 WELLINGTON RD S"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "19 Jan 2004",
+      "price_text": "$725,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "544748 Ontario Ltd     705-673-1914"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Whitehead Jr",
+        "Capital Bingo",
+        "66 Cedar St",
+        "Sudbury, Ontario",
+        "P3E 1A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1579188 Ontario Ltd     519-850-0436"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Giorgios Starfas",
+        "32 Virginia Cres",
+        "London, Ontario",
+        "N5X 3E5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-3118, Part 4",
+      "",
+      "0.70 acre"
+    ],
+    "arn_text": "39 36 060 552 16100",
+    "consideration_lines": [
+      "cash: $725,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT336/RT33674/photo.jpg"
+    },
+    "footer": {
+      "page_position": "556 / 686",
+      "rt_id": "RT33674"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "557 WELLINGTON RD S",
+    "postcode": "N6C 4R3",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "01/19/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".7",
+    "consid": "725000",
+    "cash": "725000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 552 16100"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "557 WELLINGTON RD S"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "19 Jan 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "544748 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1579188 Ontario Ltd"
+    ],
+    "price_text": "$725,000"
+  }
+}

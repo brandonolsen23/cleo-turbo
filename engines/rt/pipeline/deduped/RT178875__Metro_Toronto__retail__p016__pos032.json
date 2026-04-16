@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT178875",
+  "source_folder": "Metro_Toronto/retail/p016",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178875",
+      "source_folder": "Metro_Toronto/retail/p016",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p016/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "4877 STEELES AVE W"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "05 Jul 2023",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Maria 50 Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "465 Signet Dr",
+        "Toronto, Ontario",
+        "M9L 1V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000463348 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roed Hasani",
+        "4877 Steeles Ave W",
+        "Toronto, Ontario",
+        "M9L 2W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-7014, Part 10",
+      "",
+      "PIN: 10296-0182",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "19 08 013 370 00180",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,650,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/05/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178875/0715_164749a.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178875/0715_164749b.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178875/0715_164758.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178875/0715_164800.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178875/0715_164856.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "783 / 4952",
+      "rt_id": "RT178875"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "4877 STEELES AVE W",
+    "postcode": "M9L 2W1",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "07/05/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".55",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "10296-0182",
+    "rollno": "19 08 013 370 00180"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "4877 STEELES AVE W"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "05 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Maria 50 Inc"
+    ],
+    "buyer_lines": [
+      "1000463348 Ontario Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

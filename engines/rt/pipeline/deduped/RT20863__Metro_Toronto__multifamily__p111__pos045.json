@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT20863",
+  "source_folder": "Metro_Toronto/multifamily/p111",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20863",
+      "source_folder": "Metro_Toronto/multifamily/p111",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p111/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 COSBURN AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "12 Mar 2001",
+      "price_text": "$1,614,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Zoran & Ljiljana Tenzera",
+        "Jonce & Milka Germanski"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Cosburn Ave",
+        "Toronto, Ontario",
+        "M4J 2L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "T & G Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zoran Tenzera",
+        "320 Chaplin Cres",
+        "Toronto, Ontario",
+        "M5N 2M8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-39, Lot 137",
+      "Plan M-39, Part Lots 136 & 138",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "19 06 031 230 01400",
+    "consideration_lines": [
+      "cash: $1,614,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5546 / 6031",
+      "rt_id": "RT20863"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "125 COSBURN AVE",
+    "postcode": "M4J 2L1",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "03/12/2001",
+    "desc": "Apartment Bldg",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "1614000",
+    "cash": "1614000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 06 031 230 01400"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "125 COSBURN AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "12 Mar 2001",
+    "note": "Related Parties",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "Zoran & Ljiljana Tenzera",
+      "Jonce & Milka Germanski"
+    ],
+    "buyer_lines": [
+      "T & G Properties Inc"
+    ],
+    "price_text": "$1,614,000"
+  }
+}

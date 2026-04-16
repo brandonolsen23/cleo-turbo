@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT68980",
+  "source_folder": "Cochrane/all/p143",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68980",
+      "source_folder": "Cochrane/all/p143",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p143/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "7771 SNAKE RD"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "08 Oct 2009",
+      "price_text": "$650,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1663279 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gary Chayko",
+        "5414 Mansel Cres",
+        "Ottawa, Ontario",
+        "K4M 1L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 20",
+      "Plan 5R-8132, Part 1",
+      "",
+      "PIN: 04315-0765 +",
+      "",
+      "0.93 acre"
+    ],
+    "arn_text": "06 01 000 055 08803",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $499,800   rate: Prime plus 8.0% per annum",
+      "registered: 10/08/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT689/RT68980/air1.jpg",
+        "/assets/files/RT6/RT689/RT68980/air2.jpg",
+        "/assets/files/RT6/RT689/RT68980/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7123 / 10920",
+      "rt_id": "RT68980"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "7771 SNAKE RD",
+    "postcode": "",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "10/08/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".93",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04315-0765+",
+    "rollno": "06 01 000 055 08803"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "7771 SNAKE RD"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "08 Oct 2009",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1663279 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$650,000"
+  }
+}

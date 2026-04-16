@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT46628",
+  "source_folder": "Metro_Toronto/multifamily/p084",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46628",
+      "source_folder": "Metro_Toronto/multifamily/p084",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p084/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 DOVERCOURT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Dec 2005",
+      "price_text": "$563,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "TriPlex"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 893, Part Lot 1",
+      "As in Inst No CA-384279",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 041 480 00400",
+    "consideration_lines": [
+      "cash: $563,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $516,120   rate: 4.4% per annum",
+      "registered: 12/28/2005   due: 12/28/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4169 / 6031",
+      "rt_id": "RT46628"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "100 DOVERCOURT RD",
+    "postcode": "M6J 3C3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/28/2005",
+    "desc": "TriPlex",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "563000",
+    "cash": "563000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 041 480 00400"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "100 DOVERCOURT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Dec 2005",
+    "note": "",
+    "description": "TriPlex",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$563,000"
+  }
+}

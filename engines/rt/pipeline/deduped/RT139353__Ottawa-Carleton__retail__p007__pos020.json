@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT139353",
+  "source_folder": "Ottawa-Carleton/retail/p007",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT139353",
+      "source_folder": "Ottawa-Carleton/retail/p007",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p007/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "595 ST LAURENT BLVD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "13 Dec 2018",
+      "price_text": "$1,825,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "2600337 Ontario Inc",
+        "Oh RE LP     416-254-0518"
+      ],
+      "trade_name": "Automotive Finco Corp",
+      "contact_lines": [
+        "Attn: Kuldeep Billan",
+        "8 King St E, Ste 1800",
+        "Toronto, Ontario",
+        "M5C 1B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "APR (595 St Laurent) Inc     647-789-2440"
+      ],
+      "trade_name": "Automotive Properties REIT",
+      "contact_lines": [
+        "Attn: Andrew Kalra",
+        "133 King St E, Ste 300",
+        "Toronto, Ontario",
+        "M5C 1G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - OF, Part Lot 26",
+      "As in Inst No NS-124399",
+      "",
+      "PIN: 04276-0001",
+      "",
+      "0.63 acre"
+    ],
+    "arn_text": "06 14 010 401 04900",
+    "consideration_lines": [
+      "cash: $1,825,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $200,000,000   rate: 25.0% per annum.",
+      "registered: 12/13/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139353/0413_100027.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139353/0413_100051.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139353/0413_100117.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139353/0413_100119.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139353/0413_100140.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "321 / 1141",
+      "rt_id": "RT139353"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "595 ST LAURENT BLVD",
+    "postcode": "K1K 2Z9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/13/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".63",
+    "consid": "1825000",
+    "cash": "1825000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04276-0001",
+    "rollno": "06 14 010 401 04900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "595 ST LAURENT BLVD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "13 Dec 2018",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "2600337 Ontario Inc",
+      "Oh RE LP"
+    ],
+    "buyer_lines": [
+      "APR (595 St Laurent) Inc"
+    ],
+    "price_text": "$1,825,000"
+  }
+}

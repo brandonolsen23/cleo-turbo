@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT115989",
+  "source_folder": "Halton_Region/retail/p005",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT115989",
+      "source_folder": "Halton_Region/retail/p005",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p005/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "595 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "18 Apr 2016",
+      "price_text": "$1,852,135",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2170850 Ontario Ltd     905-849-1761"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Steven MacTavish",
+        "1447 Pembroke Dr",
+        "Oakville, Ontario",
+        "L6H 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2498902 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nisrat Naser",
+        "595 Plains Rd",
+        "Burlington, Ontario",
+        "L7T 2E6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan PF-663, Part Lots 9 & 10",
+      "As in Inst No 474849",
+      "Except:",
+      "Plan 20R-1395, Part 2",
+      "",
+      "PIN: 07105-0040",
+      "",
+      "N side Plains Rd W, W of King Rd",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "24 02 010 116 12100",
+    "consideration_lines": [
+      "cash: $1,852,135     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,100,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/18/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1159/RT115989/0430_081705.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1159/RT115989/0430_081707.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1159/RT115989/0430_081747.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1159/RT115989/0430_081804.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1159/RT115989/0430_081827.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "202 / 613",
+      "rt_id": "RT115989"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "595 PLAINS RD E",
+    "postcode": "L7T 2E6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/18/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "1852135",
+    "cash": "1852135",
+    "debt": "",
+    "note": "",
+    "pin": "07105-0040",
+    "rollno": "24 02 010 116 12100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "595 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "18 Apr 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2170850 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2498902 Ontario Ltd"
+    ],
+    "price_text": "$1,852,135"
+  }
+}

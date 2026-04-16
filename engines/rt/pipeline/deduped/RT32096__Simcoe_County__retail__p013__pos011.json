@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT32096",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32096",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 POYNTZ ST"
+      ],
+      "city_region": "Penetanguishene : Simcoe County",
+      "date_text": "10 Oct 2003",
+      "price_text": "$5,654,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "759043 Ontario Ltd",
+        "258068 Groceries Ltd",
+        "Gerald E. Light     705-549-3127"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gerald Light",
+        "Penetang IGA",
+        "2 Poyntz, Unit 110",
+        "Penetanguishene, Ont",
+        "L9M 1M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Penetang Village Square Mall Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: George Courtnage",
+        "2 Poyntz St",
+        "Penetanguishene, Ont",
+        "L9M 1M2"
+      ]
+    },
+    "description_lines": [
+      "Village Square Mall: 1-2 storey; 28 units 87,830 sf @ $64"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 43",
+      "Level 1, Units 1, 6-13, 16-19, 22, 29-33",
+      "Plan 37, Part Lots 26-28, S/S Poyntz St",
+      "Plan 51R-13355, Parts 1 & 2"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,190,500     assumed/vtb debt: $2,463,500"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "612 / 712",
+      "rt_id": "RT32096"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "2 POYNTZ ST",
+    "postcode": "L9M 1M2",
+    "municipality": "Penetanguishene",
+    "region": "Simcoe County",
+    "date": "10/10/2003",
+    "desc": "Village Square Mall: 1-2 storey; 28 units 87,830 sf @ $64",
+    "bldg": "87,830 sf",
+    "acreage": "",
+    "consid": "5654000",
+    "cash": "3190500",
+    "debt": "2463500",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "2 POYNTZ ST"
+    ],
+    "city_region": "Penetanguishene : Simcoe County",
+    "date_text": "10 Oct 2003",
+    "note": "",
+    "description": "Village Square Mall: 1-2 storey; 28 units 87,830 sf @ $64",
+    "seller_lines": [
+      "759043 Ontario Ltd",
+      "258068 Groceries Ltd",
+      "Gerald E. Light"
+    ],
+    "buyer_lines": [
+      "Penetang Village Square Mall Ltd"
+    ],
+    "price_text": "$5,654,000"
+  }
+}

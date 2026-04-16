@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT92088",
+  "source_folder": "Lambton/retail/p002",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT92088",
+      "source_folder": "Lambton/retail/p002",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "4347 - 4351 PETROLIA LINE"
+      ],
+      "city_region": "Petrolia : Lambton",
+      "date_text": "22 Jan 2013",
+      "price_text": "$553,333",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "469849 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marcel Beaubien",
+        "PO Box 699",
+        "Petrolia, Ontario",
+        "N0N 1R0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4347-4353 Petrolia Line Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Brian Dorr",
+        "34 Brooke Ave, Ste 100",
+        "Toronto, Ontario",
+        "M4M 2J7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6, Lots 3-5",
+      "Together with Inst Nos:",
+      "LA-94091 & L-503678",
+      "",
+      "PIN: 43458-0055",
+      "",
+      "0.58 acre"
+    ],
+    "arn_text": "38 19 000 060 07700",
+    "consideration_lines": [
+      "cash: $553,333     assumed/vtb debt: $0",
+      "",
+      "chargee: Lambton Financial Credit Union Ltd",
+      "principal: $254,611   rate: Prime plus 1.25% per annum.",
+      "registered: 01/22/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT920/RT92088/0629_103747.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT920/RT92088/0629_103816.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT920/RT92088/0629_103841.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT920/RT92088/0629_104002.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT920/RT92088/0629_104107.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "61 / 106",
+      "rt_id": "RT92088"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "4347 - 4351 PETROLIA LINE",
+    "postcode": "",
+    "municipality": "Petrolia",
+    "region": "Lambton",
+    "date": "01/22/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".58",
+    "consid": "553333",
+    "cash": "553333",
+    "debt": "",
+    "note": "",
+    "pin": "43458-0055",
+    "rollno": "38 19 000 060 07700"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "4347 - 4351 PETROLIA LINE"
+    ],
+    "city_region": "Petrolia : Lambton",
+    "date_text": "22 Jan 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "469849 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "4347-4353 Petrolia Line Holdings Inc"
+    ],
+    "price_text": "$553,333"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT137213",
+  "source_folder": "Kitchener-Waterloo/retail/p005",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT137213",
+      "source_folder": "Kitchener-Waterloo/retail/p005",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p005/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "505 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "20 Sep 2018",
+      "price_text": "$5,863,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "2436196 Ontario Inc     416-968-9439"
+      ],
+      "trade_name": "The Wynn Group",
+      "contact_lines": [
+        "ASO: Paul Wynn",
+        "330 Dupont St, 2nd Flr",
+        "Toronto, Ontario",
+        "M5R 1V9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Timbercreek Four Quadrant GP 2 Inc     416-306-9967"
+      ],
+      "trade_name": "Timbercreek Asset Management",
+      "contact_lines": [
+        "Pres: Michael Tsourounis",
+        "25 Price St",
+        "Toronto, Ontario",
+        "M4W 1Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1379, Lot 9",
+      "",
+      "PIN: 03790-0017",
+      "",
+      "3.08 acre"
+    ],
+    "arn_text": "30 06 150 015 03000",
+    "consideration_lines": [
+      "cash: $5,863,000     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $116,670,000   rate: 25.0% per annum.",
+      "registered: 09/20/2018   due: 10/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084034.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084038.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084046.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084047.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084115.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084116.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084148.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1372/RT137213/0112_084218.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "245 / 752",
+      "rt_id": "RT137213"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "505 HESPELER RD",
+    "postcode": "N1R 6J2",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "09/20/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.08",
+    "consid": "5863000",
+    "cash": "5863000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "03790-0017",
+    "rollno": "30 06 150 015 03000"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "505 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "20 Sep 2018",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "2436196 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Timbercreek Four Quadrant GP 2 Inc"
+    ],
+    "price_text": "$5,863,000"
+  }
+}

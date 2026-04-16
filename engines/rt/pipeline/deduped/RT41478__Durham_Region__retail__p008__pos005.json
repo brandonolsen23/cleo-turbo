@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT41478",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41478",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "101 - 111 CLARINGTON BLVD"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "22 Apr 2005",
+      "price_text": "$7,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Willsonia Industries Ltd     905-723-3321"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Glenn Willson",
+        "140 Bond St W",
+        "Box 488",
+        "Oshawa, Ontario",
+        "L1H 7L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2069627 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Elizabeth Kelly",
+        "199 Wentworth St W, Ste 3",
+        "Oshawa, Ontario",
+        "L1J 6T4"
+      ]
+    },
+    "description_lines": [
+      "Cineplex, Burger King & East Side Marios"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 15 & 16",
+      "Plan 40R-16730, Parts 2, 8 & 10",
+      "Except:",
+      "Plan 40R-17612, Parts 3 & 4",
+      "",
+      "NE corner Clarington Blvd and Hwy 2",
+      "",
+      "3.00 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT414/RT41478/air1.jpg",
+        "/assets/files/RT4/RT414/RT41478/air2.jpg",
+        "/assets/files/RT4/RT414/RT41478/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT414/RT41478/photo.jpg"
+    },
+    "footer": {
+      "page_position": "356 / 506",
+      "rt_id": "RT41478"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "101 - 111 CLARINGTON BLVD",
+    "postcode": "",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "04/22/2005",
+    "desc": "Cineplex, Burger King & East Side Marios",
+    "bldg": "",
+    "acreage": "3",
+    "consid": "7300000",
+    "cash": "7300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "101 - 111 CLARINGTON BLVD"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "22 Apr 2005",
+    "note": "",
+    "description": "Cineplex, Burger King & East Side Marios",
+    "seller_lines": [
+      "Willsonia Industries Ltd"
+    ],
+    "buyer_lines": [
+      "2069627 Ontario Inc"
+    ],
+    "price_text": "$7,300,000"
+  }
+}

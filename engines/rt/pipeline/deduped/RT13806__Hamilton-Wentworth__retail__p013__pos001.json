@@ -1,0 +1,136 @@
+{
+  "rt_id": "RT13806",
+  "source_folder": "Hamilton-Wentworth/retail/p013",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13806",
+      "source_folder": "Hamilton-Wentworth/retail/p013",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p013/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1001 GOLF LINKS RD"
+      ],
+      "city_region": "Ancaster : Hamilton-Wentworth",
+      "date_text": "29 Jan 1999",
+      "price_text": "$1,440,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1114594 Ontario Inc     604-922-2439"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: D. Matkaluk",
+        "c/o 1760 Marine Drive, Suite 204",
+        "West Vancouver, British Columbia",
+        "V7V 1J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Torflor Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Philip Rudson",
+        "c/o Mr. Philip Rudson",
+        "1166 Bay St, Suite 1602",
+        "Toronto, Ontario",
+        "M5S 2X8"
+      ]
+    },
+    "description_lines": [
+      "Retail Building"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-13368, Parts 3 & 4"
+    ],
+    "arn_text": "25 14 100 280 53500",
+    "consideration_lines": [
+      "cash: $1,440,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,100,000   rate: Prime plus 6.0% per annum.",
+      "registered: 10/22/2018   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $4,000,000   rate: Prime plus 7.0% per annum.",
+      "registered: 10/23/2018   due: on demand",
+      "",
+      "chargee: Kay Family Investments Inc",
+      "principal: $1,950,000   rate: RBC prime plus 6.30% per annum.",
+      "registered: 10/26/2018   due: 07/26/2019",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,700,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/25/2018   due: on demand",
+      "",
+      "chargee: 1849259 Ontario Inc",
+      "principal: $1,000,000   rate: 5.0% per annum.",
+      "registered: 10/25/2018   due: 10/22/2019",
+      "",
+      "chargee: Napev Construction Ltd",
+      "principal: $1,440,000   rate: 0% until 10/22/2019, then 4.0% per annum.",
+      "registered: 10/22/2018   due: 10/22/2024",
+      "",
+      "chargee: 2565526 Ontario Inc",
+      "principal: $1,400,000   rate: 6.0% per annum.",
+      "registered: 10/26/2018   due: 10/26/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT138/RT13806/photo.jpg"
+    },
+    "footer": {
+      "page_position": "602 / 616",
+      "rt_id": "RT13806"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1001 GOLF LINKS RD",
+    "postcode": "",
+    "municipality": "Ancaster",
+    "region": "Hamilton-Wentworth",
+    "date": "01/29/1999",
+    "desc": "Retail Building",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1440000",
+    "cash": "1440000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 14 100 280 53500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1001 GOLF LINKS RD"
+    ],
+    "city_region": "Ancaster : Hamilton-Wentworth",
+    "date_text": "29 Jan 1999",
+    "note": "",
+    "description": "Retail Building",
+    "seller_lines": [
+      "1114594 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Torflor Inc"
+    ],
+    "price_text": "$1,440,000"
+  }
+}

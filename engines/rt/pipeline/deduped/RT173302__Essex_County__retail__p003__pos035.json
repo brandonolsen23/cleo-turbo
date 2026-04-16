@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT173302",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173302",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "5906 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "31 Oct 2022",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1869119 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "709 Samantha Ct",
+        "Windsor, Ontario",
+        "N9E 4V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2697102 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Abdul Rauf",
+        "5906 Tecumseh Rd",
+        "Windsor, Ontario",
+        "N8T 1E3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1037, Lots 163 & 164",
+      "",
+      "PIN: 01108-0133",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $1,000,000",
+      "",
+      "chargee: 1869119 Ontario Ltd",
+      "principal: $1,000,000   rate: 5.0% per annum.",
+      "registered: 10/31/2022   due: 10/21/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "136 / 460",
+      "rt_id": "RT173302"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "5906 TECUMSEH RD E",
+    "postcode": "N8T 1E3",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "10/31/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".43",
+    "consid": "1500000",
+    "cash": "500000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "01108-0133",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "5906 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "31 Oct 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1869119 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2697102 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT66553",
+  "source_folder": "Hamilton-Wentworth/retail/p009",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66553",
+      "source_folder": "Hamilton-Wentworth/retail/p009",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p009/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "790 SHAVER RD"
+      ],
+      "city_region": "Ancaster : Hamilton-Wentworth",
+      "date_text": "03 Apr 2009",
+      "price_text": "$975,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Starward (Shaver) Ltd     905-648-7000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jan Szostak",
+        "790 Shaver Rd, Unit 1",
+        "Ancaster, Ontario",
+        "L9G 3K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ontario Association of Christian Schools Foundation"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Linda Dzelme",
+        "671 Garner Rd E",
+        "Ancaster, Ontario",
+        "L9G 3K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-18220, Parts 1-3 & 9",
+      "",
+      "PIN: 17411-0299"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $975,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Concentra Trust",
+      "principal: $750,000   rate: CIBC prime plus 2.00%",
+      "registered: 04/03/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT665/RT66553/0411_121859.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT665/RT66553/0411_122021.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT665/RT66553/0411_122122.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "405 / 616",
+      "rt_id": "RT66553"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "790 SHAVER RD",
+    "postcode": "L9G 3K9",
+    "municipality": "Ancaster",
+    "region": "Hamilton-Wentworth",
+    "date": "04/03/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "975000",
+    "cash": "975000",
+    "debt": "",
+    "note": "",
+    "pin": "17411-0299",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "790 SHAVER RD"
+    ],
+    "city_region": "Ancaster : Hamilton-Wentworth",
+    "date_text": "03 Apr 2009",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Starward (Shaver) Ltd"
+    ],
+    "buyer_lines": [
+      "Ontario Association of Christian Schools Foundation"
+    ],
+    "price_text": "$975,000"
+  }
+}

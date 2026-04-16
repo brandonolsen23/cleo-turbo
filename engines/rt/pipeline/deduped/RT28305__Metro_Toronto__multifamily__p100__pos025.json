@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT28305",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28305",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "36 JANE ST"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "31 Dec 2002",
+      "price_text": "$666,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Emma & Salvatore Simonetta"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "30 Northcliff Blvd",
+        "Toronto, Ontario",
+        "M6H 3H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Luciano, Robert & Incoronata Simonetta",
+        "Maria G. Spano"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "20 Cirillo Ct",
+        "North York, Ontario",
+        "M6L 1R5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-16314, Parts 1 & 2",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 012 160 00200",
+    "consideration_lines": [
+      "cash: $666,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4976 / 6031",
+      "rt_id": "RT28305"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "36 JANE ST",
+    "postcode": "M6S 3Y2",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "12/31/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "666000",
+    "cash": "666000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 012 160 00200"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "36 JANE ST"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "31 Dec 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Emma & Salvatore Simonetta"
+    ],
+    "buyer_lines": [
+      "Luciano, Robert & Incoronata Simonetta",
+      "Maria G. Spano"
+    ],
+    "price_text": "$666,000"
+  }
+}

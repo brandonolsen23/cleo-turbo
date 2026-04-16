@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT196667",
+  "source_folder": "Kitchener-Waterloo/multifamily/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196667",
+      "source_folder": "Kitchener-Waterloo/multifamily/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "76 BARBARA CRES"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "15 Jan 2026",
+      "price_text": "$1,219,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1029010 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 127 Duke St E",
+        "Kitchener, Ontario",
+        "N2H 1A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001468660 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dawn Markovic",
+        "11 Cooper Cres",
+        "Breslau, Ontario",
+        "N0B 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 785 - Kitchener,",
+      "Part Lots 31 & 32",
+      "As in Inst No 871531",
+      "",
+      "PIN: 22491-0017",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "30 12 040 006 31900",
+    "consideration_lines": [
+      "cash: $1,219,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1029010 Ontario Ltd",
+      "principal: $900,000   rate: 4.0% per annum.",
+      "registered: 01/15/2026   due: 01/15/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 1449",
+      "rt_id": "RT196667"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "76 BARBARA CRES",
+    "postcode": "N2M 4N2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "01/15/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "1219000",
+    "cash": "1219000",
+    "debt": "",
+    "note": "",
+    "pin": "22491-0017",
+    "rollno": "30 12 040 006 31900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "76 BARBARA CRES"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "15 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1029010 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001468660 Ontario Ltd"
+    ],
+    "price_text": "$1,219,000"
+  }
+}

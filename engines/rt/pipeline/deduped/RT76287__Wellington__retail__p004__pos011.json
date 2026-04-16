@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT76287",
+  "source_folder": "Wellington/retail/p004",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT76287",
+      "source_folder": "Wellington/retail/p004",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p004/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "34 QUEEN ST"
+      ],
+      "city_region": "Puslinch : Wellington",
+      "date_text": "10 Jan 2011",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "749735 Ontario Ltd     519-822-8781"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cheryl McLean",
+        "c/o 17 Victoria St",
+        "Morriston, Ontario",
+        "N0B 2C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "King Calfass Properties Inc     519-822-8150"
+      ],
+      "trade_name": "McElderry & Morris",
+      "contact_lines": [
+        "ASO: Sukhdev Chohan",
+        "c/o 84 Woolwich St",
+        "Guelph, Ontario",
+        "N1H 3T9"
+      ]
+    },
+    "description_lines": [
+      "Morriston Village Plaza: 1-2 storey; 4 tenants 13,000 sf @ $131",
+      "",
+      "1,150 sf vacant (1 unit)",
+      "4 tenants - Morriston Village store (convenience), Mennonite Handcrafted Furniture, A Change of Pace Restaurant & Huether's Garage"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 30",
+      "Plan 61R-10731, Parts 4, 7 & 8",
+      "",
+      "PIN: 71196-0230",
+      "",
+      "2.68 acre"
+    ],
+    "arn_text": "23 01 000 005 15400",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $1,000,000",
+      "",
+      "chargee: 749735 Ontario Ltd",
+      "principal: $1,000,000   rate: First year at 6.5% per annum with payments of $6,698.24 a month. Remainder at 7.5% per annum, with payments of $7,315.55 a month..",
+      "registered: 01/10/2011   due: 02/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT762/RT76287/0122_160549.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT762/RT76287/0122_160720.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT762/RT76287/0122_160826.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT762/RT76287/0122_160855.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT762/RT76287/air1.jpg",
+        "/assets/files/RT7/RT762/RT76287/air2.jpg",
+        "/assets/files/RT7/RT762/RT76287/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "162 / 269",
+      "rt_id": "RT76287"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "34 QUEEN ST",
+    "postcode": "N0B 2C0",
+    "municipality": "Puslinch",
+    "region": "Wellington",
+    "date": "01/10/2011",
+    "desc": "Morriston Village Plaza: 1-2 storey; 4 tenants 13,000 sf @ $131",
+    "bldg": "13,000 sf",
+    "acreage": "2.68",
+    "consid": "1700000",
+    "cash": "700000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "71196-0230",
+    "rollno": "23 01 000 005 15400"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "34 QUEEN ST"
+    ],
+    "city_region": "Puslinch : Wellington",
+    "date_text": "10 Jan 2011",
+    "note": "",
+    "description": "Morriston Village Plaza: 1-2 storey; 4 tenants 13,000 sf @ $131",
+    "seller_lines": [
+      "749735 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "King Calfass Properties Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

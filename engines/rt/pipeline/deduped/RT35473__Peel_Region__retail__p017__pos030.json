@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT35473",
+  "source_folder": "Peel_Region/retail/p017",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35473",
+      "source_folder": "Peel_Region/retail/p017",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p017/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "1425 DUNDAS ST E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "07 May 2004",
+      "price_text": "$5,532,755",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Kau GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Johannes Kau",
+        "2525 Sources Blvd",
+        "Pointe Claire, Quebec",
+        "H9R 5Z9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - NDS, Part Lot 5",
+      "Plan 43R-10104, Parts 10 & 12",
+      "Except Plan 43R-11327, Part 1",
+      "",
+      "4.78 acre"
+    ],
+    "arn_text": "21 05 030 068 17500",
+    "consideration_lines": [
+      "cash: $601,601     assumed/vtb debt: $4,931,154"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT354/RT35473/air1.jpg",
+        "/assets/files/RT3/RT354/RT35473/air2.jpg",
+        "/assets/files/RT3/RT354/RT35473/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "831 / 1087",
+      "rt_id": "RT35473"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "1425 DUNDAS ST E",
+    "postcode": "L4X 2W4",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "05/07/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.78",
+    "consid": "5532755",
+    "cash": "601601",
+    "debt": "4931154",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "21 05 030 068 17500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "1425 DUNDAS ST E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "07 May 2004",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Kau GP Inc"
+    ],
+    "price_text": "$5,532,755"
+  }
+}

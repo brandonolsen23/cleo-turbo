@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT197648",
+  "source_folder": "Cochrane/all/p001",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197648",
+      "source_folder": "Cochrane/all/p001",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "2428 GREYS CREEK RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "03 Mar 2026",
+      "price_text": "$1,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001495299 Ontario Inc     613-425-2892"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephane Bourdeau",
+        "3082 Analdea Dr",
+        "Gloucester, Ontario",
+        "K1T 3X1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Osgoode, Part Lot 18",
+      "",
+      "PIN: 04315-0711",
+      "",
+      "101.01 acre"
+    ],
+    "arn_text": "06 01 000 045 20900",
+    "consideration_lines": [
+      "cash: $1,375,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Ottawa-Carleton Mortgage Inc",
+      "principal: $1,031,250   rate: 8.50% per annum.",
+      "registered: 03/03/2026   due: 04/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1976/RT197648/air1.jpg",
+        "/assets/files/RT19/RT1976/RT197648/air2.jpg",
+        "/assets/files/RT19/RT1976/RT197648/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "32 / 10920",
+      "rt_id": "RT197648"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "2428 GREYS CREEK RD",
+    "postcode": "K4P 1N7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/03/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.01",
+    "consid": "1375000",
+    "cash": "1375000",
+    "debt": "",
+    "note": "",
+    "pin": "04315-0711",
+    "rollno": "06 01 000 045 20900"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "2428 GREYS CREEK RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "03 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001495299 Ontario Inc"
+    ],
+    "price_text": "$1,375,000"
+  }
+}

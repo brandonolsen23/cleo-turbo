@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT183806",
+  "source_folder": "Hamilton-Wentworth/retail/p002",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183806",
+      "source_folder": "Hamilton-Wentworth/retail/p002",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p002/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "1462 CENTRE RD"
+      ],
+      "city_region": "Flamborough : Hamilton-Wentworth",
+      "date_text": "22 Mar 2024",
+      "price_text": "$800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Pyo Capital Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rachel Pyo",
+        "1462 Centre Rd",
+        "Carlisle, Ontario",
+        "L0R 1H0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8 - East Flamborough,",
+      "Part Lot 7",
+      "As in Inst No VM-146247",
+      "",
+      "PIN: 17519-0005",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "25 30 300 810 61600",
+    "consideration_lines": [
+      "cash: $7,774     assumed/vtb debt: $792,226",
+      "",
+      "chargee: 2143502 Ontario Inc",
+      "principal: $792,226   rate: 0% per annum.",
+      "registered: 03/22/2024   due: 03/15/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "96 / 616",
+      "rt_id": "RT183806"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "1462 CENTRE RD",
+    "postcode": "L0R 1H0",
+    "municipality": "Flamborough",
+    "region": "Hamilton-Wentworth",
+    "date": "03/22/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".67",
+    "consid": "800000",
+    "cash": "7774",
+    "debt": "792226",
+    "note": "Related Parties",
+    "pin": "17519-0005",
+    "rollno": "25 30 300 810 61600"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "1462 CENTRE RD"
+    ],
+    "city_region": "Flamborough : Hamilton-Wentworth",
+    "date_text": "22 Mar 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Pyo Capital Holdings Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT24717",
+  "source_folder": "York_Region/retail/p018",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24717",
+      "source_folder": "York_Region/retail/p018",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "514 DAVIS DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "23 Mar 2002",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Paul Straus",
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kronenfeld Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Semion Cronenfeld",
+        "514 Davis Dr",
+        "Newmarket, Ontario",
+        "L3Y 2P3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 31,064 sf @ $27"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 78",
+      "Lots 3 & 4, S/S Huron St",
+      "Part Lots 2 & 5, S/S Huron St",
+      "Plan 262, Part Block F",
+      "As in Inst No R-687790",
+      "",
+      "2.58 acre"
+    ],
+    "arn_text": "19 48 010 010 02900",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT247/RT24717/photo.jpg"
+    },
+    "footer": {
+      "page_position": "864 / 984",
+      "rt_id": "RT24717"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "514 DAVIS DR",
+    "postcode": "L3Y 2P3",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "03/23/2002",
+    "desc": "Retail Bldg - 1 storey; 31,064 sf @ $27",
+    "bldg": "31,064 sf",
+    "acreage": "2.58",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 48 010 010 02900"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "514 DAVIS DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "23 Mar 2002",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 31,064 sf @ $27",
+    "seller_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "buyer_lines": [
+      "Kronenfeld Investments Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT188274",
+  "source_folder": "Cochrane/comm-ind-land/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188274",
+      "source_folder": "Cochrane/comm-ind-land/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/comm-ind-land/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "99 LAFOREST RD"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "01 Nov 2024",
+      "price_text": "$1,732,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Nasco Propane (2024) Ltd     705-264-5213"
+      ],
+      "trade_name": "Northern Allied Supply Company Ltd",
+      "contact_lines": [
+        "100 Laforest Rd",
+        "Timmins, Ontario",
+        "P4P 7C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1188165 Ontario Ltd     705-949-6202"
+      ],
+      "trade_name": "McDougall Energy Inc",
+      "contact_lines": [
+        "Attn: Frank Sarlo",
+        "Station Tower",
+        "421 Bay St, Ste 301",
+        "Sault Ste Marie, Ontario",
+        "P6A 1X3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Tisdale, Part Lot 9",
+      "Except:",
+      "SRO in Inst No C-106858",
+      "SRO in Plan MX-20, Part 7",
+      "SRO in Plan D-61, Unit 1",
+      "SRO in Plan 6R-3176, Parts 1 & 2",
+      "SRO in Plan 6R-2992, Part 1",
+      "SRO in Plan 6R-7357, Part 1",
+      "MRO in Inst No C-458926",
+      "",
+      "PIN: 65400-0091",
+      "",
+      "22.67 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,732,500     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $100,000,000   rate: 25.0% per annum.",
+      "registered: 11/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1882/RT188274/air1.jpg",
+        "/assets/files/RT18/RT1882/RT188274/air2.jpg",
+        "/assets/files/RT18/RT1882/RT188274/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 7",
+      "rt_id": "RT188274"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "99 LAFOREST RD",
+    "postcode": "",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "11/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "22.67",
+    "consid": "1732500",
+    "cash": "1732500",
+    "debt": "",
+    "note": "",
+    "pin": "65400-0091",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "99 LAFOREST RD"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "01 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Nasco Propane (2024) Ltd"
+    ],
+    "buyer_lines": [
+      "1188165 Ontario Ltd"
+    ],
+    "price_text": "$1,732,500"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20642",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20642",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1530 KING ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Feb 2001",
+      "price_text": "$680,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Clement W. Cheng"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "32 Primrose Ave",
+        "Toronto, Ontario",
+        "M8V 1P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1271413 Ontario Inc     905-843-3795"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vinode Ramnauth",
+        "12211 Bramalea Rd",
+        "Caledon East, Ontario",
+        "L0N 1E0"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 8 units @ $85,000",
+      "",
+      "2-1bdrm 4-2bdrm 2-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 731, Part Lots 21 & 22",
+      "As in Inst No CA-136311",
+      "",
+      "N side 45m W of Wilson Park Rd",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "19 04 021 200 05000",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $50,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT206/RT20642/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5552 / 6031",
+      "rt_id": "RT20642"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1530 KING ST W",
+    "postcode": "M6K 1J6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/28/2001",
+    "desc": "Apartment Bldg - 3 storey; 8 units @ $85,000",
+    "bldg": "8 units",
+    "acreage": ".12",
+    "consid": "680000",
+    "cash": "630000",
+    "debt": "50000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 021 200 05000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1530 KING ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Feb 2001",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 8 units @ $85,000",
+    "seller_lines": [
+      "Clement W. Cheng"
+    ],
+    "buyer_lines": [
+      "1271413 Ontario Inc"
+    ],
+    "price_text": "$680,000"
+  }
+}

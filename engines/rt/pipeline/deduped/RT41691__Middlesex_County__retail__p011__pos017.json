@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT41691",
+  "source_folder": "Middlesex_County/retail/p011",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41691",
+      "source_folder": "Middlesex_County/retail/p011",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p011/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "972 HAMILTON RD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "06 May 2005",
+      "price_text": "$1,990,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1609912 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jang Wanho",
+        "880 Grandview Way, Ste 1602",
+        "Toronto, Ontario",
+        "M2N 7B2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 285, Part Lots 22 & 23",
+      "As in Inst No 789738",
+      "",
+      "2.08 acre"
+    ],
+    "arn_text": "39 36 040 420 12200",
+    "consideration_lines": [
+      "cash: $821,112     assumed/vtb debt: $1,168,888"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "518 / 686",
+      "rt_id": "RT41691"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "972 HAMILTON RD",
+    "postcode": "N5W 1V6",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "05/06/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.08",
+    "consid": "1990000",
+    "cash": "821112",
+    "debt": "1168888",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 040 420 12200"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "972 HAMILTON RD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "06 May 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1609912 Ontario Ltd"
+    ],
+    "price_text": "$1,990,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT182311",
+  "source_folder": "Cochrane/all/p019",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182311",
+      "source_folder": "Cochrane/all/p019",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p019/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "1015 WELLINGTON ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Dec 2023",
+      "price_text": "$1,600,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1760486 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1270 Humber Place",
+        "Ottawa, Ontario",
+        "K1B 3W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000580042 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Van Remortel",
+        "1270 Humber Place",
+        "Ottawa, Ontario",
+        "K1B 3W3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 57, Part Lot 24",
+      "As in Inst No N-670504",
+      "",
+      "PIN: 04095-0187",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "06 14 073 701 02700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,600,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "931 / 10920",
+      "rt_id": "RT182311"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "1015 WELLINGTON ST",
+    "postcode": "K1Y 2Y1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/15/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1600000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04095-0187",
+    "rollno": "06 14 073 701 02700"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "1015 WELLINGTON ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Dec 2023",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1760486 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000580042 Ontario Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

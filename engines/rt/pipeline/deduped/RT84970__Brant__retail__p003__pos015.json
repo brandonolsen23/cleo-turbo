@@ -1,0 +1,143 @@
+{
+  "rt_id": "RT84970",
+  "source_folder": "Brant/retail/p003",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT84970",
+      "source_folder": "Brant/retail/p003",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p003/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "410 FAIRVIEW DR"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "01 May 2012",
+      "price_text": "$15,500,000",
+      "note": "50% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Canada Mortgage and Housing Corp",
+        "on behalf of the Canada Mortgage and Housing Corp Pension Fund     613-748-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gary Milani",
+        "700 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1A 0P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "410 Fairview Drive Inc     416-862-6018"
+      ],
+      "trade_name": "Crestpoint Real Estate Investments Ltd",
+      "contact_lines": [
+        "Pres: Kevin Leon",
+        "181 University Ave, Ste 300",
+        "Toronto, Ontario",
+        "M5H 3M7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 12 tenants 203,000 sf @ $76",
+      "",
+      "98% occupied",
+      "Major tenants include: Zellers, Zehrs, Dollarama, TD Canada Trust, Wendy's and Tim Hortons."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan R-23",
+      "Parts 1-11, 13-19, 24, 30-32",
+      "",
+      "PIN: 32186-0123",
+      "",
+      "16.53 acre"
+    ],
+    "arn_text": "29 06 030 014 32500",
+    "consideration_lines": [
+      "cash: $6,416,784     assumed/vtb debt: $9,083,216",
+      "",
+      "chargee: 410 Fairview Drive Inc",
+      "principal: $46,500,000   rate: TD Canada Trust prime plus 5.0% per annum",
+      "registered: 05/01/2012   due: on demand",
+      "",
+      "chargee: Canada Mortgage and Housing Corp on behalf of",
+      "Canada Mortgage and Housing Corp Pension Fund",
+      "principal: $46,500,000   rate: TD Canada Trust prime plus 5.0% per annum",
+      "registered: 05/01/2012   due: on demand",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $20,000,000   rate: National Bank of Canada p|rime plus 5.0% per annum",
+      "registered: 02/22/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065107.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065232.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065314.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065332.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065449.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065501.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065601.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT849/RT84970/0722_065620.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT849/RT84970/air1.jpg",
+        "/assets/files/RT8/RT849/RT84970/air2.jpg",
+        "/assets/files/RT8/RT849/RT84970/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "116 / 195",
+      "rt_id": "RT84970"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "410 FAIRVIEW DR",
+    "postcode": "N3R 7V7",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "05/01/2012",
+    "desc": "Retail Plaza - 1 storey; 12 tenants 203,000 sf @ $76",
+    "bldg": "203,000 sf",
+    "acreage": "16.53",
+    "consid": "15500000",
+    "cash": "6416784",
+    "debt": "9083216",
+    "note": "50% Interest",
+    "pin": "32186-0123",
+    "rollno": "29 06 030 014 32500"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "410 FAIRVIEW DR"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "01 May 2012",
+    "note": "50% Interest",
+    "description": "Retail Plaza - 1 storey; 12 tenants 203,000 sf @ $76",
+    "seller_lines": [
+      "Canada Mortgage and Housing Corp",
+      "on behalf of the Canada Mortgage and Housing Corp Pension Fund"
+    ],
+    "buyer_lines": [
+      "410 Fairview Drive Inc"
+    ],
+    "price_text": "$15,500,000"
+  }
+}

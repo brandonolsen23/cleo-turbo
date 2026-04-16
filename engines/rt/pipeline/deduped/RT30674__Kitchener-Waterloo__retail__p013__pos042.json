@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT30674",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30674",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "385 FREDERICK ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "25 Apr 2003",
+      "price_text": "$12,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Frederick Mall Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Vrankovic",
+        "3025 Lenworth Dr, Unit 1",
+        "Mississauga, Ontario",
+        "L4X 2G3"
+      ]
+    },
+    "description_lines": [
+      "Frederick Mall - 2 storey; 50 units 158,482 sf @ $80"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-9314, Part 1",
+      "GCT, Subdivision of Lot 3, Part Lot 9",
+      "Plan 414, Part Park Lot X",
+      "",
+      "SW corner at Edna St",
+      "",
+      "10.43 acre"
+    ],
+    "arn_text": "30 12 030 002 07500",
+    "consideration_lines": [
+      "cash: $9,925,000     assumed/vtb debt: $2,750,000"
+    ],
+    "broker_lines": [
+      "Property Mgr: 519-742-5885"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT306/RT30674/photo.jpg"
+    },
+    "footer": {
+      "page_position": "643 / 752",
+      "rt_id": "RT30674"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "385 FREDERICK ST",
+    "postcode": "N2H 2P2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/25/2003",
+    "desc": "Frederick Mall - 2 storey; 50 units 158,482 sf @ $80",
+    "bldg": "158,482 sf",
+    "acreage": "10.43",
+    "consid": "12675000",
+    "cash": "9925000",
+    "debt": "2750000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 030 002 07500"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "385 FREDERICK ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "25 Apr 2003",
+    "note": "",
+    "description": "Frederick Mall - 2 storey; 50 units 158,482 sf @ $80",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Frederick Mall Corp"
+    ],
+    "price_text": "$12,675,000"
+  }
+}

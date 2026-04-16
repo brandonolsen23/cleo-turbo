@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT79602",
+  "source_folder": "Lambton/retail/p002",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT79602",
+      "source_folder": "Lambton/retail/p002",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1451 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "30 Jun 2011",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Bean'Stock Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Movreen Collins",
+        "755 Evett St, Unit C",
+        "Sarnia, Ontario",
+        "N7S 5N3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2 units 10,000 sf @ $75",
+      "",
+      "5,000 sf is leased by one tenant, the purchaser will occupy the remaining space"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 16",
+      "As in Inst No L-788683",
+      "",
+      "PIN: 43489-0009",
+      "",
+      "0.80 acre"
+    ],
+    "arn_text": "38 29 300 035 04700",
+    "consideration_lines": [
+      "cash: $125,000     assumed/vtb debt: $625,000",
+      "",
+      "chargee: Margot Janssen",
+      "principal: $625,000   rate: 6.0% per annum",
+      "registered: 06/30/2011   due: 06/30/2016",
+      "",
+      "chargee: Sarnia-Lambton Business Development",
+      "principal: $185,000",
+      "registered: 06/30/2011   due: on demand"
+    ],
+    "broker_lines": [
+      "Magic Realty: Rob Longo & Lou Longo, 519-332-6880"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT796/RT79602/1203_123819.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT796/RT79602/1203_123936.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT796/RT79602/1203_124027.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT796/RT79602/air1.jpg",
+        "/assets/files/RT7/RT796/RT79602/air2.jpg",
+        "/assets/files/RT7/RT796/RT79602/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "72 / 106",
+      "rt_id": "RT79602"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1451 LONDON RD",
+    "postcode": "N7S 1P6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "06/30/2011",
+    "desc": "Retail Bldg - 1 storey; 2 units 10,000 sf @ $75",
+    "bldg": "10,000 sf",
+    "acreage": ".8",
+    "consid": "750000",
+    "cash": "125000",
+    "debt": "625000",
+    "note": "",
+    "pin": "43489-0009",
+    "rollno": "38 29 300 035 04700"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1451 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "30 Jun 2011",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2 units 10,000 sf @ $75",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Bean'Stock Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

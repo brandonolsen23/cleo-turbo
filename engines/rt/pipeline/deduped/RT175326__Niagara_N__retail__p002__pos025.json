@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT175326",
+  "source_folder": "Niagara_N/retail/p002",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175326",
+      "source_folder": "Niagara_N/retail/p002",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p002/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "5005 KING ST"
+      ],
+      "city_region": "Lincoln : Niagara N",
+      "date_text": "03 Feb 2023",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cruse Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "267 Main St W",
+        "Grimsby, Ontario",
+        "L3M 1S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maros Real Estate Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Osman Masood",
+        "5005 King St",
+        "Lincoln, Ontario",
+        "L0R 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3 - Clinton, Part Lots 41 & 42",
+      "As in Inst Nos:",
+      "BM-6026 BM-5849",
+      "Together with Inst No BM-6026",
+      "Except:",
+      "Plan 30R-10295, Part 1",
+      "Plan 30R-401, Part 1",
+      "",
+      "PIN: 46100-0634",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "26 22 010 021 01100",
+    "consideration_lines": [
+      "cash: $510,000     assumed/vtb debt: $1,490,000",
+      "",
+      "chargee: Cruse Enterprises Inc",
+      "principal: $1,490,000   rate: 6.0% per annum.",
+      "registered: 02/03/2023   due: 07/31/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074701.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074707a.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074707b.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074752.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074757.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074912.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074915.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1753/RT175326/0506_074919.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "76 / 307",
+      "rt_id": "RT175326"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "5005 KING ST",
+    "postcode": "L3J 0H9",
+    "municipality": "Lincoln",
+    "region": "Niagara N",
+    "date": "02/03/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "2000000",
+    "cash": "510000",
+    "debt": "1490000",
+    "note": "",
+    "pin": "46100-0634",
+    "rollno": "26 22 010 021 01100"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "5005 KING ST"
+    ],
+    "city_region": "Lincoln : Niagara N",
+    "date_text": "03 Feb 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Cruse Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "Maros Real Estate Holdings Corp"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

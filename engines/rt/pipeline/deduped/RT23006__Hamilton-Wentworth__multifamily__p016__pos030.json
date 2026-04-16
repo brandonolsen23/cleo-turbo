@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT23006",
+  "source_folder": "Hamilton-Wentworth/multifamily/p016",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23006",
+      "source_folder": "Hamilton-Wentworth/multifamily/p016",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/multifamily/p016/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "1868 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "01 Oct 2001",
+      "price_text": "$4,400,000",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ruco Investments Ltd",
+        "Fixed Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Bernard Rubinstein",
+        "242 Main St E",
+        "Hamilton, Ontario",
+        "L8N 1H5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Irwin Lyons Holding Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Irwin Lyons",
+        "105 Main st E, Ste 1001",
+        "Hamilton, Ontario",
+        "L8N 1G6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 10 storey; 132 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 53",
+      "As in Inst Nos VM-213630 & AB-732240",
+      "",
+      "W side 80m S of Whitney Ave",
+      "",
+      "2.20 acre"
+    ],
+    "arn_text": "25 18 010 014 00040",
+    "consideration_lines": [
+      "cash: $2,667,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT230/RT23006/photo.jpg"
+    },
+    "footer": {
+      "page_position": "781 / 875",
+      "rt_id": "RT23006"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "1868 MAIN ST W",
+    "postcode": "L8S 1J1",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "10/01/2001",
+    "desc": "Apartment Bldg - 10 storey; 132 units",
+    "bldg": "132 units",
+    "acreage": "2.2",
+    "consid": "4400000",
+    "cash": "2667500",
+    "debt": "",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "25 18 010 014 00040"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "1868 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "01 Oct 2001",
+    "note": "Partial Interest",
+    "description": "Apartment Bldg - 10 storey; 132 units",
+    "seller_lines": [
+      "Ruco Investments Ltd",
+      "Fixed Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Irwin Lyons Holding Corp"
+    ],
+    "price_text": "$4,400,000"
+  }
+}

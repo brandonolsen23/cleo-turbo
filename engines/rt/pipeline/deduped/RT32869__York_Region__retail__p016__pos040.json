@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT32869",
+  "source_folder": "York_Region/retail/p016",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32869",
+      "source_folder": "York_Region/retail/p016",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "7381 KENNEDY RD"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "01 Dec 2003",
+      "price_text": "$3,865,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kennison Properties Inc     905-946-1444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: David De Sylva",
+        "1151 Denison St, Unit 18",
+        "Markham, Ontario",
+        "L3R 3Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "ACN Investments Ltd     905-887-2173"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Fusco",
+        "6 Allen Manor",
+        "Markham, Ontario",
+        "L6C 1B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-14250, Parts 37 & 38",
+      "Except:",
+      "Plan 65R-8267, Parts 10 & 11",
+      "",
+      "1.69 acre"
+    ],
+    "arn_text": "19 36 020 126 27450",
+    "consideration_lines": [
+      "cash: $3,865,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32869/photo.jpg"
+    },
+    "footer": {
+      "page_position": "791 / 984",
+      "rt_id": "RT32869"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "7381 KENNEDY RD",
+    "postcode": "L3R 5B5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "12/01/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.69",
+    "consid": "3865000",
+    "cash": "3865000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 126 27450"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "7381 KENNEDY RD"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "01 Dec 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kennison Properties Inc"
+    ],
+    "buyer_lines": [
+      "ACN Investments Ltd"
+    ],
+    "price_text": "$3,865,000"
+  }
+}

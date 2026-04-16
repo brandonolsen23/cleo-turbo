@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT168651",
+  "source_folder": "Kitchener-Waterloo/retail/p004",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT168651",
+      "source_folder": "Kitchener-Waterloo/retail/p004",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p004/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "2315 QUEEN ST"
+      ],
+      "city_region": "Wilmot : Kitchener-Waterloo",
+      "date_text": "27 Apr 2022",
+      "price_text": "$3,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Meadow Acres Garden Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "360 Erbsville Rd, Ste 30",
+        "Waterloo, Ontario",
+        "N2T 2W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KJW Holdings Inc     519-804-4300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jonathan Weiler",
+        "43 Manitou Dr",
+        "Kitchener, Ontario",
+        "N2C 1K9"
+      ]
+    },
+    "description_lines": [
+      "Garden Centre on about 19.3 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc S of Bleam's Rd, Part Lot 6",
+      "Plan 58R-4044, Parts 2 & 3",
+      "",
+      "PIN: 22186-0003",
+      "",
+      "19.34 acre"
+    ],
+    "arn_text": "30 18 030 004 01250",
+    "consideration_lines": [
+      "cash: $3,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $3,000,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 04/27/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071040.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071152.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071241.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071329.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071339.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071357.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1686/RT168651/0618_071406.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT16/RT1686/RT168651/air1.jpg",
+        "/assets/files/RT16/RT1686/RT168651/air2.jpg",
+        "/assets/files/RT16/RT1686/RT168651/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "168 / 752",
+      "rt_id": "RT168651"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "2315 QUEEN ST",
+    "postcode": "N0B 2H0",
+    "municipality": "Wilmot",
+    "region": "Kitchener-Waterloo",
+    "date": "04/27/2022",
+    "desc": "Garden Centre on about 19.3 Ac",
+    "bldg": "",
+    "acreage": "19.34",
+    "consid": "3000000",
+    "cash": "3000000",
+    "debt": "",
+    "note": "",
+    "pin": "22186-0003",
+    "rollno": "30 18 030 004 01250"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "2315 QUEEN ST"
+    ],
+    "city_region": "Wilmot : Kitchener-Waterloo",
+    "date_text": "27 Apr 2022",
+    "note": "",
+    "description": "Garden Centre on about 19.3 Ac",
+    "seller_lines": [
+      "Meadow Acres Garden Centre Inc"
+    ],
+    "buyer_lines": [
+      "KJW Holdings Inc"
+    ],
+    "price_text": "$3,000,000"
+  }
+}

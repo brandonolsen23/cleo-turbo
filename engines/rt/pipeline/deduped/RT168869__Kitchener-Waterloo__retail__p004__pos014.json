@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT168869",
+  "source_folder": "Kitchener-Waterloo/retail/p004",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT168869",
+      "source_folder": "Kitchener-Waterloo/retail/p004",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p004/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "2191 KINGSWAY DR"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "06 May 2022",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Z-Modular Kingsway Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "227 W Monroe St, 2nd Flr",
+        "Chicago, IL",
+        "USA - 60606-5082"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000175752 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dung Phu Do",
+        "3 Sussex Dr",
+        "Etobicoke, Ontario",
+        "M8V 1W3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 254, Lots 85-87",
+      "Except:",
+      "Inst No 313333",
+      "",
+      "PIN: 22587-0092",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "30 12 040 002 04000",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1688/RT168869/0618_105343.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1688/RT168869/0618_105408.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1688/RT168869/0618_105436.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1688/RT168869/0618_105532.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1688/RT168869/0618_105554.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "165 / 752",
+      "rt_id": "RT168869"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "2191 KINGSWAY DR",
+    "postcode": "N2C 1A2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "05/06/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "22587-0092",
+    "rollno": "30 12 040 002 04000"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "2191 KINGSWAY DR"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "06 May 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Z-Modular Kingsway Inc"
+    ],
+    "buyer_lines": [
+      "1000175752 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT173124",
+  "source_folder": "Halton_Region/retail/p003",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173124",
+      "source_folder": "Halton_Region/retail/p003",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p003/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "92 DUNN ST"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "31 Oct 2022",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Manfred Brenner Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "125 Tekiah Rd",
+        "Clarksburg, Ontario",
+        "N0H 1J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000104951 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Antonio Gentilucci",
+        "1900 The Collegeway, Ste 1706",
+        "Mississauga, Ontario",
+        "L5L 5Y8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "/assets/files/RT17/RT1731/RT173124/mi.pdf",
+    "site_lines": [
+      "Plan 1, Block 11",
+      "Part Lot C",
+      "As in Inst No 818268",
+      "",
+      "PIN: 24779-0036",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "24 01 030 020 02600",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,137,500   rate: Prime plus 5.0% per annum.",
+      "registered: 10/31/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173124/1126_075709.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173124/1126_075713.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173124/1126_075811.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173124/1126_075813.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1731/RT173124/1126_075818.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "137 / 613",
+      "rt_id": "RT173124"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "92 DUNN ST",
+    "postcode": "L6J 3C7",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "10/31/2022",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "24779-0036",
+    "rollno": "24 01 030 020 02600"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "92 DUNN ST"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "31 Oct 2022",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Manfred Brenner Inc"
+    ],
+    "buyer_lines": [
+      "1000104951 Ontario Ltd"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT182966",
+  "source_folder": "Brant/retail/p001",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182966",
+      "source_folder": "Brant/retail/p001",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 MARKET ST S"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "01 Feb 2024",
+      "price_text": "$1,875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1356692 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "16 Davern Rd",
+        "Brantford, Ontario",
+        "N3T 1R5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Canadian Properties Group",
+        "Market Street Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Matthew Rossetto",
+        "2235 Sheppard Ave E",
+        "Suite 1202, Atria II",
+        "Toronto, Ontario",
+        "M2J 5B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-7209, Part 1",
+      "",
+      "PIN: 32091-0003",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "29 06 050 001 00100",
+    "consideration_lines": [
+      "cash: $1,875,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,560,000   rate: Higher of 12.0% or CIBC prime plus 4.80% per annum. Increasing upon maturity to the higher of 18.0% or CIBC prime plus 10.80% per annum.",
+      "registered: 02/01/2024   due: 02/08/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182966/0420_104919.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182966/0420_104948.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182966/0420_105029.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182966/0420_105104.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182966/0420_105145.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "40 / 195",
+      "rt_id": "RT182966"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "22 MARKET ST S",
+    "postcode": "N3S 2E3",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "02/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "1875000",
+    "cash": "1875000",
+    "debt": "",
+    "note": "",
+    "pin": "32091-0003",
+    "rollno": "29 06 050 001 00100"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "22 MARKET ST S"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "01 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1356692 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Canadian Properties Group",
+      "Market Street Inc"
+    ],
+    "price_text": "$1,875,000"
+  }
+}

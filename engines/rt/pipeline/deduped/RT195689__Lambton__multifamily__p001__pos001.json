@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT195689",
+  "source_folder": "Lambton/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195689",
+      "source_folder": "Lambton/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "848 EXMOUTH ST",
+        "852 EXMOUTH ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "28 Nov 2025",
+      "price_text": "$4,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "DB Hull Construction Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "852 Exmouth St, Unit 13",
+        "Sarnia, Ontario",
+        "N7J 5R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001352652 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rex Brondial",
+        "60 Bristol Rd E, Unit 8",
+        "Mississauga, Ontario",
+        "L4Z 3K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 20",
+      "As in Inst No L-426543",
+      "",
+      "PIN: 43192-0060",
+      "",
+      "2.35 acre"
+    ],
+    "arn_text": "38 29 300 019 04600",
+    "consideration_lines": [
+      "cash: $4,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $4,275,000   rate: Prime plus 1.75%, with a floor of 6.20% per annum.",
+      "registered: 11/28/2025   due: 12/05/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 124",
+      "rt_id": "RT195689"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "848 EXMOUTH ST, 852 EXMOUTH ST",
+    "postcode": "N7T 5R2",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "11/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.35",
+    "consid": "4500000",
+    "cash": "4500000",
+    "debt": "",
+    "note": "",
+    "pin": "43192-0060",
+    "rollno": "38 29 300 019 04600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "848 EXMOUTH ST",
+      "852 EXMOUTH ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "28 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "DB Hull Construction Ltd"
+    ],
+    "buyer_lines": [
+      "1001352652 Ontario Ltd"
+    ],
+    "price_text": "$4,500,000"
+  }
+}

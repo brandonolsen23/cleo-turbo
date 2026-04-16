@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT53468",
+  "source_folder": "Peel_Region/retail/p015",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT53468",
+      "source_folder": "Peel_Region/retail/p015",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p015/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "2260 BOVAIRD DR E",
+        "UNIT 106"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "22 Jan 2007",
+      "price_text": "$899,100",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2051029 Ontario Inc     905-454-2402"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Gurdev Virk",
+        "Rajneesh K. Sharda",
+        "Barrister & Solicitor",
+        "14 George St N, Ste 201",
+        "Brampton, Ontario",
+        "L6X 1R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2119431 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gurjeet Rangi",
+        "2260 Bovaird Dr E, Unit 106",
+        "Brampton, Ontario",
+        "L6R 1Y7"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 743",
+      "Level 1, Unit 15"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $899,100     assumed/vtb debt: $0",
+      "",
+      "chargee: Laurentian Bank of Canada",
+      "principal: $600,000   rate: 6.05% per annum",
+      "registered: 01/22/2007   due: 02/01/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "723 / 1087",
+      "rt_id": "RT53468"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "2260 BOVAIRD DR E, UNIT 106",
+    "postcode": "",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "01/22/2007",
+    "desc": "Retail Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "899100",
+    "cash": "899100",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "2260 BOVAIRD DR E",
+      "UNIT 106"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "22 Jan 2007",
+    "note": "",
+    "description": "Retail Condo",
+    "seller_lines": [
+      "2051029 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2119431 Ontario Inc"
+    ],
+    "price_text": "$899,100"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT50039",
+  "source_folder": "Metro_Toronto/multifamily/p080",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50039",
+      "source_folder": "Metro_Toronto/multifamily/p080",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p080/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "120 TWENTY-SEVENTH ST",
+        "120 27TH ST"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "18 Jul 2006",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Rahama Investments Inc     416-947-9392"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Timothy Moffitt",
+        "TM Moffitt Management Inc",
+        "390 Bay St, Ste 720",
+        "Toronto, Ontario",
+        "M5H 2Y2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 7 units @ $117,857"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1545, Part Lot 90",
+      "As in Inst No TB-500327",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 19 053 090 02100",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT500/RT50039/0730_150229.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT500/RT50039/0730_150233.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT500/RT50039/0730_150255.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3961 / 6031",
+      "rt_id": "RT50039"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "120 TWENTY-SEVENTH ST, 120 27TH ST",
+    "postcode": "M8W 2X7",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "07/18/2006",
+    "desc": "Apartment Bldg - 3.5 storey; 7 units @ $117,857",
+    "bldg": "7 units",
+    "acreage": ".1",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 053 090 02100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "120 TWENTY-SEVENTH ST",
+      "120 27TH ST"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "18 Jul 2006",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 7 units @ $117,857",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Rahama Investments Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

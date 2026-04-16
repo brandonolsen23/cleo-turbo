@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT175944",
+  "source_folder": "York_Region/retail/p005",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175944",
+      "source_folder": "York_Region/retail/p005",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "2104 HIGHWAY 7",
+        "2104 HWY 7",
+        "UNIT 11"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "28 Feb 2023",
+      "price_text": "$1,870,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Husky Invest Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "226 Rothbury Rd",
+        "Richmond Hill, Ontario",
+        "L4S 2N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2104 Hwy 7 Venture Inc     416-745-6686"
+      ],
+      "trade_name": "Your Home Developments",
+      "contact_lines": [
+        "Attn: Stewart Turk",
+        "4965 Steeles Ave W",
+        "North York, Ontario",
+        "M9L 1R4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 549",
+      "Level 1, Unit 11",
+      "",
+      "PIN: 29082-0011"
+    ],
+    "arn_text": "19 28 000 200 97055",
+    "consideration_lines": [
+      "cash: $1,870,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175944/0311_165649.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175944/0311_165703.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175944/0311_165743.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175944/0311_165838.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175944/0311_165845.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1759/RT175944/0311_165857.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "236 / 984",
+      "rt_id": "RT175944"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "2104 HIGHWAY 7, 2104 HWY 7, UNIT 11",
+    "postcode": "L4K 2S9",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "02/28/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1870000",
+    "cash": "1870000",
+    "debt": "",
+    "note": "",
+    "pin": "29082-0011",
+    "rollno": "19 28 000 200 97055"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "2104 HIGHWAY 7",
+      "2104 HWY 7",
+      "UNIT 11"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "28 Feb 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Husky Invest Inc"
+    ],
+    "buyer_lines": [
+      "2104 Hwy 7 Venture Inc"
+    ],
+    "price_text": "$1,870,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT190897",
+  "source_folder": "Metro_Toronto/retail/p006",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190897",
+      "source_folder": "Metro_Toronto/retail/p006",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p006/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "1415 KENNEDY RD",
+        "UNIT 1"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "10 Mar 2025",
+      "price_text": "$785,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "7272553 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "231 Hillsview Dr",
+        "Richmond Hill, Ontario",
+        "L4C 4L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "C Desai Investment Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chandni Desai",
+        "60 Absolute Ave, Unit 5503",
+        "Mississauga, Ontario",
+        "L4Z 0A9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2327",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 76327-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $785,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $785,000   rate: Prime minus 0.25% per annum.",
+      "registered: 03/10/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135536.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135554.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135555.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135556.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135605.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135606.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190897/0323_135619.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "286 / 4952",
+      "rt_id": "RT190897"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "1415 KENNEDY RD, UNIT 1",
+    "postcode": "M1P 2L6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "03/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "785000",
+    "cash": "785000",
+    "debt": "",
+    "note": "",
+    "pin": "76327-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "1415 KENNEDY RD",
+      "UNIT 1"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "10 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "7272553 Canada Inc"
+    ],
+    "buyer_lines": [
+      "C Desai Investment Inc"
+    ],
+    "price_text": "$785,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT73169",
+  "source_folder": "Cochrane/multifamily/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73169",
+      "source_folder": "Cochrane/multifamily/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/multifamily/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "820 SUZANNE ST"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "30 Jun 2010",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Skyline Real Estate Holdings Inc     519-826-0439"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Castellan",
+        "70 Fountain St E",
+        "Guelph, Ontario",
+        "N1H 3N6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2 storey; 22 units @ $40,909",
+      "",
+      "1-bach 20-1bdrm 1-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6R-3826, Parts 2 & 4",
+      "",
+      "PIN: 65424-0093",
+      "",
+      "0.94 acre"
+    ],
+    "arn_text": "56 27 050 054 17401",
+    "consideration_lines": [
+      "cash: $190,556     assumed/vtb debt: $709,444"
+    ],
+    "broker_lines": [
+      "Ed Lowe Real Estate: Bruce Brown, 705-729-3871"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 23",
+      "rt_id": "RT73169"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "820 SUZANNE ST",
+    "postcode": "P4N 8C4",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "06/30/2010",
+    "desc": "Apartment Bldg - 2 storey; 22 units @ $40,909",
+    "bldg": "22 units",
+    "acreage": ".94",
+    "consid": "900000",
+    "cash": "190556",
+    "debt": "709444",
+    "note": "",
+    "pin": "65424-0093",
+    "rollno": "56 27 050 054 17401"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "820 SUZANNE ST"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "30 Jun 2010",
+    "note": "",
+    "description": "Apartment Bldg - 2 storey; 22 units @ $40,909",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Skyline Real Estate Holdings Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

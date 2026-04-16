@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT73363",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73363",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "249 JAMES ST"
+      ],
+      "city_region": "Delhi : Norfolk",
+      "date_text": "01 Jun 2010",
+      "price_text": "$651,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Oksal Ltd     519-582-3300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nancy Lasko",
+        "295 Adams Ave",
+        "Delhi, Ontario",
+        "N4B 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JY Holdings Ltd     416-754-8686"
+      ],
+      "trade_name": "Thermodyne Engineering Ltd",
+      "contact_lines": [
+        "Attn: Jospeh Yeremian",
+        "421 Nugget Ave, Unit 3",
+        "Toronto, Ontario",
+        "M1S 4L8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 tenants 9,000 sf @ $72",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 189, Block 30",
+      "Lots 2-4",
+      "",
+      "PIN: 50172-0140",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "33 10 492 004 05000",
+    "consideration_lines": [
+      "cash: $651,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT733/RT73363/1006_095514.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT733/RT73363/1006_095631.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT733/RT73363/1006_095744.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT733/RT73363/1006_095824.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT733/RT73363/air1.jpg",
+        "/assets/files/RT7/RT733/RT73363/air2.jpg",
+        "/assets/files/RT7/RT733/RT73363/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 45",
+      "rt_id": "RT73363"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "249 JAMES ST",
+    "postcode": "N4B 2B2",
+    "municipality": "Delhi",
+    "region": "Norfolk",
+    "date": "06/01/2010",
+    "desc": "Retail Plaza - 1 storey; 4 tenants 9,000 sf @ $72",
+    "bldg": "9,000 sf",
+    "acreage": ".6",
+    "consid": "651000",
+    "cash": "651000",
+    "debt": "",
+    "note": "",
+    "pin": "50172-0140",
+    "rollno": "33 10 492 004 05000"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "249 JAMES ST"
+    ],
+    "city_region": "Delhi : Norfolk",
+    "date_text": "01 Jun 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 tenants 9,000 sf @ $72",
+    "seller_lines": [
+      "Oksal Ltd"
+    ],
+    "buyer_lines": [
+      "JY Holdings Ltd"
+    ],
+    "price_text": "$651,000"
+  }
+}

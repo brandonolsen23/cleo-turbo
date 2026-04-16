@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23239",
+  "source_folder": "Metro_Toronto/retail/p088",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23239",
+      "source_folder": "Metro_Toronto/retail/p088",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p088/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "4711 & 4723 STEELES AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "22 Oct 2001",
+      "price_text": "$4,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Alpha-Star Corp     905-415-8876"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Riad Yassin",
+        "150 Consumers Rd, Ste 307",
+        "Toronto, Ontario",
+        "M2J 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Nova-Depot Corp",
+        "Royal-Nova Corp     416-925-2173"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Brian Price",
+        "Price International Inc",
+        "22 St Joseph St",
+        "Toronto, Ontario",
+        "M4Y 1J9"
+      ]
+    },
+    "description_lines": [
+      "2 New Retail Bldgs"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-19332, Parts 4, 5, 7-9",
+      "",
+      "2.94 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT232/RT23239/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4361 / 4952",
+      "rt_id": "RT23239"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "4711 & 4723 STEELES AVE E",
+    "postcode": "M1V 4S5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "10/22/2001",
+    "desc": "2 New Retail Bldgs",
+    "bldg": "",
+    "acreage": "2.94",
+    "consid": "4800000",
+    "cash": "4800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "4711 & 4723 STEELES AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "22 Oct 2001",
+    "note": "",
+    "description": "2 New Retail Bldgs",
+    "seller_lines": [
+      "Alpha-Star Corp"
+    ],
+    "buyer_lines": [
+      "Nova-Depot Corp",
+      "Royal-Nova Corp"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

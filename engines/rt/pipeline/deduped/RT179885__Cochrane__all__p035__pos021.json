@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT179885",
+  "source_folder": "Cochrane/all/p035",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179885",
+      "source_folder": "Cochrane/all/p035",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p035/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "365 CRESTVIEW RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "27 Oct 2021",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "FRP Investment Group Inc     613-226-2221"
+      ],
+      "trade_name": "Serco Realty Group",
+      "contact_lines": [
+        "Attn: Francesco Porcari",
+        "9 Capella Ct, Ste 200",
+        "Ottawa, Ontario",
+        "K2E 8A7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 626,",
+      "Lot 31 & Part Lot 32",
+      "As in Inst No NS-90075",
+      "",
+      "PIN: 04199-0111",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "06 14 105 701 47900",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,200,000   rate: Prime plus 10.0% per annum.",
+      "registered: 10/27/2021   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1722 / 10920",
+      "rt_id": "RT179885"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "365 CRESTVIEW RD",
+    "postcode": "K1H 5G7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/27/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "04199-0111",
+    "rollno": "06 14 105 701 47900"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "365 CRESTVIEW RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "27 Oct 2021",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "FRP Investment Group Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

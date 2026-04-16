@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT170570",
+  "source_folder": "Metro_Toronto/retail/p020",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170570",
+      "source_folder": "Metro_Toronto/retail/p020",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p020/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "3016 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "18 Jul 2022",
+      "price_text": "$2,475,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Localpharm Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3016 Dundas St W",
+        "Toronto, Ontario",
+        "M6P 1Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Junction Vesuvio Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Justin Levine",
+        "7B Pleasant Blvd, Ste 966",
+        "Toronto, Ontario",
+        "M4T 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 603, Part Lot 62",
+      "As in Inst No CA-325083",
+      "",
+      "PIN: 10518-0700",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 014 090 05900",
+    "consideration_lines": [
+      "cash: $2,475,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Firm Capital Mortgage Fund Inc",
+      "principal: $5,050,000   rate: Greater of 7.0% or TD prime plus 4.55% per annum.",
+      "registered: 07/18/2022   due: 04/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170570/0801_080350.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170570/0801_080355.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170570/0801_080409.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170570/0801_080414.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1705/RT170570/0801_080427.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "965 / 4952",
+      "rt_id": "RT170570"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "3016 DUNDAS ST W",
+    "postcode": "M6P 1Z3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/18/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "2475000",
+    "cash": "2475000",
+    "debt": "",
+    "note": "",
+    "pin": "10518-0700",
+    "rollno": "19 04 014 090 05900"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "3016 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "18 Jul 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Localpharm Ltd"
+    ],
+    "buyer_lines": [
+      "Junction Vesuvio Inc"
+    ],
+    "price_text": "$2,475,000"
+  }
+}

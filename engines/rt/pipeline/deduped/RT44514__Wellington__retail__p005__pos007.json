@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT44514",
+  "source_folder": "Wellington/retail/p005",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44514",
+      "source_folder": "Wellington/retail/p005",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "328 - 386 SPEEDVALE AVE E"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "30 Sep 2005",
+      "price_text": "$17,000,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Speedvale Developments Ltd     416-866-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joshua Silber",
+        "Counsel Corp",
+        "40 King St W, Ste 3200",
+        "Toronto, Ontario",
+        "M5H 3Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "HREIT Holdings 27 Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arni Thorsteinson",
+        "2600 Seven Evergreen Place",
+        "Winnipeg, Manitoba",
+        "R3L 2T3"
+      ]
+    },
+    "description_lines": [
+      "Speedvale Centre - 1 storey; 116,868 sf @ $145"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "BFC,  Division F, Part Lot B",
+      "As in Inst No RO-810875",
+      "",
+      "9.62 acre"
+    ],
+    "arn_text": "23 08 030 015 12900",
+    "consideration_lines": [
+      "cash: $12,488,686     assumed/vtb debt: $4,511,314"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "208 / 269",
+      "rt_id": "RT44514"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "328 - 386 SPEEDVALE AVE E",
+    "postcode": "N1E 1N5",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "09/30/2005",
+    "desc": "Speedvale Centre - 1 storey; 116,868 sf @ $145",
+    "bldg": "116,868 sf",
+    "acreage": "9.62",
+    "consid": "17000000",
+    "cash": "12488686",
+    "debt": "4511314",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "23 08 030 015 12900"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "328 - 386 SPEEDVALE AVE E"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "30 Sep 2005",
+    "note": "Portfolio Sale",
+    "description": "Speedvale Centre - 1 storey; 116,868 sf @ $145",
+    "seller_lines": [
+      "Speedvale Developments Ltd"
+    ],
+    "buyer_lines": [
+      "HREIT Holdings 27 Corp"
+    ],
+    "price_text": "$17,000,000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT33642",
+  "source_folder": "Metro_Toronto/multifamily/p095",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33642",
+      "source_folder": "Metro_Toronto/multifamily/p095",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p095/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "49 ORIOLE PKWY"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 Jan 2004",
+      "price_text": "$1,110,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1598633 Ontario Inc     905-403-9541"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frederic Gregoris",
+        "1714 Medallion Ct",
+        "Mississauga, Ontario",
+        "L5J 4G2"
+      ]
+    },
+    "description_lines": [
+      "FivePlex - 2.5 storey; 6 units @ $185,000",
+      "",
+      "5-1bdrm (inclds bsmt unit) 1-2bdr"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-452, Lot 71, E/S Oriole Pkwy",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 111 430 00400",
+    "consideration_lines": [
+      "cash: $1,110,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT336/RT33642/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4742 / 6031",
+      "rt_id": "RT33642"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "49 ORIOLE PKWY",
+    "postcode": "M4V 2E2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/21/2004",
+    "desc": "FivePlex - 2.5 storey; 6 units @ $185,000",
+    "bldg": "6 units",
+    "acreage": ".1",
+    "consid": "1110000",
+    "cash": "1110000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 111 430 00400"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "49 ORIOLE PKWY"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 Jan 2004",
+    "note": "",
+    "description": "FivePlex - 2.5 storey; 6 units @ $185,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1598633 Ontario Inc"
+    ],
+    "price_text": "$1,110,000"
+  }
+}

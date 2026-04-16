@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT36370",
+  "source_folder": "Metro_Toronto/retail/p076",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36370",
+      "source_folder": "Metro_Toronto/retail/p076",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p076/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "3140 - 3170 DUFFERIN ST",
+        "60 APEX RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "07 Jul 2004",
+      "price_text": "$14,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2025610 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eric Inspektor",
+        "3150 Dufferin St, Unit 2",
+        "Toronto, Ontario",
+        "M6A 2T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2046920 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Victor Jdanovitch",
+        "27 Dunvegan Rd",
+        "Toronto, Ontario",
+        "M4V 2P5"
+      ]
+    },
+    "description_lines": [
+      "Dufferin Plaza - 1 storey; 7 units 75,519 sf @ $192"
+    ],
+    "more_info_url": "/assets/files/RT3/RT363/RT36370/mi.pdf",
+    "site_lines": [
+      "Conc 3 - WYS, Part Lot 6",
+      "Plan 66R-20191, Parts 1-13",
+      "",
+      "3.80 acre"
+    ],
+    "arn_text": "19 08 042 310 01400",
+    "consideration_lines": [
+      "cash: $14,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Avison Young: Kelly Avison, 416-673-4030"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT363/RT36370/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3792 / 4952",
+      "rt_id": "RT36370"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "3140 - 3170 DUFFERIN ST, 60 APEX RD",
+    "postcode": "M6A 2T1",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "07/07/2004",
+    "desc": "Dufferin Plaza - 1 storey; 7 units 75,519 sf @ $192",
+    "bldg": "75,519 sf",
+    "acreage": "3.8",
+    "consid": "14500000",
+    "cash": "14500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 042 310 01400"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "3140 - 3170 DUFFERIN ST",
+      "60 APEX RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "07 Jul 2004",
+    "note": "",
+    "description": "Dufferin Plaza - 1 storey; 7 units 75,519 sf @ $192",
+    "seller_lines": [
+      "2025610 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2046920 Ontario Inc"
+    ],
+    "price_text": "$14,500,000"
+  }
+}

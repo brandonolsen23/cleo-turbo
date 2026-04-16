@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT105731",
+  "source_folder": "Ottawa-Carleton/retail/p010",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105731",
+      "source_folder": "Ottawa-Carleton/retail/p010",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p010/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1556 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Jan 2015",
+      "price_text": "$3,031,237",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 4,835 sf @ $627",
+      "",
+      "Leased back to the vendor (BMO)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 409, Lots 21-24 & 26",
+      "Plan 5R-2727, Parts 1 & 2",
+      "Except:",
+      "Plan 5R-275, Part 12",
+      "",
+      "PIN: 04147-0209",
+      "",
+      "NW corner Bank St and Cecil Ave",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "06 14 105 903 03800",
+    "consideration_lines": [
+      "cash: $3,031,237     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105731/0411_112849.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105731/0411_112905.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105731/0411_112910.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105731/0411_113033.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105731/0411_113055.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "451 / 1141",
+      "rt_id": "RT105731"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1556 BANK ST",
+    "postcode": "K1H 7Z4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 4,835 sf @ $627",
+    "bldg": "4,835 sf",
+    "acreage": ".66",
+    "consid": "3031237",
+    "cash": "3031237",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04147-0209",
+    "rollno": "06 14 105 903 03800"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1556 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 4,835 sf @ $627",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$3,031,237"
+  }
+}

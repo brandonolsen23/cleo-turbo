@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT45400",
+  "source_folder": "Metro_Toronto/multifamily/p086",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45400",
+      "source_folder": "Metro_Toronto/multifamily/p086",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p086/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "34 WINEVA AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "14 Oct 2005",
+      "price_text": "$770,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-3917, Part 7",
+      "Plan 66R-15006, Parts 4 & 5",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 091 090 07450",
+    "consideration_lines": [
+      "cash: $770,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $577,500   rate: 4.545% per annum",
+      "registered: 10/14/2005   due: 10/14/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4263 / 6031",
+      "rt_id": "RT45400"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "34 WINEVA AVE",
+    "postcode": "M4E 2S9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/14/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "770000",
+    "cash": "770000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 091 090 07450"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "34 WINEVA AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "14 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$770,000"
+  }
+}

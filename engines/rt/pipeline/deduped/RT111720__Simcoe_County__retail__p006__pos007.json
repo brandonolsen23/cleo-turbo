@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT111720",
+  "source_folder": "Simcoe_County/retail/p006",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT111720",
+      "source_folder": "Simcoe_County/retail/p006",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p006/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "4 MASSEY ST"
+      ],
+      "city_region": "Essa : Simcoe County",
+      "date_text": "07 Oct 2015",
+      "price_text": "$890,100",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Zumpetta Investments Inc     905-751-0965"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Luigi Zumpetta",
+        "30 Baywell Cres",
+        "Aurora, Ontario",
+        "L4G 7M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2477646 Ontario Inc     416-503-0255"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Monica Lee",
+        "17 Lothian Ave",
+        "Toronto, Ontario",
+        "M8Z 4J9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 29",
+      "Plan 51R-13372, Part 1",
+      "Plan 51R-16552, Parts 73-75",
+      "",
+      "PIN: 58108-0152",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "43 21 010 010 36701",
+    "consideration_lines": [
+      "cash: $890,100     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $671,325   rate: Prime plus 5.0% per annum.",
+      "registered: 10/07/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111720/1114_092012.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111720/1114_092018.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111720/1114_092113.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1117/RT111720/1114_092115.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "258 / 712",
+      "rt_id": "RT111720"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "4 MASSEY ST",
+    "postcode": "L0M 1B0",
+    "municipality": "Essa",
+    "region": "Simcoe County",
+    "date": "10/07/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "890100",
+    "cash": "890100",
+    "debt": "",
+    "note": "",
+    "pin": "58108-0152",
+    "rollno": "43 21 010 010 36701"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "4 MASSEY ST"
+    ],
+    "city_region": "Essa : Simcoe County",
+    "date_text": "07 Oct 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Zumpetta Investments Inc"
+    ],
+    "buyer_lines": [
+      "2477646 Ontario Inc"
+    ],
+    "price_text": "$890,100"
+  }
+}

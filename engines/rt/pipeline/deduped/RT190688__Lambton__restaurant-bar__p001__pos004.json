@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT190688",
+  "source_folder": "Lambton/restaurant-bar/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190688",
+      "source_folder": "Lambton/restaurant-bar/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/restaurant-bar/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1289 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "06 Mar 2025",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2354454 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Falco Group",
+        "4 Abacus Rd, Unit 3",
+        "Brampton, Ontario",
+        "L6T 5J6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001145341 Ontario Inc     519-337-1955"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Nassiokas",
+        "441 Chrisvale Blvd",
+        "Sarnia, Ontario",
+        "N7S 0E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Sarnia, Part Lot 17",
+      "Plan 25R-8922, Parts 9, 14-25 & 59",
+      "",
+      "PIN: 43490-0295",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $1,775,000",
+      "",
+      "chargee: 2354454 Ontario Inc",
+      "principal: $1,775,000   rate: 5.0% per annum.",
+      "registered: 03/06/2025   due: 03/06/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 16",
+      "rt_id": "RT190688"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1289 LONDON RD",
+    "postcode": "N7S 1P6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "03/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "2300000",
+    "cash": "525000",
+    "debt": "1775000",
+    "note": "",
+    "pin": "43490-0295",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1289 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "06 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2354454 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001145341 Ontario Inc"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

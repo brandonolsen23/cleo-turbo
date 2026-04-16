@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23095",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23095",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "215 FAIRWAY RD S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "15 Oct 2001",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "OD International Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Gayle Aertker",
+        "Office Depot Inc",
+        "2200 Old Germantown Rd",
+        "Delray Beach, Florida",
+        "33445 - USA"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Best Buy Concepts Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darren Jackson",
+        "7075 Flying Cloud Dr",
+        "Eden Prairie, MN",
+        "USA - 55344"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-9921, Parts 5-8",
+      "",
+      "S side 400m E of Wilson Ave",
+      "",
+      "4.70 acre"
+    ],
+    "arn_text": "30 12 040 028 03600",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT230/RT23095/photo.jpg"
+    },
+    "footer": {
+      "page_position": "681 / 752",
+      "rt_id": "RT23095"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "215 FAIRWAY RD S",
+    "postcode": "N2C 1X2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "10/15/2001",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "4.7",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 028 03600"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "215 FAIRWAY RD S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "15 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "OD International Inc"
+    ],
+    "buyer_lines": [
+      "Best Buy Concepts Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

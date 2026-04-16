@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT180210",
+  "source_folder": "Wellington/restaurant-bar/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180210",
+      "source_folder": "Wellington/restaurant-bar/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/restaurant-bar/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "78 GORDON ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "01 Sep 2023",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1015714 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "180 Bovaird Dr W",
+        "Brampton, Ontario",
+        "L7A 0H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000581330 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Visahl Member",
+        "78 Gordon St",
+        "Guelph, Ontario",
+        "N1H 4H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 8, Part Lot 155",
+      "As in Inst No RO-687848",
+      "",
+      "PIN: 71284-0044",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "23 08 010 002 00400",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Devcor Capital Inc",
+      "principal: $1,300,000   rate: Greater of 12.25% and BMO prime plus 5.05% per annum.",
+      "registered: 09/01/2023   due: 09/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180210/0930_161003.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180210/0930_161017.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180210/0930_161119.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180210/0930_161214.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 18",
+      "rt_id": "RT180210"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "78 GORDON ST",
+    "postcode": "N1H 4H4",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "09/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "71284-0044",
+    "rollno": "23 08 010 002 00400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "78 GORDON ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "01 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1015714 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000581330 Ontario Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

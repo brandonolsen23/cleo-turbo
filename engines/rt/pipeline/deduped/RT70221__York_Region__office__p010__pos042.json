@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT70221",
+  "source_folder": "York_Region/office/p010",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70221",
+      "source_folder": "York_Region/office/p010",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/office/p010/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "737 CARRVILLE RD"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "05 Jan 2010",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1812130 Ontario Inc     905-326-5250"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Enna Hughes",
+        "19 Medoc Place",
+        "Thornhill, Ontario",
+        "L4J 8X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1960",
+      "Part Lots 1 & 2",
+      "As in Inst No R-628783",
+      "",
+      "PIN: 03215-0369",
+      "",
+      "0.49 acre"
+    ],
+    "arn_text": "19 38 060 070 38500",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $850,000   rate: Prime plus 5.0% per annum",
+      "registered: 01/05/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT702/RT70221/air1.jpg",
+        "/assets/files/RT7/RT702/RT70221/air2.jpg",
+        "/assets/files/RT7/RT702/RT70221/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "493 / 777",
+      "rt_id": "RT70221"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "737 CARRVILLE RD",
+    "postcode": "L4C 6E5",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "01/05/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".49",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "03215-0369",
+    "rollno": "19 38 060 070 38500"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "737 CARRVILLE RD"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "05 Jan 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1812130 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

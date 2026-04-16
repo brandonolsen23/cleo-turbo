@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT23345",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23345",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "952 QUEENSTON RD"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "01 Nov 2001",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mae & Mau Tam     416-492-8546"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "175 Bamburgh Circle, Ste 1904",
+        "Scarborough, Ontario",
+        "M1W 3X8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1287302 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Satwant Madesha",
+        "952 Queenston Rd",
+        "Stoney Creek, Ontario",
+        "L8G 1B7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1424, Lot 13"
+    ],
+    "arn_text": "25 03 100 360 13000",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT233/RT23345/photo.jpg"
+    },
+    "footer": {
+      "page_position": "549 / 616",
+      "rt_id": "RT23345"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "952 QUEENSTON RD",
+    "postcode": "L8G 1B7",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "11/01/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 03 100 360 13000"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "952 QUEENSTON RD"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "01 Nov 2001",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Mae & Mau Tam"
+    ],
+    "buyer_lines": [
+      "1287302 Ontario Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

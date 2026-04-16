@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT105772",
+  "source_folder": "Hamilton-Wentworth/retail/p006",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105772",
+      "source_folder": "Hamilton-Wentworth/retail/p006",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p006/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "81 KING ST W"
+      ],
+      "city_region": "Dundas : Hamilton-Wentworth",
+      "date_text": "15 Jan 2015",
+      "price_text": "$1,479,892",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,550 sf @ $267",
+      "",
+      "Leased back to the vendor (BMO)",
+      "",
+      "7 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1300, Lots 1 & 2",
+      "Together with Inst Nos:",
+      "DN-19198 & HL-308903",
+      "",
+      "PIN: 17585-0018",
+      "",
+      "NE corner King St W and Sydenham St",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "25 18 260 200 03400",
+    "consideration_lines": [
+      "cash: $1,479,892     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105772/0123_101338.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105772/0123_101339.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105772/0123_101359.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105772/0123_101400.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1057/RT105772/0123_101403.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "254 / 616",
+      "rt_id": "RT105772"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "81 KING ST W",
+    "postcode": "L9H 1T5",
+    "municipality": "Dundas",
+    "region": "Hamilton-Wentworth",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 5,550 sf @ $267",
+    "bldg": "5,550 sf",
+    "acreage": ".15",
+    "consid": "1479892",
+    "cash": "1479892",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "17585-0018",
+    "rollno": "25 18 260 200 03400"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "81 KING ST W"
+    ],
+    "city_region": "Dundas : Hamilton-Wentworth",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 5,550 sf @ $267",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$1,479,892"
+  }
+}

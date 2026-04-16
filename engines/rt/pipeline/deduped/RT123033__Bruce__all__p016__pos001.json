@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT123033",
+  "source_folder": "Bruce/all/p016",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123033",
+      "source_folder": "Bruce/all/p016",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/all/p016/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "GREY ST",
+        "GRENVILLE ST"
+      ],
+      "city_region": "Saugeen Shores : Bruce",
+      "date_text": "03 Feb 2017",
+      "price_text": "$1,177,654",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1931256 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dale Walden",
+        "1851 B Line",
+        "Southampton, Ontario",
+        "N0H 2L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kelden Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dale Walden",
+        "383 Kincardine Ave",
+        "PO Box 351",
+        "Kincardine, Ontario",
+        "N2Z 2Y8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-8753, Part 1",
+      "",
+      "PIN: 33258-0165",
+      "",
+      "6.28 acre"
+    ],
+    "arn_text": "41 10 480 001 34806",
+    "consideration_lines": [
+      "cash: $1,574     assumed/vtb debt: $1,176,080",
+      "",
+      "chargee: 1884871 Ontario Ltd",
+      "principal: $1,400,000   rate: 8.0% per annum.",
+      "registered: 02/03/2017   due: on demand",
+      "",
+      "chargee: 1931256 Ontario Inc",
+      "principal: $1,176,080   rate: 6.0% per annum. Due earlier of the closing of last condominium unit or 12/31/2019.",
+      "registered: 02/03/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "752 / 1185",
+      "rt_id": "RT123033"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "GREY ST, GRENVILLE ST",
+    "postcode": "",
+    "municipality": "Saugeen Shores",
+    "region": "Bruce",
+    "date": "02/03/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.28",
+    "consid": "1177654",
+    "cash": "1574",
+    "debt": "1176080",
+    "note": "Related Parties",
+    "pin": "33258-0165",
+    "rollno": "41 10 480 001 34806"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "GREY ST",
+      "GRENVILLE ST"
+    ],
+    "city_region": "Saugeen Shores : Bruce",
+    "date_text": "03 Feb 2017",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1931256 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Kelden Development Inc"
+    ],
+    "price_text": "$1,177,654"
+  }
+}

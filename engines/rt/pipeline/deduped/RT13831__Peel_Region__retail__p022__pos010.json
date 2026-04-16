@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT13831",
+  "source_folder": "Peel_Region/retail/p022",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13831",
+      "source_folder": "Peel_Region/retail/p022",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p022/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "5981 MAYFIELD RD"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "01 Feb 1999",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1210691 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William B McEachran",
+        "339 Westney Rd S, Ste 202",
+        "Ajax, Ontario",
+        "L1S 7J6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jenesis Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Oleg Belittchenko",
+        "121 Grey Alder Ave",
+        "Richmond Hill, Ontario",
+        "L4B 3P9"
+      ]
+    },
+    "description_lines": [
+      "Gas Bar - includes convenience store & donut shop"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-16806, Part 1",
+      "",
+      "SW corner at Airport Rd",
+      "",
+      "1.85 acre"
+    ],
+    "arn_text": "21 10 070 009 04800",
+    "consideration_lines": [
+      "cash: $1,450,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $250,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/29/2018   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $25,000,000   rate: 18.0% per annum.",
+      "registered: 11/01/2018   due: on demand",
+      "",
+      "chargee: Huybers Hog Haven Ltd",
+      "principal: $1,500,000   rate: 18.0% per annum.",
+      "registered: 11/01/2018   due: on demand",
+      "",
+      "chargee: MCAP Financial Corp",
+      "principal: $1,534,000   rate: 3.410% per annum.",
+      "registered: 11/01/2018   due: 11/01/2023",
+      "",
+      "chargee: 1367735 Ontario Inc",
+      "principal: $1,400,000   rate: 5.25% per annum.",
+      "registered: 11/01/2018   due: 10/31/2023",
+      "",
+      "Named Individual(s)",
+      "principal: $2,000,000   rate: 6.0% per annum.",
+      "registered: 11/01/2018   due: 11/01/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1061 / 1087",
+      "rt_id": "RT13831"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "5981 MAYFIELD RD",
+    "postcode": "L6T 3Z8",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "02/01/1999",
+    "desc": "Gas Bar - includes convenience store & donut shop",
+    "bldg": "",
+    "acreage": "1.85",
+    "consid": "1450000",
+    "cash": "1450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 070 009 04800"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "5981 MAYFIELD RD"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "01 Feb 1999",
+    "note": "",
+    "description": "Gas Bar - includes convenience store & donut shop",
+    "seller_lines": [
+      "1210691 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Jenesis Holdings Corp"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

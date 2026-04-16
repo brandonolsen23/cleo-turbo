@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT101864",
+  "source_folder": "Cochrane/all/p104",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT101864",
+      "source_folder": "Cochrane/all/p104",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p104/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "1445 STITTSVILLE MAIN ST"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "01 May 2014",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Stellar Hockey Inc     613-724-1360"
+      ],
+      "trade_name": "Stellar Management Group",
+      "contact_lines": [
+        "Attn: Dale Hein",
+        "1445 Stittsville Main",
+        "Ottawa, Ontario",
+        "K2S 1A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 24",
+      "As in Inst No N-396298",
+      "",
+      "PIN: 04460-0279",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "06 27 020 820 16900",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $499,800   rate: Prime plus 10.0% per annum.",
+      "registered: 05/01/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5165 / 10920",
+      "rt_id": "RT101864"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "1445 STITTSVILLE MAIN ST",
+    "postcode": "K2S 1A2",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "05/01/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "04460-0279",
+    "rollno": "06 27 020 820 16900"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "1445 STITTSVILLE MAIN ST"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "01 May 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Stellar Hockey Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

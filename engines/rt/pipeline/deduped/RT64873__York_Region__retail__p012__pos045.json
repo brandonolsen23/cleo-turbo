@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT64873",
+  "source_folder": "York_Region/retail/p012",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64873",
+      "source_folder": "York_Region/retail/p012",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "206 MAIN ST",
+        "(UNIONVILLE)"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "07 Nov 2008",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Stiver House Ltd     905-305-9605"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Newnham",
+        "78 Dalecroft Circle",
+        "Markham, Ontario",
+        "L3R 6J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2179922 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zihua Du",
+        "206 Main St",
+        "Markham, Ontario",
+        "L3R 2G9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 1-2 storey; 5,000 sf @ $410",
+      "",
+      "1 storey converted bungalow with 2 storey addition at rear",
+      "Vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lots 12 & 13",
+      "Plan 65R-31272, Part 1",
+      "",
+      "PIN: 02979-0130",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "19 36 020 180 71200",
+    "consideration_lines": [
+      "cash: $2,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT648/RT64873/1121_131722.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT648/RT64873/1121_131848.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT648/RT64873/1121_131930.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT648/RT64873/air1.jpg",
+        "/assets/files/RT6/RT648/RT64873/air2.jpg",
+        "/assets/files/RT6/RT648/RT64873/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "596 / 984",
+      "rt_id": "RT64873"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "206 MAIN ST, (UNIONVILLE)",
+    "postcode": "L3R 2G9",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/07/2008",
+    "desc": "Retail Bldg: 1-2 storey; 5,000 sf @ $410",
+    "bldg": "5,000 sf",
+    "acreage": ".5",
+    "consid": "2050000",
+    "cash": "2050000",
+    "debt": "",
+    "note": "",
+    "pin": "02979-0130",
+    "rollno": "19 36 020 180 71200"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "206 MAIN ST",
+      "(UNIONVILLE)"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "07 Nov 2008",
+    "note": "",
+    "description": "Retail Bldg: 1-2 storey; 5,000 sf @ $410",
+    "seller_lines": [
+      "The Stiver House Ltd"
+    ],
+    "buyer_lines": [
+      "2179922 Ontario Inc"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

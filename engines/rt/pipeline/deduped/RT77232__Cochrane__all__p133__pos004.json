@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT77232",
+  "source_folder": "Cochrane/all/p133",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77232",
+      "source_folder": "Cochrane/all/p133",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p133/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 11",
+        "PART LOT 2"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "11 Mar 2011",
+      "price_text": "$1,120,048",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Taggart (Mer Bleu) Corp     613-234-7000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Taggart",
+        "225 Metcalfe St, Ste 708",
+        "Ottawa, Ontario",
+        "K2P 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sante Montfort     613-746-4621"
+      ],
+      "trade_name": "Montfort Hospital",
+      "contact_lines": [
+        "Attn: Danny Purcell",
+        "713 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1K 0T2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 2",
+      "Plan 4R-21662, Part 3",
+      "",
+      "PIN: 14525-4576",
+      "",
+      "2.79 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,120,048     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT772/RT77232/air1.jpg",
+        "/assets/files/RT7/RT772/RT77232/air2.jpg",
+        "/assets/files/RT7/RT772/RT77232/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6605 / 10920",
+      "rt_id": "RT77232"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "CONC 11, PART LOT 2",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/11/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.79",
+    "consid": "1120048",
+    "cash": "1120048",
+    "debt": "",
+    "note": "",
+    "pin": "14525-4576",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "CONC 11",
+      "PART LOT 2"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "11 Mar 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Taggart (Mer Bleu) Corp"
+    ],
+    "buyer_lines": [
+      "Sante Montfort"
+    ],
+    "price_text": "$1,120,048"
+  }
+}

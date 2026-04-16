@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT75698",
+  "source_folder": "Kitchener-Waterloo/retail/p010",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT75698",
+      "source_folder": "Kitchener-Waterloo/retail/p010",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p010/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "12 UNIVERSITY AVE E"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "30 Nov 2010",
+      "price_text": "$1,060,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tanem Developments Ltd     519-725-7000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nelson Kraus",
+        "255 King St N, Unit 4",
+        "Waterloo, Ontario",
+        "N2J 4V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1837495 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Levy",
+        "691 Richmond St",
+        "London, Ontario",
+        "N6A 5M1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,000 sf @ $353",
+      "",
+      "Former mattress store",
+      "Vacant - to be occupied by the purchaser"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT - Subdivision of Lot 13",
+      "Part Lots 70 & 78",
+      "Plan 58R-11634, Part 2",
+      "Together with:",
+      "Inst No 1410993",
+      "",
+      "PIN: 22362-0079",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "30 16 013 800 00400",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $860,000",
+      "",
+      "chargee: Tanem Developments Ltd",
+      "principal: $860,000   rate: 8.0% per annum",
+      "registered: 11/30/2010   due: 11/30/2015"
+    ],
+    "broker_lines": [
+      "DTZ Barnicke: John Markou & Christopher Coupal, 519-746-6300",
+      "CB Richard Ellis: Mel de Oliveira, 519-571-8609"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT756/RT75698/0122_121107.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT756/RT75698/0122_121125.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT756/RT75698/air1.jpg",
+        "/assets/files/RT7/RT756/RT75698/air2.jpg",
+        "/assets/files/RT7/RT756/RT75698/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "455 / 752",
+      "rt_id": "RT75698"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "12 UNIVERSITY AVE E",
+    "postcode": "N2J 2V7",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "11/30/2010",
+    "desc": "Retail Bldg - 1 storey; 3,000 sf @ $353",
+    "bldg": "3,000 sf",
+    "acreage": ".12",
+    "consid": "1060000",
+    "cash": "200000",
+    "debt": "860000",
+    "note": "",
+    "pin": "22362-0079",
+    "rollno": "30 16 013 800 00400"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "12 UNIVERSITY AVE E"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "30 Nov 2010",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3,000 sf @ $353",
+    "seller_lines": [
+      "Tanem Developments Ltd"
+    ],
+    "buyer_lines": [
+      "1837495 Ontario Inc"
+    ],
+    "price_text": "$1,060,000"
+  }
+}

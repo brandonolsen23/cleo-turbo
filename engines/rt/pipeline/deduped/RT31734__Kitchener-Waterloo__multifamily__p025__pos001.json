@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT31734",
+  "source_folder": "Kitchener-Waterloo/multifamily/p025",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31734",
+      "source_folder": "Kitchener-Waterloo/multifamily/p025",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p025/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "133, 135 & 137 WOODSIDE AVE",
+        "141 & 143 WOODSIDE AVE"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "03 Jul 2003",
+      "price_text": "$13,640,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Hallman Construction Ltd     519-747-8700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lyle Hallman",
+        "871 Victoria St N, Unit 4",
+        "Kitchener, Ontario",
+        "N2B 3S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kanco-Woodside-1 Ltd     416-234-8444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daniel Drimmer",
+        "5935 Airport Rd, Ste 600",
+        "Mississauga, Ontario",
+        "L4V 1W5"
+      ]
+    },
+    "description_lines": [
+      "5 Apartment Bldgs - 3 storey; 249 units @ $54,779",
+      "",
+      "Part of a 63 building, 3,016 unit portfolio sale."
+    ],
+    "more_info_url": "/assets/files/RT3/RT317/RT31734/mi.pdf",
+    "site_lines": [
+      "Plan 1381, Part Block B",
+      "As in Inst No 1147590",
+      "",
+      "13.38 acre"
+    ],
+    "arn_text": "30 06 060 052 01880",
+    "consideration_lines": [
+      "cash: $8,749,034     assumed/vtb debt: $4,890,066"
+    ],
+    "broker_lines": [
+      "JJ Barnicke Whitney: John Markou & Chris Coupal, 519-746-6300"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT317/RT31734/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1202 / 1449",
+      "rt_id": "RT31734"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "133, 135 & 137 WOODSIDE AVE, 141 & 143 WOODSIDE AVE",
+    "postcode": "N1S 4M2",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "07/03/2003",
+    "desc": "5 Apartment Bldgs - 3 storey; 249 units @ $54,779",
+    "bldg": "249 units",
+    "acreage": "13.38",
+    "consid": "13640000",
+    "cash": "8749034",
+    "debt": "4890066",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "30 06 060 052 01880"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "133, 135 & 137 WOODSIDE AVE",
+      "141 & 143 WOODSIDE AVE"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "03 Jul 2003",
+    "note": "Portfolio Sale",
+    "description": "5 Apartment Bldgs - 3 storey; 249 units @ $54,779",
+    "seller_lines": [
+      "Hallman Construction Ltd"
+    ],
+    "buyer_lines": [
+      "Kanco-Woodside-1 Ltd"
+    ],
+    "price_text": "$13,640,000"
+  }
+}

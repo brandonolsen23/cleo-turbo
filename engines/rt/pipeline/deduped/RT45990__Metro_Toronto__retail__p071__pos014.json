@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT45990",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45990",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "5791 - 5795 YONGE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "20 Dec 2005",
+      "price_text": "$11,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "5795 Yonge Street (1984) Ltd     905-939-0661"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eugene Zaraska",
+        "6400 Lloydtown Aurora Rd",
+        "Schomberg, Ontario",
+        "L0G 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Menkes 5795 Yonge Street Inc     416-491-2222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Alan Menkes",
+        "4711 Yonge St, Ste 1400",
+        "Toronto, Ontario",
+        "M2N 7E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - EYS, Part Lot 22",
+      "Plan 64R-10981, Parts 3 & 5",
+      "",
+      "1.33 acre"
+    ],
+    "arn_text": "19 08 094 135 05000",
+    "consideration_lines": [
+      "cash: $3,300,000     assumed/vtb debt: $7,700,000",
+      "",
+      "chargee: 5795 Yonge Street (1984) Ltd",
+      "principal: $7,700,000   rate: Interest of $300,000 for the period 12/20/2005 to 12/20/2006. From 12/20/2006 to 12/20/2007, Bank of Nova Scotia prime per annum",
+      "registered: 12/20/2005   due: 12/20/2007"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT459/RT45990/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3515 / 4952",
+      "rt_id": "RT45990"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "5791 - 5795 YONGE ST",
+    "postcode": "M2M 3T9",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/20/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.33",
+    "consid": "11000000",
+    "cash": "3300000",
+    "debt": "7700000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 094 135 05000"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "5791 - 5795 YONGE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "20 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "5795 Yonge Street (1984) Ltd"
+    ],
+    "buyer_lines": [
+      "Menkes 5795 Yonge Street Inc"
+    ],
+    "price_text": "$11,000,000"
+  }
+}

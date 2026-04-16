@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT27772",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27772",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "222 HURONTARIO ST"
+      ],
+      "city_region": "Collingwood : Simcoe County",
+      "date_text": "01 Nov 2002",
+      "price_text": "$710,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Liquor Control Board of Ontario     416-864-6701"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Mary Fitzpatrick",
+        "55 Lake Shore Blvd E",
+        "Toronto, Ontario",
+        "M5E 1A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cantwell Development Corp, in Trust"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Victor Saccucci",
+        "9050 Yonge St, Ste 202",
+        "Richmond Hill, Ontario",
+        "L4C 9S6"
+      ]
+    },
+    "description_lines": [
+      "LCBO Store - 1 storey; 9,150 sf @ $78"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-12531, Parts 2 &4",
+      "Plan 73",
+      "Part Lot 38, W/S Hurontario St",
+      "Part Lots 37-40, E/S Pine St",
+      "As in Inst Nos RO-85769,",
+      "RO-208240 & RO-92954",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "43 31 050 001 03100",
+    "consideration_lines": [
+      "cash: $710,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "629 / 712",
+      "rt_id": "RT27772"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "222 HURONTARIO ST",
+    "postcode": "L9Y 2M2",
+    "municipality": "Collingwood",
+    "region": "Simcoe County",
+    "date": "11/01/2002",
+    "desc": "LCBO Store - 1 storey; 9,150 sf @ $78",
+    "bldg": "9,150 sf",
+    "acreage": ".66",
+    "consid": "710000",
+    "cash": "710000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 31 050 001 03100"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "222 HURONTARIO ST"
+    ],
+    "city_region": "Collingwood : Simcoe County",
+    "date_text": "01 Nov 2002",
+    "note": "",
+    "description": "LCBO Store - 1 storey; 9,150 sf @ $78",
+    "seller_lines": [
+      "Liquor Control Board of Ontario"
+    ],
+    "buyer_lines": [
+      "Cantwell Development Corp, in Trust"
+    ],
+    "price_text": "$710,000"
+  }
+}

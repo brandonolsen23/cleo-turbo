@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT138452",
+  "source_folder": "Leeds/all/p017",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT138452",
+      "source_folder": "Leeds/all/p017",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p017/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "7783 NORTHVILLE RD"
+      ],
+      "city_region": "Bosanquet : Lambton",
+      "date_text": "07 Nov 2018",
+      "price_text": "$2,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "DeGroots Longview Acres Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Casey De Groot",
+        "7783 Northville Rd",
+        "Thedford, Ontario",
+        "N0M 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Lot 2",
+      "Except:",
+      "Plan 25R-2901, Part 13",
+      "",
+      "PIN: 43044-0069",
+      "",
+      "103.54 acre"
+    ],
+    "arn_text": "38 45 460 030 18500",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $2,200,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "821 / 1916",
+      "rt_id": "RT138452"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "7783 NORTHVILLE RD",
+    "postcode": "N0M 2N0",
+    "municipality": "Bosanquet",
+    "region": "Lambton",
+    "date": "11/07/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "103.54",
+    "consid": "2200000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43044-0069",
+    "rollno": "38 45 460 030 18500"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "7783 NORTHVILLE RD"
+    ],
+    "city_region": "Bosanquet : Lambton",
+    "date_text": "07 Nov 2018",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "DeGroots Longview Acres Ltd"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

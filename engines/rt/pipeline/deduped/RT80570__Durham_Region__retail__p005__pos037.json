@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT80570",
+  "source_folder": "Durham_Region/retail/p005",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80570",
+      "source_folder": "Durham_Region/retail/p005",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p005/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "25 THICKSON RD N"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "01 Sep 2011",
+      "price_text": "$2,185,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Camen Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Haines",
+        "1614 Dundas St E",
+        "Whitby, Ontario",
+        "L1N 8Y8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sunnyridge Investment Corp     905-579-9575"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Springle",
+        "1614 Dundas St E, Ste 200",
+        "Whitby, Ontario",
+        "L1N 8Y8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 9 tenants 12,000 sf @ $182",
+      "",
+      "Whitby Shopping Fair",
+      "Fully leased",
+      "Anchored by Rogers and KFC"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-10322",
+      "Parts 1, 7, 15 & 16",
+      "",
+      "PIN: 26515-0106 +",
+      "",
+      "0.90 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,185,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $1,200,000   rate: 25.0% per annum",
+      "registered: 09/01/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT805/RT80570/0910_173108.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT805/RT80570/0910_173240.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT805/RT80570/0910_173312.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT805/RT80570/0910_173329.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "238 / 506",
+      "rt_id": "RT80570"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "25 THICKSON RD N",
+    "postcode": "L1N 8W8",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "09/01/2011",
+    "desc": "Retail Plaza - 9 tenants 12,000 sf @ $182",
+    "bldg": "12,000 sf",
+    "acreage": ".9",
+    "consid": "2185000",
+    "cash": "2185000",
+    "debt": "",
+    "note": "",
+    "pin": "26515-0106+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "25 THICKSON RD N"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "01 Sep 2011",
+    "note": "",
+    "description": "Retail Plaza - 9 tenants 12,000 sf @ $182",
+    "seller_lines": [
+      "Camen Corp"
+    ],
+    "buyer_lines": [
+      "Sunnyridge Investment Corp"
+    ],
+    "price_text": "$2,185,000"
+  }
+}

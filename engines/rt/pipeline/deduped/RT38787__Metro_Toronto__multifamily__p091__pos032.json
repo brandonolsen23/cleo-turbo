@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT38787",
+  "source_folder": "Metro_Toronto/multifamily/p091",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38787",
+      "source_folder": "Metro_Toronto/multifamily/p091",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p091/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "19 INDIAN GROVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 Nov 2004",
+      "price_text": "$825,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "1558260 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Majidi",
+        "93 Fifeshire Rd",
+        "North York, Ontario",
+        "M2L 2H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "FourPlex"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1226, Lot 27A, E/S Indian Grove",
+      "Plan M-253, Part Lots 27 & 28",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "19 04 022 420 00800",
+    "consideration_lines": [
+      "cash: $835,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT387/RT38787/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4533 / 6031",
+      "rt_id": "RT38787"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "19 INDIAN GROVE",
+    "postcode": "M6R 2Y1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/12/2004",
+    "desc": "FourPlex",
+    "bldg": "",
+    "acreage": ".27",
+    "consid": "825000",
+    "cash": "835000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 04 022 420 00800"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "19 INDIAN GROVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 Nov 2004",
+    "note": "Power of Sale",
+    "description": "FourPlex",
+    "seller_lines": [
+      "1558260 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$825,000"
+  }
+}

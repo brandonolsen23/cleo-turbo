@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT190878",
+  "source_folder": "York_Region/retail/p002",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190878",
+      "source_folder": "York_Region/retail/p002",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 TALL GRASS TRAIL",
+        "UNIT 3"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "12 Mar 2025",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "727576 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 33 Whiffletree Ct",
+        "Vaughan, Ontario",
+        "L4L 3K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 543",
+      "Level 1, Unit 3",
+      "",
+      "PIN: 29076-0003"
+    ],
+    "arn_text": "19 28 000 281 05115",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 727576 Ontario Inc",
+      "principal: $775,000   rate: 8.50% per annum.",
+      "registered: 03/12/2025   due: 03/07/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_110955.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_111005.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_111057.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_111101.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_111138.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_111149.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190878/0323_111155.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "96 / 984",
+      "rt_id": "RT190878"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "2 TALL GRASS TRAIL, UNIT 3",
+    "postcode": "L4L 3Y9",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/12/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "29076-0003",
+    "rollno": "19 28 000 281 05115"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "2 TALL GRASS TRAIL",
+      "UNIT 3"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "12 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "727576 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

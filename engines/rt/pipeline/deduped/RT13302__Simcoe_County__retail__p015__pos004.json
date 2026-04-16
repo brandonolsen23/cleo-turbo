@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT13302",
+  "source_folder": "Simcoe_County/retail/p015",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13302",
+      "source_folder": "Simcoe_County/retail/p015",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p015/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "120 QUEEN ST N"
+      ],
+      "city_region": "Tottenham : Simcoe County",
+      "date_text": "30 Sep 1998",
+      "price_text": "$930,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RC Jackson Foods Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert C. Jackson",
+        "c/o P.O. Box 389",
+        "Tottenham, Ontario",
+        "L0G 1W0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rymarn Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John D. Stirling",
+        "4429 15th Street",
+        "Jordan Station, Ontario",
+        "L0R 1S0"
+      ]
+    },
+    "description_lines": [
+      "Two Retail Bldgs - Dairy Queen & Tim Hortons"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Block C, Plan 1529, Town of New Tecumseth",
+      "Part of South Half Lot 5, Concession  4",
+      "",
+      "0.98 acre"
+    ],
+    "arn_text": "43 24 050 001 27000",
+    "consideration_lines": [
+      "cash: $795,845     assumed/vtb debt: $134,155",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $2,000,000   rate: 20.0% per annum.",
+      "registered: 03/29/2018   due: on demand",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $93,100,000   rate: 20.0% per annum.",
+      "registered: 03/28/2018   due: 03/27/2021",
+      "",
+      "chargee: Calicom Solutions Inc and 14 others",
+      "principal: $1,800,000   rate: 8.0% per annum.",
+      "registered: 03/28/2018   due: 03/28/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "705 / 712",
+      "rt_id": "RT13302"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "120 QUEEN ST N",
+    "postcode": "L0G 1W0",
+    "municipality": "Tottenham",
+    "region": "Simcoe County",
+    "date": "09/30/1998",
+    "desc": "Two Retail Bldgs - Dairy Queen & Tim Hortons",
+    "bldg": "",
+    "acreage": ".98",
+    "consid": "930000",
+    "cash": "795845",
+    "debt": "134155",
+    "note": "",
+    "pin": "",
+    "rollno": "43 24 050 001 27000"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "120 QUEEN ST N"
+    ],
+    "city_region": "Tottenham : Simcoe County",
+    "date_text": "30 Sep 1998",
+    "note": "",
+    "description": "Two Retail Bldgs - Dairy Queen & Tim Hortons",
+    "seller_lines": [
+      "RC Jackson Foods Ltd"
+    ],
+    "buyer_lines": [
+      "Rymarn Holdings Inc"
+    ],
+    "price_text": "$930,000"
+  }
+}

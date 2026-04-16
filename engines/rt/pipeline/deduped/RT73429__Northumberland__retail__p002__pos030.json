@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT73429",
+  "source_folder": "Northumberland/retail/p002",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73429",
+      "source_folder": "Northumberland/retail/p002",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p002/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "165 DIVISION ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "23 Jul 2010",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cobourg Marina Properties Inc     519-542-5700"
+      ],
+      "trade_name": "Family & Cosmetic Dental Centre",
+      "contact_lines": [
+        "Attn: Kevin Bacchus",
+        "1208 Michigan Ave",
+        "Sarnia, Ontario",
+        "N7S 6M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Beach Walk Place Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harry James",
+        "95 Main St",
+        "Markham, Ontario",
+        "L3P 1X8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 39M-840, Block 5",
+      "",
+      "PIN: 51093-0121",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 2251094 Ontario Inc",
+      "principal: $714,000   rate: 6.0% per annum",
+      "registered: 07/23/2010   due: 07/23/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73429/0806_063628.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73429/0806_063648.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73429/0806_063731.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73429/0806_063748.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73429/0806_063804.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT734/RT73429/air1.jpg",
+        "/assets/files/RT7/RT734/RT73429/air2.jpg",
+        "/assets/files/RT7/RT734/RT73429/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "81 / 93",
+      "rt_id": "RT73429"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "165 DIVISION ST",
+    "postcode": "",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "07/23/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "51093-0121",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "165 DIVISION ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "23 Jul 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Cobourg Marina Properties Inc"
+    ],
+    "buyer_lines": [
+      "Beach Walk Place Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT31329",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31329",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 ELMDALE CT"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 Jul 2003",
+      "price_text": "$631,300",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Dontin Investments Inc     416-932-4969"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marianne O'Donoghue",
+        "Randall Friedland",
+        "2200 Yonge St, Ste 1301",
+        "Toronto, Ontario",
+        "M4S 2C6"
+      ]
+    },
+    "description_lines": [
+      "SixPlex - 2.5 storey; 6 units @ $105,217"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12003, Lot 138",
+      "",
+      "W side at dead end",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "19 38 040 030 09000",
+    "consideration_lines": [
+      "cash: $631,300     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT313/RT31329/photo.jpg"
+    },
+    "footer": {
+      "page_position": "220 / 263",
+      "rt_id": "RT31329"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "50 ELMDALE CT",
+    "postcode": "L4C 4S6",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "07/30/2003",
+    "desc": "SixPlex - 2.5 storey; 6 units @ $105,217",
+    "bldg": "6 units",
+    "acreage": ".3",
+    "consid": "631300",
+    "cash": "631300",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 040 030 09000"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "50 ELMDALE CT"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 Jul 2003",
+    "note": "",
+    "description": "SixPlex - 2.5 storey; 6 units @ $105,217",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Dontin Investments Inc"
+    ],
+    "price_text": "$631,300"
+  }
+}

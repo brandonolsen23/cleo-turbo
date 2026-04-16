@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT178107",
+  "source_folder": "Ottawa-Carleton/retail/p004",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178107",
+      "source_folder": "Ottawa-Carleton/retail/p004",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p004/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1594 - 1598 CYRVILLE RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "01 Jun 2023",
+      "price_text": "$2,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Golden Bowl Restaurant Inc     613-744-2865"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1598 Cyrville Rd",
+        "Ottawa, Ontario",
+        "K1B 3L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "15036941 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kabiru Saliu",
+        "895 Don Mills Rd",
+        "Two Morneau Shepell",
+        "Toronto, Ontario",
+        "M3C 1W3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - OF, Part Lot 23",
+      "As in Inst No NS-152088",
+      "",
+      "PIN: 04355-0031",
+      "",
+      "0.90 acre"
+    ],
+    "arn_text": "06 06 000 195 18300",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $2,200,000",
+      "",
+      "chargee: Golden Bowl Restaurant Inc",
+      "principal: $2,200,000   rate: 5.0% per annum. 22.0% per annum if unpaid upon maturity.",
+      "registered: 06/01/2023   due: 06/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1781/RT178107/0729_091035.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1781/RT178107/0729_091036.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1781/RT178107/0729_091120.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1781/RT178107/0729_091121.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1781/RT178107/0729_091154.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1781/RT178107/0729_091201.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1781/RT178107/air1.jpg",
+        "/assets/files/RT17/RT1781/RT178107/air2.jpg",
+        "/assets/files/RT17/RT1781/RT178107/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "161 / 1141",
+      "rt_id": "RT178107"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1594 - 1598 CYRVILLE RD",
+    "postcode": "K1B 3L8",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "06/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".9",
+    "consid": "2750000",
+    "cash": "550000",
+    "debt": "2200000",
+    "note": "",
+    "pin": "04355-0031",
+    "rollno": "06 06 000 195 18300"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1594 - 1598 CYRVILLE RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "01 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Golden Bowl Restaurant Inc"
+    ],
+    "buyer_lines": [
+      "15036941 Canada Inc"
+    ],
+    "price_text": "$2,750,000"
+  }
+}

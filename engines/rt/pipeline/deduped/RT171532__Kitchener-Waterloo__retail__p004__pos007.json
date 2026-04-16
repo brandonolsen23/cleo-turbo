@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT171532",
+  "source_folder": "Kitchener-Waterloo/retail/p004",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT171532",
+      "source_folder": "Kitchener-Waterloo/retail/p004",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p004/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "1450 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "30 Aug 2022",
+      "price_text": "$5,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1450 Victoria Street North Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "35 Southdale Rd E",
+        "London, Ontario",
+        "N6C 4X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2804031 Ontario Inc     888-693-5583"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Pilla",
+        "c/o Kitchener Nissan",
+        "1450 Victoria St N",
+        "Kitchener, Ontario",
+        "N2B 3E2"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "German Co Tract,",
+      "Part Lots 122 & 123",
+      "Plan 58R-4817, Parts 2 & 3",
+      "Plan 58R-11447, Part 2",
+      "",
+      "PIN: 22712-0140 +",
+      "",
+      "1.83 acre"
+    ],
+    "arn_text": "30 12 060 016 05300 +",
+    "consideration_lines": [
+      "cash: $5,125,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093341.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093412.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093444.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093459.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093523.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093545.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1715/RT171532/1112_093556.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "158 / 752",
+      "rt_id": "RT171532"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "1450 VICTORIA ST N",
+    "postcode": "N2B 3E2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "08/30/2022",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.83",
+    "consid": "5125000",
+    "cash": "5125000",
+    "debt": "",
+    "note": "",
+    "pin": "22712-0140+",
+    "rollno": "30 12 060 016 05300+"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "1450 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "30 Aug 2022",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "1450 Victoria Street North Ltd"
+    ],
+    "buyer_lines": [
+      "2804031 Ontario Inc"
+    ],
+    "price_text": "$5,125,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT93731",
+  "source_folder": "York_Region/retail/p009",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93731",
+      "source_folder": "York_Region/retail/p009",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p009/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "21 RINGWOOD DR"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "02 Jul 2013",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1361026 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Ian Boyd",
+        "22856 Weir's Rd",
+        "Udora, Ontario",
+        "L0C 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Miles Hectares Inc     905-471-9842"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Elson Miles",
+        "7 Celebrity Greens Way",
+        "Markham, Ontario",
+        "L6E 1B5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,240 sf @ $248",
+      "",
+      "Fully leased to Source for Sports"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-32357, Parts 1 & 3",
+      "",
+      "PIN: 03726-1380",
+      "",
+      "E of Ringwood Dr, S of Main St",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "19 44 000 146 30860",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "K R May Real Estate: Kenneth May, 905-642-2223",
+      "Ashlar Crosby Cairo Realty: Glenn Crosby & Vince Cairo, 905-695-9222"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93731/0713_133239.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93731/0713_133307.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93731/0713_133355.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT937/RT93731/0713_133417.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "413 / 984",
+      "rt_id": "RT93731"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "21 RINGWOOD DR",
+    "postcode": "L4A 8C1",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "07/02/2013",
+    "desc": "Retail Bldg - 1 storey; 5,240 sf @ $248",
+    "bldg": "5,240 sf",
+    "acreage": ".55",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "03726-1380",
+    "rollno": "19 44 000 146 30860"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "21 RINGWOOD DR"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "02 Jul 2013",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 5,240 sf @ $248",
+    "seller_lines": [
+      "1361026 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Miles Hectares Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

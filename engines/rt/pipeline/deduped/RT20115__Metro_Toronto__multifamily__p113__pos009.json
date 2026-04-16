@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20115",
+  "source_folder": "Metro_Toronto/multifamily/p113",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20115",
+      "source_folder": "Metro_Toronto/multifamily/p113",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p113/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "120 HEATH ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 Dec 2000",
+      "price_text": "$627,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Igor Igochine"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "77 Quebec Ave, Ste 932",
+        "Toronto, Ontario",
+        "M6P 2T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Colin Leung"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "120 Heath St W",
+        "Toronto, Ontario",
+        "M4V 1T7"
+      ]
+    },
+    "description_lines": [
+      "MultiPlex - 3 storey; 3 units @ $209,167"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 890, Part Lot 57",
+      "As in Inst CA-514987",
+      "",
+      "NW corner at Oriole Rd",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 111 330 02200",
+    "consideration_lines": [
+      "cash: $627,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT201/RT20115/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5610 / 6031",
+      "rt_id": "RT20115"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "120 HEATH ST W",
+    "postcode": "M4V 1T7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/12/2000",
+    "desc": "MultiPlex - 3 storey; 3 units @ $209,167",
+    "bldg": "3 units",
+    "acreage": ".1",
+    "consid": "627500",
+    "cash": "627500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 111 330 02200"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "120 HEATH ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 Dec 2000",
+    "note": "",
+    "description": "MultiPlex - 3 storey; 3 units @ $209,167",
+    "seller_lines": [
+      "Igor Igochine"
+    ],
+    "buyer_lines": [
+      "Colin Leung"
+    ],
+    "price_text": "$627,500"
+  }
+}

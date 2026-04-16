@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT182663",
+  "source_folder": "Peel_Region/retail/p005",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182663",
+      "source_folder": "Peel_Region/retail/p005",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p005/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "3450 PLATINUM DR",
+        "UNIT 15"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "18 Jan 2024",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2664569 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2 Maple Cider St",
+        "Caledon, Ontario",
+        "L7C 3V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "St Abadeer Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Botros Khella",
+        "5908 Churchill Meadows Blvd",
+        "Mississauga, Ontario",
+        "L5M 6Y2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1140",
+      "Level 1, Unit 15",
+      "",
+      "PIN: 20140-0015"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/18/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132446.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132452.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132555.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132559.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132601.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132614.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132634.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1826/RT182663/0127_132802.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "212 / 1087",
+      "rt_id": "RT182663"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "3450 PLATINUM DR, UNIT 15",
+    "postcode": "L5M 2S4",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "01/18/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "20140-0015",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "3450 PLATINUM DR",
+      "UNIT 15"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "18 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2664569 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "St Abadeer Holdings Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

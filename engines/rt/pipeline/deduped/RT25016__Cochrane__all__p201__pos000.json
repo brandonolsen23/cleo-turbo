@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT25016",
+  "source_folder": "Cochrane/all/p201",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25016",
+      "source_folder": "Cochrane/all/p201",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p201/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC BF, PT LOT 20 - 24",
+        "CONC 1, PT LOT 16 - 19, 22, 23",
+        "CONC 2, PT LOT 15, 20, 22 - 24"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "19 Apr 2002",
+      "price_text": "$8,836,846",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "172479 Canada Inc",
+        "Richcraft South Growth Inc     613-739-7111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Kris Singhal",
+        "2280 St Laurent Blvd, Ste 201",
+        "Ottawa, Ontario",
+        "K1G 4K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Riverside South Development Corp     613-731-6331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ryan Keon",
+        "2193 Arch St",
+        "Ottawa, Ontario",
+        "K1G 2H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,836,846     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10001 / 10920",
+      "rt_id": "RT25016"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "CONC BF, PT LOT 20 - 24, CONC 1, PT LOT 16 - 19, 22, 23, CONC 2, PT LOT 15, 20, 22 - 24",
+    "postcode": "",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "04/19/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "8836846",
+    "cash": "8836846",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "CONC BF, PT LOT 20 - 24",
+      "CONC 1, PT LOT 16 - 19, 22, 23",
+      "CONC 2, PT LOT 15, 20, 22 - 24"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "19 Apr 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "172479 Canada Inc",
+      "Richcraft South Growth Inc"
+    ],
+    "buyer_lines": [
+      "Riverside South Development Corp"
+    ],
+    "price_text": "$8,836,846"
+  }
+}

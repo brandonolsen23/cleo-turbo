@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT59280",
+  "source_folder": "Cochrane/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT59280",
+      "source_folder": "Cochrane/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "1500 RIVERSIDE DR"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "13 Dec 2007",
+      "price_text": "$37,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Montez (Timmins) Inc     416-590-9420"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Muzyk",
+        "Montez Corp",
+        "189 King St E",
+        "Toronto, Ontario",
+        "M5A 1J5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Timmins Square Shopping Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harold Spring",
+        "1500 Riverside Dr",
+        "Timmins, Ontario",
+        "P4R 1A1"
+      ]
+    },
+    "description_lines": [
+      "Timmins Square Shopping Centre - 70 stores; 390,000 sf @ $95",
+      "",
+      "Enclosed Mall",
+      "Anchored by Sears, Zellers, No Frills, Winners and Sportchek"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 5",
+      "Plan 6R-2439, Parts 1, 4-6, 8-11",
+      "Plan M-108C, Lot 6",
+      "Except:",
+      "Plan 6R-6551, Parts 1,2 & 4",
+      "Plan D-30, Unit 1",
+      "",
+      "51.84 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $37,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 21",
+      "rt_id": "RT59280"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "1500 RIVERSIDE DR",
+    "postcode": "P4R 1A1",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "12/13/2007",
+    "desc": "Timmins Square Shopping Centre - 70 stores; 390,000 sf @ $95",
+    "bldg": "390,000 sf",
+    "acreage": "51.84",
+    "consid": "37000000",
+    "cash": "37000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "1500 RIVERSIDE DR"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "13 Dec 2007",
+    "note": "",
+    "description": "Timmins Square Shopping Centre - 70 stores; 390,000 sf @ $95",
+    "seller_lines": [
+      "Montez (Timmins) Inc"
+    ],
+    "buyer_lines": [
+      "Timmins Square Shopping Centre Inc"
+    ],
+    "price_text": "$37,000,000"
+  }
+}

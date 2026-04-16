@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT31618",
+  "source_folder": "Metro_Toronto/multifamily/p097",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31618",
+      "source_folder": "Metro_Toronto/multifamily/p097",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p097/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "692 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Sep 2003",
+      "price_text": "$863,800",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1575539 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "692 Bloor St W",
+        "Toronto, Ontario",
+        "M6G 1L4"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 2 storey; 2-1bdrm over 1,700 sf restaurant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 361, Part Lot B",
+      "As in Inst No CA-189974"
+    ],
+    "arn_text": "19 04 051 170 07600",
+    "consideration_lines": [
+      "cash: $863,800     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT316/RT31618/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4843 / 6031",
+      "rt_id": "RT31618"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "692 BLOOR ST W",
+    "postcode": "M6G 1L4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/03/2003",
+    "desc": "Retail/Res Bldg - 2 storey; 2-1bdrm over 1,700 sf restaurant",
+    "bldg": "",
+    "acreage": "",
+    "consid": "863800",
+    "cash": "863800",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 051 170 07600"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "692 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Sep 2003",
+    "note": "",
+    "description": "Retail/Res Bldg - 2 storey; 2-1bdrm over 1,700 sf restaurant",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1575539 Ontario Ltd"
+    ],
+    "price_text": "$863,800"
+  }
+}

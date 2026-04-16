@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23222",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23222",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "180 - 200 SANDALWOOD PKWY E"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "10 Sep 2001",
+      "price_text": "$5,269,971",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Irrevocable Holdings Ltd     416-961-4840"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dr Murray Frum",
+        "Frum Development Group",
+        "720 Spadina Ave, Ste 220",
+        "Toronto, Ontario",
+        "M5S 2T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-8524, Part 2",
+      "Plan 43R-9538, Parts 1-4, 6-8",
+      "",
+      "12.47 acre"
+    ],
+    "arn_text": "21 10 070 012 50600",
+    "consideration_lines": [
+      "cash: $2,058,327     assumed/vtb debt: $3,211,644"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT232/RT23222/photo.jpg"
+    },
+    "footer": {
+      "page_position": "977 / 1087",
+      "rt_id": "RT23222"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "180 - 200 SANDALWOOD PKWY E",
+    "postcode": "L6Z 1Y5",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "09/10/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "12.47",
+    "consid": "5269971",
+    "cash": "2058327",
+    "debt": "3211644",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "21 10 070 012 50600"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "180 - 200 SANDALWOOD PKWY E"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "10 Sep 2001",
+    "note": "Partial Interest",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Irrevocable Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$5,269,971"
+  }
+}

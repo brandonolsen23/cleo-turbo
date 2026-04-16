@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT38211",
+  "source_folder": "Metro_Toronto/multifamily/p092",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38211",
+      "source_folder": "Metro_Toronto/multifamily/p092",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p092/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "10 ROSSEAU RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "14 Oct 2004",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Balplex Ltd     416-663-8691"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Cindy Balaban",
+        "60 Robingrove Rd",
+        "North York, Ontario",
+        "M2R 2Z9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1633194 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Naftali Kalfa",
+        "740 Supertest Rd",
+        "Toronto, Ontario",
+        "M3J 2M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4376, Part Block C",
+      "As in Inst No NY-253752",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "19 08 051 310 02600",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT382/RT38211/air1.jpg",
+        "/assets/files/RT3/RT382/RT38211/air2.jpg",
+        "/assets/files/RT3/RT382/RT38211/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT382/RT38211/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4551 / 6031",
+      "rt_id": "RT38211"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "10 ROSSEAU RD",
+    "postcode": "M3H 3G2",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "10/14/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 051 310 02600"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "10 ROSSEAU RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "14 Oct 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Balplex Ltd"
+    ],
+    "buyer_lines": [
+      "1633194 Ontario Ltd"
+    ],
+    "price_text": "$850,000"
+  }
+}

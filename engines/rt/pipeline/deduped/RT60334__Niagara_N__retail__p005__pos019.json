@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT60334",
+  "source_folder": "Niagara_N/retail/p005",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60334",
+      "source_folder": "Niagara_N/retail/p005",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p005/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 LAKESHORE RD"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "01 Feb 2008",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "PBG Properties Inc     905-988-1085"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anthony Continelli",
+        "2 Briarwood Dr",
+        "St Catharines, Ontario",
+        "L2S 4A7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2160235 Ontario Inc     905-356-4400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Saaed Shaikh",
+        "3427 Matthews Dr",
+        "Niagara Falls, Ontario",
+        "L2H 2Z4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 7 units 9,000 sf @ $167",
+      "",
+      "Fully occupied",
+      "",
+      "Known as Rainbow's End"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 20",
+      "Plan 30R-5973, Parts 1-4",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "26 29 060 035 19701",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $1,000,000   rate: 24.0% per annum",
+      "registered: 02/01/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT603/RT60334/0320_094011.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT603/RT60334/0320_094031.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT603/RT60334/0320_094314.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT603/RT60334/0320_094316.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT603/RT60334/air1.jpg",
+        "/assets/files/RT6/RT603/RT60334/air2.jpg",
+        "/assets/files/RT6/RT603/RT60334/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "220 / 307",
+      "rt_id": "RT60334"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "2 LAKESHORE RD",
+    "postcode": "L2N 7E4",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "02/01/2008",
+    "desc": "Retail Plaza - 1 storey; 7 units 9,000 sf @ $167",
+    "bldg": "9,000 sf",
+    "acreage": ".85",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 29 060 035 19701"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "2 LAKESHORE RD"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "01 Feb 2008",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 7 units 9,000 sf @ $167",
+    "seller_lines": [
+      "PBG Properties Inc"
+    ],
+    "buyer_lines": [
+      "2160235 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

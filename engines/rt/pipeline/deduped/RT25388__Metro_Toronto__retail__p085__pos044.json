@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT25388",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25388",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "900 MIDDLEFIELD RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "18 Apr 2002",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Orton Parkway Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Sheldon Kerzner",
+        "90 Eglinton Ave W, Ste 103",
+        "Toronto, Ontario",
+        "M4R 2E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1043863 Ontario Inc     905-471-8980"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Govind Sharma",
+        "40 Ravenhill Cres",
+        "Markham, Ontario",
+        "L3S 2T9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 7,500 sf @ $107"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-13578, Part 1"
+    ],
+    "arn_text": "19 01 124 750 00550",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4245 / 4952",
+      "rt_id": "RT25388"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "900 MIDDLEFIELD RD",
+    "postcode": "M1V 4X1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/18/2002",
+    "desc": "Retail Plaza - 1 storey; 3 units 7,500 sf @ $107",
+    "bldg": "7,500 sf",
+    "acreage": "",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 124 750 00550"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "900 MIDDLEFIELD RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "18 Apr 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 7,500 sf @ $107",
+    "seller_lines": [
+      "Orton Parkway Ltd"
+    ],
+    "buyer_lines": [
+      "1043863 Ontario Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

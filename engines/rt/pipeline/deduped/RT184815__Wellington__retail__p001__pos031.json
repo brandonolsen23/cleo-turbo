@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT184815",
+  "source_folder": "Wellington/retail/p001",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184815",
+      "source_folder": "Wellington/retail/p001",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "247 ERAMOSA RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "17 May 2024",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1202074 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "707A Danforth Ave",
+        "Toronto, Ontario",
+        "M4J 1L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bajaj Holdings 247 Eramosa Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Inkesh Bajaj",
+        "247 Eramosa Rd",
+        "Guelph, Ontario",
+        "N1E 2M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 232,",
+      "Lot 123, Part Lots 70, 71, 124 & 125",
+      "As in Inst No RO-739694",
+      "Except:",
+      "Plan 61R-6955, Part 1",
+      "",
+      "PIN: 71323-0066",
+      "",
+      "0.61 acre"
+    ],
+    "arn_text": "23 08 020 004 04000",
+    "consideration_lines": [
+      "cash: $2,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,050,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/17/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184815/0824_153656.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184815/0824_153724.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184815/0824_153800.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184815/0824_153835.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1848/RT184815/0824_153850.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "32 / 269",
+      "rt_id": "RT184815"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "247 ERAMOSA RD",
+    "postcode": "N1E 2M5",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "05/17/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".61",
+    "consid": "2050000",
+    "cash": "2050000",
+    "debt": "",
+    "note": "",
+    "pin": "71323-0066",
+    "rollno": "23 08 020 004 04000"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "247 ERAMOSA RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "17 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1202074 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Bajaj Holdings 247 Eramosa Inc"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

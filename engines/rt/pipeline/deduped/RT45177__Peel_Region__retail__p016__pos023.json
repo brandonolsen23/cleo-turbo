@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT45177",
+  "source_folder": "Peel_Region/retail/p016",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45177",
+      "source_folder": "Peel_Region/retail/p016",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p016/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "169 - 171 DUNDAS ST E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "31 Oct 2005",
+      "price_text": "$3,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1190879 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chung Ma",
+        "5132 Castlefield Dr",
+        "Mississauga, Ontario",
+        "L5V 1S2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "ETV Investments Inc     905-257-1045"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Afolabi Odetunde",
+        "517 Marlatt Ave",
+        "Oakville, Ontario",
+        "L6H 5X4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - NDS, Part Lot 14",
+      "Plan 43R-8920, Part 1",
+      "Except:",
+      "Plan 43R-16569, Part 1",
+      "",
+      "1.35 acre"
+    ],
+    "arn_text": "21 05 040 068 23700",
+    "consideration_lines": [
+      "cash: $3,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $2,200,000   rate: 5.51% per annum",
+      "registered: 11/01/2005   due: 11/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT451/RT45177/air1.jpg",
+        "/assets/files/RT4/RT451/RT45177/air2.jpg",
+        "/assets/files/RT4/RT451/RT45177/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT451/RT45177/photo.jpg"
+    },
+    "footer": {
+      "page_position": "774 / 1087",
+      "rt_id": "RT45177"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "169 - 171 DUNDAS ST E",
+    "postcode": "L5A 1W8",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "10/31/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.35",
+    "consid": "3400000",
+    "cash": "3400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 040 068 23700"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "169 - 171 DUNDAS ST E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "31 Oct 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1190879 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "ETV Investments Inc"
+    ],
+    "price_text": "$3,400,000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT27123",
+  "source_folder": "Middlesex_County/retail/p012",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27123",
+      "source_folder": "Middlesex_County/retail/p012",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p012/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "260 BLUE FOREST PLACE"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "27 Sep 2002",
+      "price_text": "$670,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ivory Investments Co Ltd     416-630-9950"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Vera Engel",
+        "Stanley Kazman",
+        "1110 Sheppard Ave E, Ste 507",
+        "Willowdale, Ontario",
+        "M2K 2W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1525037 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Atef Osman",
+        "180 Clarendon Cres",
+        "London, Ontario",
+        "N6C 5B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33M-147, Block 12"
+    ],
+    "arn_text": "39 36 010 641 36400",
+    "consideration_lines": [
+      "cash: $670,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT271/RT27123/photo.jpg"
+    },
+    "footer": {
+      "page_position": "586 / 686",
+      "rt_id": "RT27123"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "260 BLUE FOREST PLACE",
+    "postcode": "",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "09/27/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "670000",
+    "cash": "670000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 010 641 36400"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "260 BLUE FOREST PLACE"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "27 Sep 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ivory Investments Co Ltd"
+    ],
+    "buyer_lines": [
+      "1525037 Ontario Inc"
+    ],
+    "price_text": "$670,000"
+  }
+}

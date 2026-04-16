@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT130500",
+  "source_folder": "Ottawa-Carleton/retail/p008",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT130500",
+      "source_folder": "Ottawa-Carleton/retail/p008",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p008/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "2422 ST JOSEPH BLVD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Dec 2017",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1577870 Ontario Inc     613-224-9314"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eddy Huang",
+        "23 Parkglen Dr",
+        "Ottawa, Ontario",
+        "K2G 3G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2605259 Ontario Inc     613-830-7800"
+      ],
+      "trade_name": "Carling Tire",
+      "contact_lines": [
+        "Attn: Vania Amaral-Lafferty",
+        "2422 St Joseph Blvd",
+        "Orleans, Ontario",
+        "K1C 1E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-20217, Parts 3-6",
+      "",
+      "PIN: 04421-0073",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "06 06 000 085 17900",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $637,500   rate: Prime plus 5.0% per annum.",
+      "registered: 12/01/2017   due: on demand",
+      "",
+      "chargee: 1577870 Ontario Inc",
+      "principal: $57,500   rate: Prime plus 8.0% per annum.",
+      "registered: 12/01/2017   due: 12/01/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173148.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173153.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173155.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173227.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173228.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173229.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1305/RT130500/0330_173233.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "355 / 1141",
+      "rt_id": "RT130500"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "2422 ST JOSEPH BLVD",
+    "postcode": "K1C 1G1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/01/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".52",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "04421-0073",
+    "rollno": "06 06 000 085 17900"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "2422 ST JOSEPH BLVD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Dec 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1577870 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2605259 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT17846",
+  "source_folder": "Simcoe_County/retail/p014",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17846",
+      "source_folder": "Simcoe_County/retail/p014",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p014/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "360 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "27 Jun 2000",
+      "price_text": "$1,750,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Royal Trust Corp of Canada",
+        "Trustee for the Standard Life Assurance Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: David Leclerc",
+        "1245 Sherbrooke St W",
+        "Montreal, Quebec",
+        "H3G 1G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1046111 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Simos",
+        "27 Hazelnut Cres",
+        "Toronto, Ontario",
+        "M2J 4W2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-13069, Parts 1-4",
+      "",
+      "1.51 acre"
+    ],
+    "arn_text": "43 42 031 017 02300",
+    "consideration_lines": [
+      "cash: $670,000     assumed/vtb debt: $1,080,000",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/15/2023   due: on demand",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,450,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/15/2023   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $975,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/15/2023   due: on demand",
+      "",
+      "chargee: MCC Mortgage Holdings Inc",
+      "principal: $770,250   rate: 4.99% per annum.",
+      "registered: 07/20/2021   due: 08/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "677 / 712",
+      "rt_id": "RT17846"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "360 BAYFIELD ST",
+    "postcode": "L4M 3C4",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "06/27/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.51",
+    "consid": "1750000",
+    "cash": "670000",
+    "debt": "1080000",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "43 42 031 017 02300"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "360 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "27 Jun 2000",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Royal Trust Corp of Canada",
+      "Trustee for the Standard Life Assurance Co"
+    ],
+    "buyer_lines": [
+      "1046111 Ontario Ltd"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

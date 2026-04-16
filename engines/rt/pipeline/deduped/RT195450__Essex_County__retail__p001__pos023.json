@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT195450",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195450",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "2146 MCDOUGALL ST"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "14 Nov 2025",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Prime Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1289 Morningstar Ave",
+        "Windsor, Ontario",
+        "N8P 1R3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001356306 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walaa Bekheet",
+        "2365 Normandy St",
+        "LaSalle, Ontario",
+        "N9H 1R1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Windsor, Part Lot 85",
+      "Plan 641 - Sandwich West,",
+      "Lots 5-7 & Part Lots 1-4",
+      "Plan 932 - Windsor, Part Lot 201",
+      "As in Inst Nos",
+      "R-1267648 & R-1305425",
+      "",
+      "PIN: 01317-0202",
+      "",
+      "0.95 acre"
+    ],
+    "arn_text": "37 39 030 500 00100",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,250,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/14/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "24 / 460",
+      "rt_id": "RT195450"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "2146 MCDOUGALL ST",
+    "postcode": "N8X 3N3",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "11/14/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".95",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "01317-0202",
+    "rollno": "37 39 030 500 00100"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "2146 MCDOUGALL ST"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "14 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Prime Holdings Corp"
+    ],
+    "buyer_lines": [
+      "1001356306 Ontario Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT14523",
+  "source_folder": "Niagara_N/retail/p007",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14523",
+      "source_folder": "Niagara_N/retail/p007",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p007/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 - 36 HARTZEL RD"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "30 Apr 1999",
+      "price_text": "$1,355,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "734679 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Rossano DiPaolo",
+        "2129 Portage Rd",
+        "Niagara falls, Ontario",
+        "L2E 6S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1108857 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walter Peracchia",
+        "427 Niagara St",
+        "St Catharines, Ontario",
+        "L2M 4W4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 21,617 sf @ $63"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30R-1888, Part 1",
+      "Plan 30R-5596, Parts 1-6",
+      "Plan 701, Part 3"
+    ],
+    "arn_text": "26 29 010 026 00600",
+    "consideration_lines": [
+      "cash: $1,255,000     assumed/vtb debt: $100,000",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $755,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/14/2019   due: on demand",
+      "",
+      "chargee: Giglio Realty Inc",
+      "principal: $800,000   rate: 0% per annum with an arranging fee of 3.0%.",
+      "registered: 08/14/2019   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $679,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/14/2019   due: on demand",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,250,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/16/2019   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $1,250,000   rate: 7.0% per annum.",
+      "registered: 08/16/2019   due: 06/14/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "306 / 307",
+      "rt_id": "RT14523"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "20 - 36 HARTZEL RD",
+    "postcode": "L2P 1M3",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "04/30/1999",
+    "desc": "Retail Plaza - 1 storey; 21,617 sf @ $63",
+    "bldg": "21,617 sf",
+    "acreage": "",
+    "consid": "1355000",
+    "cash": "1255000",
+    "debt": "100000",
+    "note": "",
+    "pin": "",
+    "rollno": "26 29 010 026 00600"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "20 - 36 HARTZEL RD"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "30 Apr 1999",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 21,617 sf @ $63",
+    "seller_lines": [
+      "734679 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1108857 Ontario Ltd"
+    ],
+    "price_text": "$1,355,000"
+  }
+}

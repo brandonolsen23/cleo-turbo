@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT37864",
+  "source_folder": "Metro_Toronto/multifamily/p092",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37864",
+      "source_folder": "Metro_Toronto/multifamily/p092",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p092/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1020 OCONNOR DR"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "24 Sep 2004",
+      "price_text": "$855,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "842222 Ontario Ltd     416-447-8384"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: James Lum",
+        "150 Underhill Dr",
+        "Don Mills, Ontario",
+        "M3A 2K5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kishwar Ontario Inc     416-751-0853"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Amir Iqbal",
+        "1016 O'Connor Dr, Ste 201",
+        "Toronto, Ontario",
+        "M4B 2T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3683, Part Block G",
+      "As in Inst No TB-608892"
+    ],
+    "arn_text": "19 06 014 220 01400",
+    "consideration_lines": [
+      "cash: $770,000     assumed/vtb debt: $85,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT378/RT37864/air1.jpg",
+        "/assets/files/RT3/RT378/RT37864/air2.jpg",
+        "/assets/files/RT3/RT378/RT37864/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT378/RT37864/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4561 / 6031",
+      "rt_id": "RT37864"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1020 OCONNOR DR",
+    "postcode": "M4B 2T3",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "09/24/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "855000",
+    "cash": "770000",
+    "debt": "85000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 014 220 01400"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1020 OCONNOR DR"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "24 Sep 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "842222 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Kishwar Ontario Inc"
+    ],
+    "price_text": "$855,000"
+  }
+}

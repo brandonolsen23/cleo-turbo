@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT34766",
+  "source_folder": "Middlesex_County/retail/p011",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34766",
+      "source_folder": "Middlesex_County/retail/p011",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p011/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "340 WELLINGTON ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "22 Mar 2004",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "533629 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mario Liberatore",
+        "19 King St, Ste 1202",
+        "London, Ontario",
+        "N6A 5N8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1551867 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert O'Donnell",
+        "500 Osgoode Dr, Unit 234",
+        "London, Ontario",
+        "N6E 2G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-13763, Parts 1 & 2",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "39 36 050 010 09402",
+    "consideration_lines": [
+      "cash: $50,000     assumed/vtb debt: $1,150,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT347/RT34766/photo.jpg"
+    },
+    "footer": {
+      "page_position": "549 / 686",
+      "rt_id": "RT34766"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "340 WELLINGTON ST",
+    "postcode": "",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/22/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "1200000",
+    "cash": "50000",
+    "debt": "1150000",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 050 010 09402"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "340 WELLINGTON ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "22 Mar 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "533629 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1551867 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

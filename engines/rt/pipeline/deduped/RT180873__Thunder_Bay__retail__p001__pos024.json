@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT180873",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180873",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "2817 ARTHUR ST E"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "11 Oct 2023",
+      "price_text": "$1,046,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000621643 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ahmed Al-Obaidi",
+        "343 Sawyer Rd",
+        "Oakville, Ontario",
+        "L6L 3N6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NKR Neebing, Part Lot 5",
+      "Plan 55R-2373, Parts 7 & 8",
+      "",
+      "PIN: 62093-0120",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "58 04 040 166 12400",
+    "consideration_lines": [
+      "cash: $1,046,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,200,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/11/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "25 / 65",
+      "rt_id": "RT180873"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "2817 ARTHUR ST E",
+    "postcode": "P7E 5P5",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "10/11/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1046000",
+    "cash": "1046000",
+    "debt": "",
+    "note": "",
+    "pin": "62093-0120",
+    "rollno": "58 04 040 166 12400"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "2817 ARTHUR ST E"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "11 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000621643 Ontario Corp"
+    ],
+    "price_text": "$1,046,000"
+  }
+}

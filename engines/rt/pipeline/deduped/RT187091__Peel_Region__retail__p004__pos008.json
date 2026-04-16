@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT187091",
+  "source_folder": "Peel_Region/retail/p004",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187091",
+      "source_folder": "Peel_Region/retail/p004",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p004/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3465 PLATINUM DR",
+        "SUITE 99"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "05 Sep 2024",
+      "price_text": "$2,015,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "AGM Brothers Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5455 Freshwater Dr",
+        "Mississauga, Ontario",
+        "L5M 0J8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sar Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shahid Ali",
+        "3465 Platinum Dr, Ste 99",
+        "Mississauga, Ontario",
+        "L5M 2S1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1136",
+      "Level 1, Unit 99",
+      "",
+      "PIN: 20136-0099"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,015,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,511,250   rate: Prime plus 5.0% per annum",
+      "registered: 09/05/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187091/0921_091052.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187091/0921_091057.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187091/0921_091121.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187091/0921_091124.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187091/0921_091131.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "159 / 1087",
+      "rt_id": "RT187091"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3465 PLATINUM DR, SUITE 99",
+    "postcode": "L5M 2S1",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "09/05/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2015000",
+    "cash": "2015000",
+    "debt": "",
+    "note": "",
+    "pin": "20136-0099",
+    "rollno": ""
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3465 PLATINUM DR",
+      "SUITE 99"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "05 Sep 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "AGM Brothers Inc"
+    ],
+    "buyer_lines": [
+      "Sar Group Ltd"
+    ],
+    "price_text": "$2,015,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT62386",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT62386",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "12 UNIVERSITY AVE E"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "04 Jun 2008",
+      "price_text": "$975,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Nelson Kraus Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nelson Kraus",
+        "263 Anita Ct",
+        "Waterloo, Ontario",
+        "N2K 2R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tanem Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nelson Kraus",
+        "263 Anita Ct",
+        "Waterloo, Ontario",
+        "N2K 2R4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Part Lots 70 & 78",
+      "Plan 58R-11634, Part 2",
+      "Together with Inst No 1410993",
+      "",
+      "PIN: 22362-0079",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT623/RT62386/air1.jpg",
+        "/assets/files/RT6/RT623/RT62386/air2.jpg",
+        "/assets/files/RT6/RT623/RT62386/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "521 / 752",
+      "rt_id": "RT62386"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "12 UNIVERSITY AVE E",
+    "postcode": "N2J 2V7",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "06/04/2008",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "975000",
+    "cash": "2",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "22362-0079",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "12 UNIVERSITY AVE E"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "04 Jun 2008",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Nelson Kraus Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Tanem Developments Ltd"
+    ],
+    "price_text": "$975,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT25723",
+  "source_folder": "York_Region/retail/p018",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25723",
+      "source_folder": "York_Region/retail/p018",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "3255 HWY 7 E",
+        "VARIOUS SUITES"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "26 Jun 2002",
+      "price_text": "$2,315,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tenstone Developments Inc     416-368-1460"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Geoffrey Grayhurst",
+        "121 Richmond St W, Ste 801",
+        "Toronto, Ontario",
+        "M5H 2K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1522988 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kwok Yeung",
+        "279 Calvert Rd",
+        "Markham, Ontario",
+        "L6C 1V1"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - about 11,600 sf @ $200",
+      "",
+      "Condo Units:",
+      "1 Unit @ $170,753",
+      "1 Unit @ $126,512",
+      "2 Units @ $157,559",
+      "1 Unit @ $165,061",
+      "1 Unit @ $164,543",
+      "1 Unit @ $544,857",
+      "1 Unit @ $644,982",
+      "2 Units @ $91,586",
+      "1 Unit @ $2"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 902",
+      "Level 1, Units 1-4, 7-12 & 92"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,315,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT257/RT25723/photo.jpg"
+    },
+    "footer": {
+      "page_position": "853 / 984",
+      "rt_id": "RT25723"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "3255 HWY 7 E, VARIOUS SUITES",
+    "postcode": "L3R 3P9",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/26/2002",
+    "desc": "Retail Condo - about 11,600 sf @ $200",
+    "bldg": "11,600 sf",
+    "acreage": "",
+    "consid": "2315000",
+    "cash": "2315000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "3255 HWY 7 E",
+      "VARIOUS SUITES"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "26 Jun 2002",
+    "note": "",
+    "description": "Retail Condo - about 11,600 sf @ $200",
+    "seller_lines": [
+      "Tenstone Developments Inc"
+    ],
+    "buyer_lines": [
+      "1522988 Ontario Inc"
+    ],
+    "price_text": "$2,315,000"
+  }
+}

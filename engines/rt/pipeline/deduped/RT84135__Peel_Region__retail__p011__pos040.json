@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT84135",
+  "source_folder": "Peel_Region/retail/p011",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT84135",
+      "source_folder": "Peel_Region/retail/p011",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p011/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "4525 EBENEZER RD",
+        "UNIT 1"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "07 Mar 2012",
+      "price_text": "$656,896",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Gore Plaza Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pritam Singh",
+        "4515 Ebenezer Rd, Ste 210",
+        "Brampton, Ontario",
+        "L6P 2K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2313278 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vishal Midha",
+        "4522 Ebenezer Rd, Unit 1",
+        "Brampton, Ontario",
+        "L6P 2K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 773",
+      "Level 1, Unit 16",
+      "",
+      "PIN: 19773-0016"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $656,896     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $525,517   rate: Prime plus 5.0% per annum",
+      "registered: 03/07/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT841/RT84135/0323_144023.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT841/RT84135/0323_144044.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT841/RT84135/0323_144215.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT841/RT84135/0323_144220.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT841/RT84135/0323_144303.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT841/RT84135/0323_144332.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT841/RT84135/air1.jpg",
+        "/assets/files/RT8/RT841/RT84135/air2.jpg",
+        "/assets/files/RT8/RT841/RT84135/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "541 / 1087",
+      "rt_id": "RT84135"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "4525 EBENEZER RD, UNIT 1",
+    "postcode": "L6P 2K8",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "03/07/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "656896",
+    "cash": "656896",
+    "debt": "",
+    "note": "",
+    "pin": "19773-0016",
+    "rollno": ""
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "4525 EBENEZER RD",
+      "UNIT 1"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "07 Mar 2012",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "The Gore Plaza Inc"
+    ],
+    "buyer_lines": [
+      "2313278 Ontario Inc"
+    ],
+    "price_text": "$656,896"
+  }
+}

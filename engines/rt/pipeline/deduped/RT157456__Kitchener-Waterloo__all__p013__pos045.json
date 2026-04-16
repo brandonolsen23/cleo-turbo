@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT157456",
+  "source_folder": "Kitchener-Waterloo/all/p013",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT157456",
+      "source_folder": "Kitchener-Waterloo/all/p013",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p013/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "44063 NEWRY RD"
+      ],
+      "city_region": "Huron E. : Huron County",
+      "date_text": "24 Dec 2020",
+      "price_text": "$1,600,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Terpstra Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeremy Terpstra",
+        "44423 Newry Rd, RR 3",
+        "Brussels, Ontario",
+        "N0G 1H0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lots 18-20",
+      "As in Inst No R-224629",
+      "",
+      "PIN: 41352-0095",
+      "",
+      "100.56 acre"
+    ],
+    "arn_text": "40 40 420 010 02400",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "646 / 2093",
+      "rt_id": "RT157456"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "44063 NEWRY RD",
+    "postcode": "N0G 1H0",
+    "municipality": "Huron E.",
+    "region": "Huron County",
+    "date": "12/24/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.56",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "41352-0095",
+    "rollno": "40 40 420 010 02400"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "44063 NEWRY RD"
+    ],
+    "city_region": "Huron E. : Huron County",
+    "date_text": "24 Dec 2020",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Terpstra Farms Ltd"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

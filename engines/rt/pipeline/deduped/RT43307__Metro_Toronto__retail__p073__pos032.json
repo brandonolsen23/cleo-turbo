@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT43307",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43307",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "475 ROGERS RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "25 Jul 2005",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "JJCCT Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jose Dias",
+        "1170 Dundas St W",
+        "Toronto, Ontario",
+        "M6J 1X4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ferr View Homes Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adelino Ferreira",
+        "411 Dovercourt Rd",
+        "Toronto, Ontario",
+        "M6J 3E8"
+      ]
+    },
+    "description_lines": [
+      "Former LCBO - 1 storey; about 4,400 sf @ $273",
+      "",
+      "Bldg size includes basment.",
+      "",
+      "Last transferred in Nov 2004 for $955,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2245, Lots 962-966",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "19 14 051 130 01700",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3633 / 4952",
+      "rt_id": "RT43307"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "475 ROGERS RD",
+    "postcode": "M6M 1B2",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "07/25/2005",
+    "desc": "Former LCBO - 1 storey; about 4,400 sf @ $273",
+    "bldg": "4,400 sf",
+    "acreage": ".31",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 051 130 01700"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "475 ROGERS RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "25 Jul 2005",
+    "note": "",
+    "description": "Former LCBO - 1 storey; about 4,400 sf @ $273",
+    "seller_lines": [
+      "JJCCT Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Ferr View Homes Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

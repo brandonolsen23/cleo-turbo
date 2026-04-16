@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT46772",
+  "source_folder": "York_Region/retail/p015",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46772",
+      "source_folder": "York_Region/retail/p015",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "7777 WESTON RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "30 Jan 2006",
+      "price_text": "$5,019,693",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ford Motor Co of Canada Ltd     416-862-7525"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nicholas Siroskey",
+        "Gowling Lafleur Henderson LLP",
+        "100 King St W, Ste 1600",
+        "Toronto, Ontario",
+        "M5X 1G5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1483969 Ontario Ltd     416-798-4777"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Franco Palladini",
+        "Al Palladini Pine Tree Lincoln",
+        "7777 Weston Rd",
+        "Vaughan, Ontario",
+        "L4L 1A6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 6",
+      "Plan 64R-8157, Part 1",
+      "Except:",
+      "Plan 65R-6384, Parts 2 & 9",
+      "Plan 65R-13895, Part 1",
+      "",
+      "4.81 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,019,693     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $5,020,000   rate: Base plus 10.0% per annum",
+      "registered: 01/30/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT467/RT46772/air1.jpg",
+        "/assets/files/RT4/RT467/RT46772/air2.jpg",
+        "/assets/files/RT4/RT467/RT46772/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT467/RT46772/photo.jpg"
+    },
+    "footer": {
+      "page_position": "712 / 984",
+      "rt_id": "RT46772"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "7777 WESTON RD",
+    "postcode": "L4L 1A6",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/30/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.81",
+    "consid": "5019693",
+    "cash": "5019693",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "7777 WESTON RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "30 Jan 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ford Motor Co of Canada Ltd"
+    ],
+    "buyer_lines": [
+      "1483969 Ontario Ltd"
+    ],
+    "price_text": "$5,019,693"
+  }
+}

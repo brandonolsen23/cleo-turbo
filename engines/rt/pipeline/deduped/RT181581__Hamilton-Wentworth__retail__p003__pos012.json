@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT181581",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181581",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1367 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "23 Nov 2023",
+      "price_text": "$1,030,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1450542 Ontario Inc     905-761-5738"
+      ],
+      "trade_name": "Varcon Construction",
+      "contact_lines": [
+        "Attn: Angelo Riccio",
+        "250 Doney Cres",
+        "Concord, Ontario",
+        "L4K 3A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8 - Barton, Part Lot 14",
+      "As in Inst No VM-138442",
+      "",
+      "PIN: 16913-0004",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "25 18 070 861 03280",
+    "consideration_lines": [
+      "cash: $1,030,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Richard, Sharon & Adam Cheng",
+      "principal: $480,000   rate: 6.0% per annum.",
+      "registered: 11/23/2023   due: 07/15/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181581/1202_110528.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181581/1202_110532.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181581/1202_110533.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181581/1202_110555.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181581/1202_110556.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181581/1202_110615.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "113 / 616",
+      "rt_id": "RT181581"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1367 UPPER JAMES ST",
+    "postcode": "L9B 1K2",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "11/23/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "1030000",
+    "cash": "1030000",
+    "debt": "",
+    "note": "",
+    "pin": "16913-0004",
+    "rollno": "25 18 070 861 03280"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1367 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "23 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1450542 Ontario Inc"
+    ],
+    "price_text": "$1,030,000"
+  }
+}

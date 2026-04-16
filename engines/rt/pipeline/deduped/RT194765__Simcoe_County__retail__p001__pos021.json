@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT194765",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194765",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "306 YONGE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "08 Oct 2025",
+      "price_text": "$3,000,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Vector Financial Services Ltd     416-483-8018"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "245 Eglinton Ave E, Ste 400",
+        "Toronto, Ontario",
+        "M4P 3B7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Yonge Huronia Inc     416-739-7758"
+      ],
+      "trade_name": "Street Properties",
+      "contact_lines": [
+        "Attn: Denis Gubert",
+        "1858 Avenue Rd, Ste 200",
+        "Toronto, Ontario",
+        "M5M 3Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 14 - Innisfil, Part Lot 10",
+      "As in Inst No RO-904753",
+      "Except:",
+      "Plan 51R-19000, Part 1",
+      "Plan 51R-21716, Part 2",
+      "",
+      "PIN: 58749-0316",
+      "",
+      "2.55 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $2,000,000",
+      "",
+      "chargee: Vector Financial Services Ltd",
+      "principal: $2,000,000   rate: RBC prime plus 4.0% per annum until 10/9/2027. Thereafter, the greater of 11.95% and RBC prime plus 7.0% per annum.",
+      "registered: 10/08/2025   due: 11/10/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194765/1220_094742.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194765/1220_094743.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194765/1220_094808.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194765/1220_094809.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194765/1220_094810.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1947/RT194765/air1.jpg",
+        "/assets/files/RT19/RT1947/RT194765/air2.jpg",
+        "/assets/files/RT19/RT1947/RT194765/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 712",
+      "rt_id": "RT194765"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "306 YONGE ST",
+    "postcode": "L4N 4C7",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "10/08/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.55",
+    "consid": "3000000",
+    "cash": "1000000",
+    "debt": "2000000",
+    "note": "Power of Sale",
+    "pin": "58749-0316",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "306 YONGE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "08 Oct 2025",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Vector Financial Services Ltd"
+    ],
+    "buyer_lines": [
+      "Yonge Huronia Inc"
+    ],
+    "price_text": "$3,000,000"
+  }
+}

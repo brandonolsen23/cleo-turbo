@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT143996",
+  "source_folder": "Wellington/retail/p002",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT143996",
+      "source_folder": "Wellington/retail/p002",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p002/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "765 WOODLAWN RD W"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "25 Jun 2019",
+      "price_text": "$9,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wdlwn Properties Inc     866-938-0561"
+      ],
+      "trade_name": "AutoCanada",
+      "contact_lines": [
+        "Attn: Peter Hong",
+        "15511 - 123rd Ave NW, Ste 200",
+        "Edmonton, Alberta",
+        "T5V 0C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "APR (Guelph Woodlawn) Inc     647-789-2440"
+      ],
+      "trade_name": "Automotive Properties REIT",
+      "contact_lines": [
+        "Attn: Milton Lamb",
+        "133 King St E, Ste 300",
+        "Toronto, Ontario",
+        "M5C 1G6"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership",
+      "",
+      "Last transferred in December 2016 for $9,400,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Division D, Part Lot 1",
+      "Plan 61R-3465, Parts 2 & 3",
+      "",
+      "PIN: 71360-0085",
+      "",
+      "2.82 acre"
+    ],
+    "arn_text": "23 08 040 017 18060",
+    "consideration_lines": [
+      "cash: $9,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1439/RT143996/0809_105216.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1439/RT143996/0809_105303.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1439/RT143996/0809_105325.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1439/RT143996/0809_105348.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1439/RT143996/0809_105409.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "85 / 269",
+      "rt_id": "RT143996"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "765 WOODLAWN RD W",
+    "postcode": "N1K 1E9",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "06/25/2019",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "2.82",
+    "consid": "9500000",
+    "cash": "9500000",
+    "debt": "",
+    "note": "",
+    "pin": "71360-0085",
+    "rollno": "23 08 040 017 18060"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "765 WOODLAWN RD W"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "25 Jun 2019",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Wdlwn Properties Inc"
+    ],
+    "buyer_lines": [
+      "APR (Guelph Woodlawn) Inc"
+    ],
+    "price_text": "$9,500,000"
+  }
+}

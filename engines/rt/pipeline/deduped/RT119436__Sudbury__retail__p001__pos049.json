@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT119436",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT119436",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "444 BARRYDOWNE RD"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "12 Sep 2016",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "338026 Ontario Ltd",
+        "Andrea, Maria & Nancy Cotroneo     647-348-2239"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Antonio Cotroneo",
+        "9 Riverlea Dr",
+        "Toronto, Ontario",
+        "M9P 2G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1840395 Ontario Inc     705-525-7091"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Derek Bain",
+        "444 Barrydowne Rd",
+        "Sudbury, Ontario",
+        "P3A 3T3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 12",
+      "As in Inst No LT-111966",
+      "Except Inst Nos:",
+      "LT-166361 & LT-172460",
+      "",
+      "PIN: 73573-0123",
+      "",
+      "NE corner Kingsway and Barrydowne Rd",
+      "",
+      "1.81 acre"
+    ],
+    "arn_text": "53 07 010 026 02800",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $3,800,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 09/12/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "50 / 90",
+      "rt_id": "RT119436"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "444 BARRYDOWNE RD",
+    "postcode": "P3A 3T3",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "09/12/2016",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.81",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "73573-0123",
+    "rollno": "53 07 010 026 02800"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "444 BARRYDOWNE RD"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "12 Sep 2016",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "338026 Ontario Ltd",
+      "Andrea, Maria & Nancy Cotroneo"
+    ],
+    "buyer_lines": [
+      "1840395 Ontario Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

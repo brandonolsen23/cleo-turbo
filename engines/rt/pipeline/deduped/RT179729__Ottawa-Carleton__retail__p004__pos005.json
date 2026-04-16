@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT179729",
+  "source_folder": "Ottawa-Carleton/retail/p004",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179729",
+      "source_folder": "Ottawa-Carleton/retail/p004",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p004/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "268 PRESTON ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Jul 2023",
+      "price_text": "$1,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2333447 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "268 Preston Holdings Inc     613-404-4845"
+      ],
+      "trade_name": "Jason Anbara Mortgages",
+      "contact_lines": [
+        "Attn: Jason Anbara",
+        "291 Olmstead St",
+        "Ottawa, Ontario",
+        "K1L 7J9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 113,",
+      "Part Lot 1, W Preston St",
+      "As in Inst No N-544968",
+      "",
+      "PIN: 04106-0084",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "06 14 063 501 10800",
+    "consideration_lines": [
+      "cash: $1,175,000     assumed/vtb debt: $0",
+      "chattels: $200,000",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $1,031,250   rate: 7.89% per annum.",
+      "registered: 07/31/2023   due: 08/05/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179729/1104_112639.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179729/1104_112643.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179729/1104_112655.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179729/1104_112713.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1797/RT179729/1104_112731.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "156 / 1141",
+      "rt_id": "RT179729"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "268 PRESTON ST",
+    "postcode": "K1R 7R5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1175000",
+    "cash": "1175000",
+    "debt": "",
+    "note": "",
+    "pin": "04106-0084",
+    "rollno": "06 14 063 501 10800"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "268 PRESTON ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2333447 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "268 Preston Holdings Inc"
+    ],
+    "price_text": "$1,175,000"
+  }
+}

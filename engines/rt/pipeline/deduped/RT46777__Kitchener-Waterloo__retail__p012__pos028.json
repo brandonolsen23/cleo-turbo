@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT46777",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46777",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "55 NORTHFIELD DR E"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "02 Feb 2006",
+      "price_text": "$8,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1148255 Ontario Ltd",
+        "Northport Landing Inc",
+        "Northport Landing Commercial Centre"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Connie Dietrich",
+        "Wright Dietrich",
+        "885 Glasgow St",
+        "Kitchener, Ontario",
+        "N2M 2N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CFN Investments Inc     519-742-5885"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Hagn",
+        "EIWO Canadian Management Ltd",
+        "82 Weber St E",
+        "Kitchener, Ontario",
+        "N2H 1C7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar - 1 storey; 4 bldgs 12 units 22,601 sf @ $385",
+      "",
+      "Anchored by a free standing Tim Hortons & McDonalds."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Part Lot 8",
+      "Plan 58R-9884, Parts 1-3",
+      "",
+      "3.83 acre"
+    ],
+    "arn_text": "30 16 010 001 10100",
+    "consideration_lines": [
+      "cash: $8,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT467/RT46777/photo.jpg"
+    },
+    "footer": {
+      "page_position": "579 / 752",
+      "rt_id": "RT46777"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "55 NORTHFIELD DR E",
+    "postcode": "N2K 3T6",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "02/02/2006",
+    "desc": "Retail Plaza & Gas Bar - 1 storey; 4 bldgs 12 units 22,601 sf @ $385",
+    "bldg": "22,601 sf",
+    "acreage": "3.83",
+    "consid": "8700000",
+    "cash": "8700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 010 001 10100"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "55 NORTHFIELD DR E"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "02 Feb 2006",
+    "note": "",
+    "description": "Retail Plaza & Gas Bar - 1 storey; 4 bldgs 12 units 22,601 sf @ $385",
+    "seller_lines": [
+      "1148255 Ontario Ltd",
+      "Northport Landing Inc",
+      "Northport Landing Commercial Centre"
+    ],
+    "buyer_lines": [
+      "CFN Investments Inc"
+    ],
+    "price_text": "$8,700,000"
+  }
+}

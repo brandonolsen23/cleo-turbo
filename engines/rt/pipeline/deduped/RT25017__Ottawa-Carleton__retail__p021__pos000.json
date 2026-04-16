@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT25017",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25017",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1610 MERIVALE RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "19 Apr 2002",
+      "price_text": "$653,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Speca Investments Inc     416-598-2581"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Luigi Speca",
+        "Malabar Ltd",
+        "14 McCaul St",
+        "Toronto, Ontario",
+        "M5T 1V6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 units 5,200 sf @ $126"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-1479, Part 1",
+      "",
+      "0.71 acre"
+    ],
+    "arn_text": "06 12 000 560 06300",
+    "consideration_lines": [
+      "cash: $653,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT250/RT25017/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1001 / 1141",
+      "rt_id": "RT25017"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1610 MERIVALE RD",
+    "postcode": "K2G 3K3",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "04/19/2002",
+    "desc": "Retail Plaza - 1 storey; 5 units 5,200 sf @ $126",
+    "bldg": "5,200 sf",
+    "acreage": ".71",
+    "consid": "653000",
+    "cash": "653000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 12 000 560 06300"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1610 MERIVALE RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "19 Apr 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 units 5,200 sf @ $126",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Speca Investments Inc"
+    ],
+    "price_text": "$653,000"
+  }
+}

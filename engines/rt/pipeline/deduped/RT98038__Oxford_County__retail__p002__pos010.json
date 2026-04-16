@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT98038",
+  "source_folder": "Oxford_County/retail/p002",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT98038",
+      "source_folder": "Oxford_County/retail/p002",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p002/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "124 TILLSON AVE"
+      ],
+      "city_region": "Tillsonburg : Oxford County",
+      "date_text": "31 Oct 2013",
+      "price_text": "$500,001",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2026257 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Wayne Hussey",
+        "146 King St",
+        "Tillsonburg, Ontario",
+        "N4G 3G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2386901 Ontario Inc     905-794-0265"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Prem Sharma",
+        "36 Darren Rd",
+        "Brampton, Ontario",
+        "L6P 1Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 500, Part Lot 386",
+      "As in Inst No 466680",
+      "",
+      "PIN: 00029-0269",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "32 04 010 010 63100",
+    "consideration_lines": [
+      "cash: $500,001     assumed/vtb debt: $0",
+      "",
+      "chargee: First Source Mortgage Corp",
+      "principal: $1,500,000   rate: 9.0% per annum.",
+      "registered: 10/31/2013   due: 06/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT980/RT98038/0405_090753.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT980/RT98038/0405_090808.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT980/RT98038/0405_090809.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "61 / 96",
+      "rt_id": "RT98038"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "124 TILLSON AVE",
+    "postcode": "N4G 3A5",
+    "municipality": "Tillsonburg",
+    "region": "Oxford County",
+    "date": "10/31/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "500001",
+    "cash": "500001",
+    "debt": "",
+    "note": "",
+    "pin": "00029-0269",
+    "rollno": "32 04 010 010 63100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "124 TILLSON AVE"
+    ],
+    "city_region": "Tillsonburg : Oxford County",
+    "date_text": "31 Oct 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2026257 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2386901 Ontario Inc"
+    ],
+    "price_text": "$500,001"
+  }
+}

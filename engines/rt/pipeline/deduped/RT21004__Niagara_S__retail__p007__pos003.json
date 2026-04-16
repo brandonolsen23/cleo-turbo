@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT21004",
+  "source_folder": "Niagara_S/retail/p007",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21004",
+      "source_folder": "Niagara_S/retail/p007",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p007/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "4030 MONTROSE RD"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "08 Mar 2001",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Brockway Properties Ltd     905-688-9371"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harold Smith",
+        "c/o Windim Properties",
+        "80 King St, 4th Flr",
+        "St Catharines, Ontario",
+        "L2R 7G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Brockway Plaza Inc     416-967-0402"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leslie Black",
+        "Dalewood Economy Ltd",
+        "360 Bloor St, Ste 510",
+        "Toronto, Ontario",
+        "M5S 1X1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - about 16,088 sf on 2.012 Ac",
+      "",
+      "Fast Food (Burger King) 3,450 sf",
+      "Restaurant (Robbin's Donuts) 2,250 sf",
+      "Plaza 10,388 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-11084, Part 3",
+      "",
+      "SE corner at Thorold Stone Rd",
+      "",
+      "2.01 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,054,417     assumed/vtb debt: $1,645,583"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT210/RT21004/photo.jpg"
+    },
+    "footer": {
+      "page_position": "304 / 324",
+      "rt_id": "RT21004"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "4030 MONTROSE RD",
+    "postcode": "L2H 3E1",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "03/08/2001",
+    "desc": "Retail Plaza - about 16,088 sf on 2.012 Ac",
+    "bldg": "",
+    "acreage": "2.01",
+    "consid": "2700000",
+    "cash": "1054417",
+    "debt": "1645583",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "4030 MONTROSE RD"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "08 Mar 2001",
+    "note": "",
+    "description": "Retail Plaza - about 16,088 sf on 2.012 Ac",
+    "seller_lines": [
+      "Brockway Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Brockway Plaza Inc"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

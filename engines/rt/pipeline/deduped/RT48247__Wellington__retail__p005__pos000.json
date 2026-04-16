@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT48247",
+  "source_folder": "Wellington/retail/p005",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48247",
+      "source_folder": "Wellington/retail/p005",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "615 SCOTTSDALE DR"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "28 Apr 2006",
+      "price_text": "$10,700,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Monterra (Guelph) Ltd     416-440-0366"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Sheldon Goodman",
+        "Monterra Capital Corp",
+        "287 Eglinton Ave E, 1st Flr",
+        "Toronto, Ontario",
+        "M4P 1L3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "364268 Canada Inc     416-681-3400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Antonio Maduri",
+        "Bentall Investment Management LP",
+        "55 University Ave, Ste 300",
+        "Toronto, Ontario",
+        "M5J 2H7"
+      ]
+    },
+    "description_lines": [
+      "Shopper's Drug Mart, LCBO, Pet Valu & Cdn Tire Gas Bar",
+      "",
+      "Last transferred in Jul 2005 for $10,950,000"
+    ],
+    "more_info_url": "/assets/files/RT4/RT482/RT48247/mi.pdf",
+    "site_lines": [
+      "Conc 7, Part Lot 1",
+      "Plan 61R-2547",
+      "Parts 3-5, 7-10",
+      "",
+      "SE corner of Scottsdale Dr & Stone Rd W",
+      "",
+      "3.75 acre"
+    ],
+    "arn_text": "23 08 060 009 41175",
+    "consideration_lines": [
+      "cash: $10,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Sun Life Assurance Co of Canada",
+      "principal: $7,000,000   rate: 6.01% per annum",
+      "registered: 04/28/2005   due: 05/01/2020"
+    ],
+    "broker_lines": [
+      "TD Securities Realty Group: Leonard Abramsky & David Peltz, 416-983-1829"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "201 / 269",
+      "rt_id": "RT48247"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "615 SCOTTSDALE DR",
+    "postcode": "N1G 3P4",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "04/28/2006",
+    "desc": "Shopper's Drug Mart, LCBO, Pet Valu & Cdn Tire Gas Bar",
+    "bldg": "",
+    "acreage": "3.75",
+    "consid": "10700000",
+    "cash": "10700000",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "23 08 060 009 41175"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "615 SCOTTSDALE DR"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "28 Apr 2006",
+    "note": "Portfolio Sale",
+    "description": "Shopper's Drug Mart, LCBO, Pet Valu & Cdn Tire Gas Bar",
+    "seller_lines": [
+      "Monterra (Guelph) Ltd"
+    ],
+    "buyer_lines": [
+      "364268 Canada Inc"
+    ],
+    "price_text": "$10,700,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT193001",
+  "source_folder": "Hamilton-Wentworth/retail/p001",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193001",
+      "source_folder": "Hamilton-Wentworth/retail/p001",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p001/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "892 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "27 Jun 2025",
+      "price_text": "$1,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "FirstOntario Credit Union Ltd     800-616-8878"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "970 South Service Rd, Ste 301",
+        "Stoney Creek, Ontario",
+        "L8E 6A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000915576 Ontario Inc     905-540-4800"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darko Vranich",
+        "366 King St W",
+        "Hamilton, Ontario",
+        "L8P 1B3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1469, Lot 11",
+      "",
+      "PIN: 16968-0285",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "25 18 080 931 08750",
+    "consideration_lines": [
+      "cash: $1,675,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193001/0719_123004.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193001/0719_123011.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193001/0719_123012.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193001/0719_123046.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "25 / 616",
+      "rt_id": "RT193001"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "892 UPPER JAMES ST",
+    "postcode": "L9C 3A5",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "06/27/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "1675000",
+    "cash": "1675000",
+    "debt": "",
+    "note": "",
+    "pin": "16968-0285",
+    "rollno": "25 18 080 931 08750"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "892 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "27 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "FirstOntario Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "1000915576 Ontario Inc"
+    ],
+    "price_text": "$1,675,000"
+  }
+}

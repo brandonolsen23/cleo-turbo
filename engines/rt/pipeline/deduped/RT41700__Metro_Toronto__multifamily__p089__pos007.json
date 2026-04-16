@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT41700",
+  "source_folder": "Metro_Toronto/multifamily/p089",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41700",
+      "source_folder": "Metro_Toronto/multifamily/p089",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p089/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "92B SCOLLARD ST",
+        "92C SCOLLARD ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Apr 2005",
+      "price_text": "$985,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Londen Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lars Londen",
+        "92B Scollard St",
+        "Toronto, Ontario",
+        "M5R 1G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2068853 Ontario Inc     416-497-0984"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jim Papadopoulos",
+        "45 Lambeth Sq",
+        "Toronto, Ontario",
+        "M1W 3B3"
+      ]
+    },
+    "description_lines": [
+      "Com/Res Bldg - 3.5 storey; 3,650 sf @ $270",
+      "",
+      "1-2nd flrs: vacant retail/office space; about 2,200 sf",
+      "",
+      "3-4th flrs: loft apartment; about 1,400 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-697, Parts 3 & 4",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 052 280 06230",
+    "consideration_lines": [
+      "cash: $985,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Interland Investments Ltd",
+      "principal: $400,000   rate: 6.5% per annum",
+      "registered: 04/29/2005   due: 05/01/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT417/RT41700/air1.jpg",
+        "/assets/files/RT4/RT417/RT41700/air2.jpg",
+        "/assets/files/RT4/RT417/RT41700/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT417/RT41700/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4408 / 6031",
+      "rt_id": "RT41700"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "92B SCOLLARD ST, 92C SCOLLARD ST",
+    "postcode": "M5R 1G2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/29/2005",
+    "desc": "Com/Res Bldg - 3.5 storey; 3,650 sf @ $270",
+    "bldg": "3,650 sf",
+    "acreage": ".03",
+    "consid": "985000",
+    "cash": "985000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 280 06230"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "92B SCOLLARD ST",
+      "92C SCOLLARD ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Apr 2005",
+    "note": "",
+    "description": "Com/Res Bldg - 3.5 storey; 3,650 sf @ $270",
+    "seller_lines": [
+      "Londen Inc"
+    ],
+    "buyer_lines": [
+      "2068853 Ontario Inc"
+    ],
+    "price_text": "$985,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT43199",
+  "source_folder": "Wellington/retail/p005",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43199",
+      "source_folder": "Wellington/retail/p005",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "615 SCOTTSDALE DR"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "21 Jul 2005",
+      "price_text": "$10,950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Starbank Development Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bao Tu Nguyen",
+        "136 Caribou Rd",
+        "Toronto, Ontario",
+        "M5N 2B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Monterra (Guelph) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sherry Firestone",
+        "287 Eglinton Ave E, Ste 100",
+        "Toronto, Ontario",
+        "M4P 1L3"
+      ]
+    },
+    "description_lines": [
+      "Shopper's Drug Mart, LCBO, Pet Valu & Cdn Tire Gas Bar",
+      "",
+      "Last transferred in June 2003 for $2,400,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 1",
+      "Plan 61R-2547, Parts 3-5, 7-10",
+      "",
+      "3.75 acre"
+    ],
+    "arn_text": "23 08 060 009 41175",
+    "consideration_lines": [
+      "cash: $3,950,000     assumed/vtb debt: $7,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT431/RT43199/photo.jpg"
+    },
+    "footer": {
+      "page_position": "210 / 269",
+      "rt_id": "RT43199"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "615 SCOTTSDALE DR",
+    "postcode": "N1G 3P4",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "07/21/2005",
+    "desc": "Shopper's Drug Mart, LCBO, Pet Valu & Cdn Tire Gas Bar",
+    "bldg": "",
+    "acreage": "3.75",
+    "consid": "10950000",
+    "cash": "3950000",
+    "debt": "7000000",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 060 009 41175"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "615 SCOTTSDALE DR"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "21 Jul 2005",
+    "note": "",
+    "description": "Shopper's Drug Mart, LCBO, Pet Valu & Cdn Tire Gas Bar",
+    "seller_lines": [
+      "Starbank Development Corp"
+    ],
+    "buyer_lines": [
+      "Monterra (Guelph) Ltd"
+    ],
+    "price_text": "$10,950,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT21285",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21285",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "201 RIVER OAKS BLVD W"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "03 May 2001",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Haris & Javed Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shamin Javed",
+        "201 River Oaks Blvd W, Unit 4",
+        "Oakville, Ontario",
+        "L6H 3S7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Anmole & Rekha Rattan"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "124 Larkspur Rd",
+        "Brampton, Ontario",
+        "L6R 2C5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4,517 sf @ $162",
+      "",
+      "6 retail units",
+      "Last transferred in May 99 for $710,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20M-311, Block 148",
+      "",
+      "NE corner at Munn's Ave",
+      "",
+      "0.56 acre"
+    ],
+    "arn_text": "24 01 010 030 55425",
+    "consideration_lines": [
+      "cash: $680,000     assumed/vtb debt: $50,000"
+    ],
+    "broker_lines": [
+      "Royal LePage: Mahender Pal Sharma, 416-245-9933"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT212/RT21285/photo.jpg"
+    },
+    "footer": {
+      "page_position": "546 / 613",
+      "rt_id": "RT21285"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "201 RIVER OAKS BLVD W",
+    "postcode": "L6H 3S7",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "05/03/2001",
+    "desc": "Retail Plaza - 1 storey; 4,517 sf @ $162",
+    "bldg": "4,517 sf",
+    "acreage": ".56",
+    "consid": "730000",
+    "cash": "680000",
+    "debt": "50000",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 010 030 55425"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "201 RIVER OAKS BLVD W"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "03 May 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4,517 sf @ $162",
+    "seller_lines": [
+      "Haris & Javed Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Anmole & Rekha Rattan"
+    ],
+    "price_text": "$730,000"
+  }
+}

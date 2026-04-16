@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT111507",
+  "source_folder": "Ottawa-Carleton/retail/p009",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT111507",
+      "source_folder": "Ottawa-Carleton/retail/p009",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p009/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "1346 BANKFIELD RD"
+      ],
+      "city_region": "Manotick : Ottawa-Carleton",
+      "date_text": "02 Oct 2015",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1823334 Ontario Inc     613-692-3511"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeffrey McNeil",
+        "c/o Donald P Hamilton",
+        "Barristers and Solicitors",
+        "5506 Manotick Main St",
+        "PO Box 519",
+        "Manotick, Ontario",
+        "K4M 1A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2472099 Ontario Inc     613-226-8300"
+      ],
+      "trade_name": "Loaves and Fishes",
+      "contact_lines": [
+        "Attn: Patrick Butler",
+        "63 Roydon Place",
+        "Ottawa, Ontario",
+        "K2E 1A3"
+      ]
+    },
+    "description_lines": [
+      "Ford Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - Broken Front, Part Lot 1",
+      "Plan 4R-23864, Part 2",
+      "",
+      "PIN: 03902-0994",
+      "",
+      "5.80 acre"
+    ],
+    "arn_text": "06 14 183 815 13417",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Ford Credit Canada Ltd",
+      "principal: $4,000,000   rate: Lender's Index rate plus 2.65% per annum.",
+      "registered: 10/02/2015   due: 10/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1115/RT111507/0108_145914.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1115/RT111507/0108_145916.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1115/RT111507/0108_145923.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1115/RT111507/0108_150100.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1115/RT111507/0108_150104.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1115/RT111507/0108_150139.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "421 / 1141",
+      "rt_id": "RT111507"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "1346 BANKFIELD RD",
+    "postcode": "K4M 0B2",
+    "municipality": "Manotick",
+    "region": "Ottawa-Carleton",
+    "date": "10/02/2015",
+    "desc": "Ford Car Dealership",
+    "bldg": "",
+    "acreage": "5.8",
+    "consid": "4000000",
+    "cash": "4000000",
+    "debt": "",
+    "note": "",
+    "pin": "03902-0994",
+    "rollno": "06 14 183 815 13417"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "1346 BANKFIELD RD"
+    ],
+    "city_region": "Manotick : Ottawa-Carleton",
+    "date_text": "02 Oct 2015",
+    "note": "",
+    "description": "Ford Car Dealership",
+    "seller_lines": [
+      "1823334 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2472099 Ontario Inc"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

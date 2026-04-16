@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT27753",
+  "source_folder": "Metro_Toronto/retail/p083",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27753",
+      "source_folder": "Metro_Toronto/retail/p083",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p083/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "2270 KEELE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "12 Nov 2002",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dauson Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3410 Sheppard Ave E, Ste 401",
+        "Scarborough, Ontario",
+        "M1T 3K4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1548014 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dean Phekos",
+        "788A O'Connor Dr",
+        "Toronto, Ontario",
+        "M4B 2S6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 units 7,079 sf @ $134"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-15094, Part 1",
+      "",
+      "SW corner at Flamborough Dr",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "19 08 021 070 10800",
+    "consideration_lines": [
+      "cash: $463,952     assumed/vtb debt: $486,048"
+    ],
+    "broker_lines": [
+      "Esbin Realty Corp: Allan Scott, 416-922-0777"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4101 / 4952",
+      "rt_id": "RT27753"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "2270 KEELE ST",
+    "postcode": "M6M 3Y9",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "11/12/2002",
+    "desc": "Retail Plaza - 1 storey; 6 units 7,079 sf @ $134",
+    "bldg": "7079 sf",
+    "acreage": ".5",
+    "consid": "950000",
+    "cash": "463952",
+    "debt": "486048",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 021 070 10800"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "2270 KEELE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "12 Nov 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 units 7,079 sf @ $134",
+    "seller_lines": [
+      "Dauson Properties Ltd"
+    ],
+    "buyer_lines": [
+      "1548014 Ontario Ltd"
+    ],
+    "price_text": "$950,000"
+  }
+}

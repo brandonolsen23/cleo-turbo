@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT22837",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22837",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "1225 WONDERLAND RD N"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "10 Sep 2001",
+      "price_text": "$8,703,034",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Roswood Holdings Ltd     416-961-4840"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dr Murray Frum",
+        "720 Spadina Ave, Ste 220",
+        "Toronto, Ontario",
+        "M5S 2T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-642, Parts 1 & 2"
+    ],
+    "arn_text": "39 36 010 641 17600",
+    "consideration_lines": [
+      "cash: $3,953,034     assumed/vtb debt: $4,750,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT228/RT22837/photo.jpg"
+    },
+    "footer": {
+      "page_position": "608 / 686",
+      "rt_id": "RT22837"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "1225 WONDERLAND RD N",
+    "postcode": "",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "09/10/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "8703034",
+    "cash": "3953034",
+    "debt": "4750000",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "39 36 010 641 17600"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "1225 WONDERLAND RD N"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "10 Sep 2001",
+    "note": "Partial Interest",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Roswood Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$8,703,034"
+  }
+}

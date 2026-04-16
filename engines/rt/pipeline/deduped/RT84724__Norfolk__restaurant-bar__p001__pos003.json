@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT84724",
+  "source_folder": "Norfolk/restaurant-bar/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT84724",
+      "source_folder": "Norfolk/restaurant-bar/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/restaurant-bar/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "526 JAMES ST"
+      ],
+      "city_region": "Delhi : Norfolk",
+      "date_text": "10 Apr 2012",
+      "price_text": "$1,665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "BVD Holdings Inc     416-523-2898"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bikram Dhillon",
+        "10 Everglade Dr",
+        "Brampton, Ontario",
+        "L6P 0R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2314052 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Manikkam Devendra",
+        "53 Ava Cres",
+        "Richmond Hill, Ontario",
+        "L4B 2X5"
+      ]
+    },
+    "description_lines": [
+      "Tim Hortons - 1 storey; 2,800 sf @ $595",
+      "",
+      "Leased to Tim Hortons"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 203",
+      "Lots 5-8, 39-41",
+      "",
+      "PIN: 50164-0244",
+      "",
+      "1.15 acre"
+    ],
+    "arn_text": "33 10 492 008 14200",
+    "consideration_lines": [
+      "cash: $1,665,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,000,000   rate: Prime plus 6.0% per annum",
+      "registered: 04/10/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT847/RT84724/0720_165243.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT847/RT84724/0720_165302.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT847/RT84724/air1.jpg",
+        "/assets/files/RT8/RT847/RT84724/air2.jpg",
+        "/assets/files/RT8/RT847/RT84724/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 5",
+      "rt_id": "RT84724"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "526 JAMES ST",
+    "postcode": "N4B 2C4",
+    "municipality": "Delhi",
+    "region": "Norfolk",
+    "date": "04/10/2012",
+    "desc": "Tim Hortons - 1 storey; 2,800 sf @ $595",
+    "bldg": "2,800 sf",
+    "acreage": "1.15",
+    "consid": "1665000",
+    "cash": "1665000",
+    "debt": "",
+    "note": "",
+    "pin": "50164-0244",
+    "rollno": "33 10 492 008 14200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "526 JAMES ST"
+    ],
+    "city_region": "Delhi : Norfolk",
+    "date_text": "10 Apr 2012",
+    "note": "",
+    "description": "Tim Hortons - 1 storey; 2,800 sf @ $595",
+    "seller_lines": [
+      "BVD Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2314052 Ontario Ltd"
+    ],
+    "price_text": "$1,665,000"
+  }
+}

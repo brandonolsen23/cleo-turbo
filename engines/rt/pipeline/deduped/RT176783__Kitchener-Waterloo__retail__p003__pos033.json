@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT176783",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176783",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 - 54 AINSLIE ST N"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "31 Mar 2023",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2287877 Alberta Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11216 142nd St NW",
+        "Edmonton, Ontario",
+        "T5M 1T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "50 Ainslie (Cambridge) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Braden Polyak",
+        "60 Main St, Ste 201",
+        "Cambridge, Ontario",
+        "N1R 1V4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 615,",
+      "Part Lots 2 & 3, S/S North St",
+      "As in Inst No WS-607015",
+      "",
+      "PIN: 03815-0118",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "30 06 040 016 01100",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_135837.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_135910.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_135937.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_140014.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_140029.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_140048.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176783/0722_140052.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "134 / 752",
+      "rt_id": "RT176783"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "50 - 54 AINSLIE ST N",
+    "postcode": "N1R 3J5",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "03/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "03815-0118",
+    "rollno": "30 06 040 016 01100"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "50 - 54 AINSLIE ST N"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "31 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2287877 Alberta Ltd"
+    ],
+    "buyer_lines": [
+      "50 Ainslie (Cambridge) Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

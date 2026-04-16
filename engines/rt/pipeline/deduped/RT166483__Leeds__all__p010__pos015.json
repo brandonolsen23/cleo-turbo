@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT166483",
+  "source_folder": "Leeds/all/p010",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT166483",
+      "source_folder": "Leeds/all/p010",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p010/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "ROKEBY LINE",
+        "CONC 9",
+        "PART LOT 4"
+      ],
+      "city_region": "Brooke : Lambton",
+      "date_text": "27 Jan 2022",
+      "price_text": "$1,850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1499031 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Munro",
+        "2634 Inwood Rd",
+        "Inwood, Ontario",
+        "N0N 1K0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 4",
+      "",
+      "PIN: 43345-0069",
+      "",
+      "100.91 acre"
+    ],
+    "arn_text": "38 15 120 020 12800",
+    "consideration_lines": [
+      "cash: $1,850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $4,000,000   rate: 18.0% per annum.",
+      "registered: 01/27/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "466 / 1916",
+      "rt_id": "RT166483"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "ROKEBY LINE, CONC 9, PART LOT 4",
+    "postcode": "",
+    "municipality": "Brooke",
+    "region": "Lambton",
+    "date": "01/27/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.91",
+    "consid": "1850000",
+    "cash": "1850000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43345-0069",
+    "rollno": "38 15 120 020 12800"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "ROKEBY LINE",
+      "CONC 9",
+      "PART LOT 4"
+    ],
+    "city_region": "Brooke : Lambton",
+    "date_text": "27 Jan 2022",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1499031 Ontario Ltd"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

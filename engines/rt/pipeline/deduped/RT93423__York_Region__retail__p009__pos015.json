@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT93423",
+  "source_folder": "York_Region/retail/p009",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93423",
+      "source_folder": "York_Region/retail/p009",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p009/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 LAIDLAW BLVD"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "21 Jun 2013",
+      "price_text": "$3,392,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "541094 Ontario Inc     905-477-3113"
+      ],
+      "trade_name": "Supreme Lighting & Electrical Supply Ltd",
+      "contact_lines": [
+        "Pres: Michael Stam",
+        "9 Laidlaw Blvd",
+        "Markham, Ontario",
+        "L3P 1W5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 2 tenants 30,000 sf @ $113",
+      "",
+      "Fully occupied by Sylvan Learning Centre and Supreme Lighting and Electrical Supply (the purchaser)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 7564, Lot 16",
+      "",
+      "PIN: 02914-0315",
+      "",
+      "E side Laidlaw Blvd, N of Hwy 7",
+      "",
+      "1.48 acre"
+    ],
+    "arn_text": "19 36 040 290 51800",
+    "consideration_lines": [
+      "cash: $3,392,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $2,250,000   rate: Prime plus 6.0% per annum.",
+      "registered: 06/21/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93423/0713_141708.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93423/0713_141757.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT934/RT93423/0713_141810.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "416 / 984",
+      "rt_id": "RT93423"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "11 LAIDLAW BLVD",
+    "postcode": "L3P 1W5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/21/2013",
+    "desc": "Retail Bldg - 2 storey; 2 tenants 30,000 sf @ $113",
+    "bldg": "30,000 sf",
+    "acreage": "1.48",
+    "consid": "3392000",
+    "cash": "3392000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "02914-0315",
+    "rollno": "19 36 040 290 51800"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "11 LAIDLAW BLVD"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "21 Jun 2013",
+    "note": "Purchased by Tenant",
+    "description": "Retail Bldg - 2 storey; 2 tenants 30,000 sf @ $113",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "541094 Ontario Inc"
+    ],
+    "price_text": "$3,392,000"
+  }
+}

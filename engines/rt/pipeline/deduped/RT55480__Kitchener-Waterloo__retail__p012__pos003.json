@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT55480",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55480",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "4300 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "15 May 2007",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1295347 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Clive Rigby",
+        "4296 King St E",
+        "Kitchener, Ontario",
+        "N2P 5E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Strasburg Properties Ltd     519-579-2650"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Larry Wolynetz",
+        "280 Victoria St N, Unit 5",
+        "Kitchener, Ontario",
+        "N2H 5C8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 25,000 sf @ $160",
+      "",
+      "La-Z-Boy Home Gallery Centre - 10 yr lease"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Beasley's BFC, Part Lot 9",
+      "Plan 58R-10027, Parts 1 & 2",
+      "",
+      "2.02 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $3,750,000   rate: 5.46% per annum",
+      "registered: 05/15/2007   due: 06/10/2012"
+    ],
+    "broker_lines": [
+      "Coldwell Banker Peter Benninger Realty: John Hoffman, 519-743-5211"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT554/RT55480/0805_084958.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT554/RT55480/0805_085048.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT554/RT55480/0805_085054.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "554 / 752",
+      "rt_id": "RT55480"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "4300 KING ST E",
+    "postcode": "N2P 2G5",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "05/15/2007",
+    "desc": "Retail Bldg - 1 storey; 25,000 sf @ $160",
+    "bldg": "25,000 sf",
+    "acreage": "2.02",
+    "consid": "4000000",
+    "cash": "4000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "4300 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "15 May 2007",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 25,000 sf @ $160",
+    "seller_lines": [
+      "1295347 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Strasburg Properties Ltd"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

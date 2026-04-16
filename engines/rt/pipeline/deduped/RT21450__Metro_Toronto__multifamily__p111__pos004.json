@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT21450",
+  "source_folder": "Metro_Toronto/multifamily/p111",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21450",
+      "source_folder": "Metro_Toronto/multifamily/p111",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p111/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "495 BRUNSWICK AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "25 May 2001",
+      "price_text": "$577,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "TriPlex - 2.5 storey; 3 units @ $192,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1152, Part Lot 29",
+      "As in Inst No CA-235654",
+      "",
+      "E side 200m S of Dupont"
+    ],
+    "arn_text": "19 04 051 430 01300",
+    "consideration_lines": [
+      "cash: $577,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Bernhard Ltd: Nick Bernhard, 416-482-9777"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT214/RT21450/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5505 / 6031",
+      "rt_id": "RT21450"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "495 BRUNSWICK AVE",
+    "postcode": "M5R 2Z6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/25/2001",
+    "desc": "TriPlex - 2.5 storey; 3 units @ $192,333",
+    "bldg": "3 units",
+    "acreage": "",
+    "consid": "577000",
+    "cash": "577000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 051 430 01300"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "495 BRUNSWICK AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "25 May 2001",
+    "note": "",
+    "description": "TriPlex - 2.5 storey; 3 units @ $192,333",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$577,000"
+  }
+}

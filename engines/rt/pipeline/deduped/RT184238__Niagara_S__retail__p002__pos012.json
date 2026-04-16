@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT184238",
+  "source_folder": "Niagara_S/retail/p002",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184238",
+      "source_folder": "Niagara_S/retail/p002",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p002/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "937 EAST MAIN ST"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "15 Apr 2024",
+      "price_text": "$918,116",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "12324407 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "75 Peelton Heights Rd",
+        "Brampton, Ontario",
+        "L6Y 3A3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "15679231 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Simranjeet Walia",
+        "8 Legendary Circle",
+        "Brampton, Ontario",
+        "L6Y 0R9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 978, Lot 92",
+      "",
+      "PIN: 64117-0006",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $918,116     assumed/vtb debt: $0",
+      "chattels: $1,249,920",
+      "other: $956,964",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,337,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/15/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184238/0721_082317.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184238/0721_082318.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184238/0721_082352.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184238/0721_082359.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184238/0721_082427.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1842/RT184238/air1.jpg",
+        "/assets/files/RT18/RT1842/RT184238/air2.jpg",
+        "/assets/files/RT18/RT1842/RT184238/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "63 / 324",
+      "rt_id": "RT184238"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "937 EAST MAIN ST",
+    "postcode": "L3B 3Z1",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "04/15/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".4",
+    "consid": "918116",
+    "cash": "918116",
+    "debt": "",
+    "note": "",
+    "pin": "64117-0006",
+    "rollno": ""
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "937 EAST MAIN ST"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "15 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "12324407 Canada Inc"
+    ],
+    "buyer_lines": [
+      "15679231 Canada Inc"
+    ],
+    "price_text": "$918,116"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT104395",
+  "source_folder": "Ottawa-Carleton/retail/p010",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104395",
+      "source_folder": "Ottawa-Carleton/retail/p010",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p010/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "340 QUEEN ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "19 Nov 2014",
+      "price_text": "$5,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Regent Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eric Levin",
+        "23 Roselawn Ct",
+        "Ottawa, Ontario",
+        "K2G 4J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1823071 Ontario Ltd     613-233-6030"
+      ],
+      "trade_name": "Claridge Homes",
+      "contact_lines": [
+        "VP: Neil Malhotra",
+        "210 Gladstone Ave, Ste 2001",
+        "Ottawa, Ontario",
+        "K2P 0Y6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3922",
+      "Part Lots 12-14, S/S Queen St",
+      "As in Inst No NS-11496",
+      "",
+      "PIN: 04114-0004",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "06 14 062 901 07700",
+    "consideration_lines": [
+      "cash: $5,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $3,500,000   rate: Interest applicable to pre-development at Banker's Acceptance (BA's)plus 2.50% per annum available in minimum draws of $1,000,000, and $100,000 multiples thereafter.\nCIBC Prime plus 1.0% per annum if BA's are not available or upon maturity.",
+      "registered: 11/20/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104395/0117_074119.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104395/0117_074145.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104395/0117_074235.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104395/0117_074241.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1043/RT104395/0117_074308.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "460 / 1141",
+      "rt_id": "RT104395"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "340 QUEEN ST",
+    "postcode": "K1R 5A5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/19/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "5700000",
+    "cash": "5700000",
+    "debt": "",
+    "note": "",
+    "pin": "04114-0004",
+    "rollno": "06 14 062 901 07700"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "340 QUEEN ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "19 Nov 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Regent Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1823071 Ontario Ltd"
+    ],
+    "price_text": "$5,700,000"
+  }
+}

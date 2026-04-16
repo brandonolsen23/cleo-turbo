@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT31415",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31415",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "66 HUNT AVE"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "19 Aug 2003",
+      "price_text": "$680,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Marsan Investments Inc     905-832-5193"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nick Sanci",
+        "56 Oakdale Rd",
+        "Maple, Ontario",
+        "L6A 1J1"
+      ]
+    },
+    "description_lines": [
+      "SixPlex - 6 units @ $113,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2300, Part Lots 34 & 35",
+      "As in Inst No RH-46067",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 38 040 020 36200",
+    "consideration_lines": [
+      "cash: $680,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT314/RT31415/photo.jpg"
+    },
+    "footer": {
+      "page_position": "219 / 263",
+      "rt_id": "RT31415"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "66 HUNT AVE",
+    "postcode": "L4C 4G9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "08/19/2003",
+    "desc": "SixPlex - 6 units @ $113,333",
+    "bldg": "6 units",
+    "acreage": ".25",
+    "consid": "680000",
+    "cash": "680000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 040 020 36200"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "66 HUNT AVE"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "19 Aug 2003",
+    "note": "",
+    "description": "SixPlex - 6 units @ $113,333",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Marsan Investments Inc"
+    ],
+    "price_text": "$680,000"
+  }
+}

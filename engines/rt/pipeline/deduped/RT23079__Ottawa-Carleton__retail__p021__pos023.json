@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23079",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23079",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 ISABELLA ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "02 Oct 2001",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Metispret Ltd     416-496-1828"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Laird",
+        "23 Waddington Cres",
+        "North York, Ontario",
+        "M2J 2Z9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loblaw Properties Ltd      416-922-8500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: S. Jane Marshall",
+        "22 St Clair Ave E, 2nd Flr",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 8,100 sf @ $185",
+      "",
+      "Occupied by LCBO and Brewers Retail."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 45073, Part Block A",
+      "As in Inst No CR-500843",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "06 14 052 301 00200",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1024 / 1141",
+      "rt_id": "RT23079"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "22 ISABELLA ST",
+    "postcode": "K1S 1V45",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/02/2001",
+    "desc": "Retail Bldg - 1 storey; 8,100 sf @ $185",
+    "bldg": "8,100 sf",
+    "acreage": ".26",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 052 301 00200"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "22 ISABELLA ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "02 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 8,100 sf @ $185",
+    "seller_lines": [
+      "Metispret Ltd"
+    ],
+    "buyer_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

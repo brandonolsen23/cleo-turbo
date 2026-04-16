@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT196001",
+  "source_folder": "Metro_Toronto/retail/p002",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196001",
+      "source_folder": "Metro_Toronto/retail/p002",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p002/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "3537 BATHURST ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "12 Dec 2025",
+      "price_text": "$2,640,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "747445 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "71 Claver Ave",
+        "Toronto, Ontario",
+        "M6b 2W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001400163 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gil Shcolyar",
+        "18 Erica Rd",
+        "Thornhill, Ontario",
+        "L4J 2G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1749,",
+      "Lots 5, 6 & Part Lot 4",
+      "As in Inst No TB-469105",
+      "",
+      "PIN: 10199-0047",
+      "",
+      "0.43 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,640,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,980,000   rate: 18.0% per annum.",
+      "registered: 12/12/2025   due: 01/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1960/RT196001/1228_121040.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1960/RT196001/1228_121041.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1960/RT196001/1228_121127.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1960/RT196001/1228_121130.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1960/RT196001/1228_121136.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1960/RT196001/1228_121138.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "68 / 4952",
+      "rt_id": "RT196001"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "3537 BATHURST ST",
+    "postcode": "M6A 2C7",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/12/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".43",
+    "consid": "2640000",
+    "cash": "2640000",
+    "debt": "",
+    "note": "",
+    "pin": "10199-0047",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "3537 BATHURST ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "12 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "747445 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001400163 Ontario Ltd"
+    ],
+    "price_text": "$2,640,000"
+  }
+}

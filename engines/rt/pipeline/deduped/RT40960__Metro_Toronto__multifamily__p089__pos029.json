@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT40960",
+  "source_folder": "Metro_Toronto/multifamily/p089",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40960",
+      "source_folder": "Metro_Toronto/multifamily/p089",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p089/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "38 - 40 HUNTLEY ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Mar 2005",
+      "price_text": "$1,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "38 Huntley Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Te-Zen Liu",
+        "59 Cavalry Trail",
+        "Markham, Ontario",
+        "L3R 9H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1195493 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Cherian",
+        "59 Cavalry Trail",
+        "Markham, Ontario",
+        "L3R 9H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - FTB, Part Park Lot 6",
+      "Plan 64R-14263, Part 3",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "19 04 068 480 01200",
+    "consideration_lines": [
+      "cash: $423,945     assumed/vtb debt: $876,055",
+      "",
+      "chargee: 38 Huntley Inc",
+      "principal: $400,000   rate: 1.0% per annum",
+      "registered: 03/31/2005   due: 03/31/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4430 / 6031",
+      "rt_id": "RT40960"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "38 - 40 HUNTLEY ST",
+    "postcode": "M4Y 2L1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/31/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "1300000",
+    "cash": "423945",
+    "debt": "876055",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 068 480 01200"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "38 - 40 HUNTLEY ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Mar 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "38 Huntley Inc"
+    ],
+    "buyer_lines": [
+      "1195493 Ontario Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

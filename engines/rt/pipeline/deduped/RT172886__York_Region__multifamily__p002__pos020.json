@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT172886",
+  "source_folder": "York_Region/multifamily/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172886",
+      "source_folder": "York_Region/multifamily/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 NIPIGON AVE"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "28 Oct 2022",
+      "price_text": "$1,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2713565 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sung Min Han",
+        "34 Settlement Cres",
+        "Richmond Hill, Ontario",
+        "L4E 1E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-37461, Parts 14 & 15",
+      "",
+      "PIN: 70011-1493",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,500,000",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $770,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/28/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 263",
+      "rt_id": "RT172886"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "22 NIPIGON AVE",
+    "postcode": "L6C 0X7",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "10/28/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1500000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "70011-1493",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "22 NIPIGON AVE"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "28 Oct 2022",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2713565 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

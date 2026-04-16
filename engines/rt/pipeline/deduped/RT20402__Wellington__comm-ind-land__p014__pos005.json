@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT20402",
+  "source_folder": "Wellington/comm-ind-land/p014",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20402",
+      "source_folder": "Wellington/comm-ind-land/p014",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/comm-ind-land/p014/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 4, PT LOTS 2 & 3"
+      ],
+      "city_region": "Wellington N : Wellington",
+      "date_text": "30 Jan 2001",
+      "price_text": "$817,915",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Willem & Trientje Voos"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "14 Spring St",
+        "Drayton, Ontario",
+        "N0G 1P0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cornelis & Teuntje Laros"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "RR 2",
+        "Arthur, Ontario",
+        "N0G 1A0"
+      ]
+    },
+    "description_lines": [
+      "Farm with a residence - about 150.00 Ac @ $5,453"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lots 2 & 3",
+      "As in Inst No RON-57773",
+      "",
+      "150.00 acre"
+    ],
+    "arn_text": "23 49 000 014 10900",
+    "consideration_lines": [
+      "cash: $817,915     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "656 / 720",
+      "rt_id": "RT20402"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "CONC 4, PT LOTS 2 & 3",
+    "postcode": "N0G 1A0",
+    "municipality": "Wellington N",
+    "region": "Wellington",
+    "date": "01/30/2001",
+    "desc": "Farm with a residence - about 150.00 Ac @ $5,453",
+    "bldg": "",
+    "acreage": "150",
+    "consid": "817915",
+    "cash": "817915",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 49 000 014 10900"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "CONC 4, PT LOTS 2 & 3"
+    ],
+    "city_region": "Wellington N : Wellington",
+    "date_text": "30 Jan 2001",
+    "note": "",
+    "description": "Farm with a residence - about 150.00 Ac @ $5,453",
+    "seller_lines": [
+      "Willem & Trientje Voos"
+    ],
+    "buyer_lines": [
+      "Cornelis & Teuntje Laros"
+    ],
+    "price_text": "$817,915"
+  }
+}

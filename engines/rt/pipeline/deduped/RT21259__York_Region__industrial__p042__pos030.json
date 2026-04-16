@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT21259",
+  "source_folder": "York_Region/industrial/p042",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21259",
+      "source_folder": "York_Region/industrial/p042",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p042/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "5 BRADWICK DR"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "04 May 2001",
+      "price_text": "$683,908",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Zeptal Holdings Ltd     905-850-8550"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Italo Zeppieri",
+        "c/o John Lo Faso",
+        "Barrister & Solicitor",
+        "3800 Steeles Ave W, Ste 300",
+        "Woodbridge, Ontario",
+        "L4L 4G9"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg - 18 ft clr; 10,088 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-4957, Part 9",
+      "",
+      "S side 20m W of dead end",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "19 28 000 201 25090",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $683,908"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT212/RT21259/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2081 / 2269",
+      "rt_id": "RT21259"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "5 BRADWICK DR",
+    "postcode": "L4K 2T4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "05/04/2001",
+    "desc": "Industrial Bldg - 18 ft clr; 10,088 sf",
+    "bldg": "10,008 sf",
+    "acreage": ".78",
+    "consid": "683908",
+    "cash": "",
+    "debt": "683908",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "19 28 000 201 25090"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "5 BRADWICK DR"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "04 May 2001",
+    "note": "Foreclosure",
+    "description": "Industrial Bldg - 18 ft clr; 10,088 sf",
+    "seller_lines": [
+      "Ontario Superior Court"
+    ],
+    "buyer_lines": [
+      "Zeptal Holdings Ltd"
+    ],
+    "price_text": "$683,908"
+  }
+}

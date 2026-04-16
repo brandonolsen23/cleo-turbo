@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT44588",
+  "source_folder": "Ottawa-Carleton/retail/p018",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44588",
+      "source_folder": "Ottawa-Carleton/retail/p018",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p018/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "168 - 170 RIDEAU ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "30 Sep 2005",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1055448 Ontario Inc, in Trust     613-562-8207"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Angelo Seccaspina",
+        "400 Dalhousie St",
+        "Ottawa, Ontario",
+        "K1N 9J9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 9 tenants 8,900 sf @ $112",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3922",
+      "Part Lot 19, S of Rideau St",
+      "Part Lot 19, N of Besserer St",
+      "As in Inst No CR-216387",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 14 021 001 03100",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT445/RT44588/photo.jpg"
+    },
+    "footer": {
+      "page_position": "854 / 1141",
+      "rt_id": "RT44588"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "168 - 170 RIDEAU ST",
+    "postcode": "K7K 3A2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/30/2005",
+    "desc": "Retail Bldg - 2 storey; 9 tenants 8,900 sf @ $112",
+    "bldg": "8,900 sf",
+    "acreage": ".15",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 021 001 03100"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "168 - 170 RIDEAU ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "30 Sep 2005",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 9 tenants 8,900 sf @ $112",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1055448 Ontario Inc, in Trust"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

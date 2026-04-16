@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT174437",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174437",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "49 MAIN ST E"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "23 Jun 2022",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1867140 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Britt Stevens",
+        "11 Mountview Ave",
+        "Huntsville, Ontario",
+        "P1H 1G8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 35R-17041, Parts 1 & 2",
+      "Plan 35R-9541, Part 2",
+      "",
+      "PIN: 48088-0053",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "44 42 010 010 00500",
+    "consideration_lines": [
+      "cash: $300,000     assumed/vtb debt: $800,000",
+      "",
+      "Named Individual(s)",
+      "principal: $800,000   rate: First 3 years, 2.5% per annum. Final 2 years, TD prime plus 2.0% per annum.",
+      "registered: 06/23/2022   due: 06/22/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 64",
+      "rt_id": "RT174437"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "49 MAIN ST E",
+    "postcode": "P1H 2B8",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "06/23/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "1100000",
+    "cash": "300000",
+    "debt": "800000",
+    "note": "",
+    "pin": "48088-0053",
+    "rollno": "44 42 010 010 00500"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "49 MAIN ST E"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "23 Jun 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1867140 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

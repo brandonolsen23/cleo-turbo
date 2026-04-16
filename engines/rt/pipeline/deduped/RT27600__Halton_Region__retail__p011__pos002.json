@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT27600",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27600",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "6783 GUELPH LINE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "29 Oct 2002",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cango (Burlington) Inc     905-333-3835"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Armstrong",
+        "3310 South Service Rd, Ste 310",
+        "Burlington, Ontario",
+        "L7N 3M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2016717 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Hinton",
+        "24 Wellesley St W, Ste 903",
+        "Toronto, Ontario",
+        "M4Y 2X6"
+      ]
+    },
+    "description_lines": [
+      "Gas Bar & Variety Store - 1 storey; 1,200 sf on 1.04 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-14122, Part 2",
+      "",
+      "SE corner at Derry Rd",
+      "",
+      "1.04 acre"
+    ],
+    "arn_text": "24 02 030 302 07900",
+    "consideration_lines": [
+      "cash: $1,900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT276/RT27600/photo.jpg"
+    },
+    "footer": {
+      "page_position": "503 / 613",
+      "rt_id": "RT27600"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "6783 GUELPH LINE",
+    "postcode": "",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "10/29/2002",
+    "desc": "Gas Bar & Variety Store - 1 storey; 1,200 sf on 1.04 Ac",
+    "bldg": "",
+    "acreage": "1.04",
+    "consid": "1900000",
+    "cash": "1900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 030 302 07900"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "6783 GUELPH LINE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "29 Oct 2002",
+    "note": "",
+    "description": "Gas Bar & Variety Store - 1 storey; 1,200 sf on 1.04 Ac",
+    "seller_lines": [
+      "Cango (Burlington) Inc"
+    ],
+    "buyer_lines": [
+      "2016717 Ontario Inc"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

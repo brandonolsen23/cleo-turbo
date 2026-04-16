@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT41048",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41048",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "66 WEST AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Mar 2005",
+      "price_text": "$511,425",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "House - 3 storey; 3-1bdrm @ $170,475"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 791, Lot 72",
+      "Together with Inst No CA-764896",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 073 250 04400",
+    "consideration_lines": [
+      "cash: $511,425     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $338,568   rate: Not to exceed prime minus 2.25% per annum before 3/1/2005. Not to exceed prime minus 0.375% per annum thereafter.",
+      "registered: 03/01/2005   due: 03/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT410/RT41048/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4457 / 6031",
+      "rt_id": "RT41048"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "66 WEST AVE",
+    "postcode": "M4M 2L8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/01/2005",
+    "desc": "House - 3 storey; 3-1bdrm @ $170,475",
+    "bldg": "3 units",
+    "acreage": ".07",
+    "consid": "511425",
+    "cash": "511425",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 073 250 04400"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "66 WEST AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Mar 2005",
+    "note": "",
+    "description": "House - 3 storey; 3-1bdrm @ $170,475",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$511,425"
+  }
+}

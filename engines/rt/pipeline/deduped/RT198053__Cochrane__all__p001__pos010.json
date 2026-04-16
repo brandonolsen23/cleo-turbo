@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT198053",
+  "source_folder": "Cochrane/all/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198053",
+      "source_folder": "Cochrane/all/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "42 BIRCHVIEW RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "24 Mar 2026",
+      "price_text": "$960,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Our Lady of Combermere",
+        "Charitable Organization"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joanne Dionne",
+        "42 Birchview Rd",
+        "Ottawa, Ontario",
+        "K2G 3G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-115, Lot 228",
+      "",
+      "PIN: 04674-0065",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "06 12 000 570 23500",
+    "consideration_lines": [
+      "cash: $960,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 10920",
+      "rt_id": "RT198053"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "42 BIRCHVIEW RD",
+    "postcode": "K2G 3G6",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "03/24/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "960000",
+    "cash": "960000",
+    "debt": "",
+    "note": "",
+    "pin": "04674-0065",
+    "rollno": "06 12 000 570 23500"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "42 BIRCHVIEW RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "24 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Our Lady of Combermere",
+      "Charitable Organization"
+    ],
+    "price_text": "$960,000"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT75557",
+  "source_folder": "Metro_Toronto/retail/p051",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT75557",
+      "source_folder": "Metro_Toronto/retail/p051",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p051/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 MARINE PARADE DR",
+        "UNIT 1"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "16 Nov 2010",
+      "price_text": "$731,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2077 Lakeshore Blvd W Ltd     416-363-1030"
+      ],
+      "trade_name": "Davies Smith Developments Ltd",
+      "contact_lines": [
+        "Attn: Ian Smith",
+        "2069 Lakeshore Blvd W, Ste 201",
+        "Etobicoke, Ontario",
+        "M8V 3Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dr N Zaki Medicine Professional Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zasser Zaki",
+        "4951 Southwood Lakes",
+        "Windsor, Ontario",
+        "N9G 2T8"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 1,687 sf @ $433",
+      "",
+      "Vacant - purchaser plans to resell the unit",
+      "",
+      "Part of a 21 storey residential/retail building with a 3 storey retail component (32 units totaling 27,000 sf) and 145 residential condos"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2113",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 76113-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $731,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2526 / 4952",
+      "rt_id": "RT75557"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "1 MARINE PARADE DR, UNIT 1",
+    "postcode": "M8V 3Z4",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "11/16/2010",
+    "desc": "Retail Condo - 1,687 sf @ $433",
+    "bldg": "1,687 sf",
+    "acreage": "",
+    "consid": "731000",
+    "cash": "731000",
+    "debt": "",
+    "note": "",
+    "pin": "76113-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "1 MARINE PARADE DR",
+      "UNIT 1"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "16 Nov 2010",
+    "note": "",
+    "description": "Retail Condo - 1,687 sf @ $433",
+    "seller_lines": [
+      "2077 Lakeshore Blvd W Ltd"
+    ],
+    "buyer_lines": [
+      "Dr N Zaki Medicine Professional Corp"
+    ],
+    "price_text": "$731,000"
+  }
+}

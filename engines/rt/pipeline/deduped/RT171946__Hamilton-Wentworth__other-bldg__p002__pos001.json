@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT171946",
+  "source_folder": "Hamilton-Wentworth/other-bldg/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT171946",
+      "source_folder": "Hamilton-Wentworth/other-bldg/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/other-bldg/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "965 UPPER OTTAWA ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "13 Sep 2022",
+      "price_text": "$1,200,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Cenovus Energy Inc     403-766-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "225 6th Ave SW, Ste 4100",
+        "Calgary, Alberta",
+        "T2P 1N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Parkland Corporation     403-567-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Christy Elliott",
+        "240 4th Ave SW, Ste 1800",
+        "Calgary, Alberta",
+        "T2P 4H4"
+      ]
+    },
+    "description_lines": [
+      "Gas Station"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-15241, Parts 1 & 2",
+      "",
+      "PIN: 16989-0001 +",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "25 18 060 571 06230",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 248",
+      "rt_id": "RT171946"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "965 UPPER OTTAWA ST",
+    "postcode": "L8T 4V9",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "09/13/2022",
+    "desc": "Gas Station",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "16989-0001+",
+    "rollno": "25 18 060 571 06230"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "965 UPPER OTTAWA ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "13 Sep 2022",
+    "note": "Portfolio",
+    "description": "Gas Station",
+    "seller_lines": [
+      "Cenovus Energy Inc"
+    ],
+    "buyer_lines": [
+      "Parkland Corporation"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

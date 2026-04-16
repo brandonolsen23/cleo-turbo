@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT30273",
+  "source_folder": "Metro_Toronto/multifamily/p099",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30273",
+      "source_folder": "Metro_Toronto/multifamily/p099",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p099/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "881 AVENUE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 May 2003",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "The Sabi Group"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "128 Grey Rd",
+        "Toronto, Ontario",
+        "M5M 4G1"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 5 units @ $240,000",
+      "",
+      "2-1bdrm 1-2bdrm 2-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 569-E, Lot 136 & Part Lot 137",
+      "As in Inst No CA-667143",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 114 270 00200",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT302/RT30273/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4912 / 6031",
+      "rt_id": "RT30273"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "881 AVENUE RD",
+    "postcode": "M5P 2K7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/28/2003",
+    "desc": "Apartment Bldg - 3.5 storey; 5 units @ $240,000",
+    "bldg": "5 units",
+    "acreage": ".14",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 114 270 00200"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "881 AVENUE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 May 2003",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 5 units @ $240,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "The Sabi Group"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

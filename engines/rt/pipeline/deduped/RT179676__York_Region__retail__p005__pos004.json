@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT179676",
+  "source_folder": "York_Region/retail/p005",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179676",
+      "source_folder": "York_Region/retail/p005",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "9471 YONGE ST",
+        "UNIT 115"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "10 Aug 2023",
+      "price_text": "$1,081,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Torview Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "137 Bowes Rd",
+        "Concord, Ontario",
+        "L4K 1H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Xpression Commercial Inc     905-669-1588"
+      ],
+      "trade_name": "Four-Valleys",
+      "contact_lines": [
+        "Attn: Nick Cortellucci",
+        "137 Bowes Rd",
+        "Concord, Ontario",
+        "L4K 1H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1365",
+      "Level 1, Units 15",
+      "",
+      "PIN: 29896-0015"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,081,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090427.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090444.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090455.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090526.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090527.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090557.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090558.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1796/RT179676/0827_090648.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "205 / 984",
+      "rt_id": "RT179676"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "9471 YONGE ST, UNIT 115",
+    "postcode": "L4C 0Z5",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "08/10/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1081000",
+    "cash": "1081000",
+    "debt": "",
+    "note": "",
+    "pin": "29896-0015",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "9471 YONGE ST",
+      "UNIT 115"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "10 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Torview Properties Inc"
+    ],
+    "buyer_lines": [
+      "Xpression Commercial Inc"
+    ],
+    "price_text": "$1,081,000"
+  }
+}

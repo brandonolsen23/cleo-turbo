@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT97004",
+  "source_folder": "Hamilton-Wentworth/retail/p006",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT97004",
+      "source_folder": "Hamilton-Wentworth/retail/p006",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p006/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "395 LEWIS RD"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "18 Dec 2013",
+      "price_text": "$7,800,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "637444 Ontario Ltd     905-643-4121"
+      ],
+      "trade_name": "Stoney Creek Furniture",
+      "contact_lines": [
+        "Pres: Dennis Novosel",
+        "395 Lewis Rd",
+        "Stoney Creek, Ontario",
+        "L8E 5N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Wynn Aviv Stoney Creek Ltd     416-968-9439"
+      ],
+      "trade_name": "Wynn Group",
+      "contact_lines": [
+        "Pres: Jeffrey Weinzweig",
+        "330 Dupont St, 2nd Flr",
+        "Toronto, Ontario",
+        "M5R 1V9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 104,000 sf @ $75",
+      "",
+      "Leased back by the vendor.",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 7",
+      "Plan 62R-7898, Parts 1 & 3",
+      "Except:",
+      "Plan 62R-7987, Parts 1 & 2",
+      "",
+      "PIN: 17363-0034",
+      "",
+      "SW corner Lewis Rd and South Service Rd",
+      "",
+      "8.74 acre"
+    ],
+    "arn_text": "25 03 100 110 34300",
+    "consideration_lines": [
+      "cash: $7,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $5,250,000   rate: 4.46% per annum.",
+      "registered: 12/18/2013   due: 01/01/2019"
+    ],
+    "broker_lines": [
+      "Realty Advisors First Corporation: Robert Flagal, 416-447-9911"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT970/RT97004/1229_153945.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT970/RT97004/1229_154036.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT970/RT97004/1229_154120.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT970/RT97004/1229_154318.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT970/RT97004/1229_154348.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "273 / 616",
+      "rt_id": "RT97004"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "395 LEWIS RD",
+    "postcode": "L8E 5N5",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "12/18/2013",
+    "desc": "Retail Bldg - 1 storey; 104,000 sf @ $75",
+    "bldg": "104,000 sf",
+    "acreage": "8.74",
+    "consid": "7800000",
+    "cash": "7800000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "17363-0034",
+    "rollno": "25 03 100 110 34300"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "395 LEWIS RD"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "18 Dec 2013",
+    "note": "Sale Leaseback",
+    "description": "Retail Bldg - 1 storey; 104,000 sf @ $75",
+    "seller_lines": [
+      "637444 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Wynn Aviv Stoney Creek Ltd"
+    ],
+    "price_text": "$7,800,000"
+  }
+}

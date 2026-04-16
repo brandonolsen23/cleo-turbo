@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT48872",
+  "source_folder": "Metro_Toronto/retail/p069",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48872",
+      "source_folder": "Metro_Toronto/retail/p069",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p069/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "453 EGLINTON AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "26 May 2006",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "John Bennett Co Ltd     416-929-7232"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Bennett",
+        "GC Adams",
+        "1255 Yonge St",
+        "Toronto, Ontario",
+        "M4T 1W6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2101767 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Hadden",
+        "453 Eglinton Ave W",
+        "Toronto, Ontario",
+        "M5N 1A7"
+      ]
+    },
+    "description_lines": [
+      "Retail Office Bldg - 2 storey; 8,097 sf @ $333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2350, Lot 66",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 112 240 01700",
+    "consideration_lines": [
+      "cash: $2,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $2,430,000   rate: Base plus 2.75% per annum",
+      "registered: 05/26/2006   due: 05/15/2011"
+    ],
+    "broker_lines": [
+      "Royal LePage: Janet Mather & Taso Jouras, 416-921-1112"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT488/RT48872/air1.jpg",
+        "/assets/files/RT4/RT488/RT48872/air2.jpg",
+        "/assets/files/RT4/RT488/RT48872/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3431 / 4952",
+      "rt_id": "RT48872"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "453 EGLINTON AVE W",
+    "postcode": "M5N 1A7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/26/2006",
+    "desc": "Retail Office Bldg - 2 storey; 8,097 sf @ $333",
+    "bldg": "8,097 sf",
+    "acreage": ".1",
+    "consid": "2700000",
+    "cash": "2700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 112 240 01700"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "453 EGLINTON AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "26 May 2006",
+    "note": "",
+    "description": "Retail Office Bldg - 2 storey; 8,097 sf @ $333",
+    "seller_lines": [
+      "John Bennett Co Ltd"
+    ],
+    "buyer_lines": [
+      "2101767 Ontario Inc"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

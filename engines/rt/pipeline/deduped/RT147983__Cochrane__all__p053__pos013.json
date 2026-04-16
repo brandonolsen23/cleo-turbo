@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT147983",
+  "source_folder": "Cochrane/all/p053",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT147983",
+      "source_folder": "Cochrane/all/p053",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p053/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "471 WILBROD ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "04 Dec 2019",
+      "price_text": "$1,575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2672616 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anna-Talbot Brown",
+        "77 Heathwood Cres",
+        "Kitchener, Ontario",
+        "N2R 1K6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6",
+      "Part Lot 44, N/S Wilbrod St",
+      "Part Lot 44, S/S Stewart St",
+      "As in Inst No N-625598",
+      "",
+      "PIN: 04212-0202",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 021 101 24900",
+    "consideration_lines": [
+      "cash: $1,575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,100,000   rate: Prime plus 7.0% per annum.",
+      "registered: 12/04/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2614 / 10920",
+      "rt_id": "RT147983"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "471 WILBROD ST",
+    "postcode": "K1N 6N1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/04/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "1575000",
+    "cash": "1575000",
+    "debt": "",
+    "note": "",
+    "pin": "04212-0202",
+    "rollno": "06 14 021 101 24900"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "471 WILBROD ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "04 Dec 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2672616 Ontario Inc"
+    ],
+    "price_text": "$1,575,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT191356",
+  "source_folder": "York_Region/retail/p002",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191356",
+      "source_folder": "York_Region/retail/p002",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "3603 LANGSTAFF RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "10 Apr 2025",
+      "price_text": "$12,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Vimica Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "100 Strada Dr, Unit 1",
+        "Vaughan, Ontario",
+        "L4L 5V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vibral Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Albert Vitullo",
+        "510 Applewood Cres, Unit 2",
+        "Concord, Ontario",
+        "L4K 4B4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2588, Lot 10",
+      "Plan 65R-12162, Part 4",
+      "",
+      "PIN: 03278-0012 +",
+      "",
+      "2.34 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $12,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Vince Vitullo Group Inc",
+      "principal: $25,000,000   rate: 4.0% per annum.",
+      "registered: 04/10/2025   due: 04/10/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "88 / 984",
+      "rt_id": "RT191356"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "3603 LANGSTAFF RD",
+    "postcode": "L4L 9G7",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "04/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.34",
+    "consid": "12000000",
+    "cash": "12000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "03278-0012+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "3603 LANGSTAFF RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "10 Apr 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Vimica Investments Inc"
+    ],
+    "buyer_lines": [
+      "Vibral Investments Inc"
+    ],
+    "price_text": "$12,000,000"
+  }
+}

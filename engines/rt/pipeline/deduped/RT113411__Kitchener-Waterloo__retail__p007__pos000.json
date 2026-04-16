@@ -1,0 +1,138 @@
+{
+  "rt_id": "RT113411",
+  "source_folder": "Kitchener-Waterloo/retail/p007",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT113411",
+      "source_folder": "Kitchener-Waterloo/retail/p007",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p007/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 OTTAWA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "22 Dec 2015",
+      "price_text": "$5,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "340268 Ontario Ltd     519-648-2285"
+      ],
+      "trade_name": "GA Cranes",
+      "contact_lines": [
+        "Attn: Patrick George",
+        "5093 Fountain St N",
+        "Breslau, Ontario",
+        "N0B 1M0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2037061 Ontario Inc     519-746-3353"
+      ],
+      "trade_name": "Wright Auto Sales",
+      "contact_lines": [
+        "Pres: Larry Wright",
+        "89 Bridgeport Rd E",
+        "Waterloo, Ontario",
+        "N2J 2K2"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership: 40,000 sf on 3.1 Ac",
+      "",
+      "30% office/showroom on 2 floors",
+      "",
+      "12 drive-in doors",
+      "",
+      "16 service bays",
+      "",
+      "Vacant - will be used as a car dealership by the purchaser."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT - Subdivision Lot 1, Part Lot 104",
+      "Plan 309, Lots 31-33, 41-50",
+      "Plan 404, Part Park Lot 25",
+      "Plan 654, Part Lot 1",
+      "Plan 58R-2899, Part 1",
+      "Together with:",
+      "Inst No 1206872",
+      "",
+      "PIN: 22507-0068",
+      "",
+      "W side Ottawa St N, N of King St E",
+      "",
+      "3.13 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/22/2015   due: on demand"
+    ],
+    "broker_lines": [
+      "Coldwell Banker Peter Benninger Realty: James Boudreau & Gary Boudreau, 519-743-5211"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1134/RT113411/0213_151236.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1134/RT113411/0213_151238.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1134/RT113411/0213_151349.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1134/RT113411/0213_151359.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "301 / 752",
+      "rt_id": "RT113411"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "20 OTTAWA ST N",
+    "postcode": "N2H 0A4",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/22/2015",
+    "desc": "Car Dealership: 40,000 sf on 3.1 Ac",
+    "bldg": "40,000 sf",
+    "acreage": "3.13",
+    "consid": "5100000",
+    "cash": "5100000",
+    "debt": "",
+    "note": "",
+    "pin": "22507-0068",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "20 OTTAWA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "22 Dec 2015",
+    "note": "",
+    "description": "Car Dealership: 40,000 sf on 3.1 Ac",
+    "seller_lines": [
+      "340268 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2037061 Ontario Inc"
+    ],
+    "price_text": "$5,100,000"
+  }
+}

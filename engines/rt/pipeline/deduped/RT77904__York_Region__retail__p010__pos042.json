@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT77904",
+  "source_folder": "York_Region/retail/p010",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77904",
+      "source_folder": "York_Region/retail/p010",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "381 - 383 MAIN ST N"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "15 Apr 2011",
+      "price_text": "$2,148,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Goodview Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Patsy Chan",
+        "23 Sheppard Ave E, Ste 2405",
+        "Toronto, Ontario",
+        "M2N 0C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2019311 Ontario Inc     905-707-0000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jesse Agnew",
+        "8601 Warden Ave",
+        "PO Box 56589",
+        "Markham, Ontario",
+        "L3R 0M6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 tenants 10,200 sf @ $211",
+      "",
+      "800 sf vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-12379, Part 2",
+      "",
+      "PIN: 02919-0001",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "19 36 040 270 07900",
+    "consideration_lines": [
+      "cash: $2,148,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT779/RT77904/0430_110137.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT779/RT77904/0430_110324.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT779/RT77904/0430_110346.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT779/RT77904/0430_110411.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT779/RT77904/air1.jpg",
+        "/assets/files/RT7/RT779/RT77904/air2.jpg",
+        "/assets/files/RT7/RT779/RT77904/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "493 / 984",
+      "rt_id": "RT77904"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "381 - 383 MAIN ST N",
+    "postcode": "L3P 1Z3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "04/15/2011",
+    "desc": "Retail Plaza - 1 storey; 6 tenants 10,200 sf @ $211",
+    "bldg": "10,200 sf",
+    "acreage": ".75",
+    "consid": "2148000",
+    "cash": "2148000",
+    "debt": "",
+    "note": "",
+    "pin": "02919-0001",
+    "rollno": "19 36 040 270 07900"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "381 - 383 MAIN ST N"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "15 Apr 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 tenants 10,200 sf @ $211",
+    "seller_lines": [
+      "Goodview Development Inc"
+    ],
+    "buyer_lines": [
+      "2019311 Ontario Inc"
+    ],
+    "price_text": "$2,148,000"
+  }
+}

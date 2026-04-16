@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT190809",
+  "source_folder": "Huron_County/retail/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190809",
+      "source_folder": "Huron_County/retail/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Huron_County/retail/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "400 BAYFIELD RD"
+      ],
+      "city_region": "Goderich : Huron County",
+      "date_text": "10 Mar 2025",
+      "price_text": "$4,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Gmehlin Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3115 Napperton Dr, RR 7",
+        "Strathroy, Ontario",
+        "N7G 3H8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Donald Watson Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Norman Watson",
+        "44195 Harriston Rd, Hwy 87",
+        "Gorrie, Ontario",
+        "N0G 1X0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22R-4985, Parts 1 & 2",
+      "",
+      "PIN: 41366-0143",
+      "",
+      "2.86 acre"
+    ],
+    "arn_text": "40 28 010 430 00500",
+    "consideration_lines": [
+      "cash: $4,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190809/0329_141755.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190809/0329_141759.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190809/0329_141854.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190809/0329_141855.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 52",
+      "rt_id": "RT190809"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "400 BAYFIELD RD",
+    "postcode": "N7A 4E7",
+    "municipality": "Goderich",
+    "region": "Huron County",
+    "date": "03/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.86",
+    "consid": "4200000",
+    "cash": "4200000",
+    "debt": "",
+    "note": "",
+    "pin": "41366-0143",
+    "rollno": "40 28 010 430 00500"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "400 BAYFIELD RD"
+    ],
+    "city_region": "Goderich : Huron County",
+    "date_text": "10 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Gmehlin Investments Inc"
+    ],
+    "buyer_lines": [
+      "Donald Watson Ltd"
+    ],
+    "price_text": "$4,200,000"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT82608",
+  "source_folder": "Hamilton-Wentworth/retail/p007",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT82608",
+      "source_folder": "Hamilton-Wentworth/retail/p007",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p007/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "807 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "16 Dec 2011",
+      "price_text": "$860,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2199899 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martini Rompis",
+        "3480 Rebecca St",
+        "Oakville, Ontario",
+        "L6L 6X9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "7995881 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Azmina Moosa",
+        "4641 Keystone Cres",
+        "Brampton, Ontario",
+        "L7M 0M8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 20",
+      "Plan 62R-7229, Part 1",
+      "Plan 62R-6882, Part 1",
+      "",
+      "PIN: 17591-0005",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "25 18 010 056 00300",
+    "consideration_lines": [
+      "cash: $860,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $550,000   rate: Prime plus 6.25% per annum",
+      "registered: 12/16/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT826/RT82608/1224_105354.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT826/RT82608/1224_105439.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT826/RT82608/1224_105450.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT826/RT82608/1224_105526.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT826/RT82608/air1.jpg",
+        "/assets/files/RT8/RT826/RT82608/air2.jpg",
+        "/assets/files/RT8/RT826/RT82608/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "324 / 616",
+      "rt_id": "RT82608"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "807 MAIN ST W",
+    "postcode": "L8S 1A2",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "12/16/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "860000",
+    "cash": "860000",
+    "debt": "",
+    "note": "",
+    "pin": "17591-0005",
+    "rollno": "25 18 010 056 00300"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "807 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "16 Dec 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2199899 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "7995881 Canada Inc"
+    ],
+    "price_text": "$860,000"
+  }
+}

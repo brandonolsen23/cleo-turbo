@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT70911",
+  "source_folder": "Brant/retail/p003",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70911",
+      "source_folder": "Brant/retail/p003",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p003/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "208 KING GEORGE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "16 Feb 2010",
+      "price_text": "$720,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Parkway Orchard Ltd     905-357-4968"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jueng Kim",
+        "8220 Costabile Dr",
+        "Niagara Falls, Ontario",
+        "L2H 3L2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 tenants 4,000 sf @ $180",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 564, Lots 9 & 10",
+      "",
+      "PIN: 32211-0266",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "29 06 030 023 55800",
+    "consideration_lines": [
+      "cash: $720,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Korea Exchange Bank of Canada",
+      "principal: $432,000   rate: Prime plus 2.0% per annum",
+      "registered: 02/16/2010   due: on demand",
+      "",
+      "chargee: Korea Exchange Bank of Canada",
+      "principal: $50,000   rate: Prime plus 5.0% per annum",
+      "registered: 02/16/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT709/RT70911/0319_145403.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT709/RT70911/0319_145447.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT709/RT70911/air1.jpg",
+        "/assets/files/RT7/RT709/RT70911/air2.jpg",
+        "/assets/files/RT7/RT709/RT70911/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "141 / 195",
+      "rt_id": "RT70911"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "208 KING GEORGE RD",
+    "postcode": "N3R 5L4",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "02/16/2010",
+    "desc": "Retail Plaza - 1 storey; 4 tenants 4,000 sf @ $180",
+    "bldg": "4,000 sf",
+    "acreage": ".4",
+    "consid": "720000",
+    "cash": "720000",
+    "debt": "",
+    "note": "",
+    "pin": "32211-0266",
+    "rollno": "29 06 030 023 55800"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "208 KING GEORGE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "16 Feb 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 tenants 4,000 sf @ $180",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Parkway Orchard Ltd"
+    ],
+    "price_text": "$720,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT195115",
+  "source_folder": "Prescott/multifamily/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195115",
+      "source_folder": "Prescott/multifamily/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prescott/multifamily/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "920 MARSTON ST"
+      ],
+      "city_region": "Champlain : Prescott",
+      "date_text": "31 Oct 2025",
+      "price_text": "$4,575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "11438867 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Spruce Place SW, Ste 1903",
+        "Calgary, AB",
+        "T3C 3X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "AJA Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jean-Sebastien Sauve",
+        "441 Lecours St",
+        "L'Orignal, Ontario",
+        "K0B 1K0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 15,",
+      "Lot 4, N/S Marston St",
+      "",
+      "PIN: 54142-0531",
+      "",
+      "1.92 acre"
+    ],
+    "arn_text": "02 09 008 001 11900",
+    "consideration_lines": [
+      "cash: $4,575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $5,617,585   rate: 10.0% per annum.",
+      "registered: 10/31/2025   due: 12/01/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 16",
+      "rt_id": "RT195115"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "920 MARSTON ST",
+    "postcode": "K0B 1K0",
+    "municipality": "Champlain",
+    "region": "Prescott",
+    "date": "10/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.92",
+    "consid": "4575000",
+    "cash": "4575000",
+    "debt": "",
+    "note": "",
+    "pin": "54142-0531",
+    "rollno": "02 09 008 001 11900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "920 MARSTON ST"
+    ],
+    "city_region": "Champlain : Prescott",
+    "date_text": "31 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "11438867 Canada Inc"
+    ],
+    "buyer_lines": [
+      "AJA Developments Inc"
+    ],
+    "price_text": "$4,575,000"
+  }
+}

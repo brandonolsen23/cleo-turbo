@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT197499",
+  "source_folder": "Peel_Region/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197499",
+      "source_folder": "Peel_Region/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "3315 FIELDGATE DR",
+        "1750 BLOOR ST"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "25 Feb 2026",
+      "price_text": "$2,333,097",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "TC Core GP Inc",
+        "TC Core LP     888-949-8439"
+      ],
+      "trade_name": "Hazelview Investments",
+      "contact_lines": [
+        "1133 Yonge St, 4th Flr",
+        "Toronto, Ontario",
+        "M4T 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16509126 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Croll",
+        "300 Park Centre",
+        "1230 Blackfoot Dr",
+        "Regina, SK",
+        "S4S 7G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-20688, Part 1",
+      "Plan 43R-40367, Parts 3, 6 & 7",
+      "",
+      "PIN: 13332-1065 +",
+      "",
+      "6.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,230,210     assumed/vtb debt: $1,102,887",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $45,319,500   rate: Prime plus 10.0% per annum.",
+      "registered: 12/27/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 447",
+      "rt_id": "RT197499"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "3315 FIELDGATE DR, 1750 BLOOR ST",
+    "postcode": "L4X 1S9",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.22",
+    "consid": "2333097",
+    "cash": "1230210",
+    "debt": "1102887",
+    "note": "% Interest",
+    "pin": "13332-1065+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "3315 FIELDGATE DR",
+      "1750 BLOOR ST"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "25 Feb 2026",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "TC Core GP Inc",
+      "TC Core LP"
+    ],
+    "buyer_lines": [
+      "16509126 Canada Inc"
+    ],
+    "price_text": "$2,333,097"
+  }
+}

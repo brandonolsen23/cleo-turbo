@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT46285",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46285",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "342 ADELAIDE ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Jan 2006",
+      "price_text": "$1,135,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1668469 Ontario Ltd     416-597-6911"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chris Kotsaboikidis",
+        "Kotsaboikidis Brothers Furs",
+        "342 Adelaide St W",
+        "Toronto, Ontario",
+        "M5V 1R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 349, Part Lot A",
+      "As in Inst No ES-63253",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 062 460 01800",
+    "consideration_lines": [
+      "cash: $1,135,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Pando Petropoulos",
+      "principal: $300,000   rate: 6.0% per annum",
+      "registered: 01/10/2006   due: 01/10/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT462/RT46285/air1.jpg",
+        "/assets/files/RT4/RT462/RT46285/air2.jpg",
+        "/assets/files/RT4/RT462/RT46285/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT462/RT46285/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3510 / 4952",
+      "rt_id": "RT46285"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "342 ADELAIDE ST W",
+    "postcode": "M5V 1R7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/10/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "1135000",
+    "cash": "1135000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 062 460 01800"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "342 ADELAIDE ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Jan 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1668469 Ontario Ltd"
+    ],
+    "price_text": "$1,135,000"
+  }
+}

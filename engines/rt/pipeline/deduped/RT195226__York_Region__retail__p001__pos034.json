@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT195226",
+  "source_folder": "York_Region/retail/p001",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195226",
+      "source_folder": "York_Region/retail/p001",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "1171 DAVIS DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "03 Nov 2025",
+      "price_text": "$12,380,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "NewRoads GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o NewRoads Automotive Group Ltd",
+        "18100 Yonge St",
+        "Newmarket, Ontario",
+        "L3Y 8V1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Multiland Pacific (Ontario) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christian Chia",
+        "5580 Parkwood Cres",
+        "Richmond, British Columbia",
+        "V6V 0B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-17198, Parts 2 & 3",
+      "",
+      "PIN: 03558-0139",
+      "",
+      "3.71 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,311,741     assumed/vtb debt: $0",
+      "other: $5,068,259",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,000,000,000   rate: Prime plus 8.0% per annum.",
+      "registered: 11/03/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195226/1122_122550.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195226/1122_122556.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195226/1122_122636.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195226/1122_122638.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195226/1122_122653.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "35 / 984",
+      "rt_id": "RT195226"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "1171 DAVIS DR",
+    "postcode": "L3Y 8R1",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "11/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.71",
+    "consid": "12380000",
+    "cash": "7311741",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "03558-0139",
+    "rollno": ""
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "1171 DAVIS DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "03 Nov 2025",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "NewRoads GP Inc"
+    ],
+    "buyer_lines": [
+      "Multiland Pacific (Ontario) Ltd"
+    ],
+    "price_text": "$12,380,000"
+  }
+}

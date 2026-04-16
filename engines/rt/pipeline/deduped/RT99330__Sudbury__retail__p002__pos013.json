@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT99330",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT99330",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "1620 REGENT ST S"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "02 Apr 2014",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1085922 Ontario Inc     705-552-0009"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Kirkwood",
+        "4291 Chief Lake Rd",
+        "Sudbury, Ontario",
+        "P3G 1K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1814669 Ontario Inc     705-688-0007"
+      ],
+      "trade_name": "Royal LePage North Heritage Realty",
+      "contact_lines": [
+        "Pres: Bruno Gobeil",
+        "860 Lasalle Blvd",
+        "Sudbury, Ontario",
+        "P3A 1X5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 6,000 sf @ $200",
+      "",
+      "Vacant - the space will be partially occupied by the purchaser's real estate office, with the balance being leased to a new",
+      "restaurant.",
+      "",
+      "60 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 6 & 7",
+      "Plan 53R-8426, Parts 1-7",
+      "As in Inst No LT-108347",
+      "",
+      "PIN: 73595-0367",
+      "",
+      "E side Regent St S, N of Caswell Dr",
+      "",
+      "1.12 acre"
+    ],
+    "arn_text": "53 07 060 028 09600",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $500,000",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/02/2014   due: on demand",
+      "",
+      "chargee: 1085922 Ontario Inc",
+      "principal: $500,000   rate: 7.0% per annum.",
+      "registered: 04/02/2014   due: 04/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "64 / 90",
+      "rt_id": "RT99330"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "1620 REGENT ST S",
+    "postcode": "P3E 3Z6",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "04/02/2014",
+    "desc": "Retail Bldg - 1 storey; 6,000 sf @ $200",
+    "bldg": "6,000 sf",
+    "acreage": "1.12",
+    "consid": "1200000",
+    "cash": "700000",
+    "debt": "500000",
+    "note": "",
+    "pin": "73595-0367",
+    "rollno": "53 07 060 028 09600"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "1620 REGENT ST S"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "02 Apr 2014",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 6,000 sf @ $200",
+    "seller_lines": [
+      "1085922 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1814669 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

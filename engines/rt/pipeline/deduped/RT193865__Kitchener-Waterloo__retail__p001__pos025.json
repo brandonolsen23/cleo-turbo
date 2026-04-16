@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT193865",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193865",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "107 - 111 MAIN ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "15 Aug 2025",
+      "price_text": "$1,030,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2684528 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "618 King St W",
+        "Kitchener, Ontario",
+        "N2G 1C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ahimbisibwe Holding Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Asa Ahimbisibwe",
+        "28 Oakwood Dr",
+        "Cambridge, Ontario",
+        "N1R 5S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67R-1203, Part 1",
+      "",
+      "PIN: 03816-0042",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "30 06 040 028 07800",
+    "consideration_lines": [
+      "cash: $1,030,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,410,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/15/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193865/0913_153213.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193865/0913_153233.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193865/0913_153240.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193865/0913_153252.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193865/0913_153304.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "26 / 752",
+      "rt_id": "RT193865"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "107 - 111 MAIN ST",
+    "postcode": "N1R 1W1",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "08/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "1030000",
+    "cash": "1030000",
+    "debt": "",
+    "note": "",
+    "pin": "03816-0042",
+    "rollno": "30 06 040 028 07800"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "107 - 111 MAIN ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "15 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2684528 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Ahimbisibwe Holding Corp"
+    ],
+    "price_text": "$1,030,000"
+  }
+}

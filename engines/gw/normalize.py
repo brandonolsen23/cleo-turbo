@@ -26,24 +26,17 @@ NORMALIZED_DIR = os.path.join(PROJECT_ROOT, 'engines', 'gw', 'pipeline', 'normal
 # Address parsing
 # ================================================================
 
-STREET_SUFFIXES = {
-    'ST': 'Street', 'AVE': 'Avenue', 'DR': 'Drive', 'RD': 'Road',
-    'BLVD': 'Boulevard', 'CRES': 'Crescent', 'CT': 'Court', 'CRT': 'Court',
-    'PL': 'Place', 'LN': 'Lane', 'CIR': 'Circle', 'HWY': 'Highway',
-    'PKWY': 'Parkway', 'TERR': 'Terrace', 'TR': 'Trail', 'TRL': 'Trail',
-    'WAY': 'Way', 'GATE': 'Gate', 'CR': 'Crescent', 'LINE': 'Line',
-    'CONC': 'Concession', 'RUE': 'Rue',
-}
-
-DIRECTIONS = {'N': 'N', 'S': 'S', 'E': 'E', 'W': 'W',
-              'NORTH': 'N', 'SOUTH': 'S', 'EAST': 'E', 'WEST': 'W'}
+from cleo.address.decompose import decompose_simple
+from cleo.address.formatter import format_display
+from cleo.address.normalize import to_title_case
 
 
 def parse_mpac_address(property_address, municipality=''):
     """Parse MPAC property address into components.
 
     Input:  "121 CONCESSION ST E TILLSONBURG ON N4G4W4"
-    Output: {street, city, province, postal_code, display}
+    Output: {street, city, province, postal_code, display_street, display_city,
+             geocode_string, components}
     """
     if not property_address:
         return None
@@ -71,9 +64,10 @@ def parse_mpac_address(property_address, municipality=''):
             street = raw[:idx].strip()
             city = raw[idx:idx + len(muni_upper)]
 
-    # Title case
-    display_street = _title_case_street(street)
-    display_city = city.title() if city else ''
+    # Use shared decomposer + formatter for consistent display
+    components = decompose_simple(street)
+    display_street = format_display(components)
+    display_city = to_title_case(city) if city else ''
 
     return {
         'street': street,
@@ -83,24 +77,8 @@ def parse_mpac_address(property_address, municipality=''):
         'display_street': display_street,
         'display_city': display_city,
         'geocode_string': f'{display_street}, {display_city}, Ontario {postal}, Canada'.strip(', ') if display_street else None,
+        'components': components,
     }
-
-
-def _title_case_street(s):
-    """Title case a street address, preserving direction abbreviations."""
-    if not s:
-        return ''
-    words = s.split()
-    result = []
-    for w in words:
-        upper = w.upper()
-        if upper in DIRECTIONS:
-            result.append(upper)
-        elif upper in STREET_SUFFIXES:
-            result.append(STREET_SUFFIXES[upper])
-        else:
-            result.append(w.title())
-    return ' '.join(result)
 
 
 # ================================================================

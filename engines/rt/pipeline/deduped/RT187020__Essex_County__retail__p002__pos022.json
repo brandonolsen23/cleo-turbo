@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT187020",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187020",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "1377 LAUZON RD",
+        "1395 LAUZON RD"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "26 Aug 2024",
+      "price_text": "$1,715,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2844918 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1116 Aspen Ridge Cres",
+        "Lakeshore, Ontario",
+        "N8L 1B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vishwakarma 57 Ontario Inc     905-846-2716"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anil Sarren",
+        "9 Beacon Hill Drive",
+        "Brampton, Ontario",
+        "L6X 0V6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1211 - Riverside,",
+      "Lot 486, Part Lots 483-485",
+      "",
+      "PIN: 01564-2233 +",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "37 39 060 300 22200 +",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $715,000",
+      "",
+      "chargee: 2844918 Ontario Ltd",
+      "principal: $715,000   rate: 8.0% per annum.",
+      "registered: 08/26/2024   due: 08/26/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "73 / 460",
+      "rt_id": "RT187020"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "1377 LAUZON RD, 1395 LAUZON RD",
+    "postcode": "N8S 3N2",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "08/26/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".52",
+    "consid": "1715000",
+    "cash": "1000000",
+    "debt": "715000",
+    "note": "",
+    "pin": "01564-2233+",
+    "rollno": "37 39 060 300 22200+"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "1377 LAUZON RD",
+      "1395 LAUZON RD"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "26 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2844918 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Vishwakarma 57 Ontario Inc"
+    ],
+    "price_text": "$1,715,000"
+  }
+}

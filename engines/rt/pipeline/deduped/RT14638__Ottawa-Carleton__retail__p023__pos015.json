@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT14638",
+  "source_folder": "Ottawa-Carleton/retail/p023",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14638",
+      "source_folder": "Ottawa-Carleton/retail/p023",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p023/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "2148 CARLING AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "10 May 1999",
+      "price_text": "$9,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Riocan Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Katy Ritcey",
+        "130 King St W, Ste 1305",
+        "Toronto, Ontario",
+        "M5X 1E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "3125475 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: C. Stevenson Dunlop",
+        "c/o Lafleur Brown",
+        "1 Place Ville Marie, 37th Floor",
+        "Montreal, Quebec",
+        "H3R 3P4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-7813, Parts 2-4"
+    ],
+    "arn_text": "06 14 095 202 10400",
+    "consideration_lines": [
+      "cash: $9,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $2,250,000   rate: Prime plus 1.75% per annum.",
+      "registered: 09/30/2019   due: 10/05/2020",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $75,000,000   rate: 25.0% per annum.",
+      "registered: 09/30/2019   due: on demand",
+      "",
+      "chargee: Toronto-Dominion Bank",
+      "principal: $2,137,500   rate: Prime plus 5.0% per annum.",
+      "registered: 10/01/2019   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,900,000   rate: Prime plus 10.0% per annum.",
+      "registered: 09/30/2019   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,400,000   rate: 18.0% per annum.",
+      "registered: 10/01/2019   due: 10/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT146/RT14638/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1116 / 1141",
+      "rt_id": "RT14638"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "2148 CARLING AVE",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/10/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "9750000",
+    "cash": "9750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 095 202 10400"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "2148 CARLING AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "10 May 1999",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Riocan Holdings Inc"
+    ],
+    "buyer_lines": [
+      "3125475 Canada Inc"
+    ],
+    "price_text": "$9,750,000"
+  }
+}

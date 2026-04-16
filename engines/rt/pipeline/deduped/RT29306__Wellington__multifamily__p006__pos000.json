@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT29306",
+  "source_folder": "Wellington/multifamily/p006",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29306",
+      "source_folder": "Wellington/multifamily/p006",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p006/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "253 BRISTOL ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "28 Feb 2003",
+      "price_text": "$897,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1485000 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ralph Gorgi",
+        "5954 Wellington Rd 7, RR 5",
+        "Guelph, Ontario",
+        "N1H 6J2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 34",
+      "Lots 48 & 49",
+      "Part Lot 50 & Part St Arnaud St",
+      "As in Inst No ROS-582563",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "23 08 050 014 05700",
+    "consideration_lines": [
+      "cash: $372,617     assumed/vtb debt: $514,083"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT293/RT29306/photo.jpg"
+    },
+    "footer": {
+      "page_position": "251 / 295",
+      "rt_id": "RT29306"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "253 BRISTOL ST",
+    "postcode": "N1H 3M3",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "02/28/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".52",
+    "consid": "897500",
+    "cash": "372617",
+    "debt": "514083",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 050 014 05700"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "253 BRISTOL ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "28 Feb 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1485000 Ontario Inc"
+    ],
+    "price_text": "$897,500"
+  }
+}

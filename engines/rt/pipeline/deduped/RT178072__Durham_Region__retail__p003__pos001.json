@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT178072",
+  "source_folder": "Durham_Region/retail/p003",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178072",
+      "source_folder": "Durham_Region/retail/p003",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p003/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1695 BAYLY ST"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "29 May 2023",
+      "price_text": "$4,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1816638 Ontario Inc",
+        "KMSD Mankaryous Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Said Agaiby",
+        "517 Sundown Cres",
+        "Pickering, Ontario",
+        "L1V 6A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bessada EV Division Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yousry Bessada",
+        "1695 Bayly St",
+        "Pickering, Ontario",
+        "L1W 2Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc BF, Range 3",
+      "Part Lot 19",
+      "As in Inst No CO-196099",
+      "",
+      "PIN: 26327-0087",
+      "",
+      "1.39 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178072/0617_072107.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178072/0617_072120.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178072/0617_072139.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1780/RT178072/0617_072144.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1780/RT178072/air1.jpg",
+        "/assets/files/RT17/RT1780/RT178072/air2.jpg",
+        "/assets/files/RT17/RT1780/RT178072/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "102 / 506",
+      "rt_id": "RT178072"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1695 BAYLY ST",
+    "postcode": "L1W 2Z1",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "05/29/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.39",
+    "consid": "4500000",
+    "cash": "4500000",
+    "debt": "",
+    "note": "",
+    "pin": "26327-0087",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1695 BAYLY ST"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "29 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1816638 Ontario Inc",
+      "KMSD Mankaryous Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Bessada EV Division Inc"
+    ],
+    "price_text": "$4,500,000"
+  }
+}

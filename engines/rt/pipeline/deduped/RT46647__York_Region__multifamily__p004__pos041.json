@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT46647",
+  "source_folder": "York_Region/multifamily/p004",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46647",
+      "source_folder": "York_Region/multifamily/p004",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p004/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "36 ARNOLD CRES"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "02 Dec 2005",
+      "price_text": "$670,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "TriPlex"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 286, Part Lots 20 & 21",
+      "Except:",
+      "Plan 65R-7120, Part 1",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "19 38 040 040 11600",
+    "consideration_lines": [
+      "cash: $670,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $500,000",
+      "registered: 12/02/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "192 / 263",
+      "rt_id": "RT46647"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "36 ARNOLD CRES",
+    "postcode": "L4C 3R5",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "12/02/2005",
+    "desc": "TriPlex",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "670000",
+    "cash": "670000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 040 040 11600"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "36 ARNOLD CRES"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "02 Dec 2005",
+    "note": "",
+    "description": "TriPlex",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$670,000"
+  }
+}

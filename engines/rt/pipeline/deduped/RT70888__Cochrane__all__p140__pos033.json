@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT70888",
+  "source_folder": "Cochrane/all/p140",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70888",
+      "source_folder": "Cochrane/all/p140",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p140/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "90 GEORGE ST",
+        "SUITE 1702"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "19 Feb 2010",
+      "price_text": "$1,124,114",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "90 George Street Ltd     613-234-2296"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Terrence Guibault",
+        "Canril Corp",
+        "81 Metcalfe St, Ste 200",
+        "Ottawa, Ontario",
+        "K1P 6K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Staples Consulting Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ross Staples",
+        "90 George St, Ste 1702",
+        "Ottawa, Ontario",
+        "K1N 0A8"
+      ]
+    },
+    "description_lines": [
+      "Res Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 815",
+      "Level17, Unit 3",
+      "Level B, Units 33, 34, 86 & 87",
+      "",
+      "PIN: 15815-0100 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,124,114     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $400,000   rate: Prime plus 6.0% per annum",
+      "registered: 02/19/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6984 / 10920",
+      "rt_id": "RT70888"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "90 GEORGE ST, SUITE 1702",
+    "postcode": "K1N 0A8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/19/2010",
+    "desc": "Res Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1124114",
+    "cash": "1124114",
+    "debt": "",
+    "note": "",
+    "pin": "15815-0100+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "90 GEORGE ST",
+      "SUITE 1702"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "19 Feb 2010",
+    "note": "",
+    "description": "Res Condo",
+    "seller_lines": [
+      "90 George Street Ltd"
+    ],
+    "buyer_lines": [
+      "Staples Consulting Inc"
+    ],
+    "price_text": "$1,124,114"
+  }
+}

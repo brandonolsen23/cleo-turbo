@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT46283",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46283",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 KING ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Jan 2006",
+      "price_text": "$1,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Smycorp Investments Inc     416-205-9222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Craig Smith",
+        "Ashar Urban Realty Inc",
+        "4 King St W, Ste 1305",
+        "Toronto, Ontario",
+        "M5H 1B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2086237 Ontario Inc     905-574-3300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anthony DiCenzo",
+        "DiCenzo & Associates",
+        "1070 Stone Church Rd E",
+        "Unit 41",
+        "Hamilton, Ontario",
+        "L8W 3K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Town of York Plan, Market Block",
+      "Lot 9, S/S King St",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 064 280 00600",
+    "consideration_lines": [
+      "cash: $1,850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT462/RT46283/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3509 / 4952",
+      "rt_id": "RT46283"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "125 KING ST E",
+    "postcode": "M5C 1G6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/11/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1850000",
+    "cash": "1850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 064 280 00600"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "125 KING ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Jan 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Smycorp Investments Inc"
+    ],
+    "buyer_lines": [
+      "2086237 Ontario Inc"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

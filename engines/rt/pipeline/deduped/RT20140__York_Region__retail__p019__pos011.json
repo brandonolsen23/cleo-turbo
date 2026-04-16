@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20140",
+  "source_folder": "York_Region/retail/p019",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20140",
+      "source_folder": "York_Region/retail/p019",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "5917 MAIN ST"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "03 Jan 2001",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Giofcos & Son Investments Ltd     905-471-1671"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Louis Giofcos",
+        "76 Riverlands Ave",
+        "Markham, Ontario",
+        "L6B 1B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hoad Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Graham Hoad",
+        "1697 Regional Rd 30",
+        "Stouffville, Ontario",
+        "L4A 7Z7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3 tenants"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 35",
+      "As in Inst No WS-6300",
+      "",
+      "S side 25m E of West Lawn Cres",
+      "",
+      "1.53 acre"
+    ],
+    "arn_text": "19 44 000 205 32000",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $1,050,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT201/RT20140/photo.jpg"
+    },
+    "footer": {
+      "page_position": "912 / 984",
+      "rt_id": "RT20140"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "5917 MAIN ST",
+    "postcode": "L4A 2Z9",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "01/03/2001",
+    "desc": "Retail Bldg - 1 storey; 3 tenants",
+    "bldg": "",
+    "acreage": "1.53",
+    "consid": "1250000",
+    "cash": "200000",
+    "debt": "1050000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 44 000 205 32000"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "5917 MAIN ST"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "03 Jan 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3 tenants",
+    "seller_lines": [
+      "Giofcos & Son Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Hoad Investments Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

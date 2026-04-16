@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT195117",
+  "source_folder": "Renfrew/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195117",
+      "source_folder": "Renfrew/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "339 S RAGLAN ST"
+      ],
+      "city_region": "Renfrew : Renfrew",
+      "date_text": "31 Oct 2025",
+      "price_text": "$4,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Scott's Acquisition Inc     506-451-1826"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Plaza",
+        "98 Main St",
+        "Fredericton, NB",
+        "E3A 9N6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Seven Star Investments Inc     519-448-9469"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rudolf Meyer",
+        "4 Columbo Ct",
+        "St George, Ontario",
+        "N0E 1N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3, First Range,",
+      "Lots 4 & 5",
+      "Part Lots 3 & 6",
+      "As in Inst No R-290042",
+      "",
+      "PIN: 57286-0004",
+      "",
+      "0.86 acre"
+    ],
+    "arn_text": "47 48 000 035 08800",
+    "consideration_lines": [
+      "cash: $4,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $300,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/31/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 52",
+      "rt_id": "RT195117"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "339 S RAGLAN ST",
+    "postcode": "K7V 1R6",
+    "municipality": "Renfrew",
+    "region": "Renfrew",
+    "date": "10/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".86",
+    "consid": "4500000",
+    "cash": "4500000",
+    "debt": "",
+    "note": "",
+    "pin": "57286-0004",
+    "rollno": "47 48 000 035 08800"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "339 S RAGLAN ST"
+    ],
+    "city_region": "Renfrew : Renfrew",
+    "date_text": "31 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Scott's Acquisition Inc"
+    ],
+    "buyer_lines": [
+      "Seven Star Investments Inc"
+    ],
+    "price_text": "$4,500,000"
+  }
+}

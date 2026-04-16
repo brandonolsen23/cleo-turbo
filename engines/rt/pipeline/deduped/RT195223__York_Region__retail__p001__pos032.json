@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT195223",
+  "source_folder": "York_Region/retail/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195223",
+      "source_folder": "York_Region/retail/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "669 WELLINGTON ST E"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "03 Nov 2025",
+      "price_text": "$17,190,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "NewRoads GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o NewRoads Automotive Group Ltd",
+        "18100 Yonge St",
+        "Newmarket, Ontario",
+        "L3Y 8V1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Multiland Pacific (Ontario) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christian Chia",
+        "5580 Parkwood Cres",
+        "Richmond, British Columbia",
+        "V6V 0B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Whitchurch, Part Lot 80",
+      "Plan 65M-3461, Block 43",
+      "As in Inst No R-203394",
+      "Except:",
+      "Plan 65R-16898, Parts 10 & 11",
+      "",
+      "PIN: 03643-0686 +",
+      "",
+      "5.04 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,171,070     assumed/vtb debt: $0",
+      "other: $10,018,930",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,000,000,000   rate: Prime plus 8.0% per annum.",
+      "registered: 11/03/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195223/1122_125340.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195223/1122_125356.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195223/1122_125358.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195223/1122_125706.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195223/1122_125707.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1952/RT195223/1122_125748.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 984",
+      "rt_id": "RT195223"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "669 WELLINGTON ST E",
+    "postcode": "L4G 0C9",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "11/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.04",
+    "consid": "17190000",
+    "cash": "7171070",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "03643-0686+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "669 WELLINGTON ST E"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "03 Nov 2025",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "NewRoads GP Inc"
+    ],
+    "buyer_lines": [
+      "Multiland Pacific (Ontario) Ltd"
+    ],
+    "price_text": "$17,190,000"
+  }
+}

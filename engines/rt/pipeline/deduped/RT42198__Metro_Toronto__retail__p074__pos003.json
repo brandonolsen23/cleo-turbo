@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT42198",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42198",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "503 - 507 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 May 2005",
+      "price_text": "$3,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mink Printing Inc     416-782-6219"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lorne Miller",
+        "74 Shallmar Blvd",
+        "Toronto, Ontario",
+        "M6C 2J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2072708 Ontario Inc     416-780-0488"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Samuel Galet",
+        "87 Shelbourne Ave",
+        "Toronto, Ontario",
+        "M5N 1Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 112, Part Lots 4 & 5",
+      "As in Inst No CA-224638",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "19 04 067 380 03200",
+    "consideration_lines": [
+      "cash: $3,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3654 / 4952",
+      "rt_id": "RT42198"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "503 - 507 BLOOR ST W",
+    "postcode": "M5S 1Y2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/31/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "3250000",
+    "cash": "3250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 067 380 03200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "503 - 507 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 May 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mink Printing Inc"
+    ],
+    "buyer_lines": [
+      "2072708 Ontario Inc"
+    ],
+    "price_text": "$3,250,000"
+  }
+}

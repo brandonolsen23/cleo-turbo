@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT66718",
+  "source_folder": "Kitchener-Waterloo/retail/p010",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66718",
+      "source_folder": "Kitchener-Waterloo/retail/p010",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p010/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "36 - 42 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "16 Apr 2009",
+      "price_text": "$1,040,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "1053103 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Linda Eisses",
+        "7207 Twiss Rd, RR 3",
+        "Cambellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Long Holdings Inc     905-837-8481"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steven Long",
+        "Yorkville Sound",
+        "550 Granite Ct",
+        "Pickering, Ontario",
+        "L1W 3Y8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 9,600 sf @ $108",
+      "",
+      "9,600 sf - includes basement which is at grade at rear of bldg",
+      "",
+      "Last transferred in Oct 2002 for $780,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 491, Lot 6, E/S King St",
+      "",
+      "PIN: 22374-0035",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "30 16 011 850 01100",
+    "consideration_lines": [
+      "cash: $1,040,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT667/RT66718/IMG_0268.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT667/RT66718/IMG_0269.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT667/RT66718/air1.jpg",
+        "/assets/files/RT6/RT667/RT66718/air2.jpg",
+        "/assets/files/RT6/RT667/RT66718/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "500 / 752",
+      "rt_id": "RT66718"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "36 - 42 KING ST N",
+    "postcode": "N2J 2W8",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "04/16/2009",
+    "desc": "Retail Bldg - 1 storey; 9,600 sf @ $108",
+    "bldg": "9,600 sf",
+    "acreage": ".2",
+    "consid": "1040000",
+    "cash": "1040000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "22374-0035",
+    "rollno": "30 16 011 850 01100"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "36 - 42 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "16 Apr 2009",
+    "note": "Purchased by Tenant",
+    "description": "Retail Bldg - 1 storey; 9,600 sf @ $108",
+    "seller_lines": [
+      "1053103 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Long Holdings Inc"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT49688",
+  "source_folder": "Brant/retail/p004",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49688",
+      "source_folder": "Brant/retail/p004",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "67 CHARING CROSS ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "30 Jun 2006",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1169819 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Donald Willson",
+        "535 Paris Rd, RR 1",
+        "Paris, Ontario",
+        "N3L 3E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1699881 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eli Turkienicz",
+        "1454 Dundas St E, Ste 117",
+        "Mississauga, Ontario",
+        "L4X 1L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Kerby Survey",
+      "Part Lots 18 & 19, W/S North Park St",
+      "As in Inst No A-395047",
+      "",
+      "0.89 acre"
+    ],
+    "arn_text": "29 06 030 013 04800",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1169819 Ontario Ltd",
+      "principal: $250,000   rate: 7.0% per annum",
+      "registered: 06/30/2006   due: 05/31/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT496/RT49688/0805_165409.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT496/RT49688/0805_165429.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT496/RT49688/0805_165431.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "163 / 195",
+      "rt_id": "RT49688"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "67 CHARING CROSS ST",
+    "postcode": "N3R 2H4",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "06/30/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".89",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 013 04800"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "67 CHARING CROSS ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "30 Jun 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1169819 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1699881 Ontario Ltd"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

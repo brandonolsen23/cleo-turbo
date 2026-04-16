@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT34443",
+  "source_folder": "Metro_Toronto/multifamily/p095",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34443",
+      "source_folder": "Metro_Toronto/multifamily/p095",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p095/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "34 CORBY AVE"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "01 Mar 2004",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Ciram Esolutions Ltd     416-744-0953"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gord Maric",
+        "65 Beaumonde Heights Blvd",
+        "Toronto, Ontario",
+        "M9V 1W1"
+      ]
+    },
+    "description_lines": [
+      "SixPlex: 2 storey;  6-2bdrm @ $105,000",
+      "",
+      "There are two additional basement units: 1-2bdrm and 1-bach",
+      "",
+      "Last transferred in May 2002 for $540,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1726, Part Lot 100",
+      "As in Inst No CA-536350",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 14 042 080 05300",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT344/RT34443/air1.jpg",
+        "/assets/files/RT3/RT344/RT34443/air2.jpg",
+        "/assets/files/RT3/RT344/RT34443/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT344/RT34443/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4711 / 6031",
+      "rt_id": "RT34443"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "34 CORBY AVE",
+    "postcode": "M6E 1V3",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "03/01/2004",
+    "desc": "SixPlex: 2 storey;  6-2bdrm @ $105,000",
+    "bldg": "6 units",
+    "acreage": ".06",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 042 080 05300"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "34 CORBY AVE"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "01 Mar 2004",
+    "note": "",
+    "description": "SixPlex: 2 storey;  6-2bdrm @ $105,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Ciram Esolutions Ltd"
+    ],
+    "price_text": "$630,000"
+  }
+}

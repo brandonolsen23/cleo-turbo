@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28116",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28116",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "183 BERRY RD"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "05 Dec 2002",
+      "price_text": "$1,637,500",
+      "note": "50% Interest."
+    },
+    "transferor": {
+      "party_lines": [
+        "Samuel Rosen and Sons Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Harold Rosen",
+        "131 Beecroft Rd, Ste 103",
+        "Toronto, Ontario",
+        "M2N 6G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Paul Hecht",
+        "Rita Sloan"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "47 Milford Ave",
+        "Toronto, Ontario",
+        "M6M 2W1"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 50 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4309, Part Lots 10 & 11",
+      "",
+      "1.03 acre"
+    ],
+    "arn_text": "19 19 018 230 00300",
+    "consideration_lines": [
+      "cash: $1,007,674     assumed/vtb debt: $629,826"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT281/RT28116/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4999 / 6031",
+      "rt_id": "RT28116"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "183 BERRY RD",
+    "postcode": "M8Y 1W9",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "12/05/2002",
+    "desc": "Apartment Bldg - 3 storey; 50 units",
+    "bldg": "50 units",
+    "acreage": "1.03",
+    "consid": "1637500",
+    "cash": "1007674",
+    "debt": "629826",
+    "note": "50% Interest.",
+    "pin": "",
+    "rollno": "19 19 018 230 00300"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "183 BERRY RD"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "05 Dec 2002",
+    "note": "50% Interest.",
+    "description": "Apartment Bldg - 3 storey; 50 units",
+    "seller_lines": [
+      "Samuel Rosen and Sons Ltd"
+    ],
+    "buyer_lines": [
+      "Paul Hecht",
+      "Rita Sloan"
+    ],
+    "price_text": "$1,637,500"
+  }
+}

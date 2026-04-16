@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT42212",
+  "source_folder": "York_Region/retail/p015",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42212",
+      "source_folder": "York_Region/retail/p015",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 NICKLE GATE"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "02 Jun 2005",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Acumen Investments Ltd     905-851-7741"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Marco Muzzo",
+        "East Woodbridge Developments",
+        "100 Stada Dr, Unit 1",
+        "Woodbridge, Ontario",
+        "L4L 5V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Marchese Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tony Marchese",
+        "22 Cadetta Rd",
+        "Brampton, Ontario",
+        "L6T 3Z8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 10,584 sf @ $109"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2420, Block 137",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $600,000   rate: Prime plus 6.9% per annum",
+      "registered: 06/02/2005   due: on demand"
+    ],
+    "broker_lines": [
+      "Pantalone Realty: John Pantalone, 905-660-9800"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT422/RT42212/air1.jpg",
+        "/assets/files/RT4/RT422/RT42212/air2.jpg",
+        "/assets/files/RT4/RT422/RT42212/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT422/RT42212/photo.jpg"
+    },
+    "footer": {
+      "page_position": "744 / 984",
+      "rt_id": "RT42212"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "1 NICKLE GATE",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/02/2005",
+    "desc": "Retail Plaza - 10,584 sf @ $109",
+    "bldg": "10,584 sf",
+    "acreage": "1",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "1 NICKLE GATE"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "02 Jun 2005",
+    "note": "",
+    "description": "Retail Plaza - 10,584 sf @ $109",
+    "seller_lines": [
+      "Acumen Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Marchese Investments Ltd"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT174573",
+  "source_folder": "York_Region/retail/p005",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174573",
+      "source_folder": "York_Region/retail/p005",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "7725 BIRCHMOUNT RD",
+        "UNIT 20 & 21"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "08 Dec 2022",
+      "price_text": "$1,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pailliser Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2869 Bloor St W, Ste 229",
+        "Toronto, Ontario",
+        "M8X 1B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000327254 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chieh Huang",
+        "7725 Birchmount Rd, Unit 21",
+        "Markham, Ontario",
+        "L3R 9X3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 643",
+      "Level 1, Units 20 & 21",
+      "",
+      "PIN: 29176-0021 +"
+    ],
+    "arn_text": "19 36 020 126 65070",
+    "consideration_lines": [
+      "cash: $1,075,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $914,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 12/08/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115114.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115115.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115120.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115129.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115234.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115235.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1745/RT174573/0115_115247.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "243 / 984",
+      "rt_id": "RT174573"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "7725 BIRCHMOUNT RD, UNIT 20 & 21",
+    "postcode": "L3R 9X3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "12/08/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1075000",
+    "cash": "1075000",
+    "debt": "",
+    "note": "",
+    "pin": "29176-0021+",
+    "rollno": "19 36 020 126 65070"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "7725 BIRCHMOUNT RD",
+      "UNIT 20 & 21"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "08 Dec 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Pailliser Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1000327254 Ontario Inc"
+    ],
+    "price_text": "$1,075,000"
+  }
+}

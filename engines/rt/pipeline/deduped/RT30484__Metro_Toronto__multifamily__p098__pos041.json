@@ -1,0 +1,99 @@
+{
+  "rt_id": "RT30484",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30484",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "61 OLDHAM"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "10 Jun 2003",
+      "price_text": "$655,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Duplex - 2 storey; 3 units @ $218,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5155, Lot 8",
+      "",
+      "0.26 acre"
+    ],
+    "arn_text": "19 19 021 780 05800",
+    "consideration_lines": [
+      "cash: $655,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4892 / 6031",
+      "rt_id": "RT30484"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "61 OLDHAM",
+    "postcode": "M9A 2B9",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "06/10/2003",
+    "desc": "Duplex - 2 storey; 3 units @ $218,333",
+    "bldg": "3 units",
+    "acreage": ".26",
+    "consid": "655000",
+    "cash": "655000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 021 780 05800"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "61 OLDHAM"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "10 Jun 2003",
+    "note": "",
+    "description": "Duplex - 2 storey; 3 units @ $218,333",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$655,000"
+  }
+}

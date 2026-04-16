@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT192000",
+  "source_folder": "Ottawa-Carleton/retail/p002",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192000",
+      "source_folder": "Ottawa-Carleton/retail/p002",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p002/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "89 - 91 MONTREAL RD"
+      ],
+      "city_region": "Vanier : Ottawa-Carleton",
+      "date_text": "06 May 2025",
+      "price_text": "$1,604,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "8710279 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2365 Georgina Dr",
+        "Ottawa, Ontario",
+        "K2B 7M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16947841 Canada Society"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lina Bellony",
+        "89 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1L 6E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44, Part Lots 9 & 10",
+      "As in Inst No NS-74833",
+      "",
+      "PIN: 04236-0170",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "06 09 210 101 23800",
+    "consideration_lines": [
+      "cash: $1,604,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192000/0823_101800.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192000/0823_101801.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192000/0823_101829.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192000/0823_101830.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192000/0823_101838.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "53 / 1141",
+      "rt_id": "RT192000"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "89 - 91 MONTREAL RD",
+    "postcode": "K1L 6E8",
+    "municipality": "Vanier",
+    "region": "Ottawa-Carleton",
+    "date": "05/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "1604000",
+    "cash": "1604000",
+    "debt": "",
+    "note": "",
+    "pin": "04236-0170",
+    "rollno": "06 09 210 101 23800"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "89 - 91 MONTREAL RD"
+    ],
+    "city_region": "Vanier : Ottawa-Carleton",
+    "date_text": "06 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "8710279 Canada Inc"
+    ],
+    "buyer_lines": [
+      "16947841 Canada Society"
+    ],
+    "price_text": "$1,604,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT29567",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29567",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1940 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Mar 2003",
+      "price_text": "$2,223,244",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Laurentian Plaza Corp     613-729-2222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Mierins",
+        "Carling Motors",
+        "1622 Carling Ave",
+        "Ottawa, Ontario",
+        "K2A 1C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1550882 Ontario Inc     613-728-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael McGahan",
+        "Commvesco Levison-Viner Group",
+        "1339 Wellington St",
+        "Ottawa, Ontario",
+        "K1Y 3B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - RF, Part Lot 1",
+      "As in Inst No N-495100",
+      "Except Plan 5R-13064, Part 1",
+      "",
+      "2.14 acre"
+    ],
+    "arn_text": "06 14 116 402 35500",
+    "consideration_lines": [
+      "cash: $2,223,244     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT295/RT29567/photo.jpg"
+    },
+    "footer": {
+      "page_position": "963 / 1141",
+      "rt_id": "RT29567"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1940 BANK ST",
+    "postcode": "K1V 7Z8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/28/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.14",
+    "consid": "2223244",
+    "cash": "2223244",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 116 402 35500"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1940 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Mar 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Laurentian Plaza Corp"
+    ],
+    "buyer_lines": [
+      "1550882 Ontario Inc"
+    ],
+    "price_text": "$2,223,244"
+  }
+}

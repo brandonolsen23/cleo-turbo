@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT195990",
+  "source_folder": "Metro_Toronto/retail/p002",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195990",
+      "source_folder": "Metro_Toronto/retail/p002",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p002/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "577A BLOOR ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Dec 2025",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Residences of Via Bloor Inc     416-661-9394"
+      ],
+      "trade_name": "Tridel",
+      "contact_lines": [
+        "c/o 4800 Dufferin St, Ste 200",
+        "Toronto, Ontario",
+        "M3H 5S9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CCHF Holdings Inc     647-728-1313"
+      ],
+      "trade_name": "Shiny Star Canada Ltd",
+      "contact_lines": [
+        "Attn: Jay He",
+        "161 McPherson St",
+        "Markham, Ontario",
+        "L3R 3L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-34866, Parts 1-4",
+      "",
+      "PIN: 21086-0151",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $3,500,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 12/11/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080012.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080046.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080057.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080118.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080122.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080327.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080328.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1959/RT195990/1228_080333.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "70 / 4952",
+      "rt_id": "RT195990"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "577A BLOOR ST E",
+    "postcode": "M4W 0B2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/11/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "",
+    "pin": "21086-0151",
+    "rollno": ""
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "577A BLOOR ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Residences of Via Bloor Inc"
+    ],
+    "buyer_lines": [
+      "CCHF Holdings Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

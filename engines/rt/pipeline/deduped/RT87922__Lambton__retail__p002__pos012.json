@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT87922",
+  "source_folder": "Lambton/retail/p002",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT87922",
+      "source_folder": "Lambton/retail/p002",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "99 ONTARIO ST S"
+      ],
+      "city_region": "Grand Bend : Lambton",
+      "date_text": "27 Sep 2012",
+      "price_text": "$1,690,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1079583 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Suk Oh",
+        "18482 Fiftyfifth Ave",
+        "Surrey, BC",
+        "V3S 8S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maxway Logistic Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexander Shestak",
+        "35 Belvedere Dr",
+        "Oakville, Ontario",
+        "L6L 4B5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-5509, Part 1",
+      "",
+      "PIN: 43445-0427"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,690,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,026,000   rate: Prime plus 6.25% per annum",
+      "registered: 09/28/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT879/RT87922/1208_153046.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT879/RT87922/1208_153102.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT879/RT87922/1208_153132.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT879/RT87922/1208_153251.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT879/RT87922/1208_153310.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT879/RT87922/1208_153342.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "63 / 106",
+      "rt_id": "RT87922"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "99 ONTARIO ST S",
+    "postcode": "N0M 1T0",
+    "municipality": "Grand Bend",
+    "region": "Lambton",
+    "date": "09/27/2012",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1690000",
+    "cash": "1690000",
+    "debt": "",
+    "note": "",
+    "pin": "43445-0427",
+    "rollno": ""
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "99 ONTARIO ST S"
+    ],
+    "city_region": "Grand Bend : Lambton",
+    "date_text": "27 Sep 2012",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1079583 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Maxway Logistic Ltd"
+    ],
+    "price_text": "$1,690,000"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT51381",
+  "source_folder": "Cochrane/all/p166",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51381",
+      "source_folder": "Cochrane/all/p166",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p166/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "164 METCALFE ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "02 Oct 2006",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1130036 Ontario Inc     613-236-4600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Garfield Harrington",
+        "Harrington Staffing Services",
+        "30 Metcalfe St, Ste 300",
+        "Ottawa, Ontario",
+        "K1P 5L4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2108133 Ontario Inc     613-232-9222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Payne",
+        "164 Metcalfe St",
+        "Ottawa, Ontario",
+        "K2P 1P2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2996",
+      "Part Lot 49, S Gloucester St",
+      "As in Inst No N-723003",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "06 14 041 801 27300",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $875,000   rate: Prime plus 5.0% per annum",
+      "registered: 10/02/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8254 / 10920",
+      "rt_id": "RT51381"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "164 METCALFE ST",
+    "postcode": "K2P 1P2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/02/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 041 801 27300"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "164 METCALFE ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "02 Oct 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1130036 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2108133 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT115812",
+  "source_folder": "Lanark_County/retail/p001",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT115812",
+      "source_folder": "Lanark_County/retail/p001",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lanark_County/retail/p001/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "10441 HWY 7",
+        "10441 HIGHWAY 7"
+      ],
+      "city_region": "Carleton Place : Lanark County",
+      "date_text": "11 Apr 2016",
+      "price_text": "$2,500,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "1702485 Ontario Ltd     613-283-2609"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michele Pitre",
+        "96 Colonel By Cres",
+        "Smith Falls, Ontario",
+        "K7A 5B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "MF Land Company Inc     613-257-3988"
+      ],
+      "trade_name": "March Ford",
+      "contact_lines": [
+        "Attn: Michel Coutu",
+        "10441 Highway 7",
+        "Carleton Place, Ontario",
+        "K7C 3P5"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 15",
+      "Plan 27R-8992, Parts 1-3",
+      "",
+      "PIN: 05134-0171",
+      "",
+      "1.92 acre"
+    ],
+    "arn_text": "09 28 030 060 16000",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $2,125,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 04/11/2016   due: on demand",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,275,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 04/11/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1158/RT115812/0520_131825.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1158/RT115812/0520_131828.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1158/RT115812/0520_131910a.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1158/RT115812/0520_131910b.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1158/RT115812/0520_131924.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "37 / 69",
+      "rt_id": "RT115812"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "10441 HWY 7, 10441 HIGHWAY 7",
+    "postcode": "K7C 3P5",
+    "municipality": "Carleton Place",
+    "region": "Lanark County",
+    "date": "04/11/2016",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.92",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "05134-0171",
+    "rollno": "09 28 030 060 16000"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "10441 HWY 7",
+      "10441 HIGHWAY 7"
+    ],
+    "city_region": "Carleton Place : Lanark County",
+    "date_text": "11 Apr 2016",
+    "note": "Purchased Business",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "1702485 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "MF Land Company Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

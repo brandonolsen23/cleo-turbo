@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT28145",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28145",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 - 15 TAUNTON RD E"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "01 Nov 2002",
+      "price_text": "$740,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Chi-Kuen  Li",
+        "Molly M. Lit     416-282-8372"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "551 Sewells Rd",
+        "Scarborough, Ontario",
+        "M1B 5G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Louis & Nancy Destounis"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "496 Brookdale Ave",
+        "Toronto, Ontario",
+        "M5M 1R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 357, Sheet 10-D, Part Lot 31",
+      "As in Inst No D-298768"
+    ],
+    "arn_text": "18 13 060 024 00100",
+    "consideration_lines": [
+      "cash: $740,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT281/RT28145/photo.jpg"
+    },
+    "footer": {
+      "page_position": "412 / 506",
+      "rt_id": "RT28145"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "7 - 15 TAUNTON RD E",
+    "postcode": "L1G 3T6",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "11/01/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "740000",
+    "cash": "740000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 060 024 00100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "7 - 15 TAUNTON RD E"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "01 Nov 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Chi-Kuen  Li",
+      "Molly M. Lit"
+    ],
+    "buyer_lines": [
+      "Louis & Nancy Destounis"
+    ],
+    "price_text": "$740,000"
+  }
+}

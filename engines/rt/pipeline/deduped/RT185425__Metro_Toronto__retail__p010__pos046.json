@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT185425",
+  "source_folder": "Metro_Toronto/retail/p010",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185425",
+      "source_folder": "Metro_Toronto/retail/p010",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p010/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "1153 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 Jun 2024",
+      "price_text": "$24,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1153 Queen West Holdings Inc     416-673-7444"
+      ],
+      "trade_name": "QuadReal Property Group Ltd",
+      "contact_lines": [
+        "Attn: Edward Lam",
+        "Commerce Court West",
+        "199 Bay St, Ste 4900",
+        "Toronto, Ontario",
+        "M5L 1G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Ordnance Reserve Plan,",
+      "Part Block 5",
+      "As in Inst No CA-462667",
+      "",
+      "PIN: 21298-0193",
+      "",
+      "0.64 acre"
+    ],
+    "arn_text": "19 04 041 470 00600",
+    "consideration_lines": [
+      "cash: $24,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185425/0707_071020.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185425/0707_071029.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185425/0707_071115.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185425/0707_071119.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1854/RT185425/0707_071141.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "497 / 4952",
+      "rt_id": "RT185425"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "1153 QUEEN ST W",
+    "postcode": "M6J 1J4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".64",
+    "consid": "24250000",
+    "cash": "24250000",
+    "debt": "",
+    "note": "",
+    "pin": "21298-0193",
+    "rollno": "19 04 041 470 00600"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "1153 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1153 Queen West Holdings Inc"
+    ],
+    "price_text": "$24,250,000"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT167909",
+  "source_folder": "Kitchener-Waterloo/retail/p004",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT167909",
+      "source_folder": "Kitchener-Waterloo/retail/p004",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p004/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "527 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "01 Apr 2022",
+      "price_text": "$14,525,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "527 King Street (Waterloo) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "777 Dundas St E",
+        "Toronto, Ontario",
+        "M4M 0E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000076941 Ontario Ltd     416-981-9400"
+      ],
+      "trade_name": "Policaro Group",
+      "contact_lines": [
+        "Attn: Paul Policaro",
+        "5 Coachworks Cres",
+        "Brampton, Ontario",
+        "L6R 3Y2"
+      ]
+    },
+    "description_lines": [
+      "Land Rover Dealership: 1 storey; 20,000 sf @ $726"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "German Co Tract, Part Lot 8",
+      "Plan 58R-7464, Parts 6 & 8",
+      "Plan 58R-5613, Part 1",
+      "Plan 58R-15903, Parts 12-58",
+      "Except:",
+      "Plan 58R-7464, Part 2",
+      "",
+      "PIN: 22280-0298",
+      "",
+      "W side King St N, S of Conestogo Rd",
+      "",
+      "2.07 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $14,525,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $15,150,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/01/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_134859.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_134933.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_135032.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_135040.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_135055.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_135117.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1679/RT167909/0618_135156.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "170 / 752",
+      "rt_id": "RT167909"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "527 KING ST N",
+    "postcode": "N2L 5Z6",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "04/01/2022",
+    "desc": "Land Rover Dealership: 1 storey; 20,000 sf @ $726",
+    "bldg": "20,000 sf",
+    "acreage": "2.07",
+    "consid": "14525000",
+    "cash": "14525000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "22280-0298",
+    "rollno": ""
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "527 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "01 Apr 2022",
+    "note": "Purchased Business",
+    "description": "Land Rover Dealership: 1 storey; 20,000 sf @ $726",
+    "seller_lines": [
+      "527 King Street (Waterloo) Ltd"
+    ],
+    "buyer_lines": [
+      "1000076941 Ontario Ltd"
+    ],
+    "price_text": "$14,525,000"
+  }
+}

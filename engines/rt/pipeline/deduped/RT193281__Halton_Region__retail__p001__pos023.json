@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT193281",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193281",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "5327 UPPER MIDDLE RD",
+        "UNIT 11"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "04 Jul 2025",
+      "price_text": "$1,380,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2656685 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "99 Orchardcroft Rd",
+        "Oakville, Ontario",
+        "L6H 0M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001262936 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arij Kazmi",
+        "5327 Upper Middle Rd, Unit 11",
+        "Burlington, Ontario",
+        "L7L 0E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 574",
+      "Level 1, Unit 17",
+      "Level A, Units 11, 68 & 78",
+      "Level B, Units 29, 90 & 110",
+      "",
+      "PIN: 25876-0017 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,380,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,380,000   rate: Prime plus 6.0% per annum.",
+      "registered: 07/04/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094502.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094507.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094508.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094509.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094635.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094638.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1932/RT193281/0719_094732.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "24 / 613",
+      "rt_id": "RT193281"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "5327 UPPER MIDDLE RD, UNIT 11",
+    "postcode": "L7L 0E9",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "07/04/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1380000",
+    "cash": "1380000",
+    "debt": "",
+    "note": "",
+    "pin": "25876-0017+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "5327 UPPER MIDDLE RD",
+      "UNIT 11"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "04 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2656685 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001262936 Ontario Inc"
+    ],
+    "price_text": "$1,380,000"
+  }
+}

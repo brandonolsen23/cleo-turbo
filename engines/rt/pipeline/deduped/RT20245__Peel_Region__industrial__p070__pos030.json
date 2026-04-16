@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20245",
+  "source_folder": "Peel_Region/industrial/p070",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20245",
+      "source_folder": "Peel_Region/industrial/p070",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/industrial/p070/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "145 EAST DR"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "17 Jan 2001",
+      "price_text": "$5,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Futurfood Tec 21 Ltd     416-703-7675"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Franklyn Schwartz",
+        "2 Tecumseth St",
+        "Toronto, Ontario",
+        "M5V 2H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Quality Meat Factory Ltd     905-790-3737"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Latifi",
+        "145 East Dr",
+        "Brampton, Ontario",
+        "L6T 1B5"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan RD-288, Parts 1 & 2",
+      "",
+      "10.00 acre"
+    ],
+    "arn_text": "21 20 100 025 12500",
+    "consideration_lines": [
+      "cash: $5,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3481 / 3793",
+      "rt_id": "RT20245"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "145 EAST DR",
+    "postcode": "L6T 1B5",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "01/17/2001",
+    "desc": "Industrial Bldg",
+    "bldg": "",
+    "acreage": "10",
+    "consid": "5300000",
+    "cash": "5300000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "21 20 100 025 12500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "145 EAST DR"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "17 Jan 2001",
+    "note": "Related Parties",
+    "description": "Industrial Bldg",
+    "seller_lines": [
+      "Futurfood Tec 21 Ltd"
+    ],
+    "buyer_lines": [
+      "Quality Meat Factory Ltd"
+    ],
+    "price_text": "$5,300,000"
+  }
+}

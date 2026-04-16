@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT40329",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40329",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "4046 SHEPPARD AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "14 Feb 2005",
+      "price_text": "$590,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1371209 Ontario Inc     416-491-2929"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jannis Tong",
+        "Mimi Tang",
+        "1210 Sheppard Ave E, Ste 202",
+        "Toronto, Ontario",
+        "M2K 1E3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,600 sf @ $164"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3666, Part Lot 37",
+      "As in Inst No SC-573227",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "19 01 111 260 02800",
+    "consideration_lines": [
+      "cash: $590,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT403/RT40329/air1.jpg",
+        "/assets/files/RT4/RT403/RT40329/air2.jpg",
+        "/assets/files/RT4/RT403/RT40329/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3697 / 4952",
+      "rt_id": "RT40329"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "4046 SHEPPARD AVE E",
+    "postcode": "M1S 1S6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "02/14/2005",
+    "desc": "Retail Bldg - 1 storey; 3,600 sf @ $164",
+    "bldg": "3,600 sf",
+    "acreage": ".16",
+    "consid": "590000",
+    "cash": "590000",
+    "debt": "",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "19 01 111 260 02800"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "4046 SHEPPARD AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "14 Feb 2005",
+    "note": "Purchase & Sale",
+    "description": "Retail Bldg - 1 storey; 3,600 sf @ $164",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1371209 Ontario Inc"
+    ],
+    "price_text": "$590,000"
+  }
+}

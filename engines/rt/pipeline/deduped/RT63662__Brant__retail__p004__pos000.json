@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT63662",
+  "source_folder": "Brant/retail/p004",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63662",
+      "source_folder": "Brant/retail/p004",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "487 PARK RD N"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "19 Aug 2008",
+      "price_text": "$540,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "977322 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bozidar Toic",
+        "RR 1",
+        "Waterford, Ontario",
+        "N0E 1Y0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1224553 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Iudita Brumara",
+        "575 Park Rd N",
+        "Brantford, Ontario",
+        "N3R 7K8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 37",
+      "Plan 2R-2882, Parts 9 & 10",
+      "",
+      "PIN: 32187-0008",
+      "",
+      "E side 200m S of Dundon Ave",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "29 06 030 019 40050",
+    "consideration_lines": [
+      "cash: $540,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $500,000   rate: Base plus 0.75% per annum",
+      "registered: 08/19/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT636/RT63662/1026_105705.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT636/RT63662/1026_105725.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "151 / 195",
+      "rt_id": "RT63662"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "487 PARK RD N",
+    "postcode": "N3R 7K8",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "08/19/2008",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "540000",
+    "cash": "540000",
+    "debt": "",
+    "note": "",
+    "pin": "32187-0008",
+    "rollno": "29 06 030 019 40050"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "487 PARK RD N"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "19 Aug 2008",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "977322 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1224553 Ontario Inc"
+    ],
+    "price_text": "$540,000"
+  }
+}

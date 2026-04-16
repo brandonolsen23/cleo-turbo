@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT24347",
+  "source_folder": "Brant/retail/p004",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24347",
+      "source_folder": "Brant/retail/p004",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "330 WEST ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "20 Jul 2001",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Grand Valley Investments Ltd     519-753-9268"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Len Farr",
+        "34 Belaire Rd",
+        "Brantford, Ontario",
+        "N3R 6Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Walter & Gary Dorsey",
+        "Paula Turkiewicz",
+        "Noreen Novak",
+        "COB as West Hill Plaza     519-759-0033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Dorsey Group",
+        "330 West St",
+        "Brantford, Ontario",
+        "N3R 7V5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey 6 units 21,600 sf @ $88"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1460",
+      "Lot 1 & Block A",
+      "Plan 1000, Section 51",
+      "Part Lot 64",
+      "",
+      "2.08 acre"
+    ],
+    "arn_text": "29 06 030 010 32000",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $1,700,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT243/RT24347/photo.jpg"
+    },
+    "footer": {
+      "page_position": "194 / 195",
+      "rt_id": "RT24347"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "330 WEST ST",
+    "postcode": "N3R 7V5",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "07/20/2001",
+    "desc": "Retail Plaza - 1 storey 6 units 21,600 sf @ $88",
+    "bldg": "21,600 sf",
+    "acreage": "2.08",
+    "consid": "1900000",
+    "cash": "200000",
+    "debt": "1700000",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 010 32000"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "330 WEST ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "20 Jul 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey 6 units 21,600 sf @ $88",
+    "seller_lines": [
+      "Grand Valley Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Walter & Gary Dorsey",
+      "Paula Turkiewicz",
+      "Noreen Novak",
+      "COB as West Hill Plaza"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

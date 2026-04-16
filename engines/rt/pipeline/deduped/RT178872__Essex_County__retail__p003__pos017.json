@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT178872",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178872",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "1624 HOWARD AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "06 Jul 2023",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lee-Mar Developments ULC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "429 Spadina Rd, Ste 202",
+        "Toronto, Ontario",
+        "M5P 2W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Evermaks Properties Inc     226-363-0439"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leendert Meyer",
+        "1004 Woodland Cres",
+        "Belle River, Ontario",
+        "N0R 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Block 87",
+      "Plan 12R-22691, Parts 1-3",
+      "",
+      "PIN: 01161-0319",
+      "",
+      "1.91 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,600,000     assumed/vtb debt: $400,000",
+      "",
+      "chargee: Motor City Community Credit Union Ltd",
+      "principal: $5,000,000",
+      "registered: 07/06/2023   due: on demand",
+      "",
+      "chargee: Lee-Mar Developments ULC",
+      "principal: $400,000   rate: 7.39% per annum.",
+      "registered: 07/06/2023   due: 07/06/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "118 / 460",
+      "rt_id": "RT178872"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "1624 HOWARD AVE",
+    "postcode": "N8X 3T7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "07/06/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.91",
+    "consid": "4000000",
+    "cash": "3600000",
+    "debt": "400000",
+    "note": "",
+    "pin": "01161-0319",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "1624 HOWARD AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "06 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Lee-Mar Developments ULC"
+    ],
+    "buyer_lines": [
+      "Evermaks Properties Inc"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

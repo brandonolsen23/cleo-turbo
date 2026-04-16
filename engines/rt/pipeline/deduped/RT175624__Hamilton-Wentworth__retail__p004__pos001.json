@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT175624",
+  "source_folder": "Hamilton-Wentworth/retail/p004",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT175624",
+      "source_folder": "Hamilton-Wentworth/retail/p004",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p004/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "870 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "16 Feb 2023",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2650614 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Kantor",
+        "201 Concession 6 Walpole",
+        "Jarvis, Ontario",
+        "N0A 1J0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1469, Lot 6",
+      "Except:",
+      "Plan 62R-9210, Part 1",
+      "",
+      "PIN: 16968-0294 +",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "25 18 080 931 08540",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 2689918 Ontario Inc",
+      "principal: $1,700,000   rate: 10.0% per annum.",
+      "registered: 02/16/2023   due: 03/01/2024",
+      "",
+      "Named Individual(s)",
+      "principal: $600,000   rate: 11.0% per annum.",
+      "registered: 02/16/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1756/RT175624/0311_102157.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1756/RT175624/0311_102213.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1756/RT175624/0311_102214.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1756/RT175624/0311_102321.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1756/RT175624/0311_102322.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1756/RT175624/0311_102326.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "152 / 616",
+      "rt_id": "RT175624"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "870 UPPER JAMES ST",
+    "postcode": "L9C 3A4",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "02/16/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "16968-0294+",
+    "rollno": "25 18 080 931 08540"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "870 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "16 Feb 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2650614 Ontario Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

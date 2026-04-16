@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT30086",
+  "source_folder": "Metro_Toronto/multifamily/p099",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30086",
+      "source_folder": "Metro_Toronto/multifamily/p099",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p099/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1112 WESTON RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "06 May 2003",
+      "price_text": "$532,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1112 Weston Road Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: C. Ramdhansingh",
+        "13 Adirondack Cres",
+        "Brampton, Ontario",
+        "L6R 1E6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 11351, Lot 1",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 14 072 050 02400",
+    "consideration_lines": [
+      "cash: $532,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT300/RT30086/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4919 / 6031",
+      "rt_id": "RT30086"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1112 WESTON RD",
+    "postcode": "M6N 3S4",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "05/06/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "532000",
+    "cash": "532000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 072 050 02400"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1112 WESTON RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "06 May 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1112 Weston Road Holdings Inc"
+    ],
+    "price_text": "$532,000"
+  }
+}

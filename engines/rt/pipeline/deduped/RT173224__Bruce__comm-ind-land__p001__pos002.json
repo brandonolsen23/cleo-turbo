@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT173224",
+  "source_folder": "Bruce/comm-ind-land/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173224",
+      "source_folder": "Bruce/comm-ind-land/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/comm-ind-land/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "312 DURHAM MARKET ST S"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "08 Nov 2022",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1429912 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "36 Rowan Ave",
+        "Kincardine, Ontario",
+        "N2Z 2X6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000349457 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Akashdeep Dhaliwal",
+        "889 Ridge Rd",
+        "Stoney Creek, Ontario",
+        "L8J 2Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-9387, Part 1",
+      "",
+      "PIN: 33313-0825",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $650,000",
+      "",
+      "chargee: 1429912 Ontario Ltd",
+      "principal: $650,000   rate: 5.0% per annum.",
+      "registered: 11/08/2022   due: 10/26/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 19",
+      "rt_id": "RT173224"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "312 DURHAM MARKET ST S",
+    "postcode": "N2Z 2A3",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "11/08/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "1300000",
+    "cash": "650000",
+    "debt": "650000",
+    "note": "",
+    "pin": "33313-0825",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "312 DURHAM MARKET ST S"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "08 Nov 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1429912 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000349457 Ontario Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

@@ -65,7 +65,8 @@ const CATEGORY_COLORS: Record<string, RadixColor> = {
   fuel: "indigo",
 };
 
-export function categoryColor(category: string): RadixColor {
+export function categoryColor(category: string | null | undefined): RadixColor {
+  if (!category) return "gray";
   return CATEGORY_COLORS[category.toLowerCase()] ?? "gray";
 }
 

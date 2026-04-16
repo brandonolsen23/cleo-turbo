@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT191906",
+  "source_folder": "Peel_Region/retail/p002",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191906",
+      "source_folder": "Peel_Region/retail/p002",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p002/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 PARK ST E",
+        "UNIT 1"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "02 May 2025",
+      "price_text": "$2,025,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Edenshaw Ann Developments Ltd     905-990-3500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "129 Lakeshore Rd E, Ste 201",
+        "Mississauga, Ontario",
+        "L5G 1E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "28 Ann Retail Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David McComb",
+        "129 Lakeshore Rd E, Ste 201",
+        "Mississauga, Ontario",
+        "L5G 1E5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1171",
+      "Level 1, Unit 1",
+      "Level C, Units 9 & 10",
+      "Level A, Units 50 & 51",
+      "",
+      "PIN: 20171-0001 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,025,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "80 / 1087",
+      "rt_id": "RT191906"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "80 PARK ST E, UNIT 1",
+    "postcode": "L5G 1M4",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "05/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2025000",
+    "cash": "2025000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "20171-0001+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "80 PARK ST E",
+      "UNIT 1"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "02 May 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Edenshaw Ann Developments Ltd"
+    ],
+    "buyer_lines": [
+      "28 Ann Retail Ltd"
+    ],
+    "price_text": "$2,025,000"
+  }
+}

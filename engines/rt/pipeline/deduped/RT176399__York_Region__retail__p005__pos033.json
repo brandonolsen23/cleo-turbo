@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT176399",
+  "source_folder": "York_Region/retail/p005",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176399",
+      "source_folder": "York_Region/retail/p005",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "10480 ISLINGTON AVE",
+        "UNIT 6"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "21 Mar 2023",
+      "price_text": "$1,070,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2037125 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7 Valley Hill Dr",
+        "Bolton, Ontario",
+        "L7E 0B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000341138 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alessia Caracciolo",
+        "3190 Harvester Rd, Ste 202",
+        "Burlington, Ontario",
+        "L7N 3T1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 960",
+      "Level A, Unit 10",
+      "Level 1, Unit 12",
+      "",
+      "PIN: 29491-0030 +"
+    ],
+    "arn_text": "19 28 000 350 55510",
+    "consideration_lines": [
+      "cash: $1,070,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160349.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160353.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160420.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160421.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160433.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160435.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176399/0401_160504.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "234 / 984",
+      "rt_id": "RT176399"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "10480 ISLINGTON AVE, UNIT 6",
+    "postcode": "L0J 1C0",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1070000",
+    "cash": "1070000",
+    "debt": "",
+    "note": "",
+    "pin": "29491-0030+",
+    "rollno": "19 28 000 350 55510"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "10480 ISLINGTON AVE",
+      "UNIT 6"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "21 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2037125 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000341138 Ontario Inc"
+    ],
+    "price_text": "$1,070,000"
+  }
+}

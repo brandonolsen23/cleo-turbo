@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT146553",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT146553",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "523 MCGAUGHEY AVE"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "11 Oct 2019",
+      "price_text": "$1,200,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Rona Inc     514-599-5900"
+      ],
+      "trade_name": "Lowes Canada",
+      "contact_lines": [
+        "Pres: Antonio Cioffi",
+        "220 chemin du Tremblay",
+        "Boucherville, Quebec",
+        "J4B 8H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1378697 Ontario Ltd     705-495-6487"
+      ],
+      "trade_name": "North Bay Mitsubishi",
+      "contact_lines": [
+        "Pres: Tim Falconi",
+        "202 Lakeshore Dr",
+        "North Bay, Ontario",
+        "P1A 2B5"
+      ]
+    },
+    "description_lines": [
+      "Rona Store: 1 storey; 34,560 sf on about 4.4 Ac",
+      "",
+      "The property was bought by its tenant, Rona Lakeview Builders Supplies, which is an independently owned Rona store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-189,",
+      "Lots 627-638, 647-668",
+      "Part Franklin & Part Lane",
+      "As in Inst No LT-63548",
+      "",
+      "PIN: 49152-0278",
+      "",
+      "SW corner McGaughey Ave and Regina St",
+      "",
+      "4.36 acre"
+    ],
+    "arn_text": "48 44 030 045 00900",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,200,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/11/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "30 / 46",
+      "rt_id": "RT146553"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "523 MCGAUGHEY AVE",
+    "postcode": "P1B 1W5",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "10/11/2019",
+    "desc": "Rona Store: 1 storey; 34,560 sf on about 4.4 Ac",
+    "bldg": "34,560 sf",
+    "acreage": "4.36",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "49152-0278",
+    "rollno": "48 44 030 045 00900"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "523 MCGAUGHEY AVE"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "11 Oct 2019",
+    "note": "Purchased by Tenant",
+    "description": "Rona Store: 1 storey; 34,560 sf on about 4.4 Ac",
+    "seller_lines": [
+      "Rona Inc"
+    ],
+    "buyer_lines": [
+      "1378697 Ontario Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

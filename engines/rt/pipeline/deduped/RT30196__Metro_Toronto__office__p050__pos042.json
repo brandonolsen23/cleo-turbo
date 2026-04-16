@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT30196",
+  "source_folder": "Metro_Toronto/office/p050",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30196",
+      "source_folder": "Metro_Toronto/office/p050",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/office/p050/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "1482 BATHURST ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 May 2003",
+      "price_text": "$656,500",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "OSSTF Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sheila Vandenberk",
+        "1482 Bathurst St",
+        "Toronto, Ontario",
+        "M5P 3H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Local 4400 CUPE Properties Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Weatherup",
+        "1482 Bathurst St",
+        "Toronto, Ontario",
+        "M5P 3H1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 875, Block C, Lot 1",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "19 04 053 770 00100",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $456,500"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT301/RT30196/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2493 / 3370",
+      "rt_id": "RT30196"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "1482 BATHURST ST",
+    "postcode": "M5P 3H1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/21/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "656500",
+    "cash": "200000",
+    "debt": "456500",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 04 053 770 00100"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "1482 BATHURST ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 May 2003",
+    "note": "Partial Interest",
+    "description": "",
+    "seller_lines": [
+      "OSSTF Properties Inc"
+    ],
+    "buyer_lines": [
+      "Local 4400 CUPE Properties Corp"
+    ],
+    "price_text": "$656,500"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT43629",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43629",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "352 MELROSE AVE"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "25 Jul 2005",
+      "price_text": "$555,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1577306 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ercolino Casalese",
+        "352 Melrose Ave",
+        "Toronto, Ontario",
+        "M5M 1Z4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 2,200 sf @ $252"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1706, Part Lots 82 & 83",
+      "As in Inst Nos TB-657525",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 08 063 110 01400",
+    "consideration_lines": [
+      "cash: $555,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $380,160   rate: 6.7% per annum",
+      "registered: 07/25/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT436/RT43629/air1.jpg",
+        "/assets/files/RT4/RT436/RT43629/air2.jpg",
+        "/assets/files/RT4/RT436/RT43629/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3634 / 4952",
+      "rt_id": "RT43629"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "352 MELROSE AVE",
+    "postcode": "M5M 1Z4",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "07/25/2005",
+    "desc": "Retail Bldg - 2 storey; 2,200 sf @ $252",
+    "bldg": "2,200 sf",
+    "acreage": ".1",
+    "consid": "555000",
+    "cash": "555000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 063 110 01400"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "352 MELROSE AVE"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "25 Jul 2005",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 2,200 sf @ $252",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1577306 Ontario Ltd"
+    ],
+    "price_text": "$555,000"
+  }
+}

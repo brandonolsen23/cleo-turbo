@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT124167",
+  "source_folder": "York_Region/retail/p007",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT124167",
+      "source_folder": "York_Region/retail/p007",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p007/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "4040 STEELES AVE W",
+        "UNITS 2 - 4"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "28 Mar 2017",
+      "price_text": "$1,800,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice",
+        "Commercial List"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5T 1T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Weston Law Properties Inc     905-856-3700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Lo Faso",
+        "3700 Steeles Ave W, Ste 600",
+        "Woodbridge, Ontario",
+        "L4L 8K8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 633",
+      "Level 1, Units 2-4",
+      "",
+      "PIN: 29166-0002 +"
+    ],
+    "arn_text": "19 28 000 280 05002 +",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125410.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125436.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125437.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125455.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125457.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125514.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1241/RT124167/0414_125520.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "316 / 984",
+      "rt_id": "RT124167"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "4040 STEELES AVE W, UNITS 2 - 4",
+    "postcode": "L4L 4Y5",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/28/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "29166-0002+",
+    "rollno": "19 28 000 280 05002+"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "4040 STEELES AVE W",
+      "UNITS 2 - 4"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "28 Mar 2017",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice",
+      "Commercial List"
+    ],
+    "buyer_lines": [
+      "Weston Law Properties Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

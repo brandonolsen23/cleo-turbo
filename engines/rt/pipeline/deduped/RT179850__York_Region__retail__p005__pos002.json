@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT179850",
+  "source_folder": "York_Region/retail/p005",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179850",
+      "source_folder": "York_Region/retail/p005",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "280 WEST BEAVER CREEK RD",
+        "SUITES L10 - L12"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "14 Aug 2023",
+      "price_text": "$2,875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1082011 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "234 Valentina Dr",
+        "Markham, Ontario",
+        "L3R 4R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2703317 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rakesh Jaitley",
+        "50 West Wilmot St, Ste 6",
+        "Richmond Hill, Ontario",
+        "L4B 1M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 844",
+      "Level 1, Units 14-16, 18-21, 72-77",
+      "",
+      "PIN: 29374-0077 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,875,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,425,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/14/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092452.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092531.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092532.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092557.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092600.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092739.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092741.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092743.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179850/0827_092812.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "203 / 984",
+      "rt_id": "RT179850"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "280 WEST BEAVER CREEK RD, SUITES L10 - L12",
+    "postcode": "L4B 3Z1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "08/14/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2875000",
+    "cash": "2875000",
+    "debt": "",
+    "note": "",
+    "pin": "29374-0077+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "280 WEST BEAVER CREEK RD",
+      "SUITES L10 - L12"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "14 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1082011 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2703317 Ontario Corp"
+    ],
+    "price_text": "$2,875,000"
+  }
+}

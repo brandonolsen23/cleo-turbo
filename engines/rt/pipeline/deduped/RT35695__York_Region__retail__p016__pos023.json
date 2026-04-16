@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT35695",
+  "source_folder": "York_Region/retail/p016",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35695",
+      "source_folder": "York_Region/retail/p016",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "135 DAVIS DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "03 May 2004",
+      "price_text": "$930,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dave Wood Holdings Ltd     905-895-5747"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Dave Wood",
+        "17365 Yonge St",
+        "Newmarket, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Former Car Dealership - 1 storey; 4,000 sf on 0.66 Ac",
+      "",
+      "To be a Goodyear Tire store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - EYS, Part Lot 96",
+      "As in Inst No R-616083",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "19 48 040 170 06000",
+    "consideration_lines": [
+      "cash: $930,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT356/RT35695/photo.jpg"
+    },
+    "footer": {
+      "page_position": "774 / 984",
+      "rt_id": "RT35695"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "135 DAVIS DR",
+    "postcode": "L3Y 2N3",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "05/03/2004",
+    "desc": "Former Car Dealership - 1 storey; 4,000 sf on 0.66 Ac",
+    "bldg": "",
+    "acreage": ".66",
+    "consid": "930000",
+    "cash": "930000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 48 040 170 06000"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "135 DAVIS DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "03 May 2004",
+    "note": "",
+    "description": "Former Car Dealership - 1 storey; 4,000 sf on 0.66 Ac",
+    "seller_lines": [
+      "Dave Wood Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$930,000"
+  }
+}

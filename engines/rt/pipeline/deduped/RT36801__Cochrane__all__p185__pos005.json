@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT36801",
+  "source_folder": "Cochrane/all/p185",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36801",
+      "source_folder": "Cochrane/all/p185",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p185/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "5607 ROCKDALE RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "30 Jul 2004",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "561572 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Andre Rollin",
+        "880 Smith Rd",
+        "Ottawa, Ontario",
+        "K4C 1M1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 24",
+      "Plan 4R-8507, Parts 1-4",
+      "",
+      "70.62 acre"
+    ],
+    "arn_text": "03 11 010 201 22200",
+    "consideration_lines": [
+      "cash: $300,000     assumed/vtb debt: $450,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9206 / 10920",
+      "rt_id": "RT36801"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "5607 ROCKDALE RD",
+    "postcode": "K0A 3H0",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "07/30/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "70.62",
+    "consid": "750000",
+    "cash": "300000",
+    "debt": "450000",
+    "note": "",
+    "pin": "",
+    "rollno": "03 11 010 201 22200"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "5607 ROCKDALE RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "30 Jul 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "561572 Ontario Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT45591",
+  "source_folder": "Frontenac_County/retail/p004",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45591",
+      "source_folder": "Frontenac_County/retail/p004",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p004/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "1300 BATH RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "22 Nov 2005",
+      "price_text": "$10,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "RioCan Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Don MacKinnon",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RRVP Frontenac Mall Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Don MacKinnon",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Frontenac Shopping Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 14",
+      "Plan 13R-13661, Parts 1-6",
+      "",
+      "23.16 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $10,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "189 / 236",
+      "rt_id": "RT45591"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "1300 BATH RD",
+    "postcode": "K7M 4X5",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "11/22/2005",
+    "desc": "Frontenac Shopping Centre",
+    "bldg": "",
+    "acreage": "23.16",
+    "consid": "10300000",
+    "cash": "10300000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "1300 BATH RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "22 Nov 2005",
+    "note": "Related Parties",
+    "description": "Frontenac Shopping Centre",
+    "seller_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "buyer_lines": [
+      "RRVP Frontenac Mall Inc"
+    ],
+    "price_text": "$10,300,000"
+  }
+}

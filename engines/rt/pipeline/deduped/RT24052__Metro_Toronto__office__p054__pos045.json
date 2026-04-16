@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24052",
+  "source_folder": "Metro_Toronto/office/p054",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24052",
+      "source_folder": "Metro_Toronto/office/p054",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/office/p054/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "117 EGLINTON AVE E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Jan 2002",
+      "price_text": "$3,400,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "117 Eglinton East Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Murray Finkelman",
+        "438 University, Ste 302",
+        "Toronto, Ontario",
+        "M5G 2K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "117 Eglinton Avenue East Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Murray Finkelman",
+        "438 University Ave, Ste 302",
+        "Toronto, Ontario",
+        "M5G 2K8"
+      ]
+    },
+    "description_lines": [
+      "Office Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 653, Block E",
+      "Lot 7, Part Lots 5, 6 & 10",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "19 04 103 650 00800",
+    "consideration_lines": [
+      "cash: $694,508     assumed/vtb debt: $2,705,492"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2696 / 3370",
+      "rt_id": "RT24052"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "117 EGLINTON AVE E",
+    "postcode": "M4P 1H4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/23/2002",
+    "desc": "Office Bldg",
+    "bldg": "",
+    "acreage": ".4",
+    "consid": "3400000",
+    "cash": "694508",
+    "debt": "2705492",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 103 650 00800"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "117 EGLINTON AVE E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Jan 2002",
+    "note": "Related Parties",
+    "description": "Office Bldg",
+    "seller_lines": [
+      "117 Eglinton East Investments Inc"
+    ],
+    "buyer_lines": [
+      "117 Eglinton Avenue East Inc"
+    ],
+    "price_text": "$3,400,000"
+  }
+}

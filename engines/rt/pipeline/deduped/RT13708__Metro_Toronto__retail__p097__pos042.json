@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT13708",
+  "source_folder": "Metro_Toronto/retail/p097",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13708",
+      "source_folder": "Metro_Toronto/retail/p097",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p097/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "3200 EGLINTON AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "21 Jan 1999",
+      "price_text": "$1,520,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Transamerica Life Insurance Company of Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Karen Gavan",
+        "300 Consilium Place",
+        "Scarborough, Ontario",
+        "M1H 3G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1311874 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kwangun Baik",
+        "525 Oakvale Dr, Unit 6",
+        "Waterloo, Ontario",
+        "N2T 2G8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Pt Lot 10, Concession D"
+    ],
+    "arn_text": "19 01 072 380 00100",
+    "consideration_lines": [
+      "cash: $1,520,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Your Neighbourhood Credit Union Ltd",
+      "principal: $975,000   rate: 25.0% per annum.",
+      "registered: 09/10/2018   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $800,000   rate: 0% for the first 12 months, 3.5% per annum thereafter.",
+      "registered: 09/13/2018   due: 09/13/2023",
+      "",
+      "chargee: Home Trust Company",
+      "principal: $1,040,000   rate: 5.50% per annum.",
+      "registered: 09/13/2018   due: 10/01/2019",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $949,000   rate: Prime plus 10.0% per annum.",
+      "registered: 09/14/2018   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $700,000   rate: 6.0% per annum.",
+      "registered: 09/14/2018   due: 10/01/2023",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,450,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/11/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT137/RT13708/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4843 / 4952",
+      "rt_id": "RT13708"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "3200 EGLINTON AVE E",
+    "postcode": "M1J 2H6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/21/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1520000",
+    "cash": "1520000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 01 072 380 00100"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "3200 EGLINTON AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "21 Jan 1999",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Transamerica Life Insurance Company of Canada"
+    ],
+    "buyer_lines": [
+      "1311874 Ontario Inc"
+    ],
+    "price_text": "$1,520,000"
+  }
+}

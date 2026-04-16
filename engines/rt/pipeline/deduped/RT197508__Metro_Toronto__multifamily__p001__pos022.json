@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT197508",
+  "source_folder": "Metro_Toronto/multifamily/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197508",
+      "source_folder": "Metro_Toronto/multifamily/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 & 100 GOWAN AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "25 Feb 2026",
+      "price_text": "$1,254,750",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "TC Core GP Inc",
+        "TC Core LP     888-949-8439"
+      ],
+      "trade_name": "Hazelview Investments",
+      "contact_lines": [
+        "1133 Yonge St, 4th Flr",
+        "Toronto, Ontario",
+        "M4T 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16509126 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Croll",
+        "300 Park Centre",
+        "1230 Blackfoot Dr",
+        "Regina, SK",
+        "S4S 7G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-39,",
+      "Part Lots 202-205, N/S Gowan Ave",
+      "",
+      "PIN: 10402-0028 +",
+      "",
+      "1.33 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $727,162     assumed/vtb debt: $527,588",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $36,646,976   rate: 2.110% per annum.",
+      "registered: 05/14/2020   due: 06/01/2030",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $12,969,000   rate: Prime plus 10.0% per annum.",
+      "registered: 12/27/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 6031",
+      "rt_id": "RT197508"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "80 & 100 GOWAN AVE",
+    "postcode": "M4K 2E2",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.33",
+    "consid": "1254750",
+    "cash": "727162",
+    "debt": "527588",
+    "note": "% Interest",
+    "pin": "10402-0028+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "80 & 100 GOWAN AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "25 Feb 2026",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "TC Core GP Inc",
+      "TC Core LP"
+    ],
+    "buyer_lines": [
+      "16509126 Canada Inc"
+    ],
+    "price_text": "$1,254,750"
+  }
+}

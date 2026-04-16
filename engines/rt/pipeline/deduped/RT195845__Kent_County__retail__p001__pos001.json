@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT195845",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195845",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "171 KEIL DR S"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "04 Dec 2025",
+      "price_text": "$3,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Brad-Lea Meadows Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Box 507, Stn Main",
+        "571 Richmond St",
+        "Chatham, Ontario",
+        "N7M 1R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001336872 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Rossi",
+        "171 Keil Dr S",
+        "Chatham, Ontario",
+        "N7M 3H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Eastern Boundary Raleigh,",
+      "Part Lot 21",
+      "Plan 24R-9036, Parts 6 & 10",
+      "Plan 24R-10448, Part 1",
+      "Except:",
+      "Plan 24R-10448, Part 2",
+      "",
+      "PIN: 00524-0628 +",
+      "",
+      "1.32 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $2,580,000   rate: Prime plus 10.0% per annum.",
+      "registered: 12/04/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 77",
+      "rt_id": "RT195845"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "171 KEIL DR S",
+    "postcode": "N7M 3H3",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "12/04/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.32",
+    "consid": "3400000",
+    "cash": "3400000",
+    "debt": "",
+    "note": "",
+    "pin": "00524-0628+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "171 KEIL DR S"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "04 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Brad-Lea Meadows Ltd"
+    ],
+    "buyer_lines": [
+      "1001336872 Ontario Inc"
+    ],
+    "price_text": "$3,400,000"
+  }
+}

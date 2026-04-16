@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT152266",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT152266",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "17538 HIGHWAY 2",
+        "17538 HWY 2"
+      ],
+      "city_region": "Quinte W : Northumberland",
+      "date_text": "01 Jun 2020",
+      "price_text": "$1,473,853",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Quinte First Credit Union Ltd     613-966-4111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Carrie Gregoire",
+        "293 Sidney St",
+        "Belleville, Ontario",
+        "K8P 3Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Alterna Savings and Credit Union Ltd     613-560-0100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Duncan De Chastelain",
+        "319 McRae Ave",
+        "Ottawa, Ontario",
+        "K1Z 0B9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 6",
+      "As in Inst No CL-167748",
+      "",
+      "PIN: 51174-0371",
+      "",
+      "0.96 acre"
+    ],
+    "arn_text": "12 04 301 050 19400",
+    "consideration_lines": [
+      "cash: $1,473,853     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1522/RT152266/0215_093944.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1522/RT152266/0215_094026.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1522/RT152266/0215_094029.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1522/RT152266/0215_094044.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1522/RT152266/0215_094106.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1522/RT152266/0215_094110.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "43 / 93",
+      "rt_id": "RT152266"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "17538 HIGHWAY 2, 17538 HWY 2",
+    "postcode": "K8V 5P8",
+    "municipality": "Quinte W",
+    "region": "Northumberland",
+    "date": "06/01/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".96",
+    "consid": "1473853",
+    "cash": "1473853",
+    "debt": "",
+    "note": "",
+    "pin": "51174-0371",
+    "rollno": "12 04 301 050 19400"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "17538 HIGHWAY 2",
+      "17538 HWY 2"
+    ],
+    "city_region": "Quinte W : Northumberland",
+    "date_text": "01 Jun 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Quinte First Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "Alterna Savings and Credit Union Ltd"
+    ],
+    "price_text": "$1,473,853"
+  }
+}

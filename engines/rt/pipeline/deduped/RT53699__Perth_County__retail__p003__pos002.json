@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT53699",
+  "source_folder": "Perth_County/retail/p003",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT53699",
+      "source_folder": "Perth_County/retail/p003",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p003/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "240 GRAFF AVE"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "01 Feb 2007",
+      "price_text": "$960,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "JSM Corp (Ontario) Ltd     514-393-9837"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Joseph Gourgy",
+        "620 St Jacques, Ste 200",
+        "Montreal, Quebec",
+        "H3C 1C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "TD Properties Ltd     519-699-4233"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas D'Arcy",
+        "11 Dresden Dr",
+        "Heidelberg, Ontario",
+        "N0B 1Y0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 410, Block A",
+      "",
+      "1.16 acre"
+    ],
+    "arn_text": "31 11 020 080 20200",
+    "consideration_lines": [
+      "cash: $960,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT536/RT53699/0318_143150.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT536/RT53699/0318_143151.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "103 / 113",
+      "rt_id": "RT53699"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "240 GRAFF AVE",
+    "postcode": "N5A 6Y2",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "02/01/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.16",
+    "consid": "960000",
+    "cash": "960000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "31 11 020 080 20200"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "240 GRAFF AVE"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "01 Feb 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "JSM Corp (Ontario) Ltd"
+    ],
+    "buyer_lines": [
+      "TD Properties Ltd"
+    ],
+    "price_text": "$960,000"
+  }
+}

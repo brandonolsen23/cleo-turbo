@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT160593",
+  "source_folder": "York_Region/retail/p006",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT160593",
+      "source_folder": "York_Region/retail/p006",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p006/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "8119 YONGE ST"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "18 May 2021",
+      "price_text": "$6,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1862558 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Guowei Hu",
+        "22 Limcombe Dr",
+        "Thornhill, Ontario",
+        "L3T 2V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2810856 Ontario Inc     416-225-1500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Farah Beikabadi",
+        "6093 Yonge St",
+        "North York, Ontario",
+        "M2M 3W2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 2 storey; 3 tenants 5,832 sf @ $1,123",
+      "",
+      "5,832 sf plus 628 sf basement",
+      "",
+      "Fully leased to 3 tenants",
+      "",
+      "30 surface parking spaces",
+      "",
+      "Purchased as an investment.",
+      "",
+      "Last transferred in October 2013 for $3,250,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 33",
+      "As in Inst No MA-98100",
+      "",
+      "PIN: 03026-0503",
+      "",
+      "NE corner Yonge and Bay Thorn Dr",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "36 01 003 127 10000",
+    "consideration_lines": [
+      "cash: $6,550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $6,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/18/2021   due: on demand"
+    ],
+    "broker_lines": [
+      "Century 21 Atria: Anita Mui, 905-312-1268"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "272 / 984",
+      "rt_id": "RT160593"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "8119 YONGE ST",
+    "postcode": "L3T 2C6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "05/18/2021",
+    "desc": "Retail Bldg: 2 storey; 3 tenants 5,832 sf @ $1,123",
+    "bldg": "5,832 sf",
+    "acreage": ".36",
+    "consid": "6550000",
+    "cash": "6550000",
+    "debt": "",
+    "note": "",
+    "pin": "03026-0503",
+    "rollno": "36 01 003 127 10000"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "8119 YONGE ST"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "18 May 2021",
+    "note": "",
+    "description": "Retail Bldg: 2 storey; 3 tenants 5,832 sf @ $1,123",
+    "seller_lines": [
+      "1862558 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2810856 Ontario Inc"
+    ],
+    "price_text": "$6,550,000"
+  }
+}

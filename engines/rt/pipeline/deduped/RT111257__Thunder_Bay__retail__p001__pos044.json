@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT111257",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT111257",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "1120 JOHN STREET RD"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "04 Sep 2015",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "R Agostino & Sons Service Station Ltd     807-623-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Agostino",
+        "c/o Buset & Partners",
+        "1121 Barton St",
+        "Thunder Bay, Ontario",
+        "P7B 5N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maxx Properties (No 322) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Blake Larsen",
+        "45793 Luckakuck Way",
+        "Chilliwack, British Columbia",
+        "V2R 5S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 547, Part Lot 59",
+      "As in Inst No TBR-301182",
+      "",
+      "PIN: 62176-0143",
+      "",
+      "0.59 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Centurion Mortgage Capital Corp",
+      "principal: $2,367,000   rate: 10.0% per annum.",
+      "registered: 09/04/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "45 / 65",
+      "rt_id": "RT111257"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "1120 JOHN STREET RD",
+    "postcode": "P7B 5V7",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "09/04/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".59",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "62176-0143",
+    "rollno": ""
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "1120 JOHN STREET RD"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "04 Sep 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "R Agostino & Sons Service Station Ltd"
+    ],
+    "buyer_lines": [
+      "Maxx Properties (No 322) Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

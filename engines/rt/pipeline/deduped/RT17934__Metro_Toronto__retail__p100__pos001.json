@@ -1,0 +1,143 @@
+{
+  "rt_id": "RT17934",
+  "source_folder": "Metro_Toronto/retail/p100",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17934",
+      "source_folder": "Metro_Toronto/retail/p100",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p100/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 BLOOR ST E",
+        "PARK RD",
+        "ASQUITH",
+        "CONC 2, PT LOT 20"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Feb 1996",
+      "price_text": "$4,325,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Great-West Life Assurance Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alastair I. Stewart",
+        "200 King St W, Ste 1400",
+        "Toronto, Ontario",
+        "M5H 3T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Osmington Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Schott",
+        "40 King St W, Ste 4812",
+        "Toronto, Ontario",
+        "M5H 3Y2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-6707, Parts 1-8",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,325,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $960,000   rate: Prime plus 1.15% per annum.",
+      "registered: 05/25/2022   due: 06/01/2025",
+      "",
+      "chargee: Vector Financial Services Ltd",
+      "principal: $6,250,000   rate: Until 6/9/2024, the greater of 8.5% and CIBC prime plus 5.30% per annum. Thereafter, the greater of 13.0% and CIBC prime plus 9.80% per annum.",
+      "registered: 05/26/2022   due: 07/10/2024",
+      "",
+      "Named Individual(s)",
+      "principal: $1,020,000   rate: 9.50% per annum.",
+      "registered: 07/17/2023   due: 07/14/2024",
+      "",
+      "chargee: Habib Canadian Bank",
+      "principal: $1,100,000   rate: Prime rate plus 1.65%, with a minimum of 5.0% per annum.",
+      "registered: 05/25/2022   due: 05/25/2024",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $600,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/20/2023   due: on demand",
+      "",
+      "chargee: Airwill Electrical Supply Inc",
+      "principal: $1,200,000   rate: 6.99% per annum.",
+      "registered: 03/25/2022   due: 09/24/2022",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $960,000   rate: 1.63% per annum.",
+      "registered: 03/22/2022   due: 03/22/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4952 / 4952",
+      "rt_id": "RT17934"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2 BLOOR ST E, PARK RD, ASQUITH, CONC 2, PT LOT 20",
+    "postcode": "",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/01/1996",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".68",
+    "consid": "4325000",
+    "cash": "4325000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2 BLOOR ST E",
+      "PARK RD",
+      "ASQUITH",
+      "CONC 2, PT LOT 20"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Feb 1996",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "The Great-West Life Assurance Co"
+    ],
+    "buyer_lines": [
+      "Osmington Inc"
+    ],
+    "price_text": "$4,325,000"
+  }
+}

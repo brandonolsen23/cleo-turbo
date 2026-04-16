@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT101496",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT101496",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "685 NOTRE DAME AVE"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "08 Jul 2014",
+      "price_text": "$875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bouchard Home Furnishings Ltd     705-673-4292"
+      ],
+      "trade_name": "The Norte Dame Boys",
+      "contact_lines": [
+        "Pres: Eric Bouchard",
+        "555 Notre Dame Ave",
+        "Sudbury, Ontario",
+        "P3C 5L3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1905185 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bruno Gauthier",
+        "685 Norte Dame Ave",
+        "Sudbury, Ontario",
+        "P3A 2T2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-45",
+      "Lots 2, 3 & Part Lot 1",
+      "Except:",
+      "Plan 53R-10460, Part 2",
+      "Exprop Plan 166188",
+      "",
+      "PIN: 02127-0193 +",
+      "",
+      "NW corner Notre Dame Ave and Wilma St",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "53 07 070 021 08300",
+    "consideration_lines": [
+      "cash: $875,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $875,000   rate: Prime plus 6.0% per annum.",
+      "registered: 07/08/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "61 / 90",
+      "rt_id": "RT101496"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "685 NOTRE DAME AVE",
+    "postcode": "P3A 2T2",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "07/08/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "875000",
+    "cash": "875000",
+    "debt": "",
+    "note": "",
+    "pin": "02127-0193+",
+    "rollno": "53 07 070 021 08300"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "685 NOTRE DAME AVE"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "08 Jul 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bouchard Home Furnishings Ltd"
+    ],
+    "buyer_lines": [
+      "1905185 Ontario Ltd"
+    ],
+    "price_text": "$875,000"
+  }
+}

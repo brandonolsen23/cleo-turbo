@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT174298",
+  "source_folder": "Essex_County/office/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174298",
+      "source_folder": "Essex_County/office/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/office/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "200 MAIN ST"
+      ],
+      "city_region": "Kingsville : Essex County",
+      "date_text": "30 Dec 2022",
+      "price_text": "$5,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tay Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "175 Pineway Pk",
+        "Kingsville, Ontario",
+        "N9Y 2J1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000310692 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Micheal Rondinelli",
+        "404 Russell Woods Rd",
+        "Windsor, Ontario",
+        "N8N 3S5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - ED Gosfield, Part Lot 2",
+      "Plan 12R-26799, Part 2",
+      "",
+      "PIN: 75175-1310",
+      "",
+      "1.44 acre"
+    ],
+    "arn_text": "37 11 220 000 00402",
+    "consideration_lines": [
+      "cash: $51,178     assumed/vtb debt: $4,948,822",
+      "",
+      "chargee: Tay Inc",
+      "principal: $4,948,932   rate: 0% for the first 3 months. Months 4-6, BMO prime, and thereafter BMO prime plus 2.0% per annum.",
+      "registered: 12/30/2022   due: 12/30/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 201",
+      "rt_id": "RT174298"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "200 MAIN ST",
+    "postcode": "N9Y 1A6",
+    "municipality": "Kingsville",
+    "region": "Essex County",
+    "date": "12/30/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.44",
+    "consid": "5000000",
+    "cash": "51178",
+    "debt": "4948822",
+    "note": "",
+    "pin": "75175-1310",
+    "rollno": "37 11 220 000 00402"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "200 MAIN ST"
+    ],
+    "city_region": "Kingsville : Essex County",
+    "date_text": "30 Dec 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Tay Inc"
+    ],
+    "buyer_lines": [
+      "1000310692 Ontario Inc"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

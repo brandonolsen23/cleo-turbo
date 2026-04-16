@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT33287",
+  "source_folder": "Kitchener-Waterloo/all/p042",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33287",
+      "source_folder": "Kitchener-Waterloo/all/p042",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p042/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1",
+        "PART LOT 35"
+      ],
+      "city_region": "N. Huron : Huron County",
+      "date_text": "15 Dec 2003",
+      "price_text": "$535,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Cowan Crest Poultry Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Barbara Cowan",
+        "RR 1",
+        "Auburn, Ontario",
+        "N0M 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 35",
+      "As in Inst No R-241409",
+      "",
+      "200.41 acre"
+    ],
+    "arn_text": "40 58 000 100 01800",
+    "consideration_lines": [
+      "cash: $535,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2055 / 2093",
+      "rt_id": "RT33287"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "CONC 1, PART LOT 35",
+    "postcode": "",
+    "municipality": "N. Huron",
+    "region": "Huron County",
+    "date": "12/15/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "200.41",
+    "consid": "535000",
+    "cash": "535000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "40 58 000 100 01800"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "CONC 1",
+      "PART LOT 35"
+    ],
+    "city_region": "N. Huron : Huron County",
+    "date_text": "15 Dec 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Cowan Crest Poultry Inc"
+    ],
+    "price_text": "$535,000"
+  }
+}

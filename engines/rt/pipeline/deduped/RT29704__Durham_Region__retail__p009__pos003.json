@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT29704",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29704",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1817 SCUGOG ST"
+      ],
+      "city_region": "Scugog : Durham Region",
+      "date_text": "01 Apr 2003",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1113796 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adam Bholat",
+        "39 Vanwart Dr",
+        "Scarborough, Ontario",
+        "M1G 1G6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1556622 Ontario Inc     905-985-8757"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Atif Khan",
+        "Olco Petroleum",
+        "1817 Scugog St",
+        "Port Perry, Ontario",
+        "L9L 1J4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-4862, Part 1",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "18 20 020 010 33200",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "404 / 506",
+      "rt_id": "RT29704"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1817 SCUGOG ST",
+    "postcode": "L9L 1J4",
+    "municipality": "Scugog",
+    "region": "Durham Region",
+    "date": "04/01/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 20 020 010 33200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1817 SCUGOG ST"
+    ],
+    "city_region": "Scugog : Durham Region",
+    "date_text": "01 Apr 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1113796 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1556622 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

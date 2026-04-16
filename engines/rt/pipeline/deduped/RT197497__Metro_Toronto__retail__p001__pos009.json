@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT197497",
+  "source_folder": "Metro_Toronto/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197497",
+      "source_folder": "Metro_Toronto/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "30 DEAN PARK RD",
+        "UNIT 13"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "27 Feb 2026",
+      "price_text": "$1,370,655",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2700673 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "370 New Enterprise Way",
+        "Vaughan, Ontario",
+        "L4H 0Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Josan & Jain Pharmco Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Naresh Jain",
+        "30 Dean Park Rd, Unit 13",
+        "Scarborough, Ontario",
+        "M1B 3H1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 3154",
+      "Level 1, Unit 13",
+      "",
+      "PIN: 77154-0013"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,370,655     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $1,110,000   rate: 25.0% per annum.",
+      "registered: 02/27/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197497/0308_161417.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197497/0308_161444.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197497/0308_161446.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197497/0308_161447.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197497/0308_161449.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197497/0308_162023.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 4952",
+      "rt_id": "RT197497"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "30 DEAN PARK RD, UNIT 13",
+    "postcode": "M1B 3H1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "02/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1370655",
+    "cash": "1370655",
+    "debt": "",
+    "note": "",
+    "pin": "77154-0013",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "30 DEAN PARK RD",
+      "UNIT 13"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "27 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2700673 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Josan & Jain Pharmco Inc"
+    ],
+    "price_text": "$1,370,655"
+  }
+}

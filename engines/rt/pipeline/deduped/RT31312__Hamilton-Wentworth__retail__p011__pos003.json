@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT31312",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31312",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "557 - 581 MAIN ST E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "08 Aug 2003",
+      "price_text": "$1,220,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "867045 Ontario Inc     905-385-1366"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Carobelli",
+        "38 Gatineau Dr",
+        "Hamilton, Ontario",
+        "L8T 2W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Saydat Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Abbas Syed",
+        "405 Beckwith Ct",
+        "Waterloo, Ontario",
+        "N2T 2H1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 units 12,600 sf @ $97"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 27, Lots 38-41",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "25 18 030 231 00880",
+    "consideration_lines": [
+      "cash: $1,220,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT313/RT31312/photo.jpg"
+    },
+    "footer": {
+      "page_position": "504 / 616",
+      "rt_id": "RT31312"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "557 - 581 MAIN ST E",
+    "postcode": "L8M 1H9",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "08/08/2003",
+    "desc": "Retail Plaza - 1 storey; 5 units 12,600 sf @ $97",
+    "bldg": "12,600 sf",
+    "acreage": ".67",
+    "consid": "1220000",
+    "cash": "1220000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 030 231 00880"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "557 - 581 MAIN ST E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "08 Aug 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 units 12,600 sf @ $97",
+    "seller_lines": [
+      "867045 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Saydat Inc"
+    ],
+    "price_text": "$1,220,000"
+  }
+}

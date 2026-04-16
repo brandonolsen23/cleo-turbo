@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT36767",
+  "source_folder": "Cochrane/all/p185",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36767",
+      "source_folder": "Cochrane/all/p185",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p185/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "2250 LILAC LANE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "21 Jul 2004",
+      "price_text": "$590,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gloria Dabous Assaly",
+        "Asset Management Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Smith",
+        "2248 Old Lilac Lane",
+        "Ottawa, Ontario",
+        "K1H 6H7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 770, Lot 30",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "06 14 105 901 41800",
+    "consideration_lines": [
+      "cash: $590,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT367/RT36767/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9221 / 10920",
+      "rt_id": "RT36767"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "2250 LILAC LANE",
+    "postcode": "K1H 6H7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/21/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "590000",
+    "cash": "590000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 105 901 41800"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "2250 LILAC LANE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "21 Jul 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gloria Dabous Assaly",
+      "Asset Management Corp"
+    ],
+    "price_text": "$590,000"
+  }
+}

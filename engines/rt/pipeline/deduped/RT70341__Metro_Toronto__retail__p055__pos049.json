@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT70341",
+  "source_folder": "Metro_Toronto/retail/p055",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70341",
+      "source_folder": "Metro_Toronto/retail/p055",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p055/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "948 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 Jan 2010",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "656731 Ontario Ltd     416-967-0019"
+      ],
+      "trade_name": "Pizza Pizza",
+      "contact_lines": [
+        "ASO: Mark Schnier",
+        "500 Kipling Ave",
+        "Toronto, Ontario",
+        "M8Z 5E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "905905 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joe Lentini",
+        "88 Klamath Ct",
+        "Maple, Ontario",
+        "L6A 2L7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 5,290 sf @ $265",
+      "",
+      "Fully leased to Mac's and Curves",
+      "",
+      "Last transferred in Nov 2002 for $642,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - FTB, Part Lot 29",
+      "As in Inst No CA-232955",
+      "",
+      "PIN: 10474-0342",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 033 920 00200",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $800,000   rate: Base plus 10.0% per annum",
+      "registered: 01/12/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT703/RT70341/0131_085434.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT703/RT70341/0131_085447.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT703/RT70341/0131_085532.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2750 / 4952",
+      "rt_id": "RT70341"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "948 ST CLAIR AVE W",
+    "postcode": "M6C 1C8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/12/2010",
+    "desc": "Retail Bldg - 2 storey; 5,290 sf @ $265",
+    "bldg": "5,290 sf",
+    "acreage": ".1",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "10474-0342",
+    "rollno": "19 04 033 920 00200"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "948 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 Jan 2010",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 5,290 sf @ $265",
+    "seller_lines": [
+      "656731 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "905905 Ontario Ltd"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

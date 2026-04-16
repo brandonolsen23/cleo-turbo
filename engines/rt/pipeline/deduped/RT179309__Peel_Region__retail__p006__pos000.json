@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT179309",
+  "source_folder": "Peel_Region/retail/p006",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179309",
+      "source_folder": "Peel_Region/retail/p006",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p006/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "301 LAKESHORE RD E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "18 Jul 2023",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "9284354 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5992 Turney Dr, Unit 27",
+        "Mississauga, Ontario",
+        "L5M 0S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000178940 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jorge Afonso",
+        "100 Bronte Rd, Ste 414",
+        "Oakville, Ontario",
+        "L6L 6L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-21, Part Lot 139",
+      "As in Inst No RO-934483",
+      "",
+      "PIN: 13487-0121",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "21 05 090 002 27400",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1793/RT179309/0805_071601.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1793/RT179309/0805_071606.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1793/RT179309/0805_071622.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1793/RT179309/0805_071645.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "251 / 1087",
+      "rt_id": "RT179309"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "301 LAKESHORE RD E",
+    "postcode": "L5G 1H3",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "07/18/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "13487-0121",
+    "rollno": "21 05 090 002 27400"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "301 LAKESHORE RD E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "18 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "9284354 Canada Inc"
+    ],
+    "buyer_lines": [
+      "1000178940 Ontario Ltd"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT54908",
+  "source_folder": "Metro_Toronto/retail/p065",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT54908",
+      "source_folder": "Metro_Toronto/retail/p065",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p065/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "712 - 714 GERRARD ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Apr 2007",
+      "price_text": "$545,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kayton Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Lee"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bigweb Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Myers",
+        "714 Gerrard St E",
+        "Toronto, Ontario",
+        "M4M 1Y3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 4,500 sf @ $121",
+      "",
+      "Completely vacant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 360, Lot 6",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 075 020 08000",
+    "consideration_lines": [
+      "cash: $545,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $625,000   rate: Base plus 10.0% per annum",
+      "registered: 04/11/2007   due: on demand"
+    ],
+    "broker_lines": [
+      "James So Realty: James So & Alexander So, 416-465-2412",
+      "RE/MAX Ultimate Realty: Richard Myers, 416-487-5131"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT549/RT54908/0422_073059.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT549/RT54908/0422_073118.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT549/RT54908/0422_073119.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT549/RT54908/air1.jpg",
+        "/assets/files/RT5/RT549/RT54908/air2.jpg",
+        "/assets/files/RT5/RT549/RT54908/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3247 / 4952",
+      "rt_id": "RT54908"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "712 - 714 GERRARD ST E",
+    "postcode": "M4M 1Y3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/11/2007",
+    "desc": "Retail Bldg - 2 storey; 4,500 sf @ $121",
+    "bldg": "4,500 sf",
+    "acreage": ".07",
+    "consid": "545000",
+    "cash": "545000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 075 020 08000"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "712 - 714 GERRARD ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Apr 2007",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 4,500 sf @ $121",
+    "seller_lines": [
+      "Kayton Inc"
+    ],
+    "buyer_lines": [
+      "Bigweb Inc"
+    ],
+    "price_text": "$545,000"
+  }
+}

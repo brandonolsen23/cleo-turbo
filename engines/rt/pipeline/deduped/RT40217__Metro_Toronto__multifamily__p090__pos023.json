@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT40217",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40217",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "349 RUNNYMEDE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Feb 2005",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Duplex"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-135",
+      "Part Lot 44, E/S Runnymede Rd",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 012 060 03700",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $431,250   rate: Prime minus 1.01% per annum for the first 9 months from the funing date, the prime minus 0.25% per annum.",
+      "registered: 02/01/2005   due: 01/28/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40217/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4474 / 6031",
+      "rt_id": "RT40217"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "349 RUNNYMEDE RD",
+    "postcode": "M6S 2Y5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/01/2005",
+    "desc": "Duplex",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 012 060 03700"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "349 RUNNYMEDE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Feb 2005",
+    "note": "",
+    "description": "Duplex",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$575,000"
+  }
+}

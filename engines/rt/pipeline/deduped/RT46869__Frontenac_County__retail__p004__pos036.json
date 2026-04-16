@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT46869",
+  "source_folder": "Frontenac_County/retail/p004",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46869",
+      "source_folder": "Frontenac_County/retail/p004",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p004/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "830 - 842 DEVELOPMENT DR"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "23 Jan 2006",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Denos Faturos",
+        "Gus Polyzois"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "658 Danforth Ave, Ste 401",
+        "Toronto, Ontario",
+        "M4J 5B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1679653 Ontario Inc     416-651-8756"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Maria Lucic",
+        "48 Sellers Ave",
+        "Toronto, Ontario",
+        "M6E 3T6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 7",
+      "Plan 13R-858, Part 1",
+      "Plan 13R-8599, Part 1",
+      "",
+      "1.48 acre"
+    ],
+    "arn_text": "10 11 080 170 20809",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $350,000   rate: 6.10% per annum",
+      "registered: 01/23/2006   due: 02/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT468/RT46869/photo.jpg"
+    },
+    "footer": {
+      "page_position": "187 / 236",
+      "rt_id": "RT46869"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "830 - 842 DEVELOPMENT DR",
+    "postcode": "K7M 5V7",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "01/23/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.48",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 080 170 20809"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "830 - 842 DEVELOPMENT DR"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "23 Jan 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Denos Faturos",
+      "Gus Polyzois"
+    ],
+    "buyer_lines": [
+      "1679653 Ontario Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

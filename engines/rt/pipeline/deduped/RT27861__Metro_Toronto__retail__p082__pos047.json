@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT27861",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27861",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "1250 BAY ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Nov 2002",
+      "price_text": "$2,330,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bay Cumberland Developments Inc     416-596-8885"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Henry Hung",
+        "Shui Pong Group Ltd",
+        "131 Baldwin St",
+        "Toronto, Ontario",
+        "M5T 1L7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "FH Topos Ark Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frank Topos",
+        "1250 Bay St",
+        "Toronto, Ontario",
+        "M5R 2B1"
+      ]
+    },
+    "description_lines": [
+      "Ground Floor Retail - 3 units 7,000 sf @ $333",
+      "",
+      "Ground floor of a new res condo tower,"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-19629, Part 1"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,330,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT278/RT27861/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4098 / 4952",
+      "rt_id": "RT27861"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "1250 BAY ST",
+    "postcode": "M5R 2B1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/15/2002",
+    "desc": "Ground Floor Retail - 3 units 7,000 sf @ $333",
+    "bldg": "7,000 sf",
+    "acreage": "",
+    "consid": "2330000",
+    "cash": "2330000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "1250 BAY ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Nov 2002",
+    "note": "",
+    "description": "Ground Floor Retail - 3 units 7,000 sf @ $333",
+    "seller_lines": [
+      "Bay Cumberland Developments Inc"
+    ],
+    "buyer_lines": [
+      "FH Topos Ark Inc"
+    ],
+    "price_text": "$2,330,000"
+  }
+}

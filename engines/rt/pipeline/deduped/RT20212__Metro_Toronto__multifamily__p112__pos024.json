@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20212",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20212",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "157 DUNN AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Jan 2001",
+      "price_text": "$543,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "John & Peter D'Angelo     416-248-0181"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Emil Kudrac",
+        "Barrister Solicitor",
+        "2277 Keele St, Ste 2",
+        "Toronto, Ontario",
+        "M6M 3Z6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Randall McGrath"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "157 Dunn Ave",
+        "Toronto, Ontario",
+        "M6K 2R8"
+      ]
+    },
+    "description_lines": [
+      "MultiPlex - 3 storey; 12 units @ $45,250"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-14211, Part 1",
+      "As in Deed No CA-115462",
+      "",
+      "E side 100m S of King St W",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 021 120 03500",
+    "consideration_lines": [
+      "cash: $543,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20212/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5575 / 6031",
+      "rt_id": "RT20212"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "157 DUNN AVE",
+    "postcode": "M6K 2R8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/23/2001",
+    "desc": "MultiPlex - 3 storey; 12 units @ $45,250",
+    "bldg": "12 units",
+    "acreage": ".1",
+    "consid": "543000",
+    "cash": "543000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 021 120 03500"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "157 DUNN AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Jan 2001",
+    "note": "",
+    "description": "MultiPlex - 3 storey; 12 units @ $45,250",
+    "seller_lines": [
+      "John & Peter D'Angelo"
+    ],
+    "buyer_lines": [
+      "Randall McGrath"
+    ],
+    "price_text": "$543,000"
+  }
+}

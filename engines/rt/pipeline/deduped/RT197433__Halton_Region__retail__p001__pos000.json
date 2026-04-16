@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT197433",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197433",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "735 GUELPH LINE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "27 Feb 2026",
+      "price_text": "$4,505,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Avenue Road Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "15 Hove St, Ste 222",
+        "The Sud Building",
+        "Toronto, Ontario",
+        "M3H 4Y8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001003037 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kiran Kundhal",
+        "402 Ceremonial Dr",
+        "Mississauga, Ontario",
+        "L5A 2C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Nel SDS, Part Lot 15",
+      "As in Inst No 745890",
+      "Except:",
+      "Plan 20R-9743, Part 2",
+      "",
+      "PIN: 07057-0073",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "24  02 050 521 0170 +",
+    "consideration_lines": [
+      "cash: $4,505,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Life Insurance Company of Canada",
+      "principal: $2,300,000   rate: 18.0% per annum.",
+      "registered: 02/27/2026   due: 09/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197433/0307_090754.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197433/0307_090755.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197433/0307_090800.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197433/0307_090833.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197433/0307_090834.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1974/RT197433/0307_090916.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 613",
+      "rt_id": "RT197433"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "735 GUELPH LINE",
+    "postcode": "L7R 3N2",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "02/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".44",
+    "consid": "4505000",
+    "cash": "4505000",
+    "debt": "",
+    "note": "",
+    "pin": "07057-0073",
+    "rollno": "24  02 050 521 0170+"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "735 GUELPH LINE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "27 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Avenue Road Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1001003037 Ontario Inc"
+    ],
+    "price_text": "$4,505,000"
+  }
+}

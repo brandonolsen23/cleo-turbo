@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT182702",
+  "source_folder": "York_Region/multifamily/p002",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182702",
+      "source_folder": "York_Region/multifamily/p002",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p002/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "KEELE ST",
+        "DENNISON ST"
+      ],
+      "city_region": "King : York Region",
+      "date_text": "26 Jan 2024",
+      "price_text": "$28,000,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice,",
+        "Commercial List"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "L5G 1R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Camcos (King) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Circosta",
+        "238 Wellington St E, Ste 100",
+        "Aurora, Ontario",
+        "L4G 1J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT18/RT1827/RT182702/mi.pdf",
+    "site_lines": [
+      "Plan 65M-4757, Block 2",
+      "",
+      "PIN: 03372-1040",
+      "",
+      "0.00 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $28,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: KingSett Mortgage Corp",
+      "principal: $168,000,000   rate: RBC prime plus 0% per annum.",
+      "registered: 01/26/2024   due: 02/01/2028",
+      "",
+      "chargee: Delton Acquisitions Inc",
+      "principal: $5,000,000   rate: 5.0% per annum.",
+      "registered: 01/26/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "53 / 263",
+      "rt_id": "RT182702"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "KEELE ST, DENNISON ST",
+    "postcode": "",
+    "municipality": "King",
+    "region": "York Region",
+    "date": "01/26/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "0",
+    "consid": "28000000",
+    "cash": "28000000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "03372-1040",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "KEELE ST",
+      "DENNISON ST"
+    ],
+    "city_region": "King : York Region",
+    "date_text": "26 Jan 2024",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice,",
+      "Commercial List"
+    ],
+    "buyer_lines": [
+      "Camcos (King) Inc"
+    ],
+    "price_text": "$28,000,000"
+  }
+}

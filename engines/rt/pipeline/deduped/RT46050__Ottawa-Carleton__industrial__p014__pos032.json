@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT46050",
+  "source_folder": "Ottawa-Carleton/industrial/p014",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46050",
+      "source_folder": "Ottawa-Carleton/industrial/p014",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/industrial/p014/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1740 COMSTOCK RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "20 Dec 2005",
+      "price_text": "$1,482,440",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "6100686 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Kurosky",
+        "6385 Gordon Pratt Cres",
+        "Ottawa, Ontario",
+        "K4P 1R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Transport McGill Air Inc     514-856-6222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Didier Lemanach",
+        "ABB Inc",
+        "8585 Transcanada Hwy, Ste 300",
+        "Saint Laurent, Quebec",
+        "H4S 1Z6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - OF, Part Lot 25",
+      "Plan 5R-115, Parts 7-10",
+      "",
+      "8.80 acre"
+    ],
+    "arn_text": "06 14 106 101 12800 +",
+    "consideration_lines": [
+      "cash: $1,482,440     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT460/RT46050/photo.jpg"
+    },
+    "footer": {
+      "page_position": "683 / 962",
+      "rt_id": "RT46050"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1740 COMSTOCK RD",
+    "postcode": "K1B 5L2",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "12/20/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "8.8",
+    "consid": "1482440",
+    "cash": "1482440",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 106 101 12800+"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1740 COMSTOCK RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "20 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "6100686 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Transport McGill Air Inc"
+    ],
+    "price_text": "$1,482,440"
+  }
+}

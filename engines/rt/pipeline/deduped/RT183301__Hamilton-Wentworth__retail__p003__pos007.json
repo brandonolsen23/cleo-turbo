@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT183301",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183301",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "612 CONCESSION ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "03 Jan 2024",
+      "price_text": "$847,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Opie Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "612 Concession St",
+        "Hamilton, Ontario",
+        "L8V 1B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Diner on Concession Inc     905-915-5245"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rajinder Banwait",
+        "4 Duet St",
+        "Brampton, Ontario",
+        "L6P 4C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 412, Lot 85",
+      "",
+      "PIN: 17057-0132",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "25 18 070 672 01230",
+    "consideration_lines": [
+      "cash: $847,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183301/0302_122731.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183301/0302_122736.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183301/0302_122737.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183301/0302_122756.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183301/0302_122757.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183301/0302_122759.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "108 / 616",
+      "rt_id": "RT183301"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "612 CONCESSION ST",
+    "postcode": "L8V 1B5",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "01/03/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "847500",
+    "cash": "847500",
+    "debt": "",
+    "note": "",
+    "pin": "17057-0132",
+    "rollno": "25 18 070 672 01230"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "612 CONCESSION ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "03 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Opie Ltd"
+    ],
+    "buyer_lines": [
+      "Diner on Concession Inc"
+    ],
+    "price_text": "$847,500"
+  }
+}

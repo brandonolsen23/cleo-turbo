@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT192045",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192045",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 MILL ST E",
+        "(ACTON)"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "29 Apr 2025",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2667169 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "285 Murlock Heights",
+        "Milton, Ontario",
+        "L9E 1C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16814891 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: H. Kaur Dua",
+        "22 Mill St E",
+        "Halton Hill, Ontario",
+        "L7J 1G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 31, Block 14",
+      "Part Lots 4 & 9",
+      "As in Inst No 587928",
+      "",
+      "PIN: 24996-0006",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "24 15 050 004 08400",
+    "consideration_lines": [
+      "cash: $1,350,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,350,000   rate: Prime plus 6.0% per annum.",
+      "registered: 04/29/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132015.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132017.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132022.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132039a.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132039b.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132202.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1920/RT192045/0517_132203.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "37 / 613",
+      "rt_id": "RT192045"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "22 MILL ST E, (ACTON)",
+    "postcode": "L7J 1G9",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "04/29/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "1350000",
+    "cash": "1350000",
+    "debt": "",
+    "note": "",
+    "pin": "24996-0006",
+    "rollno": "24 15 050 004 08400"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "22 MILL ST E",
+      "(ACTON)"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "29 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2667169 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "16814891 Canada Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

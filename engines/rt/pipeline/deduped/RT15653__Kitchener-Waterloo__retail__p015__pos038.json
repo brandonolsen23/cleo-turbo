@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT15653",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15653",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "256 - 258 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "29 Oct 1999",
+      "price_text": "$1,025,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pluto Darkwoods Corporation"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George T. Wisniewski",
+        "c/o Dale & Lessman",
+        "Barristers & Solicitors",
+        "PO Box 73, Ste 2000",
+        "Commercial Union Tower, T-D Centre",
+        "Toronto, Ontario",
+        "M5K 1E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Young Men's Christian Association of Cambridge"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John F. Lennox",
+        "250 Hespeler Rd",
+        "Cambridge, Ontario",
+        "N1R 3H3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1376, Lot 45"
+    ],
+    "arn_text": "30 06 150 015 04500",
+    "consideration_lines": [
+      "cash: $1,025,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $600,000   rate: Prime plus 6.0% per annum.",
+      "registered: 11/26/2020   due: on demand",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $1,150,000   rate: 25.0% per annum.",
+      "registered: 11/24/2020   due: on demand",
+      "",
+      "chargee: 1676810 Ontario Inc",
+      "principal: $580,000   rate: 4.0% per annum. Due in weekly payments of $705.86",
+      "registered: 11/16/2020   due: 01/23/2023",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,150,000   rate: Prime plus 10.0% per annum.",
+      "registered: 09/09/2020   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/27/2020   due: on demand",
+      "",
+      "chargee: Pizzardi Investments",
+      "Gabriele Pizzardi",
+      "principal: $1,007,500   rate: 10.0% per annum.",
+      "registered: 11/27/2020   due: 12/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT156/RT15653/photo.jpg"
+    },
+    "footer": {
+      "page_position": "739 / 752",
+      "rt_id": "RT15653"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "256 - 258 HESPELER RD",
+    "postcode": "N1R 3H3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "10/29/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1025000",
+    "cash": "1025000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 150 015 04500"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "256 - 258 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "29 Oct 1999",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Pluto Darkwoods Corporation"
+    ],
+    "buyer_lines": [
+      "Young Men's Christian Association of Cambridge"
+    ],
+    "price_text": "$1,025,000"
+  }
+}

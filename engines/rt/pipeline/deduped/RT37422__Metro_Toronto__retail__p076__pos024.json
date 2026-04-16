@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT37422",
+  "source_folder": "Metro_Toronto/retail/p076",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37422",
+      "source_folder": "Metro_Toronto/retail/p076",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p076/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "3268 FINCH AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 Sep 2004",
+      "price_text": "$2,370,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Worldeal Investments Ltd     416-789-5997"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Abraham Bartfeld",
+        "77 Regina Ave",
+        "Toronto, Ontario",
+        "M6A 1R5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Finch Properties Inc     905-886-6270"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Attila Gyurko",
+        "181 Clark Ave E",
+        "Thornhill, Ontario",
+        "L3T 1T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-12654, Parts 1-4",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 01 104 185 00015",
+    "consideration_lines": [
+      "cash: $1,970,000     assumed/vtb debt: $400,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT374/RT37422/air1.jpg",
+        "/assets/files/RT3/RT374/RT37422/air2.jpg",
+        "/assets/files/RT3/RT374/RT37422/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT374/RT37422/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3775 / 4952",
+      "rt_id": "RT37422"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "3268 FINCH AVE E",
+    "postcode": "M1W 3P7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "09/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "2370000",
+    "cash": "1970000",
+    "debt": "400000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 104 185 00015"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "3268 FINCH AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 Sep 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Worldeal Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Finch Properties Inc"
+    ],
+    "price_text": "$2,370,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT109485",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT109485",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "4764 REGIONAL RD 15"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "02 Jul 2015",
+      "price_text": "$8,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pijo Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Laura Belanger",
+        "4764 - 22 Regional Rd",
+        "Chelmsford, Ontario",
+        "P0M 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bonaventure Property Management Inc     416-635-5191"
+      ],
+      "trade_name": "The Macdane Group",
+      "contact_lines": [
+        "Pres: Andrew Cutrona",
+        "1230 Sheppard Ave W, Unit 12",
+        "Toronto, Ontario",
+        "M3K 1Z9"
+      ]
+    },
+    "description_lines": [
+      "Bonaventure Mall - 1 storey; 25 tenants 55,000 sf @ $152",
+      "",
+      "5% vacant",
+      "Anchored by Your Independent Grocer",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 1",
+      "Plan 53R-20465, Parts 1-3",
+      "",
+      "PIN: 73349-2096",
+      "",
+      "W side Regional Rd 15, N of Hwy 144",
+      "",
+      "14.91 acre"
+    ],
+    "arn_text": "53 07 160 004 00300",
+    "consideration_lines": [
+      "cash: $8,375,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $5,862,500   rate: 4.95% per annum. Lender may renew for 1 month at the greater of 15.0% or prime plus 5.0% per annum.",
+      "registered: 07/02/2015   due: 07/15/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 90",
+      "rt_id": "RT109485"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "4764 REGIONAL RD 15",
+    "postcode": "P0M 1L0",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "07/02/2015",
+    "desc": "Bonaventure Mall - 1 storey; 25 tenants 55,000 sf @ $152",
+    "bldg": "55,000 sf",
+    "acreage": "14.91",
+    "consid": "8375000",
+    "cash": "8375000",
+    "debt": "",
+    "note": "",
+    "pin": "73349-2096",
+    "rollno": "53 07 160 004 00300"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "4764 REGIONAL RD 15"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "02 Jul 2015",
+    "note": "",
+    "description": "Bonaventure Mall - 1 storey; 25 tenants 55,000 sf @ $152",
+    "seller_lines": [
+      "Pijo Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Bonaventure Property Management Inc"
+    ],
+    "price_text": "$8,375,000"
+  }
+}

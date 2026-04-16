@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT124055",
+  "source_folder": "Cochrane/all/p080",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT124055",
+      "source_folder": "Cochrane/all/p080",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "5 DOWS LAKE RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "22 Mar 2017",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Don Weerdenburg Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Weerdenburg",
+        "5 Dow's Lake Rd",
+        "Ottawa, Ontario",
+        "K1S 4K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 217882, Lot 3",
+      "",
+      "PIN: 04103-0087",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "06 14 063 301 25300",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $250,000   rate: 3.44% per annum.",
+      "registered: 03/22/2017   due: 04/01/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3951 / 10920",
+      "rt_id": "RT124055"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "5 DOWS LAKE RD",
+    "postcode": "K1S 4K9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/22/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "04103-0087",
+    "rollno": "06 14 063 301 25300"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "5 DOWS LAKE RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "22 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Don Weerdenburg Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

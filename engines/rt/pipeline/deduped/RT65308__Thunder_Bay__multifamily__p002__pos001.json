@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT65308",
+  "source_folder": "Thunder_Bay/multifamily/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65308",
+      "source_folder": "Thunder_Bay/multifamily/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/multifamily/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 GERTRUDE AVE"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "02 Dec 2008",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "539220 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Fiesal Khan",
+        "1795 Henderson Highway",
+        "Winnipeg, Manitoba",
+        "R2G 4E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 20 units @ $47,500"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 208, Lots 73-78",
+      "Plan 55R-2512, Part 1",
+      "",
+      "PIN: 62221-0087",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "58 04 010 082 09200",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "chattels: $20,000",
+      "",
+      "chargee: Montrose Mortgage Corp Ltd",
+      "principal: $865,052   rate: 4.93% per annum",
+      "registered: 12/02/2008   due: 12/01/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 58",
+      "rt_id": "RT65308"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "44 GERTRUDE AVE",
+    "postcode": "P7A 6V4",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "12/02/2008",
+    "desc": "Apartment Bldg - 3 storey; 20 units @ $47,500",
+    "bldg": "20 units",
+    "acreage": ".6",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "62221-0087",
+    "rollno": "58 04 010 082 09200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "44 GERTRUDE AVE"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "02 Dec 2008",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 20 units @ $47,500",
+    "seller_lines": [
+      "539220 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$950,000"
+  }
+}

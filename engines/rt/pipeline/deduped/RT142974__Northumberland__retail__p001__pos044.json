@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT142974",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT142974",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "121 - 141 TORONTO RD"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "17 May 2019",
+      "price_text": "$7,617,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pine View Holdings Inc     416-481-2222"
+      ],
+      "trade_name": "Plazacorp Investments Ltd",
+      "contact_lines": [
+        "Pres: Ezriel Gestetner",
+        "10 Wanless Ave, Ste 201",
+        "Toronto, Ontario",
+        "M4N 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2463865 Ontario Inc     416-467-6283"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Bourne",
+        "21 Evergreen Gardens",
+        "East York, Ontario",
+        "M4G 1C4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 91, Block A",
+      "",
+      "PIN: 51066-0004",
+      "",
+      "NE corner Toronto Rd and Jane St",
+      "",
+      "2.20 acre"
+    ],
+    "arn_text": "14 23 125 160 08800",
+    "consideration_lines": [
+      "cash: $2,617,500     assumed/vtb debt: $5,000,000",
+      "",
+      "chargee: Pine View Holdings Inc",
+      "principal: $668,027   rate: 4.20% per annum.",
+      "registered: 05/17/2019   due: 03/17/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121208.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121227.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121311.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121326.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121341.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121359.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121434.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1429/RT142974/0902_121451.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "45 / 93",
+      "rt_id": "RT142974"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "121 - 141 TORONTO RD",
+    "postcode": "L1A 3S6",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "05/17/2019",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.2",
+    "consid": "7617500",
+    "cash": "2617500",
+    "debt": "5000000",
+    "note": "",
+    "pin": "51066-0004",
+    "rollno": "14 23 125 160 08800"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "121 - 141 TORONTO RD"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "17 May 2019",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Pine View Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2463865 Ontario Inc"
+    ],
+    "price_text": "$7,617,500"
+  }
+}

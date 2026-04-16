@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT182232",
+  "source_folder": "Hamilton-Wentworth/retail/p003",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182232",
+      "source_folder": "Hamilton-Wentworth/retail/p003",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p003/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "271 KING ST E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "22 Dec 2023",
+      "price_text": "$1,840,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2808084 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "325 Jarvis St, Unit 21",
+        "Toronto, Ontario",
+        "M5B 2C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2822232 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Turnpenny",
+        "2076 Duncan Rd",
+        "Oakville, Ontario",
+        "L6J 2S2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 38, Lot 8",
+      "",
+      "PIN: 17168-0115",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "25 18 020 181 04090",
+    "consideration_lines": [
+      "cash: $1,840,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,100,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/22/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1822/RT182232/0106_123309.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1822/RT182232/0106_123310.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1822/RT182232/0106_123331.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1822/RT182232/0106_123332.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1822/RT182232/0106_123349.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "109 / 616",
+      "rt_id": "RT182232"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "271 KING ST E",
+    "postcode": "L8N 1B9",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "12/22/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1840000",
+    "cash": "1840000",
+    "debt": "",
+    "note": "",
+    "pin": "17168-0115",
+    "rollno": "25 18 020 181 04090"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "271 KING ST E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "22 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2808084 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2822232 Ontario Inc"
+    ],
+    "price_text": "$1,840,000"
+  }
+}

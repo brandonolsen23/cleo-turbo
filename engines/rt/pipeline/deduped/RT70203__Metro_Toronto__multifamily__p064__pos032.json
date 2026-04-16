@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT70203",
+  "source_folder": "Metro_Toronto/multifamily/p064",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70203",
+      "source_folder": "Metro_Toronto/multifamily/p064",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p064/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1234 AVENUE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Jan 2010",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Adenat Inc     905-794-2808"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Israel Schwartz",
+        "3 Brewster Rd, Unit 1",
+        "Brampton, Ontario",
+        "L6T 5G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Fourplex - 2 storey; 4-2bdrm @ $287,500"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1570",
+      "Part Lots 1 & 167",
+      "",
+      "PIN: 21157-0286",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 115 140 02400",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $805,000   rate: 3.85% per annum",
+      "registered: 01/07/2010   due: 01/01/2016"
+    ],
+    "broker_lines": [
+      "Adenat Real Estate: Stephen Levy, 416-785-8555"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT702/RT70203/0117_105508.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT702/RT70203/0117_105530.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT702/RT70203/0117_105602.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT702/RT70203/air1.jpg",
+        "/assets/files/RT7/RT702/RT70203/air2.jpg",
+        "/assets/files/RT7/RT702/RT70203/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3183 / 6031",
+      "rt_id": "RT70203"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1234 AVENUE RD",
+    "postcode": "M5N 2G6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/07/2010",
+    "desc": "Fourplex - 2 storey; 4-2bdrm @ $287,500",
+    "bldg": "4 units",
+    "acreage": ".13",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "21157-0286",
+    "rollno": "19 04 115 140 02400"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1234 AVENUE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Jan 2010",
+    "note": "",
+    "description": "Fourplex - 2 storey; 4-2bdrm @ $287,500",
+    "seller_lines": [
+      "Adenat Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

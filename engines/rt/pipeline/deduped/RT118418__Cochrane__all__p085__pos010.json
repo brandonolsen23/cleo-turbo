@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT118418",
+  "source_folder": "Cochrane/all/p085",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT118418",
+      "source_folder": "Cochrane/all/p085",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p085/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "236 VANGUARD DR"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "26 Jul 2016",
+      "price_text": "$820,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "240 Vanguard Developments Inc     613-233-1781"
+      ],
+      "trade_name": "Gowlings LLP",
+      "contact_lines": [
+        "Pres: Gordon Cudney",
+        "c/o 160 Elgin St, Ste 2600",
+        "Ottawa, Ontario",
+        "K1P 1C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RNR Ottawa Inc     613-224-6200"
+      ],
+      "trade_name": "ARK Construction Ltd",
+      "contact_lines": [
+        "Attn: Gino Nicolini",
+        "183 Michael Cowpland Dr",
+        "Kanata, Ontario",
+        "K2M 0M3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 1",
+      "Plan 4R-28384, Parts 2 & 3",
+      "",
+      "PIN: 14563-1257",
+      "",
+      "1.71 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $820,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4211 / 10920",
+      "rt_id": "RT118418"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "236 VANGUARD DR",
+    "postcode": "",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "07/26/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.71",
+    "consid": "820500",
+    "cash": "820500",
+    "debt": "",
+    "note": "",
+    "pin": "14563-1257",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "236 VANGUARD DR"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "26 Jul 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "240 Vanguard Developments Inc"
+    ],
+    "buyer_lines": [
+      "RNR Ottawa Inc"
+    ],
+    "price_text": "$820,500"
+  }
+}

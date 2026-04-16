@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT81242",
+  "source_folder": "York_Region/retail/p010",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81242",
+      "source_folder": "York_Region/retail/p010",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "17555 YONGE ST"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "12 Oct 2011",
+      "price_text": "$17,538,291",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "480770 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Maureen Kensit",
+        "c/o 18100 Yonge St",
+        "Newmarket, Ontario",
+        "L3Y 8V1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1858106 Ontario Inc     905-470-9149"
+      ],
+      "trade_name": "Multimatic Inc",
+      "contact_lines": [
+        "Attn: Peter Czapka",
+        "85 Valleywood Dr",
+        "Markham, Ontario",
+        "L3R 5E5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 tenants 30,800 sf @ $569",
+      "",
+      "Fully leased by Shoppers Drug Mart, LCBO and Blinds to Go"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - EYS, Part Lot 96",
+      "Plan 65R-16992, Parts 5-7",
+      "Except:",
+      "Exprop  Plan YR-1369724",
+      "Parts 1, 6, 7, 10, 11, 17-20, 24 & 28",
+      "",
+      "PIN: 03578-0933",
+      "",
+      "2.07 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $9,583,453     assumed/vtb debt: $7,954,838",
+      "",
+      "chargee: RBC Dexia Investor Services Trust",
+      "State Street Trust Co Canada",
+      "principal: $9,000,000   rate: 5.9% per annum",
+      "registered: 07/17/2007   due: 08/01/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT812/RT81242/1021_123210.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT812/RT81242/1021_123242.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT812/RT81242/1021_123244.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT812/RT81242/1021_123306.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT812/RT81242/1021_123400.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT812/RT81242/air1.jpg",
+        "/assets/files/RT8/RT812/RT81242/air2.jpg",
+        "/assets/files/RT8/RT812/RT81242/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "469 / 984",
+      "rt_id": "RT81242"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "17555 YONGE ST",
+    "postcode": "L3Y 5H6",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "10/12/2011",
+    "desc": "Retail Plaza - 1 storey; 3 tenants 30,800 sf @ $569",
+    "bldg": "30,800 sf",
+    "acreage": "2.07",
+    "consid": "17538291",
+    "cash": "9583453",
+    "debt": "7954838",
+    "note": "",
+    "pin": "03578-0933",
+    "rollno": ""
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "17555 YONGE ST"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "12 Oct 2011",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 tenants 30,800 sf @ $569",
+    "seller_lines": [
+      "480770 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1858106 Ontario Inc"
+    ],
+    "price_text": "$17,538,291"
+  }
+}

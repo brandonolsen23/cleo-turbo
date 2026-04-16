@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT65533",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65533",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "235 LAKESHORE DR",
+        "4 MILFORD CRES"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "22 Dec 2008",
+      "price_text": "$1,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Loblaw Properties Ltd     905-459-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jane Marshall",
+        "1 President's Choice Circle",
+        "4th Floor, South Tower",
+        "Brampton, Ontario",
+        "L6Y 5S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maal Properties Ltd     705-476-9003"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lia Butti",
+        "99 Campbell Ave",
+        "North Bay, Ontario",
+        "P1A 1V4"
+      ]
+    },
+    "description_lines": [
+      "Former No Frills Store - 1 storey; 20,000 sf @ $95",
+      "",
+      "Single tenant (vacant)",
+      "Property is on a corner"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-316",
+      "Lots 22-26 & 32",
+      "",
+      "PIN: 49172-0225 +",
+      "",
+      "1.25 acre"
+    ],
+    "arn_text": "48 44 040 053 31400 +",
+    "consideration_lines": [
+      "cash: $1,900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "43 / 46",
+      "rt_id": "RT65533"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "235 LAKESHORE DR, 4 MILFORD CRES",
+    "postcode": "P1A 2B8",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "12/22/2008",
+    "desc": "Former No Frills Store - 1 storey; 20,000 sf @ $95",
+    "bldg": "20,000 sf",
+    "acreage": "1.25",
+    "consid": "1900000",
+    "cash": "1900000",
+    "debt": "",
+    "note": "",
+    "pin": "49172-0225+",
+    "rollno": "48 44 040 053 31400+"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "235 LAKESHORE DR",
+      "4 MILFORD CRES"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "22 Dec 2008",
+    "note": "",
+    "description": "Former No Frills Store - 1 storey; 20,000 sf @ $95",
+    "seller_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Maal Properties Ltd"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

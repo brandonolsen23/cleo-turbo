@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT33858",
+  "source_folder": "Essex_County/retail/p008",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33858",
+      "source_folder": "Essex_County/retail/p008",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p008/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "2080 WYANDOTTE ST W"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "30 Jan 2004",
+      "price_text": "$557,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shoppers Drug Mart (London) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bryna Goldberg",
+        "243 Consumers Rd",
+        "Willowdale, Ontario",
+        "M2J 4W8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 682, Part Lots 469 & 470",
+      "As in Inst No R-882045",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "37 39 050 080 11100",
+    "consideration_lines": [
+      "cash: $557,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT338/RT33858/photo.jpg"
+    },
+    "footer": {
+      "page_position": "385 / 460",
+      "rt_id": "RT33858"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "2080 WYANDOTTE ST W",
+    "postcode": "N9B 1J7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "01/30/2004",
+    "desc": "Retail Bldg - 1 storey",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "557500",
+    "cash": "557500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 050 080 11100"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "2080 WYANDOTTE ST W"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "30 Jan 2004",
+    "note": "",
+    "description": "Retail Bldg - 1 storey",
+    "seller_lines": [
+      "Shoppers Drug Mart (London) Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$557,500"
+  }
+}

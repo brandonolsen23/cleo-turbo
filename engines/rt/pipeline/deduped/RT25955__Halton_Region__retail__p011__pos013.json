@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT25955",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25955",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "111 TRAFALGAR RD S"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "16 Jul 2002",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Vincent Menchella",
+        "Chris Valentine"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "106 Front St E",
+        "Toronto, Ontario",
+        "M5A 1E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "SMV Real Estate Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sergio Fernandez",
+        "111 Trafalgar Rd",
+        "Oakville, Ontario",
+        "L6J 3G3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; about 3,200 sf @ $197",
+      "",
+      "Last transferred in Sep 99 for $630,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1, Block 26",
+      "Part Lots A & D",
+      "As in Inst No 693847",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "24 01 040 030 11500",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT259/RT25955/photo.jpg"
+    },
+    "footer": {
+      "page_position": "514 / 613",
+      "rt_id": "RT25955"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "111 TRAFALGAR RD S",
+    "postcode": "L6J 3G3",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "07/16/2002",
+    "desc": "Retail Bldg - 2 storey; about 3,200 sf @ $197",
+    "bldg": "3,200 sf",
+    "acreage": ".04",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 040 030 11500"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "111 TRAFALGAR RD S"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "16 Jul 2002",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; about 3,200 sf @ $197",
+    "seller_lines": [
+      "Vincent Menchella",
+      "Chris Valentine"
+    ],
+    "buyer_lines": [
+      "SMV Real Estate Enterprises Inc"
+    ],
+    "price_text": "$630,000"
+  }
+}

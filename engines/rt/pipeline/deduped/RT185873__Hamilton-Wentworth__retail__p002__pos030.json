@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT185873",
+  "source_folder": "Hamilton-Wentworth/retail/p002",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185873",
+      "source_folder": "Hamilton-Wentworth/retail/p002",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p002/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "1068 - 1072 BARTON ST E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "21 Jun 2024",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "7748728 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "126 Catharines St N",
+        "Hamilton, Ontario",
+        "L8R 1J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "44 Investco Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Nicholson",
+        "90 Park Lawn Rd, Ste 2907",
+        "Etobicoke, Ontario",
+        "M8Y 0B6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 463, Part Lots 10 & 11",
+      "As in Inst No CD-356763",
+      "",
+      "PIN: 17223-0216",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "25 18 040 286 01300",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $1,492,500   rate: 10.49% per annum.",
+      "registered: 06/21/2024   due: 07/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185873/0713_085949.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185873/0713_085950.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185873/0713_090013.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185873/0713_090015.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1858/RT185873/0713_090023.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1858/RT185873/air1.jpg",
+        "/assets/files/RT18/RT1858/RT185873/air2.jpg",
+        "/assets/files/RT18/RT1858/RT185873/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "81 / 616",
+      "rt_id": "RT185873"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "1068 - 1072 BARTON ST E",
+    "postcode": "L8L 3E6",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "17223-0216",
+    "rollno": "25 18 040 286 01300"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "1068 - 1072 BARTON ST E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "21 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "7748728 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "44 Investco Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

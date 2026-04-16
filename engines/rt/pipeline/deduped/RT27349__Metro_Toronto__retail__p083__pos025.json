@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT27349",
+  "source_folder": "Metro_Toronto/retail/p083",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27349",
+      "source_folder": "Metro_Toronto/retail/p083",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p083/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "1154 - 1156 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Oct 2002",
+      "price_text": "$1,430,000",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "CRIC - St Clair Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "CLIC Investments (Canada) Inc -",
+        "By its solicitors Bogart Robertson & Chu"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Bogart",
+        "141 Adelaide St W, Ste 1608",
+        "Toronto, Ontario",
+        "M5H 3L5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 22,954 sf @ $62"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1458, Part Lots 3-6",
+      "As in Inst No CT-942480"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT273/RT27349/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4126 / 4952",
+      "rt_id": "RT27349"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "1154 - 1156 ST CLAIR AVE W",
+    "postcode": "M6E 1B3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/10/2002",
+    "desc": "Retail Bldg - 2 storey; 22,954 sf @ $62",
+    "bldg": "22,954 sf",
+    "acreage": "",
+    "consid": "1430000",
+    "cash": "",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "1154 - 1156 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Oct 2002",
+    "note": "Foreclosure",
+    "description": "Retail Bldg - 2 storey; 22,954 sf @ $62",
+    "seller_lines": [
+      "CRIC - St Clair Ltd"
+    ],
+    "buyer_lines": [
+      "CLIC Investments (Canada) Inc -",
+      "By its solicitors Bogart Robertson & Chu"
+    ],
+    "price_text": "$1,430,000"
+  }
+}

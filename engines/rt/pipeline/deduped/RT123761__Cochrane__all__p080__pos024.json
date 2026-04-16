@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT123761",
+  "source_folder": "Cochrane/all/p080",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123761",
+      "source_folder": "Cochrane/all/p080",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "240 POWELL AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Feb 2017",
+      "price_text": "$935,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "240 Powell Ave Inc     613-526-4611"
+      ],
+      "trade_name": "SerCo Construction Ltd",
+      "contact_lines": [
+        "Attn: Francesco Porcari",
+        "9 Capella Ct, Ste 200",
+        "Ottawa, Ontario",
+        "K2E 8A7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-20, Lot 85",
+      "",
+      "PIN: 04135-0124",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "06 14 052 301 55400",
+    "consideration_lines": [
+      "cash: $935,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $752,000   rate: 2.398% per annum.",
+      "registered: 02/28/2017   due: 10/15/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1237/RT123761/0624_092814.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1237/RT123761/0624_092818.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1237/RT123761/0624_092832.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3975 / 10920",
+      "rt_id": "RT123761"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "240 POWELL AVE",
+    "postcode": "K1S 2A5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/28/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "935000",
+    "cash": "935000",
+    "debt": "",
+    "note": "",
+    "pin": "04135-0124",
+    "rollno": "06 14 052 301 55400"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "240 POWELL AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "240 Powell Ave Inc"
+    ],
+    "price_text": "$935,000"
+  }
+}

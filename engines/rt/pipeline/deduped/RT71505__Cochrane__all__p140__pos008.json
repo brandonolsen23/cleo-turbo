@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT71505",
+  "source_folder": "Cochrane/all/p140",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71505",
+      "source_folder": "Cochrane/all/p140",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p140/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "255 ARGYLE AVE",
+        "PENTHOUSE 4"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "25 Mar 2010",
+      "price_text": "$579,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2231393 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kris Klein",
+        "255 Argyle Ave, Ste P4",
+        "Ottawa, Ontario",
+        "K2P 2N7"
+      ]
+    },
+    "description_lines": [
+      "Res Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 623",
+      "Level 4, Unit 4",
+      "Level A, Unit 8",
+      "",
+      "PIN: 15623-0064 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $579,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $492,150   rate: 4.75% per annum",
+      "registered: 03/25/2010   due: 04/01/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6959 / 10920",
+      "rt_id": "RT71505"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "255 ARGYLE AVE, PENTHOUSE 4",
+    "postcode": "K2P 2N7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/25/2010",
+    "desc": "Res Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "579000",
+    "cash": "579000",
+    "debt": "",
+    "note": "",
+    "pin": "15623-0064+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "255 ARGYLE AVE",
+      "PENTHOUSE 4"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "25 Mar 2010",
+    "note": "",
+    "description": "Res Condo",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2231393 Ontario Inc"
+    ],
+    "price_text": "$579,000"
+  }
+}

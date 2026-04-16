@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT28531",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28531",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "37 FRASERWOOD AVE"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "13 Jan 2003",
+      "price_text": "$500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Seco Management Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Giuseppe Scaduto",
+        "36 Meadowbrook Rd",
+        "Toronto, Ontario",
+        "M6B 2S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-691",
+      "Part Lots 12 & 13"
+    ],
+    "arn_text": "19 08 041 480 03000",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4971 / 6031",
+      "rt_id": "RT28531"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "37 FRASERWOOD AVE",
+    "postcode": "M6B 2N6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "01/13/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 08 041 480 03000"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "37 FRASERWOOD AVE"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "13 Jan 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Seco Management Corp"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$500,000"
+  }
+}

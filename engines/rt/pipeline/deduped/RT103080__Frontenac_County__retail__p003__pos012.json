@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT103080",
+  "source_folder": "Frontenac_County/retail/p003",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103080",
+      "source_folder": "Frontenac_County/retail/p003",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p003/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "33 BARRACK ST"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "22 Sep 2014",
+      "price_text": "$3,500,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "771357 Ontario Ltd     613-546-3169"
+      ],
+      "trade_name": "Zakos Enterprises",
+      "contact_lines": [
+        "Pres: Margaret Zakos",
+        "16A Market St",
+        "PO Box 30",
+        "Kingston, Ontario",
+        "K7L 4V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Metro Ontario Real Estate Ltd     416-239-7171"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Julie Paquette",
+        "5559 Dundas St W",
+        "Etobicoke, Ontario",
+        "M9B 1B9"
+      ]
+    },
+    "description_lines": [
+      "Food Basics Supermarket - 1 storey; 15,400 sf @ $227",
+      "",
+      "The property was purchased by its tenant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Military Reserve Plan",
+      "Lots 6, 7, 13-15",
+      "",
+      "PIN: 36044-0114",
+      "",
+      "NW corner Barrack St and King St E",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "10 11 030 100 12500",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "DTZ Eastern Ontario: Peter Kostogiannis, 613-542-2724"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1030/RT103080/0116_094142.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1030/RT103080/0116_094155.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1030/RT103080/0116_094443.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1030/RT103080/0116_094821.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "113 / 236",
+      "rt_id": "RT103080"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "33 BARRACK ST",
+    "postcode": "K7K 1E7",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "09/22/2014",
+    "desc": "Food Basics Supermarket - 1 storey; 15,400 sf @ $227",
+    "bldg": "15,400 sf",
+    "acreage": ".74",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "36044-0114",
+    "rollno": "10 11 030 100 12500"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "33 BARRACK ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "22 Sep 2014",
+    "note": "Purchased by Tenant",
+    "description": "Food Basics Supermarket - 1 storey; 15,400 sf @ $227",
+    "seller_lines": [
+      "771357 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Metro Ontario Real Estate Ltd"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT44141",
+  "source_folder": "Cochrane/all/p176",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44141",
+      "source_folder": "Cochrane/all/p176",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p176/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "3985 BELGREEN DR",
+        "1365 JOHNSTON RD",
+        "3279 HAWTHORNE RD",
+        "3323 HAWTHORNE RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "02 Sep 2005",
+      "price_text": "$8,345,091",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sylard Enterprises Ltd",
+        "OFI Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Skarzenski",
+        "300 Queen Elizabeth Dr, Ste 12D",
+        "Ottawa, Ontario",
+        "K1S 3M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ottawa Fibre GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Skarzenski",
+        "1365 Johnston Rd",
+        "Ottawa, Ontario",
+        "K1V 8Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8758 / 10920",
+      "rt_id": "RT44141"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "3985 BELGREEN DR, 1365 JOHNSTON RD, 3279 HAWTHORNE RD, 3323 HAWTHORNE RD",
+    "postcode": "K1G 3N2",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "09/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "8345091",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "3985 BELGREEN DR",
+      "1365 JOHNSTON RD",
+      "3279 HAWTHORNE RD",
+      "3323 HAWTHORNE RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "02 Sep 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Sylard Enterprises Ltd",
+      "OFI Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "Ottawa Fibre GP Inc"
+    ],
+    "price_text": "$8,345,091"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT74811",
+  "source_folder": "Cochrane/all/p136",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT74811",
+      "source_folder": "Cochrane/all/p136",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p136/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1340 SECOND LINE RD"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "15 Oct 2010",
+      "price_text": "$756,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Brian Pye Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Pye",
+        "2 Melva Ave",
+        "Ottawa, Ontario",
+        "K1T 3W9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 13",
+      "As in Inst No CT-203709",
+      "",
+      "PIN: 04526-0154",
+      "",
+      "27.01 acre"
+    ],
+    "arn_text": "06 30 000 816 14903",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $756,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT748/RT74811/air1.jpg",
+        "/assets/files/RT7/RT748/RT74811/air2.jpg",
+        "/assets/files/RT7/RT748/RT74811/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6752 / 10920",
+      "rt_id": "RT74811"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1340 SECOND LINE RD",
+    "postcode": "K2K 1X7",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "10/15/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": "27.01",
+    "consid": "756000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04526-0154",
+    "rollno": "06 30 000 816 14903"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1340 SECOND LINE RD"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "15 Oct 2010",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Brian Pye Investments Ltd"
+    ],
+    "price_text": "$756,000"
+  }
+}

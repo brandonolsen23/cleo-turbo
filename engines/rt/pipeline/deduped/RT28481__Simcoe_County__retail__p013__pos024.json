@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT28481",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28481",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "GOSHEN RD",
+        "ADULLAM AVE",
+        "INNISFIL BEACH RD"
+      ],
+      "city_region": "Innisfil : Simcoe County",
+      "date_text": "02 Jan 2003",
+      "price_text": "$1,134,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2020607 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gus Lazarakis",
+        "32 Samba Dr",
+        "Weston, Ontario",
+        "M9M 2N1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1249, Lots 6-10, 14-17",
+      "As in Inst No RO-1375180",
+      "Except Plan 51R-28870, Parts 1, 3, 4 & 5",
+      "",
+      "3.25 acre"
+    ],
+    "arn_text": "43 16 010 031 15200",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "625 / 712",
+      "rt_id": "RT28481"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "GOSHEN RD, ADULLAM AVE, INNISFIL BEACH RD",
+    "postcode": "",
+    "municipality": "Innisfil",
+    "region": "Simcoe County",
+    "date": "01/02/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.25",
+    "consid": "1134000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "43 16 010 031 15200"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "GOSHEN RD",
+      "ADULLAM AVE",
+      "INNISFIL BEACH RD"
+    ],
+    "city_region": "Innisfil : Simcoe County",
+    "date_text": "02 Jan 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2020607 Ontario Inc"
+    ],
+    "price_text": "$1,134,000"
+  }
+}

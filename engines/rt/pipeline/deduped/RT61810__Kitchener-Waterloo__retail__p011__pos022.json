@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT61810",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT61810",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "576 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "01 May 2008",
+      "price_text": "$15,855,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1535404 Ontario Ltd",
+        "Whiteport Investments Inc     416-785-0350"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michel Grunbaum",
+        "57 Viewmount Ave",
+        "Toronto, Ontario",
+        "M6B 1T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2155965 Ontario Inc     416-603-0849"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Murphy",
+        "Capital City Shopping Centre Ltd",
+        "20 Richmond St E, Ste 202",
+        "Toronto, Ontario",
+        "M5C 2R9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1702",
+      "Blocks 1, 2 & Reserve Block 7",
+      "",
+      "6.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,763,668     assumed/vtb debt: $7,121,832"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61810/0531_134347.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61810/0531_134438.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61810/0531_134450.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61810/0531_134640.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61810/0531_134652.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT618/RT61810/0531_134658.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "523 / 752",
+      "rt_id": "RT61810"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "576 KING ST N",
+    "postcode": "N2L 6L3",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "05/01/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.22",
+    "consid": "15855500",
+    "cash": "8763668",
+    "debt": "7121832",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "576 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "01 May 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1535404 Ontario Ltd",
+      "Whiteport Investments Inc"
+    ],
+    "buyer_lines": [
+      "2155965 Ontario Inc"
+    ],
+    "price_text": "$15,855,500"
+  }
+}

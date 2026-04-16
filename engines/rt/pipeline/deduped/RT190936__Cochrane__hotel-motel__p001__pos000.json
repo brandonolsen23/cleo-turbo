@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT190936",
+  "source_folder": "Cochrane/hotel-motel/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190936",
+      "source_folder": "Cochrane/hotel-motel/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/hotel-motel/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "730 ALGONQUIN BLVD E"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "21 Mar 2025",
+      "price_text": "$10,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2685523 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "30 Cormorant Cres",
+        "Woodbridge, Ontario",
+        "L4H 2R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Algonquin Inc     905-887-4884"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shaun Gupta",
+        "45 Royal West Rd",
+        "Markham, Ontario",
+        "L6C 0L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Tisdale, Part Lot 10",
+      "Plan 6R-4110, Parts 1, 3, 5 & 6",
+      "",
+      "PIN: 65406-0009 +",
+      "",
+      "1.76 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $10,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Your Neighbourhood Credit Union Ltd",
+      "principal: $8,190,000   rate: 6.25% per annum.",
+      "registered: 03/21/2025   due: 02/20/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 6",
+      "rt_id": "RT190936"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "730 ALGONQUIN BLVD E",
+    "postcode": "",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "03/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.76",
+    "consid": "10000000",
+    "cash": "10000000",
+    "debt": "",
+    "note": "",
+    "pin": "65406-0009+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "730 ALGONQUIN BLVD E"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "21 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2685523 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Algonquin Inc"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

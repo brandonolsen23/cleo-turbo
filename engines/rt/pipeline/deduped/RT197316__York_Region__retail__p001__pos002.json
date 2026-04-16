@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT197316",
+  "source_folder": "York_Region/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197316",
+      "source_folder": "York_Region/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "3851 HIGHWAY 7",
+        "3851 HWY 7"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "18 Feb 2026",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2456965 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3985 Highway 7 E, Unit 202",
+        "Markham, Ontario",
+        "L3R 2A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000140476 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wan Li Huang",
+        "827 Birchmount Dr",
+        "Waterloo, Ontario",
+        "N2V 2R3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1526",
+      "Level 1, Unit 8",
+      "",
+      "PIN: 30058-0008"
+    ],
+    "arn_text": "36 02 014 085 59000",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/18/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197316/0308_144112.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197316/0308_144137.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197316/0308_144139.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197316/0308_144159.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197316/0308_144215.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1973/RT197316/0308_144241.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 984",
+      "rt_id": "RT197316"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "3851 HIGHWAY 7, 3851 HWY 7",
+    "postcode": "L3R 6M9",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "02/18/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "30058-0008",
+    "rollno": "36 02 014 085 59000"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "3851 HIGHWAY 7",
+      "3851 HWY 7"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "18 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2456965 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000140476 Ontario Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

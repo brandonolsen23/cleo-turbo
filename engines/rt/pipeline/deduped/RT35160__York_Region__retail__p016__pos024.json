@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT35160",
+  "source_folder": "York_Region/retail/p016",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35160",
+      "source_folder": "York_Region/retail/p016",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "5710 MAIN ST"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "23 Apr 2004",
+      "price_text": "$7,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2010182 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Brown",
+        "801 York Mills Rd, Ste 213",
+        "Toronto, Ontario",
+        "M3B 1X7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maxwell Street Holdings Ltd     416-222-0344"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cory Sherman",
+        "Sherman, Brown, Dryer & Karol",
+        "5075 Yonge St, Ste 900",
+        "North York, Ontario",
+        "M2N 6C6"
+      ]
+    },
+    "description_lines": [
+      "Stoufville Place Mall - 1 storey; 36,646 sf @ $194",
+      "",
+      "Last transferred in April 2002 for $2,795,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-3332, Part 2",
+      "Except:",
+      "Plan 65R-25068, Part 1",
+      "",
+      "2.74 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,214,425     assumed/vtb debt: $4,885,575"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "775 / 984",
+      "rt_id": "RT35160"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "5710 MAIN ST",
+    "postcode": "",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "04/23/2004",
+    "desc": "Stoufville Place Mall - 1 storey; 36,646 sf @ $194",
+    "bldg": "36,646  sf",
+    "acreage": "2.74",
+    "consid": "7100000",
+    "cash": "2214425",
+    "debt": "4885575",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "5710 MAIN ST"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "23 Apr 2004",
+    "note": "",
+    "description": "Stoufville Place Mall - 1 storey; 36,646 sf @ $194",
+    "seller_lines": [
+      "2010182 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Maxwell Street Holdings Ltd"
+    ],
+    "price_text": "$7,100,000"
+  }
+}

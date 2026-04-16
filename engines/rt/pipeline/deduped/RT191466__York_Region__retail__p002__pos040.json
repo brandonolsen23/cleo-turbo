@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT191466",
+  "source_folder": "York_Region/retail/p002",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191466",
+      "source_folder": "York_Region/retail/p002",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "95 MAIN ST S"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "31 Mar 2025",
+      "price_text": "$1,268,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Luesby Memorial Company Ltd     705-228-1046"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Lori Tomkinson",
+        "29 Minonen Rd",
+        "Udora, Ontario",
+        "L0E 1N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2353240 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joshua Malcolm",
+        "975 Reach St",
+        "Port Perry, Ontario",
+        "L9L 1B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 222 - Newmarket,",
+      "Part Lots 86 & 87, E/S Main St",
+      "As in Inst No R-700198",
+      "",
+      "PIN: 03608-0091",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "19 48 030 140 99300",
+    "consideration_lines": [
+      "cash: $1,268,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1914/RT191466/0503_140555.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1914/RT191466/0503_140556.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1914/RT191466/0503_140615.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1914/RT191466/0503_140616.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1914/RT191466/air1.jpg",
+        "/assets/files/RT19/RT1914/RT191466/air2.jpg",
+        "/assets/files/RT19/RT1914/RT191466/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "91 / 984",
+      "rt_id": "RT191466"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "95 MAIN ST S",
+    "postcode": "L3Y 3Y8",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "03/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "1268500",
+    "cash": "1268500",
+    "debt": "",
+    "note": "",
+    "pin": "03608-0091",
+    "rollno": "19 48 030 140 99300"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "95 MAIN ST S"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "31 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Luesby Memorial Company Ltd"
+    ],
+    "buyer_lines": [
+      "2353240 Ontario Ltd"
+    ],
+    "price_text": "$1,268,500"
+  }
+}

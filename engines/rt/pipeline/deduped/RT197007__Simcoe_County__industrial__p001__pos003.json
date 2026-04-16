@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT197007",
+  "source_folder": "Simcoe_County/industrial/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197007",
+      "source_folder": "Simcoe_County/industrial/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/industrial/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "699 BAYVIEW DR"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "05 Feb 2026",
+      "price_text": "$8,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bestpro II Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1833 Quantz Cres",
+        "Innisfil, Ontario",
+        "L9S 1X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1084427 Ontario Ltd     705-726-4580"
+      ],
+      "trade_name": "Powdertech Ltd",
+      "contact_lines": [
+        "Attn: Paul Rozalowsky",
+        "699 Bayview Dr",
+        "Barrie, Onario",
+        "L4N 9A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11 (BA), Part Lot 8",
+      "Plan 51R-17810, Parts 1-4",
+      "",
+      "PIN: 58728-0148",
+      "",
+      "1.99 acre"
+    ],
+    "arn_text": "43 42 050 006 13325",
+    "consideration_lines": [
+      "cash: $8,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $6,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/05/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 520",
+      "rt_id": "RT197007"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "699 BAYVIEW DR",
+    "postcode": "L4N 9A5",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "02/05/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.99",
+    "consid": "8400000",
+    "cash": "8400000",
+    "debt": "",
+    "note": "",
+    "pin": "58728-0148",
+    "rollno": "43 42 050 006 13325"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "699 BAYVIEW DR"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "05 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bestpro II Corp"
+    ],
+    "buyer_lines": [
+      "1084427 Ontario Ltd"
+    ],
+    "price_text": "$8,400,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT187686",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187686",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "24 NORFOLK ST N"
+      ],
+      "city_region": "Simcoe : Norfolk",
+      "date_text": "03 Oct 2024",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sydenham Norfolk Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "67 Frid St, Unit 12",
+        "Hamilton, Ontario",
+        "L8P 4M3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001006291 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Balwinder Dhanju",
+        "5 Colby Lane",
+        "Richmond Hill, Ontario",
+        "L4C 6H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 182, Block 75",
+      "Lots 9-12, Part Lots 3-8 & 12",
+      "As in Inst No NR-562216",
+      "",
+      "PIN: 50225-0088",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "33 10 401 010 05900",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,900,000   rate: 18.0% per annum.",
+      "registered: 10/03/2024   due: 11/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187686/0330_081719.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187686/0330_081722.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187686/0330_081724.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187686/0330_081845.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187686/0330_081848.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 45",
+      "rt_id": "RT187686"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "24 NORFOLK ST N",
+    "postcode": "N3Y 5C6",
+    "municipality": "Simcoe",
+    "region": "Norfolk",
+    "date": "10/03/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "50225-0088",
+    "rollno": "33 10 401 010 05900"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "24 NORFOLK ST N"
+    ],
+    "city_region": "Simcoe : Norfolk",
+    "date_text": "03 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sydenham Norfolk Investments Inc"
+    ],
+    "buyer_lines": [
+      "1001006291 Ontario Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

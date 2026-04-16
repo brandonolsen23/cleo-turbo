@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT189398",
+  "source_folder": "Simcoe_County/retail/p002",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189398",
+      "source_folder": "Simcoe_County/retail/p002",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p002/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "13 BOOTH ST"
+      ],
+      "city_region": "Oro : Simcoe County",
+      "date_text": "31 Dec 2024",
+      "price_text": "$900,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "1045921 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "69 Willow Landing Rd",
+        "Midhurst, Ontario",
+        "L9X 0P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2799706 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cameron Thorn",
+        "13 Booth St",
+        "Oro-Medonte, Ontario",
+        "L0L 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1441, Lot 6",
+      "",
+      "PIN: 58549-0085",
+      "",
+      "0.76 acre"
+    ],
+    "arn_text": "43 46 010 010 42300",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $900,000",
+      "",
+      "chargee: 1045921 Ontario Inc",
+      "principal: $900,000   rate: 5.50% per annum.",
+      "registered: 12/31/2024   due: 12/31/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1893/RT189398/0419_105216.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1893/RT189398/0419_105224.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1893/RT189398/0419_105246.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1893/RT189398/0419_105247.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1893/RT189398/0419_105311.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1893/RT189398/0419_105315.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "59 / 712",
+      "rt_id": "RT189398"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "13 BOOTH ST",
+    "postcode": "L0L 1T0",
+    "municipality": "Oro",
+    "region": "Simcoe County",
+    "date": "12/31/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".76",
+    "consid": "900000",
+    "cash": "",
+    "debt": "900000",
+    "note": "Zero Cash",
+    "pin": "58549-0085",
+    "rollno": "43 46 010 010 42300"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "13 BOOTH ST"
+    ],
+    "city_region": "Oro : Simcoe County",
+    "date_text": "31 Dec 2024",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "1045921 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2799706 Ontario Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

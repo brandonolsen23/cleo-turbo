@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT187005",
+  "source_folder": "Hamilton-Wentworth/retail/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187005",
+      "source_folder": "Hamilton-Wentworth/retail/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "244 HIGHWAY 8",
+        "244 HWY 8"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "30 Aug 2024",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2782088 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "28 Dalmeny Dr",
+        "Brampton, Ontario",
+        "L6X 2Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16084699 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Udyan Mahajan",
+        "244 Highway 8",
+        "Stoney Creek, Ontario",
+        "L8G 1E3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Saltfleet, Part Lot 21",
+      "As in Inst No VM-166838",
+      "",
+      "PIN: 17323-0076",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "25 03 100 330 06600",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,300,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/30/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187005/0907_075709.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187005/0907_075718.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187005/0907_075720.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187005/0907_075728.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 616",
+      "rt_id": "RT187005"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "244 HIGHWAY 8, 244 HWY 8",
+    "postcode": "L8G 1E3",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "08/30/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "17323-0076",
+    "rollno": "25 03 100 330 06600"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "244 HIGHWAY 8",
+      "244 HWY 8"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "30 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2782088 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "16084699 Canada Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

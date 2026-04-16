@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT186330",
+  "source_folder": "York_Region/multifamily/p001",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186330",
+      "source_folder": "York_Region/multifamily/p001",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p001/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "88 SPRUCE ST"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "24 Jun 2024",
+      "price_text": "$1,650,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000898807 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "53 Fleury St",
+        "Aurora, Ontario",
+        "L4G 1V1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 246, Part Lot 100",
+      "AS in inst No R-109482",
+      "",
+      "PIN: 03639-0066",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 46 000 024 09700",
+    "consideration_lines": [
+      "cash: $1,650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "38 / 263",
+      "rt_id": "RT186330"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "88 SPRUCE ST",
+    "postcode": "L4G 1S1",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "06/24/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1650000",
+    "cash": "1650000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "03639-0066",
+    "rollno": "19 46 000 024 09700"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "88 SPRUCE ST"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "24 Jun 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000898807 Ontario Inc"
+    ],
+    "price_text": "$1,650,000"
+  }
+}

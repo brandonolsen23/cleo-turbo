@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT133846",
+  "source_folder": "Halton_Region/retail/p004",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT133846",
+      "source_folder": "Halton_Region/retail/p004",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p004/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "2269 FAIRVIEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "01 May 2018",
+      "price_text": "$6,926,875",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "2001586 Ontario Inc     905-333-6670"
+      ],
+      "trade_name": "Elizabeth Interiors",
+      "contact_lines": [
+        "Pres: Elizabeth Law",
+        "3225 Fairview St",
+        "Burlington, Ontario",
+        "L7N 3L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2269 Fairview Inc     613-569-5699"
+      ],
+      "trade_name": "InterRent REIT",
+      "contact_lines": [
+        "Attn: Michael McGahan",
+        "485 Bank St, Ste 207",
+        "Ottawa, Ontario",
+        "K2P 1Z2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 2 storey; 8,500 sf @ $815",
+      "",
+      "Fully leased back to the vendor.",
+      "",
+      "70 surface parking stalls",
+      "",
+      "Purchased as an investment.",
+      "",
+      "Last transferred in March 2001 for $1,250,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-8796, Part 1",
+      "",
+      "PIN: 07079-0010",
+      "",
+      "NW corner Fairview St and Drury Lane",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "24 02 050 507 04210",
+    "consideration_lines": [
+      "cash: $6,926,875     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1338/RT133846/0512_084109.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1338/RT133846/0512_084129.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1338/RT133846/0512_084136.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1338/RT133846/0512_084212.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1338/RT133846/0512_084214.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1338/RT133846/0512_084231.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "183 / 613",
+      "rt_id": "RT133846"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "2269 FAIRVIEW ST",
+    "postcode": "L7R 2E1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "05/01/2018",
+    "desc": "Retail Bldg: 2 storey; 8,500 sf @ $815",
+    "bldg": "8,500 sf",
+    "acreage": ".97",
+    "consid": "6926875",
+    "cash": "6926875",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "07079-0010",
+    "rollno": "24 02 050 507 04210"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "2269 FAIRVIEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "01 May 2018",
+    "note": "Sale Leaseback",
+    "description": "Retail Bldg: 2 storey; 8,500 sf @ $815",
+    "seller_lines": [
+      "2001586 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2269 Fairview Inc"
+    ],
+    "price_text": "$6,926,875"
+  }
+}

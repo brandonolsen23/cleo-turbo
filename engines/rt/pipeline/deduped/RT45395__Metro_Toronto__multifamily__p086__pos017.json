@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT45395",
+  "source_folder": "Metro_Toronto/multifamily/p086",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45395",
+      "source_folder": "Metro_Toronto/multifamily/p086",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p086/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "269 BERKELEY ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "04 Oct 2005",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Linda Vacheresse"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "467 Richmond St E",
+        "Toronto, Ontario",
+        "M5A 1R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Patricia Renwick"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "269 Berkeley St",
+        "Toronto, Ontario",
+        "M5A 2X3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 160, Part Lot 29",
+      "As in Inst No CA-580788",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 072 130 02900",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $481,134",
+      "registered: 10/04/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4268 / 6031",
+      "rt_id": "RT45395"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "269 BERKELEY ST",
+    "postcode": "M5A 2X3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/04/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 072 130 02900"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "269 BERKELEY ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "04 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Linda Vacheresse"
+    ],
+    "buyer_lines": [
+      "Patricia Renwick"
+    ],
+    "price_text": "$500,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT121433",
+  "source_folder": "Simcoe_County/retail/p005",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT121433",
+      "source_folder": "Simcoe_County/retail/p005",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p005/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "149 DUNLOP ST E"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "01 Dec 2016",
+      "price_text": "$2,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1450835 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Patricia Trecapelli",
+        "74 Weymouth Dr",
+        "Barrie, Ontario",
+        "L4M 6R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2531409 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joe Lu",
+        "6 Aileen Lewis Ct",
+        "Markham, Ontario",
+        "L6E 1A8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Water Lots 17 & 18",
+      "S/S Dunlop St",
+      "As in Inst Nos:",
+      "RO-1141307 & RO-1393718",
+      "",
+      "PIN: 58795-0106",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "43 42 022 003 00200",
+    "consideration_lines": [
+      "cash: $2,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Liahona Mortgage Investment Corp",
+      "principal: $2,100,000   rate: 8.0% per annum.",
+      "registered: 12/01/2016   due: 11/30/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1214/RT121433/1230_124553.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1214/RT121433/1230_124558.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1214/RT121433/1230_124630.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1214/RT121433/1230_124632.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "223 / 712",
+      "rt_id": "RT121433"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "149 DUNLOP ST E",
+    "postcode": "L4M 1B2",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "12/01/2016",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".37",
+    "consid": "2800000",
+    "cash": "2800000",
+    "debt": "",
+    "note": "",
+    "pin": "58795-0106",
+    "rollno": "43 42 022 003 00200"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "149 DUNLOP ST E"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "01 Dec 2016",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1450835 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2531409 Ontario Inc"
+    ],
+    "price_text": "$2,800,000"
+  }
+}

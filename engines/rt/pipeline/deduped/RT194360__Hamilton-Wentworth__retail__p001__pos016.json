@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT194360",
+  "source_folder": "Hamilton-Wentworth/retail/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194360",
+      "source_folder": "Hamilton-Wentworth/retail/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "578 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "12 Sep 2025",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1001121416 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Mays Cres",
+        "Waterdown, Ontario",
+        "L8B 0G4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001276237 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Khalid Marzouk",
+        "3863 O'Neil Gate",
+        "Mississauga, Ontario",
+        "L5L 5X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 279, Block D, Lot 19",
+      "",
+      "PIN: 17074-0068",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "25 18 080 912 00820",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $825,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/12/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194360/0920_085916.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194360/0920_085917.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194360/0920_085933.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194360/0920_085934.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1943/RT194360/0920_085939.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 616",
+      "rt_id": "RT194360"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "578 UPPER JAMES ST",
+    "postcode": "L9C 2Y6",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "09/12/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "",
+    "pin": "17074-0068",
+    "rollno": "25 18 080 912 00820"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "578 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "12 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1001121416 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001276237 Ontario Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT21197",
+  "source_folder": "Essex_County/multifamily/p009",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21197",
+      "source_folder": "Essex_County/multifamily/p009",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/multifamily/p009/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "137 BRUCE AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "19 Apr 2001",
+      "price_text": "$750,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Scotia Mortgage Corp     416-866-6161"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: David Smiles",
+        "44 King St W, 21st Flr",
+        "Toronto,Ontario",
+        "M5H 1H 1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sutak Investments Inc     519-733-3293"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Leslie Sutak",
+        "181 Concession 2 E",
+        "Kingsville, Ontario",
+        "N9Y 2J4"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 4 storey; 25 units @ $30,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 274, Part Lot 5"
+    ],
+    "arn_text": "37 39 040 110 02100",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT211/RT21197/photo.jpg"
+    },
+    "footer": {
+      "page_position": "402 / 421",
+      "rt_id": "RT21197"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "137 BRUCE AVE",
+    "postcode": "N9A 4V9",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "04/19/2001",
+    "desc": "Apartment Bldg - 4 storey; 25 units @ $30,000",
+    "bldg": "25 units",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "37 39 040 110 02100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "137 BRUCE AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "19 Apr 2001",
+    "note": "Power of Sale",
+    "description": "Apartment Bldg - 4 storey; 25 units @ $30,000",
+    "seller_lines": [
+      "Scotia Mortgage Corp"
+    ],
+    "buyer_lines": [
+      "Sutak Investments Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

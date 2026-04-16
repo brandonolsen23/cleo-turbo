@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT32773",
+  "source_folder": "Metro_Toronto/retail/p079",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32773",
+      "source_folder": "Metro_Toronto/retail/p079",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p079/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "1586 BAYVIEW AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Nov 2003",
+      "price_text": "$640,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "H & M Optical Co Ltd     416-284-8231"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Beesley",
+        "18 Cherrydale Ct",
+        "West Hill, Ontario",
+        "M1C 3H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2035449 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Francois Rahier",
+        "1586 Bayview Ave",
+        "Toronto, Ontario",
+        "M4G 3B7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 1,600 sf @ $400"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1788, Part Lot 57",
+      "As in Inst No CA-263925",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 103 290 04300",
+    "consideration_lines": [
+      "cash: $640,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Coldwell Banker Case Realty: Chris Kelos, 416-690-7771"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT327/RT32773/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3909 / 4952",
+      "rt_id": "RT32773"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "1586 BAYVIEW AVE",
+    "postcode": "M4G 2B7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/27/2003",
+    "desc": "Retail Bldg - 1 storey; 1,600 sf @ $400",
+    "bldg": "1,600 sf",
+    "acreage": ".05",
+    "consid": "640000",
+    "cash": "640000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 103 290 04300"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "1586 BAYVIEW AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Nov 2003",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 1,600 sf @ $400",
+    "seller_lines": [
+      "H & M Optical Co Ltd"
+    ],
+    "buyer_lines": [
+      "2035449 Ontario Inc"
+    ],
+    "price_text": "$640,000"
+  }
+}

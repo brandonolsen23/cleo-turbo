@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT178862",
+  "source_folder": "York_Region/retail/p005",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178862",
+      "source_folder": "York_Region/retail/p005",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "125 KING RD"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "05 Jul 2023",
+      "price_text": "$8,580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "King Road Properties (Oakridges) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 15 Larmont St",
+        "Aurora, Ontario",
+        "L4G 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000518225 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jacky Zhang",
+        "8 Thomas Reid Rd",
+        "Markham, Ontario",
+        "L6C 1A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 136 - King, Part Lots 4 & 5",
+      "As in Inst No R-488056",
+      "",
+      "PIN: 03196-0048",
+      "",
+      "1.26 acre"
+    ],
+    "arn_text": "19 38 080 012 42400",
+    "consideration_lines": [
+      "cash: $2,580,000     assumed/vtb debt: $6,000,000",
+      "",
+      "chargee: Nealeco Investments Inc",
+      "Boycroft Investments Inc",
+      "principal: $6,000,000   rate: 6.0% per annum.",
+      "registered: 07/05/2023   due: 06/30/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178862/0722_153509.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178862/0722_153529.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178862/0722_153533.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178862/0722_153638.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178862/0722_153640.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1788/RT178862/0722_153721.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "212 / 984",
+      "rt_id": "RT178862"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "125 KING RD",
+    "postcode": "L4E 2W1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "07/05/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.26",
+    "consid": "8580000",
+    "cash": "2580000",
+    "debt": "6000000",
+    "note": "",
+    "pin": "03196-0048",
+    "rollno": "19 38 080 012 42400"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "125 KING RD"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "05 Jul 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "King Road Properties (Oakridges) Inc"
+    ],
+    "buyer_lines": [
+      "1000518225 Ontario Inc"
+    ],
+    "price_text": "$8,580,000"
+  }
+}

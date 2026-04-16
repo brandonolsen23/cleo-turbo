@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT123549",
+  "source_folder": "Metro_Toronto/multifamily/p036",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123549",
+      "source_folder": "Metro_Toronto/multifamily/p036",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p036/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1423 DUFFERIN ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Mar 2017",
+      "price_text": "$2,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dufferin 1423 Inc     416-644-4265"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Thomas Ehrlich",
+        "10 King St E, Ste 800",
+        "Toronto, Ontario",
+        "M5C 1C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2552687 Ontario Inc     647-338-7638"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Monica Gomez",
+        "67 Mowat Ave, Ste 411",
+        "Toronto, Ontario",
+        "M6K 3E3"
+      ]
+    },
+    "description_lines": [
+      "Triplex: 2 storey; 3 units @ $733,333",
+      "",
+      "Converted from a single family dwelling in 2016.",
+      "",
+      "1-1bdrm 1-2bdrm 1-3bdrm",
+      "",
+      "One apartment will be occupied by the purchaser and the other two leased out."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 658, Part Lot 7",
+      "As in Inst No CA-324980",
+      "",
+      "PIN: 21288-0266",
+      "",
+      "E side Dufferin St, S of Chandos Ave",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 033 140 01100",
+    "consideration_lines": [
+      "cash: $2,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Company",
+      "principal: $1,500,000   rate: 5.5% per annum.",
+      "registered: 03/02/2017   due: 03/01/2018",
+      "",
+      "chargee: Baybank Capital Inc",
+      "principal: $200,000   rate: 5.50% per annum.",
+      "registered: 03/02/2017   due: 03/01/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1235/RT123549/0312_110333.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1235/RT123549/0312_110337.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1235/RT123549/0312_110351.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1235/RT123549/0312_110353.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1235/RT123549/0312_110422.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1235/RT123549/0312_110432.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1762 / 6031",
+      "rt_id": "RT123549"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1423 DUFFERIN ST",
+    "postcode": "M6H 4C7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/02/2017",
+    "desc": "Triplex: 2 storey; 3 units @ $733,333",
+    "bldg": "3 units",
+    "acreage": ".07",
+    "consid": "2200000",
+    "cash": "2200000",
+    "debt": "",
+    "note": "",
+    "pin": "21288-0266",
+    "rollno": "19 04 033 140 01100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1423 DUFFERIN ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Mar 2017",
+    "note": "",
+    "description": "Triplex: 2 storey; 3 units @ $733,333",
+    "seller_lines": [
+      "Dufferin 1423 Inc"
+    ],
+    "buyer_lines": [
+      "2552687 Ontario Inc"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

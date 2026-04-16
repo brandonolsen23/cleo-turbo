@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT151307",
+  "source_folder": "Leeds/all/p014",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT151307",
+      "source_folder": "Leeds/all/p014",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p014/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1 - SER",
+        "PART LOT 17"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "16 Dec 2019",
+      "price_text": "$850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "643369 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Peters",
+        "382 MacDonald St",
+        "Strathroy, Ontario",
+        "N7G 0B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KLP Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Peters",
+        "8163 Zion Line",
+        "Watford, Ontario",
+        "N0M 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - SER, Part Lot 17",
+      "Except:",
+      "Plan 25R-326, Part 15",
+      "Plan 25R-2860, Part 1",
+      "Inst No PP-375",
+      "",
+      "PIN: 43062-0159",
+      "",
+      "97.59 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $50,000     assumed/vtb debt: $800,000",
+      "",
+      "chargee: 643369 Ontario Ltd",
+      "principal: $800,000   rate: 0% per annum.",
+      "registered: 12/16/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT15/RT1513/RT151307/air1.jpg",
+        "/assets/files/RT15/RT1513/RT151307/air2.jpg",
+        "/assets/files/RT15/RT1513/RT151307/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "692 / 1916",
+      "rt_id": "RT151307"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "CONC 1 - SER, PART LOT 17",
+    "postcode": "",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "12/16/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "97.59",
+    "consid": "850000",
+    "cash": "50000",
+    "debt": "800000",
+    "note": "Related Parties",
+    "pin": "43062-0159",
+    "rollno": ""
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "CONC 1 - SER",
+      "PART LOT 17"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "16 Dec 2019",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "643369 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "KLP Farms Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

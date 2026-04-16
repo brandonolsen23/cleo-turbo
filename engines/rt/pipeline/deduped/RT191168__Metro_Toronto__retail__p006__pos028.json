@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT191168",
+  "source_folder": "Metro_Toronto/retail/p006",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191168",
+      "source_folder": "Metro_Toronto/retail/p006",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p006/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "2726 JANE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "28 Mar 2025",
+      "price_text": "$975,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000168208 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 216 Church St",
+        "Toronto, Ontario",
+        "M9N 1P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16251323 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Onyekachi Obi",
+        "2726 Jane St",
+        "North York, Ontario",
+        "M3L 2N1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-13903, Parts 3 & 10",
+      "",
+      "PIN: 10286-0242",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 08 011 262 06050",
+    "consideration_lines": [
+      "cash: $975,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $830,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 03/28/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191168/0406_094102.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191168/0406_094126.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191168/0406_094127.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191168/0406_094202.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191168/0406_094204.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1911/RT191168/0406_094222.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "279 / 4952",
+      "rt_id": "RT191168"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "2726 JANE ST",
+    "postcode": "M3L 2N1",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "03/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "975000",
+    "cash": "975000",
+    "debt": "",
+    "note": "",
+    "pin": "10286-0242",
+    "rollno": "19 08 011 262 06050"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "2726 JANE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "28 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000168208 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "16251323 Canada Inc"
+    ],
+    "price_text": "$975,000"
+  }
+}

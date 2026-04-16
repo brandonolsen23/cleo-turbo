@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT196981",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196981",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "13 SIMCOE PLAZA"
+      ],
+      "city_region": "Terrace Bay : Thunder Bay",
+      "date_text": "29 Jan 2026",
+      "price_text": "$1,240,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000556518 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "16750 Heart Lake Rd",
+        "Caledon Village, Ontario",
+        "L7C 2K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001311631 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Manjit Banwait",
+        "19726 Mountainview Rd",
+        "Caledon East, Ontario",
+        "L7K 2G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 55R-8289, Part 1",
+      "Plan M-124 - Strey, Part Lot 16",
+      "As in Inst Nos",
+      "LT-92624 & LPA-62770",
+      "",
+      "PIN: 62457-1081 +",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,240,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,140,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/29/2026   due: on demand",
+      "",
+      "chargee: 1000556518 Ontario Inc",
+      "principal: $600,000   rate: 5.0% per annum.",
+      "registered: 01/29/2026   due: 01/28/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 65",
+      "rt_id": "RT196981"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "13 SIMCOE PLAZA",
+    "postcode": "P0T 2W0",
+    "municipality": "Terrace Bay",
+    "region": "Thunder Bay",
+    "date": "01/29/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "1240000",
+    "cash": "1240000",
+    "debt": "",
+    "note": "",
+    "pin": "62457-1081+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "13 SIMCOE PLAZA"
+    ],
+    "city_region": "Terrace Bay : Thunder Bay",
+    "date_text": "29 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000556518 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001311631 Ontario Inc"
+    ],
+    "price_text": "$1,240,000"
+  }
+}

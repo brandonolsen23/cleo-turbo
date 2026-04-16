@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT66017",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66017",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "725 - 731 BELMONT AVE W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "04 Feb 2009",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Schier Pharmacy Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ronald Schier",
+        "4520 Perth Line 44, RR 2",
+        "Gadshill, Ontario",
+        "N0K 1J0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Belvest Properties Inc     519-578-0003"
+      ],
+      "trade_name": "Citycorp Realty Ltd",
+      "contact_lines": [
+        "Pres: Edmund Pries",
+        "737 Belmont Ave W",
+        "Kitchener, Ontario",
+        "N2M 1P3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 2 tenants 4,927 sf @ $203",
+      "",
+      "Fully leased"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 343, Part Lot 8",
+      "As in Inst Nos:",
+      "238413 & 169498",
+      "Except:",
+      "Inst Nos 412087 & 239413",
+      "",
+      "PIN: 22421-0037 +",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $350,000     assumed/vtb debt: $650,000",
+      "",
+      "chargee: Schier Pharmacy Ltd",
+      "principal: $650,000   rate: 6.0% per annum",
+      "registered: 02/04/2009   due: 02/04/2014"
+    ],
+    "broker_lines": [
+      "Citycorp Realty Ltd: Joan Pries, 519-578-0003"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66017/0321_120546.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66017/0321_120618.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66017/0321_120707.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "506 / 752",
+      "rt_id": "RT66017"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "725 - 731 BELMONT AVE W",
+    "postcode": "K2M 1P3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "02/04/2009",
+    "desc": "Retail Bldg - 2 storey; 2 tenants 4,927 sf @ $203",
+    "bldg": "4,927 sf",
+    "acreage": ".17",
+    "consid": "1000000",
+    "cash": "350000",
+    "debt": "650000",
+    "note": "",
+    "pin": "22421-0037+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "725 - 731 BELMONT AVE W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "04 Feb 2009",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 2 tenants 4,927 sf @ $203",
+    "seller_lines": [
+      "Schier Pharmacy Ltd"
+    ],
+    "buyer_lines": [
+      "Belvest Properties Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

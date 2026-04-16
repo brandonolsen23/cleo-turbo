@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT193142",
+  "source_folder": "Metro_Toronto/multifamily/p006",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193142",
+      "source_folder": "Metro_Toronto/multifamily/p006",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p006/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "321 JANE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Jun 2025",
+      "price_text": "$875,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "2821707 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "19 Langmuir Cres",
+        "Toronto, Ontario",
+        "M6S 2A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 874, Block A",
+      "Part Lot 19",
+      "As in Inst No CT-467505",
+      "",
+      "PIN: 21379-0024",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 012 560 01200",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $875,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "268 / 6031",
+      "rt_id": "RT193142"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "321 JANE ST",
+    "postcode": "M6S 3Z3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/27/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "875000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "21379-0024",
+    "rollno": "19 04 012 560 01200"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "321 JANE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Jun 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "2821707 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$875,000"
+  }
+}

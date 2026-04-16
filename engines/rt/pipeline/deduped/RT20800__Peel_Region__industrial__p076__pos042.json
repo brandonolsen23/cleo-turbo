@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20800",
+  "source_folder": "Peel_Region/industrial/p076",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20800",
+      "source_folder": "Peel_Region/industrial/p076",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/industrial/p076/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 WALKER DR"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "14 Feb 1996",
+      "price_text": "$3,350,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Credit Lyonnais Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Blake Colvi",
+        "One Financial Place",
+        "1 Adelaide St E, Ste 2505",
+        "Toronto, Ontario",
+        "M5C 2V9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Aubrey W. Minshsall Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joan Kennedy",
+        "2 Walker Dr",
+        "Brampton, Ontario",
+        "L6T 5E1"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg - 124,037 sf @ $27"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-15711, Part 1",
+      "",
+      "5.82 acre"
+    ],
+    "arn_text": "21 10 100 025 02300",
+    "consideration_lines": [
+      "cash: $3,350,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3793 / 3793",
+      "rt_id": "RT20800"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2 WALKER DR",
+    "postcode": "L6T 5E1",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "02/14/1996",
+    "desc": "Industrial Bldg - 124,037 sf @ $27",
+    "bldg": "124,037 sf",
+    "acreage": "5.82",
+    "consid": "3350000",
+    "cash": "3350000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "21 10 100 025 02300"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2 WALKER DR"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "14 Feb 1996",
+    "note": "Power of Sale",
+    "description": "Industrial Bldg - 124,037 sf @ $27",
+    "seller_lines": [
+      "Credit Lyonnais Canada"
+    ],
+    "buyer_lines": [
+      "Aubrey W. Minshsall Holdings Ltd"
+    ],
+    "price_text": "$3,350,000"
+  }
+}

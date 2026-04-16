@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT46402",
+  "source_folder": "Metro_Toronto/multifamily/p085",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46402",
+      "source_folder": "Metro_Toronto/multifamily/p085",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p085/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "840 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Dec 2005",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2086088 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ok Han",
+        "840 Bloor St W",
+        "Toronto, Ontario",
+        "M6G 1M2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 872, Lot 12",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 051 210 01000",
+    "consideration_lines": [
+      "cash: $288,096     assumed/vtb debt: $341,904"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT464/RT46402/air1.jpg",
+        "/assets/files/RT4/RT464/RT46402/air2.jpg",
+        "/assets/files/RT4/RT464/RT46402/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4207 / 6031",
+      "rt_id": "RT46402"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "840 BLOOR ST W",
+    "postcode": "M6G 1M2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "630000",
+    "cash": "288096",
+    "debt": "341904",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 051 210 01000"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "840 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2086088 Ontario Inc"
+    ],
+    "price_text": "$630,000"
+  }
+}

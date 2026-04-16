@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT197143",
+  "source_folder": "Kitchener-Waterloo/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197143",
+      "source_folder": "Kitchener-Waterloo/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "101 HOLIDAY INN DR"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "10 Feb 2026",
+      "price_text": "$18,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Spencer Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "750 Hespeler Rd",
+        "Cambridge, Ontario",
+        "N3H 5L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "One O One Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohamed Kasmani",
+        "14 - 3650 Langstaff, Ste 374",
+        "Woodbridge, Ontario",
+        "L4L 9A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 908 - Cambridge,",
+      "Part Lots 15 & 16",
+      "Part Reserve Lots B & C",
+      "As in Inst No 1389472",
+      "",
+      "PIN: 03766-0099",
+      "",
+      "3.66 acre"
+    ],
+    "arn_text": "30 06 140 002 03004",
+    "consideration_lines": [
+      "cash: $18,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 752",
+      "rt_id": "RT197143"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "101 HOLIDAY INN DR",
+    "postcode": "N3C 1Z3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "02/10/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.66",
+    "consid": "18500000",
+    "cash": "18500000",
+    "debt": "",
+    "note": "",
+    "pin": "03766-0099",
+    "rollno": "30 06 140 002 03004"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "101 HOLIDAY INN DR"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "10 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Spencer Properties Ltd"
+    ],
+    "buyer_lines": [
+      "One O One Holdings Inc"
+    ],
+    "price_text": "$18,500,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT197086",
+  "source_folder": "Leeds/multifamily/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197086",
+      "source_folder": "Leeds/multifamily/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/multifamily/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "134 PINE ST"
+      ],
+      "city_region": "Brockville : Leeds",
+      "date_text": "02 Feb 2026",
+      "price_text": "$1,130,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000507984 Ontario Ltd     613-258-9691"
+      ],
+      "trade_name": "DCore Electric",
+      "contact_lines": [
+        "Attn: Kurtis Devries",
+        "12 Industrial Rd",
+        "Kemptville, Ontario",
+        "K0G 1J0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 156, Lots 39-44",
+      "",
+      "PIN: 44166-0135",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "08 02 010 010 11400",
+    "consideration_lines": [
+      "cash: $1,130,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,130,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/02/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 51",
+      "rt_id": "RT197086"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "134 PINE ST",
+    "postcode": "K6V 1H3",
+    "municipality": "Brockville",
+    "region": "Leeds",
+    "date": "02/02/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "1130000",
+    "cash": "1130000",
+    "debt": "",
+    "note": "",
+    "pin": "44166-0135",
+    "rollno": "08 02 010 010 11400"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "134 PINE ST"
+    ],
+    "city_region": "Brockville : Leeds",
+    "date_text": "02 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000507984 Ontario Ltd"
+    ],
+    "price_text": "$1,130,000"
+  }
+}

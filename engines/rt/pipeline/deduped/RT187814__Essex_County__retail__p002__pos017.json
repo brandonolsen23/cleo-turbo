@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT187814",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187814",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "3242 SANDWICH ST"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "08 Oct 2024",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "3242 Sandwich Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "19 Barnwood Ct",
+        "Toronto, Ontario",
+        "M3A 3G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Northern Horizon Holdings Inc     905-891-2784"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kalsang Phuntsok",
+        "1312  Bunsden Ave",
+        "Mississauga, Ontario",
+        "L5H 3T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40,",
+      "Part Lots 6 & 7, W/S Sandwich St",
+      "As in Inst No R-1308780",
+      "",
+      "PIN: 01591-0103",
+      "",
+      "0.78 acre"
+    ],
+    "arn_text": "37 39 050 140 08300",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,450,000   rate: 18.0% per annum.",
+      "registered: 10/08/2024   due: 10/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "68 / 460",
+      "rt_id": "RT187814"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "3242 SANDWICH ST",
+    "postcode": "N9C 1A8",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "10/08/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".78",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "",
+    "pin": "01591-0103",
+    "rollno": "37 39 050 140 08300"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "3242 SANDWICH ST"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "08 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "3242 Sandwich Development Inc"
+    ],
+    "buyer_lines": [
+      "Northern Horizon Holdings Inc"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

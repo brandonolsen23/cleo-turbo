@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT178282",
+  "source_folder": "Perth_County/all/p002",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178282",
+      "source_folder": "Perth_County/all/p002",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/all/p002/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "2925 HIGHWAY 11 N",
+        "2925 HWY 11 N"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "08 Jun 2023",
+      "price_text": "$1,500,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Seavale Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "87 Marsh Dr",
+        "North Bay, Ontario",
+        "P1B 8G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000550232 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel George",
+        "2925 Highway 11 N",
+        "North Bay, Ontario",
+        "P1B 8G3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - Widdifield, Part Lot 21",
+      "Plan 36R-8151, Part 1",
+      "As in Inst No LT-65943",
+      "Except:",
+      "Plan D-195, Parts 1 & 2",
+      "",
+      "PIN: 49127-0569 +",
+      "",
+      "3.97 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $450,000     assumed/vtb debt: $1,050,000",
+      "",
+      "chargee: Seavale Inc",
+      "principal: $1,050,000   rate: 8.0% per annum.",
+      "registered: 06/08/2023   due: 05/15/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "81 / 470",
+      "rt_id": "RT178282"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "2925 HIGHWAY 11 N, 2925 HWY 11 N",
+    "postcode": "P1B 8G3",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "06/08/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.97",
+    "consid": "1500000",
+    "cash": "450000",
+    "debt": "1050000",
+    "note": "Power of Sale",
+    "pin": "49127-0569+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "2925 HIGHWAY 11 N",
+      "2925 HWY 11 N"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "08 Jun 2023",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Seavale Inc"
+    ],
+    "buyer_lines": [
+      "1000550232 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

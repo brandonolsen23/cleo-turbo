@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT12965",
+  "source_folder": "York_Region/retail/p020",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12965",
+      "source_folder": "York_Region/retail/p020",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p020/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "2900 STEELES AVE E"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "30 Jul 1998",
+      "price_text": "$2,500,000",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "151513 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Ira Smith",
+        "c/o Goodman Phillips & Vineberg",
+        "250 Yonge St, Ste 2400",
+        "Toronto, Ontario",
+        "M5B 2M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sears Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric M. Carmona",
+        "222 Jarvis St, Ste D766",
+        "Toronto, Ontario",
+        "M5B 2B8"
+      ]
+    },
+    "description_lines": [
+      "Markham Marketplace/Shops on Steeles - Transfer of undivided 20% interest in leasehold estate"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-8741, Parts 1-18",
+      "",
+      "17.75 acre"
+    ],
+    "arn_text": "19 36 020 110 06000",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $850,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/30/2017   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $700,000",
+      "registered: 11/01/2017   due: on demand",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $570,500   rate: Prime plus 3.0% per annum.",
+      "registered: 10/31/2017   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $400,000   rate: 4.0% per annum upon default of any annual payment.",
+      "registered: 11/02/2017   due: 11/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT129/RT12965/photo.jpg"
+    },
+    "footer": {
+      "page_position": "978 / 984",
+      "rt_id": "RT12965"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "2900 STEELES AVE E",
+    "postcode": "L3T 4X1",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "07/30/1998",
+    "desc": "Markham Marketplace/Shops on Steeles - Transfer of undivided 20% interest in leasehold estate",
+    "bldg": "",
+    "acreage": "17.75",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 36 020 110 06000"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "2900 STEELES AVE E"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "30 Jul 1998",
+    "note": "Partial Interest",
+    "description": "Markham Marketplace/Shops on Steeles - Transfer of undivided 20% interest in leasehold estate",
+    "seller_lines": [
+      "151513 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Sears Canada Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

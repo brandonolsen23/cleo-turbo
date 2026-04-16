@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT123837",
+  "source_folder": "Cochrane/all/p080",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123837",
+      "source_folder": "Cochrane/all/p080",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "PLAN 4R - 29987",
+        "PARTS 6 - 8"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "08 Mar 2017",
+      "price_text": "$696,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Riverside South Development Corp     613-731-6331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Nichols",
+        "2193 Arch St",
+        "Ottawa, Ontario",
+        "K1G 2H5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Richcraft Homes Ltd     613-739-7111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steve Grandmont",
+        "2280 St Laurent Blvd, Ste 201",
+        "Ottawa, Ontario",
+        "K1G 4K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-29987, Parts 6-8",
+      "",
+      "PIN: 04330-1850"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $696,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $15,000,000   rate: 18.0% per annum.",
+      "registered: 03/08/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3961 / 10920",
+      "rt_id": "RT123837"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "PLAN 4R - 29987, PARTS 6 - 8",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/08/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "696000",
+    "cash": "696000",
+    "debt": "",
+    "note": "",
+    "pin": "04330-1850",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "PLAN 4R - 29987",
+      "PARTS 6 - 8"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "08 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Riverside South Development Corp"
+    ],
+    "buyer_lines": [
+      "Richcraft Homes Ltd"
+    ],
+    "price_text": "$696,000"
+  }
+}

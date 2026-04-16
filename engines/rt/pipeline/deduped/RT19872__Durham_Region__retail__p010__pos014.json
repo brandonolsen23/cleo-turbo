@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT19872",
+  "source_folder": "Durham_Region/retail/p010",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19872",
+      "source_folder": "Durham_Region/retail/p010",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p010/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "970 BROCK RD S"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "18 Dec 2000",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Grant A. Marshall"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "599 Kingston Rd",
+        "Pickering, Ontario",
+        "L1V 3N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Continental Cosmetics Ltd     905-660-0622"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: A. George Schilke",
+        "390 Millway Ave",
+        "Concord, Ontario",
+        "L4K 3V8"
+      ]
+    },
+    "description_lines": [
+      "Honda Car Dealership - 10,900 sf on 1.604 Ac",
+      "",
+      "Garage 60 x 70 ft Showroom 82 x 82 ft"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-2194, Part 3",
+      "",
+      "SW corner at Dillingham Rd",
+      "",
+      "1.60 acre"
+    ],
+    "arn_text": "18 01 020 022 06712",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT198/RT19872/photo.jpg"
+    },
+    "footer": {
+      "page_position": "465 / 506",
+      "rt_id": "RT19872"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "970 BROCK RD S",
+    "postcode": "L1W 2A1",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "12/18/2000",
+    "desc": "Honda Car Dealership - 10,900 sf on 1.604 Ac",
+    "bldg": "",
+    "acreage": "1.6",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 01 020 022 06712"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "970 BROCK RD S"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "18 Dec 2000",
+    "note": "",
+    "description": "Honda Car Dealership - 10,900 sf on 1.604 Ac",
+    "seller_lines": [
+      "Grant A. Marshall"
+    ],
+    "buyer_lines": [
+      "Continental Cosmetics Ltd"
+    ],
+    "price_text": "$950,000"
+  }
+}

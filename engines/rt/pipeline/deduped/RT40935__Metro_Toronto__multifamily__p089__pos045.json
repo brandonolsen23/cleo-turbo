@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT40935",
+  "source_folder": "Metro_Toronto/multifamily/p089",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40935",
+      "source_folder": "Metro_Toronto/multifamily/p089",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p089/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "104 BRAEMAR AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Mar 2005",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jim Elliott",
+        "The CSD Group Ltd     416-364-9188"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Stone & Co",
+        "155 University Ave, Ste 710",
+        "Toronto, Ontario",
+        "M5H 3B7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 598-E, Part Block A",
+      "As in Inst No CA-216257",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 114 350 03300",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $562,500   rate: Prime minus 0.5% per annum",
+      "registered: 03/10/2005   due: 03/10/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT409/RT40935/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4446 / 6031",
+      "rt_id": "RT40935"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "104 BRAEMAR AVE",
+    "postcode": "M5P 2L4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 114 350 03300"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "104 BRAEMAR AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Mar 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Jim Elliott",
+      "The CSD Group Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$750,000"
+  }
+}

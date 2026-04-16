@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT192183",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192183",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "206 PERRY ST"
+      ],
+      "city_region": "Clearview : Simcoe County",
+      "date_text": "16 May 2025",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "W2GV Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "202 Montreal St",
+        "Stayner, Ontario",
+        "L0M 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001213939 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Polubiec",
+        "186 Northmount Cres",
+        "The Blue Mountains, Ontario",
+        "L9Y 0R6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 68 - Nottawasaga,",
+      "Part Lots 22 & 23, S/S William St",
+      "As in Inst No RO-1045399",
+      "",
+      "PIN: 74025-0043",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "43 29 020 002 20800",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: W2GV Holdings Ltd",
+      "principal: $550,000   rate: 6.5% per annum.",
+      "registered: 05/16/2025   due: 12/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192183/0803_095841.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192183/0803_095845.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192183/0803_095914.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192183/0803_095915.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192183/0803_095943.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1921/RT192183/0803_095956.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "36 / 712",
+      "rt_id": "RT192183"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "206 PERRY ST",
+    "postcode": "L0M 1S0",
+    "municipality": "Clearview",
+    "region": "Simcoe County",
+    "date": "05/16/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "74025-0043",
+    "rollno": "43 29 020 002 20800"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "206 PERRY ST"
+    ],
+    "city_region": "Clearview : Simcoe County",
+    "date_text": "16 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "W2GV Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1001213939 Ontario Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

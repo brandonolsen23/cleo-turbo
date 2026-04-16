@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT18253",
+  "source_folder": "Lambton/retail/p003",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18253",
+      "source_folder": "Lambton/retail/p003",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p003/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "366 CHRISTINA ST N",
+        "149 - 151 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "14 Apr 1999",
+      "price_text": "$700,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "154133 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kevin Murphy",
+        "305 Second St E",
+        "Cornwall, Ontario",
+        "K6H 1Y8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Gillef Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Amyotte",
+        "3525 Hwy 34 S, PO Box 130",
+        "Alexandria, Ontario",
+        "K0C 1A0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 14 (SA), Part Lot 12 E/S Christina St",
+      "Plan 14 (SA), Part Lots 112 & 113 W/S Vidal St",
+      "As in Inst No 595468"
+    ],
+    "arn_text": "38 29 400 001 10400",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $415,140",
+      "",
+      "chargee: Chan Family Holding Inc",
+      "Matthew Cheung",
+      "Taebong Pam Holdings Ltd",
+      "Zhengwei Yang",
+      "Jessica Ng",
+      "principal: $600,000   rate: 13.0% per annum for the first 12 months, with monthly payments of $6,500. 13th month, 24.0% per annum with a monthly payment of $12,000.",
+      "registered: 12/18/2023   due: 01/01/2025",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,200,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 12/22/2023   due: on demand",
+      "",
+      "chargee: 2611332 Ontario Inc",
+      "principal: $1,035,000   rate: First 36 months, 4.0% per annum with monthly payments of $3,450. 4.25% per annum thereafter, with monthly payments of $4,487.97.",
+      "registered: 12/21/2023   due: 12/21/2028",
+      "",
+      "chargee: Barton Engineering & Manufacturing Ltd",
+      "principal: $400,000   rate: 10.0% per annum.",
+      "registered: 12/18/2023   due: 04/01/2024",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $1,500,000   rate: 25.0% per annum.",
+      "registered: 12/20/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT182/RT18253/photo.jpg"
+    },
+    "footer": {
+      "page_position": "105 / 106",
+      "rt_id": "RT18253"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "366 CHRISTINA ST N, 149 - 151 LONDON RD",
+    "postcode": "",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "04/14/1999",
+    "desc": "Retail Plaza & Gas Bar",
+    "bldg": "",
+    "acreage": "",
+    "consid": "700000",
+    "cash": "",
+    "debt": "415140",
+    "note": "Zero Cash",
+    "pin": "",
+    "rollno": "38 29 400 001 10400"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "366 CHRISTINA ST N",
+      "149 - 151 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "14 Apr 1999",
+    "note": "Zero Cash",
+    "description": "Retail Plaza & Gas Bar",
+    "seller_lines": [
+      "154133 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Gillef Investments Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

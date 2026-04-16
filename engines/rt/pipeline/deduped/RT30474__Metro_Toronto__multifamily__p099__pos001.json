@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT30474",
+  "source_folder": "Metro_Toronto/multifamily/p099",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30474",
+      "source_folder": "Metro_Toronto/multifamily/p099",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p099/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "58 BALSAM AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Jun 2003",
+      "price_text": "$670,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Duplex - 2 storey; 3-2bdrm @ $223,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 406, Part Lot 128",
+      "Plan 393-E, Part Lot 1",
+      "As in Inst No CA-631322",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 093 130 06600",
+    "consideration_lines": [
+      "cash: $670,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Sutton Group: 416-690-2181"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT304/RT30474/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4902 / 6031",
+      "rt_id": "RT30474"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "58 BALSAM AVE",
+    "postcode": "M4E 3B7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/02/2003",
+    "desc": "Duplex - 2 storey; 3-2bdrm @ $223,333",
+    "bldg": "3 units",
+    "acreage": ".09",
+    "consid": "670000",
+    "cash": "670000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 093 130 06600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "58 BALSAM AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Jun 2003",
+    "note": "",
+    "description": "Duplex - 2 storey; 3-2bdrm @ $223,333",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$670,000"
+  }
+}

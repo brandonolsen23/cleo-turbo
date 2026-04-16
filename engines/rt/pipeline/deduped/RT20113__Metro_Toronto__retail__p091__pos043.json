@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT20113",
+  "source_folder": "Metro_Toronto/retail/p091",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20113",
+      "source_folder": "Metro_Toronto/retail/p091",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p091/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "240 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "22 Dec 2000",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "82935 Ontario Ltd",
+        "Brian, Robert & Grant Vistorino     416-233-5567"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Vistorino",
+        "c/o 954A Royal York Rd",
+        "Toronto, Ontario",
+        "M8X 2E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "240 Bloor Realty Inc     416-625-7717 x539"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Mark Mandelbaum",
+        "H & R Developments",
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1Z2"
+      ]
+    },
+    "description_lines": [
+      "Com/Retail Bldg  - ground floor is occupied by a Harvey's",
+      "",
+      "H&R purchased the adjacent properties at 230-238 Bloor St W, 244 Bloor St W and 1-7 Bedford Rd in Dec 99 for $10.5 million."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-16866, Parts 1-11",
+      "",
+      "N side 10m E of Bedford Rd",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 052 080 04200",
+    "consideration_lines": [
+      "cash: $250,000     assumed/vtb debt: $1,550,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT201/RT20113/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4544 / 4952",
+      "rt_id": "RT20113"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "240 BLOOR ST W",
+    "postcode": "M5S 1T8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/22/2000",
+    "desc": "Com/Retail Bldg  - ground floor is occupied by a Harvey's",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1800000",
+    "cash": "250000",
+    "debt": "1550000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 080 04200"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "240 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "22 Dec 2000",
+    "note": "",
+    "description": "Com/Retail Bldg  - ground floor is occupied by a Harvey's",
+    "seller_lines": [
+      "82935 Ontario Ltd",
+      "Brian, Robert & Grant Vistorino"
+    ],
+    "buyer_lines": [
+      "240 Bloor Realty Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

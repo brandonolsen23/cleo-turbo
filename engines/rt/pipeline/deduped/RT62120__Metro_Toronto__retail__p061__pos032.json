@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT62120",
+  "source_folder": "Metro_Toronto/retail/p061",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT62120",
+      "source_folder": "Metro_Toronto/retail/p061",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p061/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "422 ADELAIDE ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "22 May 2008",
+      "price_text": "$1,832,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "832443 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gordon Frimerman",
+        "4949 Bathurst St, Ste 206",
+        "Toronto, Ontario",
+        "M2R 1Y1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Two For Holding Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Algis Maciulis",
+        "12 Sudbury St, Ste 1403",
+        "Toronto, Ontario",
+        "M6J 3W7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-46",
+      "Lot 5, N/S Adelaide St",
+      "As in Inst No CA-23060",
+      "",
+      "PIN: 21239-0305",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 062 450 01900",
+    "consideration_lines": [
+      "cash: $1,832,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,950,000   rate: Base plus 10.0% per annum",
+      "registered: 05/22/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT621/RT62120/0608_083729.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT621/RT62120/0608_083747.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT621/RT62120/0608_083753.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3033 / 4952",
+      "rt_id": "RT62120"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "422 ADELAIDE ST W",
+    "postcode": "M5V 1S7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/22/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "1832000",
+    "cash": "1832000",
+    "debt": "",
+    "note": "",
+    "pin": "21239-0305",
+    "rollno": "19 04 062 450 01900"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "422 ADELAIDE ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "22 May 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "832443 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Two For Holding Inc"
+    ],
+    "price_text": "$1,832,000"
+  }
+}

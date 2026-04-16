@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT46558",
+  "source_folder": "Metro_Toronto/multifamily/p085",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46558",
+      "source_folder": "Metro_Toronto/multifamily/p085",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p085/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 ROBERT ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Dec 2005",
+      "price_text": "$830,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-10",
+      "Part Lots 31 & 32, E/S Robert St",
+      "As in Inst No CA-155664",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 067 440 01000",
+    "consideration_lines": [
+      "cash: $830,000     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial Corp",
+      "principal: $415,000   rate: 4.05% per annum",
+      "registered: 12/02/2005   due: 12/02/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4204 / 6031",
+      "rt_id": "RT46558"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "155 ROBERT ST",
+    "postcode": "M5S 2K6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "830000",
+    "cash": "830000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 067 440 01000"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "155 ROBERT ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$830,000"
+  }
+}

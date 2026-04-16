@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT197659",
+  "source_folder": "York_Region/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197659",
+      "source_folder": "York_Region/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "7163 YONGE ST",
+        "UNIT 119"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "03 Mar 2026",
+      "price_text": "$1,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Proxy Real Property Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7163 Yonge St, Unit 119",
+        "Thornhill, Ontario",
+        "L3T 0C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hemati Law Firm Professional Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Zohreh Hemati",
+        "7163 Yonge St, Unit 119",
+        "Thornhill, Ontario",
+        "L3T 0C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1279",
+      "Level 1, Unit 35",
+      "",
+      "PIN: 29810-0035"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,200,000   rate: Prime plus 2.0% per annum.",
+      "registered: 03/03/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 984",
+      "rt_id": "RT197659"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "7163 YONGE ST, UNIT 119",
+    "postcode": "L3T 0C6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "03/03/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "29810-0035",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "7163 YONGE ST",
+      "UNIT 119"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "03 Mar 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Proxy Real Property Inc"
+    ],
+    "buyer_lines": [
+      "Hemati Law Firm Professional Corp"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT38872",
+  "source_folder": "Cochrane/all/p183",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38872",
+      "source_folder": "Cochrane/all/p183",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p183/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "REGIONAL RD 13",
+        "CONC 2 - RF, PT LOT 11"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "19 Nov 2004",
+      "price_text": "$1,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "910361 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carl Eppstadt",
+        "370 Churchill Ave, Ste 2",
+        "Ottawa, Ontario",
+        "K1Z 5C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "McNeil Farm Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carl Eppstadt",
+        "3187 Albion Rd S",
+        "Ottawa, Ontario",
+        "K1V 8Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - RF, Part Lot 11",
+      "Plan 5R-3960, Part 1",
+      "",
+      "32.73 acre"
+    ],
+    "arn_text": "06 12 000 700 12700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9101 / 10920",
+      "rt_id": "RT38872"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "REGIONAL RD 13, CONC 2 - RF, PT LOT 11",
+    "postcode": "",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "11/19/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "32.73",
+    "consid": "1200000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 12 000 700 12700"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "REGIONAL RD 13",
+      "CONC 2 - RF, PT LOT 11"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "19 Nov 2004",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "910361 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "McNeil Farm Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

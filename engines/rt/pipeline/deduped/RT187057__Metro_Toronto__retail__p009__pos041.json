@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT187057",
+  "source_folder": "Metro_Toronto/retail/p009",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187057",
+      "source_folder": "Metro_Toronto/retail/p009",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p009/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "431 - 433 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "04 Sep 2024",
+      "price_text": "$10,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2769613 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "40 King St W, Ste 3700",
+        "Toronto, Ontario",
+        "M5H 3Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000824718 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: No Yong Park",
+        "22 Truman Rd",
+        "Toronto, Ontario",
+        "M2L 2L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - FTB, Part Park Lot 8",
+      "As in Inst No EP-135957",
+      "",
+      "PIN: 21102-0243",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 066 760 00100",
+    "consideration_lines": [
+      "cash: $10,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $10,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 09/04/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187057/0922_080154.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187057/0922_080155.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187057/0922_080221.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187057/0922_080224.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187057/0922_080751.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1870/RT187057/0922_080834.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "442 / 4952",
+      "rt_id": "RT187057"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "431 - 433 YONGE ST",
+    "postcode": "M5B 1T3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/04/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "10000000",
+    "cash": "10000000",
+    "debt": "",
+    "note": "",
+    "pin": "21102-0243",
+    "rollno": "19 04 066 760 00100"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "431 - 433 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "04 Sep 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2769613 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000824718 Ontario Inc"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT26005",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26005",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "720 WESTMOUNT RD E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "28 Jun 2002",
+      "price_text": "$4,388,195",
+      "note": "Judgement"
+    },
+    "transferor": {
+      "party_lines": [
+        "Oswenda Investments Ltd",
+        "Corporations Tax Branch, Ministry of Finance",
+        "II Nash Associates Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Daros Management Ltd",
+        "40 Constellation Ct",
+        "Etobicoke, Ontario",
+        "M9W 1K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1368135 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Ribeiro",
+        "525 Abilene Dr, 2nd Flr",
+        "Mississauga, Ontario",
+        "L5T 2H7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1240, Block C",
+      "",
+      "5.00 acre"
+    ],
+    "arn_text": "30 12 040 030 05200",
+    "consideration_lines": [
+      "cash: $4,388,195     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT260/RT26005/photo.jpg"
+    },
+    "footer": {
+      "page_position": "655 / 752",
+      "rt_id": "RT26005"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "720 WESTMOUNT RD E",
+    "postcode": "N2E 2M6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "06/28/2002",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "5",
+    "consid": "4388195",
+    "cash": "4388195",
+    "debt": "",
+    "note": "Judgement",
+    "pin": "",
+    "rollno": "30 12 040 030 05200"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "720 WESTMOUNT RD E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "28 Jun 2002",
+    "note": "Judgement",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Oswenda Investments Ltd",
+      "Corporations Tax Branch, Ministry of Finance",
+      "II Nash Associates Ltd"
+    ],
+    "buyer_lines": [
+      "1368135 Ontario Ltd"
+    ],
+    "price_text": "$4,388,195"
+  }
+}

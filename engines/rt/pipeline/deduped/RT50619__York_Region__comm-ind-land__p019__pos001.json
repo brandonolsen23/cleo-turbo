@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT50619",
+  "source_folder": "York_Region/comm-ind-land/p019",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT50619",
+      "source_folder": "York_Region/comm-ind-land/p019",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/comm-ind-land/p019/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "RUGGLES AVE",
+        "LANGSTAFF RD E",
+        "CONC 1",
+        "PART LOT 35"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "25 Aug 2006",
+      "price_text": "$1,200,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "973215 Ontario Ltd",
+        "JD Miller Investments Ltd     905-881-2882"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Lardner",
+        "Deep Foundations Contractors",
+        "29 Ruggles Ave",
+        "Thornhill, Ontario",
+        "L3T 3S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "29-34 Ruggles Ave Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Sam Balsamo",
+        "1500 Highway 7",
+        "Concord, Ontario",
+        "L4K 5Y4"
+      ]
+    },
+    "description_lines": [
+      "N of Kirk Rd, S of Langstaff Rd",
+      "E of Yonge St, W of Bayview Ave"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2386",
+      "Part Lots 39 & 40",
+      "As in Inst No MA-94781",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "36 01 004 183 90000",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 787606 Ontario Inc",
+      "principal: $3,750,000   rate: 5.0% per annum",
+      "registered: 08/25/2006   due: 08/24/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT506/RT50619/air1.jpg",
+        "/assets/files/RT5/RT506/RT50619/air2.jpg",
+        "/assets/files/RT5/RT506/RT50619/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "902 / 2179",
+      "rt_id": "RT50619"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "RUGGLES AVE, LANGSTAFF RD E, CONC 1, PART LOT 35",
+    "postcode": "",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "08/25/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "36 01 004 183 90000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "RUGGLES AVE",
+      "LANGSTAFF RD E",
+      "CONC 1",
+      "PART LOT 35"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "25 Aug 2006",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "973215 Ontario Ltd",
+      "JD Miller Investments Ltd"
+    ],
+    "buyer_lines": [
+      "29-34 Ruggles Ave Developments Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

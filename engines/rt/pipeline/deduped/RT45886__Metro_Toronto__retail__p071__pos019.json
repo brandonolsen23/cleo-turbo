@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT45886",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45886",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "1225 KENNEDY RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "14 Dec 2005",
+      "price_text": "$5,245,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Canada Life Assurance Co     905-475-1995"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Mick Snell",
+        "GWL Realty Advisors Inc",
+        "675 Cochrane St",
+        "Ste 620, West Tower",
+        "Markham, Ontario",
+        "L3R 0B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1225 Kennedy Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mohammed Shakir",
+        "1225 Kennedy Rd",
+        "Toronto, Ontario",
+        "M1P 4Y1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-10527, Part 7",
+      "",
+      "3.95 acre"
+    ],
+    "arn_text": "19 01 043 610 00200",
+    "consideration_lines": [
+      "cash: $5,245,000     assumed/vtb debt: $0",
+      "",
+      "chargee: ICICI Bank Canada",
+      "principal: $3,670,000   rate: 5.98% per annum",
+      "registered: 12/14/2005   due: 01/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT458/RT45886/air1.jpg",
+        "/assets/files/RT4/RT458/RT45886/air2.jpg",
+        "/assets/files/RT4/RT458/RT45886/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT458/RT45886/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3520 / 4952",
+      "rt_id": "RT45886"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "1225 KENNEDY RD",
+    "postcode": "M1P 4Y1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/14/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.95",
+    "consid": "5245000",
+    "cash": "5245000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 043 610 00200"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "1225 KENNEDY RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "14 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "The Canada Life Assurance Co"
+    ],
+    "buyer_lines": [
+      "1225 Kennedy Holdings Inc"
+    ],
+    "price_text": "$5,245,000"
+  }
+}

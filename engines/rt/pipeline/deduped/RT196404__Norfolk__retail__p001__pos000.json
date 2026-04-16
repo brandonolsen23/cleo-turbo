@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT196404",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196404",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "157 FRONT RD"
+      ],
+      "city_region": "Port Rowan : Norfolk",
+      "date_text": "02 Jan 2026",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kozicki Produce Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1151 Concession 5 Townsend, RR 1",
+        "Waterford, Ontario",
+        "N0E 1Y0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maruti Port Rowan Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dhaval Patel",
+        "157 Front Rd",
+        "Port Rowan, Ontario",
+        "N0E 1W0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 37R-8189, Part 1",
+      "",
+      "PIN: 50117-0146",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "33 10 544 001 00350",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $500,000   rate: 12.0% per annum.",
+      "registered: 01/02/2026   due: 12/30/2026",
+      "",
+      "Named Individual(s)",
+      "principal: $225,000   rate: 6.0% per annum.",
+      "registered: 01/02/2026   due: 03/30/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 45",
+      "rt_id": "RT196404"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "157 FRONT RD",
+    "postcode": "N0E 1M0",
+    "municipality": "Port Rowan",
+    "region": "Norfolk",
+    "date": "01/02/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "50117-0146",
+    "rollno": "33 10 544 001 00350"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "157 FRONT RD"
+    ],
+    "city_region": "Port Rowan : Norfolk",
+    "date_text": "02 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Kozicki Produce Ltd"
+    ],
+    "buyer_lines": [
+      "Maruti Port Rowan Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

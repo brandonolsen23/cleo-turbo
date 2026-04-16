@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT13925",
+  "source_folder": "Metro_Toronto/retail/p097",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13925",
+      "source_folder": "Metro_Toronto/retail/p097",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p097/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "2243 - 2245 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Mar 1999",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "London Trust In Trust For SDRSP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Webster",
+        "4950 Yonge St, Ste 200",
+        "Toronto, Ontario",
+        "M2N 6K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1344221 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cathy Terjakis",
+        "c/o 96 Fred Varley Dr",
+        "Unionville, Ontario",
+        "L3R 1S8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 6,500 sf @ $154",
+      "Ground floor occupied by a restaurant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 653, Part Lot 17, Block B",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 103 630 00500",
+    "consideration_lines": [
+      "cash: $250,000     assumed/vtb debt: $750,000",
+      "",
+      "chargee: Wenzel's Holdings Inc",
+      "principal: $780,000   rate: 6.0% per annum.",
+      "registered: 12/03/2018   due: 11/30/2022",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/03/2018   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $815,200   rate: 3.950% per annum.",
+      "registered: 11/28/2018   due: 12/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4827 / 4952",
+      "rt_id": "RT13925"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "2243 - 2245 YONGE ST",
+    "postcode": "M4S 2B1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/10/1999",
+    "desc": "Retail Bldg - 2 storey; 6,500 sf @ $154 Ground floor occupied by a restaurant",
+    "bldg": "6,500 sf",
+    "acreage": ".11",
+    "consid": "1000000",
+    "cash": "250000",
+    "debt": "750000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 103 630 00500"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "2243 - 2245 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Mar 1999",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 6,500 sf @ $154Ground floor occupied by a restaurant",
+    "seller_lines": [
+      "London Trust In Trust For SDRSP"
+    ],
+    "buyer_lines": [
+      "1344221 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

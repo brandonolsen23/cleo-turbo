@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT185238",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185238",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "1401 SEYMOUR ST"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "04 Jun 2024",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "A & J Ferreira Homes Ltd",
+        "Deborah & Raymond Charette"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "343 Airport Rd",
+        "North Bay, Ontario",
+        "P1B 8W8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hardel Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christian Tremblay",
+        "269 Main St W, Ste 101",
+        "North Bay, Ontario",
+        "P1B 2T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc D - Widdifield, Part Lot 18",
+      "Plan 36R-9972, Parts 2, 3, 6-8",
+      "Except:",
+      "Plan 36R-12405, Parts 2, 6 & 7",
+      "",
+      "PIN: 49142-0338 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Populaire Alliance Ltee",
+      "principal: $2,250,000   rate: Prime plus 20.0% per annum.",
+      "registered: 06/04/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 46",
+      "rt_id": "RT185238"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "1401 SEYMOUR ST",
+    "postcode": "P1A 0C5",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "06/04/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "49142-0338+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "1401 SEYMOUR ST"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "04 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "A & J Ferreira Homes Ltd",
+      "Deborah & Raymond Charette"
+    ],
+    "buyer_lines": [
+      "Hardel Holdings Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

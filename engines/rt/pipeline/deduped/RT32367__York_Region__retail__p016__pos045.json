@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT32367",
+  "source_folder": "York_Region/retail/p016",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32367",
+      "source_folder": "York_Region/retail/p016",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "7241 BATHURST ST"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "31 Oct 2003",
+      "price_text": "$4,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Centre-Gate Corp     416-766-1135"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Isaac Singer",
+        "Barrister & Solicitor",
+        "2424 Bloor St W",
+        "Toronto, Ontario",
+        "M6S 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1576824 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Angela Volpe",
+        "7241 Bathurst St",
+        "Vaughan, Ontario",
+        "L4J 3W1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 13 units 16,826 sf @ $253",
+      "",
+      "Last transferred in Oct 99 for $3,925,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-5954, Part 1",
+      "",
+      "2.01 acre"
+    ],
+    "arn_text": "19 28 000 020 00100",
+    "consideration_lines": [
+      "cash: $4,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Forest Hill RE: Roman Gofman, 416-488-8140 x404"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT323/RT32367/photo.jpg"
+    },
+    "footer": {
+      "page_position": "796 / 984",
+      "rt_id": "RT32367"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "7241 BATHURST ST",
+    "postcode": "L4J 3W1",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "10/31/2003",
+    "desc": "Retail Plaza - 1 storey; 13 units 16,826 sf @ $253",
+    "bldg": "16,826 sf",
+    "acreage": "2.01",
+    "consid": "4250000",
+    "cash": "4250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 020 00100"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "7241 BATHURST ST"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "31 Oct 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 13 units 16,826 sf @ $253",
+    "seller_lines": [
+      "Centre-Gate Corp"
+    ],
+    "buyer_lines": [
+      "1576824 Ontario Inc"
+    ],
+    "price_text": "$4,250,000"
+  }
+}

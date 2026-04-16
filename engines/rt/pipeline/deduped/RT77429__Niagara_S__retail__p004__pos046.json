@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT77429",
+  "source_folder": "Niagara_S/retail/p004",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77429",
+      "source_folder": "Niagara_S/retail/p004",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p004/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "6680 DRUMMOND RD"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "14 Mar 2011",
+      "price_text": "$550,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "Mackinnon Pharmacy Ltd     905-356-0481"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gale MacKinnon",
+        "6434 Saint John St",
+        "Niagara Falls, Ontario",
+        "L2J 1C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Boggio Investments Ltd     905-834-3514"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Larry Boggio",
+        "200 Catharine St",
+        "Port Colborne, Ontario",
+        "L3K 4K8"
+      ]
+    },
+    "description_lines": [
+      "Pharmacy - 1 storey; 3,500 sf @ $157"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 159",
+      "Plan 59R-14401, Part 1",
+      "",
+      "PIN: 64375-0482",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "27 25 080 002 07600",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77429/0401_103248.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT774/RT77429/0401_103349.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "197 / 324",
+      "rt_id": "RT77429"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "6680 DRUMMOND RD",
+    "postcode": "L2G 4P1",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "03/14/2011",
+    "desc": "Pharmacy - 1 storey; 3,500 sf @ $157",
+    "bldg": "3,500 sf",
+    "acreage": ".4",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "64375-0482",
+    "rollno": "27 25 080 002 07600"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "6680 DRUMMOND RD"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "14 Mar 2011",
+    "note": "Purchased Business",
+    "description": "Pharmacy - 1 storey; 3,500 sf @ $157",
+    "seller_lines": [
+      "Mackinnon Pharmacy Ltd"
+    ],
+    "buyer_lines": [
+      "Boggio Investments Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

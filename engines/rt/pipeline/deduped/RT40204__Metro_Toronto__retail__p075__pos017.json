@@ -1,0 +1,100 @@
+{
+  "rt_id": "RT40204",
+  "source_folder": "Metro_Toronto/retail/p075",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40204",
+      "source_folder": "Metro_Toronto/retail/p075",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p075/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "3453 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "10 Jan 2005",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1578, Part Lot 1",
+      "As in Inst No EO-86932",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 105 330 00800",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40204/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3718 / 4952",
+      "rt_id": "RT40204"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "3453 YONGE ST",
+    "postcode": "M4N 2N3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/10/2005",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 105 330 00800"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "3453 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "10 Jan 2005",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$630,000"
+  }
+}

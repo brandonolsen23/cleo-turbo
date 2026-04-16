@@ -1,0 +1,136 @@
+{
+  "rt_id": "RT19016",
+  "source_folder": "Metro_Toronto/retail/p093",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19016",
+      "source_folder": "Metro_Toronto/retail/p093",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p093/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "710 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Oct 2000",
+      "price_text": "$675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1143881 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ian Nefsky",
+        "714-A Yonge St, 2nd Flr",
+        "Toronto, Ontario",
+        "M4Y 2B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1393909 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christina Chan",
+        "25 Tierra Ave",
+        "Maple, Ontario",
+        "L6A 2Z6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey ; 2,400 sf @ $281"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-14920, Part 10",
+      "As in Deed CA-397608",
+      "",
+      "W side 15m N of St Marys St",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 068 450 01230",
+    "consideration_lines": [
+      "cash: $675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $6,000,000   rate: 24.0% per annum.",
+      "registered: 02/04/2025   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $3,500,000   rate: 4.0% per annum. Chargor my extend for an additional 1 year at RBC prime plus 1.0% per annum.",
+      "registered: 02/05/2025   due: 02/05/2027",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $85,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/03/2025   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,300,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/05/2025   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $4,400,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/02/2023   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $4,500,000   rate: 18.0% per annum.",
+      "registered: 02/03/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT190/RT19016/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4611 / 4952",
+      "rt_id": "RT19016"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "710 YONGE ST",
+    "postcode": "M4Y 2B3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/11/2000",
+    "desc": "Retail Bldg - 2 storey ; 2,400 sf @ $281",
+    "bldg": "2,400 sf",
+    "acreage": ".04",
+    "consid": "675000",
+    "cash": "675000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 068 450 01230"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "710 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Oct 2000",
+    "note": "",
+    "description": "Retail Bldg - 2 storey ; 2,400 sf @ $281",
+    "seller_lines": [
+      "1143881 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1393909 Ontario Inc"
+    ],
+    "price_text": "$675,000"
+  }
+}

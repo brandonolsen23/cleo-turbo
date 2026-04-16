@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT193916",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193916",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "4874 CONCESSION RD 7"
+      ],
+      "city_region": "Adjala : Simcoe County",
+      "date_text": "20 Aug 2025",
+      "price_text": "$5,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tenga Capital Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Dale & Lessmann LLP",
+        "181 University Ave, Ste 2100",
+        "Toronto, Ontario",
+        "M5H 3M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001263860 Ontario Inc     905-951-3337"
+      ],
+      "trade_name": "Sierra Excavating Enterprises",
+      "contact_lines": [
+        "Attn: Domenic Scrivo",
+        "9 Holland Dr",
+        "Bolton, Ontario",
+        "L7E 1G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Adjala, Part Lot 32",
+      "Plan 51R-34578, Parts 1 & 2",
+      "",
+      "PIN: 58185-0483",
+      "",
+      "4.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $3,770,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/20/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "27 / 712",
+      "rt_id": "RT193916"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "4874 CONCESSION RD 7",
+    "postcode": "L9R 1V1",
+    "municipality": "Adjala",
+    "region": "Simcoe County",
+    "date": "08/20/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.23",
+    "consid": "5800000",
+    "cash": "5800000",
+    "debt": "",
+    "note": "",
+    "pin": "58185-0483",
+    "rollno": ""
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "4874 CONCESSION RD 7"
+    ],
+    "city_region": "Adjala : Simcoe County",
+    "date_text": "20 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Tenga Capital Corp"
+    ],
+    "buyer_lines": [
+      "1001263860 Ontario Inc"
+    ],
+    "price_text": "$5,800,000"
+  }
+}

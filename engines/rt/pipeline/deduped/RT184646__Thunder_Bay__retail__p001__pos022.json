@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT184646",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184646",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "321 VICKERS ST N"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "01 May 2024",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1621675 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "170 Front St",
+        "Thunder Bay, Ontario",
+        "P7A 4K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JSWAG Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sean Davies",
+        "2367 King Georges Park Dr",
+        "Rosslyn, Ontario",
+        "P7K 0S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan WM-15 Neebing, Lots 16-19",
+      "Plan WM-13 Neebing, Part Lot 1",
+      "As in Inst No F-100150",
+      "",
+      "PIN: 62083-0113",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "58 04 040 152 07900",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Copperfin Credit Union Ltd",
+      "principal: $1,250,000   rate: Prime plus 6.0% per annum.",
+      "registered: 05/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 65",
+      "rt_id": "RT184646"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "321 VICKERS ST N",
+    "postcode": "P7C 4B1",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "05/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "62083-0113",
+    "rollno": "58 04 040 152 07900"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "321 VICKERS ST N"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "01 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1621675 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "JSWAG Investments Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT31051",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31051",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "256 RIDEAU ST",
+        "211 BESSERER ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "02 Jul 2003",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Toth Equity Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Toth Jr",
+        "381 Kent St, Ste 4000",
+        "Ottawa, Ontario",
+        "K2P 2A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "9093-5958 Quebec Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Spiro Nikidis",
+        "395 Mayor St, Ste 450",
+        "Montreal, Quebec",
+        "H3A 2K4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6, Lot 7, S/S Rideau St",
+      "Plan 4R-919, Parts 1-3",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "06 14 021 001 04200",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT310/RT31051/photo.jpg"
+    },
+    "footer": {
+      "page_position": "952 / 1141",
+      "rt_id": "RT31051"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "256 RIDEAU ST, 211 BESSERER ST",
+    "postcode": "K1N 5Y3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/02/2003",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 021 001 04200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "256 RIDEAU ST",
+      "211 BESSERER ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "02 Jul 2003",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Toth Equity Ltd"
+    ],
+    "buyer_lines": [
+      "9093-5958 Quebec Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

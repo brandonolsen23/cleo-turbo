@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT45401",
+  "source_folder": "Metro_Toronto/multifamily/p086",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45401",
+      "source_folder": "Metro_Toronto/multifamily/p086",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p086/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "3150 LAKE SHORE BLVD W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "26 Oct 2005",
+      "price_text": "$605,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1712, Lot 175",
+      "Except Inst No NT-4942",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 19 052 440 05400",
+    "consideration_lines": [
+      "cash: $605,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $453,750   rate: 4.5% per annum",
+      "registered: 10/26/2005   due: 11/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4255 / 6031",
+      "rt_id": "RT45401"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "3150 LAKE SHORE BLVD W",
+    "postcode": "M8V 1L5",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "10/26/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "605000",
+    "cash": "605000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 052 440 05400"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "3150 LAKE SHORE BLVD W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "26 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$605,000"
+  }
+}

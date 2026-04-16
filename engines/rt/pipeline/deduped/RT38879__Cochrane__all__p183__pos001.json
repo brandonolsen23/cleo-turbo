@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT38879",
+  "source_folder": "Cochrane/all/p183",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38879",
+      "source_folder": "Cochrane/all/p183",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p183/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 WESTBROOK RD"
+      ],
+      "city_region": "W. Carleton : Ottawa-Carleton",
+      "date_text": "19 Nov 2004",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1270408 Ontario Ltd     613-748-7922"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rosaire Burelle",
+        "Regional Crane Rentals Ltd",
+        "1409 Cryville Rd",
+        "Ottawa, Ontario",
+        "K1B 3L7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "160275 Canada Inc",
+        "COB as Crown Transportation     613-822-6000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Neilson",
+        "5555 Power Rd",
+        "Ottawa, Ontario",
+        "K1G 3N4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 2",
+      "Plan 5R-4461, Part 1",
+      "Except:",
+      "Plan 5R-13883, Parts 1-4",
+      "",
+      "4.88 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT388/RT38879/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9102 / 10920",
+      "rt_id": "RT38879"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "150 WESTBROOK RD",
+    "postcode": "K0A 1L0",
+    "municipality": "W. Carleton",
+    "region": "Ottawa-Carleton",
+    "date": "11/19/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.88",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "150 WESTBROOK RD"
+    ],
+    "city_region": "W. Carleton : Ottawa-Carleton",
+    "date_text": "19 Nov 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1270408 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "160275 Canada Inc",
+      "COB as Crown Transportation"
+    ],
+    "price_text": "$630,000"
+  }
+}

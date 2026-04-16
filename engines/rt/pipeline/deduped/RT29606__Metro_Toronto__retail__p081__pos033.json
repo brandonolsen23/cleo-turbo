@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT29606",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29606",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "1801 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "03 Apr 2003",
+      "price_text": "$2,226,800",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1217467 Ontario Inc     905-737-3014"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Jada",
+        "626 Elgin Mills Rd W",
+        "Richmond Hill, Ontario",
+        "L4C 4M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Highyon Investment Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bing Pu",
+        "54 Huntsmill Blvd",
+        "Toronto, Ontario",
+        "M1W 2V9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc D, Part Lot 35",
+      "As in Inst No TB-785836",
+      "",
+      "1.20 acre"
+    ],
+    "arn_text": "19 01 031 310 01100",
+    "consideration_lines": [
+      "cash: $2,226,800     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT296/RT29606/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4034 / 4952",
+      "rt_id": "RT29606"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "1801 LAWRENCE AVE E",
+    "postcode": "M1R 2X9",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/03/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.2",
+    "consid": "2226800",
+    "cash": "2226800",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 031 310 01100"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "1801 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "03 Apr 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1217467 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Highyon Investment Co Ltd"
+    ],
+    "price_text": "$2,226,800"
+  }
+}

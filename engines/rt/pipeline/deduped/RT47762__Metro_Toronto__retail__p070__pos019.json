@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT47762",
+  "source_folder": "Metro_Toronto/retail/p070",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47762",
+      "source_folder": "Metro_Toronto/retail/p070",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p070/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "1048 BROADVIEW AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "24 Mar 2006",
+      "price_text": "$6,393,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Nin Jiom Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Charles Moon",
+        "162 Cumberland St, Ste 200",
+        "Toronto, Ontario",
+        "M5R 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Minto Pottery Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alan Greenberg",
+        "2239 Yonge St",
+        "Toronto, Ontario",
+        "M4S 2B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - FTB, Part Lot 13",
+      "Plan 1221, Part Lot A",
+      "Plan 64R-11071, Parts 1 & 2",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "19 06 032 351 00200",
+    "consideration_lines": [
+      "cash: $6,393,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT477/RT47762/air1.jpg",
+        "/assets/files/RT4/RT477/RT47762/air2.jpg",
+        "/assets/files/RT4/RT477/RT47762/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3470 / 4952",
+      "rt_id": "RT47762"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "1048 BROADVIEW AVE",
+    "postcode": "M4K 2S2",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "03/24/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "6393500",
+    "cash": "6393500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 032 351 00200"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "1048 BROADVIEW AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "24 Mar 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Nin Jiom Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Minto Pottery Inc"
+    ],
+    "price_text": "$6,393,500"
+  }
+}

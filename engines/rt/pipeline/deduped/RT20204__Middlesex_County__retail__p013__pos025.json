@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20204",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20204",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "1920 DUNDAS ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "29 Dec 2000",
+      "price_text": "$4,470,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Truscan Property Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: John Harris",
+        "222 Bay St, 20th Flr",
+        "Toronto, Ontario",
+        "M5K 1A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Eastwood Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: William Reid",
+        "c/o Mr John Ulster",
+        "260 Spadina Rd, Ste 300",
+        "Toronto, Ontario",
+        "M5R 2V1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-4859, Part 7",
+      "",
+      "3.81 acre"
+    ],
+    "arn_text": "39 36 030 320 23800",
+    "consideration_lines": [
+      "cash: $4,470,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20204/photo.jpg"
+    },
+    "footer": {
+      "page_position": "626 / 686",
+      "rt_id": "RT20204"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "1920 DUNDAS ST",
+    "postcode": "N5V 3P1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "12/29/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "3.81",
+    "consid": "4470000",
+    "cash": "4470000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 030 320 23800"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "1920 DUNDAS ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "29 Dec 2000",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Truscan Property Corp"
+    ],
+    "buyer_lines": [
+      "Eastwood Centre Inc"
+    ],
+    "price_text": "$4,470,000"
+  }
+}

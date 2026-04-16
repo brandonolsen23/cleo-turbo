@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT46219",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46219",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "61 QUEEN ST"
+      ],
+      "city_region": "Innisfil : Simcoe County",
+      "date_text": "03 Jan 2006",
+      "price_text": "$1,589,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "HF Smith Lumber Ltd     705-458-4288"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Wallace Smith",
+        "3 King St N",
+        "Cookstown, Ontario",
+        "L0L 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "C & N Property Management Ltd     705-458-4462"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Clifford Sheehan",
+        "HF Smith Lumber Ltd",
+        "61 Queen St",
+        "Cookstown, Ontario",
+        "L0L 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 15, Part Lot 23",
+      "Plan 51R-13934, Part 1",
+      "",
+      "22.84 acre"
+    ],
+    "arn_text": "43 16 020 061 16201",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,589,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT462/RT46219/photo.jpg"
+    },
+    "footer": {
+      "page_position": "554 / 712",
+      "rt_id": "RT46219"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "61 QUEEN ST",
+    "postcode": "L0L 1L0",
+    "municipality": "Innisfil",
+    "region": "Simcoe County",
+    "date": "01/03/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "22.84",
+    "consid": "1589000",
+    "cash": "",
+    "debt": "1589000",
+    "note": "Zero Cash",
+    "pin": "",
+    "rollno": "43 16 020 061 16201"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "61 QUEEN ST"
+    ],
+    "city_region": "Innisfil : Simcoe County",
+    "date_text": "03 Jan 2006",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "HF Smith Lumber Ltd"
+    ],
+    "buyer_lines": [
+      "C & N Property Management Ltd"
+    ],
+    "price_text": "$1,589,000"
+  }
+}

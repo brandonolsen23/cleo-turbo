@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT192530",
+  "source_folder": "Metro_Toronto/retail/p005",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192530",
+      "source_folder": "Metro_Toronto/retail/p005",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p005/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "312 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Jun 2025",
+      "price_text": "$14,380,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "3X2 Queenwest Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "181 Carlaw Ave, Ste 202",
+        "Toronto, Ontario",
+        "M4M 2S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "312 Investment Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Van Li",
+        "515 Consumers Rd, Ste 212",
+        "North York, Ontario",
+        "M2J 4Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-10, Lot 3, N/S Queen St",
+      "Plan 66R-29413, Parts 3 & 4",
+      "As in Inst No CA-628716",
+      "",
+      "PIN: 21205-0078 +",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $14,380,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $6,190,000   rate: 18.0% per annum.",
+      "registered: 06/05/2025   due: 06/04/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1925/RT192530/0615_075442.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1925/RT192530/0615_075443.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1925/RT192530/0615_075444.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1925/RT192530/0615_075500.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1925/RT192530/0615_075502.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "207 / 4952",
+      "rt_id": "RT192530"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "312 QUEEN ST W",
+    "postcode": "M5V 2A2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/05/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "14380000",
+    "cash": "14380000",
+    "debt": "",
+    "note": "",
+    "pin": "21205-0078+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "312 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "3X2 Queenwest Inc"
+    ],
+    "buyer_lines": [
+      "312 Investment Inc"
+    ],
+    "price_text": "$14,380,000"
+  }
+}

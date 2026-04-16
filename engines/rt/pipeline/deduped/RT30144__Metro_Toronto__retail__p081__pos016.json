@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT30144",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30144",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "500 - 510 TRETHEWEY DR"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "13 May 2003",
+      "price_text": "$2,515,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Koh Enterprises Inc     905-888-1856"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hoe-Kheng Koh",
+        "26 Warden Lane, RR 4",
+        "Stouffville, Ontario",
+        "L4A 7X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1570935 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Manikkam Devendra",
+        "650 Elgin Mills Rd E",
+        "Richmond Hill, Ontario",
+        "L4C 0H8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-15901, Parts 2 & 3",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 08 022 060 00050",
+    "consideration_lines": [
+      "cash: $2,515,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT301/RT30144/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4017 / 4952",
+      "rt_id": "RT30144"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "500 - 510 TRETHEWEY DR",
+    "postcode": "M6M 4C2",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "05/13/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "2515000",
+    "cash": "2515000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 022 060 00050"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "500 - 510 TRETHEWEY DR"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "13 May 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Koh Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "1570935 Ontario Ltd"
+    ],
+    "price_text": "$2,515,000"
+  }
+}

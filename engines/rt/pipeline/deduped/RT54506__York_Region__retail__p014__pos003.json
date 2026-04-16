@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT54506",
+  "source_folder": "York_Region/retail/p014",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT54506",
+      "source_folder": "York_Region/retail/p014",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p014/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "670 HWY 7 E",
+        "UNIT 8"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "19 Mar 2007",
+      "price_text": "$768,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2077464 Ontario Inc     905-946-0062"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lin Ma",
+        "34 Canning Ct",
+        "Markham, Ontario",
+        "L3S 2W7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Danway Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jacinto D'Souza",
+        "670 Highway 7 E, Unit 8",
+        "Righmond Hill, Ontario",
+        "L4B 3P2"
+      ]
+    },
+    "description_lines": [
+      "Retail/Restaurant Condo - 1 storey; 2,900 sf @ $265",
+      "",
+      "Within Sheraton Parkway Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 852",
+      "Level 1, Unit 8"
+    ],
+    "arn_text": "19 38 050 040 38208",
+    "consideration_lines": [
+      "cash: $768,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $770,000   rate: Base plus 10.0% per annum",
+      "registered: 03/19/2007   due: on demand"
+    ],
+    "broker_lines": [
+      "RE/MAX Goldenway Realty: Charles Park & Mimi Khuu,905-707-8199",
+      "RE/MAX Realty One: Jacinto D'Souza, 905-277-0771"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT545/RT54506/0331_142221.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT545/RT54506/0331_142223.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT545/RT54506/0331_142255.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "654 / 984",
+      "rt_id": "RT54506"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "670 HWY 7 E, UNIT 8",
+    "postcode": "L4B 3P2",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "03/19/2007",
+    "desc": "Retail/Restaurant Condo - 1 storey; 2,900 sf @ $265",
+    "bldg": "2,900 sf",
+    "acreage": "",
+    "consid": "768000",
+    "cash": "768000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 050 040 38208"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "670 HWY 7 E",
+      "UNIT 8"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "19 Mar 2007",
+    "note": "",
+    "description": "Retail/Restaurant Condo - 1 storey; 2,900 sf @ $265",
+    "seller_lines": [
+      "2077464 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Danway Properties Inc"
+    ],
+    "price_text": "$768,000"
+  }
+}

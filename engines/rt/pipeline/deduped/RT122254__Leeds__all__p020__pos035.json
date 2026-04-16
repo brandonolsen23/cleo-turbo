@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT122254",
+  "source_folder": "Leeds/all/p020",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT122254",
+      "source_folder": "Leeds/all/p020",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 15",
+        "PART LOT 7"
+      ],
+      "city_region": "Bosanquet : Lambton",
+      "date_text": "30 Dec 2016",
+      "price_text": "$720,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Ashland Acres Ltd",
+        "Marvin Jennings"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marvin Jennings",
+        "8037 Fuller Rd",
+        "Lambton Shores, Ontario",
+        "N0N 1J7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 15, Part Lot 7",
+      "",
+      "PIN: 43032-0054",
+      "",
+      "51.68 acre"
+    ],
+    "arn_text": "38 45 000 010 05500",
+    "consideration_lines": [
+      "cash: $720,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "986 / 1916",
+      "rt_id": "RT122254"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "CONC 15, PART LOT 7",
+    "postcode": "",
+    "municipality": "Bosanquet",
+    "region": "Lambton",
+    "date": "12/30/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "51.68",
+    "consid": "720000",
+    "cash": "720000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43032-0054",
+    "rollno": "38 45 000 010 05500"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "CONC 15",
+      "PART LOT 7"
+    ],
+    "city_region": "Bosanquet : Lambton",
+    "date_text": "30 Dec 2016",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Ashland Acres Ltd",
+      "Marvin Jennings"
+    ],
+    "price_text": "$720,000"
+  }
+}

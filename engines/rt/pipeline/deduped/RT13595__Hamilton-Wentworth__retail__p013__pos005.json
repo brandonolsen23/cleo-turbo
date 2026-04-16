@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT13595",
+  "source_folder": "Hamilton-Wentworth/retail/p013",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13595",
+      "source_folder": "Hamilton-Wentworth/retail/p013",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p013/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 HAMILTON ST N"
+      ],
+      "city_region": "Flamborough : Hamilton-Wentworth",
+      "date_text": "04 Dec 1998",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "851630 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ziad Jabadou",
+        "1149 Springhill Dr",
+        "Mississauga, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vemitron Company Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vladimir Niderman",
+        "230 Stavebank Rd",
+        "Mississauga, Ontario"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-140, Lot 1 & Block B"
+    ],
+    "arn_text": "25 30 300 370 19210 +",
+    "consideration_lines": [
+      "cash: $397,000     assumed/vtb debt: $603,000",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $811,928   rate: Prime plus 1.80% per annum.",
+      "registered: 07/26/2018   due: 07/26/2023",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $930,000   rate: Prime plus 7.0% per annum.",
+      "registered: 07/23/2018   due: on demand",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $300,000   rate: 24.0% per annum.",
+      "registered: 07/13/2018   due: on demand",
+      "",
+      "chargee: 2595562 Ontario Ltd",
+      "Fanelli Real Estate (East Riverside) Ltd",
+      "principal: $1,200,000   rate: 3.0% per annum.",
+      "registered: 07/09/2018   due: 07/09/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "606 / 616",
+      "rt_id": "RT13595"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "80 HAMILTON ST N",
+    "postcode": "",
+    "municipality": "Flamborough",
+    "region": "Hamilton-Wentworth",
+    "date": "12/04/1998",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1000000",
+    "cash": "397000",
+    "debt": "603000",
+    "note": "",
+    "pin": "",
+    "rollno": "25 30 300 370 19210+"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "80 HAMILTON ST N"
+    ],
+    "city_region": "Flamborough : Hamilton-Wentworth",
+    "date_text": "04 Dec 1998",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "851630 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Vemitron Company Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

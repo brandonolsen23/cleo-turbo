@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT73958",
+  "source_folder": "Lambton/retail/p002",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73958",
+      "source_folder": "Lambton/retail/p002",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "37 ONTARIO ST N"
+      ],
+      "city_region": "Grand Bend : Lambton",
+      "date_text": "18 Aug 2010",
+      "price_text": "$900,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "743599 Ontario Inc     519-672-4100"
+      ],
+      "trade_name": "Spriet Associates",
+      "contact_lines": [
+        "Attn: Andrew Spriet",
+        "155 York St",
+        "London, Ontario",
+        "N6A 1A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1830421 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Dehondt",
+        "37 Ontario St N",
+        "Grand Bend, Ontario",
+        "N0M 1T0"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - Entire Ground Floor; 9,000 sf @ $100",
+      "",
+      "Bldg is two storey, with the second floor comprised of 10-2bdrm residential condos"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 60",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 43860-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $135,000     assumed/vtb debt: $765,000",
+      "",
+      "chargee: 743599 Ontario Inc",
+      "principal: $765,000   rate: 5.0% per annum",
+      "registered: 08/18/2010   due: 08/18/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT739/RT73958/1204_160121.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT739/RT73958/1204_160326.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT739/RT73958/1204_160437.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT739/RT73958/air1.jpg",
+        "/assets/files/RT7/RT739/RT73958/air2.jpg",
+        "/assets/files/RT7/RT739/RT73958/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "76 / 106",
+      "rt_id": "RT73958"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "37 ONTARIO ST N",
+    "postcode": "N0M 1T0",
+    "municipality": "Grand Bend",
+    "region": "Lambton",
+    "date": "08/18/2010",
+    "desc": "Retail Condo - Entire Ground Floor; 9,000 sf @ $100",
+    "bldg": "9,000 sf",
+    "acreage": "",
+    "consid": "900000",
+    "cash": "135000",
+    "debt": "765000",
+    "note": "Purchased by Tenant",
+    "pin": "43860-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "37 ONTARIO ST N"
+    ],
+    "city_region": "Grand Bend : Lambton",
+    "date_text": "18 Aug 2010",
+    "note": "Purchased by Tenant",
+    "description": "Retail Condo - Entire Ground Floor; 9,000 sf @ $100",
+    "seller_lines": [
+      "743599 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1830421 Ontario Ltd"
+    ],
+    "price_text": "$900,000"
+  }
+}

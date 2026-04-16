@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT31255",
+  "source_folder": "Metro_Toronto/retail/p080",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31255",
+      "source_folder": "Metro_Toronto/retail/p080",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p080/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "1100 BATHURST ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Jul 2003",
+      "price_text": "$580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "All Trans Financial Services Credit Union Ltd     416-231-8400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Alexander",
+        "3250 Bloor St W, Ste 707",
+        "Etobicoke, Ontario",
+        "M8X 2X9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1581860 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Labelle",
+        "1100 Bathurst St",
+        "Toronto, Ontario",
+        "M5R 3G9"
+      ]
+    },
+    "description_lines": [
+      "Former Bank Branch - 1 storey; 2,600 sf @ $223"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 696, Lot 8",
+      "",
+      "SW corner at Dupont St",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 051 480 03300",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "JJ Barnicke: Michael Swartz, 416-863-1215"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT312/RT31255/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3980 / 4952",
+      "rt_id": "RT31255"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "1100 BATHURST ST",
+    "postcode": "M5R 3G9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/31/2003",
+    "desc": "Former Bank Branch - 1 storey; 2,600 sf @ $223",
+    "bldg": "2,600 sf",
+    "acreage": ".08",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 051 480 03300"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "1100 BATHURST ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Jul 2003",
+    "note": "",
+    "description": "Former Bank Branch - 1 storey; 2,600 sf @ $223",
+    "seller_lines": [
+      "All Trans Financial Services Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "1581860 Ontario Inc"
+    ],
+    "price_text": "$580,000"
+  }
+}

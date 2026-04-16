@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT21805",
+  "source_folder": "Durham_Region/retail/p010",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21805",
+      "source_folder": "Durham_Region/retail/p010",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p010/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "219 KING ST E"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "15 Jun 2001",
+      "price_text": "$1,360,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hendry Investments Ltd     905-623-5044"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dorothy Hendry",
+        "252 King St E, Unit 601",
+        "Bowmanville, Ontario",
+        "L1C 1R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Gerr Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Gerrits",
+        "3386 Solina Rd N, RR 3",
+        "Bowmanville, Ontario",
+        "L1C 3K4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; about 11,000 sf @ $124"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10R-1310, Part 1",
+      "",
+      "1.13 acre"
+    ],
+    "arn_text": "18 17 020 110 11900",
+    "consideration_lines": [
+      "cash: $1,360,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Sutton Group Status: John Dale, 905-436-0990"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT218/RT21805/photo.jpg"
+    },
+    "footer": {
+      "page_position": "453 / 506",
+      "rt_id": "RT21805"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "219 KING ST E",
+    "postcode": "L1C 1P7",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "06/15/2001",
+    "desc": "Retail Plaza - 1 storey; about 11,000 sf @ $124",
+    "bldg": "11,000 sf",
+    "acreage": "1.13",
+    "consid": "1360000",
+    "cash": "1360000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 17 020 110 11900"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "219 KING ST E"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "15 Jun 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; about 11,000 sf @ $124",
+    "seller_lines": [
+      "Hendry Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Gerr Holdings Ltd"
+    ],
+    "price_text": "$1,360,000"
+  }
+}

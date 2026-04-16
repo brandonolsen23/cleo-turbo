@@ -67,6 +67,16 @@ export function formatPhone(phone: string | null | undefined): string {
   return phone;
 }
 
+export function formatMailingAddress(addr: { display?: string | null; city?: string | null; province?: string | null; postal?: string | null } | null | undefined): string | null {
+  if (!addr) return null;
+  const parts: string[] = [];
+  if (addr.display) parts.push(addr.display);
+  if (addr.city) parts.push(addr.city);
+  if (addr.province) parts.push(addr.province);
+  if (addr.postal) parts.push(addr.postal);
+  return parts.length > 0 ? parts.join(", ") : null;
+}
+
 // ============================================================
 // Text
 // ============================================================

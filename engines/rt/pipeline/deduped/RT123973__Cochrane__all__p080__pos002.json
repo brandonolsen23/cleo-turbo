@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT123973",
+  "source_folder": "Cochrane/all/p080",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123973",
+      "source_folder": "Cochrane/all/p080",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1410 & 1438 YOUVILLE DR"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "21 Mar 2017",
+      "price_text": "$5,684,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2167659 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arthur Keay",
+        "1438 Youville Dr",
+        "Ottawa, Ontario",
+        "K1C 2X8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-7558, Part 2",
+      "Plan 4R-6509, Part 1",
+      "",
+      "PIN: 04392-1298 +",
+      "",
+      "5.48 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,184,005",
+      "other: $4,499,995",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,800,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 09/25/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3953 / 10920",
+      "rt_id": "RT123973"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1410 & 1438 YOUVILLE DR",
+    "postcode": "K1C 2X8",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "03/21/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.48",
+    "consid": "5684000",
+    "cash": "",
+    "debt": "1184005",
+    "note": "Related Parties",
+    "pin": "04392-1298+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1410 & 1438 YOUVILLE DR"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "21 Mar 2017",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2167659 Ontario Inc"
+    ],
+    "price_text": "$5,684,000"
+  }
+}

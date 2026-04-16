@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT27327",
+  "source_folder": "Metro_Toronto/retail/p083",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27327",
+      "source_folder": "Metro_Toronto/retail/p083",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p083/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "3517 KENNEDY RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 Oct 2002",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "T-Four Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ohanes Tokmak",
+        "44 Orangewood Cres",
+        "Toronto, Ontario",
+        "M1W 1C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Chennai Soeul Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sook Lee Kim",
+        "3517 Kennedy Rd, Unit 1",
+        "Scarborough, Ontario",
+        "M1V 4Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2628, Part Lots 5 & 13",
+      "As in Inst No SC-614652"
+    ],
+    "arn_text": "19 04 113 350 01700",
+    "consideration_lines": [
+      "cash: $280,000     assumed/vtb debt: $520,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT273/RT27327/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4130 / 4952",
+      "rt_id": "RT27327"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "3517 KENNEDY RD",
+    "postcode": "M1V 4Y3",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "10/01/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "800000",
+    "cash": "280000",
+    "debt": "520000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 113 350 01700"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "3517 KENNEDY RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 Oct 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "T-Four Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Chennai Soeul Investments Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

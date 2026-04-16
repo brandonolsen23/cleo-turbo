@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT25447",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25447",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "110 RITCHIE AVE"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "19 Mar 2002",
+      "price_text": "$940,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Revenue Properties Co Ltd     416-963-8100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Richard Fletcher",
+        "The Colonnade",
+        "131 Bloor St W, Ste 300",
+        "Toronto, Ontario",
+        "M5S 1R1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "591617 Ontario Ltd     905-436-9460"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tony Tzalis",
+        "13 Bruntsfield St",
+        "Bowmanville, Ontario",
+        "L1E 1B4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 7 units 9,949 sf @ $94"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40M-1386, Block 32",
+      "",
+      "0.92 acre"
+    ],
+    "arn_text": "18 05 020 015 51060",
+    "consideration_lines": [
+      "cash: $940,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT254/RT25447/photo.jpg"
+    },
+    "footer": {
+      "page_position": "436 / 506",
+      "rt_id": "RT25447"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "110 RITCHIE AVE",
+    "postcode": "L1S 7G5",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "03/19/2002",
+    "desc": "Retail Plaza - 1 storey; 7 units 9,949 sf @ $94",
+    "bldg": "9,949 sf",
+    "acreage": ".92",
+    "consid": "940000",
+    "cash": "940000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 05 020 015 51060"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "110 RITCHIE AVE"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "19 Mar 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 7 units 9,949 sf @ $94",
+    "seller_lines": [
+      "Revenue Properties Co Ltd"
+    ],
+    "buyer_lines": [
+      "591617 Ontario Ltd"
+    ],
+    "price_text": "$940,000"
+  }
+}

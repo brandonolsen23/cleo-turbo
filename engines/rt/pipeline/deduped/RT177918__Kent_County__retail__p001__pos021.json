@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT177918",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177918",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "990 RICHMOND ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "26 May 2023",
+      "price_text": "$1,645,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "PTY Chatham Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Barrett Law Professional Corp",
+        "1498 Lewisham Dr",
+        "Mississauga, Ontario",
+        "L5J 3R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Arora Holdings Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gurmeet Aurora",
+        "2 Astrantia Way",
+        "Brampton, Ontario",
+        "L6X 1P3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Western Boundary Raleigh",
+      "Part Lot 19",
+      "Plan 24R-4470, Part 1",
+      "",
+      "PIN: 00529-0027",
+      "",
+      "1.84 acre"
+    ],
+    "arn_text": "36 42 020 022 22300",
+    "consideration_lines": [
+      "cash: $1,645,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,233,750   rate: Prime plus 6.0% per annum.",
+      "registered: 05/26/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 77",
+      "rt_id": "RT177918"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "990 RICHMOND ST",
+    "postcode": "N7M 5J5",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "05/26/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.84",
+    "consid": "1645000",
+    "cash": "1645000",
+    "debt": "",
+    "note": "",
+    "pin": "00529-0027",
+    "rollno": "36 42 020 022 22300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "990 RICHMOND ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "26 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "PTY Chatham Inc"
+    ],
+    "buyer_lines": [
+      "Arora Holdings Corp"
+    ],
+    "price_text": "$1,645,000"
+  }
+}

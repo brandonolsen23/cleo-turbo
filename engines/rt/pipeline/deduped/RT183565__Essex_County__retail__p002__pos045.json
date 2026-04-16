@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT183565",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183565",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "32 - 34 MAIN ST W"
+      ],
+      "city_region": "Kingsville : Essex County",
+      "date_text": "29 Feb 2024",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "720649 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "32-34 Main St W",
+        "Kingsville, Ontario",
+        "N9Y 1H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kings Capital Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: P. Karthikeyan",
+        "910 Pavan St",
+        "Windsor, Ontario",
+        "N9G 2X5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-5857, Parts 6 & 7",
+      "",
+      "PIN: 75173-0449",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $800,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 02/29/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "96 / 460",
+      "rt_id": "RT183565"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "32 - 34 MAIN ST W",
+    "postcode": "N9Y 1H3",
+    "municipality": "Kingsville",
+    "region": "Essex County",
+    "date": "02/29/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "75173-0449",
+    "rollno": ""
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "32 - 34 MAIN ST W"
+    ],
+    "city_region": "Kingsville : Essex County",
+    "date_text": "29 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "720649 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Kings Capital Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

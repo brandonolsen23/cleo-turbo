@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT27766",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27766",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 YONGE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "25 Oct 2002",
+      "price_text": "$1,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Waterside West Capital Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Francis Metcalfe",
+        "300 Yonge St",
+        "Barrie, Ontario",
+        "L4N 4C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "TFB No 100 Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Francis Metcalfe",
+        "158 Dunlop St E",
+        "Barrie, Ontario",
+        "L4M 1B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 14, Part Lot 10",
+      "As in Inst No RO-870802",
+      "",
+      "1.05 acre"
+    ],
+    "arn_text": "43 42 050 002 18500",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "631 / 712",
+      "rt_id": "RT27766"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "300 YONGE ST",
+    "postcode": "L4N 4C7",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "10/25/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.05",
+    "consid": "1200000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "43 42 050 002 18500"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "300 YONGE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "25 Oct 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Waterside West Capital Corp"
+    ],
+    "buyer_lines": [
+      "TFB No 100 Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

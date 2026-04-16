@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT184067",
+  "source_folder": "Kitchener-Waterloo/retail/p002",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184067",
+      "source_folder": "Kitchener-Waterloo/retail/p002",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p002/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "241 - 245 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "05 Apr 2024",
+      "price_text": "$1,425,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lairdo Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "10 Sheridan Ct",
+        "Kitchener, Ontario",
+        "N2H 2Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "137 Frederick Inc     416-638-9666"
+      ],
+      "trade_name": "Europro",
+      "contact_lines": [
+        "Attn: Moshe Faust",
+        "812 Lawrence Ave W",
+        "Toronto, Ontario",
+        "M6A 0B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 367, Part Lot 1",
+      "As in Inst No 309413",
+      "",
+      "PIN: 22501-0063",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "30 12 040 001 02700",
+    "consideration_lines": [
+      "cash: $1,425,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184067/0413_100934.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184067/0413_100946.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184067/0413_100950.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184067/0413_101009.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1840/RT184067/0413_101017.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1840/RT184067/air1.jpg",
+        "/assets/files/RT18/RT1840/RT184067/air2.jpg",
+        "/assets/files/RT18/RT1840/RT184067/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "100 / 752",
+      "rt_id": "RT184067"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "241 - 245 KING ST E",
+    "postcode": "N2G 2K8",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/05/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "1425000",
+    "cash": "1425000",
+    "debt": "",
+    "note": "",
+    "pin": "22501-0063",
+    "rollno": "30 12 040 001 02700"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "241 - 245 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "05 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Lairdo Inc"
+    ],
+    "buyer_lines": [
+      "137 Frederick Inc"
+    ],
+    "price_text": "$1,425,000"
+  }
+}

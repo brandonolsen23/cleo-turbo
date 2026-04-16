@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT60366",
+  "source_folder": "Perth_County/comm-ind-land/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60366",
+      "source_folder": "Perth_County/comm-ind-land/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/comm-ind-land/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "6551 LINE 93 RR 1"
+      ],
+      "city_region": "N. Perth : Perth County",
+      "date_text": "01 Feb 2008",
+      "price_text": "$1,192,328",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Fotheringham Bros Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chad Fotheringham",
+        "RR 1",
+        "Palmerston, Ontario",
+        "N0G 2P0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 13, Part Lots 5 & 6",
+      "As in Inst No R-369517",
+      "",
+      "158.28 acre"
+    ],
+    "arn_text": "31 40 410 005 04600",
+    "consideration_lines": [
+      "cash: $1,192,328     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,500,000   rate: 18.0% per annum",
+      "registered: 02/01/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT603/RT60366/air1.jpg",
+        "/assets/files/RT6/RT603/RT60366/air2.jpg",
+        "/assets/files/RT6/RT603/RT60366/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 248",
+      "rt_id": "RT60366"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "6551 LINE 93 RR 1",
+    "postcode": "N0G 2P0",
+    "municipality": "N. Perth",
+    "region": "Perth County",
+    "date": "02/01/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "158.28",
+    "consid": "1192328",
+    "cash": "1192328",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "31 40 410 005 04600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "6551 LINE 93 RR 1"
+    ],
+    "city_region": "N. Perth : Perth County",
+    "date_text": "01 Feb 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Fotheringham Bros Ltd"
+    ],
+    "price_text": "$1,192,328"
+  }
+}

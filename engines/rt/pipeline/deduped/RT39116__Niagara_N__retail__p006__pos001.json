@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT39116",
+  "source_folder": "Niagara_N/retail/p006",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39116",
+      "source_folder": "Niagara_N/retail/p006",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p006/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1547 & 1551 HWY 55"
+      ],
+      "city_region": "Niagara-on-the-Lake : Niagara N",
+      "date_text": "01 Dec 2004",
+      "price_text": "$1,662,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "MB Foods Ltd     905-468-2595"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Walter Bogusat",
+        "522 Line 1, Box 89",
+        "Virgil, Ontario",
+        "L0S 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loblaw Properties Ltd     416-922-8500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jane Marshall",
+        "22 St Clair Ave E, 2nd Flr",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "description_lines": [
+      "Grocery Store & Retail Plaza - 24,000 sf @ $69",
+      "",
+      "1547: Retail Plaza - 1 storey; 3 units 3,000 sf",
+      "",
+      "1551: Grocery Store - 1 storey; 21,000 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 113",
+      "As in Inst Nos RO-170053 & RO-190116",
+      "",
+      "3.62 acre"
+    ],
+    "arn_text": "26 27 020 013 12200",
+    "consideration_lines": [
+      "cash: $1,662,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "252 / 307",
+      "rt_id": "RT39116"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1547 & 1551 HWY 55",
+    "postcode": "",
+    "municipality": "Niagara-on-the-Lake",
+    "region": "Niagara N",
+    "date": "12/01/2004",
+    "desc": "Grocery Store & Retail Plaza - 24,000 sf @ $69",
+    "bldg": "24,000 sf",
+    "acreage": "3.62",
+    "consid": "1662500",
+    "cash": "1662500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 27 020 013 12200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1547 & 1551 HWY 55"
+    ],
+    "city_region": "Niagara-on-the-Lake : Niagara N",
+    "date_text": "01 Dec 2004",
+    "note": "",
+    "description": "Grocery Store & Retail Plaza - 24,000 sf @ $69",
+    "seller_lines": [
+      "MB Foods Ltd"
+    ],
+    "buyer_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "price_text": "$1,662,500"
+  }
+}

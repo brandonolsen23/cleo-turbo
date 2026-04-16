@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT41783",
+  "source_folder": "Metro_Toronto/industrial/p053",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41783",
+      "source_folder": "Metro_Toronto/industrial/p053",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p053/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "181 NUGGET AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "10 May 2005",
+      "price_text": "$1,138,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Darts Radt International Inc     416-291-2006"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hay Lam",
+        "50 Captains Way",
+        "Scarborough, Ontario",
+        "M1V 5G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-6524, Part 1",
+      "",
+      "1.15 acre"
+    ],
+    "arn_text": "19 01 123 700 02000",
+    "consideration_lines": [
+      "cash: $1,138,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $700,000   rate: Prime plus 3.0% per annum",
+      "registered: 05/10/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT417/RT41783/air1.jpg",
+        "/assets/files/RT4/RT417/RT41783/air2.jpg",
+        "/assets/files/RT4/RT417/RT41783/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT417/RT41783/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2609 / 4000",
+      "rt_id": "RT41783"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "181 NUGGET AVE",
+    "postcode": "M1S 3B1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.15",
+    "consid": "1138000",
+    "cash": "1138000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 01 123 700 02000"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "181 NUGGET AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "10 May 2005",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Darts Radt International Inc"
+    ],
+    "price_text": "$1,138,000"
+  }
+}

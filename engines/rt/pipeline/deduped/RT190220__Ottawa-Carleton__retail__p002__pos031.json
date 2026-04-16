@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT190220",
+  "source_folder": "Ottawa-Carleton/retail/p002",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190220",
+      "source_folder": "Ottawa-Carleton/retail/p002",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p002/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "1589 MAIN ST STITTSVILLE"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "29 Nov 2024",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lakeside Living Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Piety Hill Way",
+        "Ottawa, Ontario",
+        "K2R 1E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000982399 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andranik Shahbazyan",
+        "727 Campolina Way",
+        "Stittsville, Ontario",
+        "K2S 0Y2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 24",
+      "Plan 4R-15703, Part 1",
+      "",
+      "PIN: 04452-0386",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $50,000",
+      "",
+      "chargee: Frontline Financial Credit Union Ltd",
+      "principal: $325,000   rate: 6.25% per annum.",
+      "registered: 11/29/2024   due: 11/29/2027",
+      "",
+      "chargee: Lakeside Living Ltd",
+      "principal: $50,000   rate: 0% per annum.",
+      "registered: 11/29/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190220/0509_141622.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190220/0509_141634.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190220/0509_141701.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190220/0509_141702.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190220/0509_141705.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "82 / 1141",
+      "rt_id": "RT190220"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "1589 MAIN ST STITTSVILLE",
+    "postcode": "K2S 1Y1",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "11/29/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "750000",
+    "cash": "700000",
+    "debt": "50000",
+    "note": "",
+    "pin": "04452-0386",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "1589 MAIN ST STITTSVILLE"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "29 Nov 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Lakeside Living Ltd"
+    ],
+    "buyer_lines": [
+      "1000982399 Ontario Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

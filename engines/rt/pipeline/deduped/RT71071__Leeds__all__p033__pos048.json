@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT71071",
+  "source_folder": "Leeds/all/p033",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71071",
+      "source_folder": "Leeds/all/p033",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p033/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "BURMAN LINE",
+        "CONC 12",
+        "PART LOT 23"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "18 Dec 2009",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Enbridge Gas Distribution Inc     519-862-1473"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jim Grant",
+        "3595 Tecumseh Rd, RR 1",
+        "Mooretown, Ontario",
+        "N0N 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 12, Part Lot 23",
+      "",
+      "PIN: 43390-0060",
+      "",
+      "101.98 acre"
+    ],
+    "arn_text": "38 06 010 060 09900",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT710/RT71071/air1.jpg",
+        "/assets/files/RT7/RT710/RT71071/air2.jpg",
+        "/assets/files/RT7/RT710/RT71071/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1649 / 1916",
+      "rt_id": "RT71071"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "BURMAN LINE, CONC 12, PART LOT 23",
+    "postcode": "",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "12/18/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.98",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "43390-0060",
+    "rollno": "38 06 010 060 09900"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "BURMAN LINE",
+      "CONC 12",
+      "PART LOT 23"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "18 Dec 2009",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Enbridge Gas Distribution Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

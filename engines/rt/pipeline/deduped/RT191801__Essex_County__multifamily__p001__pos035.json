@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT191801",
+  "source_folder": "Essex_County/multifamily/p001",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191801",
+      "source_folder": "Essex_County/multifamily/p001",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/multifamily/p001/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "1179 HOWARD AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "07 Apr 2025",
+      "price_text": "$749,900",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mojganre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "901 Marentette Ave",
+        "Windsor, Ontario",
+        "N9A 2A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CAH Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Craig Harris",
+        "206 Ulster St",
+        "LaSalle, Ontario",
+        "N9J 0C1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-21975, Part 2",
+      "",
+      "PIN: 01175-0590",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "37 39 030 310 00600",
+    "consideration_lines": [
+      "cash: $749,900     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $599,920   rate: VRM base rate minus 0.1% per annum.",
+      "registered: 04/07/2025   due: 04/07/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "36 / 421",
+      "rt_id": "RT191801"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "1179 HOWARD AVE",
+    "postcode": "N9A 1S6",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "04/07/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "749900",
+    "cash": "749900",
+    "debt": "",
+    "note": "",
+    "pin": "01175-0590",
+    "rollno": "37 39 030 310 00600"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "1179 HOWARD AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "07 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mojganre Inc"
+    ],
+    "buyer_lines": [
+      "CAH Holdings Inc"
+    ],
+    "price_text": "$749,900"
+  }
+}

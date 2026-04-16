@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT192098",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192098",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 MANITOBA ST"
+      ],
+      "city_region": "Bracebridge : Muskoka",
+      "date_text": "01 May 2025",
+      "price_text": "$1,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1720592 Ontario Inc",
+        "Elise Boyer"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "24 Manitoba St",
+        "Bracebridge, Ontario",
+        "P1L 1R9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cedar Canoe Books Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chandler Jolliffe",
+        "c/o 77 Ontario St",
+        "Port Sydney, Ontario",
+        "P0B 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 35R-17953, Parts 1, 2, 4 & 5",
+      "",
+      "PIN: 48114-0531",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "44 18 010 003 06000",
+    "consideration_lines": [
+      "cash: $1,075,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $986,850   rate: Prime plus 5.0% per annum.",
+      "registered: 05/01/2025   due: on demand",
+      "",
+      "chargee: Muskoka Community Futures Development Corp",
+      "principal: $180,000   rate: 8.50% per annum.",
+      "registered: 05/01/2025   due: 05/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 64",
+      "rt_id": "RT192098"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "22 MANITOBA ST",
+    "postcode": "P1L 1R9",
+    "municipality": "Bracebridge",
+    "region": "Muskoka",
+    "date": "05/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1075000",
+    "cash": "1075000",
+    "debt": "",
+    "note": "",
+    "pin": "48114-0531",
+    "rollno": "44 18 010 003 06000"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "22 MANITOBA ST"
+    ],
+    "city_region": "Bracebridge : Muskoka",
+    "date_text": "01 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1720592 Ontario Inc",
+      "Elise Boyer"
+    ],
+    "buyer_lines": [
+      "Cedar Canoe Books Inc"
+    ],
+    "price_text": "$1,075,000"
+  }
+}

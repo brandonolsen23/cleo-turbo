@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT194934",
+  "source_folder": "Ottawa-Carleton/retail/p001",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194934",
+      "source_folder": "Ottawa-Carleton/retail/p001",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p001/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "2520 ST JOSEPH BLVD",
+        "UNIT 1"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "15 Oct 2025",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1945361 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2118 Apple Leaf Way",
+        "Orleans, Ontario",
+        "K1W 1J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001365320 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Omar Saab",
+        "2520 St Joseph Blvd",
+        "Orleans, Ontario",
+        "K1C 1G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 409",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 15409-0001"
+    ],
+    "arn_text": "06 06 000 085 16590",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $700,000",
+      "",
+      "chargee: 1945361 Ontario Ltd",
+      "principal: $700,000   rate: 7.0% per annum.",
+      "registered: 10/15/2025   due: 10/15/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143117.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143241.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143253.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143254.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143318.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143320.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143332.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143352.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1949/RT194934/1129_143403.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "28 / 1141",
+      "rt_id": "RT194934"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "2520 ST JOSEPH BLVD, UNIT 1",
+    "postcode": "K1C 1G1",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "10/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "850000",
+    "cash": "150000",
+    "debt": "700000",
+    "note": "",
+    "pin": "15409-0001",
+    "rollno": "06 06 000 085 16590"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "2520 ST JOSEPH BLVD",
+      "UNIT 1"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "15 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1945361 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001365320 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

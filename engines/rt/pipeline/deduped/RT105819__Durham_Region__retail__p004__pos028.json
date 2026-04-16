@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT105819",
+  "source_folder": "Durham_Region/retail/p004",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105819",
+      "source_folder": "Durham_Region/retail/p004",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p004/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 KING ST W"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "15 Jan 2015",
+      "price_text": "$868,780",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ed Waite",
+        "Corporate Real Estate",
+        "55 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jonathan Gitlin",
+        "2300 Yonge St, Ste 500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 5,584 sf @ $156",
+      "",
+      "Leased back to the vendor (BMO)",
+      "",
+      "22 surface parking spaces."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-18602, Part 1",
+      "",
+      "PIN: 26626-0082",
+      "",
+      "NW corner King St W and Temperance St",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "18 17 020 040 11700",
+    "consideration_lines": [
+      "cash: $868,780     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1058/RT105819/0124_125159.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1058/RT105819/0124_125202.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1058/RT105819/0124_125209.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "179 / 506",
+      "rt_id": "RT105819"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "2 KING ST W",
+    "postcode": "L1C 1R3",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "01/15/2015",
+    "desc": "Retail Bldg - 1 storey; 5,584 sf @ $156",
+    "bldg": "5,584 sf",
+    "acreage": ".42",
+    "consid": "868780",
+    "cash": "868780",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "26626-0082",
+    "rollno": "18 17 020 040 11700"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "2 KING ST W"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "15 Jan 2015",
+    "note": "Portfolio",
+    "description": "Retail Bldg - 1 storey; 5,584 sf @ $156",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$868,780"
+  }
+}

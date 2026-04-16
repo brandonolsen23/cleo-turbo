@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT73394",
+  "source_folder": "York_Region/all/p010",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73394",
+      "source_folder": "York_Region/all/p010",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/all/p010/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "39 RACINE ST"
+      ],
+      "city_region": "Casselman : Russell Township",
+      "date_text": "31 May 2010",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "417 Bus Line Ltd     613-764-2192"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yvon Laplante",
+        "50 Industrial St",
+        "PO Box 650",
+        "Cassleman, Ontario",
+        "K0A 1M0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JP Service Station Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jean-Pierre Rozon",
+        "39 Racine St",
+        "Cassleman, Ontario",
+        "K0A 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 8",
+      "Plan 50R-5051, Parts 38 & 39",
+      "",
+      "PIN: 69021-0083",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "03 02 000 001 12680",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Populaire Nouvel-Horizon Inc",
+      "principal: $700,000   rate: Prime plus 10.0% per annum",
+      "registered: 05/31/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "452 / 516",
+      "rt_id": "RT73394"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "39 RACINE ST",
+    "postcode": "",
+    "municipality": "Casselman",
+    "region": "Russell Township",
+    "date": "05/31/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".66",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "69021-0083",
+    "rollno": "03 02 000 001 12680"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "39 RACINE ST"
+    ],
+    "city_region": "Casselman : Russell Township",
+    "date_text": "31 May 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "417 Bus Line Ltd"
+    ],
+    "buyer_lines": [
+      "JP Service Station Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

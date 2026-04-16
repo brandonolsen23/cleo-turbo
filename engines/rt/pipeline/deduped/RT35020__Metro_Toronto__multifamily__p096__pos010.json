@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT35020",
+  "source_folder": "Metro_Toronto/multifamily/p096",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35020",
+      "source_folder": "Metro_Toronto/multifamily/p096",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p096/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "229 VAUGHAN RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "19 Dec 2003",
+      "price_text": "$1,630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1245598 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ivan Stone",
+        "3300 Yonge St, Ste 300",
+        "Toronto, Ontario",
+        "M4N 2L6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg - 4 storey; 24-1bdrm @ $67,917"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-367",
+      "Part Lot 39, N/S Vaughan Rd",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 14 012 140 01200",
+    "consideration_lines": [
+      "cash: $1,630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Forest Hill Real Estate: Joel Laker, 416-785-1500"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT350/RT35020/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4761 / 6031",
+      "rt_id": "RT35020"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "229 VAUGHAN RD",
+    "postcode": "M6C 2M8",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "12/19/2003",
+    "desc": "Apartment Bldg - 4 storey; 24-1bdrm @ $67,917",
+    "bldg": "24 units",
+    "acreage": ".14",
+    "consid": "1630000",
+    "cash": "1630000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 012 140 01200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "229 VAUGHAN RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "19 Dec 2003",
+    "note": "",
+    "description": "Apartment Bldg - 4 storey; 24-1bdrm @ $67,917",
+    "seller_lines": [
+      "1245598 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,630,000"
+  }
+}

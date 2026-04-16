@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT171216",
+  "source_folder": "Cochrane/all/p028",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT171216",
+      "source_folder": "Cochrane/all/p028",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p028/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "6065 FALLOWFIELD RD"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "18 Aug 2022",
+      "price_text": "$3,331,200",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "WIGI Restructured Bond Corp",
+        "2114253 Alberta Ltd     403-265-4255"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Walton Global Investments Ltd",
+        "500 - 4th Ave SW, 25th Flr",
+        "Calgary, Alberta",
+        "T2P 2V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KLP Real Estate 1 Inc     819-778-5001"
+      ],
+      "trade_name": "Multivesco Inc",
+      "contact_lines": [
+        "Attn: Francois Juneau",
+        "200 rue Montcalm, Ste 400",
+        "Gatineau, Quebec",
+        "J8Y 3B5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 24",
+      "Plan 4R-22296, Parts 1 & 2",
+      "",
+      "PIN: 04449-0298",
+      "",
+      "110.82 acre"
+    ],
+    "arn_text": "06 27 010 825 10900",
+    "consideration_lines": [
+      "cash: $3,331,200     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1712/RT171216/air1.jpg",
+        "/assets/files/RT17/RT1712/RT171216/air2.jpg",
+        "/assets/files/RT17/RT1712/RT171216/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1375 / 10920",
+      "rt_id": "RT171216"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "6065 FALLOWFIELD RD",
+    "postcode": "K2S 1B2",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "08/18/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "110.82",
+    "consid": "3331200",
+    "cash": "3331200",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04449-0298",
+    "rollno": "06 27 010 825 10900"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "6065 FALLOWFIELD RD"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "18 Aug 2022",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "WIGI Restructured Bond Corp",
+      "2114253 Alberta Ltd"
+    ],
+    "buyer_lines": [
+      "KLP Real Estate 1 Inc"
+    ],
+    "price_text": "$3,331,200"
+  }
+}

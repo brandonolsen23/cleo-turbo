@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT166805",
+  "source_folder": "Cochrane/all/p033",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT166805",
+      "source_folder": "Cochrane/all/p033",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p033/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "6223 SECOND LINE",
+        "6223 2ND LINE"
+      ],
+      "city_region": "Rideau : Ottawa-Carleton",
+      "date_text": "11 Feb 2022",
+      "price_text": "$1,670,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "694359 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shiv Jindal",
+        "5288 Knott Cres",
+        "Manotick, Ontario",
+        "K4M 1C2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - N Gower, Part Lot 14",
+      "Plan 5R-11246, Parts 1-5",
+      "",
+      "PIN: 03908-0119",
+      "",
+      "167.00 acre"
+    ],
+    "arn_text": "06 18 020 825 05800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,670,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1605 / 10920",
+      "rt_id": "RT166805"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "6223 SECOND LINE, 6223 2ND LINE",
+    "postcode": "K0A 2E0",
+    "municipality": "Rideau",
+    "region": "Ottawa-Carleton",
+    "date": "02/11/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "167",
+    "consid": "1670000",
+    "cash": "",
+    "debt": "1670000",
+    "note": "Related Parties",
+    "pin": "03908-0119",
+    "rollno": "06 18 020 825 05800"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "6223 SECOND LINE",
+      "6223 2ND LINE"
+    ],
+    "city_region": "Rideau : Ottawa-Carleton",
+    "date_text": "11 Feb 2022",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "694359 Ontario Ltd"
+    ],
+    "price_text": "$1,670,000"
+  }
+}

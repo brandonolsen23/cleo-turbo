@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT183902",
+  "source_folder": "Lambton/retail/p001",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183902",
+      "source_folder": "Lambton/retail/p001",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "101 MAIN ST S"
+      ],
+      "city_region": "Forest : Lambton",
+      "date_text": "28 Mar 2024",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2160882 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "6706 Old Mill Rd",
+        "Camlachie, Ontario",
+        "N0N 1E0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "BGS Holdco Two Ltd     519-914-1157"
+      ],
+      "trade_name": "Redline Auto Sales",
+      "contact_lines": [
+        "Attn: Sergey Barandich",
+        "2040 Dundas St",
+        "London, Ontario",
+        "N5V 1R2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7 - NER Warwick,",
+      "Part Lots 2 & 3",
+      "Plan 25R-1251, Part 2",
+      "Except:",
+      "Plan 25R-3381, Part 1",
+      "",
+      "PIN: 43072-0219",
+      "",
+      "3.61 acre"
+    ],
+    "arn_text": "38 45 380 030 07901",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 2160882 Ontario Ltd",
+      "principal: $1,000,000   rate: 7.95% per annum. There will be an option to renew for a further 5 year term.",
+      "registered: 03/28/2024   due: 03/28/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "29 / 106",
+      "rt_id": "RT183902"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "101 MAIN ST S",
+    "postcode": "N0N 1J0",
+    "municipality": "Forest",
+    "region": "Lambton",
+    "date": "03/28/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.61",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "43072-0219",
+    "rollno": "38 45 380 030 07901"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "101 MAIN ST S"
+    ],
+    "city_region": "Forest : Lambton",
+    "date_text": "28 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2160882 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "BGS Holdco Two Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

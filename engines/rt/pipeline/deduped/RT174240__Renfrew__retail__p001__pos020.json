@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT174240",
+  "source_folder": "Renfrew/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174240",
+      "source_folder": "Renfrew/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "1108 PEMBROKE ST E"
+      ],
+      "city_region": "Pembroke : Renfrew",
+      "date_text": "21 Dec 2022",
+      "price_text": "$2,680,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1108 Pembroke Street Centre Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "163 Cartwright Ave",
+        "Toronto, Ontario",
+        "M6A 1V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2824508 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mei Yan Ren",
+        "3950 14th Ave",
+        "Markham, Ontario",
+        "L3R 0A9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Fronting Allumette Lake,",
+      "Part Lots 22 & 23",
+      "Plan 49R-16820,",
+      "Parts 32-36, 39, 40, 42, 44-47,",
+      "49-51, 53, 54, 56, 57, 59-61 & 66-69",
+      "",
+      "PIN: 57623-0411 +",
+      "",
+      "3.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,680,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $2,278,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 12/21/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 52",
+      "rt_id": "RT174240"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "1108 PEMBROKE ST E",
+    "postcode": "K8A 8P7",
+    "municipality": "Pembroke",
+    "region": "Renfrew",
+    "date": "12/21/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.23",
+    "consid": "2680000",
+    "cash": "2680000",
+    "debt": "",
+    "note": "",
+    "pin": "57623-0411+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "1108 PEMBROKE ST E"
+    ],
+    "city_region": "Pembroke : Renfrew",
+    "date_text": "21 Dec 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1108 Pembroke Street Centre Inc"
+    ],
+    "buyer_lines": [
+      "2824508 Ontario Ltd"
+    ],
+    "price_text": "$2,680,000"
+  }
+}

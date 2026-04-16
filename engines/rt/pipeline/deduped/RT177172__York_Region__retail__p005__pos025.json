@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT177172",
+  "source_folder": "York_Region/retail/p005",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177172",
+      "source_folder": "York_Region/retail/p005",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "10 NORMAN JONES PLACE"
+      ],
+      "city_region": "Whitchurch-Stouffville : York Region",
+      "date_text": "28 Apr 2023",
+      "price_text": "$7,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Omsai Stouffville Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4 Townley Ave",
+        "Markham, Ontario",
+        "L3S 1C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "13928519 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anantsinh Sisodiya",
+        "32 Enderly St",
+        "Ajax, Ontario",
+        "L1S 0E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-34542, Parts 1 & 2",
+      "",
+      "PIN: 03719-1953",
+      "",
+      "1.52 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,500,000     assumed/vtb debt: $0",
+      "other: $4,410,000",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $7,741,500   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 04/28/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1771/RT177172/0522_085201.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1771/RT177172/0522_085206.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1771/RT177172/0522_085207.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1771/RT177172/0522_085251.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1771/RT177172/0522_085252.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "226 / 984",
+      "rt_id": "RT177172"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "10 NORMAN JONES PLACE",
+    "postcode": "L4A 0W7",
+    "municipality": "Whitchurch-Stouffville",
+    "region": "York Region",
+    "date": "04/28/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.52",
+    "consid": "7500000",
+    "cash": "7500000",
+    "debt": "",
+    "note": "",
+    "pin": "03719-1953",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "10 NORMAN JONES PLACE"
+    ],
+    "city_region": "Whitchurch-Stouffville : York Region",
+    "date_text": "28 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Omsai Stouffville Inc"
+    ],
+    "buyer_lines": [
+      "13928519 Canada Inc"
+    ],
+    "price_text": "$7,500,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT189156",
+  "source_folder": "Oxford_County/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189156",
+      "source_folder": "Oxford_County/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "896 DUNDAS ST"
+      ],
+      "city_region": "Woodstock : Oxford County",
+      "date_text": "05 Dec 2024",
+      "price_text": "$915,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "12694867 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "15472563 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bilal Nadeem",
+        "896 Dundas St",
+        "Woodstock, Ontario",
+        "N4S 1H1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 41R-6935, Parts 2 & 3",
+      "",
+      "PIN: 00107-0261",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "32 42 050 040 01600",
+    "consideration_lines": [
+      "cash: $915,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1891/RT189156/0329_084856.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1891/RT189156/0329_084916.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1891/RT189156/0329_084919.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1891/RT189156/0329_084924.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1891/RT189156/0329_084936.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1891/RT189156/0329_084945.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 96",
+      "rt_id": "RT189156"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "896 DUNDAS ST",
+    "postcode": "N4S 1H1",
+    "municipality": "Woodstock",
+    "region": "Oxford County",
+    "date": "12/05/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".39",
+    "consid": "915000",
+    "cash": "915000",
+    "debt": "",
+    "note": "",
+    "pin": "00107-0261",
+    "rollno": "32 42 050 040 01600"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "896 DUNDAS ST"
+    ],
+    "city_region": "Woodstock : Oxford County",
+    "date_text": "05 Dec 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "12694867 Canada Inc"
+    ],
+    "buyer_lines": [
+      "15472563 Canada Inc"
+    ],
+    "price_text": "$915,000"
+  }
+}

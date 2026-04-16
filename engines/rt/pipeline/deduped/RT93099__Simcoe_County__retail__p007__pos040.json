@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT93099",
+  "source_folder": "Simcoe_County/retail/p007",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT93099",
+      "source_folder": "Simcoe_County/retail/p007",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p007/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "41 MISSISSAGA ST W"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "31 May 2013",
+      "price_text": "$1,400,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1880891 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Yousof",
+        "75 Line 3 S, RR 1",
+        "Shanty Bay, Ontario",
+        "L0L 2L0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in July 2004 for $1,180,000 (power-of-sale)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63, Block 3",
+      "Lots 3-5, W/S St Andrew St",
+      "Lot 6, S/S Messessaga St",
+      "Plan 228, Block A",
+      "Lot 5",
+      "",
+      "PIN: 58650-0152",
+      "",
+      "1.24 acre"
+    ],
+    "arn_text": "43 52 020 201 02200",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $1,250,000",
+      "",
+      "chargee: Arthur Keller Holdings Ltd",
+      "principal: $1,250,000   rate: First 3 years, 6.5% per annum, with monthly interest only payments of $6,770.83. Next 4 years, 7.0% per annum, payments of $7,291.67. Remaining 3 years, 7.5% per annum, payments of $7,812.50.",
+      "registered: 05/31/2013   due: 06/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT930/RT93099/0614_122009.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT930/RT93099/0614_122030.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT930/RT93099/0614_122032.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT930/RT93099/0614_122128.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT930/RT93099/0614_122201.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT930/RT93099/0614_122216.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "341 / 712",
+      "rt_id": "RT93099"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "41 MISSISSAGA ST W",
+    "postcode": "L3V 3A7",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "05/31/2013",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.24",
+    "consid": "1400000",
+    "cash": "150000",
+    "debt": "1250000",
+    "note": "Power of Sale",
+    "pin": "58650-0152",
+    "rollno": "43 52 020 201 02200"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "41 MISSISSAGA ST W"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "31 May 2013",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1880891 Ontario Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

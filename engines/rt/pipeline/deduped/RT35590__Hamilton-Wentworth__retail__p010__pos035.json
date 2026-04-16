@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT35590",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35590",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "295 - 303 YORK BLVD"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "12 May 2004",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Hoa Bao Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hoa Nguyen",
+        "1031 North Service Rd",
+        "Stoney Creek, Ontario",
+        "L8E 3C8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-4238, Part 1",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "25 18 010 106 01960",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT355/RT35590/photo.jpg"
+    },
+    "footer": {
+      "page_position": "486 / 616",
+      "rt_id": "RT35590"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "295 - 303 YORK BLVD",
+    "postcode": "L8R 3K5",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "05/12/2004",
+    "desc": "Retail Plaza - 2 storey",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 010 106 01960"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "295 - 303 YORK BLVD"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "12 May 2004",
+    "note": "",
+    "description": "Retail Plaza - 2 storey",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Hoa Bao Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

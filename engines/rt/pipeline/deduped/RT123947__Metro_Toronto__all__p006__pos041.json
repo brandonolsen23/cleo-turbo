@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT123947",
+  "source_folder": "Metro_Toronto/all/p006",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123947",
+      "source_folder": "Metro_Toronto/all/p006",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/all/p006/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "183 HARPER RD"
+      ],
+      "city_region": "Perth : Lanark County",
+      "date_text": "13 Mar 2017",
+      "price_text": "$750,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "1825184 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Martin",
+        "6220 London Rd",
+        "Box 702",
+        "Smithville, Ontario",
+        "L0R 2A0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2109874 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Graham",
+        "5016 Highway 62",
+        "Belleville, Ontario",
+        "K8N 4Z7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 20",
+      "Plan 27R-1817, Parts 1 & 2",
+      "",
+      "PIN: 05196-0121",
+      "",
+      "2.59 acre"
+    ],
+    "arn_text": "09 11 916 015 23010",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $750,000",
+      "",
+      "chargee: 1825184 Ontario Inc",
+      "principal: $800,000",
+      "registered: 03/13/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1239/RT123947/0623_091443.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1239/RT123947/0623_091444.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1239/RT123947/0623_091523.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1239/RT123947/0623_091525.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1239/RT123947/0623_091547.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "292 / 555",
+      "rt_id": "RT123947"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "183 HARPER RD",
+    "postcode": "K7H 3C6",
+    "municipality": "Perth",
+    "region": "Lanark County",
+    "date": "03/13/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.59",
+    "consid": "750000",
+    "cash": "",
+    "debt": "750000",
+    "note": "Zero Cash",
+    "pin": "05196-0121",
+    "rollno": "09 11 916 015 23010"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "183 HARPER RD"
+    ],
+    "city_region": "Perth : Lanark County",
+    "date_text": "13 Mar 2017",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "1825184 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2109874 Ontario Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

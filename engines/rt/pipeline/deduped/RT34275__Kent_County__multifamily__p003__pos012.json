@@ -1,0 +1,99 @@
+{
+  "rt_id": "RT34275",
+  "source_folder": "Kent_County/multifamily/p003",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34275",
+      "source_folder": "Kent_County/multifamily/p003",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/multifamily/p003/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "62 MASSEY DR"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "19 Mar 2003",
+      "price_text": "$661,300",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 720, Lots 77-80",
+      "",
+      "0.80 acre"
+    ],
+    "arn_text": "36 50 080 001 50917",
+    "consideration_lines": [
+      "cash: $661,300     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "113 / 114",
+      "rt_id": "RT34275"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "62 MASSEY DR",
+    "postcode": "N0P 2L0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "03/19/2003",
+    "desc": "Apartment Bldg",
+    "bldg": "",
+    "acreage": ".8",
+    "consid": "661300",
+    "cash": "661300",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 080 001 50917"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "62 MASSEY DR"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "19 Mar 2003",
+    "note": "",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$661,300"
+  }
+}

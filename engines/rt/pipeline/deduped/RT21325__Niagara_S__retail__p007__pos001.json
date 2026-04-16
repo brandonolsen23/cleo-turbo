@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT21325",
+  "source_folder": "Niagara_S/retail/p007",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21325",
+      "source_folder": "Niagara_S/retail/p007",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p007/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "7500 LUNDYS LANE"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "20 Apr 2001",
+      "price_text": "$40,647,757",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "JLA Factory Outlet Housing Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kenneth Zuchman",
+        "113 Dupont St, Ste 100",
+        "Toronto, Ontario",
+        "M5R 1V4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lundy's Lane Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Cohen",
+        "H & R Developments",
+        "3265 Dufferin St, Ste 500",
+        "Downsview, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "description_lines": [
+      "Factory Outlets Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-10185, Parts 1-8",
+      "Plan 59R-10438, Part 1",
+      "Plan 59R-10224, Parts 1 & 2",
+      "Except Plan 59R-10448, Part 1"
+    ],
+    "arn_text": "27 25 090 007 29000",
+    "consideration_lines": [
+      "cash: $39,787,875     assumed/vtb debt: $859,882"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT213/RT21325/photo.jpg"
+    },
+    "footer": {
+      "page_position": "302 / 324",
+      "rt_id": "RT21325"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "7500 LUNDYS LANE",
+    "postcode": "L2H 1G8",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "04/20/2001",
+    "desc": "Factory Outlets Mall",
+    "bldg": "",
+    "acreage": "",
+    "consid": "40647757",
+    "cash": "39787875",
+    "debt": "859882",
+    "note": "",
+    "pin": "",
+    "rollno": "27 25 090 007 29000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "7500 LUNDYS LANE"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "20 Apr 2001",
+    "note": "",
+    "description": "Factory Outlets Mall",
+    "seller_lines": [
+      "JLA Factory Outlet Housing Ltd"
+    ],
+    "buyer_lines": [
+      "Lundy's Lane Portfolio Inc"
+    ],
+    "price_text": "$40,647,757"
+  }
+}

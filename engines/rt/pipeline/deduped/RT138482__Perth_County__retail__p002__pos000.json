@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT138482",
+  "source_folder": "Perth_County/retail/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT138482",
+      "source_folder": "Perth_County/retail/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "714 ONTARIO ST"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "31 Oct 2018",
+      "price_text": "$1,199,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Arts Recreation Centre Ltd     519-305-0702"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John George",
+        "36 North Pointe Dr",
+        "Stratford, Ontario",
+        "N5A 8C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2658706 Ontario Inc     519-271-8690"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dr Raphael Jankowski",
+        "2219 Hidden Valley Dr",
+        "Kitchener, Ontario",
+        "N2C 2R2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 1 storey; 6,400 sf @ $187",
+      "",
+      "Fully leased to Video Plus",
+      "",
+      "25 surface parking spaces",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 44",
+      "Plan 44R-2962, Part 1",
+      "Except:",
+      "Plan 44R-4085, Part 2",
+      "",
+      "PIN: 53097-0108",
+      "",
+      "NE corner Ontario St and Burritt St",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "31 11 020 100 00100",
+    "consideration_lines": [
+      "cash: $399,000     assumed/vtb debt: $800,000",
+      "",
+      "chargee: Art's Recreation Centre Ltd",
+      "principal: $800,000   rate: 6.75% per annum.",
+      "registered: 10/31/2018   due: 10/30/2021"
+    ],
+    "broker_lines": [
+      "RE/MAX a-b Realty: Scott Wildgust, 519-274-5353",
+      "Rego Realty: Cliff Rego, 519-804-4000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 113",
+      "rt_id": "RT138482"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "714 ONTARIO ST",
+    "postcode": "N5A 3J8",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "10/31/2018",
+    "desc": "Retail Bldg: 1 storey; 6,400 sf @ $187",
+    "bldg": "6,400 sf",
+    "acreage": ".5",
+    "consid": "1199000",
+    "cash": "399000",
+    "debt": "800000",
+    "note": "",
+    "pin": "53097-0108",
+    "rollno": "31 11 020 100 00100"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "714 ONTARIO ST"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "31 Oct 2018",
+    "note": "",
+    "description": "Retail Bldg: 1 storey; 6,400 sf @ $187",
+    "seller_lines": [
+      "Arts Recreation Centre Ltd"
+    ],
+    "buyer_lines": [
+      "2658706 Ontario Inc"
+    ],
+    "price_text": "$1,199,000"
+  }
+}

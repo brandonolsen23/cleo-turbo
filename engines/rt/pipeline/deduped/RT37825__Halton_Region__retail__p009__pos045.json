@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT37825",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37825",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "372 IROQUOIS SHORE RD"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "23 Sep 2004",
+      "price_text": "$3,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "956437 Ontario Ltd     416-226-2342"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Gary Au Yeung",
+        "Juriansz & Li LLP",
+        "5650 Yonge St, Ste 1709",
+        "Toronto, Ontario",
+        "M2M 4G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Gainview Development Inc     905-270-8838"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Andrew Giang",
+        "H & H Oriental Foods",
+        "1177 Central Pkwy W, Unit 30",
+        "Mississauga, Ontario",
+        "L5C 4P3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-6826, Part 1",
+      "Except:",
+      "Plan 20R-8440, Part 1",
+      "Plan 20R-9469, Part 1",
+      "",
+      "1.76 acre"
+    ],
+    "arn_text": "24 01 040 220 01010",
+    "consideration_lines": [
+      "cash: $3,350,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT378/RT37825/air1.jpg",
+        "/assets/files/RT3/RT378/RT37825/air2.jpg",
+        "/assets/files/RT3/RT378/RT37825/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT378/RT37825/photo.jpg"
+    },
+    "footer": {
+      "page_position": "446 / 613",
+      "rt_id": "RT37825"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "372 IROQUOIS SHORE RD",
+    "postcode": "L6H 1M4",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "09/23/2004",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.76",
+    "consid": "3350000",
+    "cash": "3350000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 040 220 01010"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "372 IROQUOIS SHORE RD"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "23 Sep 2004",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "956437 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Gainview Development Inc"
+    ],
+    "price_text": "$3,350,000"
+  }
+}

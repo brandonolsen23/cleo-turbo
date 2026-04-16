@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT20494",
+  "source_folder": "Durham_Region/res-land/p023",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20494",
+      "source_folder": "Durham_Region/res-land/p023",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/res-land/p023/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1010 DUNDAS ST E"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "15 Feb 2001",
+      "price_text": "$1,000,000",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Sangiulina Investments Ltd     905-666-5752"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Santina DeRocchis",
+        "225 King St",
+        "Whitby, Ontario",
+        "L1N 4Z3"
+      ]
+    },
+    "description_lines": [
+      "Mobile Home Park"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-11196, Parts 1-14",
+      "Except Plan 40R-17442, Part 5",
+      "",
+      "10.87 acre"
+    ],
+    "arn_text": "18 09 040 028 03000",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1102 / 1366",
+      "rt_id": "RT20494"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1010 DUNDAS ST E",
+    "postcode": "L1N 2K3",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "02/15/2001",
+    "desc": "Mobile Home Park",
+    "bldg": "",
+    "acreage": "10.87",
+    "consid": "1000000",
+    "cash": "",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "18 09 040 028 03000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1010 DUNDAS ST E"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "15 Feb 2001",
+    "note": "Foreclosure",
+    "description": "Mobile Home Park",
+    "seller_lines": [
+      "Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "Sangiulina Investments Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

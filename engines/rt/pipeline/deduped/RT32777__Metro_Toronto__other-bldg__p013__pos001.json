@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT32777",
+  "source_folder": "Metro_Toronto/other-bldg/p013",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32777",
+      "source_folder": "Metro_Toronto/other-bldg/p013",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/other-bldg/p013/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "900 PROGRESS AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "24 Nov 2003",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kinglon Investments Inc     416-961-0212"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Somers",
+        "Somers & Roth",
+        "268 Avenue Rd",
+        "Toronto, Ontario",
+        "M4V 2G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "High Octane (Canada) Inc     416-438-6599"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Akiva Yokev",
+        "900 Progress Ave",
+        "Scarborough, Ontario",
+        "M1H 2Z9"
+      ]
+    },
+    "description_lines": [
+      "Gas Station & Car Wash"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-7728, Part 3",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "19 01 052 850 01300",
+    "consideration_lines": [
+      "cash: $1,450,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT327/RT32777/photo.jpg"
+    },
+    "footer": {
+      "page_position": "602 / 825",
+      "rt_id": "RT32777"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "900 PROGRESS AVE",
+    "postcode": "M1H 2Z9",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "11/24/2003",
+    "desc": "Gas Station & Car Wash",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "1500000",
+    "cash": "1450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 052 850 01300"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "900 PROGRESS AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "24 Nov 2003",
+    "note": "",
+    "description": "Gas Station & Car Wash",
+    "seller_lines": [
+      "Kinglon Investments Inc"
+    ],
+    "buyer_lines": [
+      "High Octane (Canada) Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

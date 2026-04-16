@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT33962",
+  "source_folder": "Ottawa-Carleton/retail/p022",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33962",
+      "source_folder": "Ottawa-Carleton/retail/p022",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p022/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1556 MERIVALE RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "30 Sep 1999",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Truscan Property Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: John Harris",
+        "110 Yonge St, Ste 1210",
+        "Toronto, Ontario",
+        "M5C 1T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Gallop Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jules Sigler",
+        "100 Sparks St, Ste 500",
+        "Ottawa, Ontario",
+        "K1P 5B7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-6004, Parts 2-4"
+    ],
+    "arn_text": "06 12 000 545 00300",
+    "consideration_lines": [
+      "cash: $1,450,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT339/RT33962/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1100 / 1141",
+      "rt_id": "RT33962"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1556 MERIVALE RD",
+    "postcode": "K2G 3J8",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "09/30/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1450000",
+    "cash": "1450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 12 000 545 00300"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1556 MERIVALE RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "30 Sep 1999",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Truscan Property Corp"
+    ],
+    "buyer_lines": [
+      "Gallop Properties Ltd"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

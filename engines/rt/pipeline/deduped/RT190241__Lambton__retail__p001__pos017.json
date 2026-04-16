@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT190241",
+  "source_folder": "Lambton/retail/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190241",
+      "source_folder": "Lambton/retail/p001",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "430 EXMOUTH ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "03 Feb 2025",
+      "price_text": "$1,417,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mainstreet Credit Union Ltd     519-542-9059"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1295 London Rd",
+        "Sarnia, Ontario",
+        "N7S 1P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Long Holdings Inc     905-837-9785"
+      ],
+      "trade_name": "Long & McQuade",
+      "contact_lines": [
+        "Attn: Stephan Leenheer",
+        "590 Granite Ct",
+        "Pickering, Ontario",
+        "L1W 3X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-10505, Part 4",
+      "",
+      "PIN: 43191-0145"
+    ],
+    "arn_text": "38 29 300 002 16350",
+    "consideration_lines": [
+      "cash: $1,417,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 106",
+      "rt_id": "RT190241"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "430 EXMOUTH ST",
+    "postcode": "N7T 5N9",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "02/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1417500",
+    "cash": "1417500",
+    "debt": "",
+    "note": "",
+    "pin": "43191-0145",
+    "rollno": "38 29 300 002 16350"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "430 EXMOUTH ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "03 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mainstreet Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "Long Holdings Inc"
+    ],
+    "price_text": "$1,417,500"
+  }
+}

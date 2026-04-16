@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT65044",
+  "source_folder": "Metro_Toronto/retail/p059",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65044",
+      "source_folder": "Metro_Toronto/retail/p059",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p059/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "377 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "18 Nov 2008",
+      "price_text": "$2,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "AA Group 377 Inc     905-508-5344"
+      ],
+      "trade_name": "Nila International Ltd",
+      "contact_lines": [
+        "Attn: Ali Vakili",
+        "10157 Yonge St, Ste 202",
+        "Richmond Hill, Ontario",
+        "L4C 1T5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2188256 Ontario Inc     416-362-1812"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Louis Forbes",
+        "McCarthy Tetrault LLP",
+        "Box 48, Suite 5300",
+        "Toronto-Dominion Bank Tower",
+        "Toronto, Ontario",
+        "M5K 1E6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2,130 sf @ $1009",
+      "",
+      "Single tenant (leased)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22A",
+      "Part Lot 33, E/S Yonge St",
+      "As in Inst No CA-310343",
+      "",
+      "PIN: 21101-0045",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 066 610 01700",
+    "consideration_lines": [
+      "cash: $2,150,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT650/RT65044/1130_075531.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT650/RT65044/1130_075546.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT650/RT65044/1130_075740.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT650/RT65044/air1.jpg",
+        "/assets/files/RT6/RT650/RT65044/air2.jpg",
+        "/assets/files/RT6/RT650/RT65044/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2922 / 4952",
+      "rt_id": "RT65044"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "377 YONGE ST",
+    "postcode": "M5B 1S1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/18/2008",
+    "desc": "Retail Bldg - 1 storey; 2,130 sf @ $1009",
+    "bldg": "2,130 sf",
+    "acreage": ".05",
+    "consid": "2150000",
+    "cash": "2150000",
+    "debt": "",
+    "note": "",
+    "pin": "21101-0045",
+    "rollno": "19 04 066 610 01700"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "377 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "18 Nov 2008",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2,130 sf @ $1009",
+    "seller_lines": [
+      "AA Group 377 Inc"
+    ],
+    "buyer_lines": [
+      "2188256 Ontario Inc"
+    ],
+    "price_text": "$2,150,000"
+  }
+}

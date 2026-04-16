@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT28658",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28658",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "170 UNIVERSITY AVE W"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "24 Dec 2002",
+      "price_text": "$3,100,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "The Courtyard Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Joseph Wolfond",
+        "BCE Place",
+        "181 Bay St, Ste 2800",
+        "Toronto, Ontario",
+        "M5J 2T3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Armel Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "BCE Place",
+        "181 Bay St, Ste 2800",
+        "Toronto, Ontario",
+        "M5J 2T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Subdivision Plan of Lot 13",
+      "Part Lot 6",
+      "Plan 58R-5431, Part 1"
+    ],
+    "arn_text": "30 16 043 500 02500 +",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $625,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "647 / 752",
+      "rt_id": "RT28658"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "170 UNIVERSITY AVE W",
+    "postcode": "N2L 3E9",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "12/24/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3100000",
+    "cash": "",
+    "debt": "625000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "30 16 043 500 02500+"
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "170 UNIVERSITY AVE W"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "24 Dec 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "The Courtyard Ltd"
+    ],
+    "buyer_lines": [
+      "Armel Corp"
+    ],
+    "price_text": "$3,100,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT197902",
+  "source_folder": "Cochrane/all/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197902",
+      "source_folder": "Cochrane/all/p001",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "1010 POLYTEK ST",
+        "UNITS 44 & 45"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "16 Mar 2026",
+      "price_text": "$785,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Al's Market Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "637 Rye Grass Way",
+        "Ottawa, Ontario",
+        "K2J 6Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "GP Welding & Erecting Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Georges El Khazen",
+        "1010 Polytek St, Units 44 & 45",
+        "Ottawa, Ontario",
+        "K1J 9J2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 345,",
+      "Level 1, Units 44 & 45",
+      "",
+      "PIN: 15345-0044 +"
+    ],
+    "arn_text": "06 06 000 100 22944 +",
+    "consideration_lines": [
+      "cash: $785,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Al's Market Inc",
+      "principal: $585,000   rate: Prime plus 3.0% per annum. To automatically renew if unpaid upon maturity at TD prime plus 10.0% per annum.",
+      "registered: 03/16/2026   due: 03/12/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 10920",
+      "rt_id": "RT197902"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "1010 POLYTEK ST, UNITS 44 & 45",
+    "postcode": "K1J 9J2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/16/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "785000",
+    "cash": "785000",
+    "debt": "",
+    "note": "",
+    "pin": "15345-0044+",
+    "rollno": "06 06 000 100 22944+"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "1010 POLYTEK ST",
+      "UNITS 44 & 45"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "16 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Al's Market Inc"
+    ],
+    "buyer_lines": [
+      "GP Welding & Erecting Ltd"
+    ],
+    "price_text": "$785,000"
+  }
+}

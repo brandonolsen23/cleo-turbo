@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT22040",
+  "source_folder": "Metro_Toronto/retail/p089",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22040",
+      "source_folder": "Metro_Toronto/retail/p089",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p089/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "3477 SHEPPARD AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "04 Jul 2001",
+      "price_text": "$3,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1401050 Ontario Inc     905-275-7131"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Morrison",
+        "Blue Sky Realty Corp",
+        "2085 Hurontario St, Ste 300",
+        "Mississauga, Ontario",
+        "L5A 4G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "612062 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eric Zoebelein",
+        "74 McClure Dr",
+        "King City, Ontario",
+        "L7B 1C3"
+      ]
+    },
+    "description_lines": [
+      "New Retail Bldg - 1 storey; 9,902 sf @ $349",
+      "",
+      "The vacant site sold for $1,385,000 in Nov 2000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4501, Part Block B",
+      "As in Inst No SC-502634",
+      "",
+      "0.87 acre"
+    ],
+    "arn_text": "19 01 101 320 01300",
+    "consideration_lines": [
+      "cash: $3,075,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT220/RT22040/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4425 / 4952",
+      "rt_id": "RT22040"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "3477 SHEPPARD AVE E",
+    "postcode": "M1T 3K6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "07/04/2001",
+    "desc": "New Retail Bldg - 1 storey; 9,902 sf @ $349",
+    "bldg": "9,902 sf",
+    "acreage": ".87",
+    "consid": "3075000",
+    "cash": "3075000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 101 320 01300"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "3477 SHEPPARD AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "04 Jul 2001",
+    "note": "",
+    "description": "New Retail Bldg - 1 storey; 9,902 sf @ $349",
+    "seller_lines": [
+      "1401050 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "612062 Ontario Ltd"
+    ],
+    "price_text": "$3,075,000"
+  }
+}

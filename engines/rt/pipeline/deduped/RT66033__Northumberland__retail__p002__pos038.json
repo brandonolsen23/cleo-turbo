@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT66033",
+  "source_folder": "Northumberland/retail/p002",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66033",
+      "source_folder": "Northumberland/retail/p002",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p002/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "1024 DIVISION ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "05 Feb 2009",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1713408 Ontario Inc     905-720-2277"
+      ],
+      "trade_name": "Davey Auto Sales",
+      "contact_lines": [
+        "Attn: Jeffrey Davey",
+        "99 Bloor St E",
+        "Oshawa, Ontario",
+        "L1H 3M3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1771487 Ontario Ltd     905-372-6131"
+      ],
+      "trade_name": "Rent All Centre",
+      "contact_lines": [
+        "Attn: Brian Wheatley",
+        "30 Elgin St W",
+        "Cobourg, Ontario",
+        "K9A 5T4"
+      ]
+    },
+    "description_lines": [
+      "2 Retail Bldgs - 1 & 2 storey; 3 units 3,000 sf @ $200",
+      "",
+      "Vacant",
+      "To be occupied by the purchaser"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 16",
+      "Plan 39R-2340, Part 1",
+      "Except:",
+      "Plan 39R-8855, Part 16",
+      "",
+      "PIN: 51244-0445",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "14 21 000 170 00600",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66033/0313_075145.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66033/0313_075228.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT660/RT66033/0313_075256.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT660/RT66033/air1.jpg",
+        "/assets/files/RT6/RT660/RT66033/air2.jpg",
+        "/assets/files/RT6/RT660/RT66033/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "89 / 93",
+      "rt_id": "RT66033"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "1024 DIVISION ST",
+    "postcode": "K9A 5Y5",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "02/05/2009",
+    "desc": "2 Retail Bldgs - 1 & 2 storey; 3 units 3,000 sf @ $200",
+    "bldg": "3,000 sf",
+    "acreage": ".6",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "51244-0445",
+    "rollno": "14 21 000 170 00600"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "1024 DIVISION ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "05 Feb 2009",
+    "note": "",
+    "description": "2 Retail Bldgs - 1 & 2 storey; 3 units 3,000 sf @ $200",
+    "seller_lines": [
+      "1713408 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1771487 Ontario Ltd"
+    ],
+    "price_text": "$600,000"
+  }
+}

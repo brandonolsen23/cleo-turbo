@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT23219",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23219",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "8 - 16 GEORGE ST N"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "08 Aug 2001",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Big Rock Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "75 Blackburn Blvd",
+        "Woodbridge, Ontario",
+        "L4L 7J5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kapil Holdings Inc     905-840-9326"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Baldev Kapil",
+        "38 Sandpiper Ct",
+        "Brampton, Ontario",
+        "L6Z 3R6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-10818, Part 1",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "21 10 030 030 04800",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT232/RT23219/photo.jpg"
+    },
+    "footer": {
+      "page_position": "979 / 1087",
+      "rt_id": "RT23219"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "8 - 16 GEORGE ST N",
+    "postcode": "L6X 1R2",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "08/08/2001",
+    "desc": "Retail Bldg - 2 storey",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 030 030 04800"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "8 - 16 GEORGE ST N"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "08 Aug 2001",
+    "note": "",
+    "description": "Retail Bldg - 2 storey",
+    "seller_lines": [
+      "Big Rock Ltd"
+    ],
+    "buyer_lines": [
+      "Kapil Holdings Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

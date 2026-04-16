@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT40835",
+  "source_folder": "Kent_County/comm-ind-land/p002",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40835",
+      "source_folder": "Kent_County/comm-ind-land/p002",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/comm-ind-land/p002/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "29739 ARNOLD RD"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "01 Mar 2005",
+      "price_text": "$510,300",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Van Dommelen Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dave Van Dommelen",
+        "RR 2",
+        "Port Lambton, Ontario",
+        "N0P 2B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Serkka Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Eric Allaer",
+        "5923 Langstaff Line",
+        "Wallaceburg, Ontario"
+      ]
+    },
+    "description_lines": [
+      "Farm - about 97 Ac @ $5,243"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 6",
+      "",
+      "97.34 acre"
+    ],
+    "arn_text": "36 50 410 010 31400",
+    "consideration_lines": [
+      "cash: $510,300     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $357,000   rate: Prime plus 5.0% per annum",
+      "registered: 03/01/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "71 / 99",
+      "rt_id": "RT40835"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "29739 ARNOLD RD",
+    "postcode": "N0B 2B0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "03/01/2005",
+    "desc": "Farm - about 97 Ac @ $5,243",
+    "bldg": "",
+    "acreage": "97.34",
+    "consid": "510300",
+    "cash": "510300",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 410 010 31400"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "29739 ARNOLD RD"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "01 Mar 2005",
+    "note": "",
+    "description": "Farm - about 97 Ac @ $5,243",
+    "seller_lines": [
+      "Van Dommelen Farms Inc"
+    ],
+    "buyer_lines": [
+      "Serkka Farms Inc"
+    ],
+    "price_text": "$510,300"
+  }
+}

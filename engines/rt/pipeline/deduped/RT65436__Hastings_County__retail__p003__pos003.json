@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT65436",
+  "source_folder": "Hastings_County/retail/p003",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65436",
+      "source_folder": "Hastings_County/retail/p003",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hastings_County/retail/p003/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "98 DUNDAS ST W"
+      ],
+      "city_region": "Quinte W : Hastings County",
+      "date_text": "11 Dec 2008",
+      "price_text": "$530,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "BFM (Trenton) Enterprises Society     613-394-1697"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leonard Joosse",
+        "36 White Oaks, RR 3",
+        "Brighton, Ontario",
+        "K0K 1H0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "BFM Foundation Real Estate Management (2008) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jerry Bulthuis",
+        "7491 Vedder Rd, Ste 201",
+        "Chilliwack, British Columbia",
+        "V2R 6E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 76",
+      "Part Lot 5, N/S Ferry St",
+      "As in Inst No QR-640933",
+      "",
+      "PIN: 40391-0054",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "12 04 020 040 40900",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $530,000",
+      "",
+      "chargee: Concentra Financial in Trust for Christian Credit Union Ltd",
+      "principal: $270,000   rate: 5.45% per annum",
+      "registered: 12/11/2008   due: 12/11/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT654/RT65436/0109_084251.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT654/RT65436/0109_084312.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT654/RT65436/0109_084338.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "104 / 111",
+      "rt_id": "RT65436"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "98 DUNDAS ST W",
+    "postcode": "K8V 3P3",
+    "municipality": "Quinte W",
+    "region": "Hastings County",
+    "date": "12/11/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "530000",
+    "cash": "",
+    "debt": "",
+    "note": "Zero Cash",
+    "pin": "40391-0054",
+    "rollno": "12 04 020 040 40900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "98 DUNDAS ST W"
+    ],
+    "city_region": "Quinte W : Hastings County",
+    "date_text": "11 Dec 2008",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "BFM (Trenton) Enterprises Society"
+    ],
+    "buyer_lines": [
+      "BFM Foundation Real Estate Management (2008) Ltd"
+    ],
+    "price_text": "$530,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT183274",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183274",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "33 HOLLAND ST W"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "20 Feb 2024",
+      "price_text": "$1,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "8747059 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Heather & Paul Williamson",
+        "Directors",
+        "2804 Line 9",
+        "Bradford, Ontario",
+        "L3Z 2T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000744098 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Loura Sanada",
+        "188 Baber Cres",
+        "Aurora, Ontario",
+        "L4G 0Y6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 122A,",
+      "Part Block O, N/S Holland St",
+      "As in Inst No RO-548814",
+      "",
+      "PIN: 58028-0191",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "43 12 010 003 08300",
+    "consideration_lines": [
+      "cash: $1,075,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,075,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/20/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183274/0427_071107.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183274/0427_071108.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183274/0427_071109.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183274/0427_071133.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183274/0427_071135.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183274/0427_071140.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "101 / 712",
+      "rt_id": "RT183274"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "33 HOLLAND ST W",
+    "postcode": "",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "02/20/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1075000",
+    "cash": "1075000",
+    "debt": "",
+    "note": "",
+    "pin": "58028-0191",
+    "rollno": "43 12 010 003 08300"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "33 HOLLAND ST W"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "20 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "8747059 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "1000744098 Ontario Inc"
+    ],
+    "price_text": "$1,075,000"
+  }
+}

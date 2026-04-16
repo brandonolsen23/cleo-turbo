@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT64431",
+  "source_folder": "Peel_Region/retail/p014",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64431",
+      "source_folder": "Peel_Region/retail/p014",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p014/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "2642 LIRUMA RD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "30 Sep 2008",
+      "price_text": "$827,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1771178 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mohammad Sheikh",
+        "4550 Ebenezer Rd, Unit 7",
+        "Brampton, Ontario",
+        "L6P 2R2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; about 6,300 sf @ $131"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 467, Part Block B",
+      "As in Inst No RO-985971",
+      "",
+      "PIN: 13422-0198",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "21 05 060 137 01400",
+    "consideration_lines": [
+      "cash: $827,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $0   rate: Base plus 10% per annum",
+      "registered: 09/30/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT644/RT64431/1017_120134.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT644/RT64431/1017_120149.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT644/RT64431/1017_120200.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT644/RT64431/air1.jpg",
+        "/assets/files/RT6/RT644/RT64431/air2.jpg",
+        "/assets/files/RT6/RT644/RT64431/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "674 / 1087",
+      "rt_id": "RT64431"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "2642 LIRUMA RD",
+    "postcode": "L5K 1Z1",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "09/30/2008",
+    "desc": "Retail Plaza - 1 storey; about 6,300 sf @ $131",
+    "bldg": "6,300 sf",
+    "acreage": ".5",
+    "consid": "827500",
+    "cash": "827500",
+    "debt": "",
+    "note": "",
+    "pin": "13422-0198",
+    "rollno": "21 05 060 137 01400"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "2642 LIRUMA RD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "30 Sep 2008",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; about 6,300 sf @ $131",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1771178 Ontario Inc"
+    ],
+    "price_text": "$827,500"
+  }
+}

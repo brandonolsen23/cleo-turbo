@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT144000",
+  "source_folder": "Wellington/retail/p002",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT144000",
+      "source_folder": "Wellington/retail/p002",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p002/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "935 WOODLAWN RD W"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "25 Jun 2019",
+      "price_text": "$7,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "WMG Properties Inc     866-938-0561"
+      ],
+      "trade_name": "AutoCanada",
+      "contact_lines": [
+        "Attn: Peter Hong",
+        "15511 - 123rd Ave NW, Ste 200",
+        "Edmonton, Alberta",
+        "T5V 0C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "APRG (Wellington Woodlawn) Inc     647-789-2440"
+      ],
+      "trade_name": "Automotive Properties REIT",
+      "contact_lines": [
+        "Attn: Milton Lamb",
+        "133 King St E, Ste 300",
+        "Toronto, Ontario",
+        "M5C 1G6"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership",
+      "",
+      "Last transferred in October 2016 for $6,700,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 661, Lot 5",
+      "",
+      "PIN: 71361-0041",
+      "",
+      "3.95 acre"
+    ],
+    "arn_text": "23 08 040 017 18205",
+    "consideration_lines": [
+      "cash: $7,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104023.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104121.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104257.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104327.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104447.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104505.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1440/RT144000/0809_104513.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "86 / 269",
+      "rt_id": "RT144000"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "935 WOODLAWN RD W",
+    "postcode": "N1K 1B7",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "06/25/2019",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "3.95",
+    "consid": "7300000",
+    "cash": "7300000",
+    "debt": "",
+    "note": "",
+    "pin": "71361-0041",
+    "rollno": "23 08 040 017 18205"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "935 WOODLAWN RD W"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "25 Jun 2019",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "WMG Properties Inc"
+    ],
+    "buyer_lines": [
+      "APRG (Wellington Woodlawn) Inc"
+    ],
+    "price_text": "$7,300,000"
+  }
+}

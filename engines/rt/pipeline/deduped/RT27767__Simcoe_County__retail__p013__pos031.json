@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT27767",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27767",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "306 YONGE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "25 Oct 2002",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Superior Propane Inc     403-730-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Gregory Stewart",
+        "1111 49th Ave NE",
+        "Calgary, Alberta",
+        "T2E 8V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "TFB No 100 Inc     705-722-7468"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Francis Metcalfe",
+        "158 Dunlop St E",
+        "Barrie, Ontario",
+        "L4M 1B1"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 14, Part Lot 10",
+      "As in Inst No RO-904753",
+      "Except Plan 51R-19000, Part 1",
+      "",
+      "2.63 acre"
+    ],
+    "arn_text": "43 42 050 002 18400",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "632 / 712",
+      "rt_id": "RT27767"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "306 YONGE ST",
+    "postcode": "L4N 4C7",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "10/25/2002",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "2.63",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 050 002 18400"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "306 YONGE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "25 Oct 2002",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Superior Propane Inc"
+    ],
+    "buyer_lines": [
+      "TFB No 100 Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

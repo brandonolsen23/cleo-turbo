@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT71259",
+  "source_folder": "Peel_Region/retail/p013",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71259",
+      "source_folder": "Peel_Region/retail/p013",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p013/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "2255 DUNDAS ST W"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "11 Mar 2010",
+      "price_text": "$6,000,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Elizabeth Holdings Ltd     905-669-9455"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John DeBoer",
+        "DeBoer's Furniture Ltd",
+        "275 Drumlin Circle",
+        "Concord, Ontario",
+        "L4K 3E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "FCHT Holdings (Ontario) Corp     416-504-4114"
+      ],
+      "trade_name": "First Capital Realty Inc",
+      "contact_lines": [
+        "Attn: Jamie Chisholm",
+        "85 Hanna Ave, Ste 400",
+        "Toronto, Ontario",
+        "M6K 3S3"
+      ]
+    },
+    "description_lines": [
+      "DeBoer's Furniture Store: 2 & 3 storey; 43,000 sf @ $140",
+      "",
+      "Side-split, interior has 5 levels of showroom",
+      "Leased back to DeBoer's"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 915",
+      "Lots 311 & 312",
+      "",
+      "PIN: 13390-0031",
+      "",
+      "NW corner Dundas St W and Dunwin Dr",
+      "",
+      "2.65 acre"
+    ],
+    "arn_text": "21 05 060 155 07300",
+    "consideration_lines": [
+      "cash: $3,000,000     assumed/vtb debt: $3,000,000",
+      "",
+      "chargee: Elizabeth Holdings Ltd",
+      "principal: $3,000,000   rate: 3.0% per annum",
+      "registered: 03/12/2010   due: 09/11/2011",
+      "",
+      "chargee: Zwaantina Holdings Ltd",
+      "principal: $700,000   rate: 3.0% per annum",
+      "registered: 03/12/2010   due: 09/11/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71259/0326_085214.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71259/0326_085314.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71259/0326_085452.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT712/RT71259/0326_085519.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT712/RT71259/air1.jpg",
+        "/assets/files/RT7/RT712/RT71259/air2.jpg",
+        "/assets/files/RT7/RT712/RT71259/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "622 / 1087",
+      "rt_id": "RT71259"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "2255 DUNDAS ST W",
+    "postcode": "L5K 1R6",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "03/11/2010",
+    "desc": "DeBoer's Furniture Store: 2 & 3 storey; 43,000 sf @ $140",
+    "bldg": "43,000 sf",
+    "acreage": "2.65",
+    "consid": "6000000",
+    "cash": "3000000",
+    "debt": "3000000",
+    "note": "Sale Leaseback",
+    "pin": "13390-0031",
+    "rollno": "21 05 060 155 07300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "2255 DUNDAS ST W"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "11 Mar 2010",
+    "note": "Sale Leaseback",
+    "description": "DeBoer's Furniture Store: 2 & 3 storey; 43,000 sf @ $140",
+    "seller_lines": [
+      "Elizabeth Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "FCHT Holdings (Ontario) Corp"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

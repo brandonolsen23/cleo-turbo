@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT28936",
+  "source_folder": "Cochrane/all/p195",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28936",
+      "source_folder": "Cochrane/all/p195",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p195/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "901 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "06 Feb 2003",
+      "price_text": "$500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Edmonton Running Room Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Stanton",
+        "9750 47th Ave",
+        "Edmonton, Alberta",
+        "T6E 5P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "988368 Alberta Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Stanton",
+        "9750 47th Ave",
+        "Edmonton, Alberta",
+        "T6E 5P3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-13, Part Lot D"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9722 / 10920",
+      "rt_id": "RT28936"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "901 BANK ST",
+    "postcode": "K1S 3W5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/06/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "901 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "06 Feb 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Edmonton Running Room Ltd"
+    ],
+    "buyer_lines": [
+      "988368 Alberta Ltd"
+    ],
+    "price_text": "$500,000"
+  }
+}

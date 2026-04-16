@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT103425",
+  "source_folder": "York_Region/retail/p008",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103425",
+      "source_folder": "York_Region/retail/p008",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "11240 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "07 Oct 2014",
+      "price_text": "$10,500,000",
+      "note": "Sale Leaseback Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "1787858 Ontario Ltd     519-680-1800"
+      ],
+      "trade_name": "Toyotatown Ltd",
+      "contact_lines": [
+        "ASO: Mohan Janakiraman",
+        "1065 Wharncliffe Rd S",
+        "London, Ontario",
+        "N6L 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CARS Canada PHA 1 GPSPE LLC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christopher Sokira",
+        "c/o Capital Automotive LLC",
+        "8270 Greensboro Dr, Ste 950",
+        "McLean, VA",
+        "USA - 22102"
+      ]
+    },
+    "description_lines": [
+      "Richmond Hill Toyota Car Dealership",
+      "",
+      "Leased back to the vendor for 40 years."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 54",
+      "Plan 65R-31582, Parts 1 & 2",
+      "",
+      "PIN: 03216-2519",
+      "",
+      "W side Yonge St, N of Silverwood Ave",
+      "",
+      "4.56 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $10,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103425/1018_144056.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103425/1018_144352.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103425/1018_144400.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103425/1018_144416.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1034/RT103425/1018_144420.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "363 / 984",
+      "rt_id": "RT103425"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "11240 YONGE ST",
+    "postcode": "L4S 1K9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "10/07/2014",
+    "desc": "Richmond Hill Toyota Car Dealership",
+    "bldg": "",
+    "acreage": "4.56",
+    "consid": "10500000",
+    "cash": "10500000",
+    "debt": "",
+    "note": "Sale Leaseback Portfolio",
+    "pin": "03216-2519",
+    "rollno": ""
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "11240 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "07 Oct 2014",
+    "note": "Sale Leaseback Portfolio",
+    "description": "Richmond Hill Toyota Car Dealership",
+    "seller_lines": [
+      "1787858 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "CARS Canada PHA 1 GPSPE LLC"
+    ],
+    "price_text": "$10,500,000"
+  }
+}

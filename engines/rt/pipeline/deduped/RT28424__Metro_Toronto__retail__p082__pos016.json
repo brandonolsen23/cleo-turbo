@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT28424",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28424",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "433 QUEEN ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "08 Jan 2003",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "433 Queen Street East Ltd     416-486-4009"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jane Dunk",
+        "129 Heath St E",
+        "Toronto, Ontario",
+        "M4T 1S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1116299 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sam Nella",
+        "148 Norfinch Dr",
+        "Toronto, Ontario",
+        "M3N 1X8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 11,874 sf @ $105",
+      "",
+      "Built in 1985"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 183, Lots 15 & 16, S/S Queen St E",
+      "As in Inst No CT-708094",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "19 04 071 590 01700",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT284/RT28424/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4067 / 4952",
+      "rt_id": "RT28424"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "433 QUEEN ST E",
+    "postcode": "M5A 1T5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/08/2003",
+    "desc": "Retail Bldg - 2 storey; 11,874 sf @ $105",
+    "bldg": "11,874 sf",
+    "acreage": ".17",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 071 590 01700"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "433 QUEEN ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "08 Jan 2003",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 11,874 sf @ $105",
+    "seller_lines": [
+      "433 Queen Street East Ltd"
+    ],
+    "buyer_lines": [
+      "1116299 Ontario Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

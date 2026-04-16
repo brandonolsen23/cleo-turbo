@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT116518",
+  "source_folder": "Cochrane/all/p086",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT116518",
+      "source_folder": "Cochrane/all/p086",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p086/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "DUNNING RD",
+        "CONC 4",
+        "PART LOT 23"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "12 May 2016",
+      "price_text": "$1,176,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "134579 Canada Ltee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ronald Rolin",
+        "2708 Magladry Rd",
+        "Ottawa, Ontario",
+        "K4B 1J1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 23",
+      "As in Inst No RR-42923 (1st & 2ndly)",
+      "",
+      "PIN: 14554-0182",
+      "",
+      "99.42 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,176,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,176,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/12/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4282 / 10920",
+      "rt_id": "RT116518"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "DUNNING RD, CONC 4, PART LOT 23",
+    "postcode": "",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "05/12/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "99.42",
+    "consid": "1176000",
+    "cash": "1176000",
+    "debt": "",
+    "note": "",
+    "pin": "14554-0182",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "DUNNING RD",
+      "CONC 4",
+      "PART LOT 23"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "12 May 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "134579 Canada Ltee"
+    ],
+    "price_text": "$1,176,000"
+  }
+}

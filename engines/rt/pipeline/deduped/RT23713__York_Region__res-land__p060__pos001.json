@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23713",
+  "source_folder": "York_Region/res-land/p060",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23713",
+      "source_folder": "York_Region/res-land/p060",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/res-land/p060/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "407 GAMBLE RD"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "14 Dec 2001",
+      "price_text": "$872,095",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2001438 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Gokhban",
+        "2 Morseby St",
+        "Richmond Hill, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ronedge Holdings Inc     905-731-7201"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Katz",
+        "Edgeport Homes Corp",
+        "250 West Beaver Creek Rd, Ste 1B3",
+        "Richmond Hill, Ontario",
+        "L4B 1C7"
+      ]
+    },
+    "description_lines": [
+      "Res Land - about 3.13 Ac @ $278,482"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4667, Lot 16",
+      "",
+      "3.13 acre"
+    ],
+    "arn_text": "19 38 060 120 65000",
+    "consideration_lines": [
+      "cash: $371,684     assumed/vtb debt: $500,411"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2952 / 3754",
+      "rt_id": "RT23713"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "407 GAMBLE RD",
+    "postcode": "L4S 1K4",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "12/14/2001",
+    "desc": "Res Land - about 3.13 Ac @ $278,482",
+    "bldg": "",
+    "acreage": "3.13",
+    "consid": "872095",
+    "cash": "371684",
+    "debt": "500411",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 060 120 65000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "407 GAMBLE RD"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "14 Dec 2001",
+    "note": "",
+    "description": "Res Land - about 3.13 Ac @ $278,482",
+    "seller_lines": [
+      "2001438 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Ronedge Holdings Inc"
+    ],
+    "price_text": "$872,095"
+  }
+}

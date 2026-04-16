@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT30437",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30437",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "380 - 386 WILSON ST E"
+      ],
+      "city_region": "Ancaster : Hamilton-Wentworth",
+      "date_text": "09 Jun 2003",
+      "price_text": "$908,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1290744 Ontario Inc     905-387-2421"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Virginia Selemidis",
+        "23 Lisgar Ct",
+        "Hamilton, Ontario",
+        "L8T 4Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Zoo's, The Original Pasta Houses Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Wilkins",
+        "245 Wilson St E",
+        "Ancaster, Ontario",
+        "L9G 3B8"
+      ]
+    },
+    "description_lines": [
+      "2 Retail Bldgs"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 45",
+      "As in Inst No CD-444662",
+      "",
+      "SW corner at Academy St",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "25 14 100 250 03800",
+    "consideration_lines": [
+      "cash: $249,000     assumed/vtb debt: $659,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT304/RT30437/photo.jpg"
+    },
+    "footer": {
+      "page_position": "509 / 616",
+      "rt_id": "RT30437"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "380 - 386 WILSON ST E",
+    "postcode": "L9G 2C2",
+    "municipality": "Ancaster",
+    "region": "Hamilton-Wentworth",
+    "date": "06/09/2003",
+    "desc": "2 Retail Bldgs",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "908000",
+    "cash": "249000",
+    "debt": "659000",
+    "note": "",
+    "pin": "",
+    "rollno": "25 14 100 250 03800"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "380 - 386 WILSON ST E"
+    ],
+    "city_region": "Ancaster : Hamilton-Wentworth",
+    "date_text": "09 Jun 2003",
+    "note": "",
+    "description": "2 Retail Bldgs",
+    "seller_lines": [
+      "1290744 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Zoo's, The Original Pasta Houses Ltd"
+    ],
+    "price_text": "$908,000"
+  }
+}

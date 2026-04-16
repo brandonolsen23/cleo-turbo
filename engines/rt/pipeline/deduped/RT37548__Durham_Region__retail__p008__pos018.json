@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT37548",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37548",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "701 BROCK ST N"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "31 Aug 2004",
+      "price_text": "$1,200,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Community Trust Co Ltd     416-763-2291"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wanda Golobic",
+        "2271 Bloor St W",
+        "Toronto, Ontario",
+        "M6S 1P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2045192 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Manmohan Sharma",
+        "3630 Lawrence Ave E, Ste 35",
+        "Toronto, Ontario",
+        "M1G 1P6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 units 23,700 sf @ $51"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-9337, Parts 2-6",
+      "Plan 40R-10247, Part 1",
+      "",
+      "1.45 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Sterling Realty: Bernie Gerrar, 416-283-3000",
+      "Re/Max Keswick: Doug Austin, 905-476-4111"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT375/RT37548/air1.jpg",
+        "/assets/files/RT3/RT375/RT37548/air2.jpg",
+        "/assets/files/RT3/RT375/RT37548/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT375/RT37548/photo.jpg"
+    },
+    "footer": {
+      "page_position": "369 / 506",
+      "rt_id": "RT37548"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "701 BROCK ST N",
+    "postcode": "L1N 8R3",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "08/31/2004",
+    "desc": "Retail Plaza - 1 storey; 9 units 23,700 sf @ $51",
+    "bldg": "23,700 sf",
+    "acreage": "1.45",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "701 BROCK ST N"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "31 Aug 2004",
+    "note": "Power of Sale",
+    "description": "Retail Plaza - 1 storey; 9 units 23,700 sf @ $51",
+    "seller_lines": [
+      "Community Trust Co Ltd"
+    ],
+    "buyer_lines": [
+      "2045192 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT22820",
+  "source_folder": "Metro_Toronto/multifamily/p109",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22820",
+      "source_folder": "Metro_Toronto/multifamily/p109",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p109/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "33 WHITEHALL RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Aug 2001",
+      "price_text": "$785,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1079687 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohamed Sobhy",
+        "14 Birch Ave",
+        "Toronto, Ontario",
+        "M4V 1C8"
+      ]
+    },
+    "description_lines": [
+      "Duplex - 2 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-496, Part Lot 47",
+      "",
+      "S side 100m E of Highland Cres",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 101 340 01200",
+    "consideration_lines": [
+      "cash: $785,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT228/RT22820/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5416 / 6031",
+      "rt_id": "RT22820"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "33 WHITEHALL RD",
+    "postcode": "M4W 2C5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/31/2001",
+    "desc": "Duplex - 2 storey",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "785000",
+    "cash": "785000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 101 340 01200"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "33 WHITEHALL RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Aug 2001",
+    "note": "",
+    "description": "Duplex - 2 storey",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1079687 Ontario Ltd"
+    ],
+    "price_text": "$785,000"
+  }
+}

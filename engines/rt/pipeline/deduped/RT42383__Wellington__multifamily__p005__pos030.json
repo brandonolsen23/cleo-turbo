@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT42383",
+  "source_folder": "Wellington/multifamily/p005",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42383",
+      "source_folder": "Wellington/multifamily/p005",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p005/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 WOODLAWN RD E"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "10 Jun 2005",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "0331734 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Belinda Gvoich",
+        "4466 Lakeside Dr",
+        "Beamsville, Ontario",
+        "L0R 1B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 592, Part Block A",
+      "As in Inst No ROS-153459",
+      "",
+      "0.67 acre"
+    ],
+    "arn_text": "23 08 030 023 07000",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Effort Trust Co",
+      "principal: $600,000   rate: 6.25% per annum",
+      "registered: 06/10/2005   due: 07/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT423/RT42383/photo.jpg"
+    },
+    "footer": {
+      "page_position": "231 / 295",
+      "rt_id": "RT42383"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "550 WOODLAWN RD E",
+    "postcode": "N1E 1C2",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "06/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".67",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 030 023 07000"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "550 WOODLAWN RD E"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "10 Jun 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "0331734 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

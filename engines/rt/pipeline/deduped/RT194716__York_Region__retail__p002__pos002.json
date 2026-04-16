@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT194716",
+  "source_folder": "York_Region/retail/p002",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194716",
+      "source_folder": "York_Region/retail/p002",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "16945 LESLIE ST",
+        "UNIT 7"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "25 Sep 2025",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "16945 Leslie St Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "23 Dodie St",
+        "Aurora, Ontario",
+        "L4G 2L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001347463 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Koenigbaur",
+        "81 Harrison Ave",
+        "Aurora, Ontario",
+        "L4G 1E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1121",
+      "Level 1, Unit 7",
+      "",
+      "PIN: 29652-0007"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $712,500   rate: Prime plus 5.0% per annum.",
+      "registered: 09/25/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173218.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173219.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173230.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173234.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173236.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173413.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173414.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173415.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194716/1101_173449.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "53 / 984",
+      "rt_id": "RT194716"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "16945 LESLIE ST, UNIT 7",
+    "postcode": "L3Y 9A2",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "09/25/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "29652-0007",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "16945 LESLIE ST",
+      "UNIT 7"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "25 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "16945 Leslie St Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1001347463 Ontario Inc"
+    ],
+    "price_text": "$950,000"
+  }
+}

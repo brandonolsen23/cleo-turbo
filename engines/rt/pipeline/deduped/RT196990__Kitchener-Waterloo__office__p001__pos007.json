@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT196990",
+  "source_folder": "Kitchener-Waterloo/office/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196990",
+      "source_folder": "Kitchener-Waterloo/office/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/office/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "285 FREDERICK ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "30 Jan 2026",
+      "price_text": "$1,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2088668 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "285 Frederick St",
+        "Kitchener, Ontario",
+        "N2H 2N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000074379 Ontario Inc     519-576-0768"
+      ],
+      "trade_name": "Probity Medical Research Inc",
+      "contact_lines": [
+        "Pres: Kim Papp",
+        "139 Union St E",
+        "Waterloo, Ontario",
+        "N2J 1C4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 424 - Kitchener,",
+      "Part Lot 12",
+      "As in Inst No 1277704",
+      "",
+      "PIN: 22517-0085",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "30 12 030 002 05600",
+    "consideration_lines": [
+      "cash: $1,175,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 521",
+      "rt_id": "RT196990"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "285 FREDERICK ST",
+    "postcode": "N2H 2N3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "01/30/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1175000",
+    "cash": "1175000",
+    "debt": "",
+    "note": "",
+    "pin": "22517-0085",
+    "rollno": "30 12 030 002 05600"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "285 FREDERICK ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "30 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2088668 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000074379 Ontario Inc"
+    ],
+    "price_text": "$1,175,000"
+  }
+}

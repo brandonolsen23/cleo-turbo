@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT183346",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183346",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "41 MAIN ST"
+      ],
+      "city_region": "Penetanguishene : Simcoe County",
+      "date_text": "16 Jan 2024",
+      "price_text": "$735,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2172626 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "428 Curry Rd",
+        "Midland, Ontario",
+        "L4R 5H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Georgian Bay Native Women's Association"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katherine St Amant",
+        "562 King St",
+        "Midland, Ontario",
+        "L4R 4P3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-4186, Part 1",
+      "",
+      "PIN: 58433-0080",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "43 72 010 005 01300",
+    "consideration_lines": [
+      "cash: $527,750     assumed/vtb debt: $207,250",
+      "",
+      "chargee: Olympia Trust Company",
+      "principal: $477,750   rate: 7.0% per annum.",
+      "registered: 01/16/2024   due: 01/15/2029",
+      "",
+      "chargee: 2172626 Ontario Inc",
+      "principal: $207,250   rate: 10.0% per annum.",
+      "registered: 01/16/2024   due: 01/15/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183346/0427_140430.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183346/0427_140436.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183346/0427_140456.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183346/0427_140502.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183346/0427_140511.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "106 / 712",
+      "rt_id": "RT183346"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "41 MAIN ST",
+    "postcode": "L9M 1S7",
+    "municipality": "Penetanguishene",
+    "region": "Simcoe County",
+    "date": "01/16/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "735000",
+    "cash": "527750",
+    "debt": "207250",
+    "note": "",
+    "pin": "58433-0080",
+    "rollno": "43 72 010 005 01300"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "41 MAIN ST"
+    ],
+    "city_region": "Penetanguishene : Simcoe County",
+    "date_text": "16 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2172626 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Georgian Bay Native Women's Association"
+    ],
+    "price_text": "$735,000"
+  }
+}

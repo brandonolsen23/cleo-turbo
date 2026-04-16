@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT188014",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188014",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "5189 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "11 Jun 2024",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Stongman Properties Inc     905-845-2000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "156 Lakeshore Rd E, Ste 200",
+        "Oakville, Ontario",
+        "L6J 1H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2456657 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ibrahim Fakih",
+        "6197 Kennedy Rd",
+        "Mississauga, Ontario",
+        "L5T 2S8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1214 - Sandwich East",
+      "Lots 189-191",
+      "",
+      "PIN: 01366-0129",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "37 39 070 470 07800",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $840,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/11/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "87 / 460",
+      "rt_id": "RT188014"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "5189 TECUMSEH RD E",
+    "postcode": "N8T 1C3",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "06/11/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "01366-0129",
+    "rollno": "37 39 070 470 07800"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "5189 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "11 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Stongman Properties Inc"
+    ],
+    "buyer_lines": [
+      "2456657 Ontario Ltd"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

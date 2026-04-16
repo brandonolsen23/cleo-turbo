@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT186848",
+  "source_folder": "Lambton/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186848",
+      "source_folder": "Lambton/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "4347 - 4351 PETROLIA LINE"
+      ],
+      "city_region": "Petrolia : Lambton",
+      "date_text": "21 Aug 2024",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2779073 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Hansford St",
+        "Brampton, Ontario",
+        "L6P 3Y5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Griffith Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brett Griffith",
+        "6466 Petrolia Line",
+        "Alvinston, Ontario",
+        "N0N 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6 - Petrolia, Lots 1-5",
+      "Together with:",
+      "Inst No L-494091",
+      "",
+      "PIN: 43458-0055 +",
+      "",
+      "0.94 acre"
+    ],
+    "arn_text": "38 19 000 060 07700 +",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 106",
+      "rt_id": "RT186848"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "4347 - 4351 PETROLIA LINE",
+    "postcode": "N0N 1R0",
+    "municipality": "Petrolia",
+    "region": "Lambton",
+    "date": "08/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".94",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "43458-0055+",
+    "rollno": "38 19 000 060 07700+"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "4347 - 4351 PETROLIA LINE"
+    ],
+    "city_region": "Petrolia : Lambton",
+    "date_text": "21 Aug 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2779073 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Griffith Holdings Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

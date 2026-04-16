@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT41302",
+  "source_folder": "Metro_Toronto/multifamily/p089",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41302",
+      "source_folder": "Metro_Toronto/multifamily/p089",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p089/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "6 ELM GROVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Mar 2005",
+      "price_text": "$532,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 418, Block F",
+      "Part Lot 23",
+      "As in Inst No CA-669254",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 021 300 03000",
+    "consideration_lines": [
+      "cash: $532,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $401,250   rate: 3.85% per annum",
+      "registered: 03/30/2005   due: 04/01/2006"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT413/RT41302/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4436 / 6031",
+      "rt_id": "RT41302"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "6 ELM GROVE",
+    "postcode": "M6K 2J1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "532000",
+    "cash": "532000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 021 300 03000"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "6 ELM GROVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Mar 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$532,000"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT30336",
+  "source_folder": "Halton_Region/multifamily/p007",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30336",
+      "source_folder": "Halton_Region/multifamily/p007",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p007/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "738 HAGER AVE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "30 May 2003",
+      "price_text": "$955,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1348140 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mike Bozinoski",
+        "2272 Barrister Place",
+        "Oakville, Ontario",
+        "L6M 3C4"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 12 units @ $79,625"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 640, Part Block A",
+      "As in Inst No 853522",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "24 02 050 502 07900",
+    "consideration_lines": [
+      "cash: $230,000     assumed/vtb debt: $725,500"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT303/RT30336/photo.jpg"
+    },
+    "footer": {
+      "page_position": "305 / 380",
+      "rt_id": "RT30336"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "738 HAGER AVE",
+    "postcode": "L7S 1R1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "05/30/2003",
+    "desc": "Apartment Bldg - 12 units @ $79,625",
+    "bldg": "12 units",
+    "acreage": ".44",
+    "consid": "955500",
+    "cash": "230000",
+    "debt": "725500",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 502 07900"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "738 HAGER AVE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "30 May 2003",
+    "note": "",
+    "description": "Apartment Bldg - 12 units @ $79,625",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1348140 Ontario Inc"
+    ],
+    "price_text": "$955,500"
+  }
+}

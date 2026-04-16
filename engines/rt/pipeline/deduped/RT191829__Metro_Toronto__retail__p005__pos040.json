@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT191829",
+  "source_folder": "Metro_Toronto/retail/p005",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191829",
+      "source_folder": "Metro_Toronto/retail/p005",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p005/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "1909 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "30 Apr 2025",
+      "price_text": "$5,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2441747 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "131 Rumsey Rd",
+        "Maple, Ontario",
+        "L6A 0W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3445, Part Lots 9 & 10",
+      "Plan 64R-1905, Part 1",
+      "As in Inst No SC-526963",
+      "",
+      "PIN: 06333-0195"
+    ],
+    "arn_text": "19 01 031 350 03100",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191829/0518_064011.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191829/0518_064015.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191829/0518_064018.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191829/0518_064101.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191829/0518_064106.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1918/RT191829/0518_064125.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "241 / 4952",
+      "rt_id": "RT191829"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "1909 LAWRENCE AVE E",
+    "postcode": "M1R 2Y6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "",
+    "pin": "06333-0195",
+    "rollno": "19 01 031 350 03100"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "1909 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "30 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2441747 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

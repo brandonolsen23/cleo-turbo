@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT33723",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33723",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 HWY 20 E",
+        "20 CANBORO RD"
+      ],
+      "city_region": "Pelham : Niagara S",
+      "date_text": "01 Dec 2003",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Acanthus Real Estate Corp     514-871-1268"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "485 McGill St, Ste 1100",
+        "Montreal, Quebec",
+        "H2Y 2H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Westerra Equities Corp     416-222-0815"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Allen",
+        "4211 Yonge St, Ste 230",
+        "North York, Ontario",
+        "M2P 2A9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 10-12 units 55,000 sf @ $44"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 717, Part Block C",
+      "As in Inst No 742786",
+      "",
+      "6.09 acre"
+    ],
+    "arn_text": "27 32 030 004 00700",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "286 / 324",
+      "rt_id": "RT33723"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "20 HWY 20 E, 20 CANBORO RD",
+    "postcode": "",
+    "municipality": "Pelham",
+    "region": "Niagara S",
+    "date": "12/01/2003",
+    "desc": "Retail Plaza - 1 storey; 10-12 units 55,000 sf @ $44",
+    "bldg": "55,000 sf",
+    "acreage": "6.09",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 32 030 004 00700"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "20 HWY 20 E",
+      "20 CANBORO RD"
+    ],
+    "city_region": "Pelham : Niagara S",
+    "date_text": "01 Dec 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 10-12 units 55,000 sf @ $44",
+    "seller_lines": [
+      "Acanthus Real Estate Corp"
+    ],
+    "buyer_lines": [
+      "The Westerra Equities Corp"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

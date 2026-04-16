@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Text, Button, Badge, Heading, TextField } from "@radix-ui/themes";
-import { X, ArrowRight, Warning, Plus, Buildings } from "@phosphor-icons/react";
+import { X, ArrowRight, Warning, Plus, Buildings, MagnifyingGlass } from "@phosphor-icons/react";
 import { fetchApi, postApi } from "../../api/client";
 import type {
   AffiliatedGroup,
   AffiliatedGroupsResponse,
   MergePreviewResponse,
   CreateGroupResponse,
+  GroupSearchResult,
+  GroupSearchResponse,
 } from "../../types";
 
 // ── Types ──────────────────────────────────────────────────────
@@ -34,11 +36,18 @@ export default function ConsolidateGroupsModal({
   const [step, setStep] = useState<Step>("select");
 
   // Target selection
-  const [targetMode, setTargetMode] = useState<"existing" | "new">("existing");
+  const [targetMode, setTargetMode] = useState<"existing" | "search" | "new">("existing");
   const [targetGroupId, setTargetGroupId] = useState<string | null>(null);
   const [newGroupName, setNewGroupName] = useState("");
   const [creating, setCreating] = useState(false);
   const [createError, setCreateError] = useState("");
+
+  // Search mode
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState<GroupSearchResult[]>([]);
+  const [searching, setSearching] = useState(false);
+  const [searchedGroup, setSearchedGroup] = useState<GroupSearchResult | null>(null);
+  const searchTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Preview
   const [preview, setPreview] = useState<MergePreviewResponse | null>(null);
@@ -56,6 +65,27 @@ export default function ConsolidateGroupsModal({
       .finally(() => setLoading(false));
   }, [contactId]);
 
+  // Debounced group search
+  const handleSearch = useCallback((q: string) => {
+    setSearchQuery(q);
+    if (searchTimeout.current) clearTimeout(searchTimeout.current);
+    if (!q.trim()) {
+      setSearchResults([]);
+      setSearching(false);
+      return;
+    }
+    setSearching(true);
+    searchTimeout.current = setTimeout(() => {
+      fetchApi<GroupSearchResponse>("/groups/search", { q: q.trim(), limit: 10 })
+        .then((r) => {
+          // Exclude groups that are already selected in step 1
+          setSearchResults(r.results.filter((g) => !selected.has(g.id)));
+          setSearching(false);
+        })
+        .catch(() => setSearching(false));
+    }, 250);
+  }, [selected]);
+
   const toggleSelect = (id: string) => {
     setSelected((prev) => {
       const next = new Set(prev);
@@ -72,9 +102,13 @@ export default function ConsolidateGroupsModal({
   // Get the target display name for rendering
   const targetGroup = targetMode === "existing"
     ? groups.find((g) => g.id === targetGroupId)
+    : targetMode === "search"
+    ? searchedGroup
     : null;
   const targetDisplayName = targetMode === "existing"
-    ? targetGroup?.display_name ?? ""
+    ? (groups.find((g) => g.id === targetGroupId)?.display_name ?? "")
+    : targetMode === "search"
+    ? (searchedGroup?.display_name ?? "")
     : newGroupName;
 
   // Source groups = all selected minus the target (if target is existing and selected)
@@ -308,60 +342,40 @@ export default function ConsolidateGroupsModal({
           <>
             <div className="flex-1 overflow-y-auto px-5 py-4">
               <Text size="2" className="block mb-4">
-                Choose which group everything should be consolidated under, or
-                create a new parent group.
+                Choose which group everything should be consolidated under —
+                pick from selected groups, search for any group, or create a new one.
               </Text>
 
-              {/* Toggle: existing vs new */}
+              {/* Toggle: existing vs search vs new */}
               <div className="flex gap-1 mb-4">
-                <button
-                  className="px-3 py-1.5 text-[13px] font-medium rounded-md border transition-colors"
-                  style={{
-                    borderColor:
-                      targetMode === "existing"
-                        ? "var(--accent-7)"
-                        : "var(--gray-6)",
-                    background:
-                      targetMode === "existing"
-                        ? "var(--accent-2)"
-                        : "transparent",
-                    color:
-                      targetMode === "existing"
-                        ? "var(--accent-11)"
-                        : "var(--gray-11)",
-                  }}
-                  onClick={() => setTargetMode("existing")}
-                >
-                  <Buildings
-                    size={14}
-                    className="inline mr-1.5"
-                    style={{ marginTop: -2 }}
-                  />
-                  Use existing group
-                </button>
-                <button
-                  className="px-3 py-1.5 text-[13px] font-medium rounded-md border transition-colors"
-                  style={{
-                    borderColor:
-                      targetMode === "new"
-                        ? "var(--accent-7)"
-                        : "var(--gray-6)",
-                    background:
-                      targetMode === "new" ? "var(--accent-2)" : "transparent",
-                    color:
-                      targetMode === "new"
-                        ? "var(--accent-11)"
-                        : "var(--gray-11)",
-                  }}
-                  onClick={() => setTargetMode("new")}
-                >
-                  <Plus
-                    size={14}
-                    className="inline mr-1.5"
-                    style={{ marginTop: -2 }}
-                  />
-                  Create new group
-                </button>
+                {([
+                  { mode: "existing" as const, icon: <Buildings size={14} className="inline mr-1.5" style={{ marginTop: -2 }} />, label: "Use selected group" },
+                  { mode: "search" as const, icon: <MagnifyingGlass size={14} className="inline mr-1.5" style={{ marginTop: -2 }} />, label: "Search all groups" },
+                  { mode: "new" as const, icon: <Plus size={14} className="inline mr-1.5" style={{ marginTop: -2 }} />, label: "Create new group" },
+                ]).map(({ mode, icon, label }) => (
+                  <button
+                    key={mode}
+                    className="px-3 py-1.5 text-[13px] font-medium rounded-md border transition-colors"
+                    style={{
+                      borderColor:
+                        targetMode === mode
+                          ? "var(--accent-7)"
+                          : "var(--gray-6)",
+                      background:
+                        targetMode === mode
+                          ? "var(--accent-2)"
+                          : "transparent",
+                      color:
+                        targetMode === mode
+                          ? "var(--accent-11)"
+                          : "var(--gray-11)",
+                    }}
+                    onClick={() => setTargetMode(mode)}
+                  >
+                    {icon}
+                    {label}
+                  </button>
+                ))}
               </div>
 
               {targetMode === "existing" ? (
@@ -392,6 +406,92 @@ export default function ConsolidateGroupsModal({
                       )}
                     </div>
                   ))}
+                </div>
+              ) : targetMode === "search" ? (
+                <div className="space-y-3">
+                  <TextField.Root
+                    size="2"
+                    placeholder="Search by group name..."
+                    value={searchQuery}
+                    onChange={(e) => handleSearch(e.target.value)}
+                  >
+                    <TextField.Slot>
+                      <MagnifyingGlass size={14} style={{ color: "var(--gray-9)" }} />
+                    </TextField.Slot>
+                  </TextField.Root>
+
+                  {/* Selected search result */}
+                  {searchedGroup && (
+                    <div
+                      className="flex items-center justify-between px-3 py-2.5 rounded-md bg-[var(--jade-3)] border border-[var(--jade-7)]"
+                    >
+                      <div>
+                        <Text size="2" weight="medium" className="block">
+                          {searchedGroup.display_name}
+                        </Text>
+                        <Text size="1" style={{ color: "var(--gray-9)" }}>
+                          {searchedGroup.property_count} properties,{" "}
+                          {searchedGroup.transaction_count} txns,{" "}
+                          {searchedGroup.contact_count} contacts
+                        </Text>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Badge size="1" color="jade">Target</Badge>
+                        <button
+                          className="p-0.5 rounded hover:bg-[var(--jade-5)] transition-colors"
+                          onClick={() => {
+                            setSearchedGroup(null);
+                            setTargetGroupId(null);
+                          }}
+                        >
+                          <X size={14} style={{ color: "var(--jade-11)" }} />
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Search results */}
+                  {!searchedGroup && searching && (
+                    <Text size="1" style={{ color: "var(--gray-9)" }} className="block py-2 text-center">
+                      Searching...
+                    </Text>
+                  )}
+                  {!searchedGroup && !searching && searchQuery.trim() && searchResults.length === 0 && (
+                    <Text size="1" style={{ color: "var(--gray-9)" }} className="block py-2 text-center">
+                      No groups found matching "{searchQuery}"
+                    </Text>
+                  )}
+                  {!searchedGroup && searchResults.length > 0 && (
+                    <div className="flex flex-col gap-1">
+                      {searchResults.map((g) => (
+                        <div
+                          key={g.id}
+                          className="flex items-center justify-between px-3 py-2.5 rounded-md cursor-pointer hover:bg-[var(--gray-3)] border border-transparent transition-colors"
+                          onClick={() => {
+                            setSearchedGroup(g);
+                            setTargetGroupId(g.id);
+                            setSearchResults([]);
+                          }}
+                        >
+                          <div>
+                            <Text size="2" weight="medium" className="block">
+                              {g.display_name}
+                            </Text>
+                            <Text size="1" style={{ color: "var(--gray-9)" }}>
+                              {g.property_count} properties,{" "}
+                              {g.transaction_count} txns,{" "}
+                              {g.contact_count} contacts
+                            </Text>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {!searchedGroup && !searchQuery.trim() && (
+                    <Text size="1" style={{ color: "var(--gray-9)" }}>
+                      Search for any group in the system to use as the consolidation target.
+                    </Text>
+                  )}
                 </div>
               ) : (
                 <div className="space-y-3">
@@ -437,6 +537,7 @@ export default function ConsolidateGroupsModal({
                 size="2"
                 disabled={
                   (targetMode === "existing" && !targetGroupId) ||
+                  (targetMode === "search" && !searchedGroup) ||
                   (targetMode === "new" && !newGroupName.trim()) ||
                   creating
                 }

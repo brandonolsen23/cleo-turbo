@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT192556",
+  "source_folder": "Kent_County/multifamily/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192556",
+      "source_folder": "Kent_County/multifamily/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/multifamily/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "9 MYRTLE ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "02 Jun 2025",
+      "price_text": "$3,375,369",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "1254537 Ontario Ltd     289-719-3101"
+      ],
+      "trade_name": "Revera Inc",
+      "contact_lines": [
+        "22 Adelaide St W, Ste 2010",
+        "Toronto, Ontario",
+        "M5H 4E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Extendicare (Canada) Inc     905-470-4000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Bacon",
+        "3000 Steeles Ave E, Ste 103",
+        "Markham, Ontario",
+        "L3R 4T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10 - Howard, Part Lot 10",
+      "Plan 24R-3100, Parts 1 & 2",
+      "",
+      "PIN: 00706-0063",
+      "",
+      "5.10 acre"
+    ],
+    "arn_text": "36 24 300 000 40700",
+    "consideration_lines": [
+      "cash: $3,375,369     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $450,000,000   rate: 25.0% per annum.",
+      "registered: 06/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 114",
+      "rt_id": "RT192556"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "9 MYRTLE ST",
+    "postcode": "N0P 2C0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "06/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.1",
+    "consid": "3375369",
+    "cash": "3375369",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "00706-0063",
+    "rollno": "36 24 300 000 40700"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "9 MYRTLE ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "02 Jun 2025",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "1254537 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Extendicare (Canada) Inc"
+    ],
+    "price_text": "$3,375,369"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "rt_id": "RT195078",
+  "source_folder": "Stormont/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195078",
+      "source_folder": "Stormont/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "960 BROOKDALE AVE"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "30 Oct 2025",
+      "price_text": "$21,860,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Property Holdings Inc     416-628-7771"
+      ],
+      "trade_name": "Choice Properties REIT",
+      "contact_lines": [
+        "The Weston Centre",
+        "22 St Clair Ave E, Ste 700",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Eastern Ontario Retail Portfolio Title Ltd     604-568-9982"
+      ],
+      "trade_name": "Lotus Capital Corp",
+      "contact_lines": [
+        "Attn: Cameron Grieve",
+        "475 West Georgia St, Ste 950",
+        "Vancouver, British Columbia",
+        "V6B 4M9"
+      ]
+    },
+    "description_lines": [
+      "Brookdale Centre: 1 storey; 16 tenants 139,978 sf @ $156",
+      "",
+      "90% occupied",
+      "",
+      "Anchored by Food Basics, Dollarama, Scotiabank & Planet Fitness",
+      "",
+      "Built 1968-2002"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 13",
+      "Plan 52R-8640, Parts 1-5, 7-13",
+      "",
+      "PIN: 60212-0638",
+      "",
+      "13.26 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $18,137,133     assumed/vtb debt: $3,722,867",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $44,000,000   rate: 4.240% per annum.",
+      "registered: 10/30/2025   due: 10/30/2030",
+      "",
+      "chargee: CPH Master GP Trust Inc",
+      "Choice Properties GP Inc",
+      "principal: $11,335,500   rate: 6.0% per annum.",
+      "registered: 10/30/2025   due: 10/30/2028"
+    ],
+    "broker_lines": [
+      "Avison Young: Cam Lewis & Ankit Jindal, 905-467-2276"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1950/RT195078/air1.jpg",
+        "/assets/files/RT19/RT1950/RT195078/air2.jpg",
+        "/assets/files/RT19/RT1950/RT195078/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 29",
+      "rt_id": "RT195078"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "960 BROOKDALE AVE",
+    "postcode": "K6J 4P5",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "10/30/2025",
+    "desc": "Brookdale Centre: 1 storey; 16 tenants 139,978 sf @ $156",
+    "bldg": "139,978 sf",
+    "acreage": "13.26",
+    "consid": "21860000",
+    "cash": "18137133",
+    "debt": "3722867",
+    "note": "Portfolio",
+    "pin": "60212-0638",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "960 BROOKDALE AVE"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "30 Oct 2025",
+    "note": "Portfolio",
+    "description": "Brookdale Centre: 1 storey; 16 tenants 139,978 sf @ $156",
+    "seller_lines": [
+      "Canadian Property Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Eastern Ontario Retail Portfolio Title Ltd"
+    ],
+    "price_text": "$21,860,000"
+  }
+}

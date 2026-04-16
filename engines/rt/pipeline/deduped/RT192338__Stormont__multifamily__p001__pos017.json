@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT192338",
+  "source_folder": "Stormont/multifamily/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192338",
+      "source_folder": "Stormont/multifamily/p001",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/multifamily/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "113 PITT ST"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "28 Apr 2025",
+      "price_text": "$860,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000524814 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Sarjeant Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Sarjeant",
+        "95 Queen St",
+        "Bowmanville, Ontario",
+        "L1C 1M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 52R-8313, Part 1",
+      "",
+      "PIN: 60167-0267",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "04 02 040 001 06600",
+    "consideration_lines": [
+      "cash: $860,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Solidity Group Mortgage Investment Corp",
+      "principal: $602,000   rate: 12.0% per annum.",
+      "registered: 04/28/2025   due: 04/25/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 63",
+      "rt_id": "RT192338"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "113 PITT ST",
+    "postcode": "K6J 3P5",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "04/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "860000",
+    "cash": "860000",
+    "debt": "",
+    "note": "",
+    "pin": "60167-0267",
+    "rollno": "04 02 040 001 06600"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "113 PITT ST"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "28 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000524814 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Sarjeant Holdings Ltd"
+    ],
+    "price_text": "$860,000"
+  }
+}

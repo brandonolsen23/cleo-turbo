@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT26017",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26017",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "225 KING ST E"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "15 Jul 2002",
+      "price_text": "$600,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Dongroup Ltd     905-631-6566"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: JA Boultbee",
+        "Rick Tomulka Real Estate Corp",
+        "3410 South Service Rd",
+        "Burlington, Ontario",
+        "L7N 3T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1430784 Ontario Inc     416-231-0809"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Linda Tomulka",
+        "47 Valecrest Dr",
+        "Toronto, Ontario",
+        "M9A 4P5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg",
+      "",
+      "Rick and Linda Tomulka are married."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-18660, Parts 1-4",
+      "Except as Inst No N-56597",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "18 17 020 110 12200",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "429 / 506",
+      "rt_id": "RT26017"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "225 KING ST E",
+    "postcode": "L1B 1H4",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "07/15/2002",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "18 17 020 110 12200"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "225 KING ST E"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "15 Jul 2002",
+    "note": "Related Parties",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Dongroup Ltd"
+    ],
+    "buyer_lines": [
+      "1430784 Ontario Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT44902",
+  "source_folder": "Wellington/retail/p005",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44902",
+      "source_folder": "Wellington/retail/p005",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 - 79 WILLOW RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "19 Oct 2005",
+      "price_text": "$2,825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Willow Court Ltd     519-822-4066"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kenneth Fish",
+        "Albert Fish Associates Ltd",
+        "144 Speedvale Ave W",
+        "PO Box 112",
+        "Guelph, Ontario",
+        "N1H 6J6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 593, Lots 6-8",
+      "Except Inst Nos:",
+      "MS-73909, ROS-636516,",
+      "ROS-541701 & ROS-655803",
+      "",
+      "2.07 acre"
+    ],
+    "arn_text": "23 08 040 016 36100",
+    "consideration_lines": [
+      "cash: $2,825,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT449/RT44902/photo.jpg"
+    },
+    "footer": {
+      "page_position": "207 / 269",
+      "rt_id": "RT44902"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "44 - 79 WILLOW RD",
+    "postcode": "N1H 1W2",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "10/19/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.07",
+    "consid": "2825000",
+    "cash": "2825000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 040 016 36100"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "44 - 79 WILLOW RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "19 Oct 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Willow Court Ltd"
+    ],
+    "price_text": "$2,825,000"
+  }
+}

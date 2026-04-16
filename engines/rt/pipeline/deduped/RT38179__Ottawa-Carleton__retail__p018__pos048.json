@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT38179",
+  "source_folder": "Ottawa-Carleton/retail/p018",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38179",
+      "source_folder": "Ottawa-Carleton/retail/p018",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p018/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "1656 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Oct 2004",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ottawa Goodtime Centre Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bryan Thoms",
+        "450 West Hunt Club Rd",
+        "Ottawa, Ontario",
+        "K2E 1B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "6007406 Canada Inc     613-523-0940"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hussein Matar",
+        "2740 Equus Way",
+        "Ottawa, Ontario",
+        "K1T 1W3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-5407, Parts 3 & 4",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "06 14 116 301 58201",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT381/RT38179/photo.jpg"
+    },
+    "footer": {
+      "page_position": "899 / 1141",
+      "rt_id": "RT38179"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "1656 BANK ST",
+    "postcode": "K1V 7Y6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/01/2004",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 116 301 58201"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "1656 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Oct 2004",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Ottawa Goodtime Centre Ltd"
+    ],
+    "buyer_lines": [
+      "6007406 Canada Inc"
+    ],
+    "price_text": "$525,000"
+  }
+}

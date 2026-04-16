@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT34500",
+  "source_folder": "Cochrane/all/p188",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34500",
+      "source_folder": "Cochrane/all/p188",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p188/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "793 RICHMOND RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Mar 2004",
+      "price_text": "$660,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Carastan Carpet Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1120919 Ontario Inc     613-723-9227"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Cuckoo Kochar",
+        "Phoenix Homes",
+        "18 Bentley Ave",
+        "Ottawa, Ontario",
+        "K2E 6T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10F, Part Lot 27",
+      "As in Inst No N-369123",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "06 14 094 902 07500",
+    "consideration_lines": [
+      "cash: $660,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT345/RT34500/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9370 / 10920",
+      "rt_id": "RT34500"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "793 RICHMOND RD",
+    "postcode": "K2A 0G7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "660000",
+    "cash": "660000",
+    "debt": "",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "06 14 094 902 07500"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "793 RICHMOND RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Mar 2004",
+    "note": "Purchase & Sale",
+    "description": "",
+    "seller_lines": [
+      "Carastan Carpet Co Ltd"
+    ],
+    "buyer_lines": [
+      "1120919 Ontario Inc"
+    ],
+    "price_text": "$660,000"
+  }
+}

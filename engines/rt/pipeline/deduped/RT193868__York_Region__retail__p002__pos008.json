@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT193868",
+  "source_folder": "York_Region/retail/p002",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193868",
+      "source_folder": "York_Region/retail/p002",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "9471 YONGE ST",
+        "UNIT 105"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "15 Aug 2025",
+      "price_text": "$1,010,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Xpression Commercial Inc     905-669-1588"
+      ],
+      "trade_name": "Four-Valleys",
+      "contact_lines": [
+        "Attn: Nick Cortellucci",
+        "137 Bowes Rd",
+        "Concord, Ontario",
+        "L4K 1H3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Gem Health Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sina Jahromi",
+        "9471 Yonge St, Ste 105",
+        "Richmond Hill, Ontario",
+        "L4C 0Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1365",
+      "Level 1, Unit 5",
+      "",
+      "PIN: 29896-0005"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,010,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $757,500   rate: Prime plus 5.0% per annum.",
+      "registered: 08/15/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193868/0831_123507.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193868/0831_123634.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193868/0831_123649.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193868/0831_123653.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1938/RT193868/0831_123852.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "59 / 984",
+      "rt_id": "RT193868"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "9471 YONGE ST, UNIT 105",
+    "postcode": "L4C 0Z5",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "08/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1010000",
+    "cash": "1010000",
+    "debt": "",
+    "note": "",
+    "pin": "29896-0005",
+    "rollno": ""
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "9471 YONGE ST",
+      "UNIT 105"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "15 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Xpression Commercial Inc"
+    ],
+    "buyer_lines": [
+      "Gem Health Inc"
+    ],
+    "price_text": "$1,010,000"
+  }
+}

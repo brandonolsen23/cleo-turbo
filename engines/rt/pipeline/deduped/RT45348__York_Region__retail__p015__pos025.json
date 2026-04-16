@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT45348",
+  "source_folder": "York_Region/retail/p015",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45348",
+      "source_folder": "York_Region/retail/p015",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "7714 MARTIN GROVE RD"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "31 Oct 2005",
+      "price_text": "$645,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2044632 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Salvatore Culmore",
+        "5655 Highway 7, Ste A",
+        "Woodbridge, Ontario",
+        "L4L 1T7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "622052 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mario Palermo",
+        "2725B Jane St",
+        "Toronto, Ontario",
+        "M3L 1S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 5",
+      "Plan 64R-5617, Part 1",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "19 28 000 320 93500",
+    "consideration_lines": [
+      "cash: $645,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT453/RT45348/air1.jpg",
+        "/assets/files/RT4/RT453/RT45348/air2.jpg",
+        "/assets/files/RT4/RT453/RT45348/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "726 / 984",
+      "rt_id": "RT45348"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "7714 MARTIN GROVE RD",
+    "postcode": "L4L 2C4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "10/31/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "645000",
+    "cash": "645000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 320 93500"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "7714 MARTIN GROVE RD"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "31 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2044632 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "622052 Ontario Inc"
+    ],
+    "price_text": "$645,000"
+  }
+}

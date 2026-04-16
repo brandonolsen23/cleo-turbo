@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT77660",
+  "source_folder": "York_Region/retail/p010",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77660",
+      "source_folder": "York_Region/retail/p010",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p010/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "32 WELLINGTON ST"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "01 Apr 2011",
+      "price_text": "$1,660,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Si-Pharm Ltd     905-841-4442"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Emil Simon",
+        "9 Harriman Rd",
+        "Aurora, Ontario",
+        "L4G 2S7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Maplerock Investments Ltd     905-946-8655"
+      ],
+      "trade_name": "JJ McAteer & Associates Inc",
+      "contact_lines": [
+        "Attn: John McAteer",
+        "45 McIntosh Dr",
+        "Markham, Ontario",
+        "L3R 8C7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2 tenants 5,300 sf @ $313",
+      "",
+      "Fully leased to an art gallery (owned by the vendor) and a cigar store",
+      "Vendor has leased back the art gallery space for one year"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 36, Lots 21-23",
+      "",
+      "PIN: 03637-0335",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "19 46 000 011 11400",
+    "consideration_lines": [
+      "cash: $1,660,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "L.H. Lind Realty: Lenard Lind, 905-841-0000"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT776/RT77660/0415_144650.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT776/RT77660/0415_144742.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT776/RT77660/0415_144819.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT776/RT77660/air1.jpg",
+        "/assets/files/RT7/RT776/RT77660/air2.jpg",
+        "/assets/files/RT7/RT776/RT77660/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "500 / 984",
+      "rt_id": "RT77660"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "32 WELLINGTON ST",
+    "postcode": "L4G 2N8",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "04/01/2011",
+    "desc": "Retail Bldg - 1 storey; 2 tenants 5,300 sf @ $313",
+    "bldg": "5,300 sf",
+    "acreage": ".68",
+    "consid": "1660000",
+    "cash": "1660000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "03637-0335",
+    "rollno": "19 46 000 011 11400"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "32 WELLINGTON ST"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "01 Apr 2011",
+    "note": "Sale Leaseback",
+    "description": "Retail Bldg - 1 storey; 2 tenants 5,300 sf @ $313",
+    "seller_lines": [
+      "Si-Pharm Ltd"
+    ],
+    "buyer_lines": [
+      "Maplerock Investments Ltd"
+    ],
+    "price_text": "$1,660,000"
+  }
+}

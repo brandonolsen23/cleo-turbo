@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT14071",
+  "source_folder": "Niagara_S/retail/p007",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14071",
+      "source_folder": "Niagara_S/retail/p007",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p007/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "841 - 845 NIAGARA ST N"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "07 Jan 1999",
+      "price_text": "$2,656,422",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tricon Global Restaurants (Canada) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Dir: Bruce Moore",
+        "10 Carlson Ct, Ste 400",
+        "Etobicoke, Ontario",
+        "M9W 6L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Southdown Builders Ltd     416-483-1519"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Les Feldman",
+        "2041 Avenue Rd",
+        "Toronto, Ontario",
+        "M5M 4A4"
+      ]
+    },
+    "description_lines": [
+      "Two Retail Bldgs - Pizza Hut & TD Bank"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-9893, Parts 2, 6, 15 & 17",
+      "",
+      "1.34 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,656,422     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $514,500   rate: Prime plus 5.0% per annum.",
+      "registered: 02/01/2019   due: on demand",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $700,000   rate: Floating base rate plus 10.05 per annum.",
+      "registered: 02/06/2019   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $650,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/08/2019   due: on demand",
+      "",
+      "chargee: 2476778 Ontario Inc",
+      "principal: $590,000   rate: 2.5% per annum.",
+      "registered: 02/04/2019   due: 10/31/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "324 / 324",
+      "rt_id": "RT14071"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "841 - 845 NIAGARA ST N",
+    "postcode": "",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "01/07/1999",
+    "desc": "Two Retail Bldgs - Pizza Hut & TD Bank",
+    "bldg": "",
+    "acreage": "1.34",
+    "consid": "2656422",
+    "cash": "2656422",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "841 - 845 NIAGARA ST N"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "07 Jan 1999",
+    "note": "",
+    "description": "Two Retail Bldgs - Pizza Hut & TD Bank",
+    "seller_lines": [
+      "Tricon Global Restaurants (Canada) Inc"
+    ],
+    "buyer_lines": [
+      "Southdown Builders Ltd"
+    ],
+    "price_text": "$2,656,422"
+  }
+}

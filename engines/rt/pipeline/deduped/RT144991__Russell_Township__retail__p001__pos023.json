@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT144991",
+  "source_folder": "Russell_Township/retail/p001",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT144991",
+      "source_folder": "Russell_Township/retail/p001",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Russell_Township/retail/p001/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "654 NOTRE DAME ST",
+        "1092 ST ANDRE RD"
+      ],
+      "city_region": "Russell : Russell Township",
+      "date_text": "28 Jun 2019",
+      "price_text": "$2,777,137",
+      "note": "Portfolio; Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Giant Tiger Stores Ltd",
+        "GT Wholesale Ltd     613-521-8222"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Haig",
+        "2480 Walkley Rd",
+        "Ottawa, Ontario",
+        "K1G 6A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "QAB Ontario Investments Ltd     514-593-8888"
+      ],
+      "trade_name": "Divco Ltd",
+      "contact_lines": [
+        "Attn: Jordan Aberman",
+        "8300 Pie-IX Blvd",
+        "Montreal, Quebec",
+        "H1Z 4E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 9",
+      "Plan 50R-5792, Part 1",
+      "Plan 50R-5304, Part 1",
+      "",
+      "PIN: 69006-0098 +",
+      "",
+      "3.23 acre"
+    ],
+    "arn_text": "03 06 000 006 03805 +",
+    "consideration_lines": [
+      "cash: $2,777,137     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $25,000,000   rate: 25.0% per annum.",
+      "registered: 06/28/2019   due: on demand",
+      "",
+      "chargee: Rainbow Finance Corp",
+      "principal: $15,000,000   rate: 25.0% per annum.",
+      "registered: 06/28/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "24 / 33",
+      "rt_id": "RT144991"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "654 NOTRE DAME ST, 1092 ST ANDRE RD",
+    "postcode": "K0A 1W1",
+    "municipality": "Russell",
+    "region": "Russell Township",
+    "date": "06/28/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.23",
+    "consid": "2777137",
+    "cash": "2777137",
+    "debt": "",
+    "note": "Portfolio; Sale Leaseback",
+    "pin": "69006-0098+",
+    "rollno": "03 06 000 006 03805+"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "654 NOTRE DAME ST",
+      "1092 ST ANDRE RD"
+    ],
+    "city_region": "Russell : Russell Township",
+    "date_text": "28 Jun 2019",
+    "note": "Portfolio; Sale Leaseback",
+    "description": "",
+    "seller_lines": [
+      "Giant Tiger Stores Ltd",
+      "GT Wholesale Ltd"
+    ],
+    "buyer_lines": [
+      "QAB Ontario Investments Ltd"
+    ],
+    "price_text": "$2,777,137"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT72150",
+  "source_folder": "Metro_Toronto/retail/p054",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72150",
+      "source_folder": "Metro_Toronto/retail/p054",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p054/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "675 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 May 2010",
+      "price_text": "$1,425,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "1181982 Ontario Ltd     905-696-7711"
+      ],
+      "trade_name": "Pan-Asia Food Co",
+      "contact_lines": [
+        "Pres: Chang Lee",
+        "435 Ambassador Dr",
+        "Mississauga, Ontario",
+        "L5T 2J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PAT Central Market Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Min Lee",
+        "675 Bloor St W",
+        "Toronto, Ontario",
+        "M6G 1L3"
+      ]
+    },
+    "description_lines": [
+      "Grocery Store - 1 storey; 7,000 sf @ $204"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 75",
+      "Part Lot 22, E/S Clinton St",
+      "As in Inst No CA-535514",
+      "",
+      "PIN: 21255-0273",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "19 04 044 460 07500",
+    "consideration_lines": [
+      "cash: $1,425,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1181982 Ontario Inc",
+      "1973 Lawrence Avenue East Inc",
+      "principal: $500,000   rate: 5.0% per annum",
+      "registered: 05/05/2010   due: 05/05/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72150/0515_073631.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72150/0515_073701.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72150/0515_073724.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT721/RT72150/air1.jpg",
+        "/assets/files/RT7/RT721/RT72150/air2.jpg",
+        "/assets/files/RT7/RT721/RT72150/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2657 / 4952",
+      "rt_id": "RT72150"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "675 BLOOR ST W",
+    "postcode": "M6C 1L3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/05/2010",
+    "desc": "Grocery Store - 1 storey; 7,000 sf @ $204",
+    "bldg": "7,000 sf",
+    "acreage": ".3",
+    "consid": "1425000",
+    "cash": "1425000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "21255-0273",
+    "rollno": "19 04 044 460 07500"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "675 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 May 2010",
+    "note": "Purchased by Tenant",
+    "description": "Grocery Store - 1 storey; 7,000 sf @ $204",
+    "seller_lines": [
+      "1181982 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "PAT Central Market Inc"
+    ],
+    "price_text": "$1,425,000"
+  }
+}

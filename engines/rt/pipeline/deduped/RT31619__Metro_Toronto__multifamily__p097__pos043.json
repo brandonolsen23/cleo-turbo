@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT31619",
+  "source_folder": "Metro_Toronto/multifamily/p097",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31619",
+      "source_folder": "Metro_Toronto/multifamily/p097",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p097/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "469 RONCESVALLES AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Sep 2003",
+      "price_text": "$780,100",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1584062 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Wuebbolt",
+        "1554A Bloor St W",
+        "Toronto, Ontario",
+        "M6P 1A4"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 798, Part Lots 67-68",
+      "As is Inst CA-738398",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 023 430 00700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4844 / 6031",
+      "rt_id": "RT31619"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "469 RONCESVALLES AVE",
+    "postcode": "M6R 2N4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/03/2003",
+    "desc": "Apartment Bldg",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "780100",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 023 430 00700"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "469 RONCESVALLES AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Sep 2003",
+    "note": "Related Parties",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1584062 Ontario Ltd"
+    ],
+    "price_text": "$780,100"
+  }
+}

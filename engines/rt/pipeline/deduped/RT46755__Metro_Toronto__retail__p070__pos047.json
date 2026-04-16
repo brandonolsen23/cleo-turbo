@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT46755",
+  "source_folder": "Metro_Toronto/retail/p070",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46755",
+      "source_folder": "Metro_Toronto/retail/p070",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p070/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "2950 BIRCHMOUNT RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "31 Jan 2006",
+      "price_text": "$5,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Paulman Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Cheung",
+        "350 Highway 7 E, Ste 301",
+        "Richmond Hill, Ontario",
+        "L4B 3N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Birchwood Property Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Fred Wang",
+        "3636 Steeles Ave E, Ste 302",
+        "Markham, Ontario",
+        "L3R 1K9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 30",
+      "Plan 64R-2763, Parts 3-7",
+      "Except:",
+      "Plan 64R-6975, Parts 1-5",
+      "",
+      "1.69 acre"
+    ],
+    "arn_text": "19 01 104 270 00600",
+    "consideration_lines": [
+      "cash: $5,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT467/RT46755/air1.jpg",
+        "/assets/files/RT4/RT467/RT46755/air2.jpg",
+        "/assets/files/RT4/RT467/RT46755/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT467/RT46755/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3498 / 4952",
+      "rt_id": "RT46755"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "2950 BIRCHMOUNT RD",
+    "postcode": "M1W 3G5",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/31/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.69",
+    "consid": "5300000",
+    "cash": "5300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 104 270 00600"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "2950 BIRCHMOUNT RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "31 Jan 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Paulman Developments Inc"
+    ],
+    "buyer_lines": [
+      "Birchwood Property Inc"
+    ],
+    "price_text": "$5,300,000"
+  }
+}

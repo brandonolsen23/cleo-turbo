@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT103661",
+  "source_folder": "Brant/retail/p002",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103661",
+      "source_folder": "Brant/retail/p002",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "400 KING GEORGE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "15 Oct 2014",
+      "price_text": "$760,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1914960 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Paletta",
+        "64 Aquamarine Dr",
+        "Stoney Creek, Ontario",
+        "L8E 0E8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 32 & 33",
+      "As in Inst No A-436087",
+      "",
+      "PIN: 32223-0063",
+      "",
+      "2.33 acre"
+    ],
+    "arn_text": "29 20 004 040 32300",
+    "consideration_lines": [
+      "cash: $760,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1036/RT103661/0216_102117.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1036/RT103661/0216_102128.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1036/RT103661/0216_102138.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1036/RT103661/0216_102154.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "100 / 195",
+      "rt_id": "RT103661"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "400 KING GEORGE RD",
+    "postcode": "N3T 5L8",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "10/15/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.33",
+    "consid": "760000",
+    "cash": "760000",
+    "debt": "",
+    "note": "",
+    "pin": "32223-0063",
+    "rollno": "29 20 004 040 32300"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "400 KING GEORGE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "15 Oct 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1914960 Ontario Inc"
+    ],
+    "price_text": "$760,000"
+  }
+}

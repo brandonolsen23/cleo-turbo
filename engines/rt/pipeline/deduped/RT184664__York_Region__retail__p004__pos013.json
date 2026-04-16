@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT184664",
+  "source_folder": "York_Region/retail/p004",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184664",
+      "source_folder": "York_Region/retail/p004",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "815 TESTON RD",
+        "10700 BATHURST ST"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "10 May 2024",
+      "price_text": "$4,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Romano-Franco Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "10710 Bathurst St",
+        "Maple, Ontario",
+        "L6A 4B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Fanoce Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gaetano Franco",
+        "236 King Summit Rd",
+        "King City, Ontario",
+        "L7B 1A3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 25",
+      "Plan 65R-30264, Parts 2-7",
+      "Except:",
+      "Plan YR-2339351, Part 1",
+      "",
+      "PIN: 03341-7029",
+      "",
+      "S side of Teston Rd, W side of Bathurst St.",
+      "",
+      "2.42 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,350,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_122746.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_122802.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_122814.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_122847.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_122950.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_123014.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184664/0518_123031.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1846/RT184664/air1.jpg",
+        "/assets/files/RT18/RT1846/RT184664/air2.jpg",
+        "/assets/files/RT18/RT1846/RT184664/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "164 / 984",
+      "rt_id": "RT184664"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "815 TESTON RD, 10700 BATHURST ST",
+    "postcode": "L6A 4S9",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "05/10/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.42",
+    "consid": "4350000",
+    "cash": "4350000",
+    "debt": "",
+    "note": "",
+    "pin": "03341-7029",
+    "rollno": ""
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "815 TESTON RD",
+      "10700 BATHURST ST"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "10 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Romano-Franco Ltd"
+    ],
+    "buyer_lines": [
+      "Fanoce Investments Ltd"
+    ],
+    "price_text": "$4,350,000"
+  }
+}

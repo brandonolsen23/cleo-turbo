@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT38824",
+  "source_folder": "Metro_Toronto/industrial/p055",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38824",
+      "source_folder": "Metro_Toronto/industrial/p055",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p055/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "2391 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Nov 2004",
+      "price_text": "$580,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1636308 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Burrows",
+        "2391 St Clair Ave W",
+        "Toronto, Ontario",
+        "M6N 1K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 539, Part Lots 12 & 13",
+      "As in Inst No CA-680957",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 014 170 01700",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT388/RT38824/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2746 / 4000",
+      "rt_id": "RT38824"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "2391 ST CLAIR AVE W",
+    "postcode": "M6N 1K9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/16/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 04 014 170 01700"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "2391 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Nov 2004",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1636308 Ontario Ltd"
+    ],
+    "price_text": "$580,000"
+  }
+}

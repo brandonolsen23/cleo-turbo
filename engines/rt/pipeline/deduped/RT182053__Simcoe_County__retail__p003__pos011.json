@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT182053",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182053",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "549 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "21 Dec 2023",
+      "price_text": "$10,140,419",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2637093 Ontario Inc     416-366-9544"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Hamblin Watsa Investment Counsel Ltd",
+        "95 Wellington St W, Ste 802",
+        "Toronto, Ontario",
+        "M5J 2N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000481250 Ontario Inc     877-304-9155"
+      ],
+      "trade_name": "Everest Toys",
+      "contact_lines": [
+        "Attn: Doug Putman",
+        "1430 Cormorant Rd",
+        "Ancaster, Ontario",
+        "L9G 4V5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - Vespra, Part Lot 18",
+      "Plan 51R-15526, Part 3",
+      "As in Inst No RO-1118094",
+      "Except:",
+      "Plan 51R-22034, Part 1",
+      "",
+      "PIN: 58928-0137",
+      "",
+      "4.55 acre"
+    ],
+    "arn_text": "43 42 021 030 01100",
+    "consideration_lines": [
+      "cash: $10,140,419     assumed/vtb debt: $0",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $70,000,000   rate: 25.0% per annum.",
+      "registered: 12/21/2023   due: on demand",
+      "",
+      "chargee: 2636786 Ontario Inc",
+      "principal: $55,000,000   rate: 25.0% per annum.",
+      "registered: 12/21/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1820/RT182053/0203_120822.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1820/RT182053/0203_120855.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1820/RT182053/0203_120857.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1820/RT182053/0203_120941.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1820/RT182053/0203_120942.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "112 / 712",
+      "rt_id": "RT182053"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "549 BAYFIELD ST",
+    "postcode": "L4M 4Z9",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "12/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.55",
+    "consid": "10140419",
+    "cash": "10140419",
+    "debt": "",
+    "note": "",
+    "pin": "58928-0137",
+    "rollno": "43 42 021 030 01100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "549 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "21 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2637093 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000481250 Ontario Inc"
+    ],
+    "price_text": "$10,140,419"
+  }
+}

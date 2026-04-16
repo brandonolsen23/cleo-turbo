@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT183667",
+  "source_folder": "Bruce/retail/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183667",
+      "source_folder": "Bruce/retail/p001",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "370 WILLIAM ST",
+        "600 BAYVIEW ST"
+      ],
+      "city_region": "South Bruce Peninsula : Bruce",
+      "date_text": "14 Mar 2024",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sobeys Capital Inc     905-238-7124"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4980 Tahoe Blvd",
+        "Mississauga, Ontario",
+        "L4W 0C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Corporation of the",
+        "Town of South Bruce Peninsula     519-534-1400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Caleb Hull",
+        "315 George St",
+        "PO Box 310",
+        "Wiarton, Ontario",
+        "N0H 2T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-2256, Part 1",
+      "Plan Wiarton, Part Lot 5,",
+      "E/S Berford St and S/S Division St",
+      "As in Inst No R-333731",
+      "",
+      "PIN: 33141-0057 +",
+      "",
+      "2.11 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 44",
+      "rt_id": "RT183667"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "370 WILLIAM ST, 600 BAYVIEW ST",
+    "postcode": "N0H 2T0",
+    "municipality": "South Bruce Peninsula",
+    "region": "Bruce",
+    "date": "03/14/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.11",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "33141-0057+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "370 WILLIAM ST",
+      "600 BAYVIEW ST"
+    ],
+    "city_region": "South Bruce Peninsula : Bruce",
+    "date_text": "14 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sobeys Capital Inc"
+    ],
+    "buyer_lines": [
+      "The Corporation of the",
+      "Town of South Bruce Peninsula"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

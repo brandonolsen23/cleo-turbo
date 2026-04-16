@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT90775",
+  "source_folder": "Peterborough_County/all/p019",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT90775",
+      "source_folder": "Peterborough_County/all/p019",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/all/p019/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "1854 CONC 5"
+      ],
+      "city_region": "Townsend : Norfolk",
+      "date_text": "04 Feb 2013",
+      "price_text": "$718,771",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Blaindale Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Howard McBlain",
+        "1289 Highway 54",
+        "Caledonia, Ontario",
+        "N3W 2G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "McBlain Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John McBlain",
+        "1302 Highway 54W",
+        "Caledonia, Ontario",
+        "N3W 2G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lots 23 & 24",
+      "As in Inst No NR-496280",
+      "",
+      "PIN: 50268-0173",
+      "",
+      "101.27 acre"
+    ],
+    "arn_text": "33 10 336 040 10800",
+    "consideration_lines": [
+      "cash: $718,771     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $765,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/04/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "906 / 1120",
+      "rt_id": "RT90775"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "1854 CONC 5",
+    "postcode": "",
+    "municipality": "Townsend",
+    "region": "Norfolk",
+    "date": "02/04/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.27",
+    "consid": "718771",
+    "cash": "718771",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "50268-0173",
+    "rollno": "33 10 336 040 10800"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "1854 CONC 5"
+    ],
+    "city_region": "Townsend : Norfolk",
+    "date_text": "04 Feb 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Blaindale Farms Ltd"
+    ],
+    "buyer_lines": [
+      "McBlain Farms Ltd"
+    ],
+    "price_text": "$718,771"
+  }
+}

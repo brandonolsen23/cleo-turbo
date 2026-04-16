@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT139302",
+  "source_folder": "Ottawa-Carleton/retail/p007",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT139302",
+      "source_folder": "Ottawa-Carleton/retail/p007",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p007/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 LASER ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "13 Dec 2018",
+      "price_text": "$3,800,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "2600337 Ontario Inc",
+        "Oh RE LP     416-254-0518"
+      ],
+      "trade_name": "Automotive Finco Corp",
+      "contact_lines": [
+        "Attn: Kuldeep Billan",
+        "8 King St E, Ste 1800",
+        "Toronto, Ontario",
+        "M5C 1B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "APR (1811 Bank and 2 Laser) Inc     647-789-2440"
+      ],
+      "trade_name": "Automotive Properties REIT",
+      "contact_lines": [
+        "Attn: Andrew Kalra",
+        "133 King St E, Ste 300",
+        "Toronto, Ontario",
+        "M5C 1G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - RF, Part Lot 27",
+      "Plan 4R-14514, Part 5",
+      "",
+      "PIN: 04052-0664",
+      "",
+      "3.01 acre"
+    ],
+    "arn_text": "06 12 000 505 20435",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $200,000,000   rate: 25.0% per annum.",
+      "registered: 12/13/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139302/0413_133649.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139302/0413_133659.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1393/RT139302/0413_133703.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "320 / 1141",
+      "rt_id": "RT139302"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "2 LASER ST",
+    "postcode": "K2E 7V1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/13/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.01",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04052-0664",
+    "rollno": "06 12 000 505 20435"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "2 LASER ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "13 Dec 2018",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "2600337 Ontario Inc",
+      "Oh RE LP"
+    ],
+    "buyer_lines": [
+      "APR (1811 Bank and 2 Laser) Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

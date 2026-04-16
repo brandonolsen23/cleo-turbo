@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT186128",
+  "source_folder": "Metro_Toronto/multifamily/p013",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186128",
+      "source_folder": "Metro_Toronto/multifamily/p013",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p013/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "122 PARKMOUNT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Jul 2024",
+      "price_text": "$1,340,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2334326 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Christine Yeung",
+        "122 Parkmount Rd",
+        "Toronto, Ontario",
+        "M4J 4V4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 463-E,",
+      "Part Lots 314 & 315",
+      "As in Inst No CA-778818",
+      "",
+      "PIN: 21032-0328",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 085 230 04400",
+    "consideration_lines": [
+      "cash: $1,340,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,072,000   rate: Prime plus 10.0% per annum.",
+      "registered: 07/03/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1861/RT186128/0728_070711.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1861/RT186128/0728_070715.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1861/RT186128/0728_070725.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1861/RT186128/0728_070727.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1861/RT186128/0728_070730.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "602 / 6031",
+      "rt_id": "RT186128"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "122 PARKMOUNT RD",
+    "postcode": "M4J 4V4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/03/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1340000",
+    "cash": "1340000",
+    "debt": "",
+    "note": "",
+    "pin": "21032-0328",
+    "rollno": "19 04 085 230 04400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "122 PARKMOUNT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Jul 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2334326 Ontario Ltd"
+    ],
+    "price_text": "$1,340,000"
+  }
+}

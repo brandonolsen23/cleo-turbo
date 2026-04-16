@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT131861",
+  "source_folder": "Cochrane/all/p073",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT131861",
+      "source_folder": "Cochrane/all/p073",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p073/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "19 LARCHWOOD AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "29 Jan 2018",
+      "price_text": "$820,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "10065951 Canada Inc     613-789-1234"
+      ],
+      "trade_name": "McMillan & Associates",
+      "contact_lines": [
+        "Attn: Gordon McMillan",
+        "541 Sussex Dr, 3rd Flr",
+        "Ottawa, Ontario",
+        "K1N 6Z6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 441799, Lot 5",
+      "",
+      "PIN: 04101-0059",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "06 14 074 001 45800",
+    "consideration_lines": [
+      "cash: $820,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3617 / 10920",
+      "rt_id": "RT131861"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "19 LARCHWOOD AVE",
+    "postcode": "K1Y 2E3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/29/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "820000",
+    "cash": "820000",
+    "debt": "",
+    "note": "",
+    "pin": "04101-0059",
+    "rollno": "06 14 074 001 45800"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "19 LARCHWOOD AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "29 Jan 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "10065951 Canada Inc"
+    ],
+    "price_text": "$820,000"
+  }
+}

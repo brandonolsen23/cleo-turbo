@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT52357",
+  "source_folder": "York_Region/retail/p014",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT52357",
+      "source_folder": "York_Region/retail/p014",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p014/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "9205 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 Nov 2006",
+      "price_text": "$2,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "876032 Ontario Ltd     905-883-9297"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Leonard Clement",
+        "73 Cooperage Cres",
+        "Richmond Hill, Ontario",
+        "L4C 9M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Great Land (Yonge 16th) Inc     416-748-2600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sam Sadr",
+        "202A Oakdale Rd, Ste 6",
+        "Toronto, Ontario",
+        "M3N 2S5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3806, Lot 4",
+      "Except:",
+      "Plan 64R-3138, Part 6",
+      "",
+      "0.88 acre"
+    ],
+    "arn_text": "19 38 050 021 43500",
+    "consideration_lines": [
+      "cash: $2,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT523/RT52357/1225_101603.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT523/RT52357/1225_101617.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT523/RT52357/1225_101641.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT523/RT52357/1225_101642.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "673 / 984",
+      "rt_id": "RT52357"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "9205 YONGE ST",
+    "postcode": "L4C 6Z2",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "11/30/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".88",
+    "consid": "2250000",
+    "cash": "2250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 050 021 43500"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "9205 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 Nov 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "876032 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Great Land (Yonge 16th) Inc"
+    ],
+    "price_text": "$2,250,000"
+  }
+}

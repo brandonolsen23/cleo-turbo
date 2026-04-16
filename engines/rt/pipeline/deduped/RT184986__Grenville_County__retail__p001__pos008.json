@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT184986",
+  "source_folder": "Grenville_County/retail/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184986",
+      "source_folder": "Grenville_County/retail/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grenville_County/retail/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3018 COUNTY RD 21"
+      ],
+      "city_region": "Spencerville : Grenville County",
+      "date_text": "02 May 2024",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2248671 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2311 Pittston Rd",
+        "Spencerville, Ontario",
+        "K0E 1X0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000772332 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rhonda Patterson",
+        "568 Pennycross Lane",
+        "Carp, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Edwardsburgh SRO,",
+      "Part Lot 30",
+      "Plan 15R-9025, Part 1",
+      "",
+      "PIN: 68141-0186",
+      "",
+      "2.44 acre"
+    ],
+    "arn_text": "07 01 701 040 15500",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,000,000   rate: 25.0% per annum.",
+      "registered: 05/02/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 19",
+      "rt_id": "RT184986"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3018 COUNTY RD 21",
+    "postcode": "K0E 1X0",
+    "municipality": "Spencerville",
+    "region": "Grenville County",
+    "date": "05/02/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.44",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "68141-0186",
+    "rollno": "07 01 701 040 15500"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3018 COUNTY RD 21"
+    ],
+    "city_region": "Spencerville : Grenville County",
+    "date_text": "02 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2248671 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000772332 Ontario Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

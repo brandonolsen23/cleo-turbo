@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT147858",
+  "source_folder": "Cochrane/all/p053",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT147858",
+      "source_folder": "Cochrane/all/p053",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p053/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1944 LENESTER AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "29 Nov 2019",
+      "price_text": "$1,097,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1944 Lenester Avenue Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Giovanni Mion",
+        "25 Bongard Ave",
+        "Ottawa, Ontario",
+        "K2E 6V2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 330458, Part Lot 2",
+      "Except:",
+      "Plan 5R-5039, Parts 1 & 2",
+      "",
+      "PIN: 03985-0050",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "06 14 095 201 52500",
+    "consideration_lines": [
+      "cash: $1,097,500     assumed/vtb debt: $0",
+      "",
+      "chargee: 2642362 Ontario Inc",
+      "principal: $1,122,174   rate: 4.0% per annum.",
+      "registered: 11/29/2019   due: 11/22/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2622 / 10920",
+      "rt_id": "RT147858"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1944 LENESTER AVE",
+    "postcode": "K2A 1J9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/29/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".37",
+    "consid": "1097500",
+    "cash": "1097500",
+    "debt": "",
+    "note": "",
+    "pin": "03985-0050",
+    "rollno": "06 14 095 201 52500"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1944 LENESTER AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "29 Nov 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1944 Lenester Avenue Inc"
+    ],
+    "price_text": "$1,097,500"
+  }
+}

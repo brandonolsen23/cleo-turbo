@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT16885",
+  "source_folder": "Essex_County/retail/p010",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT16885",
+      "source_folder": "Essex_County/retail/p010",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p010/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "5407 - 5409 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "03 Apr 2000",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Thanh T. Lam"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "475 University Ave W",
+        "Windsor, Ontario",
+        "N9A 5P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1394090 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joe Elias",
+        "443 Oueleltte Ave",
+        "Windsor, Ontario",
+        "N9A 6R4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part of Farm Lot 114",
+      "",
+      "S side 50m E of Ford Blvd"
+    ],
+    "arn_text": "37 39 070 570 07000",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $1,325,750   rate: 4.99% per annum.",
+      "registered: 05/02/2022   due: 05/01/2023",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $3,000,000   rate: 18.0% per annum.",
+      "registered: 05/02/2022   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/02/2022   due: on demand",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,375,000   rate: Prime minus 0.97% per annum.",
+      "registered: 05/04/2022   due: 05/03/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT168/RT16885/photo.jpg"
+    },
+    "footer": {
+      "page_position": "456 / 460",
+      "rt_id": "RT16885"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "5407 - 5409 TECUMSEH RD E",
+    "postcode": "N8T 1C5",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "04/03/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 070 570 07000"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "5407 - 5409 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "03 Apr 2000",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Thanh T. Lam"
+    ],
+    "buyer_lines": [
+      "1394090 Ontario Ltd"
+    ],
+    "price_text": "$525,000"
+  }
+}

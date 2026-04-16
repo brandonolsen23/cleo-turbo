@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT46611",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46611",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "730 GLEN FORREST BLVD"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "26 Jan 2006",
+      "price_text": "$1,710,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Kee Sun Holdings Inc     416-630-1801"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hoong Keem",
+        "Woolfson & Woolfson",
+        "1000 Finch Ave W, Ste 306",
+        "North York, Ontario",
+        "M3J 2V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2065286 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pyong Lee",
+        "730 Glen Forrest Blvd",
+        "Waterloo, Ontario"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar - 1 storey; 4 units about 6,800 sf",
+      "",
+      "Last transferred in Feb 2002 for $1,650,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1261, Block A",
+      "Except:",
+      "Plan 58R-4315, Parts 1 & 2",
+      "",
+      "1.13 acre"
+    ],
+    "arn_text": "30 16 041 900 06300",
+    "consideration_lines": [
+      "cash: $1,710,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,000,000   rate: Prime plus 0.75% per annum",
+      "registered: 01/26/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT466/RT46611/photo.jpg"
+    },
+    "footer": {
+      "page_position": "582 / 752",
+      "rt_id": "RT46611"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "730 GLEN FORREST BLVD",
+    "postcode": "N2L 4K8",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "01/26/2006",
+    "desc": "Retail Plaza & Gas Bar - 1 storey; 4 units about 6,800 sf",
+    "bldg": "6,800 sf",
+    "acreage": "1.13",
+    "consid": "1710000",
+    "cash": "1710000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 041 900 06300"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "730 GLEN FORREST BLVD"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "26 Jan 2006",
+    "note": "",
+    "description": "Retail Plaza & Gas Bar - 1 storey; 4 units about 6,800 sf",
+    "seller_lines": [
+      "Kee Sun Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2065286 Ontario Ltd"
+    ],
+    "price_text": "$1,710,000"
+  }
+}

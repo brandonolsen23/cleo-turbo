@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT64185",
+  "source_folder": "Cochrane/all/p150",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64185",
+      "source_folder": "Cochrane/all/p150",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p150/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "2755 CARP RD"
+      ],
+      "city_region": "W. Carleton : Ottawa-Carleton",
+      "date_text": "29 Aug 2008",
+      "price_text": "$575,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "694349 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Duncan",
+        "RR 6",
+        "Perth, Ontario",
+        "K7H 3C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4490444 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Carswell",
+        "2755 Carp Rd",
+        "Ottawa, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 8",
+      "Plan 4R-9300, Part 1",
+      "",
+      "PIN: 04538-0142",
+      "",
+      "2.30 acre"
+    ],
+    "arn_text": "06 42 030 810 15101",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $685,000   rate: Base plus 3.0% per annum on balance greater than $650,000\nBase plus 2.65% per annum on balance greater than $575,000\nBase plus 2.25% per annum on balance less than $575,000",
+      "registered: 08/29/2008   due: 09/15/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT641/RT64185/1010_180247.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT641/RT64185/1010_180314.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT641/RT64185/1010_180400.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT641/RT64185/air1.jpg",
+        "/assets/files/RT6/RT641/RT64185/air2.jpg",
+        "/assets/files/RT6/RT641/RT64185/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7486 / 10920",
+      "rt_id": "RT64185"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "2755 CARP RD",
+    "postcode": "K0A 1L0",
+    "municipality": "W. Carleton",
+    "region": "Ottawa-Carleton",
+    "date": "08/29/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.3",
+    "consid": "575000",
+    "cash": "575000",
+    "debt": "",
+    "note": "",
+    "pin": "04538-0142",
+    "rollno": "06 42 030 810 15101"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "2755 CARP RD"
+    ],
+    "city_region": "W. Carleton : Ottawa-Carleton",
+    "date_text": "29 Aug 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "694349 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "4490444 Canada Inc"
+    ],
+    "price_text": "$575,000"
+  }
+}

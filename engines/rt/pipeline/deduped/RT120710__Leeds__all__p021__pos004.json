@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT120710",
+  "source_folder": "Leeds/all/p021",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT120710",
+      "source_folder": "Leeds/all/p021",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p021/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "5080 CAMLACHIE RD"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "31 Oct 2016",
+      "price_text": "$1,412,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Just Beginning Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tryntje Noorloos",
+        "3374 Churchill Line, RR 3",
+        "Petrolia, Ontario",
+        "N0N 1R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 10",
+      "As in Inst No L-751486",
+      "",
+      "PIN: 43114-0007",
+      "",
+      "105.16 acre"
+    ],
+    "arn_text": "38 35 340 010 02400",
+    "consideration_lines": [
+      "cash: $1,412,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/31/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1005 / 1916",
+      "rt_id": "RT120710"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "5080 CAMLACHIE RD",
+    "postcode": "N0N 1R0",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "10/31/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "105.16",
+    "consid": "1412000",
+    "cash": "1412000",
+    "debt": "",
+    "note": "",
+    "pin": "43114-0007",
+    "rollno": "38 35 340 010 02400"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "5080 CAMLACHIE RD"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "31 Oct 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Just Beginning Inc"
+    ],
+    "price_text": "$1,412,000"
+  }
+}

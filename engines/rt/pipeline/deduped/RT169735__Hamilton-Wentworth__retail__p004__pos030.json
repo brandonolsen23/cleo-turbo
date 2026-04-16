@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT169735",
+  "source_folder": "Hamilton-Wentworth/retail/p004",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT169735",
+      "source_folder": "Hamilton-Wentworth/retail/p004",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p004/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "349 GRAYS RD"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "15 Jun 2022",
+      "price_text": "$2,233,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Guj Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Guja",
+        "25 Lakegate Dr",
+        "Stoney Creek, Ontario",
+        "L8E 3T7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-6286, Parts 1 & 2",
+      "",
+      "PIN: 17310-0084",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "25 18 050 481 00017",
+    "consideration_lines": [
+      "cash: $2,233,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1697/RT169735/0625_084904.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1697/RT169735/0625_084908.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1697/RT169735/0625_084945.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1697/RT169735/0625_084946.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "181 / 616",
+      "rt_id": "RT169735"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "349 GRAYS RD",
+    "postcode": "L8E 2Z1",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "06/15/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "2233000",
+    "cash": "2233000",
+    "debt": "",
+    "note": "",
+    "pin": "17310-0084",
+    "rollno": "25 18 050 481 00017"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "349 GRAYS RD"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "15 Jun 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Guj Holdings Inc"
+    ],
+    "price_text": "$2,233,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT191233",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191233",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 BENSON CT"
+      ],
+      "city_region": "Port Hope : Northumberland",
+      "date_text": "03 Apr 2025",
+      "price_text": "$15,330,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "564289 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "14 Potts Lane",
+        "Port Hope, Ontario",
+        "L1A 0A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001152413 Ontario Ltd",
+        "1000900988 Ontario Ltd     705-742-9000"
+      ],
+      "trade_name": "Mercedes-Benz Peterborough",
+      "contact_lines": [
+        "Attn: Leonel Peter Santos",
+        "995 Crawford Dr",
+        "Peterborough, Ontario",
+        "K9J 3X1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 39M-796, Block A",
+      "Plan 39R-13118, Part 1",
+      "",
+      "PIN: 51082-0592 +",
+      "",
+      "9.22 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $15,330,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $8,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/03/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191233/0524_074801.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191233/0524_074830.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191233/0524_074831.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191233/0524_074954.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191233/0524_074956.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1912/RT191233/0524_074957.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "15 / 93",
+      "rt_id": "RT191233"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "50 BENSON CT",
+    "postcode": "L1A 3V6",
+    "municipality": "Port Hope",
+    "region": "Northumberland",
+    "date": "04/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.22",
+    "consid": "15330000",
+    "cash": "15330000",
+    "debt": "",
+    "note": "",
+    "pin": "51082-0592+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "50 BENSON CT"
+    ],
+    "city_region": "Port Hope : Northumberland",
+    "date_text": "03 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "564289 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001152413 Ontario Ltd",
+      "1000900988 Ontario Ltd"
+    ],
+    "price_text": "$15,330,000"
+  }
+}

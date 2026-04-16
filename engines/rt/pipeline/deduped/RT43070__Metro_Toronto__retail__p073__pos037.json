@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT43070",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43070",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "1310 DON MILLS RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "15 Jul 2005",
+      "price_text": "$2,180,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1508350 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Sun",
+        "7825 Bayview Ave, LPH 6",
+        "Thornhill, Ontario",
+        "L3T 7N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lambardar Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Neena Kanwar",
+        "2075 Hadwen Rd",
+        "Missisauga, Ontario",
+        "L5K 2L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-525, Part Lot 10",
+      "",
+      "0.64 acre"
+    ],
+    "arn_text": "19 08 102 200 00400",
+    "consideration_lines": [
+      "cash: $2,180,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT430/RT43070/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3638 / 4952",
+      "rt_id": "RT43070"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "1310 DON MILLS RD",
+    "postcode": "M3B 2W6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "07/15/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".64",
+    "consid": "2180000",
+    "cash": "2180000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 102 200 00400"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "1310 DON MILLS RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "15 Jul 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1508350 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Lambardar Inc"
+    ],
+    "price_text": "$2,180,000"
+  }
+}

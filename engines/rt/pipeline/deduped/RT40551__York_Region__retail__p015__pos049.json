@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT40551",
+  "source_folder": "York_Region/retail/p015",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40551",
+      "source_folder": "York_Region/retail/p015",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1450 CLARK AVE W"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "03 Mar 2005",
+      "price_text": "$10,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Coulter's Mill Marketplace Inc     416-298-0066"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Jack Feintuch",
+        "Runnymede Development Corp",
+        "1051 Tapscott Rd",
+        "Scarborough, Ontario",
+        "M1X 1A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "The Exchange Tower",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 18 units 73,740 sf @ $136"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 3",
+      "Plan 65R-8510, Parts 3 & 6",
+      "",
+      "6.73 acre"
+    ],
+    "arn_text": "19 28 000 191 81000",
+    "consideration_lines": [
+      "cash: $3,811,255     assumed/vtb debt: $6,188,745",
+      "",
+      "chargee: The Mutual Life Assurance Company of Canada",
+      "principal: $12,000,000   rate: 11.875% per annum",
+      "registered: 04/13/1989   due: 11/01/1999"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT405/RT40551/air1.jpg",
+        "/assets/files/RT4/RT405/RT40551/air2.jpg",
+        "/assets/files/RT4/RT405/RT40551/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT405/RT40551/photo.jpg"
+    },
+    "footer": {
+      "page_position": "750 / 984",
+      "rt_id": "RT40551"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1450 CLARK AVE W",
+    "postcode": "L4J 7R5",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/03/2005",
+    "desc": "Retail Plaza - 1 storey; 18 units 73,740 sf @ $136",
+    "bldg": "73,740 sf",
+    "acreage": "6.73",
+    "consid": "10000000",
+    "cash": "3811255",
+    "debt": "6188745",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 191 81000"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1450 CLARK AVE W"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "03 Mar 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 18 units 73,740 sf @ $136",
+    "seller_lines": [
+      "Coulter's Mill Marketplace Inc"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

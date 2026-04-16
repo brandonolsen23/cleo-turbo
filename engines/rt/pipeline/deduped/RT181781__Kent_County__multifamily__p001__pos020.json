@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT181781",
+  "source_folder": "Kent_County/multifamily/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181781",
+      "source_folder": "Kent_County/multifamily/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/multifamily/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "48 - 50 THIRD ST",
+        "48 - 50 3RD ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "04 Dec 2023",
+      "price_text": "$550,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "40 Centre Square",
+        "Shelly Dam",
+        "Kelly Zandberg"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 23 Holland Ave",
+        "Chatham, Ontario",
+        "N7M 5X8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1815513 Ontario Inc     519-676-7467"
+      ],
+      "trade_name": "Apollo General Contracting",
+      "contact_lines": [
+        "Attn: Alfredo Naclerio",
+        "PO Box 130",
+        "186 Chatham St N, Unit 1",
+        "Blenheim, Ontario",
+        "N0P 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4, Block 1",
+      "Part Lot 4",
+      "As in Inst No 439261",
+      "",
+      "PIN: 00540-0013",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "36 50 420 031 16900",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $6,000,000   rate: 18.0% per annum.",
+      "registered: 12/04/2023   due: 12/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 114",
+      "rt_id": "RT181781"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "48 - 50 THIRD ST, 48 - 50 3RD ST",
+    "postcode": "N7L 3H5",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "12/04/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "00540-0013",
+    "rollno": "36 50 420 031 16900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "48 - 50 THIRD ST",
+      "48 - 50 3RD ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "04 Dec 2023",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "40 Centre Square",
+      "Shelly Dam",
+      "Kelly Zandberg"
+    ],
+    "buyer_lines": [
+      "1815513 Ontario Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

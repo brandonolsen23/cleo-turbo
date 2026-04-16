@@ -1,0 +1,136 @@
+{
+  "rt_id": "RT13883",
+  "source_folder": "Wellington/retail/p006",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13883",
+      "source_folder": "Wellington/retail/p006",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p006/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "134 - 140 MAIN ST"
+      ],
+      "city_region": "Erin : Wellington",
+      "date_text": "17 Feb 1999",
+      "price_text": "$1,325,000",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Court (General Division)"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "393 University Ave",
+        "Toronto, Ontario",
+        "M5G 1E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Meteric Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mike Turtel",
+        "431 Connaught Ave",
+        "Willowdale, Ontario",
+        "M2R 2M4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 61R-3306, Parts 2 & 3",
+      "",
+      "2.03 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,325,000",
+      "",
+      "Named Individual(s)",
+      "principal: $605,000   rate: 5.0% per annum.",
+      "registered: 11/23/2018   due: 01/03/2018",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,100,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/13/0208   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,000,000   rate: 18.0% per annum.",
+      "registered: 11/15/2018   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $375,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/15/2018   due: on demand",
+      "",
+      "chargee: Jayzee Holdings Inc",
+      "principal: $250,000   rate: 1st year, 0 % per annum.\n2nd & 3rd year, 2.0% per annum.\n4th year, 3.0% per annum.",
+      "registered: 11/15/2018   due: 11/15/2022",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $3,000,000   rate: 18.0% per annum.",
+      "registered: 11/15/2018   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $600,000   rate: Prime plus 10.0% per annum.",
+      "registered: 11/14/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT138/RT13883/photo.jpg"
+    },
+    "footer": {
+      "page_position": "269 / 269",
+      "rt_id": "RT13883"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "134 - 140 MAIN ST",
+    "postcode": "",
+    "municipality": "Erin",
+    "region": "Wellington",
+    "date": "02/17/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.03",
+    "consid": "1325000",
+    "cash": "",
+    "debt": "1325000",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "134 - 140 MAIN ST"
+    ],
+    "city_region": "Erin : Wellington",
+    "date_text": "17 Feb 1999",
+    "note": "Foreclosure",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Ontario Court (General Division)"
+    ],
+    "buyer_lines": [
+      "Meteric Investments Ltd"
+    ],
+    "price_text": "$1,325,000"
+  }
+}

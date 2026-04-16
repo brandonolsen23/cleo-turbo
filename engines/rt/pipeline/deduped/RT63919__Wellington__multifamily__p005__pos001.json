@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT63919",
+  "source_folder": "Wellington/multifamily/p005",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63919",
+      "source_folder": "Wellington/multifamily/p005",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p005/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "60 MARTIN AVE"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "29 Aug 2008",
+      "price_text": "$714,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Shahukar Properties Corp     905-672-6159"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paramvir Grewal",
+        "3274 Morningstar Dr",
+        "Mississauga, Ontario",
+        "L4T 1X5"
+      ]
+    },
+    "description_lines": [
+      "NinePlex - 2 storey; 9 units @ $79,333",
+      "",
+      "4-2bdrm 5-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 328",
+      "Lots 24-26 & 28",
+      "Part Lot 1",
+      "As in Inst No RO-690094",
+      "",
+      "PIN: 71239-0073",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "23 08 060 001 11400",
+    "consideration_lines": [
+      "cash: $714,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $490,000   rate: Prime plus 1.0% per annum",
+      "registered: 08/29/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63919/1026_123810.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63919/1026_123841.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63919/1026_123901.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT639/RT63919/air1.jpg",
+        "/assets/files/RT6/RT639/RT63919/air2.jpg",
+        "/assets/files/RT6/RT639/RT63919/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "202 / 295",
+      "rt_id": "RT63919"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "60 MARTIN AVE",
+    "postcode": "N1G 1Z9",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "08/29/2008",
+    "desc": "NinePlex - 2 storey; 9 units @ $79,333",
+    "bldg": "9 units",
+    "acreage": ".6",
+    "consid": "714000",
+    "cash": "714000",
+    "debt": "",
+    "note": "",
+    "pin": "71239-0073",
+    "rollno": "23 08 060 001 11400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "60 MARTIN AVE"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "29 Aug 2008",
+    "note": "",
+    "description": "NinePlex - 2 storey; 9 units @ $79,333",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Shahukar Properties Corp"
+    ],
+    "price_text": "$714,000"
+  }
+}

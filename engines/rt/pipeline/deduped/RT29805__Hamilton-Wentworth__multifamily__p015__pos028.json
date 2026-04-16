@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT29805",
+  "source_folder": "Hamilton-Wentworth/multifamily/p015",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29805",
+      "source_folder": "Hamilton-Wentworth/multifamily/p015",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/multifamily/p015/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "11\u00bd LAKE AVE"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "15 Apr 2003",
+      "price_text": "$535,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1454766 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11 1/2 Lake Ave",
+        "Stoney Creek, Ontario",
+        "L8G 2V1"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2 storey; 12 units @ $44,583"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan RCP-1419, Lot 78",
+      "Together with Inst No SC-4785",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "25 03 100 365 15000",
+    "consideration_lines": [
+      "cash: $234,000     assumed/vtb debt: $301,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT298/RT29805/photo.jpg"
+    },
+    "footer": {
+      "page_position": "729 / 875",
+      "rt_id": "RT29805"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "11\u00bd LAKE AVE",
+    "postcode": "L8G 2V1",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "04/15/2003",
+    "desc": "Apartment Bldg - 2 storey; 12 units @ $44,583",
+    "bldg": "12 units",
+    "acreage": ".2",
+    "consid": "535000",
+    "cash": "234000",
+    "debt": "301000",
+    "note": "",
+    "pin": "",
+    "rollno": "25 03 100 365 15000"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "11\u00bd LAKE AVE"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "15 Apr 2003",
+    "note": "",
+    "description": "Apartment Bldg - 2 storey; 12 units @ $44,583",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1454766 Ontario Ltd"
+    ],
+    "price_text": "$535,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT182424",
+  "source_folder": "Niagara_N/retail/p002",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182424",
+      "source_folder": "Niagara_N/retail/p002",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p002/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "3365 CULP RD"
+      ],
+      "city_region": "Lincoln : Niagara N",
+      "date_text": "25 Nov 2021",
+      "price_text": "$950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Solace General Contracting Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mehrullah Noori",
+        "3365 Culp Rd",
+        "Lincoln, Ontario",
+        "L0R 2E0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 Louth, Part Lot 23",
+      "Plan 30R-1374, Part 2",
+      "",
+      "PIN: 46127-0056",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "26 22 030 006 18000",
+    "consideration_lines": [
+      "cash: $950,000     assumed/vtb debt: $0",
+      "",
+      "chargee: SDC Capital Corp",
+      "principal: $760,000   rate: 5.99% per annum",
+      "registered: 11/25/2021   due: 06/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182424/0329_081747.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182424/0329_081751.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182424/0329_081824.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182424/0329_081826.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1824/RT182424/0329_081833.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "94 / 307",
+      "rt_id": "RT182424"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "3365 CULP RD",
+    "postcode": "L0R 2E0",
+    "municipality": "Lincoln",
+    "region": "Niagara N",
+    "date": "11/25/2021",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".75",
+    "consid": "950000",
+    "cash": "950000",
+    "debt": "",
+    "note": "",
+    "pin": "46127-0056",
+    "rollno": "26 22 030 006 18000"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "3365 CULP RD"
+    ],
+    "city_region": "Lincoln : Niagara N",
+    "date_text": "25 Nov 2021",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Solace General Contracting Inc"
+    ],
+    "price_text": "$950,000"
+  }
+}

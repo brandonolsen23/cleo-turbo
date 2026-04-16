@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT139285",
+  "source_folder": "Ottawa-Carleton/retail/p007",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT139285",
+      "source_folder": "Ottawa-Carleton/retail/p007",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p007/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "2055 MER BLEUE RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "13 Dec 2018",
+      "price_text": "$8,300,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "2600335 Ontario Inc",
+        "Orleans H RE LP     416-254-0518"
+      ],
+      "trade_name": "Automotive Finco Corp",
+      "contact_lines": [
+        "Attn: Kuldeep Billan",
+        "8 King St E, Ste 1800",
+        "Toronto, Ontario",
+        "M5C 1B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "APR (2055 Mer Bleue) Inc     647-789-2440"
+      ],
+      "trade_name": "Automotive Properties REIT",
+      "contact_lines": [
+        "Attn: Andrew Kalra",
+        "133 King St E, Ste 300",
+        "Toronto, Ontario",
+        "M5C 1G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 1",
+      "Plan 4R-27317, Parts 3, 7 & 10",
+      "",
+      "PIN: 14563-0806",
+      "",
+      "3.18 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $200,000,000   rate: 25.0% per annum.",
+      "registered: 12/13/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1392/RT139285/0412_173744.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1392/RT139285/0412_173750.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1392/RT139285/0412_173911.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1392/RT139285/0412_173914.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "318 / 1141",
+      "rt_id": "RT139285"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "2055 MER BLEUE RD",
+    "postcode": "K4A 3T9",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "12/13/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.18",
+    "consid": "8300000",
+    "cash": "8300000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "14563-0806",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "2055 MER BLEUE RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "13 Dec 2018",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "2600335 Ontario Inc",
+      "Orleans H RE LP"
+    ],
+    "buyer_lines": [
+      "APR (2055 Mer Bleue) Inc"
+    ],
+    "price_text": "$8,300,000"
+  }
+}

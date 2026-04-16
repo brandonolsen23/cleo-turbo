@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT43893",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43893",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "402 - 408 LACLIE ST"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "23 Aug 2005",
+      "price_text": "$795,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "402 Laclie Realty Ltd     416-480-1606"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Barry Sklar",
+        "High Point Danbury Realty Advisors Corp",
+        "2409 Yonge St, Ste 300",
+        "Toronto, Ontario",
+        "M4P 2E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2075358 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kuldip Swaich",
+        "23 Valleyside Trail",
+        "Brampton, Ontario",
+        "L6P 2G2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-24424, Part 1",
+      "",
+      "0.93 acre"
+    ],
+    "arn_text": "43 52 040 410 17800",
+    "consideration_lines": [
+      "cash: $795,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "566 / 712",
+      "rt_id": "RT43893"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "402 - 408 LACLIE ST",
+    "postcode": "L3V 4P5",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "08/23/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".93",
+    "consid": "795000",
+    "cash": "795000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 52 040 410 17800"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "402 - 408 LACLIE ST"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "23 Aug 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "402 Laclie Realty Ltd"
+    ],
+    "buyer_lines": [
+      "2075358 Ontario Ltd"
+    ],
+    "price_text": "$795,000"
+  }
+}

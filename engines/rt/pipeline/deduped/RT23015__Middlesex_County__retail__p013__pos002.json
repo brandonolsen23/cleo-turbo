@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT23015",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23015",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1101 JALNA BLVD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "12 Oct 2001",
+      "price_text": "$1,092,500",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Andy, John & Peter Theocharis"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "69 Downie St",
+        "Stratford, Ontario",
+        "N5A 1W7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Theocharis Brothers Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andy Theocharis",
+        "69 Downie St",
+        "Stratford, Ontario",
+        "N5A 1W7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-6934",
+      "Parts 3, 8-16"
+    ],
+    "arn_text": "39 36 060 580 48425",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT230/RT23015/photo.jpg"
+    },
+    "footer": {
+      "page_position": "603 / 686",
+      "rt_id": "RT23015"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1101 JALNA BLVD",
+    "postcode": "N6E 3B3",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "10/12/2001",
+    "desc": "Retail Plaza - 1 storey",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1092500",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "39 36 060 580 48425"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1101 JALNA BLVD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "12 Oct 2001",
+    "note": "Related Parties",
+    "description": "Retail Plaza - 1 storey",
+    "seller_lines": [
+      "Andy, John & Peter Theocharis"
+    ],
+    "buyer_lines": [
+      "Theocharis Brothers Properties Inc"
+    ],
+    "price_text": "$1,092,500"
+  }
+}

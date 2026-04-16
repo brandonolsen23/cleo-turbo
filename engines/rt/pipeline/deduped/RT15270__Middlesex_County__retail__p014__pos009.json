@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT15270",
+  "source_folder": "Middlesex_County/retail/p014",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15270",
+      "source_folder": "Middlesex_County/retail/p014",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p014/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "515 WELLINGTON RD S"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "16 Sep 1999",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "975162 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ranjit Goela",
+        "6 Buttermere Rd",
+        "London, Ontario",
+        "N6G 4L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vinder Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Atama Singh",
+        "515 Wellington Rd S",
+        "London, Ontario",
+        "N6C 4R3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 652, Lots 3-5"
+    ],
+    "arn_text": "39 36 060 552 15500",
+    "consideration_lines": [
+      "cash: $473,232     assumed/vtb debt: $1,026,768",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $422,500   rate: 4.89% per annum.",
+      "registered: 06/05/2020   due: 07/01/2022",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $536,000   rate: Prime plus 0% per annum.",
+      "registered: 06/02/2020   due: 06/01/2025",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $485,000   rate: Prime plus 10.0% per annum.",
+      "registered: 06/17/2020   due: on demand",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $487,500   rate: 5.04% per annum.",
+      "registered: 06/16/2020   due: 07/01/2021",
+      "",
+      "chargee: The Royal Bank of Canada",
+      "principal: $486,480   rate: 2.49% per annum.",
+      "registered: 06/15/2020   due: 06/15/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT152/RT15270/photo.jpg"
+    },
+    "footer": {
+      "page_position": "660 / 686",
+      "rt_id": "RT15270"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "515 WELLINGTON RD S",
+    "postcode": "N6C 4R3",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "09/16/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1500000",
+    "cash": "473232",
+    "debt": "1026768",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 552 15500"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "515 WELLINGTON RD S"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "16 Sep 1999",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "975162 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Vinder Holdings Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

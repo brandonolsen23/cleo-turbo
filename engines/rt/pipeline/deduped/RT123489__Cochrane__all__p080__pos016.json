@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT123489",
+  "source_folder": "Cochrane/all/p080",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123489",
+      "source_folder": "Cochrane/all/p080",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "25 TAPIOLA CRES"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Mar 2017",
+      "price_text": "$7,460,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Liveart Ltd",
+        "Sorem Development Inc     416-221-9348"
+      ],
+      "trade_name": "The Torgan Group",
+      "contact_lines": [
+        "Pres: Leo Erez",
+        "4950 Yonge St, Ste 1010",
+        "Toronto, Ontario",
+        "M2N 6K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Greenboro Medical Centre Inc     905-567-9300"
+      ],
+      "trade_name": "Mundi Holdings Ltd",
+      "contact_lines": [
+        "Pres: Gurdev Mundi",
+        "302 Queen St S",
+        "Mississauga, Ontario",
+        "L5M 1M2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-2678, Part 1",
+      "",
+      "PIN: 04740-0441",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "06 14 116 502 29101",
+    "consideration_lines": [
+      "cash: $7,460,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $6,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 03/01/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123489/0623_135504.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123489/0623_135540.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123489/0623_135541.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123489/0623_135549.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123489/0623_135605.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3967 / 10920",
+      "rt_id": "RT123489"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "25 TAPIOLA CRES",
+    "postcode": "K1T 2J7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/01/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "7460000",
+    "cash": "7460000",
+    "debt": "",
+    "note": "",
+    "pin": "04740-0441",
+    "rollno": "06 14 116 502 29101"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "25 TAPIOLA CRES"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Liveart Ltd",
+      "Sorem Development Inc"
+    ],
+    "buyer_lines": [
+      "Greenboro Medical Centre Inc"
+    ],
+    "price_text": "$7,460,000"
+  }
+}

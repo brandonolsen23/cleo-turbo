@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT39929",
+  "source_folder": "Metro_Toronto/multifamily/p091",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39929",
+      "source_folder": "Metro_Toronto/multifamily/p091",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p091/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 - 129 WALKER AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Dec 2004",
+      "price_text": "$862,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1631182 Ontario Inc     905-822-5724"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frederic Gregoris",
+        "1714 Medallion Ct",
+        "Mississauga, Ontario",
+        "L5J 4G2"
+      ]
+    },
+    "description_lines": [
+      "FourPlex - 2 storey; 5 units @ $172,400",
+      "",
+      "Last transferred in Nov 2001 for $735,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 415, Part Lot A",
+      "Plan 289, Part Lot 7, E/S Avenue Rd",
+      "As in Inst No CA-751278",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 054 060 11500",
+    "consideration_lines": [
+      "cash: $862,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT399/RT39929/air1.jpg",
+        "/assets/files/RT3/RT399/RT39929/air2.jpg",
+        "/assets/files/RT3/RT399/RT39929/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT399/RT39929/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4506 / 6031",
+      "rt_id": "RT39929"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "123 - 129 WALKER AVE",
+    "postcode": "M4V 1G5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/17/2004",
+    "desc": "FourPlex - 2 storey; 5 units @ $172,400",
+    "bldg": "5 units",
+    "acreage": ".08",
+    "consid": "862000",
+    "cash": "862000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 054 060 11500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "123 - 129 WALKER AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Dec 2004",
+    "note": "",
+    "description": "FourPlex - 2 storey; 5 units @ $172,400",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1631182 Ontario Inc"
+    ],
+    "price_text": "$862,000"
+  }
+}

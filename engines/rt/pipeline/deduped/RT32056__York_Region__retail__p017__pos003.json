@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT32056",
+  "source_folder": "York_Region/retail/p017",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32056",
+      "source_folder": "York_Region/retail/p017",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "3235 HWY 7 E",
+        "LEVEL 1, UNITS 18-19"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "05 Sep 2003",
+      "price_text": "$1,273,280",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tang Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Tang",
+        "21 Greenwich Ave",
+        "Markham, Ontario",
+        "L3P 7K5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 894",
+      "Level 1, Units 18 & 19"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,273,280     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT320/RT32056/photo.jpg"
+    },
+    "footer": {
+      "page_position": "804 / 984",
+      "rt_id": "RT32056"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "3235 HWY 7 E, LEVEL 1, UNITS 18-19",
+    "postcode": "L3R 3P3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "09/05/2003",
+    "desc": "Retail Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1273280",
+    "cash": "1273280",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "3235 HWY 7 E",
+      "LEVEL 1, UNITS 18-19"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "05 Sep 2003",
+    "note": "",
+    "description": "Retail Condo",
+    "seller_lines": [
+      "Tang Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,273,280"
+  }
+}

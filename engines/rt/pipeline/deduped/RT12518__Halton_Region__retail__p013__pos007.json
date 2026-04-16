@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT12518",
+  "source_folder": "Halton_Region/retail/p013",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12518",
+      "source_folder": "Halton_Region/retail/p013",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p013/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "920 BRANT ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "09 Apr 1998",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "744353 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Murray Cross",
+        "c/o Harbridge & Cross",
+        "7725 Jane St, Ste 102",
+        "Concord, Ontario",
+        "L4K 1X4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Canadian Real Estate Capital Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexander C. Sennecke",
+        "120 Adelaide St W, Ste 2401",
+        "Toronto, Ontario",
+        "M5H 1T1"
+      ]
+    },
+    "description_lines": [
+      "Retail Strip Plaza - 23 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-8405, Part 2",
+      "",
+      "1.79 acre"
+    ],
+    "arn_text": "24 02 050 502 03500",
+    "consideration_lines": [
+      "cash: $522,742     assumed/vtb debt: $927,257",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/08/2017   due: on demand",
+      "",
+      "chargee: VWR Capital Corp",
+      "principal: $570,000   rate: 7.95% per annum.",
+      "registered: 05/09/2017   due: 05/15/2018",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $739,200   rate: Prime plus 10.0% per annum.",
+      "registered: 05/08/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "608 / 613",
+      "rt_id": "RT12518"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "920 BRANT ST",
+    "postcode": "",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/09/1998",
+    "desc": "Retail Strip Plaza - 23 units",
+    "bldg": "",
+    "acreage": "1.79",
+    "consid": "1450000",
+    "cash": "522742",
+    "debt": "927257",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 050 502 03500"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "920 BRANT ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "09 Apr 1998",
+    "note": "",
+    "description": "Retail Strip Plaza - 23 units",
+    "seller_lines": [
+      "744353 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Canadian Real Estate Capital Inc"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

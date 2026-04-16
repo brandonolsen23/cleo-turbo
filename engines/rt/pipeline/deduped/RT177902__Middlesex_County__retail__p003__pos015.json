@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT177902",
+  "source_folder": "Middlesex_County/retail/p003",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177902",
+      "source_folder": "Middlesex_County/retail/p003",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p003/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "629 RICHMOND ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "24 May 2023",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2440339 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Soultana Matous-Anastasiadis",
+        "550 Dufferin Ave",
+        "London, Ontario",
+        "N6B 2A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 238(W), Part Lot 6",
+      "As in Inst No 573678",
+      "",
+      "PIN: 08263-0062",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "39 36 010 080 06800",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177902/0824_113053.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177902/0824_113057.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177902/0824_113110.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177902/0824_113114.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "116 / 686",
+      "rt_id": "RT177902"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "629 RICHMOND ST",
+    "postcode": "N6A 3G5",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "05/24/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "2100000",
+    "cash": "2100000",
+    "debt": "",
+    "note": "",
+    "pin": "08263-0062",
+    "rollno": "39 36 010 080 06800"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "629 RICHMOND ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "24 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2440339 Ontario Ltd"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

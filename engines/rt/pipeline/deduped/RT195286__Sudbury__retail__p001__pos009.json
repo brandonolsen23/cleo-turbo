@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT195286",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195286",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "1543 PARIS ST"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "03 Oct 2025",
+      "price_text": "$1,950,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Shraavan Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bhargav Patel",
+        "39 Teravista Way",
+        "Sudbury, Ontario",
+        "P3E 0H9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - McKim, Part Lot 6",
+      "Plan 53R-7604, Part 1",
+      "As in Inst No LT-85462",
+      "",
+      "PIN: 73595-0245",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,950,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,450,000   rate: 6.0% per annum.",
+      "registered: 10/03/2025   due: 10/01/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 90",
+      "rt_id": "RT195286"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "1543 PARIS ST",
+    "postcode": "P3E 3B7",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "10/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "1950000",
+    "cash": "1950000",
+    "debt": "",
+    "note": "",
+    "pin": "73595-0245",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "1543 PARIS ST"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "03 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Shraavan Inc"
+    ],
+    "price_text": "$1,950,000"
+  }
+}

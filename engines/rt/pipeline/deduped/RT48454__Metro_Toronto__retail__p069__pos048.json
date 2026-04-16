@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT48454",
+  "source_folder": "Metro_Toronto/retail/p069",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48454",
+      "source_folder": "Metro_Toronto/retail/p069",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p069/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "450 - 452 DAWES RD"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "01 May 2006",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Orlando Corp     905-677-5480"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: William O'Rourke",
+        "6205 Airport Rd",
+        "Mississauga, Ontario",
+        "L4V 1E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Gower Court Townhouses Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lionel Larry",
+        "4211 Yonge St, Ste 200",
+        "Toronto, Ontario",
+        "M2P 2A9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3433, Part Lot 7",
+      "As in Inst Nos:",
+      "EY-168099,  EY-168100 & EY-168101",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "19 06 012 120 06400",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $5,000,000   rate: Prime plus 0.75% per annum",
+      "registered: 05/01/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT484/RT48454/air1.jpg",
+        "/assets/files/RT4/RT484/RT48454/air2.jpg",
+        "/assets/files/RT4/RT484/RT48454/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT484/RT48454/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3449 / 4952",
+      "rt_id": "RT48454"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "450 - 452 DAWES RD",
+    "postcode": "M4B 2E9",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "05/01/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".73",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 012 120 06400"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "450 - 452 DAWES RD"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "01 May 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Orlando Corp"
+    ],
+    "buyer_lines": [
+      "Gower Court Townhouses Corp"
+    ],
+    "price_text": "$900,000"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT78446",
+  "source_folder": "Thunder_Bay/retail/p002",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT78446",
+      "source_folder": "Thunder_Bay/retail/p002",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p002/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "901 RED RIVER RD"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "13 May 2011",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hill St Financial Services Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Don Caron",
+        "87 N Hill St",
+        "Thunder Bay, Ontario",
+        "P7A 5V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2261767 Ontario Inc     416-365-1110"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ken Prehogan",
+        "c/o WeirFoulds LLP",
+        "The Exchange Tower Suite 1600",
+        "PO Box 480, 130 King St W",
+        "Toronto, Ontario",
+        "M5X 1J5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg/Land - 1 storey; 2 units 15,500 sf on 2.4 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 55R-12080",
+      "Parts 2, 3, 6-15",
+      "Except:",
+      "Plan 55R-12555, Parts 1-6",
+      "",
+      "PIN: 62173-0090",
+      "",
+      "2.37 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "57 / 65",
+      "rt_id": "RT78446"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "901 RED RIVER RD",
+    "postcode": "P7B 1K3",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "05/13/2011",
+    "desc": "Retail Bldg/Land - 1 storey; 2 units 15,500 sf on 2.4 Ac",
+    "bldg": "15,500 sf",
+    "acreage": "2.37",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "",
+    "pin": "62173-0090",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "901 RED RIVER RD"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "13 May 2011",
+    "note": "",
+    "description": "Retail Bldg/Land - 1 storey; 2 units 15,500 sf on 2.4 Ac",
+    "seller_lines": [
+      "Hill St Financial Services Inc"
+    ],
+    "buyer_lines": [
+      "2261767 Ontario Inc"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

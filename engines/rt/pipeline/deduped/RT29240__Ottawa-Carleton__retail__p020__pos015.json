@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT29240",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29240",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "1642 MERIVALE RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "04 Mar 2003",
+      "price_text": "$31,171,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Merivale/Gateway Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Milic Sutic",
+        "ING Realty Management, LLC",
+        "676 North Michigan Ave, Ste 3350",
+        "Chicago, Illinois",
+        "USA - 60611"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1540709 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Shlomo Sheinbach",
+        "TGS",
+        "Bridlewood Mall Management Office",
+        "2900 Warden Ave",
+        "Toronto, Ontario",
+        "M1W 4S8"
+      ]
+    },
+    "description_lines": [
+      "Merivale Mall:1 & 2 storey; 48 units 221,329 sf @ $141"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 401392, Block F",
+      "Plan 4R-2133, Parts 1-4",
+      "",
+      "16.41 acre"
+    ],
+    "arn_text": "06 12 000 590 05100",
+    "consideration_lines": [
+      "cash: $31,171,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT292/RT29240/photo.jpg"
+    },
+    "footer": {
+      "page_position": "966 / 1141",
+      "rt_id": "RT29240"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "1642 MERIVALE RD",
+    "postcode": "K2G 4A1",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "03/04/2003",
+    "desc": "Merivale Mall:1 & 2 storey; 48 units 221,329 sf @ $141",
+    "bldg": "221,329 sf",
+    "acreage": "16.41",
+    "consid": "31171500",
+    "cash": "31171500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 12 000 590 05100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "1642 MERIVALE RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "04 Mar 2003",
+    "note": "",
+    "description": "Merivale Mall:1 & 2 storey; 48 units 221,329 sf @ $141",
+    "seller_lines": [
+      "Merivale/Gateway Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1540709 Ontario Ltd"
+    ],
+    "price_text": "$31,171,500"
+  }
+}

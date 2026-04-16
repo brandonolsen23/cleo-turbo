@@ -1,0 +1,141 @@
+{
+  "rt_id": "RT17371",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17371",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "255 KING ST W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "28 Apr 2000",
+      "price_text": "$5,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "King Centre (Kitchener) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Raymond Royce",
+        "c/o 1020-50 Queen St N",
+        "Kitchener, Ontario",
+        "N2H 6M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Manufacturers Life Insurance Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruce Lackenbauer",
+        "250 Bloor St E, 8th Flr",
+        "Toronto, Ontario",
+        "M4W 1E5"
+      ]
+    },
+    "description_lines": [
+      "Shopping Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "W side opposite College St",
+      "",
+      "3.88 acre"
+    ],
+    "arn_text": "30 12 050 001 03800",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/15/2021   due: on demand",
+      "",
+      "chargee: 1822041 Ontario Ltd",
+      "principal: $3,000,000   rate: Until 7/29/2023, 2.0% per annum.\nUnitl 7/29/2024, 3.0% per annum.\nUntil 7/29/2025, 5.0% per annum.\nMonthly payments for the first 20 months of $5,000, and $4,166.67 for the final 12 months.",
+      "registered: 11/30/2022   due: 07/29/2025",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $100,000,000   rate: Up to 25.0% per annum.",
+      "registered: 11/30/2022   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,175,000   rate: Prime plus 6.0% per annum.",
+      "registered: 12/02/2022   due: on demand",
+      "",
+      "chargee: Tandia Financial Credit Union Ltd",
+      "principal: $3,300,000   rate: As set out in the Commitment Letter and Promissory Note.",
+      "registered: 12/01/2022   due: on demand",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $4,360,000   rate: Prime plus 3.0% per annum.",
+      "registered: 12/02/2022   due: on demand",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $9,000,000   rate: Up to 25.0% per annum.",
+      "registered: 11/28/2022   due: on demand",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $9,000,000   rate: Up to 25.0% per annum.",
+      "registered: 11/28/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT173/RT17371/photo.jpg"
+    },
+    "footer": {
+      "page_position": "726 / 752",
+      "rt_id": "RT17371"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "255 KING ST W",
+    "postcode": "N2G 4P9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "04/28/2000",
+    "desc": "Shopping Centre",
+    "bldg": "",
+    "acreage": "3.88",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 050 001 03800"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "255 KING ST W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "28 Apr 2000",
+    "note": "",
+    "description": "Shopping Centre",
+    "seller_lines": [
+      "King Centre (Kitchener) Inc"
+    ],
+    "buyer_lines": [
+      "The Manufacturers Life Insurance Co"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT24398",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24398",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "3041 DOUGALL AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "18 Jan 2002",
+      "price_text": "$1,150,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1243596 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marco Savoni",
+        "1060 Morand St",
+        "Windsor, Ontario",
+        "N9G 1J6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1486062 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marco Savoni",
+        "573 Erie St E",
+        "Windsor, Ontario",
+        "N9A 3X8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-4244, Part 2",
+      "",
+      "0.59 acre"
+    ],
+    "arn_text": "37 39 080 370 16000",
+    "consideration_lines": [
+      "cash: $474,482     assumed/vtb debt: $675,518"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT243/RT24398/photo.jpg"
+    },
+    "footer": {
+      "page_position": "417 / 460",
+      "rt_id": "RT24398"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "3041 DOUGALL AVE",
+    "postcode": "N9E 1S3",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "01/18/2002",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".59",
+    "consid": "1150000",
+    "cash": "474482",
+    "debt": "675518",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "37 39 080 370 16000"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "3041 DOUGALL AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "18 Jan 2002",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1243596 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1486062 Ontario Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

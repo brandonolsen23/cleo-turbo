@@ -1,0 +1,142 @@
+{
+  "rt_id": "RT15477",
+  "source_folder": "Ottawa-Carleton/retail/p023",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15477",
+      "source_folder": "Ottawa-Carleton/retail/p023",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p023/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "365 FOREST ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 May 1999",
+      "price_text": "$800,000",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Court",
+        "General Division"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Estate of Frank Desrosiers"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Grant",
+        "c/o 700-225 Metcalfe St",
+        "Ottawa, Ontario",
+        "K2P 1P9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-515, Parts 3 & 4",
+      "",
+      "0.49 acre"
+    ],
+    "arn_text": "06 14 095 101 04901",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,377,500   rate: Prime plus 5.0% per annum.",
+      "registered: 09/14/2020   due: on demand",
+      "",
+      "chargee: 50 Charles Street Ltd",
+      "principal: $1,600,000   rate: First year, 4.0% per annum.\nSecond year, 4.50% per annum.\nThird year, 6.0% per annum.",
+      "registered: 09/14/2020   due: 09/14/2023",
+      "",
+      "chargee: Sub-Prime Mortgage Corp",
+      "principal: $1,760,000   rate: 6.0% per annum. Chargee may extend for a further 6 months at the previous rate plus 3.0% per annum. A renewal fee of 5.0% the outstanding balance will apply.",
+      "registered: 09/18/2020   due: 09/14/2021",
+      "",
+      "chargee: Sub-Prime Mortgage Corp",
+      "principal: $330,000   rate: 8.0% per annum. Chargee may extend for a further 6 months at the rate plus 3.0% per annum. A renewal fee of 5.0% of the outstanding balance will apply.",
+      "registered: 09/18/2020   due: 09/14/2021",
+      "",
+      "Named Individual(s)",
+      "principal: $207,500   rate: 37.7% per annum. May be extended for a further 6 months, 5.0% of the principal will be added to the term.",
+      "registered: 09/18/2020   due: 10/22/2020",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,400,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 09/15/2020   due: on demand",
+      "",
+      "chargee: The Venture Centre",
+      "principal: $250,000   rate: BDBC floating base rate plus 10.0% per annum.",
+      "registered: 09/15/2020   due: on demand",
+      "",
+      "chargee: 1833624 Ontario Inc",
+      "principal: $1,245,000   rate: 2.10% per annum.",
+      "registered: 09/15/2020   due: 09/15/2025",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,244,100   rate: 1.99% per annum.",
+      "registered: 09/14/2020   due: 10/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1115 / 1141",
+      "rt_id": "RT15477"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "365 FOREST ST",
+    "postcode": "K2B 7Z7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/15/1999",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".49",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "06 14 095 101 04901"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "365 FOREST ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 May 1999",
+    "note": "Foreclosure",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Ontario Court",
+      "General Division"
+    ],
+    "buyer_lines": [
+      "Estate of Frank Desrosiers"
+    ],
+    "price_text": "$800,000"
+  }
+}

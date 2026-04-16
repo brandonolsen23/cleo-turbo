@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT192282",
+  "source_folder": "York_Region/multifamily/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192282",
+      "source_folder": "York_Region/multifamily/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "76 MAJOR MACKENZIE DR E"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "23 May 2025",
+      "price_text": "$1,510,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Delsam Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "76 Major Mackenzie Dr E",
+        "Richmond Hill, Ontario",
+        "L4C 1G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1883, Lot 123",
+      "",
+      "PIN: 03172-0296",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "19 38 020 010 01300",
+    "consideration_lines": [
+      "cash: $1,510,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,203,150   rate: Prime minus 0.8% per annum. Due in bi-weekly payments of $2,689.68.",
+      "registered: 05/23/2025   due: 05/19/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 263",
+      "rt_id": "RT192282"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "76 MAJOR MACKENZIE DR E",
+    "postcode": "L4C 1G9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "05/23/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "1510000",
+    "cash": "1510000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "03172-0296",
+    "rollno": "19 38 020 010 01300"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "76 MAJOR MACKENZIE DR E"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "23 May 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Delsam Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,510,000"
+  }
+}

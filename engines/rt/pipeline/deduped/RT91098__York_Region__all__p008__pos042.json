@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT91098",
+  "source_folder": "York_Region/all/p008",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT91098",
+      "source_folder": "York_Region/all/p008",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/all/p008/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2222 ROUTE 500 W"
+      ],
+      "city_region": "The Nation Municipality : Russell Township",
+      "date_text": "21 Dec 2012",
+      "price_text": "$623,478",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "159142 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rene Miron",
+        "41 Promenade de la Rive",
+        "Embrun, Ontario",
+        "K0A 1W0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 30",
+      "As in Inst No RR-73658",
+      "",
+      "PIN: 69026-0003",
+      "",
+      "1.65 acre"
+    ],
+    "arn_text": "02 12 001 006 08400",
+    "consideration_lines": [
+      "cash: $623,478     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "393 / 516",
+      "rt_id": "RT91098"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2222 ROUTE 500 W",
+    "postcode": "",
+    "municipality": "The Nation Municipality",
+    "region": "Russell Township",
+    "date": "12/21/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.65",
+    "consid": "623478",
+    "cash": "623478",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "69026-0003",
+    "rollno": "02 12 001 006 08400"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2222 ROUTE 500 W"
+    ],
+    "city_region": "The Nation Municipality : Russell Township",
+    "date_text": "21 Dec 2012",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "159142 Canada Inc"
+    ],
+    "price_text": "$623,478"
+  }
+}

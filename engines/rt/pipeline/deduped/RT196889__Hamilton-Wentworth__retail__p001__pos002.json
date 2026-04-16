@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT196889",
+  "source_folder": "Hamilton-Wentworth/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196889",
+      "source_folder": "Hamilton-Wentworth/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "902 MOHAWK RD E"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "27 Jan 2026",
+      "price_text": "$6,000,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Mohawk Road Hamilton Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "H&R REIT",
+      "contact_lines": [
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Crestpoint Real Estate (Prometheus) Inc     416-862-6018"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Leon",
+        "130 King St, Ste 1400",
+        "Toronto, Ontario",
+        "M5X 1C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Barton, Part Lot 4",
+      "Plan 62R-16693, Parts 1 & 9",
+      "",
+      "PIN: 16988-0097",
+      "",
+      "1.38 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $225,000,000   rate: 25.0% per annum.",
+      "registered: 01/27/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196889/0214_124750.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196889/0214_124816.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196889/0214_124817.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196889/0214_124854.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196889/0214_124855.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1968/RT196889/0214_124905.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 616",
+      "rt_id": "RT196889"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "902 MOHAWK RD E",
+    "postcode": "L8T 2R8",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "01/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.38",
+    "consid": "6000000",
+    "cash": "6000000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "16988-0097",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "902 MOHAWK RD E"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "27 Jan 2026",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "Mohawk Road Hamilton Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "Crestpoint Real Estate (Prometheus) Inc"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

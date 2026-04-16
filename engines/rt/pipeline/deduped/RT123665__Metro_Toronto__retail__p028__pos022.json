@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT123665",
+  "source_folder": "Metro_Toronto/retail/p028",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123665",
+      "source_folder": "Metro_Toronto/retail/p028",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p028/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "329 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "09 Mar 2017",
+      "price_text": "$17,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "9146-5377 Quebec Inc",
+        "MMPM Limited Partnership"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Payne",
+        "8275 19th Ave",
+        "Montreal, Quebec",
+        "H1Z 4K2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "333 Queen West (Crestpoint) Inc     416-862-6018"
+      ],
+      "trade_name": "Crestpoint Real Estate Investments Ltd",
+      "contact_lines": [
+        "Attn: Kevin Leon",
+        "130 King St W, Ste 1400",
+        "Toronto, Ontario",
+        "M5X 1C8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 3 storey; 2 tenants 15,761 sf @ $1,085",
+      "",
+      "15,761 sf (5,266 sf main floor)",
+      "",
+      "Fully leased to 2 tenants: American Eagle and Y Yoga",
+      "",
+      "No parking",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-13336, Part 1",
+      "Plan 66R-2745, Parts 2 & 3",
+      "",
+      "PIN: 21412-0049 +",
+      "",
+      "S side Queen St W, W of John St",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 062 550 02001",
+    "consideration_lines": [
+      "cash: $8,062,000     assumed/vtb debt: $9,038,000"
+    ],
+    "broker_lines": [
+      "CBRE Ltd: Peter Senst, Casey Gallagher & Stuart A Smith, 416-815-2398"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123665/0326_084037.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123665/0326_084058.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123665/0326_084127.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123665/0326_084128.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1373 / 4952",
+      "rt_id": "RT123665"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "329 QUEEN ST W",
+    "postcode": "M5V 2A4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/09/2017",
+    "desc": "Retail Bldg: 3 storey; 2 tenants 15,761 sf @ $1,085",
+    "bldg": "15,761 sf",
+    "acreage": ".14",
+    "consid": "17100000",
+    "cash": "8062000",
+    "debt": "9038000",
+    "note": "",
+    "pin": "21412-0049+",
+    "rollno": "19 04 062 550 02001"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "329 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "09 Mar 2017",
+    "note": "",
+    "description": "Retail Bldg: 3 storey; 2 tenants 15,761 sf @ $1,085",
+    "seller_lines": [
+      "9146-5377 Quebec Inc",
+      "MMPM Limited Partnership"
+    ],
+    "buyer_lines": [
+      "333 Queen West (Crestpoint) Inc"
+    ],
+    "price_text": "$17,100,000"
+  }
+}

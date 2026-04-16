@@ -1,0 +1,100 @@
+{
+  "rt_id": "RT37700",
+  "source_folder": "Metro_Toronto/multifamily/p092",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37700",
+      "source_folder": "Metro_Toronto/multifamily/p092",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p092/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "66 REDPATH AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Sep 2004",
+      "price_text": "$720,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "FourPlex"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 653, Block F, Part Lot 27",
+      "As in Inst No EN-119801",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 103 660 00800",
+    "consideration_lines": [
+      "cash: $720,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT377/RT37700/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4572 / 6031",
+      "rt_id": "RT37700"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "66 REDPATH AVE",
+    "postcode": "M4S 2J7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/01/2004",
+    "desc": "FourPlex",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "720000",
+    "cash": "720000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 103 660 00800"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "66 REDPATH AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Sep 2004",
+    "note": "",
+    "description": "FourPlex",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$720,000"
+  }
+}

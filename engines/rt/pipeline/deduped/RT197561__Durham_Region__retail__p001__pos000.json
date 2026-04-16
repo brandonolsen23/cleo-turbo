@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197561",
+  "source_folder": "Durham_Region/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197561",
+      "source_folder": "Durham_Region/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 BANFF RD"
+      ],
+      "city_region": "Uxbridge : Durham Region",
+      "date_text": "05 Mar 2026",
+      "price_text": "$5,652,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sanvest Inc",
+        "Willx Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "50 Hardwood St",
+        "Kirkfield, Ontario",
+        "K0M 2B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "One Banff Road Inc     905-852-3331"
+      ],
+      "trade_name": "Williamson Uxbridge GM",
+      "contact_lines": [
+        "Attn: Alexander Williamson",
+        "259 Toronto St S",
+        "Uxbridge, Ontario",
+        "L9P 1S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1119 (Uxbridge),",
+      "Lots 2 & 3",
+      "",
+      "PIN: 26838-0078",
+      "",
+      "NE corner of Banff Rd & Toronto St S",
+      "",
+      "2.19 acre"
+    ],
+    "arn_text": "18 29 040 009 02212",
+    "consideration_lines": [
+      "cash: $5,652,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $5,950,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/05/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 506",
+      "rt_id": "RT197561"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1 BANFF RD",
+    "postcode": "L9P 1S9",
+    "municipality": "Uxbridge",
+    "region": "Durham Region",
+    "date": "03/05/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.19",
+    "consid": "5652500",
+    "cash": "5652500",
+    "debt": "",
+    "note": "",
+    "pin": "26838-0078",
+    "rollno": "18 29 040 009 02212"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1 BANFF RD"
+    ],
+    "city_region": "Uxbridge : Durham Region",
+    "date_text": "05 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sanvest Inc",
+      "Willx Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "One Banff Road Inc"
+    ],
+    "price_text": "$5,652,500"
+  }
+}

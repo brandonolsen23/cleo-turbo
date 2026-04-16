@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20467",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20467",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "10080 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "05 Feb 2001",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1061110 Ontario Inc     519-735-1190"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Tom Licausi",
+        "3120 Robinet",
+        "Windsor, Ontario",
+        "N8R 1P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Revenberg Holdings Ltd     519-979-2800"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Augustine Revenberg",
+        "Gus Revenberg Pontiac Buick",
+        "10150 Tecumseh Rd E",
+        "Windsor, Ontario",
+        "N8R 1A2"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Farm Lot 137",
+      "",
+      "1.63 acre"
+    ],
+    "arn_text": "37 39 070 730 03000",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT204/RT20467/photo.jpg"
+    },
+    "footer": {
+      "page_position": "437 / 460",
+      "rt_id": "RT20467"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "10080 TECUMSEH RD E",
+    "postcode": "N8R 1A2",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "02/05/2001",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.63",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 070 730 03000"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "10080 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "05 Feb 2001",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "1061110 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Revenberg Holdings Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

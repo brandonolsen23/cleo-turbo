@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT28308",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28308",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "529 PALMERSTON BLVD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Jan 2003",
+      "price_text": "$750,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Scuttlebut Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Liora Salter",
+        "464 Brunswick Ave",
+        "Toronto, Ontario",
+        "M5R 2Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 632, Part Lots 113 & 114",
+      "As in Inst No CA-487254"
+    ],
+    "arn_text": "19 04 067 300 00400",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4975 / 6031",
+      "rt_id": "RT28308"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "529 PALMERSTON BLVD",
+    "postcode": "M6G 2P4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/02/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 067 300 00400"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "529 PALMERSTON BLVD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Jan 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Scuttlebut Development Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

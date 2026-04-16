@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT12698",
+  "source_folder": "Peel_Region/retail/p022",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12698",
+      "source_folder": "Peel_Region/retail/p022",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p022/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 QUEEN ST W"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "05 Jun 1998",
+      "price_text": "$1,300,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "The Mutual Trust Company"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Don Ross",
+        "70 University Ave, Ste 400",
+        "Toronto, Ontario",
+        "M5J 2M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "550 Queen West Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tom Elek",
+        "390 Bay St, Ste 1900",
+        "Toronto, Ontario",
+        "M5H 2Y2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43M-571, Block 262",
+      "Plan 43R-13660, Part 1"
+    ],
+    "arn_text": "21 10 040 039 18900",
+    "consideration_lines": [
+      "cash: $325,000     assumed/vtb debt: $975,000",
+      "",
+      "chargee: 2560517 Ontario Inc",
+      "principal: $2,607,033   rate: 9.0% per annum. A lender's fee of $64,350 will also be applied at maturity.",
+      "registered: 07/07/2017   due: 06/30/2019",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $536,250   rate: 24.0% per annum.",
+      "registered: 07/06/2017   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $450,000   rate: 0% per annum.",
+      "registered: 07/20/2017   due: 07/20/2019",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $767,000   rate: Prime plus 6.0% per annum.",
+      "registered: 07/19/2017   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,657,000   rate: Prime plus 6.0% per annum.",
+      "registered: 07/21/2017   due: on demand",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $618,750   rate: 4.94% per annum.",
+      "registered: 07/21/2017   due: 08/01/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT126/RT12698/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1074 / 1087",
+      "rt_id": "RT12698"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "550 QUEEN ST W",
+    "postcode": "",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "06/05/1998",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1300000",
+    "cash": "325000",
+    "debt": "975000",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "21 10 040 039 18900"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "550 QUEEN ST W"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "05 Jun 1998",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "The Mutual Trust Company"
+    ],
+    "buyer_lines": [
+      "550 Queen West Holdings Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

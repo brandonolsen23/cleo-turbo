@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT67521",
+  "source_folder": "Metro_Toronto/multifamily/p066",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67521",
+      "source_folder": "Metro_Toronto/multifamily/p066",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p066/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "30 WALMER RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Jun 2009",
+      "price_text": "$4,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "30 Walmer Road Inc     416-977-0202"
+      ],
+      "trade_name": "Property Management Services Inc",
+      "contact_lines": [
+        "Pres: Carlos Santos",
+        "505 University Ave",
+        "Lower Management Office",
+        "Toronto, Ontario",
+        "M5G 1X3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 40 units @ $103,750"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 24",
+      "Plan 66R-9567, Parts 1 & 2",
+      "",
+      "PIN: 21230-0001",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "19 04 051 020 02000",
+    "consideration_lines": [
+      "cash: $4,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Peoples Trust Co",
+      "principal: $3,179,925   rate: 4.13% per annum",
+      "registered: 06/16/2009   due: 07/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67521/0719_094505.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67521/0719_094536.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT675/RT67521/0719_094550.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT675/RT67521/air1.jpg",
+        "/assets/files/RT6/RT675/RT67521/air2.jpg",
+        "/assets/files/RT6/RT675/RT67521/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3278 / 6031",
+      "rt_id": "RT67521"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "30 WALMER RD",
+    "postcode": "M5R 2W3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/16/2009",
+    "desc": "Apartment Bldg - 3.5 storey; 40 units @ $103,750",
+    "bldg": "40 units",
+    "acreage": ".35",
+    "consid": "4150000",
+    "cash": "4150000",
+    "debt": "",
+    "note": "",
+    "pin": "21230-0001",
+    "rollno": "19 04 051 020 02000"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "30 WALMER RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Jun 2009",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 40 units @ $103,750",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "30 Walmer Road Inc"
+    ],
+    "price_text": "$4,150,000"
+  }
+}

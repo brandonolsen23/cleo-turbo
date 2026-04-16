@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT168219",
+  "source_folder": "Frontenac_County/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT168219",
+      "source_folder": "Frontenac_County/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2820 - 2828 PRINCESS ST"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "14 Apr 2022",
+      "price_text": "$4,500,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "1576457 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1300 Andersen Dr",
+        "Kingston, Ontario",
+        "K7P 0C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "401 Real Estate Trust Inc     226-535-9077"
+      ],
+      "trade_name": "401 Auto RV Group",
+      "contact_lines": [
+        "Attn: Surjeet Bains",
+        "2225 Eagle St N",
+        "Cambridge, Ontario",
+        "N3H 4R7"
+      ]
+    },
+    "description_lines": [
+      "Kia Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 7",
+      "Plan 13R-17680, Parts 1 & 2",
+      "Except:",
+      "Plan 13R-18214, Part 1",
+      "",
+      "PIN: 36089-3752",
+      "",
+      "N side Princess St, W of Bayridge Dr",
+      "",
+      "4.12 acre"
+    ],
+    "arn_text": "10 11 080 200 15200",
+    "consideration_lines": [
+      "cash: $4,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $4,930,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/14/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT16/RT1682/RT168219/0617_072750.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1682/RT168219/0617_072755.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1682/RT168219/0617_072756.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1682/RT168219/0617_072850a.jpg",
+        "http://realtrack.cachefly.net/photos/RT16/RT1682/RT168219/0617_072850b.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 236",
+      "rt_id": "RT168219"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2820 - 2828 PRINCESS ST",
+    "postcode": "K7P 0K3",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "04/14/2022",
+    "desc": "Kia Car Dealership",
+    "bldg": "",
+    "acreage": "4.12",
+    "consid": "4500000",
+    "cash": "4500000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "36089-3752",
+    "rollno": "10 11 080 200 15200"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2820 - 2828 PRINCESS ST"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "14 Apr 2022",
+    "note": "Purchased Business",
+    "description": "Kia Car Dealership",
+    "seller_lines": [
+      "1576457 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "401 Real Estate Trust Inc"
+    ],
+    "price_text": "$4,500,000"
+  }
+}

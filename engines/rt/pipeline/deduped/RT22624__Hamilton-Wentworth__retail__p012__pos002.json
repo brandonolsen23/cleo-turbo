@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT22624",
+  "source_folder": "Hamilton-Wentworth/retail/p012",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22624",
+      "source_folder": "Hamilton-Wentworth/retail/p012",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p012/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1550 UPPER JAMES ST",
+        "50 DUNDURN ST S"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "01 Aug 2001",
+      "price_text": "$48,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Rosart Properties Inc     905-845-7711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Rosart",
+        "226 South Service Rd E",
+        "Oakville, Ontario",
+        "L6J 2X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "The Exchange Tower",
+        "Ste 700, PO Box 378",
+        "130 King St W",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "South Hamilton Square Mall - 304,081 sf @ $160"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-12088, Parts 5 & 6",
+      "Plan 62R-7010, Parts 1-4",
+      "Except Plan 62R-9086, Parts 1, 2, 4-6"
+    ],
+    "arn_text": "25 18 080 951 05090",
+    "consideration_lines": [
+      "cash: $12,923,831     assumed/vtb debt: $35,726,169"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "553 / 616",
+      "rt_id": "RT22624"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1550 UPPER JAMES ST, 50 DUNDURN ST S",
+    "postcode": "L9B 2L6",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "08/01/2001",
+    "desc": "South Hamilton Square Mall - 304,081 sf @ $160",
+    "bldg": "304,081 sf",
+    "acreage": "",
+    "consid": "48650000",
+    "cash": "12923831",
+    "debt": "35726169",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 080 951 05090"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1550 UPPER JAMES ST",
+      "50 DUNDURN ST S"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "01 Aug 2001",
+    "note": "",
+    "description": "South Hamilton Square Mall - 304,081 sf @ $160",
+    "seller_lines": [
+      "Rosart Properties Inc"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$48,650,000"
+  }
+}

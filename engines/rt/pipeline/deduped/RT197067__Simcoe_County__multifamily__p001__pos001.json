@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT197067",
+  "source_folder": "Simcoe_County/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197067",
+      "source_folder": "Simcoe_County/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "14 HURON ST"
+      ],
+      "city_region": "Collingwood : Simcoe County",
+      "date_text": "03 Feb 2026",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ted Yoannou Professional Corp",
+        "YTP Can Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1000 Finch Ave W, Ste 600",
+        "Toronto, Ontario",
+        "M3J 2V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tancom Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brendan Perkins",
+        "14 Huron St",
+        "Collingwood, Ontario",
+        "L9Y 1C4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-15950, Part 1",
+      "",
+      "PIN: 58288-0035",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "43 31 010 001 15800",
+    "consideration_lines": [
+      "cash: $350,000     assumed/vtb debt: $1,000,000",
+      "",
+      "chargee: YTP Can Inc",
+      "principal: $1,000,000   rate: 5.4% per annum.",
+      "registered: 02/03/2026   due: 03/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 530",
+      "rt_id": "RT197067"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "14 HURON ST",
+    "postcode": "L9Y 1C4",
+    "municipality": "Collingwood",
+    "region": "Simcoe County",
+    "date": "02/03/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1350000",
+    "cash": "350000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "58288-0035",
+    "rollno": "43 31 010 001 15800"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "14 HURON ST"
+    ],
+    "city_region": "Collingwood : Simcoe County",
+    "date_text": "03 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ted Yoannou Professional Corp",
+      "YTP Can Inc"
+    ],
+    "buyer_lines": [
+      "Tancom Investments Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

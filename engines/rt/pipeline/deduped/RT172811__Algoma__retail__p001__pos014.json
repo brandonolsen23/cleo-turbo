@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT172811",
+  "source_folder": "Algoma/retail/p001",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172811",
+      "source_folder": "Algoma/retail/p001",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "648 & 658 SECOND LINE W",
+        "648 & 658 2ND LINE W"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "10 Aug 2022",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000183764 Ontario Inc     705-946-5632"
+      ],
+      "trade_name": "Pino's Get Fresh Foods",
+      "contact_lines": [
+        "Attn: Benjamin Pino",
+        "c/o 219 Trunk Rd",
+        "Sault Ste Marie, Ontario",
+        "P6A 3S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1R-8576, Parts 1-3",
+      "",
+      "PIN: 31605-0213",
+      "",
+      "1.94 acre"
+    ],
+    "arn_text": "57 61 060 024 05400",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1728/RT172811/air1.jpg",
+        "/assets/files/RT17/RT1728/RT172811/air2.jpg",
+        "/assets/files/RT17/RT1728/RT172811/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "15 / 29",
+      "rt_id": "RT172811"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "648 & 658 SECOND LINE W, 648 & 658 2ND LINE W",
+    "postcode": "P6C 2K9",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "08/10/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.94",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "31605-0213",
+    "rollno": "57 61 060 024 05400"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "648 & 658 SECOND LINE W",
+      "648 & 658 2ND LINE W"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "10 Aug 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000183764 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

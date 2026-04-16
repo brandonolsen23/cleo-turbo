@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT86599",
+  "source_folder": "York_Region/retail/p009",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT86599",
+      "source_folder": "York_Region/retail/p009",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p009/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "10323 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "27 Jul 2012",
+      "price_text": "$2,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sam Group Investments Inc     416-757-6714"
+      ],
+      "trade_name": "Circoflex",
+      "contact_lines": [
+        "Attn: M. Eslamizadeh",
+        "1810 Midland Ave",
+        "Toronto, Ontario",
+        "M1P 3C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2333920 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Massoud Khorassani",
+        "35 Pamela Ct",
+        "Vaughan, Ontario",
+        "L6A 1G2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10030, Lot 32",
+      "",
+      "PIN: 03172-0081",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "19 38 020 010 81900",
+    "consideration_lines": [
+      "cash: $2,150,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,150,000   rate: Prime plus 5.0% per annum",
+      "registered: 07/27/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT865/RT86599/0805_150622.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT865/RT86599/0805_150742.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT865/RT86599/0805_150814.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT865/RT86599/0805_150821.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT865/RT86599/air1.jpg",
+        "/assets/files/RT8/RT865/RT86599/air2.jpg",
+        "/assets/files/RT8/RT865/RT86599/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "446 / 984",
+      "rt_id": "RT86599"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "10323 YONGE ST",
+    "postcode": "L4C 3C1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "07/27/2012",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "2150000",
+    "cash": "2150000",
+    "debt": "",
+    "note": "",
+    "pin": "03172-0081",
+    "rollno": "19 38 020 010 81900"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "10323 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "27 Jul 2012",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sam Group Investments Inc"
+    ],
+    "buyer_lines": [
+      "2333920 Ontario Inc"
+    ],
+    "price_text": "$2,150,000"
+  }
+}

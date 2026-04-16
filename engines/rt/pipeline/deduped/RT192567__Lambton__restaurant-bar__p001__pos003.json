@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT192567",
+  "source_folder": "Lambton/restaurant-bar/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192567",
+      "source_folder": "Lambton/restaurant-bar/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/restaurant-bar/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "485 HARBOUR RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "05 Jun 2025",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Paigcor Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3060 Sandpiper Trail",
+        "Camlachie, Ontario",
+        "N0N 1E0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tricar Properties Ltd     519-652-8900"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adam Carapella",
+        "3800 Colonel Talbot Rd",
+        "London, Ontario",
+        "N6P 1H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-2544, Part 3",
+      "Except:",
+      "Plan 25R-4108, Part 1",
+      "",
+      "PIN: 43265-0006",
+      "",
+      "0.94 acre"
+    ],
+    "arn_text": "38 29 3000 003 0050 +",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 16",
+      "rt_id": "RT192567"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "485 HARBOUR RD",
+    "postcode": "N7T 5R8",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "06/05/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".94",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "43265-0006",
+    "rollno": "38 29 3000 003 0050+"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "485 HARBOUR RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "05 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Paigcor Developments Inc"
+    ],
+    "buyer_lines": [
+      "Tricar Properties Ltd"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

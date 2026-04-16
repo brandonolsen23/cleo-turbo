@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT73431",
+  "source_folder": "Metro_Toronto/retail/p052",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73431",
+      "source_folder": "Metro_Toronto/retail/p052",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p052/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 SPADINA AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "19 Jul 2010",
+      "price_text": "$1,200,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "947660 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Simon Lugassy",
+        "293 Hillhurst Blvd",
+        "Toronto, Ontario",
+        "M6B 1M9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 2,200 sf @ $545",
+      "",
+      "Bridal shop",
+      "",
+      "Last transferred in Sep 2005 for $665,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-992, Parts 2-8",
+      "",
+      "PIN: 21412-0123",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 062 460 00150",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $840,000   rate: Prime plus 2.25% per annum",
+      "registered: 07/19/2010   due: 08/05/2015",
+      "",
+      "chargee: Enio Cellupica",
+      "principal: $180,000   rate: 12.75% per annum",
+      "registered: 07/19/2010   due: 07/16/2011"
+    ],
+    "broker_lines": [
+      "Royal LePage Real Estate Services: Peter Daly, 416-487-4311"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73431/0731_065303.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT734/RT73431/0731_065323.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT734/RT73431/air1.jpg",
+        "/assets/files/RT7/RT734/RT73431/air2.jpg",
+        "/assets/files/RT7/RT734/RT73431/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2598 / 4952",
+      "rt_id": "RT73431"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "123 SPADINA AVE",
+    "postcode": "M5V 2K8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/19/2010",
+    "desc": "Retail Bldg - 2 storey; 2,200 sf @ $545",
+    "bldg": "2,200 sf",
+    "acreage": ".04",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "21412-0123",
+    "rollno": "19 04 062 460 00150"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "123 SPADINA AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "19 Jul 2010",
+    "note": "Purchased by Tenant",
+    "description": "Retail Bldg - 2 storey; 2,200 sf @ $545",
+    "seller_lines": [
+      "947660 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

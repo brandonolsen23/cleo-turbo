@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT43063",
+  "source_folder": "Metro_Toronto/multifamily/p088",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43063",
+      "source_folder": "Metro_Toronto/multifamily/p088",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p088/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "103 PEMBROKE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "14 Jul 2005",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Chipping Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sonal Champsee",
+        "19-2555 Victoria Park Ave",
+        "Box 321",
+        "Toronto, Ontario",
+        "M1T 1T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 150, Part Lot 43",
+      "As in Inst No CT-802286",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 066 330 01500",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $425,000",
+      "",
+      "chargee: Pearl Langer",
+      "principal: $425,000   rate: 5.0% per annum",
+      "registered: 07/14/2005   due: 07/14/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT430/RT43063/air1.jpg",
+        "/assets/files/RT4/RT430/RT43063/air2.jpg",
+        "/assets/files/RT4/RT430/RT43063/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT430/RT43063/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4352 / 6031",
+      "rt_id": "RT43063"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "103 PEMBROKE ST",
+    "postcode": "M5A 2N9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/14/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "625000",
+    "cash": "200000",
+    "debt": "425000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 066 330 01500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "103 PEMBROKE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "14 Jul 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Chipping Holdings Inc"
+    ],
+    "price_text": "$625,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT24587",
+  "source_folder": "Lambton/multifamily/p003",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24587",
+      "source_folder": "Lambton/multifamily/p003",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/multifamily/p003/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "325 WILLOWDALE CRES"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "25 Jan 2002",
+      "price_text": "$2,545,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lin-Gran-Mer Holdings Inc     519-676-5365"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Dorssers",
+        "RR 3",
+        "Blenheim, Ontario",
+        "N0P 1A0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Piliwood Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anna Davis",
+        "37 Johnson St",
+        "Barrie, Ontario",
+        "L4M 5C3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 6 storey; 58 units @ $43,879"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 605, Lot 4",
+      "",
+      "1.29 acre"
+    ],
+    "arn_text": "38 29 300 002 10602",
+    "consideration_lines": [
+      "cash: $2,545,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "109 / 124",
+      "rt_id": "RT24587"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "325 WILLOWDALE CRES",
+    "postcode": "N7T 7R2",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "01/25/2002",
+    "desc": "Apartment Bldg - 6 storey; 58 units @ $43,879",
+    "bldg": "58 units",
+    "acreage": "1.29",
+    "consid": "2545000",
+    "cash": "2545000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "38 29 300 002 10602"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "325 WILLOWDALE CRES"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "25 Jan 2002",
+    "note": "",
+    "description": "Apartment Bldg - 6 storey; 58 units @ $43,879",
+    "seller_lines": [
+      "Lin-Gran-Mer Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Piliwood Investments Ltd"
+    ],
+    "price_text": "$2,545,000"
+  }
+}

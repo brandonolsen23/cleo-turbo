@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT191538",
+  "source_folder": "York_Region/retail/p002",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191538",
+      "source_folder": "York_Region/retail/p002",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "7097 YONGE ST",
+        "UNIT 104"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "17 Apr 2025",
+      "price_text": "$2,208,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Yonge Grandview Corp     416-471-3706"
+      ],
+      "trade_name": "Devron Developments",
+      "contact_lines": [
+        "31 Scarsdale Rd, Unit 5",
+        "Toronto, Ontario",
+        "M3B 2R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Masoudi Holding Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Parham Masoudi",
+        "123 Patricia Ave",
+        "North York, Ontario",
+        "M2M 1J3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1496",
+      "Level 1, Units 4, 8, 13, 22 & 23",
+      "Level A, Units 58, 59, 64 & 65",
+      "",
+      "PIN: 30028-0004 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,208,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,208,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/17/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191538/0427_141015.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191538/0427_141019.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191538/0427_141024.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191538/0427_141029.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191538/0427_141108.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1915/RT191538/0427_141113.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "86 / 984",
+      "rt_id": "RT191538"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "7097 YONGE ST, UNIT 104",
+    "postcode": "L3T 0H1",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "04/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2208000",
+    "cash": "2208000",
+    "debt": "",
+    "note": "",
+    "pin": "30028-0004+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "7097 YONGE ST",
+      "UNIT 104"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "17 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Yonge Grandview Corp"
+    ],
+    "buyer_lines": [
+      "Masoudi Holding Inc"
+    ],
+    "price_text": "$2,208,000"
+  }
+}

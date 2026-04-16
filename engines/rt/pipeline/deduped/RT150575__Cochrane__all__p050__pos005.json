@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT150575",
+  "source_folder": "Cochrane/all/p050",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150575",
+      "source_folder": "Cochrane/all/p050",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p050/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 THE DRIVEWAY",
+        "UNIT 406"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "23 Mar 2020",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "A Couple of Alexes Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexandra Harden",
+        "90 George St, Ste 901",
+        "Ottawa, Ontario",
+        "K1N 0A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 72",
+      "Level 4, Unit 6",
+      "",
+      "PIN: 15072-0022"
+    ],
+    "arn_text": "06 14 042 001 25021",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2456 / 10920",
+      "rt_id": "RT150575"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "20 THE DRIVEWAY, UNIT 406",
+    "postcode": "K2P 1C8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/23/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "15072-0022",
+    "rollno": "06 14 042 001 25021"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "20 THE DRIVEWAY",
+      "UNIT 406"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "23 Mar 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "A Couple of Alexes Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

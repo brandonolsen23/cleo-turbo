@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT182326",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182326",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "454 HESPELER RD",
+        "UNIT P104"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "04 Dec 2023",
+      "price_text": "$1,477,434",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2813026 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "250 Dundas St W, Ste 402",
+        "Mississauga, Ontario",
+        "L5B 1J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lasya Technologies Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pooja Vaid",
+        "105 Bonnie Braes Dr",
+        "Brampton, Ontario",
+        "L6Y 0Z4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 779",
+      "Level 1, Unit 17",
+      "",
+      "PIN: 23779-0017"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,477,434     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100015.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100020.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100254.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100309.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100310.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100314.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1823/RT182326/0120_100659.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "116 / 752",
+      "rt_id": "RT182326"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "454 HESPELER RD, UNIT P104",
+    "postcode": "N1R 0E3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "12/04/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1477434",
+    "cash": "1477434",
+    "debt": "",
+    "note": "",
+    "pin": "23779-0017",
+    "rollno": ""
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "454 HESPELER RD",
+      "UNIT P104"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "04 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2813026 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Lasya Technologies Ltd"
+    ],
+    "price_text": "$1,477,434"
+  }
+}

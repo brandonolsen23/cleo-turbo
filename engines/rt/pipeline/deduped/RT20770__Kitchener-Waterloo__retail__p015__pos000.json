@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20770",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20770",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "195 FRANKLIN BLVD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "15 Feb 2001",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Fontes Realty Ltd     519-623-8357"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gidget Fontes",
+        "183 Taylor Ave",
+        "Cambridge, Ontario",
+        "N1R 8H9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Continental Masonry Investments Inc     519-623-1574"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Horacio Gregorio",
+        "1677 Morrison Rd",
+        "Cambridge, Ontario",
+        "N1R 5S2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; known as Franklin Square"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67R-1977, Part 3",
+      "As in Inst No 1242588",
+      "",
+      "E side 40m S of Highway 8",
+      "",
+      "0.70 acre"
+    ],
+    "arn_text": "30 06 070 066 11915",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT207/RT20770/photo.jpg"
+    },
+    "footer": {
+      "page_position": "701 / 752",
+      "rt_id": "RT20770"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "195 FRANKLIN BLVD",
+    "postcode": "N1R 8H3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "02/15/2001",
+    "desc": "Retail Plaza - 1 storey; known as Franklin Square",
+    "bldg": "",
+    "acreage": ".7",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 070 066 11915"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "195 FRANKLIN BLVD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "15 Feb 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; known as Franklin Square",
+    "seller_lines": [
+      "Fontes Realty Ltd"
+    ],
+    "buyer_lines": [
+      "Continental Masonry Investments Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

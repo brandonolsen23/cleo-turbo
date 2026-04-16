@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT123418",
+  "source_folder": "Norfolk/all/p030",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123418",
+      "source_folder": "Norfolk/all/p030",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/all/p030/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "106 MCMURCHIE LANE"
+      ],
+      "city_region": "West Lincoln : Niagara N",
+      "date_text": "07 Feb 2017",
+      "price_text": "$899,900",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2090652 Ontario Inc     905-309-0262"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Tzellos",
+        "304 Main St W",
+        "Grimsby, Ontario",
+        "L3M 1S4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-92, Lot 24",
+      "",
+      "PIN: 46053-0025",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $899,900     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $719,920   rate: 2.89% per annum.",
+      "registered: 02/07/2017   due: 02/07/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123418/0318_101023.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123418/0318_101041.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1234/RT123418/0318_101058.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1464 / 3375",
+      "rt_id": "RT123418"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "106 MCMURCHIE LANE",
+    "postcode": "L0R 2A0",
+    "municipality": "West Lincoln",
+    "region": "Niagara N",
+    "date": "02/07/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "899900",
+    "cash": "899900",
+    "debt": "",
+    "note": "",
+    "pin": "46053-0025",
+    "rollno": ""
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "106 MCMURCHIE LANE"
+    ],
+    "city_region": "West Lincoln : Niagara N",
+    "date_text": "07 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2090652 Ontario Inc"
+    ],
+    "price_text": "$899,900"
+  }
+}

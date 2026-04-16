@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20110",
+  "source_folder": "Metro_Toronto/retail/p091",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20110",
+      "source_folder": "Metro_Toronto/retail/p091",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p091/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "546 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Dec 2000",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Betty H. Richardson"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sharon Campbell",
+        "4427 Twentieth Sideroad, RR 1",
+        "Gilford, Ontario",
+        "L0L 1R0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1240556 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roshanali Tejani",
+        "121 Yonge St",
+        "Toronto, Ontario",
+        "M5C 1W4"
+      ]
+    },
+    "description_lines": [
+      "Retail/Com Bldg - 3 storey; office over retail"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 213-E, Lot 5, W/S Yonge St",
+      "",
+      "W side 30m N of Maitland St",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 068 220 02000",
+    "consideration_lines": [
+      "cash: $175,000     assumed/vtb debt: $350,000"
+    ],
+    "broker_lines": [
+      "Leasing Info: 416-363-2300"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT201/RT20110/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4539 / 4952",
+      "rt_id": "RT20110"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "546 YONGE ST",
+    "postcode": "M4Y 1Y8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/29/2000",
+    "desc": "Retail/Com Bldg - 3 storey; office over retail",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "525000",
+    "cash": "175000",
+    "debt": "350000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 068 220 02000"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "546 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Dec 2000",
+    "note": "",
+    "description": "Retail/Com Bldg - 3 storey; office over retail",
+    "seller_lines": [
+      "Betty H. Richardson"
+    ],
+    "buyer_lines": [
+      "1240556 Ontario Inc"
+    ],
+    "price_text": "$525,000"
+  }
+}

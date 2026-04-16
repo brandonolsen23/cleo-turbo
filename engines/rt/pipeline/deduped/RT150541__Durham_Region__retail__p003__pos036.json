@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT150541",
+  "source_folder": "Durham_Region/retail/p003",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150541",
+      "source_folder": "Durham_Region/retail/p003",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p003/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "1800 SIMCOE ST N"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "27 Mar 2020",
+      "price_text": "$1,051,174",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2477398 Ontario Inc     888-411-7685"
+      ],
+      "trade_name": "Podium Development Corp",
+      "contact_lines": [
+        "Attn: Bernard Luttmer",
+        "3 Bridgman Ave, Unit 101",
+        "Toronto, Ontario",
+        "M5R 3V4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Samiy Retail Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Saqib Qureshi",
+        "7800 Kennedy Rd, Ste 303B",
+        "Markham, Ontario",
+        "L3R 2C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lots 11 & 12",
+      "Plan 40R-30535, Parts 2, 4-6",
+      "",
+      "PIN: 16266-1208",
+      "",
+      "W side Simcoe St N, S of Niagara St",
+      "",
+      "2.81 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,051,174     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $900,000   rate: 18.0% per annum.",
+      "registered: 03/27/2020   due: 04/01/2025",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $700,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/27/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1505/RT150541/0404_132548.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1505/RT150541/0404_132604.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1505/RT150541/0404_132605.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1505/RT150541/0404_132623.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1505/RT150541/0404_132624.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1505/RT150541/0404_132627.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "137 / 506",
+      "rt_id": "RT150541"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "1800 SIMCOE ST N",
+    "postcode": "L1G 0C2",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "03/27/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.81",
+    "consid": "1051174",
+    "cash": "1051174",
+    "debt": "",
+    "note": "",
+    "pin": "16266-1208",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "1800 SIMCOE ST N"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "27 Mar 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2477398 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Samiy Retail Inc"
+    ],
+    "price_text": "$1,051,174"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT123022",
+  "source_folder": "Peterborough_County/multifamily/p002",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123022",
+      "source_folder": "Peterborough_County/multifamily/p002",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/multifamily/p002/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "96 LANSDOWNE ST W"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "09 Feb 2017",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CPS Properties Inc",
+        "Ines & Renaldo Di Giammarino"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christopher Schejbal",
+        "225 George St N",
+        "Peterborough, Ontario",
+        "K9J 3G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg: 2.5 storey; 12 units @ $100,000",
+      "",
+      "2-1bdrm 10-2bdrm",
+      "",
+      "12 surface parking spaces",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "/assets/files/RT12/RT1230/RT123022/mi.pdf",
+    "site_lines": [
+      "Plan 23, Lot 4",
+      "",
+      "PIN: 28100-0240",
+      "",
+      "N side Lansdowne St W, E of Lock St",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "15 14 040 010 03100",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CPS Properties Inc",
+      "Renaldo & Ines Di Giammarino",
+      "principal: $900,000   rate: 4.5% per annum.",
+      "registered: 02/09/2017   due: 02/09/2022"
+    ],
+    "broker_lines": [
+      "DNS Real Estate Ltd: Jim Parkes, 705-749-1602"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "54 / 132",
+      "rt_id": "RT123022"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "96 LANSDOWNE ST W",
+    "postcode": "K9J 1Y1",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "02/09/2017",
+    "desc": "Apartment Bldg: 2.5 storey; 12 units @ $100,000",
+    "bldg": "12 units",
+    "acreage": ".48",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "28100-0240",
+    "rollno": "15 14 040 010 03100"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "96 LANSDOWNE ST W"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "09 Feb 2017",
+    "note": "",
+    "description": "Apartment Bldg: 2.5 storey; 12 units @ $100,000",
+    "seller_lines": [
+      "CPS Properties Inc",
+      "Ines & Renaldo Di Giammarino"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

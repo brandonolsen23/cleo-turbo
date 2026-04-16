@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT42425",
+  "source_folder": "Metro_Toronto/multifamily/p088",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42425",
+      "source_folder": "Metro_Toronto/multifamily/p088",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p088/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "2902 ST CLAIR AVE E"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "10 Jun 2005",
+      "price_text": "$665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1343621 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert Weinstein",
+        "78 Brunswick Ave",
+        "Toronto, Ontario",
+        "M5S 2L7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Victoriaclair Investments Inc     416-362-3711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aaron Grubner",
+        "Minden, Gross, Grafstein & Greenstein",
+        "111 Richmond St W, Ste 700",
+        "Toronto, Ontario",
+        "M5H 2H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4081, Part Block F",
+      "As in Inst No CA-609121 (Parcel 1)",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 06 013 390 07800",
+    "consideration_lines": [
+      "cash: $255,791     assumed/vtb debt: $409,208"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT424/RT42425/air1.jpg",
+        "/assets/files/RT4/RT424/RT42425/air2.jpg",
+        "/assets/files/RT4/RT424/RT42425/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT424/RT42425/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4371 / 6031",
+      "rt_id": "RT42425"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "2902 ST CLAIR AVE E",
+    "postcode": "M4B 1N7",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "06/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "665000",
+    "cash": "255791",
+    "debt": "409208",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 013 390 07800"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "2902 ST CLAIR AVE E"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "10 Jun 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1343621 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Victoriaclair Investments Inc"
+    ],
+    "price_text": "$665,000"
+  }
+}

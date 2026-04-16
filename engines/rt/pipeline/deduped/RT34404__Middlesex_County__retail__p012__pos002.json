@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT34404",
+  "source_folder": "Middlesex_County/retail/p012",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34404",
+      "source_folder": "Middlesex_County/retail/p012",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p012/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "2016 DUNDAS ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "27 Feb 2004",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Preisenhammer Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stefan Preisenhammer",
+        "31 Adelaide St E, Box 430",
+        "Toronto, Ontario",
+        "M5C 2J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "London Public Library Board     519-661-4600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darrel Skidmore",
+        "251 Dundas St",
+        "London, Ontario",
+        "N6A 6H9"
+      ]
+    },
+    "description_lines": [
+      "Com Land - former 22,450 sf White Rose on 2.55 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-8359, Part 1",
+      "",
+      "2.55 acre"
+    ],
+    "arn_text": "39 36 030 320 18500",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "JJ Barnicke:  Gary Pollock, 519-438-5588"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT344/RT34404/photo.jpg"
+    },
+    "footer": {
+      "page_position": "553 / 686",
+      "rt_id": "RT34404"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "2016 DUNDAS ST",
+    "postcode": "N5V 1R1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "02/27/2004",
+    "desc": "Com Land - former 22,450 sf White Rose on 2.55 Ac",
+    "bldg": "",
+    "acreage": "2.55",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 030 320 18500"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "2016 DUNDAS ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "27 Feb 2004",
+    "note": "",
+    "description": "Com Land - former 22,450 sf White Rose on 2.55 Ac",
+    "seller_lines": [
+      "Preisenhammer Investments Inc"
+    ],
+    "buyer_lines": [
+      "London Public Library Board"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT14694",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14694",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "3245 FAIRVIEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "03 Jun 1999",
+      "price_text": "$1,375,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Milton Turkienicz"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "333 Clarke Ave W, Ste 112",
+        "Thornhill, Ontario",
+        "L4J 7K4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Milton Turk & Sons Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Milton Turk",
+        "333 Clarke Ave W, Ste 112",
+        "Thornhill, Ontario",
+        "L4J 7K4"
+      ]
+    },
+    "description_lines": [
+      "Furniture Mall"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-1226, Parts 4-6",
+      "",
+      "1.45 acre"
+    ],
+    "arn_text": "24 02 105 042 10070",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $457,625",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $604,000   rate: 2.59% per annum.",
+      "registered: 10/23/2019   due: 11/01/2024",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $610,000   rate: 5.25% per annum.",
+      "registered: 10/18/2019   due: 11/01/2020",
+      "",
+      "chargee: European Financial Solutions Inc",
+      "Parminder Dahaley",
+      "principal: $600,000   rate: 9.0% per annum.",
+      "registered: 10/24/2019   due: 10/23/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "583 / 613",
+      "rt_id": "RT14694"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "3245 FAIRVIEW ST",
+    "postcode": "",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "06/03/1999",
+    "desc": "Furniture Mall",
+    "bldg": "",
+    "acreage": "1.45",
+    "consid": "1375000",
+    "cash": "",
+    "debt": "457625",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "24 02 105 042 10070"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "3245 FAIRVIEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "03 Jun 1999",
+    "note": "Related Parties",
+    "description": "Furniture Mall",
+    "seller_lines": [
+      "Milton Turkienicz"
+    ],
+    "buyer_lines": [
+      "Milton Turk & Sons Ltd"
+    ],
+    "price_text": "$1,375,000"
+  }
+}

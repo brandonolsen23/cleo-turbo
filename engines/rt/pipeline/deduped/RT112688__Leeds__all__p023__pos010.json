@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT112688",
+  "source_folder": "Leeds/all/p023",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT112688",
+      "source_folder": "Leeds/all/p023",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p023/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "453 LYNDOCK ST"
+      ],
+      "city_region": "St. Clair : Lambton",
+      "date_text": "16 Nov 2015",
+      "price_text": "$963,250",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Halsall Property Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dennis Halsall",
+        "250 Maria St",
+        "Sarnia, Ontario",
+        "N7T 4T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 413",
+      "Lot 92 & Part Lot 93",
+      "As in Inst No L-649900",
+      "",
+      "PIN: 43435-0109",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "38 05 220 090 09000",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $963,250",
+      "",
+      "chargee: Libro Credit Union Ltd",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/16/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1111 / 1916",
+      "rt_id": "RT112688"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "453 LYNDOCK ST",
+    "postcode": "N0N 1G0",
+    "municipality": "St. Clair",
+    "region": "Lambton",
+    "date": "11/16/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".73",
+    "consid": "963250",
+    "cash": "",
+    "debt": "963250",
+    "note": "Related Parties",
+    "pin": "43435-0109",
+    "rollno": "38 05 220 090 09000"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "453 LYNDOCK ST"
+    ],
+    "city_region": "St. Clair : Lambton",
+    "date_text": "16 Nov 2015",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Halsall Property Holdings Inc"
+    ],
+    "price_text": "$963,250"
+  }
+}

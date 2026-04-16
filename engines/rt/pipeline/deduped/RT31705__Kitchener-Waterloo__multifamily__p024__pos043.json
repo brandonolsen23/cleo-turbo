@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT31705",
+  "source_folder": "Kitchener-Waterloo/multifamily/p024",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31705",
+      "source_folder": "Kitchener-Waterloo/multifamily/p024",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p024/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "1220 HAMILTON ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "01 Aug 2003",
+      "price_text": "$820,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Van Iersel Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Cornelius Van Iersel",
+        "77 Sacha Rd",
+        "Cambridge, Ontario",
+        "N3C 4A2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 15 units @ $54,667"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 716, Part Lot 230",
+      "As in Deed No 667476",
+      "",
+      "0.57 acre"
+    ],
+    "arn_text": "30 06 090 013 09300",
+    "consideration_lines": [
+      "cash: $820,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT317/RT31705/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1194 / 1449",
+      "rt_id": "RT31705"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "1220 HAMILTON ST",
+    "postcode": "N3H 3G3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "08/01/2003",
+    "desc": "Apartment Bldg - 3.5 storey; 15 units @ $54,667",
+    "bldg": "15 units",
+    "acreage": ".57",
+    "consid": "820000",
+    "cash": "820000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 090 013 09300"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "1220 HAMILTON ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "01 Aug 2003",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 15 units @ $54,667",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Van Iersel Properties Inc"
+    ],
+    "price_text": "$820,000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT184702",
+  "source_folder": "Metro_Toronto/multifamily/p015",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184702",
+      "source_folder": "Metro_Toronto/multifamily/p015",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p015/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "430 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "06 May 2024",
+      "price_text": "$1,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000837963 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Chin",
+        "467 Crewenan Rd",
+        "Mississauga, Ontario",
+        "L5A 3H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - FTB, Part Park Lot 16",
+      "Plan 63R-1095, Part 1",
+      "",
+      "PIN: 21238-0134",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 065 260 03570",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,500,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "702 / 6031",
+      "rt_id": "RT184702"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "430 QUEEN ST W",
+    "postcode": "M5V 2A7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/06/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1500000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "21238-0134",
+    "rollno": "19 04 065 260 03570"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "430 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "06 May 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000837963 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

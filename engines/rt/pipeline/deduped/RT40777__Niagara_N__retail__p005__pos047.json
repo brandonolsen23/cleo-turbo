@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT40777",
+  "source_folder": "Niagara_N/retail/p005",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40777",
+      "source_folder": "Niagara_N/retail/p005",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p005/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "367 LAKE ST"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "03 Mar 2005",
+      "price_text": "$820,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Profile Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Harold Smith",
+        "110 Hannover Dr, Ste 102",
+        "St Catharines, Ontario",
+        "L2W 1A4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "367 Lake St Ltd     905-356-1161"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frederick Cade",
+        "Cairn Croft Best Western Inn",
+        "6400 Lundy's Lane",
+        "Niagara Falls, Ontario",
+        "L2G 1T6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 19",
+      "Plan 30R-9501, Parts 3-7",
+      "",
+      "0.59 acre"
+    ],
+    "arn_text": "26 29 060 030 12100",
+    "consideration_lines": [
+      "cash: $820,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Niagara Credit Union Ltd",
+      "principal: $850,000   rate: 24.0% per annum",
+      "registered: 03/03/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT407/RT40777/photo.jpg"
+    },
+    "footer": {
+      "page_position": "248 / 307",
+      "rt_id": "RT40777"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "367 LAKE ST",
+    "postcode": "L2N 4H5",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "03/03/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".59",
+    "consid": "820000",
+    "cash": "820000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 29 060 030 12100"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "367 LAKE ST"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "03 Mar 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Profile Properties Ltd"
+    ],
+    "buyer_lines": [
+      "367 Lake St Ltd"
+    ],
+    "price_text": "$820,000"
+  }
+}

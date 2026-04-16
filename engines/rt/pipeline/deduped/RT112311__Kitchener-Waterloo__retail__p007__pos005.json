@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT112311",
+  "source_folder": "Kitchener-Waterloo/retail/p007",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT112311",
+      "source_folder": "Kitchener-Waterloo/retail/p007",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p007/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 ALPINE RD"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "03 Nov 2015",
+      "price_text": "$3,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Palladino Real Estate Inc     844-702-9132"
+      ],
+      "trade_name": "Palladino Honda",
+      "contact_lines": [
+        "Pres: Vincent Palladino",
+        "990 Kingsway Blvd",
+        "Sudbury, Ontario",
+        "P3B 2E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "44 Alpine Road Ltd     888-557-6203"
+      ],
+      "trade_name": "Mercedes-Benz London",
+      "contact_lines": [
+        "VP: Ryan Finch",
+        "35 Southdale Rd E",
+        "London, Ontario",
+        "N6C 4X5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1246, Part Block L",
+      "Plan 58R-7826, Parts 1-7",
+      "",
+      "PIN: 22600-0588",
+      "",
+      "2.01 acre"
+    ],
+    "arn_text": "30 12 040 031 23400",
+    "consideration_lines": [
+      "cash: $3,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $3,500,000   rate: Prime plus 6.0% per annum.",
+      "registered: 11/03/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1123/RT112311/0213_130548.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1123/RT112311/0213_130549.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1123/RT112311/0213_130625.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1123/RT112311/0213_130628.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "306 / 752",
+      "rt_id": "RT112311"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "44 ALPINE RD",
+    "postcode": "N2E 1A1",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/03/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.01",
+    "consid": "3100000",
+    "cash": "3100000",
+    "debt": "",
+    "note": "",
+    "pin": "22600-0588",
+    "rollno": "30 12 040 031 23400"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "44 ALPINE RD"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "03 Nov 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Palladino Real Estate Inc"
+    ],
+    "buyer_lines": [
+      "44 Alpine Road Ltd"
+    ],
+    "price_text": "$3,100,000"
+  }
+}

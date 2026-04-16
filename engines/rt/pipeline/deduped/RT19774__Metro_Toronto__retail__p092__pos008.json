@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT19774",
+  "source_folder": "Metro_Toronto/retail/p092",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19774",
+      "source_folder": "Metro_Toronto/retail/p092",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p092/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "2267 ISLINGTON AVE"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "12 Dec 2000",
+      "price_text": "$630,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "The Mutual Trust Co     416-591-2712"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert Stuebing",
+        "c/o MCAP Financial Corp",
+        "70 University Ave, Ste 400",
+        "Toronto, Ontario",
+        "M5J 2M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sunpact Holdings Inc     416-599-8080"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chris Hinn",
+        "c/o Himelfarb Prozanski",
+        "250 Dundas St W, Ste 401",
+        "Toronto, Ontario",
+        "M5T 2Z5"
+      ]
+    },
+    "description_lines": [
+      "Retail Store/Land - 1 storey; 75,000 sf on 3.62 Ac",
+      "Former Zellers Department Store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-946, Block D",
+      "Part of Blairmore Dr, as in Inst No EB-376593",
+      "Plan 4799, Part Block C",
+      "Except EB-392583",
+      "",
+      "3.62 acre"
+    ],
+    "arn_text": "19 19 041 120 00860",
+    "consideration_lines": [
+      "cash: $413,432     assumed/vtb debt: $216,568"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT197/RT19774/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4559 / 4952",
+      "rt_id": "RT19774"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "2267 ISLINGTON AVE",
+    "postcode": "M9W 3W7",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "12/12/2000",
+    "desc": "Retail Store/Land - 1 storey; 75,000 sf on 3.62 Ac Former Zellers Department Store",
+    "bldg": "75,000 sf",
+    "acreage": "3.62",
+    "consid": "630000",
+    "cash": "413432",
+    "debt": "216568",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 19 041 120 00860"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "2267 ISLINGTON AVE"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "12 Dec 2000",
+    "note": "Power of Sale",
+    "description": "Retail Store/Land - 1 storey; 75,000 sf on 3.62 AcFormer Zellers Department Store",
+    "seller_lines": [
+      "The Mutual Trust Co"
+    ],
+    "buyer_lines": [
+      "Sunpact Holdings Inc"
+    ],
+    "price_text": "$630,000"
+  }
+}

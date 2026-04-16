@@ -1,0 +1,133 @@
+{
+  "rt_id": "RT183015",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183015",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 COLBORNE ST E"
+      ],
+      "city_region": "Orillia : Simcoe County",
+      "date_text": "08 Feb 2024",
+      "price_text": "$1,800,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Prudent Excellence Mortgage Investment Corp",
+        "Prime Envision Inc",
+        "Bin Wang",
+        "Xiaolan Pan",
+        "2544000 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 350 Hwy 7 E, Ste 310",
+        "Richmond Hill, Ontario",
+        "L4B 3N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000670303 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Parmjeet Sehgal",
+        "4901 Steeles Ave W",
+        "Toronto, Ontario",
+        "M9L 2W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12 AKA Plan 58,",
+      "Part Lot 1, N/S Colborne St",
+      "As in Inst No RO-908796",
+      "Except:",
+      "Plan 51R-35015, Part 1",
+      "",
+      "PIN: 58677-0166",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "43 52 010 101 08500",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $1,650,000",
+      "",
+      "chargee: Prudent Excellence Mortgage Investment Corp",
+      "2544000 Ontario Inc",
+      "Bin Wang",
+      "Prime Envision Inc",
+      "Xiolan Pan",
+      "principal: $1,650,000   rate: 8.7273% per annum.",
+      "registered: 02/08/2024   due: 02/08/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183015/0427_123118.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183015/0427_123119.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183015/0427_123145.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183015/0427_123146.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "102 / 712",
+      "rt_id": "RT183015"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2 COLBORNE ST E",
+    "postcode": "L3V 1T3",
+    "municipality": "Orillia",
+    "region": "Simcoe County",
+    "date": "02/08/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "1800000",
+    "cash": "150000",
+    "debt": "1650000",
+    "note": "Power of Sale",
+    "pin": "58677-0166",
+    "rollno": "43 52 010 101 08500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2 COLBORNE ST E"
+    ],
+    "city_region": "Orillia : Simcoe County",
+    "date_text": "08 Feb 2024",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Prudent Excellence Mortgage Investment Corp",
+      "Prime Envision Inc",
+      "Bin Wang",
+      "Xiaolan Pan",
+      "2544000 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000670303 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

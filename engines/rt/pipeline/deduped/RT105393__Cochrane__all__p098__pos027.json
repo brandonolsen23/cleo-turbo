@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT105393",
+  "source_folder": "Cochrane/all/p098",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105393",
+      "source_folder": "Cochrane/all/p098",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p098/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "154 DALY AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "15 Dec 2014",
+      "price_text": "$920,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "OTAC Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Horan",
+        "2279 Bowman Rd",
+        "Ottawa, Ontario",
+        "K1H 6V4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6",
+      "Part Lot 13, S/S Daly Ave",
+      "As in Inst No CR-690071",
+      "",
+      "PIN: 04211-0086",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "06 14 021 101 01800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $157,250",
+      "other: $762,750",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $590,000   rate: Prime plus 7.0% per annum.",
+      "registered: 12/15/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4878 / 10920",
+      "rt_id": "RT105393"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "154 DALY AVE",
+    "postcode": "K1N 6E9",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/15/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "920000",
+    "cash": "",
+    "debt": "157250",
+    "note": "Related Parties",
+    "pin": "04211-0086",
+    "rollno": "06 14 021 101 01800"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "154 DALY AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "15 Dec 2014",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "OTAC Investments Inc"
+    ],
+    "price_text": "$920,000"
+  }
+}

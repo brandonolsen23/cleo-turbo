@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT46204",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46204",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "3340 LAWRENCE AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "06 Jan 2006",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1444030 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Desmond Farrell",
+        "250 Consumers Rd, Ste 713",
+        "Toronto, Ontario",
+        "M2J 4V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1504700 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ramesh Asirwathan",
+        "3228A Eglinton Ave E",
+        "Scarborough, Ontario",
+        "M1J 2H6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 9,776 sf @ $128",
+      "",
+      "Last transferred in May 2001 for $1,155,755"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-9248, Part 1",
+      "",
+      "NW corner at Greenbrae Rd",
+      "",
+      "0.65 acre"
+    ],
+    "arn_text": "19 01 052 730 03500",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Canada Trust Co",
+      "principal: $775,000   rate: 5.64% per annum",
+      "registered: 01/06/2006   due: 02/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT462/RT46204/air1.jpg",
+        "/assets/files/RT4/RT462/RT46204/air2.jpg",
+        "/assets/files/RT4/RT462/RT46204/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT462/RT46204/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3511 / 4952",
+      "rt_id": "RT46204"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "3340 LAWRENCE AVE E",
+    "postcode": "M1H 1A7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "01/06/2006",
+    "desc": "Retail Plaza - 1 storey; 4 units 9,776 sf @ $128",
+    "bldg": "9,776 sf",
+    "acreage": ".65",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 052 730 03500"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "3340 LAWRENCE AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "06 Jan 2006",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 9,776 sf @ $128",
+    "seller_lines": [
+      "1444030 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1504700 Ontario Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

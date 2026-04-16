@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT179862",
+  "source_folder": "Metro_Toronto/retail/p016",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179862",
+      "source_folder": "Metro_Toronto/retail/p016",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p016/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "156 AUGUSTA AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Aug 2023",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "8699011 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joelle Gilgen",
+        "625 rue Saint-Maurice",
+        "Montreal, Quebec",
+        "H3C 1L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 753 - City West, Lot 6",
+      "",
+      "PIN: 21236-0483",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 065 490 02800",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,890,000   rate: Prime plus 10.0% per annum.",
+      "registered: 08/17/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179862/0827_070526.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179862/0827_070535.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179862/0827_070554.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179862/0827_070555.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179862/0827_070607.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "753 / 4952",
+      "rt_id": "RT179862"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "156 AUGUSTA AVE",
+    "postcode": "M5T 2L5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/17/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "2100000",
+    "cash": "2100000",
+    "debt": "",
+    "note": "",
+    "pin": "21236-0483",
+    "rollno": "19 04 065 490 02800"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "156 AUGUSTA AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "8699011 Canada Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

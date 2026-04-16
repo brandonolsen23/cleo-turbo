@@ -1,0 +1,138 @@
+{
+  "rt_id": "RT14286",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14286",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "402 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "21 Apr 1999",
+      "price_text": "$524,813",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Goldfarb Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alona Goldfarb",
+        "4950 Yonge St, Ste 1700",
+        "North York, Ontario",
+        "M2N 6K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "SMK Speedy International Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mary Jane Allen",
+        "365 Bloor St E",
+        "Toronto, Ontario",
+        "M4W 3M7"
+      ]
+    },
+    "description_lines": [
+      "Speedy Muffer King"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1376, Lot 29",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "30 06 150 015 05401",
+    "consideration_lines": [
+      "cash: $524,813     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $924,000   rate: Prime plus 7.0% per annum.",
+      "registered: 05/01/2019   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $4,000,000   rate: 18.0% per annum.",
+      "registered: 05/01/2019   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $200,000   rate: 18.0% per annum.",
+      "registered: 05/01/2019   due: on demand",
+      "",
+      "chargee: 1698293 Ontario Inc",
+      "Steven & Pamela Cheney",
+      "principal: $1,150,000   rate: 0% per annum.",
+      "registered: 05/01/2019   due: on demand",
+      "",
+      "chargee: JB Holdings Inc",
+      "principal: $650,000   rate: 5.0% per annum.",
+      "registered: 05/01/2019   due: 06/01/2019",
+      "",
+      "chargee: Quad-Co Property Management Inc",
+      "principal: $1,050,000   rate: 5.0% per annum.",
+      "registered: 05/03/2019   due: 05/01/2024",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,000,000   rate: 10.0% per annum.",
+      "registered: 05/01/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT142/RT14286/photo.jpg"
+    },
+    "footer": {
+      "page_position": "746 / 752",
+      "rt_id": "RT14286"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "402 HESPELER RD",
+    "postcode": "N1R 6J6",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "04/21/1999",
+    "desc": "Speedy Muffer King",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "524813",
+    "cash": "524813",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 150 015 05401"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "402 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "21 Apr 1999",
+    "note": "",
+    "description": "Speedy Muffer King",
+    "seller_lines": [
+      "The Goldfarb Corp"
+    ],
+    "buyer_lines": [
+      "SMK Speedy International Inc"
+    ],
+    "price_text": "$524,813"
+  }
+}

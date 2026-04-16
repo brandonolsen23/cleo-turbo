@@ -1,0 +1,98 @@
+{
+  "rt_id": "RT28758",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28758",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "139 BEDFORD RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Jan 2003",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey semi"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-6, Part Lot 154",
+      "Together with Plan 66R-14947, Part 1"
+    ],
+    "arn_text": "19 04 052 240 00500",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT287/RT28758/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4966 / 6031",
+      "rt_id": "RT28758"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "139 BEDFORD RD",
+    "postcode": "M5R 2K7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/27/2003",
+    "desc": "Apartment Bldg - 3 storey semi",
+    "bldg": "",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 240 00500"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "139 BEDFORD RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Jan 2003",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey semi",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$750,000"
+  }
+}

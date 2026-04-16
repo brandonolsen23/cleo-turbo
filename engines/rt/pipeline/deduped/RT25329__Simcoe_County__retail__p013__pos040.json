@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT25329",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25329",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "2921 HWY 11 N"
+      ],
+      "city_region": "Oro : Simcoe County",
+      "date_text": "02 May 2002",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Erkki Laakkonen, in Trust"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "168 Owen St, PO Box 1063",
+        "Barrie, Ontario",
+        "L4M 5E1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1071118 Ontario Ltd     416-867-9899"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert De Rosa",
+        "Fercan Developments Inc",
+        "193 King St E, Ste 200",
+        "Toronto, Ontario",
+        "M5A 1J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-15045",
+      "Parts 1-5, 8-10",
+      "Except Plan 51R-30031, Part 1"
+    ],
+    "arn_text": "43 36 010 009 01700",
+    "consideration_lines": [
+      "cash: $50,000     assumed/vtb debt: $1,050,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "641 / 712",
+      "rt_id": "RT25329"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "2921 HWY 11 N",
+    "postcode": "L0L 1X0",
+    "municipality": "Oro",
+    "region": "Simcoe County",
+    "date": "05/02/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1100000",
+    "cash": "50000",
+    "debt": "1050000",
+    "note": "",
+    "pin": "",
+    "rollno": "43 36 010 009 01700"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "2921 HWY 11 N"
+    ],
+    "city_region": "Oro : Simcoe County",
+    "date_text": "02 May 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Erkki Laakkonen, in Trust"
+    ],
+    "buyer_lines": [
+      "1071118 Ontario Ltd"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

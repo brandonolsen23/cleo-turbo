@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197511",
+  "source_folder": "Hamilton-Wentworth/multifamily/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197511",
+      "source_folder": "Hamilton-Wentworth/multifamily/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/multifamily/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2000 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "25 Feb 2026",
+      "price_text": "$1,125,500",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "TC Core GP Inc",
+        "TC Core LP     888-949-8439"
+      ],
+      "trade_name": "Hazelview Investments",
+      "contact_lines": [
+        "1133 Yonge St, 4th Flr",
+        "Toronto, Ontario",
+        "M4T 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16509878 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Croll",
+        "300 Park Centre",
+        "1230 Blackfoot Dr",
+        "Regina, SK",
+        "S4S 7G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Ancaster,",
+      "Part Lot 53",
+      "Plan 62R-20082, Part 1",
+      "",
+      "PIN: 17454-0806",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $712,147     assumed/vtb debt: $413,353",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $8,192,800   rate: Prime plus 10.0% per annum.",
+      "registered: 06/19/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 875",
+      "rt_id": "RT197511"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2000 MAIN ST W",
+    "postcode": "L8S 4M8",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.1",
+    "consid": "1125500",
+    "cash": "712147",
+    "debt": "413353",
+    "note": "% Interest",
+    "pin": "17454-0806",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2000 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "25 Feb 2026",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "TC Core GP Inc",
+      "TC Core LP"
+    ],
+    "buyer_lines": [
+      "16509878 Canada Inc"
+    ],
+    "price_text": "$1,125,500"
+  }
+}

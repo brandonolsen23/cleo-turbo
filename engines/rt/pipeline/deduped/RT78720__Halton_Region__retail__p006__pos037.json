@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT78720",
+  "source_folder": "Halton_Region/retail/p006",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT78720",
+      "source_folder": "Halton_Region/retail/p006",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p006/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "11318 GUELPH LINE"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "27 May 2011",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Oxus Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rashid Khan",
+        "3429 Robin Hill Circle",
+        "Oakville, Ontario",
+        "L6L 6X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "7759916 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sandeep Maulik",
+        "11318 Guelph Line",
+        "Campbellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NAS, Part Lot 18",
+      "Plan 20R-10400, Part 1",
+      "",
+      "PIN: 24982-0337",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "24 09 030 002 03205",
+    "consideration_lines": [
+      "cash: $625,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Catherine & Ettore Rotondi",
+      "Pierina Bonanno",
+      "Paramount Enterprises Inc",
+      "principal: $437,500   rate: 10.0% per annum (Interest only payments)",
+      "registered: 05/27/2011   due: 05/20/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT787/RT78720/0603_105242.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT787/RT78720/0603_105305.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT787/RT78720/air1.jpg",
+        "/assets/files/RT7/RT787/RT78720/air2.jpg",
+        "/assets/files/RT7/RT787/RT78720/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "288 / 613",
+      "rt_id": "RT78720"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "11318 GUELPH LINE",
+    "postcode": "L0P 1B0",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "05/27/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "625000",
+    "cash": "625000",
+    "debt": "",
+    "note": "",
+    "pin": "24982-0337",
+    "rollno": "24 09 030 002 03205"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "11318 GUELPH LINE"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "27 May 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Oxus Canada Inc"
+    ],
+    "buyer_lines": [
+      "7759916 Canada Inc"
+    ],
+    "price_text": "$625,000"
+  }
+}

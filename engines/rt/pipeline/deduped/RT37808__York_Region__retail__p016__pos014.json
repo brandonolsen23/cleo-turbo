@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT37808",
+  "source_folder": "York_Region/retail/p016",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37808",
+      "source_folder": "York_Region/retail/p016",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "10200 KEELE ST"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "22 Sep 2004",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "531892 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frank Agostino",
+        "122 Fanshore Dr",
+        "Woodbridge, Ontario",
+        "L4H 1T5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2052856 Ontario Inc     905-737-7772"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dan D'Alimonte",
+        "188 Marsi Rd",
+        "Richmond Hill, Ontario",
+        "L4C 5S8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 8,000 sf @ $200"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2086, Block 648",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "19 28 000 270 91600",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Re/Max Excellance: Lindsay Marjadsingh, 416-748-9598"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT378/RT37808/air1.jpg",
+        "/assets/files/RT3/RT378/RT37808/air2.jpg",
+        "/assets/files/RT3/RT378/RT37808/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT378/RT37808/photo.jpg"
+    },
+    "footer": {
+      "page_position": "765 / 984",
+      "rt_id": "RT37808"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "10200 KEELE ST",
+    "postcode": "L6A 1R2",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "09/22/2004",
+    "desc": "Retail Plaza - 1 storey; 4 units 8,000 sf @ $200",
+    "bldg": "8,000 sf",
+    "acreage": ".74",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 270 91600"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "10200 KEELE ST"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "22 Sep 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 8,000 sf @ $200",
+    "seller_lines": [
+      "531892 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2052856 Ontario Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

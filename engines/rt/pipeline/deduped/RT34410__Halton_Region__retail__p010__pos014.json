@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT34410",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34410",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "421 BRANT ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "26 Feb 2004",
+      "price_text": "$1,000,005",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "594482 Ontario Ltd     905-637-5076"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Rumple",
+        "974 Tanager Ave",
+        "Burlington, Ontario",
+        "L7T 2Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1588270 Ontario Inc     905-403-8012"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tim Neeb",
+        "610 Ford Dr, Ste 101",
+        "Oakville, Ontario",
+        "L6J 7W4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey; about 14,000 sf @ $71"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 92, Block E, Part Lot 7",
+      "As in Inst No 683529",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "24 02 060 607 00100",
+    "consideration_lines": [
+      "cash: $100,005     assumed/vtb debt: $900,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT344/RT34410/air1.jpg",
+        "/assets/files/RT3/RT344/RT34410/air2.jpg",
+        "/assets/files/RT3/RT344/RT34410/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT344/RT34410/photo.jpg"
+    },
+    "footer": {
+      "page_position": "465 / 613",
+      "rt_id": "RT34410"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "421 BRANT ST",
+    "postcode": "L7R 2G3",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "02/26/2004",
+    "desc": "Retail Plaza - 2 storey; about 14,000 sf @ $71",
+    "bldg": "14,000 sf",
+    "acreage": ".19",
+    "consid": "1000005",
+    "cash": "100005",
+    "debt": "900000",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 060 607 00100"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "421 BRANT ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "26 Feb 2004",
+    "note": "",
+    "description": "Retail Plaza - 2 storey; about 14,000 sf @ $71",
+    "seller_lines": [
+      "594482 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1588270 Ontario Inc"
+    ],
+    "price_text": "$1,000,005"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT38518",
+  "source_folder": "Metro_Toronto/retail/p076",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38518",
+      "source_folder": "Metro_Toronto/retail/p076",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p076/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "976 BRIMORTON DR"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "03 Nov 2004",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "985198 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Po Lin Poon",
+        "Pak Lau Professional Corp",
+        "3100 Steeles Ave E, Ste 800",
+        "Markham, Ontario",
+        "L3R 8T3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2055651 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rick Perin",
+        "255 Duncan Mill Rd, Ste 707",
+        "Toronto, Ontario",
+        "M3B 3H9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-758, Block B",
+      "",
+      "2.11 acre"
+    ],
+    "arn_text": "19 01 083 170 01300",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT385/RT38518/air1.jpg",
+        "/assets/files/RT3/RT385/RT38518/air2.jpg",
+        "/assets/files/RT3/RT385/RT38518/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT385/RT38518/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3751 / 4952",
+      "rt_id": "RT38518"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "976 BRIMORTON DR",
+    "postcode": "M1G 2V2",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "11/03/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.11",
+    "consid": "2100000",
+    "cash": "2100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 083 170 01300"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "976 BRIMORTON DR"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "03 Nov 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "985198 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2055651 Ontario Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

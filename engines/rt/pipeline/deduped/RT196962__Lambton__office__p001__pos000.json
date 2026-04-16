@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT196962",
+  "source_folder": "Lambton/office/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196962",
+      "source_folder": "Lambton/office/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/office/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "387 EXMOUTH ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "30 Jan 2026",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2231527 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 222 N Front St",
+        "Sarnia, Ontario",
+        "N7T 5S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001380204 Ontario Inc     519-344-5747"
+      ],
+      "trade_name": "Lambton Family Dental",
+      "contact_lines": [
+        "Attn: Michael Rondinelli",
+        "387 Exmouth St",
+        "Sarnia, Ontario",
+        "N7T 5N8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3 - Sarnia City,",
+      "Block L, Part Lot 5",
+      "Plan 25R-5045, Parts 2, 4 & 6",
+      "",
+      "PIN: 43239-0149",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "38 29 300 012 00500",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/30/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 34",
+      "rt_id": "RT196962"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "387 EXMOUTH ST",
+    "postcode": "N7T 5N8",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "01/30/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "43239-0149",
+    "rollno": "38 29 300 012 00500"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "387 EXMOUTH ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "30 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2231527 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001380204 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

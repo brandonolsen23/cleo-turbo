@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT47897",
+  "source_folder": "Metro_Toronto/retail/p070",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47897",
+      "source_folder": "Metro_Toronto/retail/p070",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p070/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 KING ST E",
+        "UNIT 5D"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Mar 2006",
+      "price_text": "$622,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Com Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1170",
+      "Level 1, Unit 12"
+    ],
+    "arn_text": "19 04 064 230 00715",
+    "consideration_lines": [
+      "cash: $622,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Buduchnist Credit Union Ltd",
+      "principal: $422,000   rate: 6.25% per annum",
+      "registered: 03/01/2006   due: 03/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3486 / 4952",
+      "rt_id": "RT47897"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "7 KING ST E, UNIT 5D",
+    "postcode": "M5C 3C5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/01/2006",
+    "desc": "Com Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "622000",
+    "cash": "622000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 064 230 00715"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "7 KING ST E",
+      "UNIT 5D"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Mar 2006",
+    "note": "",
+    "description": "Com Condo",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$622,000"
+  }
+}

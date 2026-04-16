@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT69358",
+  "source_folder": "York_Region/retail/p019",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69358",
+      "source_folder": "York_Region/retail/p019",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "530 JEVLAN DR"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "29 Dec 2000",
+      "price_text": "$3,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Marotta Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Benny Marotta",
+        "7050 Weston Rd, Ste 230",
+        "Woodbridge, Ontario",
+        "L4L 8G7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1157135 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Antonella Favaro",
+        "100 Haist Ave",
+        "Vaughan, Ontario",
+        "L4L 5V4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in July 98 for $3,525,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 10",
+      "Plan 65M-2588, Lot 10",
+      "Plan 65R-12162, Part 4",
+      "",
+      "PIN: 03278-0012 +",
+      "",
+      "2.34 acre"
+    ],
+    "arn_text": "19 28 000 233 66510",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $2,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "913 / 984",
+      "rt_id": "RT69358"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "530 JEVLAN DR",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "12/29/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.34",
+    "consid": "3700000",
+    "cash": "1700000",
+    "debt": "2000000",
+    "note": "",
+    "pin": "03278-0012+",
+    "rollno": "19 28 000 233 66510"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "530 JEVLAN DR"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "29 Dec 2000",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Marotta Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "1157135 Ontario Ltd"
+    ],
+    "price_text": "$3,700,000"
+  }
+}

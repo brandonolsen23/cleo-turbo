@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT22004",
+  "source_folder": "Cochrane/all/p205",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22004",
+      "source_folder": "Cochrane/all/p205",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p205/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "180 BLENHEIM DR"
+      ],
+      "city_region": "Rockcliffe Park : Ottawa-Carleton",
+      "date_text": "18 Jul 2001",
+      "price_text": "$525,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "3701620 Manitoba Ltd     613-839-2062"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mark Riley",
+        "118 Pineridge Rd, RR 3",
+        "Carp, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "3556760 Canada Ltd     613-238-4500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kenneth Gibson",
+        "McNab & Baldwin",
+        "350 Sparks St, Ste 310",
+        "Ottawa, Ontario",
+        "K1R 7S8"
+      ]
+    },
+    "description_lines": [
+      "Home"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-94, Lot 109",
+      "",
+      "E side 10m N of Lakeway Dr",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "06 11 000 230 01800",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT220/RT22004/photo.jpg"
+    },
+    "footer": {
+      "page_position": "10221 / 10920",
+      "rt_id": "RT22004"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "180 BLENHEIM DR",
+    "postcode": "K1L 5B5",
+    "municipality": "Rockcliffe Park",
+    "region": "Ottawa-Carleton",
+    "date": "07/18/2001",
+    "desc": "Home",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "06 11 000 230 01800"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "180 BLENHEIM DR"
+    ],
+    "city_region": "Rockcliffe Park : Ottawa-Carleton",
+    "date_text": "18 Jul 2001",
+    "note": "Power of Sale",
+    "description": "Home",
+    "seller_lines": [
+      "3701620 Manitoba Ltd"
+    ],
+    "buyer_lines": [
+      "3556760 Canada Ltd"
+    ],
+    "price_text": "$525,000"
+  }
+}

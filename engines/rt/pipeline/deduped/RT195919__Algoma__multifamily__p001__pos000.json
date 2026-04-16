@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT195919",
+  "source_folder": "Algoma/multifamily/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195919",
+      "source_folder": "Algoma/multifamily/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/multifamily/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "680 PORTAGE LANE"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "01 Dec 2025",
+      "price_text": "$1,380,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Steel House Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "193 Pointe des Chenes Cres",
+        "Sault Ste Marie, Ontario",
+        "P6A 5K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sault Ste Marie Housing Corp     866-363-6007"
+      ],
+      "trade_name": "Sault Ste Marie Social Services",
+      "contact_lines": [
+        "Attn: Michael Nadeau",
+        "548 Albert St E",
+        "Sault Ste Marie, Ontario",
+        "P6A 7A7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1959/RT195919/mi.pdf",
+    "site_lines": [
+      "Plan 1R-3976, Part 1",
+      "",
+      "PIN: 31578-0086",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "57 61 040 031 00101",
+    "consideration_lines": [
+      "cash: $1,380,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 78",
+      "rt_id": "RT195919"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "680 PORTAGE LANE",
+    "postcode": "P6A 1K5",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "12/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "1380000",
+    "cash": "1380000",
+    "debt": "",
+    "note": "",
+    "pin": "31578-0086",
+    "rollno": "57 61 040 031 00101"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "680 PORTAGE LANE"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "01 Dec 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Steel House Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "Sault Ste Marie Housing Corp"
+    ],
+    "price_text": "$1,380,000"
+  }
+}

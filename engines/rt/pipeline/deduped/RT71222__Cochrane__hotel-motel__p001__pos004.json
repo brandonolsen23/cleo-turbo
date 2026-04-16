@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT71222",
+  "source_folder": "Cochrane/hotel-motel/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71222",
+      "source_folder": "Cochrane/hotel-motel/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/hotel-motel/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "517 HWY 11 W"
+      ],
+      "city_region": "Cochrane : Cochrane",
+      "date_text": "05 Mar 2010",
+      "price_text": "$755,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "North Adventure Inn Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mariel Vachon",
+        "PO Box 2640",
+        "Cochrane, Ontario",
+        "P0L 1C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1789692 Ontario Ltd     705-272-6683"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pannaben Patel",
+        "965 Lorne St",
+        "Sudbury, Ontario",
+        "P3C 4S1"
+      ]
+    },
+    "description_lines": [
+      "North Adventure Inn - 2 storey; 30 rooms @ $25,167"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Lot 28",
+      "",
+      "PIN: 65246-0114",
+      "",
+      "190.00 acre"
+    ],
+    "arn_text": "56 39 020 001 06300",
+    "consideration_lines": [
+      "cash: $755,000     assumed/vtb debt: $0",
+      "chattels: $15,000",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $500,000   rate: Prime plus 6.75% per annum",
+      "registered: 03/05/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 6",
+      "rt_id": "RT71222"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "517 HWY 11 W",
+    "postcode": "",
+    "municipality": "Cochrane",
+    "region": "Cochrane",
+    "date": "03/05/2010",
+    "desc": "North Adventure Inn - 2 storey; 30 rooms @ $25,167",
+    "bldg": "30 rooms",
+    "acreage": "190",
+    "consid": "755000",
+    "cash": "755000",
+    "debt": "",
+    "note": "",
+    "pin": "65246-0114",
+    "rollno": "56 39 020 001 06300"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "517 HWY 11 W"
+    ],
+    "city_region": "Cochrane : Cochrane",
+    "date_text": "05 Mar 2010",
+    "note": "",
+    "description": "North Adventure Inn - 2 storey; 30 rooms @ $25,167",
+    "seller_lines": [
+      "North Adventure Inn Inc"
+    ],
+    "buyer_lines": [
+      "1789692 Ontario Ltd"
+    ],
+    "price_text": "$755,000"
+  }
+}

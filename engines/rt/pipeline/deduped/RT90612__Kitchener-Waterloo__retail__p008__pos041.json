@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT90612",
+  "source_folder": "Kitchener-Waterloo/retail/p008",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT90612",
+      "source_folder": "Kitchener-Waterloo/retail/p008",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p008/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "2844 - 2850 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Feb 2013",
+      "price_text": "$1,160,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Murfin Property Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chris Murfin",
+        "308 Old Post Road",
+        "Waterloo, Ontario",
+        "N2L 5C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bash Property Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bradley Hinsperger",
+        "2848 King St E",
+        "Kitchener, Ontario",
+        "N2A 1A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-1131, Part 1",
+      "",
+      "PIN: 22590-0203",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "30 12 030 00120300",
+    "consideration_lines": [
+      "cash: $1,160,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,160,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/01/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT906/RT90612/0317_074932.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT906/RT90612/0317_074953.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT906/RT90612/0317_075029.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT906/RT90612/0317_075041.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT906/RT90612/0317_075101.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT906/RT90612/0317_075121.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "392 / 752",
+      "rt_id": "RT90612"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "2844 - 2850 KING ST E",
+    "postcode": "N2A 1A5",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "02/01/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "1160000",
+    "cash": "1160000",
+    "debt": "",
+    "note": "",
+    "pin": "22590-0203",
+    "rollno": "30 12 030 00120300"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "2844 - 2850 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Feb 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Murfin Property Management Inc"
+    ],
+    "buyer_lines": [
+      "Bash Property Management Inc"
+    ],
+    "price_text": "$1,160,000"
+  }
+}

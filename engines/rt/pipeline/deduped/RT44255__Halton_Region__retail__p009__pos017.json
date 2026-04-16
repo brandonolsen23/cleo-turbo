@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT44255",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44255",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "134 - 136 LAKESHORE RD W"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "19 Sep 2005",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Windview Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Roger Henriques",
+        "5359 Dundas St W, Ste 402",
+        "Toronto, Ontario",
+        "M9B 1B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2056409 Ontario Inc     416-410-5051"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Moldenhauer",
+        "Moldenhauer Developments",
+        "1554 Dundas St E, 2 Flr",
+        "Mississauga, Ontario",
+        "L4X 1L4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 tenants 20,000 sf @ $175"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1, Block 71",
+      "Lots 8-10, 12-14",
+      "Part Lot 11",
+      "As in Inst No 596148",
+      "",
+      "1.31 acre"
+    ],
+    "arn_text": "24 01 030 140 16300",
+    "consideration_lines": [
+      "cash: $1,948,701     assumed/vtb debt: $1,551,299"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "418 / 613",
+      "rt_id": "RT44255"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "134 - 136 LAKESHORE RD W",
+    "postcode": "L5H 1G1",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "09/19/2005",
+    "desc": "Retail Plaza - 1 storey; 9 tenants 20,000 sf @ $175",
+    "bldg": "20,000 sf",
+    "acreage": "1.31",
+    "consid": "3500000",
+    "cash": "1948701",
+    "debt": "1551299",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 030 140 16300"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "134 - 136 LAKESHORE RD W"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "19 Sep 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 9 tenants 20,000 sf @ $175",
+    "seller_lines": [
+      "Windview Investments Inc"
+    ],
+    "buyer_lines": [
+      "2056409 Ontario Inc"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

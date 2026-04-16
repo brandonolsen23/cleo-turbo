@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT181729",
+  "source_folder": "Cochrane/all/p019",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181729",
+      "source_folder": "Cochrane/all/p019",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p019/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "3100 GORDON MURDOCK",
+        "3137 REIDS LANE"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "30 Nov 2023",
+      "price_text": "$2,821,861",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1686994 Ontario Inc     613-489-3838"
+      ],
+      "trade_name": "Park View Homes",
+      "contact_lines": [
+        "Attn: Andrew Cinnamon",
+        "6740 Fourth Line Rd, RR 2",
+        "North Gower, Ontario",
+        "K0A 2T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lots 26 & 27",
+      "Plan 4R-35739, Parts 2 & 3",
+      "",
+      "PIN: 04290-0490 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,821,861     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $2,441,861   rate: 5.0% per annum.",
+      "registered: 11/30/2023   due: 11/29/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "946 / 10920",
+      "rt_id": "RT181729"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "3100 GORDON MURDOCK, 3137 REIDS LANE",
+    "postcode": "K0A 2W0",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "11/30/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2821861",
+    "cash": "2821861",
+    "debt": "",
+    "note": "",
+    "pin": "04290-0490+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "3100 GORDON MURDOCK",
+      "3137 REIDS LANE"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "30 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1686994 Ontario Inc"
+    ],
+    "price_text": "$2,821,861"
+  }
+}

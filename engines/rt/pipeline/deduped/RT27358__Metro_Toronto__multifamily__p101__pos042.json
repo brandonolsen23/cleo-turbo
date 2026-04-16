@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT27358",
+  "source_folder": "Metro_Toronto/multifamily/p101",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27358",
+      "source_folder": "Metro_Toronto/multifamily/p101",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p101/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "233 - 235 JANE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Oct 2002",
+      "price_text": "$520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Estate of Antonia Zys     416-977-0091"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Trustee Christina Zys-Gilligan",
+        "Yee & Lee",
+        "180 Dundas St W, Ste 1506",
+        "Toronto, Ontario",
+        "M5G 1Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rusmir Numic",
+        "Senad Numanovic",
+        "Damir Hadzic"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "233 Jane St",
+        "Toronto, Ontario",
+        "M6S 3Y8"
+      ]
+    },
+    "description_lines": [
+      "2 Duplexes - 4 units @ $130,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1119, Lot 15",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "19 04 012 230 02500 +",
+    "consideration_lines": [
+      "cash: $520,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5043 / 6031",
+      "rt_id": "RT27358"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "233 - 235 JANE ST",
+    "postcode": "M6S 3Y8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/15/2002",
+    "desc": "2 Duplexes - 4 units @ $130,000",
+    "bldg": "4 units",
+    "acreage": ".12",
+    "consid": "520000",
+    "cash": "520000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 012 230 02500+"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "233 - 235 JANE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Oct 2002",
+    "note": "",
+    "description": "2 Duplexes - 4 units @ $130,000",
+    "seller_lines": [
+      "Estate of Antonia Zys"
+    ],
+    "buyer_lines": [
+      "Rusmir Numic",
+      "Senad Numanovic",
+      "Damir Hadzic"
+    ],
+    "price_text": "$520,000"
+  }
+}

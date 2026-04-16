@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT113130",
+  "source_folder": "Cochrane/all/p090",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT113130",
+      "source_folder": "Cochrane/all/p090",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p090/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "111 CHAMPAGNE AVE S",
+        "UNIT 2102"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "11 Dec 2015",
+      "price_text": "$1,615,659",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Soho Champagne Condominiums Inc     613-247-7616"
+      ],
+      "trade_name": "Mastercraft Group Inc",
+      "contact_lines": [
+        "Attn: Stephen Polowin",
+        "2525 St Laurent Blvd, Ste 204",
+        "Ottawa, Ontario",
+        "K1H 8P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JB Holdings Inc     613-822-6767"
+      ],
+      "trade_name": "Bassi Construction",
+      "contact_lines": [
+        "Attn: Giovanni Bassi",
+        "2575 Delzotto Ave, Unit A",
+        "Ottawa, Ontario",
+        "K1T 3V6"
+      ]
+    },
+    "description_lines": [
+      "Residential Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 977",
+      "Level 19, Unit 2",
+      "Level B, Units 3, 15-17",
+      "",
+      "PIN: 15977-0184 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,615,659     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,125,000   rate: Prime plus 5.25% per annum.",
+      "registered: 12/11/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4478 / 10920",
+      "rt_id": "RT113130"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "111 CHAMPAGNE AVE S, UNIT 2102",
+    "postcode": "K1S 5V3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/11/2015",
+    "desc": "Residential Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1615659",
+    "cash": "1615659",
+    "debt": "",
+    "note": "",
+    "pin": "15977-0184+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "111 CHAMPAGNE AVE S",
+      "UNIT 2102"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "11 Dec 2015",
+    "note": "",
+    "description": "Residential Condo",
+    "seller_lines": [
+      "Soho Champagne Condominiums Inc"
+    ],
+    "buyer_lines": [
+      "JB Holdings Inc"
+    ],
+    "price_text": "$1,615,659"
+  }
+}

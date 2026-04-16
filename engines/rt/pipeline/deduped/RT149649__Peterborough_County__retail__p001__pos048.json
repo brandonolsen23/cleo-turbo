@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT149649",
+  "source_folder": "Peterborough_County/retail/p001",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT149649",
+      "source_folder": "Peterborough_County/retail/p001",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p001/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "130 SIMCOE ST"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "18 Feb 2020",
+      "price_text": "$1,370,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cameron Windross",
+        "130 King St W, 16th Flr",
+        "Toronto, Ontario",
+        "M5X 2A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1827508 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Battaglia",
+        "2109 Katchewanooka Ct",
+        "Selwyn, Ontario",
+        "K0L 2H0"
+      ]
+    },
+    "description_lines": [
+      "BMO Bank Branch"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 116, Lots 16 & 17",
+      "",
+      "PIN: 28103-0063",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "15 14 040 100 00700",
+    "consideration_lines": [
+      "cash: $1,370,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Randy Knight Holdings Ltd",
+      "principal: $1,700,000   rate: 5.0% per annum.",
+      "registered: 02/18/2020   due: 02/18/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1496/RT149649/0801_094914.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1496/RT149649/0801_094917.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1496/RT149649/0801_094919.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1496/RT149649/0801_094952.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1496/RT149649/0801_095011.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "49 / 157",
+      "rt_id": "RT149649"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "130 SIMCOE ST",
+    "postcode": "K9H 2H5",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "02/18/2020",
+    "desc": "BMO Bank Branch",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "1370000",
+    "cash": "1370000",
+    "debt": "",
+    "note": "",
+    "pin": "28103-0063",
+    "rollno": "15 14 040 100 00700"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "130 SIMCOE ST"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "18 Feb 2020",
+    "note": "",
+    "description": "BMO Bank Branch",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "1827508 Ontario Inc"
+    ],
+    "price_text": "$1,370,000"
+  }
+}

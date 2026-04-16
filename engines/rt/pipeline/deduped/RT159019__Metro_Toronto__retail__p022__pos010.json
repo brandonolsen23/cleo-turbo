@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT159019",
+  "source_folder": "Metro_Toronto/retail/p022",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT159019",
+      "source_folder": "Metro_Toronto/retail/p022",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p022/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "3440 LAKE SHORE BLVD W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "26 Feb 2021",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1140852 Ontario Ltd     416-222-3395"
+      ],
+      "trade_name": "Khadivi Dental Centre",
+      "contact_lines": [
+        "Attn: Valiallah Khadivi",
+        "1110 Sheppard Ave E, Ste 207",
+        "Willowdale, Ontario",
+        "M2K 2W2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2796548 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Seyed Jalali",
+        "3440 Lake Shore Blvd W",
+        "Toronto, Ontario",
+        "M8W 1N3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2130, Part Block Z",
+      "As in Inst No TB-419585",
+      "",
+      "PIN: 07590-0023",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 19 053 580 05100",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $812,500   rate: Prime plus 2.50% per annum.",
+      "registered: 02/26/2021   due: 03/05/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT15/RT1590/RT159019/0320_074735.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1590/RT159019/0320_074743.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1590/RT159019/0320_074755.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1590/RT159019/0320_074757.jpg",
+        "http://realtrack.cachefly.net/photos/RT15/RT1590/RT159019/0320_074811.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1061 / 4952",
+      "rt_id": "RT159019"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "3440 LAKE SHORE BLVD W",
+    "postcode": "M8W 1N3",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "02/26/2021",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "07590-0023",
+    "rollno": "19 19 053 580 05100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "3440 LAKE SHORE BLVD W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "26 Feb 2021",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1140852 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2796548 Ontario Corp"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

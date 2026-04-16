@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT55836",
+  "source_folder": "Wellington/all/p011",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55836",
+      "source_folder": "Wellington/all/p011",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/all/p011/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "16 ALICE ST"
+      ],
+      "city_region": "Bonnechere Valley : Renfrew",
+      "date_text": "01 Jun 2007",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2113688 Ontario Inc     905-891-0095"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dae-Re Cha",
+        "1330 Dexter Cres",
+        "Mississauga, Ontario",
+        "L5G 4R5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2043822 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chang-Kyu Park",
+        "34 South Mary Lake, RR 1",
+        "Port Sydney, Ontario",
+        "P0B 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 49R-11732, Parts 3 & 4",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "47 39 000 015 00800",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Korea Exchange Bank of Canada",
+      "principal: $822,000   rate: Prime plus 1.25% per annum",
+      "registered: 06/01/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "509 / 597",
+      "rt_id": "RT55836"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "16 ALICE ST",
+    "postcode": "K0J 1T0",
+    "municipality": "Bonnechere Valley",
+    "region": "Renfrew",
+    "date": "06/01/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "47 39 000 015 00800"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "16 ALICE ST"
+    ],
+    "city_region": "Bonnechere Valley : Renfrew",
+    "date_text": "01 Jun 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2113688 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2043822 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

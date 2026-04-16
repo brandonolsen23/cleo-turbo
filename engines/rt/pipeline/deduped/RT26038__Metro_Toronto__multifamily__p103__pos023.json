@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT26038",
+  "source_folder": "Metro_Toronto/multifamily/p103",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26038",
+      "source_folder": "Metro_Toronto/multifamily/p103",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p103/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "292 GLENFOREST RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Jul 2002",
+      "price_text": "$540,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Albert Guido",
+        "Daniel Amodio     416-413-1013"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "30 Hayden St, Ste 501",
+        "Toronto, Ontario",
+        "M4Y 1V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1512740 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Howard Stelman",
+        "292 Glenforest Rd",
+        "Toronto, Ontario",
+        "M4N 2A4"
+      ]
+    },
+    "description_lines": [
+      "Triplex - 2.5 storey; 3-2bdrm @ $180,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-140, Part 15"
+    ],
+    "arn_text": "19 04 105 120 19200",
+    "consideration_lines": [
+      "cash: $540,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5124 / 6031",
+      "rt_id": "RT26038"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "292 GLENFOREST RD",
+    "postcode": "M4N 2A4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/11/2002",
+    "desc": "Triplex - 2.5 storey; 3-2bdrm @ $180,000",
+    "bldg": "3 units",
+    "acreage": "",
+    "consid": "540000",
+    "cash": "540000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 105 120 19200"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "292 GLENFOREST RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Jul 2002",
+    "note": "",
+    "description": "Triplex - 2.5 storey; 3-2bdrm @ $180,000",
+    "seller_lines": [
+      "Albert Guido",
+      "Daniel Amodio"
+    ],
+    "buyer_lines": [
+      "1512740 Ontario Ltd"
+    ],
+    "price_text": "$540,000"
+  }
+}

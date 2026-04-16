@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT25006",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25006",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1005 - 1017 MERIVALE RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "11 Apr 2002",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Marbel Management Ltd     613-789-3584"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jean Marc Vincent",
+        "278 Friel St",
+        "Ottawa, Ontario",
+        "K1N 7W1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 252, Part Lots 41 & 42",
+      "Plan 314, Lot 106",
+      "As in Inst No N-516281",
+      "",
+      "0.70 acre"
+    ],
+    "arn_text": "06 14 084 701 89400",
+    "consideration_lines": [
+      "cash: $625,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT250/RT25006/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1002 / 1141",
+      "rt_id": "RT25006"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1005 - 1017 MERIVALE RD",
+    "postcode": "K1Z 6A6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "04/11/2002",
+    "desc": "Retail Plaza - 2 storey",
+    "bldg": "",
+    "acreage": ".7",
+    "consid": "625000",
+    "cash": "625000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 084 701 89400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1005 - 1017 MERIVALE RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "11 Apr 2002",
+    "note": "",
+    "description": "Retail Plaza - 2 storey",
+    "seller_lines": [
+      "Marbel Management Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$625,000"
+  }
+}

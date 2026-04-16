@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT186020",
+  "source_folder": "Prescott/retail/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186020",
+      "source_folder": "Prescott/retail/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prescott/retail/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "189 JOHN ST"
+      ],
+      "city_region": "Hawkesbury : Prescott",
+      "date_text": "24 Jun 2024",
+      "price_text": "$2,370,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "104284 Canada Ltee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "291 Tupper St",
+        "Hawkesbury, Ontario",
+        "K6A 3T6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000931338 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Assaly",
+        "291 Tupper St",
+        "Hawkesbury, Ontario",
+        "K6A 3T6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-21, Lot 7",
+      "",
+      "PIN: 54176-0021",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "02 08 030 011 13000",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $2,370,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 19",
+      "rt_id": "RT186020"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "189 JOHN ST",
+    "postcode": "K6A 1Y1",
+    "municipality": "Hawkesbury",
+    "region": "Prescott",
+    "date": "06/24/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".69",
+    "consid": "2370000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "54176-0021",
+    "rollno": "02 08 030 011 13000"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "189 JOHN ST"
+    ],
+    "city_region": "Hawkesbury : Prescott",
+    "date_text": "24 Jun 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "104284 Canada Ltee"
+    ],
+    "buyer_lines": [
+      "1000931338 Ontario Inc"
+    ],
+    "price_text": "$2,370,000"
+  }
+}

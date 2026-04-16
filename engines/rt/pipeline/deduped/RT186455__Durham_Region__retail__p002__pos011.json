@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT186455",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186455",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 DUNDAS ST E"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "21 Jun 2024",
+      "price_text": "$1,620,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "297353 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "236 Windermere Ave",
+        "Toronto, Ontario",
+        "M6S 3K3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "297353 Ontario Ltd",
+        "Can-Ouflage Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kerry Kirby",
+        "236 Windermere Ave",
+        "Toronto, Ontario",
+        "M6S 3K3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-50029,",
+      "Part Lots 104 & 105, E/S Brock St",
+      "As in Inst No D-81750",
+      "",
+      "PIN: 26534-0176"
+    ],
+    "arn_text": "18 09 030 018 08800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "62 / 506",
+      "rt_id": "RT186455"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "300 DUNDAS ST E",
+    "postcode": "L1N 2J1",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "06/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1620000",
+    "cash": "0",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "26534-0176",
+    "rollno": "18 09 030 018 08800"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "300 DUNDAS ST E"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "21 Jun 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "297353 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "297353 Ontario Ltd",
+      "Can-Ouflage Inc"
+    ],
+    "price_text": "$1,620,000"
+  }
+}

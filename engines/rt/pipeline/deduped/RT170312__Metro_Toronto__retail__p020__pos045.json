@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT170312",
+  "source_folder": "Metro_Toronto/retail/p020",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170312",
+      "source_folder": "Metro_Toronto/retail/p020",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p020/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "3828A BLOOR ST W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "31 Mar 2022",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Scuralli Photography Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "15 Taylor Dr",
+        "Sandford, Ontario",
+        "L0C 1E0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2873637 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arjin Krishnan",
+        "10 Ensign Place",
+        "Toronto, Ontario",
+        "M1G 2R1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan RS-566, Parts 17-20",
+      "",
+      "PIN: 07540-0095",
+      "",
+      "N side, E of Botfield Ave",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 19 032 100 02900",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Harry Wasserman Investments Inc",
+      "Only Cool Stuff Inc",
+      "principal: $1,000,000   rate: 6.50% per annum (Interest only)",
+      "registered: 03/31/2022   due: 03/28/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1703/RT170312/0716_061836.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1703/RT170312/0716_061850.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1703/RT170312/0716_061854.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1703/RT170312/0716_061905.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1703/RT170312/0716_061928.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "996 / 4952",
+      "rt_id": "RT170312"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "3828A BLOOR ST W",
+    "postcode": "M9B 1K8",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "03/31/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "07540-0095",
+    "rollno": "19 19 032 100 02900"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "3828A BLOOR ST W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "31 Mar 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Scuralli Photography Ltd"
+    ],
+    "buyer_lines": [
+      "2873637 Ontario Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

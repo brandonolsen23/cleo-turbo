@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT54321",
+  "source_folder": "Metro_Toronto/multifamily/p075",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT54321",
+      "source_folder": "Metro_Toronto/multifamily/p075",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p075/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "70 GLEN DAVIS CRES"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Mar 2007",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 750-E, Lot 23",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "19 04 095 030 18400",
+    "consideration_lines": [
+      "cash: $730,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $400,000   rate: 5.125% per annum",
+      "registered: 03/02/2007   due: 04/01/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT543/RT54321/0325_084202.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT543/RT54321/0325_084204.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT543/RT54321/0325_084213.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3746 / 6031",
+      "rt_id": "RT54321"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "70 GLEN DAVIS CRES",
+    "postcode": "M4E 1X5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/02/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "730000",
+    "cash": "730000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 095 030 18400"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "70 GLEN DAVIS CRES"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Mar 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$730,000"
+  }
+}

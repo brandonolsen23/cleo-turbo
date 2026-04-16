@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT31505",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31505",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "105 BALMORAL AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Aug 2003",
+      "price_text": "$765,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "967311 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brent Larkan",
+        "105 Balmoral Ave",
+        "Toronto, Ontario",
+        "M4V 1J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 703, Part Lot 47",
+      "Plan 947, Part Lot 25",
+      "As in Inst No CA-136034",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 054 080 02200",
+    "consideration_lines": [
+      "cash: $765,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT315/RT31505/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4851 / 6031",
+      "rt_id": "RT31505"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "105 BALMORAL AVE",
+    "postcode": "M4V 1J5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/29/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "765000",
+    "cash": "765000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 054 080 02200"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "105 BALMORAL AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Aug 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "967311 Ontario Inc"
+    ],
+    "price_text": "$765,000"
+  }
+}

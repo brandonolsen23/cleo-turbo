@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT30515",
+  "source_folder": "York_Region/retail/p017",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30515",
+      "source_folder": "York_Region/retail/p017",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "205 DON HEAD VILLAGE BLVD"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "17 Jun 2003",
+      "price_text": "$3,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jacky Watch Co Ltd     416-497-1575"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yuk Fung",
+        "Chang and Associates",
+        "2025 Sheppard Ave E, Ste 2300",
+        "Toronto, Ontario",
+        "M2J 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Redrock Inc     416-733-0330"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Matthew Moyal",
+        "205 Don Head Village Blvd",
+        "Richmond Hill, Ontario",
+        "L4C 7R3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 13 units 20,309 sf @ $160",
+      "",
+      "Last transferred in Feb 96 for $3,000,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2114, Block 104",
+      "",
+      "1.95 acre"
+    ],
+    "arn_text": "19 38 060 101 03331",
+    "consideration_lines": [
+      "cash: $3,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT305/RT30515/photo.jpg"
+    },
+    "footer": {
+      "page_position": "813 / 984",
+      "rt_id": "RT30515"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "205 DON HEAD VILLAGE BLVD",
+    "postcode": "L4C 7R3",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "06/17/2003",
+    "desc": "Retail Plaza - 1 storey; 13 units 20,309 sf @ $160",
+    "bldg": "20,309 sf",
+    "acreage": "1.95",
+    "consid": "3250000",
+    "cash": "3250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 060 101 03331"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "205 DON HEAD VILLAGE BLVD"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "17 Jun 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 13 units 20,309 sf @ $160",
+    "seller_lines": [
+      "Jacky Watch Co Ltd"
+    ],
+    "buyer_lines": [
+      "Redrock Inc"
+    ],
+    "price_text": "$3,250,000"
+  }
+}

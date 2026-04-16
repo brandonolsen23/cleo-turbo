@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT29492",
+  "source_folder": "Cochrane/all/p195",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29492",
+      "source_folder": "Cochrane/all/p195",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p195/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 2",
+        "PART LOT 7"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "31 Jan 2003",
+      "price_text": "$1,089,450",
+      "note": "Purchase Option"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Monarch Construction Ltd     416-491-7440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2025 Sheppard Ave E, Ste 1201",
+        "Toronto, Ontario",
+        "M2J 1V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-17895, Part 1"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,089,450     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9729 / 10920",
+      "rt_id": "RT29492"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "CONC 2, PART LOT 7",
+    "postcode": "",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "01/31/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1089450",
+    "cash": "1089450",
+    "debt": "",
+    "note": "Purchase Option",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "CONC 2",
+      "PART LOT 7"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "31 Jan 2003",
+    "note": "Purchase Option",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Monarch Construction Ltd"
+    ],
+    "price_text": "$1,089,450"
+  }
+}

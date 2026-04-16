@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT174203",
+  "source_folder": "Ottawa-Carleton/retail/p004",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174203",
+      "source_folder": "Ottawa-Carleton/retail/p004",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p004/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "6001 HAZELDEAN RD"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "20 Dec 2022",
+      "price_text": "$10,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Seven Star Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4 Columbo Ct",
+        "St George, Ontario",
+        "N0E 1N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "9471-9622 Quebec Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Louis Turcotte",
+        "6001 Hazeldean Rd",
+        "Ottawa, Ontario",
+        "K2S 1B9"
+      ]
+    },
+    "description_lines": [
+      "Stittsville Home Hardware"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 12, Part Lot 25",
+      "Plan 4R-20048, Parts 4 & 5",
+      "",
+      "PIN: 04487-0723",
+      "",
+      "8.98 acre"
+    ],
+    "arn_text": "06 27 010 830 13903",
+    "consideration_lines": [
+      "cash: $7,000,000     assumed/vtb debt: $3,500,000",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $7,000,000   rate: 25.0% per annum.",
+      "registered: 12/20/2022   due: on demand",
+      "",
+      "chargee: Seven Star Investments Inc",
+      "principal: $3,500,000   rate: 5.0% per annum.",
+      "registered: 12/20/2022   due: 12/20/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_141842.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_141843.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_141857.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_141953.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_142000.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_142001.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1742/RT174203/0324_142009.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1742/RT174203/air1.jpg",
+        "/assets/files/RT17/RT1742/RT174203/air2.jpg",
+        "/assets/files/RT17/RT1742/RT174203/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "176 / 1141",
+      "rt_id": "RT174203"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "6001 HAZELDEAN RD",
+    "postcode": "K2S 1B9",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "12/20/2022",
+    "desc": "Stittsville Home Hardware",
+    "bldg": "",
+    "acreage": "8.98",
+    "consid": "10500000",
+    "cash": "7000000",
+    "debt": "3500000",
+    "note": "",
+    "pin": "04487-0723",
+    "rollno": "06 27 010 830 13903"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "6001 HAZELDEAN RD"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "20 Dec 2022",
+    "note": "",
+    "description": "Stittsville Home Hardware",
+    "seller_lines": [
+      "Seven Star Investments Inc"
+    ],
+    "buyer_lines": [
+      "9471-9622 Quebec Inc"
+    ],
+    "price_text": "$10,500,000"
+  }
+}

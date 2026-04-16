@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT26161",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26161",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "3089 LAKESHORE BLVD W"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "03 Jun 2002",
+      "price_text": "$1,275,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "John & Lina Rapallo",
+        "Ettore & Anna Reda",
+        "Laura S. DiPiero"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "31 Fifth Ave",
+        "Woodbridge, Ontario",
+        "L4L 6Y5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RML Lakeshore Kipling Inc     905-890-2436"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jack Rabba",
+        "Rabba Fine Foods",
+        "5820 Kennedy Rd",
+        "Mississauga, Ontario",
+        "L4Z 2C3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 2 units 6,028 sf @ $212",
+      "",
+      "Occupied by Rabba Fine Foods and the Woodhouse Pub.",
+      "",
+      "Built in 1987"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3630",
+      "Lot 1, S/S Lakeshore Blvd",
+      "As in Inst No 522893",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "19 19 052 350 00700",
+    "consideration_lines": [
+      "cash: $1,275,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4211 / 4952",
+      "rt_id": "RT26161"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "3089 LAKESHORE BLVD W",
+    "postcode": "",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "06/03/2002",
+    "desc": "Retail Plaza - 1 storey; 2 units 6,028 sf @ $212",
+    "bldg": "6,028 sf",
+    "acreage": ".3",
+    "consid": "1275000",
+    "cash": "1275000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 052 350 00700"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "3089 LAKESHORE BLVD W"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "03 Jun 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 2 units 6,028 sf @ $212",
+    "seller_lines": [
+      "John & Lina Rapallo",
+      "Ettore & Anna Reda",
+      "Laura S. DiPiero"
+    ],
+    "buyer_lines": [
+      "RML Lakeshore Kipling Inc"
+    ],
+    "price_text": "$1,275,000"
+  }
+}

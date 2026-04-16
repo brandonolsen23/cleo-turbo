@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT184925",
+  "source_folder": "Metro_Toronto/retail/p012",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184925",
+      "source_folder": "Metro_Toronto/retail/p012",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p012/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "429 RONCESVALLES AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 May 2024",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "429 Roncesvalles Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3080 Yonge St, Ste 6000",
+        "Toronto, Ontario",
+        "M4N 3N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "429 Roncesvalles Avenue Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jordan Pearl",
+        "7501 Keele St, Ste 200",
+        "Concord, Ontario",
+        "L4K 1Y2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 798, Part Lot 53",
+      "Plan 981 - City West, Part Lot 41",
+      "As in Inst No EW-2252 (5thly)",
+      "",
+      "PIN: 21332-0296",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 04 023 420 00100",
+    "consideration_lines": [
+      "cash: $2,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1849/RT184925/0609_073337.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1849/RT184925/0609_073343.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1849/RT184925/0609_073345.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1849/RT184925/0609_073415.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1849/RT184925/0609_073417.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "560 / 4952",
+      "rt_id": "RT184925"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "429 RONCESVALLES AVE",
+    "postcode": "M6R 2N3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "2400000",
+    "cash": "2400000",
+    "debt": "",
+    "note": "",
+    "pin": "21332-0296",
+    "rollno": "19 04 023 420 00100"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "429 RONCESVALLES AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "429 Roncesvalles Ltd"
+    ],
+    "buyer_lines": [
+      "429 Roncesvalles Avenue Inc"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

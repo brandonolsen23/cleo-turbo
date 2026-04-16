@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT34208",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34208",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "443 - 449 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "16 Feb 2004",
+      "price_text": "$740,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Barzoid Corp Ltd     905-921-4567"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Johannes Hoegl",
+        "1265 Rosseau Place",
+        "Burlington, Ontario",
+        "L7P 3N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1561241 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Behzad Hosseinpour",
+        "232 Sequoia Dr",
+        "Thunder Bay, Ontario",
+        "P7B 5T2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 2,500 sf @ $296"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-16681, Parts 1-3",
+      "Plan 244, Part Lot Henry Beasley Tract",
+      "As in Inst No CD-471366",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "25 18 010 095 52740 +",
+    "consideration_lines": [
+      "cash: $740,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Hoegl Realty Inc: Johannes Hoegl, 905-921-4567"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT342/RT34208/photo.jpg"
+    },
+    "footer": {
+      "page_position": "491 / 616",
+      "rt_id": "RT34208"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "443 - 449 MAIN ST W",
+    "postcode": "L8P 1K5",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "02/16/2004",
+    "desc": "Retail Plaza - 1 storey; 3 units 2,500 sf @ $296",
+    "bldg": "2,500 sf",
+    "acreage": ".4",
+    "consid": "740000",
+    "cash": "740000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 010 095 52740+"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "443 - 449 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "16 Feb 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 2,500 sf @ $296",
+    "seller_lines": [
+      "Barzoid Corp Ltd"
+    ],
+    "buyer_lines": [
+      "1561241 Ontario Inc"
+    ],
+    "price_text": "$740,000"
+  }
+}

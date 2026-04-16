@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT129255",
+  "source_folder": "Metro_Toronto/multifamily/p035",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT129255",
+      "source_folder": "Metro_Toronto/multifamily/p035",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p035/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "10 LASCELLES BLVD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Oct 2017",
+      "price_text": "$1,549,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "10 Lascelles Inc",
+        "John Berry"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Blasioli",
+        "10 Lascelles Blvd",
+        "Toronto, Ontario",
+        "M4V 2X4"
+      ]
+    },
+    "description_lines": [
+      "Duplex: 2 storey; 2-2bdrm @ $774,500",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-452, Part Lot 54",
+      "",
+      "PIN: 21183-0057",
+      "",
+      "SW corner of Lascelles Blvd and Wilberton Rd",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 111 430 02100",
+    "consideration_lines": [
+      "cash: $1,549,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,000,000   rate: 2.690% per annum.",
+      "registered: 10/27/2017   due: 11/01/2022"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1711 / 6031",
+      "rt_id": "RT129255"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "10 LASCELLES BLVD",
+    "postcode": "M4V 2B5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/27/2017",
+    "desc": "Duplex: 2 storey; 2-2bdrm @ $774,500",
+    "bldg": "2 units",
+    "acreage": ".11",
+    "consid": "1549000",
+    "cash": "1549000",
+    "debt": "",
+    "note": "",
+    "pin": "21183-0057",
+    "rollno": "19 04 111 430 02100"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "10 LASCELLES BLVD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Oct 2017",
+    "note": "",
+    "description": "Duplex: 2 storey; 2-2bdrm @ $774,500",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "10 Lascelles Inc",
+      "John Berry"
+    ],
+    "price_text": "$1,549,000"
+  }
+}

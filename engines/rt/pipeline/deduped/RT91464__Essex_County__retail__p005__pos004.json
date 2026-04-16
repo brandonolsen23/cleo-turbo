@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT91464",
+  "source_folder": "Essex_County/retail/p005",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT91464",
+      "source_folder": "Essex_County/retail/p005",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p005/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "47 WILSON AVE"
+      ],
+      "city_region": "Essex : Essex County",
+      "date_text": "11 Mar 2013",
+      "price_text": "$2,200,000",
+      "note": "Purchased Business"
+    },
+    "transferor": {
+      "party_lines": [
+        "IB Fynbo Hardware Ltd     519-776-7349"
+      ],
+      "trade_name": "Hickey Byrne Barristers & Solicitors",
+      "contact_lines": [
+        "Pres: Ib Fynbo",
+        "c/o 14 Centre St",
+        "Essex, Ontario",
+        "N8M 1N9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Straus",
+        "34 Henry St",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "description_lines": [
+      "Home Hardware Store/Lumber Yard"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc NTR, Part Lot 283",
+      "Plan 176",
+      "Odd Numbers Lots 145-165",
+      "Part Lots 143 & 167",
+      "Plan 12R-13487, Part 1",
+      "As in Inst No R-1375838",
+      "",
+      "PIN: 75224-0016",
+      "",
+      "NE corner Wilson Ave and Station St",
+      "",
+      "3.20 acre"
+    ],
+    "arn_text": "37 54 110 000 04700",
+    "consideration_lines": [
+      "cash: $2,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT914/RT91464/0628_101848.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT914/RT91464/0628_101908.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT914/RT91464/0628_102021.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "205 / 460",
+      "rt_id": "RT91464"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "47 WILSON AVE",
+    "postcode": "N8M 2L9",
+    "municipality": "Essex",
+    "region": "Essex County",
+    "date": "03/11/2013",
+    "desc": "Home Hardware Store/Lumber Yard",
+    "bldg": "",
+    "acreage": "3.2",
+    "consid": "2200000",
+    "cash": "2200000",
+    "debt": "",
+    "note": "Purchased Business",
+    "pin": "75224-0016",
+    "rollno": "37 54 110 000 04700"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "47 WILSON AVE"
+    ],
+    "city_region": "Essex : Essex County",
+    "date_text": "11 Mar 2013",
+    "note": "Purchased Business",
+    "description": "Home Hardware Store/Lumber Yard",
+    "seller_lines": [
+      "IB Fynbo Hardware Ltd"
+    ],
+    "buyer_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

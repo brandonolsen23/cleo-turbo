@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT92493",
+  "source_folder": "Ottawa-Carleton/retail/p011",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT92493",
+      "source_folder": "Ottawa-Carleton/retail/p011",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p011/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "752 - 754 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "07 May 2013",
+      "price_text": "$4,850,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "CJMR Holdings (Ottawa) Ltd     613-232-9466"
+      ],
+      "trade_name": "Metro Glebe",
+      "contact_lines": [
+        "Pres: James McKeen",
+        "754 Bank St",
+        "Ottawa, Ontario",
+        "K1S 3V6"
+      ]
+    },
+    "description_lines": [
+      "Grocery Store - 1 storey; 8,800 sf @ $551",
+      "",
+      "Purchased by the tenant (McKeen Metro Glebe)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 34756",
+      "Part Lots 10 & 11, W/S Bank St",
+      "As in Inst Nos:",
+      "CR-407865 & CR-262627",
+      "",
+      "PIN: 04137-0207",
+      "",
+      "W side Bank St, S of Second Ave",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "06 14 052 401 73400",
+    "consideration_lines": [
+      "cash: $4,850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $4,850,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 05/07/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT924/RT92493/0727_062556.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT924/RT92493/0727_062627.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT924/RT92493/0727_062702.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "530 / 1141",
+      "rt_id": "RT92493"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "752 - 754 BANK ST",
+    "postcode": "K1S 3V6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/07/2013",
+    "desc": "Grocery Store - 1 storey; 8,800 sf @ $551",
+    "bldg": "8,800 sf",
+    "acreage": ".2",
+    "consid": "4850000",
+    "cash": "4850000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "04137-0207",
+    "rollno": "06 14 052 401 73400"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "752 - 754 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "07 May 2013",
+    "note": "Purchased by Tenant",
+    "description": "Grocery Store - 1 storey; 8,800 sf @ $551",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "CJMR Holdings (Ottawa) Ltd"
+    ],
+    "price_text": "$4,850,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT187953",
+  "source_folder": "York_Region/retail/p003",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187953",
+      "source_folder": "York_Region/retail/p003",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "7181 YONGE ST",
+        "UNIT 3"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "17 Oct 2024",
+      "price_text": "$1,321,556",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bradlan Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Matthew R Harris",
+        "4789 Yonge St, Ste 1208",
+        "Toronto, Ontario",
+        "M2N 0G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Azmy Holdings Inc     905-623-7349"
+      ],
+      "trade_name": "Clarington Dental Centre",
+      "contact_lines": [
+        "Attn: George Azmy",
+        "188 King St E",
+        "Bowmanville Ontario",
+        "L1C 1P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1247",
+      "Level 1, Unit 3",
+      "",
+      "PIN: 29778-0003"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,321,556     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/17/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_094844.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_094848.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_094850.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_094931.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_095041.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_095056.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187953/1124_095118.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "132 / 984",
+      "rt_id": "RT187953"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "7181 YONGE ST, UNIT 3",
+    "postcode": "L3T 0C7",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "10/17/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1321556",
+    "cash": "1321556",
+    "debt": "",
+    "note": "",
+    "pin": "29778-0003",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "7181 YONGE ST",
+      "UNIT 3"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "17 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bradlan Inc"
+    ],
+    "buyer_lines": [
+      "Azmy Holdings Inc"
+    ],
+    "price_text": "$1,321,556"
+  }
+}

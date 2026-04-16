@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT122270",
+  "source_folder": "Leeds/all/p020",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT122270",
+      "source_folder": "Leeds/all/p020",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "9766 COLD STORAGE RD"
+      ],
+      "city_region": "Grand Bend : Lambton",
+      "date_text": "21 Dec 2016",
+      "price_text": "$891,150",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2401481 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Albert Janssen",
+        "c/o 9766 Cold Storage Rd",
+        "Grand Bend, Ontario",
+        "N0M 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 7,",
+      "Conc B, Part Lot 6",
+      "Conc C, Part Lot 6",
+      "As in Inst No L-908905",
+      "",
+      "PIN: 43450-0266",
+      "",
+      "32.29 acre"
+    ],
+    "arn_text": "38 45 460 090 01600",
+    "consideration_lines": [
+      "cash: $891,150     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,500,000   rate: 18.0% per annum.",
+      "registered: 12/21/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1222/RT122270/air1.jpg",
+        "/assets/files/RT12/RT1222/RT122270/air2.jpg",
+        "/assets/files/RT12/RT1222/RT122270/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "989 / 1916",
+      "rt_id": "RT122270"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "9766 COLD STORAGE RD",
+    "postcode": "N0M 1T0",
+    "municipality": "Grand Bend",
+    "region": "Lambton",
+    "date": "12/21/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "32.29",
+    "consid": "891150",
+    "cash": "891150",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43450-0266",
+    "rollno": "38 45 460 090 01600"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "9766 COLD STORAGE RD"
+    ],
+    "city_region": "Grand Bend : Lambton",
+    "date_text": "21 Dec 2016",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2401481 Ontario Ltd"
+    ],
+    "price_text": "$891,150"
+  }
+}

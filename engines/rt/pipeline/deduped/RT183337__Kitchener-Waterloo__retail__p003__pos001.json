@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT183337",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183337",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "707 OTTAWA ST S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "01 Mar 2024",
+      "price_text": "$12,675,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "707 Ottawa Street South Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Oak-Land Ford - Trafalgar Rd",
+        "Oakville, Ontario",
+        "L6J 3J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KFKO Land Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Gordey",
+        "c/o Canada One Auto Group Ltd",
+        "14240 - 137th Ave",
+        "Edmonton, Alberta",
+        "T5L 5H7"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership",
+      "",
+      "Last transferred in December 2015 for $5,500,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-2192, Parts 1-3",
+      "Except:",
+      "Plan WR-868230, Parts 1 & 5",
+      "",
+      "PIN: 22600-1226",
+      "",
+      "SW corner Ottawa St S and Home Watson Blvd",
+      "",
+      "4.59 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $12,675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,500,000,000   rate: Prime plus 8.0% per annum.",
+      "registered: 03/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183337/0413_170329.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183337/0413_170428.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183337/0413_170545.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183337/0413_170709.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183337/0413_170803.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1833/RT183337/0413_171118.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "102 / 752",
+      "rt_id": "RT183337"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "707 OTTAWA ST S",
+    "postcode": "N2E 2T7",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/01/2024",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "4.59",
+    "consid": "12675000",
+    "cash": "12675000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "22600-1226",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "707 OTTAWA ST S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "01 Mar 2024",
+    "note": "Portfolio",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "707 Ottawa Street South Ltd"
+    ],
+    "buyer_lines": [
+      "KFKO Land Holdings Ltd"
+    ],
+    "price_text": "$12,675,000"
+  }
+}

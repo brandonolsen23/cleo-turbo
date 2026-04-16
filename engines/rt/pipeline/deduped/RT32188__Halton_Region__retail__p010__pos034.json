@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT32188",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32188",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "377 MAIN ST E"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "15 Oct 2003",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wire-Less Connections Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robin Petersen",
+        "57 Widdicombe Hill Blvd, Ste 503",
+        "Etobicoke, Ontario",
+        "M9R 1Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2010288 Ontario Inc     416-667-1489"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rick Kojfman",
+        "Wireless Personal Communications",
+        "4400 Dufferin St",
+        "Toronto, Ontario",
+        "M3H 6A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-8781, Part 1",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $625,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "485 / 613",
+      "rt_id": "RT32188"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "377 MAIN ST E",
+    "postcode": "L9T 1P7",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "10/15/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "625000",
+    "cash": "625000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "377 MAIN ST E"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "15 Oct 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Wire-Less Connections Inc"
+    ],
+    "buyer_lines": [
+      "2010288 Ontario Inc"
+    ],
+    "price_text": "$625,000"
+  }
+}

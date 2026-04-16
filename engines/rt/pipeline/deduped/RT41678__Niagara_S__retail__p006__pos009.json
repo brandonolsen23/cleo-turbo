@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT41678",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41678",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "397 THOROLD RD W",
+        "545 NIAGARA ST N"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "06 May 2005",
+      "price_text": "$2,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Gorge Holdings Inc     905-227-3792"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anthony Muratori",
+        "40 Albert St W",
+        "Thorold, Ontario",
+        "L2V 2G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "D'Arcy Welland Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Gromak",
+        "12 Allan Park Rd",
+        "Etobicoke, Ontario",
+        "M8Z 3T1"
+      ]
+    },
+    "description_lines": [
+      "2 Plazas - 1 storey; 17 units 34,200 sf @ $73",
+      "",
+      "397: 1 storey; 5 units 6,200 sf",
+      "",
+      "545: 1 storey; 12 units 28,000 s"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 253",
+      "Plan 59R-4757, Part 1",
+      "Plan 59R-6715, Parts 1-3",
+      "",
+      "2.03 acre"
+    ],
+    "arn_text": "27 19 010 009 27600 +",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,350,000   rate: 20.0% per annum",
+      "registered: 05/06/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT416/RT41678/photo.jpg"
+    },
+    "footer": {
+      "page_position": "260 / 324",
+      "rt_id": "RT41678"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "397 THOROLD RD W, 545 NIAGARA ST N",
+    "postcode": "L3C 3W4",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "05/06/2005",
+    "desc": "2 Plazas - 1 storey; 17 units 34,200 sf @ $73",
+    "bldg": "34,200 sf",
+    "acreage": "2.03",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 19 010 009 27600+"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "397 THOROLD RD W",
+      "545 NIAGARA ST N"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "06 May 2005",
+    "note": "",
+    "description": "2 Plazas - 1 storey; 17 units 34,200 sf @ $73",
+    "seller_lines": [
+      "Gorge Holdings Inc"
+    ],
+    "buyer_lines": [
+      "D'Arcy Welland Holdings Ltd"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

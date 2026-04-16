@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT187828",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187828",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "46 MAIN ST"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "10 Oct 2024",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CBBG Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "46 Main St W",
+        "Chelmsford, Ontario",
+        "P0M 1l0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000809132 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nathan Grebe",
+        "44 Main St",
+        "Chelmsford, Ontario",
+        "P0M 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Balfour, Part Lot 2",
+      "Plan 53R-5032, Parts 1, 2, 10-16",
+      "Plan M-35, Lots 1-6 & Part Lot 7",
+      "As in Inst No LT-661434",
+      "",
+      "PIN: 73349-1833",
+      "",
+      "2.26 acre"
+    ],
+    "arn_text": "53 07 160 007 15100",
+    "consideration_lines": [
+      "cash: $400,000     assumed/vtb debt: $1,100,000",
+      "",
+      "chargee: CBBG Realty Inc",
+      "principal: $1,143,663   rate: 6.0% per annum.",
+      "registered: 10/10/2024   due: 10/09/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 90",
+      "rt_id": "RT187828"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "46 MAIN ST",
+    "postcode": "P0M 1L0",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "10/10/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.26",
+    "consid": "1500000",
+    "cash": "400000",
+    "debt": "1100000",
+    "note": "",
+    "pin": "73349-1833",
+    "rollno": "53 07 160 007 15100"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "46 MAIN ST"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "10 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "CBBG Realty Inc"
+    ],
+    "buyer_lines": [
+      "1000809132 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

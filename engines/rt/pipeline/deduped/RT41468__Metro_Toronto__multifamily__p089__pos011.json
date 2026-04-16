@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT41468",
+  "source_folder": "Metro_Toronto/multifamily/p089",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41468",
+      "source_folder": "Metro_Toronto/multifamily/p089",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p089/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "28 OAK PARK AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 Apr 2005",
+      "price_text": "$657,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Glado Property Inc     905-948-0637"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lie Shi",
+        "305 Manhattan Dr",
+        "Markham, Ontario",
+        "L3P 7L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1770, Lot 4",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "19 04 095 490 00300",
+    "consideration_lines": [
+      "cash: $657,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Community Trust Co",
+      "principal: $427,000   rate: 6.2% per annum",
+      "registered: 04/21/2005   due: 04/20/2007"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT414/RT41468/air1.jpg",
+        "/assets/files/RT4/RT414/RT41468/air2.jpg",
+        "/assets/files/RT4/RT414/RT41468/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4412 / 6031",
+      "rt_id": "RT41468"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "28 OAK PARK AVE",
+    "postcode": "M4C 4L7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/21/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "657000",
+    "cash": "657000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 095 490 00300"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "28 OAK PARK AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Glado Property Inc"
+    ],
+    "price_text": "$657,000"
+  }
+}

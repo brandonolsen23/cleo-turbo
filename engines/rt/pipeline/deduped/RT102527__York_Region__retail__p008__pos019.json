@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT102527",
+  "source_folder": "York_Region/retail/p008",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT102527",
+      "source_folder": "York_Region/retail/p008",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "15820 BAYVIEW AVE",
+        "15830 BAYVIEW AVE"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "27 Aug 2014",
+      "price_text": "$3,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "St John's Bay Land Company Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank D'Amico",
+        "180 John West Way, Ste 506",
+        "Aurora, Ontario",
+        "L4G 0R3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loblaw Properties Ltd     905-459-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Stassen",
+        "1 President's Choice Circle",
+        "4th Floor, South Tower",
+        "Brampton, Ontario",
+        "L6Y 5S5"
+      ]
+    },
+    "description_lines": [
+      "LCBO & The Beer Store: 1 storey; 10,000 sf @ $325",
+      "",
+      "The two buildings are fully leased to LCBO and The Beer Store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2874",
+      "Lot 1 & Block 7",
+      "",
+      "PIN: 03641-0410",
+      "",
+      "W side of Bayview Ave, N of Wellington St",
+      "",
+      "2.76 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,083,333     assumed/vtb debt: $2,166,667",
+      "",
+      "chargee: St John's Bay Land Company Ltd",
+      "principal: $2,166,667   rate: RBC prime per annum. Due in 2 annual payments of $1,083,333.",
+      "registered: 08/27/2014   due: 05/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184456.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184547.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184616.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184808.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184826.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184829.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1025/RT102527/0912_184858.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "370 / 984",
+      "rt_id": "RT102527"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "15820 BAYVIEW AVE, 15830 BAYVIEW AVE",
+    "postcode": "L4G 7Y3",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "08/27/2014",
+    "desc": "LCBO & The Beer Store: 1 storey; 10,000 sf @ $325",
+    "bldg": "10,000 sf",
+    "acreage": "2.76",
+    "consid": "3250000",
+    "cash": "1083333",
+    "debt": "2166667",
+    "note": "",
+    "pin": "03641-0410",
+    "rollno": ""
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "15820 BAYVIEW AVE",
+      "15830 BAYVIEW AVE"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "27 Aug 2014",
+    "note": "",
+    "description": "LCBO & The Beer Store: 1 storey; 10,000 sf @ $325",
+    "seller_lines": [
+      "St John's Bay Land Company Ltd"
+    ],
+    "buyer_lines": [
+      "Loblaw Properties Ltd"
+    ],
+    "price_text": "$3,250,000"
+  }
+}

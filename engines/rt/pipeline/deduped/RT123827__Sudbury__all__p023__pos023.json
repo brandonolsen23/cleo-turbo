@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT123827",
+  "source_folder": "Sudbury/all/p023",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123827",
+      "source_folder": "Sudbury/all/p023",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/all/p023/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1",
+        "PART LOT 42"
+      ],
+      "city_region": "Stratford : Perth County",
+      "date_text": "10 Mar 2017",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Stratford East Investment Ltd     905-760-6200"
+      ],
+      "trade_name": "SmartCentres",
+      "contact_lines": [
+        "ASO: Mitchell Goldhar",
+        "700 Applewood Cres, Ste 100",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cooper Construction Ltd     905-829-0444"
+      ],
+      "trade_name": "Cooper Construction Ltd",
+      "contact_lines": [
+        "Attn: John Goldspink",
+        "2381 Bristol Circle, Ste C200",
+        "Oakville, Ontario",
+        "L6H 5S9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 42",
+      "Plan 44R-5367, Part 1",
+      "",
+      "PIN: 53095-0024"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1124 / 2428",
+      "rt_id": "RT123827"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "CONC 1, PART LOT 42",
+    "postcode": "",
+    "municipality": "Stratford",
+    "region": "Perth County",
+    "date": "03/10/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "53095-0024",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "CONC 1",
+      "PART LOT 42"
+    ],
+    "city_region": "Stratford : Perth County",
+    "date_text": "10 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Stratford East Investment Ltd"
+    ],
+    "buyer_lines": [
+      "Cooper Construction Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

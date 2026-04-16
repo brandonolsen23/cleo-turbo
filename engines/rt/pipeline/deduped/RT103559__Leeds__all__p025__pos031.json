@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT103559",
+  "source_folder": "Leeds/all/p025",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT103559",
+      "source_folder": "Leeds/all/p025",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p025/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "PETROLIA LINE",
+        "CONC 10",
+        "PART LOT 18"
+      ],
+      "city_region": "Enniskillen : Lambton",
+      "date_text": "03 Oct 2014",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Clayton E McLauchlin Ltd     519-882-3803"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Clayton McLauchlin",
+        "5000 Petrolia Line, RR 1",
+        "Petrolia, Ontario",
+        "N0N 1R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 18",
+      "As in Inst No L-764128",
+      "",
+      "PIN: 43339-0071",
+      "",
+      "100.01 acre"
+    ],
+    "arn_text": "38 16 000 120 00500",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $581,250   rate: Prime plus 5.0% per annum.",
+      "registered: 10/03/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1232 / 1916",
+      "rt_id": "RT103559"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "PETROLIA LINE, CONC 10, PART LOT 18",
+    "postcode": "",
+    "municipality": "Enniskillen",
+    "region": "Lambton",
+    "date": "10/03/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.01",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "43339-0071",
+    "rollno": "38 16 000 120 00500"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "PETROLIA LINE",
+      "CONC 10",
+      "PART LOT 18"
+    ],
+    "city_region": "Enniskillen : Lambton",
+    "date_text": "03 Oct 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Clayton E McLauchlin Ltd"
+    ],
+    "price_text": "$775,000"
+  }
+}

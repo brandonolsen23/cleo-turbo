@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT36203",
+  "source_folder": "Simcoe_County/retail/p012",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36203",
+      "source_folder": "Simcoe_County/retail/p012",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p012/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "945 INNISFIL BEACH RD"
+      ],
+      "city_region": "Innisfil : Simcoe County",
+      "date_text": "15 Jun 2004",
+      "price_text": "$2,700,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Laurentian Bank of Canada     416-947-5100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Harold Mugford",
+        "130 Adelaide St W",
+        "Toronto, Ontario",
+        "M5H 3P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1124063 Ontario Inc, Trustee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Larry Fleming",
+        "7832 Yonge St",
+        "Innisfil, Ontario",
+        "L9S 1L4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 24",
+      "Plan 947, Lots 197-199 & Part Lot 200",
+      "Plan 51R-23727, Part 3",
+      "Plan 51R-24135, Part 1",
+      "Plan 51R-27445, Part 13",
+      "",
+      "2.10 acre"
+    ],
+    "arn_text": "43 16 010 024 14600",
+    "consideration_lines": [
+      "cash: $2,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT362/RT36203/photo.jpg"
+    },
+    "footer": {
+      "page_position": "599 / 712",
+      "rt_id": "RT36203"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "945 INNISFIL BEACH RD",
+    "postcode": "L9S 1V3",
+    "municipality": "Innisfil",
+    "region": "Simcoe County",
+    "date": "06/15/2004",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.1",
+    "consid": "2700000",
+    "cash": "2700000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "43 16 010 024 14600"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "945 INNISFIL BEACH RD"
+    ],
+    "city_region": "Innisfil : Simcoe County",
+    "date_text": "15 Jun 2004",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Laurentian Bank of Canada"
+    ],
+    "buyer_lines": [
+      "1124063 Ontario Inc, Trustee"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

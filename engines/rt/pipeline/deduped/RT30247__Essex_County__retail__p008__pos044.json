@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT30247",
+  "source_folder": "Essex_County/retail/p008",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30247",
+      "source_folder": "Essex_County/retail/p008",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p008/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "250 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "23 May 2003",
+      "price_text": "$995,915",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Richter & Partners Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gus Tertigas",
+        "200 King St W",
+        "Ste 1900, PO Box 48",
+        "Toronto, Ontario",
+        "M5H 3T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1560710 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mike Nara",
+        "250 Tecumseh Rd E",
+        "Windsor, Ontario",
+        "N8X 2R3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 85",
+      "Plan 96, Part Park Lot 15, E/S Windsor Ave",
+      "As in Inst No R-1125776",
+      "",
+      "2.15 acre"
+    ],
+    "arn_text": "37 39 030 480 12400",
+    "consideration_lines": [
+      "cash: $995,915     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT302/RT30247/photo.jpg"
+    },
+    "footer": {
+      "page_position": "395 / 460",
+      "rt_id": "RT30247"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "250 TECUMSEH RD E",
+    "postcode": "N8X 2R3",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "05/23/2003",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "2.15",
+    "consid": "995915",
+    "cash": "995915",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 030 480 12400"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "250 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "23 May 2003",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Richter & Partners Inc"
+    ],
+    "buyer_lines": [
+      "1560710 Ontario Ltd"
+    ],
+    "price_text": "$995,915"
+  }
+}

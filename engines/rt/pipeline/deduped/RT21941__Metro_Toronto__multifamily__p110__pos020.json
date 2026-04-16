@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT21941",
+  "source_folder": "Metro_Toronto/multifamily/p110",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21941",
+      "source_folder": "Metro_Toronto/multifamily/p110",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p110/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "350 PALMERSTON BLVD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Jul 2001",
+      "price_text": "$826,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Susan J. Richardson",
+        "Stephen G. McLaughlin     613-476-8803"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Robins Appleby Taub",
+        "130 Adelaide St W, Ste 2500",
+        "Toronto, Ontario",
+        "M5H 2M2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Donald Scott",
+        "Michael Brady     416-927-0497"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "350 Palmerston Blvd",
+        "Toronto, Ontario",
+        "M6G 2N6"
+      ]
+    },
+    "description_lines": [
+      "TriPlex - 3 storey; 3 units @ $275,333"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 574",
+      "Block C, Part Lot 255",
+      "As in Inst No CA-613394",
+      "",
+      "W side 200m N of College St"
+    ],
+    "arn_text": "19 04 044 010 06700",
+    "consideration_lines": [
+      "cash: $826,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT219/RT21941/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5471 / 6031",
+      "rt_id": "RT21941"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "350 PALMERSTON BLVD",
+    "postcode": "M6G 2N6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/03/2001",
+    "desc": "TriPlex - 3 storey; 3 units @ $275,333",
+    "bldg": "3 units",
+    "acreage": "",
+    "consid": "826000",
+    "cash": "826000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 044 010 06700"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "350 PALMERSTON BLVD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Jul 2001",
+    "note": "",
+    "description": "TriPlex - 3 storey; 3 units @ $275,333",
+    "seller_lines": [
+      "Susan J. Richardson",
+      "Stephen G. McLaughlin"
+    ],
+    "buyer_lines": [
+      "Donald Scott",
+      "Michael Brady"
+    ],
+    "price_text": "$826,000"
+  }
+}

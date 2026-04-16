@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20085",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20085",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "119 CLOSE AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "09 Jan 2001",
+      "price_text": "$545,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1066470 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Harvey Tenenbaum",
+        "124 Fourth Ave NW",
+        "Chesley, Ontario",
+        "N0G 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "West End Creche Child & Family Clinic"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anthony Diniz",
+        "197 Euclid Ave",
+        "Toronto, Ontario",
+        "M6J 2J8"
+      ]
+    },
+    "description_lines": [
+      "Duplex - Victorian 3 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 427 Part Lots 61 & 62",
+      "As in Inst No CA-692083",
+      "",
+      "E side 15m S of King St W"
+    ],
+    "arn_text": "19 04 021 130 02400",
+    "consideration_lines": [
+      "cash: $545,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT200/RT20085/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5591 / 6031",
+      "rt_id": "RT20085"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "119 CLOSE AVE",
+    "postcode": "M6K 2V2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/09/2001",
+    "desc": "Duplex - Victorian 3 storey",
+    "bldg": "",
+    "acreage": "",
+    "consid": "545000",
+    "cash": "545000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 021 130 02400"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "119 CLOSE AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "09 Jan 2001",
+    "note": "",
+    "description": "Duplex - Victorian 3 storey",
+    "seller_lines": [
+      "1066470 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "West End Creche Child & Family Clinic"
+    ],
+    "price_text": "$545,000"
+  }
+}

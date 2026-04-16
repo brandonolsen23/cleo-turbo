@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT191155",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191155",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 DESJARDINS ST"
+      ],
+      "city_region": "W. Nipissing : Nipissing District",
+      "date_text": "24 Mar 2025",
+      "price_text": "$1,111,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Harivandan Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1657 Skyward Dr",
+        "Sudbury, Ontario",
+        "P3E 5K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hari Krishna Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hirva Thakkar",
+        "100 Desjardins St",
+        "Field, Ontario",
+        "P0H 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Field, Part Broken Lot 14",
+      "Plan 36R-14484, Part 1",
+      "As in inst No LT-33613 & NP-6810",
+      "Except:",
+      "Inst Nos LT-45031 & LT-77294",
+      "",
+      "PIN: 49072-0875",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $111,000     assumed/vtb debt: $1,000,000",
+      "",
+      "chargee: Harivandran Enterprises Inc",
+      "principal: $1,000,000   rate: 7.0% per annum.",
+      "registered: 03/24/2025   due: 03/21/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 46",
+      "rt_id": "RT191155"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "100 DESJARDINS ST",
+    "postcode": "P0H 1M0",
+    "municipality": "W. Nipissing",
+    "region": "Nipissing District",
+    "date": "03/24/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".52",
+    "consid": "1111000",
+    "cash": "111000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "49072-0875",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "100 DESJARDINS ST"
+    ],
+    "city_region": "W. Nipissing : Nipissing District",
+    "date_text": "24 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Harivandan Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "Hari Krishna Ontario Inc"
+    ],
+    "price_text": "$1,111,000"
+  }
+}

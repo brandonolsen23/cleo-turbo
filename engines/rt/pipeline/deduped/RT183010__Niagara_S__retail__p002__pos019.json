@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT183010",
+  "source_folder": "Niagara_S/retail/p002",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183010",
+      "source_folder": "Niagara_S/retail/p002",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p002/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "275 GORHAM RD"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "07 Feb 2024",
+      "price_text": "$1,985,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2489876 Ontario Inc     416-446-1200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Jack Frymer Professional Corp",
+        "5255 Yonge St, Ste 1300",
+        "Toronto, Ontario",
+        "M2N 6P4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000686993 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kuhen Neshan",
+        "506 Albert Boyd Pvt",
+        "Carp, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Lake Erie Bertie",
+      "Part Lot 25",
+      "As in Inst No RO-267658",
+      "",
+      "PIN: 64176-0212",
+      "",
+      "0.98 acre"
+    ],
+    "arn_text": "27 03 020 015 23500",
+    "consideration_lines": [
+      "cash: $100,000     assumed/vtb debt: $1,885,000",
+      "",
+      "chargee: 2489876 Ontario Inc",
+      "principal: $1,885,000   rate: 4.0% per annum.",
+      "registered: 02/07/2024   due: 02/06/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183010/0329_142212.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183010/0329_142221.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183010/0329_142258.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183010/0329_142300.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "70 / 324",
+      "rt_id": "RT183010"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "275 GORHAM RD",
+    "postcode": "L0S 1N0",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "02/07/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".98",
+    "consid": "1985000",
+    "cash": "100000",
+    "debt": "1885000",
+    "note": "",
+    "pin": "64176-0212",
+    "rollno": "27 03 020 015 23500"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "275 GORHAM RD"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "07 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2489876 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000686993 Ontario Inc"
+    ],
+    "price_text": "$1,985,000"
+  }
+}

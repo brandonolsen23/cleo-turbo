@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT39730",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39730",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "73 - 79 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "13 Jan 2005",
+      "price_text": "$842,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "M & S Property Investments Ltd     416-747-9153"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Darshan Singh",
+        "39 Larchwood Rd",
+        "Toronto, Ontario",
+        "M3N 1B5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 374, Lots 67 & 68",
+      "Except Plan 58R-5420, Part 1",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "30 12 020 004 05600",
+    "consideration_lines": [
+      "cash: $842,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT397/RT39730/photo.jpg"
+    },
+    "footer": {
+      "page_position": "607 / 752",
+      "rt_id": "RT39730"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "73 - 79 VICTORIA ST N",
+    "postcode": "N2H 5C1",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "01/13/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "842000",
+    "cash": "842000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 020 004 05600"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "73 - 79 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "13 Jan 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "M & S Property Investments Ltd"
+    ],
+    "price_text": "$842,000"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT28893",
+  "source_folder": "York_Region/retail/p017",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28893",
+      "source_folder": "York_Region/retail/p017",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "8159 YONGE ST"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "06 Feb 2003",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "SSW Kong Enterprise Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Songwook Kong",
+        "29 Northern Heights Dr, Ste PH-08",
+        "Richmond Hill, Ontario",
+        "L4B 4L8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-3579, Parts 3-5",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "19 36 010 031 32800",
+    "consideration_lines": [
+      "cash: $730,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "824 / 984",
+      "rt_id": "RT28893"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "8159 YONGE ST",
+    "postcode": "L3T 2C6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "02/06/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "730000",
+    "cash": "730000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 010 031 32800"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "8159 YONGE ST"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "06 Feb 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "SSW Kong Enterprise Ltd"
+    ],
+    "price_text": "$730,000"
+  }
+}

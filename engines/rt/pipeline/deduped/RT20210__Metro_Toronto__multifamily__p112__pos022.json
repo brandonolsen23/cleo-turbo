@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT20210",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20210",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "166 QUEENS DR"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "26 Jan 2001",
+      "price_text": "$690,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Marike Koens"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "260 West Acres Dr",
+        "Guelph, Ontario",
+        "N1H 7P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Interrent Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: George Newman",
+        "46 Beaufort Hills Rd",
+        "Richmond Hill, Ontario",
+        "L4E 2N1"
+      ]
+    },
+    "description_lines": [
+      "MultiPlex - 2.5 storey; 11 units @ $62,727"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 182, Lot 128 & Part Lot 129, N/S Queens Dr",
+      "As in Deed No 681808-York",
+      "",
+      "NW corner at Pine St",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "19 14 063 240 02900",
+    "consideration_lines": [
+      "cash: $690,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT202/RT20210/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5573 / 6031",
+      "rt_id": "RT20210"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "166 QUEENS DR",
+    "postcode": "M9N 2H6",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "01/26/2001",
+    "desc": "MultiPlex - 2.5 storey; 11 units @ $62,727",
+    "bldg": "11 units",
+    "acreage": ".17",
+    "consid": "690000",
+    "cash": "690000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 063 240 02900"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "166 QUEENS DR"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "26 Jan 2001",
+    "note": "",
+    "description": "MultiPlex - 2.5 storey; 11 units @ $62,727",
+    "seller_lines": [
+      "Marike Koens"
+    ],
+    "buyer_lines": [
+      "Interrent Properties Inc"
+    ],
+    "price_text": "$690,000"
+  }
+}

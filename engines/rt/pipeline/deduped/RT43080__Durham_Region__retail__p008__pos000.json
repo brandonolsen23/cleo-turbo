@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT43080",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43080",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1899 BROCK RD S"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "11 Jul 2005",
+      "price_text": "$63,254,934",
+      "note": "60% Interest, Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "First Simcha Shopping Centres Ltd     905-821-2111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Joseph Amato",
+        "Wal-Mart Canada Inc",
+        "1940 Argentia Rd",
+        "Mississauga, Ontario",
+        "L5N 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Calloway REIT (Pickering) Inc     403-266-6442"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Calnan",
+        "855 Eighth Ave SW, Ste 310",
+        "Calgary, Alberta",
+        "T2P 3P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT4/RT430/RT43080/mi.pdf",
+    "site_lines": [
+      "Conc 1, Part Lot 18",
+      "Plan 40R-12591, Part 1",
+      "Plan 40R-19801, Parts 3-8",
+      "Except:",
+      "Plan 40R-15636, Parts 4, 8 & 10",
+      "Plan 40R-19801, Parts 1 & 11",
+      "",
+      "48.35 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $63,254,934     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT430/RT43080/photo.jpg"
+    },
+    "footer": {
+      "page_position": "351 / 506",
+      "rt_id": "RT43080"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1899 BROCK RD S",
+    "postcode": "L1V 4H7",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "07/11/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "48.35",
+    "consid": "63254934",
+    "cash": "63254934",
+    "debt": "",
+    "note": "60% Interest, Portfolio",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1899 BROCK RD S"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "11 Jul 2005",
+    "note": "60% Interest, Portfolio",
+    "description": "",
+    "seller_lines": [
+      "First Simcha Shopping Centres Ltd"
+    ],
+    "buyer_lines": [
+      "Calloway REIT (Pickering) Inc"
+    ],
+    "price_text": "$63,254,934"
+  }
+}

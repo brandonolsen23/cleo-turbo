@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT69457",
+  "source_folder": "Lambton/retail/p002",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69457",
+      "source_folder": "Lambton/retail/p002",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p002/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 - 10 MAIN ST S"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "27 Nov 2009",
+      "price_text": "$2,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2183811 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gordon Green",
+        "200 Nelson St, Ste 280",
+        "Vancouver, BC",
+        "V6B 2E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1777748 Ontario Ltd     519-845-0487"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Sipkens",
+        "5206 Confederation Line",
+        "Wyoming, Ontario",
+        "N0N 1T0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 10 tenants 22,000 sf @ $111",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 14, Part Lot 30",
+      "Plan 25R-6086",
+      "Parts 30-33, 36 & 37",
+      "",
+      "PIN: 43076-0112",
+      "",
+      "1.50 acre"
+    ],
+    "arn_text": "3845 380 030 34100",
+    "consideration_lines": [
+      "cash: $1,363,033     assumed/vtb debt: $1,086,967",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $1,137,500   rate: 5.502% per annum",
+      "registered: 09/30/2008   due: 10/01/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT694/RT69457/0501_102913.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT694/RT69457/air1.jpg",
+        "/assets/files/RT6/RT694/RT69457/air2.jpg",
+        "/assets/files/RT6/RT694/RT69457/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "82 / 106",
+      "rt_id": "RT69457"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "2 - 10 MAIN ST S",
+    "postcode": "",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "11/27/2009",
+    "desc": "Retail Plaza - 1 storey; 10 tenants 22,000 sf @ $111",
+    "bldg": "22,000 sf",
+    "acreage": "1.5",
+    "consid": "2450000",
+    "cash": "1363033",
+    "debt": "1086967",
+    "note": "",
+    "pin": "43076-0112",
+    "rollno": "3845 380 030 34100"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "2 - 10 MAIN ST S"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "27 Nov 2009",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 10 tenants 22,000 sf @ $111",
+    "seller_lines": [
+      "2183811 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1777748 Ontario Ltd"
+    ],
+    "price_text": "$2,450,000"
+  }
+}

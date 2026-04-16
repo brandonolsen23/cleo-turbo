@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT21620",
+  "source_folder": "Durham_Region/multifamily/p009",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21620",
+      "source_folder": "Durham_Region/multifamily/p009",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/multifamily/p009/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "110 EUCLID ST"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "06 Jun 2001",
+      "price_text": "$1,075,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hafka Investments Ltd     905-884-9257"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Karremans",
+        "Patrick Hengen Atty",
+        "10330 Yonge St",
+        "Richmond Hill, Ontario",
+        "L4C 5N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "110 Euclid St Ltd     905-883-1567"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Vince Scarpino",
+        "2 Sabrina Ct",
+        "Richmond Hill, Ontario",
+        "L4C 5P8"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 17 units @ $63,235"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-6353, Part 1",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "18 09 020 006 00500",
+    "consideration_lines": [
+      "cash: $1,075,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT216/RT21620/photo.jpg"
+    },
+    "footer": {
+      "page_position": "443 / 481",
+      "rt_id": "RT21620"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "110 EUCLID ST",
+    "postcode": "L1N 5B1",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "06/06/2001",
+    "desc": "Apartment Bldg - 3 storey; 17 units @ $63,235",
+    "bldg": "17 units",
+    "acreage": ".66",
+    "consid": "1075000",
+    "cash": "1075000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 09 020 006 00500"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "110 EUCLID ST"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "06 Jun 2001",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 17 units @ $63,235",
+    "seller_lines": [
+      "Hafka Investments Ltd"
+    ],
+    "buyer_lines": [
+      "110 Euclid St Ltd"
+    ],
+    "price_text": "$1,075,000"
+  }
+}

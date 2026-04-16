@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT39758",
+  "source_folder": "York_Region/retail/p016",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39758",
+      "source_folder": "York_Region/retail/p016",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "11575 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 Dec 2004",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1475111 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Salim Bandali",
+        "1500 Don Mills Rd, Ste 705",
+        "Toronto, Ontario",
+        "M3B 3K4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 56",
+      "As in Inst No MA-51380",
+      "Except:",
+      "Exprop Plan MA-67259, Part 2",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "19 38 050 034 93500",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT397/RT39758/photo.jpg"
+    },
+    "footer": {
+      "page_position": "757 / 984",
+      "rt_id": "RT39758"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "11575 YONGE ST",
+    "postcode": "L4E 3N8",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "12/30/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 050 034 93500"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "11575 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 Dec 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1475111 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$525,000"
+  }
+}

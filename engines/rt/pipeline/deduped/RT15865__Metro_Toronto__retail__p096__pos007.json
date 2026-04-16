@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT15865",
+  "source_folder": "Metro_Toronto/retail/p096",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15865",
+      "source_folder": "Metro_Toronto/retail/p096",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p096/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "1244 LAWRENCE AVE E"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "15 Nov 1999",
+      "price_text": "$1,890,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Curlaw Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Len Greenberg",
+        "201 Consumers Rd, Ste 103",
+        "Toronto, Ontario",
+        "M2J 4G8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "F. C. Topos Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank Topos",
+        "18 Norcap Ave",
+        "Toronto, Ontario",
+        "M1T 3B2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 3 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-1977, Part 1"
+    ],
+    "arn_text": "19 08 122 020 00380",
+    "consideration_lines": [
+      "cash: $1,890,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Zap Holdings Ltd",
+      "principal: $1,750,000   rate: 0% per annum.",
+      "registered: 02/23/2021   due: 02/23/2023",
+      "",
+      "chargee: 1947968 Ontario Ltd",
+      "principal: $1,347,500   rate: 6.99% per annum.",
+      "registered: 02/26/2021   due: 03/01/2022",
+      "",
+      "chargee: RBC Life Insurance Company",
+      "principal: $900,000   rate: 18.0% per annum.",
+      "registered: 02/23/2021   due: 03/01/2031",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,750,000   rate: Prime plus 6.0% per annum.",
+      "registered: 02/26/2021   due: on demand",
+      "",
+      "chargee: H. Owen Investments Inc",
+      "principal: $1,100,000   rate: 8.0% per annum.",
+      "registered: 02/23/2021   due: 03/01/2022",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,360,000   rate: 1.49% per annum.",
+      "registered: 02/25/2021   due: 02/25/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT158/RT15865/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4758 / 4952",
+      "rt_id": "RT15865"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "1244 LAWRENCE AVE E",
+    "postcode": "",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "11/15/1999",
+    "desc": "Retail Bldg - 3 units",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1890000",
+    "cash": "1890000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 122 020 00380"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "1244 LAWRENCE AVE E"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "15 Nov 1999",
+    "note": "",
+    "description": "Retail Bldg - 3 units",
+    "seller_lines": [
+      "Curlaw Corp"
+    ],
+    "buyer_lines": [
+      "F. C. Topos Holdings Ltd"
+    ],
+    "price_text": "$1,890,000"
+  }
+}

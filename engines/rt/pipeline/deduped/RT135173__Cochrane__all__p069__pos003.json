@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT135173",
+  "source_folder": "Cochrane/all/p069",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT135173",
+      "source_folder": "Cochrane/all/p069",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p069/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 CARLETON AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "18 Jun 2018",
+      "price_text": "$736,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "9853430 Canada Inc     613-667-9937"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Issa Hamzo",
+        "324 Donald St",
+        "Ottawa, Ontario",
+        "K1K 1M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 219, Part Lot 8",
+      "E/S Carleton Ave",
+      "As in Inst No NS-138511",
+      "",
+      "PIN: 04032-0051",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 073 601 43900",
+    "consideration_lines": [
+      "cash: $736,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Populaire Trillium Inc",
+      "principal: $515,200   rate: Prime plus 10.0% per annum.",
+      "registered: 06/18/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3404 / 10920",
+      "rt_id": "RT135173"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "123 CARLETON AVE",
+    "postcode": "K1Y 0J2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/18/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "736000",
+    "cash": "736000",
+    "debt": "",
+    "note": "",
+    "pin": "04032-0051",
+    "rollno": "06 14 073 601 43900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "123 CARLETON AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "18 Jun 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "9853430 Canada Inc"
+    ],
+    "price_text": "$736,000"
+  }
+}

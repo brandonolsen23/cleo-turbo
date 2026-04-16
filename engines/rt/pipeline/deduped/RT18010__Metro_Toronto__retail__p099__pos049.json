@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT18010",
+  "source_folder": "Metro_Toronto/retail/p099",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT18010",
+      "source_folder": "Metro_Toronto/retail/p099",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p099/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "215 LAIRD DR"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "26 Apr 1996",
+      "price_text": "$6,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Schlumberger Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John M. Langs",
+        "4005 Rue Bellefeuille",
+        "Trois Rivieres, Quebec",
+        "G9A 5J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Invar Equities Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank Spain",
+        "220 Duncan Mill Rd, Ste 301",
+        "North York, Ontario",
+        "M3B 3J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3001, Block X"
+    ],
+    "arn_text": "19 06 043 070 00100",
+    "consideration_lines": [
+      "cash: $6,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $11,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/31/2023   due: on demand",
+      "",
+      "chargee: Mowbray, Wright Regional Developments Inc",
+      "principal: $1,400,000   rate: 6.5% per annum.",
+      "registered: 08/31/2023   due: 06/30/2024",
+      "",
+      "chargee: KingSett Mortgage Corp",
+      "principal: $112,500,000   rate: Until 10/1/2024, RBC prime plus 3.25%, with a floor of 10.45% per annum. Thereafter, 16.45% per annum.",
+      "registered: 09/01/2023   due: 11/01/2024",
+      "",
+      "chargee: 1000324324 Ontario Inc",
+      "principal: $1,837,500   rate: 8.0% per annum.",
+      "registered: 08/28/2023   due: 09/01/2024",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $6,000,000   rate: 25.0% per annum.",
+      "registered: 09/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4950 / 4952",
+      "rt_id": "RT18010"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "215 LAIRD DR",
+    "postcode": "M4G 3X1",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "04/26/1996",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "6000000",
+    "cash": "6000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 043 070 00100"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "215 LAIRD DR"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "26 Apr 1996",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Schlumberger Canada Ltd"
+    ],
+    "buyer_lines": [
+      "Invar Equities Ltd"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

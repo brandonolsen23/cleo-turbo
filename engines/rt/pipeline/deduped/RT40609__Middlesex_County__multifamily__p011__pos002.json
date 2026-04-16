@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT40609",
+  "source_folder": "Middlesex_County/multifamily/p011",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40609",
+      "source_folder": "Middlesex_County/multifamily/p011",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/multifamily/p011/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "91 HIGH ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "04 Mar 2005",
+      "price_text": "$902,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Forward Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Allan Richman",
+        "396 Queens Ave, Unit 109",
+        "London, Ontario",
+        "N6B 1X7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Interrent International Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Newman",
+        "130 King St W, Ste 1800",
+        "The Exchange Tower, Box 427",
+        "Toronto, Ontario",
+        "M5X 1E3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 23-1bdrm @ $39,239"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-14457, Part 1",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "39 36 060 250 01900",
+    "consideration_lines": [
+      "cash: $902,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Forward Properties Ltd",
+      "principal: $50,000   rate: 0% until 9/4/2005, then 18.0% per annum.",
+      "registered: 03/04/2005   due: 09/04/2005"
+    ],
+    "broker_lines": [
+      "Property Manager: 519-679-8700"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "503 / 663",
+      "rt_id": "RT40609"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "91 HIGH ST",
+    "postcode": "N6C 4J8",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/04/2005",
+    "desc": "Apartment Bldg - 3 storey; 23-1bdrm @ $39,239",
+    "bldg": "23 units",
+    "acreage": ".48",
+    "consid": "902500",
+    "cash": "902500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 250 01900"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "91 HIGH ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "04 Mar 2005",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 23-1bdrm @ $39,239",
+    "seller_lines": [
+      "Forward Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Interrent International Properties Inc"
+    ],
+    "price_text": "$902,500"
+  }
+}

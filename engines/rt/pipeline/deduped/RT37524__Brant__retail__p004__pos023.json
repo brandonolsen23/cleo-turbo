@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT37524",
+  "source_folder": "Brant/retail/p004",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37524",
+      "source_folder": "Brant/retail/p004",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "158 COLBORNE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "01 Sep 2004",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1238594 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Riny Kooymans",
+        "60 St Andrews Dr",
+        "Brantford, Ontario",
+        "N3T 6H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "City of Brantford Plan (Sept 7, 1892)",
+      "Part Lots 17 & 18, N/S Colborne St",
+      "As in Inst Nos:",
+      "A-165726, A-82885 & A-82887",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "29 06 030 001 01500",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT375/RT37524/photo.jpg"
+    },
+    "footer": {
+      "page_position": "174 / 195",
+      "rt_id": "RT37524"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "158 COLBORNE ST",
+    "postcode": "N3T 2G6",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "09/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 001 01500"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "158 COLBORNE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "01 Sep 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1238594 Ontario Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

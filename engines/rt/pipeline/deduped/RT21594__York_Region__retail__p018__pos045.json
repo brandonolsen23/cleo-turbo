@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT21594",
+  "source_folder": "York_Region/retail/p018",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21594",
+      "source_folder": "York_Region/retail/p018",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "161 DAVIS DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "31 May 2001",
+      "price_text": "$825,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Security Life Insurance Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gregory Dwyer",
+        "777 Bay St, Ste 2100",
+        "Toronto, Ontario",
+        "M5G 2N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "BG Newmarket Inc     905-850-7192"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bruno Schickedanz",
+        "Venture Financial Ltd",
+        "7 Director Ct, Ste 104",
+        "Woodbridge, Ontario",
+        "L4L 4S5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 11,164 sf @ $74"
+    ],
+    "more_info_url": "/assets/files/RT2/RT215/RT21594/mi.pdf",
+    "site_lines": [
+      "Plan 65R-14304, Parts 1 & 4",
+      "",
+      "N side at Parkside Dr",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "19 48 340 170 07500",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "CB Richard Ellis: Terry Di Felice & Matt Smith, 416-494-0600"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT215/RT21594/photo.jpg"
+    },
+    "footer": {
+      "page_position": "896 / 984",
+      "rt_id": "RT21594"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "161 DAVIS DR",
+    "postcode": "L3Y 2N3",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "05/31/2001",
+    "desc": "Retail Plaza - 1 storey; 11,164 sf @ $74",
+    "bldg": "11,164 sf",
+    "acreage": ".52",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 48 340 170 07500"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "161 DAVIS DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "31 May 2001",
+    "note": "Power of Sale",
+    "description": "Retail Plaza - 1 storey; 11,164 sf @ $74",
+    "seller_lines": [
+      "Security Life Insurance Co Ltd"
+    ],
+    "buyer_lines": [
+      "BG Newmarket Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

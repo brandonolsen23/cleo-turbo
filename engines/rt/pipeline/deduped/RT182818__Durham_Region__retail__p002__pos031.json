@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT182818",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182818",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "54 MAIN ST S"
+      ],
+      "city_region": "Uxbridge : Durham Region",
+      "date_text": "12 Jan 2024",
+      "price_text": "$870,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "957344 Onario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1510 Fairburn St",
+        "Sudbury, Ontario",
+        "P3A 1N7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cartwright Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Mann",
+        "11 Drumsnab Rd",
+        "Toronto, Ontario",
+        "M4W 3A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 83, Block OOO,",
+      "Part Lot 4",
+      "As in Inst No D-409661",
+      "",
+      "PIN: 26844-0170",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "18 29 040 004 31600",
+    "consideration_lines": [
+      "cash: $870,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182818/0217_110259.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182818/0217_110302.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182818/0217_110319.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1828/RT182818/0217_110320.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "82 / 506",
+      "rt_id": "RT182818"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "54 MAIN ST S",
+    "postcode": "L9P 1J2",
+    "municipality": "Uxbridge",
+    "region": "Durham Region",
+    "date": "01/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "870000",
+    "cash": "870000",
+    "debt": "",
+    "note": "",
+    "pin": "26844-0170",
+    "rollno": "18 29 040 004 31600"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "54 MAIN ST S"
+    ],
+    "city_region": "Uxbridge : Durham Region",
+    "date_text": "12 Jan 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "957344 Onario Inc"
+    ],
+    "buyer_lines": [
+      "Cartwright Management Ltd"
+    ],
+    "price_text": "$870,000"
+  }
+}

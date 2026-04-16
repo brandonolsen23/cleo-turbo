@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT72831",
+  "source_folder": "York_Region/retail/p011",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72831",
+      "source_folder": "York_Region/retail/p011",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p011/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "2352 MIDDLEFIELD RD",
+        "UNITS 101-105"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "14 Jun 2010",
+      "price_text": "$1,290,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Featherstone Homes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anisa Ladha",
+        "7725 Birchmount Rd, Unit 40",
+        "Markham, Ontario",
+        "L3R 9X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2243169 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Davander Khurana",
+        "3300 McNicoll Ave, Ste 5A",
+        "Toronto, Ontario",
+        "M1V 5J6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1056",
+      "Level 1, Units 1-5",
+      "",
+      "PIN: 29587-0001 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,290,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $836,885   rate: Prime plus 6.5% per annum",
+      "registered: 06/14/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72831/0701_163725.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72831/0701_163811.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72831/0701_163927.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72831/0701_164103.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "548 / 984",
+      "rt_id": "RT72831"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "2352 MIDDLEFIELD RD, UNITS 101-105",
+    "postcode": "L3S 4T6",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/14/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1290000",
+    "cash": "1290000",
+    "debt": "",
+    "note": "",
+    "pin": "29587-0001+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "2352 MIDDLEFIELD RD",
+      "UNITS 101-105"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "14 Jun 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Featherstone Homes Ltd"
+    ],
+    "buyer_lines": [
+      "2243169 Ontario Inc"
+    ],
+    "price_text": "$1,290,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT194352",
+  "source_folder": "Lambton/restaurant-bar/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194352",
+      "source_folder": "Lambton/restaurant-bar/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/restaurant-bar/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "3259 NAUVOO RD"
+      ],
+      "city_region": "Brooke : Lambton",
+      "date_text": "11 Sep 2025",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Royal Canadian Legion Branch 249"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John McDonald",
+        "3237 River St",
+        "PO Box 223",
+        "Alvinston, Ontario",
+        "N0N 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 18",
+      "Plan 25R-11567, Parts 2-5",
+      "",
+      "PIN: 43453-0310",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "38 15 140 002 03100",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $250,000",
+      "",
+      "Named Individual(s)",
+      "principal: $500,000   rate: 6.0% per annum.",
+      "registered: 09/11/2025   due: 09/11/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 16",
+      "rt_id": "RT194352"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "3259 NAUVOO RD",
+    "postcode": "N0N 1A0",
+    "municipality": "Brooke",
+    "region": "Lambton",
+    "date": "09/11/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "850000",
+    "cash": "600000",
+    "debt": "250000",
+    "note": "",
+    "pin": "43453-0310",
+    "rollno": "38 15 140 002 03100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "3259 NAUVOO RD"
+    ],
+    "city_region": "Brooke : Lambton",
+    "date_text": "11 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Royal Canadian Legion Branch 249"
+    ],
+    "price_text": "$850,000"
+  }
+}

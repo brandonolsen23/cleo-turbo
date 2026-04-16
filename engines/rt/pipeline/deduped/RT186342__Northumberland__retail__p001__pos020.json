@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT186342",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT186342",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "68 FRONT ST N"
+      ],
+      "city_region": "Campbellford : Northumberland",
+      "date_text": "08 Jul 2024",
+      "price_text": "$1,725,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "161 Elgin St",
+        "Ottawa, Ontario",
+        "K2P 2K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "15949122 Canada Inc     289-337-6689"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raman Arora",
+        "1317 Bonnie Ct",
+        "Burlington, Ontario",
+        "L7R 5A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 112, Water Block",
+      "Part Lots 15 & 16",
+      "As in Inst No CL-104952",
+      "",
+      "PIN: 51194-0172",
+      "",
+      "0.41 acre"
+    ],
+    "arn_text": "14 35 100 010 01700",
+    "consideration_lines": [
+      "cash: $1,725,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,177,250   rate: Prime plus 5.0% per annum.",
+      "registered: 07/08/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1863/RT186342/1012_160427.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1863/RT186342/1012_160433.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1863/RT186342/1012_160458.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1863/RT186342/1012_160506.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 93",
+      "rt_id": "RT186342"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "68 FRONT ST N",
+    "postcode": "K0L 1L0",
+    "municipality": "Campbellford",
+    "region": "Northumberland",
+    "date": "07/08/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".41",
+    "consid": "1725000",
+    "cash": "1725000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "51194-0172",
+    "rollno": "14 35 100 010 01700"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "68 FRONT ST N"
+    ],
+    "city_region": "Campbellford : Northumberland",
+    "date_text": "08 Jul 2024",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "15949122 Canada Inc"
+    ],
+    "price_text": "$1,725,000"
+  }
+}

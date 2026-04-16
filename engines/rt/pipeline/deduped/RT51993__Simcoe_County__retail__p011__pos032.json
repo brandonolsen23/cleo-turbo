@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT51993",
+  "source_folder": "Simcoe_County/retail/p011",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51993",
+      "source_folder": "Simcoe_County/retail/p011",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p011/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "2080 JANS BLVD"
+      ],
+      "city_region": "Innisfil : Simcoe County",
+      "date_text": "10 Nov 2006",
+      "price_text": "$7,434,787",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "1445639 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "Goldman Management",
+        "75 The Donway W, Ste 1002",
+        "Toronto, Ontario",
+        "M3C 2E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Innisfil Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Froom",
+        "H & R Developments",
+        "3625 Dufferin St, Ste 500",
+        "Downsview, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 23",
+      "Plan 51R-30802, Parts 10 & 11",
+      "",
+      "3.94 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,874,445     assumed/vtb debt: $3,560,342",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $5,065,000   rate: 5.16% per annum",
+      "registered: 11/10/2006   due: 12/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51993/0106_095225.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT519/RT51993/0106_095227.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "533 / 712",
+      "rt_id": "RT51993"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "2080 JANS BLVD",
+    "postcode": "L9S 4Y8",
+    "municipality": "Innisfil",
+    "region": "Simcoe County",
+    "date": "11/10/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.94",
+    "consid": "7434787",
+    "cash": "3874445",
+    "debt": "3560342",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "2080 JANS BLVD"
+    ],
+    "city_region": "Innisfil : Simcoe County",
+    "date_text": "10 Nov 2006",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "1445639 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Innisfil Portfolio Inc"
+    ],
+    "price_text": "$7,434,787"
+  }
+}

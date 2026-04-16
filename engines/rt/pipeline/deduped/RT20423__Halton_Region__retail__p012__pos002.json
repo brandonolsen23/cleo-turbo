@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT20423",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20423",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "561 WEDGEWOOD DR"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "14 Feb 2001",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ivan & Ann Bradaric     905-664-6739"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o IBA Ind Training Centre",
+        "400 Green Rd",
+        "Stoney Creek, Ontario",
+        "L8E 2B4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1026046 Ontario Ltd     905-275-0025"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yasmin Virani",
+        "571 Silvercreek Blvd",
+        "Mississauga, Ontario",
+        "L5A 2B6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; known as Pinedale Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-216, Parts 1-12",
+      "",
+      "SE corner at Pinedale",
+      "",
+      "1.19 acre"
+    ],
+    "arn_text": "24 02 090 918 07300",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT204/RT20423/photo.jpg"
+    },
+    "footer": {
+      "page_position": "553 / 613",
+      "rt_id": "RT20423"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "561 WEDGEWOOD DR",
+    "postcode": "L7L 4J1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "02/14/2001",
+    "desc": "Retail Plaza - 1 storey; known as Pinedale Plaza",
+    "bldg": "",
+    "acreage": "1.19",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 090 918 07300"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "561 WEDGEWOOD DR"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "14 Feb 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; known as Pinedale Plaza",
+    "seller_lines": [
+      "Ivan & Ann Bradaric"
+    ],
+    "buyer_lines": [
+      "1026046 Ontario Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

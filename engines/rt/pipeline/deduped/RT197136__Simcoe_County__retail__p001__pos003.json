@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT197136",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197136",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "526 DOMINION BANK N/S"
+      ],
+      "city_region": "Midland : Simcoe County",
+      "date_text": "05 Feb 2026",
+      "price_text": "$762,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "FW Jeffery and Sons, Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Patricia Harriett Jeffrey",
+        "526 Dominion Ave",
+        "Midland, Ontario",
+        "L4R 1P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001194678 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kamalpreet Singh",
+        "1611 Green Gables Rd",
+        "London, Ontario",
+        "N6M 0A5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 306,",
+      "Lots 2 & 3, N/S Kent St",
+      "",
+      "PIN: 58465-0082",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "43 74 010 002 02900",
+    "consideration_lines": [
+      "cash: $762,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $581,250   rate: Prime plus 5.0% per annum.",
+      "registered: 02/05/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 712",
+      "rt_id": "RT197136"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "526 DOMINION BANK N/S",
+    "postcode": "L4R 1P8",
+    "municipality": "Midland",
+    "region": "Simcoe County",
+    "date": "02/05/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "762500",
+    "cash": "762500",
+    "debt": "",
+    "note": "",
+    "pin": "58465-0082",
+    "rollno": "43 74 010 002 02900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "526 DOMINION BANK N/S"
+    ],
+    "city_region": "Midland : Simcoe County",
+    "date_text": "05 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "FW Jeffery and Sons, Ltd"
+    ],
+    "buyer_lines": [
+      "1001194678 Ontario Inc"
+    ],
+    "price_text": "$762,500"
+  }
+}

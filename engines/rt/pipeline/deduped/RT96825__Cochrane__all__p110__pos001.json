@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT96825",
+  "source_folder": "Cochrane/all/p110",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT96825",
+      "source_folder": "Cochrane/all/p110",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p110/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "94 SHEARER CRES"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "10 Sep 2013",
+      "price_text": "$650,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "7014783 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hassan Gawad",
+        "94 Chearer Cres",
+        "Kanata, Ontario",
+        "K2L 3V6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-556, Lot 30",
+      "",
+      "PIN: 04496-0261",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "06 30 010 820 21960",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5452 / 10920",
+      "rt_id": "RT96825"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "94 SHEARER CRES",
+    "postcode": "K2L 3V6",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "09/10/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04496-0261",
+    "rollno": "06 30 010 820 21960"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "94 SHEARER CRES"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "10 Sep 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "7014783 Canada Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

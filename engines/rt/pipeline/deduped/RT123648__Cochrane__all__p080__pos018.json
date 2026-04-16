@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT123648",
+  "source_folder": "Cochrane/all/p080",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123648",
+      "source_folder": "Cochrane/all/p080",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p080/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1656 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Mar 2017",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "6007406 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hussein Matar",
+        "2952 Shadow Hill Cr",
+        "Ottawa, Ontario",
+        "K1T 3Y6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "10098884 Canada Inc     613-739-5917"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Fouad Barakat",
+        "2 Hunter's Glen Cres",
+        "Ottawa, Ontario",
+        "K1T 3P8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG, Part Lot 21",
+      "Plan 5R-407, Parts 3 & 4",
+      "",
+      "PIN: 04069-0341",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "06 14 116 301 58201",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Company",
+      "principal: $840,000   rate: 5.50% per annum.",
+      "registered: 03/01/2017   due: 03/01/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123648/0623_140521.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123648/0623_140606.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123648/0623_140627.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1236/RT123648/0623_140647.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3969 / 10920",
+      "rt_id": "RT123648"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1656 BANK ST",
+    "postcode": "K1V 7Y6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/01/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "04069-0341",
+    "rollno": "06 14 116 301 58201"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1656 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "6007406 Canada Inc"
+    ],
+    "buyer_lines": [
+      "10098884 Canada Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

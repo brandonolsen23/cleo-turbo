@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT187692",
+  "source_folder": "York_Region/retail/p003",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187692",
+      "source_folder": "York_Region/retail/p003",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 HIGHWAY 7 E",
+        "550 HWY 7 E",
+        "UNITS 80 - 82"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "02 Oct 2024",
+      "price_text": "$3,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1328789 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "550 Highway 7 E, Units 6-9",
+        "Richmond Hill, Ontario",
+        "L4B 3Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000368385 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yan Zhang",
+        "790 Exceller Cir",
+        "Newmarket, Ontario",
+        "L3X 1P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 863",
+      "Level 1, Units 68-70",
+      "",
+      "PIN: 29393-0068 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/02/2024   due: 10/04/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122105.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122108.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122116.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122118.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122240.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122251.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122316.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122321.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187692/1027_122332.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "136 / 984",
+      "rt_id": "RT187692"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "550 HIGHWAY 7 E, 550 HWY 7 E, UNITS 80 - 82",
+    "postcode": "L4B 3Z4",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "10/02/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3300000",
+    "cash": "3300000",
+    "debt": "",
+    "note": "",
+    "pin": "29393-0068+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "550 HIGHWAY 7 E",
+      "550 HWY 7 E",
+      "UNITS 80 - 82"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "02 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1328789 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000368385 Ontario Inc"
+    ],
+    "price_text": "$3,300,000"
+  }
+}

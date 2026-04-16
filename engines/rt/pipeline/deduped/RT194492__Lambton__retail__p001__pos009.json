@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT194492",
+  "source_folder": "Lambton/retail/p001",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194492",
+      "source_folder": "Lambton/retail/p001",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "3248 NAUVOO RD"
+      ],
+      "city_region": "Brooke : Lambton",
+      "date_text": "17 Sep 2025",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Three Maples Variety Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "9602 Mary St",
+        "Lambton Shores, Ontario",
+        "N0N 1J2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Alvinston Food Market Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ritaben Patel",
+        "2596 Oil Heritage Rd",
+        "Oil Springs, Ontario",
+        "N0N 1P0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 8A - Alvinston, Part Lot 32",
+      "As in Inst No L-583842",
+      "",
+      "PIN: 43361-0053",
+      "",
+      "0.99 acre"
+    ],
+    "arn_text": "38 15 140 002 06500",
+    "consideration_lines": [
+      "cash: $450,000     assumed/vtb debt: $850,000",
+      "",
+      "chargee: Three Maples Variety Inc",
+      "principal: $850,000   rate: 6.0% per annum.",
+      "registered: 09/17/2025   due: 09/16/2040"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10 / 106",
+      "rt_id": "RT194492"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "3248 NAUVOO RD",
+    "postcode": "N0N 1A0",
+    "municipality": "Brooke",
+    "region": "Lambton",
+    "date": "09/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".99",
+    "consid": "1300000",
+    "cash": "450000",
+    "debt": "850000",
+    "note": "",
+    "pin": "43361-0053",
+    "rollno": "38 15 140 002 06500"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "3248 NAUVOO RD"
+    ],
+    "city_region": "Brooke : Lambton",
+    "date_text": "17 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Three Maples Variety Inc"
+    ],
+    "buyer_lines": [
+      "Alvinston Food Market Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

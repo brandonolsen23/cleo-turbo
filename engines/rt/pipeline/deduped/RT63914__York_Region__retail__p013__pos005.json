@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT63914",
+  "source_folder": "York_Region/retail/p013",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT63914",
+      "source_folder": "York_Region/retail/p013",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "3601 HWY 7 E",
+        "SUITE 119"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "05 Sep 2008",
+      "price_text": "$523,444",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1602978 Ontario Inc     905-731-8687"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Fereydoon Darvish",
+        "Liberty Development Corp",
+        "505 Highway 7 E, Ste 303",
+        "Thornhill, Ontario",
+        "L3T 7T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2133912 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Xiu Luo",
+        "129 Canterfield Closed",
+        "Markham, Ontario",
+        "L3P 7W1"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 1,236 sf @ $423"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1122",
+      "Level 1, Unit 19",
+      "",
+      "PIN: 29653-0019"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $519,120     assumed/vtb debt: $0",
+      "other: $4,324"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63914/0914_131641.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63914/0914_131834.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT639/RT63914/0914_132001.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "606 / 984",
+      "rt_id": "RT63914"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "3601 HWY 7 E, SUITE 119",
+    "postcode": "L3R 0M3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "09/05/2008",
+    "desc": "Retail Condo - 1,236 sf @ $423",
+    "bldg": "1,236 sf",
+    "acreage": "",
+    "consid": "523444",
+    "cash": "519120",
+    "debt": "",
+    "note": "",
+    "pin": "29653-0019",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "3601 HWY 7 E",
+      "SUITE 119"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "05 Sep 2008",
+    "note": "",
+    "description": "Retail Condo - 1,236 sf @ $423",
+    "seller_lines": [
+      "1602978 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2133912 Ontario Inc"
+    ],
+    "price_text": "$523,444"
+  }
+}

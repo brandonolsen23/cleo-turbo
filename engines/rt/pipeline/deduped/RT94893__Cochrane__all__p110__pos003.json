@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT94893",
+  "source_folder": "Cochrane/all/p110",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT94893",
+      "source_folder": "Cochrane/all/p110",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p110/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 5 - RF",
+        "PART LOT 19"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "06 Sep 2013",
+      "price_text": "$15,048,726",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Urbandale Corp     613-731-6331"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terry Nichols",
+        "2193 Arch St",
+        "Ottawa, Ontario",
+        "K1C 2H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - RF, Part Lot 19",
+      "Plan 4R-27185, Parts 2-4",
+      "",
+      "PIN: 04345-0667"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $15,048,726     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5454 / 10920",
+      "rt_id": "RT94893"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "CONC 5 - RF, PART LOT 19",
+    "postcode": "",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "09/06/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "15048726",
+    "cash": "15048726",
+    "debt": "",
+    "note": "",
+    "pin": "04345-0667",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "CONC 5 - RF",
+      "PART LOT 19"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "06 Sep 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Urbandale Corp"
+    ],
+    "price_text": "$15,048,726"
+  }
+}

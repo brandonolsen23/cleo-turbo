@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT95925",
+  "source_folder": "Metro_Toronto/retail/p038",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95925",
+      "source_folder": "Metro_Toronto/retail/p038",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p038/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "737 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Oct 2013",
+      "price_text": "$752,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2388374 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: David Zoran",
+        "363 Cortleigh Blvd",
+        "Toronto, Ontario",
+        "M5N 1R4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1223, Part Lot 32",
+      "As in Inst No CA-685393",
+      "",
+      "PIN: 21269-0228",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 044 430 05000",
+    "consideration_lines": [
+      "cash: $752,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95925/1110_074640.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95925/1110_074702.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95925/1110_074713.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1889 / 4952",
+      "rt_id": "RT95925"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "737 BLOOR ST W",
+    "postcode": "M6G 1L6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/07/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "752000",
+    "cash": "752000",
+    "debt": "",
+    "note": "",
+    "pin": "21269-0228",
+    "rollno": "19 04 044 430 05000"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "737 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Oct 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2388374 Ontario Inc"
+    ],
+    "price_text": "$752,000"
+  }
+}

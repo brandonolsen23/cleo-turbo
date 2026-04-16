@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT123777",
+  "source_folder": "Victoria/all/p006",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123777",
+      "source_folder": "Victoria/all/p006",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/all/p006/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 JOHNSON ST"
+      ],
+      "city_region": "Prince Edward : Prince Edward",
+      "date_text": "28 Feb 2017",
+      "price_text": "$864,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "9874640 Canada Inc     613-476-6649"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Manuel Perello",
+        "2 Johnson St",
+        "Picton, Ontario",
+        "K0K 2T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 47R-1810, Parts 1 & 2",
+      "",
+      "PIN: 55059-0004",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "13 50 030 035 20600",
+    "consideration_lines": [
+      "cash: $864,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "255 / 398",
+      "rt_id": "RT123777"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "2 JOHNSON ST",
+    "postcode": "K0K 2T0",
+    "municipality": "Prince Edward",
+    "region": "Prince Edward",
+    "date": "02/28/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "864000",
+    "cash": "864000",
+    "debt": "",
+    "note": "",
+    "pin": "55059-0004",
+    "rollno": "13 50 030 035 20600"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "2 JOHNSON ST"
+    ],
+    "city_region": "Prince Edward : Prince Edward",
+    "date_text": "28 Feb 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "9874640 Canada Inc"
+    ],
+    "price_text": "$864,000"
+  }
+}

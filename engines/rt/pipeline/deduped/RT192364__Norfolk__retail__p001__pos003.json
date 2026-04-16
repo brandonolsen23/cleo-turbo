@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT192364",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192364",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1086 BAY ST"
+      ],
+      "city_region": "Port Rowan : Norfolk",
+      "date_text": "02 May 2025",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Willow Hawk Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "243781 Airport Rd, RR 7",
+        "Tillsonburg, Ontario",
+        "N4G 4H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Doerksen Country Store Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bryan Doerksen",
+        "976 Norfolk County Rd 23",
+        "Walsingham, Ontario",
+        "N0E 1X0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 37R-5402, Part 5",
+      "Together with:",
+      "Inst No NR-479128",
+      "",
+      "PIN: 50121-0121",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "33 10 544 002 17200",
+    "consideration_lines": [
+      "cash: $50,000     assumed/vtb debt: $700,000",
+      "",
+      "chargee: Willow Hawk Farms Inc",
+      "principal: $700,000",
+      "registered: 05/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101531.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101536.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101557.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101603.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101622.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101624.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192364/0713_101654.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 45",
+      "rt_id": "RT192364"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1086 BAY ST",
+    "postcode": "N0E 1M0",
+    "municipality": "Port Rowan",
+    "region": "Norfolk",
+    "date": "05/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "750000",
+    "cash": "50000",
+    "debt": "700000",
+    "note": "",
+    "pin": "50121-0121",
+    "rollno": "33 10 544 002 17200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1086 BAY ST"
+    ],
+    "city_region": "Port Rowan : Norfolk",
+    "date_text": "02 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Willow Hawk Farms Inc"
+    ],
+    "buyer_lines": [
+      "Doerksen Country Store Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

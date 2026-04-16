@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT33708",
+  "source_folder": "Niagara_N/retail/p006",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33708",
+      "source_folder": "Niagara_N/retail/p006",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p006/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "64 MAIN ST W"
+      ],
+      "city_region": "Grimsby : Niagara N",
+      "date_text": "03 Nov 2003",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Canada Trust Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Pequegnat",
+        "161 Bay St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5J 2T2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "869431 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edward Quirk",
+        "64-72 Main St W",
+        "Grimsby, Ontario",
+        "L3M 1R6"
+      ]
+    },
+    "description_lines": [
+      "Bank Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30R-8141, Parts 1 & 4",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "26 15 010 007 13605",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT337/RT33708/photo.jpg"
+    },
+    "footer": {
+      "page_position": "268 / 307",
+      "rt_id": "RT33708"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "64 MAIN ST W",
+    "postcode": "L3M 1R6",
+    "municipality": "Grimsby",
+    "region": "Niagara N",
+    "date": "11/03/2003",
+    "desc": "Bank Bldg",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 15 010 007 13605"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "64 MAIN ST W"
+    ],
+    "city_region": "Grimsby : Niagara N",
+    "date_text": "03 Nov 2003",
+    "note": "",
+    "description": "Bank Bldg",
+    "seller_lines": [
+      "The Canada Trust Co"
+    ],
+    "buyer_lines": [
+      "869431 Ontario Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

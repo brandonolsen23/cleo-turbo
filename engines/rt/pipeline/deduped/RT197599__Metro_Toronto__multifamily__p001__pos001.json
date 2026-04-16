@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT197599",
+  "source_folder": "Metro_Toronto/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197599",
+      "source_folder": "Metro_Toronto/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "195 DOVERCOURT RD",
+        "197 DOVERCOURT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "06 Mar 2026",
+      "price_text": "$2,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001511286 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: P. Pourmohammadi",
+        "87 Peter St, Ste 4302",
+        "Toronto, Ontario",
+        "M5V 0P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-66, Part Lots 44 & 45",
+      "Plan 66R-21724, Parts 2 & 3",
+      "As in Inst Nos:",
+      "CT-351790 & CT-94966",
+      "",
+      "PIN: 21277-0283 +",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 042 380 00300 +",
+    "consideration_lines": [
+      "cash: $2,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,760,000   rate: Prime minus 0.5% per annum.",
+      "registered: 03/06/2026   due: 03/06/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 6031",
+      "rt_id": "RT197599"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "195 DOVERCOURT RD, 197 DOVERCOURT RD",
+    "postcode": "M6J 3C7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/06/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "2200000",
+    "cash": "2200000",
+    "debt": "",
+    "note": "",
+    "pin": "21277-0283+",
+    "rollno": "19 04 042 380 00300+"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "195 DOVERCOURT RD",
+      "197 DOVERCOURT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "06 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001511286 Ontario Inc"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

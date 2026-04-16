@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT58849",
+  "source_folder": "Muskoka/retail/p002",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT58849",
+      "source_folder": "Muskoka/retail/p002",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p002/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "19 MAIN ST E"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "16 Nov 2007",
+      "price_text": "$700,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Tarrison Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jim Witt",
+        "2780 Coventry Rd",
+        "Oakville, Ontario",
+        "L6H 6R1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 7,900 sf @ $89",
+      "",
+      "Vacant",
+      "",
+      "26 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2",
+      "Lots 36, 37, 60 & 61",
+      "Part Lot 62",
+      "As in Inst No DM-324884",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "44 42 010 013 10100",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $490,000   rate: 6.63% per annum",
+      "registered: 11/16/2007   due: on demand"
+    ],
+    "broker_lines": [
+      "Allcom Realty Services: Samuel Taggert, 416-447-9700",
+      "Coldwell Banker Thompson Real Estate: Chris Thompson, 705-789-4957"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT588/RT58849/0307_110004.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "62 / 64",
+      "rt_id": "RT58849"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "19 MAIN ST E",
+    "postcode": "P1H 2C6",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "11/16/2007",
+    "desc": "Retail Bldg - 1 storey; 7,900 sf @ $89",
+    "bldg": "7,900 sf",
+    "acreage": ".6",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "44 42 010 013 10100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "19 MAIN ST E"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "16 Nov 2007",
+    "note": "Power of Sale",
+    "description": "Retail Bldg - 1 storey; 7,900 sf @ $89",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Tarrison Holdings Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

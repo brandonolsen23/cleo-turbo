@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT176379",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176379",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "2900 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "21 Mar 2023",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "BBQT Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Braden Kurczak",
+        "233 David Elsey St",
+        "Kitchener, Ontario",
+        "N2A 4L6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-5060, Parts 1 & 2",
+      "",
+      "PIN: 22562-0151",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "30 12 030 001 20101",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,050,000   rate: Floating base rate.",
+      "registered: 03/21/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176379/0415_135751.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176379/0415_135837.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176379/0415_135918.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176379/0415_135945.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176379/0415_135959.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1763/RT176379/0415_140005.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "136 / 752",
+      "rt_id": "RT176379"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "2900 KING ST E",
+    "postcode": "N2G 2L3",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".39",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "22562-0151",
+    "rollno": "30 12 030 001 20101"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "2900 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "21 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "BBQT Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

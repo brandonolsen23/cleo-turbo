@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT35112",
+  "source_folder": "Metro_Toronto/retail/p077",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35112",
+      "source_folder": "Metro_Toronto/retail/p077",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p077/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "285 LAWSON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "16 Apr 2004",
+      "price_text": "$1,485,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lawson Plaza Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dan Haglar",
+        "160 Shorting Rd",
+        "Toronto, Ontario",
+        "M1S 3S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Alenwood Inc     416-690-2121"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rakib Chowdhury",
+        "1001 Cedarglen Gate, Ste 503",
+        "Mississauga, Ontario",
+        "L5C 4R2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar - 7 units 10,295 sf @ $144"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2732, Part Lot 51",
+      "As in Inst No TB-689603",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "19 01 093 250 00700",
+    "consideration_lines": [
+      "cash: $735,000     assumed/vtb debt: $750,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT351/RT35112/air1.jpg",
+        "/assets/files/RT3/RT351/RT35112/air2.jpg",
+        "/assets/files/RT3/RT351/RT35112/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT351/RT35112/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3834 / 4952",
+      "rt_id": "RT35112"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "285 LAWSON RD",
+    "postcode": "M1C 2J6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/16/2004",
+    "desc": "Retail Plaza & Gas Bar - 7 units 10,295 sf @ $144",
+    "bldg": "10,295 sf",
+    "acreage": ".73",
+    "consid": "1485000",
+    "cash": "735000",
+    "debt": "750000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 093 250 00700"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "285 LAWSON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "16 Apr 2004",
+    "note": "",
+    "description": "Retail Plaza & Gas Bar - 7 units 10,295 sf @ $144",
+    "seller_lines": [
+      "Lawson Plaza Inc"
+    ],
+    "buyer_lines": [
+      "Alenwood Inc"
+    ],
+    "price_text": "$1,485,000"
+  }
+}

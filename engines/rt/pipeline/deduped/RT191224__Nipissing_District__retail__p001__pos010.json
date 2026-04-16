@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT191224",
+  "source_folder": "Nipissing_District/retail/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191224",
+      "source_folder": "Nipissing_District/retail/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Nipissing_District/retail/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "276 LAKESHORE DR"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "04 Apr 2025",
+      "price_text": "$10,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Holyrood Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "323 Lafontaine Rd W",
+        "Tiny, Ontario",
+        "L9M 0H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001084288 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anil Sharma",
+        "1200 Derry Rd E, Ste 10",
+        "Mississauga, Ontario",
+        "L5T 1B6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 17 - West Ferris, Part Lot 40",
+      "Plan NR-373, Parts 1 & 2",
+      "Plan NR-42, Part 1",
+      "As in Inst No LT-4867, LT-3194, LT-31405",
+      "Except:",
+      "Plan 36R-3964, Parts 1, 4-7",
+      "Plan 36R-11890, Parts 1, 2 & 3",
+      "Inst Nos LT-56976, LT-88672, LT-52590 & LT-9819",
+      "",
+      "PIN: 49172-0122 +",
+      "",
+      "2.67 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $10,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 46",
+      "rt_id": "RT191224"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "276 LAKESHORE DR",
+    "postcode": "P1A 2C2",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "04/04/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.67",
+    "consid": "10000000",
+    "cash": "10000000",
+    "debt": "",
+    "note": "",
+    "pin": "49172-0122+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "276 LAKESHORE DR"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "04 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Holyrood Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1001084288 Ontario Inc"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

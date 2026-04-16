@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT181767",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181767",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 - 23 GRAND AVE S"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "07 Dec 2023",
+      "price_text": "$5,187,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "FGP Bread Factory Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "13 Salisbury Ave",
+        "Cambridge, Ontario",
+        "N1S 1H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bread Factory Holding Corp     519-279-6833"
+      ],
+      "trade_name": "Central Views Property Management",
+      "contact_lines": [
+        "Attn: Omar Kaake",
+        "2 Water St N",
+        "Cambridge, Ontario",
+        "N1R 3B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 456,",
+      "Lots 14-17, E/S Grand Ave",
+      "",
+      "PIN: 03806-0050",
+      "",
+      "0.65 acre"
+    ],
+    "arn_text": "30 06 040 045 03300",
+    "consideration_lines": [
+      "cash: $5,187,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,450,000   rate: Prime plus 5.0% per annum.",
+      "registered: 12/07/2023   due: on demand",
+      "",
+      "chargee: PK2S Holdings Inc",
+      "principal: $1,000,000   rate: 8.0% per annum.",
+      "registered: 12/08/2023   due: 12/06/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092528.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092540.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092543.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092607.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092656.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092700.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092701.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092711.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092747.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1817/RT181767/0120_092751.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "115 / 752",
+      "rt_id": "RT181767"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "7 - 23 GRAND AVE S",
+    "postcode": "N1S 2L3",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "12/07/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".65",
+    "consid": "5187500",
+    "cash": "5187500",
+    "debt": "",
+    "note": "",
+    "pin": "03806-0050",
+    "rollno": "30 06 040 045 03300"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "7 - 23 GRAND AVE S"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "07 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "FGP Bread Factory Ltd"
+    ],
+    "buyer_lines": [
+      "Bread Factory Holding Corp"
+    ],
+    "price_text": "$5,187,500"
+  }
+}

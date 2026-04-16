@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT184713",
+  "source_folder": "Niagara_S/retail/p002",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184713",
+      "source_folder": "Niagara_S/retail/p002",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p002/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "41 EAST MAIN"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "07 May 2024",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1218756 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 East Main St",
+        "Welland, Ontario",
+        "L3B 3W4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Delta Property Holdings Inc     905-842-8070"
+      ],
+      "trade_name": "Delta Bingo",
+      "contact_lines": [
+        "Attn: Cameron Johnstone",
+        "233 Speers Rd, Unit 2",
+        "Oakville, Ontario",
+        "L6K 0J5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 551, Part Lot 7, S/S Main St",
+      "Plan 564, Part Lot 6, S/S Main St",
+      "As in Inst RO-774837",
+      "",
+      "PIN: 64107-0006",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "27 19 030 005 10000",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184713/0721_081342.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184713/0721_081346.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184713/0721_081514.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1847/RT184713/0721_081517.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "58 / 324",
+      "rt_id": "RT184713"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "41 EAST MAIN",
+    "postcode": "L3B 3W4",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "05/07/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "64107-0006",
+    "rollno": "27 19 030 005 10000"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "41 EAST MAIN"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "07 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1218756 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Delta Property Holdings Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

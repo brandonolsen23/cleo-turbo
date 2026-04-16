@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT29670",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29670",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "534 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "31 Mar 2003",
+      "price_text": "$2,593,625",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hollycorp Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Michael McKay",
+        "620 Steven Ct",
+        "Newmarket, Ontario",
+        "L3Y 6Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2024101 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Brown",
+        "801 York Mills Rd, Ste 213",
+        "Toronto, Ontario",
+        "M3B 1X7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 18",
+      "As in Inst No RO-407779",
+      "",
+      "3.45 acre"
+    ],
+    "arn_text": "43 42 031 025 01300",
+    "consideration_lines": [
+      "cash: $2,593,625     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT296/RT29670/photo.jpg"
+    },
+    "footer": {
+      "page_position": "623 / 712",
+      "rt_id": "RT29670"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "534 BAYFIELD ST",
+    "postcode": "L4M 5A2",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "03/31/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "3.45",
+    "consid": "2593625",
+    "cash": "2593625",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 031 025 01300"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "534 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "31 Mar 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Hollycorp Investments Ltd"
+    ],
+    "buyer_lines": [
+      "2024101 Ontario Inc"
+    ],
+    "price_text": "$2,593,625"
+  }
+}

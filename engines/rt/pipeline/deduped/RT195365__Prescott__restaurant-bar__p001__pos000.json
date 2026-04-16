@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT195365",
+  "source_folder": "Prescott/restaurant-bar/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195365",
+      "source_folder": "Prescott/restaurant-bar/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prescott/restaurant-bar/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "314 MAIN ST E"
+      ],
+      "city_region": "Hawkesbury : Prescott",
+      "date_text": "02 Oct 2025",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bel-Pharm Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11760 Lakeshore Dr",
+        "Morrisburg, Ontario",
+        "K0C 1X0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Devcor Capital Inc     905-814-8030"
+      ],
+      "trade_name": "Obsidian Group Inc",
+      "contact_lines": [
+        "Attn: George Karamountzos",
+        "1700 Argentia Rd",
+        "Mississauga, Ontario",
+        "L5N 3S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 46R-3915, Part 1-8",
+      "",
+      "PIN: 54174-0018",
+      "",
+      "0.69 acre"
+    ],
+    "arn_text": "02 08 030 002 06905",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 3",
+      "rt_id": "RT195365"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "314 MAIN ST E",
+    "postcode": "K6A 1A5",
+    "municipality": "Hawkesbury",
+    "region": "Prescott",
+    "date": "10/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".69",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "54174-0018",
+    "rollno": "02 08 030 002 06905"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "314 MAIN ST E"
+    ],
+    "city_region": "Hawkesbury : Prescott",
+    "date_text": "02 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bel-Pharm Ltd"
+    ],
+    "buyer_lines": [
+      "Devcor Capital Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

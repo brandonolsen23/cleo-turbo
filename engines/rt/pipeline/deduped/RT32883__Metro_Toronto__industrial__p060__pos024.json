@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT32883",
+  "source_folder": "Metro_Toronto/industrial/p060",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32883",
+      "source_folder": "Metro_Toronto/industrial/p060",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p060/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "66 FRASER AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Dec 2003",
+      "price_text": "$1,152,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2024245 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lory James",
+        "66 Fraser Ave",
+        "Toronto, Ontario",
+        "M6K 1Y6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-3477, Parts 2 & 3",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 041 160 00350",
+    "consideration_lines": [
+      "cash: $1,152,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32883/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2975 / 4000",
+      "rt_id": "RT32883"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "66 FRASER AVE",
+    "postcode": "M6K 1Y6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/02/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "1152000",
+    "cash": "1152000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 041 160 00350"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "66 FRASER AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Dec 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2024245 Ontario Corp"
+    ],
+    "price_text": "$1,152,000"
+  }
+}

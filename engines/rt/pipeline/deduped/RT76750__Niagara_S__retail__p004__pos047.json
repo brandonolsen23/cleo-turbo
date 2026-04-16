@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT76750",
+  "source_folder": "Niagara_S/retail/p004",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT76750",
+      "source_folder": "Niagara_S/retail/p004",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p004/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 HWY 20 W"
+      ],
+      "city_region": "Pelham : Niagara S",
+      "date_text": "11 Feb 2011",
+      "price_text": "$1,300,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "LS Supply Ltd     905-945-0242"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Scott Penner",
+        "54 Robinson St S",
+        "Grimsby, Ontario",
+        "L3M 3C4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1834538 Ontario Inc     905-834-3514"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Boggio",
+        "200 Catharine St",
+        "Port Colborne, Ontario",
+        "L3K 4K8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 tenants 14,000 sf @ $93",
+      "",
+      "Fully leased",
+      "Anchored by Boggio Pharmacy (the purchaser)",
+      "",
+      "Last transferred in March 2008 for $1,200,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 3",
+      "Plan 59R-3178, Part 1",
+      "",
+      "PIN: SN-305765",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "27 32 020 010 01003",
+    "consideration_lines": [
+      "cash: $339,932     assumed/vtb debt: $960,068",
+      "",
+      "chargee: Harry & Lois-Jane Schonewillie",
+      "principal: $100,000   rate: 7.0% per annum",
+      "registered: 03/31/2008   due: 03/31/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT767/RT76750/0401_120205.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT767/RT76750/0401_120251.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT767/RT76750/air1.jpg",
+        "/assets/files/RT7/RT767/RT76750/air2.jpg",
+        "/assets/files/RT7/RT767/RT76750/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "198 / 324",
+      "rt_id": "RT76750"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "155 HWY 20 W",
+    "postcode": "L0R 1R0",
+    "municipality": "Pelham",
+    "region": "Niagara S",
+    "date": "02/11/2011",
+    "desc": "Retail Plaza - 1 storey; 4 tenants 14,000 sf @ $93",
+    "bldg": "14,000 sf",
+    "acreage": "1",
+    "consid": "1300000",
+    "cash": "339932",
+    "debt": "960068",
+    "note": "Purchased by Tenant",
+    "pin": "SN-305765",
+    "rollno": "27 32 020 010 01003"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "155 HWY 20 W"
+    ],
+    "city_region": "Pelham : Niagara S",
+    "date_text": "11 Feb 2011",
+    "note": "Purchased by Tenant",
+    "description": "Retail Plaza - 1 storey; 4 tenants 14,000 sf @ $93",
+    "seller_lines": [
+      "LS Supply Ltd"
+    ],
+    "buyer_lines": [
+      "1834538 Ontario Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

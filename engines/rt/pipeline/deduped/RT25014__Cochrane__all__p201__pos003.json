@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT25014",
+  "source_folder": "Cochrane/all/p201",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25014",
+      "source_folder": "Cochrane/all/p201",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p201/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 2",
+        "PART LOT 3"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "17 Apr 2002",
+      "price_text": "$1,725,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1443627 Ontario Inc",
+        "Fox Hotel LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Chartrand",
+        "6550 Cote de Liesse",
+        "Montreal, Quebec",
+        "H4T 1S7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tridan Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dan McKenna",
+        "2515 Bank St, PO Box 40010",
+        "Ottawa, Ontario",
+        "K1V 0Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-7527, Part 3"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,725,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "10004 / 10920",
+      "rt_id": "RT25014"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "CONC 2, PART LOT 3",
+    "postcode": "",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "04/17/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1725000",
+    "cash": "1725000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "CONC 2",
+      "PART LOT 3"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "17 Apr 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1443627 Ontario Inc",
+      "Fox Hotel LP"
+    ],
+    "buyer_lines": [
+      "Tridan Developments Ltd"
+    ],
+    "price_text": "$1,725,000"
+  }
+}

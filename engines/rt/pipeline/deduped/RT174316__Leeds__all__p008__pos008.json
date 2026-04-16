@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT174316",
+  "source_folder": "Leeds/all/p008",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174316",
+      "source_folder": "Leeds/all/p008",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p008/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "8408 NORTHVILLE RD"
+      ],
+      "city_region": "Bosanquet : Lambton",
+      "date_text": "30 Dec 2022",
+      "price_text": "$2,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Peters Sylvan Poultry Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "792 Elliott Dr",
+        "Parkhill, Ontario",
+        "N0M 2K0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 12",
+      "Except:",
+      "Plan 25R-2901, Part 62",
+      "",
+      "PIN: 43041-0114",
+      "",
+      "53.02 acre"
+    ],
+    "arn_text": "38 45 460 030 17500",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "359 / 1916",
+      "rt_id": "RT174316"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "8408 NORTHVILLE RD",
+    "postcode": "N0M 2N0",
+    "municipality": "Bosanquet",
+    "region": "Lambton",
+    "date": "12/30/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "53.02",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43041-0114",
+    "rollno": "38 45 460 030 17500"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "8408 NORTHVILLE RD"
+    ],
+    "city_region": "Bosanquet : Lambton",
+    "date_text": "30 Dec 2022",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Peters Sylvan Poultry Farms Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

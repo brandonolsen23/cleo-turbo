@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT178790",
+  "source_folder": "Halton_Region/retail/p003",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178790",
+      "source_folder": "Halton_Region/retail/p003",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p003/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "685 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "29 Jun 2023",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Norbal Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "9 Marwood Rd",
+        "Toronto, Ontario",
+        "M6B 3G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000500826 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Haider Al-Dabbagh",
+        "646 Canyon St",
+        "Mississauga, Ontario",
+        "L5H 4L9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT17/RT1787/RT178790/mi.pdf",
+    "site_lines": [
+      "Conc 1, Part 1",
+      "As in Inst No 807816",
+      "",
+      "PIN: 07110-0100",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "24 02 020 205 06410",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,625,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/29/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178790/0715_081621.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178790/0715_081643.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178790/0715_081644.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178790/0715_081729.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178790/0715_081730.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1787/RT178790/0715_081744.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "117 / 613",
+      "rt_id": "RT178790"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "685 PLAINS RD E",
+    "postcode": "L7T 2E8",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "06/29/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".73",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "",
+    "pin": "07110-0100",
+    "rollno": "24 02 020 205 06410"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "685 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "29 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Norbal Ltd"
+    ],
+    "buyer_lines": [
+      "1000500826 Ontario Ltd"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

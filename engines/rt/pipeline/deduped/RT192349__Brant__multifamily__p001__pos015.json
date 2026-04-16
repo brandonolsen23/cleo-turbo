@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT192349",
+  "source_folder": "Brant/multifamily/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192349",
+      "source_folder": "Brant/multifamily/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/multifamily/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "163 BRUCE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "30 Apr 2025",
+      "price_text": "$810,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Modern Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "18 Sleeth St",
+        "Brantford, Ontario",
+        "N3S 0J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 255, Lot 16",
+      "",
+      "PIN: 32133-0086",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "29 06 030 005 05100",
+    "consideration_lines": [
+      "cash: $810,000     assumed/vtb debt: $0",
+      "",
+      "chargee: TSX Trust Company",
+      "principal: $753,057   rate: Prime minus 0.650% per annum.",
+      "registered: 04/30/2025   due: 04/30/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192349/0712_095535.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192349/0712_095552.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192349/0712_095602.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192349/0712_095613.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192349/0712_095623.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 179",
+      "rt_id": "RT192349"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "163 BRUCE ST",
+    "postcode": "N3S 4Z3",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "04/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "810000",
+    "cash": "810000",
+    "debt": "",
+    "note": "",
+    "pin": "32133-0086",
+    "rollno": "29 06 030 005 05100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "163 BRUCE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "30 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Modern Properties Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$810,000"
+  }
+}

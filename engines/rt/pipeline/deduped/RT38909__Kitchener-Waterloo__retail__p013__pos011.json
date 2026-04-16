@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT38909",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38909",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1400 WEBER ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "22 Nov 2004",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Transnation Plaza Corp     416-663-5656"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Price",
+        "Yack & Associates",
+        "1120 Finch Ave W, Ste 608",
+        "Toronto, Ontario",
+        "M3J 3H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Azea Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Esoof Bholat",
+        "164 Strathnairn Ave",
+        "Toronto, Ontario",
+        "M6M 2G1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 9 units 25,366 sf @ $83"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1120",
+      "Lots 9-16, Part Lots 17-20",
+      "Plan 58R-5991, Part 4",
+      "Except Plan 58R-6240, Part 1",
+      "",
+      "2.24 acre"
+    ],
+    "arn_text": "30 12 030 004 34100",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Centrecorp Levinsky Realty: Richard Levinsky, 416-483-7700"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT389/RT38909/photo.jpg"
+    },
+    "footer": {
+      "page_position": "612 / 752",
+      "rt_id": "RT38909"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1400 WEBER ST E",
+    "postcode": "N2A 3Z8",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/22/2004",
+    "desc": "Retail Plaza - 1 storey; 9 units 25,366 sf @ $83",
+    "bldg": "25,366 sf",
+    "acreage": "2.24",
+    "consid": "2100000",
+    "cash": "2100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 030 004 34100"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1400 WEBER ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "22 Nov 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 9 units 25,366 sf @ $83",
+    "seller_lines": [
+      "Transnation Plaza Corp"
+    ],
+    "buyer_lines": [
+      "Azea Investments Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

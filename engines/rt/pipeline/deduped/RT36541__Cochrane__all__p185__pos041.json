@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT36541",
+  "source_folder": "Cochrane/all/p185",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36541",
+      "source_folder": "Cochrane/all/p185",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p185/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "6045 FIRST LINE"
+      ],
+      "city_region": "Rideau : Ottawa-Carleton",
+      "date_text": "30 Jun 2004",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "969230 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Seabrook",
+        "RR 1",
+        "Kars, Ontario",
+        "K0A 2E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - BF, Part Lot 11",
+      "As in Inst No NS-16419",
+      "Except:",
+      "Plan 4R-14880, Part 1",
+      "Plan 4R-15787, Part 1",
+      "",
+      "93.15 acre"
+    ],
+    "arn_text": "06 14 182 820 32100",
+    "consideration_lines": [
+      "cash: $250,000     assumed/vtb debt: $250,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9242 / 10920",
+      "rt_id": "RT36541"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "6045 FIRST LINE",
+    "postcode": "",
+    "municipality": "Rideau",
+    "region": "Ottawa-Carleton",
+    "date": "06/30/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "93.15",
+    "consid": "500000",
+    "cash": "250000",
+    "debt": "250000",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 182 820 32100"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "6045 FIRST LINE"
+    ],
+    "city_region": "Rideau : Ottawa-Carleton",
+    "date_text": "30 Jun 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "969230 Ontario Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

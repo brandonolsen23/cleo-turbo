@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT20689",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20689",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "2206 - 2210 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "12 Feb 2001",
+      "price_text": "$13,680,000",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "802700 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Allan Kimberley",
+        "c/o BCE Place",
+        "161 Bay St, PO Box 500",
+        "Canada Trust Tower, 7th Flr",
+        "Toronto, Ontario",
+        "M5J 2S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "South Keys Shopping Centres Ltd     416-493-9112"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Joseph Amato",
+        "First Professional Management",
+        "259 Yorkland Rd, Ste 300",
+        "Toronto, Ontario",
+        "M2J 5B2"
+      ]
+    },
+    "description_lines": [
+      "South Keys Shopping Centre"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-944, Blocks 1, 2 & 15",
+      "Plan 4R-12807, Parts 1 & 2",
+      "",
+      "53.12 acre"
+    ],
+    "arn_text": "06 14 116 402 37100",
+    "consideration_lines": [
+      "cash: $13,680,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT206/RT20689/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1045 / 1141",
+      "rt_id": "RT20689"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "2206 - 2210 BANK ST",
+    "postcode": "K1V 1J5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/12/2001",
+    "desc": "South Keys Shopping Centre",
+    "bldg": "",
+    "acreage": "53.12",
+    "consid": "13680000",
+    "cash": "13680000",
+    "debt": "",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "06 14 116 402 37100"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "2206 - 2210 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "12 Feb 2001",
+    "note": "Partial Interest",
+    "description": "South Keys Shopping Centre",
+    "seller_lines": [
+      "802700 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "South Keys Shopping Centres Ltd"
+    ],
+    "price_text": "$13,680,000"
+  }
+}

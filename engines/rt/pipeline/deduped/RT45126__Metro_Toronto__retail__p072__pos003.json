@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT45126",
+  "source_folder": "Metro_Toronto/retail/p072",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45126",
+      "source_folder": "Metro_Toronto/retail/p072",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p072/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "250 WINCOTT DR"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "31 Oct 2005",
+      "price_text": "$29,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Richview Square Ltd     416-863-4511"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Kerzner",
+        "Fraser Milner Casgrain LLP",
+        "100 King St W, ste 3900",
+        "Toronto, Ontario",
+        "M5X 1B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "PSS Investments II Inc",
+        "TPP Investments II Inc     902-424-5554"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Van Loon",
+        "The Province of Nova Scotia",
+        "Department of Finance",
+        "1723 Hollis St",
+        "Box 187, 7th Flr",
+        "Halifax, Nova Scotia",
+        "B3J 2N3"
+      ]
+    },
+    "description_lines": [
+      "Richview Square Plaza - 1 storey; 40 units 75,488 sf @ $394"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-13842",
+      "Parts 1 & 2",
+      "",
+      "W side 100m N of Eglinton Ave",
+      "",
+      "5.32 acre"
+    ],
+    "arn_text": "19 19 026 040 02900",
+    "consideration_lines": [
+      "cash: $24,014,099     assumed/vtb debt: $5,735,901",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $10,000,000   rate: 5.21% per annum",
+      "registered: 10/31/2005   due: 11/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT451/RT45126/air1.jpg",
+        "/assets/files/RT4/RT451/RT45126/air2.jpg",
+        "/assets/files/RT4/RT451/RT45126/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT451/RT45126/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3554 / 4952",
+      "rt_id": "RT45126"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "250 WINCOTT DR",
+    "postcode": "M9R 2R5",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "10/31/2005",
+    "desc": "Richview Square Plaza - 1 storey; 40 units 75,488 sf @ $394",
+    "bldg": "75,488 sf",
+    "acreage": "5.32",
+    "consid": "29750000",
+    "cash": "24014099",
+    "debt": "5735901",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 026 040 02900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "250 WINCOTT DR"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "31 Oct 2005",
+    "note": "",
+    "description": "Richview Square Plaza - 1 storey; 40 units 75,488 sf @ $394",
+    "seller_lines": [
+      "Richview Square Ltd"
+    ],
+    "buyer_lines": [
+      "PSS Investments II Inc",
+      "TPP Investments II Inc"
+    ],
+    "price_text": "$29,750,000"
+  }
+}

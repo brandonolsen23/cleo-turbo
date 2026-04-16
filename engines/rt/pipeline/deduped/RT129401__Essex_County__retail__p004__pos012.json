@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT129401",
+  "source_folder": "Essex_County/retail/p004",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT129401",
+      "source_folder": "Essex_County/retail/p004",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p004/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "401 TALBOT ST N"
+      ],
+      "city_region": "Lakeshore : Essex County",
+      "date_text": "02 Nov 2017",
+      "price_text": "$3,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2047853 Ontario Ltd     519-352-9629"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Henry Van Minnen",
+        "175 Pineway Park",
+        "Kingsville, Ontario",
+        "N9Y 2J1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg: 1 storey; 21,700 sf on about 3.1 Ac",
+      "",
+      "Fully leased to TSC Store",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc NTR, Part Lot 285",
+      "Plan 12R-20902, Part 1",
+      "",
+      "PIN: 75018-0034",
+      "",
+      "E side Talbot St N, S of Lapointe St",
+      "",
+      "3.15 acre"
+    ],
+    "arn_text": "37 51 040 000 00100",
+    "consideration_lines": [
+      "cash: $3,125,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/02/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "163 / 460",
+      "rt_id": "RT129401"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "401 TALBOT ST N",
+    "postcode": "N8M 2W3",
+    "municipality": "Lakeshore",
+    "region": "Essex County",
+    "date": "11/02/2017",
+    "desc": "Retail Bldg: 1 storey; 21,700 sf on about 3.1 Ac",
+    "bldg": "21,170 sf",
+    "acreage": "3.15",
+    "consid": "3125000",
+    "cash": "3125000",
+    "debt": "",
+    "note": "",
+    "pin": "75018-0034",
+    "rollno": "37 51 040 000 00100"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "401 TALBOT ST N"
+    ],
+    "city_region": "Lakeshore : Essex County",
+    "date_text": "02 Nov 2017",
+    "note": "",
+    "description": "Retail Bldg: 1 storey; 21,700 sf on about 3.1 Ac",
+    "seller_lines": [
+      "2047853 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$3,125,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT145518",
+  "source_folder": "Kitchener-Waterloo/retail/p005",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT145518",
+      "source_folder": "Kitchener-Waterloo/retail/p005",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p005/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "105 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "27 Aug 2019",
+      "price_text": "$2,875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2694084 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dharmesh Lakhani",
+        "120 Skyway Ave",
+        "Etobicoke, Ontario",
+        "N9W 4Y9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 225,",
+      "Lots 421 & 422",
+      "Part Lots 423-428",
+      "As in Inst No WS-739352",
+      "Plan 67R-2420, Parts 1-6",
+      "",
+      "PIN: 03810-0015",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "30 06 090 002 07600",
+    "consideration_lines": [
+      "cash: $2,875,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,890,000   rate: 18.0% per annum.",
+      "registered: 08/27/2019   due: 09/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1455/RT145518/1214_100034.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1455/RT145518/1214_100039.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1455/RT145518/1214_100056.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1455/RT145518/1214_100057.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "225 / 752",
+      "rt_id": "RT145518"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "105 HESPELER RD",
+    "postcode": "N1R 3G7",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "08/27/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "2875000",
+    "cash": "2875000",
+    "debt": "",
+    "note": "",
+    "pin": "03810-0015",
+    "rollno": "30 06 090 002 07600"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "105 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "27 Aug 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2694084 Ontario Inc"
+    ],
+    "price_text": "$2,875,000"
+  }
+}

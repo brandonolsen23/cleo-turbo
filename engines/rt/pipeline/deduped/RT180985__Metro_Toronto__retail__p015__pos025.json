@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT180985",
+  "source_folder": "Metro_Toronto/retail/p015",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180985",
+      "source_folder": "Metro_Toronto/retail/p015",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p015/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "803 OCONNOR DR"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "20 Oct 2023",
+      "price_text": "$1,381,700",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "764079 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "120 Bannockburn Ave",
+        "Toronto, Ontario",
+        "M5M 2N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Neo-Paws International Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roanna Sabeh-Azar",
+        "39 Lankin Blvd",
+        "Toronto, Ontario",
+        "M4J 4W7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3636, Part Blocks A & B",
+      "As in Inst No CA-482390",
+      "",
+      "PIN: 10435-0034",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 06 013 270 00200",
+    "consideration_lines": [
+      "cash: $1,381,700     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1809/RT180985/1029_075656.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1809/RT180985/1029_075709.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1809/RT180985/1029_075712.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1809/RT180985/1029_075740.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1809/RT180985/1029_075800.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1809/RT180985/1029_075809.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "726 / 4952",
+      "rt_id": "RT180985"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "803 OCONNOR DR",
+    "postcode": "M4B 2S7",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "10/20/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1381700",
+    "cash": "1381700",
+    "debt": "",
+    "note": "",
+    "pin": "10435-0034",
+    "rollno": "19 06 013 270 00200"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "803 OCONNOR DR"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "20 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "764079 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Neo-Paws International Inc"
+    ],
+    "price_text": "$1,381,700"
+  }
+}

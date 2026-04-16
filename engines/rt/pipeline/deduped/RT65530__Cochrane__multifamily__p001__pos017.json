@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT65530",
+  "source_folder": "Cochrane/multifamily/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65530",
+      "source_folder": "Cochrane/multifamily/p001",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/multifamily/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "210 SPRUCE ST S"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "22 Dec 2008",
+      "price_text": "$2,406,500",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Gibraltar Mortage Ltd     403-270-7000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Rita Gerritsen",
+        "1000 Ninth Ave SW, Ste 300",
+        "Calgary, Alberta",
+        "T2P 2Y6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1656349 Ontario Inc     705-360-1124"
+      ],
+      "trade_name": "Paul Davis System of Timmins",
+      "contact_lines": [
+        "Pres: Ronald Beaudry",
+        "205 Commercial Ave",
+        "Timmins, Ontario",
+        "P4N 2X5"
+      ]
+    },
+    "description_lines": [
+      "Senior's Residence - 3 storey; 24 units @ $100,271",
+      "",
+      "Ground floor was communal space, now being converted to 12 more apartments."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-33S, Lots 90-94",
+      "Plan 6R-6049, Part 1",
+      "",
+      "PIN: 65404-1815",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "56 27 050 021 00200",
+    "consideration_lines": [
+      "cash: $2,406,500     assumed/vtb debt: $0",
+      "",
+      "chargee: First National Financial GP Corp",
+      "principal: $1,270,700   rate: 25% per annum",
+      "registered: 12/22/2008   due: 08/01/2009",
+      "",
+      "chargee: Cochrane District Social Services Administration Board",
+      "Her Majesty the Queen in Right of Ontario",
+      "by the Minister of Municipal Affairs and Housing",
+      "principal: $1,675,000",
+      "registered: 12/22/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 23",
+      "rt_id": "RT65530"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "210 SPRUCE ST S",
+    "postcode": "P4N 2M5",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "12/22/2008",
+    "desc": "Senior's Residence - 3 storey; 24 units @ $100,271",
+    "bldg": "24 units",
+    "acreage": ".4",
+    "consid": "2406500",
+    "cash": "2406500",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "65404-1815",
+    "rollno": "56 27 050 021 00200"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "210 SPRUCE ST S"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "22 Dec 2008",
+    "note": "Power of Sale",
+    "description": "Senior's Residence - 3 storey; 24 units @ $100,271",
+    "seller_lines": [
+      "Gibraltar Mortage Ltd"
+    ],
+    "buyer_lines": [
+      "1656349 Ontario Inc"
+    ],
+    "price_text": "$2,406,500"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT196376",
+  "source_folder": "Metro_Toronto/multifamily/p002",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196376",
+      "source_folder": "Metro_Toronto/multifamily/p002",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p002/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 ROCKAWAY CRES"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "15 Dec 2025",
+      "price_text": "$1,850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Brownstone Multifamily Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mitchell Braunstein",
+        "67 Beach View Cres, Unit 7",
+        "Toronto, Ontario",
+        "M4E 2L7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1085, Part Lot 5",
+      "As in Inst No TB-841329",
+      "",
+      "PIN: 06509-0042",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 01 011 010 00900",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $662,092",
+      "other: $1,187,908",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $900,000   rate: 2.93% per annum.",
+      "registered: 11/01/2026   due: 11/01/2021"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "96 / 6031",
+      "rt_id": "RT196376"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "1 ROCKAWAY CRES",
+    "postcode": "M1N 1N1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "1850000",
+    "cash": "",
+    "debt": "662092",
+    "note": "Related Parties",
+    "pin": "06509-0042",
+    "rollno": "19 01 011 010 00900"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "1 ROCKAWAY CRES"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "15 Dec 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Brownstone Multifamily Inc"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

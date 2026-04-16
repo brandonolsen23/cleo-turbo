@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT104667",
+  "source_folder": "Kitchener-Waterloo/retail/p007",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104667",
+      "source_folder": "Kitchener-Waterloo/retail/p007",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p007/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "206 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "24 Nov 2014",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Tiffany LN Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thu Thi Nguyen",
+        "17 Kenwood Cres",
+        "Guelph, Ontario",
+        "N1H 6E4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 411",
+      "Lot 3 & Part Lot 2",
+      "As in Inst No 677375",
+      "",
+      "PIN: 22511-0043",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "30 12 030 001 01300",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $510,000   rate: 18.0% per annum.",
+      "registered: 11/24/2014   due: 12/01/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1046/RT104667/0214_134957.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1046/RT104667/0214_135013.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1046/RT104667/0214_135036.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1046/RT104667/0214_135057.JPG",
+        "http://realtrack.cachefly.net/photos/RT10/RT1046/RT104667/0214_135113.JPG"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "338 / 752",
+      "rt_id": "RT104667"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "206 KING ST E",
+    "postcode": "N2H 2P6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/24/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "",
+    "pin": "22511-0043",
+    "rollno": "30 12 030 001 01300"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "206 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "24 Nov 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Tiffany LN Corp"
+    ],
+    "price_text": "$825,000"
+  }
+}

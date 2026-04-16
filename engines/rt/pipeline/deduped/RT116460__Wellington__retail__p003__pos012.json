@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT116460",
+  "source_folder": "Wellington/retail/p003",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT116460",
+      "source_folder": "Wellington/retail/p003",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p003/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "292 BROCK RD"
+      ],
+      "city_region": "Puslinch : Wellington",
+      "date_text": "09 May 2016",
+      "price_text": "$5,440,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1684963 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sukhdev Jassal",
+        "227 Brock Rd",
+        "Guelph, Ontario",
+        "N1H 6H9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jasben Tash Corp     905-814-1979"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Benjir Ahmed",
+        "1079 Bancroft Dr",
+        "Mississauga, Ontario",
+        "L5V 1B8"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza & Gas Bar"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 27",
+      "Plan 61R-11180, Part 3",
+      "",
+      "PIN: 71195-0323",
+      "",
+      "2.09 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,440,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $3,518,500   rate: Prime plus 5.0% per annum.",
+      "registered: 05/09/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1164/RT116460/0702_061426.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1164/RT116460/0702_061433.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1164/RT116460/0702_061522.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1164/RT116460/0702_061524.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1164/RT116460/0702_061551.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "113 / 269",
+      "rt_id": "RT116460"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "292 BROCK RD",
+    "postcode": "N1H 6H9",
+    "municipality": "Puslinch",
+    "region": "Wellington",
+    "date": "05/09/2016",
+    "desc": "Retail Plaza & Gas Bar",
+    "bldg": "",
+    "acreage": "2.09",
+    "consid": "5440000",
+    "cash": "5440000",
+    "debt": "",
+    "note": "",
+    "pin": "71195-0323",
+    "rollno": ""
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "292 BROCK RD"
+    ],
+    "city_region": "Puslinch : Wellington",
+    "date_text": "09 May 2016",
+    "note": "",
+    "description": "Retail Plaza & Gas Bar",
+    "seller_lines": [
+      "1684963 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Jasben Tash Corp"
+    ],
+    "price_text": "$5,440,000"
+  }
+}

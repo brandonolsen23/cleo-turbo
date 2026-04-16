@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT141065",
+  "source_folder": "Cochrane/all/p062",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT141065",
+      "source_folder": "Cochrane/all/p062",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p062/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "81 HINTON AVE N"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "21 Jan 2019",
+      "price_text": "$620,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2654975 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Shamash",
+        "64 Helena St",
+        "Ottawa, Ontario",
+        "K1Y 0Z7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 157, Part Lot 1337",
+      "As in Inst No N-697009",
+      "",
+      "PIN: 04035-0073",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "06 14 073 701 74200",
+    "consideration_lines": [
+      "cash: $620,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $630,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/21/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3062 / 10920",
+      "rt_id": "RT141065"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "81 HINTON AVE N",
+    "postcode": "K1Y 0Z7",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/21/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "620000",
+    "cash": "620000",
+    "debt": "",
+    "note": "",
+    "pin": "04035-0073",
+    "rollno": "06 14 073 701 74200"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "81 HINTON AVE N"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "21 Jan 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2654975 Ontario Inc"
+    ],
+    "price_text": "$620,000"
+  }
+}

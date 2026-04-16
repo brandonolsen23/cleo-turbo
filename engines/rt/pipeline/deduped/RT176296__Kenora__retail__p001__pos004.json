@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT176296",
+  "source_folder": "Kenora/retail/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176296",
+      "source_folder": "Kenora/retail/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kenora/retail/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "647 GOVERNMENT ST"
+      ],
+      "city_region": "Dryden : Kenora",
+      "date_text": "22 Mar 2023",
+      "price_text": "$7,722,934",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Loblaw Properties West Inc     905-459-2500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1 Presidents Choice Circle",
+        "Brampton, Ontario",
+        "L6Y 5S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loca Fund V ULC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Reiter",
+        "c/o Oak Street Real Estate Capital, LLC",
+        "30 N LaSalle St, Ste 4140",
+        "Chicago, IL",
+        "USA - 60602"
+      ]
+    },
+    "description_lines": [
+      "No Frills Supermarket"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Van Horne, Part Lot 1",
+      "Plan 23R-9904, Parts 1 & 2",
+      "Together with:",
+      "Plan 23R-9993, Part 1",
+      "As in Inst No LT-263109",
+      "",
+      "PIN: 42083-0002",
+      "",
+      "4.97 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $7,722,934     assumed/vtb debt: $0",
+      "",
+      "chargee: Federation des Caisse Desjardins de Quebec",
+      "principal: $73,854,412   rate: As specified in the Credit Agreement.",
+      "registered: 03/22/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 16",
+      "rt_id": "RT176296"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "647 GOVERNMENT ST",
+    "postcode": "P8N 2P6",
+    "municipality": "Dryden",
+    "region": "Kenora",
+    "date": "03/22/2023",
+    "desc": "No Frills Supermarket",
+    "bldg": "",
+    "acreage": "4.97",
+    "consid": "7722934",
+    "cash": "7722934",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "42083-0002",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "647 GOVERNMENT ST"
+    ],
+    "city_region": "Dryden : Kenora",
+    "date_text": "22 Mar 2023",
+    "note": "Portfolio",
+    "description": "No Frills Supermarket",
+    "seller_lines": [
+      "Loblaw Properties West Inc"
+    ],
+    "buyer_lines": [
+      "Loca Fund V ULC"
+    ],
+    "price_text": "$7,722,934"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT128056",
+  "source_folder": "Ottawa-Carleton/retail/p008",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT128056",
+      "source_folder": "Ottawa-Carleton/retail/p008",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p008/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1320 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "05 Sep 2017",
+      "price_text": "$3,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Pierre Paradis Realty Inc     613-746-5700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pierre Paradis",
+        "c/o Mazerolle & Lemay",
+        "1173 Cyrville Rd, Unit 202",
+        "Ottawa, Ontario",
+        "K1J 7S6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "10278521 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Corbishley",
+        "1314 Bank St",
+        "Ottawa, Ontario",
+        "K1S 3Y4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc CRF, Part Lot M",
+      "As in Inst No CR-648933",
+      "",
+      "PIN: 04145-0215",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "06 14 052 702 52000",
+    "consideration_lines": [
+      "cash: $3,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Desjardins de Hull-Aylmer",
+      "principal: $4,000,000   rate: 25.0% per annum.",
+      "registered: 09/05/2017   due: on demand",
+      "",
+      "chargee: Caisse Desjardins de Hull-Aylmer",
+      "principal: $600,000   rate: 25.0% per annum.",
+      "registered: 09/05/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1280/RT128056/1104_091716.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1280/RT128056/1104_091718.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1280/RT128056/1104_091804.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1280/RT128056/1104_091805.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "361 / 1141",
+      "rt_id": "RT128056"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1320 BANK ST",
+    "postcode": "K1P 5N8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/05/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "3300000",
+    "cash": "3300000",
+    "debt": "",
+    "note": "",
+    "pin": "04145-0215",
+    "rollno": "06 14 052 702 52000"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1320 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "05 Sep 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Pierre Paradis Realty Inc"
+    ],
+    "buyer_lines": [
+      "10278521 Canada Inc"
+    ],
+    "price_text": "$3,300,000"
+  }
+}

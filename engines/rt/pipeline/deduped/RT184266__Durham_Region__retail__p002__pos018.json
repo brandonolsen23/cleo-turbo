@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT184266",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184266",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1577 HIGHWAY 2",
+        "1577 HWY 2"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "19 Apr 2024",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1472574 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4235 Tooley Rd",
+        "Courtice, Ontario",
+        "L1E 1Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000845141 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Davinderjit Minhas",
+        "1577 Highway 2",
+        "Courtice, Ontario",
+        "L1E 2R8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Darlington, Part Lot 32",
+      "Plan 10R-1524, Parts 1 & 2",
+      "",
+      "PIN: 26592-0012",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "18 17 010 060 10800",
+    "consideration_lines": [
+      "cash: $250,000     assumed/vtb debt: $1,450,000",
+      "",
+      "chargee: 1472574 Ontario Ltd",
+      "principal: $1,450,000   rate: 5.0% per annum.",
+      "registered: 04/19/2024   due: 04/19/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144800.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144804.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144848.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144849.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144855.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144905.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1842/RT184266/0512_144906.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "69 / 506",
+      "rt_id": "RT184266"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1577 HIGHWAY 2, 1577 HWY 2",
+    "postcode": "L1E 2R8",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "04/19/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".74",
+    "consid": "1700000",
+    "cash": "250000",
+    "debt": "1450000",
+    "note": "",
+    "pin": "26592-0012",
+    "rollno": "18 17 010 060 10800"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1577 HIGHWAY 2",
+      "1577 HWY 2"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "19 Apr 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1472574 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000845141 Ontario Inc"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

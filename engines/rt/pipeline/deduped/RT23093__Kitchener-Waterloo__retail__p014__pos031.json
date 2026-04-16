@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT23093",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23093",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "188 HIGHLAND RD W",
+        "200 HIGHLAND RD W"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "05 Oct 2001",
+      "price_text": "$2,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hill Lake Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Heinz Brast",
+        "30 Coral Cres",
+        "Kitchener, Ontario",
+        "N2M 3H2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "200 Highland LP     519-745-3250"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Boyer",
+        "Boyer Fence and Deck",
+        "5 Forwell Rd",
+        "Kitchener, Ontario",
+        "N2B 1W3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "188: Kelsey's Restaurant - 1 storey; 7,175 sf",
+      "200: Retail Plaza - 11 stores; 19,091 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 786, Lots 41 & 42",
+      "Plan 739, Lots 27 & 28",
+      "Plan 58R-3177, Part 1",
+      "",
+      "N side 10m E of North Dr",
+      "",
+      "2.24 acre"
+    ],
+    "arn_text": "30 12 050 005 09300 +",
+    "consideration_lines": [
+      "cash: $450,000     assumed/vtb debt: $2,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT230/RT23093/photo.jpg"
+    },
+    "footer": {
+      "page_position": "682 / 752",
+      "rt_id": "RT23093"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "188 HIGHLAND RD W, 200 HIGHLAND RD W",
+    "postcode": "N2M 3C2",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "10/05/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.24",
+    "consid": "2450000",
+    "cash": "450000",
+    "debt": "2000000",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 050 005 09300+"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "188 HIGHLAND RD W",
+      "200 HIGHLAND RD W"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "05 Oct 2001",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Hill Lake Farms Ltd"
+    ],
+    "buyer_lines": [
+      "200 Highland LP"
+    ],
+    "price_text": "$2,450,000"
+  }
+}

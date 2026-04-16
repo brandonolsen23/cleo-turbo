@@ -1,0 +1,99 @@
+{
+  "rt_id": "RT43665",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43665",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "294 QUEEN ST E"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "07 Jul 2005",
+      "price_text": "$770,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 578, Block A",
+      "Except:",
+      "Plan 1428 (1098), Part 1",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "24 15 050 001 24200",
+    "consideration_lines": [
+      "cash: $77,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "424 / 613",
+      "rt_id": "RT43665"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "294 QUEEN ST E",
+    "postcode": "L7J 1P9",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "07/07/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "770000",
+    "cash": "77000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 050 001 24200"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "294 QUEEN ST E"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "07 Jul 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$770,000"
+  }
+}

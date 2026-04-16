@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT29358",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29358",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "845 KING ST"
+      ],
+      "city_region": "Midland : Simcoe County",
+      "date_text": "24 Dec 2002",
+      "price_text": "$1,355,250",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Corrum Properties Inc     416-740-1905"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Leonard Fantin",
+        "Cooltech Air Systems Ltd",
+        "6797 Steeles Ave W",
+        "Toronto, Ontario",
+        "M9V 4R9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Raymond & Barbara Bain"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "123 Eglinton Ave E, Ste 205",
+        "Toronto, Ontario",
+        "M4P 1J2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan R-1030, Part 1",
+      "",
+      "1.26 acre"
+    ],
+    "arn_text": "43 74 020 015 68900",
+    "consideration_lines": [
+      "cash: $1,355,250     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "626 / 712",
+      "rt_id": "RT29358"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "845 KING ST",
+    "postcode": "L4R 4K3",
+    "municipality": "Midland",
+    "region": "Simcoe County",
+    "date": "12/24/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.26",
+    "consid": "1355250",
+    "cash": "1355250",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 74 020 015 68900"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "845 KING ST"
+    ],
+    "city_region": "Midland : Simcoe County",
+    "date_text": "24 Dec 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Corrum Properties Inc"
+    ],
+    "buyer_lines": [
+      "Raymond & Barbara Bain"
+    ],
+    "price_text": "$1,355,250"
+  }
+}

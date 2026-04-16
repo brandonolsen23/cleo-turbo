@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT47936",
+  "source_folder": "York_Region/retail/p015",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47936",
+      "source_folder": "York_Region/retail/p015",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "390 STEELES AVE W"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "29 Mar 2006",
+      "price_text": "$8,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tadier & Smyth Holdings Ltd",
+        "457747 Ontario Ltd     905-832-2444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Smyth",
+        "26 Alloway Place",
+        "Maple, Ontario",
+        "L6A 1N9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "390 Steeles West Holdings Inc     416-221-9348"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Russell Jacobson",
+        "The Torgan Group",
+        "4950 Yonge St, Ste 1103",
+        "Toronto, Ontario",
+        "M2N 6K1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-8182",
+      "Parts 2, 3, 6 & 7",
+      "",
+      "2.73 acre"
+    ],
+    "arn_text": "19 28 000 010 04500",
+    "consideration_lines": [
+      "cash: $8,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Canada Trust Co",
+      "principal: $6,750,000   rate: 5.526% per annum",
+      "registered: 03/29/2006   due: 04/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "704 / 984",
+      "rt_id": "RT47936"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "390 STEELES AVE W",
+    "postcode": "L4J 6X2",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/29/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.73",
+    "consid": "8750000",
+    "cash": "8750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 28 000 010 04500"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "390 STEELES AVE W"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "29 Mar 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Tadier & Smyth Holdings Ltd",
+      "457747 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "390 Steeles West Holdings Inc"
+    ],
+    "price_text": "$8,750,000"
+  }
+}

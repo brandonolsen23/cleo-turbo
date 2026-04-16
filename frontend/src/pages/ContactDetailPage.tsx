@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { Heading, Text, Button, Badge, TextField } from "@radix-ui/themes";
-import { CaretDown, MapPin, ArrowSquareOut, Buildings } from "@phosphor-icons/react";
+import { Heading, Text, Button, Badge, TextField, Callout } from "@radix-ui/themes";
+import { CaretDown, MapPin, ArrowSquareOut, Buildings, User, Lightning, CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import { fetchApi, mutateApi } from "../api/client";
 import { useCrm } from "../components/crm/CrmContext";
 import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
+import { categoryColor } from "../lib/theme";
 import PropertyMiniMap from "../components/ui/PropertyMiniMap";
 import ConsolidateGroupsModal from "../components/ui/ConsolidateGroupsModal";
-import CreateBuyMandateDialog from "../components/crm/CreateBuyMandateDialog";
+import SourceHtmlButton from "../components/source/SourceHtmlButton";
+import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
+import LinkedInButton from "../components/ui/LinkedInButton";
+import CareerTimeline from "../components/ui/CareerTimeline";
 import type { ContactDetail, MiniMapProperty, ContactPropertyHistoryResponse, AffiliatedGroup, AffiliatedGroupsResponse } from "../types";
 
 export default function ContactDetailPage() {
@@ -22,6 +26,7 @@ export default function ContactDetailPage() {
   const [affiliatedGroups, setAffiliatedGroups] = useState<AffiliatedGroup[]>([]);
   const [showConsolidate, setShowConsolidate] = useState(false);
   const [showBuyMandateDialog, setShowBuyMandateDialog] = useState(false);
+  const [promoteStatus, setPromoteStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
 
   const load = () => {
     if (id) {
@@ -43,8 +48,14 @@ export default function ContactDetailPage() {
   if (!contact) return <Text>Loading...</Text>;
 
   const handlePromote = async () => {
-    await mutateApi(`/contacts/${id}/promote`, "POST");
-    load();
+    setPromoteStatus(null);
+    try {
+      await mutateApi(`/contacts/${id}/promote`, "POST");
+      setPromoteStatus({ type: "success", message: "Contact promoted to Engaged." });
+      load();
+    } catch {
+      setPromoteStatus({ type: "error", message: "Failed to promote contact. Please try again." });
+    }
   };
 
   const handleSave = async () => {
@@ -68,7 +79,30 @@ export default function ContactDetailPage() {
           &larr; Contacts
         </Link>
         <div className="flex items-center gap-3 mt-2">
+          {contact.linkedin_photo_url ? (
+            <img
+              src={contact.linkedin_photo_url}
+              alt={contact.display_name}
+              className="w-10 h-10 rounded-full object-cover border border-[var(--gray-6)]"
+              referrerPolicy="no-referrer"
+            />
+          ) : (
+            <div
+              className="w-10 h-10 rounded-full flex items-center justify-center border border-[var(--gray-6)]"
+              style={{ backgroundColor: "var(--gray-3)" }}
+            >
+              <User size={20} style={{ color: "var(--gray-8)" }} />
+            </div>
+          )}
           <Heading size="5" weight="medium">{contact.display_name}</Heading>
+          <LinkedInButton
+            contactId={contact.id}
+            contactName={contact.display_name}
+            linkedinUrl={contact.linkedin_url}
+            headline={contact.linkedin_headline}
+            onSaved={() => load()}
+            size="md"
+          />
           <span className={`inline-block px-2 py-0.5 rounded text-[12px] ${contact.status === 'engaged' ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
             {contact.status}
           </span>
@@ -86,6 +120,19 @@ export default function ContactDetailPage() {
           <Text size="2" style={{ color: "var(--gray-9)" }}>{contact.company_name}</Text>
         )}
       </div>
+
+      {promoteStatus && (
+        <Callout.Root
+          color={promoteStatus.type === "success" ? "jade" : "red"}
+          size="1"
+          variant="soft"
+        >
+          <Callout.Icon>
+            {promoteStatus.type === "success" ? <CheckCircle size={16} /> : <WarningCircle size={16} />}
+          </Callout.Icon>
+          <Callout.Text>{promoteStatus.message}</Callout.Text>
+        </Callout.Root>
+      )}
 
       <div className="grid grid-cols-3 gap-6">
         {/* Left: Info */}
@@ -142,6 +189,34 @@ export default function ContactDetailPage() {
               </div>
             </div>
           </div>
+
+          {/* Datanyze Contact Details */}
+          {contact.datanyze_contacts && (contact.datanyze_contacts.emails?.length > 0 || contact.datanyze_contacts.phones?.length > 0) && (
+            <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+              <div className="flex items-center gap-1.5 mb-3">
+                <Lightning size={14} weight="fill" style={{ color: "var(--amber-9)" }} />
+                <Text size="3" weight="medium">Datanyze</Text>
+              </div>
+              <div className="flex flex-col gap-3 text-[14px]">
+                {contact.datanyze_contacts.emails?.map((e, i) => (
+                  <div key={`dn-email-${i}`}>
+                    <Text size="1" style={{ color: "var(--gray-9)" }}>Email{contact.datanyze_contacts!.emails.length > 1 ? ` ${i + 1}` : ""} ({e.type})</Text>
+                    <a href={`mailto:${e.value}`} className="block no-underline" style={{ color: "var(--accent-11)" }}>
+                      {e.value}
+                    </a>
+                  </div>
+                ))}
+                {contact.datanyze_contacts.phones?.map((p, i) => (
+                  <div key={`dn-phone-${i}`}>
+                    <Text size="1" style={{ color: "var(--gray-9)" }}>Phone{contact.datanyze_contacts!.phones.length > 1 ? ` ${i + 1}` : ""} ({p.type})</Text>
+                    <a href={`tel:${p.value}`} className="block no-underline" style={{ color: "var(--accent-11)" }}>
+                      {formatPhone(p.value)}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Group Association */}
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
@@ -205,6 +280,11 @@ export default function ContactDetailPage() {
             </div>
           )}
 
+          {/* Career History (from LinkedIn enrichment) */}
+          {contact.work_history && contact.work_history.length > 0 && (
+            <CareerTimeline positions={contact.work_history} />
+          )}
+
           {/* Stats */}
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
             <Text size="3" weight="medium" className="mb-3 block">Activity</Text>
@@ -262,6 +342,7 @@ export default function ContactDetailPage() {
                       <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Side</th>
                       <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
                       <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Ownership</th>
+                      <th className="w-8 py-2" />
                     </tr>
                   </thead>
                   <tbody>
@@ -269,7 +350,18 @@ export default function ContactDetailPage() {
                       <tr key={t.source_id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                           onClick={() => navigate(`/transactions/${t.source_id}`)}>
                         <td className="py-2">{formatDate(t.sale_date)}</td>
-                        <td className="py-2">{t.display_address}</td>
+                        <td className="py-2 !whitespace-normal">
+                          <div className="whitespace-nowrap">{t.display_address}</div>
+                          {t.brands && t.brands.length > 0 && (
+                            <div className="flex flex-wrap gap-1 mt-1">
+                              {t.brands.map((b, j) => (
+                                <Badge key={j} size="1" variant="soft" color={categoryColor(b.category)}>
+                                  {b.brand}
+                                </Badge>
+                              ))}
+                            </div>
+                          )}
+                        </td>
                         <td className="py-2">{t.city}</td>
                         <td className="py-2">
                           <Badge size="1" variant="soft" color={t.side === "buyer" ? "blue" : "orange"}>
@@ -278,6 +370,9 @@ export default function ContactDetailPage() {
                         </td>
                         <td className="py-2 text-right">{formatCurrency(t.sale_price)}</td>
                         <td className="py-2 text-right">{formatOwnership(computeOwnershipYears(t.sale_date))}</td>
+                        <td className="py-2 text-center">
+                          {t.source_id?.startsWith("RT") && <SourceHtmlButton sourceId={t.source_id} />}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -311,9 +406,9 @@ export default function ContactDetailPage() {
         />
       )}
 
-      {/* Buy Mandate Dialog */}
+      {/* Buy Mandate Drawer */}
       {showBuyMandateDialog && contact && (
-        <CreateBuyMandateDialog
+        <CreateBuyMandateDrawer
           contactId={contact.id}
           entityName={contact.display_name}
           onClose={() => setShowBuyMandateDialog(false)}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT187917",
+  "source_folder": "Durham_Region/retail/p001",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187917",
+      "source_folder": "Durham_Region/retail/p001",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p001/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "246 KING ST E"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "18 Oct 2024",
+      "price_text": "$2,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Home Hardware Stores Ltd     519-664-2252"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "34 Henry St W",
+        "St Jacobs, Ontario",
+        "N0B 2N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1898578 Ontario Ltd     905-623-2355"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anthony Stone",
+        "222 King St E",
+        "Bowmanville, Ontario",
+        "L1C 1P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-32597, Parts 1 & 2",
+      "",
+      "PIN: 26629-0232",
+      "",
+      "1.33 acre"
+    ],
+    "arn_text": "18 17 020 060 12300",
+    "consideration_lines": [
+      "cash: $2,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187917/1027_152250.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187917/1027_152251.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187917/1027_152324.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187917/1027_152329.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187917/1027_152401.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "50 / 506",
+      "rt_id": "RT187917"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "246 KING ST E",
+    "postcode": "L1C 1P5",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "10/18/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.33",
+    "consid": "2200000",
+    "cash": "2200000",
+    "debt": "",
+    "note": "",
+    "pin": "26629-0232",
+    "rollno": "18 17 020 060 12300"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "246 KING ST E"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "18 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Home Hardware Stores Ltd"
+    ],
+    "buyer_lines": [
+      "1898578 Ontario Ltd"
+    ],
+    "price_text": "$2,200,000"
+  }
+}

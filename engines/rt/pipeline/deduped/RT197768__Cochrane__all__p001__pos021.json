@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT197768",
+  "source_folder": "Cochrane/all/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197768",
+      "source_folder": "Cochrane/all/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1632 TRIM RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "10 Mar 2026",
+      "price_text": "$875,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Invu Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James MacDonald",
+        "34 Nirmala Dr",
+        "Ottawa, Ontario",
+        "K4C 0B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot B",
+      "As in Inst No RR-72035",
+      "",
+      "PIN: 14531-0726",
+      "",
+      "0.82 acre"
+    ],
+    "arn_text": "06 14 500 301 00800",
+    "consideration_lines": [
+      "cash: $875,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1977/RT197768/air1.jpg",
+        "/assets/files/RT19/RT1977/RT197768/air2.jpg",
+        "/assets/files/RT19/RT1977/RT197768/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 10920",
+      "rt_id": "RT197768"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1632 TRIM RD",
+    "postcode": "K4A 3P8",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "03/10/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".82",
+    "consid": "875000",
+    "cash": "875000",
+    "debt": "",
+    "note": "",
+    "pin": "14531-0726",
+    "rollno": "06 14 500 301 00800"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1632 TRIM RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "10 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Invu Holdings Inc"
+    ],
+    "price_text": "$875,000"
+  }
+}

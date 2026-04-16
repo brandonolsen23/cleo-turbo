@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT45041",
+  "source_folder": "Peel_Region/retail/p016",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45041",
+      "source_folder": "Peel_Region/retail/p016",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p016/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1200 VANIER DR"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "25 Oct 2005",
+      "price_text": "$2,600,000",
+      "note": "Purchase & Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "1453779 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "19 McNutt St",
+        "Brampton, Ontario",
+        "L6Y 5L3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "KRTT Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mick Dhillon",
+        "1020 Johnson's Lane, Unit A1",
+        "Mississauga, Ontario",
+        "L5J 2P7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-224, Block A",
+      "",
+      "1.96 acre"
+    ],
+    "arn_text": "21 05 020 031 07329",
+    "consideration_lines": [
+      "cash: $2,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT450/RT45041/air1.jpg",
+        "/assets/files/RT4/RT450/RT45041/air2.jpg",
+        "/assets/files/RT4/RT450/RT45041/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT450/RT45041/photo.jpg"
+    },
+    "footer": {
+      "page_position": "775 / 1087",
+      "rt_id": "RT45041"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1200 VANIER DR",
+    "postcode": "L5H 4C7",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "10/25/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.96",
+    "consid": "2600000",
+    "cash": "2600000",
+    "debt": "",
+    "note": "Purchase &amp; Sale",
+    "pin": "",
+    "rollno": "21 05 020 031 07329"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1200 VANIER DR"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "25 Oct 2005",
+    "note": "Purchase & Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1453779 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "KRTT Group Ltd"
+    ],
+    "price_text": "$2,600,000"
+  }
+}

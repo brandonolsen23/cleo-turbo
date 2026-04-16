@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28630",
+  "source_folder": "Kitchener-Waterloo/multifamily/p026",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28630",
+      "source_folder": "Kitchener-Waterloo/multifamily/p026",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p026/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "521 PARK ST"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "02 Dec 2002",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1517234 Ontario Ltd     519-886-7565"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Barry Grieve",
+        "597 King St N",
+        "Waterloo, Ontario",
+        "N2V 2N3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "DD Acquisitions Ltd     416-234-8444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daniel Drimmer",
+        "5935 Airport Rd, Ste 600",
+        "Mississauga, Ontario",
+        "L4V 1W5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg: 2.5 storey; 9-1bdrm @ $55,556"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 385, Part Lot 285",
+      "As in Inst No 1559253",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "30 12 050 010 24300",
+    "consideration_lines": [
+      "cash: $100,852     assumed/vtb debt: $399,148"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1260 / 1449",
+      "rt_id": "RT28630"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "521 PARK ST",
+    "postcode": "N2G 1N8",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/02/2002",
+    "desc": "Apartment Bldg: 2.5 storey; 9-1bdrm @ $55,556",
+    "bldg": "9 units",
+    "acreage": ".21",
+    "consid": "500000",
+    "cash": "100852",
+    "debt": "399148",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 050 010 24300"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "521 PARK ST"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "02 Dec 2002",
+    "note": "",
+    "description": "Apartment Bldg: 2.5 storey; 9-1bdrm @ $55,556",
+    "seller_lines": [
+      "1517234 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "DD Acquisitions Ltd"
+    ],
+    "price_text": "$500,000"
+  }
+}

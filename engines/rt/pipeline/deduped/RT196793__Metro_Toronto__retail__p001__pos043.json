@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT196793",
+  "source_folder": "Metro_Toronto/retail/p001",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196793",
+      "source_folder": "Metro_Toronto/retail/p001",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p001/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "44 VAUGHAN RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "19 Jan 2026",
+      "price_text": "$1,145,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Schecter Realty (Woodbridge) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Schecter",
+        "195 Pinewood Ave",
+        "York, Ontario",
+        "M6C 2V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1306 - Toronto, Part Block B",
+      "As in Inst No CA-525480",
+      "",
+      "PIN: 21261-0442",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 053 500 03800",
+    "consideration_lines": [
+      "cash: $1,145,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,145,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/19/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196793/0208_084746.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196793/0208_084747.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196793/0208_084759.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196793/0208_084800.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196793/0208_084802.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "44 / 4952",
+      "rt_id": "RT196793"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "44 VAUGHAN RD",
+    "postcode": "M6G 2N4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/19/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1145000",
+    "cash": "1145000",
+    "debt": "",
+    "note": "",
+    "pin": "21261-0442",
+    "rollno": "19 04 053 500 03800"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "44 VAUGHAN RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "19 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Schecter Realty (Woodbridge) Ltd"
+    ],
+    "price_text": "$1,145,000"
+  }
+}

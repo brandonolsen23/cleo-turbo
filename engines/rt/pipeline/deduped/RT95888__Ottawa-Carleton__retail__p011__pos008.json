@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT95888",
+  "source_folder": "Ottawa-Carleton/retail/p011",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95888",
+      "source_folder": "Ottawa-Carleton/retail/p011",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p011/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "1454 MERIVALE RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "23 Oct 2013",
+      "price_text": "$1,000,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Karen Holtved",
+        "55 Bloor St W, 11th Flr",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "FCHT Holdings (Ontario) Corp     416-504-4114"
+      ],
+      "trade_name": "First Capital Realty Inc",
+      "contact_lines": [
+        "Attn: Roger Chouinard",
+        "85 Hanna St, Ste 400",
+        "Toronto, Ontario",
+        "M6K 3S3"
+      ]
+    },
+    "description_lines": [
+      "Bank Branch - 1 storey; 2,700 sf @ $370",
+      "",
+      "2,700 sf plus 1,300 sf mezzanine",
+      "Leased back to Bank of Montreal"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30, Part Lot 16",
+      "As in Inst No CR-365924",
+      "Except:",
+      "As in Inst No CR-459840",
+      "",
+      "PIN: 04686-0017",
+      "",
+      "N side Merivale Rd, W of Burris Ln",
+      "",
+      "0.49 acre"
+    ],
+    "arn_text": "06 12 000 365 01100",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT958/RT95888/0214_154525.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT958/RT95888/0214_154625.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "509 / 1141",
+      "rt_id": "RT95888"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "1454 MERIVALE RD",
+    "postcode": "K2E 5P1",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "10/23/2013",
+    "desc": "Bank Branch - 1 storey; 2,700 sf @ $370",
+    "bldg": "2,700 sf",
+    "acreage": ".49",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "04686-0017",
+    "rollno": "06 12 000 365 01100"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "1454 MERIVALE RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "23 Oct 2013",
+    "note": "Sale Leaseback",
+    "description": "Bank Branch - 1 storey; 2,700 sf @ $370",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "FCHT Holdings (Ontario) Corp"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

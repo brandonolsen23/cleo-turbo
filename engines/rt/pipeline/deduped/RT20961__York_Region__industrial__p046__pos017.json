@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT20961",
+  "source_folder": "York_Region/industrial/p046",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20961",
+      "source_folder": "York_Region/industrial/p046",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p046/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "54 MCAVOY RD"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "20 Mar 1996",
+      "price_text": "$3,858,820",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Imperial Bank of Commerce"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Chan",
+        "Specail Loans, Risk Management Division",
+        "6th Flr, Commerce Court West",
+        "Toronto, Ontario",
+        "M5L 1A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "54 McAvoy Road Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeff Levine",
+        "347 Bay St, Ste 301",
+        "Toronto, Ontario",
+        "M5H 2R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-2873, Lots 19-22"
+    ],
+    "arn_text": "19 46 000 113 87600",
+    "consideration_lines": [
+      "cash: $433,750     assumed/vtb debt: $3,425,070"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2268 / 2269",
+      "rt_id": "RT20961"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "54 MCAVOY RD",
+    "postcode": "",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "03/20/1996",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "3858820",
+    "cash": "433750",
+    "debt": "3425070",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 46 000 113 87600"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "54 MCAVOY RD"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "20 Mar 1996",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Canadian Imperial Bank of Commerce"
+    ],
+    "buyer_lines": [
+      "54 McAvoy Road Ltd"
+    ],
+    "price_text": "$3,858,820"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT45099",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45099",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1092 - 1096 MAIN ST W"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "28 Oct 2005",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sonan Development Ltd",
+        "Ironwood Construction Ltd",
+        "905-634-7398"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donna Crockett",
+        "847 Glenwood Dr",
+        "Burlington, Ontario",
+        "L7T 2J8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Geese Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Schultz",
+        "400 Dundas St, 2nd Flr",
+        "London, Ontario",
+        "N6B 1V7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 646",
+      "Lot 103 & Part Lot 104",
+      "As in Inst No VM-201794",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "25 18 010 057 00880",
+    "consideration_lines": [
+      "cash: $137,500     assumed/vtb debt: $412,500",
+      "",
+      "chargee: Sonan Developments Ltd",
+      "principal: $412,500   rate: 6.0% per annum",
+      "registered: 10/28/2005   due: 10/28/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT450/RT45099/air1.jpg",
+        "/assets/files/RT4/RT450/RT45099/air2.jpg",
+        "/assets/files/RT4/RT450/RT45099/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "462 / 616",
+      "rt_id": "RT45099"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1092 - 1096 MAIN ST W",
+    "postcode": "L8S 1B3",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "10/28/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "550000",
+    "cash": "137500",
+    "debt": "412500",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 010 057 00880"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1092 - 1096 MAIN ST W"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "28 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sonan Development Ltd",
+      "Ironwood Construction Ltd"
+    ],
+    "buyer_lines": [
+      "Geese Developments Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

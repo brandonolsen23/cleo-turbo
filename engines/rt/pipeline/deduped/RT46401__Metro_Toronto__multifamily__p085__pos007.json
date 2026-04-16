@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT46401",
+  "source_folder": "Metro_Toronto/multifamily/p085",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46401",
+      "source_folder": "Metro_Toronto/multifamily/p085",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p085/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "593 COLLEGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Dec 2005",
+      "price_text": "$620,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1577339 Ontario Ltd     416-588-3550"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ki Chang",
+        "Brian B. Im",
+        "703 Bloor St W, Ste 240",
+        "Toronto, Ontario",
+        "M6G 1L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43",
+      "Part Lots 4 & 5, E/S Clinton St",
+      "As in Inst No WB-199415",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 043 110 01400",
+    "consideration_lines": [
+      "cash: $620,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Korea Exchange Bank of Canada",
+      "principal: $302,000   rate: Prime plus 1.0% per annum",
+      "registered: 12/01/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT464/RT46401/air1.jpg",
+        "/assets/files/RT4/RT464/RT46401/air2.jpg",
+        "/assets/files/RT4/RT464/RT46401/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4208 / 6031",
+      "rt_id": "RT46401"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "593 COLLEGE ST",
+    "postcode": "M6G 1B2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "620000",
+    "cash": "620000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 043 110 01400"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "593 COLLEGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1577339 Ontario Ltd"
+    ],
+    "price_text": "$620,000"
+  }
+}

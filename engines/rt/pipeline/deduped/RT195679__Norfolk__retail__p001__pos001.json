@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT195679",
+  "source_folder": "Norfolk/retail/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195679",
+      "source_folder": "Norfolk/retail/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Norfolk/retail/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "295 QUEENSWAY W"
+      ],
+      "city_region": "Simcoe : Norfolk",
+      "date_text": "28 Nov 2025",
+      "price_text": "$6,275,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Queensway West Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "237 Grand Vellore Cres",
+        "Woodbridge, Ontario",
+        "L4H 0N9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1111801 Ontario Inc     519-539-5474"
+      ],
+      "trade_name": "Leon's Furniture",
+      "contact_lines": [
+        "Attn: Roger Banghart",
+        "905 Dundas St",
+        "Woodstock, Ontario",
+        "N3S 1G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1956/RT195679/mi.pdf",
+    "site_lines": [
+      "Plan 37R-9344, Part 14",
+      "Plan 37R-9402, Parts 3 & 6",
+      "",
+      "PIN: 50189-0118",
+      "",
+      "2.98 acre"
+    ],
+    "arn_text": "33 10 401 001 16000",
+    "consideration_lines": [
+      "cash: $6,275,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Reeves Land Corporation",
+      "principal: $600,000   rate: 7.75% per annum.",
+      "registered: 11/28/2025   due: 05/28/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1956/RT195679/air1.jpg",
+        "/assets/files/RT19/RT1956/RT195679/air2.jpg",
+        "/assets/files/RT19/RT1956/RT195679/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 45",
+      "rt_id": "RT195679"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "295 QUEENSWAY W",
+    "postcode": "N3Y 2M9",
+    "municipality": "Simcoe",
+    "region": "Norfolk",
+    "date": "11/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.98",
+    "consid": "6275000",
+    "cash": "6275000",
+    "debt": "",
+    "note": "",
+    "pin": "50189-0118",
+    "rollno": "33 10 401 001 16000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "295 QUEENSWAY W"
+    ],
+    "city_region": "Simcoe : Norfolk",
+    "date_text": "28 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Queensway West Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1111801 Ontario Inc"
+    ],
+    "price_text": "$6,275,000"
+  }
+}

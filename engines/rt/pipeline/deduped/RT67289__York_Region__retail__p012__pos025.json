@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT67289",
+  "source_folder": "York_Region/retail/p012",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67289",
+      "source_folder": "York_Region/retail/p012",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "4300 STEELES AVE E",
+        "UNIT B66"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "10 Jun 2009",
+      "price_text": "$825,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1713419 Ontario Inc     905-881-7722"
+      ],
+      "trade_name": "Henry Hui & Associates",
+      "contact_lines": [
+        "Attn: Wan-Ling Mok",
+        "350 Highway 7 E, Ste 301",
+        "Richmond Hill, Ontario",
+        "L4B 3N2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "A & S Leung Developments Ltd     905-209-9061"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anthony Leung",
+        "233 Walkerville Rd",
+        "Markham, Ontario",
+        "L6B 1C6"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo",
+      "",
+      "Part of the Pacific Mall (an enclosed shopping centre)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 890",
+      "Level 1, Units 467-469",
+      "",
+      "PIN: 29421-0467 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of East Asia (Canada)",
+      "principal: $600,000   rate: Prime plus 5.0% per annum",
+      "registered: 06/10/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "576 / 984",
+      "rt_id": "RT67289"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "4300 STEELES AVE E, UNIT B66",
+    "postcode": "L3R 0Y5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/10/2009",
+    "desc": "Retail Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "",
+    "pin": "29421-0467+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "4300 STEELES AVE E",
+      "UNIT B66"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "10 Jun 2009",
+    "note": "",
+    "description": "Retail Condo",
+    "seller_lines": [
+      "1713419 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "A & S Leung Developments Ltd"
+    ],
+    "price_text": "$825,000"
+  }
+}

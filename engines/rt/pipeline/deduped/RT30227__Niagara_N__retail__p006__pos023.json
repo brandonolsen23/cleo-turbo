@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT30227",
+  "source_folder": "Niagara_N/retail/p006",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30227",
+      "source_folder": "Niagara_N/retail/p006",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p006/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "211 SCOTT ST"
+      ],
+      "city_region": "St. Catharines : Niagara N",
+      "date_text": "30 Apr 2003",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "479598 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Conlon",
+        "211 Scott St",
+        "St Catharines, Ontario",
+        "L2N 1H5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1341133 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Alan Strickland",
+        "329 Welland Ave",
+        "St Catharines, Ontario",
+        "L2R 2R2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 18",
+      "As in Inst No 498335",
+      "",
+      "NE corner at Second Dr",
+      "",
+      "0.38 acre"
+    ],
+    "arn_text": "26 29 060 025 17000",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Leasing: 905-984-0253"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT302/RT30227/photo.jpg"
+    },
+    "footer": {
+      "page_position": "274 / 307",
+      "rt_id": "RT30227"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "211 SCOTT ST",
+    "postcode": "L2N 1H5",
+    "municipality": "St. Catharines",
+    "region": "Niagara N",
+    "date": "04/30/2003",
+    "desc": "Retail Plaza - 2 storey",
+    "bldg": "",
+    "acreage": ".38",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 29 060 025 17000"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "211 SCOTT ST"
+    ],
+    "city_region": "St. Catharines : Niagara N",
+    "date_text": "30 Apr 2003",
+    "note": "",
+    "description": "Retail Plaza - 2 storey",
+    "seller_lines": [
+      "479598 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1341133 Ontario Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

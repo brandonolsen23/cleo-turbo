@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT29280",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29280",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "2510 - 2592 FINCH AVE W"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "14 Mar 2003",
+      "price_text": "$12,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Assurance Co of Canada     416-408-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Luke Zych",
+        "225 King St W, 11th Flr",
+        "Toronto, Ontario",
+        "M5V 3C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Finchdale Plaza Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sidney Sitzer",
+        "255 Lesmill Rd",
+        "Toronto, Ontario",
+        "M3B 2V1"
+      ]
+    },
+    "description_lines": [
+      "Finchdale Plaza - 2 storey; 32 units 96,879 sf @ $129",
+      "",
+      "Includes 5,118 sf of second storey office."
+    ],
+    "more_info_url": "/assets/files/RT2/RT292/RT29280/mi.pdf",
+    "site_lines": [
+      "Plan 66M-1078, Blocks A & B",
+      "",
+      "7.74 acre"
+    ],
+    "arn_text": "19 08 013 550 00200",
+    "consideration_lines": [
+      "cash: $12,450,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT292/RT29280/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4044 / 4952",
+      "rt_id": "RT29280"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "2510 - 2592 FINCH AVE W",
+    "postcode": "M9M 2G3",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "03/14/2003",
+    "desc": "Finchdale Plaza - 2 storey; 32 units 96,879 sf @ $129",
+    "bldg": "96,879 sf",
+    "acreage": "7.74",
+    "consid": "12450000",
+    "cash": "12450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 013 550 00200"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "2510 - 2592 FINCH AVE W"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "14 Mar 2003",
+    "note": "",
+    "description": "Finchdale Plaza - 2 storey; 32 units 96,879 sf @ $129",
+    "seller_lines": [
+      "Sun Life Assurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "Finchdale Plaza Ltd"
+    ],
+    "price_text": "$12,450,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT105634",
+  "source_folder": "Cochrane/all/p098",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105634",
+      "source_folder": "Cochrane/all/p098",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p098/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1353 MAXIME ST"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "05 Jan 2015",
+      "price_text": "$764,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Portalia Construction Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roberto Aguiar",
+        "837 Maryland Ave",
+        "Ottawa, Ontario",
+        "K2C 0H9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-25790, Parts 7-9",
+      "",
+      "PIN: 04361-0436",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "06 14 600 195 12703",
+    "consideration_lines": [
+      "cash: $764,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $544,000   rate: Prime plus 10.0% per annum.",
+      "registered: 01/05/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4852 / 10920",
+      "rt_id": "RT105634"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1353 MAXIME ST",
+    "postcode": "K1B 3L2",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "01/05/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".09",
+    "consid": "764000",
+    "cash": "764000",
+    "debt": "",
+    "note": "",
+    "pin": "04361-0436",
+    "rollno": "06 14 600 195 12703"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1353 MAXIME ST"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "05 Jan 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Portalia Construction Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$764,000"
+  }
+}

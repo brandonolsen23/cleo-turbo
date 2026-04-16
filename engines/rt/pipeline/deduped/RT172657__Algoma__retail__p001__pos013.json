@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT172657",
+  "source_folder": "Algoma/retail/p001",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT172657",
+      "source_folder": "Algoma/retail/p001",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "40 HILLSDALE DR S"
+      ],
+      "city_region": "Elliot Lake : Algoma",
+      "date_text": "17 Oct 2022",
+      "price_text": "$10,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "McCowan and Associates Ltd     705-737-1057"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "158 Dunlop St E, Ste 201",
+        "Barrie, Ontario",
+        "L4N 1B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Pearson Plaza Ltd     905-526-6300"
+      ],
+      "trade_name": "Kingsway Investments",
+      "contact_lines": [
+        "Attn: Robbie Khanna",
+        "105 Main St E, Ste 1510",
+        "Hamilton, Ontario",
+        "L8N 1G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-151 - Gunterman, Blocks K, L & M",
+      "Plan 1R-12313, Part 1",
+      "Except:",
+      "Plan 1R-2956, Part 5",
+      "",
+      "PIN: 31627-0282",
+      "",
+      "8.46 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,000,000     assumed/vtb debt: $7,500,000",
+      "",
+      "chargee: McCowan and Associates Ltd",
+      "principal: $7,500,000   rate: 5.0% per annum.",
+      "registered: 10/17/2022   due: 10/17/2023"
+    ],
+    "broker_lines": [
+      "CBRE Ltd: Brad Walford, Sean Comiskey & Brett Taggart, 416-495-6269"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "14 / 29",
+      "rt_id": "RT172657"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "40 HILLSDALE DR S",
+    "postcode": "P5A 1M7",
+    "municipality": "Elliot Lake",
+    "region": "Algoma",
+    "date": "10/17/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "8.46",
+    "consid": "10500000",
+    "cash": "3000000",
+    "debt": "7500000",
+    "note": "",
+    "pin": "31627-0282",
+    "rollno": ""
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "40 HILLSDALE DR S"
+    ],
+    "city_region": "Elliot Lake : Algoma",
+    "date_text": "17 Oct 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "McCowan and Associates Ltd"
+    ],
+    "buyer_lines": [
+      "Pearson Plaza Ltd"
+    ],
+    "price_text": "$10,500,000"
+  }
+}

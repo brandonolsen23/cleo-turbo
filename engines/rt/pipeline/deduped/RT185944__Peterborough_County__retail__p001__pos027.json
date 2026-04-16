@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT185944",
+  "source_folder": "Peterborough_County/retail/p001",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185944",
+      "source_folder": "Peterborough_County/retail/p001",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p001/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "462 LINDSAY RD",
+        "462 LINDSAY HIGHWAY",
+        "462 LINDSAY HWY"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "25 Jun 2024",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2599305 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2946 Quetta Mews",
+        "Mississauga, Ontario",
+        "L5N 1Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "100836591 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nazirabanu Patel",
+        "33 Panmure Cres",
+        "Toronto, Ontario",
+        "M1K 4Y5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - Smith, Part Lot 7",
+      "Plan 45R-15841, Part 7",
+      "As in Inst No R-446196",
+      "",
+      "PIN: 28422-0047 +",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "chattels: $2,000,000",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,427,500   rate: Prime plus 5.0% per annum.",
+      "registered: 06/25/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1859/RT185944/0101_112621.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1859/RT185944/0101_112622.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1859/RT185944/0101_112656a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1859/RT185944/0101_112656b.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "28 / 157",
+      "rt_id": "RT185944"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "462 LINDSAY RD, 462 LINDSAY HIGHWAY, 462 LINDSAY HWY",
+    "postcode": "K9J 0C5",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "06/25/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "28422-0047+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "462 LINDSAY RD",
+      "462 LINDSAY HIGHWAY",
+      "462 LINDSAY HWY"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "25 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2599305 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "100836591 Ontario Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

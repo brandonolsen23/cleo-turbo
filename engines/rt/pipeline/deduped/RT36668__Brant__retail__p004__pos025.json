@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT36668",
+  "source_folder": "Brant/retail/p004",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36668",
+      "source_folder": "Brant/retail/p004",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "595 WEST ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "30 Jun 2004",
+      "price_text": "$9,520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Zand Development Corp     416-365-7979"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Zimmer",
+        "Lewis Mitz",
+        "185 King St E, Ste 100",
+        "Toronto, Ontario",
+        "M5A 1J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Edmondson Street Power Centre Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gregory Voisin",
+        "370 Steeles Ave W, Ste 207",
+        "Thornhill, Ontario",
+        "L4J 6X1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 10 units 120,000 sf @ $79"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 36",
+      "Plan 2R-4149, Part 1",
+      "Except:",
+      "Plan 2R-4974, Part 1",
+      "Plan 2R-4977, Part 1",
+      "",
+      "10.03 acre"
+    ],
+    "arn_text": "29 06 030 007 10500",
+    "consideration_lines": [
+      "cash: $3,483,359     assumed/vtb debt: $6,036,641"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "176 / 195",
+      "rt_id": "RT36668"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "595 WEST ST",
+    "postcode": "N3R 7J8",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "06/30/2004",
+    "desc": "Retail Plaza - 1 storey; 10 units 120,000 sf @ $79",
+    "bldg": "120,000 sf",
+    "acreage": "10.03",
+    "consid": "9520000",
+    "cash": "3483359",
+    "debt": "6036641",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 007 10500"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "595 WEST ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "30 Jun 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 10 units 120,000 sf @ $79",
+    "seller_lines": [
+      "Zand Development Corp"
+    ],
+    "buyer_lines": [
+      "Edmondson Street Power Centre Corp"
+    ],
+    "price_text": "$9,520,000"
+  }
+}

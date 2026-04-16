@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT191985",
+  "source_folder": "Ottawa-Carleton/retail/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191985",
+      "source_folder": "Ottawa-Carleton/retail/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1480 MERIVALE RD"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "07 May 2025",
+      "price_text": "$2,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "8196192 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Giuseppe Epifano",
+        "1480 Merivale Rd",
+        "Ottawa, Ontario",
+        "K2E 6Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 30, Part Lot 19",
+      "As in Inst No NS-218642",
+      "",
+      "PIN: 04686-0009",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "06 12 000 365 01500",
+    "consideration_lines": [
+      "cash: $2,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/07/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 1141",
+      "rt_id": "RT191985"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1480 MERIVALE RD",
+    "postcode": "K2E 6Z5",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "05/07/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "2300000",
+    "cash": "2300000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04686-0009",
+    "rollno": "06 12 000 365 01500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1480 MERIVALE RD"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "07 May 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "8196192 Canada Inc"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

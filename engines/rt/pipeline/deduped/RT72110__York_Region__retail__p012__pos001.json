@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT72110",
+  "source_folder": "York_Region/retail/p012",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72110",
+      "source_folder": "York_Region/retail/p012",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "360 HWY 7 E",
+        "UNITS 15 & 16"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "26 Apr 2010",
+      "price_text": "$738,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1591612 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tonia Ho",
+        "14 Azalea Gateway",
+        "Thornhill, Ontario",
+        "L3T 7V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2143227 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Li Jiang",
+        "173 Leitchcroft Cres",
+        "Markham, Ontario",
+        "L3T 7T5"
+      ]
+    },
+    "description_lines": [
+      "Retail Condos"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 850",
+      "Level 1, Units 12 & 13",
+      "Level A, Units 11-14",
+      "",
+      "PIN: 29380-0012 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $738,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72110/0508_111253.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72110/0508_111323.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72110/0508_111416.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72110/0508_111504.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT721/RT72110/0508_111650.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "552 / 984",
+      "rt_id": "RT72110"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "360 HWY 7 E, UNITS 15 & 16",
+    "postcode": "",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "04/26/2010",
+    "desc": "Retail Condos",
+    "bldg": "",
+    "acreage": "",
+    "consid": "738000",
+    "cash": "738000",
+    "debt": "",
+    "note": "",
+    "pin": "29380-0012+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "360 HWY 7 E",
+      "UNITS 15 & 16"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "26 Apr 2010",
+    "note": "",
+    "description": "Retail Condos",
+    "seller_lines": [
+      "1591612 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2143227 Ontario Inc"
+    ],
+    "price_text": "$738,000"
+  }
+}

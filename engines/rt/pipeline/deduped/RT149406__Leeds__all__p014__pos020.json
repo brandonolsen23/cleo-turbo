@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT149406",
+  "source_folder": "Leeds/all/p014",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT149406",
+      "source_folder": "Leeds/all/p014",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p014/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 10",
+        "PART LOT 8"
+      ],
+      "city_region": "Plympton : Lambton",
+      "date_text": "07 Feb 2020",
+      "price_text": "$814,883",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "3719 Queen Street Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brad Zantingh",
+        "3684 Windcliff Lane",
+        "Camlachie, Ontario",
+        "N0N 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 8",
+      "Plan 25R-10161, Part 23",
+      "As in Inst No LA-95599",
+      "Except:",
+      "Plan 25R-10161, Parts 6, 15-22",
+      "Plan 25R-10706, Parts 1-6, 9-12",
+      "",
+      "PIN: 43093-0264",
+      "",
+      "46.88 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $814,883     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,400,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/07/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "671 / 1916",
+      "rt_id": "RT149406"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "CONC 10, PART LOT 8",
+    "postcode": "N0N 1E0",
+    "municipality": "Plympton",
+    "region": "Lambton",
+    "date": "02/07/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "46.88",
+    "consid": "814883",
+    "cash": "814883",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43093-0264",
+    "rollno": ""
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "CONC 10",
+      "PART LOT 8"
+    ],
+    "city_region": "Plympton : Lambton",
+    "date_text": "07 Feb 2020",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "3719 Queen Street Inc"
+    ],
+    "price_text": "$814,883"
+  }
+}

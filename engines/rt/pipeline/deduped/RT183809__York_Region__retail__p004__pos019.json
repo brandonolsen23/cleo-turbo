@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT183809",
+  "source_folder": "York_Region/retail/p004",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183809",
+      "source_folder": "York_Region/retail/p004",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "9390 WOODBINE AVE",
+        "SUITE 1CF3 & 1CF5"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "21 Mar 2024",
+      "price_text": "$730,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2852500 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7657 rue Cordner",
+        "Lasalle, Quebec",
+        "H8N 2X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000523284 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Siyun Feng",
+        "c/o Castle Law Professional Corp",
+        "1090 Don Mills Rd, Ste 400",
+        "Toronto, Ontario",
+        "M3C 3R6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1415",
+      "Level 1, Units 237 & 238",
+      "",
+      "PIN: 29946-0237 +"
+    ],
+    "arn_text": "00 36 020 136 52524 +",
+    "consideration_lines": [
+      "cash: $730,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $225,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/21/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183809/0407_130324.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183809/0407_130328.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183809/0407_130330.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1838/RT183809/0407_130334.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "170 / 984",
+      "rt_id": "RT183809"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "9390 WOODBINE AVE, SUITE 1CF3 & 1CF5",
+    "postcode": "L6C 0M5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "03/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "730000",
+    "cash": "730000",
+    "debt": "",
+    "note": "",
+    "pin": "29946-0237+",
+    "rollno": "00 36 020 136 52524+"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "9390 WOODBINE AVE",
+      "SUITE 1CF3 & 1CF5"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "21 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2852500 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000523284 Ontario Inc"
+    ],
+    "price_text": "$730,000"
+  }
+}

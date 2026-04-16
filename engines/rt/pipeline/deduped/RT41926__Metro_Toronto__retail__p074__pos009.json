@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT41926",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41926",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "565 MARKHAM RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "20 May 2005",
+      "price_text": "$1,236,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Nivlog Investments Ltd     905-479-5052"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stuart Golvin",
+        "Golfour Property Services",
+        "366 Denison St, Ste 1",
+        "Markham, Ontario",
+        "L3R 1B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2037543 Ontario Inc     416-459-9993"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hameed Sammady",
+        "18 Erinlea Cres",
+        "Toronto, Ontario",
+        "M1H 2S9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2 units 12,000 sf @ $103",
+      "",
+      "Bldg size excludes finished basement of about 12,000 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan R-1677, Part 1",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "19 01 081 050 00300",
+    "consideration_lines": [
+      "cash: $1,236,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,100,000   rate: Floating base rate plus 10.0% per annum",
+      "registered: 05/20/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT419/RT41926/air1.jpg",
+        "/assets/files/RT4/RT419/RT41926/air2.jpg",
+        "/assets/files/RT4/RT419/RT41926/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT419/RT41926/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3660 / 4952",
+      "rt_id": "RT41926"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "565 MARKHAM RD",
+    "postcode": "M1H 2A3",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/20/2005",
+    "desc": "Retail Bldg - 1 storey; 2 units 12,000 sf @ $103",
+    "bldg": "12,000 sf",
+    "acreage": ".45",
+    "consid": "1236000",
+    "cash": "1236000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 081 050 00300"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "565 MARKHAM RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "20 May 2005",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2 units 12,000 sf @ $103",
+    "seller_lines": [
+      "Nivlog Investments Ltd"
+    ],
+    "buyer_lines": [
+      "2037543 Ontario Inc"
+    ],
+    "price_text": "$1,236,000"
+  }
+}

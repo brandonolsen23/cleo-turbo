@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT45026",
+  "source_folder": "Durham_Region/retail/p007",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45026",
+      "source_folder": "Durham_Region/retail/p007",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p007/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "1188 SIMCOE ST S"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "21 Oct 2005",
+      "price_text": "$510,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1092250 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ross McLean",
+        "870 Taunton Rd E",
+        "Whitby, Ontario",
+        "L1N 5R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JKL Vehicle Repair Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Linkie",
+        "1188 Simcoe St S",
+        "Oshawa, Ontario",
+        "L1H 4M2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 486",
+      "Block B",
+      "Lots 3 & 4",
+      "Part Lots 1, 2, 5 & 12",
+      "As in Inst No D-65052",
+      "",
+      "1.17 acre"
+    ],
+    "arn_text": "18 13 050 014 00300",
+    "consideration_lines": [
+      "cash: $510,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Auto Workers Community Credit Union Ltd",
+      "principal: $504,440   rate: Prime plus 6.0% per annum",
+      "registered: 10/21/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT450/RT45026/air1.jpg",
+        "/assets/files/RT4/RT450/RT45026/air2.jpg",
+        "/assets/files/RT4/RT450/RT45026/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "346 / 506",
+      "rt_id": "RT45026"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "1188 SIMCOE ST S",
+    "postcode": "L1H 4M2",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "10/21/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.17",
+    "consid": "510000",
+    "cash": "510000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 13 050 014 00300"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "1188 SIMCOE ST S"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "21 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1092250 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "JKL Vehicle Repair Ltd"
+    ],
+    "price_text": "$510,000"
+  }
+}

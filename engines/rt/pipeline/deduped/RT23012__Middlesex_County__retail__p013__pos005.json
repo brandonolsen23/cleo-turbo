@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23012",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23012",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "578 RICHMOND ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "09 Oct 2001",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1231025 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ben Rosehart",
+        "630 Richmond St",
+        "London, Ontario",
+        "N6A 3G6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1295107 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Lubell",
+        "591 Sunningdale Rd E",
+        "London, Ontario",
+        "N5X 4B3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3,162 sf @ $237",
+      "",
+      "Bldg size does not include 2,200 sf basement."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-6944, Parts 2 & 3",
+      "Except Plan 33R-14083, Part 1"
+    ],
+    "arn_text": "39 36 010 010 05500",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $150,000"
+    ],
+    "broker_lines": [
+      "JJ Barnicke: Richard Gleed, 519-438-5588"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT230/RT23012/photo.jpg"
+    },
+    "footer": {
+      "page_position": "606 / 686",
+      "rt_id": "RT23012"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "578 RICHMOND ST",
+    "postcode": "N6A 3G1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "10/09/2001",
+    "desc": "Retail Bldg - 1 storey; 3,162 sf @ $237",
+    "bldg": "3,162 sf",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "600000",
+    "debt": "150000",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 010 010 05500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "578 RICHMOND ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "09 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3,162 sf @ $237",
+    "seller_lines": [
+      "1231025 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1295107 Ontario Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

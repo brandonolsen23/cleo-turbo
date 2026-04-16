@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT198008",
+  "source_folder": "Oxford_County/all/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198008",
+      "source_folder": "Oxford_County/all/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/all/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "4605 WOODHULL RD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "27 Mar 2026",
+      "price_text": "$2,453,136",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001505886 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Craig Russell",
+        "4605 Woodhull Rd",
+        "London, Ontario",
+        "N6P 1P3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 11",
+      "Plan 33R-15225, Parts 6-10",
+      "",
+      "PIN: 08504-0128",
+      "",
+      "13.80 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $2,453,136"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 7032",
+      "rt_id": "RT198008"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "4605 WOODHULL RD",
+    "postcode": "N6P 1P3",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "13.8",
+    "consid": "2453136",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "08504-0128",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "4605 WOODHULL RD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "27 Mar 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001505886 Ontario Inc"
+    ],
+    "price_text": "$2,453,136"
+  }
+}

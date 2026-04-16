@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT61581",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT61581",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "1188 VICTORIA ST N"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "31 Mar 2008",
+      "price_text": "$560,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2164038 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nasser Arbab",
+        "2800 John St, Ste 9",
+        "Markham, Ontario",
+        "L3R 0E2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Part Lot 122",
+      "As in Inst No B-45813",
+      "Except Plans:",
+      "58R-2304 & 58G-379",
+      "",
+      "1.43 acre"
+    ],
+    "arn_text": "30 12 060 016 08600",
+    "consideration_lines": [
+      "cash: $560,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $392,000   rate: 6.0% per annum",
+      "registered: 03/31/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT615/RT61581/0531_110750.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT615/RT61581/0531_110756.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT615/RT61581/0531_110807.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT615/RT61581/air1.jpg",
+        "/assets/files/RT6/RT615/RT61581/air2.jpg",
+        "/assets/files/RT6/RT615/RT61581/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "529 / 752",
+      "rt_id": "RT61581"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "1188 VICTORIA ST N",
+    "postcode": "N2B 3C9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/31/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.43",
+    "consid": "560000",
+    "cash": "560000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 060 016 08600"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "1188 VICTORIA ST N"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "31 Mar 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2164038 Ontario Inc"
+    ],
+    "price_text": "$560,000"
+  }
+}

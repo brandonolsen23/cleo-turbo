@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT181394",
+  "source_folder": "Renfrew/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181394",
+      "source_folder": "Renfrew/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "28 BAY ST"
+      ],
+      "city_region": "Barrys Bay : Renfrew",
+      "date_text": "14 Nov 2023",
+      "price_text": "$3,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1085365 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "88 Sprucedale Ave",
+        "PO Box 1031",
+        "Barry's Bay, Ontario",
+        "K0J 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Metro Ontario Real Estate Ltd     416-239-7171"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jim Mantua",
+        "5559 Dundas St W",
+        "Etobicoke, Ontario",
+        "M9B 1B9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 49R-10905, Part 1",
+      "Plan 49R-10887, Parts 1-3",
+      "",
+      "PIN: 57572-0135",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "47 28 000 010 40900",
+    "consideration_lines": [
+      "cash: $3,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 52",
+      "rt_id": "RT181394"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "28 BAY ST",
+    "postcode": "K0J 1B0",
+    "municipality": "Barrys Bay",
+    "region": "Renfrew",
+    "date": "11/14/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "3700000",
+    "cash": "3700000",
+    "debt": "",
+    "note": "",
+    "pin": "57572-0135",
+    "rollno": "47 28 000 010 40900"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "28 BAY ST"
+    ],
+    "city_region": "Barrys Bay : Renfrew",
+    "date_text": "14 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1085365 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Metro Ontario Real Estate Ltd"
+    ],
+    "price_text": "$3,700,000"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT194890",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194890",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "3183 ERRINGTON AVE"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "15 Oct 2025",
+      "price_text": "$2,195,015",
+      "note": "50% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Mallette-Goring Holdings Ltd",
+        "Philip Chandler"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Laurent Gauthier",
+        "196 Bons Vivants Rd",
+        "Noelville, Ontario",
+        "P0M 2N0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Danmar Food Distribution Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Schroeder",
+        "3987 Long Lake Rd",
+        "Sudbury, Ontario",
+        "P3G 1N5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Balfour, Lot 2",
+      "Plan M-91, Block 16,",
+      "Lots 6-8, 13-15, 22, 23",
+      "As in Inst Nos: LT-15513 & LT-384764",
+      "Except:",
+      "Exprop Plan D-17, Unit 3-9",
+      "Inst No LT-54954",
+      "",
+      "PIN: 73349-1840",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "53 07 160 006 14700",
+    "consideration_lines": [
+      "cash: $1,350,000     assumed/vtb debt: $845,015",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $2,000,000   rate: Prime plus 10.0% per annum.",
+      "registered: 10/15/2025   due: on demand",
+      "",
+      "chargee: Caisse Desjardins Ontario Credit Union Inc",
+      "principal: $1,250,000   rate: Prime plus 10.0% per annum.",
+      "registered: 02/28/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 90",
+      "rt_id": "RT194890"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "3183 ERRINGTON AVE",
+    "postcode": "P0M 1L0",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "10/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "2195015",
+    "cash": "1350000",
+    "debt": "845015",
+    "note": "50% Interest",
+    "pin": "73349-1840",
+    "rollno": "53 07 160 006 14700"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "3183 ERRINGTON AVE"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "15 Oct 2025",
+    "note": "50% Interest",
+    "description": "",
+    "seller_lines": [
+      "Mallette-Goring Holdings Ltd",
+      "Philip Chandler"
+    ],
+    "buyer_lines": [
+      "Danmar Food Distribution Inc"
+    ],
+    "price_text": "$2,195,015"
+  }
+}

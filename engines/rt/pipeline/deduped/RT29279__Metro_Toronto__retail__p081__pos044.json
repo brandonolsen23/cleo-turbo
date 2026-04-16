@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT29279",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29279",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "275 PORT UNION RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "14 Mar 2003",
+      "price_text": "$5,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Assurance Co of Canada     416-408-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Luke Zych",
+        "225 King St W, 11th Flr",
+        "Toronto, Ontario",
+        "M5V 3C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ravine Park Plaza Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sidney Sitzer",
+        "255 Lesmill Rd",
+        "Toronto, Ontario",
+        "M3B 2V1"
+      ]
+    },
+    "description_lines": [
+      "Ravine Park Plaza - 1 storey; 14 units 50,961 sf @ $106"
+    ],
+    "more_info_url": "/assets/files/RT2/RT292/RT29279/mi.pdf",
+    "site_lines": [
+      "BFC, Range 2, Part Lot 35",
+      "Plan M-36, Blocks E, F & G",
+      "As in Inst No TB-118713",
+      "",
+      "3.99 acre"
+    ],
+    "arn_text": "19 01 096 130 00100",
+    "consideration_lines": [
+      "cash: $5,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT292/RT29279/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4045 / 4952",
+      "rt_id": "RT29279"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "275 PORT UNION RD",
+    "postcode": "M1C 2L3",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "03/14/2003",
+    "desc": "Ravine Park Plaza - 1 storey; 14 units 50,961 sf @ $106",
+    "bldg": "50,961 sf",
+    "acreage": "3.99",
+    "consid": "5400000",
+    "cash": "5400000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 096 130 00100"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "275 PORT UNION RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "14 Mar 2003",
+    "note": "",
+    "description": "Ravine Park Plaza - 1 storey; 14 units 50,961 sf @ $106",
+    "seller_lines": [
+      "Sun Life Assurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "Ravine Park Plaza Ltd"
+    ],
+    "price_text": "$5,400,000"
+  }
+}

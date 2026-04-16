@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT189211",
+  "source_folder": "York_Region/retail/p003",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189211",
+      "source_folder": "York_Region/retail/p003",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "11151 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "19 Dec 2024",
+      "price_text": "$6,175,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2221508 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Mark Mooney",
+        "237 Kent St W",
+        "Lindsay, Ontario",
+        "K9V 2Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Shell Canada Ltd     403-691-3111"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Dooley",
+        "500 Centre St SE, Ste 4000",
+        "Calgary, Alberta",
+        "T2G 1A6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Markham, Part Lot 53",
+      "Plan 65R-26669, Parts 4 & 5",
+      "Plan 65R-27195, Part 2",
+      "",
+      "PIN: 03192-0112 +",
+      "",
+      "E side of Yonge St, N side of Silverwood Ave",
+      "",
+      "1.49 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,175,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122753.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122802.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122803.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122932.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122938.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122944.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122945.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1892/RT189211/1229_122955.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "122 / 984",
+      "rt_id": "RT189211"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "11151 YONGE ST",
+    "postcode": "L4S 1L2",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "12/19/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.49",
+    "consid": "6175000",
+    "cash": "6175000",
+    "debt": "",
+    "note": "",
+    "pin": "03192-0112+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "11151 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "19 Dec 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2221508 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Shell Canada Ltd"
+    ],
+    "price_text": "$6,175,000"
+  }
+}

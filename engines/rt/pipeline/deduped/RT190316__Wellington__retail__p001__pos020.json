@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT190316",
+  "source_folder": "Wellington/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190316",
+      "source_folder": "Wellington/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "159 FIFE RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "13 Feb 2025",
+      "price_text": "$2,290,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2807780 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3121 Trail Side Dr",
+        "Oakville, Ontario",
+        "L6M 0P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001093236 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Manoj Rai",
+        "4845 Dovehouse Dr",
+        "Mississauga, Ontario",
+        "L5M 7K4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 670, Block A",
+      "",
+      "PIN: 71256-0164",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "23 08 050 015 01717",
+    "consideration_lines": [
+      "cash: $2,290,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Investingco Inc",
+      "Black & White Properties Inc",
+      "principal: $1,600,000   rate: 12.5% per annum.",
+      "registered: 02/13/2025   due: 05/13/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190316/0405_160249.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190316/0405_160334.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190316/0405_160406.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190316/0405_160457.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1903/RT190316/0405_160547.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 269",
+      "rt_id": "RT190316"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "159 FIFE RD",
+    "postcode": "N1H 7N01",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "02/13/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".85",
+    "consid": "2290000",
+    "cash": "2290000",
+    "debt": "",
+    "note": "",
+    "pin": "71256-0164",
+    "rollno": "23 08 050 015 01717"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "159 FIFE RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "13 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2807780 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001093236 Ontario Inc"
+    ],
+    "price_text": "$2,290,000"
+  }
+}

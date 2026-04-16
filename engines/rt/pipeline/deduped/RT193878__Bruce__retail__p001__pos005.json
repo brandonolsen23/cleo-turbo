@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT193878",
+  "source_folder": "Bruce/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193878",
+      "source_folder": "Bruce/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "18 BAY ST S"
+      ],
+      "city_region": "Tobermory : Bruce",
+      "date_text": "30 Jul 2025",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001251415 Ontario Inc     819-842-8439"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gregory Lorch",
+        "33 Fernwood Dr",
+        "Tillsonburg, Ontario",
+        "N4G 4Y8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan Bury,",
+      "Part Lot 8, N/S Head St",
+      "As in Inst No R-218765",
+      "",
+      "PIN: 33101-0121",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "41 09 680 005 20800",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/30/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 44",
+      "rt_id": "RT193878"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "18 BAY ST S",
+    "postcode": "N0H 2R0",
+    "municipality": "Tobermory",
+    "region": "Bruce",
+    "date": "07/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "33101-0121",
+    "rollno": "41 09 680 005 20800"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "18 BAY ST S"
+    ],
+    "city_region": "Tobermory : Bruce",
+    "date_text": "30 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001251415 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

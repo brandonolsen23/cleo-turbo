@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT196673",
+  "source_folder": "Bruce/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196673",
+      "source_folder": "Bruce/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "639 - 641 GODERICH ST",
+        "647 - 649 GODERICH ST"
+      ],
+      "city_region": "Saugeen Shores : Bruce",
+      "date_text": "16 Jan 2026",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TL Wardrop Pharmacy Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "57 Light St",
+        "Woodstock, Ontario",
+        "N4S 6G9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Iron Curtain Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Rogers",
+        "618 Park Place",
+        "Kincardine, Ontario",
+        "N2Z 0C4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-1661, Part 1",
+      "Plan 11, Block 1",
+      "Part Lots 33 & 34",
+      "As in Inst No R-252668",
+      "",
+      "PIN: 33248-0848 +",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "41 10 460 001 25300 +",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 37",
+      "rt_id": "RT196673"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "639 - 641 GODERICH ST, 647 - 649 GODERICH ST",
+    "postcode": "N0H 2C3",
+    "municipality": "Saugeen Shores",
+    "region": "Bruce",
+    "date": "01/16/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "33248-0848+",
+    "rollno": "41 10 460 001 25300+"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "639 - 641 GODERICH ST",
+      "647 - 649 GODERICH ST"
+    ],
+    "city_region": "Saugeen Shores : Bruce",
+    "date_text": "16 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "TL Wardrop Pharmacy Ltd"
+    ],
+    "buyer_lines": [
+      "Iron Curtain Holdings Ltd"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

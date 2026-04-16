@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT25873",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25873",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "565 YONGE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "14 Jun 2002",
+      "price_text": "$625,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wizard Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Peacock",
+        "PO Box 20010",
+        "Barrie, Ontario",
+        "L4M 6E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mpire International Ltd     705-735-6671"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Favaro",
+        "263 Mapleton Ave",
+        "Barrie, Ontario",
+        "L4N 0E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 5,100 sf @ $123",
+      "",
+      "Bldg size does not include 2,400 sf of leaseable basement space."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 13, Part Lot 12",
+      "As in Inst No RO-819285",
+      "Except:",
+      "Plan 51R-24767, Part 1",
+      "Plan 51R-31215, Part 1",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "43 42 050 003 05900",
+    "consideration_lines": [
+      "cash: $325,000     assumed/vtb debt: $300,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT258/RT25873/photo.jpg"
+    },
+    "footer": {
+      "page_position": "640 / 712",
+      "rt_id": "RT25873"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "565 YONGE ST",
+    "postcode": "L4N 4E3",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "06/14/2002",
+    "desc": "Retail Plaza - 1 storey; 4 units 5,100 sf @ $123",
+    "bldg": "5,100 sf",
+    "acreage": ".85",
+    "consid": "625000",
+    "cash": "325000",
+    "debt": "300000",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 050 003 05900"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "565 YONGE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "14 Jun 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 5,100 sf @ $123",
+    "seller_lines": [
+      "Wizard Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Mpire International Ltd"
+    ],
+    "price_text": "$625,000"
+  }
+}

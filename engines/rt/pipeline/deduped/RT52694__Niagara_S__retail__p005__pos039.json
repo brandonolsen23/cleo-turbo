@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT52694",
+  "source_folder": "Niagara_S/retail/p005",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT52694",
+      "source_folder": "Niagara_S/retail/p005",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p005/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "1233 - 1241 GARRISON RD"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "15 Dec 2006",
+      "price_text": "$740,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Heinz Hummel Ltd     905-871-4488"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Heinz Hummel",
+        "630 Albert St, Unit 17",
+        "Fort Erie, Ontario",
+        "L2A 6R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1367779 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Kim",
+        "170 Jefferson Forest Dr",
+        "Richmond Hill, Ontario",
+        "L4E 4K4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 7,000 sf @ $106",
+      "",
+      "Fully occupied."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-2888, Parts 8-16",
+      "",
+      "0.77 acre"
+    ],
+    "arn_text": "27 03 020 022 17401",
+    "consideration_lines": [
+      "cash: $740,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $400,000   rate: Prime plus 10.0% per annum",
+      "registered: 12/15/2006   due: 01/01/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT526/RT52694/0224_124205.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT526/RT52694/0224_124206.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT526/RT52694/0224_124222.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT526/RT52694/0224_124346.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "240 / 324",
+      "rt_id": "RT52694"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "1233 - 1241 GARRISON RD",
+    "postcode": "L2A 1P2",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "12/15/2006",
+    "desc": "Retail Plaza - 1 storey; 4 units 7,000 sf @ $106",
+    "bldg": "7,000 sf",
+    "acreage": ".77",
+    "consid": "740000",
+    "cash": "740000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 03 020 022 17401"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "1233 - 1241 GARRISON RD"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "15 Dec 2006",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 7,000 sf @ $106",
+    "seller_lines": [
+      "Heinz Hummel Ltd"
+    ],
+    "buyer_lines": [
+      "1367779 Ontario Ltd"
+    ],
+    "price_text": "$740,000"
+  }
+}

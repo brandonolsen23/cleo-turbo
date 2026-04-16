@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT181122",
+  "source_folder": "Essex_County/retail/p003",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181122",
+      "source_folder": "Essex_County/retail/p003",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p003/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "1086 FELIX AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "25 Oct 2023",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "14035798 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Karan Monpara",
+        "1086 Felix Ave",
+        "Windsor, Ontario",
+        "N9C 3L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1075, Lots 41 & 42",
+      "",
+      "PIN: 01239-0442",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "37 39 050 390 02500",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $219,700",
+      "registered: 10/25/2023   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $780,300",
+      "registered: 10/25/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "110 / 460",
+      "rt_id": "RT181122"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "1086 FELIX AVE",
+    "postcode": "N9C 3L5",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "10/25/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "01239-0442",
+    "rollno": "37 39 050 390 02500"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "1086 FELIX AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "25 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "14035798 Canada Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

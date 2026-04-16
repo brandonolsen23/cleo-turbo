@@ -67,10 +67,13 @@ transaction_mailing_addresses, transaction_brokers, transaction_broker_agents,
 pois, gw_assessments, gw_sales_history
 
 **CRM tables** (persistent, NEVER rebuilt or truncated):
-deals, lists, list_members, group_contacts, contact_notes, group_notes
+deals, lists, list_members, group_contacts, contact_notes, group_notes,
+sell_opportunities, buy_mandates, activities, property_enrichment,
+brand_overrides, user_brand_favorites, group_overrides, group_field_overrides,
+contact_field_overrides, contact_work_history, group_merges
 
 **System tables:**
-users, audit_log, app_meta, data_issues
+users, audit_log, app_meta, data_issues, asset_classes, tenant_categories
 
 The compiler calls `drop_derived_tables()` then recreates them. CRM tables are never touched. If you are writing code that modifies the database, always check which category the table belongs to.
 

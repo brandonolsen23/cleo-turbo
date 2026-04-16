@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT178981",
+  "source_folder": "Niagara_N/retail/p002",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178981",
+      "source_folder": "Niagara_N/retail/p002",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p002/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "60 MAIN ST E"
+      ],
+      "city_region": "Grimsby : Niagara N",
+      "date_text": "29 Jun 2023",
+      "price_text": "$1,320,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2831218 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "74 Loyalist Dr",
+        "Hamilton, Ontario",
+        "L8K 4J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "14936957 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aleksa Cenic",
+        "579 Fifty Rd",
+        "Hamilton, Ontario",
+        "L8E 5T5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 531, Lot 1",
+      "",
+      "PIN: 46026-0107",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "26 15 010 008 26500",
+    "consideration_lines": [
+      "cash: $1,320,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,122,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/29/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1789/RT178981/0909_073859.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1789/RT178981/0909_073907.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1789/RT178981/0909_073908.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1789/RT178981/0909_073928.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1789/RT178981/0909_073930.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1789/RT178981/0909_073934.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "69 / 307",
+      "rt_id": "RT178981"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "60 MAIN ST E",
+    "postcode": "L3M 1N1",
+    "municipality": "Grimsby",
+    "region": "Niagara N",
+    "date": "06/29/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1320000",
+    "cash": "1320000",
+    "debt": "",
+    "note": "",
+    "pin": "46026-0107",
+    "rollno": "26 15 010 008 26500"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "60 MAIN ST E"
+    ],
+    "city_region": "Grimsby : Niagara N",
+    "date_text": "29 Jun 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2831218 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "14936957 Canada Inc"
+    ],
+    "price_text": "$1,320,000"
+  }
+}

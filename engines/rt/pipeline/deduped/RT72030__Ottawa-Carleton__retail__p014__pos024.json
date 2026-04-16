@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT72030",
+  "source_folder": "Ottawa-Carleton/retail/p014",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72030",
+      "source_folder": "Ottawa-Carleton/retail/p014",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p014/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1801 RUSSLAND RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "27 Apr 2010",
+      "price_text": "$1,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1457932 Ontario Inc     613-837-7408"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Yvon Bergeron",
+        "Sicotte Guilbault LLP",
+        "Barristers & Solicitors",
+        "4275 Innes Rd",
+        "Ottawa, Ontario",
+        "K1C 1T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1120985 Ontario Ltd     613-748-0432"
+      ],
+      "trade_name": "S&S Bolton",
+      "contact_lines": [
+        "Pres: Robert Sanscartier",
+        "5411 Canotek Rd",
+        "Ottawa, Ontario",
+        "K1J 9M3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 27",
+      "As in Inst No RR-95194",
+      "Except:",
+      "Plan 50R-117, Part 1",
+      "Inst No RR-83392, Parts 1 & 2",
+      "",
+      "PIN: 14557-0033",
+      "",
+      "46.43 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1457932 Ontario Inc",
+      "principal: $1,824,079   rate: 5.0% per annum",
+      "registered: 04/27/2010   due: 04/26/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT720/RT72030/0521_163033.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT720/RT72030/0521_163112.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT720/RT72030/0521_163157.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT720/RT72030/air1.jpg",
+        "/assets/files/RT7/RT720/RT72030/air2.jpg",
+        "/assets/files/RT7/RT720/RT72030/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "675 / 1141",
+      "rt_id": "RT72030"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1801 RUSSLAND RD",
+    "postcode": "K0A 3H0",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "04/27/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": "46.43",
+    "consid": "1850000",
+    "cash": "1850000",
+    "debt": "",
+    "note": "",
+    "pin": "14557-0033",
+    "rollno": ""
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1801 RUSSLAND RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "27 Apr 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1457932 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1120985 Ontario Ltd"
+    ],
+    "price_text": "$1,850,000"
+  }
+}

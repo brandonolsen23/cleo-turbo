@@ -1,0 +1,132 @@
+{
+  "rt_id": "RT16727",
+  "source_folder": "Peel_Region/retail/p021",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT16727",
+      "source_folder": "Peel_Region/retail/p021",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p021/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "71 WEST DR",
+        "155 CLARK BLVD"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "14 Mar 2000",
+      "price_text": "$4,339,470",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Basile & Chariklia Kanellopoulos"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4 Lambeth St",
+        "Brampton, Ontario",
+        "L6S 2P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Clark West Business Centre Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Basile Kanellopoulos",
+        "71 West Dr, Unit 30",
+        "Brampton, Ontario",
+        "L6T 5E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-14320, Parts 1, 2, 5-8"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $3,628,699",
+      "",
+      "chargee: The MCL Group Inc",
+      "principal: $3,975,000   rate: 4.0% for the first 12 months, and 12.0% per annum thereafter.",
+      "registered: 03/02/2022   due: 03/02/2022",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $5,425,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/02/2022   due: on demand",
+      "",
+      "chargee: Canadian Mortgage Servicing Corp",
+      "principal: $3,960,000   rate: 2-year Government bond yield plus 4.40%, subject to a minimum of 5.45% per annum.",
+      "registered: 03/01/2022   due: 03/01/2024",
+      "",
+      "chargee: C & K Mortgage Services Inc",
+      "principal: $4,850,000   rate: 8.75% per annum.",
+      "registered: 03/03/2022   due: 04/01/2023",
+      "",
+      "Named Individual(s)",
+      "principal: $2,050,000   rate: 4.25% per annum.",
+      "registered: 02/28/2022   due: 02/28/2026",
+      "",
+      "chargee: Peakhill CW Inc",
+      "principal: $3,750,000   rate: RBC prime plus 4.80%, with a minimum of 7.25% per annum.",
+      "registered: 03/01/2022   due: 03/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT167/RT16727/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1031 / 1087",
+      "rt_id": "RT16727"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "71 WEST DR, 155 CLARK BLVD",
+    "postcode": "L6T 5E2",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "03/14/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "4339470",
+    "cash": "",
+    "debt": "3628699",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "71 WEST DR",
+      "155 CLARK BLVD"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "14 Mar 2000",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Basile & Chariklia Kanellopoulos"
+    ],
+    "buyer_lines": [
+      "Clark West Business Centre Ltd"
+    ],
+    "price_text": "$4,339,470"
+  }
+}

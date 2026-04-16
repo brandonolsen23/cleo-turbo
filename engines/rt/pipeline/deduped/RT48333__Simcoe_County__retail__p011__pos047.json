@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT48333",
+  "source_folder": "Simcoe_County/retail/p011",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48333",
+      "source_folder": "Simcoe_County/retail/p011",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p011/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "1525 HWY 11"
+      ],
+      "city_region": "Oro : Simcoe County",
+      "date_text": "24 Apr 2006",
+      "price_text": "$945,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1362692 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Saijad Khan",
+        "197 Johnson St",
+        "Barrie, Ontario",
+        "L4M 5Y9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Al-Cheragh International Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chaudhry Dogar",
+        "1525 Highway 11",
+        "Shanty Bay",
+        "Barrie, Ontario",
+        "L0L 2L0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot A",
+      "Plan 51R-6107, Parts 1 & 2",
+      "",
+      "4.81 acre"
+    ],
+    "arn_text": "43 46 010 007 02000",
+    "consideration_lines": [
+      "cash: $945,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Peoples Credit Union Ltd",
+      "principal: $625,000   rate: Basic variable prime plus 6.75% per annum",
+      "registered: 04/24/2006   due: on demand",
+      "",
+      "chargee: 1362692 Ontario Ltd",
+      "principal: $460,000   rate: 8.5% per annum",
+      "registered: 04/24/2006   due: 04/21/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "548 / 712",
+      "rt_id": "RT48333"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "1525 HWY 11",
+    "postcode": "L0L 2L0",
+    "municipality": "Oro",
+    "region": "Simcoe County",
+    "date": "04/24/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "4.81",
+    "consid": "945500",
+    "cash": "945500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 46 010 007 02000"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "1525 HWY 11"
+    ],
+    "city_region": "Oro : Simcoe County",
+    "date_text": "24 Apr 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1362692 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Al-Cheragh International Corp"
+    ],
+    "price_text": "$945,500"
+  }
+}

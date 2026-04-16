@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT102270",
+  "source_folder": "Metro_Toronto/retail/p035",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT102270",
+      "source_folder": "Metro_Toronto/retail/p035",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p035/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "153 MORNINGSIDE AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "15 Aug 2014",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "8799555 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Amir Soltani",
+        "153 Morningside Ave",
+        "Toronto, Ontario",
+        "M1E 3C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc D, Part Lot 10",
+      "As in Inst No SC-498338",
+      "",
+      "PIN: 06389-0166",
+      "",
+      "0.28 acre"
+    ],
+    "arn_text": "19 01 091 310 00120",
+    "consideration_lines": [
+      "cash: $340,000     assumed/vtb debt: $510,000",
+      "",
+      "Named Individual(s)",
+      "principal: $510,000   rate: First year, 4.5% per annum with monthly payments of $1,912.50.\nSecond and third year, 5.5% per annum, payments of $2,337.50.",
+      "registered: 08/15/2014   due: 08/14/2017"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1022/RT102270/0823_091650.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1022/RT102270/0823_091747.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1022/RT102270/0823_091815.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1022/RT102270/0823_091816.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1022/RT102270/0823_091922.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1728 / 4952",
+      "rt_id": "RT102270"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "153 MORNINGSIDE AVE",
+    "postcode": "M1E 3C9",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "08/15/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".28",
+    "consid": "850000",
+    "cash": "340000",
+    "debt": "510000",
+    "note": "",
+    "pin": "06389-0166",
+    "rollno": "19 01 091 310 00120"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "153 MORNINGSIDE AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "15 Aug 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "8799555 Canada Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

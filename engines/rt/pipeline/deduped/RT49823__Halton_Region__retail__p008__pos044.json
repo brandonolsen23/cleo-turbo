@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT49823",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49823",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "185 MOUNTAINVIEW RD N"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "07 Jul 2006",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Chang & Young Rim     416-221-1044"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Hui Ok Chung",
+        "333 Sheppard Ave E, Ste 202",
+        "Toronto, Ontario",
+        "M2N 3B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2105072 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Seokchae Kim",
+        "185 Mountainview Rd N",
+        "Georgetown, Ontario",
+        "L7G 3P9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-4951, Part 1",
+      "",
+      "0.47 acre"
+    ],
+    "arn_text": "24 15 010 002 02100",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Korea Exchange Bank of Canada",
+      "principal: $420,000   rate: Prime plus 2.0% per annum",
+      "registered: 07/07/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT498/RT49823/0729_145825.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT498/RT49823/0729_145826.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT498/RT49823/0729_145845.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT498/RT49823/air1.jpg",
+        "/assets/files/RT4/RT498/RT49823/air2.jpg",
+        "/assets/files/RT4/RT498/RT49823/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "395 / 613",
+      "rt_id": "RT49823"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "185 MOUNTAINVIEW RD N",
+    "postcode": "L7G 3P9",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "07/07/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".47",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 010 002 02100"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "185 MOUNTAINVIEW RD N"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "07 Jul 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Chang & Young Rim"
+    ],
+    "buyer_lines": [
+      "2105072 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT183077",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183077",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "5990 MALDEN RD"
+      ],
+      "city_region": "LaSalle : Essex County",
+      "date_text": "09 Feb 2024",
+      "price_text": "$1,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2681410 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edward Mielke",
+        "7915 Matchette Rd",
+        "LaSalle, Ontario",
+        "N6J 2X9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-25356, Parts 1-6, 8-11, 28-31",
+      "",
+      "PIN: 70549-0524",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $1,300,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "99 / 460",
+      "rt_id": "RT183077"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "5990 MALDEN RD",
+    "postcode": "N9H 1S4",
+    "municipality": "LaSalle",
+    "region": "Essex County",
+    "date": "02/09/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".85",
+    "consid": "1300000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "70549-0524",
+    "rollno": ""
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "5990 MALDEN RD"
+    ],
+    "city_region": "LaSalle : Essex County",
+    "date_text": "09 Feb 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2681410 Ontario Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

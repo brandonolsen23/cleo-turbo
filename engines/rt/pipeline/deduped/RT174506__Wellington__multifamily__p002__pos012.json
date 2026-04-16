@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT174506",
+  "source_folder": "Wellington/multifamily/p002",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT174506",
+      "source_folder": "Wellington/multifamily/p002",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p002/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "32 WILSON ST"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "06 Jan 2023",
+      "price_text": "$1,414,605",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2683855 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Francisco Mansilla",
+        "364 Warrington Dr",
+        "Waterloo, Ontario",
+        "N2L 2P6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 8, Part Lot 119",
+      "As in Inst No ROS-558639",
+      "",
+      "PIN: 71284-0006",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "23 08 010 001 15900",
+    "consideration_lines": [
+      "cash: $1,414,605     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "63 / 295",
+      "rt_id": "RT174506"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "32 WILSON ST",
+    "postcode": "N1H 4G5",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "01/06/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "1414605",
+    "cash": "1414605",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "71284-0006",
+    "rollno": "23 08 010 001 15900"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "32 WILSON ST"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "06 Jan 2023",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2683855 Ontario Inc"
+    ],
+    "price_text": "$1,414,605"
+  }
+}

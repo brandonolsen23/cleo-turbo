@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT100250",
+  "source_folder": "York_Region/retail/p008",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT100250",
+      "source_folder": "York_Region/retail/p008",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "105 DAVIS DR"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "15 May 2014",
+      "price_text": "$1,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1620119 Ontario Ltd     416-221-1044"
+      ],
+      "trade_name": "Jane Chung Law Office",
+      "contact_lines": [
+        "Pres: Byung Chun",
+        "c/o 333 Sheppard Ave E, Ste 202",
+        "Toronto, Ontario",
+        "M2N 3B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2286774 Ontario Inc     416-614-7979"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Scott Ly",
+        "105 Davis Dr",
+        "Newmarket, Ontario",
+        "L3Y 2M9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 1,750 sf @ $600",
+      "",
+      "Former restaurant",
+      "",
+      "Vacant - will be renovated for use as a dental office by the purchaser"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 492, Part Block A",
+      "As in Inst No R-260641",
+      "Except:",
+      "Exprop Plan YR-1369307",
+      "Parts 1 & 2",
+      "",
+      "PIN: 03578-0913",
+      "",
+      "N side Davis Dr, W of Barbara Rd",
+      "",
+      "0.37 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Homelife/Gold Trade Realty: Kiu Sang Chung, 416-562-7760",
+      "RE/MAX Realtron Realty: Ken Chan, 905-470-9800"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1002/RT100250/0524_154206.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1002/RT100250/0524_154243.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1002/RT100250/0524_154320.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1002/RT100250/0524_154329.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1002/RT100250/0524_154332.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1002/RT100250/0524_154404.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "381 / 984",
+      "rt_id": "RT100250"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "105 DAVIS DR",
+    "postcode": "L3Y 2M9",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "05/15/2014",
+    "desc": "Retail Bldg - 1 storey; 1,750 sf @ $600",
+    "bldg": "1,750 sf",
+    "acreage": ".37",
+    "consid": "1050000",
+    "cash": "1050000",
+    "debt": "",
+    "note": "",
+    "pin": "03578-0913",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "105 DAVIS DR"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "15 May 2014",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 1,750 sf @ $600",
+    "seller_lines": [
+      "1620119 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2286774 Ontario Inc"
+    ],
+    "price_text": "$1,050,000"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT28290",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28290",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "856 BROADVIEW AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Dec 2002",
+      "price_text": "$945,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "856 Broadview Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Thornton",
+        "20 Church St N",
+        "Ajax, Ontario",
+        "L1T 2W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1524197 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Thornton",
+        "150 Boardwalk Dr",
+        "Toronto, Ontario",
+        "M4L 3X4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 257, Lot 49"
+    ],
+    "arn_text": "19 04 075 490 07100",
+    "consideration_lines": [
+      "cash: $945,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4979 / 6031",
+      "rt_id": "RT28290"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "856 BROADVIEW AVE",
+    "postcode": "M4K 2R1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/23/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "945000",
+    "cash": "945000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 075 490 07100"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "856 BROADVIEW AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Dec 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "856 Broadview Ltd"
+    ],
+    "buyer_lines": [
+      "1524197 Ontario Ltd"
+    ],
+    "price_text": "$945,000"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT22039",
+  "source_folder": "Metro_Toronto/multifamily/p110",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22039",
+      "source_folder": "Metro_Toronto/multifamily/p110",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p110/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "327 CHISHOLM AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "04 Jul 2001",
+      "price_text": "$1,155,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Challenge Canadian Properties Inc     905-625-7563"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mitchell Chang",
+        "Advent Property Management Services",
+        "1325 Eglinton Ave E, Ste 227",
+        "Mississauga, Ontario",
+        "L4W 4L9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Badenhurst-327 Chisholm Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Daniel Drimmer",
+        "302 The East Mall, Ste 101",
+        "Etobicoke, Ontario",
+        "M9B 6C7"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 4 storey; 20 units @ $57,750"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1770, Lot 515",
+      "",
+      "NE corner at Hamstead Ave",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "19 06 021 425 00100",
+    "consideration_lines": [
+      "cash: $569,496     assumed/vtb debt: $585,504"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT220/RT22039/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5469 / 6031",
+      "rt_id": "RT22039"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "327 CHISHOLM AVE",
+    "postcode": "M4C 4X1",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "07/04/2001",
+    "desc": "Apartment Bldg - 4 storey; 20 units @ $57,750",
+    "bldg": "20 units",
+    "acreage": ".29",
+    "consid": "1155000",
+    "cash": "569496",
+    "debt": "585504",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 021 425 00100"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "327 CHISHOLM AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "04 Jul 2001",
+    "note": "",
+    "description": "Apartment Bldg - 4 storey; 20 units @ $57,750",
+    "seller_lines": [
+      "Challenge Canadian Properties Inc"
+    ],
+    "buyer_lines": [
+      "Badenhurst-327 Chisholm Ltd"
+    ],
+    "price_text": "$1,155,000"
+  }
+}

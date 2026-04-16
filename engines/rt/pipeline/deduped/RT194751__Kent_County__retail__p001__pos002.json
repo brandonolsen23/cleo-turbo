@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT194751",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194751",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "420 QUEEN ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "08 Oct 2025",
+      "price_text": "$6,490,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "509289 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "66A Harrison Township",
+        "Pointe au Baril, Ontario",
+        "P0G 1K0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1815513 Ontario Inc     519-676-7467"
+      ],
+      "trade_name": "Apollo General Contracting",
+      "contact_lines": [
+        "Attn: Alfredo Naclerio",
+        "186 Chatham St N, Unit 1",
+        "Blenheim, Ontario",
+        "N0P 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Eastern Boundary Raleigh,",
+      "Part Lot 24",
+      "Plan 385, Lot 86",
+      "As in Inst Nos:",
+      "573626, 591703, 615016 & 500270",
+      "",
+      "PIN: 00517-0469 +",
+      "",
+      "1.38 acre"
+    ],
+    "arn_text": "36 50 420 017 15900",
+    "consideration_lines": [
+      "cash: $6,490,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $4,850,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/08/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 77",
+      "rt_id": "RT194751"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "420 QUEEN ST",
+    "postcode": "N7M 2J2",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "10/08/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.38",
+    "consid": "6490000",
+    "cash": "6490000",
+    "debt": "",
+    "note": "",
+    "pin": "00517-0469+",
+    "rollno": "36 50 420 017 15900"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "420 QUEEN ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "08 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "509289 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1815513 Ontario Inc"
+    ],
+    "price_text": "$6,490,000"
+  }
+}

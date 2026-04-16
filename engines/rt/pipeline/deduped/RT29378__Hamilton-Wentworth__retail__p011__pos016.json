@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT29378",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29378",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "293 - 295 HWY 8"
+      ],
+      "city_region": "Stoney Creek : Hamilton-Wentworth",
+      "date_text": "07 Mar 2003",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1426637 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul McDermott",
+        "12 Douglas St",
+        "Guelph, Ontario",
+        "N1H 2S9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lupco Management Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Giacomo Luppinio",
+        "52 Mountain Brow Blvd",
+        "Hamilton, Ontario",
+        "L8T 1A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-6797, Part 1",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "25 03 100 270 28600",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT293/RT29378/photo.jpg"
+    },
+    "footer": {
+      "page_position": "517 / 616",
+      "rt_id": "RT29378"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "293 - 295 HWY 8",
+    "postcode": "L8G 1E5",
+    "municipality": "Stoney Creek",
+    "region": "Hamilton-Wentworth",
+    "date": "03/07/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 03 100 270 28600"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "293 - 295 HWY 8"
+    ],
+    "city_region": "Stoney Creek : Hamilton-Wentworth",
+    "date_text": "07 Mar 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1426637 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Lupco Management Corp"
+    ],
+    "price_text": "$500,000"
+  }
+}

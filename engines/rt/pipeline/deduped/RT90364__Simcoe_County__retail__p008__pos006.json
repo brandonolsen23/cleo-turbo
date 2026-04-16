@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT90364",
+  "source_folder": "Simcoe_County/retail/p008",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT90364",
+      "source_folder": "Simcoe_County/retail/p008",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p008/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "488 BAYFIELD ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "21 Jan 2013",
+      "price_text": "$2,155,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2225760 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yenn Chung",
+        "PO Box 1208, Station K",
+        "2384 Yonge St",
+        "Toronto, Ontario",
+        "M4P 3E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1885181 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Albert Lai",
+        "25 Navarre St",
+        "Richmond Hill, Ontario",
+        "L4B 4H3"
+      ]
+    },
+    "description_lines": [
+      "Mastermind Toys Store - 1 storey; 5,146 sf @ $419",
+      "",
+      "Leased to Mastermind Toys"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 19",
+      "As in Inst No RO-442039",
+      "",
+      "PIN: 58926-0047",
+      "",
+      "W side Bayfield St, N of Livingstone St E",
+      "",
+      "0.39 acre"
+    ],
+    "arn_text": "43 42 031 025 00500",
+    "consideration_lines": [
+      "cash: $2,155,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90364/0405_105121.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90364/0405_105130.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90364/0405_105227.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT903/RT90364/0405_105315.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "357 / 712",
+      "rt_id": "RT90364"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "488 BAYFIELD ST",
+    "postcode": "L4M 5A2",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "01/21/2013",
+    "desc": "Mastermind Toys Store - 1 storey; 5,146 sf @ $419",
+    "bldg": "5,146 sf",
+    "acreage": ".39",
+    "consid": "2155000",
+    "cash": "2155000",
+    "debt": "",
+    "note": "",
+    "pin": "58926-0047",
+    "rollno": "43 42 031 025 00500"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "488 BAYFIELD ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "21 Jan 2013",
+    "note": "",
+    "description": "Mastermind Toys Store - 1 storey; 5,146 sf @ $419",
+    "seller_lines": [
+      "2225760 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1885181 Ontario Ltd"
+    ],
+    "price_text": "$2,155,000"
+  }
+}

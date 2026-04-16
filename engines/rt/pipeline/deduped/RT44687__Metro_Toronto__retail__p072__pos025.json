@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT44687",
+  "source_folder": "Metro_Toronto/retail/p072",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44687",
+      "source_folder": "Metro_Toronto/retail/p072",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p072/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "1638 - 1644 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "06 Oct 2005",
+      "price_text": "$2,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "St Casimir's Holding Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Irene Kremblewski",
+        "20 Courtsfield Cres",
+        "Toronto, Ontario",
+        "M9A 4S9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1550009 Ontario Inc     905-891-0418"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stuart Cordrey",
+        "1039 Wenleigh Ct",
+        "Mississauga, Ontario",
+        "L5H 1M7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza",
+      "",
+      "Last transferred in Feb 2001 for $1,365,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-43, Part Lot 97",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "19 04 013 140 02200",
+    "consideration_lines": [
+      "cash: $2,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Maxine Ethier",
+      "principal: $2,000,000   rate: 12.0% per annum",
+      "registered: 10/06/2005   due: on demand",
+      "",
+      "chargee: Cordrey Holdings Inc",
+      "principal: $2,000,000   rate: 12.0% per annum",
+      "registered: 10/06/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT446/RT44687/air1.jpg",
+        "/assets/files/RT4/RT446/RT44687/air2.jpg",
+        "/assets/files/RT4/RT446/RT44687/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3576 / 4952",
+      "rt_id": "RT44687"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "1638 - 1644 BLOOR ST W",
+    "postcode": "M6P 1A7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/06/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "2600000",
+    "cash": "2600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 013 140 02200"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "1638 - 1644 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "06 Oct 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "St Casimir's Holding Co Ltd"
+    ],
+    "buyer_lines": [
+      "1550009 Ontario Inc"
+    ],
+    "price_text": "$2,600,000"
+  }
+}

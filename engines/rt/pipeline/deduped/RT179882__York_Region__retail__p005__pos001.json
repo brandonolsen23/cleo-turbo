@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT179882",
+  "source_folder": "York_Region/retail/p005",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT179882",
+      "source_folder": "York_Region/retail/p005",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "27085 WOODBINE AVE"
+      ],
+      "city_region": "Georgina : York Region",
+      "date_text": "15 Aug 2023",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "12481782 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jaimin Dave",
+        "27085 Woodbine Ave",
+        "Georgina, Ontario",
+        "L4P 3E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 189 - N Gwillimbury,",
+      "Lot 33 & Part Metropolitan Ave",
+      "As in Inst No R-640746",
+      "",
+      "PIN: 03507-0001",
+      "",
+      "0.51 acre"
+    ],
+    "arn_text": "19 70 000 126 86600",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,059,080   rate: Prime plus 10.0% per annum.",
+      "registered: 08/15/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179882/0826_154059.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179882/0826_154100.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179882/0826_154101.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179882/0826_154159a.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1798/RT179882/0826_154159b.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "202 / 984",
+      "rt_id": "RT179882"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "27085 WOODBINE AVE",
+    "postcode": "L4P 3E9",
+    "municipality": "Georgina",
+    "region": "York Region",
+    "date": "08/15/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".51",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "03507-0001",
+    "rollno": "19 70 000 126 86600"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "27085 WOODBINE AVE"
+    ],
+    "city_region": "Georgina : York Region",
+    "date_text": "15 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "12481782 Canada Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT191957",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191957",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "850 DIVISION ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "05 May 2025",
+      "price_text": "$5,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2533222 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "120 University Ave E, Ste 802",
+        "Cobourg, Ontario",
+        "K9A 0A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JKC Estates Ltd     416-421-5730"
+      ],
+      "trade_name": "Gyro Mazda",
+      "contact_lines": [
+        "Attn: Joseph Kovac",
+        "139 Laird Dr",
+        "Toronto, Ontario",
+        "M4G 3V6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc A - Hamilton, Part Lot 16",
+      "Plan 39R-9588, Parts 1 & 2",
+      "",
+      "PIN: 51098-0039",
+      "",
+      "1.39 acre"
+    ],
+    "arn_text": "14 21 000 160 00214",
+    "consideration_lines": [
+      "cash: $5,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191957/0524_083842.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191957/0524_083846.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191957/0524_084044.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1919/RT191957/0524_084045.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 93",
+      "rt_id": "RT191957"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "850 DIVISION ST",
+    "postcode": "K9A 5V2",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "05/05/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.39",
+    "consid": "5400000",
+    "cash": "5400000",
+    "debt": "",
+    "note": "",
+    "pin": "51098-0039",
+    "rollno": "14 21 000 160 00214"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "850 DIVISION ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "05 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2533222 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "JKC Estates Ltd"
+    ],
+    "price_text": "$5,400,000"
+  }
+}

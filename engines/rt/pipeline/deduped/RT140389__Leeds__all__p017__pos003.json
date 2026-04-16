@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT140389",
+  "source_folder": "Leeds/all/p017",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT140389",
+      "source_folder": "Leeds/all/p017",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p017/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1734 HOLT LINE"
+      ],
+      "city_region": "Sombra : Lambton",
+      "date_text": "18 Jan 2019",
+      "price_text": "$778,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "True Acre Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nelson Burm",
+        "8973 Heritage Line",
+        "Wallaceburg, Ontario",
+        "N8A 4L3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 10, Part Lot 18",
+      "",
+      "PIN: 43395-0096",
+      "",
+      "101.46 acre"
+    ],
+    "arn_text": "38 05 010 030 23300",
+    "consideration_lines": [
+      "cash: $778,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,000,000   rate: 18.0% per annum.",
+      "registered: 01/18/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "804 / 1916",
+      "rt_id": "RT140389"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1734 HOLT LINE",
+    "postcode": "N8A 4L2",
+    "municipality": "Sombra",
+    "region": "Lambton",
+    "date": "01/18/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": "101.46",
+    "consid": "778000",
+    "cash": "778000",
+    "debt": "",
+    "note": "",
+    "pin": "43395-0096",
+    "rollno": "38 05 010 030 23300"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1734 HOLT LINE"
+    ],
+    "city_region": "Sombra : Lambton",
+    "date_text": "18 Jan 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "True Acre Farms Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$778,000"
+  }
+}

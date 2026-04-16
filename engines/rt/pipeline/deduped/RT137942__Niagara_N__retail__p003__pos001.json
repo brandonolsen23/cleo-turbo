@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT137942",
+  "source_folder": "Niagara_N/retail/p003",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT137942",
+      "source_folder": "Niagara_N/retail/p003",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p003/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2895 REGIONAL RD 81"
+      ],
+      "city_region": "Lincoln : Niagara N",
+      "date_text": "17 Oct 2018",
+      "price_text": "$1,040,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "M & D Mikolic Holdings Inc     905-562-6088"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Mikolic",
+        "3805 19th St",
+        "Jordan, Ontario",
+        "L0R 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vineland Petroleum Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sharif Majumder",
+        "539 Park Cres",
+        "Pickering, Ontario",
+        "L1W 2C8"
+      ]
+    },
+    "description_lines": [
+      "Auto Service Centre, Gas Bar & Convenience Store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 18",
+      "As in Inst No RO-522657",
+      "",
+      "PIN: 46130-0025",
+      "",
+      "NE corner Regional Rd 81 and Nineteenth St"
+    ],
+    "arn_text": "26 22 040 011 39500",
+    "consideration_lines": [
+      "cash: $416,000     assumed/vtb debt: $624,000",
+      "",
+      "chargee: 2554977 Ontario Inc",
+      "principal: $926,000   rate: 8.0% per annum.",
+      "registered: 10/17/2018   due: 10/17/2019",
+      "",
+      "chargee: M & D Mikolic Holdings Inc",
+      "principal: $624,000   rate: 6.0% per annum.",
+      "registered: 10/17/2018   due: 04/17/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT13/RT1379/RT137942/0309_074351.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1379/RT137942/0309_074353.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1379/RT137942/0309_074420.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1379/RT137942/0309_074422.jpg",
+        "http://realtrack.cachefly.net/photos/RT13/RT1379/RT137942/0309_074424.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "102 / 307",
+      "rt_id": "RT137942"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2895 REGIONAL RD 81",
+    "postcode": "L0R 1S0",
+    "municipality": "Lincoln",
+    "region": "Niagara N",
+    "date": "10/17/2018",
+    "desc": "Auto Service Centre, Gas Bar & Convenience Store",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1040000",
+    "cash": "416000",
+    "debt": "624000",
+    "note": "",
+    "pin": "46130-0025",
+    "rollno": "26 22 040 011 39500"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2895 REGIONAL RD 81"
+    ],
+    "city_region": "Lincoln : Niagara N",
+    "date_text": "17 Oct 2018",
+    "note": "",
+    "description": "Auto Service Centre, Gas Bar & Convenience Store",
+    "seller_lines": [
+      "M & D Mikolic Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Vineland Petroleum Inc"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

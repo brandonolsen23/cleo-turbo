@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT77204",
+  "source_folder": "York_Region/retail/p011",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT77204",
+      "source_folder": "York_Region/retail/p011",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p011/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "9211 BAYVIEW AVE"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "11 Mar 2011",
+      "price_text": "$4,350,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "349173 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pasquale Ammaturo",
+        "324 Steeles Ave E",
+        "Markham, Ontario",
+        "L3T 1A8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bayview Hill Properties Ltd     416-742-8098"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Salvatore Disumma",
+        "c/o New Era Tool & Die Ltd",
+        "241 Toryork Dr",
+        "Weston, Ontario",
+        "M9L 1Y2"
+      ]
+    },
+    "description_lines": [
+      "Garden Centre & Greenhouses on about 2.5 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-11929, Part 1",
+      "",
+      "PIN: 03113-0206",
+      "",
+      "2.52 acre"
+    ],
+    "arn_text": "19 38 050 041 17400",
+    "consideration_lines": [
+      "cash: $4,350,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT772/RT77204/0319_114246.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT772/RT77204/0319_114440.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT772/RT77204/0319_114514.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT772/RT77204/air1.jpg",
+        "/assets/files/RT7/RT772/RT77204/air2.jpg",
+        "/assets/files/RT7/RT772/RT77204/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "502 / 984",
+      "rt_id": "RT77204"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "9211 BAYVIEW AVE",
+    "postcode": "L4C 9X6",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "03/11/2011",
+    "desc": "Garden Centre & Greenhouses on about 2.5 Ac",
+    "bldg": "",
+    "acreage": "2.52",
+    "consid": "4350000",
+    "cash": "4350000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "03113-0206",
+    "rollno": "19 38 050 041 17400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "9211 BAYVIEW AVE"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "11 Mar 2011",
+    "note": "Sale Leaseback",
+    "description": "Garden Centre & Greenhouses on about 2.5 Ac",
+    "seller_lines": [
+      "349173 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Bayview Hill Properties Ltd"
+    ],
+    "price_text": "$4,350,000"
+  }
+}

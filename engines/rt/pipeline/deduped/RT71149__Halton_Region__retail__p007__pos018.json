@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT71149",
+  "source_folder": "Halton_Region/retail/p007",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71149",
+      "source_folder": "Halton_Region/retail/p007",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p007/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "265 GUELPH ST"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "01 Mar 2010",
+      "price_text": "$3,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ballybock Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Somers",
+        "301 Maple Ave",
+        "Halton Hills, Ontario",
+        "L7G 1W9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1783884 Ontario Inc     416-445-1107"
+      ],
+      "trade_name": "Goldman Management",
+      "contact_lines": [
+        "Attn: Ori Goldman",
+        "75 The Donway W, Ste 1002",
+        "Toronto, Ontario",
+        "M3C 2E9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6 tenants 22,800 sf @ $156",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20R-11301, Part 2",
+      "",
+      "PIN: 25056-0111",
+      "",
+      "2.40 acre"
+    ],
+    "arn_text": "24 15 030 002 05500",
+    "consideration_lines": [
+      "cash: $3,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT711/RT71149/0312_134947.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT711/RT71149/0312_135131.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT711/RT71149/0312_135155.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT711/RT71149/air1.jpg",
+        "/assets/files/RT7/RT711/RT71149/air2.jpg",
+        "/assets/files/RT7/RT711/RT71149/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "319 / 613",
+      "rt_id": "RT71149"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "265 GUELPH ST",
+    "postcode": "L7G 4B3",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "03/01/2010",
+    "desc": "Retail Plaza - 1 storey; 6 tenants 22,800 sf @ $156",
+    "bldg": "22,800 sf",
+    "acreage": "2.4",
+    "consid": "3550000",
+    "cash": "3550000",
+    "debt": "",
+    "note": "",
+    "pin": "25056-0111",
+    "rollno": "24 15 030 002 05500"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "265 GUELPH ST"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "01 Mar 2010",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6 tenants 22,800 sf @ $156",
+    "seller_lines": [
+      "Ballybock Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "1783884 Ontario Inc"
+    ],
+    "price_text": "$3,550,000"
+  }
+}

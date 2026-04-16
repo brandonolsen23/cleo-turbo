@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT183063",
+  "source_folder": "York_Region/retail/p004",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183063",
+      "source_folder": "York_Region/retail/p004",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "9421 JANE ST",
+        "UNIT 19"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "07 Feb 2024",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Kear MFG Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Pheng Kear",
+        "11 Creditstone Rd, Ste 7",
+        "Concord, Ontario",
+        "L4K 2P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1145",
+      "Level 1, Unit 19",
+      "",
+      "PIN: 29676-0019"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183063/0218_083702.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183063/0218_083733.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183063/0218_083734.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183063/0218_083748.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183063/0218_083749.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183063/0218_083752.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "181 / 984",
+      "rt_id": "RT183063"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "9421 JANE ST, UNIT 19",
+    "postcode": "L6A 4H8",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "02/07/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "29676-0019",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "9421 JANE ST",
+      "UNIT 19"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "07 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Kear MFG Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

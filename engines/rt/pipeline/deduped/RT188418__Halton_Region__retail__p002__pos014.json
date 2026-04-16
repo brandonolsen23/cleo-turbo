@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT188418",
+  "source_folder": "Halton_Region/retail/p002",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188418",
+      "source_folder": "Halton_Region/retail/p002",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p002/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "250 SPEERS RD"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "30 Oct 2024",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2647315 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Gill",
+        "250 Speers Rd",
+        "Oakville, Ontario",
+        "L6K 2E9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - Traf SDS, Part Lot 17",
+      "Plan 20R-1753, Part 6",
+      "Except:",
+      "Plan 20R-1753, Part 5",
+      "",
+      "PIN: 24825-0030 +",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "24 01 030 190 15900",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $900,000   rate: 4.5% per annum.",
+      "registered: 10/30/2024   due: 04/30/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188418/1116_080501.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188418/1116_080505.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188418/1116_080520.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188418/1116_080523.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1884/RT188418/1116_080527.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "65 / 613",
+      "rt_id": "RT188418"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "250 SPEERS RD",
+    "postcode": "L6K 2E9",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "10/30/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "24825-0030+",
+    "rollno": "24 01 030 190 15900"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "250 SPEERS RD"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "30 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2647315 Ontario Ltd"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

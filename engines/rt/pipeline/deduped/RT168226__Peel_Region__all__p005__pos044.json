@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT168226",
+  "source_folder": "Peel_Region/all/p005",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT168226",
+      "source_folder": "Peel_Region/all/p005",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/all/p005/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "23 DAIRY LN"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "11 Apr 2022",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1568161 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "23 Dairy Lane, Unit 10",
+        "Huntsville, Ontario",
+        "P1H 1T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2435426 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: S. Rowshani-Zafaranloo",
+        "150 Winewood Ave E",
+        "Gravenhurst, Ontario",
+        "P1P 1B7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Chaffey, Part Lot 13",
+      "Plan RD-1982, Part 11",
+      "",
+      "PIN: 48087-0164",
+      "",
+      "0.56 acre"
+    ],
+    "arn_text": "44 42 010 008 02100",
+    "consideration_lines": [
+      "cash: $3,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $3,600,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/11/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "245 / 1484",
+      "rt_id": "RT168226"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "23 DAIRY LN",
+    "postcode": "P1H 1T4",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "04/11/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".56",
+    "consid": "3800000",
+    "cash": "3800000",
+    "debt": "",
+    "note": "",
+    "pin": "48087-0164",
+    "rollno": "44 42 010 008 02100"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "23 DAIRY LN"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "11 Apr 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1568161 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2435426 Ontario Inc"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

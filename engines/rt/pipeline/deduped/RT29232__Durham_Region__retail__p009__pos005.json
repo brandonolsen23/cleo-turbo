@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT29232",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29232",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "1163 KINGSTON RD"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "28 Feb 2003",
+      "price_text": "$2,465,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Yonge-Broadway Investments Ltd     416-449-4100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Richard Cornblum",
+        "Trivest Developments Corp",
+        "40 Wynford Dr, Ste 101",
+        "Toronto, Ontario",
+        "M3C 1J5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Farrita Enterprises Inc     905-822-0183"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Sun",
+        "2460 Hammond Rd",
+        "Mississauga, Ontario",
+        "L5K 1T2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-10821, Part 1",
+      "Plan 40R-6862, Parts 2 & 3",
+      "",
+      "1.37 acre"
+    ],
+    "arn_text": "18 01 010 018 20900",
+    "consideration_lines": [
+      "cash: $2,465,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT292/RT29232/photo.jpg"
+    },
+    "footer": {
+      "page_position": "406 / 506",
+      "rt_id": "RT29232"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "1163 KINGSTON RD",
+    "postcode": "L1V 1B5",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "02/28/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.37",
+    "consid": "2465500",
+    "cash": "2465500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 01 010 018 20900"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "1163 KINGSTON RD"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "28 Feb 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Yonge-Broadway Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Farrita Enterprises Inc"
+    ],
+    "price_text": "$2,465,500"
+  }
+}

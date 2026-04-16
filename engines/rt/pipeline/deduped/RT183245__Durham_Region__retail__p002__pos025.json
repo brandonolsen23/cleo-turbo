@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT183245",
+  "source_folder": "Durham_Region/retail/p002",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183245",
+      "source_folder": "Durham_Region/retail/p002",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p002/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "1910 SCUGOG ST"
+      ],
+      "city_region": "Scugog : Durham Region",
+      "date_text": "23 Feb 2024",
+      "price_text": "$3,270,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "J & J Ballard Holdings"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "76 Ambleside Dr",
+        "Port Perry, Ontario",
+        "L9L 1B4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Doidge Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Doidge",
+        "1768 Highway 21",
+        "Kincardine, Ontario",
+        "N2Z 2Y6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5, Part Lot 20",
+      "Plan 40R-4405, Parts 2-4 & 6",
+      "",
+      "PIN: 26766-0106",
+      "",
+      "2.61 acre"
+    ],
+    "arn_text": "18 20 020 010 04500",
+    "consideration_lines": [
+      "cash: $3,270,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $3,110,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 02/23/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183245/0301_145901.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183245/0301_145907.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183245/0301_145942.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183245/0301_145946.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1832/RT183245/0301_150005.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1832/RT183245/air1.jpg",
+        "/assets/files/RT18/RT1832/RT183245/air2.jpg",
+        "/assets/files/RT18/RT1832/RT183245/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "76 / 506",
+      "rt_id": "RT183245"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "1910 SCUGOG ST",
+    "postcode": "L9L 1H7",
+    "municipality": "Scugog",
+    "region": "Durham Region",
+    "date": "02/23/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.61",
+    "consid": "3270000",
+    "cash": "3270000",
+    "debt": "",
+    "note": "",
+    "pin": "26766-0106",
+    "rollno": "18 20 020 010 04500"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "1910 SCUGOG ST"
+    ],
+    "city_region": "Scugog : Durham Region",
+    "date_text": "23 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "J & J Ballard Holdings"
+    ],
+    "buyer_lines": [
+      "Doidge Holdings Ltd"
+    ],
+    "price_text": "$3,270,000"
+  }
+}

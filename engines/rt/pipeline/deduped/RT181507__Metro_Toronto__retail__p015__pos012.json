@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT181507",
+  "source_folder": "Metro_Toronto/retail/p015",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181507",
+      "source_folder": "Metro_Toronto/retail/p015",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p015/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "1212 - 1238 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "23 Nov 2023",
+      "price_text": "$15,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1066470 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1234 Kingston Rd, Ste 116",
+        "Scarborough, Ontario",
+        "M1N 1P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Fallingbrook Property Inc     416-638-9222"
+      ],
+      "trade_name": "The Sud Group",
+      "contact_lines": [
+        "Attn: Elliott Sud",
+        "The Sud Building",
+        "15 Hove St, Ste 222",
+        "Toronto, Ontario",
+        "M3H 4Y8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3145, Lots 3145",
+      "Plan 64R-12126, Part 1",
+      "",
+      "PIN: 06466-0060",
+      "",
+      "0.55 acre"
+    ],
+    "arn_text": "19 01 012 040 03100",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $11,500,000",
+      "",
+      "chargee: 1066470 Ontario Inc",
+      "principal: $11,500,000   rate: 5.75% per annum.",
+      "registered: 11/23/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123500.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123607.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123608.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123718.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123720.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123742.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181507/1203_123748.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "713 / 4952",
+      "rt_id": "RT181507"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "1212 - 1238 KINGSTON RD",
+    "postcode": "M1N 1P3",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "11/23/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".55",
+    "consid": "15000000",
+    "cash": "3500000",
+    "debt": "11500000",
+    "note": "",
+    "pin": "06466-0060",
+    "rollno": "19 01 012 040 03100"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "1212 - 1238 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "23 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1066470 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Fallingbrook Property Inc"
+    ],
+    "price_text": "$15,000,000"
+  }
+}

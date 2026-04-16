@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT27405",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27405",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "36 - 42 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "15 Oct 2002",
+      "price_text": "$780,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jonathan, Donald & Pauline Jukes     519-885-4215"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Carpenter Shop Music Centre",
+        "36 King St N",
+        "Waterloo, Ontario",
+        "N2J 2W8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1053103 Ontario Ltd     905-875-1017"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jan Eisses",
+        "CPL Systems",
+        "7053 Twiss Rd, RR 3",
+        "Campbellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 491, Lot 6, E/S King St",
+      "Together with Plan 58R-3532, Part 3"
+    ],
+    "arn_text": "30 16 011 850 01100",
+    "consideration_lines": [
+      "cash: $780,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT274/RT27405/photo.jpg"
+    },
+    "footer": {
+      "page_position": "651 / 752",
+      "rt_id": "RT27405"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "36 - 42 KING ST N",
+    "postcode": "N2J 2W8",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "10/15/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "780000",
+    "cash": "780000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 011 850 01100"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "36 - 42 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "15 Oct 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Jonathan, Donald & Pauline Jukes"
+    ],
+    "buyer_lines": [
+      "1053103 Ontario Ltd"
+    ],
+    "price_text": "$780,000"
+  }
+}

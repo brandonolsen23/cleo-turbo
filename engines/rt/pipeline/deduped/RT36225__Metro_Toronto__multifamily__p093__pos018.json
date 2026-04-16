@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT36225",
+  "source_folder": "Metro_Toronto/multifamily/p093",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36225",
+      "source_folder": "Metro_Toronto/multifamily/p093",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p093/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 BELMONT ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "15 Jun 2004",
+      "price_text": "$548,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Stratheden Homes Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Barbara Hackett",
+        "666 Mount Pleasant Rd",
+        "Toronto, Ontario",
+        "M4S 2N3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 130, Part Lot 5",
+      "As in Inst No CA-403423",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 052 370 04600",
+    "consideration_lines": [
+      "cash: $548,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4619 / 6031",
+      "rt_id": "RT36225"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "100 BELMONT ST",
+    "postcode": "M5R 1P8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/15/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "548500",
+    "cash": "548500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 370 04600"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "100 BELMONT ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "15 Jun 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Stratheden Homes Ltd"
+    ],
+    "price_text": "$548,500"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT25150",
+  "source_folder": "Kitchener-Waterloo/multifamily/p026",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25150",
+      "source_folder": "Kitchener-Waterloo/multifamily/p026",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/multifamily/p026/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "219 ST ANDREWS ST"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "16 Apr 2002",
+      "price_text": "$606,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 221",
+      "Lot 5 & Part Lot 40",
+      "Except Plan 67R-3201, Parts 2 & 3",
+      "As in Inst No 706630",
+      "",
+      "0.91 acre"
+    ],
+    "arn_text": "30 06 050 060 10800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $491,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1294 / 1449",
+      "rt_id": "RT25150"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "219 ST ANDREWS ST",
+    "postcode": "N1S 1N6",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "04/16/2002",
+    "desc": "Apartment Bldg",
+    "bldg": "",
+    "acreage": ".91",
+    "consid": "606000",
+    "cash": "",
+    "debt": "491000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "30 06 050 060 10800"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "219 ST ANDREWS ST"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "16 Apr 2002",
+    "note": "Related Parties",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$606,000"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT95497",
+  "source_folder": "Metro_Toronto/retail/p038",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95497",
+      "source_folder": "Metro_Toronto/retail/p038",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p038/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "1152 DUPONT ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Oct 2013",
+      "price_text": "$2,650,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "1140 Dupont Street Ltd     416-505-1378"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Claude Bitton",
+        "27 Verwood Ave",
+        "Toronto, Ontario",
+        "M3H 2K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2375470 Ontario Ltd     416-588-1950"
+      ],
+      "trade_name": "Modern Furniture Knockoff",
+      "contact_lines": [
+        "Attn: Lorenzo Bellissmo",
+        "1152 Dupont St",
+        "Toronto, Ontario",
+        "M6H 2A2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 1 storey; 4,000 sf @ $663",
+      "",
+      "The property was purchased by its tenant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-27009, Part 1",
+      "Together with:",
+      "Inst No CT-499562",
+      "",
+      "PIN: 21288-0273",
+      "",
+      "NE corner Dupont St and Dufferin St",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "19 04 031 560 00900",
+    "consideration_lines": [
+      "cash: $2,250,000     assumed/vtb debt: $400,000",
+      "",
+      "chargee: 1140 Dupont Street Inc",
+      "principal: $400,000   rate: 0% per annum.",
+      "registered: 10/01/2013   due: 09/30/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT954/RT95497/1020_074425.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT954/RT95497/1020_074443.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT954/RT95497/1020_074519.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT954/RT95497/1020_074525.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT954/RT95497/1020_074626.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1892 / 4952",
+      "rt_id": "RT95497"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "1152 DUPONT ST",
+    "postcode": "M6H 2A2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/01/2013",
+    "desc": "Retail Bldg: 1 storey; 4,000 sf @ $663",
+    "bldg": "4,000 sf",
+    "acreage": ".35",
+    "consid": "2650000",
+    "cash": "2250000",
+    "debt": "400000",
+    "note": "Purchased by Tenant",
+    "pin": "21288-0273",
+    "rollno": "19 04 031 560 00900"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "1152 DUPONT ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Oct 2013",
+    "note": "Purchased by Tenant",
+    "description": "Retail Bldg: 1 storey; 4,000 sf @ $663",
+    "seller_lines": [
+      "1140 Dupont Street Ltd"
+    ],
+    "buyer_lines": [
+      "2375470 Ontario Ltd"
+    ],
+    "price_text": "$2,650,000"
+  }
+}

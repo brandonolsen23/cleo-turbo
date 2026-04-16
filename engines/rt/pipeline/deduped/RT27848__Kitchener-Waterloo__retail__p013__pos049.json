@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT27848",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27848",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "255 TOLLGATE BLVD"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "15 Nov 2002",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tanem Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nelson Kraus",
+        "263 Antia Ct",
+        "Waterloo, Ontario",
+        "N2K 2R4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2017547 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Flynn",
+        "276 Toll Gate Blvd",
+        "Waterloo, Ontario",
+        "N2L 4M2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1328, Block 235",
+      "Except Plan 58R-8308, Parts 1 & 2"
+    ],
+    "arn_text": "30 16 044 650 04600",
+    "consideration_lines": [
+      "cash: $163,750     assumed/vtb debt: $341,250"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT278/RT27848/photo.jpg"
+    },
+    "footer": {
+      "page_position": "650 / 752",
+      "rt_id": "RT27848"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "255 TOLLGATE BLVD",
+    "postcode": "N2L 4M3",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "11/15/2002",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "525000",
+    "cash": "163750",
+    "debt": "341250",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 044 650 04600"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "255 TOLLGATE BLVD"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "15 Nov 2002",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Tanem Developments Ltd"
+    ],
+    "buyer_lines": [
+      "2017547 Ontario Ltd"
+    ],
+    "price_text": "$525,000"
+  }
+}

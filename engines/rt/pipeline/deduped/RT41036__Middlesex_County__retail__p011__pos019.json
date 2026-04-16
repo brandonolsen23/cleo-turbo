@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT41036",
+  "source_folder": "Middlesex_County/retail/p011",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41036",
+      "source_folder": "Middlesex_County/retail/p011",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p011/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "233 WHARNCLIFFE RD S"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "01 Apr 2005",
+      "price_text": "$880,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "233 Wharncliffe Inc     416-979-9996"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Robert Sabato",
+        "10 Queen Elizabeth Blvd, Unit 2",
+        "Toronto, Ontario",
+        "M8Z 1L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lakeshore Dunn Corp     905-337-2677"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Raymond Foley",
+        "245 Lakeshore Rd E",
+        "Oakville, Ontario",
+        "L6J 1H9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2 units 5,700 sf @ $154"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 450, Lots 135-138",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "39 36 070 060 04400",
+    "consideration_lines": [
+      "cash: $880,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $600,000   rate: Floating base plus 10.0% per annum",
+      "registered: 04/01/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "520 / 686",
+      "rt_id": "RT41036"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "233 WHARNCLIFFE RD S",
+    "postcode": "",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "04/01/2005",
+    "desc": "Retail Bldg - 1 storey; 2 units 5,700 sf @ $154",
+    "bldg": "5,700 sf",
+    "acreage": ".52",
+    "consid": "880000",
+    "cash": "880000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 070 060 04400"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "233 WHARNCLIFFE RD S"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "01 Apr 2005",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2 units 5,700 sf @ $154",
+    "seller_lines": [
+      "233 Wharncliffe Inc"
+    ],
+    "buyer_lines": [
+      "Lakeshore Dunn Corp"
+    ],
+    "price_text": "$880,000"
+  }
+}

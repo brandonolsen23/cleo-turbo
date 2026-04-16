@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT46364",
+  "source_folder": "Metro_Toronto/retail/p071",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46364",
+      "source_folder": "Metro_Toronto/retail/p071",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p071/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "1532 BAYVIEW AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Nov 2005",
+      "price_text": "$665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bela Gross Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bela Gross",
+        "21 Mayfair Ave, Ste 602",
+        "Toronto, Ontario",
+        "M5N 2N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Alexander Stern Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter Fried",
+        "110 Dunblaine Ave",
+        "Toronto, Ontario",
+        "M5M 2S3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1788",
+      "Lot 268 & Part Lot 267",
+      "As in Inst No CT-275469",
+      "",
+      "0.18 acre"
+    ],
+    "arn_text": "19 04 103 280 03700",
+    "consideration_lines": [
+      "cash: $665,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT463/RT46364/air1.jpg",
+        "/assets/files/RT4/RT463/RT46364/air2.jpg",
+        "/assets/files/RT4/RT463/RT46364/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3532 / 4952",
+      "rt_id": "RT46364"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "1532 BAYVIEW AVE",
+    "postcode": "M4G 3B6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".18",
+    "consid": "665000",
+    "cash": "665000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 103 280 03700"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "1532 BAYVIEW AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bela Gross Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Alexander Stern Management Ltd"
+    ],
+    "price_text": "$665,000"
+  }
+}

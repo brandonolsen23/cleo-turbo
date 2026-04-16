@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT72834",
+  "source_folder": "Metro_Toronto/retail/p053",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72834",
+      "source_folder": "Metro_Toronto/retail/p053",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p053/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "3463 YONGE ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "16 Jun 2010",
+      "price_text": "$1,250,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Next Generation Investments Inc",
+        "Selma Halpern     416-964-8444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Howard Halpern",
+        "40 Oaklands Ave, Ste 101",
+        "Toronto, Ontario",
+        "M4V 2Z3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "TMAV Irene Ltd     905-554-4593"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Magued Hannalah",
+        "116 Geddington Cres",
+        "Markham, Ontario",
+        "L6B 0M5"
+      ]
+    },
+    "description_lines": [
+      "Pharmacy - 1 storey; 2,500 sf @ $500",
+      "",
+      "Tenant purchased the building"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1488, Part Lot 1",
+      "As in Inst No EO-80188",
+      "",
+      "PIN: 10356-0283",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 105 330 00400",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $620,000   rate: Prime plus 6.5% per annum",
+      "registered: 06/16/2010   due: on demand"
+    ],
+    "broker_lines": [
+      "RE/MAX Hallmark Realty: Tobias Owen & Selwyn Owen, 416-489-3434"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72834/0703_111840.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72834/0703_111859.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT728/RT72834/0703_111920.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT728/RT72834/air1.jpg",
+        "/assets/files/RT7/RT728/RT72834/air2.jpg",
+        "/assets/files/RT7/RT728/RT72834/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2621 / 4952",
+      "rt_id": "RT72834"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "3463 YONGE ST",
+    "postcode": "M4N 2N3",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "06/16/2010",
+    "desc": "Pharmacy - 1 storey; 2,500 sf @ $500",
+    "bldg": "2,500 sf",
+    "acreage": ".06",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "10356-0283",
+    "rollno": "19 04 105 330 00400"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "3463 YONGE ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "16 Jun 2010",
+    "note": "Purchased by Tenant",
+    "description": "Pharmacy - 1 storey; 2,500 sf @ $500",
+    "seller_lines": [
+      "Next Generation Investments Inc",
+      "Selma Halpern"
+    ],
+    "buyer_lines": [
+      "TMAV Irene Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

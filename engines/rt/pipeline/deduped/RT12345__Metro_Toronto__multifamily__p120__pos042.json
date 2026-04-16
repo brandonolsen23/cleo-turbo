@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT12345",
+  "source_folder": "Metro_Toronto/multifamily/p120",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12345",
+      "source_folder": "Metro_Toronto/multifamily/p120",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p120/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "250 JARVIS ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Mar 1998",
+      "price_text": "$6,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "808868 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: M. Huang",
+        "370 Queens Quay W, 3rd Floor",
+        "Toronto, Ontario",
+        "M5V 3J3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1273366 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nathan Cohen",
+        "200 King St W, Box 11",
+        "Toronto, Ontario",
+        "M5H 3T4"
+      ]
+    },
+    "description_lines": [
+      "Res Condo Building - 53 units @ $113,208"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 874"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $5,800,000",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $800,000   rate: Prime plus 7.0% per annum.",
+      "registered: 01/04/2017   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $615,200   rate: Prime minus 0.70% per annum.",
+      "registered: 01/06/2017   due: 01/06/2022",
+      "",
+      "Named Individual(s)",
+      "principal: $700,000   rate: 4.0% per annum.",
+      "registered: 01/03/2017   due: 01/01/2021",
+      "",
+      "chargee: Home Trust Company",
+      "principal: $496,000   rate: 4.99% per annum.",
+      "registered: 02/06/2017   due: 03/01/2018"
+    ],
+    "broker_lines": [
+      "Re/Max: Deborah Vieira, 416-699-9292"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT123/RT12345/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5993 / 6031",
+      "rt_id": "RT12345"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "250 JARVIS ST",
+    "postcode": "M5B 2L2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/02/1998",
+    "desc": "Res Condo Building - 53 units @ $113,208",
+    "bldg": "53",
+    "acreage": "",
+    "consid": "6000000",
+    "cash": "200000",
+    "debt": "5800000",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "250 JARVIS ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Mar 1998",
+    "note": "",
+    "description": "Res Condo Building - 53 units @ $113,208",
+    "seller_lines": [
+      "808868 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1273366 Ontario Ltd"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

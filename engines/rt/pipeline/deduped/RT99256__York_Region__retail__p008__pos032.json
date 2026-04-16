@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT99256",
+  "source_folder": "York_Region/retail/p008",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT99256",
+      "source_folder": "York_Region/retail/p008",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p008/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "39 MAIN ST N"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "03 Apr 2014",
+      "price_text": "$3,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1419214 Ontario Inc     905-471-1337"
+      ],
+      "trade_name": "EES Financial Services Ltd",
+      "contact_lines": [
+        "ASO: John Gibson",
+        "6090 Highway 7 E",
+        "Markham, Ontario",
+        "L3P 3B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2405428 Ontario Inc     905-707-0000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jesse Agnew",
+        "8601 Warden Ave",
+        "PO Box 56589",
+        "Markham, Ontario",
+        "L3R 0M6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 tenants 10,000 sf @ $310",
+      "",
+      "5 tenants occupy 9,000 sf",
+      "1,000 sf (1 unit) vacant - will be leased out",
+      "Purchased as an investment"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 18, Block D",
+      "Part Lots 6 & 7",
+      "As in Inst No R-596030",
+      "",
+      "PIN: 02931-0028",
+      "",
+      "E side Main ST N, S of Centre St",
+      "",
+      "0.74 acre"
+    ],
+    "arn_text": "19 36 040 340 02000",
+    "consideration_lines": [
+      "cash: $3,100,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Monopoly Commercial Realty: David Black, 905-477-4741"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT992/RT99256/0412_115303.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT992/RT99256/0412_115312.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT992/RT99256/0412_115313.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT992/RT99256/0412_115404.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT992/RT99256/0412_115428.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT992/RT99256/0412_115432.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "383 / 984",
+      "rt_id": "RT99256"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "39 MAIN ST N",
+    "postcode": "L3P 1X3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "04/03/2014",
+    "desc": "Retail Plaza - 1 storey; 5 tenants 10,000 sf @ $310",
+    "bldg": "10,000 sf",
+    "acreage": ".74",
+    "consid": "3100000",
+    "cash": "3100000",
+    "debt": "",
+    "note": "",
+    "pin": "02931-0028",
+    "rollno": "19 36 040 340 02000"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "39 MAIN ST N"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "03 Apr 2014",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 tenants 10,000 sf @ $310",
+    "seller_lines": [
+      "1419214 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2405428 Ontario Inc"
+    ],
+    "price_text": "$3,100,000"
+  }
+}

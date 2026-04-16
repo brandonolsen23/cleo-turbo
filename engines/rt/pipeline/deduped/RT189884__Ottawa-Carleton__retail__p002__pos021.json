@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT189884",
+  "source_folder": "Ottawa-Carleton/retail/p002",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189884",
+      "source_folder": "Ottawa-Carleton/retail/p002",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p002/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "15 CAPELLA CT",
+        "UNIT 115"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "22 Jan 2025",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "376026 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Ronald Nicholas",
+        "15 St Andrew St, Ste 2103",
+        "Brockville, Ontario",
+        "K6V 0B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16566111 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Diana Cachon",
+        "15 Capella Ct, Unit 115",
+        "Nepean, Ontario",
+        "K2E 7X1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 387",
+      "Level 1, Unit 15",
+      "",
+      "PIN: 15387-0015"
+    ],
+    "arn_text": "06 12 000 505 20515",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $675,000   rate: 6.79% per annum.",
+      "registered: 01/22/2025   due: 02/01/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189884/0510_153604.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189884/0510_153605.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189884/0510_153611.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189884/0510_153717.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1898/RT189884/0510_153723.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "72 / 1141",
+      "rt_id": "RT189884"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "15 CAPELLA CT, UNIT 115",
+    "postcode": "K2E 7X1",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "01/22/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "15387-0015",
+    "rollno": "06 12 000 505 20515"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "15 CAPELLA CT",
+      "UNIT 115"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "22 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "376026 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "16566111 Canada Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

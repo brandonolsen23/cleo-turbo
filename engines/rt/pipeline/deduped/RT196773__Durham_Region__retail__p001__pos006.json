@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT196773",
+  "source_folder": "Durham_Region/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196773",
+      "source_folder": "Durham_Region/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "257 WENTWORTH ST W"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "21 Jan 2026",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Toronto West Professional Centre, Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "61 Binscarth Rd",
+        "Toronto, Ontario",
+        "M4W 1Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Preserve 257 Wentworth St Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Patel",
+        "19 Meteor Dr",
+        "Toronto, Ontario",
+        "M9W 1A3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 180 - East Whitby,",
+      "Part Lot 7",
+      "As in Inst No:",
+      "OS-143353 (Parcel No A-62)",
+      "",
+      "PIN: 16409-0014",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196773/0207_075738a.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196773/0207_075738b.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196773/0207_075819.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1967/RT196773/0207_075826.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 506",
+      "rt_id": "RT196773"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "257 WENTWORTH ST W",
+    "postcode": "L1J 1M9",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "01/21/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "16409-0014",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "257 WENTWORTH ST W"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "21 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Toronto West Professional Centre, Inc"
+    ],
+    "buyer_lines": [
+      "Preserve 257 Wentworth St Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

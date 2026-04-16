@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT187355",
+  "source_folder": "Hamilton-Wentworth/retail/p002",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187355",
+      "source_folder": "Hamilton-Wentworth/retail/p002",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p002/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "146 KENILWORTH AVE N"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "18 Sep 2024",
+      "price_text": "$1,200,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Mahakali Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Maulikkumar Patel",
+        "146 Kenilworth Ave N",
+        "Hamilton, Ontario",
+        "L8H 4R8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 682, Lots 10-12",
+      "",
+      "PIN: 17261-0003",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "25 18 040 331 01720",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,200,000",
+      "",
+      "Named Individual(s)",
+      "principal: $1,200,000   rate: 0% per annum.",
+      "registered: 09/18/2024   due: 09/16/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187355/0928_100551.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187355/0928_100552.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187355/0928_100625.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1873/RT187355/0928_100635.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "69 / 616",
+      "rt_id": "RT187355"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "146 KENILWORTH AVE N",
+    "postcode": "L8H 4R8",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "09/18/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "1200000",
+    "cash": "",
+    "debt": "1200000",
+    "note": "Zero Cash",
+    "pin": "17261-0003",
+    "rollno": "25 18 040 331 01720"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "146 KENILWORTH AVE N"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "18 Sep 2024",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Mahakali Holdings Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

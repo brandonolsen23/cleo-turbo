@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT183080",
+  "source_folder": "York_Region/retail/p004",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183080",
+      "source_folder": "York_Region/retail/p004",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "50 BUR OAK AVE",
+        "UNIT 10 C"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "07 Feb 2024",
+      "price_text": "$1,200,001",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Lode Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 1457 McCowan Rd, Ste 204",
+        "Toronto, Ontario",
+        "M1S 5K7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000591053 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Francesca Dipietro",
+        "50 Bur Oak Ave, Unit 10C",
+        "Markham, Ontario",
+        "L6C 0A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1065",
+      "Level 1, Unit 25",
+      "",
+      "PIN: 29596-0025"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,200,001     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153101.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153106.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153107.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153109.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153302.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153304.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1830/RT183080/0217_153507.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "182 / 984",
+      "rt_id": "RT183080"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "50 BUR OAK AVE, UNIT 10 C",
+    "postcode": "L6C 0A2",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "02/07/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1200001",
+    "cash": "1200001",
+    "debt": "",
+    "note": "",
+    "pin": "29596-0025",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "50 BUR OAK AVE",
+      "UNIT 10 C"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "07 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Lode Investments Inc"
+    ],
+    "buyer_lines": [
+      "1000591053 Ontario Inc"
+    ],
+    "price_text": "$1,200,001"
+  }
+}

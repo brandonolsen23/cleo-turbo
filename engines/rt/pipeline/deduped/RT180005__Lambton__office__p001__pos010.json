@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT180005",
+  "source_folder": "Lambton/office/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180005",
+      "source_folder": "Lambton/office/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/office/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "411 WINGFIELD ST"
+      ],
+      "city_region": "Petrolia : Lambton",
+      "date_text": "21 Aug 2023",
+      "price_text": "$995,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Scottwill Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000588401 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Copeland",
+        "411 Wingfield St, Unit 1",
+        "Petrolia, Ontario",
+        "N0N 1R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 23, Lots 3-5, W/S Wingfield St",
+      "Plan 44, Part Lots 12, 16 & 17",
+      "As in Inst No L-679457",
+      "",
+      "PIN: 43336-0127",
+      "",
+      "0.40 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $995,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Zephir Real Estate Inc",
+      "principal: $600,000   rate: 12.0% per annum.",
+      "registered: 08/21/2023   due: 06/18/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 34",
+      "rt_id": "RT180005"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "411 WINGFIELD ST",
+    "postcode": "N0N 1R0",
+    "municipality": "Petrolia",
+    "region": "Lambton",
+    "date": "08/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".4",
+    "consid": "995000",
+    "cash": "995000",
+    "debt": "",
+    "note": "",
+    "pin": "43336-0127",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "411 WINGFIELD ST"
+    ],
+    "city_region": "Petrolia : Lambton",
+    "date_text": "21 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Scottwill Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1000588401 Ontario Inc"
+    ],
+    "price_text": "$995,000"
+  }
+}

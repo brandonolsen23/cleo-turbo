@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT36159",
+  "source_folder": "Ottawa-Carleton/retail/p019",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36159",
+      "source_folder": "Ottawa-Carleton/retail/p019",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p019/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 WOODFIELD DR"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "31 May 2004",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Minto Apartments Ltd     613-230-7051"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric McKinney",
+        "427 Laurier Ave W, Ste 300",
+        "Ottawa, Ontario",
+        "K1R 7Y2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - RF, Part Lot 29",
+      "Plan 4R-19360, Part 1",
+      "",
+      "0.76 acre"
+    ],
+    "arn_text": "06 12 000 610 01300",
+    "consideration_lines": [
+      "cash: $925,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT361/RT36159/photo.jpg"
+    },
+    "footer": {
+      "page_position": "913 / 1141",
+      "rt_id": "RT36159"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "2 WOODFIELD DR",
+    "postcode": "K2G 3Y5",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "05/31/2004",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".76",
+    "consid": "925000",
+    "cash": "925000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 12 000 610 01300"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "2 WOODFIELD DR"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "31 May 2004",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Minto Apartments Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$925,000"
+  }
+}

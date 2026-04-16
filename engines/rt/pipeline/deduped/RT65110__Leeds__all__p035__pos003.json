@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT65110",
+  "source_folder": "Leeds/all/p035",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65110",
+      "source_folder": "Leeds/all/p035",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p035/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1494 MALCOLM CRES"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "18 Nov 2008",
+      "price_text": "$540,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Themigroup Ltd     416-493-4148"
+      ],
+      "trade_name": "Moore & Costello",
+      "contact_lines": [
+        "Attn: Grant Moore",
+        "7660 Tenth St NE",
+        "Calgary, Alberta",
+        "T2E 8W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 702, Lot 9",
+      "",
+      "PIN: 43483-0141",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "38 28 200 033 14400",
+    "consideration_lines": [
+      "cash: $540,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1704 / 1916",
+      "rt_id": "RT65110"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1494 MALCOLM CRES",
+    "postcode": "N7S 6G4",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "11/18/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".75",
+    "consid": "540000",
+    "cash": "540000",
+    "debt": "",
+    "note": "",
+    "pin": "43483-0141",
+    "rollno": "38 28 200 033 14400"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1494 MALCOLM CRES"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "18 Nov 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Themigroup Ltd"
+    ],
+    "price_text": "$540,000"
+  }
+}

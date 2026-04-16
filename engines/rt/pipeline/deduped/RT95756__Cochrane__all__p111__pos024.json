@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT95756",
+  "source_folder": "Cochrane/all/p111",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95756",
+      "source_folder": "Cochrane/all/p111",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p111/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "3555 TRIM RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "19 Jul 2013",
+      "price_text": "$570,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "7550979 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Geoffrey Vivian",
+        "3555 Trim Rd",
+        "Ottawa, Ontario",
+        "K4B 1N2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 11",
+      "As in Inst No CU-22263",
+      "",
+      "PIN: 14547-0106",
+      "",
+      "0.24 acre"
+    ],
+    "arn_text": "03 11 010 701 05800",
+    "consideration_lines": [
+      "cash: $570,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5525 / 10920",
+      "rt_id": "RT95756"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "3555 TRIM RD",
+    "postcode": "K4B 1N2",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "07/19/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".24",
+    "consid": "570000",
+    "cash": "570000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "14547-0106",
+    "rollno": "03 11 010 701 05800"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "3555 TRIM RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "19 Jul 2013",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "7550979 Canada Inc"
+    ],
+    "price_text": "$570,000"
+  }
+}

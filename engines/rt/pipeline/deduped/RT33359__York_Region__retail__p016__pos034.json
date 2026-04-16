@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT33359",
+  "source_folder": "York_Region/retail/p016",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33359",
+      "source_folder": "York_Region/retail/p016",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "3235 HWY 7 E",
+        "LEVEL 1, UNITS 22-24"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "31 Dec 2003",
+      "price_text": "$1,335,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tang Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Tang",
+        "21 Greenwich Ave",
+        "Markham, Ontario",
+        "L3P 7K5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Koko Property Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jackson Lau",
+        "5418 Yonge St, Ste 106",
+        "Toronto, Ontario",
+        "M2N 6X4"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 894",
+      "Level 1, Units 22-24"
+    ],
+    "arn_text": "19 36 020 127 91822 +",
+    "consideration_lines": [
+      "cash: $1,335,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "785 / 984",
+      "rt_id": "RT33359"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "3235 HWY 7 E, LEVEL 1, UNITS 22-24",
+    "postcode": "L3R 3P3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "12/31/2003",
+    "desc": "Retail Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1335000",
+    "cash": "1335000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 127 91822+"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "3235 HWY 7 E",
+      "LEVEL 1, UNITS 22-24"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "31 Dec 2003",
+    "note": "",
+    "description": "Retail Condo",
+    "seller_lines": [
+      "Tang Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "Koko Property Development Inc"
+    ],
+    "price_text": "$1,335,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT45184",
+  "source_folder": "Metro_Toronto/retail/p072",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45184",
+      "source_folder": "Metro_Toronto/retail/p072",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p072/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1085 - 1095 OCONNOR DR"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "31 Oct 2005",
+      "price_text": "$1,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "795527 Ontario Inc     905-881-7693"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kam Gow",
+        "Chak Wong",
+        "330 Hwy 7 E, Ste 303",
+        "Richmond Hill, Ontario",
+        "L4B 3P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1573197 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nawfal Hindi",
+        "2226 Tiger Rd",
+        "Burlington, Ontario",
+        "L7M 4X3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2950, Block A",
+      "Plan 3636, Part Block C",
+      "As in Inst No TB-580146"
+    ],
+    "arn_text": "19 06 013 260 01300",
+    "consideration_lines": [
+      "cash: $1,700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT451/RT45184/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3555 / 4952",
+      "rt_id": "RT45184"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1085 - 1095 OCONNOR DR",
+    "postcode": "M4B 2T1",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "10/31/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1700000",
+    "cash": "1700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 013 260 01300"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1085 - 1095 OCONNOR DR"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "31 Oct 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "795527 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1573197 Ontario Ltd"
+    ],
+    "price_text": "$1,700,000"
+  }
+}

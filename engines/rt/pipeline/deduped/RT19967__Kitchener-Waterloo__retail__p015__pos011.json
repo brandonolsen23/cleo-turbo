@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT19967",
+  "source_folder": "Kitchener-Waterloo/retail/p015",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19967",
+      "source_folder": "Kitchener-Waterloo/retail/p015",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p015/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "66 KING ST W"
+      ],
+      "city_region": "Wellesley : Kitchener-Waterloo",
+      "date_text": "01 Dec 2000",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Margarete G. Von Goertz     519-742-5885"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mervyn Villemaire",
+        "c/o Eiwo Canadian Management",
+        "82 Weber St E",
+        "Kitchener, Ontario",
+        "N2H 1C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Twin City Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Angela Young",
+        "4136 Weimar Line, RR 3",
+        "Wellesley, Ontario",
+        "N0B 2T0"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 2 bldgs"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-5425, Parts 3 & 4",
+      "",
+      "1.01 acre"
+    ],
+    "arn_text": "30 24 030 002 06900",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "712 / 752",
+      "rt_id": "RT19967"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "66 KING ST W",
+    "postcode": "N0B 2M0",
+    "municipality": "Wellesley",
+    "region": "Kitchener-Waterloo",
+    "date": "12/01/2000",
+    "desc": "Retail Plaza - 1 storey; 2 bldgs",
+    "bldg": "",
+    "acreage": "1.01",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 24 030 002 06900"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "66 KING ST W"
+    ],
+    "city_region": "Wellesley : Kitchener-Waterloo",
+    "date_text": "01 Dec 2000",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 2 bldgs",
+    "seller_lines": [
+      "Margarete G. Von Goertz"
+    ],
+    "buyer_lines": [
+      "Twin City Properties Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

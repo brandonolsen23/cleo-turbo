@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24407",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24407",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "2605 HOWARD AVE"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "05 Feb 2002",
+      "price_text": "$565,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "John & Josephine Donato     519-253-1032"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Donato Auto Collision Ltd",
+        "435 Hanna St E",
+        "Windsor, Ontario",
+        "N8X 2N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Neumann Communications Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Reiner Neumann",
+        "363 Eugenie St",
+        "Windsor, Ontario",
+        "N8X 2Y2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey 6 units about 7,000 sf @ $81"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1266, Lots 8-11",
+      "Except Plan R-1463553, Part 1",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "37 39 080 020 01000",
+    "consideration_lines": [
+      "cash: $235,000     assumed/vtb debt: $330,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT244/RT24407/photo.jpg"
+    },
+    "footer": {
+      "page_position": "415 / 460",
+      "rt_id": "RT24407"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "2605 HOWARD AVE",
+    "postcode": "N8X 3W7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "02/05/2002",
+    "desc": "Retail Plaza - 1 storey 6 units about 7,000 sf @ $81",
+    "bldg": "7,000 sf",
+    "acreage": ".35",
+    "consid": "565000",
+    "cash": "235000",
+    "debt": "330000",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 080 020 01000"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "2605 HOWARD AVE"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "05 Feb 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey 6 units about 7,000 sf @ $81",
+    "seller_lines": [
+      "John & Josephine Donato"
+    ],
+    "buyer_lines": [
+      "Neumann Communications Ltd"
+    ],
+    "price_text": "$565,000"
+  }
+}

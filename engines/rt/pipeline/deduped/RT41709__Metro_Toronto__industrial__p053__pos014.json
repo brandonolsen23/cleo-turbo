@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT41709",
+  "source_folder": "Metro_Toronto/industrial/p053",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41709",
+      "source_folder": "Metro_Toronto/industrial/p053",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p053/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "344 GEARY AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 May 2005",
+      "price_text": "$550,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "983370 Ontario Inc",
+        "Campo Real Estate Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Luis Melo",
+        "336 Manning Ave",
+        "Toronto, Ontario",
+        "M6J 2K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2068540 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pedro Brazao",
+        "344 Geary Ave",
+        "Toronto, Ontario",
+        "M6H 2C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 646",
+      "Block H, Lot 14",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 033 040 03600",
+    "consideration_lines": [
+      "cash: $1     assumed/vtb debt: $549,999",
+      "",
+      "chargee: Campo Real Estate Developments Inc",
+      "principal: $200,000   rate: 10.0% per annum",
+      "registered: 05/05/2005   due: 05/04/2010",
+      "",
+      "chargee: 983370 Ontario Inc",
+      "principal: $349,999   rate: 10.0% per annum",
+      "registered: 05/05/2005   due: 05/04/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT417/RT41709/air1.jpg",
+        "/assets/files/RT4/RT417/RT41709/air2.jpg",
+        "/assets/files/RT4/RT417/RT41709/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT417/RT41709/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2615 / 4000",
+      "rt_id": "RT41709"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "344 GEARY AVE",
+    "postcode": "M6H 2C7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/05/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "550000",
+    "cash": "1",
+    "debt": "549999",
+    "note": "Zero Cash",
+    "pin": "",
+    "rollno": "19 04 033 040 03600"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "344 GEARY AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 May 2005",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "983370 Ontario Inc",
+      "Campo Real Estate Developments Inc"
+    ],
+    "buyer_lines": [
+      "2068540 Ontario Ltd"
+    ],
+    "price_text": "$550,000"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT183815",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183815",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "31 SIMCOE PLAZA"
+      ],
+      "city_region": "Terrace Bay : Thunder Bay",
+      "date_text": "21 Mar 2024",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Terrace Bay Pharmacare Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "18 Gracedale Dr",
+        "Richmond Hill, Ontario",
+        "L4C 0Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Care 54 Ontario Ltd     289-236-5600"
+      ],
+      "trade_name": "Care Group of Pharmacies",
+      "contact_lines": [
+        "Attn: Ali Reyhany",
+        "346 Millway Ave, Unit 9 & 10",
+        "Concord, Ontario",
+        "L4K 3W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-124, Lot 12",
+      "Except:",
+      "Plan 55R-4716, Part 1",
+      "",
+      "PIN: 62457-0307",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $800,000,000   rate: 25.0% per annum.",
+      "registered: 03/21/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "24 / 65",
+      "rt_id": "RT183815"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "31 SIMCOE PLAZA",
+    "postcode": "P0T 2W0",
+    "municipality": "Terrace Bay",
+    "region": "Thunder Bay",
+    "date": "03/21/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "62457-0307",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "31 SIMCOE PLAZA"
+    ],
+    "city_region": "Terrace Bay : Thunder Bay",
+    "date_text": "21 Mar 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Terrace Bay Pharmacare Inc"
+    ],
+    "buyer_lines": [
+      "Care 54 Ontario Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

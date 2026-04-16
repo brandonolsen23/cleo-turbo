@@ -1,0 +1,138 @@
+{
+  "rt_id": "RT19035",
+  "source_folder": "Halton_Region/retail/p013",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19035",
+      "source_folder": "Halton_Region/retail/p013",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p013/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "2500 - 2510 HAMPSHIRE GATE",
+        "BRISTOL CIRCLE"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "04 Sep 1997",
+      "price_text": "$7,100,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "Churchill Heights Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jerry Janik",
+        "3513 Mainway Ave",
+        "Burlington, Ontario",
+        "L7M 1A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Grandma Lee's Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Allan R. Biggs",
+        "2059 Lakeshore Blvd",
+        "Burlington, Ontario",
+        "L7R 1E1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 20M-492, Block 7",
+      "Plan 20R-11672, Parts 5-9"
+    ],
+    "arn_text": "24 01 010 010 02610",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $2,400,000",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/12/2025   due: on demand",
+      "",
+      "chargee: Sherwood Capital Mortgage Investment Corp",
+      "principal: $1,200,000   rate: 10.25% per annum.",
+      "registered: 02/14/2025   due: 03/01/2026",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,200,000   rate: As set out in the Credit Document.",
+      "registered: 02/13/2025   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $5,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/12/2025   due: on demand",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $649,999   rate: 5.34% per annum.",
+      "registered: 02/12/2025   due: 02/12/2030",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $843,750   rate: 7.99% per annum.",
+      "registered: 02/14/2025   due: 03/01/2026",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $635,100   rate: Prime plus 5.0% per annum.",
+      "registered: 02/13/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "611 / 613",
+      "rt_id": "RT19035"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "2500 - 2510 HAMPSHIRE GATE, BRISTOL CIRCLE",
+    "postcode": "L6H 6A2",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "09/04/1997",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "7100000",
+    "cash": "",
+    "debt": "2400000",
+    "note": "Zero Cash",
+    "pin": "",
+    "rollno": "24 01 010 010 02610"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "2500 - 2510 HAMPSHIRE GATE",
+      "BRISTOL CIRCLE"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "04 Sep 1997",
+    "note": "Zero Cash",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Churchill Heights Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Grandma Lee's Inc"
+    ],
+    "price_text": "$7,100,000"
+  }
+}

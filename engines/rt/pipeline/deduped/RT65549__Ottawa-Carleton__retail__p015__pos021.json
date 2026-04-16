@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT65549",
+  "source_folder": "Ottawa-Carleton/retail/p015",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65549",
+      "source_folder": "Ottawa-Carleton/retail/p015",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p015/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1701 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "24 Dec 2008",
+      "price_text": "$850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Jenco Real Estate Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Jensen",
+        "165 Inniskillin Dr",
+        "Carp, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan CAR-182, Part 1",
+      "Plan 4M-23, Part Lot 521",
+      "",
+      "PIN: 04150-0109 +",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $282,838",
+      "other: $567,162",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $300,000   rate: Prime plus 7.00% per annum",
+      "registered: 12/24/2008   due: on demand",
+      "",
+      "chargee: Paul & David Jensen",
+      "principal: $168,822",
+      "registered: 12/24/2008   due: 12/31/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "722 / 1141",
+      "rt_id": "RT65549"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1701 BANK ST",
+    "postcode": "K1V 7Z4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/24/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "850000",
+    "cash": "",
+    "debt": "282838",
+    "note": "Related Parties",
+    "pin": "04150-0109+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1701 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "24 Dec 2008",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Jenco Real Estate Ltd"
+    ],
+    "price_text": "$850,000"
+  }
+}

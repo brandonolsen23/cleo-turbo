@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT23669",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23669",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "61 NEPTUNE DR"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "19 Dec 2001",
+      "price_text": "$531,133",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "298885 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Danny Rinomato",
+        "78 Fifth Ave",
+        "Woodbridge, Ontario",
+        "L4L 6Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1098538 Ontario Inc     416-630-9914"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: G. Della Pia",
+        "171 Overbrook Place",
+        "Downsview, Ontario",
+        "M3H 4R2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 34 units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4680, Lot 25",
+      "",
+      "0.88 acre"
+    ],
+    "arn_text": "19 08 043 050 00600",
+    "consideration_lines": [
+      "cash: $188,533     assumed/vtb debt: $342,600"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT236/RT23669/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5320 / 6031",
+      "rt_id": "RT23669"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "61 NEPTUNE DR",
+    "postcode": "M6A 1X2",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/19/2001",
+    "desc": "Apartment Bldg - 3.5 storey; 34 units",
+    "bldg": "34 units",
+    "acreage": ".88",
+    "consid": "531133",
+    "cash": "188533",
+    "debt": "342600",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 08 043 050 00600"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "61 NEPTUNE DR"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "19 Dec 2001",
+    "note": "Partial Interest",
+    "description": "Apartment Bldg - 3.5 storey; 34 units",
+    "seller_lines": [
+      "298885 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1098538 Ontario Inc"
+    ],
+    "price_text": "$531,133"
+  }
+}

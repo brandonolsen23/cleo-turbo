@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT184681",
+  "source_folder": "Metro_Toronto/retail/p012",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184681",
+      "source_folder": "Metro_Toronto/retail/p012",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p012/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "836 YONGE ST",
+        "UNIT 101"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "06 May 2024",
+      "price_text": "$2,525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1 Yorkville Inc     416-481-2222"
+      ],
+      "trade_name": "Plazacorp Investments Ltd",
+      "contact_lines": [
+        "10 Wanless Ave, Ste 201",
+        "Toronto, Ontario",
+        "M4N 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000529069 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Avish Narang",
+        "2901 Bayview Ave, Ste 134A",
+        "North York, Ontario",
+        "M2K 1E6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 2933",
+      "Level 1, Unit 1",
+      "",
+      "PIN: 76933-0001"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,525,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $2,600,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 05/06/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184681/0519_063735.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184681/0519_063858.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184681/0519_063910.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184681/0519_064440.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184681/0519_064458.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1846/RT184681/0519_064716.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "570 / 4952",
+      "rt_id": "RT184681"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "836 YONGE ST, UNIT 101",
+    "postcode": "M4W 2H1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/06/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2525000",
+    "cash": "2525000",
+    "debt": "",
+    "note": "",
+    "pin": "76933-0001",
+    "rollno": ""
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "836 YONGE ST",
+      "UNIT 101"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "06 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1 Yorkville Inc"
+    ],
+    "buyer_lines": [
+      "1000529069 Ontario Inc"
+    ],
+    "price_text": "$2,525,000"
+  }
+}

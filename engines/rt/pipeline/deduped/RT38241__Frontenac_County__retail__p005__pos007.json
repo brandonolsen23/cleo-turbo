@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT38241",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38241",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "1690 BATH RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "01 Oct 2004",
+      "price_text": "$655,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "4027116 Canada Ltd     905-509-2272"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Louie Nuspl",
+        "140 Woodview Dr",
+        "Pickering, Ontario",
+        "L1V 1L2"
+      ]
+    },
+    "description_lines": [
+      "Store - 1 storey; 6,455 sf @ $101"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 665, Lots 11-13",
+      "",
+      "0.57 acre"
+    ],
+    "arn_text": "10 11 080 110 15800",
+    "consideration_lines": [
+      "cash: $655,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT382/RT38241/photo.jpg"
+    },
+    "footer": {
+      "page_position": "208 / 236",
+      "rt_id": "RT38241"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "1690 BATH RD",
+    "postcode": "K7M 4X9",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "10/01/2004",
+    "desc": "Store - 1 storey; 6,455 sf @ $101",
+    "bldg": "6,455 sf",
+    "acreage": ".57",
+    "consid": "655000",
+    "cash": "655000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 080 110 15800"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "1690 BATH RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "01 Oct 2004",
+    "note": "",
+    "description": "Store - 1 storey; 6,455 sf @ $101",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "4027116 Canada Ltd"
+    ],
+    "price_text": "$655,000"
+  }
+}

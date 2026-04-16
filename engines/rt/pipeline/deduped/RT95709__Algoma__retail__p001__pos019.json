@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT95709",
+  "source_folder": "Algoma/retail/p001",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95709",
+      "source_folder": "Algoma/retail/p001",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "480 PIM ST"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "17 Oct 2013",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "713771 Ontario Ltd     416-782-1969"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Martha Tishman",
+        "32 Heathdale Rd",
+        "Toronto, Ontario",
+        "M6C 1M6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1898974 Ontario Inc     905-867-8575"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Surinder Bola",
+        "6045 Creditview Rd, Ste 319",
+        "Mississauga, Ontario",
+        "L5V 0B1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 tenants 27,364 sf @ $99",
+      "",
+      "5 tenants occupy 16,289 sf",
+      "11,075 sf vacant - will be leased out",
+      "Anchored by Shoppers Home Health Care and Easy Home",
+      "140 surface parking spaces"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1R-2462, Part 4",
+      "",
+      "PIN: 31535-0217",
+      "",
+      "SE corner Pim St and McNabb St",
+      "",
+      "1.67 acre"
+    ],
+    "arn_text": "57 61 020 028 06300",
+    "consideration_lines": [
+      "cash: $2,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto Dominion Bank",
+      "principal: $2,025,000   rate: Prime plus 6.0% per annum.",
+      "registered: 10/17/2013   due: on demand"
+    ],
+    "broker_lines": [
+      "RE/MAX Sault Ste Marie Realty: Sam Butkovich, 705-759-0700",
+      "Homelife/United Realty: Rina Saini, 905-672-1234"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "20 / 29",
+      "rt_id": "RT95709"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "480 PIM ST",
+    "postcode": "P6B 2V4",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "10/17/2013",
+    "desc": "Retail Plaza - 1 storey; 5 tenants 27,364 sf @ $99",
+    "bldg": "27,364 sf",
+    "acreage": "1.67",
+    "consid": "2700000",
+    "cash": "2700000",
+    "debt": "",
+    "note": "",
+    "pin": "31535-0217",
+    "rollno": "57 61 020 028 06300"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "480 PIM ST"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "17 Oct 2013",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 tenants 27,364 sf @ $99",
+    "seller_lines": [
+      "713771 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1898974 Ontario Inc"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

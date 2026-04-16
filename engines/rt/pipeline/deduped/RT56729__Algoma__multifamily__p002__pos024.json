@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT56729",
+  "source_folder": "Algoma/multifamily/p002",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56729",
+      "source_folder": "Algoma/multifamily/p002",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/multifamily/p002/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "47 LEWIS RD",
+        "55 LEWIS RD"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "20 Jul 2007",
+      "price_text": "$1,247,350",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Cartier Road Apartments Ltd     705-942-1019"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Elgie",
+        "Elstrong Management Ltd",
+        "123 March St",
+        "Ste 300, PO Box 62",
+        "Sault Ste Marie, Ontario",
+        "P5A 5L2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Interrent Sault Ste Marie Inc     416-769-0769"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James McClintock",
+        "268 Royal York Rd, 2nd Flr",
+        "Toronto, Ontario",
+        "M8V 2V9"
+      ]
+    },
+    "description_lines": [
+      "2 Apartment Bldgs - 2.5 storey; 2 x 14 units @ $44,548"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-428, Lots 72-74",
+      "",
+      "0.98 acre"
+    ],
+    "arn_text": "57 61 010 013 05100",
+    "consideration_lines": [
+      "cash: $591,504     assumed/vtb debt: $655,846"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "75 / 78",
+      "rt_id": "RT56729"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "47 LEWIS RD, 55 LEWIS RD",
+    "postcode": "P6A 4G3",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "07/20/2007",
+    "desc": "2 Apartment Bldgs - 2.5 storey; 2 x 14 units @ $44,548",
+    "bldg": "28 units",
+    "acreage": ".98",
+    "consid": "1247350",
+    "cash": "591504",
+    "debt": "655846",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "57 61 010 013 05100"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "47 LEWIS RD",
+      "55 LEWIS RD"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "20 Jul 2007",
+    "note": "Portfolio Sale",
+    "description": "2 Apartment Bldgs - 2.5 storey; 2 x 14 units @ $44,548",
+    "seller_lines": [
+      "Cartier Road Apartments Ltd"
+    ],
+    "buyer_lines": [
+      "Interrent Sault Ste Marie Inc"
+    ],
+    "price_text": "$1,247,350"
+  }
+}

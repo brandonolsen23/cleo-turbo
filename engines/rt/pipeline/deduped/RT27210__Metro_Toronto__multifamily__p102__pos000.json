@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT27210",
+  "source_folder": "Metro_Toronto/multifamily/p102",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27210",
+      "source_folder": "Metro_Toronto/multifamily/p102",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p102/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "35 CHESTNUT PARK RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Oct 2002",
+      "price_text": "$2,560,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Eric R. Adelman",
+        "Nicole M. Zarry"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "27 South Dr",
+        "Toronto, Ontario",
+        "M4W 1R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Brian & Megan Porter"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "35 Chestnut Park Rd",
+        "Toronto, Ontario",
+        "M4W 1W7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 233-E, Lot 3"
+    ],
+    "arn_text": "19 04 101 230 00100",
+    "consideration_lines": [
+      "cash: $2,560,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT272/RT27210/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5051 / 6031",
+      "rt_id": "RT27210"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "35 CHESTNUT PARK RD",
+    "postcode": "M4W 1W7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/01/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2560000",
+    "cash": "2560000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 101 230 00100"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "35 CHESTNUT PARK RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Oct 2002",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Eric R. Adelman",
+      "Nicole M. Zarry"
+    ],
+    "buyer_lines": [
+      "Brian & Megan Porter"
+    ],
+    "price_text": "$2,560,000"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT193722",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193722",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "4255 - 4275 TECUMSEH RD E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "01 Aug 2025",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "4275 Tecumseh Road Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "110 Herwick St",
+        "Brampton, Ontario",
+        "L6S 0A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16936296 Canada Inc     416-264-6472"
+      ],
+      "trade_name": "MS Falcon Tooling",
+      "contact_lines": [
+        "Attn: Muhammed Abid",
+        "491 Brimley Rd, Unit 22",
+        "Toronto, Ontario",
+        "M1J 1A4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 12R-14647, Part 1",
+      "",
+      "PIN: 01363-0317",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "37 39 070 400 09000",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,125,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/01/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1937/RT193722/air1.jpg",
+        "/assets/files/RT19/RT1937/RT193722/air2.jpg",
+        "/assets/files/RT19/RT1937/RT193722/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "36 / 460",
+      "rt_id": "RT193722"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "4255 - 4275 TECUMSEH RD E",
+    "postcode": "N8W 1K2",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "08/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".66",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "01363-0317",
+    "rollno": "37 39 070 400 09000"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "4255 - 4275 TECUMSEH RD E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "01 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "4275 Tecumseh Road Inc"
+    ],
+    "buyer_lines": [
+      "16936296 Canada Inc"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

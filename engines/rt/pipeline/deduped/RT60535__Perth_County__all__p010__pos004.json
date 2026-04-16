@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT60535",
+  "source_folder": "Perth_County/all/p010",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60535",
+      "source_folder": "Perth_County/all/p010",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/all/p010/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "SEYMOUR ST",
+        "CONC D",
+        "PART LOT 17"
+      ],
+      "city_region": "N. Bay : Nipissing District",
+      "date_text": "01 Feb 2008",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Diamond Bingo Inc     519-660-8390"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bruce Furtney",
+        "66 Nanette Cres",
+        "London, Ontario",
+        "N5X 3K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Seavale Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Donald Gagnon",
+        "87 Marsh Dr",
+        "North Bay, Ontario",
+        "P1B 8G3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc D, Part Lot 17",
+      "Plan 36R-5424, Parts 5, 11-13",
+      "Plan NR-752, Part 5",
+      "Plan 36R-10415, Parts 1-5",
+      "Plan 36M-541, Part Block 1",
+      "",
+      "3.06 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "455 / 470",
+      "rt_id": "RT60535"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "SEYMOUR ST, CONC D, PART LOT 17",
+    "postcode": "",
+    "municipality": "N. Bay",
+    "region": "Nipissing District",
+    "date": "02/01/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.06",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "SEYMOUR ST",
+      "CONC D",
+      "PART LOT 17"
+    ],
+    "city_region": "N. Bay : Nipissing District",
+    "date_text": "01 Feb 2008",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Diamond Bingo Inc"
+    ],
+    "buyer_lines": [
+      "Seavale Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

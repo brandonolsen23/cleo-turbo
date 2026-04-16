@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT69371",
+  "source_folder": "Cochrane/office/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69371",
+      "source_folder": "Cochrane/office/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/office/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "834 MOUNTJOY ST S"
+      ],
+      "city_region": "Timmins : Cochrane",
+      "date_text": "13 Nov 2009",
+      "price_text": "$600,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "Genivar Ontario Inc     514-340-0046"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marcel Boucher",
+        "1600 Rene Levesque Blvd W",
+        "16th Floor",
+        "Montreal, Quebec",
+        "H3H 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Office Bldg - 1 storey; 5,000 sf @ $120",
+      "",
+      "5,000 sf plus 2,000 sf basement",
+      "Leased back to the vendor"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Broken Lot 1",
+      "Plan 6R-5710, Part 2",
+      "Plan 6R-7763, Part 1",
+      "",
+      "PIN: 65412-0173",
+      "",
+      "1.90 acre"
+    ],
+    "arn_text": "56 27 050 058 00902",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $390,000   rate: Prime plus 5.0% per annum",
+      "registered: 11/13/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 7",
+      "rt_id": "RT69371"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "834 MOUNTJOY ST S",
+    "postcode": "P4N 7Z3",
+    "municipality": "Timmins",
+    "region": "Cochrane",
+    "date": "11/13/2009",
+    "desc": "Office Bldg - 1 storey; 5,000 sf @ $120",
+    "bldg": "5,000 sf",
+    "acreage": "1.9",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "65412-0173",
+    "rollno": "56 27 050 058 00902"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "834 MOUNTJOY ST S"
+    ],
+    "city_region": "Timmins : Cochrane",
+    "date_text": "13 Nov 2009",
+    "note": "Sale Leaseback",
+    "description": "Office Bldg - 1 storey; 5,000 sf @ $120",
+    "seller_lines": [
+      "Genivar Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$600,000"
+  }
+}

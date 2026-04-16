@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT40459",
+  "source_folder": "Middlesex_County/retail/p011",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40459",
+      "source_folder": "Middlesex_County/retail/p011",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p011/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1286 JALNA BLVD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "15 Feb 2005",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "WTC Services Ltd     519-661-0824"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Barker",
+        "971 Maitland St",
+        "London, Ontario",
+        "N5Y 2X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "6094759 Canada Ltd     905-847-9350"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ben Thomas",
+        "125 Talbot Dr",
+        "Oakville, Ontario",
+        "L6L 4C4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 9,745 sf @ $67"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-3, Block C",
+      "",
+      "0.92 acre"
+    ],
+    "arn_text": "39 36 060 581 23800",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $450,000   rate: 5.94% per annum.",
+      "registered: 02/15/2005   due: 03/01/2010"
+    ],
+    "broker_lines": [
+      "Royal LePage Triland: Maurice Dwyer, 519-661-0380"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "522 / 686",
+      "rt_id": "RT40459"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1286 JALNA BLVD",
+    "postcode": "N6E 2R6",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "02/15/2005",
+    "desc": "Retail Plaza - 9,745 sf @ $67",
+    "bldg": "9,745 sf",
+    "acreage": ".92",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 060 581 23800"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1286 JALNA BLVD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "15 Feb 2005",
+    "note": "",
+    "description": "Retail Plaza - 9,745 sf @ $67",
+    "seller_lines": [
+      "WTC Services Ltd"
+    ],
+    "buyer_lines": [
+      "6094759 Canada Ltd"
+    ],
+    "price_text": "$650,000"
+  }
+}

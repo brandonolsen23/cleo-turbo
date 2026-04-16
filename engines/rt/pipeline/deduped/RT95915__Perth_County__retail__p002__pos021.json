@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT95915",
+  "source_folder": "Perth_County/retail/p002",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95915",
+      "source_folder": "Perth_County/retail/p002",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p002/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "752 QUEEN ST E"
+      ],
+      "city_region": "St. Marys : Perth County",
+      "date_text": "21 Oct 2013",
+      "price_text": "$625,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "165033 Ontario Inc",
+        "Maple Trust Co     905-326-0100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sohan Kansal",
+        "8 Cortese Terrace",
+        "Thornhill, Ontario",
+        "L4J 8S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2384612 Ontario Inc     905-472-5821"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Muhammad Latif",
+        "20 Evershot Cres",
+        "Markham, Ontario",
+        "L6E 0L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 19, Part Lot 18",
+      "As in Inst No R-280137",
+      "Except:",
+      "Plan 44R-2621, Parts 1-18",
+      "Plan 44R-2177, Part 1",
+      "",
+      "PIN: 53252-0478",
+      "",
+      "8.84 acre"
+    ],
+    "arn_text": "31 16 000 040 04800",
+    "consideration_lines": [
+      "cash: $625,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1449400 Ontario Inc",
+      "principal: $500,000   rate: 10.0% per annum.",
+      "registered: 10/21/2013   due: 11/01/2014",
+      "",
+      "chargee: 1535452 Ontario Inc",
+      "principal: $250,000   rate: 12.0% per annum.",
+      "registered: 10/21/2013   due: 11/01/2014"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95915/1123_141712.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95915/1123_141725.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95915/1123_141750.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95915/1123_141802.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT959/RT95915/1123_141853.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "72 / 113",
+      "rt_id": "RT95915"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "752 QUEEN ST E",
+    "postcode": "N4X 1G2",
+    "municipality": "St. Marys",
+    "region": "Perth County",
+    "date": "10/21/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "8.84",
+    "consid": "625000",
+    "cash": "625000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "53252-0478",
+    "rollno": "31 16 000 040 04800"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "752 QUEEN ST E"
+    ],
+    "city_region": "St. Marys : Perth County",
+    "date_text": "21 Oct 2013",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "165033 Ontario Inc",
+      "Maple Trust Co"
+    ],
+    "buyer_lines": [
+      "2384612 Ontario Inc"
+    ],
+    "price_text": "$625,000"
+  }
+}

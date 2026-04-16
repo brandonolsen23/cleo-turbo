@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT197927",
+  "source_folder": "Cochrane/all/p003",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197927",
+      "source_folder": "Cochrane/all/p003",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p003/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "330 DONALD ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "05 Jan 2026",
+      "price_text": "$902,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "16912117 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anne Daniel",
+        "6564 Richer Dr",
+        "Orleans, Ontario",
+        "K1C 3G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 441, Lot 186",
+      "",
+      "PIN: 04251-0018",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "06 14 031 202 07400",
+    "consideration_lines": [
+      "cash: $902,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $676,500   rate: Prime plus 10.0% per annum.",
+      "registered: 01/05/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "117 / 10920",
+      "rt_id": "RT197927"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "330 DONALD ST",
+    "postcode": "K1K 1M5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/05/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".13",
+    "consid": "902000",
+    "cash": "902000",
+    "debt": "",
+    "note": "",
+    "pin": "04251-0018",
+    "rollno": "06 14 031 202 07400"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "330 DONALD ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "05 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "16912117 Canada Inc"
+    ],
+    "price_text": "$902,000"
+  }
+}

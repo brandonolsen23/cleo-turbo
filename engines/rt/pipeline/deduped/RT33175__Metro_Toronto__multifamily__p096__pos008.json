@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT33175",
+  "source_folder": "Metro_Toronto/multifamily/p096",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33175",
+      "source_folder": "Metro_Toronto/multifamily/p096",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p096/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "77 MUTUAL ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "22 Dec 2003",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "77 Mutual Investments Inc     416-449-0205"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Spiros Mikrogianakis",
+        "70 Ranchdale Cres",
+        "Toronto, Ontario",
+        "M3A 2M3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2 storey; 24-bach @ $52,083",
+      "",
+      "8 bach apts on each floor including the basement."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 273-E, Lots G & C",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 066 290 01500",
+    "consideration_lines": [
+      "cash: $658,316     assumed/vtb debt: $591,684"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT331/RT33175/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4759 / 6031",
+      "rt_id": "RT33175"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "77 MUTUAL ST",
+    "postcode": "M5B 2A9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/22/2003",
+    "desc": "Apartment Bldg - 2 storey; 24-bach @ $52,083",
+    "bldg": "24 units",
+    "acreage": ".11",
+    "consid": "1250000",
+    "cash": "658316",
+    "debt": "591684",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 066 290 01500"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "77 MUTUAL ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "22 Dec 2003",
+    "note": "",
+    "description": "Apartment Bldg - 2 storey; 24-bach @ $52,083",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "77 Mutual Investments Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

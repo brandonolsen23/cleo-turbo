@@ -1,0 +1,131 @@
+{
+  "rt_id": "RT72598",
+  "source_folder": "Oxford_County/retail/p002",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT72598",
+      "source_folder": "Oxford_County/retail/p002",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p002/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "111 CHARLES ST E"
+      ],
+      "city_region": "Ingersoll : Oxford County",
+      "date_text": "04 Jun 2010",
+      "price_text": "$2,130,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "3087796 Nova Scotia Ltd",
+        "505 Project Ltd",
+        "Anesbury Corp Ltd     416-362-3711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Adam Brooks",
+        "Minden Gross LLP",
+        "145 King St W, Ste 2200",
+        "Toronto, Ontario",
+        "M5H 4G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1818127 Ontario Ltd     416-494-6009"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Wine",
+        "89 Skymark Dr",
+        "Apt PH 11",
+        "Toronto, Ontario",
+        "M2H 3S6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 tenants 32,000 sf @ $67",
+      "",
+      "3,500 sf vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 41R-3292, Parts 1-3",
+      "",
+      "PIN: 00169-0091",
+      "",
+      "3.40 acre"
+    ],
+    "arn_text": "32 18 020 030 03900",
+    "consideration_lines": [
+      "cash: $2,130,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Mortgage Loan Services Ltd",
+      "principal: $1,850,000   rate: 5.48% per annum",
+      "registered: 06/04/2010   due: 07/01/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT725/RT72598/0626_070411.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT725/RT72598/0626_070616.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT725/RT72598/0626_071210.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT725/RT72598/air1.jpg",
+        "/assets/files/RT7/RT725/RT72598/air2.jpg",
+        "/assets/files/RT7/RT725/RT72598/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "73 / 96",
+      "rt_id": "RT72598"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "111 CHARLES ST E",
+    "postcode": "N5C 1J9",
+    "municipality": "Ingersoll",
+    "region": "Oxford County",
+    "date": "06/04/2010",
+    "desc": "Retail Plaza - 1 storey; 3 tenants 32,000 sf @ $67",
+    "bldg": "32,000 sf",
+    "acreage": "3.4",
+    "consid": "2130000",
+    "cash": "2130000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "00169-0091",
+    "rollno": "32 18 020 030 03900"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "111 CHARLES ST E"
+    ],
+    "city_region": "Ingersoll : Oxford County",
+    "date_text": "04 Jun 2010",
+    "note": "Power of Sale",
+    "description": "Retail Plaza - 1 storey; 3 tenants 32,000 sf @ $67",
+    "seller_lines": [
+      "3087796 Nova Scotia Ltd",
+      "505 Project Ltd",
+      "Anesbury Corp Ltd"
+    ],
+    "buyer_lines": [
+      "1818127 Ontario Ltd"
+    ],
+    "price_text": "$2,130,000"
+  }
+}

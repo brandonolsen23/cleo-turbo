@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT176989",
+  "source_folder": "Stormont/retail/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176989",
+      "source_folder": "Stormont/retail/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "950 BROOKDALE AVE"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "21 Apr 2023",
+      "price_text": "$10,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Property Holdings Inc     416-628-7771"
+      ],
+      "trade_name": "Choice Properties REIT",
+      "contact_lines": [
+        "22 St Clair Ave E, Ste 700",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "U-Haul Co (Canada) Ltd",
+        "U-Haul Co (Canada) Ltee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2727 N Central Ave",
+        "Pheonix, AZ",
+        "USA - 85004"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 13",
+      "Plan 52R-8640, Part 6",
+      "",
+      "PIN: 60212-0350"
+    ],
+    "arn_text": "04 02 060 003 01500",
+    "consideration_lines": [
+      "cash: $10,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 29",
+      "rt_id": "RT176989"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "950 BROOKDALE AVE",
+    "postcode": "K6J 4P5",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "04/21/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "10000000",
+    "cash": "10000000",
+    "debt": "",
+    "note": "",
+    "pin": "60212-0350",
+    "rollno": "04 02 060 003 01500"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "950 BROOKDALE AVE"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "21 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canadian Property Holdings Inc"
+    ],
+    "buyer_lines": [
+      "U-Haul Co (Canada) Ltd",
+      "U-Haul Co (Canada) Ltee"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

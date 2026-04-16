@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT198102",
+  "source_folder": "Grenville_County/all/p001",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198102",
+      "source_folder": "Grenville_County/all/p001",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grenville_County/all/p001/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "881 - 885 ERIE ST E"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "26 Mar 2026",
+      "price_text": "$830,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2744382 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "155 Jolly Ave",
+        "LaSalle, Ontario",
+        "N9J 3T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "100457303 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Keith Rajsigl",
+        "885 Erie St E",
+        "Windsor, Ontario",
+        "N9A 3Y7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 937, Lot 251",
+      "",
+      "PIN: 01155-0071",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "37 39 030 270 08900",
+    "consideration_lines": [
+      "cash: $620,000     assumed/vtb debt: $210,000",
+      "",
+      "chargee: Sunshine Drugs Ltd",
+      "principal: $600,000   rate: 12.0% per annum.",
+      "registered: 01/26/2026   due: 01/19/2027",
+      "",
+      "chargee: 2744382 Ontario Inc",
+      "principal: $210,000   rate: 15.0% per annum.",
+      "registered: 01/26/2026   due: 01/18/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4 / 4932",
+      "rt_id": "RT198102"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "881 - 885 ERIE ST E",
+    "postcode": "N9A 3Y7",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "03/26/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "830000",
+    "cash": "620000",
+    "debt": "210000",
+    "note": "",
+    "pin": "01155-0071",
+    "rollno": "37 39 030 270 08900"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "881 - 885 ERIE ST E"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "26 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2744382 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "100457303 Ontario Inc"
+    ],
+    "price_text": "$830,000"
+  }
+}

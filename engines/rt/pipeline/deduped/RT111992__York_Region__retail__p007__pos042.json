@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT111992",
+  "source_folder": "York_Region/retail/p007",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT111992",
+      "source_folder": "York_Region/retail/p007",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p007/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2620 RUTHERFORD RD",
+        "UNITS 1 - 4"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "21 Oct 2015",
+      "price_text": "$2,201,846",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Melruth Development Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Massimo Giovannetti",
+        "39 Burnhaven Ave",
+        "Vaughan, Ontario",
+        "L6A 2P2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vaughan Capital Investments Inc     416-798-7070"
+      ],
+      "trade_name": "Intercity Realty Inc",
+      "contact_lines": [
+        "Attn: Luciano Grossi",
+        "3600 Langstaff Rd, Unit 14",
+        "Woodbridge, Ontario",
+        "L4L 9E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1294",
+      "Level 1, Units 9-12",
+      "Level 7, Unit 2",
+      "",
+      "PIN: 29825-0012"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,201,846     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/21/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091632.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091723.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091735.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091859.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091918.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091919.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_091934.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1119/RT111992/1031_092048.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "343 / 984",
+      "rt_id": "RT111992"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2620 RUTHERFORD RD, UNITS 1 - 4",
+    "postcode": "L4K 0H1",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "10/21/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2201846",
+    "cash": "2201846",
+    "debt": "",
+    "note": "",
+    "pin": "29825-0012",
+    "rollno": ""
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2620 RUTHERFORD RD",
+      "UNITS 1 - 4"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "21 Oct 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Melruth Development Corp"
+    ],
+    "buyer_lines": [
+      "Vaughan Capital Investments Inc"
+    ],
+    "price_text": "$2,201,846"
+  }
+}

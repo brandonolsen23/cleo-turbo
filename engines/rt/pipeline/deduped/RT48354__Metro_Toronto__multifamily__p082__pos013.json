@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT48354",
+  "source_folder": "Metro_Toronto/multifamily/p082",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48354",
+      "source_folder": "Metro_Toronto/multifamily/p082",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p082/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "258 SOUTH KINGSWAY"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Mar 2006",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-522",
+      "Part Lots 210 & 211, W/S The Kingsway",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "19 04 011 300 06200",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $562,500   rate: VRM base minus 0.8% per annum",
+      "registered: 03/31/2006   due: 04/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4064 / 6031",
+      "rt_id": "RT48354"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "258 SOUTH KINGSWAY",
+    "postcode": "M6S 3T9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "03/31/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 011 300 06200"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "258 SOUTH KINGSWAY"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Mar 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$750,000"
+  }
+}

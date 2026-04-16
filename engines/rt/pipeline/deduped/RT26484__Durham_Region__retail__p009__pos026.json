@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT26484",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26484",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "260 KINGSTON RD W"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "30 Jul 2002",
+      "price_text": "$3,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ken Silver",
+        "2180 Yonge St",
+        "PO Box 770, Stn K",
+        "Toronto, Ontario",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "First Capital (Westney Heights) Corp     416-504-4114"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Derek Hull",
+        "Centrefund Realty Corp",
+        "BCE Place, Canada Trust Tower",
+        "161 Bay St",
+        "Ste 2820, PO Box 219",
+        "Toronto, Ontario",
+        "M5J 2S1"
+      ]
+    },
+    "description_lines": [
+      "Former Canadian Tire - 1 storey; 52,110 sf @ $73"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-12030, Parts 1 & 2",
+      "Plan 40M-1228, Block 95",
+      "Except Plan 40R-12625, Part 3",
+      "",
+      "3.74 acre"
+    ],
+    "arn_text": "18 05 020 015 36100",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $3,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT264/RT26484/photo.jpg"
+    },
+    "footer": {
+      "page_position": "427 / 506",
+      "rt_id": "RT26484"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "260 KINGSTON RD W",
+    "postcode": "L1Z 1G1",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "07/30/2002",
+    "desc": "Former Canadian Tire - 1 storey; 52,110 sf @ $73",
+    "bldg": "52,110 sf",
+    "acreage": "3.74",
+    "consid": "3800000",
+    "cash": "800000",
+    "debt": "3000000",
+    "note": "",
+    "pin": "",
+    "rollno": "18 05 020 015 36100"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "260 KINGSTON RD W"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "30 Jul 2002",
+    "note": "",
+    "description": "Former Canadian Tire - 1 storey; 52,110 sf @ $73",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "First Capital (Westney Heights) Corp"
+    ],
+    "price_text": "$3,800,000"
+  }
+}

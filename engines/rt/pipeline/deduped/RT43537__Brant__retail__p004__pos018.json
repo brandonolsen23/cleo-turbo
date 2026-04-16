@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT43537",
+  "source_folder": "Brant/retail/p004",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43537",
+      "source_folder": "Brant/retail/p004",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "250 KING GEORGE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "26 Jul 2005",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1066290 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ronald Cowell",
+        "105 Colborne St W",
+        "Brantford, Ontario",
+        "N3T 1K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kahlon Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daljit Kahlon",
+        "197 Memorial Dr",
+        "Brantford, Ontario",
+        "N3R 5S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-5070, Parts 2-5",
+      "",
+      "2.09 acre"
+    ],
+    "arn_text": "29 06 030 023 54900",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "169 / 195",
+      "rt_id": "RT43537"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "250 KING GEORGE RD",
+    "postcode": "N3R 5L5",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "07/26/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.09",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 023 54900"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "250 KING GEORGE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "26 Jul 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1066290 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Kahlon Properties Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

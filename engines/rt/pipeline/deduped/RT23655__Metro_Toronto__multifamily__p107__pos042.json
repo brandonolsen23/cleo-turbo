@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT23655",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23655",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "270 SHELDON AVE"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "30 Nov 2001",
+      "price_text": "$5,736,200",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Leonard & Felicie Blatt",
+        "Rosalind Suckonic     416-440-4144"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3800 Yonge St, Ste 716",
+        "Toronto, Ontario",
+        "M4N 3P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "270 Sheldon Avenue Holdings Inc     416-340-1600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Guy Alberga",
+        "Metro Capital Group",
+        "20 Queen St W, Ste 2100",
+        "Toronto, Ontario",
+        "M5H 3R3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 6 storey; 69 units @ $83,133",
+      "",
+      "11-1bdrm 53-2bdrm 5-3bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 10",
+      "As in Inst No EB-323189",
+      "",
+      "1.89 acre"
+    ],
+    "arn_text": "19 19 013 340 04600",
+    "consideration_lines": [
+      "cash: $5,736,200     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT236/RT23655/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5343 / 6031",
+      "rt_id": "RT23655"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "270 SHELDON AVE",
+    "postcode": "M8W 4M1",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "11/30/2001",
+    "desc": "Apartment Bldg - 6 storey; 69 units @ $83,133",
+    "bldg": "69 units",
+    "acreage": "1.89",
+    "consid": "5736200",
+    "cash": "5736200",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 19 013 340 04600"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "270 SHELDON AVE"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "30 Nov 2001",
+    "note": "",
+    "description": "Apartment Bldg - 6 storey; 69 units @ $83,133",
+    "seller_lines": [
+      "Leonard & Felicie Blatt",
+      "Rosalind Suckonic"
+    ],
+    "buyer_lines": [
+      "270 Sheldon Avenue Holdings Inc"
+    ],
+    "price_text": "$5,736,200"
+  }
+}

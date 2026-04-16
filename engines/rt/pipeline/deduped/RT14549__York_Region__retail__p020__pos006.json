@@ -1,0 +1,137 @@
+{
+  "rt_id": "RT14549",
+  "source_folder": "York_Region/retail/p020",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14549",
+      "source_folder": "York_Region/retail/p020",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p020/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "411 MANHATTAN DR"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "01 Jun 1999",
+      "price_text": "$1,100,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "New York Life Insurance Company"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Michael J. Falabella",
+        "51 Madison Ave",
+        "New York, NY 10010",
+        "USA"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1065945 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Abramsky",
+        "341 George St N",
+        "Peterborough, Ontario",
+        "K9H 3P9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-12164, Parts 2 & 5",
+      "",
+      "1.25 acre"
+    ],
+    "arn_text": "19 36 030 226 77900",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,840,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/29/2019   due: on demand",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $3,644,250   rate: 2.450% per annum.",
+      "registered: 08/30/2019   due: 12/01/2024",
+      "",
+      "chargee: 1455 Trafalgar Apartments Ltd",
+      "principal: $400,000   rate: 6.0% per annum.",
+      "registered: 08/30/2019   due: 08/29/2020",
+      "",
+      "chargee: HMT Holdings Inc",
+      "principal: $2,795,000   rate: Greater of RBC prime plus 4.05% or 8.00% per annum.",
+      "registered: 08/29/2019   due: 09/01/2021",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,360,000   rate: Prime plus 5.0% per annum.",
+      "registered: 08/29/2019   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,210,000   rate: Prime plus 1.0% per annum.",
+      "registered: 08/26/2016   due: on demand",
+      "",
+      "chargee: RBC Investor Services Trust",
+      "principal: $1,240,000   rate: 3.06% per annum.",
+      "registered: 02/26/2015   due: 03/05/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "957 / 984",
+      "rt_id": "RT14549"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "411 MANHATTAN DR",
+    "postcode": "",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/01/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.25",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "19 36 030 226 77900"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "411 MANHATTAN DR"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "01 Jun 1999",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "New York Life Insurance Company"
+    ],
+    "buyer_lines": [
+      "1065945 Ontario Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

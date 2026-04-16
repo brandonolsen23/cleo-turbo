@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28114",
+  "source_folder": "Metro_Toronto/retail/p083",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28114",
+      "source_folder": "Metro_Toronto/retail/p083",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p083/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "1154 - 1156 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 Oct 2002",
+      "price_text": "$1,425,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "CLIC Properties Inc     416-927-1851"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Stephan von Buttlar",
+        "1874 Scarth St, 19th Flr",
+        "Regina, Saskatchewan",
+        "S4P 4B3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Brian St Clair Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Pittana",
+        "175 Bloor St E, Ste 716",
+        "Toronto, Ontario",
+        "M4W 3R8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 22,954 sf @ $62"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1458, Part Lots 3-6",
+      "As in CT-942480",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "19 04 033 850 08600",
+    "consideration_lines": [
+      "cash: $575,000     assumed/vtb debt: $850,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT281/RT28114/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4122 / 4952",
+      "rt_id": "RT28114"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "1154 - 1156 ST CLAIR AVE W",
+    "postcode": "M6E 1B3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/12/2002",
+    "desc": "Retail Bldg - 2 storey; 22,954 sf @ $62",
+    "bldg": "22,954 sf",
+    "acreage": ".27",
+    "consid": "1425000",
+    "cash": "575000",
+    "debt": "850000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 033 850 08600"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "1154 - 1156 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 Oct 2002",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 22,954 sf @ $62",
+    "seller_lines": [
+      "CLIC Properties Inc"
+    ],
+    "buyer_lines": [
+      "Brian St Clair Inc"
+    ],
+    "price_text": "$1,425,000"
+  }
+}

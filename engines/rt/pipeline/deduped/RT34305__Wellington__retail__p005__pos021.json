@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT34305",
+  "source_folder": "Wellington/retail/p005",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34305",
+      "source_folder": "Wellington/retail/p005",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "102 - 108 MAIN ST"
+      ],
+      "city_region": "Erin : Wellington",
+      "date_text": "26 Feb 2004",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "446886 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Hagyard",
+        "556 Simon St",
+        "Shelburne, Ontario",
+        "L0N 1S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1597462 Ontario Ltd     519-855-4512"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Latam",
+        "RR 1",
+        "Hillsburgh, Ontario",
+        "N0B 1Z0"
+      ]
+    },
+    "description_lines": [
+      "Grocery Store - 1 storey; 7,000 sf @ $114",
+      "",
+      "Purchased by tenant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62",
+      "Lot 16, Part Lots 15 & 17",
+      "As in Inst No ROS-384585",
+      "",
+      "0.73 acre"
+    ],
+    "arn_text": "23 16 000 009 11300",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "222 / 269",
+      "rt_id": "RT34305"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "102 - 108 MAIN ST",
+    "postcode": "N0B 1Z0",
+    "municipality": "Erin",
+    "region": "Wellington",
+    "date": "02/26/2004",
+    "desc": "Grocery Store - 1 storey; 7,000 sf @ $114",
+    "bldg": "7,000 sf",
+    "acreage": ".73",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 16 000 009 11300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "102 - 108 MAIN ST"
+    ],
+    "city_region": "Erin : Wellington",
+    "date_text": "26 Feb 2004",
+    "note": "",
+    "description": "Grocery Store - 1 storey; 7,000 sf @ $114",
+    "seller_lines": [
+      "446886 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1597462 Ontario Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT45111",
+  "source_folder": "Halton_Region/multifamily/p006",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45111",
+      "source_folder": "Halton_Region/multifamily/p006",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p006/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "71 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "11 Oct 2005",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "BRL Realty Ltd     905-676-1240"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Bresler",
+        "Budget Car Rentals",
+        "5905 Campus Rd",
+        "Mississauga, Ontario",
+        "L4V 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Vrancor Development Corp     905-335-0300"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Darko Vranich",
+        "1100 Burloak Dr, Ste 105",
+        "Burlington, Ontario",
+        "L7L 6B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 6",
+      "Plan PF-753, Part Lots 7-9",
+      "As in Inst No 685675",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "24 02 010 106 04400",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: BRL Realty Ltd",
+      "principal: $375,000   rate: 5.0% per annum",
+      "registered: 10/11/2005   due: 10/11/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "264 / 380",
+      "rt_id": "RT45111"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "71 PLAINS RD E",
+    "postcode": "L7T 2B8",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "10/11/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 010 106 04400"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "71 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "11 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "BRL Realty Ltd"
+    ],
+    "buyer_lines": [
+      "Vrancor Development Corp"
+    ],
+    "price_text": "$500,000"
+  }
+}

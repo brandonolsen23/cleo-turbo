@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT30490",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30490",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1408 MAIN ST"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "16 Jun 2003",
+      "price_text": "$1,185,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Courtney Klein Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Courtney Klein",
+        "9 Chancellor Ct",
+        "Ottawa, Ontario",
+        "K1V 0W7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-5300, Part 1",
+      "As in Inst No N-432537",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "06 27 020 820 11000",
+    "consideration_lines": [
+      "cash: $385,000     assumed/vtb debt: $800,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT304/RT30490/photo.jpg"
+    },
+    "footer": {
+      "page_position": "953 / 1141",
+      "rt_id": "RT30490"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1408 MAIN ST",
+    "postcode": "K2S 1B8",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "06/16/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "1185000",
+    "cash": "385000",
+    "debt": "800000",
+    "note": "",
+    "pin": "",
+    "rollno": "06 27 020 820 11000"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1408 MAIN ST"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "16 Jun 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Courtney Klein Holdings Inc"
+    ],
+    "price_text": "$1,185,000"
+  }
+}

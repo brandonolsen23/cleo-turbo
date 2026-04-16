@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT39546",
+  "source_folder": "York_Region/retail/p016",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39546",
+      "source_folder": "York_Region/retail/p016",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "10488 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "04 Jan 2005",
+      "price_text": "$3,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Crihoka Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Timothy Wach",
+        "1131 Leslie St",
+        "Toronto, Ontario",
+        "M3C 2K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Yonge Levendale Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Sitzer",
+        "255 Lesmill Rd",
+        "Toronto, Ontario",
+        "M3B 2V1"
+      ]
+    },
+    "description_lines": [
+      "Loblaw Supermarket - 28,000 sf @ $123"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5151, Part Block A",
+      "As in Inst No RH-42088",
+      "",
+      "NW corner of Yonge St at Levendale Rd",
+      "",
+      "3.25 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,450,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT395/RT39546/air1.jpg",
+        "/assets/files/RT3/RT395/RT39546/air2.jpg",
+        "/assets/files/RT3/RT395/RT39546/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT395/RT39546/photo.jpg"
+    },
+    "footer": {
+      "page_position": "756 / 984",
+      "rt_id": "RT39546"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "10488 YONGE ST",
+    "postcode": "",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "01/04/2005",
+    "desc": "Loblaw Supermarket - 28,000 sf @ $123",
+    "bldg": "28,000 sf",
+    "acreage": "3.25",
+    "consid": "3450000",
+    "cash": "3450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "10488 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "04 Jan 2005",
+    "note": "",
+    "description": "Loblaw Supermarket - 28,000 sf @ $123",
+    "seller_lines": [
+      "Crihoka Ltd"
+    ],
+    "buyer_lines": [
+      "Yonge Levendale Holdings Ltd"
+    ],
+    "price_text": "$3,450,000"
+  }
+}

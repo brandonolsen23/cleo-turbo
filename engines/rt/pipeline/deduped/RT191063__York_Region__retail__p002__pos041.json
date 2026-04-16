@@ -1,0 +1,136 @@
+{
+  "rt_id": "RT191063",
+  "source_folder": "York_Region/retail/p002",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191063",
+      "source_folder": "York_Region/retail/p002",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "11188 YONGE ST",
+        "11240 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "28 Mar 2025",
+      "price_text": "$59,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cars Canada PHA 1 GPSPE LLC",
+        "Cars Canada PHA 2 GPSPE LLC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Capital Automotive LLC",
+        "8484 Westpark Dr, Ste 200",
+        "McLean, Virginia",
+        "USA - 22102"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001178791 Ontario Ltd",
+        "1001178728 Ontario Ltd     888-654-2670"
+      ],
+      "trade_name": "PAG Direct",
+      "contact_lines": [
+        "Attn: Mohan Janakiraman",
+        "11240 Yonge St",
+        "Richmond, Ontario",
+        "L4S 1K9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Vaughan, Part Lot 54",
+      "Plan 65R-31582, Parts 1 & 2",
+      "Plan 1642,",
+      "Part Lot 5 & Part Block A",
+      "As in Inst No RH-51375",
+      "",
+      "PIN: 03216-2519 +",
+      "",
+      "8.60 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $59,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $61,900,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/28/2025   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $25,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/28/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125444.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125454.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125536.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125537.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125544.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125731a.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125731b.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191063/0412_125741.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "92 / 984",
+      "rt_id": "RT191063"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "11188 YONGE ST, 11240 YONGE ST",
+    "postcode": "L4S 1K9",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "03/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "8.6",
+    "consid": "59200000",
+    "cash": "59200000",
+    "debt": "",
+    "note": "",
+    "pin": "03216-2519+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "11188 YONGE ST",
+      "11240 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "28 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Cars Canada PHA 1 GPSPE LLC",
+      "Cars Canada PHA 2 GPSPE LLC"
+    ],
+    "buyer_lines": [
+      "1001178791 Ontario Ltd",
+      "1001178728 Ontario Ltd"
+    ],
+    "price_text": "$59,200,000"
+  }
+}

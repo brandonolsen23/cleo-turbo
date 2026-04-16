@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT99786",
+  "source_folder": "Cochrane/all/p104",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT99786",
+      "source_folder": "Cochrane/all/p104",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p104/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "2353 DWYER HILL RD"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "22 Apr 2014",
+      "price_text": "$900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Graham Holdings Inc     613-832-0341"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Graham",
+        "100 Kerscott Heights Way",
+        "Dunrobin, Ontario",
+        "K0A 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 6",
+      "As in Inst No N-645089",
+      "",
+      "PIN: 04465-0032",
+      "",
+      "1.40 acre"
+    ],
+    "arn_text": "06 27 010 820 01200",
+    "consideration_lines": [
+      "cash: $900,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5176 / 10920",
+      "rt_id": "RT99786"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "2353 DWYER HILL RD",
+    "postcode": "K0A 1B0",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "04/22/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.4",
+    "consid": "900000",
+    "cash": "900000",
+    "debt": "",
+    "note": "",
+    "pin": "04465-0032",
+    "rollno": "06 27 010 820 01200"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "2353 DWYER HILL RD"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "22 Apr 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Graham Holdings Inc"
+    ],
+    "price_text": "$900,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT127030",
+  "source_folder": "Ottawa-Carleton/retail/p008",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT127030",
+      "source_folder": "Ottawa-Carleton/retail/p008",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p008/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "186 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "27 Jul 2017",
+      "price_text": "$6,444,251",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "The Bank of Nova Scotia     416-866-6161"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Darren Da Silva",
+        "Real Estate Department",
+        "44 King St W, 21st Flr",
+        "Toronto, Ontario",
+        "M5H 1H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "ONT SNB Inc     905-669-9714"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert DeGasperis",
+        "c/o Metrus Properties",
+        "30 Floral Pkwy, Ste 200",
+        "Concord, Ontario",
+        "L4K 4R1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2996,",
+      "Lot 34, N/S Gloucester St",
+      "",
+      "PIN: 04114-0046",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 14 041 801 32000",
+    "consideration_lines": [
+      "cash: $6,444,251     assumed/vtb debt: $0",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $70,000,000   rate: 25.0% per annum.",
+      "registered: 07/27/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1270/RT127030/1104_082659.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1270/RT127030/1104_082700.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1270/RT127030/1104_082712.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1270/RT127030/1104_082715.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1270/RT127030/1104_082732.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "365 / 1141",
+      "rt_id": "RT127030"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "186 BANK ST",
+    "postcode": "K2P 1W6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/27/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "6444251",
+    "cash": "6444251",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "04114-0046",
+    "rollno": "06 14 041 801 32000"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "186 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "27 Jul 2017",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "The Bank of Nova Scotia"
+    ],
+    "buyer_lines": [
+      "ONT SNB Inc"
+    ],
+    "price_text": "$6,444,251"
+  }
+}

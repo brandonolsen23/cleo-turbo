@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT99369",
+  "source_folder": "Cochrane/all/p104",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT99369",
+      "source_folder": "Cochrane/all/p104",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p104/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "4321 NINTH LINE",
+        "4321 9TH LINE",
+        "8908 CASTOR RD"
+      ],
+      "city_region": "Osgoode : Ottawa-Carleton",
+      "date_text": "07 Apr 2014",
+      "price_text": "$1,690,401",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 9, Part Lot 41",
+      "As in inst Nos:",
+      "OS-23182 & OS-24503",
+      "",
+      "PIN: 04287-0011 +",
+      "",
+      "198.47 acre"
+    ],
+    "arn_text": "06 01 000 070 20600 +",
+    "consideration_lines": [
+      "cash: $1,690,401     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $1,464,564   rate: 0% per annum.",
+      "registered: 04/07/2014   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5190 / 10920",
+      "rt_id": "RT99369"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "4321 NINTH LINE, 4321 9TH LINE, 8908 CASTOR RD",
+    "postcode": "K0C 2K0",
+    "municipality": "Osgoode",
+    "region": "Ottawa-Carleton",
+    "date": "04/07/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "198.47",
+    "consid": "1690401",
+    "cash": "1690401",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04287-0011+",
+    "rollno": "06 01 000 070 20600+"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "4321 NINTH LINE",
+      "4321 9TH LINE",
+      "8908 CASTOR RD"
+    ],
+    "city_region": "Osgoode : Ottawa-Carleton",
+    "date_text": "07 Apr 2014",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,690,401"
+  }
+}

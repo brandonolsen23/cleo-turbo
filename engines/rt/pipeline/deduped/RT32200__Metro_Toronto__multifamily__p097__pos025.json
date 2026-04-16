@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT32200",
+  "source_folder": "Metro_Toronto/multifamily/p097",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32200",
+      "source_folder": "Metro_Toronto/multifamily/p097",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p097/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "3 RIVERCREST RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Sep 2003",
+      "price_text": "$720,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "FourPlex - 2 storey; 4 units @ $180,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-1456, Part Lots 3-5",
+      "As in Inst No CA-25330",
+      "",
+      "0.09 acre"
+    ],
+    "arn_text": "19 04 012 170 00600",
+    "consideration_lines": [
+      "cash: $720,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Re/Max West: Lee & Georgia Mellodin, 416-235-2500"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT322/RT32200/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4826 / 6031",
+      "rt_id": "RT32200"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "3 RIVERCREST RD",
+    "postcode": "M6S 4H1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/30/2003",
+    "desc": "FourPlex - 2 storey; 4 units @ $180,000",
+    "bldg": "4 units",
+    "acreage": ".09",
+    "consid": "720000",
+    "cash": "720000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 012 170 00600"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "3 RIVERCREST RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Sep 2003",
+    "note": "",
+    "description": "FourPlex - 2 storey; 4 units @ $180,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$720,000"
+  }
+}

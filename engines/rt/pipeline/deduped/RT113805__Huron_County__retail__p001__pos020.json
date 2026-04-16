@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT113805",
+  "source_folder": "Huron_County/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT113805",
+      "source_folder": "Huron_County/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Huron_County/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "274 BAYFIELD RD"
+      ],
+      "city_region": "Goderich : Huron County",
+      "date_text": "16 Dec 2015",
+      "price_text": "$460,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2251481 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sukanya Sutharsanan",
+        "45 Miles Hill Cres",
+        "Richmond Hill, Ontario",
+        "L4E 4Y9"
+      ]
+    },
+    "description_lines": [
+      "Gas Station"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc C, Part Lot 8",
+      "As in Inst No R-238350",
+      "",
+      "PIN: 41142-0029",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "40 28 010 400 01100",
+    "consideration_lines": [
+      "cash: $460,000     assumed/vtb debt: $0",
+      "other: $200,000",
+      "",
+      "chargee: Mijar Ltd",
+      "principal: $400,000   rate: 8.0% per annum.",
+      "registered: 12/16/2015   due: 12/11/2016",
+      "",
+      "chargee: 2398804 Ontario Inc",
+      "principal: $250,000   rate: 0% per annum.",
+      "registered: 12/16/2015   due: 06/11/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151538.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151608.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151609.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151616.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151643.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151647.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1138/RT113805/0730_151652.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 52",
+      "rt_id": "RT113805"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "274 BAYFIELD RD",
+    "postcode": "N7A 3G6",
+    "municipality": "Goderich",
+    "region": "Huron County",
+    "date": "12/16/2015",
+    "desc": "Gas Station",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "460000",
+    "cash": "460000",
+    "debt": "",
+    "note": "",
+    "pin": "41142-0029",
+    "rollno": "40 28 010 400 01100"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "274 BAYFIELD RD"
+    ],
+    "city_region": "Goderich : Huron County",
+    "date_text": "16 Dec 2015",
+    "note": "",
+    "description": "Gas Station",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2251481 Ontario Inc"
+    ],
+    "price_text": "$460,000"
+  }
+}

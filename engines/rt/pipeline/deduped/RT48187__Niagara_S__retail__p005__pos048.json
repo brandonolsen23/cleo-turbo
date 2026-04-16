@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT48187",
+  "source_folder": "Niagara_S/retail/p005",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48187",
+      "source_folder": "Niagara_S/retail/p005",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p005/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "200 GARRISON RD"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "18 Apr 2006",
+      "price_text": "$2,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Koskor Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Zelda Korenblum",
+        "1810 Avenue Rd, Ste 200",
+        "Toronto, Ontario",
+        "M5M 3Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Garrison Fort Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frank Karametch",
+        "8920 Woodbine Ave, Ste 300",
+        "Markham, Ontario",
+        "L3R 9W9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-1915, Part 2",
+      "",
+      "11.99 acre"
+    ],
+    "arn_text": "27 03 010 035 01000",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $1,200,000",
+      "",
+      "chargee: Koskor Investments Ltd",
+      "principal: $1,200,000   rate: 6.0% per annum 18.0% per annum in default.",
+      "registered: 04/18/2006   due: 04/18/2008",
+      "",
+      "chargee: 2098445 Ontario Inc",
+      "principal: $1,550,000   rate: 4.0% per annum",
+      "registered: 04/18/2006   due: 04/18/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT481/RT48187/air1.jpg",
+        "/assets/files/RT4/RT481/RT48187/air2.jpg",
+        "/assets/files/RT4/RT481/RT48187/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT481/RT48187/photo.jpg"
+    },
+    "footer": {
+      "page_position": "249 / 324",
+      "rt_id": "RT48187"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "200 GARRISON RD",
+    "postcode": "L2A 5S6",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "04/18/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "11.99",
+    "consid": "2700000",
+    "cash": "1500000",
+    "debt": "1200000",
+    "note": "",
+    "pin": "",
+    "rollno": "27 03 010 035 01000"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "200 GARRISON RD"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "18 Apr 2006",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Koskor Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Garrison Fort Inc"
+    ],
+    "price_text": "$2,700,000"
+  }
+}

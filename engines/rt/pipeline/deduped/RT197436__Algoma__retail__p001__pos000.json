@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT197436",
+  "source_folder": "Algoma/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197436",
+      "source_folder": "Algoma/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "460 PIM ST"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "24 Feb 2026",
+      "price_text": "$4,065,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "JT's Cambrian Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "255 Pointe Louise Dr",
+        "Sault Ste Marie, ON",
+        "P6A 5K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2743423 Alberta Ltd     705-759-0043"
+      ],
+      "trade_name": "Sault Nissan",
+      "contact_lines": [
+        "Attn: Sean Lafleur",
+        "460 Pim St",
+        "Sault Ste Marie, ON",
+        "P6B 2V2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 17909,",
+      "Lots 7-10, Part Lots 1-6 & Part Lane",
+      "Plan 2012, Lot 117",
+      "Plan 52431, Part Block B",
+      "As in Inst No T-426307",
+      "",
+      "PIN: 31535-0219",
+      "",
+      "1.65 acre"
+    ],
+    "arn_text": "57 61 020 028 05900",
+    "consideration_lines": [
+      "cash: $3,565,000     assumed/vtb debt: $500,000",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $4,065,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/24/2026   due: on demand",
+      "",
+      "chargee: JT's Cambian Holding Ltd",
+      "principal: $500,000   rate: 7.50% per annum.",
+      "registered: 02/24/2026   due: 02/24/2031"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1974/RT197436/air1.jpg",
+        "/assets/files/RT19/RT1974/RT197436/air2.jpg",
+        "/assets/files/RT19/RT1974/RT197436/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 29",
+      "rt_id": "RT197436"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "460 PIM ST",
+    "postcode": "P6B 2V2",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "02/24/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.65",
+    "consid": "4065000",
+    "cash": "3565000",
+    "debt": "500000",
+    "note": "",
+    "pin": "31535-0219",
+    "rollno": "57 61 020 028 05900"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "460 PIM ST"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "24 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "JT's Cambrian Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "2743423 Alberta Ltd"
+    ],
+    "price_text": "$4,065,000"
+  }
+}

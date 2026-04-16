@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT155198",
+  "source_folder": "Cochrane/all/p045",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT155198",
+      "source_folder": "Cochrane/all/p045",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p045/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "59 ROSEBERY AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Sep 2020",
+      "price_text": "$1,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "PMKS Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Majella Lecours",
+        "c/o 59 Rosebery Ave",
+        "Ottawa, Ontario",
+        "K1S 1W1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 71572,",
+      "Part Block B, N Rosebery Dr",
+      "As in Inst No N-484381",
+      "",
+      "PIN: 04134-0101",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "06 14 052 301 14400",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,040,000   rate: Prime plus 10.0% per annum.",
+      "registered: 09/28/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2219 / 10920",
+      "rt_id": "RT155198"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "59 ROSEBERY AVE",
+    "postcode": "K1S 1W1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/28/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04134-0101",
+    "rollno": "06 14 052 301 14400"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "59 ROSEBERY AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Sep 2020",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "PMKS Holdings Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

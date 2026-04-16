@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT27692",
+  "source_folder": "Metro_Toronto/multifamily/p101",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27692",
+      "source_folder": "Metro_Toronto/multifamily/p101",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p101/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "429 ONTARIO ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Nov 2002",
+      "price_text": "$580,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Albert Perez     416-881-9175"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "11 Holm Cres",
+        "Thornhill, Ontario",
+        "L3T 5M4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "John Thompson"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "429 Ontario St",
+        "Toronto, Ontario",
+        "M5A 2V9"
+      ]
+    },
+    "description_lines": [
+      "FivePlex - 3 storey semi; 5 units @ $116,000",
+      "",
+      "Includes bsmt apartment"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-138, Part Lots 8 7 9",
+      "As in Deed CA-616151"
+    ],
+    "arn_text": "19 04 074 090 00900",
+    "consideration_lines": [
+      "cash: $580,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Re/Max Realtron: David Soberano, 905-470-9800"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT276/RT27692/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5013 / 6031",
+      "rt_id": "RT27692"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "429 ONTARIO ST",
+    "postcode": "M5A 2V9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/07/2002",
+    "desc": "FivePlex - 3 storey semi; 5 units @ $116,000",
+    "bldg": "5 units",
+    "acreage": "",
+    "consid": "580000",
+    "cash": "580000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 074 090 00900"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "429 ONTARIO ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Nov 2002",
+    "note": "",
+    "description": "FivePlex - 3 storey semi; 5 units @ $116,000",
+    "seller_lines": [
+      "Albert Perez"
+    ],
+    "buyer_lines": [
+      "John Thompson"
+    ],
+    "price_text": "$580,000"
+  }
+}

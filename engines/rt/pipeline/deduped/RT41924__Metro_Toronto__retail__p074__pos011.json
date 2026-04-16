@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT41924",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41924",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1496 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "19 May 2005",
+      "price_text": "$920,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Andry Management Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vince Andrisani",
+        "185 King St E, Ste 100",
+        "Toronto, Ontario",
+        "M5A 1J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2058406 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Politis",
+        "7A Cachet Pkwy",
+        "Markham, Ontario",
+        "L6C 1G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-588, Lots 7-9",
+      "",
+      "0.54 acre"
+    ],
+    "arn_text": "19 01 012 180 01600",
+    "consideration_lines": [
+      "cash: $362,000     assumed/vtb debt: $558,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT419/RT41924/air1.jpg",
+        "/assets/files/RT4/RT419/RT41924/air2.jpg",
+        "/assets/files/RT4/RT419/RT41924/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT419/RT41924/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3662 / 4952",
+      "rt_id": "RT41924"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1496 KINGSTON RD",
+    "postcode": "M1N 1R6",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/19/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".54",
+    "consid": "920000",
+    "cash": "362000",
+    "debt": "558000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 012 180 01600"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1496 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "19 May 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Andry Management Corp"
+    ],
+    "buyer_lines": [
+      "2058406 Ontario Inc"
+    ],
+    "price_text": "$920,000"
+  }
+}

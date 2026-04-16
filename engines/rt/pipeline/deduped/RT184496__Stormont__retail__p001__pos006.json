@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT184496",
+  "source_folder": "Stormont/retail/p001",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184496",
+      "source_folder": "Stormont/retail/p001",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/retail/p001/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "628 PITT ST"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "30 Apr 2024",
+      "price_text": "$6,200,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "161 Elgin St",
+        "Ottawa, Ontario",
+        "K2P 2K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mrak Holdings Inc",
+        "Mark Motors of Ottawa (1987) Ltd     613-740-1009"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Mrak",
+        "611 Montreal Rd",
+        "Ottawa, Ontario",
+        "K1K 0T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 52R-2252, Part 2",
+      "Plan 53R-4375, Parts 1 & 2",
+      "",
+      "PIN: 60180-0067 +",
+      "",
+      "0.97 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,400,000     assumed/vtb debt: $0",
+      "chattels: $221,721",
+      "other: $5,170,513",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,550,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/30/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "7 / 29",
+      "rt_id": "RT184496"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "628 PITT ST",
+    "postcode": "K6J 3R7",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "04/30/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".97",
+    "consid": "6200000",
+    "cash": "3400000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "60180-0067+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "628 PITT ST"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "30 Apr 2024",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "Mrak Holdings Inc",
+      "Mark Motors of Ottawa (1987) Ltd"
+    ],
+    "price_text": "$6,200,000"
+  }
+}

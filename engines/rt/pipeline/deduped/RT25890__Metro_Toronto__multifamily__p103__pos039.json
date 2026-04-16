@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT25890",
+  "source_folder": "Metro_Toronto/multifamily/p103",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25890",
+      "source_folder": "Metro_Toronto/multifamily/p103",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p103/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "2412 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Jun 2002",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1007342 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Annette Fung",
+        "791 Spadina Ave, Unit 1",
+        "Toronto, Ontario",
+        "M5P 2X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1530452 Ontario Inc     416-767-1077"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Bate",
+        "2412 Bloor St W",
+        "Toronto, Ontario",
+        "M6S 1P9"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 2 storey; apartment over store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 416",
+      "Part Lot 1, N/S Bloor St",
+      "As in Inst No CA-215378",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 012 130 03400",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5140 / 6031",
+      "rt_id": "RT25890"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "2412 BLOOR ST W",
+    "postcode": "M6S 1P9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/27/2002",
+    "desc": "Retail/Res Bldg - 2 storey; apartment over store",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 012 130 03400"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "2412 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Jun 2002",
+    "note": "",
+    "description": "Retail/Res Bldg - 2 storey; apartment over store",
+    "seller_lines": [
+      "1007342 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1530452 Ontario Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

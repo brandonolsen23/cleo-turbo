@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20738",
+  "source_folder": "Peel_Region/multifamily/p009",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20738",
+      "source_folder": "Peel_Region/multifamily/p009",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/multifamily/p009/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "1759 BLOOR ST E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "26 Feb 1996",
+      "price_text": "$4,475,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Co of Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Don Brooks",
+        "225 King St W, 11th Flr",
+        "Toronto, Ontario",
+        "M5V 3C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1167793 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Leitz",
+        "42 Dale Ave",
+        "Toronto, Ontario",
+        "M4W 1K6"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 106 units @ $42,217"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 719, Part Block G",
+      "",
+      "2.21 acre"
+    ],
+    "arn_text": "21 05 030 072 00600",
+    "consideration_lines": [
+      "cash: $4,475,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "446 / 447",
+      "rt_id": "RT20738"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "1759 BLOOR ST E",
+    "postcode": "L5X 1S7",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "02/26/1996",
+    "desc": "Apartment Bldg - 106 units @ $42,217",
+    "bldg": "106 units",
+    "acreage": "2.21",
+    "consid": "4475000",
+    "cash": "4475000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 030 072 00600"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "1759 BLOOR ST E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "26 Feb 1996",
+    "note": "",
+    "description": "Apartment Bldg - 106 units @ $42,217",
+    "seller_lines": [
+      "Sun Life Co of Canada"
+    ],
+    "buyer_lines": [
+      "1167793 Ontario Ltd"
+    ],
+    "price_text": "$4,475,000"
+  }
+}

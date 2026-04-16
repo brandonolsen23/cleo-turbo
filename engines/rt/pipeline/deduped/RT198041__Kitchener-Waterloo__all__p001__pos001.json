@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT198041",
+  "source_folder": "Kitchener-Waterloo/all/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198041",
+      "source_folder": "Kitchener-Waterloo/all/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "90886 MCINTOSH LINE"
+      ],
+      "city_region": "Howick : Huron County",
+      "date_text": "26 Mar 2026",
+      "price_text": "$2,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Peters Pork Ltd     519-335-3086"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeroen Peters",
+        "43745 Spencetown Rd",
+        "Wroxeter, Ontario",
+        "N0G 2X0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 17 - Howick, Part Lot 11",
+      "As in Inst No R-326687",
+      "",
+      "PIN: 41016-0021",
+      "",
+      "100.47 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Libro Credit Union Ltd",
+      "principal: $2,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/26/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1980/RT198041/air1.jpg",
+        "/assets/files/RT19/RT1980/RT198041/air2.jpg",
+        "/assets/files/RT19/RT1980/RT198041/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 2093",
+      "rt_id": "RT198041"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "90886 MCINTOSH LINE",
+    "postcode": "N0G 1M0",
+    "municipality": "Howick",
+    "region": "Huron County",
+    "date": "03/26/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.47",
+    "consid": "2650000",
+    "cash": "2650000",
+    "debt": "",
+    "note": "",
+    "pin": "41016-0021",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "90886 MCINTOSH LINE"
+    ],
+    "city_region": "Howick : Huron County",
+    "date_text": "26 Mar 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Peters Pork Ltd"
+    ],
+    "price_text": "$2,650,000"
+  }
+}

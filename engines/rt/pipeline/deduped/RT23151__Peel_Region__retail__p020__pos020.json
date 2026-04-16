@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT23151",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23151",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "6460 MILLCREEK DR"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "23 Oct 2001",
+      "price_text": "$3,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ken Silver",
+        "2180 Yonge St",
+        "PO Box 770, Stn K",
+        "Toronto, Ontario",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Coptic Orthodox Patriarchate of Alexandria -",
+        "Church of the Virgin Mary and St Athanasius"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Father Angelos Saad",
+        "6460 Millcreek Dr",
+        "Mississauga, Ontario",
+        "L5N 2V6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 47,000 sf @ $69",
+      "",
+      "Main Floor: 32,000 sf (includes 21 bays comprising 8,000 sf)",
+      "2nd Floor: 15,000 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-6132, Part 1",
+      "Except Plan 43R-16892, Parts 5 & 6"
+    ],
+    "arn_text": "21 05 040 097 28710",
+    "consideration_lines": [
+      "cash: $3,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT231/RT23151/photo.jpg"
+    },
+    "footer": {
+      "page_position": "971 / 1087",
+      "rt_id": "RT23151"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "6460 MILLCREEK DR",
+    "postcode": "L5N 2V6",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "10/23/2001",
+    "desc": "Retail Bldg - 2 storey; 47,000 sf @ $69",
+    "bldg": "47,000 sf",
+    "acreage": "",
+    "consid": "3250000",
+    "cash": "3250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 040 097 28710"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "6460 MILLCREEK DR"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "23 Oct 2001",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 47,000 sf @ $69",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "Coptic Orthodox Patriarchate of Alexandria -",
+      "Church of the Virgin Mary and St Athanasius"
+    ],
+    "price_text": "$3,250,000"
+  }
+}

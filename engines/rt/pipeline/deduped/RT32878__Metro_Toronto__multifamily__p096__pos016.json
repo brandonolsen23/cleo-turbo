@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT32878",
+  "source_folder": "Metro_Toronto/multifamily/p096",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32878",
+      "source_folder": "Metro_Toronto/multifamily/p096",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p096/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "15 EASTWOOD RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Dec 2003",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1598032 Ontario Ltd     416-496-0044"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Giuseppe Mizzi",
+        "JMS Real Estate Appraisers",
+        "245 Fairview Mall Dr, Ste 717",
+        "Willowdale, Ontario",
+        "M2J 4T1"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3.5 storey; 24 units @ $54,167"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 528-E",
+      "Lot 24, Part Lots 20 & 23",
+      "As in Inst No CT-921331",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "19 04 092 230 03300",
+    "consideration_lines": [
+      "cash: $300,000     assumed/vtb debt: $1,000,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32878/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4767 / 6031",
+      "rt_id": "RT32878"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "15 EASTWOOD RD",
+    "postcode": "M4L 2C4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/05/2003",
+    "desc": "Apartment Bldg - 3.5 storey; 24 units @ $54,167",
+    "bldg": "24 units",
+    "acreage": ".23",
+    "consid": "1300000",
+    "cash": "300000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 092 230 03300"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "15 EASTWOOD RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Dec 2003",
+    "note": "",
+    "description": "Apartment Bldg - 3.5 storey; 24 units @ $54,167",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1598032 Ontario Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

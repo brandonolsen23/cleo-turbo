@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT32201",
+  "source_folder": "Metro_Toronto/multifamily/p097",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32201",
+      "source_folder": "Metro_Toronto/multifamily/p097",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p097/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "154 BEDFORD RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Oct 2003",
+      "price_text": "$639,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Turtledove Management Corp     416-588-3595"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Simon Warga",
+        "512 Lansdowne Ave",
+        "Toronto, Ontario",
+        "M6H 3Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Duplex - 3 storey semi"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - FTB, Part Lot 23",
+      "As in Inst No CA-754610",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 052 450 03900",
+    "consideration_lines": [
+      "cash: $639,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT322/RT32201/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4821 / 6031",
+      "rt_id": "RT32201"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "154 BEDFORD RD",
+    "postcode": "M5R 2K8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/01/2003",
+    "desc": "Duplex - 3 storey semi",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "639000",
+    "cash": "639000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 450 03900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "154 BEDFORD RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Oct 2003",
+    "note": "",
+    "description": "Duplex - 3 storey semi",
+    "seller_lines": [
+      "Turtledove Management Corp"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$639,000"
+  }
+}

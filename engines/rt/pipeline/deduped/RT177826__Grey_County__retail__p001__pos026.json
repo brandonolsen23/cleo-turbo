@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT177826",
+  "source_folder": "Grey_County/retail/p001",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177826",
+      "source_folder": "Grey_County/retail/p001",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/retail/p001/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "689 TENTH ST W"
+      ],
+      "city_region": "Owen Sound : Grey County",
+      "date_text": "17 May 2023",
+      "price_text": "$917,864",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "1000060355 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "680 3rd St E",
+        "Owen Sound, Ontario",
+        "N4K 1A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000316766 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Susan Stengel",
+        "c/o 110 Buckingham Lane",
+        "Annan, Ontario",
+        "N0H 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 16R-2651, Parts 1, 2 & 5",
+      "",
+      "PIN: 37077-0010",
+      "",
+      "0.60 acre"
+    ],
+    "arn_text": "42 59 020 015 22300",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $39,604",
+      "other: $878,260"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "27 / 69",
+      "rt_id": "RT177826"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "689 TENTH ST W",
+    "postcode": "N4K 3R8",
+    "municipality": "Owen Sound",
+    "region": "Grey County",
+    "date": "05/17/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".6",
+    "consid": "917864",
+    "cash": "",
+    "debt": "39604",
+    "note": "Zero Cash",
+    "pin": "37077-0010",
+    "rollno": "42 59 020 015 22300"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "689 TENTH ST W"
+    ],
+    "city_region": "Owen Sound : Grey County",
+    "date_text": "17 May 2023",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "1000060355 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1000316766 Ontario Inc"
+    ],
+    "price_text": "$917,864"
+  }
+}

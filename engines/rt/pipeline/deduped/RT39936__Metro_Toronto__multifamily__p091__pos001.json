@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT39936",
+  "source_folder": "Metro_Toronto/multifamily/p091",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39936",
+      "source_folder": "Metro_Toronto/multifamily/p091",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p091/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "117 VAUGHAN RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "23 Dec 2004",
+      "price_text": "$572,900",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Eastmount Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jerrold Marriott",
+        "117 Vaughan Rd",
+        "Toronto, Ontario",
+        "M6C 2L9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 875, Block F",
+      "Part Lots 12 & 13",
+      "As in Inst No CA-522105",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 14 011 070 01100",
+    "consideration_lines": [
+      "cash: $572,900     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT399/RT39936/air1.jpg",
+        "/assets/files/RT3/RT399/RT39936/air2.jpg",
+        "/assets/files/RT3/RT399/RT39936/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT399/RT39936/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4502 / 6031",
+      "rt_id": "RT39936"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "117 VAUGHAN RD",
+    "postcode": "M6C 2L9",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "12/23/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "572900",
+    "cash": "572900",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 011 070 01100"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "117 VAUGHAN RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "23 Dec 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Eastmount Corp"
+    ],
+    "price_text": "$572,900"
+  }
+}

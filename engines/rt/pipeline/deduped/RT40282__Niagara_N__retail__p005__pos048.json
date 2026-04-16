@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT40282",
+  "source_folder": "Niagara_N/retail/p005",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40282",
+      "source_folder": "Niagara_N/retail/p005",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p005/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "5005 SOUTH SERVICE RD"
+      ],
+      "city_region": "Lincoln : Niagara N",
+      "date_text": "10 Feb 2005",
+      "price_text": "$1,266,667",
+      "note": "33.33 % Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "603648 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert Christie",
+        "4971 King St",
+        "Beamsville, Ontario",
+        "L0R 1B0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Jetport Inc     905-679-2400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tim Armstrong",
+        "9300 Airport Rd, Ste 520",
+        "Mount Hope, Ontario",
+        "L0R 1W0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 17",
+      "Plan 30R-2472, Parts 1-4",
+      "",
+      "2.94 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,266,667     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT402/RT40282/air1.jpg",
+        "/assets/files/RT4/RT402/RT40282/air2.jpg",
+        "/assets/files/RT4/RT402/RT40282/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT402/RT40282/photo.jpg"
+    },
+    "footer": {
+      "page_position": "249 / 307",
+      "rt_id": "RT40282"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "5005 SOUTH SERVICE RD",
+    "postcode": "L0R 1B4",
+    "municipality": "Lincoln",
+    "region": "Niagara N",
+    "date": "02/10/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.94",
+    "consid": "1266667",
+    "cash": "1266667",
+    "debt": "",
+    "note": "33.33 % Interest",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "5005 SOUTH SERVICE RD"
+    ],
+    "city_region": "Lincoln : Niagara N",
+    "date_text": "10 Feb 2005",
+    "note": "33.33 % Interest",
+    "description": "",
+    "seller_lines": [
+      "603648 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Jetport Inc"
+    ],
+    "price_text": "$1,266,667"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT67086",
+  "source_folder": "Brant/retail/p003",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67086",
+      "source_folder": "Brant/retail/p003",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p003/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "105 COLBORNE ST W"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "15 May 2009",
+      "price_text": "$500,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "2037308 Ontario Ltd     519-756-5385"
+      ],
+      "trade_name": "York Property Management",
+      "contact_lines": [
+        "Attn: Gabriel Kirchberger",
+        "PO Box 4647",
+        "Brantford, Ontario",
+        "N3T 6J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1211904 Ontario Inc     519-754-1619"
+      ],
+      "trade_name": "Brant Dollar World",
+      "contact_lines": [
+        "Attn: Youn Kim-Biundo",
+        "105 Colborne St",
+        "Brantford, Ontario",
+        "N3T 1K8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 7,175 sf @ $70",
+      "",
+      "Occupied by the purchaser",
+      "",
+      "The property was severed from 105-119 Colborne St W which was purchased by the vendor for $1,525,000 in Feb 2004"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-7090, Parts 3 & 4",
+      "",
+      "PIN: 32279-0132 +",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "29 06 010 007 21800",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT670/RT67086/IMG_0167.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT670/RT67086/IMG_0169.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "145 / 195",
+      "rt_id": "RT67086"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "105 COLBORNE ST W",
+    "postcode": "N3T 1K8",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "05/15/2009",
+    "desc": "Retail Bldg - 1 storey; 7,175 sf @ $70",
+    "bldg": "7,175 sf",
+    "acreage": ".25",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "32279-0132+",
+    "rollno": "29 06 010 007 21800"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "105 COLBORNE ST W"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "15 May 2009",
+    "note": "Purchased by Tenant",
+    "description": "Retail Bldg - 1 storey; 7,175 sf @ $70",
+    "seller_lines": [
+      "2037308 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1211904 Ontario Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

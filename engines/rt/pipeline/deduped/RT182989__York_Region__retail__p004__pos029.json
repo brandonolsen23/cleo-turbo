@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT182989",
+  "source_folder": "York_Region/retail/p004",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182989",
+      "source_folder": "York_Region/retail/p004",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p004/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "13025 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "09 Feb 2024",
+      "price_text": "$10,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Matcorp Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 85 Roxborough Rd",
+        "Newmarket, Ontario",
+        "L3Y 3L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "13025 Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Grace Kwong",
+        "31 Madison Ave, Unit LL2",
+        "Toronto, Ontario",
+        "M2R 2S2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 66",
+      "Plan 169, Part Lots 23 & 24",
+      "Plan 65R-10807, Part 1",
+      "",
+      "PIN: 03202-0225",
+      "",
+      "1.09 acre"
+    ],
+    "arn_text": "19 38 070 011 33500",
+    "consideration_lines": [
+      "cash: $10,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182989/0217_143709.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182989/0217_143712.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182989/0217_143806.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182989/0217_143809.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1829/RT182989/0217_143819.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "180 / 984",
+      "rt_id": "RT182989"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "13025 YONGE ST",
+    "postcode": "J4Y 0K7",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "02/09/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.09",
+    "consid": "10400000",
+    "cash": "10400000",
+    "debt": "",
+    "note": "",
+    "pin": "03202-0225",
+    "rollno": "19 38 070 011 33500"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "13025 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "09 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Matcorp Developments Inc"
+    ],
+    "buyer_lines": [
+      "13025 Investments Inc"
+    ],
+    "price_text": "$10,400,000"
+  }
+}

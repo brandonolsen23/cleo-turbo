@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT176691",
+  "source_folder": "York_Region/retail/p005",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176691",
+      "source_folder": "York_Region/retail/p005",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "158 MAIN ST N"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "03 Apr 2023",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2198706 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Monakko Group Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kajathas Kanesalingam",
+        "400 Finch Ave, Unit 38",
+        "Pickering, Ontario",
+        "L1V 1H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 18, Part Block M",
+      "As in Inst No R-714214",
+      "",
+      "PIN: 02909-0039",
+      "",
+      "0.34 acre"
+    ],
+    "arn_text": "19 36 040 280 03000",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Kuber Mortgage Investment Corp",
+      "principal: $1,200,000   rate: Prime plus 7.54% per annum.",
+      "registered: 04/03/2023   due: 10/01/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176691/0430_082735.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176691/0430_082740.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176691/0430_082741.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176691/0430_082759.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176691/0430_082800.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1766/RT176691/0430_082817.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "231 / 984",
+      "rt_id": "RT176691"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "158 MAIN ST N",
+    "postcode": "L3P 1Y3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "04/03/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".34",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "02909-0039",
+    "rollno": "19 36 040 280 03000"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "158 MAIN ST N"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "03 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2198706 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Monakko Group Holdings Inc"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

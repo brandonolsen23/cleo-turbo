@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT146580",
+  "source_folder": "Cochrane/all/p055",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT146580",
+      "source_folder": "Cochrane/all/p055",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p055/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "280 SUNNYSIDE AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "01 Oct 2019",
+      "price_text": "$1,153,982",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Colico Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tina Colizza",
+        "3107 Principale St",
+        "Wendover, Ontario",
+        "K0A 3K0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 118266, Part Lots 53-55",
+      "As in Inst No N-739084",
+      "",
+      "PIN: 04130-0065",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "06 14 052 701 03600",
+    "consideration_lines": [
+      "cash: $1,153,982     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2704 / 10920",
+      "rt_id": "RT146580"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "280 SUNNYSIDE AVE",
+    "postcode": "K1S 0R8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "10/01/2019",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "1153982",
+    "cash": "1153982",
+    "debt": "",
+    "note": "",
+    "pin": "04130-0065",
+    "rollno": "06 14 052 701 03600"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "280 SUNNYSIDE AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "01 Oct 2019",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Colico Inc"
+    ],
+    "price_text": "$1,153,982"
+  }
+}

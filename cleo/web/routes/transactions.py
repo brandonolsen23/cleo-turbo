@@ -3,8 +3,13 @@ Transactions API — browse, search, detail.
 """
 
 import json
+import os
+from pathlib import Path
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.responses import HTMLResponse
 from ...web.deps import get_db, get_current_user, fts_query
+
+RAW_DATA_RT = Path(__file__).resolve().parents[3] / "raw-data" / "rt" / "pages"
 
 router = APIRouter()
 
@@ -53,7 +58,7 @@ def browse_transactions(
 
     rows = db.execute(
         f"SELECT source_id, property_id, sale_date, sale_price, display_address, city, region, "
-        f"seller_parties, buyer_parties, transaction_note "
+        f"seller_parties, buyer_parties, transaction_note, source_folder, source_position "
         f"FROM transactions WHERE {where} ORDER BY {sort} {order} LIMIT ? OFFSET ?",
         params + [per_page, offset]
     ).fetchall()
@@ -63,6 +68,9 @@ def browse_transactions(
         d = dict(r)
         d["seller_parties"] = json.loads(d.get("seller_parties") or "[]")
         d["buyer_parties"] = json.loads(d.get("buyer_parties") or "[]")
+        d["has_source_html"] = bool(d.get("source_folder") and d.get("source_position") is not None)
+        d.pop("source_folder", None)
+        d.pop("source_position", None)
         results.append(d)
 
     return {
@@ -98,6 +106,38 @@ def search_transactions(
         d["buyer_parties"] = json.loads(d.get("buyer_parties") or "[]")
         results.append(d)
     return {"results": results, "total": len(results)}
+
+
+def _source_html_path(source_folder: str, source_position: int) -> Path | None:
+    """Resolve path to the raw Realtrack detail HTML file."""
+    if not source_folder or source_position is None:
+        return None
+    # Sanitize: no .. or absolute path components
+    clean = Path(source_folder)
+    if ".." in clean.parts or clean.is_absolute():
+        return None
+    html_file = RAW_DATA_RT / clean / f"detail_{int(source_position):03d}.html"
+    if html_file.is_file():
+        return html_file
+    return None
+
+
+@router.get("/{source_id}/html")
+def transaction_source_html(source_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """Serve the original Realtrack detail HTML for rendering in an iframe."""
+    row = db.execute(
+        "SELECT source_folder, source_position FROM transactions WHERE source_id = ?",
+        (source_id,)
+    ).fetchone()
+    if not row:
+        raise HTTPException(status_code=404, detail="Transaction not found")
+
+    html_path = _source_html_path(row["source_folder"], row["source_position"])
+    if not html_path:
+        raise HTTPException(status_code=404, detail="Source HTML not available")
+
+    content = html_path.read_text(encoding="utf-8", errors="replace")
+    return HTMLResponse(content=content)
 
 
 @router.get("/{source_id}")
@@ -146,6 +186,11 @@ def transaction_detail(source_id: str, db=Depends(get_db), user=Depends(get_curr
         (source_id,)
     ).fetchall()
     result["parties"] = [dict(p) for p in parties]
+
+    # Source HTML availability
+    result["has_source_html"] = bool(
+        _source_html_path(result.get("source_folder"), result.get("source_position"))
+    )
 
     # Brokers (one-to-many: transaction → brokerages → agents)
     broker_rows = db.execute(

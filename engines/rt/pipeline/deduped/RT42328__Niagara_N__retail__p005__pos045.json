@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT42328",
+  "source_folder": "Niagara_N/retail/p005",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42328",
+      "source_folder": "Niagara_N/retail/p005",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p005/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "245 KING ST"
+      ],
+      "city_region": "Niagara-on-the-Lake : Niagara N",
+      "date_text": "01 Jun 2005",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1405315 Ontario Inc     1-905-468-5512"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raj Sahney",
+        "3301 North Service Rd",
+        "Vineland, Ontario",
+        "L0R 2C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2073013 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marc Cassab",
+        "203 St David's Rd",
+        "Thorold, Ontario",
+        "L2V 2M2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 3,800 sf @ $342"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 86, Part Lot 104",
+      "As in Inst No RO-696839",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "26 27 010 003 17200",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $650,000   rate: 24.0% per annum",
+      "registered: 06/01/2005   due: on demand"
+    ],
+    "broker_lines": [
+      "Royal LePage Niagara: Doreen Ibba, 905-468-4214"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT423/RT42328/air1.jpg",
+        "/assets/files/RT4/RT423/RT42328/air2.jpg",
+        "/assets/files/RT4/RT423/RT42328/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT423/RT42328/photo.jpg"
+    },
+    "footer": {
+      "page_position": "246 / 307",
+      "rt_id": "RT42328"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "245 KING ST",
+    "postcode": "L0S 1J0",
+    "municipality": "Niagara-on-the-Lake",
+    "region": "Niagara N",
+    "date": "06/01/2005",
+    "desc": "Retail Plaza - 1 storey; 4 units 3,800 sf @ $342",
+    "bldg": "3,800 sf",
+    "acreage": ".11",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "26 27 010 003 17200"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "245 KING ST"
+    ],
+    "city_region": "Niagara-on-the-Lake : Niagara N",
+    "date_text": "01 Jun 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 3,800 sf @ $342",
+    "seller_lines": [
+      "1405315 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2073013 Ontario Ltd"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

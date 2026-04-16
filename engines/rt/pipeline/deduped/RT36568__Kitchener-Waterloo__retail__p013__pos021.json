@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT36568",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36568",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "509 WILSON AVE"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "29 Jun 2004",
+      "price_text": "$4,670,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1241477 Ontario Ltd     416-340-1600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Guy Alberga",
+        "Metcap Living Management Inc",
+        "Cadillac Fairview Tower",
+        "20 Queen St W",
+        "Ste 2100, Box 36",
+        "Toronto, Ontario",
+        "M5H 3R3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "509 Wilson Ltd     416-222-3010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Hofstedter",
+        "Davpart Inc",
+        "4576 Yonge St, Ste 700",
+        "Toronto, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 15 units 46,503 sf @ $100"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-4670",
+      "Parts 4, 7, 16-19",
+      "",
+      "4.52 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $4,670,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "622 / 752",
+      "rt_id": "RT36568"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "509 WILSON AVE",
+    "postcode": "N2G 2L9",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "06/29/2004",
+    "desc": "Retail Plaza - 1 storey; 15 units 46,503 sf @ $100",
+    "bldg": "46,503 sf",
+    "acreage": "4.52",
+    "consid": "4670000",
+    "cash": "4670000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "509 WILSON AVE"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "29 Jun 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 15 units 46,503 sf @ $100",
+    "seller_lines": [
+      "1241477 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "509 Wilson Ltd"
+    ],
+    "price_text": "$4,670,000"
+  }
+}

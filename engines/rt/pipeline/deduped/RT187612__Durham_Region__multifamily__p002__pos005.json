@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT187612",
+  "source_folder": "Durham_Region/multifamily/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187612",
+      "source_folder": "Durham_Region/multifamily/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/multifamily/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "409 PERRY ST"
+      ],
+      "city_region": "Whitby : Durham Region",
+      "date_text": "24 Jun 2024",
+      "price_text": "$1,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "2373338 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "546 View Lake Rd",
+        "Janetville, Ontario",
+        "L0B 1K0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2373338 Ontario Ltd",
+        "View Lake Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Janina Majerczyk",
+        "546 View Lake Rd",
+        "Janetville, Ontario",
+        "L0B 1K0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-50029,",
+      "Lot 69, E/S Brock St",
+      "",
+      "PIN: 26534-0101",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "18 09 030 017 11000",
+    "consideration_lines": [
+      "cash: $130     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 481",
+      "rt_id": "RT187612"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "409 PERRY ST",
+    "postcode": "L1N 4C2",
+    "municipality": "Whitby",
+    "region": "Durham Region",
+    "date": "06/24/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "1300000",
+    "cash": "130",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "26534-0101",
+    "rollno": "18 09 030 017 11000"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "409 PERRY ST"
+    ],
+    "city_region": "Whitby : Durham Region",
+    "date_text": "24 Jun 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "2373338 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2373338 Ontario Ltd",
+      "View Lake Developments Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

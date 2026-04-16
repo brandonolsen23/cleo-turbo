@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT20446",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20446",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "22534 ADELAIDE RD"
+      ],
+      "city_region": "Strathroy : Middlesex County",
+      "date_text": "30 Jan 2001",
+      "price_text": "$750,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "National Trust Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Burke",
+        "44 King St W",
+        "Toronto, Ontario",
+        "M5H 1H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mount Brydges Plaza Ltd     416-863-1010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Wisniewski",
+        "c/o Dale & Lessman",
+        "Barristers & Solicitors",
+        "Box 73, Ste 2000, CP Tower, TD Centre",
+        "Toronto, Ontario",
+        "M5K 1E7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 34R-699, Part 1",
+      "Plan 34M-12, Lots 26-28",
+      "Except Plan 34R-2341, Part 2"
+    ],
+    "arn_text": "39 14 000 031 41100",
+    "consideration_lines": [
+      "cash: $187,500     assumed/vtb debt: $562,500"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "622 / 686",
+      "rt_id": "RT20446"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "22534 ADELAIDE RD",
+    "postcode": "N7G 3H6",
+    "municipality": "Strathroy",
+    "region": "Middlesex County",
+    "date": "01/30/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "750000",
+    "cash": "187500",
+    "debt": "562500",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "39 14 000 031 41100"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "22534 ADELAIDE RD"
+    ],
+    "city_region": "Strathroy : Middlesex County",
+    "date_text": "30 Jan 2001",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "National Trust Co"
+    ],
+    "buyer_lines": [
+      "Mount Brydges Plaza Ltd"
+    ],
+    "price_text": "$750,000"
+  }
+}

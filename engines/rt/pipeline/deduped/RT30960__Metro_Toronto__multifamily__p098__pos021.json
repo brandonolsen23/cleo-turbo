@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT30960",
+  "source_folder": "Metro_Toronto/multifamily/p098",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30960",
+      "source_folder": "Metro_Toronto/multifamily/p098",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p098/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "74 QUEBEC AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 Jul 2003",
+      "price_text": "$870,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Quebex Development Corp     416-968-0800"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Schillaci",
+        "Ariston Realty Corp",
+        "170 Bloor St W, Ste 702",
+        "Toronto, Ontario",
+        "M5S 1T9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 660, Part Lot 12",
+      "As in Inst No CA-632618",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "19 04 013 260 04700",
+    "consideration_lines": [
+      "cash: $870,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT309/RT30960/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4872 / 6031",
+      "rt_id": "RT30960"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "74 QUEBEC AVE",
+    "postcode": "M6P 2T6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/17/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "870000",
+    "cash": "870000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 013 260 04700"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "74 QUEBEC AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 Jul 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Quebex Development Corp"
+    ],
+    "price_text": "$870,000"
+  }
+}

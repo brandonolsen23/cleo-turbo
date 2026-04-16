@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT35773",
+  "source_folder": "Ottawa-Carleton/retail/p019",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35773",
+      "source_folder": "Ottawa-Carleton/retail/p019",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p019/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "1395 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "18 May 2004",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Caisse Populaire Rideau D'Ottawa Inc     613-241-1316"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raphael Lapointe",
+        "293 Dalhousie St",
+        "Ottawa, Ontario",
+        "K1N 7E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1605479 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Elias Nahri",
+        "1395-1405 Bank St",
+        "Ottawa, Ontario",
+        "K1H 8N1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 6,186 sf @ $202"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc JG, Part Lot 19",
+      "Plan 5R-283",
+      "Parts 26, 28, 30, 32, 40 & 47",
+      "Except Plan 5R2112, Part 1",
+      "",
+      "0.70 acre"
+    ],
+    "arn_text": "06 14 105 903 01600",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Commvesco Levinson & Viner: Aida Oakley,  613 722 6004"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT357/RT35773/photo.jpg"
+    },
+    "footer": {
+      "page_position": "914 / 1141",
+      "rt_id": "RT35773"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "1395 BANK ST",
+    "postcode": "K1H 8N1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "05/18/2004",
+    "desc": "Retail Plaza - 1 storey; 3 units 6,186 sf @ $202",
+    "bldg": "6,186 sf",
+    "acreage": ".7",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 105 903 01600"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "1395 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "18 May 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 6,186 sf @ $202",
+    "seller_lines": [
+      "Caisse Populaire Rideau D'Ottawa Inc"
+    ],
+    "buyer_lines": [
+      "1605479 Ontario Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

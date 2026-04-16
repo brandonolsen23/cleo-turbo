@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT32885",
+  "source_folder": "Metro_Toronto/retail/p079",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32885",
+      "source_folder": "Metro_Toronto/retail/p079",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p079/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "3325 VICTORIA PARK AVE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "02 Dec 2003",
+      "price_text": "$1,270,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "652453 Ontario Ltd     905-709-9518"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ramsay Chan",
+        "Roland Mark",
+        "Barrister & Solicitor",
+        "15 Wertheim Ct, Ste 406",
+        "Richmond Hill, Ontario",
+        "L4B 3H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ambassadors for Christ in Canada"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Philip Shek",
+        "3325 Victoria Park Ave",
+        "Scarborough, Ontario",
+        "M1W 2R8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 35",
+      "As in Inst No TB-299688",
+      "",
+      "0.62 acre"
+    ],
+    "arn_text": "19 01 104 045 00300",
+    "consideration_lines": [
+      "cash: $1,270,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT328/RT32885/air1.jpg",
+        "/assets/files/RT3/RT328/RT32885/air2.jpg",
+        "/assets/files/RT3/RT328/RT32885/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT328/RT32885/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3901 / 4952",
+      "rt_id": "RT32885"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "3325 VICTORIA PARK AVE",
+    "postcode": "M1W 2R8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "12/02/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".62",
+    "consid": "1270000",
+    "cash": "1270000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 104 045 00300"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "3325 VICTORIA PARK AVE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "02 Dec 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "652453 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Ambassadors for Christ in Canada"
+    ],
+    "price_text": "$1,270,000"
+  }
+}

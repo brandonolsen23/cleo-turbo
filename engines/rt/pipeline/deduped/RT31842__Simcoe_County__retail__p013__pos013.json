@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT31842",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31842",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "164 HOLLAND ST W"
+      ],
+      "city_region": "Bradford : Simcoe County",
+      "date_text": "15 Sep 2003",
+      "price_text": "$4,050,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Duni Investments Ltd",
+        "Portmor Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nachman Porat",
+        "35 Savoy Cres",
+        "Thornhill, Ontario",
+        "L4J 7W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Duni Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Nachman Porat",
+        "35 Savoy Cres",
+        "Thornhill, Ontario",
+        "L4J 7W3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1709, Lot 2",
+      "",
+      "3.39 acre"
+    ],
+    "arn_text": "43 12 010 001 24700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "614 / 712",
+      "rt_id": "RT31842"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "164 HOLLAND ST W",
+    "postcode": "L3Z 1H7",
+    "municipality": "Bradford",
+    "region": "Simcoe County",
+    "date": "09/15/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.39",
+    "consid": "4050000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "43 12 010 001 24700"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "164 HOLLAND ST W"
+    ],
+    "city_region": "Bradford : Simcoe County",
+    "date_text": "15 Sep 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Duni Investments Ltd",
+      "Portmor Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Duni Investments Ltd"
+    ],
+    "price_text": "$4,050,000"
+  }
+}

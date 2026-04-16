@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT196888",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196888",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "14 MAIN ST"
+      ],
+      "city_region": "Brighton : Northumberland",
+      "date_text": "27 Jan 2026",
+      "price_text": "$6,000,000",
+      "note": "Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "Brighton Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "H&R REIT",
+      "contact_lines": [
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Crestpoint Real Estate (Prometheus) Inc     416-862-6018"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Leon",
+        "130 King St, Ste 1400",
+        "Toronto, Ontario",
+        "M5X 1C8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1968/RT196888/mi.pdf",
+    "site_lines": [
+      "Plan 39R-9800, Parts 1, 3, 5 & 6",
+      "",
+      "PIN: 51153-0503 +",
+      "",
+      "1.48 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $225,000,000   rate: 25.0% per annum.",
+      "registered: 01/27/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 93",
+      "rt_id": "RT196888"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "14 MAIN ST",
+    "postcode": "K0K 1H0",
+    "municipality": "Brighton",
+    "region": "Northumberland",
+    "date": "01/27/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.48",
+    "consid": "6000000",
+    "cash": "6000000",
+    "debt": "",
+    "note": "Portfolio",
+    "pin": "51153-0503+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "14 MAIN ST"
+    ],
+    "city_region": "Brighton : Northumberland",
+    "date_text": "27 Jan 2026",
+    "note": "Portfolio",
+    "description": "",
+    "seller_lines": [
+      "Brighton Portfolio Inc"
+    ],
+    "buyer_lines": [
+      "Crestpoint Real Estate (Prometheus) Inc"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

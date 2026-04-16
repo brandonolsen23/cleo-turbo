@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT46148",
+  "source_folder": "Metro_Toronto/multifamily/p085",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46148",
+      "source_folder": "Metro_Toronto/multifamily/p085",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p085/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2032 DUFFERIN ST"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "02 Dec 2005",
+      "price_text": "$780,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1245217 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerardo Catapano",
+        "Jean Garofoli",
+        "15 Pedersen Dr",
+        "Aurora, Ontario",
+        "L4G 7P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1680274 Ontario Ltd     905-770-3181"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Raimondo",
+        "395 Kerrybrook Dr",
+        "Richmond Hill, Ontario",
+        "L4C 3R4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1549, Lot 51",
+      "",
+      "0.12 acre"
+    ],
+    "arn_text": "19 14 041 130 01500",
+    "consideration_lines": [
+      "cash: $780,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT461/RT46148/air1.jpg",
+        "/assets/files/RT4/RT461/RT46148/air2.jpg",
+        "/assets/files/RT4/RT461/RT46148/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT461/RT46148/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4206 / 6031",
+      "rt_id": "RT46148"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2032 DUFFERIN ST",
+    "postcode": "M6E 3R5",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "12/02/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".12",
+    "consid": "780000",
+    "cash": "780000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 041 130 01500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2032 DUFFERIN ST"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "02 Dec 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1245217 Ontario Corp"
+    ],
+    "buyer_lines": [
+      "1680274 Ontario Ltd"
+    ],
+    "price_text": "$780,000"
+  }
+}

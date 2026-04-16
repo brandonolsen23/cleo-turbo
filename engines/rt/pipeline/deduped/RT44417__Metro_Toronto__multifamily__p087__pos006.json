@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT44417",
+  "source_folder": "Metro_Toronto/multifamily/p087",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44417",
+      "source_folder": "Metro_Toronto/multifamily/p087",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p087/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "113 RUSHOLME RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Sep 2005",
+      "price_text": "$518,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "913255 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Salvatore Benedetto",
+        "66 Northdale Rd",
+        "Toronto, Ontario",
+        "M2L 2M1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 405, Part Lot 1",
+      "As in Inst No CA-306773",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 044 210 00200",
+    "consideration_lines": [
+      "cash: $518,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4307 / 6031",
+      "rt_id": "RT44417"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "113 RUSHOLME RD",
+    "postcode": "M6H 2Y6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "518500",
+    "cash": "518500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 044 210 00200"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "113 RUSHOLME RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Sep 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "913255 Ontario Inc"
+    ],
+    "price_text": "$518,500"
+  }
+}

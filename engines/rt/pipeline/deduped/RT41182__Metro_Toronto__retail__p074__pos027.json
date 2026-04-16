@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT41182",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41182",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "4080 SHEPPARD AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "15 Apr 2005",
+      "price_text": "$1,015,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "PACIFIC Inc     905-709-9955"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bijan Pardis",
+        "Thornhill Health & Beauty Clinic",
+        "7368 Yonge St, Ste 102",
+        "Thornhill, Ontario",
+        "L4J 8H9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 28",
+      "As in Inst No TB-496718",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "19 01 111 210 00300",
+    "consideration_lines": [
+      "cash: $1,015,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $600,000   rate: Prime plus 0.5% per annum",
+      "registered: 04/15/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT411/RT41182/air1.jpg",
+        "/assets/files/RT4/RT411/RT41182/air2.jpg",
+        "/assets/files/RT4/RT411/RT41182/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT411/RT41182/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3678 / 4952",
+      "rt_id": "RT41182"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "4080 SHEPPARD AVE E",
+    "postcode": "M1S 1S9",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "04/15/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "1015000",
+    "cash": "1015000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 111 210 00300"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "4080 SHEPPARD AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "15 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "PACIFIC Inc"
+    ],
+    "price_text": "$1,015,000"
+  }
+}

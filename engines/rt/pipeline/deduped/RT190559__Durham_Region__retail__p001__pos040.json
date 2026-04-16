@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT190559",
+  "source_folder": "Durham_Region/retail/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190559",
+      "source_folder": "Durham_Region/retail/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "78 BOND ST W"
+      ],
+      "city_region": "Oshawa : Durham Region",
+      "date_text": "28 Feb 2025",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "BRL Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1128 Yonge St, 2nd Flr",
+        "Toronto, Ontario",
+        "M4W 2L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001084275 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Walid Dorani",
+        "685 Audley Rd S",
+        "Ajax, Ontario",
+        "L1Z 0T7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan H-50002,",
+      "Lot 9, Part Lots 8 & 10, N/S Bond St",
+      "Part Lot 1, E/S McMillan St",
+      "Part Lot 9, S/S Richmond St",
+      "As in Inst No D-249413",
+      "Except:",
+      "Plan 40R-18288, Part 1",
+      "",
+      "PIN: 16314-0292",
+      "",
+      "0.52 acre"
+    ],
+    "arn_text": "18 13 010 006 09800",
+    "consideration_lines": [
+      "cash: $840,000     assumed/vtb debt: $1,560,000",
+      "",
+      "chargee: BRL Realty Ltd",
+      "principal: $1,560,000   rate: 6.0% per annum.",
+      "registered: 02/28/2025   due: 02/27/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1905/RT190559/0315_064524.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1905/RT190559/0315_064525.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1905/RT190559/0315_064545.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1905/RT190559/0315_064600.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1905/RT190559/0315_064601.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1905/RT190559/0315_064606.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1905/RT190559/air1.jpg",
+        "/assets/files/RT19/RT1905/RT190559/air2.jpg",
+        "/assets/files/RT19/RT1905/RT190559/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 506",
+      "rt_id": "RT190559"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "78 BOND ST W",
+    "postcode": "L1G 1A5",
+    "municipality": "Oshawa",
+    "region": "Durham Region",
+    "date": "02/28/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".52",
+    "consid": "2400000",
+    "cash": "840000",
+    "debt": "1560000",
+    "note": "",
+    "pin": "16314-0292",
+    "rollno": "18 13 010 006 09800"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "78 BOND ST W"
+    ],
+    "city_region": "Oshawa : Durham Region",
+    "date_text": "28 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "BRL Realty Ltd"
+    ],
+    "buyer_lines": [
+      "1001084275 Ontario Ltd"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

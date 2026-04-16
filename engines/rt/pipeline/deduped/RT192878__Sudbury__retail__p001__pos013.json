@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT192878",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192878",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "2142 LASALLE BLVD",
+        "2156 LASALLE BLVD"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "20 Jun 2025",
+      "price_text": "$1,530,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Harvest Ministries Sudbury"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2150 Lasalle Blvd",
+        "Sudbury, Ontario",
+        "P3A 2A7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001202159 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Marks",
+        "809 Connaught Ave",
+        "Sudbury, Ontario",
+        "P3E 3X1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Neelon, Part Lot 10",
+      "Plan M-267, Part Lot 29",
+      "As in Inst Nos:",
+      "LT-174399 & LT-83393",
+      "Except:",
+      "Plan 53R-5061, Part 1",
+      "Inst No LT-137816",
+      "",
+      "PIN: 73565-0531 +",
+      "",
+      "0.44 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,530,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Populaire Alliance Ltee",
+      "principal: $1,530,000   rate: Prime plus 20.0% per annum.",
+      "registered: 06/20/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "14 / 90",
+      "rt_id": "RT192878"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "2142 LASALLE BLVD, 2156 LASALLE BLVD",
+    "postcode": "P3A 2A7",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "06/20/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".44",
+    "consid": "1530000",
+    "cash": "1530000",
+    "debt": "",
+    "note": "",
+    "pin": "73565-0531+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "2142 LASALLE BLVD",
+      "2156 LASALLE BLVD"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "20 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Harvest Ministries Sudbury"
+    ],
+    "buyer_lines": [
+      "1001202159 Ontario Inc"
+    ],
+    "price_text": "$1,530,000"
+  }
+}

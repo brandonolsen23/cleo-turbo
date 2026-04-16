@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT40970",
+  "source_folder": "Peel_Region/retail/p017",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40970",
+      "source_folder": "Peel_Region/retail/p017",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p017/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "372 QUEEN ST E"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "29 Mar 2005",
+      "price_text": "$1,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ocean Sands Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ermidio Alves",
+        "24 George St N, 2nd Flr",
+        "Brampton, Ontario",
+        "L6X 1R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tripodos Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Penny Fotiadis",
+        "295 Queen St E",
+        "Brampton, Ontario",
+        "L6W 2C2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - EHS, Part Lot 6",
+      "As in Inst No VS-225274",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "21 10 010 002 19510",
+    "consideration_lines": [
+      "cash: $1,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $1,100,000   rate: 5.74% per annum",
+      "registered: 03/29/2005   due: 05/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT409/RT40970/air1.jpg",
+        "/assets/files/RT4/RT409/RT40970/air2.jpg",
+        "/assets/files/RT4/RT409/RT40970/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT409/RT40970/photo.jpg"
+    },
+    "footer": {
+      "page_position": "801 / 1087",
+      "rt_id": "RT40970"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "372 QUEEN ST E",
+    "postcode": "L6V 1C3",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "03/29/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".85",
+    "consid": "1650000",
+    "cash": "1650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 010 002 19510"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "372 QUEEN ST E"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "29 Mar 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Ocean Sands Developments Ltd"
+    ],
+    "buyer_lines": [
+      "Tripodos Investments Inc"
+    ],
+    "price_text": "$1,650,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT44532",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44532",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "2007 - 2011 LAKESHORE RD"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "30 Sep 2005",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1186589 Ontario Ltd     905-383-0591"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Casimir Banas",
+        "Four Acre Farm Inc",
+        "6 Dartnall Rd",
+        "Hamilton, Ontario",
+        "L8W 3N1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "V & R Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Vince Molinaro",
+        "155 Market St",
+        "Hamilton, Ontario",
+        "L8R 3H5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 92, Part Block M",
+      "As in Inst No 858748",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "24 02 060 608 05400",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $600,000",
+      "",
+      "chargee: 1186589 Ontario Ltd",
+      "principal: $600,000",
+      "registered: 09/30/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT445/RT44532/air1.jpg",
+        "/assets/files/RT4/RT445/RT44532/air2.jpg",
+        "/assets/files/RT4/RT445/RT44532/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "415 / 613",
+      "rt_id": "RT44532"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "2007 - 2011 LAKESHORE RD",
+    "postcode": "L7R 1A1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "09/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "1800000",
+    "cash": "1200000",
+    "debt": "600000",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 060 608 05400"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "2007 - 2011 LAKESHORE RD"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "30 Sep 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1186589 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "V & R Investments Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT45809",
+  "source_folder": "York_Region/retail/p015",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45809",
+      "source_folder": "York_Region/retail/p015",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 - 8 ALLAURA BLVD"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "08 Dec 2005",
+      "price_text": "$3,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Global Whey Products Inc     905-856-6880"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Rocco Rossi",
+        "Grande Cheese Co Ltd",
+        "468 Jevlan Dr",
+        "Woodbridge, Ontario",
+        "L4L 8L4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2082591 Ontario Inc     905-270-0515"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Carlo Di Bernardo",
+        "71 Fairview Rd W",
+        "Mississauga, Ontario",
+        "L5B 1K7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-51, Lots 23-25",
+      "",
+      "2.71 acre"
+    ],
+    "arn_text": "19 46 000 042 82050",
+    "consideration_lines": [
+      "cash: $3,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT458/RT45809/photo.jpg"
+    },
+    "footer": {
+      "page_position": "720 / 984",
+      "rt_id": "RT45809"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "2 - 8 ALLAURA BLVD",
+    "postcode": "L4G 2B5",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "12/08/2005",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.71",
+    "consid": "3550000",
+    "cash": "3550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 46 000 042 82050"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "2 - 8 ALLAURA BLVD"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "08 Dec 2005",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Global Whey Products Inc"
+    ],
+    "buyer_lines": [
+      "2082591 Ontario Inc"
+    ],
+    "price_text": "$3,550,000"
+  }
+}

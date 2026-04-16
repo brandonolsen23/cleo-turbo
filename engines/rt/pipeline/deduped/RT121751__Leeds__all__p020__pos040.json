@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT121751",
+  "source_folder": "Leeds/all/p020",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT121751",
+      "source_folder": "Leeds/all/p020",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "7702 BRICK YARD LINE"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "12 Dec 2016",
+      "price_text": "$2,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Aarts Field Pork Ltd     519-849-1723"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peerke Aarts",
+        "7755 Brick Yard Line, RR 8",
+        "Watford, Ontario",
+        "N0M 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NER, Part Lot 17",
+      "",
+      "PIN: 43060-0101",
+      "",
+      "103.84 acre"
+    ],
+    "arn_text": "38 41 041 005 03500",
+    "consideration_lines": [
+      "cash: $2,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $5,000,000   rate: 18.0% per annum.",
+      "registered: 12/12/2016   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1217/RT121751/air1.jpg",
+        "/assets/files/RT12/RT1217/RT121751/air2.jpg",
+        "/assets/files/RT12/RT1217/RT121751/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "991 / 1916",
+      "rt_id": "RT121751"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "7702 BRICK YARD LINE",
+    "postcode": "N0M 2S0",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "12/12/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "103.84",
+    "consid": "2600000",
+    "cash": "2600000",
+    "debt": "",
+    "note": "",
+    "pin": "43060-0101",
+    "rollno": "38 41 041 005 03500"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "7702 BRICK YARD LINE"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "12 Dec 2016",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Aarts Field Pork Ltd"
+    ],
+    "price_text": "$2,600,000"
+  }
+}

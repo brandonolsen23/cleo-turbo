@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT147015",
+  "source_folder": "Halton_Region/retail/p004",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT147015",
+      "source_folder": "Halton_Region/retail/p004",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p004/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "655 MAIN ST E"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "30 Oct 2019",
+      "price_text": "$9,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Gallinger Realty Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Gallinger",
+        "c/o The Law Office of Fay Hasaan, PC",
+        "330 Bronte St S, Ste 204",
+        "Milton, Ontario",
+        "L9T 7X1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "655 Main Street East Inc     866-979-2335"
+      ],
+      "trade_name": "Gallinger Ford",
+      "contact_lines": [
+        "Pres: David McQuilkin",
+        "c/o 655 Main St E",
+        "Milton, Ontario",
+        "L9T 3J2"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NS TRAF, Part Lot 14",
+      "Plan 20R-1296, Part 4",
+      "Except:",
+      "Plan 20R-20323, Part 1",
+      "",
+      "PIN: 24949-0348",
+      "",
+      "2.80 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $9,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $9,750,000   rate: Prime plus 6.0% per annum.",
+      "registered: 10/30/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1470/RT147015/1116_124549.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1470/RT147015/1116_124550.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1470/RT147015/1116_124651.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1470/RT147015/1116_124652.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "169 / 613",
+      "rt_id": "RT147015"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "655 MAIN ST E",
+    "postcode": "L9T 3J2",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "10/30/2019",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "2.8",
+    "consid": "9000000",
+    "cash": "9000000",
+    "debt": "",
+    "note": "",
+    "pin": "24949-0348",
+    "rollno": ""
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "655 MAIN ST E"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "30 Oct 2019",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "Gallinger Realty Holdings Inc"
+    ],
+    "buyer_lines": [
+      "655 Main Street East Inc"
+    ],
+    "price_text": "$9,000,000"
+  }
+}

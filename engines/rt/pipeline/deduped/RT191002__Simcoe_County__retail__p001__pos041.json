@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT191002",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191002",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "135 MAIN ST"
+      ],
+      "city_region": "Penetanguishene : Simcoe County",
+      "date_text": "21 Mar 2025",
+      "price_text": "$1,225,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Bank of Nova Scotia"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Real Estate Department -",
+        "Transit No 54072",
+        "44 King St W, 21st Flr",
+        "Toronto, Ontario",
+        "M5H 1H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001144493 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brain Gaffney",
+        "135 Main St",
+        "Penetanguishene, ON",
+        "L9M 1L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 404, Lots 11 & 12,",
+      "E/S Penetanguishene Rd",
+      "",
+      "PIN: 58440-0187",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "43 72 010 004 09700",
+    "consideration_lines": [
+      "cash: $1,225,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $1,225,000   rate: Prime plus 6.0% per annum.",
+      "registered: 03/21/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191002/0419_141524.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191002/0419_141546.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191002/0419_141547.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1910/RT191002/0419_141557.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "42 / 712",
+      "rt_id": "RT191002"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "135 MAIN ST",
+    "postcode": "L9M 1L7",
+    "municipality": "Penetanguishene",
+    "region": "Simcoe County",
+    "date": "03/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "1225000",
+    "cash": "1225000",
+    "debt": "",
+    "note": "",
+    "pin": "58440-0187",
+    "rollno": "43 72 010 004 09700"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "135 MAIN ST"
+    ],
+    "city_region": "Penetanguishene : Simcoe County",
+    "date_text": "21 Mar 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "The Bank of Nova Scotia"
+    ],
+    "buyer_lines": [
+      "1001144493 Ontario Inc"
+    ],
+    "price_text": "$1,225,000"
+  }
+}

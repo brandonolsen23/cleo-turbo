@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT76444",
+  "source_folder": "Wellington/retail/p004",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT76444",
+      "source_folder": "Wellington/retail/p004",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p004/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "543 - 547 SPEEDVALE AVE E"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "20 Jan 2011",
+      "price_text": "$661,600",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Amana Property Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hamid Jamali",
+        "310 Queen St S, Ste 315",
+        "Kitchener, Ontario",
+        "N2G 1K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 403, Part Lot 1",
+      "As in Inst No ROS-610000",
+      "",
+      "PIN: 71350-0051",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "23 08 030 010 09900",
+    "consideration_lines": [
+      "cash: $661,600     assumed/vtb debt: $0",
+      "",
+      "chargee: Joseph & Julia Ventresca",
+      "principal: $461,000   rate: 5.75% per annum",
+      "registered: 01/20/2011   due: 01/20/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT764/RT76444/0402_151204.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT764/RT76444/0402_151232.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT764/RT76444/0402_151305.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT764/RT76444/air1.jpg",
+        "/assets/files/RT7/RT764/RT76444/air2.jpg",
+        "/assets/files/RT7/RT764/RT76444/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "161 / 269",
+      "rt_id": "RT76444"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "543 - 547 SPEEDVALE AVE E",
+    "postcode": "N1E 1P7",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "01/20/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".33",
+    "consid": "661600",
+    "cash": "661600",
+    "debt": "",
+    "note": "",
+    "pin": "71350-0051",
+    "rollno": "23 08 030 010 09900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "543 - 547 SPEEDVALE AVE E"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "20 Jan 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Amana Property Management Inc"
+    ],
+    "price_text": "$661,600"
+  }
+}

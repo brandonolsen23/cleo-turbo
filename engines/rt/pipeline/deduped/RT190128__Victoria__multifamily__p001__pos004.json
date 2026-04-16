@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT190128",
+  "source_folder": "Victoria/multifamily/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190128",
+      "source_folder": "Victoria/multifamily/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/multifamily/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "274 WILLIAM ST N"
+      ],
+      "city_region": "Lindsay : Victoria",
+      "date_text": "31 Jan 2025",
+      "price_text": "$975,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001108814 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Matthew Schulze",
+        "101 Alcorn Dr",
+        "Lindsay, Ontario",
+        "K9V 0M8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 57R-4680, Part 6",
+      "",
+      "PIN: 63205-0344",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "16 15 010 003 48604",
+    "consideration_lines": [
+      "cash: $975,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190128/0629_143203.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190128/0629_143207.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190128/0629_143209.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190128/0629_143234.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190128/0629_143235.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1901/RT190128/0629_143316.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 43",
+      "rt_id": "RT190128"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "274 WILLIAM ST N",
+    "postcode": "K9V 5X6",
+    "municipality": "Lindsay",
+    "region": "Victoria",
+    "date": "01/31/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "975000",
+    "cash": "975000",
+    "debt": "",
+    "note": "",
+    "pin": "63205-0344",
+    "rollno": "16 15 010 003 48604"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "274 WILLIAM ST N"
+    ],
+    "city_region": "Lindsay : Victoria",
+    "date_text": "31 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1001108814 Ontario Inc"
+    ],
+    "price_text": "$975,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT131907",
+  "source_folder": "Cochrane/all/p073",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT131907",
+      "source_folder": "Cochrane/all/p073",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p073/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "88 FOURTH AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "02 Feb 2018",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "9846379 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nicola Longo",
+        "636 Bow Valley Dr",
+        "Ottawa, Ontario",
+        "K1V 2G9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-14310, Parts 5-7",
+      "",
+      "PIN: 04138-0345",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $581,250   rate: 4.79% per annum.",
+      "registered: 02/02/2018   due: 02/01/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3602 / 10920",
+      "rt_id": "RT131907"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "88 FOURTH AVE",
+    "postcode": "K1S 2L2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/02/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "04138-0345",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "88 FOURTH AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "02 Feb 2018",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "9846379 Canada Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

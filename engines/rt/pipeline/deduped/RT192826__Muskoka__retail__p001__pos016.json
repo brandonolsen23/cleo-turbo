@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT192826",
+  "source_folder": "Muskoka/retail/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192826",
+      "source_folder": "Muskoka/retail/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 SHARPE ST E",
+        "150 SHARPE ST E"
+      ],
+      "city_region": "Gravenhurst : Muskoka",
+      "date_text": "18 Jun 2025",
+      "price_text": "$4,700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Holyrood Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "323 Lafontaine Rd W",
+        "Tiny, Ontario",
+        "L9M 0H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001205200 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Carla Colomer",
+        "1602 Clitherow St",
+        "Milton, Ontario",
+        "L9E 0A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3 - Gravenhurst,",
+      "Lot 40 EMR & Part Lot 39 EMR",
+      "Plan 2 - Gravenhurst,",
+      "Lots 5, 7 & 8",
+      "Part Lots 9 & 10",
+      "As in Inst No DM-301883",
+      "",
+      "PIN: 48185-0041 +",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "44 02 010 006 05201 +",
+    "consideration_lines": [
+      "cash: $4,700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $4,700,000   rate: Prime plus 5.0% per annum.",
+      "registered: 06/18/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 64",
+      "rt_id": "RT192826"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "80 SHARPE ST E, 150 SHARPE ST E",
+    "postcode": "P1P 1J2",
+    "municipality": "Gravenhurst",
+    "region": "Muskoka",
+    "date": "06/18/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "4700000",
+    "cash": "4700000",
+    "debt": "",
+    "note": "",
+    "pin": "48185-0041+",
+    "rollno": "44 02 010 006 05201+"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "80 SHARPE ST E",
+      "150 SHARPE ST E"
+    ],
+    "city_region": "Gravenhurst : Muskoka",
+    "date_text": "18 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Holyrood Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1001205200 Ontario Inc"
+    ],
+    "price_text": "$4,700,000"
+  }
+}

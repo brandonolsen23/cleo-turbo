@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT196638",
+  "source_folder": "Lanark_County/retail/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196638",
+      "source_folder": "Lanark_County/retail/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lanark_County/retail/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "75 LOMBARD ST"
+      ],
+      "city_region": "Smiths Falls : Lanark County",
+      "date_text": "15 Jan 2026",
+      "price_text": "$1,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2833812 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "47 Allanburg Rd",
+        "St Catharines, Ontario",
+        "L2T 3Z2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001201615 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harmanpreet Singh",
+        "34 Birkdale Place",
+        "Newmarket, Ontario",
+        "L3Y 0E2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - South Elmsley,",
+      "Part Lot 3",
+      "As in Inst No SF-22077",
+      "",
+      "PIN: 05290-0021",
+      "",
+      "0.65 acre"
+    ],
+    "arn_text": "09 04 010 010 60900",
+    "consideration_lines": [
+      "cash: $1,650,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 69",
+      "rt_id": "RT196638"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "75 LOMBARD ST",
+    "postcode": "K7A 4Y9",
+    "municipality": "Smiths Falls",
+    "region": "Lanark County",
+    "date": "01/15/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".65",
+    "consid": "1650000",
+    "cash": "1650000",
+    "debt": "",
+    "note": "",
+    "pin": "05290-0021",
+    "rollno": "09 04 010 010 60900"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "75 LOMBARD ST"
+    ],
+    "city_region": "Smiths Falls : Lanark County",
+    "date_text": "15 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2833812 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001201615 Ontario Inc"
+    ],
+    "price_text": "$1,650,000"
+  }
+}

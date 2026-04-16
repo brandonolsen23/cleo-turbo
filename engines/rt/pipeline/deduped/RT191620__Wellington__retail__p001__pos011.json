@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT191620",
+  "source_folder": "Wellington/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191620",
+      "source_folder": "Wellington/retail/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 RIVERVIEW DR"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "17 Apr 2025",
+      "price_text": "$865,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2507417 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1001137236 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mandip Puri",
+        "2066 Gibson St",
+        "Innisfil, Ontario",
+        "L9S 0H2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 356, Lot 1",
+      "Except:",
+      "Plan 61R-21043, Part 1",
+      "",
+      "PIN: 71309-0145",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $865,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $865,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/17/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1916/RT191620/0713_103249.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1916/RT191620/0713_103320.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1916/RT191620/0713_103411.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1916/RT191620/0713_103430.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1916/RT191620/0713_103446.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1916/RT191620/0713_103456.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 269",
+      "rt_id": "RT191620"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "7 RIVERVIEW DR",
+    "postcode": "N1E 3R6",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "04/17/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "865000",
+    "cash": "865000",
+    "debt": "",
+    "note": "",
+    "pin": "71309-0145",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "7 RIVERVIEW DR"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "17 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2507417 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001137236 Ontario Ltd"
+    ],
+    "price_text": "$865,000"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT65411",
+  "source_folder": "Kitchener-Waterloo/retail/p011",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT65411",
+      "source_folder": "Kitchener-Waterloo/retail/p011",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p011/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "450 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "12 Dec 2008",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1420898 Ontario Inc     519-744-4119"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Leung",
+        "Kitchener Honda",
+        "1620 King St E",
+        "Kitchener, Ontario",
+        "N2G 2P1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 tenants 20,000 sf @ $40",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 369, Part Lots 16 & 23",
+      "Plan 365",
+      "Part Lot 28, N/S King St",
+      "Part Lot 29, S/S Duke St",
+      "As in Inst No 1105488",
+      "Except:",
+      "Plan 58R-2144, Part 3",
+      "",
+      "PIN: 22510-0008",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT654/RT65411/0101_105204.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT654/RT65411/0101_105237.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT654/RT65411/0101_105256.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT654/RT65411/air1.jpg",
+        "/assets/files/RT6/RT654/RT65411/air2.jpg",
+        "/assets/files/RT6/RT654/RT65411/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "511 / 752",
+      "rt_id": "RT65411"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "450 KING ST E",
+    "postcode": "N2G 2L6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "12/12/2008",
+    "desc": "Retail Plaza - 1 storey; 3 tenants 20,000 sf @ $40",
+    "bldg": "20,000 sf",
+    "acreage": ".85",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "22510-0008",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "450 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "12 Dec 2008",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 tenants 20,000 sf @ $40",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1420898 Ontario Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

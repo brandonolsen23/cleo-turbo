@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT187901",
+  "source_folder": "Elgin_County/retail/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187901",
+      "source_folder": "Elgin_County/retail/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Elgin_County/retail/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1012 TALBOT ST"
+      ],
+      "city_region": "St. Thomas : Elgin County",
+      "date_text": "18 Oct 2024",
+      "price_text": "$6,281,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "STFL Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1012 Talbot St",
+        "St Thomas, Ontario",
+        "N2P 1G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1174401 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alfred Eansor",
+        "684 Wharncliffe Rd S",
+        "London, Ontario",
+        "N6J 2N4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 209, Part Lot 3",
+      "As in Inst No E-343492",
+      "",
+      "PIN: 35204-0014",
+      "",
+      "3.14 acre"
+    ],
+    "arn_text": "34 21 040 540 16900",
+    "consideration_lines": [
+      "cash: $6,281,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $6,300,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/18/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187901/0330_133931.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187901/0330_133933.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187901/0330_134056.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187901/0330_134057.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1879/RT187901/0330_134109.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 46",
+      "rt_id": "RT187901"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1012 TALBOT ST",
+    "postcode": "N5P 1G3",
+    "municipality": "St. Thomas",
+    "region": "Elgin County",
+    "date": "10/18/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.14",
+    "consid": "6281000",
+    "cash": "6281000",
+    "debt": "",
+    "note": "",
+    "pin": "35204-0014",
+    "rollno": "34 21 040 540 16900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1012 TALBOT ST"
+    ],
+    "city_region": "St. Thomas : Elgin County",
+    "date_text": "18 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "STFL Realty Inc"
+    ],
+    "buyer_lines": [
+      "1174401 Ontario Inc"
+    ],
+    "price_text": "$6,281,000"
+  }
+}

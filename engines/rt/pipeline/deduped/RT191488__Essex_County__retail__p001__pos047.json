@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT191488",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191488",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "145 SANDWICH ST S"
+      ],
+      "city_region": "Amherstburg : Essex County",
+      "date_text": "02 Apr 2025",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Costante Family Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "145 Sandwich St S",
+        "Amherstburg, Ontario",
+        "N9V 1Z9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001178914 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ashia Sharmin",
+        "1257 Silverfox Dr",
+        "London, Ontario",
+        "N6G 0V8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 6 - Amherstburg,",
+      "Part Lot 5, E/S Sandwich St",
+      "As in Inst No R-974410",
+      "",
+      "PIN: 70554-0225",
+      "",
+      "0.20 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $97,000     assumed/vtb debt: $703,000",
+      "",
+      "chargee: Costante Family Holdings Ltd",
+      "principal: $703,000   rate: 5.0% per annum.",
+      "registered: 04/02/2025   due: 04/01/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "48 / 460",
+      "rt_id": "RT191488"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "145 SANDWICH ST S",
+    "postcode": "N9V 1Z9",
+    "municipality": "Amherstburg",
+    "region": "Essex County",
+    "date": "04/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".2",
+    "consid": "800000",
+    "cash": "97000",
+    "debt": "703000",
+    "note": "",
+    "pin": "70554-0225",
+    "rollno": ""
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "145 SANDWICH ST S"
+    ],
+    "city_region": "Amherstburg : Essex County",
+    "date_text": "02 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Costante Family Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1001178914 Ontario Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

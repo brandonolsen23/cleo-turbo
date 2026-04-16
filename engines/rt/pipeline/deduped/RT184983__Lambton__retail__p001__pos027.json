@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT184983",
+  "source_folder": "Lambton/retail/p001",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT184983",
+      "source_folder": "Lambton/retail/p001",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "6 ONTARIO ST N"
+      ],
+      "city_region": "Grand Bend : Lambton",
+      "date_text": "01 May 2024",
+      "price_text": "$1,000,100",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Bloor St W",
+        "PO Box 1417",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Corporation of the",
+        "Municipality of Lambton Shores     866-943-1400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Mayor: Douglas Cook",
+        "9577 Port Franks Rd",
+        "Thedford, Ontario",
+        "N0M 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 25R-3880, Part 2",
+      "Except:",
+      "Plan 25R-11247, Part 1",
+      "",
+      "PIN: 43444-0826",
+      "",
+      "0.36 acre"
+    ],
+    "arn_text": "38 45 520 010 80400",
+    "consideration_lines": [
+      "cash: $1,000,100     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "28 / 106",
+      "rt_id": "RT184983"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "6 ONTARIO ST N",
+    "postcode": "",
+    "municipality": "Grand Bend",
+    "region": "Lambton",
+    "date": "05/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".36",
+    "consid": "1000100",
+    "cash": "1000100",
+    "debt": "",
+    "note": "",
+    "pin": "43444-0826",
+    "rollno": "38 45 520 010 80400"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "6 ONTARIO ST N"
+    ],
+    "city_region": "Grand Bend : Lambton",
+    "date_text": "01 May 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "The Corporation of the",
+      "Municipality of Lambton Shores"
+    ],
+    "price_text": "$1,000,100"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT36040",
+  "source_folder": "Renfrew/retail/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36040",
+      "source_folder": "Renfrew/retail/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "296 RAGLAN ST S"
+      ],
+      "city_region": "Renfrew : Renfrew",
+      "date_text": "31 Jan 2003",
+      "price_text": "$723,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Glendarren Holdings Inc     613-432-8982"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brad Gould",
+        "Finnigan's Road House",
+        "302 Raglan St S",
+        "Renfrew, Ontario",
+        "K7V 1R5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4, Block A, Lots 2 & 3",
+      "",
+      "0.68 acre"
+    ],
+    "arn_text": "47 48 000 030 01300",
+    "consideration_lines": [
+      "cash: $723,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 52",
+      "rt_id": "RT36040"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "296 RAGLAN ST S",
+    "postcode": "K7V 1R5",
+    "municipality": "Renfrew",
+    "region": "Renfrew",
+    "date": "01/31/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".68",
+    "consid": "723000",
+    "cash": "723000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "47 48 000 030 01300"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "296 RAGLAN ST S"
+    ],
+    "city_region": "Renfrew : Renfrew",
+    "date_text": "31 Jan 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Glendarren Holdings Inc"
+    ],
+    "price_text": "$723,000"
+  }
+}

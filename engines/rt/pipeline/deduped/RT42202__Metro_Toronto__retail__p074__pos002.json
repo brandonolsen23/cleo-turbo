@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT42202",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42202",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "288 SHEPPARD AVE E"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "01 Jun 2005",
+      "price_text": "$6,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "987896 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Norah Oulahen",
+        "123 Sheppard Ave E",
+        "Toronto, Ontario",
+        "M2N 3A5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lee-Mar Developments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Samuel Sable",
+        "439 Spadina Rd, Ste 310",
+        "Toronto, Ontario",
+        "M5P 3M6"
+      ]
+    },
+    "description_lines": [
+      "PharmaPlus - 1 storey; 7,000 sf @ $857"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-372",
+      "Lots 26-28 & Part Lot 25",
+      "Except:",
+      "Plan D-101, Units 2-6",
+      "Plan 66R-19824, Parts 1-5",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "19 08 092 040 01301 +",
+    "consideration_lines": [
+      "cash: $3,293,932     assumed/vtb debt: $2,706,068"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT422/RT42202/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3653 / 4952",
+      "rt_id": "RT42202"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "288 SHEPPARD AVE E",
+    "postcode": "M2N 3B1",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "06/01/2005",
+    "desc": "PharmaPlus - 1 storey; 7,000 sf @ $857",
+    "bldg": "7,000 sf",
+    "acreage": ".46",
+    "consid": "6000000",
+    "cash": "3293932",
+    "debt": "2706068",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 092 040 01301+"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "288 SHEPPARD AVE E"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "01 Jun 2005",
+    "note": "",
+    "description": "PharmaPlus - 1 storey; 7,000 sf @ $857",
+    "seller_lines": [
+      "987896 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Lee-Mar Developments Ltd"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

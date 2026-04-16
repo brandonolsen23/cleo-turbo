@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT31055",
+  "source_folder": "Brant/retail/p004",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31055",
+      "source_folder": "Brant/retail/p004",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "196 DALHOUSIE ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "22 Jul 2003",
+      "price_text": "$845,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1478034 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Malik K. Malik",
+        "31 Rosseter Rd",
+        "Markham, Ontario",
+        "L3S 2P5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "ANR Enterprises Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Mazher Latif",
+        "2888 Windjammer Rd",
+        "Mississauga, Ontario",
+        "L5L 1S7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2R-5852, Part 1",
+      "",
+      "0.80 acre"
+    ],
+    "arn_text": "29 06 040 004 16200",
+    "consideration_lines": [
+      "cash: $845,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT310/RT31055/photo.jpg"
+    },
+    "footer": {
+      "page_position": "184 / 195",
+      "rt_id": "RT31055"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "196 DALHOUSIE ST",
+    "postcode": "N3S 3T7",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "07/22/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".8",
+    "consid": "845000",
+    "cash": "845000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 040 004 16200"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "196 DALHOUSIE ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "22 Jul 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1478034 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "ANR Enterprises Ltd"
+    ],
+    "price_text": "$845,000"
+  }
+}

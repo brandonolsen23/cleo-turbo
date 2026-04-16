@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT24339",
+  "source_folder": "Brant/retail/p004",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24339",
+      "source_folder": "Brant/retail/p004",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p004/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "168 - 170 CHARING CROSS ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "11 May 2001",
+      "price_text": "$520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Steve & Helen Kun"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "460 King George Rd, RR 6",
+        "Brantford, Ontario",
+        "N3T 5L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1109467 Ontario Ltd     519-759-8910"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: L. James Daw",
+        "Northgate Rent-All Inc",
+        "164 Charing Cross St",
+        "Brantford, Ontario",
+        "N3R 2J4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; about 5,200 sf @ $100"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 369",
+      "Lots 13 & 14",
+      "Part Lots 1, 12, 15-17",
+      "",
+      "0.51 acre"
+    ],
+    "arn_text": "29 06 030 010 27900",
+    "consideration_lines": [
+      "cash: $70,000     assumed/vtb debt: $450,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT243/RT24339/photo.jpg"
+    },
+    "footer": {
+      "page_position": "195 / 195",
+      "rt_id": "RT24339"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "168 - 170 CHARING CROSS ST",
+    "postcode": "N3R 2J4",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "05/11/2001",
+    "desc": "Retail Plaza - 1 storey; about 5,200 sf @ $100",
+    "bldg": "5,200 sf",
+    "acreage": ".51",
+    "consid": "520000",
+    "cash": "70000",
+    "debt": "450000",
+    "note": "",
+    "pin": "",
+    "rollno": "29 06 030 010 27900"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "168 - 170 CHARING CROSS ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "11 May 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; about 5,200 sf @ $100",
+    "seller_lines": [
+      "Steve & Helen Kun"
+    ],
+    "buyer_lines": [
+      "1109467 Ontario Ltd"
+    ],
+    "price_text": "$520,000"
+  }
+}

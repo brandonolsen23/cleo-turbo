@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT187853",
+  "source_folder": "Brant/retail/p001",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187853",
+      "source_folder": "Brant/retail/p001",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "6 LINDEN AVE"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "01 Oct 2024",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2568731 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Bekendam",
+        "1440 Colborne St E",
+        "Brantford, Ontario",
+        "N3T 5L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 390, Lot 6",
+      "",
+      "PIN: 32114-0072",
+      "",
+      "0.22 acre"
+    ],
+    "arn_text": "29 06 040 015 32000",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,850,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/01/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083314.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083319.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083321.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083335.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083336.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083337a.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083337b.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1878/RT187853/1201_083401.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "26 / 195",
+      "rt_id": "RT187853"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "6 LINDEN AVE",
+    "postcode": "N3S 7E2",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "10/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".22",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "32114-0072",
+    "rollno": "29 06 040 015 32000"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "6 LINDEN AVE"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "01 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2568731 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT19890",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19890",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "1705 WHARNCLIFFE RD S"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "19 Dec 2000",
+      "price_text": "$1,040,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "3641414 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Dutton",
+        "220 Chemin Du Tremblay",
+        "Boucherville, Quebec",
+        "J4B 8H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hully Gully Ltd     519-686-3754"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Regina Collins",
+        "c/o Saturn of London",
+        "940 Wharncliffe Rd S",
+        "London, Ontario",
+        "N6L 1K3"
+      ]
+    },
+    "description_lines": [
+      "Retail"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 36",
+      "As in Inst No 902579",
+      "",
+      "4.42 acre"
+    ],
+    "arn_text": "39 36 080 050 15200",
+    "consideration_lines": [
+      "cash: $1,040,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT198/RT19890/photo.jpg"
+    },
+    "footer": {
+      "page_position": "629 / 686",
+      "rt_id": "RT19890"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "1705 WHARNCLIFFE RD S",
+    "postcode": "N6L 1J9",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "12/19/2000",
+    "desc": "Retail",
+    "bldg": "",
+    "acreage": "4.42",
+    "consid": "1040000",
+    "cash": "1040000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 080 050 15200"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "1705 WHARNCLIFFE RD S"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "19 Dec 2000",
+    "note": "",
+    "description": "Retail",
+    "seller_lines": [
+      "3641414 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Hully Gully Ltd"
+    ],
+    "price_text": "$1,040,000"
+  }
+}

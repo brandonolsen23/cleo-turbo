@@ -1,0 +1,101 @@
+{
+  "rt_id": "RT47888",
+  "source_folder": "Metro_Toronto/multifamily/p083",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47888",
+      "source_folder": "Metro_Toronto/multifamily/p083",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p083/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "14 CANLISH RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "22 Feb 2006",
+      "price_text": "$534,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-924, Lot 1",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "19 01 043 010 01800",
+    "consideration_lines": [
+      "cash: $480,750     assumed/vtb debt: $53,750",
+      "",
+      "chargee: Italian Canadian Savings & Credit Union Ltd",
+      "principal: $347,000   rate: 5.3% per annum",
+      "registered: 02/22/2006   due: 02/22/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4102 / 6031",
+      "rt_id": "RT47888"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "14 CANLISH RD",
+    "postcode": "M1P 1S4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "02/22/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "534500",
+    "cash": "480750",
+    "debt": "53750",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 043 010 01800"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "14 CANLISH RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "22 Feb 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$534,500"
+  }
+}

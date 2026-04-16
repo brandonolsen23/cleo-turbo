@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT105011",
+  "source_folder": "Cochrane/all/p098",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT105011",
+      "source_folder": "Cochrane/all/p098",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p098/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "AQUAVIEW DR"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "10 Dec 2014",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Minto Communities Inc",
+        "Minto Properties Inc     613-230-7051"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Jacques Brisson",
+        "180 Minto St, Ste 200",
+        "Ottawa, Ontario",
+        "K1P 0B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Aquaview Investments Inc     613-833-1076"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jean Decoeur",
+        "1570 Jonquille Way",
+        "Ottawa, Ontario",
+        "K4C 1C2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-1172, Block 204",
+      "",
+      "PIN: 14525-2354",
+      "",
+      "1.81 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $162,500     assumed/vtb debt: $487,500",
+      "",
+      "chargee: Minto Properties Inc",
+      "Minto Communities Inc",
+      "principal: $487,500   rate: 0% for the first 11 months, thereafter RBC prime plus 5.0% per annum. All interest will be forgiven if all principal is repaid by 12/10/2015.",
+      "registered: 12/10/2014   due: 12/10/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4887 / 10920",
+      "rt_id": "RT105011"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "AQUAVIEW DR",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/10/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.81",
+    "consid": "650000",
+    "cash": "162500",
+    "debt": "487500",
+    "note": "",
+    "pin": "14525-2354",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "AQUAVIEW DR"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "10 Dec 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Minto Communities Inc",
+      "Minto Properties Inc"
+    ],
+    "buyer_lines": [
+      "Aquaview Investments Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

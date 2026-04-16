@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT23447",
+  "source_folder": "Metro_Toronto/multifamily/p108",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23447",
+      "source_folder": "Metro_Toronto/multifamily/p108",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p108/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "100 JAMESON AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "23 Nov 2001",
+      "price_text": "$1,600,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sarah Buksbaum"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3636 Bathurst St, Apt 211",
+        "Toronto, Ontario",
+        "M6A 2Y5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "381883 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3636 Bathurst St, Apt 211",
+        "Toronto, Ontario",
+        "M6A 2Y5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 710",
+      "Lots 21 & 22, Part Lot 20",
+      "As in Inst No CA-82689"
+    ],
+    "arn_text": "19 04 021 150 03300",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5354 / 6031",
+      "rt_id": "RT23447"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "100 JAMESON AVE",
+    "postcode": "M6K 2X8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/23/2001",
+    "desc": "Apartment Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1600000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 021 150 03300"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "100 JAMESON AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "23 Nov 2001",
+    "note": "Related Parties",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "Sarah Buksbaum"
+    ],
+    "buyer_lines": [
+      "381883 Ontario Ltd"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

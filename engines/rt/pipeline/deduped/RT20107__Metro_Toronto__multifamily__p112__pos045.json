@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT20107",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20107",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "42 GORMLEY AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Jan 2001",
+      "price_text": "$509,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "130285 Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Marta Dusmet",
+        "457 Oriole Pkwy",
+        "Toronto, Ontario",
+        "M5P 2H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Thomas Rennie"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "34 Crestwood Place",
+        "Guelph, Ontario",
+        "N1E 4M3"
+      ]
+    },
+    "description_lines": [
+      "TriPlex - 2.5 storey; 3 units @ $169,833"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 743, Part Lot 10",
+      "",
+      "NE corner at Lascelles Blvd"
+    ],
+    "arn_text": "19 04 111 420 02000",
+    "consideration_lines": [
+      "cash: $509,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Bosley: Patrick Murray, 416-322-8000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT201/RT20107/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5596 / 6031",
+      "rt_id": "RT20107"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "42 GORMLEY AVE",
+    "postcode": "M4V 1Y8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/05/2001",
+    "desc": "TriPlex - 2.5 storey; 3 units @ $169,833",
+    "bldg": "3 units",
+    "acreage": "",
+    "consid": "509500",
+    "cash": "509500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 111 420 02000"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "42 GORMLEY AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Jan 2001",
+    "note": "",
+    "description": "TriPlex - 2.5 storey; 3 units @ $169,833",
+    "seller_lines": [
+      "130285 Canada Ltd"
+    ],
+    "buyer_lines": [
+      "Thomas Rennie"
+    ],
+    "price_text": "$509,500"
+  }
+}

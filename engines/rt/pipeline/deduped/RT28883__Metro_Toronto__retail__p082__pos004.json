@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT28883",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28883",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "897 - 901 EGLINTON AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "05 Feb 2003",
+      "price_text": "$1,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Wittington Properties Ltd     416-967-7990"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Michael Moyer",
+        "22 St Clair Ave E, Ste 500",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Blue Stripe Properties (Eglinton) Ltd     416-622-2400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Scott Rutledge",
+        "Rutledge Development Group",
+        "16 Four Seasons Place, Ste 212",
+        "Toronto, Ontario",
+        "M9B 6E5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg -1 storey; 11,256 sf @ $138",
+      "",
+      "Future Pharma Plus store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-511",
+      "Lots 178-180 & Part Lot 181"
+    ],
+    "arn_text": "19 14 013 210 01800",
+    "consideration_lines": [
+      "cash: $1,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT288/RT28883/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4055 / 4952",
+      "rt_id": "RT28883"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "897 - 901 EGLINTON AVE W",
+    "postcode": "M6C 2C1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/05/2003",
+    "desc": "Retail Bldg -1 storey; 11,256 sf @ $138",
+    "bldg": "11,256 sf",
+    "acreage": "",
+    "consid": "1550000",
+    "cash": "1550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 013 210 01800"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "897 - 901 EGLINTON AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "05 Feb 2003",
+    "note": "",
+    "description": "Retail Bldg -1 storey; 11,256 sf @ $138",
+    "seller_lines": [
+      "Wittington Properties Ltd"
+    ],
+    "buyer_lines": [
+      "Blue Stripe Properties (Eglinton) Ltd"
+    ],
+    "price_text": "$1,550,000"
+  }
+}

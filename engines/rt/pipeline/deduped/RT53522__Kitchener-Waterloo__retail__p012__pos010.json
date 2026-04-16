@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT53522",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT53522",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "247 KING ST N"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "01 Feb 2007",
+      "price_text": "$3,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1011323 Ontario Ltd     519-576-2233"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Donald Zehr",
+        "ZMG Management",
+        "607 King St W, Ste 205A",
+        "Kitchener, Ontario",
+        "N2G 1C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Tanem Developments Ltd     519-885-3864"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nelson Kraus",
+        "263 Anita Ct",
+        "Waterloo, Ontario",
+        "N2K 2R4"
+      ]
+    },
+    "description_lines": [
+      "Retail Strip Plaza - 1 storey; 9 tenants 12,400 sf @ $302",
+      "",
+      "1,700 sf vacant",
+      "",
+      "Bldg size excludes 1,500 sf of finished basement"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "GCT, Subdivision of Lot 13",
+      "Part Lot 39",
+      "As in Inst No 802124",
+      "Except:",
+      "Plan 58R-5329, Part 2",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "30 16 042 600 05200",
+    "consideration_lines": [
+      "cash: $3,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "CMA Realty Ltd: Neil Koebel, 519-578-0337"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT535/RT53522/0225_103219.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT535/RT53522/0225_103220.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT535/RT53522/0225_103246.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "561 / 752",
+      "rt_id": "RT53522"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "247 KING ST N",
+    "postcode": "N2J 2Y8",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "02/01/2007",
+    "desc": "Retail Strip Plaza - 1 storey; 9 tenants 12,400 sf @ $302",
+    "bldg": "12,400 sf",
+    "acreage": ".75",
+    "consid": "3750000",
+    "cash": "3750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 042 600 05200"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "247 KING ST N"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "01 Feb 2007",
+    "note": "",
+    "description": "Retail Strip Plaza - 1 storey; 9 tenants 12,400 sf @ $302",
+    "seller_lines": [
+      "1011323 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Tanem Developments Ltd"
+    ],
+    "price_text": "$3,750,000"
+  }
+}

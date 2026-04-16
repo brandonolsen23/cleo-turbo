@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT194804",
+  "source_folder": "Kent_County/office/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194804",
+      "source_folder": "Kent_County/office/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/office/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "40 CENTRE ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "10 Oct 2025",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1000921002 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 40 Centre St, Unit 100",
+        "Chatham, Ontario",
+        "N7M 5W3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mero Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Ouellette",
+        "67 King St W",
+        "Chatham, Ontario",
+        "N7M 1C7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 24R-6146, Parts 1-6",
+      "",
+      "PIN: 00504-0214",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "36 50 420 027 15400",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,312,500   rate: Prime plus 5.0% per annum.",
+      "registered: 10/10/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 31",
+      "rt_id": "RT194804"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "40 CENTRE ST",
+    "postcode": "N7M 5W3",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "10/10/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".42",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "00504-0214",
+    "rollno": "36 50 420 027 15400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "40 CENTRE ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "10 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1000921002 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Mero Enterprises Inc"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

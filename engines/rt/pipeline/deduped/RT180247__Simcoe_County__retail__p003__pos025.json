@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT180247",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180247",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "5 HURONTARIO ST"
+      ],
+      "city_region": "Collingwood : Simcoe County",
+      "date_text": "01 Sep 2023",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "227 Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7130 Warden Ave, Unit 305",
+        "Markham, Ontario",
+        "L3R 1S2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2658275 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Brady",
+        "589903 Grey Rd 19",
+        "Blue Mountains, Ontario",
+        "L9Y 0P5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-25626, Part 1",
+      "",
+      "PIN: 58288-0004",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "43 31 010 001 00200",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180247/1015_102223.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180247/1015_102231.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180247/1015_102252.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180247/1015_102323.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1802/RT180247/air1.jpg",
+        "/assets/files/RT18/RT1802/RT180247/air2.jpg",
+        "/assets/files/RT18/RT1802/RT180247/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "126 / 712",
+      "rt_id": "RT180247"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "5 HURONTARIO ST",
+    "postcode": "L6Y 2L7",
+    "municipality": "Collingwood",
+    "region": "Simcoe County",
+    "date": "09/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "58288-0004",
+    "rollno": "43 31 010 001 00200"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "5 HURONTARIO ST"
+    ],
+    "city_region": "Collingwood : Simcoe County",
+    "date_text": "01 Sep 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "227 Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2658275 Ontario Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

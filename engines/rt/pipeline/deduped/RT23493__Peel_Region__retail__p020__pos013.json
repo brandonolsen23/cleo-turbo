@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT23493",
+  "source_folder": "Peel_Region/retail/p020",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23493",
+      "source_folder": "Peel_Region/retail/p020",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p020/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "930 NORTH PARK DR"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "30 Nov 2001",
+      "price_text": "$9,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "GREP Properties (II) Ltd     416-943-9898"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Craig Coleman",
+        "Acanthus Real Estate Corp",
+        "161 Bay St, Ste 2800",
+        "Toronto, Ontario",
+        "M5J 2S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mackay Plaza Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sidney Sitzer",
+        "255 Lesmill Rd",
+        "Toronto, Ontario",
+        "M3B 2V1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 58,287 sf @ $161"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-7099",
+      "Parts 3, 4, 6-13",
+      "",
+      "NE corner at MacKay St N",
+      "",
+      "5.52 acre"
+    ],
+    "arn_text": "21 10 090 037 86401",
+    "consideration_lines": [
+      "cash: $3,071,698     assumed/vtb debt: $6,328,302"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT234/RT23493/photo.jpg"
+    },
+    "footer": {
+      "page_position": "964 / 1087",
+      "rt_id": "RT23493"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "930 NORTH PARK DR",
+    "postcode": "L6S 3Y5",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "11/30/2001",
+    "desc": "Retail Plaza - 1 storey; 58,287 sf @ $161",
+    "bldg": "58,287 sf",
+    "acreage": "5.52",
+    "consid": "9400000",
+    "cash": "3071698",
+    "debt": "6328302",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 090 037 86401"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "930 NORTH PARK DR"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "30 Nov 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 58,287 sf @ $161",
+    "seller_lines": [
+      "GREP Properties (II) Ltd"
+    ],
+    "buyer_lines": [
+      "Mackay Plaza Ltd"
+    ],
+    "price_text": "$9,400,000"
+  }
+}

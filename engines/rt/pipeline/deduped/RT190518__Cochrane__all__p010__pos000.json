@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT190518",
+  "source_folder": "Cochrane/all/p010",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190518",
+      "source_folder": "Cochrane/all/p010",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p010/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "HEMLOCK RD",
+        "VEDETTE WAY",
+        "MIKINAK RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "26 Feb 2025",
+      "price_text": "$8,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canada Lands Company CLC Ltd     613-564-3015"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "100 Queen St, Ste 1050",
+        "Ottawa, Ontario",
+        "K1P 1J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mattamy (Rockcliffe II) Inc     613-831-4115"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Murphy",
+        "50 Hines Rd, Ste 100",
+        "Ottawa, Ontario",
+        "K2K 2M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-1559,",
+      "Block 105",
+      "",
+      "PIN: 04273-0548",
+      "",
+      "5.36 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canada Lands Company CLC Ltd",
+      "principal: $80,010",
+      "registered: 02/26/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1905/RT190518/air1.jpg",
+        "/assets/files/RT19/RT1905/RT190518/air2.jpg",
+        "/assets/files/RT19/RT1905/RT190518/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "451 / 10920",
+      "rt_id": "RT190518"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "HEMLOCK RD, VEDETTE WAY, MIKINAK RD",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "02/26/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.36",
+    "consid": "8000000",
+    "cash": "8000000",
+    "debt": "",
+    "note": "",
+    "pin": "04273-0548",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "HEMLOCK RD",
+      "VEDETTE WAY",
+      "MIKINAK RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "26 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canada Lands Company CLC Ltd"
+    ],
+    "buyer_lines": [
+      "Mattamy (Rockcliffe II) Inc"
+    ],
+    "price_text": "$8,000,000"
+  }
+}

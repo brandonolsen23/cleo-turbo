@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT185939",
+  "source_folder": "Thunder_Bay/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT185939",
+      "source_folder": "Thunder_Bay/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Thunder_Bay/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "2826 ARTHUR ST E",
+        "2840 ARTHUR ST E"
+      ],
+      "city_region": "Thunder Bay : Thunder Bay",
+      "date_text": "24 Jun 2024",
+      "price_text": "$3,707,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1825272 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1077 Boundary Rd, Ste 207",
+        "Oshawa, Ontario",
+        "L1J 8P8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Thunder Bay Asset Management Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Magdy Takawy-Wabha",
+        "5343 Drenkelly Ct",
+        "Mississauga, Ontario",
+        "L5M 2H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 55R-3449, Parts 1 & 2",
+      "",
+      "PIN: 62048-0003",
+      "",
+      "1.73 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,707,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,700,000   rate: 18.0% per annum.",
+      "registered: 06/24/2024   due: 06/01/2029"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1859/RT185939/air1.jpg",
+        "/assets/files/RT18/RT1859/RT185939/air2.jpg",
+        "/assets/files/RT18/RT1859/RT185939/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 65",
+      "rt_id": "RT185939"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "2826 ARTHUR ST E, 2840 ARTHUR ST E",
+    "postcode": "P7E 5P4",
+    "municipality": "Thunder Bay",
+    "region": "Thunder Bay",
+    "date": "06/24/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.73",
+    "consid": "3707000",
+    "cash": "3707000",
+    "debt": "",
+    "note": "",
+    "pin": "62048-0003",
+    "rollno": ""
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "2826 ARTHUR ST E",
+      "2840 ARTHUR ST E"
+    ],
+    "city_region": "Thunder Bay : Thunder Bay",
+    "date_text": "24 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1825272 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Thunder Bay Asset Management Inc"
+    ],
+    "price_text": "$3,707,000"
+  }
+}

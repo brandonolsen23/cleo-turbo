@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT60550",
+  "source_folder": "Metro_Toronto/retail/p062",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60550",
+      "source_folder": "Metro_Toronto/retail/p062",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p062/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "283 AUGUSTA AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Jan 2008",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Westport Blue Inc     416-923-9996"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jonathan Hyman",
+        "99 Scollard St",
+        "Toronto, Ontario",
+        "M5R 1G4"
+      ]
+    },
+    "description_lines": [
+      "Retail/Res Bldg - 3 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-55, Part Lot 11",
+      "As in Inst No CT-983864",
+      "",
+      "0.02 acre"
+    ],
+    "arn_text": "19 04 065 730 00900",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $385,000   rate: RBC prime 0.5% per annum",
+      "registered: 01/31/2008   due: 02/05/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT605/RT60550/0217_094543.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT605/RT60550/0217_094544.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT605/RT60550/0217_094551.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT605/RT60550/air1.jpg",
+        "/assets/files/RT6/RT605/RT60550/air2.jpg",
+        "/assets/files/RT6/RT605/RT60550/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3085 / 4952",
+      "rt_id": "RT60550"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "283 AUGUSTA AVE",
+    "postcode": "M5T 2M1",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/31/2008",
+    "desc": "Retail/Res Bldg - 3 storey",
+    "bldg": "",
+    "acreage": ".02",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 065 730 00900"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "283 AUGUSTA AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Jan 2008",
+    "note": "",
+    "description": "Retail/Res Bldg - 3 storey",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Westport Blue Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

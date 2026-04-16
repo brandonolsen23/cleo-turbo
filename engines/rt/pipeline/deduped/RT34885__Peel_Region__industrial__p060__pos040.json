@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT34885",
+  "source_folder": "Peel_Region/industrial/p060",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34885",
+      "source_folder": "Peel_Region/industrial/p060",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/industrial/p060/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "1150 MEYERSIDE DR"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "01 Apr 2004",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1407460 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paramjit Aulakh",
+        "282 Harrowsmith Dr",
+        "Mississauga, Ontario",
+        "L5R 1R1"
+      ]
+    },
+    "description_lines": [
+      "Warehouse"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-7174, Part 1",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "21 05 050 116 29810",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT348/RT34885/air1.jpg",
+        "/assets/files/RT3/RT348/RT34885/air2.jpg",
+        "/assets/files/RT3/RT348/RT34885/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT348/RT34885/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2991 / 3793",
+      "rt_id": "RT34885"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "1150 MEYERSIDE DR",
+    "postcode": "L5T 1J4",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "04/01/2004",
+    "desc": "Warehouse",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 050 116 29810"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "1150 MEYERSIDE DR"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "01 Apr 2004",
+    "note": "",
+    "description": "Warehouse",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1407460 Ontario Inc"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

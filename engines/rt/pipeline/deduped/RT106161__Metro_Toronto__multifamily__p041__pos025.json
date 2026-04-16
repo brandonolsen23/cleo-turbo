@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT106161",
+  "source_folder": "Metro_Toronto/multifamily/p041",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT106161",
+      "source_folder": "Metro_Toronto/multifamily/p041",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p041/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "2 MACAULAY AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Jan 2015",
+      "price_text": "$985,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "9150897 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Csercsics",
+        "103 Selkirk Dr",
+        "Richmond Hill, Ontario",
+        "L4B 4T7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-13, Part Lot 198",
+      "",
+      "PIN: 21328-0108",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 013 530 03600",
+    "consideration_lines": [
+      "cash: $985,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $788,000   rate: Prime minus 0.65% per annum.",
+      "registered: 01/28/2015   due: 01/28/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2026 / 6031",
+      "rt_id": "RT106161"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "2 MACAULAY AVE",
+    "postcode": "M6P 3P6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/28/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "985000",
+    "cash": "985000",
+    "debt": "",
+    "note": "",
+    "pin": "21328-0108",
+    "rollno": "19 04 013 530 03600"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "2 MACAULAY AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Jan 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "9150897 Canada Inc"
+    ],
+    "price_text": "$985,000"
+  }
+}

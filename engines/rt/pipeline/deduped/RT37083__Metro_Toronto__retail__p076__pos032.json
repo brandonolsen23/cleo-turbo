@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT37083",
+  "source_folder": "Metro_Toronto/retail/p076",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT37083",
+      "source_folder": "Metro_Toronto/retail/p076",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p076/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "9 MILVAN DR"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "10 Aug 2004",
+      "price_text": "$2,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1619870 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steve Abouna",
+        "9 Milvan Dr",
+        "Toronto, Ontario",
+        "M9L 1Y9"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5623, Part Block A",
+      "As in Inst No TR-14891",
+      "",
+      "2.43 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,073,000     assumed/vtb debt: $1,777,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3783 / 4952",
+      "rt_id": "RT37083"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "9 MILVAN DR",
+    "postcode": "M9L 1Y9",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "08/10/2004",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "2.43",
+    "consid": "2850000",
+    "cash": "1073000",
+    "debt": "1777000",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "9 MILVAN DR"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "10 Aug 2004",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1619870 Ontario Ltd"
+    ],
+    "price_text": "$2,850,000"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT13439",
+  "source_folder": "Metro_Toronto/retail/p098",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13439",
+      "source_folder": "Metro_Toronto/retail/p098",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p098/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "CLOVERDALE MALL"
+      ],
+      "city_region": "Etobicoke : Metro Toronto",
+      "date_text": "14 Dec 1998",
+      "price_text": "$34,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Cambridge Shopping Centres Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Norman W. Pandachuk",
+        "95 Wellington St W, Ste 300",
+        "Toronto, Ontario",
+        "M5J 2R2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ena Realty Group Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John D. Goodwin",
+        "18 King St E, Ste 1602",
+        "Toronto, Ontario",
+        "M5C 1C4"
+      ]
+    },
+    "description_lines": [
+      "Regional Mall - 420,000 sf @ $81"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-11007, Part 1 & 2",
+      "Plan 4685, Parts 1 & 2",
+      "",
+      "32.03 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $8,222,568     assumed/vtb debt: $25,777,432",
+      "",
+      "chargee: Benson Custodian Corp",
+      "principal: $1,800,000   rate: 9.5% per annum.",
+      "registered: 05/07/2018   due: 06/01/2019",
+      "",
+      "chargee: Benson Custodian Corp",
+      "principal: $750,000   rate: 9.5% per annum.",
+      "registered: 05/07/2018   due: 06/01/2019",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $598,500   rate: Prime plus 10.0% per annum.",
+      "registered: 05/08/2018   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4853 / 4952",
+      "rt_id": "RT13439"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "CLOVERDALE MALL",
+    "postcode": "",
+    "municipality": "Etobicoke",
+    "region": "Metro Toronto",
+    "date": "12/14/1998",
+    "desc": "Regional Mall - 420,000 sf @ $81",
+    "bldg": "420,000 sf",
+    "acreage": "32.03",
+    "consid": "34000000",
+    "cash": "8222568",
+    "debt": "25777432",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "CLOVERDALE MALL"
+    ],
+    "city_region": "Etobicoke : Metro Toronto",
+    "date_text": "14 Dec 1998",
+    "note": "",
+    "description": "Regional Mall - 420,000 sf @ $81",
+    "seller_lines": [
+      "Cambridge Shopping Centres Ltd"
+    ],
+    "buyer_lines": [
+      "Ena Realty Group Ltd"
+    ],
+    "price_text": "$34,000,000"
+  }
+}

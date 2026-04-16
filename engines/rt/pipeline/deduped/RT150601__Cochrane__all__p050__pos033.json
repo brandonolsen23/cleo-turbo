@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT150601",
+  "source_folder": "Cochrane/all/p050",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150601",
+      "source_folder": "Cochrane/all/p050",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p050/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "1069 CANAL WOODS TERRACE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "02 Mar 2020",
+      "price_text": "$679,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2317833 Ontario Inc     613-260-5555"
+      ],
+      "trade_name": "Kilgour & Associates",
+      "contact_lines": [
+        "Attn: Bruce Kilgour",
+        "2285C St Laurent Blvd, Unit 16",
+        "Ottawa, Ontario",
+        "K1G 4Z6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Secemb Investments Ltd     613-727-1444"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Levin",
+        "23 Roselawn Ct",
+        "Ottawa, Ontario",
+        "K2G 4J3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 173, Lot 42",
+      "",
+      "PIN: 04143-0076",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "06 14 052 602 77500",
+    "consideration_lines": [
+      "cash: $679,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2484 / 10920",
+      "rt_id": "RT150601"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "1069 CANAL WOODS TERRACE",
+    "postcode": "K1S 4H2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/02/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "679000",
+    "cash": "679000",
+    "debt": "",
+    "note": "",
+    "pin": "04143-0076",
+    "rollno": "06 14 052 602 77500"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "1069 CANAL WOODS TERRACE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "02 Mar 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2317833 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Secemb Investments Ltd"
+    ],
+    "price_text": "$679,000"
+  }
+}

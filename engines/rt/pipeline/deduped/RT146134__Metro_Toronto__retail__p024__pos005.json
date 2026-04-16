@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT146134",
+  "source_folder": "Metro_Toronto/retail/p024",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT146134",
+      "source_folder": "Metro_Toronto/retail/p024",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p024/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2044 QUEEN ST E"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "27 Sep 2019",
+      "price_text": "$6,500,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Embee Beaches Inc     416-250-5858"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Baker",
+        "88 Sheppard Ave W, Ste 200",
+        "Toronto, Ontario",
+        "M2N 1M5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Toronto-Dominion Bank     519-667-3245"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jon Dawson",
+        "380 Wellington St, 10th Flr",
+        "London, Ontario",
+        "N6A 5B5"
+      ]
+    },
+    "description_lines": [
+      "Bank Bldg: 1 storey; 6,000 sf @ $1,083",
+      "",
+      "The property was purchased by its tenant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-238,",
+      "Lot 1, N/S Queen St",
+      "",
+      "PIN: 21005-0100",
+      "",
+      "NE corner Queen St E and Lee Ave",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 093 080 08700",
+    "consideration_lines": [
+      "cash: $6,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT14/RT1461/RT146134/1006_095156.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1461/RT146134/1006_095200.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1461/RT146134/1006_095201.jpg",
+        "http://realtrack.cachefly.net/photos/RT14/RT1461/RT146134/1006_095228.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1156 / 4952",
+      "rt_id": "RT146134"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2044 QUEEN ST E",
+    "postcode": "M4E 1C9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/27/2019",
+    "desc": "Bank Bldg: 1 storey; 6,000 sf @ $1,083",
+    "bldg": "6,000 sf",
+    "acreage": ".14",
+    "consid": "6500000",
+    "cash": "6500000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "21005-0100",
+    "rollno": "19 04 093 080 08700"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2044 QUEEN ST E"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "27 Sep 2019",
+    "note": "Purchased by Tenant",
+    "description": "Bank Bldg: 1 storey; 6,000 sf @ $1,083",
+    "seller_lines": [
+      "Embee Beaches Inc"
+    ],
+    "buyer_lines": [
+      "The Toronto-Dominion Bank"
+    ],
+    "price_text": "$6,500,000"
+  }
+}

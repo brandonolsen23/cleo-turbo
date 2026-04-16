@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT116836",
+  "source_folder": "Cochrane/all/p086",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT116836",
+      "source_folder": "Cochrane/all/p086",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p086/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "3060 TENTH LINE RD",
+        "3060 10TH LINE RD"
+      ],
+      "city_region": "Cumberland : Ottawa-Carleton",
+      "date_text": "19 May 2016",
+      "price_text": "$800,000",
+      "note": "Purchase Agreement"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2245040 Ontario Inc",
+        "Shawn Desjardins     613-837-7408"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sylvie Patenaude",
+        "c/o Sicotte Guibault LLP",
+        "4275 Innes Rd, Ste 208",
+        "Ottawa, Ontario",
+        "K1C 1T1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 7",
+      "Plan 50R-3594, Part 2",
+      "",
+      "PIN: 14544-0161",
+      "",
+      "6.33 acre"
+    ],
+    "arn_text": "03 11 010 301 41700",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4272 / 10920",
+      "rt_id": "RT116836"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "3060 TENTH LINE RD, 3060 10TH LINE RD",
+    "postcode": "K4B 1H8",
+    "municipality": "Cumberland",
+    "region": "Ottawa-Carleton",
+    "date": "05/19/2016",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.33",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "Purchase Agreement",
+    "pin": "14544-0161",
+    "rollno": "03 11 010 301 41700"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "3060 TENTH LINE RD",
+      "3060 10TH LINE RD"
+    ],
+    "city_region": "Cumberland : Ottawa-Carleton",
+    "date_text": "19 May 2016",
+    "note": "Purchase Agreement",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2245040 Ontario Inc",
+      "Shawn Desjardins"
+    ],
+    "price_text": "$800,000"
+  }
+}

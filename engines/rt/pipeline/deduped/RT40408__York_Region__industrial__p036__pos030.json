@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT40408",
+  "source_folder": "York_Region/industrial/p036",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40408",
+      "source_folder": "York_Region/industrial/p036",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/industrial/p036/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "61 TELSON RD"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "24 Feb 2005",
+      "price_text": "$1,420,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2059592 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: R. Sivasubramaniam",
+        "61 Telson Rd",
+        "Markham, Ontario",
+        "L3R 1E4"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg - 13 ft clr; 20,000 sf @ $71"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 9001, Lot 37",
+      "",
+      "1.03 acre"
+    ],
+    "arn_text": "19 36 020 121 41860",
+    "consideration_lines": [
+      "cash: $1,420,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $920,000   rate: Prime plus 1.0% per annum.",
+      "registered: 02/24/2005   due: on demand"
+    ],
+    "broker_lines": [
+      "Re/Max Hallmark: Ken McDonald, 416-462-1888"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT404/RT40408/air1.jpg",
+        "/assets/files/RT4/RT404/RT40408/air2.jpg",
+        "/assets/files/RT4/RT404/RT40408/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT404/RT40408/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1781 / 2269",
+      "rt_id": "RT40408"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "61 TELSON RD",
+    "postcode": "L3R 1E4",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "02/24/2005",
+    "desc": "Industrial Bldg - 13 ft clr; 20,000 sf @ $71",
+    "bldg": "20,000 sf",
+    "acreage": "1.03",
+    "consid": "1420000",
+    "cash": "1420000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 121 41860"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "61 TELSON RD"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "24 Feb 2005",
+    "note": "",
+    "description": "Industrial Bldg - 13 ft clr; 20,000 sf @ $71",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2059592 Ontario Corp"
+    ],
+    "price_text": "$1,420,000"
+  }
+}

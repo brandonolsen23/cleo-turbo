@@ -1,0 +1,136 @@
+{
+  "rt_id": "RT69820",
+  "source_folder": "Halton_Region/multifamily/p005",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69820",
+      "source_folder": "Halton_Region/multifamily/p005",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/multifamily/p005/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "955 WARWICK CT"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "16 Dec 2009",
+      "price_text": "$19,095,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "955 Warwick Ltd     905-672-1100"
+      ],
+      "trade_name": "TransGlobe Property Management",
+      "contact_lines": [
+        "Pres: Daniel Drimmer",
+        "5925 Airport Rd, Ste 700",
+        "Mississauga, Ontario",
+        "L4V 1W1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Rescore Equities Inc",
+        "TC Core GP Inc     416-306-9967"
+      ],
+      "trade_name": "Timbercreek Asset Management Inc",
+      "contact_lines": [
+        "VP: Ugo Bizzarri",
+        "1000 Yonge St, Ste 500",
+        "Toronto, Ontario",
+        "M4W 2K2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 18 storey; 185 units @ $103,216",
+      "",
+      "1-bach 52-1bdrm 96-2bdrm 36-3bdrm",
+      "",
+      "Last transferred in June 2005 for $14,000,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-83, Block B",
+      "",
+      "PIN: 07104-0044",
+      "",
+      "NE side 50m N of Warwick Dr",
+      "",
+      "3.64 acre"
+    ],
+    "arn_text": "24 02 020 208 03600",
+    "consideration_lines": [
+      "cash: $9,737,335     assumed/vtb debt: $9,357,665",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $20,374,365   rate: Prime plus 10.0% per annum",
+      "registered: 12/17/2009   due: on demand",
+      "",
+      "chargee: Rescore Equites Inc",
+      "principal: $630,135   rate: Prime plus 10.0% per annum",
+      "registered: 12/17/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT698/RT69820/1225_124143.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT698/RT69820/1225_124223.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT698/RT69820/1225_124316.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT698/RT69820/1225_124340.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT698/RT69820/air1.jpg",
+        "/assets/files/RT6/RT698/RT69820/air2.jpg",
+        "/assets/files/RT6/RT698/RT69820/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "205 / 380",
+      "rt_id": "RT69820"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "955 WARWICK CT",
+    "postcode": "L7T 3Z6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "12/16/2009",
+    "desc": "Apartment Bldg - 18 storey; 185 units @ $103,216",
+    "bldg": "185 units",
+    "acreage": "3.64",
+    "consid": "19095000",
+    "cash": "9737335",
+    "debt": "9357665",
+    "note": "",
+    "pin": "07104-0044",
+    "rollno": "24 02 020 208 03600"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "955 WARWICK CT"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "16 Dec 2009",
+    "note": "",
+    "description": "Apartment Bldg - 18 storey; 185 units @ $103,216",
+    "seller_lines": [
+      "955 Warwick Ltd"
+    ],
+    "buyer_lines": [
+      "Rescore Equities Inc",
+      "TC Core GP Inc"
+    ],
+    "price_text": "$19,095,000"
+  }
+}

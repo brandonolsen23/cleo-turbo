@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT28005",
+  "source_folder": "Hamilton-Wentworth/retail/p011",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28005",
+      "source_folder": "Hamilton-Wentworth/retail/p011",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p011/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "661 - 679 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "29 Nov 2002",
+      "price_text": "$15,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "SBI Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Steven Schouele",
+        "1010 Sherbrooke St W, Ste 2100",
+        "Montreal, Quebec",
+        "H3A 2R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Katy Ritcey",
+        "Exchange Tower",
+        "130 King St W",
+        "Ste 700, PO Box 378",
+        "Toronto, Ontario",
+        "M9N 1L5"
+      ]
+    },
+    "description_lines": [
+      "Mountain Plaza Mall - 1 storey; 88 units 230,000 sf @ $68"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1216, Part Block A",
+      "Except as in Inst Nos CD-107671, CD-107669",
+      "CD-188447 & NS-265886",
+      "",
+      "18.87 acre"
+    ],
+    "arn_text": "25 18 080 891 00700",
+    "consideration_lines": [
+      "cash: $15,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT280/RT28005/photo.jpg"
+    },
+    "footer": {
+      "page_position": "522 / 616",
+      "rt_id": "RT28005"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "661 - 679 UPPER JAMES ST",
+    "postcode": "L9C 2Z4",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "11/29/2002",
+    "desc": "Mountain Plaza Mall - 1 storey; 88 units 230,000 sf @ $68",
+    "bldg": "230,000 sf",
+    "acreage": "18.87",
+    "consid": "15750000",
+    "cash": "15750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 080 891 00700"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "661 - 679 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "29 Nov 2002",
+    "note": "",
+    "description": "Mountain Plaza Mall - 1 storey; 88 units 230,000 sf @ $68",
+    "seller_lines": [
+      "SBI Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$15,750,000"
+  }
+}

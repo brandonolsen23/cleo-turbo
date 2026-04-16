@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20729",
+  "source_folder": "Halton_Region/restaurant-bar/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20729",
+      "source_folder": "Halton_Region/restaurant-bar/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/restaurant-bar/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "3330 SOUTH SERVICE RD"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "27 Feb 2001",
+      "price_text": "$1,129,807",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "786780 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gary Ceppetelli",
+        "1455 Lakeshore Blvd, Ste 202N",
+        "Burlington, Ontario",
+        "L7S 2J1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1408023 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gary Ceppetelli",
+        "3330 South Service Rd",
+        "Burlington, Ontario",
+        "L7N 3M6"
+      ]
+    },
+    "description_lines": [
+      "Restaurant/Bar"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 157, Lot 1",
+      "",
+      "2.52 acre"
+    ],
+    "arn_text": "24 02 090 905 01000",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,129,807"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "52 / 57",
+      "rt_id": "RT20729"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "3330 SOUTH SERVICE RD",
+    "postcode": "L7N 3M6",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "02/27/2001",
+    "desc": "Restaurant/Bar",
+    "bldg": "",
+    "acreage": "2.52",
+    "consid": "1129807",
+    "cash": "",
+    "debt": "1129807",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "24 02 090 905 01000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "3330 SOUTH SERVICE RD"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "27 Feb 2001",
+    "note": "Related Parties",
+    "description": "Restaurant/Bar",
+    "seller_lines": [
+      "786780 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1408023 Ontario Inc"
+    ],
+    "price_text": "$1,129,807"
+  }
+}

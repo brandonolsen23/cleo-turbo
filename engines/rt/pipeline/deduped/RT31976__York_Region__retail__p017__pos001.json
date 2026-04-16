@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT31976",
+  "source_folder": "York_Region/retail/p017",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31976",
+      "source_folder": "York_Region/retail/p017",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "3235 HWY 7 E",
+        "LEVEL 1, UNITS 20-21"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "02 Oct 2003",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tang Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Tang",
+        "21 Greenwich Ave",
+        "Markham, Ontario",
+        "L3P 7K5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2032056 Ontario Inc     905-883-8213"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Chak-Yeun Cheng",
+        "35 Gardiner Cres",
+        "Richmond Hill, Ontario",
+        "L4B 2G8"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 894",
+      "Level 1, Units 20 & 21"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,150,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "802 / 984",
+      "rt_id": "RT31976"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "3235 HWY 7 E, LEVEL 1, UNITS 20-21",
+    "postcode": "L3R 3P3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "10/02/2003",
+    "desc": "Retail Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1150000",
+    "cash": "1150000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "3235 HWY 7 E",
+      "LEVEL 1, UNITS 20-21"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "02 Oct 2003",
+    "note": "",
+    "description": "Retail Condo",
+    "seller_lines": [
+      "Tang Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "2032056 Ontario Inc"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

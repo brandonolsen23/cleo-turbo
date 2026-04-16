@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT197220",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197220",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "102 TALBOT ST N"
+      ],
+      "city_region": "Essex : Essex County",
+      "date_text": "13 Feb 2026",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "102 Talbot Development Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "19 Barnwood Ct",
+        "North York, Ontario",
+        "M3A 3G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Orchard Group Holdings 2025 Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeremy Miller",
+        "96 Westlawn Dr",
+        "Essex, Ontario",
+        "N8M 1J1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 181 - Colchester,",
+      "Lot 56, Part Lots 55 & 57",
+      "As in Inst No R-1481735",
+      "",
+      "PIN: 75226-0173",
+      "",
+      "0.86 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/13/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8 / 460",
+      "rt_id": "RT197220"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "102 TALBOT ST N",
+    "postcode": "N8M 2C4",
+    "municipality": "Essex",
+    "region": "Essex County",
+    "date": "02/13/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".86",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "75226-0173",
+    "rollno": ""
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "102 TALBOT ST N"
+    ],
+    "city_region": "Essex : Essex County",
+    "date_text": "13 Feb 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "102 Talbot Development Inc"
+    ],
+    "buyer_lines": [
+      "Orchard Group Holdings 2025 Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

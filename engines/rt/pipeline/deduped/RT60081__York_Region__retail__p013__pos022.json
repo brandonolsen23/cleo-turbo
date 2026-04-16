@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT60081",
+  "source_folder": "York_Region/retail/p013",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT60081",
+      "source_folder": "York_Region/retail/p013",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "28 ROYTEC RD",
+        "UNIT 113"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "08 Jan 2008",
+      "price_text": "$550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2157066 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Guilber Aguilar",
+        "28 Roytec Rd, Unit 113",
+        "Woodbridge, Ontario",
+        "L4L 8E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 1 storey; 3,186 sf @ $173",
+      "",
+      "Vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1018",
+      "Level 1, Unit 13"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $550,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Jack G McGee Professional Corp",
+      "principal: $300,000   rate: 7.0% per annum",
+      "registered: 01/18/2008   due: 01/18/2011"
+    ],
+    "broker_lines": [
+      "Royal LePage Your Community Realty: Ed Compagnone, 905-731-2000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "623 / 984",
+      "rt_id": "RT60081"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "28 ROYTEC RD, UNIT 113",
+    "postcode": "L4L 8E4",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "01/08/2008",
+    "desc": "Retail Condo - 1 storey; 3,186 sf @ $173",
+    "bldg": "3,186 sf",
+    "acreage": "",
+    "consid": "550000",
+    "cash": "550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "28 ROYTEC RD",
+      "UNIT 113"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "08 Jan 2008",
+    "note": "",
+    "description": "Retail Condo - 1 storey; 3,186 sf @ $173",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2157066 Ontario Inc"
+    ],
+    "price_text": "$550,000"
+  }
+}

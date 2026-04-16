@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT21779",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21779",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "1180 OXFORD ST E"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "20 Jun 2001",
+      "price_text": "$525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "806024 Ontario Inc     416-367-0136"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Paul Goldstein",
+        "Melvyn D. Eisen",
+        "70 Bond St, Ste 200",
+        "Toronto, Ontario",
+        "M5B 1X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1236595 Ontario Inc     519-457-7703"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Fausto Boniferro",
+        "Old Tyme Donuts",
+        "1180 Oxford St E",
+        "London, Ontario",
+        "N5Y 3M1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 6,000 sf @ $88"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 9",
+      "As in Inst No 825597",
+      "",
+      "0.58 acre"
+    ],
+    "arn_text": "39 36 030 440 17200",
+    "consideration_lines": [
+      "cash: $525,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT217/RT21779/photo.jpg"
+    },
+    "footer": {
+      "page_position": "615 / 686",
+      "rt_id": "RT21779"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "1180 OXFORD ST E",
+    "postcode": "N5Y 3M1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "06/20/2001",
+    "desc": "Retail Plaza - 1 storey; 6,000 sf @ $88",
+    "bldg": "6,000 sf",
+    "acreage": ".58",
+    "consid": "525000",
+    "cash": "525000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "39 36 030 440 17200"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "1180 OXFORD ST E"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "20 Jun 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 6,000 sf @ $88",
+    "seller_lines": [
+      "806024 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1236595 Ontario Inc"
+    ],
+    "price_text": "$525,000"
+  }
+}

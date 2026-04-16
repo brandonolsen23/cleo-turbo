@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT194118",
+  "source_folder": "Bruce/multifamily/p001",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194118",
+      "source_folder": "Bruce/multifamily/p001",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/multifamily/p001/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "325 LAMBTON ST"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "02 Sep 2025",
+      "price_text": "$8,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Samdoon Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Dooley Place",
+        "Guelph, Ontario",
+        "N1G 4M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Nextgen Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jason Kirkconnel",
+        "500 Sideroad 15 N",
+        "Kincardine, Ontario",
+        "N2Z 2X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-2259, Parts 1-4",
+      "",
+      "PIN: 33309-0204",
+      "",
+      "1.47 acre"
+    ],
+    "arn_text": "41 08 220 003 03200",
+    "consideration_lines": [
+      "cash: $8,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Meridian Credit Union Ltd",
+      "principal: $7,167,421   rate: 25.0% per annum.",
+      "registered: 09/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5 / 37",
+      "rt_id": "RT194118"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "325 LAMBTON ST",
+    "postcode": "N2Z 0E3",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "09/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.47",
+    "consid": "8100000",
+    "cash": "8100000",
+    "debt": "",
+    "note": "",
+    "pin": "33309-0204",
+    "rollno": "41 08 220 003 03200"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "325 LAMBTON ST"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "02 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Samdoon Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Nextgen Developments Inc"
+    ],
+    "price_text": "$8,100,000"
+  }
+}

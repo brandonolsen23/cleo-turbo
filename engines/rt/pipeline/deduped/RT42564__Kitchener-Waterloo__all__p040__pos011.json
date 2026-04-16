@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT42564",
+  "source_folder": "Kitchener-Waterloo/all/p040",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42564",
+      "source_folder": "Kitchener-Waterloo/all/p040",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p040/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 8",
+        "LOTS 1 & 2"
+      ],
+      "city_region": "Central Huron : Huron County",
+      "date_text": "17 Jun 2005",
+      "price_text": "$702,500",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Cantelon Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Melvin Cantelon",
+        "RR 4",
+        "Seaforth, Ontario",
+        "N0M 1W0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Lots 1 & 2",
+      "Except:",
+      "Plan 22R-2083, Parts 17-20",
+      "Plan 22R-3847, Part 1",
+      "As in Inst No LT-10046"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $702,400",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $3,500,000   rate: Prime plus 2.0% per annum",
+      "registered: 06/17/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1962 / 2093",
+      "rt_id": "RT42564"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "CONC 8, LOTS 1 & 2",
+    "postcode": "",
+    "municipality": "Central Huron",
+    "region": "Huron County",
+    "date": "06/17/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "702500",
+    "cash": "",
+    "debt": "702400",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "CONC 8",
+      "LOTS 1 & 2"
+    ],
+    "city_region": "Central Huron : Huron County",
+    "date_text": "17 Jun 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Cantelon Farms Ltd"
+    ],
+    "price_text": "$702,500"
+  }
+}

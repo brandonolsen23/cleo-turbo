@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT188518",
+  "source_folder": "Essex_County/retail/p002",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188518",
+      "source_folder": "Essex_County/retail/p002",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p002/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "251 SIMCOE ST"
+      ],
+      "city_region": "Amherstburg : Essex County",
+      "date_text": "12 Nov 2024",
+      "price_text": "$2,500,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1243470 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "200 St Arnaud St",
+        "Amherstburg, Ontario",
+        "N9V 2P3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000899556 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Justin Hunt",
+        "202-22428 Jefferies Rd, Bldg 200",
+        "Komoka, Ontario",
+        "N0L 1R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Malden, Part Lot 3",
+      "Plan 12R-19693, Parts 1-6",
+      "",
+      "PIN: 79565-0184",
+      "",
+      "2.39 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "65 / 460",
+      "rt_id": "RT188518"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "251 SIMCOE ST",
+    "postcode": "N9V 1M5",
+    "municipality": "Amherstburg",
+    "region": "Essex County",
+    "date": "11/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.39",
+    "consid": "2500000",
+    "cash": "2500000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "79565-0184",
+    "rollno": ""
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "251 SIMCOE ST"
+    ],
+    "city_region": "Amherstburg : Essex County",
+    "date_text": "12 Nov 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1243470 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000899556 Ontario Inc"
+    ],
+    "price_text": "$2,500,000"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT69066",
+  "source_folder": "Algoma/retail/p001",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT69066",
+      "source_folder": "Algoma/retail/p001",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "695 - 727 GREAT NORTHERN RD"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "30 Jul 2009",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "HVM Holdings Inc     519-352-9629"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Henry Van Minnen",
+        "6954 Grande River Line, RR 1",
+        "Pain Court, Ontario",
+        "N0P 1Z0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "TSC Store - 1 storey; 31,391 sf @ $111",
+      "",
+      "Single tenant (leased)"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1R-9453, Parts 8-11",
+      "",
+      "PIN: 31561-0052",
+      "",
+      "2.78 acre"
+    ],
+    "arn_text": "57 61 030 062 04103",
+    "consideration_lines": [
+      "cash: $1,459,977     assumed/vtb debt: $2,040,023",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $2,100,000   rate: 5.657% per annum",
+      "registered: 04/17/2008   due: 05/01/2018"
+    ],
+    "broker_lines": [
+      "Avison Young: Kelly Avison, 416-955-0000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "27 / 29",
+      "rt_id": "RT69066"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "695 - 727 GREAT NORTHERN RD",
+    "postcode": "P6B 5A1",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "07/30/2009",
+    "desc": "TSC Store - 1 storey; 31,391 sf @ $111",
+    "bldg": "31,391 sf",
+    "acreage": "2.78",
+    "consid": "3500000",
+    "cash": "1459977",
+    "debt": "2040023",
+    "note": "",
+    "pin": "31561-0052",
+    "rollno": "57 61 030 062 04103"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "695 - 727 GREAT NORTHERN RD"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "30 Jul 2009",
+    "note": "",
+    "description": "TSC Store - 1 storey; 31,391 sf @ $111",
+    "seller_lines": [
+      "HVM Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

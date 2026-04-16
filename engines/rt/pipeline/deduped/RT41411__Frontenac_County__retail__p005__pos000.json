@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT41411",
+  "source_folder": "Frontenac_County/retail/p005",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41411",
+      "source_folder": "Frontenac_County/retail/p005",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p005/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "83 ABERFOYLE RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "11 Apr 2005",
+      "price_text": "$590,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1493166 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lisa Kim",
+        "962 Country Rd 3",
+        "Belleville, Ontario",
+        "K8N 4Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1658, Block 5",
+      "",
+      "0.76 acre"
+    ],
+    "arn_text": "10 11 060 080 02500",
+    "consideration_lines": [
+      "cash: $590,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT414/RT41411/photo.jpg"
+    },
+    "footer": {
+      "page_position": "201 / 236",
+      "rt_id": "RT41411"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "83 ABERFOYLE RD",
+    "postcode": "K7M 7B5",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "04/11/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".76",
+    "consid": "590000",
+    "cash": "590000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "10 11 060 080 02500"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "83 ABERFOYLE RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "11 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1493166 Ontario Ltd"
+    ],
+    "price_text": "$590,000"
+  }
+}

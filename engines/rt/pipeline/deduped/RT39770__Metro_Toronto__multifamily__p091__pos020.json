@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT39770",
+  "source_folder": "Metro_Toronto/multifamily/p091",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39770",
+      "source_folder": "Metro_Toronto/multifamily/p091",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p091/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "882 EGLINTON AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Dec 2004",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Joel Wasser",
+        "Harvey Stork",
+        "AS & S Ltd",
+        "Arnold Wasser",
+        "Howard Ungerman     416-510-1888"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Swanick & Associates",
+        "225 Duncan Mill Rd, Ste 101",
+        "Toronto, Ontario",
+        "M3B 3K9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail/Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1850, Part Lot 15",
+      "As in Inst No CA-122366",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 113 090 01900",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT397/RT39770/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4521 / 6031",
+      "rt_id": "RT39770"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "882 EGLINTON AVE W",
+    "postcode": "M6C 2B6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/02/2004",
+    "desc": "Retail/Res Bldg",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 113 090 01900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "882 EGLINTON AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Dec 2004",
+    "note": "",
+    "description": "Retail/Res Bldg",
+    "seller_lines": [
+      "Joel Wasser",
+      "Harvey Stork",
+      "AS & S Ltd",
+      "Arnold Wasser",
+      "Howard Ungerman"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$500,000"
+  }
+}

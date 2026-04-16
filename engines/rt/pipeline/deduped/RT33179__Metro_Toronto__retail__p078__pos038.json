@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT33179",
+  "source_folder": "Metro_Toronto/retail/p078",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33179",
+      "source_folder": "Metro_Toronto/retail/p078",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p078/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "1018 PAPE AVE"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "23 Dec 2003",
+      "price_text": "$585,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1248306 Ontario Ltd     416-492-5229"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bhaloo Zahir",
+        "Irving Wolkowicz, QC",
+        "2201 Warden Ave, Ste 202",
+        "Toronto, Ontario",
+        "M1T 1V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dr Jamal Aboujamra Inc     416-291-0431"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jamal Aboujamra",
+        "168 Bonis Ave, Ste 1510",
+        "Toronto, Ontario",
+        "M1T 3V6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2,700 sf store @ $217"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-39",
+      "Part Lots 128 & 129, S/S Bee St",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 06 032 250 03800",
+    "consideration_lines": [
+      "cash: $585,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT331/RT33179/air1.jpg",
+        "/assets/files/RT3/RT331/RT33179/air2.jpg",
+        "/assets/files/RT3/RT331/RT33179/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT331/RT33179/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3889 / 4952",
+      "rt_id": "RT33179"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "1018 PAPE AVE",
+    "postcode": "M4K 3V9",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "12/23/2003",
+    "desc": "Retail Bldg - 1 storey; 2,700 sf store @ $217",
+    "bldg": "2,700 sf",
+    "acreage": ".06",
+    "consid": "585000",
+    "cash": "585000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 032 250 03800"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "1018 PAPE AVE"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "23 Dec 2003",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2,700 sf store @ $217",
+    "seller_lines": [
+      "1248306 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Dr Jamal Aboujamra Inc"
+    ],
+    "price_text": "$585,000"
+  }
+}

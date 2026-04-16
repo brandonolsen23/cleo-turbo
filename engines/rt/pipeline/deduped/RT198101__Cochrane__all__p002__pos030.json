@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT198101",
+  "source_folder": "Cochrane/all/p002",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198101",
+      "source_folder": "Cochrane/all/p002",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p002/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "22 ANTARES DR",
+        "UNIT L"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "30 Jan 2026",
+      "price_text": "$834,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2748378 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "108 Mill St",
+        "Hawkestone, Ontario",
+        "L0L 1T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Net Guardian Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Koziel",
+        "22 Antares Dr, Unit L",
+        "Nepean, Ontario",
+        "K2E 7Z6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 411",
+      "Level 1, Unit 12",
+      "",
+      "PIN: 15411-0012"
+    ],
+    "arn_text": "06 12 000 505 21062",
+    "consideration_lines": [
+      "cash: $834,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $835,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/30/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "81 / 10920",
+      "rt_id": "RT198101"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "22 ANTARES DR, UNIT L",
+    "postcode": "K2E 7Z6",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "01/30/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "834000",
+    "cash": "834000",
+    "debt": "",
+    "note": "",
+    "pin": "15411-0012",
+    "rollno": "06 12 000 505 21062"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "22 ANTARES DR",
+      "UNIT L"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "30 Jan 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2748378 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Net Guardian Inc"
+    ],
+    "price_text": "$834,000"
+  }
+}

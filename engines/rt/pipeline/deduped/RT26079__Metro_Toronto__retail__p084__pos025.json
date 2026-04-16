@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT26079",
+  "source_folder": "Metro_Toronto/retail/p084",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26079",
+      "source_folder": "Metro_Toronto/retail/p084",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p084/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "247 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "19 Jul 2002",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Assurance Co of Canada     416-408-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Luke Zych",
+        "225 King St W, 11th Flr",
+        "Toronto, Ontario",
+        "M5V 3C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1534865 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Orlando Cardemil",
+        "247 Yonge St",
+        "Toronto, Ontario",
+        "M5B 1N8"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey;  4,200 sf over 6,230 store",
+      "",
+      "Purchased by tenant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 22A, Lot 9, E/S Yonge St",
+      "As in Inst No CA-67051",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 066 220 00700",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT260/RT26079/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4176 / 4952",
+      "rt_id": "RT26079"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "247 YONGE ST",
+    "postcode": "M5B 1N8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "07/19/2002",
+    "desc": "Retail Bldg - 2 storey;  4,200 sf over 6,230 store",
+    "bldg": "",
+    "acreage": ".14",
+    "consid": "4000000",
+    "cash": "4000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 066 220 00700"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "247 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "19 Jul 2002",
+    "note": "",
+    "description": "Retail Bldg - 2 storey;  4,200 sf over 6,230 store",
+    "seller_lines": [
+      "Sun Life Assurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "1534865 Ontario Inc"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

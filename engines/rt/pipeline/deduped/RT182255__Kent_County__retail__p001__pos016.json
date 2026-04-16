@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT182255",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT182255",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "22318 CHARING CROSS RD",
+        "22324 CHARING CROSS RD"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "20 Dec 2023",
+      "price_text": "$1,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2275757 Ontario Inc",
+        "Brian O'Rourke",
+        "Beverley O'Rourke"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "44 Lacroix St",
+        "Chatham, Ontario",
+        "N7M 2T6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000664870 Ontario Inc",
+        "Kunal & Shelly Batra"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Batra Kunal",
+        "529 Barker Pkwy",
+        "Thorold, Ontario",
+        "L2V 0K2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - EB, Part Lot 24",
+      "Plan 24R-9293, Parts 3 & 4",
+      "Plan 24R-3892, Part 1",
+      "",
+      "PIN: 00878-0235 +",
+      "",
+      "1.58 acre"
+    ],
+    "arn_text": "36 50 110 011 44400",
+    "consideration_lines": [
+      "cash: $1,600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 77",
+      "rt_id": "RT182255"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "22318 CHARING CROSS RD, 22324 CHARING CROSS RD",
+    "postcode": "N7M 5H8",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "12/20/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.58",
+    "consid": "1600000",
+    "cash": "1600000",
+    "debt": "",
+    "note": "",
+    "pin": "00878-0235+",
+    "rollno": "36 50 110 011 44400"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "22318 CHARING CROSS RD",
+      "22324 CHARING CROSS RD"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "20 Dec 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2275757 Ontario Inc",
+      "Brian O'Rourke",
+      "Beverley O'Rourke"
+    ],
+    "buyer_lines": [
+      "1000664870 Ontario Inc",
+      "Kunal & Shelly Batra"
+    ],
+    "price_text": "$1,600,000"
+  }
+}

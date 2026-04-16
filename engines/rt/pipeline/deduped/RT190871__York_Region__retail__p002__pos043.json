@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT190871",
+  "source_folder": "York_Region/retail/p002",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190871",
+      "source_folder": "York_Region/retail/p002",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "9390 WOODBINE AVE",
+        "UNITS 2R1 & 2R2"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "13 Mar 2025",
+      "price_text": "$1,180,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5g 1R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001025105 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yuk Chan",
+        "5021 Sheppard Ave E, Unit 4",
+        "Scarborough, Ontario",
+        "M1S 4R6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1415,",
+      "Level 2, Units 105 & 106",
+      "",
+      "PIN: 29946-0449 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,180,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $885,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/13/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190871/0323_123325.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190871/0323_123342.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190871/0323_123907.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190871/0323_123909.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190871/0323_123910.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1908/RT190871/0323_124005.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "94 / 984",
+      "rt_id": "RT190871"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "9390 WOODBINE AVE, UNITS 2R1 & 2R2",
+    "postcode": "L6C 0M5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "03/13/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1180000",
+    "cash": "1180000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "29946-0449+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "9390 WOODBINE AVE",
+      "UNITS 2R1 & 2R2"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "13 Mar 2025",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1001025105 Ontario Ltd"
+    ],
+    "price_text": "$1,180,000"
+  }
+}

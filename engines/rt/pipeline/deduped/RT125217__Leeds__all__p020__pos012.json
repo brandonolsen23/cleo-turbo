@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT125217",
+  "source_folder": "Leeds/all/p020",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT125217",
+      "source_folder": "Leeds/all/p020",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p020/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 3 - NER",
+        "PART LOT 10"
+      ],
+      "city_region": "Warwick : Lambton",
+      "date_text": "03 Apr 2017",
+      "price_text": "$905,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "J-Van Acres Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeff Van Aert",
+        "6574 Arkona Rd, RR 8",
+        "Watford, Ontario",
+        "N0M 2S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - NER, Part Lot 10",
+      "As in Inst No L-703197",
+      "",
+      "PIN: 43060-0062",
+      "",
+      "51.23 acre"
+    ],
+    "arn_text": "38 41 041 004 04200",
+    "consideration_lines": [
+      "cash: $905,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $1,500,000   rate: 18.0% per annum.",
+      "registered: 04/03/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1252/RT125217/air1.jpg",
+        "/assets/files/RT12/RT1252/RT125217/air2.jpg",
+        "/assets/files/RT12/RT1252/RT125217/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "963 / 1916",
+      "rt_id": "RT125217"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "CONC 3 - NER, PART LOT 10",
+    "postcode": "",
+    "municipality": "Warwick",
+    "region": "Lambton",
+    "date": "04/03/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "51.23",
+    "consid": "905000",
+    "cash": "905000",
+    "debt": "",
+    "note": "",
+    "pin": "43060-0062",
+    "rollno": "38 41 041 004 04200"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "CONC 3 - NER",
+      "PART LOT 10"
+    ],
+    "city_region": "Warwick : Lambton",
+    "date_text": "03 Apr 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "J-Van Acres Ltd"
+    ],
+    "price_text": "$905,000"
+  }
+}

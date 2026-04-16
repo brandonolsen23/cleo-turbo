@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT197430",
+  "source_folder": "Metro_Toronto/multifamily/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197430",
+      "source_folder": "Metro_Toronto/multifamily/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "6030 BATHURST ST"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "25 Feb 2026",
+      "price_text": "$4,958,000",
+      "note": "% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "TC Core GP Inc     888-949-8439"
+      ],
+      "trade_name": "Hazelview Investments",
+      "contact_lines": [
+        "1133 Yonge St, 4th Flr",
+        "Toronto, Ontario",
+        "M4T 2Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "16509878 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Croll",
+        "300 Park Centre",
+        "1230 Blackfoot Dr",
+        "Regina, SK",
+        "S4S 7G4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-20711,",
+      "Parts 1-9, 15-23 & 32",
+      "",
+      "PIN: 10167-0259",
+      "",
+      "7.89 acre"
+    ],
+    "arn_text": "19 08 053 600 02200",
+    "consideration_lines": [
+      "cash: $2,162,811     assumed/vtb debt: $2,795,189",
+      "",
+      "chargee: TC Core GP Inc",
+      "principal: $62,251,642   rate: Prime plus 10.0% per annum.",
+      "registered: 11/25/2015   due: on demand",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $56,140,321   rate: 4.0770% per annum.",
+      "registered: 06/05/2025   due: 09/01/2035",
+      "",
+      "chargee: TCR 2011 Equities Inc",
+      "TC Green GP Inc",
+      "principal: $3,276,402   rate: Prime plus 10.0% per annum.",
+      "registered: 11/25/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 6031",
+      "rt_id": "RT197430"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "6030 BATHURST ST",
+    "postcode": "M2R 1Z9",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "02/25/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "7.89",
+    "consid": "4958000",
+    "cash": "2162811",
+    "debt": "2795189",
+    "note": "% Interest",
+    "pin": "10167-0259",
+    "rollno": "19 08 053 600 02200"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "6030 BATHURST ST"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "25 Feb 2026",
+    "note": "% Interest",
+    "description": "",
+    "seller_lines": [
+      "TC Core GP Inc"
+    ],
+    "buyer_lines": [
+      "16509878 Canada Inc"
+    ],
+    "price_text": "$4,958,000"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "rt_id": "RT126333",
+  "source_folder": "Metro_Toronto/retail/p028",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT126333",
+      "source_folder": "Metro_Toronto/retail/p028",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p028/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "126 CUMBERLAND ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "29 Jun 2017",
+      "price_text": "$5,600,000",
+      "note": "Sale Leaseback"
+    },
+    "transferor": {
+      "party_lines": [
+        "2331061 Ontario Inc     416-975-0977"
+      ],
+      "trade_name": "World Eyewear",
+      "contact_lines": [
+        "Pres: Shahid Ahmad",
+        "126 Cumberland St",
+        "Toronto, Ontario",
+        "M5R 1A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2442604 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dr Elbert Murrell",
+        "110 Cumberland St, Unit 1",
+        "Suite 343",
+        "Toronto, Ontario",
+        "M5R 1A6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 3 storey; 2,000 sf @ $2,800",
+      "",
+      "2,000 sf with approx 500 sf basement",
+      "",
+      "Leased back to the vendor.",
+      "",
+      "Purchased as an investment.",
+      "",
+      "Last transferred in December 2012 for $1,400,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 69,",
+      "Part Lot 13, N/S Cumberland St",
+      "As in Inst No CA-343851",
+      "",
+      "PIN: 21197-0114",
+      "",
+      "N side Cumberland St, W of Bellair St",
+      "",
+      "0.02 acre"
+    ],
+    "arn_text": "19 04 052 060 04100",
+    "consideration_lines": [
+      "cash: $5,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 2331061 Ontario Inc",
+      "principal: $3,000,000   rate: 10.0% per annum.",
+      "registered: 06/29/2017   due: 07/01/2019",
+      "",
+      "chargee: Raphael Developments Inc",
+      "principal: $1,800,000",
+      "registered: 06/29/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1263/RT126333/0709_061128.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1263/RT126333/0709_061133.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1263/RT126333/0709_061141.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1263/RT126333/0709_061155.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1351 / 4952",
+      "rt_id": "RT126333"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "126 CUMBERLAND ST",
+    "postcode": "M5R 1A6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/29/2017",
+    "desc": "Retail Bldg: 3 storey; 2,000 sf @ $2,800",
+    "bldg": "2,000 sf",
+    "acreage": ".02",
+    "consid": "5600000",
+    "cash": "5600000",
+    "debt": "",
+    "note": "Sale Leaseback",
+    "pin": "21197-0114",
+    "rollno": "19 04 052 060 04100"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "126 CUMBERLAND ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "29 Jun 2017",
+    "note": "Sale Leaseback",
+    "description": "Retail Bldg: 3 storey; 2,000 sf @ $2,800",
+    "seller_lines": [
+      "2331061 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2442604 Ontario Ltd"
+    ],
+    "price_text": "$5,600,000"
+  }
+}

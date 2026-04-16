@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT34567",
+  "source_folder": "Peel_Region/industrial/p061",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34567",
+      "source_folder": "Peel_Region/industrial/p061",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/industrial/p061/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "1783 MATTAWA AVE"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "09 Mar 2004",
+      "price_text": "$669,664",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "767236 Ontario Ltd",
+        "1536174 Ontario inc     416-224-2400"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Steve Kovacevic",
+        "Levine Sherkin Boussidan",
+        "4211 Yonge St, Ste 200",
+        "Toronto, Ontario",
+        "M2P 2A9"
+      ]
+    },
+    "description_lines": [
+      "Industrial Bldg - 13 ft clr; 19,579 sf @ $34"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 669, Lot 10",
+      "",
+      "1.07 acre"
+    ],
+    "arn_text": "21 05 070 053 17200",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT345/RT34567/air1.jpg",
+        "/assets/files/RT3/RT345/RT34567/air2.jpg",
+        "/assets/files/RT3/RT345/RT34567/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT345/RT34567/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3003 / 3793",
+      "rt_id": "RT34567"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "1783 MATTAWA AVE",
+    "postcode": "L4X 1K5",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "03/09/2004",
+    "desc": "Industrial Bldg - 13 ft clr; 19,579 sf @ $34",
+    "bldg": "19,579 sf",
+    "acreage": "1.07",
+    "consid": "669664",
+    "cash": "",
+    "debt": "",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "21 05 070 053 17200"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "1783 MATTAWA AVE"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "09 Mar 2004",
+    "note": "Foreclosure",
+    "description": "Industrial Bldg - 13 ft clr; 19,579 sf @ $34",
+    "seller_lines": [
+      "Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "767236 Ontario Ltd",
+      "1536174 Ontario inc"
+    ],
+    "price_text": "$669,664"
+  }
+}

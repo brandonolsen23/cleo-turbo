@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT27531",
+  "source_folder": "Metro_Toronto/multifamily/p101",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT27531",
+      "source_folder": "Metro_Toronto/multifamily/p101",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p101/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "310 LONSDALE RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "31 Oct 2002",
+      "price_text": "$850,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Jenny & Hoytson Wong"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "5 Breanna Ct",
+        "Willowdale, Ontario",
+        "M2H 3N8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Russdale Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hoyston Wong",
+        "5 Breanna Ct",
+        "Willowdale, Ontario",
+        "M5H 3N8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 861, Lot 12",
+      "As in Inst No CA-749555"
+    ],
+    "arn_text": "19 04 111 270 00400",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5021 / 6031",
+      "rt_id": "RT27531"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "310 LONSDALE RD",
+    "postcode": "M4V 1X4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/31/2002",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "19 04 111 270 00400"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "310 LONSDALE RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "31 Oct 2002",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Jenny & Hoytson Wong"
+    ],
+    "buyer_lines": [
+      "Russdale Ltd"
+    ],
+    "price_text": "$850,000"
+  }
+}

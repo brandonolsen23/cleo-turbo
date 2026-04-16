@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT195100",
+  "source_folder": "Metro_Toronto/retail/p003",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195100",
+      "source_folder": "Metro_Toronto/retail/p003",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p003/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 ELLESMERE RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "30 Oct 2025",
+      "price_text": "$8,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Golden Plaza Co Corporation"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 10 Silverdale Cres",
+        "Toronto, Ontario",
+        "M3A 3H1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001355145 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nona Birjandy",
+        "395 Connaught Ave",
+        "North York, Ontario",
+        "M2R 2M2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4440 - Scarborough, Block R",
+      "",
+      "PIN: 06151-0279",
+      "",
+      "0.71 acre"
+    ],
+    "arn_text": "19 01 033 020 01800",
+    "consideration_lines": [
+      "cash: $7,600,000     assumed/vtb debt: $0",
+      "other: $700,000",
+      "",
+      "chargee: Keb Hanna Bank Canada",
+      "principal: $5,500,000   rate: 5.30% per annum.",
+      "registered: 10/30/2025   due: 10/29/2028",
+      "",
+      "chargee: Bennyparks Services Inc",
+      "principal: $800,000   rate: 10.0% per annum.",
+      "registered: 10/30/2025   due: 10/28/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1951/RT195100/1116_120238.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1951/RT195100/1116_120255.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1951/RT195100/1116_120256.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1951/RT195100/1116_120257.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1951/RT195100/1116_120327.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "106 / 4952",
+      "rt_id": "RT195100"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "80 ELLESMERE RD",
+    "postcode": "M1R 4C2",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "10/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".71",
+    "consid": "8300000",
+    "cash": "7600000",
+    "debt": "",
+    "note": "",
+    "pin": "06151-0279",
+    "rollno": "19 01 033 020 01800"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "80 ELLESMERE RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "30 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Golden Plaza Co Corporation"
+    ],
+    "buyer_lines": [
+      "1001355145 Ontario Inc"
+    ],
+    "price_text": "$8,300,000"
+  }
+}

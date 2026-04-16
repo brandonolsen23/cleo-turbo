@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT64949",
+  "source_folder": "York_Region/retail/p012",
+  "position": 46,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64949",
+      "source_folder": "York_Region/retail/p012",
+      "position": 46,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_046.html"
+    },
+    "header": {
+      "address_lines": [
+        "357 MAIN ST"
+      ],
+      "city_region": "King : York Region",
+      "date_text": "03 Nov 2008",
+      "price_text": "$594,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Elle Mortgage Corp     416-961-3809"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Terry Walman",
+        "1240 Bay St, Ste 202",
+        "Toronto, Ontario",
+        "M5R 2A7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 6,000 sf @ $99",
+      "",
+      "3,200 sf leased by one tenant",
+      "2,800 sf vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 87, Part Lot 43",
+      "As in Inst No R-554540",
+      "",
+      "PIN: 03396-0110",
+      "",
+      "0.33 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $594,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Royal LePage York North Realty: Peter Burden, 905-836-1212"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT649/RT64949/1120_152221.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT649/RT64949/1120_152327.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT649/RT64949/1120_152409.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT649/RT64949/air1.jpg",
+        "/assets/files/RT6/RT649/RT64949/air2.jpg",
+        "/assets/files/RT6/RT649/RT64949/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "597 / 984",
+      "rt_id": "RT64949"
+    }
+  },
+  "export": {
+    "position": 46,
+    "address": "357 MAIN ST",
+    "postcode": "",
+    "municipality": "King",
+    "region": "York Region",
+    "date": "11/03/2008",
+    "desc": "Retail Bldg - 2 storey; 6,000 sf @ $99",
+    "bldg": "6,000 sf",
+    "acreage": ".33",
+    "consid": "594000",
+    "cash": "594000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "03396-0110",
+    "rollno": ""
+  },
+  "results": {
+    "position": 46,
+    "address_lines": [
+      "357 MAIN ST"
+    ],
+    "city_region": "King : York Region",
+    "date_text": "03 Nov 2008",
+    "note": "Power of Sale",
+    "description": "Retail Bldg - 2 storey; 6,000 sf @ $99",
+    "seller_lines": [
+      "Elle Mortgage Corp"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$594,000"
+  }
+}

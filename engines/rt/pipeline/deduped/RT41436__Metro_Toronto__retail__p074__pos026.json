@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT41436",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41436",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "550 ST CLAIR AVE W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "18 Apr 2005",
+      "price_text": "$1,925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2014763 Ontario Ltd     416-512-0815"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Terence Chan",
+        "14 Tollerton Ave",
+        "Toronto, Ontario",
+        "M2K 2G8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Chauhan Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chander Chauhan",
+        "39 Richard Person Dr",
+        "Markham, Ontario",
+        "L6C 1B1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-3688, Part 1",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 04 053 750 00750",
+    "consideration_lines": [
+      "cash: $1,925,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $1,200,000   rate: Prime plus 3.0% per annum",
+      "registered: 04/18/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT414/RT41436/air1.jpg",
+        "/assets/files/RT4/RT414/RT41436/air2.jpg",
+        "/assets/files/RT4/RT414/RT41436/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT414/RT41436/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3677 / 4952",
+      "rt_id": "RT41436"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "550 ST CLAIR AVE W",
+    "postcode": "M6C 1A5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/18/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".25",
+    "consid": "1925000",
+    "cash": "1925000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 053 750 00750"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "550 ST CLAIR AVE W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "18 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2014763 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Chauhan Properties Inc"
+    ],
+    "price_text": "$1,925,000"
+  }
+}

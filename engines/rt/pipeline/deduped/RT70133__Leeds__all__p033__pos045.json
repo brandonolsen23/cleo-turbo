@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT70133",
+  "source_folder": "Leeds/all/p033",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT70133",
+      "source_folder": "Leeds/all/p033",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p033/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "7837 ARKONA RD"
+      ],
+      "city_region": "Bosanquet : Lambton",
+      "date_text": "29 Dec 2009",
+      "price_text": "$650,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gordon's Roxburgh Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Gordon",
+        "7780 Gordon Rd, RR 2",
+        "Thedford, Ontario",
+        "N0M 2N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 3",
+      "As in Inst No L-879364",
+      "Except Inst No L-832418",
+      "",
+      "PIN: 43045-0065",
+      "",
+      "100.08 acre"
+    ],
+    "arn_text": "38 45 460 030 08600",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $650,000",
+      "",
+      "chargee: William & Rebecca Gordon",
+      "principal: $314,650   rate: CIBC prime plus 2.0% per annum",
+      "registered: 12/29/2009   due: on demand",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $7,500,000   rate: 18.0% per annum",
+      "registered: 05/29/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT701/RT70133/air1.jpg",
+        "/assets/files/RT7/RT701/RT70133/air2.jpg",
+        "/assets/files/RT7/RT701/RT70133/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1646 / 1916",
+      "rt_id": "RT70133"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "7837 ARKONA RD",
+    "postcode": "N0M 2N0",
+    "municipality": "Bosanquet",
+    "region": "Lambton",
+    "date": "12/29/2009",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.08",
+    "consid": "650000",
+    "cash": "",
+    "debt": "650000",
+    "note": "Related Parties",
+    "pin": "43045-0065",
+    "rollno": "38 45 460 030 08600"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "7837 ARKONA RD"
+    ],
+    "city_region": "Bosanquet : Lambton",
+    "date_text": "29 Dec 2009",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gordon's Roxburgh Farms Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

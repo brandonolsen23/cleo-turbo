@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT195304",
+  "source_folder": "Simcoe_County/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195304",
+      "source_folder": "Simcoe_County/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "291 MIDLAND AVE"
+      ],
+      "city_region": "Midland : Simcoe County",
+      "date_text": "03 Oct 2025",
+      "price_text": "$1,665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Legion Heights Midland Inc     905-851-5565"
+      ],
+      "trade_name": "TriLend",
+      "contact_lines": [
+        "c/o Bryce Coates",
+        "8830 Jane St",
+        "Concord, Ontario",
+        "L4K 2M9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Quagmire Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Rice",
+        "468 Wellington St W, Unit 501",
+        "Toronto, Ontario",
+        "M5V 1E3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 169A - Midland",
+      "Lots 3 & 4, E/S Midland Ave",
+      "",
+      "PIN: 58467-0116",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "43 74 020 003 11100",
+    "consideration_lines": [
+      "cash: $1,665,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195304/1220_150314.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195304/1220_150318.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195304/1220_150406.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1953/RT195304/1220_150408.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 712",
+      "rt_id": "RT195304"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "291 MIDLAND AVE",
+    "postcode": "L4R 3K5",
+    "municipality": "Midland",
+    "region": "Simcoe County",
+    "date": "10/03/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "1665000",
+    "cash": "1665000",
+    "debt": "",
+    "note": "",
+    "pin": "58467-0116",
+    "rollno": "43 74 020 003 11100"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "291 MIDLAND AVE"
+    ],
+    "city_region": "Midland : Simcoe County",
+    "date_text": "03 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Legion Heights Midland Inc"
+    ],
+    "buyer_lines": [
+      "Quagmire Holdings Ltd"
+    ],
+    "price_text": "$1,665,000"
+  }
+}

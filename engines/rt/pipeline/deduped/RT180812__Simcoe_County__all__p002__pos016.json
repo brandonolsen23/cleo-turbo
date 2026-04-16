@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT180812",
+  "source_folder": "Simcoe_County/all/p002",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180812",
+      "source_folder": "Simcoe_County/all/p002",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/all/p002/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "123 WINTERBERRY LANE"
+      ],
+      "city_region": "Seguin : Parry Sound",
+      "date_text": "11 Oct 2023",
+      "price_text": "$5,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "123 Winterberry Landco Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "130B Farnham Ave",
+        "Toronto, Ontario",
+        "M4V 1H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Humphrey, Part Lot 25",
+      "Plan RD-282, Part 1",
+      "Plan 42R-4276, Part 4",
+      "Together with:",
+      "Inst No RO-175884",
+      "",
+      "PIN: 52194-0385",
+      "",
+      "16.23 acre"
+    ],
+    "arn_text": "49 03 010 001 16401",
+    "consideration_lines": [
+      "cash: $5,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1808/RT180812/air1.jpg",
+        "/assets/files/RT18/RT1808/RT180812/air2.jpg",
+        "/assets/files/RT18/RT1808/RT180812/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "67 / 501",
+      "rt_id": "RT180812"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "123 WINTERBERRY LANE",
+    "postcode": "P0C 1J0",
+    "municipality": "Seguin",
+    "region": "Parry Sound",
+    "date": "10/11/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "16.23",
+    "consid": "5200000",
+    "cash": "5200000",
+    "debt": "",
+    "note": "",
+    "pin": "52194-0385",
+    "rollno": "49 03 010 001 16401"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "123 WINTERBERRY LANE"
+    ],
+    "city_region": "Seguin : Parry Sound",
+    "date_text": "11 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "123 Winterberry Landco Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$5,200,000"
+  }
+}

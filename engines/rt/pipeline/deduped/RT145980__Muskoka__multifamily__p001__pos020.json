@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT145980",
+  "source_folder": "Muskoka/multifamily/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT145980",
+      "source_folder": "Muskoka/multifamily/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/multifamily/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "129 ALICE ST"
+      ],
+      "city_region": "Bracebridge : Muskoka",
+      "date_text": "16 Sep 2019",
+      "price_text": "$2,273,845",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1664995 Ontario Inc     705-645-6837"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Benjamin Tubman",
+        "c/o 200 Woodchester Ave",
+        "Bracebridge, Ontario",
+        "P1L 1H8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2712131 Ontario Inc     905-822-6900"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Matthew Regan",
+        "c/o Jerald W MacKenzie",
+        "170 Attwell Dr, Ste 630",
+        "Toronto, Ontario",
+        "M9W 5Z5"
+      ]
+    },
+    "description_lines": [
+      "2 Apartment Bldgs: 2.5 storey; 25 units @ $90,954",
+      "",
+      "30 surface parking stalls",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 15",
+      "Lots 9 & 10, N/S Alice St",
+      "Lots 9-11, S/S Gow St",
+      "",
+      "PIN: 48116-0411",
+      "",
+      "N side Alice St, W of Woodward St",
+      "",
+      "1.01 acre"
+    ],
+    "arn_text": "44 18 010 011 09900",
+    "consideration_lines": [
+      "cash: $2,273,845     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Company of Canada",
+      "principal: $1,964,267   rate: 12.0% per annum.",
+      "registered: 09/16/2019   due: 10/01/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 47",
+      "rt_id": "RT145980"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "129 ALICE ST",
+    "postcode": "P1L 1M9",
+    "municipality": "Bracebridge",
+    "region": "Muskoka",
+    "date": "09/16/2019",
+    "desc": "2 Apartment Bldgs: 2.5 storey; 25 units @ $90,954",
+    "bldg": "25 units",
+    "acreage": "1.01",
+    "consid": "2273845",
+    "cash": "2273845",
+    "debt": "",
+    "note": "",
+    "pin": "48116-0411",
+    "rollno": "44 18 010 011 09900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "129 ALICE ST"
+    ],
+    "city_region": "Bracebridge : Muskoka",
+    "date_text": "16 Sep 2019",
+    "note": "",
+    "description": "2 Apartment Bldgs: 2.5 storey; 25 units @ $90,954",
+    "seller_lines": [
+      "1664995 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2712131 Ontario Inc"
+    ],
+    "price_text": "$2,273,845"
+  }
+}

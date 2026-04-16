@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT66464",
+  "source_folder": "Peel_Region/retail/p014",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66464",
+      "source_folder": "Peel_Region/retail/p014",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p014/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 PERTOSA DR",
+        "UNIT 1"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "26 Mar 2009",
+      "price_text": "$675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2043495 Ontario Inc     905-790-7401"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ashwani Sood",
+        "21 Himalaya St",
+        "Brampton, Ontario",
+        "L6R 2L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2106250 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Major Nagra",
+        "80 Pertosa Dr, Unit 1",
+        "Brampton, Ontario",
+        "L6X 5E9"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 1,926 sf @ $350",
+      "",
+      "Vacant",
+      "Part of a 1-2 storey 74,000 sf (32 unit) retail/office condo complex at 80-100 Pertosa Dr"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 746",
+      "Level 1, Units 32, 44, 69, 94, 119",
+      "",
+      "PIN: 19746-0032 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Equitable Trust Company",
+      "principal: $405,000   rate: 6.95% per annum",
+      "registered: 03/26/2009   due: 04/05/2014",
+      "",
+      "chargee: 1535624 Ontario Inc",
+      "principal: $67,500   rate: 12.00% per annum",
+      "registered: 03/26/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "656 / 1087",
+      "rt_id": "RT66464"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "80 PERTOSA DR, UNIT 1",
+    "postcode": "L6X 5E9",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "03/26/2009",
+    "desc": "Retail Condo - 1,926 sf @ $350",
+    "bldg": "1,926 sf",
+    "acreage": "",
+    "consid": "675000",
+    "cash": "675000",
+    "debt": "",
+    "note": "",
+    "pin": "19746-0032+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "80 PERTOSA DR",
+      "UNIT 1"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "26 Mar 2009",
+    "note": "",
+    "description": "Retail Condo - 1,926 sf @ $350",
+    "seller_lines": [
+      "2043495 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2106250 Ontario Inc"
+    ],
+    "price_text": "$675,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT44732",
+  "source_folder": "Oxford_County/retail/p002",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44732",
+      "source_folder": "Oxford_County/retail/p002",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p002/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "121 CONCESSION ST E"
+      ],
+      "city_region": "Tillsonburg : Oxford County",
+      "date_text": "27 Sep 2005",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TSC Realty Inc     519-453-5270"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Roy Carter",
+        "1950 Oxford St W",
+        "London, Ontario",
+        "N5V 2Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "HVM Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Henry Van Minnen",
+        "6954 Grand River Line. RR 1",
+        "Paincourt, Ontario",
+        "N0P 1Z0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 41R-2931, Part 2",
+      "",
+      "2.41 acre"
+    ],
+    "arn_text": "32 04 030 030 11001",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "93 / 96",
+      "rt_id": "RT44732"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "121 CONCESSION ST E",
+    "postcode": "N4G 4W4",
+    "municipality": "Tillsonburg",
+    "region": "Oxford County",
+    "date": "09/27/2005",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "2.41",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "32 04 030 030 11001"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "121 CONCESSION ST E"
+    ],
+    "city_region": "Tillsonburg : Oxford County",
+    "date_text": "27 Sep 2005",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "TSC Realty Inc"
+    ],
+    "buyer_lines": [
+      "HVM Holdings Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

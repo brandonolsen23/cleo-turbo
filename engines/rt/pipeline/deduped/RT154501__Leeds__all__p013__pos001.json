@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT154501",
+  "source_folder": "Leeds/all/p013",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT154501",
+      "source_folder": "Leeds/all/p013",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p013/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "186 QUEEN ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "31 Aug 2020",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2514772 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rae Ostrander",
+        "89 Smithwood Dr",
+        "Toronto, Ontario",
+        "M9B 4S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Green Goat Properties Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Christopher Vandelaar",
+        "464 Riverside Dr",
+        "London, Ontario",
+        "N6H 2R7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 16 1/2 Sarnia City",
+      "Lots 5 & 6, E/S Queen St",
+      "Part Lots 5 & 6, W/S Albert St",
+      "As in Inst No L-896150",
+      "",
+      "PIN: 43270-0085",
+      "",
+      "0.58 acre"
+    ],
+    "arn_text": "38 29 400 004 09200",
+    "consideration_lines": [
+      "cash: $2,050,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $1,537,500   rate: 25.0% per annum.",
+      "registered: 08/31/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "602 / 1916",
+      "rt_id": "RT154501"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "186 QUEEN ST",
+    "postcode": "N7T 2R6",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "08/31/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".58",
+    "consid": "2050000",
+    "cash": "2050000",
+    "debt": "",
+    "note": "",
+    "pin": "43270-0085",
+    "rollno": "38 29 400 004 09200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "186 QUEEN ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "31 Aug 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2514772 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Green Goat Properties Ltd"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

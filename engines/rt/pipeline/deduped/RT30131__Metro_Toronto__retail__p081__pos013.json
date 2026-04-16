@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT30131",
+  "source_folder": "Metro_Toronto/retail/p081",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30131",
+      "source_folder": "Metro_Toronto/retail/p081",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p081/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "3140-3170 DUFFERIN ST",
+        "CONC 3 - WYS",
+        "PART LOT 6"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "16 May 2003",
+      "price_text": "$8,700,083",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "BDO Dunwoody Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Royal Bank Plaza",
+        "PO Box 33",
+        "Toronto, Ontario",
+        "M5J 2J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2025610 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Inspektor",
+        "3150 Dufferin St, Ste 2",
+        "Toronto, Ontario",
+        "M6A 2T1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-20191, Parts 1-13"
+    ],
+    "arn_text": "19 08 042 310 01400",
+    "consideration_lines": [
+      "cash: $5,875,000     assumed/vtb debt: $2,500,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT301/RT30131/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4014 / 4952",
+      "rt_id": "RT30131"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "3140-3170 DUFFERIN ST, CONC 3 - WYS, PART LOT 6",
+    "postcode": "",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "05/16/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "8700083",
+    "cash": "5875000",
+    "debt": "2500000",
+    "note": "Vesting Order",
+    "pin": "",
+    "rollno": "19 08 042 310 01400"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "3140-3170 DUFFERIN ST",
+      "CONC 3 - WYS",
+      "PART LOT 6"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "16 May 2003",
+    "note": "Vesting Order",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "BDO Dunwoody Ltd"
+    ],
+    "buyer_lines": [
+      "2025610 Ontario Ltd"
+    ],
+    "price_text": "$8,700,083"
+  }
+}

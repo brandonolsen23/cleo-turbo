@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT40620",
+  "source_folder": "Cochrane/all/p180",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40620",
+      "source_folder": "Cochrane/all/p180",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p180/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "2880 SHEFFIELD RD"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "04 Mar 2005",
+      "price_text": "$824,607",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "RE DeChamplain Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michel De Champlain"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lainser Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michel De Champlain",
+        "4335 Hawthorne Rd",
+        "Ottawa, Ontario",
+        "K1G 3N4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 545",
+      "Level 1, Units 5-8"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $824,607     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8976 / 10920",
+      "rt_id": "RT40620"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "2880 SHEFFIELD RD",
+    "postcode": "K1B 1A4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "03/04/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "824607",
+    "cash": "824607",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "2880 SHEFFIELD RD"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "04 Mar 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "RE DeChamplain Co Ltd"
+    ],
+    "buyer_lines": [
+      "Lainser Holdings Inc"
+    ],
+    "price_text": "$824,607"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT195291",
+  "source_folder": "Lambton/retail/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195291",
+      "source_folder": "Lambton/retail/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "1426 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "01 Oct 2025",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2284735 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1801 Dundas St",
+        "London, Ontario",
+        "N5W 3E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1919509 Ontario Inc     519-336-1270"
+      ],
+      "trade_name": "Eltanty Sarnia Dental",
+      "contact_lines": [
+        "Attn: Ahmed Eltanty",
+        "230 Vidal St N",
+        "Sarnia, Ontario",
+        "N7T 5Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT19/RT1952/RT195291/mi.pdf",
+    "site_lines": [
+      "Conc 6 - Sarnia, Part Lot 16",
+      "As in Inst Nos:",
+      "L-459577 & L-459578",
+      "",
+      "PIN: 43488-0007",
+      "",
+      "1.51 acre"
+    ],
+    "arn_text": "38 29 300 036 16800",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 106",
+      "rt_id": "RT195291"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "1426 LONDON RD",
+    "postcode": "N7S 1P7",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "10/01/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.51",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "43488-0007",
+    "rollno": "38 29 300 036 16800"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "1426 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "01 Oct 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2284735 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1919509 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

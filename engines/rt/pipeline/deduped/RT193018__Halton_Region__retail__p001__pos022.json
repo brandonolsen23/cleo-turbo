@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT193018",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193018",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "900 WALKERS LINE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "04 Jul 2025",
+      "price_text": "$17,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mike Priestner Real Estate Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "10220 - 184th St NW",
+        "Edmonton, Alberta",
+        "T5S 0B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Lakewest Holdings Inc     905-547-3211"
+      ],
+      "trade_name": "Eastgate Ford",
+      "contact_lines": [
+        "Attn: Lance Richter",
+        "350 Parkdale Ave N",
+        "Hamilton, Ontario",
+        "L8H 5Y3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - SDS, NEL, Part Lot 11",
+      "Plan 20R-3159, Parts 2 & 3",
+      "Except:",
+      "Plan 20R-16104, Part 1",
+      "",
+      "PIN: 07058-0060",
+      "",
+      "3.93 acre"
+    ],
+    "arn_text": "24 02 090 905 01520",
+    "consideration_lines": [
+      "cash: $17,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $13,840,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/04/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193018/0719_101023.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193018/0719_101042.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193018/0719_101043.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193018/0719_101139.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193018/0719_101140.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193018/0719_101234.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "23 / 613",
+      "rt_id": "RT193018"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "900 WALKERS LINE",
+    "postcode": "L7N 2G2",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "07/04/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.93",
+    "consid": "17300000",
+    "cash": "17300000",
+    "debt": "",
+    "note": "",
+    "pin": "07058-0060",
+    "rollno": "24 02 090 905 01520"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "900 WALKERS LINE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "04 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mike Priestner Real Estate Inc"
+    ],
+    "buyer_lines": [
+      "Lakewest Holdings Inc"
+    ],
+    "price_text": "$17,300,000"
+  }
+}

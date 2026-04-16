@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT52296",
+  "source_folder": "York_Region/retail/p014",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT52296",
+      "source_folder": "York_Region/retail/p014",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p014/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "4300 STEELES AVE E",
+        "SUITE D19"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "20 Nov 2006",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2056721 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Wong",
+        "56 Devonwood Dr",
+        "Markham, Ontario",
+        "L6C 3E9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1677604 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eugene Pang",
+        "19 Oxfordshire St",
+        "Markham, Ontario",
+        "L6J 2J7"
+      ]
+    },
+    "description_lines": [
+      "Pacific Mall Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 890",
+      "Level 1, Units 163 & 164"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: HSBC Bank Canada",
+      "principal: $320,000   rate: Prime plus 3.0% per annum",
+      "registered: 11/20/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "675 / 984",
+      "rt_id": "RT52296"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "4300 STEELES AVE E, SUITE D19",
+    "postcode": "L3R 0Y5",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/20/2006",
+    "desc": "Pacific Mall Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "4300 STEELES AVE E",
+      "SUITE D19"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "20 Nov 2006",
+    "note": "",
+    "description": "Pacific Mall Condo",
+    "seller_lines": [
+      "2056721 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1677604 Ontario Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

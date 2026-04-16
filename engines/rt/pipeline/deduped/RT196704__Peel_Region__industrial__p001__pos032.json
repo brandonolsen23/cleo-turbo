@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT196704",
+  "source_folder": "Peel_Region/industrial/p001",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196704",
+      "source_folder": "Peel_Region/industrial/p001",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/industrial/p001/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "1176 CARDIFF BLVD"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "23 Jan 2026",
+      "price_text": "$6,500,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "W. Rudolph Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o 1278 Indian Rd",
+        "Mississauga, Ontario",
+        "L5H 1S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001473197 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Serge Krikorian",
+        "7405 TransCanada, Ste 100",
+        "Montreal, Quebec",
+        "H4T 1Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43M-435, Lot 31",
+      "",
+      "PIN: 13282-0049",
+      "",
+      "1.04 acre"
+    ],
+    "arn_text": "21 05 050 116 53900",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $6,500,000",
+      "",
+      "chargee: W. Rudolph Investments Ltd",
+      "1303219 Ontario Ltd",
+      "principal: $6,500,000   rate: Rate applicable under the Note.",
+      "registered: 01/23/2026   due: 07/31/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "33 / 3793",
+      "rt_id": "RT196704"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "1176 CARDIFF BLVD",
+    "postcode": "L5S 1P6",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "01/23/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.04",
+    "consid": "6500000",
+    "cash": "",
+    "debt": "6500000",
+    "note": "Zero Cash",
+    "pin": "13282-0049",
+    "rollno": "21 05 050 116 53900"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "1176 CARDIFF BLVD"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "23 Jan 2026",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "W. Rudolph Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1001473197 Ontario Inc"
+    ],
+    "price_text": "$6,500,000"
+  }
+}

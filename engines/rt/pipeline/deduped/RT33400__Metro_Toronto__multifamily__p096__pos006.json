@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT33400",
+  "source_folder": "Metro_Toronto/multifamily/p096",
+  "position": 6,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33400",
+      "source_folder": "Metro_Toronto/multifamily/p096",
+      "position": 6,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p096/detail_006.html"
+    },
+    "header": {
+      "address_lines": [
+        "237 INDIAN GROVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 Jan 2004",
+      "price_text": "$660,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "FivePlex - 3 storey; 5 units @ $132,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-41",
+      "Part Lot 108, E/S Woodville Ave",
+      "",
+      "0.13 acre"
+    ],
+    "arn_text": "19 04 013 190 02900",
+    "consideration_lines": [
+      "cash: $660,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Prudential Sadie Moranis: Elizabeth Ching & Avi Rosen, 416-449-2020"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT334/RT33400/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4757 / 6031",
+      "rt_id": "RT33400"
+    }
+  },
+  "export": {
+    "position": 6,
+    "address": "237 INDIAN GROVE",
+    "postcode": "M6P 2H4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/02/2004",
+    "desc": "FivePlex - 3 storey; 5 units @ $132,000",
+    "bldg": "5 units",
+    "acreage": ".13",
+    "consid": "660000",
+    "cash": "660000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 013 190 02900"
+  },
+  "results": {
+    "position": 6,
+    "address_lines": [
+      "237 INDIAN GROVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 Jan 2004",
+    "note": "",
+    "description": "FivePlex - 3 storey; 5 units @ $132,000",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$660,000"
+  }
+}

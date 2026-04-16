@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT29033",
+  "source_folder": "Metro_Toronto/retail/p082",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT29033",
+      "source_folder": "Metro_Toronto/retail/p082",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p082/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1141 KENNEDY RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "18 Feb 2003",
+      "price_text": "$3,745,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Best Buy Canada Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Janie Sharp",
+        "8800 Glenlyon Pkwy",
+        "Burnaby, BC",
+        "V5J 5K3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1525292 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Barry Browning",
+        "151 Spinnaker Way, Unit 8",
+        "Vaughan, Ontario",
+        "L4K 4C3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-4713, Parts 1-3",
+      "",
+      "3.09 acre"
+    ],
+    "arn_text": "19 01 043 630 01200",
+    "consideration_lines": [
+      "cash: $3,745,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT290/RT29033/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4051 / 4952",
+      "rt_id": "RT29033"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1141 KENNEDY RD",
+    "postcode": "M1P 2K8",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "02/18/2003",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "3.09",
+    "consid": "3745000",
+    "cash": "3745000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 043 630 01200"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1141 KENNEDY RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "18 Feb 2003",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "Best Buy Canada Ltd"
+    ],
+    "buyer_lines": [
+      "1525292 Ontario Ltd"
+    ],
+    "price_text": "$3,745,000"
+  }
+}

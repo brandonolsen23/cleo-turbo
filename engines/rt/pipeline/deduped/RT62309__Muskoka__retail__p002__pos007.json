@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT62309",
+  "source_folder": "Muskoka/retail/p002",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT62309",
+      "source_folder": "Muskoka/retail/p002",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Muskoka/retail/p002/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "51 KING WILLIAM ST",
+        "55 KING WILLIAM ST",
+        "57 KING WILLIAM ST"
+      ],
+      "city_region": "Huntsville : Muskoka",
+      "date_text": "05 Jun 2008",
+      "price_text": "$5,724,213",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "51-57 King William Street Developments Inc     416-979-9996"
+      ],
+      "trade_name": "Croft Development Corp",
+      "contact_lines": [
+        "ASO: Helen Pedro",
+        "10 Queen Elizabeth Blvd, Unit 2",
+        "Toronto, Ontario",
+        "M8Z 1L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Beswick Properties Inc     905-713-3711"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Beswick",
+        "16188 Bathurst St",
+        "King City, Ontario",
+        "L7B 1K5"
+      ]
+    },
+    "description_lines": [
+      "Shoppers Drug Mart - 1 storey; 16,200 sf @ $353"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 500, Lots 8 & 9",
+      "Plan M-489, Lot 70A",
+      "",
+      "PIN: 48084-0377 +",
+      "",
+      "1.23 acre"
+    ],
+    "arn_text": "44 42 010 002 06100 +",
+    "consideration_lines": [
+      "cash: $5,724,213     assumed/vtb debt: $0",
+      "",
+      "chargee: The Great-West Life Assurance Co",
+      "principal: $35,000,000   rate: 25.0% per annum",
+      "registered: 06/05/2008   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT623/RT62309/0307_111947.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT623/RT62309/0307_112058.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "58 / 64",
+      "rt_id": "RT62309"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "51 KING WILLIAM ST, 55 KING WILLIAM ST, 57 KING WILLIAM ST",
+    "postcode": "P1H 1G4",
+    "municipality": "Huntsville",
+    "region": "Muskoka",
+    "date": "06/05/2008",
+    "desc": "Shoppers Drug Mart - 1 storey; 16,200 sf @ $353",
+    "bldg": "16,200 sf",
+    "acreage": "1.23",
+    "consid": "5724213",
+    "cash": "5724213",
+    "debt": "",
+    "note": "",
+    "pin": "48084-0377+",
+    "rollno": "44 42 010 002 06100+"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "51 KING WILLIAM ST",
+      "55 KING WILLIAM ST",
+      "57 KING WILLIAM ST"
+    ],
+    "city_region": "Huntsville : Muskoka",
+    "date_text": "05 Jun 2008",
+    "note": "",
+    "description": "Shoppers Drug Mart - 1 storey; 16,200 sf @ $353",
+    "seller_lines": [
+      "51-57 King William Street Developments Inc"
+    ],
+    "buyer_lines": [
+      "Beswick Properties Inc"
+    ],
+    "price_text": "$5,724,213"
+  }
+}

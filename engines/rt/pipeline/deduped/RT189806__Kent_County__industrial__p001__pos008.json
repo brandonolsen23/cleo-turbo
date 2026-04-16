@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT189806",
+  "source_folder": "Kent_County/industrial/p001",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189806",
+      "source_folder": "Kent_County/industrial/p001",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/industrial/p001/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "37 MILL ST W"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "22 Jan 2025",
+      "price_text": "$5,850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "882950 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "351 Queen St N",
+        "Tilbury, Ontario",
+        "N0P 2L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001089350 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brinder Maker",
+        "643 Chrislea Rd, Unit 3",
+        "Woodbridge, Ontario",
+        "L4L 8A3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 24R-4540, Parts 1-5",
+      "",
+      "PIN: 00793-0032",
+      "",
+      "14.98 acre"
+    ],
+    "arn_text": "36 08 100 000 01900",
+    "consideration_lines": [
+      "cash: $5,850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Maker Holdings Inc",
+      "principal: $4,000,000   rate: 7.0% per annum.",
+      "registered: 01/22/2025   due: 01/22/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9 / 52",
+      "rt_id": "RT189806"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "37 MILL ST W",
+    "postcode": "N0P 2L0",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "01/22/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "14.98",
+    "consid": "5850000",
+    "cash": "5850000",
+    "debt": "",
+    "note": "",
+    "pin": "00793-0032",
+    "rollno": "36 08 100 000 01900"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "37 MILL ST W"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "22 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "882950 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001089350 Ontario Inc"
+    ],
+    "price_text": "$5,850,000"
+  }
+}

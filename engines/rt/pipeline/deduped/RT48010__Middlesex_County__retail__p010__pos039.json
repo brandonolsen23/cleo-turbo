@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT48010",
+  "source_folder": "Middlesex_County/retail/p010",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48010",
+      "source_folder": "Middlesex_County/retail/p010",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p010/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "1560 DUNDAS ST"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "30 Mar 2006",
+      "price_text": "$1,060,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Anne Handelman",
+        "Brenkids Inc",
+        "Russell Hawarden Holdings Ltd",
+        "Berhill Holdings Ltd",
+        "Florence Silver",
+        "Rhoda Lewis",
+        "Earl Wintraub     416-929-2995"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "342 Spadina Rd, Ste 203",
+        "Toronto, Ontario",
+        "M3C 2P4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Franbern Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bernie Goldgrub",
+        "7 Ingram Dr, Ste 118",
+        "Toronto, Ontario",
+        "M6M 2L7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 514",
+      "Lots 2 & 3, Part Lot 4",
+      "Plan 19, Part Lot 3",
+      "As in Inst No 785111",
+      "",
+      "1.13 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,060,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "490 / 686",
+      "rt_id": "RT48010"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "1560 DUNDAS ST",
+    "postcode": "N5W 3C1",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/30/2006",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "1.13",
+    "consid": "1060000",
+    "cash": "1060000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "1560 DUNDAS ST"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "30 Mar 2006",
+    "note": "Power of Sale",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Anne Handelman",
+      "Brenkids Inc",
+      "Russell Hawarden Holdings Ltd",
+      "Berhill Holdings Ltd",
+      "Florence Silver",
+      "Rhoda Lewis",
+      "Earl Wintraub"
+    ],
+    "buyer_lines": [
+      "Franbern Investments Inc"
+    ],
+    "price_text": "$1,060,000"
+  }
+}

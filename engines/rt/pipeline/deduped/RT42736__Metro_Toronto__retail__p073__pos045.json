@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT42736",
+  "source_folder": "Metro_Toronto/retail/p073",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42736",
+      "source_folder": "Metro_Toronto/retail/p073",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p073/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "962 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Jun 2005",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2050827 Ontario Inc     416-531-9925"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lucas Tai",
+        "1011 Dufferin St, Ste 204",
+        "Toronto, Ontario",
+        "M6H 4B5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "962 Bloor Street West Ltd     416-777-2200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Moretti",
+        "Colliers International Realty",
+        "1 Queen St E, Ste 2200",
+        "Toronto, Ontario",
+        "M5C 2Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 506, Part Lot 12",
+      "As in Inst No CA-446664",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 031 030 02600",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: State Street Trust Co Canada",
+      "principal: $770,000   rate: 5.4% per annum",
+      "registered: 06/30/2005   due: 07/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT427/RT42736/air1.jpg",
+        "/assets/files/RT4/RT427/RT42736/air2.jpg",
+        "/assets/files/RT4/RT427/RT42736/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT427/RT42736/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3646 / 4952",
+      "rt_id": "RT42736"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "962 BLOOR ST W",
+    "postcode": "M6H 1L6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "06/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 031 030 02600"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "962 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Jun 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2050827 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "962 Bloor Street West Ltd"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

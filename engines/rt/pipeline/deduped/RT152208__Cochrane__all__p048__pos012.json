@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT152208",
+  "source_folder": "Cochrane/all/p048",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT152208",
+      "source_folder": "Cochrane/all/p048",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p048/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "6111 HAZELDEAN RD"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "05 Jun 2020",
+      "price_text": "$3,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2316534 Ontario Inc     416-977-0777"
+      ],
+      "trade_name": "Minto Group",
+      "contact_lines": [
+        "VP: Paul Baron",
+        "4101 Yonge St, Ste 600",
+        "Toronto, Ontario",
+        "M2P 1N6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Grant Castle Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Peter MacEwan",
+        "PO Box 100",
+        "Maxville, Ontario",
+        "K0C 1T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 12, Part Lot 24",
+      "Plan 4R-30619, Part 2",
+      "",
+      "PIN: 04487-2615",
+      "",
+      "4.56 acre"
+    ],
+    "arn_text": "06 14 271 830 13702",
+    "consideration_lines": [
+      "cash: $3,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2363 / 10920",
+      "rt_id": "RT152208"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "6111 HAZELDEAN RD",
+    "postcode": "K2S 1B9",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "06/05/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "4.56",
+    "consid": "3500000",
+    "cash": "3500000",
+    "debt": "",
+    "note": "",
+    "pin": "04487-2615",
+    "rollno": "06 14 271 830 13702"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "6111 HAZELDEAN RD"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "05 Jun 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2316534 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Grant Castle Corp"
+    ],
+    "price_text": "$3,500,000"
+  }
+}

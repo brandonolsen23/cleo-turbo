@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT180233",
+  "source_folder": "Northumberland/retail/p001",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180233",
+      "source_folder": "Northumberland/retail/p001",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/retail/p001/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "536 DIVISION ST"
+      ],
+      "city_region": "Cobourg : Northumberland",
+      "date_text": "28 Aug 2023",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Homestar Realty Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Dean Mandzuk",
+        "25 Munroe St, Unit 2",
+        "Cobourg, Ontario",
+        "K9A 1B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 148 - Cobourg, Part Block A",
+      "As in Inst No CB-75314",
+      "Except:",
+      "Exprop Plan HCG-461",
+      "",
+      "PIN: 51098-0015",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "14 21 000 130 03300",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "Named Individual(s)",
+      "principal: $850,000   rate: 4.5% per annum.",
+      "registered: 08/28/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180233/1126_122615.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180233/1126_122622.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180233/1126_122648.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180233/1126_122654.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1802/RT180233/1126_122658.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT18/RT1802/RT180233/air1.jpg",
+        "/assets/files/RT18/RT1802/RT180233/air2.jpg",
+        "/assets/files/RT18/RT1802/RT180233/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "27 / 93",
+      "rt_id": "RT180233"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "536 DIVISION ST",
+    "postcode": "K9A 3S4",
+    "municipality": "Cobourg",
+    "region": "Northumberland",
+    "date": "08/28/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "51098-0015",
+    "rollno": "14 21 000 130 03300"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "536 DIVISION ST"
+    ],
+    "city_region": "Cobourg : Northumberland",
+    "date_text": "28 Aug 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Homestar Realty Corp"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

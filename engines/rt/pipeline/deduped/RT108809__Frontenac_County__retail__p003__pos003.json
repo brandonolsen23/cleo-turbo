@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT108809",
+  "source_folder": "Frontenac_County/retail/p003",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT108809",
+      "source_folder": "Frontenac_County/retail/p003",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Frontenac_County/retail/p003/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "2280 SYDENHAM RD"
+      ],
+      "city_region": "Kingston : Frontenac County",
+      "date_text": "05 Mar 2015",
+      "price_text": "$531,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shreeji Convenience and Grocery Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kaniyalal Patel",
+        "2280 Sydenham Rd",
+        "Kingston, Ontario",
+        "L0H 1M0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "OM9 Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kirti Patel",
+        "2280 Sydenham Rd",
+        "Elginburg, Ontario",
+        "K0H 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 17",
+      "Plan 13R-2182, Part 4",
+      "",
+      "PIN: 36293-0184",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "10 09 001 240 04200",
+    "consideration_lines": [
+      "cash: $531,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $270,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/05/2015   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT10/RT1088/RT108809/0731_065915.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1088/RT108809/0731_065918.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1088/RT108809/0731_065958.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1088/RT108809/0731_070001.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1088/RT108809/0731_070006.jpg",
+        "http://realtrack.cachefly.net/photos/RT10/RT1088/RT108809/0731_070035.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "104 / 236",
+      "rt_id": "RT108809"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "2280 SYDENHAM RD",
+    "postcode": "K0H 1M0",
+    "municipality": "Kingston",
+    "region": "Frontenac County",
+    "date": "03/05/2015",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "531000",
+    "cash": "531000",
+    "debt": "",
+    "note": "",
+    "pin": "36293-0184",
+    "rollno": "10 09 001 240 04200"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "2280 SYDENHAM RD"
+    ],
+    "city_region": "Kingston : Frontenac County",
+    "date_text": "05 Mar 2015",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Shreeji Convenience and Grocery Inc"
+    ],
+    "buyer_lines": [
+      "OM9 Corp"
+    ],
+    "price_text": "$531,000"
+  }
+}

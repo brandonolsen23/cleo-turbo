@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT24027",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24027",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "116 GLEN MANOR DR"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "11 Jan 2002",
+      "price_text": "$1,090,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Harold Wakefield     416-366-1801"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "30 Wellington St E, Apt 2103",
+        "Toronto, Ontario",
+        "M5E1S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Key-Sean Investments Inc     905-738-0275"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Daniel Chai",
+        "70 Conley St",
+        "Thornhill, Ontario",
+        "L4J 2X5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 2.5 storey; 12-1bdrm @ $90,833"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-490, Part Lot 137"
+    ],
+    "arn_text": "19 04 091 140 03600",
+    "consideration_lines": [
+      "cash: $220,000     assumed/vtb debt: $870,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT240/RT24027/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5303 / 6031",
+      "rt_id": "RT24027"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "116 GLEN MANOR DR",
+    "postcode": "M4E 2X2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/11/2002",
+    "desc": "Apartment Bldg - 2.5 storey; 12-1bdrm @ $90,833",
+    "bldg": "12 units",
+    "acreage": "",
+    "consid": "1090000",
+    "cash": "220000",
+    "debt": "870000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 091 140 03600"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "116 GLEN MANOR DR"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "11 Jan 2002",
+    "note": "",
+    "description": "Apartment Bldg - 2.5 storey; 12-1bdrm @ $90,833",
+    "seller_lines": [
+      "Harold Wakefield"
+    ],
+    "buyer_lines": [
+      "Key-Sean Investments Inc"
+    ],
+    "price_text": "$1,090,000"
+  }
+}

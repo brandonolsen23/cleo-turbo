@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT148697",
+  "source_folder": "Cochrane/all/p052",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT148697",
+      "source_folder": "Cochrane/all/p052",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p052/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "3679 CARP RD"
+      ],
+      "city_region": "W. Carleton : Ottawa-Carleton",
+      "date_text": "10 Jan 2020",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2453973 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1450 Donald B Munro Dr",
+        "Carp, Ontario",
+        "K0A 1L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 17",
+      "As in Inst Nos:",
+      "HU-12609 & HU-12610",
+      "Except:",
+      "Plan 4R-14902, Part 1",
+      "",
+      "PIN: 04543-0459",
+      "",
+      "147.14 acre"
+    ],
+    "arn_text": "06 42 030 810 00300",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2560 / 10920",
+      "rt_id": "RT148697"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "3679 CARP RD",
+    "postcode": "K0A 1L0",
+    "municipality": "W. Carleton",
+    "region": "Ottawa-Carleton",
+    "date": "01/10/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": "147.14",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "04543-0459",
+    "rollno": "06 42 030 810 00300"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "3679 CARP RD"
+    ],
+    "city_region": "W. Carleton : Ottawa-Carleton",
+    "date_text": "10 Jan 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2453973 Ontario Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

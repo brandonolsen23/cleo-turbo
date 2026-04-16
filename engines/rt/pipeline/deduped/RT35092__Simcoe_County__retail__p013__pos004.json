@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT35092",
+  "source_folder": "Simcoe_County/retail/p013",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35092",
+      "source_folder": "Simcoe_County/retail/p013",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p013/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1929 MOSLEY ST"
+      ],
+      "city_region": "Wasaga Beach : Simcoe County",
+      "date_text": "15 Apr 2004",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1463649 Ontario Inc     416-754-4404"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Balraj Sandhu",
+        "Jaikrishin Ambwani",
+        "Barrister & Solicitor",
+        "100 Cowdray Ct, Ste 330",
+        "Scarborough, Ontario",
+        "M1S 5C8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Canish Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raisin Chaba",
+        "1929 Mosley St",
+        "Wasaga Beach, Ontario",
+        "L0L 2P0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 15, Part Lot 1",
+      "As in Inst No RO-1060547",
+      "",
+      "1.04 acre"
+    ],
+    "arn_text": "43 64 010 002 65300",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "605 / 712",
+      "rt_id": "RT35092"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1929 MOSLEY ST",
+    "postcode": "L0L 2P0",
+    "municipality": "Wasaga Beach",
+    "region": "Simcoe County",
+    "date": "04/15/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.04",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 64 010 002 65300"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1929 MOSLEY ST"
+    ],
+    "city_region": "Wasaga Beach : Simcoe County",
+    "date_text": "15 Apr 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1463649 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Canish Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

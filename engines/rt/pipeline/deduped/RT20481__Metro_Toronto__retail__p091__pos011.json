@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT20481",
+  "source_folder": "Metro_Toronto/retail/p091",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20481",
+      "source_folder": "Metro_Toronto/retail/p091",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p091/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1186 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "13 Feb 2001",
+      "price_text": "$520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Shing Wah Investments Inc     905-479-5365"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kung Wah Chan",
+        "78 Finchley Circle",
+        "Markham, Ontario",
+        "L3R 8S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ocean Reef Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Ian Gilbert",
+        "c/o 100 Antibes Dr, Ste 2801",
+        "Toronto, Ontario",
+        "M2R 3N1"
+      ]
+    },
+    "description_lines": [
+      "Retail/Com/Res Bldg - 2 storey; 7,500 sf @ $69",
+      "",
+      "2,500 sf res/com over 5,000 sf retail/com"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-294, Lot 1,",
+      "N/W Corner Queen St & Northcote Ave",
+      "As In Inst No CA-326154",
+      "",
+      "NW corner at Northcote Ave",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 042 290 06000",
+    "consideration_lines": [
+      "cash: $520,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Sutton Group: Edward Niedzielski, 416-762-4200"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT204/RT20481/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4512 / 4952",
+      "rt_id": "RT20481"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1186 QUEEN ST W",
+    "postcode": "M6J 1J6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/13/2001",
+    "desc": "Retail/Com/Res Bldg - 2 storey; 7,500 sf @ $69",
+    "bldg": "7,500 sf",
+    "acreage": ".11",
+    "consid": "520000",
+    "cash": "520000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 042 290 06000"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1186 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "13 Feb 2001",
+    "note": "",
+    "description": "Retail/Com/Res Bldg - 2 storey; 7,500 sf @ $69",
+    "seller_lines": [
+      "Shing Wah Investments Inc"
+    ],
+    "buyer_lines": [
+      "Ocean Reef Properties Inc"
+    ],
+    "price_text": "$520,000"
+  }
+}

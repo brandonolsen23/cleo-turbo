@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT193075",
+  "source_folder": "Oxford_County/retail/p001",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193075",
+      "source_folder": "Oxford_County/retail/p001",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Oxford_County/retail/p001/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "136 - 138 BROADWAY ST"
+      ],
+      "city_region": "Tillsonburg : Oxford County",
+      "date_text": "30 Jun 2025",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2457816 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "9 Thomas Ave",
+        "Tillsonburg, Ontario",
+        "N4G 5K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001158704 Ontario Inc     519-842-5131"
+      ],
+      "trade_name": "Optometrists on Broadway",
+      "contact_lines": [
+        "Attn: Matthew Michniewicz",
+        "138 Broadway St",
+        "Tillsonburg, Ontario",
+        "N4G 3P8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 500, Part Lot 1070",
+      "As in Inst No 288216",
+      "",
+      "PIN: 00039-0068",
+      "",
+      "0.17 acre"
+    ],
+    "arn_text": "32 04 030 030 07300",
+    "consideration_lines": [
+      "cash: $2,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $3,000,000   rate: 5.0% per annum.",
+      "registered: 06/30/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193075/0713_111937.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193075/0713_111944.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193075/0713_111957.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193075/0713_111958.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1930/RT193075/0713_112004.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "17 / 96",
+      "rt_id": "RT193075"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "136 - 138 BROADWAY ST",
+    "postcode": "N4G 3P8",
+    "municipality": "Tillsonburg",
+    "region": "Oxford County",
+    "date": "06/30/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".17",
+    "consid": "2100000",
+    "cash": "2100000",
+    "debt": "",
+    "note": "",
+    "pin": "00039-0068",
+    "rollno": "32 04 030 030 07300"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "136 - 138 BROADWAY ST"
+    ],
+    "city_region": "Tillsonburg : Oxford County",
+    "date_text": "30 Jun 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2457816 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1001158704 Ontario Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

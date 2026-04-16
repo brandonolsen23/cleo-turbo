@@ -1,0 +1,103 @@
+{
+  "rt_id": "RT40474",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40474",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "149 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "25 Feb 2005",
+      "price_text": "$540,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Kamfe Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kamal Elkadri",
+        "32 Attwood Dr",
+        "Cambridge, Ontario",
+        "N1T 1L4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 610, Part Lot 20",
+      "As in Inst No WS-660586",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "30 06 090 002 09000",
+    "consideration_lines": [
+      "cash: $540,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT404/RT40474/photo.jpg"
+    },
+    "footer": {
+      "page_position": "604 / 752",
+      "rt_id": "RT40474"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "149 HESPELER RD",
+    "postcode": "N1R 3G9",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "02/25/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".5",
+    "consid": "540000",
+    "cash": "540000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 090 002 09000"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "149 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "25 Feb 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Kamfe Ltd"
+    ],
+    "price_text": "$540,000"
+  }
+}

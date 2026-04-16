@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT191095",
+  "source_folder": "Stormont/hotel-motel/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191095",
+      "source_folder": "Stormont/hotel-motel/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Stormont/hotel-motel/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "1142 BROOKDALE AVE"
+      ],
+      "city_region": "Cornwall : Stormont",
+      "date_text": "24 Mar 2025",
+      "price_text": "$1,900,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "1000605416 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1209 Brookdale Ave",
+        "Cornwall, Ontario",
+        "K6J 4P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2797495 Ontario Inc     905-452-9445"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sukhdev Chahal",
+        "4 Speedwell St",
+        "Brampton, Ontario",
+        "L6X 2Z1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 13",
+      "As in Inst No S-312018",
+      "",
+      "PIN: 60212-0355",
+      "",
+      "2.60 acre"
+    ],
+    "arn_text": "04 02 060 003 01800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "chattels: $1,320,000",
+      "other: $1,900,000",
+      "",
+      "chargee: Northern Credit Union Ltd",
+      "principal: $3,220,000   rate: 24.0% per annum.",
+      "registered: 03/24/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 4",
+      "rt_id": "RT191095"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "1142 BROOKDALE AVE",
+    "postcode": "K6J 4P4",
+    "municipality": "Cornwall",
+    "region": "Stormont",
+    "date": "03/24/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.6",
+    "consid": "1900000",
+    "cash": "",
+    "debt": "",
+    "note": "Zero Cash",
+    "pin": "60212-0355",
+    "rollno": "04 02 060 003 01800"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "1142 BROOKDALE AVE"
+    ],
+    "city_region": "Cornwall : Stormont",
+    "date_text": "24 Mar 2025",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "1000605416 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2797495 Ontario Inc"
+    ],
+    "price_text": "$1,900,000"
+  }
+}

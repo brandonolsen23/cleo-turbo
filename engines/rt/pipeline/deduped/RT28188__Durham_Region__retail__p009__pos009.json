@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT28188",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28188",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "734 KINGSTON RD"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "10 Dec 2002",
+      "price_text": "$5,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "734 Kingston Road Ltd     905-426-5005"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Overzet",
+        "Carruther's Creek Golf Centre",
+        "650 Lakeridge Rd",
+        "Ajax, Ontario",
+        "L1S 4S7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1322046 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aga Zainulbedin",
+        "130 Kingslake Rd",
+        "Toronto, Ontario",
+        "M2J 3G1"
+      ]
+    },
+    "description_lines": [
+      "New Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 40R-11608, Parts 1 & 2",
+      "Except Plan 40R-18371",
+      "Parts 5-7, 9-11, 25-31",
+      "",
+      "1.69 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $5,300,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT281/RT28188/photo.jpg"
+    },
+    "footer": {
+      "page_position": "410 / 506",
+      "rt_id": "RT28188"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "734 KINGSTON RD",
+    "postcode": "L1V 1A8",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "12/10/2002",
+    "desc": "New Retail Plaza",
+    "bldg": "",
+    "acreage": "1.69",
+    "consid": "5300000",
+    "cash": "5300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "734 KINGSTON RD"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "10 Dec 2002",
+    "note": "",
+    "description": "New Retail Plaza",
+    "seller_lines": [
+      "734 Kingston Road Ltd"
+    ],
+    "buyer_lines": [
+      "1322046 Ontario Inc"
+    ],
+    "price_text": "$5,300,000"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT66303",
+  "source_folder": "Brant/retail/p003",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT66303",
+      "source_folder": "Brant/retail/p003",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p003/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "135 KING GEORGE RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "10 Mar 2009",
+      "price_text": "$2,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Calbran Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jack Robillard",
+        "1577 Colborne St",
+        "Brantford, Ontario",
+        "N3T 5L4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1119616 Ontario Inc     519-759-7463"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Albert Ferras",
+        "59 Dalhousie St",
+        "Brantford, Ontario",
+        "N3T 2H9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 15,500 sf @ $168"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1000, Sec 15",
+      "Lot 2",
+      "",
+      "PIN: 32218-0309",
+      "",
+      "2.40 acre"
+    ],
+    "arn_text": "29 06 020 014 34600",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $1,600,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT6/RT663/RT66303/0320_162420.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT663/RT66303/0320_162510.jpg",
+        "http://realtrack.cachefly.net/photos/RT6/RT663/RT66303/0320_162556.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT6/RT663/RT66303/air1.jpg",
+        "/assets/files/RT6/RT663/RT66303/air2.jpg",
+        "/assets/files/RT6/RT663/RT66303/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "149 / 195",
+      "rt_id": "RT66303"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "135 KING GEORGE RD",
+    "postcode": "N3R 5K7",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "03/10/2009",
+    "desc": "Retail Bldg - 1 storey; 15,500 sf @ $168",
+    "bldg": "15,500 sf",
+    "acreage": "2.4",
+    "consid": "2600000",
+    "cash": "1000000",
+    "debt": "1600000",
+    "note": "",
+    "pin": "32218-0309",
+    "rollno": "29 06 020 014 34600"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "135 KING GEORGE RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "10 Mar 2009",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 15,500 sf @ $168",
+    "seller_lines": [
+      "Calbran Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1119616 Ontario Inc"
+    ],
+    "price_text": "$2,600,000"
+  }
+}

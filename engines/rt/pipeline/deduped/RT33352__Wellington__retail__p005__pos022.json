@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT33352",
+  "source_folder": "Wellington/retail/p005",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33352",
+      "source_folder": "Wellington/retail/p005",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p005/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "3 - 19 SPEEDVALE AVE E"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "31 Dec 2003",
+      "price_text": "$1,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2036499 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Shingara Dhillon",
+        "8 Darby Rd",
+        "Guelph, Ontario",
+        "N1K 1R4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 319, Part Lots 8-11, 31 & 32",
+      "As in Inst No ROS-576958",
+      "",
+      "0.63 acre"
+    ],
+    "arn_text": "23 08 030 002 17700",
+    "consideration_lines": [
+      "cash: $144,246     assumed/vtb debt: $1,005,754"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT333/RT33352/photo.jpg"
+    },
+    "footer": {
+      "page_position": "223 / 269",
+      "rt_id": "RT33352"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "3 - 19 SPEEDVALE AVE E",
+    "postcode": "N1H 1J2",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "12/31/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".63",
+    "consid": "1150000",
+    "cash": "144246",
+    "debt": "1005754",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 030 002 17700"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "3 - 19 SPEEDVALE AVE E"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "31 Dec 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2036499 Ontario Ltd"
+    ],
+    "price_text": "$1,150,000"
+  }
+}

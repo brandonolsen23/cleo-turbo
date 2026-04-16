@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT118449",
+  "source_folder": "Kitchener-Waterloo/retail/p006",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT118449",
+      "source_folder": "Kitchener-Waterloo/retail/p006",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p006/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "2440 EAGLE ST N"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "02 Aug 2016",
+      "price_text": "$4,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Longo Leasing Cambridge Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Karen Prince",
+        "20 Lois Lane",
+        "Guelph, Ontario",
+        "N1K 1W5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "GRN (Galt) Ltd     877-341-3404"
+      ],
+      "trade_name": "Raceway Chrysler Fiat",
+      "contact_lines": [
+        "Attn: Gordon Nimeck",
+        "150 Rexdale Blvd",
+        "Toronto, Ontario",
+        "M9W 1P6"
+      ]
+    },
+    "description_lines": [
+      "Galt Chrysler Dodge Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 67R-2825, Part 3",
+      "",
+      "PIN: 03767-0097",
+      "",
+      "4.19 acre"
+    ],
+    "arn_text": "30 06 110 008 03440",
+    "consideration_lines": [
+      "cash: $4,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT11/RT1184/RT118449/1029_091256.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1184/RT118449/1029_091301.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1184/RT118449/1029_091304.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1184/RT118449/1029_091332.jpg",
+        "http://realtrack.cachefly.net/photos/RT11/RT1184/RT118449/1029_091345.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "287 / 752",
+      "rt_id": "RT118449"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "2440 EAGLE ST N",
+    "postcode": "N3H 4R7",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "08/02/2016",
+    "desc": "Galt Chrysler Dodge Dealership",
+    "bldg": "",
+    "acreage": "4.19",
+    "consid": "4500000",
+    "cash": "4500000",
+    "debt": "",
+    "note": "",
+    "pin": "03767-0097",
+    "rollno": "30 06 110 008 03440"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "2440 EAGLE ST N"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "02 Aug 2016",
+    "note": "",
+    "description": "Galt Chrysler Dodge Dealership",
+    "seller_lines": [
+      "Longo Leasing Cambridge Ltd"
+    ],
+    "buyer_lines": [
+      "GRN (Galt) Ltd"
+    ],
+    "price_text": "$4,500,000"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT25202",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT25202",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "265 KING ST E"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "08 Mar 2002",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "999756 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "620 Davenport Rd, Unit 5",
+        "Waterloo, Ontario",
+        "N2V 2C2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Loc Van Nguyen",
+        "Mai Thi Tran"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "265 King St W",
+        "Kitchener, Ontario",
+        "N2G 4N4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 3 storey"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 364, Part Lots 12 & 13",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "30 12 040 001 03000",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "664 / 752",
+      "rt_id": "RT25202"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "265 KING ST E",
+    "postcode": "N2G 4N4",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "03/08/2002",
+    "desc": "Retail Plaza - 3 storey",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 12 040 001 03000"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "265 KING ST E"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "08 Mar 2002",
+    "note": "",
+    "description": "Retail Plaza - 3 storey",
+    "seller_lines": [
+      "999756 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Loc Van Nguyen",
+      "Mai Thi Tran"
+    ],
+    "price_text": "$850,000"
+  }
+}

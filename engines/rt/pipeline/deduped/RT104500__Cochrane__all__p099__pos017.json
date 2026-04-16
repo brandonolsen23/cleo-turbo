@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT104500",
+  "source_folder": "Cochrane/all/p099",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT104500",
+      "source_folder": "Cochrane/all/p099",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p099/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "1524 CATON ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "18 Nov 2014",
+      "price_text": "$558,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gordon Consulting Services Inc     613-226-0924"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Selcuk Kuzugudenli",
+        "9 Carol St",
+        "Ottawa, Ontario",
+        "K2G 0X9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 612, Lot 10",
+      "",
+      "PIN: 04196-0320",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "06 14 105 902 46600",
+    "consideration_lines": [
+      "cash: $558,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $446,000   rate: Prime minus 0.6% per annum.",
+      "registered: 11/18/2014   due: 11/18/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4918 / 10920",
+      "rt_id": "RT104500"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "1524 CATON ST",
+    "postcode": "K1H 6J4",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "11/18/2014",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "558000",
+    "cash": "558000",
+    "debt": "",
+    "note": "",
+    "pin": "04196-0320",
+    "rollno": "06 14 105 902 46600"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "1524 CATON ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "18 Nov 2014",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gordon Consulting Services Inc"
+    ],
+    "price_text": "$558,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT19894",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19894",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "387 - 395 MAIN ST E"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "21 Dec 2000",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mintox of Canada Inc     416-863-1010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Wisniewski",
+        "c/o Dale & Lessmann",
+        "PO Box 73, Ste 2000",
+        "CP Tower, TD Centre",
+        "Toronto, Ontario",
+        "M5K 1E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Providence Investments (Canada) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wolf von Teichman",
+        "c/o The Mayrose -Tycon Group",
+        "400 Main St, PO Box 1003",
+        "Milton, Ontario",
+        "L9T 4B6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 14",
+      "As in Inst No 531749",
+      "",
+      "N side 10m E of Prince St"
+    ],
+    "arn_text": "24 09 010 003 00900",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT198/RT19894/photo.jpg"
+    },
+    "footer": {
+      "page_position": "558 / 613",
+      "rt_id": "RT19894"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "387 - 395 MAIN ST E",
+    "postcode": "L6T 4P6",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "12/21/2000",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 09 010 003 00900"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "387 - 395 MAIN ST E"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "21 Dec 2000",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Mintox of Canada Inc"
+    ],
+    "buyer_lines": [
+      "Providence Investments (Canada) Ltd"
+    ],
+    "price_text": "$700,000"
+  }
+}

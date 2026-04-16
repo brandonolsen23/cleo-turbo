@@ -1,0 +1,138 @@
+{
+  "rt_id": "RT15758",
+  "source_folder": "Hamilton-Wentworth/retail/p013",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15758",
+      "source_folder": "Hamilton-Wentworth/retail/p013",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p013/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "65 MALL RD"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "02 Apr 1998",
+      "price_text": "$16,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Burnac Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Thedore F. Burnett",
+        "c/o 48 St Clair Ave W, Ste 600",
+        "Toronto, Ontario",
+        "M4V 3B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Frederic Waks",
+        "The Exchange Tower",
+        "2 First Canadian Place, Ste 1300, Box 435",
+        "Toronto, Ontario",
+        "M5X 1E3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 92,420 sf @ $180"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 62R-6472, Parts 5 & 6",
+      "Conc 6, Part Lot 10",
+      "As in Inst No 403783-CD",
+      "",
+      "E side 200m S of Mohawk Rd E",
+      "",
+      "8.21 acre"
+    ],
+    "arn_text": "25 18 070 652 00485",
+    "consideration_lines": [
+      "cash: $7,029,494     assumed/vtb debt: $9,645,506",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,650,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/14/2021   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,700,000   rate: 2.85% per annum.",
+      "registered: 01/14/2021   due: 02/01/2026",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $3,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/14/2021   due: on demand",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,475,000   rate: Prime plus 6.0% per annum.",
+      "registered: 01/15/2021   due: on demand",
+      "",
+      "chargee: Peever Technical Services Inc",
+      "principal: $2,100,000   rate: 3.5% per annum. Chargor may extend for a further year at 6.0% per annum.",
+      "registered: 01/15/2021   due: 01/15/2022",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $2,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/15/2021   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "614 / 616",
+      "rt_id": "RT15758"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "65 MALL RD",
+    "postcode": "L8V 5B8",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "04/02/1998",
+    "desc": "Retail Plaza - 1 storey; 92,420 sf @ $180",
+    "bldg": "92,420 sf",
+    "acreage": "8.21",
+    "consid": "16675000",
+    "cash": "7029494",
+    "debt": "9645506",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 070 652 00485"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "65 MALL RD"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "02 Apr 1998",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 92,420 sf @ $180",
+    "seller_lines": [
+      "Burnac Corp"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$16,675,000"
+  }
+}

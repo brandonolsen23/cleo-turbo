@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT170639",
+  "source_folder": "Leeds/all/p009",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170639",
+      "source_folder": "Leeds/all/p009",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p009/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "403 ESTERVILLE RD"
+      ],
+      "city_region": "Dawn-Euphemia : Lambton",
+      "date_text": "08 Jul 2022",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1204977 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dennis Jackson",
+        "1315 Jackson St",
+        "Dresden, Ontario",
+        "N0P 1M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6 - Dawn, Part Lot 14",
+      "As in Inst No L-752229",
+      "",
+      "PIN: 43381-0095",
+      "",
+      "71.73 acre"
+    ],
+    "arn_text": "38 06 006 020 04200",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "402 / 1916",
+      "rt_id": "RT170639"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "403 ESTERVILLE RD",
+    "postcode": "N0P 1M0",
+    "municipality": "Dawn-Euphemia",
+    "region": "Lambton",
+    "date": "07/08/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "71.73",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "43381-0095",
+    "rollno": "38 06 006 020 04200"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "403 ESTERVILLE RD"
+    ],
+    "city_region": "Dawn-Euphemia : Lambton",
+    "date_text": "08 Jul 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1204977 Ontario Ltd"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

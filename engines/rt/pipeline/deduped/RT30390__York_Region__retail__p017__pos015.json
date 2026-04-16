@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT30390",
+  "source_folder": "York_Region/retail/p017",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30390",
+      "source_folder": "York_Region/retail/p017",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p017/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "3225 HWY 7 E",
+        "UNIT 1"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "03 Jun 2003",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tenstone Developments Inc     416-368-1460"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Geoffrey Grayhurst",
+        "Dorsay Development Corp",
+        "121 Richmond St W, Ste 801",
+        "Toronto, Ontario",
+        "M5H 2K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "First Markham Place HWY 7 Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Berger",
+        "Box 100",
+        "Inglewood, Ontario",
+        "L0N 1K0"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 1 storey; 9,180 sf @ $196",
+      "",
+      "Part of First Markham Place"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 931",
+      "Level 1, Unit 1"
+    ],
+    "arn_text": "19 36 020 127 91710",
+    "consideration_lines": [
+      "cash: $1,650,000     assumed/vtb debt: $150,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "816 / 984",
+      "rt_id": "RT30390"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "3225 HWY 7 E, UNIT 1",
+    "postcode": "L3R 3P3",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/03/2003",
+    "desc": "Retail Condo - 1 storey; 9,180 sf @ $196",
+    "bldg": "9,180 sf",
+    "acreage": "",
+    "consid": "1800000",
+    "cash": "1650000",
+    "debt": "150000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 020 127 91710"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "3225 HWY 7 E",
+      "UNIT 1"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "03 Jun 2003",
+    "note": "",
+    "description": "Retail Condo - 1 storey; 9,180 sf @ $196",
+    "seller_lines": [
+      "Tenstone Developments Inc"
+    ],
+    "buyer_lines": [
+      "First Markham Place HWY 7 Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "rt_id": "RT56803",
+  "source_folder": "Leeds/retail/p001",
+  "position": 39,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT56803",
+      "source_folder": "Leeds/retail/p001",
+      "position": 39,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/retail/p001/detail_039.html"
+    },
+    "header": {
+      "address_lines": [
+        "2399 PARKEDALE AVE W"
+      ],
+      "city_region": "Brockville : Leeds",
+      "date_text": "26 Jul 2007",
+      "price_text": "$50,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RRVP 1000 Islands Mall Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "RioCan REIT",
+        "The Exchange Tower",
+        "130 King St, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000 Islands Mall Inc     416-863-0900"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frank Whiting",
+        "Davies Ward Phillips & Vineberg LLP",
+        "1 First Canadian Place, 44th Flr",
+        "Toronto, Ontario",
+        "M5X 1B1"
+      ]
+    },
+    "description_lines": [
+      "1000 Islands Mall - 1 storey; 64 units 266,653 sf @ $188",
+      "",
+      "Enclosed mall",
+      "64 units, 6 are vacant (10,407 sf)",
+      "Anchored by Sears"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 12",
+      "Plan 4, Part Lots 1 & 3",
+      "Plan 28R-11541, Parts 1-3",
+      "Plan 28R-10168, Part 1",
+      "Plan 28R-12428A, Parts 1-5",
+      "",
+      "21.73 acre"
+    ],
+    "arn_text": "08 02 020 052 00500",
+    "consideration_lines": [
+      "cash: $50,250,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Dekabank Deutsche Girozentrale",
+      "principal: $50,000,000   rate: 25.0% per annum",
+      "registered: 07/26/2007   due: on demand",
+      "",
+      "chargee: Lehman Brothers International (Europe)",
+      "principal: $12,000,000   rate: 25.0% per annum",
+      "registered: 07/26/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT568/RT56803/1207_111424.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT568/RT56803/1207_111441.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT568/RT56803/1207_111447.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT568/RT56803/1207_111459.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT568/RT56803/1207_111526.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "40 / 40",
+      "rt_id": "RT56803"
+    }
+  },
+  "export": {
+    "position": 39,
+    "address": "2399 PARKEDALE AVE W",
+    "postcode": "K6V 3G9",
+    "municipality": "Brockville",
+    "region": "Leeds",
+    "date": "07/26/2007",
+    "desc": "1000 Islands Mall - 1 storey; 64 units 266,653 sf @ $188",
+    "bldg": "266,653 s",
+    "acreage": "21.73",
+    "consid": "50250000",
+    "cash": "50250000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "08 02 020 052 00500"
+  },
+  "results": {
+    "position": 39,
+    "address_lines": [
+      "2399 PARKEDALE AVE W"
+    ],
+    "city_region": "Brockville : Leeds",
+    "date_text": "26 Jul 2007",
+    "note": "",
+    "description": "1000 Islands Mall - 1 storey; 64 units 266,653 sf @ $188",
+    "seller_lines": [
+      "RRVP 1000 Islands Mall Inc"
+    ],
+    "buyer_lines": [
+      "1000 Islands Mall Inc"
+    ],
+    "price_text": "$50,250,000"
+  }
+}

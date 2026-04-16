@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT26258",
+  "source_folder": "Ottawa-Carleton/retail/p020",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26258",
+      "source_folder": "Ottawa-Carleton/retail/p020",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p020/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2580 - 2608 INNES RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "26 Jun 2002",
+      "price_text": "$617,500",
+      "note": "50% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Cyrand Investments Ltd     613-237-4000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ronald Prehogan",
+        "55 Metcalfe St, Ste 750",
+        "Ottawa, Ontario",
+        "K1P 6L5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2580 Innes Road Holdings Inc     613-728-7154"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Erin Schneider",
+        "732 Byron Ave",
+        "Ottawa, Ontario",
+        "K2A 0H3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 28,350 sf"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-3837, Part 4",
+      "Plan 5R-4287, Part 1",
+      "",
+      "2.21 acre"
+    ],
+    "arn_text": "06 06 000 212 10100",
+    "consideration_lines": [
+      "cash: $132,084     assumed/vtb debt: $485,416"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "993 / 1141",
+      "rt_id": "RT26258"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2580 - 2608 INNES RD",
+    "postcode": "K1B 4Z6",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "06/26/2002",
+    "desc": "Retail Plaza - 1 storey; 28,350 sf",
+    "bldg": "28,350 sf",
+    "acreage": "2.21",
+    "consid": "617500",
+    "cash": "132084",
+    "debt": "485416",
+    "note": "50% Interest",
+    "pin": "",
+    "rollno": "06 06 000 212 10100"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2580 - 2608 INNES RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "26 Jun 2002",
+    "note": "50% Interest",
+    "description": "Retail Plaza - 1 storey; 28,350 sf",
+    "seller_lines": [
+      "Cyrand Investments Ltd"
+    ],
+    "buyer_lines": [
+      "2580 Innes Road Holdings Inc"
+    ],
+    "price_text": "$617,500"
+  }
+}

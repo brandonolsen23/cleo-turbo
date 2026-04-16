@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT38405",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38405",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "300 LINCOLN ST"
+      ],
+      "city_region": "Welland : Niagara S",
+      "date_text": "28 Oct 2004",
+      "price_text": "$3,325,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Phillip's Ladies Wear Cedarbrae Ltd",
+        "Phillip's Ladies Wear Parkway Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2281 Yonge St, Ste 206",
+        "Toronto, Ontario",
+        "M4P 2C6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Counsel Welland Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joshua Silber",
+        "40 King St W, Ste 3200",
+        "Toronto, Ontario",
+        "M5H 3Y2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 26 units 171,000 sf @ $19"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 59R-825, Parts 1, 4 & 6",
+      "",
+      "13.67 acre"
+    ],
+    "arn_text": "27 19 040 015 04600",
+    "consideration_lines": [
+      "cash: $3,325,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT384/RT38405/air1.jpg",
+        "/assets/files/RT3/RT384/RT38405/air2.jpg",
+        "/assets/files/RT3/RT384/RT38405/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT384/RT38405/photo.jpg"
+    },
+    "footer": {
+      "page_position": "271 / 324",
+      "rt_id": "RT38405"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "300 LINCOLN ST",
+    "postcode": "L3B 4N4",
+    "municipality": "Welland",
+    "region": "Niagara S",
+    "date": "10/28/2004",
+    "desc": "Retail Plaza - 1 storey; 26 units 171,000 sf @ $19",
+    "bldg": "171,000 sf",
+    "acreage": "13.67",
+    "consid": "3325000",
+    "cash": "3325000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 19 040 015 04600"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "300 LINCOLN ST"
+    ],
+    "city_region": "Welland : Niagara S",
+    "date_text": "28 Oct 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 26 units 171,000 sf @ $19",
+    "seller_lines": [
+      "Phillip's Ladies Wear Cedarbrae Ltd",
+      "Phillip's Ladies Wear Parkway Ltd"
+    ],
+    "buyer_lines": [
+      "Counsel Welland Ltd"
+    ],
+    "price_text": "$3,325,000"
+  }
+}

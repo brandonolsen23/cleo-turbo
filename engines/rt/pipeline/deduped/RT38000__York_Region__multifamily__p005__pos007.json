@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT38000",
+  "source_folder": "York_Region/multifamily/p005",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38000",
+      "source_folder": "York_Region/multifamily/p005",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/multifamily/p005/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "805 GRACE ST"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "01 Oct 2004",
+      "price_text": "$620,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Nedra Ltd     905-853-5495"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arden Fischer",
+        "1151 Gorham St, Unit 11",
+        "Newmarket, Ontario",
+        "L3Y 8Y1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 81, Part Lot 13",
+      "As in Inst No R-456224",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "19 48 010 043 00200",
+    "consideration_lines": [
+      "cash: $279,320     assumed/vtb debt: $340,680"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT380/RT38000/air1.jpg",
+        "/assets/files/RT3/RT380/RT38000/air2.jpg",
+        "/assets/files/RT3/RT380/RT38000/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT380/RT38000/photo.jpg"
+    },
+    "footer": {
+      "page_position": "208 / 263",
+      "rt_id": "RT38000"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "805 GRACE ST",
+    "postcode": "L3Y 2L6",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "10/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "620000",
+    "cash": "279320",
+    "debt": "340680",
+    "note": "",
+    "pin": "",
+    "rollno": "19 48 010 043 00200"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "805 GRACE ST"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "01 Oct 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Nedra Ltd"
+    ],
+    "price_text": "$620,000"
+  }
+}

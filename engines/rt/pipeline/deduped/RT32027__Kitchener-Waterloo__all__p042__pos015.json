@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT32027",
+  "source_folder": "Kitchener-Waterloo/all/p042",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32027",
+      "source_folder": "Kitchener-Waterloo/all/p042",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/all/p042/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 1",
+        "PART LOT 11"
+      ],
+      "city_region": "Exeter : Huron County",
+      "date_text": "01 Oct 2003",
+      "price_text": "$510,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Heyink's Poultry Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raymond Heyink",
+        "RR 2",
+        "Hensall, Ontario",
+        "N0M 1X0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Boersma Poultry Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raymond Heyink",
+        "RR 1",
+        "Exeter, Ontario",
+        "N0M 1S4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 11",
+      "As in Inst No R-116522",
+      "",
+      "98.96 acre"
+    ],
+    "arn_text": "40 09 000 100 04700",
+    "consideration_lines": [
+      "cash: $510,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2066 / 2093",
+      "rt_id": "RT32027"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "CONC 1, PART LOT 11",
+    "postcode": "",
+    "municipality": "Exeter",
+    "region": "Huron County",
+    "date": "10/01/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": "98.96",
+    "consid": "510000",
+    "cash": "510000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "40 09 000 100 04700"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "CONC 1",
+      "PART LOT 11"
+    ],
+    "city_region": "Exeter : Huron County",
+    "date_text": "01 Oct 2003",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Heyink's Poultry Farms Ltd"
+    ],
+    "buyer_lines": [
+      "Boersma Poultry Ltd"
+    ],
+    "price_text": "$510,000"
+  }
+}

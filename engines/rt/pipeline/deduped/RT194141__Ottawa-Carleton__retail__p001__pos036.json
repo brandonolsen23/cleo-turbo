@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT194141",
+  "source_folder": "Ottawa-Carleton/retail/p001",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194141",
+      "source_folder": "Ottawa-Carleton/retail/p001",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p001/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "640 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "05 Sep 2025",
+      "price_text": "$3,601,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Torovin Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1187 Bank St, Ste 200",
+        "Ottawa, Ontario",
+        "K1S 3X7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001307437 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vince Campanale",
+        "1187 St, Ste 200",
+        "Ottawa, Ontario",
+        "K1S 3X7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4M-8, Lots 33-35",
+      "",
+      "PIN: 04134-0205 +",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $3,601,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "37 / 1141",
+      "rt_id": "RT194141"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "640 BANK ST",
+    "postcode": "K1S 3Z8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "09/05/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "3601000",
+    "cash": "3601000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04134-0205+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "640 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "05 Sep 2025",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Torovin Investments Ltd"
+    ],
+    "buyer_lines": [
+      "1001307437 Ontario Inc"
+    ],
+    "price_text": "$3,601,000"
+  }
+}

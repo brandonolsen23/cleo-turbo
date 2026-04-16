@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT35177",
+  "source_folder": "Halton_Region/hotel-motel/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35177",
+      "source_folder": "Halton_Region/hotel-motel/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/hotel-motel/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "527 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "19 Apr 2004",
+      "price_text": "$945,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1597596 Ontario Inc     905-634-6119"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Sukwinder Buttar",
+        "Crestwood Motel",
+        "527 Plains Rd E",
+        "Burlington, Ontario",
+        "L7T 2E2"
+      ]
+    },
+    "description_lines": [
+      "Motel - 1 storey; 24 rooms @ $39,375"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan PF-840, Block A",
+      "Except Plan FM-194, Part 1",
+      "",
+      "0.66 acre"
+    ],
+    "arn_text": "24 02 010 116 11300",
+    "consideration_lines": [
+      "cash: $945,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT351/RT35177/air1.jpg",
+        "/assets/files/RT3/RT351/RT35177/air2.jpg",
+        "/assets/files/RT3/RT351/RT35177/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT351/RT35177/photo.jpg"
+    },
+    "footer": {
+      "page_position": "22 / 34",
+      "rt_id": "RT35177"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "527 PLAINS RD E",
+    "postcode": "L7T 2E2",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/19/2004",
+    "desc": "Motel - 1 storey; 24 rooms @ $39,375",
+    "bldg": "24 rooms",
+    "acreage": ".66",
+    "consid": "945000",
+    "cash": "945000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 010 116 11300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "527 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "19 Apr 2004",
+    "note": "",
+    "description": "Motel - 1 storey; 24 rooms @ $39,375",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1597596 Ontario Inc"
+    ],
+    "price_text": "$945,000"
+  }
+}

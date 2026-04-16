@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT193440",
+  "source_folder": "Prince_Edward/retail/p001",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193440",
+      "source_folder": "Prince_Edward/retail/p001",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prince_Edward/retail/p001/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 PAUL ST"
+      ],
+      "city_region": "Prince Edward : Prince Edward",
+      "date_text": "14 Jul 2025",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2528673 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7 Argyle Cres",
+        "Picton, Ontario",
+        "K0K 2T0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "The Golf Studio Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Matthew Hryhorsky",
+        "7 Paul St",
+        "Picton, Ontario",
+        "K0K 2T0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 47R-2968, Parts 1 & 2",
+      "",
+      "PIN: 55061-0072",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "13 50 020 025 20600",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Kingston Community Credit Union Ltd",
+      "principal: $560,000   rate: 5.39% per annum.",
+      "registered: 07/14/2025   due: 07/14/2030"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193440/0906_134306.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193440/0906_134311.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193440/0906_134337.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193440/0906_134406.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193440/0906_134407.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193440/0906_134441.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3 / 17",
+      "rt_id": "RT193440"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "7 PAUL ST",
+    "postcode": "K0K 2T0",
+    "municipality": "Prince Edward",
+    "region": "Prince Edward",
+    "date": "07/14/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "55061-0072",
+    "rollno": "13 50 020 025 20600"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "7 PAUL ST"
+    ],
+    "city_region": "Prince Edward : Prince Edward",
+    "date_text": "14 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2528673 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "The Golf Studio Inc"
+    ],
+    "price_text": "$800,000"
+  }
+}

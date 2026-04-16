@@ -1,0 +1,122 @@
+{
+  "rt_id": "RT57211",
+  "source_folder": "Peel_Region/all/p030",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT57211",
+      "source_folder": "Peel_Region/all/p030",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/all/p030/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "BETHUNE DR S",
+        "FAIRVIEW DR",
+        "CONC EMR",
+        "PART LOT 5"
+      ],
+      "city_region": "Gravenhurst : Muskoka",
+      "date_text": "03 Aug 2007",
+      "price_text": "$740,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "919517 Ontario Ltd     416-787-0681"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Bernard Reynolds",
+        "Mehl & Reynolds",
+        "Yorkdale Place",
+        "1 Yorkdale Rd, Ste 200",
+        "Toronto, Ontario",
+        "M6A 3A1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "737566 Ontario Inc     905-884-9498"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Norman Smith",
+        "Smith Real Estate Ltd",
+        "10243 Yonge St",
+        "Richmond Hill, Ontario",
+        "L4C 3B2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc EMR, Part Lot 5",
+      "Plan 35R-10059",
+      "Parts 1, 3 & 4",
+      "",
+      "2.03 acre"
+    ],
+    "arn_text": "44 02 010 001 00201",
+    "consideration_lines": [
+      "cash: $570,000     assumed/vtb debt: $170,000",
+      "",
+      "chargee: 919517 Ontario Ltd",
+      "principal: $170,000   rate: 6.0% per annum",
+      "registered: 08/03/2007   due: 08/03/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1474 / 1484",
+      "rt_id": "RT57211"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "BETHUNE DR S, FAIRVIEW DR, CONC EMR, PART LOT 5",
+    "postcode": "",
+    "municipality": "Gravenhurst",
+    "region": "Muskoka",
+    "date": "08/03/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": "2.03",
+    "consid": "740000",
+    "cash": "570000",
+    "debt": "170000",
+    "note": "",
+    "pin": "",
+    "rollno": "44 02 010 001 00201"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "BETHUNE DR S",
+      "FAIRVIEW DR",
+      "CONC EMR",
+      "PART LOT 5"
+    ],
+    "city_region": "Gravenhurst : Muskoka",
+    "date_text": "03 Aug 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "919517 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "737566 Ontario Inc"
+    ],
+    "price_text": "$740,000"
+  }
+}

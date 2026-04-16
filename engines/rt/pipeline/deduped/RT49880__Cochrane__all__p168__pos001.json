@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT49880",
+  "source_folder": "Cochrane/all/p168",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49880",
+      "source_folder": "Cochrane/all/p168",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p168/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "2420 BANK ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "14 Jul 2006",
+      "price_text": "$1,630,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1618345 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rick Gumbs",
+        "2280 St Laurent Blvd, Ste 201",
+        "Ottawa, Ontario",
+        "K1G 4K1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1618353 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Rick Gumbs",
+        "2280 St Laurent Blvd, Ste 201",
+        "Ottawa, Ontario",
+        "K1G 4K1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - RF, Part Lot 5",
+      "Plan 4R-20435, Parts 6 & 7"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,630,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "8352 / 10920",
+      "rt_id": "RT49880"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "2420 BANK ST",
+    "postcode": "",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/14/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1630000",
+    "cash": "1630000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "2420 BANK ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "14 Jul 2006",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "1618345 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1618353 Ontario Inc"
+    ],
+    "price_text": "$1,630,000"
+  }
+}

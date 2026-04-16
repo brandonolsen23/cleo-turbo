@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT180735",
+  "source_folder": "Kitchener-Waterloo/retail/p003",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT180735",
+      "source_folder": "Kitchener-Waterloo/retail/p003",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p003/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "136 WEBER ST S"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "04 Oct 2023",
+      "price_text": "$1,840,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "11296817 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "208 River Birch St",
+        "Kitchener, Ontario",
+        "N2C 2V2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "15121086 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Tonee Patrus",
+        "21 Pollock Ave",
+        "Beaverton, Ontario",
+        "L0K 1A0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 822,",
+      "Lot 909 & Part Lot 89",
+      "Plan 58R-6777, Part 1",
+      "",
+      "PIN: 22334-0006",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "30 16 021 550 02100",
+    "consideration_lines": [
+      "cash: $1,840,000     assumed/vtb debt: $0",
+      "other: $1,000,000",
+      "",
+      "chargee: Rathcliffe Properties Ltd",
+      "principal: $1,895,000   rate: First 12 months: Greater of 10.5% or TD prime plus 3.80% per annum, with monthly payments of $17,370.83.\nMonths 13 & 14: Greater of 14.0% or TD prime plus 7.05% per annum, with monthly payments of $22,503.13.",
+      "registered: 10/04/2023   due: 01/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1807/RT180735/0121_080240.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1807/RT180735/0121_080241.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1807/RT180735/0121_080307.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1807/RT180735/0121_080308.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "122 / 752",
+      "rt_id": "RT180735"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "136 WEBER ST S",
+    "postcode": "N2J 2A8",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "10/04/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "1840000",
+    "cash": "1840000",
+    "debt": "",
+    "note": "",
+    "pin": "22334-0006",
+    "rollno": "30 16 021 550 02100"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "136 WEBER ST S"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "04 Oct 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "11296817 Canada Inc"
+    ],
+    "buyer_lines": [
+      "15121086 Canada Inc"
+    ],
+    "price_text": "$1,840,000"
+  }
+}

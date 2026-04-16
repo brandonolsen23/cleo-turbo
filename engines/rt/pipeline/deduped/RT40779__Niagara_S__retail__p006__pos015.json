@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT40779",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40779",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "5175 VICTORIA AVE"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "01 Mar 2005",
+      "price_text": "$3,440,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1122118 Ontario Inc     905-688-4500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nick Migdanalevros",
+        "Chown Cairns",
+        "80 King St, PO Box 760",
+        "St Catharines, Ontario",
+        "L2R 6Y8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "5175 Victoria Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Danny Shiff",
+        "2788 Bathurst St, Ste 218",
+        "Toronto, Ontario",
+        "M6B 3A3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 49,000 sf @ $70"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1001",
+      "Lots D, F, G & Part Lot E",
+      "Plan 59R-1796, Part 1",
+      "",
+      "3.43 acre"
+    ],
+    "arn_text": "27 25 020 007 11500",
+    "consideration_lines": [
+      "cash: $3,440,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT407/RT40779/photo.jpg"
+    },
+    "footer": {
+      "page_position": "266 / 324",
+      "rt_id": "RT40779"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "5175 VICTORIA AVE",
+    "postcode": "L2E 4E4",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "03/01/2005",
+    "desc": "Retail Plaza - 1 storey; 4 units 49,000 sf @ $70",
+    "bldg": "49,000 sf",
+    "acreage": "3.43",
+    "consid": "3440000",
+    "cash": "3440000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "27 25 020 007 11500"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "5175 VICTORIA AVE"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "01 Mar 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 49,000 sf @ $70",
+    "seller_lines": [
+      "1122118 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "5175 Victoria Holdings Inc"
+    ],
+    "price_text": "$3,440,000"
+  }
+}

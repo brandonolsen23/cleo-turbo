@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT177467",
+  "source_folder": "Metro_Toronto/retail/p017",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177467",
+      "source_folder": "Metro_Toronto/retail/p017",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p017/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "3089 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "01 May 2023",
+      "price_text": "$1,260,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "14031504 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "245 Wardlaw Place",
+        "Woodbridge, Ontario",
+        "L4H 3L7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000469888 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Huong Thi Huynh",
+        "24 Ellis Ave",
+        "York, Ontario",
+        "M9N 1G3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3757, Part Lot 3",
+      "As in Inst No TB-816437",
+      "",
+      "PIN: 06413-0246",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 01 071 270 03700",
+    "consideration_lines": [
+      "cash: $300,000     assumed/vtb debt: $960,000",
+      "",
+      "chargee: 14031504 Canada Inc",
+      "principal: $960,000   rate: 2.0% per annum.",
+      "registered: 05/01/2023   due: 04/27/2024"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1774/RT177467/0514_113358.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1774/RT177467/0514_113411.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1774/RT177467/0514_113431.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1774/RT177467/0514_113438.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "845 / 4952",
+      "rt_id": "RT177467"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "3089 KINGSTON RD",
+    "postcode": "M1M 1P1",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "1260000",
+    "cash": "300000",
+    "debt": "960000",
+    "note": "",
+    "pin": "06413-0246",
+    "rollno": "19 01 071 270 03700"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "3089 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "01 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "14031504 Canada Inc"
+    ],
+    "buyer_lines": [
+      "1000469888 Ontario Corp"
+    ],
+    "price_text": "$1,260,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT177976",
+  "source_folder": "Lambton/office/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177976",
+      "source_folder": "Lambton/office/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/office/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1098 LONDON RD"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "11 Apr 2023",
+      "price_text": "$850,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bennett Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "3154 Egremont Rd",
+        "Camlachie, Ontario",
+        "N0N 1E0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2783010 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Joseph Digregorio",
+        "1302 Chudleigh Rd",
+        "Sarnia, Ontario",
+        "N7S 2M9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 6, Part Lot 19",
+      "As in Inst No L-868483",
+      "",
+      "PIN: 43217-0055",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "38 29 300 021 19700",
+    "consideration_lines": [
+      "cash: $850,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $555,000   rate: Prime plus 6.0% per annum.",
+      "registered: 04/11/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 34",
+      "rt_id": "RT177976"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1098 LONDON RD",
+    "postcode": "N7S 1P1",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "04/11/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "850000",
+    "cash": "850000",
+    "debt": "",
+    "note": "",
+    "pin": "43217-0055",
+    "rollno": "38 29 300 021 19700"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1098 LONDON RD"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "11 Apr 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bennett Properties Inc"
+    ],
+    "buyer_lines": [
+      "2783010 Ontario Inc"
+    ],
+    "price_text": "$850,000"
+  }
+}

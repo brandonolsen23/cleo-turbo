@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT187075",
+  "source_folder": "Sudbury/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187075",
+      "source_folder": "Sudbury/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "559 CENTRE ST"
+      ],
+      "city_region": ": Sudbury",
+      "date_text": "04 Sep 2024",
+      "price_text": "$2,650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jass Buildco Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4362 Hwy 6 S",
+        "Whitefish Falls, Ontario",
+        "P5E 0A6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000861554 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anthony Aquino",
+        "559 Centre St",
+        "Espanola, Ontario",
+        "P5E 1J9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 5 - Merritt, Part Lot 8",
+      "Plan 53R-13128, Part 1",
+      "",
+      "PIN: 73407-0416",
+      "",
+      "1.00 acre"
+    ],
+    "arn_text": "52 26 000 009 15101",
+    "consideration_lines": [
+      "cash: $2,650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,650,000   rate: Prime plus 6.0% per annum.",
+      "registered: 09/04/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 90",
+      "rt_id": "RT187075"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "559 CENTRE ST",
+    "postcode": "P5E 1J9",
+    "municipality": "",
+    "region": "Sudbury",
+    "date": "09/04/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1",
+    "consid": "2650000",
+    "cash": "2650000",
+    "debt": "",
+    "note": "",
+    "pin": "73407-0416",
+    "rollno": "52 26 000 009 15101"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "559 CENTRE ST"
+    ],
+    "city_region": ": Sudbury",
+    "date_text": "04 Sep 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Jass Buildco Ltd"
+    ],
+    "buyer_lines": [
+      "1000861554 Ontario Ltd"
+    ],
+    "price_text": "$2,650,000"
+  }
+}

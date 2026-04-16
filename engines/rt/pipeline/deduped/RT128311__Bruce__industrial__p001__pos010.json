@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT128311",
+  "source_folder": "Bruce/industrial/p001",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT128311",
+      "source_folder": "Bruce/industrial/p001",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/industrial/p001/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "1120 BRUCE RD 12"
+      ],
+      "city_region": "S. Bruce : Bruce",
+      "date_text": "07 Sep 2017",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Brick Brewing Co Ltd     519-742-2732"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sean Byrne",
+        "400 Bingemans Centre Dr",
+        "Kitchener, Ontario",
+        "N2B 3X9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Formosa Springs Brewery Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Haoliang Zhang",
+        "3336 Bethesda Rd",
+        "Stouffville, Ontario",
+        "L4A 3Z5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 3R-707, Part 1",
+      "Except:",
+      "Plan 3R-9255, Part 2",
+      "",
+      "PIN: 33212-0160",
+      "",
+      "E side Bruce Rd 12, S of Council Rd",
+      "",
+      "9.15 acre"
+    ],
+    "arn_text": "41 05 010 004 04900",
+    "consideration_lines": [
+      "cash: $1,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Kingspound Capital Inc",
+      "principal: $2,000,000   rate: 10.0% per annum.",
+      "registered: 09/07/2017   due: 06/06/2018"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1283/RT128311/air1.jpg",
+        "/assets/files/RT12/RT1283/RT128311/air2.jpg",
+        "/assets/files/RT12/RT1283/RT128311/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "11 / 19",
+      "rt_id": "RT128311"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "1120 BRUCE RD 12",
+    "postcode": "N0G 1W0",
+    "municipality": "S. Bruce",
+    "region": "Bruce",
+    "date": "09/07/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.15",
+    "consid": "1000000",
+    "cash": "1000000",
+    "debt": "",
+    "note": "",
+    "pin": "33212-0160",
+    "rollno": "41 05 010 004 04900"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "1120 BRUCE RD 12"
+    ],
+    "city_region": "S. Bruce : Bruce",
+    "date_text": "07 Sep 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Brick Brewing Co Ltd"
+    ],
+    "buyer_lines": [
+      "Formosa Springs Brewery Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

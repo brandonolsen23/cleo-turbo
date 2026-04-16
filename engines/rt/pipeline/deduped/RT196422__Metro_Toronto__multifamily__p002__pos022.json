@@ -1,0 +1,134 @@
+{
+  "rt_id": "RT196422",
+  "source_folder": "Metro_Toronto/multifamily/p002",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT196422",
+      "source_folder": "Metro_Toronto/multifamily/p002",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p002/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "485 KINGSTON RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "07 Jan 2026",
+      "price_text": "$25,900,018",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "485 Kingston Rd. Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "485 Kingston Rd, Ste 908",
+        "Toronto, Ontario",
+        "M4L 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "485 Kingston Road Inc     416-924-7223"
+      ],
+      "trade_name": "Initial Properties Corp",
+      "contact_lines": [
+        "Attn: Mark Koenig",
+        "22 St Clair Ave E, Ste 1501",
+        "Toronto, Ontario",
+        "M4T 2S5"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg: 9 storey; 117 units @ $221,368",
+      "",
+      "2 elevators",
+      "",
+      "47 surface parking stalls",
+      "",
+      "Purchased as an investment."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66R-15749, Parts 5-7",
+      "Plan 827 - East Toronto",
+      "Lots 1-3 and Part Reserve lying W of Lot 1",
+      "",
+      "PIN: 21018-0076 +",
+      "",
+      "S side of Kingston Rd, E of Woodbine Ave",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "19 04 093 320 05000",
+    "consideration_lines": [
+      "cash: $25,900,018     assumed/vtb debt: $0",
+      "",
+      "chargee: Peakhill Capital Inc",
+      "principal: $25,900,000   rate: 10.0% per annum. Chargee may automatically extend for a 1 month period at RBC prime plus 10.0% per annum.",
+      "registered: 01/07/2026   due: 02/01/2027",
+      "",
+      "chargee: 485 Kingston Rd Ltd",
+      "principal: $3,500,000   rate: 6.0% per annum. Chargee may automatically extend for a 60 day period at RBC prime plus 8.0% per annum.",
+      "registered: 01/07/2026   due: 01/07/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196422/0125_075158.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196422/0125_075205.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196422/0125_075259.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196422/0125_075308.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1964/RT196422/0125_075314.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "73 / 6031",
+      "rt_id": "RT196422"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "485 KINGSTON RD",
+    "postcode": "M4L 1V6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/07/2026",
+    "desc": "Apartment Bldg: 9 storey; 117 units @ $221,368",
+    "bldg": "117 units",
+    "acreage": ".79",
+    "consid": "25900018",
+    "cash": "25900018",
+    "debt": "",
+    "note": "",
+    "pin": "21018-0076+",
+    "rollno": "19 04 093 320 05000"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "485 KINGSTON RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "07 Jan 2026",
+    "note": "",
+    "description": "Apartment Bldg: 9 storey; 117 units @ $221,368",
+    "seller_lines": [
+      "485 Kingston Rd. Ltd"
+    ],
+    "buyer_lines": [
+      "485 Kingston Road Inc"
+    ],
+    "price_text": "$25,900,018"
+  }
+}

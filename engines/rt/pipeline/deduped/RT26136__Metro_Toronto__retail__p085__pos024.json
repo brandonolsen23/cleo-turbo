@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT26136",
+  "source_folder": "Metro_Toronto/retail/p085",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26136",
+      "source_folder": "Metro_Toronto/retail/p085",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p085/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "3465 - 3493 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "14 May 2002",
+      "price_text": "$5,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1246907 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: David Allen",
+        "4211 Yonge St, Ste 200",
+        "North York, Ontario",
+        "M2P 2A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "E-Lar Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alexandre Lazourenko",
+        "10 Yonge St, Ste 402",
+        "Toronto, Ontario",
+        "M5E 1R4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey; 20 units 44,000 sf @ $127",
+      "",
+      "12,000 sf of office over 32,000 sf retail"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1734, Part Lots 1-5",
+      "As in Inst No CA-600253",
+      "",
+      "3.30 acre"
+    ],
+    "arn_text": "19 01 072 100 02100",
+    "consideration_lines": [
+      "cash: $2,212,103     assumed/vtb debt: $3,387,897"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4225 / 4952",
+      "rt_id": "RT26136"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "3465 - 3493 KINGSTON RD",
+    "postcode": "M1M 1R4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/14/2002",
+    "desc": "Retail Plaza - 2 storey; 20 units 44,000 sf @ $127",
+    "bldg": "44,000 sf",
+    "acreage": "3.3",
+    "consid": "5600000",
+    "cash": "2212103",
+    "debt": "3387897",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 072 100 02100"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "3465 - 3493 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "14 May 2002",
+    "note": "",
+    "description": "Retail Plaza - 2 storey; 20 units 44,000 sf @ $127",
+    "seller_lines": [
+      "1246907 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "E-Lar Inc"
+    ],
+    "price_text": "$5,600,000"
+  }
+}

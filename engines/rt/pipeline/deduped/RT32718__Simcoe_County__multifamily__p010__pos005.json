@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT32718",
+  "source_folder": "Simcoe_County/multifamily/p010",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32718",
+      "source_folder": "Simcoe_County/multifamily/p010",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/multifamily/p010/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "340 BLAKE ST"
+      ],
+      "city_region": "Barrie : Simcoe County",
+      "date_text": "31 Oct 2003",
+      "price_text": "$7,550,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Barrie Manor Inc     416-483-8018"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Barry Lipson",
+        "25 Imperial St, Ste 500",
+        "Toronto, Ontario",
+        "M5P 1B9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Barrie Manor Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Larry Blankenstein",
+        "340 Blake St",
+        "Barrie, Ontario",
+        "L4M 1L3"
+      ]
+    },
+    "description_lines": [
+      "Retirement Home - 2.5 storey; 110 residents @ $68,636",
+      "",
+      "Known as Barrie Mano"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 51R-9762, Part 1",
+      "",
+      "1.35 acre"
+    ],
+    "arn_text": "43 42 011 002 00600",
+    "consideration_lines": [
+      "cash: $7,550,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "456 / 530",
+      "rt_id": "RT32718"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "340 BLAKE ST",
+    "postcode": "L4M 1L3",
+    "municipality": "Barrie",
+    "region": "Simcoe County",
+    "date": "10/31/2003",
+    "desc": "Retirement Home - 2.5 storey; 110 residents @ $68,636",
+    "bldg": "110 units",
+    "acreage": "1.35",
+    "consid": "7550000",
+    "cash": "7550000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "43 42 011 002 00600"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "340 BLAKE ST"
+    ],
+    "city_region": "Barrie : Simcoe County",
+    "date_text": "31 Oct 2003",
+    "note": "",
+    "description": "Retirement Home - 2.5 storey; 110 residents @ $68,636",
+    "seller_lines": [
+      "Barrie Manor Inc"
+    ],
+    "buyer_lines": [
+      "Barrie Manor Ltd"
+    ],
+    "price_text": "$7,550,000"
+  }
+}

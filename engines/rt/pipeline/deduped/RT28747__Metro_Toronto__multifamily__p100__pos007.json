@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28747",
+  "source_folder": "Metro_Toronto/multifamily/p100",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28747",
+      "source_folder": "Metro_Toronto/multifamily/p100",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p100/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "5 BIGGIN CT"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "31 Jan 2003",
+      "price_text": "$4,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1285632 Ontario Ltd     416-979-2023"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Paul Marsiglio",
+        "Integris Real Estate Consultants",
+        "415 Yonge St, Ste 902",
+        "Toronto, Ontario",
+        "M5B 2E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CAPREIT Apartments Inc     416-861-9404"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Yazdi Bharucha",
+        "11 Church St, Ste 200",
+        "Toronto, Ontario",
+        "M5E 1W1"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 4 storey; 65 units @ $73,846",
+      "",
+      "Last transferred in Nov 98 for $2,900,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 66M-725, Block B"
+    ],
+    "arn_text": "19 08 121 180 08700",
+    "consideration_lines": [
+      "cash: $2,453,359     assumed/vtb debt: $2,346,641"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT287/RT28747/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4958 / 6031",
+      "rt_id": "RT28747"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "5 BIGGIN CT",
+    "postcode": "M4A 1M2",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "01/31/2003",
+    "desc": "Apartment Bldg - 4 storey; 65 units @ $73,846",
+    "bldg": "65 units",
+    "acreage": "",
+    "consid": "4800000",
+    "cash": "2453359",
+    "debt": "2346641",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 121 180 08700"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "5 BIGGIN CT"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "31 Jan 2003",
+    "note": "",
+    "description": "Apartment Bldg - 4 storey; 65 units @ $73,846",
+    "seller_lines": [
+      "1285632 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "CAPREIT Apartments Inc"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

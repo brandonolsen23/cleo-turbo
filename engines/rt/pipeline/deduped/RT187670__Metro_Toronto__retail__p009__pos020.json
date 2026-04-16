@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT187670",
+  "source_folder": "Metro_Toronto/retail/p009",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT187670",
+      "source_folder": "Metro_Toronto/retail/p009",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p009/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "2574 YONGE ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Oct 2024",
+      "price_text": "$5,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canada Residential Rental Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1670 North Service Rd, Ste 210",
+        "Oakville, Ontario",
+        "L6H 7G3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Twenty Five Seventy Four Yonge Ltd     287-637-9811"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Andrew Unger",
+        "c/o Unger Law",
+        "1206 Centre St, Ste 204",
+        "Vaughan, Ontario",
+        "L4J 39"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-25,",
+      "Part Lot 1, W/S Yonge St",
+      "",
+      "PIN: 21159-0305",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 115 010 01900",
+    "consideration_lines": [
+      "cash: $5,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Hillmount Capital Mortgage Holdings Inc",
+      "principal: $3,000,000   rate: Greater of 8.75% or TD prime plus 2.50% per annum.",
+      "registered: 10/01/2024   due: 10/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187670/1020_091111.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187670/1020_091115.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187670/1020_091132.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187670/1020_091136.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1876/RT187670/1020_091152.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "421 / 4952",
+      "rt_id": "RT187670"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "2574 YONGE ST",
+    "postcode": "M4P 2J3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/01/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "5500000",
+    "cash": "5500000",
+    "debt": "",
+    "note": "",
+    "pin": "21159-0305",
+    "rollno": "19 04 115 010 01900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "2574 YONGE ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Oct 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canada Residential Rental Ltd"
+    ],
+    "buyer_lines": [
+      "Twenty Five Seventy Four Yonge Ltd"
+    ],
+    "price_text": "$5,500,000"
+  }
+}

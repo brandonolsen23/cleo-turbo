@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT38719",
+  "source_folder": "Peterborough_County/retail/p004",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38719",
+      "source_folder": "Peterborough_County/retail/p004",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peterborough_County/retail/p004/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "850 LANSDOWNE ST W"
+      ],
+      "city_region": "Peterborough : Peterborough County",
+      "date_text": "03 Nov 2004",
+      "price_text": "$869,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1407660 Ontario Inc     905-306-0901"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohammed Vakil",
+        "4159 Sandover Ct",
+        "Mississauga, Ontario",
+        "L5C 3K8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Duane Cummiskey Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Duane Cummiskey",
+        "1451 Dranoel Rd",
+        "Cavan, Ontario",
+        "L0A 1C0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 48-Q",
+      "Part Lots 5-8 & 68",
+      "As in Inst No R-474987",
+      "",
+      "0.48 acre"
+    ],
+    "arn_text": "15 14 020 030 02000",
+    "consideration_lines": [
+      "cash: $869,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "152 / 157",
+      "rt_id": "RT38719"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "850 LANSDOWNE ST W",
+    "postcode": "K9J 1Z6",
+    "municipality": "Peterborough",
+    "region": "Peterborough County",
+    "date": "11/03/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".48",
+    "consid": "869000",
+    "cash": "869000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "15 14 020 030 02000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "850 LANSDOWNE ST W"
+    ],
+    "city_region": "Peterborough : Peterborough County",
+    "date_text": "03 Nov 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1407660 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Duane Cummiskey Holdings Inc"
+    ],
+    "price_text": "$869,000"
+  }
+}

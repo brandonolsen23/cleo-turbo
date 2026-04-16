@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT120002",
+  "source_folder": "Metro_Toronto/retail/p040",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT120002",
+      "source_folder": "Metro_Toronto/retail/p040",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p040/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "1836 - 1840 DAVENPORT RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 May 2013",
+      "price_text": "$1,125,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "WH Kilby and Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Elizabeth Zeidman",
+        "c/o 40 Grandell Dr",
+        "Ancaster, Ontario",
+        "L9K 0H4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bloorston Farms Ltd",
+        "Yaorland Developments Ltd     416-535-6230"
+      ],
+      "trade_name": "ARentals",
+      "contact_lines": [
+        "Attn: Rose Ross & David Antebi",
+        "c/o 609 Bloor St,W, Ste 200",
+        "Toronto, Ontario",
+        "M6G 1K5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 377, Part Lot 5",
+      "As in Inst No WH-146211",
+      "",
+      "PIN: 21324-0384"
+    ],
+    "arn_text": "19 04 032 280 04300",
+    "consideration_lines": [
+      "cash: $1,125,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1964 / 4952",
+      "rt_id": "RT120002"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "1836 - 1840 DAVENPORT RD",
+    "postcode": "M6G 2B6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/21/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1125000",
+    "cash": "1125000",
+    "debt": "",
+    "note": "",
+    "pin": "21324-0384",
+    "rollno": "19 04 032 280 04300"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "1836 - 1840 DAVENPORT RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 May 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "WH Kilby and Co Ltd"
+    ],
+    "buyer_lines": [
+      "Bloorston Farms Ltd",
+      "Yaorland Developments Ltd"
+    ],
+    "price_text": "$1,125,000"
+  }
+}

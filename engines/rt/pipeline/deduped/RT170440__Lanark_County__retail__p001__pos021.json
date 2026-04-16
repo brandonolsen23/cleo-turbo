@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT170440",
+  "source_folder": "Lanark_County/retail/p001",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT170440",
+      "source_folder": "Lanark_County/retail/p001",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lanark_County/retail/p001/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "101 RIDEAU AVE N"
+      ],
+      "city_region": "Smiths Falls : Lanark County",
+      "date_text": "14 Jul 2022",
+      "price_text": "$1,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Chappell Boys Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "PO Box 157, Main St",
+        "Smith Falls, Ontario",
+        "K7A 4T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2266563 Ontario Inc     800-430-7874"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Drew",
+        "c/o QRC Logistics (1978) Ltd",
+        "8020 Fifth Line",
+        "Georgetown, Ontario",
+        "L7G 0B8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 29",
+      "Plan 27R-4784, Parts 1 & 2",
+      "",
+      "PIN: 05265-0004",
+      "",
+      "9.12 acre"
+    ],
+    "arn_text": "09 01 000 035 07401",
+    "consideration_lines": [
+      "cash: $1,750,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,400,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/14/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1704/RT170440/1113_103029.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1704/RT170440/1113_103036.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1704/RT170440/1113_103125.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1704/RT170440/1113_103126.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1704/RT170440/1113_103138.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "22 / 69",
+      "rt_id": "RT170440"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "101 RIDEAU AVE N",
+    "postcode": "K7A 4W1",
+    "municipality": "Smiths Falls",
+    "region": "Lanark County",
+    "date": "07/14/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": "9.12",
+    "consid": "1750000",
+    "cash": "1750000",
+    "debt": "",
+    "note": "",
+    "pin": "05265-0004",
+    "rollno": "09 01 000 035 07401"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "101 RIDEAU AVE N"
+    ],
+    "city_region": "Smiths Falls : Lanark County",
+    "date_text": "14 Jul 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Chappell Boys Holdings Inc"
+    ],
+    "buyer_lines": [
+      "2266563 Ontario Inc"
+    ],
+    "price_text": "$1,750,000"
+  }
+}

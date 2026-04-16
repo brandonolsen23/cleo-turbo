@@ -1,0 +1,134 @@
+{
+  "rt_id": "RT123225",
+  "source_folder": "Perth_County/multifamily/p001",
+  "position": 40,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123225",
+      "source_folder": "Perth_County/multifamily/p001",
+      "position": 40,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/multifamily/p001/detail_040.html"
+    },
+    "header": {
+      "address_lines": [
+        "55 WILLIAM ST"
+      ],
+      "city_region": "Perth E : Perth County",
+      "date_text": "15 Feb 2017",
+      "price_text": "$1,401,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Tedfan Holdings Inc     519-836-2280"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Peter Tedesco",
+        "304 Stone Rd W, Ste 555",
+        "Guelph, Ontario",
+        "N1G 3C4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Apartment Bldg: 2 storey; 22 units @ $63,682",
+      "",
+      "7-1bdrm 13-2bdrm 2-3bdrm",
+      "",
+      "27 surface parking spaces",
+      "",
+      "Purchased as an investment.",
+      "",
+      "Last transferred in May 2013 for $1,282,500"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 44R-1695, Parts 1-5",
+      "",
+      "PIN: 53067-0116",
+      "",
+      "E side William St, S of Sippel St",
+      "",
+      "0.85 acre"
+    ],
+    "arn_text": "31 10 340 001 24700",
+    "consideration_lines": [
+      "cash: $1,401,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $715,550   rate: 2.33% per annum.",
+      "registered: 02/16/2017   due: 03/01/2022"
+    ],
+    "broker_lines": [
+      "RE/MAX Twin City Realty: Mark Hopkins, 519-579-4110"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_141817.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_141844.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_141854.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_141856.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_141943a.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_141943b.jpg",
+        "http://realtrack.cachefly.net/photos/RT12/RT1232/RT123225/0521_142017.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1232/RT123225/air1.jpg",
+        "/assets/files/RT12/RT1232/RT123225/air2.jpg",
+        "/assets/files/RT12/RT1232/RT123225/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "41 / 97",
+      "rt_id": "RT123225"
+    }
+  },
+  "export": {
+    "position": 40,
+    "address": "55 WILLIAM ST",
+    "postcode": "N0K 1M0",
+    "municipality": "Perth E",
+    "region": "Perth County",
+    "date": "02/15/2017",
+    "desc": "Apartment Bldg: 2 storey; 22 units @ $63,682",
+    "bldg": "22 units",
+    "acreage": ".85",
+    "consid": "1401000",
+    "cash": "1401000",
+    "debt": "",
+    "note": "",
+    "pin": "53067-0116",
+    "rollno": "31 10 340 001 24700"
+  },
+  "results": {
+    "position": 40,
+    "address_lines": [
+      "55 WILLIAM ST"
+    ],
+    "city_region": "Perth E : Perth County",
+    "date_text": "15 Feb 2017",
+    "note": "",
+    "description": "Apartment Bldg: 2 storey; 22 units @ $63,682",
+    "seller_lines": [
+      "Tedfan Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$1,401,000"
+  }
+}

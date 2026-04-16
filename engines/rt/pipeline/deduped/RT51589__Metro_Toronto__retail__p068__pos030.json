@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT51589",
+  "source_folder": "Metro_Toronto/retail/p068",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51589",
+      "source_folder": "Metro_Toronto/retail/p068",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p068/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "2195 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "16 Oct 2006",
+      "price_text": "$840,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2054047  Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Maria Parsons",
+        "37 Chestnut Hills Pkwy",
+        "Toronto, Ontario",
+        "M9A 3P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RAM Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Oksana Maksymiw",
+        "55 Ormskirk Rd, Ste 201",
+        "Etobicoke, Ontario",
+        "M9S 4V6"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 551, Block L",
+      "Part Lot 3",
+      "As in Inst No CA-550323",
+      "",
+      "0.03 acre"
+    ],
+    "arn_text": "19 04 011 500 04200",
+    "consideration_lines": [
+      "cash: $840,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51589/1029_130736.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51589/1029_130806.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51589/1029_130810.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT515/RT51589/1029_130811.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT515/RT51589/air1.jpg",
+        "/assets/files/RT5/RT515/RT51589/air2.jpg",
+        "/assets/files/RT5/RT515/RT51589/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3381 / 4952",
+      "rt_id": "RT51589"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "2195 BLOOR ST W",
+    "postcode": "M6S 1N2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "10/16/2006",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": ".03",
+    "consid": "840000",
+    "cash": "840000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 011 500 04200"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "2195 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "16 Oct 2006",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "2054047  Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RAM Holdings Inc"
+    ],
+    "price_text": "$840,000"
+  }
+}

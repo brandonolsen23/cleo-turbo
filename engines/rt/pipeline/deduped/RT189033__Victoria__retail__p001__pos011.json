@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT189033",
+  "source_folder": "Victoria/retail/p001",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189033",
+      "source_folder": "Victoria/retail/p001",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Victoria/retail/p001/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "6720 HIGHWAY 35",
+        "6720 HWY 35"
+      ],
+      "city_region": "Kawartha Lakes : Victoria",
+      "date_text": "12 Dec 2024",
+      "price_text": "$4,800,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "330 University Ave",
+        "Toronto, Ontario",
+        "M5G 1R7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000970694 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Emann Mehar",
+        "15 Pleasant Valley Dr",
+        "Stouffville, Ontario",
+        "L4A 1W3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Gull River Range Bexley, Part Lot 18",
+      "As in Inst No R-261635",
+      "",
+      "PIN: 63117-0375",
+      "",
+      "0.86 acre"
+    ],
+    "arn_text": "16 51 340 010 06300",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $4,800,000",
+      "chattels: $400,000",
+      "other: $400,000",
+      "",
+      "chargee: RCMF Mortgage Investments Inc",
+      "principal: $4,800,000   rate: 5.0% per annum.",
+      "registered: 12/12/2024   due: 01/01/2027"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189033/0101_141346.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189033/0101_141354.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189033/0101_141536.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189033/0101_141541.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1890/RT189033/0101_141542.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "12 / 49",
+      "rt_id": "RT189033"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "6720 HIGHWAY 35, 6720 HWY 35",
+    "postcode": "K0M 1K0",
+    "municipality": "Kawartha Lakes",
+    "region": "Victoria",
+    "date": "12/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".86",
+    "consid": "4800000",
+    "cash": "",
+    "debt": "4800000",
+    "note": "Vesting Order",
+    "pin": "63117-0375",
+    "rollno": "16 51 340 010 06300"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "6720 HIGHWAY 35",
+      "6720 HWY 35"
+    ],
+    "city_region": "Kawartha Lakes : Victoria",
+    "date_text": "12 Dec 2024",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1000970694 Ontario Inc"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

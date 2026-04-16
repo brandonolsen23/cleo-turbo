@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT45031",
+  "source_folder": "Metro_Toronto/retail/p072",
+  "position": 12,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45031",
+      "source_folder": "Metro_Toronto/retail/p072",
+      "position": 12,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p072/detail_012.html"
+    },
+    "header": {
+      "address_lines": [
+        "2075 - 2115 SHEPPARD AVE E"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "24 Oct 2005",
+      "price_text": "$5,600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Dacs Construction Ltd     705-549-0903"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lois Lipton",
+        "58 Beck Blvd",
+        "Penetang, Ontario",
+        "L9M 1E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ingko 2075 Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kathleen Chung",
+        "3367 Cajun Cres",
+        "Mississauga, Ontario",
+        "L5L 5T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - EYS, Part Lot 15",
+      "Plan 64R-6378, Part 3",
+      "",
+      "1.46 acre"
+    ],
+    "arn_text": "19 08 111 210 00500",
+    "consideration_lines": [
+      "cash: $5,600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Korea Exchange Bank of Canada",
+      "principal: $3,850,000   rate: Prime plus 1.0% per annum",
+      "registered: 10/24/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT450/RT45031/air1.jpg",
+        "/assets/files/RT4/RT450/RT45031/air2.jpg",
+        "/assets/files/RT4/RT450/RT45031/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT450/RT45031/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3563 / 4952",
+      "rt_id": "RT45031"
+    }
+  },
+  "export": {
+    "position": 12,
+    "address": "2075 - 2115 SHEPPARD AVE E",
+    "postcode": "M2J 1W6",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "10/24/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.46",
+    "consid": "5600000",
+    "cash": "5600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 08 111 210 00500"
+  },
+  "results": {
+    "position": 12,
+    "address_lines": [
+      "2075 - 2115 SHEPPARD AVE E"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "24 Oct 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Dacs Construction Ltd"
+    ],
+    "buyer_lines": [
+      "Ingko 2075 Ltd"
+    ],
+    "price_text": "$5,600,000"
+  }
+}

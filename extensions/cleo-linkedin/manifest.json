@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Cleo Turbo - LinkedIn Capture",
+  "version": "1.0.0",
+  "description": "Save LinkedIn profile work history to Cleo Turbo with one click",
+  "permissions": ["activeTab", "storage", "clipboardRead"],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "http://localhost:8099/*",
+    "http://localhost:5174/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["datanyze_scraper.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["http://localhost:5174/*"],
+      "js": ["cleo_bridge.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

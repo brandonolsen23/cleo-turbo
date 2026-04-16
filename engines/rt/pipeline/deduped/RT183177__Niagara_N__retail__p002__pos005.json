@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT183177",
+  "source_folder": "Niagara_N/retail/p002",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT183177",
+      "source_folder": "Niagara_N/retail/p002",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_N/retail/p002/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "53 ONTARIO ST"
+      ],
+      "city_region": "Grimsby : Niagara N",
+      "date_text": "12 Feb 2024",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2647211 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "90 Oakdale Blvd",
+        "Smithville, Ontario",
+        "L0R 2A0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Mayadenton Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Timothy De Long",
+        "18 Elizabeth St",
+        "Grimsby, Ontario",
+        "L3M 3K3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT18/RT1831/RT183177/mi.pdf",
+    "site_lines": [
+      "Plan 30R-8681, Part 2",
+      "",
+      "PIN: 46018-0052",
+      "",
+      "0.54 acre"
+    ],
+    "arn_text": "26 15 010 007 00500",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,500,000   rate: Prime plus 5.0% per annum.",
+      "registered: 02/12/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183177/0329_074917.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183177/0329_074922.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183177/0329_074923.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183177/0329_074956.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1831/RT183177/0329_075002.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "56 / 307",
+      "rt_id": "RT183177"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "53 ONTARIO ST",
+    "postcode": "L3M 3H4",
+    "municipality": "Grimsby",
+    "region": "Niagara N",
+    "date": "02/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".54",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "46018-0052",
+    "rollno": "26 15 010 007 00500"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "53 ONTARIO ST"
+    ],
+    "city_region": "Grimsby : Niagara N",
+    "date_text": "12 Feb 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2647211 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Mayadenton Ltd"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

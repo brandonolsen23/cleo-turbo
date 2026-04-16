@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT173038",
+  "source_folder": "York_Region/retail/p005",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173038",
+      "source_folder": "York_Region/retail/p005",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "83 DUNLOP ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "02 Nov 2022",
+      "price_text": "$4,851,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1223953 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "PO Box 61547",
+        "RPO Hillcrest Mall",
+        "Richmond Hill, Ontario",
+        "L4C 0C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000316790 Ontario Ltd     289-597-4061"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gil Shcolyar",
+        "18 Erica Rd",
+        "Thornhill, Ontario",
+        "L4J 2G1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 47",
+      "Plan 64R-3490, Parts 2 & 3",
+      "",
+      "PIN: 03172-0137",
+      "",
+      "0.89 acre"
+    ],
+    "arn_text": "19 38 020 010 46000",
+    "consideration_lines": [
+      "cash: $4,851,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $4,851,000   rate: Prime plus 6.0% per annum.",
+      "registered: 11/02/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1730/RT173038/1126_152020.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1730/RT173038/1126_152027.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1730/RT173038/1126_152036.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1730/RT173038/1126_152038.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1730/RT173038/1126_152039.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "244 / 984",
+      "rt_id": "RT173038"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "83 DUNLOP ST",
+    "postcode": "L4C 2M6",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "11/02/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".89",
+    "consid": "4851000",
+    "cash": "4851000",
+    "debt": "",
+    "note": "",
+    "pin": "03172-0137",
+    "rollno": "19 38 020 010 46000"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "83 DUNLOP ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "02 Nov 2022",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1223953 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1000316790 Ontario Ltd"
+    ],
+    "price_text": "$4,851,000"
+  }
+}

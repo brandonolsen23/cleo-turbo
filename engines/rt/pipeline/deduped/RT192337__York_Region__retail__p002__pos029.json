@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT192337",
+  "source_folder": "York_Region/retail/p002",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192337",
+      "source_folder": "York_Region/retail/p002",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "8740 JANE ST",
+        "UNIT 6"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "02 May 2025",
+      "price_text": "$866,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Elgra Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "47 James Stokes Ct",
+        "King City, Ontario",
+        "L7B 0M8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001126277 Ontario Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lang Kim",
+        "105 Falstaff Ave",
+        "North York, Ontario",
+        "M6L 2E2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1235",
+      "Level 1, Unit 6",
+      "",
+      "PIN: 29766-0006"
+    ],
+    "arn_text": "19 28 000 233 27608",
+    "consideration_lines": [
+      "cash: $866,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $664,500   rate: Prime plus 5.0% per annum.",
+      "registered: 05/02/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145531.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145536.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145600.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145621.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145740.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145744.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145748.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145749.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1923/RT192337/0601_145807.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "80 / 984",
+      "rt_id": "RT192337"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "8740 JANE ST, UNIT 6",
+    "postcode": "L4K 0E7",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "05/02/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "866000",
+    "cash": "866000",
+    "debt": "",
+    "note": "",
+    "pin": "29766-0006",
+    "rollno": "19 28 000 233 27608"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "8740 JANE ST",
+      "UNIT 6"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "02 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Elgra Inc"
+    ],
+    "buyer_lines": [
+      "1001126277 Ontario Corp"
+    ],
+    "price_text": "$866,000"
+  }
+}

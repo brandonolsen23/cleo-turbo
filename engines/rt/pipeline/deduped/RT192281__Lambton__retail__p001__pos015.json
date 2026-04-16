@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT192281",
+  "source_folder": "Lambton/retail/p001",
+  "position": 15,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT192281",
+      "source_folder": "Lambton/retail/p001",
+      "position": 15,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Lambton/retail/p001/detail_015.html"
+    },
+    "header": {
+      "address_lines": [
+        "412 EXMOUTH ST"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "23 May 2025",
+      "price_text": "$1,525,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mainstreet Credit Union Ltd     519-542-9059"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1295 London Rd",
+        "Sarnia, Ontario",
+        "N7S 1P6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000128976 Ontario Inc     519-542-8876"
+      ],
+      "trade_name": "Dr Karen Davis Dentistry",
+      "contact_lines": [
+        "Attn: Karen Davis",
+        "1350 L'Heritage Dr",
+        "Sarnia, Ontario",
+        "N7S 6H8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 267 - Sarnia City,",
+      "Part Lots 17-19",
+      "Plan 25R-10505, Parts 2 & 5",
+      "Inst Nos L-394495 & L-424892",
+      "Except:",
+      "Plan 25R-6732, Part 1",
+      "",
+      "PIN: 43191-0028 +",
+      "",
+      "NE corner of Exmouth St & Capel St"
+    ],
+    "arn_text": "38 29 300 002 17100",
+    "consideration_lines": [
+      "cash: $1,525,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Mainstreet Credit Union Ltd",
+      "principal: $1,335,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/23/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "16 / 106",
+      "rt_id": "RT192281"
+    }
+  },
+  "export": {
+    "position": 15,
+    "address": "412 EXMOUTH ST",
+    "postcode": "N7T 5N9",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "05/23/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1525000",
+    "cash": "1525000",
+    "debt": "",
+    "note": "",
+    "pin": "43191-0028+",
+    "rollno": "38 29 300 002 17100"
+  },
+  "results": {
+    "position": 15,
+    "address_lines": [
+      "412 EXMOUTH ST"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "23 May 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mainstreet Credit Union Ltd"
+    ],
+    "buyer_lines": [
+      "1000128976 Ontario Inc"
+    ],
+    "price_text": "$1,525,000"
+  }
+}

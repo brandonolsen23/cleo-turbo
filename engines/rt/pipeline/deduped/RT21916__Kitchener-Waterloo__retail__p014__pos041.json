@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT21916",
+  "source_folder": "Kitchener-Waterloo/retail/p014",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21916",
+      "source_folder": "Kitchener-Waterloo/retail/p014",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p014/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "115 NORTHFIELD DR",
+        "565 BARTA PLACE"
+      ],
+      "city_region": "Waterloo : Kitchener-Waterloo",
+      "date_text": "29 Jun 2001",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "594240 Ontario Ltd     519-888-7877"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerda Barta",
+        "147 Candlewood Cres",
+        "Waterloo, Ontario",
+        "N2L 5M7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2002948 Ontario Ltd     519-746-1666"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hans Schinker",
+        "Waterloo North Mazda",
+        "115 Northfield Dr",
+        "Waterloo, Ontario",
+        "N2L 6K1"
+      ]
+    },
+    "description_lines": [
+      "Car Dealership"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 58R-8153, Parts 8 & 15",
+      "",
+      "S side at Barta Place",
+      "",
+      "1.47 acre"
+    ],
+    "arn_text": "30 16 043 250 01325",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT219/RT21916/photo.jpg"
+    },
+    "footer": {
+      "page_position": "692 / 752",
+      "rt_id": "RT21916"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "115 NORTHFIELD DR, 565 BARTA PLACE",
+    "postcode": "N2L 6K1",
+    "municipality": "Waterloo",
+    "region": "Kitchener-Waterloo",
+    "date": "06/29/2001",
+    "desc": "Car Dealership",
+    "bldg": "",
+    "acreage": "1.47",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 16 043 250 01325"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "115 NORTHFIELD DR",
+      "565 BARTA PLACE"
+    ],
+    "city_region": "Waterloo : Kitchener-Waterloo",
+    "date_text": "29 Jun 2001",
+    "note": "",
+    "description": "Car Dealership",
+    "seller_lines": [
+      "594240 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2002948 Ontario Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

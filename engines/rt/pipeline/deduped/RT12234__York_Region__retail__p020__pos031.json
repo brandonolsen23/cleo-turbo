@@ -1,0 +1,153 @@
+{
+  "rt_id": "RT12234",
+  "source_folder": "York_Region/retail/p020",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT12234",
+      "source_folder": "York_Region/retail/p020",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p020/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "10610 BAYVIEW AVE"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "30 Jan 1998",
+      "price_text": "$1,378,673",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Ben Walker Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Murray E. Blankstein",
+        "150 Consumers Rd, Ste 207",
+        "Toronto, Ontario",
+        "M2J 1P9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "High Meadow Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gary Fine",
+        "1696 Bayview Ave",
+        "Toronto, Ontario",
+        "M4G 3C4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [],
+    "arn_text": "19 38 010 051 59000",
+    "consideration_lines": [
+      "cash: $6,662     assumed/vtb debt: $1,372,011",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $4,250,000   rate: 25.0% per annum.",
+      "registered: 01/12/2017   due: on demand",
+      "",
+      "chargee: 1642574 Ontario Ltd",
+      "principal: $1,350,000   rate: 7.0% per annum.",
+      "registered: 01/10/2017   due: 01/10/2020",
+      "",
+      "chargee: 1264297 Ontario Inc",
+      "principal: $150,000   rate: 8.0% per annum.",
+      "registered: 01/10/2017   due: 01/09/2018",
+      "",
+      "chargee: Rael Management Services Ltd",
+      "principal: $1,600,000   rate: 5.0% per annum.",
+      "registered: 01/13/2017   due: 01/12/2019",
+      "",
+      "chargee: Dapaul Management Ltd",
+      "principal: $10,000,000   rate: 10.0% per annum.",
+      "registered: 01/10/2017   due: 01/10/2020",
+      "",
+      "chargee: Atrium Mortgage Investment Corp",
+      "principal: $3,150,000   rate: 7.75% per annum.",
+      "registered: 01/10/2017   due: 01/01/2019",
+      "",
+      "chargee: Dapaul Management Ltd",
+      "principal: $10,000,000   rate: 10.0% per annum.",
+      "registered: 01/10/2017   due: 01/10/2020",
+      "",
+      "chargee: Atrium Mortgage Investment Corp",
+      "principal: $3,150,000   rate: 7.75% per annum.",
+      "registered: 01/10/2017   due: 01/01/2019",
+      "",
+      "Named Individual(s)",
+      "principal: $5,500,000   rate: 6.0% per annum if not paid in full by 2/11/2017",
+      "registered: 01/13/2017   due: 02/11/2017",
+      "",
+      "chargee: Farm Credit Canada",
+      "principal: $2,000,000   rate: 18.0% per annum.",
+      "registered: 01/10/2017   due: on demand",
+      "",
+      "chargee: Scotia Mortgage Corp",
+      "principal: $1,463,400   rate: 2.39% per annum.",
+      "registered: 01/12/2017   due: 01/12/2022",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $2,500,000   rate: Prime plus 1.0% per annum.",
+      "registered: 01/13/2017   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "982 / 984",
+      "rt_id": "RT12234"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "10610 BAYVIEW AVE",
+    "postcode": "",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "01/30/1998",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1378673",
+    "cash": "6662",
+    "debt": "1372011",
+    "note": "",
+    "pin": "",
+    "rollno": "19 38 010 051 59000"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "10610 BAYVIEW AVE"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "30 Jan 1998",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Ben Walker Ltd"
+    ],
+    "buyer_lines": [
+      "High Meadow Ltd"
+    ],
+    "price_text": "$1,378,673"
+  }
+}

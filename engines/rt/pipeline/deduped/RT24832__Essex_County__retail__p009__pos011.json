@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT24832",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24832",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "11293 TECUMSEH RD E",
+        "CONC 2, PT LOT 143"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "12 Mar 2002",
+      "price_text": "$665,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Andiamo Pools & Concrete Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lino Conciatori",
+        "11293 Tecumseh Rd E",
+        "Windsor, Ontario",
+        "N8R 1B1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1508897 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Osvaldo Rizzo",
+        "4201 Del Duca Dr",
+        "Oldcastle, Ontario",
+        "N0R 1L0"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg: 1 storey; 3 units about 4,500 sf @ $148"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lots 143",
+      "As in Inst Nos R-745764 & R-1415840"
+    ],
+    "arn_text": "37 39 070 890 01000 +",
+    "consideration_lines": [
+      "cash: $665,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT248/RT24832/photo.jpg"
+    },
+    "footer": {
+      "page_position": "412 / 460",
+      "rt_id": "RT24832"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "11293 TECUMSEH RD E, CONC 2, PT LOT 143",
+    "postcode": "N8R 1B1",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "03/12/2002",
+    "desc": "Retail Bldg: 1 storey; 3 units about 4,500 sf @ $148",
+    "bldg": "4,500 sf",
+    "acreage": "",
+    "consid": "665000",
+    "cash": "665000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 39 070 890 01000+"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "11293 TECUMSEH RD E",
+      "CONC 2, PT LOT 143"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "12 Mar 2002",
+    "note": "",
+    "description": "Retail Bldg: 1 storey; 3 units about 4,500 sf @ $148",
+    "seller_lines": [
+      "Andiamo Pools & Concrete Ltd"
+    ],
+    "buyer_lines": [
+      "1508897 Ontario Inc"
+    ],
+    "price_text": "$665,000"
+  }
+}

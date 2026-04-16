@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT44650",
+  "source_folder": "Metro_Toronto/retail/p072",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44650",
+      "source_folder": "Metro_Toronto/retail/p072",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p072/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "56 - 58 OSSINGTON AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "30 Sep 2005",
+      "price_text": "$649,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1522468 Ontario Inc     416-923-3784"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: James Colbert",
+        "72 Harper Ave",
+        "Toronto, Ontario",
+        "M4T 2L3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 404, Lots 1 & 2",
+      "",
+      "W side Ossington Ave, S of Humbert St",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 042 220 04000",
+    "consideration_lines": [
+      "cash: $649,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT446/RT44650/air1.jpg",
+        "/assets/files/RT4/RT446/RT44650/air2.jpg",
+        "/assets/files/RT4/RT446/RT44650/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3589 / 4952",
+      "rt_id": "RT44650"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "56 - 58 OSSINGTON AVE",
+    "postcode": "M6J 2Y7",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/30/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "649000",
+    "cash": "649000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 042 220 04000"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "56 - 58 OSSINGTON AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "30 Sep 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1522468 Ontario Inc"
+    ],
+    "price_text": "$649,000"
+  }
+}

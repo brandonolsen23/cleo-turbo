@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT188631",
+  "source_folder": "York_Region/retail/p003",
+  "position": 27,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188631",
+      "source_folder": "York_Region/retail/p003",
+      "position": 27,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p003/detail_027.html"
+    },
+    "header": {
+      "address_lines": [
+        "5308 HIGHWAY NO 7",
+        "5308 HWY NO 7"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "18 Nov 2024",
+      "price_text": "$5,000,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "2623656 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "4370 Steeles Ave W, Ste 201",
+        "Woodbridge, Ontario",
+        "L4L 4Y4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Warsaj Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sayed Yousof",
+        "5308 Highway 7",
+        "Vaughan, Ontario",
+        "L4L 1T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lot 6",
+      "As in Inst No VA-69458",
+      "Except:",
+      "Plan 65R-23596, Part 3",
+      "",
+      "PIN: 03310-0782",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "19 28 000 430 33600",
+    "consideration_lines": [
+      "cash: $5,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Chrismel Investments Inc",
+      "principal: $3,000,000   rate: 8.0% per annum.",
+      "registered: 11/18/2024   due: 11/18/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188631/1215_134748.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188631/1215_134751.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188631/1215_134820.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188631/1215_134821.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1886/RT188631/1215_134825.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "128 / 984",
+      "rt_id": "RT188631"
+    }
+  },
+  "export": {
+    "position": 27,
+    "address": "5308 HIGHWAY NO 7, 5308 HWY NO 7",
+    "postcode": "L4L 1T3",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "11/18/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".35",
+    "consid": "5000000",
+    "cash": "5000000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "03310-0782",
+    "rollno": "19 28 000 430 33600"
+  },
+  "results": {
+    "position": 27,
+    "address_lines": [
+      "5308 HIGHWAY NO 7",
+      "5308 HWY NO 7"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "18 Nov 2024",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "2623656 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Warsaj Inc"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

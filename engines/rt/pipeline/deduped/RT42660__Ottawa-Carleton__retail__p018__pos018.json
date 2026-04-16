@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT42660",
+  "source_folder": "Ottawa-Carleton/retail/p018",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT42660",
+      "source_folder": "Ottawa-Carleton/retail/p018",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p018/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "1854 CARLING AVE",
+        "3001 CARLING AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "13 Jun 2005",
+      "price_text": "$1,350,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2071887 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Trigylidas",
+        "5 Weymouth Ct",
+        "Ottawa, Ontario",
+        "K2G 5R8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 384, Part Lots 413-416",
+      "Plan 294284, Lot 1",
+      "As in Inst No NS-75471",
+      "",
+      "0.79 acre"
+    ],
+    "arn_text": "06 14 095 102 43400 +",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "869 / 1141",
+      "rt_id": "RT42660"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "1854 CARLING AVE, 3001 CARLING AVE",
+    "postcode": "K2A 1E3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/13/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".79",
+    "consid": "1350000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 14 095 102 43400+"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "1854 CARLING AVE",
+      "3001 CARLING AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "13 Jun 2005",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2071887 Ontario Inc"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT34301",
+  "source_folder": "Kent_County/multifamily/p003",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34301",
+      "source_folder": "Kent_County/multifamily/p003",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/multifamily/p003/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "750 WALLACE ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "04 Feb 2004",
+      "price_text": "$2,750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1254342 Ontario Inc     905-371-1201"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Vincenzo Butera",
+        "Can-Am Group",
+        "9582 Beaverdams Rd, RR 1",
+        "Niagara Falls, Ontario",
+        "L2E 6S4"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 8 storey; 132 units @ $20,833"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 789, Lot 43",
+      "",
+      "3.70 acre"
+    ],
+    "arn_text": "36 50 443 007 00100",
+    "consideration_lines": [
+      "cash: $2,750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "109 / 114",
+      "rt_id": "RT34301"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "750 WALLACE ST",
+    "postcode": "N8A 4Y1",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "02/04/2004",
+    "desc": "Apartment Bldg - 8 storey; 132 units @ $20,833",
+    "bldg": "132 units",
+    "acreage": "3.7",
+    "consid": "2750000",
+    "cash": "2750000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 443 007 00100"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "750 WALLACE ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "04 Feb 2004",
+    "note": "",
+    "description": "Apartment Bldg - 8 storey; 132 units @ $20,833",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1254342 Ontario Inc"
+    ],
+    "price_text": "$2,750,000"
+  }
+}

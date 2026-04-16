@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT20577",
+  "source_folder": "Peel_Region/office/p021",
+  "position": 4,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20577",
+      "source_folder": "Peel_Region/office/p021",
+      "position": 4,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/office/p021/detail_004.html"
+    },
+    "header": {
+      "address_lines": [
+        "1101 CLARKSON RD N"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "12 Feb 2001",
+      "price_text": "$869,343",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "1260379 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Ryan",
+        "c/o 5287 Yonge St",
+        "Toronto, Ontario",
+        "M2N 5R3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1413192 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Ryan",
+        "1101 Clarkson Rd N",
+        "Mississauga, Ontario",
+        "L5J 2W1"
+      ]
+    },
+    "description_lines": [
+      "Office Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-17967, Part 2",
+      "",
+      "1.58 acre"
+    ],
+    "arn_text": "21 05 020 033 02900",
+    "consideration_lines": [
+      "cash: $684,343     assumed/vtb debt: $185,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1005 / 1086",
+      "rt_id": "RT20577"
+    }
+  },
+  "export": {
+    "position": 4,
+    "address": "1101 CLARKSON RD N",
+    "postcode": "L5J 2W1",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "02/12/2001",
+    "desc": "Office Bldg",
+    "bldg": "",
+    "acreage": "1.58",
+    "consid": "869343",
+    "cash": "684343",
+    "debt": "185000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "21 05 020 033 02900"
+  },
+  "results": {
+    "position": 4,
+    "address_lines": [
+      "1101 CLARKSON RD N"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "12 Feb 2001",
+    "note": "Related Parties",
+    "description": "Office Bldg",
+    "seller_lines": [
+      "1260379 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1413192 Ontario Inc"
+    ],
+    "price_text": "$869,343"
+  }
+}

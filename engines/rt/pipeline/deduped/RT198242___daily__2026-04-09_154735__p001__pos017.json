@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT198242",
+  "source_folder": "_daily/2026-04-09_154735/p001",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT198242",
+      "source_folder": "_daily/2026-04-09_154735/p001",
+      "position": 17,
+      "detail_path": "/Users/brandonolsen23/cleo-turbo/raw-data/rt/pages/_daily/2026-04-09_154735/p001/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "WEST BALDOON RD"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "02 Apr 2026",
+      "price_text": "$2,484,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Foxburg Enterprises Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8292 Bush Line",
+        "Dover Centre, Ontario",
+        "N0P 1L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "DVS Farms Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Van Segbrook",
+        "c/o 9186 Oldfield Line",
+        "Tupperville, Ontario",
+        "N0P 2M0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 17 - Dover, Part Lot 20",
+      "Part Lots 43 & 44, West Baldoon River Dover",
+      "Plan 24R-4801, Part 3",
+      "",
+      "PIN: 00761-0152",
+      "",
+      "77.09 acre"
+    ],
+    "arn_text": "36 50 480 009 20000",
+    "consideration_lines": [
+      "cash: $2,484,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1982/RT198242/air1.jpg",
+        "/assets/files/RT19/RT1982/RT198242/air2.jpg",
+        "/assets/files/RT19/RT1982/RT198242/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "18 / 74",
+      "rt_id": "RT198242"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "WEST BALDOON RD",
+    "postcode": "",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "04/02/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "77.09",
+    "consid": "2484000",
+    "cash": "2484000",
+    "debt": "",
+    "note": "",
+    "pin": "00761-0152",
+    "rollno": "36 50 480 009 20000"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "WEST BALDOON RD"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "02 Apr 2026",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Foxburg Enterprises Inc"
+    ],
+    "buyer_lines": [
+      "DVS Farms Ltd"
+    ],
+    "price_text": "$2,484,000"
+  }
+}

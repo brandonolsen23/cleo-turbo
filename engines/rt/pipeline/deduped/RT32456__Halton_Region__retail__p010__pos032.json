@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT32456",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT32456",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "3410 FAIRVIEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "28 Oct 2003",
+      "price_text": "$840,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1290709 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: James Dren",
+        "615 Andrea Ct",
+        "Burlington, Ontario",
+        "L7R 4J7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "3410 Fairview Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Fielding",
+        "3410 Fairview St",
+        "Burlington, Ontario",
+        "L7N 2R5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 324, Part Lots 3 & 4",
+      "As in Inst No 813098",
+      "",
+      "0.92 acre"
+    ],
+    "arn_text": "24 02 090 907 00003",
+    "consideration_lines": [
+      "cash: $840,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT324/RT32456/photo.jpg"
+    },
+    "footer": {
+      "page_position": "483 / 613",
+      "rt_id": "RT32456"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "3410 FAIRVIEW ST",
+    "postcode": "L7N 2R5",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "10/28/2003",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".92",
+    "consid": "840000",
+    "cash": "840000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 090 907 00003"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "3410 FAIRVIEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "28 Oct 2003",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "1290709 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "3410 Fairview Inc"
+    ],
+    "price_text": "$840,000"
+  }
+}

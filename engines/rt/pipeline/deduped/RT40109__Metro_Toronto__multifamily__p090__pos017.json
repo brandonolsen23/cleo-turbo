@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT40109",
+  "source_folder": "Metro_Toronto/multifamily/p090",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40109",
+      "source_folder": "Metro_Toronto/multifamily/p090",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p090/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "1586 QUEEN ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "04 Feb 2005",
+      "price_text": "$760,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1638084 Ontario Ltd     416-531-0095"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Frank Cerrito",
+        "Certified Tire & Auto Service",
+        "1586 Queen St W",
+        "Toronto, Ontario",
+        "M6R 1A8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 461, Part Lot 1",
+      "As in Inst No CA-4482",
+      "",
+      "0.10 acre"
+    ],
+    "arn_text": "19 04 023 250 08400",
+    "consideration_lines": [
+      "cash: $760,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Roya Bank of Canada",
+      "principal: $460,000   rate: 6.65% per annum.",
+      "registered: 02/04/2005   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT401/RT40109/air1.jpg",
+        "/assets/files/RT4/RT401/RT40109/air2.jpg",
+        "/assets/files/RT4/RT401/RT40109/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT401/RT40109/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4468 / 6031",
+      "rt_id": "RT40109"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "1586 QUEEN ST W",
+    "postcode": "M6R 1A8",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/04/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".1",
+    "consid": "760000",
+    "cash": "760000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 023 250 08400"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "1586 QUEEN ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "04 Feb 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1638084 Ontario Ltd"
+    ],
+    "price_text": "$760,000"
+  }
+}

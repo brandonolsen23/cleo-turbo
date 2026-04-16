@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT197464",
+  "source_folder": "Perth_County/industrial/p001",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197464",
+      "source_folder": "Perth_County/industrial/p001",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/industrial/p001/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "155 HURON RD"
+      ],
+      "city_region": "W. Perth : Perth County",
+      "date_text": "24 Feb 2026",
+      "price_text": "$2,000,000",
+      "note": "Vesting Order"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Superior Court of Justice"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "85 Frederick St",
+        "Kitchener, Ontario",
+        "N2H 0A7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001498694 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gerhard Metzger",
+        "155 Huron Rd W",
+        "Mitchell, Ontario",
+        "N0K 1N0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - Logan, Part Lot 19",
+      "Plan 44R-685, Part 1",
+      "",
+      "PIN: 53188-0030",
+      "",
+      "3.25 acre"
+    ],
+    "arn_text": "31 30 260 005 09605",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1 / 102",
+      "rt_id": "RT197464"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "155 HURON RD",
+    "postcode": "N0K 1N0",
+    "municipality": "W. Perth",
+    "region": "Perth County",
+    "date": "02/24/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "3.25",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "Vesting Order",
+    "pin": "53188-0030",
+    "rollno": "31 30 260 005 09605"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "155 HURON RD"
+    ],
+    "city_region": "W. Perth : Perth County",
+    "date_text": "24 Feb 2026",
+    "note": "Vesting Order",
+    "description": "",
+    "seller_lines": [
+      "Ontario Superior Court of Justice"
+    ],
+    "buyer_lines": [
+      "1001498694 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

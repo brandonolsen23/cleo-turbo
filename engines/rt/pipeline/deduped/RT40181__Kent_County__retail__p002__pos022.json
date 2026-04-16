@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT40181",
+  "source_folder": "Kent_County/retail/p002",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT40181",
+      "source_folder": "Kent_County/retail/p002",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p002/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "455 GRAND AVE E"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "31 Aug 2004",
+      "price_text": "$925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Zab-Zak Properties Inc     416-245-1506"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Chris Pappas",
+        "82 Eden Valley Dr",
+        "Toronto, Ontario",
+        "M9A 4Z8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "LRM Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "150 Richmond St",
+        "PO Box 218",
+        "Chatham, Ontario",
+        "N7M 5K3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 12 units 16,800 sf @ $55"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 24R-620, Part 2",
+      "",
+      "1.56 acre"
+    ],
+    "arn_text": "36 50 420 052 06100",
+    "consideration_lines": [
+      "cash: $323,006     assumed/vtb debt: $601,994"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "73 / 77",
+      "rt_id": "RT40181"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "455 GRAND AVE E",
+    "postcode": "N7L 1X4",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "08/31/2004",
+    "desc": "Retail Plaza - 1 storey; 12 units 16,800 sf @ $55",
+    "bldg": "16,800 sf",
+    "acreage": "1.56",
+    "consid": "925000",
+    "cash": "323006",
+    "debt": "601994",
+    "note": "",
+    "pin": "",
+    "rollno": "36 50 420 052 06100"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "455 GRAND AVE E"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "31 Aug 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 12 units 16,800 sf @ $55",
+    "seller_lines": [
+      "Zab-Zak Properties Inc"
+    ],
+    "buyer_lines": [
+      "LRM Properties Inc"
+    ],
+    "price_text": "$925,000"
+  }
+}

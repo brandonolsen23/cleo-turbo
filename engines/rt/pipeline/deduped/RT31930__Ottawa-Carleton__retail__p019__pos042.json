@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT31930",
+  "source_folder": "Ottawa-Carleton/retail/p019",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT31930",
+      "source_folder": "Ottawa-Carleton/retail/p019",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p019/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2422 ST JOSEPH BLVD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "15 Sep 2003",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1577870 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeffrey Huang",
+        "23 Parkglen Dr",
+        "Ottawa, Ontario",
+        "K2G 3G7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 10",
+      "Part Lot 13, S/S St Joseph Blvd",
+      "As in Inst No N-516504",
+      "",
+      "0.53 acre"
+    ],
+    "arn_text": "06 06 000 085 17900",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT319/RT31930/photo.jpg"
+    },
+    "footer": {
+      "page_position": "943 / 1141",
+      "rt_id": "RT31930"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2422 ST JOSEPH BLVD",
+    "postcode": "K1C 1G1",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "09/15/2003",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".53",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 06 000 085 17900"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2422 ST JOSEPH BLVD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "15 Sep 2003",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1577870 Ontario Inc"
+    ],
+    "price_text": "$600,000"
+  }
+}

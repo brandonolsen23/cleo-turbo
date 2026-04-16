@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT19360",
+  "source_folder": "Hamilton-Wentworth/retail/p012",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT19360",
+      "source_folder": "Hamilton-Wentworth/retail/p012",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p012/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "751 - 777 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "01 Nov 2000",
+      "price_text": "$11,490,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "888049 Ontario Inc     514-814-7600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: E. Claude Molleur",
+        "c/o Ivanhoe Inc",
+        "World Trade Centre Montreal",
+        "413 St Jacques St",
+        "Montreal, Quebec",
+        "H2Y 3Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Katy Ritcey",
+        "The Exchange Tower",
+        "130 King St W, Ste 700, PO Box 378",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Centre - 113,974 sf @ $101",
+      "",
+      "Occupied by Canadian Tire & Ultramart"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1240, Part Block A",
+      "As in Inst No VM-44792",
+      "",
+      "10.26 acre"
+    ],
+    "arn_text": "25 18 080 891 00010",
+    "consideration_lines": [
+      "cash: $11,490,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto Dominion Bank",
+      "principal: $1,700,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/31/2025   due: on demand",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,375,000   rate: Prime plus 5.0% per annum.",
+      "registered: 07/31/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT193/RT19360/photo.jpg"
+    },
+    "footer": {
+      "page_position": "568 / 616",
+      "rt_id": "RT19360"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "751 - 777 UPPER JAMES ST",
+    "postcode": "L9C 3A1",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "11/01/2000",
+    "desc": "Retail Centre - 113,974 sf @ $101",
+    "bldg": "113,974 sf",
+    "acreage": "10.26",
+    "consid": "11490000",
+    "cash": "11490000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "25 18 080 891 00010"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "751 - 777 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "01 Nov 2000",
+    "note": "",
+    "description": "Retail Centre - 113,974 sf @ $101",
+    "seller_lines": [
+      "888049 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$11,490,000"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT178353",
+  "source_folder": "Cochrane/all/p022",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178353",
+      "source_folder": "Cochrane/all/p022",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p022/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "1188 CUMMINGS AVE",
+        "1196 CUMMINGS AVE"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "01 Jun 2023",
+      "price_text": "$1,860,000",
+      "note": "Land Assembly"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sracka Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1109 Rocky Harbour Cres",
+        "Gloucester, Ontario",
+        "K1V 1V4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cummings Development GP Inc     613-680-5582"
+      ],
+      "trade_name": "TCU Developments",
+      "contact_lines": [
+        "Attn: Billy Triantafilos",
+        "150 Isabella St, Ste 1207",
+        "Ottawa, Ontario",
+        "K1S 5P7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-26865, Part 1",
+      "Plan 217, Part Lot 1",
+      "As in Inst No NS-26649",
+      "",
+      "PIN: 04265-0026",
+      "",
+      "0.53 acre"
+    ],
+    "arn_text": "06 06 000 160 03500 +",
+    "consideration_lines": [
+      "cash: $1,860,000     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $1,948,375   rate: 25.0% per annum.",
+      "registered: 06/01/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1085 / 10920",
+      "rt_id": "RT178353"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "1188 CUMMINGS AVE, 1196 CUMMINGS AVE",
+    "postcode": "K1J 7R8",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "06/01/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".53",
+    "consid": "1860000",
+    "cash": "1860000",
+    "debt": "",
+    "note": "Land Assembly",
+    "pin": "04265-0026",
+    "rollno": "06 06 000 160 03500+"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "1188 CUMMINGS AVE",
+      "1196 CUMMINGS AVE"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "01 Jun 2023",
+    "note": "Land Assembly",
+    "description": "",
+    "seller_lines": [
+      "Sracka Ltd"
+    ],
+    "buyer_lines": [
+      "Cummings Development GP Inc"
+    ],
+    "price_text": "$1,860,000"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT43018",
+  "source_folder": "York_Region/retail/p015",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT43018",
+      "source_folder": "York_Region/retail/p015",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p015/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "3900 HWY 7 W"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "11 Jul 2005",
+      "price_text": "$55,285,500",
+      "note": "50% Interest, Portfolio"
+    },
+    "transferor": {
+      "party_lines": [
+        "First Westridge Shopping Centres Ltd",
+        "Westridge Shopping Centre Ltd",
+        "508263 Ontario Ltd     905-760-6230"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Joseph Amato",
+        "First Professional Management Inc",
+        "700 Applewood Cres, Ste 100",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Calloway REIT (Westridge) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Calnan",
+        "855 Eighth Ave SW, Ste 310",
+        "Calgary, Alberta",
+        "T2P 3P1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "/assets/files/RT4/RT430/RT43018/mi.pdf",
+    "site_lines": [
+      "Conc 6, Part Lot 6",
+      "Plan 65M-2966, Block 32",
+      "Plan 65R-18505",
+      "Parts 1, 2, 7, 8, 10 16, 17, 20-22, 29-34",
+      "Except:",
+      "Plan 65R-24803, Parts 2 & 3",
+      "",
+      "42.05 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $55,285,500     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT430/RT43018/photo.jpg"
+    },
+    "footer": {
+      "page_position": "737 / 984",
+      "rt_id": "RT43018"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "3900 HWY 7 W",
+    "postcode": "L4L 9C3",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "07/11/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": "42.05",
+    "consid": "55285500",
+    "cash": "55285500",
+    "debt": "",
+    "note": "50% Interest, Portfolio",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "3900 HWY 7 W"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "11 Jul 2005",
+    "note": "50% Interest, Portfolio",
+    "description": "",
+    "seller_lines": [
+      "First Westridge Shopping Centres Ltd",
+      "Westridge Shopping Centre Ltd",
+      "508263 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Calloway REIT (Westridge) Inc"
+    ],
+    "price_text": "$55,285,500"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT75441",
+  "source_folder": "York_Region/retail/p011",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT75441",
+      "source_folder": "York_Region/retail/p011",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p011/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "8855 - 8865 WOODBINE AVE",
+        "10 - 20 APPLE CREEK BLVD"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "19 Nov 2010",
+      "price_text": "$10,000,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "TCC Mortgage Holdings Inc",
+        "TCC II Mortgage Holdings Inc"
+      ],
+      "trade_name": "Trez Capital",
+      "contact_lines": [
+        "VP: Ken Lai",
+        "1185 West Georgia St, Ste 1550",
+        "Vancouver, BC",
+        "V6E 4E6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "T-Woodbine Holdings Ltd"
+      ],
+      "trade_name": "Trez Capital",
+      "contact_lines": [
+        "Attn: Morley Greene",
+        "1185 West Georgia St, Ste 1550",
+        "Vancouver, BC",
+        "V6E 4E6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 16 tenants 44,234 sf",
+      "",
+      "4 buildings",
+      "1,700 sf vacant"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 13",
+      "Plan 65R-11290, Parts 3-6",
+      "Except:",
+      "Plan 65R-11798, Parts 8-10",
+      "",
+      "PIN: 03043-0002",
+      "",
+      "3.70 acre"
+    ],
+    "arn_text": "19 36 020 132 67600",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $10,000,000",
+      "",
+      "chargee: TCC Mortgage Holdings Inc",
+      "TCC II Mortgage Holdings Inc",
+      "principal: $10,000,000",
+      "registered: 11/19/2010   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT754/RT75441/air1.jpg",
+        "/assets/files/RT7/RT754/RT75441/air2.jpg",
+        "/assets/files/RT7/RT754/RT75441/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "518 / 984",
+      "rt_id": "RT75441"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "8855 - 8865 WOODBINE AVE, 10 - 20 APPLE CREEK BLVD",
+    "postcode": "L3R 5G1",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "11/19/2010",
+    "desc": "Retail Plaza - 1 storey; 16 tenants 44,234 sf",
+    "bldg": "44,234 sf",
+    "acreage": "3.7",
+    "consid": "10000000",
+    "cash": "",
+    "debt": "10000000",
+    "note": "Related Parties",
+    "pin": "03043-0002",
+    "rollno": "19 36 020 132 67600"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "8855 - 8865 WOODBINE AVE",
+      "10 - 20 APPLE CREEK BLVD"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "19 Nov 2010",
+    "note": "Related Parties",
+    "description": "Retail Plaza - 1 storey; 16 tenants 44,234 sf",
+    "seller_lines": [
+      "TCC Mortgage Holdings Inc",
+      "TCC II Mortgage Holdings Inc"
+    ],
+    "buyer_lines": [
+      "T-Woodbine Holdings Ltd"
+    ],
+    "price_text": "$10,000,000"
+  }
+}

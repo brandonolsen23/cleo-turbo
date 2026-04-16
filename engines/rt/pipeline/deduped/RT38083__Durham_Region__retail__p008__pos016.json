@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT38083",
+  "source_folder": "Durham_Region/retail/p008",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38083",
+      "source_folder": "Durham_Region/retail/p008",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p008/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "570 WESTNEY RD S"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "30 Sep 2004",
+      "price_text": "$6,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Discovery Bay Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Markriyiannis",
+        "242 Applewood Cres, Unit 5",
+        "Concord, Ontario",
+        "L4K 4E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1002534 Ontario Inc     416-232-2002"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Carlo Di Bernardo",
+        "Speed & Precision Construction Ltd",
+        "46 Fieldway Rd, Unit 1",
+        "Toronto, Ontario",
+        "M8Z 3L2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 22 units 60,000 sf @ $100",
+      "",
+      "Last transferred in July 98 for $2,550,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "BFC, Range 3, Part Lots 12 & 13",
+      "Plan 40R-8734, Parts 1-6",
+      "",
+      "7.12 acre"
+    ],
+    "arn_text": "18 05 040 006 14725",
+    "consideration_lines": [
+      "cash: $6,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Coldwell Banker Case: Alex Karamatsos, 416-461-0925"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT380/RT38083/air1.jpg",
+        "/assets/files/RT3/RT380/RT38083/air2.jpg",
+        "/assets/files/RT3/RT380/RT38083/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT380/RT38083/photo.jpg"
+    },
+    "footer": {
+      "page_position": "367 / 506",
+      "rt_id": "RT38083"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "570 WESTNEY RD S",
+    "postcode": "L1S 6V4",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "09/30/2004",
+    "desc": "Retail Plaza - 1 storey; 22 units 60,000 sf @ $100",
+    "bldg": "60,000 sf",
+    "acreage": "7.12",
+    "consid": "6000000",
+    "cash": "6000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 05 040 006 14725"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "570 WESTNEY RD S"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "30 Sep 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 22 units 60,000 sf @ $100",
+    "seller_lines": [
+      "Discovery Bay Holdings Inc"
+    ],
+    "buyer_lines": [
+      "1002534 Ontario Inc"
+    ],
+    "price_text": "$6,000,000"
+  }
+}

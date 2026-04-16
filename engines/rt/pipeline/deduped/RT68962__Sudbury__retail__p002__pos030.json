@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT68962",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68962",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "770 BARRYDOWNE RD"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "09 Oct 2009",
+      "price_text": "$890,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1700321 Ontario Inc     705-560-8473"
+      ],
+      "trade_name": "Royal Tire",
+      "contact_lines": [
+        "Attn: Melanie Shaw",
+        "1030 Elisabella St",
+        "Sudbury, Ontario",
+        "P3A 5K2"
+      ]
+    },
+    "description_lines": [
+      "Tire Store - 1 storey; 10,000 sf @ $89",
+      "",
+      "Vacant - to be occupied by the purchaser"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-228, Lots 281 & 282",
+      "",
+      "PIN: 73571-0444",
+      "",
+      "0.70 acre"
+    ],
+    "arn_text": "53 07 020 020 02900",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $740,000",
+      "",
+      "chargee: Alice Cormier",
+      "Carolyn Birmingham",
+      "principal: $740,000   rate: 6.5% per annum",
+      "registered: 10/09/2009   due: 10/09/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "81 / 90",
+      "rt_id": "RT68962"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "770 BARRYDOWNE RD",
+    "postcode": "P3A 3T7",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "10/09/2009",
+    "desc": "Tire Store - 1 storey; 10,000 sf @ $89",
+    "bldg": "10,000 sf",
+    "acreage": ".7",
+    "consid": "890000",
+    "cash": "150000",
+    "debt": "740000",
+    "note": "",
+    "pin": "73571-0444",
+    "rollno": "53 07 020 020 02900"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "770 BARRYDOWNE RD"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "09 Oct 2009",
+    "note": "",
+    "description": "Tire Store - 1 storey; 10,000 sf @ $89",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1700321 Ontario Inc"
+    ],
+    "price_text": "$890,000"
+  }
+}

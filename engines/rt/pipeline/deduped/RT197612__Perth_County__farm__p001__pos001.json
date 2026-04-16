@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT197612",
+  "source_folder": "Perth_County/farm/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197612",
+      "source_folder": "Perth_County/farm/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/farm/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "4059 LINE 76"
+      ],
+      "city_region": "Perth E : Perth County",
+      "date_text": "04 Mar 2026",
+      "price_text": "$1,800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Millbank Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Simeon Martin",
+        "4059 Line 76",
+        "Newton, Ontario",
+        "N0K 1R0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8 - Mor, Part Lot 16",
+      "",
+      "PIN: 53056-0046",
+      "",
+      "50.17 acre"
+    ],
+    "arn_text": "31 10 320 006 21000",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 03/04/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 751",
+      "rt_id": "RT197612"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "4059 LINE 76",
+    "postcode": "N0K 1R0",
+    "municipality": "Perth E",
+    "region": "Perth County",
+    "date": "03/04/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "50.17",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "53056-0046",
+    "rollno": "31 10 320 006 21000"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "4059 LINE 76"
+    ],
+    "city_region": "Perth E : Perth County",
+    "date_text": "04 Mar 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Millbank Farms Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT173126",
+  "source_folder": "Kent_County/retail/p001",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173126",
+      "source_folder": "Kent_County/retail/p001",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p001/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "745 - 747 ST CLAIR ST"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "01 Nov 2022",
+      "price_text": "$1,675,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "RB Fabrics Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "7739 St Philippes Line",
+        "Grande Point, Ontario",
+        "N0P 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Van Hoof Siding Place Ltd     519-354-0368"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bradley McAuliffe",
+        "747 St Clair St",
+        "Chatham, Ontario",
+        "N7L 0E9"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 1",
+      "As in Inst No 649607",
+      "",
+      "PIN: 00373-0040",
+      "",
+      "1.23 acre"
+    ],
+    "arn_text": "36 50 410 001 82100",
+    "consideration_lines": [
+      "cash: $1,675,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $2,165,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/01/2022   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "25 / 77",
+      "rt_id": "RT173126"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "745 - 747 ST CLAIR ST",
+    "postcode": "N7L 0E9",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "11/01/2022",
+    "desc": "Retail Bldg",
+    "bldg": "",
+    "acreage": "1.23",
+    "consid": "1675000",
+    "cash": "1675000",
+    "debt": "",
+    "note": "",
+    "pin": "00373-0040",
+    "rollno": "36 50 410 001 82100"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "745 - 747 ST CLAIR ST"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "01 Nov 2022",
+    "note": "",
+    "description": "Retail Bldg",
+    "seller_lines": [
+      "RB Fabrics Ltd"
+    ],
+    "buyer_lines": [
+      "Van Hoof Siding Place Ltd"
+    ],
+    "price_text": "$1,675,000"
+  }
+}

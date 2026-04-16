@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT34422",
+  "source_folder": "Cochrane/all/p188",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34422",
+      "source_folder": "Cochrane/all/p188",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p188/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1741 CYRVILLE RD"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "27 Feb 2004",
+      "price_text": "$555,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "Hennaco Capital Corp     613-830-4110"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Henry Baier",
+        "6149 Ravine Way",
+        "Ottawa, Ontario",
+        "K1C 7L8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-2773, Parts 1 & 2",
+      "",
+      "0.58 acre"
+    ],
+    "arn_text": "06 06 000 195 05600",
+    "consideration_lines": [
+      "cash: $555,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT344/RT34422/photo.jpg"
+    },
+    "footer": {
+      "page_position": "9375 / 10920",
+      "rt_id": "RT34422"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1741 CYRVILLE RD",
+    "postcode": "K1B 3K8",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "02/27/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".58",
+    "consid": "555000",
+    "cash": "555000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "",
+    "rollno": "06 06 000 195 05600"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1741 CYRVILLE RD"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "27 Feb 2004",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "Hennaco Capital Corp"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$555,000"
+  }
+}

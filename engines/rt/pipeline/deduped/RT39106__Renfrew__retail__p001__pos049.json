@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT39106",
+  "source_folder": "Renfrew/retail/p001",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39106",
+      "source_folder": "Renfrew/retail/p001",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Renfrew/retail/p001/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "1108 PEMBROKE ST E"
+      ],
+      "city_region": "Laurentian Valley : Renfrew",
+      "date_text": "01 Dec 2004",
+      "price_text": "$1,409,334",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "First Pemstar Investments Ltd     905-760-6230"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Brian Rudderham",
+        "First Pro",
+        "700 Applewood Cres, Ste 100",
+        "Vaughan, Ontario",
+        "L4K 5X3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Calloway REIT (Pembroke) Inc     403-299-9600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Michael Storey",
+        "Shea Nerland Calnan",
+        "715 Fifth Ave SW, Ste 1900",
+        "Calgary, Alberta",
+        "T2P 2X6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lots 22 & 23",
+      "Plan 49R-13334, Parts 1 & 2",
+      "Plan 49R-12405, Part 1",
+      "As in Inst No R-422687",
+      "",
+      "15.20 acre"
+    ],
+    "arn_text": "47 66 062 040 34100",
+    "consideration_lines": [
+      "cash: $1,409,334     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "50 / 52",
+      "rt_id": "RT39106"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "1108 PEMBROKE ST E",
+    "postcode": "K8A 8P7",
+    "municipality": "Laurentian Valley",
+    "region": "Renfrew",
+    "date": "12/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "15.2",
+    "consid": "1409334",
+    "cash": "1409334",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "47 66 062 040 34100"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "1108 PEMBROKE ST E"
+    ],
+    "city_region": "Laurentian Valley : Renfrew",
+    "date_text": "01 Dec 2004",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "First Pemstar Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Calloway REIT (Pembroke) Inc"
+    ],
+    "price_text": "$1,409,334"
+  }
+}

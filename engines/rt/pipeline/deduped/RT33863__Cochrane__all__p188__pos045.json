@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT33863",
+  "source_folder": "Cochrane/all/p188",
+  "position": 45,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33863",
+      "source_folder": "Cochrane/all/p188",
+      "position": 45,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p188/detail_045.html"
+    },
+    "header": {
+      "address_lines": [
+        "PART CONC B - RF"
+      ],
+      "city_region": "Nepean : Ottawa-Carleton",
+      "date_text": "27 Jan 2004",
+      "price_text": "$1,000,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "National Capital Commission     613-239-5000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Marcel Beaudry",
+        "40 Elgin St, Ste 200",
+        "Ottawa, Ontario",
+        "K1P 1C7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "DCR/Phoenix Development Corp Ltd     613-723-9227"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cuckoo Kochar",
+        "18 Bentley Ave",
+        "Ottawa, Ontario",
+        "K2E 6T8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-19152, Part 7"
+    ],
+    "arn_text": "06 14 074 202 05100",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9396 / 10920",
+      "rt_id": "RT33863"
+    }
+  },
+  "export": {
+    "position": 45,
+    "address": "PART CONC B - RF",
+    "postcode": "",
+    "municipality": "Nepean",
+    "region": "Ottawa-Carleton",
+    "date": "01/27/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1000000",
+    "cash": "",
+    "debt": "",
+    "note": "Zero Cash",
+    "pin": "",
+    "rollno": "06 14 074 202 05100"
+  },
+  "results": {
+    "position": 45,
+    "address_lines": [
+      "PART CONC B - RF"
+    ],
+    "city_region": "Nepean : Ottawa-Carleton",
+    "date_text": "27 Jan 2004",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "National Capital Commission"
+    ],
+    "buyer_lines": [
+      "DCR/Phoenix Development Corp Ltd"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

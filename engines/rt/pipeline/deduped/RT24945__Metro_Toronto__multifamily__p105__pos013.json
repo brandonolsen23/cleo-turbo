@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT24945",
+  "source_folder": "Metro_Toronto/multifamily/p105",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24945",
+      "source_folder": "Metro_Toronto/multifamily/p105",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p105/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "129 WINCHESTER ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "02 May 2002",
+      "price_text": "$547,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "715566 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Anne Smith",
+        "16 Rosedale Rd, Ste 513",
+        "Toronto, Ontario",
+        "M4W 2P4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "4044118 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Michael Murphy",
+        "129 Winchester St",
+        "Toronto, Ontario",
+        "M4X 1B3"
+      ]
+    },
+    "description_lines": [
+      "Duplex - 3 storey semi; 2 units @ $273,500",
+      "",
+      "Mr Murphy also purchased the other half of this semi detached",
+      "duplex (127 Winchester St) on April 26, 2002 for $572,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 63R-4382, Part 2",
+      "Except Plan 63R-4614, Part 2"
+    ],
+    "arn_text": "19 04 074 191 02300",
+    "consideration_lines": [
+      "cash: $547,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Sutton Group: Stephen Caldwell, 416-483-8000"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5214 / 6031",
+      "rt_id": "RT24945"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "129 WINCHESTER ST",
+    "postcode": "M4X 1B3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/02/2002",
+    "desc": "Duplex - 3 storey semi; 2 units @ $273,500",
+    "bldg": "2 units",
+    "acreage": "",
+    "consid": "547000",
+    "cash": "547000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 074 191 02300"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "129 WINCHESTER ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "02 May 2002",
+    "note": "",
+    "description": "Duplex - 3 storey semi; 2 units @ $273,500",
+    "seller_lines": [
+      "715566 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "4044118 Canada Inc"
+    ],
+    "price_text": "$547,000"
+  }
+}

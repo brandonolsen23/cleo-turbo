@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT47771",
+  "source_folder": "Hamilton-Wentworth/retail/p010",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47771",
+      "source_folder": "Hamilton-Wentworth/retail/p010",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Hamilton-Wentworth/retail/p010/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "905 RYMAL RD",
+        "1508 UPPER JAMES ST"
+      ],
+      "city_region": "Hamilton : Hamilton-Wentworth",
+      "date_text": "22 Mar 2006",
+      "price_text": "$28,200,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "ECL Leaseholds Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Frank Sobey",
+        "115 King St",
+        "Stellarton, NS",
+        "B0K 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Crombie Property Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stuart Blair",
+        "115 King St",
+        "Stellarton, NS",
+        "B0K 1S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 8, Part Lots 6 & 15",
+      "Plan 62R-9363, Part 1",
+      "Plan 62R-14601, Part 1",
+      "Except:",
+      "Plan 62R-14818, Part 1",
+      "",
+      "16.17 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $28,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "456 / 616",
+      "rt_id": "RT47771"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "905 RYMAL RD, 1508 UPPER JAMES ST",
+    "postcode": "L8W 3M2",
+    "municipality": "Hamilton",
+    "region": "Hamilton-Wentworth",
+    "date": "03/22/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "16.17",
+    "consid": "28200000",
+    "cash": "28200000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "905 RYMAL RD",
+      "1508 UPPER JAMES ST"
+    ],
+    "city_region": "Hamilton : Hamilton-Wentworth",
+    "date_text": "22 Mar 2006",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "ECL Leaseholds Ltd"
+    ],
+    "buyer_lines": [
+      "Crombie Property Holdings Ltd"
+    ],
+    "price_text": "$28,200,000"
+  }
+}

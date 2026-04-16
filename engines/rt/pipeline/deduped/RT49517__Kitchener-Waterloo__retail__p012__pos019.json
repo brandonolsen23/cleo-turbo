@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT49517",
+  "source_folder": "Kitchener-Waterloo/retail/p012",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT49517",
+      "source_folder": "Kitchener-Waterloo/retail/p012",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p012/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "150 HESPELER RD"
+      ],
+      "city_region": "Cambridge : Kitchener-Waterloo",
+      "date_text": "22 Jun 2006",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Qureshi Investments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Khurram Qureshi",
+        "40 Green Bank Dr",
+        "Cambridge, Ontario",
+        "N1T 2B4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Cambridge Cardiac Care Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Marie Pandey",
+        "327 Bushwood Ct",
+        "Waterloo, Ontario",
+        "N2T 2E6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 257",
+      "Part Lots 88-90 & 103-104",
+      "As in Inst No WS-605379",
+      "Except:",
+      "Plan 67R-2003, Part 1",
+      "",
+      "0.54 acre"
+    ],
+    "arn_text": "30 06 090 001 01800",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $680,000   rate: 6.6% per annum",
+      "registered: 06/22/2006   due: 07/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49517/0806_084142.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49517/0806_084144.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49517/0806_084145.jpg",
+        "http://realtrack.cachefly.net/photos/RT4/RT495/RT49517/0806_084222.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "570 / 752",
+      "rt_id": "RT49517"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "150 HESPELER RD",
+    "postcode": "N1R 6V6",
+    "municipality": "Cambridge",
+    "region": "Kitchener-Waterloo",
+    "date": "06/22/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".54",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "30 06 090 001 01800"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "150 HESPELER RD"
+    ],
+    "city_region": "Cambridge : Kitchener-Waterloo",
+    "date_text": "22 Jun 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Qureshi Investments Inc"
+    ],
+    "buyer_lines": [
+      "Cambridge Cardiac Care Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

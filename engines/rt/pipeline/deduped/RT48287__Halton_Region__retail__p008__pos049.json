@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT48287",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 49,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48287",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 49,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_049.html"
+    },
+    "header": {
+      "address_lines": [
+        "516 PLAINS RD E"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "27 Apr 2006",
+      "price_text": "$2,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "550823 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Simon Zupanovic",
+        "2160 Orchard Dr, Unit 13",
+        "Burlington, Ontario",
+        "L7L 2H9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1687567 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Ferretti",
+        "2270 Fourth Concession Rd W, RR 1",
+        "Troy, Ontario",
+        "L0R 2B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan PF-833, Part Lot 23",
+      "As in Inst No 588852",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "24 02 010 119 09600",
+    "consideration_lines": [
+      "cash: $2,000,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Canada Trust Co",
+      "principal: $1,400,000   rate: 6.03% per annum",
+      "registered: 04/27/2006   due: 05/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT482/RT48287/air1.jpg",
+        "/assets/files/RT4/RT482/RT48287/air2.jpg",
+        "/assets/files/RT4/RT482/RT48287/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "400 / 613",
+      "rt_id": "RT48287"
+    }
+  },
+  "export": {
+    "position": 49,
+    "address": "516 PLAINS RD E",
+    "postcode": "L7T 2E1",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "04/27/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "2000000",
+    "cash": "2000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 010 119 09600"
+  },
+  "results": {
+    "position": 49,
+    "address_lines": [
+      "516 PLAINS RD E"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "27 Apr 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "550823 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1687567 Ontario Inc"
+    ],
+    "price_text": "$2,000,000"
+  }
+}

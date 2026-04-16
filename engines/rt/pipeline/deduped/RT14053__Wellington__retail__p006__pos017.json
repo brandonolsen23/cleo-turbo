@@ -1,0 +1,127 @@
+{
+  "rt_id": "RT14053",
+  "source_folder": "Wellington/retail/p006",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14053",
+      "source_folder": "Wellington/retail/p006",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/retail/p006/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "159 FIFE RD"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "01 Mar 1999",
+      "price_text": "$567,500",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Snag-Hae & Nak-Hung Shin"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1161 Giles Gate",
+        "Oakville, Ontario",
+        "L6M 1S4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1283677 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Abdul Salih",
+        "2570 Claymore Cres",
+        "Mississauga, Ontario"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 670, Block A",
+      "",
+      "0.80 acre"
+    ],
+    "arn_text": "23 08 050 015 01717",
+    "consideration_lines": [
+      "cash: $567,500     assumed/vtb debt: $0",
+      "",
+      "chargee: Steve and Debbi Holdings Inc",
+      "principal: $1,050,000   rate: 8.0% per annum.",
+      "registered: 01/30/2019   due: 01/30/2020",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,120,000   rate: 3.320% per annum.",
+      "registered: 01/31/2019   due: 02/01/2023",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $10,305,788   rate: 5.99% per annum.",
+      "registered: 01/30/2019   due: 02/01/2020",
+      "",
+      "chargee: 1499476 Ontario Inc",
+      "principal: $1,150,000   rate: 5.0% per annum.",
+      "registered: 02/01/2019   due: 02/01/2021",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,400,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 01/31/2019   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "268 / 269",
+      "rt_id": "RT14053"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "159 FIFE RD",
+    "postcode": "",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "03/01/1999",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": ".8",
+    "consid": "567500",
+    "cash": "567500",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 050 015 01717"
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "159 FIFE RD"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "01 Mar 1999",
+    "note": "",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Snag-Hae & Nak-Hung Shin"
+    ],
+    "buyer_lines": [
+      "1283677 Ontario Ltd"
+    ],
+    "price_text": "$567,500"
+  }
+}

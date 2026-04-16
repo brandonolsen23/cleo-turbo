@@ -20,6 +20,12 @@ import {
   Warning,
   Buildings,
   MapPin,
+  PencilSimple,
+  CurrencyDollar,
+  ChartLineUp,
+  Clock,
+  Users,
+  Ruler,
 } from "@phosphor-icons/react";
 import { fetchApi, mutateApi } from "../api/client";
 import { formatCurrency, formatDate } from "../lib/utils";
@@ -31,11 +37,72 @@ import {
 } from "../lib/theme";
 import type { BuyMandateDetail, MatchingProperty } from "../types";
 import ActivityFeed from "../components/crm/ActivityFeed";
+import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
+
+// ── Label maps for display ──
+
+const TENANT_QUALITY_LABELS: Record<string, string> = {
+  national_credit: "National Credit (AAA)",
+  regional_credit: "Regional Credit",
+  local: "Local",
+  any: "Any",
+};
+
+const OCCUPANCY_LABELS: Record<string, string> = {
+  single: "Single Tenant",
+  multi: "Multi-Tenant",
+  either: "Either",
+};
+
+const ANCHORED_LABELS: Record<string, string> = {
+  grocery: "Grocery Anchored",
+  big_box: "Big Box Anchored",
+  none: "No Preference",
+};
+
+const MARKET_TIER_LABELS: Record<string, string> = {
+  primary: "Primary",
+  secondary: "Secondary",
+  tertiary: "Tertiary",
+};
+
+const STRATEGY_LABELS: Record<string, string> = {
+  core: "Core",
+  core_plus: "Core-Plus",
+  value_add: "Value-Add",
+  opportunistic: "Opportunistic",
+};
+
+const VACANCY_LABELS: Record<string, string> = {
+  fully_leased: "Fully Leased Only",
+  some_vacancy: "Some Vacancy OK",
+  high_vacancy: "High Vacancy / Value-Add",
+};
+
+const PRIORITY_LABELS: Record<string, string> = {
+  primary: "Primary",
+  secondary: "Secondary",
+  exploratory: "Exploratory",
+};
+
+const PRIORITY_COLORS: Record<string, "jade" | "blue" | "gray"> = {
+  primary: "jade",
+  secondary: "blue",
+  exploratory: "gray",
+};
+
+const TIMELINE_LABELS: Record<string, string> = {
+  immediate: "Immediate (0–3 months)",
+  near_term: "Near-term (3–6 months)",
+  medium: "Medium (6–12 months)",
+  long_term: "Long-term (12+ months)",
+};
 
 export default function BuyMandateDetailPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [mandate, setMandate] = useState<BuyMandateDetail | null>(null);
+  const [editDrawerOpen, setEditDrawerOpen] = useState(false);
 
   const load = () => {
     if (!id) return;
@@ -65,6 +132,7 @@ export default function BuyMandateDetailPage() {
   }
 
   const criteria = mandate.criteria || {};
+  const hasCriteria = Object.keys(criteria).length > 0;
 
   return (
     <div className="p-6 max-w-[1200px]">
@@ -88,6 +156,11 @@ export default function BuyMandateDetailPage() {
             <Badge size="2" color={buyMandateStatusColor(mandate.status)} variant="soft">
               {buyMandateStatusLabel(mandate.status)}
             </Badge>
+            {criteria.priority && (
+              <Badge size="1" color={PRIORITY_COLORS[criteria.priority] || "gray"} variant="outline">
+                {PRIORITY_LABELS[criteria.priority] || criteria.priority}
+              </Badge>
+            )}
             {mandate.is_stale === 1 && (
               <Badge size="1" color="tomato" variant="soft">
                 <Warning size={12} weight="fill" className="mr-0.5" />
@@ -101,6 +174,10 @@ export default function BuyMandateDetailPage() {
         </div>
 
         <div className="flex items-center gap-2">
+          <Button variant="soft" size="2" onClick={() => setEditDrawerOpen(true)}>
+            <PencilSimple size={14} />
+            Edit Criteria
+          </Button>
           <Select.Root value={mandate.status} onValueChange={handleStatusChange}>
             <Select.Trigger variant="soft" />
             <Select.Content>
@@ -121,78 +198,261 @@ export default function BuyMandateDetailPage() {
         <div className="col-span-2 space-y-5">
           {/* Criteria card */}
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-            <div className="flex items-center gap-2 mb-3">
-              <MapPin size={18} style={{ color: "var(--gray-9)" }} />
-              <Heading size="3">Search Criteria</Heading>
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <MapPin size={18} style={{ color: "var(--gray-9)" }} />
+                <Heading size="3">Search Criteria</Heading>
+              </div>
             </div>
-            <DataList.Root>
-              {criteria.asset_classes && criteria.asset_classes.length > 0 && (
-                <DataList.Item>
-                  <DataList.Label>Asset Classes</DataList.Label>
-                  <DataList.Value>
-                    <div className="flex gap-1 flex-wrap">
-                      {criteria.asset_classes.map((ac) => (
-                        <Badge key={ac} size="1" variant="soft">{ac}</Badge>
-                      ))}
-                    </div>
-                  </DataList.Value>
-                </DataList.Item>
-              )}
-              {criteria.asset_subclasses && criteria.asset_subclasses.length > 0 && (
-                <DataList.Item>
-                  <DataList.Label>Subclasses</DataList.Label>
-                  <DataList.Value>
-                    <div className="flex gap-1 flex-wrap">
-                      {criteria.asset_subclasses.map((sc) => (
-                        <Badge key={sc} size="1" variant="outline">{sc}</Badge>
-                      ))}
-                    </div>
-                  </DataList.Value>
-                </DataList.Item>
-              )}
-              {criteria.regions && criteria.regions.length > 0 && (
-                <DataList.Item>
-                  <DataList.Label>Regions</DataList.Label>
-                  <DataList.Value>{criteria.regions.join(", ")}</DataList.Value>
-                </DataList.Item>
-              )}
-              {criteria.cities && criteria.cities.length > 0 && (
-                <DataList.Item>
-                  <DataList.Label>Cities</DataList.Label>
-                  <DataList.Value>{criteria.cities.join(", ")}</DataList.Value>
-                </DataList.Item>
-              )}
-              {(criteria.price_min || criteria.price_max) && (
-                <DataList.Item>
-                  <DataList.Label>Price Range</DataList.Label>
-                  <DataList.Value>
-                    {criteria.price_min ? formatCurrency(criteria.price_min) : "Any"} – {criteria.price_max ? formatCurrency(criteria.price_max) : "Any"}
-                  </DataList.Value>
-                </DataList.Item>
-              )}
-              {(criteria.sqft_min || criteria.sqft_max) && (
-                <DataList.Item>
-                  <DataList.Label>Size (sqft)</DataList.Label>
-                  <DataList.Value>
-                    {criteria.sqft_min?.toLocaleString() || "Any"} – {criteria.sqft_max?.toLocaleString() || "Any"}
-                  </DataList.Value>
-                </DataList.Item>
-              )}
-              {criteria.market_type && (
-                <DataList.Item>
-                  <DataList.Label>Market Type</DataList.Label>
-                  <DataList.Value>{criteria.market_type}</DataList.Value>
-                </DataList.Item>
-              )}
-              {!criteria.asset_classes?.length && !criteria.regions?.length && !criteria.price_min && !criteria.price_max && (
-                <DataList.Item>
-                  <DataList.Label>Criteria</DataList.Label>
-                  <DataList.Value>
-                    <Text style={{ color: "var(--gray-9)" }}>No criteria set</Text>
-                  </DataList.Value>
-                </DataList.Item>
-              )}
-            </DataList.Root>
+
+            {!hasCriteria ? (
+              <div className="py-4 text-center">
+                <Text size="2" style={{ color: "var(--gray-9)" }}>
+                  No criteria set.{" "}
+                </Text>
+                <button
+                  className="text-sm no-underline"
+                  style={{ color: "var(--accent-11)" }}
+                  onClick={() => setEditDrawerOpen(true)}
+                >
+                  Add criteria
+                </button>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {/* Property Type */}
+                {(criteria.asset_classes?.length || criteria.asset_subclasses?.length || criteria.zoning_notes) && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <Buildings size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Property Type
+                    </Text>
+                    <DataList.Root size="2">
+                      {criteria.asset_classes && criteria.asset_classes.length > 0 && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Asset Classes</DataList.Label>
+                          <DataList.Value>
+                            <div className="flex gap-1 flex-wrap">
+                              {criteria.asset_classes.map((ac) => (
+                                <Badge key={ac} size="1" variant="soft" color="jade">{ac}</Badge>
+                              ))}
+                            </div>
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.asset_subclasses && criteria.asset_subclasses.length > 0 && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Subclasses</DataList.Label>
+                          <DataList.Value>
+                            <div className="flex gap-1 flex-wrap">
+                              {criteria.asset_subclasses.map((sc) => (
+                                <Badge key={sc} size="1" variant="outline">{sc.replace(/_/g, " ")}</Badge>
+                              ))}
+                            </div>
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.zoning_notes && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Zoning</DataList.Label>
+                          <DataList.Value>{criteria.zoning_notes}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                    </DataList.Root>
+                  </div>
+                )}
+
+                {/* Tenant Preferences */}
+                {(criteria.tenant_quality || criteria.tenant_categories?.length || criteria.occupancy_type || criteria.anchored_preference) && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <Users size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Tenant Preferences
+                    </Text>
+                    <DataList.Root size="2">
+                      {criteria.tenant_quality && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Quality</DataList.Label>
+                          <DataList.Value>{TENANT_QUALITY_LABELS[criteria.tenant_quality] || criteria.tenant_quality}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.tenant_categories && criteria.tenant_categories.length > 0 && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Categories</DataList.Label>
+                          <DataList.Value>
+                            <div className="flex gap-1 flex-wrap">
+                              {criteria.tenant_categories.map((tc) => (
+                                <Badge key={tc} size="1" variant="outline">{tc.replace(/_/g, " ")}</Badge>
+                              ))}
+                            </div>
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.occupancy_type && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Occupancy</DataList.Label>
+                          <DataList.Value>{OCCUPANCY_LABELS[criteria.occupancy_type] || criteria.occupancy_type}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.anchored_preference && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Anchored</DataList.Label>
+                          <DataList.Value>{ANCHORED_LABELS[criteria.anchored_preference] || criteria.anchored_preference}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                    </DataList.Root>
+                  </div>
+                )}
+
+                {/* Location */}
+                {(criteria.regions?.length || criteria.cities?.length || criteria.market_tiers?.length) && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <MapPin size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Location
+                    </Text>
+                    <DataList.Root size="2">
+                      {criteria.market_tiers && criteria.market_tiers.length > 0 && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Market Tiers</DataList.Label>
+                          <DataList.Value>
+                            <div className="flex gap-1">
+                              {criteria.market_tiers.map((t) => (
+                                <Badge key={t} size="1" variant="soft">{MARKET_TIER_LABELS[t] || t}</Badge>
+                              ))}
+                            </div>
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.regions && criteria.regions.length > 0 && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Regions</DataList.Label>
+                          <DataList.Value>{criteria.regions.join(", ")}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.cities && criteria.cities.length > 0 && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Cities</DataList.Label>
+                          <DataList.Value>{criteria.cities.join(", ")}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                    </DataList.Root>
+                  </div>
+                )}
+
+                {/* Financial */}
+                {(criteria.price_min || criteria.price_max || criteria.cap_rate_min || criteria.cap_rate_max || criteria.noi_min || criteria.noi_max) && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <CurrencyDollar size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Financial
+                    </Text>
+                    <DataList.Root size="2">
+                      {(criteria.price_min || criteria.price_max) && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Price Range</DataList.Label>
+                          <DataList.Value>
+                            {criteria.price_min ? formatCurrency(criteria.price_min) : "Any"} – {criteria.price_max ? formatCurrency(criteria.price_max) : "Any"}
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {(criteria.cap_rate_min || criteria.cap_rate_max) && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Cap Rate</DataList.Label>
+                          <DataList.Value>
+                            {criteria.cap_rate_min ?? "Any"}% – {criteria.cap_rate_max ?? "Any"}%
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {(criteria.noi_min || criteria.noi_max) && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">NOI Range</DataList.Label>
+                          <DataList.Value>
+                            {criteria.noi_min ? formatCurrency(criteria.noi_min) : "Any"} – {criteria.noi_max ? formatCurrency(criteria.noi_max) : "Any"}
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                    </DataList.Root>
+                  </div>
+                )}
+
+                {/* Size */}
+                {(criteria.sqft_min || criteria.sqft_max || criteria.acreage_min || criteria.acreage_max || criteria.unit_count_min || criteria.unit_count_max) && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <Ruler size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Size
+                    </Text>
+                    <DataList.Root size="2">
+                      {(criteria.sqft_min || criteria.sqft_max) && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Building Size</DataList.Label>
+                          <DataList.Value>
+                            {criteria.sqft_min?.toLocaleString() || "Any"} – {criteria.sqft_max?.toLocaleString() || "Any"} sqft
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {(criteria.acreage_min || criteria.acreage_max) && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Acreage</DataList.Label>
+                          <DataList.Value>
+                            {criteria.acreage_min || "Any"} – {criteria.acreage_max || "Any"} acres
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {(criteria.unit_count_min || criteria.unit_count_max) && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Units</DataList.Label>
+                          <DataList.Value>
+                            {criteria.unit_count_min || "Any"} – {criteria.unit_count_max || "Any"} units
+                          </DataList.Value>
+                        </DataList.Item>
+                      )}
+                    </DataList.Root>
+                  </div>
+                )}
+
+                {/* Investment Profile */}
+                {(criteria.investment_strategy || criteria.vacancy_tolerance) && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <ChartLineUp size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Investment Profile
+                    </Text>
+                    <DataList.Root size="2">
+                      {criteria.investment_strategy && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Strategy</DataList.Label>
+                          <DataList.Value>{STRATEGY_LABELS[criteria.investment_strategy] || criteria.investment_strategy}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                      {criteria.vacancy_tolerance && (
+                        <DataList.Item>
+                          <DataList.Label minWidth="120px">Vacancy</DataList.Label>
+                          <DataList.Value>{VACANCY_LABELS[criteria.vacancy_tolerance] || criteria.vacancy_tolerance}</DataList.Value>
+                        </DataList.Item>
+                      )}
+                    </DataList.Root>
+                  </div>
+                )}
+
+                {/* Timeline */}
+                {criteria.timeline && (
+                  <div>
+                    <Text size="1" weight="medium" className="block mb-2" style={{ color: "var(--gray-9)" }}>
+                      <Clock size={12} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
+                      Timeline
+                    </Text>
+                    <DataList.Root size="2">
+                      <DataList.Item>
+                        <DataList.Label minWidth="120px">Timeline</DataList.Label>
+                        <DataList.Value>{TIMELINE_LABELS[criteria.timeline] || criteria.timeline}</DataList.Value>
+                      </DataList.Item>
+                    </DataList.Root>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Buyer card */}
@@ -263,6 +523,8 @@ export default function BuyMandateDetailPage() {
                       <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Region</th>
                       <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Asset Class</th>
                       <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
+                      <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>NOI</th>
+                      <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Cap Rate</th>
                       <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Sell Opp</th>
                     </tr>
                   </thead>
@@ -287,6 +549,16 @@ export default function BuyMandateDetailPage() {
                         </td>
                         <td className="px-3 py-2 text-right">
                           <Text size="2">{formatCurrency(p.most_recent_sale_price)}</Text>
+                        </td>
+                        <td className="px-3 py-2 text-right">
+                          <Text size="2" style={{ color: p.noi ? "var(--gray-12)" : "var(--gray-8)" }}>
+                            {p.noi ? formatCurrency(p.noi) : "—"}
+                          </Text>
+                        </td>
+                        <td className="px-3 py-2 text-right">
+                          <Text size="2" style={{ color: p.implied_cap_rate ? "var(--gray-12)" : "var(--gray-8)" }}>
+                            {p.implied_cap_rate ? `${p.implied_cap_rate}%` : "—"}
+                          </Text>
                         </td>
                         <td className="px-3 py-2">
                           {p.sell_opportunity_id ? (
@@ -336,7 +608,7 @@ export default function BuyMandateDetailPage() {
             {mandate.notes && (
               <>
                 <Separator className="my-3" />
-                <Text size="2" style={{ color: "var(--gray-11)" }}>
+                <Text size="2" style={{ color: "var(--gray-11)", whiteSpace: "pre-line" }}>
                   {mandate.notes}
                 </Text>
               </>
@@ -354,6 +626,22 @@ export default function BuyMandateDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* Edit drawer */}
+      {editDrawerOpen && (
+        <CreateBuyMandateDrawer
+          contactId={mandate.contact_id || undefined}
+          groupId={mandate.group_id || undefined}
+          entityName={mandate.contact_name || mandate.group_name || ""}
+          editMandateId={mandate.id}
+          editCriteria={criteria}
+          editNotes={mandate.notes || ""}
+          onClose={() => {
+            setEditDrawerOpen(false);
+            load(); // Refresh after edit
+          }}
+        />
+      )}
     </div>
   );
 }

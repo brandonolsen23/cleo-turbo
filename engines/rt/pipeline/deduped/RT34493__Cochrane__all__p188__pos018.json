@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT34493",
+  "source_folder": "Cochrane/all/p188",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34493",
+      "source_folder": "Cochrane/all/p188",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p188/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "HAZELDEAN RD",
+        "HARTIN ST"
+      ],
+      "city_region": "Goulbourn : Ottawa-Carleton",
+      "date_text": "01 Mar 2004",
+      "price_text": "$810,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bob Holdco Inc",
+        "Sid Bradley Realty Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1883 Main St",
+        "Stittsville, Ontario",
+        "K2S 1A2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-4687",
+      "Parts 3-7",
+      "",
+      "SW corner",
+      "",
+      "6.89 acre"
+    ],
+    "arn_text": "06 27 010 830 14001",
+    "consideration_lines": [
+      "cash: $260,000     assumed/vtb debt: $550,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "9369 / 10920",
+      "rt_id": "RT34493"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "HAZELDEAN RD, HARTIN ST",
+    "postcode": "",
+    "municipality": "Goulbourn",
+    "region": "Ottawa-Carleton",
+    "date": "03/01/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": "6.89",
+    "consid": "810000",
+    "cash": "260000",
+    "debt": "550000",
+    "note": "",
+    "pin": "",
+    "rollno": "06 27 010 830 14001"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "HAZELDEAN RD",
+      "HARTIN ST"
+    ],
+    "city_region": "Goulbourn : Ottawa-Carleton",
+    "date_text": "01 Mar 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bob Holdco Inc",
+      "Sid Bradley Realty Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$810,000"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "rt_id": "RT59834",
+  "source_folder": "York_Region/retail/p013",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT59834",
+      "source_folder": "York_Region/retail/p013",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p013/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "1 INDUSTRIAL PKWY S"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "07 Jan 2008",
+      "price_text": "$1,450,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1072940 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Aubrey MacMillan",
+        "112 Elderberry Trail",
+        "Aurora, Ontario",
+        "L4G 6X2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "North 404 Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Sackfield",
+        "62 St George",
+        "Stouffville, Ontario",
+        "L4A 1P7"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 3 units 5,800 sf @ $250",
+      "",
+      "I unit (3,000 sf) is vacant."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-9035, Part 1",
+      "Except:",
+      "Plan 65R-10795, Part 1",
+      "",
+      "0.50 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,450,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 1072940 Ontario Ltd",
+      "principal: $850,000   rate: 7.0% per annum",
+      "registered: 01/07/2008   due: 01/07/2011"
+    ],
+    "broker_lines": [
+      "Re/Max Executive Realty: Bruce Spragg, 905-883-4922"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT598/RT59834/0126_125928.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT598/RT59834/0126_125929.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT598/RT59834/air1.jpg",
+        "/assets/files/RT5/RT598/RT59834/air2.jpg",
+        "/assets/files/RT5/RT598/RT59834/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "624 / 984",
+      "rt_id": "RT59834"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "1 INDUSTRIAL PKWY S",
+    "postcode": "L4G 3V9",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "01/07/2008",
+    "desc": "Retail Plaza - 1 storey; 3 units 5,800 sf @ $250",
+    "bldg": "5,800 sf",
+    "acreage": ".5",
+    "consid": "1450000",
+    "cash": "1450000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "1 INDUSTRIAL PKWY S"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "07 Jan 2008",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 3 units 5,800 sf @ $250",
+    "seller_lines": [
+      "1072940 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "North 404 Holdings Ltd"
+    ],
+    "price_text": "$1,450,000"
+  }
+}

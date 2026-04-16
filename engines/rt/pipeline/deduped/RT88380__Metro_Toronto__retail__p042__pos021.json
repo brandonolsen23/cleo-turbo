@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT88380",
+  "source_folder": "Metro_Toronto/retail/p042",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT88380",
+      "source_folder": "Metro_Toronto/retail/p042",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p042/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "40 EGLINTON SQUARE"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "17 Oct 2012",
+      "price_text": "$7,500,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Assurance Co of Canada     416-408-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ross Strowger",
+        "150 King St W, 3rd Flr",
+        "Toronto, Ontario",
+        "M5H 1J9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "8255237 Canada Inc     416-239-7171"
+      ],
+      "trade_name": "Metro Ontario Inc",
+      "contact_lines": [
+        "Attn: Simon Rivet",
+        "5559 Dundas St W",
+        "PO Box 68, Station A",
+        "Toronto, Ontario",
+        "M5W 1A6"
+      ]
+    },
+    "description_lines": [
+      "Metro Supermarket - 1 storey; 31,074 sf @ $241",
+      "",
+      "This store is part of the Eglinton Square Mall, which is a 250,000 sf enclosed 1 storey mall, anchored by The Bay, Shoppers Drug Mart and shadow anchored by Metro.",
+      "",
+      "Metro had formerly leased the building."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4003, Part Blocks A & B",
+      "As in Inst No SC-211664",
+      "Except:",
+      "Inst No SC-289179",
+      "",
+      "PIN: 06452-0107",
+      "",
+      "S side Eglinton Ave E, W of Victoria Park Ave",
+      "",
+      "4.87 acre"
+    ],
+    "arn_text": "19 01 024 280 00600",
+    "consideration_lines": [
+      "cash: $7,500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT883/RT88380/1103_160039.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT883/RT88380/1103_160121.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT883/RT88380/1103_160139.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT883/RT88380/air1.jpg",
+        "/assets/files/RT8/RT883/RT88380/air2.jpg",
+        "/assets/files/RT8/RT883/RT88380/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2072 / 4952",
+      "rt_id": "RT88380"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "40 EGLINTON SQUARE",
+    "postcode": "",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "10/17/2012",
+    "desc": "Metro Supermarket - 1 storey; 31,074 sf @ $241",
+    "bldg": "31,074 sf",
+    "acreage": "4.87",
+    "consid": "7500000",
+    "cash": "7500000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "06452-0107",
+    "rollno": "19 01 024 280 00600"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "40 EGLINTON SQUARE"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "17 Oct 2012",
+    "note": "Purchased by Tenant",
+    "description": "Metro Supermarket - 1 storey; 31,074 sf @ $241",
+    "seller_lines": [
+      "Sun Life Assurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "8255237 Canada Inc"
+    ],
+    "price_text": "$7,500,000"
+  }
+}

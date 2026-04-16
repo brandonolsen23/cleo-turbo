@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT80738",
+  "source_folder": "Ottawa-Carleton/retail/p013",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80738",
+      "source_folder": "Ottawa-Carleton/retail/p013",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p013/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "108 THIRD AVE",
+        "UNIT 102"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "06 Jun 2011",
+      "price_text": "$825,000",
+      "note": "Purchased by Tenant"
+    },
+    "transferor": {
+      "party_lines": [
+        "1394842 Ontario Inc     613-226-7266"
+      ],
+      "trade_name": "Ashcroft Homes",
+      "contact_lines": [
+        "Attn: David Choo",
+        "18 Antares Dr",
+        "Ottawa, Ontario",
+        "K2E 1A9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2273353 Ontario Inc     613-563-1700"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Robert Boutros",
+        "108 Third Ave, Unit 102",
+        "Ottawa, Ontario",
+        "K1S 2J8"
+      ]
+    },
+    "description_lines": [
+      "Retail Condo - 2,000 sf @ $413",
+      "",
+      "Purchased by the tenant (hair salon)",
+      "",
+      "Part of a 3 storey building conmprised of 9-1bdrm residential lofts over 3 retail units"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 876",
+      "Level 1, Units 2 & 16",
+      "",
+      "PIN: 15876-0002 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $825,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $500,000   rate: Prime plus 6.0% per annum",
+      "registered: 09/09/2011   due: on demand",
+      "",
+      "chargee: 1394842 Ontario Inc",
+      "principal: $125,000   rate: 5.0% per annum",
+      "registered: 09/09/2011   due: 09/09/2013"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT807/RT80738/1029_083929.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT807/RT80738/1029_084008.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT807/RT80738/1029_084053.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT807/RT80738/1029_084109.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT807/RT80738/1029_084117.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "639 / 1141",
+      "rt_id": "RT80738"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "108 THIRD AVE, UNIT 102",
+    "postcode": "K1S 2J8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/06/2011",
+    "desc": "Retail Condo - 2,000 sf @ $413",
+    "bldg": "2,000 sf",
+    "acreage": "",
+    "consid": "825000",
+    "cash": "825000",
+    "debt": "",
+    "note": "Purchased by Tenant",
+    "pin": "15876-0002+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "108 THIRD AVE",
+      "UNIT 102"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "06 Jun 2011",
+    "note": "Purchased by Tenant",
+    "description": "Retail Condo - 2,000 sf @ $413",
+    "seller_lines": [
+      "1394842 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "2273353 Ontario Inc"
+    ],
+    "price_text": "$825,000"
+  }
+}

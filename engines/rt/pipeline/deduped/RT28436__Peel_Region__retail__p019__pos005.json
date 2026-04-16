@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT28436",
+  "source_folder": "Peel_Region/retail/p019",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28436",
+      "source_folder": "Peel_Region/retail/p019",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p019/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "2070 DUNDAS ST E"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "23 Dec 2002",
+      "price_text": "$4,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "OD (A-RCC) Inc, General partner for OD (A-RCC) LP"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "2300 Yonge St, Ste 400",
+        "PO Box 2400",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2070 Dundas Street East Inc     416-484-8177"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nathan Lindenberg",
+        "Lindenberg & Lindenberg",
+        "287 Eglinton Ave E, Ste 100",
+        "Toronto, Ontario",
+        "M4P 1L3"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 44,000 sf @ $91"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43R-19726, Part 1"
+    ],
+    "arn_text": "21 05 070 068 37700",
+    "consideration_lines": [
+      "cash: $4,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "906 / 1087",
+      "rt_id": "RT28436"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "2070 DUNDAS ST E",
+    "postcode": "L4X 1L9",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "12/23/2002",
+    "desc": "Retail Bldg - 1 storey; 44,000 sf @ $91",
+    "bldg": "44,000 sf",
+    "acreage": "",
+    "consid": "4000000",
+    "cash": "4000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 05 070 068 37700"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "2070 DUNDAS ST E"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "23 Dec 2002",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 44,000 sf @ $91",
+    "seller_lines": [
+      "OD (A-RCC) Inc, General partner for OD (A-RCC) LP"
+    ],
+    "buyer_lines": [
+      "2070 Dundas Street East Inc"
+    ],
+    "price_text": "$4,000,000"
+  }
+}

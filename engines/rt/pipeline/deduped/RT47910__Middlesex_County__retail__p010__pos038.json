@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT47910",
+  "source_folder": "Middlesex_County/retail/p010",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT47910",
+      "source_folder": "Middlesex_County/retail/p010",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p010/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "4175 LONGWOODS RD"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "31 Mar 2006",
+      "price_text": "$6,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Home Depot Holdings Inc     416-609-0852"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Cindy Warren",
+        "One Concorde Gate, Ste 900",
+        "Toronto, Ontario",
+        "M3H 4C9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Westwood Power Centre Inc     519-433-0634"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Vito Frijia",
+        "Southside Construction Ltd",
+        "358 Horton St",
+        "London, Ontario",
+        "N6B 1L7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 32",
+      "Plan 33R-11135, Parts 3 & 4",
+      "",
+      "11.54 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $6,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "489 / 686",
+      "rt_id": "RT47910"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "4175 LONGWOODS RD",
+    "postcode": "N0L 1M0",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "03/31/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "11.54",
+    "consid": "6200000",
+    "cash": "6200000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "4175 LONGWOODS RD"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "31 Mar 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Home Depot Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Westwood Power Centre Inc"
+    ],
+    "price_text": "$6,200,000"
+  }
+}

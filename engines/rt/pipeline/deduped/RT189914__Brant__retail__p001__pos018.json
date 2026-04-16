@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT189914",
+  "source_folder": "Brant/retail/p001",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189914",
+      "source_folder": "Brant/retail/p001",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p001/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "32 CHARING CROSS ST"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "21 Jan 2025",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Century 21 Professional Group Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "45 Colonial Cres",
+        "Brantford, Ontario",
+        "N3R 7M9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001083542 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sunil Angrish",
+        "32 Charing Cross St",
+        "Brantford, Ontario",
+        "N3R 2H2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 364, Lot 42",
+      "Plan 2R-3075, Parts 2-4",
+      "",
+      "PIN: 32175-0127",
+      "",
+      "0.21 acre"
+    ],
+    "arn_text": "29 06 030 008 05400",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $620,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/21/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189914/0406_120709.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189914/0406_120733.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189914/0406_120759.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189914/0406_120821.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1899/RT189914/0406_120833.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "19 / 195",
+      "rt_id": "RT189914"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "32 CHARING CROSS ST",
+    "postcode": "N3R 2H2",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "01/21/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".21",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "32175-0127",
+    "rollno": "29 06 030 008 05400"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "32 CHARING CROSS ST"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "21 Jan 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Century 21 Professional Group Inc"
+    ],
+    "buyer_lines": [
+      "1001083542 Ontario Inc"
+    ],
+    "price_text": "$775,000"
+  }
+}

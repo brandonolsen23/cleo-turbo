@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT23762",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23762",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "450 WINONA DR"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "13 Dec 2001",
+      "price_text": "$1,365,040",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Simon & Ester Minz     416-499-9350"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "M & R Property Management",
+        "3520 Pharmacy Ave, Unit 1",
+        "Toronto, Ontario",
+        "M1W 2T8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "450 Winona Drive Holdings Inc     416-340-1600"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Guy Alberga",
+        "Metro Capital Group",
+        "20 Queen St W, Ste 2106",
+        "PO Box 36",
+        "Toronto, Ontario",
+        "M5H 3R3"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 6 storey; 124 units",
+      "",
+      "11-bach 77-1bdrm 36-2bdrm"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 115, Part Lot 20",
+      "As in Inst No TB-901971",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "19 14 021 240 08200",
+    "consideration_lines": [
+      "cash: $1,365,040     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "5331 / 6031",
+      "rt_id": "RT23762"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "450 WINONA DR",
+    "postcode": "M6C 3T9",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "12/13/2001",
+    "desc": "Apartment Bldg - 6 storey; 124 units",
+    "bldg": "124 units",
+    "acreage": "1.06",
+    "consid": "1365040",
+    "cash": "1365040",
+    "debt": "",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 14 021 240 08200"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "450 WINONA DR"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "13 Dec 2001",
+    "note": "Partial Interest",
+    "description": "Apartment Bldg - 6 storey; 124 units",
+    "seller_lines": [
+      "Simon & Ester Minz"
+    ],
+    "buyer_lines": [
+      "450 Winona Drive Holdings Inc"
+    ],
+    "price_text": "$1,365,040"
+  }
+}

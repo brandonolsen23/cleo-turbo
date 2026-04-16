@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT193857",
+  "source_folder": "Essex_County/retail/p001",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193857",
+      "source_folder": "Essex_County/retail/p001",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p001/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "2275 TECUMSEH RD W"
+      ],
+      "city_region": "Windsor : Essex County",
+      "date_text": "15 Aug 2025",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2645533 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "6 Cameron Side Rd E",
+        "Essex, Ontario",
+        "N8M 2X5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "981246 Ontario Ltd     519-966-3351"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bilal Rammo",
+        "2629 Fleming Ct",
+        "Windsor, Ontario",
+        "N9E 4N9"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 883, Part Lots 505-511",
+      "As in Inst No R-1189500",
+      "",
+      "PIN: 01213-0326",
+      "",
+      "0.53 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $400,000",
+      "",
+      "chargee: 2645533 Ontario Ltd",
+      "principal: $400,000   rate: 0% per annum.",
+      "registered: 08/15/2025   due: 09/26/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "35 / 460",
+      "rt_id": "RT193857"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "2275 TECUMSEH RD W",
+    "postcode": "",
+    "municipality": "Windsor",
+    "region": "Essex County",
+    "date": "08/15/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".53",
+    "consid": "1200000",
+    "cash": "800000",
+    "debt": "400000",
+    "note": "",
+    "pin": "01213-0326",
+    "rollno": ""
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "2275 TECUMSEH RD W"
+    ],
+    "city_region": "Windsor : Essex County",
+    "date_text": "15 Aug 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2645533 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "981246 Ontario Ltd"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

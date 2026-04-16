@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20727",
+  "source_folder": "Halton_Region/retail/p011",
+  "position": 48,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20727",
+      "source_folder": "Halton_Region/retail/p011",
+      "position": 48,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p011/detail_048.html"
+    },
+    "header": {
+      "address_lines": [
+        "327 BRONTE ST S"
+      ],
+      "city_region": "Milton : Halton Region",
+      "date_text": "09 Mar 2001",
+      "price_text": "$1,095,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "White Oaks Plaza (A-RCC) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeffrey Dennis",
+        "2300 Yonge St, Ste 400, PO Box 2400",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Emerald Oaks Investment Corp",
+        "White Oaks Plaza (A-RCC) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Cosimo Lizzi",
+        "327 Bronte St S, Unit 6",
+        "Milton, Ontario",
+        "L9T 4A4"
+      ]
+    },
+    "description_lines": [
+      "White Oaks Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 12",
+      "As in Inst No 782314",
+      "",
+      "3.75 acre"
+    ],
+    "arn_text": "24 09 010 001 01900",
+    "consideration_lines": [
+      "cash: $80,000     assumed/vtb debt: $1,015,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "549 / 613",
+      "rt_id": "RT20727"
+    }
+  },
+  "export": {
+    "position": 48,
+    "address": "327 BRONTE ST S",
+    "postcode": "L9T 4A4",
+    "municipality": "Milton",
+    "region": "Halton Region",
+    "date": "03/09/2001",
+    "desc": "White Oaks Plaza",
+    "bldg": "",
+    "acreage": "3.75",
+    "consid": "1095000",
+    "cash": "80000",
+    "debt": "1015000",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "24 09 010 001 01900"
+  },
+  "results": {
+    "position": 48,
+    "address_lines": [
+      "327 BRONTE ST S"
+    ],
+    "city_region": "Milton : Halton Region",
+    "date_text": "09 Mar 2001",
+    "note": "Related Parties",
+    "description": "White Oaks Plaza",
+    "seller_lines": [
+      "White Oaks Plaza (A-RCC) Inc"
+    ],
+    "buyer_lines": [
+      "Emerald Oaks Investment Corp",
+      "White Oaks Plaza (A-RCC) Inc"
+    ],
+    "price_text": "$1,095,000"
+  }
+}

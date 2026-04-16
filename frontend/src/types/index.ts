@@ -225,6 +225,8 @@ export interface PropertyTransaction {
   charges_json: string[] | null;
   photos_json: { street_photo_urls?: string[]; aerial_photo_urls?: string[]; standalone_photo_url?: string } | null;
   parties: PropertyTransactionParty[];
+  seller_mailing_address?: { display: string | null; city: string | null; province: string | null; postal: string | null } | null;
+  buyer_mailing_address?: { display: string | null; city: string | null; province: string | null; postal: string | null } | null;
 }
 
 // ============================================================
@@ -242,6 +244,7 @@ export interface TransactionBrowseItem {
   seller_parties: string[] | null;
   buyer_parties: string[] | null;
   transaction_note: string | null;
+  has_source_html?: boolean;
 }
 
 export interface TransactionParty {
@@ -314,6 +317,7 @@ export interface TransactionDetail {
   buyer_mailing_address: MailingAddress | null;
   seller_party_metadata: PartyMetadata | null;
   buyer_party_metadata: PartyMetadata | null;
+  has_source_html?: boolean;
 }
 
 export interface MailingAddress {
@@ -357,6 +361,9 @@ export interface ContactBrowseItem {
   first_seen_date: string | null;
   last_seen_date: string | null;
   job_title: string | null;
+  mailing_city: string | null;
+  dominant_type: string | null;
+  secondary_type: string | null;
 }
 
 export interface ContactTransaction {
@@ -369,6 +376,7 @@ export interface ContactTransaction {
   sale_price: number | null;
   display_address: string;
   city: string;
+  brands: TransactionBrand[];
 }
 
 export interface ContactDetail {
@@ -395,6 +403,15 @@ export interface ContactDetail {
   updated_at: string;
   transactions: ContactTransaction[];
   current_group: { id: string; display_name: string; status: string; hq_address: string | null } | null;
+  linkedin_url: string | null;
+  linkedin_headline: string | null;
+  linkedin_photo_url: string | null;
+  linkedin_enriched_at: string | null;
+  datanyze_contacts: {
+    emails: { value: string; type: string; source: string }[];
+    phones: { value: string; type: string; source: string }[];
+  } | null;
+  work_history: WorkHistoryPosition[];
 }
 
 // ============================================================
@@ -420,6 +437,8 @@ export interface GroupBrowseItem {
   geographic_radius_km: number | null;
   region_count: number | null;
   max_distance_from_hq_km: number | null;
+  dominant_type: string | null;
+  secondary_type: string | null;
 }
 
 export interface GroupFilterOptions {
@@ -442,6 +461,11 @@ export interface GroupContact {
   transaction_count: number;
 }
 
+export interface TransactionBrand {
+  brand: string;
+  category: string;
+}
+
 export interface GroupTransaction {
   source_id: string;
   sale_date: string | null;
@@ -450,6 +474,7 @@ export interface GroupTransaction {
   city: string;
   side: string;
   party_name: string | null;
+  brands: TransactionBrand[];
 }
 
 export interface GroupProperty {
@@ -462,6 +487,7 @@ export interface GroupProperty {
   lat: number | null;
   lng: number | null;
   asset_class: string | null;
+  brands: TransactionBrand[];
 }
 
 // ── Mini-map types ──
@@ -532,6 +558,7 @@ export interface GroupDetail {
   transaction_count: number;
   contact_count: number;
   hq_address: string | null;
+  corporate_address: string | null;
   website: string | null;
   hubspot_id: string | null;
   created_at: string;
@@ -903,6 +930,20 @@ export interface CreateGroupResponse {
   normalized_name: string;
 }
 
+export interface GroupSearchResult {
+  id: string;
+  display_name: string;
+  status: string;
+  property_count: number;
+  transaction_count: number;
+  contact_count: number;
+}
+
+export interface GroupSearchResponse {
+  results: GroupSearchResult[];
+  total: number;
+}
+
 export interface MergePreviewResponse {
   source_count: number;
   target_id: string;
@@ -960,6 +1001,10 @@ export interface SellOpportunity {
   property_id: string;
   seller_contact_id: string | null;
   seller_group_id: string | null;
+  noi: number | null;
+  expected_cap_rate: number | null;
+  expected_price: number | null;
+  commission_pct: number | null;
   deal_value: number | null;
   status: SellOppStatus;
   owner: string | null;
@@ -1009,17 +1054,55 @@ export interface MatchingMandate {
 
 export type BuyMandateStatus = "active" | "on_hold" | "stale" | "fulfilled";
 
+export type TenantQuality = "national_credit" | "regional_credit" | "local" | "any";
+export type OccupancyType = "single" | "multi" | "either";
+export type AnchoredPreference = "grocery" | "big_box" | "none";
+export type MarketTier = "primary" | "secondary" | "tertiary";
+export type InvestmentStrategy = "core" | "core_plus" | "value_add" | "opportunistic";
+export type VacancyTolerance = "fully_leased" | "some_vacancy" | "high_vacancy";
+export type MandatePriority = "primary" | "secondary" | "exploratory";
+export type MandateTimeline = "immediate" | "near_term" | "medium" | "long_term";
+
 export interface BuyMandateCriteria {
+  // Property type
   asset_classes?: string[];
   asset_subclasses?: string[];
+  zoning_notes?: string;
+
+  // Tenant preferences
+  tenant_quality?: TenantQuality;
+  tenant_categories?: string[];
+  occupancy_type?: OccupancyType;
+  anchored_preference?: AnchoredPreference;
+
+  // Location
   regions?: string[];
   cities?: string[];
+  market_tiers?: MarketTier[];
+
+  // Financial
   price_min?: number;
   price_max?: number;
+  cap_rate_min?: number;
+  cap_rate_max?: number;
+  noi_min?: number;
+  noi_max?: number;
+
+  // Size & physical
   sqft_min?: number;
   sqft_max?: number;
-  market_type?: string;
-  max_distance_from_city_km?: number;
+  acreage_min?: number;
+  acreage_max?: number;
+  unit_count_min?: number;
+  unit_count_max?: number;
+
+  // Investment profile
+  investment_strategy?: InvestmentStrategy;
+  vacancy_tolerance?: VacancyTolerance;
+
+  // Timing & priority
+  priority?: MandatePriority;
+  timeline?: MandateTimeline;
 }
 
 export interface BuyMandate {
@@ -1055,6 +1138,8 @@ export interface MatchingProperty {
   city: string | null;
   region: string | null;
   asset_class: string | null;
+  asset_subclass: string | null;
+  acreage: number | null;
   most_recent_sale_price: number | null;
   most_recent_sale_date: string | null;
   lat: number | null;
@@ -1064,6 +1149,44 @@ export interface MatchingProperty {
   sell_opportunity_id: string | null;
   sell_opportunity_status: string | null;
   deal_value: number | null;
+  noi: number | null;
+  implied_cap_rate: number | null;
+  unit_count: number | null;
+  vacancy_pct: number | null;
+}
+
+// ── Tenant Categories ──
+
+export interface TenantSubcategory {
+  id: string;
+  label: string;
+}
+
+export interface TenantCategory {
+  id: string;
+  label: string;
+  subcategories: TenantSubcategory[];
+}
+
+export interface TenantCategoriesResponse {
+  categories: TenantCategory[];
+}
+
+// ── Asset Classes ──
+
+export interface AssetSubclass {
+  id: string;
+  label: string;
+}
+
+export interface AssetClass {
+  id: string;
+  label: string;
+  subcategories: AssetSubclass[];
+}
+
+export interface AssetClassesResponse {
+  classes: AssetClass[];
 }
 
 // ── Activities ──
@@ -1101,4 +1224,131 @@ export interface SellOppFilters {
 
 export interface BuyMandateFilters {
   owners: string[];
+}
+
+// ============================================================
+// Group Comparison (evidence-based merge verification)
+// ============================================================
+
+export interface CompareGroupMailingAddress {
+  display: string;
+  city: string | null;
+  province: string | null;
+  postal: string | null;
+  usage_count: number;
+}
+
+export interface CompareGroupTransaction {
+  source_id: string;
+  sale_date: string | null;
+  sale_price: number | null;
+  display_address: string;
+  city: string;
+  side: string;
+  party_name: string | null;
+  party_phone: string | null;
+}
+
+export interface CompareGroupContact {
+  id: string;
+  display_name: string;
+  phone: string | null;
+  job_title: string | null;
+  contact_type: string | null;
+  transaction_count: number;
+  first_seen_date: string | null;
+  last_seen_date: string | null;
+  linkedin_url: string | null;
+  linkedin_headline: string | null;
+}
+
+export interface WorkHistoryPosition {
+  id: number;
+  company: string;
+  title: string | null;
+  start_date: string | null;
+  end_date: string | null;
+  is_current: boolean;
+  location: string | null;
+  company_logo_url: string | null;
+}
+
+export interface ContactWorkHistoryResponse {
+  contact_id: string;
+  linkedin_url: string | null;
+  linkedin_headline: string | null;
+  linkedin_photo_url: string | null;
+  linkedin_enriched_at: string | null;
+  positions: WorkHistoryPosition[];
+}
+
+export interface CompareGroupData {
+  id: string;
+  display_name: string;
+  normalized_name: string;
+  status: string;
+  property_count: number;
+  transaction_count: number;
+  contact_count: number;
+  hq_address: string | null;
+  contacts: CompareGroupContact[];
+  known_names: { name: string; normalized: string }[];
+  mailing_addresses: CompareGroupMailingAddress[];
+  recent_transactions: CompareGroupTransaction[];
+}
+
+export interface SharedAddress {
+  display: string;
+  city: string | null;
+  postal: string | null;
+  group_ids: string;
+  group_count: number;
+  total_txns: number;
+}
+
+export interface SharedContact {
+  id: string;
+  display_name: string;
+  phone: string | null;
+  job_title: string | null;
+  group_ids: string[];
+  group_count: number;
+  earliest_date: string | null;
+  latest_date: string | null;
+  linkedin_url: string | null;
+}
+
+export interface SharedPhone {
+  phone: string;
+  group_count: number;
+  contacts: { contact_id: string; display_name: string; group_id: string }[];
+}
+
+export interface GroupCompareResponse {
+  groups: Record<string, CompareGroupData>;
+  shared_addresses: SharedAddress[];
+  shared_contacts: SharedContact[];
+  shared_phones: SharedPhone[];
+  match_tier: number;
+  match_reasons: string[];
+}
+
+// ── Address-Based Suggestions ──
+
+export interface AddressSuggestion {
+  group_id: string;
+  display_name: string;
+  property_count: number;
+  transaction_count: number;
+  contact_count: number;
+  shared_addresses: { address: string; city: string | null; usage_count: number }[];
+  shared_contacts: { contact_id: string; name: string; phone: string | null; earliest_date: string | null; latest_date: string | null; linkedin_url: string | null }[];
+  shared_phones: { phone: string; other_contact: string }[];
+  match_tier: number;
+}
+
+export interface AddressSuggestionsResponse {
+  group_id: string;
+  suggestions: AddressSuggestion[];
+  total: number;
 }

@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT191795",
+  "source_folder": "York_Region/retail/p002",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT191795",
+      "source_folder": "York_Region/retail/p002",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "4300 STEELES AVE W",
+        "UNIT 12"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "11 Apr 2025",
+      "price_text": "$790,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "16782353 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sheriff Ganiyu",
+        "4300 Steeles Ave W, Unit 12",
+        "Vaughan, Ontario",
+        "L4L 4C2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 557",
+      "Level 1, Unit 12",
+      "",
+      "PIN: 29090-0012"
+    ],
+    "arn_text": "19 28 000 280 05312",
+    "consideration_lines": [
+      "cash: $790,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $592,000   rate: Prime plus 5.0% per annum.",
+      "registered: 04/11/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114432.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114525.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114529.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114530.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114534.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114537.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1917/RT191795/0503_114547.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "87 / 984",
+      "rt_id": "RT191795"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "4300 STEELES AVE W, UNIT 12",
+    "postcode": "L4L 4C2",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "04/11/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "790000",
+    "cash": "790000",
+    "debt": "",
+    "note": "",
+    "pin": "29090-0012",
+    "rollno": "19 28 000 280 05312"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "4300 STEELES AVE W",
+      "UNIT 12"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "11 Apr 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "16782353 Canada Inc"
+    ],
+    "price_text": "$790,000"
+  }
+}

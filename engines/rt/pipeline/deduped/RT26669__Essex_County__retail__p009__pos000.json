@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT26669",
+  "source_folder": "Essex_County/retail/p009",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26669",
+      "source_folder": "Essex_County/retail/p009",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Essex_County/retail/p009/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "13013 TECUMSEH RD E"
+      ],
+      "city_region": "Tecumseh : Essex County",
+      "date_text": "16 Aug 2002",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "NB Appliances Ltd     519-254-7489"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Brokalakis",
+        "685 Elliott St W",
+        "Windsor, Ontario",
+        "N9A 5Z7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1530259 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Jeffrey Ducharme",
+        "13013 Tecumseh Rd E",
+        "Tecumseh, Ontario",
+        "N8N 3T4"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 3 units 5,000 sf @ $120"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2, Part Lot 155",
+      "As in Inst No R-12687145",
+      "Except Plan 12R-13352, Part 1",
+      "",
+      "0.35 acre"
+    ],
+    "arn_text": "37 44 240 000 01500",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT266/RT26669/photo.jpg"
+    },
+    "footer": {
+      "page_position": "401 / 460",
+      "rt_id": "RT26669"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "13013 TECUMSEH RD E",
+    "postcode": "N8N 3T4",
+    "municipality": "Tecumseh",
+    "region": "Essex County",
+    "date": "08/16/2002",
+    "desc": "Retail Bldg - 1 storey; 3 units 5,000 sf @ $120",
+    "bldg": "5,000 sf",
+    "acreage": ".35",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "37 44 240 000 01500"
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "13013 TECUMSEH RD E"
+    ],
+    "city_region": "Tecumseh : Essex County",
+    "date_text": "16 Aug 2002",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 3 units 5,000 sf @ $120",
+    "seller_lines": [
+      "NB Appliances Ltd"
+    ],
+    "buyer_lines": [
+      "1530259 Ontario Ltd"
+    ],
+    "price_text": "$600,000"
+  }
+}

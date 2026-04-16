@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT48715",
+  "source_folder": "Metro_Toronto/multifamily/p081",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48715",
+      "source_folder": "Metro_Toronto/multifamily/p081",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p081/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "25 MAUGHAN CRES"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "17 May 2006",
+      "price_text": "$700,000",
+      "note": "Land Assembly"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Gold Canary Developments Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Alex Marrero",
+        "101 Fisherville Rd",
+        "Toronto, Ontario",
+        "M2R 3C3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 481-E, Part Lot 23",
+      "As in Inst No CA-527090",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "19 04 092 110 04700",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,750,000   rate: Prime plus 6.0% per annum",
+      "registered: 05/17/2006   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4011 / 6031",
+      "rt_id": "RT48715"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "25 MAUGHAN CRES",
+    "postcode": "M4L 3E4",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "05/17/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "Land Assembly",
+    "pin": "",
+    "rollno": "19 04 092 110 04700"
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "25 MAUGHAN CRES"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "17 May 2006",
+    "note": "Land Assembly",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Gold Canary Developments Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

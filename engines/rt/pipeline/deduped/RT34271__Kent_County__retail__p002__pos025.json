@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT34271",
+  "source_folder": "Kent_County/retail/p002",
+  "position": 25,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34271",
+      "source_folder": "Kent_County/retail/p002",
+      "position": 25,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kent_County/retail/p002/detail_025.html"
+    },
+    "header": {
+      "address_lines": [
+        "80 KEIL DR"
+      ],
+      "city_region": "Chatham-Kent : Kent County",
+      "date_text": "14 Feb 2003",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Tire Corp Ltd     416-480-3000"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Ken Silver",
+        "2180 Yonge St",
+        "15th Flr, South",
+        "Toronto, Ontario",
+        "M4P 2V8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2022241 Ontario Inc     905-854-9991"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "8343 Walker's Line",
+        "PO Box 220",
+        "Campbellville, Ontario",
+        "L0P 1B0"
+      ]
+    },
+    "description_lines": [
+      "Former Canadian Tire Store - 37,838 sf @ $18",
+      "",
+      "To be utilized as a Value Village and Gas Bar."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 24R-2860, Part 2",
+      "",
+      "3.59 acre"
+    ],
+    "arn_text": "36 42 030 023 01700",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "76 / 77",
+      "rt_id": "RT34271"
+    }
+  },
+  "export": {
+    "position": 25,
+    "address": "80 KEIL DR",
+    "postcode": "N7M 3H1",
+    "municipality": "Chatham-Kent",
+    "region": "Kent County",
+    "date": "02/14/2003",
+    "desc": "Former Canadian Tire Store - 37,838 sf @ $18",
+    "bldg": "37,838 sf",
+    "acreage": "3.59",
+    "consid": "700000",
+    "cash": "700000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "36 42 030 023 01700"
+  },
+  "results": {
+    "position": 25,
+    "address_lines": [
+      "80 KEIL DR"
+    ],
+    "city_region": "Chatham-Kent : Kent County",
+    "date_text": "14 Feb 2003",
+    "note": "",
+    "description": "Former Canadian Tire Store - 37,838 sf @ $18",
+    "seller_lines": [
+      "Canadian Tire Corp Ltd"
+    ],
+    "buyer_lines": [
+      "2022241 Ontario Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

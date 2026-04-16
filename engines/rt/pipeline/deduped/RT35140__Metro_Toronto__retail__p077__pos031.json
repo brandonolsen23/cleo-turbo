@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT35140",
+  "source_folder": "Metro_Toronto/retail/p077",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35140",
+      "source_folder": "Metro_Toronto/retail/p077",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p077/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "81 CHURCH ST",
+        "UNIT 1"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "19 Apr 2004",
+      "price_text": "$1,520,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Johnsong Enterprises Ltd     416-299-4136"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Wu",
+        "71 Briarscross Blvd",
+        "Scarborough, Ontario",
+        "M1S 3K6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1608997 Ontario Inc     416-696-6116"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Wandee Young",
+        "54 Wallington Ave",
+        "Toronto, Ontario",
+        "M4C 2N1"
+      ]
+    },
+    "description_lines": [
+      "Retail/Com Condo"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 596",
+      "Level 1, Unit 1"
+    ],
+    "arn_text": "19 04 064 480 00012",
+    "consideration_lines": [
+      "cash: $1,520,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT351/RT35140/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3832 / 4952",
+      "rt_id": "RT35140"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "81 CHURCH ST, UNIT 1",
+    "postcode": "M5C 2G2",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/19/2004",
+    "desc": "Retail/Com Condo",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1520000",
+    "cash": "1520000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 064 480 00012"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "81 CHURCH ST",
+      "UNIT 1"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "19 Apr 2004",
+    "note": "",
+    "description": "Retail/Com Condo",
+    "seller_lines": [
+      "Johnsong Enterprises Ltd"
+    ],
+    "buyer_lines": [
+      "1608997 Ontario Inc"
+    ],
+    "price_text": "$1,520,000"
+  }
+}

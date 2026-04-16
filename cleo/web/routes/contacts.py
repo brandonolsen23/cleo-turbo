@@ -2,10 +2,16 @@
 Contacts API — browse, search, detail, promote.
 """
 
+import json
+from typing import Optional
 from fastapi import APIRouter, Depends, Query, HTTPException
 from pydantic import BaseModel
 from ...web.deps import get_db, get_current_user, fts_query
 from ...web.audit import log_action
+
+# Type alias for optional query params — more explicit than bare `int = None`
+OptInt = Optional[int]
+OptStr = Optional[str]
 
 router = APIRouter()
 
@@ -31,17 +37,17 @@ def contact_filters(db=Depends(get_db), user=Depends(get_current_user)):
 def browse_contacts(
     page: int = Query(1, ge=1),
     per_page: int = Query(25, ge=1, le=100),
-    status: str = None,
-    contact_type: str = None,
-    min_transactions: int = None,
-    max_transactions: int = None,
-    min_buy_value: int = None,
-    max_buy_value: int = None,
-    region: str = None,
-    asset_class: str = None,
-    min_asset_class_count: int = Query(None, ge=1),
-    max_asset_class_count: int = Query(None, ge=1),
-    q: str = None,
+    status: OptStr = Query(None),
+    contact_type: OptStr = Query(None),
+    min_transactions: OptInt = Query(None),
+    max_transactions: OptInt = Query(None),
+    min_buy_value: OptInt = Query(None),
+    max_buy_value: OptInt = Query(None),
+    region: OptStr = Query(None),
+    asset_class: OptStr = Query(None),
+    min_asset_class_count: OptInt = Query(None, ge=1),
+    max_asset_class_count: OptInt = Query(None, ge=1),
+    q: OptStr = Query(None),
     sort: str = "last_seen_date",
     order: str = "desc",
     db=Depends(get_db),
@@ -121,13 +127,45 @@ def browse_contacts(
     rows = db.execute(
         f"SELECT c.id, c.display_name, c.phone, c.email, c.mobile, c.company_name, c.status, "
         f"c.contact_type, c.transaction_count, c.first_seen_date, c.last_seen_date, c.job_title, "
-        f"{buy_value_subquery} as total_buy_value "
-        f"FROM contacts c WHERE {where} ORDER BY {order_clause} LIMIT ? OFFSET ?",
+        f"{buy_value_subquery} as total_buy_value, "
+        f"(SELECT tma.city FROM transaction_parties tp "
+        f"JOIN transaction_mailing_addresses tma ON tma.source_id = tp.source_id AND tma.side = tp.side "
+        f"WHERE tp.contact_id = c.id AND tma.city IS NOT NULL AND tma.city != '' "
+        f"ORDER BY tp.source_id DESC LIMIT 1) as mailing_city, "
+        f"ga.property_type_mix "
+        f"FROM contacts c "
+        f"LEFT JOIN group_analytics ga ON c.current_group_id = ga.group_id "
+        f"WHERE {where} ORDER BY {order_clause} LIMIT ? OFFSET ?",
         params + [per_page, offset]
     ).fetchall()
 
+    # Derive dominant/secondary property types from group's property_type_mix
+    results = []
+    for r in rows:
+        d = dict(r)
+        dominant = None
+        secondary = None
+        mix_raw = d.pop("property_type_mix", None)
+        if mix_raw:
+            try:
+                mix = json.loads(mix_raw) if isinstance(mix_raw, str) else mix_raw
+                # Filter out "unknown" — not a meaningful property type
+                sorted_types = [
+                    (k, v) for k, v in sorted(mix.items(), key=lambda x: x[1], reverse=True)
+                    if k != "unknown"
+                ]
+                if len(sorted_types) >= 1:
+                    dominant = sorted_types[0][0]
+                if len(sorted_types) >= 2:
+                    secondary = sorted_types[1][0]
+            except (json.JSONDecodeError, TypeError):
+                pass
+        d["dominant_type"] = dominant
+        d["secondary_type"] = secondary
+        results.append(d)
+
     return {
-        "results": [dict(r) for r in rows],
+        "results": results,
         "total": total,
         "page": page,
         "per_page": per_page,
@@ -161,16 +199,67 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
 
     result = dict(row)
 
-    # Transactions this contact appears on
+    # Apply field overrides (user-edited + LinkedIn enrichment + Datanyze)
+    overrides = db.execute(
+        "SELECT email, phone, mobile, job_title, contact_type, "
+        "linkedin_url, linkedin_headline, linkedin_photo_url, linkedin_enriched_at, datanyze_raw "
+        "FROM contact_field_overrides WHERE contact_id = ?",
+        (contact_id,)
+    ).fetchone()
+    if overrides:
+        ov = dict(overrides)
+        # Override job_title and contact_type if the override has a value
+        for field in ("job_title", "contact_type"):
+            if ov.get(field):
+                result[field] = ov[field]
+        # For email/phone/mobile: DON'T override RT values — keep both
+        # RT values stay in result["phone"], result["email"], result["mobile"]
+        # LinkedIn-specific fields (always from overrides)
+        result["linkedin_url"] = ov.get("linkedin_url")
+        result["linkedin_headline"] = ov.get("linkedin_headline")
+        result["linkedin_photo_url"] = ov.get("linkedin_photo_url")
+        result["linkedin_enriched_at"] = ov.get("linkedin_enriched_at")
+        # Datanyze raw data — parse JSON so frontend can show alongside RT data
+        raw = ov.get("datanyze_raw")
+        result["datanyze_contacts"] = json.loads(raw) if raw else None
+    else:
+        result["linkedin_url"] = None
+        result["linkedin_headline"] = None
+        result["linkedin_photo_url"] = None
+        result["linkedin_enriched_at"] = None
+        result["datanyze_contacts"] = None
+
+    # Work history
+    positions = db.execute(
+        "SELECT id, company, title, start_date, end_date, is_current, location, company_logo_url "
+        "FROM contact_work_history WHERE contact_id = ? "
+        "ORDER BY is_current DESC, start_date DESC",
+        (contact_id,)
+    ).fetchall()
+    result["work_history"] = [dict(p) for p in positions]
+
+    # Transactions this contact appears on (with tenant brands via property)
     txns = db.execute(
         "SELECT tp.source_id, tp.side, tp.party_name, tp.contact_title, tp.phone, "
-        "t.sale_date, t.sale_price, t.display_address, t.city "
+        "t.sale_date, t.sale_price, t.display_address, t.city, "
+        "(SELECT GROUP_CONCAT(p2.brand || '|' || p2.category, ';;') "
+        " FROM pois p2 WHERE p2.property_id = t.property_id AND p2.brand != '') as brands_raw "
         "FROM transaction_parties tp "
         "JOIN transactions t ON tp.source_id = t.source_id "
         "WHERE tp.contact_id = ? ORDER BY t.sale_date DESC",
         (contact_id,)
     ).fetchall()
-    result["transactions"] = [dict(t) for t in txns]
+    txn_list = []
+    for t in txns:
+        td = dict(t)
+        raw = td.pop("brands_raw", None)
+        if raw:
+            td["brands"] = [{"brand": b.split("|")[0], "category": b.split("|")[1] if "|" in b else ""}
+                            for b in raw.split(";;") if b]
+        else:
+            td["brands"] = []
+        txn_list.append(td)
+    result["transactions"] = txn_list
 
     # Group associations
     if result.get("current_group_id"):
@@ -200,19 +289,33 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
 
 @router.get("/{contact_id}/properties")
 def contact_property_history(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
-    """All properties a contact has been party to (via transaction_parties), with lat/lng for mapping."""
-    row = db.execute("SELECT id FROM contacts WHERE id = ?", (contact_id,)).fetchone()
+    """Properties currently owned by the contact's groups, with lat/lng for mapping."""
+    row = db.execute("SELECT id, current_group_id FROM contacts WHERE id = ?", (contact_id,)).fetchone()
     if not row:
         raise HTTPException(status_code=404, detail="Contact not found")
 
+    # Collect all group IDs this contact belongs to
+    group_ids = set()
+    if row["current_group_id"]:
+        group_ids.add(row["current_group_id"])
+    extra = db.execute(
+        "SELECT group_id FROM group_contacts WHERE contact_id = ? AND is_current = 1",
+        (contact_id,)
+    ).fetchall()
+    for r in extra:
+        group_ids.add(r["group_id"])
+
+    if not group_ids:
+        return {"properties": []}
+
+    placeholders = ",".join("?" * len(group_ids))
     rows = db.execute(
         "SELECT DISTINCT p.id, p.display_address, p.city, p.lat, p.lng, p.asset_class, "
         "p.most_recent_sale_price, p.current_owner_name, p.current_owner_group_id "
-        "FROM transaction_parties tp "
-        "JOIN transactions t ON tp.source_id = t.source_id "
-        "JOIN properties p ON t.property_id = p.id "
-        "WHERE tp.contact_id = ? AND p.lat IS NOT NULL AND p.lng IS NOT NULL",
-        (contact_id,)
+        "FROM properties p "
+        f"WHERE p.current_owner_group_id IN ({placeholders}) "
+        "AND p.lat IS NOT NULL AND p.lng IS NOT NULL",
+        tuple(group_ids)
     ).fetchall()
     return {"properties": [dict(r) for r in rows]}
 
@@ -240,9 +343,10 @@ class ContactUpdate(BaseModel):
     phone: str = None
     job_title: str = None
     contact_type: str = None
+    linkedin_url: str = None
 
 # Fields that get persisted to contact_field_overrides so they survive recompiles
-_CONTACT_OVERRIDE_FIELDS = {'email', 'mobile', 'phone', 'job_title', 'contact_type'}
+_CONTACT_OVERRIDE_FIELDS = {'email', 'mobile', 'phone', 'job_title', 'contact_type', 'linkedin_url'}
 
 
 @router.patch("/{contact_id}")
@@ -306,4 +410,184 @@ def contact_affiliated_groups(contact_id: str, db=Depends(get_db), user=Depends(
     return {
         "contact": dict(contact),
         "affiliated_groups": [dict(r) for r in rows],
+    }
+
+
+# ── LinkedIn Profile Enrichment ──────────────────────────────
+
+class LinkedInPosition(BaseModel):
+    company: str
+    title: Optional[str] = None
+    start_date: Optional[str] = None
+    end_date: Optional[str] = None
+    is_current: bool = False
+    location: Optional[str] = None
+    company_logo_url: Optional[str] = None
+
+class ContactDetailEntry(BaseModel):
+    value: str
+    type: str = "unknown"
+    source_field: Optional[str] = None
+
+class ContactDetails(BaseModel):
+    emails: list[ContactDetailEntry] = []
+    phones: list[ContactDetailEntry] = []
+
+class LinkedInProfileData(BaseModel):
+    linkedin_url: str
+    headline: Optional[str] = None
+    profile_photo_url: Optional[str] = None
+    positions: list[LinkedInPosition] = []
+    contact_details: Optional[ContactDetails] = None
+
+
+@router.post("/{contact_id}/linkedin-profile")
+def save_linkedin_profile(contact_id: str, data: LinkedInProfileData, db=Depends(get_db), user=Depends(get_current_user)):
+    """Receive structured LinkedIn profile data (from Chrome extension or manual entry).
+    Saves the URL + headline to overrides and replaces work history."""
+    row = db.execute("SELECT id FROM contacts WHERE id = ?", (contact_id,)).fetchone()
+    if not row:
+        raise HTTPException(404, "Contact not found")
+
+    # Upsert contact_field_overrides with linkedin data + profile photo
+    db.execute(
+        "INSERT INTO contact_field_overrides (contact_id, linkedin_url, linkedin_headline, linkedin_photo_url, linkedin_enriched_at, updated_by) "
+        "VALUES (?, ?, ?, ?, datetime('now'), ?) "
+        "ON CONFLICT(contact_id) DO UPDATE SET "
+        "linkedin_url = ?, linkedin_headline = ?, linkedin_photo_url = ?, linkedin_enriched_at = datetime('now'), "
+        "updated_by = ?, updated_at = datetime('now')",
+        (contact_id, data.linkedin_url, data.headline, data.profile_photo_url, user["username"],
+         data.linkedin_url, data.headline, data.profile_photo_url, user["username"])
+    )
+
+    # Replace work history (delete existing, insert new)
+    db.execute("DELETE FROM contact_work_history WHERE contact_id = ?", (contact_id,))
+    for pos in data.positions:
+        db.execute(
+            "INSERT INTO contact_work_history (contact_id, company, title, start_date, end_date, is_current, location, company_logo_url) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            (contact_id, pos.company, pos.title, pos.start_date, pos.end_date,
+             1 if pos.is_current else 0, pos.location, pos.company_logo_url)
+        )
+
+    # Save Datanyze contact details if provided
+    contact_details_saved = False
+    if data.contact_details:
+        cd = data.contact_details
+        # Pick the best email: prefer "work" type, then first available
+        email = None
+        if cd.emails:
+            work_emails = [e for e in cd.emails if e.type == "work"]
+            email = work_emails[0].value if work_emails else cd.emails[0].value
+
+        # Pick mobile vs office phone
+        mobile = None
+        phone = None
+        for p in cd.phones:
+            if p.type in ("mobile", "cell", "direct") and not mobile:
+                mobile = p.value
+            elif p.type in ("hq", "office", "unknown") and not phone:
+                phone = p.value
+        # If only one phone and no type hint, put it in phone
+        if not phone and not mobile and cd.phones:
+            phone = cd.phones[0].value
+
+        # Build dynamic SET clause — only update fields that have values
+        updates = []
+        params = []
+        if email:
+            updates.append("email = ?")
+            params.append(email)
+        if mobile:
+            updates.append("mobile = ?")
+            params.append(mobile)
+        if phone:
+            updates.append("phone = ?")
+            params.append(phone)
+
+        if updates:
+            params.extend([user["username"], contact_id])
+            db.execute(
+                f"UPDATE contact_field_overrides SET {', '.join(updates)}, "
+                f"updated_by = ?, updated_at = datetime('now') "
+                f"WHERE contact_id = ?",
+                params
+            )
+            # Only fill blank fields in the contacts table — never overwrite RT data
+            existing = db.execute(
+                "SELECT email, phone, mobile FROM contacts WHERE id = ?",
+                (contact_id,)
+            ).fetchone()
+            if existing:
+                fill_updates = []
+                fill_params = []
+                if email and not existing["email"]:
+                    fill_updates.append("email = ?")
+                    fill_params.append(email)
+                if mobile and not existing["mobile"]:
+                    fill_updates.append("mobile = ?")
+                    fill_params.append(mobile)
+                if phone and not existing["phone"]:
+                    fill_updates.append("phone = ?")
+                    fill_params.append(phone)
+                if fill_updates:
+                    fill_params.append(contact_id)
+                    db.execute(
+                        f"UPDATE contacts SET {', '.join(fill_updates)}, updated_at = datetime('now') "
+                        f"WHERE id = ?",
+                        fill_params
+                    )
+            contact_details_saved = True
+
+        # Store the full Datanyze response for reference
+        db.execute(
+            "UPDATE contact_field_overrides SET datanyze_raw = ?, updated_at = datetime('now') "
+            "WHERE contact_id = ?",
+            (json.dumps({"emails": [e.model_dump() for e in cd.emails],
+                         "phones": [p.model_dump() for p in cd.phones]}), contact_id)
+        )
+
+    log_action(db, user, "contact.linkedin_enriched", "contact", contact_id, {
+        "linkedin_url": data.linkedin_url,
+        "positions_count": len(data.positions),
+        "contact_details_saved": contact_details_saved,
+    })
+    db.commit()
+
+    return {
+        "id": contact_id,
+        "linkedin_url": data.linkedin_url,
+        "linkedin_headline": data.headline,
+        "positions_saved": len(data.positions),
+        "contact_details_saved": contact_details_saved,
+    }
+
+
+@router.get("/{contact_id}/work-history")
+def contact_work_history(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """Returns stored work history for a contact, ordered by most recent first."""
+    row = db.execute("SELECT id FROM contacts WHERE id = ?", (contact_id,)).fetchone()
+    if not row:
+        raise HTTPException(404, "Contact not found")
+
+    positions = db.execute(
+        "SELECT id, company, title, start_date, end_date, is_current, location, company_logo_url, created_at "
+        "FROM contact_work_history WHERE contact_id = ? "
+        "ORDER BY is_current DESC, start_date DESC",
+        (contact_id,)
+    ).fetchall()
+
+    # Also get the overrides for linkedin metadata
+    overrides = db.execute(
+        "SELECT linkedin_url, linkedin_headline, linkedin_photo_url, linkedin_enriched_at "
+        "FROM contact_field_overrides WHERE contact_id = ?",
+        (contact_id,)
+    ).fetchone()
+
+    return {
+        "contact_id": contact_id,
+        "linkedin_url": overrides["linkedin_url"] if overrides else None,
+        "linkedin_headline": overrides["linkedin_headline"] if overrides else None,
+        "linkedin_enriched_at": overrides["linkedin_enriched_at"] if overrides else None,
+        "positions": [dict(p) for p in positions],
     }

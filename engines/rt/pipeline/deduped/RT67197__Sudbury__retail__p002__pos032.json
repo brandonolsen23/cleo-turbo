@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT67197",
+  "source_folder": "Sudbury/retail/p002",
+  "position": 32,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT67197",
+      "source_folder": "Sudbury/retail/p002",
+      "position": 32,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Sudbury/retail/p002/detail_032.html"
+    },
+    "header": {
+      "address_lines": [
+        "3555 HWY 144"
+      ],
+      "city_region": "Greater Sudbury : Sudbury",
+      "date_text": "02 Jun 2009",
+      "price_text": "$1,026,998",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Nickel City Investments Ltd     705-524-3292"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Raymond Gladu",
+        "2600 The Kingsway",
+        "Sudbury, Ontario",
+        "P3B 2G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2200354 Ontario Ltd     705-674-4633"
+      ],
+      "trade_name": "Demore Drywall Ltd",
+      "contact_lines": [
+        "Pres: Michel Demore",
+        "160 Douglas St",
+        "Sudbury, Ontario",
+        "P3E 1G1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $86",
+      "",
+      "Fully occupied"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 53R-10248, Parts 2-4",
+      "",
+      "PIN: 73348-0269",
+      "",
+      "0.75 acre"
+    ],
+    "arn_text": "53 07 160 002 10000",
+    "consideration_lines": [
+      "cash: $1,026,998     assumed/vtb debt: $0",
+      "",
+      "chargee: Caisse Populaire des Voyageurs Inc",
+      "principal: $676,998   rate: 4.25% per annum",
+      "registered: 06/02/2009   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "83 / 90",
+      "rt_id": "RT67197"
+    }
+  },
+  "export": {
+    "position": 32,
+    "address": "3555 HWY 144",
+    "postcode": "P0M 1L0",
+    "municipality": "Greater Sudbury",
+    "region": "Sudbury",
+    "date": "06/02/2009",
+    "desc": "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $86",
+    "bldg": "12,000 sf",
+    "acreage": ".75",
+    "consid": "1026998",
+    "cash": "1026998",
+    "debt": "",
+    "note": "",
+    "pin": "73348-0269",
+    "rollno": "53 07 160 002 10000"
+  },
+  "results": {
+    "position": 32,
+    "address_lines": [
+      "3555 HWY 144"
+    ],
+    "city_region": "Greater Sudbury : Sudbury",
+    "date_text": "02 Jun 2009",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 tenants 12,000 sf @ $86",
+    "seller_lines": [
+      "Nickel City Investments Ltd"
+    ],
+    "buyer_lines": [
+      "2200354 Ontario Ltd"
+    ],
+    "price_text": "$1,026,998"
+  }
+}

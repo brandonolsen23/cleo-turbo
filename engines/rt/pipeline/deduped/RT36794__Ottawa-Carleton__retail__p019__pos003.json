@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT36794",
+  "source_folder": "Ottawa-Carleton/retail/p019",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT36794",
+      "source_folder": "Ottawa-Carleton/retail/p019",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p019/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "1221 WELLINGTON ST",
+        "98 HINTON AVE N"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Jul 2004",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Jasaab Holdings Ltd     613-523-1606"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joe Saab",
+        "2101 Thistle Cres",
+        "Ottawa, Ontario",
+        "K1H 5P4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2033987 Ontario Inc     613-238-8865"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Benedetto Manasseri",
+        "Gibson & MacLaren LLP",
+        "360 Albert St, Ste 1520",
+        "Ottawa, Ontario",
+        "K1R 7X7"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 2 units 6,000 sf @ $233"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 157",
+      "Lots 1518 & 1520",
+      "Part Lots 1522 & 1524",
+      "As in Inst nos N-664212 & N-664213",
+      "",
+      "0.42 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $1,100,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT367/RT36794/photo.jpg"
+    },
+    "footer": {
+      "page_position": "904 / 1141",
+      "rt_id": "RT36794"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "1221 WELLINGTON ST, 98 HINTON AVE N",
+    "postcode": "K1Y 0Z8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/28/2004",
+    "desc": "Retail Bldg - 1 storey; 2 units 6,000 sf @ $233",
+    "bldg": "6,000 sf",
+    "acreage": ".42",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "1100000",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "1221 WELLINGTON ST",
+      "98 HINTON AVE N"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Jul 2004",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 2 units 6,000 sf @ $233",
+    "seller_lines": [
+      "Jasaab Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "2033987 Ontario Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

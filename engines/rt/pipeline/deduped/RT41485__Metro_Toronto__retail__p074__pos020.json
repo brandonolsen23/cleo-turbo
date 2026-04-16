@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT41485",
+  "source_folder": "Metro_Toronto/retail/p074",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT41485",
+      "source_folder": "Metro_Toronto/retail/p074",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p074/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "1370 WESTON RD"
+      ],
+      "city_region": "York : Metro Toronto",
+      "date_text": "29 Apr 2005",
+      "price_text": "$1,140,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1247769 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Gary Kohen",
+        "4243C Dundas St W, Ste 141",
+        "Etobicoke, Ontario",
+        "M8X 1Y3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "AC Weston Ltd     905-470-8521"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Pat Spagnolo",
+        "12 Morrison Cres",
+        "Markham, Ontario",
+        "L3R 9L8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1780",
+      "Lots 12-18 & Part Lot 19",
+      "As in Inst No CA-553305",
+      "",
+      "0.46 acre"
+    ],
+    "arn_text": "19 14 061 170 02500",
+    "consideration_lines": [
+      "cash: $403,063     assumed/vtb debt: $736,937",
+      "",
+      "chargee: 1247769 Ontario Ltd",
+      "principal: $310,000   rate: 6.0% per annum",
+      "registered: 04/29/2005   due: 08/01/2008"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT414/RT41485/air1.jpg",
+        "/assets/files/RT4/RT414/RT41485/air2.jpg",
+        "/assets/files/RT4/RT414/RT41485/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT414/RT41485/photo.jpg"
+    },
+    "footer": {
+      "page_position": "3671 / 4952",
+      "rt_id": "RT41485"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "1370 WESTON RD",
+    "postcode": "M6M 4R8",
+    "municipality": "York",
+    "region": "Metro Toronto",
+    "date": "04/29/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".46",
+    "consid": "1140000",
+    "cash": "403063",
+    "debt": "736937",
+    "note": "",
+    "pin": "",
+    "rollno": "19 14 061 170 02500"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "1370 WESTON RD"
+    ],
+    "city_region": "York : Metro Toronto",
+    "date_text": "29 Apr 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "1247769 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "AC Weston Ltd"
+    ],
+    "price_text": "$1,140,000"
+  }
+}

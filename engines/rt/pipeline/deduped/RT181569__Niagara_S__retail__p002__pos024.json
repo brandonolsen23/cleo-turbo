@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT181569",
+  "source_folder": "Niagara_S/retail/p002",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT181569",
+      "source_folder": "Niagara_S/retail/p002",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p002/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "310 RIDGE RD N"
+      ],
+      "city_region": "Fort Erie : Niagara S",
+      "date_text": "24 Nov 2023",
+      "price_text": "$1,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Canadian Imperial Bank of Commerce"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Yonge St, 3rd Flr",
+        "Toronto, Ontario",
+        "M5E 1J4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "310 Ridge Road Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Bhupenjit Sethi",
+        "1030 Eighth Line, Unit 2",
+        "Oakville, Ontario",
+        "L6H 2H1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 394, Village of Ridgeway",
+      "Lot 3 & Part Lot 4",
+      "As in Inst No RO-538870",
+      "",
+      "PIN: 64191-0148",
+      "",
+      "0.29 acre"
+    ],
+    "arn_text": "27 03 020 013 15500",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,400,000   rate: Prime plus 5.0% per annum.",
+      "registered: 11/24/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181569/1209_152549.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181569/1209_152554.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181569/1209_152616.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181569/1209_152618.jpg",
+        "http://realtrack.cachefly.net/photos/RT18/RT1815/RT181569/1209_152625.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "75 / 324",
+      "rt_id": "RT181569"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "310 RIDGE RD N",
+    "postcode": "L0S 1N0",
+    "municipality": "Fort Erie",
+    "region": "Niagara S",
+    "date": "11/24/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".29",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "",
+    "pin": "64191-0148",
+    "rollno": "27 03 020 013 15500"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "310 RIDGE RD N"
+    ],
+    "city_region": "Fort Erie : Niagara S",
+    "date_text": "24 Nov 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Canadian Imperial Bank of Commerce"
+    ],
+    "buyer_lines": [
+      "310 Ridge Road Inc"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT73252",
+  "source_folder": "Cochrane/all/p138",
+  "position": 24,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73252",
+      "source_folder": "Cochrane/all/p138",
+      "position": 24,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p138/detail_024.html"
+    },
+    "header": {
+      "address_lines": [
+        "1785 MARCHURST RD"
+      ],
+      "city_region": "Kanata : Ottawa-Carleton",
+      "date_text": "30 Jun 2010",
+      "price_text": "$800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1384341 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jeff Cavanagh",
+        "9094 Cavanagh Rd",
+        "Ashton, Ontario",
+        "K0A 1B0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1, Part Lot 17",
+      "Plan 4R-18748, Part 1",
+      "",
+      "PIN: 04533-1585",
+      "",
+      "34.99 acre"
+    ],
+    "arn_text": "06 20 000 815 00400",
+    "consideration_lines": [
+      "cash: $800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Michael Wharton",
+      "principal: $199,585   rate: 0% per annum",
+      "registered: 06/30/2010   due: 07/01/2020"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT732/RT73252/air1.jpg",
+        "/assets/files/RT7/RT732/RT73252/air2.jpg",
+        "/assets/files/RT7/RT732/RT73252/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6875 / 10920",
+      "rt_id": "RT73252"
+    }
+  },
+  "export": {
+    "position": 24,
+    "address": "1785 MARCHURST RD",
+    "postcode": "K2K 1X7",
+    "municipality": "Kanata",
+    "region": "Ottawa-Carleton",
+    "date": "06/30/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": "34.99",
+    "consid": "800000",
+    "cash": "800000",
+    "debt": "",
+    "note": "",
+    "pin": "04533-1585",
+    "rollno": "06 20 000 815 00400"
+  },
+  "results": {
+    "position": 24,
+    "address_lines": [
+      "1785 MARCHURST RD"
+    ],
+    "city_region": "Kanata : Ottawa-Carleton",
+    "date_text": "30 Jun 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1384341 Ontario Ltd"
+    ],
+    "price_text": "$800,000"
+  }
+}

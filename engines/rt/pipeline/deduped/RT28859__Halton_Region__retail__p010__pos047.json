@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT28859",
+  "source_folder": "Halton_Region/retail/p010",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28859",
+      "source_folder": "Halton_Region/retail/p010",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p010/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "166 SOUTH SERVICE RD E"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "31 Jan 2003",
+      "price_text": "$2,099,980",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Comark Inc     905-844-9393"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Poupard",
+        "586 Argus Rd",
+        "Oakville, Ontario",
+        "L6J 7S1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Europe Bound IV Inc     416-205-9992"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: John Raftis",
+        "47 Front St E",
+        "Toronto, Ontario",
+        "M5E 1B5"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; about 22,000 sf on 2.95 Ac"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3 - SDS, Part Lot 14",
+      "As in Inst No 811940",
+      "Except Plan 20R-7001, Part 1",
+      "",
+      "S side South Service Rd E, W of Trafalgar Rd",
+      "",
+      "2.95 acre"
+    ],
+    "arn_text": "24 01 030 010 08500",
+    "consideration_lines": [
+      "cash: $2,099,980     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT288/RT28859/photo.jpg"
+    },
+    "footer": {
+      "page_position": "498 / 613",
+      "rt_id": "RT28859"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "166 SOUTH SERVICE RD E",
+    "postcode": "L6J 2X5",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "01/31/2003",
+    "desc": "Retail Bldg - 1 storey; about 22,000 sf on 2.95 Ac",
+    "bldg": "22,000 sf",
+    "acreage": "2.95",
+    "consid": "2099980",
+    "cash": "2099980",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 030 010 08500"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "166 SOUTH SERVICE RD E"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "31 Jan 2003",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; about 22,000 sf on 2.95 Ac",
+    "seller_lines": [
+      "Comark Inc"
+    ],
+    "buyer_lines": [
+      "Europe Bound IV Inc"
+    ],
+    "price_text": "$2,099,980"
+  }
+}

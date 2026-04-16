@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT34357",
+  "source_folder": "Metro_Toronto/industrial/p059",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT34357",
+      "source_folder": "Metro_Toronto/industrial/p059",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/industrial/p059/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "229 NIAGARA ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "26 Feb 2004",
+      "price_text": "$2,150,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Acme Textiles Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Kevin Andrews",
+        "229 Niagara St",
+        "Toronto, Ontario",
+        "M6J 2L5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-179",
+      "Lots 26-28 & Part Lot 19",
+      "As in Inst No CT-293856",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "19 04 041 360 01600",
+    "consideration_lines": [
+      "cash: $1,825,000     assumed/vtb debt: $325,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT343/RT34357/photo.jpg"
+    },
+    "footer": {
+      "page_position": "2919 / 4000",
+      "rt_id": "RT34357"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "229 NIAGARA ST",
+    "postcode": "M6J 2L5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/26/2004",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "2150000",
+    "cash": "1825000",
+    "debt": "325000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 041 360 01600"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "229 NIAGARA ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "26 Feb 2004",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Acme Textiles Ltd"
+    ],
+    "price_text": "$2,150,000"
+  }
+}

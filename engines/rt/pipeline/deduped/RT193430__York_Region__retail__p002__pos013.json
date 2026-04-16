@@ -1,0 +1,124 @@
+{
+  "rt_id": "RT193430",
+  "source_folder": "York_Region/retail/p002",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT193430",
+      "source_folder": "York_Region/retail/p002",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p002/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "7780 WOODBINE AVE",
+        "UNIT 16"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "18 Jul 2025",
+      "price_text": "$939,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2525831 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "122 William Berczy Blvd",
+        "Markham, Ontario",
+        "L6C 0S3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1001210815 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Alice Huang",
+        "7780 Woodbine Ave, Unit 16",
+        "Markham, Ontario",
+        "L3R 2N7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 780",
+      "Level 1, Unit 16",
+      "",
+      "PIN: 29311-0016"
+    ],
+    "arn_text": "19 36 020 112 79116",
+    "consideration_lines": [
+      "cash: $939,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $794,307   rate: Prime plus 5.0% per annum.",
+      "registered: 07/18/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102429.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102435.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102436.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102442.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102549.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102553.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102600.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102601.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102623.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1934/RT193430/0727_102631.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "64 / 984",
+      "rt_id": "RT193430"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "7780 WOODBINE AVE, UNIT 16",
+    "postcode": "L3R 2N7",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "07/18/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "939000",
+    "cash": "939000",
+    "debt": "",
+    "note": "",
+    "pin": "29311-0016",
+    "rollno": "19 36 020 112 79116"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "7780 WOODBINE AVE",
+      "UNIT 16"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "18 Jul 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2525831 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1001210815 Ontario Ltd"
+    ],
+    "price_text": "$939,000"
+  }
+}

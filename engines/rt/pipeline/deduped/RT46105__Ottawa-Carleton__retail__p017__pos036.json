@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT46105",
+  "source_folder": "Ottawa-Carleton/retail/p017",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46105",
+      "source_folder": "Ottawa-Carleton/retail/p017",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p017/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "1840 CARLING AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "23 Dec 2005",
+      "price_text": "$980,000",
+      "note": "Portfolio Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "BSH Developments Ltd     905-275-0065"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Michael Doner",
+        "2050 Dundas St E",
+        "Mississauga, Ontario",
+        "L4X 1L9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "CIRP Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: John Weiler",
+        "181 Bay St",
+        "Ste 2320, PO Box 834",
+        "Bay-Wellington Tower, BCE Place",
+        "Toronto, Ontario",
+        "M5J 2T3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 318290",
+      "Lot 1 & Part Lot 24",
+      "As in Inst No N-350988",
+      "Except:",
+      "Plan 4R-364, Part 1",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "06 14 095 201 02000",
+    "consideration_lines": [
+      "cash: $980,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT461/RT46105/photo.jpg"
+    },
+    "footer": {
+      "page_position": "837 / 1141",
+      "rt_id": "RT46105"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "1840 CARLING AVE",
+    "postcode": "K2A 1E2",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/23/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".27",
+    "consid": "980000",
+    "cash": "980000",
+    "debt": "",
+    "note": "Portfolio Sale",
+    "pin": "",
+    "rollno": "06 14 095 201 02000"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "1840 CARLING AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "23 Dec 2005",
+    "note": "Portfolio Sale",
+    "description": "",
+    "seller_lines": [
+      "BSH Developments Ltd"
+    ],
+    "buyer_lines": [
+      "CIRP Management Ltd"
+    ],
+    "price_text": "$980,000"
+  }
+}

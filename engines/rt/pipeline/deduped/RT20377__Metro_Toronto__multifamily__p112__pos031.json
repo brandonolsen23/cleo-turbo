@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20377",
+  "source_folder": "Metro_Toronto/multifamily/p112",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20377",
+      "source_folder": "Metro_Toronto/multifamily/p112",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p112/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "701 DON MILLS RD"
+      ],
+      "city_region": "E. York : Metro Toronto",
+      "date_text": "16 Jan 2001",
+      "price_text": "$29,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mount Citadel Corp     416-962-5604"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stan Zipkin",
+        "c/o 55 Isabella St, Ste 105",
+        "Toronto, Ontario",
+        "M4Y 1M8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Coram Deo Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Robert McArthur",
+        "75 The Donway W, Ste 304",
+        "Don Mills, Ontario",
+        "M3C 2E9"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 24 storey; 326 units @ $88,957"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 3, Part Lot 7",
+      "As in Inst No TB-733244",
+      "",
+      "E side 100m S of Gateway Blvd",
+      "",
+      "2.98 acre"
+    ],
+    "arn_text": "19 06 041 196 00200",
+    "consideration_lines": [
+      "cash: $11,110,671     assumed/vtb debt: $17,889,329"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT203/RT20377/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5582 / 6031",
+      "rt_id": "RT20377"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "701 DON MILLS RD",
+    "postcode": "M3C 1R7",
+    "municipality": "E. York",
+    "region": "Metro Toronto",
+    "date": "01/16/2001",
+    "desc": "Apartment Bldg - 24 storey; 326 units @ $88,957",
+    "bldg": "326 units",
+    "acreage": "2.98",
+    "consid": "29000000",
+    "cash": "11110671",
+    "debt": "17889329",
+    "note": "",
+    "pin": "",
+    "rollno": "19 06 041 196 00200"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "701 DON MILLS RD"
+    ],
+    "city_region": "E. York : Metro Toronto",
+    "date_text": "16 Jan 2001",
+    "note": "",
+    "description": "Apartment Bldg - 24 storey; 326 units @ $88,957",
+    "seller_lines": [
+      "Mount Citadel Corp"
+    ],
+    "buyer_lines": [
+      "Coram Deo Inc"
+    ],
+    "price_text": "$29,000,000"
+  }
+}

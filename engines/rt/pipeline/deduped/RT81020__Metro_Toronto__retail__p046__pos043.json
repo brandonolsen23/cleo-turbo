@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT81020",
+  "source_folder": "Metro_Toronto/retail/p046",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81020",
+      "source_folder": "Metro_Toronto/retail/p046",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p046/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "26 Sep 2011",
+      "price_text": "$1,250,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Frank Stollery (2011) Ltd     416-922-6173"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Edwin Whaley",
+        "1 Bloor St W",
+        "Toronto, Ontario",
+        "M4W 1A3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 1 - FTB, Part Park Lot 9",
+      "As in Inst No CT-277770",
+      "",
+      "PIN: 21109-0160",
+      "",
+      "0.06 acre"
+    ],
+    "arn_text": "19 04 068 560 01100",
+    "consideration_lines": [
+      "cash: $1,250,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81020/1016_074303.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81020/1016_074329.jpg",
+        "http://realtrack.cachefly.net/photos/RT8/RT810/RT81020/1016_074339.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT810/RT81020/air1.jpg",
+        "/assets/files/RT8/RT810/RT81020/air2.jpg",
+        "/assets/files/RT8/RT810/RT81020/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2294 / 4952",
+      "rt_id": "RT81020"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "11 BLOOR ST W",
+    "postcode": "M4W 1A3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/26/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".06",
+    "consid": "1250000",
+    "cash": "1250000",
+    "debt": "",
+    "note": "",
+    "pin": "21109-0160",
+    "rollno": "19 04 068 560 01100"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "11 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "26 Sep 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Frank Stollery (2011) Ltd"
+    ],
+    "price_text": "$1,250,000"
+  }
+}

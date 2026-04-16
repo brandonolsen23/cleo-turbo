@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT24712",
+  "source_folder": "Metro_Toronto/retail/p086",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT24712",
+      "source_folder": "Metro_Toronto/retail/p086",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p086/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "1261 KENNEDY RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "27 Mar 2002",
+      "price_text": "$2,400,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Ontario International Property Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anthony Heller",
+        "10 Wanless Ave, Ste 201",
+        "Toronto, Ontario",
+        "M4N 1V6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kaspo Investments Ltd     416-789-7272"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ezriel Reichman",
+        "Tic Toc Tours",
+        "2823 Bathurst St",
+        "Toronto, Ontario",
+        "M6B 3A4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 4 units 23,069 sf @ $104",
+      "",
+      "Last transferred in Feb 99 for $2,950,000"
+    ],
+    "more_info_url": "/assets/files/RT2/RT247/RT24712/mi.pdf",
+    "site_lines": [
+      "Plan 64R-11718, Part 1",
+      "",
+      "1.24 acre"
+    ],
+    "arn_text": "19 01 043 610 00700",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $1,700,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT247/RT24712/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4262 / 4952",
+      "rt_id": "RT24712"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "1261 KENNEDY RD",
+    "postcode": "M1P 2L4",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "03/27/2002",
+    "desc": "Retail Plaza - 1 storey; 4 units 23,069 sf @ $104",
+    "bldg": "23,069 sf",
+    "acreage": "1.24",
+    "consid": "2400000",
+    "cash": "700000",
+    "debt": "1700000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 043 610 00700"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "1261 KENNEDY RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "27 Mar 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 4 units 23,069 sf @ $104",
+    "seller_lines": [
+      "The Ontario International Property Corp"
+    ],
+    "buyer_lines": [
+      "Kaspo Investments Ltd"
+    ],
+    "price_text": "$2,400,000"
+  }
+}

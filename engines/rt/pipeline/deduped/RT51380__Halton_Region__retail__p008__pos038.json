@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT51380",
+  "source_folder": "Halton_Region/retail/p008",
+  "position": 38,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT51380",
+      "source_folder": "Halton_Region/retail/p008",
+      "position": 38,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p008/detail_038.html"
+    },
+    "header": {
+      "address_lines": [
+        "134 - 136 GUELPH ST"
+      ],
+      "city_region": "Halton Hills : Halton Region",
+      "date_text": "06 Oct 2006",
+      "price_text": "$1,338,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "TVS Cavallo Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Salvatore Cavallo",
+        "10 Theresa Circle",
+        "Kleinburg, Ontario",
+        "L0J 1C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2113456 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Che Chow",
+        "81 Navy Wharf Ct, Ste 2305",
+        "Toronto, Ontario",
+        "M5V 3S2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1269, Lots 24 & 25",
+      "",
+      "0.45 acre"
+    ],
+    "arn_text": "24 15 020 002 03300",
+    "consideration_lines": [
+      "cash: $1,338,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $825,000   rate: 18.0% per annum",
+      "registered: 10/06/2006   due: 11/01/2009"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT513/RT51380/1028_151031.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT513/RT51380/1028_151032.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT513/RT51380/1028_151044.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT513/RT51380/1028_151059.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT513/RT51380/1028_151100.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT5/RT513/RT51380/air1.jpg",
+        "/assets/files/RT5/RT513/RT51380/air2.jpg",
+        "/assets/files/RT5/RT513/RT51380/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "389 / 613",
+      "rt_id": "RT51380"
+    }
+  },
+  "export": {
+    "position": 38,
+    "address": "134 - 136 GUELPH ST",
+    "postcode": "L7G 4A5",
+    "municipality": "Halton Hills",
+    "region": "Halton Region",
+    "date": "10/06/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".45",
+    "consid": "1338000",
+    "cash": "1338000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 15 020 002 03300"
+  },
+  "results": {
+    "position": 38,
+    "address_lines": [
+      "134 - 136 GUELPH ST"
+    ],
+    "city_region": "Halton Hills : Halton Region",
+    "date_text": "06 Oct 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "TVS Cavallo Investments Ltd"
+    ],
+    "buyer_lines": [
+      "2113456 Ontario Ltd"
+    ],
+    "price_text": "$1,338,000"
+  }
+}

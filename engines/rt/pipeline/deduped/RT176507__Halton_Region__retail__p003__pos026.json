@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT176507",
+  "source_folder": "Halton_Region/retail/p003",
+  "position": 26,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176507",
+      "source_folder": "Halton_Region/retail/p003",
+      "position": 26,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p003/detail_026.html"
+    },
+    "header": {
+      "address_lines": [
+        "1350 GUELPH LINE"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "29 Mar 2023",
+      "price_text": "$4,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "JE Moore Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "89 Toulon Ave",
+        "Ancaster, Ontario",
+        "L9K 0E7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1000461175 Ontario Ltd     905-336-2063"
+      ],
+      "trade_name": "Woodland Children's Centre",
+      "contact_lines": [
+        "Attn: Kevin Wijesingha",
+        "1350 Guelph Line",
+        "Burlington, Ontario",
+        "L7P 2T3"
+      ]
+    },
+    "description_lines": [
+      "Day Care Center"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - SDS, Part Lot 16",
+      "Plan M-66, Block A",
+      "As in Inst No 619075",
+      "Together with:",
+      "Inst No 346545",
+      "",
+      "PIN: 07139-0135 +",
+      "",
+      "0.96 acre"
+    ],
+    "arn_text": "24 02 040 418 02600",
+    "consideration_lines": [
+      "cash: $3,300,000     assumed/vtb debt: $1,500,000",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $4,170,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/29/2023   due: on demand",
+      "",
+      "chargee: JE Moore Holdings Ltd",
+      "principal: $1,500,000   rate: 5.50% per annum.",
+      "registered: 03/29/2023   due: 03/15/2028"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1765/RT176507/0408_084120.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1765/RT176507/0408_084129.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1765/RT176507/0408_084209.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1765/RT176507/0408_084248.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1765/RT176507/0408_084250.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1765/RT176507/0408_084307.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "127 / 613",
+      "rt_id": "RT176507"
+    }
+  },
+  "export": {
+    "position": 26,
+    "address": "1350 GUELPH LINE",
+    "postcode": "L7P 2T3",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "03/29/2023",
+    "desc": "Day Care Center",
+    "bldg": "",
+    "acreage": ".96",
+    "consid": "4800000",
+    "cash": "3300000",
+    "debt": "1500000",
+    "note": "",
+    "pin": "07139-0135+",
+    "rollno": "24 02 040 418 02600"
+  },
+  "results": {
+    "position": 26,
+    "address_lines": [
+      "1350 GUELPH LINE"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "29 Mar 2023",
+    "note": "",
+    "description": "Day Care Center",
+    "seller_lines": [
+      "JE Moore Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "1000461175 Ontario Ltd"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

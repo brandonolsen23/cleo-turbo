@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT189116",
+  "source_folder": "Ottawa-Carleton/multifamily/p004",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT189116",
+      "source_folder": "Ottawa-Carleton/multifamily/p004",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/multifamily/p004/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "1299 DORCHESTER AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "12 Dec 2024",
+      "price_text": "$978,889",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2706673 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Igor Pupovac",
+        "14 Viewmount Dr",
+        "Ottawa, Ontario",
+        "K2G 1R5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 4R-32858, Parts 4 & 9",
+      "",
+      "PIN: 04044-0259",
+      "",
+      "0.19 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1     assumed/vtb debt: $925,773",
+      "other: $53,115"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "152 / 1757",
+      "rt_id": "RT189116"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "1299 DORCHESTER AVE",
+    "postcode": "K1Z 8E8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "12/12/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".19",
+    "consid": "978889",
+    "cash": "1",
+    "debt": "925773",
+    "note": "Related Parties",
+    "pin": "04044-0259",
+    "rollno": ""
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "1299 DORCHESTER AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "12 Dec 2024",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2706673 Ontario Inc"
+    ],
+    "price_text": "$978,889"
+  }
+}

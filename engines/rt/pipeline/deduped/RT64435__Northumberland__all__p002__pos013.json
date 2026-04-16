@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT64435",
+  "source_folder": "Northumberland/all/p002",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT64435",
+      "source_folder": "Northumberland/all/p002",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Northumberland/all/p002/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "ISLAND TP-1410",
+        "PARCEL 1"
+      ],
+      "city_region": ": Manitoulin",
+      "date_text": "02 Oct 2008",
+      "price_text": "$800,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Peru Island, TP1410, LLC"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Thomas Williams",
+        "17121 Captiva Dr",
+        "PO Box 1088",
+        "Captiva, Florida"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Parcel 1 of Island TP-1410",
+      "",
+      "PIN: 47136-0295",
+      "",
+      "5.01 acre"
+    ],
+    "arn_text": "51 19 010 001 18500 +",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $0",
+      "other: $800,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "64 / 67",
+      "rt_id": "RT64435"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "ISLAND TP-1410, PARCEL 1",
+    "postcode": "",
+    "municipality": "",
+    "region": "Manitoulin",
+    "date": "10/02/2008",
+    "desc": "",
+    "bldg": "",
+    "acreage": "5.01",
+    "consid": "800000",
+    "cash": "",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "47136-0295",
+    "rollno": "51 19 010 001 18500+"
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "ISLAND TP-1410",
+      "PARCEL 1"
+    ],
+    "city_region": ": Manitoulin",
+    "date_text": "02 Oct 2008",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Peru Island, TP1410, LLC"
+    ],
+    "price_text": "$800,000"
+  }
+}

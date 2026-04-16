@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT21606",
+  "source_folder": "Metro_Toronto/retail/p090",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21606",
+      "source_folder": "Metro_Toronto/retail/p090",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p090/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "3201 - 3227 EGLINTON AVE E"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "30 May 2001",
+      "price_text": "$11,925,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Alexis Nihon (Markington) Inc     514-737-3344"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Roger Turpin",
+        "6380 Cote de Liesse",
+        "Montreal, Quebec",
+        "H4T 1E3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Markington Square Holdings Inc     416-222-3010"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Mel Segal",
+        "H&R Developments/Davpart Realty Ltd",
+        "4576 Yonge St, Ste 700",
+        "Toronto, Ontario",
+        "M2N 6N4"
+      ]
+    },
+    "description_lines": [
+      "Markington Square Plaza - 175,000 sf @ $68"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 64R-12149, Parts 1 & 2",
+      "",
+      "SE corner at Markham Rd",
+      "",
+      "16.89 acre"
+    ],
+    "arn_text": "19 01 072 230 00250",
+    "consideration_lines": [
+      "cash: $11,925,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT216/RT21606/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4452 / 4952",
+      "rt_id": "RT21606"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "3201 - 3227 EGLINTON AVE E",
+    "postcode": "M1J 2H7",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/30/2001",
+    "desc": "Markington Square Plaza - 175,000 sf @ $68",
+    "bldg": "175,000 sf",
+    "acreage": "16.89",
+    "consid": "11925000",
+    "cash": "11925000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 01 072 230 00250"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "3201 - 3227 EGLINTON AVE E"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "30 May 2001",
+    "note": "",
+    "description": "Markington Square Plaza - 175,000 sf @ $68",
+    "seller_lines": [
+      "Alexis Nihon (Markington) Inc"
+    ],
+    "buyer_lines": [
+      "Markington Square Holdings Inc"
+    ],
+    "price_text": "$11,925,000"
+  }
+}

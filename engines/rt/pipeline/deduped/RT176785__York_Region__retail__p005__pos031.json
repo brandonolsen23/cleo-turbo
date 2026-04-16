@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT176785",
+  "source_folder": "York_Region/retail/p005",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT176785",
+      "source_folder": "York_Region/retail/p005",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p005/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "3175 RUTHERFORD RD",
+        "UNIT 51"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "31 Mar 2023",
+      "price_text": "$1,090,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1951464 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Adnan Siddiqui",
+        "3175 Rutherford Rd, Unit 50",
+        "Concord, Ontario",
+        "L4K 5Y6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1052",
+      "Level 1, Unit 50",
+      "",
+      "PIN: 29583-0050"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $1,090,000     assumed/vtb debt: $0",
+      "",
+      "chargee: The Toronto-Dominion Bank",
+      "principal: $1,090,000   rate: Prime plus 5.0% per annum.",
+      "registered: 03/31/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140030.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140038.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140124.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140125.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140242.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140247.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1767/RT176785/0423_140403.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "232 / 984",
+      "rt_id": "RT176785"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "3175 RUTHERFORD RD, UNIT 51",
+    "postcode": "L4K 5Y6",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "03/31/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1090000",
+    "cash": "1090000",
+    "debt": "",
+    "note": "",
+    "pin": "29583-0050",
+    "rollno": ""
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "3175 RUTHERFORD RD",
+      "UNIT 51"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "31 Mar 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1951464 Ontario Inc"
+    ],
+    "price_text": "$1,090,000"
+  }
+}

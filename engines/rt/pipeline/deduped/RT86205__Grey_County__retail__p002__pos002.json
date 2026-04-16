@@ -1,0 +1,128 @@
+{
+  "rt_id": "RT86205",
+  "source_folder": "Grey_County/retail/p002",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT86205",
+      "source_folder": "Grey_County/retail/p002",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Grey_County/retail/p002/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "104 SHANE ST"
+      ],
+      "city_region": "Owen Sound : Grey County",
+      "date_text": "02 Apr 2012",
+      "price_text": "$600,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "SG Meades Enterprises (Owen Sound) Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stephen Meades",
+        "Box 25",
+        "Owen Sound, Ontario",
+        "N4K 5P1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Thom Holdings Inc",
+        "William Thom     519-371-1938"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Thom",
+        "PO Box 40",
+        "Owen Sound, Ontario",
+        "N4K 5P1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 13,000 sf @ $46",
+      "",
+      "4 drive-in doors",
+      "Fully leased to a marine sales store"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 16R-1615, Part 1",
+      "Except:",
+      "Plan 16R-7269, Part 1",
+      "",
+      "PIN: 37078-0055",
+      "",
+      "NE corner Shane St and Hwy 6",
+      "",
+      "2.28 acre"
+    ],
+    "arn_text": "42 03 540 005 21410",
+    "consideration_lines": [
+      "cash: $600,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,200,000   rate: Floating base plus 10.0% per annum",
+      "registered: 04/02/2012   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT862/RT86205/air1.jpg",
+        "/assets/files/RT8/RT862/RT86205/air2.jpg",
+        "/assets/files/RT8/RT862/RT86205/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "53 / 69",
+      "rt_id": "RT86205"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "104 SHANE ST",
+    "postcode": "N4K 5N7",
+    "municipality": "Owen Sound",
+    "region": "Grey County",
+    "date": "04/02/2012",
+    "desc": "Retail Bldg - 1 storey; 13,000 sf @ $46",
+    "bldg": "13,000 sf",
+    "acreage": "2.28",
+    "consid": "600000",
+    "cash": "600000",
+    "debt": "",
+    "note": "",
+    "pin": "37078-0055",
+    "rollno": "42 03 540 005 21410"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "104 SHANE ST"
+    ],
+    "city_region": "Owen Sound : Grey County",
+    "date_text": "02 Apr 2012",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 13,000 sf @ $46",
+    "seller_lines": [
+      "SG Meades Enterprises (Owen Sound) Ltd"
+    ],
+    "buyer_lines": [
+      "Thom Holdings Inc",
+      "William Thom"
+    ],
+    "price_text": "$600,000"
+  }
+}

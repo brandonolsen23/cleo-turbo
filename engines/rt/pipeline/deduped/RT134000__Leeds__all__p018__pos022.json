@@ -1,0 +1,104 @@
+{
+  "rt_id": "RT134000",
+  "source_folder": "Leeds/all/p018",
+  "position": 22,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT134000",
+      "source_folder": "Leeds/all/p018",
+      "position": 22,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Leeds/all/p018/detail_022.html"
+    },
+    "header": {
+      "address_lines": [
+        "2043 LONDON LINE"
+      ],
+      "city_region": "Sarnia : Lambton",
+      "date_text": "30 Apr 2018",
+      "price_text": "$1,400,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1565670 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mark Lumley",
+        "2578 Confederation Line",
+        "Sarnia, Ontario",
+        "N7T 7H3"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 647, Lot 30",
+      "",
+      "PIN: 43132-0048",
+      "",
+      "100.15 acre"
+    ],
+    "arn_text": "38 29 100 004 01200",
+    "consideration_lines": [
+      "cash: $1,400,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "873 / 1916",
+      "rt_id": "RT134000"
+    }
+  },
+  "export": {
+    "position": 22,
+    "address": "2043 LONDON LINE",
+    "postcode": "",
+    "municipality": "Sarnia",
+    "region": "Lambton",
+    "date": "04/30/2018",
+    "desc": "",
+    "bldg": "",
+    "acreage": "100.15",
+    "consid": "1400000",
+    "cash": "1400000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "43132-0048",
+    "rollno": "38 29 100 004 01200"
+  },
+  "results": {
+    "position": 22,
+    "address_lines": [
+      "2043 LONDON LINE"
+    ],
+    "city_region": "Sarnia : Lambton",
+    "date_text": "30 Apr 2018",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1565670 Ontario Ltd"
+    ],
+    "price_text": "$1,400,000"
+  }
+}

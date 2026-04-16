@@ -1,0 +1,129 @@
+{
+  "rt_id": "RT14887",
+  "source_folder": "Halton_Region/retail/p012",
+  "position": 31,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT14887",
+      "source_folder": "Halton_Region/retail/p012",
+      "position": 31,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p012/detail_031.html"
+    },
+    "header": {
+      "address_lines": [
+        "3023 NEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "13 Jul 1999",
+      "price_text": "$650,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "The Manufacturers Life Insurance Co"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Shaw",
+        "250 Bloor St East, 8th Flr",
+        "Toronto, Ontario",
+        "M4W 1E5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Imasco R I Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard Alderson",
+        "225 Yorkland Blvd",
+        "Toronto, Ontario",
+        "M2J 4Y7"
+      ]
+    },
+    "description_lines": [
+      "Part of Retail Plaza - Shoppers Drug Mart"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Concession 3, Part of Lot 15 SDS",
+      "As in Inst  69198",
+      "Except Inst 133920"
+    ],
+    "arn_text": "24 02 070 701 02900",
+    "consideration_lines": [
+      "cash: $650,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,000,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/15/2020   due: on demand",
+      "",
+      "chargee: Business Development Bank of Canada",
+      "principal: $1,300,000   rate: Floating base rate plus 10.0% per annum.",
+      "registered: 01/15/2020   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $650,000   rate: Prime plus 5.0% per annum.",
+      "registered: 01/13/2020   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $350,000   rate: 3.25% per annum.",
+      "registered: 01/15/2020   due: 02/01/2025",
+      "",
+      "chargee: Roynat Inc",
+      "principal: $15,000,000   rate: 25.0% per annum.",
+      "registered: 01/17/2020   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "582 / 613",
+      "rt_id": "RT14887"
+    }
+  },
+  "export": {
+    "position": 31,
+    "address": "3023 NEW ST",
+    "postcode": "L7R 1K3",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "07/13/1999",
+    "desc": "Part of Retail Plaza - Shoppers Drug Mart",
+    "bldg": "",
+    "acreage": "",
+    "consid": "650000",
+    "cash": "650000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "24 02 070 701 02900"
+  },
+  "results": {
+    "position": 31,
+    "address_lines": [
+      "3023 NEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "13 Jul 1999",
+    "note": "",
+    "description": "Part of Retail Plaza - Shoppers Drug Mart",
+    "seller_lines": [
+      "The Manufacturers Life Insurance Co"
+    ],
+    "buyer_lines": [
+      "Imasco R I Inc"
+    ],
+    "price_text": "$650,000"
+  }
+}

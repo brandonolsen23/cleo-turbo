@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT73522",
+  "source_folder": "Metro_Toronto/retail/p054",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT73522",
+      "source_folder": "Metro_Toronto/retail/p054",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p054/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "233 RONCESVALLES AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Apr 2010",
+      "price_text": "$680,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2035765 Ontario Ltd     416-920-6312"
+      ],
+      "trade_name": "Fisch & Antonette",
+      "contact_lines": [
+        "Attn: Farimah Tarmi",
+        "416 College St, 2nd Flr",
+        "Toronto, Ontario",
+        "M5T 1T1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2239931 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: P. Kuganandhavel",
+        "14 Schmirler Terrace",
+        "Scarborough, Ontario",
+        "M1E 5K6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 697, Part Lot 3",
+      "As in Inst No CA-350272",
+      "",
+      "PIN: 21337-0038",
+      "",
+      "0.04 acre"
+    ],
+    "arn_text": "19 04 023 310 01100",
+    "consideration_lines": [
+      "cash: $680,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Co",
+      "principal: $442,000   rate: 5.99% per annum",
+      "registered: 04/28/2010   due: 05/01/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73522/0731_074216.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73522/0731_074250.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73522/0731_074332.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT735/RT73522/0731_074346.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT735/RT73522/air1.jpg",
+        "/assets/files/RT7/RT735/RT73522/air2.jpg",
+        "/assets/files/RT7/RT735/RT73522/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2671 / 4952",
+      "rt_id": "RT73522"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "233 RONCESVALLES AVE",
+    "postcode": "M6R 2L6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/28/2010",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".04",
+    "consid": "680000",
+    "cash": "680000",
+    "debt": "",
+    "note": "",
+    "pin": "21337-0038",
+    "rollno": "19 04 023 310 01100"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "233 RONCESVALLES AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Apr 2010",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2035765 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "2239931 Ontario Inc"
+    ],
+    "price_text": "$680,000"
+  }
+}

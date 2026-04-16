@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT197331",
+  "source_folder": "Cochrane/all/p002",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT197331",
+      "source_folder": "Cochrane/all/p002",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p002/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "957 OAK CREEK RD"
+      ],
+      "city_region": "W. Carleton : Ottawa-Carleton",
+      "date_text": "19 Feb 2026",
+      "price_text": "$1,300,000",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Wilson Commercial Property Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "286 Bellamy Rd",
+        "White Lake, Ontario",
+        "K0A 3L0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Wilson Residential Property Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Spencer Wilson",
+        "286 Bellamy Rd",
+        "White Lake, Ontario",
+        "K0A 3L0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Huntley, Part Lot 9",
+      "Plan 5R-775, Part 1",
+      "Except:",
+      "Plan 5R-6542, Part 1",
+      "",
+      "PIN: 04537-0251"
+    ],
+    "arn_text": "06 42 030 810 08102",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,300,000   rate: Prime plus 7.0% per annum.",
+      "registered: 02/19/2026   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT19/RT1973/RT197331/air1.jpg",
+        "/assets/files/RT19/RT1973/RT197331/air2.jpg",
+        "/assets/files/RT19/RT1973/RT197331/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "53 / 10920",
+      "rt_id": "RT197331"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "957 OAK CREEK RD",
+    "postcode": "K0A 1L0",
+    "municipality": "W. Carleton",
+    "region": "Ottawa-Carleton",
+    "date": "02/19/2026",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "Related Parties",
+    "pin": "04537-0251",
+    "rollno": "06 42 030 810 08102"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "957 OAK CREEK RD"
+    ],
+    "city_region": "W. Carleton : Ottawa-Carleton",
+    "date_text": "19 Feb 2026",
+    "note": "Related Parties",
+    "description": "",
+    "seller_lines": [
+      "Wilson Commercial Property Holdings Inc"
+    ],
+    "buyer_lines": [
+      "Wilson Residential Property Holdings Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

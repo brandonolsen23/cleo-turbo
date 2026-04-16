@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT94439",
+  "source_folder": "Metro_Toronto/retail/p039",
+  "position": 11,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT94439",
+      "source_folder": "Metro_Toronto/retail/p039",
+      "position": 11,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p039/detail_011.html"
+    },
+    "header": {
+      "address_lines": [
+        "419 SPADINA AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "06 Aug 2013",
+      "price_text": "$767,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2303046 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Lin Xu",
+        "419 Spadina Ave",
+        "Toronto, Ontario",
+        "M5T 2G6"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-286, Part Lots 6 & 7",
+      "As in Inst No CT-858533",
+      "",
+      "PIN: 21210-0110",
+      "",
+      "0.05 acre"
+    ],
+    "arn_text": "19 04 065 750 01800",
+    "consideration_lines": [
+      "cash: $767,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of China (Canada)",
+      "principal: $497,250   rate: Prime plus 5.0% per annum.",
+      "registered: 08/06/2013   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT9/RT944/RT94439/0825_073755.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT944/RT94439/0825_073815.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT944/RT94439/0825_073839.jpg",
+        "http://realtrack.cachefly.net/photos/RT9/RT944/RT94439/0825_073912.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1912 / 4952",
+      "rt_id": "RT94439"
+    }
+  },
+  "export": {
+    "position": 11,
+    "address": "419 SPADINA AVE",
+    "postcode": "M5T 2G6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "08/06/2013",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".05",
+    "consid": "767000",
+    "cash": "767000",
+    "debt": "",
+    "note": "",
+    "pin": "21210-0110",
+    "rollno": "19 04 065 750 01800"
+  },
+  "results": {
+    "position": 11,
+    "address_lines": [
+      "419 SPADINA AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "06 Aug 2013",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2303046 Ontario Inc"
+    ],
+    "price_text": "$767,000"
+  }
+}

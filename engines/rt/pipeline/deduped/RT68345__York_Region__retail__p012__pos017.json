@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT68345",
+  "source_folder": "York_Region/retail/p012",
+  "position": 17,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT68345",
+      "source_folder": "York_Region/retail/p012",
+      "position": 17,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_017.html"
+    },
+    "header": {
+      "address_lines": [
+        "8260 - 8300 HIGHWAY 27"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "10 Sep 2009",
+      "price_text": "$22,103,125",
+      "note": "68.75% Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "SRF Vaughan Property Inc",
+        "2107683 Ontario Inc     416-922-5553"
+      ],
+      "trade_name": "Strathallen Capital Corp",
+      "contact_lines": [
+        "Attn: David Wright",
+        "2 Bloor St W, Ste 2000",
+        "Toronto, Ontario",
+        "M4W 3E2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan PS Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jonathan Gitlin",
+        "RioCan Yonge Eglinton Centre",
+        "2300 Yonge St, Ste 1500",
+        "PO Box 2386",
+        "Toronto, Ontario",
+        "M4P 1E4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 48,995 sf",
+      "",
+      "RioCan now owns 100% of this property.",
+      "",
+      "Walmart leases part of the site for a 212,719 sf store."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65M-3966",
+      "Blocks 1, 15 &  22",
+      "",
+      "PIN: 03317-0373 +",
+      "",
+      "27.13 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $22,103,125     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "568 / 984",
+      "rt_id": "RT68345"
+    }
+  },
+  "export": {
+    "position": 17,
+    "address": "8260 - 8300 HIGHWAY 27",
+    "postcode": "",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "09/10/2009",
+    "desc": "Retail Plaza - 1 storey; 48,995 sf",
+    "bldg": "48,995 sf",
+    "acreage": "27.13",
+    "consid": "22103125",
+    "cash": "22103125",
+    "debt": "",
+    "note": "68.75% Interest",
+    "pin": "03317-0373+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 17,
+    "address_lines": [
+      "8260 - 8300 HIGHWAY 27"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "10 Sep 2009",
+    "note": "68.75% Interest",
+    "description": "Retail Plaza - 1 storey; 48,995 sf",
+    "seller_lines": [
+      "SRF Vaughan Property Inc",
+      "2107683 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "RioCan PS Inc"
+    ],
+    "price_text": "$22,103,125"
+  }
+}

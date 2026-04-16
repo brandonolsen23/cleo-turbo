@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT46816",
+  "source_folder": "Niagara_S/retail/p006",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT46816",
+      "source_folder": "Niagara_S/retail/p006",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Niagara_S/retail/p006/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "6255 HUGGINS ST"
+      ],
+      "city_region": "Niagara Falls : Niagara S",
+      "date_text": "01 Feb 2006",
+      "price_text": "$2,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1683057 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Anthony Lisi",
+        "6255 Huggins St, Unit 1",
+        "Niagara Falls, Ontario",
+        "L2J 1H2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Part Township Lot 61",
+      "As in Inst No RO-664666",
+      "",
+      "1.06 acre"
+    ],
+    "arn_text": "27 25 040 011 13002",
+    "consideration_lines": [
+      "cash: $469,973     assumed/vtb debt: $1,830,027",
+      "",
+      "chargee: Mario & Gina Iafrate",
+      "principal: $1,500,000   rate: 6.0% per annum",
+      "registered: 02/01/2006   due: 01/31/2011"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT468/RT46816/air1.jpg",
+        "/assets/files/RT4/RT468/RT46816/air2.jpg",
+        "/assets/files/RT4/RT468/RT46816/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT4/RT468/RT46816/photo.jpg"
+    },
+    "footer": {
+      "page_position": "252 / 324",
+      "rt_id": "RT46816"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "6255 HUGGINS ST",
+    "postcode": "L2J 1H2",
+    "municipality": "Niagara Falls",
+    "region": "Niagara S",
+    "date": "02/01/2006",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.06",
+    "consid": "2300000",
+    "cash": "469973",
+    "debt": "1830027",
+    "note": "",
+    "pin": "",
+    "rollno": "27 25 040 011 13002"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "6255 HUGGINS ST"
+    ],
+    "city_region": "Niagara Falls : Niagara S",
+    "date_text": "01 Feb 2006",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1683057 Ontario Ltd"
+    ],
+    "price_text": "$2,300,000"
+  }
+}

@@ -19,6 +19,7 @@ from .normalize import (
     protect_saints, restore_saints, collapse_possessives,
     normalize_highway_hash, strip_preamble,
 )
+from cleo.address.formatter import format_display as _shared_format_display
 
 
 def _empty_result():
@@ -413,32 +414,9 @@ def _scan_embedded_suffix(words):
 # ---------------------------------------------------------------------------
 
 def _build_display(result):
-    """Build a normalized display string from decomposed components."""
-    if result.get('special_type') == 'po_box':
-        return f"PO Box {result['suite_number']}"
-    if result.get('special_type') == 'rural_route':
-        return f"RR {result['suite_number']}"
-    if result.get('special_type') == 'general_delivery':
-        return 'General Delivery'
-    if result.get('special_type') == 'legal_description':
-        return result.get('street_name', '')
+    """Build a normalized display string from decomposed components.
 
-    parts = []
-    if result['street_number']:
-        parts.append(result['street_number'])
-    if result['street_name']:
-        parts.append(result['street_name'])
-    if result['street_suffix']:
-        parts.append(result['street_suffix'])
-    if result['street_direction']:
-        parts.append(result['street_direction'])
-
-    display = ' '.join(parts)
-
-    if result['suite_type'] and result['suite_number']:
-        if result['suite_type'] == '#':
-            display += f", #{result['suite_number']}"
-        else:
-            display += f", {result['suite_type']} {result['suite_number']}"
-
-    return display
+    Delegates to the shared formatter (cleo.address.formatter.format_display)
+    which applies ordinal normalization and consistent formatting rules.
+    """
+    return _shared_format_display(result)

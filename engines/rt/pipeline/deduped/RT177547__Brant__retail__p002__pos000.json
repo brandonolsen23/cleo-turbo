@@ -1,0 +1,118 @@
+{
+  "rt_id": "RT177547",
+  "source_folder": "Brant/retail/p002",
+  "position": 0,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177547",
+      "source_folder": "Brant/retail/p002",
+      "position": 0,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Brant/retail/p002/detail_000.html"
+    },
+    "header": {
+      "address_lines": [
+        "701 MOUNT PLEASANT RD",
+        "701 MT PLEASANT RD"
+      ],
+      "city_region": "Brantford : Brant",
+      "date_text": "08 May 2023",
+      "price_text": "$2,900,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "CRV Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Martin Verhey",
+        "272 Middle Townline Rd",
+        "Harley, Ontario",
+        "N0E 1E0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Range 1 - W Mt Pleasant Rd",
+      "Part Lot 6",
+      "Plan 2R-2253, Part 1",
+      "",
+      "PIN: 32068-0114",
+      "",
+      "1.35 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,900,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $2,750,000   rate: Prime plus 5.0% per annum.",
+      "registered: 05/08/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1775/RT177547/0709_110502.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1775/RT177547/0709_110542.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1775/RT177547/0709_110544.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1775/RT177547/0709_110549.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1775/RT177547/0709_110616.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "51 / 195",
+      "rt_id": "RT177547"
+    }
+  },
+  "export": {
+    "position": 0,
+    "address": "701 MOUNT PLEASANT RD, 701 MT PLEASANT RD",
+    "postcode": "N0E 1K0",
+    "municipality": "Brantford",
+    "region": "Brant",
+    "date": "05/08/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.35",
+    "consid": "2900000",
+    "cash": "2900000",
+    "debt": "",
+    "note": "",
+    "pin": "32068-0114",
+    "rollno": ""
+  },
+  "results": {
+    "position": 0,
+    "address_lines": [
+      "701 MOUNT PLEASANT RD",
+      "701 MT PLEASANT RD"
+    ],
+    "city_region": "Brantford : Brant",
+    "date_text": "08 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "CRV Holdings Inc"
+    ],
+    "price_text": "$2,900,000"
+  }
+}

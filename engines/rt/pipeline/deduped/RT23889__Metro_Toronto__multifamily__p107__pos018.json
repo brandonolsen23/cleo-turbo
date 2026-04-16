@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT23889",
+  "source_folder": "Metro_Toronto/multifamily/p107",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23889",
+      "source_folder": "Metro_Toronto/multifamily/p107",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p107/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "2135 AVENUE RD"
+      ],
+      "city_region": "N. York : Metro Toronto",
+      "date_text": "19 Dec 2001",
+      "price_text": "$631,800",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "298885 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Danny Rinomato",
+        "78 Fifth Ave",
+        "Woodbridge, Ontario",
+        "L4L 6Z4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1098538 Ontario Inc     416-630-9914"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gino Della Pia",
+        "171 Overbrook Place",
+        "Downsview, Ontario",
+        "M3H 4R2"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2470",
+      "Part Block A & Part Lot 1"
+    ],
+    "arn_text": "19 08 063 480 00200",
+    "consideration_lines": [
+      "cash: $298,507     assumed/vtb debt: $333,293"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT238/RT23889/photo.jpg"
+    },
+    "footer": {
+      "page_position": "5319 / 6031",
+      "rt_id": "RT23889"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "2135 AVENUE RD",
+    "postcode": "M5M 4B3",
+    "municipality": "N. York",
+    "region": "Metro Toronto",
+    "date": "12/19/2001",
+    "desc": "Apartment Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "631800",
+    "cash": "298507",
+    "debt": "333293",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "19 08 063 480 00200"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "2135 AVENUE RD"
+    ],
+    "city_region": "N. York : Metro Toronto",
+    "date_text": "19 Dec 2001",
+    "note": "Partial Interest",
+    "description": "Apartment Bldg",
+    "seller_lines": [
+      "298885 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "1098538 Ontario Inc"
+    ],
+    "price_text": "$631,800"
+  }
+}

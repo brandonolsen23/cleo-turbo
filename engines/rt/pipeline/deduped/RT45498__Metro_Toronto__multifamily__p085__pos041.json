@@ -1,0 +1,102 @@
+{
+  "rt_id": "RT45498",
+  "source_folder": "Metro_Toronto/multifamily/p085",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45498",
+      "source_folder": "Metro_Toronto/multifamily/p085",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p085/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "666 HURON ST"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "01 Nov 2005",
+      "price_text": "$756,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-2",
+      "Part Lot 222, W/S Huron St",
+      "",
+      "0.07 acre"
+    ],
+    "arn_text": "19 04 052 480 03700",
+    "consideration_lines": [
+      "cash: $756,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $567,000   rate: 4.58% per annum",
+      "registered: 11/01/2005   due: 11/01/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4242 / 6031",
+      "rt_id": "RT45498"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "666 HURON ST",
+    "postcode": "M5R 2R9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "11/01/2005",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".07",
+    "consid": "756000",
+    "cash": "756000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 052 480 03700"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "666 HURON ST"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "01 Nov 2005",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$756,000"
+  }
+}

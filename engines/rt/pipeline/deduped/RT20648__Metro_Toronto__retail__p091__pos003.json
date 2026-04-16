@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT20648",
+  "source_folder": "Metro_Toronto/retail/p091",
+  "position": 3,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20648",
+      "source_folder": "Metro_Toronto/retail/p091",
+      "position": 3,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p091/detail_003.html"
+    },
+    "header": {
+      "address_lines": [
+        "958 BLOOR ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "28 Feb 2001",
+      "price_text": "$556,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Gendis Inc     204-474-5200"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: G. Allan MacKenzie",
+        "1370 Sony Place",
+        "PO Box 9400",
+        "Winnipeg, Manitoba",
+        "R3C 3C3"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "JDC Property Management Inc     416-763-2664"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Manuel DaCosta",
+        "Viana Roofing & Sheet Metal",
+        "3434 Dundas St W",
+        "Toronto, Ontario",
+        "M6S 2S1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey;"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 506",
+      "Part Lots 11 & 12, N/S Bloor St",
+      "",
+      "N side 35m W of Delaware Ave",
+      "",
+      "0.15 acre"
+    ],
+    "arn_text": "19 04 031 030 02500",
+    "consideration_lines": [
+      "cash: $556,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT206/RT20648/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4504 / 4952",
+      "rt_id": "RT20648"
+    }
+  },
+  "export": {
+    "position": 3,
+    "address": "958 BLOOR ST W",
+    "postcode": "M6H 1L6",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "02/28/2001",
+    "desc": "Retail Bldg - 2 storey;",
+    "bldg": "",
+    "acreage": ".15",
+    "consid": "556000",
+    "cash": "556000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 031 030 02500"
+  },
+  "results": {
+    "position": 3,
+    "address_lines": [
+      "958 BLOOR ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "28 Feb 2001",
+    "note": "",
+    "description": "Retail Bldg - 2 storey;",
+    "seller_lines": [
+      "Gendis Inc"
+    ],
+    "buyer_lines": [
+      "JDC Property Management Inc"
+    ],
+    "price_text": "$556,000"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "rt_id": "RT39099",
+  "source_folder": "Metro_Toronto/multifamily/p091",
+  "position": 18,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT39099",
+      "source_folder": "Metro_Toronto/multifamily/p091",
+      "position": 18,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p091/detail_018.html"
+    },
+    "header": {
+      "address_lines": [
+        "33 WHITEHALL RD"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "03 Dec 2004",
+      "price_text": "$985,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1079687 Ontario Ltd     416-225-7611"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Mohamed Sobhy",
+        "Henry Gertner",
+        "4 Finch Ave W",
+        "Toronto, Ontario",
+        "M2N 6L1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Duplex - 2 storey; 2 units @ $492,500",
+      "",
+      "Last transferred in Aug 2001 for $785,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-496",
+      "Part Lot 47, S/S Whitehall Rd",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "19 04 101 340 01200",
+    "consideration_lines": [
+      "cash: $985,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT390/RT39099/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4519 / 6031",
+      "rt_id": "RT39099"
+    }
+  },
+  "export": {
+    "position": 18,
+    "address": "33 WHITEHALL RD",
+    "postcode": "M4W 2C5",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "12/03/2004",
+    "desc": "Duplex - 2 storey; 2 units @ $492,500",
+    "bldg": "2 units",
+    "acreage": ".11",
+    "consid": "985000",
+    "cash": "985000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 101 340 01200"
+  },
+  "results": {
+    "position": 18,
+    "address_lines": [
+      "33 WHITEHALL RD"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "03 Dec 2004",
+    "note": "",
+    "description": "Duplex - 2 storey; 2 units @ $492,500",
+    "seller_lines": [
+      "1079687 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$985,000"
+  }
+}

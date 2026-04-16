@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT194708",
+  "source_folder": "Halton_Region/retail/p001",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT194708",
+      "source_folder": "Halton_Region/retail/p001",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p001/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "3052 NEW ST"
+      ],
+      "city_region": "Burlington : Halton Region",
+      "date_text": "24 Sep 2025",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "National Vacuum Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "301 Beaver St",
+        "Burlington, Ontario",
+        "L7R 3G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Ash & Zak Developers Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Syed Hussain",
+        "3052 New St",
+        "Burlington, Ontario",
+        "L7N 1M5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4 - SDS, Part Lot 15",
+      "As in Inst No 502254",
+      "",
+      "PIN: 07046-0006",
+      "",
+      "0.27 acre"
+    ],
+    "arn_text": "24 02 070 708 02900",
+    "consideration_lines": [
+      "cash: $200,000     assumed/vtb debt: $1,000,000",
+      "",
+      "chargee: National Vacuum Ltd",
+      "principal: $1,000,000   rate: 6.0% per annum.",
+      "registered: 09/24/2025   due: 01/31/2026"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194708/1025_104828.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194708/1025_104832.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194708/1025_104853.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194708/1025_104901.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194708/1025_104919.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1947/RT194708/1025_104923.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "15 / 613",
+      "rt_id": "RT194708"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "3052 NEW ST",
+    "postcode": "L7N 1M5",
+    "municipality": "Burlington",
+    "region": "Halton Region",
+    "date": "09/24/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".27",
+    "consid": "1200000",
+    "cash": "200000",
+    "debt": "1000000",
+    "note": "",
+    "pin": "07046-0006",
+    "rollno": "24 02 070 708 02900"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "3052 NEW ST"
+    ],
+    "city_region": "Burlington : Halton Region",
+    "date_text": "24 Sep 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "National Vacuum Ltd"
+    ],
+    "buyer_lines": [
+      "Ash & Zak Developers Inc"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

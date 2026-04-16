@@ -1,0 +1,105 @@
+{
+  "rt_id": "RT44059",
+  "source_folder": "Halton_Region/retail/p009",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44059",
+      "source_folder": "Halton_Region/retail/p009",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Halton_Region/retail/p009/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "497 - 513 PINEGROVE RD"
+      ],
+      "city_region": "Oakville : Halton Region",
+      "date_text": "01 Sep 2005",
+      "price_text": "$1,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Mirabelle Developments & Investments Inc     416-621-9933"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Varsinig Khouri",
+        "4 Boreal Rd",
+        "Toronto, Ontario",
+        "M9C 2G1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 10 units 10,745 sf @ $93"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 651, Block A",
+      "Together with Inst 182208",
+      "",
+      "2.03 acre"
+    ],
+    "arn_text": "24 01 030 250 05900",
+    "consideration_lines": [
+      "cash: $700,000     assumed/vtb debt: $300,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "421 / 613",
+      "rt_id": "RT44059"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "497 - 513 PINEGROVE RD",
+    "postcode": "L6K 2C2",
+    "municipality": "Oakville",
+    "region": "Halton Region",
+    "date": "09/01/2005",
+    "desc": "Retail Plaza - 1 storey; 10 units 10,745 sf @ $93",
+    "bldg": "10,745 sf",
+    "acreage": "2.03",
+    "consid": "1000000",
+    "cash": "700000",
+    "debt": "300000",
+    "note": "",
+    "pin": "",
+    "rollno": "24 01 030 250 05900"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "497 - 513 PINEGROVE RD"
+    ],
+    "city_region": "Oakville : Halton Region",
+    "date_text": "01 Sep 2005",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 10 units 10,745 sf @ $93",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Mirabelle Developments & Investments Inc"
+    ],
+    "price_text": "$1,000,000"
+  }
+}

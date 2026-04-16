@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT38706",
+  "source_folder": "Kitchener-Waterloo/retail/p013",
+  "position": 13,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT38706",
+      "source_folder": "Kitchener-Waterloo/retail/p013",
+      "position": 13,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Kitchener-Waterloo/retail/p013/detail_013.html"
+    },
+    "header": {
+      "address_lines": [
+        "730 OTTAWA ST S"
+      ],
+      "city_region": "Kitchener : Kitchener-Waterloo",
+      "date_text": "02 Nov 2004",
+      "price_text": "$13,000,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "3876381 Canada Inc     514-599-5100"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Claude Guevin",
+        "Rona Inc",
+        "220 Chemin du Tremblay",
+        "Boucherville, Quebec",
+        "J4B 8H7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Kitchener (RI) Portfolio Inc     416-635-7520"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Eric Cohen",
+        "3625 Dufferin St, Ste 500",
+        "Toronto, Ontario",
+        "M3K 1N4"
+      ]
+    },
+    "description_lines": [
+      "Rona Home & Garden - 1 storey; 114,738 sf @ $113"
+    ],
+    "more_info_url": "/assets/files/RT3/RT387/RT38706/mi.pdf",
+    "site_lines": [
+      "Plan 58R-12520",
+      "Parts 6, 8, 15-17",
+      "",
+      "9.62 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $13,000,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT387/RT38706/photo.jpg"
+    },
+    "footer": {
+      "page_position": "614 / 752",
+      "rt_id": "RT38706"
+    }
+  },
+  "export": {
+    "position": 13,
+    "address": "730 OTTAWA ST S",
+    "postcode": "N2E 1B6",
+    "municipality": "Kitchener",
+    "region": "Kitchener-Waterloo",
+    "date": "11/02/2004",
+    "desc": "Rona Home & Garden - 1 storey; 114,738 sf @ $113",
+    "bldg": "114,738 sf",
+    "acreage": "9.62",
+    "consid": "13000000",
+    "cash": "13000000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 13,
+    "address_lines": [
+      "730 OTTAWA ST S"
+    ],
+    "city_region": "Kitchener : Kitchener-Waterloo",
+    "date_text": "02 Nov 2004",
+    "note": "",
+    "description": "Rona Home & Garden - 1 storey; 114,738 sf @ $113",
+    "seller_lines": [
+      "3876381 Canada Inc"
+    ],
+    "buyer_lines": [
+      "Kitchener (RI) Portfolio Inc"
+    ],
+    "price_text": "$13,000,000"
+  }
+}

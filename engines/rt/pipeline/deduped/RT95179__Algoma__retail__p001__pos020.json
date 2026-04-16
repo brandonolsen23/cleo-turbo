@@ -1,0 +1,116 @@
+{
+  "rt_id": "RT95179",
+  "source_folder": "Algoma/retail/p001",
+  "position": 20,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT95179",
+      "source_folder": "Algoma/retail/p001",
+      "position": 20,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Algoma/retail/p001/detail_020.html"
+    },
+    "header": {
+      "address_lines": [
+        "695 GREAT NORTHERN RD"
+      ],
+      "city_region": "Sault Ste Marie : Algoma",
+      "date_text": "18 Sep 2013",
+      "price_text": "$4,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Tiger Fera Investment Inc     604-731-1123"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Tharwat Fera",
+        "1055 W Georgia St, Ste 2010",
+        "Vancouver, BC",
+        "V6E 3P3"
+      ]
+    },
+    "description_lines": [
+      "TSC Store - 1 storey; 31,391 sf @ $153",
+      "",
+      "Leased by TSC until October 2027"
+    ],
+    "more_info_url": "/assets/files/RT9/RT951/RT95179/mi.pdf",
+    "site_lines": [
+      "Plan 1R-9453, Parts 8-11",
+      "",
+      "PIN: 31561-0052",
+      "",
+      "SW corner Great Northern Rd and Drive In Rd",
+      "",
+      "2.75 acre"
+    ],
+    "arn_text": "57 61 030 062 04102",
+    "consideration_lines": [
+      "cash: $4,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: CIBC Mortgages Inc",
+      "principal: $3,000,000   rate: 3.8% per annum.",
+      "registered: 09/18/2013   due: 10/01/2018"
+    ],
+    "broker_lines": [
+      "HQ Real Estate Services: Lino De Marchi, 604-899-1122"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "21 / 29",
+      "rt_id": "RT95179"
+    }
+  },
+  "export": {
+    "position": 20,
+    "address": "695 GREAT NORTHERN RD",
+    "postcode": "P6B 1A5",
+    "municipality": "Sault Ste Marie",
+    "region": "Algoma",
+    "date": "09/18/2013",
+    "desc": "TSC Store - 1 storey; 31,391 sf @ $153",
+    "bldg": "31,391 sf",
+    "acreage": "2.75",
+    "consid": "4800000",
+    "cash": "4800000",
+    "debt": "",
+    "note": "",
+    "pin": "31561-0052",
+    "rollno": "57 61 030 062 04102"
+  },
+  "results": {
+    "position": 20,
+    "address_lines": [
+      "695 GREAT NORTHERN RD"
+    ],
+    "city_region": "Sault Ste Marie : Algoma",
+    "date_text": "18 Sep 2013",
+    "note": "",
+    "description": "TSC Store - 1 storey; 31,391 sf @ $153",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Tiger Fera Investment Inc"
+    ],
+    "price_text": "$4,800,000"
+  }
+}

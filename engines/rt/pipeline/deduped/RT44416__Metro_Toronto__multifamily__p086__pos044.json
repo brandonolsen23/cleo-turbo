@@ -1,0 +1,123 @@
+{
+  "rt_id": "RT44416",
+  "source_folder": "Metro_Toronto/multifamily/p086",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT44416",
+      "source_folder": "Metro_Toronto/multifamily/p086",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p086/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "1554 KING ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "12 Sep 2005",
+      "price_text": "$1,350,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1008147 Ontario Inc     905-272-0303"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Hussein El-Hennawy",
+        "Mariano Mazzucco",
+        "1090 Dundas St E, Ste 204",
+        "Mississauga, Ontario",
+        "L4Y 2B8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1665294 Ontario Ltd     416-701-9380"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: David Elkind",
+        "2323 Eglinton Ave E, Ste G4",
+        "Toronto, Ontario",
+        "M1K 2N7"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 3 storey; 26-1bdrm @ $51,923"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 731, Part Lot 29",
+      "As in Inst No CA-225547",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 04 021 200 06200",
+    "consideration_lines": [
+      "cash: $180,000     assumed/vtb debt: $1,170,000",
+      "",
+      "chargee: 1008147 Ontario Inc",
+      "principal: $850,000   rate: 0% per annum",
+      "registered: 09/12/2005   due: 03/12/2006",
+      "",
+      "chargee: Hussein El-Hennawy",
+      "principal: $320,000   rate: 0% per annum",
+      "registered: 09/12/2005   due: 09/11/2010"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT444/RT44416/air1.jpg",
+        "/assets/files/RT4/RT444/RT44416/air2.jpg",
+        "/assets/files/RT4/RT444/RT44416/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "4295 / 6031",
+      "rt_id": "RT44416"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "1554 KING ST W",
+    "postcode": "",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "09/12/2005",
+    "desc": "Apartment Bldg - 3 storey; 26-1bdrm @ $51,923",
+    "bldg": "26 units",
+    "acreage": ".14",
+    "consid": "1350000",
+    "cash": "180000",
+    "debt": "1170000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 021 200 06200"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "1554 KING ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "12 Sep 2005",
+    "note": "",
+    "description": "Apartment Bldg - 3 storey; 26-1bdrm @ $51,923",
+    "seller_lines": [
+      "1008147 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "1665294 Ontario Ltd"
+    ],
+    "price_text": "$1,350,000"
+  }
+}

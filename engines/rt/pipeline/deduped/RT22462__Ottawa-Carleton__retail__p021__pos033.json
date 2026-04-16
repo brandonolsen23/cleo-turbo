@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT22462",
+  "source_folder": "Ottawa-Carleton/retail/p021",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22462",
+      "source_folder": "Ottawa-Carleton/retail/p021",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p021/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "888 MEADOWLANDS DR E"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "23 Jul 2001",
+      "price_text": "$785,688",
+      "note": "Related Parties"
+    },
+    "transferor": {
+      "party_lines": [
+        "Gestions GGR Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Lucie-Marie Guilbert",
+        "2055 Peel St, Ste 850",
+        "Montreal, Quebec",
+        "H3A 1V4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "105284 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nancy Cordeau",
+        "2055 Peel St, Ste 850",
+        "Montreal, Quebec",
+        "H3A 1V4"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5R-3910, Part 1"
+    ],
+    "arn_text": "06 14 074 202 05100",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $785,688"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT224/RT22462/photo.jpg"
+    },
+    "footer": {
+      "page_position": "1034 / 1141",
+      "rt_id": "RT22462"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "888 MEADOWLANDS DR E",
+    "postcode": "K2C 3R3",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "07/23/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "785688",
+    "cash": "",
+    "debt": "785688",
+    "note": "Related Parties",
+    "pin": "",
+    "rollno": "06 14 074 202 05100"
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "888 MEADOWLANDS DR E"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "23 Jul 2001",
+    "note": "Related Parties",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Gestions GGR Inc"
+    ],
+    "buyer_lines": [
+      "105284 Canada Inc"
+    ],
+    "price_text": "$785,688"
+  }
+}

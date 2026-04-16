@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT28088",
+  "source_folder": "Peel_Region/hotel-motel/p002",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT28088",
+      "source_folder": "Peel_Region/hotel-motel/p002",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/hotel-motel/p002/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "12373 HWY 50"
+      ],
+      "city_region": "Caledon : Peel Region",
+      "date_text": "02 Dec 2002",
+      "price_text": "$2,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Frances & Joe Dejak"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "12378 Albion Vaughan Rd",
+        "Kleinburg, Ontario",
+        "L0J 1C0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1541789 Ontario Inc     905-857-3382"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Stefan Leszczynski",
+        "Bolton Inn",
+        "12373 Highway 50",
+        "Bolton, Ontario",
+        "L7E 1M3"
+      ]
+    },
+    "description_lines": [
+      "Bolton Inn - 1.5 storey; 42 rooms @ $50,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 7, Part Lot 2",
+      "As in Inst No RO-483860",
+      "",
+      "3.13 acre"
+    ],
+    "arn_text": "21 24 010 002 10400",
+    "consideration_lines": [
+      "cash: $680,000     assumed/vtb debt: $1,400,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT280/RT28088/photo.jpg"
+    },
+    "footer": {
+      "page_position": "52 / 63",
+      "rt_id": "RT28088"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "12373 HWY 50",
+    "postcode": "L7E 1M3",
+    "municipality": "Caledon",
+    "region": "Peel Region",
+    "date": "12/02/2002",
+    "desc": "Bolton Inn - 1.5 storey; 42 rooms @ $50,000",
+    "bldg": "42 rooms",
+    "acreage": "3.13",
+    "consid": "2100000",
+    "cash": "680000",
+    "debt": "1400000",
+    "note": "",
+    "pin": "",
+    "rollno": "21 24 010 002 10400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "12373 HWY 50"
+    ],
+    "city_region": "Caledon : Peel Region",
+    "date_text": "02 Dec 2002",
+    "note": "",
+    "description": "Bolton Inn - 1.5 storey; 42 rooms @ $50,000",
+    "seller_lines": [
+      "Frances & Joe Dejak"
+    ],
+    "buyer_lines": [
+      "1541789 Ontario Inc"
+    ],
+    "price_text": "$2,100,000"
+  }
+}

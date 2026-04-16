@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT55102",
+  "source_folder": "Metro_Toronto/retail/p065",
+  "position": 34,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT55102",
+      "source_folder": "Metro_Toronto/retail/p065",
+      "position": 34,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p065/detail_034.html"
+    },
+    "header": {
+      "address_lines": [
+        "454 DUNDAS ST W"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "25 Apr 2007",
+      "price_text": "$1,800,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sunny Lee"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "333 Woodland Acres Cres",
+        "Maple, Ontario",
+        "L6A 1G2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1161436 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Hung-Chen Chang",
+        "310 Alden Rd",
+        "Markham, Ontario",
+        "L3R 4C1"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan D-83, Lot 31",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 065 520 03400",
+    "consideration_lines": [
+      "cash: $1,800,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Mega International Commercial Bank",
+      "principal: $1,120,000   rate: Prime plus 0.5% per annum",
+      "registered: 04/25/2007   due: 04/25/2008",
+      "",
+      "chargee: Mega International Commercial Bank (Canada)",
+      "principal: $180,000   rate: Prime plus 0.5% per annum",
+      "registered: 04/25/2007   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT5/RT551/RT55102/0513_072927.jpg",
+        "http://realtrack.cachefly.net/photos/RT5/RT551/RT55102/0513_072930.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "3235 / 4952",
+      "rt_id": "RT55102"
+    }
+  },
+  "export": {
+    "position": 34,
+    "address": "454 DUNDAS ST W",
+    "postcode": "M5T 1G9",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "04/25/2007",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "1800000",
+    "cash": "1800000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 065 520 03400"
+  },
+  "results": {
+    "position": 34,
+    "address_lines": [
+      "454 DUNDAS ST W"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "25 Apr 2007",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Sunny Lee"
+    ],
+    "buyer_lines": [
+      "1161436 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

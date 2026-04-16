@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT30334",
+  "source_folder": "Peel_Region/retail/p018",
+  "position": 37,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT30334",
+      "source_folder": "Peel_Region/retail/p018",
+      "position": 37,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p018/detail_037.html"
+    },
+    "header": {
+      "address_lines": [
+        "20 RED MAPLE DR"
+      ],
+      "city_region": "Brampton : Peel Region",
+      "date_text": "27 May 2003",
+      "price_text": "$1,880,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "717495 Ontario ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Chaim Lustig",
+        "161 Eglinton Ave E, Ste 201",
+        "Toronto, Ontario",
+        "M4P 1J5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "1562586 Ontario Ltd     905-542-0477"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Haitham Istiphan",
+        "1566 Carrington Rd",
+        "Mississauga, Ontario",
+        "L5M 2K1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 16,394 sf @ $115"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 43M-1075, Block 253",
+      "",
+      "1.53 acre"
+    ],
+    "arn_text": "21 10 080 011 56870",
+    "consideration_lines": [
+      "cash: $1,880,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [
+      "Avison Young: Robert Archambau, 905-712-2100"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT303/RT30334/photo.jpg"
+    },
+    "footer": {
+      "page_position": "888 / 1087",
+      "rt_id": "RT30334"
+    }
+  },
+  "export": {
+    "position": 37,
+    "address": "20 RED MAPLE DR",
+    "postcode": "L6X 4N7",
+    "municipality": "Brampton",
+    "region": "Peel Region",
+    "date": "05/27/2003",
+    "desc": "Retail Plaza - 1 storey; 16,394 sf @ $115",
+    "bldg": "16,394 sf",
+    "acreage": "1.53",
+    "consid": "1880000",
+    "cash": "1880000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "21 10 080 011 56870"
+  },
+  "results": {
+    "position": 37,
+    "address_lines": [
+      "20 RED MAPLE DR"
+    ],
+    "city_region": "Brampton : Peel Region",
+    "date_text": "27 May 2003",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 16,394 sf @ $115",
+    "seller_lines": [
+      "717495 Ontario ltd"
+    ],
+    "buyer_lines": [
+      "1562586 Ontario Ltd"
+    ],
+    "price_text": "$1,880,000"
+  }
+}

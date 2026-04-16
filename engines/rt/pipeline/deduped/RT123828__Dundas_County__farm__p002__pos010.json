@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT123828",
+  "source_folder": "Dundas_County/farm/p002",
+  "position": 10,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123828",
+      "source_folder": "Dundas_County/farm/p002",
+      "position": 10,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Dundas_County/farm/p002/detail_010.html"
+    },
+    "header": {
+      "address_lines": [
+        "BAKER RD",
+        "CONC 4",
+        "PART LOT 1"
+      ],
+      "city_region": "North Dundas : Dundas County",
+      "date_text": "10 Mar 2017",
+      "price_text": "$750,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Hardy Seeds Ltd     613-448-1742"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Stephen Hardy",
+        "12745 National Valley Rd",
+        "Chesterville, Ontario",
+        "K0C 1H0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "NLB Farms Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Neal Bartholomew",
+        "12095 Baker Rd",
+        "Winchester, Ontario",
+        "K0C 2K0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 4, Part Lot 1",
+      "As in Inst No DR-40223",
+      "",
+      "PIN: 66102-0501",
+      "",
+      "63.25 acre"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $750,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "61 / 103",
+      "rt_id": "RT123828"
+    }
+  },
+  "export": {
+    "position": 10,
+    "address": "BAKER RD, CONC 4, PART LOT 1",
+    "postcode": "",
+    "municipality": "North Dundas",
+    "region": "Dundas County",
+    "date": "03/10/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "63.25",
+    "consid": "750000",
+    "cash": "750000",
+    "debt": "",
+    "note": "",
+    "pin": "66102-0501",
+    "rollno": ""
+  },
+  "results": {
+    "position": 10,
+    "address_lines": [
+      "BAKER RD",
+      "CONC 4",
+      "PART LOT 1"
+    ],
+    "city_region": "North Dundas : Dundas County",
+    "date_text": "10 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Hardy Seeds Ltd"
+    ],
+    "buyer_lines": [
+      "NLB Farms Inc"
+    ],
+    "price_text": "$750,000"
+  }
+}

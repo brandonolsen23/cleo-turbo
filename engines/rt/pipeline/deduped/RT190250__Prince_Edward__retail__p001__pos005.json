@@ -1,0 +1,119 @@
+{
+  "rt_id": "RT190250",
+  "source_folder": "Prince_Edward/retail/p001",
+  "position": 5,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT190250",
+      "source_folder": "Prince_Edward/retail/p001",
+      "position": 5,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Prince_Edward/retail/p001/detail_005.html"
+    },
+    "header": {
+      "address_lines": [
+        "115 PICTON MAIN ST"
+      ],
+      "city_region": "Prince Edward : Prince Edward",
+      "date_text": "06 Feb 2025",
+      "price_text": "$1,200,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Bank of Montreal"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 Bloor St W",
+        "PO Box 1417",
+        "Toronto, Ontario",
+        "M4W 3N5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Applewood Realty Corp"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Arnold Maclauchlan",
+        "1861 Old Highway 2",
+        "Belleville, Ontario",
+        "K8N 4Z2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 47R-5727, Part 1",
+      "Together with:",
+      "Inst No PE-128922",
+      "",
+      "PIN: 55062-0121",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "13 50 020 020 22600",
+    "consideration_lines": [
+      "cash: $1,200,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133753.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133755.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133823.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133854.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133855.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133912.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1902/RT190250/0524_133913.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6 / 17",
+      "rt_id": "RT190250"
+    }
+  },
+  "export": {
+    "position": 5,
+    "address": "115 PICTON MAIN ST",
+    "postcode": "K0K 2T0",
+    "municipality": "Prince Edward",
+    "region": "Prince Edward",
+    "date": "02/06/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "1200000",
+    "cash": "1200000",
+    "debt": "",
+    "note": "",
+    "pin": "55062-0121",
+    "rollno": "13 50 020 020 22600"
+  },
+  "results": {
+    "position": 5,
+    "address_lines": [
+      "115 PICTON MAIN ST"
+    ],
+    "city_region": "Prince Edward : Prince Edward",
+    "date_text": "06 Feb 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Bank of Montreal"
+    ],
+    "buyer_lines": [
+      "Applewood Realty Corp"
+    ],
+    "price_text": "$1,200,000"
+  }
+}

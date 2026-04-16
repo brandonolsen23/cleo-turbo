@@ -1,0 +1,107 @@
+{
+  "rt_id": "RT26822",
+  "source_folder": "Durham_Region/retail/p009",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT26822",
+      "source_folder": "Durham_Region/retail/p009",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p009/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "776 LIVERPOOL RD"
+      ],
+      "city_region": "Pickering : Durham Region",
+      "date_text": "05 Sep 2002",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Adolf & Erica Wolff     416-259-9887"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "55 42nd St, Ste 301",
+        "Etobicoke, Ontario"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Linli Management Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Linda Braude",
+        "2900 Steeles Ave E, Ste 206",
+        "Thornhill, Ontario",
+        "L3T 4X1"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 7 units 6,600 sf @ $117"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 432, Lot 10",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "18 01 020 025 03300",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT268/RT26822/photo.jpg"
+    },
+    "footer": {
+      "page_position": "422 / 506",
+      "rt_id": "RT26822"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "776 LIVERPOOL RD",
+    "postcode": "L1W 1S2",
+    "municipality": "Pickering",
+    "region": "Durham Region",
+    "date": "09/05/2002",
+    "desc": "Retail Plaza - 1 storey; 7 units 6,600 sf @ $117",
+    "bldg": "6,600 sf",
+    "acreage": ".16",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 01 020 025 03300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "776 LIVERPOOL RD"
+    ],
+    "city_region": "Pickering : Durham Region",
+    "date_text": "05 Sep 2002",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 7 units 6,600 sf @ $117",
+    "seller_lines": [
+      "Adolf & Erica Wolff"
+    ],
+    "buyer_lines": [
+      "Linli Management Ltd"
+    ],
+    "price_text": "$775,000"
+  }
+}

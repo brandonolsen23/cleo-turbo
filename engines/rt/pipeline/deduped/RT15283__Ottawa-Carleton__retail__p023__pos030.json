@@ -1,0 +1,130 @@
+{
+  "rt_id": "RT15283",
+  "source_folder": "Ottawa-Carleton/retail/p023",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT15283",
+      "source_folder": "Ottawa-Carleton/retail/p023",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Ottawa-Carleton/retail/p023/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "192 - 196 SPARKS ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "29 Jan 1999",
+      "price_text": "$1,500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Gendis Realty Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Richard H. Brustegard",
+        "60 Queen St",
+        "Ottawa, Ontario",
+        "K1P 5Y7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "194 Sparks General Partner Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Jean-Marc Desjarlais",
+        "c/o 955 Richmond Rd",
+        "Ottawa, Ontario",
+        "K2B 6R1"
+      ]
+    },
+    "description_lines": [
+      "3 Retail Bldgs - 3 to 5 storeys"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 5001, Lots F, G, & H south Sparks St",
+      "Plan 5001, Lots E & F north Queen St",
+      "",
+      "0.30 acre"
+    ],
+    "arn_text": "06 14 041 701 10700",
+    "consideration_lines": [
+      "cash: $1,500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $600,000   rate: Prime minus 0.10% per annum, due in bi-weekly payments of $1,069.34.",
+      "registered: 06/25/2020   due: 06/22/2023",
+      "",
+      "chargee: Canadian Imperial Bank Commerce",
+      "principal: $594,400   rate: Prime minus 0.45% per annum, payable in bi-weekly amounts of $1.010.91",
+      "registered: 06/22/2020   due: 06/19/2023",
+      "",
+      "Named Individual(s)",
+      "principal: $532,000   rate: 8.5% per annum.",
+      "registered: 06/24/2020   due: 01/01/2021",
+      "",
+      "chargee: The Bank of Nova Scotia",
+      "principal: $2,000,000   rate: Prime plus 6.0% per annum.",
+      "registered: 06/26/2020   due: on demand",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $560,000   rate: 2.62% per annum, payable every two weeks in amounts of $1,168.62",
+      "registered: 06/25/2020   due: 07/01/2025"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "1131 / 1141",
+      "rt_id": "RT15283"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "192 - 196 SPARKS ST",
+    "postcode": "K1P 5C1",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "01/29/1999",
+    "desc": "3 Retail Bldgs - 3 to 5 storeys",
+    "bldg": "",
+    "acreage": ".3",
+    "consid": "1500000",
+    "cash": "1500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "06 14 041 701 10700"
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "192 - 196 SPARKS ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "29 Jan 1999",
+    "note": "",
+    "description": "3 Retail Bldgs - 3 to 5 storeys",
+    "seller_lines": [
+      "Gendis Realty Inc"
+    ],
+    "buyer_lines": [
+      "194 Sparks General Partner Ltd"
+    ],
+    "price_text": "$1,500,000"
+  }
+}

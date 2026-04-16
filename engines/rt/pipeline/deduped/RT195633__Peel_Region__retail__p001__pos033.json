@@ -1,0 +1,120 @@
+{
+  "rt_id": "RT195633",
+  "source_folder": "Peel_Region/retail/p001",
+  "position": 33,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT195633",
+      "source_folder": "Peel_Region/retail/p001",
+      "position": 33,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Peel_Region/retail/p001/detail_033.html"
+    },
+    "header": {
+      "address_lines": [
+        "3001 NOVAR RD",
+        "UNIT A"
+      ],
+      "city_region": "Mississauga : Peel Region",
+      "date_text": "04 Nov 2025",
+      "price_text": "$2,295,198",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Mississauga II GP Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "1819 Yonge St",
+        "Toronto, Ontario",
+        "M4L 1T4"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "ABA Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Farid Aziz",
+        "89 Stevenson Rd",
+        "Oakville, Ontario",
+        "L6L 6H4"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 1193",
+      "Level 1, Units 8-10",
+      "Level A, Units 1-3",
+      "",
+      "PIN: 20193-0008 +"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $2,295,198     assumed/vtb debt: $0",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $2,430,000   rate: 25.0% per annum.",
+      "registered: 11/04/2025   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT19/RT1956/RT195633/1206_090655.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1956/RT195633/1206_090732.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1956/RT195633/1206_090733.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1956/RT195633/1206_090734.jpg",
+        "http://realtrack.cachefly.net/photos/RT19/RT1956/RT195633/1206_090751.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "34 / 1087",
+      "rt_id": "RT195633"
+    }
+  },
+  "export": {
+    "position": 33,
+    "address": "3001 NOVAR RD, UNIT A",
+    "postcode": "L5B 0R1",
+    "municipality": "Mississauga",
+    "region": "Peel Region",
+    "date": "11/04/2025",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "2295198",
+    "cash": "2295198",
+    "debt": "",
+    "note": "",
+    "pin": "20193-0008+",
+    "rollno": ""
+  },
+  "results": {
+    "position": 33,
+    "address_lines": [
+      "3001 NOVAR RD",
+      "UNIT A"
+    ],
+    "city_region": "Mississauga : Peel Region",
+    "date_text": "04 Nov 2025",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Mississauga II GP Inc"
+    ],
+    "buyer_lines": [
+      "ABA Inc"
+    ],
+    "price_text": "$2,295,198"
+  }
+}

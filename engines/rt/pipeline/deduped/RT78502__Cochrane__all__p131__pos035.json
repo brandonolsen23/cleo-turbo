@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT78502",
+  "source_folder": "Cochrane/all/p131",
+  "position": 35,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT78502",
+      "source_folder": "Cochrane/all/p131",
+      "position": 35,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p131/detail_035.html"
+    },
+    "header": {
+      "address_lines": [
+        "4095 BELGREEN DR",
+        "UNITS 7-9"
+      ],
+      "city_region": "Gloucester : Ottawa-Carleton",
+      "date_text": "11 May 2011",
+      "price_text": "$700,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "756767 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Ken Yip",
+        "725 Somerset St W",
+        "Unit 4, 2nd Floor",
+        "Ottawa, Ontario",
+        "K1R 6P7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bunches and Stems Inc     613-228-7673"
+      ],
+      "trade_name": "Bloomex",
+      "contact_lines": [
+        "Attn: Dmitri Lokhania",
+        "9 Capella Ct, Unit 1",
+        "Ottawa, Ontario",
+        "K2E 8A7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan 436",
+      "Level 1, Units 7-9",
+      "",
+      "PIN: 15436-0007 +"
+    ],
+    "arn_text": "06 06 000 080 03717 +",
+    "consideration_lines": [
+      "cash: $300,000     assumed/vtb debt: $400,000",
+      "",
+      "chargee: 756767 Ontario Ltd",
+      "principal: $400,000   rate: 6.0% per annum",
+      "registered: 05/11/2011   due: 05/10/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6536 / 10920",
+      "rt_id": "RT78502"
+    }
+  },
+  "export": {
+    "position": 35,
+    "address": "4095 BELGREEN DR, UNITS 7-9",
+    "postcode": "K1G 3N2",
+    "municipality": "Gloucester",
+    "region": "Ottawa-Carleton",
+    "date": "05/11/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": "",
+    "consid": "700000",
+    "cash": "300000",
+    "debt": "400000",
+    "note": "",
+    "pin": "15436-0007+",
+    "rollno": "06 06 000 080 03717+"
+  },
+  "results": {
+    "position": 35,
+    "address_lines": [
+      "4095 BELGREEN DR",
+      "UNITS 7-9"
+    ],
+    "city_region": "Gloucester : Ottawa-Carleton",
+    "date_text": "11 May 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "756767 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Bunches and Stems Inc"
+    ],
+    "price_text": "$700,000"
+  }
+}

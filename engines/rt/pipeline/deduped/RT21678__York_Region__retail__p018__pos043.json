@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT21678",
+  "source_folder": "York_Region/retail/p018",
+  "position": 43,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT21678",
+      "source_folder": "York_Region/retail/p018",
+      "position": 43,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p018/detail_043.html"
+    },
+    "header": {
+      "address_lines": [
+        "33 THE BRIDLE TRAIL"
+      ],
+      "city_region": "Markham : York Region",
+      "date_text": "08 Jun 2001",
+      "price_text": "$1,375,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Monarch Construction Ltd     416-491-7440"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: David George",
+        "2025 Sheppard Ave E, Ste 1201",
+        "Toronto, Ontario",
+        "M2J 1V7"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "33 The Bridle Trail Holdings Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Kwong Hoi Heung",
+        "137 Bishop Ave",
+        "Toronto, Ontario",
+        "M2N 1Z6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 11,529 sf @ $119"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan M-1931, Block 251",
+      "",
+      "SE corner at Kennedy Rd",
+      "",
+      "1.70 acre"
+    ],
+    "arn_text": "19 36 030 226 80800",
+    "consideration_lines": [
+      "cash: $1,375,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT216/RT21678/photo.jpg"
+    },
+    "footer": {
+      "page_position": "894 / 984",
+      "rt_id": "RT21678"
+    }
+  },
+  "export": {
+    "position": 43,
+    "address": "33 THE BRIDLE TRAIL",
+    "postcode": "",
+    "municipality": "Markham",
+    "region": "York Region",
+    "date": "06/08/2001",
+    "desc": "Retail Plaza - 1 storey; 11,529 sf @ $119",
+    "bldg": "11,529 sf",
+    "acreage": "1.7",
+    "consid": "1375000",
+    "cash": "1375000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 36 030 226 80800"
+  },
+  "results": {
+    "position": 43,
+    "address_lines": [
+      "33 THE BRIDLE TRAIL"
+    ],
+    "city_region": "Markham : York Region",
+    "date_text": "08 Jun 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 11,529 sf @ $119",
+    "seller_lines": [
+      "Monarch Construction Ltd"
+    ],
+    "buyer_lines": [
+      "33 The Bridle Trail Holdings Ltd"
+    ],
+    "price_text": "$1,375,000"
+  }
+}

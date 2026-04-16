@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT23987",
+  "source_folder": "Wellington/multifamily/p006",
+  "position": 14,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT23987",
+      "source_folder": "Wellington/multifamily/p006",
+      "position": 14,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p006/detail_014.html"
+    },
+    "header": {
+      "address_lines": [
+        "21 DORMIE LANE"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "17 Jan 2002",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Recia Royston",
+        "Larry Cohen     519-763-6644"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Guy Farb",
+        "Barrister & Solicitor",
+        "22 Paisley St",
+        "Guelph, Ontario",
+        "N1H 2N6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Hazad Construction Co Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: William Zaduk",
+        "21 Dormie Lane",
+        "Guelph, Ontario",
+        "N1G 1G7"
+      ]
+    },
+    "description_lines": [
+      "Multi-Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - Div 2",
+      "Part Lot 2",
+      "As in Inst No MS-22806"
+    ],
+    "arn_text": "23 08 010 010 04800",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT239/RT23987/photo.jpg"
+    },
+    "footer": {
+      "page_position": "265 / 295",
+      "rt_id": "RT23987"
+    }
+  },
+  "export": {
+    "position": 14,
+    "address": "21 DORMIE LANE",
+    "postcode": "N1G 1G7",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "01/17/2002",
+    "desc": "Multi-Res Bldg",
+    "bldg": "",
+    "acreage": "",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 010 010 04800"
+  },
+  "results": {
+    "position": 14,
+    "address_lines": [
+      "21 DORMIE LANE"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "17 Jan 2002",
+    "note": "",
+    "description": "Multi-Res Bldg",
+    "seller_lines": [
+      "Recia Royston",
+      "Larry Cohen"
+    ],
+    "buyer_lines": [
+      "Hazad Construction Co Ltd"
+    ],
+    "price_text": "$500,000"
+  }
+}

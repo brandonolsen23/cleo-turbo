@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT81628",
+  "source_folder": "Cochrane/all/p129",
+  "position": 7,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT81628",
+      "source_folder": "Cochrane/all/p129",
+      "position": 7,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p129/detail_007.html"
+    },
+    "header": {
+      "address_lines": [
+        "3181 RIVERSIDE DR"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "31 Aug 2011",
+      "price_text": "$630,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2296535 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Harry Georgi",
+        "6185 Raven Way",
+        "Ottawa, Ontario",
+        "K1C 2V5"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 2 - RF, Part Lot A",
+      "As in Inst No NS-152424",
+      "Except:",
+      "Inst No CT-128351",
+      "",
+      "PIN: 04074-0618",
+      "",
+      "0.86 acre"
+    ],
+    "arn_text": "06 14 116 401 70800",
+    "consideration_lines": [
+      "cash: $630,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $630,000   rate: Prime plus 7% per annum",
+      "registered: 08/31/2011   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT8/RT816/RT81628/air1.jpg",
+        "/assets/files/RT8/RT816/RT81628/air2.jpg",
+        "/assets/files/RT8/RT816/RT81628/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6408 / 10920",
+      "rt_id": "RT81628"
+    }
+  },
+  "export": {
+    "position": 7,
+    "address": "3181 RIVERSIDE DR",
+    "postcode": "K1V 8N8",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "08/31/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".86",
+    "consid": "630000",
+    "cash": "630000",
+    "debt": "",
+    "note": "",
+    "pin": "04074-0618",
+    "rollno": "06 14 116 401 70800"
+  },
+  "results": {
+    "position": 7,
+    "address_lines": [
+      "3181 RIVERSIDE DR"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "31 Aug 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2296535 Ontario Inc"
+    ],
+    "price_text": "$630,000"
+  }
+}

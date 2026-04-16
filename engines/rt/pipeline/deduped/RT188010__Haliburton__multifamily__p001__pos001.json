@@ -1,0 +1,114 @@
+{
+  "rt_id": "RT188010",
+  "source_folder": "Haliburton/multifamily/p001",
+  "position": 1,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT188010",
+      "source_folder": "Haliburton/multifamily/p001",
+      "position": 1,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Haliburton/multifamily/p001/detail_001.html"
+    },
+    "header": {
+      "address_lines": [
+        "7 DYSART AVE"
+      ],
+      "city_region": "Dysart : Haliburton",
+      "date_text": "14 Jun 2024",
+      "price_text": "$1,100,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2825358 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "PO Box 267",
+        "Haliburton, Ontario",
+        "K0M 1S0"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Dysart Realty Holdings Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Linda Baugartner",
+        "1047 Parish Line Rd",
+        "Haliburton, Ontario",
+        "K0M 1S0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1 - Dysart, Block H",
+      "Part Lots 3 & 8",
+      "As in Inst No H-219926",
+      "",
+      "PIN: 38179-0044",
+      "",
+      "0.23 acre"
+    ],
+    "arn_text": "46 24 012 000 26400",
+    "consideration_lines": [
+      "cash: $1,100,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $715,000   rate: Prime plus 1.50% per annum.",
+      "registered: 06/14/2024   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2 / 5",
+      "rt_id": "RT188010"
+    }
+  },
+  "export": {
+    "position": 1,
+    "address": "7 DYSART AVE",
+    "postcode": "K0M 1S0",
+    "municipality": "Dysart",
+    "region": "Haliburton",
+    "date": "06/14/2024",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".23",
+    "consid": "1100000",
+    "cash": "1100000",
+    "debt": "",
+    "note": "",
+    "pin": "38179-0044",
+    "rollno": "46 24 012 000 26400"
+  },
+  "results": {
+    "position": 1,
+    "address_lines": [
+      "7 DYSART AVE"
+    ],
+    "city_region": "Dysart : Haliburton",
+    "date_text": "14 Jun 2024",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2825358 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Dysart Realty Holdings Inc"
+    ],
+    "price_text": "$1,100,000"
+  }
+}

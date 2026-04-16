@@ -1,0 +1,110 @@
+{
+  "rt_id": "RT80522",
+  "source_folder": "Cochrane/all/p130",
+  "position": 28,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT80522",
+      "source_folder": "Cochrane/all/p130",
+      "position": 28,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p130/detail_028.html"
+    },
+    "header": {
+      "address_lines": [
+        "219 CARLETON AVE"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "28 Jun 2011",
+      "price_text": "$500,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Lagimodiere Homes Inc     613-435-1808"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Grant Lagimodiere",
+        "67 Allenby Rd",
+        "Ottawa, Ontario",
+        "K2K 2J8"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 219",
+      "Part Lot 20, E/S Carleton Ave",
+      "As in Inst No NS-100377",
+      "",
+      "PIN: 04031-0166",
+      "",
+      "0.11 acre"
+    ],
+    "arn_text": "06 14 073 601 46000",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Magenta Mortgage Investment Corp",
+      "principal: $1,158,788   rate: 10.0% per annum",
+      "registered: 06/28/2011   due: 01/02/2012"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "6479 / 10920",
+      "rt_id": "RT80522"
+    }
+  },
+  "export": {
+    "position": 28,
+    "address": "219 CARLETON AVE",
+    "postcode": "K1Y 0J5",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "06/28/2011",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".11",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "",
+    "pin": "04031-0166",
+    "rollno": "06 14 073 601 46000"
+  },
+  "results": {
+    "position": 28,
+    "address_lines": [
+      "219 CARLETON AVE"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "28 Jun 2011",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Lagimodiere Homes Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

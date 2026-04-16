@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT178447",
+  "source_folder": "Simcoe_County/retail/p003",
+  "position": 36,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT178447",
+      "source_folder": "Simcoe_County/retail/p003",
+      "position": 36,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Simcoe_County/retail/p003/detail_036.html"
+    },
+    "header": {
+      "address_lines": [
+        "215 MILL ST"
+      ],
+      "city_region": "Essa : Simcoe County",
+      "date_text": "16 Jun 2023",
+      "price_text": "$1,800,000",
+      "note": "Zero Cash"
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1000542572 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Nathan Body",
+        "215 Mill St",
+        "Angus, Ontario",
+        "L0M 1A2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1416, Lot 25",
+      "",
+      "PIN: 58105-0166",
+      "",
+      "1.10 acre"
+    ],
+    "arn_text": "43 21 010 004 39800",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $1,800,000",
+      "",
+      "Named Individual(s)",
+      "principal: $1,800,000   rate: 5.0% per annum.",
+      "registered: 06/16/2023   due: on demand"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1784/RT178447/0625_075913.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1784/RT178447/0625_075917.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1784/RT178447/0625_075941.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1784/RT178447/0625_075948.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT17/RT1784/RT178447/air1.jpg",
+        "/assets/files/RT17/RT1784/RT178447/air2.jpg",
+        "/assets/files/RT17/RT1784/RT178447/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "137 / 712",
+      "rt_id": "RT178447"
+    }
+  },
+  "export": {
+    "position": 36,
+    "address": "215 MILL ST",
+    "postcode": "L0M 1B2",
+    "municipality": "Essa",
+    "region": "Simcoe County",
+    "date": "06/16/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": "1.1",
+    "consid": "1800000",
+    "cash": "",
+    "debt": "1800000",
+    "note": "Zero Cash",
+    "pin": "58105-0166",
+    "rollno": "43 21 010 004 39800"
+  },
+  "results": {
+    "position": 36,
+    "address_lines": [
+      "215 MILL ST"
+    ],
+    "city_region": "Essa : Simcoe County",
+    "date_text": "16 Jun 2023",
+    "note": "Zero Cash",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1000542572 Ontario Inc"
+    ],
+    "price_text": "$1,800,000"
+  }
+}

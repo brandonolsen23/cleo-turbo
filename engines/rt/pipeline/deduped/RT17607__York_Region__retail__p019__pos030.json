@@ -1,0 +1,135 @@
+{
+  "rt_id": "RT17607",
+  "source_folder": "York_Region/retail/p019",
+  "position": 30,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT17607",
+      "source_folder": "York_Region/retail/p019",
+      "position": 30,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p019/detail_030.html"
+    },
+    "header": {
+      "address_lines": [
+        "3200 STEELES AVE W",
+        "UNITS 1-11"
+      ],
+      "city_region": "Vaughan : York Region",
+      "date_text": "06 Jun 2000",
+      "price_text": "$1,235,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "1176413 Ontario Ltd",
+        "Necer Investments Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Norman Zamosc",
+        "127 Spring Gate Blvd",
+        "Thornhill, Ontario",
+        "L4J 3B2"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sentryx Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Akhtar Syed",
+        "1812 Samuelson Circle",
+        "Mississauga, Ontario",
+        "L5N 7Z5"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 2 storey; 13,530 sf @ $91"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Condo Plan, 652, Level 1, Units 1-11",
+      "",
+      "N side 100m W of Jane St"
+    ],
+    "arn_text": "",
+    "consideration_lines": [
+      "cash: $403,393     assumed/vtb debt: $831,607",
+      "",
+      "chargee: Equitable Bank",
+      "principal: $650,000   rate: Prime plus 2.0% per annum.",
+      "registered: 06/30/2022   due: 07/05/2027",
+      "",
+      "chargee: Canadian Imperial Bank of Commerce",
+      "principal: $1,272,800   rate: Prime minus 1.17% per annum.",
+      "registered: 08/03/2021   due: 08/03/2026",
+      "",
+      "chargee: 1641802 Ontario Ltd",
+      "principal: $1,392,000   rate: 7.0% per annum.",
+      "registered: 03/01/2022   due: 02/28/2023",
+      "",
+      "chargee: 2832122 Ontario Inc and 6 others",
+      "principal: $1,020,000   rate: 6.0% per annum.",
+      "registered: 12/23/2021   due: 12/22/2022",
+      "",
+      "chargee: Bank of Montreal",
+      "principal: $1,268,000   rate: 1.20% per annum.",
+      "registered: 02/15/2022   due: 03/01/2027"
+    ],
+    "broker_lines": [
+      "CB Commercial: Pat Viele, 416-495-6258"
+    ],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT176/RT17607/photo.jpg"
+    },
+    "footer": {
+      "page_position": "931 / 984",
+      "rt_id": "RT17607"
+    }
+  },
+  "export": {
+    "position": 30,
+    "address": "3200 STEELES AVE W, UNITS 1-11",
+    "postcode": "L4K 3B8",
+    "municipality": "Vaughan",
+    "region": "York Region",
+    "date": "06/06/2000",
+    "desc": "Retail Plaza - 2 storey; 13,530 sf @ $91",
+    "bldg": "13,530 sf",
+    "acreage": "",
+    "consid": "1235000",
+    "cash": "403393",
+    "debt": "831607",
+    "note": "",
+    "pin": "",
+    "rollno": ""
+  },
+  "results": {
+    "position": 30,
+    "address_lines": [
+      "3200 STEELES AVE W",
+      "UNITS 1-11"
+    ],
+    "city_region": "Vaughan : York Region",
+    "date_text": "06 Jun 2000",
+    "note": "",
+    "description": "Retail Plaza - 2 storey; 13,530 sf @ $91",
+    "seller_lines": [
+      "1176413 Ontario Ltd",
+      "Necer Investments Ltd"
+    ],
+    "buyer_lines": [
+      "Sentryx Inc"
+    ],
+    "price_text": "$1,235,000"
+  }
+}

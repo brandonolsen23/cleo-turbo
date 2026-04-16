@@ -1,0 +1,106 @@
+{
+  "rt_id": "RT150974",
+  "source_folder": "Cochrane/all/p049",
+  "position": 29,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT150974",
+      "source_folder": "Cochrane/all/p049",
+      "position": 29,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Cochrane/all/p049/detail_029.html"
+    },
+    "header": {
+      "address_lines": [
+        "999 MOSSDALE ST"
+      ],
+      "city_region": "Ottawa : Ottawa-Carleton",
+      "date_text": "02 Apr 2020",
+      "price_text": "$845,750",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "2738894 Ontario Inc     613-821-9634"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Gordon Robinson",
+        "1302 Fox Valley Rd",
+        "Greely, Ontario",
+        "K4P 1E7"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 369009,",
+      "Part Lot 156 & 157",
+      "As in Inst No CR-442911",
+      "",
+      "PIN: 03957-0469",
+      "",
+      "0.16 acre"
+    ],
+    "arn_text": "06 14 095 302 26300",
+    "consideration_lines": [
+      "cash: $845,750     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "2430 / 10920",
+      "rt_id": "RT150974"
+    }
+  },
+  "export": {
+    "position": 29,
+    "address": "999 MOSSDALE ST",
+    "postcode": "K2B 5S6",
+    "municipality": "Ottawa",
+    "region": "Ottawa-Carleton",
+    "date": "04/02/2020",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".16",
+    "consid": "845750",
+    "cash": "845750",
+    "debt": "",
+    "note": "",
+    "pin": "03957-0469",
+    "rollno": "06 14 095 302 26300"
+  },
+  "results": {
+    "position": 29,
+    "address_lines": [
+      "999 MOSSDALE ST"
+    ],
+    "city_region": "Ottawa : Ottawa-Carleton",
+    "date_text": "02 Apr 2020",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "2738894 Ontario Inc"
+    ],
+    "price_text": "$845,750"
+  }
+}

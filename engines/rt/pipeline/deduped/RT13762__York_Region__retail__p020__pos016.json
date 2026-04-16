@@ -1,0 +1,133 @@
+{
+  "rt_id": "RT13762",
+  "source_folder": "York_Region/retail/p020",
+  "position": 16,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT13762",
+      "source_folder": "York_Region/retail/p020",
+      "position": 16,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p020/detail_016.html"
+    },
+    "header": {
+      "address_lines": [
+        "17480 YONGE ST"
+      ],
+      "city_region": "Newmarket : York Region",
+      "date_text": "23 Dec 1998",
+      "price_text": "$5,000,000",
+      "note": "Foreclosure"
+    },
+    "transferor": {
+      "party_lines": [
+        "Ontario Court of Justice (General Division)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "CLIC Investments (Canada) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Geoff Townsend",
+        "1881 Scarth St, 16th Floor",
+        "Regina, Saskatchewan",
+        "S4P 3W6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-9860, Parts 1-28",
+      "Plan 65R-9656, Parts 1 & 2",
+      "",
+      "4.57 acre"
+    ],
+    "arn_text": "19 48 040 205 74700",
+    "consideration_lines": [
+      "cash: $0     assumed/vtb debt: $5,000,000",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $2,100,000   rate: Prime plus 5.0% per annum.",
+      "registered: 10/05/2018   due: on demand",
+      "",
+      "chargee: Royal Bank of Canada",
+      "principal: $1,087,500   rate: Prime plus 5.0% per annum.",
+      "registered: 10/01/2018   due: on demand",
+      "",
+      "chargee: Samid Investments Ltd",
+      "principal: $1,950,000",
+      "registered: 10/01/2018   due: on demand",
+      "",
+      "chargee: Cameron Stephens Financial Corp",
+      "principal: $4,000,000   rate: Greater of 9.0% or RBC prime plus 5.80% per annum.",
+      "registered: 10/01/2018   due: on demand",
+      "",
+      "chargee: Bank of China (Canada)",
+      "principal: $1,199,000   rate: 5.0% per annum.",
+      "registered: 10/02/2018   due: on demand",
+      "",
+      "chargee: National Bank of Canada",
+      "principal: $1,850,000",
+      "registered: 10/03/2018   due: on demand",
+      "",
+      "Named Individual(s)",
+      "principal: $600,000   rate: 3.50% per annum. 18.0% after maturity. An administration fee of 3 months interest will apply.",
+      "registered: 10/03/2018   due: 10/03/2019"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT1/RT137/RT13762/photo.jpg"
+    },
+    "footer": {
+      "page_position": "967 / 984",
+      "rt_id": "RT13762"
+    }
+  },
+  "export": {
+    "position": 16,
+    "address": "17480 YONGE ST",
+    "postcode": "",
+    "municipality": "Newmarket",
+    "region": "York Region",
+    "date": "12/23/1998",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "4.57",
+    "consid": "5000000",
+    "cash": "",
+    "debt": "5000000",
+    "note": "Foreclosure",
+    "pin": "",
+    "rollno": "19 48 040 205 74700"
+  },
+  "results": {
+    "position": 16,
+    "address_lines": [
+      "17480 YONGE ST"
+    ],
+    "city_region": "Newmarket : York Region",
+    "date_text": "23 Dec 1998",
+    "note": "Foreclosure",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Ontario Court of Justice (General Division)"
+    ],
+    "buyer_lines": [
+      "CLIC Investments (Canada) Inc"
+    ],
+    "price_text": "$5,000,000"
+  }
+}

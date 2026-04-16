@@ -1,0 +1,115 @@
+{
+  "rt_id": "RT177904",
+  "source_folder": "Metro_Toronto/retail/p017",
+  "position": 23,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT177904",
+      "source_folder": "Metro_Toronto/retail/p017",
+      "position": 23,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/retail/p017/detail_023.html"
+    },
+    "header": {
+      "address_lines": [
+        "3406 - 3410 KINGSTON RD"
+      ],
+      "city_region": "Scarborough : Metro Toronto",
+      "date_text": "24 May 2023",
+      "price_text": "$2,050,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "2627989 Ontario Inc     416-665-9090"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "c/o Zotov Fridman Professional Corp",
+        "7077 Keele St, Unit 201",
+        "Concord, Ontario",
+        "L4K 0B6"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Sagufta NM Housing Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Khalled Mollah",
+        "3410 Kingston Rd",
+        "Toronto, Ontario",
+        "M1M 1R2"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 1834, Part Lot P",
+      "As in Inst No SC-542973",
+      "",
+      "PIN: 06405-0286",
+      "",
+      "0.32 acre"
+    ],
+    "arn_text": "19 01 072 283 01400",
+    "consideration_lines": [
+      "cash: $2,050,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177904/0604_110058.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177904/0604_110102.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177904/0604_110127.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1779/RT177904/0604_110129.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "824 / 4952",
+      "rt_id": "RT177904"
+    }
+  },
+  "export": {
+    "position": 23,
+    "address": "3406 - 3410 KINGSTON RD",
+    "postcode": "M1M 1R2",
+    "municipality": "Scarborough",
+    "region": "Metro Toronto",
+    "date": "05/24/2023",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".32",
+    "consid": "2050000",
+    "cash": "2050000",
+    "debt": "",
+    "note": "",
+    "pin": "06405-0286",
+    "rollno": "19 01 072 283 01400"
+  },
+  "results": {
+    "position": 23,
+    "address_lines": [
+      "3406 - 3410 KINGSTON RD"
+    ],
+    "city_region": "Scarborough : Metro Toronto",
+    "date_text": "24 May 2023",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "2627989 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "Sagufta NM Housing Inc"
+    ],
+    "price_text": "$2,050,000"
+  }
+}

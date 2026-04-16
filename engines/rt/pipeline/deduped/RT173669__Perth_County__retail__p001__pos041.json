@@ -1,0 +1,121 @@
+{
+  "rt_id": "RT173669",
+  "source_folder": "Perth_County/retail/p001",
+  "position": 41,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT173669",
+      "source_folder": "Perth_County/retail/p001",
+      "position": 41,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Perth_County/retail/p001/detail_041.html"
+    },
+    "header": {
+      "address_lines": [
+        "11 ONTARIO RD"
+      ],
+      "city_region": "W. Perth : Perth County",
+      "date_text": "18 Aug 2022",
+      "price_text": "$500,000",
+      "note": "Power of Sale"
+    },
+    "transferor": {
+      "party_lines": [
+        "2394762 Ontario Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "18 Erica Rd",
+        "Thornhill, Ontario",
+        "L4J 2G1"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "14122984 Canada Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Sherin George",
+        "2169 Bonfield Ct",
+        "Burlington, Ontario",
+        "L7P 2W7"
+      ]
+    },
+    "description_lines": [
+      "Last transferred in April 2019 for $1,700,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 396, Lots 6 & 7",
+      "",
+      "PIN: 53188-0191",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "31 30 260 001 07100",
+    "consideration_lines": [
+      "cash: $500,000     assumed/vtb debt: $0",
+      "chattels: $1,300,000",
+      "other: $200,000",
+      "",
+      "chargee: Petrogold Inc",
+      "principal: $600,000   rate: 9.50% per annum.",
+      "registered: 08/18/2022   due: 08/18/2023"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT17/RT1736/RT173669/0101_100717.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1736/RT173669/0101_100718.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1736/RT173669/0101_100741.jpg",
+        "http://realtrack.cachefly.net/photos/RT17/RT1736/RT173669/0101_100742.jpg"
+      ],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "42 / 113",
+      "rt_id": "RT173669"
+    }
+  },
+  "export": {
+    "position": 41,
+    "address": "11 ONTARIO RD",
+    "postcode": "N0K 1N0",
+    "municipality": "W. Perth",
+    "region": "Perth County",
+    "date": "08/18/2022",
+    "desc": "",
+    "bldg": "",
+    "acreage": ".31",
+    "consid": "500000",
+    "cash": "500000",
+    "debt": "",
+    "note": "Power of Sale",
+    "pin": "53188-0191",
+    "rollno": "31 30 260 001 07100"
+  },
+  "results": {
+    "position": 41,
+    "address_lines": [
+      "11 ONTARIO RD"
+    ],
+    "city_region": "W. Perth : Perth County",
+    "date_text": "18 Aug 2022",
+    "note": "Power of Sale",
+    "description": "",
+    "seller_lines": [
+      "2394762 Ontario Inc"
+    ],
+    "buyer_lines": [
+      "14122984 Canada Inc"
+    ],
+    "price_text": "$500,000"
+  }
+}

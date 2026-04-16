@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT71584",
+  "source_folder": "York_Region/retail/p012",
+  "position": 2,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT71584",
+      "source_folder": "York_Region/retail/p012",
+      "position": 2,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p012/detail_002.html"
+    },
+    "header": {
+      "address_lines": [
+        "9875 YONGE ST"
+      ],
+      "city_region": "Richmond Hill : York Region",
+      "date_text": "01 Apr 2010",
+      "price_text": "$1,265,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Zaeem Flowers Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "58 Marine Parade, Unit GR07",
+        "Etobicoke, Ontario",
+        "M8V 4G1"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 2 storey; 2,862 sf @ $442",
+      "",
+      "2,000 sf retail",
+      "862 sf office on second",
+      "Vacant - to be occupied by the purchaser"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 2383",
+      "Part Lot 19 & 20",
+      "As in Inst No R-322551",
+      "",
+      "PIN: 03140-0016",
+      "",
+      "0.25 acre"
+    ],
+    "arn_text": "19 38 030 010 71500",
+    "consideration_lines": [
+      "cash: $1,265,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Home Trust Co",
+      "principal: $675,000   rate: 5.75% per annum",
+      "registered: 04/01/2010   due: 04/01/2013"
+    ],
+    "broker_lines": [
+      "Royal LePage Your Community Realty: Arash Fatemi, 905-731-2000"
+    ],
+    "photos": {
+      "street_photo_urls": [
+        "http://realtrack.cachefly.net/photos/RT7/RT715/RT71584/0409_135634.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT715/RT71584/0409_135647.jpg",
+        "http://realtrack.cachefly.net/photos/RT7/RT715/RT71584/0409_135744.jpg"
+      ],
+      "aerial_photo_urls": [
+        "/assets/files/RT7/RT715/RT71584/air1.jpg",
+        "/assets/files/RT7/RT715/RT71584/air2.jpg",
+        "/assets/files/RT7/RT715/RT71584/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "553 / 984",
+      "rt_id": "RT71584"
+    }
+  },
+  "export": {
+    "position": 2,
+    "address": "9875 YONGE ST",
+    "postcode": "L4C 1V1",
+    "municipality": "Richmond Hill",
+    "region": "York Region",
+    "date": "04/01/2010",
+    "desc": "Retail Bldg - 2 storey; 2,862 sf @ $442",
+    "bldg": "2,862 sf",
+    "acreage": ".25",
+    "consid": "1265000",
+    "cash": "1265000",
+    "debt": "",
+    "note": "",
+    "pin": "03140-0016",
+    "rollno": "19 38 030 010 71500"
+  },
+  "results": {
+    "position": 2,
+    "address_lines": [
+      "9875 YONGE ST"
+    ],
+    "city_region": "Richmond Hill : York Region",
+    "date_text": "01 Apr 2010",
+    "note": "",
+    "description": "Retail Bldg - 2 storey; 2,862 sf @ $442",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Zaeem Flowers Inc"
+    ],
+    "price_text": "$1,265,000"
+  }
+}

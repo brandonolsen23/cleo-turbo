@@ -1,0 +1,109 @@
+{
+  "rt_id": "RT22838",
+  "source_folder": "Middlesex_County/retail/p013",
+  "position": 8,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT22838",
+      "source_folder": "Middlesex_County/retail/p013",
+      "position": 8,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Middlesex_County/retail/p013/detail_008.html"
+    },
+    "header": {
+      "address_lines": [
+        "1030 ADELAIDE ST N"
+      ],
+      "city_region": "London : Middlesex County",
+      "date_text": "10 Sep 2001",
+      "price_text": "$4,993,232",
+      "note": "Partial Interest"
+    },
+    "transferor": {
+      "party_lines": [
+        "Roswood Holdings Ltd     416-961-4840"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Dr Murray Frum",
+        "720 Spadina Ave, Ste 220",
+        "Toronto, Ontario",
+        "M5S 2T9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "RioCan Holdings Inc     416-866-3033"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Katy Ritcey",
+        "130 King St W, Ste 700",
+        "Toronto, Ontario",
+        "M5X 1E2"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 33R-2061, Parts 1-7",
+      "Plan 33R-3988, Part 3",
+      "Except Inst 504461"
+    ],
+    "arn_text": "39 36 030 601 01800",
+    "consideration_lines": [
+      "cash: $2,628,591     assumed/vtb debt: $2,364,641"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT228/RT22838/photo.jpg"
+    },
+    "footer": {
+      "page_position": "609 / 686",
+      "rt_id": "RT22838"
+    }
+  },
+  "export": {
+    "position": 8,
+    "address": "1030 ADELAIDE ST N",
+    "postcode": "N5V 2M9",
+    "municipality": "London",
+    "region": "Middlesex County",
+    "date": "09/10/2001",
+    "desc": "Retail Plaza",
+    "bldg": "",
+    "acreage": "",
+    "consid": "4993232",
+    "cash": "2628591",
+    "debt": "2364641",
+    "note": "Partial Interest",
+    "pin": "",
+    "rollno": "39 36 030 601 01800"
+  },
+  "results": {
+    "position": 8,
+    "address_lines": [
+      "1030 ADELAIDE ST N"
+    ],
+    "city_region": "London : Middlesex County",
+    "date_text": "10 Sep 2001",
+    "note": "Partial Interest",
+    "description": "Retail Plaza",
+    "seller_lines": [
+      "Roswood Holdings Ltd"
+    ],
+    "buyer_lines": [
+      "RioCan Holdings Inc"
+    ],
+    "price_text": "$4,993,232"
+  }
+}

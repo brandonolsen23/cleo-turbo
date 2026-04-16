@@ -1,0 +1,117 @@
+{
+  "rt_id": "RT35891",
+  "source_folder": "York_Region/retail/p016",
+  "position": 21,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT35891",
+      "source_folder": "York_Region/retail/p016",
+      "position": 21,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/York_Region/retail/p016/detail_021.html"
+    },
+    "header": {
+      "address_lines": [
+        "15263 YONGE ST"
+      ],
+      "city_region": "Aurora : York Region",
+      "date_text": "31 May 2004",
+      "price_text": "$725,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "956068 Ontario Corp     416-489-1332"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: George Macri",
+        "J-G Cordone Investments",
+        "542 Eglinton Ave E",
+        "Toronto, Ontario",
+        "M4P 1N9"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "2046630 Ontario Ltd     905-895-6141"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Thomas Hempen",
+        "Hempen Jewellers",
+        "220 Main St S",
+        "Newmarket, Ontario",
+        "L3Y 3Z3"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 5 units 5,000 sf @ $145",
+      "",
+      "16 underground parking stalls."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 65R-12621, Part 1",
+      "",
+      "0.14 acre"
+    ],
+    "arn_text": "19 46 000 020 02300",
+    "consideration_lines": [
+      "cash: $150,000     assumed/vtb debt: $575,000"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT3/RT358/RT35891/air1.jpg",
+        "/assets/files/RT3/RT358/RT35891/air2.jpg",
+        "/assets/files/RT3/RT358/RT35891/air3.jpg"
+      ],
+      "standalone_photo_url": "/assets/files/RT3/RT358/RT35891/photo.jpg"
+    },
+    "footer": {
+      "page_position": "772 / 984",
+      "rt_id": "RT35891"
+    }
+  },
+  "export": {
+    "position": 21,
+    "address": "15263 YONGE ST",
+    "postcode": "L4G 1N5",
+    "municipality": "Aurora",
+    "region": "York Region",
+    "date": "05/31/2004",
+    "desc": "Retail Plaza - 1 storey; 5 units 5,000 sf @ $145",
+    "bldg": "5,000 sf",
+    "acreage": ".14",
+    "consid": "725000",
+    "cash": "150000",
+    "debt": "575000",
+    "note": "",
+    "pin": "",
+    "rollno": "19 46 000 020 02300"
+  },
+  "results": {
+    "position": 21,
+    "address_lines": [
+      "15263 YONGE ST"
+    ],
+    "city_region": "Aurora : York Region",
+    "date_text": "31 May 2004",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 5 units 5,000 sf @ $145",
+    "seller_lines": [
+      "956068 Ontario Corp"
+    ],
+    "buyer_lines": [
+      "2046630 Ontario Ltd"
+    ],
+    "price_text": "$725,000"
+  }
+}

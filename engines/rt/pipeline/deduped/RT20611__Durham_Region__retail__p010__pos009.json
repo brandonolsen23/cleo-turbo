@@ -1,0 +1,112 @@
+{
+  "rt_id": "RT20611",
+  "source_folder": "Durham_Region/retail/p010",
+  "position": 9,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT20611",
+      "source_folder": "Durham_Region/retail/p010",
+      "position": 9,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p010/detail_009.html"
+    },
+    "header": {
+      "address_lines": [
+        "190 HARWOOD AVE S"
+      ],
+      "city_region": "Ajax : Durham Region",
+      "date_text": "22 Feb 2001",
+      "price_text": "$775,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Sun Life Assurance Co of Canada     416-408-7500"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Randy Grochowski",
+        "225 King St W, 11th Flr",
+        "Toronto, Ontario",
+        "M5V 3C5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Bill & Lora Tzoumis"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "88 Harwood Ave S",
+        "Ajax, Ontario",
+        "L1S 2H6"
+      ]
+    },
+    "description_lines": [
+      "Retail Plaza - 1 storey; 15,924 sf divided into 3 units",
+      "",
+      "The building is built to the property line, parking is not included."
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 488, Lots 14-16",
+      "Plan 488, Part Lots 13 & 17",
+      "As in Inst No AJ-1088",
+      "",
+      "0.31 acre"
+    ],
+    "arn_text": "18 05 030 007 04400",
+    "consideration_lines": [
+      "cash: $775,000     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT2/RT206/RT20611/photo.jpg"
+    },
+    "footer": {
+      "page_position": "460 / 506",
+      "rt_id": "RT20611"
+    }
+  },
+  "export": {
+    "position": 9,
+    "address": "190 HARWOOD AVE S",
+    "postcode": "L1S 2H6",
+    "municipality": "Ajax",
+    "region": "Durham Region",
+    "date": "02/22/2001",
+    "desc": "Retail Plaza - 1 storey; 15,924 sf divided into 3 units",
+    "bldg": "15,924 sf",
+    "acreage": ".31",
+    "consid": "775000",
+    "cash": "775000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 05 030 007 04400"
+  },
+  "results": {
+    "position": 9,
+    "address_lines": [
+      "190 HARWOOD AVE S"
+    ],
+    "city_region": "Ajax : Durham Region",
+    "date_text": "22 Feb 2001",
+    "note": "",
+    "description": "Retail Plaza - 1 storey; 15,924 sf divided into 3 units",
+    "seller_lines": [
+      "Sun Life Assurance Co of Canada"
+    ],
+    "buyer_lines": [
+      "Bill & Lora Tzoumis"
+    ],
+    "price_text": "$775,000"
+  }
+}

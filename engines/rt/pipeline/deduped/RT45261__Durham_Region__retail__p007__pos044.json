@@ -1,0 +1,125 @@
+{
+  "rt_id": "RT45261",
+  "source_folder": "Durham_Region/retail/p007",
+  "position": 44,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT45261",
+      "source_folder": "Durham_Region/retail/p007",
+      "position": 44,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Durham_Region/retail/p007/detail_044.html"
+    },
+    "header": {
+      "address_lines": [
+        "205 KING ST E"
+      ],
+      "city_region": "Clarington : Durham Region",
+      "date_text": "08 Nov 2005",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Le Groupe Jean Coutu (PJC) Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "VP: Normand Messier",
+        "530 Beriault St",
+        "Longueuil, Quebec",
+        "J4G 1S8"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "9155-6522 Quebec Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "ASO: Ehud Erez",
+        "98 Boul. de Gaulle",
+        "Lorraine, Quebec",
+        "J6Z 3Z2"
+      ]
+    },
+    "description_lines": [
+      "Retail Bldg - 1 storey; 8,900 sf @ $146"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Hanning Plan, Block B",
+      "Part Lots 5, 6, 25 & 26",
+      "As in Inst Nos N-164654 & N-164655",
+      "Except:",
+      "Plan 40R-14131, Part 1",
+      "",
+      "0.70 acre"
+    ],
+    "arn_text": "18 17 020 110 11600",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: Computershare Trust Co of Canada",
+      "principal: $51,759,375   rate: 5.224% per annum",
+      "registered: 10/08/2005   due: 12/01/2015",
+      "",
+      "chargee: Computershare Trust Co of Canada",
+      "principal: $53,006,250   rate: 5.224% per annum",
+      "registered: 11/08/2005   due: 12/01/2015"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT4/RT452/RT45261/air1.jpg",
+        "/assets/files/RT4/RT452/RT45261/air2.jpg",
+        "/assets/files/RT4/RT452/RT45261/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "345 / 506",
+      "rt_id": "RT45261"
+    }
+  },
+  "export": {
+    "position": 44,
+    "address": "205 KING ST E",
+    "postcode": "L1C 1P4",
+    "municipality": "Clarington",
+    "region": "Durham Region",
+    "date": "11/08/2005",
+    "desc": "Retail Bldg - 1 storey; 8,900 sf @ $146",
+    "bldg": "8,900 sf",
+    "acreage": ".7",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "18 17 020 110 11600"
+  },
+  "results": {
+    "position": 44,
+    "address_lines": [
+      "205 KING ST E"
+    ],
+    "city_region": "Clarington : Durham Region",
+    "date_text": "08 Nov 2005",
+    "note": "",
+    "description": "Retail Bldg - 1 storey; 8,900 sf @ $146",
+    "seller_lines": [
+      "Le Groupe Jean Coutu (PJC) Inc"
+    ],
+    "buyer_lines": [
+      "9155-6522 Quebec Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

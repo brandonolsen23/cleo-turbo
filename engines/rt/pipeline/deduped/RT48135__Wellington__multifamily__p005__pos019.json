@@ -1,0 +1,113 @@
+{
+  "rt_id": "RT48135",
+  "source_folder": "Wellington/multifamily/p005",
+  "position": 19,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT48135",
+      "source_folder": "Wellington/multifamily/p005",
+      "position": 19,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Wellington/multifamily/p005/detail_019.html"
+    },
+    "header": {
+      "address_lines": [
+        "41 CONROY CRES"
+      ],
+      "city_region": "Guelph : Wellington",
+      "date_text": "05 Apr 2006",
+      "price_text": "$1,300,000",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "345541 Ontario Ltd"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: Joseph Juchnik",
+        "41 Conroy Cres, Unit 301",
+        "Guelph, Ontario",
+        "N1G 2V5"
+      ]
+    },
+    "transferee": {
+      "party_lines": [
+        "Apple Pie Properties Inc"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Pres: William Coates",
+        "4 University Ave E",
+        "Guelph, Ontario",
+        "N1G 1M7"
+      ]
+    },
+    "description_lines": [
+      "Apartment Bldg - 5 storey; 20 units @ $65,000"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 610, Lot 169",
+      "",
+      "0.72 acre"
+    ],
+    "arn_text": "23 08 060 008 34600",
+    "consideration_lines": [
+      "cash: $1,300,000     assumed/vtb debt: $0",
+      "",
+      "chargee: 345541 Ontario Ltd",
+      "principal: $950,000   rate: 5.0% per annum",
+      "registered: 04/05/2006   due: 04/01/2016"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT4/RT481/RT48135/photo.jpg"
+    },
+    "footer": {
+      "page_position": "220 / 295",
+      "rt_id": "RT48135"
+    }
+  },
+  "export": {
+    "position": 19,
+    "address": "41 CONROY CRES",
+    "postcode": "N1G 2V5",
+    "municipality": "Guelph",
+    "region": "Wellington",
+    "date": "04/05/2006",
+    "desc": "Apartment Bldg - 5 storey; 20 units @ $65,000",
+    "bldg": "20 units",
+    "acreage": ".72",
+    "consid": "1300000",
+    "cash": "1300000",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "23 08 060 008 34600"
+  },
+  "results": {
+    "position": 19,
+    "address_lines": [
+      "41 CONROY CRES"
+    ],
+    "city_region": "Guelph : Wellington",
+    "date_text": "05 Apr 2006",
+    "note": "",
+    "description": "Apartment Bldg - 5 storey; 20 units @ $65,000",
+    "seller_lines": [
+      "345541 Ontario Ltd"
+    ],
+    "buyer_lines": [
+      "Apple Pie Properties Inc"
+    ],
+    "price_text": "$1,300,000"
+  }
+}

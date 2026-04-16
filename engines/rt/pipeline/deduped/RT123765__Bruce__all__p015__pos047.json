@@ -1,0 +1,111 @@
+{
+  "rt_id": "RT123765",
+  "source_folder": "Bruce/all/p015",
+  "position": 47,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT123765",
+      "source_folder": "Bruce/all/p015",
+      "position": 47,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Bruce/all/p015/detail_047.html"
+    },
+    "header": {
+      "address_lines": [
+        "CONC 11",
+        "PART LOT 28"
+      ],
+      "city_region": "Kincardine : Bruce",
+      "date_text": "01 Mar 2017",
+      "price_text": "$901,600",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "1210987 Ontario Inc     519-345-2435"
+      ],
+      "trade_name": "",
+      "contact_lines": [
+        "Attn: Allan Murray",
+        "44221 Bridge Rd, RR 5",
+        "Seaforth, Ontario",
+        "N0K 1W0"
+      ]
+    },
+    "description_lines": [],
+    "more_info_url": "",
+    "site_lines": [
+      "Conc 11, Part Lot 28",
+      "As in Inst No R-240457",
+      "",
+      "PIN: 33291-0046",
+      "",
+      "96.03 acre"
+    ],
+    "arn_text": "41 08 210 003 14200",
+    "consideration_lines": [
+      "cash: $901,600     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [
+        "/assets/files/RT12/RT1237/RT123765/air1.jpg",
+        "/assets/files/RT12/RT1237/RT123765/air2.jpg",
+        "/assets/files/RT12/RT1237/RT123765/air3.jpg"
+      ],
+      "standalone_photo_url": ""
+    },
+    "footer": {
+      "page_position": "748 / 1185",
+      "rt_id": "RT123765"
+    }
+  },
+  "export": {
+    "position": 47,
+    "address": "CONC 11, PART LOT 28",
+    "postcode": "",
+    "municipality": "Kincardine",
+    "region": "Bruce",
+    "date": "03/01/2017",
+    "desc": "",
+    "bldg": "",
+    "acreage": "96.03",
+    "consid": "901600",
+    "cash": "901600",
+    "debt": "",
+    "note": "",
+    "pin": "33291-0046",
+    "rollno": "41 08 210 003 14200"
+  },
+  "results": {
+    "position": 47,
+    "address_lines": [
+      "CONC 11",
+      "PART LOT 28"
+    ],
+    "city_region": "Kincardine : Bruce",
+    "date_text": "01 Mar 2017",
+    "note": "",
+    "description": "",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "1210987 Ontario Inc"
+    ],
+    "price_text": "$901,600"
+  }
+}

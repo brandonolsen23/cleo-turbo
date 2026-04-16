@@ -1,0 +1,100 @@
+{
+  "rt_id": "RT33697",
+  "source_folder": "Metro_Toronto/multifamily/p095",
+  "position": 42,
+  "join_verified": true,
+  "join_checks": {
+    "address_match": true,
+    "price_match": true,
+    "date_match": true
+  },
+  "detail": {
+    "meta": {
+      "rt_id": "RT33697",
+      "source_folder": "Metro_Toronto/multifamily/p095",
+      "position": 42,
+      "detail_path": "/sessions/upbeat-lucid-euler/mnt/cleo-turbo/raw-data/rt/pages/Metro_Toronto/multifamily/p095/detail_042.html"
+    },
+    "header": {
+      "address_lines": [
+        "2881 DANFORTH AVE"
+      ],
+      "city_region": "Toronto : Metro Toronto",
+      "date_text": "21 Jan 2004",
+      "price_text": "$552,700",
+      "note": ""
+    },
+    "transferor": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "transferee": {
+      "party_lines": [
+        "Named Individual(s)"
+      ],
+      "trade_name": "",
+      "contact_lines": []
+    },
+    "description_lines": [
+      "Retail/Res Bldg"
+    ],
+    "more_info_url": "",
+    "site_lines": [
+      "Plan 766, Part Lots 23-25",
+      "As in Inst No CT-56095",
+      "",
+      "0.08 acre"
+    ],
+    "arn_text": "19 04 096 350 01500",
+    "consideration_lines": [
+      "cash: $552,700     assumed/vtb debt: $0"
+    ],
+    "broker_lines": [],
+    "photos": {
+      "street_photo_urls": [],
+      "aerial_photo_urls": [],
+      "standalone_photo_url": "/assets/files/RT3/RT336/RT33697/photo.jpg"
+    },
+    "footer": {
+      "page_position": "4743 / 6031",
+      "rt_id": "RT33697"
+    }
+  },
+  "export": {
+    "position": 42,
+    "address": "2881 DANFORTH AVE",
+    "postcode": "M4C 1M3",
+    "municipality": "Toronto",
+    "region": "Metro Toronto",
+    "date": "01/21/2004",
+    "desc": "Retail/Res Bldg",
+    "bldg": "",
+    "acreage": ".08",
+    "consid": "552700",
+    "cash": "552700",
+    "debt": "",
+    "note": "",
+    "pin": "",
+    "rollno": "19 04 096 350 01500"
+  },
+  "results": {
+    "position": 42,
+    "address_lines": [
+      "2881 DANFORTH AVE"
+    ],
+    "city_region": "Toronto : Metro Toronto",
+    "date_text": "21 Jan 2004",
+    "note": "",
+    "description": "Retail/Res Bldg",
+    "seller_lines": [
+      "Named Individual(s)"
+    ],
+    "buyer_lines": [
+      "Named Individual(s)"
+    ],
+    "price_text": "$552,700"
+  }
+}

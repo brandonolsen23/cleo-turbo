@@ -152,10 +152,41 @@ export default function SellOpportunityDetailPage() {
                 <DataList.Label>Last Sale Price</DataList.Label>
                 <DataList.Value>{formatCurrency(opp.most_recent_sale_price)}</DataList.Value>
               </DataList.Item>
+            </DataList.Root>
+          </div>
+
+          {/* Financials card */}
+          <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+            <Heading size="3" className="mb-3">Financials</Heading>
+            <DataList.Root>
+              {opp.noi != null && (
+                <DataList.Item>
+                  <DataList.Label>NOI</DataList.Label>
+                  <DataList.Value>{formatCurrency(opp.noi)}</DataList.Value>
+                </DataList.Item>
+              )}
+              {opp.expected_cap_rate != null && (
+                <DataList.Item>
+                  <DataList.Label>Cap Rate</DataList.Label>
+                  <DataList.Value>{(opp.expected_cap_rate * 100).toFixed(2)}%</DataList.Value>
+                </DataList.Item>
+              )}
+              <DataList.Item>
+                <DataList.Label>Expected Price</DataList.Label>
+                <DataList.Value>
+                  <Text weight="bold">{formatCurrency(opp.expected_price)}</Text>
+                </DataList.Value>
+              </DataList.Item>
+              {opp.commission_pct != null && (
+                <DataList.Item>
+                  <DataList.Label>Commission</DataList.Label>
+                  <DataList.Value>{(opp.commission_pct * 100).toFixed(2)}%</DataList.Value>
+                </DataList.Item>
+              )}
               <DataList.Item>
                 <DataList.Label>Deal Value</DataList.Label>
                 <DataList.Value>
-                  <Text weight="bold">{formatCurrency(opp.deal_value)}</Text>
+                  <Text weight="bold" style={{ color: "var(--jade-11)" }}>{formatCurrency(opp.deal_value)}</Text>
                 </DataList.Value>
               </DataList.Item>
             </DataList.Root>
