@@ -1399,6 +1399,16 @@ export interface DiscoveryEvidence {
   iteration: number;
 }
 
+export interface DiscoveryMemberTransaction {
+  source_id: string;
+  sale_date: string | null;
+  sale_price: number | null;
+  display_address: string;
+  city: string;
+  side: string;
+  party_name: string | null;
+}
+
 export interface DiscoveryClusterDetail {
   anchor: {
     id: string;
@@ -1419,4 +1429,5 @@ export interface DiscoveryClusterDetail {
   member_count: number;
   evidence: DiscoveryEvidence[];
   signal_summary: Record<string, string[]>;
+  member_transactions: Record<string, DiscoveryMemberTransaction[]>;
 }

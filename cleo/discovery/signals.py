@@ -317,6 +317,53 @@ def extract_signals(db) -> list:
                 raw_value=raw_val,
             ))
 
+    # ── 5b. Companies_json signals ──────────────────────────────────────────
+    # seller_companies_json / buyer_companies_json contain management company
+    # names extracted from contact blocks (e.g., "RioCan REIT" under a contact).
+    # These are the same kind of signal as trade_name/care_of — management
+    # company identifiers. We emit them as trade_name signals so the rules
+    # engine treats them equivalently.
+    import json as _json
+    companies_rows = db.execute("""
+        SELECT t.source_id, t.seller_companies_json, t.buyer_companies_json
+        FROM transactions t
+        WHERE (t.seller_companies_json IS NOT NULL AND t.seller_companies_json != '' AND t.seller_companies_json != '[]')
+           OR (t.buyer_companies_json IS NOT NULL AND t.buyer_companies_json != '' AND t.buyer_companies_json != '[]')
+    """).fetchall()
+
+    for row in companies_rows:
+        source_id = row[0]
+        for side, raw_json in [("seller", row[1]), ("buyer", row[2])]:
+            if not raw_json or raw_json == "[]":
+                continue
+            try:
+                names = _json.loads(raw_json)
+            except (ValueError, TypeError):
+                continue
+            for raw_name in names:
+                if not raw_name or not isinstance(raw_name, str):
+                    continue
+                norm = normalize_group_name(raw_name)
+                if not norm or len(norm) < 3:
+                    continue
+                if _excluded("trade_name", norm):
+                    continue
+                grp = db.execute("""
+                    SELECT group_id FROM transaction_parties
+                    WHERE source_id = ? AND side = ? AND group_id IS NOT NULL
+                    ORDER BY id LIMIT 1
+                """, (source_id, side)).fetchone()
+                if not grp:
+                    continue
+                signals.append(Signal(
+                    signal_type="trade_name",
+                    signal_value=norm,
+                    group_id=grp[0],
+                    source_id=source_id,
+                    side=side,
+                    raw_value=raw_name,
+                ))
+
     # ── 6. Entity co-occurrence signals ───────────────────────────────────────
     # When 2+ groups appear on the same side of a transaction, create pairwise
     # signals: for each pair (A, B), emit one signal for A (value=B) and one

@@ -74,69 +74,48 @@ def browse_clusters(
         run_info.pop("stats_json", None)
         run_info["stats"] = None
 
-    # Aggregate evidence into clusters by target_group_id
-    # Count distinct source_group_ids per anchor (anchor is also a member, so +1)
+    # Aggregate evidence into clusters with group details in a single query
     cluster_rows = db.execute(
         """
         SELECT
             e.target_group_id as anchor_group_id,
             COUNT(DISTINCT e.source_group_id) + 1 as member_count,
             AVG(e.confidence) as avg_confidence,
-            MAX(e.confidence) as max_confidence
+            MAX(e.confidence) as max_confidence,
+            g.display_name as anchor_display_name,
+            g.normalized_name as anchor_normalized_name,
+            g.status as anchor_status,
+            g.transaction_count as anchor_transaction_count,
+            g.property_count as anchor_property_count,
+            ga.total_assessed_value as portfolio_value
         FROM discovery_evidence e
+        JOIN groups g ON g.id = e.target_group_id
+        LEFT JOIN group_analytics ga ON ga.group_id = e.target_group_id
         WHERE e.run_id = ?
         GROUP BY e.target_group_id
         """,
         (run_id,)
     ).fetchall()
 
-    # Build cluster map with group details and portfolio value
+    # Build cluster list with filters
     clusters = []
     for cr in cluster_rows:
-        anchor_id = cr["anchor_group_id"]
         member_count = cr["member_count"]
-        avg_confidence = cr["avg_confidence"]
-        max_confidence = cr["max_confidence"]
 
-        # Filter: status
-        if status:
-            g_row = db.execute(
-                "SELECT id, display_name, normalized_name, status, transaction_count, property_count "
-                "FROM groups WHERE id = ? AND status = ?",
-                (anchor_id, status)
-            ).fetchone()
-        else:
-            g_row = db.execute(
-                "SELECT id, display_name, normalized_name, status, transaction_count, property_count "
-                "FROM groups WHERE id = ?",
-                (anchor_id,)
-            ).fetchone()
-
-        if not g_row:
+        if status and cr["anchor_status"] != status:
             continue
-
-        # Filter: min_members
         if min_members is not None and member_count < min_members:
             continue
 
-        # Portfolio value from group_analytics
-        ga_row = db.execute(
-            "SELECT total_assessed_value FROM group_analytics WHERE group_id = ?",
-            (anchor_id,)
-        ).fetchone()
-        portfolio_value = ga_row["total_assessed_value"] if ga_row else None
-
+        confidence = cr["max_confidence"] or 0
         clusters.append({
-            "anchor_group_id": anchor_id,
-            "anchor_display_name": g_row["display_name"],
-            "anchor_normalized_name": g_row["normalized_name"],
-            "anchor_status": g_row["status"],
-            "anchor_transaction_count": g_row["transaction_count"],
-            "anchor_property_count": g_row["property_count"],
+            "anchor_group_id": cr["anchor_group_id"],
+            "anchor_name": cr["anchor_display_name"],
             "member_count": member_count,
-            "avg_confidence": avg_confidence,
-            "max_confidence": max_confidence,
-            "portfolio_value": portfolio_value,
+            "portfolio_value": cr["portfolio_value"],
+            "confidence": confidence,
+            "signal_count": member_count - 1,  # evidence links = members minus anchor
+            "status": "auto_confirmed" if confidence >= 0.9 else "needs_review",
         })
 
     # Sort
@@ -150,9 +129,9 @@ def browse_clusters(
     if sort == "member_count":
         clusters.sort(key=lambda x: (x["member_count"] or 0), reverse=reverse)
     elif sort == "confidence":
-        clusters.sort(key=lambda x: (x["avg_confidence"] or 0), reverse=reverse)
+        clusters.sort(key=lambda x: (x["confidence"] or 0), reverse=reverse)
     elif sort == "anchor_name":
-        clusters.sort(key=lambda x: (x["anchor_display_name"] or ""), reverse=reverse)
+        clusters.sort(key=lambda x: (x["anchor_name"] or ""), reverse=reverse)
     elif sort == "portfolio_value":
         clusters.sort(key=lambda x: (x["portfolio_value"] or 0), reverse=reverse)
 
@@ -334,10 +313,59 @@ def cluster_detail(
         if val not in signal_summary[stype]:
             signal_summary[stype].append(val)
 
+    # ── For each member, find the actual transactions that produced the linking signals ──
+    # This lets the frontend link to source HTML via the pipeline trace page
+    member_transactions = {}
+    for member_id in member_ids:
+        if member_id == anchor_group_id:
+            continue
+
+        # Get the evidence signals for this member
+        member_evidence = [ev for ev in evidence_rows if ev["source_group_id"] == member_id]
+        shared_contacts = set()
+        shared_addresses = set()
+        for ev in member_evidence:
+            if ev["signal_type"] == "contact":
+                shared_contacts.add(ev["signal_value"])
+            elif ev["signal_type"] == "address":
+                shared_addresses.add(ev["signal_value"])
+
+        # Find transactions where this member appears as a party
+        txn_rows = db.execute(
+            """
+            SELECT DISTINCT t.source_id, t.sale_date, t.sale_price,
+                   t.display_address, t.city, tp.side, tp.party_name
+            FROM transaction_parties tp
+            JOIN transactions t ON t.source_id = tp.source_id
+            WHERE tp.group_id = ?
+            ORDER BY t.sale_date DESC
+            LIMIT 10
+            """,
+            (member_id,)
+        ).fetchall()
+
+        member_transactions[member_id] = [dict(r) for r in txn_rows]
+
+    # Also get anchor transactions
+    anchor_txns = db.execute(
+        """
+        SELECT DISTINCT t.source_id, t.sale_date, t.sale_price,
+               t.display_address, t.city, tp.side, tp.party_name
+        FROM transaction_parties tp
+        JOIN transactions t ON t.source_id = tp.source_id
+        WHERE tp.group_id = ?
+        ORDER BY t.sale_date DESC
+        LIMIT 10
+        """,
+        (anchor_group_id,)
+    ).fetchall()
+    member_transactions[anchor_group_id] = [dict(r) for r in anchor_txns]
+
     return {
         "anchor": dict(anchor_row),
         "members": [dict(r) for r in member_rows],
         "member_count": len(member_ids),
         "evidence": [dict(ev) for ev in evidence_rows],
         "signal_summary": signal_summary,
+        "member_transactions": member_transactions,
     }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
-import { MagnifyingGlass } from "@phosphor-icons/react";
+import { MagnifyingGlass, CaretUp, CaretDown } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate } from "../lib/utils";
 import type { DiscoveryBrowseResponse, DiscoveryClusterSummary } from "../types";
@@ -25,6 +25,33 @@ function confidencePct(confidence: number): string {
   return `${Math.round(confidence * 100)}%`;
 }
 
+type SortField = "member_count" | "portfolio_value" | "confidence" | "anchor_name";
+type SortOrder = "asc" | "desc";
+
+function SortHeader({ label, field, currentSort, currentOrder, onSort }: {
+  label: string;
+  field: SortField;
+  currentSort: SortField;
+  currentOrder: SortOrder;
+  onSort: (field: SortField) => void;
+}) {
+  const active = currentSort === field;
+  return (
+    <button
+      onClick={() => onSort(field)}
+      className="inline-flex items-center gap-0.5 text-[12px] font-medium bg-transparent border-none cursor-pointer p-0"
+      style={{ color: active ? "var(--gray-12)" : "var(--gray-9)" }}
+    >
+      {label}
+      {active && (
+        currentOrder === "desc"
+          ? <CaretDown size={12} weight="bold" />
+          : <CaretUp size={12} weight="bold" />
+      )}
+    </button>
+  );
+}
+
 // ── Main page ──────────────────────────────────────────────────
 
 export default function DiscoveryPage() {
@@ -34,19 +61,23 @@ export default function DiscoveryPage() {
   const [search, setSearch] = useState("");
   const [searchInput, setSearchInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [sort, setSort] = useState<SortField>("member_count");
+  const [order, setOrder] = useState<SortOrder>("desc");
 
   useEffect(() => {
     setLoading(true);
     const params: Record<string, string> = {
       page: String(page),
       per_page: "50",
+      sort,
+      order,
     };
     if (search) params.q = search;
 
     fetchApi<DiscoveryBrowseResponse>("/discovery", params)
       .then(setData)
       .finally(() => setLoading(false));
-  }, [page, search]);
+  }, [page, search, sort, order]);
 
   // Debounced search
   useEffect(() => {
@@ -56,6 +87,17 @@ export default function DiscoveryPage() {
     }, 300);
     return () => clearTimeout(t);
   }, [searchInput]);
+
+  const handleSort = (field: SortField) => {
+    if (sort === field) {
+      // Toggle order
+      setOrder(order === "desc" ? "asc" : "desc");
+    } else {
+      setSort(field);
+      setOrder("desc");
+    }
+    setPage(1);
+  };
 
   const run = data?.run ?? null;
 
@@ -110,17 +152,17 @@ export default function DiscoveryPage() {
         <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
           <thead>
             <tr style={{ background: "var(--gray-2)" }}>
-              <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Portfolio
+              <th className="text-left px-4 py-2 border-b border-[var(--gray-6)]">
+                <SortHeader label="Portfolio" field="anchor_name" currentSort={sort} currentOrder={order} onSort={handleSort} />
               </th>
-              <th className="text-right px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Members
+              <th className="text-right px-4 py-2 border-b border-[var(--gray-6)]">
+                <SortHeader label="Members" field="member_count" currentSort={sort} currentOrder={order} onSort={handleSort} />
               </th>
-              <th className="text-right px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Portfolio Value
+              <th className="text-right px-4 py-2 border-b border-[var(--gray-6)]">
+                <SortHeader label="Portfolio Value" field="portfolio_value" currentSort={sort} currentOrder={order} onSort={handleSort} />
               </th>
-              <th className="text-right px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Confidence
+              <th className="text-right px-4 py-2 border-b border-[var(--gray-6)]">
+                <SortHeader label="Confidence" field="confidence" currentSort={sort} currentOrder={order} onSort={handleSort} />
               </th>
               <th className="text-right px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
                 Signals
@@ -172,7 +214,7 @@ export default function DiscoveryPage() {
                         Run the discovery engine to detect portfolio clusters:
                         <br />
                         <code className="text-[12px] bg-[var(--gray-3)] px-1.5 py-0.5 rounded mt-1.5 inline-block">
-                          python -m engines.discovery.run --mode exact
+                          python -m cleo.discovery run --validate
                         </code>
                       </Text>
                     )}
