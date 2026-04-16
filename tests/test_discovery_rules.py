@@ -81,12 +81,54 @@ class TestEvaluatePair:
         assert rule_id == 'none'
         assert confidence == 0.0
 
-    def test_multi_category_fallback(self):
-        """Two categories that don't match a specific rule still get 'multi' with 0.85."""
+    def test_rule_4f_contact_plus_name_fragment(self):
+        """contact + name_fragment -> rule 4f, confidence 0.85."""
         cats = {'contact': {'DAN HAGLER'}, 'name_fragment': {'ACME'}}
+        rule_id, confidence = evaluate_pair(cats)
+        assert rule_id == '4f'
+        assert confidence == 0.85
+
+    def test_multi_category_fallback(self):
+        """Two categories that don't match any specific rule -> 'multi' with 0.85."""
+        cats = {'phone': {'4162655055'}, 'contact': {'DAN HAGLER'}}
         rule_id, confidence = evaluate_pair(cats)
         assert rule_id == 'multi'
         assert confidence == 0.85
+
+    def test_rule_4e_distinctive_contact_alone(self):
+        """Contact-only pair where the contact is distinctive -> rule 4e, confidence 0.90."""
+        from cleo.discovery.types import ContactTenure
+        tenures = {
+            'DAN HAGLER': [
+                ContactTenure('CON_001', 'Dan Hagler', 'GRP_A', '2020-01-01', '2022-12-31', 5,
+                              is_distinctive=True),
+            ]
+        }
+        cats = {'contact': {'DAN HAGLER'}}
+        rule_id, confidence = evaluate_pair(cats, contact_tenures=tenures)
+        assert rule_id == '4e'
+        assert confidence == 0.90
+
+    def test_rule_4e_not_fired_without_tenures(self):
+        """Contact-only pair with no tenures dict provided -> falls through to 4j."""
+        cats = {'contact': {'DAN HAGLER'}}
+        rule_id, confidence = evaluate_pair(cats, contact_tenures=None)
+        assert rule_id == '4j'
+        assert confidence == 0.00
+
+    def test_rule_4e_not_fired_when_contact_not_distinctive(self):
+        """Contact-only pair where contact is NOT distinctive -> falls through to 4j."""
+        from cleo.discovery.types import ContactTenure
+        tenures = {
+            'DAN HAGLER': [
+                ContactTenure('CON_001', 'Dan Hagler', 'GRP_A', '2020-01-01', '2022-12-31', 5,
+                              is_distinctive=False),
+            ]
+        }
+        cats = {'contact': {'DAN HAGLER'}}
+        rule_id, confidence = evaluate_pair(cats, contact_tenures=tenures)
+        assert rule_id == '4j'
+        assert confidence == 0.00
 
     def test_three_categories_matches_best_rule(self):
         """With 3 categories, the best-matching rule should fire first."""

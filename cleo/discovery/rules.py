@@ -131,13 +131,28 @@ def _get_pair_categories(gid_a, gid_b, group_signals, entity_neighbors):
     return categories
 
 
-def evaluate_pair(categories: dict) -> tuple:
+def evaluate_pair(categories: dict, contact_tenures: dict = None) -> tuple:
     """Evaluate a pair against the rule hierarchy.
+
+    Rules (in order):
+    4a: management_company + contact     -> 1.00
+    4b: contact + address                -> 0.99
+    4c: management_company + address     -> 0.95
+    4d: management_company + phone       -> 0.90
+    4e: distinctive contact alone        -> 0.90 (needs tenures)
+    4f: contact + name_fragment          -> 0.85
+    4g: phone + (address or name_fragment) -> 0.80
+    4i: address only                     -> 0.60 (suggest)
+    4j: single signal only               -> 0.00 (no action)
 
     Parameters
     ----------
     categories : dict
         {category_name: set of evidence values} as returned by _get_pair_categories.
+    contact_tenures : dict, optional
+        dict[fingerprint] -> list[ContactTenure] as built by
+        contacts.build_contact_tenures() + contacts.check_distinctiveness().
+        Required for rule 4e to fire.
 
     Returns
     -------
@@ -158,6 +173,18 @@ def evaluate_pair(categories: dict) -> tuple:
         return ('4c', 0.95)
     if 'management_company' in cats and 'phone' in cats:
         return ('4d', 0.90)
+
+    # Rule 4e: a distinctive contact alone is enough to auto-confirm
+    if 'contact' in cats and contact_tenures:
+        from .contacts import is_distinctive_contact
+        shared_contacts = categories.get('contact', set())
+        if any(is_distinctive_contact(fp, contact_tenures) for fp in shared_contacts):
+            return ('4e', 0.90)
+
+    # Rule 4f: contact + name_fragment (replaces the generic 'multi' fallback for this case)
+    if 'contact' in cats and 'name_fragment' in cats:
+        return ('4f', 0.85)
+
     if 'phone' in cats and ('address' in cats or 'name_fragment' in cats):
         return ('4g', 0.80)
 
@@ -169,7 +196,7 @@ def evaluate_pair(categories: dict) -> tuple:
     if len(cats) == 1:
         return ('4j', 0.00)
 
-    # Two+ categories but not matching any specific rule (e.g. contact + name_fragment)
+    # Two+ categories but not matching any specific rule
     if len(cats) >= 2:
         return ('multi', 0.85)
 
@@ -180,7 +207,7 @@ def evaluate_pair(categories: dict) -> tuple:
 # Cluster builder
 # ---------------------------------------------------------------------------
 
-def build_rule_based_clusters(signals, min_confidence=0.80):
+def build_rule_based_clusters(signals, min_confidence=0.80, contact_tenures=None):
     """Build clusters using pair-wise rule evaluation.
 
     Only connects pairs with 2+ independent signal types (confidence >= min_confidence).
@@ -193,6 +220,9 @@ def build_rule_based_clusters(signals, min_confidence=0.80):
         Flat list of signals as extracted by extract_signals().
     min_confidence : float
         Minimum confidence for a pair to become a confirmed edge. Default 0.80.
+    contact_tenures : dict, optional
+        dict[fingerprint] -> list[ContactTenure] for rule 4e (distinctive contact alone).
+        If provided, enables rule 4e to fire for pairs sharing a distinctive contact.
 
     Returns
     -------
@@ -244,7 +274,7 @@ def build_rule_based_clusters(signals, min_confidence=0.80):
         if not categories:
             continue
 
-        rule_id, confidence = evaluate_pair(categories)
+        rule_id, confidence = evaluate_pair(categories, contact_tenures=contact_tenures)
 
         if confidence >= min_confidence:
             confirmed_pairs.append((gid_a, gid_b, rule_id, confidence, categories))
