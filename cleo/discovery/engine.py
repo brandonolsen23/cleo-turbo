@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 from .types import RunConfig, RunResult
 from .signals import extract_signals
 from .clustering import build_exact_match_clusters
+from .rules import build_rule_based_clusters
 from .validation import load_ground_truth, validate_clusters
 
 
@@ -136,6 +137,35 @@ def _write_evidence(db, run_id: str, clusters: list, signals: list) -> int:
     return rows_written
 
 
+def _write_evidence_from_list(db, run_id: str, evidence_list: list) -> int:
+    """Write pre-computed evidence rows to discovery_evidence. Returns count written."""
+    rows_written = 0
+    for ev in evidence_list:
+        db.execute(
+            """
+            INSERT INTO discovery_evidence
+                (run_id, signal_type, signal_value,
+                 source_group_id, target_group_id,
+                 source_id, rule_id, confidence, iteration)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                run_id,
+                ev.signal_type,
+                ev.signal_value,
+                ev.source_group_id,
+                ev.target_group_id,
+                ev.source_id or None,
+                ev.rule_id,
+                ev.confidence,
+                ev.iteration,
+            ),
+        )
+        rows_written += 1
+    db.commit()
+    return rows_written
+
+
 def _log_run(db, run_id: str, started_at: str, result: RunResult, config: RunConfig, gt_results) -> None:
     """Insert a row into discovery_runs."""
     stats = {
@@ -206,10 +236,16 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
         print(f"[discovery]     {sig_type}: {counts_by_type[sig_type]}")
     print()
 
-    # ── Step 1: Build clusters ────────────────────────────────────────────────
-    print("[discovery] Step 1: Building exact-match clusters...")
-    clusters = build_exact_match_clusters(signals)
-    print(f"[discovery]   Clusters found: {len(clusters)}")
+    # ── Step 1: Build clusters (rule-based pair evaluation) ─────────────────
+    print("[discovery] Step 1: Building rule-based clusters (2+ signal types per pair)...")
+    clusters, suggestions, evidence_list = build_rule_based_clusters(signals)
+    print(f"[discovery]   Confirmed clusters: {len(clusters)}")
+    print(f"[discovery]   Suggestions (below threshold): {len(suggestions)}")
+    if suggestions:
+        from collections import Counter
+        rule_counts = Counter(rule_id for _, _, rule_id, _ in suggestions)
+        for rule_id, count in rule_counts.most_common():
+            print(f"[discovery]     suggestion rule {rule_id}: {count}")
     print()
 
     # ── Assign IDs and anchors ────────────────────────────────────────────────
@@ -248,9 +284,9 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
         print()
 
     # ── Write evidence ────────────────────────────────────────────────────────
-    if config.mode != "dry_run" and clusters:
+    if config.mode != "dry_run" and evidence_list:
         print("[discovery] Writing evidence to database...")
-        evidence_count = _write_evidence(db, run_id, clusters, signals)
+        evidence_count = _write_evidence_from_list(db, run_id, evidence_list)
         print(f"[discovery]   Evidence rows written: {evidence_count}")
         print()
 
@@ -261,7 +297,7 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
         mode=config.mode,
         clusters_found=len(clusters),
         merges_executed=0,          # execute mode not yet implemented
-        suggestions_created=0,      # suggestion mode not yet implemented
+        suggestions_created=len(suggestions),
         groups_processed=len(all_group_ids),
         iterations=1,
         ground_truth_results=gt_results,
