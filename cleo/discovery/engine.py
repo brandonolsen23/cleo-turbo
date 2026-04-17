@@ -603,6 +603,24 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
     # ── Step 9: Write evidence ────────────────────────────────────────────────
     if config.mode != "dry_run" and evidence_list:
         print("[discovery] Step 9: Writing evidence to database...")
+
+        # Remap all evidence target_group_ids to the cluster's anchor
+        # so the API can look up clusters by anchor_group_id consistently
+        group_to_anchor = {}
+        for cluster in clusters:
+            for gid in cluster.member_group_ids:
+                group_to_anchor[gid] = cluster.anchor_group_id
+
+        for ev in evidence_list:
+            # Remap both source and target to point source→anchor
+            anchor = group_to_anchor.get(ev.source_group_id) or group_to_anchor.get(ev.target_group_id)
+            if anchor:
+                # source = the non-anchor member, target = the anchor
+                if ev.source_group_id == anchor:
+                    ev.source_group_id, ev.target_group_id = ev.target_group_id, anchor
+                else:
+                    ev.target_group_id = anchor
+
         evidence_count = _write_evidence_from_list(db, run_id, evidence_list)
         print(f"[discovery]   Evidence rows written: {evidence_count}")
         print()
