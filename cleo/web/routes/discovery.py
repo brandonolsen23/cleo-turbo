@@ -74,7 +74,7 @@ def browse_clusters(
         run_info.pop("stats_json", None)
         run_info["stats"] = None
 
-    # Aggregate evidence into clusters with group details in a single query
+    # Aggregate evidence into clusters with group details and computed cluster names
     cluster_rows = db.execute(
         """
         SELECT
@@ -82,15 +82,13 @@ def browse_clusters(
             COUNT(DISTINCT e.source_group_id) + 1 as member_count,
             AVG(e.confidence) as avg_confidence,
             MAX(e.confidence) as max_confidence,
-            g.display_name as anchor_display_name,
-            g.normalized_name as anchor_normalized_name,
+            COALESCE(cn.cluster_name, g.display_name) as anchor_name,
             g.status as anchor_status,
-            g.transaction_count as anchor_transaction_count,
-            g.property_count as anchor_property_count,
             ga.total_assessed_value as portfolio_value
         FROM discovery_evidence e
         JOIN groups g ON g.id = e.target_group_id
         LEFT JOIN group_analytics ga ON ga.group_id = e.target_group_id
+        LEFT JOIN discovery_cluster_names cn ON cn.run_id = e.run_id AND cn.anchor_group_id = e.target_group_id
         WHERE e.run_id = ?
         GROUP BY e.target_group_id
         """,
@@ -110,11 +108,11 @@ def browse_clusters(
         confidence = cr["max_confidence"] or 0
         clusters.append({
             "anchor_group_id": cr["anchor_group_id"],
-            "anchor_name": cr["anchor_display_name"],
+            "anchor_name": cr["anchor_name"],
             "member_count": member_count,
             "portfolio_value": cr["portfolio_value"],
             "confidence": confidence,
-            "signal_count": member_count - 1,  # evidence links = members minus anchor
+            "signal_count": member_count - 1,
             "status": "auto_confirmed" if confidence >= 0.9 else "needs_review",
         })
 

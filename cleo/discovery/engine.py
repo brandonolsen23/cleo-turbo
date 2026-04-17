@@ -35,7 +35,14 @@ def _assign_cluster_ids(clusters: list) -> list:
 
 
 def _resolve_anchors(clusters: list, db) -> None:
-    """Set anchor_group_id and anchor_name to the member with the highest transaction_count."""
+    """Set anchor_group_id (highest txn count) and anchor_name (best common name).
+
+    Anchor name priority:
+      1. Most frequent trade_name / companies_json value across cluster transactions
+      2. Most frequent care_of value
+      3. Shared name prefix (first 2 words appearing in 50%+ of member names)
+      4. Anchor group's display_name (fallback)
+    """
     if not clusters:
         return
 
@@ -49,16 +56,55 @@ def _resolve_anchors(clusters: list, db) -> None:
 
     placeholders = ",".join("?" * len(all_member_ids))
     rows = db.execute(
-        f"SELECT id, display_name, transaction_count FROM groups WHERE id IN ({placeholders})",
+        f"SELECT id, display_name, normalized_name, transaction_count FROM groups WHERE id IN ({placeholders})",
         list(all_member_ids),
     ).fetchall()
 
     group_info = {row["id"]: row for row in rows}
 
+    # Bulk-load trade names and care-of values for all member groups
+    # Maps group_id -> list of management company names
+    import json as _json
+    trade_rows = db.execute(
+        f"""
+        SELECT tp.group_id, t.seller_trade_name, t.buyer_trade_name,
+               t.seller_care_of, t.buyer_care_of,
+               t.seller_companies_json, t.buyer_companies_json, tp.side
+        FROM transaction_parties tp
+        JOIN transactions t ON t.source_id = tp.source_id
+        WHERE tp.group_id IN ({placeholders})
+          AND tp.group_id IS NOT NULL
+        """,
+        list(all_member_ids),
+    ).fetchall()
+
+    # Build group_id -> list of (name, source) for ranking
+    group_mgmt_names: dict = defaultdict(list)
+    for row in trade_rows:
+        gid = row["group_id"]
+        side = row["side"]
+        # Trade name on this group's side
+        trade = row[f"{side}_trade_name"]
+        if trade and trade.strip():
+            group_mgmt_names[gid].append(trade.strip())
+        # Care-of on this group's side
+        care = row[f"{side}_care_of"]
+        if care and care.strip():
+            group_mgmt_names[gid].append(care.strip())
+        # Companies JSON on this group's side
+        companies_raw = row[f"{side}_companies_json"]
+        if companies_raw and companies_raw != "[]":
+            try:
+                for name in _json.loads(companies_raw):
+                    if name and isinstance(name, str) and name.strip():
+                        group_mgmt_names[gid].append(name.strip())
+            except (ValueError, TypeError):
+                pass
+
     for cluster in clusters:
+        # Pick anchor = highest transaction_count
         best_id = None
         best_count = -1
-        best_name = ""
         for gid in cluster.member_group_ids:
             info = group_info.get(gid)
             if info is None:
@@ -67,10 +113,47 @@ def _resolve_anchors(clusters: list, db) -> None:
             if tx_count > best_count:
                 best_count = tx_count
                 best_id = gid
-                best_name = info["display_name"] or gid
-        if best_id:
-            cluster.anchor_group_id = best_id
-            cluster.anchor_name = best_name
+        if not best_id:
+            continue
+        cluster.anchor_group_id = best_id
+
+        # Find best common name from management company references
+        name_counts: dict = defaultdict(int)
+        for gid in cluster.member_group_ids:
+            for name in group_mgmt_names.get(gid, []):
+                name_counts[name] += 1
+
+        if name_counts:
+            # Pick the most frequently referenced management company name
+            best_common = max(name_counts, key=lambda n: name_counts[n])
+            if name_counts[best_common] >= 2:
+                cluster.anchor_name = best_common
+                continue
+
+        # Fallback: shared name prefix across 50%+ of members
+        from cleo.compiler.reconciler import normalize_group_name
+        prefix_counts: dict = defaultdict(int)
+        for gid in cluster.member_group_ids:
+            info = group_info.get(gid)
+            if not info:
+                continue
+            norm = info["normalized_name"] or ""
+            words = norm.split()
+            if len(words) >= 2:
+                prefix = words[0] + " " + words[1]
+                prefix_counts[prefix] += 1
+
+        threshold = len(cluster.member_group_ids) * 0.5
+        if prefix_counts:
+            best_prefix = max(prefix_counts, key=lambda p: prefix_counts[p])
+            if prefix_counts[best_prefix] >= threshold and prefix_counts[best_prefix] >= 2:
+                # Title-case the prefix
+                cluster.anchor_name = best_prefix.title()
+                continue
+
+        # Final fallback: anchor group's display name
+        anchor_info = group_info.get(best_id)
+        cluster.anchor_name = anchor_info["display_name"] if anchor_info else best_id
 
 
 def _write_evidence(db, run_id: str, clusters: list, signals: list) -> int:
@@ -444,6 +527,15 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
     if clusters:
         clusters = _assign_cluster_ids(clusters)
         _resolve_anchors(clusters, db)
+
+        # Persist cluster names for the API
+        db.execute("DELETE FROM discovery_cluster_names WHERE run_id = ?", (run_id,))
+        for cluster in clusters:
+            db.execute(
+                "INSERT INTO discovery_cluster_names (run_id, anchor_group_id, cluster_name) VALUES (?, ?, ?)",
+                (run_id, cluster.anchor_group_id, cluster.anchor_name)
+            )
+        db.commit()
 
         total_members = sum(len(c.member_group_ids) for c in clusters)
         print(f"[discovery] Step 7: Cluster IDs assigned ({clusters[0].cluster_id} - {clusters[-1].cluster_id})")

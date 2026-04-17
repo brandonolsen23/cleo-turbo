@@ -716,6 +716,13 @@ CREATE TABLE IF NOT EXISTS discovery_ground_truth (
     created_at      TEXT DEFAULT (datetime('now')),
     updated_at      TEXT DEFAULT (datetime('now'))
 );
+
+CREATE TABLE IF NOT EXISTS discovery_cluster_names (
+    run_id          TEXT NOT NULL,
+    anchor_group_id TEXT NOT NULL,
+    cluster_name    TEXT NOT NULL,
+    PRIMARY KEY (run_id, anchor_group_id)
+);
 """
 
 
