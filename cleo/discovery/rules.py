@@ -355,7 +355,7 @@ def build_rule_based_clusters(signals, min_confidence=0.80, contact_tenures=None
 # Iterative expansion
 # ---------------------------------------------------------------------------
 
-def expand_clusters(clusters, signals, tenures=None, iteration=1):
+def expand_clusters(clusters, signals, tenures=None, iteration=1, evidence_list=None):
     """Expand clusters by checking unclustered groups against cluster signal sets.
 
     For each unclustered group, checks how many signal CATEGORIES it shares with
@@ -373,6 +373,8 @@ def expand_clusters(clusters, signals, tenures=None, iteration=1):
         Contact tenures for rule 4e.
     iteration : int
         Current iteration number (for evidence tracking).
+    evidence_list : list[Evidence], optional
+        If provided, expansion evidence is appended to this list.
 
     Returns
     -------
@@ -516,6 +518,21 @@ def expand_clusters(clusters, signals, tenures=None, iteration=1):
         if best_ci is not None and best_conf >= 0.80:
             cluster = clusters[best_ci]
             cluster.member_group_ids.add(gid)
+
+            # Generate evidence for this expansion
+            if evidence_list is not None:
+                for cat_name, values in best_categories.items():
+                    for val in values:
+                        evidence_list.append(Evidence(
+                            signal_type=cat_name,
+                            signal_value=val,
+                            source_group_id=gid,
+                            target_group_id=cluster.anchor_group_id or list(cluster.member_group_ids)[0],
+                            source_id='',
+                            rule_id=best_rule,
+                            confidence=best_conf,
+                            iteration=iteration,
+                        ))
 
             # Update group -> cluster index
             group_to_ci[gid] = best_ci

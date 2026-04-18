@@ -481,7 +481,7 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
     final_iteration = 0
 
     for iteration in range(1, config.max_iterations + 1):
-        new_members = expand_clusters(clusters, signals, tenures=tenures, iteration=iteration)
+        new_members = expand_clusters(clusters, signals, tenures=tenures, iteration=iteration, evidence_list=evidence_list)
         final_iteration = iteration
         total_expansion_added += new_members
         print(f"[discovery]   Iteration {iteration}: +{new_members} groups added")
@@ -604,24 +604,36 @@ def run_discovery(db, config: RunConfig = None) -> RunResult:
     if config.mode != "dry_run" and evidence_list:
         print("[discovery] Step 9: Writing evidence to database...")
 
-        # Remap all evidence target_group_ids to the cluster's anchor
-        # so the API can look up clusters by anchor_group_id consistently
+        # Remap evidence target_group_ids to cluster anchors.
+        # CRITICAL: only remap within the SAME cluster — never bridge across clusters.
         group_to_anchor = {}
         for cluster in clusters:
             for gid in cluster.member_group_ids:
                 group_to_anchor[gid] = cluster.anchor_group_id
 
+        remapped_evidence = []
         for ev in evidence_list:
-            # Remap both source and target to point source→anchor
-            anchor = group_to_anchor.get(ev.source_group_id) or group_to_anchor.get(ev.target_group_id)
-            if anchor:
-                # source = the non-anchor member, target = the anchor
-                if ev.source_group_id == anchor:
-                    ev.source_group_id, ev.target_group_id = ev.target_group_id, anchor
-                else:
-                    ev.target_group_id = anchor
+            src_anchor = group_to_anchor.get(ev.source_group_id)
+            tgt_anchor = group_to_anchor.get(ev.target_group_id)
 
-        evidence_count = _write_evidence_from_list(db, run_id, evidence_list)
+            if src_anchor and tgt_anchor and src_anchor == tgt_anchor:
+                # Both groups in the same cluster — remap to anchor
+                anchor = src_anchor
+                if ev.source_group_id == anchor:
+                    ev.source_group_id = ev.target_group_id
+                ev.target_group_id = anchor
+                remapped_evidence.append(ev)
+            elif src_anchor and not tgt_anchor:
+                # Target not in any cluster (orphan) — keep with source's anchor
+                ev.target_group_id = src_anchor
+                remapped_evidence.append(ev)
+            elif tgt_anchor and not src_anchor:
+                # Source not in any cluster — keep with target's anchor
+                ev.target_group_id = tgt_anchor
+                remapped_evidence.append(ev)
+            # Else: groups in different clusters — drop this evidence row
+
+        evidence_count = _write_evidence_from_list(db, run_id, remapped_evidence)
         print(f"[discovery]   Evidence rows written: {evidence_count}")
         print()
 
