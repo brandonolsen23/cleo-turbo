@@ -421,6 +421,26 @@ The distinction matters because:
 - An individual can be both: if "Bente & David Firestone" are the sellers with no company, they appear as the party name. There is no separate contact. They ARE the party.
 - Classification (is this party name a company or a person?) happens in the Classify stage, not the Extract stage. Extraction records what the source says without judgment.
 
+### Where the Branded Identifier Lives
+
+For any given transaction side (buyer or seller), the branded portfolio identifier — the thing that tells you *who actually owns the property* — can appear in any of **four** fields that RT's HTML surfaces. Never assume it lives in only one. All four must be captured, stored, and considered together when extracting ownership or clustering signals.
+
+| Field | Clean-data path | DB column | What it holds | Example |
+|---|---|---|---|---|
+| **Party name** | `buyer.parties[].name` / `seller.parties[].name` | `transaction_parties.party_name` | The legal entity on the registry. For branded portfolios this *is* the brand (e.g., "RioCan Holdings Inc"). For SPV portfolios it's the per-property shell (e.g., "West Ridge Orillia Inc"). | "RioCan Holdings Inc" |
+| **Trade name** | `buyer.trade_name` / `seller.trade_name` | `transactions.{buyer,seller}_trade_name` | A single management-company / brand name associated with the party. Common in SPV portfolios where the registered entity is a shell and the brand sits here. | "DH Management Inc" |
+| **Care of** | `buyer.care_of` / `seller.care_of` | `transactions.{buyer,seller}_care_of` | The "c/o" routing — where mail for this party actually goes. Often the management company's name. | "DH Property Management" |
+| **Companies** | `buyer.companies[]` / `seller.companies[]` | `transactions.{buyer,seller}_companies_json` | Additional management-company or brand names extracted from the contact block (e.g., a title line like "Pres, RioCan REIT"). Zero-to-many. | `["RioCan REIT"]` |
+
+Two concrete examples:
+
+- **RioCan** (branded): `party_name = "RioCan Holdings Inc"` — the brand is already on the registry. `trade_name`, `care_of`, `companies` often empty.
+- **DH Management** (SPV-style): `party_name = "West Ridge Orillia Inc"` (a shell), `trade_name = "DH Management Inc"` or `care_of = "DH Property Management"` — the brand lives in a different column per transaction.
+
+**Law firms live in a separate field** (`buyer.law_firms[]` / `transactions.{buyer,seller}_law_firms_json`) and are **not** branded-identifier data — they identify the lawyer representing the party on the deal, not the owner. Never mix them into ownership or management-company signals.
+
+Any signal extraction, ownership lookup, clustering algorithm, or UI surface that claims to identify "who owns this property" must read from **all four** of the branded fields per side. Reading only `party_name` misses every SPV-style portfolio; reading only `trade_name` misses every branded-entity portfolio.
+
 ---
 
 ## What You See at Each Level

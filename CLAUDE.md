@@ -8,6 +8,7 @@
 - Don't assume intent — if a request is ambiguous, ask.
 - Don't speculate about external systems (Realtrack behavior, GeoWarehouse quirks) as though it's established fact. If you don't know, say so.
 - When investigating an issue, state what you see factually before jumping to a diagnosis. Don't get tunnel vision on the first theory.
+- **Capture every field the source HTML exposes, even when the value is empty or NULL.** NULL in the schema means "the source said nothing here." A missing column means "we never looked." The difference is load-bearing: if a field isn't surfaced in clean-data and the DB, there is no way to tell whether the data is absent or silently dropped. When building or extending a parser, normalizer, or compiler: the default is surface every discoverable field, mark it NULL when empty, and never skip it. This applies to every source (RT, GW, OSM) and every stage. If you are about to drop a field because it's usually empty, stop — preserve it and document it instead.
 
 Cleo Turbo is a commercial real estate data platform for Ontario. It ingests property transaction data from Realtrack, parcel/ownership data from GeoWarehouse, and branded POI locations from OpenStreetMap, then compiles everything into a single SQLite database that powers a React frontend and FastAPI backend. The app is a prospecting tool for commercial realtors — the goal is to centralize property research, owner lookup, and deal tracking that currently requires bouncing between 8+ disconnected tools.
 
@@ -342,6 +343,7 @@ Things that are true about the data sources and domain. Read these before diagno
 - **RT records can be incomplete at scrape time.** Newly posted transactions sometimes have partial data ($0 price, empty parties) that gets filled in hours or days later. The audit scraper (90-day lookback) is designed to catch these.
 - **RT export data and detail page data overlap but aren't identical.** The export has fields the detail page doesn't (like postal code), and the detail page has fields the export doesn't (like mortgage/charge details). The assembler merges both.
 - **"Named Individual(s)" is a real seller/buyer name.** RT uses this when the actual person's name is suppressed. It's not a parsing error.
+- **The branded portfolio identifier can live in any of four fields per transaction side.** `party_name` (the registered entity — often the brand itself for branded portfolios like RioCan), `trade_name` (management company / brand, common on SPV portfolios like DH Management), `care_of` (the "c/o" routing, also often a management company), or `companies_json` (additional management-company names parsed from contact blocks). Never assume the brand is in just one of them. Any signal extraction, ownership lookup, or clustering logic that reads "who owns this property" must normalize across all four. Reading only `transaction_parties.party_name` silently misses every SPV-style portfolio. Law firms live in a separate field (`law_firms_json`) and are NOT branded-identifier data. See `docs/definitions.md` → "Where the Branded Identifier Lives" for the full field map.
 
 ### GeoWarehouse (GW)
 
