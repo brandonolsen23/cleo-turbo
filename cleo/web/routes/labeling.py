@@ -167,3 +167,160 @@ def fetch_party(source_id: str, side: str,
     if not view:
         raise HTTPException(404, f"Party not found: {source_id}/{side}")
     return view
+
+
+# ── Seeds ─────────────────────────────────────────────────────
+
+@router.get("/sessions/{session_id}/seeds")
+def list_seeds(
+    session_id: str,
+    state: Optional[str] = Query(None),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    sid = ops.parse_session_id(session_id)
+    if state:
+        rows = db.execute(
+            "SELECT * FROM labeling_seeds WHERE session_id = ? AND state = ? "
+            "ORDER BY field_type, term",
+            (sid, state),
+        ).fetchall()
+    else:
+        rows = db.execute(
+            "SELECT * FROM labeling_seeds WHERE session_id = ? "
+            "ORDER BY state, field_type, term",
+            (sid,),
+        ).fetchall()
+    return {"seeds": [dict(r) for r in rows]}
+
+
+@router.post("/sessions/{session_id}/seeds")
+def add_seed(
+    session_id: str, req: AddSeedRequest,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    sid = ops.parse_session_id(session_id)
+    sess = _session_row(db, sid)
+    ops._insert_seeds(
+        db, sid,
+        [{"term": req.term.strip(), "field_type": req.field_type}],
+        contributor_source_id=sess["anchor_source_id"],
+        contributor_side=sess["anchor_side"],
+    )
+    db.commit()
+    return {"added": True}
+
+
+@router.patch("/sessions/{session_id}/seeds/{seed_id}")
+def patch_seed(
+    session_id: str, seed_id: int, req: PatchSeedRequest,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    ops.set_seed_state(db, seed_id, req.state)
+    return {"updated": True}
+
+
+@router.post("/sessions/{session_id}/seeds/{seed_id}/search")
+def run_seed_search(
+    session_id: str, seed_id: int,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    sid = ops.parse_session_id(session_id)
+    seed = db.execute(
+        "SELECT * FROM labeling_seeds WHERE id = ? AND session_id = ?",
+        (seed_id, sid),
+    ).fetchone()
+    if not seed:
+        raise HTTPException(404, "Seed not found")
+    ops.set_seed_state(db, seed_id, "in_progress")
+    hits = ops.search_candidates(
+        db, sid, term=seed["term"], field_type=seed["field_type"]
+    )
+    return {
+        "seed": dict(seed),
+        "left_party": {"source_id": seed["first_contributed_by_source_id"],
+                       "side": seed["first_contributed_by_side"]},
+        "candidates": hits,
+    }
+
+
+# ── Generic search ────────────────────────────────────────────
+
+@router.post("/search")
+def generic_search(
+    req: SearchRequest,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    hits = ops.search_candidates(db, req.session_id, term=req.term, field_type=req.field_type)
+    return {"candidates": hits}
+
+
+# ── Verdicts ──────────────────────────────────────────────────
+
+@router.post("/sessions/{session_id}/verdicts")
+def create_verdict(
+    session_id: str, req: VerdictRequest,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    sid = ops.parse_session_id(session_id)
+    try:
+        verdict_id = ops.record_verdict(
+            db, session_id=sid,
+            source_id=req.source_id, side=req.side,
+            verdict=req.verdict,
+            left_source_id=req.left_source_id, left_side=req.left_side,
+            seed_id=req.seed_id, rationale=req.rationale,
+            links=[l.model_dump() for l in req.links],
+            created_by=user["username"],
+        )
+    except ops.VerdictValidationError as e:
+        raise HTTPException(400, str(e))
+    return {"verdict_id": verdict_id}
+
+
+@router.get("/sessions/{session_id}/verdicts")
+def list_verdicts(
+    session_id: str,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    sid = ops.parse_session_id(session_id)
+    rows = db.execute(
+        "SELECT * FROM labeling_verdicts WHERE session_id = ? ORDER BY created_at DESC",
+        (sid,),
+    ).fetchall()
+    return {"verdicts": [dict(r) for r in rows]}
+
+
+@router.get("/sessions/{session_id}/verdicts/{verdict_id}")
+def get_verdict(
+    session_id: str, verdict_id: int,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    v = db.execute("SELECT * FROM labeling_verdicts WHERE id = ?", (verdict_id,)).fetchone()
+    if not v:
+        raise HTTPException(404, "Verdict not found")
+    links = db.execute(
+        "SELECT * FROM labeling_links WHERE verdict_id = ?", (verdict_id,)
+    ).fetchall()
+    result = dict(v)
+    result["links"] = [dict(l) for l in links]
+    return result
+
+
+@router.delete("/sessions/{session_id}/verdicts/{verdict_id}")
+def remove_verdict(
+    session_id: str, verdict_id: int,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    ops.delete_verdict(db, verdict_id)
+    return {"deleted": True}
+
+
+# ── Reviewed index ────────────────────────────────────────────
+
+@router.post("/sessions/{session_id}/reviewed")
+def mark_reviewed_endpoint(
+    session_id: str, req: ReviewedRequest,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    ops.mark_reviewed(db, ops.parse_session_id(session_id), req.source_id, req.side)
+    return {"marked": True}
