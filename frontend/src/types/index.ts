@@ -1431,3 +1431,109 @@ export interface DiscoveryClusterDetail {
   signal_summary: Record<string, string[]>;
   member_transactions: Record<string, DiscoveryMemberTransaction[]>;
 }
+
+// ── Labeling ─────────────────────────────────────────────────
+
+export type FieldType =
+  | "party_name" | "trade_name" | "care_of" | "company_other"
+  | "law_firm" | "contact_name" | "address" | "phone";
+
+export type LinkKind = "exact" | "implied";
+
+export interface LabelingSession {
+  id: number;
+  display_id: string; // e.g. "LBL_00001"
+  name: string;
+  audit_slug: string | null;
+  anchor_source_id: string;
+  anchor_side: "buyer" | "seller";
+  status: "active" | "paused" | "done";
+  created_by: string;
+  created_at: string;
+  updated_at: string;
+  completed_at: string | null;
+  confirmed_count: number;
+  rejected_count: number;
+  seeds_by_state: Record<string, number>;
+}
+
+export interface LabelingSeed {
+  id: number;
+  session_id: number;
+  term: string;
+  field_type: FieldType;
+  state: "pending" | "in_progress" | "done" | "skipped";
+  first_contributed_by_source_id: string;
+  first_contributed_by_side: "buyer" | "seller";
+  completed_at: string | null;
+  created_at: string;
+}
+
+export interface LabelingCandidate {
+  source_id: string;
+  side: "buyer" | "seller";
+  match_fields: string[];
+}
+
+export interface LabelingLinkInput {
+  from_field_type: FieldType;
+  from_field_value: string;
+  to_field_type: FieldType;
+  to_field_value: string;
+  kind: LinkKind;
+}
+
+export interface LabelingLink extends LabelingLinkInput {
+  id: number;
+  verdict_id: number;
+  created_at: string;
+}
+
+export interface LabelingVerdict {
+  id: number;
+  session_id: number;
+  source_id: string;
+  side: "buyer" | "seller";
+  verdict: "confirmed" | "rejected";
+  left_source_id: string;
+  left_side: "buyer" | "seller";
+  seed_id: number | null;
+  rationale: string | null;
+  created_by: string;
+  created_at: string;
+  links?: LabelingLink[];
+}
+
+export interface LabelingPartyView {
+  source_id: string;
+  side: "buyer" | "seller";
+  party_rows: { id: number; party_name: string | null; phone: string | null; contact_id: string | null }[];
+  trade_name: string | null;
+  care_of: string | null;
+  companies_other: string[];
+  law_firms: string[];
+  contacts: { id: string; name: string; role: string | null; phone: string | null; job_title: string | null }[];
+  mailing: { display: string; street: string; city: string; province: string; postal: string } | null;
+  phones: string[];
+}
+
+export interface LabelingAuditSummary {
+  slug: string;
+  title: string;
+  date_folder: string;
+  row_count: number;
+  distinct_groups: number;
+  distinct_parties: number;
+  sessions: { id: number; name: string; status: string; created_at: string }[];
+}
+
+export interface LabelingAuditParty {
+  source_id: string;
+  side: "buyer" | "seller";
+  group_id: string;
+  party_name: string;
+  trade_name: string;
+  care_of: string;
+  mailing: string;
+  phone: string;
+}

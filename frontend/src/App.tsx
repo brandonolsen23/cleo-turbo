@@ -48,6 +48,9 @@ const PipelineStagePage = lazy(() => import("./pages/PipelineStagePage"));
 const PipelineRecordPage = lazy(() => import("./pages/PipelineRecordPage"));
 const PipelineTracePage = lazy(() => import("./pages/PipelineTracePage"));
 const DataQualityPage = lazy(() => import("./pages/DataQualityPage"));
+const LabelingPage = lazy(() => import("./pages/LabelingPage"));
+const LabelingAuditPage = lazy(() => import("./pages/LabelingAuditPage"));
+const LabelingSessionPage = lazy(() => import("./pages/LabelingSessionPage"));
 
 // ============================================================
 // Auth Provider
@@ -123,6 +126,9 @@ export default function App() {
                 <Route path="/data-quality" element={<DataQualityPage />} />
                 <Route path="/discovery" element={<DiscoveryPage />} />
                 <Route path="/discovery/:clusterId" element={<DiscoveryClusterPage />} />
+                <Route path="/labeling" element={<LabelingPage />} />
+                <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
+                <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />
                   <Route path="/settings" element={<SettingsPage />} />
                   <Route path="/admin" element={<AdminPage />} />
                 </Route>
