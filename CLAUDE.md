@@ -71,7 +71,9 @@ pois, gw_assessments, gw_sales_history
 deals, lists, list_members, group_contacts, contact_notes, group_notes,
 sell_opportunities, buy_mandates, activities, property_enrichment,
 brand_overrides, user_brand_favorites, group_overrides, group_field_overrides,
-contact_field_overrides, contact_work_history, group_merges
+contact_field_overrides, contact_work_history, group_merges,
+labeling_sessions, labeling_verdicts, labeling_links, labeling_seeds,
+labeling_reviewed_index
 
 **System tables:**
 users, audit_log, app_meta, data_issues, asset_classes, tenant_categories
