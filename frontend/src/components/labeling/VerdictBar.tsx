@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Button, TextField, Badge } from "@radix-ui/themes";
-import { CheckCircle, XCircle, SkipForward, Trash } from "@phosphor-icons/react";
-import type { LabelingLinkInput, LinkKind, FieldType } from "../../types";
+import { CheckCircle, XCircle, SkipForward, Trash, Sparkle } from "@phosphor-icons/react";
+import type { LinkKind, FieldType } from "../../types";
+import type { PendingLink } from "./proposals";
 
 interface Props {
   linkKind: LinkKind;
@@ -9,8 +10,8 @@ interface Props {
   rationale: string;
   setRationale: (s: string) => void;
   disabled: boolean;
-  pendingLinks: LabelingLinkInput[];
-  setPendingLinks: (l: LabelingLinkInput[]) => void;
+  pendingLinks: PendingLink[];
+  setPendingLinks: (l: PendingLink[]) => void;
   onConfirm: () => void;
   onReject: () => void;
   onSkip: () => void;
@@ -56,6 +57,11 @@ export default function VerdictBar({
     function handleKey(e: KeyboardEvent) {
       const tag = (e.target as HTMLElement).tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return; // don't intercept while typing
+      // Shift+A clears auto-proposed links (keeps anything manually drawn)
+      if (e.shiftKey && e.key.toLowerCase() === "a") {
+        setPendingLinks(pendingLinks.filter((l) => !l.auto));
+        return;
+      }
       if (e.key.toLowerCase() === "e") setLinkKind("exact");
       else if (e.key.toLowerCase() === "i") setLinkKind("implied");
       else if (!disabled && e.key.toLowerCase() === "c") onConfirm();
@@ -99,13 +105,22 @@ export default function VerdictBar({
         </Button>
       </div>
       {pendingLinks.length > 0 && (
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1 items-center">
+          {pendingLinks.some((l) => l.auto) && (
+            <span className="text-[11px] flex items-center gap-1"
+                  style={{ color: "var(--gray-9)" }}>
+              <Sparkle size={10} /> auto — review &amp; remove any wrong ones · Shift+A to clear
+            </span>
+          )}
           {pendingLinks.map((l, i) => (
-            <Badge key={i} size="1" variant="soft"
+            <Badge key={i} size="1"
+                   variant={l.auto ? "outline" : "soft"}
                    color={l.kind === "exact" ? "jade" : "blue"}>
+              {l.auto && <Sparkle size={10} weight={l.auto === "learned" ? "fill" : "regular"} />}
               {l.from_field_type}:{l.from_field_value}
               {" → "}
               {l.to_field_type}:{l.to_field_value}
+              {l.auto && <span style={{ marginLeft: 4, opacity: 0.7 }}>· {l.auto}</span>}
               <button className="ml-1 opacity-70 hover:opacity-100"
                       onClick={() => setPendingLinks(pendingLinks.filter((_, j) => j !== i))}>
                 <Trash size={10} />

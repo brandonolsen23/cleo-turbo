@@ -277,6 +277,25 @@ def create_verdict(
     return {"verdict_id": verdict_id}
 
 
+@router.get("/sessions/{session_id}/links")
+def list_session_links(
+    session_id: str,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """All links across confirmed verdicts in the session — used for
+    session-scoped learning on the frontend (prior links propose themselves
+    on future candidates)."""
+    sid = ops.parse_session_id(session_id)
+    rows = db.execute(
+        "SELECT l.* FROM labeling_links l "
+        "JOIN labeling_verdicts v ON l.verdict_id = v.id "
+        "WHERE v.session_id = ? AND v.verdict = 'confirmed' "
+        "ORDER BY l.created_at",
+        (sid,),
+    ).fetchall()
+    return {"links": [dict(r) for r in rows]}
+
+
 @router.get("/sessions/{session_id}/verdicts")
 def list_verdicts(
     session_id: str,

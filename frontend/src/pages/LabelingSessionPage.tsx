@@ -1,11 +1,11 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
 import { CaretLeft, DownloadSimple } from "@phosphor-icons/react";
 import { fetchApi, postApi } from "../api/client";
 import type {
   LabelingSession, LabelingSeed, LabelingCandidate, LabelingPartyView,
-  LabelingVerdict, LabelingLinkInput, LinkKind,
+  LabelingVerdict, LabelingLink, LinkKind,
 } from "../types";
 
 import SeedQueuePanel from "../components/labeling/SeedQueuePanel";
@@ -13,6 +13,10 @@ import PartyCard from "../components/labeling/PartyCard";
 import CandidateListPanel from "../components/labeling/CandidateListPanel";
 import LinkCanvas from "../components/labeling/LinkCanvas";
 import VerdictBar from "../components/labeling/VerdictBar";
+import {
+  type PendingLink, proposeExactLinks, proposeLearnedLinks,
+  computeLearnedPairs, stripAuto,
+} from "../components/labeling/proposals";
 
 export default function LabelingSessionPage() {
   const { id } = useParams();
@@ -20,13 +24,16 @@ export default function LabelingSessionPage() {
   const [session, setSession] = useState<LabelingSession | null>(null);
   const [seeds, setSeeds] = useState<LabelingSeed[]>([]);
   const [verdicts, setVerdicts] = useState<LabelingVerdict[]>([]);
+  const [sessionLinks, setSessionLinks] = useState<LabelingLink[]>([]);
   const [currentSeed, setCurrentSeed] = useState<LabelingSeed | null>(null);
   const [candidates, setCandidates] = useState<LabelingCandidate[]>([]);
   const [leftParty, setLeftParty] = useState<LabelingPartyView | null>(null);
   const [rightParty, setRightParty] = useState<LabelingPartyView | null>(null);
-  const [pendingLinks, setPendingLinks] = useState<LabelingLinkInput[]>([]);
+  const [pendingLinks, setPendingLinks] = useState<PendingLink[]>([]);
   const [linkKind, setLinkKind] = useState<LinkKind>("exact");
   const [rationale, setRationale] = useState("");
+
+  const learnedPairs = useMemo(() => computeLearnedPairs(sessionLinks), [sessionLinks]);
 
   const reloadSession = useCallback(async () => {
     const s = await fetchApi<LabelingSession>(`/labeling/sessions/${id}`);
@@ -35,6 +42,8 @@ export default function LabelingSessionPage() {
     setSeeds(ss);
     const { verdicts: vs } = await fetchApi<{ verdicts: LabelingVerdict[] }>(`/labeling/sessions/${id}/verdicts`);
     setVerdicts(vs);
+    const { links: ls } = await fetchApi<{ links: LabelingLink[] }>(`/labeling/sessions/${id}/links`);
+    setSessionLinks(ls);
   }, [id]);
 
   useEffect(() => { reloadSession(); }, [reloadSession]);
@@ -60,8 +69,16 @@ export default function LabelingSessionPage() {
   async function loadCandidate(c: LabelingCandidate) {
     const view = await fetchApi<LabelingPartyView>(`/labeling/party/${c.source_id}/${c.side}`);
     setRightParty(view);
-    setPendingLinks([]);
     setRationale("");
+    // Auto-propose: exact cross-field matches + previously-learned pairs.
+    // User still reviews each before confirming.
+    if (leftParty) {
+      const exact = proposeExactLinks(leftParty, view);
+      const learned = proposeLearnedLinks(leftParty, view, learnedPairs, exact);
+      setPendingLinks([...exact, ...learned]);
+    } else {
+      setPendingLinks([]);
+    }
     await postApi(`/labeling/sessions/${id}/reviewed`, { source_id: c.source_id, side: c.side });
   }
 
@@ -80,7 +97,7 @@ export default function LabelingSessionPage() {
         left_side: leftParty.side,
         seed_id: currentSeed?.id ?? null,
         rationale: rationale || null,
-        links: verdict === "confirmed" ? pendingLinks : [],
+        links: verdict === "confirmed" ? stripAuto(pendingLinks) : [],
       });
     }
     // Advance to next unreviewed candidate
