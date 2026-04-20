@@ -1,0 +1,1 @@
+"""Party link labeling module."""
