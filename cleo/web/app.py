@@ -32,6 +32,7 @@ from .routes.sell_opportunities import router as sell_opportunities_router
 from .routes.buy_mandates import router as buy_mandates_router
 from .routes.activities import router as activities_router
 from .routes.discovery import router as discovery_router
+from .routes.labeling import router as labeling_router
 
 
 def create_app():
@@ -84,6 +85,7 @@ def create_app():
     app.include_router(buy_mandates_router, prefix="/api/buy-mandates", tags=["buy-mandates"])
     app.include_router(activities_router, prefix="/api/activities", tags=["activities"])
     app.include_router(discovery_router, prefix="/api/discovery", tags=["discovery"])
+    app.include_router(labeling_router, prefix="/api/labeling", tags=["labeling"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')
