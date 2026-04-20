@@ -324,3 +324,144 @@ def mark_reviewed_endpoint(
 ):
     ops.mark_reviewed(db, ops.parse_session_id(session_id), req.source_id, req.side)
     return {"marked": True}
+
+
+# ── Audit integration ─────────────────────────────────────────
+
+@router.get("/audits")
+def audits(db=Depends(get_db), user=Depends(get_current_user)):
+    audits = list_audits(DOCS_ROOT)
+    result = []
+    for a in audits:
+        sessions = db.execute(
+            "SELECT id, name, status, created_at FROM labeling_sessions "
+            "WHERE audit_slug = ? ORDER BY created_at DESC",
+            (a.slug,),
+        ).fetchall()
+        result.append({
+            "slug": a.slug,
+            "title": a.title,
+            "date_folder": a.date_folder,
+            "row_count": len(a.parties),
+            "distinct_groups": len({p["group_id"] for p in a.parties if p["group_id"]}),
+            "distinct_parties": len({(p["source_id"], p["side"]) for p in a.parties}),
+            "sessions": [dict(s) for s in sessions],
+        })
+    return {"audits": result}
+
+
+@router.get("/audits/{slug}/parties")
+def audit_parties(slug: str, db=Depends(get_db), user=Depends(get_current_user)):
+    a = load_audit_by_slug(DOCS_ROOT, slug)
+    if not a:
+        raise HTTPException(404, f"Audit {slug} not found")
+    # Collapse to distinct (source_id, side); keep first-seen row's fields as preview
+    seen = {}
+    for row in a.parties:
+        key = (row["source_id"], row["side"])
+        if key not in seen:
+            seen[key] = row
+    return {
+        "slug": a.slug,
+        "title": a.title,
+        "parties": list(seen.values()),
+    }
+
+
+# ── Export ────────────────────────────────────────────────────
+
+def _build_export(db, session_id: int) -> dict:
+    sess = dict(db.execute("SELECT * FROM labeling_sessions WHERE id = ?",
+                            (session_id,)).fetchone())
+    verdicts = db.execute(
+        "SELECT * FROM labeling_verdicts WHERE session_id = ? ORDER BY created_at",
+        (session_id,),
+    ).fetchall()
+
+    pairs = []
+    stats = {"confirmed_count": 0, "rejected_count": 0,
+             "seeds_processed": 0, "seeds_skipped": 0}
+    for v in verdicts:
+        v = dict(v)
+        if v["verdict"] == "confirmed":
+            stats["confirmed_count"] += 1
+        else:
+            stats["rejected_count"] += 1
+        links = [dict(l) for l in db.execute(
+            "SELECT from_field_type, from_field_value, "
+            "to_field_type, to_field_value, kind "
+            "FROM labeling_links WHERE verdict_id = ?",
+            (v["id"],),
+        )]
+        left = get_party_view(db, v["left_source_id"], v["left_side"])
+        right = get_party_view(db, v["source_id"], v["side"])
+        seed_info = None
+        if v["seed_id"]:
+            s = db.execute("SELECT term, field_type FROM labeling_seeds WHERE id = ?",
+                            (v["seed_id"],)).fetchone()
+            if s:
+                seed_info = {"term": s["term"], "field_type": s["field_type"]}
+        pairs.append({
+            "verdict": v["verdict"],
+            "rationale": v["rationale"],
+            "left":  {"source_id": v["left_source_id"], "side": v["left_side"],
+                      "fields": _export_fields(left)},
+            "right": {"source_id": v["source_id"], "side": v["side"],
+                      "fields": _export_fields(right)},
+            "links": links,
+            "seed": seed_info,
+            "created_at": v["created_at"],
+        })
+
+    for state in ("done", "skipped"):
+        c = db.execute(
+            "SELECT COUNT(*) FROM labeling_seeds WHERE session_id = ? AND state = ?",
+            (session_id, state),
+        ).fetchone()[0]
+        stats[f"seeds_{'processed' if state == 'done' else 'skipped'}"] = c
+
+    return {
+        "session": {
+            "id": ops.format_session_id(sess["id"]),
+            "name": sess["name"],
+            "audit_slug": sess["audit_slug"],
+            "anchor": {"source_id": sess["anchor_source_id"],
+                       "side": sess["anchor_side"]},
+            "created_at": sess["created_at"],
+            "completed_at": sess["completed_at"],
+        },
+        "pairs": pairs,
+        "stats": stats,
+    }
+
+
+def _export_fields(view: Optional[dict]) -> dict:
+    """Flat field dictionary for the export format."""
+    if not view:
+        return {}
+    return {
+        "party_name": [r.get("party_name") for r in (view["party_rows"] or []) if r.get("party_name")],
+        "trade_name": view.get("trade_name"),
+        "care_of": view.get("care_of"),
+        "company_other": view.get("companies_other") or [],
+        "law_firm": view.get("law_firms") or [],
+        "contact_name": [c.get("name") for c in (view["contacts"] or []) if c.get("name")],
+        "address": (view.get("mailing") or {}).get("display"),
+        "phone": view.get("phones") or [],
+    }
+
+
+@router.get("/sessions/{session_id}/export")
+def export_session(
+    session_id: str,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    return _build_export(db, ops.parse_session_id(session_id))
+
+
+@router.get("/export/all")
+def export_all(db=Depends(get_db), user=Depends(get_current_user)):
+    ids = [r["id"] for r in db.execute(
+        "SELECT id FROM labeling_sessions WHERE status = 'done'"
+    )]
+    return {"sessions": [_build_export(db, sid) for sid in ids]}
