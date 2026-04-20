@@ -10,8 +10,9 @@ interface Props {
 
 interface Row {
   field_type: FieldType;
-  value: string;
+  value: string;        // canonical — used for link/seed/search
   role?: string | null;
+  extra?: string | null; // secondary line (display-only, not stored anywhere)
 }
 
 function buildRows(view: LabelingPartyView): Row[] {
@@ -25,7 +26,20 @@ function buildRows(view: LabelingPartyView): Row[] {
   for (const v of view.law_firms)       rows.push({ field_type: "law_firm", value: v });
   for (const c of view.contacts) if (c.name)
     rows.push({ field_type: "contact_name", value: c.name, role: c.role });
-  if (view.mailing?.display) rows.push({ field_type: "address", value: view.mailing.display });
+  if (view.mailing?.display) {
+    // Show city/province/postal as a secondary line so users can compare location,
+    // but keep `value` = mailing.display so it matches what the search/seed logic
+    // indexes (the display column).
+    const provPostal = view.mailing.province && view.mailing.postal
+      ? `${view.mailing.province} ${view.mailing.postal}`
+      : view.mailing.province || view.mailing.postal || "";
+    const locParts = [view.mailing.city, provPostal].filter(Boolean);
+    rows.push({
+      field_type: "address",
+      value: view.mailing.display,
+      extra: locParts.length ? locParts.join(", ") : null,
+    });
+  }
   for (const ph of view.phones) rows.push({ field_type: "phone", value: ph });
   return rows;
 }
@@ -66,7 +80,12 @@ export default function PartyCard({ view, side, sharedHighlights }: Props) {
                 {FIELD_LABEL[r.field_type]}
                 {r.role ? <> · <i>{r.role}</i></> : null}
               </Text>
-              <Text size="2" className="flex-1">{r.value}</Text>
+              <div className="flex-1 flex flex-col">
+                <Text size="2">{r.value}</Text>
+                {r.extra && (
+                  <Text size="1" style={{ color: "var(--gray-9)" }}>{r.extra}</Text>
+                )}
+              </div>
               <button
                 data-link-anchor="1"
                 data-field-type={r.field_type}
