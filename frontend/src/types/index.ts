@@ -1513,7 +1513,7 @@ export interface LabelingPartyView {
   companies_other: string[];
   law_firms: string[];
   contacts: { id: string; name: string; role: string | null; phone: string | null; job_title: string | null }[];
-  mailing: { display: string; street: string; city: string; province: string; postal: string } | null;
+  mailing: { display: string; city: string; province: string; postal: string } | null;
   phones: string[];
 }
 

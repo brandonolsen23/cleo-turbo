@@ -60,7 +60,7 @@ def get_party_view(db, source_id: str, side: str) -> Optional[dict]:
     ]
 
     mailing_row = db.execute(
-        "SELECT display, street, city, province, postal "
+        "SELECT display, city, province, postal "
         "FROM transaction_mailing_addresses "
         "WHERE source_id = ? AND side = ? LIMIT 1",
         (source_id, side)

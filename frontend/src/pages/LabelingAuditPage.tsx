@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { Heading, Text, Badge, Button, TextField } from "@radix-ui/themes";
-import { CaretLeft } from "@phosphor-icons/react";
+import { Heading, Text, Badge, Button, TextField, Callout } from "@radix-ui/themes";
+import { CaretLeft, Warning } from "@phosphor-icons/react";
 import { fetchApi, postApi } from "../api/client";
 import type { LabelingAuditParty, LabelingSession } from "../types";
 
@@ -17,6 +17,7 @@ export default function LabelingAuditPage() {
   const [data, setData] = useState<AuditPartiesResponse | null>(null);
   const [name, setName] = useState("");
   const [creating, setCreating] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetchApi<AuditPartiesResponse>(`/labeling/audits/${slug}/parties`)
@@ -25,6 +26,7 @@ export default function LabelingAuditPage() {
 
   async function startSession(p: LabelingAuditParty) {
     setCreating(true);
+    setError(null);
     try {
       const s = await postApi<LabelingSession>("/labeling/sessions", {
         anchor_source_id: p.source_id,
@@ -33,6 +35,8 @@ export default function LabelingAuditPage() {
         audit_slug: slug,
       });
       navigate(`/labeling/sessions/${s.id}`);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
     } finally {
       setCreating(false);
     }
@@ -52,6 +56,13 @@ export default function LabelingAuditPage() {
         <Text size="2" style={{ color: "var(--gray-11)" }}>Session name:</Text>
         <TextField.Root size="2" value={name} onChange={(e) => setName(e.target.value)} />
       </div>
+
+      {error && (
+        <Callout.Root color="tomato" size="1">
+          <Callout.Icon><Warning size={14} /></Callout.Icon>
+          <Callout.Text>Failed to start session: {error}</Callout.Text>
+        </Callout.Root>
+      )}
 
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden">
         <table className="w-full">
@@ -80,7 +91,7 @@ export default function LabelingAuditPage() {
                 <td className="px-3 py-2 text-[13px]" style={{ color: "var(--gray-11)" }}>
                   {p.phone || "—"}
                 </td>
-                <td className="px-3 py-2">
+                <td className="px-3 py-2 whitespace-nowrap">
                   <Button size="1" variant="soft" disabled={creating}
                           onClick={() => startSession(p)}>
                     Start as anchor

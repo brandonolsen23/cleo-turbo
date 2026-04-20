@@ -22,9 +22,11 @@ def _make_db():
             source_id TEXT, side TEXT,
             party_name TEXT, phone TEXT, contact_id TEXT
         );
+        -- Mirrors the production schema (no 'street' column — it's decomposed
+        -- into street_number/street_name/etc., none of which party_view uses).
         CREATE TABLE transaction_mailing_addresses (
             source_id TEXT, side TEXT,
-            display TEXT, street TEXT, city TEXT, province TEXT, postal TEXT
+            display TEXT, city TEXT, province TEXT, postal TEXT
         );
         CREATE TABLE contacts (
             id TEXT PRIMARY KEY,
@@ -58,10 +60,10 @@ def test_party_view_aggregates_all_fields():
     )
     conn.execute(
         "INSERT INTO transaction_mailing_addresses "
-        "(source_id, side, display, street, city, province, postal) "
-        "VALUES (?, ?, ?, ?, ?, ?, ?)",
+        "(source_id, side, display, city, province, postal) "
+        "VALUES (?, ?, ?, ?, ?, ?)",
         ("RT148276", "buyer", "180 Shorting Rd, Toronto M1S 3S7",
-         "180 Shorting Rd", "Toronto", "Ontario", "M1S 3S7")
+         "Toronto", "Ontario", "M1S 3S7")
     )
 
     view = get_party_view(conn, "RT148276", "buyer")

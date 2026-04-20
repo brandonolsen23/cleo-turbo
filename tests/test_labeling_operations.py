@@ -23,7 +23,7 @@ def _make_db():
         );
         CREATE TABLE transaction_mailing_addresses (
             source_id TEXT, side TEXT,
-            display TEXT, street TEXT, city TEXT, province TEXT, postal TEXT
+            display TEXT, city TEXT, province TEXT, postal TEXT
         );
         CREATE TABLE contacts (
             id TEXT PRIMARY KEY, display_name TEXT, phone TEXT, job_title TEXT
