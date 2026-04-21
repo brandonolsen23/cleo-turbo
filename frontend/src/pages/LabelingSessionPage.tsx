@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
 import { CaretLeft, DownloadSimple, Warning } from "@phosphor-icons/react";
 import { Callout } from "@radix-ui/themes";
-import { fetchApi, postApi } from "../api/client";
+import { fetchApi, postApi, mutateApi } from "../api/client";
 import type {
   LabelingSession, LabelingSeed, LabelingCandidate, LabelingPartyView,
   LabelingVerdict, LabelingLink, LinkKind,
@@ -108,15 +108,29 @@ export default function LabelingSessionPage() {
       setSubmitError(e instanceof Error ? e.message : String(e));
       return;
     }
-    // Advance to next unreviewed candidate
-    const nextIdx = candidates.findIndex(
-      (c) => c.source_id === rightParty.source_id && c.side === rightParty.side
-    );
-    const next = candidates.slice(nextIdx + 1).find(
+    // Advance to next unreviewed candidate. An entry counts as "reviewed" if
+    // it has a verdict OR if it's the one we just verdicted this call (which
+    // isn't in the `verdicts` state yet — reloadSession hasn't fired).
+    const justVerdicted = { source_id: rightParty.source_id, side: rightParty.side };
+    const next = candidates.find(
       (c) => !verdicts.find((v) => v.source_id === c.source_id && v.side === c.side)
+          && !(c.source_id === justVerdicted.source_id && c.side === justVerdicted.side),
     );
-    if (next) await loadCandidate(next);
-    else setRightParty(null);
+    if (next) {
+      await loadCandidate(next);
+    } else {
+      // No candidates left for this seed — mark it done so the queue reflects
+      // completion without requiring a manual action.
+      setRightParty(null);
+      if (currentSeed) {
+        try {
+          await mutateApi(`/labeling/sessions/${id}/seeds/${currentSeed.id}`, "PATCH", { state: "done" });
+        } catch {
+          // Non-fatal — if the PATCH fails the seed stays in_progress, user
+          // can retry or manually mark it.
+        }
+      }
+    }
     reloadSession();
   }
 

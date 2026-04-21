@@ -231,10 +231,12 @@ def run_seed_search(
     ).fetchone()
     if not seed:
         raise HTTPException(404, "Seed not found")
-    ops.set_seed_state(db, seed_id, "in_progress")
     hits = ops.search_candidates(
         db, sid, term=seed["term"], field_type=seed["field_type"]
     )
+    # If the search returns nothing, the seed is already done — every party
+    # matching this term has already been verdicted or reviewed in this session.
+    ops.set_seed_state(db, seed_id, "done" if not hits else "in_progress")
     return {
         "seed": dict(seed),
         "left_party": {"source_id": seed["first_contributed_by_source_id"],
