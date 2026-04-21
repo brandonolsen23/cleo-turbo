@@ -12,6 +12,7 @@ def _make_db():
     conn.executescript("""
         CREATE TABLE transactions (
             source_id TEXT PRIMARY KEY,
+            sale_date TEXT,
             seller_trade_name TEXT, seller_care_of TEXT,
             seller_law_firms_json TEXT, seller_companies_json TEXT,
             buyer_trade_name TEXT, buyer_care_of TEXT,
@@ -39,10 +40,10 @@ def _make_db():
 def test_party_view_aggregates_all_fields():
     conn = _make_db()
     conn.execute(
-        "INSERT INTO transactions (source_id, buyer_trade_name, buyer_care_of, "
-        "buyer_law_firms_json, buyer_companies_json) VALUES (?, ?, ?, ?, ?)",
-        ("RT148276", "DH Management Inc", "", json.dumps(["Smith LLP"]),
-         json.dumps(["DH Properties"]))
+        "INSERT INTO transactions (source_id, sale_date, buyer_trade_name, buyer_care_of, "
+        "buyer_law_firms_json, buyer_companies_json) VALUES (?, ?, ?, ?, ?, ?)",
+        ("RT148276", "2005-04-18", "DH Management Inc", "",
+         json.dumps(["Smith LLP"]), json.dumps(["DH Properties"]))
     )
     conn.execute(
         "INSERT INTO contacts (id, display_name, phone, job_title) VALUES (?, ?, ?, ?)",
@@ -77,6 +78,7 @@ def test_party_view_aggregates_all_fields():
     assert "Niagara Falls Shopping Centre Inc" in [r["party_name"] for r in view["party_rows"]]
     assert view["contacts"][0]["name"] == "Dan Hagler"
     assert "416-265-5055" in view["phones"]
+    assert view["sale_date"] == "2005-04-18"
 
 
 def test_party_view_returns_none_for_missing():

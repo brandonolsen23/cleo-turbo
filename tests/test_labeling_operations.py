@@ -12,6 +12,7 @@ def _make_db():
     conn.executescript("""
         CREATE TABLE transactions (
             source_id TEXT PRIMARY KEY,
+            sale_date TEXT,
             seller_trade_name TEXT, seller_care_of TEXT,
             seller_law_firms_json TEXT, seller_companies_json TEXT,
             buyer_trade_name TEXT, buyer_care_of TEXT,

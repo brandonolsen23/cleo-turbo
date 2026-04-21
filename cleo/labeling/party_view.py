@@ -31,6 +31,8 @@ def get_party_view(db, source_id: str, side: str) -> Optional[dict]:
     if not tx:
         return None
 
+    sale_date = tx["sale_date"] if "sale_date" in tx.keys() else None
+
     prefix = f"{side}_"
     trade_name = tx[f"{prefix}trade_name"]
     care_of = tx[f"{prefix}care_of"]
@@ -84,6 +86,7 @@ def get_party_view(db, source_id: str, side: str) -> Optional[dict]:
     return {
         "source_id": source_id,
         "side": side,
+        "sale_date": sale_date,
         "party_rows": party_rows,
         "trade_name": trade_name,
         "care_of": care_of,
