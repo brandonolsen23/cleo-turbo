@@ -714,10 +714,19 @@ def run_compiler(conn):
             # Insert one row per party (group)
             for party in parties:
                 pname = party.get('name', '').strip()
-                if not pname or pname == 'Named Individual(s)':
+                if not pname:
                     continue
-                norm = normalize_group_name(pname)
-                gid = group_data[norm]['id'] if norm in group_data else None
+                # "Named Individual(s)" is Realtrack's placeholder for a
+                # suppressed-name private party — the side IS real, the name
+                # is just not disclosed. Record the row so the side exists
+                # relationally, but don't attach to any group (gid = None).
+                # Dropping these silently broke every downstream analysis
+                # that needed full transaction-side coverage.
+                if pname == 'Named Individual(s)':
+                    gid = None
+                else:
+                    norm = normalize_group_name(pname)
+                    gid = group_data[norm]['id'] if norm in group_data else None
 
                 conn.execute(
                     "INSERT INTO transaction_parties (source_id, contact_id, group_id, side, "
