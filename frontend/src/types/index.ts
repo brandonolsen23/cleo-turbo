@@ -1507,6 +1507,7 @@ export interface LabelingVerdict {
 export interface LabelingPartyView {
   source_id: string;
   side: "buyer" | "seller";
+  sale_date: string | null;
   party_rows: { id: number; party_name: string | null; phone: string | null; contact_id: string | null }[];
   trade_name: string | null;
   care_of: string | null;

@@ -62,8 +62,15 @@ export default function PartyCard({ view, side, sharedHighlights }: Props) {
   return (
     <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)]"
          style={{ background: "white" }}>
-      <div className="px-4 py-2 border-b border-[var(--gray-4)] flex items-center justify-between">
-        <Heading size="2">{view.source_id}</Heading>
+      <div className="px-4 py-2 border-b border-[var(--gray-4)] flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 min-w-0">
+          <Heading size="2">{view.source_id}</Heading>
+          {view.sale_date && (
+            <Text size="1" style={{ color: "var(--gray-9)" }}>
+              · {view.sale_date}
+            </Text>
+          )}
+        </div>
         <Badge size="1" variant="soft" color={view.side === "buyer" ? "jade" : "amber"}>
           {view.side}
         </Badge>
