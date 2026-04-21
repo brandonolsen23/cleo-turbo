@@ -169,3 +169,112 @@ def test_search_candidates_excludes_reviewed_and_matches_across_fields():
     assert ("RT2", "buyer") in keys
     assert ("RT3", "seller") in keys
     assert ("RT4", "buyer") not in keys
+
+
+def test_delete_verdict_reassigns_seed_when_alternate_contributor_exists():
+    """Deleting a verdict should reassign seeds to another confirmed
+    verdict whose party harvests the same (term, field_type)."""
+    from cleo.labeling.operations import (
+        create_session, record_verdict, delete_verdict,
+    )
+
+    conn = _make_db()
+    # Two parties both have trade_name "KingSett" — so both harvest
+    # ("KingSett", "trade_name") as a seed.
+    _seed_tx(conn, "RT1", "buyer", "A", "KingSett", phone="111")
+    _seed_tx(conn, "RT2", "buyer", "B", "KingSett", phone="222")
+    _seed_tx(conn, "RT3", "buyer", "C", "KingSett", phone="333")
+
+    session_id = create_session(conn, "RT1", "buyer", "S", None, "brandon")
+    # Anchor RT1 contributed the initial seeds.
+    seed = conn.execute(
+        "SELECT id, first_contributed_by_source_id AS src FROM labeling_seeds "
+        "WHERE session_id = ? AND term = 'KingSett' AND field_type = 'trade_name'",
+        (session_id,),
+    ).fetchone()
+    assert seed["src"] == "RT1"
+
+    # Confirm RT2 — RT1 stays the first contributor (OR IGNORE).
+    verdict2 = record_verdict(
+        conn, session_id=session_id, source_id="RT2", side="buyer",
+        verdict="confirmed", left_source_id="RT1", left_side="buyer",
+        seed_id=None, rationale=None,
+        links=[{"from_field_type": "trade_name", "from_field_value": "KingSett",
+                "to_field_type": "trade_name", "to_field_value": "KingSett",
+                "kind": "exact"}],
+        created_by="brandon",
+    )
+
+    # Now delete the RT1 ... wait, RT1 is the anchor with no verdict. Delete
+    # a hypothetical RT3 verdict instead. Confirm RT3 first.
+    verdict3 = record_verdict(
+        conn, session_id=session_id, source_id="RT3", side="buyer",
+        verdict="confirmed", left_source_id="RT1", left_side="buyer",
+        seed_id=None, rationale=None,
+        links=[{"from_field_type": "trade_name", "from_field_value": "KingSett",
+                "to_field_type": "trade_name", "to_field_value": "KingSett",
+                "kind": "exact"}],
+        created_by="brandon",
+    )
+    # Manually reassign the seed's contributor to RT3 to simulate the case
+    # where RT3 was first to contribute (can't happen in normal flow given
+    # anchor always wins, but we test the reconciliation logic directly).
+    conn.execute(
+        "UPDATE labeling_seeds SET first_contributed_by_source_id = 'RT3' "
+        "WHERE id = ?",
+        (seed["id"],),
+    )
+    conn.commit()
+
+    delete_verdict(conn, verdict3)
+    # Seed should survive with a different contributor (RT2, also has
+    # KingSett trade_name and is the only other confirmed).
+    row = conn.execute(
+        "SELECT first_contributed_by_source_id AS src FROM labeling_seeds "
+        "WHERE id = ?", (seed["id"],),
+    ).fetchone()
+    assert row is not None, "Seed should not have been deleted — RT2 still contributes"
+    assert row["src"] == "RT2"
+
+
+def test_delete_verdict_removes_orphan_seed_when_no_alternate_exists():
+    """Deleting a verdict should delete any seed whose sole contributor
+    was the deleted party (the orphan-seed bug that previously let seeds
+    linger in the queue pointing at a ghost RT)."""
+    from cleo.labeling.operations import (
+        create_session, record_verdict, delete_verdict,
+    )
+
+    conn = _make_db()
+    # Anchor RT1 has unique fields. Confirmed RT2 has its own unique fields
+    # (trade_name "Unique2"). If RT2 is deleted, "Unique2" seed should go.
+    _seed_tx(conn, "RT1", "buyer", "A", "Anchor Trade")
+    _seed_tx(conn, "RT2", "buyer", "B", "Unique2")
+
+    session_id = create_session(conn, "RT1", "buyer", "S", None, "brandon")
+    verdict_id = record_verdict(
+        conn, session_id=session_id, source_id="RT2", side="buyer",
+        verdict="confirmed", left_source_id="RT1", left_side="buyer",
+        seed_id=None, rationale=None,
+        links=[{"from_field_type": "party_name", "from_field_value": "A",
+                "to_field_type": "party_name", "to_field_value": "B",
+                "kind": "implied"}],
+        created_by="brandon",
+    )
+
+    # "Unique2" seed should exist and be contributed by RT2.
+    before = conn.execute(
+        "SELECT id FROM labeling_seeds WHERE session_id = ? "
+        "AND term = 'Unique2' AND field_type = 'trade_name'",
+        (session_id,),
+    ).fetchone()
+    assert before is not None
+
+    delete_verdict(conn, verdict_id)
+
+    after = conn.execute(
+        "SELECT id FROM labeling_seeds WHERE session_id = ? "
+        "AND term = 'Unique2' AND field_type = 'trade_name'",
+        (session_id,),
+    ).fetchone()
+    assert after is None, "Orphan seed should have been deleted"

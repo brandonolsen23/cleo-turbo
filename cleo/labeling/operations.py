@@ -126,10 +126,87 @@ def record_verdict(
 
 
 def delete_verdict(db, verdict_id: int):
+    """Delete a verdict and reconcile any seeds it contributed.
+
+    For each seed whose first_contributed_by pointed at the deleted
+    party, look for another confirmed verdict in the session whose
+    party harvests the same (term, field_type). If found, reassign
+    first_contributed_by to that party; otherwise delete the seed.
+
+    This prevents orphan seeds — seeds whose contributor no longer has
+    a verdict in the session but still surface in the queue and flip
+    the comparison-view's reference pane to a ghost RT.
+    """
+    v = db.execute(
+        "SELECT session_id, source_id, side FROM labeling_verdicts WHERE id = ?",
+        (verdict_id,),
+    ).fetchone()
+    if not v:
+        return
+    session_id = v["session_id"]
+    deleted_src = v["source_id"]
+    deleted_side = v["side"]
+
+    view = get_party_view(db, deleted_src, deleted_side)
+    contributed = harvest_seeds(view) if view else []
+
+    # Delete the verdict first (labeling_links cascade via FK).
     db.execute("DELETE FROM labeling_verdicts WHERE id = ?", (verdict_id,))
-    # labeling_links cascade via FK
-    # Seeds are intentionally NOT rolled back (see spec)
+
+    for s in contributed:
+        seed_row = db.execute(
+            "SELECT id, first_contributed_by_source_id AS src, "
+            "first_contributed_by_side AS side "
+            "FROM labeling_seeds "
+            "WHERE session_id = ? AND term = ? AND field_type = ?",
+            (session_id, s["term"], s["field_type"]),
+        ).fetchone()
+        if not seed_row:
+            continue
+        if seed_row["src"] != deleted_src or seed_row["side"] != deleted_side:
+            # A different party is the recorded first contributor — nothing
+            # to fix for this seed.
+            continue
+        replacement = _find_replacement_contributor(
+            db, session_id, s["term"], s["field_type"],
+            exclude_source_id=deleted_src, exclude_side=deleted_side,
+        )
+        if replacement:
+            db.execute(
+                "UPDATE labeling_seeds SET first_contributed_by_source_id = ?, "
+                "first_contributed_by_side = ? WHERE id = ?",
+                (replacement[0], replacement[1], seed_row["id"]),
+            )
+        else:
+            db.execute("DELETE FROM labeling_seeds WHERE id = ?", (seed_row["id"],))
+
     db.commit()
+
+
+def _find_replacement_contributor(
+    db, session_id: int, term: str, field_type: str,
+    *, exclude_source_id: str, exclude_side: str,
+):
+    """Return (source_id, side) of the oldest confirmed verdict in the
+    session (other than the excluded one) whose party harvests the given
+    (term, field_type), or None if none exists."""
+    rows = db.execute(
+        "SELECT source_id, side FROM labeling_verdicts "
+        "WHERE session_id = ? AND verdict = 'confirmed' "
+        "AND NOT (source_id = ? AND side = ?) "
+        "ORDER BY created_at",
+        (session_id, exclude_source_id, exclude_side),
+    ).fetchall()
+    for r in rows:
+        view = get_party_view(db, r["source_id"], r["side"])
+        if not view:
+            continue
+        if any(
+            h["term"] == term and h["field_type"] == field_type
+            for h in harvest_seeds(view)
+        ):
+            return (r["source_id"], r["side"])
+    return None
 
 
 # ── Seeds ──────────────────────────────────────────────────────
