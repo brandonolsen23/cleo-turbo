@@ -261,6 +261,7 @@ def create_verdict(
     session_id: str, req: VerdictRequest,
     db=Depends(get_db), user=Depends(get_current_user),
 ):
+    import sqlite3
     sid = ops.parse_session_id(session_id)
     try:
         verdict_id = ops.record_verdict(
@@ -274,6 +275,14 @@ def create_verdict(
         )
     except ops.VerdictValidationError as e:
         raise HTTPException(400, str(e))
+    except sqlite3.IntegrityError as e:
+        if "UNIQUE constraint" in str(e) and "labeling_verdicts" in str(e):
+            raise HTTPException(
+                409,
+                f"A verdict for {req.source_id}/{req.side} already exists in this session. "
+                "Delete it first if you want to re-review.",
+            )
+        raise
     return {"verdict_id": verdict_id}
 
 

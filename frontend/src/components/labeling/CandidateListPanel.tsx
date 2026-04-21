@@ -29,13 +29,20 @@ export default function CandidateListPanel({ candidates, verdicts, currentRight,
           const v = verdictFor(verdicts, c);
           const isCurrent = currentRight &&
             currentRight.source_id === c.source_id && currentRight.side === c.side;
+          const alreadyVerdicted = !!v;
           return (
             <button key={`${c.source_id}:${c.side}`}
-                    onClick={() => onPick(c)}
-                    className="text-left px-2 py-1 rounded hover:bg-[var(--accent-2)]"
+                    onClick={() => !alreadyVerdicted && onPick(c)}
+                    disabled={alreadyVerdicted}
+                    title={alreadyVerdicted
+                      ? `Already ${v!.verdict} — delete that verdict to re-review`
+                      : undefined}
+                    className={`text-left px-2 py-1 rounded ${
+                      alreadyVerdicted ? "cursor-not-allowed" : "hover:bg-[var(--accent-2)]"
+                    }`}
                     style={{
                       background: isCurrent ? "var(--accent-2)" : undefined,
-                      opacity: v ? 0.6 : 1,
+                      opacity: alreadyVerdicted ? 0.5 : 1,
                     }}>
               <div className="flex items-center gap-1">
                 {v?.verdict === "confirmed" && (
