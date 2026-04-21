@@ -137,7 +137,7 @@ export default function LabelingSessionPage() {
   if (!session) return <div className="p-6"><Text>Loading…</Text></div>;
 
   return (
-    <div className="flex flex-col h-full" style={{ height: "100vh" }}>
+    <div className="flex flex-col" style={{ height: "100%" }}>
       {/* Top bar */}
       <div className="h-10 flex items-center gap-4 px-4 border-b border-[var(--gray-4)]"
            style={{ background: "var(--gray-2)" }}>
