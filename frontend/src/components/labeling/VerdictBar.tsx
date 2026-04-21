@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Button, TextField, Badge } from "@radix-ui/themes";
-import { CheckCircle, XCircle, SkipForward, Trash, Sparkle } from "@phosphor-icons/react";
+import { CheckCircle, XCircle, SkipForward, Trash, Sparkle, Warning } from "@phosphor-icons/react";
 import type { LinkKind, FieldType } from "../../types";
 import type { PendingLink } from "./proposals";
 
@@ -110,17 +110,42 @@ export default function VerdictBar({
             <span className="text-[11px] flex items-center gap-1"
                   style={{ color: "var(--gray-9)" }}>
               <Sparkle size={10} /> auto — review &amp; remove any wrong ones · Shift+A to clear
+              {pendingLinks.some((l) => l.caution) && (
+                <span style={{ color: "var(--amber-11)", marginLeft: 6 }}>
+                  <Warning size={10} weight="fill" /> amber = personal signal without corporate corroboration
+                </span>
+              )}
             </span>
           )}
           {pendingLinks.map((l, i) => (
             <Badge key={i} size="1"
                    variant={l.auto ? "outline" : "soft"}
-                   color={l.kind === "exact" ? "jade" : "blue"}>
-              {l.auto && <Sparkle size={10} weight={l.auto === "learned" ? "fill" : "regular"} />}
+                   color={
+                     l.caution ? "amber"
+                     : l.kind === "exact" ? "jade"
+                     : "blue"
+                   }
+                   title={
+                     l.caution === "contact_only"
+                       ? "Contact name match with no corporate co-signal (trade name / address / party brand). Personal names follow people across jobs — double-check this pair is actually the same portfolio."
+                       : l.caution === "phone_only"
+                       ? "Phone match with no corporate co-signal. Direct/personal phone numbers follow individuals across jobs — double-check."
+                       : undefined
+                   }>
+              {l.caution
+                ? <Warning size={10} weight="fill" />
+                : l.auto && <Sparkle size={10} weight={l.auto === "learned" ? "fill" : "regular"} />}
               {l.from_field_type}:{l.from_field_value}
               {" → "}
               {l.to_field_type}:{l.to_field_value}
-              {l.auto && <span style={{ marginLeft: 4, opacity: 0.7 }}>· {l.auto}</span>}
+              {l.caution && (
+                <span style={{ marginLeft: 4, opacity: 0.8 }}>
+                  · {l.caution === "contact_only" ? "contact only" : "phone only"}
+                </span>
+              )}
+              {l.auto && !l.caution && (
+                <span style={{ marginLeft: 4, opacity: 0.7 }}>· {l.auto}</span>
+              )}
               <button className="ml-1 opacity-70 hover:opacity-100"
                       onClick={() => setPendingLinks(pendingLinks.filter((_, j) => j !== i))}>
                 <Trash size={10} />
