@@ -1,7 +1,8 @@
 import { useEffect, useState, useCallback, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
-import { CaretLeft, DownloadSimple } from "@phosphor-icons/react";
+import { CaretLeft, DownloadSimple, Warning } from "@phosphor-icons/react";
+import { Callout } from "@radix-ui/themes";
 import { fetchApi, postApi } from "../api/client";
 import type {
   LabelingSession, LabelingSeed, LabelingCandidate, LabelingPartyView,
@@ -32,6 +33,7 @@ export default function LabelingSessionPage() {
   const [pendingLinks, setPendingLinks] = useState<PendingLink[]>([]);
   const [linkKind, setLinkKind] = useState<LinkKind>("exact");
   const [rationale, setRationale] = useState("");
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const learnedPairs = useMemo(() => computeLearnedPairs(sessionLinks), [sessionLinks]);
 
@@ -84,21 +86,27 @@ export default function LabelingSessionPage() {
 
   async function submitVerdict(verdict: "confirmed" | "rejected" | "skip") {
     if (!rightParty || !leftParty) return;
-    if (verdict === "skip") {
-      await postApi(`/labeling/sessions/${id}/reviewed`, {
-        source_id: rightParty.source_id, side: rightParty.side,
-      });
-    } else {
-      await postApi(`/labeling/sessions/${id}/verdicts`, {
-        source_id: rightParty.source_id,
-        side: rightParty.side,
-        verdict,
-        left_source_id: leftParty.source_id,
-        left_side: leftParty.side,
-        seed_id: currentSeed?.id ?? null,
-        rationale: rationale || null,
-        links: verdict === "confirmed" ? stripAuto(pendingLinks) : [],
-      });
+    setSubmitError(null);
+    try {
+      if (verdict === "skip") {
+        await postApi(`/labeling/sessions/${id}/reviewed`, {
+          source_id: rightParty.source_id, side: rightParty.side,
+        });
+      } else {
+        await postApi(`/labeling/sessions/${id}/verdicts`, {
+          source_id: rightParty.source_id,
+          side: rightParty.side,
+          verdict,
+          left_source_id: leftParty.source_id,
+          left_side: leftParty.side,
+          seed_id: currentSeed?.id ?? null,
+          rationale: rationale || null,
+          links: verdict === "confirmed" ? stripAuto(pendingLinks) : [],
+        });
+      }
+    } catch (e) {
+      setSubmitError(e instanceof Error ? e.message : String(e));
+      return;
     }
     // Advance to next unreviewed candidate
     const nextIdx = candidates.findIndex(
@@ -192,6 +200,15 @@ export default function LabelingSessionPage() {
           />
         </div>
       </div>
+
+      {submitError && (
+        <div className="px-4 py-2 border-t border-[var(--gray-4)]">
+          <Callout.Root color="tomato" size="1">
+            <Callout.Icon><Warning size={14} /></Callout.Icon>
+            <Callout.Text>Save failed: {submitError}</Callout.Text>
+          </Callout.Root>
+        </div>
+      )}
 
       {/* Action bar */}
       <VerdictBar

@@ -216,12 +216,14 @@ def search_candidates(
         FROM hits h
         LEFT JOIN labeling_reviewed_index r
             ON r.session_id = ? AND r.source_id = h.source_id AND r.side = h.side
-        WHERE r.source_id IS NULL
+        LEFT JOIN labeling_verdicts v
+            ON v.session_id = ? AND v.source_id = h.source_id AND v.side = h.side
+        WHERE r.source_id IS NULL AND v.source_id IS NULL
         GROUP BY h.source_id, h.side
         LIMIT ?
         """,
         (like, like, like, like, like, like, like, like,
-         like, like, like, like, session_id, limit),
+         like, like, like, like, session_id, session_id, limit),
     ).fetchall()
 
     return [{"source_id": r["source_id"], "side": r["side"],
