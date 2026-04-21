@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
-import { CaretLeft, DownloadSimple, Warning } from "@phosphor-icons/react";
+import { CaretLeft, DownloadSimple, Warning, ArrowCounterClockwise } from "@phosphor-icons/react";
 import { Callout } from "@radix-ui/themes";
 import { fetchApi, postApi, mutateApi } from "../api/client";
 import type {
@@ -134,6 +134,48 @@ export default function LabelingSessionPage() {
     reloadSession();
   }
 
+  async function undoLastVerdict() {
+    if (verdicts.length === 0) return;
+    const last = verdicts[0]; // /verdicts returns DESC by created_at
+    setSubmitError(null);
+    try {
+      await mutateApi(`/labeling/sessions/${id}/verdicts/${last.id}`, "DELETE");
+    } catch (e) {
+      setSubmitError(e instanceof Error ? e.message : String(e));
+      return;
+    }
+    // Restore the pair so the user can redraw and re-confirm
+    try {
+      const [left, right] = await Promise.all([
+        fetchApi<LabelingPartyView>(`/labeling/party/${last.left_source_id}/${last.left_side}`),
+        fetchApi<LabelingPartyView>(`/labeling/party/${last.source_id}/${last.side}`),
+      ]);
+      setLeftParty(left);
+      setRightParty(right);
+      setRationale(last.rationale || "");
+      const exact = proposeExactLinks(left, right);
+      const learned = proposeLearnedLinks(left, right, learnedPairs, exact);
+      setPendingLinks([...exact, ...learned]);
+    } catch (e) {
+      setSubmitError(e instanceof Error ? e.message : String(e));
+    }
+    reloadSession();
+  }
+
+  // Keyboard shortcut U — only fires when the comparison pane isn't in an
+  // input/textarea, matching VerdictBar's guard.
+  useEffect(() => {
+    function handler(e: KeyboardEvent) {
+      const tag = (e.target as HTMLElement).tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      if (e.key.toLowerCase() === "u" && !e.shiftKey && !e.metaKey && !e.ctrlKey) {
+        undoLastVerdict();
+      }
+    }
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
+  });
+
   async function exportJson() {
     const token = localStorage.getItem("cleo_token");
     const res = await fetch(`/api/labeling/sessions/${id}/export`, {
@@ -168,6 +210,15 @@ export default function LabelingSessionPage() {
         <Badge size="1" variant="soft">
           {session.seeds_by_state.pending ?? 0} seeds pending
         </Badge>
+        {verdicts.length > 0 && (
+          <Button
+            size="1" variant="soft" color="amber"
+            onClick={undoLastVerdict}
+            title={`Undo last verdict (${verdicts[0].source_id}/${verdicts[0].side}) — shortcut U`}
+          >
+            <ArrowCounterClockwise size={12} /> Undo · {verdicts[0].source_id}/{verdicts[0].side}
+          </Button>
+        )}
         <Button size="1" variant="soft" onClick={exportJson}>
           <DownloadSimple size={12} /> Export
         </Button>
