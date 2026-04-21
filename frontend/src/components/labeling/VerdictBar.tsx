@@ -26,6 +26,14 @@ export default function VerdictBar({
     let pendingLeft: { field_type: FieldType; field_value: string } | null = null;
 
     function handleClick(e: MouseEvent) {
+      // Ignore the 2nd+ click of a multi-click sequence — native double-click
+      // to select a word (e.g. on the RT# heading) fires two click events
+      // before dblclick and would otherwise create stray link state.
+      if (e.detail > 1) return;
+      // Also ignore clicks that are part of an active text selection,
+      // so dragging to select text doesn't accidentally drive the link state.
+      const sel = window.getSelection?.();
+      if (sel && sel.toString().length > 0) return;
       const target = (e.target as HTMLElement).closest("[data-link-anchor]") as HTMLElement | null;
       if (!target) return;
       const pane = target.dataset.pane as "left" | "right";
