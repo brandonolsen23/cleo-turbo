@@ -4,7 +4,16 @@ import type {
 
 // Frontend-only type. `auto` distinguishes system-proposed links from manually
 // drawn ones in the UI; stripped before the POST /verdicts payload.
-export type PendingLink = LabelingLinkInput & { auto?: "exact" | "learned" };
+export type PendingLink = LabelingLinkInput & {
+  auto?: "exact" | "learned";
+  // Set when an auto-proposed link is considered weak on its own and the
+  // user should double-check before confirming. "contact_only" = a
+  // contact_name match with no corporate co-signal. "phone_only" = a phone
+  // match with no corporate co-signal. Personal signals like these can
+  // follow an individual across jobs, so we surface them but don't give
+  // them the same confidence as a corroborated match.
+  caution?: "contact_only" | "phone_only";
+};
 
 interface FieldValue {
   field_type: FieldType;
@@ -27,6 +36,39 @@ function extractValues(view: LabelingPartyView): FieldValue[] {
   if (view.mailing?.display) out.push({ field_type: "address", value: view.mailing.display });
   for (const ph of view.phones) out.push({ field_type: "phone", value: ph });
   return out;
+}
+
+/** Field types we treat as "corporate" — brand/entity/location evidence
+ * that ties a party to a specific organization. A contact_name or phone
+ * match is only strong when at least one of these also matches between
+ * the same pair, because people (and their direct phone lines) move
+ * between jobs while keeping the same name/number. */
+const CORPORATE_FIELDS: ReadonlySet<FieldType> = new Set<FieldType>([
+  "party_name", "trade_name", "care_of", "company_other", "law_firm", "address",
+]);
+
+function isCorporate(ft: FieldType): boolean {
+  return CORPORATE_FIELDS.has(ft);
+}
+
+/** Post-pass: mark contact_name and phone links as "caution" when no
+ * corporate-category link exists in the same proposals list.
+ *
+ * Operates on the combined (exact + learned) list because corroboration
+ * can come from either kind of proposal. Mutates and returns the same
+ * array for convenience. */
+export function flagUncorroborated(links: PendingLink[]): PendingLink[] {
+  const hasCorporate = links.some(
+    (l) => isCorporate(l.from_field_type) || isCorporate(l.to_field_type),
+  );
+  for (const l of links) {
+    if (l.from_field_type === "contact_name" || l.to_field_type === "contact_name") {
+      if (!hasCorporate) l.caution = "contact_only";
+    } else if (l.from_field_type === "phone" || l.to_field_type === "phone") {
+      if (!hasCorporate) l.caution = "phone_only";
+    }
+  }
+  return links;
 }
 
 /** Exact character-identical matches across any (left field, right field) pair.

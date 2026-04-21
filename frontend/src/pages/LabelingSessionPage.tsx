@@ -16,7 +16,7 @@ import LinkCanvas from "../components/labeling/LinkCanvas";
 import VerdictBar from "../components/labeling/VerdictBar";
 import {
   type PendingLink, proposeExactLinks, proposeLearnedLinks,
-  computeLearnedPairs, stripAuto,
+  computeLearnedPairs, stripAuto, flagUncorroborated,
 } from "../components/labeling/proposals";
 
 export default function LabelingSessionPage() {
@@ -77,7 +77,7 @@ export default function LabelingSessionPage() {
     if (leftParty) {
       const exact = proposeExactLinks(leftParty, view);
       const learned = proposeLearnedLinks(leftParty, view, learnedPairs, exact);
-      setPendingLinks([...exact, ...learned]);
+      setPendingLinks(flagUncorroborated([...exact, ...learned]));
     } else {
       setPendingLinks([]);
     }
@@ -153,7 +153,7 @@ export default function LabelingSessionPage() {
       setRationale(v.rationale || "");
       const exact = proposeExactLinks(left, right);
       const learned = proposeLearnedLinks(left, right, learnedPairs, exact);
-      setPendingLinks([...exact, ...learned]);
+      setPendingLinks(flagUncorroborated([...exact, ...learned]));
     } catch (e) {
       setSubmitError(e instanceof Error ? e.message : String(e));
     }
