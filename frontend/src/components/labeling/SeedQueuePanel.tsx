@@ -10,6 +10,7 @@ interface Props {
   verdicts: LabelingVerdict[];
   currentSeedId?: number;
   onRunSeed: (s: LabelingSeed) => void;
+  onReopenVerdict?: (v: LabelingVerdict) => void;
 }
 
 const FIELD_COLORS: Record<FieldType, string> = {
@@ -18,7 +19,9 @@ const FIELD_COLORS: Record<FieldType, string> = {
   address: "amber", phone: "tomato",
 };
 
-export default function SeedQueuePanel({ sessionId, seeds, verdicts, currentSeedId, onRunSeed }: Props) {
+export default function SeedQueuePanel({
+  sessionId, seeds, verdicts, currentSeedId, onRunSeed, onReopenVerdict,
+}: Props) {
   const [newTerm, setNewTerm] = useState("");
   const [newType, setNewType] = useState<FieldType>("party_name");
 
@@ -74,10 +77,18 @@ export default function SeedQueuePanel({ sessionId, seeds, verdicts, currentSeed
         <Heading size="1" mb="1">Confirmed ({confirmedParties.length})</Heading>
         <div className="flex flex-col gap-1">
           {confirmedParties.map((v) => (
-            <div key={v.id} className="flex items-center gap-1 text-[12px]">
+            <button
+              key={v.id}
+              onClick={() => onReopenVerdict?.(v)}
+              disabled={!onReopenVerdict}
+              title={onReopenVerdict ? "Click to reopen — deletes the verdict and reloads the pair for re-review" : undefined}
+              className={`flex items-center gap-1 text-[12px] text-left px-1 py-0.5 rounded ${
+                onReopenVerdict ? "hover:bg-[var(--accent-2)] cursor-pointer" : "cursor-default"
+              }`}
+            >
               <CheckCircle size={12} weight="fill" style={{ color: "var(--jade-10)" }} />
               {v.source_id}/{v.side}
-            </div>
+            </button>
           ))}
         </div>
       </div>
@@ -87,10 +98,18 @@ export default function SeedQueuePanel({ sessionId, seeds, verdicts, currentSeed
           <Heading size="1" mb="1">Rejected ({rejectedParties.length})</Heading>
           <div className="flex flex-col gap-1">
             {rejectedParties.map((v) => (
-              <div key={v.id} className="flex items-center gap-1 text-[12px]">
+              <button
+                key={v.id}
+                onClick={() => onReopenVerdict?.(v)}
+                disabled={!onReopenVerdict}
+                title={onReopenVerdict ? "Click to reopen — deletes the verdict and reloads the pair for re-review" : undefined}
+                className={`flex items-center gap-1 text-[12px] text-left px-1 py-0.5 rounded ${
+                  onReopenVerdict ? "hover:bg-[var(--accent-2)] cursor-pointer" : "cursor-default"
+                }`}
+              >
                 <XCircle size={12} weight="fill" style={{ color: "var(--tomato-10)" }} />
                 {v.source_id}/{v.side}
-              </div>
+              </button>
             ))}
           </div>
         </div>

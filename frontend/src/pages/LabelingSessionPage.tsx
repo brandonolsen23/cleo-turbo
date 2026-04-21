@@ -134,12 +134,10 @@ export default function LabelingSessionPage() {
     reloadSession();
   }
 
-  async function undoLastVerdict() {
-    if (verdicts.length === 0) return;
-    const last = verdicts[0]; // /verdicts returns DESC by created_at
+  async function reopenVerdict(v: LabelingVerdict) {
     setSubmitError(null);
     try {
-      await mutateApi(`/labeling/sessions/${id}/verdicts/${last.id}`, "DELETE");
+      await mutateApi(`/labeling/sessions/${id}/verdicts/${v.id}`, "DELETE");
     } catch (e) {
       setSubmitError(e instanceof Error ? e.message : String(e));
       return;
@@ -147,12 +145,12 @@ export default function LabelingSessionPage() {
     // Restore the pair so the user can redraw and re-confirm
     try {
       const [left, right] = await Promise.all([
-        fetchApi<LabelingPartyView>(`/labeling/party/${last.left_source_id}/${last.left_side}`),
-        fetchApi<LabelingPartyView>(`/labeling/party/${last.source_id}/${last.side}`),
+        fetchApi<LabelingPartyView>(`/labeling/party/${v.left_source_id}/${v.left_side}`),
+        fetchApi<LabelingPartyView>(`/labeling/party/${v.source_id}/${v.side}`),
       ]);
       setLeftParty(left);
       setRightParty(right);
-      setRationale(last.rationale || "");
+      setRationale(v.rationale || "");
       const exact = proposeExactLinks(left, right);
       const learned = proposeLearnedLinks(left, right, learnedPairs, exact);
       setPendingLinks([...exact, ...learned]);
@@ -160,6 +158,11 @@ export default function LabelingSessionPage() {
       setSubmitError(e instanceof Error ? e.message : String(e));
     }
     reloadSession();
+  }
+
+  function undoLastVerdict() {
+    if (verdicts.length === 0) return;
+    reopenVerdict(verdicts[0]); // /verdicts returns DESC by created_at
   }
 
   // Keyboard shortcut U — only fires when the comparison pane isn't in an
@@ -233,6 +236,7 @@ export default function LabelingSessionPage() {
             verdicts={verdicts}
             currentSeedId={currentSeed?.id}
             onRunSeed={runSeed}
+            onReopenVerdict={reopenVerdict}
           />
         </div>
 
