@@ -1263,6 +1263,12 @@ def run_compiler(conn):
     print('Refreshing group analytics...')
     analytics_count = refresh_group_analytics(conn)
 
+    # ================================================================
+    # Atom-level fingerprinting — foundation for portfolio discovery
+    # ================================================================
+    from cleo.atoms.fingerprint import run_fingerprint_pass
+    run_fingerprint_pass(conn)
+
     elapsed = time.time() - start
     print()
     print(f'Compiler done in {elapsed:.1f}s')

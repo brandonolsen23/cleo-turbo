@@ -217,6 +217,44 @@ CREATE TABLE IF NOT EXISTS brand_registry (
     created_at      TEXT DEFAULT (datetime('now'))
 );
 
+-- ============================================================
+-- PARTY FINGERPRINTS (atom-based portfolio discovery foundation)
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS party_fingerprints (
+    source_id           TEXT NOT NULL,
+    side                TEXT NOT NULL CHECK (side IN ('buyer','seller')),
+    -- address atoms (canonical forms from cleo.atoms.normalize)
+    street_number       TEXT,
+    street_name         TEXT,
+    street_suffix       TEXT,
+    street_direction    TEXT,
+    suite_type          TEXT,
+    suite_number        TEXT,
+    city                TEXT,
+    province            TEXT,
+    postal              TEXT,
+    country             TEXT,
+    -- phone (digits only, country code stripped)
+    phone               TEXT,
+    -- contact (first+last canonical)
+    contact_fingerprint TEXT,
+    -- temporal context (for later tenure reasoning)
+    sale_date           TEXT,
+    -- bookkeeping
+    computed_at         TEXT DEFAULT (datetime('now')),
+    PRIMARY KEY (source_id, side)
+);
+
+CREATE TABLE IF NOT EXISTS party_atoms (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_id    TEXT NOT NULL,
+    side         TEXT NOT NULL CHECK (side IN ('buyer','seller')),
+    atom_type    TEXT NOT NULL,     -- 'brand_phrase' | 'brand_token' | 'law_firm_phrase' | 'law_firm_token'
+    atom_value   TEXT NOT NULL,     -- canonical form from cleo.atoms.normalize
+    source_field TEXT NOT NULL      -- 'party_name' | 'trade_name' | 'care_of' | 'companies_json' | 'law_firms_json'
+);
+
 CREATE TABLE IF NOT EXISTS gw_assessments (
     id              TEXT PRIMARY KEY,
     gw_id           TEXT NOT NULL,
@@ -302,6 +340,12 @@ CREATE INDEX IF NOT EXISTS idx_gw_sales_property ON gw_sales_history(property_id
 CREATE INDEX IF NOT EXISTS idx_gw_property ON gw_assessments(property_id);
 CREATE INDEX IF NOT EXISTS idx_gw_arn ON gw_assessments(arn);
 CREATE INDEX IF NOT EXISTS idx_gw_gw_id ON gw_assessments(gw_id);
+CREATE INDEX IF NOT EXISTS idx_pfp_street_key ON party_fingerprints(street_number, street_name, street_suffix);
+CREATE INDEX IF NOT EXISTS idx_pfp_postal ON party_fingerprints(postal);
+CREATE INDEX IF NOT EXISTS idx_pfp_phone ON party_fingerprints(phone);
+CREATE INDEX IF NOT EXISTS idx_pfp_contact ON party_fingerprints(contact_fingerprint);
+CREATE INDEX IF NOT EXISTS idx_pa_lookup ON party_atoms(atom_type, atom_value);
+CREATE INDEX IF NOT EXISTS idx_pa_party ON party_atoms(source_id, side);
 """
 
 FTS_TABLES = """
@@ -815,6 +859,8 @@ def create_all_tables(conn):
 def drop_derived_tables(conn):
     """Drop derived tables only. CRM and system tables are preserved."""
     conn.executescript("""
+        DROP TABLE IF EXISTS party_atoms;
+        DROP TABLE IF EXISTS party_fingerprints;
         DROP TABLE IF EXISTS brand_registry;
         DROP TABLE IF EXISTS gw_sales_history;
         DROP TABLE IF EXISTS gw_assessments;
