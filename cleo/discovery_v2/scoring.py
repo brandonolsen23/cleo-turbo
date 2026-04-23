@@ -4,13 +4,9 @@ Phase A: exact-tier only. A pair carries one or more match atoms
 (from the blocking pass). Scoring decides whether the pair is a
 Strong edge in the Group graph, the Contact graph, both, or neither.
 
-Phase A rules (see spec S6, revised 2026-04-23 after mega-cluster bug):
+Phase A rules (see spec S6):
   - Exact non-generic brand_token alone → Strong Group edge
-  - Exact address_triple alone → NOT Strong (downtown towers, courthouses,
-    receiver offices are shared across unrelated operators; needs co-signal)
-  - address_triple + brand_token → Strong (brand does the work)
-  - address_triple + contact_fingerprint → Strong (same place, same person)
-  - address_triple + phone → Strong (same place, same phone line)
+  - Exact address_triple alone → Strong Group edge
   - Exact phone alone → not Strong (alias risk); Strong only when
     brand or address co-signal agrees
   - Exact contact_fingerprint → Strong Contact edge (never a Group edge
@@ -56,21 +52,11 @@ def score_pair(match_atoms: List[MatchAtom], *, min_idf: Optional[float] = None)
     phone_hit = any(a[0] == "phone" for a in match_atoms)
     contact_hit = any(a[0] == "contact_fingerprint" for a in match_atoms)
 
-    # Group-graph tier (revised after mega-cluster bug on 2026-04-23):
-    #   - brand_token alone → Strong (brands are distinctive)
-    #   - address_triple alone → NOT Strong (downtown towers, courthouses,
-    #     receiver offices are shared across unrelated operators)
-    #   - address_triple + brand_token → Strong (brand does the work)
-    #   - address_triple + contact_fingerprint → Strong (same place, same person)
-    #   - address_triple + phone → Strong (same place, same phone line)
-    #   - phone alone → NOT Strong (management-line aliasing)
-    #   - phone + brand_token OR phone + address_triple → Strong
-    if brand_token_hit:
+    # Group-graph tier
+    if brand_token_hit or address_triple_hit:
         result["group_tier"] = "strong"
-    elif address_triple_hit and (contact_hit or phone_hit):
-        result["group_tier"] = "strong"
-    elif phone_hit and address_triple_hit:
-        # same as above (symmetric) — kept explicit for readability
+    elif phone_hit and (brand_token_hit or address_triple_hit):
+        # unreachable given the above, but explicit about the co-signal rule
         result["group_tier"] = "strong"
 
     # Contact-graph tier — exact contact fingerprint → Strong

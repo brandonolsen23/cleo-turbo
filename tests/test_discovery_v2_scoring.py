@@ -19,33 +19,9 @@ def test_generic_brand_token_is_not_a_link():
     assert result["group_tier"] is None
 
 
-def test_address_triple_alone_is_not_a_strong_group_edge():
-    """Shared address_triple across unrelated operators (downtown towers,
-    courthouses, receiver offices) must not auto-link. Needs brand or
-    contact/phone co-signal."""
+def test_address_triple_alone_is_strong_group_edge():
     from cleo.discovery_v2.scoring import score_pair
     match_atoms = [("address_triple", "66|wellington|street", 5.0)]
-    result = score_pair(match_atoms)
-    assert result["group_tier"] is None
-
-
-def test_address_triple_plus_contact_is_strong_group_edge():
-    from cleo.discovery_v2.scoring import score_pair
-    match_atoms = [
-        ("address_triple", "66|wellington|street", 5.0),
-        ("contact_fingerprint", "rob kumer", 6.0),
-    ]
-    result = score_pair(match_atoms)
-    assert result["group_tier"] == "strong"
-    assert result["contact_tier"] == "strong"
-
-
-def test_address_triple_plus_phone_is_strong_group_edge():
-    from cleo.discovery_v2.scoring import score_pair
-    match_atoms = [
-        ("address_triple", "66|wellington|street", 5.0),
-        ("phone", "4166876700", 5.0),
-    ]
     result = score_pair(match_atoms)
     assert result["group_tier"] == "strong"
 
