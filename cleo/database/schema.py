@@ -859,6 +859,15 @@ def create_all_tables(conn):
 def drop_derived_tables(conn):
     """Drop derived tables only. CRM and system tables are preserved."""
     conn.executescript("""
+        DROP TABLE IF EXISTS atom_group_relationships;
+        DROP TABLE IF EXISTS atom_contact_addresses;
+        DROP TABLE IF EXISTS atom_contact_groups;
+        DROP TABLE IF EXISTS atom_group_contacts;
+        DROP TABLE IF EXISTS atom_group_phones;
+        DROP TABLE IF EXISTS atom_group_addresses;
+        DROP TABLE IF EXISTS atom_party_entities;
+        DROP TABLE IF EXISTS atom_contacts;
+        DROP TABLE IF EXISTS atom_groups;
         DROP TABLE IF EXISTS party_atoms;
         DROP TABLE IF EXISTS party_fingerprints;
         DROP TABLE IF EXISTS brand_registry;
