@@ -30,47 +30,36 @@ def _save_counter(conn, key: str, value: int):
     )
 
 
-def _load_party_metadata(conn, sides: List[PartySide]):
-    """Load sale_date per party-side, grouped."""
-    if not sides:
-        return {}
-    placeholders = ",".join("(?,?)" for _ in sides)
-    flat = [x for s in sides for x in s]
-    rows = conn.execute(
-        f"SELECT source_id, side, sale_date FROM party_fingerprints "
-        f"WHERE (source_id, side) IN (VALUES {placeholders})",
-        flat,
-    ).fetchall()
-    return {(r["source_id"], r["side"]): r["sale_date"] for r in rows}
+def _load_party_metadata(conn) -> Dict[PartySide, str]:
+    """Return {(source_id, side): sale_date} for ALL party-sides."""
+    return {
+        (r["source_id"], r["side"]): r["sale_date"]
+        for r in conn.execute(
+            "SELECT source_id, side, sale_date FROM party_fingerprints"
+        )
+    }
 
 
-def _load_brand_phrases(conn, sides: List[PartySide]):
-    if not sides:
-        return {}
-    placeholders = ",".join("(?,?)" for _ in sides)
-    flat = [x for s in sides for x in s]
-    rows = conn.execute(
-        f"SELECT source_id, side, atom_value FROM party_atoms "
-        f"WHERE atom_type = 'brand_phrase' AND (source_id, side) IN (VALUES {placeholders})",
-        flat,
-    ).fetchall()
+def _load_brand_phrases(conn) -> Dict[PartySide, List[str]]:
+    """Return {(source_id, side): [brand_phrase, ...]} for ALL party-sides."""
     out: Dict[PartySide, List[str]] = {}
-    for r in rows:
+    for r in conn.execute(
+        "SELECT source_id, side, atom_value FROM party_atoms "
+        "WHERE atom_type = 'brand_phrase'"
+    ):
         out.setdefault((r["source_id"], r["side"]), []).append(r["atom_value"])
     return out
 
 
-def _load_contact_fingerprints(conn, sides: List[PartySide]):
-    if not sides:
-        return {}
-    placeholders = ",".join("(?,?)" for _ in sides)
-    flat = [x for s in sides for x in s]
-    rows = conn.execute(
-        f"SELECT source_id, side, contact_fingerprint FROM party_fingerprints "
-        f"WHERE (source_id, side) IN (VALUES {placeholders})",
-        flat,
-    ).fetchall()
-    return {(r["source_id"], r["side"]): r["contact_fingerprint"] for r in rows}
+def _load_contact_fingerprints(conn) -> Dict[PartySide, str]:
+    """Return {(source_id, side): contact_fingerprint} for ALL party-sides."""
+    return {
+        (r["source_id"], r["side"]): r["contact_fingerprint"]
+        for r in conn.execute(
+            "SELECT source_id, side, contact_fingerprint FROM party_fingerprints "
+            "WHERE contact_fingerprint IS NOT NULL AND contact_fingerprint != ''"
+        )
+    }
 
 
 def _pick_canonical_brand(
@@ -117,9 +106,8 @@ def assign_group_entities(
     counter = _next_counter(conn, "next_agr_id", seed=1)
     comp_to_id: Dict[int, str] = {}
 
-    all_sides = [s for nodes in components.values() for s in nodes]
-    dates = _load_party_metadata(conn, all_sides)
-    brand_phrases = _load_brand_phrases(conn, all_sides)
+    dates = _load_party_metadata(conn)
+    brand_phrases = _load_brand_phrases(conn)
 
     for comp_id, sides in components.items():
         canonical = _pick_canonical_brand(
@@ -177,9 +165,8 @@ def assign_contact_entities(
     counter = _next_counter(conn, "next_acn_id", seed=1)
     comp_to_id: Dict[int, str] = {}
 
-    all_sides = [s for nodes in components.values() for s in nodes]
-    fingerprints = _load_contact_fingerprints(conn, all_sides)
-    dates = _load_party_metadata(conn, all_sides)
+    fingerprints = _load_contact_fingerprints(conn)
+    dates = _load_party_metadata(conn)
 
     for comp_id, sides in components.items():
         fps = [fingerprints.get(s) for s in sides]
