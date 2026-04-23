@@ -588,17 +588,16 @@ def normalize_province(raw: Optional[str]) -> Optional[str]:
 
 
 def normalize_postal(raw: Optional[str]) -> Optional[str]:
-    """Canonicalize a Canadian postal code or US ZIP.
+    """Canonicalize a Canadian postal code or US ZIP, or None if the value
+    doesn't match either format.
 
     Canadian: UPPERCASE, strip internal spaces. "M5K 1H6" -> "M5K1H6".
     US ZIP: preserve hyphen for ZIP+4. Strip surrounding whitespace.
-    Non-matching: UPPERCASE + strip.
+    Non-matching: return None (caller should preserve via postal_raw if needed).
 
     Examples:
       "m5k 1h6" -> "M5K1H6"
-      "M5K1H6" -> "M5K1H6"
-      "90210" -> "90210"
-      "90210-1234" -> "90210-1234"
+      "M4W 3E23" -> None  (invalid — 4 chars in second half)
       "" / None -> None
     """
     s = _strip_or_none(raw)
@@ -607,17 +606,14 @@ def normalize_postal(raw: Optional[str]) -> Optional[str]:
 
     upper = s.upper().strip()
 
-    # Canadian postal: letter-digit-letter digit-letter-digit (with optional space)
     if _POSTAL_CA.match(upper):
         return upper.replace(" ", "")
 
-    # US ZIP (5 digits or ZIP+4)
     stripped = s.strip()
     if _POSTAL_US.match(stripped):
         return stripped
 
-    # Fallthrough: uppercase, strip
-    return upper
+    return None
 
 
 def normalize_country(raw: Optional[str]) -> Optional[str]:

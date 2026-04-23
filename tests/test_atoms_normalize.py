@@ -382,3 +382,19 @@ def test_normalize_country():
     # Unknown — lowercased passthrough
     assert normalize_country("Mexico") == "mexico"
     assert normalize_country("UK") == "uk"
+
+
+def test_normalize_postal_returns_none_for_invalid_format():
+    from cleo.atoms.normalize import normalize_postal
+    # 61 such values exist in the current corpus per the exploration report.
+    assert normalize_postal("M4W 3E23") is None
+    assert normalize_postal("L4L-1N4") is None
+    assert normalize_postal("BB15006") is None
+    assert normalize_postal("K2G 12E4") is None
+
+def test_normalize_postal_still_accepts_valid_ca_and_us():
+    from cleo.atoms.normalize import normalize_postal
+    assert normalize_postal("m5k 1h6") == "M5K1H6"
+    assert normalize_postal("M5K1H6") == "M5K1H6"
+    assert normalize_postal("90210") == "90210"
+    assert normalize_postal("90210-1234") == "90210-1234"

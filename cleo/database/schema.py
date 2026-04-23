@@ -234,6 +234,7 @@ CREATE TABLE IF NOT EXISTS party_fingerprints (
     city                TEXT,
     province            TEXT,
     postal              TEXT,
+    postal_raw          TEXT,
     country             TEXT,
     -- phone (digits only, country code stripped)
     phone               TEXT,

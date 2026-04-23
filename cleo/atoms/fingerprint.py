@@ -79,6 +79,7 @@ def run_fingerprint_pass(conn):
             city                TEXT,
             province            TEXT,
             postal              TEXT,
+            postal_raw          TEXT,
             country             TEXT,
             phone               TEXT,
             contact_fingerprint TEXT,
@@ -178,6 +179,7 @@ def run_fingerprint_pass(conn):
             normalize_city(r['city']),
             normalize_province(r['province']),
             normalize_postal(r['postal']),
+            r['postal'],  # postal_raw — preserve source string verbatim
             normalize_country(r['country']),
             phone,
             contact_fp,
@@ -207,9 +209,9 @@ def run_fingerprint_pass(conn):
     conn.executemany(
         """INSERT INTO party_fingerprints
            (source_id, side, street_number, street_name, street_suffix, street_direction,
-            suite_type, suite_number, city, province, postal, country,
+            suite_type, suite_number, city, province, postal, postal_raw, country,
             phone, contact_fingerprint, sale_date)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         fp_rows,
     )
     print(f'  Inserting {len(atom_rows):,} party_atoms rows...')
