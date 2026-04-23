@@ -53,7 +53,8 @@ def migrate(conn):
             group_id       TEXT NOT NULL REFERENCES atom_groups(id),
             postal         TEXT, street_number TEXT, street_name TEXT, street_suffix TEXT,
             first_seen     TEXT, last_seen TEXT,
-            n_observations INTEGER
+            n_observations INTEGER,
+            UNIQUE (group_id, postal, street_number, street_name, street_suffix)
         );
         CREATE INDEX IF NOT EXISTS idx_aga_group ON atom_group_addresses(group_id);
 
@@ -61,7 +62,8 @@ def migrate(conn):
             group_id       TEXT NOT NULL REFERENCES atom_groups(id),
             phone          TEXT NOT NULL,
             first_seen     TEXT, last_seen TEXT,
-            n_observations INTEGER
+            n_observations INTEGER,
+            PRIMARY KEY (group_id, phone)
         );
         CREATE INDEX IF NOT EXISTS idx_agp_group ON atom_group_phones(group_id);
 
@@ -69,7 +71,8 @@ def migrate(conn):
             group_id       TEXT NOT NULL REFERENCES atom_groups(id),
             contact_id     TEXT NOT NULL REFERENCES atom_contacts(id),
             first_seen     TEXT, last_seen TEXT,
-            n_observations INTEGER
+            n_observations INTEGER,
+            PRIMARY KEY (group_id, contact_id)
         );
         CREATE INDEX IF NOT EXISTS idx_agc_group ON atom_group_contacts(group_id);
 
@@ -77,7 +80,8 @@ def migrate(conn):
             contact_id     TEXT NOT NULL REFERENCES atom_contacts(id),
             group_id       TEXT NOT NULL REFERENCES atom_groups(id),
             first_seen     TEXT, last_seen TEXT,
-            n_observations INTEGER
+            n_observations INTEGER,
+            PRIMARY KEY (contact_id, group_id)
         );
         CREATE INDEX IF NOT EXISTS idx_acg_contact ON atom_contact_groups(contact_id);
 
@@ -85,7 +89,8 @@ def migrate(conn):
             contact_id     TEXT NOT NULL REFERENCES atom_contacts(id),
             postal         TEXT, street_number TEXT, street_name TEXT, street_suffix TEXT,
             first_seen     TEXT, last_seen TEXT,
-            n_observations INTEGER
+            n_observations INTEGER,
+            UNIQUE (contact_id, postal, street_number, street_name, street_suffix)
         );
         CREATE INDEX IF NOT EXISTS idx_aca_contact ON atom_contact_addresses(contact_id);
 
