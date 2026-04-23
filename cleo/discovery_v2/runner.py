@@ -21,10 +21,23 @@ from .config import CALIBRATION
 from .idf import compute_idf_map
 from .blocking import generate_candidate_pairs
 from .scoring import score_pair
-from .graph import build_components, seed_singletons
+from .graph import _UnionFind
 from .entities import assign_group_entities, assign_contact_entities
 from .timelines import materialize_timelines
 from .relationships import detect_jv_relationships
+
+
+def _components_from_uf(uf) -> dict:
+    """Extract connected components from a populated _UnionFind.
+
+    Returns {component_id: [party_side, ...]} matching the shape produced
+    by graph.build_components + graph.seed_singletons so downstream callers
+    (entity assignment) don't need to change.
+    """
+    groups = defaultdict(list)
+    for node in uf.parent:
+        groups[uf.find(node)].append(node)
+    return {i: sorted(nodes) for i, nodes in enumerate(groups.values())}
 
 
 def _wipe_derived(conn):
@@ -43,20 +56,6 @@ def _all_party_sides(conn):
         (r["source_id"], r["side"])
         for r in conn.execute("SELECT source_id, side FROM party_fingerprints")
     ]
-
-
-def _pairs_from_blocking(conn, idf_map, min_idf):
-    """Aggregate candidate-pair rows by (a, b) into {pair: [(atom_type, value, idf), ...]}."""
-    pairs = defaultdict(list)
-    for (sid_a, side_a, sid_b, side_b, atom_type, atom_value) in generate_candidate_pairs(
-        conn, idf_map, min_idf=min_idf,
-    ):
-        a, b = (sid_a, side_a), (sid_b, side_b)
-        if a > b:
-            a, b = b, a
-        idf = idf_map.get((atom_type, atom_value), 0.0)
-        pairs[(a, b)].append((atom_type, atom_value, idf))
-    return pairs
 
 
 def run_discovery(conn, *, verbose: bool = True, min_idf: Optional[float] = None):
@@ -87,25 +86,48 @@ def run_discovery(conn, *, verbose: bool = True, min_idf: Optional[float] = None
     if verbose:
         print(f"  IDF map: {len(idf_map):,} (atom_type, value) entries", flush=True)
 
-    pairs = _pairs_from_blocking(conn, idf_map, effective_min_idf)
-    if verbose:
-        print(f"  Candidate pairs: {len(pairs):,}", flush=True)
+    # Streaming: blocking yields one candidate pair at a time → score it →
+    # union it into the graph if Strong → discard. Memory stays O(N) in the
+    # union-find structure regardless of candidate-pair count. This replaces
+    # a prior batch approach that accumulated ~17M pairs in a dict and
+    # pushed the process into 30GB+ of compressed-page memory.
 
-    group_edges = []
-    contact_edges = []
-    for (a, b), match_atoms in pairs.items():
-        result = score_pair(match_atoms, min_idf=effective_min_idf)
-        if result["group_tier"] == "strong":
-            group_edges.append((a, b, "strong"))
-        if result["contact_tier"] == "strong":
-            contact_edges.append((a, b, "strong"))
-    if verbose:
-        print(f"  Strong Group edges: {len(group_edges):,}", flush=True)
-        print(f"  Strong Contact edges: {len(contact_edges):,}", flush=True)
+    group_uf = _UnionFind()
+    contact_uf = _UnionFind()
 
     all_sides = _all_party_sides(conn)
-    group_components = seed_singletons(build_components(group_edges), all_sides)
-    contact_components = build_components(contact_edges)  # no singletons for contacts
+    for side in all_sides:
+        group_uf.add(side)  # ensures singletons end up as their own components
+
+    n_candidate_pairs = 0
+    n_group_edges = 0
+    n_contact_edges = 0
+    for (sid_a, side_a, sid_b, side_b, atom_type, atom_value) in generate_candidate_pairs(
+        conn, idf_map, min_idf=effective_min_idf,
+    ):
+        n_candidate_pairs += 1
+        a = (sid_a, side_a)
+        b = (sid_b, side_b)
+        idf = idf_map.get((atom_type, atom_value), 0.0)
+        match_atoms = [(atom_type, atom_value, idf)]
+        result = score_pair(match_atoms, min_idf=effective_min_idf)
+        if result["group_tier"] == "strong":
+            group_uf.add(a)
+            group_uf.add(b)
+            group_uf.union(a, b)
+            n_group_edges += 1
+        if result["contact_tier"] == "strong":
+            contact_uf.add(a)
+            contact_uf.add(b)
+            contact_uf.union(a, b)
+            n_contact_edges += 1
+    if verbose:
+        print(f"  Candidate pairs: {n_candidate_pairs:,}", flush=True)
+        print(f"  Strong Group edges: {n_group_edges:,}", flush=True)
+        print(f"  Strong Contact edges: {n_contact_edges:,}", flush=True)
+
+    group_components = _components_from_uf(group_uf)
+    contact_components = _components_from_uf(contact_uf)
     if verbose:
         print(f"  Group components: {len(group_components):,}", flush=True)
         print(f"  Contact components: {len(contact_components):,}", flush=True)
