@@ -27,19 +27,26 @@ class PairScore(TypedDict):
     match_atoms: List[MatchAtom]
 
 
-def score_pair(match_atoms: List[MatchAtom]) -> PairScore:
+def score_pair(match_atoms: List[MatchAtom], *, min_idf: Optional[float] = None) -> PairScore:
     """Given the match atoms for a pair, return the Group and Contact tiers.
 
     Phase A outputs: 'strong' or None. No medium tier in Phase A.
+
+    Parameters
+    ----------
+    min_idf : optional override for the brand_token IDF gate. Default (None)
+        uses CALIBRATION["exact_brand_token"]["min_idf"] (production = 3.0).
+        Test harnesses pass 0.0 to treat all brand_tokens as sufficiently rare.
     """
     result: PairScore = {"group_tier": None, "contact_tier": None, "match_atoms": match_atoms}
     if not match_atoms:
         return result
 
-    min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
+    if min_idf is None:
+        min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
 
     brand_token_hit = any(
-        a[0] == "brand_token" and a[2] >= min_idf for a in match_atoms
+        a[0] == "brand_token" and (min_idf <= 0.0 or a[2] >= min_idf) for a in match_atoms
     )
     address_triple_hit = any(a[0] == "address_triple" for a in match_atoms)
     phone_hit = any(a[0] == "phone" for a in match_atoms)
