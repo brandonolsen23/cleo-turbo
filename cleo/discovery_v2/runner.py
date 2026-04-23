@@ -74,6 +74,10 @@ def run_discovery(conn, *, verbose: bool = True, min_idf: Optional[float] = None
         else CALIBRATION["exact_brand_token"]["min_idf"]
     )
 
+    # Discovery wipes + rebuilds atom_* tables. The GW watcher and FastAPI
+    # app may hold brief write transactions; wait up to 2 minutes for locks.
+    conn.execute("PRAGMA busy_timeout = 120000")
+
     if verbose:
         print(f"Phase A discovery run: config {CALIBRATION['version']} (min_idf={effective_min_idf})", flush=True)
 
