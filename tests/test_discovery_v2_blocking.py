@@ -96,31 +96,3 @@ def test_blocks_on_exact_phone_and_address_triple_and_contact():
     assert "phone" in atom_types
     assert "address_triple" in atom_types
     assert "contact_fingerprint" in atom_types
-
-
-def test_blocking_skips_atoms_above_max_sides_cap():
-    """High-count atoms (like downtown addresses shared across 500+
-    unrelated businesses) don't generate useful candidate pairs."""
-    from cleo.discovery_v2.blocking import generate_candidate_pairs
-    from cleo.discovery_v2.idf import compute_idf_map
-
-    conn = _make_db()
-    # 10 party-sides all sharing the same phone
-    for i in range(10):
-        conn.execute(
-            "INSERT INTO party_fingerprints (source_id, side, phone) "
-            "VALUES (?, 'buyer', '4162348444')",
-            (f"RT{i}",),
-        )
-    conn.commit()
-
-    idf = compute_idf_map(conn)
-    # cap = 5: should skip the phone entirely (10 > 5)
-    pairs = list(generate_candidate_pairs(conn, idf, min_idf=0.0, max_sides=5))
-    phone_pairs = [p for p in pairs if p[4] == "phone"]
-    assert phone_pairs == []
-
-    # cap = 100: should include all C(10, 2) = 45 phone pairs
-    pairs_all = list(generate_candidate_pairs(conn, idf, min_idf=0.0, max_sides=100))
-    phone_pairs_all = [p for p in pairs_all if p[4] == "phone"]
-    assert len(phone_pairs_all) == 45

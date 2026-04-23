@@ -79,17 +79,17 @@ def run_discovery(conn, *, verbose: bool = True, min_idf: Optional[float] = None
     conn.execute("PRAGMA busy_timeout = 120000")
 
     if verbose:
-        print(f"Phase A discovery run: config {CALIBRATION['version']} (min_idf={effective_min_idf})", flush=True)
+        print(f"Phase A discovery run: config {CALIBRATION['version']} (min_idf={effective_min_idf})")
 
     _wipe_derived(conn)
 
     idf_map = compute_idf_map(conn)
     if verbose:
-        print(f"  IDF map: {len(idf_map):,} (atom_type, value) entries", flush=True)
+        print(f"  IDF map: {len(idf_map):,} (atom_type, value) entries")
 
     pairs = _pairs_from_blocking(conn, idf_map, effective_min_idf)
     if verbose:
-        print(f"  Candidate pairs: {len(pairs):,}", flush=True)
+        print(f"  Candidate pairs: {len(pairs):,}")
 
     group_edges = []
     contact_edges = []
@@ -100,15 +100,15 @@ def run_discovery(conn, *, verbose: bool = True, min_idf: Optional[float] = None
         if result["contact_tier"] == "strong":
             contact_edges.append((a, b, "strong"))
     if verbose:
-        print(f"  Strong Group edges: {len(group_edges):,}", flush=True)
-        print(f"  Strong Contact edges: {len(contact_edges):,}", flush=True)
+        print(f"  Strong Group edges: {len(group_edges):,}")
+        print(f"  Strong Contact edges: {len(contact_edges):,}")
 
     all_sides = _all_party_sides(conn)
     group_components = seed_singletons(build_components(group_edges), all_sides)
     contact_components = build_components(contact_edges)  # no singletons for contacts
     if verbose:
-        print(f"  Group components: {len(group_components):,}", flush=True)
-        print(f"  Contact components: {len(contact_components):,}", flush=True)
+        print(f"  Group components: {len(group_components):,}")
+        print(f"  Contact components: {len(contact_components):,}")
 
     assign_group_entities(
         conn, group_components, idf_map,
@@ -134,7 +134,7 @@ def run_discovery(conn, *, verbose: bool = True, min_idf: Optional[float] = None
     conn.commit()
 
     if verbose:
-        print(f"  Wrote {n_groups:,} Groups, {n_contacts:,} Contacts.", flush=True)
+        print(f"  Wrote {n_groups:,} Groups, {n_contacts:,} Contacts.")
     return {"n_party_sides": n_party_sides, "n_groups": n_groups, "n_contacts": n_contacts}
 
 

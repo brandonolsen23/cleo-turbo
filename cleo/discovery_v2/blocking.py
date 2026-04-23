@@ -19,8 +19,7 @@ def _canonical_pair(a: PartySide, b: PartySide) -> Tuple[PartySide, PartySide]:
 
 
 def generate_candidate_pairs(
-    conn, idf_map: Dict[Tuple[str, str], float], *,
-    min_idf: float = None, max_sides: int = None,
+    conn, idf_map: Dict[Tuple[str, str], float], *, min_idf: float = None,
 ) -> Generator[CandidatePair, None, None]:
     """Yield candidate pairs sharing at least one non-generic atom.
 
@@ -33,19 +32,9 @@ def generate_candidate_pairs(
     Yields (source_id_a, side_a, source_id_b, side_b, atom_type, atom_value),
     ordered so (a_key) < (b_key).
     Deduplicated across atom types.
-
-    Parameters
-    ----------
-    max_sides : int, optional
-        Skip any atom value whose party-side count exceeds this cap.
-        Atoms shared by hundreds of unrelated parties (e.g. "1 King Street")
-        produce millions of pathological pairs without discriminating signal.
-        Default uses CALIBRATION["blocking_max_sides_per_atom"]["max_sides"].
     """
     if min_idf is None:
         min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
-    if max_sides is None:
-        max_sides = CALIBRATION["blocking_max_sides_per_atom"]["max_sides"]
 
     excluded_tokens = CALIBRATION["excluded_brand_tokens"]
     seen_pairs: set = set()
@@ -78,17 +67,13 @@ def generate_candidate_pairs(
         if len(sides) < 2:
             continue
         uniq = sorted(set(sides))
-        if len(uniq) > max_sides:
-            continue
         for a, b in combinations(uniq, 2):
             yield from _emit(a, b, "brand_token", val)
 
     # 2. phone — no IDF gate in Phase A (require_co_signal handled in scoring)
     for row in conn.execute(
         "SELECT phone, COUNT(*) AS c FROM party_fingerprints "
-        "WHERE phone IS NOT NULL AND phone != '' "
-        "GROUP BY phone HAVING c >= 2 AND c <= ?",
-        (max_sides,),
+        "WHERE phone IS NOT NULL AND phone != '' GROUP BY phone HAVING c >= 2"
     ):
         phone = row["phone"]
         sides = [
@@ -110,8 +95,7 @@ def generate_candidate_pairs(
              AND street_name IS NOT NULL AND street_name != ''
              AND street_suffix IS NOT NULL AND street_suffix != ''
            GROUP BY street_number, street_name, street_suffix
-           HAVING c >= 2 AND c <= ?""",
-        (max_sides,),
+           HAVING c >= 2"""
     ):
         triple = f"{row['street_number']}|{row['street_name']}|{row['street_suffix']}"
         sides = [tuple(s.split("|")) for s in row["sides_csv"].split(";")]
@@ -122,8 +106,7 @@ def generate_candidate_pairs(
     for row in conn.execute(
         "SELECT contact_fingerprint, COUNT(*) AS c FROM party_fingerprints "
         "WHERE contact_fingerprint IS NOT NULL AND contact_fingerprint != '' "
-        "GROUP BY contact_fingerprint HAVING c >= 2 AND c <= ?",
-        (max_sides,),
+        "GROUP BY contact_fingerprint HAVING c >= 2"
     ):
         cf = row["contact_fingerprint"]
         sides = [
