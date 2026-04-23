@@ -31,44 +31,49 @@ def generate_candidate_pairs(
 
     Yields (source_id_a, side_a, source_id_b, side_b, atom_type, atom_value),
     ordered so (a_key) < (b_key).
-    Deduplicated across atom types.
+    Not deduplicated — downstream scoring and union-find are idempotent.
     """
     if min_idf is None:
         min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
 
     excluded_tokens = CALIBRATION["excluded_brand_tokens"]
-    seen_pairs: set = set()
 
     def _emit(a: PartySide, b: PartySide, atom_type: str, atom_value: str):
-        """Inner generator — yields one tuple if unseen, nothing if already emitted."""
+        """Yield one canonical-ordered pair tuple."""
         if a == b:
             return
         a_sorted, b_sorted = _canonical_pair(a, b)
-        key = (a_sorted, b_sorted, atom_type, atom_value)
-        if key in seen_pairs:
-            return
-        seen_pairs.add(key)
         yield (a_sorted[0], a_sorted[1], b_sorted[0], b_sorted[1], atom_type, atom_value)
 
-    # 1. brand_token — gated by IDF threshold and exclusion list
-    rows = conn.execute(
+    # 1. brand_token — streamed by atom_value (rows already ORDER BY atom_value).
+    # No .fetchall() — iterate the cursor directly to avoid loading 750K+ rows.
+    current_val = None  # type: str | None
+    current_sides: set = set()
+
+    def _flush_brand_token():
+        nonlocal current_val, current_sides
+        if current_val is None or len(current_sides) < 2:
+            return
+        if current_val in excluded_tokens:
+            return
+        if min_idf > 0.0 and idf_map.get(("brand_token", current_val), 0.0) < min_idf:
+            return
+        uniq = sorted(current_sides)
+        for a, b in combinations(uniq, 2):
+            yield from _emit(a, b, "brand_token", current_val)
+
+    for r in conn.execute(
         "SELECT atom_value, source_id, side FROM party_atoms "
         "WHERE atom_type = 'brand_token' ORDER BY atom_value"
-    ).fetchall()
-    bucket: Dict[str, list] = {}
-    for r in rows:
+    ):
         val = r["atom_value"]
-        if val in excluded_tokens:
-            continue
-        if min_idf > 0.0 and idf_map.get(("brand_token", val), 0.0) < min_idf:
-            continue
-        bucket.setdefault(val, []).append((r["source_id"], r["side"]))
-    for val, sides in bucket.items():
-        if len(sides) < 2:
-            continue
-        uniq = sorted(set(sides))
-        for a, b in combinations(uniq, 2):
-            yield from _emit(a, b, "brand_token", val)
+        if val != current_val:
+            yield from _flush_brand_token()
+            current_val = val
+            current_sides = set()
+        current_sides.add((r["source_id"], r["side"]))
+    # Flush the last token's pairs
+    yield from _flush_brand_token()
 
     # 2. phone — no IDF gate in Phase A (require_co_signal handled in scoring)
     for row in conn.execute(
