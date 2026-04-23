@@ -67,6 +67,23 @@ CALIBRATION = {
         "creo mail code 01 86",  # RT scraping artifact
     }),
 
+    # Blocking cap — skip atoms whose count of carrying party-sides exceeds
+    # this threshold. A shared value on >500 sides produces C(500,2)=125K
+    # pairs, most of which are unrelated (e.g., a downtown office tower
+    # address shared across hundreds of businesses). Higher-count atoms
+    # aren't discriminative and explode the candidate-pair set.
+    "blocking_max_sides_per_atom": {
+        "enabled": True,
+        "max_sides": 500,
+        "reason": (
+            "Street number 1 appears on 2,941 party-sides alone. The "
+            "top address_triple, phone, and contact_fingerprint counts "
+            "run into the high hundreds. At 500 sides we keep distinctive "
+            "portfolios (KingSett at 66 Wellington = 291 sides, KingSett "
+            "at 161 Bay = 495 sides) while dropping pathological ones."
+        ),
+    },
+
     # Audit inputs for eval harness
     "audit_docs_root": "docs/discovery-audit",
 }
