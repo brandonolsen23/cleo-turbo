@@ -63,6 +63,9 @@ _STREET_SUFFIX_MAP: dict[str, str] = {
     "conc": "concession", "concession": "concession",
     # sideroad
     "sdrd": "sideroad", "sr": "sideroad", "sideroad": "sideroad",
+    # French Canadian
+    "rue": "rue",
+    "chemin": "chemin", "ch": "chemin",
 }
 
 _DIRECTION_MAP: dict[str, str] = {

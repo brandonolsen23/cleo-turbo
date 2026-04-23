@@ -398,3 +398,14 @@ def test_normalize_postal_still_accepts_valid_ca_and_us():
     assert normalize_postal("M5K1H6") == "M5K1H6"
     assert normalize_postal("90210") == "90210"
     assert normalize_postal("90210-1234") == "90210-1234"
+
+
+def test_normalize_street_suffix_french():
+    from cleo.atoms.normalize import normalize_street_suffix
+    # rue and chemin appear 422 and 207 times in the corpus
+    assert normalize_street_suffix("rue") == "rue"
+    assert normalize_street_suffix("Rue") == "rue"
+    assert normalize_street_suffix("chemin") == "chemin"
+    assert normalize_street_suffix("Chemin") == "chemin"
+    assert normalize_street_suffix("ch") == "chemin"
+    assert normalize_street_suffix("ch.") == "chemin"
