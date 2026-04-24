@@ -1,5 +1,5 @@
 import { useState, useCallback, lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Theme, Text } from "@radix-ui/themes";
 import { AuthContext, type User } from "./hooks/useAuth";
 import { postApi } from "./api/client";
@@ -51,8 +51,8 @@ const DataQualityPage = lazy(() => import("./pages/DataQualityPage"));
 const LabelingPage = lazy(() => import("./pages/LabelingPage"));
 const LabelingAuditPage = lazy(() => import("./pages/LabelingAuditPage"));
 const LabelingSessionPage = lazy(() => import("./pages/LabelingSessionPage"));
-const ExplorerBrands = lazy(() => import("./pages/ExplorerBrands"));
-const ExplorerBrandDetail = lazy(() => import("./pages/ExplorerBrandDetail"));
+const ExplorerBrandsUnigram = lazy(() => import("./pages/ExplorerBrandsUnigram"));
+const ExplorerBrandUnigramDetail = lazy(() => import("./pages/ExplorerBrandUnigramDetail"));
 
 // ============================================================
 // Auth Provider
@@ -128,8 +128,10 @@ export default function App() {
                 <Route path="/data-quality" element={<DataQualityPage />} />
                 <Route path="/discovery" element={<DiscoveryPage />} />
                 <Route path="/discovery/:clusterId" element={<DiscoveryClusterPage />} />
-                <Route path="/explorer/brands" element={<ExplorerBrands />} />
-                <Route path="/explorer/brands/:token" element={<ExplorerBrandDetail />} />
+                <Route path="/explorer" element={<Navigate to="/explorer/brands/1gram" replace />} />
+                <Route path="/explorer/brands" element={<Navigate to="/explorer/brands/1gram" replace />} />
+                <Route path="/explorer/brands/1gram" element={<ExplorerBrandsUnigram />} />
+                <Route path="/explorer/brands/1gram/:token" element={<ExplorerBrandUnigramDetail />} />
                 <Route path="/labeling" element={<LabelingPage />} />
                 <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
                 <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />

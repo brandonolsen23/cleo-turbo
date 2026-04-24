@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Heading, Text, Badge, Button, TextField, Switch, Checkbox } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { BrandTokenListResponse, BrandTokenSummary } from "../types";
+import ExplorerTabs from "../components/explorer/ExplorerTabs";
 
 type SignalToggle = {
   english: boolean;
@@ -15,7 +16,7 @@ const NO_SIGNAL: SignalToggle = {
   english: false, place: false, industry: false, excluded: false,
 };
 
-export default function ExplorerBrands() {
+export default function ExplorerBrandsUnigram() {
   const nav = useNavigate();
   const [data, setData] = useState<BrandTokenListResponse | null>(null);
   const [q, setQ] = useState("");
@@ -70,6 +71,7 @@ export default function ExplorerBrands() {
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
+      <ExplorerTabs />
       <div className="flex items-baseline gap-4 mb-2">
         <Heading size="6">Brand-Token Explorer</Heading>
         <Text size="2" style={{ color: "var(--gray-9)" }}>
@@ -146,7 +148,7 @@ export default function ExplorerBrands() {
             {filtered.map((t: BrandTokenSummary) => (
               <tr key={t.token}
                   className="border-t border-[var(--gray-4)] hover:bg-[var(--gray-2)] cursor-pointer"
-                  onClick={() => nav(`/explorer/brands/${encodeURIComponent(t.token)}`)}>
+                  onClick={() => nav(`/explorer/brands/1gram/${encodeURIComponent(t.token)}`)}>
                 <td className="p-2 font-mono">{t.token}</td>
                 <td className="p-2 text-right">{t.idf.toFixed(2)}</td>
                 <td className="p-2 text-right">

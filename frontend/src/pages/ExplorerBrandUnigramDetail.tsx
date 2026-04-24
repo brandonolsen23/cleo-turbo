@@ -5,7 +5,7 @@ import { fetchApi, mutateApi } from "../api/client";
 import { formatDate } from "../lib/utils";
 import type { BrandTokenDetail, ExplorerPartySide } from "../types";
 
-export default function ExplorerBrandDetail() {
+export default function ExplorerBrandUnigramDetail() {
   const { token } = useParams<{ token: string }>();
   const [data, setData] = useState<BrandTokenDetail | null>(null);
   const [err, setErr] = useState<string | null>(null);

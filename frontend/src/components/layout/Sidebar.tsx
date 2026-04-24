@@ -27,7 +27,7 @@ const NAV_GROUPS = [
       { path: "/pipeline", label: "Inspector", icon: FlowArrow },
       { path: "/data-quality", label: "Data Quality", icon: ShieldCheck },
       { path: "/discovery", label: "Discovery", icon: TreeStructure },
-      { path: "/explorer/brands", label: "Explorer — Brands", icon: MagnifyingGlass },
+      { path: "/explorer", label: "Explorer", icon: MagnifyingGlass },
       { path: "/labeling", label: "Labeling", icon: Tag },
     ],
   },
