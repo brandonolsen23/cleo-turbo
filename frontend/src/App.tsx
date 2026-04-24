@@ -59,6 +59,8 @@ const ExplorerBrandsTrigram = lazy(() => import("./pages/ExplorerBrandsTrigram")
 const ExplorerBrandTrigramDetail = lazy(() => import("./pages/ExplorerBrandTrigramDetail"));
 const ExplorerPhones = lazy(() => import("./pages/ExplorerPhones"));
 const ExplorerPhoneDetail = lazy(() => import("./pages/ExplorerPhoneDetail"));
+const ExplorerAddresses = lazy(() => import("./pages/ExplorerAddresses"));
+const ExplorerAddressDetail = lazy(() => import("./pages/ExplorerAddressDetail"));
 
 // ============================================================
 // Auth Provider
@@ -144,6 +146,8 @@ export default function App() {
                 <Route path="/explorer/brands/3gram/:trigram" element={<ExplorerBrandTrigramDetail />} />
                 <Route path="/explorer/phones" element={<ExplorerPhones />} />
                 <Route path="/explorer/phones/:phone" element={<ExplorerPhoneDetail />} />
+                <Route path="/explorer/addresses" element={<ExplorerAddresses />} />
+                <Route path="/explorer/addresses/:key" element={<ExplorerAddressDetail />} />
                 <Route path="/labeling" element={<LabelingPage />} />
                 <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
                 <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />

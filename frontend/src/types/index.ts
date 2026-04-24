@@ -1661,3 +1661,37 @@ export interface PhoneDetail {
   n_party_sides: number;
   party_sides: ExplorerPartySide[];
 }
+
+// ============================================================
+// Explorer — Addresses
+// ============================================================
+
+export interface AddressBaseSummary {
+  street_number: string;
+  street_name: string;
+  street_suffix: string;
+  n_party_sides: number;
+  n_distinct_suites: number;
+  n_distinct_postals: number;
+  key: string;  // "num|name|suffix" for URL path
+}
+
+export interface AddressBaseListResponse {
+  results: AddressBaseSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface AddressSuiteVariant {
+  suite_type: string | null;
+  suite_number: string | null;
+  postal: string | null;
+  n_party_sides: number;
+}
+
+export interface AddressBaseDetail extends AddressBaseSummary {
+  suite_variants: AddressSuiteVariant[];
+  party_sides: ExplorerPartySide[];
+}
