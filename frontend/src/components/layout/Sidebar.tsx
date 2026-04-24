@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix, ClockCounterClockwise, Sliders, Handshake, TreeStructure, Tag } from "@phosphor-icons/react";
+import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix, ClockCounterClockwise, Sliders, Handshake, TreeStructure, Tag, MagnifyingGlass } from "@phosphor-icons/react";
 import cleoLogo from "../../assets/cleo-logo.png";
 
 const NAV_GROUPS = [
@@ -27,6 +27,7 @@ const NAV_GROUPS = [
       { path: "/pipeline", label: "Inspector", icon: FlowArrow },
       { path: "/data-quality", label: "Data Quality", icon: ShieldCheck },
       { path: "/discovery", label: "Discovery", icon: TreeStructure },
+      { path: "/explorer/brands", label: "Explorer — Brands", icon: MagnifyingGlass },
       { path: "/labeling", label: "Labeling", icon: Tag },
     ],
   },
