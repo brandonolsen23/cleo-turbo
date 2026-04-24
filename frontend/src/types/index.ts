@@ -1538,3 +1538,41 @@ export interface LabelingAuditParty {
   mailing: string;
   phone: string;
 }
+
+// ============================================================
+// Brand-Token Explorer
+// ============================================================
+
+export interface BrandTokenSummary {
+  token: string;
+  idf: number;
+  n_party_sides: number;
+  n_distinct_phrases: number;
+  is_distinctive: 0 | 1;
+  is_excluded: 0 | 1;
+}
+
+export interface BrandTokenListResponse {
+  results: BrandTokenSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface ExplorerPartySide {
+  source_id: string;
+  side: "buyer" | "seller";
+  sale_date: string | null;
+  postal: string | null;
+  street_number: string | null;
+  street_name: string | null;
+  street_suffix: string | null;
+  phone: string | null;
+  contact_fingerprint: string | null;
+}
+
+export interface BrandTokenDetail extends BrandTokenSummary {
+  phrases: string[];
+  party_sides: ExplorerPartySide[];
+}
