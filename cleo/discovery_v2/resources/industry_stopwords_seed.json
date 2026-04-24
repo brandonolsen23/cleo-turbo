@@ -1,0 +1,14 @@
+{
+  "comment": "Seed list of industry-specific tokens that aren't caught by the English wordfreq filter or place-name gazetteer. Acronyms and niche real-estate jargon. User vets and extends via the Explorer UI. Source column will say 'seed' for these entries; user additions will say 'user'.",
+  "tokens": [
+    "gp", "lp", "llp", "ulc", "reit", "reits", "spv",
+    "realty", "realties",
+    "condominium", "condominiums", "condo", "condos",
+    "corp", "corps", "inc", "ltd", "co",
+    "mgmt", "mgt",
+    "hldgs", "holdings", "holding",
+    "devs", "dev",
+    "props",
+    "mfg", "mfr"
+  ]
+}

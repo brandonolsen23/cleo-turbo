@@ -1,0 +1,39 @@
+{
+  "comment": "Canadian place names (lowercase). Used to filter out tokens that share a name with a Canadian city, town, region, or province. Extend freely — every entry is one token. Multi-word places are split (e.g. 'richmond hill' → 'richmond', 'hill' are BOTH flagged because either alone could be used as a place reference in a brand name).",
+  "provinces_and_territories": [
+    "ontario", "quebec", "alberta", "manitoba", "saskatchewan",
+    "british", "columbia", "nova", "scotia", "new", "brunswick",
+    "newfoundland", "labrador", "prince", "edward", "island",
+    "yukon", "nunavut", "northwest", "territories", "canada", "canadian"
+  ],
+  "cities_ontario": [
+    "toronto", "ottawa", "mississauga", "london", "concord", "brampton",
+    "markham", "richmond", "oakville", "windsor", "woodbridge", "hamilton",
+    "kitchener", "burlington", "vaughan", "guelph", "waterloo", "kingston",
+    "cambridge", "thornhill", "barrie", "brantford", "etobicoke", "scarborough",
+    "niagara", "aurora", "whitby", "pickering", "ajax", "oshawa",
+    "peterborough", "sarnia", "sudbury", "thunder", "bay", "welland",
+    "cornwall", "belleville", "orangeville", "newmarket", "collingwood",
+    "bowmanville", "caledon", "stouffville", "uxbridge", "milton", "georgetown",
+    "orillia", "midland", "huntsville", "bracebridge", "gravenhurst",
+    "parry", "sound", "stratford", "chatham", "kent", "st", "catharines",
+    "saint", "clair", "york", "north", "central", "east", "west", "south",
+    "halton", "peel", "durham", "simcoe", "bruce", "grey",
+    "hastings", "lanark", "leeds", "renfrew", "wellington", "middlesex",
+    "essex", "lambton", "perth", "oxford", "haldimand", "norfolk",
+    "manitoulin", "nipissing", "cochrane", "kenora", "rainy",
+    "timiskaming", "algoma"
+  ],
+  "cities_other_provinces": [
+    "montreal", "laval", "gatineau", "sherbrooke",
+    "calgary", "edmonton", "red", "deer", "lethbridge",
+    "vancouver", "victoria", "surrey", "burnaby", "kelowna",
+    "winnipeg", "brandon", "halifax", "moncton", "fredericton", "john",
+    "regina", "saskatoon"
+  ],
+  "streets_generic": [
+    "street", "avenue", "road", "drive", "boulevard", "crescent", "court",
+    "lane", "way", "place", "circle", "trail", "parkway", "terrace",
+    "highway", "line", "sideroad", "rue", "chemin"
+  ]
+}
