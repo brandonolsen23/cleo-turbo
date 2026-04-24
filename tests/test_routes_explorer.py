@@ -11,7 +11,7 @@ def _seeded_db():
         CREATE TABLE party_fingerprints (
             source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
             postal TEXT, sale_date TEXT, street_number TEXT, street_name TEXT,
-            street_suffix TEXT,
+            street_suffix TEXT, suite_type TEXT, suite_number TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -35,6 +35,46 @@ def _seeded_db():
         );
         CREATE TABLE places (
             token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
+        );
+        CREATE TABLE brand_bigram_summary (
+            bigram TEXT PRIMARY KEY, token_a TEXT, token_b TEXT,
+            idf REAL, n_party_sides INTEGER, n_distinct_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER,
+            discovered_at TEXT
+        );
+        CREATE TABLE brand_bigram_index (
+            bigram TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (bigram, source_id, side)
+        );
+        CREATE TABLE brand_trigram_summary (
+            trigram TEXT PRIMARY KEY, token_a TEXT, token_b TEXT, token_c TEXT,
+            idf REAL, n_party_sides INTEGER, n_distinct_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER,
+            discovered_at TEXT
+        );
+        CREATE TABLE brand_trigram_index (
+            trigram TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (trigram, source_id, side)
+        );
+        CREATE TABLE phone_summary (
+            phone TEXT PRIMARY KEY, n_party_sides INTEGER, is_distinctive INTEGER,
+            discovered_at TEXT
+        );
+        CREATE TABLE address_base_summary (
+            street_number TEXT, street_name TEXT, street_suffix TEXT,
+            n_party_sides INTEGER, n_distinct_suites INTEGER,
+            n_distinct_postals INTEGER, is_distinctive INTEGER,
+            discovered_at TEXT,
+            PRIMARY KEY (street_number, street_name, street_suffix)
+        );
+        CREATE TABLE contact_fingerprint_summary (
+            contact_fingerprint TEXT PRIMARY KEY,
+            n_party_sides INTEGER, is_distinctive INTEGER,
+            discovered_at TEXT
         );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
@@ -74,6 +114,51 @@ def _seeded_db():
             "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
             "VALUES (?, 'buyer', 'brand_phrase', ?, 'party_name')", (sid, phrase)
         )
+    # Seed bigrams/trigrams/phones/addresses/contacts for the new tests.
+    conn.execute(
+        "INSERT INTO brand_bigram_summary VALUES "
+        "('kingsett capital', 'kingsett', 'capital', 5.5, 2, 1, 1, 0, 0, 0, 0, 1, '2026-04-24')"
+    )
+    conn.execute(
+        "INSERT INTO brand_bigram_index VALUES ('kingsett capital', 'RT1', 'buyer')"
+    )
+    conn.execute(
+        "INSERT INTO brand_bigram_index VALUES ('kingsett capital', 'RT2', 'buyer')"
+    )
+    conn.execute(
+        "INSERT INTO brand_trigram_summary VALUES "
+        "('kingsett capital gp', 'kingsett', 'capital', 'gp', 6.0, 1, 1, 1, 0, 0, 0, 0, 1, '2026-04-24')"
+    )
+    conn.execute(
+        "INSERT INTO brand_trigram_index VALUES ('kingsett capital gp', 'RT1', 'buyer')"
+    )
+    conn.execute(
+        "INSERT INTO phone_summary VALUES ('4166876700', 2, 1, '2026-04-24')"
+    )
+    conn.execute(
+        "INSERT INTO address_base_summary VALUES "
+        "('66', 'wellington', 'street', 3, 2, 1, 1, '2026-04-24')"
+    )
+    conn.execute(
+        "INSERT INTO contact_fingerprint_summary VALUES ('rob kumer', 2, 1, '2026-04-24')"
+    )
+    # Enrich existing RT1/RT2 party_fingerprints with address/phone/contact info
+    # for hydration tests. The brand_phrases already exist from the loop above
+    # ("kingsett capital" on RT1, "kingsett wealth" on RT2).
+    conn.execute(
+        "UPDATE party_fingerprints SET "
+        "street_number='66', street_name='wellington', street_suffix='street', "
+        "suite_type='suite', suite_number='4400', postal='M5K1H6', "
+        "phone='4166876700', contact_fingerprint='rob kumer', sale_date='2020-01-01' "
+        "WHERE source_id='RT1' AND side='buyer'"
+    )
+    conn.execute(
+        "UPDATE party_fingerprints SET "
+        "street_number='66', street_name='wellington', street_suffix='street', "
+        "suite_type='suite', suite_number='4500', postal='M5K1H6', "
+        "phone='4166876700', contact_fingerprint='rob kumer', sale_date='2021-06-15' "
+        "WHERE source_id='RT2' AND side='buyer'"
+    )
     conn.commit()
     return conn
 
@@ -271,3 +356,120 @@ def test_place_takes_precedence_over_english_in_reason(client):
 
     app.dependency_overrides.clear()
     conn.close()
+
+
+# ── Bigrams ────────────────────────────────────────────────────
+
+def test_list_bigrams(client):
+    resp = client.get("/api/explorer/brands/bigrams")
+    assert resp.status_code == 200
+    body = resp.json()
+    tokens = {t["bigram"] for t in body["results"]}
+    assert "kingsett capital" in tokens
+
+
+def test_bigram_detail(client):
+    resp = client.get("/api/explorer/brands/bigrams/kingsett%20capital")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["bigram"] == "kingsett capital"
+    assert body["n_party_sides"] == 2
+    assert len(body["party_sides"]) == 2
+    # Each party-side has brand_phrases hydrated
+    for ps in body["party_sides"]:
+        assert "brand_phrases" in ps
+        # The phrases should have contains_token flag set correctly
+        for bp in ps["brand_phrases"]:
+            assert "contains_token" in bp
+
+
+def test_bigram_detail_404(client):
+    resp = client.get("/api/explorer/brands/bigrams/zz_unknown")
+    assert resp.status_code == 404
+
+
+# ── Trigrams ───────────────────────────────────────────────────
+
+def test_trigram_detail(client):
+    resp = client.get("/api/explorer/brands/trigrams/kingsett%20capital%20gp")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["trigram"] == "kingsett capital gp"
+    assert body["token_c"] == "gp"
+
+
+# ── Phones ─────────────────────────────────────────────────────
+
+def test_list_phones(client):
+    resp = client.get("/api/explorer/phones")
+    body = resp.json()
+    phones = {r["phone"] for r in body["results"]}
+    assert "4166876700" in phones
+
+
+def test_phone_detail_includes_party_sides(client):
+    resp = client.get("/api/explorer/phones/4166876700")
+    body = resp.json()
+    assert body["phone"] == "4166876700"
+    assert body["n_party_sides"] == 2
+    assert len(body["party_sides"]) == 2
+    # Each party-side has address + contact + brand_phrases
+    ps = body["party_sides"][0]
+    assert "street_number" in ps
+    assert "contact_fingerprint" in ps
+    assert "brand_phrases" in ps
+
+
+def test_phone_detail_404(client):
+    resp = client.get("/api/explorer/phones/9999999999")
+    assert resp.status_code == 404
+
+
+# ── Addresses ──────────────────────────────────────────────────
+
+def test_list_addresses(client):
+    resp = client.get("/api/explorer/addresses")
+    body = resp.json()
+    assert body["total"] >= 1
+    first = body["results"][0]
+    assert "key" in first
+    assert first["key"] == "66|wellington|street"
+
+
+def test_address_detail_has_suite_variants(client):
+    resp = client.get("/api/explorer/addresses/66%7Cwellington%7Cstreet")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["street_number"] == "66"
+    assert body["street_name"] == "wellington"
+    assert body["street_suffix"] == "street"
+    assert body["n_party_sides"] == 3
+    assert "suite_variants" in body
+    # Two distinct suites in our seed (4400 and 4500)
+    assert len(body["suite_variants"]) >= 2
+    assert "party_sides" in body
+    # Hydrated party-sides
+    for ps in body["party_sides"]:
+        assert "brand_phrases" in ps
+
+
+def test_address_detail_404(client):
+    resp = client.get("/api/explorer/addresses/zz%7Cnowhere%7Clane")
+    assert resp.status_code == 404
+
+
+# ── Contacts ───────────────────────────────────────────────────
+
+def test_list_contacts(client):
+    resp = client.get("/api/explorer/contacts")
+    body = resp.json()
+    names = {r["contact_fingerprint"] for r in body["results"]}
+    assert "rob kumer" in names
+
+
+def test_contact_detail(client):
+    resp = client.get("/api/explorer/contacts/rob%20kumer")
+    body = resp.json()
+    assert body["contact_fingerprint"] == "rob kumer"
+    assert body["n_party_sides"] == 2
+    assert len(body["party_sides"]) == 2
