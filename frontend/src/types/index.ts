@@ -1638,3 +1638,26 @@ export interface BrandTrigramDetail extends BrandTrigramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
 }
+
+// ============================================================
+// Explorer — Phones
+// ============================================================
+
+export interface PhoneSummary {
+  phone: string;
+  n_party_sides: number;
+}
+
+export interface PhoneListResponse {
+  results: PhoneSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface PhoneDetail {
+  phone: string;
+  n_party_sides: number;
+  party_sides: ExplorerPartySide[];
+}
