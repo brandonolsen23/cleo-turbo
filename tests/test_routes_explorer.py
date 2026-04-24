@@ -33,6 +33,9 @@ def _seeded_db():
         CREATE TABLE industry_stopwords (
             token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
         );
+        CREATE TABLE places (
+            token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
+        );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
     # (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
@@ -204,3 +207,67 @@ def test_mark_unknown_token_returns_404(client):
     # summary-sync step has no row to update. We accept either 204 or 404.
     resp = client.post("/api/explorer/brands/zzz_nonesuch/industry-stopword")
     assert resp.status_code in (204, 404)
+
+
+def test_mark_place(client):
+    resp = client.post("/api/explorer/brands/kingsett/place")
+    assert resp.status_code == 204
+
+    resp2 = client.get("/api/explorer/places")
+    body = resp2.json()
+    assert "kingsett" in {r["token"] for r in body["results"]}
+
+    resp3 = client.get("/api/explorer/brands/kingsett")
+    body3 = resp3.json()
+    assert body3["is_place_name"] == 1
+    assert body3["is_distinctive"] == 0
+    assert body3["filter_reason"] == "place"
+
+
+def test_unmark_place(client):
+    client.post("/api/explorer/brands/kingsett/place")
+    resp = client.delete("/api/explorer/brands/kingsett/place")
+    assert resp.status_code == 204
+
+    resp2 = client.get("/api/explorer/places")
+    body = resp2.json()
+    assert "kingsett" not in {r["token"] for r in body["results"]}
+
+    resp3 = client.get("/api/explorer/brands/kingsett")
+    body3 = resp3.json()
+    assert body3["is_place_name"] == 0
+    # Was distinctive in the fixture (idf=6.5 > 3.0, no other flags set), so:
+    assert body3["is_distinctive"] == 1
+    assert body3["filter_reason"] is None
+
+
+def test_place_takes_precedence_over_english_in_reason(client):
+    # Simulate a token with is_english_common=1 already set
+    conn = _seeded_db()
+    conn.execute(
+        "UPDATE brand_token_summary SET is_english_common = 1 WHERE token = 'kingsett'"
+    )
+    conn.commit()
+
+    from cleo.web.app import app
+    from cleo.web import deps
+
+    def _get_override():
+        yield conn
+
+    app.dependency_overrides[deps.get_db] = _get_override
+    app.dependency_overrides[deps.get_current_user] = lambda: {"email": "test"}
+
+    from fastapi.testclient import TestClient
+    local_client = TestClient(app)
+
+    local_client.post("/api/explorer/brands/kingsett/place")
+    resp = local_client.get("/api/explorer/brands/kingsett")
+    body = resp.json()
+    # Both english AND place flags are set; precedence says reason = 'place'
+    assert body["is_english_common"] == 1
+    assert body["is_place_name"] == 1
+    assert body["filter_reason"] == "place"
+
+    app.dependency_overrides.clear()
+    conn.close()

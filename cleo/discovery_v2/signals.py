@@ -1,8 +1,9 @@
 """External-signal helpers for distinctiveness classification.
 
-- is_english_common_token: uses wordfreq Zipf frequency
-- load_place_names + is_place_name: Canadian places gazetteer
+- is_english_common_token / common_language_zipf: wordfreq Zipf (EN + FR)
+- load_place_names + is_place_name: Canadian places gazetteer + DB table
 - load_industry_stopwords: seed JSON + persistent DB table
+- seed_places_table: populate places from canadian_places.json on first run
 """
 
 from __future__ import annotations
@@ -20,13 +21,31 @@ _RESOURCES = Path(__file__).parent / "resources"
 DEFAULT_ZIPF_THRESHOLD = 3.0
 
 
+def common_language_zipf(token: str) -> float:
+    """Return the maximum Zipf score across English and French wordfreq.
+
+    Canadian RT data contains French-Canadian corporate names (e.g.
+    'ferme', 'groupe', 'conseil'). Checking only English misses them.
+    """
+    en_zipf = wordfreq.zipf_frequency(token, "en")
+    fr_zipf = wordfreq.zipf_frequency(token, "fr")
+    return max(en_zipf, fr_zipf)
+
+
 def is_english_common_token(token: str, *, zipf_threshold: float = DEFAULT_ZIPF_THRESHOLD) -> bool:
-    """True if the token is common enough in English to NOT be distinctive."""
-    return wordfreq.zipf_frequency(token, "en") >= zipf_threshold
+    """True if the token is common in English OR French at the given threshold.
+
+    Kept the name for backward compat, though it's now bilingual.
+    """
+    return common_language_zipf(token) >= zipf_threshold
 
 
-def load_place_names() -> Set[str]:
-    """Return a lowercased set of Canadian place-name tokens."""
+def load_place_names(conn=None) -> Set[str]:
+    """Lowercased set of place-name tokens.
+
+    Union of the bundled canadian_places.json and, if `conn` is given,
+    any entries in the `places` DB table (seed + user-curated).
+    """
     path = _RESOURCES / "canadian_places.json"
     data = json.loads(path.read_text())
     tokens: Set[str] = set()
@@ -35,7 +54,39 @@ def load_place_names() -> Set[str]:
             continue
         if isinstance(value, list):
             tokens.update(v.lower() for v in value)
+    if conn is not None:
+        for row in conn.execute("SELECT token FROM places"):
+            tokens.add(row[0])
     return tokens
+
+
+def seed_places_table(conn) -> int:
+    """Populate `places` from canadian_places.json if empty.
+
+    Only inserts source='seed' rows; user entries are untouched.
+    Returns the number of rows inserted.
+    """
+    existing = {r[0] for r in conn.execute("SELECT token FROM places WHERE source = 'seed'")}
+    path = _RESOURCES / "canadian_places.json"
+    data = json.loads(path.read_text())
+    inserted = 0
+    for key, value in data.items():
+        if key == "comment":
+            continue
+        if not isinstance(value, list):
+            continue
+        for token in value:
+            t = token.lower()
+            if t in existing:
+                continue
+            conn.execute(
+                "INSERT OR IGNORE INTO places (token, added_by, source) "
+                "VALUES (?, 'system', 'seed')",
+                (t,),
+            )
+            inserted += 1
+    conn.commit()
+    return inserted
 
 
 def is_place_name(token: str, place_names: Optional[Set[str]] = None) -> bool:

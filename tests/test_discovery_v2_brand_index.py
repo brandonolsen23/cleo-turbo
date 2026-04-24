@@ -29,6 +29,9 @@ def _make_db():
         CREATE TABLE industry_stopwords (
             token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
         );
+        CREATE TABLE places (
+            token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
+        );
     """)
     return conn
 

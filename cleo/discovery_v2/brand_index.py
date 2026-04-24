@@ -13,11 +13,9 @@ from __future__ import annotations
 import math
 from typing import Optional
 
-import wordfreq
-
 from .config import CALIBRATION
 from .signals import (
-    is_english_common_token, load_place_names,
+    is_english_common_token, load_place_names, common_language_zipf,
     load_industry_stopwords, DEFAULT_ZIPF_THRESHOLD,
 )
 
@@ -33,7 +31,7 @@ def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = 
     excluded = CALIBRATION["excluded_brand_tokens"]
 
     # Load external signal sources once before the per-token loop.
-    place_names = load_place_names()
+    place_names = load_place_names(conn)
     industry_stopwords_set = load_industry_stopwords(conn)
     zipf_threshold = DEFAULT_ZIPF_THRESHOLD
 
@@ -96,7 +94,7 @@ def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = 
         idf = math.log(n_party_sides_total / (1 + df))
 
         try:
-            zipf = float(wordfreq.zipf_frequency(token, "en"))
+            zipf = common_language_zipf(token)
         except Exception:
             zipf = 0.0
 

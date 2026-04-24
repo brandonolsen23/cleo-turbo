@@ -63,3 +63,54 @@ def test_industry_stopwords_loads_seed_and_db_entries():
     assert "gp" in stopwords  # from seed
     assert "reit" in stopwords  # from seed
     assert "brickyard" in stopwords  # user-added
+
+
+def test_common_language_zipf_takes_max_of_en_and_fr():
+    from cleo.discovery_v2.signals import common_language_zipf
+    # 'groupe' is common in French, rare in English
+    fr_zipf = common_language_zipf("groupe")
+    assert fr_zipf >= 5.0, f"groupe should score high via French: {fr_zipf}"
+
+    # 'river' common in English, rare in French
+    en_zipf = common_language_zipf("river")
+    assert en_zipf >= 5.0
+
+
+def test_is_english_common_catches_french_words():
+    """The function is named 'is_english_common' for back-compat but is now bilingual."""
+    from cleo.discovery_v2.signals import is_english_common_token
+    assert is_english_common_token("groupe")
+    assert is_english_common_token("conseil")
+    assert is_english_common_token("ferme")
+
+
+def test_load_place_names_includes_db_entries():
+    import sqlite3
+    from cleo.discovery_v2.signals import load_place_names
+
+    conn = sqlite3.connect(":memory:")
+    conn.executescript("""
+        CREATE TABLE places (
+            token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
+        );
+        INSERT INTO places VALUES ('someplace', 'brandon', datetime('now'), 'user');
+    """)
+    places = load_place_names(conn)
+    assert "toronto" in places  # from JSON seed
+    assert "someplace" in places  # from DB
+
+
+def test_seed_places_table_is_idempotent():
+    import sqlite3
+    from cleo.discovery_v2.signals import seed_places_table
+
+    conn = sqlite3.connect(":memory:")
+    conn.executescript("""
+        CREATE TABLE places (
+            token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
+        );
+    """)
+    first = seed_places_table(conn)
+    assert first > 0
+    second = seed_places_table(conn)
+    assert second == 0  # idempotent

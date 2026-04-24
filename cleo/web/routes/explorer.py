@@ -181,3 +181,73 @@ def unmark_industry_stopword(
         )
     db.commit()
     return Response(status_code=204)
+
+
+@router.get("/places")
+def list_places(db=Depends(get_db), user=Depends(get_current_user)):
+    rows = db.execute(
+        "SELECT token, added_by, added_at, source FROM places "
+        "ORDER BY source DESC, added_at DESC"
+    ).fetchall()
+    return {"results": [dict(r) for r in rows]}
+
+
+@router.post("/brands/{token}/place", status_code=204)
+def mark_place(
+    token: str, db=Depends(get_db), user=Depends(get_current_user)
+):
+    added_by = user.get("email") if isinstance(user, dict) else str(user)
+    db.execute(
+        "INSERT OR REPLACE INTO places (token, added_by, source) "
+        "VALUES (?, ?, 'user')",
+        (token, added_by),
+    )
+    # Reflect in brand_token_summary immediately.
+    # Place takes precedence OVER english but UNDER industry and excluded.
+    db.execute(
+        """UPDATE brand_token_summary
+           SET is_place_name = 1,
+               is_distinctive = 0,
+               filter_reason = CASE
+                 WHEN is_excluded = 1 THEN 'excluded'
+                 WHEN is_industry_stopword = 1 THEN 'industry'
+                 ELSE 'place'
+               END
+           WHERE token = ?""",
+        (token,),
+    )
+    db.commit()
+    return Response(status_code=204)
+
+
+@router.delete("/brands/{token}/place", status_code=204)
+def unmark_place(
+    token: str, db=Depends(get_db), user=Depends(get_current_user)
+):
+    db.execute("DELETE FROM places WHERE token = ?", (token,))
+
+    row = db.execute(
+        """SELECT idf, is_excluded, is_industry_stopword, is_english_common
+           FROM brand_token_summary WHERE token = ?""",
+        (token,),
+    ).fetchone()
+    if row:
+        from cleo.discovery_v2.config import CALIBRATION
+        min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
+        if row["is_excluded"]:
+            reason, distinctive = "excluded", 0
+        elif row["is_industry_stopword"]:
+            reason, distinctive = "industry", 0
+        elif row["is_english_common"]:
+            reason, distinctive = "english", 0
+        elif row["idf"] < min_idf:
+            reason, distinctive = None, 0
+        else:
+            reason, distinctive = None, 1
+        db.execute(
+            """UPDATE brand_token_summary SET is_place_name = 0,
+               is_distinctive = ?, filter_reason = ? WHERE token = ?""",
+            (distinctive, reason, token),
+        )
+    db.commit()
+    return Response(status_code=204)
