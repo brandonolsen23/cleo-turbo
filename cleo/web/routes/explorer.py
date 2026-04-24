@@ -84,14 +84,18 @@ def brand_token_detail(
     if summary_row is None:
         raise HTTPException(status_code=404, detail=f"Unknown brand_token: {token!r}")
 
+    # Phrases that ACTUALLY contain the token as a word. The previous version
+    # returned every phrase on any party-side carrying the token, which picked
+    # up unrelated co-phrases (e.g., party_name='11 yorkville partners' +
+    # trade_name='riocan holdings' would have leaked '11 yorkville partners'
+    # into the riocan detail view).
     phrases = [
         r["atom_value"] for r in db.execute(
-            """SELECT DISTINCT pa.atom_value
-               FROM party_atoms pa
-               JOIN brand_token_index bti
-                 ON bti.source_id = pa.source_id AND bti.side = pa.side
-               WHERE bti.token = ? AND pa.atom_type = 'brand_phrase'
-               ORDER BY pa.atom_value""",
+            """SELECT DISTINCT atom_value
+               FROM party_atoms
+               WHERE atom_type = 'brand_phrase'
+                 AND (' ' || atom_value || ' ') LIKE ('% ' || ? || ' %')
+               ORDER BY atom_value""",
             (token,),
         )
     ]
