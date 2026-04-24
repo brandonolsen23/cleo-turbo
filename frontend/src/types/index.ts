@@ -1588,3 +1588,53 @@ export interface BrandTokenDetail extends BrandTokenSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
 }
+
+// ============================================================
+// Brand N-gram Explorer (bigrams + trigrams)
+// ============================================================
+
+export interface BrandBigramSummary {
+  bigram: string;
+  token_a: string;
+  token_b: string;
+  idf: number;
+  n_party_sides: number;
+  n_distinct_phrases: number;
+  any_token_distinctive: 0 | 1;
+  any_token_excluded: 0 | 1;
+  all_english: 0 | 1;
+  all_place: 0 | 1;
+  all_industry: 0 | 1;
+  is_distinctive: 0 | 1;
+}
+
+export interface BrandBigramListResponse {
+  results: BrandBigramSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface BrandBigramDetail extends BrandBigramSummary {
+  phrases: string[];
+  party_sides: ExplorerPartySide[];
+}
+
+export interface BrandTrigramSummary extends Omit<BrandBigramSummary, "bigram"> {
+  trigram: string;
+  token_c: string;
+}
+
+export interface BrandTrigramListResponse {
+  results: BrandTrigramSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface BrandTrigramDetail extends BrandTrigramSummary {
+  phrases: string[];
+  party_sides: ExplorerPartySide[];
+}

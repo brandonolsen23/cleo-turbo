@@ -53,6 +53,10 @@ const LabelingAuditPage = lazy(() => import("./pages/LabelingAuditPage"));
 const LabelingSessionPage = lazy(() => import("./pages/LabelingSessionPage"));
 const ExplorerBrandsUnigram = lazy(() => import("./pages/ExplorerBrandsUnigram"));
 const ExplorerBrandUnigramDetail = lazy(() => import("./pages/ExplorerBrandUnigramDetail"));
+const ExplorerBrandsBigram = lazy(() => import("./pages/ExplorerBrandsBigram"));
+const ExplorerBrandBigramDetail = lazy(() => import("./pages/ExplorerBrandBigramDetail"));
+const ExplorerBrandsTrigram = lazy(() => import("./pages/ExplorerBrandsTrigram"));
+const ExplorerBrandTrigramDetail = lazy(() => import("./pages/ExplorerBrandTrigramDetail"));
 
 // ============================================================
 // Auth Provider
@@ -132,6 +136,10 @@ export default function App() {
                 <Route path="/explorer/brands" element={<Navigate to="/explorer/brands/1gram" replace />} />
                 <Route path="/explorer/brands/1gram" element={<ExplorerBrandsUnigram />} />
                 <Route path="/explorer/brands/1gram/:token" element={<ExplorerBrandUnigramDetail />} />
+                <Route path="/explorer/brands/2gram" element={<ExplorerBrandsBigram />} />
+                <Route path="/explorer/brands/2gram/:bigram" element={<ExplorerBrandBigramDetail />} />
+                <Route path="/explorer/brands/3gram" element={<ExplorerBrandsTrigram />} />
+                <Route path="/explorer/brands/3gram/:trigram" element={<ExplorerBrandTrigramDetail />} />
                 <Route path="/labeling" element={<LabelingPage />} />
                 <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
                 <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />
