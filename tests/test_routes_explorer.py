@@ -26,18 +26,29 @@ def _seeded_db():
         CREATE TABLE brand_token_summary (
             token TEXT PRIMARY KEY, idf REAL, n_party_sides INTEGER,
             n_distinct_phrases INTEGER, is_distinctive INTEGER, is_excluded INTEGER,
+            wordfreq_zipf REAL, is_english_common INTEGER, is_place_name INTEGER,
+            is_industry_stopword INTEGER, filter_reason TEXT,
             discovered_at TEXT
+        );
+        CREATE TABLE industry_stopwords (
+            token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
         );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
+    # (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
+    #  wordfreq_zipf, is_english_common, is_place_name, is_industry_stopword,
+    #  filter_reason, discovered_at)
     conn.execute(
-        "INSERT INTO brand_token_summary VALUES ('kingsett', 6.5, 2, 2, 1, 0, '2026-04-23')"
+        "INSERT INTO brand_token_summary VALUES "
+        "('kingsett', 6.5, 2, 2, 1, 0, 0.0, 0, 0, 0, NULL, '2026-04-23')"
     )
     conn.execute(
-        "INSERT INTO brand_token_summary VALUES ('rasenberg', 5.2, 2, 1, 1, 0, '2026-04-23')"
+        "INSERT INTO brand_token_summary VALUES "
+        "('rasenberg', 5.2, 2, 1, 1, 0, 1.56, 0, 0, 0, NULL, '2026-04-23')"
     )
     conn.execute(
-        "INSERT INTO brand_token_summary VALUES ('ontario', 0.8, 3, 3, 0, 0, '2026-04-23')"
+        "INSERT INTO brand_token_summary VALUES "
+        "('ontario', 0.8, 3, 3, 0, 0, 4.5, 1, 1, 0, 'place', '2026-04-23')"
     )
     for sid, tok, phrase in [
         ("RT1", "kingsett", "kingsett capital"),
@@ -122,3 +133,74 @@ def test_detail_returns_party_sides_and_phrases(client):
 def test_detail_unknown_token_returns_404(client):
     resp = client.get("/api/explorer/brands/nonesuch")
     assert resp.status_code == 404
+
+
+def test_list_response_includes_signal_fields(client):
+    resp = client.get("/api/explorer/brands?distinctive_only=false")
+    body = resp.json()
+    for t in body["results"]:
+        for field in ("wordfreq_zipf", "is_english_common", "is_place_name",
+                      "is_industry_stopword", "filter_reason"):
+            assert field in t, f"Response missing {field!r}: {t!r}"
+
+
+def test_list_supports_filter_reason_param(client):
+    # Only 'ontario' in the fixture has filter_reason='place'.
+    resp = client.get("/api/explorer/brands?distinctive_only=false&filter_reason=place")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["total"] == 1
+    assert body["results"][0]["token"] == "ontario"
+
+
+def test_list_filter_reason_english_returns_none_in_fixture(client):
+    # No token in the fixture has filter_reason='english'.
+    resp = client.get("/api/explorer/brands?distinctive_only=false&filter_reason=english")
+    assert resp.status_code == 200
+    assert resp.json()["total"] == 0
+
+
+def test_mark_industry_stopword(client):
+    resp = client.post("/api/explorer/brands/kingsett/industry-stopword")
+    assert resp.status_code == 204
+
+    resp2 = client.get("/api/explorer/industry-stopwords")
+    body = resp2.json()
+    assert "kingsett" in {r["token"] for r in body["results"]}
+
+    # Brand summary for 'kingsett' should reflect the change.
+    resp3 = client.get("/api/explorer/brands/kingsett")
+    body3 = resp3.json()
+    assert body3["is_industry_stopword"] == 1
+    assert body3["is_distinctive"] == 0
+    assert body3["filter_reason"] == "industry"
+
+
+def test_unmark_industry_stopword(client):
+    # Start fresh — mark then unmark.
+    client.post("/api/explorer/brands/kingsett/industry-stopword")
+    resp = client.delete("/api/explorer/brands/kingsett/industry-stopword")
+    assert resp.status_code == 204
+
+    resp2 = client.get("/api/explorer/industry-stopwords")
+    body = resp2.json()
+    assert "kingsett" not in {r["token"] for r in body["results"]}
+
+    # Brand summary for 'kingsett' should have is_industry_stopword=0 and,
+    # since its other filter flags are all 0 and it was distinctive before,
+    # filter_reason should revert to NULL and is_distinctive=1.
+    resp3 = client.get("/api/explorer/brands/kingsett")
+    body3 = resp3.json()
+    assert body3["is_industry_stopword"] == 0
+    # Note: our fixture kingsett has idf=6.5 > default min_idf=3.0, and all
+    # other filters are 0. So it should become distinctive again.
+    assert body3["is_distinctive"] == 1
+    assert body3["filter_reason"] is None
+
+
+def test_mark_unknown_token_returns_404(client):
+    # Optional behavior — adding a token that isn't in brand_token_summary
+    # should still succeed as a bare insert into industry_stopwords, but the
+    # summary-sync step has no row to update. We accept either 204 or 404.
+    resp = client.post("/api/explorer/brands/zzz_nonesuch/industry-stopword")
+    assert resp.status_code in (204, 404)
