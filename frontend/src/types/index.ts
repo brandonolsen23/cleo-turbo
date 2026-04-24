@@ -1550,6 +1550,11 @@ export interface BrandTokenSummary {
   n_distinct_phrases: number;
   is_distinctive: 0 | 1;
   is_excluded: 0 | 1;
+  wordfreq_zipf: number | null;
+  is_english_common: 0 | 1 | null;
+  is_place_name: 0 | 1 | null;
+  is_industry_stopword: 0 | 1 | null;
+  filter_reason: "excluded" | "industry" | "place" | "english" | null;
 }
 
 export interface BrandTokenListResponse {
