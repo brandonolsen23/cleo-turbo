@@ -1,26 +1,52 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Heading, Text, Badge, Button, TextField, Switch } from "@radix-ui/themes";
+import { Heading, Text, Badge, Button, TextField, Switch, Checkbox } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { BrandTokenListResponse, BrandTokenSummary } from "../types";
+
+type SignalToggle = {
+  english: boolean;
+  place: boolean;
+  industry: boolean;
+  excluded: boolean;
+};
+
+const NO_SIGNAL: SignalToggle = {
+  english: false, place: false, industry: false, excluded: false,
+};
 
 export default function ExplorerBrands() {
   const nav = useNavigate();
   const [data, setData] = useState<BrandTokenListResponse | null>(null);
   const [q, setQ] = useState("");
   const [distinctiveOnly, setDistinctiveOnly] = useState(true);
-  const [filterReason, setFilterReason] = useState<string>("");
+  const [signals, setSignals] = useState<SignalToggle>(NO_SIGNAL);
   const [page, setPage] = useState(1);
-  const perPage = 50;
+  const perPage = 200;
 
+  const anySignalOn = Object.values(signals).some(Boolean);
+
+  // When a signal toggle is on, fetch the full list (no distinctive_only)
+  // and filter client-side — the backend's filter_reason param is
+  // precedence-based and would hide tokens caught by a specific signal
+  // that's also caught by a higher-precedence one.
   useEffect(() => {
-    const params: Record<string, any> = {
-      q, distinctive_only: distinctiveOnly, page, per_page: perPage,
-    };
-    if (filterReason) params.filter_reason = filterReason;
-    fetchApi<BrandTokenListResponse>("/explorer/brands", params)
-      .then(setData).catch((e) => console.error(e));
-  }, [q, distinctiveOnly, filterReason, page]);
+    const effectiveDistinctive = anySignalOn ? false : distinctiveOnly;
+    fetchApi<BrandTokenListResponse>("/explorer/brands", {
+      q, distinctive_only: effectiveDistinctive, page, per_page: perPage,
+    }).then(setData).catch((e) => console.error(e));
+  }, [q, distinctiveOnly, signals, page]);
+
+  const filtered: BrandTokenSummary[] = (() => {
+    if (!data) return [];
+    if (!anySignalOn) return data.results;
+    return data.results.filter((t) =>
+      (signals.english && t.is_english_common === 1) ||
+      (signals.place && t.is_place_name === 1) ||
+      (signals.industry && t.is_industry_stopword === 1) ||
+      (signals.excluded && t.is_excluded === 1)
+    );
+  })();
 
   function reasonBadge(reason: BrandTokenSummary["filter_reason"]) {
     if (reason === null) return <Badge size="1" color="jade">distinctive</Badge>;
@@ -29,6 +55,17 @@ export default function ExplorerBrands() {
       reason === "industry" ? "amber" :
       reason === "place" ? "blue" : "gray";
     return <Badge size="1" variant="soft" color={color}>{reason}</Badge>;
+  }
+
+  function flagCell(value: 0 | 1 | null) {
+    return value === 1
+      ? <span style={{ color: "var(--jade-11)" }}>✓</span>
+      : <span style={{ color: "var(--gray-7)" }}>—</span>;
+  }
+
+  function toggleSignal(key: keyof SignalToggle) {
+    setPage(1);
+    setSignals((prev) => ({ ...prev, [key]: !prev[key] }));
   }
 
   return (
@@ -41,7 +78,8 @@ export default function ExplorerBrands() {
       </div>
       <Text size="2" style={{ color: "var(--gray-9)" }}>
         Each token is a distinct word appearing in a brand_phrase somewhere in the corpus.
-        Click a token to see every party-side carrying it and the other atoms on those sides.
+        The columns EN / PL / IND / EX show which filters caught each token. The
+        "reason" column shows the precedence-winning filter.
       </Text>
 
       <div className="flex items-center gap-4 my-5 flex-wrap">
@@ -49,27 +87,43 @@ export default function ExplorerBrands() {
                         value={q} onChange={(e) => { setPage(1); setQ(e.target.value); }}
                         style={{ width: 280 }} />
         <label className="flex items-center gap-2 text-[13px]">
-          <Switch size="2" checked={distinctiveOnly}
-                  onCheckedChange={(v) => { setPage(1); setDistinctiveOnly(v); setFilterReason(""); }} />
+          <Switch size="2" checked={distinctiveOnly && !anySignalOn}
+                  onCheckedChange={(v) => { setPage(1); setDistinctiveOnly(v); setSignals(NO_SIGNAL); }} />
           Distinctive only
-        </label>
-        <label className="flex items-center gap-2 text-[13px]">
-          Show only:
-          <select value={filterReason}
-                  onChange={(e) => { setPage(1); setFilterReason(e.target.value); if (e.target.value) setDistinctiveOnly(false); }}
-                  className="border border-[var(--gray-6)] rounded px-2 py-1 text-[13px]">
-            <option value="">(all reasons)</option>
-            <option value="english">English common</option>
-            <option value="place">Place name</option>
-            <option value="industry">Industry stopword</option>
-            <option value="excluded">Excluded artifact</option>
-          </select>
         </label>
         {data && (
           <Text size="2" style={{ color: "var(--gray-9)" }}>
-            {data.total.toLocaleString()} tokens
+            showing {filtered.length.toLocaleString()} of {data.total.toLocaleString()} tokens
           </Text>
         )}
+      </div>
+
+      <div className="flex items-center gap-4 mb-5 p-3 rounded-[var(--card-radius)] border border-[var(--gray-6)]"
+           style={{ background: "var(--gray-2)" }}>
+        <Text size="2" style={{ color: "var(--gray-9)" }}>Show tokens matched by:</Text>
+        <label className="flex items-center gap-1 text-[13px]">
+          <Checkbox size="1" checked={signals.english}
+                    onCheckedChange={() => toggleSignal("english")} />
+          English/FR
+        </label>
+        <label className="flex items-center gap-1 text-[13px]">
+          <Checkbox size="1" checked={signals.place}
+                    onCheckedChange={() => toggleSignal("place")} />
+          Place name
+        </label>
+        <label className="flex items-center gap-1 text-[13px]">
+          <Checkbox size="1" checked={signals.industry}
+                    onCheckedChange={() => toggleSignal("industry")} />
+          Industry stopword
+        </label>
+        <label className="flex items-center gap-1 text-[13px]">
+          <Checkbox size="1" checked={signals.excluded}
+                    onCheckedChange={() => toggleSignal("excluded")} />
+          Excluded artifact
+        </label>
+        <Text size="2" style={{ color: "var(--gray-9)" }}>
+          (multi-select; shows union. Zipf threshold = 3.0)
+        </Text>
       </div>
 
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden">
@@ -80,12 +134,16 @@ export default function ExplorerBrands() {
               <th className="text-right p-2 font-medium">IDF</th>
               <th className="text-right p-2 font-medium">Zipf</th>
               <th className="text-right p-2 font-medium">n_party_sides</th>
-              <th className="text-right p-2 font-medium">n_distinct_phrases</th>
+              <th className="text-right p-2 font-medium">n_phrases</th>
+              <th className="text-center p-2 font-medium" title="Common English or French (via wordfreq)">EN</th>
+              <th className="text-center p-2 font-medium" title="Canadian place name (seed + user-curated)">PL</th>
+              <th className="text-center p-2 font-medium" title="Industry stopword (seed + user-curated)">IND</th>
+              <th className="text-center p-2 font-medium" title="Categorical exclusion (artifact)">EX</th>
               <th className="text-left p-2 font-medium">reason</th>
             </tr>
           </thead>
           <tbody>
-            {data?.results.map((t: BrandTokenSummary) => (
+            {filtered.map((t: BrandTokenSummary) => (
               <tr key={t.token}
                   className="border-t border-[var(--gray-4)] hover:bg-[var(--gray-2)] cursor-pointer"
                   onClick={() => nav(`/explorer/brands/${encodeURIComponent(t.token)}`)}>
@@ -96,6 +154,10 @@ export default function ExplorerBrands() {
                 </td>
                 <td className="p-2 text-right">{t.n_party_sides.toLocaleString()}</td>
                 <td className="p-2 text-right">{t.n_distinct_phrases.toLocaleString()}</td>
+                <td className="p-2 text-center">{flagCell(t.is_english_common)}</td>
+                <td className="p-2 text-center">{flagCell(t.is_place_name)}</td>
+                <td className="p-2 text-center">{flagCell(t.is_industry_stopword)}</td>
+                <td className="p-2 text-center">{flagCell(t.is_excluded)}</td>
                 <td className="p-2">{reasonBadge(t.filter_reason)}</td>
               </tr>
             ))}
@@ -103,7 +165,7 @@ export default function ExplorerBrands() {
         </table>
       </div>
 
-      {data && data.pages > 1 && (
+      {data && !anySignalOn && data.pages > 1 && (
         <div className="flex items-center gap-2 mt-4">
           <Button size="1" variant="soft" disabled={page === 1} onClick={() => setPage(page - 1)}>
             Previous

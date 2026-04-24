@@ -17,16 +17,22 @@ export default function ExplorerBrandDetail() {
       .then(setData).catch((e) => setErr(String(e)));
   }, [token]);
 
-  async function toggleStopword() {
+  async function togglePlace() {
+    if (!data) return;
+    await runToggle("place", data.is_place_name === 1);
+  }
+
+  async function toggleIndustry() {
+    if (!data) return;
+    await runToggle("industry-stopword", data.is_industry_stopword === 1);
+  }
+
+  async function runToggle(endpoint: "place" | "industry-stopword", currentlyOn: boolean) {
     if (!data) return;
     setBusy(true);
     try {
-      const path = `/explorer/brands/${encodeURIComponent(data.token)}/industry-stopword`;
-      if (data.is_industry_stopword) {
-        await mutateApi(path, "DELETE");
-      } else {
-        await mutateApi(path, "POST");
-      }
+      const path = `/explorer/brands/${encodeURIComponent(data.token)}/${endpoint}`;
+      await mutateApi(path, currentlyOn ? "DELETE" : "POST");
       const fresh = await fetchApi<BrandTokenDetail>(
         `/explorer/brands/${encodeURIComponent(data.token)}`
       );
@@ -65,8 +71,14 @@ export default function ExplorerBrandDetail() {
         <Button size="1" variant="soft"
                 color={data.is_industry_stopword ? "tomato" : "amber"}
                 disabled={busy}
-                onClick={toggleStopword}>
+                onClick={toggleIndustry}>
           {data.is_industry_stopword ? "Unmark industry stopword" : "Mark as industry stopword"}
+        </Button>
+        <Button size="1" variant="soft"
+                color={data.is_place_name ? "tomato" : "blue"}
+                disabled={busy}
+                onClick={togglePlace}>
+          {data.is_place_name ? "Unmark place name" : "Mark as place name"}
         </Button>
       </div>
 
@@ -76,7 +88,7 @@ export default function ExplorerBrandDetail() {
           <Heading size="5" mt="2">{data.idf.toFixed(2)}</Heading>
         </div>
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-          <Text size="1" style={{ color: "var(--gray-9)" }}>Zipf (English)</Text>
+          <Text size="1" style={{ color: "var(--gray-9)" }}>Zipf (EN + FR)</Text>
           <Heading size="5" mt="2">
             {data.wordfreq_zipf !== null ? data.wordfreq_zipf.toFixed(2) : "—"}
           </Heading>
@@ -100,7 +112,7 @@ export default function ExplorerBrandDetail() {
       <Heading size="4" mt="6" mb="2">Signals</Heading>
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
         <div className="flex flex-wrap gap-2 items-center">
-          {data.is_english_common ? <Badge color="gray">common English</Badge> : null}
+          {data.is_english_common ? <Badge color="gray">common EN/FR</Badge> : null}
           {data.is_place_name ? <Badge color="blue">place name</Badge> : null}
           {data.is_industry_stopword ? <Badge color="amber">industry stopword</Badge> : null}
           {data.is_excluded ? <Badge color="red">excluded artifact</Badge> : null}
