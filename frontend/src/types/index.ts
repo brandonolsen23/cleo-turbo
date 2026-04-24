@@ -1565,6 +1565,12 @@ export interface BrandTokenListResponse {
   pages: number;
 }
 
+export interface ExplorerBrandPhraseEntry {
+  phrase: string;
+  source_field: "party_name" | "trade_name" | "care_of" | "companies_json" | "law_firms_json";
+  contains_token: boolean;
+}
+
 export interface ExplorerPartySide {
   source_id: string;
   side: "buyer" | "seller";
@@ -1575,6 +1581,7 @@ export interface ExplorerPartySide {
   street_suffix: string | null;
   phone: string | null;
   contact_fingerprint: string | null;
+  brand_phrases: ExplorerBrandPhraseEntry[];
 }
 
 export interface BrandTokenDetail extends BrandTokenSummary {

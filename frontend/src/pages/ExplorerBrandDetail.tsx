@@ -136,33 +136,51 @@ export default function ExplorerBrandDetail() {
       <Heading size="4" mt="6" mb="2">
         Party-sides ({data.party_sides.length.toLocaleString()})
       </Heading>
-      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden">
-        <table className="w-full text-[13px]">
-          <thead className="bg-[var(--gray-2)]">
-            <tr style={{ color: "var(--gray-9)" }}>
-              <th className="text-left p-2 font-medium">source_id</th>
-              <th className="text-left p-2 font-medium">side</th>
-              <th className="text-left p-2 font-medium">sale_date</th>
-              <th className="text-left p-2 font-medium">address</th>
-              <th className="text-left p-2 font-medium">postal</th>
-              <th className="text-left p-2 font-medium">phone</th>
-              <th className="text-left p-2 font-medium">contact</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.party_sides.map((p) => (
-              <tr key={`${p.source_id}-${p.side}`} className="border-t border-[var(--gray-4)]">
-                <td className="p-2 font-mono">{p.source_id}</td>
-                <td className="p-2">{p.side}</td>
-                <td className="p-2">{p.sale_date ? formatDate(p.sale_date) : "—"}</td>
-                <td className="p-2">{addr(p)}</td>
-                <td className="p-2">{p.postal || "—"}</td>
-                <td className="p-2">{p.phone || "—"}</td>
-                <td className="p-2">{p.contact_fingerprint || "—"}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="flex flex-col gap-3">
+        {data.party_sides.map((p) => (
+          <div key={`${p.source_id}-${p.side}`}
+               className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
+            <div className="flex items-baseline gap-3 flex-wrap mb-2">
+              <Text size="2" className="font-mono" weight="medium">{p.source_id}</Text>
+              <Badge size="1" variant="soft" color={p.side === "buyer" ? "jade" : "blue"}>
+                {p.side}
+              </Badge>
+              <Text size="2" style={{ color: "var(--gray-9)" }}>
+                {p.sale_date ? formatDate(p.sale_date) : "—"}
+              </Text>
+              <div className="flex-1" />
+              <Text size="2" style={{ color: "var(--gray-9)" }}>
+                {addr(p)}{p.postal ? ` · ${p.postal}` : ""}
+                {p.phone ? ` · ${p.phone}` : ""}
+                {p.contact_fingerprint ? ` · ${p.contact_fingerprint}` : ""}
+              </Text>
+            </div>
+            <div className="flex flex-col gap-1">
+              {p.brand_phrases.length === 0 ? (
+                <Text size="2" style={{ color: "var(--gray-9)" }}>(no brand phrases on this party-side)</Text>
+              ) : p.brand_phrases.map((entry, i) => (
+                <div key={i} className="flex items-center gap-2 text-[13px]">
+                  <Badge size="1" variant="soft" color="gray"
+                         style={{ minWidth: 110, justifyContent: "center" }}>
+                    {entry.source_field}
+                  </Badge>
+                  <span className={entry.contains_token ? "font-mono font-semibold" : "font-mono"}
+                        style={{
+                          color: entry.contains_token ? "var(--jade-11)" : "var(--gray-12)",
+                          background: entry.contains_token ? "var(--jade-3)" : "transparent",
+                          padding: entry.contains_token ? "2px 6px" : undefined,
+                          borderRadius: entry.contains_token ? 4 : undefined,
+                        }}>
+                    {entry.phrase}
+                  </span>
+                  {entry.contains_token && (
+                    <Text size="1" style={{ color: "var(--jade-11)" }}>← contains "{data.token}"</Text>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -100,20 +100,65 @@ def brand_token_detail(
         )
     ]
 
-    party_sides = [
-        dict(r) for r in db.execute(
-            """SELECT bti.source_id, bti.side,
-                      pf.sale_date, pf.postal,
-                      pf.street_number, pf.street_name, pf.street_suffix,
-                      pf.phone, pf.contact_fingerprint
-               FROM brand_token_index bti
-               LEFT JOIN party_fingerprints pf
-                 ON pf.source_id = bti.source_id AND pf.side = bti.side
-               WHERE bti.token = ?
-               ORDER BY pf.sale_date DESC, bti.source_id""",
-            (token,),
-        )
-    ]
+    party_side_rows = db.execute(
+        """SELECT bti.source_id, bti.side,
+                  pf.sale_date, pf.postal,
+                  pf.street_number, pf.street_name, pf.street_suffix,
+                  pf.phone, pf.contact_fingerprint
+           FROM brand_token_index bti
+           LEFT JOIN party_fingerprints pf
+             ON pf.source_id = bti.source_id AND pf.side = bti.side
+           WHERE bti.token = ?
+           ORDER BY pf.sale_date DESC, bti.source_id""",
+        (token,),
+    ).fetchall()
+
+    # Gather every brand_phrase carried on these party-sides, grouped by
+    # (source_id, side). Each phrase keeps its source_field (party_name /
+    # trade_name / care_of / companies_json / law_firms_json) and a flag
+    # indicating whether it contains the queried token as a whole word.
+    ps_keys = {(r["source_id"], r["side"]) for r in party_side_rows}
+    phrases_by_side: dict = {}
+    if ps_keys:
+        rows = db.execute(
+            "SELECT source_id, side, atom_value, source_field "
+            "FROM party_atoms WHERE atom_type = 'brand_phrase'"
+        ).fetchall()
+        for r in rows:
+            key = (r["source_id"], r["side"])
+            if key not in ps_keys:
+                continue
+            val = r["atom_value"]
+            contains = (" " + val + " ").find(" " + token + " ") != -1
+            phrases_by_side.setdefault(key, []).append({
+                "phrase": val,
+                "source_field": r["source_field"],
+                "contains_token": contains,
+            })
+
+    def _field_order(entry):
+        # Display order for the source_field tags.
+        order = {
+            "party_name": 0, "trade_name": 1, "care_of": 2,
+            "companies_json": 3, "law_firms_json": 4,
+        }
+        return order.get(entry["source_field"], 99)
+
+    party_sides = []
+    for r in party_side_rows:
+        key = (r["source_id"], r["side"])
+        entries = phrases_by_side.get(key, [])
+        # Dedup same (phrase, source_field) pairs and sort by field then phrase
+        seen = set()
+        deduped = []
+        for e in entries:
+            k = (e["phrase"], e["source_field"])
+            if k in seen:
+                continue
+            seen.add(k)
+            deduped.append(e)
+        deduped.sort(key=lambda e: (_field_order(e), e["phrase"]))
+        party_sides.append({**dict(r), "brand_phrases": deduped})
 
     return {
         **dict(summary_row),
