@@ -1,8 +1,11 @@
-"""Developer entry point — `python -m cleo.discovery_v2`."""
+"""Developer entry point — `python -m cleo.discovery_v2`.
+
+Runs all Layer 1 silo builders. Not a user surface.
+"""
 
 from __future__ import annotations
 from cleo.database.connection import get_connection
-from cleo.discovery_v2.brand_index import build_brand_index
+from cleo.discovery_v2.brand_index import build_all_indexes
 from cleo.discovery_v2.signals import (
     seed_industry_stopwords_table, seed_places_table,
 )
@@ -16,7 +19,7 @@ def main():
         print(f"Seeded {n1} industry_stopwords rows")
     if n2 > 0:
         print(f"Seeded {n2} places rows")
-    build_brand_index(conn)
+    build_all_indexes(conn)
     conn.close()
 
 
