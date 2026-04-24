@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
 import { fetchApi, mutateApi } from "../api/client";
-import { formatDate } from "../lib/utils";
-import type { BrandTokenDetail, ExplorerPartySide } from "../types";
+import type { BrandTokenDetail } from "../types";
+import PartySideCard from "../components/explorer/PartySideCard";
 
 export default function ExplorerBrandUnigramDetail() {
   const { token } = useParams<{ token: string }>();
@@ -46,9 +46,6 @@ export default function ExplorerBrandUnigramDetail() {
 
   if (err) return <div className="p-6"><Text color="tomato">{err}</Text></div>;
   if (!data) return <div className="p-6"><Text size="2" style={{ color: "var(--gray-9)" }}>Loading…</Text></div>;
-
-  const addr = (p: ExplorerPartySide) =>
-    [p.street_number, p.street_name, p.street_suffix].filter(Boolean).join(" ") || "—";
 
   const reasonBadge = data.filter_reason === null
     ? <Badge color="jade">distinctive</Badge>
@@ -138,48 +135,9 @@ export default function ExplorerBrandUnigramDetail() {
       </Heading>
       <div className="flex flex-col gap-3">
         {data.party_sides.map((p) => (
-          <div key={`${p.source_id}-${p.side}`}
-               className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
-            <div className="flex items-baseline gap-3 flex-wrap mb-2">
-              <Text size="2" className="font-mono" weight="medium">{p.source_id}</Text>
-              <Badge size="1" variant="soft" color={p.side === "buyer" ? "jade" : "blue"}>
-                {p.side}
-              </Badge>
-              <Text size="2" style={{ color: "var(--gray-9)" }}>
-                {p.sale_date ? formatDate(p.sale_date) : "—"}
-              </Text>
-              <div className="flex-1" />
-              <Text size="2" style={{ color: "var(--gray-9)" }}>
-                {addr(p)}{p.postal ? ` · ${p.postal}` : ""}
-                {p.phone ? ` · ${p.phone}` : ""}
-                {p.contact_fingerprint ? ` · ${p.contact_fingerprint}` : ""}
-              </Text>
-            </div>
-            <div className="flex flex-col gap-1">
-              {p.brand_phrases.length === 0 ? (
-                <Text size="2" style={{ color: "var(--gray-9)" }}>(no brand phrases on this party-side)</Text>
-              ) : p.brand_phrases.map((entry, i) => (
-                <div key={i} className="flex items-center gap-2 text-[13px]">
-                  <Badge size="1" variant="soft" color="gray"
-                         style={{ minWidth: 110, justifyContent: "center" }}>
-                    {entry.source_field}
-                  </Badge>
-                  <span className={entry.contains_token ? "font-mono font-semibold" : "font-mono"}
-                        style={{
-                          color: entry.contains_token ? "var(--jade-11)" : "var(--gray-12)",
-                          background: entry.contains_token ? "var(--jade-3)" : "transparent",
-                          padding: entry.contains_token ? "2px 6px" : undefined,
-                          borderRadius: entry.contains_token ? 4 : undefined,
-                        }}>
-                    {entry.phrase}
-                  </span>
-                  {entry.contains_token && (
-                    <Text size="1" style={{ color: "var(--jade-11)" }}>← contains "{data.token}"</Text>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
+          <PartySideCard key={`${p.source_id}-${p.side}`}
+                         partySide={p}
+                         highlightToken={data.token} />
         ))}
       </div>
     </div>
