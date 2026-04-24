@@ -61,6 +61,8 @@ const ExplorerPhones = lazy(() => import("./pages/ExplorerPhones"));
 const ExplorerPhoneDetail = lazy(() => import("./pages/ExplorerPhoneDetail"));
 const ExplorerAddresses = lazy(() => import("./pages/ExplorerAddresses"));
 const ExplorerAddressDetail = lazy(() => import("./pages/ExplorerAddressDetail"));
+const ExplorerContacts = lazy(() => import("./pages/ExplorerContacts"));
+const ExplorerContactDetail = lazy(() => import("./pages/ExplorerContactDetail"));
 
 // ============================================================
 // Auth Provider
@@ -148,6 +150,8 @@ export default function App() {
                 <Route path="/explorer/phones/:phone" element={<ExplorerPhoneDetail />} />
                 <Route path="/explorer/addresses" element={<ExplorerAddresses />} />
                 <Route path="/explorer/addresses/:key" element={<ExplorerAddressDetail />} />
+                <Route path="/explorer/contacts" element={<ExplorerContacts />} />
+                <Route path="/explorer/contacts/:fingerprint" element={<ExplorerContactDetail />} />
                 <Route path="/labeling" element={<LabelingPage />} />
                 <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
                 <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />

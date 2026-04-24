@@ -1695,3 +1695,26 @@ export interface AddressBaseDetail extends AddressBaseSummary {
   suite_variants: AddressSuiteVariant[];
   party_sides: ExplorerPartySide[];
 }
+
+// ============================================================
+// Explorer — Contacts
+// ============================================================
+
+export interface ContactFingerprintSummary {
+  contact_fingerprint: string;
+  n_party_sides: number;
+}
+
+export interface ContactListResponse {
+  results: ContactFingerprintSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface ContactFingerprintDetail {
+  contact_fingerprint: string;
+  n_party_sides: number;
+  party_sides: ExplorerPartySide[];
+}

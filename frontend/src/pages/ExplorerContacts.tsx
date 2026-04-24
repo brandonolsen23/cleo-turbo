@@ -1,0 +1,85 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Heading, Text, Button, TextField } from "@radix-ui/themes";
+import { fetchApi } from "../api/client";
+import type { ContactListResponse, ContactFingerprintSummary } from "../types";
+import ExplorerTabs from "../components/explorer/ExplorerTabs";
+
+function titleCase(s: string): string {
+  return s.split(" ").map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(" ");
+}
+
+export default function ExplorerContacts() {
+  const nav = useNavigate();
+  const [data, setData] = useState<ContactListResponse | null>(null);
+  const [q, setQ] = useState("");
+  const [page, setPage] = useState(1);
+  const perPage = 100;
+
+  useEffect(() => {
+    fetchApi<ContactListResponse>("/explorer/contacts", {
+      q, page, per_page: perPage,
+    }).then(setData).catch((e) => console.error(e));
+  }, [q, page]);
+
+  return (
+    <div className="p-6 max-w-6xl mx-auto">
+      <ExplorerTabs />
+      <div className="flex items-baseline gap-4 mb-2">
+        <Heading size="6">Contacts</Heading>
+        <Text size="2" style={{ color: "var(--gray-9)" }}>
+          First+last contact fingerprints from party_fingerprints. Exact match only
+          in Layer 1 — fuzzy / phonetic / nickname variants are a later phase.
+        </Text>
+      </div>
+
+      <div className="flex items-center gap-4 my-5 flex-wrap">
+        <TextField.Root size="2" placeholder="Filter by name…"
+                        value={q} onChange={(e) => { setPage(1); setQ(e.target.value); }}
+                        style={{ width: 280 }} />
+        {data && (
+          <Text size="2" style={{ color: "var(--gray-9)" }}>
+            {data.total.toLocaleString()} contacts
+          </Text>
+        )}
+      </div>
+
+      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden">
+        <table className="w-full text-[13px]">
+          <thead className="bg-[var(--gray-2)]">
+            <tr style={{ color: "var(--gray-9)" }}>
+              <th className="text-left p-2 font-medium">contact_fingerprint</th>
+              <th className="text-left p-2 font-medium">display</th>
+              <th className="text-right p-2 font-medium">n_party_sides</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data?.results.map((t: ContactFingerprintSummary) => (
+              <tr key={t.contact_fingerprint}
+                  className="border-t border-[var(--gray-4)] hover:bg-[var(--gray-2)] cursor-pointer"
+                  onClick={() => nav(`/explorer/contacts/${encodeURIComponent(t.contact_fingerprint)}`)}>
+                <td className="p-2 font-mono">{t.contact_fingerprint}</td>
+                <td className="p-2">{titleCase(t.contact_fingerprint)}</td>
+                <td className="p-2 text-right">{t.n_party_sides.toLocaleString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {data && data.pages > 1 && (
+        <div className="flex items-center gap-2 mt-4">
+          <Button size="1" variant="soft" disabled={page === 1} onClick={() => setPage(page - 1)}>
+            Previous
+          </Button>
+          <Text size="2" style={{ color: "var(--gray-9)" }}>
+            Page {page} of {data.pages}
+          </Text>
+          <Button size="1" variant="soft" disabled={page === data.pages} onClick={() => setPage(page + 1)}>
+            Next
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+}
