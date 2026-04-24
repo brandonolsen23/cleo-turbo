@@ -13,7 +13,13 @@ from __future__ import annotations
 import math
 from typing import Optional
 
+import wordfreq
+
 from .config import CALIBRATION
+from .signals import (
+    is_english_common_token, load_place_names,
+    load_industry_stopwords, DEFAULT_ZIPF_THRESHOLD,
+)
 
 
 def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = True):
@@ -25,6 +31,11 @@ def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = 
         min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
 
     excluded = CALIBRATION["excluded_brand_tokens"]
+
+    # Load external signal sources once before the per-token loop.
+    place_names = load_place_names()
+    industry_stopwords_set = load_industry_stopwords(conn)
+    zipf_threshold = DEFAULT_ZIPF_THRESHOLD
 
     # Wipe (DELETE, not DROP — schema is managed by migration 008).
     conn.execute("DELETE FROM brand_token_index")
@@ -83,16 +94,47 @@ def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = 
         token = r["token"]
         df = r["n_party_sides"]
         idf = math.log(n_party_sides_total / (1 + df))
-        is_distinctive = 1 if (idf >= min_idf and token not in excluded) else 0
-        is_excluded = 1 if token in excluded else 0
+
+        try:
+            zipf = float(wordfreq.zipf_frequency(token, "en"))
+        except Exception:
+            zipf = 0.0
+
+        english = 1 if zipf >= zipf_threshold else 0
+        place = 1 if token in place_names else 0
+        industry = 1 if token in industry_stopwords_set else 0
+        is_excluded_flag = 1 if token in excluded else 0
+
+        # Filter-reason precedence: excluded > industry > place > english > (None → distinctive)
+        if is_excluded_flag:
+            reason = "excluded"
+        elif industry:
+            reason = "industry"
+        elif place:
+            reason = "place"
+        elif english:
+            reason = "english"
+        else:
+            reason = None
+
+        is_distinctive = 1 if (
+            idf >= min_idf
+            and not is_excluded_flag
+            and not industry
+            and not place
+            and not english
+        ) else 0
+
         summary_rows.append((
-            token, idf, df, r["n_distinct_phrases"], is_distinctive, is_excluded,
+            token, idf, df, r["n_distinct_phrases"], is_distinctive, is_excluded_flag,
+            zipf, english, place, industry, reason,
         ))
 
     conn.executemany(
         """INSERT INTO brand_token_summary
-           (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded)
-           VALUES (?, ?, ?, ?, ?, ?)""",
+           (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
+            wordfreq_zipf, is_english_common, is_place_name, is_industry_stopword, filter_reason)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         summary_rows,
     )
     conn.commit()

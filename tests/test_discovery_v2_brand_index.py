@@ -22,7 +22,12 @@ def _make_db():
         CREATE TABLE brand_token_summary (
             token TEXT PRIMARY KEY, idf REAL, n_party_sides INTEGER,
             n_distinct_phrases INTEGER, is_distinctive INTEGER, is_excluded INTEGER,
+            wordfreq_zipf REAL, is_english_common INTEGER, is_place_name INTEGER,
+            is_industry_stopword INTEGER, filter_reason TEXT,
             discovered_at TEXT DEFAULT (datetime('now'))
+        );
+        CREATE TABLE industry_stopwords (
+            token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
         );
     """)
     return conn
