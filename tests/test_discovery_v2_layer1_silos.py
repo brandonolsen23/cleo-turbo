@@ -54,6 +54,44 @@ def _make_db():
             is_distinctive INTEGER,
             discovered_at TEXT DEFAULT (datetime('now'))
         );
+        CREATE TABLE brand_fourgram_index (
+            fourgram TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (fourgram, source_id, side)
+        );
+        CREATE TABLE brand_fourgram_summary (
+            fourgram TEXT PRIMARY KEY, token_a TEXT, token_b TEXT,
+            token_c TEXT, token_d TEXT,
+            idf REAL, n_party_sides INTEGER, n_distinct_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER,
+            discovered_at TEXT DEFAULT (datetime('now'))
+        );
+        CREATE TABLE brand_fivegram_index (
+            fivegram TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (fivegram, source_id, side)
+        );
+        CREATE TABLE brand_fivegram_summary (
+            fivegram TEXT PRIMARY KEY, token_a TEXT, token_b TEXT,
+            token_c TEXT, token_d TEXT, token_e TEXT,
+            idf REAL, n_party_sides INTEGER, n_distinct_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER,
+            discovered_at TEXT DEFAULT (datetime('now'))
+        );
+        CREATE TABLE brand_long_phrase_index (
+            phrase TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (phrase, source_id, side)
+        );
+        CREATE TABLE brand_long_phrase_summary (
+            phrase TEXT PRIMARY KEY, n_tokens INTEGER, idf REAL,
+            n_party_sides INTEGER, n_distinct_source_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER,
+            discovered_at TEXT DEFAULT (datetime('now'))
+        );
         CREATE TABLE phone_summary (
             phone TEXT PRIMARY KEY, n_party_sides INTEGER, is_distinctive INTEGER,
             discovered_at TEXT DEFAULT (datetime('now'))
@@ -313,3 +351,161 @@ def test_build_all_indexes_runs_full_pipeline():
     assert conn.execute("SELECT COUNT(*) FROM brand_token_summary").fetchone()[0] > 0
     assert conn.execute("SELECT COUNT(*) FROM brand_bigram_summary").fetchone()[0] > 0
     assert conn.execute("SELECT COUNT(*) FROM phone_summary").fetchone()[0] > 0
+    # New silos — fourgram/fivegram/long_phrase run without error (may be 0 rows
+    # since 'kingsett capital' is only 2 tokens and no long phrases are inserted).
+    assert conn.execute("SELECT COUNT(*) FROM brand_fourgram_summary").fetchone()[0] == 0
+    assert conn.execute("SELECT COUNT(*) FROM brand_fivegram_summary").fetchone()[0] == 0
+    assert conn.execute("SELECT COUNT(*) FROM brand_long_phrase_summary").fetchone()[0] == 0
+
+
+def test_build_brand_ngram_index_n4_emits_consecutive_quadruples():
+    from cleo.discovery_v2.brand_index import build_brand_index, build_brand_ngram_index
+
+    conn = _make_db()
+    for i in range(100):
+        conn.execute(
+            "INSERT INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"bg{i}",),
+        )
+    # phrase has 4 tokens — should produce exactly 1 fourgram per party-side
+    for i in range(3):
+        conn.execute(
+            "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+            "VALUES (?, 'buyer', 'brand_phrase', 'kingsett capital gp residential', 'party_name')",
+            (f"k{i}",),
+        )
+        for tok in ("kingsett", "capital", "gp", "residential"):
+            conn.execute(
+                "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+                "VALUES (?, 'buyer', 'brand_token', ?, 'party_name')",
+                (f"k{i}", tok),
+            )
+        conn.execute(
+            "INSERT OR IGNORE INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"k{i}",),
+        )
+    conn.commit()
+
+    build_brand_index(conn, min_idf=0.0)
+    build_brand_ngram_index(conn, 4, min_idf=0.0)
+
+    row = conn.execute(
+        "SELECT fourgram, token_a, token_b, token_c, token_d, n_party_sides "
+        "FROM brand_fourgram_summary WHERE fourgram = 'kingsett capital gp residential'"
+    ).fetchone()
+    assert row is not None
+    assert row["token_a"] == "kingsett"
+    assert row["token_b"] == "capital"
+    assert row["token_c"] == "gp"
+    assert row["token_d"] == "residential"
+    assert row["n_party_sides"] == 3
+
+
+def test_build_brand_ngram_index_n5_emits_consecutive_quintuples():
+    from cleo.discovery_v2.brand_index import build_brand_index, build_brand_ngram_index
+
+    conn = _make_db()
+    for i in range(100):
+        conn.execute(
+            "INSERT INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"bg{i}",),
+        )
+    # 5-token phrase, exactly 1 fivegram per party-side
+    for i in range(2):
+        conn.execute(
+            "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+            "VALUES (?, 'buyer', 'brand_phrase', 'majesty queen right province ontario', 'party_name')",
+            (f"q{i}",),
+        )
+        for tok in ("majesty", "queen", "right", "province", "ontario"):
+            conn.execute(
+                "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+                "VALUES (?, 'buyer', 'brand_token', ?, 'party_name')",
+                (f"q{i}", tok),
+            )
+        conn.execute(
+            "INSERT OR IGNORE INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"q{i}",),
+        )
+    conn.commit()
+
+    build_brand_index(conn, min_idf=0.0)
+    build_brand_ngram_index(conn, 5, min_idf=0.0)
+
+    row = conn.execute(
+        "SELECT fivegram, token_a, token_b, token_c, token_d, token_e, n_party_sides "
+        "FROM brand_fivegram_summary WHERE fivegram = 'majesty queen right province ontario'"
+    ).fetchone()
+    assert row is not None
+    assert row["token_e"] == "ontario"
+    assert row["n_party_sides"] == 2
+
+
+def test_build_long_phrase_index_captures_phrases_with_6_or_more_tokens():
+    from cleo.discovery_v2.brand_index import build_brand_index, build_long_phrase_index
+
+    conn = _make_db()
+    for i in range(100):
+        conn.execute(
+            "INSERT INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"bg{i}",),
+        )
+    # 7-token phrase
+    for i in range(2):
+        conn.execute(
+            "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+            "VALUES (?, 'buyer', 'brand_phrase', "
+            "'her majesty queen right province ontario represented', 'party_name')",
+            (f"hm{i}",),
+        )
+        for tok in ("her", "majesty", "queen", "right", "province", "ontario", "represented"):
+            conn.execute(
+                "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+                "VALUES (?, 'buyer', 'brand_token', ?, 'party_name')",
+                (f"hm{i}", tok),
+            )
+        conn.execute(
+            "INSERT OR IGNORE INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"hm{i}",),
+        )
+    conn.commit()
+
+    build_brand_index(conn, min_idf=0.0)
+    build_long_phrase_index(conn, min_idf=0.0)
+
+    rows = list(conn.execute(
+        "SELECT phrase, n_tokens, n_party_sides FROM brand_long_phrase_summary"
+    ))
+    # 'her' is in the cleanco/STOP_BRAND_TOKENS strip — tokenize_brand drops 'the','of','and','a','an','&','co','inc','ltd','llc','corp'
+    # 'her' is NOT in STOP_BRAND_TOKENS, so all 7 tokens survive.
+    assert len(rows) == 1
+    row = rows[0]
+    assert row["phrase"] == "her majesty queen right province ontario represented"
+    assert row["n_tokens"] == 7
+    assert row["n_party_sides"] == 2
+
+
+def test_build_long_phrase_index_skips_phrases_with_fewer_than_6_tokens():
+    from cleo.discovery_v2.brand_index import build_brand_index, build_long_phrase_index
+
+    conn = _make_db()
+    for i in range(100):
+        conn.execute(
+            "INSERT INTO party_fingerprints (source_id, side) VALUES (?, 'buyer')",
+            (f"bg{i}",),
+        )
+    # 5-token phrase — should be SKIPPED by long-phrase silo
+    conn.execute(
+        "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+        "VALUES ('q1', 'buyer', 'brand_phrase', 'majesty queen right province ontario', 'party_name')"
+    )
+    conn.execute(
+        "INSERT OR IGNORE INTO party_fingerprints (source_id, side) VALUES ('q1', 'buyer')"
+    )
+    conn.commit()
+
+    build_brand_index(conn, min_idf=0.0)
+    build_long_phrase_index(conn, min_idf=0.0)
+
+    n = conn.execute("SELECT COUNT(*) FROM brand_long_phrase_summary").fetchone()[0]
+    assert n == 0

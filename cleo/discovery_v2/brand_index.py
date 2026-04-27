@@ -180,9 +180,17 @@ def build_brand_ngram_index(conn, n: int, *, min_idf: Optional[float] = None, ve
     and emit every consecutive window of `n` tokens. n-gram distinctiveness is
     gated on the n-gram's own corpus IDF (catches "regional group" cases where
     neither constituent token is distinctive).
+
+    Supports n=2..5. The table/column naming follows:
+      2 → bigram   (token_a, token_b)
+      3 → trigram  (token_a, token_b, token_c)
+      4 → fourgram (token_a, token_b, token_c, token_d)
+      5 → fivegram (token_a, token_b, token_c, token_d, token_e)
     """
-    assert n in (2, 3), f"only n=2 or n=3 supported, got {n}"
-    table_word = "bigram" if n == 2 else "trigram"
+    assert n in (2, 3, 4, 5), f"only n=2..5 supported, got {n}"
+    TABLE_WORD = {2: "bigram", 3: "trigram", 4: "fourgram", 5: "fivegram"}
+    TOKEN_NAMES = ["token_a", "token_b", "token_c", "token_d", "token_e"]
+    table_word = TABLE_WORD[n]
     index_table = f"brand_{table_word}_index"
     summary_table = f"brand_{table_word}_summary"
 
@@ -253,37 +261,24 @@ def build_brand_ngram_index(conn, n: int, *, min_idf: Optional[float] = None, ve
 
         is_distinctive = 1 if (idf >= min_idf and not any_excluded) else 0
 
-        if n == 2:
-            summary_rows.append((
-                ngram, tokens[0], tokens[1], idf, df, n_phrases,
-                any_dist, any_excluded, all_english, all_place, all_industry,
-                is_distinctive,
-            ))
-        else:  # n == 3
-            summary_rows.append((
-                ngram, tokens[0], tokens[1], tokens[2], idf, df, n_phrases,
-                any_dist, any_excluded, all_english, all_place, all_industry,
-                is_distinctive,
-            ))
+        # Build the summary row dynamically — n token columns followed by stats.
+        row = [ngram] + tokens[:n] + [
+            idf, df, n_phrases,
+            any_dist, any_excluded, all_english, all_place, all_industry,
+            is_distinctive,
+        ]
+        summary_rows.append(tuple(row))
 
-    if n == 2:
-        conn.executemany(
-            f"""INSERT INTO {summary_table}
-                (bigram, token_a, token_b, idf, n_party_sides, n_distinct_phrases,
-                 any_token_distinctive, any_token_excluded,
-                 all_english, all_place, all_industry, is_distinctive)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            summary_rows,
-        )
-    else:
-        conn.executemany(
-            f"""INSERT INTO {summary_table}
-                (trigram, token_a, token_b, token_c, idf, n_party_sides, n_distinct_phrases,
-                 any_token_distinctive, any_token_excluded,
-                 all_english, all_place, all_industry, is_distinctive)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            summary_rows,
-        )
+    token_columns = ", ".join(TOKEN_NAMES[:n])
+    placeholders = ", ".join(["?"] * (1 + n + 9))   # ngram + n tokens + 9 stats columns
+    conn.executemany(
+        f"""INSERT INTO {summary_table}
+            ({table_word}, {token_columns}, idf, n_party_sides, n_distinct_phrases,
+             any_token_distinctive, any_token_excluded,
+             all_english, all_place, all_industry, is_distinctive)
+            VALUES ({placeholders})""",
+        summary_rows,
+    )
 
     conn.commit()
 
@@ -295,6 +290,116 @@ def build_brand_ngram_index(conn, n: int, *, min_idf: Optional[float] = None, ve
 
     return {
         "n_ngrams": len(summary_rows),
+        "n_distinctive": n_distinctive,
+        "n_index_rows": n_index_rows,
+    }
+
+
+def build_long_phrase_index(conn, *, min_idf: Optional[float] = None, verbose: bool = True):
+    """Populate brand_long_phrase_index + brand_long_phrase_summary.
+
+    For each distinct brand_phrase in party_atoms, re-tokenize via tokenize_brand.
+    If the resulting token count is >= 6, emit ONE row keyed on the joined
+    tokens. The 6+ silo captures the long tail of phrase lengths (institutional
+    entities, sovereign names, school boards, etc.) without sliding-window
+    storage explosion.
+    """
+    if min_idf is None:
+        min_idf = CALIBRATION["exact_brand_token"]["min_idf"]
+
+    conn.execute("DELETE FROM brand_long_phrase_index")
+    conn.execute("DELETE FROM brand_long_phrase_summary")
+
+    n_party_sides_total = conn.execute(
+        "SELECT COUNT(*) FROM party_fingerprints"
+    ).fetchone()[0]
+    if n_party_sides_total == 0:
+        conn.commit()
+        return {"n_phrases": 0, "n_distinctive": 0, "n_index_rows": 0}
+
+    if verbose:
+        print(f"Layer 1 Silo A (brand long-form 6+): "
+              f"building over {n_party_sides_total:,} party-sides", flush=True)
+
+    # (joined-phrase, source_id, side) → presence
+    index_rows: set = set()
+    # joined-phrase → {raw atom_values that produced it}
+    sources_by_phrase: dict = {}
+    # joined-phrase → list of constituent tokens (for flag rollup)
+    tokens_by_phrase: dict = {}
+
+    for r in conn.execute(
+        "SELECT source_id, side, atom_value "
+        "FROM party_atoms WHERE atom_type = 'brand_phrase'"
+    ):
+        raw = r["atom_value"]
+        tokens = tokenize_brand(raw)
+        if len(tokens) < 6:
+            continue
+        joined = " ".join(tokens)
+        index_rows.add((joined, r["source_id"], r["side"]))
+        sources_by_phrase.setdefault(joined, set()).add(raw)
+        tokens_by_phrase.setdefault(joined, tokens)
+
+    conn.executemany(
+        "INSERT OR IGNORE INTO brand_long_phrase_index (phrase, source_id, side) "
+        "VALUES (?, ?, ?)",
+        index_rows,
+    )
+    n_index_rows = conn.execute(
+        "SELECT COUNT(*) FROM brand_long_phrase_index"
+    ).fetchone()[0]
+
+    token_lookup = _brand_token_lookup(conn)
+
+    # Count distinct party-sides per joined-phrase via the index
+    df_by_phrase = {
+        row[0]: row[1]
+        for row in conn.execute(
+            "SELECT phrase, COUNT(*) FROM brand_long_phrase_index GROUP BY phrase"
+        )
+    }
+
+    summary_rows = []
+    for joined_phrase, df in df_by_phrase.items():
+        tokens = tokens_by_phrase.get(joined_phrase, joined_phrase.split(" "))
+        n_tokens = len(tokens)
+        idf = math.log(n_party_sides_total / (1 + df))
+        n_distinct_source = len(sources_by_phrase.get(joined_phrase, set()))
+
+        flags = [token_lookup.get(t, {}) for t in tokens]
+        any_dist = 1 if any(f.get("is_distinctive") for f in flags) else 0
+        any_excluded = 1 if any(f.get("is_excluded") for f in flags) else 0
+        all_english = 1 if flags and all(f.get("is_english_common") for f in flags) else 0
+        all_place = 1 if flags and all(f.get("is_place_name") for f in flags) else 0
+        all_industry = 1 if flags and all(f.get("is_industry_stopword") for f in flags) else 0
+
+        is_distinctive = 1 if (idf >= min_idf and not any_excluded) else 0
+
+        summary_rows.append((
+            joined_phrase, n_tokens, idf, df, n_distinct_source,
+            any_dist, any_excluded, all_english, all_place, all_industry,
+            is_distinctive,
+        ))
+
+    conn.executemany(
+        """INSERT INTO brand_long_phrase_summary
+            (phrase, n_tokens, idf, n_party_sides, n_distinct_source_phrases,
+             any_token_distinctive, any_token_excluded,
+             all_english, all_place, all_industry, is_distinctive)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        summary_rows,
+    )
+    conn.commit()
+
+    n_distinctive = sum(1 for r in summary_rows if r[-1] == 1)
+    if verbose:
+        print(f"  {len(summary_rows):,} distinct long-form phrases "
+              f"({n_distinctive:,} distinctive at IDF≥{min_idf})", flush=True)
+        print(f"  {n_index_rows:,} (phrase, party-side) index rows", flush=True)
+
+    return {
+        "n_phrases": len(summary_rows),
         "n_distinctive": n_distinctive,
         "n_index_rows": n_index_rows,
     }
@@ -370,6 +475,9 @@ def build_all_indexes(conn, *, min_idf: Optional[float] = None, verbose: bool = 
     build_brand_index(conn, min_idf=min_idf, verbose=verbose)
     build_brand_ngram_index(conn, 2, min_idf=min_idf, verbose=verbose)
     build_brand_ngram_index(conn, 3, min_idf=min_idf, verbose=verbose)
+    build_brand_ngram_index(conn, 4, min_idf=min_idf, verbose=verbose)
+    build_brand_ngram_index(conn, 5, min_idf=min_idf, verbose=verbose)
+    build_long_phrase_index(conn, min_idf=min_idf, verbose=verbose)
     build_phone_summary(conn, verbose=verbose)
     build_address_base_summary(conn, verbose=verbose)
     build_contact_fingerprint_summary(conn, verbose=verbose)
