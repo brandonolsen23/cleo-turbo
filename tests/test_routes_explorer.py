@@ -60,6 +60,39 @@ def _seeded_db():
             trigram TEXT, source_id TEXT, side TEXT,
             PRIMARY KEY (trigram, source_id, side)
         );
+        CREATE TABLE brand_fourgram_summary (
+            fourgram TEXT PRIMARY KEY, token_a TEXT, token_b TEXT, token_c TEXT, token_d TEXT,
+            idf REAL, n_party_sides INTEGER, n_distinct_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER, discovered_at TEXT
+        );
+        CREATE TABLE brand_fourgram_index (
+            fourgram TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (fourgram, source_id, side)
+        );
+        CREATE TABLE brand_fivegram_summary (
+            fivegram TEXT PRIMARY KEY, token_a TEXT, token_b TEXT, token_c TEXT, token_d TEXT, token_e TEXT,
+            idf REAL, n_party_sides INTEGER, n_distinct_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER, discovered_at TEXT
+        );
+        CREATE TABLE brand_fivegram_index (
+            fivegram TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (fivegram, source_id, side)
+        );
+        CREATE TABLE brand_long_phrase_summary (
+            phrase TEXT PRIMARY KEY, n_tokens INTEGER, idf REAL,
+            n_party_sides INTEGER, n_distinct_source_phrases INTEGER,
+            any_token_distinctive INTEGER, any_token_excluded INTEGER,
+            all_english INTEGER, all_place INTEGER, all_industry INTEGER,
+            is_distinctive INTEGER, discovered_at TEXT
+        );
+        CREATE TABLE brand_long_phrase_index (
+            phrase TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (phrase, source_id, side)
+        );
         CREATE TABLE phone_summary (
             phone TEXT PRIMARY KEY, n_party_sides INTEGER, is_distinctive INTEGER,
             discovered_at TEXT
@@ -141,6 +174,31 @@ def _seeded_db():
     )
     conn.execute(
         "INSERT INTO contact_fingerprint_summary VALUES ('rob kumer', 2, 1, '2026-04-24')"
+    )
+    conn.execute(
+        "INSERT INTO brand_fourgram_summary VALUES "
+        "('kingsett capital gp residential', 'kingsett', 'capital', 'gp', 'residential', "
+        " 6.0, 1, 1, 1, 0, 0, 0, 0, 1, '2026-04-27')"
+    )
+    conn.execute(
+        "INSERT INTO brand_fourgram_index VALUES ('kingsett capital gp residential', 'RT1', 'buyer')"
+    )
+    conn.execute(
+        "INSERT INTO brand_fivegram_summary VALUES "
+        "('majesty queen right province ontario', 'majesty', 'queen', 'right', 'province', 'ontario', "
+        " 6.5, 1, 1, 0, 0, 0, 0, 0, 1, '2026-04-27')"
+    )
+    conn.execute(
+        "INSERT INTO brand_fivegram_index VALUES ('majesty queen right province ontario', 'RT1', 'buyer')"
+    )
+    conn.execute(
+        "INSERT INTO brand_long_phrase_summary VALUES "
+        "('her majesty queen right province ontario represented', 7, 7.0, 1, 1, "
+        " 0, 0, 0, 0, 0, 1, '2026-04-27')"
+    )
+    conn.execute(
+        "INSERT INTO brand_long_phrase_index VALUES "
+        "('her majesty queen right province ontario represented', 'RT1', 'buyer')"
     )
     # Enrich existing RT1/RT2 party_fingerprints with address/phone/contact info
     # for hydration tests. The brand_phrases already exist from the loop above
@@ -473,3 +531,81 @@ def test_contact_detail(client):
     assert body["contact_fingerprint"] == "rob kumer"
     assert body["n_party_sides"] == 2
     assert len(body["party_sides"]) == 2
+
+
+# ── 4-grams ────────────────────────────────────────────────────
+
+def test_list_4grams(client):
+    resp = client.get("/api/explorer/brands/4grams")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert any(t["fourgram"] == "kingsett capital gp residential" for t in body["results"])
+
+
+def test_4gram_detail_includes_containment(client):
+    resp = client.get("/api/explorer/brands/4grams/kingsett%20capital%20gp%20residential")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["fourgram"] == "kingsett capital gp residential"
+    assert body["token_d"] == "residential"
+    assert "contains" in body
+    assert "extended_by" in body
+
+
+# ── 5-grams ────────────────────────────────────────────────────
+
+def test_list_5grams(client):
+    resp = client.get("/api/explorer/brands/5grams")
+    body = resp.json()
+    assert any(t["fivegram"] == "majesty queen right province ontario" for t in body["results"])
+
+
+def test_5gram_detail(client):
+    resp = client.get("/api/explorer/brands/5grams/majesty%20queen%20right%20province%20ontario")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["token_e"] == "ontario"
+    assert "contains" in body
+    assert "extended_by" in body
+
+
+# ── Long-form ──────────────────────────────────────────────────
+
+def test_list_long_phrases(client):
+    resp = client.get("/api/explorer/brands/long-phrases")
+    body = resp.json()
+    assert any(t["phrase"] == "her majesty queen right province ontario represented"
+               for t in body["results"])
+
+
+def test_long_phrase_detail(client):
+    encoded = "her%20majesty%20queen%20right%20province%20ontario%20represented"
+    resp = client.get(f"/api/explorer/brands/long-phrases/{encoded}")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["n_tokens"] == 7
+    assert "contains" in body
+    # extended_by is empty for long-form (no longer level)
+    assert body["extended_by"] == []
+
+
+# ── Containment in existing endpoints ──────────────────────────
+
+def test_2gram_detail_now_includes_containment(client):
+    resp = client.get("/api/explorer/brands/bigrams/kingsett%20capital")
+    body = resp.json()
+    assert "contains" in body
+    assert "extended_by" in body
+    # contains should have the two 1grams
+    contained_values = {c["value"] for c in body["contains"]}
+    assert "kingsett" in contained_values
+    assert "capital" in contained_values
+
+
+def test_1gram_detail_now_includes_containment(client):
+    resp = client.get("/api/explorer/brands/kingsett")
+    body = resp.json()
+    assert "contains" in body
+    assert "extended_by" in body
+    # 1gram has no contains
+    assert body["contains"] == []

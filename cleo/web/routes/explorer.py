@@ -179,18 +179,20 @@ def _list_brand_ngrams(
         f"SELECT COUNT(*) FROM {table}{where_sql}", params
     ).fetchone()[0]
 
+    # Map column name → token columns to SELECT
+    TOKEN_COLS = {
+        "bigram":   "token_a, token_b",
+        "trigram":  "token_a, token_b, token_c",
+        "fourgram": "token_a, token_b, token_c, token_d",
+        "fivegram": "token_a, token_b, token_c, token_d, token_e",
+    }
+    token_cols = TOKEN_COLS[col]
+
     offset = (page - 1) * per_page
-    cols = (
-        f"{col}, token_a, token_b, token_c, idf, n_party_sides, n_distinct_phrases, "
-        "any_token_distinctive, any_token_excluded, all_english, all_place, "
-        "all_industry, is_distinctive"
-        if col == "trigram"
-        else f"{col}, token_a, token_b, idf, n_party_sides, n_distinct_phrases, "
-             "any_token_distinctive, any_token_excluded, all_english, all_place, "
-             "all_industry, is_distinctive"
-    )
     rows = db.execute(
-        f"""SELECT {cols}
+        f"""SELECT {col}, {token_cols}, idf, n_party_sides, n_distinct_phrases,
+                   any_token_distinctive, any_token_excluded,
+                   all_english, all_place, all_industry, is_distinctive
             FROM {table}{where_sql}
             ORDER BY n_party_sides DESC, {col} ASC
             LIMIT ? OFFSET ?""",
@@ -204,6 +206,176 @@ def _list_brand_ngrams(
         "per_page": per_page,
         "pages": (total + per_page - 1) // per_page,
     }
+
+
+# ─────────────────────────────────────────────────────────────
+# Containment helpers — "contains" (n-1 level) and
+# "extended_by" (n+1 level) for any n-gram detail response.
+# ─────────────────────────────────────────────────────────────
+
+NGRAM_LEVELS = {
+    "1gram":     {"summary": "brand_token_summary",       "key": "token",    "tokens": []},
+    "2gram":     {"summary": "brand_bigram_summary",      "key": "bigram",   "tokens": ["token_a", "token_b"]},
+    "3gram":     {"summary": "brand_trigram_summary",     "key": "trigram",  "tokens": ["token_a", "token_b", "token_c"]},
+    "4gram":     {"summary": "brand_fourgram_summary",    "key": "fourgram", "tokens": ["token_a", "token_b", "token_c", "token_d"]},
+    "5gram":     {"summary": "brand_fivegram_summary",    "key": "fivegram", "tokens": ["token_a", "token_b", "token_c", "token_d", "token_e"]},
+    "long-form": {"summary": "brand_long_phrase_summary", "key": "phrase",   "tokens": []},
+}
+
+
+def _ngram_n_party_sides(db, level: str, value: str) -> int:
+    """One-shot lookup of n_party_sides for a given (level, value)."""
+    info = NGRAM_LEVELS[level]
+    row = db.execute(
+        f"SELECT n_party_sides FROM {info['summary']} WHERE {info['key']} = ?",
+        (value,),
+    ).fetchone()
+    return row["n_party_sides"] if row else 0
+
+
+def _compute_containment(db, level: str, value: str, *, limit: int = 50) -> dict:
+    """Return {contains: [...], extended_by: [...]} for the given (level, value).
+
+    Each entry: {"value": str, "level": str, "n_party_sides": int}.
+
+    Containment rules:
+      - 1gram  contains: []      ; extended_by: 2grams that contain this token
+      - 2gram  contains: 1grams  ; extended_by: 3grams
+      - 3gram  contains: 2grams  ; extended_by: 4grams
+      - 4gram  contains: 3grams  ; extended_by: 5grams
+      - 5gram  contains: 4grams  ; extended_by: long-form phrases containing this 5gram
+      - long-form contains: 5-gram windows ; extended_by: []
+    """
+    contains: list = []
+    extended_by: list = []
+
+    if level == "1gram":
+        # extended_by: 2grams where token_a = value OR token_b = value
+        rows = db.execute(
+            "SELECT bigram, n_party_sides FROM brand_bigram_summary "
+            "WHERE token_a = ? OR token_b = ? "
+            "ORDER BY n_party_sides DESC LIMIT ?",
+            (value, value, limit),
+        ).fetchall()
+        extended_by = [
+            {"value": r["bigram"], "level": "2gram", "n_party_sides": r["n_party_sides"]}
+            for r in rows
+        ]
+
+    elif level == "2gram":
+        row = db.execute(
+            "SELECT token_a, token_b FROM brand_bigram_summary WHERE bigram = ?",
+            (value,),
+        ).fetchone()
+        if row:
+            for tok in (row["token_a"], row["token_b"]):
+                contains.append({
+                    "value": tok, "level": "1gram",
+                    "n_party_sides": _ngram_n_party_sides(db, "1gram", tok),
+                })
+            a, b = row["token_a"], row["token_b"]
+            rows = db.execute(
+                "SELECT trigram, n_party_sides FROM brand_trigram_summary "
+                "WHERE (token_a = ? AND token_b = ?) "
+                "   OR (token_b = ? AND token_c = ?) "
+                "ORDER BY n_party_sides DESC LIMIT ?",
+                (a, b, a, b, limit),
+            ).fetchall()
+            extended_by = [
+                {"value": r["trigram"], "level": "3gram", "n_party_sides": r["n_party_sides"]}
+                for r in rows
+            ]
+
+    elif level == "3gram":
+        row = db.execute(
+            "SELECT token_a, token_b, token_c FROM brand_trigram_summary WHERE trigram = ?",
+            (value,),
+        ).fetchone()
+        if row:
+            a, b, c = row["token_a"], row["token_b"], row["token_c"]
+            for bigram_str in (f"{a} {b}", f"{b} {c}"):
+                contains.append({
+                    "value": bigram_str, "level": "2gram",
+                    "n_party_sides": _ngram_n_party_sides(db, "2gram", bigram_str),
+                })
+            rows = db.execute(
+                "SELECT fourgram, n_party_sides FROM brand_fourgram_summary "
+                "WHERE (token_a = ? AND token_b = ? AND token_c = ?) "
+                "   OR (token_b = ? AND token_c = ? AND token_d = ?) "
+                "ORDER BY n_party_sides DESC LIMIT ?",
+                (a, b, c, a, b, c, limit),
+            ).fetchall()
+            extended_by = [
+                {"value": r["fourgram"], "level": "4gram", "n_party_sides": r["n_party_sides"]}
+                for r in rows
+            ]
+
+    elif level == "4gram":
+        row = db.execute(
+            "SELECT token_a, token_b, token_c, token_d "
+            "FROM brand_fourgram_summary WHERE fourgram = ?",
+            (value,),
+        ).fetchone()
+        if row:
+            a, b, c, d = row["token_a"], row["token_b"], row["token_c"], row["token_d"]
+            for tg in (f"{a} {b} {c}", f"{b} {c} {d}"):
+                contains.append({
+                    "value": tg, "level": "3gram",
+                    "n_party_sides": _ngram_n_party_sides(db, "3gram", tg),
+                })
+            rows = db.execute(
+                "SELECT fivegram, n_party_sides FROM brand_fivegram_summary "
+                "WHERE (token_a = ? AND token_b = ? AND token_c = ? AND token_d = ?) "
+                "   OR (token_b = ? AND token_c = ? AND token_d = ? AND token_e = ?) "
+                "ORDER BY n_party_sides DESC LIMIT ?",
+                (a, b, c, d, a, b, c, d, limit),
+            ).fetchall()
+            extended_by = [
+                {"value": r["fivegram"], "level": "5gram", "n_party_sides": r["n_party_sides"]}
+                for r in rows
+            ]
+
+    elif level == "5gram":
+        row = db.execute(
+            "SELECT token_a, token_b, token_c, token_d, token_e "
+            "FROM brand_fivegram_summary WHERE fivegram = ?",
+            (value,),
+        ).fetchone()
+        if row:
+            a, b, c, d, e = row["token_a"], row["token_b"], row["token_c"], row["token_d"], row["token_e"]
+            for fg in (f"{a} {b} {c} {d}", f"{b} {c} {d} {e}"):
+                contains.append({
+                    "value": fg, "level": "4gram",
+                    "n_party_sides": _ngram_n_party_sides(db, "4gram", fg),
+                })
+        # extended_by: long-form phrases containing this 5gram (word-boundary)
+        rows = db.execute(
+            "SELECT phrase, n_party_sides FROM brand_long_phrase_summary "
+            "WHERE (' ' || phrase || ' ') LIKE '% ' || ? || ' %' "
+            "ORDER BY n_party_sides DESC LIMIT ?",
+            (value, limit),
+        ).fetchall()
+        extended_by = [
+            {"value": r["phrase"], "level": "long-form", "n_party_sides": r["n_party_sides"]}
+            for r in rows
+        ]
+
+    elif level == "long-form":
+        # contains: every consecutive 5-token window of the phrase
+        tokens = value.split(" ")
+        seen: set = set()
+        for i in range(len(tokens) - 4):
+            window = " ".join(tokens[i:i + 5])
+            if window in seen:
+                continue
+            seen.add(window)
+            contains.append({
+                "value": window, "level": "5gram",
+                "n_party_sides": _ngram_n_party_sides(db, "5gram", window),
+            })
+        # extended_by: nothing (long-form is the last level)
+
+    return {"contains": contains, "extended_by": extended_by}
 
 
 @router.get("/brands/bigrams")
@@ -263,7 +435,9 @@ def bigram_detail(
     }
     party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=bigram)
 
-    return {**dict(summary), "phrases": phrases, "party_sides": party_sides}
+    cont = _compute_containment(db, "2gram", bigram)
+    return {**dict(summary), "phrases": phrases, "party_sides": party_sides,
+            "contains": cont["contains"], "extended_by": cont["extended_by"]}
 
 
 @router.get("/brands/trigrams/{trigram}")
@@ -298,7 +472,192 @@ def trigram_detail(
     }
     party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=trigram)
 
-    return {**dict(summary), "phrases": phrases, "party_sides": party_sides}
+    cont = _compute_containment(db, "3gram", trigram)
+    return {**dict(summary), "phrases": phrases, "party_sides": party_sides,
+            "contains": cont["contains"], "extended_by": cont["extended_by"]}
+
+
+# ─────────────────────────────────────────────────────────────
+# Brands — 4gram / 5gram / long-form
+# These MUST also be registered before /brands/{token}.
+# ─────────────────────────────────────────────────────────────
+
+@router.get("/brands/4grams")
+def list_fourgrams(
+    q: Optional[str] = Query(None),
+    distinctive_only: bool = Query(True),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    return _list_brand_ngrams("brand_fourgram_summary", "fourgram",
+                              q, distinctive_only, page, per_page, db)
+
+
+@router.get("/brands/5grams")
+def list_fivegrams(
+    q: Optional[str] = Query(None),
+    distinctive_only: bool = Query(True),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    return _list_brand_ngrams("brand_fivegram_summary", "fivegram",
+                              q, distinctive_only, page, per_page, db)
+
+
+@router.get("/brands/4grams/{fourgram}")
+def fourgram_detail(
+    fourgram: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    summary = db.execute(
+        """SELECT fourgram, token_a, token_b, token_c, token_d,
+                  idf, n_party_sides, n_distinct_phrases,
+                  any_token_distinctive, any_token_excluded,
+                  all_english, all_place, all_industry, is_distinctive
+           FROM brand_fourgram_summary WHERE fourgram = ?""",
+        (fourgram,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f"Unknown fourgram: {fourgram!r}")
+
+    phrases = [
+        r["atom_value"] for r in db.execute(
+            """SELECT DISTINCT atom_value FROM party_atoms
+               WHERE atom_type = 'brand_phrase'
+                 AND (' ' || atom_value || ' ') LIKE ('% ' || ? || ' %')
+               ORDER BY atom_value""",
+            (fourgram,),
+        )
+    ]
+
+    ps_keys = {
+        (r["source_id"], r["side"]) for r in db.execute(
+            "SELECT source_id, side FROM brand_fourgram_index WHERE fourgram = ?",
+            (fourgram,),
+        )
+    }
+    party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=fourgram)
+
+    cont = _compute_containment(db, "4gram", fourgram)
+    return {**dict(summary), "phrases": phrases, "party_sides": party_sides,
+            "contains": cont["contains"], "extended_by": cont["extended_by"]}
+
+
+@router.get("/brands/5grams/{fivegram}")
+def fivegram_detail(
+    fivegram: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    summary = db.execute(
+        """SELECT fivegram, token_a, token_b, token_c, token_d, token_e,
+                  idf, n_party_sides, n_distinct_phrases,
+                  any_token_distinctive, any_token_excluded,
+                  all_english, all_place, all_industry, is_distinctive
+           FROM brand_fivegram_summary WHERE fivegram = ?""",
+        (fivegram,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f"Unknown fivegram: {fivegram!r}")
+
+    phrases = [
+        r["atom_value"] for r in db.execute(
+            """SELECT DISTINCT atom_value FROM party_atoms
+               WHERE atom_type = 'brand_phrase'
+                 AND (' ' || atom_value || ' ') LIKE ('% ' || ? || ' %')
+               ORDER BY atom_value""",
+            (fivegram,),
+        )
+    ]
+
+    ps_keys = {
+        (r["source_id"], r["side"]) for r in db.execute(
+            "SELECT source_id, side FROM brand_fivegram_index WHERE fivegram = ?",
+            (fivegram,),
+        )
+    }
+    party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=fivegram)
+
+    cont = _compute_containment(db, "5gram", fivegram)
+    return {**dict(summary), "phrases": phrases, "party_sides": party_sides,
+            "contains": cont["contains"], "extended_by": cont["extended_by"]}
+
+
+@router.get("/brands/long-phrases")
+def list_long_phrases(
+    q: Optional[str] = Query(None),
+    distinctive_only: bool = Query(True),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    where = []
+    params: list = []
+    if distinctive_only:
+        where.append("is_distinctive = 1")
+    if q:
+        where.append("phrase LIKE ?")
+        params.append(f"%{q.lower()}%")
+    where_sql = (" WHERE " + " AND ".join(where)) if where else ""
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM brand_long_phrase_summary{where_sql}", params
+    ).fetchone()[0]
+
+    offset = (page - 1) * per_page
+    rows = db.execute(
+        f"""SELECT phrase, n_tokens, idf, n_party_sides, n_distinct_source_phrases,
+                   any_token_distinctive, any_token_excluded,
+                   all_english, all_place, all_industry, is_distinctive
+            FROM brand_long_phrase_summary{where_sql}
+            ORDER BY n_party_sides DESC, phrase ASC
+            LIMIT ? OFFSET ?""",
+        params + [per_page, offset],
+    ).fetchall()
+
+    return {
+        "results": [dict(r) for r in rows],
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "pages": (total + per_page - 1) // per_page,
+    }
+
+
+@router.get("/brands/long-phrases/{phrase}")
+def long_phrase_detail(
+    phrase: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    summary = db.execute(
+        """SELECT phrase, n_tokens, idf, n_party_sides, n_distinct_source_phrases,
+                  any_token_distinctive, any_token_excluded,
+                  all_english, all_place, all_industry, is_distinctive
+           FROM brand_long_phrase_summary WHERE phrase = ?""",
+        (phrase,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f"Unknown long-form phrase: {phrase!r}")
+
+    raw_phrases = [
+        r["atom_value"] for r in db.execute(
+            """SELECT DISTINCT atom_value FROM party_atoms
+               WHERE atom_type = 'brand_phrase'
+                 AND atom_value LIKE ('%' || ? || '%')
+               ORDER BY atom_value""",
+            (phrase,),
+        )
+    ]
+
+    ps_keys = {
+        (r["source_id"], r["side"]) for r in db.execute(
+            "SELECT source_id, side FROM brand_long_phrase_index WHERE phrase = ?",
+            (phrase,),
+        )
+    }
+    party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=phrase)
+
+    cont = _compute_containment(db, "long-form", phrase)
+    return {**dict(summary), "phrases": raw_phrases, "party_sides": party_sides,
+            "contains": cont["contains"], "extended_by": cont["extended_by"]}
 
 
 # ─────────────────────────────────────────────────────────────
@@ -398,10 +757,13 @@ def brand_token_detail(
         deduped.sort(key=lambda e: (_field_order(e), e["phrase"]))
         party_sides.append({**dict(r), "brand_phrases": deduped})
 
+    cont = _compute_containment(db, "1gram", token)
     return {
         **dict(summary_row),
         "phrases": phrases,
         "party_sides": party_sides,
+        "contains": cont["contains"],
+        "extended_by": cont["extended_by"],
     }
 
 
