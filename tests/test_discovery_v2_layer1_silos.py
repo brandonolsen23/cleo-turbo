@@ -9,6 +9,7 @@ def _make_db():
         CREATE TABLE party_fingerprints (
             source_id TEXT, side TEXT,
             street_number TEXT, street_name TEXT, street_suffix TEXT,
+            street_direction TEXT,
             suite_type TEXT, suite_number TEXT,
             city TEXT, province TEXT, postal TEXT,
             phone TEXT, contact_fingerprint TEXT,
@@ -105,6 +106,14 @@ def _make_db():
             n_distinct_postals INTEGER, is_distinctive INTEGER,
             discovered_at TEXT DEFAULT (datetime('now')),
             PRIMARY KEY (street_number, street_name, street_suffix)
+        );
+        CREATE TABLE address_root_summary (
+            street_number TEXT NOT NULL, street_name TEXT NOT NULL,
+            n_party_sides INTEGER, n_distinct_suffixes INTEGER,
+            n_distinct_directions INTEGER, n_distinct_suites INTEGER,
+            n_distinct_postals INTEGER,
+            discovered_at TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (street_number, street_name)
         );
         CREATE TABLE contact_fingerprint_summary (
             contact_fingerprint TEXT PRIMARY KEY,
@@ -512,3 +521,73 @@ def test_build_long_phrase_index_skips_phrases_with_fewer_than_6_tokens():
 
     n = conn.execute("SELECT COUNT(*) FROM brand_long_phrase_summary").fetchone()[0]
     assert n == 0
+
+
+def test_build_address_root_summary_aggregates_across_suffix_variants():
+    from cleo.discovery_v2.brand_index import build_address_root_summary
+
+    conn = _make_db()
+    # 5 sides at "66 wellington street" + 2 sides at "66 wellington" (no suffix)
+    # = 7 sides at root "66 wellington" with 2 distinct suffix variants
+    rows = [
+        ("RT1", "buyer", "66", "wellington", "street", "M5K1H6"),
+        ("RT2", "buyer", "66", "wellington", "street", "M5K1H6"),
+        ("RT3", "buyer", "66", "wellington", "street", "M5K1A2"),
+        ("RT4", "buyer", "66", "wellington", "street", "M5K1A2"),
+        ("RT5", "buyer", "66", "wellington", "street", "M5K1H6"),
+        ("RT6", "buyer", "66", "wellington", None, None),
+        ("RT7", "buyer", "66", "wellington", "", ""),
+    ]
+    for sid, side, num, name, suf, postal in rows:
+        conn.execute(
+            """INSERT INTO party_fingerprints (source_id, side,
+                 street_number, street_name, street_suffix, postal)
+               VALUES (?, ?, ?, ?, ?, ?)""",
+            (sid, side, num, name, suf, postal),
+        )
+    conn.commit()
+
+    build_address_root_summary(conn, verbose=False)
+
+    row = conn.execute(
+        """SELECT n_party_sides, n_distinct_suffixes, n_distinct_postals
+           FROM address_root_summary
+           WHERE street_number = '66' AND street_name = 'wellington'"""
+    ).fetchone()
+    assert row is not None
+    # All 7 rows roll up
+    assert row["n_party_sides"] == 7
+    # Distinct suffixes: 'street', '' (NULL coalesces to ''). Empty string and NULL both match COALESCE(.., '').
+    # So distinct values are: 'street' and '' → 2.
+    assert row["n_distinct_suffixes"] == 2
+    # Distinct postals: M5K1H6, M5K1A2, '' → 3
+    assert row["n_distinct_postals"] == 3
+
+
+def test_build_address_root_summary_skips_partial_addresses():
+    """Rows missing street_number OR street_name are excluded."""
+    from cleo.discovery_v2.brand_index import build_address_root_summary
+
+    conn = _make_db()
+    # Only RT1 has both fields — the rest should be excluded.
+    conn.execute(
+        "INSERT INTO party_fingerprints (source_id, side, street_number, street_name, street_suffix) "
+        "VALUES ('RT1', 'buyer', '100', 'king', 'street')"
+    )
+    conn.execute(
+        "INSERT INTO party_fingerprints (source_id, side, street_number, street_name) "
+        "VALUES ('RT2', 'buyer', '100', NULL)"
+    )
+    conn.execute(
+        "INSERT INTO party_fingerprints (source_id, side, street_number, street_name) "
+        "VALUES ('RT3', 'buyer', NULL, 'king')"
+    )
+    conn.commit()
+
+    build_address_root_summary(conn, verbose=False)
+
+    rows = list(conn.execute("SELECT street_number, street_name, n_party_sides FROM address_root_summary"))
+    assert len(rows) == 1
+    assert rows[0]["street_number"] == "100"
+    assert rows[0]["street_name"] == "king"
+    assert rows[0]["n_party_sides"] == 1

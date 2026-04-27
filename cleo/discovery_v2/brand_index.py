@@ -447,6 +447,33 @@ def build_address_base_summary(conn, *, verbose: bool = True):
     return {"n_bases": n}
 
 
+def build_address_root_summary(conn, *, verbose: bool = True):
+    """Populate address_root_summary. Roots = (street_number + street_name)
+    aggregation, one level shallower than address_base_summary which also
+    requires street_suffix."""
+    conn.execute("DELETE FROM address_root_summary")
+    conn.execute("""
+        INSERT INTO address_root_summary
+            (street_number, street_name, n_party_sides, n_distinct_suffixes,
+             n_distinct_directions, n_distinct_suites, n_distinct_postals)
+        SELECT street_number, street_name,
+               COUNT(*) AS n_party_sides,
+               COUNT(DISTINCT COALESCE(street_suffix, '')) AS n_distinct_suffixes,
+               COUNT(DISTINCT COALESCE(street_direction, '')) AS n_distinct_directions,
+               COUNT(DISTINCT COALESCE(suite_type, '') || '|' || COALESCE(suite_number, '')) AS n_distinct_suites,
+               COUNT(DISTINCT COALESCE(postal, '')) AS n_distinct_postals
+        FROM party_fingerprints
+        WHERE street_number IS NOT NULL AND street_number != ''
+          AND street_name IS NOT NULL AND street_name != ''
+        GROUP BY street_number, street_name
+    """)
+    n = conn.execute("SELECT COUNT(*) FROM address_root_summary").fetchone()[0]
+    conn.commit()
+    if verbose:
+        print(f"Layer 1 Silo C (address roots): {n:,} distinct roots", flush=True)
+    return {"n_roots": n}
+
+
 def build_contact_fingerprint_summary(conn, *, verbose: bool = True):
     """Populate contact_fingerprint_summary."""
     conn.execute("DELETE FROM contact_fingerprint_summary")
@@ -563,4 +590,5 @@ def build_all_indexes(conn, *, min_idf: Optional[float] = None, verbose: bool = 
     build_long_phrase_index(conn, min_idf=min_idf, verbose=verbose)
     build_phone_summary(conn, verbose=verbose)
     build_address_base_summary(conn, verbose=verbose)
+    build_address_root_summary(conn, verbose=verbose)        # ← new
     build_contact_fingerprint_summary(conn, verbose=verbose)
