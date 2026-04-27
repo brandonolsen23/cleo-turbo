@@ -13,6 +13,8 @@ GET /api/explorer/phones                            — list phones
 GET /api/explorer/phones/:phone                     — phone detail
 GET /api/explorer/addresses                         — list address bases
 GET /api/explorer/addresses/:key                    — address detail (key = num|name|suffix)
+GET /api/explorer/addresses/roots                   — list address roots (num|name)
+GET /api/explorer/addresses/roots/:key              — address root detail (key = num|name)
 GET /api/explorer/contacts                          — list contact fingerprints
 GET /api/explorer/contacts/:fingerprint             — contact detail
 """
@@ -1226,6 +1228,16 @@ def _parse_address_key(key: str):
     return parts[0], parts[1], parts[2]
 
 
+def _parse_address_root_key(key: str):
+    """Unpack '{street_number}|{street_name}' — returns a tuple."""
+    parts = key.split("|")
+    if len(parts) != 2:
+        raise HTTPException(
+            status_code=400, detail=f"Invalid address root key: {key!r}"
+        )
+    return parts[0], parts[1]
+
+
 @router.get("/addresses")
 def list_addresses(
     q: Optional[str] = Query(None),
@@ -1268,6 +1280,145 @@ def list_addresses(
         "per_page": per_page,
         "pages": (total + per_page - 1) // per_page,
     }
+
+
+# ─────────────────────────────────────────────────────────────
+# Address roots — coarser key (number+name, no suffix).
+# These MUST be registered before /addresses/{key} to avoid the
+# generic path param swallowing "roots".
+# ─────────────────────────────────────────────────────────────
+
+@router.get("/addresses/roots")
+def list_address_roots(
+    q: Optional[str] = Query(None, description="Substring match on street_number or street_name"),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    where = []
+    params: list = []
+    if q:
+        ql = q.lower()
+        where.append("(street_number LIKE ? OR street_name LIKE ?)")
+        like = f"%{ql}%"
+        params.extend([like, like])
+    where_sql = (" WHERE " + " AND ".join(where)) if where else ""
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM address_root_summary{where_sql}", params
+    ).fetchone()[0]
+
+    offset = (page - 1) * per_page
+    rows = db.execute(
+        f"""SELECT street_number, street_name, n_party_sides,
+                   n_distinct_suffixes, n_distinct_directions,
+                   n_distinct_suites, n_distinct_postals
+            FROM address_root_summary{where_sql}
+            ORDER BY n_party_sides DESC, street_name ASC, street_number ASC
+            LIMIT ? OFFSET ?""",
+        params + [per_page, offset],
+    ).fetchall()
+
+    results = []
+    for r in rows:
+        d = dict(r)
+        d["key"] = f"{r['street_number']}|{r['street_name']}"
+        results.append(d)
+    return {
+        "results": results,
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "pages": (total + per_page - 1) // per_page,
+    }
+
+
+@router.get("/addresses/roots/{key}")
+def address_root_detail(
+    key: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    snum, sname = _parse_address_root_key(key)
+    summary = db.execute(
+        """SELECT street_number, street_name, n_party_sides,
+                  n_distinct_suffixes, n_distinct_directions,
+                  n_distinct_suites, n_distinct_postals
+           FROM address_root_summary
+           WHERE street_number = ? AND street_name = ?""",
+        (snum, sname),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(
+            status_code=404, detail=f"Unknown address root: {key!r}"
+        )
+
+    # by_suffix — collapse NULL/empty into a "(none)" bucket.
+    by_suffix = []
+    for r in db.execute(
+        """SELECT COALESCE(NULLIF(street_suffix, ''), '') AS suffix,
+                  COUNT(*) AS n_party_sides
+           FROM party_fingerprints
+           WHERE street_number = ? AND street_name = ?
+           GROUP BY COALESCE(NULLIF(street_suffix, ''), '')
+           ORDER BY n_party_sides DESC
+           LIMIT 50""",
+        (snum, sname),
+    ):
+        suffix = r["suffix"]
+        if suffix:
+            by_suffix.append({
+                "value": suffix,
+                "n_party_sides": r["n_party_sides"],
+                "base_key": f"{snum}|{sname}|{suffix}",
+            })
+        else:
+            by_suffix.append({
+                "value": "(none)",
+                "n_party_sides": r["n_party_sides"],
+                "base_key": None,
+            })
+
+    # by_suite — preserve NULLs as null (front-end shows them as "no suite").
+    by_suite = [
+        dict(r) for r in db.execute(
+            """SELECT suite_type, suite_number, COUNT(*) AS n_party_sides
+               FROM party_fingerprints
+               WHERE street_number = ? AND street_name = ?
+               GROUP BY suite_type, suite_number
+               ORDER BY n_party_sides DESC
+               LIMIT 50""",
+            (snum, sname),
+        )
+    ]
+
+    # by_postal
+    by_postal = [
+        dict(r) for r in db.execute(
+            """SELECT postal, COUNT(*) AS n_party_sides
+               FROM party_fingerprints
+               WHERE street_number = ? AND street_name = ?
+               GROUP BY postal
+               ORDER BY n_party_sides DESC
+               LIMIT 50""",
+            (snum, sname),
+        )
+    ]
+
+    ps_keys = {
+        (r["source_id"], r["side"]) for r in db.execute(
+            """SELECT source_id, side FROM party_fingerprints
+               WHERE street_number = ? AND street_name = ?""",
+            (snum, sname),
+        )
+    }
+    party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=None)
+
+    d = dict(summary)
+    d["key"] = key
+    d["by_suffix"] = by_suffix
+    d["by_suite"] = by_suite
+    d["by_postal"] = by_postal
+    d["party_sides"] = party_sides
+    return d
 
 
 @router.get("/addresses/{key}")

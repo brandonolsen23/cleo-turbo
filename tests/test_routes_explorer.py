@@ -106,6 +106,17 @@ def _seeded_db():
             discovered_at TEXT,
             PRIMARY KEY (street_number, street_name, street_suffix)
         );
+        CREATE TABLE address_root_summary (
+            street_number TEXT NOT NULL,
+            street_name TEXT NOT NULL,
+            n_party_sides INTEGER NOT NULL,
+            n_distinct_suffixes INTEGER NOT NULL,
+            n_distinct_directions INTEGER NOT NULL,
+            n_distinct_suites INTEGER NOT NULL,
+            n_distinct_postals INTEGER NOT NULL,
+            discovered_at TEXT,
+            PRIMARY KEY (street_number, street_name)
+        );
         CREATE TABLE contact_fingerprint_summary (
             contact_fingerprint TEXT PRIMARY KEY,
             n_party_sides INTEGER, is_distinctive INTEGER,
@@ -219,6 +230,45 @@ def _seeded_db():
         "phone='4166876700', contact_fingerprint='rob kumer', sale_date='2021-06-15' "
         "WHERE source_id='RT2' AND side='buyer'"
     )
+
+    # ── address_root_summary seeds ────────────────────────────────
+    # Root for 66 wellington: matches the 2 RT1/RT2 party_fingerprints above.
+    # n_distinct_suffixes=1 (just 'street'), 1 direction, 2 suites (4400/4500),
+    # 1 postal (M5K1H6).
+    conn.execute(
+        "INSERT INTO address_root_summary VALUES "
+        "('66', 'wellington', 2, 1, 1, 2, 1, '2026-04-27')"
+    )
+
+    # Second root: 100 main with two suffixes ('street' and no-suffix).
+    # Seed two party_fingerprints + two party_atoms for hydration.
+    conn.execute(
+        "INSERT INTO party_fingerprints "
+        "(source_id, side, sale_date, street_number, street_name, street_suffix, "
+        " suite_type, suite_number, postal, phone, contact_fingerprint) "
+        "VALUES ('RT100', 'buyer', '2022-03-01', '100', 'main', 'street', "
+        " NULL, NULL, 'L1A1A1', NULL, NULL)"
+    )
+    conn.execute(
+        "INSERT INTO party_fingerprints "
+        "(source_id, side, sale_date, street_number, street_name, street_suffix, "
+        " suite_type, suite_number, postal, phone, contact_fingerprint) "
+        "VALUES ('RT101', 'buyer', '2022-04-15', '100', 'main', '', "
+        " 'unit', '5', 'L1A1A2', NULL, NULL)"
+    )
+    conn.execute(
+        "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+        "VALUES ('RT100', 'buyer', 'brand_phrase', 'mainline holdings', 'party_name')"
+    )
+    conn.execute(
+        "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+        "VALUES ('RT101', 'buyer', 'brand_phrase', 'main capital', 'party_name')"
+    )
+    conn.execute(
+        "INSERT INTO address_root_summary VALUES "
+        "('100', 'main', 2, 2, 1, 2, 2, '2026-04-27')"
+    )
+
     conn.commit()
     return conn
 
@@ -516,6 +566,129 @@ def test_address_detail_has_suite_variants(client):
 def test_address_detail_404(client):
     resp = client.get("/api/explorer/addresses/zz%7Cnowhere%7Clane")
     assert resp.status_code == 404
+
+
+# ── Address Roots ──────────────────────────────────────────────
+
+def test_list_address_roots(client):
+    resp = client.get("/api/explorer/addresses/roots")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["total"] >= 1
+    keys = [r["key"] for r in body["results"]]
+    # Both seeded roots have n_party_sides=2 — tiebreak alphabetical by name ASC.
+    assert "66|wellington" in keys
+    assert "100|main" in keys
+    # Each row should expose the canonical fields.
+    first = body["results"][0]
+    assert first["key"] == f"{first['street_number']}|{first['street_name']}"
+    assert "n_distinct_suffixes" in first
+    assert "n_distinct_directions" in first
+    assert "n_distinct_suites" in first
+    assert "n_distinct_postals" in first
+
+
+def test_list_address_roots_q_filters_by_number_or_name(client):
+    # Match by name substring
+    resp = client.get("/api/explorer/addresses/roots", params={"q": "well"})
+    assert resp.status_code == 200
+    body = resp.json()
+    keys = [r["key"] for r in body["results"]]
+    assert keys == ["66|wellington"]
+
+    # Match by number substring
+    resp2 = client.get("/api/explorer/addresses/roots", params={"q": "100"})
+    body2 = resp2.json()
+    keys2 = [r["key"] for r in body2["results"]]
+    assert "100|main" in keys2
+
+
+def test_list_address_roots_pagination(client):
+    resp = client.get(
+        "/api/explorer/addresses/roots", params={"per_page": 1, "page": 1}
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["per_page"] == 1
+    assert body["page"] == 1
+    assert body["total"] >= 2
+    assert len(body["results"]) == 1
+
+    resp2 = client.get(
+        "/api/explorer/addresses/roots", params={"per_page": 1, "page": 2}
+    )
+    body2 = resp2.json()
+    assert body2["total"] == body["total"]
+    assert body2["page"] == 2
+    assert len(body2["results"]) == 1
+    # Different row on page 2.
+    assert body2["results"][0]["key"] != body["results"][0]["key"]
+
+
+def test_address_root_detail_breakdowns(client):
+    # 100 main has two suffixes: 'street' (RT100) and "" (RT101).
+    resp = client.get("/api/explorer/addresses/roots/100%7Cmain")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["street_number"] == "100"
+    assert body["street_name"] == "main"
+    assert body["key"] == "100|main"
+    assert body["n_party_sides"] == 2
+    assert body["n_distinct_suffixes"] == 2
+
+    # by_suffix should have both: "street" with base_key, "(none)" with base_key=null.
+    suffixes = {entry["value"]: entry for entry in body["by_suffix"]}
+    assert "street" in suffixes
+    assert suffixes["street"]["base_key"] == "100|main|street"
+    assert suffixes["street"]["n_party_sides"] == 1
+    assert "(none)" in suffixes
+    assert suffixes["(none)"]["base_key"] is None
+    assert suffixes["(none)"]["n_party_sides"] == 1
+    # Sorted DESC by count (here both = 1, but field exists).
+    counts = [e["n_party_sides"] for e in body["by_suffix"]]
+    assert counts == sorted(counts, reverse=True)
+    assert len(body["by_suffix"]) <= 50
+
+    # by_suite — sorted DESC, capped at 50.
+    counts_suite = [e["n_party_sides"] for e in body["by_suite"]]
+    assert counts_suite == sorted(counts_suite, reverse=True)
+    assert len(body["by_suite"]) <= 50
+
+    # by_postal — sorted DESC, capped at 50.
+    counts_postal = [e["n_party_sides"] for e in body["by_postal"]]
+    assert counts_postal == sorted(counts_postal, reverse=True)
+    assert len(body["by_postal"]) <= 50
+    # Both seeded postals should appear.
+    postals = {e["postal"] for e in body["by_postal"]}
+    assert postals == {"L1A1A1", "L1A1A2"}
+
+
+def test_address_root_detail_404(client):
+    resp = client.get("/api/explorer/addresses/roots/zz%7Cnowhere")
+    assert resp.status_code == 404
+
+
+def test_address_root_detail_400_on_malformed_key(client):
+    resp = client.get("/api/explorer/addresses/roots/justonepart")
+    assert resp.status_code == 400
+
+
+def test_address_root_detail_party_sides_hydrated(client):
+    resp = client.get("/api/explorer/addresses/roots/100%7Cmain")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert "party_sides" in body
+    ps_keys = {(p["source_id"], p["side"]) for p in body["party_sides"]}
+    assert ps_keys == {("RT100", "buyer"), ("RT101", "buyer")}
+    for ps in body["party_sides"]:
+        assert "brand_phrases" in ps
+    # At least one party-side has a brand_phrase from the seeded atoms.
+    all_phrases = {
+        bp["phrase"]
+        for ps in body["party_sides"]
+        for bp in ps["brand_phrases"]
+    }
+    assert "mainline holdings" in all_phrases or "main capital" in all_phrases
 
 
 # ── Contacts ───────────────────────────────────────────────────
