@@ -1587,6 +1587,8 @@ export interface ExplorerPartySide {
 export interface BrandTokenDetail extends BrandTokenSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
+  contains: NgramContainmentEntry[];
+  extended_by: NgramContainmentEntry[];
 }
 
 // ============================================================
@@ -1619,6 +1621,8 @@ export interface BrandBigramListResponse {
 export interface BrandBigramDetail extends BrandBigramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
+  contains: NgramContainmentEntry[];
+  extended_by: NgramContainmentEntry[];
 }
 
 export interface BrandTrigramSummary extends Omit<BrandBigramSummary, "bigram"> {
@@ -1637,6 +1641,8 @@ export interface BrandTrigramListResponse {
 export interface BrandTrigramDetail extends BrandTrigramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
+  contains: NgramContainmentEntry[];
+  extended_by: NgramContainmentEntry[];
 }
 
 // ============================================================

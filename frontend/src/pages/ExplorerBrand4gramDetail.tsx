@@ -4,6 +4,7 @@ import { Heading, Text, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { BrandFourgramDetail } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
+import NgramContainment from "../components/explorer/NgramContainment";
 
 export default function ExplorerBrand4gramDetail() {
   const { fourgram } = useParams<{ fourgram: string }>();
@@ -72,6 +73,8 @@ export default function ExplorerBrand4gramDetail() {
           </Text>
         </div>
       </div>
+
+      <NgramContainment contains={data.contains} extended_by={data.extended_by} />
 
       <Heading size="4" mt="6" mb="2">Brand phrases containing this 4-gram</Heading>
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">

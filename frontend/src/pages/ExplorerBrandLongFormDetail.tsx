@@ -4,6 +4,7 @@ import { Heading, Text, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { BrandLongPhraseDetail } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
+import NgramContainment from "../components/explorer/NgramContainment";
 
 export default function ExplorerBrandLongFormDetail() {
   const { phrase } = useParams<{ phrase: string }>();
@@ -75,6 +76,8 @@ export default function ExplorerBrandLongFormDetail() {
           </Text>
         </div>
       </div>
+
+      <NgramContainment contains={data.contains} extended_by={data.extended_by} />
 
       <Heading size="4" mt="6" mb="2">Source brand_phrases (raw)</Heading>
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
