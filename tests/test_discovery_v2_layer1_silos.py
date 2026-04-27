@@ -28,7 +28,10 @@ def _make_db():
             n_distinct_phrases INTEGER, is_distinctive INTEGER, is_excluded INTEGER,
             wordfreq_zipf REAL, is_english_common INTEGER, is_place_name INTEGER,
             is_industry_stopword INTEGER, filter_reason TEXT,
-            discovered_at TEXT DEFAULT (datetime('now'))
+            discovered_at TEXT DEFAULT (datetime('now')),
+            position_consistency REAL,
+            total_child_coverage REAL,
+            is_position_anchor INTEGER NOT NULL DEFAULT 0
         );
         CREATE TABLE brand_bigram_index (
             bigram TEXT, source_id TEXT, side TEXT,

@@ -465,15 +465,98 @@ def build_contact_fingerprint_summary(conn, *, verbose: bool = True):
     return {"n_contacts": n}
 
 
+def _recompute_position_anchors(conn, *, verbose: bool = True):
+    """Compute position_consistency, total_child_coverage, and is_position_anchor
+    on every row of brand_token_summary, using brand_bigram_summary as input.
+
+    A 1-gram is a position-anchor when ALL hold:
+      - n_party_sides >= 10
+      - is_distinctive = 0 (we're rescuing tokens already filtered)
+      - is_excluded = 0
+      - position_consistency >= 0.95
+      - total_child_coverage >= 0.85
+      - n_distinct_children >= 3
+
+    Already-distinctive tokens get position_consistency and total_child_coverage
+    populated for visibility but is_position_anchor stays 0 (no rescue needed).
+    """
+    if verbose:
+        print("Layer 1 Silo A: recomputing position-anchor flags...", flush=True)
+
+    # Build per-token aggregates from brand_bigram_summary.
+    # For each 1-gram, count n_party_sides where it appears as token_a vs token_b,
+    # and how many distinct child 2-grams contain it.
+    tokens_stats: dict = {}
+    for row in conn.execute(
+        "SELECT token_a, token_b, n_party_sides FROM brand_bigram_summary"
+    ):
+        for tok, side in ((row["token_a"], "a"), (row["token_b"], "b")):
+            stats = tokens_stats.setdefault(tok, {"pos_a": 0, "pos_b": 0, "n_children": 0})
+            if side == "a":
+                stats["pos_a"] += row["n_party_sides"]
+            else:
+                stats["pos_b"] += row["n_party_sides"]
+            stats["n_children"] += 1
+
+    # Update each brand_token_summary row.
+    n_anchors = 0
+    updates = []
+    for token_row in conn.execute(
+        "SELECT token, n_party_sides, is_distinctive, is_excluded "
+        "FROM brand_token_summary"
+    ):
+        token = token_row["token"]
+        sides_1g = token_row["n_party_sides"]
+        is_distinctive = token_row["is_distinctive"]
+        is_excluded = token_row["is_excluded"]
+
+        s = tokens_stats.get(token, {"pos_a": 0, "pos_b": 0, "n_children": 0})
+        pos_a = s["pos_a"]
+        pos_b = s["pos_b"]
+        n_children = s["n_children"]
+        total_pos = pos_a + pos_b
+
+        position_consistency = (max(pos_a, pos_b) / total_pos) if total_pos > 0 else None
+        total_child_coverage = min(1.0, total_pos / sides_1g) if sides_1g > 0 else None
+
+        is_anchor = 0
+        if (sides_1g >= 10
+            and is_distinctive == 0
+            and is_excluded == 0
+            and position_consistency is not None
+            and position_consistency >= 0.95
+            and total_child_coverage is not None
+            and total_child_coverage >= 0.85
+            and n_children >= 3):
+            is_anchor = 1
+            n_anchors += 1
+
+        updates.append((position_consistency, total_child_coverage, is_anchor, token))
+
+    conn.executemany(
+        "UPDATE brand_token_summary "
+        "SET position_consistency = ?, total_child_coverage = ?, is_position_anchor = ? "
+        "WHERE token = ?",
+        updates,
+    )
+    conn.commit()
+    if verbose:
+        print(f"  {n_anchors:,} position-anchor 1-grams flagged", flush=True)
+    return {"n_anchors": n_anchors}
+
+
 def build_all_indexes(conn, *, min_idf: Optional[float] = None, verbose: bool = True):
     """Populate every Layer 1 silo index/summary table.
 
     Order matters: brand_token_summary must be built BEFORE brand n-gram
     builders so that the n-gram flag rollups can look up constituent
-    token flags.
+    token flags. Position-anchor recompute runs after the bigram build
+    (bigram data is the input) but before higher n-grams (so n_children
+    counts are stable by the time 3/4/5-grams run).
     """
     build_brand_index(conn, min_idf=min_idf, verbose=verbose)
     build_brand_ngram_index(conn, 2, min_idf=min_idf, verbose=verbose)
+    _recompute_position_anchors(conn, verbose=verbose)   # after bigram is built
     build_brand_ngram_index(conn, 3, min_idf=min_idf, verbose=verbose)
     build_brand_ngram_index(conn, 4, min_idf=min_idf, verbose=verbose)
     build_brand_ngram_index(conn, 5, min_idf=min_idf, verbose=verbose)
