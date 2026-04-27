@@ -67,6 +67,8 @@ const ExplorerPhones = lazy(() => import("./pages/ExplorerPhones"));
 const ExplorerPhoneDetail = lazy(() => import("./pages/ExplorerPhoneDetail"));
 const ExplorerAddresses = lazy(() => import("./pages/ExplorerAddresses"));
 const ExplorerAddressDetail = lazy(() => import("./pages/ExplorerAddressDetail"));
+const ExplorerAddressRoots = lazy(() => import("./pages/ExplorerAddressRoots"));
+const ExplorerAddressRootDetail = lazy(() => import("./pages/ExplorerAddressRootDetail"));
 const ExplorerContacts = lazy(() => import("./pages/ExplorerContacts"));
 const ExplorerContactDetail = lazy(() => import("./pages/ExplorerContactDetail"));
 
@@ -160,8 +162,11 @@ export default function App() {
                 <Route path="/explorer/brands/long-form/:phrase" element={<ExplorerBrandLongFormDetail />} />
                 <Route path="/explorer/phones" element={<ExplorerPhones />} />
                 <Route path="/explorer/phones/:phone" element={<ExplorerPhoneDetail />} />
-                <Route path="/explorer/addresses" element={<ExplorerAddresses />} />
-                <Route path="/explorer/addresses/:key" element={<ExplorerAddressDetail />} />
+                <Route path="/explorer/addresses" element={<Navigate to="/explorer/addresses/roots" replace />} />
+                <Route path="/explorer/addresses/roots" element={<ExplorerAddressRoots />} />
+                <Route path="/explorer/addresses/roots/:key" element={<ExplorerAddressRootDetail />} />
+                <Route path="/explorer/addresses/bases" element={<ExplorerAddresses />} />
+                <Route path="/explorer/addresses/bases/:key" element={<ExplorerAddressDetail />} />
                 <Route path="/explorer/contacts" element={<ExplorerContacts />} />
                 <Route path="/explorer/contacts/:fingerprint" element={<ExplorerContactDetail />} />
                 <Route path="/labeling" element={<LabelingPage />} />

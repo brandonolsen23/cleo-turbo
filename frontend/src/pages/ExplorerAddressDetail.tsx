@@ -4,6 +4,8 @@ import { Heading, Text } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { AddressBaseDetail, AddressSuiteVariant } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
+import ExplorerTabs from "../components/explorer/ExplorerTabs";
+import AddressTabs from "../components/explorer/AddressTabs";
 
 function formatBase(r: { street_number: string; street_name: string; street_suffix: string }) {
   return [r.street_number, r.street_name, r.street_suffix]
@@ -21,14 +23,32 @@ export default function ExplorerAddressDetail() {
       .then(setData).catch((e) => setErr(String(e)));
   }, [key]);
 
-  if (err) return <div className="p-6"><Text color="tomato">{err}</Text></div>;
-  if (!data) return <div className="p-6"><Text size="2" style={{ color: "var(--gray-9)" }}>Loading…</Text></div>;
+  if (err) {
+    return (
+      <div className="p-6 max-w-6xl mx-auto">
+        <ExplorerTabs />
+        <AddressTabs />
+        <Text color="tomato">{err}</Text>
+      </div>
+    );
+  }
+  if (!data) {
+    return (
+      <div className="p-6 max-w-6xl mx-auto">
+        <ExplorerTabs />
+        <AddressTabs />
+        <Text size="2" style={{ color: "var(--gray-9)" }}>Loading…</Text>
+      </div>
+    );
+  }
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
-      <Link to="/explorer/addresses" className="text-[13px] no-underline"
+      <ExplorerTabs />
+      <AddressTabs />
+      <Link to="/explorer/addresses/bases" className="text-[13px] no-underline"
             style={{ color: "var(--accent-11)" }}>
-        ← Addresses
+        ← Address Bases
       </Link>
 
       <div className="flex items-baseline gap-3 mt-2 mb-1 flex-wrap">

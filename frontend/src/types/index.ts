@@ -1850,6 +1850,50 @@ export interface AddressBaseDetail extends AddressBaseSummary {
   party_sides: ExplorerPartySide[];
 }
 
+// Explorer — Address Roots
+export interface AddressRootSummary {
+  street_number: string;
+  street_name: string;
+  key: string;  // "num|name"
+  n_party_sides: number;
+  n_distinct_suffixes: number;
+  n_distinct_directions: number;
+  n_distinct_suites: number;
+  n_distinct_postals: number;
+}
+
+export interface AddressRootListResponse {
+  results: AddressRootSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface AddressRootSuffixBreakdown {
+  value: string;             // suffix or "(none)"
+  n_party_sides: number;
+  base_key: string | null;   // "num|name|suffix" or null when value === "(none)"
+}
+
+export interface AddressRootSuiteBreakdown {
+  suite_type: string | null;
+  suite_number: string | null;
+  n_party_sides: number;
+}
+
+export interface AddressRootPostalBreakdown {
+  postal: string;
+  n_party_sides: number;
+}
+
+export interface AddressRootDetail extends AddressRootSummary {
+  by_suffix: AddressRootSuffixBreakdown[];
+  by_suite: AddressRootSuiteBreakdown[];
+  by_postal: AddressRootPostalBreakdown[];
+  party_sides: ExplorerPartySide[];
+}
+
 // ============================================================
 // Explorer — Contacts
 // ============================================================
