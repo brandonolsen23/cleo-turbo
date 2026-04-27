@@ -21,7 +21,7 @@ export default function ExplorerBrandsUnigram() {
   const nav = useNavigate();
   const [data, setData] = useState<BrandTokenListResponse | null>(null);
   const [q, setQ] = useState("");
-  const [distinctiveOnly, setDistinctiveOnly] = useState(true);
+  const [distinctiveOnly, setDistinctiveOnly] = useState(false);
   const [includeAnchors, setIncludeAnchors] = useState(true);
   const [signals, setSignals] = useState<SignalToggle>(NO_SIGNAL);
   const [page, setPage] = useState(1);

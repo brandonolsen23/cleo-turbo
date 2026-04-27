@@ -10,7 +10,7 @@ export default function ExplorerBrandsLongForm() {
   const nav = useNavigate();
   const [data, setData] = useState<BrandLongPhraseListResponse | null>(null);
   const [q, setQ] = useState("");
-  const [distinctiveOnly, setDistinctiveOnly] = useState(true);
+  const [distinctiveOnly, setDistinctiveOnly] = useState(false);
   const [page, setPage] = useState(1);
   const perPage = 100;
 

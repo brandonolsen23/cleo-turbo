@@ -10,7 +10,7 @@ export default function ExplorerBrandsTrigram() {
   const nav = useNavigate();
   const [data, setData] = useState<BrandTrigramListResponse | null>(null);
   const [q, setQ] = useState("");
-  const [distinctiveOnly, setDistinctiveOnly] = useState(true);
+  const [distinctiveOnly, setDistinctiveOnly] = useState(false);
   const [page, setPage] = useState(1);
   const perPage = 100;
 
