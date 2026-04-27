@@ -57,6 +57,12 @@ const ExplorerBrandsBigram = lazy(() => import("./pages/ExplorerBrandsBigram"));
 const ExplorerBrandBigramDetail = lazy(() => import("./pages/ExplorerBrandBigramDetail"));
 const ExplorerBrandsTrigram = lazy(() => import("./pages/ExplorerBrandsTrigram"));
 const ExplorerBrandTrigramDetail = lazy(() => import("./pages/ExplorerBrandTrigramDetail"));
+const ExplorerBrands4gram = lazy(() => import("./pages/ExplorerBrands4gram"));
+const ExplorerBrand4gramDetail = lazy(() => import("./pages/ExplorerBrand4gramDetail"));
+const ExplorerBrands5gram = lazy(() => import("./pages/ExplorerBrands5gram"));
+const ExplorerBrand5gramDetail = lazy(() => import("./pages/ExplorerBrand5gramDetail"));
+const ExplorerBrandsLongForm = lazy(() => import("./pages/ExplorerBrandsLongForm"));
+const ExplorerBrandLongFormDetail = lazy(() => import("./pages/ExplorerBrandLongFormDetail"));
 const ExplorerPhones = lazy(() => import("./pages/ExplorerPhones"));
 const ExplorerPhoneDetail = lazy(() => import("./pages/ExplorerPhoneDetail"));
 const ExplorerAddresses = lazy(() => import("./pages/ExplorerAddresses"));
@@ -146,6 +152,12 @@ export default function App() {
                 <Route path="/explorer/brands/2gram/:bigram" element={<ExplorerBrandBigramDetail />} />
                 <Route path="/explorer/brands/3gram" element={<ExplorerBrandsTrigram />} />
                 <Route path="/explorer/brands/3gram/:trigram" element={<ExplorerBrandTrigramDetail />} />
+                <Route path="/explorer/brands/4gram" element={<ExplorerBrands4gram />} />
+                <Route path="/explorer/brands/4gram/:fourgram" element={<ExplorerBrand4gramDetail />} />
+                <Route path="/explorer/brands/5gram" element={<ExplorerBrands5gram />} />
+                <Route path="/explorer/brands/5gram/:fivegram" element={<ExplorerBrand5gramDetail />} />
+                <Route path="/explorer/brands/long-form" element={<ExplorerBrandsLongForm />} />
+                <Route path="/explorer/brands/long-form/:phrase" element={<ExplorerBrandLongFormDetail />} />
                 <Route path="/explorer/phones" element={<ExplorerPhones />} />
                 <Route path="/explorer/phones/:phone" element={<ExplorerPhoneDetail />} />
                 <Route path="/explorer/addresses" element={<ExplorerAddresses />} />

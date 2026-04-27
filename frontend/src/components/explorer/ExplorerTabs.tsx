@@ -21,6 +21,9 @@ export default function ExplorerTabs() {
     { label: "1-gram", href: "/explorer/brands/1gram", matches: (p) => p.startsWith("/explorer/brands/1gram") },
     { label: "2-gram", href: "/explorer/brands/2gram", matches: (p) => p.startsWith("/explorer/brands/2gram") },
     { label: "3-gram", href: "/explorer/brands/3gram", matches: (p) => p.startsWith("/explorer/brands/3gram") },
+    { label: "4-gram",       href: "/explorer/brands/4gram",     matches: (p) => p.startsWith("/explorer/brands/4gram") },
+    { label: "5-gram",       href: "/explorer/brands/5gram",     matches: (p) => p.startsWith("/explorer/brands/5gram") },
+    { label: "6+ long-form", href: "/explorer/brands/long-form", matches: (p) => p.startsWith("/explorer/brands/long-form") },
   ];
 
   const onBrands = path.startsWith("/explorer/brands");

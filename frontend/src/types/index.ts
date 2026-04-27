@@ -1640,6 +1640,110 @@ export interface BrandTrigramDetail extends BrandTrigramSummary {
 }
 
 // ============================================================
+// Explorer — Brand 4-gram, 5-gram, 6+ long-form
+// ============================================================
+
+export interface NgramContainmentEntry {
+  value: string;
+  level: "1gram" | "2gram" | "3gram" | "4gram" | "5gram" | "long-form";
+  n_party_sides: number;
+}
+
+export interface BrandFourgramSummary {
+  fourgram: string;
+  token_a: string;
+  token_b: string;
+  token_c: string;
+  token_d: string;
+  idf: number;
+  n_party_sides: number;
+  n_distinct_phrases: number;
+  any_token_distinctive: 0 | 1;
+  any_token_excluded: 0 | 1;
+  all_english: 0 | 1;
+  all_place: 0 | 1;
+  all_industry: 0 | 1;
+  is_distinctive: 0 | 1;
+}
+
+export interface BrandFourgramListResponse {
+  results: BrandFourgramSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface BrandFourgramDetail extends BrandFourgramSummary {
+  phrases: string[];
+  party_sides: ExplorerPartySide[];
+  contains: NgramContainmentEntry[];
+  extended_by: NgramContainmentEntry[];
+}
+
+export interface BrandFivegramSummary {
+  fivegram: string;
+  token_a: string;
+  token_b: string;
+  token_c: string;
+  token_d: string;
+  token_e: string;
+  idf: number;
+  n_party_sides: number;
+  n_distinct_phrases: number;
+  any_token_distinctive: 0 | 1;
+  any_token_excluded: 0 | 1;
+  all_english: 0 | 1;
+  all_place: 0 | 1;
+  all_industry: 0 | 1;
+  is_distinctive: 0 | 1;
+}
+
+export interface BrandFivegramListResponse {
+  results: BrandFivegramSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface BrandFivegramDetail extends BrandFivegramSummary {
+  phrases: string[];
+  party_sides: ExplorerPartySide[];
+  contains: NgramContainmentEntry[];
+  extended_by: NgramContainmentEntry[];
+}
+
+export interface BrandLongPhraseSummary {
+  phrase: string;
+  n_tokens: number;
+  idf: number;
+  n_party_sides: number;
+  n_distinct_source_phrases: number;
+  any_token_distinctive: 0 | 1;
+  any_token_excluded: 0 | 1;
+  all_english: 0 | 1;
+  all_place: 0 | 1;
+  all_industry: 0 | 1;
+  is_distinctive: 0 | 1;
+}
+
+export interface BrandLongPhraseListResponse {
+  results: BrandLongPhraseSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface BrandLongPhraseDetail extends BrandLongPhraseSummary {
+  phrases: string[];
+  party_sides: ExplorerPartySide[];
+  contains: NgramContainmentEntry[];
+  extended_by: NgramContainmentEntry[];
+}
+
+// ============================================================
 // Explorer — Phones
 // ============================================================
 
