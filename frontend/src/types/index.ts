@@ -1677,6 +1677,25 @@ export interface BrandFamilyLooseFullResponse {
   pages: number;
 }
 
+export interface BrandSearchEntry {
+  value: string;
+  n_party_sides: number;
+  is_distinctive: 0 | 1;
+  is_position_anchor?: 0 | 1;   // only present for 1-gram results
+}
+
+export interface BrandSearchResponse {
+  q: string;
+  results_by_level: {
+    "1gram":     BrandSearchEntry[];
+    "2gram":     BrandSearchEntry[];
+    "3gram":     BrandSearchEntry[];
+    "4gram":     BrandSearchEntry[];
+    "5gram":     BrandSearchEntry[];
+    "long-form": BrandSearchEntry[];
+  };
+}
+
 export interface BrandFourgramSummary {
   fourgram: string;
   token_a: string;

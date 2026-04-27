@@ -4,6 +4,7 @@ import { Heading, Text, Badge, Button, TextField, Switch } from "@radix-ui/theme
 import { fetchApi } from "../api/client";
 import type { BrandTrigramListResponse, BrandTrigramSummary } from "../types";
 import ExplorerTabs from "../components/explorer/ExplorerTabs";
+import BrandSearchBar from "../components/explorer/BrandSearchBar";
 
 export default function ExplorerBrandsTrigram() {
   const nav = useNavigate();
@@ -28,6 +29,7 @@ export default function ExplorerBrandsTrigram() {
   return (
     <div className="p-6 max-w-6xl mx-auto">
       <ExplorerTabs />
+      <BrandSearchBar />
       <div className="flex items-baseline gap-4 mb-2">
         <Heading size="6">Brand Trigrams</Heading>
         <Text size="2" style={{ color: "var(--gray-9)" }}>

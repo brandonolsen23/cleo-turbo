@@ -4,6 +4,7 @@ import { Heading, Text, Button, TextField, Switch } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { BrandFivegramListResponse, BrandFivegramSummary } from "../types";
 import ExplorerTabs from "../components/explorer/ExplorerTabs";
+import BrandSearchBar from "../components/explorer/BrandSearchBar";
 
 export default function ExplorerBrands5gram() {
   const nav = useNavigate();
@@ -28,6 +29,7 @@ export default function ExplorerBrands5gram() {
   return (
     <div className="p-6 max-w-6xl mx-auto">
       <ExplorerTabs />
+      <BrandSearchBar />
       <div className="flex items-baseline gap-4 mb-2">
         <Heading size="6">Brand 5-grams</Heading>
         <Text size="2" style={{ color: "var(--gray-9)" }}>
