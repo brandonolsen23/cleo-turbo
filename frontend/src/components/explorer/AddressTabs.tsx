@@ -5,9 +5,8 @@ import { Text } from "@radix-ui/themes";
  * Sub-tab bar for the Addresses section. Renders below ExplorerTabs.
  *   Roots | Bases
  *
- * Roots is matched by /explorer/addresses/roots* AND the bare /explorer/addresses
- * (because that path redirects to /explorer/addresses/roots).
- * Bases is matched by /explorer/addresses/bases*.
+ * The bare /explorer/addresses path is handled by a Navigate redirect in App.tsx,
+ * so this component only sees /explorer/addresses/roots* or /explorer/addresses/bases*.
  */
 export default function AddressTabs() {
   const location = useLocation();
@@ -17,10 +16,7 @@ export default function AddressTabs() {
     {
       label: "Roots",
       href: "/explorer/addresses/roots",
-      matches: (p) =>
-        p === "/explorer/addresses" ||
-        p === "/explorer/addresses/" ||
-        p.startsWith("/explorer/addresses/roots"),
+      matches: (p) => p.startsWith("/explorer/addresses/roots"),
     },
     {
       label: "Bases",
