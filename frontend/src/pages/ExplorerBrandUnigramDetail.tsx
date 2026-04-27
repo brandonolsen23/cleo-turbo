@@ -4,7 +4,7 @@ import { Heading, Text, Badge, Button } from "@radix-ui/themes";
 import { fetchApi, mutateApi } from "../api/client";
 import type { BrandTokenDetail } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
-import NgramContainment from "../components/explorer/NgramContainment";
+import BrandFamily from "../components/explorer/BrandFamily";
 
 export default function ExplorerBrandUnigramDetail() {
   const { token } = useParams<{ token: string }>();
@@ -122,7 +122,7 @@ export default function ExplorerBrandUnigramDetail() {
         </div>
       </div>
 
-      <NgramContainment contains={data.contains} extended_by={data.extended_by} />
+      <BrandFamily seed_value={data.token} seed_level="1gram" />
 
       <Heading size="4" mt="6" mb="2">Brand phrases containing this token</Heading>
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">

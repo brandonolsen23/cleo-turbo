@@ -1587,8 +1587,8 @@ export interface ExplorerPartySide {
 export interface BrandTokenDetail extends BrandTokenSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
-  contains: NgramContainmentEntry[];
-  extended_by: NgramContainmentEntry[];
+  contains: BrandFamilyEntry[];
+  extended_by: BrandFamilyEntry[];
 }
 
 // ============================================================
@@ -1621,8 +1621,8 @@ export interface BrandBigramListResponse {
 export interface BrandBigramDetail extends BrandBigramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
-  contains: NgramContainmentEntry[];
-  extended_by: NgramContainmentEntry[];
+  contains: BrandFamilyEntry[];
+  extended_by: BrandFamilyEntry[];
 }
 
 export interface BrandTrigramSummary extends Omit<BrandBigramSummary, "bigram"> {
@@ -1641,18 +1641,40 @@ export interface BrandTrigramListResponse {
 export interface BrandTrigramDetail extends BrandTrigramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
-  contains: NgramContainmentEntry[];
-  extended_by: NgramContainmentEntry[];
+  contains: BrandFamilyEntry[];
+  extended_by: BrandFamilyEntry[];
 }
 
 // ============================================================
 // Explorer — Brand 4-gram, 5-gram, 6+ long-form
 // ============================================================
 
-export interface NgramContainmentEntry {
+export interface BrandFamilyEntry {
   value: string;
   level: "1gram" | "2gram" | "3gram" | "4gram" | "5gram" | "long-form";
   n_party_sides: number;
+}
+
+export interface BrandFamilyLooseSection {
+  token: string;
+  n_total: number;
+  preview: BrandFamilyEntry[];
+}
+
+export interface BrandFamilyResponse {
+  seed_value: string;
+  seed_level: "1gram" | "2gram" | "3gram" | "4gram" | "5gram" | "long-form";
+  tight: BrandFamilyEntry[];
+  loose_sections: BrandFamilyLooseSection[];
+}
+
+export interface BrandFamilyLooseFullResponse {
+  token: string;
+  results: BrandFamilyEntry[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
 }
 
 export interface BrandFourgramSummary {
@@ -1683,8 +1705,8 @@ export interface BrandFourgramListResponse {
 export interface BrandFourgramDetail extends BrandFourgramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
-  contains: NgramContainmentEntry[];
-  extended_by: NgramContainmentEntry[];
+  contains: BrandFamilyEntry[];
+  extended_by: BrandFamilyEntry[];
 }
 
 export interface BrandFivegramSummary {
@@ -1716,8 +1738,8 @@ export interface BrandFivegramListResponse {
 export interface BrandFivegramDetail extends BrandFivegramSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
-  contains: NgramContainmentEntry[];
-  extended_by: NgramContainmentEntry[];
+  contains: BrandFamilyEntry[];
+  extended_by: BrandFamilyEntry[];
 }
 
 export interface BrandLongPhraseSummary {
@@ -1745,8 +1767,8 @@ export interface BrandLongPhraseListResponse {
 export interface BrandLongPhraseDetail extends BrandLongPhraseSummary {
   phrases: string[];
   party_sides: ExplorerPartySide[];
-  contains: NgramContainmentEntry[];
-  extended_by: NgramContainmentEntry[];
+  contains: BrandFamilyEntry[];
+  extended_by: BrandFamilyEntry[];
 }
 
 // ============================================================

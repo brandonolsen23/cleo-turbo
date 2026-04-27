@@ -4,7 +4,7 @@ import { Heading, Text, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { BrandTrigramDetail } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
-import NgramContainment from "../components/explorer/NgramContainment";
+import BrandFamily from "../components/explorer/BrandFamily";
 
 export default function ExplorerBrandTrigramDetail() {
   const { trigram } = useParams<{ trigram: string }>();
@@ -74,7 +74,7 @@ export default function ExplorerBrandTrigramDetail() {
         </div>
       </div>
 
-      <NgramContainment contains={data.contains} extended_by={data.extended_by} />
+      <BrandFamily seed_value={data.trigram} seed_level="3gram" />
 
       <Heading size="4" mt="6" mb="2">Brand phrases containing this trigram</Heading>
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
