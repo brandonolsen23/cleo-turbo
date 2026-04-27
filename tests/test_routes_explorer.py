@@ -28,6 +28,8 @@ def _seeded_db():
             n_distinct_phrases INTEGER, is_distinctive INTEGER, is_excluded INTEGER,
             wordfreq_zipf REAL, is_english_common INTEGER, is_place_name INTEGER,
             is_industry_stopword INTEGER, filter_reason TEXT,
+            position_consistency REAL, total_child_coverage REAL,
+            is_position_anchor INTEGER NOT NULL DEFAULT 0,
             discovered_at TEXT
         );
         CREATE TABLE industry_stopwords (
@@ -116,15 +118,15 @@ def _seeded_db():
     #  filter_reason, discovered_at)
     conn.execute(
         "INSERT INTO brand_token_summary VALUES "
-        "('kingsett', 6.5, 2, 2, 1, 0, 0.0, 0, 0, 0, NULL, '2026-04-23')"
+        "('kingsett', 6.5, 2, 2, 1, 0, 0.0, 0, 0, 0, NULL, NULL, NULL, 0, '2026-04-23')"
     )
     conn.execute(
         "INSERT INTO brand_token_summary VALUES "
-        "('rasenberg', 5.2, 2, 1, 1, 0, 1.56, 0, 0, 0, NULL, '2026-04-23')"
+        "('rasenberg', 5.2, 2, 1, 1, 0, 1.56, 0, 0, 0, NULL, NULL, NULL, 0, '2026-04-23')"
     )
     conn.execute(
         "INSERT INTO brand_token_summary VALUES "
-        "('ontario', 0.8, 3, 3, 0, 0, 4.5, 1, 1, 0, 'place', '2026-04-23')"
+        "('ontario', 0.8, 3, 3, 0, 0, 4.5, 1, 1, 0, 'place', NULL, NULL, 0, '2026-04-23')"
     )
     for sid, tok, phrase in [
         ("RT1", "kingsett", "kingsett capital"),
@@ -609,3 +611,64 @@ def test_1gram_detail_now_includes_containment(client):
     assert "extended_by" in body
     # 1gram has no contains
     assert body["contains"] == []
+
+
+# ── Brand Family + Search ──────────────────────────────────────
+
+def test_brands_family_returns_tight_and_loose(client):
+    resp = client.get("/api/explorer/brands/family",
+                      params={"seed_value": "kingsett", "seed_level": "1gram"})
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["seed_value"] == "kingsett"
+    assert body["seed_level"] == "1gram"
+    assert "tight" in body
+    assert "loose_sections" in body
+    # Loose section should have one entry (the token itself) since it's a 1-gram seed
+    assert len(body["loose_sections"]) == 1
+    assert body["loose_sections"][0]["token"] == "kingsett"
+
+
+def test_brands_family_2gram_seed_has_two_loose_sections(client):
+    resp = client.get("/api/explorer/brands/family",
+                      params={"seed_value": "kingsett capital", "seed_level": "2gram"})
+    body = resp.json()
+    assert len(body["loose_sections"]) == 2
+    tokens = [s["token"] for s in body["loose_sections"]]
+    assert set(tokens) == {"kingsett", "capital"}
+
+
+def test_brands_family_loose_paginates(client):
+    resp = client.get("/api/explorer/brands/family/loose",
+                      params={"token": "kingsett", "per_page": 10})
+    body = resp.json()
+    assert body["token"] == "kingsett"
+    assert "results" in body
+    assert "pages" in body
+
+
+def test_brands_search_returns_grouped_by_level(client):
+    resp = client.get("/api/explorer/brands/search", params={"q": "kingsett"})
+    body = resp.json()
+    assert body["q"] == "kingsett"
+    assert "results_by_level" in body
+    assert "1gram" in body["results_by_level"]
+    assert "2gram" in body["results_by_level"]
+    # Should find 'kingsett' as a 1-gram
+    onegram_tokens = {r["value"] for r in body["results_by_level"]["1gram"]}
+    assert "kingsett" in onegram_tokens
+
+
+def test_1gram_list_returns_position_anchor_field(client):
+    resp = client.get("/api/explorer/brands?distinctive_only=false&per_page=100")
+    body = resp.json()
+    for row in body["results"]:
+        assert "is_position_anchor" in row
+
+
+def test_1gram_detail_returns_position_anchor_fields(client):
+    resp = client.get("/api/explorer/brands/kingsett")
+    body = resp.json()
+    assert "is_position_anchor" in body
+    assert "position_consistency" in body
+    assert "total_child_coverage" in body

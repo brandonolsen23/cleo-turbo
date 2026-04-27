@@ -62,7 +62,10 @@ def list_brand_tokens(
         f"""SELECT token, idf, n_party_sides, n_distinct_phrases,
                    is_distinctive, is_excluded,
                    wordfreq_zipf, is_english_common, is_place_name,
-                   is_industry_stopword, filter_reason
+                   is_industry_stopword, filter_reason,
+                   COALESCE(is_position_anchor, 0) AS is_position_anchor,
+                   position_consistency,
+                   total_child_coverage
             FROM brand_token_summary{where_sql}
             ORDER BY n_party_sides DESC, token ASC
             LIMIT ? OFFSET ?""",
@@ -378,6 +381,245 @@ def _compute_containment(db, level: str, value: str, *, limit: int = 50) -> dict
     return {"contains": contains, "extended_by": extended_by}
 
 
+# ─────────────────────────────────────────────────────────────
+# Brand Family + Cross-silo Search helpers
+# All of these MUST be registered before /brands/{token}.
+# ─────────────────────────────────────────────────────────────
+
+NGRAM_LEVELS_LIST = ["1gram", "2gram", "3gram", "4gram", "5gram", "long-form"]
+
+LEVEL_TO_TABLE = {
+    "1gram":     ("brand_token_summary",        "token"),
+    "2gram":     ("brand_bigram_summary",       "bigram"),
+    "3gram":     ("brand_trigram_summary",      "trigram"),
+    "4gram":     ("brand_fourgram_summary",     "fourgram"),
+    "5gram":     ("brand_fivegram_summary",     "fivegram"),
+    "long-form": ("brand_long_phrase_summary",  "phrase"),
+}
+
+
+def _seed_constituent_tokens(db, level: str, value: str) -> list:
+    """Return the constituent tokens for a seed.
+    For 1-gram: [value].
+    For 2/3/4/5-gram: token_a, token_b, ... from the summary row.
+    For long-form: split phrase on spaces.
+    """
+    if level == "1gram":
+        return [value]
+    if level == "long-form":
+        return value.split(" ")
+    table, _ = LEVEL_TO_TABLE[level]
+    cols = {"2gram": "token_a, token_b",
+            "3gram": "token_a, token_b, token_c",
+            "4gram": "token_a, token_b, token_c, token_d",
+            "5gram": "token_a, token_b, token_c, token_d, token_e"}[level]
+    pk = LEVEL_TO_TABLE[level][1]
+    row = db.execute(f"SELECT {cols} FROM {table} WHERE {pk} = ?", (value,)).fetchone()
+    if row is None:
+        return []
+    return list(dict(row).values())
+
+
+def _ngrams_containing_substring(db, seed_value: str, max_per_level: int = 200) -> list:
+    """Find n-grams (across all 6 silos, levels longer than the seed) whose
+    value contains seed_value as a contiguous word run.
+
+    Used for Tight family.
+    """
+    out = []
+    for level in NGRAM_LEVELS_LIST:
+        table, pk = LEVEL_TO_TABLE[level]
+        # Exclude the seed itself (level + value match) — we want descendants.
+        rows = db.execute(
+            f"SELECT {pk} AS value, n_party_sides "
+            f"FROM {table} "
+            f"WHERE (' ' || {pk} || ' ') LIKE ('% ' || ? || ' %') "
+            f"  AND {pk} != ? "
+            f"ORDER BY n_party_sides DESC LIMIT ?",
+            (seed_value, seed_value, max_per_level),
+        ).fetchall()
+        for r in rows:
+            out.append({
+                "value": r["value"],
+                "level": level,
+                "n_party_sides": r["n_party_sides"],
+            })
+    # Already sorted within level; final sort by sides desc across levels
+    out.sort(key=lambda x: -x["n_party_sides"])
+    return out
+
+
+def _per_token_loose_count(db, token: str) -> int:
+    """Count of n-grams (across 2/3/4/5-gram + long-form) that contain `token`
+    as a constituent. The 1-gram silo just contains the token itself."""
+    total = 0
+    # 2-5gram silos: check each token column
+    for level, (table, _) in LEVEL_TO_TABLE.items():
+        if level in ("1gram", "long-form"):
+            continue
+        n_pos = {"2gram": 2, "3gram": 3, "4gram": 4, "5gram": 5}[level]
+        token_cols = " OR ".join(f"token_{c} = ?" for c in "abcde"[:n_pos])
+        params = [token] * n_pos
+        n = db.execute(
+            f"SELECT COUNT(*) FROM {table} WHERE {token_cols}", params
+        ).fetchone()[0]
+        total += n
+    # Long-form: word-boundary substring
+    n = db.execute(
+        "SELECT COUNT(*) FROM brand_long_phrase_summary "
+        "WHERE (' ' || phrase || ' ') LIKE ('% ' || ? || ' %')",
+        (token,),
+    ).fetchone()[0]
+    total += n
+    return total
+
+
+def _per_token_loose_preview(db, token: str, limit: int = 25) -> list:
+    """Return up to `limit` top n-grams (by n_party_sides) containing `token`
+    as a constituent. Includes 1-gram itself (the token row) for completeness."""
+    out = []
+    # 1-gram: the token itself
+    row = db.execute(
+        "SELECT token AS value, n_party_sides FROM brand_token_summary WHERE token = ?",
+        (token,),
+    ).fetchone()
+    if row is not None:
+        out.append({"value": row["value"], "level": "1gram", "n_party_sides": row["n_party_sides"]})
+    # 2..5-gram
+    for level, (table, pk) in LEVEL_TO_TABLE.items():
+        if level in ("1gram", "long-form"):
+            continue
+        n_pos = {"2gram": 2, "3gram": 3, "4gram": 4, "5gram": 5}[level]
+        token_cols = " OR ".join(f"token_{c} = ?" for c in "abcde"[:n_pos])
+        params = [token] * n_pos
+        rows = db.execute(
+            f"SELECT {pk} AS value, n_party_sides FROM {table} "
+            f"WHERE {token_cols} ORDER BY n_party_sides DESC LIMIT ?",
+            params + [limit],
+        ).fetchall()
+        for r in rows:
+            out.append({"value": r["value"], "level": level, "n_party_sides": r["n_party_sides"]})
+    # Long-form
+    rows = db.execute(
+        "SELECT phrase AS value, n_party_sides FROM brand_long_phrase_summary "
+        "WHERE (' ' || phrase || ' ') LIKE ('% ' || ? || ' %') "
+        "ORDER BY n_party_sides DESC LIMIT ?",
+        (token, limit),
+    ).fetchall()
+    for r in rows:
+        out.append({"value": r["value"], "level": "long-form", "n_party_sides": r["n_party_sides"]})
+    out.sort(key=lambda x: -x["n_party_sides"])
+    return out[:limit]
+
+
+@router.get("/brands/family")
+def brand_family(
+    seed_value: str = Query(...),
+    seed_level: str = Query(...),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    if seed_level not in NGRAM_LEVELS_LIST:
+        raise HTTPException(status_code=400, detail=f"Invalid seed_level: {seed_level!r}")
+
+    tight = _ngrams_containing_substring(db, seed_value)
+
+    constituents = _seed_constituent_tokens(db, seed_level, seed_value)
+    loose_sections = []
+    for token in constituents:
+        loose_sections.append({
+            "token": token,
+            "n_total": _per_token_loose_count(db, token),
+            "preview": _per_token_loose_preview(db, token, limit=25),
+        })
+
+    return {
+        "seed_value": seed_value,
+        "seed_level": seed_level,
+        "tight": tight,
+        "loose_sections": loose_sections,
+    }
+
+
+@router.get("/brands/family/loose")
+def brand_family_loose_full(
+    token: str = Query(...),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(100, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Full paginated list of n-grams (any level) containing the given token
+    as a constituent, sorted by n_party_sides desc."""
+    rows = []
+    # 1-gram: just the token
+    r = db.execute(
+        "SELECT token AS value, '1gram' AS level, n_party_sides FROM brand_token_summary WHERE token = ?",
+        (token,),
+    ).fetchone()
+    if r is not None:
+        rows.append({"value": r["value"], "level": r["level"], "n_party_sides": r["n_party_sides"]})
+
+    for level, (table, pk) in LEVEL_TO_TABLE.items():
+        if level in ("1gram", "long-form"):
+            continue
+        n_pos = {"2gram": 2, "3gram": 3, "4gram": 4, "5gram": 5}[level]
+        token_cols = " OR ".join(f"token_{c} = ?" for c in "abcde"[:n_pos])
+        for r in db.execute(
+            f"SELECT {pk} AS value, n_party_sides FROM {table} WHERE {token_cols}",
+            [token] * n_pos,
+        ):
+            rows.append({"value": r["value"], "level": level, "n_party_sides": r["n_party_sides"]})
+
+    for r in db.execute(
+        "SELECT phrase AS value, n_party_sides FROM brand_long_phrase_summary "
+        "WHERE (' ' || phrase || ' ') LIKE ('% ' || ? || ' %')",
+        (token,),
+    ):
+        rows.append({"value": r["value"], "level": "long-form", "n_party_sides": r["n_party_sides"]})
+
+    rows.sort(key=lambda x: -x["n_party_sides"])
+    total = len(rows)
+    offset = (page - 1) * per_page
+    page_rows = rows[offset:offset + per_page]
+
+    return {
+        "token": token,
+        "results": page_rows,
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "pages": (total + per_page - 1) // per_page,
+    }
+
+
+@router.get("/brands/search")
+def brand_search(
+    q: str = Query(...),
+    per_level: int = Query(25, ge=1, le=100),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Substring search across all 6 brand silos. Returns results grouped by level."""
+    like = "%" + q.lower() + "%"
+    out = {}
+    for level, (table, pk) in LEVEL_TO_TABLE.items():
+        if level == "1gram":
+            rows = db.execute(
+                f"SELECT {pk} AS value, n_party_sides, is_distinctive, "
+                "       COALESCE(is_position_anchor, 0) AS is_position_anchor "
+                f"FROM {table} WHERE {pk} LIKE ? "
+                f"ORDER BY n_party_sides DESC LIMIT ?",
+                (like, per_level),
+            ).fetchall()
+        else:
+            rows = db.execute(
+                f"SELECT {pk} AS value, n_party_sides, is_distinctive "
+                f"FROM {table} WHERE {pk} LIKE ? "
+                f"ORDER BY n_party_sides DESC LIMIT ?",
+                (like, per_level),
+            ).fetchall()
+        out[level] = [dict(r) for r in rows]
+    return {"q": q, "results_by_level": out}
+
+
 @router.get("/brands/bigrams")
 def list_bigrams(
     q: Optional[str] = Query(None),
@@ -674,7 +916,10 @@ def brand_token_detail(
         """SELECT token, idf, n_party_sides, n_distinct_phrases,
                   is_distinctive, is_excluded,
                   wordfreq_zipf, is_english_common, is_place_name,
-                  is_industry_stopword, filter_reason
+                  is_industry_stopword, filter_reason,
+                  COALESCE(is_position_anchor, 0) AS is_position_anchor,
+                  position_consistency,
+                  total_child_coverage
            FROM brand_token_summary WHERE token = ?""",
         (token,),
     ).fetchone()
