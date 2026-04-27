@@ -1555,6 +1555,9 @@ export interface BrandTokenSummary {
   is_place_name: 0 | 1 | null;
   is_industry_stopword: 0 | 1 | null;
   filter_reason: "excluded" | "industry" | "place" | "english" | null;
+  is_position_anchor?: 0 | 1;
+  position_consistency?: number | null;
+  total_child_coverage?: number | null;
 }
 
 export interface BrandTokenListResponse {

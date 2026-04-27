@@ -30,6 +30,7 @@ router = APIRouter()
 def list_brand_tokens(
     q: Optional[str] = Query(None, description="Substring match on token name"),
     distinctive_only: bool = Query(True),
+    include_position_anchors: bool = Query(True),
     filter_reason: Optional[str] = Query(
         None, description="'excluded', 'industry', 'place', 'english', or empty for NULL"
     ),
@@ -39,8 +40,11 @@ def list_brand_tokens(
 ):
     where = []
     params: list = []
-    if distinctive_only:
+    if distinctive_only and include_position_anchors:
+        where.append("(is_distinctive = 1 OR is_position_anchor = 1)")
+    elif distinctive_only:
         where.append("is_distinctive = 1")
+    # else: no distinctiveness filter applied (show everything)
     if q:
         where.append("token LIKE ?")
         params.append(f"%{q.lower()}%")

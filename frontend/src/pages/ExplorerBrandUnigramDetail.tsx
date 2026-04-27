@@ -120,6 +120,23 @@ export default function ExplorerBrandUnigramDetail() {
             filter_reason: <strong>{data.filter_reason || "distinctive"}</strong>
           </Text>
         </div>
+        {data.is_position_anchor === 1 && (
+          <div className="mt-3 pt-3 border-t border-[var(--gray-4)]">
+            <div className="flex flex-wrap gap-3 text-[13px] items-center">
+              <Badge size="1" variant="soft" color="amber">Position-anchor</Badge>
+              <Text size="2" style={{ color: "var(--gray-9)" }}>
+                position_consistency: <span className="font-mono">
+                  {data.position_consistency != null ? data.position_consistency.toFixed(2) : "—"}
+                </span>
+              </Text>
+              <Text size="2" style={{ color: "var(--gray-9)" }}>
+                total_child_coverage: <span className="font-mono">
+                  {data.total_child_coverage != null ? data.total_child_coverage.toFixed(2) : "—"}
+                </span>
+              </Text>
+            </div>
+          </div>
+        )}
       </div>
 
       <BrandFamily seed_value={data.token} seed_level="1gram" />

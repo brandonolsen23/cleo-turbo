@@ -672,3 +672,56 @@ def test_1gram_detail_returns_position_anchor_fields(client):
     assert "is_position_anchor" in body
     assert "position_consistency" in body
     assert "total_child_coverage" in body
+
+
+@pytest.fixture
+def client_with_anchor(client):
+    """Extend the standard client fixture with a position-anchor row in brand_token_summary."""
+    # The client fixture's dependency override yields a connection; retrieve it via a
+    # fresh call to _seeded_db so we can insert extra rows without touching the generator.
+    db = _seeded_db()
+    db.execute(
+        "INSERT OR REPLACE INTO brand_token_summary VALUES "
+        "('testanchor', 5.0, 30, 5, 0, 0, 2.0, 0, 0, 0, NULL, 1.0, 1.0, 1, '2026-04-27')"
+    )
+    db.execute(
+        "INSERT OR REPLACE INTO brand_token_summary VALUES "
+        "('testanchor2', 5.0, 30, 5, 0, 0, 2.0, 0, 0, 0, NULL, 1.0, 1.0, 1, '2026-04-27')"
+    )
+    db.commit()
+
+    from cleo.web.app import app
+    from cleo.web import deps
+    from fastapi.testclient import TestClient
+
+    def _get_override():
+        yield db
+
+    app.dependency_overrides[deps.get_db] = _get_override
+    app.dependency_overrides[deps.get_current_user] = lambda: {"email": "test"}
+    yield TestClient(app)
+    app.dependency_overrides.clear()
+    db.close()
+
+
+def test_list_brand_tokens_include_position_anchors_default_true(client_with_anchor):
+    """Default: distinctive_only=true + include_position_anchors=true (default) surfaces
+    both is_distinctive=1 AND is_position_anchor=1 rows."""
+    resp = client_with_anchor.get(
+        "/api/explorer/brands?distinctive_only=true&include_position_anchors=true"
+    )
+    body = resp.json()
+    tokens = {r["token"] for r in body["results"]}
+    assert "testanchor" in tokens       # picked up via PA flag
+    assert "kingsett" in tokens         # distinctive row still present
+
+
+def test_list_brand_tokens_include_position_anchors_false_excludes_anchors(client_with_anchor):
+    """With distinctive_only=true and include_position_anchors=false, PA-only rows excluded."""
+    resp = client_with_anchor.get(
+        "/api/explorer/brands?distinctive_only=true&include_position_anchors=false"
+    )
+    body = resp.json()
+    tokens = {r["token"] for r in body["results"]}
+    assert "testanchor2" not in tokens  # excluded — only distinctive rows
+    assert "kingsett" in tokens

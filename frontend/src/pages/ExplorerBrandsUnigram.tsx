@@ -22,6 +22,7 @@ export default function ExplorerBrandsUnigram() {
   const [data, setData] = useState<BrandTokenListResponse | null>(null);
   const [q, setQ] = useState("");
   const [distinctiveOnly, setDistinctiveOnly] = useState(true);
+  const [includeAnchors, setIncludeAnchors] = useState(true);
   const [signals, setSignals] = useState<SignalToggle>(NO_SIGNAL);
   const [page, setPage] = useState(1);
   const perPage = 200;
@@ -35,9 +36,13 @@ export default function ExplorerBrandsUnigram() {
   useEffect(() => {
     const effectiveDistinctive = anySignalOn ? false : distinctiveOnly;
     fetchApi<BrandTokenListResponse>("/explorer/brands", {
-      q, distinctive_only: effectiveDistinctive, page, per_page: perPage,
+      q,
+      distinctive_only: effectiveDistinctive,
+      include_position_anchors: includeAnchors,
+      page,
+      per_page: perPage,
     }).then(setData).catch((e) => console.error(e));
-  }, [q, distinctiveOnly, signals, page]);
+  }, [q, distinctiveOnly, includeAnchors, signals, page]);
 
   const filtered: BrandTokenSummary[] = (() => {
     if (!data) return [];
@@ -95,6 +100,11 @@ export default function ExplorerBrandsUnigram() {
                   onCheckedChange={(v) => { setPage(1); setDistinctiveOnly(v); setSignals(NO_SIGNAL); }} />
           Distinctive only
         </label>
+        <label className="flex items-center gap-2 text-[13px]">
+          <Switch size="2" checked={includeAnchors}
+                  onCheckedChange={(v) => { setPage(1); setIncludeAnchors(v); }} />
+          Include position-anchors
+        </label>
         {data && (
           <Text size="2" style={{ color: "var(--gray-9)" }}>
             showing {filtered.length.toLocaleString()} of {data.total.toLocaleString()} tokens
@@ -143,6 +153,7 @@ export default function ExplorerBrandsUnigram() {
               <th className="text-center p-2 font-medium" title="Canadian place name (seed + user-curated)">PL</th>
               <th className="text-center p-2 font-medium" title="Industry stopword (seed + user-curated)">IND</th>
               <th className="text-center p-2 font-medium" title="Categorical exclusion (artifact)">EX</th>
+              <th className="text-center p-2 font-medium" title="Position-anchor: filtered by wordfreq but confirmed as real operator via position consistency">PA</th>
               <th className="text-left p-2 font-medium">reason</th>
             </tr>
           </thead>
@@ -162,6 +173,11 @@ export default function ExplorerBrandsUnigram() {
                 <td className="p-2 text-center">{flagCell(t.is_place_name)}</td>
                 <td className="p-2 text-center">{flagCell(t.is_industry_stopword)}</td>
                 <td className="p-2 text-center">{flagCell(t.is_excluded)}</td>
+                <td className="p-2 text-center">
+                  {t.is_position_anchor === 1
+                    ? <Badge size="1" variant="soft" color="amber">PA</Badge>
+                    : <span style={{ color: "var(--gray-7)" }}>—</span>}
+                </td>
                 <td className="p-2">{reasonBadge(t.filter_reason)}</td>
               </tr>
             ))}
