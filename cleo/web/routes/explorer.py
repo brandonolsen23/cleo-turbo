@@ -20,6 +20,7 @@ GET /api/explorer/contacts/:fingerprint             — contact detail
 GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
 GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
 GET /api/explorer/auto-groups/:id/anchors-with-coverage  — anchors + coverage + co-stems
+GET /api/explorer/auto-groups/:id/why-tier  — explains which categories passed/missed for tier assignment
 """
 
 from __future__ import annotations
@@ -1667,6 +1668,104 @@ def _co_stems_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value:
         (auto_group_id, anchor_value),
     ).fetchall()
     return [dict(r) for r in rows]
+
+
+ANCHOR_SEEDING_SCORE_THRESHOLD = 1.5  # mirror cleo.discovery_v2.constants
+ANCHOR_CORROBORATION_SCORE_THRESHOLD = 0.5  # for near-miss reporting
+
+
+def _category_of_anchor_type(anchor_type: str) -> str:
+    if anchor_type in ('address_root', 'address_base'):
+        return 'address'
+    return anchor_type
+
+
+@router.get('/auto-groups/{auto_group_id}/why-tier')
+def auto_group_why_tier(
+    auto_group_id: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    summary = db.execute(
+        'SELECT auto_group_id, canonical_stem, tier, confidence FROM auto_groups WHERE auto_group_id = ?',
+        (auto_group_id,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f'Unknown auto_group: {auto_group_id!r}')
+
+    # Group anchors that passed the seeding threshold, bucketed by category.
+    strong_by_category: dict[str, list] = {'phone': [], 'address': [], 'contact': []}
+    for r in db.execute(
+        """SELECT anchor_type, anchor_value, score
+           FROM auto_group_anchors
+           WHERE auto_group_id = ? AND score >= ?
+           ORDER BY score DESC""",
+        (auto_group_id, ANCHOR_SEEDING_SCORE_THRESHOLD),
+    ):
+        cat = _category_of_anchor_type(r['anchor_type'])
+        strong_by_category[cat].append(dict(r))
+
+    categories_response = []
+    for cat in ('phone', 'address', 'contact'):
+        anchors_in_cat = strong_by_category[cat]
+        if anchors_in_cat:
+            categories_response.append({
+                'category': cat,
+                'passes_threshold': True,
+                'strongest_anchor': anchors_in_cat[0],
+                'near_miss_anchor': None,
+            })
+        else:
+            # Find the highest-scoring anchor in this category whose dominant_stem
+            # matches this group's stem but score < threshold.
+            near_miss = _near_miss_anchor(
+                db, auto_group_id, summary['canonical_stem'], cat
+            )
+            categories_response.append({
+                'category': cat,
+                'passes_threshold': False,
+                'strongest_anchor': None,
+                'near_miss_anchor': near_miss,
+            })
+
+    n_passing = sum(1 for c in categories_response if c['passes_threshold'])
+
+    return {
+        'auto_group_id': auto_group_id,
+        'canonical_stem': summary['canonical_stem'],
+        'tier': summary['tier'],
+        'confidence': summary['confidence'],
+        'n_categories_passing': n_passing,
+        'categories': categories_response,
+        'seeding_threshold': ANCHOR_SEEDING_SCORE_THRESHOLD,
+        'corroboration_threshold': ANCHOR_CORROBORATION_SCORE_THRESHOLD,
+    }
+
+
+def _near_miss_anchor(db, auto_group_id: str, canonical_stem: str, category: str):
+    """Find the strongest anchor in this category whose dominant_stem matches the
+    group's canonical_stem but score < ANCHOR_SEEDING_SCORE_THRESHOLD.
+
+    Returns dict with {anchor_type, anchor_value, score} or None.
+    """
+    if category == 'phone':
+        type_clause = "anchor_type = 'phone'"
+    elif category == 'address':
+        type_clause = "anchor_type IN ('address_root', 'address_base')"
+    elif category == 'contact':
+        type_clause = "anchor_type = 'contact'"
+    else:
+        return None
+
+    row = db.execute(
+        f"""SELECT anchor_type, anchor_value, score
+            FROM anchor_uniqueness
+            WHERE dominant_stem = ?
+              AND score < ?
+              AND {type_clause}
+            ORDER BY score DESC
+            LIMIT 1""",
+        (canonical_stem, ANCHOR_SEEDING_SCORE_THRESHOLD),
+    ).fetchone()
+    return dict(row) if row else None
 
 
 # ─────────────────────────────────────────────────────────────
