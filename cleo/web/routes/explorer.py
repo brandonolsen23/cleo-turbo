@@ -1587,16 +1587,186 @@ def auto_group_detail(
     return d
 
 
+# Bulk coverage queries: one per anchor type. Each query joins
+# auto_group_anchors → auto_group_members → party_fingerprints to count parties
+# per anchor in a single round-trip.
+_COVERAGE_SQL_BY_TYPE = {
+    'phone': """
+        SELECT aga.anchor_value, COUNT(*) AS coverage
+        FROM auto_group_anchors aga
+        JOIN auto_group_members agm
+          ON agm.auto_group_id = aga.auto_group_id
+         AND agm.member_type = 'party_side'
+        JOIN party_fingerprints pf
+          ON pf.source_id = agm.source_id
+         AND pf.side = agm.side
+         AND pf.phone = aga.anchor_value
+        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'phone'
+        GROUP BY aga.anchor_value
+    """,
+    'address_root': """
+        SELECT aga.anchor_value, COUNT(*) AS coverage
+        FROM auto_group_anchors aga
+        JOIN auto_group_members agm
+          ON agm.auto_group_id = aga.auto_group_id
+         AND agm.member_type = 'party_side'
+        JOIN party_fingerprints pf
+          ON pf.source_id = agm.source_id
+         AND pf.side = agm.side
+         AND (pf.street_number || '|' || pf.street_name) = aga.anchor_value
+        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_root'
+        GROUP BY aga.anchor_value
+    """,
+    'address_base': """
+        SELECT aga.anchor_value, COUNT(*) AS coverage
+        FROM auto_group_anchors aga
+        JOIN auto_group_members agm
+          ON agm.auto_group_id = aga.auto_group_id
+         AND agm.member_type = 'party_side'
+        JOIN party_fingerprints pf
+          ON pf.source_id = agm.source_id
+         AND pf.side = agm.side
+         AND (pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = aga.anchor_value
+        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_base'
+        GROUP BY aga.anchor_value
+    """,
+    'contact': """
+        SELECT aga.anchor_value, COUNT(*) AS coverage
+        FROM auto_group_anchors aga
+        JOIN auto_group_members agm
+          ON agm.auto_group_id = aga.auto_group_id
+         AND agm.member_type = 'party_side'
+        JOIN party_fingerprints pf
+          ON pf.source_id = agm.source_id
+         AND pf.side = agm.side
+         AND pf.contact_fingerprint = aga.anchor_value
+        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'contact'
+        GROUP BY aga.anchor_value
+    """,
+}
+
+
+# Bulk co-stem queries: one per anchor type. The window function caps at 5
+# co-stems per anchor in SQL so a single anchor with hundreds of cross-pollinating
+# stems doesn't bloat the response.
+_CO_STEMS_SQL_BY_TYPE = {
+    'phone': """
+        WITH co AS (
+            SELECT aga.anchor_value, m.stem,
+                   COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
+            FROM auto_group_anchors aga
+            JOIN party_fingerprints pf ON pf.phone = aga.anchor_value
+            JOIN party_atoms pa
+              ON pa.source_id = pf.source_id AND pa.side = pf.side
+             AND pa.atom_type = 'brand_phrase'
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'phone'
+              AND m.stem != ?
+            GROUP BY aga.anchor_value, m.stem
+        )
+        SELECT anchor_value, stem, n_parties FROM (
+            SELECT anchor_value, stem, n_parties,
+                   ROW_NUMBER() OVER (PARTITION BY anchor_value ORDER BY n_parties DESC) AS rk
+            FROM co
+        ) WHERE rk <= 5
+    """,
+    'address_root': """
+        WITH co AS (
+            SELECT aga.anchor_value, m.stem,
+                   COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
+            FROM auto_group_anchors aga
+            JOIN party_fingerprints pf
+              ON (pf.street_number || '|' || pf.street_name) = aga.anchor_value
+            JOIN party_atoms pa
+              ON pa.source_id = pf.source_id AND pa.side = pf.side
+             AND pa.atom_type = 'brand_phrase'
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_root'
+              AND m.stem != ?
+            GROUP BY aga.anchor_value, m.stem
+        )
+        SELECT anchor_value, stem, n_parties FROM (
+            SELECT anchor_value, stem, n_parties,
+                   ROW_NUMBER() OVER (PARTITION BY anchor_value ORDER BY n_parties DESC) AS rk
+            FROM co
+        ) WHERE rk <= 5
+    """,
+    'address_base': """
+        WITH co AS (
+            SELECT aga.anchor_value, m.stem,
+                   COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
+            FROM auto_group_anchors aga
+            JOIN party_fingerprints pf
+              ON (pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,''))
+                 = aga.anchor_value
+            JOIN party_atoms pa
+              ON pa.source_id = pf.source_id AND pa.side = pf.side
+             AND pa.atom_type = 'brand_phrase'
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_base'
+              AND m.stem != ?
+            GROUP BY aga.anchor_value, m.stem
+        )
+        SELECT anchor_value, stem, n_parties FROM (
+            SELECT anchor_value, stem, n_parties,
+                   ROW_NUMBER() OVER (PARTITION BY anchor_value ORDER BY n_parties DESC) AS rk
+            FROM co
+        ) WHERE rk <= 5
+    """,
+    'contact': """
+        WITH co AS (
+            SELECT aga.anchor_value, m.stem,
+                   COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
+            FROM auto_group_anchors aga
+            JOIN party_fingerprints pf ON pf.contact_fingerprint = aga.anchor_value
+            JOIN party_atoms pa
+              ON pa.source_id = pf.source_id AND pa.side = pf.side
+             AND pa.atom_type = 'brand_phrase'
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'contact'
+              AND m.stem != ?
+            GROUP BY aga.anchor_value, m.stem
+        )
+        SELECT anchor_value, stem, n_parties FROM (
+            SELECT anchor_value, stem, n_parties,
+                   ROW_NUMBER() OVER (PARTITION BY anchor_value ORDER BY n_parties DESC) AS rk
+            FROM co
+        ) WHERE rk <= 5
+    """,
+}
+
+
+def _bulk_coverage(db, auto_group_id: str) -> dict:
+    """Return {(anchor_type, anchor_value): coverage} for every anchor of the group."""
+    out: dict = {}
+    for anchor_type, sql in _COVERAGE_SQL_BY_TYPE.items():
+        for r in db.execute(sql, (auto_group_id,)):
+            out[(anchor_type, r['anchor_value'])] = r['coverage']
+    return out
+
+
+def _bulk_co_stems(db, auto_group_id: str, canonical_stem: str) -> dict:
+    """Return {(anchor_type, anchor_value): [{stem, n_parties}, ...]} for every anchor of the group.
+    Each list is already capped at 5 entries (via SQL ROW_NUMBER) sorted by n_parties desc.
+    """
+    out: dict = {}
+    for anchor_type, sql in _CO_STEMS_SQL_BY_TYPE.items():
+        for r in db.execute(sql, (auto_group_id, canonical_stem)):
+            key = (anchor_type, r['anchor_value'])
+            out.setdefault(key, []).append({'stem': r['stem'], 'n_parties': r['n_parties']})
+    return out
+
+
 @router.get('/auto-groups/{auto_group_id}/anchors-with-coverage')
 def auto_group_anchors_with_coverage(
     auto_group_id: str, db=Depends(get_db), user=Depends(get_current_user),
 ):
     # 404 if the group doesn't exist
-    exists = db.execute(
-        'SELECT 1 FROM auto_groups WHERE auto_group_id = ?',
+    summary = db.execute(
+        'SELECT canonical_stem FROM auto_groups WHERE auto_group_id = ?',
         (auto_group_id,),
     ).fetchone()
-    if exists is None:
+    if summary is None:
         raise HTTPException(status_code=404, detail=f'Unknown auto_group: {auto_group_id!r}')
 
     anchors = [dict(r) for r in db.execute(
@@ -1607,58 +1777,16 @@ def auto_group_anchors_with_coverage(
         (auto_group_id,),
     )]
 
-    # Coverage per anchor: how many of the group's party_side members touch it.
+    # Bulk lookups: 4 queries each instead of N+1.
+    coverage_map = _bulk_coverage(db, auto_group_id)
+    co_stems_map = _bulk_co_stems(db, auto_group_id, summary['canonical_stem'])
+
     for a in anchors:
-        a['coverage'] = _coverage_for_anchor(
-            db, auto_group_id, a['anchor_type'], a['anchor_value']
-        )
-        a['co_stems'] = _co_stems_for_anchor(
-            db, auto_group_id, a['anchor_type'], a['anchor_value']
-        )
+        key = (a['anchor_type'], a['anchor_value'])
+        a['coverage'] = coverage_map.get(key, 0)
+        a['co_stems'] = co_stems_map.get(key, [])
 
     return {'anchors': anchors}
-
-
-def _coverage_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value: str) -> int:
-    clause = _anchor_pf_clause(anchor_type)
-    if clause is None:
-        return 0
-    row = db.execute(
-        f"""SELECT COUNT(*) AS n
-            FROM auto_group_members agm
-            JOIN party_fingerprints pf
-              ON pf.source_id = agm.source_id AND pf.side = agm.side
-            WHERE agm.auto_group_id = ? AND agm.member_type = 'party_side' AND {clause}""",
-        (auto_group_id, anchor_value),
-    ).fetchone()
-    return row['n']
-
-
-def _co_stems_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value: str) -> list:
-    """Find OTHER stems (not the group's canonical_stem) whose phrases appear on parties at this anchor.
-
-    Returns up to 5 entries: [{stem, n_parties}, ...] sorted by n_parties desc.
-    """
-    clause = _anchor_pf_clause(anchor_type)
-    if clause is None:
-        return []
-
-    rows = db.execute(
-        f"""SELECT m.stem AS stem, COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
-            FROM party_fingerprints pf
-            JOIN party_atoms pa
-              ON pa.source_id = pf.source_id AND pa.side = pf.side
-             AND pa.atom_type = 'brand_phrase'
-            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
-            JOIN auto_groups ag ON ag.auto_group_id = ?
-            WHERE {clause}
-              AND m.stem != ag.canonical_stem
-            GROUP BY m.stem
-            ORDER BY n_parties DESC
-            LIMIT 5""",
-        (auto_group_id, anchor_value),
-    ).fetchall()
-    return [dict(r) for r in rows]
 
 
 def _category_of_anchor_type(anchor_type: str) -> str:
