@@ -122,6 +122,24 @@ def _seeded_db():
             n_party_sides INTEGER, is_distinctive INTEGER,
             discovered_at TEXT
         );
+        CREATE TABLE IF NOT EXISTS auto_groups (
+            auto_group_id TEXT PRIMARY KEY, canonical_stem TEXT NOT NULL,
+            display_name TEXT NOT NULL, tier TEXT NOT NULL,
+            confidence REAL NOT NULL, n_anchors INTEGER NOT NULL,
+            n_members INTEGER NOT NULL, discovered_at TEXT
+        );
+        CREATE TABLE IF NOT EXISTS auto_group_anchors (
+            auto_group_id TEXT NOT NULL, anchor_type TEXT NOT NULL,
+            anchor_value TEXT NOT NULL, score REAL NOT NULL,
+            PRIMARY KEY (auto_group_id, anchor_type, anchor_value)
+        );
+        CREATE TABLE IF NOT EXISTS auto_group_members (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            auto_group_id TEXT NOT NULL,
+            member_type TEXT NOT NULL,
+            source_id TEXT, side TEXT, corp_name TEXT,
+            match_score REAL NOT NULL
+        );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
     # (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
@@ -267,6 +285,27 @@ def _seeded_db():
     conn.execute(
         "INSERT INTO address_root_summary VALUES "
         "('100', 'main', 2, 2, 1, 2, 2, '2026-04-27')"
+    )
+
+    # ── auto_groups (Layer 2 Plan A) seeds ────────────────────────
+    conn.execute("""
+        INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, tier, confidence,
+                                 n_anchors, n_members, discovered_at)
+        VALUES ('AGRP_00001', 'kingsett', 'kingsett capital', 'confirmed', 0.85, 3, 8, '2026-04-27')
+    """)
+    conn.execute("""
+        INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, tier, confidence,
+                                 n_anchors, n_members, discovered_at)
+        VALUES ('AGRP_00002', 'starlight', 'starlight investments', 'probable', 0.55, 2, 5, '2026-04-27')
+    """)
+    for at, av in [('phone', '4166876700'), ('address_root', '40|king'), ('contact', 'rob kumer')]:
+        conn.execute(
+            'INSERT INTO auto_group_anchors VALUES (?, ?, ?, 2.0)',
+            ('AGRP_00001', at, av),
+        )
+    conn.execute(
+        "INSERT INTO auto_group_members (auto_group_id, member_type, source_id, side, match_score) "
+        "VALUES ('AGRP_00001', 'party_side', 'RT1', 'buyer', 1.0)"
     )
 
     conn.commit()
@@ -898,3 +937,45 @@ def test_list_brand_tokens_include_position_anchors_false_excludes_anchors(clien
     tokens = {r["token"] for r in body["results"]}
     assert "testanchor2" not in tokens  # excluded — only distinctive rows
     assert "kingsett" in tokens
+
+
+# ── Auto-groups ──────────────────────────────────────────────────
+
+def test_list_auto_groups_default_returns_confirmed_only(client):
+    resp = client.get('/api/explorer/auto-groups')
+    assert resp.status_code == 200
+    body = resp.json()
+    tiers = {g['tier'] for g in body['results']}
+    assert tiers == {'confirmed'}
+
+
+def test_list_auto_groups_tier_filter(client):
+    resp = client.get('/api/explorer/auto-groups', params={'tier': 'probable'})
+    body = resp.json()
+    assert all(g['tier'] == 'probable' for g in body['results'])
+
+
+def test_list_auto_groups_q_substring(client):
+    resp = client.get('/api/explorer/auto-groups',
+                      params={'tier': 'confirmed', 'q': 'kingsett'})
+    body = resp.json()
+    assert body['total'] >= 1
+    assert any('kingsett' in g['canonical_stem'].lower() for g in body['results'])
+
+
+def test_auto_group_detail_returns_anchors_and_members(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['canonical_stem'] == 'kingsett'
+    assert body['display_name'] == 'kingsett capital'
+    assert body['tier'] == 'confirmed'
+    assert len(body['anchors']) >= 3
+    types = {a['anchor_type'] for a in body['anchors']}
+    assert {'phone', 'address_root', 'contact'}.issubset(types)
+    assert isinstance(body['members'], list)
+
+
+def test_auto_group_detail_404(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_99999')
+    assert resp.status_code == 404

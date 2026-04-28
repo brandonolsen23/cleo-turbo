@@ -17,6 +17,8 @@ GET /api/explorer/addresses/roots                   — list address roots (num|
 GET /api/explorer/addresses/roots/:key              — address root detail (key = num|name)
 GET /api/explorer/contacts                          — list contact fingerprints
 GET /api/explorer/contacts/:fingerprint             — contact detail
+GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
+GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
 """
 
 from __future__ import annotations
@@ -1461,6 +1463,120 @@ def address_detail(
     d["key"] = key
     d["suite_variants"] = suite_variants
     d["party_sides"] = party_sides
+    return d
+
+
+# ─────────────────────────────────────────────────────────────
+# Auto-Groups (Layer 2 Plan A)
+# ─────────────────────────────────────────────────────────────
+
+@router.get("/auto-groups")
+def list_auto_groups(
+    tier: str = Query("confirmed"),
+    q: Optional[str] = Query(None),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    if tier not in ("confirmed", "probable", "candidate"):
+        raise HTTPException(status_code=400, detail=f"Invalid tier: {tier!r}")
+    where = ["tier = ?"]
+    params: list = [tier]
+    if q:
+        where.append("(LOWER(display_name) LIKE ? OR LOWER(canonical_stem) LIKE ?)")
+        like = f"%{q.lower()}%"
+        params.extend([like, like])
+    where_sql = " WHERE " + " AND ".join(where)
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM auto_groups{where_sql}", params
+    ).fetchone()[0]
+    offset = (page - 1) * per_page
+    rows = db.execute(
+        f"""SELECT auto_group_id, canonical_stem, display_name, tier,
+                   confidence, n_anchors, n_members
+            FROM auto_groups{where_sql}
+            ORDER BY n_members DESC, canonical_stem ASC
+            LIMIT ? OFFSET ?""",
+        params + [per_page, offset],
+    ).fetchall()
+    return {
+        "results": [dict(r) for r in rows],
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "pages": (total + per_page - 1) // per_page,
+    }
+
+
+@router.get("/auto-groups/{auto_group_id}")
+def auto_group_detail(
+    auto_group_id: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    summary = db.execute(
+        """SELECT auto_group_id, canonical_stem, display_name, tier, confidence,
+                  n_anchors, n_members, discovered_at
+           FROM auto_groups WHERE auto_group_id = ?""",
+        (auto_group_id,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f"Unknown auto_group: {auto_group_id!r}")
+
+    anchors = [dict(r) for r in db.execute(
+        """SELECT anchor_type, anchor_value, score FROM auto_group_anchors
+           WHERE auto_group_id = ? ORDER BY score DESC""",
+        (auto_group_id,),
+    )]
+    members = [dict(r) for r in db.execute(
+        """SELECT member_type, source_id, side, corp_name, match_score
+           FROM auto_group_members
+           WHERE auto_group_id = ? AND member_type = 'party_side'
+           ORDER BY match_score DESC LIMIT 200""",
+        (auto_group_id,),
+    )]
+    numbered_corps = [dict(r) for r in db.execute(
+        """SELECT corp_name, match_score FROM auto_group_members
+           WHERE auto_group_id = ? AND member_type = 'numbered_corp'
+           ORDER BY corp_name""",
+        (auto_group_id,),
+    )]
+    top_phrases = [dict(r) for r in db.execute(
+        """SELECT pa.atom_value AS phrase, COUNT(*) AS n
+           FROM auto_group_members agm
+           JOIN party_atoms pa
+             ON pa.source_id = agm.source_id
+            AND pa.side      = agm.side
+            AND pa.atom_type = 'brand_phrase'
+           WHERE agm.auto_group_id = ? AND agm.member_type = 'party_side'
+           GROUP BY pa.atom_value
+           ORDER BY n DESC LIMIT 20""",
+        (auto_group_id,),
+    )]
+    daterange = db.execute(
+        """SELECT MIN(pf.sale_date) AS min_d, MAX(pf.sale_date) AS max_d
+           FROM auto_group_members agm
+           JOIN party_fingerprints pf
+             ON pf.source_id = agm.source_id AND pf.side = agm.side
+           WHERE agm.auto_group_id = ? AND agm.member_type = 'party_side'""",
+        (auto_group_id,),
+    ).fetchone()
+    n_distinct_contacts = db.execute(
+        """SELECT COUNT(DISTINCT pf.contact_fingerprint) AS n
+           FROM auto_group_members agm
+           JOIN party_fingerprints pf
+             ON pf.source_id = agm.source_id AND pf.side = agm.side
+           WHERE agm.auto_group_id = ? AND agm.member_type = 'party_side'""",
+        (auto_group_id,),
+    ).fetchone()["n"]
+
+    d = dict(summary)
+    d["anchors"]             = anchors
+    d["members"]             = members
+    d["numbered_corps"]      = numbered_corps
+    d["top_phrases"]         = top_phrases
+    d["min_sale_date"]       = daterange["min_d"] if daterange else None
+    d["max_sale_date"]       = daterange["max_d"] if daterange else None
+    d["n_distinct_contacts"] = n_distinct_contacts
     return d
 
 
