@@ -372,6 +372,14 @@ def _seeded_db():
         INSERT OR IGNORE INTO brand_stem_phrase_map (phrase, stem, confidence)
         VALUES ('starlight investments', 'starlight', 1.0)
     """)
+    # Seed a phone-category near-miss anchor for the starlight stem so the
+    # /why-tier endpoint exercises the non-trivial _near_miss_anchor path.
+    # score=0.9 sits between the corroboration bar (0.5) and seeding threshold (1.5).
+    conn.execute("""
+        INSERT INTO anchor_uniqueness
+            (anchor_type, anchor_value, dominant_stem, dominance_share, volume, score, is_service_provider)
+        VALUES ('phone', 'NEAR_MISS_PHONE', 'starlight', 0.7, 5, 0.9, 0)
+    """)
     # Same for kingsett — its parties use 'kingsett capital' as the brand phrase.
     conn.execute("""
         INSERT OR IGNORE INTO brand_stem (stem, stem_type, dominant_anchor_type,
@@ -1127,3 +1135,17 @@ def test_why_tier_probable_identifies_missing_category(client):
 def test_why_tier_404(client):
     resp = client.get('/api/explorer/auto-groups/AGRP_99999/why-tier')
     assert resp.status_code == 404
+
+
+def test_why_tier_surfaces_near_miss_for_missing_category(client):
+    """Verify _near_miss_anchor surfaces a real row when score is between the
+    corroboration bar and the seeding threshold for the group's stem."""
+    resp = client.get('/api/explorer/auto-groups/AGRP_00002/why-tier')
+    assert resp.status_code == 200
+    body = resp.json()
+    cats = {c['category']: c for c in body['categories']}
+    phone_cat = cats['phone']
+    assert phone_cat['passes_threshold'] is False
+    assert phone_cat['near_miss_anchor'] is not None
+    assert phone_cat['near_miss_anchor']['anchor_value'] == 'NEAR_MISS_PHONE'
+    assert phone_cat['near_miss_anchor']['score'] == pytest.approx(0.9)

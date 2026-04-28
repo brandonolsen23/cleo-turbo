@@ -28,6 +28,10 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from typing import Optional
 
 from ..deps import get_db, get_current_user
+from cleo.discovery_v2.constants import (
+    ANCHOR_SEEDING_SCORE_THRESHOLD,
+    ANCHOR_CORROBORATION_SCORE_THRESHOLD,
+)
 
 router = APIRouter()
 
@@ -1670,10 +1674,6 @@ def _co_stems_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value:
     return [dict(r) for r in rows]
 
 
-ANCHOR_SEEDING_SCORE_THRESHOLD = 1.5  # mirror cleo.discovery_v2.constants
-ANCHOR_CORROBORATION_SCORE_THRESHOLD = 0.5  # for near-miss reporting
-
-
 def _category_of_anchor_type(anchor_type: str) -> str:
     if anchor_type in ('address_root', 'address_base'):
         return 'address'
@@ -1744,6 +1744,17 @@ def _near_miss_anchor(db, auto_group_id: str, canonical_stem: str, category: str
     """Find the strongest anchor in this category whose dominant_stem matches the
     group's canonical_stem but score < ANCHOR_SEEDING_SCORE_THRESHOLD.
 
+    Mirrors the seeding filter (cleo/discovery_v2/seeding.py:90-93): only
+    anchors with score >= ANCHOR_CORROBORATION_SCORE_THRESHOLD and
+    is_service_provider = 0 are considered, since anchors below the
+    corroboration bar aren't "near" the threshold and service-provider-flagged
+    anchors would never be used for seeding regardless of score.
+
+    NOTE: Full override-aware behavior (auto_anchor_overrides.override_service_provider,
+    override_stem) is deferred to Plan C. This query honors the static
+    is_service_provider flag on anchor_uniqueness but does not apply per-anchor
+    user overrides yet.
+
     Returns dict with {anchor_type, anchor_value, score} or None.
     """
     if category == 'phone':
@@ -1760,10 +1771,12 @@ def _near_miss_anchor(db, auto_group_id: str, canonical_stem: str, category: str
             FROM anchor_uniqueness
             WHERE dominant_stem = ?
               AND score < ?
+              AND score >= ?
+              AND is_service_provider = 0
               AND {type_clause}
             ORDER BY score DESC
             LIMIT 1""",
-        (canonical_stem, ANCHOR_SEEDING_SCORE_THRESHOLD),
+        (canonical_stem, ANCHOR_SEEDING_SCORE_THRESHOLD, ANCHOR_CORROBORATION_SCORE_THRESHOLD),
     ).fetchone()
     return dict(row) if row else None
 
