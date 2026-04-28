@@ -19,6 +19,7 @@ GET /api/explorer/contacts                          — list contact fingerprint
 GET /api/explorer/contacts/:fingerprint             — contact detail
 GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
 GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
+GET /api/explorer/auto-groups/:id/anchors-with-coverage  — anchors + coverage + co-stems
 """
 
 from __future__ import annotations
@@ -1578,6 +1579,94 @@ def auto_group_detail(
     d["max_sale_date"]       = daterange["max_d"] if daterange else None
     d["n_distinct_contacts"] = n_distinct_contacts
     return d
+
+
+@router.get('/auto-groups/{auto_group_id}/anchors-with-coverage')
+def auto_group_anchors_with_coverage(
+    auto_group_id: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    # 404 if the group doesn't exist
+    exists = db.execute(
+        'SELECT 1 FROM auto_groups WHERE auto_group_id = ?',
+        (auto_group_id,),
+    ).fetchone()
+    if exists is None:
+        raise HTTPException(status_code=404, detail=f'Unknown auto_group: {auto_group_id!r}')
+
+    anchors = [dict(r) for r in db.execute(
+        """SELECT anchor_type, anchor_value, score
+           FROM auto_group_anchors
+           WHERE auto_group_id = ?
+           ORDER BY score DESC""",
+        (auto_group_id,),
+    )]
+
+    # Coverage per anchor: how many of the group's party_side members touch it.
+    for a in anchors:
+        a['coverage'] = _coverage_for_anchor(
+            db, auto_group_id, a['anchor_type'], a['anchor_value']
+        )
+        a['co_stems'] = _co_stems_for_anchor(
+            db, auto_group_id, a['anchor_type'], a['anchor_value']
+        )
+
+    return {'anchors': anchors}
+
+
+def _coverage_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value: str) -> int:
+    if anchor_type == 'phone':
+        clause = 'pf.phone = ?'
+    elif anchor_type == 'address_root':
+        clause = "(pf.street_number || '|' || pf.street_name) = ?"
+    elif anchor_type == 'address_base':
+        clause = "(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?"
+    elif anchor_type == 'contact':
+        clause = 'pf.contact_fingerprint = ?'
+    else:
+        return 0
+    row = db.execute(
+        f"""SELECT COUNT(*) AS n
+            FROM auto_group_members agm
+            JOIN party_fingerprints pf
+              ON pf.source_id = agm.source_id AND pf.side = agm.side
+            WHERE agm.auto_group_id = ? AND agm.member_type = 'party_side' AND {clause}""",
+        (auto_group_id, anchor_value),
+    ).fetchone()
+    return row['n']
+
+
+def _co_stems_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value: str) -> list:
+    """Find OTHER stems (not the group's canonical_stem) whose phrases appear on parties at this anchor.
+
+    Returns up to 5 entries: [{stem, n_parties}, ...] sorted by n_parties desc.
+    """
+    if anchor_type == 'phone':
+        clause = 'pf.phone = ?'
+    elif anchor_type == 'address_root':
+        clause = "(pf.street_number || '|' || pf.street_name) = ?"
+    elif anchor_type == 'address_base':
+        clause = "(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?"
+    elif anchor_type == 'contact':
+        clause = 'pf.contact_fingerprint = ?'
+    else:
+        return []
+
+    rows = db.execute(
+        f"""SELECT m.stem AS stem, COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
+            FROM party_fingerprints pf
+            JOIN party_atoms pa
+              ON pa.source_id = pf.source_id AND pa.side = pf.side
+             AND pa.atom_type = 'brand_phrase'
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            JOIN auto_groups ag ON ag.auto_group_id = ?
+            WHERE {clause}
+              AND m.stem != ag.canonical_stem
+            GROUP BY m.stem
+            ORDER BY n_parties DESC
+            LIMIT 5""",
+        (auto_group_id, anchor_value),
+    ).fetchall()
+    return [dict(r) for r in rows]
 
 
 # ─────────────────────────────────────────────────────────────

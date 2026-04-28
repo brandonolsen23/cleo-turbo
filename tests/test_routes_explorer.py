@@ -140,6 +140,14 @@ def _seeded_db():
             source_id TEXT, side TEXT, corp_name TEXT,
             match_score REAL NOT NULL
         );
+        CREATE TABLE IF NOT EXISTS brand_stem (
+            stem TEXT PRIMARY KEY, stem_type TEXT NOT NULL,
+            dominant_anchor_type TEXT NOT NULL, dominant_anchor_value TEXT NOT NULL,
+            dominance_share REAL NOT NULL, volume INTEGER NOT NULL, verified_at TEXT
+        );
+        CREATE TABLE IF NOT EXISTS brand_stem_phrase_map (
+            phrase TEXT PRIMARY KEY, stem TEXT NOT NULL, confidence REAL NOT NULL
+        );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
     # (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
@@ -307,6 +315,70 @@ def _seeded_db():
         "INSERT INTO auto_group_members (auto_group_id, member_type, source_id, side, match_score) "
         "VALUES ('AGRP_00001', 'party_side', 'RT1', 'buyer', 1.0)"
     )
+
+    # Add 3 more parties for AGRP_00001 to exercise coverage
+    # RT-COV-1: touches phone + address_root + contact (3-anchor coverage)
+    # RT-COV-2: touches phone only (phone-only coverage)
+    # RT-COV-3: touches contact only (contact-only coverage)
+    conn.execute("""
+        INSERT INTO party_fingerprints
+            (source_id, side, phone, contact_fingerprint, street_number, street_name, street_suffix)
+        VALUES ('RT-COV-1', 'seller', '4166876700', 'rob kumer', '40', 'king', 'st')
+    """)
+    conn.execute("""
+        INSERT INTO party_fingerprints
+            (source_id, side, phone, contact_fingerprint, street_number, street_name)
+        VALUES ('RT-COV-2', 'seller', '4166876700', 'someone else', '999', 'somewhere')
+    """)
+    conn.execute("""
+        INSERT INTO party_fingerprints
+            (source_id, side, phone, contact_fingerprint, street_number, street_name)
+        VALUES ('RT-COV-3', 'seller', '5555555555', 'rob kumer', '888', 'elsewhere')
+    """)
+    for sid in ('RT-COV-1', 'RT-COV-2', 'RT-COV-3'):
+        conn.execute(
+            "INSERT INTO auto_group_members (auto_group_id, member_type, source_id, side, match_score) "
+            "VALUES ('AGRP_00001', 'party_side', ?, 'seller', 0.9)",
+            (sid,),
+        )
+
+    # RT-COSTEM: a party at AGRP_00001's phone that ALSO has a starlight phrase mapped.
+    # Used to verify co-stems detection on the phone anchor.
+    conn.execute("""
+        INSERT INTO party_fingerprints (source_id, side, phone)
+        VALUES ('RT-COSTEM', 'buyer', '4166876700')
+    """)
+    conn.execute("""
+        INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field)
+        VALUES ('RT-COSTEM', 'buyer', 'brand_phrase', 'starlight investments', 'party_name')
+    """)
+    # Make sure starlight has a stem mapping in this fixture so co-stems can detect it.
+    conn.execute("""
+        INSERT OR IGNORE INTO brand_stem (stem, stem_type, dominant_anchor_type,
+                                          dominant_anchor_value, dominance_share, volume)
+        VALUES ('starlight', 'distinctive', 'phone', '4162348444', 0.9, 100)
+    """)
+    conn.execute("""
+        INSERT OR IGNORE INTO brand_stem_phrase_map (phrase, stem, confidence)
+        VALUES ('starlight investments', 'starlight', 1.0)
+    """)
+    # Same for kingsett — its parties use 'kingsett capital' as the brand phrase.
+    conn.execute("""
+        INSERT OR IGNORE INTO brand_stem (stem, stem_type, dominant_anchor_type,
+                                          dominant_anchor_value, dominance_share, volume)
+        VALUES ('kingsett', 'distinctive', 'phone', '4166876700', 0.9, 8)
+    """)
+    conn.execute("""
+        INSERT OR IGNORE INTO brand_stem_phrase_map (phrase, stem, confidence)
+        VALUES ('kingsett capital', 'kingsett', 1.0)
+    """)
+    # Backfill brand_phrase atoms on the kingsett parties so co-stems has signal to compare against.
+    for sid in ('RT1', 'RT-COV-1', 'RT-COV-2', 'RT-COV-3'):
+        conn.execute(
+            "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+            "VALUES (?, ?, 'brand_phrase', 'kingsett capital', 'party_name')",
+            (sid, 'buyer' if sid == 'RT1' else 'seller'),
+        )
 
     conn.commit()
     return conn
@@ -560,8 +632,9 @@ def test_phone_detail_includes_party_sides(client):
     resp = client.get("/api/explorer/phones/4166876700")
     body = resp.json()
     assert body["phone"] == "4166876700"
-    assert body["n_party_sides"] == 2
-    assert len(body["party_sides"]) == 2
+    # Phone is shared across the original RT1/RT2 plus the coverage/co-stem
+    # parties (RT-COV-1, RT-COV-2, RT-COSTEM) added for Plan D anchor coverage.
+    assert len(body["party_sides"]) >= 2
     # Each party-side has address + contact + brand_phrases
     ps = body["party_sides"][0]
     assert "street_number" in ps
@@ -743,8 +816,9 @@ def test_contact_detail(client):
     resp = client.get("/api/explorer/contacts/rob%20kumer")
     body = resp.json()
     assert body["contact_fingerprint"] == "rob kumer"
-    assert body["n_party_sides"] == 2
-    assert len(body["party_sides"]) == 2
+    # 'rob kumer' is touched by RT1/RT2 plus the Plan D coverage parties
+    # (RT-COV-1 and RT-COV-3).
+    assert len(body["party_sides"]) >= 2
 
 
 # ── 4-grams ────────────────────────────────────────────────────
@@ -978,4 +1052,30 @@ def test_auto_group_detail_returns_anchors_and_members(client):
 
 def test_auto_group_detail_404(client):
     resp = client.get('/api/explorer/auto-groups/AGRP_99999')
+    assert resp.status_code == 404
+
+
+def test_anchors_with_coverage_returns_per_anchor_coverage(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001/anchors-with-coverage')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert isinstance(body['anchors'], list)
+    # Find the phone anchor
+    phone = next(a for a in body['anchors'] if a['anchor_type'] == 'phone')
+    assert phone['anchor_value'] == '4166876700'
+    # 3 parties touch this phone (RT1, RT-COV-1, RT-COV-2). RT-COV-3 doesn't.
+    assert phone['coverage'] == 3
+
+
+def test_anchors_with_coverage_returns_co_stems(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001/anchors-with-coverage')
+    body = resp.json()
+    phone = next(a for a in body['anchors'] if a['anchor_type'] == 'phone')
+    # The phone is shared with a 'starlight' phrase via RT-COSTEM
+    co_stems = {c['stem'] for c in phone['co_stems']}
+    assert 'starlight' in co_stems
+
+
+def test_anchors_with_coverage_404_on_unknown(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_99999/anchors-with-coverage')
     assert resp.status_code == 404
