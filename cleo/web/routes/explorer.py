@@ -1486,6 +1486,7 @@ def address_detail(
 def list_auto_groups(
     tier: str = Query("confirmed"),
     q: Optional[str] = Query(None),
+    close_to_promotion: bool = Query(False),
     page: int = Query(1, ge=1),
     per_page: int = Query(50, ge=1, le=500),
     db=Depends(get_db), user=Depends(get_current_user),
@@ -1498,16 +1499,42 @@ def list_auto_groups(
         where.append("(LOWER(display_name) LIKE ? OR LOWER(canonical_stem) LIKE ?)")
         like = f"%{q.lower()}%"
         params.extend([like, like])
+    if close_to_promotion:
+        where.append("confidence >= ? AND confidence < ?")
+        params.extend([
+            TIER_CONFIRMED_MIN_CONFIDENCE - 0.05,
+            TIER_CONFIRMED_MIN_CONFIDENCE,
+        ])
     where_sql = " WHERE " + " AND ".join(where)
 
     total = db.execute(
         f"SELECT COUNT(*) FROM auto_groups{where_sql}", params
     ).fetchone()[0]
     offset = (page - 1) * per_page
+
+    # Anchor diversity: count of distinct categories among the group's anchors.
+    # Computed via correlated subquery using the address_root+address_base collapse.
+    # Distinct contacts: count of distinct contact_fingerprint among party_side members.
     rows = db.execute(
-        f"""SELECT auto_group_id, canonical_stem, display_name, tier,
-                   confidence, n_anchors, n_members
-            FROM auto_groups{where_sql}
+        f"""SELECT ag.auto_group_id, ag.canonical_stem, ag.display_name, ag.tier,
+                   ag.confidence, ag.n_anchors, ag.n_members,
+                   (SELECT COUNT(DISTINCT
+                                 CASE WHEN aga.anchor_type IN ('address_root', 'address_base')
+                                      THEN 'address'
+                                      ELSE aga.anchor_type
+                                 END)
+                    FROM auto_group_anchors aga
+                    WHERE aga.auto_group_id = ag.auto_group_id) AS anchor_diversity,
+                   (SELECT COUNT(DISTINCT pf.contact_fingerprint)
+                    FROM auto_group_members agm
+                    JOIN party_fingerprints pf
+                      ON pf.source_id = agm.source_id AND pf.side = agm.side
+                    WHERE agm.auto_group_id = ag.auto_group_id
+                      AND agm.member_type = 'party_side'
+                      AND pf.contact_fingerprint IS NOT NULL
+                      AND pf.contact_fingerprint != '') AS n_distinct_contacts
+            FROM auto_groups ag
+            {where_sql}
             ORDER BY n_members DESC, canonical_stem ASC
             LIMIT ? OFFSET ?""",
         params + [per_page, offset],

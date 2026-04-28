@@ -1429,3 +1429,36 @@ def test_missed_stems_respects_min_party_sides(client):
     body = resp.json()
     tokens = [r['token'] for r in body['results']]
     assert 'lostbrand' not in tokens
+
+
+# ── List endpoint extensions (Plan G Task 4) ─────────────────────
+
+def test_list_auto_groups_returns_anchor_diversity_and_distinct_contacts(client):
+    resp = client.get('/api/explorer/auto-groups',
+                      params={'tier': 'confirmed'})
+    body = resp.json()
+    first = body['results'][0]
+    assert 'anchor_diversity' in first
+    # AGRP_00001 has 3 anchor types in fixture (phone, address_root, contact) → 3 categories.
+    assert first['anchor_diversity'] >= 1
+    assert 'n_distinct_contacts' in first
+    assert isinstance(first['n_distinct_contacts'], int)
+
+
+def test_list_auto_groups_close_to_promotion_filter(client):
+    """When close_to_promotion=true, restrict results to confidence in [0.70, 0.75)."""
+    resp = client.get('/api/explorer/auto-groups',
+                      params={'close_to_promotion': 'true', 'tier': 'probable'})
+    body = resp.json()
+    sids = {g['auto_group_id'] for g in body['results']}
+    # AGRP_00003 has confidence 0.72 → in window.
+    assert 'AGRP_00003' in sids
+
+
+def test_list_auto_groups_close_to_promotion_excludes_outside_window(client):
+    resp = client.get('/api/explorer/auto-groups',
+                      params={'close_to_promotion': 'true', 'tier': 'confirmed'})
+    body = resp.json()
+    # AGRP_00001 is confidence 0.85 → confirmed but NOT in [0.70, 0.75) window.
+    sids = {g['auto_group_id'] for g in body['results']}
+    assert 'AGRP_00001' not in sids
