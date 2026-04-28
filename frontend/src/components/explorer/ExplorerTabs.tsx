@@ -15,6 +15,7 @@ export default function ExplorerTabs() {
     { label: "Phones",    href: "/explorer/phones",         matches: (p) => p.startsWith("/explorer/phones") },
     { label: "Addresses", href: "/explorer/addresses",      matches: (p) => p.startsWith("/explorer/addresses") },
     { label: "Contacts",  href: "/explorer/contacts",       matches: (p) => p.startsWith("/explorer/contacts") },
+    { label: "Groups (Auto)", href: "/explorer/auto-groups", matches: (p) => p.startsWith("/explorer/auto-groups") },
   ];
 
   const brandSubtabs: { label: string; href: string; matches: (p: string) => boolean }[] = [

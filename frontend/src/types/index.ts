@@ -1916,3 +1916,60 @@ export interface ContactFingerprintDetail {
   n_party_sides: number;
   party_sides: ExplorerPartySide[];
 }
+
+// ============================================================
+// Explorer — Auto-Groups (Layer 2 Plan A)
+// ============================================================
+
+export interface AutoGroupSummary {
+  auto_group_id: string;
+  canonical_stem: string;
+  display_name: string;
+  tier: 'confirmed' | 'probable' | 'candidate';
+  confidence: number;
+  n_anchors: number;
+  n_members: number;
+}
+
+export interface AutoGroupListResponse {
+  results: AutoGroupSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface AutoGroupAnchor {
+  anchor_type: 'phone' | 'address_root' | 'address_base' | 'contact';
+  anchor_value: string;
+  score: number;
+}
+
+export interface AutoGroupMember {
+  member_type: 'party_side';
+  source_id: string;
+  side: string;
+  corp_name: string | null;
+  match_score: number;
+}
+
+export interface AutoGroupNumberedCorp {
+  corp_name: string;
+  match_score: number;
+}
+
+export interface AutoGroupTopPhrase {
+  phrase: string;
+  n: number;
+}
+
+export interface AutoGroupDetail extends AutoGroupSummary {
+  anchors: AutoGroupAnchor[];
+  members: AutoGroupMember[];
+  numbered_corps: AutoGroupNumberedCorp[];
+  top_phrases: AutoGroupTopPhrase[];
+  min_sale_date: string | null;
+  max_sale_date: string | null;
+  n_distinct_contacts: number;
+  discovered_at: string | null;
+}
