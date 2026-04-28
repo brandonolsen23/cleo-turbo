@@ -321,6 +321,11 @@ def _seeded_db():
                                  n_anchors, n_members, discovered_at)
         VALUES ('AGRP_00002', 'starlight', 'starlight investments', 'probable', 0.55, 2, 5, '2026-04-27')
     """)
+    conn.execute("""
+        INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, tier, confidence,
+                                 n_anchors, n_members, discovered_at)
+        VALUES ('AGRP_00003', 'almostkingsett', 'almostkingsett group', 'probable', 0.72, 2, 4, '2026-04-27')
+    """)
     for at, av in [('phone', '4166876700'), ('address_root', '40|king'), ('contact', 'rob kumer')]:
         conn.execute(
             'INSERT INTO auto_group_anchors VALUES (?, ?, ?, 2.0)',
@@ -1308,3 +1313,38 @@ def test_histogram_counts_match_real_groups(client):
     # AGRP_00002 (0.55) lands in [0.55, 0.60)
     bucket_55 = next(b for b in body['buckets'] if b['lower'] == pytest.approx(0.55))
     assert bucket_55['count'] >= 1
+
+
+def test_close_to_promotion_default_window(client):
+    """Default window is [0.70, 0.75) — picks up AGRP_00003 (0.72) but not AGRP_00001 (0.85) or AGRP_00002 (0.55)."""
+    resp = client.get('/api/explorer/auto-groups/tuning/close-to-promotion')
+    assert resp.status_code == 200
+    body = resp.json()
+    sids = {g['auto_group_id'] for g in body['results']}
+    assert 'AGRP_00003' in sids
+    assert 'AGRP_00001' not in sids
+    assert 'AGRP_00002' not in sids
+
+
+def test_close_to_promotion_custom_window(client):
+    resp = client.get('/api/explorer/auto-groups/tuning/close-to-promotion',
+                      params={'from': 0.50, 'to': 0.60})
+    body = resp.json()
+    sids = {g['auto_group_id'] for g in body['results']}
+    # AGRP_00002 (0.55) lands in [0.50, 0.60), AGRP_00003 (0.72) does not.
+    assert 'AGRP_00002' in sids
+    assert 'AGRP_00003' not in sids
+
+
+def test_close_to_promotion_window_thresholds(client):
+    resp = client.get('/api/explorer/auto-groups/tuning/close-to-promotion')
+    body = resp.json()
+    assert body['from_confidence'] == pytest.approx(0.70)
+    assert body['to_confidence'] == pytest.approx(0.75)
+
+
+def test_close_to_promotion_400_on_invalid_window(client):
+    # from > to should 400.
+    resp = client.get('/api/explorer/auto-groups/tuning/close-to-promotion',
+                      params={'from': 0.8, 'to': 0.5})
+    assert resp.status_code == 400

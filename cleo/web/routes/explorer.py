@@ -23,6 +23,7 @@ GET /api/explorer/auto-groups/:id/anchors-with-coverage  — anchors + coverage 
 GET /api/explorer/auto-groups/:id/why-tier  — explains which categories passed/missed for tier assignment
 GET /api/explorer/auto-groups/:id/parties  — paginated, filterable, sortable parties with anchor_signature
 GET /api/explorer/auto-groups/tuning/histogram  — confidence-bucket counts for tuning UI
+GET /api/explorer/auto-groups/tuning/close-to-promotion  — groups within a confidence window
 """
 
 from __future__ import annotations
@@ -2103,6 +2104,46 @@ def auto_groups_tuning_histogram(
         'buckets': buckets,
         'tier_confirmed_threshold': TIER_CONFIRMED_MIN_CONFIDENCE,
         'tier_probable_threshold': TIER_PROBABLE_MIN_CONFIDENCE,
+    }
+
+
+@router.get('/auto-groups/tuning/close-to-promotion')
+def auto_groups_close_to_promotion(
+    from_: float = Query(0.70, alias='from', ge=0.0, le=1.0),
+    to: float = Query(0.75, ge=0.0, le=1.0),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(100, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Groups whose confidence sits in [from, to). Default window is [0.70, 0.75) —
+    Probable groups within 0.05 of the Confirmed threshold."""
+    if from_ >= to:
+        raise HTTPException(status_code=400, detail=f'Invalid window: from={from_} must be < to={to}')
+
+    total = db.execute(
+        """SELECT COUNT(*) FROM auto_groups
+           WHERE confidence >= ? AND confidence < ?""",
+        (from_, to),
+    ).fetchone()[0]
+    offset = (page - 1) * per_page
+    rows = db.execute(
+        """SELECT auto_group_id, canonical_stem, display_name, tier, confidence,
+                  n_anchors, n_members
+           FROM auto_groups
+           WHERE confidence >= ? AND confidence < ?
+           ORDER BY confidence DESC, canonical_stem ASC
+           LIMIT ? OFFSET ?""",
+        (from_, to, per_page, offset),
+    ).fetchall()
+
+    return {
+        'results': [dict(r) for r in rows],
+        'total': total,
+        'page': page,
+        'per_page': per_page,
+        'pages': (total + per_page - 1) // per_page,
+        'from_confidence': from_,
+        'to_confidence': to,
     }
 
 
