@@ -6,6 +6,7 @@ import type { AutoGroupDetail } from "../types";
 import ExplorerTabs from "../components/explorer/ExplorerTabs";
 import AutoGroupTabs from "../components/explorer/AutoGroupTabs";
 import AutoGroupTabPlaceholder from "../components/explorer/AutoGroupTabPlaceholder";
+import AutoGroupOverviewTab from "../components/explorer/AutoGroupOverviewTab";
 
 
 const tierColor: Record<string, "jade" | "amber" | "gray"> = {
@@ -46,7 +47,7 @@ export default function ExplorerAutoGroupDetail() {
 
       <AutoGroupTabs>
         {{
-          overview: <AutoGroupTabPlaceholder planName="Plan D Task 5" />,
+          overview: <AutoGroupOverviewTab data={data} />,
           anchors:  <AutoGroupTabPlaceholder planName="Plan D Task 6" />,
           parties:  <AutoGroupTabPlaceholder planName="Plan D Task 7" />,
           graph:    <AutoGroupTabPlaceholder planName="Plan E" />,
