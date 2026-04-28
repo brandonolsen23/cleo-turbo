@@ -24,6 +24,7 @@ GET /api/explorer/auto-groups/:id/why-tier  — explains which categories passed
 GET /api/explorer/auto-groups/:id/parties  — paginated, filterable, sortable parties with anchor_signature
 GET /api/explorer/auto-groups/tuning/histogram  — confidence-bucket counts for tuning UI
 GET /api/explorer/auto-groups/tuning/close-to-promotion  — groups within a confidence window
+GET /api/explorer/auto-groups/tuning/missed-stems  — distinctive/PA 1-grams that didn't promote, with dominance-contest data
 """
 
 from __future__ import annotations
@@ -2144,6 +2145,79 @@ def auto_groups_close_to_promotion(
         'pages': (total + per_page - 1) // per_page,
         'from_confidence': from_,
         'to_confidence': to,
+    }
+
+
+@router.get('/auto-groups/tuning/missed-stems')
+def auto_groups_tuning_missed_stems(
+    min_n_party_sides: int = Query(100, ge=1),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=200),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """1-grams that are distinctive or position-anchor with high party-side counts
+    but didn't get a verified stem. For each, surfaces the strongest-phone anchor
+    and the stem that won the dominance contest at that anchor.
+
+    Phone-only diagnostic for now — most missed stems (DD/KS/Dundee/PIRET) cluster
+    at operator switchboards. Address-anchor analysis can be added later.
+    """
+    # Total count for pagination (cheap — counts the missed-token candidate set).
+    total = db.execute(
+        """SELECT COUNT(*) FROM brand_token_summary bts
+           LEFT JOIN brand_stem bs ON bs.stem = bts.token
+           WHERE (bts.is_distinctive = 1 OR COALESCE(bts.is_position_anchor, 0) = 1)
+             AND bts.n_party_sides >= ?
+             AND bs.stem IS NULL""",
+        (min_n_party_sides,),
+    ).fetchone()[0]
+
+    offset = (page - 1) * per_page
+
+    # Bulk query: for each missed token, find its strongest-phone anchor + the
+    # stem that won there.
+    rows = db.execute(
+        """WITH missed AS (
+              SELECT bts.token, bts.n_party_sides
+              FROM brand_token_summary bts
+              LEFT JOIN brand_stem bs ON bs.stem = bts.token
+              WHERE (bts.is_distinctive = 1 OR COALESCE(bts.is_position_anchor, 0) = 1)
+                AND bts.n_party_sides >= ?
+                AND bs.stem IS NULL
+              ORDER BY bts.n_party_sides DESC
+              LIMIT ? OFFSET ?
+           ),
+           by_phone AS (
+              SELECT m.token, pf.phone AS anchor_value, COUNT(*) AS sides_with_token,
+                     ROW_NUMBER() OVER (PARTITION BY m.token ORDER BY COUNT(*) DESC) AS rk
+              FROM missed m
+              JOIN brand_token_index bti ON bti.token = m.token
+              JOIN party_fingerprints pf
+                ON pf.source_id = bti.source_id AND pf.side = bti.side
+              WHERE pf.phone IS NOT NULL AND pf.phone != ''
+              GROUP BY m.token, pf.phone
+           )
+           SELECT m.token, m.n_party_sides,
+                  bp.anchor_value AS strongest_phone,
+                  bp.sides_with_token AS token_sides_at_anchor,
+                  au.dominant_stem AS winner_stem,
+                  au.dominance_share AS winner_dominance,
+                  au.volume AS anchor_volume
+           FROM missed m
+           LEFT JOIN by_phone bp ON bp.token = m.token AND bp.rk = 1
+           LEFT JOIN anchor_uniqueness au
+             ON au.anchor_type = 'phone' AND au.anchor_value = bp.anchor_value
+           ORDER BY m.n_party_sides DESC""",
+        (min_n_party_sides, per_page, offset),
+    ).fetchall()
+
+    return {
+        'results': [dict(r) for r in rows],
+        'total': total,
+        'page': page,
+        'per_page': per_page,
+        'pages': (total + per_page - 1) // per_page,
+        'min_n_party_sides': min_n_party_sides,
     }
 
 

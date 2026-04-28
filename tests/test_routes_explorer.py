@@ -408,6 +408,38 @@ def _seeded_db():
             (sid, 'buyer' if sid == 'RT1' else 'seller'),
         )
 
+    # ── Missed-stem seed (Plan G Task 3) ──────────────────────────
+    # A position-anchor 1-gram that did NOT promote — 'lostbrand', 120 sides.
+    # We seed brand_token_index entries to give it phone-anchor concentration.
+    conn.execute("""
+        INSERT OR IGNORE INTO brand_token_summary
+            (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
+             wordfreq_zipf, is_english_common, is_place_name, is_industry_stopword,
+             filter_reason, position_consistency, total_child_coverage,
+             is_position_anchor, discovered_at)
+        VALUES ('lostbrand', 6.5, 120, 8, 0, 0, 0.0, 0, 0, 0, NULL, 0.95, 0.99, 1, '2026-04-26')
+    """)
+    # Confirm brand_token_index table exists (added in earlier migrations); seed entries
+    # that show 'lostbrand' is most concentrated at phone 4166876700 (kingsett's phone).
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS brand_token_index (
+            token TEXT, source_id TEXT, side TEXT,
+            PRIMARY KEY (token, source_id, side)
+        );
+    """)
+    # Seed 4 sides with lostbrand all at phone 4166876700 (via the existing party_fingerprints
+    # rows RT1, RT-COV-1, RT-COV-2 + a new one).
+    conn.execute("""
+        INSERT OR IGNORE INTO party_fingerprints (source_id, side, phone)
+        VALUES ('RT-LOSTBRAND-1', 'buyer', '4166876700')
+    """)
+    for sid, side in [('RT1', 'buyer'), ('RT-COV-1', 'seller'),
+                       ('RT-COV-2', 'seller'), ('RT-LOSTBRAND-1', 'buyer')]:
+        conn.execute(
+            "INSERT OR IGNORE INTO brand_token_index (token, source_id, side) VALUES ('lostbrand', ?, ?)",
+            (sid, side),
+        )
+
     # ── Transactions for /parties enrichment (Plan D Task 3) ──────
     for sid, date, price in [
         ('RT1',       '2019-04-22', 5_200_000),
@@ -454,18 +486,21 @@ def test_list_distinctive_tokens_descending_by_count(client):
     resp = client.get("/api/explorer/brands", params={"distinctive_only": "true"})
     assert resp.status_code == 200
     body = resp.json()
-    assert body["total"] == 2
+    # kingsett + rasenberg are distinctive; lostbrand is a position anchor (Plan G fixture).
+    # Default include_position_anchors=true picks all three up.
+    assert body["total"] == 3
     tokens = [t["token"] for t in body["results"]]
-    # Both kingsett and rasenberg have n_party_sides=2; tiebreak alphabetical ASC.
-    assert tokens == ["kingsett", "rasenberg"]
+    # lostbrand has n_party_sides=120, so it sorts first; kingsett/rasenberg both =2,
+    # tiebreak alphabetical ASC.
+    assert tokens == ["lostbrand", "kingsett", "rasenberg"]
 
 
 def test_list_all_tokens_includes_nondistinctive(client):
     resp = client.get("/api/explorer/brands", params={"distinctive_only": "false"})
     body = resp.json()
-    assert body["total"] == 3
+    assert body["total"] == 4
     tokens = {t["token"] for t in body["results"]}
-    assert tokens == {"kingsett", "rasenberg", "ontario"}
+    assert tokens == {"kingsett", "rasenberg", "ontario", "lostbrand"}
 
 
 def test_list_search_filter(client):
@@ -1348,3 +1383,49 @@ def test_close_to_promotion_400_on_invalid_window(client):
     resp = client.get('/api/explorer/auto-groups/tuning/close-to-promotion',
                       params={'from': 0.8, 'to': 0.5})
     assert resp.status_code == 400
+
+
+def test_missed_stems_returns_lostbrand(client):
+    resp = client.get('/api/explorer/auto-groups/tuning/missed-stems',
+                      params={'min_n_party_sides': 100})
+    assert resp.status_code == 200
+    body = resp.json()
+    tokens = [r['token'] for r in body['results']]
+    assert 'lostbrand' in tokens
+
+
+def test_missed_stems_excludes_promoted(client):
+    """Tokens that ARE in brand_stem should NOT appear."""
+    resp = client.get('/api/explorer/auto-groups/tuning/missed-stems',
+                      params={'min_n_party_sides': 100})
+    body = resp.json()
+    tokens = [r['token'] for r in body['results']]
+    # 'kingsett' and 'starlight' are seeded in brand_stem; they should NOT be missed.
+    assert 'kingsett' not in tokens
+    assert 'starlight' not in tokens
+
+
+def test_missed_stems_includes_dominance_contest(client):
+    """Each missed stem should report the strongest-phone anchor where it was concentrated,
+    plus the stem that won at that anchor."""
+    resp = client.get('/api/explorer/auto-groups/tuning/missed-stems',
+                      params={'min_n_party_sides': 100})
+    body = resp.json()
+    lost = next(r for r in body['results'] if r['token'] == 'lostbrand')
+    # 'lostbrand' is concentrated at phone 4166876700 (kingsett's phone)
+    assert lost['strongest_phone'] == '4166876700'
+    assert lost['token_sides_at_anchor'] >= 1
+    # The fixture's anchor_uniqueness has anchor (phone, 4166876700) seeded only via
+    # other data; if no anchor_uniqueness row exists, winner_stem is null.
+    # The contract: winner_stem is the dominant_stem at that anchor (may be null).
+    assert 'winner_stem' in lost
+    assert 'winner_dominance' in lost
+
+
+def test_missed_stems_respects_min_party_sides(client):
+    # Bump threshold above 'lostbrand''s 120 → it disappears.
+    resp = client.get('/api/explorer/auto-groups/tuning/missed-stems',
+                      params={'min_n_party_sides': 500})
+    body = resp.json()
+    tokens = [r['token'] for r in body['results']]
+    assert 'lostbrand' not in tokens
