@@ -8,6 +8,9 @@ import math
 import sqlite3
 
 
+# Note: address_base is intentionally a superset of address_root — it adds
+# suffix specificity. Sides with NULL/empty suffix appear in both anchor
+# types with near-identical scores; Stage A3 will pick whichever wins.
 _ANCHOR_QUERIES = {
     # anchor_type → SQL that yields (anchor_value, source_id, side) for each
     # party-side, with anchor_value being the canonical key for that type.
@@ -64,6 +67,9 @@ def build_anchor_scores(conn: sqlite3.Connection, *, verbose: bool = True) -> di
                 (r['source_id'], r['side'])
             )
         for anchor_value, sides in by_anchor.items():
+            # volume = ALL sides at this anchor (mapped or not). Unmapped sides
+            # correctly dilute dominance — a phone shared between a verified brand
+            # and an unrelated tenant should NOT score as 1.0 dominant.
             volume = len(sides)
             stem_counts = {}
             for sid, side in sides:
