@@ -1973,3 +1973,74 @@ export interface AutoGroupDetail extends AutoGroupSummary {
   n_distinct_contacts: number;
   discovered_at: string | null;
 }
+
+// ============================================================
+// Explorer — Auto-Groups (Layer 2 Plan D additions)
+// ============================================================
+
+export interface AutoGroupCoStem {
+  stem: string;
+  n_parties: number;
+}
+
+export interface AutoGroupAnchorWithCoverage {
+  anchor_type: 'phone' | 'address_root' | 'address_base' | 'contact';
+  anchor_value: string;
+  score: number;
+  coverage: number;
+  co_stems: AutoGroupCoStem[];
+}
+
+export interface AutoGroupAnchorsWithCoverageResponse {
+  anchors: AutoGroupAnchorWithCoverage[];
+}
+
+export interface AutoGroupWhyTierCategory {
+  category: 'phone' | 'address' | 'contact';
+  passes_threshold: boolean;
+  strongest_anchor: { anchor_type: string; anchor_value: string; score: number } | null;
+  near_miss_anchor: { anchor_type: string; anchor_value: string; score: number } | null;
+}
+
+export interface AutoGroupWhyTierResponse {
+  auto_group_id: string;
+  canonical_stem: string;
+  tier: 'confirmed' | 'probable' | 'candidate';
+  confidence: number;
+  n_categories_passing: number;
+  categories: AutoGroupWhyTierCategory[];
+  seeding_threshold: number;
+  corroboration_threshold: number;
+}
+
+export interface AutoGroupPartyAnchorSignatureEntry {
+  anchor_type: 'phone' | 'address_root' | 'address_base' | 'contact';
+  anchor_value: string;
+  category: 'phone' | 'address' | 'contact';
+}
+
+export interface AutoGroupParty {
+  source_id: string;
+  side: 'buyer' | 'seller';
+  match_score: number;
+  sale_date: string | null;
+  sale_price: number | null;
+  phone: string | null;
+  contact: string | null;
+  street_number: string | null;
+  street_name: string | null;
+  street_suffix: string | null;
+  suite_type: string | null;
+  suite_number: string | null;
+  postal: string | null;
+  top_brand_phrase: string | null;
+  anchor_signature: AutoGroupPartyAnchorSignatureEntry[];
+}
+
+export interface AutoGroupPartiesResponse {
+  results: AutoGroupParty[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
