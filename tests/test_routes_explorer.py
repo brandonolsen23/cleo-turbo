@@ -158,6 +158,11 @@ def _seeded_db():
             is_service_provider INTEGER NOT NULL DEFAULT 0,
             PRIMARY KEY (anchor_type, anchor_value)
         );
+        CREATE TABLE IF NOT EXISTS transactions (
+            source_id TEXT PRIMARY KEY,
+            sale_date TEXT,
+            sale_price REAL
+        );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
     # (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
@@ -396,6 +401,25 @@ def _seeded_db():
             "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
             "VALUES (?, ?, 'brand_phrase', 'kingsett capital', 'party_name')",
             (sid, 'buyer' if sid == 'RT1' else 'seller'),
+        )
+
+    # ── Transactions for /parties enrichment (Plan D Task 3) ──────
+    for sid, date, price in [
+        ('RT1',       '2019-04-22', 5_200_000),
+        ('RT-COV-1',  '2020-06-01', 8_400_000),
+        ('RT-COV-2',  '2021-03-15', 3_100_000),
+        ('RT-COV-3',  '2022-09-30',   780_000),
+    ]:
+        conn.execute(
+            "INSERT OR IGNORE INTO transactions (source_id, sale_date, sale_price) VALUES (?, ?, ?)",
+            (sid, date, price),
+        )
+    # Mirror sale_date back onto party_fingerprints (some queries read it from there)
+    for sid in ('RT1', 'RT-COV-1', 'RT-COV-2', 'RT-COV-3'):
+        conn.execute(
+            "UPDATE party_fingerprints SET sale_date = (SELECT sale_date FROM transactions WHERE source_id = ?) "
+            "WHERE source_id = ?",
+            (sid, sid),
         )
 
     conn.commit()
@@ -1149,3 +1173,79 @@ def test_why_tier_surfaces_near_miss_for_missing_category(client):
     assert phone_cat['near_miss_anchor'] is not None
     assert phone_cat['near_miss_anchor']['anchor_value'] == 'NEAR_MISS_PHONE'
     assert phone_cat['near_miss_anchor']['score'] == pytest.approx(0.9)
+
+
+# ── /parties endpoint (Plan D Task 3) ─────────────────────────
+
+def test_parties_returns_enriched_rows(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001/parties')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['total'] >= 4
+    first = body['results'][0]
+    # Required fields
+    for f in ('source_id', 'side', 'match_score', 'sale_date', 'sale_price',
+              'phone', 'contact', 'street_number', 'street_name',
+              'top_brand_phrase', 'anchor_signature'):
+        assert f in first
+
+
+def test_parties_anchor_signature_lists_matching_group_anchors(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001/parties')
+    body = resp.json()
+    # RT-COV-1 touches phone + address_root + contact (3 anchors)
+    cov1 = next(p for p in body['results'] if p['source_id'] == 'RT-COV-1')
+    sig_categories = {entry['category'] for entry in cov1['anchor_signature']}
+    assert {'phone', 'address', 'contact'}.issubset(sig_categories)
+    # RT-COV-2 touches phone only
+    cov2 = next(p for p in body['results'] if p['source_id'] == 'RT-COV-2')
+    sig_categories_2 = {entry['category'] for entry in cov2['anchor_signature']}
+    assert sig_categories_2 == {'phone'}
+
+
+def test_parties_filter_by_anchor(client):
+    # Show only parties that touch contact 'rob kumer'
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'anchor_type': 'contact', 'anchor_value': 'rob kumer'},
+    )
+    body = resp.json()
+    sids = {p['source_id'] for p in body['results']}
+    # RT1 and RT-COV-1 and RT-COV-3 all have rob kumer; RT-COV-2 has someone else.
+    assert 'RT-COV-2' not in sids
+
+
+def test_parties_filter_by_min_match_score(client):
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'min_match_score': 0.95},
+    )
+    body = resp.json()
+    for p in body['results']:
+        assert p['match_score'] >= 0.95
+
+
+def test_parties_pagination(client):
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'per_page': 2, 'page': 1},
+    )
+    body = resp.json()
+    assert len(body['results']) <= 2
+    assert body['per_page'] == 2
+    assert body['page'] == 1
+
+
+def test_parties_sort_by_match_score_desc(client):
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'sort': 'match_score', 'order': 'desc'},
+    )
+    body = resp.json()
+    scores = [p['match_score'] for p in body['results']]
+    assert scores == sorted(scores, reverse=True)
+
+
+def test_parties_404(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_99999/parties')
+    assert resp.status_code == 404

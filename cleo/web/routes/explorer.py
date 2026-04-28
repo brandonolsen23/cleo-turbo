@@ -21,6 +21,7 @@ GET /api/explorer/auto-groups                       — list auto-groups (Layer 
 GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
 GET /api/explorer/auto-groups/:id/anchors-with-coverage  — anchors + coverage + co-stems
 GET /api/explorer/auto-groups/:id/why-tier  — explains which categories passed/missed for tier assignment
+GET /api/explorer/auto-groups/:id/parties  — paginated, filterable, sortable parties with anchor_signature
 """
 
 from __future__ import annotations
@@ -1779,6 +1780,156 @@ def _near_miss_anchor(db, auto_group_id: str, canonical_stem: str, category: str
         (canonical_stem, ANCHOR_SEEDING_SCORE_THRESHOLD, ANCHOR_CORROBORATION_SCORE_THRESHOLD),
     ).fetchone()
     return dict(row) if row else None
+
+
+# ─────────────────────────────────────────────────────────────
+# Auto-group parties (Plan D Task 3)
+# ─────────────────────────────────────────────────────────────
+
+_PARTIES_VALID_SORTS = {
+    'date': 'pf.sale_date',
+    'match_score': 'agm.match_score',
+    'sale_price': 't.sale_price',
+}
+
+
+@router.get('/auto-groups/{auto_group_id}/parties')
+def auto_group_parties(
+    auto_group_id: str,
+    page: int = Query(1, ge=1),
+    per_page: int = Query(100, ge=1, le=500),
+    min_match_score: Optional[float] = Query(None),
+    side: Optional[str] = Query(None),
+    anchor_type: Optional[str] = Query(None),
+    anchor_value: Optional[str] = Query(None),
+    q: Optional[str] = Query(None),
+    sort: str = Query('date'),
+    order: str = Query('desc'),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    # 404 if the group doesn't exist
+    summary = db.execute(
+        'SELECT auto_group_id, canonical_stem FROM auto_groups WHERE auto_group_id = ?',
+        (auto_group_id,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f'Unknown auto_group: {auto_group_id!r}')
+
+    # Validate sort
+    sort_column = _PARTIES_VALID_SORTS.get(sort)
+    if sort_column is None:
+        raise HTTPException(status_code=400, detail=f'Invalid sort: {sort!r}')
+    order_sql = 'DESC' if order.lower() == 'desc' else 'ASC'
+
+    where = ["agm.auto_group_id = ?", "agm.member_type = 'party_side'"]
+    params: list = [auto_group_id]
+
+    if min_match_score is not None:
+        where.append('agm.match_score >= ?')
+        params.append(min_match_score)
+    if side in ('buyer', 'seller'):
+        where.append('agm.side = ?')
+        params.append(side)
+    if anchor_type and anchor_value:
+        if anchor_type == 'phone':
+            where.append('pf.phone = ?')
+            params.append(anchor_value)
+        elif anchor_type == 'contact':
+            where.append('pf.contact_fingerprint = ?')
+            params.append(anchor_value)
+        elif anchor_type == 'address_root':
+            where.append("(pf.street_number || '|' || pf.street_name) = ?")
+            params.append(anchor_value)
+        elif anchor_type == 'address_base':
+            where.append("(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?")
+            params.append(anchor_value)
+    if q:
+        where.append("EXISTS (SELECT 1 FROM party_atoms pa WHERE pa.source_id = agm.source_id AND pa.side = agm.side AND pa.atom_type = 'brand_phrase' AND LOWER(pa.atom_value) LIKE ?)")
+        params.append(f'%{q.lower()}%')
+
+    where_sql = ' WHERE ' + ' AND '.join(where)
+
+    # Total count
+    total = db.execute(
+        f"""SELECT COUNT(*) FROM auto_group_members agm
+            JOIN party_fingerprints pf
+              ON pf.source_id = agm.source_id AND pf.side = agm.side
+            {where_sql}""",
+        params,
+    ).fetchone()[0]
+
+    offset = (page - 1) * per_page
+
+    # Top brand phrase per party — most-frequent phrase mapped to the group's canonical_stem.
+    # Fall back to any brand phrase on the party if no stem-mapped phrase exists.
+    rows = db.execute(
+        f"""SELECT
+              agm.source_id, agm.side, agm.match_score,
+              pf.phone, pf.contact_fingerprint AS contact, pf.sale_date,
+              pf.street_number, pf.street_name, pf.street_suffix,
+              pf.suite_type, pf.suite_number, pf.postal,
+              t.sale_price,
+              (SELECT pa.atom_value
+                 FROM party_atoms pa
+                 LEFT JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+                 WHERE pa.source_id = agm.source_id
+                   AND pa.side = agm.side
+                   AND pa.atom_type = 'brand_phrase'
+                 ORDER BY (CASE WHEN m.stem = ? THEN 0 ELSE 1 END), pa.id ASC
+                 LIMIT 1) AS top_brand_phrase
+            FROM auto_group_members agm
+            JOIN party_fingerprints pf
+              ON pf.source_id = agm.source_id AND pf.side = agm.side
+            LEFT JOIN transactions t ON t.source_id = agm.source_id
+            {where_sql}
+            ORDER BY {sort_column} {order_sql}, agm.source_id
+            LIMIT ? OFFSET ?""",
+        [summary['canonical_stem']] + params + [per_page, offset],
+    ).fetchall()
+
+    # Pre-load group anchors once so we can compute anchor_signature per row.
+    group_anchors = list(db.execute(
+        'SELECT anchor_type, anchor_value FROM auto_group_anchors WHERE auto_group_id = ?',
+        (auto_group_id,),
+    ))
+
+    results = []
+    for r in rows:
+        d = dict(r)
+        d['anchor_signature'] = _anchor_signature_for_party(d, group_anchors)
+        results.append(d)
+
+    return {
+        'results': results,
+        'total': total,
+        'page': page,
+        'per_page': per_page,
+        'pages': (total + per_page - 1) // per_page,
+    }
+
+
+def _anchor_signature_for_party(party: dict, group_anchors: list) -> list:
+    """Return the subset of group_anchors that this party's data matches."""
+    addr_root = (
+        f"{party['street_number']}|{party['street_name']}"
+        if party.get('street_number') and party.get('street_name') else None
+    )
+    addr_base = (
+        f"{party['street_number']}|{party['street_name']}|{party.get('street_suffix') or ''}"
+        if party.get('street_number') and party.get('street_name') else None
+    )
+    matches = []
+    for a in group_anchors:
+        at, av = a['anchor_type'], a['anchor_value']
+        if at == 'phone' and party.get('phone') == av:
+            matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'phone'})
+        elif at == 'address_root' and addr_root == av:
+            matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'address'})
+        elif at == 'address_base' and addr_base == av:
+            matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'address'})
+        elif at == 'contact' and party.get('contact') == av:
+            matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'contact'})
+    return matches
 
 
 # ─────────────────────────────────────────────────────────────
