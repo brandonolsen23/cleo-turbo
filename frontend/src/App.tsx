@@ -71,6 +71,7 @@ const ExplorerAddressRoots = lazy(() => import("./pages/ExplorerAddressRoots"));
 const ExplorerAddressRootDetail = lazy(() => import("./pages/ExplorerAddressRootDetail"));
 const ExplorerContacts = lazy(() => import("./pages/ExplorerContacts"));
 const ExplorerContactDetail = lazy(() => import("./pages/ExplorerContactDetail"));
+const ExplorerAutoGroups = lazy(() => import("./pages/ExplorerAutoGroups"));
 
 // ============================================================
 // Auth Provider
@@ -169,6 +170,7 @@ export default function App() {
                 <Route path="/explorer/addresses/bases/:key" element={<ExplorerAddressDetail />} />
                 <Route path="/explorer/contacts" element={<ExplorerContacts />} />
                 <Route path="/explorer/contacts/:fingerprint" element={<ExplorerContactDetail />} />
+                <Route path="/explorer/auto-groups" element={<ExplorerAutoGroups />} />
                 <Route path="/labeling" element={<LabelingPage />} />
                 <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
                 <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />
