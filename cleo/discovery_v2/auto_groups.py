@@ -26,42 +26,62 @@ def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True) -> dict
 
 
 def _finalize_display_and_counts(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
-    """Stage A5: pick display_name as max-count phrase mapping to canonical_stem; refresh n_members."""
-    n_updated = 0
-    for r in conn.execute('SELECT auto_group_id, canonical_stem FROM auto_groups').fetchall():
-        gid, stem = r['auto_group_id'], r['canonical_stem']
+    """Stage A5: pick display_name as max-count phrase mapping to canonical_stem; refresh n_members.
 
-        # display_name: most-frequent phrase among members where phrase → stem
-        row = conn.execute(
-            """SELECT pa.atom_value AS phrase, COUNT(*) AS n
-               FROM auto_group_members agm
-               JOIN party_atoms pa
-                 ON pa.source_id = agm.source_id
-                AND pa.side      = agm.side
-                AND pa.atom_type = 'brand_phrase'
-               JOIN brand_stem_phrase_map m
-                 ON m.phrase = pa.atom_value
-                AND m.stem   = ?
-               WHERE agm.auto_group_id = ?
-                 AND agm.member_type = 'party_side'
-               GROUP BY pa.atom_value
-               ORDER BY n DESC, length(phrase) ASC, phrase ASC
-               LIMIT 1""",
-            (stem, gid),
-        ).fetchone()
-        display_name = row['phrase'] if row else stem
-
-        n_members = conn.execute(
-            'SELECT COUNT(*) AS n FROM auto_group_members WHERE auto_group_id=?',
-            (gid,),
-        ).fetchone()['n']
-
-        conn.execute(
-            'UPDATE auto_groups SET display_name=?, n_members=? WHERE auto_group_id=?',
-            (display_name, n_members, gid),
+    Uses two bulk queries (one for display names, one for counts) instead of a per-group
+    loop. The per-group loop performed 2 queries × 1682 groups = 3364 round-trips, each
+    with a 3-table JOIN — that doesn't finish in any reasonable time on a real-size DB.
+    """
+    # Bulk display-name selection: rank phrases per group, take top 1.
+    name_by_group: dict[str, str] = {}
+    for r in conn.execute("""
+        WITH ranked AS (
+            SELECT agm.auto_group_id,
+                   pa.atom_value AS phrase,
+                   COUNT(*) AS n,
+                   ROW_NUMBER() OVER (
+                       PARTITION BY agm.auto_group_id
+                       ORDER BY COUNT(*) DESC, length(pa.atom_value) ASC, pa.atom_value ASC
+                   ) AS rk
+            FROM auto_group_members agm
+            JOIN auto_groups g
+              ON g.auto_group_id = agm.auto_group_id
+            JOIN party_atoms pa
+              ON pa.source_id = agm.source_id
+             AND pa.side      = agm.side
+             AND pa.atom_type = 'brand_phrase'
+            JOIN brand_stem_phrase_map m
+              ON m.phrase = pa.atom_value
+             AND m.stem   = g.canonical_stem
+            WHERE agm.member_type = 'party_side'
+            GROUP BY agm.auto_group_id, pa.atom_value
         )
-        n_updated += 1
+        SELECT auto_group_id, phrase FROM ranked WHERE rk = 1
+    """):
+        name_by_group[r['auto_group_id']] = r['phrase']
+
+    # Bulk member counts (all member types — party_side + numbered_corp).
+    count_by_group: dict[str, int] = {}
+    for r in conn.execute("""
+        SELECT auto_group_id, COUNT(*) AS n
+        FROM auto_group_members
+        GROUP BY auto_group_id
+    """):
+        count_by_group[r['auto_group_id']] = r['n']
+
+    # Update each auto_group; fall back to canonical_stem when no party-side members.
+    updates = []
+    for r in conn.execute('SELECT auto_group_id, canonical_stem FROM auto_groups').fetchall():
+        gid = r['auto_group_id']
+        display_name = name_by_group.get(gid, r['canonical_stem'])
+        n_members = count_by_group.get(gid, 0)
+        updates.append((display_name, n_members, gid))
+
+    conn.executemany(
+        'UPDATE auto_groups SET display_name=?, n_members=? WHERE auto_group_id=?',
+        updates,
+    )
     conn.commit()
     if verbose:
-        print(f'  Stage A5 (display + counts): {n_updated:,} groups updated.', flush=True)
-    return {'n_groups_finalized': n_updated}
+        print(f'  Stage A5 (display + counts): {len(updates):,} groups updated.', flush=True)
+    return {'n_groups_finalized': len(updates)}
