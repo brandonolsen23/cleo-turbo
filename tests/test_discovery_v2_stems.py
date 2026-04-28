@@ -151,3 +151,42 @@ def test_build_stems_is_idempotent():
     build_stems(conn, verbose=False)
     rows = conn.execute('SELECT * FROM brand_stem WHERE stem=?', ('skyline',)).fetchall()
     assert len(rows) == 1
+
+
+def test_build_stems_picker_prefers_higher_score_when_both_qualify():
+    """Both phone and address_root qualify for skyline; verify the picker chose the higher-score one."""
+    conn = _make_db()
+    # Phone P1: 5 sides, all skyline (dominance 1.0, volume 5)
+    for i in range(5):
+        _seed_phrase(conn, f'TX{i}', 'buyer', 'skyline real estate holdings', phone='P1')
+    # Address (5, douglas): 6 sides, 5 skyline + 1 unrelated (dominance 0.83, volume 6)
+    # — same source_ids deliberately so the address co-anchor exists
+    for i in range(5):
+        conn.execute(
+            "UPDATE party_fingerprints SET street_number='5', street_name='douglas' "
+            "WHERE source_id=? AND side='buyer'",
+            (f'TX{i}',),
+        )
+    # Add a 6th side at the address only (not at phone P1) with a non-skyline phrase
+    conn.execute(
+        "INSERT INTO party_fingerprints (source_id, side, phone, street_number, street_name) "
+        "VALUES ('TXADDR_ONLY', 'buyer', NULL, '5', 'douglas')"
+    )
+    conn.execute(
+        "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+        "VALUES ('TXADDR_ONLY', 'buyer', 'brand_phrase', 'unrelated other thing', 'party_name')"
+    )
+    conn.commit()
+
+    build_stems(conn, verbose=False)
+
+    rows = conn.execute('SELECT * FROM brand_stem WHERE stem=?', ('skyline',)).fetchall()
+    assert len(rows) == 1
+    row = dict(rows[0])
+    # Phone score: 1.0 * log(5+1) ≈ 1.79
+    # Address score: 0.833 * log(6+1) ≈ 1.62
+    # Phone wins.
+    assert row['dominant_anchor_type'] == 'phone'
+    assert row['dominant_anchor_value'] == 'P1'
+    assert row['volume'] == 5
+    assert row['dominance_share'] == pytest.approx(1.0)

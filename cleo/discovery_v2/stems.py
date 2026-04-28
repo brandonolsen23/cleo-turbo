@@ -45,6 +45,9 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     """Run Stage A1 end-to-end. Idempotent — clears prior derived rows first.
 
     Returns a dict with summary counts: { 'n_stems', 'n_phrase_mappings' }.
+
+    Note: brand_stem_phrase_map.confidence is pinned at 1.0 in Plan A.
+    Plan B refines it once anti_evidence_ratio is available per stem.
     """
     conn.execute('DELETE FROM brand_stem')
     conn.execute('DELETE FROM brand_stem_phrase_map')
@@ -60,7 +63,9 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             phrase_to_candidate[ph] = c
 
     # Step 2: for each candidate stem, find dominant anchor + dominance_share
-    # We score stems against both phone and address_root anchors, take the max.
+    # Score stems against both phone and address_root anchors. The picker uses
+    # dominance × log(volume + 1) — same formula as Stage A2's anchor score —
+    # which correctly prefers a 5-volume @ 0.9 dominance over a 100-volume @ 0.5.
     candidate_stems = {c[0]: c[1] for c in phrase_to_candidate.values()}
 
     promoted: list[tuple] = []  # rows for brand_stem
