@@ -22,6 +22,7 @@ GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
 GET /api/explorer/auto-groups/:id/anchors-with-coverage  — anchors + coverage + co-stems
 GET /api/explorer/auto-groups/:id/why-tier  — explains which categories passed/missed for tier assignment
 GET /api/explorer/auto-groups/:id/parties  — paginated, filterable, sortable parties with anchor_signature
+GET /api/explorer/auto-groups/tuning/histogram  — confidence-bucket counts for tuning UI
 """
 
 from __future__ import annotations
@@ -32,6 +33,8 @@ from ..deps import get_db, get_current_user
 from cleo.discovery_v2.constants import (
     ANCHOR_SEEDING_SCORE_THRESHOLD,
     ANCHOR_CORROBORATION_SCORE_THRESHOLD,
+    TIER_CONFIRMED_MIN_CONFIDENCE,
+    TIER_PROBABLE_MIN_CONFIDENCE,
 )
 
 router = APIRouter()
@@ -2063,6 +2066,44 @@ def _anchor_signature_for_party(party: dict, group_anchors: list) -> list:
         elif at == 'contact' and party.get('contact') == av:
             matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'contact'})
     return matches
+
+
+# ─────────────────────────────────────────────────────────────
+# Tuning page endpoints (Plan G)
+# ─────────────────────────────────────────────────────────────
+
+@router.get('/auto-groups/tuning/histogram')
+def auto_groups_tuning_histogram(
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Confidence histogram in 0.05-wide buckets. Returns 20 buckets covering [0.00, 1.00]."""
+    # Compute bucket counts via integer math: bucket index = floor(confidence * 20),
+    # clamped to [0, 19] so 1.0 confidence lands in the last bucket.
+    rows = db.execute(
+        """SELECT
+              MIN(CAST(confidence * 20 AS INT), 19) AS bucket_idx,
+              COUNT(*) AS n
+           FROM auto_groups
+           GROUP BY bucket_idx
+           ORDER BY bucket_idx"""
+    ).fetchall()
+    counts_by_idx = {r['bucket_idx']: r['n'] for r in rows}
+
+    buckets = []
+    for i in range(20):
+        lower = i * 0.05
+        upper = (i + 1) * 0.05
+        buckets.append({
+            'lower': round(lower, 2),
+            'upper': round(upper, 2),
+            'count': counts_by_idx.get(i, 0),
+        })
+
+    return {
+        'buckets': buckets,
+        'tier_confirmed_threshold': TIER_CONFIRMED_MIN_CONFIDENCE,
+        'tier_probable_threshold': TIER_PROBABLE_MIN_CONFIDENCE,
+    }
 
 
 # ─────────────────────────────────────────────────────────────

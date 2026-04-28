@@ -1273,3 +1273,38 @@ def test_parties_400_on_anchor_type_without_value(client):
         params={'anchor_type': 'phone'},  # no anchor_value
     )
     assert resp.status_code == 400
+
+
+def test_histogram_returns_buckets(client):
+    resp = client.get('/api/explorer/auto-groups/tuning/histogram')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert 'buckets' in body
+    # 20 buckets covering [0.00, 1.00] in 0.05 increments.
+    assert len(body['buckets']) == 20
+    first = body['buckets'][0]
+    assert first['lower'] == pytest.approx(0.0)
+    assert first['upper'] == pytest.approx(0.05)
+    assert 'count' in first
+
+
+def test_histogram_includes_threshold_lines(client):
+    resp = client.get('/api/explorer/auto-groups/tuning/histogram')
+    body = resp.json()
+    assert body['tier_confirmed_threshold'] == pytest.approx(0.75)
+    assert body['tier_probable_threshold'] == pytest.approx(0.4)
+
+
+def test_histogram_counts_match_real_groups(client):
+    # The fixture has at least 2 auto_groups (AGRP_00001 confirmed @ 0.85, AGRP_00002 probable @ 0.55).
+    resp = client.get('/api/explorer/auto-groups/tuning/histogram')
+    body = resp.json()
+    total_in_buckets = sum(b['count'] for b in body['buckets'])
+    # Should at least match the 2 seeded groups.
+    assert total_in_buckets >= 2
+    # AGRP_00001 (0.85) lands in [0.85, 0.90)
+    bucket_85 = next(b for b in body['buckets'] if b['lower'] == pytest.approx(0.85))
+    assert bucket_85['count'] >= 1
+    # AGRP_00002 (0.55) lands in [0.55, 0.60)
+    bucket_55 = next(b for b in body['buckets'] if b['lower'] == pytest.approx(0.55))
+    assert bucket_55['count'] >= 1
