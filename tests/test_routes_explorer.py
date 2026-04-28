@@ -1249,3 +1249,27 @@ def test_parties_sort_by_match_score_desc(client):
 def test_parties_404(client):
     resp = client.get('/api/explorer/auto-groups/AGRP_99999/parties')
     assert resp.status_code == 404
+
+
+def test_parties_400_on_invalid_side(client):
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'side': 'middleman'},
+    )
+    assert resp.status_code == 400
+
+
+def test_parties_400_on_invalid_anchor_type(client):
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'anchor_type': 'foo', 'anchor_value': 'bar'},
+    )
+    assert resp.status_code == 400
+
+
+def test_parties_400_on_anchor_type_without_value(client):
+    resp = client.get(
+        '/api/explorer/auto-groups/AGRP_00001/parties',
+        params={'anchor_type': 'phone'},  # no anchor_value
+    )
+    assert resp.status_code == 400

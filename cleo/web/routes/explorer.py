@@ -1620,15 +1620,8 @@ def auto_group_anchors_with_coverage(
 
 
 def _coverage_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value: str) -> int:
-    if anchor_type == 'phone':
-        clause = 'pf.phone = ?'
-    elif anchor_type == 'address_root':
-        clause = "(pf.street_number || '|' || pf.street_name) = ?"
-    elif anchor_type == 'address_base':
-        clause = "(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?"
-    elif anchor_type == 'contact':
-        clause = 'pf.contact_fingerprint = ?'
-    else:
+    clause = _anchor_pf_clause(anchor_type)
+    if clause is None:
         return 0
     row = db.execute(
         f"""SELECT COUNT(*) AS n
@@ -1646,15 +1639,8 @@ def _co_stems_for_anchor(db, auto_group_id: str, anchor_type: str, anchor_value:
 
     Returns up to 5 entries: [{stem, n_parties}, ...] sorted by n_parties desc.
     """
-    if anchor_type == 'phone':
-        clause = 'pf.phone = ?'
-    elif anchor_type == 'address_root':
-        clause = "(pf.street_number || '|' || pf.street_name) = ?"
-    elif anchor_type == 'address_base':
-        clause = "(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?"
-    elif anchor_type == 'contact':
-        clause = 'pf.contact_fingerprint = ?'
-    else:
+    clause = _anchor_pf_clause(anchor_type)
+    if clause is None:
         return []
 
     rows = db.execute(
@@ -1679,6 +1665,23 @@ def _category_of_anchor_type(anchor_type: str) -> str:
     if anchor_type in ('address_root', 'address_base'):
         return 'address'
     return anchor_type
+
+
+def _anchor_pf_clause(anchor_type: str) -> Optional[str]:
+    """SQL fragment that filters party_fingerprints (aliased pf) for the given anchor_type.
+
+    The clause expects exactly one bind param: the anchor_value.
+    Returns None for unknown anchor_types.
+    """
+    if anchor_type == 'phone':
+        return 'pf.phone = ?'
+    elif anchor_type == 'address_root':
+        return "(pf.street_number || '|' || pf.street_name) = ?"
+    elif anchor_type == 'address_base':
+        return "(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?"
+    elif anchor_type == 'contact':
+        return 'pf.contact_fingerprint = ?'
+    return None
 
 
 @router.get('/auto-groups/{auto_group_id}/why-tier')
@@ -1821,6 +1824,13 @@ def auto_group_parties(
         raise HTTPException(status_code=400, detail=f'Invalid sort: {sort!r}')
     order_sql = 'DESC' if order.lower() == 'desc' else 'ASC'
 
+    if side is not None and side not in ('buyer', 'seller'):
+        raise HTTPException(status_code=400, detail=f'Invalid side: {side!r}')
+    if (anchor_type is None) != (anchor_value is None):
+        raise HTTPException(status_code=400, detail='anchor_type and anchor_value must be provided together')
+    if anchor_type and anchor_type not in ('phone', 'address_root', 'address_base', 'contact'):
+        raise HTTPException(status_code=400, detail=f'Invalid anchor_type: {anchor_type!r}')
+
     where = ["agm.auto_group_id = ?", "agm.member_type = 'party_side'"]
     params: list = [auto_group_id]
 
@@ -1831,18 +1841,13 @@ def auto_group_parties(
         where.append('agm.side = ?')
         params.append(side)
     if anchor_type and anchor_value:
-        if anchor_type == 'phone':
-            where.append('pf.phone = ?')
-            params.append(anchor_value)
-        elif anchor_type == 'contact':
-            where.append('pf.contact_fingerprint = ?')
-            params.append(anchor_value)
-        elif anchor_type == 'address_root':
-            where.append("(pf.street_number || '|' || pf.street_name) = ?")
-            params.append(anchor_value)
-        elif anchor_type == 'address_base':
-            where.append("(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?")
-            params.append(anchor_value)
+        clause = _anchor_pf_clause(anchor_type)
+        if clause is None:
+            # This branch is unreachable thanks to the I-1 validation above,
+            # but defensive in case the validation is later removed.
+            raise HTTPException(status_code=400, detail=f'Invalid anchor_type: {anchor_type!r}')
+        where.append(clause)
+        params.append(anchor_value)
     if q:
         where.append("EXISTS (SELECT 1 FROM party_atoms pa WHERE pa.source_id = agm.source_id AND pa.side = agm.side AND pa.atom_type = 'brand_phrase' AND LOWER(pa.atom_value) LIKE ?)")
         params.append(f'%{q.lower()}%')
