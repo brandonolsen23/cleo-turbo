@@ -93,21 +93,3 @@ def discovery_v2_db():
     )
     yield conn
     conn.close()
-
-
-def seed_party_side(conn, sid, side, phrase, *, phone=None, contact=None,
-                    street_number=None, street_name=None, street_suffix=None):
-    """Seed a single party-side with optional phrase + anchors."""
-    conn.execute(
-        """INSERT OR IGNORE INTO party_fingerprints
-             (source_id, side, phone, contact_fingerprint,
-              street_number, street_name, street_suffix)
-           VALUES (?,?,?,?,?,?,?)""",
-        (sid, side, phone, contact, street_number, street_name, street_suffix),
-    )
-    if phrase:
-        conn.execute(
-            "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
-            "VALUES (?, ?, 'brand_phrase', ?, 'party_name')",
-            (sid, side, phrase),
-        )

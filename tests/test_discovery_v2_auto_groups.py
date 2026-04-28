@@ -1,7 +1,7 @@
 import pytest
 
 from cleo.discovery_v2.auto_groups import build_auto_groups
-from tests.conftest import seed_party_side
+from tests._helpers import seed_party_side
 
 
 def test_full_pipeline_produces_skyline_group_with_display_name(discovery_v2_db):

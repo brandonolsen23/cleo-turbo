@@ -45,7 +45,7 @@ def _finalize_display_and_counts(conn: sqlite3.Connection, *, verbose: bool = Tr
                WHERE agm.auto_group_id = ?
                  AND agm.member_type = 'party_side'
                GROUP BY pa.atom_value
-               ORDER BY n DESC
+               ORDER BY n DESC, length(phrase) ASC, phrase ASC
                LIMIT 1""",
             (stem, gid),
         ).fetchone()
