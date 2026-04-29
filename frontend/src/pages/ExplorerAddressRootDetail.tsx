@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { Heading, Text } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type {
@@ -11,6 +11,7 @@ import type {
 import ExplorerTabs from "../components/explorer/ExplorerTabs";
 import AddressTabs from "../components/explorer/AddressTabs";
 import PartySideCard from "../components/explorer/PartySideCard";
+import AddressUnitsAtRoot from "../components/explorer/AddressUnitsAtRoot";
 
 function formatRoot(r: { street_number: string; street_name: string }) {
   return [r.street_number, r.street_name].filter(Boolean).join(" ");
@@ -20,6 +21,8 @@ const TRUNC_LIMIT = 50;
 
 export default function ExplorerAddressRootDetail() {
   const { key } = useParams<{ key: string }>();
+  const [searchParams] = useSearchParams();
+  const city = searchParams.get('city') || '';
   const [data, setData] = useState<AddressRootDetail | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
@@ -176,6 +179,15 @@ export default function ExplorerAddressRootDetail() {
           </tbody>
         </table>
       </div>
+
+      {city && key && (
+        <AddressUnitsAtRoot rootKey={`${city}|${key}`} />
+      )}
+      {!city && (
+        <Text size="1" style={{ color: "var(--gray-9)" }} className="mt-6 block">
+          Tip: append <span className="font-mono">?city=toronto</span> to the URL to see the unit-by-unit breakdown.
+        </Text>
+      )}
 
       <Heading size="4" mt="6" mb="2">
         Party-sides ({data.party_sides.length.toLocaleString()})
