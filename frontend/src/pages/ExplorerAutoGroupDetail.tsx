@@ -9,6 +9,7 @@ import AutoGroupTabPlaceholder from "../components/explorer/AutoGroupTabPlacehol
 import AutoGroupOverviewTab from "../components/explorer/AutoGroupOverviewTab";
 import AutoGroupAnchorsTab from "../components/explorer/AutoGroupAnchorsTab";
 import AutoGroupPartiesTab from "../components/explorer/AutoGroupPartiesTab";
+import AutoGroupTrailTab from "../components/explorer/AutoGroupTrailTab";
 
 
 const tierColor: Record<string, "jade" | "amber" | "gray"> = {
@@ -53,7 +54,7 @@ export default function ExplorerAutoGroupDetail() {
           anchors:  <AutoGroupAnchorsTab autoGroupId={data.auto_group_id} />,
           parties:  <AutoGroupPartiesTab autoGroupId={data.auto_group_id} />,
           graph:    <AutoGroupTabPlaceholder planName="Plan E" />,
-          trail:    <AutoGroupTabPlaceholder planName="Plan F" />,
+          trail:    <AutoGroupTrailTab />,
         }}
       </AutoGroupTabs>
     </div>
