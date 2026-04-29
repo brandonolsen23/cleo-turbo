@@ -67,3 +67,18 @@ def test_migration_is_idempotent():
         "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='address_unit_summary'"
     ).fetchone()[0]
     assert rows == 1
+
+
+def test_migration_preserves_anchor_uniqueness_rows():
+    """Existing rows in anchor_uniqueness must survive the table recreate."""
+    conn = _setup_pre_migration_db()
+    conn.execute(
+        "INSERT INTO anchor_uniqueness (anchor_type, anchor_value, volume, score) "
+        "VALUES ('phone', '4166876700', 137, 4.5)"
+    )
+    _m.migrate(conn)
+    row = conn.execute(
+        "SELECT anchor_type, anchor_value, volume, score FROM anchor_uniqueness "
+        "WHERE anchor_type='phone' AND anchor_value='4166876700'"
+    ).fetchone()
+    assert row == ('phone', '4166876700', 137, 4.5)

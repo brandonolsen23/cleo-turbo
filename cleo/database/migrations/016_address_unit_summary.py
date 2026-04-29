@@ -48,24 +48,40 @@ def migrate(conn: sqlite3.Connection) -> None:
         "SELECT sql FROM sqlite_master WHERE type='table' AND name='anchor_uniqueness'"
     ).fetchone()
     if sql and 'CHECK (anchor_type IN' in (sql[0] or ''):
-        conn.executescript("""
-            CREATE TABLE anchor_uniqueness__new (
-                anchor_type TEXT NOT NULL,
-                anchor_value TEXT NOT NULL,
-                dominant_stem TEXT,
-                dominance_share REAL,
-                volume INTEGER NOT NULL,
-                score REAL NOT NULL,
-                is_service_provider INTEGER NOT NULL DEFAULT 0,
-                PRIMARY KEY (anchor_type, anchor_value)
-            );
-            INSERT INTO anchor_uniqueness__new
-            SELECT * FROM anchor_uniqueness;
-            DROP TABLE anchor_uniqueness;
-            ALTER TABLE anchor_uniqueness__new RENAME TO anchor_uniqueness;
-            CREATE INDEX IF NOT EXISTS idx_au_score ON anchor_uniqueness(score);
-            CREATE INDEX IF NOT EXISTS idx_au_stem ON anchor_uniqueness(dominant_stem);
-        """)
+        # Use a manual transaction so the recreate is atomic — executescript would
+        # autocommit between statements, leaving anchor_uniqueness__new orphaned if
+        # the process dies between DROP and RENAME.
+        cur = conn.cursor()
+        cur.execute('BEGIN')
+        try:
+            cur.execute("""
+                CREATE TABLE anchor_uniqueness__new (
+                    anchor_type TEXT NOT NULL,
+                    anchor_value TEXT NOT NULL,
+                    dominant_stem TEXT,
+                    dominance_share REAL,
+                    volume INTEGER NOT NULL,
+                    score REAL NOT NULL,
+                    is_service_provider INTEGER NOT NULL DEFAULT 0,
+                    PRIMARY KEY (anchor_type, anchor_value)
+                )
+            """)
+            cur.execute("""
+                INSERT INTO anchor_uniqueness__new
+                    (anchor_type, anchor_value, dominant_stem, dominance_share,
+                     volume, score, is_service_provider)
+                SELECT anchor_type, anchor_value, dominant_stem, dominance_share,
+                       volume, score, is_service_provider
+                FROM anchor_uniqueness
+            """)
+            cur.execute("DROP TABLE anchor_uniqueness")
+            cur.execute("ALTER TABLE anchor_uniqueness__new RENAME TO anchor_uniqueness")
+            cur.execute("CREATE INDEX IF NOT EXISTS idx_au_score ON anchor_uniqueness(score)")
+            cur.execute("CREATE INDEX IF NOT EXISTS idx_au_stem ON anchor_uniqueness(dominant_stem)")
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
     conn.commit()
     print('Migration 016 complete.')
 
