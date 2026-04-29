@@ -474,6 +474,82 @@ def build_address_root_summary(conn, *, verbose: bool = True):
     return {"n_roots": n}
 
 
+def build_address_unit_summary(conn, *, verbose: bool = True):
+    """Layer 1 silo: per-unit brand-stem dominance.
+
+    A 'unit' is the full physical address: city + street_number + street_name +
+    street_suffix + street_direction + suite_type + suite_number. Empty fields
+    (NULL or '') are normalized to empty string in the key.
+    """
+    conn.execute('DELETE FROM address_unit_summary')
+
+    # Step 1: build per-side dominant stem (most-common stem across the side's phrases).
+    side_stems: dict = {}
+    for r in conn.execute("""
+        SELECT pa.source_id, pa.side, m.stem, COUNT(*) AS n
+        FROM party_atoms pa
+        JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+        WHERE pa.atom_type = 'brand_phrase'
+        GROUP BY pa.source_id, pa.side, m.stem
+    """):
+        key = (r['source_id'], r['side'])
+        prev = side_stems.get(key)
+        if prev is None or r['n'] > prev[1]:
+            side_stems[key] = (r['stem'], r['n'])
+
+    # Step 2: aggregate parties by unit-key, computing stem counts.
+    by_unit: dict = {}
+    for r in conn.execute("""
+        SELECT source_id, side, city, street_number, street_name,
+               street_suffix, street_direction, suite_type, suite_number
+        FROM party_fingerprints
+        WHERE city IS NOT NULL AND city != ''
+          AND street_number IS NOT NULL AND street_number != ''
+          AND street_name IS NOT NULL AND street_name != ''
+    """):
+        key = (
+            r['city'], r['street_number'], r['street_name'],
+            r['street_suffix'] or '',
+            r['street_direction'] or '',
+            r['suite_type'] or '',
+            r['suite_number'] or '',
+        )
+        bucket = by_unit.setdefault(key, {'sides': 0, 'stem_counts': {}})
+        bucket['sides'] += 1
+        st = side_stems.get((r['source_id'], r['side']))
+        if st is not None:
+            bucket['stem_counts'][st[0]] = bucket['stem_counts'].get(st[0], 0) + 1
+
+    # Step 3: insert rows, computing dominant stem + share.
+    rows_to_insert = []
+    for (city, num, name, suf, dir_, stype, snum), bucket in by_unit.items():
+        n_parties = bucket['sides']
+        stem_counts = bucket['stem_counts']
+        n_distinct = len(stem_counts)
+        if stem_counts:
+            dom_stem, dom_n = max(stem_counts.items(), key=lambda kv: kv[1])
+            dom_share = dom_n / n_parties
+        else:
+            dom_stem, dom_share = None, 0.0
+        rows_to_insert.append((
+            city, num, name, suf, dir_, stype, snum,
+            n_parties, n_distinct, dom_stem, dom_share,
+        ))
+
+    conn.executemany(
+        """INSERT INTO address_unit_summary
+            (city, street_number, street_name, street_suffix, street_direction,
+             suite_type, suite_number, n_party_sides, n_distinct_brand_stems,
+             dominant_stem, dominance_share)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        rows_to_insert,
+    )
+    conn.commit()
+    if verbose:
+        print(f'  Layer 1 silo (address units): {len(rows_to_insert):,} distinct units', flush=True)
+    return {'n_units': len(rows_to_insert)}
+
+
 def build_contact_fingerprint_summary(conn, *, verbose: bool = True):
     """Populate contact_fingerprint_summary."""
     conn.execute("DELETE FROM contact_fingerprint_summary")
@@ -590,5 +666,6 @@ def build_all_indexes(conn, *, min_idf: Optional[float] = None, verbose: bool = 
     build_long_phrase_index(conn, min_idf=min_idf, verbose=verbose)
     build_phone_summary(conn, verbose=verbose)
     build_address_base_summary(conn, verbose=verbose)
-    build_address_root_summary(conn, verbose=verbose)        # ← new
+    build_address_root_summary(conn, verbose=verbose)
+    build_address_unit_summary(conn, verbose=verbose)        # ← Plan H1
     build_contact_fingerprint_summary(conn, verbose=verbose)
