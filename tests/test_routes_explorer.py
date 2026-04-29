@@ -276,7 +276,7 @@ def _seeded_db():
     # ("kingsett capital" on RT1, "kingsett wealth" on RT2).
     conn.execute(
         "UPDATE party_fingerprints SET "
-        "street_number='66', street_name='wellington', street_suffix='street', "
+        "city='toronto', street_number='66', street_name='wellington', street_suffix='street', "
         "suite_type='suite', suite_number='4400', postal='M5K1H6', "
         "phone='4166876700', contact_fingerprint='rob kumer', sale_date='2020-01-01' "
         "WHERE source_id='RT1' AND side='buyer'"
@@ -354,7 +354,7 @@ def _seeded_db():
     conn.execute(
         "INSERT INTO auto_group_anchors VALUES ('AGRP_00004', 'phone', '4166876700', 1.5)"
     )
-    for at, av in [('phone', '4166876700'), ('address_root', '40|king'), ('contact', 'rob kumer')]:
+    for at, av in [('phone', '4166876700'), ('address_unit', 'toronto|40|king|st|||'), ('contact', 'rob kumer')]:
         conn.execute(
             'INSERT INTO auto_group_anchors VALUES (?, ?, ?, 2.0)',
             ('AGRP_00001', at, av),
@@ -365,13 +365,13 @@ def _seeded_db():
     )
 
     # Add 3 more parties for AGRP_00001 to exercise coverage
-    # RT-COV-1: touches phone + address_root + contact (3-anchor coverage)
+    # RT-COV-1: touches phone + address_unit + contact (3-anchor coverage)
     # RT-COV-2: touches phone only (phone-only coverage)
     # RT-COV-3: touches contact only (contact-only coverage)
     conn.execute("""
         INSERT INTO party_fingerprints
-            (source_id, side, phone, contact_fingerprint, street_number, street_name, street_suffix)
-        VALUES ('RT-COV-1', 'seller', '4166876700', 'rob kumer', '40', 'king', 'st')
+            (source_id, side, phone, contact_fingerprint, city, street_number, street_name, street_suffix)
+        VALUES ('RT-COV-1', 'seller', '4166876700', 'rob kumer', 'toronto', '40', 'king', 'st')
     """)
     conn.execute("""
         INSERT INTO party_fingerprints
@@ -1168,7 +1168,7 @@ def test_auto_group_detail_returns_anchors_and_members(client):
     assert body['tier'] == 'confirmed'
     assert len(body['anchors']) >= 3
     types = {a['anchor_type'] for a in body['anchors']}
-    assert {'phone', 'address_root', 'contact'}.issubset(types)
+    assert {'phone', 'address_unit', 'contact'}.issubset(types)
     assert isinstance(body['members'], list)
 
 
@@ -1273,7 +1273,7 @@ def test_parties_returns_enriched_rows(client):
 def test_parties_anchor_signature_lists_matching_group_anchors(client):
     resp = client.get('/api/explorer/auto-groups/AGRP_00001/parties')
     body = resp.json()
-    # RT-COV-1 touches phone + address_root + contact (3 anchors)
+    # RT-COV-1 touches phone + address_unit + contact (3 anchors)
     cov1 = next(p for p in body['results'] if p['source_id'] == 'RT-COV-1')
     sig_categories = {entry['category'] for entry in cov1['anchor_signature']}
     assert {'phone', 'address', 'contact'}.issubset(sig_categories)
@@ -1479,7 +1479,7 @@ def test_list_auto_groups_returns_anchor_diversity_and_distinct_contacts(client)
     body = resp.json()
     first = body['results'][0]
     assert 'anchor_diversity' in first
-    # AGRP_00001 has 3 anchor types in fixture (phone, address_root, contact) → 3 categories.
+    # AGRP_00001 has 3 anchor types in fixture (phone, address_unit, contact) → 3 categories.
     assert first['anchor_diversity'] >= 1
     assert 'n_distinct_contacts' in first
     assert isinstance(first['n_distinct_contacts'], int)
@@ -1523,13 +1523,13 @@ def test_trail_returns_party_data(client):
 def test_trail_threads_one_per_anchor(client):
     resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
     body = resp.json()
-    # RT1 has phone + contact + address_root + address_base — 4 anchor identities.
+    # RT1 has phone + contact + address_unit — 3 anchor identities.
     # The trail should produce one thread per non-empty anchor on the party.
     thread_anchors = {(t['anchor_type'], t['anchor_value']) for t in body['threads']}
     assert ('phone', '4166876700') in thread_anchors
     assert ('contact', 'rob kumer') in thread_anchors
-    # address_root and address_base both fire because both anchors exist on the party.
-    assert ('address_root', '66|wellington') in thread_anchors
+    # address_unit fires because city+street_number+street_name are all set on RT1.
+    assert ('address_unit', 'toronto|66|wellington|street||suite|4400') in thread_anchors
 
 
 def test_trail_thread_groups_for_phone_lists_both_groups(client):

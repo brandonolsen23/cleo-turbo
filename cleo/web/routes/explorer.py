@@ -1563,13 +1563,12 @@ def list_auto_groups(
     offset = (page - 1) * per_page
 
     # Anchor diversity: count of distinct categories among the group's anchors.
-    # Computed via correlated subquery using the address_root+address_base collapse.
     # Distinct contacts: count of distinct contact_fingerprint among party_side members.
     rows = db.execute(
         f"""SELECT ag.auto_group_id, ag.canonical_stem, ag.display_name, ag.tier,
                    ag.confidence, ag.n_anchors, ag.n_members,
                    (SELECT COUNT(DISTINCT
-                                 CASE WHEN aga.anchor_type IN ('address_root', 'address_base')
+                                 CASE WHEN aga.anchor_type = 'address_unit'
                                       THEN 'address'
                                       ELSE aga.anchor_type
                                  END)
@@ -1686,7 +1685,7 @@ _COVERAGE_SQL_BY_TYPE = {
         WHERE aga.auto_group_id = ? AND aga.anchor_type = 'phone'
         GROUP BY aga.anchor_value
     """,
-    'address_root': """
+    'address_unit': """
         SELECT aga.anchor_value, COUNT(*) AS coverage
         FROM auto_group_anchors aga
         JOIN auto_group_members agm
@@ -1695,21 +1694,16 @@ _COVERAGE_SQL_BY_TYPE = {
         JOIN party_fingerprints pf
           ON pf.source_id = agm.source_id
          AND pf.side = agm.side
-         AND (pf.street_number || '|' || pf.street_name) = aga.anchor_value
-        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_root'
-        GROUP BY aga.anchor_value
-    """,
-    'address_base': """
-        SELECT aga.anchor_value, COUNT(*) AS coverage
-        FROM auto_group_anchors aga
-        JOIN auto_group_members agm
-          ON agm.auto_group_id = aga.auto_group_id
-         AND agm.member_type = 'party_side'
-        JOIN party_fingerprints pf
-          ON pf.source_id = agm.source_id
-         AND pf.side = agm.side
-         AND (pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = aga.anchor_value
-        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_base'
+         AND (
+             COALESCE(pf.city,'') || '|' ||
+             COALESCE(pf.street_number,'') || '|' ||
+             COALESCE(pf.street_name,'') || '|' ||
+             COALESCE(pf.street_suffix,'') || '|' ||
+             COALESCE(pf.street_direction,'') || '|' ||
+             COALESCE(pf.suite_type,'') || '|' ||
+             COALESCE(pf.suite_number,'')
+         ) = aga.anchor_value
+        WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_unit'
         GROUP BY aga.anchor_value
     """,
     'contact': """
@@ -1752,40 +1746,26 @@ _CO_STEMS_SQL_BY_TYPE = {
             FROM co
         ) WHERE rk <= 5
     """,
-    'address_root': """
+    'address_unit': """
         WITH co AS (
             SELECT aga.anchor_value, m.stem,
                    COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
             FROM auto_group_anchors aga
             JOIN party_fingerprints pf
-              ON (pf.street_number || '|' || pf.street_name) = aga.anchor_value
+              ON (
+                  COALESCE(pf.city,'') || '|' ||
+                  COALESCE(pf.street_number,'') || '|' ||
+                  COALESCE(pf.street_name,'') || '|' ||
+                  COALESCE(pf.street_suffix,'') || '|' ||
+                  COALESCE(pf.street_direction,'') || '|' ||
+                  COALESCE(pf.suite_type,'') || '|' ||
+                  COALESCE(pf.suite_number,'')
+              ) = aga.anchor_value
             JOIN party_atoms pa
               ON pa.source_id = pf.source_id AND pa.side = pf.side
              AND pa.atom_type = 'brand_phrase'
             JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
-            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_root'
-              AND m.stem != ?
-            GROUP BY aga.anchor_value, m.stem
-        )
-        SELECT anchor_value, stem, n_parties FROM (
-            SELECT anchor_value, stem, n_parties,
-                   ROW_NUMBER() OVER (PARTITION BY anchor_value ORDER BY n_parties DESC) AS rk
-            FROM co
-        ) WHERE rk <= 5
-    """,
-    'address_base': """
-        WITH co AS (
-            SELECT aga.anchor_value, m.stem,
-                   COUNT(DISTINCT pf.source_id || '|' || pf.side) AS n_parties
-            FROM auto_group_anchors aga
-            JOIN party_fingerprints pf
-              ON (pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,''))
-                 = aga.anchor_value
-            JOIN party_atoms pa
-              ON pa.source_id = pf.source_id AND pa.side = pf.side
-             AND pa.atom_type = 'brand_phrase'
-            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
-            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_base'
+            WHERE aga.auto_group_id = ? AND aga.anchor_type = 'address_unit'
               AND m.stem != ?
             GROUP BY aga.anchor_value, m.stem
         )
@@ -1872,7 +1852,7 @@ def auto_group_anchors_with_coverage(
 
 
 def _category_of_anchor_type(anchor_type: str) -> str:
-    if anchor_type in ('address_root', 'address_base'):
+    if anchor_type == 'address_unit':
         return 'address'
     return anchor_type
 
@@ -1885,10 +1865,13 @@ def _anchor_pf_clause(anchor_type: str) -> Optional[str]:
     """
     if anchor_type == 'phone':
         return 'pf.phone = ?'
-    elif anchor_type == 'address_root':
-        return "(pf.street_number || '|' || pf.street_name) = ?"
-    elif anchor_type == 'address_base':
-        return "(pf.street_number || '|' || pf.street_name || '|' || COALESCE(pf.street_suffix,'')) = ?"
+    elif anchor_type == 'address_unit':
+        return (
+            "(COALESCE(pf.city,'') || '|' || COALESCE(pf.street_number,'') || '|' || "
+            "COALESCE(pf.street_name,'') || '|' || COALESCE(pf.street_suffix,'') || '|' || "
+            "COALESCE(pf.street_direction,'') || '|' || COALESCE(pf.suite_type,'') || '|' || "
+            "COALESCE(pf.suite_number,'')) = ?"
+        )
     elif anchor_type == 'contact':
         return 'pf.contact_fingerprint = ?'
     return None
@@ -1974,7 +1957,7 @@ def _near_miss_anchor(db, auto_group_id: str, canonical_stem: str, category: str
     if category == 'phone':
         type_clause = "anchor_type = 'phone'"
     elif category == 'address':
-        type_clause = "anchor_type IN ('address_root', 'address_base')"
+        type_clause = "anchor_type = 'address_unit'"
     elif category == 'contact':
         type_clause = "anchor_type = 'contact'"
     else:
@@ -2038,7 +2021,7 @@ def auto_group_parties(
         raise HTTPException(status_code=400, detail=f'Invalid side: {side!r}')
     if (anchor_type is None) != (anchor_value is None):
         raise HTTPException(status_code=400, detail='anchor_type and anchor_value must be provided together')
-    if anchor_type and anchor_type not in ('phone', 'address_root', 'address_base', 'contact'):
+    if anchor_type and anchor_type not in ('phone', 'address_unit', 'contact'):
         raise HTTPException(status_code=400, detail=f'Invalid anchor_type: {anchor_type!r}')
 
     where = ["agm.auto_group_id = ?", "agm.member_type = 'party_side'"]
@@ -2081,7 +2064,8 @@ def auto_group_parties(
         f"""SELECT
               agm.source_id, agm.side, agm.match_score,
               pf.phone, pf.contact_fingerprint AS contact, pf.sale_date,
-              pf.street_number, pf.street_name, pf.street_suffix,
+              pf.city,
+              pf.street_number, pf.street_name, pf.street_suffix, pf.street_direction,
               pf.suite_type, pf.suite_number, pf.postal,
               t.sale_price,
               (SELECT pa.atom_value
@@ -2125,22 +2109,20 @@ def auto_group_parties(
 
 def _anchor_signature_for_party(party: dict, group_anchors: list) -> list:
     """Return the subset of group_anchors that this party's data matches."""
-    addr_root = (
-        f"{party['street_number']}|{party['street_name']}"
-        if party.get('street_number') and party.get('street_name') else None
-    )
-    addr_base = (
-        f"{party['street_number']}|{party['street_name']}|{party.get('street_suffix') or ''}"
-        if party.get('street_number') and party.get('street_name') else None
-    )
+    addr_unit = None
+    if party.get('city') and party.get('street_number') and party.get('street_name'):
+        addr_unit = (
+            f"{party.get('city') or ''}|{party.get('street_number') or ''}|"
+            f"{party.get('street_name') or ''}|{party.get('street_suffix') or ''}|"
+            f"{party.get('street_direction') or ''}|{party.get('suite_type') or ''}|"
+            f"{party.get('suite_number') or ''}"
+        )
     matches = []
     for a in group_anchors:
         at, av = a['anchor_type'], a['anchor_value']
         if at == 'phone' and party.get('phone') == av:
             matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'phone'})
-        elif at == 'address_root' and addr_root == av:
-            matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'address'})
-        elif at == 'address_base' and addr_base == av:
+        elif at == 'address_unit' and addr_unit == av:
             matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'address'})
         elif at == 'contact' and party.get('contact') == av:
             matches.append({'anchor_type': at, 'anchor_value': av, 'category': 'contact'})
@@ -2322,7 +2304,8 @@ def auto_group_party_trail(
     # Fetch the party.
     party = db.execute(
         """SELECT pf.source_id, pf.side, pf.phone, pf.contact_fingerprint AS contact,
-                  pf.street_number, pf.street_name, pf.street_suffix,
+                  pf.city,
+                  pf.street_number, pf.street_name, pf.street_suffix, pf.street_direction,
                   pf.suite_type, pf.suite_number, pf.postal, pf.sale_date,
                   t.sale_price,
                   (SELECT pa.atom_value FROM party_atoms pa
@@ -2347,12 +2330,13 @@ def auto_group_party_trail(
         party_anchors.append(('phone', p['phone']))
     if p['contact']:
         party_anchors.append(('contact', p['contact']))
-    if p['street_number'] and p['street_name']:
-        party_anchors.append(('address_root', f"{p['street_number']}|{p['street_name']}"))
-        party_anchors.append((
-            'address_base',
-            f"{p['street_number']}|{p['street_name']}|{p['street_suffix'] or ''}",
-        ))
+    if p['city'] and p['street_number'] and p['street_name']:
+        addr_unit = (
+            f"{p['city'] or ''}|{p['street_number'] or ''}|{p['street_name'] or ''}|"
+            f"{p['street_suffix'] or ''}|{p['street_direction'] or ''}|"
+            f"{p['suite_type'] or ''}|{p['suite_number'] or ''}"
+        )
+        party_anchors.append(('address_unit', addr_unit))
 
     # For each anchor, look up groups registered to it.
     threads = []
@@ -2415,9 +2399,11 @@ def auto_group_party_trail(
             'sale_price': p['sale_price'],
             'phone': p['phone'],
             'contact': p['contact'],
+            'city': p['city'],
             'street_number': p['street_number'],
             'street_name': p['street_name'],
             'street_suffix': p['street_suffix'],
+            'street_direction': p['street_direction'],
             'suite_type': p['suite_type'],
             'suite_number': p['suite_number'],
             'postal': p['postal'],
