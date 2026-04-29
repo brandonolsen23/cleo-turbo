@@ -2092,3 +2092,59 @@ export interface AutoGroupsMissedStemsResponse {
   pages: number;
   min_n_party_sides: number;
 }
+
+// ============================================================
+// Explorer — Auto-Groups Trail (Plan F)
+// ============================================================
+
+export interface AutoGroupTrailParty {
+  source_id: string;
+  side: 'buyer' | 'seller';
+  brand_phrase: string | null;
+  sale_date: string | null;
+  sale_price: number | null;
+  phone: string | null;
+  contact: string | null;
+  street_number: string | null;
+  street_name: string | null;
+  street_suffix: string | null;
+  suite_type: string | null;
+  suite_number: string | null;
+  postal: string | null;
+}
+
+export interface AutoGroupTrailThreadGroup {
+  auto_group_id: string;
+  canonical_stem: string;
+  display_name: string;
+  tier: 'confirmed' | 'probable' | 'candidate';
+  score_in_group: number;
+}
+
+export interface AutoGroupTrailThread {
+  anchor_type: 'phone' | 'address_root' | 'address_base' | 'contact';
+  anchor_value: string;
+  groups: AutoGroupTrailThreadGroup[];
+}
+
+export interface AutoGroupTrailPrimary {
+  auto_group_id: string;
+  canonical_stem: string;
+  display_name: string;
+  tier: 'confirmed' | 'probable' | 'candidate';
+  match_score: number;
+}
+
+export interface AutoGroupTrailGroupSummary {
+  auto_group_id: string;
+  canonical_stem: string;
+  display_name: string;
+  tier: 'confirmed' | 'probable' | 'candidate';
+}
+
+export interface AutoGroupTrailResponse {
+  party: AutoGroupTrailParty;
+  threads: AutoGroupTrailThread[];
+  primary_group: AutoGroupTrailPrimary | null;
+  all_groups: AutoGroupTrailGroupSummary[];
+}
