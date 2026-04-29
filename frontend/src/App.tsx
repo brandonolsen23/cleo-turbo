@@ -69,6 +69,7 @@ const ExplorerAddresses = lazy(() => import("./pages/ExplorerAddresses"));
 const ExplorerAddressDetail = lazy(() => import("./pages/ExplorerAddressDetail"));
 const ExplorerAddressRoots = lazy(() => import("./pages/ExplorerAddressRoots"));
 const ExplorerAddressRootDetail = lazy(() => import("./pages/ExplorerAddressRootDetail"));
+const ExplorerAddressUnitDetail = lazy(() => import("./pages/ExplorerAddressUnitDetail"));
 const ExplorerContacts = lazy(() => import("./pages/ExplorerContacts"));
 const ExplorerContactDetail = lazy(() => import("./pages/ExplorerContactDetail"));
 const ExplorerAutoGroups = lazy(() => import("./pages/ExplorerAutoGroups"));
@@ -170,6 +171,7 @@ export default function App() {
                 <Route path="/explorer/addresses/roots/:key" element={<ExplorerAddressRootDetail />} />
                 <Route path="/explorer/addresses/bases" element={<ExplorerAddresses />} />
                 <Route path="/explorer/addresses/bases/:key" element={<ExplorerAddressDetail />} />
+                <Route path="/explorer/addresses/units/:key" element={<ExplorerAddressUnitDetail />} />
                 <Route path="/explorer/contacts" element={<ExplorerContacts />} />
                 <Route path="/explorer/contacts/:fingerprint" element={<ExplorerContactDetail />} />
                 <Route path="/explorer/auto-groups" element={<ExplorerAutoGroups />} />
