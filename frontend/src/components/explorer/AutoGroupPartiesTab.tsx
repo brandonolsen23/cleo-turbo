@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Text, Button, TextField, Select, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../../api/client";
 import { useSourceViewer } from "../source/SourceViewerContext";
@@ -138,6 +139,7 @@ export default function AutoGroupPartiesTab({ autoGroupId }: { autoGroupId: stri
               <th className="text-right p-2 font-medium">price</th>
               <th className="text-left p-2 font-medium">signature</th>
               <th className="text-right p-2 font-medium">score</th>
+              <th className="text-left p-2 font-medium">trail</th>
             </tr>
           </thead>
           <tbody>
@@ -161,6 +163,14 @@ export default function AutoGroupPartiesTab({ autoGroupId }: { autoGroupId: stri
                   }
                 </td>
                 <td className="p-2 text-right">{p.match_score.toFixed(2)}</td>
+                <td className="p-2"
+                    onClick={(e) => e.stopPropagation()}>
+                  <Link to={`/explorer/auto-groups/${encodeURIComponent(autoGroupId)}?tab=trail&source_id=${encodeURIComponent(p.source_id)}&side=${encodeURIComponent(p.side)}`}
+                        className="no-underline"
+                        style={{ color: "var(--accent-11)" }}>
+                    Trail →
+                  </Link>
+                </td>
               </tr>
             ))}
           </tbody>
