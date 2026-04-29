@@ -2164,7 +2164,7 @@ export interface AddressUnitSummary {
   n_party_sides: number;
   n_distinct_brand_stems: number;
   dominant_stem: string | null;
-  dominance_share: number;
+  dominance_share: number | null;
 }
 
 export interface AddressUnitsAtRootResponse {
