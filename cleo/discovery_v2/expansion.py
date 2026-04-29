@@ -7,7 +7,7 @@ from cleo.discovery_v2.constants import (
     MATCH_SCORE_DIRECT_STEM_HIT,
     MATCH_SCORE_PHONE_MATCH,
     MATCH_SCORE_ADDRESS_PLUS_CONTACT,
-    MATCH_SCORE_ADDRESS_ROOT_ALONE,
+    MATCH_SCORE_ADDRESS_UNIT_ALONE,
     MATCH_SCORE_PHONE_BRAND_CONTRADICTION,
     MATCH_SCORE_SINGLE_WEAK_SIGNAL,
     EXPANSION_ATTACH_THRESHOLD,
@@ -35,24 +35,22 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
         ] = r['score']
 
     # 2. For each party-side, look up its anchor values + its stems
-    side_data = {}  # (sid, side) -> { 'phone', 'addr_root', 'addr_base', 'contact', 'stems' }
+    side_data = {}  # (sid, side) -> { 'phone', 'addr_unit', 'contact', 'stems', 'phrases' }
     for r in conn.execute("""
-        SELECT source_id, side, phone, contact_fingerprint,
-               street_number, street_name, street_suffix
+        SELECT source_id, side, phone, contact_fingerprint, city,
+               street_number, street_name, street_suffix, street_direction,
+               suite_type, suite_number
         FROM party_fingerprints
     """):
-        addr_root = (
-            f"{r['street_number']}|{r['street_name']}"
-            if r['street_number'] and r['street_name'] else None
-        )
-        addr_base = (
-            f"{r['street_number']}|{r['street_name']}|{r['street_suffix'] or ''}"
-            if r['street_number'] and r['street_name'] else None
+        addr_unit = (
+            f"{r['city'] or ''}|{r['street_number'] or ''}|{r['street_name'] or ''}|"
+            f"{r['street_suffix'] or ''}|{r['street_direction'] or ''}|"
+            f"{r['suite_type'] or ''}|{r['suite_number'] or ''}"
+            if r['city'] and r['street_number'] and r['street_name'] else None
         )
         side_data[(r['source_id'], r['side'])] = {
             'phone':     r['phone'] or None,
-            'addr_root': addr_root,
-            'addr_base': addr_base,
+            'addr_unit': addr_unit,
             'contact':   r['contact_fingerprint'] or None,
             'stems':     set(),
             'phrases':   [],
@@ -130,11 +128,7 @@ def _score_match(info: dict, anchors: dict, *, group_canonical_stem: str) -> flo
     """Score a single (party-side, group) pair using constants.py rules."""
     score = 0.0
     has_phone_match = ('phone', info['phone']) in anchors if info['phone'] else False
-    has_addr_match = (
-        ('address_root', info['addr_root']) in anchors if info['addr_root'] else False
-    ) or (
-        ('address_base', info['addr_base']) in anchors if info['addr_base'] else False
-    )
+    has_unit_match = ('address_unit', info['addr_unit']) in anchors if info['addr_unit'] else False
     has_contact_match = ('contact', info['contact']) in anchors if info['contact'] else False
     has_direct_stem = group_canonical_stem in info['stems']
 
@@ -149,13 +143,16 @@ def _score_match(info: dict, anchors: dict, *, group_canonical_stem: str) -> flo
             return MATCH_SCORE_PHONE_BRAND_CONTRADICTION  # explicit do-not-attach
         score = max(score, MATCH_SCORE_PHONE_MATCH)
 
-    if has_addr_match and has_contact_match:
+    if has_unit_match and has_contact_match:
         score = max(score, MATCH_SCORE_ADDRESS_PLUS_CONTACT)
-    elif has_addr_match:
-        score = max(score, MATCH_SCORE_ADDRESS_ROOT_ALONE)
+    elif has_unit_match:
+        score = max(score, MATCH_SCORE_ADDRESS_UNIT_ALONE)
 
-    # Single weak signal (only contact, common name) caps at 0.3
-    if has_contact_match and not (has_phone_match or has_addr_match or has_direct_stem):
+    # Single weak signal: contact only, common-name risk
+    if has_contact_match and not (has_phone_match or has_unit_match or has_direct_stem):
         score = max(score, MATCH_SCORE_SINGLE_WEAK_SIGNAL)
 
+    # No-anchor party with no stem hit and no phone/unit/contact → 0.0 (don't attach).
+    # This is the TD Bank case: address_root would have matched in the old algorithm,
+    # but address_root is no longer a Layer 2 anchor.
     return score

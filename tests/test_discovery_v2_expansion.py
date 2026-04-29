@@ -14,7 +14,9 @@ def _make_db():
     conn.executescript("""
         CREATE TABLE party_fingerprints (
             source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
-            street_number TEXT, street_name TEXT, street_suffix TEXT,
+            city TEXT,
+            street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
+            suite_type TEXT, suite_number TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -91,13 +93,16 @@ def _make_db():
 
 
 def _seed(conn, sid, side, phrase, *, phone=None, contact=None,
-          street_number=None, street_name=None, street_suffix=None):
+          city=None, street_number=None, street_name=None, street_suffix=None,
+          street_direction=None, suite_type=None, suite_number=None):
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
-             (source_id, side, phone, contact_fingerprint,
-              street_number, street_name, street_suffix)
-           VALUES (?,?,?,?,?,?,?)""",
-        (sid, side, phone, contact, street_number, street_name, street_suffix),
+             (source_id, side, phone, contact_fingerprint, city,
+              street_number, street_name, street_suffix, street_direction,
+              suite_type, suite_number)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+        (sid, side, phone, contact, city, street_number, street_name,
+         street_suffix, street_direction, suite_type, suite_number),
     )
     if phrase:
         conn.execute(
@@ -210,3 +215,69 @@ def test_numbered_corp_attached_as_separate_member_row():
     ).fetchall()
     assert len(corps) >= 1
     assert any(r['corp_name'] == '1234567 ontario' for r in corps)
+
+
+def test_no_anchor_no_stem_party_does_not_attach_via_address_alone():
+    """The TD Bank case: a party at a multi-tenant building's root has no phone,
+    no contact, no stem-mapped brand. Should NOT attach to any group via
+    address-root-alone matching (which is now disallowed)."""
+    conn = _make_db()
+    # Seed a Skyline group with anchors at a SPECIFIC unit (suite 4400)
+    for i in range(8):
+        _seed(conn, f'STRONG{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='66', street_name='wellington',
+              street_suffix='street', street_direction='west',
+              suite_type='suite', suite_number='4400')
+    # Add a party at the SAME ROOT but DIFFERENT UNIT (floor 30 instead of suite 4400),
+    # no phone, no contact, no stem-mapped brand.
+    _seed(conn, 'TD_LIKE', 'seller', 'the toronto dominion bank',
+          city='toronto', street_number='66', street_name='wellington',
+          street_suffix='street', street_direction='west',
+          suite_type='floor', suite_number='30th flr')
+    _build_pipeline(conn)
+    build_expansion(conn, verbose=False)
+
+    # Should NOT be attached to the Skyline group.
+    skyline = [r for r in conn.execute(
+        "SELECT auto_group_id FROM auto_groups WHERE canonical_stem='skyline'"
+    )]
+    if skyline:
+        rows = conn.execute(
+            "SELECT * FROM auto_group_members WHERE auto_group_id=? AND source_id='TD_LIKE'",
+            (skyline[0]['auto_group_id'],),
+        ).fetchall()
+        assert len(rows) == 0
+
+
+def test_address_unit_match_attaches_to_group():
+    """A party at the SAME unit as a group's address_unit anchor attaches via
+    that anchor (no other identifying data needed because the unit is
+    uniquely tenanted)."""
+    conn = _make_db()
+    for i in range(8):
+        _seed(conn, f'STRONG{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='66', street_name='wellington',
+              street_suffix='street', street_direction='west',
+              suite_type='suite', suite_number='4400')
+    # Add a party at the same UNIT (suite 4400) but no phone, no contact, no brand.
+    _seed(conn, 'EXTRA', 'seller', None,
+          city='toronto', street_number='66', street_name='wellington',
+          street_suffix='street', street_direction='west',
+          suite_type='suite', suite_number='4400')
+    _build_pipeline(conn)
+    build_expansion(conn, verbose=False)
+
+    skyline = [r for r in conn.execute(
+        "SELECT auto_group_id FROM auto_groups WHERE canonical_stem='skyline'"
+    )]
+    assert len(skyline) >= 1
+    gid = skyline[0]['auto_group_id']
+    rows = conn.execute(
+        "SELECT * FROM auto_group_members WHERE auto_group_id=? AND source_id='EXTRA'",
+        (gid,),
+    ).fetchall()
+    assert len(rows) == 1
+    # MATCH_SCORE_ADDRESS_UNIT_ALONE = 0.7
+    assert rows[0]['match_score'] >= 0.5

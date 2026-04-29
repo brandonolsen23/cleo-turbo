@@ -16,8 +16,8 @@ def _next_group_id(n: int) -> str:
 
 
 def _category_of(anchor_type: str) -> str:
-    """Collapse address_root + address_base into one 'address' category for tiering."""
-    if anchor_type in ('address_root', 'address_base'):
+    """Collapse the (sole) address anchor type into 'address' category for tiering."""
+    if anchor_type == 'address_unit':
         return 'address'
     return anchor_type
 

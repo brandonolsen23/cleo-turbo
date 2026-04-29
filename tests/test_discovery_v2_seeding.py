@@ -12,7 +12,9 @@ def _make_db():
     conn.executescript("""
         CREATE TABLE party_fingerprints (
             source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
-            street_number TEXT, street_name TEXT, street_suffix TEXT,
+            city TEXT,
+            street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
+            suite_type TEXT, suite_number TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -82,13 +84,16 @@ def _make_db():
 
 
 def _seed(conn, sid, side, phrase, *, phone=None, contact=None,
-          street_number=None, street_name=None, street_suffix=None):
+          city=None, street_number=None, street_name=None, street_suffix=None,
+          street_direction=None, suite_type=None, suite_number=None):
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
-             (source_id, side, phone, contact_fingerprint,
-              street_number, street_name, street_suffix)
-           VALUES (?,?,?,?,?,?,?)""",
-        (sid, side, phone, contact, street_number, street_name, street_suffix),
+             (source_id, side, phone, contact_fingerprint, city,
+              street_number, street_name, street_suffix, street_direction,
+              suite_type, suite_number)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+        (sid, side, phone, contact, city, street_number, street_name,
+         street_suffix, street_direction, suite_type, suite_number),
     )
     if phrase:
         conn.execute(
@@ -105,11 +110,11 @@ def _run_to_anchors(conn):
 
 def test_three_category_convergence_creates_confirmed_group():
     conn = _make_db()
-    # 8 skyline party-sides converging on phone P1, address (5, douglas, st), contact 'jc'.
+    # 8 skyline party-sides converging on phone P1, address_unit (toronto|5|douglas|st), contact 'jc'.
     for i in range(8):
         _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
               phone='P1', contact='jc',
-              street_number='5', street_name='douglas', street_suffix='st')
+              city='toronto', street_number='5', street_name='douglas', street_suffix='st')
     _run_to_anchors(conn)
 
     build_seeds(conn, verbose=False)
@@ -119,23 +124,23 @@ def test_three_category_convergence_creates_confirmed_group():
     g = dict(groups[0])
     assert g['canonical_stem'] == 'skyline'
     assert g['tier'] == 'confirmed'
-    assert g['n_anchors'] >= 3  # phone + address_root + address_base + contact
+    assert g['n_anchors'] >= 3  # phone + address_unit + contact
 
     anchors = conn.execute(
         'SELECT * FROM auto_group_anchors WHERE auto_group_id=?', (g['auto_group_id'],)
     ).fetchall()
     types = {a['anchor_type'] for a in anchors}
     assert {'phone', 'contact'}.issubset(types)
-    assert 'address_root' in types or 'address_base' in types
+    assert 'address_unit' in types
 
 
 def test_two_category_convergence_creates_probable_group():
     conn = _make_db()
-    # 6 skyline at phone P1 + address (5,douglas,st), no contact.
+    # 6 skyline at phone P1 + address_unit (toronto|5|douglas|st), no contact.
     for i in range(6):
         _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
               phone='P1',
-              street_number='5', street_name='douglas', street_suffix='st')
+              city='toronto', street_number='5', street_name='douglas', street_suffix='st')
     _run_to_anchors(conn)
     build_seeds(conn, verbose=False)
     groups = conn.execute('SELECT * FROM auto_groups').fetchall()
@@ -156,7 +161,7 @@ def test_pure_single_anchor_does_not_seed():
     groups = conn.execute('SELECT * FROM auto_groups').fetchall()
     # 1 strong anchor + 0 corroborating → no seed (need >= 2 corroborating
     # anchors total per the candidate-tier rule).
-    # NOTE: if the address_root anchor is also present (it isn't here),
+    # NOTE: if the address_unit anchor is also present (it isn't here — no city),
     # the test would need to include the corroborating bar.
     assert len(groups) == 0
 
@@ -166,7 +171,7 @@ def test_reject_override_removes_group():
     for i in range(8):
         _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
               phone='P1', contact='jc',
-              street_number='5', street_name='douglas', street_suffix='st')
+              city='toronto', street_number='5', street_name='douglas', street_suffix='st')
     _run_to_anchors(conn)
     build_seeds(conn, verbose=False)
     groups = conn.execute('SELECT * FROM auto_groups').fetchall()
