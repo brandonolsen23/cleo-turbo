@@ -10,8 +10,9 @@ def _seeded_db():
     conn.executescript("""
         CREATE TABLE party_fingerprints (
             source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
-            postal TEXT, sale_date TEXT, street_number TEXT, street_name TEXT,
-            street_suffix TEXT, suite_type TEXT, suite_number TEXT,
+            postal TEXT, sale_date TEXT, city TEXT,
+            street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
+            suite_type TEXT, suite_number TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -116,6 +117,22 @@ def _seeded_db():
             n_distinct_postals INTEGER NOT NULL,
             discovered_at TEXT,
             PRIMARY KEY (street_number, street_name)
+        );
+        CREATE TABLE address_unit_summary (
+            city TEXT NOT NULL,
+            street_number TEXT NOT NULL,
+            street_name TEXT NOT NULL,
+            street_suffix TEXT NOT NULL DEFAULT '',
+            street_direction TEXT NOT NULL DEFAULT '',
+            suite_type TEXT NOT NULL DEFAULT '',
+            suite_number TEXT NOT NULL DEFAULT '',
+            n_party_sides INTEGER NOT NULL,
+            n_distinct_brand_stems INTEGER NOT NULL,
+            dominant_stem TEXT,
+            dominance_share REAL,
+            discovered_at TEXT,
+            PRIMARY KEY (city, street_number, street_name, street_suffix,
+                         street_direction, suite_type, suite_number)
         );
         CREATE TABLE contact_fingerprint_summary (
             contact_fingerprint TEXT PRIMARY KEY,
@@ -469,6 +486,18 @@ def _seeded_db():
             "WHERE source_id = ?",
             (sid, sid),
         )
+
+    # Seed address_unit_summary for 66 wellington (toronto): three units (Plan H1)
+    conn.execute("""
+        INSERT INTO address_unit_summary
+           (city, street_number, street_name, street_suffix, street_direction,
+            suite_type, suite_number, n_party_sides, n_distinct_brand_stems,
+            dominant_stem, dominance_share)
+        VALUES
+           ('toronto', '66', 'wellington', 'street', 'west', 'suite', '4400', 156, 3, 'kingsett', 0.88),
+           ('toronto', '66', 'wellington', 'street', 'west', 'suite', '4100', 11, 2, 'weirfoulds', 0.82),
+           ('toronto', '66', 'wellington', 'street', 'west', 'floor', '30th flr', 3, 0, NULL, 0.0)
+    """)
 
     conn.commit()
     return conn
@@ -1555,3 +1584,31 @@ def test_trail_with_no_primary_group(client):
     # Should still have a thread for the phone anchor since 4166876700 is a registered anchor.
     thread_types = {t['anchor_type'] for t in body['threads']}
     assert 'phone' in thread_types
+
+
+# ── Plan H1 Task 5: /addresses/roots/:key/units ───────────────────────────────
+
+def test_units_at_root_returns_unit_breakdown(client):
+    """For root toronto|66|wellington, return the 3 seeded units."""
+    resp = client.get('/api/explorer/addresses/roots/toronto%7C66%7Cwellington/units')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert len(body['results']) == 3
+    suite_4400 = next((u for u in body['results']
+                       if u['suite_type'] == 'suite' and u['suite_number'] == '4400'), None)
+    assert suite_4400 is not None
+    assert suite_4400['dominant_stem'] == 'kingsett'
+    assert suite_4400['n_party_sides'] == 156
+    assert suite_4400['dominance_share'] == pytest.approx(0.88)
+
+
+def test_units_at_root_sorted_by_n_party_sides(client):
+    resp = client.get('/api/explorer/addresses/roots/toronto%7C66%7Cwellington/units')
+    counts = [u['n_party_sides'] for u in resp.json()['results']]
+    assert counts == sorted(counts, reverse=True)
+
+
+def test_units_at_root_404_on_unknown(client):
+    resp = client.get('/api/explorer/addresses/roots/toronto%7C99%7Cnowhere/units')
+    assert resp.status_code == 200  # endpoint returns empty list, not 404
+    assert resp.json()['results'] == []

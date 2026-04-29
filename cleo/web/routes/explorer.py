@@ -15,6 +15,7 @@ GET /api/explorer/addresses                         — list address bases
 GET /api/explorer/addresses/:key                    — address detail (key = num|name|suffix)
 GET /api/explorer/addresses/roots                   — list address roots (num|name)
 GET /api/explorer/addresses/roots/:key              — address root detail (key = num|name)
+GET /api/explorer/addresses/roots/:key/units        — units within a root with brand-stem dominance
 GET /api/explorer/contacts                          — list contact fingerprints
 GET /api/explorer/contacts/:fingerprint             — contact detail
 GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
@@ -1346,6 +1347,28 @@ def list_address_roots(
         "per_page": per_page,
         "pages": (total + per_page - 1) // per_page,
     }
+
+
+@router.get("/addresses/roots/{key}/units")
+def address_root_units(
+    key: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Units within an address root. Key format: 'city|street_number|street_name'."""
+    parts = key.split('|', 2)
+    if len(parts) != 3:
+        raise HTTPException(status_code=400, detail=f'Invalid root key: {key!r}')
+    city, snum, sname = parts
+
+    rows = [dict(r) for r in db.execute(
+        """SELECT city, street_number, street_name, street_suffix, street_direction,
+                  suite_type, suite_number, n_party_sides, n_distinct_brand_stems,
+                  dominant_stem, dominance_share
+           FROM address_unit_summary
+           WHERE city = ? AND street_number = ? AND street_name = ?
+           ORDER BY n_party_sides DESC, suite_number ASC""",
+        (city, snum, sname),
+    )]
+    return {'results': rows}
 
 
 @router.get("/addresses/roots/{key}")
