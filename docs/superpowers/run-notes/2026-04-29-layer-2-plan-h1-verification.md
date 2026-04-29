@@ -132,6 +132,69 @@ After the H1 rebuild:
 
 7. **No address_root or address_base in anchor_uniqueness or auto_group_anchors.** Clean migration confirmed across both tables.
 
+## Phase 2 Verification (API Routes + Frontend)
+
+**Date:** 2026-04-29
+**Scope:** Confirmed that all auto-group API endpoints and frontend components work correctly after Phase 2 landed (Task 10: explorer.py address_unit routes; Task 11: AutoGroupAnchorsTab address_unit links).
+
+### Query 1 — Anchor type distribution in `auto_group_anchors` (real DB)
+
+| anchor_type | n |
+|---|---|
+| address_unit | 10,597 |
+| contact | 9,166 |
+| phone | 4,538 |
+
+No `address_root` or `address_base` rows present. Migration is clean.
+
+### Query 2 — KingSett (AGRP_00632) address_unit anchor coverage (JOIN verification)
+
+The coverage JOIN (`party_fingerprints` reconstructed key = `anchor_value`) returns non-zero counts, confirming the JOIN logic is correct:
+
+| anchor_value | coverage |
+|---|---|
+| toronto\|40\|king\|street\|west\|\| | 122 |
+| toronto\|66\|wellington\|street\|west\|suite\|4400 | 115 |
+| toronto\|40\|king\|street\|west\|suite\|3700 | 80 |
+| toronto\|66\|wellington\|street\|west\|\| | 53 |
+| toronto\|161\|bay\|street\|\|\|suite\|3140 | 46 |
+| toronto\|40\|king\|street\|west\|floor\|37th flr | 22 |
+| toronto\|66\|wellington\|street\|west\|po_box\|163 | 7 |
+| toronto\|40\|king st w, scotia plaza\|\|\|\|suite\|3700 | 3 |
+| toronto\|66\|wellington\|street\|\|suite\|4400 | 2 |
+| toronto\|66\|wellington\|street\|west\|po_box\|162 | 2 |
+
+All coverages non-zero — the route's coverage SQL is correct.
+
+### Query 3 — KingSett anchor_diversity
+
+**Result: 3** (phone + address + contact). Correct for a Confirmed group. The `CASE WHEN anchor_type = 'address_unit' THEN 'address'` normalization in the list endpoint subquery works as intended.
+
+### Query 4 — RT196095 (TD Bank) address_unit key
+
+RT196095 seller fingerprint:
+- city: toronto, street_number: 66, street_name: wellington, suffix: street, direction: west, suite_type: floor, suite_number: 30th flr
+- Constructed key: `toronto|66|wellington|street|west|floor|30th flr`
+
+Lookup against `auto_group_anchors WHERE anchor_type='address_unit' AND anchor_value='toronto|66|wellington|street|west|floor|30th flr'`: **empty result**. RT196095 is not a Layer 2 anchor for any group. The canonical false-positive is fully resolved.
+
+### Query 5 — Test suite
+
+```
+99 passed in 2.55s
+```
+
+All 99 tests pass, including the new unit-detail and units-at-root tests (tests 94–99).
+
+### Query 6 — Frontend route + TypeScript
+
+- Route registered in `App.tsx` line 174: `<Route path="/explorer/addresses/units/:key" element={<ExplorerAddressUnitDetail />} />`
+- `npx tsc --noEmit`: **clean** (no errors)
+
+### Phase 2 verdict
+
+**DONE.** All 6 checks pass. The API routes and frontend are correctly handling address_unit anchors. No address_root or address_base residue anywhere in the DB, routes, or UI.
+
 ## What's next
 
 - **H2: Timelines + tenures + conflict detection.** Time-aware occupancy windows per address_unit anchor; tenure-based volume scaling to restore confidence for legitimate operators demoted by H1's precision increase.
