@@ -1929,6 +1929,9 @@ export interface AutoGroupSummary {
   confidence: number;
   n_anchors: number;
   n_members: number;
+  // Plan G additions:
+  anchor_diversity?: number;
+  n_distinct_contacts?: number;
 }
 
 export interface AutoGroupListResponse {
@@ -2043,4 +2046,49 @@ export interface AutoGroupPartiesResponse {
   page: number;
   per_page: number;
   pages: number;
+}
+
+// ============================================================
+// Explorer — Auto-Groups Tuning (Plan G)
+// ============================================================
+
+export interface AutoGroupsHistogramBucket {
+  lower: number;
+  upper: number;
+  count: number;
+}
+
+export interface AutoGroupsHistogramResponse {
+  buckets: AutoGroupsHistogramBucket[];
+  tier_confirmed_threshold: number;
+  tier_probable_threshold: number;
+}
+
+export interface AutoGroupsCloseToPromotionResponse {
+  results: AutoGroupSummary[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+  from_confidence: number;
+  to_confidence: number;
+}
+
+export interface AutoGroupsMissedStem {
+  token: string;
+  n_party_sides: number;
+  strongest_phone: string | null;
+  token_sides_at_anchor: number | null;
+  winner_stem: string | null;
+  winner_dominance: number | null;
+  anchor_volume: number | null;
+}
+
+export interface AutoGroupsMissedStemsResponse {
+  results: AutoGroupsMissedStem[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+  min_n_party_sides: number;
 }
