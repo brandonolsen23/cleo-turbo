@@ -16,6 +16,7 @@ GET /api/explorer/addresses/:key                    — address detail (key = nu
 GET /api/explorer/addresses/roots                   — list address roots (num|name)
 GET /api/explorer/addresses/roots/:key              — address root detail (key = num|name)
 GET /api/explorer/addresses/roots/:key/units        — units within a root with brand-stem dominance
+GET /api/explorer/addresses/units/:key              — single unit detail
 GET /api/explorer/contacts                          — list contact fingerprints
 GET /api/explorer/contacts/:fingerprint             — contact detail
 GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
@@ -1369,6 +1370,31 @@ def address_root_units(
         (city, snum, sname),
     )]
     return {'results': rows}
+
+
+@router.get("/addresses/units/{key}")
+def address_unit_detail(
+    key: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Unit detail. Key format: 'city|num|name|suffix|direction|suite_type|suite_number'."""
+    parts = key.split('|', 6)
+    if len(parts) != 7:
+        raise HTTPException(status_code=400, detail=f'Invalid unit key: {key!r}')
+    city, snum, sname, suf, dir_, stype, snumber = parts
+
+    summary = db.execute(
+        """SELECT city, street_number, street_name, street_suffix, street_direction,
+                  suite_type, suite_number, n_party_sides, n_distinct_brand_stems,
+                  dominant_stem, dominance_share
+           FROM address_unit_summary
+           WHERE city = ? AND street_number = ? AND street_name = ?
+             AND street_suffix = ? AND street_direction = ?
+             AND suite_type = ? AND suite_number = ?""",
+        (city, snum, sname, suf, dir_, stype, snumber),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f'Unknown unit: {key!r}')
+    return dict(summary)
 
 
 @router.get("/addresses/roots/{key}")

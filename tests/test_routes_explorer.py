@@ -1612,3 +1612,31 @@ def test_units_at_root_404_on_unknown(client):
     resp = client.get('/api/explorer/addresses/roots/toronto%7C99%7Cnowhere/units')
     assert resp.status_code == 200  # endpoint returns empty list, not 404
     assert resp.json()['results'] == []
+
+
+def test_unit_detail_returns_summary(client):
+    """Unit key format: 'city|num|name|suffix|direction|suite_type|suite_number'."""
+    key = 'toronto|66|wellington|street|west|suite|4400'
+    encoded = '%7C'.join(key.split('|'))
+    resp = client.get(f'/api/explorer/addresses/units/{encoded}')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['city'] == 'toronto'
+    assert body['street_number'] == '66'
+    assert body['street_name'] == 'wellington'
+    assert body['suite_type'] == 'suite'
+    assert body['suite_number'] == '4400'
+    assert body['dominant_stem'] == 'kingsett'
+    assert body['n_party_sides'] == 156
+
+
+def test_unit_detail_404_on_unknown(client):
+    key = 'toronto|99|nowhere|||||'
+    encoded = '%7C'.join(key.split('|'))
+    resp = client.get(f'/api/explorer/addresses/units/{encoded}')
+    assert resp.status_code == 404
+
+
+def test_unit_detail_400_on_malformed_key(client):
+    resp = client.get('/api/explorer/addresses/units/notenoughparts')
+    assert resp.status_code == 400
