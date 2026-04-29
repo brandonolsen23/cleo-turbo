@@ -25,6 +25,7 @@ GET /api/explorer/auto-groups/:id/parties  — paginated, filterable, sortable p
 GET /api/explorer/auto-groups/tuning/histogram  — confidence-bucket counts for tuning UI
 GET /api/explorer/auto-groups/tuning/close-to-promotion  — groups within a confidence window
 GET /api/explorer/auto-groups/tuning/missed-stems  — distinctive/PA 1-grams that didn't promote, with dominance-contest data
+GET /api/explorer/auto-groups/parties/:source_id/:side/trail  — single-party evidence trail
 """
 
 from __future__ import annotations
@@ -2245,6 +2246,136 @@ def auto_groups_tuning_missed_stems(
         'per_page': per_page,
         'pages': (total + per_page - 1) // per_page,
         'min_n_party_sides': min_n_party_sides,
+    }
+
+
+# ─────────────────────────────────────────────────────────────
+# Single-party evidence trail (Plan F)
+# ─────────────────────────────────────────────────────────────
+
+@router.get('/auto-groups/parties/{source_id}/{side}/trail')
+def auto_group_party_trail(
+    source_id: str, side: str,
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """For a single party (source_id + side), return:
+      - party: the party's data (phone, contact, address, brand_phrase, sale info)
+      - threads: one entry per anchor on the party, with the groups that anchor
+        is registered to (may be 0, 1, or many)
+      - primary_group: the auto_group this party is recorded as a member of (or null)
+      - all_groups: union of distinct groups across all threads (for rendering)
+
+    Returns 400 on invalid side, 404 on unknown party.
+    """
+    if side not in ('buyer', 'seller'):
+        raise HTTPException(status_code=400, detail=f'Invalid side: {side!r}')
+
+    # Fetch the party.
+    party = db.execute(
+        """SELECT pf.source_id, pf.side, pf.phone, pf.contact_fingerprint AS contact,
+                  pf.street_number, pf.street_name, pf.street_suffix,
+                  pf.suite_type, pf.suite_number, pf.postal, pf.sale_date,
+                  t.sale_price,
+                  (SELECT pa.atom_value FROM party_atoms pa
+                    WHERE pa.source_id = pf.source_id AND pa.side = pf.side
+                      AND pa.atom_type = 'brand_phrase'
+                    ORDER BY pa.id ASC LIMIT 1) AS brand_phrase
+           FROM party_fingerprints pf
+           LEFT JOIN transactions t ON t.source_id = pf.source_id
+           WHERE pf.source_id = ? AND pf.side = ?""",
+        (source_id, side),
+    ).fetchone()
+    if party is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f'Unknown party: source_id={source_id!r}, side={side!r}',
+        )
+
+    # Build the list of (anchor_type, anchor_value) pairs that exist on this party.
+    p = dict(party)
+    party_anchors: list[tuple[str, str]] = []
+    if p['phone']:
+        party_anchors.append(('phone', p['phone']))
+    if p['contact']:
+        party_anchors.append(('contact', p['contact']))
+    if p['street_number'] and p['street_name']:
+        party_anchors.append(('address_root', f"{p['street_number']}|{p['street_name']}"))
+        party_anchors.append((
+            'address_base',
+            f"{p['street_number']}|{p['street_name']}|{p['street_suffix'] or ''}",
+        ))
+
+    # For each anchor, look up groups registered to it.
+    threads = []
+    for anchor_type, anchor_value in party_anchors:
+        rows = db.execute(
+            """SELECT aga.auto_group_id, ag.canonical_stem, ag.tier, ag.display_name,
+                      aga.score AS score_in_group
+               FROM auto_group_anchors aga
+               JOIN auto_groups ag ON ag.auto_group_id = aga.auto_group_id
+               WHERE aga.anchor_type = ? AND aga.anchor_value = ?
+               ORDER BY aga.score DESC""",
+            (anchor_type, anchor_value),
+        ).fetchall()
+        threads.append({
+            'anchor_type': anchor_type,
+            'anchor_value': anchor_value,
+            'groups': [dict(r) for r in rows],
+        })
+
+    # Primary group: this party's auto_group_members entry (if any).
+    primary_row = db.execute(
+        """SELECT agm.auto_group_id, agm.match_score, ag.canonical_stem,
+                  ag.display_name, ag.tier
+           FROM auto_group_members agm
+           JOIN auto_groups ag ON ag.auto_group_id = agm.auto_group_id
+           WHERE agm.source_id = ? AND agm.side = ? AND agm.member_type = 'party_side'""",
+        (source_id, side),
+    ).fetchone()
+    primary_group = dict(primary_row) if primary_row else None
+    # Add a 'stem' field for frontend convenience (mirrors canonical_stem).
+    if primary_group:
+        primary_group['stem'] = primary_group['canonical_stem']
+
+    # All groups: union of distinct groups across all threads + primary group.
+    seen: dict[str, dict] = {}
+    if primary_group:
+        seen[primary_group['auto_group_id']] = {
+            'auto_group_id': primary_group['auto_group_id'],
+            'canonical_stem': primary_group['canonical_stem'],
+            'display_name': primary_group['display_name'],
+            'tier': primary_group['tier'],
+        }
+    for t in threads:
+        for g in t['groups']:
+            if g['auto_group_id'] not in seen:
+                seen[g['auto_group_id']] = {
+                    'auto_group_id': g['auto_group_id'],
+                    'canonical_stem': g['canonical_stem'],
+                    'display_name': g['display_name'],
+                    'tier': g['tier'],
+                }
+    all_groups = list(seen.values())
+
+    return {
+        'party': {
+            'source_id': p['source_id'],
+            'side': p['side'],
+            'brand_phrase': p['brand_phrase'],
+            'sale_date': p['sale_date'],
+            'sale_price': p['sale_price'],
+            'phone': p['phone'],
+            'contact': p['contact'],
+            'street_number': p['street_number'],
+            'street_name': p['street_name'],
+            'street_suffix': p['street_suffix'],
+            'suite_type': p['suite_type'],
+            'suite_number': p['suite_number'],
+            'postal': p['postal'],
+        },
+        'threads': threads,
+        'primary_group': primary_group,
+        'all_groups': all_groups,
     }
 
 

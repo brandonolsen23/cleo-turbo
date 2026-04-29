@@ -326,6 +326,17 @@ def _seeded_db():
                                  n_anchors, n_members, discovered_at)
         VALUES ('AGRP_00003', 'almostkingsett', 'almostkingsett group', 'probable', 0.72, 2, 4, '2026-04-27')
     """)
+    # AGRP_00004: a confirmed group whose phone anchor overlaps with RT1's phone (4166876700).
+    # This is a deliberately constructed conflict — RT1 is registered as a member of AGRP_00001
+    # (kingsett), but its phone anchor would also point at AGRP_00004 (a different stem).
+    conn.execute("""
+        INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, tier, confidence,
+                                 n_anchors, n_members, discovered_at)
+        VALUES ('AGRP_00004', 'rivalstem', 'rivalstem group', 'confirmed', 0.85, 1, 0, '2026-04-27')
+    """)
+    conn.execute(
+        "INSERT INTO auto_group_anchors VALUES ('AGRP_00004', 'phone', '4166876700', 1.5)"
+    )
     for at, av in [('phone', '4166876700'), ('address_root', '40|king'), ('contact', 'rob kumer')]:
         conn.execute(
             'INSERT INTO auto_group_anchors VALUES (?, ?, ?, 2.0)',
@@ -1462,3 +1473,85 @@ def test_list_auto_groups_close_to_promotion_excludes_outside_window(client):
     # AGRP_00001 is confidence 0.85 → confirmed but NOT in [0.70, 0.75) window.
     sids = {g['auto_group_id'] for g in body['results']}
     assert 'AGRP_00001' not in sids
+
+
+# ── Trail endpoint (Plan F Task 1) ────────────────────────────────
+
+def test_trail_returns_party_data(client):
+    """RT1 (buyer) is a member of AGRP_00001 (kingsett)."""
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['party']['source_id'] == 'RT1'
+    assert body['party']['side'] == 'buyer'
+    # Party fields populated from the fixture.
+    assert body['party']['phone'] == '4166876700'
+    assert body['party']['contact'] == 'rob kumer'
+    # brand_phrase should be one of the kingsett-mapped phrases.
+    assert 'kingsett' in (body['party']['brand_phrase'] or '').lower()
+
+
+def test_trail_threads_one_per_anchor(client):
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    body = resp.json()
+    # RT1 has phone + contact + address_root + address_base — 4 anchor identities.
+    # The trail should produce one thread per non-empty anchor on the party.
+    thread_anchors = {(t['anchor_type'], t['anchor_value']) for t in body['threads']}
+    assert ('phone', '4166876700') in thread_anchors
+    assert ('contact', 'rob kumer') in thread_anchors
+    # address_root and address_base both fire because both anchors exist on the party.
+    assert ('address_root', '66|wellington') in thread_anchors
+
+
+def test_trail_thread_groups_for_phone_lists_both_groups(client):
+    """The phone 4166876700 is an anchor of BOTH AGRP_00001 (kingsett) and AGRP_00004 (rivalstem).
+    The phone thread should list both groups — that's the conflict signal."""
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    body = resp.json()
+    phone_thread = next(t for t in body['threads'] if t['anchor_type'] == 'phone')
+    group_ids = {g['auto_group_id'] for g in phone_thread['groups']}
+    assert 'AGRP_00001' in group_ids
+    assert 'AGRP_00004' in group_ids
+
+
+def test_trail_returns_primary_group(client):
+    """RT1 (buyer) is a member of AGRP_00001 — that's the primary."""
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    body = resp.json()
+    assert body['primary_group'] is not None
+    assert body['primary_group']['auto_group_id'] == 'AGRP_00001'
+    assert body['primary_group']['stem'] == 'kingsett'
+
+
+def test_trail_returns_all_groups_for_conflict_visualization(client):
+    """all_groups should include every group reachable via any thread — for rendering right-side nodes."""
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    body = resp.json()
+    all_ids = {g['auto_group_id'] for g in body['all_groups']}
+    assert 'AGRP_00001' in all_ids
+    assert 'AGRP_00004' in all_ids
+
+
+def test_trail_404_on_unknown_party(client):
+    resp = client.get('/api/explorer/auto-groups/parties/RT-NOPE/buyer/trail')
+    assert resp.status_code == 404
+
+
+def test_trail_404_on_invalid_side(client):
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/middleman/trail')
+    assert resp.status_code == 400
+
+
+def test_trail_with_no_primary_group(client):
+    """A party that exists in party_fingerprints but isn't a member of any auto_group.
+    Should return 200 with primary_group=None and threads still populated for any
+    anchors that match registered groups."""
+    # The fixture's RT-COSTEM party (added in Plan D Task 1) is at phone 4166876700
+    # but is NOT in auto_group_members.
+    resp = client.get('/api/explorer/auto-groups/parties/RT-COSTEM/buyer/trail')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['primary_group'] is None
+    # Should still have a thread for the phone anchor since 4166876700 is a registered anchor.
+    thread_types = {t['anchor_type'] for t in body['threads']}
+    assert 'phone' in thread_types
