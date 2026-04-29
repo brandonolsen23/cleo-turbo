@@ -10,8 +10,7 @@ import type {
 
 function silosLinkFor(a: AutoGroupAnchorWithCoverage): string | null {
   if (a.anchor_type === 'phone') return `/explorer/phones/${encodeURIComponent(a.anchor_value)}`;
-  if (a.anchor_type === 'address_root') return `/explorer/addresses/roots/${encodeURIComponent(a.anchor_value)}`;
-  if (a.anchor_type === 'address_base') return `/explorer/addresses/bases/${encodeURIComponent(a.anchor_value)}`;
+  if (a.anchor_type === 'address_unit') return `/explorer/addresses/units/${encodeURIComponent(a.anchor_value)}`;
   if (a.anchor_type === 'contact') return `/explorer/contacts/${encodeURIComponent(a.anchor_value)}`;
   return null;
 }
