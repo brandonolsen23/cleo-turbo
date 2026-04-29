@@ -159,3 +159,44 @@ def test_build_address_unit_summary_idempotent():
     build_address_unit_summary(conn, verbose=False)
     cnt = conn.execute('SELECT COUNT(*) FROM address_unit_summary').fetchone()[0]
     assert cnt == 1
+
+
+def test_build_address_unit_summary_per_side_dominant_stem_tiebreak():
+    """A side with two phrases mapping to different stems uses count argmax,
+    breaking ties alphabetically."""
+    conn = _make_db()
+    _seed_party(conn, 'RT1', 'buyer', city='toronto', street_number='66',
+                street_name='wellington', street_suffix='street',
+                street_direction='west', suite_type='suite', suite_number='4400')
+    # Side has two phrases, one for each stem. With count=1 each, alphabetical wins.
+    _seed_phrase(conn, 'RT1', 'buyer', 'kingsett capital', 'kingsett')
+    _seed_phrase(conn, 'RT1', 'buyer', 'zulu corp', 'zulu')
+
+    build_address_unit_summary(conn, verbose=False)
+    row = conn.execute(
+        "SELECT dominant_stem FROM address_unit_summary WHERE suite_number='4400'"
+    ).fetchone()
+    # Side's dominant stem ties between 'kingsett' and 'zulu' at count=1; alphabetical → 'kingsett'
+    assert row['dominant_stem'] == 'kingsett'
+
+
+def test_build_address_unit_summary_unit_dominance_alphabetical_tiebreak():
+    """Two parties at same unit each map to a different stem with count=1.
+    Unit dominant stem ties; alphabetical wins."""
+    conn = _make_db()
+    _seed_party(conn, 'RT1', 'buyer', city='toronto', street_number='66',
+                street_name='wellington', street_suffix='street',
+                street_direction='west', suite_type='suite', suite_number='4400')
+    _seed_party(conn, 'RT2', 'buyer', city='toronto', street_number='66',
+                street_name='wellington', street_suffix='street',
+                street_direction='west', suite_type='suite', suite_number='4400')
+    _seed_phrase(conn, 'RT1', 'buyer', 'zulu corp', 'zulu')
+    _seed_phrase(conn, 'RT2', 'buyer', 'alpha corp', 'alpha')
+
+    build_address_unit_summary(conn, verbose=False)
+    row = conn.execute(
+        "SELECT dominant_stem, dominance_share FROM address_unit_summary WHERE suite_number='4400'"
+    ).fetchone()
+    # Tied at count=1 each; alphabetical → 'alpha'
+    assert row['dominant_stem'] == 'alpha'
+    assert row['dominance_share'] == pytest.approx(0.5)

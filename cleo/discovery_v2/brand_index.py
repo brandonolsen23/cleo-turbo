@@ -494,8 +494,9 @@ def build_address_unit_summary(conn, *, verbose: bool = True):
     """):
         key = (r['source_id'], r['side'])
         prev = side_stems.get(key)
-        if prev is None or r['n'] > prev[1]:
-            side_stems[key] = (r['stem'], r['n'])
+        new_value = (r['stem'], r['n'])
+        if prev is None or (r['n'] > prev[1]) or (r['n'] == prev[1] and r['stem'] < prev[0]):
+            side_stems[key] = new_value
 
     # Step 2: aggregate parties by unit-key, computing stem counts.
     by_unit: dict = {}
@@ -527,7 +528,8 @@ def build_address_unit_summary(conn, *, verbose: bool = True):
         stem_counts = bucket['stem_counts']
         n_distinct = len(stem_counts)
         if stem_counts:
-            dom_stem, dom_n = max(stem_counts.items(), key=lambda kv: kv[1])
+            # Sort by (-count, stem) so highest count first, ties broken alphabetically.
+            dom_stem, dom_n = sorted(stem_counts.items(), key=lambda kv: (-kv[1], kv[0]))[0]
             dom_share = dom_n / n_parties
         else:
             dom_stem, dom_share = None, 0.0
@@ -546,7 +548,7 @@ def build_address_unit_summary(conn, *, verbose: bool = True):
     )
     conn.commit()
     if verbose:
-        print(f'  Layer 1 silo (address units): {len(rows_to_insert):,} distinct units', flush=True)
+        print(f'Layer 1 Silo E (address units): {len(rows_to_insert):,} distinct units', flush=True)
     return {'n_units': len(rows_to_insert)}
 
 
