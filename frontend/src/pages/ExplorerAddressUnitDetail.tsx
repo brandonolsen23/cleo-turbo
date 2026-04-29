@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Heading, Text, Badge } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { AddressUnitSummary } from "../types";
+import { UNIQUELY_TENANTED_DOMINANCE_THRESHOLD } from "../lib/explorerConstants";
 import ExplorerTabs from "../components/explorer/ExplorerTabs";
 import AddressTabs from "../components/explorer/AddressTabs";
 
@@ -63,7 +64,7 @@ export default function ExplorerAddressUnitDetail() {
                     : '—'} />
       </div>
 
-      {data.dominant_stem && data.dominance_share != null && data.dominance_share >= 0.6 && (
+      {data.dominant_stem && data.dominance_share != null && data.dominance_share >= UNIQUELY_TENANTED_DOMINANCE_THRESHOLD && (
         <div className="mt-4">
           <Badge color="jade">
             uniquely tenanted → {data.dominant_stem}
