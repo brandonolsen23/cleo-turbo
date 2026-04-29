@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Heading, Text, Button, TextField, Badge, SegmentedControl } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { AutoGroupListResponse, AutoGroupSummary } from "../types";
@@ -20,23 +20,31 @@ export default function ExplorerAutoGroups() {
   const [tier, setTier] = useState<Tier>('confirmed');
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
+  const [closeToPromotion, setCloseToPromotion] = useState(false);
   const perPage = 100;
 
   useEffect(() => {
-    fetchApi<AutoGroupListResponse>("/explorer/auto-groups", {
+    const params: Record<string, string | number | boolean> = {
       tier, q, page, per_page: perPage,
-    }).then(setData).catch((e) => console.error(e));
-  }, [tier, q, page]);
+    };
+    if (closeToPromotion) params.close_to_promotion = "true";
+    fetchApi<AutoGroupListResponse>("/explorer/auto-groups", params)
+      .then(setData).catch((e) => console.error(e));
+  }, [tier, q, page, closeToPromotion]);
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
       <ExplorerTabs />
-      <div className="flex items-baseline gap-4 mb-2 flex-wrap">
+      <div className="flex items-baseline gap-3 mb-2 flex-wrap">
         <Heading size="6">Auto-Groups</Heading>
         <Text size="2" style={{ color: "var(--gray-9)" }}>
           Operator portfolios discovered by triangulating Layer 1 anchors.
           Read-only — actions land in Plan C.
         </Text>
+        <Link to="/explorer/auto-groups/tuning" className="text-[13px] no-underline ml-auto"
+              style={{ color: "var(--accent-11)" }}>
+          Tuning →
+        </Link>
       </div>
       <div className="flex items-center gap-4 my-5 flex-wrap">
         <SegmentedControl.Root value={tier}
@@ -48,6 +56,11 @@ export default function ExplorerAutoGroups() {
         <TextField.Root size="2" placeholder="Filter by stem or display name…"
             value={q} onChange={(e) => { setPage(1); setQ(e.target.value); }}
             style={{ width: 280 }} />
+        <label className="flex items-center gap-2 text-[13px]">
+          <input type="checkbox" checked={closeToPromotion}
+                 onChange={(e) => { setPage(1); setCloseToPromotion(e.target.checked); }} />
+          <Text size="2">Close to promotion (0.70–0.75)</Text>
+        </label>
         {data && (
           <Text size="2" style={{ color: "var(--gray-9)" }}>
             {data.total.toLocaleString()} groups
@@ -65,6 +78,8 @@ export default function ExplorerAutoGroups() {
               <th className="text-right p-2 font-medium">confidence</th>
               <th className="text-right p-2 font-medium">anchors</th>
               <th className="text-right p-2 font-medium">members</th>
+              <th className="text-right p-2 font-medium">distinct contacts</th>
+              <th className="text-right p-2 font-medium">anchor diversity</th>
             </tr>
           </thead>
           <tbody>
@@ -78,6 +93,8 @@ export default function ExplorerAutoGroups() {
                 <td className="p-2 text-right">{g.confidence.toFixed(2)}</td>
                 <td className="p-2 text-right">{g.n_anchors.toLocaleString()}</td>
                 <td className="p-2 text-right">{g.n_members.toLocaleString()}</td>
+                <td className="p-2 text-right">{g.n_distinct_contacts != null ? g.n_distinct_contacts.toLocaleString() : "—"}</td>
+                <td className="p-2 text-right">{g.anchor_diversity != null ? g.anchor_diversity : "—"}</td>
               </tr>
             ))}
           </tbody>
