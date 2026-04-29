@@ -12,7 +12,9 @@ def _make_db():
     conn.executescript("""
         CREATE TABLE party_fingerprints (
             source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
-            street_number TEXT, street_name TEXT, street_suffix TEXT,
+            city TEXT,
+            street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
+            suite_type TEXT, suite_number TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -57,13 +59,16 @@ def _make_db():
 
 
 def _seed(conn, source_id, side, phrase, *, phone=None, contact=None,
-          street_number=None, street_name=None, street_suffix=None):
+          city=None, street_number=None, street_name=None, street_suffix=None,
+          street_direction=None, suite_type=None, suite_number=None):
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
-             (source_id, side, phone, contact_fingerprint,
-              street_number, street_name, street_suffix)
-           VALUES (?,?,?,?,?,?,?)""",
-        (source_id, side, phone, contact, street_number, street_name, street_suffix),
+             (source_id, side, phone, contact_fingerprint, city,
+              street_number, street_name, street_suffix, street_direction,
+              suite_type, suite_number)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+        (source_id, side, phone, contact, city, street_number, street_name,
+         street_suffix, street_direction, suite_type, suite_number),
     )
     if phrase:
         conn.execute(
@@ -127,3 +132,41 @@ def test_anchor_with_no_mapped_phrases_has_zero_dominance():
     assert row['dominant_stem'] is None
     assert row['dominance_share'] == 0.0
     assert row['score'] == 0.0
+
+
+def test_address_unit_anchor_scores_with_dominant_stem():
+    """6 parties at toronto|66|wellington|street|west|suite|4400, all skyline.
+    address_unit anchor score should reflect dominance and volume."""
+    conn = _make_db()
+    for i in range(6):
+        _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
+              city='toronto', street_number='66', street_name='wellington',
+              street_suffix='street', street_direction='west',
+              suite_type='suite', suite_number='4400')
+    build_stems(conn, verbose=False)
+    build_anchor_scores(conn, verbose=False)
+    row = conn.execute(
+        """SELECT * FROM anchor_uniqueness
+           WHERE anchor_type='address_unit' AND anchor_value=?""",
+        ('toronto|66|wellington|street|west|suite|4400',),
+    ).fetchone()
+    assert row is not None
+    assert row['dominant_stem'] == 'skyline'
+    assert row['volume'] == 6
+    assert row['dominance_share'] == pytest.approx(1.0)
+
+
+def test_address_root_and_base_no_longer_in_anchor_uniqueness():
+    """After Plan H1, anchor_uniqueness should not contain address_root or address_base rows."""
+    conn = _make_db()
+    for i in range(6):
+        _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
+              city='toronto', street_number='66', street_name='wellington',
+              street_suffix='street', street_direction='west',
+              suite_type='suite', suite_number='4400')
+    build_stems(conn, verbose=False)
+    build_anchor_scores(conn, verbose=False)
+    types = {r['anchor_type'] for r in conn.execute('SELECT DISTINCT anchor_type FROM anchor_uniqueness')}
+    assert 'address_unit' in types
+    assert 'address_root' not in types
+    assert 'address_base' not in types

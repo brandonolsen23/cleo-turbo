@@ -1,16 +1,16 @@
 """Stage A2: Anchor uniqueness scoring.
 
-For each anchor (phone, address_root, address_base, contact), computes the
-dominant brand_stem and a score = dominance_share * log(volume + 1).
+For each anchor (phone, address_unit, contact), computes the dominant
+brand_stem and a score = dominance_share * log(volume + 1).
 """
 from __future__ import annotations
 import math
 import sqlite3
 
 
-# Note: address_base is intentionally a superset of address_root — it adds
-# suffix specificity. Sides with NULL/empty suffix appear in both anchor
-# types with near-identical scores; Stage A3 will pick whichever wins.
+# Note: address_unit is the only address anchor type Layer 2 tracks. Layer 1
+# silos (address_root_summary, address_base_summary, address_unit_summary)
+# remain available for browsing but are not Layer 2 anchors.
 _ANCHOR_QUERIES = {
     # anchor_type → SQL that yields (anchor_value, source_id, side) for each
     # party-side, with anchor_value being the canonical key for that type.
@@ -19,16 +19,19 @@ _ANCHOR_QUERIES = {
         FROM party_fingerprints
         WHERE phone IS NOT NULL AND phone != ''
     """,
-    'address_root': """
-        SELECT (street_number || '|' || street_name) AS anchor_value, source_id, side
+    'address_unit': """
+        SELECT (
+            COALESCE(city,'') || '|' ||
+            COALESCE(street_number,'') || '|' ||
+            COALESCE(street_name,'') || '|' ||
+            COALESCE(street_suffix,'') || '|' ||
+            COALESCE(street_direction,'') || '|' ||
+            COALESCE(suite_type,'') || '|' ||
+            COALESCE(suite_number,'')
+        ) AS anchor_value, source_id, side
         FROM party_fingerprints
-        WHERE street_number IS NOT NULL AND street_number != ''
-          AND street_name IS NOT NULL AND street_name != ''
-    """,
-    'address_base': """
-        SELECT (street_number || '|' || street_name || '|' || COALESCE(street_suffix,'')) AS anchor_value, source_id, side
-        FROM party_fingerprints
-        WHERE street_number IS NOT NULL AND street_number != ''
+        WHERE city IS NOT NULL AND city != ''
+          AND street_number IS NOT NULL AND street_number != ''
           AND street_name IS NOT NULL AND street_name != ''
     """,
     'contact': """
@@ -40,7 +43,7 @@ _ANCHOR_QUERIES = {
 
 
 def build_anchor_scores(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
-    """Populate anchor_uniqueness for all four anchor types. Idempotent."""
+    """Populate anchor_uniqueness for all three anchor types. Idempotent."""
     conn.execute('DELETE FROM anchor_uniqueness')
 
     # Per-side dominant stem lookup: each side has potentially multiple
@@ -55,7 +58,7 @@ def build_anchor_scores(conn: sqlite3.Connection, *, verbose: bool = True) -> di
     """):
         key = (r['source_id'], r['side'])
         prev = side_stems.get(key)
-        if prev is None or r['n'] > prev[1]:
+        if prev is None or (r['n'] > prev[1]) or (r['n'] == prev[1] and r['stem'] < prev[0]):
             side_stems[key] = (r['stem'], r['n'])
 
     rows_to_insert = []
@@ -78,7 +81,7 @@ def build_anchor_scores(conn: sqlite3.Connection, *, verbose: bool = True) -> di
                     stem = stem_tup[0]
                     stem_counts[stem] = stem_counts.get(stem, 0) + 1
             if stem_counts:
-                dominant_stem, dom_n = max(stem_counts.items(), key=lambda x: x[1])
+                dominant_stem, dom_n = sorted(stem_counts.items(), key=lambda kv: (-kv[1], kv[0]))[0]
                 dominance_share = dom_n / volume
             else:
                 dominant_stem, dominance_share = None, 0.0
