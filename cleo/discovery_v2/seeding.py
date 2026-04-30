@@ -181,3 +181,71 @@ def build_seeds(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             f'{len(tenure_rows):,} tenures.', flush=True
         )
     return {'n_groups': len(seeded), 'n_seed_tenures': len(tenure_rows)}
+
+
+def build_contact_tenures(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
+    """Build per-(contact, group) tenures from auto_group_members.
+
+    Walks each contact's timeline restricted to parties of one group and runs
+    the H2 tenure detector to emit windows. Idempotent — clears prior rows.
+
+    Must be called AFTER Stage A4 (build_expansion), since auto_group_members
+    is the source of (party → group) mappings used here.
+    """
+    from cleo.discovery_v2.timelines import build_anchor_timeline
+    from cleo.discovery_v2.tenures import detect_tenures
+    from datetime import datetime, timezone
+
+    today = datetime.now(timezone.utc).date().isoformat()
+
+    conn.execute('DELETE FROM auto_contact_tenures')
+
+    # Find every contact that appears on at least one party_side member of any group.
+    contact_rows = conn.execute(
+        """SELECT DISTINCT pf.contact_fingerprint
+           FROM auto_group_members agm
+           JOIN party_fingerprints pf
+             ON pf.source_id = agm.source_id AND pf.side = agm.side
+           WHERE agm.member_type = 'party_side'
+             AND pf.contact_fingerprint IS NOT NULL
+             AND pf.contact_fingerprint != ''"""
+    ).fetchall()
+
+    rows: list[tuple] = []
+    for cr in contact_rows:
+        cf = cr['contact_fingerprint']
+        timeline = build_anchor_timeline(conn, 'contact', cf)
+        if not timeline:
+            continue
+
+        # Group events by which group their party belongs to (via auto_group_members).
+        events_by_group: dict[str, list[dict]] = {}
+        for ev in timeline:
+            mem = conn.execute(
+                "SELECT auto_group_id FROM auto_group_members "
+                "WHERE source_id = ? AND side = ? AND member_type = 'party_side'",
+                (ev['source_id'], ev['side']),
+            ).fetchone()
+            if mem is None:
+                continue
+            events_by_group.setdefault(mem['auto_group_id'], []).append(ev)
+
+        for gid, events in events_by_group.items():
+            tenures = detect_tenures(events, now=today)
+            for t in tenures:
+                rows.append((
+                    cf, gid, t['start_date'], t['end_date'], t['n_party_sides'],
+                ))
+
+    if rows:
+        conn.executemany(
+            """INSERT INTO auto_contact_tenures
+                (contact_fingerprint, auto_group_id,
+                 start_date, end_date, n_party_sides_in_window)
+               VALUES (?,?,?,?,?)""",
+            rows,
+        )
+    conn.commit()
+    if verbose:
+        print(f'  Contact tenures: {len(rows):,} rows.', flush=True)
+    return {'n_contact_tenures': len(rows)}

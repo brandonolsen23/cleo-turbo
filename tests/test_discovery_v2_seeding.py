@@ -275,3 +275,112 @@ def test_seeding_creates_one_tenure_row_per_pending_tenure():
     assert len(rows) == 2
     stems = {r['canonical_stem'] for r in rows}
     assert stems == {'dh', 'midland'}
+
+
+# ── Contact tenure tests (Task 6) ──────────────────────────────────────────
+
+from cleo.discovery_v2.expansion import build_expansion
+from cleo.discovery_v2.seeding import build_contact_tenures
+
+
+def _run_full_pipeline_to_members(conn):
+    """A1 → A2 → A3 → A4: produces auto_group_members so contact tenures can build."""
+    build_stems(conn, verbose=False)
+    build_anchor_scores(conn, verbose=False)
+    build_seeds(conn, verbose=False)
+    build_expansion(conn, verbose=False)
+
+
+def _make_db_with_auto_group_members():
+    conn = _make_db()
+    conn.executescript("""
+        CREATE TABLE auto_group_members (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            auto_group_id TEXT NOT NULL,
+            member_type TEXT NOT NULL,
+            source_id TEXT, side TEXT, corp_name TEXT,
+            match_score REAL NOT NULL
+        );
+        CREATE TABLE auto_contact_tenures (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            contact_fingerprint TEXT NOT NULL,
+            auto_group_id TEXT NOT NULL,
+            start_date TEXT NOT NULL,
+            end_date TEXT,
+            n_party_sides_in_window INTEGER NOT NULL,
+            discovered_at TEXT
+        );
+    """)
+    return conn
+
+
+def test_contact_tenures_built_from_group_members():
+    """A contact appearing on parties of a single group produces one tenure
+    spanning the contact's first to last event."""
+    conn = _make_db_with_auto_group_members()
+    # 8 skyline party-sides converging on phone P1, contact 'jc'.
+    for i in range(8):
+        _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date=f'2024-0{(i % 9) + 1}-01')
+    _run_full_pipeline_to_members(conn)
+
+    build_contact_tenures(conn, verbose=False)
+
+    rows = conn.execute(
+        "SELECT auto_group_id, start_date, end_date, n_party_sides_in_window "
+        "FROM auto_contact_tenures WHERE contact_fingerprint='jc'"
+    ).fetchall()
+    assert len(rows) == 1
+    r = rows[0]
+    assert r['n_party_sides_in_window'] == 8
+    assert r['start_date'] == '2024-01-01'
+
+
+def test_contact_tenures_split_into_two_windows_with_long_gap():
+    """A contact at the same group, 5 events 2018, 5 events 2024 (>730d gap)
+    → 2 contact tenure rows."""
+    conn = _make_db_with_auto_group_members()
+    # Need promotion events
+    for i in range(5):
+        _seed(conn, f'EARLY{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date=f'2018-0{i+1}-01')
+    for i in range(5):
+        _seed(conn, f'LATE{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date=f'2024-0{i+1}-01')
+    _run_full_pipeline_to_members(conn)
+
+    build_contact_tenures(conn, verbose=False)
+
+    rows = conn.execute(
+        "SELECT start_date, end_date, n_party_sides_in_window "
+        "FROM auto_contact_tenures WHERE contact_fingerprint='jc' "
+        "ORDER BY start_date"
+    ).fetchall()
+    assert len(rows) == 2
+    assert rows[0]['start_date'] == '2018-01-01'
+    assert rows[0]['end_date'] == '2018-05-01'
+    assert rows[1]['start_date'] == '2024-01-01'
+
+
+def test_contact_tenures_idempotent():
+    conn = _make_db_with_auto_group_members()
+    for i in range(8):
+        _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date='2024-06-01')
+    _run_full_pipeline_to_members(conn)
+    build_contact_tenures(conn, verbose=False)
+    build_contact_tenures(conn, verbose=False)
+    n = conn.execute("SELECT COUNT(*) FROM auto_contact_tenures").fetchone()[0]
+    assert n == 1
