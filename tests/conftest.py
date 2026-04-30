@@ -96,6 +96,15 @@ CREATE TABLE auto_conflict_flags (
     description TEXT NOT NULL,
     discovered_at TEXT
 );
+CREATE TABLE auto_contact_tenures (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    contact_fingerprint TEXT NOT NULL,
+    auto_group_id TEXT NOT NULL,
+    start_date TEXT NOT NULL,
+    end_date TEXT,
+    n_party_sides_in_window INTEGER NOT NULL,
+    discovered_at TEXT
+);
 """
 
 
