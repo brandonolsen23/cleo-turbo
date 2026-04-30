@@ -88,74 +88,101 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
         if c is not None:
             phrase_to_candidate[ph] = c
 
-    # Step 2: for each candidate stem, find dominant anchor + dominance_share
-    # Score stems against both phone and address_root anchors. The picker uses
-    # dominance × log(volume + 1) — same formula as Stage A2's anchor score —
-    # which correctly prefers a 5-volume @ 0.9 dominance over a 100-volume @ 0.5.
+    # Step 2: for each candidate stem, find dominant anchor + dominance_share.
+    # Replaced per-stem loop (N×2 heavy SQL joins) with 4 bulk queries + pure-Python
+    # aggregation. Semantics: each party-side is attributed to its DOMINANT stem
+    # (most-frequent candidate stem across the side's phrases; alphabetical tiebreak),
+    # which is consistent with Stage A2's attribution rule.
     candidate_stems = {c[0]: c[1] for c in phrase_to_candidate.values()}
 
-    promoted: list[tuple] = []  # rows for brand_stem
+    # --- Pre-computation pass A: side → dominant stem ---
+    # Pull every (source_id, side, atom_value) row for brand_phrase atoms in one query.
+    side_phrases: dict[tuple[str, str], list[str]] = {}
+    for r in conn.execute(
+        "SELECT source_id, side, atom_value FROM party_atoms WHERE atom_type='brand_phrase'"
+    ):
+        sk = (r['source_id'], r['side'])
+        side_phrases.setdefault(sk, []).append(r['atom_value'])
+
+    # For each side, count candidate stems and pick the dominant one.
+    side_to_stem: dict[tuple[str, str], str] = {}
+    for sk, phrases_list in side_phrases.items():
+        counts: dict[str, int] = {}
+        for ph in phrases_list:
+            c = phrase_to_candidate.get(ph)
+            if c is not None:
+                counts[c[0]] = counts.get(c[0], 0) + 1
+        if counts:
+            # Alphabetical tiebreak for determinism (matches Stage A2)
+            side_to_stem[sk] = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))[0][0]
+
+    # --- Pre-computation pass B: side → anchors ---
+    # One query for all phone + address_root values per (source_id, side).
+    side_anchors: dict[tuple[str, str], tuple[str | None, str | None]] = {}
+    for r in conn.execute(
+        "SELECT source_id, side, phone, street_number, street_name FROM party_fingerprints"
+    ):
+        sk = (r['source_id'], r['side'])
+        phone = r['phone'] if r['phone'] else None
+        addr_root = (
+            f"{r['street_number']}|{r['street_name']}"
+            if r['street_number'] and r['street_name'] else None
+        )
+        side_anchors[sk] = (phone, addr_root)
+
+    # --- Pre-computation pass C: anchor total volumes ---
+    phone_total: dict[str, int] = dict(conn.execute(
+        "SELECT phone, COUNT(*) FROM party_fingerprints "
+        "WHERE phone IS NOT NULL AND phone != '' GROUP BY phone"
+    ).fetchall())
+
+    addr_total: dict[str, int] = dict(conn.execute(
+        "SELECT (street_number || '|' || street_name) AS k, COUNT(*) "
+        "FROM party_fingerprints "
+        "WHERE street_number IS NOT NULL AND street_number != '' "
+        "  AND street_name IS NOT NULL AND street_name != '' "
+        "GROUP BY street_number, street_name"
+    ).fetchall())
+
+    # --- Aggregation: build per-stem anchor counts in one Python pass ---
+    phone_count_by_stem: dict[str, dict[str, int]] = {}   # stem → phone → count
+    addr_count_by_stem: dict[str, dict[str, int]] = {}    # stem → addr_root → count
+
+    for sk, stem in side_to_stem.items():
+        phone, addr_root = side_anchors.get(sk, (None, None))
+        if phone is not None:
+            d = phone_count_by_stem.setdefault(stem, {})
+            d[phone] = d.get(phone, 0) + 1
+        if addr_root is not None:
+            d = addr_count_by_stem.setdefault(stem, {})
+            d[addr_root] = d.get(addr_root, 0) + 1
+
+    # --- Per-stem dominance scoring (pure Python, no SQL) ---
+    promoted: list[tuple] = []
     for stem, stem_type in candidate_stems.items():
-        # Pull all party-sides whose phrases contain this stem candidate
-        stem_phrases = [ph for ph, c in phrase_to_candidate.items() if c[0] == stem]
-        if not stem_phrases:
-            continue
-
-        # Dominance against phone anchor
-        phone_row = conn.execute(
-            f"""WITH stem_sides AS (
-                    SELECT DISTINCT pa.source_id, pa.side
-                    FROM party_atoms pa
-                    WHERE pa.atom_type='brand_phrase'
-                      AND pa.atom_value IN ({','.join(['?']*len(stem_phrases))})
-                )
-                SELECT pf.phone AS anchor,
-                       COUNT(*) AS sides_with_stem,
-                       (SELECT COUNT(*) FROM party_fingerprints pf2
-                          WHERE pf2.phone = pf.phone) AS total_at_anchor
-                FROM stem_sides s
-                JOIN party_fingerprints pf
-                  ON pf.source_id=s.source_id AND pf.side=s.side
-                WHERE pf.phone IS NOT NULL AND pf.phone != ''
-                GROUP BY pf.phone
-                ORDER BY sides_with_stem DESC
-                LIMIT 1""",
-            stem_phrases,
-        ).fetchone()
-        # Dominance against address_root anchor
-        addr_row = conn.execute(
-            f"""WITH stem_sides AS (
-                    SELECT DISTINCT pa.source_id, pa.side
-                    FROM party_atoms pa
-                    WHERE pa.atom_type='brand_phrase'
-                      AND pa.atom_value IN ({','.join(['?']*len(stem_phrases))})
-                )
-                SELECT (pf.street_number || '|' || pf.street_name) AS anchor,
-                       COUNT(*) AS sides_with_stem,
-                       (SELECT COUNT(*) FROM party_fingerprints pf2
-                          WHERE pf2.street_number=pf.street_number
-                            AND pf2.street_name=pf.street_name) AS total_at_anchor
-                FROM stem_sides s
-                JOIN party_fingerprints pf
-                  ON pf.source_id=s.source_id AND pf.side=s.side
-                WHERE pf.street_number != '' AND pf.street_name != ''
-                  AND pf.street_number IS NOT NULL AND pf.street_name IS NOT NULL
-                GROUP BY pf.street_number, pf.street_name
-                ORDER BY sides_with_stem DESC
-                LIMIT 1""",
-            stem_phrases,
-        ).fetchone()
-
-        # Pick the better of phone vs address_root
         candidates = []
-        if phone_row and phone_row['total_at_anchor'] > 0:
-            d = phone_row['sides_with_stem'] / phone_row['total_at_anchor']
-            candidates.append(('phone', phone_row['anchor'], d, phone_row['total_at_anchor']))
-        if addr_row and addr_row['total_at_anchor'] > 0:
-            d = addr_row['sides_with_stem'] / addr_row['total_at_anchor']
-            candidates.append(('address_root', addr_row['anchor'], d, addr_row['total_at_anchor']))
+
+        # Best phone for this stem
+        phone_map = phone_count_by_stem.get(stem)
+        if phone_map:
+            anchor, sides_with_stem = max(phone_map.items(), key=lambda kv: kv[1])
+            total = phone_total.get(anchor, 0)
+            if total > 0:
+                d = sides_with_stem / total
+                candidates.append(('phone', anchor, d, total))
+
+        # Best address_root for this stem
+        addr_map = addr_count_by_stem.get(stem)
+        if addr_map:
+            anchor, sides_with_stem = max(addr_map.items(), key=lambda kv: kv[1])
+            total = addr_total.get(anchor, 0)
+            if total > 0:
+                d = sides_with_stem / total
+                candidates.append(('address_root', anchor, d, total))
+
         if not candidates:
             continue
+
         atype, aval, dom, vol = max(candidates, key=lambda c: c[2] * math.log(c[3] + 1))
 
         if dom >= STEM_PROMOTION_DOMINANCE and vol >= STEM_PROMOTION_VOLUME:
