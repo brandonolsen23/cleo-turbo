@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-30
 **Branch:** `feat/group-discovery-algorithm`
-**Status:** DONE_WITH_CONCERNS — rebuild completes, 10:18 wall time (target: <5 min)
+**Status:** DONE_WITH_CONCERNS — rebuild completes, 10:18 wall time (target: <5 min); tenure model simplified to MIN/MAX per stem (see Run 3 below)
 
 ## Summary
 
@@ -136,9 +136,76 @@ Fix strategy: Bulk-load a `(stem → [(anchor_type, anchor_value, sides_with_ste
 
 `07a28e5` — `perf(layer2): batch SQL hotspots in stems.py, timelines.py, seeding.py`
 
+## Run 3: Simplified tenure model (2026-04-30)
+
+**Commit:** `2149d26` — `refactor(layer2): tenures = MIN/MAX per (anchor, stem); drop gap/dormant heuristics`
+
+**Design change:** Tenure model replaced with `(anchor, stem) → MIN(sale_date), MAX(sale_date)`. No gap splitting, no grace buffer, no "ongoing" vs "closed" distinction. A phone used 2010-2014 then again 2025 is ONE tenure 2010-2025, not two. Multiple simultaneous addresses for one group (KingSett, RioCan) is normal — they get separate tenures per address anchor, not a conflict.
+
+**Files changed:**
+- `cleo/discovery_v2/tenures.py` — complete rewrite (simplified)
+- `cleo/discovery_v2/constants.py` — removed `MAX_TENURE_GAP_DAYS`, `RECENT_TENURE_DAYS`, `RUN_GRACE_EVENTS`
+- `cleo/discovery_v2/conflicts.py` — dropped `abrupt_tenure_end` block; removed `now` param; removed `end_date IS NOT NULL` filter from transient check
+- `cleo/discovery_v2/anchor_scores.py` — dropped `now=today` arg, updated latest-tenure sort key
+- `cleo/discovery_v2/seeding.py` — dropped `now=today` arg and datetime import
+- `tests/test_discovery_v2_tenures.py` — fully rewritten (8 new tests replacing 8 old gap-split tests)
+- `tests/test_discovery_v2_conflicts.py` — removed `test_abrupt_tenure_end_flagged`
+- `tests/test_discovery_v2_seeding.py` — updated contact-tenure gap test to expect 1 tenure (not 2)
+
+**Wall-clock time:** 11:11 (624s user, 22s sys, 96% CPU) — roughly same as Run 2
+
+### Layer 2 output (Run 3)
+
+| Stage | Metric | Count | vs Run 2 |
+|---|---|---|---|
+| A1 | Verified stems | 2,296 | same |
+| A1 | Phrase mappings | 12,311 | same |
+| A2 | Tenures across all anchors | 33,196 | ↓ from 42,899 (gap-split tenures collapsed) |
+| A2 | Anchors with tenures | 30,300 | same |
+| A3 | Groups seeded | 1,650 | ↑ from 1,047 (more anchors now qualify) |
+| A3 | Seed tenures | 28,992 | same scale |
+| A4 | Party-side members | 45,047 | similar |
+| A4 | Numbered-corp memberships | 3,285 | similar |
+| A4 | Expansion conflicts | 6,078 | ↑ (expected, more groups) |
+| Contact tenures | Rows | 10,457 | ↓ from 11,264 (collapses per-contact gaps) |
+| A6 | Conflict flags | 19,948 | ↑ slightly |
+| A5 | Groups finalized | 1,650 | ↑ from 1,047 |
+
+### Conflict flag breakdown (Run 3)
+
+| conflict_type | n |
+|---|---|
+| `transient_tenure` | 18,773 |
+| `anchor_reassignment` | 1,175 |
+| `abrupt_tenure_end` | **removed** |
+
+### DH Management address tenures (Run 3)
+
+180 Shorting: **1 tenure** (2013-07-05 → 2024-05-23, 9 events). Previously 3 tenure rows from gap-splitting.
+
+Full address_unit tenure table for DH auto-group (ordered by start_date):
+
+| anchor_value | start_date | end_date | n_sides |
+|---|---|---|---|
+| `toronto\|160\|shorting\|road\|\|\|` | 2007-02-23 | 2012-12-12 | 6 |
+| `toronto\|20\|hillavon\|drive\|\|\|` | 2010-08-13 | 2010-08-13 | 1 |
+| `leamington\|308\|talbot\|street\|east\|\|` | 2011-02-02 | 2011-02-02 | 1 |
+| `tecumseh\|118\|cove\|drive\|\|\|` | 2012-01-20 | 2012-01-20 | 1 |
+| `aurora\|9\|black\|court\|\|\|` | 2012-10-17 | 2012-10-17 | 1 |
+| `toronto\|180\|shorting\|road\|\|\|` | 2013-07-05 | 2024-05-23 | 9 |
+| `gormley\|15\|forest\|trail\|\|\|` | 2015-07-24 | 2015-07-24 | 1 |
+| `stouffville\|15\|forest\|trail\|\|\|` | 2017-03-31 | 2017-03-31 | 1 |
+| `mississauga\|51\|village centre\|place\|\|\|` | 2018-01-04 | 2018-01-04 | 1 |
+| `ayr\|229\|boida\|avenue\|\|\|` | 2020-02-13 | 2020-02-13 | 1 |
+| `vancouver\|666\|burrard\|street\|\|\|` | 2021-12-13 | 2021-12-13 | 1 |
+
+### Tests (Run 3)
+
+`pytest tests/test_discovery_v2_*.py tests/test_migration_017_tenure_tables.py -v`: **109 passed** in 0.77s (1 test removed: `test_abrupt_tenure_end_flagged`; 1 test renamed and updated: contact-tenure gap test now expects 1 row, not 2).
+
 ## What's next
 
-**Performance:** Fix Stage A1 Step 2 per-stem dominance queries (see above). Expected to drop total rebuild time to < 3 minutes once A1 Step 2 is batched.
+**Performance:** Fix Stage A1 Step 2 per-stem dominance queries. Expected to drop total rebuild time to < 3 minutes once A1 Step 2 is batched.
 
 **H3:** Time-aware UI surfaces (to follow once rebuild is consistently < 5 minutes):
 - Layer 1 silo timelines (phone / address_unit / contact detail pages)
