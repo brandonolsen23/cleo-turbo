@@ -15,6 +15,7 @@ def _make_db():
             city TEXT,
             street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
             suite_type TEXT, suite_number TEXT,
+            sale_date TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -71,6 +72,18 @@ def _make_db():
             override_stem TEXT, override_service_provider INTEGER NOT NULL DEFAULT 0,
             user_id TEXT NOT NULL, action_at TEXT
         );
+        CREATE TABLE auto_group_anchor_tenures (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            auto_group_id TEXT NOT NULL,
+            anchor_type TEXT NOT NULL,
+            anchor_value TEXT NOT NULL,
+            start_date TEXT NOT NULL,
+            end_date TEXT,
+            n_party_sides_in_window INTEGER NOT NULL,
+            dominance_share_in_window REAL NOT NULL,
+            score REAL NOT NULL,
+            discovered_at TEXT
+        );
     """)
     conn.execute(
         """INSERT INTO brand_token_summary
@@ -85,15 +98,16 @@ def _make_db():
 
 def _seed(conn, sid, side, phrase, *, phone=None, contact=None,
           city=None, street_number=None, street_name=None, street_suffix=None,
-          street_direction=None, suite_type=None, suite_number=None):
+          street_direction=None, suite_type=None, suite_number=None,
+          sale_date='2025-01-01'):
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
              (source_id, side, phone, contact_fingerprint, city,
               street_number, street_name, street_suffix, street_direction,
-              suite_type, suite_number)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+              suite_type, suite_number, sale_date)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
         (sid, side, phone, contact, city, street_number, street_name,
-         street_suffix, street_direction, suite_type, suite_number),
+         street_suffix, street_direction, suite_type, suite_number, sale_date),
     )
     if phrase:
         conn.execute(
@@ -187,3 +201,77 @@ def test_reject_override_removes_group():
     build_seeds(conn, verbose=False)
     groups = conn.execute('SELECT * FROM auto_groups').fetchall()
     assert len(groups) == 0
+
+
+def test_seeding_populates_auto_group_anchor_tenures():
+    """When the pipeline runs end-to-end, auto_group_anchor_tenures is
+    populated for every (group, anchor) pair that survived seeding."""
+    conn = _make_db()
+    for i in range(8):
+        _seed(conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st')
+    _run_to_anchors(conn)
+    build_seeds(conn, verbose=False)
+
+    rows = conn.execute(
+        "SELECT auto_group_id, anchor_type, anchor_value, "
+        "       start_date, end_date FROM auto_group_anchor_tenures"
+    ).fetchall()
+    assert len(rows) >= 3  # phone + contact + address_unit, at least
+    # Each row's auto_group_id must reference an existing auto_group
+    gids = {r['auto_group_id'] for r in rows}
+    seeded_gids = {r['auto_group_id'] for r in conn.execute(
+        "SELECT auto_group_id FROM auto_groups"
+    )}
+    assert gids.issubset(seeded_gids)
+
+
+def test_seeding_creates_one_tenure_row_per_pending_tenure():
+    """If A2 emitted two tenures for the same anchor (different stems / time
+    windows), A3 must create two auto_group_anchor_tenures rows — one in each
+    matching stem's group."""
+    conn = _make_db()
+    # Need brand_token_summary entries for both stems so build_stems promotes them.
+    conn.execute(
+        """INSERT INTO brand_token_summary
+             (token, idf, n_party_sides, n_distinct_phrases, is_distinctive,
+              is_excluded, wordfreq_zipf, is_english_common, is_place_name,
+              is_industry_stopword, filter_reason, position_consistency,
+              total_child_coverage, is_position_anchor, discovered_at)
+           VALUES ('dh', 6.0, 50, 10, 1, 0, 0.0, 0, 0, 0, NULL, NULL, NULL, 0, '2026'),
+                  ('midland', 6.0, 50, 10, 1, 0, 0.0, 0, 0, 0, NULL, NULL, NULL, 0, '2026')"""
+    )
+    # Clean promotion phones for each stem (so build_stems verifies them).
+    for i in range(6):
+        _seed(conn, f'DHCLEAN{i}', 'seller', 'dh management',
+              phone='P_DH', contact='dan_h',
+              city='toronto', street_number='180', street_name='shorting',
+              sale_date=f'2018-0{i+1}-01')
+    for i in range(6):
+        _seed(conn, f'MDCLEAN{i}', 'seller', 'midland industries',
+              phone='P_MD', contact='midland_c',
+              city='toronto', street_number='100', street_name='king',
+              sale_date=f'2024-0{i+1}-01')
+    # Shared phone P1 — DH events 2018, then midland events 2024 (>730d gap)
+    for i in range(5):
+        _seed(conn, f'DH_S{i}', 'seller', 'dh management',
+              phone='P1', sale_date=f'2018-0{i+1}-01')
+    for i in range(5):
+        _seed(conn, f'MD_S{i}', 'seller', 'midland industries',
+              phone='P1', sale_date=f'2024-0{i+1}-01')
+    _run_to_anchors(conn)
+    build_seeds(conn, verbose=False)
+
+    # Pull all tenures for P1 — should be 2, in different groups
+    rows = conn.execute(
+        """SELECT agt.auto_group_id, ag.canonical_stem, agt.start_date
+           FROM auto_group_anchor_tenures agt
+           JOIN auto_groups ag ON ag.auto_group_id = agt.auto_group_id
+           WHERE agt.anchor_value = 'P1' AND agt.anchor_type = 'phone'
+           ORDER BY agt.start_date"""
+    ).fetchall()
+    assert len(rows) == 2
+    stems = {r['canonical_stem'] for r in rows}
+    assert stems == {'dh', 'midland'}

@@ -129,9 +129,55 @@ def build_seeds(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             anchor_rows,
         )
 
+    # H2: persist tenures from _pending_tenures (Stage A2's staging table) into
+    # auto_group_anchor_tenures, keyed on auto_group_id by matching dominant_stem.
+    conn.execute('DELETE FROM auto_group_anchor_tenures')
+
+    # Build a stem → auto_group_id index from the rows we just inserted.
+    stem_to_group: dict[str, str] = {
+        r['canonical_stem']: r['auto_group_id']
+        for r in conn.execute("SELECT auto_group_id, canonical_stem FROM auto_groups")
+    }
+
+    # _pending_tenures may not exist if A2 wasn't run (e.g. some unit tests).
+    # Probe the schema before reading.
+    has_pending = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='_pending_tenures'"
+    ).fetchone() is not None
+
+    tenure_rows: list[tuple] = []
+    if has_pending:
+        for r in conn.execute(
+            """SELECT anchor_type, anchor_value, dominant_stem,
+                      start_date, end_date,
+                      n_party_sides, dominance_share, score
+               FROM _pending_tenures"""
+        ):
+            gid = stem_to_group.get(r['dominant_stem'])
+            if gid is None:
+                continue  # this stem didn't seed a group (below threshold)
+            tenure_rows.append((
+                gid, r['anchor_type'], r['anchor_value'],
+                r['start_date'], r['end_date'],
+                r['n_party_sides'], r['dominance_share'], r['score'],
+            ))
+
+    if tenure_rows:
+        conn.executemany(
+            """INSERT INTO auto_group_anchor_tenures
+                (auto_group_id, anchor_type, anchor_value,
+                 start_date, end_date,
+                 n_party_sides_in_window, dominance_share_in_window, score)
+              VALUES (?,?,?,?,?,?,?,?)""",
+            tenure_rows,
+        )
+
     _apply_crm_overrides(conn)
     conn.commit()
 
     if verbose:
-        print(f'  Stage A3 (seeds): {len(seeded):,} groups.', flush=True)
-    return {'n_groups': len(seeded)}
+        print(
+            f'  Stage A3 (seeds): {len(seeded):,} groups, '
+            f'{len(tenure_rows):,} tenures.', flush=True
+        )
+    return {'n_groups': len(seeded), 'n_seed_tenures': len(tenure_rows)}
