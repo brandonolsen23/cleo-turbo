@@ -90,12 +90,12 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
 
     # Step 2: for each candidate stem, find dominant anchor + dominance_share.
     # Replaced per-stem loop (N×2 heavy SQL joins) with 4 bulk queries + pure-Python
-    # aggregation. Semantics: each party-side is attributed to its DOMINANT stem
-    # (most-frequent candidate stem across the side's phrases; alphabetical tiebreak),
-    # which is consistent with Stage A2's attribution rule.
+    # aggregation. Semantics: each party-side contributes its anchor counts to EVERY
+    # candidate stem on that side (multi-stem sides are real — JV transactions,
+    # multi-firm contacts — and every stem deserves credit for promotion).
     candidate_stems = {c[0]: c[1] for c in phrase_to_candidate.values()}
 
-    # --- Pre-computation pass A: side → dominant stem ---
+    # --- Pre-computation pass A: side → set of stems ---
     # Pull every (source_id, side, atom_value) row for brand_phrase atoms in one query.
     side_phrases: dict[tuple[str, str], list[str]] = {}
     for r in conn.execute(
@@ -104,17 +104,19 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
         sk = (r['source_id'], r['side'])
         side_phrases.setdefault(sk, []).append(r['atom_value'])
 
-    # For each side, count candidate stems and pick the dominant one.
-    side_to_stem: dict[tuple[str, str], str] = {}
+    # For each side, collect ALL candidate stems present — both stems on a side
+    # are real signals (JV transactions, multi-firm contacts) and each deserves
+    # credit toward its own dominance score.  Picking one dominant stem and
+    # discarding the rest silently drops evidence.
+    side_to_stems: dict[tuple[str, str], set[str]] = {}
     for sk, phrases_list in side_phrases.items():
-        counts: dict[str, int] = {}
+        stems: set[str] = set()
         for ph in phrases_list:
             c = phrase_to_candidate.get(ph)
             if c is not None:
-                counts[c[0]] = counts.get(c[0], 0) + 1
-        if counts:
-            # Alphabetical tiebreak for determinism (matches Stage A2)
-            side_to_stem[sk] = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))[0][0]
+                stems.add(c[0])
+        if stems:
+            side_to_stems[sk] = stems
 
     # --- Pre-computation pass B: side → anchors ---
     # One query for all phone + address_root values per (source_id, side).
@@ -148,14 +150,15 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     phone_count_by_stem: dict[str, dict[str, int]] = {}   # stem → phone → count
     addr_count_by_stem: dict[str, dict[str, int]] = {}    # stem → addr_root → count
 
-    for sk, stem in side_to_stem.items():
+    for sk, stems in side_to_stems.items():
         phone, addr_root = side_anchors.get(sk, (None, None))
-        if phone is not None:
-            d = phone_count_by_stem.setdefault(stem, {})
-            d[phone] = d.get(phone, 0) + 1
-        if addr_root is not None:
-            d = addr_count_by_stem.setdefault(stem, {})
-            d[addr_root] = d.get(addr_root, 0) + 1
+        for stem in stems:
+            if phone is not None:
+                d = phone_count_by_stem.setdefault(stem, {})
+                d[phone] = d.get(phone, 0) + 1
+            if addr_root is not None:
+                d = addr_count_by_stem.setdefault(stem, {})
+                d[addr_root] = d.get(addr_root, 0) + 1
 
     # --- Per-stem dominance scoring (pure Python, no SQL) ---
     promoted: list[tuple] = []
