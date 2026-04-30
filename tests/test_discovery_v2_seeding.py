@@ -301,6 +301,18 @@ def _make_db_with_auto_group_members():
             source_id TEXT, side TEXT, corp_name TEXT,
             match_score REAL NOT NULL
         );
+        CREATE TABLE auto_conflict_flags (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            conflict_type TEXT NOT NULL,
+            entity_type TEXT NOT NULL,
+            entity_value TEXT NOT NULL,
+            entity_subtype TEXT,
+            group_a TEXT,
+            group_b TEXT,
+            date_observed TEXT,
+            description TEXT NOT NULL,
+            discovered_at TEXT
+        );
         CREATE TABLE auto_contact_tenures (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             contact_fingerprint TEXT NOT NULL,

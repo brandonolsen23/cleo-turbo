@@ -13,6 +13,7 @@ def _make_db():
             suite_type TEXT, suite_number TEXT,
             city TEXT, province TEXT, postal TEXT,
             phone TEXT, contact_fingerprint TEXT,
+            sale_date TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -125,6 +126,30 @@ def _make_db():
         );
         CREATE TABLE places (
             token TEXT PRIMARY KEY, added_by TEXT, added_at TEXT, source TEXT
+        );
+        CREATE TABLE brand_stem (
+            stem TEXT PRIMARY KEY, stem_type TEXT NOT NULL,
+            dominant_anchor_type TEXT NOT NULL, dominant_anchor_value TEXT NOT NULL,
+            dominance_share REAL NOT NULL, volume INTEGER NOT NULL, verified_at TEXT
+        );
+        CREATE TABLE brand_stem_phrase_map (
+            phrase TEXT PRIMARY KEY, stem TEXT NOT NULL, confidence REAL NOT NULL
+        );
+        CREATE TABLE address_unit_summary (
+            city                   TEXT NOT NULL,
+            street_number          TEXT NOT NULL,
+            street_name            TEXT NOT NULL,
+            street_suffix          TEXT NOT NULL DEFAULT '',
+            street_direction       TEXT NOT NULL DEFAULT '',
+            suite_type             TEXT NOT NULL DEFAULT '',
+            suite_number           TEXT NOT NULL DEFAULT '',
+            n_party_sides          INTEGER NOT NULL,
+            n_distinct_brand_stems INTEGER NOT NULL,
+            dominant_stem          TEXT,
+            dominance_share        REAL,
+            discovered_at          TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (city, street_number, street_name, street_suffix,
+                         street_direction, suite_type, suite_number)
         );
     """)
     return conn

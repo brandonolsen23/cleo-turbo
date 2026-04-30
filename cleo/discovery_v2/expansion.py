@@ -28,22 +28,7 @@ _NUMBERED_CORP_RE = re.compile(r'^\d+\s+(ontario|canada|alberta|bc|quebec)\b', r
 def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     """Attach party-sides and numbered corps to seeded groups. Idempotent."""
     conn.execute('DELETE FROM auto_group_members')
-    # auto_conflict_flags may not exist in older test fixtures — create it if needed.
-    conn.executescript("""
-        CREATE TABLE IF NOT EXISTS auto_conflict_flags (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            conflict_type TEXT NOT NULL,
-            entity_type TEXT NOT NULL,
-            entity_value TEXT NOT NULL,
-            entity_subtype TEXT,
-            group_a TEXT,
-            group_b TEXT,
-            date_observed TEXT,
-            description TEXT NOT NULL,
-            discovered_at TEXT
-        );
-        DELETE FROM auto_conflict_flags;
-    """)
+    conn.execute('DELETE FROM auto_conflict_flags')
 
     # 1. Pull every group's canonical stem
     groups = list(conn.execute('SELECT auto_group_id, canonical_stem FROM auto_groups'))

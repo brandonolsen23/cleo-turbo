@@ -6,7 +6,9 @@ import pytest
 _DDL = """
 CREATE TABLE party_fingerprints (
     source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
-    street_number TEXT, street_name TEXT, street_suffix TEXT,
+    city TEXT, street_number TEXT, street_name TEXT, street_suffix TEXT,
+    street_direction TEXT, suite_type TEXT, suite_number TEXT,
+    sale_date TEXT,
     PRIMARY KEY (source_id, side)
 );
 CREATE TABLE party_atoms (
@@ -69,6 +71,30 @@ CREATE TABLE auto_anchor_overrides (
     anchor_type TEXT NOT NULL, anchor_value TEXT NOT NULL,
     override_stem TEXT, override_service_provider INTEGER NOT NULL DEFAULT 0,
     user_id TEXT NOT NULL, action_at TEXT
+);
+CREATE TABLE auto_group_anchor_tenures (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    auto_group_id TEXT NOT NULL,
+    anchor_type TEXT NOT NULL,
+    anchor_value TEXT NOT NULL,
+    start_date TEXT NOT NULL,
+    end_date TEXT,
+    n_party_sides_in_window INTEGER NOT NULL,
+    dominance_share_in_window REAL NOT NULL,
+    score REAL NOT NULL,
+    discovered_at TEXT
+);
+CREATE TABLE auto_conflict_flags (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    conflict_type TEXT NOT NULL,
+    entity_type TEXT NOT NULL,
+    entity_value TEXT NOT NULL,
+    entity_subtype TEXT,
+    group_a TEXT,
+    group_b TEXT,
+    date_observed TEXT,
+    description TEXT NOT NULL,
+    discovered_at TEXT
 );
 """
 
