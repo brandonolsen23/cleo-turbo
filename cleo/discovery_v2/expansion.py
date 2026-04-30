@@ -1,4 +1,12 @@
-"""Stage A4: Group expansion — attach party-sides + numbered-corps to seeded groups."""
+"""Stage A4: Group expansion — attach party-sides + numbered-corps to seeded groups.
+
+H2 update: time-aware expansion. A party with a sale_date is only attached to
+group G if at least one of its anchors (phone / address_unit / contact) has a
+tenure in G whose window contains the party's sale_date.
+
+Backward compat: parties with NO sale_date fall back to the H1 anchor-only
+scoring path (no tenure gating) so that undated parties don't orphan en masse.
+"""
 from __future__ import annotations
 import re
 import sqlite3
@@ -20,26 +28,57 @@ _NUMBERED_CORP_RE = re.compile(r'^\d+\s+(ontario|canada|alberta|bc|quebec)\b', r
 def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     """Attach party-sides and numbered corps to seeded groups. Idempotent."""
     conn.execute('DELETE FROM auto_group_members')
+    # auto_conflict_flags may not exist in older test fixtures — create it if needed.
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS auto_conflict_flags (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            conflict_type TEXT NOT NULL,
+            entity_type TEXT NOT NULL,
+            entity_value TEXT NOT NULL,
+            entity_subtype TEXT,
+            group_a TEXT,
+            group_b TEXT,
+            date_observed TEXT,
+            description TEXT NOT NULL,
+            discovered_at TEXT
+        );
+        DELETE FROM auto_conflict_flags;
+    """)
 
-    # 1. Pull every group's anchors into in-memory lookup tables for cheap matching
+    # 1. Pull every group's canonical stem
     groups = list(conn.execute('SELECT auto_group_id, canonical_stem FROM auto_groups'))
     if not groups:
         if verbose:
             print('  Stage A4 (expansion): no groups to expand.', flush=True)
-        return {'n_party_side_members': 0, 'n_numbered_corp_members': 0}
+        return {'n_party_side_members': 0, 'n_numbered_corp_members': 0,
+                'n_expansion_conflicts': 0}
 
-    anchors_by_group = {}  # group_id -> {(type, value): score}
+    # H2: Load tenures — one lookup row per (anchor_type, anchor_value).
+    # A tenure window contains sale_date D iff start_date <= D <= COALESCE(end_date, '9999-12-31').
+    tenures_by_anchor: dict[tuple[str, str], list[tuple]] = {}
+    for r in conn.execute(
+        "SELECT auto_group_id, anchor_type, anchor_value, "
+        "       start_date, end_date, score "
+        "FROM auto_group_anchor_tenures"
+    ):
+        key = (r['anchor_type'], r['anchor_value'])
+        tenures_by_anchor.setdefault(key, []).append((
+            r['auto_group_id'], r['start_date'], r['end_date'], r['score'],
+        ))
+
+    # H1-compat: static anchors per group (for the no-sale_date fallback path).
+    anchors_by_group: dict[str, dict] = {}
     for r in conn.execute('SELECT * FROM auto_group_anchors'):
         anchors_by_group.setdefault(r['auto_group_id'], {})[
             (r['anchor_type'], r['anchor_value'])
         ] = r['score']
 
     # 2. For each party-side, look up its anchor values + its stems
-    side_data = {}  # (sid, side) -> { 'phone', 'addr_unit', 'contact', 'stems', 'phrases' }
+    side_data: dict[tuple, dict] = {}  # (sid, side) -> info dict
     for r in conn.execute("""
         SELECT source_id, side, phone, contact_fingerprint, city,
                street_number, street_name, street_suffix, street_direction,
-               suite_type, suite_number
+               suite_type, suite_number, sale_date
         FROM party_fingerprints
     """):
         addr_unit = (
@@ -52,6 +91,7 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             'phone':     r['phone'] or None,
             'addr_unit': addr_unit,
             'contact':   r['contact_fingerprint'] or None,
+            'sale_date': r['sale_date'] or None,
             'stems':     set(),
             'phrases':   [],
         }
@@ -69,22 +109,93 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             side_data[key]['phrases'].append(r['atom_value'])
 
     # 3. Score each party-side against each group it touches
-    member_rows = []
-    numbered_corps = []  # (group_id, corp_name, match_score)
+    member_rows: list[tuple] = []
+    numbered_corps: list[tuple] = []   # (group_id, corp_name, match_score)
+    conflict_rows: list[tuple] = []    # values for auto_conflict_flags insert
+
     for (sid, side), info in side_data.items():
-        for group_id, _stem in groups:
-            anchors = anchors_by_group.get(group_id, {})
-            if not anchors:
+        sale_date = info['sale_date']
+
+        # Identify groups where this side has a direct stem hit (brand phrase → stem → group).
+        # Direct stem hits are always considered, regardless of tenure windows.
+        direct_group_ids: set[str] = set()
+        for group_id, gstem in groups:
+            if gstem in info['stems']:
+                direct_group_ids.add(group_id)
+
+        # ── H1 FALLBACK: no sale_date ──────────────────────────────────────
+        if sale_date is None:
+            for group_id, _stem in groups:
+                anchors = anchors_by_group.get(group_id, {})
+                if not anchors:
+                    continue
+                score = _score_match(info, anchors, group_canonical_stem=_stem)
+                if score >= EXPANSION_ATTACH_THRESHOLD:
+                    member_rows.append((group_id, 'party_side', sid, side, None, score))
+                    for ph in info['phrases']:
+                        if _NUMBERED_CORP_RE.match(ph or ''):
+                            numbered_corps.append((group_id, ph.lower(), score))
+            continue
+
+        # ── H2 TIME-AWARE PATH ─────────────────────────────────────────────
+        # Build candidate_groups: group_id → {anchors filtered to tenure-containing rows}
+        candidate_groups: dict[str, dict] = {}
+        saw_contact_anchor = False
+
+        for atype, aval in (
+            ('phone',        info['phone']),
+            ('address_unit', info['addr_unit']),
+            ('contact',      info['contact']),
+        ):
+            if not aval:
                 continue
-            score = _score_match(info, anchors, group_canonical_stem=_stem)
+            for gid, t_start, t_end, anchor_score in tenures_by_anchor.get((atype, aval), []):
+                t_end_eff = t_end if t_end is not None else '9999-12-31'
+                if t_start <= sale_date <= t_end_eff:
+                    rec = candidate_groups.setdefault(gid, {'anchors': {}})
+                    rec['anchors'][(atype, aval)] = anchor_score
+                    if atype == 'contact':
+                        saw_contact_anchor = True
+
+        # Promote direct-stem-hit groups as candidates (they bypass tenure gating).
+        for group_id in direct_group_ids:
+            candidate_groups.setdefault(group_id, {'anchors': {}})
+
+        if not candidate_groups:
+            continue  # orphan — no tenure window match and no direct stem hit
+
+        if len(candidate_groups) == 1:
+            gid, cdata = next(iter(candidate_groups.items()))
+            # Use H1 _score_match. Prefer tenured anchors; fall back to static anchors
+            # if this group was promoted purely via direct-stem (empty tenured anchors).
+            anchors_for_score = cdata['anchors'] or anchors_by_group.get(gid, {})
+            gstem = next((s for g, s in groups if g == gid), None)
+            score = _score_match(info, anchors_for_score, group_canonical_stem=gstem)
             if score >= EXPANSION_ATTACH_THRESHOLD:
-                member_rows.append((group_id, 'party_side', sid, side, None, score))
-                # Numbered-corp side-effect: any numbered corp phrase on this side
-                # gets recorded as a group-owned vehicle.
+                member_rows.append((gid, 'party_side', sid, side, None, score))
                 for ph in info['phrases']:
                     if _NUMBERED_CORP_RE.match(ph or ''):
-                        numbered_corps.append((group_id, ph.lower(), score))
+                        numbered_corps.append((gid, ph.lower(), score))
+        else:
+            # Multiple groups claim this anchor on this date — emit conflict flag.
+            # Do NOT attach.
+            sorted_gids = sorted(candidate_groups.keys())
+            conflict_type = 'contact_overlap' if saw_contact_anchor else 'anchor_reassignment'
+            conflict_rows.append((
+                conflict_type,
+                'anchor',
+                f'{sid}|{side}',
+                None,
+                sorted_gids[0],
+                sorted_gids[1] if len(sorted_gids) > 1 else None,
+                sale_date,
+                (
+                    f'Party {sid}/{side} on {sale_date} matches '
+                    f'{len(candidate_groups)} groups via anchor tenures.'
+                ),
+            ))
 
+    # Insert party-side members
     if member_rows:
         conn.executemany(
             """INSERT INTO auto_group_members
@@ -94,8 +205,8 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
         )
 
     # Dedupe numbered_corps before insert (same corp_name in many sides → one row per group)
-    seen = set()
-    corp_rows = []
+    seen: set[tuple] = set()
+    corp_rows: list[tuple] = []
     for gid, corp_name, sc in numbered_corps:
         key = (gid, corp_name)
         if key in seen:
@@ -111,16 +222,28 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             corp_rows,
         )
 
+    # Insert conflict flags
+    if conflict_rows:
+        conn.executemany(
+            """INSERT INTO auto_conflict_flags
+                (conflict_type, entity_type, entity_value, entity_subtype,
+                 group_a, group_b, date_observed, description)
+              VALUES (?,?,?,?,?,?,?,?)""",
+            conflict_rows,
+        )
+
     conn.commit()
     if verbose:
         print(
             f'  Stage A4 (expansion): {len(member_rows):,} party-sides, '
-            f'{len(corp_rows):,} numbered-corp memberships.',
+            f'{len(corp_rows):,} numbered-corp memberships, '
+            f'{len(conflict_rows):,} conflicts.',
             flush=True,
         )
     return {
         'n_party_side_members': len(member_rows),
         'n_numbered_corp_members': len(corp_rows),
+        'n_expansion_conflicts': len(conflict_rows),
     }
 
 

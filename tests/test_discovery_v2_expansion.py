@@ -16,7 +16,7 @@ def _make_db():
             source_id TEXT, side TEXT, phone TEXT, contact_fingerprint TEXT,
             city TEXT,
             street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
-            suite_type TEXT, suite_number TEXT,
+            suite_type TEXT, suite_number TEXT, sale_date TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -65,6 +65,30 @@ def _make_db():
             source_id TEXT, side TEXT, corp_name TEXT,
             match_score REAL NOT NULL
         );
+        CREATE TABLE auto_group_anchor_tenures (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            auto_group_id TEXT NOT NULL,
+            anchor_type TEXT NOT NULL,
+            anchor_value TEXT NOT NULL,
+            start_date TEXT NOT NULL,
+            end_date TEXT,
+            n_party_sides_in_window INTEGER NOT NULL,
+            dominance_share_in_window REAL NOT NULL,
+            score REAL NOT NULL,
+            discovered_at TEXT
+        );
+        CREATE TABLE auto_conflict_flags (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            conflict_type TEXT NOT NULL,
+            entity_type TEXT NOT NULL,
+            entity_value TEXT NOT NULL,
+            entity_subtype TEXT,
+            group_a TEXT,
+            group_b TEXT,
+            date_observed TEXT,
+            description TEXT NOT NULL,
+            discovered_at TEXT
+        );
         CREATE TABLE auto_group_overrides (
             id INTEGER PRIMARY KEY AUTOINCREMENT, auto_group_id TEXT NOT NULL,
             action TEXT NOT NULL, user_id TEXT NOT NULL, action_at TEXT, notes TEXT
@@ -94,15 +118,16 @@ def _make_db():
 
 def _seed(conn, sid, side, phrase, *, phone=None, contact=None,
           city=None, street_number=None, street_name=None, street_suffix=None,
-          street_direction=None, suite_type=None, suite_number=None):
+          street_direction=None, suite_type=None, suite_number=None,
+          sale_date='2025-01-01'):
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
              (source_id, side, phone, contact_fingerprint, city,
               street_number, street_name, street_suffix, street_direction,
-              suite_type, suite_number)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+              suite_type, suite_number, sale_date)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
         (sid, side, phone, contact, city, street_number, street_name,
-         street_suffix, street_direction, suite_type, suite_number),
+         street_suffix, street_direction, suite_type, suite_number, sale_date),
     )
     if phrase:
         conn.execute(
@@ -281,3 +306,70 @@ def test_address_unit_match_attaches_to_group():
     assert len(rows) == 1
     # MATCH_SCORE_ADDRESS_UNIT_ALONE = 0.7
     assert rows[0]['match_score'] >= 0.5
+
+
+def test_party_within_tenure_window_attaches():
+    """A party whose sale_date is inside a group's anchor tenure attaches."""
+    conn = _make_db()
+    # Seed a clear DH group at phone P1 with 8 events 2018-Jan to 2018-Aug
+    # (one tenure spanning that range)
+    for i in range(8):
+        _seed(conn, f'EARLY{i}', 'seller', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date=f'2018-0{i+1}-01')
+    # Add a NEW party at P1 with sale_date 2018-04-15 (within tenure)
+    _seed(conn, 'EXTRA', 'seller', None,
+          phone='P1', sale_date='2018-04-15')
+    _build_pipeline(conn)
+    build_expansion(conn, verbose=False)
+
+    members = conn.execute(
+        "SELECT * FROM auto_group_members WHERE source_id='EXTRA'"
+    ).fetchall()
+    assert len(members) == 1
+
+
+def test_party_outside_tenure_window_does_not_attach():
+    """A party whose sale_date falls in a gap between tenures stays orphaned."""
+    conn = _make_db()
+    # 8 events 2018-Jan to 2018-Aug → one tenure ending in Aug 2018.
+    for i in range(8):
+        _seed(conn, f'EARLY{i}', 'seller', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date=f'2018-0{i+1}-01')
+    # Add a party at P1 with sale_date 2030-06-01 (well after the tenure ended).
+    # Without `now` near 2030, the tenure has end_date='2018-08-01'.
+    _seed(conn, 'GAP', 'seller', None,
+          phone='P1', sale_date='2030-06-01')
+    _build_pipeline(conn)
+    build_expansion(conn, verbose=False)
+
+    members = conn.execute(
+        "SELECT * FROM auto_group_members WHERE source_id='GAP'"
+    ).fetchall()
+    assert len(members) == 0
+
+
+def test_party_with_no_sale_date_falls_back_to_h1_logic():
+    """A party with NO sale_date attaches via the H1 anchor-only rules
+    (backward compat)."""
+    conn = _make_db()
+    for i in range(8):
+        _seed(conn, f'STRONG{i}', 'buyer', 'skyline real estate holdings',
+              phone='P1', contact='jc',
+              city='toronto', street_number='5', street_name='douglas',
+              street_suffix='st',
+              sale_date=f'2018-0{i+1}-01')
+    # Party at P1 with NO sale_date — fall back to H1 (phone match → 0.7)
+    _seed(conn, 'NO_DATE', 'buyer', None, phone='P1', sale_date=None)
+    _build_pipeline(conn)
+    build_expansion(conn, verbose=False)
+
+    members = conn.execute(
+        "SELECT * FROM auto_group_members WHERE source_id='NO_DATE'"
+    ).fetchall()
+    assert len(members) == 1
