@@ -6,11 +6,11 @@ def _evt(date, sid, stem):
     return {'sale_date': date, 'source_id': sid, 'side': 'seller', 'stem': stem}
 
 
-def test_detect_tenures_single_dominant_stem_is_one_tenure():
+def test_single_stem_makes_one_tenure_min_to_max():
     timeline = [
-        _evt('2018-01-01', 'RT1', 'kingsett'),
-        _evt('2019-06-01', 'RT2', 'kingsett'),
-        _evt('2021-03-01', 'RT3', 'kingsett'),
+        _evt('2018-01-01', 'A', 'kingsett'),
+        _evt('2019-06-01', 'B', 'kingsett'),
+        _evt('2021-03-01', 'C', 'kingsett'),
     ]
     tenures = detect_tenures(timeline)
     assert len(tenures) == 1
@@ -22,97 +22,90 @@ def test_detect_tenures_single_dominant_stem_is_one_tenure():
     assert t['dominance_share'] == pytest.approx(1.0)
 
 
-def test_detect_tenures_long_gap_splits_run():
-    """A gap > MAX_TENURE_GAP_DAYS (730) splits."""
+def test_long_silence_does_not_split():
+    """A 5-year quiet stretch with no contradicting evidence is still one tenure."""
     timeline = [
         _evt('2010-01-01', 'A', 'kingsett'),
-        _evt('2011-01-01', 'B', 'kingsett'),
-        # 2-year+1-day gap — should split
-        _evt('2013-01-02', 'C', 'kingsett'),
-        _evt('2014-01-01', 'D', 'kingsett'),
+        _evt('2010-06-01', 'B', 'kingsett'),
+        # Silence 2011-2017 — no events at all
+        _evt('2018-01-01', 'C', 'kingsett'),
+        _evt('2024-01-01', 'D', 'kingsett'),
+    ]
+    tenures = detect_tenures(timeline)
+    assert len(tenures) == 1
+    assert tenures[0]['start_date'] == '2010-01-01'
+    assert tenures[0]['end_date'] == '2024-01-01'
+    assert tenures[0]['n_party_sides'] == 4
+
+
+def test_two_stems_at_one_anchor_emit_two_tenures():
+    timeline = [
+        _evt('2010-01-01', 'A', 'dh'),
+        _evt('2012-01-01', 'B', 'dh'),
+        _evt('2014-01-01', 'C', 'dh'),
+        _evt('2018-01-01', 'D', 'midland'),
+        _evt('2020-01-01', 'E', 'midland'),
     ]
     tenures = detect_tenures(timeline)
     assert len(tenures) == 2
-    assert tenures[0]['start_date'] == '2010-01-01'
-    assert tenures[0]['end_date'] == '2011-01-01'
-    assert tenures[1]['start_date'] == '2013-01-02'
-    assert tenures[1]['end_date'] == '2014-01-01'
+    by_stem = {t['dominant_stem']: t for t in tenures}
+    assert by_stem['dh']['start_date'] == '2010-01-01'
+    assert by_stem['dh']['end_date'] == '2014-01-01'
+    assert by_stem['dh']['n_party_sides'] == 3
+    assert by_stem['midland']['start_date'] == '2018-01-01'
+    assert by_stem['midland']['end_date'] == '2020-01-01'
+    assert by_stem['midland']['n_party_sides'] == 2
+    # Dominance: dh = 3/5 = 0.6, midland = 2/5 = 0.4
+    assert by_stem['dh']['dominance_share'] == pytest.approx(0.6)
+    assert by_stem['midland']['dominance_share'] == pytest.approx(0.4)
 
 
-def test_detect_tenures_stem_change_with_grace_buffer():
-    """3 off-stem events in a row don't split (grace=3); 4 do."""
+def test_interleaved_stems_still_emit_one_tenure_per_stem():
+    """Even if events alternate, each stem gets its own MIN/MAX tenure."""
     timeline = [
         _evt('2018-01-01', 'A', 'dh'),
-        _evt('2018-06-01', 'B', 'dh'),
-        _evt('2019-01-01', 'C', 'dh'),
-        _evt('2019-06-01', 'D', 'dh'),
-        _evt('2020-01-01', 'E', 'dh'),
-        # Three off-stem events — within grace, don't split yet
-        _evt('2020-03-01', 'F', 'midland'),
-        _evt('2020-04-01', 'G', 'midland'),
-        _evt('2020-05-01', 'H', 'midland'),
-        # Fourth off-stem event — exceeds grace, split here
-        _evt('2020-06-01', 'I', 'midland'),
-        _evt('2020-07-01', 'J', 'midland'),
+        _evt('2019-01-01', 'B', 'midland'),
+        _evt('2020-01-01', 'C', 'dh'),
+        _evt('2021-01-01', 'D', 'midland'),
     ]
     tenures = detect_tenures(timeline)
     assert len(tenures) == 2
-    assert tenures[0]['dominant_stem'] == 'dh'
-    assert tenures[1]['dominant_stem'] == 'midland'
-    # First tenure should end at the LAST on-stem event before the split,
-    # not the start of the off-stem run.
-    assert tenures[0]['end_date'] == '2020-01-01'
-    assert tenures[1]['start_date'] == '2020-03-01'
+    by_stem = {t['dominant_stem']: t for t in tenures}
+    assert by_stem['dh']['start_date'] == '2018-01-01'
+    assert by_stem['dh']['end_date'] == '2020-01-01'
+    assert by_stem['midland']['start_date'] == '2019-01-01'
+    assert by_stem['midland']['end_date'] == '2021-01-01'
 
 
-def test_detect_tenures_unmapped_events_count_in_volume_but_not_dominance():
-    """Unmapped (stem=None) events are part of the tenure's window but
-    dilute its dominance share."""
+def test_unmapped_events_dilute_dominance_but_dont_create_tenures():
+    """An event with stem=None contributes to volume (denominator) but doesn't
+    seed its own tenure."""
     timeline = [
         _evt('2018-01-01', 'A', 'kingsett'),
-        _evt('2018-06-01', 'B', 'kingsett'),
-        _evt('2019-01-01', 'C', None),  # unmapped
-        _evt('2019-06-01', 'D', 'kingsett'),
+        _evt('2018-06-01', 'B', None),
+        _evt('2019-01-01', 'C', 'kingsett'),
+        _evt('2019-06-01', 'D', None),
     ]
     tenures = detect_tenures(timeline)
     assert len(tenures) == 1
     t = tenures[0]
     assert t['dominant_stem'] == 'kingsett'
-    assert t['n_party_sides'] == 4
-    assert t['dominance_share'] == pytest.approx(0.75)
+    assert t['n_party_sides'] == 2
+    assert t['dominance_share'] == pytest.approx(0.5)
 
 
-def test_detect_tenures_empty_timeline_returns_empty():
+def test_empty_timeline_returns_empty():
     assert detect_tenures([]) == []
 
 
-def test_detect_tenures_all_unmapped_yields_no_tenures():
-    """If we never see a mapped stem, there's no tenure to anchor on."""
+def test_all_unmapped_yields_no_tenures():
     timeline = [_evt('2018-01-01', 'A', None), _evt('2019-01-01', 'B', None)]
-    tenures = detect_tenures(timeline)
-    assert tenures == []
+    assert detect_tenures(timeline) == []
 
 
-def test_detect_tenures_open_tenure_when_recent():
-    """A tenure with the latest event within RECENT_TENURE_DAYS of `now`
-    emits end_date=None (ongoing)."""
-    timeline = [
-        _evt('2024-01-01', 'A', 'kingsett'),
-        _evt('2025-01-01', 'B', 'kingsett'),
-        _evt('2026-04-01', 'C', 'kingsett'),
-    ]
+def test_now_argument_is_ignored():
+    """The old signature took `now` for "ongoing" detection. Now it's ignored."""
+    timeline = [_evt('2018-01-01', 'A', 'kingsett')]
     tenures = detect_tenures(timeline, now='2026-04-30')
     assert len(tenures) == 1
-    assert tenures[0]['end_date'] is None  # ongoing
-
-
-def test_detect_tenures_closed_tenure_when_dormant():
-    """A tenure whose last event is older than RECENT_TENURE_DAYS gets a
-    fixed end_date (the last event's date)."""
-    timeline = [
-        _evt('2018-01-01', 'A', 'kingsett'),
-        _evt('2019-01-01', 'B', 'kingsett'),
-    ]
-    tenures = detect_tenures(timeline, now='2026-04-30')
-    assert len(tenures) == 1
-    assert tenures[0]['end_date'] == '2019-01-01'
+    assert tenures[0]['end_date'] == '2018-01-01'  # NOT None — just the last observed date

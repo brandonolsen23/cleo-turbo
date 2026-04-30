@@ -1,17 +1,16 @@
 """Stage A6: Conflict detection.
 
-Scans auto_group_anchor_tenures and auto_contact_tenures for four conflict
+Scans auto_group_anchor_tenures and auto_contact_tenures for three conflict
 patterns:
   - anchor_reassignment: same anchor with non-overlapping tenures on
     different groups.
   - contact_overlap: same contact with overlapping tenures on different groups.
-  - abrupt_tenure_end: high-volume tenure ended cleanly without a successor.
   - transient_tenure: short-window low-volume tenures (4950 Yonge case).
 
 These are surfaced for human review in the Conflicts UI (Plan H3); they
 don't change the algorithm's outputs.
 
-Idempotent: clears auto_conflict_flags at start, then re-emits all four
+Idempotent: clears auto_conflict_flags at start, then re-emits all three
 conflict types. This means A4-emitted conflict rows are wiped when A6 runs
 (the orchestrator enforces A4 → contact_tenures → A6 order; A6's output is
 the canonical set of structural conflicts derived from the tenure tables).
@@ -19,17 +18,12 @@ the canonical set of structural conflicts derived from the tenure tables).
 from __future__ import annotations
 
 import sqlite3
-from datetime import datetime, date
+from datetime import date
 
 from cleo.discovery_v2.constants import (
     MIN_PERMANENT_TENURE_DAYS,
     MIN_TENURE_PARTY_COUNT,
-    RECENT_TENURE_DAYS,
 )
-
-# An "abrupt" tenure end is a high-volume tenure with no successor.
-# Tenures with at least this many events are inspected for abrupt ends.
-ABRUPT_TENURE_END_MIN_VOLUME = 50
 
 
 def _days_between(a: str, b: str) -> int:
@@ -42,21 +36,17 @@ def detect_conflicts(
     verbose: bool = True,
     now: str | None = None,
 ) -> dict:
-    """Idempotent — clears prior flags and recomputes all four conflict types.
+    """Idempotent — clears prior flags and recomputes all three conflict types.
 
     Args:
         conn: SQLite connection (must have auto_group_anchor_tenures,
               auto_contact_tenures, auto_conflict_flags tables).
         verbose: If True, print a summary line when done.
-        now: ISO date string for "today" used in abrupt_tenure_end detection.
-             Defaults to the actual current date. Exposed for testing.
+        now: Ignored. Kept for backward compatibility with the old signature.
 
     Returns:
         Dict with key 'n_conflicts' (total rows inserted).
     """
-    if now is None:
-        now = datetime.now().date().isoformat()
-
     # Idempotent: clear the entire table and re-derive everything.
     conn.execute('DELETE FROM auto_conflict_flags')
 
@@ -92,8 +82,7 @@ def detect_conflicts(
             if a['auto_group_id'] == b['auto_group_id']:
                 continue
             # Non-overlapping: a ends before b starts.
-            # An open-ended tenure (end_date IS NULL) never ends, so treat it
-            # as extending to the far future ('9999-12-31').
+            # end_date is always set now; use it directly.
             a_end = a['end_date'] or '9999-12-31'
             if a_end < b['start_date']:
                 flag_rows.append((
@@ -173,15 +162,14 @@ def detect_conflicts(
     # A tenure that is both low-volume (< MIN_TENURE_PARTY_COUNT) AND
     # short-duration (< MIN_PERMANENT_TENURE_DAYS). Surfaces one-off
     # appearances like "4950 Yonge" single transactions.
-    # Only tenures with an end_date are candidates (open tenures may still
-    # be accumulating events).
+    # Under the simplified model end_date is always set (last observed date),
+    # so no NULL filter needed.
     transient_candidates = conn.execute(
         """
         SELECT auto_group_id, anchor_type, anchor_value,
                start_date, end_date, n_party_sides_in_window
           FROM auto_group_anchor_tenures
          WHERE n_party_sides_in_window < ?
-           AND end_date IS NOT NULL
         """,
         (MIN_TENURE_PARTY_COUNT,),
     ).fetchall()
@@ -202,41 +190,6 @@ def detect_conflicts(
                     f'tenure on {row["auto_group_id"]} '
                     f'({row["start_date"]}–{row["end_date"]}, '
                     f'{row["n_party_sides_in_window"]} parties). Likely one-off.'
-                ),
-            ))
-
-    # ── 4. abrupt_tenure_end ──────────────────────────────────────────────
-    # A high-volume tenure (>= ABRUPT_TENURE_END_MIN_VOLUME events) that
-    # ended cleanly (has an end_date) more than RECENT_TENURE_DAYS ago.
-    # Often signals an operator wind-down or a data gap — not just a quiet
-    # period.
-    abrupt_candidates = conn.execute(
-        """
-        SELECT auto_group_id, anchor_type, anchor_value,
-               start_date, end_date, n_party_sides_in_window
-          FROM auto_group_anchor_tenures
-         WHERE end_date IS NOT NULL
-           AND n_party_sides_in_window >= ?
-        """,
-        (ABRUPT_TENURE_END_MIN_VOLUME,),
-    ).fetchall()
-
-    for row in abrupt_candidates:
-        days_since_end = _days_between(row['end_date'], now)
-        if days_since_end > RECENT_TENURE_DAYS:
-            flag_rows.append((
-                'abrupt_tenure_end',
-                'anchor',
-                row['anchor_value'],
-                row['anchor_type'],
-                row['auto_group_id'],
-                None,  # group_b
-                row['end_date'],
-                (
-                    f'{row["anchor_type"]} {row["anchor_value"]} had '
-                    f'{row["n_party_sides_in_window"]} parties through '
-                    f'{row["end_date"]} on {row["auto_group_id"]} '
-                    f'and zero since. Likely operator wind-down or data gap.'
                 ),
             ))
 

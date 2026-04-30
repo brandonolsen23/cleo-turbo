@@ -107,22 +107,6 @@ def test_transient_tenure_flagged():
     assert len(flags) == 1
 
 
-def test_abrupt_tenure_end_flagged():
-    """Tenure with high volume (>=50) that ended >RECENT_TENURE_DAYS ago without a successor."""
-    conn = _make_db()
-    conn.execute(
-        "INSERT INTO auto_group_anchor_tenures "
-        "(auto_group_id, anchor_type, anchor_value, "
-        " start_date, end_date, n_party_sides_in_window, "
-        " dominance_share_in_window, score) VALUES "
-        "('AGRP_X', 'phone', 'P_DEAD', '2018-01-01', '2022-12-31', 200, 0.95, 8.5)"
-    )
-    detect_conflicts(conn, verbose=False, now='2026-04-30')
-    flags = conn.execute(
-        "SELECT * FROM auto_conflict_flags WHERE conflict_type='abrupt_tenure_end'"
-    ).fetchall()
-    assert len(flags) == 1
-
 
 def test_no_conflicts_for_clean_data():
     """Single tenure per anchor, single group per contact, recent activity → 0 flags."""

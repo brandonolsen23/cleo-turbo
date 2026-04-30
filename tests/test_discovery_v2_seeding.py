@@ -351,9 +351,9 @@ def test_contact_tenures_built_from_group_members():
     assert r['start_date'] == '2024-01-01'
 
 
-def test_contact_tenures_split_into_two_windows_with_long_gap():
+def test_contact_tenures_long_gap_is_one_tenure():
     """A contact at the same group, 5 events 2018, 5 events 2024 (>730d gap)
-    → 2 contact tenure rows."""
+    → ONE contact tenure row (MIN to MAX; no gap splitting)."""
     conn = _make_db_with_auto_group_members()
     # Need promotion events
     for i in range(5):
@@ -377,10 +377,10 @@ def test_contact_tenures_split_into_two_windows_with_long_gap():
         "FROM auto_contact_tenures WHERE contact_fingerprint='jc' "
         "ORDER BY start_date"
     ).fetchall()
-    assert len(rows) == 2
+    assert len(rows) == 1
     assert rows[0]['start_date'] == '2018-01-01'
-    assert rows[0]['end_date'] == '2018-05-01'
-    assert rows[1]['start_date'] == '2024-01-01'
+    assert rows[0]['end_date'] == '2024-05-01'
+    assert rows[0]['n_party_sides_in_window'] == 10
 
 
 def test_contact_tenures_idempotent():

@@ -196,9 +196,6 @@ def build_contact_tenures(conn: sqlite3.Connection, *, verbose: bool = True) -> 
     correlated SQL call per contact and one SQL call per timeline event.
     """
     from cleo.discovery_v2.tenures import detect_tenures
-    from datetime import datetime, timezone
-
-    today = datetime.now(timezone.utc).date().isoformat()
 
     conn.execute('DELETE FROM auto_contact_tenures')
 
@@ -267,7 +264,7 @@ def build_contact_tenures(conn: sqlite3.Connection, *, verbose: bool = True) -> 
             events_by_group.setdefault(gid, []).append(ev)
 
         for gid, events in events_by_group.items():
-            tenures = detect_tenures(events, now=today)
+            tenures = detect_tenures(events)
             for t in tenures:
                 rows.append((
                     cf, gid, t['start_date'], t['end_date'], t['n_party_sides'],

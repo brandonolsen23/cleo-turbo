@@ -9,7 +9,6 @@ API code that still reads the static snapshot).
 """
 from __future__ import annotations
 import sqlite3
-from datetime import datetime, timezone
 
 from cleo.discovery_v2.timelines import iter_all_anchor_timelines
 from cleo.discovery_v2.tenures import detect_tenures
@@ -34,14 +33,12 @@ def build_anchor_scores(conn: sqlite3.Connection, *, verbose: bool = True) -> di
     """)
     conn.execute('DELETE FROM anchor_uniqueness')
 
-    today = datetime.now(timezone.utc).date().isoformat()
-
     pending_rows: list[tuple] = []
     snapshot_rows: list[tuple] = []  # for anchor_uniqueness
 
     n_tenures = 0
     for anchor_type, anchor_value, timeline in iter_all_anchor_timelines(conn):
-        tenures = detect_tenures(timeline, now=today)
+        tenures = detect_tenures(timeline)
         if not tenures:
             continue
         for t in tenures:
@@ -51,12 +48,8 @@ def build_anchor_scores(conn: sqlite3.Connection, *, verbose: bool = True) -> di
                 t['n_party_sides'], t['dominance_share'], t['score'],
             ))
             n_tenures += 1
-        # Snapshot: pick the latest tenure (the one with end_date=None first,
-        # else the largest end_date).
-        latest = max(
-            tenures,
-            key=lambda t: (t['end_date'] is None, t['end_date'] or t['start_date']),
-        )
+        # Snapshot: pick the tenure with the latest end_date.
+        latest = max(tenures, key=lambda t: t['end_date'])
         snapshot_rows.append((
             anchor_type, anchor_value,
             latest['dominant_stem'],

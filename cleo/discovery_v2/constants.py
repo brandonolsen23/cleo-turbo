@@ -34,24 +34,12 @@ MATCH_SCORE_SINGLE_WEAK_SIGNAL          = 0.3
 # Threshold for actually attaching a party-side (Stage A4).
 EXPANSION_ATTACH_THRESHOLD = 0.5
 
-# ── Plan H2: Tenure detection ──────────────────────────────────────────────
-# Gap larger than this between consecutive events on the same anchor splits
-# the run into two tenures (operator likely changed offices / phones).
-MAX_TENURE_GAP_DAYS = 730  # 2 years
+# ── Plan H2: Tenure shape thresholds ──────────────────────────────────────
+# Tenures are observed first→last per (anchor, stem). The conflict detector
+# uses these thresholds to flag suspicious shape (low volume, short span).
 
-# Tenure with end_date later than (today - this) counts as "active" for
-# seeding purposes. Anchors whose latest tenure ended before this fall into
-# "dormant" (still seedable, but flagged as historical).
-RECENT_TENURE_DAYS = 1095  # 3 years
-
-# A tenure shorter than this with low volume gets a 'transient_tenure'
-# conflict flag.
-MIN_PERMANENT_TENURE_DAYS = 365  # 1 year
-
-# Tenures with fewer events than this are flagged as transient (4950 Yonge
-# one-off case).
+# A tenure with fewer party-sides than this AND duration < MIN_PERMANENT_TENURE_DAYS
+# gets a 'transient_tenure' flag (e.g. one-off transactions at multi-tenant
+# buildings).
 MIN_TENURE_PARTY_COUNT = 3
-
-# How many off-stem events to buffer before splitting a run into a new
-# tenure. Smaller value = stricter tenure boundaries.
-RUN_GRACE_EVENTS = 3
+MIN_PERMANENT_TENURE_DAYS = 365  # 1 year
