@@ -191,8 +191,10 @@ def build_contact_tenures(conn: sqlite3.Connection, *, verbose: bool = True) -> 
 
     Must be called AFTER Stage A4 (build_expansion), since auto_group_members
     is the source of (party → group) mappings used here.
+
+    Bulk-loads all lookups into Python dicts (3 queries total) instead of one
+    correlated SQL call per contact and one SQL call per timeline event.
     """
-    from cleo.discovery_v2.timelines import build_anchor_timeline
     from cleo.discovery_v2.tenures import detect_tenures
     from datetime import datetime, timezone
 
@@ -200,35 +202,69 @@ def build_contact_tenures(conn: sqlite3.Connection, *, verbose: bool = True) -> 
 
     conn.execute('DELETE FROM auto_contact_tenures')
 
-    # Find every contact that appears on at least one party_side member of any group.
-    contact_rows = conn.execute(
-        """SELECT DISTINCT pf.contact_fingerprint
-           FROM auto_group_members agm
-           JOIN party_fingerprints pf
-             ON pf.source_id = agm.source_id AND pf.side = agm.side
-           WHERE agm.member_type = 'party_side'
-             AND pf.contact_fingerprint IS NOT NULL
-             AND pf.contact_fingerprint != ''"""
-    ).fetchall()
+    # Pre-load 1: (source_id, side) → auto_group_id for all party_side members.
+    side_to_group: dict[tuple[str, str], str] = {}
+    for r in conn.execute(
+        "SELECT source_id, side, auto_group_id FROM auto_group_members "
+        "WHERE member_type = 'party_side'"
+    ):
+        side_to_group[(r['source_id'], r['side'])] = r['auto_group_id']
+
+    # Pre-load 2: (source_id, side) → dominant stem (same window query as iter_all_anchor_timelines).
+    side_dominant_stem: dict[tuple[str, str], str] = {}
+    for r in conn.execute(
+        """
+        SELECT source_id, side, stem
+        FROM (
+            SELECT pa.source_id, pa.side, m.stem,
+                   ROW_NUMBER() OVER (
+                       PARTITION BY pa.source_id, pa.side
+                       ORDER BY COUNT(*) DESC, m.stem ASC
+                   ) AS rk
+            FROM party_atoms pa
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            WHERE pa.atom_type = 'brand_phrase'
+            GROUP BY pa.source_id, pa.side, m.stem
+        ) WHERE rk = 1
+        """
+    ):
+        side_dominant_stem[(r['source_id'], r['side'])] = r['stem']
+
+    # Pre-load 3: contact_fingerprint → list of (sale_date, source_id, side) — only for
+    # party-sides that are members of some group (inner join against side_to_group keys).
+    # We only need contacts in groups, so join against auto_group_members directly.
+    events_by_contact: dict[str, list[tuple[str, str, str]]] = {}
+    for r in conn.execute(
+        """
+        SELECT pf.contact_fingerprint, pf.source_id, pf.side, pf.sale_date
+        FROM party_fingerprints pf
+        JOIN auto_group_members agm
+          ON agm.source_id = pf.source_id AND agm.side = pf.side
+        WHERE agm.member_type = 'party_side'
+          AND pf.contact_fingerprint IS NOT NULL AND pf.contact_fingerprint != ''
+          AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+        ORDER BY pf.contact_fingerprint, pf.sale_date, pf.source_id, pf.side
+        """
+    ):
+        events_by_contact.setdefault(r['contact_fingerprint'], []).append(
+            (r['sale_date'], r['source_id'], r['side'])
+        )
 
     rows: list[tuple] = []
-    for cr in contact_rows:
-        cf = cr['contact_fingerprint']
-        timeline = build_anchor_timeline(conn, 'contact', cf)
-        if not timeline:
-            continue
-
-        # Group events by which group their party belongs to (via auto_group_members).
+    for cf, evts in events_by_contact.items():
+        # Build timeline events with stem, then bucket by group
         events_by_group: dict[str, list[dict]] = {}
-        for ev in timeline:
-            mem = conn.execute(
-                "SELECT auto_group_id FROM auto_group_members "
-                "WHERE source_id = ? AND side = ? AND member_type = 'party_side'",
-                (ev['source_id'], ev['side']),
-            ).fetchone()
-            if mem is None:
+        for (sd, sid, side) in evts:
+            gid = side_to_group.get((sid, side))
+            if gid is None:
                 continue
-            events_by_group.setdefault(mem['auto_group_id'], []).append(ev)
+            ev = {
+                'sale_date': sd,
+                'source_id': sid,
+                'side':      side,
+                'stem':      side_dominant_stem.get((sid, side)),
+            }
+            events_by_group.setdefault(gid, []).append(ev)
 
         for gid, events in events_by_group.items():
             tenures = detect_tenures(events, now=today)

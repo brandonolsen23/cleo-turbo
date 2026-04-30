@@ -13,32 +13,48 @@ def _tokenize(phrase: str) -> list[str]:
     return [t for t in (phrase or '').split() if t]
 
 
+def _candidate_from_tokens(
+    tokens: list[str],
+    token_info: dict[str, tuple[float, bool, bool]],
+) -> Optional[Tuple[str, str]]:
+    """Like extract_candidate_stem, but operates on a pre-loaded token_info dict.
+
+    token_info: {token: (idf, is_distinctive, is_pa)}
+
+    Returns (stem, stem_type) or None.
+    """
+    if not tokens:
+        return None
+    distinctive = [(t, token_info[t][0]) for t in tokens if t in token_info and token_info[t][1]]
+    if distinctive:
+        token, _ = max(distinctive, key=lambda x: x[1])
+        return (token, 'distinctive')
+    pa = [(t, token_info[t][0]) for t in tokens if t in token_info and token_info[t][2]]
+    if pa:
+        token, _ = max(pa, key=lambda x: x[1])
+        return (token, 'position_anchor')
+    return None
+
+
 def extract_candidate_stem(phrase: str, conn: sqlite3.Connection) -> Optional[Tuple[str, str]]:
     """Pick a candidate stem from a brand_phrase. Returns (stem, stem_type) or None.
 
     Rule: highest-IDF distinctive 1-gram in the phrase. If none, fall back to
     the highest-position-rank PA 1-gram.
+
+    NOTE: This function loads token_info from the DB on every call. For bulk use
+    over many phrases, prefer building token_info once with a SELECT over
+    brand_token_summary and calling _candidate_from_tokens() directly.
     """
-    tokens = _tokenize(phrase)
-    if not tokens:
-        return None
-    placeholders = ','.join(['?'] * len(tokens))
-    rows = conn.execute(
-        f"""SELECT token, idf, is_distinctive,
-                   COALESCE(is_position_anchor, 0) AS is_pa
-           FROM brand_token_summary
-           WHERE token IN ({placeholders})""",
-        tokens,
-    ).fetchall()
-    distinctive = [(r['token'], r['idf']) for r in rows if r['is_distinctive']]
-    if distinctive:
-        token, _ = max(distinctive, key=lambda x: x[1])
-        return (token, 'distinctive')
-    pa = [(r['token'], r['idf']) for r in rows if r['is_pa']]
-    if pa:
-        token, _ = max(pa, key=lambda x: x[1])
-        return (token, 'position_anchor')
-    return None
+    token_info: dict[str, tuple[float, bool, bool]] = {
+        r['token']: (r['idf'], bool(r['is_distinctive']), bool(r['is_pa']))
+        for r in conn.execute(
+            "SELECT token, idf, is_distinctive, "
+            "       COALESCE(is_position_anchor, 0) AS is_pa "
+            "FROM brand_token_summary"
+        )
+    }
+    return _candidate_from_tokens(_tokenize(phrase), token_info)
 
 
 def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
@@ -52,13 +68,23 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     conn.execute('DELETE FROM brand_stem')
     conn.execute('DELETE FROM brand_stem_phrase_map')
 
-    # Step 1: collect every distinct brand_phrase + its candidate stem
+    # Step 1: collect every distinct brand_phrase + its candidate stem.
+    # Pre-load token_info once (one query) instead of one query per phrase.
+    token_info: dict[str, tuple[float, bool, bool]] = {
+        r['token']: (r['idf'], bool(r['is_distinctive']), bool(r['is_pa']))
+        for r in conn.execute(
+            "SELECT token, idf, is_distinctive, "
+            "       COALESCE(is_position_anchor, 0) AS is_pa "
+            "FROM brand_token_summary"
+        )
+    }
+
     phrases = [r['atom_value'] for r in conn.execute(
         "SELECT DISTINCT atom_value FROM party_atoms WHERE atom_type='brand_phrase'"
     )]
     phrase_to_candidate: dict[str, tuple[str, str]] = {}
     for ph in phrases:
-        c = extract_candidate_stem(ph, conn)
+        c = _candidate_from_tokens(_tokenize(ph), token_info)
         if c is not None:
             phrase_to_candidate[ph] = c
 
