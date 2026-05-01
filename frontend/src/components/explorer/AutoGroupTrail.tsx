@@ -4,7 +4,7 @@ import "@xyflow/react/dist/style.css";
 import { Heading, Text, Badge } from "@radix-ui/themes";
 import type {
   AutoGroupTrailResponse,
-  AutoGroupTrailThread,
+  AutoGroupTrailThreadGroup,
 } from "../../types";
 
 
@@ -21,14 +21,25 @@ function partyLabel(p: AutoGroupTrailResponse['party']): string {
   return lines.join("\n");
 }
 
-function threadEdgeColor(thread: AutoGroupTrailThread, primaryGroupId: string | null): string {
-  // Conflict: anchor points at >1 group, or points at a group that's NOT primary.
-  if (thread.groups.length > 1) return "var(--tomato-9)";
-  if (thread.groups.length === 0) return "var(--gray-9)";
-  if (primaryGroupId && thread.groups[0].auto_group_id !== primaryGroupId) {
-    return "var(--amber-9)";
+function edgeStyleForGroup(g: AutoGroupTrailThreadGroup): {
+  color: string;
+  dasharray: string | undefined;
+  strokeWidth: number;
+  label_suffix: string | null;
+} {
+  const hasTenure = g.start_date && g.end_date;
+  if (!hasTenure) {
+    return { color: 'var(--gray-9)', dasharray: '4 4', strokeWidth: 1, label_suffix: '(no tenure)' };
   }
-  return "var(--jade-9)";
+  if (g.spans_sale_date === 1) {
+    return { color: 'var(--jade-9)', dasharray: undefined, strokeWidth: 2, label_suffix: null };
+  }
+  return {
+    color: 'var(--amber-9)',
+    dasharray: '4 4',
+    strokeWidth: 1.5,
+    label_suffix: `tenure ${g.start_date} → ${g.end_date} (mismatch)`,
+  };
 }
 
 const tierColor: Record<string, "jade" | "amber" | "gray"> = {
@@ -118,16 +129,18 @@ export default function AutoGroupTrail({ trail }: { trail: AutoGroupTrailRespons
         return;
       }
       if (thread.groups.length > 1) conflict = true;
-      const color = threadEdgeColor(thread, primaryId);
       thread.groups.forEach((g, gIdx) => {
+        const style = edgeStyleForGroup(g);
+        const baseLabel = `${thread.anchor_type}: ${thread.anchor_value}`;
+        const label = style.label_suffix ? `${baseLabel}\n${style.label_suffix}` : baseLabel;
         edges.push({
           id: `edge:${threadIdx}:${gIdx}`,
           source: partyId,
           target: `group:${g.auto_group_id}`,
-          label: `${thread.anchor_type}: ${thread.anchor_value}`,
-          labelStyle: { fontSize: 10, fill: color },
-          style: { stroke: color, strokeWidth: 2 },
-          markerEnd: { type: MarkerType.ArrowClosed, color },
+          label,
+          labelStyle: { fontSize: 10, fill: style.color },
+          style: { stroke: style.color, strokeWidth: style.strokeWidth, ...(style.dasharray ? { strokeDasharray: style.dasharray } : {}) },
+          markerEnd: { type: MarkerType.ArrowClosed, color: style.color },
         });
       });
     });

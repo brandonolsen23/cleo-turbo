@@ -2119,6 +2119,9 @@ export interface AutoGroupTrailThreadGroup {
   display_name: string;
   tier: 'confirmed' | 'probable' | 'candidate';
   score_in_group: number;
+  start_date?: string;
+  end_date?: string;
+  spans_sale_date?: 0 | 1;
 }
 
 export interface AutoGroupTrailThread {
