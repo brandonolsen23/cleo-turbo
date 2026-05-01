@@ -2170,3 +2170,33 @@ export interface AddressUnitSummary {
 export interface AddressUnitsAtRootResponse {
   results: AddressUnitSummary[];
 }
+
+// ============================================================
+// Silo timelines (Plan H3)
+// ============================================================
+
+export interface SiloTimelineEvent {
+  sale_date: string;
+  source_id: string;
+  side: 'buyer' | 'seller';
+  party_phrase: string | null;
+  auto_group_id: string | null;
+}
+
+export interface SiloTimelineTenure {
+  auto_group_id: string;
+  canonical_stem: string;
+  start_date: string;
+  end_date: string;
+  n_party_sides_in_window: number;
+  dominance_share_in_window?: number;  // present for anchor tenures, absent for contact tenures
+  score?: number;                      // ditto
+  is_active: 0 | 1;
+}
+
+export interface SiloTimelineResponse {
+  value: string;
+  anchor_type: 'phone' | 'address_unit' | 'contact';
+  events: SiloTimelineEvent[];
+  tenures: SiloTimelineTenure[];
+}
