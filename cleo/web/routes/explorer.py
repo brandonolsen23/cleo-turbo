@@ -18,7 +18,9 @@ GET /api/explorer/addresses/roots                   — list address roots (num|
 GET /api/explorer/addresses/roots/:key              — address root detail (key = num|name)
 GET /api/explorer/addresses/roots/:key/units        — units within a root with brand-stem dominance
 GET /api/explorer/addresses/units/:key              — single unit detail
+GET /api/explorer/addresses/units/:key/timeline     — chronological events + tenure windows
 GET /api/explorer/contacts                          — list contact fingerprints
+GET /api/explorer/contacts/:value/timeline          — chronological events + tenure windows
 GET /api/explorer/contacts/:fingerprint             — contact detail
 GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
 GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
@@ -1444,6 +1446,65 @@ def address_unit_detail(
     return dict(summary)
 
 
+@router.get("/addresses/units/{key}/timeline")
+def address_unit_timeline(
+    key: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Chronological events for an address_unit anchor + tenure windows.
+
+    Key format: 'city|num|name|suffix|direction|suite_type|suite_number' (7 fields).
+    """
+    parts = key.split('|', 6)
+    if len(parts) != 7:
+        raise HTTPException(status_code=400, detail=f'Invalid unit key: {key!r}')
+
+    pf_match_clause = (
+        "(COALESCE(pf.city,'') || '|' || COALESCE(pf.street_number,'') || '|' || "
+        "COALESCE(pf.street_name,'') || '|' || COALESCE(pf.street_suffix,'') || '|' || "
+        "COALESCE(pf.street_direction,'') || '|' || COALESCE(pf.suite_type,'') || '|' || "
+        "COALESCE(pf.suite_number,''))"
+    )
+    exists = db.execute(
+        f"SELECT 1 FROM party_fingerprints pf WHERE {pf_match_clause} = ? LIMIT 1",
+        (key,),
+    ).fetchone()
+    if exists is None:
+        raise HTTPException(status_code=404, detail=f'Unknown unit: {key!r}')
+
+    events = [dict(r) for r in db.execute(
+        f"""SELECT pf.sale_date, pf.source_id, pf.side,
+                   (SELECT pa.atom_value FROM party_atoms pa
+                     WHERE pa.source_id = pf.source_id AND pa.side = pf.side
+                       AND pa.atom_type = 'brand_phrase'
+                     ORDER BY pa.id ASC LIMIT 1) AS party_phrase,
+                   agm.auto_group_id
+            FROM party_fingerprints pf
+            LEFT JOIN auto_group_members agm
+              ON agm.source_id = pf.source_id AND agm.side = pf.side
+             AND agm.member_type = 'party_side'
+            WHERE {pf_match_clause} = ?
+              AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+            ORDER BY pf.sale_date ASC, pf.source_id ASC, pf.side ASC""",
+        (key,),
+    )]
+
+    tenures = [dict(r) for r in db.execute(
+        """SELECT agt.auto_group_id, ag.canonical_stem,
+                  agt.start_date, agt.end_date,
+                  agt.n_party_sides_in_window,
+                  agt.dominance_share_in_window,
+                  agt.score,
+                  CASE WHEN agt.end_date >= date('now', '-365 days') THEN 1 ELSE 0 END AS is_active
+           FROM auto_group_anchor_tenures agt
+           JOIN auto_groups ag ON ag.auto_group_id = agt.auto_group_id
+           WHERE agt.anchor_type = 'address_unit' AND agt.anchor_value = ?
+           ORDER BY agt.start_date ASC""",
+        (key,),
+    )]
+
+    return {'value': key, 'anchor_type': 'address_unit', 'events': events, 'tenures': tenures}
+
+
 @router.get("/addresses/roots/{key}")
 def address_root_detail(
     key: str, db=Depends(get_db), user=Depends(get_current_user),
@@ -2498,6 +2559,53 @@ def list_contacts(
         "per_page": per_page,
         "pages": (total + per_page - 1) // per_page,
     }
+
+
+@router.get("/contacts/{value}/timeline")
+def contact_timeline(
+    value: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Chronological events for a contact_fingerprint anchor + tenure windows.
+
+    Note: contact tenures live in auto_contact_tenures (no anchor_type column).
+    """
+    exists = db.execute(
+        "SELECT 1 FROM party_fingerprints WHERE contact_fingerprint = ? LIMIT 1",
+        (value,),
+    ).fetchone()
+    if exists is None:
+        raise HTTPException(status_code=404, detail=f'Unknown contact: {value!r}')
+
+    events = [dict(r) for r in db.execute(
+        """SELECT pf.sale_date, pf.source_id, pf.side,
+                  (SELECT pa.atom_value FROM party_atoms pa
+                    WHERE pa.source_id = pf.source_id AND pa.side = pf.side
+                      AND pa.atom_type = 'brand_phrase'
+                    ORDER BY pa.id ASC LIMIT 1) AS party_phrase,
+                  agm.auto_group_id
+           FROM party_fingerprints pf
+           LEFT JOIN auto_group_members agm
+             ON agm.source_id = pf.source_id AND agm.side = pf.side
+            AND agm.member_type = 'party_side'
+           WHERE pf.contact_fingerprint = ?
+             AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+           ORDER BY pf.sale_date ASC, pf.source_id ASC, pf.side ASC""",
+        (value,),
+    )]
+
+    tenures = [dict(r) for r in db.execute(
+        """SELECT act.auto_group_id, ag.canonical_stem,
+                  act.start_date, act.end_date,
+                  act.n_party_sides_in_window,
+                  CASE WHEN act.end_date >= date('now', '-365 days') THEN 1 ELSE 0 END AS is_active
+           FROM auto_contact_tenures act
+           JOIN auto_groups ag ON ag.auto_group_id = act.auto_group_id
+           WHERE act.contact_fingerprint = ?
+           ORDER BY act.start_date ASC""",
+        (value,),
+    )]
+
+    return {'value': value, 'anchor_type': 'contact', 'events': events, 'tenures': tenures}
 
 
 @router.get("/contacts/{fingerprint}")

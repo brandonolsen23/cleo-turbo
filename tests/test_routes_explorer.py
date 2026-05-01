@@ -522,6 +522,81 @@ def _seeded_db():
                 '2010-01-01', '2026-01-01', 137, 0.95, 6.5)
     """)
 
+    # ── Plan H3 Task 2: address_unit + contact timeline fixture data ──────────
+
+    # Party fingerprint with full address_unit key (incl. street_direction='west')
+    # to back the address_unit timeline endpoint.
+    # Note: no phone field here — avoids inflating the phone anchor coverage
+    # count checked by test_anchors_with_coverage_returns_per_anchor_coverage.
+    conn.execute("""
+        INSERT INTO party_fingerprints
+            (source_id, side, sale_date,
+             city, street_number, street_name, street_suffix, street_direction,
+             suite_type, suite_number, contact_fingerprint)
+        VALUES ('RT-UNIT-1', 'buyer', '2021-03-10',
+                'toronto', '66', 'wellington', 'street', 'west',
+                'suite', '4400', 'rob kumer')
+    """)
+    conn.execute("""
+        INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field)
+        VALUES ('RT-UNIT-1', 'buyer', 'brand_phrase', 'kingsett capital', 'party_name')
+    """)
+    conn.execute(
+        "INSERT OR IGNORE INTO auto_group_members "
+        "(auto_group_id, member_type, source_id, side, match_score) "
+        "VALUES ('AGRP_00001', 'party_side', 'RT-UNIT-1', 'buyer', 1.0)"
+    )
+
+    # Tenure for address_unit anchor 'toronto|66|wellington|street|west|suite|4400'.
+    conn.execute("""
+        INSERT INTO auto_group_anchor_tenures
+           (auto_group_id, anchor_type, anchor_value,
+            start_date, end_date, n_party_sides_in_window,
+            dominance_share_in_window, score)
+        VALUES ('AGRP_00001', 'address_unit', 'toronto|66|wellington|street|west|suite|4400',
+                '2015-06-01', '2026-06-01', 156, 0.88, 5.2)
+    """)
+
+    # Contact fingerprint 'jc' — a new contact distinct from 'rob kumer'.
+    conn.execute("""
+        INSERT INTO contact_fingerprint_summary
+            (contact_fingerprint, n_party_sides, is_distinctive, discovered_at)
+        VALUES ('jc', 2, 1, '2026-04-29')
+    """)
+    conn.execute("""
+        INSERT INTO party_fingerprints
+            (source_id, side, sale_date, contact_fingerprint)
+        VALUES ('RT-JC-1', 'seller', '2022-07-01', 'jc')
+    """)
+    conn.execute("""
+        INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field)
+        VALUES ('RT-JC-1', 'seller', 'brand_phrase', 'jc investments', 'party_name')
+    """)
+    conn.execute(
+        "INSERT OR IGNORE INTO auto_group_members "
+        "(auto_group_id, member_type, source_id, side, match_score) "
+        "VALUES ('AGRP_00001', 'party_side', 'RT-JC-1', 'seller', 0.8)"
+    )
+
+    # auto_contact_tenures table + one tenure row linking 'jc' to AGRP_00001.
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS auto_contact_tenures (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            contact_fingerprint TEXT NOT NULL,
+            auto_group_id TEXT NOT NULL,
+            start_date TEXT NOT NULL,
+            end_date TEXT,
+            n_party_sides_in_window INTEGER NOT NULL,
+            discovered_at TEXT
+        );
+    """)
+    conn.execute("""
+        INSERT INTO auto_contact_tenures
+            (contact_fingerprint, auto_group_id, start_date, end_date,
+             n_party_sides_in_window, discovered_at)
+        VALUES ('jc', 'AGRP_00001', '2020-01-01', '2026-01-01', 8, '2026-04-29')
+    """)
+
     conn.commit()
     return conn
 
@@ -1700,4 +1775,47 @@ def test_phone_timeline_tenure_shape(client):
 
 def test_phone_timeline_404_on_unknown_value(client):
     resp = client.get('/api/explorer/phones/9999999999/timeline')
+    assert resp.status_code == 404
+
+
+# ── Plan H3 Task 2: /addresses/units/:key/timeline ───────────────────────────
+
+def test_address_unit_timeline_returns_events_with_tenures(client):
+    key = 'toronto|66|wellington|street|west|suite|4400'
+    encoded = '%7C'.join(key.split('|'))
+    resp = client.get(f'/api/explorer/addresses/units/{encoded}/timeline')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['anchor_type'] == 'address_unit'
+    assert body['value'] == key
+    assert 'events' in body
+    assert 'tenures' in body
+
+
+def test_address_unit_timeline_400_on_malformed_key(client):
+    resp = client.get('/api/explorer/addresses/units/notenoughparts/timeline')
+    assert resp.status_code == 400
+
+
+def test_address_unit_timeline_404_on_unknown(client):
+    key = 'toronto|99|nowhere|||||'
+    encoded = '%7C'.join(key.split('|'))
+    resp = client.get(f'/api/explorer/addresses/units/{encoded}/timeline')
+    assert resp.status_code == 404
+
+
+# ── Plan H3 Task 2: /contacts/:value/timeline ────────────────────────────────
+
+def test_contact_timeline_returns_events_with_tenures(client):
+    resp = client.get('/api/explorer/contacts/jc/timeline')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['anchor_type'] == 'contact'
+    assert body['value'] == 'jc'
+    assert 'events' in body
+    assert 'tenures' in body
+
+
+def test_contact_timeline_404_on_unknown(client):
+    resp = client.get('/api/explorer/contacts/no_such_contact/timeline')
     assert resp.status_code == 404
