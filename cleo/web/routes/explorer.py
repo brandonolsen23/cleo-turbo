@@ -11,6 +11,7 @@ POST /api/explorer/brands/:token/industry-stopword  — user marks a token
 DELETE /api/explorer/brands/:token/industry-stopword — user unmarks
 GET /api/explorer/phones                            — list phones
 GET /api/explorer/phones/:phone                     — phone detail
+GET /api/explorer/phones/:value/timeline            — chronological events + tenure windows
 GET /api/explorer/addresses                         — list address bases
 GET /api/explorer/addresses/:key                    — address detail (key = num|name|suffix)
 GET /api/explorer/addresses/roots                   — list address roots (num|name)
@@ -1231,6 +1232,52 @@ def phone_detail(
     party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=None)
 
     return {**dict(summary), "party_sides": party_sides}
+
+
+@router.get("/phones/{value}/timeline")
+def phone_timeline(
+    value: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """Chronological events for a phone anchor + the tenure windows for it."""
+    exists = db.execute(
+        "SELECT 1 FROM party_fingerprints WHERE phone = ? LIMIT 1",
+        (value,),
+    ).fetchone()
+    if exists is None:
+        raise HTTPException(status_code=404, detail=f"Unknown phone: {value!r}")
+
+    events = [dict(r) for r in db.execute(
+        """SELECT pf.sale_date, pf.source_id, pf.side,
+                  (SELECT pa.atom_value FROM party_atoms pa
+                    WHERE pa.source_id = pf.source_id AND pa.side = pf.side
+                      AND pa.atom_type = 'brand_phrase'
+                    ORDER BY pa.id ASC LIMIT 1) AS party_phrase,
+                  agm.auto_group_id
+           FROM party_fingerprints pf
+           LEFT JOIN auto_group_members agm
+             ON agm.source_id = pf.source_id AND agm.side = pf.side
+            AND agm.member_type = 'party_side'
+           WHERE pf.phone = ?
+             AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+           ORDER BY pf.sale_date ASC, pf.source_id ASC, pf.side ASC""",
+        (value,),
+    )]
+
+    tenures = [dict(r) for r in db.execute(
+        """SELECT agt.auto_group_id, ag.canonical_stem,
+                  agt.start_date, agt.end_date,
+                  agt.n_party_sides_in_window,
+                  agt.dominance_share_in_window,
+                  agt.score,
+                  CASE WHEN agt.end_date >= date('now', '-365 days') THEN 1 ELSE 0 END AS is_active
+           FROM auto_group_anchor_tenures agt
+           JOIN auto_groups ag ON ag.auto_group_id = agt.auto_group_id
+           WHERE agt.anchor_type = 'phone' AND agt.anchor_value = ?
+           ORDER BY agt.start_date ASC""",
+        (value,),
+    )]
+
+    return {"value": value, "anchor_type": "phone", "events": events, "tenures": tenures}
 
 
 # ─────────────────────────────────────────────────────────────

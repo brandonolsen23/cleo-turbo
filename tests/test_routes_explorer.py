@@ -180,6 +180,18 @@ def _seeded_db():
             sale_date TEXT,
             sale_price REAL
         );
+        CREATE TABLE IF NOT EXISTS auto_group_anchor_tenures (
+            id                          INTEGER PRIMARY KEY AUTOINCREMENT,
+            auto_group_id               TEXT NOT NULL,
+            anchor_type                 TEXT NOT NULL,
+            anchor_value                TEXT NOT NULL,
+            start_date                  TEXT NOT NULL,
+            end_date                    TEXT,
+            n_party_sides_in_window     INTEGER NOT NULL,
+            dominance_share_in_window   REAL NOT NULL,
+            score                       REAL NOT NULL,
+            discovered_at               TEXT DEFAULT (datetime('now'))
+        );
     """)
     # seed: kingsett (2 sides), ontario (3 sides), rasenberg (2 sides)
     # (token, idf, n_party_sides, n_distinct_phrases, is_distinctive, is_excluded,
@@ -497,6 +509,17 @@ def _seeded_db():
            ('toronto', '66', 'wellington', 'street', 'west', 'suite', '4400', 156, 3, 'kingsett', 0.88),
            ('toronto', '66', 'wellington', 'street', 'west', 'suite', '4100', 11, 2, 'weirfoulds', 0.82),
            ('toronto', '66', 'wellington', 'street', 'west', 'floor', '30th flr', 3, 0, NULL, 0.0)
+    """)
+
+    # ── auto_group_anchor_tenures seeds (Plan H3 Task 1) ─────────
+    # Seed a tenure for AGRP_00001 (kingsett) at the phone 4166876700.
+    conn.execute("""
+        INSERT INTO auto_group_anchor_tenures
+           (auto_group_id, anchor_type, anchor_value,
+            start_date, end_date, n_party_sides_in_window,
+            dominance_share_in_window, score)
+        VALUES ('AGRP_00001', 'phone', '4166876700',
+                '2010-01-01', '2026-01-01', 137, 0.95, 6.5)
     """)
 
     conn.commit()
@@ -1640,3 +1663,41 @@ def test_unit_detail_404_on_unknown(client):
 def test_unit_detail_400_on_malformed_key(client):
     resp = client.get('/api/explorer/addresses/units/notenoughparts')
     assert resp.status_code == 400
+
+
+# ── Plan H3 Task 1: /phones/:value/timeline ──────────────────────────────────
+
+def test_phone_timeline_returns_events_with_tenures(client):
+    """Timeline for a phone returns chronological events + tenure windows."""
+    resp = client.get('/api/explorer/phones/4166876700/timeline')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['anchor_type'] == 'phone'
+    assert body['value'] == '4166876700'
+    assert 'events' in body
+    assert 'tenures' in body
+    # Events sorted by sale_date ASC
+    dates = [e['sale_date'] for e in body['events']]
+    assert dates == sorted(dates)
+
+
+def test_phone_timeline_event_shape(client):
+    resp = client.get('/api/explorer/phones/4166876700/timeline')
+    body = resp.json()
+    if body['events']:
+        e = body['events'][0]
+        assert {'sale_date', 'source_id', 'side', 'party_phrase', 'auto_group_id'} <= set(e.keys())
+
+
+def test_phone_timeline_tenure_shape(client):
+    resp = client.get('/api/explorer/phones/4166876700/timeline')
+    body = resp.json()
+    assert len(body['tenures']) >= 1
+    t = body['tenures'][0]
+    assert {'auto_group_id', 'canonical_stem', 'start_date', 'end_date',
+            'n_party_sides_in_window', 'is_active'} <= set(t.keys())
+
+
+def test_phone_timeline_404_on_unknown_value(client):
+    resp = client.get('/api/explorer/phones/9999999999/timeline')
+    assert resp.status_code == 404
