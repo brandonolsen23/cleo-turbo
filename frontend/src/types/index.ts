@@ -2220,3 +2220,45 @@ export interface AutoGroupAnchorTenuresResponse {
   auto_group_id: string;
   tenures: AutoGroupAnchorTenure[];
 }
+
+// ============================================================
+// Conflicts (Plan H3)
+// ============================================================
+
+export type ConflictType =
+  | 'anchor_reassignment'
+  | 'contact_overlap'
+  | 'transient_tenure'
+  | 'expansion_conflict';
+
+export interface ConflictFlag {
+  id: number;
+  conflict_type: ConflictType;
+  entity_type: 'anchor' | 'contact';
+  entity_value: string;
+  entity_subtype: string | null;
+  group_a: string | null;
+  group_b: string | null;
+  date_observed: string | null;
+  description: string;
+  discovered_at: string | null;
+}
+
+export interface ConflictsListResponse {
+  results: ConflictFlag[];
+  total: number;
+  page: number;
+  per_page: number;
+  pages: number;
+}
+
+export interface ConflictDetailEvent {
+  sale_date: string;
+  source_id: string;
+  side: 'buyer' | 'seller';
+}
+
+export interface ConflictDetailResponse {
+  conflict: ConflictFlag;
+  timelines: Record<string, ConflictDetailEvent[]>;
+}

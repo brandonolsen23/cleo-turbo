@@ -41,7 +41,11 @@ export default function ExplorerAutoGroups() {
           Operator portfolios discovered by triangulating Layer 1 anchors.
           Read-only — actions land in Plan C.
         </Text>
-        <Link to="/explorer/auto-groups/tuning" className="text-[13px] no-underline ml-auto"
+        <Link to="/explorer/conflicts" className="text-[13px] no-underline ml-auto"
+              style={{ color: "var(--accent-11)" }}>
+          Conflicts →
+        </Link>
+        <Link to="/explorer/auto-groups/tuning" className="text-[13px] no-underline ml-3"
               style={{ color: "var(--accent-11)" }}>
           Tuning →
         </Link>
