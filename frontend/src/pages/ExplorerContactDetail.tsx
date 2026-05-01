@@ -4,6 +4,7 @@ import { Heading, Text } from "@radix-ui/themes";
 import { fetchApi } from "../api/client";
 import type { ContactFingerprintDetail } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
+import SiloTimeline from "../components/explorer/SiloTimeline";
 
 function titleCase(s: string): string {
   return s.split(" ").map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(" ");
@@ -43,6 +44,8 @@ export default function ExplorerContactDetail() {
           <Heading size="5" mt="2">{data.n_party_sides.toLocaleString()}</Heading>
         </div>
       </div>
+
+      <SiloTimeline anchorType="contact" value={fingerprint!} />
 
       <Heading size="4" mt="6" mb="2">
         Party-sides ({data.party_sides.length.toLocaleString()})

@@ -5,6 +5,7 @@ import { fetchApi } from "../api/client";
 import { formatPhone } from "../lib/utils";
 import type { PhoneDetail } from "../types";
 import PartySideCard from "../components/explorer/PartySideCard";
+import SiloTimeline from "../components/explorer/SiloTimeline";
 
 export default function ExplorerPhoneDetail() {
   const { phone } = useParams<{ phone: string }>();
@@ -62,6 +63,8 @@ export default function ExplorerPhoneDetail() {
           </Heading>
         </div>
       </div>
+
+      <SiloTimeline anchorType="phone" value={phone!} />
 
       <Heading size="4" mt="6" mb="2">
         Party-sides ({data.party_sides.length.toLocaleString()})

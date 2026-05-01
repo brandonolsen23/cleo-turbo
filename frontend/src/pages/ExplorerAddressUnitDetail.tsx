@@ -6,6 +6,7 @@ import type { AddressUnitSummary } from "../types";
 import { UNIQUELY_TENANTED_DOMINANCE_THRESHOLD } from "../lib/explorerConstants";
 import ExplorerTabs from "../components/explorer/ExplorerTabs";
 import AddressTabs from "../components/explorer/AddressTabs";
+import SiloTimeline from "../components/explorer/SiloTimeline";
 
 
 function unitTitle(u: AddressUnitSummary): string {
@@ -71,6 +72,8 @@ export default function ExplorerAddressUnitDetail() {
           </Badge>
         </div>
       )}
+
+      <SiloTimeline anchorType="address_unit" value={key!} />
     </div>
   );
 }
