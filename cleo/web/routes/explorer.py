@@ -32,6 +32,8 @@ GET /api/explorer/auto-groups/tuning/histogram  — confidence-bucket counts for
 GET /api/explorer/auto-groups/tuning/close-to-promotion  — groups within a confidence window
 GET /api/explorer/auto-groups/tuning/missed-stems  — distinctive/PA 1-grams that didn't promote, with dominance-contest data
 GET /api/explorer/auto-groups/parties/:source_id/:side/trail  — single-party evidence trail
+GET /api/explorer/conflicts                         — paginated list of auto_conflict_flags (Plan H3)
+GET /api/explorer/conflicts/:id                     — single conflict + per-group timelines (Plan H3)
 """
 
 from __future__ import annotations
@@ -2688,3 +2690,113 @@ def contact_detail(
     party_sides = _hydrate_party_sides(db, ps_keys, highlight_token=None)
 
     return {**dict(summary), "party_sides": party_sides}
+
+
+# ─────────────────────────────────────────────────────────────
+# Conflicts (Plan H3 Task 9)
+# ─────────────────────────────────────────────────────────────
+
+
+@router.get('/conflicts')
+def list_conflicts(
+    type: Optional[str] = Query(None),
+    entity_type: Optional[str] = Query(None),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=500),
+    db=Depends(get_db), user=Depends(get_current_user),
+):
+    """List auto_conflict_flags, paginated, optionally filtered by type and entity_type."""
+    where = []
+    params: list = []
+    if type:
+        where.append('conflict_type = ?')
+        params.append(type)
+    if entity_type:
+        where.append('entity_type = ?')
+        params.append(entity_type)
+    where_sql = (' WHERE ' + ' AND '.join(where)) if where else ''
+
+    total = db.execute(
+        f'SELECT COUNT(*) FROM auto_conflict_flags{where_sql}', params,
+    ).fetchone()[0]
+    offset = (page - 1) * per_page
+
+    rows = db.execute(
+        f"""SELECT id, conflict_type, entity_type, entity_value, entity_subtype,
+                   group_a, group_b, date_observed, description, discovered_at
+            FROM auto_conflict_flags{where_sql}
+            ORDER BY id DESC
+            LIMIT ? OFFSET ?""",
+        params + [per_page, offset],
+    ).fetchall()
+
+    return {
+        'results': [dict(r) for r in rows],
+        'total': total,
+        'page': page,
+        'per_page': per_page,
+        'pages': (total + per_page - 1) // per_page,
+    }
+
+
+@router.get('/conflicts/{conflict_id}')
+def conflict_detail(
+    conflict_id: int, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """One conflict + per-group event timelines for the affected entity.
+
+    For anchor conflicts, entity_subtype is the anchor_type (phone, address_unit,
+    contact_fingerprint).  For contact conflicts, entity_value is the fingerprint.
+    Timelines are keyed by auto_group_id so the frontend can render two columns.
+    """
+    row = db.execute(
+        """SELECT id, conflict_type, entity_type, entity_value, entity_subtype,
+                  group_a, group_b, date_observed, description, discovered_at
+           FROM auto_conflict_flags WHERE id = ?""",
+        (conflict_id,),
+    ).fetchone()
+    if row is None:
+        raise HTTPException(status_code=404, detail=f'Unknown conflict: {conflict_id}')
+    conflict = dict(row)
+
+    timelines: dict[str, list] = {}
+    if conflict['entity_type'] == 'anchor':
+        # entity_subtype is the anchor_type; entity_value is the anchor value.
+        # Reuse the existing _anchor_pf_clause helper (defined above).
+        clause = _anchor_pf_clause(conflict['entity_subtype'])
+        if clause is None:
+            # Unknown anchor_type — return empty timelines but the conflict itself is valid.
+            return {'conflict': conflict, 'timelines': {}}
+        for gid in (conflict['group_a'], conflict['group_b']):
+            if gid is None:
+                continue
+            timelines[gid] = [dict(r) for r in db.execute(
+                f"""SELECT pf.sale_date, pf.source_id, pf.side
+                    FROM auto_group_members agm
+                    JOIN party_fingerprints pf
+                      ON pf.source_id = agm.source_id AND pf.side = agm.side
+                    WHERE agm.auto_group_id = ?
+                      AND agm.member_type = 'party_side'
+                      AND {clause}
+                      AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+                    ORDER BY pf.sale_date ASC""",
+                (gid, conflict['entity_value']),
+            )]
+    elif conflict['entity_type'] == 'contact':
+        for gid in (conflict['group_a'], conflict['group_b']):
+            if gid is None:
+                continue
+            timelines[gid] = [dict(r) for r in db.execute(
+                """SELECT pf.sale_date, pf.source_id, pf.side
+                   FROM auto_group_members agm
+                   JOIN party_fingerprints pf
+                     ON pf.source_id = agm.source_id AND pf.side = agm.side
+                   WHERE agm.auto_group_id = ?
+                     AND agm.member_type = 'party_side'
+                     AND pf.contact_fingerprint = ?
+                     AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+                   ORDER BY pf.sale_date ASC""",
+                (gid, conflict['entity_value']),
+            )]
+
+    return {'conflict': conflict, 'timelines': timelines}

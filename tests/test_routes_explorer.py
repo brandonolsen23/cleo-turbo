@@ -617,6 +617,37 @@ def _seeded_db():
         VALUES ('rob kumer', 'AGRP_00001', '2010-01-01', '2026-01-01', 45, '2026-04-29')
     """)
 
+    # ── Plan H3 Task 9: seed auto_conflict_flags for conflicts UI tests ──────────
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS auto_conflict_flags (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            conflict_type TEXT NOT NULL,
+            entity_type TEXT NOT NULL,
+            entity_value TEXT NOT NULL,
+            entity_subtype TEXT,
+            group_a TEXT,
+            group_b TEXT,
+            date_observed TEXT,
+            description TEXT NOT NULL,
+            discovered_at TEXT
+        );
+    """)
+    conn.execute("""
+        INSERT INTO auto_conflict_flags
+            (conflict_type, entity_type, entity_value, entity_subtype,
+             group_a, group_b, date_observed, description)
+        VALUES
+            ('anchor_reassignment', 'anchor', '4162655055', 'phone',
+             'AGRP_00001', 'AGRP_00004', '2014-12-31',
+             'phone 4162655055 reassigned from AGRP_00001 to AGRP_00004'),
+            ('contact_overlap', 'contact', 'jc', NULL,
+             'AGRP_00001', 'AGRP_00004', '2018-01-01',
+             'Contact jc held tenures at AGRP_00001 and AGRP_00004; either groups should merge or contact is transient'),
+            ('transient_tenure', 'anchor', 'toronto|4950|yonge||||', 'address_unit',
+             'AGRP_00001', NULL, '2014-06-01',
+             'address_unit toronto|4950|yonge|||| had a transient tenure at AGRP_00001')
+    """)
+
     conn.commit()
     return conn
 
@@ -1894,3 +1925,48 @@ def test_anchor_tenures_sorted_by_score_desc(client):
     resp = client.get('/api/explorer/auto-groups/AGRP_00001/anchor-tenures')
     scores = [t['score'] for t in resp.json()['tenures']]
     assert scores == sorted(scores, reverse=True)
+
+
+# ── Plan H3 Task 9: /conflicts list + /conflicts/:id detail ──────────────────
+
+def test_conflicts_list_returns_results(client):
+    resp = client.get('/api/explorer/conflicts')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert 'results' in body
+    assert 'total' in body
+    assert 'page' in body
+    assert 'per_page' in body
+    assert 'pages' in body
+
+
+def test_conflicts_list_filters_by_type(client):
+    resp = client.get('/api/explorer/conflicts?type=anchor_reassignment')
+    assert resp.status_code == 200
+    body = resp.json()
+    for r in body['results']:
+        assert r['conflict_type'] == 'anchor_reassignment'
+
+
+def test_conflicts_list_paginates(client):
+    resp = client.get('/api/explorer/conflicts?page=1&per_page=2')
+    body = resp.json()
+    assert len(body['results']) <= 2
+
+
+def test_conflict_detail_returns_timelines_per_group(client):
+    list_resp = client.get('/api/explorer/conflicts?per_page=1')
+    if not list_resp.json()['results']:
+        pytest.skip('Fixture has no conflicts')
+    cid = list_resp.json()['results'][0]['id']
+    resp = client.get(f'/api/explorer/conflicts/{cid}')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert {'conflict', 'timelines'} <= set(body.keys())
+    # timelines is a dict keyed by auto_group_id (group_a / group_b)
+    assert isinstance(body['timelines'], dict)
+
+
+def test_conflict_detail_404_on_unknown(client):
+    resp = client.get('/api/explorer/conflicts/9999999')
+    assert resp.status_code == 404
