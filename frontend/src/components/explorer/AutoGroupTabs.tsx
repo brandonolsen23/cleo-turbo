@@ -32,7 +32,7 @@ export default function AutoGroupTabs({ children }: Props) {
                }}>
       <Tabs.List>
         <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
-        <Tabs.Trigger value="anchors">Anchors</Tabs.Trigger>
+        <Tabs.Trigger value="anchors">Anchor Tenures</Tabs.Trigger>
         <Tabs.Trigger value="parties">Parties</Tabs.Trigger>
         <Tabs.Trigger value="graph">Graph</Tabs.Trigger>
         <Tabs.Trigger value="trail">Trail</Tabs.Trigger>

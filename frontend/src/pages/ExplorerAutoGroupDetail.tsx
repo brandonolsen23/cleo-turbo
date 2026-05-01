@@ -7,7 +7,7 @@ import ExplorerTabs from "../components/explorer/ExplorerTabs";
 import AutoGroupTabs from "../components/explorer/AutoGroupTabs";
 import AutoGroupTabPlaceholder from "../components/explorer/AutoGroupTabPlaceholder";
 import AutoGroupOverviewTab from "../components/explorer/AutoGroupOverviewTab";
-import AutoGroupAnchorsTab from "../components/explorer/AutoGroupAnchorsTab";
+import AutoGroupTenuresTab from "../components/explorer/AutoGroupTenuresTab";
 import AutoGroupPartiesTab from "../components/explorer/AutoGroupPartiesTab";
 import AutoGroupTrailTab from "../components/explorer/AutoGroupTrailTab";
 
@@ -51,7 +51,7 @@ export default function ExplorerAutoGroupDetail() {
       <AutoGroupTabs>
         {{
           overview: <AutoGroupOverviewTab data={data} />,
-          anchors:  <AutoGroupAnchorsTab autoGroupId={data.auto_group_id} />,
+          anchors:  <AutoGroupTenuresTab autoGroupId={data.auto_group_id} />,
           parties:  <AutoGroupPartiesTab autoGroupId={data.auto_group_id} />,
           graph:    <AutoGroupTabPlaceholder planName="Plan E" />,
           trail:    <AutoGroupTrailTab />,

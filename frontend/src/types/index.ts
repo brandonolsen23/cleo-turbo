@@ -2200,3 +2200,20 @@ export interface SiloTimelineResponse {
   events: SiloTimelineEvent[];
   tenures: SiloTimelineTenure[];
 }
+
+export interface AutoGroupAnchorTenure {
+  anchor_type: 'phone' | 'address_unit' | 'contact';
+  anchor_value: string;
+  start_date: string;
+  end_date: string;
+  n_party_sides_in_window: number;
+  dominance_share_in_window: number;
+  score: number;
+  is_active: 0 | 1;
+  coverage_pct: number;
+}
+
+export interface AutoGroupAnchorTenuresResponse {
+  auto_group_id: string;
+  tenures: AutoGroupAnchorTenure[];
+}
