@@ -25,6 +25,7 @@ GET /api/explorer/contacts/:fingerprint             — contact detail
 GET /api/explorer/auto-groups                       — list auto-groups (Layer 2 Plan A)
 GET /api/explorer/auto-groups/:auto_group_id        — auto-group detail
 GET /api/explorer/auto-groups/:id/anchors-with-coverage  — anchors + coverage + co-stems
+GET /api/explorer/auto-groups/:id/anchor-tenures  — one row per tenure window
 GET /api/explorer/auto-groups/:id/why-tier  — explains which categories passed/missed for tier assignment
 GET /api/explorer/auto-groups/:id/parties  — paginated, filterable, sortable parties with anchor_signature
 GET /api/explorer/auto-groups/tuning/histogram  — confidence-bucket counts for tuning UI
@@ -1957,6 +1958,37 @@ def auto_group_anchors_with_coverage(
         a['co_stems'] = co_stems_map.get(key, [])
 
     return {'anchors': anchors}
+
+
+@router.get('/auto-groups/{auto_group_id}/anchor-tenures')
+def auto_group_anchor_tenures_endpoint(
+    auto_group_id: str, db=Depends(get_db), user=Depends(get_current_user),
+):
+    """One row per tenure for the given group. Includes coverage_pct that
+    measures n_party_sides_in_window / group.n_members."""
+    summary = db.execute(
+        'SELECT auto_group_id, n_members FROM auto_groups WHERE auto_group_id = ?',
+        (auto_group_id,),
+    ).fetchone()
+    if summary is None:
+        raise HTTPException(status_code=404, detail=f'Unknown auto_group: {auto_group_id!r}')
+    n_members = max(summary['n_members'], 1)  # avoid div-by-zero
+
+    tenures = [dict(r) for r in db.execute(
+        """SELECT agt.anchor_type, agt.anchor_value,
+                  agt.start_date, agt.end_date,
+                  agt.n_party_sides_in_window,
+                  agt.dominance_share_in_window,
+                  agt.score,
+                  CASE WHEN agt.end_date >= date('now', '-365 days') THEN 1 ELSE 0 END AS is_active
+           FROM auto_group_anchor_tenures agt
+           WHERE agt.auto_group_id = ?
+           ORDER BY agt.score DESC, agt.start_date DESC""",
+        (auto_group_id,),
+    )]
+    for t in tenures:
+        t['coverage_pct'] = round(100.0 * t['n_party_sides_in_window'] / n_members, 1)
+    return {'auto_group_id': auto_group_id, 'tenures': tenures}
 
 
 def _category_of_anchor_type(anchor_type: str) -> str:

@@ -1819,3 +1819,30 @@ def test_contact_timeline_returns_events_with_tenures(client):
 def test_contact_timeline_404_on_unknown(client):
     resp = client.get('/api/explorer/contacts/no_such_contact/timeline')
     assert resp.status_code == 404
+
+
+# ── Plan H3 Task 5: /auto-groups/:id/anchor-tenures ──────────────────────────
+
+def test_anchor_tenures_returns_one_row_per_tenure(client):
+    """For a group with multiple anchor tenures, the endpoint returns one row per."""
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001/anchor-tenures')
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body['auto_group_id'] == 'AGRP_00001'
+    assert 'tenures' in body
+    assert len(body['tenures']) >= 2
+    for t in body['tenures']:
+        assert {'anchor_type', 'anchor_value', 'start_date', 'end_date',
+                'n_party_sides_in_window', 'dominance_share_in_window',
+                'score', 'is_active', 'coverage_pct'} <= set(t.keys())
+
+
+def test_anchor_tenures_404_on_unknown_group(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_NOPE/anchor-tenures')
+    assert resp.status_code == 404
+
+
+def test_anchor_tenures_sorted_by_score_desc(client):
+    resp = client.get('/api/explorer/auto-groups/AGRP_00001/anchor-tenures')
+    scores = [t['score'] for t in resp.json()['tenures']]
+    assert scores == sorted(scores, reverse=True)
