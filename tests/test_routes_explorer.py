@@ -521,6 +521,17 @@ def _seeded_db():
         VALUES ('AGRP_00001', 'phone', '4166876700',
                 '2010-01-01', '2026-01-01', 137, 0.95, 6.5)
     """)
+    # Seed a tenure for AGRP_00004 (rivalstem) at the same phone — needed to keep
+    # test_trail_thread_groups_for_phone_lists_both_groups passing after the trail
+    # endpoint switches from auto_group_anchors to auto_group_anchor_tenures.
+    conn.execute("""
+        INSERT INTO auto_group_anchor_tenures
+           (auto_group_id, anchor_type, anchor_value,
+            start_date, end_date, n_party_sides_in_window,
+            dominance_share_in_window, score)
+        VALUES ('AGRP_00004', 'phone', '4166876700',
+                '2018-01-01', '2023-01-01', 12, 0.60, 1.5)
+    """)
 
     # ── Plan H3 Task 2: address_unit + contact timeline fixture data ──────────
 
@@ -595,6 +606,15 @@ def _seeded_db():
             (contact_fingerprint, auto_group_id, start_date, end_date,
              n_party_sides_in_window, discovered_at)
         VALUES ('jc', 'AGRP_00001', '2020-01-01', '2026-01-01', 8, '2026-04-29')
+    """)
+    # Contact tenure for 'rob kumer' → AGRP_00001 (kingsett). Needed so the
+    # contact thread on RT1/buyer returns a group entry (with tenure fields) when
+    # the trail endpoint switches to auto_contact_tenures.
+    conn.execute("""
+        INSERT INTO auto_contact_tenures
+            (contact_fingerprint, auto_group_id, start_date, end_date,
+             n_party_sides_in_window, discovered_at)
+        VALUES ('rob kumer', 'AGRP_00001', '2010-01-01', '2026-01-01', 45, '2026-04-29')
     """)
 
     conn.commit()
@@ -1682,6 +1702,34 @@ def test_trail_with_no_primary_group(client):
     # Should still have a thread for the phone anchor since 4166876700 is a registered anchor.
     thread_types = {t['anchor_type'] for t in body['threads']}
     assert 'phone' in thread_types
+
+
+# ── Plan H3 Task 7: Trail endpoint tenure-aware enrichment ───────────────────
+
+def test_trail_thread_groups_carry_tenure_info(client):
+    """Each thread.groups[*] entry has start_date, end_date, spans_sale_date."""
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    assert resp.status_code == 200
+    body = resp.json()
+    for thread in body['threads']:
+        for g in thread['groups']:
+            assert 'start_date' in g, f"Missing start_date in group {g}"
+            assert 'end_date' in g, f"Missing end_date in group {g}"
+            assert 'spans_sale_date' in g, f"Missing spans_sale_date in group {g}"
+
+
+def test_trail_spanning_tenure_marked_true(client):
+    """When the party's sale_date is inside the tenure, spans_sale_date=1.
+    RT1's sale_date='2020-01-01' is within the kingsett phone tenure 2010-01-01→2026-01-01."""
+    resp = client.get('/api/explorer/auto-groups/parties/RT1/buyer/trail')
+    assert resp.status_code == 200
+    body = resp.json()
+    phone_thread = next(t for t in body['threads'] if t['anchor_type'] == 'phone')
+    kingsett_group = next(
+        (g for g in phone_thread['groups'] if g['auto_group_id'] == 'AGRP_00001'), None
+    )
+    assert kingsett_group is not None
+    assert kingsett_group['spans_sale_date'] == 1
 
 
 # ── Plan H1 Task 5: /addresses/roots/:key/units ───────────────────────────────

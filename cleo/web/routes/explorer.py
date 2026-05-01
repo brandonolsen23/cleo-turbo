@@ -2478,18 +2478,41 @@ def auto_group_party_trail(
         )
         party_anchors.append(('address_unit', addr_unit))
 
-    # For each anchor, look up groups registered to it.
+    sale_date = p.get('sale_date') or '9999-12-31'
+
+    # For each anchor, look up tenures spanning (or near) the party's sale_date.
     threads = []
     for anchor_type, anchor_value in party_anchors:
-        rows = db.execute(
-            """SELECT aga.auto_group_id, ag.canonical_stem, ag.tier, ag.display_name,
-                      aga.score AS score_in_group
-               FROM auto_group_anchors aga
-               JOIN auto_groups ag ON ag.auto_group_id = aga.auto_group_id
-               WHERE aga.anchor_type = ? AND aga.anchor_value = ?
-               ORDER BY aga.score DESC""",
-            (anchor_type, anchor_value),
-        ).fetchall()
+        if anchor_type == 'contact':
+            rows = db.execute(
+                """SELECT act.auto_group_id, ag.canonical_stem, ag.tier, ag.display_name,
+                          0.0 AS score_in_group,
+                          act.start_date, act.end_date,
+                          CASE WHEN act.start_date <= ? AND ? <= act.end_date
+                               THEN 1 ELSE 0 END AS spans_sale_date
+                   FROM auto_contact_tenures act
+                   JOIN auto_groups ag ON ag.auto_group_id = act.auto_group_id
+                   WHERE act.contact_fingerprint = ?
+                   ORDER BY (CASE WHEN act.start_date <= ? AND ? <= act.end_date
+                                  THEN 0 ELSE 1 END),
+                            act.start_date DESC""",
+                (sale_date, sale_date, anchor_value, sale_date, sale_date),
+            ).fetchall()
+        else:
+            rows = db.execute(
+                """SELECT agt.auto_group_id, ag.canonical_stem, ag.tier, ag.display_name,
+                          agt.score AS score_in_group,
+                          agt.start_date, agt.end_date,
+                          CASE WHEN agt.start_date <= ? AND ? <= agt.end_date
+                               THEN 1 ELSE 0 END AS spans_sale_date
+                   FROM auto_group_anchor_tenures agt
+                   JOIN auto_groups ag ON ag.auto_group_id = agt.auto_group_id
+                   WHERE agt.anchor_type = ? AND agt.anchor_value = ?
+                   ORDER BY (CASE WHEN agt.start_date <= ? AND ? <= agt.end_date
+                                  THEN 0 ELSE 1 END),
+                            agt.score DESC""",
+                (sale_date, sale_date, anchor_type, anchor_value, sale_date, sale_date),
+            ).fetchall()
         threads.append({
             'anchor_type': anchor_type,
             'anchor_value': anchor_value,
