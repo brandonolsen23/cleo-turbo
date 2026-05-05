@@ -242,6 +242,9 @@ CREATE TABLE IF NOT EXISTS party_fingerprints (
     contact_fingerprint TEXT,
     -- temporal context (for later tenure reasoning)
     sale_date           TEXT,
+    -- canonical address and property identity (populated by compiler fingerprint pass)
+    property_canonical_id   TEXT,
+    party_address_canonical TEXT,
     -- bookkeeping
     computed_at         TEXT DEFAULT (datetime('now')),
     PRIMARY KEY (source_id, side)
@@ -345,6 +348,8 @@ CREATE INDEX IF NOT EXISTS idx_pfp_street_key ON party_fingerprints(street_numbe
 CREATE INDEX IF NOT EXISTS idx_pfp_postal ON party_fingerprints(postal);
 CREATE INDEX IF NOT EXISTS idx_pfp_phone ON party_fingerprints(phone);
 CREATE INDEX IF NOT EXISTS idx_pfp_contact ON party_fingerprints(contact_fingerprint);
+CREATE INDEX IF NOT EXISTS idx_pf_property_canonical ON party_fingerprints(property_canonical_id);
+CREATE INDEX IF NOT EXISTS idx_pf_party_addr_canonical ON party_fingerprints(party_address_canonical);
 CREATE INDEX IF NOT EXISTS idx_pa_lookup ON party_atoms(atom_type, atom_value);
 CREATE INDEX IF NOT EXISTS idx_pa_party ON party_atoms(source_id, side);
 """
