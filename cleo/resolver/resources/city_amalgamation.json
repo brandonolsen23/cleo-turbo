@@ -1,0 +1,29 @@
+{
+  "comment": "Ontario municipal amalgamations. Maps the legacy/borough name to the canonical post-amalgamation name. Lowercased on both sides. Extend as more municipalities merge.",
+  "amalgamations": [
+    {
+      "canonical": "toronto",
+      "effective_date": "1998-01-01",
+      "absorbed": ["scarborough", "north york", "etobicoke", "york", "east york"]
+    },
+    {
+      "canonical": "hamilton",
+      "effective_date": "2001-01-01",
+      "absorbed": ["stoney creek", "ancaster", "dundas", "flamborough", "glanbrook"]
+    },
+    {
+      "canonical": "ottawa",
+      "effective_date": "2001-01-01",
+      "absorbed": [
+        "nepean", "kanata", "gloucester", "cumberland",
+        "goulbourn", "osgoode", "rideau", "rockcliffe park",
+        "vanier", "west carleton"
+      ]
+    },
+    {
+      "canonical": "kawartha lakes",
+      "effective_date": "2001-01-01",
+      "absorbed": ["lindsay", "fenelon falls", "bobcaygeon", "omemee", "woodville"]
+    }
+  ]
+}

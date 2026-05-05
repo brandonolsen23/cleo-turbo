@@ -1,0 +1,21 @@
+{
+  "comment": "Synonym groups for suite_type. Each group's `canonical` is what gets stored. Anything not listed maps to itself (i.e., 'lobby' stays 'lobby'). The empty string is in the suite group: missing suite_type with populated suite_number is most commonly a suite.",
+  "groups": [
+    {
+      "canonical": "suite",
+      "synonyms": ["suite", "unit", "ste", "u", "#", "no", ""]
+    },
+    {
+      "canonical": "floor",
+      "synonyms": ["floor", "fl", "flr"]
+    },
+    {
+      "canonical": "po_box",
+      "synonyms": ["po box", "pobox", "p.o. box", "p o box", "box"]
+    },
+    {
+      "canonical": "apartment",
+      "synonyms": ["apartment", "apt"]
+    }
+  ]
+}
