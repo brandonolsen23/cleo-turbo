@@ -398,26 +398,21 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
             side_info[(r["source_id"], r["side"])] = {"addr_unit": addr_unit, "stems": set()}
 
         # Lookup the qualifying brand_phrase stems present on each side.
-        # party_atoms and brand_stem_phrase_map may not exist in all environments —
-        # silently skip if the tables are absent.
-        try:
-            for r in db.execute(
-                """
-                SELECT pa.source_id, pa.side, m.stem
-                FROM party_atoms pa
-                JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
-                JOIN party_fingerprints pf ON pf.source_id = pa.source_id AND pf.side = pa.side
-                WHERE pa.atom_type = 'brand_phrase'
-                  AND pa.source_field IN ('trade_name','care_of','companies_json')
-                  AND pf.contact_fingerprint = ?
-                """,
-                (fp,),
-            ).fetchall():
-                key = (r["source_id"], r["side"])
-                if key in side_info:
-                    side_info[key]["stems"].add(r["stem"])
-        except Exception:
-            pass  # Tables not available in this environment
+        for r in db.execute(
+            """
+            SELECT pa.source_id, pa.side, m.stem
+            FROM party_atoms pa
+            JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+            JOIN party_fingerprints pf ON pf.source_id = pa.source_id AND pf.side = pa.side
+            WHERE pa.atom_type = 'brand_phrase'
+              AND pa.source_field IN ('trade_name','care_of','companies_json')
+              AND pf.contact_fingerprint = ?
+            """,
+            (fp,),
+        ).fetchall():
+            key = (r["source_id"], r["side"])
+            if key in side_info:
+                side_info[key]["stems"].add(r["stem"])
 
         for txn in txn_list:
             attribution = None
@@ -468,16 +463,12 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
         if not overlapping:
             return {"state": "stale", "last_seen": last_seen, "stem": None,
                     "display_name": None}
-        # Active iff the phone overlaps an explicitly active tenure (is_active=1)
-        # for the current employer, OR was seen recently (within the cliff window)
-        # and overlaps the current employer's tenure.
+        # Active iff the phone was seen within the 730-day cliff AND overlaps
+        # the current employer's active tenure (spec §2g: both must be true).
         ce_stem = (current_employer or {}).get("brand_stem")
-        active_overlap = [
-            t for t in overlapping
-            if t["brand_stem"] == ce_stem and t.get("is_active") == 1
-        ]
-        is_active = bool(active_overlap) and (
-            active_overlap[0].get("is_active") == 1 or last_seen >= cliff
+        is_active = (
+            last_seen >= cliff
+            and any(t["brand_stem"] == ce_stem and t.get("is_active") == 1 for t in overlapping)
         )
         if is_active:
             ce = next(t for t in overlapping if t["brand_stem"] == ce_stem)

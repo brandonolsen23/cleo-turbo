@@ -78,6 +78,17 @@ def _seeded_db():
             display_name TEXT NOT NULL, tier TEXT, confidence REAL,
             n_anchors INTEGER, n_members INTEGER
         );
+        CREATE TABLE party_atoms (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            source_id TEXT NOT NULL, side TEXT NOT NULL,
+            atom_type TEXT NOT NULL, atom_value TEXT NOT NULL,
+            source_field TEXT NOT NULL
+        );
+        CREATE TABLE brand_stem_phrase_map (
+            phrase TEXT PRIMARY KEY,
+            stem TEXT NOT NULL,
+            confidence REAL NOT NULL
+        );
     """)
     # Seed one contact.
     conn.execute(
@@ -132,7 +143,34 @@ def _seeded_db():
         "street_direction, suite_type, suite_number, phone) VALUES "
         "('RT_C1','buyer','paul braun','2010-06-01','toronto','30','st clair','ave','w','','','4169249009'),"
         "('RT_D1','buyer','paul braun','2000-03-15','toronto','390','bay','st','','','',''),"
-        "('RT_INF','buyer','paul braun','2003-08-20','toronto','30','st clair','ave','w','','','')"
+        "('RT_INF','buyer','paul braun','2003-08-20','toronto','30','st clair','ave','w','','',''),"
+        "('RT_RECENT','buyer','paul braun','2025-12-01','toronto','30','st clair','ave','w','','','4169249009')"
+    )
+    # Recent transaction — puts the contact's phone within the 730-day cliff so
+    # the active-phone test holds under strict spec §2g semantics.
+    conn.execute(
+        "INSERT INTO transactions (source_id, sale_date, sale_price, "
+        "display_address, city, region, property_id) VALUES "
+        "('RT_RECENT', '2025-12-01', 8000000, '30 St Clair Ave W', 'toronto', '01', 'P4')"
+    )
+    conn.execute(
+        "INSERT INTO transaction_parties (source_id, side, contact_id, party_name) VALUES "
+        "('RT_RECENT', 'buyer', 'CON_07049', 'CanFirst Capital Management')"
+    )
+    # brand_stem_phrase_map: map qualifying phrases to stems.
+    conn.execute(
+        "INSERT INTO brand_stem_phrase_map (phrase, stem, confidence) VALUES "
+        "('canfirst capital management', 'canfirst', 0.95),"
+        "('dundee realty', 'dundee', 0.95)"
+    )
+    # party_atoms: explicit qualifying-source-field atoms for RT_C1 (trade_name) and
+    # RT_D1 (care_of). RT_INF gets a party_name atom (NOT a qualifying source field)
+    # so it remains address-inferred.
+    conn.execute(
+        "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) VALUES "
+        "('RT_C1', 'buyer', 'brand_phrase', 'canfirst capital management', 'trade_name'),"
+        "('RT_D1', 'buyer', 'brand_phrase', 'dundee realty', 'care_of'),"
+        "('RT_INF', 'buyer', 'brand_phrase', 'another spv', 'party_name')"
     )
     conn.commit()
     return conn
@@ -187,14 +225,15 @@ def test_contact_detail_transactions_carry_tenure_attribution(client):
     resp = client.get("/api/contacts/CON_07049")
     txns = resp.json()["transactions"]
     by_id = {t["source_id"]: t for t in txns}
-    # RT_C1: explicit canfirst stem isn't in party_atoms (we skipped seeding atoms);
-    # but RT_C1 falls inside canfirst inferred window AND is at the dominant address.
-    # So it should be attributed to canfirst with inferred=True.
+    # RT_C1: explicit canfirst atom on trade_name → inferred=False.
     assert by_id["RT_C1"]["tenure"]["brand_stem"] == "canfirst"
-    assert by_id["RT_C1"]["tenure"]["inferred"] is True
-    # RT_D1 falls in dundee inferred window at 390 Bay (dominant for dundee).
+    assert by_id["RT_C1"]["tenure"]["inferred"] is False
+    # RT_D1: explicit dundee atom on care_of → inferred=False.
     assert by_id["RT_D1"]["tenure"]["brand_stem"] == "dundee"
-    # RT_INF falls inside canfirst inferred window via 30 St Clair (dominant).
+    assert by_id["RT_D1"]["tenure"]["inferred"] is False
+    # RT_INF: SPV atom on party_name (not a qualifying source field), but the
+    # side's address (30 St Clair) matches canfirst's dominant_address_unit →
+    # attributed to canfirst via address bracket → inferred=True.
     assert by_id["RT_INF"]["tenure"]["brand_stem"] == "canfirst"
     assert by_id["RT_INF"]["tenure"]["inferred"] is True
 
