@@ -6,7 +6,6 @@ import { fetchApi, mutateApi } from "../api/client";
 import { useCrm } from "../components/crm/CrmContext";
 import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
 import { categoryColor } from "../lib/theme";
-import PropertyMiniMap from "../components/ui/PropertyMiniMap";
 import ConsolidateGroupsModal from "../components/ui/ConsolidateGroupsModal";
 import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
@@ -16,7 +15,7 @@ import CareerHistoryTile from "../components/contact/CareerHistoryTile";
 import TenureDetailDrawer from "../components/contact/TenureDetailDrawer";
 import PortfolioFootprintMap from "../components/contact/PortfolioFootprintMap";
 import TenuredPropertyFootprintMap from "../components/contact/TenuredPropertyFootprintMap";
-import type { ContactDetail, MiniMapProperty, ContactPropertyHistoryResponse, AffiliatedGroup, AffiliatedGroupsResponse } from "../types";
+import type { ContactDetail, AffiliatedGroup, AffiliatedGroupsResponse } from "../types";
 
 export default function ContactDetailPage() {
   const { id } = useParams();
@@ -25,7 +24,6 @@ export default function ContactDetailPage() {
   const [contact, setContact] = useState<ContactDetail | null>(null);
   const [editing, setEditing] = useState(false);
   const [editFields, setEditFields] = useState({ email: "", mobile: "", phone: "", job_title: "" });
-  const [propertyHistory, setPropertyHistory] = useState<MiniMapProperty[]>([]);
   const [txnsExpanded, setTxnsExpanded] = useState(false);
   const [affiliatedGroups, setAffiliatedGroups] = useState<AffiliatedGroup[]>([]);
   const [showConsolidate, setShowConsolidate] = useState(false);
@@ -39,9 +37,6 @@ export default function ContactDetailPage() {
         setContact(c);
         setEditFields({ email: c.email || "", mobile: c.mobile || "", phone: c.phone || "", job_title: c.job_title || "" });
       });
-      fetchApi<ContactPropertyHistoryResponse>(`/contacts/${id}/properties`).then((r) =>
-        setPropertyHistory(r.properties),
-      );
       fetchApi<AffiliatedGroupsResponse>(`/contacts/${id}/affiliated-groups`).then((r) =>
         setAffiliatedGroups(r.affiliated_groups),
       );
@@ -299,32 +294,17 @@ export default function ContactDetailPage() {
 
         {/* Right: Hero map + Property Footprint + Transactions */}
         <div className="col-span-2 flex flex-col gap-6">
-          {contact.current_employer && contact.current_employer.brand_stem ? (
-            <>
-              <PortfolioFootprintMap
-                stem={contact.current_employer.brand_stem}
-                displayName={contact.current_employer.display_name || contact.current_employer.brand_stem}
-                height={380}
-              />
-              <TenuredPropertyFootprintMap
-                contactId={contact.id}
-                height={260}
-              />
-            </>
-          ) : (
-            propertyHistory.length > 0 && (
-              <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-                <Text size="3" weight="medium" className="mb-3 block">
-                  Property Footprint ({propertyHistory.length})
-                </Text>
-                <PropertyMiniMap
-                  properties={propertyHistory}
-                  height={300}
-                  onPropertyClick={(pid) => navigate(`/properties/${pid}`)}
-                />
-              </div>
-            )
+          {contact.current_employer && contact.current_employer.brand_stem && (
+            <PortfolioFootprintMap
+              stem={contact.current_employer.brand_stem}
+              displayName={contact.current_employer.display_name || contact.current_employer.brand_stem}
+              height={380}
+            />
           )}
+          <TenuredPropertyFootprintMap
+            contactId={contact.id}
+            height={contact.current_employer?.brand_stem ? 260 : 380}
+          />
 
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
             <Text size="3" weight="medium" className="mb-3 block">Transaction History ({contact.transactions.length})</Text>
