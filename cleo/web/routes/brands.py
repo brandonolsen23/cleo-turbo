@@ -82,7 +82,7 @@ def get_favorites(
     user=Depends(get_current_user),
 ):
     """Return the current user's favorite brands with effective categories."""
-    user_id = user["id"]
+    user_id = user["sub"]
     _ensure_favorites_seeded(db, user_id)
 
     rows = db.execute("""
@@ -118,7 +118,7 @@ def add_favorites(
     user=Depends(get_current_user),
 ):
     """Add brands to the current user's favorites."""
-    user_id = user["id"]
+    user_id = user["sub"]
     added = 0
     for brand in req.brands:
         # Verify brand exists in registry
@@ -142,7 +142,7 @@ def remove_favorites(
     user=Depends(get_current_user),
 ):
     """Remove brands from the current user's favorites."""
-    user_id = user["id"]
+    user_id = user["sub"]
     removed = 0
     for brand in req.brands:
         cursor = db.execute(
@@ -166,7 +166,7 @@ def browse_brands(
     user=Depends(get_current_user),
 ):
     """Browse all brands with effective category and favorite status."""
-    user_id = user["id"]
+    user_id = user["sub"]
     _ensure_favorites_seeded(db, user_id)
 
     conditions = []
@@ -258,7 +258,7 @@ def set_category_override(
     db.execute(
         "INSERT OR REPLACE INTO brand_overrides (brand, category, updated_by, updated_at) "
         "VALUES (?, ?, ?, datetime('now'))",
-        (req.brand, req.category, str(user["id"]))
+        (req.brand, req.category, str(user["sub"]))
     )
     db.commit()
 
