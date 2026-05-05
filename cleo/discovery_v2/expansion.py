@@ -61,16 +61,15 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     # 2. For each party-side, look up its anchor values + its stems
     side_data: dict[tuple, dict] = {}  # (sid, side) -> info dict
     for r in conn.execute("""
-        SELECT source_id, side, phone, contact_fingerprint, city,
-               street_number, street_name, street_suffix, street_direction,
-               suite_type, suite_number, sale_date
+        SELECT source_id, side, phone, contact_fingerprint,
+               party_address_canonical, sale_date,
+               city, street_number, street_name
         FROM party_fingerprints
     """):
         addr_unit = (
-            f"{r['city'] or ''}|{r['street_number'] or ''}|{r['street_name'] or ''}|"
-            f"{r['street_suffix'] or ''}|{r['street_direction'] or ''}|"
-            f"{r['suite_type'] or ''}|{r['suite_number'] or ''}"
-            if r['city'] and r['street_number'] and r['street_name'] else None
+            r['party_address_canonical']
+            if r['city'] and r['street_number'] and r['street_name']
+            else None
         )
         side_data[(r['source_id'], r['side'])] = {
             'phone':     r['phone'] or None,

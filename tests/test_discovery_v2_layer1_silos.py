@@ -14,6 +14,7 @@ def _make_db():
             city TEXT, province TEXT, postal TEXT,
             phone TEXT, contact_fingerprint TEXT,
             sale_date TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (

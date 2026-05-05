@@ -22,6 +22,7 @@ def _make_db():
             phone               TEXT,
             contact_fingerprint TEXT,
             sale_date           TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -88,15 +89,24 @@ def _add_party(conn, source_id, side, contact_fp, sale_date,
                city="toronto", street_number="30", street_name="st clair",
                street_suffix="ave", street_direction="w",
                suite_type="", suite_number=""):
+    addr_canonical = "|".join([
+        (city or "").lower(),
+        street_number or "",
+        (street_name or "").lower(),
+        (street_suffix or "").lower(),
+        (street_direction or "").lower(),
+        (suite_type or "").lower(),
+        suite_number or "",
+    ])
     conn.execute(
         "INSERT INTO party_fingerprints "
         "(source_id, side, contact_fingerprint, sale_date, "
         " city, street_number, street_name, street_suffix, street_direction, "
-        " suite_type, suite_number) "
-        "VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+        " suite_type, suite_number, party_address_canonical) "
+        "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
         (source_id, side, contact_fp, sale_date, city,
          street_number, street_name, street_suffix, street_direction,
-         suite_type, suite_number),
+         suite_type, suite_number, addr_canonical),
     )
 
 

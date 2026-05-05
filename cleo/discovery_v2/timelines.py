@@ -21,12 +21,7 @@ def _anchor_pf_clause(anchor_type: str) -> str:
     if anchor_type == 'contact':
         return "pf.contact_fingerprint = ?"
     if anchor_type == 'address_unit':
-        return (
-            "(COALESCE(pf.city,'') || '|' || COALESCE(pf.street_number,'') || '|' || "
-            "COALESCE(pf.street_name,'') || '|' || COALESCE(pf.street_suffix,'') || '|' || "
-            "COALESCE(pf.street_direction,'') || '|' || COALESCE(pf.suite_type,'') || '|' || "
-            "COALESCE(pf.suite_number,'')) = ?"
-        )
+        return "pf.party_address_canonical = ?"
     raise ValueError(f"Unknown anchor_type: {anchor_type!r}")
 
 
@@ -134,13 +129,11 @@ def iter_all_anchor_timelines(
     # Address units
     for r in conn.execute(
         """
-        SELECT (COALESCE(city,'') || '|' || COALESCE(street_number,'') || '|' ||
-                COALESCE(street_name,'') || '|' || COALESCE(street_suffix,'') || '|' ||
-                COALESCE(street_direction,'') || '|' || COALESCE(suite_type,'') || '|' ||
-                COALESCE(suite_number,'')) AS av,
-               source_id, side, sale_date
+        SELECT party_address_canonical AS av, source_id, side, sale_date
         FROM party_fingerprints
-        WHERE city IS NOT NULL AND city != ''
+        WHERE party_address_canonical IS NOT NULL
+          AND party_address_canonical != ''
+          AND city IS NOT NULL AND city != ''
           AND street_number IS NOT NULL AND street_number != ''
           AND street_name IS NOT NULL AND street_name != ''
           AND sale_date IS NOT NULL AND sale_date != ''

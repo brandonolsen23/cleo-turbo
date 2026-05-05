@@ -9,6 +9,7 @@ CREATE TABLE party_fingerprints (
     city TEXT, street_number TEXT, street_name TEXT, street_suffix TEXT,
     street_direction TEXT, suite_type TEXT, suite_number TEXT,
     sale_date TEXT,
+    party_address_canonical TEXT,
     PRIMARY KEY (source_id, side)
 );
 CREATE TABLE party_atoms (

@@ -16,6 +16,7 @@ def _make_db():
             street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
             suite_type TEXT, suite_number TEXT,
             sale_date TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -100,14 +101,24 @@ def _seed(conn, sid, side, phrase, *, phone=None, contact=None,
           city=None, street_number=None, street_name=None, street_suffix=None,
           street_direction=None, suite_type=None, suite_number=None,
           sale_date='2025-01-01'):
+    addr_canonical = "|".join([
+        (city or "").lower(),
+        street_number or "",
+        (street_name or "").lower(),
+        (street_suffix or "").lower(),
+        (street_direction or "").lower(),
+        (suite_type or "").lower(),
+        suite_number or "",
+    ])
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
              (source_id, side, phone, contact_fingerprint, city,
               street_number, street_name, street_suffix, street_direction,
-              suite_type, suite_number, sale_date)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
+              suite_type, suite_number, sale_date, party_address_canonical)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
         (sid, side, phone, contact, city, street_number, street_name,
-         street_suffix, street_direction, suite_type, suite_number, sale_date),
+         street_suffix, street_direction, suite_type, suite_number, sale_date,
+         addr_canonical),
     )
     if phrase:
         conn.execute(

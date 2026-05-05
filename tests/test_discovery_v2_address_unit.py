@@ -12,6 +12,7 @@ def _make_db():
             street_number TEXT, street_name TEXT, street_suffix TEXT,
             street_direction TEXT, suite_type TEXT, suite_number TEXT,
             phone TEXT, contact_fingerprint TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -46,15 +47,26 @@ def _seed_party(conn, sid, side, **fields):
                 street_direction=None, suite_type=None, suite_number=None,
                 phone=None, contact_fingerprint=None)
     base.update(fields)
+    addr_canonical = "|".join([
+        (base['city'] or "").lower(),
+        base['street_number'] or "",
+        (base['street_name'] or "").lower(),
+        (base['street_suffix'] or "").lower(),
+        (base['street_direction'] or "").lower(),
+        (base['suite_type'] or "").lower(),
+        base['suite_number'] or "",
+    ])
     conn.execute(
         """INSERT INTO party_fingerprints
             (source_id, side, city, street_number, street_name, street_suffix,
-             street_direction, suite_type, suite_number, phone, contact_fingerprint)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+             street_direction, suite_type, suite_number, phone, contact_fingerprint,
+             party_address_canonical)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (sid, side, base['city'], base['street_number'], base['street_name'],
          base['street_suffix'], base['street_direction'],
          base['suite_type'], base['suite_number'],
-         base['phone'], base['contact_fingerprint']),
+         base['phone'], base['contact_fingerprint'],
+         addr_canonical),
     )
 
 

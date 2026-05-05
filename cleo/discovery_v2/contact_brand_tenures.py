@@ -47,13 +47,7 @@ def build_contact_brand_tenures(
                pf.sale_date              AS sale_date,
                pf.source_id              AS source_id,
                pf.side                   AS side,
-               pf.city                   AS city,
-               COALESCE(pf.street_number,'')   AS sn,
-               COALESCE(pf.street_name,'')     AS st,
-               COALESCE(pf.street_suffix,'')   AS sx,
-               COALESCE(pf.street_direction,'') AS sd,
-               COALESCE(pf.suite_type,'')      AS suite_t,
-               COALESCE(pf.suite_number,'')    AS suite_n
+               pf.party_address_canonical AS address_unit
         FROM party_atoms pa
         JOIN party_fingerprints pf
           ON pf.source_id = pa.source_id AND pf.side = pa.side
@@ -78,9 +72,7 @@ def build_contact_brand_tenures(
             "sale_date": r["sale_date"],
             "source_id": r["source_id"],
             "side": r["side"],
-            "address_unit": _address_unit_key(
-                r["city"], r["sn"], r["st"], r["sx"], r["sd"], r["suite_t"], r["suite_n"]
-            ),
+            "address_unit": r["address_unit"] or "",
         })
 
     # Step 3 — for each pair, decide if it survives the threshold and write.
@@ -134,12 +126,7 @@ def build_contact_brand_tenures(
             ext_rows = conn.execute(
                 """
                 SELECT pf.source_id, pf.side, pf.sale_date,
-                       pf.city, COALESCE(pf.street_number,'') AS sn,
-                       COALESCE(pf.street_name,'') AS st,
-                       COALESCE(pf.street_suffix,'') AS sx,
-                       COALESCE(pf.street_direction,'') AS sd,
-                       COALESCE(pf.suite_type,'') AS suite_t,
-                       COALESCE(pf.suite_number,'') AS suite_n
+                       pf.party_address_canonical AS address_unit
                 FROM party_fingerprints pf
                 WHERE pf.contact_fingerprint = ?
                   AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
@@ -147,11 +134,7 @@ def build_contact_brand_tenures(
                 (cf,),
             ).fetchall()
             for er in ext_rows:
-                ek = _address_unit_key(
-                    er["city"], er["sn"], er["st"], er["sx"], er["sd"],
-                    er["suite_t"], er["suite_n"]
-                )
-                if ek != dominant_addr:
+                if (er["address_unit"] or "") != dominant_addr:
                     continue
                 if er["sale_date"] < inferred_start:
                     inferred_start = er["sale_date"]
@@ -211,10 +194,9 @@ def build_contact_brand_tenures(
 
 
 def _address_unit_key(city, sn, st, sx, sd, suite_t, suite_n) -> str:
-    """Build the canonical pipe-joined address_unit string.
-
-    Empty components stay as empty strings (never None) — matches the
-    primary-key shape of address_unit_summary.
+    """LEGACY: pre-canonicalization 7-tuple builder. Kept for reference and
+    in case any external test fixture still calls it. Prefer reading
+    party_fingerprints.party_address_canonical instead.
     """
     return "|".join([
         (city or "").lower(),

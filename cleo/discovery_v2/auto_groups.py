@@ -16,6 +16,29 @@ def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True) -> dict
     if verbose:
         print('Layer 2: starting build...', flush=True)
 
+    # Guard: Layer 2 reads pf.party_address_canonical. If the compiler has not
+    # been re-run since migration 019, every address-unit downstream produces
+    # zero rows. Fail fast with a clear message instead of silent regression.
+    # Only trigger when there ARE party-side records with an address but none
+    # have the canonical column populated (i.e., the compiler wasn't rerun).
+    n_with_address = conn.execute(
+        "SELECT COUNT(*) FROM party_fingerprints "
+        "WHERE city IS NOT NULL AND city != '' "
+        "  AND street_number IS NOT NULL AND street_number != '' "
+        "  AND street_name IS NOT NULL AND street_name != ''"
+    ).fetchone()[0]
+    n_canonical = conn.execute(
+        "SELECT COUNT(*) FROM party_fingerprints "
+        "WHERE party_address_canonical IS NOT NULL "
+        "  AND party_address_canonical != ''"
+    ).fetchone()[0]
+    if n_with_address > 0 and n_canonical == 0:
+        raise RuntimeError(
+            "party_fingerprints.party_address_canonical is empty. "
+            "Run the compiler ('python -m cleo.compiler') to repopulate "
+            "fingerprints under migration 019 before building Layer 2."
+        )
+
     a1 = build_stems(conn, verbose=verbose)
     a2 = build_anchor_scores(conn, verbose=verbose)
     a3 = build_seeds(conn, verbose=verbose)

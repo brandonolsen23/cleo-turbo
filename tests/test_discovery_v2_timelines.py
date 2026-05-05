@@ -16,6 +16,7 @@ def _make_db():
             street_number TEXT, street_name TEXT, street_suffix TEXT,
             street_direction TEXT, suite_type TEXT, suite_number TEXT,
             sale_date TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -32,12 +33,23 @@ def _make_db():
 def _seed(conn, sid, side, phrase=None, *, phone=None, contact=None,
           city=None, street_number=None, street_name=None,
           sale_date=None):
+    addr_canonical = "|".join([
+        (city or "").lower(),
+        street_number or "",
+        (street_name or "").lower(),
+        "",  # street_suffix
+        "",  # street_direction
+        "",  # suite_type
+        "",  # suite_number
+    ])
     conn.execute(
         """INSERT INTO party_fingerprints
             (source_id, side, phone, contact_fingerprint,
-             city, street_number, street_name, sale_date)
-           VALUES (?,?,?,?,?,?,?,?)""",
-        (sid, side, phone, contact, city, street_number, street_name, sale_date),
+             city, street_number, street_name, sale_date,
+             party_address_canonical)
+           VALUES (?,?,?,?,?,?,?,?,?)""",
+        (sid, side, phone, contact, city, street_number, street_name, sale_date,
+         addr_canonical),
     )
     if phrase:
         conn.execute(

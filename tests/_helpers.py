@@ -5,16 +5,33 @@ import sqlite3
 
 def seed_party_side(conn: sqlite3.Connection, sid: str, side: str, phrase: str | None,
                     *, phone: str | None = None, contact: str | None = None,
+                    city: str | None = None,
                     street_number: str | None = None, street_name: str | None = None,
                     street_suffix: str | None = None,
+                    street_direction: str | None = None,
+                    suite_type: str | None = None, suite_number: str | None = None,
                     sale_date: str | None = '2025-01-01') -> None:
     """Seed a single party-side with optional phrase + anchors."""
+    addr_canonical = "|".join([
+        (city or "").lower(),
+        street_number or "",
+        (street_name or "").lower(),
+        (street_suffix or "").lower(),
+        (street_direction or "").lower(),
+        (suite_type or "").lower(),
+        suite_number or "",
+    ])
     conn.execute(
         """INSERT OR IGNORE INTO party_fingerprints
              (source_id, side, phone, contact_fingerprint,
-              street_number, street_name, street_suffix, sale_date)
-           VALUES (?,?,?,?,?,?,?,?)""",
-        (sid, side, phone, contact, street_number, street_name, street_suffix, sale_date),
+              city, street_number, street_name, street_suffix,
+              street_direction, suite_type, suite_number,
+              sale_date, party_address_canonical)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+        (sid, side, phone, contact,
+         city, street_number, street_name, street_suffix,
+         street_direction, suite_type, suite_number,
+         sale_date, addr_canonical),
     )
     if phrase:
         conn.execute(

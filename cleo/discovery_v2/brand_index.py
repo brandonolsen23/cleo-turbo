@@ -477,9 +477,9 @@ def build_address_root_summary(conn, *, verbose: bool = True):
 def build_address_unit_summary(conn, *, verbose: bool = True):
     """Layer 1 silo: per-unit brand-stem dominance.
 
-    A 'unit' is the full physical address: city + street_number + street_name +
-    street_suffix + street_direction + suite_type + suite_number. Empty fields
-    (NULL or '') are normalized to empty string in the key.
+    A 'unit' is the canonical address: party_address_canonical from
+    party_fingerprints. The summary's 7 PK columns are split apart from
+    the canonical key so the table schema is unchanged.
     """
     conn.execute('DELETE FROM address_unit_summary')
 
@@ -498,32 +498,33 @@ def build_address_unit_summary(conn, *, verbose: bool = True):
         if prev is None or (r['n'] > prev[1]) or (r['n'] == prev[1] and r['stem'] < prev[0]):
             side_stems[key] = new_value
 
-    # Step 2: aggregate parties by unit-key, computing stem counts.
+    # Step 2: aggregate parties by canonical-unit key, computing stem counts.
     by_unit: dict = {}
     for r in conn.execute("""
-        SELECT source_id, side, city, street_number, street_name,
-               street_suffix, street_direction, suite_type, suite_number
+        SELECT source_id, side, party_address_canonical AS k
         FROM party_fingerprints
         WHERE city IS NOT NULL AND city != ''
           AND street_number IS NOT NULL AND street_number != ''
           AND street_name IS NOT NULL AND street_name != ''
+          AND party_address_canonical IS NOT NULL
+          AND party_address_canonical != ''
     """):
-        key = (
-            r['city'], r['street_number'], r['street_name'],
-            r['street_suffix'] or '',
-            r['street_direction'] or '',
-            r['suite_type'] or '',
-            r['suite_number'] or '',
-        )
+        key = r['k']
         bucket = by_unit.setdefault(key, {'sides': 0, 'stem_counts': {}})
         bucket['sides'] += 1
         st = side_stems.get((r['source_id'], r['side']))
         if st is not None:
             bucket['stem_counts'][st[0]] = bucket['stem_counts'].get(st[0], 0) + 1
 
-    # Step 3: insert rows, computing dominant stem + share.
+    # Step 3: insert rows, computing dominant stem + share. Split the canonical
+    # key back into its 7 components for the schema-stable INSERT.
     rows_to_insert = []
-    for (city, num, name, suf, dir_, stype, snum), bucket in by_unit.items():
+    for canonical_key, bucket in by_unit.items():
+        parts = canonical_key.split('|', 6)
+        if len(parts) != 7:
+            # Defensive: any malformed key is skipped (should never happen).
+            continue
+        city, num, name, suf, dir_, stype, snum = parts
         n_parties = bucket['sides']
         stem_counts = bucket['stem_counts']
         n_distinct = len(stem_counts)
