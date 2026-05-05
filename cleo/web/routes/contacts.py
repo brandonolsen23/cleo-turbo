@@ -376,26 +376,17 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
     #        equals the tenure's dominant_address_unit)
     if fp and txn_list:
         # Pre-fetch the brand_stems and address_units of the contact's party-sides.
+        # Both sides now use canonical keys post-migration 019.
         side_info = {}
         for r in db.execute(
             """
-            SELECT pf.source_id, pf.side,
-                   pf.city, COALESCE(pf.street_number,'') AS sn,
-                   COALESCE(pf.street_name,'') AS st,
-                   COALESCE(pf.street_suffix,'') AS sx,
-                   COALESCE(pf.street_direction,'') AS sd,
-                   COALESCE(pf.suite_type,'') AS suite_t,
-                   COALESCE(pf.suite_number,'') AS suite_n
+            SELECT pf.source_id, pf.side, pf.party_address_canonical
             FROM party_fingerprints pf
             WHERE pf.contact_fingerprint = ?
             """,
             (fp,),
         ).fetchall():
-            addr_unit = "|".join([
-                (r["city"] or "").lower(), r["sn"], (r["st"] or "").lower(),
-                (r["sx"] or "").lower(), (r["sd"] or "").lower(),
-                (r["suite_t"] or "").lower(), r["suite_n"],
-            ])
+            addr_unit = r["party_address_canonical"] or ""
             side_info[(r["source_id"], r["side"])] = {"addr_unit": addr_unit, "stems": set()}
 
         # Lookup the qualifying brand_phrase stems present on each side.
@@ -492,36 +483,30 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
     result["phone_tenure_tag"] = _tag_for_phone(result.get("phone"))
 
     # Address tenure tag: the contact's "primary mailing address" doesn't live
-    # on the contacts row. We surface a tag for each unique address that
-    # appears on this contact's party-sides, sorted most-recent first. The UI
-    # decides which one to show under the (single) Address row.
+    # on the contacts row. We surface a tag for each unique canonical address
+    # that appears on this contact's party-sides, sorted most-recent first.
+    # The UI decides which one to show under the (single) Address row.
     address_tags = []
     if fp:
         addr_rows = db.execute(
             """
-            SELECT city,
-                   COALESCE(street_number,'') AS sn,
-                   COALESCE(street_name,'') AS st,
-                   COALESCE(street_suffix,'') AS sx,
-                   COALESCE(street_direction,'') AS sd,
-                   COALESCE(suite_type,'') AS suite_t,
-                   COALESCE(suite_number,'') AS suite_n,
-                   MIN(sale_date) AS first_seen, MAX(sale_date) AS last_seen
+            SELECT party_address_canonical AS address_unit,
+                   MIN(sale_date) AS first_seen,
+                   MAX(sale_date) AS last_seen
             FROM party_fingerprints
             WHERE contact_fingerprint = ?
               AND street_number IS NOT NULL AND street_number != ''
-            GROUP BY 1,2,3,4,5,6,7
+              AND party_address_canonical IS NOT NULL
+              AND party_address_canonical != ''
+            GROUP BY party_address_canonical
             ORDER BY MAX(sale_date) DESC
             """,
             (fp,),
         ).fetchall()
         for ar in addr_rows:
-            addr_unit = "|".join([
-                (ar["city"] or "").lower(), ar["sn"], (ar["st"] or "").lower(),
-                (ar["sx"] or "").lower(), (ar["sd"] or "").lower(),
-                (ar["suite_t"] or "").lower(), ar["suite_n"],
-            ])
-            # Match against tenure dominant_address_unit.
+            addr_unit = ar["address_unit"]
+            # Match against tenure dominant_address_unit. Both sides are
+            # canonical keys post-migration 019.
             matching = [t for t in career_history if t.get("dominant_address_unit") == addr_unit]
             tag = None
             if matching:

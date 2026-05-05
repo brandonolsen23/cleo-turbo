@@ -60,6 +60,7 @@ def _seeded_db():
             street_direction TEXT, suite_type TEXT, suite_number TEXT,
             city TEXT, phone TEXT,
             contact_fingerprint TEXT, sale_date TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE contact_brand_tenures (
@@ -107,7 +108,7 @@ def _seeded_db():
         " '2002-04-29', '2022-12-13', 60, 80, "
         " '[{\"phrase\":\"canfirst capital management\",\"n\":60}]', "
         " '{\"trade_name\":41,\"companies_json\":15,\"care_of\":4}', "
-        " 'toronto|30|st clair|ave|w||', 'AGRP_01392', 1),"
+        " 'toronto|30|st clair|ave|w|suite|', 'AGRP_01392', 1),"
         "('paul braun', 'dundee', '1999-01-27', '2001-06-12', "
         " '1999-01-27', '2001-06-12', 8, 8, "
         " '[{\"phrase\":\"dundee realty\",\"n\":8}]', "
@@ -137,14 +138,15 @@ def _seeded_db():
     )
     # party_fingerprints for the three sides — they all use 30 St Clair (canfirst dominant)
     # except RT_D1 which uses 390 Bay (dundee dominant).
+    # Canonical addresses: toronto|30|st clair|ave|w|suite| and toronto|390|bay|st|||
     conn.execute(
         "INSERT INTO party_fingerprints (source_id, side, contact_fingerprint, "
         "sale_date, city, street_number, street_name, street_suffix, "
-        "street_direction, suite_type, suite_number, phone) VALUES "
-        "('RT_C1','buyer','paul braun','2010-06-01','toronto','30','st clair','ave','w','','','4169249009'),"
-        "('RT_D1','buyer','paul braun','2000-03-15','toronto','390','bay','st','','','',''),"
-        "('RT_INF','buyer','paul braun','2003-08-20','toronto','30','st clair','ave','w','','',''),"
-        "('RT_RECENT','buyer','paul braun','2025-12-01','toronto','30','st clair','ave','w','','','4169249009')"
+        "street_direction, suite_type, suite_number, phone, party_address_canonical) VALUES "
+        "('RT_C1','buyer','paul braun','2010-06-01','toronto','30','st clair','ave','w','','','4169249009','toronto|30|st clair|ave|w|suite|'),"
+        "('RT_D1','buyer','paul braun','2000-03-15','toronto','390','bay','st','','','','','toronto|390|bay|st|||'),"
+        "('RT_INF','buyer','paul braun','2003-08-20','toronto','30','st clair','ave','w','','','','toronto|30|st clair|ave|w|suite|'),"
+        "('RT_RECENT','buyer','paul braun','2025-12-01','toronto','30','st clair','ave','w','','','4169249009','toronto|30|st clair|ave|w|suite|')"
     )
     # Recent transaction — puts the contact's phone within the 730-day cliff so
     # the active-phone test holds under strict spec §2g semantics.
