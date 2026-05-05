@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Heading, Text, Button, Badge, TextField, Callout } from "@radix-ui/themes";
-import { CaretDown, MapPin, ArrowSquareOut, Buildings, User, Lightning, CheckCircle, WarningCircle } from "@phosphor-icons/react";
+import { CaretDown, User, Lightning, CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import { fetchApi, mutateApi } from "../api/client";
 import { useCrm } from "../components/crm/CrmContext";
 import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
@@ -11,7 +11,11 @@ import ConsolidateGroupsModal from "../components/ui/ConsolidateGroupsModal";
 import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
 import LinkedInButton from "../components/ui/LinkedInButton";
-import CareerTimeline from "../components/ui/CareerTimeline";
+import CurrentEmployerPill from "../components/contact/CurrentEmployerPill";
+import CareerHistoryTile from "../components/contact/CareerHistoryTile";
+import TenureDetailDrawer from "../components/contact/TenureDetailDrawer";
+import PortfolioFootprintMap from "../components/contact/PortfolioFootprintMap";
+import TenuredPropertyFootprintMap from "../components/contact/TenuredPropertyFootprintMap";
 import type { ContactDetail, MiniMapProperty, ContactPropertyHistoryResponse, AffiliatedGroup, AffiliatedGroupsResponse } from "../types";
 
 export default function ContactDetailPage() {
@@ -27,6 +31,7 @@ export default function ContactDetailPage() {
   const [showConsolidate, setShowConsolidate] = useState(false);
   const [showBuyMandateDialog, setShowBuyMandateDialog] = useState(false);
   const [promoteStatus, setPromoteStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
+  const [drawerStem, setDrawerStem] = useState<string | null>(null);
 
   const load = () => {
     if (id) {
@@ -116,9 +121,13 @@ export default function ContactDetailPage() {
             Buy Mandate
           </Button>
         </div>
-        {contact.company_name && (
+        {contact.current_employer ? (
+          <div className="mt-1">
+            <CurrentEmployerPill employer={contact.current_employer} />
+          </div>
+        ) : contact.company_name ? (
           <Text size="2" style={{ color: "var(--gray-9)" }}>{contact.company_name}</Text>
-        )}
+        ) : null}
       </div>
 
       {promoteStatus && (
@@ -157,9 +166,22 @@ export default function ContactDetailPage() {
                   <TextField.Root size="1" value={editFields.phone} onChange={(e: any) => setEditFields({ ...editFields, phone: e.target.value })} />
                 ) : (
                   contact.phone ? (
-                    <a href={`tel:${contact.phone}`} className="block no-underline" style={{ color: "var(--accent-11)" }}>
-                      {formatPhone(contact.phone)}
-                    </a>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <a href={`tel:${contact.phone}`} className="no-underline" style={{ color: "var(--accent-11)" }}>
+                        {formatPhone(contact.phone)}
+                      </a>
+                      {contact.phone_tenure_tag && (
+                        <Badge
+                          size="1"
+                          color={contact.phone_tenure_tag.state === "active" ? "jade" : "gray"}
+                          variant="soft"
+                        >
+                          {contact.phone_tenure_tag.state === "active"
+                            ? `Active · ${contact.phone_tenure_tag.display_name} since ${(contact.phone_tenure_tag.since || "").slice(0, 4)}`
+                            : `Last seen ${(contact.phone_tenure_tag.last_seen || "").slice(0, 10)}${contact.phone_tenure_tag.display_name ? ` · ${contact.phone_tenure_tag.display_name} era` : ""}`}
+                        </Badge>
+                      )}
+                    </div>
                   ) : <Text size="2" className="block">—</Text>
                 )}
               </div>
@@ -187,6 +209,29 @@ export default function ContactDetailPage() {
                   <TextField.Root size="1" value={editFields.job_title} onChange={(e: any) => setEditFields({ ...editFields, job_title: e.target.value })} />
                 ) : <Text size="2" className="block">{contact.job_title || "—"}</Text>}
               </div>
+              {contact.address_tenure_tags && contact.address_tenure_tags.length > 0 && (
+                <div>
+                  <Text size="1" style={{ color: "var(--gray-9)" }}>Mailing Addresses</Text>
+                  <div className="flex flex-col gap-1.5 mt-1">
+                    {contact.address_tenure_tags.map((a, i) => (
+                      <div key={i} className="flex items-center justify-between gap-2 text-[13px]">
+                        <span>{a.address_unit.split("|").slice(1, 5).filter(Boolean).join(" ")}</span>
+                        {a.tag && (
+                          <Badge
+                            size="1"
+                            color={a.tag.state === "active" ? "jade" : "gray"}
+                            variant="soft"
+                          >
+                            {a.tag.state === "active"
+                              ? `Active · ${a.tag.display_name}`
+                              : `Last seen ${a.last_seen.slice(0, 10)}`}
+                          </Badge>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -218,72 +263,13 @@ export default function ContactDetailPage() {
             </div>
           )}
 
-          {/* Group Association */}
-          <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-            <Text size="3" weight="medium" className="mb-2 block">Group</Text>
-            {contact.current_group ? (
-              <>
-                <Link to={`/groups/${contact.current_group.id}`} className="no-underline" style={{ color: "var(--accent-11)" }}>
-                  <Text size="2" weight="medium">{contact.current_group.display_name}</Text>
-                </Link>
-                {contact.current_group.hq_address && (
-                  <a
-                    href={`https://www.google.com/search?q=${encodeURIComponent(contact.current_group.hq_address)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-1.5 mt-2 no-underline group"
-                  >
-                    <MapPin size={14} weight="fill" className="mt-0.5 shrink-0" style={{ color: "var(--gray-9)" }} />
-                    <Text size="2" className="group-hover:underline" style={{ color: "var(--gray-11)" }}>{contact.current_group.hq_address}</Text>
-                    <ArrowSquareOut size={11} className="mt-1 shrink-0" style={{ color: "var(--gray-9)" }} />
-                  </a>
-                )}
-              </>
-            ) : (
-              <Text size="2" style={{ color: "var(--gray-9)" }}>No group assigned</Text>
-            )}
-          </div>
-
-          {/* Affiliated Groups */}
-          {affiliatedGroups.length > 1 && (
-            <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center gap-2">
-                  <Buildings size={16} style={{ color: "var(--gray-9)" }} />
-                  <Text size="3" weight="medium">Groups ({affiliatedGroups.length})</Text>
-                </div>
-                <Button size="1" variant="soft" onClick={() => setShowConsolidate(true)}>
-                  Consolidate
-                </Button>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                {affiliatedGroups.slice(0, 6).map((g) => (
-                  <div key={g.id} className="flex items-center justify-between">
-                    <Link
-                      to={`/groups/${g.id}`}
-                      className="text-[13px] no-underline truncate max-w-[180px]"
-                      style={{ color: "var(--accent-11)" }}
-                    >
-                      {g.display_name}
-                    </Link>
-                    <Text size="1" style={{ color: "var(--gray-9)" }}>
-                      {g.property_count}p / {g.shared_transactions}tx
-                    </Text>
-                  </div>
-                ))}
-                {affiliatedGroups.length > 6 && (
-                  <Text size="1" style={{ color: "var(--gray-9)" }}>
-                    +{affiliatedGroups.length - 6} more
-                  </Text>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* Career History (from LinkedIn enrichment) */}
-          {contact.work_history && contact.work_history.length > 0 && (
-            <CareerTimeline positions={contact.work_history} />
-          )}
+          <CareerHistoryTile
+            realtrack={contact.career_history}
+            linkedIn={contact.work_history}
+            totalSpvCount={affiliatedGroups.length}
+            onRowClick={(stem) => setDrawerStem(stem)}
+            onViewSpvs={() => setShowConsolidate(true)}
+          />
 
           {/* Stats */}
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
@@ -311,20 +297,33 @@ export default function ContactDetailPage() {
           </div>
         </div>
 
-        {/* Right: Property Footprint + Transaction History */}
+        {/* Right: Hero map + Property Footprint + Transactions */}
         <div className="col-span-2 flex flex-col gap-6">
-          {/* Property Footprint Map */}
-          {propertyHistory.length > 0 && (
-            <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-              <Text size="3" weight="medium" className="mb-3 block">
-                Property Footprint ({propertyHistory.length})
-              </Text>
-              <PropertyMiniMap
-                properties={propertyHistory}
-                height={300}
-                onPropertyClick={(pid) => navigate(`/properties/${pid}`)}
+          {contact.current_employer && contact.current_employer.brand_stem ? (
+            <>
+              <PortfolioFootprintMap
+                stem={contact.current_employer.brand_stem}
+                displayName={contact.current_employer.display_name || contact.current_employer.brand_stem}
+                height={380}
               />
-            </div>
+              <TenuredPropertyFootprintMap
+                contactId={contact.id}
+                height={260}
+              />
+            </>
+          ) : (
+            propertyHistory.length > 0 && (
+              <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+                <Text size="3" weight="medium" className="mb-3 block">
+                  Property Footprint ({propertyHistory.length})
+                </Text>
+                <PropertyMiniMap
+                  properties={propertyHistory}
+                  height={300}
+                  onPropertyClick={(pid) => navigate(`/properties/${pid}`)}
+                />
+              </div>
+            )
           )}
 
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
@@ -340,6 +339,7 @@ export default function ContactDetailPage() {
                       <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Address</th>
                       <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>City</th>
                       <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Side</th>
+                      <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Tenure</th>
                       <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
                       <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Ownership</th>
                       <th className="w-8 py-2" />
@@ -367,6 +367,14 @@ export default function ContactDetailPage() {
                           <Badge size="1" variant="soft" color={t.side === "buyer" ? "blue" : "orange"}>
                             {t.side}
                           </Badge>
+                        </td>
+                        <td className="py-2">
+                          {t.tenure ? (
+                            <Badge size="1" variant="soft" color="jade">
+                              {t.tenure.brand_stem}
+                              {t.tenure.inferred && " (i)"}
+                            </Badge>
+                          ) : null}
                         </td>
                         <td className="py-2 text-right">{formatCurrency(t.sale_price)}</td>
                         <td className="py-2 text-right">{formatOwnership(computeOwnershipYears(t.sale_date))}</td>
@@ -414,6 +422,12 @@ export default function ContactDetailPage() {
           onClose={() => setShowBuyMandateDialog(false)}
         />
       )}
+
+      <TenureDetailDrawer
+        contactId={contact.id}
+        stem={drawerStem}
+        onClose={() => setDrawerStem(null)}
+      />
     </div>
   );
 }
