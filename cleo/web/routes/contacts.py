@@ -284,6 +284,272 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
         else:
             result["current_group"] = None
 
+    # ── Career history (contact_brand_tenures) ─────────────────────────────
+    fp = result.get("name_fingerprint")
+    cbt_rows = []
+    if fp:
+        cbt_rows = db.execute(
+            """
+            SELECT cbt.brand_stem, cbt.strict_start_date, cbt.strict_end_date,
+                   cbt.inferred_start_date, cbt.inferred_end_date,
+                   cbt.n_party_sides_strict, cbt.n_party_sides_inferred,
+                   cbt.top_phrases_json, cbt.source_field_breakdown_json,
+                   cbt.dominant_address_unit, cbt.auto_group_id, cbt.is_active
+            FROM contact_brand_tenures cbt
+            WHERE cbt.contact_fingerprint = ?
+            ORDER BY cbt.inferred_end_date DESC, cbt.brand_stem ASC
+            """,
+            (fp,),
+        ).fetchall()
+
+    career_history = []
+    for r in cbt_rows:
+        cd = dict(r)
+        top_phrases = json.loads(cd["top_phrases_json"])
+        cd["display_name"] = top_phrases[0]["phrase"] if top_phrases else cd["brand_stem"]
+        cd["top_phrases"] = top_phrases
+        cd["source_field_breakdown"] = json.loads(cd["source_field_breakdown_json"])
+        # Strip the raw JSON columns from the response — clients use the parsed forms.
+        cd.pop("top_phrases_json", None)
+        cd.pop("source_field_breakdown_json", None)
+        career_history.append(cd)
+
+    # n_transactions_credited per tenure: count this contact's transactions
+    # whose sale_date falls in the inferred window.
+    if career_history and txn_list:
+        for t in career_history:
+            t["n_transactions_credited"] = sum(
+                1 for x in txn_list
+                if x.get("sale_date")
+                and t["inferred_start_date"] <= x["sale_date"] <= t["inferred_end_date"]
+            )
+    result["career_history"] = career_history
+
+    # ── current_employer derivation (LinkedIn > active realtrack) ──────────
+    work_positions = result.get("work_history") or []
+    linkedin_current = next(
+        (p for p in work_positions if p.get("is_current")),
+        None,
+    )
+    current_employer = None
+    if linkedin_current:
+        current_employer = {
+            "source": "linkedin",
+            "company": linkedin_current.get("company"),
+            "title": linkedin_current.get("title"),
+            "brand_stem": None,  # populated by reconcile step below
+            "display_name": linkedin_current.get("company"),
+        }
+    active_tenures = [t for t in career_history if t.get("is_active") == 1]
+    if active_tenures:
+        active_tenures.sort(
+            key=lambda t: (-t.get("n_party_sides_inferred", 0), t.get("brand_stem")),
+        )
+        top_active = active_tenures[0]
+        if current_employer is None:
+            current_employer = {
+                "source": "realtrack",
+                "company": top_active["display_name"],
+                "title": None,
+                "brand_stem": top_active["brand_stem"],
+                "display_name": top_active["display_name"],
+            }
+        else:
+            # LinkedIn already set; check if its company stem matches the top
+            # realtrack tenure for divergence indicator. Stem comparison is
+            # lowercase substring containment (LinkedIn names are messy).
+            li_lower = (linkedin_current.get("company") or "").lower()
+            if top_active["brand_stem"] in li_lower:
+                current_employer["source"] = "linkedin_confirmed"
+                current_employer["brand_stem"] = top_active["brand_stem"]
+            else:
+                current_employer["source"] = "linkedin_diverges"
+                current_employer["realtrack_stem"] = top_active["brand_stem"]
+                current_employer["realtrack_display_name"] = top_active["display_name"]
+    result["current_employer"] = current_employer
+
+    # ── Per-transaction tenure attribution (spec §2e) ──────────────────────
+    # A transaction credits a tenure iff:
+    #   sale_date in [inferred_start, inferred_end]
+    #   AND (the side's brand_phrase carries the stem OR the side's address_unit
+    #        equals the tenure's dominant_address_unit)
+    if fp and txn_list:
+        # Pre-fetch the brand_stems and address_units of the contact's party-sides.
+        side_info = {}
+        for r in db.execute(
+            """
+            SELECT pf.source_id, pf.side,
+                   pf.city, COALESCE(pf.street_number,'') AS sn,
+                   COALESCE(pf.street_name,'') AS st,
+                   COALESCE(pf.street_suffix,'') AS sx,
+                   COALESCE(pf.street_direction,'') AS sd,
+                   COALESCE(pf.suite_type,'') AS suite_t,
+                   COALESCE(pf.suite_number,'') AS suite_n
+            FROM party_fingerprints pf
+            WHERE pf.contact_fingerprint = ?
+            """,
+            (fp,),
+        ).fetchall():
+            addr_unit = "|".join([
+                (r["city"] or "").lower(), r["sn"], (r["st"] or "").lower(),
+                (r["sx"] or "").lower(), (r["sd"] or "").lower(),
+                (r["suite_t"] or "").lower(), r["suite_n"],
+            ])
+            side_info[(r["source_id"], r["side"])] = {"addr_unit": addr_unit, "stems": set()}
+
+        # Lookup the qualifying brand_phrase stems present on each side.
+        # party_atoms and brand_stem_phrase_map may not exist in all environments —
+        # silently skip if the tables are absent.
+        try:
+            for r in db.execute(
+                """
+                SELECT pa.source_id, pa.side, m.stem
+                FROM party_atoms pa
+                JOIN brand_stem_phrase_map m ON m.phrase = pa.atom_value
+                JOIN party_fingerprints pf ON pf.source_id = pa.source_id AND pf.side = pa.side
+                WHERE pa.atom_type = 'brand_phrase'
+                  AND pa.source_field IN ('trade_name','care_of','companies_json')
+                  AND pf.contact_fingerprint = ?
+                """,
+                (fp,),
+            ).fetchall():
+                key = (r["source_id"], r["side"])
+                if key in side_info:
+                    side_info[key]["stems"].add(r["stem"])
+        except Exception:
+            pass  # Tables not available in this environment
+
+        for txn in txn_list:
+            attribution = None
+            sid = txn.get("source_id")
+            sd = txn.get("side")
+            sale_date = txn.get("sale_date")
+            if sid and sd and sale_date:
+                info = side_info.get((sid, sd), {"addr_unit": "", "stems": set()})
+                for t in career_history:
+                    if not (t["inferred_start_date"] <= sale_date <= t["inferred_end_date"]):
+                        continue
+                    explicit = t["brand_stem"] in info["stems"]
+                    address_match = (
+                        t.get("dominant_address_unit") is not None
+                        and info["addr_unit"] == t["dominant_address_unit"]
+                    )
+                    if explicit or address_match:
+                        attribution = {
+                            "brand_stem": t["brand_stem"],
+                            "display_name": t["display_name"],
+                            "inferred": not explicit,
+                        }
+                        break  # career_history is sorted; take the most-recent-ending match
+            txn["tenure"] = attribution
+        result["transactions"] = txn_list
+
+    # ── Phone / address tenure tags ────────────────────────────────────────
+    today = db.execute("SELECT date('now') AS d").fetchone()["d"]
+    cliff = db.execute("SELECT date('now','-730 days') AS d").fetchone()["d"]
+
+    def _tag_for_phone(phone_value):
+        if not phone_value or not fp or not career_history:
+            return None
+        seen = db.execute(
+            "SELECT MIN(sale_date) AS first_seen, MAX(sale_date) AS last_seen "
+            "FROM party_fingerprints WHERE contact_fingerprint = ? AND phone = ?",
+            (fp, phone_value),
+        ).fetchone()
+        if not seen or not seen["last_seen"]:
+            return None
+        last_seen = seen["last_seen"]
+        first_seen = seen["first_seen"]
+        # Find tenures whose window overlaps [first_seen, last_seen].
+        overlapping = [
+            t for t in career_history
+            if not (t["inferred_end_date"] < first_seen or t["inferred_start_date"] > last_seen)
+        ]
+        if not overlapping:
+            return {"state": "stale", "last_seen": last_seen, "stem": None,
+                    "display_name": None}
+        # Active iff the phone overlaps an explicitly active tenure (is_active=1)
+        # for the current employer, OR was seen recently (within the cliff window)
+        # and overlaps the current employer's tenure.
+        ce_stem = (current_employer or {}).get("brand_stem")
+        active_overlap = [
+            t for t in overlapping
+            if t["brand_stem"] == ce_stem and t.get("is_active") == 1
+        ]
+        is_active = bool(active_overlap) and (
+            active_overlap[0].get("is_active") == 1 or last_seen >= cliff
+        )
+        if is_active:
+            ce = next(t for t in overlapping if t["brand_stem"] == ce_stem)
+            return {
+                "state": "active",
+                "last_seen": last_seen,
+                "stem": ce_stem,
+                "display_name": ce["display_name"],
+                "since": ce["inferred_start_date"],
+            }
+        # Stale — label with the dominant overlapping tenure (most party-sides).
+        overlapping.sort(key=lambda t: -t.get("n_party_sides_inferred", 0))
+        return {
+            "state": "stale",
+            "last_seen": last_seen,
+            "stem": overlapping[0]["brand_stem"],
+            "display_name": overlapping[0]["display_name"],
+        }
+
+    result["phone_tenure_tag"] = _tag_for_phone(result.get("phone"))
+
+    # Address tenure tag: the contact's "primary mailing address" doesn't live
+    # on the contacts row. We surface a tag for each unique address that
+    # appears on this contact's party-sides, sorted most-recent first. The UI
+    # decides which one to show under the (single) Address row.
+    address_tags = []
+    if fp:
+        addr_rows = db.execute(
+            """
+            SELECT city,
+                   COALESCE(street_number,'') AS sn,
+                   COALESCE(street_name,'') AS st,
+                   COALESCE(street_suffix,'') AS sx,
+                   COALESCE(street_direction,'') AS sd,
+                   COALESCE(suite_type,'') AS suite_t,
+                   COALESCE(suite_number,'') AS suite_n,
+                   MIN(sale_date) AS first_seen, MAX(sale_date) AS last_seen
+            FROM party_fingerprints
+            WHERE contact_fingerprint = ?
+              AND street_number IS NOT NULL AND street_number != ''
+            GROUP BY 1,2,3,4,5,6,7
+            ORDER BY MAX(sale_date) DESC
+            """,
+            (fp,),
+        ).fetchall()
+        for ar in addr_rows:
+            addr_unit = "|".join([
+                (ar["city"] or "").lower(), ar["sn"], (ar["st"] or "").lower(),
+                (ar["sx"] or "").lower(), (ar["sd"] or "").lower(),
+                (ar["suite_t"] or "").lower(), ar["suite_n"],
+            ])
+            # Match against tenure dominant_address_unit.
+            matching = [t for t in career_history if t.get("dominant_address_unit") == addr_unit]
+            tag = None
+            if matching:
+                t = matching[0]
+                if t.get("is_active") == 1 and ar["last_seen"] >= cliff:
+                    tag = {"state": "active", "stem": t["brand_stem"],
+                           "display_name": t["display_name"],
+                           "since": t["inferred_start_date"]}
+                else:
+                    tag = {"state": "stale", "stem": t["brand_stem"],
+                           "display_name": t["display_name"],
+                           "last_seen": ar["last_seen"]}
+            address_tags.append({
+                "address_unit": addr_unit,
+                "first_seen": ar["first_seen"],
+                "last_seen": ar["last_seen"],
+                "tag": tag,
+            })
+    result["address_tenure_tags"] = address_tags
+
     return result
 
 
