@@ -73,6 +73,20 @@ def _seed_phrase(conn, source_id, side, phrase, phone=None):
     conn.commit()
 
 
+def _seed_qualifying_phrase(conn, source_id, side, phrase, source_field='care_of', phone=None):
+    """Seed a brand_phrase atom in a qualifying source field (trade_name/care_of/companies_json)."""
+    conn.execute(
+        "INSERT OR IGNORE INTO party_fingerprints (source_id, side, phone) VALUES (?,?,?)",
+        (source_id, side, phone),
+    )
+    conn.execute(
+        "INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field) "
+        "VALUES (?, ?, 'brand_phrase', ?, ?)",
+        (source_id, side, phrase, source_field),
+    )
+    conn.commit()
+
+
 def test_candidate_stem_picks_highest_idf_distinctive_1gram():
     conn = _make_db()
     out = extract_candidate_stem('skyline real estate holdings', conn)
@@ -190,3 +204,75 @@ def test_build_stems_picker_prefers_higher_score_when_both_qualify():
     assert row['dominant_anchor_value'] == 'P1'
     assert row['volume'] == 5
     assert row['dominance_share'] == pytest.approx(1.0)
+
+
+# ── Second promotion path: qualifying-source-field volume ─────────────────
+
+
+def test_build_stems_promotes_via_qualifying_source_fields():
+    """A stem with no anchor dominance but >= STEM_PROMOTION_VOLUME qualifying-field
+    party-sides should be promoted with dominant_anchor_type='qualifying_source'."""
+    conn = _make_db()
+    # Seed 'kingsett capital' in care_of across 6 distinct party-sides,
+    # spread across unrelated addresses/phones so dominance never hits 0.6.
+    for i in range(6):
+        _seed_qualifying_phrase(
+            conn, f'TX{i}', 'seller', 'kingsett capital',
+            source_field='care_of', phone=f'P{i}',  # each a different phone
+        )
+    # No anchor dominance — every phone appears just once (dominance = 1/1 but vol = 1 < 5)
+    build_stems(conn, verbose=False)
+
+    rows = conn.execute('SELECT * FROM brand_stem WHERE stem=?', ('kingsett',)).fetchall()
+    assert len(rows) == 1, "kingsett should be promoted via qualifying-source-field path"
+    row = dict(rows[0])
+    assert row['dominant_anchor_type'] == 'qualifying_source'
+    assert row['dominant_anchor_value'] == ''
+    assert row['dominance_share'] == pytest.approx(1.0)
+    assert row['volume'] >= 6
+
+    # Its phrase must also appear in brand_stem_phrase_map
+    map_rows = conn.execute(
+        'SELECT * FROM brand_stem_phrase_map WHERE stem=?', ('kingsett',)
+    ).fetchall()
+    assert len(map_rows) >= 1
+    phrases = {r['phrase'] for r in map_rows}
+    assert 'kingsett capital' in phrases
+
+
+def test_build_stems_qualifying_source_already_promoted_not_duplicated():
+    """A stem promoted via anchor dominance is not double-promoted via qualifying-source path."""
+    conn = _make_db()
+    # Promote skyline via anchor dominance (6 sides, same phone → dominance 1.0)
+    for i in range(6):
+        _seed_phrase(conn, f'TX{i}', 'buyer', 'skyline real estate holdings', phone='P1')
+    # Also seed skyline phrases in qualifying fields — should not create a second brand_stem row
+    for i in range(6, 12):
+        _seed_qualifying_phrase(
+            conn, f'TX{i}', 'buyer', 'skyline real estate holdings',
+            source_field='trade_name',
+        )
+
+    build_stems(conn, verbose=False)
+
+    rows = conn.execute('SELECT * FROM brand_stem WHERE stem=?', ('skyline',)).fetchall()
+    assert len(rows) == 1, "skyline must appear exactly once in brand_stem"
+    # The anchor-dominance path ran first, so the row should reflect anchor dominance
+    assert rows[0]['dominant_anchor_type'] != 'qualifying_source'
+
+
+def test_build_stems_qualifying_source_below_volume_threshold_excluded():
+    """A stem appearing in qualifying source fields but on fewer than STEM_PROMOTION_VOLUME
+    distinct party-sides is NOT promoted."""
+    conn = _make_db()
+    # Only 4 qualifying-field sides (< 5 threshold)
+    for i in range(4):
+        _seed_qualifying_phrase(
+            conn, f'TX{i}', 'seller', 'kingsett capital',
+            source_field='companies_json', phone=f'P{i}',
+        )
+
+    build_stems(conn, verbose=False)
+
+    rows = conn.execute('SELECT * FROM brand_stem WHERE stem=?', ('kingsett',)).fetchall()
+    assert len(rows) == 0, "kingsett must NOT be promoted when qualifying-field count < 5"

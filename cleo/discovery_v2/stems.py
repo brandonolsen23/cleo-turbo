@@ -191,6 +191,37 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
         if dom >= STEM_PROMOTION_DOMINANCE and vol >= STEM_PROMOTION_VOLUME:
             promoted.append((stem, stem_type, atype, aval, dom, vol))
 
+    # --- Second promotion path: qualifying-source-field volume ---
+    # Management-company brands (trade_name / care_of / companies_json) often
+    # operate from shared office buildings, so they never dominate any single
+    # anchor.  But by spec those three fields are exactly where management-
+    # company names live.  If a candidate stem appears as the candidate for a
+    # brand_phrase that recurs in those fields on >= STEM_PROMOTION_VOLUME
+    # distinct party-sides corpus-wide, promote it regardless of anchor dominance.
+    QUALIFYING_SOURCE_FIELDS = ('trade_name', 'care_of', 'companies_json')
+    already_promoted_stems = {row[0] for row in promoted}
+
+    stem_qualifying_sides: dict[str, set] = {}
+    for r in conn.execute(
+        f"""SELECT pa.atom_value AS phrase, pa.source_id, pa.side
+            FROM party_atoms pa
+            WHERE pa.atom_type = 'brand_phrase'
+              AND pa.source_field IN ({','.join('?' * len(QUALIFYING_SOURCE_FIELDS))})""",
+        QUALIFYING_SOURCE_FIELDS,
+    ):
+        cand = phrase_to_candidate.get(r['phrase'])
+        if cand is None:
+            continue
+        stem = cand[0]
+        if stem in already_promoted_stems:
+            continue
+        stem_qualifying_sides.setdefault(stem, set()).add((r['source_id'], r['side']))
+
+    for stem, sides in stem_qualifying_sides.items():
+        if len(sides) >= STEM_PROMOTION_VOLUME:
+            stem_type = candidate_stems[stem]
+            promoted.append((stem, stem_type, 'qualifying_source', '', 1.0, len(sides)))
+
     if promoted:
         conn.executemany(
             """INSERT INTO brand_stem
