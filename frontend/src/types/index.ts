@@ -347,6 +347,118 @@ export interface PartyMetadata {
 // Contacts
 // ============================================================
 
+// ── Tenure types ──
+
+export interface TenurePhrase {
+  phrase: string;
+  n: number;
+}
+
+export interface CareerHistoryRow {
+  brand_stem: string;
+  display_name: string;
+  is_active: number;
+  strict_start_date: string;
+  strict_end_date: string;
+  inferred_start_date: string;
+  inferred_end_date: string;
+  n_party_sides_strict: number;
+  n_party_sides_inferred: number;
+  n_transactions_credited: number;
+  top_phrases: TenurePhrase[];
+  source_field_breakdown: Record<string, number>;
+  dominant_address_unit: string | null;
+  auto_group_id: string | null;
+}
+
+export interface CurrentEmployer {
+  source: "linkedin" | "linkedin_confirmed" | "linkedin_diverges" | "realtrack";
+  company: string | null;
+  title: string | null;
+  brand_stem: string | null;
+  display_name: string | null;
+  realtrack_stem?: string;
+  realtrack_display_name?: string;
+}
+
+export interface TenureTag {
+  state: "active" | "stale";
+  stem: string | null;
+  display_name: string | null;
+  last_seen?: string;
+  since?: string;
+}
+
+export interface AddressTenureTag {
+  address_unit: string;
+  first_seen: string;
+  last_seen: string;
+  tag: TenureTag | null;
+}
+
+export interface ContactTransactionWithTenure extends ContactTransaction {
+  tenure: { brand_stem: string; display_name: string; inferred: boolean } | null;
+}
+
+// ── Tenure Detail drawer ──
+
+export interface CreditedTransaction {
+  source_id: string;
+  side: string;
+  sale_date: string;
+  sale_price: number | null;
+  display_address: string;
+  city: string;
+  brand_phrase: string | null;
+  source_field: string | null;
+  inferred: boolean;
+}
+
+export interface TenureDetail {
+  brand_stem: string;
+  display_name: string;
+  is_active: number;
+  strict_start_date: string;
+  strict_end_date: string;
+  inferred_start_date: string;
+  inferred_end_date: string;
+  n_party_sides_strict: number;
+  n_party_sides_inferred: number;
+  top_phrases: TenurePhrase[];
+  source_field_breakdown: Record<string, number>;
+  dominant_address_unit: string | null;
+  auto_group_id: string | null;
+  auto_group_display_name: string | null;
+  credited_transactions: CreditedTransaction[];
+}
+
+// ── Portfolio footprint ──
+
+export interface PortfolioFootprintProperty {
+  id: string;
+  display_address: string;
+  city: string;
+  lat: number;
+  lng: number;
+  asset_class: string | null;
+  most_recent_sale_price: number | null;
+}
+
+export interface PortfolioFootprintResponse {
+  stem: string;
+  n_transactions: number;
+  properties: PortfolioFootprintProperty[];
+}
+
+export interface TenuredFootprintProperty extends PortfolioFootprintProperty {
+  tenure_stem: string | null;
+  inferred: boolean;
+}
+
+export interface TenuredFootprintResponse {
+  properties: TenuredFootprintProperty[];
+}
+
 export interface ContactBrowseItem {
   id: string;
   display_name: string;
@@ -401,7 +513,7 @@ export interface ContactDetail {
   last_engaged_date: string | null;
   created_at: string;
   updated_at: string;
-  transactions: ContactTransaction[];
+  transactions: ContactTransactionWithTenure[];
   current_group: { id: string; display_name: string; status: string; hq_address: string | null } | null;
   linkedin_url: string | null;
   linkedin_headline: string | null;
@@ -412,6 +524,10 @@ export interface ContactDetail {
     phones: { value: string; type: string; source: string }[];
   } | null;
   work_history: WorkHistoryPosition[];
+  career_history: CareerHistoryRow[];
+  current_employer: CurrentEmployer | null;
+  phone_tenure_tag: TenureTag | null;
+  address_tenure_tags: AddressTenureTag[];
 }
 
 // ============================================================
