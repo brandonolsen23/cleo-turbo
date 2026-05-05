@@ -189,6 +189,22 @@ def build_contact_brand_tenures(
                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             inserts,
         )
+
+    # Soft corroboration: link tenure → auto_group when canonical_stem matches.
+    # When multiple auto_groups share canonical_stem, the highest-membership
+    # one wins (deterministic, matches user's "drill into the biggest cluster"
+    # intent).
+    conn.execute("""
+        UPDATE contact_brand_tenures
+        SET auto_group_id = (
+            SELECT g.auto_group_id
+            FROM auto_groups g
+            WHERE g.canonical_stem = contact_brand_tenures.brand_stem
+            ORDER BY g.n_members DESC, g.auto_group_id ASC
+            LIMIT 1
+        )
+    """)
+
     conn.commit()
     if verbose:
         print(f"  contact_brand_tenures: {len(inserts):,} rows.", flush=True)

@@ -326,3 +326,74 @@ def test_inferred_window_does_not_extend_when_no_other_sides():
     ).fetchone()
     assert row["strict_start_date"] == row["inferred_start_date"] == "1999-01-27"
     assert row["strict_end_date"] == row["inferred_end_date"] == "2001-06-12"
+
+
+def test_auto_group_id_link_when_canonical_stem_matches():
+    """When an auto_group exists with matching canonical_stem, link it."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    conn.execute(
+        "INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, "
+        "tier, confidence, n_anchors, n_members) "
+        "VALUES ('AGRP_01392', 'canfirst', 'CanFirst Capital Management', "
+        "'confirmed', 0.85, 5, 58)"
+    )
+    _add_party(conn, "RT1", "buyer", "paul braun", "2010-01-01")
+    _add_brand_phrase(conn, "RT1", "buyer", "canfirst capital management", "trade_name")
+    _add_party(conn, "RT2", "buyer", "paul braun", "2020-01-01")
+    _add_brand_phrase(conn, "RT2", "buyer", "canfirst capital management", "trade_name")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT auto_group_id FROM contact_brand_tenures WHERE brand_stem='canfirst'"
+    ).fetchone()
+    assert row["auto_group_id"] == "AGRP_01392"
+
+
+def test_auto_group_id_null_when_no_matching_stem():
+    """When no auto_group has canonical_stem='dundee', auto_group_id is NULL."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    _add_party(conn, "RT_D1", "buyer", "paul braun", "1999-01-27",
+               street_number="390", street_name="bay")
+    _add_brand_phrase(conn, "RT_D1", "buyer", "dundee realty", "care_of")
+    _add_party(conn, "RT_D2", "buyer", "paul braun", "2001-06-12",
+               street_number="390", street_name="bay")
+    _add_brand_phrase(conn, "RT_D2", "buyer", "dundee realty", "care_of")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT auto_group_id FROM contact_brand_tenures WHERE brand_stem='dundee'"
+    ).fetchone()
+    assert row["auto_group_id"] is None
+
+
+def test_auto_group_id_picks_highest_membership_on_tie():
+    """When multiple auto_groups share canonical_stem, pick the one with most members."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    conn.execute(
+        "INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, "
+        "tier, confidence, n_anchors, n_members) VALUES "
+        "('AGRP_00001', 'canfirst', 'A', 'confirmed', 0.8, 1, 5),"
+        "('AGRP_00002', 'canfirst', 'B', 'confirmed', 0.8, 1, 50)"
+    )
+    _add_party(conn, "RT1", "buyer", "paul braun", "2010-01-01")
+    _add_brand_phrase(conn, "RT1", "buyer", "canfirst capital management", "trade_name")
+    _add_party(conn, "RT2", "buyer", "paul braun", "2020-01-01")
+    _add_brand_phrase(conn, "RT2", "buyer", "canfirst capital management", "trade_name")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT auto_group_id FROM contact_brand_tenures WHERE brand_stem='canfirst'"
+    ).fetchone()
+    assert row["auto_group_id"] == "AGRP_00002"  # higher n_members wins
