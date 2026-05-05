@@ -245,3 +245,34 @@ def test_contact_detail_phone_tenure_tag_active(client):
     assert body["phone_tenure_tag"] is not None
     assert body["phone_tenure_tag"]["state"] == "active"
     assert body["phone_tenure_tag"]["stem"] == "canfirst"
+
+
+def test_tenure_detail_returns_full_payload(client):
+    """GET /api/contacts/:id/tenures/:stem returns top phrases, breakdown, dates, transactions."""
+    resp = client.get("/api/contacts/CON_07049/tenures/canfirst")
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["brand_stem"] == "canfirst"
+    assert body["display_name"] == "canfirst capital management"
+    assert body["strict_start_date"] == "2004-07-02"
+    assert body["inferred_start_date"] == "2002-04-29"
+    assert body["auto_group_id"] == "AGRP_01392"
+    assert body["auto_group_display_name"] == "CanFirst Capital Management"
+    assert body["top_phrases"][0] == {"phrase": "canfirst capital management", "n": 60}
+    assert body["source_field_breakdown"] == {
+        "trade_name": 41, "companies_json": 15, "care_of": 4
+    }
+    assert "credited_transactions" in body
+    assert isinstance(body["credited_transactions"], list)
+    sample = body["credited_transactions"][0]
+    assert {"source_id", "sale_date", "display_address", "sale_price", "inferred"} <= set(sample.keys())
+
+
+def test_tenure_detail_404_on_unknown_contact(client):
+    resp = client.get("/api/contacts/CON_99999/tenures/canfirst")
+    assert resp.status_code == 404
+
+
+def test_tenure_detail_404_on_unknown_stem(client):
+    resp = client.get("/api/contacts/CON_07049/tenures/unknownstem")
+    assert resp.status_code == 404

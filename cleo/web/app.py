@@ -34,6 +34,7 @@ from .routes.activities import router as activities_router
 from .routes.discovery import router as discovery_router
 from .routes.labeling import router as labeling_router
 from .routes.explorer import router as explorer_router
+from .routes.contact_tenures import router as contact_tenures_router
 
 
 def create_app():
@@ -88,6 +89,7 @@ def create_app():
     app.include_router(discovery_router, prefix="/api/discovery", tags=["discovery"])
     app.include_router(labeling_router, prefix="/api/labeling", tags=["labeling"])
     app.include_router(explorer_router, prefix="/api/explorer", tags=["explorer"])
+    app.include_router(contact_tenures_router, prefix="/api", tags=["contact-tenures"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')
