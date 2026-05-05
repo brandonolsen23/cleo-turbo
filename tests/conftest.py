@@ -105,6 +105,23 @@ CREATE TABLE auto_contact_tenures (
     n_party_sides_in_window INTEGER NOT NULL,
     discovered_at TEXT
 );
+CREATE TABLE contact_brand_tenures (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    contact_fingerprint TEXT NOT NULL,
+    brand_stem TEXT NOT NULL,
+    strict_start_date TEXT NOT NULL,
+    strict_end_date TEXT NOT NULL,
+    inferred_start_date TEXT NOT NULL,
+    inferred_end_date TEXT NOT NULL,
+    n_party_sides_strict INTEGER NOT NULL,
+    n_party_sides_inferred INTEGER NOT NULL,
+    top_phrases_json TEXT NOT NULL,
+    source_field_breakdown_json TEXT NOT NULL,
+    dominant_address_unit TEXT,
+    auto_group_id TEXT,
+    is_active INTEGER NOT NULL,
+    discovered_at TEXT DEFAULT (datetime('now'))
+);
 """
 
 

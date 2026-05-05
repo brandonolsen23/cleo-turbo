@@ -1,4 +1,5 @@
 import pytest
+import sqlite3
 
 from cleo.discovery_v2.auto_groups import build_auto_groups
 from tests._helpers import seed_party_side
@@ -58,3 +59,34 @@ def test_multi_tenant_address_does_not_seed_alone(discovery_v2_db):
             (g['auto_group_id'],),
         ).fetchone()['n']
         assert n_anchors >= 2, f'Group {g["auto_group_id"]} seeded with only one anchor'
+
+
+def test_orchestrator_includes_contact_brand_tenures_step(discovery_v2_db):
+    """Smoke test: build_auto_groups returns a summary that includes n_tenure_rows."""
+    conn = discovery_v2_db
+    # Ensure the contact_brand_tenures table exists (created by migration 018 in production).
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS contact_brand_tenures (
+            id                          INTEGER PRIMARY KEY AUTOINCREMENT,
+            contact_fingerprint         TEXT NOT NULL,
+            brand_stem                  TEXT NOT NULL,
+            strict_start_date           TEXT NOT NULL,
+            strict_end_date             TEXT NOT NULL,
+            inferred_start_date         TEXT NOT NULL,
+            inferred_end_date           TEXT NOT NULL,
+            n_party_sides_strict        INTEGER NOT NULL,
+            n_party_sides_inferred      INTEGER NOT NULL,
+            top_phrases_json            TEXT NOT NULL,
+            source_field_breakdown_json TEXT NOT NULL,
+            dominant_address_unit       TEXT,
+            auto_group_id               TEXT,
+            is_active                   INTEGER NOT NULL,
+            discovered_at               TEXT DEFAULT (datetime('now'))
+        )
+    """)
+    conn.commit()
+
+    # Empty DB — orchestrator should still run without erroring.
+    summary = build_auto_groups(conn, verbose=False)
+    assert "n_tenure_rows" in summary
+    assert summary["n_tenure_rows"] == 0

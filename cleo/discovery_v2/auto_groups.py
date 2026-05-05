@@ -8,6 +8,7 @@ from cleo.discovery_v2.anchor_scores import build_anchor_scores
 from cleo.discovery_v2.seeding import build_seeds, build_contact_tenures
 from cleo.discovery_v2.expansion import build_expansion
 from cleo.discovery_v2.conflicts import detect_conflicts
+from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
 
 
 def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
@@ -22,8 +23,9 @@ def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True) -> dict
     ct = build_contact_tenures(conn, verbose=verbose)
     a6 = detect_conflicts(conn, verbose=verbose)
     a5 = _finalize_display_and_counts(conn, verbose=verbose)
+    cbt = build_contact_brand_tenures(conn, verbose=verbose)
 
-    summary = {**a1, **a2, **a3, **a4, **ct, **a6, **a5}
+    summary = {**a1, **a2, **a3, **a4, **ct, **a6, **a5, **cbt}
     if verbose:
         print(f'Layer 2: done. {summary}', flush=True)
     return summary
