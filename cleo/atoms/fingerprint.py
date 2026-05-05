@@ -17,6 +17,7 @@ from cleo.atoms.normalize import (
     normalize_suite_type, normalize_suite_number, normalize_city,
     normalize_province, normalize_postal, normalize_country,
 )
+from cleo.resolver.address_canonical import canonicalize_address
 
 
 def _parse_json_array(raw):
@@ -84,6 +85,8 @@ def run_fingerprint_pass(conn):
             phone               TEXT,
             contact_fingerprint TEXT,
             sale_date           TEXT,
+            property_canonical_id   TEXT,
+            party_address_canonical TEXT,
             computed_at         TEXT DEFAULT (datetime('now')),
             PRIMARY KEY (source_id, side)
         );
@@ -99,6 +102,8 @@ def run_fingerprint_pass(conn):
         CREATE INDEX IF NOT EXISTS idx_pfp_postal ON party_fingerprints(postal);
         CREATE INDEX IF NOT EXISTS idx_pfp_phone ON party_fingerprints(phone);
         CREATE INDEX IF NOT EXISTS idx_pfp_contact ON party_fingerprints(contact_fingerprint);
+        CREATE INDEX IF NOT EXISTS idx_pf_property_canonical ON party_fingerprints(property_canonical_id);
+        CREATE INDEX IF NOT EXISTS idx_pf_party_addr_canonical ON party_fingerprints(party_address_canonical);
         CREATE INDEX IF NOT EXISTS idx_pa_lookup ON party_atoms(atom_type, atom_value);
         CREATE INDEX IF NOT EXISTS idx_pa_party ON party_atoms(source_id, side);
     """)
@@ -134,6 +139,7 @@ def run_fingerprint_pass(conn):
             tp.source_id,
             tp.side,
             t.sale_date,
+            t.property_id,
             CASE tp.side WHEN 'buyer' THEN t.buyer_trade_name ELSE t.seller_trade_name END AS trade_name,
             CASE tp.side WHEN 'buyer' THEN t.buyer_care_of ELSE t.seller_care_of END AS care_of,
             CASE tp.side WHEN 'buyer' THEN t.buyer_companies_json ELSE t.seller_companies_json END AS companies_json,
@@ -167,16 +173,34 @@ def run_fingerprint_pass(conn):
                 contact_fp = cfp
                 break
 
+        norm_street_number = normalize_street_number(r['street_number'])
+        norm_street_name = normalize_street_name(r['street_name'])
+        norm_street_suffix = normalize_street_suffix(r['street_suffix'])
+        norm_street_direction = normalize_street_direction(r['street_direction'])
+        norm_suite_type = normalize_suite_type(r['suite_type'])
+        norm_suite_number = normalize_suite_number(r['suite_number'])
+        norm_city = normalize_city(r['city'])
+
+        party_address_canonical = canonicalize_address(
+            norm_city,
+            norm_street_number,
+            norm_street_name,
+            norm_street_suffix,
+            norm_street_direction,
+            norm_suite_type,
+            norm_suite_number,
+        )
+
         fp_rows.append((
             r['source_id'],
             r['side'],
-            normalize_street_number(r['street_number']),
-            normalize_street_name(r['street_name']),
-            normalize_street_suffix(r['street_suffix']),
-            normalize_street_direction(r['street_direction']),
-            normalize_suite_type(r['suite_type']),
-            normalize_suite_number(r['suite_number']),
-            normalize_city(r['city']),
+            norm_street_number,
+            norm_street_name,
+            norm_street_suffix,
+            norm_street_direction,
+            norm_suite_type,
+            norm_suite_number,
+            norm_city,
             normalize_province(r['province']),
             normalize_postal(r['postal']),
             r['postal'],  # postal_raw — preserve source string verbatim
@@ -184,6 +208,8 @@ def run_fingerprint_pass(conn):
             phone,
             contact_fp,
             r['sale_date'],
+            r['property_id'],            # property_canonical_id
+            party_address_canonical,     # party_address_canonical
         ))
 
         # Multi-valued atoms -> party_atoms rows
@@ -210,8 +236,9 @@ def run_fingerprint_pass(conn):
         """INSERT INTO party_fingerprints
            (source_id, side, street_number, street_name, street_suffix, street_direction,
             suite_type, suite_number, city, province, postal, postal_raw, country,
-            phone, contact_fingerprint, sale_date)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            phone, contact_fingerprint, sale_date,
+            property_canonical_id, party_address_canonical)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         fp_rows,
     )
     print(f'  Inserting {len(atom_rows):,} party_atoms rows...')
