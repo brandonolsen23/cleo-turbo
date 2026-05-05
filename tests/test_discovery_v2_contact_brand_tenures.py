@@ -224,3 +224,105 @@ def test_idempotent_rebuild():
     build_contact_brand_tenures(conn, today="2026-05-04")
     n2 = conn.execute("SELECT COUNT(*) FROM contact_brand_tenures").fetchone()[0]
     assert n1 == n2 == 1
+
+
+def test_dominant_address_unit_picked():
+    """When two addresses appear in the strict window, the more-frequent one wins."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    # 3 sides at 30 St Clair, 1 side at 100 Bloor — 30 St Clair wins.
+    for i in range(3):
+        _add_party(conn, f"RT_S{i}", "buyer", "paul braun", f"20{10+i}-01-01",
+                   street_number="30", street_name="st clair",
+                   street_suffix="ave", street_direction="w")
+        _add_brand_phrase(conn, f"RT_S{i}", "buyer",
+                          "canfirst capital management", "trade_name")
+    _add_party(conn, "RT_B", "buyer", "paul braun", "2014-01-01",
+               street_number="100", street_name="bloor",
+               street_suffix="st", street_direction="w")
+    _add_brand_phrase(conn, "RT_B", "buyer",
+                      "canfirst capital management", "trade_name")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT dominant_address_unit FROM contact_brand_tenures "
+        "WHERE brand_stem='canfirst'"
+    ).fetchone()
+    assert row["dominant_address_unit"] == "toronto|30|st clair|ave|w||"
+
+
+def test_inferred_window_extends_via_dominant_address():
+    """The inferred window extends backward+forward via address bracketing."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    # Two strict canfirst sides at 30 St Clair, 2010 + 2020.
+    _add_party(conn, "RT_S1", "buyer", "paul braun", "2010-01-01",
+               street_number="30", street_name="st clair",
+               street_suffix="ave", street_direction="w")
+    _add_brand_phrase(conn, "RT_S1", "buyer",
+                      "canfirst capital management", "trade_name")
+    _add_party(conn, "RT_S2", "buyer", "paul braun", "2020-01-01",
+               street_number="30", street_name="st clair",
+               street_suffix="ave", street_direction="w")
+    _add_brand_phrase(conn, "RT_S2", "buyer",
+                      "canfirst capital management", "trade_name")
+    # An SPV-only side at 30 St Clair in 2002 (before strict start) and 2022 (after).
+    # No qualifying brand_phrase, but party_name SPV does exist.
+    _add_party(conn, "RT_SPV1", "buyer", "paul braun", "2002-04-29",
+               street_number="30", street_name="st clair",
+               street_suffix="ave", street_direction="w")
+    _add_brand_phrase(conn, "RT_SPV1", "buyer", "cf vaughan portfolio inc", "party_name")
+    _add_party(conn, "RT_SPV2", "buyer", "paul braun", "2022-12-13",
+               street_number="30", street_name="st clair",
+               street_suffix="ave", street_direction="w")
+    _add_brand_phrase(conn, "RT_SPV2", "buyer", "cf vaughan portfolio inc", "party_name")
+    # Add an irrelevant brand_phrase mapping for cf vaughan portfolio inc so it
+    # doesn't fail the join — actually, we want it to NOT appear in tenures.
+    # Don't add it to brand_stem_phrase_map; it's just an SPV name on party_name.
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT strict_start_date, strict_end_date, "
+        "inferred_start_date, inferred_end_date, "
+        "n_party_sides_strict, n_party_sides_inferred "
+        "FROM contact_brand_tenures WHERE brand_stem='canfirst'"
+    ).fetchone()
+    assert row["strict_start_date"] == "2010-01-01"
+    assert row["strict_end_date"] == "2020-01-01"
+    assert row["inferred_start_date"] == "2002-04-29"
+    assert row["inferred_end_date"] == "2022-12-13"
+    assert row["n_party_sides_strict"] == 2
+    assert row["n_party_sides_inferred"] == 4
+
+
+def test_inferred_window_does_not_extend_when_no_other_sides():
+    """If no SPV-only sides exist at the dominant address outside the strict
+    window, inferred = strict (the Paul × Dundee case)."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    _add_party(conn, "RT_D1", "buyer", "paul braun", "1999-01-27",
+               street_number="390", street_name="bay",
+               street_suffix="st", street_direction="")
+    _add_brand_phrase(conn, "RT_D1", "buyer", "dundee realty", "care_of")
+    _add_party(conn, "RT_D2", "buyer", "paul braun", "2001-06-12",
+               street_number="390", street_name="bay",
+               street_suffix="st", street_direction="")
+    _add_brand_phrase(conn, "RT_D2", "buyer", "dundee realty", "care_of")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT strict_start_date, strict_end_date, "
+        "inferred_start_date, inferred_end_date "
+        "FROM contact_brand_tenures WHERE brand_stem='dundee'"
+    ).fetchone()
+    assert row["strict_start_date"] == row["inferred_start_date"] == "1999-01-27"
+    assert row["strict_end_date"] == row["inferred_end_date"] == "2001-06-12"

@@ -107,12 +107,60 @@ def build_contact_brand_tenures(
         # by sorting alphabetically.
         sf_breakdown = {k: sf_counts[k] for k in sorted(sf_counts)}
 
-        # Inferred window placeholder: in this task the inferred window
-        # equals the strict window. Task 3 extends it via dominant address.
+        # Pick dominant_address_unit: address_unit appearing on the most
+        # distinct party-sides among the strict events. Deterministic
+        # alphabetical tiebreak.
+        addr_to_sides: dict[str, set] = defaultdict(set)
+        for e in events:
+            addr_to_sides[e["address_unit"]].add((e["source_id"], e["side"]))
+        # Filter empty-key (city missing entirely) — those don't make a useful
+        # bracket. If everything is empty, dominant is None.
+        addr_to_sides = {k: v for k, v in addr_to_sides.items() if k.strip("|")}
+        if addr_to_sides:
+            dominant_addr = sorted(
+                addr_to_sides.items(),
+                key=lambda kv: (-len(kv[1]), kv[0]),
+            )[0][0]
+        else:
+            dominant_addr = None
+
+        # Expand inferred window: include any party-side for the same contact
+        # at dominant_addr, regardless of whether it carries this stem's
+        # qualifying brand_phrase.
         inferred_start = strict_start
         inferred_end = strict_end
+        inferred_sides = set(distinct_sides)
+        if dominant_addr is not None:
+            ext_rows = conn.execute(
+                """
+                SELECT pf.source_id, pf.side, pf.sale_date,
+                       pf.city, COALESCE(pf.street_number,'') AS sn,
+                       COALESCE(pf.street_name,'') AS st,
+                       COALESCE(pf.street_suffix,'') AS sx,
+                       COALESCE(pf.street_direction,'') AS sd,
+                       COALESCE(pf.suite_type,'') AS suite_t,
+                       COALESCE(pf.suite_number,'') AS suite_n
+                FROM party_fingerprints pf
+                WHERE pf.contact_fingerprint = ?
+                  AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
+                """,
+                (cf,),
+            ).fetchall()
+            for er in ext_rows:
+                ek = _address_unit_key(
+                    er["city"], er["sn"], er["st"], er["sx"], er["sd"],
+                    er["suite_t"], er["suite_n"]
+                )
+                if ek != dominant_addr:
+                    continue
+                if er["sale_date"] < inferred_start:
+                    inferred_start = er["sale_date"]
+                if er["sale_date"] > inferred_end:
+                    inferred_end = er["sale_date"]
+                inferred_sides.add((er["source_id"], er["side"]))
+
         n_strict = len(distinct_sides)
-        n_inferred = n_strict
+        n_inferred = len(inferred_sides)
 
         # is_active placeholder: computed in Task 5 with the today arg.
         # For now, set 0 — Task 5 overwrites this column.
@@ -124,7 +172,7 @@ def build_contact_brand_tenures(
             n_strict, n_inferred,
             json.dumps(top_phrases),
             json.dumps(sf_breakdown),
-            None,  # dominant_address_unit — Task 3
+            dominant_addr,
             None,  # auto_group_id — Task 4
             is_active,
         ))
