@@ -4,7 +4,7 @@ import { Heading, Text, Button, Badge, TextField, Callout } from "@radix-ui/them
 import { CaretDown, User, Lightning, CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import { fetchApi, mutateApi } from "../api/client";
 import { useCrm } from "../components/crm/CrmContext";
-import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
+import { formatCurrency, formatDate, formatPhone, computeOwnershipYears, formatOwnership, titleCase } from "../lib/utils";
 import { categoryColor } from "../lib/theme";
 import ConsolidateGroupsModal from "../components/ui/ConsolidateGroupsModal";
 import SourceHtmlButton from "../components/source/SourceHtmlButton";
@@ -16,6 +16,17 @@ import TenureDetailDrawer from "../components/contact/TenureDetailDrawer";
 import PortfolioFootprintMap from "../components/contact/PortfolioFootprintMap";
 import TenuredPropertyFootprintMap from "../components/contact/TenuredPropertyFootprintMap";
 import type { ContactDetail, AffiliatedGroup, AffiliatedGroupsResponse } from "../types";
+
+function formatCanonicalAddress(canonical: string): string {
+  // canonical = city|street_number|street_name|street_suffix|street_direction|suite_type|suite_number
+  const parts = canonical.split("|");
+  if (parts.length !== 7) return canonical;
+  const [city, num, name, suf, dir_, stype, snum] = parts;
+  const street = [num, name, suf, dir_].filter(Boolean).join(" ");
+  const suite = snum ? `${stype === "po_box" ? "PO Box" : titleCase(stype)} ${snum}` : "";
+  const cityPart = city ? titleCase(city) : "";
+  return [street, suite, cityPart].filter(Boolean).join(", ");
+}
 
 export default function ContactDetailPage() {
   const { id } = useParams();
@@ -210,7 +221,7 @@ export default function ContactDetailPage() {
                   <div className="flex flex-col gap-1.5 mt-1">
                     {contact.address_tenure_tags.map((a, i) => (
                       <div key={i} className="flex items-center justify-between gap-2 text-[13px]">
-                        <span>{a.address_unit.split("|").slice(1, 5).filter(Boolean).join(" ")}</span>
+                        <span>{formatCanonicalAddress(a.address_unit)}</span>
                         {a.tag && (
                           <Badge
                             size="1"
