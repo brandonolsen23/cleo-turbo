@@ -285,7 +285,8 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
             result["current_group"] = None
 
     # ── Career history (contact_brand_tenures) ─────────────────────────────
-    fp = result.get("name_fingerprint")
+    _raw_fp = result.get("name_fingerprint")
+    fp = _raw_fp.lower() if _raw_fp else None
     cbt_rows = []
     if fp:
         cbt_rows = db.execute(

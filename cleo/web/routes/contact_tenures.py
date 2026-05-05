@@ -17,7 +17,10 @@ def _resolve_fingerprint(db, contact_id: str) -> str | None:
     row = db.execute(
         "SELECT name_fingerprint FROM contacts WHERE id = ?", (contact_id,)
     ).fetchone()
-    return row["name_fingerprint"] if row else None
+    if not row:
+        return None
+    raw = row["name_fingerprint"]
+    return raw.lower() if raw else None
 
 
 @router.get("/contacts/{contact_id}/tenures/{stem}")
@@ -103,7 +106,7 @@ def tenure_detail(
         FROM transaction_parties tp
         JOIN transactions t ON tp.source_id = t.source_id
         JOIN contacts c ON c.id = tp.contact_id
-        WHERE c.name_fingerprint = ?
+        WHERE LOWER(c.name_fingerprint) = ?
           AND t.sale_date BETWEEN ? AND ?
         ORDER BY t.sale_date DESC
         """,
@@ -152,7 +155,7 @@ def company_portfolio_footprint(
                t.display_address, t.city, t.property_id,
                p.lat, p.lng, p.asset_class
         FROM contact_brand_tenures cbt
-        JOIN contacts c ON c.name_fingerprint = cbt.contact_fingerprint
+        JOIN contacts c ON LOWER(c.name_fingerprint) = cbt.contact_fingerprint
         JOIN transaction_parties tp ON tp.contact_id = c.id
         JOIN transactions t ON t.source_id = tp.source_id
         LEFT JOIN properties p ON p.id = t.property_id

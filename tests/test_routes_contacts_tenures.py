@@ -94,7 +94,7 @@ def _seeded_db():
     conn.execute(
         "INSERT INTO contacts (id, name_fingerprint, display_name, status, "
         "transaction_count, phone) VALUES "
-        "('CON_07049', 'paul braun', 'Paul Braun', 'lead', 80, '4169249009')"
+        "('CON_07049', 'PAUL BRAUN', 'Paul Braun', 'lead', 80, '4169249009')"
     )
     # Two tenures.
     conn.execute(
@@ -276,3 +276,17 @@ def test_tenure_detail_404_on_unknown_contact(client):
 def test_tenure_detail_404_on_unknown_stem(client):
     resp = client.get("/api/contacts/CON_07049/tenures/unknownstem")
     assert resp.status_code == 404
+
+
+def test_uppercase_name_fingerprint_still_finds_lowercase_tenures(client):
+    """Regression: contacts.name_fingerprint is UPPERCASE in production but
+    contact_brand_tenures.contact_fingerprint is lowercase. The endpoint must
+    normalize before joining."""
+    resp = client.get("/api/contacts/CON_07049")
+    body = resp.json()
+    # The fixture has UPPERCASE 'PAUL BRAUN' in contacts but lowercase
+    # 'paul braun' in contact_brand_tenures + party_fingerprints. The endpoint
+    # must find both tenures despite the case mismatch.
+    assert len(body["career_history"]) == 2
+    stems = {t["brand_stem"] for t in body["career_history"]}
+    assert stems == {"canfirst", "dundee"}
