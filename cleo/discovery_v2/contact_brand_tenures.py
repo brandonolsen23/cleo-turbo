@@ -162,9 +162,8 @@ def build_contact_brand_tenures(
         n_strict = len(distinct_sides)
         n_inferred = len(inferred_sides)
 
-        # is_active placeholder: computed in Task 5 with the today arg.
-        # For now, set 0 — Task 5 overwrites this column.
-        is_active = 0
+        # is_active: 1 iff inferred_end_date >= today - 730 days.
+        is_active = 1 if _is_active(inferred_end, today) else 0
 
         inserts.append((
             cf, stem, strict_start, strict_end,
@@ -223,3 +222,15 @@ def _address_unit_key(city, sn, st, sx, sd, suite_t, suite_n) -> str:
         (sx or "").lower(), (sd or "").lower(),
         (suite_t or "").lower(), suite_n or "",
     ])
+
+
+def _is_active(inferred_end_date: str, today: str | None) -> bool:
+    """Return True iff the tenure ends within ACTIVE_CLIFF_DAYS of today."""
+    import datetime
+    if today is None:
+        today_dt = datetime.date.today()
+    else:
+        today_dt = datetime.date.fromisoformat(today)
+    end_dt = datetime.date.fromisoformat(inferred_end_date)
+    delta_days = (today_dt - end_dt).days
+    return delta_days <= ACTIVE_CLIFF_DAYS

@@ -397,3 +397,67 @@ def test_auto_group_id_picks_highest_membership_on_tie():
         "SELECT auto_group_id FROM contact_brand_tenures WHERE brand_stem='canfirst'"
     ).fetchone()
     assert row["auto_group_id"] == "AGRP_00002"  # higher n_members wins
+
+
+def test_is_active_when_inferred_end_within_730_days():
+    """Tenure ending within 730 days of today → is_active=1."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    _add_party(conn, "RT1", "buyer", "paul braun", "2010-01-01")
+    _add_brand_phrase(conn, "RT1", "buyer", "canfirst capital management", "trade_name")
+    # End within 730 days of today=2026-05-04 → 2024-05-05+ qualifies.
+    _add_party(conn, "RT2", "buyer", "paul braun", "2025-01-01")
+    _add_brand_phrase(conn, "RT2", "buyer", "canfirst capital management", "trade_name")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT is_active, inferred_end_date FROM contact_brand_tenures "
+        "WHERE brand_stem='canfirst'"
+    ).fetchone()
+    assert row["is_active"] == 1
+
+
+def test_is_active_zero_when_too_old():
+    """Tenure ending more than 730 days ago → is_active=0."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    _add_party(conn, "RT_D1", "buyer", "paul braun", "1999-01-27",
+               street_number="390", street_name="bay")
+    _add_brand_phrase(conn, "RT_D1", "buyer", "dundee realty", "care_of")
+    _add_party(conn, "RT_D2", "buyer", "paul braun", "2001-06-12",
+               street_number="390", street_name="bay")
+    _add_brand_phrase(conn, "RT_D2", "buyer", "dundee realty", "care_of")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today="2026-05-04")
+
+    row = conn.execute(
+        "SELECT is_active FROM contact_brand_tenures WHERE brand_stem='dundee'"
+    ).fetchone()
+    assert row["is_active"] == 0
+
+
+def test_is_active_uses_today_default_when_arg_omitted():
+    """When today=None, builder uses datetime('now')."""
+    from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+
+    conn = _make_db()
+    # End yesterday → must be active under today=None.
+    import datetime
+    yesterday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+    _add_party(conn, "RT1", "buyer", "alice smith", "2010-01-01")
+    _add_brand_phrase(conn, "RT1", "buyer", "canfirst capital management", "trade_name")
+    _add_party(conn, "RT2", "buyer", "alice smith", yesterday)
+    _add_brand_phrase(conn, "RT2", "buyer", "canfirst capital management", "trade_name")
+    conn.commit()
+
+    build_contact_brand_tenures(conn, today=None)
+
+    row = conn.execute(
+        "SELECT is_active FROM contact_brand_tenures WHERE contact_fingerprint='alice smith'"
+    ).fetchone()
+    assert row["is_active"] == 1
