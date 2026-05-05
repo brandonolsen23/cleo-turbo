@@ -1307,6 +1307,22 @@ def _parse_address_root_key(key: str):
     return parts[0], parts[1]
 
 
+def _canonicalize_unit_key(key: str) -> str:
+    """Coerce an external 7-tuple URL into the canonical column form.
+
+    Old links carry noisy values like 'scarborough|2555|eglinton|avenue|east|unit|0212'.
+    Migration 019 stores 'toronto|2555|eglinton|avenue|east|suite|212'. To preserve
+    external link compatibility, route every incoming key through canonicalize_address
+    before lookup. Already-canonical keys are idempotent.
+    """
+    parts = key.split('|', 6)
+    if len(parts) != 7:
+        return key  # let the caller raise the 400 for malformed input
+    from cleo.resolver.address_canonical import canonicalize_address
+    city, snum, sname, suf, dir_, stype, snumber = parts
+    return canonicalize_address(city, snum, sname, suf, dir_, stype, snumber)
+
+
 @router.get("/addresses")
 def list_addresses(
     q: Optional[str] = Query(None),
@@ -1428,7 +1444,12 @@ def address_root_units(
 def address_unit_detail(
     key: str, db=Depends(get_db), user=Depends(get_current_user),
 ):
-    """Unit detail. Key format: 'city|num|name|suffix|direction|suite_type|suite_number'."""
+    """Unit detail. Key format: 'city|num|name|suffix|direction|suite_type|suite_number'.
+
+    Legacy keys with noisy city names or suite_type synonyms are canonicalized on read
+    so that old external URLs continue to resolve to the canonical row.
+    """
+    key = _canonicalize_unit_key(key)
     parts = key.split('|', 6)
     if len(parts) != 7:
         raise HTTPException(status_code=400, detail=f'Invalid unit key: {key!r}')
@@ -1456,26 +1477,23 @@ def address_unit_timeline(
     """Chronological events for an address_unit anchor + tenure windows.
 
     Key format: 'city|num|name|suffix|direction|suite_type|suite_number' (7 fields).
+    Legacy keys with noisy city names or suite_type synonyms are canonicalized on read
+    so that old external URLs continue to resolve to the canonical row.
     """
+    key = _canonicalize_unit_key(key)
     parts = key.split('|', 6)
     if len(parts) != 7:
         raise HTTPException(status_code=400, detail=f'Invalid unit key: {key!r}')
 
-    pf_match_clause = (
-        "(COALESCE(pf.city,'') || '|' || COALESCE(pf.street_number,'') || '|' || "
-        "COALESCE(pf.street_name,'') || '|' || COALESCE(pf.street_suffix,'') || '|' || "
-        "COALESCE(pf.street_direction,'') || '|' || COALESCE(pf.suite_type,'') || '|' || "
-        "COALESCE(pf.suite_number,''))"
-    )
     exists = db.execute(
-        f"SELECT 1 FROM party_fingerprints pf WHERE {pf_match_clause} = ? LIMIT 1",
+        "SELECT 1 FROM party_fingerprints pf WHERE pf.party_address_canonical = ? LIMIT 1",
         (key,),
     ).fetchone()
     if exists is None:
         raise HTTPException(status_code=404, detail=f'Unknown unit: {key!r}')
 
     events = [dict(r) for r in db.execute(
-        f"""SELECT pf.sale_date, pf.source_id, pf.side,
+        """SELECT pf.sale_date, pf.source_id, pf.side,
                    (SELECT pa.atom_value FROM party_atoms pa
                      WHERE pa.source_id = pf.source_id AND pa.side = pf.side
                        AND pa.atom_type = 'brand_phrase'
@@ -1485,7 +1503,7 @@ def address_unit_timeline(
             LEFT JOIN auto_group_members agm
               ON agm.source_id = pf.source_id AND agm.side = pf.side
              AND agm.member_type = 'party_side'
-            WHERE {pf_match_clause} = ?
+            WHERE pf.party_address_canonical = ?
               AND pf.sale_date IS NOT NULL AND pf.sale_date != ''
             ORDER BY pf.sale_date ASC, pf.source_id ASC, pf.side ASC""",
         (key,),

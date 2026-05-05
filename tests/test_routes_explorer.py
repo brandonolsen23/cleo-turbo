@@ -13,6 +13,7 @@ def _seeded_db():
             postal TEXT, sale_date TEXT, city TEXT,
             street_number TEXT, street_name TEXT, street_suffix TEXT, street_direction TEXT,
             suite_type TEXT, suite_number TEXT,
+            party_address_canonical TEXT,
             PRIMARY KEY (source_id, side)
         );
         CREATE TABLE party_atoms (
@@ -543,10 +544,12 @@ def _seeded_db():
         INSERT INTO party_fingerprints
             (source_id, side, sale_date,
              city, street_number, street_name, street_suffix, street_direction,
-             suite_type, suite_number, contact_fingerprint)
+             suite_type, suite_number, contact_fingerprint,
+             party_address_canonical)
         VALUES ('RT-UNIT-1', 'buyer', '2021-03-10',
                 'toronto', '66', 'wellington', 'street', 'west',
-                'suite', '4400', 'rob kumer')
+                'suite', '4400', 'rob kumer',
+                'toronto|66|wellington|street|west|suite|4400')
     """)
     conn.execute("""
         INSERT INTO party_atoms (source_id, side, atom_type, atom_value, source_field)
