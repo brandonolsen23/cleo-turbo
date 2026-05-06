@@ -356,6 +356,16 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
         if ma:
             result["owner_hq_address"] = ma["geocode_string"] or ma["display"]
 
+    # Final fallback: GW assessment owner_mailing — the assessment-roll
+    # mailing address is often the only owner-address signal for GW-only
+    # parcels (no transactions, no group link).
+    if not result.get("owner_hq_address") and result.get("gw_assessments"):
+        for g in result["gw_assessments"]:
+            m = (g.get("owner_mailing") or "").strip()
+            if m and m.upper() != "N/A":
+                result["owner_hq_address"] = m
+                break
+
     return result
 
 
