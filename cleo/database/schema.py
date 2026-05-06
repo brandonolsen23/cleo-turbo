@@ -407,6 +407,8 @@ CREATE TABLE IF NOT EXISTS lists (
     id              TEXT PRIMARY KEY,
     name            TEXT NOT NULL,
     description     TEXT,
+    owner_user_id   INTEGER REFERENCES users(id),
+    scope           TEXT NOT NULL DEFAULT 'personal',
     created_at      TEXT DEFAULT (datetime('now')),
     updated_at      TEXT DEFAULT (datetime('now'))
 );
@@ -418,6 +420,16 @@ CREATE TABLE IF NOT EXISTS list_members (
     added_at        TEXT DEFAULT (datetime('now')),
     PRIMARY KEY (list_id, member_type, member_id)
 );
+
+CREATE TABLE IF NOT EXISTS user_stars (
+    user_id      INTEGER NOT NULL REFERENCES users(id),
+    entity_type  TEXT    NOT NULL CHECK(entity_type IN ('contact','property','group')),
+    entity_id    TEXT    NOT NULL,
+    starred_at   TEXT    DEFAULT (datetime('now')),
+    PRIMARY KEY (user_id, entity_type, entity_id)
+);
+CREATE INDEX IF NOT EXISTS idx_user_stars_user   ON user_stars(user_id);
+CREATE INDEX IF NOT EXISTS idx_user_stars_entity ON user_stars(entity_type, entity_id);
 
 CREATE TABLE IF NOT EXISTS group_contacts (
     group_id        TEXT NOT NULL REFERENCES groups(id),
@@ -588,12 +600,24 @@ CREATE TABLE IF NOT EXISTS activities (
     summary             TEXT,
     next_step           TEXT,
     created_by          TEXT,
+    created_by_user_id  INTEGER REFERENCES users(id),
+    source              TEXT NOT NULL DEFAULT 'manual',
+    external_id         TEXT,
+    happened_at         TEXT,
+    contact_id          TEXT REFERENCES contacts(id),
+    property_id         TEXT REFERENCES properties(id),
+    group_id            TEXT REFERENCES groups(id),
     created_at          TEXT DEFAULT (datetime('now'))
 );
 
 CREATE INDEX IF NOT EXISTS idx_activities_entity ON activities(entity_type, entity_id);
 CREATE INDEX IF NOT EXISTS idx_activities_created ON activities(created_at);
 CREATE INDEX IF NOT EXISTS idx_activities_type ON activities(activity_type);
+CREATE INDEX IF NOT EXISTS idx_activities_contact  ON activities(contact_id);
+CREATE INDEX IF NOT EXISTS idx_activities_property ON activities(property_id);
+CREATE INDEX IF NOT EXISTS idx_activities_group    ON activities(group_id);
+CREATE INDEX IF NOT EXISTS idx_activities_user     ON activities(created_by_user_id);
+CREATE INDEX IF NOT EXISTS idx_activities_dedupe   ON activities(source, external_id);
 """
 
 SYSTEM_TABLES = """
