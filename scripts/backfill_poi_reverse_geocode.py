@@ -73,8 +73,8 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*",
 }
 
-REQUEST_DELAY = 0.4    # seconds between calls (~2.5 req/sec)
-MAX_CONSECUTIVE_ERRORS = 3
+REQUEST_DELAY = 0.6    # seconds between calls (~1.7 req/sec)
+MAX_CONSECUTIVE_ERRORS = 5
 ERROR_RATE_WINDOW = 100
 MAX_ERROR_RATE = 0.10
 
@@ -141,17 +141,19 @@ class HttpReverseGeocoder:
         try:
             resp = self._session.get(url, timeout=20)
         except requests.RequestException as exc:
+            print(f"  ✗ network error: {exc}")
             self._record(False)
-            print(f"  network error: {exc}")
             return None
 
         if resp.status_code != 200:
+            print(f"  ✗ HTTP {resp.status_code}: {resp.text[:160]}")
             self._record(False)
             return None
 
         try:
             data = resp.json()
         except ValueError:
+            print(f"  ✗ non-JSON response: {resp.text[:160]}")
             self._record(False)
             return None
 
@@ -160,6 +162,7 @@ class HttpReverseGeocoder:
             if "unable" in msg.lower() or "no candidate" in msg.lower():
                 self._record(True)
                 return None
+            print(f"  ✗ API error: {msg}")
             self._record(False)
             return None
 
