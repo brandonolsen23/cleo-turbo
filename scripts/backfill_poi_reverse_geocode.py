@@ -138,12 +138,24 @@ class HttpReverseGeocoder:
         }
         qs = "&".join(f"{k}={requests.utils.quote(str(v))}" for k, v in params.items())
         url = f"{PROXY_URL}?{inner}?{qs}"
-        try:
-            resp = self._session.get(url, timeout=20)
-        except requests.RequestException as exc:
-            print(f"  ✗ network error: {exc}")
-            self._record(False)
-            return None
+
+        # Network-level errors (DNS hiccups, brief wifi drops, peer
+        # resets) get a single 5-second retry before being counted —
+        # they're machine-side blips, not Ontario throttling.
+        resp = None
+        for attempt in (1, 2):
+            try:
+                resp = self._session.get(url, timeout=20)
+                break
+            except requests.RequestException as exc:
+                if attempt == 1:
+                    print(f"  ↻ network blip ({type(exc).__name__}); retry in 5s")
+                    time.sleep(5)
+                    continue
+                print(f"  ✗ network error after retry: {exc}")
+                self._record(False)
+                return None
+        assert resp is not None  # for type-checkers
 
         if resp.status_code != 200:
             print(f"  ✗ HTTP {resp.status_code}: {resp.text[:160]}")
