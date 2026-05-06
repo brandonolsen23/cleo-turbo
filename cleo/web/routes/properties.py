@@ -299,11 +299,22 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
 
     # POI tenants on this property
     pois = db.execute(
-        "SELECT id, source, brand, category, name, lat, lng, address, city, phone, website "
+        "SELECT id, source, brand, category, name, lat, lng, address, city, phone, website, "
+        "address_source "
         "FROM pois WHERE property_id = ? ORDER BY brand",
         (property_id,)
     ).fetchall()
     result["pois"] = [dict(p) for p in pois]
+
+    # If properties.display_address is empty, fall back to the first POI
+    # on the parcel that has an address (often reverse-geocoded). The
+    # address_source on the POI tells the UI whether it's authoritative.
+    if not (result.get("display_address") or "").strip():
+        for p in result["pois"]:
+            if (p.get("address") or "").strip():
+                result["display_address"] = p["address"]
+                result["display_address_source"] = p.get("address_source") or "poi"
+                break
 
     # GW assessments (with sales history)
     gw = db.execute(

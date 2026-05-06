@@ -323,6 +323,146 @@ class OntarioGeocoderClient:
 
         return result
 
+    def reverse_geocode(self, lat, lng):
+        """Reverse-geocode a lat/lng to a parsed Ontario address.
+
+        Args:
+            lat: latitude (WGS84)
+            lng: longitude (WGS84)
+
+        Returns:
+            dict with match_addr, house, street_name, suf_type, city,
+            postal, addr_type, score (the geocoder reports a "score" only
+            for forward calls — for reverse calls we synthesize one based
+            on Addr_type), or None if no candidate is returned.
+        """
+        cache_key = ('rev', round(float(lat), 6), round(float(lng), 6))
+        if cache_key in self._cache:
+            self.stats['cache_hits'] += 1
+            return self._cache[cache_key]
+
+        if self._call_count > 0 and self._call_count % HEARTBEAT_INTERVAL == 0:
+            self._heartbeat()
+
+        self._throttle()
+
+        result = self._reverse_geocode_with_retry(lat, lng)
+
+        self._cache[cache_key] = result
+        self.stats['calls'] += 1
+        self._call_count += 1
+
+        if result is None:
+            self.stats['no_result'] += 1
+        elif result.get('addr_type') == 'PointAddress':
+            self.stats['point_address'] += 1
+        elif result.get('addr_type') in ('StreetAddress', 'StreetName'):
+            self.stats['street_address'] += 1
+
+        return result
+
+    def _reverse_geocode_with_retry(self, lat, lng, max_retries=3):
+        for attempt in range(max_retries + 1):
+            try:
+                result = self._raw_reverse_geocode(lat, lng)
+                self._record_success()
+                return result
+            except Exception as e:
+                if attempt < max_retries:
+                    wait = 10 * (attempt + 1)
+                    if self.verbose:
+                        print(f'  Reverse-geocode error (attempt {attempt + 1}): {e}')
+                        print(f'  Waiting {wait}s before retry...')
+                    time.sleep(wait)
+                    try:
+                        self._refresh_session()
+                    except SessionError:
+                        if attempt == max_retries - 1:
+                            self._record_error()
+                            raise
+                else:
+                    self._record_error()
+                    self.stats['errors'] += 1
+                    return None
+
+    def _raw_reverse_geocode(self, lat, lng):
+        """Execute a single reverseGeocode call via the browser proxy."""
+        js_code = """
+        (lng, lat) => {
+            const url = "%s?%s/reverseGeocode" +
+                "?location=" + encodeURIComponent(lng + ',' + lat) +
+                "&outSR=4326&f=json";
+            return fetch(url).then(r => r.text());
+        }
+        """ % (PROXY_BASE, GEOCODER_BASE)
+
+        raw = self._page.evaluate(js_code, [float(lng), float(lat)])
+        data = json.loads(raw)
+
+        if 'error' in data:
+            error_msg = data['error'].get('message', str(data['error']))
+            # The geocoder returns an error when no candidate exists; treat
+            # those as "no result" rather than a transport failure so the
+            # call doesn't trip the throttle window.
+            if 'unable' in error_msg.lower() or 'no candidate' in error_msg.lower():
+                return None
+            raise RuntimeError(f"Reverse-geocoder error: {error_msg}")
+
+        addr = data.get('address') or {}
+        loc = data.get('location') or {}
+        if not addr:
+            return None
+
+        # Ontario's reverseGeocode returns a flat shape with:
+        #   Street (full street address, e.g. "333 Guelph Street"),
+        #   City, State, ZIP, Loc_name. No Match_addr / Addr_type fields.
+        street = (
+            addr.get('Match_addr')
+            or addr.get('Address')
+            or addr.get('Street')
+            or ''
+        ).strip()
+        if not street:
+            return None
+
+        city = addr.get('City') or addr.get('Place') or ''
+        state = addr.get('Region') or addr.get('State') or ''
+        postal = addr.get('Postal') or addr.get('ZIP') or ''
+
+        match_parts = [street]
+        tail = ", ".join(p for p in (city, state, postal) if p)
+        if tail:
+            match_parts.append(tail)
+
+        # Loc_name signals match strength: PARCEL_PCCF / PARCEL_*
+        # → parcel-anchored, very high quality. Street-* → street segment.
+        loc_name = addr.get('Loc_name', '') or ''
+        if loc_name.startswith('PARCEL'):
+            score = 95
+            addr_type = 'PointAddress'
+        elif loc_name.startswith('Street'):
+            score = 85
+            addr_type = 'StreetAddress'
+        elif 'Postal' in loc_name:
+            score = 60
+            addr_type = 'Postal'
+        else:
+            score = 70
+            addr_type = ''
+
+        return {
+            'match_addr': ", ".join(match_parts),
+            'addr_type': addr_type,
+            'street': street,
+            'city': city,
+            'state': state,
+            'postal': postal,
+            'loc_name': loc_name,
+            'lat': loc.get('y'),
+            'lng': loc.get('x'),
+            'score': score,
+        }
+
     def geocode_batch(self, addresses):
         """Geocode a list of addresses with progress reporting.
 
