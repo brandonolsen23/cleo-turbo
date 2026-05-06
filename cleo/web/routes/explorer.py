@@ -1323,6 +1323,28 @@ def _canonicalize_unit_key(key: str) -> str:
     return canonicalize_address(city, snum, sname, suf, dir_, stype, snumber)
 
 
+def _address_search_clauses(q: str | None, columns: list[str]) -> tuple[list[str], list[str]]:
+    """Build per-token WHERE clauses for an address search.
+
+    Each whitespace-separated token in *q* becomes one AND'd condition that
+    matches against ANY of the given *columns* (OR'd within the token).
+    So "28 regan" against ["street_number", "street_name"] produces:
+        (street_number LIKE '%28%' OR street_name LIKE '%28%')
+        AND (street_number LIKE '%regan%' OR street_name LIKE '%regan%')
+    """
+    if not q:
+        return [], []
+    tokens = [t for t in q.lower().split() if t]
+    where: list[str] = []
+    params: list[str] = []
+    for tok in tokens:
+        like = f"%{tok}%"
+        cols_clause = " OR ".join(f"{c} LIKE ?" for c in columns)
+        where.append(f"({cols_clause})")
+        params.extend([like] * len(columns))
+    return where, params
+
+
 @router.get("/addresses")
 def list_addresses(
     q: Optional[str] = Query(None),
@@ -1330,13 +1352,9 @@ def list_addresses(
     per_page: int = Query(50, ge=1, le=500),
     db=Depends(get_db), user=Depends(get_current_user),
 ):
-    where = []
-    params: list = []
-    if q:
-        ql = q.lower()
-        where.append("(street_number LIKE ? OR street_name LIKE ? OR street_suffix LIKE ?)")
-        like = f"%{ql}%"
-        params.extend([like, like, like])
+    where, params = _address_search_clauses(
+        q, ["street_number", "street_name", "street_suffix"]
+    )
     where_sql = (" WHERE " + " AND ".join(where)) if where else ""
 
     total = db.execute(
@@ -1380,13 +1398,7 @@ def list_address_roots(
     per_page: int = Query(50, ge=1, le=500),
     db=Depends(get_db), user=Depends(get_current_user),
 ):
-    where = []
-    params: list = []
-    if q:
-        ql = q.lower()
-        where.append("(street_number LIKE ? OR street_name LIKE ?)")
-        like = f"%{ql}%"
-        params.extend([like, like])
+    where, params = _address_search_clauses(q, ["street_number", "street_name"])
     where_sql = (" WHERE " + " AND ".join(where)) if where else ""
 
     total = db.execute(
