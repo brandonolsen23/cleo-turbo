@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.12, FastAPI, SQLite, raw SQL (no ORM), pytest with in-memory SQLite + `TestClient`. Frontend: React 19, TypeScript, Vite, Radix UI Themes, Phosphor Icons, `react-router-dom` v7, `fetchApi/postApi/mutateApi` helpers from `frontend/src/api/client.ts`.
 
-**Branching:** Create a new branch off `main` named `feat/crm-daily-outreach-phase-1`. The current working branch (`feat/group-discovery-algorithm`) is unrelated and should not be the base.
+**Branching (resolved 2026-05-05):** This branch already exists as `feat/crm-daily-outreach-phase-1`, branched from the HEAD of `feat/group-discovery-algorithm` (which is 258 commits ahead of `master` and contains the migrations 011–019, Layer 2 work, address canonicalization, and contact-tenure-page changes that the CRM relies on). Branching from `master` would have created a migration hole. The CRM-specific commits will need to be either merged after discovery merges, or rebased onto `master` once discovery lands. Task 0 is already complete.
 
 **Working rules:**
 - Run `cd frontend && npx tsc --noEmit` before every frontend commit (per CLAUDE.md).
@@ -57,13 +57,14 @@
 
 ## Task 0: Branch and bootstrap
 
-- [ ] **Step 1: Create the implementation branch from `main`**
+- [x] **Step 1: Implementation branch already exists**
+
+`feat/crm-daily-outreach-phase-1` was branched from the HEAD of `feat/group-discovery-algorithm` on 2026-05-05 (which carries the migrations 011–019 and Layer 2 schema the CRM depends on; branching from `master` would have created a migration hole). The spec at `docs/superpowers/specs/2026-05-05-crm-daily-outreach-design.md` and this plan are already committed on this branch. Verify:
 
 ```bash
-git fetch origin
-git checkout main
-git pull origin main
-git checkout -b feat/crm-daily-outreach-phase-1
+git branch --show-current  # expect: feat/crm-daily-outreach-phase-1
+git log --oneline -3       # expect spec + plan commits at top
+git status --short         # expect: clean
 ```
 
 - [ ] **Step 2: Verify Python and Node toolchains**
