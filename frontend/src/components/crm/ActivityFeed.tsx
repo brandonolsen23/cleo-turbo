@@ -2,7 +2,7 @@
  * ActivityFeed — displays a chronological list of activities for an entity.
  * Used on SellOpportunityDetail, BuyMandateDetail, and eventually Contact/Group detail pages.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Heading, Text, Badge, Button } from "@radix-ui/themes";
 import {
   Phone,
@@ -14,6 +14,7 @@ import {
 import type { Activity, ActivityType, ActivityEntityType } from "../../types";
 import { activityTypeColor, activityTypeLabel } from "../../lib/theme";
 import { formatDate } from "../../lib/utils";
+import { fetchApi } from "../../api/client";
 import LogActivityDialog from "./LogActivityDialog";
 
 const ACTIVITY_ICONS: Record<string, React.ElementType> = {
@@ -24,19 +25,38 @@ const ACTIVITY_ICONS: Record<string, React.ElementType> = {
 };
 
 interface ActivityFeedProps {
-  activities: Activity[];
+  // If omitted, the component fetches its own activities for {entityType, entityId}.
+  activities?: Activity[];
   entityType: ActivityEntityType;
   entityId: string;
   onActivityLogged?: () => void;
 }
 
 export default function ActivityFeed({
-  activities,
+  activities: activitiesProp,
   entityType,
   entityId,
   onActivityLogged,
 }: ActivityFeedProps) {
   const [showLogDialog, setShowLogDialog] = useState(false);
+  const [fetched, setFetched] = useState<Activity[] | null>(null);
+  const selfFetch = activitiesProp === undefined;
+
+  useEffect(() => {
+    if (!selfFetch) return;
+    fetchApi<Activity[]>(`/activities/entity/${entityType}/${encodeURIComponent(entityId)}`)
+      .then(setFetched)
+      .catch(() => setFetched([]));
+  }, [selfFetch, entityType, entityId]);
+
+  const refresh = () => {
+    if (!selfFetch) return;
+    fetchApi<Activity[]>(`/activities/entity/${entityType}/${encodeURIComponent(entityId)}`)
+      .then(setFetched)
+      .catch(() => {});
+  };
+
+  const activities = activitiesProp ?? fetched ?? [];
 
   return (
     <div>
@@ -122,6 +142,7 @@ export default function ActivityFeed({
           onClose={() => setShowLogDialog(false)}
           onSaved={() => {
             setShowLogDialog(false);
+            refresh();
             onActivityLogged?.();
           }}
         />
