@@ -8,6 +8,7 @@ from fastapi import APIRouter, Depends, Query, HTTPException
 from pydantic import BaseModel
 from ...web.deps import get_db, get_current_user, fts_query
 from ...web.audit import log_action
+from ._attribution import attribution_for
 
 # Type alias for optional query params — more explicit than bare `int = None`
 OptInt = Optional[int]
@@ -871,3 +872,8 @@ def contact_work_history(contact_id: str, db=Depends(get_db), user=Depends(get_c
         "linkedin_enriched_at": overrides["linkedin_enriched_at"] if overrides else None,
         "positions": [dict(p) for p in positions],
     }
+
+
+@router.get("/{contact_id}/attribution")
+def contact_attribution(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    return attribution_for(db, "contact_id", contact_id)

@@ -5,6 +5,7 @@ Properties API — browse, search, detail, stats.
 import json
 from fastapi import APIRouter, Depends, HTTPException, Query
 from ...web.deps import get_db, get_current_user, fts_query
+from ._attribution import attribution_for
 
 router = APIRouter()
 
@@ -356,3 +357,8 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
             result["owner_hq_address"] = ma["geocode_string"] or ma["display"]
 
     return result
+
+
+@router.get("/{property_id}/attribution")
+def property_attribution(property_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    return attribution_for(db, "property_id", property_id)

@@ -7,6 +7,7 @@ from fastapi import APIRouter, Depends, Query, HTTPException
 from pydantic import BaseModel
 from typing import Optional
 from ...web.deps import get_db, get_current_user, fts_query
+from ._attribution import attribution_for
 
 # Type aliases for optional query params
 OptInt = Optional[int]
@@ -682,3 +683,8 @@ def unlink_contact(group_id: str, contact_id: str, db=Depends(get_db), user=Depe
     log_action(db, user, "group.unlink_contact", "group", group_id, {"contact_id": contact_id})
     db.commit()
     return {"status": "unlinked"}
+
+
+@router.get("/{group_id}/attribution")
+def group_attribution(group_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    return attribution_for(db, "group_id", group_id)
