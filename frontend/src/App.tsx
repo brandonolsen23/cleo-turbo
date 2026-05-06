@@ -31,6 +31,7 @@ import DealsPage from "./pages/DealsPage";
 import DealDetailPage from "./pages/DealDetailPage";
 import ListsPage from "./pages/ListsPage";
 import ListDetailPage from "./pages/ListDetailPage";
+import QueuePage from "./pages/QueuePage";
 import AuditLogPage from "./pages/AuditLogPage";
 import AdminPage from "./pages/AdminPage";
 import SettingsPage from "./pages/SettingsPage";
@@ -142,6 +143,7 @@ export default function App() {
                   <Route path="/deals/:id" element={<DealDetailPage />} />
                   <Route path="/lists" element={<ListsPage />} />
                   <Route path="/lists/:id" element={<ListDetailPage />} />
+                  <Route path="/queue" element={<QueuePage />} />
                   <Route path="/audit" element={<AuditLogPage />} />
                   <Route path="/map" element={<MapPage />} />
                 <Route path="/pipeline" element={<PipelineOverviewPage />} />
