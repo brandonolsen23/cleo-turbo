@@ -40,7 +40,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "engines" / "rt"))
 
-from parcel_resolver.ontario_geocoder import OntarioGeocoderClient, ThrottleError  # noqa: E402
+from parcel_resolver.ontario_geocoder import OntarioGeocoderClient, ThrottleError, SessionError  # noqa: E402
 
 CACHE_DIR = ROOT / "clean-data" / "reverse_geocode"
 LOG_PATH = CACHE_DIR / "_log.jsonl"
@@ -185,57 +185,83 @@ def run(args: argparse.Namespace) -> int:
         "pending": len(pending),
     })
 
-    try:
-        with OntarioGeocoderClient(headless=True, verbose=False) as client:
-            for poi_id, lat, lng in pending:
-                try:
-                    rev = client.reverse_geocode(lat, lng)
-                except ThrottleError as exc:
-                    print(f"\n  ⚠ throttle hard-stop: {exc}")
-                    log_event({"event": "throttle_stop", "ts": time.time(), "msg": str(exc)})
-                    break
+    pending_idx = 0
+    throttle_stopped = False
+    session_failures = 0
+    max_session_restarts = args.max_session_restarts
 
-                cache_write(lat, lng, {
-                    "lat": lat,
-                    "lng": lng,
-                    "result": rev,
-                    "ts": time.time(),
-                })
+    while pending_idx < len(pending) and not throttle_stopped:
+        try:
+            with OntarioGeocoderClient(headless=True, verbose=False) as client:
+                while pending_idx < len(pending):
+                    poi_id, lat, lng = pending[pending_idx]
+                    try:
+                        rev = client.reverse_geocode(lat, lng)
+                    except ThrottleError as exc:
+                        print(f"\n  ⚠ throttle hard-stop: {exc}")
+                        log_event({"event": "throttle_stop", "ts": time.time(), "msg": str(exc)})
+                        throttle_stopped = True
+                        break
 
-                if rev:
-                    apply_to_db(conn, poi_id, format_address(rev), "reverse_geocoded", rev)
-                    successes += 1
-                else:
-                    apply_to_db(conn, poi_id, "", "reverse_geocode_failed")
-                    failures += 1
-                processed += 1
-
-                if processed % 100 == 0:
-                    conn.commit()
-                    elapsed = time.time() - start
-                    rate = processed / elapsed if elapsed else 0
-                    eta_min = (len(pending) - processed) / rate / 60 if rate else 0
-                    print(
-                        f"  [{processed:,}/{len(pending):,}] "
-                        f"ok:{successes:,} fail:{failures:,} "
-                        f"{rate:.2f}/s ETA:{eta_min:.0f}m"
-                    )
-                    log_event({
-                        "event": "progress",
+                    cache_write(lat, lng, {
+                        "lat": lat,
+                        "lng": lng,
+                        "result": rev,
                         "ts": time.time(),
-                        "processed": processed,
-                        "successes": successes,
-                        "failures": failures,
                     })
-    finally:
-        conn.commit()
-        log_event({
-            "event": "run_end",
-            "ts": time.time(),
-            "processed": processed,
-            "successes": successes,
-            "failures": failures,
-        })
+
+                    if rev:
+                        apply_to_db(conn, poi_id, format_address(rev), "reverse_geocoded", rev)
+                        successes += 1
+                    else:
+                        apply_to_db(conn, poi_id, "", "reverse_geocode_failed")
+                        failures += 1
+                    processed += 1
+                    pending_idx += 1
+
+                    if processed % 100 == 0:
+                        conn.commit()
+                        elapsed = time.time() - start
+                        rate = processed / elapsed if elapsed else 0
+                        eta_min = (len(pending) - processed) / rate / 60 if rate else 0
+                        print(
+                            f"  [{processed:,}/{len(pending):,}] "
+                            f"ok:{successes:,} fail:{failures:,} "
+                            f"{rate:.2f}/s ETA:{eta_min:.0f}m"
+                        )
+                        log_event({
+                            "event": "progress",
+                            "ts": time.time(),
+                            "processed": processed,
+                            "successes": successes,
+                            "failures": failures,
+                        })
+        except SessionError as exc:
+            session_failures += 1
+            conn.commit()
+            print(f"\n  ⚠ session error #{session_failures}: {exc}")
+            log_event({
+                "event": "session_restart",
+                "ts": time.time(),
+                "session_failures": session_failures,
+                "msg": str(exc),
+            })
+            if session_failures >= max_session_restarts:
+                print(f"  Hit {max_session_restarts} session failures — stopping")
+                break
+            # Brief cool-down so we don't hammer the proxy.
+            time.sleep(30)
+            continue
+
+    conn.commit()
+    log_event({
+        "event": "run_end",
+        "ts": time.time(),
+        "processed": processed,
+        "successes": successes,
+        "failures": failures,
+        "session_restarts": session_failures,
+    })
 
     elapsed = time.time() - start
     print(
@@ -258,6 +284,12 @@ def main() -> None:
         "--dry-run",
         action="store_true",
         help="Apply cache hits but don't call geocoder for misses",
+    )
+    parser.add_argument(
+        "--max-session-restarts",
+        type=int,
+        default=200,
+        help="Give up after this many session-init failures (default 200)",
     )
     args = parser.parse_args()
     sys.exit(run(args))
