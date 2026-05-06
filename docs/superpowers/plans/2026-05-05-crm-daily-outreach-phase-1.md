@@ -51,7 +51,7 @@
 - `frontend/src/pages/ContactDetailPage.tsx` — wire QuickActionBar + AttributionStrip + ActivityFeed (Task 17)
 - `frontend/src/pages/GroupDetailPage.tsx` — wire QuickActionBar + AttributionStrip + ActivityFeed (Task 18)
 - `frontend/src/App.tsx` — register `/queue` route (Task 19)
-- Sidebar component (location TBD by reader — see Task 20) — add Queue entry
+- Sidebar component (location resolved by reader's grep — see Task 24 Step 1) — add Queue entry
 
 ---
 
