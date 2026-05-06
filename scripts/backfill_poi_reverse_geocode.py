@@ -158,8 +158,19 @@ class HttpReverseGeocoder:
             return None
 
         if "error" in data:
-            msg = (data["error"] or {}).get("message", "")
-            if "unable" in msg.lower() or "no candidate" in msg.lower():
+            err = data["error"] or {}
+            msg = err.get("message", "")
+            details = " ".join(err.get("details", []) or [])
+            combined = f"{msg} {details}".lower()
+            # "Unable to find address" is the standard ESRI no-result
+            # signal — the API processed the request fine, there's just
+            # nothing in the address grid at that point. Don't count
+            # toward the throttle window.
+            if (
+                "unable to find" in combined
+                or "no candidate" in combined
+                or "no address" in combined
+            ):
                 self._record(True)
                 return None
             print(f"  ✗ API error: {msg}")
@@ -173,16 +184,21 @@ class HttpReverseGeocoder:
             or addr.get("Address")
             or addr.get("Street")
             or ""
-        ).strip()
-        if not street:
-            self._record(True)
-            return None
+        ).strip() if addr else ""
 
         city = addr.get("City") or addr.get("Place") or ""
         state = addr.get("Region") or addr.get("State") or ""
         postal = addr.get("Postal") or addr.get("ZIP") or ""
         loc_name = addr.get("Loc_name", "") or ""
-        match_parts = [street]
+
+        # Accept postal-only results — even just a postal code lets the
+        # user paste it into a property search. Only return None when we
+        # have literally nothing usable.
+        if not (street or postal or city):
+            self._record(True)
+            return None
+
+        match_parts = [street] if street else []
         tail = ", ".join(p for p in (city, state, postal) if p)
         if tail:
             match_parts.append(tail)
@@ -191,13 +207,14 @@ class HttpReverseGeocoder:
         elif loc_name.startswith("Street"):
             score, addr_type = 85, "StreetAddress"
         elif "Postal" in loc_name:
-            score, addr_type = 60, "Postal"
+            # Postal-only: lower score since it's just the postal area.
+            score, addr_type = 50, "Postal"
         else:
             score, addr_type = 70, ""
 
         self._record(True)
         return {
-            "match_addr": ", ".join(match_parts),
+            "match_addr": ", ".join(match_parts) if match_parts else postal,
             "addr_type": addr_type,
             "street": street,
             "city": city,
