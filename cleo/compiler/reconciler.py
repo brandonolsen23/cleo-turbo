@@ -21,14 +21,40 @@ LEGAL_SUFFIXES = [
 ]
 
 
+# "HON" is intentionally excluded — it appears as a Chinese given name (e.g.,
+# "Hon Lam", "Hon Lee") and stripping it would mangle those records. The
+# explicit "HON." / "HONOURABLE" forms remain since they're unambiguous.
+LEADING_HONORIFICS = {
+    'DR', 'DR.', 'MR', 'MR.', 'MRS', 'MRS.',
+    'MS', 'MS.', 'MISS',
+    'PROF', 'PROF.', 'PROFESSOR',
+    'HON.', 'HONOURABLE',
+    'SIR', 'MADAM', 'MADAME', 'DAME',
+    'REV', 'REV.', 'REVEREND', 'FATHER', 'FR', 'FR.',
+    'LORD', 'LADY', 'MX', 'MX.',
+}
+
+
+def strip_leading_honorifics(tokens):
+    """Drop any leading honorific tokens (Dr, Mr, Rev, Father, etc.).
+    Operates on already-uppercased tokens and returns a list."""
+    out = list(tokens)
+    while out and out[0] in LEADING_HONORIFICS:
+        out = out[1:]
+    return out
+
+
 def make_name_fingerprint(name):
     """Create a stable fingerprint for a contact name.
-    UPPERCASE, trimmed, whitespace collapsed.
-    'Lee Greenwood' -> 'LEE GREENWOOD'
+    UPPERCASE, trim, collapse whitespace, strip leading honorifics.
+    'Lee Greenwood'        -> 'LEE GREENWOOD'
+    'Dr Harry Aronowicz'   -> 'HARRY ARONOWICZ'
+    'Father John Boutros'  -> 'JOHN BOUTROS'
     """
     if not name:
         return ''
-    return ' '.join(name.upper().split())
+    tokens = strip_leading_honorifics(name.upper().split())
+    return ' '.join(tokens)
 
 
 def normalize_group_name(name):

@@ -14,7 +14,7 @@ import time
 
 from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
                      read_parcel, count_clean_records, count_osm_records, count_gw_records)
-from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name
+from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name, strip_leading_honorifics
 from ..database.schema import drop_derived_tables, create_all_tables
 from ..database.asset_classes import seed_asset_classes, map_property_type_to_asset_class
 from ..database.tenant_categories import seed_tenant_categories
@@ -402,10 +402,16 @@ def run_compiler(conn):
                 if not fingerprint:
                     continue
 
-                # Split name into first/last (simple split on last space)
-                parts = name.split()
-                first = parts[0] if parts else ''
-                last = ' '.join(parts[1:]) if len(parts) > 1 else ''
+                # Split name into first/last after stripping leading honorifics
+                # so "Dr Harry Aronowicz" parses to first=Harry, last=Aronowicz
+                # rather than first=Dr, last="Harry Aronowicz".
+                parts = strip_leading_honorifics(name.upper().split())
+                # Recover original casing from the source name where possible.
+                src_tokens = name.split()
+                if len(src_tokens) > len(parts):
+                    src_tokens = src_tokens[len(src_tokens) - len(parts):]
+                first = src_tokens[0] if src_tokens else ''
+                last = ' '.join(src_tokens[1:]) if len(src_tokens) > 1 else ''
 
                 if fingerprint not in contact_data:
                     cid = registry.get_or_create_contact_id(fingerprint)
