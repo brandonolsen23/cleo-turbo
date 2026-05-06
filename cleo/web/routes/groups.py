@@ -462,6 +462,41 @@ def promote_group(group_id: str, db=Depends(get_db), user=Depends(get_current_us
     return {"id": group_id, "status": "engaged"}
 
 
+@router.post("/{group_id}/engage")
+def engage_group(group_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """Manually flip pool→engaged on a group and write a synthetic note activity.
+    Idempotent: re-engaging does nothing."""
+    row = db.execute("SELECT status FROM groups WHERE id = ?", (group_id,)).fetchone()
+    if not row:
+        raise HTTPException(status_code=404, detail="Group not found")
+    if row["status"] == "engaged":
+        return {"id": group_id, "status": "engaged", "already": True}
+
+    me = int(user["sub"])
+    created_by = user.get("display_name") or user.get("username") or "unknown"
+
+    db.execute(
+        "UPDATE groups SET status='engaged', updated_at=datetime('now') WHERE id=?",
+        (group_id,),
+    )
+    db.execute(
+        "INSERT INTO group_field_overrides (group_id, status, updated_by) "
+        "VALUES (?, 'engaged', ?) "
+        "ON CONFLICT(group_id) DO UPDATE SET status='engaged', updated_by=?, "
+        "updated_at=datetime('now')",
+        (group_id, created_by, created_by),
+    )
+    db.execute(
+        "INSERT INTO activities "
+        "(entity_type, entity_id, activity_type, summary, source, "
+        " created_by, created_by_user_id, group_id, happened_at) "
+        "VALUES ('group', ?, 'note', 'Marked engaged', 'manual', ?, ?, ?, datetime('now'))",
+        (group_id, created_by, me, group_id),
+    )
+    db.commit()
+    return {"id": group_id, "status": "engaged"}
+
+
 @router.post("/{group_id}/hq-address")
 def set_hq_address(group_id: str, body: HQAddressRequest, db=Depends(get_db), user=Depends(get_current_user)):
     """Set or update a group's HQ address. Stores the address and triggers analytics refresh."""

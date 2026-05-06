@@ -580,6 +580,43 @@ def promote_contact(contact_id: str, db=Depends(get_db), user=Depends(get_curren
     return {"id": contact_id, "status": "engaged"}
 
 
+@router.post("/{contact_id}/engage")
+def engage_contact(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """Manually flip pool→engaged on a contact and write a synthetic note activity.
+    Idempotent: re-engaging does nothing."""
+    row = db.execute("SELECT status FROM contacts WHERE id = ?", (contact_id,)).fetchone()
+    if not row:
+        raise HTTPException(status_code=404, detail="Contact not found")
+    if row["status"] == "engaged":
+        return {"id": contact_id, "status": "engaged", "already": True}
+
+    me = int(user["sub"])
+    created_by = user.get("display_name") or user.get("username") or "unknown"
+
+    db.execute(
+        "UPDATE contacts SET status='engaged', last_engaged_date=datetime('now'), "
+        "updated_at=datetime('now') WHERE id=?",
+        (contact_id,),
+    )
+    db.execute(
+        "INSERT INTO contact_field_overrides (contact_id, status, updated_by) "
+        "VALUES (?, 'engaged', ?) "
+        "ON CONFLICT(contact_id) DO UPDATE SET status='engaged', updated_by=?, "
+        "updated_at=datetime('now')",
+        (contact_id, created_by, created_by),
+    )
+    # Synthetic activity — keep activity log as the source of truth for attribution
+    db.execute(
+        "INSERT INTO activities "
+        "(entity_type, entity_id, activity_type, summary, source, "
+        " created_by, created_by_user_id, contact_id, happened_at) "
+        "VALUES ('contact', ?, 'note', 'Marked engaged', 'manual', ?, ?, ?, datetime('now'))",
+        (contact_id, created_by, me, contact_id),
+    )
+    db.commit()
+    return {"id": contact_id, "status": "engaged"}
+
+
 class ContactUpdate(BaseModel):
     email: str = None
     mobile: str = None
