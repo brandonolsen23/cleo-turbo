@@ -1308,7 +1308,13 @@ export interface AssetClassesResponse {
 // ── Activities ──
 
 export type ActivityType = "call" | "email" | "meeting" | "note";
-export type ActivityEntityType = "sell_opportunity" | "buy_mandate" | "deal" | "contact" | "group";
+export type ActivityEntityType =
+  | "sell_opportunity"
+  | "buy_mandate"
+  | "deal"
+  | "contact"
+  | "group"
+  | "property";
 
 export interface Activity {
   id: number;
@@ -2377,4 +2383,62 @@ export interface ConflictDetailEvent {
 export interface ConflictDetailResponse {
   conflict: ConflictFlag;
   timelines: Record<string, ConflictDetailEvent[]>;
+}
+
+// ============================================================
+// CRM Phase 1 — daily-outreach surfaces
+// ============================================================
+
+export type CrmEntityType = "contact" | "property" | "group";
+
+export interface UserStar {
+  user_id: number;
+  entity_type: CrmEntityType;
+  entity_id: string;
+  starred_at: string;
+  name: string | null;
+  detail: string | null;
+  team_activity: TeamActivity | null;
+}
+
+export interface TeamActivity {
+  by_user_id: number;
+  by_user_name: string;
+  happened_at: string;
+  activity_type: string;
+  outcome: string | null;
+}
+
+export interface ListSummary {
+  id: string;
+  name: string;
+  description: string | null;
+  scope: "personal" | "shared";
+  owner_user_id: number | null;
+  owner_name: string | null;
+  total_members: number;
+  member_counts: Record<string, number>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ListMembership {
+  list_id: string;
+  list_name: string;
+  scope: "personal" | "shared";
+}
+
+export interface ContactEvent {
+  user_id: number | null;
+  user_name: string | null;
+  happened_at: string;
+  activity_type: string;
+  outcome: string | null;
+}
+
+export interface AttributionResponse {
+  first_contacted: ContactEvent | null;
+  last_contacted: ContactEvent | null;
+  total_activities: number;
+  by_user: { user_id: number | null; user_name: string | null; count: number }[];
 }
