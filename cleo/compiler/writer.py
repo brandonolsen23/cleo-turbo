@@ -10,6 +10,7 @@ CRM tables are never touched. Derived tables are truncated and rebuilt.
 """
 
 import json
+import os
 import time
 
 from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
@@ -21,6 +22,40 @@ from ..database.tenant_categories import seed_tenant_categories
 from ..analytics.groups import refresh_group_analytics
 from ..address.decompose import decompose_simple as _decompose_simple
 from ..address.formatter import format_display as _format_display
+
+
+_REVERSE_GEOCODE_DIR = os.path.join(
+    os.path.dirname(__file__), '..', '..', 'clean-data', 'reverse_geocode'
+)
+
+
+def _read_reverse_geocode_cache(lat, lng):
+    """Look up the reverse-geocode cache by lat,lng. Returns the cached
+    JSON dict (with .result possibly None) or None if no cache file."""
+    if lat is None or lng is None:
+        return None
+    key = f'{round(float(lat), 6):.6f},{round(float(lng), 6):.6f}'
+    path = os.path.join(_REVERSE_GEOCODE_DIR, f'{key}.json')
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path, 'r') as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def _format_reverse_geocode(rev):
+    """Build a single street-address string from a cached reverseGeocode
+    payload. Mirrors scripts/backfill_poi_reverse_geocode.format_address."""
+    if not rev:
+        return ''
+    match = (rev.get('match_addr') or '').strip()
+    if match:
+        return match
+    street = (rev.get('street') or '').strip()
+    tail = ', '.join(p for p in (rev.get('city'), rev.get('state'), rev.get('postal')) if p)
+    return f'{street}, {tail}'.strip(', ').strip() if tail else street
 
 
 def _snapshot_pre_compile(conn):
@@ -884,23 +919,41 @@ def run_compiler(conn):
             building = poi.get('building') or {}
             building_geojson = json.dumps(building['polygon']) if building.get('polygon') else None
 
+            # When OSM gave no addr:* tags, fall back to the reverse-geocode
+            # cache populated by scripts/backfill_poi_reverse_geocode.py so
+            # we don't lose work across compiler re-runs.
+            address_source = 'osm' if poi_address else None
+            poi_city = addr.get('city', '')
+            if not poi_address and lat is not None and lng is not None:
+                cached = _read_reverse_geocode_cache(lat, lng)
+                if cached is not None:
+                    rev = cached.get('result')
+                    if rev:
+                        poi_address = _format_reverse_geocode(rev)
+                        if not poi_city:
+                            poi_city = rev.get('city', '') or ''
+                        address_source = 'reverse_geocoded'
+                    else:
+                        address_source = 'reverse_geocode_failed'
+
             conn.execute(
                 "INSERT OR IGNORE INTO pois (id, source, brand, category, name, lat, lng, "
                 "address, city, phone, website, property_id, arn, "
                 "cuisine, operator, facebook, instagram, drive_through, "
-                "osm_id, building_geojson, approx_sqft) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "osm_id, building_geojson, approx_sqft, address_source) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (poi_id, poi.get('source', 'osm'),
                  poi.get('tracked_brand') or poi.get('brand', ''),
                  poi.get('category', ''), poi.get('name', ''),
-                 lat, lng, poi_address, addr.get('city', ''),
+                 lat, lng, poi_address, poi_city,
                  poi.get('phone', ''), poi.get('website', ''),
                  property_id, arn,
                  poi.get('cuisine', ''), poi.get('operator', ''),
                  poi.get('facebook', ''), poi.get('instagram', ''),
                  poi.get('drive_through', ''),
                  poi.get('osm_id', ''), building_geojson,
-                 building.get('approx_sqft'))
+                 building.get('approx_sqft'),
+                 address_source)
             )
             poi_count += 1
 
