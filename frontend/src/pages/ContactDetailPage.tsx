@@ -9,6 +9,9 @@ import { categoryColor } from "../lib/theme";
 import ConsolidateGroupsModal from "../components/ui/ConsolidateGroupsModal";
 import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
+import QuickActionBar from "../components/crm/QuickActionBar";
+import AttributionStrip from "../components/crm/AttributionStrip";
+import ActivityFeed from "../components/crm/ActivityFeed";
 import LinkedInButton from "../components/ui/LinkedInButton";
 import CurrentEmployerPill from "../components/contact/CurrentEmployerPill";
 import CareerHistoryTile from "../components/contact/CareerHistoryTile";
@@ -123,9 +126,15 @@ export default function ContactDetailPage() {
           <Button size="1" variant="outline" onClick={() => openDrawer({ type: "contact", id: contact.id, name: contact.display_name })}>
             Notes
           </Button>
-          <Button size="1" variant="soft" onClick={() => setShowBuyMandateDialog(true)}>
-            Buy Mandate
-          </Button>
+          <QuickActionBar
+            entityType="contact"
+            entityId={contact.id}
+            entityName={contact.display_name}
+            onCreateBuyMandate={() => setShowBuyMandateDialog(true)}
+          />
+        </div>
+        <div className="mt-2">
+          <AttributionStrip entityType="contact" entityId={contact.id} />
         </div>
         {contact.current_employer ? (
           <div className="mt-1">
@@ -279,7 +288,7 @@ export default function ContactDetailPage() {
 
           {/* Stats */}
           <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-            <Text size="3" weight="medium" className="mb-3 block">Activity</Text>
+            <Text size="3" weight="medium" className="mb-3 block">Transaction Stats</Text>
             <div className="flex flex-col gap-2 text-[14px]">
               <div className="flex justify-between">
                 <Text size="2" style={{ color: "var(--gray-9)" }}>Transactions</Text>
@@ -300,6 +309,11 @@ export default function ContactDetailPage() {
                 </div>
               )}
             </div>
+          </div>
+
+          <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+            <Text size="3" weight="medium" className="mb-3 block">Activity log</Text>
+            <ActivityFeed entityType="contact" entityId={contact.id} />
           </div>
         </div>
 
