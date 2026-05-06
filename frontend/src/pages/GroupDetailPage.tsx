@@ -12,6 +12,9 @@ import SourceHtmlButton from "../components/source/SourceHtmlButton";
 import MergeGroupsModal from "../components/ui/MergeGroupsModal";
 import LinkContactModal from "../components/ui/LinkContactModal";
 import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
+import QuickActionBar from "../components/crm/QuickActionBar";
+import AttributionStrip from "../components/crm/AttributionStrip";
+import ActivityFeed from "../components/crm/ActivityFeed";
 import SuggestedLinksCard from "../components/ui/SuggestedLinksCard";
 import type { GroupDetail, MiniMapProperty, MergeHistoryResponse, GroupContactLink, GroupContactsResponse } from "../types";
 
@@ -245,9 +248,15 @@ export default function GroupDetailPage() {
             <GitMerge size={14} />
             Merge
           </Button>
-          <Button size="1" variant="soft" onClick={() => setShowBuyMandateDialog(true)}>
-            Buy Mandate
-          </Button>
+          <QuickActionBar
+            entityType="group"
+            entityId={group.id}
+            entityName={group.display_name}
+            onCreateBuyMandate={() => setShowBuyMandateDialog(true)}
+          />
+        </div>
+        <div className="mt-2">
+          <AttributionStrip entityType="group" entityId={group.id} />
         </div>
         {(group.corporate_address || group.hq_address) && (
           <div className="flex items-center gap-1.5 mt-1.5">
@@ -385,6 +394,12 @@ export default function GroupDetailPage() {
 
       {/* Suggested Links (address/contact/phone based) */}
       {id && <SuggestedLinksCard groupId={id} onMerged={load} />}
+
+      {/* Activity Log */}
+      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+        <Text size="3" weight="medium" className="mb-3 block">Activity log</Text>
+        <ActivityFeed entityType="group" entityId={group.id} />
+      </div>
 
       {/* Contacts */}
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
