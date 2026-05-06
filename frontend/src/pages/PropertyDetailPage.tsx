@@ -16,6 +16,9 @@ import {
   DataList, Callout,
 } from "@radix-ui/themes";
 import CreateSellOppDialog from "../components/crm/CreateSellOppDialog";
+import QuickActionBar from "../components/crm/QuickActionBar";
+import AttributionStrip from "../components/crm/AttributionStrip";
+import ActivityFeed from "../components/crm/ActivityFeed";
 import {
   Copy, Phone, EnvelopeSimple, Buildings, CaretDown, CaretUp,
   MapPin, ArrowSquareOut, User, Tag, ChartBar, Image as ImageIcon, LinkedinLogo,
@@ -539,14 +542,18 @@ function PropertyDetailPageInner() {
                 </Badge>
               )}
             </div>
+            <div className="mt-2">
+              <AttributionStrip entityType="property" entityId={prop.id} />
+            </div>
           </div>
 
           {/* Quick actions */}
-          <div className="flex gap-2">
-            <Button size="2" variant="soft">Add to List</Button>
-            <Button size="2" variant="soft" onClick={() => setShowSellOppDialog(true)}>Sell Opportunity</Button>
-            <Button size="2" variant="soft">Create Deal</Button>
-          </div>
+          <QuickActionBar
+            entityType="property"
+            entityId={prop.id}
+            entityName={prop.display_address}
+            onCreateSellOpp={() => setShowSellOppDialog(true)}
+          />
         </div>
       </div>
 
@@ -857,6 +864,14 @@ function PropertyDetailPageInner() {
           </div>
         );
       })()}
+
+      {/* ============================================================ */}
+      {/* ACTIVITY FEED */}
+      {/* ============================================================ */}
+      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+        <Text size="3" weight="medium" className="mb-3 block">Activity</Text>
+        <ActivityFeed entityType="property" entityId={prop.id} />
+      </div>
 
       {/* ============================================================ */}
       {/* TABBED SECTION: Site Details | Assessment | Tenants */}
