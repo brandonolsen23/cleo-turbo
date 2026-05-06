@@ -44,7 +44,7 @@ def _seeded_db():
         CREATE TABLE audit_log (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id INTEGER, action TEXT, entity_type TEXT, entity_id TEXT,
-            details TEXT, created_at TEXT DEFAULT (datetime('now'))
+            details_json TEXT, created_at TEXT DEFAULT (datetime('now'))
         );
         INSERT INTO users (id, username, display_name, password_hash, role)
             VALUES (1, 'brandon', 'Brandon', 'x', 'editor'),
@@ -62,8 +62,9 @@ def _seeded_db():
 
 @pytest.fixture
 def client_brandon():
-    from cleo.web.app import app
+    from cleo.web.app import create_app
     from cleo.web import deps
+    app = create_app()
     conn = _seeded_db()
 
     def _get_db_override():
@@ -79,8 +80,9 @@ def client_brandon():
 
 @pytest.fixture
 def client_jamie():
-    from cleo.web.app import app
+    from cleo.web.app import create_app
     from cleo.web import deps
+    app = create_app()
     conn = _seeded_db()
 
     def _get_db_override():
