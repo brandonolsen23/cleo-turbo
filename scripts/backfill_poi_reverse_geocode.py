@@ -42,6 +42,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "engines" / "rt"))
 
+from cleo.database.connection import get_connection  # noqa: E402
+
 CACHE_DIR = ROOT / "clean-data" / "reverse_geocode"
 LOG_PATH = CACHE_DIR / "_log.jsonl"
 DB_PATH = ROOT / "data" / "cleo.db"
@@ -321,8 +323,10 @@ def apply_to_db(
 
 
 def run(args: argparse.Namespace) -> int:
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
+    # Shared connection helper sets WAL + busy_timeout=5s so we wait
+    # politely for the active backfill / backend to release writes
+    # rather than failing instantly with "database is locked".
+    conn = get_connection(str(DB_PATH))
 
     targets = select_targets(
         conn,
@@ -337,7 +341,9 @@ def run(args: argparse.Namespace) -> int:
 
     print(f"Backfill targets: {len(targets):,}")
 
-    # Pre-populate from cache (zero geocoder calls).
+    # Pre-populate from cache (zero geocoder calls). Commit per-row so we
+    # don't hold a long write lock against the running backend / live
+    # backfill.
     pre_hits = 0
     pending: list[tuple[str, float, float]] = []
     for poi_id, lat, lng in targets:
@@ -350,16 +356,17 @@ def run(args: argparse.Namespace) -> int:
             apply_to_db(conn, poi_id, "", "reverse_geocode_failed")
         else:
             apply_to_db(conn, poi_id, format_address(rev), "reverse_geocoded", rev)
+        conn.commit()
         pre_hits += 1
     if pre_hits:
-        conn.commit()
         print(f"  cache hits applied: {pre_hits:,}")
 
     if not pending:
         return 0
 
-    if args.dry_run:
-        print(f"  --dry-run: would call geocoder for {len(pending):,} more POIs")
+    if args.dry_run or args.cache_only:
+        flag = "--cache-only" if args.cache_only else "--dry-run"
+        print(f"  {flag}: skipping geocoder for {len(pending):,} POIs not in cache")
         return 0
 
     print(f"  geocoder calls needed: {len(pending):,}")
@@ -400,10 +407,13 @@ def run(args: argparse.Namespace) -> int:
                 else:
                     apply_to_db(conn, poi_id, "", "reverse_geocode_failed")
                     failures += 1
+                # Commit per-row so the write lock is held for ~10ms instead
+                # of ~120s, leaving room for the backend / other tooling to
+                # write without hitting "database is locked".
+                conn.commit()
                 processed += 1
 
                 if processed % 200 == 0:
-                    conn.commit()
                     elapsed = time.time() - start
                     rate = processed / elapsed if elapsed else 0
                     eta_min = (len(pending) - processed) / rate / 60 if rate else 0
@@ -450,6 +460,11 @@ def main() -> None:
         "--dry-run",
         action="store_true",
         help="Apply cache hits but don't call geocoder for misses",
+    )
+    parser.add_argument(
+        "--cache-only",
+        action="store_true",
+        help="Alias for --dry-run: apply cache hits and exit without geocoder calls",
     )
     args = parser.parse_args()
     sys.exit(run(args))
