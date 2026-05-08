@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Text } from "@radix-ui/themes";
-import { MagnifyingGlass } from "@phosphor-icons/react";
+import { MagnifyingGlass, Sparkle } from "@phosphor-icons/react";
 
 const PAGE_TITLES: Record<string, string> = {
   "/": "Dashboard",
@@ -30,7 +30,11 @@ function getPageTitle(pathname: string): string {
   return "";
 }
 
-export default function Header() {
+interface HeaderProps {
+  onAskClaude: () => void;
+}
+
+export default function Header({ onAskClaude }: HeaderProps) {
   const location = useLocation();
   const pageTitle = getPageTitle(location.pathname);
 
@@ -50,17 +54,27 @@ export default function Header() {
         )}
       </div>
 
-      <button
-        onClick={triggerSearch}
-        className="flex items-center gap-2 h-8 px-3 rounded-lg border transition-colors hover:border-[var(--gray-8)]"
-        style={{ borderColor: "var(--gray-6)", background: "var(--gray-2)" }}
-      >
-        <MagnifyingGlass size={14} style={{ color: "var(--gray-9)" }} />
-        <Text size="1" style={{ color: "var(--gray-8)" }}>Search...</Text>
-        <kbd className="text-[10px] px-1 py-0.5 rounded border ml-2" style={{ borderColor: "var(--gray-5)", color: "var(--gray-8)" }}>
-          ⌘K
-        </kbd>
-      </button>
+      <div className="flex items-center gap-2">
+        <button
+          onClick={onAskClaude}
+          className="flex items-center justify-center h-8 w-8 rounded-lg border transition-colors hover:border-[var(--gray-8)]"
+          style={{ borderColor: "var(--gray-6)", background: "var(--gray-2)" }}
+          title="Ask Claude (⌘I)"
+        >
+          <Sparkle size={14} style={{ color: "var(--gray-9)" }} />
+        </button>
+        <button
+          onClick={triggerSearch}
+          className="flex items-center gap-2 h-8 px-3 rounded-lg border transition-colors hover:border-[var(--gray-8)]"
+          style={{ borderColor: "var(--gray-6)", background: "var(--gray-2)" }}
+        >
+          <MagnifyingGlass size={14} style={{ color: "var(--gray-9)" }} />
+          <Text size="1" style={{ color: "var(--gray-8)" }}>Search...</Text>
+          <kbd className="text-[10px] px-1 py-0.5 rounded border ml-2" style={{ borderColor: "var(--gray-5)", color: "var(--gray-8)" }}>
+            ⌘K
+          </kbd>
+        </button>
+      </div>
     </div>
   );
 }
