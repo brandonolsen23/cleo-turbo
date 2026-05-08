@@ -141,14 +141,23 @@ Style:
 
 
 def _build_system_prompt_blocks(page_context_block: str) -> list[dict]:
-    """Returns the system prompt as Anthropic content blocks. The first
-    block is cache_control'd so prompt caching kicks in."""
-    base = _SYSTEM_PROMPT_BASE
-    if page_context_block:
-        base = base.rstrip() + "\n\n" + page_context_block + "\n"
-    return [
-        {"type": "text", "text": base, "cache_control": {"type": "ephemeral"}},
+    """Returns the system prompt as Anthropic content blocks.
+
+    The first block is the static base prompt + tool guidance, marked
+    cache_control=ephemeral so prompt caching kicks in across every
+    chat. The page context (which changes per route) goes in a second,
+    uncached block so it doesn't fragment the cache key.
+    """
+    blocks: list[dict] = [
+        {
+            "type": "text",
+            "text": _SYSTEM_PROMPT_BASE,
+            "cache_control": {"type": "ephemeral"},
+        },
     ]
+    if page_context_block:
+        blocks.append({"type": "text", "text": page_context_block})
+    return blocks
 
 
 # ── Anthropic client factory (patchable in tests) ─────────────────────
