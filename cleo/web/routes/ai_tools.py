@@ -231,3 +231,102 @@ def get_entity_url(entity_type: str, entity_id: str) -> str:
     if not entity_id:
         raise InvalidQueryError("entity_id is required.")
     return f"{prefix}{entity_id}"
+
+
+# ── page_context loader ─────────────────────────────────────────────
+
+
+def load_page_context(
+    conn: sqlite3.Connection,
+    page_context: dict[str, str] | None,
+) -> str:
+    """Build the natural-language `{{page_context_block}}` string that
+    gets injected into the system prompt.
+
+    Returns "" when the user didn't supply page context, when the
+    entity_type is unknown, or when the requested id doesn't resolve.
+    """
+    if not page_context:
+        return ""
+    etype = page_context.get("entity_type")
+    eid = page_context.get("id")
+    if not etype or not eid:
+        return ""
+
+    if etype == "property":
+        row = conn.execute(
+            "SELECT id, display_address, city, current_owner_name "
+            "FROM properties WHERE id = ?",
+            (eid,),
+        ).fetchone()
+        if not row:
+            return ""
+        owner = row["current_owner_name"] or "(no owner on file)"
+        addr = row["display_address"] or "(no address on file)"
+        city = row["city"] or ""
+        return (
+            f"User is currently looking at property {row['id']} ({addr}"
+            + (f", {city}" if city else "")
+            + f"). Owner: {owner}."
+        )
+
+    if etype == "contact":
+        row = conn.execute(
+            "SELECT id, display_name, company_name FROM contacts WHERE id = ?",
+            (eid,),
+        ).fetchone()
+        if not row:
+            return ""
+        company = row["company_name"]
+        company_clause = f" Currently at {company}." if company else ""
+        return (
+            f"User is currently looking at contact {row['id']} ({row['display_name']})."
+            + company_clause
+        )
+
+    if etype == "group":
+        row = conn.execute(
+            "SELECT id, display_name, property_count FROM groups WHERE id = ?",
+            (eid,),
+        ).fetchone()
+        if not row:
+            return ""
+        n = row["property_count"] or 0
+        return (
+            f"User is currently looking at group {row['id']} ({row['display_name']}). "
+            f"property_count={n}."
+        )
+
+    if etype == "deal":
+        row = conn.execute(
+            "SELECT id, name, stage FROM deals WHERE id = ?",
+            (eid,),
+        ).fetchone()
+        if not row:
+            return ""
+        return f"User is currently looking at deal {row['id']} ({row['name']}, stage={row['stage']})."
+
+    if etype == "list":
+        row = conn.execute(
+            "SELECT id, name, scope FROM lists WHERE id = ?",
+            (eid,),
+        ).fetchone()
+        if not row:
+            return ""
+        return f"User is currently looking at list {row['id']} ({row['name']}, scope={row['scope']})."
+
+    if etype == "transaction":
+        row = conn.execute(
+            "SELECT source_id, sale_date, display_address, sale_price "
+            "FROM transactions WHERE source_id = ?",
+            (eid,),
+        ).fetchone()
+        if not row:
+            return ""
+        return (
+            f"User is currently looking at transaction {row['source_id']} "
+            f"(sale_date={row['sale_date']}, address={row['display_address']}, "
+            f"price={row['sale_price']})."
+        )
+
+    return ""
