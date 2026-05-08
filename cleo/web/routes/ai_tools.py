@@ -90,7 +90,12 @@ class InvalidQueryError(Exception):
 # ── run_sql ──────────────────────────────────────────────────────────
 
 
-_ALLOWED_PREFIX = re.compile(r"^\s*(SELECT|WITH|EXPLAIN)\b", re.IGNORECASE)
+# Strip a leading EXPLAIN / EXPLAIN QUERY PLAN before checking the verb,
+# so EXPLAIN <write-verb> doesn't sneak through. SQLite would refuse the
+# write under ?mode=ro anyway — this just keeps the guard's stated
+# policy (SELECT / WITH only inside an EXPLAIN) honest.
+_EXPLAIN_PREFIX = re.compile(r"^\s*EXPLAIN(\s+QUERY\s+PLAN)?\b\s*", re.IGNORECASE)
+_ALLOWED_PREFIX = re.compile(r"^\s*(SELECT|WITH)\b", re.IGNORECASE)
 _BANNED_TOKENS = re.compile(r"\b(PRAGMA|ATTACH|writable_schema)\b", re.IGNORECASE)
 _COMMENT = re.compile(r"--[^\n]*|/\*.*?\*/", re.DOTALL)
 
@@ -114,7 +119,8 @@ def _has_multiple_statements(query: str) -> bool:
 
 def _validate_query(query: str) -> None:
     cleaned = _strip_comments(query)
-    if not _ALLOWED_PREFIX.match(cleaned):
+    inner = _EXPLAIN_PREFIX.sub("", cleaned, count=1)
+    if not _ALLOWED_PREFIX.match(inner):
         raise InvalidQueryError(
             "Only SELECT, WITH, and EXPLAIN queries are allowed."
         )
@@ -159,7 +165,13 @@ def _list_tables(conn: sqlite3.Connection) -> list[dict[str, Any]]:
     for r in rows:
         name = r[0] if not isinstance(r, sqlite3.Row) else r["name"]
         try:
-            count = conn.execute(f"SELECT COUNT(*) FROM {name}").fetchone()[0]
+            # Double-quote the identifier so a future migration that
+            # creates a table with non-standard chars still gets a
+            # valid count query. SQL injection isn't possible (mode=ro
+            # connection + sqlite_master is our only source of names),
+            # but consistency with describe_schema's strict-identifier
+            # check is the goal here.
+            count = conn.execute(f'SELECT COUNT(*) FROM "{name}"').fetchone()[0]
         except sqlite3.Error:
             count = None
         out.append({

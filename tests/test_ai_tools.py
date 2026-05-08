@@ -77,6 +77,12 @@ def test_run_sql_explain_allowed(ro_conn):
     assert out["row_count"] > 0
 
 
+def test_run_sql_explain_query_plan_select_allowed(ro_conn):
+    out = run_sql(ro_conn, "EXPLAIN QUERY PLAN SELECT * FROM properties")
+    # EXPLAIN QUERY PLAN returns columns like (id, parent, notused, detail).
+    assert out["row_count"] >= 1
+
+
 # ── run_sql guard rejections ───────────────────────────────────────
 
 
@@ -94,6 +100,8 @@ def test_run_sql_explain_allowed(ro_conn):
         "SELECT 1; DROP TABLE properties",
         "  SELECT * FROM properties; DELETE FROM contacts",
         "-- harmless\nDROP TABLE properties",
+        "EXPLAIN DELETE FROM properties",
+        "EXPLAIN QUERY PLAN UPDATE properties SET city = 'X'",
     ],
 )
 def test_run_sql_rejects_non_select(ro_conn, bad):
