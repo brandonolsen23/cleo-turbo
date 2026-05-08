@@ -97,7 +97,12 @@ export default function AskClaudeDrawer({ open, onClose }: AskClaudeDrawerProps)
             tp.truncated = truncated;
             tp.elapsedMs = elapsed_ms;
             // Force a re-render
-            patchAssistant((m) => ({ ...m, parts: m.parts.map((p) => (p as AIToolPart).id === id ? { ...tp } : p) }));
+            patchAssistant((m) => ({
+              ...m,
+              parts: m.parts.map((p) =>
+                p.kind === "tool" && p.id === id ? { ...tp } : p
+              ),
+            }));
           },
           onDone: () => {
             patchAssistant((m) => ({ ...m, inFlight: false }));
