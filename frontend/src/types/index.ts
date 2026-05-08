@@ -2442,3 +2442,49 @@ export interface AttributionResponse {
   total_activities: number;
   by_user: { user_id: number | null; user_name: string | null; count: number }[];
 }
+
+// ============================================================
+// AI Sidebar
+// ============================================================
+
+export type AIRole = "user" | "assistant";
+
+export interface AITextPart {
+  kind: "text";
+  text: string;
+}
+
+export interface AIToolPart {
+  kind: "tool";
+  id: string;
+  name: "run_sql" | "describe_schema" | "get_entity_url";
+  input: Record<string, unknown>;
+  /** undefined = in flight, true/false once tool_use_end arrives. */
+  ok?: boolean;
+  error?: string;
+  rowCount?: number;
+  truncated?: boolean;
+  elapsedMs?: number;
+}
+
+export type AIMessagePart = AITextPart | AIToolPart;
+
+export interface AIMessage {
+  role: AIRole;
+  parts: AIMessagePart[];
+  /** Streaming flag for the active assistant message. */
+  inFlight?: boolean;
+}
+
+export interface AIPageContext {
+  entity_type: "property" | "contact" | "group" | "deal" | "list" | "transaction";
+  id: string;
+}
+
+export interface AIDoneEvent {
+  stop_reason: string;
+  tool_calls: number;
+  input_tokens: number;
+  output_tokens: number;
+  cached_tokens: number;
+}
