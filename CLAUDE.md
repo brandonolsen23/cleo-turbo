@@ -77,7 +77,7 @@ labeling_sessions, labeling_verdicts, labeling_links, labeling_seeds,
 labeling_reviewed_index, user_stars
 
 **System tables:**
-users, audit_log, app_meta, data_issues, asset_classes, tenant_categories
+users, audit_log, app_meta, data_issues, asset_classes, tenant_categories, ai_usage
 
 The compiler calls `drop_derived_tables()` then recreates them. CRM tables are never touched. If you are writing code that modifies the database, always check which category the table belongs to.
 
