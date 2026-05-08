@@ -162,3 +162,72 @@ def test_get_entity_url_known_types(etype, eid, expected):
 def test_get_entity_url_unknown_type_raises():
     with pytest.raises(InvalidQueryError):
         get_entity_url("nonsense", "XYZ_1")
+
+
+# ── page_context loader ─────────────────────────────────────────────
+
+
+from cleo.web.routes.ai_tools import load_page_context  # noqa: E402
+
+
+@pytest.fixture
+def page_ctx_conn(tmp_path):
+    db_file = tmp_path / "page_ctx.db"
+    rw = sqlite3.connect(str(db_file))
+    rw.executescript(
+        """
+        CREATE TABLE properties (
+            id TEXT PRIMARY KEY, display_address TEXT, city TEXT,
+            current_owner_name TEXT
+        );
+        CREATE TABLE contacts (id TEXT PRIMARY KEY, display_name TEXT, company_name TEXT);
+        CREATE TABLE groups (id TEXT PRIMARY KEY, display_name TEXT, property_count INTEGER);
+        CREATE TABLE deals (id TEXT PRIMARY KEY, name TEXT, stage TEXT);
+        CREATE TABLE lists (id TEXT PRIMARY KEY, name TEXT, scope TEXT);
+        CREATE TABLE transactions (
+            source_id TEXT PRIMARY KEY, sale_date TEXT,
+            display_address TEXT, sale_price INTEGER
+        );
+        INSERT INTO properties VALUES
+            ('PRO_84463', '325 Guelph Street', 'Georgetown', 'Crialmar Properties Limited');
+        INSERT INTO contacts VALUES ('CON_42', 'Peter Vicano', 'DH Management');
+        INSERT INTO groups VALUES ('GRP_22771', 'CRIALMAR PROPERTIES LIMITED', 1);
+        INSERT INTO deals VALUES ('DEAL_1', 'Crialmar deal', 'priority_deal');
+        INSERT INTO lists VALUES ('LIST_1', 'Q3 prospects', 'personal');
+        INSERT INTO transactions VALUES
+            ('RT126011', '2017-06-12', '900, 920 Watters Road', 9322500);
+        """
+    )
+    rw.commit()
+    rw.close()
+    ro = sqlite3.connect(f"file:{db_file}?mode=ro", uri=True)
+    ro.row_factory = sqlite3.Row
+    yield ro
+    ro.close()
+
+
+def test_page_context_property(page_ctx_conn):
+    out = load_page_context(page_ctx_conn, {"entity_type": "property", "id": "PRO_84463"})
+    assert "PRO_84463" in out
+    assert "325 Guelph Street" in out
+    assert "Crialmar" in out
+
+
+def test_page_context_contact(page_ctx_conn):
+    out = load_page_context(page_ctx_conn, {"entity_type": "contact", "id": "CON_42"})
+    assert "CON_42" in out and "Peter Vicano" in out
+
+
+def test_page_context_group(page_ctx_conn):
+    out = load_page_context(page_ctx_conn, {"entity_type": "group", "id": "GRP_22771"})
+    assert "GRP_22771" in out and "CRIALMAR" in out.upper()
+
+
+def test_page_context_unknown_entity_returns_empty(page_ctx_conn):
+    out = load_page_context(page_ctx_conn, {"entity_type": "property", "id": "PRO_DOESNT_EXIST"})
+    assert out == ""
+
+
+def test_page_context_no_input_returns_empty(page_ctx_conn):
+    assert load_page_context(page_ctx_conn, None) == ""
+    assert load_page_context(page_ctx_conn, {}) == ""
