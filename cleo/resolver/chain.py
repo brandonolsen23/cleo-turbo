@@ -101,6 +101,7 @@ def resolve(
     arn_parcel: dict | None = None
     best_geocode: GeocodeResult | None = None
     geocode_candidates: list[tuple[str | None, GeocodeResult]] = []
+    containment_by_arn: dict[str, str | None] = {}  # arn -> contained/nearest_centroid/features0
 
     # ── Step 1: PIN→ARN bridge ───────────────────────────────────
     if not input.has_arn() and input.has_pin():
@@ -187,6 +188,8 @@ def resolve(
                         geo_arn = parcel.get("arn")
                         if geo_arn and not cache_has(geo_arn):
                             cache_write(geo_arn, parcel)
+                        if geo_arn:
+                            containment_by_arn[geo_arn] = parcel.get("containment")
                 except Exception as e:
                     # Re-raise token/session errors so the caller can refresh
                     if type(e).__name__ in ('TokenExpiredError', 'SessionError'):
@@ -222,6 +225,8 @@ def resolve(
                 coords_arn = parcel.get("arn")
                 if coords_arn and not cache_has(coords_arn):
                     cache_write(coords_arn, parcel)
+                if coords_arn:
+                    containment_by_arn[coords_arn] = parcel.get("containment")
                 conf = 0.90 if input.source == "osm" else 0.80
                 signals.append(Signal(
                     source="coords_pip",
@@ -235,8 +240,12 @@ def resolve(
             pass
 
     # ── Step 5: Cross-validation and decision ────────────────────
-    return _decide(input, signals, arn_candidate, arn_parcel,
-                   best_geocode, geocode_candidates)
+    result = _decide(input, signals, arn_candidate, arn_parcel,
+                     best_geocode, geocode_candidates)
+    # Attach the containment of the chosen parcel (Stage 1 verification signal).
+    if result.resolved_arn:
+        result.containment = containment_by_arn.get(result.resolved_arn)
+    return result
 
 
 def _geocode_address(address: str, ctx: ResolverContext) -> GeocodeResult | None:

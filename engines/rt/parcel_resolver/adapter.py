@@ -23,6 +23,7 @@ from cleo.resolver.types import (
     ResolutionResult,
     GeocodableAddress,
 )
+from cleo.resolver import verify
 
 
 def addresses_to_input(addr_record: dict) -> ResolutionInput:
@@ -101,7 +102,8 @@ def addresses_to_input(addr_record: dict) -> ResolutionInput:
     )
 
 
-def result_to_parcel_link(result: ResolutionResult, rt_id: str) -> dict:
+def result_to_parcel_link(result: ResolutionResult, rt_id: str,
+                          input: ResolutionInput | None = None) -> dict:
     """Convert a ResolutionResult into RT parcel_links JSON format.
 
     Args:
@@ -141,5 +143,30 @@ def result_to_parcel_link(result: ResolutionResult, rt_id: str) -> dict:
     # Signals (new — additive, for audit trail)
     if result.signals:
         link['signals'] = [s.to_dict() for s in result.signals]
+
+    # ── Stage-1 verification provenance (flat keys for compile/writer) ──
+    geo = result.geocode
+    link['containment'] = result.containment
+    link['geocode_addr_type'] = geo.addr_type if geo else None
+    link['geocode_score'] = geo.score if geo else None
+    link['loc_name'] = geo.loc_name if geo else None
+
+    fmatch = False
+    if geo is not None and input is not None and input.addresses:
+        prim = next((a for a in input.addresses if a.is_primary), input.addresses[0])
+        rt_street = f"{prim.street_name} {prim.street_suffix}".strip()
+        geo_street = f"{geo.street_name} {geo.suf_type}".strip()
+        fmatch = verify.field_match(
+            prim.street_number, rt_street, prim.city,
+            geo.house, geo_street, geo.city,
+        )
+    link['field_match'] = 1 if fmatch else 0
+    link['parcel_tier'] = verify.tier_for(
+        result.method,
+        geo.loc_name if geo else None,
+        geo.addr_type if geo else None,
+        result.containment,
+        fmatch,
+    )
 
     return link

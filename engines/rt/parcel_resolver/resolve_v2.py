@@ -327,7 +327,7 @@ def run(limit=None, dry_run=False, reprocess=False, reprocess_unresolved=False,
                     result = resolve(ri, ctx)
 
                 # Convert result back to parcel_links format via adapter
-                link = result_to_parcel_link(result, rt_id)
+                link = result_to_parcel_link(result, rt_id, ri)
 
                 # Write parcel_links file (atomic)
                 safe_write_json(os.path.join(PARCEL_LINKS_DIR, fname), link)

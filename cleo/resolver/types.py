@@ -240,6 +240,8 @@ class ResolutionResult:
     geocode: Optional[GeocodeResult]  # Best geocode result (if any)
     signals: list[Signal]           # All signals collected
     pip_verified: bool              # Did final PIP verification pass?
+    containment: Optional[str] = None  # resolved parcel containment:
+                                        # contained / nearest_centroid / features0 / None
 
     def to_dict(self) -> dict:
         """Serialize for JSON storage in parcel_links files.
@@ -255,6 +257,7 @@ class ResolutionResult:
             "parcel_file": self.parcel_file,
             "reason": self.reason,
             "pip_verified": self.pip_verified,
+            "containment": self.containment,
         }
         if self.geocode:
             d["geocode"] = self.geocode.to_dict()

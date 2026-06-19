@@ -103,3 +103,24 @@ def assign_tier(*, loc_name, addr_type, containment, fmatch,
     if addr_type == 'PointAddress' and contained and agrees_with_placement:
         return PROBABLE
     return REVIEW
+
+
+_STRONG_METHODS = {'verified', 'spatial_consensus', 'spatial_coords'}
+_GEOCODE_METHODS = {'spatial_geocode', 'spatial_override'}
+
+
+def tier_for(method, loc_name, addr_type, containment, fmatch,
+             agrees_with_placement=True) -> str:
+    """Map a full ResolutionResult into a tier.
+
+    Strong methods (ARN+geocode agree, multi-variant consensus, OSM rooftop
+    coords) -> verified. Address-geocode methods are judged by the
+    loc_name + field-match + containment rule. Everything else (arn_only,
+    pin_bridge, unresolved) -> review (no independent spatial confirmation)."""
+    if method in _STRONG_METHODS:
+        return VERIFIED if agrees_with_placement else REVIEW
+    if method in _GEOCODE_METHODS:
+        return assign_tier(loc_name=loc_name, addr_type=addr_type,
+                           containment=containment, fmatch=fmatch,
+                           agrees_with_placement=agrees_with_placement)
+    return REVIEW
