@@ -175,7 +175,9 @@ class AgMapsClient:
         for feature in features:
             rings = feature.get("geometry", {}).get("rings", [])
             if rings and _point_in_polygon(lng, lat, rings[0]):
-                return self._feature_to_parcel(feature)
+                parcel = self._feature_to_parcel(feature)
+                parcel["containment"] = "contained"
+                return parcel
 
         # Point not inside any returned polygon — retry with a larger buffer
         # to catch the correct parcel that the small bbox may have missed.
@@ -195,4 +197,10 @@ class AgMapsClient:
                     best_dist = dist
                     best = feature
 
-        return self._feature_to_parcel(best) if best else self._feature_to_parcel(features[0])
+        if best:
+            parcel = self._feature_to_parcel(best)
+            parcel["containment"] = "nearest_centroid"
+            return parcel
+        parcel = self._feature_to_parcel(features[0])
+        parcel["containment"] = "features0"
+        return parcel
