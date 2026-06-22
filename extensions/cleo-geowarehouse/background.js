@@ -4,8 +4,31 @@
 // Downloads/GeoWarehouse/gw-ingest-data/ as geowarehouse-<ISO>.html — exactly
 // where the Cleo GW ingester looks. Silent (no Save-As) as long as Chrome's
 // "Ask where to save each file before downloading" setting is OFF.
+//
+// The toolbar icon doubles as a status light: GREEN badge = armed & watching,
+// YELLOW flash = a report was just captured, RED = a save failed.
 
 const SUBDIR = "GeoWarehouse/gw-ingest-data";
+const GREEN = "#1a7f5a";
+const YELLOW = "#e0a800";
+const RED = "#b42318";
+
+function setIdleBadge() {
+  chrome.action.setBadgeBackgroundColor({ color: GREEN });
+  chrome.storage.local.get({ count: 0 }, (s) => {
+    chrome.action.setBadgeText({ text: s.count ? String(s.count) : "ON" });
+  });
+}
+
+function flash(color, text, thenIdle = true) {
+  chrome.action.setBadgeBackgroundColor({ color });
+  chrome.action.setBadgeText({ text });
+  if (thenIdle) setTimeout(setIdleBadge, 1800);
+}
+
+chrome.runtime.onStartup.addListener(setIdleBadge);
+chrome.runtime.onInstalled.addListener(setIdleBadge);
+setIdleBadge();
 
 function filename() {
   // toISOString() with ':' and '.' swapped to '-', matching existing captures.
@@ -33,6 +56,8 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
           lastOk: ok,
           lastErr: err,
         });
+        if (ok) flash(YELLOW, "SAVE");
+        else flash(RED, "ERR", false);
       });
     }
   );
