@@ -241,3 +241,103 @@ def trigger_scan(
         "status": "completed",
         "issues_found": len(results),
     }
+
+
+# ── Stage 1: parcel-resolution tiers + review queue ─────────────────
+
+def _review_reason(method, loc_name, containment, field_match, pip_verified):
+    """Plain-English explanation of why a parcel join is uncertain.
+    Returned to the UI verbatim — keep it human, not codey."""
+    loc = (loc_name or "").upper()
+    if method == "arn_only":
+        return ("Resolved only by its assessment roll number (ARN), with no independent "
+                "location check — the parcel wasn't confirmed by geocoding.")
+    if method == "pin_bridge":
+        return ("Resolved by bridging a PIN to an ARN via GeoWarehouse data — a weak, often "
+                "ambiguous link (one PIN can map to several parcels).")
+    if method in ("unresolved", "error") or not method:
+        return "Could not be resolved to a parcel at all."
+    if containment == "nearest_centroid":
+        return ("The geocoded point wasn't inside any parcel, so the closest one was chosen "
+                "— a guess that can land on a neighbour.")
+    if containment and containment != "contained":
+        return f"The geocoded point wasn't confirmed inside the chosen parcel ({containment})."
+    if loc.startswith("ROAD") or loc.startswith("STREET"):
+        return ("The address was interpolated along the street rather than matched to a parcel "
+                "address point, so it may sit on a neighbouring lot.")
+    if field_match == 0:
+        return ("The parcel was found, but its address components didn't fully match the "
+                "transaction's address — worth confirming it's the right property.")
+    return "Flagged for review — the resolver's confidence in this parcel is low."
+
+
+@router.get("/tier-summary")
+def tier_summary(db=Depends(get_db), user=Depends(get_current_user)):
+    """Counts of transactions by parcel verification tier (Stage 1).
+    A NULL tier means the record hasn't been re-tagged by the verification pass yet."""
+    counts = {"verified": 0, "probable": 0, "review": 0, "untagged": 0}
+    total = db.execute("SELECT COUNT(*) FROM transactions").fetchone()[0]
+    for row in db.execute(
+        "SELECT parcel_tier, COUNT(*) AS cnt FROM transactions GROUP BY parcel_tier"
+    ):
+        key = row["parcel_tier"] or "untagged"
+        counts[key] = counts.get(key, 0) + row["cnt"]
+    return {"total": total, "tiers": counts}
+
+
+@router.get("/review-queue")
+def review_queue(
+    method: Optional[str] = None,
+    containment: Optional[str] = None,
+    page: int = Query(1, ge=1),
+    per_page: int = Query(25, ge=1, le=100),
+    db=Depends(get_db),
+    user=Depends(get_current_user),
+):
+    """Transactions whose parcel placement is uncertain (tier='review'), each with a
+    plain-English reason and the IDs to link back to the source HTML, the pipeline
+    trace, and the parcel on the map."""
+    conditions = ["t.parcel_tier = 'review'"]
+    params = []
+    if method:
+        conditions.append("t.parcel_method = ?")
+        params.append(method)
+    if containment:
+        conditions.append("t.parcel_containment = ?")
+        params.append(containment)
+    where = " AND ".join(conditions)
+
+    total = db.execute(
+        f"SELECT COUNT(*) FROM transactions t WHERE {where}", params
+    ).fetchone()[0]
+    offset = (page - 1) * per_page
+    rows = db.execute(
+        f"""SELECT t.source_id, t.display_address, t.city, t.arn, t.property_id,
+                   t.parcel_method, t.parcel_loc_name, t.parcel_addr_type,
+                   t.parcel_geocode_score, t.parcel_field_match, t.parcel_containment,
+                   t.parcel_confidence, t.pip_verified, t.parcel_tier,
+                   p.display_address AS parcel_address
+            FROM transactions t
+            LEFT JOIN properties p ON p.id = t.property_id
+            WHERE {where}
+            ORDER BY t.parcel_confidence ASC, t.source_id
+            LIMIT ? OFFSET ?""",
+        params + [per_page, offset],
+    ).fetchall()
+
+    results = []
+    for r in rows:
+        d = dict(r)
+        d["reason"] = _review_reason(
+            d.get("parcel_method"), d.get("parcel_loc_name"),
+            d.get("parcel_containment"), d.get("parcel_field_match"),
+            d.get("pip_verified"),
+        )
+        d["source_html_url"] = f"/api/transactions/{d['source_id']}/html"
+        d["trace_url"] = f"/pipeline/trace/{d['source_id']}"
+        d["map_url"] = f"/properties/{d['property_id']}" if d.get("property_id") else None
+        results.append(d)
+
+    pages = (total + per_page - 1) // per_page
+    return {"results": results, "total": total, "page": page,
+            "per_page": per_page, "pages": pages}
