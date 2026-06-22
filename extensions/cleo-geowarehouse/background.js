@@ -36,7 +36,16 @@ function filename() {
 }
 
 chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
-  if (!msg || msg.type !== "cleo-gw-capture") return;
+  if (!msg) return;
+
+  // Content script reports it's live on a GeoWarehouse page.
+  if (msg.type === "cleo-gw-alive") {
+    chrome.storage.local.set({ lastAliveAt: Date.now(), lastAliveUrl: msg.url || "" });
+    setIdleBadge();
+    return;
+  }
+
+  if (msg.type !== "cleo-gw-capture") return;
 
   const name = `${SUBDIR}/${filename()}`;
   const dataUrl = "data:text/html;charset=utf-8;base64," + msg.b64;

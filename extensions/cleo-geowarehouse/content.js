@@ -51,3 +51,11 @@ const observer = new MutationObserver(() => tryCapture());
 observer.observe(document.documentElement, { childList: true, subtree: true });
 document.addEventListener("DOMContentLoaded", tryCapture);
 tryCapture();
+
+// Tell the background worker the capture script is alive on this GW page —
+// this is what proves (in the toolbar badge + popup) that capture is actually
+// reaching GeoWarehouse, not silently dead.
+chrome.runtime.sendMessage(
+  { type: "cleo-gw-alive", url: location.href },
+  () => void chrome.runtime.lastError
+);
