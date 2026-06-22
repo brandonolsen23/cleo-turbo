@@ -33,6 +33,7 @@ from .types import (
 from .cache import cache_has, cache_read_safe, cache_write
 from .pin_bridge import lookup_pin
 from .pip import pip_test_parcel, verify_pip
+from . import geocode_cache
 
 
 def _haversine_m(lat1, lng1, lat2, lng2):
@@ -253,7 +254,13 @@ def _geocode_address(address: str, ctx: ResolverContext) -> GeocodeResult | None
 
     Captures all 44 response attributes.
     """
-    result = ctx.geocoder.geocode(address)
+    # Forward-geocode cache: reuse prior results (and cached misses) so the
+    # full re-geocode is paid once. Clear clean-data/geocodes/ to force a redo.
+    if geocode_cache.cache_has(address):
+        result = geocode_cache.cache_read_safe(address)
+    else:
+        result = ctx.geocoder.geocode(address)
+        geocode_cache.cache_write(address, result)
     if result is None:
         return None
 
