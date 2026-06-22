@@ -26,6 +26,9 @@ CREATE TABLE IF NOT EXISTS properties (
     region          TEXT,
     postal          TEXT,
     acreage         REAL,
+    building_size_raw   TEXT,
+    building_size_value REAL,
+    building_size_unit  TEXT,
     legal_description TEXT,
     current_owner_name TEXT,
     current_owner_group_id TEXT,
@@ -62,12 +65,23 @@ CREATE TABLE IF NOT EXISTS transactions (
     buyer_phone     TEXT,
     description     TEXT,
     acreage         REAL,
+    building_size_raw   TEXT,
+    building_size_value REAL,
+    building_size_unit  TEXT,
     pin             TEXT,
     legal_description TEXT,
     pin_display      TEXT,
     arn_display      TEXT,
     pin_multiple     INTEGER DEFAULT 0,
     parcel_method    TEXT,
+    parcel_loc_name      TEXT,
+    parcel_addr_type     TEXT,
+    parcel_geocode_score REAL,
+    parcel_field_match   INTEGER,
+    parcel_containment   TEXT,
+    parcel_confidence    REAL,
+    pip_verified         INTEGER,
+    parcel_tier          TEXT,
     location         TEXT,
     surface_rights_only INTEGER DEFAULT 0,
     more_info_url    TEXT,
@@ -205,6 +219,7 @@ CREATE TABLE IF NOT EXISTS pois (
     osm_id          TEXT,
     building_geojson TEXT,
     approx_sqft     INTEGER,
+    address_source  TEXT,
     created_at      TEXT DEFAULT (datetime('now'))
 );
 
@@ -299,6 +314,7 @@ CREATE INDEX IF NOT EXISTS idx_properties_sale_date ON properties(most_recent_sa
 CREATE INDEX IF NOT EXISTS idx_properties_sale_price ON properties(most_recent_sale_price);
 CREATE INDEX IF NOT EXISTS idx_properties_asset_class ON properties(asset_class);
 CREATE INDEX IF NOT EXISTS idx_properties_asset_subclass ON properties(asset_subclass);
+CREATE INDEX IF NOT EXISTS idx_properties_building_size ON properties(building_size_unit, building_size_value);
 CREATE INDEX IF NOT EXISTS idx_transactions_property ON transactions(property_id);
 CREATE INDEX IF NOT EXISTS idx_transactions_arn ON transactions(arn);
 CREATE INDEX IF NOT EXISTS idx_transactions_sale_date ON transactions(sale_date);

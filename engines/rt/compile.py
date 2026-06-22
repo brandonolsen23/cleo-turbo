@@ -32,6 +32,7 @@ from datetime import datetime, timezone
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, PROJECT_ROOT)
 from engines.shared.io import safe_write_json
+from engines.rt.building_size import parse_building_size
 
 
 # Paths relative to this script (engines/rt/)
@@ -98,6 +99,11 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
     seller = classified.get('seller', {})
     buyer = classified.get('buyer', {})
     site = classified.get('site', {})
+    export = classified.get('export') or {}
+
+    bldg_raw = export.get('bldg') or None
+    bldg_value, bldg_unit = parse_building_size(bldg_raw)
+    bldg_unparseable = bool(bldg_raw) and bldg_value is None
 
     # Parcel data
     parcel = None
@@ -111,6 +117,15 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
                 'resolved_arn': arn,
                 'method': parcel_link.get('method', 'unknown'),
                 'parcel_file': parcel_link.get('parcel_file'),
+                # Stage-1 verification provenance (additive)
+                'confidence': parcel_link.get('confidence'),
+                'pip_verified': parcel_link.get('pip_verified'),
+                'containment': parcel_link.get('containment'),
+                'loc_name': parcel_link.get('loc_name'),
+                'addr_type': parcel_link.get('geocode_addr_type'),
+                'geocode_score': parcel_link.get('geocode_score'),
+                'field_match': parcel_link.get('field_match'),
+                'tier': parcel_link.get('parcel_tier'),
             }
 
     return {
@@ -161,6 +176,10 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
             'pin': addresses.get('pin', {}),
             'arn': addresses.get('arn', {}),
             'acreage': site.get('acreage'),
+            'building_size_raw': bldg_raw,
+            'building_size_value': bldg_value,
+            'building_size_unit': bldg_unit,
+            'building_size_unparseable': bldg_unparseable,
             'legal_description': site.get('legal_description', ''),
             'location': site.get('location', ''),
             'surface_rights_only': site.get('surface_rights_only', False),

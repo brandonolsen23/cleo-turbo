@@ -598,6 +598,10 @@ def run_compiler(conn):
                     'region': tx.get('region', ''),
                     'postal': prop.get('postal', ''),
                     'acreage': site.get('acreage'),
+                    'building_size_raw': site.get('building_size_raw'),
+                    'building_size_value': site.get('building_size_value'),
+                    'building_size_unit': site.get('building_size_unit'),
+                    'building_size_sale_date': tx.get('sale_date', '') if site.get('building_size_raw') else '',
                     'legal_description': site.get('legal_description', ''),
                     'sale_date': tx.get('sale_date', ''),
                     'sale_price': tx.get('sale_price'),
@@ -624,6 +628,16 @@ def run_compiler(conn):
                 pd['region'] = tx.get('region', '') or pd['region']
                 pd['source_id'] = source_id
                 pd['property_type'] = property_type or pd['property_type']
+
+            # Track most recently reported building size (latest non-null wins)
+            if site.get('building_size_raw') and tx.get('sale_date', '') and (
+                not pd['building_size_sale_date']
+                or tx['sale_date'] >= pd['building_size_sale_date']
+            ):
+                pd['building_size_raw'] = site.get('building_size_raw')
+                pd['building_size_value'] = site.get('building_size_value')
+                pd['building_size_unit'] = site.get('building_size_unit')
+                pd['building_size_sale_date'] = tx['sale_date']
                 # Current owner = buyer of most recent transaction
                 buyer_parties = rec.get('buyer', {}).get('parties', [])
                 if buyer_parties:
@@ -653,26 +667,36 @@ def run_compiler(conn):
         conn.execute(
             "INSERT OR IGNORE INTO transactions (source_id, property_id, arn, sale_date, sale_price, "
             "transaction_note, display_address, city, region, postal, seller_parties, buyer_parties, "
-            "seller_phone, buyer_phone, description, acreage, pin, legal_description, "
+            "seller_phone, buyer_phone, description, acreage, "
+            "building_size_raw, building_size_value, building_size_unit, "
+            "pin, legal_description, "
             "pin_display, arn_display, pin_multiple, parcel_method, location, surface_rights_only, "
             "more_info_url, "
             "cash, debt, chattels, other_consideration, charges_json, "
             "seller_trade_name, seller_care_of, seller_law_firms_json, seller_companies_json, "
             "buyer_trade_name, buyer_care_of, buyer_law_firms_json, buyer_companies_json, "
-            "photos_json, source_folder, source_position) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+            "photos_json, source_folder, source_position, "
+            "parcel_loc_name, parcel_addr_type, parcel_geocode_score, parcel_field_match, "
+            "parcel_containment, parcel_confidence, pip_verified, parcel_tier) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
+            "?, ?, ?, "
+            "?, ?, "
             "?, ?, ?, ?, ?, ?, ?, "
             "?, ?, ?, ?, ?, "
             "?, ?, ?, ?, "
             "?, ?, ?, ?, "
-            "?, ?, ?)",
+            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (source_id, property_id, arn,
              tx.get('sale_date'), tx.get('sale_price'), tx.get('transaction_note', ''),
              display_address, tx.get('city', ''), tx.get('region', ''), prop.get('postal', ''),
              json.dumps(seller_parties), json.dumps(buyer_parties),
              rec.get('seller', {}).get('phone', ''), rec.get('buyer', {}).get('phone', ''),
              rec.get('description', {}).get('description', ''),
-             site.get('acreage'), pin, site.get('legal_description', ''),
+             site.get('acreage'),
+             site.get('building_size_raw'),
+             site.get('building_size_value'),
+             site.get('building_size_unit'),
+             pin, site.get('legal_description', ''),
              site.get('pin', {}).get('display', ''),
              site.get('arn', {}).get('display', ''),
              1 if site.get('pin', {}).get('multiple') else 0,
@@ -695,7 +719,15 @@ def run_compiler(conn):
              json.dumps(buyer_data.get('companies', [])),
              json.dumps(rec.get('photos', {})),
              rec.get('source_folder', ''),
-             rec.get('source_position'))
+             rec.get('source_position'),
+             parcel_info.get('loc_name'),
+             parcel_info.get('addr_type'),
+             parcel_info.get('geocode_score'),
+             parcel_info.get('field_match'),
+             parcel_info.get('containment'),
+             parcel_info.get('confidence'),
+             parcel_info.get('pip_verified'),
+             parcel_info.get('tier'))
         )
         tx_count += 1
 
@@ -818,12 +850,17 @@ def run_compiler(conn):
             asset_class = map_property_type_to_asset_class(pd['property_type'])
             conn.execute(
                 "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
+                "building_size_raw, building_size_value, building_size_unit, "
                 "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
                 "most_recent_sale_date, most_recent_sale_price, most_recent_sale_source, transaction_count, "
                 "primary_property_type, asset_class, lat, lng, parcel_geojson) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
-                 pd['acreage'], pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
+                 pd['acreage'],
+                 pd.get('building_size_raw'),
+                 pd.get('building_size_value'),
+                 pd.get('building_size_unit'),
+                 pd['legal_description'], pd['owner_name'], pd['owner_group_id'],
                  pd['source_id'], pd['sale_date'], pd['sale_price'], 'RT', pd['tx_count'],
                  pd['property_type'], asset_class, lat, lng, parcel_geojson)
             )
