@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Cleo Turbo - GeoWarehouse Capture",
+  "version": "1.0.0",
+  "description": "Auto-saves the rendered GeoWarehouse property report HTML into Downloads/GeoWarehouse/gw-ingest-data for the Cleo pipeline.",
+  "permissions": ["downloads", "storage"],
+  "host_permissions": ["https://collaboration.geowarehouse.ca/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://collaboration.geowarehouse.ca/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Cleo GeoWarehouse Capture" }
+}
