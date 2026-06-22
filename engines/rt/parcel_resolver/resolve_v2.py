@@ -123,9 +123,10 @@ def run(limit=None, dry_run=False, reprocess=False, reprocess_unresolved=False,
                 existing_links[f] = True
 
     if reprocess:
-        # Reprocess everything — but skip files already processed by unified resolver
-        # (identified by having a 'pip_verified' field, which ONLY the unified resolver writes.
-        #  Note: 'confidence' is NOT safe — the old resolver also wrote that field.)
+        # Reprocess everything — but skip files already carrying Stage-1 provenance
+        # (identified by 'parcel_tier', which ONLY the Stage-1 verification pass writes).
+        # This is the resume marker: a re-run skips records already re-tagged, so the
+        # supervisor can stop/resume across throttle cooldowns until all are done.
         pending = []
         for f in all_files:
             if f in existing_links:
@@ -133,8 +134,8 @@ def run(limit=None, dry_run=False, reprocess=False, reprocess_unresolved=False,
                 try:
                     with open(link_path) as fh:
                         link = json.load(fh)
-                    if 'pip_verified' in link:
-                        continue  # Already done by unified resolver
+                    if 'parcel_tier' in link:
+                        continue  # Already re-tagged by the Stage-1 pass
                 except (json.JSONDecodeError, OSError):
                     pass
             pending.append(f)
