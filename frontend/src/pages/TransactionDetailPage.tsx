@@ -35,7 +35,7 @@ export default function TransactionDetailPage() {
       </div>
 
       {/* Key Facts */}
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-5 gap-4">
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
           <Text size="1" style={{ color: "var(--gray-9)" }}>Sale Price</Text>
           <Text size="4" weight="medium" className="mt-1 block">{formatCurrency(txn.sale_price)}</Text>
@@ -43,6 +43,10 @@ export default function TransactionDetailPage() {
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
           <Text size="1" style={{ color: "var(--gray-9)" }}>Sale Date</Text>
           <Text size="4" weight="medium" className="mt-1 block">{formatDate(txn.sale_date)}</Text>
+        </div>
+        <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+          <Text size="1" style={{ color: "var(--gray-9)" }}>Building</Text>
+          <Text size="4" weight="medium" className="mt-1 block">{txn.building_size_raw || "—"}</Text>
         </div>
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
           <Text size="1" style={{ color: "var(--gray-9)" }}>ARN</Text>

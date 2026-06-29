@@ -560,7 +560,7 @@ function PropertyDetailPageInner() {
       {/* ============================================================ */}
       {/* STAT CARDS + BRAND BADGES */}
       {/* ============================================================ */}
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-5 gap-4">
         <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
           <div className="flex items-center gap-2">
             <Text size="1" style={{ color: "var(--gray-9)" }}>Last Sale Price</Text>
@@ -594,6 +594,16 @@ function PropertyDetailPageInner() {
           </Text>
           <Text size="1" style={{ color: "var(--gray-9)" }}>
             since last sale
+          </Text>
+        </div>
+
+        <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
+          <Text size="1" style={{ color: "var(--gray-9)" }}>Building</Text>
+          <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
+            {prop.building_size_raw || "—"}
+          </Text>
+          <Text size="1" style={{ color: "var(--gray-9)" }}>
+            {prop.building_size_raw ? "as last reported" : ""}
           </Text>
         </div>
 
@@ -899,6 +909,12 @@ function PropertyDetailPageInner() {
                 <DataList.Item>
                   <DataList.Label>Acreage</DataList.Label>
                   <DataList.Value>{prop.acreage} acres</DataList.Value>
+                </DataList.Item>
+              )}
+              {prop.building_size_raw && (
+                <DataList.Item>
+                  <DataList.Label>Building Size</DataList.Label>
+                  <DataList.Value>{prop.building_size_raw}</DataList.Value>
                 </DataList.Item>
               )}
               {latestGw?.frontage_ft && (

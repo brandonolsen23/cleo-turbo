@@ -107,6 +107,24 @@ def load_industry_stopwords(conn) -> Set[str]:
     return tokens
 
 
+def load_defining_brands(conn, level: str = "1gram") -> Set[str]:
+    """User-asserted defining brand tokens that override the Zipf/English filter.
+
+    A token in this set is treated as distinctive regardless of its
+    common-language Zipf score. Designed for CRE brands that are also real
+    English words (starlight, summit, crown, cadillac, phoenix, sterling, ...).
+    """
+    try:
+        cur = conn.execute(
+            "SELECT ngram FROM defining_brands WHERE level = ?",
+            (level,),
+        )
+        return {row[0].lower() for row in cur}
+    except Exception:
+        # Table may not exist on a fresh DB; return empty set rather than crash.
+        return set()
+
+
 def seed_industry_stopwords_table(conn) -> int:
     """Populate industry_stopwords from the seed JSON if the table is empty.
 

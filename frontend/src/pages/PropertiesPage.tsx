@@ -73,6 +73,8 @@ export default function PropertiesPage() {
   const category = searchParams.get("category") || "";
   const minOwnership = searchParams.get("min_ownership_years") || "";
   const maxOwnership = searchParams.get("max_ownership_years") || "";
+  const minBuildingSize = searchParams.get("building_size_min") || "";
+  const maxBuildingSize = searchParams.get("building_size_max") || "";
 
   // Data state
   const [data, setData] = useState<BrowseResponse<PropertyBrowseItem> | null>(null);
@@ -107,11 +109,13 @@ export default function PropertiesPage() {
     if (category) params.category = category;
     if (minOwnership) params.min_ownership_years = minOwnership;
     if (maxOwnership) params.max_ownership_years = maxOwnership;
+    if (minBuildingSize) params.building_size_min = minBuildingSize;
+    if (maxBuildingSize) params.building_size_max = maxBuildingSize;
 
     fetchApi<BrowseResponse<PropertyBrowseItem>>("/properties", params)
       .then(setData)
       .finally(() => setLoading(false));
-  }, [page, sort, order, q, city, region, assetClass, minPrice, maxPrice, brand, category, minOwnership, maxOwnership]);
+  }, [page, sort, order, q, city, region, assetClass, minPrice, maxPrice, brand, category, minOwnership, maxOwnership, minBuildingSize, maxBuildingSize]);
 
   useEffect(() => {
     fetchData();
@@ -251,6 +255,14 @@ export default function PropertiesPage() {
           onMinChange={(v) => setParam("min_ownership_years", v)}
           onMaxChange={(v) => setParam("max_ownership_years", v)}
           placeholder={["Min yrs", "Max yrs"]}
+        />
+        <RangeFilter
+          label="Building Size (sf)"
+          minValue={minBuildingSize}
+          maxValue={maxBuildingSize}
+          onMinChange={(v) => setParam("building_size_min", v)}
+          onMaxChange={(v) => setParam("building_size_max", v)}
+          placeholder={["Min sf", "Max sf"]}
         />
         <SelectFilter
           label="Tenant Brand"

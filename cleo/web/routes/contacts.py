@@ -13,6 +13,7 @@ from ._attribution import attribution_for
 # Type alias for optional query params — more explicit than bare `int = None`
 OptInt = Optional[int]
 OptStr = Optional[str]
+OptFloat = Optional[float]
 
 router = APIRouter()
 
@@ -48,6 +49,10 @@ def browse_contacts(
     asset_class: OptStr = Query(None),
     min_asset_class_count: OptInt = Query(None, ge=1),
     max_asset_class_count: OptInt = Query(None, ge=1),
+    # Building size — contacts on buyer side of a most-recent transaction
+    # for a property in this sf range
+    building_size_min: OptFloat = Query(None),
+    building_size_max: OptFloat = Query(None),
     q: OptStr = Query(None),
     sort: str = "last_seen_date",
     order: str = "desc",
@@ -93,20 +98,36 @@ def browse_contacts(
     if max_buy_value is not None:
         conditions.append(f"{buy_value_subquery} <= ?")
         params.append(max_buy_value)
+    if building_size_min is not None or building_size_max is not None:
+        size_clauses = ["p.building_size_unit = 'sf'"]
+        size_params = []
+        if building_size_min is not None:
+            size_clauses.append("p.building_size_value >= ?")
+            size_params.append(building_size_min)
+        if building_size_max is not None:
+            size_clauses.append("p.building_size_value <= ?")
+            size_params.append(building_size_max)
+        conditions.append(
+            "c.id IN (SELECT tp.contact_id FROM transaction_parties tp "
+            "JOIN properties p ON p.most_recent_source_id = tp.source_id "
+            "WHERE tp.side = 'buyer' AND tp.contact_id IS NOT NULL AND "
+            + " AND ".join(size_clauses) + ")"
+        )
+        params.extend(size_params)
     if asset_class:
         min_ac = min_asset_class_count or 1
-        having = "HAVING COUNT(*) >= ?"
-        ac_params = [asset_class, min_ac]
-        if max_asset_class_count is not None:
-            having += " AND COUNT(*) <= ?"
-            ac_params.append(max_asset_class_count)
-        # Filter contacts whose current group owns N..M properties of this class
+        max_ac = max_asset_class_count if max_asset_class_count is not None else 1_000_000_000
+        # Filter contacts whose auto_group has transacted on N..M distinct
+        # properties of this class — full history, not current-ownership.
+        # transacted_type_mix is rolled up by Stage A10 from auto_group_members
+        # → transactions.property_id → properties.asset_class.
         conditions.append(
-            f"c.current_group_id IN (SELECT current_owner_group_id FROM properties "
-            f"WHERE asset_class = ? AND current_owner_group_id IS NOT NULL "
-            f"GROUP BY current_owner_group_id {having})"
+            "CAST(COALESCE(json_extract("
+            "(SELECT transacted_type_mix FROM auto_group_analytics aga2 "
+            " WHERE aga2.auto_group_id = c.current_auto_group_id), "
+            "'$.' || ?), '0') AS INTEGER) BETWEEN ? AND ?"
         )
-        params.extend(ac_params)
+        params.extend([asset_class, min_ac, max_ac])
 
     where = " AND ".join(conditions) if conditions else "1=1"
     offset = (page - 1) * per_page
@@ -128,14 +149,19 @@ def browse_contacts(
     rows = db.execute(
         f"SELECT c.id, c.display_name, c.phone, c.email, c.mobile, c.company_name, c.status, "
         f"c.contact_type, c.transaction_count, c.first_seen_date, c.last_seen_date, c.job_title, "
+        f"c.current_auto_group_id, "
+        f"ag.display_name AS auto_group_name, "
+        f"ag.canonical_stem AS auto_group_stem, "
+        f"ag.tier AS auto_group_tier, "
         f"{buy_value_subquery} as total_buy_value, "
         f"(SELECT tma.city FROM transaction_parties tp "
         f"JOIN transaction_mailing_addresses tma ON tma.source_id = tp.source_id AND tma.side = tp.side "
         f"WHERE tp.contact_id = c.id AND tma.city IS NOT NULL AND tma.city != '' "
         f"ORDER BY tp.source_id DESC LIMIT 1) as mailing_city, "
-        f"ga.property_type_mix "
+        f"COALESCE(aga.transacted_type_mix, aga.property_type_mix) AS property_type_mix "
         f"FROM contacts c "
-        f"LEFT JOIN group_analytics ga ON c.current_group_id = ga.group_id "
+        f"LEFT JOIN auto_groups ag ON ag.auto_group_id = c.current_auto_group_id "
+        f"LEFT JOIN auto_group_analytics aga ON aga.auto_group_id = c.current_auto_group_id "
         f"WHERE {where} ORDER BY {order_clause} LIMIT ? OFFSET ?",
         params + [per_page, offset]
     ).fetchall()
@@ -262,6 +288,128 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
         txn_list.append(td)
     result["transactions"] = txn_list
 
+    # Portfolio building size — properties where this contact is on the buyer
+    # side of the property's most recent transaction. RT records mixed units
+    # (sf, apartment units, hotel rooms, etc.) that can't be summed across,
+    # so we return a per-unit breakdown plus a count of properties with no
+    # reported size.
+    totals_by_unit = [
+        {
+            "unit": r["unit"],
+            "count": r["n_props"],
+            "total": r["total"],
+        }
+        for r in db.execute(
+            "SELECT p.building_size_unit AS unit, "
+            "       COUNT(*) AS n_props, "
+            "       SUM(p.building_size_value) AS total "
+            "FROM transaction_parties tp "
+            "JOIN properties p ON p.most_recent_source_id = tp.source_id "
+            "WHERE tp.contact_id = ? AND tp.side = 'buyer' "
+            "  AND p.building_size_unit IS NOT NULL "
+            "GROUP BY p.building_size_unit "
+            "ORDER BY n_props DESC",
+            (contact_id,),
+        )
+    ]
+    no_size_count = db.execute(
+        "SELECT COUNT(*) AS n FROM transaction_parties tp "
+        "JOIN properties p ON p.most_recent_source_id = tp.source_id "
+        "WHERE tp.contact_id = ? AND tp.side = 'buyer' "
+        "  AND p.building_size_unit IS NULL",
+        (contact_id,),
+    ).fetchone()["n"]
+    total_properties = sum(t["count"] for t in totals_by_unit) + no_size_count
+
+    result["portfolio_size"] = {
+        "totals_by_unit": totals_by_unit,
+        "no_size_count": no_size_count,
+        "total_properties": total_properties,
+    }
+
+    # Unified Property model (same lens as the Group detail page): every
+    # distinct property this contact has ever been on as buyer OR seller —
+    # resolved (property_id) plus unresolved (canonical_address). Counts and
+    # Owned (last party-side = buyer) come from the contact's transaction
+    # history directly, so they include subdivision sales and other RT
+    # transactions where the parcel resolver couldn't link to a property page.
+    unified_latest: dict[str, tuple[str, str, bool]] = {}
+    n_resolved_seen: set[str] = set()
+    sum_buy = 0
+    sum_sell = 0
+    n_buys_priced = 0
+    n_sells_priced = 0
+    for r in db.execute(
+        """
+        SELECT t.property_id, t.display_address, t.city,
+               tp.side, t.sale_date, t.sale_price
+        FROM transaction_parties tp
+        JOIN transactions t ON t.source_id = tp.source_id
+        WHERE tp.contact_id = ?
+        """,
+        (contact_id,),
+    ):
+        price = r["sale_price"] or 0
+        if r["side"] == "buyer" and price > 0:
+            sum_buy += price
+            n_buys_priced += 1
+        elif r["side"] == "seller" and price > 0:
+            sum_sell += price
+            n_sells_priced += 1
+
+        pid = r["property_id"]
+        if pid:
+            key = pid
+            resolved = True
+            n_resolved_seen.add(pid)
+        else:
+            addr = (r["display_address"] or "").strip().lower()
+            city = (r["city"] or "").strip().lower()
+            if not addr:
+                continue
+            key = f"addr:{addr}|{city}"
+            resolved = False
+        prev = unified_latest.get(key)
+        sale_date = r["sale_date"] or ""
+        if prev is None or sale_date > prev[0]:
+            unified_latest[key] = (sale_date, r["side"] or "", resolved)
+
+    properties_total = len(unified_latest)
+    properties_owned = sum(1 for _, side, _ in unified_latest.values() if side == "buyer")
+    properties_resolved = len(n_resolved_seen)
+    properties_unresolved = properties_total - properties_resolved
+
+    result["properties_unified"] = {
+        "total": properties_total,
+        "owned": properties_owned,
+        "resolved": properties_resolved,
+        "unresolved": properties_unresolved,
+        "total_buy_value": sum_buy or None,
+        "total_sell_value": sum_sell or None,
+        "n_buys_priced": n_buys_priced,
+        "n_sells_priced": n_sells_priced,
+    }
+
+    # Back-compat: keep portfolio_sf so older clients don't break
+    sf_entry = next((t for t in totals_by_unit if t["unit"] == "sf"), None)
+    result["portfolio_sf"] = {
+        "total_sf": sf_entry["total"] if sf_entry else None,
+        "properties_with_sf": sf_entry["count"] if sf_entry else 0,
+        "total_properties": total_properties,
+    }
+
+    # Auto-group (unified Group concept — Phase B + Wave 5)
+    if result.get("current_auto_group_id"):
+        ag = db.execute(
+            "SELECT auto_group_id, canonical_stem, display_name, tier, confidence, n_members, "
+            "       primary_address, primary_address_source, website, primary_phone "
+            "FROM auto_groups WHERE auto_group_id = ?",
+            (result["current_auto_group_id"],)
+        ).fetchone()
+        result["current_auto_group"] = dict(ag) if ag else None
+    else:
+        result["current_auto_group"] = None
+
     # Group associations
     if result.get("current_group_id"):
         group = db.execute(
@@ -326,6 +474,45 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
                 and t["inferred_start_date"] <= x["sale_date"] <= t["inferred_end_date"]
             )
     result["career_history"] = career_history
+
+    # ── Derived tenure (co-occurrence fallback) ────────────────────────────
+    # When the brand-clustering tenure system can't build a career_history row
+    # — typical for small operators with a handful of transactions — derive a
+    # tenure span from the contact's party-sides that sit inside their current
+    # auto_group. MIN/MAX sale_date across those = tenure window. This is the
+    # "every contact has a group, every group has a tenure" guarantee.
+    ag = result.get("current_auto_group")
+    if (
+        ag
+        and ag.get("canonical_stem") != "_anonymized_individuals"
+        and not career_history
+    ):
+        span = db.execute(
+            """
+            SELECT MIN(t.sale_date) AS first_date,
+                   MAX(t.sale_date) AS last_date,
+                   COUNT(*) AS n_party_sides
+            FROM transaction_parties tp
+            JOIN auto_group_members agm
+              ON agm.source_id = tp.source_id AND agm.side = tp.side
+            JOIN transactions t ON t.source_id = tp.source_id
+            WHERE tp.contact_id = ?
+              AND agm.auto_group_id = ?
+            """,
+            (contact_id, ag["auto_group_id"]),
+        ).fetchone()
+        if span and span["first_date"]:
+            result["derived_tenure"] = {
+                "auto_group_id": ag["auto_group_id"],
+                "display_name": ag["display_name"],
+                "first_date": span["first_date"],
+                "last_date": span["last_date"],
+                "n_party_sides": span["n_party_sides"],
+            }
+        else:
+            result["derived_tenure"] = None
+    else:
+        result["derived_tenure"] = None
 
     # ── current_employer derivation (LinkedIn > active realtrack) ──────────
     work_positions = result.get("work_history") or []
@@ -594,6 +781,15 @@ def engage_contact(contact_id: str, db=Depends(get_db), user=Depends(get_current
     me = int(user["sub"])
     created_by = user.get("display_name") or user.get("username") or "unknown"
 
+    # Capture the contact's current_auto_group_id so the engagement activity
+    # rolls up to the unified group on the Group detail page.
+    auto_group_id = row["current_auto_group_id"] if "current_auto_group_id" in row.keys() else None
+    if auto_group_id is None:
+        ag_row = db.execute(
+            "SELECT current_auto_group_id FROM contacts WHERE id = ?", (contact_id,)
+        ).fetchone()
+        auto_group_id = ag_row["current_auto_group_id"] if ag_row else None
+
     db.execute(
         "UPDATE contacts SET status='engaged', last_engaged_date=datetime('now'), "
         "updated_at=datetime('now') WHERE id=?",
@@ -610,12 +806,51 @@ def engage_contact(contact_id: str, db=Depends(get_db), user=Depends(get_current
     db.execute(
         "INSERT INTO activities "
         "(entity_type, entity_id, activity_type, summary, source, "
-        " created_by, created_by_user_id, contact_id, happened_at) "
-        "VALUES ('contact', ?, 'note', 'Marked engaged', 'manual', ?, ?, ?, datetime('now'))",
-        (contact_id, created_by, me, contact_id),
+        " created_by, created_by_user_id, contact_id, auto_group_id, happened_at) "
+        "VALUES ('contact', ?, 'note', 'Marked engaged', 'manual', ?, ?, ?, ?, datetime('now'))",
+        (contact_id, created_by, me, contact_id, auto_group_id),
     )
     db.commit()
-    return {"id": contact_id, "status": "engaged"}
+    return {"id": contact_id, "status": "engaged", "auto_group_id": auto_group_id}
+
+
+@router.post("/{contact_id}/unengage")
+def unengage_contact(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """Flip engaged → pool. Used by the Group detail page's Engage toggle.
+    Inverse of /engage; also writes a synthetic activity for attribution."""
+    row = db.execute(
+        "SELECT status, current_auto_group_id FROM contacts WHERE id = ?",
+        (contact_id,),
+    ).fetchone()
+    if not row:
+        raise HTTPException(status_code=404, detail="Contact not found")
+    if row["status"] != "engaged":
+        return {"id": contact_id, "status": row["status"], "already": True}
+
+    me = int(user["sub"])
+    created_by = user.get("display_name") or user.get("username") or "unknown"
+    auto_group_id = row["current_auto_group_id"]
+
+    db.execute(
+        "UPDATE contacts SET status='pool', updated_at=datetime('now') WHERE id=?",
+        (contact_id,),
+    )
+    db.execute(
+        "INSERT INTO contact_field_overrides (contact_id, status, updated_by) "
+        "VALUES (?, 'pool', ?) "
+        "ON CONFLICT(contact_id) DO UPDATE SET status='pool', updated_by=?, "
+        "updated_at=datetime('now')",
+        (contact_id, created_by, created_by),
+    )
+    db.execute(
+        "INSERT INTO activities "
+        "(entity_type, entity_id, activity_type, summary, source, "
+        " created_by, created_by_user_id, contact_id, auto_group_id, happened_at) "
+        "VALUES ('contact', ?, 'note', 'Reset to pool', 'manual', ?, ?, ?, ?, datetime('now'))",
+        (contact_id, created_by, me, contact_id, auto_group_id),
+    )
+    db.commit()
+    return {"id": contact_id, "status": "pool", "auto_group_id": auto_group_id}
 
 
 class ContactUpdate(BaseModel):
@@ -877,3 +1112,6 @@ def contact_work_history(contact_id: str, db=Depends(get_db), user=Depends(get_c
 @router.get("/{contact_id}/attribution")
 def contact_attribution(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
     return attribution_for(db, "contact_id", contact_id)
+
+
+

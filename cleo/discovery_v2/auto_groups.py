@@ -9,10 +9,21 @@ from cleo.discovery_v2.seeding import build_seeds, build_contact_tenures
 from cleo.discovery_v2.expansion import build_expansion
 from cleo.discovery_v2.conflicts import detect_conflicts
 from cleo.discovery_v2.contact_brand_tenures import build_contact_brand_tenures
+from cleo.discovery_v2.standalone_coverage import build_standalone_coverage
+from cleo.discovery_v2.legacy_map import build_legacy_map
+from cleo.discovery_v2.primary_address import build_primary_addresses
+from cleo.discovery_v2.apply_user_edits import apply_user_edits
+from cleo.discovery_v2.group_analytics import build_auto_group_analytics
 
 
-def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
-    """Run all stages of Layer 2. Idempotent — each stage clears its own derived tables."""
+def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True,
+                       skip_cbt: bool = False) -> dict:
+    """Run all stages of Layer 2. Idempotent — each stage clears its own derived tables.
+
+    skip_cbt=True bypasses contact_brand_tenures (the slowest stage, has a
+    correlated-subquery UPDATE that can take 30+ min on large datasets).
+    Use during iterative tuning of upstream stages.
+    """
     if verbose:
         print('Layer 2: starting build...', flush=True)
 
@@ -45,10 +56,20 @@ def build_auto_groups(conn: sqlite3.Connection, *, verbose: bool = True) -> dict
     a4 = build_expansion(conn, verbose=verbose)
     ct = build_contact_tenures(conn, verbose=verbose)
     a6 = detect_conflicts(conn, verbose=verbose)
+    a7 = build_standalone_coverage(conn, verbose=verbose)
     a5 = _finalize_display_and_counts(conn, verbose=verbose)
-    cbt = build_contact_brand_tenures(conn, verbose=verbose)
+    a8 = build_legacy_map(conn, verbose=verbose)
+    a9 = build_primary_addresses(conn, verbose=verbose)
+    az = apply_user_edits(conn, verbose=verbose)  # Stage Z: user edits as the final say
+    a10 = build_auto_group_analytics(conn, verbose=verbose)
 
-    summary = {**a1, **a2, **a3, **a4, **ct, **a6, **a5, **cbt}
+    if skip_cbt:
+        if verbose:
+            print('  (skipping CBT — contact_brand_tenures left as-is)', flush=True)
+        summary = {**a1, **a2, **a3, **a4, **ct, **a6, **a7, **a5, **a8, **a9, **az, **a10}
+    else:
+        cbt = build_contact_brand_tenures(conn, verbose=verbose)
+        summary = {**a1, **a2, **a3, **a4, **ct, **a6, **a7, **a5, **a8, **a9, **az, **a10, **cbt}
     if verbose:
         print(f'Layer 2: done. {summary}', flush=True)
     return summary

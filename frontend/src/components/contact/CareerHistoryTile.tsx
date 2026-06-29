@@ -1,7 +1,7 @@
 import { Text, Badge, Button } from "@radix-ui/themes";
 import { LinkedinLogo, Buildings, MapPin } from "@phosphor-icons/react";
 import type { CareerHistoryRow, WorkHistoryPosition } from "../../types";
-import { formatDate } from "../../lib/utils";
+import { formatDate, titleCase, formatCanonicalAddress } from "../../lib/utils";
 
 interface ReconciledRow {
   // From CareerHistoryRow when matched
@@ -143,7 +143,7 @@ export default function CareerHistoryTile({
                 }}
               />
               <Text size="2" weight="medium">
-                {r.title ? `${r.title} · ` : ""}{r.display_name}
+                {r.title ? `${titleCase(r.title)} · ` : ""}{titleCase(r.display_name)}
               </Text>
               {r.is_active && (
                 <Badge size="1" color="jade" variant="soft">Current</Badge>
@@ -168,7 +168,7 @@ export default function CareerHistoryTile({
               <div className="flex items-center gap-1 mt-0.5">
                 <MapPin size={11} style={{ color: "var(--gray-8)" }} />
                 <Text size="1" style={{ color: "var(--gray-9)" }}>
-                  {r.dominant_address_unit.split("|").slice(1, 5).filter(Boolean).join(" ")} · primary address during this tenure
+                  {formatCanonicalAddress(r.dominant_address_unit)} · primary address during this tenure
                 </Text>
               </div>
             )}

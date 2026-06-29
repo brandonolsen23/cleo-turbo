@@ -16,7 +16,7 @@ from typing import Optional
 from .config import CALIBRATION
 from .signals import (
     is_english_common_token, load_place_names, common_language_zipf,
-    load_industry_stopwords, DEFAULT_ZIPF_THRESHOLD,
+    load_industry_stopwords, load_defining_brands, DEFAULT_ZIPF_THRESHOLD,
 )
 from cleo.atoms.normalize import tokenize_brand
 
@@ -34,6 +34,7 @@ def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = 
     # Load external signal sources once before the per-token loop.
     place_names = load_place_names(conn)
     industry_stopwords_set = load_industry_stopwords(conn)
+    defining_brands_set = load_defining_brands(conn, level="1gram")
     zipf_threshold = DEFAULT_ZIPF_THRESHOLD
 
     # Wipe (DELETE, not DROP — schema is managed by migration 008).
@@ -103,26 +104,35 @@ def build_brand_index(conn, *, min_idf: Optional[float] = None, verbose: bool = 
         place = 1 if token in place_names else 0
         industry = 1 if token in industry_stopwords_set else 0
         is_excluded_flag = 1 if token in excluded else 0
+        is_defining_override = 1 if token in defining_brands_set else 0
 
-        # Filter-reason precedence: excluded > industry > place > english > (None → distinctive)
-        if is_excluded_flag:
-            reason = "excluded"
-        elif industry:
-            reason = "industry"
-        elif place:
-            reason = "place"
-        elif english:
-            reason = "english"
+        # User-asserted defining-brand override: if a token is in defining_brands,
+        # force is_distinctive=1 unless it's explicitly excluded or an industry
+        # stopword (those are stronger negative signals — a user calling something
+        # an industry stopword still wins).
+        if is_defining_override and not is_excluded_flag and not industry:
+            reason = "defining_brand"
+            is_distinctive = 1 if idf >= min_idf else 0
         else:
-            reason = None
+            # Filter-reason precedence: excluded > industry > place > english > (None → distinctive)
+            if is_excluded_flag:
+                reason = "excluded"
+            elif industry:
+                reason = "industry"
+            elif place:
+                reason = "place"
+            elif english:
+                reason = "english"
+            else:
+                reason = None
 
-        is_distinctive = 1 if (
-            idf >= min_idf
-            and not is_excluded_flag
-            and not industry
-            and not place
-            and not english
-        ) else 0
+            is_distinctive = 1 if (
+                idf >= min_idf
+                and not is_excluded_flag
+                and not industry
+                and not place
+                and not english
+            ) else 0
 
         summary_rows.append((
             token, idf, df, r["n_distinct_phrases"], is_distinctive, is_excluded_flag,

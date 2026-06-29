@@ -4,9 +4,9 @@
 def attribution_for(db, fk_column: str, entity_id: str) -> dict:
     """Return first/last contacted + per-user counts for a given entity.
 
-    fk_column must be one of 'contact_id', 'property_id', 'group_id'.
+    fk_column must be one of 'contact_id', 'property_id', 'group_id', 'auto_group_id'.
     """
-    if fk_column not in ("contact_id", "property_id", "group_id"):
+    if fk_column not in ("contact_id", "property_id", "group_id", "auto_group_id"):
         raise ValueError(f"Invalid fk_column: {fk_column}")
 
     total = db.execute(

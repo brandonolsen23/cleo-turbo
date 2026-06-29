@@ -1,3 +1,7 @@
+# Secrets / local environment
+.env
+.env.local
+
 # Data — too large for git, lives on disk
 raw-data/
 clean-data/
@@ -50,3 +54,4 @@ frontend/.env
 # Misc
 *.old.tsx
 data-integrity-audit.docx
+engines/rt/parcel_resolver/token.py

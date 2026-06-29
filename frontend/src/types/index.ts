@@ -158,6 +158,9 @@ export interface PropertyBrowseItem {
   lng: number | null;
   asset_class: string | null;
   asset_subclass: string | null;
+  building_size_raw: string | null;
+  building_size_value: number | null;
+  building_size_unit: string | null;
 }
 
 export interface PropertyDetail {
@@ -168,6 +171,9 @@ export interface PropertyDetail {
   region: string;
   postal: string | null;
   acreage: number | null;
+  building_size_raw: string | null;
+  building_size_value: number | null;
+  building_size_unit: string | null;
   legal_description: string | null;
   current_owner_name: string | null;
   current_owner_group_id: string | null;
@@ -223,6 +229,9 @@ export interface PropertyTransaction {
   chattels: number | null;
   other_consideration: number | null;
   charges_json: string[] | null;
+  building_size_raw: string | null;
+  building_size_value: number | null;
+  building_size_unit: string | null;
   photos_json: { street_photo_urls?: string[]; aerial_photo_urls?: string[]; standalone_photo_url?: string } | null;
   parties: PropertyTransactionParty[];
   seller_mailing_address?: { display: string | null; city: string | null; province: string | null; postal: string | null } | null;
@@ -245,6 +254,9 @@ export interface TransactionBrowseItem {
   buyer_parties: string[] | null;
   transaction_note: string | null;
   has_source_html?: boolean;
+  building_size_raw: string | null;
+  building_size_value: number | null;
+  building_size_unit: string | null;
 }
 
 export interface TransactionParty {
@@ -275,6 +287,9 @@ export interface TransactionDetail {
   buyer_phone: string | null;
   description: string | null;
   acreage: number | null;
+  building_size_raw: string | null;
+  building_size_value: number | null;
+  building_size_unit: string | null;
   pin: string | null;
   legal_description: string | null;
   pin_display: string | null;
@@ -474,6 +489,11 @@ export interface ContactBrowseItem {
   last_seen_date: string | null;
   job_title: string | null;
   mailing_city: string | null;
+  // Unified Group concept (Phase B)
+  current_auto_group_id: string | null;
+  auto_group_name: string | null;
+  auto_group_stem: string | null;
+  auto_group_tier: string | null;
   dominant_type: string | null;
   secondary_type: string | null;
 }
@@ -514,6 +534,10 @@ export interface ContactDetail {
   created_at: string;
   updated_at: string;
   transactions: ContactTransactionWithTenure[];
+  portfolio_sf: PortfolioSf;
+  portfolio_size?: PortfolioSize;
+  properties_unified?: ContactPropertiesUnified;
+  current_auto_group: AutoGroupSummary | null;
   current_group: { id: string; display_name: string; status: string; hq_address: string | null } | null;
   linkedin_url: string | null;
   linkedin_headline: string | null;
@@ -525,6 +549,13 @@ export interface ContactDetail {
   } | null;
   work_history: WorkHistoryPosition[];
   career_history: CareerHistoryRow[];
+  derived_tenure: {
+    auto_group_id: string;
+    display_name: string;
+    first_date: string;
+    last_date: string;
+    n_party_sides: number;
+  } | null;
   current_employer: CurrentEmployer | null;
   phone_tenure_tag: TenureTag | null;
   address_tenure_tags: AddressTenureTag[];
@@ -535,24 +566,44 @@ export interface ContactDetail {
 // ============================================================
 
 export interface GroupBrowseItem {
+  // Always AGRP_xxxxx after Phase D
   id: string;
   display_name: string;
-  status: string;
-  property_count: number;
-  transaction_count: number;
-  contact_count: number;
-  // Analytics (from join)
-  total_assessed_value: number | null;
+  canonical_stem: string;
+  tier: "confirmed" | "probable" | "candidate" | "standalone";
+  confidence: number | null;
+  n_members: number;
+  n_anchors: number;
+  primary_address: string | null;
+  primary_phone: string | null;
+  website: string | null;
+  // Rolled up from auto_group_analytics
+  property_count: number | null;        // unified properties_total (with resolved fallback)
+  properties_owned: number | null;
+  properties_total: number | null;
+  transacted_property_count: number | null;
+  transaction_count: number | null;
   total_buys: number | null;
   total_sells: number | null;
+  total_buy_value: number | null;
+  total_sell_value: number | null;
+  n_buys_priced: number | null;
+  n_sells_priced: number | null;
+  total_assessed_value: number | null;
   avg_buy_price: number | null;
   net_acquisitions: number | null;
   txns_per_year: number | null;
   buys_last_12m: number | null;
   sells_last_12m: number | null;
-  geographic_radius_km: number | null;
+  buys_last_36m: number | null;
+  sells_last_36m: number | null;
+  first_transaction_date: string | null;
+  last_transaction_date: string | null;
   region_count: number | null;
-  max_distance_from_hq_km: number | null;
+  // Engagement rollup
+  contact_count: number;
+  engaged_contact_count: number;
+  // Derived from transacted_type_mix
   dominant_type: string | null;
   secondary_type: string | null;
 }
@@ -560,7 +611,7 @@ export interface GroupBrowseItem {
 export interface GroupFilterOptions {
   asset_classes: string[];
   regions: string[];
-  brands: string[];
+  tiers: string[];
 }
 
 export interface ContactFilterOptions {
@@ -667,23 +718,117 @@ export interface GroupAnalytics {
 
 export interface GroupDetail {
   id: string;
+  auto_group_id: string;
+  display_name: string;
+  canonical_stem: string;
+  tier: "confirmed" | "probable" | "candidate" | "standalone";
+  confidence: number | null;
+  n_members: number;
+  n_anchors: number;
+  primary_address: string | null;
+  primary_address_source: string | null;
+  primary_phone: string | null;
+  website: string | null;
+  analytics: AutoGroupAnalytics | null;
+  constituent_legacy_groups: ConstituentLegacyGroup[];
+  total_contact_count: number;
+  engaged_contact_count: number;
+  portfolio_sf: PortfolioSf;
+  portfolio_size?: PortfolioSize;
+}
+
+export interface AutoGroupAnalytics {
+  auto_group_id: string;
+  property_count: number | null;
+  transacted_property_count: number | null;
+  // Unified Property model (Phase D follow-up)
+  properties_total: number | null;       // distinct properties incl. unresolved addresses
+  properties_owned: number | null;       // subset where last party-side was buyer
+  total_buy_value: number | null;        // real SUM(sale_price) on buyer-side
+  total_sell_value: number | null;
+  n_buys_priced: number | null;          // how many buy txns had a non-zero price
+  n_sells_priced: number | null;
+  total_assessed_value: number | null;
+  property_type_mix: Record<string, number> | null;
+  transacted_type_mix: Record<string, number> | null;
+  regions: string[] | null;
+  region_count: number | null;
+  total_buys: number | null;
+  total_sells: number | null;
+  avg_buy_price: number | null;
+  avg_sell_price: number | null;
+  first_transaction_date: string | null;
+  last_transaction_date: string | null;
+  net_acquisitions: number | null;
+  txns_per_year: number | null;
+  buys_last_12m: number | null;
+  sells_last_12m: number | null;
+  buys_last_36m: number | null;
+  sells_last_36m: number | null;
+  centroid_lat: number | null;
+  centroid_lng: number | null;
+  refreshed_at: string | null;
+}
+
+export interface ConstituentLegacyGroup {
+  id: string;
   display_name: string;
   normalized_name: string;
-  status: string;
   property_count: number;
   transaction_count: number;
-  contact_count: number;
-  hq_address: string | null;
-  corporate_address: string | null;
-  website: string | null;
-  hubspot_id: string | null;
-  created_at: string;
-  updated_at: string;
-  analytics: GroupAnalytics | null;
-  known_names: GroupKnownName[];
-  contacts: GroupContact[];
-  transactions: GroupTransaction[];
-  properties: GroupProperty[];
+  coverage_pct: number;
+  source: string;
+}
+
+export interface GroupPropertyRow {
+  // One unified Property — resolved (has property_id) or unresolved (has
+  // canonical_address). Always exactly one of these is non-null.
+  property_id: string | null;
+  canonical_address: string | null;
+  resolved: boolean;
+  display_address: string | null;
+  city: string | null;
+  asset_class: string | null;
+  lat: number | null;
+  lng: number | null;
+  building_size_raw: string | null;
+  building_size_value: number | null;
+  building_size_unit: string | null;
+  // This group's interaction with this property
+  last_date: string | null;
+  last_price: number | null;
+  last_side: "buyer" | "seller" | null;
+  is_owned: boolean;
+  n_transactions: number;
+}
+
+export interface PortfolioSf {
+  total_sf: number | null;
+  properties_with_sf: number;
+  total_properties: number;
+}
+
+export interface PortfolioSizeUnitTotal {
+  unit: string;
+  count: number;
+  total: number;
+}
+
+export interface PortfolioSize {
+  totals_by_unit: PortfolioSizeUnitTotal[];
+  no_size_count: number;
+  total_properties: number;
+}
+
+export interface ContactPropertiesUnified {
+  total: number;
+  owned: number;
+  resolved: number;
+  unresolved: number;
+  total_buy_value: number | null;
+  total_sell_value: number | null;
+  n_buys_priced: number;
+  n_sells_priced: number;
 }
 
 // ============================================================
@@ -2047,13 +2192,18 @@ export interface AutoGroupSummary {
   auto_group_id: string;
   canonical_stem: string;
   display_name: string;
-  tier: 'confirmed' | 'probable' | 'candidate';
+  tier: 'confirmed' | 'probable' | 'candidate' | 'standalone' | 'merged';
   confidence: number;
   n_anchors: number;
   n_members: number;
   // Plan G additions:
   anchor_diversity?: number;
   n_distinct_contacts?: number;
+  // Wave 5 HQ identity (auto_groups columns from migration 029)
+  primary_address?: string | null;
+  primary_address_source?: 'algorithmic' | 'manual' | 'ai_enriched' | null;
+  website?: string | null;
+  primary_phone?: string | null;
 }
 
 export interface AutoGroupListResponse {
@@ -2487,4 +2637,59 @@ export interface AIDoneEvent {
   input_tokens: number;
   output_tokens: number;
   cached_tokens: number;
+}
+
+// ============================================================
+// Issues — in-app structured bug tracker
+// ============================================================
+
+export type IssueEntityType =
+  | "property" | "contact" | "group" | "transaction" | "auto_group" | "general";
+
+export type IssueCategory =
+  | "rt_property_mismatch" | "parcel_geometry_wrong" | "wrong_owner"
+  | "group_clustering_issue" | "parsing_error" | "missing_data"
+  | "duplicate_entity" | "formatting_issue" | "layout_issue"
+  | "wrong_calculation" | "other";
+
+export type IssueStatus =
+  | "open" | "in_progress" | "resolved" | "wontfix" | "duplicate";
+
+export type IssueSeverity = "low" | "medium" | "high" | "critical";
+
+export interface Issue {
+  id: number;
+  entity_type: IssueEntityType;
+  entity_id: string | null;
+  component: string | null;
+  component_data: Record<string, unknown> | null;
+  categories: IssueCategory[];
+  severity: IssueSeverity;
+  title: string;
+  description: string;
+  status: IssueStatus;
+  reported_by: string;
+  reported_at: string;
+  resolved_by: string | null;
+  resolved_at: string | null;
+  resolution_notes: string | null;
+  fixed_in_commit: string | null;
+  updated_at: string;
+}
+
+export interface IssueStats {
+  by_status: Record<string, number>;
+  open_by_severity: Record<string, number>;
+  open_by_category: Record<string, number>;
+}
+
+/** Context attached when the user clicks an `i` button — the modal pre-fills
+ *  from this so reporting is one click + a few words. */
+export interface IssueReportContext {
+  entity_type: IssueEntityType;
+  entity_id?: string | null;
+  component?: string;
+  component_data?: Record<string, unknown>;
+  // Human-readable label for the "Reporting:" header in the modal
+  contextLabel?: string;
 }

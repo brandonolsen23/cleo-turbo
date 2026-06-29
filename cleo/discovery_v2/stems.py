@@ -1,4 +1,15 @@
-"""Stage A1: Stem extraction with verified-promotion."""
+"""Stage A1: Stem extraction with verified-promotion.
+
+Picks the shortest-distinctive n-gram in each brand_phrase as the candidate
+stem. Walk order: 1-gram (token-level distinctive flag) → 2-gram → 3-gram →
+position-anchor 1-gram fallback. At each level the rarest (highest IDF) n-gram
+wins.
+
+This is the n-gram distinctiveness work. Generic words like "investments" no
+longer become stems on their own; phrases like "Marlin Spring Investments Inc"
+fall through 1-grams (all english-filtered) to find "marlin spring" as the
+2-gram stem.
+"""
 from __future__ import annotations
 import math
 import sqlite3
@@ -6,6 +17,7 @@ from typing import Optional, Tuple
 
 from cleo.discovery_v2.constants import (
     STEM_PROMOTION_DOMINANCE, STEM_PROMOTION_VOLUME,
+    N_GRAM_GENERIC_THRESHOLD,
 )
 
 
@@ -16,35 +28,127 @@ def _tokenize(phrase: str) -> list[str]:
 def _candidate_from_tokens(
     tokens: list[str],
     token_info: dict[str, tuple[float, bool, bool]],
+    bigram_lookup: dict[str, tuple[int, float]] | None = None,
+    trigram_lookup: dict[str, tuple[int, float]] | None = None,
+    defining_2g: set[str] | None = None,
+    defining_3g: set[str] | None = None,
 ) -> Optional[Tuple[str, str]]:
-    """Like extract_candidate_stem, but operates on a pre-loaded token_info dict.
+    """Pick the best (stem, stem_type) for a brand_phrase given pre-loaded lookups.
 
-    token_info: {token: (idf, is_distinctive, is_pa)}
-
-    Returns (stem, stem_type) or None.
+    Priority order:
+      0. User-declared defining_brand 3-gram or 2-gram present in the phrase
+         (overrides 1-gram defaults — lets the user disambiguate "cadillac
+         fairview" from a bare "fairview" 1-gram)
+      1. Distinctive 1-gram (per brand_token_summary.is_distinctive) — pick
+         highest IDF
+      2. Distinctive 2-gram (n_distinct_phrases ≤ threshold) — LEFTMOST in the
+         phrase, since brands sit before industry descriptors
+      3. Distinctive 3-gram — same leftmost rule
+      4. Position-anchor 1-gram fallback (e.g. "investments")
+    Returns None if no candidate at any level.
     """
     if not tokens:
         return None
-    distinctive = [(t, token_info[t][0]) for t in tokens if t in token_info and token_info[t][1]]
+
+    # Level 0: user-declared defining-brand n-gram (3-gram > 2-gram > 1-gram order).
+    # These override the level priority so "cadillac fairview" beats "fairview"
+    # 1-gram on its own.
+    if defining_3g and len(tokens) >= 3:
+        for i in range(len(tokens) - 2):
+            tg = ' '.join(tokens[i:i+3])
+            if tg in defining_3g:
+                return (tg, 'distinctive_3g')
+    if defining_2g and len(tokens) >= 2:
+        for i in range(len(tokens) - 1):
+            bg = ' '.join(tokens[i:i+2])
+            if bg in defining_2g:
+                return (bg, 'distinctive_2g')
+
+    # Level 1: distinctive 1-gram
+    distinctive = [(t, token_info[t][0]) for t in tokens
+                   if t in token_info and token_info[t][1]]
     if distinctive:
         token, _ = max(distinctive, key=lambda x: x[1])
         return (token, 'distinctive')
+
+    # Level 2: distinctive 2-gram — LEFTMOST
+    if bigram_lookup and len(tokens) >= 2:
+        for i in range(len(tokens) - 1):
+            bg = ' '.join(tokens[i:i+2])
+            if bg in bigram_lookup:
+                return (bg, 'distinctive_2g')
+
+    # Level 3: distinctive 3-gram — LEFTMOST
+    if trigram_lookup and len(tokens) >= 3:
+        for i in range(len(tokens) - 2):
+            tg = ' '.join(tokens[i:i+3])
+            if tg in trigram_lookup:
+                return (tg, 'distinctive_3g')
+
+    # Fallback: position-anchor 1-gram (e.g. "investments")
     pa = [(t, token_info[t][0]) for t in tokens if t in token_info and token_info[t][2]]
     if pa:
         token, _ = max(pa, key=lambda x: x[1])
         return (token, 'position_anchor')
+
     return None
+
+
+def _load_defining_ngrams(conn: sqlite3.Connection, level: str) -> set[str]:
+    return {r[0] for r in conn.execute(
+        "SELECT ngram FROM defining_brands WHERE level = ?", (level,)
+    )}
+
+
+def _load_bigram_lookup(conn: sqlite3.Connection) -> dict[str, tuple[int, float]]:
+    """Load 2-grams that pass the generic threshold OR are user-declared
+    defining_brands at the 2gram level. Defining brands override the threshold
+    so users can pin specific multi-word brands (e.g. "standard life",
+    "cadillac fairview") that fall outside the automatic gate."""
+    threshold = N_GRAM_GENERIC_THRESHOLD.get(2, 10)
+    lookup = {
+        r['bigram']: (r['n_distinct_phrases'], r['idf'])
+        for r in conn.execute(
+            "SELECT bigram, n_distinct_phrases, idf FROM brand_bigram_summary "
+            "WHERE n_distinct_phrases <= ?",
+            (threshold,),
+        )
+    }
+    for r in conn.execute(
+        "SELECT b.ngram, COALESCE(s.n_distinct_phrases, 0) AS df, COALESCE(s.idf, 0.0) AS idf "
+        "FROM defining_brands b "
+        "LEFT JOIN brand_bigram_summary s ON s.bigram = b.ngram "
+        "WHERE b.level = '2gram'"
+    ):
+        lookup[r['ngram']] = (r['df'], r['idf'])
+    return lookup
+
+
+def _load_trigram_lookup(conn: sqlite3.Connection) -> dict[str, tuple[int, float]]:
+    threshold = N_GRAM_GENERIC_THRESHOLD.get(3, 5)
+    lookup = {
+        r['trigram']: (r['n_distinct_phrases'], r['idf'])
+        for r in conn.execute(
+            "SELECT trigram, n_distinct_phrases, idf FROM brand_trigram_summary "
+            "WHERE n_distinct_phrases <= ?",
+            (threshold,),
+        )
+    }
+    for r in conn.execute(
+        "SELECT b.ngram, COALESCE(s.n_distinct_phrases, 0) AS df, COALESCE(s.idf, 0.0) AS idf "
+        "FROM defining_brands b "
+        "LEFT JOIN brand_trigram_summary s ON s.trigram = b.ngram "
+        "WHERE b.level = '3gram'"
+    ):
+        lookup[r['ngram']] = (r['df'], r['idf'])
+    return lookup
 
 
 def extract_candidate_stem(phrase: str, conn: sqlite3.Connection) -> Optional[Tuple[str, str]]:
     """Pick a candidate stem from a brand_phrase. Returns (stem, stem_type) or None.
 
-    Rule: highest-IDF distinctive 1-gram in the phrase. If none, fall back to
-    the highest-position-rank PA 1-gram.
-
-    NOTE: This function loads token_info from the DB on every call. For bulk use
-    over many phrases, prefer building token_info once with a SELECT over
-    brand_token_summary and calling _candidate_from_tokens() directly.
+    Convenience for callers that have a single phrase. For bulk use prefer
+    `_candidate_from_tokens` with pre-loaded lookups.
     """
     token_info: dict[str, tuple[float, bool, bool]] = {
         r['token']: (r['idf'], bool(r['is_distinctive']), bool(r['is_pa']))
@@ -54,7 +158,14 @@ def extract_candidate_stem(phrase: str, conn: sqlite3.Connection) -> Optional[Tu
             "FROM brand_token_summary"
         )
     }
-    return _candidate_from_tokens(_tokenize(phrase), token_info)
+    return _candidate_from_tokens(
+        _tokenize(phrase),
+        token_info,
+        _load_bigram_lookup(conn),
+        _load_trigram_lookup(conn),
+        _load_defining_ngrams(conn, "2gram"),
+        _load_defining_ngrams(conn, "3gram"),
+    )
 
 
 def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
@@ -69,7 +180,8 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     conn.execute('DELETE FROM brand_stem_phrase_map')
 
     # Step 1: collect every distinct brand_phrase + its candidate stem.
-    # Pre-load token_info once (one query) instead of one query per phrase.
+    # Pre-load token_info + bigram/trigram lookups once (three queries) instead
+    # of one query per phrase.
     token_info: dict[str, tuple[float, bool, bool]] = {
         r['token']: (r['idf'], bool(r['is_distinctive']), bool(r['is_pa']))
         for r in conn.execute(
@@ -78,13 +190,27 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             "FROM brand_token_summary"
         )
     }
+    bigram_lookup = _load_bigram_lookup(conn)
+    trigram_lookup = _load_trigram_lookup(conn)
+    defining_2g = _load_defining_ngrams(conn, "2gram")
+    defining_3g = _load_defining_ngrams(conn, "3gram")
+    if verbose:
+        print(
+            f'  Stage A1: token_info={len(token_info):,}, '
+            f'bigram_lookup={len(bigram_lookup):,}, '
+            f'trigram_lookup={len(trigram_lookup):,}, '
+            f'defining 2g/3g={len(defining_2g)}/{len(defining_3g)}',
+            flush=True,
+        )
 
     phrases = [r['atom_value'] for r in conn.execute(
         "SELECT DISTINCT atom_value FROM party_atoms WHERE atom_type='brand_phrase'"
     )]
     phrase_to_candidate: dict[str, tuple[str, str]] = {}
     for ph in phrases:
-        c = _candidate_from_tokens(_tokenize(ph), token_info)
+        c = _candidate_from_tokens(_tokenize(ph), token_info,
+                                    bigram_lookup, trigram_lookup,
+                                    defining_2g, defining_3g)
         if c is not None:
             phrase_to_candidate[ph] = c
 
@@ -231,12 +357,57 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
             promoted,
         )
 
-    # Step 3: write phrase → stem map (only phrases whose candidate was promoted)
-    verified = {row[0] for row in promoted}
+    # Step 3: write phrase → stem map. PER-PHRASE ANCHOR CHECK — a phrase is
+    # only mapped to a verified stem if at least one of the party-sides that
+    # carries this phrase also carries the stem's dominant anchor (phone or
+    # address_root). This is the structural fix for Issue #3: a stem like
+    # "lorne" was getting promoted by the real Lorne Investments brand's
+    # phone, then every "X Lorne Y" phrase (West Lorne towns, Lorne Avenue
+    # streets, Lorne Brenneman given-name farms) rode along through blind
+    # text-based mapping. The anchor check enforces "this phrase shares the
+    # cluster's real-world signal," not just "this phrase contains the
+    # candidate token."
+    #
+    # qualifying_source stems (management-company brands in trade_name /
+    # care_of / companies_json) are exempt because they're already gated on
+    # source-field selectivity + volume and don't have a strong single anchor.
+    verified_anchor: dict[str, tuple[str, str] | None] = {}
+    for stem, stem_type, atype, aval, dom, vol in promoted:
+        verified_anchor[stem] = None if atype == 'qualifying_source' else (atype, aval)
+
+    # Reverse phrase → sides map (built once from the side_phrases dict above)
+    phrase_to_sides: dict[str, set] = {}
+    for sk, phrases_list in side_phrases.items():
+        for ph in phrases_list:
+            phrase_to_sides.setdefault(ph, set()).add(sk)
+
     mappings = []
+    filtered_phrases = 0
     for ph, (cand, _) in phrase_to_candidate.items():
-        if cand in verified:
-            mappings.append((ph, cand, 1.0))  # confidence = 1.0 placeholder for Plan A
+        if cand not in verified_anchor:
+            continue
+        anchor = verified_anchor[cand]
+        if anchor is None:
+            # qualifying_source — keep broad mapping
+            mappings.append((ph, cand, 1.0))
+            continue
+        # Strict: at least one of this phrase's party-sides must carry the
+        # stem's dominant anchor value.
+        atype, aval = anchor
+        has_anchor = False
+        for sk in phrase_to_sides.get(ph, ()):
+            phone, addr_root = side_anchors.get(sk, (None, None))
+            if atype == 'phone' and phone == aval:
+                has_anchor = True
+                break
+            if atype == 'address_root' and addr_root == aval:
+                has_anchor = True
+                break
+        if has_anchor:
+            mappings.append((ph, cand, 1.0))
+        else:
+            filtered_phrases += 1
+
     if mappings:
         conn.executemany(
             "INSERT INTO brand_stem_phrase_map (phrase, stem, confidence) VALUES (?, ?, ?)",
@@ -245,6 +416,8 @@ def build_stems(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
 
     conn.commit()
     if verbose:
+        verified = set(verified_anchor.keys())
         print(f'  Stage A1 (stems): {len(verified):,} verified stems, '
-              f'{len(mappings):,} phrase mappings.', flush=True)
-    return {'n_stems': len(verified), 'n_phrase_mappings': len(mappings)}
+              f'{len(mappings):,} phrase mappings ({filtered_phrases:,} filtered by '
+              f'per-phrase anchor check).', flush=True)
+    return {'n_stems': len(verified_anchor), 'n_phrase_mappings': len(mappings)}

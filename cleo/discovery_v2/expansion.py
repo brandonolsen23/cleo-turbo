@@ -25,10 +25,156 @@ from cleo.discovery_v2.constants import (
 _NUMBERED_CORP_RE = re.compile(r'^\d+\s+(ontario|canada|alberta|bc|quebec)\b', re.I)
 
 
+def _ensure_defining_brand_auto_groups(conn: sqlite3.Connection, *, verbose: bool) -> int:
+    """Ensure every defining_brands canonical_stem has an auto_group row.
+
+    Defining-brand rules are user-asserted ground truth — they always have
+    confidence=1.0 and tier='confirmed'. If seeding didn't already create an
+    auto_group for the stem (e.g. because the stem had thin anchor evidence),
+    we create one here so expansion has somewhere to attach members.
+    """
+    try:
+        rules = list(conn.execute(
+            "SELECT canonical_stem, COALESCE(canonical_name, canonical_stem) AS display_name "
+            "FROM defining_brands "
+            "WHERE canonical_stem IS NOT NULL "
+            "GROUP BY canonical_stem"
+        ))
+    except sqlite3.OperationalError:
+        return 0
+
+    if not rules:
+        return 0
+
+    existing_stems = {
+        r['canonical_stem']
+        for r in conn.execute("SELECT DISTINCT canonical_stem FROM auto_groups")
+    }
+
+    # Compute next AGRP_NNNNN id by scanning existing
+    max_n = 0
+    for r in conn.execute("SELECT auto_group_id FROM auto_groups WHERE auto_group_id LIKE 'AGRP_%'"):
+        try:
+            n = int(r['auto_group_id'].split('_', 1)[1])
+            if n > max_n:
+                max_n = n
+        except (ValueError, IndexError):
+            pass
+
+    created = 0
+    for rule in rules:
+        stem = rule['canonical_stem']
+        if stem in existing_stems:
+            continue
+        max_n += 1
+        new_id = f"AGRP_{max_n:05d}"
+        conn.execute(
+            "INSERT INTO auto_groups "
+            "(auto_group_id, canonical_stem, display_name, tier, confidence, n_anchors, n_members) "
+            "VALUES (?, ?, ?, 'confirmed', 1.0, 0, 0)",
+            (new_id, stem, rule['display_name']),
+        )
+        existing_stems.add(stem)
+        created += 1
+
+    conn.commit()
+    if verbose and created:
+        print(f"  Stage A4-pre (defining-brand stems): created {created} auto_groups", flush=True)
+    return created
+
+
+def _force_attach_defining_brands(conn: sqlite3.Connection, *, verbose: bool) -> int:
+    """Force-attach party-sides matching a defining_brands rule to the rule's
+    canonical_stem auto_group. Bypasses anchor scoring entirely — this is
+    user-asserted ground truth.
+
+    Returns the number of party-sides force-attached.
+    """
+    try:
+        rules = list(conn.execute(
+            "SELECT ngram, level, canonical_stem "
+            "FROM defining_brands "
+            "WHERE canonical_stem IS NOT NULL"
+        ))
+    except sqlite3.OperationalError:
+        return 0
+
+    if not rules:
+        return 0
+
+    # Map canonical_stem → auto_group_id (pick first one if multiple share a stem;
+    # _ensure_defining_brand_auto_groups guarantees at least one exists).
+    stem_to_group: dict[str, str] = {}
+    for r in conn.execute("SELECT auto_group_id, canonical_stem FROM auto_groups"):
+        stem_to_group.setdefault(r['canonical_stem'], r['auto_group_id'])
+
+    # Level → (table, column) for ngram match
+    LEVEL_TABLE = {
+        '1gram': ('brand_token_index', 'token'),
+        '2gram': ('brand_bigram_index', 'bigram'),
+        '3gram': ('brand_trigram_index', 'trigram'),
+        '4gram': ('brand_fourgram_index', 'fourgram'),
+        '5gram': ('brand_fivegram_index', 'fivegram'),
+    }
+
+    total_attached = 0
+    rules_applied = 0
+
+    for rule in rules:
+        stem = rule['canonical_stem']
+        level = rule['level']
+        ngram = rule['ngram']
+
+        gid = stem_to_group.get(stem)
+        if not gid:
+            continue
+
+        if level not in LEVEL_TABLE:
+            # long-form (6+) not supported here; would need different lookup
+            continue
+
+        table, col = LEVEL_TABLE[level]
+        rows = conn.execute(
+            f"SELECT source_id, side FROM {table} WHERE {col} = ?",
+            (ngram,),
+        ).fetchall()
+
+        if not rows:
+            continue
+
+        # Use INSERT OR IGNORE so we don't conflict with the regular
+        # expansion's later inserts (idx_agm_party is UNIQUE on
+        # (auto_group_id, source_id, side) for party_side rows).
+        conn.executemany(
+            "INSERT OR IGNORE INTO auto_group_members "
+            "(auto_group_id, member_type, source_id, side, corp_name, match_score) "
+            "VALUES (?, 'party_side', ?, ?, NULL, 1.0)",
+            [(gid, r['source_id'], r['side']) for r in rows],
+        )
+        total_attached += len(rows)
+        rules_applied += 1
+
+    conn.commit()
+    if verbose:
+        print(
+            f"  Stage A4-pre (defining-brand force-attach): "
+            f"{rules_applied} rules applied, {total_attached:,} party-sides attached",
+            flush=True,
+        )
+    return total_attached
+
+
 def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
     """Attach party-sides and numbered corps to seeded groups. Idempotent."""
     conn.execute('DELETE FROM auto_group_members')
     conn.execute('DELETE FROM auto_conflict_flags')
+
+    # Path 2: user-asserted defining-brand rules. Run BEFORE normal expansion so
+    # these attachments survive any anchor-score gating. Direct attaches happen
+    # at match_score=1.0; later expansion may add MORE attachments (e.g. JV
+    # co-investors) but won't conflict because of UNIQUE constraint.
+    _ensure_defining_brand_auto_groups(conn, verbose=verbose)
+    _force_attach_defining_brands(conn, verbose=verbose)
 
     # 1. Pull every group's canonical stem
     groups = list(conn.execute('SELECT auto_group_id, canonical_stem FROM auto_groups'))
@@ -179,10 +325,14 @@ def build_expansion(conn: sqlite3.Connection, *, verbose: bool = True) -> dict:
                 ),
             ))
 
-    # Insert party-side members
+    # Insert party-side members.
+    # OR IGNORE because the defining-brand force-attach pass (run earlier in
+    # this same function) may have already attached some of these rows; the
+    # UNIQUE constraint on (auto_group_id, source_id, side) for party_side rows
+    # makes that a no-op rather than a crash.
     if member_rows:
         conn.executemany(
-            """INSERT INTO auto_group_members
+            """INSERT OR IGNORE INTO auto_group_members
                  (auto_group_id, member_type, source_id, side, corp_name, match_score)
                VALUES (?, ?, ?, ?, ?, ?)""",
             member_rows,

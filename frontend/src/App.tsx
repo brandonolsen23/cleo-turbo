@@ -12,6 +12,7 @@ import LoginPage from "./components/auth/LoginPage";
 import { CrmProvider } from "./components/crm/CrmContext";
 import CrmDrawer from "./components/crm/CrmDrawer";
 import CommandPalette from "./components/ui/CommandPalette";
+import { IssueReporterProvider } from "./components/issues/IssueReporter";
 
 // Source Viewer
 import { SourceViewerProvider } from "./components/source/SourceViewerContext";
@@ -35,6 +36,8 @@ import QueuePage from "./pages/QueuePage";
 import AuditLogPage from "./pages/AuditLogPage";
 import AdminPage from "./pages/AdminPage";
 import SettingsPage from "./pages/SettingsPage";
+import IssuesPage from "./pages/IssuesPage";
+import IssueDetailPage from "./pages/IssueDetailPage";
 import OpportunitiesPage from "./pages/OpportunitiesPage";
 import SellOpportunityDetailPage from "./pages/SellOpportunityDetailPage";
 import BuyMandateDetailPage from "./pages/BuyMandateDetailPage";
@@ -77,6 +80,7 @@ const ExplorerAutoGroups = lazy(() => import("./pages/ExplorerAutoGroups"));
 const ExplorerAutoGroupsTuning = lazy(() => import("./pages/ExplorerAutoGroupsTuning"));
 const ExplorerAutoGroupDetail = lazy(() => import("./pages/ExplorerAutoGroupDetail"));
 const ExplorerConflicts = lazy(() => import("./pages/ExplorerConflicts"));
+const TestLabPage = lazy(() => import("./pages/TestLabPage"));
 
 // ============================================================
 // Auth Provider
@@ -122,6 +126,7 @@ export default function App() {
         <CrmProvider>
         <SourceViewerProvider>
           <BrowserRouter>
+            <IssueReporterProvider>
             <Suspense fallback={<div className="flex items-center justify-center h-screen"><Text>Loading...</Text></div>}>
               <Routes>
                 <Route path="/login" element={<LoginPage />} />
@@ -184,14 +189,18 @@ export default function App() {
                 <Route path="/labeling" element={<LabelingPage />} />
                 <Route path="/labeling/audits/:slug" element={<LabelingAuditPage />} />
                 <Route path="/labeling/sessions/:id" element={<LabelingSessionPage />} />
+                <Route path="/test-lab" element={<TestLabPage />} />
                   <Route path="/settings" element={<SettingsPage />} />
                   <Route path="/admin" element={<AdminPage />} />
+                  <Route path="/issues" element={<IssuesPage />} />
+                  <Route path="/issues/:id" element={<IssueDetailPage />} />
                 </Route>
               </Routes>
             </Suspense>
             <CrmDrawer />
             <SourceViewerDrawer />
             <CommandPalette />
+            </IssueReporterProvider>
           </BrowserRouter>
         </SourceViewerProvider>
         </CrmProvider>

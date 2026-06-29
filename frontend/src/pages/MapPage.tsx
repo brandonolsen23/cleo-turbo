@@ -126,6 +126,8 @@ export default function MapPage() {
       maxPrice: p.get("maxPrice") || "",
       minOwnership: p.get("minOwnership") || "",
       maxOwnership: p.get("maxOwnership") || "",
+      minBuildingSize: p.get("minBuildingSize") || "",
+      maxBuildingSize: p.get("maxBuildingSize") || "",
       sort: (p.get("sort") as SortOption) || "latest_date",
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -173,7 +175,8 @@ export default function MapPage() {
     savedFilters.brands.size > 0 || savedFilters.categories.size > 0 ||
     savedFilters.city !== "" || savedFilters.types.size > 0 ||
     savedFilters.minPrice !== "" || savedFilters.maxPrice !== "" ||
-    savedFilters.minOwnership !== "" || savedFilters.maxOwnership !== "",
+    savedFilters.minOwnership !== "" || savedFilters.maxOwnership !== "" ||
+    savedFilters.minBuildingSize !== "" || savedFilters.maxBuildingSize !== "",
   );
 
   // Filters
@@ -183,6 +186,8 @@ export default function MapPage() {
   const [maxPrice, setMaxPrice] = useState<string>(savedFilters.maxPrice);
   const [minOwnership, setMinOwnership] = useState<string>(savedFilters.minOwnership);
   const [maxOwnership, setMaxOwnership] = useState<string>(savedFilters.maxOwnership);
+  const [minBuildingSize, setMinBuildingSize] = useState<string>(savedFilters.minBuildingSize);
+  const [maxBuildingSize, setMaxBuildingSize] = useState<string>(savedFilters.maxBuildingSize);
 
   // Sync filter state to URL params so it survives navigation
   useEffect(() => {
@@ -200,9 +205,11 @@ export default function MapPage() {
     setOrDelete("maxPrice", maxPrice);
     setOrDelete("minOwnership", minOwnership);
     setOrDelete("maxOwnership", maxOwnership);
+    setOrDelete("minBuildingSize", minBuildingSize);
+    setOrDelete("maxBuildingSize", maxBuildingSize);
     setOrDelete("sort", sortBy === "latest_date" ? "" : sortBy);
     window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
-  }, [brandFilters, categoryFilters, cityFilter, typeFilters, minPrice, maxPrice, minOwnership, maxOwnership, sortBy]);
+  }, [brandFilters, categoryFilters, cityFilter, typeFilters, minPrice, maxPrice, minOwnership, maxOwnership, minBuildingSize, maxBuildingSize, sortBy]);
   const [cities, setCities] = useState<string[]>([]);
 
   // Viewport tracking for property list
@@ -438,8 +445,16 @@ export default function MapPage() {
       const max = parseFloat(maxOwnership);
       if (!isNaN(max)) filtered = filtered.filter((f: any) => f.properties.ownership_years != null && f.properties.ownership_years <= max);
     }
+    if (minBuildingSize) {
+      const min = parseFloat(minBuildingSize);
+      if (!isNaN(min)) filtered = filtered.filter((f: any) => f.properties.building_size_sf != null && f.properties.building_size_sf >= min);
+    }
+    if (maxBuildingSize) {
+      const max = parseFloat(maxBuildingSize);
+      if (!isNaN(max)) filtered = filtered.filter((f: any) => f.properties.building_size_sf != null && f.properties.building_size_sf <= max);
+    }
     return filtered;
-  }, [cityFilter, typeFilters, minPrice, maxPrice, minOwnership, maxOwnership]);
+  }, [cityFilter, typeFilters, minPrice, maxPrice, minOwnership, maxOwnership, minBuildingSize, maxBuildingSize]);
 
   /**
    * Brand filter splits features into two sets:
@@ -553,6 +568,8 @@ export default function MapPage() {
     brandFilters.size > 0 ? 1 : 0,
     minOwnership ? 1 : 0,
     maxOwnership ? 1 : 0,
+    minBuildingSize ? 1 : 0,
+    maxBuildingSize ? 1 : 0,
   ].reduce((a, b) => a + b, 0);
 
   const clearFilters = () => {
@@ -562,6 +579,8 @@ export default function MapPage() {
     setMaxPrice("");
     setMinOwnership("");
     setMaxOwnership("");
+    setMinBuildingSize("");
+    setMaxBuildingSize("");
     setCategoryFilters(new Set());
     setBrandFilters(new Set());
   };
@@ -671,6 +690,27 @@ export default function MapPage() {
                 onChange={(e) => setMaxOwnership(e.target.value)}
                 className="h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white"
                 style={{ width: 80 }}
+              />
+
+              <span className="text-[11px] mx-0.5" style={{ color: "var(--gray-8)" }}>|</span>
+
+              {/* Building size range (sf) */}
+              <input
+                type="number"
+                placeholder="Min sf"
+                value={minBuildingSize}
+                onChange={(e) => setMinBuildingSize(e.target.value)}
+                className="h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white"
+                style={{ width: 90 }}
+              />
+              <span className="text-[12px]" style={{ color: "var(--gray-9)" }}>to</span>
+              <input
+                type="number"
+                placeholder="Max sf"
+                value={maxBuildingSize}
+                onChange={(e) => setMaxBuildingSize(e.target.value)}
+                className="h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white"
+                style={{ width: 90 }}
               />
 
               {activeFilterCount > 0 && (

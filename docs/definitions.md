@@ -359,6 +359,12 @@ An alternative parcel identifier used by GeoWarehouse and Ontario land registry.
 
 The physical characteristics of a property — legal description, site area, frontage, depth, zoning code, building square footage. Not a standalone entity, just a group of fields on a Transaction or Property.
 
+**Building size** is captured on RT records as a free-text string (`bldg`, ~24% fill rate). It is stored as three columns on `transactions` and denormalised onto `properties` (latest non-null transaction wins):
+
+- `building_size_raw TEXT` — verbatim source string (e.g. `"43,612 sf"`, `"22 units"`, `"137 beds"`).
+- `building_size_value REAL` — parsed number with thousand-separators and stray whitespace removed.
+- `building_size_unit TEXT` — normalised unit, one of `sf` | `units` | `rooms` | `beds` | `bdrms` | `suites` | `ac` | `lots` | `seats` | `townhomes` | `parcels` | `sm`, or `NULL` when no unit could be inferred (bare numbers, unparseable garbage). Aggregations must group by unit — `"22 units"` and `"22,000 sf"` are incomparable.
+
 ### Tenant
 
 A commercial brand or business occupying a Property. Derived from brand store locators and OSM data, not from lease records. A Property can have multiple Tenants.
@@ -450,7 +456,7 @@ Any signal extraction, ownership lookup, clustering algorithm, or UI surface tha
 - Parcel polygon on a map
 - Every transaction (RT) involving this property, in chronological order
 - Current and previous owners (from transaction buyer/seller names)
-- ARN, PIN, legal description, acreage
+- ARN, PIN, legal description, acreage, latest reported building size
 - Any Group associations (via contacts on its transactions)
 - Tenants (from OSM/Brand data matched to this parcel)
 - GeoWarehouse assessment data (if available)

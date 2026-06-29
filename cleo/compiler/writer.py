@@ -17,6 +17,7 @@ from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
                      read_parcel, count_clean_records, count_osm_records, count_gw_records)
 from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name, strip_leading_honorifics
 from ..database.schema import drop_derived_tables, create_all_tables
+from .owner_overrides import apply_owner_overrides
 from ..database.asset_classes import seed_asset_classes, map_property_type_to_asset_class
 from ..database.tenant_categories import seed_tenant_categories
 from ..analytics.groups import refresh_group_analytics
@@ -1295,6 +1296,15 @@ def run_compiler(conn):
 
     print(f'  Orphan transactions with PIN: {len(orphans):,}')
     print(f'  Linked via PIN bridge: {pin_linked:,}')
+
+    # ================================================================
+    # Pass 7: Apply manual owner overrides (Portfolio Capture)
+    # manual_owner_links (CRM) is the source of truth; re-deriving here
+    # makes captured ownership survive every rebuild. Runs before FTS &
+    # analytics so both reflect the overridden owner.
+    # ================================================================
+    print('Pass 7: Applying manual owner overrides...')
+    apply_owner_overrides(conn)
 
     # ================================================================
     # Rebuild FTS indexes

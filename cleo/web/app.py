@@ -8,6 +8,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import os
 
+# Load .env at import time so anything that reads env vars (Anthropic SDK,
+# Mapbox token, etc.) sees them on first use. Project root is two levels up
+# from this file.
+try:
+    from dotenv import load_dotenv
+    _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    load_dotenv(os.path.join(_PROJECT_ROOT, ".env"))
+except ImportError:
+    pass
+
 from .auth import router as auth_router
 from .routes.properties import router as properties_router
 from .routes.transactions import router as transactions_router
@@ -37,6 +47,9 @@ from .routes.labeling import router as labeling_router
 from .routes.explorer import router as explorer_router
 from .routes.contact_tenures import router as contact_tenures_router
 from .routes.ai import router as ai_router
+from .routes.auto_groups import router as auto_groups_router
+from .routes.issues import router as issues_router
+from .routes.test_lab import router as test_lab_router
 
 
 def create_app():
@@ -83,6 +96,8 @@ def create_app():
     app.include_router(asset_classes_router, prefix="/api/asset-classes", tags=["asset-classes"])
     app.include_router(tenant_categories_router, prefix="/api/tenant-categories", tags=["tenant-categories"])
     app.include_router(group_merges_router, prefix="/api/group-merges", tags=["group-merges"])
+    app.include_router(auto_groups_router, prefix="/api/auto-groups", tags=["auto-groups"])
+    app.include_router(issues_router, prefix="/api/issues", tags=["issues"])
     app.include_router(audit_router_api, prefix="/api/audit", tags=["audit"])
     app.include_router(brands_router, prefix="/api/brands", tags=["brands"])
     app.include_router(sell_opportunities_router, prefix="/api/sell-opportunities", tags=["sell-opportunities"])
@@ -94,6 +109,7 @@ def create_app():
     app.include_router(explorer_router, prefix="/api/explorer", tags=["explorer"])
     app.include_router(contact_tenures_router, prefix="/api", tags=["contact-tenures"])
     app.include_router(ai_router, prefix="/api/ai", tags=["ai"])
+    app.include_router(test_lab_router, prefix="/api/test-lab", tags=["test-lab"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')

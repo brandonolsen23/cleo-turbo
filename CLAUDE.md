@@ -74,7 +74,7 @@ sell_opportunities, buy_mandates, activities, property_enrichment,
 brand_overrides, user_brand_favorites, group_overrides, group_field_overrides,
 contact_field_overrides, contact_work_history, group_merges,
 labeling_sessions, labeling_verdicts, labeling_links, labeling_seeds,
-labeling_reviewed_index, user_stars
+labeling_reviewed_index, user_stars, issues
 
 **System tables:**
 users, audit_log, app_meta, data_issues, asset_classes, tenant_categories, ai_usage
@@ -343,6 +343,9 @@ Things that are true about the data sources and domain. Read these before diagno
 
 - **Not every RT transaction has an ARN.** Many records legitimately have no Assessment Roll Number. This is normal — do not flag it as a data issue or try to "fix" it.
 - **Not every RT transaction has a PIN.** Same as ARN — PINs are often absent. Normal.
+- **RT building size (`bldg`) is a free-text string with mixed units.** About 24% of records have a non-empty value. Units include `sf` (square feet), `units` (multifamily), `rooms` (hotels), `beds` (care), `bdrms`, `suites`, and a long tail. Fill rate varies by property type: office 59%, multifamily 55%, industrial 52%, hotel 47%, retail 42% — land categories near 0% (expected). Stored as three columns on `transactions` and denormalised onto `properties` (latest non-null wins): `building_size_raw` (verbatim source), `building_size_value` (parsed number), `building_size_unit` (normalised). You cannot sum across units — `"22 units"` and `"22,000 sf"` are incomparable; aggregate per-unit. Parser: `engines/rt/building_size.py`.
+- **Building size filters are sf-only.** Properties, Map, Contacts browse endpoints accept `building_size_min` / `building_size_max` (sf, applies `building_size_unit='sf'` implicitly). Groups browse accepts `min_portfolio_sf` / `max_portfolio_sf` which filters by SUM of building_size_value across owned properties. Non-sf properties are excluded when these filters are active — by design.
+- **Portfolio Size aggregation.** Group and contact detail endpoints return a `portfolio_sf` object: `{total_sf, properties_with_sf, total_properties}`. Group definition: `WHERE current_owner_group_id = ?`. Contact definition: properties where the contact is on the buyer side of the property's `most_recent_source_id` transaction (direct buyer). Both are sf-only lower bounds — only ~24% of properties have RT-reported building size, so the count `properties_with_sf < total_properties` is normal. The UI shows the totals as "X.XM sf · Reported on N of M". Computed on the fly; if it ever becomes a bottleneck, denormalise onto `groups.total_building_size_sf` in the compiler.
 - **RT records can be incomplete at scrape time.** Newly posted transactions sometimes have partial data ($0 price, empty parties) that gets filled in hours or days later. The audit scraper (90-day lookback) is designed to catch these.
 - **RT export data and detail page data overlap but aren't identical.** The export has fields the detail page doesn't (like postal code), and the detail page has fields the export doesn't (like mortgage/charge details). The assembler merges both.
 - **"Named Individual(s)" is a real seller/buyer name.** RT uses this when the actual person's name is suppressed. It's not a parsing error.

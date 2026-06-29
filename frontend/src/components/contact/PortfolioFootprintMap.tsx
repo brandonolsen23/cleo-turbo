@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Text } from "@radix-ui/themes";
 import { fetchApi } from "../../api/client";
 import PropertyMiniMap from "../ui/PropertyMiniMap";
+import { titleCase } from "../../lib/utils";
 import type { PortfolioFootprintResponse, MiniMapProperty } from "../../types";
 
 interface Props {
@@ -33,7 +34,7 @@ export default function PortfolioFootprintMap({ stem, displayName, height = 380 
   return (
     <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
       <Text size="3" weight="medium" className="mb-3 block">
-        {displayName} Portfolio ({data.n_transactions} transactions)
+        {titleCase(displayName)} Portfolio ({data.n_transactions} transactions)
       </Text>
       <PropertyMiniMap properties={props} height={height} />
     </div>

@@ -1,673 +1,605 @@
-import { useState, useEffect, useMemo } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { Heading, Text, Button, Badge, Callout } from "@radix-ui/themes";
-import { GitMerge, UserPlus, X as XIcon, CaretDown, CaretRight, MapPin, CheckCircle, WarningCircle } from "@phosphor-icons/react";
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, ReferenceLine, ResponsiveContainer, Tooltip as RechartsTooltip } from "recharts";
-import { fetchApi, mutateApi } from "../api/client";
-import { useCrm } from "../components/crm/CrmContext";
-import { formatCurrency, formatCompact, formatDate, formatPhone, computeOwnershipYears, formatOwnership } from "../lib/utils";
-import { propertyTypeColor, propertyTypeLabel, categoryColor, getRadixHex } from "../lib/theme";
-import PropertyMiniMap from "../components/ui/PropertyMiniMap";
-import SourceHtmlButton from "../components/source/SourceHtmlButton";
-import MergeGroupsModal from "../components/ui/MergeGroupsModal";
-import LinkContactModal from "../components/ui/LinkContactModal";
-import CreateBuyMandateDrawer from "../components/crm/CreateBuyMandateDrawer";
-import QuickActionBar from "../components/crm/QuickActionBar";
+import { Heading, Text, Button, Badge, Tabs, Callout } from "@radix-ui/themes";
+import { MapPin, Buildings, ArrowSquareOut } from "@phosphor-icons/react";
+import { fetchApi, postApi } from "../api/client";
+import {
+  formatCompact,
+  formatDate,
+  formatPhone,
+  titleCase,
+} from "../lib/utils";
+import { propertyTypeLabel, propertyTypeColor } from "../lib/theme";
+import HqPicker from "../components/group/HqPicker";
+import { Reportable, useIssueReporter } from "../components/issues/IssueReporter";
+import { Info } from "@phosphor-icons/react";
 import AttributionStrip from "../components/crm/AttributionStrip";
 import ActivityFeed from "../components/crm/ActivityFeed";
-import SuggestedLinksCard from "../components/ui/SuggestedLinksCard";
-import type { GroupDetail, MiniMapProperty, MergeHistoryResponse, GroupContactLink, GroupContactsResponse } from "../types";
+import QuickActionBar from "../components/crm/QuickActionBar";
+import type { GroupDetail, GroupPropertyRow, BrowseResponse } from "../types";
 
-function StatCard({ label, value, sub }: { label: string; value: string | number; sub?: string }) {
-  return (
+const TIER_COLOR: Record<string, "jade" | "gray" | "amber" | "blue"> = {
+  confirmed: "jade",
+  probable: "blue",
+  candidate: "amber",
+  standalone: "gray",
+};
+
+function tierLabel(t: string): string {
+  return t.charAt(0).toUpperCase() + t.slice(1);
+}
+
+function StatCard({ label, value, sub, statKey }: { label: string; value: string | number | null; sub?: string; statKey?: string }) {
+  const card = (
     <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
       <Text size="1" style={{ color: "var(--gray-9)" }}>{label}</Text>
-      <Text size="5" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
-        {value}
+      <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
+        {value ?? "—"}
       </Text>
-      {sub && <Text size="1" style={{ color: "var(--gray-9)" }}>{sub}</Text>}
-    </div>
-  );
-}
-
-// ── Buy/Sell timeline bar chart (individual transactions) ─────
-
-interface TxnBar {
-  idx: number;
-  date: string;
-  label: string;       // formatted date for tooltip
-  address: string;
-  buy: number;         // positive value (0 if sell)
-  sell: number;        // negative value (0 if buy)
-  side: string;
-  price: number;       // original positive price
-}
-
-function buildTxnBars(transactions: { sale_date: string | null; sale_price: number | null; side: string; display_address?: string }[]): TxnBar[] {
-  return transactions
-    .filter((t) => t.sale_date)
-    .sort((a, b) => (a.sale_date! > b.sale_date! ? 1 : -1))
-    .map((t, i) => {
-      const price = t.sale_price ?? 0;
-      const d = new Date(t.sale_date + "T00:00:00");
-      const label = d.toLocaleDateString("en-CA", { month: "short", year: "numeric" });
-      return {
-        idx: i,
-        date: t.sale_date!,
-        label,
-        address: t.display_address ?? "",
-        buy: t.side === "buyer" ? price : 0,
-        sell: t.side === "buyer" ? 0 : -price,
-        side: t.side,
-        price,
-      };
-    });
-}
-
-// Tremor-inspired palette — soft, muted tones
-const BUY_COLOR = "#2eb88a";   // soft green (between jade-9 and emerald)
-const SELL_COLOR = "#f97066";   // soft coral red
-
-function CustomTooltip({ active, payload }: any) {
-  if (!active || !payload?.[0]) return null;
-  const d = payload[0].payload as TxnBar;
-  return (
-    <div className="rounded-lg border border-[var(--gray-5)] bg-white px-3 py-2 shadow-lg" style={{ minWidth: 180 }}>
-      <p className="text-[11px] font-medium mb-1" style={{ color: "var(--gray-9)" }}>{d.label}</p>
-      <p className="text-[13px] font-semibold" style={{ color: d.side === "buyer" ? BUY_COLOR : SELL_COLOR }}>
-        {d.side === "buyer" ? "Acquisition" : "Disposition"} &middot; {formatCurrency(d.price)}
-      </p>
-      {d.address && (
-        <p className="text-[11px] mt-0.5 truncate" style={{ color: "var(--gray-10)", maxWidth: 220 }}>{d.address}</p>
+      {sub && (
+        <Text size="1" style={{ color: "var(--gray-9)" }}>{sub}</Text>
       )}
     </div>
   );
-}
-
-function TransactionTimelineChart({ transactions }: { transactions: { sale_date: string | null; sale_price: number | null; side: string; display_address?: string }[] }) {
-  const data = useMemo(() => buildTxnBars(transactions), [transactions]);
-
-  if (data.length === 0) return null;
-
-  // Compute year labels for the X axis — show the year at first transaction of each year
-  const yearTicks = useMemo(() => {
-    const seen = new Set<number>();
-    return data.reduce<number[]>((acc, d) => {
-      const y = new Date(d.date + "T00:00:00").getFullYear();
-      if (!seen.has(y)) { seen.add(y); acc.push(d.idx); }
-      return acc;
-    }, []);
-  }, [data]);
-
-  const totalBuys = data.filter((d) => d.side === "buyer").length;
-  const totalSells = data.length - totalBuys;
-
+  if (!statKey) return card;
   return (
-    <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-      <div className="flex items-center justify-between mb-4">
-        <Text size="2" weight="medium">Transaction Activity</Text>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: BUY_COLOR }} />
-            <span className="text-[11px] font-medium" style={{ color: "var(--gray-9)" }}>Buys ({totalBuys})</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: SELL_COLOR }} />
-            <span className="text-[11px] font-medium" style={{ color: "var(--gray-9)" }}>Sells ({totalSells})</span>
-          </div>
-        </div>
-      </div>
-      <ResponsiveContainer width="100%" height={240}>
-        <BarChart data={data} margin={{ top: 8, right: 4, bottom: 0, left: 0 }} barCategoryGap={1}>
-          <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="var(--gray-4)" />
-          <XAxis
-            dataKey="idx"
-            tickLine={false}
-            axisLine={false}
-            tick={{ fontSize: 11, fill: "var(--gray-8)" }}
-            ticks={yearTicks}
-            tickFormatter={(idx: number) => {
-              const d = data[idx];
-              return d ? String(new Date(d.date + "T00:00:00").getFullYear()) : "";
-            }}
-          />
-          <YAxis
-            tickLine={false}
-            axisLine={false}
-            tick={{ fontSize: 11, fill: "var(--gray-8)" }}
-            tickFormatter={(v: number) => {
-              if (v === 0) return "$0";
-              return formatCompact(Math.abs(v));
-            }}
-            width={56}
-          />
-          <ReferenceLine y={0} stroke="var(--gray-6)" strokeWidth={1} />
-          <RechartsTooltip
-            content={<CustomTooltip />}
-            cursor={{ fill: "var(--gray-a3)" }}
-          />
-          <Bar dataKey="buy" fill={BUY_COLOR} radius={[2, 2, 0, 0]} />
-          <Bar dataKey="sell" fill={SELL_COLOR} radius={[0, 0, 2, 2]} />
-        </BarChart>
-      </ResponsiveContainer>
-    </div>
+    <Reportable component={`stats.${statKey}`} data={{ value, sub }}>
+      {card}
+    </Reportable>
   );
 }
 
-// ── Main page component ───────────────────────────────────────
+// ── Contacts tab with engage/unengage toggle ─────────────────────────
 
-export default function GroupDetailPage() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const { openDrawer } = useCrm();
-  const [group, setGroup] = useState<GroupDetail | null>(null);
-  const [mergeHistory, setMergeHistory] = useState<MergeHistoryResponse | null>(null);
-  const [showMergeModal, setShowMergeModal] = useState(false);
-  const [showLinkContact, setShowLinkContact] = useState(false);
-  const [groupContacts, setGroupContacts] = useState<GroupContactLink[]>([]);
-  const [knownNamesOpen, setKnownNamesOpen] = useState(false);
-  const [propsExpanded, setPropsExpanded] = useState(false);
-  const [txnsExpanded, setTxnsExpanded] = useState(false);
-  const [showBuyMandateDialog, setShowBuyMandateDialog] = useState(false);
-  const [promoteStatus, setPromoteStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
+interface GroupContactRow {
+  id: string;
+  display_name: string;
+  phone: string | null;
+  email: string | null;
+  job_title: string | null;
+  status: string;
+  transaction_count: number;
+  contact_type: string | null;
+  first_seen_date: string | null;
+  last_seen_date: string | null;
+  link_type: "derived" | "manual" | "both";
+}
 
-  const load = () => {
-    if (id) {
-      fetchApi<GroupDetail>(`/groups/${id}`).then(setGroup);
-      fetchApi<MergeHistoryResponse>(`/group-merges/history/${id}`).then(setMergeHistory);
-      fetchApi<GroupContactsResponse>(`/groups/${id}/contacts`).then((r) => setGroupContacts(r.contacts));
-    }
-  };
+function ContactsTab({ groupId, onEngagementChange }: {
+  groupId: string;
+  onEngagementChange: () => void;
+}) {
+  const [contacts, setContacts] = useState<GroupContactRow[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [busyId, setBusyId] = useState<string | null>(null);
 
-  useEffect(load, [id]);
+  const reload = useCallback(() => {
+    setLoading(true);
+    fetchApi<{ contacts: GroupContactRow[] }>(`/groups/${groupId}/contacts`)
+      .then((r) => setContacts(r.contacts))
+      .finally(() => setLoading(false));
+  }, [groupId]);
 
-  // useMemo MUST be called before any early return (Rules of Hooks)
-  const mappable: MiniMapProperty[] = useMemo(() => {
-    if (!group?.properties) return [];
-    return group.properties
-      .filter((p): p is typeof p & { lat: number; lng: number } => p.lat != null && p.lng != null)
-      .map((p) => ({
-        id: p.id,
-        display_address: p.display_address,
-        city: p.city,
-        lat: p.lat,
-        lng: p.lng,
-        asset_class: p.asset_class ?? null,
-        most_recent_sale_price: p.most_recent_sale_price,
-      }));
-  }, [group?.properties]);
+  useEffect(() => { reload(); }, [reload]);
 
-  if (!group) return <Text>Loading...</Text>;
-
-  const a = group.analytics;
-
-  const handlePromote = async () => {
-    setPromoteStatus(null);
+  const toggleEngagement = async (contactId: string, current: string) => {
+    setBusyId(contactId);
     try {
-      await mutateApi(`/groups/${id}/promote`, "POST");
-      setPromoteStatus({ type: "success", message: "Group promoted to Engaged." });
-      load();
-    } catch {
-      setPromoteStatus({ type: "error", message: "Failed to promote group. Please try again." });
+      const path = current === "engaged"
+        ? `/contacts/${contactId}/unengage`
+        : `/contacts/${contactId}/engage`;
+      await postApi(path, {});
+      reload();
+      onEngagementChange();
+    } finally {
+      setBusyId(null);
     }
   };
 
-  // Property type mix chart data — use the canonical color palette from theme.ts
-  const typeData = a?.property_type_mix
-    ? Object.entries(a.property_type_mix).map(([name, value]) => ({
-        name,
-        value,
-        label: propertyTypeLabel(name),
-        color: getRadixHex(propertyTypeColor(name), 9),
-      }))
-    : [];
-
-  const hqData = a?.hq_lat != null && a?.hq_lng != null
-    ? { lat: a.hq_lat, lng: a.hq_lng, label: "HQ" }
-    : null;
+  if (loading) return <Text size="2" style={{ color: "var(--gray-9)" }}>Loading…</Text>;
+  if (contacts.length === 0) {
+    return <Text size="2" style={{ color: "var(--gray-9)" }}>No contacts.</Text>;
+  }
 
   return (
-    <div className="flex flex-col gap-6">
-      {/* Header */}
-      <div>
-        <Link to="/groups" className="text-[14px] no-underline" style={{ color: "var(--accent-11)" }}>
-          &larr; Groups
-        </Link>
-        <div className="flex items-center gap-3 mt-2">
-          <Heading size="5" weight="medium">{group.display_name}</Heading>
-          <span className={`inline-block px-2 py-0.5 rounded text-[12px] ${group.status === 'engaged' ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
-            {group.status}
-          </span>
-          {group.status !== "engaged" && (
-            <Button size="1" variant="soft" onClick={handlePromote}>Promote to Engaged</Button>
-          )}
-          <Button size="1" variant="outline" onClick={() => openDrawer({ type: "group", id: group.id, name: group.display_name })}>
-            Notes
-          </Button>
-          <Button size="1" variant="outline" onClick={() => setShowMergeModal(true)}>
-            <GitMerge size={14} />
-            Merge
-          </Button>
-          <QuickActionBar
-            entityType="group"
-            entityId={group.id}
-            entityName={group.display_name}
-            onCreateBuyMandate={() => setShowBuyMandateDialog(true)}
-          />
+    <Reportable component="contacts_tab.table" data={{ count: contacts.length }}>
+    <table className="w-full text-[14px]">
+      <thead>
+        <tr style={{ background: "var(--gray-2)" }}>
+          <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Name</th>
+          <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Title</th>
+          <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Phone</th>
+          <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Txns</th>
+          <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Status</th>
+          <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}></th>
+        </tr>
+      </thead>
+      <tbody>
+        {contacts.map((c) => (
+          <tr key={c.id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)]">
+            <td className="px-3 py-2">
+              <Link to={`/contacts/${c.id}`} className="no-underline" style={{ color: "var(--accent-11)" }}>
+                {c.display_name}
+              </Link>
+            </td>
+            <td className="px-3 py-2" style={{ color: "var(--gray-11)" }}>{c.job_title || "—"}</td>
+            <td className="px-3 py-2" style={{ color: "var(--gray-11)" }}>{c.phone ? formatPhone(c.phone) : "—"}</td>
+            <td className="px-3 py-2 text-right">{c.transaction_count}</td>
+            <td className="px-3 py-2">
+              <Badge size="1" color={c.status === "engaged" ? "jade" : "gray"} variant={c.status === "engaged" ? "solid" : "soft"}>
+                {c.status}
+              </Badge>
+            </td>
+            <td className="px-3 py-2 text-right">
+              <Button
+                size="1"
+                variant="soft"
+                color={c.status === "engaged" ? "gray" : "jade"}
+                disabled={busyId === c.id}
+                onClick={() => toggleEngagement(c.id, c.status)}
+              >
+                {c.status === "engaged" ? "Unengage" : "Engage"}
+              </Button>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    </Reportable>
+  );
+}
+
+// ── Properties tab (unified — resolved + unresolved, with Owned/Sold filter) ──
+
+type PropFilter = "all" | "owned" | "sold";
+
+/** Hover-revealed `i` button rendered inside a table cell. Uses the
+ *  IssueReporter context directly so it can be embedded inline in a row
+ *  without invalidating the table's `<tr>/<td>` structure. */
+function RowReportButton({ component, data, label }: {
+  component: string; data: Record<string, unknown>; label?: string;
+}) {
+  const { open } = useIssueReporter();
+  return (
+    <button
+      type="button"
+      onClick={(e) => { e.stopPropagation(); open({ component, component_data: data, contextLabel: label }); }}
+      className="opacity-0 group-hover/row:opacity-100 transition-opacity rounded p-1 hover:bg-[var(--gray-3)]"
+      title="Report issue with this row"
+      style={{ color: "var(--gray-9)" }}
+    >
+      <Info size={13} weight="bold" />
+    </button>
+  );
+}
+
+
+function PropertiesTab({ groupId }: { groupId: string }) {
+  const [data, setData] = useState<BrowseResponse<GroupPropertyRow> | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [filter, setFilter] = useState<PropFilter>("all");
+
+  useEffect(() => {
+    setLoading(true);
+    fetchApi<BrowseResponse<GroupPropertyRow>>(`/groups/${groupId}/properties`, {
+      page: String(page),
+      per_page: "50",
+      filter,
+    })
+      .then(setData)
+      .finally(() => setLoading(false));
+  }, [groupId, page, filter]);
+
+  const setFilterAndReset = (f: PropFilter) => {
+    setFilter(f);
+    setPage(1);
+  };
+
+  if (loading && !data) return <Text size="2" style={{ color: "var(--gray-9)" }}>Loading…</Text>;
+
+  return (
+    <div className="flex flex-col gap-3" style={{ opacity: loading ? 0.6 : 1 }}>
+      {/* Filter chip + result count */}
+      <div className="flex items-center justify-between">
+        <div className="inline-flex rounded-md border border-[var(--gray-6)] overflow-hidden">
+          {(["all", "owned", "sold"] as PropFilter[]).map((f) => (
+            <button
+              key={f}
+              onClick={() => setFilterAndReset(f)}
+              className={`px-3 py-1 text-[13px] transition-colors ${
+                filter === f
+                  ? "bg-[var(--accent-3)] text-[var(--accent-11)] font-medium"
+                  : "bg-white hover:bg-[var(--gray-2)]"
+              }`}
+              style={{ color: filter === f ? "var(--accent-11)" : "var(--gray-11)" }}
+            >
+              {f === "all" ? "All" : f === "owned" ? "Owned" : "Sold"}
+            </button>
+          ))}
         </div>
-        <div className="mt-2">
-          <AttributionStrip entityType="group" entityId={group.id} />
-        </div>
-        {(group.corporate_address || group.hq_address) && (
-          <div className="flex items-center gap-1.5 mt-1.5">
-            <MapPin size={14} style={{ color: "var(--gray-9)", flexShrink: 0 }} />
-            <Text size="2" style={{ color: "var(--gray-9)" }}>
-              {group.corporate_address || group.hq_address}
-            </Text>
-          </div>
-        )}
+        <Text size="1" style={{ color: "var(--gray-9)" }}>
+          {(data?.total || 0).toLocaleString()} properties
+        </Text>
       </div>
 
-      {promoteStatus && (
-        <Callout.Root
-          color={promoteStatus.type === "success" ? "jade" : "red"}
-          size="1"
-          variant="soft"
-        >
-          <Callout.Icon>
-            {promoteStatus.type === "success" ? <CheckCircle size={16} /> : <WarningCircle size={16} />}
-          </Callout.Icon>
-          <Callout.Text>{promoteStatus.message}</Callout.Text>
-        </Callout.Root>
-      )}
-
-      {/* Top row: Chart (left) + Stat cards stacked (right) */}
-      {a ? (
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-4">
-            <StatCard
-              label="Portfolio"
-              value={`${a.property_count} Properties`}
-              sub={(() => {
-                const totalPurchaseValue = group.properties.reduce((sum, p) => sum + (p.most_recent_sale_price ?? 0), 0);
-                if (totalPurchaseValue > 0) return `${formatCompact(totalPurchaseValue)} portfolio value`;
-                return `${a.region_count} region${a.region_count !== 1 ? 's' : ''}`;
-              })()}
-            />
-            <StatCard
-              label="Trading Activity"
-              value={`${a.total_buys} buys / ${a.total_sells} sells`}
-              sub={a.net_acquisitions > 0 ? `Net +${a.net_acquisitions} (accumulating)` : a.net_acquisitions < 0 ? `Net ${a.net_acquisitions} (divesting)` : "Net 0 (balanced)"}
-            />
-          </div>
-          {group.transactions.length > 0 ? (
-            <TransactionTimelineChart transactions={group.transactions} />
-          ) : (
-            <div />
-          )}
-        </div>
+      {!data || data.results.length === 0 ? (
+        <Text size="2" style={{ color: "var(--gray-9)" }}>
+          {filter === "owned"
+            ? "No properties currently owned."
+            : filter === "sold"
+              ? "No properties sold."
+              : "No properties."}
+        </Text>
       ) : (
-        <div className="grid grid-cols-3 gap-4">
-          <StatCard label="Properties" value={group.property_count} />
-          <StatCard label="Transactions" value={group.transaction_count} />
-          <StatCard label="Contacts" value={group.contact_count} />
-        </div>
-      )}
-
-      {/* Property Types (left) + Portfolio Map (right) — side by side */}
-      {(typeData.length > 0 || mappable.length > 0) && (
-        <div className="grid grid-cols-2 gap-4">
-          {/* Property Types */}
-          {typeData.length > 0 ? (
-            <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-              <Text size="2" weight="medium" className="mb-2 block">Property Types</Text>
-              <div className="flex items-center gap-4">
-                <div style={{ width: 140, height: 140 }}>
-                  <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
-                      <Pie data={typeData} dataKey="value" nameKey="label" cx="50%" cy="50%"
-                           innerRadius={35} outerRadius={65} paddingAngle={2}>
-                        {typeData.map((entry) => (
-                          <Cell key={entry.name} fill={entry.color} />
-                        ))}
-                      </Pie>
-                      <RechartsTooltip formatter={(value: number) => [value, "properties"]} />
-                    </PieChart>
-                  </ResponsiveContainer>
-                </div>
-                <div className="flex flex-col gap-1">
-                  {typeData.map((d) => (
-                    <div key={d.name} className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: d.color }} />
-                      <Text size="1" style={{ color: "var(--gray-11)" }}>
-                        {d.label} ({d.value})
-                      </Text>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div />
-          )}
-
-          {/* Portfolio Map */}
-          {mappable.length > 0 ? (
-            <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-              <Text size="2" weight="medium" className="mb-3 block">
-                Portfolio Map ({mappable.length} properties)
-              </Text>
-              <PropertyMiniMap
-                properties={mappable}
-                hq={hqData}
-                height={260}
-                onPropertyClick={(pid) => navigate(`/properties/${pid}`)}
-              />
-            </div>
-          ) : (
-            <div />
-          )}
-        </div>
-      )}
-
-      {/* Known Names — collapsible */}
-      {group.known_names.length > 1 && (
-        <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)]">
-          <button
-            className="w-full flex items-center gap-2 px-5 py-3 text-left"
-            onClick={() => setKnownNamesOpen(!knownNamesOpen)}
-          >
-            {knownNamesOpen
-              ? <CaretDown size={14} style={{ color: "var(--gray-9)" }} />
-              : <CaretRight size={14} style={{ color: "var(--gray-9)" }} />}
-            <Text size="2" weight="medium">Known Names ({group.known_names.length})</Text>
-          </button>
-          {knownNamesOpen && (
-            <div className="px-5 pb-4 flex flex-wrap gap-2">
-              {group.known_names.map((n) => (
-                <Badge key={n.normalized} size="1" variant="soft">{n.name}</Badge>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Suggested Links (address/contact/phone based) */}
-      {id && <SuggestedLinksCard groupId={id} onMerged={load} />}
-
-      {/* Activity Log */}
-      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-        <Text size="3" weight="medium" className="mb-3 block">Activity log</Text>
-        <ActivityFeed entityType="group" entityId={group.id} />
-      </div>
-
-      {/* Contacts */}
-      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-        <div className="flex items-center justify-between mb-3">
-          <Text size="3" weight="medium">Contacts ({groupContacts.length || group.contacts.length})</Text>
-          <Button size="1" variant="soft" onClick={() => setShowLinkContact(true)}>
-            <UserPlus size={14} />
-            Link Contact
-          </Button>
-        </div>
-        {(groupContacts.length > 0 ? groupContacts : group.contacts).length === 0 ? (
-          <Text size="2" style={{ color: "var(--gray-9)" }}>No contacts</Text>
-        ) : (
-          <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+        <>
+          <Reportable component="properties_tab.table" data={{ filter, total: data.total }}>
+          <table className="w-full text-[14px]">
             <thead>
-              <tr className="border-b border-[var(--gray-4)]">
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Name</th>
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Phone</th>
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Role</th>
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Status</th>
-                <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Link</th>
-                <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Txns</th>
-                <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}></th>
+              <tr style={{ background: "var(--gray-2)" }}>
+                <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Address</th>
+                <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>City</th>
+                <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Type</th>
+                <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Side</th>
+                <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Last Date</th>
+                <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Last Price</th>
+                <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Txns</th>
+                <th style={{ width: 24 }}></th>
               </tr>
             </thead>
             <tbody>
-              {(groupContacts.length > 0 ? groupContacts : group.contacts.map((c) => ({
-                ...c, email: null, contact_type: null, link_type: "derived" as const, is_current: true, role: null, link_notes: null,
-              }))).map((c) => (
-                <tr key={c.id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
-                    onClick={() => navigate(`/contacts/${c.id}`)}>
-                  <td className="py-2 font-medium">
-                    {c.display_name}
-                    {!c.is_current && (
-                      <Badge size="1" variant="soft" color="gray" className="ml-2">Former</Badge>
-                    )}
-                  </td>
-                  <td className="py-2">
-                    {c.phone ? (
-                      <a href={`tel:${c.phone}`} className="no-underline" style={{ color: "var(--accent-11)" }}
-                         onClick={(e) => e.stopPropagation()}>
-                        {formatPhone(c.phone)}
-                      </a>
-                    ) : "—"}
-                  </td>
-                  <td className="py-2" style={{ color: "var(--gray-11)" }}>{c.role || c.job_title || "—"}</td>
-                  <td className="py-2">
-                    <span className={`inline-block px-2 py-0.5 rounded text-[12px] ${c.status === 'engaged' ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-600'}`}>
-                      {c.status}
-                    </span>
-                  </td>
-                  <td className="py-2">
-                    <Badge size="1" variant="outline" color={c.link_type === "manual" ? "violet" : c.link_type === "both" ? "blue" : "gray"}>
-                      {c.link_type === "derived" ? "auto" : c.link_type === "manual" ? "manual" : "auto+manual"}
-                    </Badge>
-                  </td>
-                  <td className="py-2 text-right">{c.transaction_count}</td>
-                  <td className="py-2 text-right">
-                    {(c.link_type === "manual" || c.link_type === "both") && (
-                      <button
-                        className="p-1 rounded hover:bg-red-50 text-[var(--gray-8)] hover:text-red-600 transition-colors"
-                        title="Unlink contact"
-                        onClick={async (e) => {
-                          e.stopPropagation();
-                          await mutateApi(`/groups/${id}/contacts/${c.id}`, "DELETE");
-                          load();
-                        }}
-                      >
-                        <XIcon size={14} />
-                      </button>
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-      </div>
-
-      {/* Properties */}
-      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5 overflow-x-auto">
-        <Text size="3" weight="medium" className="mb-3 block">Properties ({group.properties.length})</Text>
-        {group.properties.length === 0 ? (
-          <Text size="2" style={{ color: "var(--gray-9)" }}>No properties</Text>
-        ) : (
-          <>
-            <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
-              <thead>
-                <tr className="border-b border-[var(--gray-4)]">
-                  <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Address</th>
-                  <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>City</th>
-                  <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Last Sale</th>
-                  <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
-                  <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Ownership</th>
-                </tr>
-              </thead>
-              <tbody>
-                {(propsExpanded ? group.properties : group.properties.slice(0, 5)).map((p) => (
-                  <tr key={p.id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
-                      onClick={() => navigate(`/properties/${p.id}`)}>
-                    <td className="py-2 !whitespace-normal">
-                      <div className="whitespace-nowrap">{p.display_address}</div>
-                      {p.brands && p.brands.length > 0 && (
-                        <div className="flex flex-wrap gap-1 mt-1">
-                          {p.brands.map((b, j) => (
-                            <Badge key={j} size="1" variant="soft" color={categoryColor(b.category)}>
-                              {b.brand}
-                            </Badge>
-                          ))}
-                        </div>
+              {data.results.map((p) => {
+                const key = p.property_id || p.canonical_address || p.display_address || "";
+                const addrText = titleCase(p.display_address || "") || p.display_address || "—";
+                return (
+                  <tr key={key} className="group/row border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)]">
+                    <td className="px-3 py-2">
+                      {p.resolved && p.property_id ? (
+                        <Link to={`/properties/${p.property_id}`} className="no-underline" style={{ color: "var(--accent-11)" }}>
+                          {addrText}
+                        </Link>
+                      ) : (
+                        <span style={{ color: "var(--gray-12)" }}>{addrText}</span>
                       )}
                     </td>
-                    <td className="py-2">{p.city}</td>
-                    <td className="py-2 text-right">{formatDate(p.most_recent_sale_date)}</td>
-                    <td className="py-2 text-right">{formatCurrency(p.most_recent_sale_price)}</td>
-                    <td className="py-2 text-right">{formatOwnership(computeOwnershipYears(p.most_recent_sale_date))}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            {group.properties.length > 5 && (
-              <button
-                onClick={() => setPropsExpanded(!propsExpanded)}
-                className="mt-2 flex items-center gap-1 text-[13px] font-medium hover:underline"
-                style={{ color: "var(--accent-11)" }}
-              >
-                <CaretDown size={12} style={{ transform: propsExpanded ? "rotate(180deg)" : undefined, transition: "transform 0.15s" }} />
-                {propsExpanded ? "Show less" : `See all ${group.properties.length} properties`}
-              </button>
-            )}
-          </>
-        )}
-      </div>
-
-      {/* Transaction History */}
-      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-        <Text size="3" weight="medium" className="mb-3 block">Transaction History ({group.transactions.length})</Text>
-        {group.transactions.length === 0 ? (
-          <Text size="2" style={{ color: "var(--gray-9)" }}>No transactions</Text>
-        ) : (
-          <>
-            <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
-              <thead>
-                <tr className="border-b border-[var(--gray-4)]">
-                  <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Date</th>
-                  <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Address</th>
-                  <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>City</th>
-                  <th className="text-left py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Side</th>
-                  <th className="text-right py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Price</th>
-                  <th className="w-8 py-2" />
-                </tr>
-              </thead>
-              <tbody>
-                {(txnsExpanded ? group.transactions : group.transactions.slice(0, 5)).map((t, i) => (
-                  <tr key={`${t.source_id}-${i}`} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
-                      onClick={() => navigate(`/transactions/${t.source_id}`)}>
-                    <td className="py-2">{formatDate(t.sale_date)}</td>
-                    <td className="py-2 !whitespace-normal">
-                      <div className="whitespace-nowrap">{t.display_address}</div>
-                      {t.brands && t.brands.length > 0 && (
-                        <div className="flex flex-wrap gap-1 mt-1">
-                          {t.brands.map((b, j) => (
-                            <Badge key={j} size="1" variant="soft" color={categoryColor(b.category)}>
-                              {b.brand}
-                            </Badge>
-                          ))}
-                        </div>
-                      )}
+                    <td className="px-3 py-2" style={{ color: "var(--gray-11)" }}>{p.city || "—"}</td>
+                    <td className="px-3 py-2">
+                      {p.asset_class ? (
+                        <Badge size="1" color={propertyTypeColor(p.asset_class)} variant="soft">
+                          {propertyTypeLabel(p.asset_class)}
+                        </Badge>
+                      ) : <Text size="1" style={{ color: "var(--gray-8)" }}>—</Text>}
                     </td>
-                    <td className="py-2">{t.city}</td>
-                    <td className="py-2">
-                      <Badge size="1" variant="soft" color={t.side === "buyer" ? "blue" : "orange"}>
-                        {t.side}
+                    <td className="px-3 py-2">
+                      <Badge size="1" color={p.is_owned ? "jade" : "gray"} variant="soft">
+                        {p.is_owned ? "Owned" : "Sold"}
                       </Badge>
                     </td>
-                    <td className="py-2 text-right">{formatCurrency(t.sale_price)}</td>
-                    <td className="py-2 text-center">
-                      {t.source_id?.startsWith("RT") && <SourceHtmlButton sourceId={t.source_id} />}
+                    <td className="px-3 py-2 text-right" style={{ color: "var(--gray-11)" }}>
+                      {p.last_date ? formatDate(p.last_date) : "—"}
+                    </td>
+                    <td className="px-3 py-2 text-right" style={{ color: "var(--gray-11)" }}>
+                      {p.last_price ? formatCompact(p.last_price) : "—"}
+                    </td>
+                    <td className="px-3 py-2 text-right" style={{ color: "var(--gray-11)" }}>
+                      {p.n_transactions}
+                    </td>
+                    <td className="px-1 py-2 text-right">
+                      <RowReportButton
+                        component="properties_tab.row"
+                        data={{
+                          property_id: p.property_id,
+                          canonical_address: p.canonical_address,
+                          display_address: p.display_address,
+                          city: p.city,
+                          asset_class: p.asset_class,
+                          last_side: p.last_side,
+                          last_date: p.last_date,
+                          last_price: p.last_price,
+                          is_owned: p.is_owned,
+                          resolved: p.resolved,
+                        }}
+                        label={`Property row: ${addrText}`}
+                      />
                     </td>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-            {group.transactions.length > 5 && (
-              <button
-                onClick={() => setTxnsExpanded(!txnsExpanded)}
-                className="mt-2 flex items-center gap-1 text-[13px] font-medium hover:underline"
-                style={{ color: "var(--accent-11)" }}
-              >
-                <CaretDown size={12} style={{ transform: txnsExpanded ? "rotate(180deg)" : undefined, transition: "transform 0.15s" }} />
-                {txnsExpanded ? "Show less" : `See all ${group.transactions.length} transactions`}
-              </button>
-            )}
-          </>
-        )}
+                );
+              })}
+            </tbody>
+          </table>
+          </Reportable>
+          {data.pages > 1 && (
+            <div className="flex items-center justify-between mt-2">
+              <Text size="1" style={{ color: "var(--gray-9)" }}>Page {data.page} of {data.pages}</Text>
+              <div className="flex gap-2">
+                <Button size="1" variant="soft" disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous</Button>
+                <Button size="1" variant="soft" disabled={page >= data.pages} onClick={() => setPage(page + 1)}>Next</Button>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+
+// ── Constituent SPVs tab ─────────────────────────────────────────────
+
+function SpvsTab({ group }: { group: GroupDetail }) {
+  if (group.constituent_legacy_groups.length === 0) {
+    return <Text size="2" style={{ color: "var(--gray-9)" }}>No constituent SPVs.</Text>;
+  }
+
+  return (
+    <div className="flex flex-col gap-2">
+      <Text size="1" style={{ color: "var(--gray-9)" }}>
+        {group.constituent_legacy_groups.length.toLocaleString()} legacy SPVs rolled up into this group.
+      </Text>
+      <Reportable component="spvs_tab.table" data={{ count: group.constituent_legacy_groups.length }}>
+      <table className="w-full text-[14px]">
+        <thead>
+          <tr style={{ background: "var(--gray-2)" }}>
+            <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>SPV</th>
+            <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Properties</th>
+            <th className="text-right px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Transactions</th>
+            <th className="text-left px-3 py-2 text-[12px] font-medium" style={{ color: "var(--gray-9)" }}>Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          {group.constituent_legacy_groups.map((s) => (
+            <tr key={s.id} className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)]">
+              <td className="px-3 py-2">
+                <Text size="2">{titleCase(s.display_name)}</Text>
+                <Text size="1" className="block" style={{ color: "var(--gray-9)" }}>{s.id}</Text>
+              </td>
+              <td className="px-3 py-2 text-right">{s.property_count.toLocaleString()}</td>
+              <td className="px-3 py-2 text-right">{s.transaction_count.toLocaleString()}</td>
+              <td className="px-3 py-2">
+                <Badge size="1" variant="soft" color={s.coverage_pct >= 0.8 ? "jade" : s.coverage_pct >= 0.5 ? "amber" : "gray"}>
+                  {Math.round(s.coverage_pct * 100)}%
+                </Badge>
+                <Text size="1" className="ml-2" style={{ color: "var(--gray-9)" }}>{s.source}</Text>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </Reportable>
+    </div>
+  );
+}
+
+// ── Main page ────────────────────────────────────────────────────────
+
+export default function GroupDetailPage() {
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const [group, setGroup] = useState<GroupDetail | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [refreshTick, setRefreshTick] = useState(0);
+
+  useEffect(() => {
+    if (!id) return;
+    setError(null);
+    fetchApi<GroupDetail>(`/groups/${id}`)
+      .then((g) => {
+        setGroup(g);
+        if (id !== g.id) {
+          navigate(`/groups/${g.id}`, { replace: true });
+        }
+      })
+      .catch((e) => setError(e?.message || "Failed to load group"));
+  }, [id, refreshTick, navigate]);
+
+  if (error) {
+    return (
+      <Callout.Root color="red">
+        <Callout.Text>Group not found.</Callout.Text>
+      </Callout.Root>
+    );
+  }
+  if (!group) {
+    return <Text size="2" style={{ color: "var(--gray-9)" }}>Loading…</Text>;
+  }
+
+  const a = group.analytics;
+  const totalTxns = (a?.total_buys ?? 0) + (a?.total_sells ?? 0);
+
+  const sortedMix = ((): [string, number][] => {
+    const mix = a?.transacted_type_mix || a?.property_type_mix || {};
+    return (Object.entries(mix) as [string, number][])
+      .filter(([k]) => k !== "unknown")
+      .sort((x, y) => y[1] - x[1]);
+  })();
+  const dominant = sortedMix[0]?.[0] ?? null;
+  const secondary = sortedMix[1]?.[0] ?? null;
+
+  return (
+    <div className="flex flex-col gap-6">
+      {/* Back link */}
+      <Link to="/groups" className="text-[14px] no-underline" style={{ color: "var(--accent-11)" }}>
+        ← Groups
+      </Link>
+
+      {/* Header */}
+      <div className="flex flex-col gap-3">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <Heading size="6" weight="medium">{titleCase(group.display_name)}</Heading>
+            <div className="flex items-center gap-2 mt-2 flex-wrap">
+              <Badge size="2" color={TIER_COLOR[group.tier] || "gray"} variant="soft">
+                {tierLabel(group.tier)}
+              </Badge>
+              <Text size="2" style={{ color: "var(--gray-9)" }}>
+                {group.n_members.toLocaleString()} members
+              </Text>
+              <Text size="2" style={{ color: "var(--gray-9)" }}>·</Text>
+              <Text size="2" style={{ color: "var(--gray-9)" }}>
+                {group.constituent_legacy_groups.length.toLocaleString()} SPVs
+              </Text>
+              {dominant && (
+                <>
+                  <Text size="2" style={{ color: "var(--gray-9)" }}>·</Text>
+                  <Badge size="1" color={propertyTypeColor(dominant)} variant="soft">
+                    {propertyTypeLabel(dominant)}
+                  </Badge>
+                  {secondary && (
+                    <Badge size="1" color={propertyTypeColor(secondary)} variant="soft">
+                      {propertyTypeLabel(secondary)}
+                    </Badge>
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+          <QuickActionBar
+            entityType="group"
+            entityId={group.id}
+            entityName={titleCase(group.display_name)}
+          />
+        </div>
+        <AttributionStrip entityType="group" entityId={group.id} />
       </div>
 
-      {/* Merge History */}
-      {mergeHistory && mergeHistory.absorbed.length > 0 && (
-        <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
-          <Text size="3" weight="medium" className="mb-3 block">
-            <GitMerge size={16} className="inline mr-1" style={{ verticalAlign: "text-bottom" }} />
-            Merged Groups ({mergeHistory.absorbed.length})
-          </Text>
-          <div className="flex flex-col gap-2">
-            {mergeHistory.absorbed.map((m) => (
-              <div key={m.id} className="flex items-center justify-between py-1.5 border-b border-[var(--gray-4)] last:border-0">
-                <div>
-                  <Text size="2" weight="medium">{m.source_name}</Text>
-                  <Text size="1" className="block" style={{ color: "var(--gray-9)" }}>
-                    Merged {formatDate(m.merged_at)}{m.merged_by ? ` by ${m.merged_by}` : ""}
+      {/* Stats — unified Property model */}
+      {(() => {
+        const propsTotal = a?.properties_total ?? a?.transacted_property_count ?? 0;
+        const propsOwned = a?.properties_owned ?? a?.property_count ?? 0;
+        const propsResolved = a?.transacted_property_count ?? 0;
+        const propsUnresolved = Math.max(0, propsTotal - propsResolved);
+        return (
+          <div className="grid grid-cols-6 gap-4">
+            <StatCard
+              statKey="properties_count"
+              label="Properties"
+              value={propsTotal.toLocaleString()}
+              sub={
+                propsTotal > 0
+                  ? `${propsResolved.toLocaleString()} parcel-matched · ${propsUnresolved.toLocaleString()} by address`
+                  : undefined
+              }
+            />
+            <StatCard
+              statKey="properties_owned"
+              label="Owned"
+              value={propsTotal > 0 ? `${propsOwned.toLocaleString()} of ${propsTotal.toLocaleString()}` : "—"}
+              sub={`${group.engaged_contact_count} of ${group.total_contact_count} contacts engaged`}
+            />
+            <StatCard
+              statKey="transactions"
+              label="Transactions"
+              value={totalTxns.toLocaleString()}
+              sub={a?.total_buys != null && a?.total_sells != null
+                ? `${a.total_buys.toLocaleString()} buys · ${a.total_sells.toLocaleString()} sells`
+                : undefined}
+            />
+            <StatCard
+              statKey="buy_value"
+              label="Buy Value"
+              value={a?.total_buy_value ? formatCompact(a.total_buy_value) : "—"}
+              sub={a?.n_buys_priced ? `${a.n_buys_priced.toLocaleString()} priced txns` : undefined}
+            />
+            <StatCard
+              statKey="sell_value"
+              label="Sell Value"
+              value={a?.total_sell_value ? formatCompact(a.total_sell_value) : "—"}
+              sub={a?.n_sells_priced ? `${a.n_sells_priced.toLocaleString()} priced txns` : undefined}
+            />
+            <StatCard
+              statKey="last_txn"
+              label="Last Txn"
+              value={a?.last_transaction_date ? formatDate(a.last_transaction_date) : "—"}
+              sub={a?.first_transaction_date ? `Active since ${a.first_transaction_date.slice(0, 4)}` : undefined}
+            />
+          </div>
+        );
+      })()}
+
+      {/* HQ Address card */}
+      <Reportable
+        component="hq_address_card"
+        data={{
+          primary_address: group.primary_address,
+          primary_address_source: group.primary_address_source,
+          website: group.website,
+          primary_phone: group.primary_phone,
+        }}
+      >
+      <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <Text size="1" style={{ color: "var(--gray-9)" }}>HQ Address</Text>
+            <div className="mt-1 flex items-start gap-2">
+              <MapPin size={16} className="mt-1" style={{ color: "var(--gray-9)" }} />
+              <div>
+                <Text size="3" style={{ color: "var(--gray-12)" }}>
+                  {group.primary_address ? titleCase(group.primary_address) : "—"}
+                </Text>
+                {group.primary_address_source && (
+                  <Text size="1" className="block mt-0.5" style={{ color: "var(--gray-9)" }}>
+                    source: {group.primary_address_source}
                   </Text>
-                </div>
-                {!m.unmerged_at && (
-                  <Badge size="1" color="jade" variant="soft">Active</Badge>
                 )}
               </div>
-            ))}
+            </div>
+            {(group.website || group.primary_phone) && (
+              <div className="mt-3 flex gap-4 flex-wrap">
+                {group.website && (
+                  <a
+                    href={group.website}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 text-[14px] no-underline"
+                    style={{ color: "var(--accent-11)" }}
+                  >
+                    {group.website} <ArrowSquareOut size={12} />
+                  </a>
+                )}
+                {group.primary_phone && (
+                  <Text size="2" style={{ color: "var(--gray-11)" }}>
+                    {formatPhone(group.primary_phone)}
+                  </Text>
+                )}
+              </div>
+            )}
           </div>
+          <HqPicker
+            autoGroupId={group.id}
+            currentAddress={group.primary_address}
+            currentSource={group.primary_address_source}
+            onUpdated={() => setRefreshTick((t) => t + 1)}
+          />
         </div>
-      )}
+      </div>
+      </Reportable>
 
-      {/* Link Contact Modal */}
-      {showLinkContact && group && (
-        <LinkContactModal
-          groupId={group.id}
-          groupName={group.display_name}
-          existingContactIds={new Set(groupContacts.map((c) => c.id))}
-          onClose={() => setShowLinkContact(false)}
-          onLinked={() => {
-            setShowLinkContact(false);
-            load();
-          }}
-        />
-      )}
+      {/* Tabs */}
+      <Tabs.Root defaultValue="properties">
+        <Tabs.List>
+          <Tabs.Trigger value="properties">
+            <Buildings size={14} className="mr-1" />
+            Properties ({(a?.properties_total ?? a?.transacted_property_count ?? 0).toLocaleString()})
+          </Tabs.Trigger>
+          <Tabs.Trigger value="contacts">Contacts ({group.total_contact_count})</Tabs.Trigger>
+          <Tabs.Trigger value="spvs">SPVs ({group.constituent_legacy_groups.length})</Tabs.Trigger>
+          <Tabs.Trigger value="activity">Activity</Tabs.Trigger>
+        </Tabs.List>
 
-      {/* Merge Modal */}
-      {showMergeModal && group && (
-        <MergeGroupsModal
-          targetGroup={{
-            id: group.id,
-            display_name: group.display_name,
-            property_count: group.property_count,
-            transaction_count: group.transaction_count,
-            contact_count: group.contact_count,
-          }}
-          onClose={() => setShowMergeModal(false)}
-          onMerged={(survivorId) => {
-            setShowMergeModal(false);
-            if (survivorId === id) {
-              // Absorbed others into this group — just refresh
-              load();
-            } else {
-              // Merged this group into another — navigate to the survivor
-              navigate(`/groups/${survivorId}`);
-            }
-          }}
-        />
-      )}
-
-      {/* Buy Mandate Drawer */}
-      {showBuyMandateDialog && group && (
-        <CreateBuyMandateDrawer
-          groupId={group.id}
-          entityName={group.display_name}
-          onClose={() => setShowBuyMandateDialog(false)}
-        />
-      )}
+        <div className="mt-4">
+          <Tabs.Content value="properties">
+            <PropertiesTab groupId={group.id} />
+          </Tabs.Content>
+          <Tabs.Content value="contacts">
+            <ContactsTab groupId={group.id} onEngagementChange={() => setRefreshTick((t) => t + 1)} />
+          </Tabs.Content>
+          <Tabs.Content value="spvs">
+            <SpvsTab group={group} />
+          </Tabs.Content>
+          <Tabs.Content value="activity">
+            <ActivityFeed entityType="group" entityId={group.id} />
+          </Tabs.Content>
+        </div>
+      </Tabs.Root>
     </div>
   );
 }

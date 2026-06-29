@@ -6,6 +6,23 @@ from __future__ import annotations
 STEM_PROMOTION_DOMINANCE = 0.6
 STEM_PROMOTION_VOLUME    = 5
 
+# Multi-level n-gram distinctiveness for stem picking.
+#
+# When no 1-gram in a brand_phrase is distinctive (every token filtered as
+# english_common, place_name, or industry_stopword), the stem builder walks up
+# to 2-grams and 3-grams looking for a phrase that's specific to a real brand.
+# An n-gram at level N is treated as distinctive iff it appears in fewer than
+# N_GRAM_GENERIC_THRESHOLD[N] distinct brand_phrases corpus-wide.
+#
+# Rationale: "real estate" 2-gram appears in 963 phrases → generic.
+# "sun life" 2-gram appears in 9 → specific (brand identifier).
+# "real estate services" 3-gram appears in 20 → generic.
+# "sun life assurance" 3-gram appears in 4 → specific.
+N_GRAM_GENERIC_THRESHOLD = {
+    2: 10,
+    3: 5,
+}
+
 # ── Stage A2: Anchor uniqueness scoring ────────────────────────────────────
 # score = dominance_share * log(volume + 1).
 # An anchor must clear this score to participate in seeding.

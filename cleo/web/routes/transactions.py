@@ -58,7 +58,8 @@ def browse_transactions(
 
     rows = db.execute(
         f"SELECT source_id, property_id, sale_date, sale_price, display_address, city, region, "
-        f"seller_parties, buyer_parties, transaction_note, source_folder, source_position "
+        f"seller_parties, buyer_parties, transaction_note, source_folder, source_position, "
+        f"building_size_raw, building_size_value, building_size_unit "
         f"FROM transactions WHERE {where} ORDER BY {sort} {order} LIMIT ? OFFSET ?",
         params + [per_page, offset]
     ).fetchall()

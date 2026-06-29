@@ -7,6 +7,9 @@ import type { AttributionResponse, CrmEntityType } from "../../types";
 interface AttributionStripProps {
   entityType: CrmEntityType;
   entityId: string;
+  /** If true, render nothing when there are no activities. Useful when the
+   * parent page already shows a "Never contacted" indicator elsewhere. */
+  hideWhenEmpty?: boolean;
 }
 
 const ENDPOINT_BY_TYPE: Record<CrmEntityType, string> = {
@@ -15,7 +18,7 @@ const ENDPOINT_BY_TYPE: Record<CrmEntityType, string> = {
   group: "/groups",
 };
 
-export default function AttributionStrip({ entityType, entityId }: AttributionStripProps) {
+export default function AttributionStrip({ entityType, entityId, hideWhenEmpty = false }: AttributionStripProps) {
   const [data, setData] = useState<AttributionResponse | null>(null);
 
   useEffect(() => {
@@ -27,6 +30,7 @@ export default function AttributionStrip({ entityType, entityId }: AttributionSt
   if (!data) return null;
 
   if (data.total_activities === 0) {
+    if (hideWhenEmpty) return null;
     return (
       <Text size="2" style={{ color: "var(--gray-9)" }}>
         Never contacted

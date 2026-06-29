@@ -634,6 +634,163 @@ CREATE INDEX IF NOT EXISTS idx_activities_property ON activities(property_id);
 CREATE INDEX IF NOT EXISTS idx_activities_group    ON activities(group_id);
 CREATE INDEX IF NOT EXISTS idx_activities_user     ON activities(created_by_user_id);
 CREATE INDEX IF NOT EXISTS idx_activities_dedupe   ON activities(source, external_id);
+
+-- ============================================================
+-- PORTFOLIO CAPTURE (persistent CRM — survives compiler rebuild)
+-- Milestone 1. Per-row provenance: source + confidence + web_asserted/
+-- registry_confirmed. These tables are NOT in drop_derived_tables(),
+-- so captured ownership survives a full compile.
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS group_profile (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id           TEXT REFERENCES groups(id),
+    canonical_name     TEXT,
+    summary            TEXT,
+    business_lines     TEXT,          -- JSON array: owner|developer|property_manager|brokerage
+    corp_address       TEXT,
+    corp_phone         TEXT,
+    fax                TEXT,
+    domain             TEXT,
+    website            TEXT,
+    emails             TEXT,          -- JSON array
+    socials            TEXT,          -- JSON array
+    partners           TEXT,          -- JSON array
+    source_url         TEXT,
+    source             TEXT DEFAULT 'web_capture',
+    confidence         REAL,
+    web_asserted       INTEGER DEFAULT 1,
+    registry_confirmed INTEGER DEFAULT 0,
+    captured_at        TEXT DEFAULT (datetime('now')),
+    captured_by        TEXT,
+    updated_at         TEXT DEFAULT (datetime('now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_group_profile_group ON group_profile(group_id);
+
+CREATE TABLE IF NOT EXISTS group_aliases (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id        TEXT NOT NULL REFERENCES groups(id),
+    alias           TEXT NOT NULL,
+    normalized      TEXT,
+    source          TEXT DEFAULT 'web_capture',
+    source_url      TEXT,
+    confidence      REAL,
+    captured_at     TEXT DEFAULT (datetime('now')),
+    captured_by     TEXT,
+    UNIQUE(group_id, alias)
+);
+
+CREATE INDEX IF NOT EXISTS idx_group_aliases_group ON group_aliases(group_id);
+CREATE INDEX IF NOT EXISTS idx_group_aliases_norm ON group_aliases(normalized);
+
+CREATE TABLE IF NOT EXISTS group_match_keys (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id        TEXT NOT NULL REFERENCES groups(id),
+    key_type        TEXT NOT NULL,   -- address|phone|domain|alias|person|spv_name
+    value           TEXT NOT NULL,   -- normalized form (drives the M4 sweep)
+    value_raw       TEXT,            -- original as captured
+    source          TEXT DEFAULT 'web_capture',
+    source_url      TEXT,
+    confidence      REAL,
+    captured_at     TEXT DEFAULT (datetime('now')),
+    captured_by     TEXT,
+    UNIQUE(group_id, key_type, value)
+);
+
+CREATE INDEX IF NOT EXISTS idx_group_match_keys_lookup ON group_match_keys(key_type, value);
+CREATE INDEX IF NOT EXISTS idx_group_match_keys_group ON group_match_keys(group_id);
+
+-- Source of truth for owner overrides. The compiler re-applies every
+-- active row as a final pass on each rebuild (see compiler/owner_overrides.py).
+CREATE TABLE IF NOT EXISTS manual_owner_links (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    arn                TEXT NOT NULL,           -- reconciliation key (not address)
+    property_id        TEXT,                    -- resolved cache, reconciled on ARN
+    group_id           TEXT NOT NULL REFERENCES groups(id),
+    relationship       TEXT NOT NULL DEFAULT 'owns',   -- owns|manages|lists
+    status             TEXT NOT NULL DEFAULT 'active',  -- active|conflict|superseded
+    source             TEXT DEFAULT 'web_capture',
+    source_url         TEXT,
+    confidence         REAL,
+    web_asserted       INTEGER DEFAULT 1,
+    registry_confirmed INTEGER DEFAULT 0,
+    conflict_note      TEXT,
+    captured_at        TEXT DEFAULT (datetime('now')),
+    captured_by        TEXT,
+    approved_at        TEXT,
+    approved_by        TEXT,
+    UNIQUE(arn, group_id, relationship)
+);
+
+CREATE INDEX IF NOT EXISTS idx_manual_owner_links_arn ON manual_owner_links(arn);
+CREATE INDEX IF NOT EXISTS idx_manual_owner_links_group ON manual_owner_links(group_id);
+CREATE INDEX IF NOT EXISTS idx_manual_owner_links_status ON manual_owner_links(status);
+
+CREATE TABLE IF NOT EXISTS property_capture (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    arn                TEXT NOT NULL,
+    property_id        TEXT,
+    property_name      TEXT,
+    retail_subtype     TEXT,
+    total_sqft         REAL,
+    units              INTEGER,
+    parking            TEXT,
+    floors             INTEGER,
+    acreage            REAL,
+    vacancy            TEXT,
+    asking_rate        TEXT,
+    pdf_links          TEXT,         -- JSON array
+    source_url         TEXT,
+    source             TEXT DEFAULT 'web_capture',
+    confidence         REAL,
+    web_asserted       INTEGER DEFAULT 1,
+    registry_confirmed INTEGER DEFAULT 0,
+    captured_at        TEXT DEFAULT (datetime('now')),
+    captured_by        TEXT,
+    updated_at         TEXT DEFAULT (datetime('now')),
+    UNIQUE(arn, source_url)
+);
+
+CREATE INDEX IF NOT EXISTS idx_property_capture_arn ON property_capture(arn);
+
+CREATE TABLE IF NOT EXISTS property_tenants (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    arn             TEXT NOT NULL,
+    property_id     TEXT,
+    unit            TEXT,
+    tenant_name     TEXT NOT NULL,
+    sqft            REAL,
+    is_anchor       INTEGER DEFAULT 0,
+    source          TEXT DEFAULT 'web_capture',
+    source_url      TEXT,
+    confidence      REAL,
+    captured_at     TEXT DEFAULT (datetime('now')),
+    captured_by     TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_property_tenants_arn ON property_tenants(arn);
+
+-- Stub home for site-listed assets not yet in Cleo (no RT/GW row).
+-- Keyed by resolved ARN; resolved_pid is set when the compiler later
+-- builds a real PRO_ row for the same ARN (reconcile on ARN).
+CREATE TABLE IF NOT EXISTS manual_properties (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    arn             TEXT NOT NULL UNIQUE,
+    display_address TEXT,
+    city            TEXT,
+    province        TEXT,
+    postal          TEXT,
+    resolved_pid    TEXT,
+    source          TEXT DEFAULT 'web_capture',
+    source_url      TEXT,
+    confidence      REAL,
+    captured_at     TEXT DEFAULT (datetime('now')),
+    captured_by     TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_manual_properties_arn ON manual_properties(arn);
+CREATE INDEX IF NOT EXISTS idx_manual_properties_resolved ON manual_properties(resolved_pid);
 """
 
 SYSTEM_TABLES = """

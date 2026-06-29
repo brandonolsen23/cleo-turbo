@@ -3,8 +3,9 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { Heading, Text, Button, Badge } from "@radix-ui/themes";
 import { MagnifyingGlass, CaretUp, CaretDown, Phone } from "@phosphor-icons/react";
 import { fetchApi } from "../api/client";
-import { formatPhone, formatCompact, assetClassLabel } from "../lib/utils";
+import { formatPhone, formatCompact, assetClassLabel, titleCase } from "../lib/utils";
 import { getContactTypeLabel } from "../types";
+import { Reportable } from "../components/issues/IssueReporter";
 import { propertyTypeLabel, propertyTypeColor } from "../lib/theme";
 import FilterPanel, {
   RangeFilter,
@@ -73,6 +74,8 @@ export default function ContactsPage() {
   const maxTransactions = searchParams.get("max_transactions") || "";
   const minBuyValue = searchParams.get("min_buy_value") || "";
   const maxBuyValue = searchParams.get("max_buy_value") || "";
+  const minBuildingSize = searchParams.get("building_size_min") || "";
+  const maxBuildingSize = searchParams.get("building_size_max") || "";
   const region = searchParams.get("region") || "";
   const assetClass = searchParams.get("asset_class") || "";
   const minAssetClassCount = searchParams.get("min_asset_class_count") || "";
@@ -108,6 +111,8 @@ export default function ContactsPage() {
     if (maxTransactions) params.max_transactions = maxTransactions;
     if (minBuyValue) params.min_buy_value = minBuyValue;
     if (maxBuyValue) params.max_buy_value = maxBuyValue;
+    if (minBuildingSize) params.building_size_min = minBuildingSize;
+    if (maxBuildingSize) params.building_size_max = maxBuildingSize;
     if (region) params.region = region;
     if (assetClass) params.asset_class = assetClass;
     if (minAssetClassCount) params.min_asset_class_count = minAssetClassCount;
@@ -121,7 +126,7 @@ export default function ContactsPage() {
       .finally(() => {
         if (currentFetchId === fetchIdRef.current) setLoading(false);
       });
-  }, [page, sort, order, q, status, contactType, minTransactions, maxTransactions, minBuyValue, maxBuyValue, region, assetClass, minAssetClassCount, maxAssetClassCount]);
+  }, [page, sort, order, q, status, contactType, minTransactions, maxTransactions, minBuyValue, maxBuyValue, minBuildingSize, maxBuildingSize, region, assetClass, minAssetClassCount, maxAssetClassCount]);
 
   useEffect(() => {
     fetchData();
@@ -264,6 +269,14 @@ export default function ContactsPage() {
           onMaxChange={(v) => setParam("max_buy_value", v)}
           placeholder={["Min $", "Max $"]}
         />
+        <RangeFilter
+          label="Building Size (sf)"
+          minValue={minBuildingSize}
+          maxValue={maxBuildingSize}
+          onMinChange={(v) => setParam("building_size_min", v)}
+          onMaxChange={(v) => setParam("building_size_max", v)}
+          placeholder={["Min sf", "Max sf"]}
+        />
         <SelectFilter
           label="Region"
           value={region}
@@ -298,6 +311,11 @@ export default function ContactsPage() {
       </FilterPanel>
 
       {/* Table */}
+      <Reportable
+        component="contacts_list.table"
+        data={{ sort, order, total_in_filter: data?.total ?? null }}
+        entity_type="general"
+      >
       <div
         className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden transition-opacity"
         style={{ opacity: loading ? 0.6 : 1 }}
@@ -307,7 +325,7 @@ export default function ContactsPage() {
             <tr style={{ background: "var(--gray-2)" }}>
               <SortHeader label="Name" field="display_name" currentSort={sort} currentOrder={order} onSort={handleSort} />
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Company
+                Group
               </th>
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
                 City
@@ -336,8 +354,13 @@ export default function ContactsPage() {
                 onClick={() => navigate(`/contacts/${c.id}`)}
               >
                 <td className="px-4 py-2 font-medium">{c.display_name}</td>
-                <td className="px-4 py-2 max-w-[240px] truncate" style={{ color: "var(--gray-11)" }} title={c.company_name || undefined}>
-                  {c.company_name || "—"}
+                <td className="px-4 py-2 max-w-[260px] truncate" style={{ color: "var(--gray-11)" }}
+                    title={c.auto_group_name ? titleCase(c.auto_group_name) : (c.company_name || undefined)}>
+                  {c.auto_group_stem === "_anonymized_individuals"
+                    ? "—"
+                    : c.auto_group_name
+                      ? titleCase(c.auto_group_name)
+                      : (c.company_name || "—")}
                 </td>
                 <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>
                   {c.mailing_city || "—"}
@@ -397,6 +420,7 @@ export default function ContactsPage() {
           </tbody>
         </table>
       </div>
+      </Reportable>
 
       {/* Pagination */}
       {data && (

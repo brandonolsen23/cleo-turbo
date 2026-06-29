@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { Text } from "@radix-ui/themes";
-import { MagnifyingGlass, Sparkle } from "@phosphor-icons/react";
+import { MagnifyingGlass, Sparkle, Bug } from "@phosphor-icons/react";
+import { useIssueReporter } from "../issues/IssueReporter";
 
 const PAGE_TITLES: Record<string, string> = {
   "/": "Dashboard",
@@ -37,6 +38,7 @@ interface HeaderProps {
 export default function Header({ onAskClaude }: HeaderProps) {
   const location = useLocation();
   const pageTitle = getPageTitle(location.pathname);
+  const { open: openIssueReporter } = useIssueReporter();
 
   const triggerSearch = () => {
     window.dispatchEvent(new KeyboardEvent("keydown", { key: "k", metaKey: true }));
@@ -55,6 +57,14 @@ export default function Header({ onAskClaude }: HeaderProps) {
       </div>
 
       <div className="flex items-center gap-2">
+        <button
+          onClick={() => openIssueReporter()}
+          className="flex items-center justify-center h-8 w-8 rounded-lg border transition-colors hover:border-[var(--gray-8)]"
+          style={{ borderColor: "var(--gray-6)", background: "var(--gray-2)" }}
+          title="Report issue (⌘⇧B)"
+        >
+          <Bug size={14} style={{ color: "var(--gray-9)" }} />
+        </button>
         <button
           onClick={onAskClaude}
           className="flex items-center justify-center h-8 w-8 rounded-lg border transition-colors hover:border-[var(--gray-8)]"

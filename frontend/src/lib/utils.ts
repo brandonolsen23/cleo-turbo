@@ -22,6 +22,40 @@ export function formatCompact(n: number | null | undefined): string {
   return `$${n.toLocaleString()}`;
 }
 
+export function formatSf(n: number | null | undefined): string {
+  if (n == null) return "—";
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(2)}M sf`;
+  if (n >= 10_000) return `${(n / 1_000).toFixed(0)}k sf`;
+  return `${Math.round(n).toLocaleString()} sf`;
+}
+
+/** Format a canonical address key (city|street_number|...|suite_number) for display. */
+export function formatCanonicalAddress(canonical: string | null | undefined): string {
+  if (!canonical) return "";
+  const parts = canonical.split("|");
+  if (parts.length !== 7) return canonical;
+  const [city, num, name, suf, dir_, stype, snum] = parts;
+  const street = [num, titleCase(name), titleCase(suf), titleCase(dir_)]
+    .filter(Boolean)
+    .join(" ");
+  const cleanSnum = snum && /[a-z]/i.test(snum) ? titleCase(snum) : snum;
+  const suite = cleanSnum
+    ? `${stype === "po_box" ? "PO Box" : titleCase(stype)} ${cleanSnum}`
+    : "";
+  const cityPart = city ? titleCase(city) : "";
+  return [street, suite, cityPart].filter(Boolean).join(", ");
+}
+
+/** Format a portfolio-size entry like "2.86M sf" or "24,881 units". */
+export function formatPortfolioUnit(unit: string, total: number): string {
+  if (unit === "sf") return formatSf(total);
+  const compact =
+    total >= 1_000_000 ? `${(total / 1_000_000).toFixed(2)}M` :
+    total >= 10_000 ? `${(total / 1_000).toFixed(0)}k` :
+    Math.round(total).toLocaleString();
+  return `${compact} ${unit}`;
+}
+
 // ============================================================
 // Ownership
 // ============================================================

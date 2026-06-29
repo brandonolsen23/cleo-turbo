@@ -20,6 +20,7 @@ def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
         "SELECT id, display_address, city, current_owner_name, "
         "most_recent_sale_price, most_recent_sale_date, transaction_count, "
         "primary_property_type, lat, lng, "
+        "building_size_raw, building_size_value, building_size_unit, "
         "ROUND((julianday('now') - julianday(most_recent_sale_date)) / 365.25, 1) AS ownership_years "
         "FROM properties "
         "WHERE lat IS NOT NULL AND lng IS NOT NULL"
@@ -59,6 +60,8 @@ def geo_properties(db=Depends(get_db), user=Depends(get_current_user)):
                 "primary_property_type": r["primary_property_type"] or "",
                 "tenant_brands": sorted(tenants["brands"]) if tenants else [],
                 "tenant_categories": sorted(tenants["categories"]) if tenants else [],
+                "building_size_raw": r["building_size_raw"],
+                "building_size_sf": r["building_size_value"] if r["building_size_unit"] == "sf" else None,
             },
         })
 

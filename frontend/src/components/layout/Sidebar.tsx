@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix, ClockCounterClockwise, Sliders, Handshake, TreeStructure, Tag, MagnifyingGlass, Star } from "@phosphor-icons/react";
+import { Buildings, ChartBar, Users, UsersThree, Table, MapTrifold, Kanban, ListBullets, FlowArrow, ShieldCheck, GearSix, ClockCounterClockwise, Sliders, Handshake, TreeStructure, Flask, MagnifyingGlass, Star, Bug } from "@phosphor-icons/react";
 import cleoLogo from "../../assets/cleo-logo.png";
 
 const NAV_GROUPS = [
@@ -29,12 +29,13 @@ const NAV_GROUPS = [
       { path: "/data-quality", label: "Data Quality", icon: ShieldCheck },
       { path: "/discovery", label: "Discovery", icon: TreeStructure },
       { path: "/explorer", label: "Explorer", icon: MagnifyingGlass },
-      { path: "/labeling", label: "Labeling", icon: Tag },
+      { path: "/test-lab", label: "Test Lab", icon: Flask },
     ],
   },
   {
     label: "System",
     items: [
+      { path: "/issues", label: "Issues", icon: Bug },
       { path: "/settings", label: "Settings", icon: Sliders },
       { path: "/audit", label: "Audit Log", icon: ClockCounterClockwise },
       { path: "/admin", label: "Admin", icon: GearSix },
@@ -46,11 +47,11 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <div className="app-sidebar flex flex-col border-r border-[var(--gray-4)]" style={{ background: "var(--gray-2)" }}>
-      <div className="h-[var(--header-height)] flex items-center px-5 border-b border-[var(--gray-4)]">
-        <img src={cleoLogo} alt="Cleo" className="h-6" />
+    <div className="app-sidebar flex flex-col border-r border-[var(--gray-4)] min-h-0" style={{ background: "var(--gray-2)" }}>
+      <div className="h-[var(--header-height)] flex items-center px-5 border-b border-[var(--gray-4)] shrink-0">
+        <img src={cleoLogo} alt="Cleo" className="h-6 w-auto max-w-full object-contain" />
       </div>
-      <nav className="flex flex-col gap-4 p-3">
+      <nav className="flex-1 min-h-0 overflow-y-auto flex flex-col gap-4 p-3">
         {NAV_GROUPS.map((group, gi) => (
           <div key={gi} className="flex flex-col gap-px">
             {group.label && (

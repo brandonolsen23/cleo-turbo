@@ -23,6 +23,8 @@ def browse_properties(
     asset_class: str = None,
     min_ownership_years: float = None,
     max_ownership_years: float = None,
+    building_size_min: float = None,
+    building_size_max: float = None,
     q: str = None,
     sort: str = "most_recent_sale_date",
     order: str = "desc",
@@ -69,6 +71,14 @@ def browse_properties(
     if max_ownership_years is not None:
         conditions.append("p.most_recent_sale_date IS NOT NULL AND (julianday('now') - julianday(p.most_recent_sale_date)) / 365.25 <= ?")
         params.append(max_ownership_years)
+    if building_size_min is not None or building_size_max is not None:
+        conditions.append("p.building_size_unit = 'sf'")
+        if building_size_min is not None:
+            conditions.append("p.building_size_value >= ?")
+            params.append(building_size_min)
+        if building_size_max is not None:
+            conditions.append("p.building_size_value <= ?")
+            params.append(building_size_max)
     if q and q.strip():
         conditions.append(
             "(p.display_address LIKE ? OR p.city LIKE ? OR p.current_owner_name LIKE ?)"
@@ -90,6 +100,7 @@ def browse_properties(
         f"SELECT p.id, p.arn, p.display_address, p.city, p.region, p.most_recent_sale_date, "
         f"p.most_recent_sale_price, p.current_owner_name, p.current_owner_group_id, "
         f"p.transaction_count, p.lat, p.lng, p.asset_class, p.asset_subclass, "
+        f"p.building_size_raw, p.building_size_value, p.building_size_unit, "
         f"{ownership_expr} AS ownership_years "
         f"FROM properties p WHERE {where} ORDER BY {sort_col} {order} LIMIT ? OFFSET ?",
         params + [per_page, offset]
@@ -260,6 +271,7 @@ def property_detail(property_id: str, db=Depends(get_db), user=Depends(get_curre
         "SELECT source_id, sale_date, sale_price, display_address, transaction_note, "
         "seller_parties, buyer_parties, seller_phone, buyer_phone, "
         "cash, debt, chattels, other_consideration, charges_json, "
+        "building_size_raw, building_size_value, building_size_unit, "
         "photos_json "
         "FROM transactions WHERE property_id = ? ORDER BY sale_date DESC",
         (property_id,)
