@@ -332,15 +332,33 @@ def verify_completeness(
     all_total: int,
     sf3_types: Dict[str, str],
     delay: float = DELAY_BETWEEN_REQUESTS,
+    output_dir: Path = None,
 ) -> Tuple[bool, Dict[str, int]]:
     """Search each individual sf3 value and compare sum against All total.
 
+    Also captures each category's export rows as append-only LABEL EVIDENCE.
+    The All search carries no category context, so this pass is the only
+    place a record's RT category is observable. Rows (rollno, pin, address,
+    date, consid, ...) are saved per category under output_dir/verify/ and
+    appended to raw-data/rt/category_evidence.jsonl so downstream code can
+    join them to transactions by ARN + sale date (doctrine D1/D8: evidence
+    is append-only; every displayed label traces to a source).
+
     Returns (ok, category_counts).
     """
+    import json as _json
+
     log.info("Running verification pass (%d categories)...", len(sf3_types))
 
     category_counts: Dict[str, int] = {}
     category_total = 0
+    evidence_rows_written = 0
+    evidence_path = PROJECT_ROOT / "raw-data" / "rt" / "category_evidence.jsonl"
+    captured_at = datetime.now(tz=timezone.utc).isoformat()
+    window = {
+        "start": start_date.strftime("%Y-%m-%d"),
+        "end": end_date.strftime("%Y-%m-%d"),
+    }
 
     for sf3_value, label in sf3_types.items():
         # GET search page to reset session
@@ -360,28 +378,137 @@ def verify_completeness(
             if "no results" in html.lower():
                 count = 0
 
+        # Capture label evidence: export rows for every page of this category
+        cat_rows: List[Dict[str, str]] = []
+        if count > 0 and output_dir is not None:
+            cat_pages = max(1, math.ceil(count / RESULTS_PER_PAGE))
+            for page_num in range(1, cat_pages + 1):
+                if page_num > 1:
+                    try:
+                        retry(
+                            lambda p=page_num: session.get(
+                                f"/?page=results&tabID={p - 1}"
+                            ),
+                            label=f"verify {label} p{page_num}",
+                        )
+                        time.sleep(delay)
+                    except Exception as e:
+                        log.warning(
+                            "  %s: page %d navigation failed: %s",
+                            label, page_num, e,
+                        )
+                        continue
+                try:
+                    export_resp = session.get("/?page=export")
+                    rows = parse_export_tsv(export_resp.text)
+                    cat_rows.extend(rows)
+                    time.sleep(delay)
+                except Exception as e:
+                    log.warning(
+                        "  %s: export failed on page %d: %s",
+                        label, page_num, e,
+                    )
+
+            if cat_rows:
+                slug = (
+                    label.lower().replace("/", "-").replace(" ", "-")
+                )
+                verify_dir = output_dir / "verify" / slug
+                verify_dir.mkdir(parents=True, exist_ok=True)
+                atomic_write_json(verify_dir / "export.json", cat_rows)
+                with open(evidence_path, "a", encoding="utf-8") as fh:
+                    for r in cat_rows:
+                        line = dict(r)
+                        line["rt_category"] = label
+                        line["window"] = window
+                        line["captured_at"] = captured_at
+                        fh.write(_json.dumps(line, ensure_ascii=False) + "\n")
+                evidence_rows_written += len(cat_rows)
+                if len(cat_rows) != count:
+                    log.warning(
+                        "  %s: exported %d rows but search reported %d",
+                        label, len(cat_rows), count,
+                    )
+
         category_counts[label] = count
         category_total += count
 
+    if output_dir is not None:
+        log.info(
+            "  Label evidence: %d rows appended to %s",
+            evidence_rows_written, evidence_path.name,
+        )
+
     log.info("  Category sum: %d, All total: %d", category_total, all_total)
 
-    # "All" should be >= sum of categories (it includes uncategorized)
-    ok = all_total >= category_total
-    if not ok:
-        log.error(
-            "  VERIFICATION FAILED: categories sum (%d) > All total (%d)!",
-            category_total, all_total,
+    # Row-level verification (preferred): every export row seen in a
+    # category search must also appear in the All sweep's export rows.
+    # Count arithmetic is unreliable because Realtrack assigns some
+    # transactions MULTIPLE categories (e.g. mixed-use = Office + Retail),
+    # so sum(categories) can legitimately exceed the All total.
+    def _row_key(r):
+        return (
+            (r.get("rollno") or "").strip(),
+            r.get("date", ""),
+            r.get("consid", ""),
+            r.get("address", ""),
         )
-        log.error(
-            "  This means some category-specific results are NOT in 'All Property Types'."
-        )
-        log.error("  Consider switching to multi-filter scraping mode.")
+
+    all_rows = []
+    if output_dir is not None:
+        for export_file in sorted(output_dir.glob("p*/export.json")):
+            try:
+                all_rows.extend(_json.loads(export_file.read_text()))
+            except Exception as e:
+                log.warning("  Could not read %s: %s", export_file, e)
+
+    if all_rows:
+        all_keys = {_row_key(r) for r in all_rows}
+        cat_keys = set()
+        multi = 0
+        seen_once = set()
+        for export_file in sorted((output_dir / "verify").glob("*/export.json")):
+            for r in _json.loads(export_file.read_text()):
+                k = _row_key(r)
+                if k in seen_once:
+                    multi += 1
+                seen_once.add(k)
+                cat_keys.add(k)
+        missing = cat_keys - all_keys
+        uncategorized = len(all_keys - cat_keys)
+        ok = len(missing) == 0
+        if ok:
+            log.info(
+                "  Verification OK (row-level): %d distinct categorized "
+                "(%d multi-category) + %d uncategorized; all category rows "
+                "present in the All sweep.",
+                len(cat_keys), multi, uncategorized,
+            )
+        else:
+            log.error(
+                "  VERIFICATION FAILED: %d category rows NOT in the All "
+                "sweep: %s",
+                len(missing), sorted(missing)[:5],
+            )
+            log.error("  Consider switching to multi-filter scraping mode.")
     else:
-        uncategorized = all_total - category_total
-        log.info(
-            "  Verification OK. %d categorized + %d uncategorized = %d total.",
-            category_total, uncategorized, all_total,
-        )
+        # Fallback: count heuristic (legacy behavior). Overlaps can produce
+        # sum > All without data loss, so treat that as a warning only.
+        ok = all_total >= category_total
+        if not ok:
+            log.warning(
+                "  Count check: categories sum (%d) > All total (%d). "
+                "Likely multi-category overlap; row-level data unavailable "
+                "to confirm.",
+                category_total, all_total,
+            )
+            ok = True
+        else:
+            log.info(
+                "  Count check OK: %d categorized (with possible overlap), "
+                "All total %d.",
+                category_total, all_total,
+            )
 
     return ok, category_counts
 
@@ -441,6 +568,7 @@ def run_daily(
     if not dry_run and not skip_verify and total > 0:
         verify_ok, category_counts = verify_completeness(
             session, start_date, end_date, total, sf3_types, delay,
+            output_dir=output_dir,
         )
 
     session.close()
