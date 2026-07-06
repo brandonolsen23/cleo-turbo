@@ -8,7 +8,7 @@ Compiler writes. Foreign keys enforced. Busy timeout prevents lock errors.
 import sqlite3
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'cleo.db')
+DB_PATH = os.environ.get('CLEO_DB_PATH') or os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'cleo.db')
 DB_PATH = os.path.abspath(DB_PATH)
 
 

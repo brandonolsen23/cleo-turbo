@@ -643,3 +643,154 @@ def normalize_country(raw: Optional[str]) -> Optional[str]:
         return _COUNTRY_MAP[key]
 
     return key
+
+
+# ── Portfolio Capture atoms (M2) ──────────────────────────────────────
+# compose_address_key / parse_address_parts build the swept address match
+# key (spec Section 7). normalize_arn wraps the existing RT engine
+# normalizer (spec D5 — ARN parsing is NEVER reimplemented here).
+
+_ADDR_SUITE_MARKERS = frozenset({
+    "suite", "ste", "unit", "apt", "apartment", "#", "floor", "flr", "fl",
+})
+
+# Tokens dropped from the tail of a free-text address before city parsing.
+_ADDR_TAIL_NOISE = frozenset({
+    "on", "ont", "ontario", "canada", "ca",
+})
+
+# Postal-code fragments: "m4s 2a3" tokenizes to two 3-char tokens.
+_POSTAL_FRAGMENT = re.compile(r"^(?:[a-z]\d[a-z]|\d[a-z]\d|[a-z]\d[a-z]\d[a-z]\d)$")
+
+
+def parse_address_parts(raw: Optional[str]) -> Optional[dict]:
+    """Parse a free-text address into normalized components.
+
+    Returns a dict with keys street_number, street_name, street_suffix,
+    street_direction, suite_number, city (each may be None), or None if
+    the input is empty. Deterministic: the same text always yields the
+    same parts, so captured match keys and GW owner_mailing strings meet
+    in the same space.
+    """
+    s = _strip_or_none(raw)
+    if s is None:
+        return None
+
+    s = s.lower()
+    s = _remove_diacritics(s)
+    s = s.replace("'", "")
+    # Keep word chars, whitespace, # (suite marker) and hyphen (30-32).
+    s = re.sub(r"[^\w\s#-]", " ", s)
+    s = _WHITESPACE.sub(" ", s).strip()
+    if not s:
+        return None
+
+    tokens = [t for t in s.split() if t]
+    # Drop trailing noise: province/country tokens and postal fragments.
+    while tokens and (tokens[-1] in _ADDR_TAIL_NOISE
+                      or _POSTAL_FRAGMENT.match(tokens[-1])):
+        tokens.pop()
+    if not tokens:
+        return None
+
+    parts = {"street_number": None, "street_name": None,
+             "street_suffix": None, "street_direction": None,
+             "suite_number": None, "city": None}
+
+    i = 0
+    if re.match(r"^\d", tokens[0]):
+        parts["street_number"] = normalize_street_number(tokens[0])
+        i = 1
+
+    # Street name: tokens until a suffix or suite marker.
+    name_tokens = []
+    while i < len(tokens):
+        t = tokens[i].rstrip(".")
+        if t in _STREET_SUFFIX_MAP and name_tokens:
+            parts["street_suffix"] = _STREET_SUFFIX_MAP[t]
+            i += 1
+            break
+        if t in _ADDR_SUITE_MARKERS and name_tokens:
+            break
+        name_tokens.append(tokens[i])
+        i += 1
+    if name_tokens:
+        parts["street_name"] = normalize_street_name(" ".join(name_tokens))
+
+    # Optional direction right after the suffix.
+    if i < len(tokens):
+        t = tokens[i].rstrip(".")
+        if t in _DIRECTION_MAP:
+            parts["street_direction"] = _DIRECTION_MAP[t]
+            i += 1
+
+    # Optional suite marker + number (marker may appear anywhere next).
+    if i < len(tokens):
+        t = tokens[i].rstrip(".")
+        if t in _ADDR_SUITE_MARKERS:
+            i += 1
+            if i < len(tokens):
+                parts["suite_number"] = normalize_suite_number(tokens[i])
+                i += 1
+        elif t.startswith("#") and len(t) > 1:
+            parts["suite_number"] = normalize_suite_number(t[1:])
+            i += 1
+
+    # Whatever remains is the city.
+    if i < len(tokens):
+        parts["city"] = normalize_city(" ".join(tokens[i:]))
+
+    return parts
+
+
+def compose_address_key(raw: Optional[str]) -> Optional[str]:
+    """Compose the swept address match key (spec Section 7).
+
+    normalize_street_number + name + suffix + direction + suite_number +
+    normalize_city, lowercase, single-spaced. Returns None for empty or
+    unparseable input.
+
+    Example: '1962 Yonge St Suite 200 Toronto'
+          -> '1962 yonge street 200 toronto'
+    """
+    parts = parse_address_parts(raw)
+    if not parts:
+        return None
+    ordered = [parts["street_number"], parts["street_name"],
+               parts["street_suffix"], parts["street_direction"],
+               parts["suite_number"], parts["city"]]
+    key = " ".join(p for p in ordered if p)
+    key = _WHITESPACE.sub(" ", key).strip()
+    return key if key else None
+
+
+def normalize_arn(raw: Optional[str]) -> Optional[str]:
+    """Canonical 20-digit arn_api via the existing RT engine normalizer.
+
+    Spec D5: ARN parsing is never reimplemented — this delegates to
+    engines/rt/address_normalizer/pin_arn.normalize_arn, which rejects
+    registry prefixes (HR-, AT-, MT-, WR-, KL-), decimals, and sub-13-digit
+    strings, then right-pads digits to 20. Returns the api_format string,
+    or None if the input is not a valid ARN.
+    """
+    if raw is None or not str(raw).strip():
+        return None
+    try:
+        from engines.rt.address_normalizer.pin_arn import (
+            normalize_arn as _engine_normalize_arn,
+        )
+    except ImportError:
+        # Repo root not on sys.path (e.g. invoked from a subdir) — load the
+        # engine module directly from its known location. Still the same
+        # single source of truth, never a reimplementation.
+        import importlib.util as _ilu
+        import os as _os
+        _p = _os.path.abspath(_os.path.join(
+            _os.path.dirname(__file__), "..", "..",
+            "engines", "rt", "address_normalizer", "pin_arn.py"))
+        _spec = _ilu.spec_from_file_location("_pin_arn_engine", _p)
+        _mod = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_mod)
+        _engine_normalize_arn = _mod.normalize_arn
+    api = _engine_normalize_arn(str(raw)).get("api_format", "")
+    return api or None

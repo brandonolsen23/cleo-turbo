@@ -50,6 +50,7 @@ from .routes.ai import router as ai_router
 from .routes.auto_groups import router as auto_groups_router
 from .routes.issues import router as issues_router
 from .routes.test_lab import router as test_lab_router
+from .routes.portfolio import router as portfolio_router
 
 
 def create_app():
@@ -110,6 +111,7 @@ def create_app():
     app.include_router(contact_tenures_router, prefix="/api", tags=["contact-tenures"])
     app.include_router(ai_router, prefix="/api/ai", tags=["ai"])
     app.include_router(test_lab_router, prefix="/api/test-lab", tags=["test-lab"])
+    app.include_router(portfolio_router, prefix="/api/portfolio", tags=["portfolio"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')

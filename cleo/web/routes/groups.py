@@ -506,10 +506,62 @@ def group_properties(
                 entry["last_price"] = r["sale_price"]
                 entry["last_side"]  = r["side"]
 
+    # Union in captured/current ownership (Portfolio Capture layer):
+    # properties whose current_owner_group_id is a legacy group mapped to
+    # this auto_group, plus off-book manual_properties linked via
+    # manual_owner_links. These are owned holdings regardless of whether a
+    # transaction for them exists in Realtrack.
+    own_rows = db.execute(
+        """
+        SELECT p.id AS property_id, p.display_address, p.city,
+               p.asset_class, p.lat, p.lng, p.building_size_raw,
+               p.building_size_value, p.building_size_unit,
+               p.most_recent_sale_date AS sale_date,
+               p.most_recent_sale_price AS sale_price
+        FROM properties p
+        JOIN legacy_to_auto_group_map m
+          ON m.legacy_group_id = p.current_owner_group_id
+        WHERE m.auto_group_id = ?
+        UNION ALL
+        SELECT 'manual:' || mp.arn AS property_id, mp.display_address,
+               mp.city, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL
+        FROM manual_properties mp
+        JOIN manual_owner_links mol ON mol.arn = mp.arn
+        JOIN legacy_to_auto_group_map m ON m.legacy_group_id = mol.group_id
+        WHERE m.auto_group_id = ? AND mol.relationship = 'owns'
+          AND COALESCE(mol.status, '') NOT IN ('conflict', 'rejected')
+          AND mp.arn NOT IN (SELECT arn FROM properties)
+        """,
+        (aid, aid),
+    ).fetchall()
+    for r in own_rows:
+        key = r["property_id"]
+        entry = props.get(key)
+        if entry is None:
+            props[key] = {
+                "property_id":         None if str(key).startswith("manual:") else key,
+                "canonical_address":   None,
+                "resolved":            not str(key).startswith("manual:"),
+                "display_address":     r["display_address"],
+                "city":                r["city"],
+                "asset_class":         r["asset_class"],
+                "lat":                 r["lat"],
+                "lng":                 r["lng"],
+                "building_size_raw":   r["building_size_raw"],
+                "building_size_value": r["building_size_value"],
+                "building_size_unit":  r["building_size_unit"],
+                "last_date":           r["sale_date"],
+                "last_price":          r["sale_price"],
+                "last_side":           "owner",
+                "n_transactions":      0,
+            }
+        else:
+            entry["last_side"] = "owner"
+
     # Apply Owned/Sold filter on last_side
     items = list(props.values())
     for it in items:
-        it["is_owned"] = it["last_side"] == "buyer"
+        it["is_owned"] = it["last_side"] in ("buyer", "owner")
 
     if filter == "owned":
         items = [it for it in items if it["is_owned"]]

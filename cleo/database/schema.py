@@ -693,6 +693,7 @@ CREATE TABLE IF NOT EXISTS group_match_keys (
     source          TEXT DEFAULT 'web_capture',
     source_url      TEXT,
     confidence      REAL,
+    sweepable       INTEGER DEFAULT 1,  -- 0 = failed the M4 specificity guard; identity only
     captured_at     TEXT DEFAULT (datetime('now')),
     captured_by     TEXT,
     UNIQUE(group_id, key_type, value)
