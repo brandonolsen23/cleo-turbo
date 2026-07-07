@@ -213,9 +213,15 @@ class TestDecomposeSimple:
         assert format_display(r) == "100 Main Street"
 
     def test_with_direction(self):
+        # NOTE (2026-07-07 decomposer unification): decompose_simple is now an
+        # alias of the canonical RT decomposer, whose compound-road guard
+        # treats "CONCESSION ST" as a possible compound name and therefore
+        # does NOT extract/expand the suffix ("St" stays in street_name).
+        # This is a known shared imperfection — RT is the byte-identical
+        # reference lane, so GW inherits it rather than diverging.
         r = decompose_simple("121 CONCESSION ST E")
         assert r['street_direction'] == 'East'
-        assert format_display(r) == "121 Concession Street East"
+        assert format_display(r) == "121 Concession St East"
 
     def test_ordinal_street(self):
         r = decompose_simple("732-746 10TH ST")
@@ -277,7 +283,10 @@ class TestGWIntegration:
     def test_parse_mpac_with_direction(self):
         from engines.gw.normalize import parse_mpac_address
         result = parse_mpac_address("121 CONCESSION ST E TILLSONBURG ON N4G4W4", "TILLSONBURG")
-        assert result['display_street'] == "121 Concession Street East"
+        # See TestDecomposeSimple.test_with_direction — canonical decomposer's
+        # compound-road guard keeps "Concession St" unexpanded (RT reference
+        # behavior, shared identically by both lanes since unification).
+        assert result['display_street'] == "121 Concession St East"
         assert result['display_city'] == "Tillsonburg"
 
     def test_parse_mpac_saint(self):

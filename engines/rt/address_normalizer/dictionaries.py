@@ -22,6 +22,11 @@ from cleo.address.dictionaries import (  # noqa: F401
     FRENCH_PREFIX_SUFFIXES,
     ORDINAL_WORD_TO_DIGIT,
     ORDINAL_DIGIT_TO_WORD,
+    # Moved to the shared module with the decomposer promotion (2026-07-07):
+    UNIT_KEYWORDS,
+    ORDINAL_FLOOR_WORDS,
+    WORD_NUMBER_MAP,
+    JUNK_MARKERS,
 )
 
 # ---------------------------------------------------------------------------
@@ -143,40 +148,4 @@ COUNTRY_MAP = {
     'united states': 'United States',
     'uk': 'United Kingdom',
     'united kingdom': 'United Kingdom',
-}
-
-# ---------------------------------------------------------------------------
-# UNIT/SUITE KEYWORDS (RT-specific, used in decompose.py)
-# ---------------------------------------------------------------------------
-
-UNIT_KEYWORDS = {
-    'suite', 'ste', 'unit', 'units', 'apt', 'apartment',
-    'floor', 'flr', 'level', 'bureau', 'mezzanine', 'penthouse',
-    'basement', 'entrance', 'stn',
-}
-
-# Ordinal floor patterns: "2nd Floor", "3rd Floor", etc.
-ORDINAL_FLOOR_WORDS = {
-    'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
-    'seventh', 'eighth', 'ninth', 'tenth', 'ground', 'lower',
-    'upper', 'main', 'top', 'rear',
-}
-
-# ---------------------------------------------------------------------------
-# WORD-NUMBERS -- "One" -> "1", for street numbers written as words
-# ---------------------------------------------------------------------------
-
-WORD_NUMBER_MAP = {
-    'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5',
-    'six': '6', 'seven': '7', 'eight': '8', 'nine': '9', 'ten': '10',
-}
-
-# ---------------------------------------------------------------------------
-# JUNK MARKERS -- words after an embedded suffix that signal garbage to strip
-# ---------------------------------------------------------------------------
-
-JUNK_MARKERS = {
-    'store', 'mall', 'plaza', 'shopping', 'centre', 'center',
-    'industrial', 'business', 'commercial', 'office', 'park',
-    'no', 'sq',
 }

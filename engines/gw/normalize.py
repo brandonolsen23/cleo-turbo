@@ -26,8 +26,10 @@ NORMALIZED_DIR = os.path.join(PROJECT_ROOT, 'engines', 'gw', 'pipeline', 'normal
 # Address parsing
 # ================================================================
 
-from cleo.address.decompose import decompose_simple
-from cleo.address.formatter import format_display
+# Canonical decomposer shared with the RT lane (cleo/address/decompose.py).
+# GW previously used the lightweight decompose_simple; it now gets the full
+# 11-step decomposer so both lanes normalize addresses identically.
+from cleo.address.decompose import decompose
 from cleo.address.normalize import to_title_case
 
 
@@ -64,9 +66,9 @@ def parse_mpac_address(property_address, municipality=''):
             street = raw[:idx].strip()
             city = raw[idx:idx + len(muni_upper)]
 
-    # Use shared decomposer + formatter for consistent display
-    components = decompose_simple(street)
-    display_street = format_display(components)
+    # Use the canonical decomposer for consistent components + display
+    components = decompose(street)
+    display_street = components['display']
     display_city = to_title_case(city) if city else ''
 
     return {

@@ -11,6 +11,8 @@ Reference: schema/address_normalization_plan.md
 import re
 
 # Re-export shared normalization functions
+# (collapse_possessives, normalize_highway_hash, strip_preamble moved to
+# cleo.address.normalize with the decomposer promotion, 2026-07-07)
 from cleo.address.normalize import (  # noqa: F401
     to_title_case,
     expand_suffix,
@@ -19,6 +21,9 @@ from cleo.address.normalize import (  # noqa: F401
     protect_saints,
     restore_saints,
     normalize_street_name,
+    collapse_possessives,
+    normalize_highway_hash,
+    strip_preamble,
 )
 
 from .dictionaries import (
@@ -55,30 +60,3 @@ def normalize_postal(postal):
         return clean[:3] + ' ' + clean[3:]
     # Return as-is for US ZIPs and other formats
     return postal.strip().upper()
-
-
-def collapse_possessives(text):
-    """Collapse possessives: Queen's -> Queens, John's -> Johns.
-
-    Only removes 's and 's at end of words. Preserves O'Neill style apostrophes.
-    """
-    # Smart quotes and straight quotes
-    text = re.sub(r"(\w)'s\b", r'\1s', text)
-    text = re.sub(r"(\w)\u2019s\b", r'\1s', text)
-    return text
-
-
-def normalize_highway_hash(text):
-    """Strip # from highway route numbers: Highway #7 -> Highway 7."""
-    return re.sub(r'(Highway|Hwy|Hwy\.?)\s*,?\s*#(\d)', r'\1 \2', text, flags=re.IGNORECASE)
-
-
-def strip_preamble(text):
-    """Strip descriptive preamble before actual address.
-
-    'LOCATED AT 6301 Silver Dart Dr' -> '6301 Silver Dart Dr'
-    """
-    match = re.search(r'LOCATED\s+AT\s+(\d)', text, re.IGNORECASE)
-    if match:
-        return text[match.start(1):]
-    return text

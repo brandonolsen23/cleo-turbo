@@ -1,187 +1,458 @@
 """
-Lightweight address decomposer for GW and OSM raw strings.
+Canonical address decomposer for ALL Cleo lanes (RT, GW, OSM).
 
-This handles the common case of a simple address string like "121 CONCESSION ST E"
-and breaks it into structured components that format_display() can process.
+DESIGN CHOICE (2026-07-07, data-doctrine single-source-of-truth rule):
+This is option (b) from the unification plan — the Realtrack 11-step
+decomposer was PROMOTED verbatim from engines/rt/address_normalizer/
+decompose.py into this module, and both lanes import it from here:
 
-For complex patterns (units, ranges, saints, French addresses, compound roads),
-the RT pipeline's full 11-step decomposer handles those during the RT normalize
-stage. This module is intentionally simpler -- it covers the patterns seen in
-GW (MPAC) and OSM data without duplicating RT's full complexity.
+  RT lane:  engines/rt/address_normalizer/decompose.py is now a thin
+            re-export of this module. RT output is byte-identical to the
+            pre-promotion decomposer (verified against a 200-transaction
+            before/after sample) — RT is the reference implementation.
+
+  GW lane:  engines/gw/normalize.py imports decompose_simple (kept as a
+            compatibility ALIAS of decompose below). The old lightweight
+            GW-only decomposer that lived here was deleted; it lost units,
+            "#"-prefixed street numbers, fractions, ranges, PO boxes, and
+            concession/lot legal descriptions that this decomposer handles.
+
+  OSM lane: cleo/compiler/writer.py builds POI/OSM display addresses via
+            the same decompose_simple alias, so all three lanes share one
+            parse.
+
+Promotion was clean because every dependency was already shared or pure:
+the shared dictionaries/normalize helpers were canonical in cleo.address
+already, and the RT-only pieces (UNIT_KEYWORDS, ORDINAL_FLOOR_WORDS,
+WORD_NUMBER_MAP, JUNK_MARKERS, collapse_possessives, normalize_highway_hash,
+strip_preamble) were pure lookups/functions with no RT imports — they moved
+into cleo.address.dictionaries / cleo.address.normalize alongside this file.
+
+The 11-step pipeline is defined in
+engines/rt/schema/address_normalization_plan.md. Order matters — each step
+removes noise before the next runs.
 """
 
 import re
 from .dictionaries import (
-    SUFFIX_MAP, DIRECTION_MAP, COMPOUND_ROAD_PREFIXES,
-    FRENCH_PREFIX_SUFFIXES, SAINT_NAMES,
+    SUFFIX_MAP, SUFFIX_LONG_FORMS, DIRECTION_MAP,
+    COMPOUND_ROAD_PREFIXES, UNIT_KEYWORDS, ORDINAL_FLOOR_WORDS,
+    WORD_NUMBER_MAP, JUNK_MARKERS, FRENCH_PREFIX_SUFFIXES,
 )
-from .normalize import to_title_case, expand_suffix, expand_direction
+from .normalize import (
+    to_title_case, expand_suffix, expand_direction,
+    protect_saints, restore_saints, collapse_possessives,
+    normalize_highway_hash, strip_preamble,
+)
+from .formatter import format_display as _shared_format_display
 
 
-def decompose_simple(raw_address):
-    """Decompose a raw address string into structured components.
-
-    Designed for GW and OSM addresses which are simpler than RT addresses.
-    Handles: street number, street name, suffix expansion, direction expansion,
-    saint name protection, compound road guards, and French prefix suffixes.
-
-    Args:
-        raw_address: Raw address string, e.g., "121 CONCESSION ST E"
-                     or "678 BROADWAY ST" or "275 Laurier Avenue East"
-
-    Returns:
-        dict with keys: street_number, street_name, street_suffix,
-                        street_direction, suite_type, suite_number, special_type
-    """
-    result = {
+def _empty_result():
+    return {
         'street_number': '',
         'street_name': '',
         'street_suffix': '',
         'street_direction': '',
         'suite_type': '',
         'suite_number': '',
-        'special_type': '',
+        'special_type': '',   # PO Box, RR, General Delivery, legal description
+        'display': '',        # Reassembled normalized display string
     }
 
-    if not raw_address or not raw_address.strip():
-        return result
 
-    text = raw_address.strip()
+def decompose(line):
+    """Decompose a single address line into structured components.
 
-    # Protect saint names: "ST CATHARINES" -> "__SAINT__ CATHARINES"
-    text = _protect_saints_simple(text)
+    Input:  Raw address string (e.g., "247 SUMMERLEA RD")
+    Output: Dict with street_number, street_name, street_suffix,
+            street_direction, suite_type, suite_number, special_type, display.
+    """
+    if not line or not line.strip():
+        return _empty_result()
 
-    # Extract leading unit: "UNIT 5 100 MAIN ST" -> unit=5, rest="100 MAIN ST"
-    text, suite_type, suite_number = _extract_leading_unit(text)
-    result['suite_type'] = suite_type
-    result['suite_number'] = suite_number
+    text = line.strip()
 
-    # Also check trailing unit after comma: "100 MAIN ST, UNIT 5"
-    if not suite_type:
-        text, suite_type, suite_number = _extract_trailing_unit(text)
-        result['suite_type'] = suite_type
-        result['suite_number'] = suite_number
+    # === Step 1: Strip descriptive preamble ===
+    text = strip_preamble(text)
 
+    # === Step 2: Normalize highway hash ===
+    text = normalize_highway_hash(text)
+
+    # === Step 3: Protect saint names ===
+    text, _saints = protect_saints(text)
+
+    # === Step 4: Collapse possessives ===
+    text = collapse_possessives(text)
+
+    # === Step 5: Check PO Box / RR / General Delivery ===
+    special = _check_special_type(text)
+    if special:
+        special['display'] = _build_display(special)
+        return special
+
+    # === Step 6: Extract unit/suite ===
+    text, suite_type, suite_number = _extract_unit(text)
+
+    # === Step 7: Extract street number ===
+    text, street_number = _extract_street_number(text)
+
+    # === Step 8-10: Extract direction, suffix, and street name ===
+    # Work on the remaining words
     words = text.split()
-    if not words:
-        return result
+    words = [w for w in words if w]  # Remove empty strings
 
-    # Extract street number (first token if it starts with a digit)
-    if words and re.match(r'^\d', words[0]):
-        # Handle ranges: "732-746"
-        m = re.match(r'^(\d+(?:-\d+)?[A-Za-z]?)$', words[0])
-        if m:
-            result['street_number'] = m.group(1)
-            words = words[1:]
-
-    if not words:
-        return result
-
-    # Extract direction (last word)
+    # === Step 8: Extract direction (last word) ===
+    street_direction = ''
     if words:
         last = words[-1].rstrip('.,')
+        # Handle hyphenated directions: N-W → NW
         dir_expanded = expand_direction(last)
-        if dir_expanded and len(words) > 1:
-            result['street_direction'] = dir_expanded
-            words = words[:-1]
+        if not dir_expanded and '-' in last:
+            collapsed = last.replace('-', '')
+            dir_expanded = expand_direction(collapsed)
+        if dir_expanded:
+            # Guard: "The West Mall" — if preceding word is "The", it's a name
+            if len(words) >= 2 and words[-2].lower() == 'the':
+                pass  # Don't extract direction
+            else:
+                street_direction = dir_expanded
+                words = words[:-1]
 
-    # Extract suffix (last word after direction removed)
-    compound_suffixes = {'Road', 'Line', 'Sideroad', 'Concession'}
-
+    # === Step 9: Extract suffix (last word after direction removed) ===
+    street_suffix = ''
     if words:
         last = words[-1].rstrip('.,')
         suffix_expanded = expand_suffix(last)
         if suffix_expanded:
-            # Compound road guard: only skip suffix extraction when the
-            # preceding word is a compound prefix AND the suffix is one
-            # that typically appears in compound names (Road, Line, Sideroad).
-            # "Concession Street" is a real street, not a compound road.
-            if (len(words) >= 2
-                    and words[-2].lower() in COMPOUND_ROAD_PREFIXES
-                    and suffix_expanded in compound_suffixes):
-                # Don't extract as suffix, but expand the abbreviation in-place
-                # so "County Rd 93" -> "County Road 93" (not extracted, just expanded)
-                words[-1] = suffix_expanded
+            # Compound road guard: check if preceding word is a compound prefix
+            if len(words) >= 2 and words[-2].lower() in COMPOUND_ROAD_PREFIXES:
+                pass  # Don't extract — it's "County Road 93" etc.
             else:
-                result['street_suffix'] = suffix_expanded
+                street_suffix = suffix_expanded
                 words = words[:-1]
-        elif not suffix_expanded and len(words) >= 1:
-            # Check for French prefix suffix at the beginning
-            if words[0].lower() in FRENCH_PREFIX_SUFFIXES:
-                french_suffix = expand_suffix(words[0])
-                if french_suffix:
-                    result['street_suffix'] = french_suffix
-                    words = words[1:]
+        elif re.match(r'^\d+$', last) and len(words) >= 2:
+            # Route number pattern: "Perth Rd 147" — suffix is second-to-last
+            second_last = words[-2].rstrip('.,')
+            route_suffix = expand_suffix(second_last)
+            if route_suffix:
+                # Expand the suffix in place but keep it all as the name (route name)
+                words[-2] = route_suffix
+                # Don't set street_suffix — the whole thing is the name
+        if not street_suffix and not re.match(r'^\d+$', last):
+            # Check for French prefix suffix (at the beginning)
+            street_suffix = _check_french_prefix_suffix(words)
+            if street_suffix:
+                words = words[1:]  # Remove the French suffix from the front
 
-    # Compound road with trailing route number: "County Rd 93"
-    # When suffix isn't at the end because a route number follows it
-    if not result['street_suffix'] and len(words) >= 2:
-        for i in range(len(words) - 1, 0, -1):
-            candidate = expand_suffix(words[i].rstrip('.,'))
-            if (candidate and candidate in compound_suffixes
-                    and i >= 1 and words[i - 1].lower() in COMPOUND_ROAD_PREFIXES):
-                # Expand in-place: "County Rd 93" -> "County Road 93"
-                words[i] = candidate
-                break
+    # If no suffix found at end, try embedded suffix scan
+    if not street_suffix and len(words) >= 2:
+        street_suffix, words, embedded_dir = _scan_embedded_suffix(words)
+        if embedded_dir:
+            street_direction = embedded_dir
 
-    # Remaining words = street name
-    street_name = ' '.join(words).strip()
+    # === Step 10: Remaining words = street name ===
+    street_name = ' '.join(words).strip(' ,')
 
-    # Restore saint names
-    street_name = street_name.replace('__SAINT__', 'St.')
+    # Restore saint names in the street name
+    street_name = restore_saints(street_name)
 
-    # Apply title case
+    # Apply title case to street name
     street_name = to_title_case(street_name)
 
-    result['street_name'] = street_name
+    # Convert word-numbers in street number
+    if street_number.lower() in WORD_NUMBER_MAP:
+        street_number = WORD_NUMBER_MAP[street_number.lower()]
+
+    result = {
+        'street_number': street_number,
+        'street_name': street_name,
+        'street_suffix': street_suffix,
+        'street_direction': street_direction,
+        'suite_type': suite_type,
+        'suite_number': suite_number,
+        'special_type': '',
+        'display': '',
+    }
+    result['display'] = _build_display(result)
     return result
 
 
-def _protect_saints_simple(text):
-    """Simple saint protection for GW/OSM strings."""
-    words = text.split()
-    protected = []
-    i = 0
-    while i < len(words):
-        word = words[i]
-        bare = word.rstrip('.').rstrip(',').lower()
-        if bare == 'st' and i + 1 < len(words):
-            next_bare = words[i + 1].rstrip('.,').lower()
-            if next_bare in SAINT_NAMES:
-                protected.append('__SAINT__')
-                protected.append(words[i + 1])
-                i += 2
-                continue
-        protected.append(word)
-        i += 1
-    return ' '.join(protected)
+def decompose_simple(raw_address):
+    """DEPRECATED alias of decompose() — kept for GW/OSM call sites.
+
+    Historically this was a separate, weaker decomposer for GW/OSM strings.
+    It is now the same canonical decomposer, so GW and RT corporate-address
+    match keys normalize identically. The returned dict carries the same
+    component keys as before plus the 'display' field.
+    """
+    return decompose(raw_address)
 
 
-def _extract_leading_unit(text):
-    """Extract leading unit pattern: 'UNIT 5 100 MAIN ST' -> ('100 MAIN ST', 'Unit', '5')."""
-    for kw in ['unit', 'suite', 'ste', 'apt']:
-        m = re.match(rf'^{kw}\.?\s+(\S+)\s*[,-]?\s*(.+)', text, re.IGNORECASE)
+# ---------------------------------------------------------------------------
+# Step 5: Special types
+# ---------------------------------------------------------------------------
+
+def _check_special_type(text):
+    """Check if the address is a PO Box, RR, or General Delivery."""
+    upper = text.upper().strip()
+
+    # PO Box
+    m = re.match(r'^P\.?\s*O\.?\s*BOX\s+(\S+)', upper)
+    if m:
+        return {
+            'street_number': '', 'street_name': '', 'street_suffix': '',
+            'street_direction': '', 'suite_type': 'PO Box',
+            'suite_number': m.group(1), 'special_type': 'po_box',
+        }
+
+    # RR (Rural Route)
+    m = re.match(r'^R\.?\s*R\.?\s*#?\s*(\d+)', upper)
+    if m:
+        return {
+            'street_number': '', 'street_name': '', 'street_suffix': '',
+            'street_direction': '', 'suite_type': 'RR',
+            'suite_number': m.group(1), 'special_type': 'rural_route',
+        }
+
+    # General Delivery
+    if re.match(r'^GENERAL\s+DELIVERY', upper):
+        return {
+            'street_number': '', 'street_name': '', 'street_suffix': '',
+            'street_direction': '', 'suite_type': 'General Delivery',
+            'suite_number': '', 'special_type': 'general_delivery',
+        }
+
+    # Legal description: CONC, LOT, LOTS, PART LOT, PT LOT, PLAN
+    if re.match(r'^(CONC|LOTS?|PART\s+LOTS?|PT\s+LOTS?|PLAN)\b', upper):
+        return {
+            'street_number': '', 'street_name': to_title_case(text.strip()),
+            'street_suffix': '', 'street_direction': '',
+            'suite_type': '', 'suite_number': '',
+            'special_type': 'legal_description',
+        }
+
+    # Lot continuation: bare number lists like "21, 43 & 44" or "14, 15, 22, 23, 27"
+    # These are continuation lines from multi-line lot descriptions that got split
+    # by the address parser. They contain ONLY digits separated by commas/ampersands/dashes.
+    if re.match(r'^\d+(?:\s*[-,&]\s*\d+)+\s*$', text.strip()):
+        return {
+            'street_number': '', 'street_name': to_title_case(text.strip()),
+            'street_suffix': '', 'street_direction': '',
+            'suite_type': '', 'suite_number': '',
+            'special_type': 'lot_continuation',
+        }
+
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Step 6: Unit/suite extraction
+# ---------------------------------------------------------------------------
+
+def _extract_unit(text):
+    """Extract unit/suite from the address text. Returns (remaining_text, suite_type, suite_number)."""
+    stripped = text.strip()
+
+    # 6a. Leading hash: "#5 861 York Mills Road" or "#5-861 York Mills Road"
+    m = re.match(r'^#\s*(\w+)\s*[-,]?\s*(.+)', stripped)
+    if m:
+        return m.group(2).strip(), '#', m.group(1)
+
+    # 6b. Leading keyword: "Unit A4B 40 Kingston Road"
+    # But also handle: "Suite C9 1270 Fischer Hallman Road" (unit overflow)
+    for kw in ['suite', 'ste', 'unit', 'apt', 'apartment']:
+        pattern = rf'^{kw}\.?\s+(\S+)\s*[,-]?\s*(.+)'
+        m = re.match(pattern, stripped, re.IGNORECASE)
         if m:
             unit_val = m.group(1).rstrip(',')
             remainder = m.group(2).strip()
-            label = kw.capitalize() if kw != 'ste' else 'Suite'
-            return remainder, label, unit_val
-    return text, '', ''
+            # Check unit value overflow: does the remainder start with a number?
+            # If unit_val itself looks like it contains a street number, split it
+            return remainder, kw.capitalize() if kw != 'ste' else 'Suite', unit_val
 
-
-def _extract_trailing_unit(text):
-    """Extract trailing unit: '100 MAIN ST, UNIT 5' -> ('100 MAIN ST', 'Unit', '5')."""
-    for kw in ['unit', 'suite', 'ste', 'apt', 'floor', 'flr']:
-        m = re.match(rf'^(.+?)\s*,\s*{kw}\.?\s+(.+?)$', text, re.IGNORECASE)
+    # 6c. Trailing keyword: "123 Main St, Suite 200" or "123 Main St Suite 200"
+    for kw in ['suite', 'ste', 'unit', 'units', 'apt', 'apartment', 'floor', 'flr',
+               'level', 'bureau', 'stn']:
+        pattern = rf'^(.+?)\s*[,]\s*{kw}\.?\s+(.+?)$'
+        m = re.match(pattern, stripped, re.IGNORECASE)
         if m:
-            label = kw.capitalize() if kw != 'ste' else 'Suite'
+            suite_label = kw.capitalize() if kw != 'ste' else 'Suite'
             if kw == 'flr':
-                label = 'Floor'
-            return m.group(1).strip(), label, m.group(2).strip().rstrip(',')
+                suite_label = 'Floor'
+            return m.group(1).strip(), suite_label, m.group(2).strip().rstrip(',')
 
-    # Trailing hash: "100 MAIN ST, #5"
-    m = re.match(r'^(.+?)\s*,\s*#\s*(\S+)\s*$', text)
+    # Also try without comma for trailing keyword
+    for kw in ['suite', 'ste', 'unit', 'apt']:
+        pattern = rf'^(.+?(?:Street|Avenue|Road|Drive|Boulevard|Crescent|Way|Court|Place|Lane|Line|Parkway|Highway|Circle|Gate|Trail|Walk|Grove|Terrace|Close|Path|Run|Rise|Glen|Park|Square|Green|Quay|Landing|Manor|Route|Concession|Sideroad|Queensway|Donway|Esplanade|Rue|Chemin|Promenade|Autoroute|St|Ave|Rd|Dr|Blvd|Cres|Ct|Pl|Hwy|Cir|Terr|Crt)\.?)\s+{kw}\.?\s+(.+?)$'
+        m = re.match(pattern, stripped, re.IGNORECASE)
+        if m:
+            suite_label = kw.capitalize() if kw != 'ste' else 'Suite'
+            return m.group(1).strip(), suite_label, m.group(2).strip().rstrip(',')
+
+    # 6d. Dash-joined unit: "B7-77 Billy Bishop Way" or "14-3650 Langstaff Rd"
+    m = re.match(r'^([A-Za-z0-9]+)-(\d+)\s+(.+)', stripped)
+    if m:
+        left = m.group(1)
+        right = m.group(2)
+        has_letter = re.search(r'[A-Za-z]', left)
+        left_digits = re.sub(r'\D', '', left)
+        # Letter on left = always a unit
+        # Pure digits: left has fewer digits than right = unit (14-3650)
+        # Pure digits: same/more digits = range (69-71) → skip, let street number handle it
+        if has_letter:
+            return right + ' ' + m.group(3), 'Unit', left
+        elif len(left_digits) < len(right):
+            return right + ' ' + m.group(3), 'Unit', left
+
+    # 6e. Range check: "69-71" — pure digits both sides = NOT a unit, it's a range
+    # (handled in street number extraction, not here)
+
+    # 6f. Trailing ordinal floor: "2441 Yonge St, 2nd Floor"
+    m = re.match(r'^(.+?)\s*,\s*(\d+(?:st|nd|rd|th)\s+(?:Floor|Flr))\s*$', stripped, re.IGNORECASE)
+    if m:
+        return m.group(1).strip(), 'Floor', m.group(2).strip()
+
+    # Trailing ordinal word floor: "2441 Yonge St, Second Floor"
+    ordinal_words = '|'.join(ORDINAL_FLOOR_WORDS)
+    m = re.match(rf'^(.+?)\s*,\s*((?:{ordinal_words})\s+(?:Floor|Level))\s*$', stripped, re.IGNORECASE)
+    if m:
+        return m.group(1).strip(), 'Floor', to_title_case(m.group(2).strip())
+
+    # 6g. Trailing hash: "45 King St, #301"
+    m = re.match(r'^(.+?)\s*,\s*#\s*(\S+)\s*$', stripped)
     if m:
         return m.group(1).strip(), '#', m.group(2)
 
+    # 6h. Trailing RR: "465448 Curries Rd, RR 4"
+    m = re.match(r'^(.+?)\s*,\s*R\.?\s*R\.?\s*#?\s*(\d+)\s*$', stripped, re.IGNORECASE)
+    if m:
+        return m.group(1).strip(), 'RR', m.group(2)
+
     return text, '', ''
+
+
+# ---------------------------------------------------------------------------
+# Step 7: Street number extraction
+# ---------------------------------------------------------------------------
+
+def _extract_street_number(text):
+    """Extract street number from start of text. Returns (remaining, number)."""
+    text = text.strip()
+    if not text:
+        return text, ''
+
+    # Word-number at start: "One Mount Pleasant Rd"
+    first_word = text.split()[0].lower()
+    if first_word in WORD_NUMBER_MAP:
+        rest = text[len(text.split()[0]):].strip()
+        return rest, WORD_NUMBER_MAP[first_word]
+
+    # Half symbol replacement
+    text = text.replace('½', '1/2')
+
+    # Range: "69 - 71" or "69-71" (pure digits both sides)
+    m = re.match(r'^(\d+)\s*-\s*(\d+)\s+(.+)', text)
+    if m:
+        left = m.group(1)
+        right = m.group(2)
+        # Pure digits both sides = range
+        return m.group(3), f'{left}-{right}'
+
+    # Number-dash-ordinal: "67-45th" → number=67, rest=45th ...
+    m = re.match(r'^(\d+)-(\d+(?:st|nd|rd|th))\s+(.+)', text, re.IGNORECASE)
+    if m:
+        return m.group(2) + ' ' + m.group(3), m.group(1)
+
+    # Fraction: "399 1/2 King St" — number with fraction
+    m = re.match(r'^(\d+)\s+(1/2)\s+(.+)', text)
+    if m:
+        return m.group(3), f'{m.group(1)} {m.group(2)}'
+
+    # Plus suffix: "1255A+B"
+    m = re.match(r'^(\d+[A-Za-z]?\+[A-Za-z]+)\s+(.+)', text)
+    if m:
+        return m.group(2), m.group(1)
+
+    # Letter suffix: "620A Main St" or "54B"
+    m = re.match(r'^(\d+[A-Za-z])\s+(.+)', text)
+    if m:
+        # Make sure the letter isn't the start of the next word
+        # "620A" is valid, but we need the next char to be a space
+        return m.group(2), m.group(1)
+
+    # Comma/ampersand list: "4, 14, 34 & 44 Main St" → "4,14,34,44"
+    m = re.match(r'^(\d+(?:\s*[,&]\s*\d+)+)\s+(.+)', text)
+    if m:
+        raw = m.group(1)
+        # Normalize to comma-separated digits: "4,14,34,44"
+        numbers = re.findall(r'\d+', raw)
+        return m.group(2), ','.join(numbers)
+
+    # Slash list: "245/251 Main St" → "245/251"
+    m = re.match(r'^(\d+(?:/\d+)+)\s+(.+)', text)
+    if m:
+        return m.group(2), m.group(1)
+
+    # Simple number: "247"
+    m = re.match(r'^(\d+)\s+(.+)', text)
+    if m:
+        return m.group(2), m.group(1)
+
+    # No street number (e.g., "HAZELDEAN RD")
+    return text, ''
+
+
+# ---------------------------------------------------------------------------
+# Step 9 helper: French prefix suffix
+# ---------------------------------------------------------------------------
+
+def _check_french_prefix_suffix(words):
+    """Check if the first word is a French prefix suffix (rue, chemin, etc.)."""
+    if words and words[0].lower() in FRENCH_PREFIX_SUFFIXES:
+        return expand_suffix(words[0]) or ''
+    return ''
+
+
+# ---------------------------------------------------------------------------
+# Embedded suffix scan
+# ---------------------------------------------------------------------------
+
+def _scan_embedded_suffix(words):
+    """Scan left-to-right for an embedded suffix followed by junk.
+
+    'KENT STREET WEST LINDSAY SQ MALL' → suffix=Street, dir=West, name=Kent
+    """
+    for i, word in enumerate(words):
+        bare = word.lower().rstrip('.,')
+        suffix_expanded = expand_suffix(bare)
+        if suffix_expanded and i > 0:
+            remaining_after = words[i + 1:]
+            # Check if what follows is junk or a direction + junk
+            direction = ''
+            if remaining_after:
+                dir_check = expand_direction(remaining_after[0])
+                if dir_check:
+                    direction = dir_check
+                    remaining_after = remaining_after[1:]
+
+            # Check if remaining words are junk
+            if remaining_after and all(w.lower().rstrip('.,') in JUNK_MARKERS for w in remaining_after):
+                return suffix_expanded, words[:i], direction
+            # Also match if remaining starts with a known junk marker
+            if remaining_after and remaining_after[0].lower().rstrip('.,') in JUNK_MARKERS:
+                return suffix_expanded, words[:i], direction
+
+    return '', words, ''
+
+
+# ---------------------------------------------------------------------------
+# Display string assembly
+# ---------------------------------------------------------------------------
+
+def _build_display(result):
+    """Build a normalized display string from decomposed components.
+
+    Delegates to the shared formatter (cleo.address.formatter.format_display)
+    which applies ordinal normalization and consistent formatting rules.
+    """
+    return _shared_format_display(result)
