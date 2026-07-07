@@ -116,6 +116,7 @@ CREATE TABLE IF NOT EXISTS contacts (
     job_title       TEXT,
     company_name    TEXT,
     current_group_id TEXT,
+    current_auto_group_id TEXT,
     contact_type    TEXT,
     status          TEXT NOT NULL DEFAULT 'pool',
     source          TEXT DEFAULT 'transaction',
