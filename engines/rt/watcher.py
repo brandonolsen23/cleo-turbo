@@ -169,6 +169,16 @@ def run(once=False, interval=DEFAULT_INTERVAL, dry_run=False):
             log.info('No new records to process')
         else:
             log.error('Processing failed')
+        # Status file must be written in --once mode too — the scheduled
+        # daily run uses --once, and the Data Quality freshness card reads
+        # this file. Without it the card reports the watcher as absent.
+        if not dry_run:
+            safe_write_json(STATUS_FILE, {
+                'last_check': datetime.now(timezone.utc).isoformat(),
+                'last_count': count,
+                'watching': RAW_DIR,
+                'mode': 'once',
+            })
         return
 
     # Daemon loop

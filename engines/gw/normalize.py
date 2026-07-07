@@ -206,9 +206,9 @@ def normalize_record(record):
                 'city': city,
                 'province': 'ON',
                 'postal_code': postal if re.match(r'^[A-Z]\d[A-Z]', postal) else '',
-                'display_street': _title_case_street(street),
-                'display_city': city.title() if city else '',
-                'geocode_string': f'{_title_case_street(street)}, {city.title()}, Ontario, Canada' if street else None,
+                'display_street': to_title_case(street),
+                'display_city': to_title_case(city) if city else '',
+                'geocode_string': f'{to_title_case(street)}, {to_title_case(city)}, Ontario, Canada' if street else None,
             }
 
     if not best_address:

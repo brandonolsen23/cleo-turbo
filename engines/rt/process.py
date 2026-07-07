@@ -114,12 +114,22 @@ def _log_entry(stage, mode, files_processed, files_skipped, elapsed, errors):
 
 
 def _run_subprocess(cmd, cwd=None, label=''):
-    """Run a subprocess and return (success, elapsed, stdout)."""
+    """Run a subprocess and return (success, elapsed, stdout).
+
+    PROJECT_ROOT is prepended to PYTHONPATH so stage modules can import
+    the `cleo` package regardless of cwd (address_normalizer imports
+    cleo.address.dictionaries; without this the normalize stage dies with
+    ModuleNotFoundError under the orchestrator).
+    """
     start = time.time()
     print(f'  Running: {" ".join(cmd)}')
+    env = dict(os.environ)
+    env['PYTHONPATH'] = PROJECT_ROOT + (
+        os.pathsep + env['PYTHONPATH'] if env.get('PYTHONPATH') else ''
+    )
     result = subprocess.run(
         cmd, cwd=cwd or ENGINE_DIR,
-        capture_output=True, text=True, timeout=7200,
+        capture_output=True, text=True, timeout=7200, env=env,
     )
     elapsed = time.time() - start
     if result.stdout:

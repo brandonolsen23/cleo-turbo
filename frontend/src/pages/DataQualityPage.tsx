@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Heading, Text, Button, Badge } from "@radix-ui/themes";
+import { Database, MapPin, Storefront, Globe } from "@phosphor-icons/react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { fetchApi, mutateApi, postApi } from "../api/client";
 import { formatDate } from "../lib/utils";
@@ -45,9 +46,37 @@ const SEVERITY_COLORS: Record<string, any> = {
   error: "red", warning: "amber", info: "blue",
 };
 
+interface FreshnessSource {
+  source: string;
+  label: string;
+  status: "green" | "amber" | "red";
+  headline: string;
+  details: string[];
+  checked_at: string;
+}
+
+interface FreshnessResponse {
+  checked_at: string;
+  sources: FreshnessSource[];
+}
+
+const FRESHNESS_BADGE: Record<string, { color: any; label: string }> = {
+  green: { color: "jade", label: "Flowing" },
+  amber: { color: "amber", label: "Attention" },
+  red: { color: "red", label: "Stalled" },
+};
+
+const SOURCE_ICONS: Record<string, any> = {
+  rt: Database,
+  gw: MapPin,
+  pois: Storefront,
+  portfolio: Globe,
+};
+
 export default function DataQualityPage() {
   const navigate = useNavigate();
   const [summary, setSummary] = useState<Summary | null>(null);
+  const [freshness, setFreshness] = useState<FreshnessResponse | null>(null);
   const [issues, setIssues] = useState<BrowseResponse | null>(null);
   const [page, setPage] = useState(1);
   const [ruleFilter, setRuleFilter] = useState("");
@@ -67,7 +96,10 @@ export default function DataQualityPage() {
     fetchApi<BrowseResponse>("/data-quality/issues", params).then(setIssues);
   };
 
-  useEffect(() => { loadSummary(); }, []);
+  useEffect(() => {
+    loadSummary();
+    fetchApi<FreshnessResponse>("/data-quality/freshness").then(setFreshness).catch(() => {});
+  }, []);
   useEffect(() => { loadIssues(); }, [page, ruleFilter, severityFilter, stageFilter, statusFilter]);
 
   const handleScan = async () => {
@@ -119,6 +151,37 @@ export default function DataQualityPage() {
           <Button size="2" onClick={handleScan} disabled={scanning}>
             {scanning ? "Scanning..." : "Run Scan"}
           </Button>
+        </div>
+      </div>
+
+      {/* Source freshness */}
+      <div className="flex flex-col gap-3">
+        <Heading size="4" weight="medium">Source Freshness</Heading>
+        <div className="grid grid-cols-4 gap-4">
+          {(freshness?.sources ?? []).map((s) => {
+            const badge = FRESHNESS_BADGE[s.status] ?? FRESHNESS_BADGE.red;
+            const Icon = SOURCE_ICONS[s.source] ?? Database;
+            return (
+              <div key={s.source} className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5 flex flex-col gap-2">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Icon size={16} style={{ color: "var(--gray-9)" }} />
+                    <Text size="2" weight="medium">{s.label}</Text>
+                  </div>
+                  <Badge size="1" color={badge.color} variant="soft">{badge.label}</Badge>
+                </div>
+                <Text size="2" weight="medium" className="block">{s.headline}</Text>
+                <div className="flex flex-col gap-1">
+                  {s.details.map((d, i) => (
+                    <Text key={i} size="1" className="block" style={{ color: "var(--gray-11)" }}>{d}</Text>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+          {!freshness && (
+            <Text size="2" style={{ color: "var(--gray-8)" }}>Checking sources...</Text>
+          )}
         </div>
       </div>
 

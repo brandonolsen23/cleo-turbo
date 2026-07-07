@@ -118,10 +118,16 @@ def process_batch(files):
             json.dump(record, f, indent=2, ensure_ascii=False)
         new_records.append((gw_id, record))
 
-    # Step 3: Normalize
+    # Step 3: Normalize — per-record guard: one bad record must not kill the
+    # batch (files are already copied to HTML_DIR by step 1, so a batch-level
+    # crash here strands every file in the batch as "ingested" forever).
     normalized_records = []
     for gw_id, record in new_records:
-        normalized = normalize_record(record)
+        try:
+            normalized = normalize_record(record)
+        except Exception as e:
+            log.error(f'Normalize failed for {gw_id}: {e} — skipped')
+            continue
         with open(os.path.join(NORMALIZED_DIR, f'{gw_id}.json'), 'w') as f:
             json.dump(normalized, f, indent=2, ensure_ascii=False)
         normalized_records.append((gw_id, normalized))

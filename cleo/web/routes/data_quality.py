@@ -341,3 +341,249 @@ def review_queue(
     pages = (total + per_page - 1) // per_page
     return {"results": results, "total": total, "page": page,
             "per_page": per_page, "pages": pages}
+
+
+# ── Source freshness (D5 Layer-1 observability) ─────────────────────
+
+import json as _json
+from datetime import datetime, timezone
+
+_PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+
+
+def _parse_ts(value):
+    """Parse an ISO-ish timestamp ('2026-07-06T21:04:27+00:00', '2026-07-06 21:07:00',
+    or '2026-07-06') into an aware datetime, or None."""
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
+
+
+def _fmt_day(value):
+    """'2026-07-06...' → 'Jul 6'. Falls back to the raw string."""
+    dt = _parse_ts(value)
+    if not dt:
+        return str(value) if value else "unknown"
+    return f"{dt.strftime('%b')} {dt.day}"
+
+
+def _days_ago(value):
+    dt = _parse_ts(value)
+    if not dt:
+        return None
+    return (datetime.now(timezone.utc) - dt).total_seconds() / 86400.0
+
+
+def _rt_freshness(db):
+    """Realtrack: scrape runs + watcher + DB recency."""
+    daily_dir = os.path.join(_PROJECT_ROOT, 'raw-data', 'rt', 'pages', '_daily')
+    runs = []
+    if os.path.isdir(daily_dir):
+        subdirs = sorted(
+            (d for d in os.listdir(daily_dir)
+             if os.path.isdir(os.path.join(daily_dir, d))),
+            reverse=True,
+        )
+        for name in subdirs[:40]:
+            run_path = os.path.join(daily_dir, name, '_run.json')
+            if not os.path.exists(run_path):
+                continue
+            try:
+                with open(run_path) as f:
+                    r = _json.load(f)
+            except (ValueError, OSError):
+                continue
+            r.pop('new_rt_ids', None)  # huge list — never ship it
+            runs.append(r)
+
+    latest = next((r for r in runs if r.get('completed_at')), None)
+    last_new = next((r for r in runs if (r.get('new_downloaded') or 0) > 0), None)
+
+    # Status: green = successful run within 2 days AND verification ok
+    status = "red"
+    if latest:
+        age = _days_ago(latest.get('completed_at'))
+        if age is not None and age <= 2:
+            status = "green" if latest.get('verification_ok') else "amber"
+        elif age is not None and age <= 6:
+            status = "amber"
+
+    if last_new:
+        headline = (f"Last new data: {_fmt_day(last_new.get('completed_at'))} · "
+                    f"{last_new.get('new_downloaded', 0)} new records in that sweep")
+    elif latest:
+        headline = f"Last sweep {_fmt_day(latest.get('completed_at'))} — no new records found"
+    else:
+        headline = "No scrape runs found"
+
+    details = []
+    if latest:
+        details.append(
+            f"Latest sweep: {_fmt_day(latest.get('completed_at'))} · "
+            f"{latest.get('total_found', 0)} found, {latest.get('new_downloaded', 0)} downloaded · "
+            f"verification {'ok' if latest.get('verification_ok') else 'FAILED'}"
+        )
+
+    # Watcher / pipeline status
+    watcher_path = os.path.join(_PROJECT_ROOT, 'data', 'rt-watcher-status.json')
+    watcher = None
+    if os.path.exists(watcher_path):
+        try:
+            with open(watcher_path) as f:
+                watcher = _json.load(f)
+        except (ValueError, OSError):
+            watcher = None
+    if watcher:
+        details.append(
+            f"Watcher: last cycle {_fmt_day(watcher.get('last_check'))} · "
+            f"{watcher.get('last_count', 0)} records processed"
+        )
+    else:
+        details.append("Watcher: no status file — watcher may not be running")
+
+    row = db.execute(
+        "SELECT COUNT(*), MAX(sale_date), MAX(created_at) FROM transactions"
+    ).fetchone()
+    tx_count, max_sale, max_created = row[0], row[1], row[2]
+    details.append(
+        f"DB: {tx_count:,} transactions · newest sale date {_fmt_day(max_sale)} · "
+        f"last import {_fmt_day(max_created)}"
+    )
+
+    return {
+        "source": "rt",
+        "label": "Realtrack",
+        "status": status,
+        "headline": headline,
+        "details": details,
+        "checked_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def _gw_file_day(fname):
+    """'geowarehouse-2026-07-02T18-05-48-050Z.html' → '2026-07-02' (or None)."""
+    stem = fname[len('geowarehouse-'):]
+    day = stem[:10]
+    return day if len(day) == 10 and day[4] == '-' and day[7] == '-' else None
+
+
+def _gw_freshness(db):
+    """GeoWarehouse: watched-folder ingested vs pending. Manual, quota-limited
+    source — absence of new files is normal, only a stale backlog is amber."""
+    watch_dir = os.path.join(os.path.expanduser('~'), 'Downloads', 'GeoWarehouse', 'gw-ingest-data')
+    html_dir = os.path.join(_PROJECT_ROOT, 'engines', 'gw', 'pipeline', 'html')
+
+    def _gw_files(d):
+        if not os.path.isdir(d):
+            return []
+        return [f for f in os.listdir(d)
+                if f.startswith('geowarehouse-') and f.endswith('.html')]
+
+    ingested = _gw_files(html_dir)
+    watch = _gw_files(watch_dir)
+    pending = sorted(set(watch) - set(ingested))
+
+    ingested_days = sorted(filter(None, (_gw_file_day(f) for f in ingested)))
+    pending_days = sorted(filter(None, (_gw_file_day(f) for f in pending)))
+    newest_ingested = ingested_days[-1] if ingested_days else None
+    oldest_pending = pending_days[0] if pending_days else None
+    newest_pending = pending_days[-1] if pending_days else None
+
+    status = "green"
+    if pending:
+        age = _days_ago(oldest_pending)
+        if age is not None and age > 3:
+            status = "amber"
+
+    if pending:
+        headline = (f"{len(pending)} files pending ingest · "
+                    f"oldest {_fmt_day(oldest_pending)}, newest {_fmt_day(newest_pending)}")
+    else:
+        headline = f"No pending backlog · {len(ingested):,} files ingested"
+
+    details = [
+        f"{len(ingested):,} files ingested total"
+        + (f" · newest {_fmt_day(newest_ingested)}" if newest_ingested else ""),
+        "Manual source — quota-limited, no new files is normal",
+    ]
+    if not os.path.isdir(watch_dir):
+        details.append("Watched folder not found (~/Downloads/GeoWarehouse/gw-ingest-data)")
+
+    return {
+        "source": "gw",
+        "label": "GeoWarehouse",
+        "status": status,
+        "headline": headline,
+        "details": details,
+        "checked_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def _pois_freshness(db):
+    """POIs (OSM): one-time import, manual monthly refresh planned. Always green."""
+    row = db.execute("SELECT COUNT(*), MAX(created_at) FROM pois").fetchone()
+    count, max_created = row[0], row[1]
+    return {
+        "source": "pois",
+        "label": "POIs (OSM)",
+        "status": "green",
+        "headline": f"{count:,} POIs · last compiled {_fmt_day(max_created)}",
+        "details": [
+            "Manual refresh — monthly planned",
+            "One-time OSM import; rebuilt with each compiler run",
+        ],
+        "checked_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def _portfolio_freshness(db):
+    """Portfolio Capture: manual per-group captures via the capture pipeline."""
+    try:
+        row = db.execute("SELECT COUNT(*), MAX(captured_at) FROM manual_owner_links").fetchone()
+        count, max_captured = row[0], row[1]
+    except Exception:
+        count, max_captured = 0, None
+
+    if count > 0:
+        headline = f"{count:,} owner links · last capture {_fmt_day(max_captured)}"
+    else:
+        headline = "No captures committed yet"
+
+    return {
+        "source": "portfolio",
+        "label": "Portfolio Capture",
+        "status": "green",
+        "headline": headline,
+        "details": [
+            "Manual source — captures land via the capture pipeline",
+            "Freshness is per-group (captured_at on each link)",
+        ],
+        "checked_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+@router.get("/freshness")
+def source_freshness(db=Depends(get_db), user=Depends(get_current_user)):
+    """One freshness entry per raw data source (D5 Layer-1 observability).
+    All status logic is computed here — the client only displays."""
+    sources = []
+    for builder in (_rt_freshness, _gw_freshness, _pois_freshness, _portfolio_freshness):
+        try:
+            sources.append(builder(db))
+        except Exception as e:
+            name = builder.__name__.replace('_freshness', '').lstrip('_')
+            sources.append({
+                "source": name,
+                "label": name,
+                "status": "red",
+                "headline": f"Freshness check failed: {e}",
+                "details": [],
+                "checked_at": datetime.now(timezone.utc).isoformat(),
+            })
+    return {"checked_at": datetime.now(timezone.utc).isoformat(), "sources": sources}
