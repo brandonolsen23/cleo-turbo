@@ -587,3 +587,156 @@ def source_freshness(db=Depends(get_db), user=Depends(get_current_user)):
                 "checked_at": datetime.now(timezone.utc).isoformat(),
             })
     return {"checked_at": datetime.now(timezone.utc).isoformat(), "sources": sources}
+
+
+# ── Join health (Phase 1 join-health metrics, data-doctrine §9) ──────
+# How much of each data channel successfully resolves to a parcel — the
+# health metric of the middle tier. All numbers are computed here; the
+# client only displays. Metric shape: {key, label, numerator, denominator,
+# pct, detail}.
+
+
+def _pct(num, den):
+    """Percentage rounded to one decimal; 0.0 when the denominator is 0."""
+    return round(100.0 * num / den, 1) if den else 0.0
+
+
+def _tx_join_health(db):
+    """Transactions → parcel: RT transactions with a resolved property_id."""
+    total, resolved = db.execute(
+        "SELECT COUNT(*), COUNT(property_id) FROM transactions"
+    ).fetchone()
+    fixable = db.execute(
+        "SELECT COUNT(*) FROM transactions "
+        "WHERE property_id IS NULL AND arn IS NOT NULL AND arn <> ''"
+    ).fetchone()[0]
+    unresolved = total - resolved
+    detail = f"{unresolved:,} unresolved"
+    if fixable:
+        detail += f" · {fixable:,} of those have an ARN (fixable joins)"
+    else:
+        detail += " · none carry an ARN, so no quick fixes are waiting"
+    return {
+        "key": "transactions",
+        "label": "Transactions → Parcel",
+        "numerator": resolved,
+        "denominator": total,
+        "pct": _pct(resolved, total),
+        "detail": detail,
+    }
+
+
+def _poi_join_health(db):
+    """POIs → parcel: OSM POIs with a resolved property_id."""
+    total, resolved = db.execute(
+        "SELECT COUNT(*), COUNT(property_id) FROM pois"
+    ).fetchone()
+    fixable = db.execute(
+        "SELECT COUNT(*) FROM pois "
+        "WHERE property_id IS NULL AND arn IS NOT NULL AND arn <> ''"
+    ).fetchone()[0]
+    unresolved = total - resolved
+    detail = f"{unresolved:,} unresolved"
+    if fixable:
+        detail += f" · {fixable:,} of those have an ARN (fixable joins)"
+    else:
+        detail += " · none carry an ARN, so no quick fixes are waiting"
+    return {
+        "key": "pois",
+        "label": "POIs → Parcel",
+        "numerator": resolved,
+        "denominator": total,
+        "pct": _pct(resolved, total),
+        "detail": detail,
+    }
+
+
+def _gw_join_health(db):
+    """GW assessments → parcel: GeoWarehouse reports linked to a property."""
+    total, resolved = db.execute(
+        "SELECT COUNT(*), COUNT(property_id) FROM gw_assessments"
+    ).fetchone()
+    fixable = db.execute(
+        "SELECT COUNT(*) FROM gw_assessments "
+        "WHERE property_id IS NULL AND arn IS NOT NULL AND arn <> ''"
+    ).fetchone()[0]
+    unresolved = total - resolved
+    detail = f"{unresolved:,} unresolved"
+    if fixable:
+        detail += f" · {fixable:,} of those have an ARN (fixable joins)"
+    else:
+        detail += " · none carry an ARN, so no quick fixes are waiting"
+    return {
+        "key": "gw",
+        "label": "GW Assessments → Parcel",
+        "numerator": resolved,
+        "denominator": total,
+        "pct": _pct(resolved, total),
+        "detail": detail,
+    }
+
+
+def _ownership_join_health(db):
+    """Ownership coverage: properties with a current owner group vs dark."""
+    total, owned = db.execute(
+        "SELECT COUNT(*), COUNT(current_owner_group_id) FROM properties"
+    ).fetchone()
+    dark = total - owned
+    return {
+        "key": "ownership",
+        "label": "Properties With Known Owner",
+        "numerator": owned,
+        "denominator": total,
+        "pct": _pct(owned, total),
+        "detail": f"{dark:,} dark properties ({_pct(dark, total)}%) · the prospecting frontier",
+    }
+
+
+def _grocery_join_health(db):
+    """Grocery POI ownership: grocery locations (excl. Shoppers Drug Mart)
+    sitting on a parcel with a known owner group."""
+    total, unlinked, owned, unowned = db.execute(
+        """SELECT COUNT(*),
+                  SUM(CASE WHEN po.property_id IS NULL THEN 1 ELSE 0 END),
+                  SUM(CASE WHEN po.property_id IS NOT NULL
+                            AND p.current_owner_group_id IS NOT NULL THEN 1 ELSE 0 END),
+                  SUM(CASE WHEN po.property_id IS NOT NULL
+                            AND p.current_owner_group_id IS NULL THEN 1 ELSE 0 END)
+           FROM pois po
+           LEFT JOIN properties p ON p.id = po.property_id
+           WHERE po.category = 'Grocery' AND po.brand <> 'Shoppers Drug Mart'"""
+    ).fetchone()
+    unlinked = unlinked or 0
+    owned = owned or 0
+    unowned = unowned or 0
+    return {
+        "key": "grocery",
+        "label": "Grocery POIs With Known Owner",
+        "numerator": owned,
+        "denominator": total,
+        "pct": _pct(owned, total),
+        "detail": (f"{owned:,} owned · {unowned:,} on parcels with no owner · "
+                   f"{unlinked:,} not linked to a parcel"),
+    }
+
+
+@router.get("/join-health")
+def join_health(db=Depends(get_db), user=Depends(get_current_user)):
+    """One entry per data channel: how much of it resolves to a parcel
+    (and, for ownership metrics, to an owner group)."""
+    metrics = []
+    for builder in (_tx_join_health, _poi_join_health, _gw_join_health,
+                    _ownership_join_health, _grocery_join_health):
+        try:
+            metrics.append(builder(db))
+        except Exception as e:
+            name = builder.__name__.replace('_join_health', '').lstrip('_')
+            metrics.append({
+                "key": name,
+                "label": name,
+                "numerator": 0,
+                "denominator": 0,
+                "pct": 0.0,
+                "detail": f"Join-health check failed: {e}",
+            })
+    return {"checked_at": datetime.now(timezone.utc).isoformat(), "metrics": metrics}

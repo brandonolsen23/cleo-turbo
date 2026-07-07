@@ -11,6 +11,7 @@ import {
 } from "../lib/utils";
 import { propertyTypeLabel, propertyTypeColor } from "../lib/theme";
 import HqPicker from "../components/group/HqPicker";
+import EvidenceTab from "../components/group/EvidenceTab";
 import { Reportable, useIssueReporter } from "../components/issues/IssueReporter";
 import { Info } from "@phosphor-icons/react";
 import AttributionStrip from "../components/crm/AttributionStrip";
@@ -582,6 +583,7 @@ export default function GroupDetailPage() {
           </Tabs.Trigger>
           <Tabs.Trigger value="contacts">Contacts ({group.total_contact_count})</Tabs.Trigger>
           <Tabs.Trigger value="spvs">SPVs ({group.constituent_legacy_groups.length})</Tabs.Trigger>
+          <Tabs.Trigger value="evidence">Evidence</Tabs.Trigger>
           <Tabs.Trigger value="activity">Activity</Tabs.Trigger>
         </Tabs.List>
 
@@ -594,6 +596,9 @@ export default function GroupDetailPage() {
           </Tabs.Content>
           <Tabs.Content value="spvs">
             <SpvsTab group={group} />
+          </Tabs.Content>
+          <Tabs.Content value="evidence">
+            <EvidenceTab groupId={group.id} />
           </Tabs.Content>
           <Tabs.Content value="activity">
             <ActivityFeed entityType="group" entityId={group.id} />

@@ -2693,3 +2693,68 @@ export interface IssueReportContext {
   // Human-readable label for the "Reporting:" header in the modal
   contextLabel?: string;
 }
+
+// ── Group evidence + verdicts (doctrine D4 flywheel) ──────────────────
+
+export interface GroupEvidenceFact {
+  kind:
+    | "shared_address"
+    | "shared_phone"
+    | "shared_contact"
+    | "name_stem"
+    | "numbered_corp_name";
+  value: string | null;
+  raw_value: string | null;
+  detail: string;
+  shared_with: number;
+  source: string; // provenance tag, always displayed (D8)
+  is_anchor: boolean;
+  anchor_score: number | null;
+}
+
+export interface GroupVerdictRow {
+  id: number;
+  auto_group_id: string;
+  scope: "group" | "member";
+  member_ref: string | null;
+  verdict: "confirm" | "reject";
+  reason: string | null;
+  actor: string;
+  created_at: string;
+}
+
+export interface GroupEvidenceMember {
+  member_type: "party_side" | "numbered_corp";
+  member_ref: string;
+  source_id: string | null;
+  side: string | null;
+  corp_name: string | null;
+  match_score: number;
+  display_name: string | null;
+  mailing_display: string | null;
+  sale_date: string | null;
+  transaction_address: string | null;
+  transaction_city: string | null;
+  facts: GroupEvidenceFact[];
+  verdict: GroupVerdictRow | null;
+}
+
+export interface GroupEvidenceAnchor {
+  anchor_type: string;
+  anchor_value: string;
+  display_value: string;
+  score: number;
+}
+
+export interface GroupEvidenceResponse {
+  auto_group_id: string;
+  display_name: string;
+  canonical_stem: string;
+  tier: string;
+  confidence: number | null;
+  total_members: number;
+  shown_members: number;
+  anchors: GroupEvidenceAnchor[];
+  members: GroupEvidenceMember[];
+  group_verdict: GroupVerdictRow | null;
+}

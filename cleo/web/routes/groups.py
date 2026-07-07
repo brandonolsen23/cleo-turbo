@@ -12,6 +12,8 @@ the group. Legacy promote/engage/search/create endpoints are retired.
 """
 
 import json
+import sqlite3
+from collections import Counter
 from typing import Optional
 from fastapi import APIRouter, Depends, Query, HTTPException
 from pydantic import BaseModel
@@ -818,3 +820,467 @@ def group_attribution(group_id: str, db=Depends(get_db), user=Depends(get_curren
     aid = resolve_auto_group_id(db, group_id)
     return attribution_for(db, "auto_group_id", aid)
 
+
+
+# ── Evidence + verdicts (doctrine D4 front half) ─────────────────────
+#
+# Every auto-group must SHOW WHY its members were grouped (D4/D8), and the
+# user records one-tap confirm/reject verdicts that accumulate as ground
+# truth for the future algorithm scoreboard.
+#
+# Evidence is derived LIVE per group from the same interpretation tables the
+# discovery_v2 algorithm reads (party_fingerprints, auto_group_anchors,
+# party_atoms + brand_stem_phrase_map). The discovery_evidence table is NOT
+# used: it is keyed to legacy GRP_ ids and was last written by the retired v1
+# engine (last run 2026-04-18) — stale and wrong-keyed for auto_groups.
+#
+# Verdicts land in auto_group_verdicts (migration 037): append-only history,
+# keyed to stable AGRP_ ids + member refs ("<source_id>:<side>" for
+# party-sides, "corp:<name>" for numbered corps). Latest row per
+# (scope, member_ref) wins on read.
+
+
+def _format_canonical_address(canon: Optional[str]) -> Optional[str]:
+    """Render 'city|number|name|suffix|direction|suite_type|suite_number'
+    (party_address_canonical / address_unit anchor format) as a readable
+    address. Falls back to the raw value if the shape is unexpected."""
+    if not canon:
+        return canon
+    parts = canon.split("|")
+    if len(parts) < 4:
+        return canon
+    city = parts[0]
+    street_bits = [p for p in parts[1:5] if p]
+    suite_no = parts[6] if len(parts) > 6 else ""
+    out = " ".join(street_bits)
+    if suite_no:
+        out += f" suite {suite_no}"
+    if city:
+        out = f"{out}, {city}" if out else city
+    return out or canon
+
+
+def _member_ref(row) -> str:
+    """Stable member identifier for verdicts.
+
+    party_side    → "<source_id>:<side>"   e.g. "RT180025:buyer"
+    numbered_corp → "corp:<corp_name>"     e.g. "corp:1865087 ontario"
+    """
+    if row["member_type"] == "numbered_corp":
+        return f"corp:{row['corp_name']}"
+    return f"{row['source_id']}:{row['side']}"
+
+
+def _latest_verdicts(db, aid: str) -> tuple[Optional[dict], dict]:
+    """(group_verdict, {member_ref: verdict_row}) — latest row per scope+ref
+    wins; full history stays in the table. Tolerates a DB copy that predates
+    migration 037 by returning empty."""
+    try:
+        rows = db.execute(
+            "SELECT id, auto_group_id, scope, member_ref, verdict, reason, "
+            "       actor, created_at "
+            "FROM auto_group_verdicts WHERE auto_group_id = ? ORDER BY id",
+            (aid,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return None, {}
+    latest: dict = {}
+    for r in rows:
+        latest[(r["scope"], r["member_ref"])] = dict(r)
+    group_verdict = latest.get(("group", None))
+    member_verdicts = {ref: v for (scope, ref), v in latest.items()
+                       if scope == "member" and ref}
+    return group_verdict, member_verdicts
+
+
+@router.get("/{group_id}/evidence")
+def group_evidence(
+    group_id: str,
+    limit: int = Query(200, ge=1, le=1000),
+    db=Depends(get_db),
+    user=Depends(get_current_user),
+):
+    """Per-member evidence for WHY this auto_group's members were grouped.
+
+    For each member, the concrete linking facts — shared normalized mailing
+    address, shared phone, shared contact name, and SPV-name phrases matching
+    the group's canonical stem — each tagged with its source (D8). Facts are
+    only asserted when actually shared with another member or when they are a
+    seeding anchor; a member with nothing shared gets an empty facts list and
+    the UI says so honestly.
+    """
+    aid = resolve_auto_group_id(db, group_id)
+    ag = db.execute(
+        "SELECT auto_group_id, display_name, canonical_stem, tier, confidence "
+        "FROM auto_groups WHERE auto_group_id = ?",
+        (aid,),
+    ).fetchone()
+    if not ag:
+        raise HTTPException(status_code=404, detail="Group not found")
+    stem = ag["canonical_stem"]
+
+    # Seeding anchors (precomputed by discovery_v2 Stage A3)
+    anchors = {
+        (r["anchor_type"], r["anchor_value"]): r["score"]
+        for r in db.execute(
+            "SELECT anchor_type, anchor_value, score "
+            "FROM auto_group_anchors WHERE auto_group_id = ?",
+            (aid,),
+        )
+    }
+
+    total_members = db.execute(
+        "SELECT COUNT(*) FROM auto_group_members WHERE auto_group_id = ?",
+        (aid,),
+    ).fetchone()[0]
+
+    members = db.execute(
+        "SELECT member_type, source_id, side, corp_name, match_score "
+        "FROM auto_group_members WHERE auto_group_id = ? "
+        "ORDER BY member_type ASC, match_score DESC, source_id ASC, corp_name ASC "
+        "LIMIT ?",
+        (aid, limit),
+    ).fetchall()
+
+    # Fingerprints for ALL party-side members (share counts must span the
+    # whole group, not just the displayed page). Bounded by group size.
+    full_fp = db.execute(
+        """
+        SELECT agm.source_id, agm.side,
+               pf.party_address_canonical, pf.phone, pf.contact_fingerprint
+        FROM auto_group_members agm
+        LEFT JOIN party_fingerprints pf
+          ON pf.source_id = agm.source_id AND pf.side = agm.side
+        WHERE agm.auto_group_id = ? AND agm.member_type = 'party_side'
+        """,
+        (aid,),
+    ).fetchall()
+    fp_by_member = {(r["source_id"], r["side"]): r for r in full_fp}
+    addr_counts = Counter(r["party_address_canonical"] for r in full_fp
+                          if r["party_address_canonical"])
+    phone_counts = Counter(r["phone"] for r in full_fp if r["phone"])
+    contact_counts = Counter(r["contact_fingerprint"] for r in full_fp
+                             if r["contact_fingerprint"])
+
+    # Name-stem phrases: brand phrases on member party-sides that map to the
+    # group's canonical stem (the n-gram evidence). One bounded query.
+    stem_phrases: dict[tuple, list] = {}
+    for r in db.execute(
+        """
+        SELECT pa.source_id, pa.side, pa.atom_value, pa.source_field
+        FROM party_atoms pa
+        JOIN brand_stem_phrase_map m
+          ON m.phrase = pa.atom_value AND m.stem = ?
+        JOIN auto_group_members agm
+          ON agm.auto_group_id = ? AND agm.member_type = 'party_side'
+         AND agm.source_id = pa.source_id AND agm.side = pa.side
+        WHERE pa.atom_type = 'brand_phrase'
+        """,
+        (stem, aid),
+    ):
+        stem_phrases.setdefault((r["source_id"], r["side"]), []).append(
+            {"phrase": r["atom_value"], "source_field": r["source_field"]}
+        )
+    n_stem_members = len(stem_phrases)
+
+    # Display context for the page's party-side members: party name, txn
+    # date/address, mailing display. Batched IN-list queries.
+    page_party = [(r["source_id"], r["side"]) for r in members
+                  if r["member_type"] == "party_side"]
+    page_sids = sorted({s for s, _ in page_party})
+    names: dict[tuple, str] = {}
+    txinfo: dict[str, dict] = {}
+    mailing: dict[tuple, str] = {}
+    if page_sids:
+        ph = ",".join("?" for _ in page_sids)
+        for r in db.execute(
+            f"SELECT source_id, side, party_name FROM transaction_parties "
+            f"WHERE source_id IN ({ph}) ORDER BY id",
+            page_sids,
+        ):
+            key = (r["source_id"], r["side"])
+            if key not in names and (r["party_name"] or "").strip():
+                names[key] = r["party_name"].strip()
+        for r in db.execute(
+            f"SELECT source_id, sale_date, display_address, city "
+            f"FROM transactions WHERE source_id IN ({ph})",
+            page_sids,
+        ):
+            txinfo[r["source_id"]] = dict(r)
+        for r in db.execute(
+            f"SELECT source_id, side, display, city "
+            f"FROM transaction_mailing_addresses WHERE source_id IN ({ph})",
+            page_sids,
+        ):
+            key = (r["source_id"], r["side"])
+            if key not in mailing and r["display"]:
+                disp = r["display"]
+                if r["city"] and r["city"].lower() not in disp.lower():
+                    disp = f"{disp}, {r['city']}"
+                mailing[key] = disp
+
+    # Numbered corps: on how many member party-sides did this corp name
+    # appear as a brand phrase? (That appearance is WHY it's a member.)
+    corp_names = [r["corp_name"] for r in members
+                  if r["member_type"] == "numbered_corp" and r["corp_name"]]
+    corp_counts: dict[str, int] = {}
+    if corp_names:
+        ph = ",".join("?" for _ in corp_names)
+        for r in db.execute(
+            f"""
+            SELECT pa.atom_value, COUNT(DISTINCT pa.source_id || '|' || pa.side) AS n
+            FROM party_atoms pa
+            JOIN auto_group_members agm
+              ON agm.auto_group_id = ? AND agm.member_type = 'party_side'
+             AND agm.source_id = pa.source_id AND agm.side = pa.side
+            WHERE pa.atom_type = 'brand_phrase' AND pa.atom_value IN ({ph})
+            GROUP BY pa.atom_value
+            """,
+            [aid] + corp_names,
+        ):
+            corp_counts[r["atom_value"]] = r["n"]
+
+    group_verdict, member_verdicts = _latest_verdicts(db, aid)
+
+    out_members = []
+    for m in members:
+        ref = _member_ref(m)
+        facts: list[dict] = []
+
+        if m["member_type"] == "party_side":
+            key = (m["source_id"], m["side"])
+            fp = fp_by_member.get(key)
+
+            if fp is not None:
+                canon = fp["party_address_canonical"]
+                if canon:
+                    n_other = addr_counts[canon] - 1
+                    is_anchor = ("address_unit", canon) in anchors
+                    if n_other >= 1 or is_anchor:
+                        facts.append({
+                            "kind": "shared_address",
+                            "value": _format_canonical_address(canon),
+                            "raw_value": canon,
+                            "detail": (
+                                f"shares mailing address with {n_other} other "
+                                f"member{'s' if n_other != 1 else ''}"
+                                if n_other >= 1 else
+                                "seeding anchor address (unique among shown members)"
+                            ),
+                            "shared_with": n_other,
+                            "source": "RT party mailing address",
+                            "is_anchor": is_anchor,
+                            "anchor_score": anchors.get(("address_unit", canon)),
+                        })
+                phone = fp["phone"]
+                if phone:
+                    n_other = phone_counts[phone] - 1
+                    is_anchor = ("phone", phone) in anchors
+                    if n_other >= 1 or is_anchor:
+                        facts.append({
+                            "kind": "shared_phone",
+                            "value": phone,
+                            "raw_value": phone,
+                            "detail": (
+                                f"shares phone with {n_other} other "
+                                f"member{'s' if n_other != 1 else ''}"
+                                if n_other >= 1 else
+                                "seeding anchor phone (unique among shown members)"
+                            ),
+                            "shared_with": n_other,
+                            "source": "RT party block",
+                            "is_anchor": is_anchor,
+                            "anchor_score": anchors.get(("phone", phone)),
+                        })
+                contact = fp["contact_fingerprint"]
+                if contact:
+                    n_other = contact_counts[contact] - 1
+                    is_anchor = ("contact", contact) in anchors
+                    if n_other >= 1 or is_anchor:
+                        facts.append({
+                            "kind": "shared_contact",
+                            "value": contact,
+                            "raw_value": contact,
+                            "detail": (
+                                f"shares contact name with {n_other} other "
+                                f"member{'s' if n_other != 1 else ''}"
+                                if n_other >= 1 else
+                                "seeding anchor contact (unique among shown members)"
+                            ),
+                            "shared_with": n_other,
+                            "source": "RT contact block",
+                            "is_anchor": is_anchor,
+                            "anchor_score": anchors.get(("contact", contact)),
+                        })
+
+            for sp in stem_phrases.get(key, []):
+                facts.append({
+                    "kind": "name_stem",
+                    "value": sp["phrase"],
+                    "raw_value": sp["phrase"],
+                    "detail": (
+                        f"name phrase matches group stem '{stem}' "
+                        f"(seen on {n_stem_members} member"
+                        f"{'s' if n_stem_members != 1 else ''})"
+                    ),
+                    "shared_with": max(0, n_stem_members - 1),
+                    "source": f"RT {sp['source_field']}",
+                    "is_anchor": False,
+                    "anchor_score": None,
+                })
+
+            tx = txinfo.get(m["source_id"], {})
+            out_members.append({
+                "member_type": "party_side",
+                "member_ref": ref,
+                "source_id": m["source_id"],
+                "side": m["side"],
+                "corp_name": None,
+                "match_score": m["match_score"],
+                "display_name": names.get(key),
+                "mailing_display": mailing.get(key),
+                "sale_date": tx.get("sale_date"),
+                "transaction_address": tx.get("display_address"),
+                "transaction_city": tx.get("city"),
+                "facts": facts,
+                "verdict": member_verdicts.get(ref),
+            })
+        else:
+            n_sides = corp_counts.get(m["corp_name"], 0)
+            if n_sides >= 1:
+                facts.append({
+                    "kind": "numbered_corp_name",
+                    "value": m["corp_name"],
+                    "raw_value": m["corp_name"],
+                    "detail": (
+                        f"numbered company name appeared on {n_sides} member "
+                        f"party-side{'s' if n_sides != 1 else ''}"
+                    ),
+                    "shared_with": n_sides,
+                    "source": "RT party name",
+                    "is_anchor": False,
+                    "anchor_score": None,
+                })
+            out_members.append({
+                "member_type": "numbered_corp",
+                "member_ref": ref,
+                "source_id": None,
+                "side": None,
+                "corp_name": m["corp_name"],
+                "match_score": m["match_score"],
+                "display_name": m["corp_name"],
+                "mailing_display": None,
+                "sale_date": None,
+                "transaction_address": None,
+                "transaction_city": None,
+                "facts": facts,
+                "verdict": member_verdicts.get(ref),
+            })
+
+    return {
+        "auto_group_id": aid,
+        "display_name": ag["display_name"],
+        "canonical_stem": stem,
+        "tier": ag["tier"],
+        "confidence": ag["confidence"],
+        "total_members": total_members,
+        "shown_members": len(out_members),
+        "anchors": [
+            {
+                "anchor_type": t,
+                "anchor_value": v,
+                "display_value": _format_canonical_address(v) if t == "address_unit" else v,
+                "score": s,
+            }
+            for (t, v), s in sorted(anchors.items())
+        ],
+        "members": out_members,
+        "group_verdict": group_verdict,
+    }
+
+
+class GroupVerdictRequest(BaseModel):
+    scope: str                       # 'group' | 'member'
+    member_ref: Optional[str] = None # required when scope == 'member'
+    verdict: str                     # 'confirm' | 'reject'
+    reason: Optional[str] = None
+
+
+@router.post("/{group_id}/verdict")
+def record_group_verdict(group_id: str, body: GroupVerdictRequest,
+                         db=Depends(get_db), user=Depends(get_current_user)):
+    """Record a confirm/reject verdict on a grouping (D4 flywheel judgment).
+
+    Append-only: every call writes a new history row; reads take the latest
+    row per (scope, member_ref). Verdicts are keyed to stable IDs
+    (AGRP_ id + RT source_id/side or corp name) so they survive rebuilds and
+    feed the future algorithm scoreboard.
+    """
+    aid = resolve_auto_group_id(db, group_id)
+
+    if body.scope not in ("group", "member"):
+        raise HTTPException(status_code=400, detail="scope must be 'group' or 'member'")
+    if body.verdict not in ("confirm", "reject"):
+        raise HTTPException(status_code=400, detail="verdict must be 'confirm' or 'reject'")
+
+    member_ref: Optional[str] = None
+    if body.scope == "member":
+        member_ref = (body.member_ref or "").strip()
+        if not member_ref:
+            raise HTTPException(status_code=400,
+                                detail="member_ref is required for member-scope verdicts")
+        # Validate the ref points at an actual member of this group
+        if member_ref.startswith("corp:"):
+            row = db.execute(
+                "SELECT 1 FROM auto_group_members WHERE auto_group_id = ? "
+                "AND member_type = 'numbered_corp' AND corp_name = ?",
+                (aid, member_ref[5:]),
+            ).fetchone()
+        else:
+            sid, _, side = member_ref.rpartition(":")
+            row = db.execute(
+                "SELECT 1 FROM auto_group_members WHERE auto_group_id = ? "
+                "AND member_type = 'party_side' AND source_id = ? AND side = ?",
+                (aid, sid, side),
+            ).fetchone() if sid else None
+        if not row:
+            raise HTTPException(status_code=404,
+                                detail=f"Member {member_ref} not found in {aid}")
+
+    actor = user.get("username") or "unknown"
+    cur = db.execute(
+        "INSERT INTO auto_group_verdicts "
+        "(auto_group_id, scope, member_ref, verdict, reason, actor) "
+        "VALUES (?, ?, ?, ?, ?, ?)",
+        (aid, body.scope, member_ref, body.verdict,
+         (body.reason or "").strip() or None, actor),
+    )
+    verdict_id = cur.lastrowid
+    log_action(db, user, "group.verdict", "auto_group", aid,
+               {"scope": body.scope, "member_ref": member_ref,
+                "verdict": body.verdict, "reason": body.reason})
+    db.commit()
+
+    row = db.execute(
+        "SELECT id, auto_group_id, scope, member_ref, verdict, reason, actor, created_at "
+        "FROM auto_group_verdicts WHERE id = ?",
+        (verdict_id,),
+    ).fetchone()
+    return dict(row)
+
+
+@router.get("/{group_id}/verdicts")
+def list_group_verdicts(group_id: str,
+                        db=Depends(get_db), user=Depends(get_current_user)):
+    """Full verdict history for this auto_group (latest first)."""
+    aid = resolve_auto_group_id(db, group_id)
+    try:
+        rows = db.execute(
+            "SELECT id, auto_group_id, scope, member_ref, verdict, reason, "
+            "       actor, created_at "
+            "FROM auto_group_verdicts WHERE auto_group_id = ? ORDER BY id DESC",
+            (aid,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        rows = []
+    return {"verdicts": [dict(r) for r in rows], "total": len(rows)}

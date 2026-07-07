@@ -73,10 +73,25 @@ const SOURCE_ICONS: Record<string, any> = {
   portfolio: Globe,
 };
 
+interface JoinHealthMetric {
+  key: string;
+  label: string;
+  numerator: number;
+  denominator: number;
+  pct: number;
+  detail: string;
+}
+
+interface JoinHealthResponse {
+  checked_at: string;
+  metrics: JoinHealthMetric[];
+}
+
 export default function DataQualityPage() {
   const navigate = useNavigate();
   const [summary, setSummary] = useState<Summary | null>(null);
   const [freshness, setFreshness] = useState<FreshnessResponse | null>(null);
+  const [joinHealth, setJoinHealth] = useState<JoinHealthResponse | null>(null);
   const [issues, setIssues] = useState<BrowseResponse | null>(null);
   const [page, setPage] = useState(1);
   const [ruleFilter, setRuleFilter] = useState("");
@@ -99,6 +114,7 @@ export default function DataQualityPage() {
   useEffect(() => {
     loadSummary();
     fetchApi<FreshnessResponse>("/data-quality/freshness").then(setFreshness).catch(() => {});
+    fetchApi<JoinHealthResponse>("/data-quality/join-health").then(setJoinHealth).catch(() => {});
   }, []);
   useEffect(() => { loadIssues(); }, [page, ruleFilter, severityFilter, stageFilter, statusFilter]);
 
@@ -181,6 +197,34 @@ export default function DataQualityPage() {
           })}
           {!freshness && (
             <Text size="2" style={{ color: "var(--gray-8)" }}>Checking sources...</Text>
+          )}
+        </div>
+      </div>
+
+      {/* Join health */}
+      <div className="flex flex-col gap-3">
+        <Heading size="4" weight="medium">Join Health</Heading>
+        <div className="grid grid-cols-5 gap-4">
+          {(joinHealth?.metrics ?? []).map((m) => (
+            <div key={m.key} className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-5 flex flex-col gap-2">
+              <Text size="2" weight="medium">{m.label}</Text>
+              <div className="flex items-baseline gap-2">
+                <Heading size="6" weight="medium">{m.pct.toFixed(1)}%</Heading>
+                <Text size="1" style={{ color: "var(--gray-9)" }}>
+                  {m.numerator.toLocaleString()} / {m.denominator.toLocaleString()}
+                </Text>
+              </div>
+              <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "var(--gray-4)" }}>
+                <div
+                  className="h-full rounded-full"
+                  style={{ width: `${Math.min(100, Math.max(0, m.pct))}%`, background: "var(--jade-9)" }}
+                />
+              </div>
+              <Text size="1" className="block" style={{ color: "var(--gray-11)" }}>{m.detail}</Text>
+            </div>
+          ))}
+          {!joinHealth && (
+            <Text size="2" style={{ color: "var(--gray-8)" }}>Checking joins...</Text>
           )}
         </div>
       </div>
