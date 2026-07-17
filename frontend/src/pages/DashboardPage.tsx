@@ -4,6 +4,7 @@ import { Heading, Text, Badge } from "@radix-ui/themes";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { fetchApi } from "../api/client";
 import { formatCurrency, formatDate } from "../lib/utils";
+import GocYieldsTile from "../components/dashboard/GocYieldsTile";
 import type { DashboardStats } from "../types";
 
 export default function DashboardPage() {
@@ -37,6 +38,9 @@ export default function DashboardPage() {
   return (
     <div className="flex flex-col gap-6">
       <Heading size="5" weight="medium">Dashboard</Heading>
+
+      {/* GoC benchmark bond yields */}
+      <GocYieldsTile />
 
       {/* Primary stat cards */}
       <div className="grid grid-cols-4 gap-4">

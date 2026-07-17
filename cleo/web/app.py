@@ -51,6 +51,7 @@ from .routes.auto_groups import router as auto_groups_router
 from .routes.issues import router as issues_router
 from .routes.test_lab import router as test_lab_router
 from .routes.portfolio import router as portfolio_router
+from .routes.rates import router as rates_router
 
 
 def create_app():
@@ -60,10 +61,14 @@ def create_app():
         from ..database.connection import get_connection
         from ..database.tenant_categories import seed_tenant_categories
         from ..database.asset_classes import seed_asset_classes
+        from ..rates import ingest_bond_yields
         conn = get_connection()
         try:
             seed_asset_classes(conn)
             seed_tenant_categories(conn)
+            # Top up GoC bond yields from the Bank of Canada (backfill-on-start,
+            # non-fatal: swallows any network error so boot never blocks).
+            ingest_bond_yields(conn)
         finally:
             conn.close()
         yield
@@ -112,6 +117,7 @@ def create_app():
     app.include_router(ai_router, prefix="/api/ai", tags=["ai"])
     app.include_router(test_lab_router, prefix="/api/test-lab", tags=["test-lab"])
     app.include_router(portfolio_router, prefix="/api/portfolio", tags=["portfolio"])
+    app.include_router(rates_router, prefix="/api/rates", tags=["rates"])
 
     # Serve React SPA if built
     static_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'frontend', 'dist')

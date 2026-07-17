@@ -2783,3 +2783,23 @@ export interface GroupEvidenceResponse {
   members: GroupEvidenceMember[];
   group_verdict: GroupVerdictRow | null;
 }
+
+
+// --- Market data: GoC benchmark bond yields (dashboard tile) ---
+export type GocTerm = "2yr" | "5yr" | "10yr" | "long";
+
+export interface GocTermYield {
+  yield: number;
+  change_1d: number | null;
+  change_1w: number | null;
+  change_1m: number | null;
+  change_since_boc: number | null;
+}
+
+export interface GocRates {
+  as_of: string | null;
+  terms: Partial<Record<GocTerm, GocTermYield>>;
+  history: { date: string; yield: number }[];
+  last_boc: string | null;
+  next_boc: string | null;
+}

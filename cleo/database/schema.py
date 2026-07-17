@@ -1147,6 +1147,27 @@ CREATE TABLE IF NOT EXISTS labeling_reviewed_index (
 """
 
 
+# ============================================================
+# MARKET DATA (daily macro reference series for the dashboard brief)
+# bond_yields: Government of Canada benchmark bond yields from the Bank of
+# Canada Valet API, backfilled on app startup (see cleo/rates/). Reference
+# data, not derived from clean-data/ -- keep OUT of drop_derived_tables().
+# This block is the home for future daily/monthly macro series (CPI, rates).
+# ============================================================
+MARKET_DATA_TABLES = """
+CREATE TABLE IF NOT EXISTS bond_yields (
+    date       TEXT NOT NULL,            -- ISO observation date (business day)
+    term       TEXT NOT NULL,            -- '2yr' | '5yr' | '10yr' | 'long'
+    yield_pct  REAL NOT NULL,            -- annualized benchmark yield, percent
+    source     TEXT NOT NULL DEFAULT 'boc_valet',
+    fetched_at TEXT NOT NULL DEFAULT (datetime('now')),
+    PRIMARY KEY (date, term)
+);
+CREATE INDEX IF NOT EXISTS idx_bond_yields_term_date
+    ON bond_yields(term, date DESC);
+"""
+
+
 def create_all_tables(conn):
     """Create all tables (safe to call repeatedly — uses IF NOT EXISTS)."""
     conn.executescript(DERIVED_TABLES)
@@ -1155,6 +1176,7 @@ def create_all_tables(conn):
     conn.executescript(CRM_TABLES)
     conn.executescript(OWNERSHIP_INTEL_TABLES)
     conn.executescript(SYSTEM_TABLES)
+    conn.executescript(MARKET_DATA_TABLES)
     conn.commit()
 
 
