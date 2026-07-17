@@ -31,6 +31,7 @@ NORMALIZED_DIR = os.path.join(PROJECT_ROOT, 'engines', 'gw', 'pipeline', 'normal
 # 11-step decomposer so both lanes normalize addresses identically.
 from cleo.address.decompose import decompose
 from cleo.address.normalize import to_title_case
+from cleo.address.geocode import build_geocode_string
 
 
 def parse_mpac_address(property_address, municipality=''):
@@ -78,7 +79,7 @@ def parse_mpac_address(property_address, municipality=''):
         'postal_code': postal,
         'display_street': display_street,
         'display_city': display_city,
-        'geocode_string': f'{display_street}, {display_city}, Ontario {postal}, Canada'.strip(', ') if display_street else None,
+        'geocode_string': build_geocode_string(display_street, display_city, 'ON', postal) if display_street else None,
         'components': components,
     }
 
@@ -217,6 +218,23 @@ def normalize_record(record):
         issues.append('address_parse_failed')
 
     normalized['address'] = best_address
+
+    # Field-contract Wave 1 (#2/#5): decompose summary-fallback addresses and
+    # use the shared geocoder-string builder, so every GW address carries
+    # components and an identically-assembled geocode_string (same as MPAC).
+    if best_address is not None and not best_address.get('components'):
+        _street = best_address.get('street', '')
+        _comp = decompose(_street) if _street else {}
+        if _comp:
+            best_address['components'] = _comp
+            best_address['display_street'] = _comp.get('display', best_address.get('display_street', ''))
+        best_address['geocode_string'] = build_geocode_string(
+            best_address.get('display_street', ''),
+            best_address.get('display_city', ''),
+            'ON',
+            best_address.get('postal_code', ''),
+        ) or best_address.get('geocode_string')
+
 
     # --- PIN/ARN formatting ---
     normalized['pin_api'] = format_pin(record.get('pin', ''))

@@ -95,6 +95,7 @@ def compile_record(parsed, normalized, parcel_link):
             'postal': addr.get('postal_code', ''),
             'municipality': (norm_assessments[0].get('municipality', '') if norm_assessments else ''),
             'geocode_string': addr.get('geocode_string'),
+            'components': addr.get('components'),
         },
         'owner': {
             'name': (norm_assessments[0].get('owner_names_mpac', '') if norm_assessments

@@ -28,3 +28,4 @@ Usage:
 
 from .formatter import format_display
 from .normalize import normalize_street_name
+from .geocode import build_geocode_string

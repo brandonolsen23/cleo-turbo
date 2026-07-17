@@ -163,51 +163,10 @@ def build_street_only(components):
     return ' '.join(parts)
 
 
-def build_geocode_string(display, city='', province='', postal='', country=''):
-    """Assemble a geocode-ready string from address parts.
-
-    Format: "{display}, {city}, {province} {postal}, {country}"
-    The display passed in should be street-level only (no suite).
-    """
-    if not display:
-        return None
-
-    # Normalize province
-    if province:
-        province = expand_province(province)
-
-    # Normalize postal code
-    if postal:
-        postal = normalize_postal(postal)
-
-    # Determine country from province if not explicitly set
-    if not country:
-        if province in CANADIAN_PROVINCES_LONG:
-            country = 'Canada'
-        elif province in US_STATES_LONG:
-            country = 'United States'
-    elif country:
-        country = expand_country(country)
-
-    parts = [display]
-    if city:
-        parts.append(city)
-
-    # Province and postal together
-    prov_postal = ''
-    if province and postal:
-        prov_postal = f'{province} {postal}'
-    elif province:
-        prov_postal = province
-    elif postal:
-        prov_postal = postal
-    if prov_postal:
-        parts.append(prov_postal)
-
-    if country:
-        parts.append(country)
-
-    return ', '.join(parts)
+# build_geocode_string promoted to cleo/address/geocode.py (2026-07-17,
+# field-contract Wave 1 #5) so RT, GW and URL assemble the geocoder query
+# identically. Re-exported here for backward compatibility.
+from cleo.address.geocode import build_geocode_string  # noqa: F401,E402
 
 
 def classify_address_type(components):
