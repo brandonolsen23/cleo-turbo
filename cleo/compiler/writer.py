@@ -1072,6 +1072,14 @@ def run_compiler(conn):
                             updates.append("gw_municipality = ?")
                             params.append(municipality)
 
+                    # Field-contract Wave 2 (#4): gap-fill land size from GW's
+                    # measured sqft where RT gave none (COALESCE, never clobbers RT).
+                    if assessments:
+                        _gw_land = assessments[0].get('site_area_sqft') or acres_to_sqft(assessments[0].get('acreage'))
+                        if _gw_land:
+                            updates.append("land_size_sqft = COALESCE(land_size_sqft, ?)")
+                            params.append(_gw_land)
+
                     # Backfill lat/lng from parcel if missing
                     parcel = read_parcel(resolved_arn)
                     if parcel and parcel.get('centroid'):
@@ -1108,13 +1116,17 @@ def run_compiler(conn):
                     if gw_assessments_list:
                         gw_municipality = gw_assessments_list[0].get('municipality', '')
 
+                    _gw_land_new = None
+                    if gw_assessments_list:
+                        _gw_land_new = gw_assessments_list[0].get('site_area_sqft') or acres_to_sqft(gw_assessments_list[0].get('acreage'))
+
                     gw_property_type = gw.get('registry', {}).get('property_type', '').lower() or 'commercial'
                     gw_asset_class = map_property_type_to_asset_class(gw_property_type)
                     conn.execute(
                         "INSERT OR IGNORE INTO properties (id, arn, display_address, city, postal, "
                         "current_owner_name, transaction_count, primary_property_type, asset_class, "
-                        "gw_municipality, lat, lng, parcel_geojson) "
-                        "VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?, ?, ?)",
+                        "gw_municipality, lat, lng, parcel_geojson, land_size_sqft) "
+                        "VALUES (?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?, ?, ?, ?)",
                         (pid, resolved_arn,
                          gw_prop.get('display_address', ''),
                          gw_prop.get('city', ''),
@@ -1123,7 +1135,7 @@ def run_compiler(conn):
                          gw_property_type,
                          gw_asset_class,
                          gw_municipality,
-                         p_lat, p_lng, parcel_geojson)
+                         p_lat, p_lng, parcel_geojson, _gw_land_new)
                     )
 
                     property_data[resolved_arn] = {'id': pid, 'arn': resolved_arn}
