@@ -105,28 +105,30 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
     bldg_value, bldg_unit = parse_building_size(bldg_raw)
     bldg_unparseable = bool(bldg_raw) and bldg_value is None
 
-    # Parcel data
+    # Parcel data. Field-contract Wave 2 (#3): emit the parcel object even when
+    # unresolved, so method ('unresolved') and reason (e.g. geocode_miss) reach
+    # the compiler instead of being flattened to a blank string.
     parcel = None
-    if parcel_link and parcel_link.get('resolved_arn'):
-        arn = parcel_link['resolved_arn']
+    if parcel_link:
+        arn = parcel_link.get('resolved_arn')
         # Handle both string ARNs and dict-format ARNs from PIN bridge
         if isinstance(arn, dict):
             arn = arn.get('api_format') or arn.get('original') or ''
-        if arn:
-            parcel = {
-                'resolved_arn': arn,
-                'method': parcel_link.get('method', 'unknown'),
-                'parcel_file': parcel_link.get('parcel_file'),
-                # Stage-1 verification provenance (additive)
-                'confidence': parcel_link.get('confidence'),
-                'pip_verified': parcel_link.get('pip_verified'),
-                'containment': parcel_link.get('containment'),
-                'loc_name': parcel_link.get('loc_name'),
-                'addr_type': parcel_link.get('geocode_addr_type'),
-                'geocode_score': parcel_link.get('geocode_score'),
-                'field_match': parcel_link.get('field_match'),
-                'tier': parcel_link.get('parcel_tier'),
-            }
+        parcel = {
+            'resolved_arn': arn or '',
+            'method': parcel_link.get('method', 'unknown'),
+            'reason': parcel_link.get('reason'),
+            'parcel_file': parcel_link.get('parcel_file'),
+            # Stage-1 verification provenance (additive)
+            'confidence': parcel_link.get('confidence'),
+            'pip_verified': parcel_link.get('pip_verified'),
+            'containment': parcel_link.get('containment'),
+            'loc_name': parcel_link.get('loc_name'),
+            'addr_type': parcel_link.get('geocode_addr_type'),
+            'geocode_score': parcel_link.get('geocode_score'),
+            'field_match': parcel_link.get('field_match'),
+            'tier': parcel_link.get('parcel_tier'),
+        }
 
     return {
         'source_id': classified['rt_id'],
@@ -315,7 +317,7 @@ def run(limit=None, dry_run=False):
             safe_write_json(out_path, clean_record)
 
             stats['compiled'] += 1
-            if clean_record.get('parcel'):
+            if (clean_record.get('parcel') or {}).get('resolved_arn'):
                 stats['with_parcel'] += 1
             else:
                 stats['without_parcel'] += 1

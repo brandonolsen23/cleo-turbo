@@ -24,6 +24,14 @@ from ..analytics.groups import refresh_group_analytics
 from ..address.decompose import decompose_simple as _decompose_simple
 from ..address.formatter import format_display as _format_display
 
+def acres_to_sqft(acres):
+    """Field-contract Wave 2 (#4): canonical land size is square feet."""
+    try:
+        return round(float(acres) * 43560.0, 1) if acres not in (None, '') else None
+    except (TypeError, ValueError):
+        return None
+
+
 
 _REVERSE_GEOCODE_DIR = os.path.join(
     os.path.dirname(__file__), '..', '..', 'clean-data', 'reverse_geocode'
@@ -599,6 +607,7 @@ def run_compiler(conn):
                     'region': tx.get('region', ''),
                     'postal': prop.get('postal', ''),
                     'acreage': site.get('acreage'),
+                    'land_size_sqft': acres_to_sqft(site.get('acreage')),
                     'building_size_raw': site.get('building_size_raw'),
                     'building_size_value': site.get('building_size_value'),
                     'building_size_unit': site.get('building_size_unit'),
@@ -678,7 +687,7 @@ def run_compiler(conn):
             "buyer_trade_name, buyer_care_of, buyer_law_firms_json, buyer_companies_json, "
             "photos_json, source_folder, source_position, "
             "parcel_loc_name, parcel_addr_type, parcel_geocode_score, parcel_field_match, "
-            "parcel_containment, parcel_confidence, pip_verified, parcel_tier) "
+            "parcel_containment, parcel_confidence, pip_verified, parcel_tier, parcel_reason) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
             "?, ?, ?, "
             "?, ?, "
@@ -686,7 +695,7 @@ def run_compiler(conn):
             "?, ?, ?, ?, ?, "
             "?, ?, ?, ?, "
             "?, ?, ?, ?, "
-            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (source_id, property_id, arn,
              tx.get('sale_date'), tx.get('sale_price'), tx.get('transaction_note', ''),
              display_address, tx.get('city', ''), tx.get('region', ''), prop.get('postal', ''),
@@ -728,7 +737,8 @@ def run_compiler(conn):
              parcel_info.get('containment'),
              parcel_info.get('confidence'),
              parcel_info.get('pip_verified'),
-             parcel_info.get('tier'))
+             parcel_info.get('tier'),
+             parcel_info.get('reason'))
         )
         tx_count += 1
 
@@ -850,14 +860,15 @@ def run_compiler(conn):
 
             asset_class = map_property_type_to_asset_class(pd['property_type'])
             conn.execute(
-                "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, "
+                "INSERT INTO properties (id, arn, display_address, city, region, postal, acreage, land_size_sqft, "
                 "building_size_raw, building_size_value, building_size_unit, "
                 "legal_description, current_owner_name, current_owner_group_id, most_recent_source_id, "
                 "most_recent_sale_date, most_recent_sale_price, most_recent_sale_source, transaction_count, "
                 "primary_property_type, asset_class, lat, lng, parcel_geojson) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (pd['id'], arn, pd['display_address'], pd['city'], pd['region'], pd['postal'],
                  pd['acreage'],
+                 pd.get('land_size_sqft'),
                  pd.get('building_size_raw'),
                  pd.get('building_size_value'),
                  pd.get('building_size_unit'),
