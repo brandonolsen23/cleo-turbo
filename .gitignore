@@ -55,3 +55,8 @@ frontend/.env
 *.old.tsx
 data-integrity-audit.docx
 engines/rt/parcel_resolver/token.py
+
+# Pipeline data + logs missed originally (field-contract cleanup 2026-07-17)
+engines/rt/pipeline/deduped/
+engines/rt/pipeline/_processing_log.jsonl
+*.stale
