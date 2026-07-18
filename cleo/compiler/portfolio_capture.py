@@ -46,12 +46,24 @@ class CaptureError(Exception):
 
 def ensure_capture_columns(conn):
     """Idempotent runtime migration: add group_match_keys.sweepable where the
-    DB predates the M4 column (schema.py now includes it for fresh DBs)."""
+    DB predates the M4 column, plus the Ownership Intelligence M1 shape
+    (group_facts/adjudications tables + group_profile.narrative_md,
+    migration 038) where the DB predates it. schema.py includes all of it
+    for fresh DBs."""
     cols = {r[1] for r in conn.execute("PRAGMA table_info(group_match_keys)")}
     if "sweepable" not in cols:
         conn.execute(
             "ALTER TABLE group_match_keys ADD COLUMN sweepable INTEGER DEFAULT 1"
         )
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(group_profile)")}
+    if "narrative_md" not in cols:
+        conn.execute("ALTER TABLE group_profile ADD COLUMN narrative_md TEXT")
+    have = {r[0] for r in conn.execute(
+        "SELECT name FROM sqlite_master WHERE type = 'table' "
+        "AND name IN ('group_facts', 'adjudications')")}
+    if len(have) < 2:
+        from ..database.schema import OWNERSHIP_INTEL_TABLES
+        conn.executescript(OWNERSHIP_INTEL_TABLES)
 
 
 # ── Group resolution (spec Section 10) ────────────────────────────────
@@ -146,10 +158,12 @@ def write_profile(conn, group_id: str, group: dict, captured_by: str):
     if existing:
         conn.execute(
             "UPDATE group_profile SET canonical_name=?, summary=?, "
+            "narrative_md=COALESCE(?, narrative_md), "
             "business_lines=?, corp_address=?, domain=?, website=?, "
             "partners=?, source='web_capture', source_url=?, web_asserted=1, "
             "captured_by=?, updated_at=datetime('now') WHERE id=?",
-            (group.get("display_name"), group.get("summary"), business_lines,
+            (group.get("display_name"), group.get("summary"),
+             group.get("narrative_md"), business_lines,
              group.get("hq_address"), group.get("domain"),
              group.get("website"), partners, group.get("source_url"),
              captured_by, existing["id"]),
@@ -157,11 +171,12 @@ def write_profile(conn, group_id: str, group: dict, captured_by: str):
     else:
         conn.execute(
             "INSERT INTO group_profile (group_id, canonical_name, summary, "
-            "business_lines, corp_address, domain, website, partners, "
-            "source, source_url, web_asserted, captured_by) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'web_capture', ?, 1, ?)",
+            "narrative_md, business_lines, corp_address, domain, website, "
+            "partners, source, source_url, web_asserted, captured_by) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'web_capture', ?, 1, ?)",
             (group_id, group.get("display_name"), group.get("summary"),
-             business_lines, group.get("hq_address"), group.get("domain"),
+             group.get("narrative_md"), business_lines,
+             group.get("hq_address"), group.get("domain"),
              group.get("website"), partners, group.get("source_url"),
              captured_by),
         )
@@ -312,6 +327,138 @@ def write_contacts(conn, group_id: str, contacts, captured_by: str) -> int:
         )
         linked += 1
     return linked
+
+
+# ── Group facts + auto-group visibility (Ownership Intelligence M1) ───
+
+FACT_FIELDS = frozenset({
+    "hq_address", "phone", "principal", "entity_alias", "founded",
+    "aum_estimate", "behavior", "origin_story", "website", "sector_focus",
+    "gw_worklist_item", "other",
+})
+FACT_SOURCES = frozenset({"rt", "gw", "web", "site_scrape", "inference", "human"})
+
+
+def ensure_auto_group(conn, group_id: str, group: dict, captured_by: str):
+    """Make a captured legacy GRP_ visible as a user-facing auto_group.
+
+    Doctrine D3/§4.3: auto_groups is the only user-facing owner entity; a
+    freshly minted capture GRP_ has no legacy_to_auto_group_map row, so the
+    group is invisible in the app. This resolves (or creates) the AGRP:
+
+      1. Existing map row for this GRP -> reuse its auto_group_id.
+      2. Else mint the next AGRP_ id, insert an auto_groups row
+         (tier='confirmed' — a human capture IS confirmation), and insert
+         a map row with source='user_attached' (migration 027 enum).
+
+    Returns (auto_group_id, created).
+    """
+    row = conn.execute(
+        "SELECT auto_group_id FROM legacy_to_auto_group_map "
+        "WHERE legacy_group_id = ?",
+        (group_id,),
+    ).fetchone()
+    if row:
+        return row["auto_group_id"], False
+
+    n = conn.execute(
+        "SELECT COALESCE(MAX(CAST(SUBSTR(auto_group_id, 6) AS INTEGER)), 0) "
+        "FROM auto_groups WHERE auto_group_id LIKE 'AGRP_%'"
+    ).fetchone()[0]
+    aid = f"AGRP_{n + 1:05d}"
+    display = (group.get("display_name") or "").strip()
+    conn.execute(
+        "INSERT INTO auto_groups (auto_group_id, canonical_stem, display_name, "
+        "tier, confidence, n_anchors, n_members, discovered_at, "
+        "primary_address, primary_address_source, website, primary_phone) "
+        "VALUES (?, ?, ?, 'confirmed', 1.0, 0, 0, datetime('now'), ?, "
+        "'capture', ?, NULL)",
+        (aid, display.upper(), display.upper(), group.get("hq_address"),
+         group.get("website")),
+    )
+    conn.execute(
+        "INSERT INTO legacy_to_auto_group_map (legacy_group_id, auto_group_id, "
+        "coverage_pct, source) VALUES (?, ?, 1.0, 'user_attached')",
+        (group_id, aid),
+    )
+    return aid, True
+
+
+def validate_fact(fact: dict, conn=None):
+    """Contract checks for one fact (spec 5.4 facts[] rules + 3.2 shapes).
+    Raises CaptureError(422) on violation."""
+    field = fact.get("field")
+    if field not in FACT_FIELDS:
+        raise CaptureError(422, f"fact field {field!r} not in the D1 enum")
+    source = fact.get("source")
+    if source not in FACT_SOURCES:
+        raise CaptureError(422, f"fact source {source!r} not in the D1 enum")
+    value = (fact.get("value") or "").strip()
+    if not value:
+        raise CaptureError(422, f"fact ({field}) has an empty value")
+    if source in ("web", "site_scrape") and not fact.get("source_url"):
+        raise CaptureError(
+            422, f"fact ({field}: {value!r}) source={source} requires source_url")
+    conf = fact.get("confidence")
+    if source == "inference" and (conf is None or conf > 0.8):
+        raise CaptureError(
+            422, f"fact ({field}: {value!r}) source=inference requires "
+                 "confidence <= 0.8")
+    if conf is not None and not (0 <= conf <= 1):
+        raise CaptureError(422, f"fact ({field}: {value!r}) confidence out of [0,1]")
+    if field == "gw_worklist_item":
+        try:
+            vj = json.loads(fact.get("value_json") or "{}")
+        except (TypeError, ValueError):
+            raise CaptureError(
+                422, f"gw_worklist_item {value!r} value_json is not valid JSON")
+        if not vj.get("address") or not vj.get("city"):
+            raise CaptureError(
+                422, f"gw_worklist_item {value!r} value_json requires "
+                     "address + city (spec 8.2)")
+    explicit = fact.get("auto_group_id")
+    if explicit and conn is not None:
+        row = conn.execute(
+            "SELECT 1 FROM auto_groups WHERE auto_group_id = ?", (explicit,)
+        ).fetchone()
+        if not row:
+            raise CaptureError(
+                422, f"fact auto_group_id {explicit} not found in auto_groups")
+
+
+def write_facts(conn, default_auto_group_id: str, facts, captured_by: str,
+                status: str = "committed", adjudication_id=None) -> int:
+    """Validate + insert group_facts rows. Returns rows added.
+
+    Facts without an explicit auto_group_id land on the payload group's
+    AGRP. Idempotent: an existing non-retracted row with the same
+    (auto_group_id, field, value, source) is skipped, never duplicated.
+    Capture is the human-driven door, so rows default to status='committed'
+    (the adjudicator runner writes its own 'proposed' rows directly).
+    """
+    added = 0
+    for f in facts or []:
+        validate_fact(f, conn)
+        aid = f.get("auto_group_id") or default_auto_group_id
+        value = (f.get("value") or "").strip()
+        dup = conn.execute(
+            "SELECT 1 FROM group_facts WHERE auto_group_id = ? AND field = ? "
+            "AND value = ? AND source = ? AND status != 'retracted'",
+            (aid, f["field"], value, f["source"]),
+        ).fetchone()
+        if dup:
+            continue
+        conn.execute(
+            "INSERT INTO group_facts (auto_group_id, field, value, value_json, "
+            "source, source_url, confidence, effective_from, effective_to, "
+            "adjudication_id, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (aid, f["field"], value, f.get("value_json"), f["source"],
+             f.get("source_url"), f.get("confidence"),
+             f.get("effective_from"), f.get("effective_to"),
+             adjudication_id, status),
+        )
+        added += 1
+    return added
 
 
 # ── Property links (spec 6.1 step 6 + D4/D5) ─────────────────────────

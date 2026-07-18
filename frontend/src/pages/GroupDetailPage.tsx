@@ -12,6 +12,7 @@ import {
 import { propertyTypeLabel, propertyTypeColor } from "../lib/theme";
 import HqPicker from "../components/group/HqPicker";
 import EvidenceTab from "../components/group/EvidenceTab";
+import { StoryCard, FactsPanel, GwWorklistCard } from "../components/group/StoryFacts";
 import { Reportable, useIssueReporter } from "../components/issues/IssueReporter";
 import { Info } from "@phosphor-icons/react";
 import AttributionStrip from "../components/crm/AttributionStrip";
@@ -573,6 +574,22 @@ export default function GroupDetailPage() {
         </div>
       </div>
       </Reportable>
+
+      {/* Story + Facts + GW Worklist (Ownership Intelligence M1) */}
+      {(group.narrative_md || (group.facts?.length ?? 0) > 0) && (
+        <Reportable
+          component="story_facts"
+          data={{ facts: group.facts?.length ?? 0, has_narrative: !!group.narrative_md }}
+        >
+          <div className="grid grid-cols-3 gap-4 items-start">
+            <div className="col-span-2 flex flex-col gap-4">
+              {group.narrative_md && <StoryCard narrativeMd={group.narrative_md} />}
+              <GwWorklistCard facts={group.facts ?? []} />
+            </div>
+            <FactsPanel facts={group.facts ?? []} />
+          </div>
+        </Reportable>
+      )}
 
       {/* Tabs */}
       <Tabs.Root defaultValue="properties">

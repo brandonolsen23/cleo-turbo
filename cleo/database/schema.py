@@ -648,6 +648,7 @@ CREATE TABLE IF NOT EXISTS group_profile (
     group_id           TEXT REFERENCES groups(id),
     canonical_name     TEXT,
     summary            TEXT,
+    narrative_md       TEXT,          -- long-form dossier markdown (Ownership Intelligence D8, migration 038)
     business_lines     TEXT,          -- JSON array: owner|developer|property_manager|brokerage
     corp_address       TEXT,
     corp_phone         TEXT,
@@ -793,6 +794,84 @@ CREATE TABLE IF NOT EXISTS manual_properties (
 
 CREATE INDEX IF NOT EXISTS idx_manual_properties_arn ON manual_properties(arn);
 CREATE INDEX IF NOT EXISTS idx_manual_properties_resolved ON manual_properties(resolved_pid);
+"""
+
+# ============================================================
+# OWNERSHIP INTELLIGENCE (migration 038 — docs/ownership-intelligence-pipeline.md)
+# adjudications: append-only system record of AI adjudication runs (D2).
+# group_facts: searchable structured intelligence keyed to AGRP_ ids (D1).
+# Neither is compiler-dropped; keep OUT of drop_derived_tables().
+# ============================================================
+OWNERSHIP_INTEL_TABLES = """
+CREATE TABLE IF NOT EXISTS adjudications (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    cluster_id      TEXT NOT NULL,            -- e.g. COLL_007 (dossier id)
+    dossier_json    TEXT NOT NULL,            -- exact dossier sent (replay)
+    model           TEXT NOT NULL,
+    prompt_version  TEXT NOT NULL,            -- e.g. 'adj-v1'
+    ruling          TEXT NOT NULL CHECK (ruling IN
+                        ('umbrella','lineage','managed','split','review')),
+    confidence      REAL,
+    narrative_md    TEXT,
+    merge_proposals TEXT,                     -- JSON array (spec 5.4)
+    facts_emitted   INTEGER NOT NULL DEFAULT 0,
+    gw_worklist     TEXT,                     -- JSON array (spec 8.2)
+    capture_payloads TEXT,                    -- JSON: capture payload(s) built
+    input_tokens    INTEGER, output_tokens INTEGER,
+    web_searches    INTEGER DEFAULT 0,
+    cost_usd        REAL,
+    status          TEXT NOT NULL DEFAULT 'pending_review' CHECK (status IN
+                        ('pending_review','approved','rejected','auto_applied')),
+    reviewed_by     TEXT, reviewed_at TEXT, reject_reason TEXT,
+    created_at      TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_adjudications_status
+    ON adjudications(status, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_adjudications_cluster
+    ON adjudications(cluster_id, created_at DESC);
+
+CREATE TABLE IF NOT EXISTS group_facts (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    auto_group_id   TEXT NOT NULL,            -- AGRP_ stable id
+    field           TEXT NOT NULL CHECK (field IN (
+                        'hq_address','phone','principal','entity_alias',
+                        'founded','aum_estimate','behavior','origin_story',
+                        'website','sector_focus','gw_worklist_item','other')),
+    value           TEXT NOT NULL,            -- display/search form
+    value_json      TEXT,                     -- structured payload when shaped
+    source          TEXT NOT NULL CHECK (source IN
+                        ('rt','gw','web','site_scrape','inference','human')),
+    source_url      TEXT,
+    confidence      REAL,
+    effective_from  TEXT,                     -- ISO date; timelines for
+    effective_to    TEXT,                     --   principals/entities/aliases
+    adjudication_id INTEGER REFERENCES adjudications(id),
+    status          TEXT NOT NULL DEFAULT 'proposed'
+                        CHECK (status IN ('proposed','committed','retracted')),
+    created_at      TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_group_facts_group
+    ON group_facts(auto_group_id, field, status);
+CREATE INDEX IF NOT EXISTS idx_group_facts_adjudication
+    ON group_facts(adjudication_id);
+CREATE VIRTUAL TABLE IF NOT EXISTS group_facts_fts USING fts5(
+    field, value, content='group_facts', content_rowid='id');
+
+-- Standard external-content sync triggers
+CREATE TRIGGER IF NOT EXISTS group_facts_fts_ai AFTER INSERT ON group_facts BEGIN
+    INSERT INTO group_facts_fts(rowid, field, value)
+    VALUES (new.id, new.field, new.value);
+END;
+CREATE TRIGGER IF NOT EXISTS group_facts_fts_ad AFTER DELETE ON group_facts BEGIN
+    INSERT INTO group_facts_fts(group_facts_fts, rowid, field, value)
+    VALUES ('delete', old.id, old.field, old.value);
+END;
+CREATE TRIGGER IF NOT EXISTS group_facts_fts_au AFTER UPDATE ON group_facts BEGIN
+    INSERT INTO group_facts_fts(group_facts_fts, rowid, field, value)
+    VALUES ('delete', old.id, old.field, old.value);
+    INSERT INTO group_facts_fts(rowid, field, value)
+    VALUES (new.id, new.field, new.value);
+END;
 """
 
 SYSTEM_TABLES = """
@@ -1072,6 +1151,7 @@ def create_all_tables(conn):
     conn.executescript(DERIVED_INDEXES)
     conn.executescript(FTS_TABLES)
     conn.executescript(CRM_TABLES)
+    conn.executescript(OWNERSHIP_INTEL_TABLES)
     conn.executescript(SYSTEM_TABLES)
     conn.commit()
 

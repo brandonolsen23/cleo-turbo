@@ -78,6 +78,9 @@ def group_filters(db=Depends(get_db), user=Depends(get_current_user)):
     tiers = ["confirmed", "probable", "candidate", "standalone"]
     return {
         "asset_classes": [r[0] for r in asset_classes],
+        # Type = the group's dominant (most-transacted) property type shown in
+        # the "Type" column. Same vocabulary as asset_class, minus "unknown".
+        "types": [r[0] for r in asset_classes],
         "regions": sorted(regions_set),
         "tiers": tiers,
     }
@@ -102,6 +105,8 @@ def browse_groups(
     max_velocity: OptFloat = Query(None),
     min_net_acquisitions: OptInt = Query(None),
     max_net_acquisitions: OptInt = Query(None),
+    # Dominant type — the group's top property type shown in the "Type" column
+    dominant_type: OptStr = Query(None),
     # Asset class (uses transacted_type_mix — same lens as contacts page)
     asset_class: OptStr = Query(None),
     min_asset_class_count: OptInt = Query(None, ge=1),
@@ -169,6 +174,17 @@ def browse_groups(
     if max_net_acquisitions is not None:
         conditions.append("aga.net_acquisitions <= ?")
         params.append(max_net_acquisitions)
+
+    # Dominant type — match the group's top property type (the "Type" column
+    # badge). This is the argmax of transacted_type_mix excluding "unknown".
+    # ORDER BY value DESC, id ASC reproduces the Python stable-sort tiebreak so
+    # the filter always agrees with the badge the row displays.
+    if dominant_type:
+        conditions.append(
+            "(SELECT je.key FROM json_each(COALESCE(aga.transacted_type_mix, aga.property_type_mix)) je "
+            "WHERE je.key != 'unknown' ORDER BY je.value DESC, je.id ASC LIMIT 1) = ?"
+        )
+        params.append(dominant_type)
 
     # Asset class — uses transacted_type_mix (full history) just like contacts.
     if asset_class:
@@ -350,6 +366,52 @@ def group_detail(group_id: str, db=Depends(get_db), user=Depends(get_current_use
         (aid,),
     ).fetchall()
     result["constituent_legacy_groups"] = [dict(r) for r in spvs]
+
+    # Story + facts (Ownership Intelligence M1, migration 038).
+    # group_profile is keyed to legacy GRP ids; prefer the constituent
+    # profile that carries a narrative, then the most recently updated.
+    result["summary"] = None
+    result["narrative_md"] = None
+    result["profile_source_url"] = None
+    try:
+        prof = db.execute(
+            """
+            SELECT gp.summary, gp.narrative_md, gp.source_url
+            FROM group_profile gp
+            JOIN legacy_to_auto_group_map m ON m.legacy_group_id = gp.group_id
+            WHERE m.auto_group_id = ?
+            ORDER BY (gp.narrative_md IS NOT NULL) DESC, gp.updated_at DESC
+            LIMIT 1
+            """,
+            (aid,),
+        ).fetchone()
+        if prof:
+            result["summary"] = prof["summary"]
+            result["narrative_md"] = prof["narrative_md"]
+            result["profile_source_url"] = prof["source_url"]
+    except sqlite3.OperationalError:
+        pass  # DB predates migration 038
+
+    # Committed group_facts (doctrine D8: provenance always displayed)
+    facts = []
+    try:
+        for r in db.execute(
+            "SELECT id, field, value, value_json, source, source_url, "
+            "confidence, effective_from, effective_to, adjudication_id, "
+            "created_at FROM group_facts WHERE auto_group_id = ? "
+            "AND status = 'committed' ORDER BY field, id",
+            (aid,),
+        ):
+            f = dict(r)
+            if f.get("value_json"):
+                try:
+                    f["value_json"] = json.loads(f["value_json"])
+                except (json.JSONDecodeError, TypeError):
+                    pass
+            facts.append(f)
+    except sqlite3.OperationalError:
+        pass  # DB predates migration 038
+    result["facts"] = facts
 
     # Contact rollup (counts only here; full list via /api/groups/{id}/contacts)
     counts = db.execute(

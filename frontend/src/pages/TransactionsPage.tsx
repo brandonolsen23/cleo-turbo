@@ -71,7 +71,16 @@ export default function TransactionsPage() {
         )}
       </div>
       <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden">
-        <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+        <table className="w-full table-fixed text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+          <colgroup>
+            <col />
+            <col style={{ width: 130 }} />
+            <col />
+            <col />
+            <col style={{ width: 115 }} />
+            <col style={{ width: 120 }} />
+            <col style={{ width: 44 }} />
+          </colgroup>
           <thead>
             <tr style={{ background: "var(--gray-2)" }}>
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)] cursor-pointer select-none"
@@ -104,10 +113,10 @@ export default function TransactionsPage() {
               <tr key={t.source_id}
                   className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                   onClick={() => navigate(`/transactions/${t.source_id}`)}>
-                <td className="px-4 py-2">{t.display_address}</td>
-                <td className="px-4 py-2">{t.city}</td>
-                <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>{firstParty(t.seller_parties)}</td>
-                <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>{firstParty(t.buyer_parties)}</td>
+                <td className="px-4 py-2 max-w-[220px] truncate" title={t.display_address || undefined}>{t.display_address}</td>
+                <td className="px-4 py-2 max-w-[140px] truncate" title={t.city || undefined}>{t.city}</td>
+                <td className="px-4 py-2 max-w-[200px] truncate" style={{ color: "var(--gray-11)" }} title={t.seller_parties?.[0] || undefined}>{firstParty(t.seller_parties)}</td>
+                <td className="px-4 py-2 max-w-[200px] truncate" style={{ color: "var(--gray-11)" }} title={t.buyer_parties?.[0] || undefined}>{firstParty(t.buyer_parties)}</td>
                 <td className="px-4 py-2 text-right">{formatDate(t.sale_date)}</td>
                 <td className="px-4 py-2 text-right">{formatCurrency(t.sale_price)}</td>
                 <td className="px-2 py-2 text-center">

@@ -81,6 +81,7 @@ export default function GroupsPage() {
 
   // Filters
   const tier = searchParams.get("tier") || "";
+  const dominantType = searchParams.get("dominant_type") || "";
   const minMembers = searchParams.get("min_members") || "";
   const minProperties = searchParams.get("min_properties") || "";
   const maxProperties = searchParams.get("max_properties") || "";
@@ -122,6 +123,7 @@ export default function GroupsPage() {
     };
     if (q) params.q = q;
     if (tier) params.tier = tier;
+    if (dominantType) params.dominant_type = dominantType;
     if (minMembers) params.min_members = minMembers;
     if (minProperties) params.min_properties = minProperties;
     if (maxProperties) params.max_properties = maxProperties;
@@ -146,7 +148,7 @@ export default function GroupsPage() {
         if (currentFetchId === fetchIdRef.current) setLoading(false);
       });
   }, [
-    page, sort, order, q, tier, minMembers,
+    page, sort, order, q, tier, dominantType, minMembers,
     minProperties, maxProperties,
     minTransactions, maxTransactions,
     minPortfolioValue, maxPortfolioValue,
@@ -193,7 +195,7 @@ export default function GroupsPage() {
   };
 
   const activeFilterCount = [
-    tier, minMembers,
+    tier, dominantType, minMembers,
     minProperties, maxProperties,
     minTransactions, maxTransactions,
     minPortfolioValue, maxPortfolioValue,
@@ -248,6 +250,12 @@ export default function GroupsPage() {
           value={tier}
           onChange={(v) => setParam("tier", v)}
           options={(filterOptions?.tiers || []).map((t) => ({ value: t, label: tierLabel(t) }))}
+        />
+        <SelectFilter
+          label="Type"
+          value={dominantType}
+          onChange={(v) => setParam("dominant_type", v)}
+          options={(filterOptions?.types || []).map((t) => ({ value: t, label: assetClassLabel(t) }))}
         />
         <RangeFilter
           label="Members"
@@ -337,7 +345,19 @@ export default function GroupsPage() {
         className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden transition-opacity"
         style={{ opacity: loading ? 0.6 : 1 }}
       >
-        <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+        <table className="w-full table-fixed text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+          <colgroup>
+            <col />
+            <col style={{ width: 84 }} />
+            <col style={{ width: 58 }} />
+            <col style={{ width: 58 }} />
+            <col style={{ width: 58 }} />
+            <col style={{ width: 90 }} />
+            <col style={{ width: 90 }} />
+            <col style={{ width: 96 }} />
+            <col style={{ width: 88 }} />
+            <col style={{ width: 108 }} />
+          </colgroup>
           <thead>
             <tr style={{ background: "var(--gray-2)" }}>
               <SortHeader label="Name" field="display_name" currentSort={sort} currentOrder={order} onSort={handleSort} />
@@ -348,10 +368,7 @@ export default function GroupsPage() {
               <SortHeader label="Buy Value" field="total_buy_value" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <SortHeader label="Sell Value" field="total_sell_value" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Primary Type
-              </th>
-              <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Secondary Type
+                Type
               </th>
               <th className="text-right px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
                 Engaged
@@ -366,7 +383,7 @@ export default function GroupsPage() {
                 className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                 onClick={() => navigate(`/groups/${g.id}`)}
               >
-                <td className="px-4 py-2 font-medium" style={{ color: "var(--gray-12)" }}>
+                <td className="px-4 py-2 font-medium truncate" style={{ color: "var(--gray-12)" }} title={titleCase(g.display_name)}>
                   {titleCase(g.display_name)}
                 </td>
                 <td className="px-4 py-2">
@@ -390,13 +407,6 @@ export default function GroupsPage() {
                     </Badge>
                   ) : "—"}
                 </td>
-                <td className="px-4 py-2">
-                  {g.secondary_type ? (
-                    <Badge size="1" color={propertyTypeColor(g.secondary_type)} variant="soft">
-                      {propertyTypeLabel(g.secondary_type)}
-                    </Badge>
-                  ) : "—"}
-                </td>
                 <td className="px-4 py-2 text-right">
                   {g.engaged_contact_count > 0 ? (
                     <Badge size="1" color="jade" variant="soft">
@@ -413,7 +423,7 @@ export default function GroupsPage() {
             ))}
             {data?.results.length === 0 && (
               <tr>
-                <td colSpan={11} className="px-4 py-12 text-center" style={{ color: "var(--gray-9)" }}>
+                <td colSpan={10} className="px-4 py-12 text-center" style={{ color: "var(--gray-9)" }}>
                   No groups match your filters.
                 </td>
               </tr>

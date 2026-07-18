@@ -610,6 +610,7 @@ export interface GroupBrowseItem {
 
 export interface GroupFilterOptions {
   asset_classes: string[];
+  types: string[];
   regions: string[];
   tiers: string[];
 }
@@ -735,6 +736,30 @@ export interface GroupDetail {
   engaged_contact_count: number;
   portfolio_sf: PortfolioSf;
   portfolio_size?: PortfolioSize;
+  // Ownership Intelligence M1 (migration 038)
+  summary: string | null;
+  narrative_md: string | null;
+  profile_source_url: string | null;
+  facts: GroupFact[];
+}
+
+// Ownership Intelligence M1 — one committed group_facts row (doctrine D8:
+// provenance always displayed).
+export interface GroupFact {
+  id: number;
+  field:
+    | "hq_address" | "phone" | "principal" | "entity_alias" | "founded"
+    | "aum_estimate" | "behavior" | "origin_story" | "website"
+    | "sector_focus" | "gw_worklist_item" | "other";
+  value: string;
+  value_json: Record<string, unknown> | string | null;
+  source: "rt" | "gw" | "web" | "site_scrape" | "inference" | "human";
+  source_url: string | null;
+  confidence: number | null;
+  effective_from: string | null;
+  effective_to: string | null;
+  adjudication_id: number | null;
+  created_at: string;
 }
 
 export interface AutoGroupAnalytics {

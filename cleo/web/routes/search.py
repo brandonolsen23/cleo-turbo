@@ -2,6 +2,8 @@
 Omnisearch API — cross-entity full-text search.
 """
 
+import sqlite3
+
 from fastapi import APIRouter, Depends, Query
 from ...web.deps import get_db, get_current_user
 
@@ -66,5 +68,38 @@ def omnisearch(
             "title": r["display_name"],
             "subtitle": f"{r['property_count']} properties" if r["property_count"] else None,
         })
+
+    # Group facts (Ownership Intelligence D1 — FTS5 over committed facts,
+    # so "1885 Marine" or a principal's name finds the owning group).
+    try:
+        fts_q = " ".join(
+            f'"{tok}"' for tok in q.strip().split() if tok
+        )
+        if fts_q:
+            fact_rows = db.execute(
+                """
+                SELECT gf.auto_group_id, gf.field, gf.value,
+                       ag.display_name
+                FROM group_facts_fts f
+                JOIN group_facts gf ON gf.id = f.rowid
+                JOIN auto_groups ag ON ag.auto_group_id = gf.auto_group_id
+                WHERE group_facts_fts MATCH ? AND gf.status = 'committed'
+                LIMIT ?
+                """,
+                (fts_q, limit),
+            ).fetchall()
+            seen_groups = set()
+            for r in fact_rows:
+                if r["auto_group_id"] in seen_groups:
+                    continue
+                seen_groups.add(r["auto_group_id"])
+                results.append({
+                    "type": "group",
+                    "id": r["auto_group_id"],
+                    "title": r["display_name"],
+                    "subtitle": f'{r["field"]}: {r["value"]}',
+                })
+    except sqlite3.OperationalError:
+        pass  # DB predates migration 038
 
     return {"results": results[:limit * 3], "total": len(results)}

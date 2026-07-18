@@ -320,7 +320,17 @@ export default function ContactsPage() {
         className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden transition-opacity"
         style={{ opacity: loading ? 0.6 : 1 }}
       >
-        <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+        <table className="w-full table-fixed text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+          <colgroup>
+            <col />
+            <col />
+            <col style={{ width: 130 }} />
+            <col style={{ width: 44 }} />
+            <col style={{ width: 120 }} />
+            <col style={{ width: 80 }} />
+            <col style={{ width: 110 }} />
+            <col style={{ width: 90 }} />
+          </colgroup>
           <thead>
             <tr style={{ background: "var(--gray-2)" }}>
               <SortHeader label="Name" field="display_name" currentSort={sort} currentOrder={order} onSort={handleSort} />
@@ -334,10 +344,7 @@ export default function ContactsPage() {
                 <Phone size={13} style={{ color: "var(--gray-9)", margin: "0 auto" }} />
               </th>
               <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Primary Type
-              </th>
-              <th className="text-left px-4 py-2 text-[12px] font-medium border-b border-[var(--gray-6)]" style={{ color: "var(--gray-9)" }}>
-                Secondary Type
+                Type
               </th>
               <SortHeader label="Txns" field="transaction_count" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
               <SortHeader label="Buy Value" field="total_buy_value" currentSort={sort} currentOrder={order} onSort={handleSort} align="right" />
@@ -353,7 +360,7 @@ export default function ContactsPage() {
                 className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                 onClick={() => navigate(`/contacts/${c.id}`)}
               >
-                <td className="px-4 py-2 font-medium">{c.display_name}</td>
+                <td className="px-4 py-2 font-medium max-w-[200px] truncate" title={c.display_name || undefined}>{c.display_name}</td>
                 <td className="px-4 py-2 max-w-[260px] truncate" style={{ color: "var(--gray-11)" }}
                     title={c.auto_group_name ? titleCase(c.auto_group_name) : (c.company_name || undefined)}>
                   {c.auto_group_stem === "_anonymized_individuals"
@@ -362,7 +369,7 @@ export default function ContactsPage() {
                       ? titleCase(c.auto_group_name)
                       : (c.company_name || "—")}
                 </td>
-                <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>
+                <td className="px-4 py-2 max-w-[140px] truncate" style={{ color: "var(--gray-11)" }} title={c.mailing_city || undefined}>
                   {c.mailing_city || "—"}
                 </td>
                 <td className="px-2 py-2 text-center" style={{ width: 40 }}>
@@ -376,13 +383,6 @@ export default function ContactsPage() {
                   {c.dominant_type ? (
                     <Badge size="1" color={propertyTypeColor(c.dominant_type)} variant="soft">
                       {propertyTypeLabel(c.dominant_type)}
-                    </Badge>
-                  ) : "—"}
-                </td>
-                <td className="px-4 py-2">
-                  {c.secondary_type ? (
-                    <Badge size="1" color={propertyTypeColor(c.secondary_type)} variant="soft">
-                      {propertyTypeLabel(c.secondary_type)}
                     </Badge>
                   ) : "—"}
                 </td>
@@ -403,7 +403,7 @@ export default function ContactsPage() {
             ))}
             {data?.results.length === 0 && (
               <tr>
-                <td colSpan={9} className="px-4 py-12 text-center" style={{ color: "var(--gray-9)" }}>
+                <td colSpan={8} className="px-4 py-12 text-center" style={{ color: "var(--gray-9)" }}>
                   {status === "engaged" ? (
                     <div className="flex flex-col items-center gap-1.5">
                       <Text size="2" weight="medium" style={{ color: "var(--gray-11)" }}>No engaged contacts yet</Text>

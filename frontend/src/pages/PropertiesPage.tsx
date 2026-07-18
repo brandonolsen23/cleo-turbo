@@ -289,7 +289,17 @@ export default function PropertiesPage() {
         className="rounded-[var(--card-radius)] border border-[var(--gray-6)] overflow-hidden transition-opacity"
         style={{ opacity: loading ? 0.6 : 1 }}
       >
-        <table className="w-full text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+        <table className="w-full table-fixed text-[14px] [&_td]:whitespace-nowrap [&_th]:whitespace-nowrap">
+          <colgroup>
+            <col />
+            <col style={{ width: 120 }} />
+            <col style={{ width: 190 }} />
+            <col style={{ width: 110 }} />
+            <col style={{ width: 150 }} />
+            <col style={{ width: 115 }} />
+            <col style={{ width: 100 }} />
+            <col style={{ width: 110 }} />
+          </colgroup>
           <thead>
             <tr style={{ background: "var(--gray-2)" }}>
               <SortHeader label="Address" field="display_address" currentSort={sort} currentOrder={order} onSort={handleSort} />
@@ -315,9 +325,9 @@ export default function PropertiesPage() {
                 className="border-b border-[var(--gray-4)] hover:bg-[var(--gray-a2)] cursor-pointer"
                 onClick={() => navigate(`/properties/${p.id}`, { state: { from: "properties" } })}
               >
-                <td className="px-4 py-2 font-medium">{p.display_address}</td>
-                <td className="px-4 py-2">{p.city}</td>
-                <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>
+                <td className="px-4 py-2 font-medium max-w-[220px] truncate" title={p.display_address || undefined}>{p.display_address}</td>
+                <td className="px-4 py-2 max-w-[140px] truncate" title={p.city || undefined}>{p.city}</td>
+                <td className="px-4 py-2 max-w-[200px] truncate" style={{ color: "var(--gray-11)" }} title={p.current_owner_name || undefined}>
                   {p.current_owner_name || "—"}
                 </td>
                 <td className="px-4 py-2" style={{ color: "var(--gray-11)" }}>

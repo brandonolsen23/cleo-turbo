@@ -19,11 +19,13 @@ from ...compiler.owner_overrides import apply_owner_overrides
 from ...compiler.portfolio_capture import (
     CaptureError,
     ensure_capture_columns,
+    ensure_auto_group,
     upsert_group,
     write_profile,
     write_aliases,
     write_match_keys,
     write_contacts,
+    write_facts,
     write_links,
     run_sweep,
 )
@@ -43,6 +45,7 @@ class GroupIn(BaseModel):
     website: Optional[str] = None
     partners: List[str] = []
     summary: Optional[str] = None
+    narrative_md: Optional[str] = None   # long-form dossier (D8, migration 038)
     source_url: Optional[str] = None
 
 
@@ -79,12 +82,29 @@ class PropertyIn(BaseModel):
     registry_confirmed: bool = False
 
 
+class FactIn(BaseModel):
+    """One group_facts row (Ownership Intelligence D1, spec 5.4 facts[])."""
+    auto_group_id: Optional[str] = None   # default: the payload group's AGRP
+    field: Literal[
+        "hq_address", "phone", "principal", "entity_alias", "founded",
+        "aum_estimate", "behavior", "origin_story", "website",
+        "sector_focus", "gw_worklist_item", "other"]
+    value: str
+    value_json: Optional[str] = None
+    source: Literal["rt", "gw", "web", "site_scrape", "inference", "human"]
+    source_url: Optional[str] = None
+    confidence: Optional[float] = None
+    effective_from: Optional[str] = None
+    effective_to: Optional[str] = None
+
+
 class CapturePayload(BaseModel):
     group: GroupIn
     aliases: List[AliasIn] = []
     match_keys: List[MatchKeyIn] = []
     contacts: List[ContactIn] = []
     properties: List[PropertyIn] = []
+    facts: List[FactIn] = []
     merge_candidates: List[str] = []
     captured_by: str = "cowork"
 
@@ -92,6 +112,8 @@ class CapturePayload(BaseModel):
 class CaptureDiff(BaseModel):
     group_id: str
     created: bool
+    auto_group_id: Optional[str] = None
+    auto_group_created: bool = False
     overrides: dict
     sweep: dict
     merges_proposed: List[str]
@@ -99,6 +121,7 @@ class CaptureDiff(BaseModel):
     match_keys_added: int
     aliases_added: int
     contacts_linked: int
+    facts_added: int = 0
     warnings: List[str]
 
 
@@ -143,6 +166,17 @@ def capture(
 
         # 2. Profile
         write_profile(conn, group_id, payload.group.model_dump(), actor)
+
+        # 2b. Auto-group visibility + facts (Ownership Intelligence M1).
+        # Every captured GRP_ gets (or reuses) an AGRP_ so the group is
+        # visible in the app; facts land on that AGRP unless a fact names
+        # its own auto_group_id. Hand-made captures carry no adjudication,
+        # so adjudication_id stays NULL and rows commit directly.
+        auto_group_id, auto_group_created = ensure_auto_group(
+            conn, group_id, payload.group.model_dump(), actor)
+        facts_added = write_facts(
+            conn, auto_group_id, [f.model_dump() for f in payload.facts],
+            actor)
 
         # 3. Aliases
         aliases_added = write_aliases(
@@ -211,6 +245,8 @@ def capture(
         diff = CaptureDiff(
             group_id=group_id,
             created=created,
+            auto_group_id=auto_group_id,
+            auto_group_created=auto_group_created,
             overrides={k: stats[k] for k in
                        ("filled", "confirmed", "conflicts",
                         "pending_no_property")},
@@ -220,6 +256,7 @@ def capture(
             match_keys_added=match_keys_added,
             aliases_added=aliases_added,
             contacts_linked=contacts_linked,
+            facts_added=facts_added,
             warnings=warnings,
         )
 
