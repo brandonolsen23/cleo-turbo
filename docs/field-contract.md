@@ -1,183 +1,131 @@
 # Cleo Turbo — Canonical Field Contract
 
-**Status:** Draft v1 · 2026-07-17 · governs the shared ingestion spine
+**Status:** v2, updated 2026-07-17 (Waves 0-2 implemented and live)
 **Companion:** the Field Flow Mind Map artifact (`cleo-field-flow-mindmap`)
 
 ---
 
-## 1. Why this exists
+## 1. What this is: the switchboard
 
-Every data source in Cleo is different at the front (Realtrack HTML, a GeoWarehouse report, an OSM node, a website page). But everything they describe is the same handful of things: a property, an address, a parcel, an owner, a price, some physical details. This contract is the single definition of *those* things. It says: for any source, here is the exact set of fields you map your raw data into, here is the unit and processor each one uses, and here is where it ends up.
+Every data source is different at the front (Realtrack HTML, a GeoWarehouse report, an OSM node, a website page), but they all describe the same handful of things: a property, an address, a parcel, an owner, a price, some physical details. This contract is the single definition of those things.
 
-Two rules make it work:
+Think of it as a switchboard at the start of the pipeline. A raw field comes in, the source's staging step decides which **bucket** it belongs to, and the bucket has a fixed way to turn it from raw into ingestion-ready. A new source never invents formatting; it only routes each piece to a bucket and lets the bucket's shared processor do the rest.
 
-1. **A source never invents its own version of a shared field.** An address is an address; it goes through the shared address engine whether it came from RT or a website. Same for land size, building size, and owner names.
-2. **A field the contract doesn't cover is a deliberate extension, not a silent add.** When a new source brings something genuinely new (a Zoning source bringing bylaw references, say), that field gets named, typed, given a home, and wired into compile on purpose — and it joins this contract so the next source inherits it.
+Two rules make it hold:
 
-The backbone remains the **ARN**. Every record, from every source, resolves to an ARN and links to everything else through it.
+1. A source never invents its own version of a shared field. An address is an address; it goes through the shared address engine whether it came from RT or a website. Same for land size, building size, and owner names.
+2. A field the contract does not cover is a deliberate extension, not a silent add. When a source brings something genuinely new (a Zoning source bringing bylaw references), that field gets named, typed, given a home, and wired into the compiler on purpose, and it joins this contract so the next source inherits it.
 
----
+Two things to keep straight:
 
-## 2. The canonical blocks
-
-Every source's staging step maps its raw data into these blocks. Not every source fills every block (GW has no transaction event; a website has no consideration). Empty is fine and expected — *absent from the block* means "the source said nothing," which is different from "we never looked."
-
-### Block A — Provenance *(mandatory, every record)*
-
-| Field | Type | Notes |
-|---|---|---|
-| `source` | text | `rt` `gw` `osm` `url` … |
-| `source_id` | text | RT_ID / GW_ID / OSM_ID / URL slug |
-| `source_url` | text | the page/report the data came from (web + provenance) |
-| `source_file` | text | raw file on disk, where applicable |
-| `captured_at` / `compiled_at` | ISO datetime | |
-| `confidence` | 0–1 | how sure we are of this record |
-| `web_asserted` / `registry_confirmed` | bool | registry/GW outranks web |
-
-### Block B — Transaction / Event *(optional)*
-
-| Field | Type | Unit | Owner |
-|---|---|---|---|
-| `sale_date` | date | ISO | — |
-| `sale_price` | int | CAD | — |
-| `event_type` | text | transfer / sale / listing | — |
-| `transaction_note` | text | | — |
-
-### Block C — Address *(SHARED — cleo/address + cleo/resolver)*
-
-The one block that must be identical across all sources. Raw address text in, canonical structure out.
-
-| Field | Type | Owner |
-|---|---|---|
-| `original` | text | staging (verbatim) |
-| `display` | text | `cleo/address` formatter |
-| `components{}` | object | `cleo/address/decompose` — street_number, street_name, street_suffix, street_direction, suite_type, suite_number |
-| `geocode_string` | text | **`build_geocode_string` (to be promoted to cleo/address)** — one assembler for all sources |
-| `city` / `region` / `municipality` | text | staging |
-| `postal` / `province` / `country` | text | staging |
-
-**Rule:** components are always produced and always preserved in the clean-data record, for every source. (Closes issues #2 and #6.)
-
-### Block D — Parcel / Resolution *(SHARED — cleo/resolver output)*
-
-| Field | Type | Notes |
-|---|---|---|
-| `resolved_arn` | 20-digit | the join key / backbone |
-| `method` | text | verified / spatial_* / arn_* / pin_bridge / **unresolved** / error — never blank (closes #3) |
-| `reason` | text | why unresolved (geocode_miss, pin_no_match…) — **new column** |
-| `confidence` | 0–1 | |
-| `pip_verified` | bool | |
-| `tier` | text | verified / probable / review |
-| `containment`, `loc_name`, `addr_type`, `geocode_score`, `field_match` | mixed | provenance |
-| `lat`, `lng`, `parcel_geojson` | geo | the map polygon |
-
-### Block E — Site / Physical
-
-| Field | Type | Unit | Owner |
-|---|---|---|---|
-| `pin` (+ `pin_api`) | text | — | `cleo/address` pin formatter |
-| **`land_size_sqft`** | number | **sq ft (canonical)** | land-size converter — acres derived for display (closes #4) |
-| `building_size` | raw + value + unit | mixed (sf/units/rooms…) | `building_size.py` — never summed across units |
-| `frontage_ft`, `depth_ft` | number | ft | pass-through |
-| `legal_description` | text | | |
-| `location` | text | | |
-| `property_code` / `property_type` / `asset_class` | text | | classifier |
-| `zoning` | text | | *(extension-ready; see §6)* |
-
-### Block F — Parties / Ownership *(SHARED — normalize_brand → groups; fingerprint → contacts)*
-
-| Field | Type | Owner |
-|---|---|---|
-| `party_name`, `trade_name`, `care_of`, `companies`, `law_firms` | text/list | `normalize_brand` → `GRP_` |
-| `side` | text | buyer / seller / owner |
-| `phone` | text | `normalize_phone` |
-| `contacts[]` {name, title} | list | fingerprint → `CON_` |
-| `mailing_address` | Block C shape | shared address engine |
-
-### Block G — Financial
-
-| Field | Type | Unit |
-|---|---|---|
-| `cash`, `debt`, `chattels`, `other` | int | CAD |
-| `charges[]` {chargee, principal, rate, registered, due} | list | |
-| `assessed_value`, `valuation_date` | int / date | CAD / — |
-| `asking_rate`, `noi` | mixed | |
-
-### Block H — Detail / Media *(source-specific richness, keyed by ARN)*
-
-| Field | Type | Lands in |
-|---|---|---|
-| `total_sqft`, `units`, `floors`, `parking`, `vacancy` | mixed | `property_capture` |
-| `tenants[]` {name, unit, sqft, is_anchor} | list | `property_tenants` |
-| `pdf_links`, `photos` | list | `property_capture` / `transactions.photos_json` |
-| `description`, `website`, `socials` | text | various |
+- **Most buckets are input** (the source fills them). **One bucket, Parcel/Resolution, is output**: the resolver computes it from the Address and Site buckets. A source does not fill it; it earns it by feeding the address bucket correctly.
+- The whole switchboard produces the **ARN** (Assessment Roll Number). Every record from every source resolves to an ARN, and the ARN is the join key that links a property's RT sale, GW owner, POI, and website capture together.
 
 ---
 
-## 3. Known-field registry
+## 2. The buckets (switchboard lanes)
 
-The registry is the machine-checkable version of §2: canonical field → block → type → unit → owning processor → source(s) that populate it → DB destination. It lives next to this doc and is the thing a new source is diffed against. (First build: generate it from the block tables above plus the DB schema so it's exhaustive.)
+### A. Provenance  *(every record, always)*
+`source`, `source_id`, `source_url`, `source_file`, `captured_at`/`compiled_at`, `confidence`, `web_asserted`/`registry_confirmed`.
+Format: verbatim. Registry/GW outranks web; web never overwrites a confirmed owner. Absent means "the source said nothing," which is different from "we never looked."
+
+### B. Transaction / Event  *(optional: RT has it, GW sales history has it, a website usually does not)*
+`sale_date`, `sale_price`, `event_type`, `transaction_note`.
+Format: dates to ISO; prices to integer CAD.
+
+### C. Address  *(SHARED, enforced)*
+The most important lane. Any address text, from any source, takes one path:
+- `cleo/address/decompose` breaks it into components: street_number, street_name, street_suffix, street_direction, suite_type, suite_number.
+- `cleo/address/formatter.format_display` builds the display string.
+- `cleo/address/geocode.build_geocode_string` builds the exact query sent to the Ontario geocoder (promoted to a single shared function in Wave 1; RT, GW, and future lanes all call it).
+- Plus city, region/municipality, postal, province.
+This lane feeds the resolver. Same physical address in, same result out, regardless of source.
+
+### D. Parcel / Resolution  *(SHARED, OUTPUT: the resolver fills this, not the source)*
+`resolved_arn` (the backbone), `method` (verified / spatial_consensus / spatial_geocode / spatial_override / spatial_coords / arn_only / pin_bridge / **unresolved** / error, never blank), `reason` (why it failed: no_address, geocode_miss, arn_miss_*, arn_too_far_Nm, spatial_miss, etc.), `confidence` (0-1), `pip_verified`, `tier` (verified/probable/review), `containment`, `loc_name`, `addr_type`, `geocode_score`, `field_match`, and the geometry `lat`, `lng`, `parcel_geojson`.
+A source hands the resolver an address (Block C) and/or a PIN/ARN; the resolver returns this bucket.
+
+### E. Site / Physical
+`pin` (formatted to 20-digit api_format), **`land_size_sqft`** (canonical square feet), `building_size` (raw + parsed value + unit), `frontage_ft`, `depth_ft`, `legal_description`, `location`, `property_code`/`property_type`/`asset_class`, and `zoning` (extension slot for a future source).
+Format: land size to sqft; building size to value + unit (never summed across mixed units); pin/arn to 20-digit api_format.
+
+### F. Parties / Ownership  *(SHARED, enforced)*
+`party_name`, `trade_name`, `care_of`, `companies`, `law_firms`, `side` (buyer/seller/owner), `phone`, `contacts` (name + title), and a `mailing_address` that itself goes through Block C.
+Format: company names through `normalize_brand` to a stable `GRP_` id; people through a fingerprint to a stable `CON_` id; phones through `normalize_phone`. This is what lets "who owns this" span SPVs.
+
+### G. Financial
+`cash`, `debt`, `chattels`, `other`, `charges[]`, `assessed_value`, `valuation_date`, `asking_rate`, `noi`.
+Format: integers in CAD; dates ISO.
+
+### H. Detail / Media  *(source-specific richness, keyed by ARN)*
+`total_sqft`, `units`, `floors`, `parking`, `vacancy`, `tenants[]`, `pdf_links`, `photos`, `description`, `website`/`socials`.
+Everything here attaches to a parcel by ARN, which is why the resolver has to run first. Defined but not yet wired for the URL source (see status #7).
 
 ---
 
-## 4. Standardization rules (the guarantees)
+## 3. Formatting rules (raw to ingestion-ready)
 
-- **Address** — always through shared `decompose` + the promoted `build_geocode_string`. Same physical address produces the same geocoder query regardless of source. Components preserved in clean-data everywhere.
-- **Land size** — one canonical field `land_size_sqft`. RT acres × 43,560; GW `site_area_sqft` direct; GW `lot_size_area` parsed instead of dropped. Acres derived at read time for display.
-- **Building size** — raw + parsed value + unit. Never summed across mixed units.
-- **Names** — `party_name` / `trade_name` / `care_of` / `companies` all feed `normalize_brand` → group `normalized_name` → stable `GRP_`. People → fingerprint → `CON_`.
-- **Parcel method** — always the real method, including `unresolved`, never blank. `reason` always captured.
-- **Provenance** — every captured field carries source + confidence; registry/GW beats web; web never overwrites a confirmed owner.
-
----
-
-## 5. The 7 issues, as conformance tasks
-
-| # | Issue | Contract section it satisfies | Wave |
-|---|---|---|---|
-| 5 | geocode_string built differently per source | §2 Block C — one `build_geocode_string` | 1 |
-| 2 | GW drops address components | §2 Block C — components preserved everywhere | 1 |
-| 6 | POI address bypasses decomposer | §2 Block C | 1 |
-| 4 | land size not standardized | §2 Block E + §4 — `land_size_sqft` | 2 |
-| 1 | property-address components not in DB | §2 Block C decision (display + ARN in DB) | 2 |
-| 3 | unresolved stored as '' | §2 Block D — real method + reason | 2 |
-| 7 | URL detail tables have no writer | §2 Block H — `property_capture` / `property_tenants` | 3 |
+| Raw input | Bucket | Processor / rule |
+|---|---|---|
+| Address text | C | `cleo/address` decompose + formatter + `build_geocode_string` |
+| PIN / ARN | D/E | api_format (20-digit, spaces stripped) |
+| Land size (acres, sqft, ft x ft) | E | convert to `land_size_sqft` (acres x 43,560; measured sqft direct) |
+| Building size (free-text) | E | parse to value + unit; never sum across units |
+| Company / party name | F | `normalize_brand` -> `GRP_` |
+| Person name | F | fingerprint -> `CON_` |
+| Phone | F | `normalize_phone` |
+| Date | B/G | ISO |
+| Price / money | B/G | integer CAD |
+| Owner->parcel link | D + owner_overrides | keyed by ARN; web never clobbers a registry owner |
 
 ---
 
-## 6. Adding a new source (the process)
+## 4. Known-field registry
 
-This is the payoff. Adding a source is a fixed procedure, not a redesign.
+The machine-checkable version of Section 2: canonical field -> block -> type -> unit -> owning processor -> source(s) that populate it -> DB destination. Generate from the block tables above plus the DB schema so it is exhaustive; it is the thing a new source is diffed against. (Not yet generated as a file.)
+
+---
+
+## 5. Adding a new source (the procedure)
+
+Adding a source is a fixed procedure, not a redesign.
 
 1. **Inventory** the raw fields the source exposes.
-2. **Map** each to a canonical block/field. Addresses → Block C, property details → Block E, owner/company → Block F, price → Block B/G.
-3. **Route** mapped fields through the shared processors — no source writes its own address, land-size, or name logic.
-4. **Flag the leftovers.** Any raw field with no canonical home is a proposed **extension**: name it, choose its block (or open a new block), set type + unit, decide its DB destination, add it to the registry.
+2. **Route** each to a bucket: address -> C, property details/land -> E, owner/company -> F, price/date -> B/G, rich per-property detail -> H.
+3. **Format** through the shared processor for that bucket. No source writes its own address, land-size, or name logic.
+4. **Flag the leftovers.** Any raw field with no bucket is a proposed extension: name it, choose its block (or open a new one), set type + unit, decide its DB destination, add it to the registry.
 5. **Wire** the extension into the clean-data record and the compiler intentionally.
-6. **Write the adapter** — convert the source's format to `ResolutionInput`, call the shared `resolve()`, and emit a clean-data record in the contract shape.
+6. **Write the adapter**: convert the source's format to a `ResolutionInput` (address-primary like RT/URL, or ARN-primary like GW), call the shared `resolve()`, and emit a clean-data record in the contract shape.
 
-### Worked example — a Zoning source
-
-- **Maps cleanly (existing fields):** property address → Block C (shared decompose + geocode + resolve to ARN). Municipality, PIN → existing. So zoning data attaches to the right parcel automatically, through the same engine everything else uses.
-- **New fields (extensions):** `zoning_code`, `zoning_class`, `bylaw_ref`, `official_plan_designation`, `permitted_uses[]`, `zoning_effective_date`. None have a home today.
-- **Decision the extension forces:** a new block **I — Regulatory/Zoning** and a new DB table `property_zoning` keyed by ARN (many zoning records can attach to one parcel over time, like `gw_sales_history`), rather than columns on `properties`.
-- **Result:** the zoning source resolves addresses identically to RT/GW, its bylaw data lands in `property_zoning`, and "show me the zoning on this parcel" joins on ARN like everything else.
+### Worked example: a Zoning source
+- **Maps cleanly:** property address -> Block C (shared decompose + geocode + resolve to ARN). It attaches to the right parcel automatically, through the same engine as everything else.
+- **New fields (extensions):** `zoning_code`, `zoning_class`, `bylaw_ref`, `official_plan_designation`, `permitted_uses[]`, `zoning_effective_date`.
+- **The extension:** a new **Block I, Regulatory/Zoning**, and a new `property_zoning` table keyed by ARN (many zoning records over time per parcel, like `gw_sales_history`), rather than columns on `properties`.
+- **Result:** zoning resolves addresses identically to RT/GW, its bylaw data lands in `property_zoning`, and "show me the zoning on this parcel" joins on ARN like everything else.
 
 ---
 
-## 7. Open decisions (defaults in force unless you change them)
+## 6. Status of the original drop-risks
 
-| Decision | Default | Change it to |
+| # | Item | Status |
 |---|---|---|
-| Canonical land-size unit | **Store `land_size_sqft`, derive acres** | store both, or leave per-source |
-| Property-address components in DB | **Display + ARN in DB; components live in clean-data** | persist component columns on `properties` |
-| Unresolved `reason` in DB | **Add `parcel_reason` column** | flip `''`→`'unresolved'` only, no reason |
-| Contract home | proposed `docs/field-contract.md` in the repo | elsewhere |
+| 5 | geocode_string built differently per source | **FIXED (Wave 1)** — shared `cleo/address/geocode.build_geocode_string` |
+| 2 | GW dropped address components in its clean record | **FIXED (Wave 1)** — GW clean record carries components |
+| 4 | land size not standardized | **FIXED (Wave 2, live)** — canonical `properties.land_size_sqft`; RT acres x 43,560, GW gap-fills from measured sqft |
+| 3 | unresolved parcels stored as blank | **FIXED (Wave 2, live)** — `transactions.parcel_reason` added; method now reads `unresolved` with a reason |
+| 1 | property-address components not in DB | **DECIDED (not a defect)** — components stay in clean-data; DB keeps display_address + ARN |
+| 6 | POI addresses bypass the shared decomposer | **DEFERRED** (low priority; OSM resolves by coordinates) |
+| 7 | URL detail tables have no writer | **OPEN (Wave 3 / Portfolio Capture M2)** — `property_capture` / `property_tenants` defined but unwired |
 
 ---
 
-## 8. Next steps
+## 7. Where it is enforced (code) + run commands
 
-- Confirm or change §7 defaults.
-- On a branch, tested against a copy of `data/cleo.db`: Wave 1 (issues 5, 2, 6) → Wave 2 (4, 1, 3) → Wave 3 (7).
-- Generate the §3 registry as a checked-in file so future sources diff against it automatically.
+- Address engine: `cleo/address/` (decompose, formatter, dictionaries, geocode).
+- Resolver: `cleo/resolver/` (6-step chain, cache, PIP, pin bridge). Each engine has a thin `adapter.py`.
+- Compiler: `cleo/compiler/` (reader iterates `clean-data/{src}/`, reconciler assigns stable IDs, writer builds derived tables keyed by ARN).
+- Owner overrides / capture layer: `cleo/compiler/owner_overrides.py`, `cleo/compiler/portfolio_capture.py`.
+
+Run (all via Desktop Commander / the project `.venv`):
+- Regenerate RT clean-data: `cd engines/rt && .venv/bin/python compile.py` (supports `--limit`).
+- Rebuild the DB from clean-data: `.venv/bin/python3 rebuild.py` (`--fresh` deletes + reseeds). Both honor `CLEO_DB_PATH` for scratch testing.
