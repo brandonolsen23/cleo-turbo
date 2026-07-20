@@ -18,19 +18,29 @@ a cross-check on RT primaries, but a full RT re-geocode (tens of thousands)
 would need a self-hosted Nominatim or a commercial geocoder. Results are cached.
 """
 from __future__ import annotations
+import os
 import time
 import httpx
 
-NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+PUBLIC_NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+# Point at a local Nominatim (no rate limit) by setting CLEO_NOMINATIM_URL,
+# e.g. http://localhost:8080/search. Falls back to the public endpoint.
+DEFAULT_URL = os.environ.get("CLEO_NOMINATIM_URL", PUBLIC_NOMINATIM_URL)
 USER_AGENT = "CleoTurbo/1.0 (commercial real estate parcel resolver; contact brandon.p.olsen@gmail.com)"
-DEFAULT_DELAY = 1.1  # seconds between calls (Nominatim policy: <= 1 req/sec)
+PUBLIC_DELAY = 1.1  # public Nominatim policy: <= 1 req/sec
+
+
+def _is_local(url: str) -> bool:
+    return any(h in url for h in ("localhost", "127.0.0.1", "0.0.0.0"))
 
 
 class OSMGeocoderClient:
-    """Nominatim forward-geocoder with polite rate limiting + dedup cache."""
+    """Nominatim forward-geocoder with dedup cache. Rate-limits the public
+    endpoint; a local Nominatim (CLEO_NOMINATIM_URL) runs with no delay."""
 
-    def __init__(self, delay: float = DEFAULT_DELAY, verbose: bool = False):
-        self.delay = delay
+    def __init__(self, base_url: str = DEFAULT_URL, delay: float | None = None, verbose: bool = False):
+        self.base_url = base_url
+        self.delay = (0.0 if _is_local(base_url) else PUBLIC_DELAY) if delay is None else delay
         self.verbose = verbose
         self._last_call = 0.0
         self._cache: dict[str, dict | None] = {}
@@ -65,7 +75,7 @@ class OSMGeocoderClient:
         try:
             with httpx.Client(timeout=20.0) as c:
                 r = c.get(
-                    NOMINATIM_URL,
+                    self.base_url,
                     params={
                         "q": clean, "format": "jsonv2", "addressdetails": 1,
                         "limit": 3, "countrycodes": "ca",
