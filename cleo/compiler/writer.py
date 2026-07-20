@@ -17,6 +17,24 @@ from .reader import (iter_clean_records, iter_osm_records, iter_gw_records,
                      read_parcel, count_clean_records, count_osm_records, count_gw_records)
 from .reconciler import IDRegistry, make_name_fingerprint, normalize_group_name, strip_leading_honorifics
 from ..database.schema import drop_derived_tables, create_all_tables
+
+import re as _re
+
+_SRC_DATE_RE = _re.compile(r'(\d{4}-\d{2}-\d{2})')
+
+
+def _derive_source_date(text):
+    """Extract a YYYY-MM-DD 'obtained' date from a source path/filename.
+
+    RT daily folders look like '_daily/2026-07-17_073007/p004'; GW files look
+    like 'geowarehouse-2026-02-25T02-58-03-818Z.html'. Bulk-import RT folders
+    carry no date -> None. Deterministic: re-derived identically on every
+    rebuild, so it survives the derived-table drop with no persistence.
+    """
+    if not text:
+        return None
+    m = _SRC_DATE_RE.search(text)
+    return m.group(1) if m else None
 from .owner_overrides import apply_owner_overrides
 from ..database.asset_classes import seed_asset_classes, map_property_type_to_asset_class
 from ..database.tenant_categories import seed_tenant_categories
@@ -687,7 +705,8 @@ def run_compiler(conn):
             "buyer_trade_name, buyer_care_of, buyer_law_firms_json, buyer_companies_json, "
             "photos_json, source_folder, source_position, "
             "parcel_loc_name, parcel_addr_type, parcel_geocode_score, parcel_field_match, "
-            "parcel_containment, parcel_confidence, pip_verified, parcel_tier, parcel_reason) "
+            "parcel_containment, parcel_confidence, pip_verified, parcel_tier, parcel_reason, "
+            "source_date) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
             "?, ?, ?, "
             "?, ?, "
@@ -695,7 +714,7 @@ def run_compiler(conn):
             "?, ?, ?, ?, ?, "
             "?, ?, ?, ?, "
             "?, ?, ?, ?, "
-            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (source_id, property_id, arn,
              tx.get('sale_date'), tx.get('sale_price'), tx.get('transaction_note', ''),
              display_address, tx.get('city', ''), tx.get('region', ''), prop.get('postal', ''),
@@ -738,7 +757,8 @@ def run_compiler(conn):
              parcel_info.get('confidence'),
              parcel_info.get('pip_verified'),
              parcel_info.get('tier'),
-             parcel_info.get('reason'))
+             parcel_info.get('reason'),
+             _derive_source_date(rec.get('source_folder', '')))
         )
         tx_count += 1
 
@@ -1160,9 +1180,9 @@ def run_compiler(conn):
                     "ownership_type, frontage_ft, depth_ft, site_area_sqft, acreage, "
                     "owner_name, owner_mailing, legal_description, source_file, "
                     "land_registry_status, registration_type, lro, municipality, "
-                    "has_mpac_data, is_active, address_parsed, parcel_resolved) "
+                    "has_mpac_data, is_active, address_parsed, parcel_resolved, source_date) "
                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
-                    "?, ?, ?, ?, ?, ?, ?, ?)",
+                    "?, ?, ?, ?, ?, ?, ?, ?, ?)",
                     (a_id, gw_id, a_property_id, arn_api, gw.get('pin', ''),
                      assessment.get('assessed_value'),
                      assessment.get('valuation_date', ''),
@@ -1185,7 +1205,8 @@ def run_compiler(conn):
                      1 if quality.get('has_mpac_data') else 0,
                      1 if quality.get('is_active') else 0,
                      1 if quality.get('address_parsed') else 0,
-                     1 if quality.get('parcel_resolved') else 0)
+                     1 if quality.get('parcel_resolved') else 0,
+                     _derive_source_date(gw.get('source_file', '')))
                 )
                 gw_assessment_count += 1
 

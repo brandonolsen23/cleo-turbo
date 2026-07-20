@@ -60,3 +60,7 @@ engines/rt/parcel_resolver/token.py
 engines/rt/pipeline/deduped/
 engines/rt/pipeline/_processing_log.jsonl
 *.stale
+
+# GW daily launchd logs (runtime state)
+engines/gw/launchd.log
+engines/gw/launchd.err.log

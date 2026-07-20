@@ -103,6 +103,8 @@ CREATE TABLE IF NOT EXISTS transactions (
     photos_json     TEXT,
     source_folder   TEXT,
     source_position INTEGER,
+    source_date     TEXT,            -- scrape date (YYYY-MM-DD) parsed from the
+                                     -- _daily source_folder; NULL for bulk imports
     created_at      TEXT DEFAULT (datetime('now'))
 );
 
@@ -305,6 +307,8 @@ CREATE TABLE IF NOT EXISTS gw_assessments (
     is_active        INTEGER DEFAULT 0,
     address_parsed   INTEGER DEFAULT 0,
     parcel_resolved  INTEGER DEFAULT 0,
+    source_date      TEXT,            -- download date (YYYY-MM-DD) parsed from
+                                      -- source_file (geowarehouse-<ISO>.html)
     created_at      TEXT DEFAULT (datetime('now'))
 );
 """

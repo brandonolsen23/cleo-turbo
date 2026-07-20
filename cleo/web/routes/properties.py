@@ -153,19 +153,28 @@ def property_stats(db=Depends(get_db), user=Depends(get_current_user)):
     ).fetchall()
     stats["top_cities"] = [{"city": r[0], "count": r[1]} for r in cities]
 
-    # Recent records (RT transactions + GW assessments, by created_at)
+    # Recent records (RT transactions + GW assessments, by obtained-date).
+    # "Added" = when the source data was obtained (GW download date / RT scrape
+    # date), derived deterministically from source_file/source_folder so it is
+    # stable across rebuilds. We sort by that obtained-date and only include rows
+    # that have one: historical bulk-imported RT rows carry no dated source path
+    # (source_date IS NULL) and were not "recently added," so they are excluded
+    # rather than floating to the top on created_at (the rebuild time), which
+    # would re-introduce the churn this fixes. See docs/incremental-recompile-plan.md.
     recent_rt = db.execute(
         "SELECT t.source_id, 'rt' as source, t.property_id, t.display_address, t.city, "
-        "t.created_at as added_at, t.sale_price as value "
-        "FROM transactions t ORDER BY t.created_at DESC LIMIT 10"
+        "t.source_date as added_at, t.sale_price as value "
+        "FROM transactions t WHERE t.source_date IS NOT NULL "
+        "ORDER BY t.source_date DESC LIMIT 10"
     ).fetchall()
     recent_gw = db.execute(
         "SELECT g.gw_id as source_id, 'gw' as source, g.property_id, "
         "COALESCE(p.display_address, '') as display_address, "
         "COALESCE(p.city, '') as city, "
-        "g.created_at as added_at, g.assessed_value as value "
+        "g.source_date as added_at, g.assessed_value as value "
         "FROM gw_assessments g LEFT JOIN properties p ON g.property_id = p.id "
-        "ORDER BY g.created_at DESC LIMIT 10"
+        "WHERE g.source_date IS NOT NULL "
+        "ORDER BY g.source_date DESC LIMIT 10"
     ).fetchall()
     combined = sorted(
         [dict(r) for r in recent_rt] + [dict(r) for r in recent_gw],

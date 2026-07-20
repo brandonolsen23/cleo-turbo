@@ -34,6 +34,18 @@ from parcel_resolver.token import load_token, refresh_token
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [GW] %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger('gw-watcher')
 
+import re as _re
+
+
+def _gw_source_date(source_file):
+    """Download date (YYYY-MM-DD) parsed from a GW source_file like
+    'geowarehouse-2026-02-25T02-58-03-818Z.html'. Matches the compiler's
+    derivation so incremental and rebuilt rows agree."""
+    if not source_file:
+        return None
+    m = _re.search(r'(\d{4}-\d{2}-\d{2})', source_file)
+    return m.group(1) if m else None
+
 WATCH_DIR = os.path.join(os.path.expanduser('~'), 'Downloads', 'GeoWarehouse', 'gw-ingest-data')
 HTML_DIR = os.path.join(PROJECT_ROOT, 'engines', 'gw', 'pipeline', 'html')
 PARSED_DIR = os.path.join(PROJECT_ROOT, 'engines', 'gw', 'pipeline', 'parsed')
@@ -256,8 +268,8 @@ def process_batch(files):
                         "INSERT OR REPLACE INTO gw_assessments (id, gw_id, property_id, arn, pin, "
                         "assessed_value, valuation_date, zoning, property_code, property_description, "
                         "ownership_type, frontage_ft, depth_ft, site_area_sqft, acreage, "
-                        "owner_name, owner_mailing, legal_description, source_file) "
-                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        "owner_name, owner_mailing, legal_description, source_file, source_date) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                         (a_id, gw_id, property_id, assessment.get('arn_api', ''), gw.get('pin', ''),
                          assessment.get('assessed_value'), assessment.get('valuation_date', ''),
                          assessment.get('zoning', ''), assessment.get('property_code', ''),
@@ -268,7 +280,8 @@ def process_batch(files):
                          assessment.get('owner_names_mpac', ''),
                          assessment.get('owner_mailing_address', ''),
                          assessment.get('legal_description', ''),
-                         gw.get('source_file', ''))
+                         gw.get('source_file', ''),
+                         _gw_source_date(gw.get('source_file', '')))
                     )
 
                 # Insert sales history
