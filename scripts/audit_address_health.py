@@ -57,8 +57,7 @@ def _addr(row):
     disp = (row["display_address"] or "").strip()
     if not disp:
         return None
-    parts = [disp, (row["city"] or "").strip(),
-             (row["region"] or "ON").strip(), (row["postal"] or "").strip()]
+    parts = [disp, (row["city"] or "").strip(), "Ontario"]
     return ", ".join(p for p in parts if p)
 
 
