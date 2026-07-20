@@ -56,6 +56,12 @@ LOG_FILE = os.path.join(PIPELINE_DIR, '_processing_log.jsonl')
 REPROCESS_MARKER = os.path.join(PIPELINE_DIR, '_reprocess.json')
 LOCKFILE = os.path.join(PARCEL_LINKS_DIR, '.resolve_v2.lock')
 
+# Marks whether the compiled DB is stale relative to the pipeline outputs.
+# Set when any incremental stage produces new records; cleared only after a
+# successful rebuild. Lets --new skip the full ~18min compile+rebuild on days
+# the scraper ran but found nothing new. See docs/incremental-recompile-plan.md.
+DIRTY_MARKER = os.path.join(PROJECT_ROOT, 'data', 'pipeline-dirty.json')
+
 STAGE_ORDER = ['extract', 'dedup', 'classify', 'normalize', 'resolve', 'compile', 'rebuild']
 
 
@@ -142,6 +148,65 @@ def _run_subprocess(cmd, cwd=None, label=''):
             for line in result.stderr.strip().split('\n')[:10]:
                 print(f'    {line}')
     return result.returncode == 0, elapsed, result.stdout
+
+
+# ---------------------------------------------------------------------------
+# Dirty marker — tracks whether the compiled DB is stale
+# ---------------------------------------------------------------------------
+
+def _read_dirty():
+    """Return True if the compiled DB is known to be stale.
+
+    Missing/unreadable marker is treated as dirty so we never skip a needed
+    compile — the first run after this lands will rebuild once, then self-clear.
+    """
+    try:
+        with open(DIRTY_MARKER) as f:
+            return bool(json.load(f).get('dirty', True))
+    except (FileNotFoundError, ValueError):
+        return True
+
+
+def _set_dirty(reason):
+    """Mark the compiled DB stale (idempotent)."""
+    os.makedirs(os.path.dirname(DIRTY_MARKER), exist_ok=True)
+    with open(DIRTY_MARKER, 'w') as f:
+        json.dump({
+            'dirty': True,
+            'reason': reason,
+            'since': datetime.now(timezone.utc).isoformat(),
+        }, f, indent=2)
+
+
+def _clear_dirty():
+    """Mark the compiled DB fresh. Call only after a successful rebuild."""
+    os.makedirs(os.path.dirname(DIRTY_MARKER), exist_ok=True)
+    with open(DIRTY_MARKER, 'w') as f:
+        json.dump({
+            'dirty': False,
+            'cleared_at': datetime.now(timezone.utc).isoformat(),
+        }, f, indent=2)
+
+
+# Stages whose per-run counts mean "genuinely new record" (all use pending /
+# missing-downstream-counterpart semantics). 'extract' is excluded because its
+# count includes already-known re-assembled pages.
+NEW_RECORD_STAGES = ('dedup', 'classify', 'normalize', 'resolve')
+
+
+def _needs_compile(results, stage_mode, force_compile, dirty):
+    """Decide whether compile+rebuild should run. Pure/testable.
+
+    Returns (should_compile, new_work). The caller owns the marker side effects
+    (set dirty when new_work > 0, clear it after a successful rebuild).
+      - full / from-stage (stage_mode != 'new'): always compile.
+      - --new: compile if forced, if this run produced new records, or if the
+        DB was already flagged stale by a prior (skipped/failed/locked) run.
+    """
+    new_work = sum(int((results or {}).get(s) or 0) for s in NEW_RECORD_STAGES)
+    if stage_mode != 'new':
+        return True, new_work
+    return bool(force_compile or new_work > 0 or dirty), new_work
 
 
 # ---------------------------------------------------------------------------
@@ -417,7 +482,7 @@ def run_rebuild():
         success, elapsed, stdout = _run_subprocess(cmd, cwd=PROJECT_ROOT, label='rebuild')
 
     _log_entry('rebuild', 'full', 0, 0, elapsed, 0 if success else 1)
-    return 0, elapsed
+    return success, elapsed
 
 
 # ---------------------------------------------------------------------------
@@ -814,6 +879,8 @@ Examples:
     parser.add_argument('--skip', action='append', default=[], choices=['dedup', 'resolve', 'compile', 'rebuild'],
                         help='Skip specific stages (can be repeated)')
     parser.add_argument('--dry-run', action='store_true', help='Show what would be done without doing it')
+    parser.add_argument('--force-compile', action='store_true',
+                        help='Force compile+rebuild in --new mode even if no new records (overrides the dirty-marker gate)')
     parser.add_argument('--reprocess-from', dest='reprocess_from',
                         choices=['scrape', 'extract', 'dedup', 'classify', 'normalize', 'resolve'],
                         help='Stage to reprocess from (used with --reprocess)')
@@ -992,13 +1059,41 @@ Examples:
         if marker:
             _update_marker_progress('resolve', count)
 
+    # --- Compile + Rebuild gate ---
+    # In --new mode, only run the full compile+rebuild when there is genuinely
+    # new resolved data to fold in. The record-producing stages below all use
+    # "pending" (missing-downstream-counterpart) semantics, so a day where the
+    # scraper only re-downloaded already-known transactions yields 0 and we skip
+    # the ~18min rebuild. 'extract' is intentionally excluded: its count includes
+    # already-known re-assembled pages. --full / --from always rebuild.
+    # See docs/incremental-recompile-plan.md.
+    dirty_before = _read_dirty() if stage_mode == 'new' else False
+    should_compile, new_work = _needs_compile(
+        results, stage_mode, args.force_compile, dirty_before)
+    if stage_mode == 'new' and new_work > 0:
+        _set_dirty(f'{new_work} new record-stage output(s) via {mode_label}')
+
     if 'compile' in stages_to_run:
-        count, elapsed = run_compile()
-        results['compile'] = count
+        if should_compile:
+            count, elapsed = run_compile()
+            results['compile'] = count
+        else:
+            print('\n--- Compile ---')
+            print('  Skipped: no new resolved records since last successful rebuild.')
+            _log_entry('compile', 'skipped_clean', 0, 0, 0, 0)
+            results['compile'] = 0
 
     if 'rebuild' in stages_to_run:
-        count, elapsed = run_rebuild()
-        results['rebuild'] = 0
+        if should_compile:
+            ok, elapsed = run_rebuild()
+            results['rebuild'] = 0
+            if ok:
+                _clear_dirty()
+        else:
+            print('\n--- Rebuild ---')
+            print('  Skipped: nothing new to compile.')
+            _log_entry('rebuild', 'skipped_clean', 0, 0, 0, 0)
+            results['rebuild'] = 0
 
     # Clean up reprocess marker if we completed a full reprocess
     if marker and stage_mode == 'all':
