@@ -6,7 +6,6 @@ then classify it into the contract buckets via a schema-locked Claude tool call.
 The classifier is structure-agnostic; robustness lives in acquisition (render+vision).
 """
 from __future__ import annotations
-import re
 import base64
 import httpx
 import anthropic
@@ -149,11 +148,12 @@ def render_page(url: str, timeout_ms: int = 30000):
 
 
 def validate(result: dict) -> dict:
-    """Deterministic post-check (spec §4): an address with no leading street
-    number is not resolvable — mark it so the resolve step skips it."""
+    """Extract is STAGING ONLY (url-source-spec.md §4): normalize structure and
+    return. Whether a staged address can reach an ARN is the RESOLVER's call,
+    not extract's — we deliberately make no resolvability judgment here."""
     for p in result.get("properties", []):
-        sa = ((p.get("address") or {}).get("street_address") or "").strip()
-        p["_address_resolvable"] = bool(re.match(r"^\s*\d", sa))
+        p.setdefault("address", {})
+        p.setdefault("tenants", [])
     return result
 
 
