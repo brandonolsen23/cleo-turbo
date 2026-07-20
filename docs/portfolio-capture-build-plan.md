@@ -34,6 +34,11 @@ The problem it solves: Cleo builds ownership from Realtrack transactions, so dee
 - **group_contacts / people** (exists) — name, title, email, phone, source, confidence.
 - **manual_properties** — for assets listed on a site but not yet in Cleo (no RT/GW); minimal record, resolved to ARN.
 
+> **SUPERSEDED (2026-07-17):** the per-property extraction schema and protocol
+> below are replaced by `docs/url-source-spec.md`, which aligns them to the
+> field contract (bucket routing, land_size_sqft, resolver stamp, fan-out,
+> stamp-and-flag instead of human pre-review). Build against that doc.
+
 ## Extraction protocol (the durable artifact)
 
 GROUP: canonical_name; aliases[]; summary; business_lines[] (owner/developer/property_manager/brokerage); corp_address; corp_phone; fax; emails[] + domain; website; socials[]; partners[]; people[] {name,title,email,phone}.
