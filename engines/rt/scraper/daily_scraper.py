@@ -361,13 +361,24 @@ def verify_completeness(
     }
 
     for sf3_value, label in sf3_types.items():
-        # GET search page to reset session
-        session.get("/?page=search")
-        time.sleep(delay)
+        # GET search page to reset session, then run the category search.
+        # get()/post() already retry transient disconnects internally; if a
+        # category still can't be fetched after retries, skip it rather than
+        # abort the whole verification pass, so the remaining categories'
+        # label evidence is still captured.
+        try:
+            session.get("/?page=search")
+            time.sleep(delay)
 
-        params = _make_search_params(start_date, end_date, sf3=sf3_value)
-        resp = session.post("/?page=results", data=params)
-        html = resp.text
+            params = _make_search_params(start_date, end_date, sf3=sf3_value)
+            resp = session.post("/?page=results", data=params)
+            html = resp.text
+        except Exception as exc:  # noqa: BLE001
+            log.warning(
+                "  %s: category search failed after retries, skipping: %s",
+                label, exc,
+            )
+            continue
         time.sleep(delay)
 
         count = extract_total(html)
@@ -566,10 +577,19 @@ def run_daily(
     verify_ok = True
     category_counts = {}
     if not dry_run and not skip_verify and total > 0:
-        verify_ok, category_counts = verify_completeness(
-            session, start_date, end_date, total, sf3_types, delay,
-            output_dir=output_dir,
-        )
+        try:
+            verify_ok, category_counts = verify_completeness(
+                session, start_date, end_date, total, sf3_types, delay,
+                output_dir=output_dir,
+            )
+        except Exception as exc:  # noqa: BLE001
+            # Verification is a completeness CHECK, not data collection. The
+            # sweep's detail pages are already on disk for the watcher to
+            # process. A transient RealTrack disconnect during verification
+            # must never discard a good sweep or fail the whole daily run,
+            # so log it and continue to metadata/summary and a clean exit.
+            log.warning("Verification pass failed, continuing: %s", exc)
+            verify_ok = False
 
     session.close()
 

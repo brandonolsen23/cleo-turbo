@@ -33,6 +33,20 @@ RESULTS_PER_PAGE = 50
 log = logging.getLogger("rt.scraper")
 
 # ---------------------------------------------------------------------------
+# Request resilience
+# ---------------------------------------------------------------------------
+# RealTrack intermittently drops the connection mid-request
+# ("Server disconnected without sending a response") or stalls past the read
+# timeout, especially during the burst of requests in the verification pass.
+# These are transient flakiness, not real failures, so every request retries
+# transparently with backoff before giving up. This keeps a single network
+# blip from aborting the whole daily run.
+_RETRYABLE_EXC = (httpx.TransportError,)
+_RETRYABLE_STATUS = frozenset({502, 503, 504})
+_REQUEST_TRIES = 4
+_REQUEST_BACKOFF = 5  # seconds; multiplied by attempt number, capped at 30
+
+# ---------------------------------------------------------------------------
 # Known sf3 values (verified from live search form, Apr 2026)
 # ---------------------------------------------------------------------------
 
@@ -185,9 +199,16 @@ class RealtrackSession:
 
     def _login(self, username: str, password: str) -> None:
         log.info("Logging in to Realtrack...")
-        resp = self.client.post(
-            "/?page=login",
-            data={"username": username, "password": password, "function": "login"},
+        resp = retry(
+            lambda: self.client.post(
+                "/?page=login",
+                data={
+                    "username": username,
+                    "password": password,
+                    "function": "login",
+                },
+            ),
+            label="login",
         )
         resp.raise_for_status()
         if "page=signout" in resp.text and "Successful Login" in resp.text:
@@ -196,15 +217,46 @@ class RealtrackSession:
             log.error("Login failed — check credentials.")
             sys.exit(1)
 
+    def _request(self, method: str, path: str, **kwargs) -> httpx.Response:
+        """Issue a request, retrying transparently on transient network
+        errors and 5xx responses. Raises the last error only after all
+        attempts are exhausted; otherwise returns a status-checked response.
+        """
+        last_exc: Optional[Exception] = None
+        for attempt in range(1, _REQUEST_TRIES + 1):
+            try:
+                resp = self.client.request(method, path, **kwargs)
+            except _RETRYABLE_EXC as exc:
+                last_exc = exc
+                if attempt >= _REQUEST_TRIES:
+                    break
+                wait = min(attempt * _REQUEST_BACKOFF, 30)
+                log.warning(
+                    "%s %s failed (attempt %d/%d): %s — retrying in %ds",
+                    method, path, attempt, _REQUEST_TRIES, exc, wait,
+                )
+                time.sleep(wait)
+                continue
+            if (resp.status_code in _RETRYABLE_STATUS
+                    and attempt < _REQUEST_TRIES):
+                wait = min(attempt * _REQUEST_BACKOFF, 30)
+                log.warning(
+                    "%s %s -> HTTP %d (attempt %d/%d) — retrying in %ds",
+                    method, path, resp.status_code, attempt,
+                    _REQUEST_TRIES, wait,
+                )
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            return resp
+        # Only reachable when every attempt raised a transport error.
+        raise last_exc  # type: ignore[misc]
+
     def get(self, path: str) -> httpx.Response:
-        resp = self.client.get(path)
-        resp.raise_for_status()
-        return resp
+        return self._request("GET", path)
 
     def post(self, path: str, data: dict) -> httpx.Response:
-        resp = self.client.post(path, data=data)
-        resp.raise_for_status()
-        return resp
+        return self._request("POST", path, data=data)
 
     def close(self):
         self.client.close()
