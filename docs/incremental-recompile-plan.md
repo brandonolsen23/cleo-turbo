@@ -1,7 +1,11 @@
 # Incremental Recompile Plan — stop the daily full rebuild
 
-Status: in progress (started 2026-07-20)
+Status: Phases 1-3 complete (2026-07-20); Phase 4 deferred.
 Owner: Brandon + Claude
+
+Done: Phase 1 (gate compile+rebuild on dirty marker), Phase 2 (GW daily
+launchd job), Phase 3 (source_date obtained-date for Recent Records). Phase 4
+(incremental master compile) intentionally left for later.
 
 ## Problem
 
