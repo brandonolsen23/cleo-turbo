@@ -29,6 +29,21 @@ Two things to keep straight:
 `source`, `source_id`, `source_url`, `source_file`, `captured_at`/`compiled_at`, `confidence`, `web_asserted`/`registry_confirmed`.
 Format: verbatim. Registry/GW outranks web; web never overwrites a confirmed owner. Absent means "the source said nothing," which is different from "we never looked."
 
+**Capture timestamp is mandatory and must be recoverable.** Every raw capture is
+stamped with *when it was captured*, at capture time, encoded in the source path
+or filename so it survives into the record and is re-derived on every rebuild —
+never inferred from compile time. `captured_at` (the date the source was
+obtained) is a different fact from `compiled_at`/`created_at` (when the DB last
+rebuilt); conflating them makes every record look freshly ingested after each
+rebuild. Today this is the `source_date` column: RT daily scrapes carry it in
+`source_folder` (`_daily/YYYY-MM-DD_HHMMSS/...`), GW downloads carry it in
+`source_file` (`geowarehouse-<ISO>.html`), and `cleo/compiler/writer.py` parses
+both deterministically so freshness views ("Recent Records", data-quality) sort
+by real capture time. A capture that lands with no recoverable timestamp (e.g.
+the historical bulk RT import) is treated as **undated**, never as "captured
+now." A source that cannot embed a capture timestamp in its raw output is not
+contract-compliant — fix the capture, don't backfill with `now()`.
+
 ### B. Transaction / Event  *(optional: RT has it, GW sales history has it, a website usually does not)*
 `sale_date`, `sale_price`, `event_type`, `transaction_note`.
 Format: dates to ISO; prices to integer CAD.
@@ -96,6 +111,7 @@ Adding a source is a fixed procedure, not a redesign.
 4. **Flag the leftovers.** Any raw field with no bucket is a proposed extension: name it, choose its block (or open a new one), set type + unit, decide its DB destination, add it to the registry.
 5. **Wire** the extension into the clean-data record and the compiler intentionally.
 6. **Write the adapter**: convert the source's format to a `ResolutionInput` (address-primary like RT/URL, or ARN-primary like GW), call the shared `resolve()`, and emit a clean-data record in the contract shape.
+7. **Timestamp the capture.** The raw output must embed *when it was captured* in its filename or folder path (Block A), so `captured_at`/`source_date` is recoverable on every rebuild rather than collapsing to compile time. A source whose raw files carry no capture time is not compliant — fix the capture step, never stamp `now()` at ingest.
 
 ### Worked example: a Zoning source
 - **Maps cleanly:** property address -> Block C (shared decompose + geocode + resolve to ARN). It attaches to the right parcel automatically, through the same engine as everything else.
