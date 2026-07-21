@@ -104,7 +104,7 @@ def _snapshot_pre_compile(conn):
     return snapshot
 
 
-def _generate_reconciliation_report(conn, pre):
+def _generate_reconciliation_report(conn, pre, ledger_stats=None):
     """Compare post-compile state against pre-compile snapshot."""
     report = {
         'disappeared_groups': [],
@@ -112,7 +112,33 @@ def _generate_reconciliation_report(conn, pre):
         'orphaned_merges': [],
         'property_count_swings': [],
         'orphaned_crm_refs': [],
+        'ledgers': None,
     }
+
+    # Attribution ledger counts (Pass 8; docs/attribution-contract.md)
+    if ledger_stats is not None:
+        ledgers = dict(ledger_stats)
+        try:
+            ledgers['credits_by_basis'] = {
+                r[0]: r[1] for r in conn.execute(
+                    "SELECT basis, COUNT(*) FROM transaction_credits GROUP BY basis"
+                )
+            }
+            ledgers['credits_by_principal_type'] = {
+                r[0]: r[1] for r in conn.execute(
+                    "SELECT principal_type, COUNT(*) FROM transaction_credits "
+                    "GROUP BY principal_type"
+                )
+            }
+            ledgers['holdings_open_by_principal_type'] = {
+                r[0]: r[1] for r in conn.execute(
+                    "SELECT principal_type, COUNT(*) FROM property_holdings "
+                    "WHERE disposed_source_id IS NULL GROUP BY principal_type"
+                )
+            }
+        except Exception:
+            pass
+        report['ledgers'] = ledgers
 
     post_groups = {}
     for r in conn.execute("SELECT id, display_name, status, property_count FROM groups"):
@@ -218,6 +244,20 @@ def _print_reconciliation_report(report):
             print(f"    {o['table']}.{o['column']} → {o['ref_table']}: {o['count']} orphaned rows")
     else:
         print('  CRM integrity: OK')
+
+    ledgers = report.get('ledgers')
+    if ledgers:
+        print('  Attribution ledgers (Pass 8):')
+        by_basis = ledgers.get('credits_by_basis', {})
+        basis_str = ', '.join(f'{k}={v:,}' for k, v in sorted(by_basis.items()))
+        print(f"    Credits: {ledgers.get('credits_total', 0):,} ({basis_str})")
+        print(f"    Via-entity contacts: {ledgers.get('contacts_with_via_credit', 0):,}")
+        open_by = ledgers.get('holdings_open_by_principal_type', {})
+        open_str = ', '.join(f'{k}={v:,}' for k, v in sorted(open_by.items()))
+        print(f"    Holdings: {ledgers.get('holdings_total', 0):,} "
+              f"({ledgers.get('holdings_open', 0):,} open: {open_str}; "
+              f"{ledgers.get('holdings_preclosed', 0):,} pre-closed; "
+              f"{ledgers.get('holdings_manual', 0):,} manual)")
 
     print('=' * 60)
 
@@ -1351,6 +1391,16 @@ def run_compiler(conn):
     apply_owner_overrides(conn)
 
     # ================================================================
+    # Pass 8: Attribution ledgers (docs/attribution-contract.md)
+    # transaction_credits + property_holdings. ADDITIVE — nothing
+    # reads these yet (two-ledger plan, step 2). Runs after Pass 7 so
+    # active manual owner links mirror in as 'manual' holdings.
+    # ================================================================
+    print('Pass 8: Building attribution ledgers...')
+    from .credit_ledger import build_credit_ledgers
+    ledger_stats = build_credit_ledgers(conn)
+
+    # ================================================================
     # Rebuild FTS indexes
     # ================================================================
     print('Rebuilding FTS indexes...')
@@ -1435,7 +1485,7 @@ def run_compiler(conn):
     # ================================================================
     # Reconciliation Report
     # ================================================================
-    report = _generate_reconciliation_report(conn, pre_compile)
+    report = _generate_reconciliation_report(conn, pre_compile, ledger_stats)
     _print_reconciliation_report(report)
 
     # Save report to JSON for tooling

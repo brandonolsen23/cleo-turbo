@@ -42,7 +42,7 @@ def _seeded_db():
             display_address TEXT, city TEXT, region TEXT, property_id TEXT
         );
         CREATE TABLE transaction_parties (
-            source_id TEXT, side TEXT, contact_id TEXT,
+            source_id TEXT, side TEXT, contact_id TEXT, group_id TEXT,
             party_name TEXT, contact_title TEXT, phone TEXT
         );
         CREATE TABLE transaction_mailing_addresses (

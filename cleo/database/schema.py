@@ -167,6 +167,31 @@ CREATE TABLE IF NOT EXISTS transaction_parties (
     phone           TEXT
 );
 
+-- Attribution ledgers (docs/attribution-contract.md). Derived, rebuilt each
+-- compile by cleo/compiler/credit_ledger.py. NOTHING reads these yet (step 2
+-- of the two-ledger plan is additive).
+CREATE TABLE IF NOT EXISTS transaction_credits (
+    source_id       TEXT NOT NULL REFERENCES transactions(source_id),
+    side            TEXT NOT NULL,            -- 'buyer' | 'seller'
+    principal_type  TEXT NOT NULL,            -- 'contact' | 'entity' | 'auto_group' | 'unknown'
+    principal_id    TEXT NOT NULL,
+    basis           TEXT NOT NULL,            -- 'named' | 'entity_named_elsewhere' | 'member' | 'manual'
+    via_entity_id   TEXT,                     -- GRP the credit flows through (NULL for named)
+    PRIMARY KEY (source_id, side, principal_type, principal_id)
+);
+
+CREATE TABLE IF NOT EXISTS property_holdings (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    property_key        TEXT NOT NULL,        -- property_id or addr:<addr>|<city>
+    principal_type      TEXT NOT NULL,
+    principal_id        TEXT NOT NULL,
+    acquired_source_id  TEXT,                 -- NULL = owned before our data starts
+    acquired_date       TEXT,
+    disposed_source_id  TEXT,                 -- NULL = currently owned
+    disposed_date       TEXT,
+    basis               TEXT NOT NULL DEFAULT 'derived'   -- 'derived' | 'manual'
+);
+
 CREATE TABLE IF NOT EXISTS transaction_mailing_addresses (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     source_id       TEXT NOT NULL REFERENCES transactions(source_id),
@@ -336,6 +361,11 @@ CREATE INDEX IF NOT EXISTS idx_group_names_normalized ON group_names(normalized)
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_source ON transaction_parties(source_id);
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_contact ON transaction_parties(contact_id);
 CREATE INDEX IF NOT EXISTS idx_transaction_parties_group ON transaction_parties(group_id);
+CREATE INDEX IF NOT EXISTS idx_txn_credits_principal ON transaction_credits(principal_type, principal_id);
+CREATE INDEX IF NOT EXISTS idx_txn_credits_source ON transaction_credits(source_id, side);
+CREATE INDEX IF NOT EXISTS idx_holdings_principal ON property_holdings(principal_type, principal_id);
+CREATE INDEX IF NOT EXISTS idx_holdings_property ON property_holdings(property_key);
+CREATE INDEX IF NOT EXISTS idx_holdings_open ON property_holdings(principal_type, principal_id) WHERE disposed_source_id IS NULL;
 CREATE INDEX IF NOT EXISTS idx_tx_addr_source ON transaction_mailing_addresses(source_id);
 CREATE INDEX IF NOT EXISTS idx_tx_addr_city ON transaction_mailing_addresses(city);
 CREATE INDEX IF NOT EXISTS idx_tx_cash ON transactions(cash);
@@ -1202,6 +1232,8 @@ def drop_derived_tables(conn):
         DROP TABLE IF EXISTS transaction_broker_agents;
         DROP TABLE IF EXISTS transaction_brokers;
         DROP TABLE IF EXISTS transaction_mailing_addresses;
+        DROP TABLE IF EXISTS transaction_credits;
+        DROP TABLE IF EXISTS property_holdings;
         DROP TABLE IF EXISTS transaction_parties;
         DROP TABLE IF EXISTS group_names;
         DROP TABLE IF EXISTS transactions;
