@@ -107,10 +107,15 @@ def browse_groups(
     max_net_acquisitions: OptInt = Query(None),
     # Dominant type — the group's top property type shown in the "Type" column
     dominant_type: OptStr = Query(None),
-    # Asset class (uses transacted_type_mix — same lens as contacts page)
+    # Asset class — counts and values currently-OWNED properties of that class
+    # (owned_asset_class_counts / owned_asset_class_value). Count and value both
+    # read the same owned set, so "owns 3–10 retail" and "$20M–$200M of retail"
+    # intersect on the same properties.
     asset_class: OptStr = Query(None),
     min_asset_class_count: OptInt = Query(None, ge=1),
     max_asset_class_count: OptInt = Query(None, ge=1),
+    min_asset_class_value: OptInt = Query(None, ge=0),
+    max_asset_class_value: OptInt = Query(None, ge=0),
     # Region (membership in analytics.regions list)
     region: OptStr = Query(None),
     # Min members (auto_group party-side count — handy for filtering out 1-SPV singletons)
@@ -186,15 +191,31 @@ def browse_groups(
         )
         params.append(dominant_type)
 
-    # Asset class — uses transacted_type_mix (full history) just like contacts.
+    # Asset class — currently-OWNED properties of the selected class. Count and
+    # value both read the owned breakdown so they intersect on the same set: a
+    # group holding one $180M retail plaza has an owned-retail count of 1 and is
+    # excluded by "min 3 retail" before the value filter is even considered.
     if asset_class:
+        # Selecting a class always means "owns at least one of it" — this count
+        # floor (default 1, or the user's explicit min/max) also guarantees the
+        # value filter below never admits a non-owner via COALESCE(...,0).
         min_ac = min_asset_class_count or 1
         max_ac = max_asset_class_count if max_asset_class_count is not None else 1_000_000_000
         conditions.append(
-            "CAST(COALESCE(json_extract(aga.transacted_type_mix, '$.' || ?), '0') AS INTEGER) "
+            "CAST(COALESCE(json_extract(aga.owned_asset_class_counts, '$.' || ?), '0') AS INTEGER) "
             "BETWEEN ? AND ?"
         )
         params.extend([asset_class, min_ac, max_ac])
+        # Value filter (sum of most-recent purchase prices for owned props of
+        # this class). Layered on top of the count floor when a bound is set.
+        if min_asset_class_value is not None or max_asset_class_value is not None:
+            min_av = min_asset_class_value or 0
+            max_av = max_asset_class_value if max_asset_class_value is not None else 9_223_372_036_854_775_807
+            conditions.append(
+                "CAST(COALESCE(json_extract(aga.owned_asset_class_value, '$.' || ?), '0') AS INTEGER) "
+                "BETWEEN ? AND ?"
+            )
+            params.extend([asset_class, min_av, max_av])
 
     # Region — substring search on the regions JSON list. Avoids json_each in a
     # large correlated subquery; the list is short (typically <30 regions).
@@ -273,6 +294,8 @@ def browse_groups(
                aga.last_transaction_date,
                aga.region_count,
                COALESCE(aga.transacted_type_mix, aga.property_type_mix) AS property_type_mix,
+               aga.owned_asset_class_counts,
+               aga.owned_asset_class_value,
                (SELECT COUNT(*) FROM contacts c WHERE c.current_auto_group_id = ag.auto_group_id) AS contact_count,
                (SELECT COUNT(*) FROM contacts c WHERE c.current_auto_group_id = ag.auto_group_id AND c.status = 'engaged') AS engaged_contact_count
         FROM auto_groups ag
@@ -306,6 +329,22 @@ def browse_groups(
                 pass
         d["dominant_type"] = dominant
         d["secondary_type"] = secondary
+
+        # When an asset class is being filtered, surface that class's OWNED
+        # count and value for the row so the UI can show what it matched on.
+        owned_counts_raw = d.pop("owned_asset_class_counts", None)
+        owned_value_raw = d.pop("owned_asset_class_value", None)
+        d["asset_class_owned_count"] = None
+        d["asset_class_owned_value"] = None
+        if asset_class:
+            for raw, key in ((owned_counts_raw, "asset_class_owned_count"),
+                             (owned_value_raw, "asset_class_owned_value")):
+                if raw:
+                    try:
+                        blob = json.loads(raw) if isinstance(raw, str) else raw
+                        d[key] = blob.get(asset_class)
+                    except (json.JSONDecodeError, TypeError):
+                        pass
         results.append(d)
 
     return {

@@ -144,6 +144,13 @@ interface ComboFilterProps {
   selectPlaceholder?: string;
   numberPlaceholder?: string;
   maxNumberPlaceholder?: string;
+  /** Optional second (value) range row — e.g. portfolio $ for the selected class */
+  valueMin?: string;
+  valueMax?: string;
+  onValueMinChange?: (v: string) => void;
+  onValueMaxChange?: (v: string) => void;
+  valueMinPlaceholder?: string;
+  valueMaxPlaceholder?: string;
 }
 
 export function ComboFilter({
@@ -158,8 +165,15 @@ export function ComboFilter({
   selectPlaceholder = "Select...",
   numberPlaceholder = "Min",
   maxNumberPlaceholder = "Max",
+  valueMin,
+  valueMax,
+  onValueMinChange,
+  onValueMaxChange,
+  valueMinPlaceholder = "Min $",
+  valueMaxPlaceholder = "Max $",
 }: ComboFilterProps) {
   const hasRange = onMaxNumberChange !== undefined;
+  const hasValueRange = onValueMinChange !== undefined;
   return (
     <div className="flex flex-col gap-1.5">
       <Text size="1" weight="medium" style={{ color: "var(--gray-9)" }}>
@@ -212,6 +226,31 @@ export function ComboFilter({
           className="w-full h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white outline-none focus:border-[var(--accent-7)] transition-colors"
           style={{ color: "var(--gray-12)" }}
         />
+      ) : null}
+      {hasValueRange ? (
+        <div className="flex gap-1.5">
+          <input
+            type="number"
+            value={valueMin ?? ""}
+            onChange={(e) => onValueMinChange!(e.target.value)}
+            placeholder={valueMinPlaceholder}
+            min="0"
+            disabled={!selectValue}
+            className="w-full h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white outline-none focus:border-[var(--accent-7)] transition-colors disabled:opacity-40"
+            style={{ color: "var(--gray-12)" }}
+          />
+          <span className="flex items-center text-[12px]" style={{ color: "var(--gray-8)" }}>–</span>
+          <input
+            type="number"
+            value={valueMax ?? ""}
+            onChange={(e) => onValueMaxChange!(e.target.value)}
+            placeholder={valueMaxPlaceholder}
+            min="0"
+            disabled={!selectValue}
+            className="w-full h-7 px-2 text-[13px] rounded border border-[var(--gray-6)] bg-white outline-none focus:border-[var(--accent-7)] transition-colors disabled:opacity-40"
+            style={{ color: "var(--gray-12)" }}
+          />
+        </div>
       ) : null}
     </div>
   );

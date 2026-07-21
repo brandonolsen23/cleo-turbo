@@ -29,6 +29,14 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
     if verbose:
         print('  Stage A10 (auto_group_analytics): starting...', flush=True)
 
+    # Idempotent column adds — mirrors the owned-asset-class breakdown rolled up
+    # from group_analytics. Safe on databases predating these columns.
+    for col in ("owned_asset_class_counts TEXT", "owned_asset_class_value TEXT"):
+        try:
+            conn.execute(f"ALTER TABLE auto_group_analytics ADD COLUMN {col}")
+        except sqlite3.OperationalError:
+            pass
+
     conn.execute('DELETE FROM auto_group_analytics')
 
     # Pull every legacy group's analytics + its auto_group mapping in one shot.
@@ -38,6 +46,8 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
                ga.property_count,
                ga.total_assessed_value,
                ga.property_type_mix,
+               ga.owned_asset_class_counts,
+               ga.owned_asset_class_value,
                ga.regions,
                ga.total_buys,
                ga.total_sells,
@@ -60,6 +70,8 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
         'property_count': 0,
         'total_assessed_value': 0,
         'property_type_mix': defaultdict(int),
+        'owned_asset_class_counts': defaultdict(int),
+        'owned_asset_class_value': defaultdict(int),
         'regions': set(),
         'total_buys': 0,
         'total_sells': 0,
@@ -95,6 +107,17 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
                         a['property_type_mix'][k] += int(v)
             except (json.JSONDecodeError, TypeError):
                 pass
+
+        # JSON sum for the owned asset-class count/value breakdowns
+        for src_key in ('owned_asset_class_counts', 'owned_asset_class_value'):
+            if r[src_key]:
+                try:
+                    blob = json.loads(r[src_key])
+                    for k, v in blob.items():
+                        if isinstance(v, (int, float)):
+                            a[src_key][k] += int(v)
+                except (json.JSONDecodeError, TypeError):
+                    pass
 
         # Union regions
         if r['regions']:
@@ -155,6 +178,8 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
         # Property-type mix → dict ordered by count desc (storage order doesn't matter
         # but consistency helps debugging).
         mix = dict(sorted(a['property_type_mix'].items(), key=lambda kv: (-kv[1], kv[0])))
+        ac_counts = dict(sorted(a['owned_asset_class_counts'].items(), key=lambda kv: (-kv[1], kv[0])))
+        ac_value = dict(sorted(a['owned_asset_class_value'].items(), key=lambda kv: (-kv[1], kv[0])))
         regions_sorted = sorted(a['regions'])
 
         inserts.append((
@@ -162,6 +187,8 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
             a['property_count'] or None,
             a['total_assessed_value'] or None,
             json.dumps(mix) if mix else None,
+            json.dumps(ac_counts) if ac_counts else None,
+            json.dumps(ac_value) if ac_value else None,
             json.dumps(regions_sorted) if regions_sorted else None,
             len(regions_sorted) or None,
             a['total_buys'] or None,
@@ -183,13 +210,14 @@ def build_auto_group_analytics(conn: sqlite3.Connection, *, verbose: bool = True
         conn.executemany(
             """INSERT INTO auto_group_analytics
                (auto_group_id, property_count, total_assessed_value,
-                property_type_mix, regions, region_count,
+                property_type_mix, owned_asset_class_counts, owned_asset_class_value,
+                regions, region_count,
                 total_buys, total_sells, avg_buy_price, avg_sell_price,
                 first_transaction_date, last_transaction_date,
                 net_acquisitions, txns_per_year,
                 buys_last_12m, sells_last_12m, buys_last_36m, sells_last_36m,
                 centroid_lat, centroid_lng, refreshed_at)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             inserts,
         )
 

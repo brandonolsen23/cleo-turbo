@@ -17,6 +17,7 @@ Usage:
 
 import json
 import math
+import sqlite3
 import time
 from datetime import datetime, timedelta
 from statistics import median
@@ -99,6 +100,8 @@ def refresh_group_analytics(conn, group_ids=None):
             property_count      INTEGER DEFAULT 0,
             total_assessed_value INTEGER,
             property_type_mix   TEXT,
+            owned_asset_class_counts TEXT,
+            owned_asset_class_value  TEXT,
             regions             TEXT,
             region_count        INTEGER DEFAULT 0,
             total_buys          INTEGER DEFAULT 0,
@@ -126,6 +129,14 @@ def refresh_group_analytics(conn, group_ids=None):
             refreshed_at        TEXT DEFAULT (datetime('now'))
         )
     """)
+
+    # Idempotent column adds for databases created before the owned-asset-class
+    # breakdown existed. ALTER ... ADD COLUMN raises if the column is present.
+    for col in ("owned_asset_class_counts TEXT", "owned_asset_class_value TEXT"):
+        try:
+            conn.execute(f"ALTER TABLE group_analytics ADD COLUMN {col}")
+        except sqlite3.OperationalError:
+            pass
 
     # Determine which groups to refresh
     if group_ids:
@@ -197,6 +208,7 @@ def refresh_group_analytics(conn, group_ids=None):
             f"""
             SELECT p.current_owner_group_id as gid, p.id as pid, p.lat, p.lng,
                    p.region, p.primary_property_type as ptype,
+                   p.asset_class as asset_class,
                    p.most_recent_sale_price as sale_price
             FROM properties p
             WHERE p.current_owner_group_id IN ({placeholders})
@@ -212,6 +224,7 @@ def refresh_group_analytics(conn, group_ids=None):
                     "lng": r["lng"],
                     "region": r["region"],
                     "ptype": r["ptype"],
+                    "asset_class": r["asset_class"],
                     "sale_price": r["sale_price"],
                 })
 
@@ -268,13 +281,24 @@ def refresh_group_analytics(conn, group_ids=None):
 
         type_counts = {}
         region_set = set()
+        # Currently-owned portfolio broken down by asset_class (the vocabulary
+        # the Groups asset-class filter uses). Count = properties owned; value =
+        # sum of most-recent sale prices so it reconciles with total_assessed.
+        # Properties with no asset_class are bucketed under "unknown".
+        ac_counts = {}
+        ac_value = {}
         for p in props:
             ptype = p["ptype"] or "unknown"
             type_counts[ptype] = type_counts.get(ptype, 0) + 1
+            ac = p["asset_class"] or "unknown"
+            ac_counts[ac] = ac_counts.get(ac, 0) + 1
+            ac_value[ac] = ac_value.get(ac, 0) + (p.get("sale_price") or 0)
             if p["region"]:
                 region_set.add(p["region"])
 
         property_type_mix = json.dumps(type_counts) if type_counts else None
+        owned_asset_class_counts = json.dumps(ac_counts) if ac_counts else None
+        owned_asset_class_value = json.dumps(ac_value) if ac_value else None
         regions = json.dumps(sorted(region_set)) if region_set else None
         region_count = len(region_set)
 
@@ -359,6 +383,7 @@ def refresh_group_analytics(conn, group_ids=None):
             """
             INSERT OR REPLACE INTO group_analytics (
                 group_id, property_count, total_assessed_value, property_type_mix,
+                owned_asset_class_counts, owned_asset_class_value,
                 regions, region_count, total_buys, total_sells, avg_buy_price,
                 median_buy_price, avg_sell_price, median_sell_price,
                 first_transaction_date, last_transaction_date, net_acquisitions,
@@ -366,9 +391,10 @@ def refresh_group_analytics(conn, group_ids=None):
                 buys_last_36m, sells_last_36m, hq_lat, hq_lng,
                 avg_distance_from_hq_km, max_distance_from_hq_km,
                 geographic_radius_km, centroid_lat, centroid_lng, refreshed_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
             """,
-            (gid, prop_count, total_assessed, property_type_mix, regions,
+            (gid, prop_count, total_assessed, property_type_mix,
+             owned_asset_class_counts, owned_asset_class_value, regions,
              region_count, total_buys, total_sells, avg_buy, med_buy,
              avg_sell, med_sell, first_date, last_date, net_acq,
              hold_period, txns_per_year, buys_12m, sells_12m, buys_36m,

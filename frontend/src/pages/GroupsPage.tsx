@@ -96,6 +96,8 @@ export default function GroupsPage() {
   const assetClass = searchParams.get("asset_class") || "";
   const minAssetClassCount = searchParams.get("min_asset_class_count") || "";
   const maxAssetClassCount = searchParams.get("max_asset_class_count") || "";
+  const minAssetClassValue = searchParams.get("min_asset_class_value") || "";
+  const maxAssetClassValue = searchParams.get("max_asset_class_value") || "";
   const region = searchParams.get("region") || "";
 
   // Data state
@@ -138,6 +140,8 @@ export default function GroupsPage() {
     if (assetClass) params.asset_class = assetClass;
     if (minAssetClassCount) params.min_asset_class_count = minAssetClassCount;
     if (maxAssetClassCount) params.max_asset_class_count = maxAssetClassCount;
+    if (minAssetClassValue) params.min_asset_class_value = minAssetClassValue;
+    if (maxAssetClassValue) params.max_asset_class_value = maxAssetClassValue;
     if (region) params.region = region;
 
     fetchApi<BrowseResponse<GroupBrowseItem>>("/groups", params)
@@ -154,7 +158,8 @@ export default function GroupsPage() {
     minPortfolioValue, maxPortfolioValue,
     minVelocity, maxVelocity,
     minNetAcquisitions, maxNetAcquisitions,
-    assetClass, minAssetClassCount, maxAssetClassCount, region,
+    assetClass, minAssetClassCount, maxAssetClassCount,
+    minAssetClassValue, maxAssetClassValue, region,
   ]);
 
   useEffect(() => {
@@ -312,7 +317,7 @@ export default function GroupsPage() {
           options={(filterOptions?.regions || []).map((r) => ({ value: r, label: r }))}
         />
         <ComboFilter
-          label="Asset Class"
+          label="Asset Class (owned)"
           selectValue={assetClass}
           numberValue={minAssetClassCount}
           maxNumberValue={maxAssetClassCount}
@@ -321,17 +326,25 @@ export default function GroupsPage() {
             if (!v) {
               setParam("min_asset_class_count", "");
               setParam("max_asset_class_count", "");
+              setParam("min_asset_class_value", "");
+              setParam("max_asset_class_value", "");
             }
           }}
           onNumberChange={(v) => setParam("min_asset_class_count", v)}
           onMaxNumberChange={(v) => setParam("max_asset_class_count", v)}
+          valueMin={minAssetClassValue}
+          valueMax={maxAssetClassValue}
+          onValueMinChange={(v) => setParam("min_asset_class_value", v)}
+          onValueMaxChange={(v) => setParam("max_asset_class_value", v)}
           options={(filterOptions?.asset_classes || []).map((ac) => ({
             value: ac,
             label: assetClassLabel(ac),
           }))}
           selectPlaceholder="Any class"
-          numberPlaceholder="Min"
-          maxNumberPlaceholder="Max"
+          numberPlaceholder="Min props"
+          maxNumberPlaceholder="Max props"
+          valueMinPlaceholder="Min $"
+          valueMaxPlaceholder="Max $"
         />
       </FilterPanel>
 

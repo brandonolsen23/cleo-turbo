@@ -606,6 +606,10 @@ export interface GroupBrowseItem {
   // Derived from transacted_type_mix
   dominant_type: string | null;
   secondary_type: string | null;
+  // Owned count/value for the asset_class currently being filtered (null when
+  // no asset_class filter is active). See owned_asset_class_* in analytics.
+  asset_class_owned_count: number | null;
+  asset_class_owned_value: number | null;
 }
 
 export interface GroupFilterOptions {

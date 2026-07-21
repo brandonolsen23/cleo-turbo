@@ -956,6 +956,12 @@ CREATE TABLE IF NOT EXISTS group_analytics (
     property_count      INTEGER DEFAULT 0,
     total_assessed_value INTEGER,
     property_type_mix   TEXT,
+    -- Currently-owned portfolio broken down by asset_class (same lens as the
+    -- Groups asset-class filter). counts = {asset_class: n}; value =
+    -- {asset_class: sum(most_recent_sale_price)}. Sum of value across classes
+    -- reconciles with total_assessed_value.
+    owned_asset_class_counts TEXT,
+    owned_asset_class_value  TEXT,
     regions             TEXT,
     region_count        INTEGER DEFAULT 0,
     -- Transactions
