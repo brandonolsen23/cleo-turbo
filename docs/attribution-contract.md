@@ -1,123 +1,146 @@
 # Attribution Contract — transaction_credits + property_holdings
 
-**Status:** PINNED 2026-07-21 · Source: `cleo-linking-derivation-audit.md` §8–10
+**Status:** PINNED 2026-07-21, revised to v2 same day after spot-check review
+(Bauer/Valentini/Windsor cases) · Source: `cleo-linking-derivation-audit.md` §8–10
 **Principle:** Attribution is a fact about the data. It is computed ONCE, at compile,
 with provenance. Endpoints only read. No surface re-implements credit or ownership rules.
 
-## Why this exists
+## The two rules, in one breath
 
-The audit found seven divergent definitions of "who was on this deal" / "who owns what,"
-written by four layers on different schedules. Verified damage: 7,067 contacts with
-phantom holdings (9,181 sale txns, 7,668 properties), seller-side credit structurally
-undercounted (117,286 buyer-side vs 66,532 seller-side direct links), a properties
-owner-update bug gated on building size, and `groups.property_count` that never
-decrements on sale. This contract collapses all of them onto two compiler-built ledgers.
+1. **Credits are strictly what's printed.** A principal is credited on a transaction
+   only if Realtrack literally named them on it. No rollups, no inference.
+2. **Ownership follows the property's timeline, not the principal's.** You own a
+   property if and only if you were a named buyer on its most recent transaction.
+   Every sale closes ALL open holdings on that property except those of its named
+   buyers — whoever the seller was. The close is a property event, never an
+   attribution: "the property traded," not "they sold."
+
+Why v2 dropped the same-property via-entity rollup (v1 rule 4): spot checks showed it
+backdates involvement (Valentini credited as buyer on a 2012 deal, joined the entity
+2013), manufactures activity for long-retired people (Bauer "active" 2026, last real
+appearance 2007), and inherits pairing quality forever. The property-timeline rule
+gives the desired outcome — phantom "still owns" rows disappear — without attributing
+unnamed transactions to anyone. Company-to-company transfer untangling is explicitly
+deferred; a shell-to-shell sale truthfully moves entity-level ownership.
 
 ## Ledger 1 — transaction_credits
 
 One row per (transaction, side, principal). Built by the compiler ledger pass
-(`cleo/compiler/credit_ledger.py`), rebuilt on every compile.
+(`cleo/compiler/credit_ledger.py`, Pass 8), rebuilt on every compile.
 
 ```
 transaction_credits(
   source_id, side,
   principal_type   TEXT,   -- 'contact' | 'entity' | 'auto_group' | 'unknown'
   principal_id     TEXT,
-  basis            TEXT,   -- 'named' | 'entity_named_elsewhere' | 'member' | 'manual'
-  via_entity_id    TEXT,   -- GRP the credit flows through (NULL for named)
+  basis            TEXT,   -- 'named' | 'member' | 'manual'
+  via_entity_id    TEXT,   -- reserved (always NULL in v2)
   PRIMARY KEY (source_id, side, principal_type, principal_id)
 )
 ```
 
-### Credit rules, in order
+Rules:
 
-1. **Entity named:** every `transaction_parties` party row with a `group_id` →
-   (`entity`, group_id, `named`).
-2. **Contact named:** every party row with a `contact_id` → (`contact`, contact_id, `named`).
-3. **Unknown principal:** a party row with NEITHER id ("Named Individual(s)" — real side,
-   suppressed name) → (`unknown`, `(unnamed)`, `named`). Carried, never dropped, never
-   rolls up, never opens holdings.
-4. **Rollup (same-property scope — the shipped v1):**
-   - A contact C is *paired* with entity E when any tp rows share (source_id, side)
-     with C's contact row and E's party row.
-   - C earns (`contact`, C, `entity_named_elsewhere`, via_entity_id=E) on every
-     transaction T where E is a party, C is NOT named on T, and T's property_key is one
-     C is directly named on. Side of the credit = E's side on T.
-   - Same-property scope prevents crediting unrelated deals of large entities.
-     Entity-wide rollup is a future one-function flip, measured as a report first (§9.1
-     of the audit). The schema does not change either way.
-5. **Auto-group member:** every `auto_group_members` party_side row →
-   (`auto_group`, auto_group_id, `member`). Skipped gracefully if discovery tables
-   are absent (fresh DBs, test fixtures).
-6. **`manual`:** reserved for CRM assertions. No writer yet.
+1. **Entity named:** party row with `group_id` → (`entity`, gid, `named`).
+2. **Contact named:** party row with `contact_id` → (`contact`, cid, `named`).
+3. **Unknown principal:** party row with neither ("Named Individual(s)") →
+   (`unknown`, `(unnamed)`, `named`). Carried, never dropped, never holds.
+4. **Auto-group member:** `auto_group_members` party_side row →
+   (`auto_group`, agid, `member`). Skipped gracefully if discovery tables absent.
+5. **`manual`:** reserved for CRM assertions. No writer yet.
 
-`property_key` everywhere = `COALESCE(transactions.property_id,
-'addr:' || lower(trim(display_address)) || '|' || lower(trim(city)))` — identical to the
-AGRP unified pass. Transactions with neither identity earn credits but no holdings.
+There is NO rollup basis in v2. `entity_named_elsewhere` is gone: person-facing
+counts, last-activity, and timelines derive from `named` credits only.
+
+## Property identity
+
+`property_key` = `transactions.property_id` when resolved. When unresolved, the
+address key `addr:<lower(trim(display_address))>|<lower(trim(city))>` is used ONLY
+if the address starts with a digit. Legal-description and number-less addresses
+("Conc 1", "Plan 43m-1947", "Yonge Street") get NO property identity: their
+transactions earn credits but never open or close holdings. Rationale: the Windsor
+"Conc 1" collision — 281 unresolved txns share that literal address across 119
+cities, and distinct parcels within one city collapse onto one key, chaining
+unrelated buys/sells into one holdings walk. Improved parcel resolution recovers
+these transactions naturally (they gain a property_id).
 
 ## Ledger 2 — property_holdings
-
-Ownership rule materialized. Built from credits + transactions in the same pass.
 
 ```
 property_holdings(
   property_key,
   principal_type, principal_id,
-  acquired_source_id, acquired_date,   -- NULL acquired = owned before our data starts
+  acquired_source_id, acquired_date,   -- NULL acquired = owned before our data
   disposed_source_id, disposed_date,   -- NULL disposed = currently owned
-  basis                                -- 'derived' | 'manual'
+  acquired_basis,                      -- 'named' | 'member' | 'manual'
+  disposed_basis                       -- 'named' | 'property_traded' | NULL
 )
 ```
 
-### Holding rules
+### The walk (per property, chronological — (sale_date, source_id) order)
 
-Walk each (property_key, principal)'s credited transactions in (sale_date, source_id)
-order:
+For each transaction T on the property, with B = principals holding a `named`/`member`
+buyer credit on T and S = principals with a seller credit on T:
 
-- **Buyer-side credit, no open holding** → open a holding (acquired = that txn).
-- **Buyer-side credit, holding already open** → no-op (keep earliest acquisition).
-- **Seller-side credit, open holding** → close it (disposed = that txn).
-- **Seller-side credit, no open holding** → insert a pre-closed holding
-  (acquired NULL, disposed = that txn). Preserves "latest side is seller ⇒ not owned"
-  without inventing an acquisition.
-- **Within a single transaction, the seller credit processes BEFORE the buyer credit.**
-  A principal credited on both sides of one deal (self-transfer between their entities —
-  Saherdid's 2017 RT125638/RT126004/RT126011 shape) closes the prior holding and
-  immediately reopens, staying the owner.
-- **Owned** = `disposed_source_id IS NULL`. **Sold** = closed. Tenure = disposed − acquired.
-- `unknown` principals never hold. Undated transactions sort first (empty string), so a
-  dated sale still closes them.
+1. Close every open holding on the property whose principal is NOT in B.
+   `disposed_basis` = `named` if the principal is in S, else `property_traded`.
+2. A principal in S with no open holding gets a pre-closed row
+   (acquired NULL, `disposed_basis`=`named`): they owned it before our data starts.
+   `property_traded` never creates rows — it only closes real ones.
+3. Every principal in B without an open holding opens one (acquired = T).
+   A principal in both B and S (self-transfer, Saherdid's 2017 shape) keeps their
+   open holding untouched — original acquisition date survives.
+4. Transactions with ONLY unknown-principal parties still run step 1: a sale with
+   suppressed names still means the property moved.
+
+**Owned** = `disposed_source_id IS NULL`. `disposed_basis='property_traded'` is the
+outreach signal: bought, never named on a sell, but the asset is no longer theirs.
+
+### Known limitation — partial-interest sales
+
+A sale of a partial interest closes co-owners' holdings even though they still hold
+the balance (JV/institutional deals). Accepted for v2; candidate flag: closes where
+sale price is far below the property's prior trade. Do not silently "fix" this with
+heuristics — surface it.
 
 ### manual_owner_links
 
-Active `relationship='owns'` links upsert an OPEN holding (basis `manual`,
-principal_type `entity`, acquired NULL) for the resolved property. This is the single
-door for human ownership assertions; conflict policy vs GW/MPAC stays "flag, don't
-overwrite" (audit §9.3, matching Pass 7's existing behavior). While `properties` is
-still patched directly by Pass 7, the ledger row is written in parallel — the patch
-path is deleted at repoint time, not before.
+Active `relationship='owns'` links resolved to a property mirror in as OPEN holdings
+(`acquired_basis`=`manual`) when no derived open holding already exists. Conflict
+policy vs GW/MPAC stays "flag, don't overwrite." Manual holdings are not closed by
+the walk (they are assertions of CURRENT ownership, re-validated every compile by
+Pass 7's conflict logic).
 
 ## Sequencing status
 
-1. ✅ Spec pinned (this doc).
-2. ✅ Ledgers built additively by the compiler; NOTHING reads them yet.
+1. ✅ Spec pinned; revised to v2 same day.
+2. ✅ Ledgers built additively (compiler Pass 8); NOTHING reads them yet.
    Reconciliation report extended with credit/holding counts.
 3. ⬜ Parity report: ledger vs every current surface. Diffs are the bug inventory.
 4. ⬜ Repoint contact surfaces; DELETE the 2026-07-21 contacts.py endpoint patch.
+   Transaction tables gain the "property since traded (date, not named)" marker
+   from holdings — one join.
 5. ⬜ Repoint properties.current_owner_* (deletes the building-size owner bug) and
-   groups.property_count (open holdings).
+   groups.property_count (open holdings — kills ever-bought inflation).
 6. ⬜ AGRP unified pass reads holdings; add discovery-staleness marker.
 7. ⬜ Tests: Gladwin-shape fixture asserting credits, holdings, and surface numbers.
 
-## Named acceptance test — Saherdid Mohamed (CON_14995)
+## Named acceptance tests
 
-The case that triggered the audit. Bought 2215 Gladwin Crescent (PRO_11375) named as
-attn; his entities later sold WITHOUT naming him. Required ledger outcomes:
+**Saherdid Mohamed (CON_14995)** — the trigger case. Named buyer 2215 Gladwin
+(RT126161, 2017); named BOTH sides of RT125638/RT126004/RT126011 (2017 self-
+transfers). Required: credits = 7, all `named`. Holdings: Gladwin closed by RT189166
+(2024-12-19) and 889 Brock closed by RT149090 (2020-01-31), both
+`disposed_basis`=`property_traded`; Fairview + Watters stay OPEN (self-transfer keeps
+them); owned = 2. Last named activity stays 2017 — the 2024 sale appears on his
+timeline as a property event, not his transaction.
 
-- `entity_named_elsewhere` seller credits exist for the 2024 Gladwin sale (~$36.8M)
-  and the 2020 Brock Road sale (RT149090, ~$26.7M).
-- Both corresponding holdings are CLOSED (disposed set); owned count drops 4 → 2.
-- Direct (`named`) credit count stays 7; merged credits 9.
-- Last activity moves to 2024-12-19.
+**Manfred Bauer (CON_23464)** — staleness case. 23 named credits 1996–2007, none
+after. His 2003 Yonge St holding (via 2024385 Ontario Inc buy) closes on the 2026
+Manulife sale as `property_traded`. He shows NO 2026 activity.
 
-Any change to credit or holding rules must keep this case green.
+**George Valentini (CON_02363)** — retroactivity case. Named only on the 2016
+Scotia Plaza sell (pre-closed row, `named`). NO holding and NO credit from the 2012
+$1.27B buy he wasn't named on.
+
+Any change to credit or holding rules must keep all three green.

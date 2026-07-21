@@ -189,7 +189,8 @@ CREATE TABLE IF NOT EXISTS property_holdings (
     acquired_date       TEXT,
     disposed_source_id  TEXT,                 -- NULL = currently owned
     disposed_date       TEXT,
-    basis               TEXT NOT NULL DEFAULT 'derived'   -- 'derived' | 'manual'
+    acquired_basis      TEXT,                 -- 'named' | 'member' | 'manual'
+    disposed_basis      TEXT                  -- 'named' | 'property_traded' | NULL
 );
 
 CREATE TABLE IF NOT EXISTS transaction_mailing_addresses (

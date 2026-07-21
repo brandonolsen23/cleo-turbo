@@ -136,6 +136,13 @@ def _generate_reconciliation_report(conn, pre, ledger_stats=None):
                     "WHERE disposed_source_id IS NULL GROUP BY principal_type"
                 )
             }
+            ledgers['traded_closes_by_principal_type'] = {
+                r[0]: r[1] for r in conn.execute(
+                    "SELECT principal_type, COUNT(*) FROM property_holdings "
+                    "WHERE disposed_basis = 'property_traded' "
+                    "GROUP BY principal_type"
+                )
+            }
         except Exception:
             pass
         report['ledgers'] = ledgers
@@ -251,13 +258,17 @@ def _print_reconciliation_report(report):
         by_basis = ledgers.get('credits_by_basis', {})
         basis_str = ', '.join(f'{k}={v:,}' for k, v in sorted(by_basis.items()))
         print(f"    Credits: {ledgers.get('credits_total', 0):,} ({basis_str})")
-        print(f"    Via-entity contacts: {ledgers.get('contacts_with_via_credit', 0):,}")
         open_by = ledgers.get('holdings_open_by_principal_type', {})
         open_str = ', '.join(f'{k}={v:,}' for k, v in sorted(open_by.items()))
         print(f"    Holdings: {ledgers.get('holdings_total', 0):,} "
               f"({ledgers.get('holdings_open', 0):,} open: {open_str}; "
               f"{ledgers.get('holdings_preclosed', 0):,} pre-closed; "
               f"{ledgers.get('holdings_manual', 0):,} manual)")
+        traded_by = ledgers.get('traded_closes_by_principal_type', {})
+        traded_str = ', '.join(f'{k}={v:,}' for k, v in sorted(traded_by.items()))
+        print(f"    Property-traded closes: "
+              f"{ledgers.get('closes_property_traded', 0):,} ({traded_str}) — "
+              f"{ledgers.get('contacts_with_traded_close', 0):,} contacts w/ signal")
 
     print('=' * 60)
 
