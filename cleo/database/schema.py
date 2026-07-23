@@ -511,6 +511,47 @@ CREATE TABLE IF NOT EXISTS group_notes (
     created_at      TEXT DEFAULT (datetime('now'))
 );
 
+-- Multi-channel contact info (Phase 1 prospecting, migration 042).
+-- Phones/emails are a COLLECTION with verdicts, not a single field. Keyed by
+-- CON_ stable IDs. Additive + never overwritten: RT values in the derived
+-- `contacts` table are copied in with provenance, never moved. Channel verdicts
+-- (dead / wrong_number / verified_good) are Cleo-mastered — set while dialing.
+-- Dedupe is on (contact_id, value) where `value` is the normalized form;
+-- `value_raw` preserves the source string for display.
+CREATE TABLE IF NOT EXISTS contact_phones (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    contact_id         TEXT NOT NULL REFERENCES contacts(id),
+    value              TEXT NOT NULL,          -- normalized (E.164/digits) — dedupe key
+    value_raw          TEXT,                   -- as found, for display
+    label              TEXT,                   -- cell / office / main / null
+    source             TEXT NOT NULL,          -- realtrack, geowarehouse, datanyze, 411, hubspot, manual
+    status             TEXT NOT NULL DEFAULT 'unverified',  -- unverified, verified_good, wrong_number, dead
+    status_changed_at  TEXT,                   -- set when a verdict is applied (null on seed)
+    note               TEXT,
+    hubspot_property   TEXT,                   -- phone / mobilephone — null until the HubSpot import (step 2)
+    created_at         TEXT DEFAULT (datetime('now')),
+    updated_at         TEXT DEFAULT (datetime('now'))
+);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_contact_phones_dedupe  ON contact_phones(contact_id, value);
+CREATE INDEX        IF NOT EXISTS idx_contact_phones_contact ON contact_phones(contact_id);
+
+CREATE TABLE IF NOT EXISTS contact_emails (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    contact_id         TEXT NOT NULL REFERENCES contacts(id),
+    value              TEXT NOT NULL,          -- lowercased/trimmed — dedupe key
+    value_raw          TEXT,                   -- as found, for display
+    label              TEXT,                   -- work / personal / null
+    source             TEXT NOT NULL,          -- realtrack, geowarehouse, datanyze, 411, hubspot, manual
+    status             TEXT NOT NULL DEFAULT 'unverified',  -- unverified, verified_good, bounced, dead
+    status_changed_at  TEXT,                   -- set when a verdict is applied (null on seed)
+    note               TEXT,
+    hubspot_property   TEXT,                   -- email — null until the HubSpot import (step 2)
+    created_at         TEXT DEFAULT (datetime('now')),
+    updated_at         TEXT DEFAULT (datetime('now'))
+);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_contact_emails_dedupe  ON contact_emails(contact_id, value);
+CREATE INDEX        IF NOT EXISTS idx_contact_emails_contact ON contact_emails(contact_id);
+
 CREATE TABLE IF NOT EXISTS group_merges (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     source_group_id TEXT NOT NULL,

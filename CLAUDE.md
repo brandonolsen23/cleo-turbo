@@ -74,6 +74,7 @@ pois, gw_assessments, gw_sales_history
 
 **CRM tables** (persistent, NEVER rebuilt or truncated):
 deals, lists, list_members, group_contacts, contact_notes, group_notes,
+contact_phones, contact_emails,
 sell_opportunities, buy_mandates, activities, property_enrichment,
 brand_overrides, user_brand_favorites, group_overrides, group_field_overrides,
 contact_field_overrides, contact_work_history, group_merges,

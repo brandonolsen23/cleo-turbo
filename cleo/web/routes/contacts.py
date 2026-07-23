@@ -1114,4 +1114,142 @@ def contact_attribution(contact_id: str, db=Depends(get_db), user=Depends(get_cu
     return attribution_for(db, "contact_id", contact_id)
 
 
+# ============================================================
+# Contact channels — phones + emails (Phase 1 prospecting, step 1)
+# ============================================================
+#
+# Phones/emails are a COLLECTION with per-value verdicts, not a single field.
+# Values are copied in with provenance (source) and never overwritten; the
+# verdict (status) is Cleo-mastered and set while dialing. Dedupe is on the
+# normalized `value` — see cleo/channels.py, shared with the seeding migration.
+
+_CHANNEL_TABLES = {"phone": "contact_phones", "email": "contact_emails"}
+# Statuses that a value can still be displayed as "best" (offered for a dial).
+_BEST_STATUSES = ("verified_good", "unverified")
+_CHANNEL_STATUSES = {
+    "phone": {"unverified", "verified_good", "wrong_number", "dead"},
+    "email": {"unverified", "verified_good", "bounced", "dead"},
+}
+# Display/best ranking: verified first, then unverified, then bad verdicts last.
+_STATUS_RANK = {"verified_good": 0, "unverified": 1, "wrong_number": 2, "bounced": 2, "dead": 3}
+
+_CHANNEL_COLUMNS = (
+    "id, contact_id, value, value_raw, label, source, status, "
+    "status_changed_at, note, hubspot_property, created_at, updated_at"
+)
+
+
+class ChannelCreate(BaseModel):
+    kind: str            # 'phone' | 'email'
+    value: str           # raw, as typed
+    label: OptStr = None
+
+
+class ChannelStatusUpdate(BaseModel):
+    kind: str            # 'phone' | 'email'
+    status: str          # a verdict valid for that kind
+
+
+def _normalize_channel(kind: str, raw: str):
+    """Return the normalized dedupe value for a phone/email, or None if unusable."""
+    from ...channels import normalize_phone, normalize_email
+    return normalize_phone(raw) if kind == "phone" else normalize_email(raw)
+
+
+def _rank_channels(rows):
+    """Sort by verdict rank, then most-recently-touched first (a freshly added or
+    just-verified value floats up), and flag the top displayable one as best.
+    Two passes: recency-desc first, then a stable sort by rank so recency breaks
+    ties within a rank."""
+    ordered = sorted(
+        (dict(r) for r in rows),
+        key=lambda c: (c["status_changed_at"] or c["created_at"] or ""),
+        reverse=True,
+    )
+    ordered.sort(key=lambda c: _STATUS_RANK.get(c["status"], 9))
+    best_marked = False
+    for c in ordered:
+        if not best_marked and c["status"] in _BEST_STATUSES:
+            c["is_best"] = True
+            best_marked = True
+        else:
+            c["is_best"] = False
+    return ordered
+
+
+@router.get("/{contact_id}/channels")
+def list_contact_channels(contact_id: str, db=Depends(get_db), user=Depends(get_current_user)):
+    """All phones + emails for a contact, each ranked with an `is_best` flag.
+    Bad-verdict values (wrong_number/bounced/dead) are still returned — kept
+    visible so a burned number isn't silently re-dialed — but never marked best."""
+    if not db.execute("SELECT 1 FROM contacts WHERE id = ?", (contact_id,)).fetchone():
+        raise HTTPException(status_code=404, detail="Contact not found")
+    out = {}
+    for kind, table in _CHANNEL_TABLES.items():
+        rows = db.execute(
+            f"SELECT {_CHANNEL_COLUMNS} FROM {table} WHERE contact_id = ?",
+            (contact_id,),
+        ).fetchall()
+        out[kind + "s"] = _rank_channels(rows)
+    return out
+
+
+@router.post("/{contact_id}/channels")
+def add_contact_channel(contact_id: str, body: ChannelCreate, db=Depends(get_db), user=Depends(get_current_user)):
+    """Manually add a phone or email (source=manual, status=unverified).
+    Idempotent on the normalized value — re-adding a known value is a no-op."""
+    table = _CHANNEL_TABLES.get(body.kind)
+    if not table:
+        raise HTTPException(status_code=400, detail="kind must be 'phone' or 'email'")
+    if not db.execute("SELECT 1 FROM contacts WHERE id = ?", (contact_id,)).fetchone():
+        raise HTTPException(status_code=404, detail="Contact not found")
+    value = _normalize_channel(body.kind, body.value)
+    if not value:
+        raise HTTPException(status_code=400, detail=f"Not a usable {body.kind}")
+
+    cur = db.execute(
+        f"INSERT OR IGNORE INTO {table} "
+        "(contact_id, value, value_raw, label, source, status) "
+        "VALUES (?, ?, ?, ?, 'manual', 'unverified')",
+        (contact_id, value, body.value.strip(), body.label),
+    )
+    db.commit()
+    created = cur.rowcount > 0
+    if created:
+        log_action(db, user, "contact.channel_add", "contact", contact_id,
+                   {"kind": body.kind, "value": value, "source": "manual"})
+    row = db.execute(
+        f"SELECT {_CHANNEL_COLUMNS} FROM {table} WHERE contact_id = ? AND value = ?",
+        (contact_id, value),
+    ).fetchone()
+    return {"created": created, "channel": dict(row) if row else None}
+
+
+@router.patch("/{contact_id}/channels/{channel_id}")
+def set_contact_channel_status(contact_id: str, channel_id: int, body: ChannelStatusUpdate,
+                               db=Depends(get_db), user=Depends(get_current_user)):
+    """Set a channel's verdict (unverified / verified_good / wrong_number|bounced /
+    dead). Stamps status_changed_at. This is the Cleo-mastered annotation layer."""
+    table = _CHANNEL_TABLES.get(body.kind)
+    if not table:
+        raise HTTPException(status_code=400, detail="kind must be 'phone' or 'email'")
+    if body.status not in _CHANNEL_STATUSES[body.kind]:
+        raise HTTPException(status_code=400, detail=f"Invalid status for {body.kind}: {body.status}")
+
+    cur = db.execute(
+        f"UPDATE {table} SET status = ?, status_changed_at = datetime('now'), "
+        "updated_at = datetime('now') WHERE id = ? AND contact_id = ?",
+        (body.status, channel_id, contact_id),
+    )
+    if cur.rowcount == 0:
+        raise HTTPException(status_code=404, detail="Channel not found")
+    db.commit()
+    log_action(db, user, "contact.channel_status", "contact", contact_id,
+               {"kind": body.kind, "channel_id": channel_id, "status": body.status})
+    row = db.execute(
+        f"SELECT {_CHANNEL_COLUMNS} FROM {table} WHERE id = ?", (channel_id,),
+    ).fetchone()
+    return dict(row)
+
+
 

@@ -511,6 +511,40 @@ export interface ContactTransaction {
   brands: TransactionBrand[];
 }
 
+/** A phone or email on a contact — a collection with per-value verdicts, not a
+ *  single overwrite-or-lose field. `value` is normalized (dedupe key); show
+ *  `value_raw`. Verdicts: phones use "wrong_number", emails use "bounced". */
+export interface ContactChannel {
+  id: number;
+  contact_id: string;
+  value: string;
+  value_raw: string | null;
+  label: string | null;
+  source: string; // realtrack, geowarehouse, datanyze, 411, hubspot, manual
+  status: "unverified" | "verified_good" | "wrong_number" | "bounced" | "dead";
+  status_changed_at: string | null;
+  note: string | null;
+  hubspot_property: string | null;
+  created_at: string;
+  updated_at: string;
+  /** Top displayable value (verified_good or newest unverified). */
+  is_best: boolean;
+}
+
+export interface ContactChannels {
+  phones: ContactChannel[];
+  emails: ContactChannel[];
+}
+
+/** A free-form note on a contact (contact_notes). */
+export interface ContactNote {
+  id: number;
+  contact_id: string;
+  note: string;
+  created_by: string | null;
+  created_at: string;
+}
+
 export interface ContactDetail {
   id: string;
   name_fingerprint: string;

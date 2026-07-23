@@ -15,6 +15,8 @@ import ActivityFeed from "../components/crm/ActivityFeed";
 import LinkedInButton from "../components/ui/LinkedInButton";
 import CurrentEmployerPill from "../components/contact/CurrentEmployerPill";
 import CareerHistoryTile from "../components/contact/CareerHistoryTile";
+import ContactChannelsCard from "../components/contact/ContactChannelsCard";
+import ContactNotesCard from "../components/contact/ContactNotesCard";
 import TenureDetailDrawer from "../components/contact/TenureDetailDrawer";
 import PortfolioFootprintMap from "../components/contact/PortfolioFootprintMap";
 import TenuredPropertyFootprintMap from "../components/contact/TenuredPropertyFootprintMap";
@@ -635,6 +637,12 @@ export default function ContactDetailPage() {
               );
             })()}
           </div>
+
+          {/* Channels — phones/emails as a collection with dial verdicts (Phase 1) */}
+          <ContactChannelsCard contactId={contact.id} />
+
+          {/* Notes / dossier */}
+          <ContactNotesCard contactId={contact.id} />
         </div>
 
         {/* Right: Tabbed main pane (Wave 4) */}
