@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Heading, Text, Button, Badge, TextField, Callout, DropdownMenu, Tabs } from "@radix-ui/themes";
-import { CaretDown, User, Lightning, CheckCircle, WarningCircle, DotsThree } from "@phosphor-icons/react";
+import { CaretDown, User, CheckCircle, WarningCircle, DotsThree } from "@phosphor-icons/react";
 import { fetchApi, mutateApi } from "../api/client";
 import { useCrm } from "../components/crm/CrmContext";
 import { formatCurrency, formatDate, formatPhone, formatSf, formatPortfolioUnit, computeOwnershipYears, formatOwnership, titleCase, formatCanonicalAddress as formatCanonicalAddressUtil } from "../lib/utils";
@@ -478,168 +478,50 @@ export default function ContactDetailPage() {
             {editing ? (
               <div className="flex flex-col gap-3 text-[14px]">
                 <div>
-                  <Text size="1" style={{ color: "var(--gray-9)" }}>Phone</Text>
-                  <TextField.Root size="1" value={editFields.phone} onChange={(e: any) => setEditFields({ ...editFields, phone: e.target.value })} />
-                </div>
-                <div>
-                  <Text size="1" style={{ color: "var(--gray-9)" }}>Email</Text>
-                  <TextField.Root size="1" value={editFields.email} onChange={(e: any) => setEditFields({ ...editFields, email: e.target.value })} />
-                </div>
-                <div>
-                  <Text size="1" style={{ color: "var(--gray-9)" }}>Mobile</Text>
-                  <TextField.Root size="1" value={editFields.mobile} onChange={(e: any) => setEditFields({ ...editFields, mobile: e.target.value })} />
-                </div>
-                <div>
                   <Text size="1" style={{ color: "var(--gray-9)" }}>Job Title</Text>
                   <TextField.Root size="1" value={editFields.job_title} onChange={(e: any) => setEditFields({ ...editFields, job_title: e.target.value })} />
                 </div>
+                <Text size="1" style={{ color: "var(--gray-9)" }}>
+                  Phones and emails are managed in the Channels card below.
+                </Text>
               </div>
-            ) : (() => {
-              // HQ phone from the contact's auto_group — used to label a
-              // contact phone row that happens to match the switchboard.
-              const hqPhoneDigits = (contact.current_auto_group?.primary_phone || "").replace(/\D/g, "");
-              const hqGroupName = contact.current_auto_group
-                ? titleCase(contact.current_auto_group.display_name)
-                : "";
-
-              // Collect all phones (RT + Datanyze) with source badges, deduped by digits
-              type Row = { value: string; source: "Realtrack" | "Datanyze" | "LinkedIn"; label?: string };
-              const phones: Row[] = [];
-              if (contact.phone) phones.push({ value: contact.phone, source: "Realtrack" });
-              if (contact.mobile) phones.push({ value: contact.mobile, source: "Realtrack", label: "mobile" });
-              contact.datanyze_contacts?.phones?.forEach((p) => {
-                phones.push({ value: p.value, source: "Datanyze", label: p.type });
-              });
-              const seenPhones = new Set<string>();
-              const phoneRows = phones.filter((p) => {
-                const key = p.value.replace(/\D/g, "");
-                if (!key || seenPhones.has(key)) return false;
-                seenPhones.add(key);
-                return true;
-              });
-
-              const emails: Row[] = [];
-              if (contact.email) emails.push({ value: contact.email, source: "Realtrack" });
-              contact.datanyze_contacts?.emails?.forEach((e) => {
-                emails.push({ value: e.value, source: "Datanyze", label: e.type });
-              });
-              const seenEmails = new Set<string>();
-              const emailRows = emails.filter((e) => {
-                const key = e.value.toLowerCase().trim();
-                if (!key || seenEmails.has(key)) return false;
-                seenEmails.add(key);
-                return true;
-              });
-
-              const sourceBadgeColor = (src: Row["source"]) =>
-                src === "Datanyze" ? "amber" : src === "LinkedIn" ? "blue" : "gray";
-
-              return (
-                <div className="flex flex-col gap-4 text-[14px]">
-                  {/* Job Title */}
-                  {contact.job_title && (
-                    <div>
-                      <Text size="1" style={{ color: "var(--gray-9)" }}>Job Title</Text>
-                      <Text size="2" className="block">{titleCase(contact.job_title)}</Text>
-                    </div>
-                  )}
-
-                  {/* Phone */}
+            ) : (
+              <div className="flex flex-col gap-4 text-[14px]">
+                {/* Job Title */}
+                {contact.job_title && (
                   <div>
-                    <Text size="1" style={{ color: "var(--gray-9)" }}>Phone</Text>
-                    {phoneRows.length === 0 ? (
-                      <Text size="2" className="block">—</Text>
-                    ) : (
-                      <div className="flex flex-col gap-1 mt-1">
-                        {phoneRows.map((p, i) => {
-                          const isHq = hqPhoneDigits && p.value.replace(/\D/g, "") === hqPhoneDigits;
-                          return (
-                            <div key={`ph-${i}`} className="flex items-center gap-2 flex-wrap">
-                              <a href={`tel:${p.value}`} className="no-underline" style={{ color: "var(--accent-11)" }}>
-                                {formatPhone(p.value)}
-                              </a>
-                              {p.label && (
-                                <Text size="1" style={{ color: "var(--gray-9)" }}>· {p.label}</Text>
-                              )}
-                              {isHq ? (
-                                <Badge size="1" variant="soft" color="amber" title="This number matches the group's HQ switchboard, not a direct line.">
-                                  HQ line{hqGroupName ? ` · ${hqGroupName}` : ""}
-                                </Badge>
-                              ) : (
-                                <Badge size="1" variant="soft" color={sourceBadgeColor(p.source) as any}>
-                                  {p.source === "Datanyze" && <Lightning size={10} weight="fill" />}
-                                  {p.source}
-                                </Badge>
-                              )}
-                            </div>
-                          );
-                        })}
-                        {contact.phone_tenure_tag && (
-                          <Badge
-                            size="1"
-                            color={contact.phone_tenure_tag.state === "active" ? "jade" : "gray"}
-                            variant="soft"
-                            className="self-start"
-                          >
-                            {contact.phone_tenure_tag.state === "active"
-                              ? `Active · ${contact.phone_tenure_tag.display_name} since ${(contact.phone_tenure_tag.since || "").slice(0, 4)}`
-                              : `Last seen ${(contact.phone_tenure_tag.last_seen || "").slice(0, 10)}${contact.phone_tenure_tag.display_name ? ` · ${contact.phone_tenure_tag.display_name} era` : ""}`}
-                          </Badge>
-                        )}
-                      </div>
-                    )}
+                    <Text size="1" style={{ color: "var(--gray-9)" }}>Job Title</Text>
+                    <Text size="2" className="block">{titleCase(contact.job_title)}</Text>
                   </div>
+                )}
 
-                  {/* Email */}
+                {/* Phones/emails now live in the Channels card below (source badges,
+                    dial verdicts, Datanyze merged + deduped). */}
+
+                {/* Social */}
+                {contact.linkedin_url && (
                   <div>
-                    <Text size="1" style={{ color: "var(--gray-9)" }}>Email</Text>
-                    {emailRows.length === 0 ? (
-                      <Text size="2" className="block">—</Text>
-                    ) : (
-                      <div className="flex flex-col gap-1 mt-1">
-                        {emailRows.map((e, i) => (
-                          <div key={`em-${i}`} className="flex items-center gap-2 flex-wrap">
-                            <a href={`mailto:${e.value}`} className="no-underline" style={{ color: "var(--accent-11)" }}>
-                              {e.value}
-                            </a>
-                            {e.label && (
-                              <Text size="1" style={{ color: "var(--gray-9)" }}>· {e.label}</Text>
-                            )}
-                            <Badge size="1" variant="soft" color={sourceBadgeColor(e.source) as any}>
-                              {e.source === "Datanyze" && <Lightning size={10} weight="fill" />}
-                              {e.source}
-                            </Badge>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Social */}
-                  {contact.linkedin_url && (
-                    <div>
-                      <Text size="1" style={{ color: "var(--gray-9)" }}>Social</Text>
-                      <div className="flex items-center gap-2 flex-wrap mt-1">
-                        <a
-                          href={contact.linkedin_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="no-underline"
-                          style={{ color: "var(--accent-11)" }}
-                        >
-                          LinkedIn profile
-                        </a>
-                        <Badge size="1" variant="soft" color="blue">LinkedIn</Badge>
-                      </div>
+                    <Text size="1" style={{ color: "var(--gray-9)" }}>Social</Text>
+                    <div className="flex items-center gap-2 flex-wrap mt-1">
+                      <a
+                        href={contact.linkedin_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline"
+                        style={{ color: "var(--accent-11)" }}
+                      >
+                        LinkedIn profile
+                      </a>
+                      <Badge size="1" variant="soft" color="blue">LinkedIn</Badge>
                     </div>
-                  )}
-                </div>
-              );
-            })()}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Channels — phones/emails as a collection with dial verdicts (Phase 1) */}
-          <ContactChannelsCard contactId={contact.id} />
+          <ContactChannelsCard contactId={contact.id} tenureTag={contact.phone_tenure_tag} />
 
           {/* Notes / dossier */}
           <ContactNotesCard contactId={contact.id} />

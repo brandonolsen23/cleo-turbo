@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Text, Badge, Button, TextField } from "@radix-ui/themes";
-import { Plus } from "@phosphor-icons/react";
+import { Plus, Lightning } from "@phosphor-icons/react";
 import { fetchApi, postApi, mutateApi } from "../../api/client";
 import { formatPhone } from "../../lib/utils";
-import type { ContactChannel, ContactChannels } from "../../types";
+import type { ContactChannel, ContactChannels, TenureTag } from "../../types";
 
 /** Channels card — a contact's phones + emails as a collection with verdicts.
  *  Best-ranked value is bolded; wrong_number/bounced/dead stay visible (so a
@@ -40,7 +40,17 @@ function nextStatus(kind: Kind, current: ContactChannel["status"]): ContactChann
   return cycle[(i + 1) % cycle.length];
 }
 
-export default function ContactChannelsCard({ contactId }: { contactId: string }) {
+// Source badge — Datanyze keeps its amber + lightning cue from the old card.
+const SOURCE_COLOR: Record<string, "gray" | "amber" | "blue"> = {
+  datanyze: "amber",
+  hubspot: "blue",
+};
+
+export default function ContactChannelsCard({ contactId, tenureTag }: {
+  contactId: string;
+  /** RT phone tenure context ("Active · GroupName since 2019"), shown under phones. */
+  tenureTag?: TenureTag | null;
+}) {
   const [channels, setChannels] = useState<ContactChannels | null>(null);
   const [busyId, setBusyId] = useState<number | null>(null);
   const [addKind, setAddKind] = useState<Kind | null>(null);
@@ -102,7 +112,10 @@ export default function ContactChannelsCard({ contactId }: { contactId: string }
         {ch.label && (
           <Text size="1" style={{ color: "var(--gray-9)" }}>· {ch.label}</Text>
         )}
-        <Badge size="1" variant="soft" color="gray">{ch.source}</Badge>
+        <Badge size="1" variant="soft" color={SOURCE_COLOR[ch.source] ?? "gray"}>
+          {ch.source === "datanyze" && <Lightning size={10} weight="fill" />}
+          {ch.source}
+        </Badge>
         <button
           type="button"
           onClick={() => cycleStatus(kind, ch)}
@@ -134,6 +147,18 @@ export default function ContactChannelsCard({ contactId }: { contactId: string }
         <Text size="2" className="block">—</Text>
       ) : (
         <div className="flex flex-col gap-1 mt-1">{rows.map((r) => renderRow(kind, r))}</div>
+      )}
+      {kind === "phone" && tenureTag && (
+        <Badge
+          size="1"
+          variant="soft"
+          color={tenureTag.state === "active" ? "jade" : "gray"}
+          className="self-start mt-1"
+        >
+          {tenureTag.state === "active"
+            ? `Active · ${tenureTag.display_name} since ${(tenureTag.since || "").slice(0, 4)}`
+            : `Last seen ${(tenureTag.last_seen || "").slice(0, 10)}${tenureTag.display_name ? ` · ${tenureTag.display_name} era` : ""}`}
+        </Badge>
       )}
       {addKind === kind && (
         <div className="mt-2 flex items-center gap-2">

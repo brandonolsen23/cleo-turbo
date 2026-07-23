@@ -1056,12 +1056,18 @@ def save_linkedin_profile(contact_id: str, data: LinkedInProfileData, db=Depends
             contact_details_saved = True
 
         # Store the full Datanyze response for reference
+        datanyze_dict = {"emails": [e.model_dump() for e in cd.emails],
+                         "phones": [p.model_dump() for p in cd.phones]}
         db.execute(
             "UPDATE contact_field_overrides SET datanyze_raw = ?, updated_at = datetime('now') "
             "WHERE contact_id = ?",
-            (json.dumps({"emails": [e.model_dump() for e in cd.emails],
-                         "phones": [p.model_dump() for p in cd.phones]}), contact_id)
+            (json.dumps(datanyze_dict), contact_id)
         )
+        # Also land the enriched phones/emails as channel rows (source=datanyze),
+        # deduped against anything already stored — so they persist as verdictable
+        # channels, not just a display blob. Additive; never deletes.
+        from ...channels import upsert_datanyze_channels
+        upsert_datanyze_channels(db, contact_id, datanyze_dict)
 
     log_action(db, user, "contact.linkedin_enriched", "contact", contact_id, {
         "linkedin_url": data.linkedin_url,
