@@ -266,9 +266,18 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
     result["work_history"] = [dict(p) for p in positions]
 
     # Transactions this contact appears on (with tenant brands via property)
+    def _parse_brands(td):
+        raw = td.pop("brands_raw", None)
+        if raw:
+            td["brands"] = [{"brand": b.split("|")[0], "category": b.split("|")[1] if "|" in b else ""}
+                            for b in raw.split(";;") if b]
+        else:
+            td["brands"] = []
+        return td
+
     txns = db.execute(
         "SELECT tp.source_id, tp.side, tp.party_name, tp.contact_title, tp.phone, "
-        "t.sale_date, t.sale_price, t.display_address, t.city, "
+        "t.property_id, t.sale_date, t.sale_price, t.display_address, t.city, "
         "(SELECT GROUP_CONCAT(p2.brand || '|' || p2.category, ';;') "
         " FROM pois p2 WHERE p2.property_id = t.property_id AND p2.brand != '') as brands_raw "
         "FROM transaction_parties tp "
@@ -278,15 +287,74 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
     ).fetchall()
     txn_list = []
     for t in txns:
-        td = dict(t)
-        raw = td.pop("brands_raw", None)
-        if raw:
-            td["brands"] = [{"brand": b.split("|")[0], "category": b.split("|")[1] if "|" in b else ""}
-                            for b in raw.split(";;") if b]
-        else:
-            td["brands"] = []
+        td = _parse_brands(dict(t))
+        td["attribution"] = "direct"
         txn_list.append(td)
+
+    # Entity-attributed transactions ("via <entity>"). RT only prints a
+    # person's name (attn/aso) on some records; when the same legal entity
+    # later transacts the same property WITHOUT naming the person, the deal
+    # is invisible on the contact — e.g. a contact personally on the buy of
+    # a building whose numbered co later sells it (phantom ownership).
+    # Rule: the contact is "paired" with an entity when they appear on the
+    # same source_id + side as that entity's group row. Any transaction on a
+    # property the contact is directly linked to, where a paired entity is a
+    # party but the contact is not, is credited as attribution='via_entity'.
+    # Scoped to same-property so unrelated entity deals are never credited.
+    via_txns = db.execute(
+        """
+        WITH my_entities AS (
+            SELECT DISTINCT grp.group_id
+            FROM transaction_parties me
+            JOIN transaction_parties grp
+              ON grp.source_id = me.source_id
+             AND grp.side = me.side
+             AND grp.group_id IS NOT NULL
+            WHERE me.contact_id = ?
+        ),
+        my_props AS (
+            SELECT DISTINCT t2.property_id
+            FROM transaction_parties tp2
+            JOIN transactions t2 ON t2.source_id = tp2.source_id
+            WHERE tp2.contact_id = ?
+              AND t2.property_id IS NOT NULL AND t2.property_id != ''
+        )
+        SELECT tp.source_id, tp.side,
+               MIN(tp.party_name) AS via_entity,
+               t.property_id, t.sale_date, t.sale_price,
+               t.display_address, t.city,
+               (SELECT GROUP_CONCAT(p2.brand || '|' || p2.category, ';;')
+                  FROM pois p2
+                 WHERE p2.property_id = t.property_id AND p2.brand != '') AS brands_raw
+        FROM transaction_parties tp
+        JOIN my_entities e ON e.group_id = tp.group_id
+        JOIN transactions t ON t.source_id = tp.source_id
+        JOIN my_props mp ON mp.property_id = t.property_id
+        WHERE NOT EXISTS (
+            SELECT 1 FROM transaction_parties me2
+            WHERE me2.source_id = tp.source_id
+              AND me2.side = tp.side
+              AND me2.contact_id = ?
+        )
+        GROUP BY tp.source_id, tp.side
+        """,
+        (contact_id, contact_id, contact_id),
+    ).fetchall()
+    for t in via_txns:
+        td = _parse_brands(dict(t))
+        td["party_name"] = td.pop("via_entity")
+        td["contact_title"] = ""
+        td["phone"] = ""
+        td["attribution"] = "via_entity"
+        txn_list.append(td)
+    txn_list.sort(key=lambda x: x.get("sale_date") or "", reverse=True)
     result["transactions"] = txn_list
+    result["transactions_via_count"] = sum(
+        1 for x in txn_list if x["attribution"] == "via_entity"
+    )
+    result["last_activity_date"] = max(
+        (x["sale_date"] for x in txn_list if x.get("sale_date")), default=None
+    )
 
     # Portfolio building size — properties where this contact is on the buyer
     # side of the property's most recent transaction. RT records mixed units
@@ -339,16 +407,10 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
     sum_sell = 0
     n_buys_priced = 0
     n_sells_priced = 0
-    for r in db.execute(
-        """
-        SELECT t.property_id, t.display_address, t.city,
-               tp.side, t.sale_date, t.sale_price
-        FROM transaction_parties tp
-        JOIN transactions t ON t.source_id = tp.source_id
-        WHERE tp.contact_id = ?
-        """,
-        (contact_id,),
-    ):
+    # Iterates the merged txn_list (direct + via_entity) so an entity-level
+    # disposition ends the contact's ownership: latest side flips to seller
+    # and the property stops counting as Owned.
+    for r in txn_list:
         price = r["sale_price"] or 0
         if r["side"] == "buyer" and price > 0:
             sum_buy += price
@@ -420,7 +482,14 @@ def contact_detail(contact_id: str, db=Depends(get_db), user=Depends(get_current
             gd = dict(group)
             # Fallback: buyer mailing address from contact's most recent transaction
             if not gd.get("hq_address") and result.get("transactions"):
-                latest_src = result["transactions"][0].get("source_id")
+                # Only direct appearances — a via_entity row's buyer mailing
+                # address belongs to the counterparty, not this contact.
+                latest_direct = next(
+                    (x for x in result["transactions"]
+                     if x.get("attribution") == "direct"),
+                    None,
+                )
+                latest_src = latest_direct.get("source_id") if latest_direct else None
                 if latest_src:
                     ma = db.execute(
                         "SELECT display, geocode_string FROM transaction_mailing_addresses "

@@ -57,6 +57,13 @@ function TxnRow({ t, onNav }: {
         <Badge size="1" variant="soft" color={t.side === "buyer" ? "blue" : "orange"}>
           {t.side}
         </Badge>
+        {t.attribution === "via_entity" && t.party_name && (
+          <div className="mt-1">
+            <Badge size="1" variant="soft" color="gray" title={`Credited via ${t.party_name} — the entity transacted; the contact wasn't named on this record`}>
+              via {t.party_name}
+            </Badge>
+          </div>
+        )}
       </td>
       <td className="py-2">
         {t.tenure ? (
@@ -331,8 +338,13 @@ export default function ContactDetailPage() {
             <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
               <Text size="1" style={{ color: "var(--gray-9)" }}>Transactions</Text>
               <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
-                {contact.transaction_count.toLocaleString()}
+                {contact.transactions.length.toLocaleString()}
               </Text>
+              {(contact.transactions_via_count ?? 0) > 0 && (
+                <Text size="1" style={{ color: "var(--gray-9)" }}>
+                  {contact.transactions_via_count!.toLocaleString()} via entity
+                </Text>
+              )}
             </div>
             <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
               <Text size="1" style={{ color: "var(--gray-9)" }}>Portfolio Size</Text>
@@ -368,12 +380,19 @@ export default function ContactDetailPage() {
               )}
             </div>
             <div className="rounded-[var(--card-radius)] border border-[var(--gray-6)] p-4">
-              <Text size="1" style={{ color: "var(--gray-9)" }}>Last Seen</Text>
+              <Text size="1" style={{ color: "var(--gray-9)" }}>Last Activity</Text>
               <Text size="6" weight="bold" className="block mt-1" style={{ color: "var(--gray-12)" }}>
-                {contact.last_seen_date ? formatDate(contact.last_seen_date) : "—"}
+                {(contact.last_activity_date || contact.last_seen_date)
+                  ? formatDate((contact.last_activity_date || contact.last_seen_date)!)
+                  : "—"}
               </Text>
               <Text size="1" style={{ color: "var(--gray-9)" }}>
                 {contact.first_seen_date ? `First seen ${formatDate(contact.first_seen_date)}` : ""}
+                {contact.last_activity_date
+                  && contact.last_seen_date
+                  && contact.last_activity_date > contact.last_seen_date
+                  ? ` · last named ${formatDate(contact.last_seen_date)}`
+                  : ""}
               </Text>
             </div>
           </div>
@@ -622,7 +641,7 @@ export default function ContactDetailPage() {
                   </thead>
                   <tbody>
                     {(txnsExpanded ? contact.transactions : contact.transactions.slice(0, 5)).map((t) => (
-                      <TxnRow key={t.source_id} t={t} onNav={() => navigate(`/transactions/${t.source_id}`)} />
+                      <TxnRow key={`${t.source_id}-${t.side}-${t.attribution ?? "direct"}`} t={t} onNav={() => navigate(`/transactions/${t.source_id}`)} />
                     ))}
                   </tbody>
                 </table>

@@ -504,11 +504,15 @@ export interface ContactTransaction {
   party_name: string | null;
   contact_title: string | null;
   phone: string | null;
+  property_id: string | null;
   sale_date: string | null;
   sale_price: number | null;
   display_address: string;
   city: string;
   brands: TransactionBrand[];
+  /** "direct" = RT printed this person's name on the record;
+   *  "via_entity" = credited through a paired legal entity (party_name). */
+  attribution?: "direct" | "via_entity";
 }
 
 /** A phone or email on a contact — a collection with per-value verdicts, not a
@@ -568,6 +572,12 @@ export interface ContactDetail {
   created_at: string;
   updated_at: string;
   transactions: ContactTransactionWithTenure[];
+  /** Count of transactions credited via a paired entity (not named directly). */
+  transactions_via_count?: number;
+  /** Latest sale_date across direct + via_entity transactions. Unlike
+   *  last_seen_date (direct name-prints only), this moves when the
+   *  contact's entity transacts. */
+  last_activity_date?: string | null;
   portfolio_sf: PortfolioSf;
   portfolio_size?: PortfolioSize;
   properties_unified?: ContactPropertiesUnified;
