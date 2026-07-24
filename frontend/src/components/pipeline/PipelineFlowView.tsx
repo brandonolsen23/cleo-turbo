@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useLayoutEffect, useCallback } from "react";
+import { useState, useMemo, useRef, useEffect, useLayoutEffect, useCallback, Fragment } from "react";
 import { Text } from "@radix-ui/themes";
 
 // ============================================================
@@ -370,7 +370,71 @@ function stageFields(stage: string, data: any): FieldDef[] {
       { ...s("photos.street_photo_urls"), section: "Media" },
       s("photos.aerial_photo_urls"),
       { ...s("description.description"), section: "Other" },
+      s("description.more_info_url"),
+      { ...s("seller.care_of"), section: "Seller extra" },
+      s("seller.law_firms"),
+      s("seller.companies"),
+      { ...s("buyer.care_of"), section: "Buyer extra" },
+      s("buyer.law_firms"),
+      s("buyer.companies"),
+      { ...s("site.building_size_raw"), section: "Site extra" },
+      s("site.building_size_value"),
+      s("site.building_size_unit"),
+      s("site.location"),
+      s("site.surface_rights_only"),
+      s("site.pin.multiple", "pin multiple"),
+      { ...s("parcel.confidence"), section: "Parcel detail" },
+      s("parcel.pip_verified"),
+      s("parcel.containment"),
+      s("parcel.loc_name"),
+      s("parcel.addr_type"),
+      s("parcel.geocode_score"),
+      s("parcel.field_match"),
+      s("parcel.tier"),
+      s("parcel.reason"),
+      { ...s("geocoded_coords.lat"), section: "Geocoded" },
+      s("geocoded_coords.lng"),
+      s("geocoded_coords.relevance"),
+      s("geocoded_coords.place_name"),
+      { ...s("consideration.chattels"), section: "Financial extra" },
+      s("consideration.other"),
+      { ...s("property.addresses[0].original", "addr original"), section: "Address detail" },
+      s("property.addresses[0].type", "addr type"),
+      s("property.addresses[0].search_keys", "addr search_keys"),
+      s("property.addresses[0].variations", "addr variations"),
+      s("seller.address.original_lines", "sell orig_lines"),
+      s("seller.address.modifiers", "sell modifiers"),
+      s("seller.address.building_names", "sell building_names"),
+      s("seller.address.search_keys", "sell search_keys"),
+      s("buyer.address.original_lines", "buy orig_lines"),
+      s("buyer.address.modifiers", "buy modifiers"),
+      s("buyer.address.building_names", "buy building_names"),
+      s("buyer.address.search_keys", "buy search_keys"),
+      s("photos.standalone_photo_url", "standalone_photo"),
+      s("site.building_size_unparseable", "size_unparseable"),
     ];
+    case "compiled": {
+      // Render EVERY field the compiled layer returns — generated from the data
+      // itself, never a curated list — so nothing can be silently hidden.
+      if (!data || typeof data !== "object") return [];
+      const out: FieldDef[] = [];
+      const addSection = (label: string, obj: any, prefix: string) => {
+        if (!obj || typeof obj !== "object") return;
+        Object.keys(obj).forEach((k, i) => {
+          const f = s(`${prefix}.${k}`, k);
+          if (i === 0) f.section = label;
+          out.push(f);
+        });
+      };
+      addSection("Property", data.property, "property");
+      addSection("Transaction", data.transaction, "transaction");
+      addSection("Party-side · Seller", data.seller, "seller");
+      addSection("Party-side · Buyer", data.buyer, "buyer");
+      if (Array.isArray(data.brokers)) {
+        data.brokers.forEach((b: any, i: number) => addSection(`Broker ${i + 1}`, b, `brokers[${i}]`));
+      }
+      return out;
+    }
     default: return [];
   }
 }
@@ -558,12 +622,321 @@ function StageNode({ label, fields, data, connectedSet, lockedField, onHover, on
 // Main component
 // ============================================================
 
+const COMPILED_CONNECTIONS: Connection[] = [
+  { from: "clean:transaction.sale_date", to: "compiled:transaction.sale_date", type: "pass" },
+  { from: "clean:transaction.sale_price", to: "compiled:transaction.sale_price", type: "pass" },
+  { from: "clean:consideration.cash", to: "compiled:transaction.cash", type: "pass" },
+  { from: "clean:consideration.debt", to: "compiled:transaction.debt", type: "pass" },
+  { from: "clean:site.arn.api_format", to: "compiled:transaction.arn", type: "pass" },
+  { from: "clean:property.addresses[0].display", to: "compiled:property.display_address", type: "restructure" },
+  { from: "clean:property.city", to: "compiled:property.city", type: "pass" },
+  { from: "clean:property.region", to: "compiled:property.region", type: "pass" },
+  { from: "clean:property.postal", to: "compiled:property.postal", type: "pass" },
+  { from: "clean:site.arn.api_format", to: "compiled:property.arn", type: "pass" },
+  { from: "clean:site.acreage", to: "compiled:property.land_size_sqft", type: "parse" },
+  { from: "clean:seller.parties", to: "compiled:seller.party_name", type: "restructure" },
+  { from: "clean:seller.trade_name", to: "compiled:seller.trade_name", type: "pass" },
+  { from: "clean:seller.phone", to: "compiled:seller.phone", type: "pass" },
+  { from: "clean:seller.contacts", to: "compiled:seller.contact", type: "extract" },
+  { from: "clean:seller.contacts", to: "compiled:seller.contact_id", type: "enrich" },
+  { from: "clean:seller.parties", to: "compiled:seller.group_id", type: "enrich" },
+  { from: "clean:buyer.parties", to: "compiled:buyer.party_name", type: "restructure" },
+  { from: "clean:buyer.trade_name", to: "compiled:buyer.trade_name", type: "pass" },
+  { from: "clean:buyer.phone", to: "compiled:buyer.phone", type: "pass" },
+  { from: "clean:buyer.contacts", to: "compiled:buyer.contact", type: "extract" },
+  { from: "clean:buyer.contacts", to: "compiled:buyer.contact_id", type: "enrich" },
+  { from: "clean:buyer.parties", to: "compiled:buyer.group_id", type: "enrich" },
+  { from: "clean:transaction.city", to: "compiled:transaction.city", type: "pass" },
+  { from: "clean:transaction.region", to: "compiled:transaction.region", type: "pass" },
+  { from: "clean:property.postal", to: "compiled:transaction.postal", type: "pass" },
+  { from: "clean:transaction.transaction_note", to: "compiled:transaction.transaction_note", type: "pass" },
+  { from: "clean:property.addresses[0].display", to: "compiled:transaction.display_address", type: "restructure" },
+  { from: "clean:seller.parties", to: "compiled:transaction.seller_parties", type: "pass" },
+  { from: "clean:buyer.parties", to: "compiled:transaction.buyer_parties", type: "pass" },
+  { from: "clean:seller.phone", to: "compiled:transaction.seller_phone", type: "pass" },
+  { from: "clean:buyer.phone", to: "compiled:transaction.buyer_phone", type: "pass" },
+  { from: "clean:description.description", to: "compiled:transaction.description", type: "pass" },
+  { from: "clean:site.acreage", to: "compiled:transaction.acreage", type: "pass" },
+  { from: "clean:site.legal_description", to: "compiled:transaction.legal_description", type: "pass" },
+  { from: "clean:site.pin.api_format", to: "compiled:transaction.pin", type: "pass" },
+  { from: "clean:site.pin.display", to: "compiled:transaction.pin_display", type: "pass" },
+  { from: "clean:site.arn.display", to: "compiled:transaction.arn_display", type: "pass" },
+  { from: "clean:consideration.charges", to: "compiled:transaction.charges_json", type: "pass" },
+  { from: "clean:seller.trade_name", to: "compiled:transaction.seller_trade_name", type: "pass" },
+  { from: "clean:buyer.trade_name", to: "compiled:transaction.buyer_trade_name", type: "pass" },
+  { from: "clean:photos.street_photo_urls", to: "compiled:transaction.photos_json", type: "pass" },
+  { from: "clean:parcel.method", to: "compiled:transaction.parcel_method", type: "pass" },
+  { from: "clean:transaction.city", to: "compiled:property.city", type: "pass" },
+  { from: "clean:transaction.region", to: "compiled:property.region", type: "pass" },
+  { from: "clean:property.postal", to: "compiled:property.postal", type: "pass" },
+  { from: "clean:site.acreage", to: "compiled:property.acreage", type: "pass" },
+  { from: "clean:site.legal_description", to: "compiled:property.legal_description", type: "pass" },
+  { from: "clean:seller.address.display", to: "compiled:seller.mailing_display", type: "pass" },
+  { from: "clean:seller.address.city", to: "compiled:seller.mailing_city", type: "pass" },
+  { from: "clean:seller.address.province", to: "compiled:seller.mailing_province", type: "pass" },
+  { from: "clean:seller.address.postal", to: "compiled:seller.mailing_postal", type: "pass" },
+  { from: "clean:seller.address.geocode_string", to: "compiled:seller.mailing_geocode", type: "pass" },
+  { from: "clean:seller.trade_name", to: "compiled:seller.trade_name", type: "pass" },
+  { from: "clean:seller.contacts", to: "compiled:seller.contact_name", type: "extract" },
+  { from: "clean:buyer.address.display", to: "compiled:buyer.mailing_display", type: "pass" },
+  { from: "clean:buyer.address.city", to: "compiled:buyer.mailing_city", type: "pass" },
+  { from: "clean:buyer.address.province", to: "compiled:buyer.mailing_province", type: "pass" },
+  { from: "clean:buyer.address.postal", to: "compiled:buyer.mailing_postal", type: "pass" },
+  { from: "clean:buyer.address.geocode_string", to: "compiled:buyer.mailing_geocode", type: "pass" },
+  { from: "clean:buyer.trade_name", to: "compiled:buyer.trade_name", type: "pass" },
+  { from: "clean:buyer.contacts", to: "compiled:buyer.contact_name", type: "extract" },
+  { from: "clean:broker.brokers", to: "compiled:brokers[0].broker_name", type: "restructure" },
+  { from: "clean:broker.brokers", to: "compiled:brokers[0].phone", type: "extract" },
+  { from: "clean:parcel.tier", to: "compiled:transaction.parcel_tier", type: "pass" },
+  { from: "clean:parcel.confidence", to: "compiled:transaction.parcel_confidence", type: "pass" },
+  { from: "clean:parcel.containment", to: "compiled:transaction.parcel_containment", type: "pass" },
+  { from: "clean:parcel.loc_name", to: "compiled:transaction.parcel_loc_name", type: "pass" },
+  { from: "clean:parcel.addr_type", to: "compiled:transaction.parcel_addr_type", type: "pass" },
+  { from: "clean:parcel.geocode_score", to: "compiled:transaction.parcel_geocode_score", type: "pass" },
+  { from: "clean:parcel.field_match", to: "compiled:transaction.parcel_field_match", type: "pass" },
+  { from: "clean:parcel.pip_verified", to: "compiled:transaction.pip_verified", type: "pass" },
+  { from: "clean:parcel.reason", to: "compiled:transaction.parcel_reason", type: "pass" },
+  { from: "clean:site.location", to: "compiled:transaction.location", type: "pass" },
+  { from: "clean:site.surface_rights_only", to: "compiled:transaction.surface_rights_only", type: "pass" },
+  { from: "clean:description.more_info_url", to: "compiled:transaction.more_info_url", type: "pass" },
+  { from: "clean:consideration.chattels", to: "compiled:transaction.chattels", type: "pass" },
+  { from: "clean:consideration.other", to: "compiled:transaction.other_consideration", type: "pass" },
+  { from: "clean:seller.care_of", to: "compiled:transaction.seller_care_of", type: "pass" },
+  { from: "clean:buyer.care_of", to: "compiled:transaction.buyer_care_of", type: "pass" },
+  { from: "clean:seller.law_firms", to: "compiled:transaction.seller_law_firms_json", type: "pass" },
+  { from: "clean:seller.companies", to: "compiled:transaction.seller_companies_json", type: "pass" },
+  { from: "clean:buyer.law_firms", to: "compiled:transaction.buyer_law_firms_json", type: "pass" },
+  { from: "clean:buyer.companies", to: "compiled:transaction.buyer_companies_json", type: "pass" },
+  { from: "clean:site.building_size_raw", to: "compiled:transaction.building_size_raw", type: "pass" },
+  { from: "clean:site.building_size_value", to: "compiled:transaction.building_size_value", type: "pass" },
+  { from: "clean:site.building_size_unit", to: "compiled:transaction.building_size_unit", type: "pass" },
+  { from: "clean:site.pin.multiple", to: "compiled:transaction.pin_multiple", type: "pass" },
+  { from: "clean:site.building_size_raw", to: "compiled:property.building_size_raw", type: "pass" },
+  { from: "clean:site.building_size_value", to: "compiled:property.building_size_value", type: "pass" },
+  { from: "clean:site.building_size_unit", to: "compiled:property.building_size_unit", type: "pass" },
+  { from: "clean:geocoded_coords.lat", to: "compiled:property.lat", type: "pass" },
+  { from: "clean:geocoded_coords.lng", to: "compiled:property.lng", type: "pass" },
+  { from: "clean:seller.contacts", to: "compiled:seller.contact_title", type: "extract" },
+  { from: "clean:buyer.contacts", to: "compiled:buyer.contact_title", type: "extract" },
+];
+
+// ============================================================
+// Shared engines — visible transform nodes between stages.
+// Each engine renders in the gap after `gapAfter`, with one in-anchor per
+// input field and one out-anchor per output field. Wires route field -> engine
+// -> field so you can see exactly what each engine consumes and produces.
+// ============================================================
+
+interface EngineWire { field: string; type: Connection["type"]; }
+interface EngineDef {
+  id: string;
+  label: string;
+  module: string;
+  gapAfter: string;
+  inputs: EngineWire[];
+  outputs: EngineWire[];
+}
+
+const ENGINES: EngineDef[] = [
+  { id: "fmt", label: "Value formatters", module: "engines/rt · classifier", gapAfter: "assembled",
+    inputs: [
+      { field: "assembled:detail.header.price_text", type: "parse" },
+      { field: "assembled:detail.header.date_text", type: "parse" },
+    ],
+    outputs: [
+      { field: "classified:header.sale_price", type: "parse" },
+      { field: "classified:header.sale_date", type: "parse" },
+    ] },
+  { id: "csplit-s", label: "Contact splitter · seller", module: "classifier/contacts", gapAfter: "assembled",
+    inputs: [ { field: "assembled:detail.transferor.contact_lines", type: "extract" } ],
+    outputs: [
+      { field: "classified:seller.contacts", type: "extract" },
+      { field: "classified:seller.phone", type: "extract" },
+      { field: "classified:seller.address.lines", type: "extract" },
+      { field: "classified:seller.address.city", type: "extract" },
+      { field: "classified:seller.address.province", type: "extract" },
+      { field: "classified:seller.address.postal", type: "extract" },
+    ] },
+  { id: "csplit-b", label: "Contact splitter · buyer", module: "classifier/contacts", gapAfter: "assembled",
+    inputs: [ { field: "assembled:detail.transferee.contact_lines", type: "extract" } ],
+    outputs: [
+      { field: "classified:buyer.contacts", type: "extract" },
+      { field: "classified:buyer.phone", type: "extract" },
+      { field: "classified:buyer.address.lines", type: "extract" },
+      { field: "classified:buyer.address.city", type: "extract" },
+      { field: "classified:buyer.address.province", type: "extract" },
+      { field: "classified:buyer.address.postal", type: "extract" },
+    ] },
+  { id: "addr-p", label: "Address engine · property", module: "cleo/address", gapAfter: "classified",
+    inputs: [ { field: "classified:header.address_entries", type: "restructure" } ],
+    outputs: [
+      { field: "addresses:property.addresses[0].display", type: "restructure" },
+      { field: "addresses:property.addresses[0].components", type: "restructure" },
+      { field: "addresses:property.addresses[0].geocode_string", type: "restructure" },
+      { field: "addresses:property.addresses[0].geocodable", type: "restructure" },
+    ] },
+  { id: "addr-s", label: "Address engine · seller", module: "cleo/address", gapAfter: "classified",
+    inputs: [ { field: "classified:seller.address.lines", type: "restructure" } ],
+    outputs: [
+      { field: "addresses:seller.address.display", type: "restructure" },
+      { field: "addresses:seller.address.components", type: "restructure" },
+      { field: "addresses:seller.address.geocode_string", type: "restructure" },
+    ] },
+  { id: "addr-b", label: "Address engine · buyer", module: "cleo/address", gapAfter: "classified",
+    inputs: [ { field: "classified:buyer.address.lines", type: "restructure" } ],
+    outputs: [
+      { field: "addresses:buyer.address.display", type: "restructure" },
+      { field: "addresses:buyer.address.components", type: "restructure" },
+      { field: "addresses:buyer.address.geocode_string", type: "restructure" },
+    ] },
+  { id: "resolver", label: "Parcel resolver", module: "cleo/resolver", gapAfter: "addresses",
+    inputs: [
+      { field: "addresses:property.addresses[0].geocode_string", type: "enrich" },
+      { field: "addresses:pin.api_format", type: "enrich" },
+      { field: "addresses:arn.api_format", type: "enrich" },
+    ],
+    outputs: [
+      { field: "parcel_links:resolved_arn", type: "enrich" },
+      { field: "parcel_links:method", type: "enrich" },
+      { field: "parcel_links:reason", type: "enrich" },
+    ] },
+  { id: "brand-s", label: "normalize_brand · seller", module: "compiler/reconciler", gapAfter: "clean",
+    inputs: [ { field: "clean:seller.parties", type: "enrich" } ],
+    outputs: [ { field: "compiled:seller.group_id", type: "enrich" } ] },
+  { id: "brand-b", label: "normalize_brand · buyer", module: "compiler/reconciler", gapAfter: "clean",
+    inputs: [ { field: "clean:buyer.parties", type: "enrich" } ],
+    outputs: [ { field: "compiled:buyer.group_id", type: "enrich" } ] },
+  { id: "fp-s", label: "fingerprint · seller", module: "compiler/reconciler", gapAfter: "clean",
+    inputs: [ { field: "clean:seller.contacts", type: "enrich" } ],
+    outputs: [ { field: "compiled:seller.contact_id", type: "enrich" } ] },
+  { id: "fp-b", label: "fingerprint · buyer", module: "compiler/reconciler", gapAfter: "clean",
+    inputs: [ { field: "clean:buyer.contacts", type: "enrich" } ],
+    outputs: [ { field: "compiled:buyer.contact_id", type: "enrich" } ] },
+  { id: "phone-s", label: "normalize_phone · seller", module: "cleo/channels", gapAfter: "clean",
+    inputs: [ { field: "clean:seller.phone", type: "pass" } ],
+    outputs: [ { field: "compiled:seller.phone", type: "pass" } ] },
+  { id: "phone-b", label: "normalize_phone · buyer", module: "cleo/channels", gapAfter: "clean",
+    inputs: [ { field: "clean:buyer.phone", type: "pass" } ],
+    outputs: [ { field: "compiled:buyer.phone", type: "pass" } ] },
+  { id: "reconcile", label: "Property reconciler", module: "compiler · id_mappings", gapAfter: "clean",
+    inputs: [ { field: "clean:parcel.resolved_arn", type: "enrich" } ],
+    outputs: [
+      { field: "compiled:property.id", type: "enrich" },
+      { field: "compiled:transaction.property_id", type: "enrich" },
+    ] },
+  { id: "sqft", label: "acres → sqft", module: "compiler", gapAfter: "clean",
+    inputs: [ { field: "clean:site.acreage", type: "parse" } ],
+    outputs: [ { field: "compiled:property.land_size_sqft", type: "parse" } ] },
+  { id: "rollup", label: "Parcel roll-up · all sales on ARN", module: "compiler · post-pass", gapAfter: "clean",
+    inputs: [ { field: "clean:site.arn.api_format", type: "enrich" } ],
+    outputs: [
+      { field: "compiled:property.most_recent_source_id", type: "enrich" },
+      { field: "compiled:property.most_recent_sale_date", type: "enrich" },
+      { field: "compiled:property.most_recent_sale_price", type: "enrich" },
+      { field: "compiled:property.most_recent_sale_source", type: "enrich" },
+      { field: "compiled:property.transaction_count", type: "enrich" },
+    ] },
+  { id: "owner", label: "Owner resolver · owner_overrides", module: "compiler", gapAfter: "clean",
+    inputs: [ { field: "clean:buyer.parties", type: "enrich" } ],
+    outputs: [
+      { field: "compiled:property.current_owner_name", type: "enrich" },
+      { field: "compiled:property.current_owner_group_id", type: "enrich" },
+    ] },
+  { id: "geo", label: "Parcel file lookup · geometry", module: "cleo/resolver", gapAfter: "clean",
+    inputs: [ { field: "clean:parcel.parcel_file", type: "enrich" } ],
+    outputs: [ { field: "compiled:property.parcel_geojson", type: "enrich" } ] },
+  { id: "gwlk", label: "GeoWarehouse lookup", module: "engines/gw", gapAfter: "clean",
+    inputs: [ { field: "clean:site.arn.api_format", type: "enrich" } ],
+    outputs: [ { field: "compiled:property.gw_municipality", type: "enrich" } ] },
+  { id: "classify", label: "Asset classifier", module: "classifier", gapAfter: "clean",
+    inputs: [ { field: "clean:description.description", type: "extract" } ],
+    outputs: [
+      { field: "compiled:property.primary_property_type", type: "extract" },
+      { field: "compiled:property.asset_class", type: "extract" },
+      { field: "compiled:property.asset_subclass", type: "extract" },
+    ] },
+  { id: "meta", label: "Compile metadata", module: "system", gapAfter: "clean",
+    inputs: [],
+    outputs: [
+      { field: "compiled:property.created_at", type: "pass" },
+      { field: "compiled:property.updated_at", type: "pass" },
+      { field: "compiled:transaction.created_at", type: "pass" },
+      { field: "compiled:transaction.source_folder", type: "pass" },
+      { field: "compiled:transaction.source_position", type: "pass" },
+      { field: "compiled:transaction.source_date", type: "pass" },
+      { field: "compiled:transaction.source_id", type: "pass" },
+      { field: "compiled:brokers[0].id", type: "pass" },
+      { field: "compiled:brokers[0].source_id", type: "pass" },
+      { field: "compiled:brokers[0].created_at", type: "pass" },
+    ] },
+];
+
+function engineConnections(): Connection[] {
+  const out: Connection[] = [];
+  for (const e of ENGINES) {
+    e.inputs.forEach((w, i) => out.push({ from: w.field, to: `eng:${e.id}:in:${i}`, type: w.type }));
+    e.outputs.forEach((w, i) => out.push({ from: `eng:${e.id}:out:${i}`, to: w.field, type: w.type }));
+  }
+  return out;
+}
+
+const ENGINE_SUPPRESS: Set<string> = (() => {
+  const s = new Set<string>();
+  for (const e of ENGINES) {
+    for (const inp of e.inputs) for (const outp of e.outputs) s.add(`${inp.field}->${outp.field}`);
+  }
+  return s;
+})();
+
+function EngineLane({ engines, connectedSet, engineY, onHover, onFieldClick, lockedField }: { engines: EngineDef[]; connectedSet: Set<string> | null; engineY: Record<string, number>; onHover: (id: string | null) => void; onFieldClick: (id: string, value: any) => void; lockedField: string | null }) {
+  return (
+    <div className="flex-shrink-0 relative self-stretch" style={{ width: 156 }}>
+      {engines.map((e, idx) => {
+        const anchors = [
+          ...e.inputs.map((_, i) => `eng:${e.id}:in:${i}`),
+          ...e.outputs.map((_, i) => `eng:${e.id}:out:${i}`),
+        ];
+        const rep = e.inputs.length ? `eng:${e.id}:in:0` : `eng:${e.id}:out:0`;
+        const active = connectedSet ? anchors.some((a) => connectedSet.has(a)) : false;
+        const dim = connectedSet && !active;
+        const locked = lockedField === rep;
+        const top = engineY[e.id] != null ? engineY[e.id] - 18 : idx * 64 + 40;
+        return (
+          <div key={e.id} data-engine={e.id} className="absolute rounded-md border flex items-stretch"
+            style={{ top, left: 0, right: 0, borderColor: locked ? "var(--jade-9)" : "var(--jade-6)", background: "var(--jade-2)", opacity: dim ? 0.2 : 1, cursor: "pointer" }}
+            onPointerEnter={() => onHover(rep)}
+            onPointerLeave={() => onHover(null)}
+            onClick={() => onFieldClick(rep, { engine: e.label, module: e.module, inputs: e.inputs.map((w) => w.field), outputs: e.outputs.map((w) => w.field) })}>
+            <div className="flex flex-col justify-around py-1" style={{ marginLeft: -5 }}>
+              {e.inputs.map((_, i) => (
+                <span key={i} data-anchor={`eng:${e.id}:in:${i}`}
+                  className="rounded-full" style={{ width: 8, height: 8, background: "var(--jade-9)" }} />
+              ))}
+            </div>
+            <div className="px-1 py-1 flex-1 text-center flex flex-col justify-center">
+              <div className="text-[10px] font-medium leading-tight" style={{ color: "var(--jade-11)" }}>{e.label}</div>
+              <div className="text-[9px] font-mono leading-tight" style={{ color: "var(--gray-9)" }}>{e.module}</div>
+            </div>
+            <div className="flex flex-col justify-around py-1" style={{ marginRight: -5 }}>
+              {e.outputs.map((_, i) => (
+                <span key={i} data-anchor={`eng:${e.id}:out:${i}`}
+                  className="rounded-full" style={{ width: 8, height: 8, background: "var(--jade-9)" }} />
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 const STAGE_ORDER = [
   { key: "assembled", label: "Assembled" },
   { key: "classified", label: "Classified" },
   { key: "addresses", label: "Addresses" },
   { key: "parcel_links", label: "Parcel Links" },
   { key: "clean", label: "Clean Record" },
+  { key: "compiled", label: "Compiled Record" },
 ];
 
 export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData; rawHtml: string | null }) {
@@ -574,11 +947,65 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
   const [selectedValue, setSelectedValue] = useState<{ id: string; value: any } | null>(null);
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
+  // Pan / zoom (Miro-style canvas)
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 24, y: 24 });
+  const [fullscreen, setFullscreen] = useState(false);
+  const panRef = useRef<{ x: number; y: number; ox: number; oy: number } | null>(null);
+  const [grabbing, setGrabbing] = useState(false);
+  const [engineY, setEngineY] = useState<Record<string, number>>({});
+
+  const clampZoom = (z: number) => Math.min(2.5, Math.max(0.12, z));
+  const zoomAt = useCallback((factor: number, cx: number, cy: number) => {
+    setZoom((z) => {
+      const nz = clampZoom(z * factor);
+      const k = nz / z;
+      setPan((p) => ({ x: cx - (cx - p.x) * k, y: cy - (cy - p.y) * k }));
+      return nz;
+    });
+  }, []);
+  const resetView = () => { setZoom(1); setPan({ x: 24, y: 24 }); };
+
+  useEffect(() => {
+    const el = canvasRef.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      const rect = el.getBoundingClientRect();
+      const cx = e.clientX - rect.left;
+      const cy = e.clientY - rect.top;
+      if (e.ctrlKey || e.metaKey) {
+        zoomAt(e.deltaY < 0 ? 1.12 : 1 / 1.12, cx, cy);
+      } else {
+        setPan((p) => ({ x: p.x - e.deltaX, y: p.y - e.deltaY }));
+      }
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, [zoomAt]);
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    const t = e.target as HTMLElement;
+    if (t.closest("[data-field-id]") || t.closest("[data-anchor]") || t.closest("[data-engine]") || t.closest("iframe")) return;
+    panRef.current = { x: e.clientX, y: e.clientY, ox: pan.x, oy: pan.y };
+    setGrabbing(true);
+    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+  };
+  const onPointerMove = (e: React.PointerEvent) => {
+    if (!panRef.current) return;
+    setPan({ x: panRef.current.ox + (e.clientX - panRef.current.x), y: panRef.current.oy + (e.clientY - panRef.current.y) });
+  };
+  const onPointerUp = () => { panRef.current = null; setGrabbing(false); };
+
   // Merge static + dynamic connections based on actual data
-  const allConnections = useMemo(() => [
-    ...CONNECTIONS,
-    ...buildDynamicConnections(trace),
-  ], [trace]);
+  const allConnections = useMemo(() => {
+    const direct = [
+      ...CONNECTIONS,
+      ...COMPILED_CONNECTIONS,
+      ...buildDynamicConnections(trace),
+    ].filter((c) => !ENGINE_SUPPRESS.has(`${c.from}->${c.to}`));
+    return [...direct, ...engineConnections()];
+  }, [trace]);
 
   const activeField = lockedField || hoveredField;
   const connectedSet = useMemo(() => {
@@ -591,6 +1018,17 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
       for (const c of allConnections) {
         if (chain.has(c.from) && !chain.has(c.to)) { chain.add(c.to); changed = true; }
         if (chain.has(c.to) && !chain.has(c.from)) { chain.add(c.from); changed = true; }
+      }
+      // Treat each engine as one node: if any anchor is in the chain, include
+      // all of them so the flow continues in and out through the engine.
+      for (const e of ENGINES) {
+        const ids = [
+          ...e.inputs.map((_, i) => `eng:${e.id}:in:${i}`),
+          ...e.outputs.map((_, i) => `eng:${e.id}:out:${i}`),
+        ];
+        if (ids.some((a) => chain.has(a))) {
+          for (const a of ids) if (!chain.has(a)) { chain.add(a); changed = true; }
+        }
       }
     }
     return chain;
@@ -620,18 +1058,23 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
 
     setCanvasSize({ width: inner.scrollWidth, height: inner.scrollHeight });
 
+    const resolveEl = (id: string, role: "out" | "in"): Element | null =>
+      id.startsWith("eng:")
+        ? inner.querySelector(`[data-anchor="${id}"]`)
+        : inner.querySelector(`[data-field-id="${id}"] .connector-${role}`);
+
     for (const conn of allConnections) {
-      const fromEl = inner.querySelector(`[data-field-id="${conn.from}"] .connector-out`);
-      const toEl = inner.querySelector(`[data-field-id="${conn.to}"] .connector-in`);
+      const fromEl = resolveEl(conn.from, "out");
+      const toEl = resolveEl(conn.to, "in");
       if (!fromEl || !toEl) continue;
 
       const fromRect = fromEl.getBoundingClientRect();
       const toRect = toEl.getBoundingClientRect();
 
-      const x1 = fromRect.left + fromRect.width / 2 - innerRect.left;
-      const y1 = fromRect.top + fromRect.height / 2 - innerRect.top;
-      const x2 = toRect.left + toRect.width / 2 - innerRect.left;
-      const y2 = toRect.top + toRect.height / 2 - innerRect.top;
+      const x1 = (fromRect.left + fromRect.width / 2 - innerRect.left) / zoom;
+      const y1 = (fromRect.top + fromRect.height / 2 - innerRect.top) / zoom;
+      const x2 = (toRect.left + toRect.width / 2 - innerRect.left) / zoom;
+      const y2 = (toRect.top + toRect.height / 2 - innerRect.top) / zoom;
 
       const dx = (x2 - x1) * 0.4;
       const d = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
@@ -639,7 +1082,35 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
       paths.push({ d, color: TYPE_COLORS[conn.type] || TYPE_COLORS.pass, from: conn.from, to: conn.to, type: conn.type });
     }
     setSvgPaths(paths);
-  }, [allConnections]);
+  }, [allConnections, zoom, engineY]);
+
+  // Position each engine node at the average Y of the fields it connects,
+  // so it sits beside those fields instead of centered in the tallest column.
+  useLayoutEffect(() => {
+    let raf1: number, raf2: number;
+    raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => {
+        const inner = innerRef.current;
+        if (!inner) return;
+        const innerRect = inner.getBoundingClientRect();
+        const yOf = (id: string, role: "out" | "in") => {
+          const el = inner.querySelector(`[data-field-id="${id}"] .connector-${role}`);
+          if (!el) return null;
+          const r = el.getBoundingClientRect();
+          return (r.top + r.height / 2 - innerRect.top) / zoom;
+        };
+        const map: Record<string, number> = {};
+        for (const e of ENGINES) {
+          const ys: number[] = [];
+          e.inputs.forEach((w) => { const y = yOf(w.field, "out"); if (y != null) ys.push(y); });
+          e.outputs.forEach((w) => { const y = yOf(w.field, "in"); if (y != null) ys.push(y); });
+          if (ys.length) map[e.id] = ys.reduce((a, b) => a + b, 0) / ys.length;
+        }
+        setEngineY(map);
+      });
+    });
+    return () => { cancelAnimationFrame(raf1); cancelAnimationFrame(raf2); };
+  }, [trace, zoom]);
 
   // Measure after render + re-measure on resize
   useLayoutEffect(() => {
@@ -654,7 +1125,10 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
   }, [trace, measurePaths]);
 
   return (
-    <div className="flex flex-col">
+    <div
+      className="flex flex-col"
+      style={fullscreen ? { position: "fixed", inset: 0, zIndex: 50, background: "var(--color-background)", padding: 8 } : undefined}
+    >
       {/* Legend */}
       <div className="flex items-center gap-4 px-4 py-2 border-b flex-wrap" style={{ borderColor: "var(--gray-4)", background: "var(--gray-1)" }}>
         <span className="text-[11px] font-medium" style={{ color: "var(--gray-9)" }}>Line types:</span>
@@ -673,12 +1147,47 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
           <span className="inline-block w-3 h-3 rounded" style={{ background: "var(--amber-2)", border: "1px solid var(--amber-4)" }} />
           <span style={{ color: "var(--gray-9)" }}>Empty</span>
         </span>
+
+        {/* Canvas controls */}
+        <div className="ml-auto flex items-center gap-1">
+          <button className="px-2 py-0.5 rounded text-[13px]" style={{ border: "1px solid var(--gray-6)", color: "var(--gray-11)" }}
+            onClick={() => zoomAt(1 / 1.2, 300, 200)} title="Zoom out">−</button>
+          <span className="text-[11px] tabular-nums" style={{ color: "var(--gray-9)", minWidth: 38, textAlign: "center" }}>{Math.round(zoom * 100)}%</span>
+          <button className="px-2 py-0.5 rounded text-[13px]" style={{ border: "1px solid var(--gray-6)", color: "var(--gray-11)" }}
+            onClick={() => zoomAt(1.2, 300, 200)} title="Zoom in">+</button>
+          <button className="px-2 py-0.5 rounded text-[11px] ml-1" style={{ border: "1px solid var(--gray-6)", color: "var(--gray-11)" }}
+            onClick={resetView}>Reset</button>
+          <button className="px-2 py-0.5 rounded text-[11px] ml-1" style={{ border: "1px solid var(--gray-6)", color: "var(--gray-11)" }}
+            onClick={() => setFullscreen((f) => !f)}>{fullscreen ? "Exit full screen" : "Full screen"}</button>
+        </div>
       </div>
 
       {/* Canvas */}
-      <div ref={canvasRef} className="overflow-x-auto overflow-y-auto" style={{ maxHeight: "calc(100vh - 280px)" }}>
+      <div
+        ref={canvasRef}
+        className="overflow-hidden relative"
+        style={{
+          height: fullscreen ? "calc(100vh - 108px)" : "calc(100vh - 240px)",
+          cursor: grabbing ? "grabbing" : "grab",
+          touchAction: "none",
+          background: "var(--gray-1)",
+        }}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={onPointerUp}
+        onPointerLeave={onPointerUp}
+      >
         {/* Inner content div — SVG and nodes share this coordinate space */}
-        <div ref={innerRef} className="relative flex p-6" style={{ minWidth: "fit-content", gap: 140 }}>
+        <div
+          ref={innerRef}
+          className="relative flex items-start"
+          style={{
+            minWidth: "fit-content",
+            gap: 140,
+            transformOrigin: "0 0",
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+          }}
+        >
           {/* SVG overlay — positioned inside inner so it scrolls with content */}
           <svg
             className="absolute top-0 left-0 pointer-events-none"
@@ -721,18 +1230,26 @@ export default function PipelineFlowView({ trace, rawHtml }: { trace: TraceData;
           </div>
 
           {/* Stage nodes */}
-          {STAGE_ORDER.map((s) => (
-            <StageNode
-              key={s.key}
-              label={s.label}
-              fields={stageFields(s.key, getStageRecord(trace, s.key))}
-              data={getStageRecord(trace, s.key)}
-              connectedSet={connectedSet}
-              lockedField={lockedField}
-              onHover={setHoveredField}
-              onFieldClick={handleFieldClick}
-            />
-          ))}
+          {STAGE_ORDER.map((s) => {
+            const laneEngines = ENGINES.filter((e) => e.gapAfter === s.key);
+            return (
+              <Fragment key={s.key}>
+                <StageNode
+                  label={s.label}
+                  fields={stageFields(s.key, getStageRecord(trace, s.key))}
+                  data={getStageRecord(trace, s.key)}
+                  connectedSet={connectedSet}
+                  lockedField={lockedField}
+                  onHover={setHoveredField}
+                  onFieldClick={handleFieldClick}
+                />
+                {laneEngines.length > 0 && (
+                  <EngineLane engines={laneEngines} connectedSet={connectedSet} engineY={engineY}
+                    onHover={setHoveredField} onFieldClick={handleFieldClick} lockedField={lockedField} />
+                )}
+              </Fragment>
+            );
+          })}
         </div>
       </div>
 

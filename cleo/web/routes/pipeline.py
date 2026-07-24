@@ -11,7 +11,7 @@ import time
 import random
 from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, Query, HTTPException
-from ...web.deps import get_current_user
+from ...web.deps import get_current_user, get_db
 
 router = APIRouter()
 
@@ -324,8 +324,69 @@ def read_record(stage: str, filename: str, user=Depends(get_current_user)):
     }
 
 
+def _compiled_record(db, rt_id: str):
+    """Complete compiled DB record for an RT id. Returns EVERY column of every
+    compiled table this transaction touches — the property row, the full
+    transaction row, both party-sides (all columns + their contact name +
+    mailing address), and every broker — so nothing is hidden. Blanks are real."""
+    t = db.execute("SELECT * FROM transactions WHERE source_id = ?", (rt_id,)).fetchone()
+    if not t:
+        return None
+    t = dict(t)
+    prop = {}
+    if t.get("property_id"):
+        p = db.execute("SELECT * FROM properties WHERE id = ?", (t["property_id"],)).fetchone()
+        prop = dict(p) if p else {}
+    parties = [dict(r) for r in db.execute(
+        "SELECT * FROM transaction_parties WHERE source_id = ?", (rt_id,)).fetchall()]
+    mail = {}
+    for r in db.execute("SELECT * FROM transaction_mailing_addresses WHERE source_id = ?", (rt_id,)).fetchall():
+        mail[r["side"]] = dict(r)
+    try:
+        brokers = [dict(r) for r in db.execute(
+            "SELECT * FROM transaction_brokers WHERE source_id = ?", (rt_id,)).fetchall()]
+    except Exception:
+        brokers = []
+
+    def side_block(name, trade):
+        rows = [r for r in parties if r.get("side") == name]
+        # The compiler writes the company and the person as SEPARATE rows on the
+        # same side: the party row carries party_name + group_id, the contact row
+        # carries contact_id + contact_title. Merge them so the side shows both.
+        party_row = next((r for r in rows if (r.get("party_name") or "").strip()), {})
+        contact_row = next((r for r in rows if r.get("contact_id")), {})
+        cid = contact_row.get("contact_id")
+        contact_name = None
+        if cid:
+            c = db.execute("SELECT display_name FROM contacts WHERE id = ?", (cid,)).fetchone()
+            contact_name = c["display_name"] if c else None
+        m = mail.get(name) or {}
+        return {
+            "party_name": party_row.get("party_name"),
+            "group_id": party_row.get("group_id"),
+            "trade_name": trade,
+            "contact_id": cid,
+            "contact_name": contact_name,
+            "contact_title": contact_row.get("contact_title"),
+            "phone": party_row.get("phone") or contact_row.get("phone"),
+            "mailing_display": m.get("display"),
+            "mailing_city": m.get("city"),
+            "mailing_province": m.get("province"),
+            "mailing_postal": m.get("postal"),
+            "mailing_geocode": m.get("geocode_string"),
+        }
+
+    return {
+        "property": prop,
+        "transaction": t,
+        "seller": side_block("seller", t.get("seller_trade_name")),
+        "buyer": side_block("buyer", t.get("buyer_trade_name")),
+        "brokers": brokers,
+    }
+
+
 @router.get("/trace/{rt_id}")
-def trace_rt_id(rt_id: str, user=Depends(get_current_user)):
+def trace_rt_id(rt_id: str, db=Depends(get_db), user=Depends(get_current_user)):
     """Full lifecycle trace for an RT ID across all stages."""
     if not RT_ID_RE.match(rt_id):
         raise HTTPException(status_code=400, detail="Invalid RT ID format. Expected RT followed by digits.")
@@ -429,6 +490,14 @@ def trace_rt_id(rt_id: str, user=Depends(get_current_user)):
             "files": files_found,
         })
     result["stages"]["raw"] = raw_entries
+
+    # Compiled stage — the derived DB record (properties / transactions / parties).
+    # Shows whether clean-data fields survived compilation and the minted keys.
+    try:
+        compiled = _compiled_record(db, rt_id)
+    except Exception:
+        compiled = None
+    result["stages"]["compiled"] = {"data": compiled} if compiled else None
 
     return result
 
