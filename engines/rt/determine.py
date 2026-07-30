@@ -104,6 +104,41 @@ def build_determination_record(rt_id, parcel_link, best_fname):
     }
 
 
+def backfill_from_clean(out_dir):
+    """Coverage guarantee: some clean-data/rt records were compiled earlier and their
+    upstream pipeline stage files have since been pruned, so the normal run cannot cover
+    them. Lift the already-computed parcel + geocoded_coords out of the clean record so
+    determination/rt/ covers EVERY clean record before eviction (D9)."""
+    clean_rt = os.path.join(PROJECT_ROOT, 'clean-data', 'rt')
+    have = set(f[:-5] for f in os.listdir(out_dir) if f.endswith('.json'))
+    n = 0
+    for f in os.listdir(clean_rt):
+        if not f.endswith('.json'):
+            continue
+        rid = f[:-5]
+        if rid in have:
+            continue
+        clean = json.load(open(os.path.join(clean_rt, f)))
+        parcel = clean.get('parcel')
+        if parcel is not None and 'signals' not in parcel:
+            parcel = dict(parcel)
+            parcel['signals'] = []  # stage files gone; resolver signals unavailable
+        rec = {
+            'source_id': rid,
+            'source': 'rt',
+            'determined_at': datetime.now(timezone.utc).isoformat(),
+            'provenance': {
+                'parcel': 'backfill/clean-data',
+                'geocoded_coords': 'backfill/clean-data',
+            },
+            'parcel': parcel,
+            'geocoded_coords': clean.get('geocoded_coords'),
+        }
+        safe_write_json(os.path.join(out_dir, rid + '.json'), rec)
+        n += 1
+    print(f'backfilled {n} determination records from clean-data (orphans without stage files)')
+
+
 def run(limit=None, out_dir=None, only=None, dry_run=False):
     out_dir = os.path.abspath(out_dir) if out_dir else DEFAULT_OUTPUT_DIR
     os.makedirs(out_dir, exist_ok=True)
@@ -173,5 +208,12 @@ if __name__ == '__main__':
     ap.add_argument('--out-dir', help='output dir (default determination/rt/; use /tmp for testing)')
     ap.add_argument('--only', help='comma-separated RT IDs')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--backfill-clean', action='store_true',
+                    help='lift parcel/geocoded from clean-data for records whose stage files are gone')
     a = ap.parse_args()
-    run(limit=a.limit, out_dir=a.out_dir, only=a.only, dry_run=a.dry_run)
+    if a.backfill_clean:
+        out = os.path.abspath(a.out_dir) if a.out_dir else DEFAULT_OUTPUT_DIR
+        os.makedirs(out, exist_ok=True)
+        backfill_from_clean(out)
+    else:
+        run(limit=a.limit, out_dir=a.out_dir, only=a.only, dry_run=a.dry_run)
