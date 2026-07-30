@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="648" viewBox="0 0 1960 648" font-family="Inter, -apple-system, 'Segoe UI', sans-serif">
+<rect width="1960" height="648" fill="#FFFFFF"/>
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8AA596"/></marker>
+<marker id="ev" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#B5651D"/></marker>
+</defs>
+
+<text x="30" y="42" font-size="19" font-weight="800" fill="#123D28">Clean / Determination Split — RT pipeline</text>
+<text x="30" y="64" font-size="12" fill="#5A6B60">What the build plan does: stop blending resolver + geocoder output into the clean record; produce it separately and tag provenance.</text>
+
+<!-- ===== CLEAN LANE ===== -->
+<rect x="16" y="150" width="884" height="170" rx="16" fill="#EAF5EE" stroke="#C3E2CE" stroke-width="1.5"/>
+<text x="30" y="173" font-size="12" font-weight="800" fill="#1D6B45" letter-spacing="0.4">CLEAN · pure function of the RT · per record</text>
+
+<rect x="34" y="196" width="120" height="80" rx="12" fill="#D7EEDD" stroke="#2E7D53" stroke-width="1.5"/>
+<text x="94" y="232" text-anchor="middle" font-size="12" font-weight="800" fill="#123D28">Raw RT HTML</text>
+<text x="94" y="250" text-anchor="middle" font-size="9" fill="#2E4B3A">raw-data/rt</text>
+
+<rect x="182" y="196" width="250" height="80" rx="12" fill="#CDECD7" stroke="#2E7D53" stroke-width="1.5"/>
+<text x="307" y="226" text-anchor="middle" font-size="12" font-weight="800" fill="#123D28">RT parse stages</text>
+<text x="307" y="244" text-anchor="middle" font-size="9.5" fill="#2E4B3A">extract · dedup · classify</text>
+<text x="307" y="258" text-anchor="middle" font-size="9.5" fill="#2E4B3A">normalize · addresses</text>
+
+<rect x="490" y="196" width="232" height="80" rx="12" fill="#BDE8CB" stroke="#1D6B45" stroke-width="2.6"/>
+<text x="606" y="226" text-anchor="middle" font-size="13" font-weight="800" fill="#123D28">CLEAN RECORD</text>
+<text x="606" y="244" text-anchor="middle" font-size="9.5" fill="#2E4B3A">clean-data/rt/{RT_ID}.json</text>
+<text x="606" y="262" text-anchor="middle" font-size="9" font-weight="700" fill="#1D6B45">✎ now RT-only (pure)</text>
+<text x="606" y="296" text-anchor="middle" font-size="9" fill="#5A6B60">RT-only: txn · property · seller · buyer · consideration · broker · photos</text>
+<text x="606" y="309" text-anchor="middle" font-size="9" fill="#5A6B60">site (STATED pin / arn / legal / acreage)</text>
+
+<line x1="154" y1="236" x2="182" y2="236" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="432" y1="236" x2="490" y2="236" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+
+<!-- ===== EVICTION ===== -->
+<path d="M566 276 L566 418" fill="none" stroke="#B5651D" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#ev)"/>
+<text x="452" y="333" font-size="10" font-weight="800" fill="#B5651D">EVICTED</text>
+<rect x="628" y="322" width="292" height="46" rx="8" fill="#FBF0E2" stroke="#B5651D" stroke-width="1.4"/>
+<text x="642" y="337" font-size="9" fill="#7A4A12">parcel{} + geocoded_coords{} leave the clean record</text>
+<text x="642" y="349" font-size="9" fill="#7A4A12">(compile.py build_clean_record :111-131, :193).</text>
+<text x="642" y="361" font-size="9" font-weight="700" fill="#7A4A12">stated site.arn stays · resolved parcel.resolved_arn moves</text>
+
+<!-- ===== DETERMINATION LANE ===== -->
+<rect x="16" y="378" width="884" height="200" rx="16" fill="#EFF2F1" stroke="#D2DAD6" stroke-width="1.5"/>
+<text x="30" y="401" font-size="12" font-weight="800" fill="#4A5B52" letter-spacing="0.4">DETERMINATION · external · append-only</text>
+
+<rect x="34" y="416" width="172" height="50" rx="10" fill="#E6EDEA" stroke="#9DB0A6" stroke-width="1.4"/>
+<text x="120" y="437" text-anchor="middle" font-size="11" font-weight="800" fill="#2C3A33">parcel_links/</text>
+<text x="120" y="452" text-anchor="middle" font-size="8.5" fill="#5A6B60">resolver output · existing</text>
+
+<rect x="34" y="476" width="172" height="50" rx="10" fill="#E6EDEA" stroke="#9DB0A6" stroke-width="1.4"/>
+<text x="120" y="497" text-anchor="middle" font-size="11" font-weight="800" fill="#2C3A33">geocoded/</text>
+<text x="120" y="512" text-anchor="middle" font-size="8.5" fill="#5A6B60">Mapbox · existing</text>
+
+<rect x="248" y="432" width="180" height="86" rx="12" fill="#CDECD7" stroke="#2E7D53" stroke-width="1.5"/>
+<text x="338" y="468" text-anchor="middle" font-size="12" font-weight="800" fill="#123D28">★ DETERMINE</text>
+<text x="338" y="485" text-anchor="middle" font-size="9" fill="#2E4B3A">new step · reads clean +</text>
+<text x="338" y="498" text-anchor="middle" font-size="9" fill="#2E4B3A">parcel_links + geocoded</text>
+
+<rect x="470" y="432" width="252" height="86" rx="12" fill="#D9E7F0" stroke="#3A6EA5" stroke-width="2.6"/>
+<text x="596" y="466" text-anchor="middle" font-size="12" font-weight="800" fill="#1B3A5C">★ DETERMINATION RECORD</text>
+<text x="596" y="483" text-anchor="middle" font-size="9" fill="#2C4A6B">determination/rt/{RT_ID}.json</text>
+<text x="596" y="500" text-anchor="middle" font-size="9" font-weight="700" fill="#3A6EA5">provenance-tagged</text>
+<text x="596" y="540" text-anchor="middle" font-size="9" fill="#5A6B60">parcel{resolved_arn, method, tier, geocode_score…}</text>
+<text x="596" y="553" text-anchor="middle" font-size="9" fill="#5A6B60">geocoded_coords{lat, lng, relevance, place_name}</text>
+
+<line x1="206" y1="435" x2="248" y2="460" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="206" y1="505" x2="248" y2="482" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="428" y1="475" x2="470" y2="475" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+
+<!-- ===== RIGHT REGION: compile to DB + downstream ===== -->
+<text x="936" y="172" font-size="11" font-weight="800" fill="#4A5B52">COMPILE → DB, then corpus-level determinations</text>
+<text x="936" y="187" font-size="9" fill="#8A9990">(dashed = later phases, not this plan)</text>
+
+<rect x="946" y="300" width="170" height="88" rx="12" fill="#CDECD7" stroke="#2E7D53" stroke-width="1.5"/>
+<text x="1031" y="334" text-anchor="middle" font-size="12" font-weight="800" fill="#123D28">writer.py Pass 3</text>
+<text x="1031" y="352" text-anchor="middle" font-size="9" font-weight="700" fill="#1D6B45">✎ reads BOTH layers</text>
+<text x="1031" y="366" text-anchor="middle" font-size="9" fill="#2E4B3A">tags provenance</text>
+
+<rect x="1156" y="300" width="160" height="88" rx="12" fill="#BDE8CB" stroke="#1D6B45" stroke-width="2.6"/>
+<text x="1236" y="334" text-anchor="middle" font-size="13" font-weight="800" fill="#123D28">DB</text>
+<text x="1236" y="352" text-anchor="middle" font-size="9" fill="#2E4B3A">transactions · properties</text>
+<text x="1236" y="366" text-anchor="middle" font-size="9" fill="#2E4B3A">stated + resolved (tagged)</text>
+
+<rect x="1356" y="300" width="160" height="88" rx="12" fill="#F4F6F5" stroke="#9DB0A6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="1436" y="330" text-anchor="middle" font-size="12" font-weight="800" fill="#5A6B60">reconcile</text>
+<text x="1436" y="347" text-anchor="middle" font-size="8.5" fill="#8A9990">stated vs resolved ARN</text>
+<text x="1436" y="360" text-anchor="middle" font-size="8.5" fill="#8A9990">Σ acres vs stated</text>
+<text x="1436" y="378" text-anchor="middle" font-size="8.5" font-style="italic" fill="#B08A3A">later phase</text>
+
+<rect x="1556" y="300" width="160" height="88" rx="12" fill="#F4F6F5" stroke="#9DB0A6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="1636" y="336" text-anchor="middle" font-size="12" font-weight="800" fill="#5A6B60">PRO_ · GRP_ · CON_</text>
+<text x="1636" y="353" text-anchor="middle" font-size="8.5" fill="#8A9990">entity resolution</text>
+<text x="1636" y="371" text-anchor="middle" font-size="8.5" font-style="italic" fill="#B08A3A">later phase</text>
+
+<rect x="1756" y="300" width="150" height="88" rx="12" fill="#F4F6F5" stroke="#9DB0A6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="1831" y="340" text-anchor="middle" font-size="12" font-weight="800" fill="#5A6B60">App-Facing</text>
+<text x="1831" y="357" text-anchor="middle" font-size="8.5" fill="#8A9990">read layer</text>
+
+<!-- converge arrows -->
+<path d="M722 232 C860 232 860 322 946 330" fill="none" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+<path d="M722 470 C860 470 860 360 946 352" fill="none" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="812" y="292" text-anchor="middle" font-size="9" font-weight="700" fill="#5A6B60">clean layer</text>
+<text x="812" y="418" text-anchor="middle" font-size="9" font-weight="700" fill="#5A6B60">determination layer</text>
+
+<line x1="1116" y1="344" x2="1156" y2="344" stroke="#8AA596" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1316" y1="344" x2="1356" y2="344" stroke="#9DB0A6" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<line x1="1516" y1="344" x2="1556" y2="344" stroke="#9DB0A6" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+<line x1="1716" y1="344" x2="1756" y2="344" stroke="#9DB0A6" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+
+<!-- ===== LEGEND + PRINCIPLE ===== -->
+<text x="30" y="606" font-size="10" fill="#5A6B60"><tspan font-weight="800" fill="#123D28">Legend:  </tspan>solid = this plan (behavior-preserving)   ·   dashed = later phases   ·   ★ new   ·   ✎ changed   ·   green = clean/evidence, blue = determination</text>
+<text x="30" y="632" font-size="11.5" font-weight="700" fill="#123D28">Clean = everything derivable from the RT alone. Determination = geocode, resolve, reconcile, entities. The split makes clean rebuildable and lets resolution re-run without re-parsing.</text>
+</svg>
