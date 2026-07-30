@@ -93,8 +93,13 @@ def score_record(classified, addresses, parcel_link):
     return score
 
 
-def build_clean_record(classified, addresses, parcel_link, geocoded=None):
-    """Merge classified + addresses + parcel_link into a Clean Record."""
+def build_clean_record(classified, addresses):
+    """Assemble the RT-only Clean Record from classified + addresses.
+
+    D9 (clean/determination split): parcel resolution and geocoding are NOT
+    included here - they are the external determination layer produced by
+    engines/rt/determine.py. See docs/clean-determination-split-build-plan.md.
+    """
     header = classified.get('header', {})
     seller = classified.get('seller', {})
     buyer = classified.get('buyer', {})
@@ -104,31 +109,6 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
     bldg_raw = export.get('bldg') or None
     bldg_value, bldg_unit = parse_building_size(bldg_raw)
     bldg_unparseable = bool(bldg_raw) and bldg_value is None
-
-    # Parcel data. Field-contract Wave 2 (#3): emit the parcel object even when
-    # unresolved, so method ('unresolved') and reason (e.g. geocode_miss) reach
-    # the compiler instead of being flattened to a blank string.
-    parcel = None
-    if parcel_link:
-        arn = parcel_link.get('resolved_arn')
-        # Handle both string ARNs and dict-format ARNs from PIN bridge
-        if isinstance(arn, dict):
-            arn = arn.get('api_format') or arn.get('original') or ''
-        parcel = {
-            'resolved_arn': arn or '',
-            'method': parcel_link.get('method', 'unknown'),
-            'reason': parcel_link.get('reason'),
-            'parcel_file': parcel_link.get('parcel_file'),
-            # Stage-1 verification provenance (additive)
-            'confidence': parcel_link.get('confidence'),
-            'pip_verified': parcel_link.get('pip_verified'),
-            'containment': parcel_link.get('containment'),
-            'loc_name': parcel_link.get('loc_name'),
-            'addr_type': parcel_link.get('geocode_addr_type'),
-            'geocode_score': parcel_link.get('geocode_score'),
-            'field_match': parcel_link.get('field_match'),
-            'tier': parcel_link.get('parcel_tier'),
-        }
 
     return {
         'source_id': classified['rt_id'],
@@ -186,11 +166,6 @@ def build_clean_record(classified, addresses, parcel_link, geocoded=None):
             'location': site.get('location', ''),
             'surface_rights_only': site.get('surface_rights_only', False),
         },
-
-        'parcel': parcel,
-
-        # Geocoded coordinates (Mapbox fallback when no parcel centroid)
-        'geocoded_coords': geocoded.get('result') if geocoded else None,
 
         'consideration': classified.get('consideration', {}),
 
@@ -286,41 +261,18 @@ def run(limit=None, dry_run=False):
                     best_fname = fname
                     best_data = (classified, addresses, parcel_link)
 
-            # Build the Clean Record from the best candidate
-            classified, addresses, parcel_link = best_data
+            # Build the RT-only Clean Record from the best candidate.
+            # D9: parcel resolution + geocoding are the determination layer now
+            # (engines/rt/determine.py), not part of the clean record.
+            classified, addresses, _parcel_link = best_data
 
-            # Load geocoded coordinates if available
-            # v2 parcel_links embed geocode data directly; fall back to legacy geocoded/ files
-            geocoded = None
-            if parcel_link and parcel_link.get('geocode'):
-                # v2 format: geocode data embedded in parcel_link
-                geo = parcel_link['geocode']
-                geocoded = {
-                    'result': {
-                        'lat': geo.get('lat'),
-                        'lng': geo.get('lng'),
-                        'relevance': (geo.get('score', 0) / 100.0),
-                        'place_name': geo.get('match_addr', ''),
-                    }
-                }
-            else:
-                # Legacy format: separate geocoded/ file (Mapbox)
-                geocoded_path = os.path.join(GEOCODED_DIR, best_fname)
-                if os.path.isfile(geocoded_path):
-                    with open(geocoded_path) as f:
-                        geocoded = json.load(f)
-
-            clean_record = build_clean_record(classified, addresses, parcel_link, geocoded)
+            clean_record = build_clean_record(classified, addresses)
 
             # Write to clean-data/rt/
             out_path = os.path.join(OUTPUT_DIR, f'{rt_id}.json')
             safe_write_json(out_path, clean_record)
 
             stats['compiled'] += 1
-            if (clean_record.get('parcel') or {}).get('resolved_arn'):
-                stats['with_parcel'] += 1
-            else:
-                stats['without_parcel'] += 1
 
         except Exception as e:
             stats['errors'] += 1
@@ -343,8 +295,6 @@ def run(limit=None, dry_run=False):
     print()
     print(f'Done in {elapsed:.1f}s')
     print(f'  Compiled:       {stats["compiled"]:,}')
-    print(f'  With parcel:    {stats["with_parcel"]:,}')
-    print(f'  Without parcel: {stats["without_parcel"]:,}')
     print(f'  Errors:         {stats["errors"]:,}')
     print(f'  Output dir:     {OUTPUT_DIR}')
 
