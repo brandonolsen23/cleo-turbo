@@ -22,6 +22,7 @@ CLEAN_RT = os.path.join(PROJECT_ROOT, 'clean-data', 'rt')
 CLEAN_GW = os.path.join(PROJECT_ROOT, 'clean-data', 'gw')
 CLEAN_OSM = os.path.join(PROJECT_ROOT, 'clean-data', 'osm')
 PARCELS = os.path.join(PROJECT_ROOT, 'clean-data', 'parcels')
+DETERMINATION_RT = os.path.join(PROJECT_ROOT, 'determination', 'rt')
 DB_PATH = os.path.join(PROJECT_ROOT, 'data', 'cleo.db')
 REPORT_PATH = os.path.join(PROJECT_ROOT, 'engines', 'rt', 'pipeline', '_validation_report.json')
 
@@ -72,7 +73,13 @@ def run(verbose=False):
                 issues.append(f'Duplicate source_id: {sid}')
             source_ids.add(sid)
 
-            parcel = rec.get('parcel') or {}
+            # Clean/Determination split (D9): parcel lives in the determination
+            # layer now, not the clean record. Read it from determination/rt/.
+            parcel = {}
+            if sid:
+                _dp = os.path.join(DETERMINATION_RT, f'{sid}.json')
+                if os.path.isfile(_dp):
+                    parcel = json.load(open(_dp)).get('parcel') or {}
             resolved = parcel.get('resolved_arn', '')
             if resolved:
                 has_parcel += 1
