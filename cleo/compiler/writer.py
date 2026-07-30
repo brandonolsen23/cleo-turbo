@@ -56,6 +56,21 @@ _REVERSE_GEOCODE_DIR = os.path.join(
 )
 
 
+DETERMINATION_RT_DIR = os.path.abspath(os.path.join(
+    os.path.dirname(__file__), '..', '..', 'determination', 'rt'))
+
+
+def _read_determination(source_id):
+    """Clean/Determination split (D9): the external determination record
+    (parcel + geocoded_coords) for one RT id, or None if not yet generated.
+    See docs/clean-determination-split-build-plan.md."""
+    path = os.path.join(DETERMINATION_RT_DIR, f'{source_id}.json')
+    if os.path.isfile(path):
+        with open(path) as f:
+            return json.load(f)
+    return None
+
+
 def _read_reverse_geocode_cache(lat, lng):
     """Look up the reverse-geocode cache by lat,lng. Returns the cached
     JSON dict (with .result possibly None) or None if no cache file."""
@@ -622,8 +637,17 @@ def run_compiler(conn):
         tx = rec.get('transaction', {})
         site = rec.get('site', {})
         prop = rec.get('property', {})
-        parcel_info = rec.get('parcel')
-        geocoded_coords = rec.get('geocoded_coords')  # Mapbox fallback coords
+        # Clean/Determination split (D9, step 1b): parcel + geocoded_coords are the
+        # external determination layer. When a determination record exists it is
+        # authoritative; otherwise fall back to the (still-blended) clean record.
+        # docs/clean-determination-split-build-plan.md
+        _det = _read_determination(source_id)
+        if _det is not None:
+            parcel_info = _det.get('parcel')
+            geocoded_coords = _det.get('geocoded_coords')
+        else:
+            parcel_info = rec.get('parcel')
+            geocoded_coords = rec.get('geocoded_coords')  # Mapbox fallback coords
 
         # Extract property type from source_folder (e.g., "Peel_Region/industrial/p033" → "industrial")
         # Skip non-informative sources:
@@ -637,7 +661,7 @@ def run_compiler(conn):
             property_type = ''
 
         # Determine ARN: prefer parcel-resolved ARN (validated), fall back to site ARN
-        parcel_info = rec.get('parcel') or {}
+        parcel_info = parcel_info or {}
         resolved_arn = parcel_info.get('resolved_arn', '')
         if resolved_arn and all(c == '0' for c in resolved_arn):
             resolved_arn = ''
