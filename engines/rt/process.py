@@ -62,7 +62,7 @@ LOCKFILE = os.path.join(PARCEL_LINKS_DIR, '.resolve_v2.lock')
 # the scraper ran but found nothing new. See docs/incremental-recompile-plan.md.
 DIRTY_MARKER = os.path.join(PROJECT_ROOT, 'data', 'pipeline-dirty.json')
 
-STAGE_ORDER = ['extract', 'dedup', 'classify', 'normalize', 'resolve', 'compile', 'rebuild']
+STAGE_ORDER = ['extract', 'dedup', 'classify', 'normalize', 'resolve', 'compile', 'determine', 'rebuild']
 
 
 # ---------------------------------------------------------------------------
@@ -469,6 +469,21 @@ def run_compile():
     return count, elapsed
 
 
+def run_determine():
+    """Run the determine stage - the external determination layer (parcel +
+    geocoded_coords) written to determination/rt/. Always full; fast (~1 min).
+    Gated with compile/rebuild (only runs when there is new resolved data). Writer
+    Pass 3 reads this layer. See docs/clean-determination-split-build-plan.md (D9)."""
+    print(f'\n--- Determine ---')
+    cmd = [sys.executable, 'determine.py']
+    success, elapsed, stdout = _run_subprocess(cmd, label='determine')
+
+    det_dir = os.path.join(PROJECT_ROOT, 'determination', 'rt')
+    count = len(_json_files(det_dir)) if os.path.isdir(det_dir) else 0
+    _log_entry('determine', 'full', count, 0, elapsed, 0 if success else 1)
+    return count, elapsed
+
+
 def run_rebuild():
     """Run the database rebuild (always full)."""
     print(f'\n--- Rebuild ---')
@@ -725,6 +740,8 @@ def run_targeted_reprocess(rt_ids, from_stage, skip_stages=None, dry_run=False):
     # --- Step 9: Compile + Rebuild (always full, they're fast) ---
     if 'compile' not in skip_stages:
         run_compile()
+    if 'determine' not in skip_stages:
+        run_determine()
     if 'rebuild' not in skip_stages:
         run_rebuild()
 
@@ -938,6 +955,8 @@ Examples:
                     reprocess_method=args.resolve_method)
         if 'compile' not in args.skip:
             run_compile()
+        if 'determine' not in args.skip:
+            run_determine()
         if 'rebuild' not in args.skip:
             run_rebuild()
         elapsed = time.time() - overall_start
@@ -1082,6 +1101,16 @@ Examples:
             print('  Skipped: no new resolved records since last successful rebuild.')
             _log_entry('compile', 'skipped_clean', 0, 0, 0, 0)
             results['compile'] = 0
+
+    if 'determine' in stages_to_run:
+        if should_compile:
+            count, elapsed = run_determine()
+            results['determine'] = count
+        else:
+            print('\n--- Determine ---')
+            print('  Skipped: no new resolved records since last successful rebuild.')
+            _log_entry('determine', 'skipped_clean', 0, 0, 0, 0)
+            results['determine'] = 0
 
     if 'rebuild' in stages_to_run:
         if should_compile:
